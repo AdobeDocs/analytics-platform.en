@@ -173,7 +173,7 @@ To edit existing or include new Experiences in an implemented configuration:
 
 ![Content Analytics configuration Experience capture and definition](../assets/aca-configuration-experience-edit.png)
 
-* Select ![Edit](/help/assets/icons/Edit.svg) Edit to edit the parameters in the Adobe Content Analytics extension in the Tag property, associated with the selected configuration.
+* Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** to edit the parameters in the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) in the Tag property, associated with the selected configuration.
 
 
 ### Data collection {#onboarding-data-collection}
@@ -254,9 +254,9 @@ In a new configuration, you need to define which Tag property you want to use, o
 
 For an existing configuration, you cannot edit the Tag property. You can, however, edit the pages and assets to include or exclude.
 
-* To edit which pages should be included or excluded when collecting data for Content Analytics, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** underneath **[!UICONTROL Experience]**.
+* To edit which pages should be included or excluded when collecting data for Content Analytics, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** underneath **[!UICONTROL Experience]**. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) associated with the Tag property for you Content Analytics configuration. You can edit the regular expression to include or exclude pages. Ensure you [publish](manual.md#publish) you changes.
 
-* To edit which assets should be included or excluded when collecting data for Content Analytics, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** underneath **[!UICONTROL Asset]**.
+* To edit which assets should be included or excluded when collecting data for Content Analytics, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** underneath **[!UICONTROL Asset]**. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) associated with the Tag property for you Content Analytics configuration. You can edit the regular expression to include or exclude assets. Ensure you [publish](manual.md#publish) your changes.
 
 ### Summary {#summary}
 

@@ -82,9 +82,7 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Use the information on this page when answering questions in the [Customer Journey Analytics upgrade checklist](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-note}}
 
 There are various ways that Adobe Analytics can be implemented. When upgrading to Customer Journey Analytics, not all upgrade paths are available for all Adobe Analytics implementations. However, the recommended upgrade path is available regardless of how Adobe Analytics is implemented in your organization.
 

@@ -17,7 +17,7 @@ role: User
 >[!CONTEXTUALHELP]
 >id="workspace_flow_panel"
 >title="Flow"
->abstract="Analyze the flow of visits or visitors from one touchpoint to the next.<br/><br/>**Parameters**<br/>**Starts with**: Add a dimension, dimension item, or metric to see the top occurring touchpoints after the occurrence of the selected component.<br/>**Contains**: Add a dimension or dimension item to see the top occurring touchpoints before and after the occurrence of the selected component.<br/>**Ends with**: Add a dimension, dimension item, or metric to see the top occurring touchpoints before the occurrence of the selected component.<br/>**Pathing dimension**: Add a dimension to use as your path leading to or going from your selected component."
+>abstract="Analyze the flow of visits or visitors from one touchpoint to the next. Specify a component (metric, dimension, or item) to start with, to end with. Optionally, you can define advanced settings to further configure the visualization."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -19,9 +19,7 @@ exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Use the information on this page when answering questions in the [Customer Journey Analytics upgrade checklist](https://gigazelle.github.io/cja-ttv/). 
+{{upgrade-note}}
 
 When upgrading to Customer Journey Analytics, Adobe [recommends a new implementation of the Experience Platform Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md). However, depending on several factors, such as timeline and resource constraints, the recommended upgrade steps might not be practical for your organization. 
 

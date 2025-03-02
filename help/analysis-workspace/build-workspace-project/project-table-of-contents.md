@@ -36,3 +36,8 @@ To view the table of contents on a project:
    The selected visualization is automatically scrolled to and briefly highlighted.
 
    ![TOC highlighted](assets/toc-highlighted.png)
+
+
+>[!MORELIKETHIS]
+>
+>* [Simplify Dashboard Navigation with the New Table of Contents Feature in Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284)

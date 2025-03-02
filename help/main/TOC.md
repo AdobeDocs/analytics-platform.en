@@ -65,6 +65,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Create a data view](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
     + [Create a marketing channel derived field](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
     + [Validate data flow](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
+    + [Set up Streaming Media Collection](/help/getting-started/cja-upgrade/cja-upgrade-streaming-media.md)
     + Retain historical data with the Analytics source connector {#historical-data-source-connector}
       + [Create an XDM schema for the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
       + [Create the Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
@@ -253,6 +254,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Overview](/help/content-analytics/content-analytics.md)
   + Report {#report}
     + [Overview](/help/content-analytics/report/report.md)
+    + [Components](/help/content-analytics/report/components.md)
   + Configuration {#configuration}
     + [Overview](/help/content-analytics/config/configuration.md)
     + [Guided configuration](/help/content-analytics/config/guided.md)

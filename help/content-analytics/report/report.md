@@ -23,7 +23,7 @@ To start reporting on Content Analytics from scratch:
 
 1. [Create a new](/help/analysis-workspace/build-workspace-project/create-projects.md) or [open an existing](/help/analysis-workspace/build-workspace-project/open-projects.md) project in Workspace.
 1. Drag a ![Table](/help/assets/icons/Table.svg) [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) visualization on the canvas.
-1. Use specific Content Analytics dimensions and metrics and other generic [components](/help/components/overview.md) (like filters, date ranges, annotations) to build your content analytics insights.
+1. Use [specific Content Analytics components](components.md) and other generic [components](/help/components/overview.md) (like filters, date ranges, annotations) to build your content analytics insights.
 
 ## Thumbnails
 
@@ -39,17 +39,23 @@ To open the preview with the following details:
 
 * Select ![InfoOutline](/help/assets/icons/InfoOutline.svg). You see the following details. 
   
-    | Experience preview | Asset preview |
-    |---|---|
-    | ![Content Analytics Experience preview](../assets/aca-experience-preview.png) | ![Content Analytics Asset preview](../assets/aca-asset-preview.png) |
-    | **[!UICONTROL Name of the experience]** | **[!UICONTROL Name of the asset]** |
-    | **[!UICONTROL Impressions (all times)]**: Number of impressions for the experience. | **[!UICONTROL Impressions (all times)]**: Number of impressions for the asset. |
-    | **[!UICONTROL Assets]**: Number of assets this experience contains. Select ![Breakdown](/help/assets/icons/Breakdown.svg) Breakdown to inspect the assets. |**[!UICONTROL Experiences]**: Number of experiences where this asset is shown in. [Breakdown](/help/assets/icons/Breakdown.svg) Breakdown to inspect the assets. | 
-    | **[!UICONTROL First impression]**: Date of first impression of the experience. | **[!UICONTROL First impression]**: Date of first impression of the asset. |
-    |**[!UICONTROL  Most recent impression]**: Date of most recent impression of the experience. | **[!UICONTROL Most recent impression]**: Date of most recent impression of the asset. |
-    | **[!UICONTROL Experience attributes]**: The attributes of the experience. | **[!UICONTROL Asset attributes]**: The attributes of the asset. |
+  | Experience preview | Asset preview |
+  |---|---|
+  | ![Content Analytics Experience preview](../assets/aca-experience-preview.png) | ![Content Analytics Asset preview](../assets/aca-asset-preview.png) |
+  | **[!UICONTROL Name of the experience]** | **[!UICONTROL Name of the asset]** |
+  | **[!UICONTROL Impressions (all times)]**: Number of impressions for the experience. | **[!UICONTROL Impressions (all mes)]**: Number of impressions for the asset. |
+  | **[!UICONTROL Assets]**: Number of assets this experience contains. Select ![Breakdown](/help/assets/icons/Breakdown.svg) Breakdown to inspect the assets. |**[!UICONTROL Experiences]**: Number of experiences where this asset is shown in. [Breakdown](/help/assets/icons/Breakdown.svg) Breakdown to inspect the assets. | 
+  | **[!UICONTROL First impression]**: Date of first impression of the experience. | **[!UICONTROL First impression]**: Date of first impression of the asset. |
+  |**[!UICONTROL  Most recent impression]**: Date of most recent impression of the experience. | **[!UICONTROL Most recent impression]**: Date of most recent impression of the asset. |
+  | **[!UICONTROL Experience attributes]**: The attributes of the experience. | **[!UICONTROL Asset attributes]**: The attributes of the asset. |
 
 
 ## Template
 
 Details about templates ...
+
+
+>[!MORELIKETHIS]
+>
+>[Content Analytics components](components.md)
+>
