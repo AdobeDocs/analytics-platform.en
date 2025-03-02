@@ -21,8 +21,21 @@ This transformation is only available for datasets with data for B2B lookup sche
 >
 >There is a limit of no more than 10,000 items for each id. This limitation implies that for any given person id you can only have 10,000 accounts, or 10,000 opportunities, or 10,000 marketing lists, or 10,000 campaigns.
 
+>[!PREREQUISITES]
+>
+>For ingestion to work properly, you must validate that the B2B lookup datasets have data populated for the following fields (as defined in the B2B lookup schemas):
+>
+>| Dataset containing data conforming to schema | Field populated with data |
+>|---|---|
+>| XDM Business Account Person Relation | `accountPersonID` |
+>| XDM Business Opportunity Person | `opportunityPersonID` |
+>| XDM Business Marketing List | `marketingListMemberID` |
+>| XDM Business Campaign Members | `campaign.sourceKey` |
+>
 
-To enable transformation for such a dataset:
+
+
+To enable transformation for a B2B lookup dataset:
 
 ![Enable transform dataset](/help/connections/assets/transform.gif)
 
