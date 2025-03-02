@@ -36,7 +36,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Data Analysis AI Assistent for Customer Journey Analytics](../data-analysis-ai.md)
   + Customer Journey Analytics B2B Edition (#cja-b2b)
     + [Overview](/help/getting-started/cja-b2b-edition.md)
-    + 
+  
 
 + Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
   + Upgrade to Customer Journey Analytics {#upgrade-to-cja}
