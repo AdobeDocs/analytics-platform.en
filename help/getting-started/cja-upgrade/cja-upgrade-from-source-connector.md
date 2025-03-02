@@ -19,13 +19,11 @@ exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Use the information on this page when answering questions in the [Customer Journey Analytics upgrade checklist](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-note}}
 
 There are inherent disadvantages with using the Analytics source connector as your sole implementation for Customer Journey Analytics. 
 
-If your organization has already upgraded to Customer Journey Analytics using only the Analytics source connector implementation, Adobe recommends transitioning to an implementation that uses the Analytics source connector (for historical data), in conjunction with a new implementation of the Web SDK (for ongoing data collection). 
+If your organization has already upgraded to Customer Journey Analytics using only the Analytics source connector implementation, Adobe recommends transitioning to a new implementation of the Web SDK for ongoing data collection, and using the Analytics source connector only for historical data. 
 
 ## Understand advantages and disadvantages of using the Analytics source connector exclusively
 

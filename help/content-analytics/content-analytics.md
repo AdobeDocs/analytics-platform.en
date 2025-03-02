@@ -10,16 +10,12 @@ exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 ---
 # Content Analytics overview
 
-<!-- 
-This is a placeholder article for upcoming Content Analytics documentation. Currently used to set up contextual help entries for developer working on onboarding UI and workspace UI 
--->
-
 >[!WARNING]
 >
 >This article is a preliminary unofficial draft version of a forthcoming final version and is part of the Content Analytics documentation. All content is subject to change and no legal obligations whatsoever can be derived from the current version of this article.  
 >
 
-{#release-limited-testing}
+{{release-limited-testing}}
 
 Content Analytics helps marketers to understand how content impacts the key performance indicators that a business has defined. On top of the behavioral data, Content Analytics collects data how content is consumed and how content drives impact. For example, do customers respond better to a specific tone of voice, a specific color pallet, or specific themes? This information, together with specifically designed reporting workflows and templates, can help you to perform even better analysis and gain deeper insights on customer journey data in Customer Journey Analytics. 
 
@@ -57,6 +53,12 @@ Content Analytics uses web image view data collected in event datasets in Experi
 1. The featurization assembler service and identity service process the revisited data. 
 1. The results of these services (components, attributes, and identities) are used to update the relevant specific content analytics datasets in Experience Platform.
 1. The content analytics data, together with behavioral data and other lookup datasets, can then be used in a Customer Journey Analytics configuration (Connection, Data view and Workspace). That configuration provides the foundation to the unique macro-level insights on your content.
+
+>[!NOTE]
+>
+>Content Analytics leverages AI/ML. The results (for the featurization of experiences and assets) may be inaccurate.
+>
+
 
 >[!MORELIKETHIS]
 >

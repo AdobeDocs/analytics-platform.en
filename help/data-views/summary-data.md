@@ -147,4 +147,6 @@ Ensure the component settings for a summary data group are the same. See [Summar
 
 >[!MORELIKETHIS]
 >
->See the [Use summary data](/help/use-cases/data-views/summary-data.md) article for a detailed use case example on how to use and report on summary data.
+>- See the [Use summary data](/help/use-cases/data-views/summary-data.md) article for a detailed use case example on how to use and report on summary data.
+>- Blog: [How Summary Data Enhances Adobe Customer Journey Analytics Datasets](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
+

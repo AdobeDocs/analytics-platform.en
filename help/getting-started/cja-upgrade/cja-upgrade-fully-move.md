@@ -28,9 +28,7 @@ exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
->
->This documentation should be used as part of the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-note}}
 
 Most organizations will eventually disable Adobe Analytics after upgrading to Customer Journey Analytics. This is due to the cost and complexity of maintaining two analytics environments. 
 
