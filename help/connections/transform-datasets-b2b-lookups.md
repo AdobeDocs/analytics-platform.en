@@ -33,8 +33,6 @@ This transformation is only available for datasets with data for B2B lookup sche
 >| XDM Business Campaign Members | `campaign.sourceKey` |
 >
 
-
-
 To enable transformation for a B2B lookup dataset:
 
 ![Enable transform dataset](/help/connections/assets/transform.gif)
