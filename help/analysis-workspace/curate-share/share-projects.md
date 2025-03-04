@@ -147,7 +147,7 @@ You can grant [read-only access](/help/analysis-workspace/curate-share/view-only
 >
 >* A project might become inaccessible if many users attempt to access a given link at the same time. By default, more than 190 people can access a single link every 5 minutes. If your organization reaches this limit, wait 5 minutes and then try accessing the link again.
 >
->* For both [!DNL Healthcare Shield] and [!DNL Privacy & Security Shield] licenses, the [!UICONTROL Share with anyone] feature has requires Experience Cloud authentication. For [!DNL Healthcare Shield] customers, a "HIPAA compliance" warning appears, but you can still use this feature after authenticating to Experience Cloud. 
+>* For both [!DNL Healthcare Shield] and [!DNL Privacy & Security Shield] licenses, the [!UICONTROL Share with anyone] feature requires Experience Cloud authentication. For [!DNL Healthcare Shield] customers, a "HIPAA compliance" warning appears, but you can still use this feature after authenticating to Experience Cloud. 
 
 >[!BEGINSHADEBOX]
 
