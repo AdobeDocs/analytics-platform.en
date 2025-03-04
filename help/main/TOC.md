@@ -58,6 +58,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Add the Web SDK extension to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
       + [Implement the loader tag for the Web SDK extension](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
       + [Add XDM data collection logic to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
+    + [Manual implementation](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
     + [Create a connection](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
     + [Create a data view](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
     + [Create a marketing channel derived field](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)

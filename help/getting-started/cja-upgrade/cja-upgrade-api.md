@@ -1,0 +1,26 @@
+---
+title: Create a tag property and add the Web SDK extension
+description: Learn how to create a tag property and add the Web SDK extension
+role: Admin
+solution: Customer Journey Analytics
+feature: Basics
+hide: yes
+hidefromtoc: yes
+---
+# Install the Platform Web SDK wtih the Edge Network API {#upgrade-manual}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-api-implementation"
+>title="Add alloy.js to your site"
+>abstract="You can install the Platform Web SDK by installing the NPM package in order to control the build process for the Adobe Experience Platform Web SDK JavaScript."
+
+<!-- markdownlint-enable MD034 -->
+
+{{upgrade-note-step}}
+
+You can install the Platform Web SDK by installing the NPM package in order to control the build process for the Adobe Experience Platform Web SDK JavaScript. 
+
+For more information, see [Option 3: Using the NPM package](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) in [Install Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk) in the Web SDK Guide.
+
