@@ -50,5 +50,3 @@ Below are some guidelines when working with the Company folder:
 
 - When an administrator moves a project to the Company folder, the folder is shared with everyone even if the original shared privileges were restricted. 
 - When an administrator moves a project out of the Company folder, the original or previous sharing privileges are respected.
-
-- When an administrator moves a project out of the Company folder, the original or previous sharing privileges are respected.
