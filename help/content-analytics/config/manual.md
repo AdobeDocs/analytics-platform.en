@@ -59,3 +59,8 @@ After you make changes in the Adobe Content Analytics extension, ensure your [ac
 >[Guided configuration](guided.md)
 >[Data collection Tags publishing overview](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)
 >
+
+
+## Versioning
+
+If you require versioning of your Content Analytics experiences, you must add 
