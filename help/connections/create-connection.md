@@ -148,7 +148,7 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 
 ## Create and configure the connection {#create-connection}
 
-1. In Customer Journey Analytics, select the **[!UICONTROL Connections]** tab.
+1. In Customer Journey Analytics, select **[!UICONTROL Connections]** from the main menu.
 1. Select **[!UICONTROL Create new connection]**.
 
     ![Untitled connection settings](assets/create-conn1.png)

@@ -43,12 +43,7 @@ Non-Admins have limited options.
 Below are some guidelines when working with the Company folder:
 
 - Administrators can add projects to the Company folder or create a new project and save the new project to the Company folder. Non-administrators can view the contents of the Company folder.
-
 - Administrators can create subfolders within the Company folder.
-
 - Administrators can delete a folder within the Company folder that another administrator created. Administrators may need to coordinate with other administrators to keep folder and project access consistent.
-
 - When an administrator moves a project to the Company folder, the folder is shared with everyone even if the original shared privileges were restricted. 
-- When an administrator moves a project out of the Company folder, the original or previous sharing privileges are respected.
-
 - When an administrator moves a project out of the Company folder, the original or previous sharing privileges are respected.
