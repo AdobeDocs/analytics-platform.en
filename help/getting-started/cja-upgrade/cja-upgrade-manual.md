@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: 0e508ce7-8f3b-41f1-808c-1348942c2716
 ---
 # Install the Platform Web SDK wtih alloy.js {#upgrade-manual}
 
@@ -23,4 +24,3 @@ hidefromtoc: yes
 You can manually install the Platform Web SDK by adding the base code directly to each page in your implementation.
 
 For more information, see [Option 2: Installing the prebuilt standalone version](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-2-installing-the-prebuilt-standalone-version) in [Install Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk) in the Web SDK Guide.
-
