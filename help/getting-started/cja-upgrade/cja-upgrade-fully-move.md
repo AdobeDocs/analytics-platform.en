@@ -28,6 +28,15 @@ exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-source-connector"
+>title="Disable the Analytics source connector to use data exclusively from the Web SDK"
+>abstract="The Analytics source connector is used to provide side-by-side data comparison, historical data, and access to some features that aren't fully available in Customer Journey Analytics. When you no longer need Adobe Analytics for these purposes, you can disable the Analytics source connector."
+
+<!-- markdownlint-enable MD034 -->
+
 {{upgrade-note}}
 
 Most organizations will eventually disable Adobe Analytics after upgrading to Customer Journey Analytics. This is due to the cost and complexity of maintaining two analytics environments. 
