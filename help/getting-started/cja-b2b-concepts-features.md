@@ -33,3 +33,63 @@ The B2B edition of Customer Journey Analytics adds Account, Global Account, Oppo
 | Buying group | A collection of people within an organization that is involved in the decision-making process to purchase a product or service. |
 | Person | An individual, often identified by a unique e-mail address that has interacted with the company. |
 | 
+
+## Structure datasets
+
+### Account
+
+* account_id
+* business_unit
+* global_account_id
+* location
+
+
+### Global account
+
+* global_account_id
+* headquarters
+* industry
+* organization_name
+
+
+### Buying group
+
+* global_account_id
+* purchase_category
+* account_id
+* decision_maker
+* buying_group_id
+
+
+### Opportunity
+
+* global_account_id
+* revenue_potential
+* account_id
+* opportunity_id
+* sales_stage
+
+
+### Profile
+
+* global_account_id
+* full_name
+* job_title
+* person_id
+* department
+* account_id
+
+
+### Event
+
+* global_account_id
+* event_outcome
+* person_id
+* event_description
+* event_durations
+* account_id
+* opportunity_id
+* buying_group_id
+
+
+
