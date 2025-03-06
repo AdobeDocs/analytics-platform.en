@@ -6,7 +6,6 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
-exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 ---
 # Configure your existing Adobe Analytics Web SDK implementation to send data to Platform {#existing-websdk-implementation}
 
