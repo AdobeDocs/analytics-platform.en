@@ -33,10 +33,11 @@ The configuration of Content Analytics consists of the following steps:
    * Data Collection
      * A datastream is created and an Experience Platform service is configured within the datastream to stream data to the Content Analytics experience event dataset.
      * A Tag property is created with the Adobe Content Analytics extension configured for the correct sandbox, datastream and other configuration options from the configuration wizard.
-1. Only when you manually publish the Tag property, Content Analytics is effectively deployed and activated.
+1. Only when you [manually publish](manual.md) the Tag property, Content Analytics is effectively deployed and activated.
+
 1. You can only make some limited changes to an implemented configuration using the [guided configuration](guided.md) wizard. For example, change the [data view](/help/data-views/data-views.md).
 1. You can make other changes to an implemented configuration through the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) in the associated Tag property.
-1. Only when you manually re-publish the Tag property, the configuration modifications from step 4 and 5 are effectively deployed and activated.
+1. Only when you [manually re-publish](manual.md) the Tag property, the configuration modifications from step 4 and 5 are effectively deployed and activated.
 
 
 Before you configure Content Analytics, ensure you the following prerequisites are met:

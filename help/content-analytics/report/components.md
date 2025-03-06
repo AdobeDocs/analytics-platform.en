@@ -44,6 +44,9 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI 
 | Experience Horizontal Pixel Depth | Quantifiable value of the horizontal pixel depth of the experience. | Dimension<br/>Derived Field | Show \| No value<br/>Most Recent \| Session |
 | Experience Vertical Pixel Depth | Quantifiable value of the vertical pixel depth of the experience. | Dimension<br/>Derived Field | Show \| No value<br/>Most Recent \| Session |
 
+{style="table-layout:fixed"}
+
+
 
 ## Experience attributes
 
@@ -63,6 +66,8 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI 
 | Experience Words Count | ![AI generated](/help/assets/icons/AI.svg) Number of words for the experience. | Metric | Count values<br/>Decimal \| Decimal Places: 0 |
 | Experience Words Count Per Sentence | ![AI generated](/help/assets/icons/AI.svg) Number of words per sentence for the experience. | Metric | Count values<br/>Decimal \| Decimal Places: 0 |
 
+{style="table-layout:fixed"}
+
 
 ## Experience events 
 
@@ -70,6 +75,8 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI 
 |---|---|---|---|
 | Experience views | Quantifiable measure of the number of views of the experience. | Metric | Count values<br/>Decimal \| Decimal Places: 0 |
 | Experience clicks | Quantifiable measure of the number of clicks of the experience. | Metric | Count values<br/>Decimal \| Decimal Places: 0 |
+
+{style="table-layout:fixed"}
 
 
 ## Asset metadata
@@ -91,6 +98,8 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI 
 | Asset Created Date | Asset creation date. | Dimension | Most Recent \| Session |
 | Asset Last Updated By | Identifier for asset update. | Dimension | Show \| No value<br/>Most Recent \| Session |
 | Asset Last Updated Date | Asset update date. | Dimension | Most Recent \| Session |
+
+{style="table-layout:fixed"}
 
 
 ## Asset attributes
@@ -114,6 +123,8 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI 
 | Asset Lighting Condition | ![AI generated](/help/assets/icons/AI.svg) Lighting condition of the asset. Possible values are: golden hour, blue hour, midday, overcast, night, high-key, low-key, daylighting, incandescent, fluorescent, colorful, and studio. | Dimension<br/>Derived Field | Show \| No value<br/>Most Recent \| Session |
 | Asset Camera Setting | ![AI generated](/help/assets/icons/AI.svg) Camera setting of the asset. Possible values are: fast shutter speed, long exposure. bokeh blur, motion blur, tilt-shift blur, flash, wide-angle, black and white, surreal, double-exposure, macro, and normal mode. | Dimension<br/>Derived Field | Show \| No value<br/>Most Recent \| Session |
 
+{style="table-layout:fixed"}
+
 
 ## Asset events
 
@@ -121,6 +132,8 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI 
 |---|---|---|---|
 | Asset views | Quantifiable measure of the number of views of the asset. | Metric | Count values<br/>Decimal \| Decimal Places: 0 |
 | Asset clicks | Quantifiable measure of the number of clicks of the asset. | Metric | Count values<br/>Decimal \| Decimal Places: 0 |
+
+{style="table-layout:fixed"}
 
 
 <!--
@@ -132,6 +145,8 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI 
 | Experience Path Root | Root path to the experience. | Derived Field | |
 | Asset Location | Location of the asset. | Derived Field | |
 | Asset Percenption ID + Asset ID | Combiination of asset perception identifier and asset identifier | Derived Field | |
+
+{style="table-layout:fixed"}
 -->
 
 ## Calculated metrics
@@ -140,3 +155,5 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI 
 |---|---|---|---|
 | Asset Click-Trough Rate | Asset clicks / Asset views | Calculated metric | |
 | experience Click-Through Rate | Experience clicks / Experience views | Calculated metric | |
+
+{style="table-layout:fixed"}

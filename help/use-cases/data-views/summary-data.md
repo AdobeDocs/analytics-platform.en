@@ -463,7 +463,7 @@ To ensure you can report on the correct data in Workspace, you want to create a 
          |---|---|---|---|
          | Ad Group (Lookup) | Example Lookup Data Dataset | String | *_tenant*.ad_group |
          | Ad Group (Summary) | Example Summary Data Dataset | String | *_tenant*.ad_group |
-         | Campaign Id | Exammpe Summary Data Dataset | String | *_tenant*.campaign_id |
+         | Campaign Id | Example Summary Data Dataset | String | *_tenant*.campaign_id |
          | Campaign Name (Lookup) | Example Lookup Data Dataset | String | *_tenant*.campaign_name |
          | Campaign Name (Summary) | Example Summary Data Dataset | String | *_tenant*.campaign_name |
          | Network | Example Summary Data Dataset | String | *_tenant*.network |
