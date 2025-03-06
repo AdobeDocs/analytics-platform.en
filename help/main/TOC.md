@@ -82,6 +82,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Understand Analytics implementation](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
       + [Adobe Analytics feature support when upgrading](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
       + [Customer Journey Analytics features](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md)
+      + [Web SDK implementation options](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)
