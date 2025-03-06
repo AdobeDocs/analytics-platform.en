@@ -100,3 +100,5 @@ Contact your Adobe representative if you need more specific advice, guidance, or
 | Bulk Data Insertion API | The Bulk Data Insertion API (BDIA) is an Adobe Analytics capability that lets you upload server call data in batches of files instead of using client-side libraries such as AppMeasurement. </p><p>For more information about this implementation type, see [Bulk Data Insertion API](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/bulk-data-insertion/).</p> | <ul><li>[(Recommended) New implementation of the Experience Platform Web SDK for ongoing data collection; the Analytics source connector for historical data](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</li><li>[New implementation of the Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md)</li><li>[Adobe Experience Platform Edge Network Server API and Edge Network](/help/data-ingestion/serverapi.md)</li></ul> | 
 
 {style="table-layout:auto"}
+
+

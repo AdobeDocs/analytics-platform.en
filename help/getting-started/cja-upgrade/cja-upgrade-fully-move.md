@@ -64,6 +64,24 @@ When deciding if and when your organization should disable Adobe Analytics, cons
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-analytics-tags"
+>title="Disable the Analytics extension in tags"
+>abstract="With Web SDK data fully functional, work with your tags administrator to remove the Adobe Analytics extension from the tag property. Before you do this, make sure that your users have transitioned from using Adobe Analytics to Customer Journey Analytics."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-analytics-api"
+>title="Disable API data collection for Adobe Analytics"
+>abstract="With Web SDK data fully functional, work with the applicable engineering team to remove the Adobe Analytics code from the project. Before you do this, make sure that your users have transitioned from using Adobe Analytics to Customer Journey Analytics."
+
+<!-- markdownlint-enable MD034 -->
+
 Your existing Adobe Analytics implementation is a key part of a successful upgrade to Customer Journey Analytics, as described in the section above, [Uses of Adobe Analytics during and after an upgrade](#uses-of-adobe-analytics-during-and-after-an-upgrade).
 
 When you no longer need Adobe Analytics for the purposes described in the section above, use the following information to remove Adobe Analytics:

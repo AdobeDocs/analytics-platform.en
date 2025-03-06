@@ -53,13 +53,13 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Create a dataset](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
       + [Create lookup datasets for classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
       + [Monitor dataset ingestion](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
-    + Create tags {#create-tags}
+    + Implement the Web SDK with tags {#create-tags}
       + [Create a tag for your property](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
       + [Add the Web SDK extension to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
       + [Implement the loader tag for the Web SDK extension](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
       + [Add XDM data collection logic to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
-    + [Manual implement the Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
-    + [Implement the Web SDK wtih the API](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
+    + [Implement the Web SDK manually](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
+    + [Implement the Web SDK with the API](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
     + [Create a connection](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
     + [Create a data view](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
     + [Create a marketing channel derived field](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
@@ -83,6 +83,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Adobe Analytics feature support when upgrading](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
       + [Customer Journey Analytics features](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md)
       + [Web SDK implementation options](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
+      + [Configuring Adobe Analytics Web SDK for Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)

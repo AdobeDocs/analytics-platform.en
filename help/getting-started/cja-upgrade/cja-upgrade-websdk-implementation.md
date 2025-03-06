@@ -36,6 +36,15 @@ hidefromtoc: yes
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-websdk-no-selection"
+>title="Implement the Web SDK for your given property"
+>abstract="Select the desired implementation type in the questionnaire for more detailed instructions."
+
+<!-- markdownlint-enable MD034 -->
+
 {{upgrade-note}}
 
 The recommended process of upgrading from Adobe Analytics to Customer Journey Analytics is a new implementation of the Experience Platform Web SDK, which is the preferred data collection method for Customer Journey Analytics.
