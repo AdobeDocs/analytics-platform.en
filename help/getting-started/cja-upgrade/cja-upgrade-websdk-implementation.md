@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: yes
 hidefromtoc: yes
+exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 ---
 # Understand Web SDK implementation options when upgrading to Customer Journey Analytics {#web-sdk-implementation-options}
 
@@ -67,6 +68,3 @@ There are three supported ways to use Adobe Experience Platform Web SDK:
 * [NPM](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/npm): Install the Web SDK on your site using the NPM package manager.
 
 For more information, see [Web SDK installation overview](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) in the Experience Platform Web SDK Guide.
-
-
-
