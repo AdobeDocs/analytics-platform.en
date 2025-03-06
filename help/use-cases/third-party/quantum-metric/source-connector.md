@@ -1,8 +1,17 @@
 ---
 title: Add Quantum Metric data to Customer Journey Analytics
 description: Use Quantum Metric for data collection of user journeys and behaviors, then power CJA from that collected data to draw out richer insights.
+role: User, Admin
+solution: Customer Journey Analytics
+feature: Use Cases
+hidefromtoc: yes
+hide: yes
 ---
 # Add Quantum Metric data to Customer Journey Analytics
+
+>[!IMPORTANT]
+>
+>The Quantum Metric source connector is not yet available at this time.
 
 CJA unlocks report-time control off the QM data, sequential data analysis, rich attribution, and other advanced reporting.  QM can be sent to AEP by using either the QM source connector or the Quantum Metrics Tags extension.
 
