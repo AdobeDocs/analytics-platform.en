@@ -28,6 +28,15 @@ exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-source-connector"
+>title="Disable the Analytics source connector to use data exclusively from the Web SDK"
+>abstract="The Analytics source connector is used to provide side-by-side data comparison, historical data, and access to some features that aren't fully available in Customer Journey Analytics. When you no longer need Adobe Analytics for these purposes, you can disable the Analytics source connector."
+
+<!-- markdownlint-enable MD034 -->
+
 {{upgrade-note}}
 
 Most organizations will eventually disable Adobe Analytics after upgrading to Customer Journey Analytics. This is due to the cost and complexity of maintaining two analytics environments. 
@@ -52,6 +61,24 @@ When deciding if and when your organization should disable Adobe Analytics, cons
 >id="cja-upgrade-disable-appmeasurement-third-pary"
 >title="Disable a third-party tag management system"
 >abstract="With the Web SDK data fully functional, work with your tag admin to remove the AppMeasurement library from your third-party tag management system.<br><br>Estimated time to perform this step depends on the ease of disabling AppMeasurement from your tag management product, as well as the release cycle that your organization employs to deploy and manage tag code."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-analytics-tags"
+>title="Disable the Analytics extension in tags"
+>abstract="With Web SDK data fully functional, work with your tags administrator to remove the Adobe Analytics extension from the tag property. Before you do this, make sure that your users have transitioned from using Adobe Analytics to Customer Journey Analytics."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-analytics-api"
+>title="Disable API data collection for Adobe Analytics"
+>abstract="With Web SDK data fully functional, work with the applicable engineering team to remove the Adobe Analytics code from the project. Before you do this, make sure that your users have transitioned from using Adobe Analytics to Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 

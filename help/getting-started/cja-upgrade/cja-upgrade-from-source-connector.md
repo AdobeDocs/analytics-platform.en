@@ -19,6 +19,15 @@ exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-delete"
+>title="Delete the existing Analytics source connector"
+>abstract="The Analytics source connector that you currently have is not compatible with your organization's custom schema. However, the data still exists in the Analytics report suite. This step removes the current Analytics source connector so you can recreate it using the correct schema in a subsequent step.<br><br>Before you delete the source connector, you might want to coordinate with others in your organization to ensure that the removal of the source connector does not impact reporting within your organization. This coordination might take several weeks to complete."
+
+<!-- markdownlint-enable MD034 -->
+
 {{upgrade-note}}
 
 There are inherent disadvantages with using the Analytics source connector as your sole implementation for Customer Journey Analytics. 

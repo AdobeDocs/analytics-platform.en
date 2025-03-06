@@ -32,13 +32,13 @@ Choose one of the following options to retain historical data when moving from A
 >
 >When choosing how to retain historical data, contact your Adobe account representative to determine pricing. 
 
-## Use the Analytics Source Connector
+## Use the Analytics source connector
 
-  You can use the [Analytics Source Connector](/help/data-ingestion/analytics.md) to retain historical data. Regardless of the upgrade path that you choose (even if you upgrade using the Web SDK), you can use the Analytics Source Connector to retain historical data from your Adobe Analytics environment. 
+  You can use the [Analytics source connector](/help/data-ingestion/analytics.md) to retain historical data. Regardless of the upgrade path that you choose (even if you upgrade using the Web SDK), you can use the Analytics source connector to retain historical data from your Adobe Analytics environment. 
 
-  You can use the Analytics Source Connector to retain historical data by bringing historical data into its own dedicated location, separate from your current data.
+  You can use the Analytics source connector to retain historical data by bringing historical data into its own dedicated location, separate from your current data.
 
-  The Analytics Source Connector must be functioning for as long as you need access to the historical data.
+  The Analytics source connector must be functioning for as long as you need access to the historical data.
 
   <!-- Another possibility in the future: Map historical data in a way that allows you to tie it to your new data.  Possible? Explain -->
 

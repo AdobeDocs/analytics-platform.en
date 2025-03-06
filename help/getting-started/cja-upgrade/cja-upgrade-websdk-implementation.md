@@ -36,6 +36,24 @@ hidefromtoc: yes
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-websdk-no-selection"
+>title="Implement the Web SDK for your given property"
+>abstract="Select the desired implementation type in the questionnaire for more detailed instructions."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-websdk-third-party"
+>title="Add the Web SDK library to your third-party tag management system"
+>abstract="Work with the admin over your tag management system to add the Web SDK library to your site.<br><br>Completion time for this task heavily depends on the responsiveness of the individual responsible for your tag management system. Adding the Web SDK library might be bundled with associated implementation logic, and deployed during your organization's standard release cycles."
+
+<!-- markdownlint-enable MD034 -->
+
 {{upgrade-note}}
 
 The recommended process of upgrading from Adobe Analytics to Customer Journey Analytics is a new implementation of the Experience Platform Web SDK, which is the preferred data collection method for Customer Journey Analytics.

@@ -83,7 +83,7 @@ Each step provides a high-level explanation of a more detailed process. Follow t
 
 1. For Adobe Analytics implementations using AppMeasurement or the Analytics extension (tags), [create a datastream in Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md). <!-- Is this correct? Will customers on the Web SDK already have a datastream that they only need to add AEP as a service to? Or does this step apply to everyone?-->
 
-   For Adobe Analytics implementations using the Web SDK, a datastream already exists.
+   For Adobe Analytics implementations using the Web SDK, a datastream already exists. For more information, see [Configure your existing Adobe Analytics Web SDK implementation to send data to Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md).
 
 1. [Add Adobe Experience Platform as a service to your datastream](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md). 
 
