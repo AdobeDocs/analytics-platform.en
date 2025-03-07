@@ -57,4 +57,4 @@ To create a dataset:
 
    See [Datasets UI guide](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html) for much more information on how to view, preview, create, and delete a dataset. You can also learn how to enable a dataset for Real-Time Customer Profile.
 
-1. {{upgrade-final-step}}
+{{upgrade-final-step}}

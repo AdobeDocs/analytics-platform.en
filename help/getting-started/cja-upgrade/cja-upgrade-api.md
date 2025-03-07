@@ -25,5 +25,5 @@ You can install the Platform Web SDK by installing the NPM package in order to c
 
 1. Follow the information in the section [Option 3: Using the NPM package](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) in [Install Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk) in the Web SDK Guide.
 
-1. {{upgrade-final-step}}
+{{upgrade-final-step}}
 

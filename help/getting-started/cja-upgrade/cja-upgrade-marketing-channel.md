@@ -47,4 +47,4 @@ In order to use marketing channels in Customer Journey Analytics when using the 
 
    Your new derived field is added to the Derived fields > container, as part of Schema fields in the left rail of your Data view.
 
-1. {{upgrade-final-step}}
+{{upgrade-final-step}}

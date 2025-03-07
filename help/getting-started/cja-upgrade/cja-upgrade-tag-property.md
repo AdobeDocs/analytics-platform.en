@@ -39,4 +39,4 @@ To create a tag for your property:
 
     ![Create a property](assets/create-property.png)
 
-1. {{upgrade-final-step}}
+{{upgrade-final-step}}

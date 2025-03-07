@@ -108,4 +108,4 @@ To add the automatically created dataset to the same connection that you created
 
    This is required only if you did not already do it when configuring your Web SDK implementation.
 
-1. {{upgrade-final-step}}
+{{upgrade-final-step}}

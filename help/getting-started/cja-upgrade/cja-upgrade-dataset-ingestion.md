@@ -43,5 +43,5 @@ After you configure your Web SDK implementation, you need to check the statuses 
 
    Repeat this step to verify the status of each batch.
 
-1. {{upgrade-final-step}}
+{{upgrade-final-step}}
 

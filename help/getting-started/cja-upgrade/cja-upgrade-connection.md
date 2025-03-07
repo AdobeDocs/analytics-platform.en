@@ -115,4 +115,4 @@ You can add an Experience Platform dataset when you create a connection.
 
     {style="table-layout:auto"}
 
-1. {{upgrade-final-step}}
+{{upgrade-final-step}}

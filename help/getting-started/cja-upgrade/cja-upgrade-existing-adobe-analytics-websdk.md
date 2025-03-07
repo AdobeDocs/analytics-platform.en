@@ -66,4 +66,4 @@ Consider the following advantages and disadvantages of configuring your existing
 
    For more information, see [Mapping](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) in [Data Prep for Data Collection](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) in the Experience Platform documentation.
 
-1. {{upgrade-final-step}}
+{{upgrade-final-step}}

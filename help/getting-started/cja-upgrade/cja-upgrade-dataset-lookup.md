@@ -125,5 +125,5 @@ To add the lookup dataset to your connection in Customer Journey Analytics:
 
 1. Repeat this process until all lookup datasets are added to your connection in Customer Journey Analytics.
 
-1. {{upgrade-final-step}}
+{{upgrade-final-step}}
 

@@ -24,7 +24,7 @@ By leveraging the state-of-the-art technologies in supervised machine learning a
 
 1. Follow the information in [Personalized optimization model](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) in the Journey Optimizer Guide.
 
-1. {{upgrade-final-step}}
+{{upgrade-final-step}}
 
 <!--
 

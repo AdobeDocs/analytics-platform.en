@@ -71,4 +71,4 @@ To create the custom schema to use with the Analytics source connector:
 
 1. Select **[!UICONTROL Save]** to save your schema.
 
-1. {{upgrade-final-step}}
+{{upgrade-final-step}}

@@ -53,4 +53,4 @@ With the datastream available, you need to add Platform as a service:
 
    See [Datastreams overview](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) for more information on how to configure a datastream and how to handle sensitive data.
 
-1. {{upgrade-final-step}}
+{{upgrade-final-step}}

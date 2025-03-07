@@ -45,4 +45,4 @@ To set up your datastream:
 
 1. Select **[!UICONTROL Save]**.
 
-1. {{upgrade-final-step}}
+{{upgrade-final-step}}

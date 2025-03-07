@@ -293,5 +293,5 @@ To build and publish your tag:
 
    ![Publish - Build Library](assets/build-library.png)
 
-1. {{upgrade-final-step}}
+{{upgrade-final-step}}
 

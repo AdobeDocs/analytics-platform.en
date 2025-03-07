@@ -55,4 +55,4 @@ To create a data view:
 
 1. After all desired settings are specified, select **[!UICONTROL Save and finish]**.
 
-1. {{upgrade-final-step}}
+{{upgrade-final-step}}

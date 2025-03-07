@@ -102,4 +102,4 @@ To create an Adobe Analytics source connector to use for historical data:
 
    If you are using the Analytics source connector to bring historical data into your Customer Journey Analytics Web SDK implementation, then you need to add this automatically created dataset to the connection that you created for your Web SDK implementation.
 
-1. {{upgrade-final-step}}
+{{upgrade-final-step}}

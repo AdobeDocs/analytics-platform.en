@@ -186,4 +186,4 @@ To create a custom schema:
 
    See [Create and edit schemas in the UI](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html) for more information on adding and removing field groups and individual fields to a schema.
 
-1. {{upgrade-final-step}}
+{{upgrade-final-step}}

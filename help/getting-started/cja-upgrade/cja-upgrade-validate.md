@@ -33,6 +33,6 @@ You can validate that the connection is active and that data is flowing to the d
 
 1. See [Connection details](/help/connections/manage-connections.md#manage-connections) in [Manage connections](/help/connections/manage-connections.md) for information about the details available about each connection. 
 
-1. {{upgrade-final-step}} 
+{{upgrade-final-step}} 
 
 <!-- Should we duplicate the content here or single source it with /help/connections/manage-connections.md -->

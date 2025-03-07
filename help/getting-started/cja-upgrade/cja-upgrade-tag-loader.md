@@ -52,4 +52,4 @@ To get the code that references your tag:
 
    See [Environments](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?) for more information.
 
-1. {{upgrade-final-step}}
+{{upgrade-final-step}}
