@@ -410,11 +410,19 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](../use-cases/cja-usecases.md)
-  + Google Analytics data {#ga}
-    + [Migrate data from Google Analytics](../use-cases/ga/overview.md)
-    + [Ingest Google Analytics historical data ](../use-cases/ga/backfill.md)
-    + [Configure streaming Google Analytics data](../use-cases/ga/streaming.md)
-    + [Report on Google Analytics data](../use-cases/ga/report.md)
+  + Third-party data {#third-party}
+    + [Overview](/help/use-cases/third-party/overview.md)
+    + Google Analytics {#ga}
+      + [Migrate data from Google Analytics](/help/use-cases/third-party/ga/overview.md)
+      + [Ingest Google Analytics historical data](/help/use-cases/third-party/ga/backfill.md)
+      + [Configure streaming Google Analytics data](/help/use-cases/third-party/ga/streaming.md)
+      + [Report on Google Analytics data](/help/use-cases/third-party/ga/report.md)
+    + Quantum Metric {#qm}
+      + [Collect session ID](/help/use-cases/third-party/quantum-metric/collect-session-id.md)
+      + [Tie session replays](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
+      + [Use heatmaps](/help/use-cases/third-party/quantum-metric/heatmap.md)
+      + [Add friction events](/help/use-cases/third-party/quantum-metric/friction-events.md)
+      + [Source connector](/help/use-cases/third-party/quantum-metric/source-connector.md)
   + Data ingestion {#data-ingestion}
     + [Ingest and use Marketo Engage data](../use-cases/data-ingestion/marketo.md)
     + [Ingest and use Experience Platform audiences ](../use-cases/data-ingestion/ingest-aep-segments.md)
