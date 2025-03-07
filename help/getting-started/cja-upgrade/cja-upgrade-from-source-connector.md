@@ -71,3 +71,5 @@ Following is the high-level process for transitioning from exclusively using the
 1. Delete your original Analytics source connector. <!-- need to add steps somewhere about how to do this -->
 
 1. [Create a new Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+
+1. {{upgrade-final-step}}

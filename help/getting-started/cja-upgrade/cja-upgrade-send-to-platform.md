@@ -25,6 +25,9 @@ The information on this page covers Step 3 of the upgrade process, as highlighte
 
 +++
 
+>[!AVAILABILITY]
+>
+>The information on this page is being replaced with the following more comprehensive upgrade information: <ul><li>**Recommended upgrade steps**<p>For detailed information, see [Recommended path when upgrading from Adobe Analytics to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Customer Journey Analytics Upgrade Guide**<p>A new upgrade guide is available that dynamically generates upgrade steps that are tailored for your organization and your unique circumstances.</p><p>To access the guide from Customer Journey Analytics, select the **[!UICONTROL Workspace]** tab, then select **[!UICONTROL Upgrade to Customer Journey Analytics]** in the left panel. Follow the on-screen instructions.</p></li></ul>
 
 After you [choose the upgrade path](/help/getting-started/cja-upgrade/cja-upgrade-path.md) that is best for your organization, you can begin sending data to Adobe Experience Platform in order to make it available in Customer Journey Analytics.  
 

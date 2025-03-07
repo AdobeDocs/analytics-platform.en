@@ -108,4 +108,4 @@ To add the automatically created dataset to the same connection that you created
 
    This is required only if you did not already do it when configuring your Web SDK implementation.
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
+1. {{upgrade-final-step}}

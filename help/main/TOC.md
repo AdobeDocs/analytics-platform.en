@@ -37,10 +37,6 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
   + Upgrade to Customer Journey Analytics {#upgrade-to-cja}
-    + [Get started](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
-    + [Choose your upgrade path](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
-    + [Send data to Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
-    + [Retain historical data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
     + [Recommended upgrade process](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
     + Architect and create a schema {#schema}
       + [Architect your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
@@ -84,6 +80,10 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Customer Journey Analytics features](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md)
       + [Web SDK implementation options](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
       + [Configuring Adobe Analytics Web SDK for Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
+    + [Get started](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
+    + [Choose your upgrade path](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
+    + [Send data to Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
+    + [Retain historical data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)

@@ -49,4 +49,4 @@ To add the Web SDK extension to your tag:
 
 1. Select **[!UICONTROL Save]**.
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
+1. {{upgrade-final-step}}

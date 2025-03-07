@@ -129,3 +129,6 @@ When you no longer need Adobe Analytics for the purposes described in the sectio
    After you have collected enough historical data in Customer Journey Analytics with your new Web SDK implementation, you can remove the Analytics source connector entirely. 
    
    Do this when you no longer need the historical data from your Adobe Analytics environment through the Analytics source connector, and you can rely solely on the historical data you collected with the new Web SDK implementation.
+
+1. {{upgrade-final-step}}
+
