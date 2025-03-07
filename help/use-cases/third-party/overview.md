@@ -2,7 +2,7 @@
 title: Third-party use cases in Customer Journey Analytics
 description: Learn how to complement data collected in Customer Journey Analytics with data collected from products outside of Adobe.
 ---
-## Third-party use cases in Customer Journey Analytics
+# Third-party use cases in Customer Journey Analytics
 
 Many organizations collect data using multiple products. These additional data points can enrich data collected through the Web SDK or Mobile SDK and provide valuable insights.
 
