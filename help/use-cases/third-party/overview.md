@@ -1,6 +1,7 @@
 ---
 title: Third-party use cases in Customer Journey Analytics
 description: Learn how to complement data collected in Customer Journey Analytics with data collected from products outside of Adobe.
+exl-id: 3de5ccaf-7a65-448e-b886-fab56bc2a73b
 ---
 # Third-party use cases in Customer Journey Analytics
 

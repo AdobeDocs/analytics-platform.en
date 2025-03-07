@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: yes
 hide: yes
+exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
 ---
 # Tie Quantum Metric session replays to data in Customer Journey Analytics
 

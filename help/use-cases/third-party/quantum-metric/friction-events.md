@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: yes
 hide: yes
+exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
 ---
 # Add Quantum Metric friction events to Customer Journey Analytics
 

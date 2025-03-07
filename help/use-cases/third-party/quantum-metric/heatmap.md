@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: yes
 hide: yes
+exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
 ---
 # Use Quantum Metric heatmaps with Customer Journey Analytics
 

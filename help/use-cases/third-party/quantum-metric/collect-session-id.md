@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: yes
 hide: yes
+exl-id: cfe4bafd-afe6-4738-94f1-30882893b3b6
 ---
 # Collect Quantum Metric session IDs in Customer Journey Analytics
 
