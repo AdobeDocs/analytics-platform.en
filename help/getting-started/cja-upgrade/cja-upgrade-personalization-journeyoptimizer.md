@@ -14,11 +14,17 @@ hidefromtoc: yes
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-personalization"
 >title="Use the personalization object for Adobe Journey Optimizer"
->abstract="Use the personalization object in your implementation for use in Adobe Journey Optimizer."
+>abstract="By leveraging the state-of-the-art technologies in supervised machine learning and deep learning, Personalized optimization allows a business user (marketer) to define business goals and utilizes their customer data to train business-oriented models to serve personalized offers and maximize KPIs."
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note}}
+
+By leveraging the state-of-the-art technologies in supervised machine learning and deep learning, Personalized optimization allows a business user (marketer) to define business goals and utilizes their customer data to train business-oriented models to serve personalized offers and maximize KPIs.
+
+For more information, see [Personalized optimization model](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) in the Journey Optimizer Guide.
+
+<!--
 
 The result of the personalization object ends up in a dataset. The result of experimentation. When a customer has used AA with Target, that ends up in a complete different space than when they're migrating to CJA and they're going to use CJA with Adobe Target. 
 
@@ -50,4 +56,6 @@ Manually rendering content or Automatically rendering content.
 
 
 ## Tags
+
+-->
 

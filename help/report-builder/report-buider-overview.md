@@ -45,4 +45,4 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Buider fo
 >[!ENDSHADEBOX]
 
  You can download Report Builder for Customer Journey Analytics from the
- [Microsoft Store](https://www.microsoft.com/en-us/store/apps/windows).
+ [Microsoft Store](https://appsource.microsoft.com/en-us/product/Office365/WA200003101).

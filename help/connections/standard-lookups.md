@@ -69,10 +69,15 @@ The catch here is that they can only populate those IDs today if they have a dir
 
 ## Report on standard lookup dimensions
 
-In order to report on the standard lookup dimensions, you have to add them when you create a data view in Customer Journey Analytics:
+In order to report on Adobe standard lookup dimensions, you have to add one or more of these dimensions when you create a [data view](/help/data-views/data-views.md) in Customer Journey Analytics. In **[!UICONTROL Data view]** > **[!UICONTROL Components]**:
 
-![Create a data view showing the Add Components list](assets/global-lookup.png)
+1. Select **[!UICONTROL Schema fields]** from the dropdown menu in the left rail.
+1. Select **[!UICONTROL Adobe lookups]** from the list of schema fields containers.
+1. Drill down into **[!UICONTROL Browser]**, **[!UICONTROL Mobile]**, or **[!UICONTROL Operating System]** until you find the dimension you want to add.
+1. Drag the dimension into the **[!UICONTROL Metrics]** or **[!UICONTROL Dimensions]** table within **[!UICONTROL Included components]**.
 
-You can then see the lookup data in Workspace:
+   ![Create a data view showing the Add Components list](assets/add-standard-lookup-dimension.gif)
+
+You can then use the lookup data in Workspace:
 
 ![Freeform Table showing the data](assets/gl-reporting.png)

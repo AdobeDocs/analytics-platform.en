@@ -412,8 +412,8 @@ Equal. The output is either a 0 (false) or 1 (true).
 
 | Argument | Description |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | The metric you want to use to compare. |
+| metric_Y | The metric you want to use to compare against. |
 
 ### Example
 
@@ -551,8 +551,8 @@ The output is either a 0 (false) or 1 (true).
 
 | Argument | Description |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | The base metric you want to use to compare. |
+| metric_Y | The metric you want to use to compare against. |
 
 ### Example
 
@@ -576,8 +576,8 @@ Greater than or equal. The output is either a 0 (false) or 1 (true).
 
 | Argument | Description |
 |---|---|
-| metric_X ||
-| metric_Y||
+| metric_X | The base metric you want to use to compare. |
+| metric_Y | The metric you want to use to compare against.|
 
 ### Example
 
@@ -689,8 +689,8 @@ The output is either a 0 (false) or 1 (true).
 
 | Argument | Description |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | The metric you want to use to compare. |
+| metric_Y | The metric you want to use to compare against.|
 
 ### Example
 
@@ -714,8 +714,8 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 
 | Argument | Description |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | The metric you want to use to compare. |
+| metric_Y | The metric you want to use to compare against.|
 
 ### Example
 
@@ -1013,8 +1013,8 @@ Not Equal. The output is either a 0 (false) or 1 (true).
 
 | Argument | Description |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | The metric you want to use to compare. |
+| metric_Y | The metric you want to use to compare against. |
 
 ### Example
 
