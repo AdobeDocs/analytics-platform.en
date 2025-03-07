@@ -292,3 +292,6 @@ To build and publish your tag:
 1. You can select **[!UICONTROL ...]** to rebuild the library or move the library to a staging or production environment.
 
    ![Publish - Build Library](assets/build-library.png)
+
+{{upgrade-final-step}}
+

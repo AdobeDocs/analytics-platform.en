@@ -55,4 +55,4 @@ To create a data view:
 
 1. After all desired settings are specified, select **[!UICONTROL Save and finish]**.
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}

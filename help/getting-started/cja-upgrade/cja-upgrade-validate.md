@@ -33,6 +33,6 @@ You can validate that the connection is active and that data is flowing to the d
 
 1. See [Connection details](/help/connections/manage-connections.md#manage-connections) in [Manage connections](/help/connections/manage-connections.md) for information about the details available about each connection. 
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/). 
+{{upgrade-final-step}} 
 
 <!-- Should we duplicate the content here or single source it with /help/connections/manage-connections.md -->

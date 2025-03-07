@@ -123,5 +123,7 @@ To add the lookup dataset to your connection in Customer Journey Analytics:
 
 1. Using the **[!UICONTROL Key]** field and the **[!UICONTROL Matching key]** field, create a correlation between the field in your lookup dataset with that in your event or summary dataset. 
 
-1. After all lookup datasets are added to your connection in Customer Journey Analytics, continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/). 
+1. Repeat this process until all lookup datasets are added to your connection in Customer Journey Analytics.
+
+{{upgrade-final-step}}
 

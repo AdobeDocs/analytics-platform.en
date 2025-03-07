@@ -22,7 +22,9 @@ hidefromtoc: yes
 
 By leveraging the state-of-the-art technologies in supervised machine learning and deep learning, Personalized optimization allows a business user (marketer) to define business goals and utilizes their customer data to train business-oriented models to serve personalized offers and maximize KPIs.
 
-For more information, see [Personalized optimization model](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) in the Journey Optimizer Guide.
+1. Follow the information in [Personalized optimization model](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) in the Journey Optimizer Guide.
+
+{{upgrade-final-step}}
 
 <!--
 

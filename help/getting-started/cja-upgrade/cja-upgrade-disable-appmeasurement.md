@@ -26,3 +26,8 @@ Before disabling Adobe Analytics, review the information in [Evaluate when to di
 * **Tags:** Disable the Adobe Analytics extension
 
 * **AppMeasurment:** Replace the AppMeasurement.js library s=newobject
+
+>[!NOTE]
+>
+>This information is not yet available. It will be available in the near future.
+

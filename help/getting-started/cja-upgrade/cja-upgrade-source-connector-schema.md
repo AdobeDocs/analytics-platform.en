@@ -71,4 +71,4 @@ To create the custom schema to use with the Analytics source connector:
 
 1. Select **[!UICONTROL Save]** to save your schema.
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}

@@ -69,7 +69,7 @@ For Adobe Analytics implementations using the Web SDK:
 
 
 
-the upgrade steps provided by the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/).
+the upgrade steps provided by the Customer Journey Analytics Upgrade Guide.
 
 If you want to create an XDM schema to use with Customer Journey Analytics, continue with [Create an XDM schema to use with Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md).
 
