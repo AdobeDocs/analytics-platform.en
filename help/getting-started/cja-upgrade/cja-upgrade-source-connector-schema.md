@@ -19,6 +19,15 @@ exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-historical"
+>title="Create the Analytics source connector for historical data"
+>abstract="You can use the Analytics source connector to bring Adobe Analytics report suite data into Adobe Experience Platform. This data can then be used as historical data in Customer Journey Analytics."
+
+<!-- markdownlint-enable MD034 -->
+
 {{upgrade-note-step}}
 
 ## Understand how the Analytics source connector can bring historical data into Customer Journey Analytics
