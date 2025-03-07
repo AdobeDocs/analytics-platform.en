@@ -1,15 +1,15 @@
 ---
-title: How to use filters in Report Builder in Customer Journey Analytics
-description: Describes how to use filters in Report Builder for Customer Journey Analytics
+title: How to use segments in Report Builder in Customer Journey Analytics
+description: Describes how to use segments in Report Builder for Customer Journey Analytics
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
 ---
-# Work with Filters in Report Builder
+# Work with Segments in Report Builder
 
-You can apply Filters when you create a new data block or when you select the **Edit data block** option from the COMMANDS panel.
+You can apply Segments when you create a new data block or when you select the **Edit data block** option from the COMMANDS panel.
 
 ## Apply filters to a data block
 
