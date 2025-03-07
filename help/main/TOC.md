@@ -407,6 +407,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](../use-cases/cja-usecases.md)
   + Third-party data {#third-party}
+    + [Overview](/help/use-cases/third-party/overview.md)
     + Google Analytics {#ga}
       + [Migrate data from Google Analytics](/help/use-cases/third-party/ga/overview.md)
       + [Ingest Google Analytics historical data](/help/use-cases/third-party/ga/backfill.md)
