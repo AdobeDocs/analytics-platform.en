@@ -59,6 +59,6 @@ To change the data view, select a new data view from the drop-down menu.
 
 **Date range** shows the date range for the selected data blocks. If multiple data blocks are selected with multiple date ranges, the **Date range** link displays *Multiple*.
 
-### Filters
+### Segments
 
-The **Filters** link displays a summary list of the filters used by the selected data blocks. If multiple data blocks are selected with multiple filters applied, the **Filters** link displays *Multiple*.
+The **Segments** link displays a summary list of the segments used by the selected data blocks. If multiple data blocks are selected with multiple segments applied, the **Segments** link displays *Multiple*.
