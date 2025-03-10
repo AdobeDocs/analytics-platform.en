@@ -419,6 +419,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Configure streaming Google Analytics data](/help/use-cases/third-party/ga/streaming.md)
       + [Report on Google Analytics data](/help/use-cases/third-party/ga/report.md)
     + Quantum Metric {#qm}
+      + [Overview](/help/use-cases/third-party/quantum-metric/qm-overview.md)
       + [Collect session ID](/help/use-cases/third-party/quantum-metric/collect-session-id.md)
       + [Tie session replays](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
       + [Use heatmaps](/help/use-cases/third-party/quantum-metric/heatmap.md)
