@@ -42,7 +42,7 @@ exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-no-selection"
 >title="Implement the Web SDK for your given property"
->abstract="Select the desired implementation type in the questionnaire for more detailed instructions."
+>abstract="Select the desired implementation type in the upgrade guide for more detailed instructions."
 
 <!-- markdownlint-enable MD034 -->
 

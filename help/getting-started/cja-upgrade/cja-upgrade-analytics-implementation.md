@@ -87,7 +87,7 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-determine-implementation"
 >title="Determine your existing implementation type"
->abstract="Work internally within your organization to determine what type of implementation that you currently use to send data to Adobe Analytics. Partnering with the individual or team that knows this information is likely, when you're ready to migrate to Customer Journey Analytics.<br><br>After you determine the type of implementation that your organization uses, modify your answer in the questionnaire."
+>abstract="Work internally within your organization to determine what type of implementation that you currently use to send data to Adobe Analytics. As you upgrade to Customer Journey Analytics, partner with the individual or team that knows this information.<br><br>After you determine the type of implementation that your organization uses, modify your answer in the Customer Journey Analytics Upgrade Guide."
 
 <!-- markdownlint-enable MD034 -->
 
