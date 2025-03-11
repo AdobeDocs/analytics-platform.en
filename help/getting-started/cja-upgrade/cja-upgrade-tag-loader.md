@@ -4,8 +4,6 @@ description: Learn how to implement the loader tag for the Web SDK extension
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
 ---
 # Implement the loader tag for the Web SDK extension {#upgrade-tag-loader}

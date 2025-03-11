@@ -4,8 +4,6 @@ description: Learn about the options available when choosing a schema for Custom
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
 ---
 # Choose your schema for Customer Journey Analytics {#choose-schema}

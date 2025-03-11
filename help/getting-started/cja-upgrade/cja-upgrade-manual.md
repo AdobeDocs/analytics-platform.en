@@ -4,8 +4,6 @@ description: Learn how to install the Platform Web SDK wtih alloy.js
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 0e508ce7-8f3b-41f1-808c-1348942c2716
 ---
 # Install the Platform Web SDK wtih alloy.js {#upgrade-manual}

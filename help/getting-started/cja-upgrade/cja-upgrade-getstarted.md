@@ -4,17 +4,15 @@ description: Plan your upgrade from Adobe Analytics to Customer Journey Analytic
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
+hide: yes
+hidefromtoc: yes
 exl-id: fd3b36ab-72c1-469a-b2c7-419813c82425
 ---
 # Step 1: Get started with the upgrade to Customer Journey Analytics
 
-<!--
-
 >[!AVAILABILITY]
 >
 >The information on this page is being replaced with the following more comprehensive upgrade information: <ul><li>**Recommended upgrade steps**<p>For detailed information, see [Recommended path when upgrading from Adobe Analytics to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Customer Journey Analytics Upgrade Guide**<p>A new upgrade guide is available that dynamically generates upgrade steps that are tailored for your organization and your unique circumstances.</p><p>To access the guide from Customer Journey Analytics, select the **[!UICONTROL Workspace]** tab, then select **[!UICONTROL Upgrade to Customer Journey Analytics]** in the left panel. Follow the on-screen instructions.</p></li></ul>
-
--->
 
 Customer Journey Analytics is the next generation of analytics. It allows multi-channel data collection (both online and offline data), combined with powerful report-time processing functionality (through the definition of components and derived fields in data views). 
 

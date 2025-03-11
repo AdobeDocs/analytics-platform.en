@@ -4,8 +4,6 @@ description: Learn about configuring your existing Adobe Analytics Web SDK imple
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 1459a512-bfa8-4805-97e8-5b6acc6e4ac9
 ---
 # Configure your existing Adobe Analytics Web SDK implementation to send data to Platform {#existing-websdk-implementation}

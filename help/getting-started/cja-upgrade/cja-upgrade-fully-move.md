@@ -4,8 +4,6 @@ description: Learn how to evaluate how long you need Adobe Analytics after upgra
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 ---
 # Evaluate when to disable Adobe Analytics after upgrading to Customer Journey Analytics {#evaluate-aa-needs}

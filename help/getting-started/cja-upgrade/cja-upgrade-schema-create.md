@@ -4,8 +4,6 @@ description: Learn how to create a custom schema for Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 ---
 # Create a custom schema to use with Customer Journey Analytics {#create-custom-schema}

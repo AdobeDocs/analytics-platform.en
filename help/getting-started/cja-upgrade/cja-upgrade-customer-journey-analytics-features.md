@@ -4,8 +4,6 @@ description: Learn about features unique to Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 ---
 # Understand features unique to Customer Journey Analytics {#feature-support-upgrade}

@@ -4,8 +4,6 @@ description: Learn how to create a tag property and add the Web SDK extension
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 156df830-541d-4c92-9c49-98f346e040a7
 ---
 # Create a tag for your property {#upgrade-tag-property}

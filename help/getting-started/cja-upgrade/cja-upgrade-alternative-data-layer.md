@@ -4,8 +4,6 @@ description: Learn about the alternate methods when upgrading to Customer Journe
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 3a0d03d1-def0-45e6-8eb2-115b88497e6d
 ---
 # Upgrade alternative: Send your data layer to Customer Journey Analytics {#data-collection-data-layer}

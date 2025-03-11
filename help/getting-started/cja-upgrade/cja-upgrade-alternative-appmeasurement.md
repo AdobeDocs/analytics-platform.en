@@ -4,8 +4,6 @@ description: Learn about the alternate methods when upgrading to Customer Journe
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
 ---
 # Upgrade alternative: Use AppMeasurement data collection with the Experience Platform Web SDK and Customer Journey Analytics {#data-collection-appmeasurement}

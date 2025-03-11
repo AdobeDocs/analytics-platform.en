@@ -4,8 +4,6 @@ description: Learn how to add the Analytics source connector dataset to the conn
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
 ---
 # Add the Analytics source connector dataset to the connection {#upgrade-source-connector-dataset}

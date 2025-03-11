@@ -4,8 +4,6 @@ description: Learn how to use the personalization object for use with Adobe Jour
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 5086ac6e-5bee-4f0f-b7e5-a3d9bd8a1332
 ---
 # Use the personalization object for use with Adobe Journey Optimizer {#upgrade-personalization}
