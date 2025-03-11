@@ -4,8 +4,6 @@ description: Learn about the recommended path when upgrading from Adobe Analytic
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: c0513e4c-51fb-4b4c-8450-8e6bf7dda4e7
 ---
 # Validate that data is flowing to Customer Journey Analytics {#validate-data}

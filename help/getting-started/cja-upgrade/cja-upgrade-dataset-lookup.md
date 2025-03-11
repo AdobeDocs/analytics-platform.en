@@ -4,8 +4,6 @@ description: Learn how to create lookup datasets to classify data in Customer Jo
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
 ---
 # Create lookup datasets to classify data in Customer Journey Analytics {#upgrade-lookup-dataset}

@@ -4,8 +4,6 @@ description: Learn about the Web SDK implementation options when upgrading to Cu
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 ---
 # Understand Web SDK implementation options when upgrading to Customer Journey Analytics {#web-sdk-implementation-options}

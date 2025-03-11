@@ -4,8 +4,6 @@ description: Learn how to create a custom schema for the Analytics source connec
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
 ---
 # Create a custom schema for the Analytics source connector {#create-custom-schema}

@@ -4,8 +4,6 @@ description: Learn how to transition to the Web SDK from the Analytics source co
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 ---
 # Transition from the Analytics source connector to the Web SDK for Customer Journey Analytics {#transition-from-source-connector}

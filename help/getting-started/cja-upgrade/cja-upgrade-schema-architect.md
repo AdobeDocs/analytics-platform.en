@@ -4,8 +4,6 @@ description: Learn about the recommended path when upgrading from Adobe Analytic
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
 ---
 # Architect your schema for use with Customer Journey Analytics {#upgrade-schema-architect}

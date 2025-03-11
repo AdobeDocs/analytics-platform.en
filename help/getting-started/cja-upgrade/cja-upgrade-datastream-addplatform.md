@@ -4,8 +4,6 @@ description: Learn about the recommended path when upgrading from Adobe Analytic
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
 ---
 # Add Platform as a service to your datastream {#upgrade-addplatform-datastream}

@@ -4,8 +4,6 @@ description: Learn how to monitor dataset ingestion when upgrading to Customer J
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
 ---
 # Monitor dataset ingestion when upgrading to Customer Journey Analytics {#monitor-ingestion}

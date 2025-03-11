@@ -4,8 +4,6 @@ description: Learn how to upgrade from a third-party analytics solution to Custo
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: bc79ba1a-1153-4fe8-b265-9703a323c977
 ---
 # Upgrade from a third-party analytics solution to Customer Journey Analytics {#upgrade-from-third-party}
