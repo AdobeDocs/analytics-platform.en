@@ -6,9 +6,9 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (March 2025)
 
-**Last update**: March 10, 2025
+**Last update**: March 11, 2025
 
-These release notes cover the release period of March 5 to April 15, 2025. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
+These release notes cover the release period of March 5 to April 14, 2025. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
 ## New or updated features 
 
@@ -23,7 +23,10 @@ These release notes cover the release period of March 5 to April 15, 2025. Adobe
 
 ## Fixes in Customer Journey Analytics
 
+**Alerts**: AN-368098
 **Analysis Workspace**: AN-333301; AN-365796; AN-368023
+**Audit Log**: AN-368100
+**Data Views**: AN-369504
 **Filters**: AN-369037
 **Full Table Export**: AN-369330
 **Mobile App**: AN-369365
