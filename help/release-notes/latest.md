@@ -6,9 +6,9 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (February 2025)
 
-**Last update**: February 20, 2025
+**Last update**: March 11, 2025
 
-These release notes cover the release period of January 24, 2025 to March 18, 2025. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
+These release notes cover the release period of January 24, 2025 to March 12, 2025. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
 ## New or updated features 
 
@@ -16,6 +16,7 @@ These release notes cover the release period of January 24, 2025 to March 18, 20
 | ----------- | ---------- | ------- | ---- |
 | **BI Extension - expanded support** | The Customer Journey Analytics BI extension now [supports Looker, Jupyter Notebook and R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases).  |   |  January 24, 2025 |
 | **Media Collection: Adobe Source Connector updates for new Media Reporting XDM** | The Analytics Source Connector automatically maps streaming media data in Adobe Analytics to the same fields used by the Web SDK. Previously, data was mapped to both the old and new locations, but only the new location will be used in the future. [Learn more](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | January 30, 2025 |
+| **Customer Journey Analytics upgrade guide** | Lets you generate a step-by-step guide for upgrading from Adobe Analytics to Customer Journey Analytics. This guide is tailored to your organization and takes into consideration your current Adobe Analytics environment, your intended uses for Customer Journey Analytics, and any time-saving tradeoffs your organization wants to make.<p>To start generating your custom guide, log in to [!DNL Customer Journey Analytics], then select **[!UICONTROL Upgrade to Customer Journey Analytics]** on the **[!UICONTROL Workspace]** tab.<p>[Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#recommended-upgrade-steps-for-most-organizations) |  | March 11, 2025 |
 
 
 ## Fixes in Customer Journey Analytics
