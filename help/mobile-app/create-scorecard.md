@@ -42,7 +42,7 @@ As a curator of this scorecard, you can use the scorecard builder to configure w
 
 To create the scorecard, you need to do the following:
 
-1. Access the [!UICONTROL Blank Mobile Scorecard] template.
+1. Access the [!UICONTROL Blank mobile scorecard] template in Workspace.
 2. Configure the scorecard with data and save it.
 
 ## Access the [!UICONTROL Blank Mobile Scorecard] template {#template}
@@ -52,6 +52,7 @@ You can access the [!UICONTROL Blank Mobile Scorecard] template either by creati
 ### Create a new project {#create}
 
 1. Open Customer Journey Analytics and click the **[!UICONTROL Workspace]** tab.
+1. In the left rail, click **[!UICONTROL Projects]**.
 1. Click **[!UICONTROL Create project]** and select the **[!UICONTROL Blank mobile scorecard]** project template.
 1. Click **[!UICONTROL Create]**.
 
@@ -66,7 +67,7 @@ You can access the [!UICONTROL Blank Mobile Scorecard] template either by creati
 
 To implement the scorecard template:
 
-1. Under **[!UICONTROL Properties]** (in the right-hand rail), specify a **[!UICONTROL Project data view]** from which you want to use data.
+1. Under **[!UICONTROL Scorecard properties]** (in the right-hand rail), specify a **[!UICONTROL Project data view]** from which you want to use data.
 
     ![New mobile scorecard window highlighting the data view selection](assets/properties_save.png)
 
