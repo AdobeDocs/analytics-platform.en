@@ -38,7 +38,7 @@ You must be entitled to Quantum Metric's **UX Ops** package in order to access Q
 
 1. Click **[!UICONTROL Create]**.
 
-1.	Click Create and then test one of the links to see if it opens in the URL with the QM extension popped open. Note – it will open in a separate tab, so you don’t lose your work.
+1. Click Create and then test one of the links to see if it opens in the URL with the QM extension popped open. Note – it will open in a separate tab, so you don’t lose your work.
 
 
 ## Viewing heatmaps by clicking links within Customer Journey Analytics
