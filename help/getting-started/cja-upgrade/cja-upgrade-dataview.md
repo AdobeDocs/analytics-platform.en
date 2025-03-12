@@ -4,8 +4,6 @@ description: Learn about the recommended path when upgrading from Adobe Analytic
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
 ---
 # Create a data view in Customer Journey Analytics {#upgrade-create-dataview}
@@ -55,4 +53,4 @@ To create a data view:
 
 1. After all desired settings are specified, select **[!UICONTROL Save and finish]**.
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}

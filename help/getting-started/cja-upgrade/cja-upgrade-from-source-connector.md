@@ -4,8 +4,6 @@ description: Learn how to transition to the Web SDK from the Analytics source co
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 ---
 # Transition from the Analytics source connector to the Web SDK for Customer Journey Analytics {#transition-from-source-connector}
@@ -16,6 +14,15 @@ exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 >id="cja-upgrade-source-connector"
 >title="Analytics source connector implementation"
 >abstract="The Analytics source connector allows you to easily get value from Customer Journey Analytics, but requires that you pay for both Adobe Analytics and Customer Journey Analytics. This guide can help you move towards an independent Web SDK implementation."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-delete"
+>title="Delete the existing Analytics source connector"
+>abstract="The Analytics source connector that you currently have is not compatible with your organization's custom schema. However, the data still exists in the Analytics report suite. This step removes the current Analytics source connector so you can recreate it using the correct schema in a subsequent step.<br><br>Before you delete the source connector, you might want to coordinate with others in your organization to ensure that the removal of the source connector does not impact reporting within your organization. This coordination might take several weeks to complete."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -62,3 +69,5 @@ Following is the high-level process for transitioning from exclusively using the
 1. Delete your original Analytics source connector. <!-- need to add steps somewhere about how to do this -->
 
 1. [Create a new Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+
+{{upgrade-final-step}}

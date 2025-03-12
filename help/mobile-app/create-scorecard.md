@@ -42,7 +42,7 @@ As a curator of this scorecard, you can use the scorecard builder to configure w
 
 To create the scorecard, you need to do the following:
 
-1. Access the [!UICONTROL Blank Mobile Scorecard] template.
+1. Access the [!UICONTROL Blank mobile scorecard] template in Workspace.
 2. Configure the scorecard with data and save it.
 
 ## Access the [!UICONTROL Blank Mobile Scorecard] template {#template}
@@ -52,6 +52,7 @@ You can access the [!UICONTROL Blank Mobile Scorecard] template either by creati
 ### Create a new project {#create}
 
 1. Open Customer Journey Analytics and click the **[!UICONTROL Workspace]** tab.
+1. In the left rail, click **[!UICONTROL Projects]**.
 1. Click **[!UICONTROL Create project]** and select the **[!UICONTROL Blank mobile scorecard]** project template.
 1. Click **[!UICONTROL Create]**.
 
@@ -66,7 +67,7 @@ You can access the [!UICONTROL Blank Mobile Scorecard] template either by creati
 
 To implement the scorecard template:
 
-1. Under **[!UICONTROL Properties]** (in the right-hand rail), specify a **[!UICONTROL Project data view]** from which you want to use data.
+1. Under **[!UICONTROL Scorecard properties]** (in the right-hand rail), specify a **[!UICONTROL Project data view]** from which you want to use data.
 
     ![New mobile scorecard window highlighting the data view selection](assets/properties_save.png)
 
@@ -85,13 +86,13 @@ For example, you can add appropriate dimensions (like **[!DNL Marketing Channel]
 
 ![New mobile scorecard window with an arrow pointing from the dimensions list to the scorecard pane.](assets/layer_dimensions.png)
 
-## Apply filters {#filters}
+## Apply segments {#segments}
 
-To apply filters to individual tiles, drag a filter (segments are filters in Customer Journey Analytics) from the left panel and drop it directly on top of the tile.
+To apply segments to individual tiles, drag a segment from the left panel and drop it directly on top of the tile.
 
-If you want to apply the filter to all the tiles in the scorecard, drop the tile on top of the scorecard. Or, you can also apply filters by selecting filters in the filter menu beneath the date ranges. You [configure and apply filters for your scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) the same way you would in Customer Journey Analytics Workspace.
+If you want to apply the segment to all the tiles in the scorecard, drop the tile on top of the scorecard. Or, you can also apply segments by selecting them in the segment menu beneath the date ranges. You [configure and apply segments for your scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) the same way you would in Customer Journey Analytics Workspace.
 
-![Filter dropdown selector highlighting the build filters](assets/segment_ui.png)
+![Segment dropdown selector highlighting the build segments](assets/segment_ui.png)
 
 ## Add date ranges {#dates}
 
@@ -180,7 +181,7 @@ If you want to remove [!UICONTROL Unspecified] dimension items from your data, d
 
 ## View and configure tile properties {#tiles}
 
-When you click a tile in the scorecard builder, the right-hand rail displays the properties and characteristics associated with that tile and its detail slide. In this rail, you can provide a new **Title** for the tile and alternatively configure the tile by applying filters. Segments are filters in Customer Journey Analytics.
+When you click a tile in the scorecard builder, the right-hand rail displays the properties and characteristics associated with that tile and its detail slide. In this rail, you can provide a new **Title** for the tile and alternatively configure the tile by applying segments.
 
 ![Properties tile](assets/properties-tile-new.png)
 
@@ -275,7 +276,7 @@ To delete a slide, tap the trash icon.
 
 ### Customize a data story {#customize-data-story}
 
-Data stories allow you to customize everything so you can share information that you want to share and exclude everything that you don't need. You can customize tiles and individual slides to add filters, show breakdowns, change the layout, and change the visualizations. 
+Data stories allow you to customize everything so you can share information that you want to share and exclude everything that you don't need. You can customize tiles and individual slides to add segments, show breakdowns, change the layout, and change the visualizations. 
 
 **To customize tiles**
 

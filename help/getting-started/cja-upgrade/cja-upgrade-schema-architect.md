@@ -4,8 +4,6 @@ description: Learn about the recommended path when upgrading from Adobe Analytic
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
 ---
 # Architect your schema for use with Customer Journey Analytics {#upgrade-schema-architect}
@@ -33,17 +31,23 @@ Review the following sections as you begin architecting your XDM schema.
 
 The underlying architecture of Customer Journey Analytics provides for much more flexibility than Adobe Analytics. Creating a new XDM schema is a key way to unlock that flexibility. When you upgrade to Customer Journey Analytics, make sure that you avoid carrying forward unnecessary Adobe Analytics restrictions into your schema.
 
+>[!NOTE]
+>
+>The following information is not yet complete. It will be complete in the near future.
+
 | Adobe Analytics data architecture | XDM schema architecture | 
 |---------|----------|
 | Individual metrics are added to the Analytics data architecture.<br/>For example, in Adobe Analytics, you have a different eVar for each event.  | Create individual metrics in the data view rather than in the XDM schema. Doing so provides more flexibility in if you need to make changes at a later time.<br/>For example, in Customer Journey Analytics, you have a single event in the schema, and use create events in the data view.  | 
-| Props and eVars are required to create custom variables. | B2 | 
-| A3 | B3 | 
+| Props and eVars are required to create custom variables. |  | 
 
 ## Identify your data team and other stakeholders throughout your organization
 
+>[!NOTE]
+>
+>This information is not yet available. It will be available in the near future.
 
 ## Consider other Adobe Experience Platform applications used in your organization
 
-
-
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
+>[!NOTE]
+>
+>This information is not yet available. It will be available in the near future.

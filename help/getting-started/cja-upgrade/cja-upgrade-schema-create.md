@@ -4,8 +4,6 @@ description: Learn how to create a custom schema for Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 ---
 # Create a custom schema to use with Customer Journey Analytics {#create-custom-schema}
@@ -186,4 +184,4 @@ To create a custom schema:
 
    See [Create and edit schemas in the UI](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html) for more information on adding and removing field groups and individual fields to a schema.
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}

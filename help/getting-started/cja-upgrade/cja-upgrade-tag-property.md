@@ -4,8 +4,6 @@ description: Learn how to create a tag property and add the Web SDK extension
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 156df830-541d-4c92-9c49-98f346e040a7
 ---
 # Create a tag for your property {#upgrade-tag-property}
@@ -39,4 +37,4 @@ To create a tag for your property:
 
     ![Create a property](assets/create-property.png)
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}

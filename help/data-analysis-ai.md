@@ -30,7 +30,7 @@ Using the AI Assistant to answer data-centric questions in Analysis Workspace ca
 | **Verifiability** | Data verifiability and correctness can be confirmed via the generated freeform table and data visualization. For example, if a user asks *Trend orders last month*, you can confirm that the correct metric ("orders") and date range ("last month") were selected in the newly generated panel, data visualization, and freeform table. |
 | **Feedback** |<ul><li>Thumbs up</li><li>Thumbs down</li><li>Flag</li></ul> |
 
-### Out-of-scope Alpha features 
+### Out-of-scope Beta features 
 
 | Unsupported feature | Description |
 | --- | --- |
@@ -72,9 +72,9 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 3. Select **[!UICONTROL Blank project]** in the banner at the top of the projects page to open a new blank project.
 
-4. Ensure that the selected data view for the panel is the same data view that was enabled for use with the AI Assistant for Alpha testing. 
+4. Ensure that the selected data view for the panel is the same data view that was enabled for use with the AI Assistant for Beta testing. 
 
-   If you are unsure, contact the Alpha Slack channel.
+   If you are unsure, contact the Beta Slack channel.
 
 5. Select the AI Assistant chat icon at the top-right area of the page. 
 
@@ -181,7 +181,7 @@ These examples are designed to help you get familiar with how specific words or 
 | Line visualization | <ul><li>Trend</li><li>[Metric] in [Time range]</li></ul> |
 | Bar visualization | <ul><li>[Metric] by [Dimension]</li></ul> |
 
-## Alpha testing expectations and requested feedback
+## Beta testing expectations and requested feedback
 
 After posing each question, carefully review the assistant's provided answer. It's crucial to evaluate the generated visualizations comprehensively before providing feedback. 
 

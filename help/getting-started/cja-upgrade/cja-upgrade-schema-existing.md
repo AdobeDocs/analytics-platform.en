@@ -4,8 +4,6 @@ description: Learn about the options available when choosing a schema for Custom
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
 ---
 # Choose your schema for Customer Journey Analytics {#choose-schema}
@@ -69,7 +67,7 @@ For Adobe Analytics implementations using the Web SDK:
 
 
 
-the upgrade steps provided by the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/).
+the upgrade steps provided by the Customer Journey Analytics Upgrade Guide.
 
 If you want to create an XDM schema to use with Customer Journey Analytics, continue with [Create an XDM schema to use with Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md).
 
