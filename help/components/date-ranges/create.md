@@ -12,11 +12,11 @@ Anyone can create a custom date range. You create a date range in the following 
 
 ![Create an annotation](assets/create-date-range.png)
 
-* 🅐 In the main interface, select **[!UICONTROL Components]** and select **[!UICONTROL Date range]**. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** from the [[!UICONTROL Date range] manager](/help/components/date-ranges/manage.md). 
-* 🅑 In a Workspace project, from the context menu in a visualization, select **[!UICONTROL Custom date range to this date range]**.
-* 🅒 In a Workspace project, select **[!UICONTROL Components]** from the menu, and select **[!UICONTROL Create date range]**
-* 🅓 In a Workspace project, use the shortcut **[!UICONTROL ctrl+shift+d]** (Windows) or **[!UICONTROL shift+command+d]** (macOS). 
-* 🅔 In a Workspace project, from the Components left panel, select ![Add](/help/assets/icons/Add.svg) at ![Calendar](/help/assets/icons/Calendar.svg) **Date ranges**.
+* (A) In the main interface, select **[!UICONTROL Components]** and select **[!UICONTROL Date range]**. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** from the [[!UICONTROL Date range] manager](/help/components/date-ranges/manage.md). 
+* (B) In a Workspace project, from the context menu in a visualization, select **[!UICONTROL Custom date range to this date range]**.
+* (C) In a Workspace project, select **[!UICONTROL Components]** from the menu, and select **[!UICONTROL Create date range]**
+* (D) In a Workspace project, use the shortcut **[!UICONTROL ctrl+shift+d]** (Windows) or **[!UICONTROL shift+command+d]** (macOS). 
+* (E) In a Workspace project, from the Components left panel, select ![Add](/help/assets/icons/Add.svg) at ![Calendar](/help/assets/icons/Calendar.svg) **Date ranges**.
 
 To define the annotation, you use the [[!UICONTROL Date range builder]](#annotation-builder):
 
