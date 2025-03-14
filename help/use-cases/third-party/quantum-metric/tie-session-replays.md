@@ -10,7 +10,7 @@ exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
 ---
 # Tie Quantum Metric session replays to data in Customer Journey Analytics
 
-By linking Quantum Metric session replays with CJA data, customers can better understand "the why" behind "the what".  Workspace can be used to discover sessions with friction, then you can click hyperlinked session IDs to explore the session replay in Quantum Metric.  This data allows for viewing behavior within a session and better understanding of what drives consumer friction.
+By linking Quantum Metric session replays with CJA data, customers can better understand "the why" behind "the what".  Workspace can be used to discover sessions with friction, then you can click hyperlinked session IDs to explore the session replay in Quantum Metric.  This data allows for viewing behavior within a session and better understanding of what drives consumer friction.  Through session replays tied with CJA, you can capture critical context around customer behavior in your experience. 
 
 ## Prerequisites
 
@@ -40,5 +40,5 @@ Each session ID is now a clickable link. These links take you to Quantum Metric 
 ## Step 2 Viewing sessions from Customer Journey Analytics
 
 Once you create the Workspace report with clickable links, you can use Filters in Customer Journey Analytics to identify interesting sessions that you can further analyze in Quantum Metric.
-The table will return all the sessions in that segment, and you can click any one of them to explore further in QM.  Learn more about Quantum Metric session replay at https://www.quantummetric.com/platform/session-replay
+The table will return all the sessions in that segment, and you can click any one of them to explore further in QM.  Learn more about Quantum Metric session replay at [https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay)
 
