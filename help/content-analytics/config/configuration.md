@@ -40,34 +40,48 @@ The configuration of Content Analytics consists of the following steps:
 1. Only when you [manually re-publish](manual.md) the Tag property, the configuration modifications from step 4 and 5 are effectively deployed and activated.
 
 
+## Prerequisites
+
 Before you configure Content Analytics, ensure you the following prerequisites are met:
 
 
->[!PREREQUISITES]
+
+* You have allow-listed the User Agent and IP address for the featurization service that is used in Content Analytics. The User Agent string is `AdobeFeaturization/1.0`.
+* You have a Customer Journey Analytics Product Administrator role, with the additional permissions to manage connections and to manage data collections. The required Experience Platform permissions are:
+  
+   | Category | Permission | Description |
+   |---|---|---|
+   | [!UICONTROL Data Collection] | View Datastreams | Read-only access to datastreams. |
+   | [!UICONTROL Data Collection] | Manage Datastreams | Acces to read, create, edit and delete datastreams. |
+   | [!UICONTROL Data Modeling] | [!UICONTROL View Schemas] | Read-only access to schemas and related resources. |
+   | [!UICONTROL Data Modeling] | [!UICONTROL Manage Schemas] | Access to read, create, edit, and delete schemas and related resources. |
+   | [!UICONTROL Data Management] | [!UICONTROL View Datasets] | Read-only access for datasets and schemas. |
+   | [!UICONTROL Data Management] | [!UICONTROL Manage Datasets] | Access to read, create, edit, and delete datasets. Read-only access for schemas. |
+   | [!UICONTROL Data Ingestion] | [!UICONTROL Manage Sources] | Access to read, create, edit, and disable sources. |
+   | [!UICONTROL Identity Management] | [!UICONTROL View Identity Namespaces] | Read-only access for identity namespaces. |
+
+* You have carefully considered the following important configuration options:
+
+   * You site is suited for experience reporting? Proper eperience reporting is only possible when the following conditions are met:
+   * The site content is driven by URLs only.
+   * The pages on your site are reproducible using the page URL, and you understand what optional URL parameters drive experiences.
+* You have a clear understanding for which pages you want to capture content engagement analysis and insights.
+* You have a clear understanding for which (type of) assets you want to capture content engagement analysis and insights.
+
+
+## Access Control
+
+>[!IMPORTANT]
 >
->* You have allow-listed the User Agent and IP address for the featurization service that is used in Content Analytics. The User Agent string is `AdobeFeaturization/1.0`.
->* You have a Customer Journey Analytics Product Administrator role, with the additional permissions to manage connections and to manage data collections. The required Experience Platform permissions are:
->  
->   | Category | Permission | Description |
->   |---|---|---|
->   | [!UICONTROL Data Collection] | View Datastreams | Read-only access to datastreams. |
->   | [!UICONTROL Data Collection] | Manage Datastreams | Acces to read, create, edit and delete datastreams. |
->   | [!UICONTROL Data Modeling] | [!UICONTROL View Schemas] | Read-only access to schemas and related resources. |
->   | [!UICONTROL Data Modeling] | [!UICONTROL Manage Schemas] | Access to read, create, edit, and delete schemas and related resources. |
->   | [!UICONTROL Data Management] | [!UICONTROL View Datasets] | Read-only access for datasets and schemas. |
->   | [!UICONTROL Data Management] | [!UICONTROL Manage Datasets] | Access to read, create, edit, and delete datasets. Read-only access for schemas. |
->   | [!UICONTROL Data Ingestion] | [!UICONTROL Manage Sources] | Access to read, create, edit, and disable sources. |
->   | [!UICONTROL Identity Management] | [!UICONTROL View Identity Namespaces] | Read-only access for identity namespaces. |
->
->* You have carefully considered the following important configuration options:
->
->   * You site is suited for experience reporting? Proper eperience reporting is only possible when the following conditions are met:
->   * The site content is driven by URLs only.
->   * The pages on your site are reproducible using the page URL, and you understand what optional URL parameters drive experiences.
->* You have a clear understanding for which pages you want to capture content engagement analysis and insights.
->* You have a clear understanding for which (type of) assets you want to capture content engagement analysis and insights.
+>There is no Content Analytics permission you can configure to enable or disable Content Analytics access for individual users or groups of users.
 >
 
+To provide a user or group of users access to Content Analytics, you must provide the user or group of users access to one or more data views that are configured for Content Analytics.
+
+This implies:
+
+1. The Content Analytics enabled data view is included as part of the Data View permissions for a specific Customer Journey Analytics product profile.
+1. That specific Customer Journey Analytics product profile is one of the product profiles assigned to the user or group of users.
 
 >[!MORELIKETHIS]
 >
