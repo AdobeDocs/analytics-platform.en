@@ -41,9 +41,9 @@ To deactivate collecting content analytics data:
 
 ## Modify 
 
-In general, you should use the [guided configuration wizard](guided.md) to make changes to your implementation.
+You can make some minor changes to an implemented configuration using the [guided configuration wizard](guided.md) wizard. For example, change the data view. 
 
-Alternatively, you can use the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) in the Tag property associated with your Content Analytics configuration to make changes to the following artefacts:
+You use the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) in the Tag property associated with your Content Analytics configuration to make changes to the following artefacts:
 
 * [Sandbox and datastream](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}. 
 

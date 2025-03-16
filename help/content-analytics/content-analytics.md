@@ -58,6 +58,10 @@ Content Analytics uses web image view data collected in event datasets in Experi
 >
 >Content Analytics leverages AI/ML services which may produce inaccurate or misleading results. As a result, please use your judgment to review and validate AI/ML generated outputs.
 >
+>You can use the **[!UICONTROL Feedback]** tab, available from ![InfoOutline](/help/assets/icons/InfoOutline.svg) on the main interface, to provide feedback on the AI/ML generated outputs.
+>
+
+
 
 
 >[!MORELIKETHIS]

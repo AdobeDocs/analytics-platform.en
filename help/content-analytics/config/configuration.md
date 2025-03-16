@@ -47,7 +47,8 @@ Before you configure Content Analytics, ensure you the following prerequisites a
 
 
 * You have allow-listed the User Agent and IP address for the featurization service that is used in Content Analytics. The User Agent string is `AdobeFeaturization/1.0`.
-* You have a Customer Journey Analytics Product Administrator role, with the additional permissions to manage connections and to manage data collections. The required Experience Platform permissions are:
+* You have a Customer Journey Analytics Product Administrator role, with the additional permissions to manage connections and to manage data views. 
+* You have additional required Experience Platform permissions:
   
    | Category | Permission | Description |
    |---|---|---|
