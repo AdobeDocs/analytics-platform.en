@@ -527,6 +527,18 @@ The following templates are available:
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+<!-- ACA template, maybe needs a category of its own? -->
+
+>[!CONTEXTUALHELP]
+>id="template--content-analytics"
+>title="Learn what content and content attributes are performing best."
+>abstract="**This can help you** learn how your content is performing at a granular level. You can look at the performance of individual assets, or specific attributes. Content Analytics uses AI to automatically generate attributes and tag your content with them. [Learn more](/help/content-analytics/content-analytics.md).<br/>**Based on what you learn, you might** do any number of things, like promote high performing assets on your home page, personalize content for specific segments to include high performing attributes, or rotate out content that has started to get stale."
+
+<!-- markdownlint-enable MD034 -->
+
+
 The following templates are available:
 
 | Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
