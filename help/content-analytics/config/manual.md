@@ -25,7 +25,7 @@ The following manual configuration actions are available:
 
 To activate a new configuration or changes you made to an existing configuration:
 
-1. You need to follow the [publishing flow](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. Only when you have successfully published the library for the Tag property that contains your Content Analytics configuration, Content Analytics data is collected for the domains, experiences and assets that you have configured.
+1. You need to follow the [publishing flow](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. Only when you have successfully published the library for the Tags property that contains your Content Analytics configuration, Content Analytics data is collected for the domains, experiences and assets that you have configured.
 
 1. You need to [install](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) the embed code in the `<head>` element of the pages on your development, staging or publishing environment, subject to Content Analytics.
 
@@ -35,7 +35,7 @@ To activate a new configuration or changes you made to an existing configuration
 To deactivate collecting content analytics data:
 
 1. Remove the [embed code](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments) in the `<head>` element of the pages on your development, staging or production environment, subject to Content Analytics.
-1. [Delete](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) the associated Tag property for you Content Analytics configuration.
+1. [Delete](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) the associated Tags property for you Content Analytics configuration.
 
 
 
@@ -43,7 +43,7 @@ To deactivate collecting content analytics data:
 
 You can make some minor changes to an implemented configuration using the [guided configuration wizard](guided.md) wizard. For example, change the data view. 
 
-You use the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) in the Tag property associated with your Content Analytics configuration to make changes to the following artefacts:
+You use the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) in the Tags property associated with your Content Analytics configuration to make changes to the following artefacts:
 
 * [Sandbox and datastream](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}. 
 
