@@ -70,9 +70,9 @@ After you make changes in the Adobe Content Analytics extension, ensure your use
 
 ## Versioning
 
-If you require versioning of your Content Analytics experiences, you must add a global `adobe.getContentExperienceVersion` function on those pages you consider experiences that you want to analyze.
+If you require versioning of your Content Analytics experiences, you must add a global `adobe.getContentExperienceVersion` function on the pages that you consider experiences that you want to analyze.
 
-The `adobe.getContentExperienceVersion` function should return a string as value, which can be anything you choose to identify the version. The version is appended to the Experience ID URL. 
+The `adobe.getContentExperienceVersion` function should return a string as value, which can be anything you choose, to identify the version. The version is appended to the [Experience ID URL](/help/content-analytics/report/components.md#experience-metadata). 
 
 If the function is not present or no value is returned from the function, the value `NoVersion` is used as a default.
 

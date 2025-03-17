@@ -32,12 +32,12 @@ The configuration of Content Analytics consists of the following steps:
      * Content Analytics datasets selected on the sandbox. If not available, the necessary datasets are created.
    * Data Collection
      * A datastream is created and an Experience Platform service is configured within the datastream to stream data to the Content Analytics experience event dataset.
-     * A Tag property is created with the Adobe Content Analytics extension configured for the correct sandbox, datastream and other configuration options from the configuration wizard.
-1. Only when you [manually publish](manual.md) the Tag property, Content Analytics is effectively deployed and activated.
+     * A Tags property is created with the Adobe Content Analytics extension configured for the correct sandbox, datastream and other configuration options from the configuration wizard.
+1. Only when you [manually publish](manual.md) the Tags property, Content Analytics is effectively deployed and activated.
 
 1. You can only make some limited changes to an implemented configuration using the [guided configuration](guided.md) wizard. For example, change the [data view](/help/data-views/data-views.md).
-1. You can make other changes to an implemented configuration through the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) in the associated Tag property.
-1. Only when you [manually re-publish](manual.md) the Tag property, the configuration modifications from step 4 and 5 are effectively deployed and activated.
+1. You can make other changes to an implemented configuration through the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) in the associated Tags property.
+1. Only when you [manually re-publish](manual.md) the Tags property, the configuration modifications from step 4 and 5 are effectively deployed and activated.
 
 
 ## Prerequisites
@@ -77,7 +77,7 @@ Before you configure Content Analytics, ensure you the following prerequisites a
 >There is no Content Analytics permission you can configure to enable or disable Content Analytics access for individual users or groups of users.
 >
 
-To provide a user or group of users access to Content Analytics, you must provide the user or group of users access to one or more data views that are configured for Content Analytics.
+To provide a user or group of users access to Content Analytics, you must provide the user or group of users access to one or more [data views that are configured for Content Analytics](guided.md#data-view).
 
 This implies:
 
