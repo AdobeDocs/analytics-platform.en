@@ -70,7 +70,7 @@ The guided configuration wizard consists of four sections ([Details](#details), 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="Details"
->abstract="This guide will set up the requirements needed to configure Content Analytics. Please provide a name for this configuration"    
+>abstract="This guide sets up the requirements needed to configure Content Analytics. Please provide a name for this configuration"    
 
 <!-- markdownlint-enable MD034 -->
 
@@ -101,7 +101,7 @@ Each configuration requires a unique name. For example, `Example Content Analyti
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
 >title="New Data view"
->abstract="The selection of a new data view will result in an update to that data view to include Content Analytics metrics and dimensions. If necessary, the associated connection is also updated to include Content Analytics datasets. The connection and data view that are currently configured for Content Analytics are not modified."
+>abstract="The selection of a new data view results in an update to that data view to include Content Analytics metrics and dimensions. If necessary, the associated connection is also updated to include Content Analytics datasets. The connection and data view that are currently configured for Content Analytics are not modified."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_cleanup_labels_dialog"
@@ -138,7 +138,7 @@ Your configuration requires the selection of a [Data view](/help/data-views/data
 1. Select **[!UICONTROL Save]** to confirm the selected Data view. Select **[!UICONTROL Cancel]** to cancel.
 
 
-A Data view is tied to a Customer Journey Analytics [Connection](/help/connections/overview.md). And a Connection is based on a sandbox within your organization. Once you save the configuration, **[!UICONTROL Sandbox]** is auto populated with the proper name of the sandbox, based on the selected Data view.
+A Data view is tied to a Customer Journey Analytics [Connection](/help/connections/overview.md). And a Connection is based on a sandbox within your organization. Once you save the configuration, the **[!UICONTROL Sandbox]** is auto populated with the proper name of the sandbox, based on the selected Data view.
 
 
 ### Experience capture and definition {#onboarding-experiences} 
@@ -171,9 +171,9 @@ In this section, you can select to include Experiences in the data you collect w
 
 By default, **[!UICONTROL Include experiences]** is turned off. When selected, you have to define for which URLs you want to include experiences.
 
-You should only consider to include experiences when the following is applicable:
+Only consider to include experiences when the following is applicable:
 
-* The content on the site is driven by a URL only.
+* You can access the site content using public facing URLs only. Access to the site does not require personalized tokens, cookies or other mechanisms not available through the URL.
 * The pages on the site must be reproducible using the page URL.
 
 To include Experiences in a new or not implemented configuration:
@@ -198,7 +198,7 @@ To edit existing or include new Experiences in an implemented configuration:
 
 ### Data collection {#onboarding-data-collection}
 
-In thia section, you configure how to collect your content analytics data.
+In this section, you configure how to collect your content analytics data.
 
 <!-- markdownlint-disable MD034 -->
 
@@ -235,7 +235,7 @@ In thia section, you configure how to collect your content analytics data.
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
 >title="Data collection"
->abstract="You can edit the settings for pages in the Adobe Content Analytics extension in the Tags property that is  associated with the current configuration."
+>abstract="You can edit the settings for pages in the Adobe Content Analytics extension in the Tags property that is associated with the current configuration."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
@@ -276,13 +276,13 @@ In a new configuration, you need to define whether you want to use an existing T
 
 For an existing configuration, you cannot edit the Tags property. You can, however, edit the pages and assets to include or exclude.
 
-* To edit which pages should be included or excluded when collecting data for Content Analytics, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** underneath **[!UICONTROL Experience]**. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) associated with the Tags property for the current Content Analytics configuration. You can edit the regular expression to include or exclude pages. Ensure you [publish](manual.md#publish) you changes.
+* To edit which pages should be included or excluded when collecting data for Content Analytics, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** underneath **[!UICONTROL Experience]**. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) that is associated with the Tags property for the current Content Analytics configuration. You can edit the regular expression to include or exclude pages. Ensure you [publish](manual.md#publish) you changes.
 
-* To edit which assets should be included or excluded when collecting data for Content Analytics, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** underneath **[!UICONTROL Asset]**. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) associated with the Tags property for the current Content Analytics configuration. You can edit the regular expression to include or exclude assets. Ensure you [publish](manual.md#publish) your changes.
+* To edit which assets should be included or excluded when collecting data for Content Analytics, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** underneath **[!UICONTROL Asset]**. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) that is associated with the Tags property for the current Content Analytics configuration. You can edit the regular expression to include or exclude assets. Ensure you [publish](manual.md#publish) your changes.
 
 ### Summary {#summary}
 
-Once you have provided all necessary details, a summary provides details on the artefacts that are created or modified.
+Once you have provided all necessary details, a summary provides details on the artifacts that are created or modified.
 
 * You see a **[!UICONTROL You're almost ready to implement _configuration name_ for Content Analytics]** summary when you implement a new configuration. 
 
@@ -297,7 +297,7 @@ Once you have provided all necessary details, a summary provides details on the 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning_dialog"
 >title="Confirmation of implementation"
->abstract="If you select **[!UICONTROL Implement]**, you will configure Content Analytics based on the input you have provided in this workflow. Several settings are chosen by default based on what is generally useful for Content Analytics, but you (as the data controller) must review the settings of each artefact to confirm the settings are implemented in accordance with your privacy policy, contractual rights and obligations, and consent requirements under applicable law.<br/><br/>Note that no data will be collected until the Tags library associated with this configuration is published manually.<br/><br/>In order to derive attributes of images and text, Adobe will retrieve the attributes using:<ol><li>The URL captured at the time of the users site visit, per the data collection settings you have configured, and</li><li>The URL where the image is hosted.</li></ol>You must not tag images that are hosted on third-party sites."
+>abstract="If you select **[!UICONTROL Implement]**, you will configure Content Analytics based on the input you have provided in this workflow. Several settings are chosen by default based on what is generally useful for Content Analytics, but you (as the data controller) must review the settings of each artifact to confirm the settings are implemented in accordance with your privacy policy, contractual rights and obligations, and consent requirements under applicable law.<br/><br/>Note that no data will be collected until the Tags library associated with this configuration is published manually.<br/><br/>In order to derive attributes of images and text, Adobe retrieves the attributes using:<ol><li>The URL, captured at the time of the user's site visit, per the data collection settings you have configured, and</li><li>The URL where the image is hosted.</li></ol>You must not tag images that are hosted on third-party sites."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -326,7 +326,7 @@ When you have created or edited a configuration, the following actions are avail
 
 ## Publish {#publish}
 
-To activate your Content Analytics configuration you need to [manually](manual.md) publish the Tags property that is created after you selected **[!UICONTROL Implement]**, as part of the guided configuration wizard.
+To activate your Content Analytics configuration, you need to publish the Tags property that is created after you selected **[!UICONTROL Implement]** [manually](manual.md).
 
 >[!MORELIKETHIS]
 >

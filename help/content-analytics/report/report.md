@@ -44,7 +44,7 @@ To open the preview with the following details:
   |---|---|
   | ![Content Analytics Experience preview](../assets/aca-experience-preview.png) | ![Content Analytics Asset preview](../assets/aca-asset-preview.png) |
   | **[!UICONTROL Name of the experience]** | **[!UICONTROL Name of the asset]** |
-  | **[!UICONTROL Impressions (all times)]**: Number of impressions for the experience. | **[!UICONTROL Impressions (all mes)]**: Number of impressions for the asset. |
+  | **[!UICONTROL Impressions (all times)]**: Number of impressions for the experience. | **[!UICONTROL Impressions (all times)]**: Number of impressions for the asset. |
   | **[!UICONTROL Assets]**: Number of assets this experience contains. Select ![Breakdown](/help/assets/icons/Breakdown.svg) Breakdown to inspect the assets. |**[!UICONTROL Experiences]**: Number of experiences where this asset is shown in. [Breakdown](/help/assets/icons/Breakdown.svg) Breakdown to inspect the assets. | 
   | **[!UICONTROL First impression]**: Date of first impression of the experience. | **[!UICONTROL First impression]**: Date of first impression of the asset. |
   |**[!UICONTROL  Most recent impression]**: Date of most recent impression of the experience. | **[!UICONTROL Most recent impression]**: Date of most recent impression of the asset. |

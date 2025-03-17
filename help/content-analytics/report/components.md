@@ -27,7 +27,7 @@ Content Analytics adds the following categories of components (dimensions, (calc
 * [Assets events](#asset-events)
 * [Calculated metrics](#calculated-metrics)
 
-In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI / ML generated value. 
+In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/ML generated value. 
 
 ## Experience metadata
 
@@ -157,3 +157,4 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI 
 | experience Click-Through Rate | Experience clicks / Experience views | Calculated metric | |
 
 {style="table-layout:fixed"}
+
