@@ -186,7 +186,7 @@ To include Experiences in a new or not implemented configuration:
 ![Content Analytics configuration Experience capture and definition](../assets/aca-configuration-experience.png)
 
 1. Enable **[!UICONTROL Include experiences]**.
-1. Optionally. specify the e how content is rendered on your website. The parameters are zero or more combinations of a **[!UICONTROL Domain regular expression]** and **[!UICONTROL Query parameters]**.
+1. Optionally. specify the parameters how content is rendered on your website. The parameters are zero or more combinations of a **[!UICONTROL Domain regular expression]** and **[!UICONTROL Query parameters]**.
    1. Enter a **[!UICONTROL Domain regular expression]**, for example `/^(?!.*\b(store|help|admin)\b)/`. Ensure you escape regular expressions, using `/`.
    1. Specify a comma separated list of **[!UICONTROL Query parameters,]** for example `outdoors, patio, kitchen`.
 1. Select **[!UICONTROL Remove]** if you want to remove a combination of domain regular expression and query parameters.
