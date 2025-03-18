@@ -36,7 +36,7 @@ The **[!UICONTROL Next or previous item]** panel contains a number of tables and
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_container"
 >title="Container"
->abstract="Select the container to determine the scop of your inquiry."
+>abstract="Select the container to determine the scope of your inquiry."
 
 To use a **[!UICONTROL Next or previous item]** panel:
 
