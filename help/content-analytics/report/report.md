@@ -60,7 +60,7 @@ Based on what you learn, you might do a number of things. Like promote high perf
 To use the template:
 
 1. Select **[!UICONTROL Workspace]** from the main menu.
-1. Ensure you have selected a Data view that configured for Content Analytics.
+1. Ensure you have selected a Data view that is configured for Content Analytics.
 1. Search for, or use filters (**[!UICONTROL Web]** for **[!UICONTROL Channel]** and **[!UICONTROL Engagement]** for **[!UICONTROL Use Case]**s) to find and select the **[!UICONTROL Content analytics]** template.
 1. Select **[!UICONTROL Use template]**.
 1. In the **[!UICONTROL Set up your template]** dialog, select a metric from the **[!UICONTROL Select a conversion metric]** dialog. For example, **[!UICONTROL Asset CTR]**.
