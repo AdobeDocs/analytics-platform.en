@@ -104,9 +104,14 @@ Each configuration requires a unique name. For example, `Example Content Analyti
 >abstract="The selection of a new data view results in an update to that data view to include Content Analytics metrics and dimensions. If necessary, the associated connection is also updated to include Content Analytics datasets. The connection and data view that are currently configured for Content Analytics are not modified."
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_dataview_cleanup_labels_dialog"
->title="Cleanup current data view"
->abstract="When you select a new data view, all Content Analytics configuration for the current data view is removed."
+>id="aca_onboarding_dataview_current_cleanup_labels_dialog"
+>title="Cleanup selected Data view"
+>abstract="You have selected a Data view that is already provisioned for Content Analytics. That existing Content Analytics configuration is removed and the Data view is provisioned with your new configuration."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataview_prev_cleanup_labels_dialog"
+>title="Cleanup previous Data view"
+>abstract="You have selected a new data view. The Content Analytics configuration for the previous selected Data view is removed."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -318,7 +323,7 @@ When you have created or edited a configuration, the following actions are avail
     * If the Web SDK is configured for this Tags property, no changes are made to the existing Web SDK configuration.
   * **[!UICONTROL Customer Journey Analytics]** configuration:
     * The selected Data view is updated to include Content Analytics dimension and metrics.
-    * The Connection tied to the selected Data view is modified to include Content Analytics event and attribute datasets.
+    * The Connection tied to the selected Data view is modified to include Content Analytics events and attributes datasets.
     * A Content Analytics reporting template is added to Workspace. 
 * **[!UICONTROL Save]**: Changes made to an implemented configuration are saved and the implementation is updated.
 * **[!UICONTROL Exit]**. Exits the guided configuration. All changes made to an implemented configuration are discarded.
@@ -327,6 +332,641 @@ When you have created or edited a configuration, the following actions are avail
 ## Publish {#publish}
 
 To activate your Content Analytics configuration, you need to publish the Tags property that is created after you selected **[!UICONTROL Implement]** [manually](manual.md).
+
+
+## Onboarding settings and configurations
+
+The following sections outline the settings and configurations applied to [Customer Journey Analytics](#customer-journey-analytics-cja), [Experience Platform](#experience-platform-aep) and [Data Collection](#data-collection-dc) as part of the implementation of a Content Analytics configuration.
+
+Details are provided for the following scenarios:
+
+* **Tags** property exists **✓** or does not exist **✕**.
+* **Web SDK** extension for the Tags property exists **✓** or does not exist **✕**.
+* Adobe **Content Analytics** extension for the Tag property exists **✓** or does not exist **✕**.
+
+### Customer Journey Analytics {#cja}
+
+<table style="table-layout:fixed">
+  <tr>
+    <th></th>
+    <th colspan="4">Scenarios:</th>
+  </tr>
+  <tr>
+    <th>
+      <strong>Setting</strong>
+    </th>
+    <th>
+      <strong>✓ Tags<br>✓ Web SDK<br/>✓ Content Analytics</strong>
+    </th>
+    <th>
+      <strong>✓ Tags<br>✓ Web SDK<br/>✕ Content Analytics</strong>
+    </th>
+    <th>
+      <strong>✓Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
+    </th>
+    <th>
+      <strong>✕ Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
+    </th>
+  </tr>
+  <tbody>
+    <tr>
+      <td>Report Template</td>
+      <td colspan="4">A report template is available</td>
+    </tr>
+    <tr>
+      <td>Data view</td>
+      <td colspan="4">Modified/Created to have ACA dimensions and metrics</td>
+    </tr>
+    <tr>
+      <td>Connection</td>
+      <td colspan="4">Modified to include ACA datasets (ACA events, Asset attributes, Experience Attribute)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experience Platform {#aep}
+
+<table style="table-layout:fixed">
+  <tr>
+    <th></th>
+    <th colspan="4">Scenarios:</th>
+  </tr>
+  <tr>
+    <th>
+      <strong>Setting</strong>
+    </th>
+    <th>
+      <strong>✓ Tags<br>✓ Web SDK<br/>✓ Content Analytics</strong>
+    </th>
+    <th>
+      <strong>✓ Tags<br>✓ Web SDK<br/>✕ Content Analytics</strong>
+    </th>
+    <th>
+      <strong>✓Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
+    </th>
+    <th>
+      <strong>✕ Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
+    </th>
+  </tr>
+  <tbody>
+    <tr>
+      <td colspan="5"><strong><br/>Content Analytics Events schema</strong></td>
+    </tr>
+    <tr>
+      <td style="margin-left: 160.0px;">Name</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+    </tr>
+    <tr>
+      <td>Profile enabled</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Content Analytics Events dataset</strong></td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
+      <td>Content Analytics Events</td>
+    </tr>
+    <tr>
+      <td>Schema</td>
+      <td>Content Analytics Event</td>
+      <td>Content Analytics Event</td>
+      <td>Content Analytics Event</td>
+      <td>Content Analytics Event</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+    </tr>
+    <tr>
+      <td>Tags</td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+    </tr>
+    <tr>
+      <td>System dataset</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td>Profile enabled</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Data governance (DULE labels)</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Content Analytics Asset Attributes schema</strong></td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+    </tr>
+    <tr>
+      <td>Profile enabled</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Content Analytics Assets Attributes dataset</strong></td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+    </tr>
+    <tr>
+      <td>Schema</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+      <td>Content Analytics Asset Attributes</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+    </tr>
+    <tr>
+      <td>Tags</td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+    </tr>
+    <tr>
+      <td>System dataset</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td>Profile enabled</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Data governance (DULE labels)</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Content Analytics Experience Attributes schema</strong></td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+    </tr>
+    <tr>
+      <td>Profile enabled</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Content Analytics Experience Attributes dataset</strong></td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+    </tr>
+    <tr>
+      <td>Schema</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+      <td>Content Analytics Experience Attributes</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+      <td><i>predetermined tbd</i></td>
+    </tr>
+    <tr>
+      <td>Tags</td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+      <td><i>empty?</i></td>
+    </tr>
+    <tr>
+      <td>System dataset</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td>Profile enabled</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Data governance (DULE labels)</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+  </tbody>
+</table>
+
+
+### Data Collection {#dc}
+
+<table style="table-layout:fixed">
+  <tr>
+    <th></th>
+    <th colspan="4">Scenarios:</th>
+  </tr>
+  <tr>
+    <th>
+      <strong>Setting</strong>
+    </th>
+    <th>
+      <strong>✓ Tags<br>✓ Web SDK<br/>✓ Content Analytics</strong>
+    </th>
+    <th>
+      <strong>✓ Tags<br>✓ Web SDK<br/>✕ Content Analytics</strong>
+    </th>
+    <th>
+      <strong>✓Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
+    </th>
+    <th>
+      <strong>✕ Tags<br>✕ Web SDK<br/>✕ Content Analytics</strong>
+    </th>
+  </tr>
+  <tbody>
+    <tr>
+      <td colspan="5"><strong><br/>Datastream</strong></td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td><i>existing value</i></td>
+      <td>Content Analytics</td>
+      <td>Content Analytics</td>
+      <td>Content Analytics</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><i>existing value</i></td>
+      <td><i>predetermined</i></td>
+      <td><i>predetermined</i></td>
+      <td><i>predetermined</i></td>
+    </tr>
+    <tr>
+      <td>Mapping schema</td>
+      <td><i>existing value</i></td>
+      <td><i>predetermined</i></td>
+      <td><i>predetermined</i></td>
+      <td><i>predetermined</i></td>
+    </tr>
+    <tr>
+      <td>Geolocation and Network Lookup</td>
+      <td><i>existing values</i></td>
+      <td>All options off</td>
+      <td>All options off</td>
+      <td>All options off</td>
+    </tr>
+    <tr>
+      <td>Device Lookup</td>
+      <td><i>existing value</i></td>
+      <td>Do not collect any device information</td>
+      <td>Do not collect any device information</td>
+      <td>Do not collect any device information</td>
+    </tr>
+    <tr>
+      <td>IP Obfuscation</td>
+      <td><i>existing value</i></td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>First Party ID Cookie</td>
+      <td><i>existing value</i></td>
+      <td>Off</td>
+      <td>Off</td>
+      <td>Off</td>
+    </tr>
+    <tr>
+      <td>Third Party ID Synch</td>
+      <td><i>existing value</i></td>
+      <td>Off</td>
+      <td>Off</td>
+      <td>Off</td>
+    </tr>
+    <tr>
+      <td>Access Type</td>
+      <td><i>existing value</i></td>
+      <td>Mixed Authentication</td>
+      <td>Mixed Authentication</td>
+      <td>Mixed Authentication</td>
+    </tr>
+    <tr>
+      <td>Media Analytics</td>
+      <td><i>existing value</i></td>
+      <td>Off</td>
+      <td>Off</td>
+      <td>Off</td>
+    </tr>
+        <tr>
+      <td>Bot Detection</td>
+      <td><i>existing value</i></td>
+      <td>Off</td>
+      <td>Off</td>
+      <td>Off</td>
+    </tr>
+    <tr>
+      <td>Mapping</td>
+      <td><i>existing value</i></td>
+      <td><i>user provided</i></td>
+      <td><i>user provided</i></td>
+      <td><i>user provided</i></td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Tags property</strong><br/>An existing property or new property. The name and domain are provided by the user.</td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td><i>user provided</i> (default "Content Analytics")</td>
+    </tr>
+    <tr>
+      <td>Domain</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td ><i>predetermined</i></td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Tags library</strong></td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>
+        <br/>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Web SDK Extension</strong></td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Content Analytics - Web SDK</td>
+      <td>Content Analytics - Web SDK</td>
+    </tr>
+    <tr>
+      <td>IMS Org</td>
+      <td><i>automatically populated</i></td>
+      <td><i>automatically populated</i></td>
+      <td><i>automatically populated</i></td>
+      <td><i>automatically populated</i></td>
+    </tr>
+    <tr>
+      <td>Edge Domain</td>
+      <td><i>existing value<br/>Might require an update to match the AppMeasurement implementation</i></td>
+      <td><i>existing value<br/>Might require an update to match the AppMeasurement implementation</i></td>
+      <td>
+        <a href="http://edge.adobedc.net">edge.adobedc.net</a>
+      </td>
+      <td>
+        <a href="http://edge.adobedc.net">edge.adobedc.net</a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Datastreams</strong></td>
+    </tr>
+    <tr>
+      <td>Production</td>
+      <td><i>existing value<br/>Datastream override used to send to a different datastream</i></td>
+      <td><i>existing value<br/>Datastream override used to send to a different datastream</i></td>
+      <td><i>user provided</i>?</td>
+      <td><i>user provided</i>?</td>
+    </tr>
+    <tr>
+      <td>Staging</td>
+      <td><i>existing value<br/>Datastream override used to send to a different datastream</i></td>
+      <td><i>existing value<br/>Datastream override used to send to a different datastream</i></td>
+      <td><i>user provided</i>?</td>
+      <td><i>user provided</i>?</td>
+    </tr>
+    <tr>
+      <td>Development</td>
+      <td><i>existing value<br/>Datastream override used to send to a different datastream</i></td>
+      <td><i>existing value<br/>Datastream override used to send to a different datastream</i></td>
+      <td><i>user provided</i>?</td>
+      <td><i>user provided</i>?</td>
+    </tr>
+    <tr>
+      <td>Privacy</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>In?</td>
+      <td>In?</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Identity</strong></td>
+    </tr>
+    <tr>
+      <td>Migrate ECID</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Checked</td>
+      <td>Checked</td>
+    </tr>
+    <tr>
+      <td>Use third-party cookies</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Checked</td>
+      <td>Checked</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Personalization</strong></td>
+    </tr>
+    <tr>
+      <td>Migrate Target from at.js to Web SDK</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Unchecked</td>
+      <td>Unchecked</td>
+    </tr>
+    <tr>
+      <td>Enable personalization storage</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Unchecked</td>
+      <td>Unchecked</td>
+    </tr>
+    <tr>
+      <td>Auto click collection for Adobe Journey Optimizer</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Always</td>
+      <td>Always</td>
+    </tr>
+    <tr>
+      <td>Auto click collection for Adobe Target</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Never</td>
+      <td>Never</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Data Collection</strong></td>
+    </tr>
+    <tr>
+      <td>Collect internal links clicks</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Unchecked</td>
+      <td>Unchecked</td>
+    </tr>
+    <tr>
+      <td>Collect external link clicks</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Unchecked</td>
+      <td>Unchecked</td>
+    </tr>
+    <tr>
+      <td>Collect download links clicks</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Unchecked</td>
+      <td>Unchecked</td>
+    </tr>
+    <tr>
+      <td>When sending event data, automatically include</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>All default context information</td>
+      <td>All default context information</td>
+    </tr>
+    <tr>
+      <td>Streaming Media</td>
+      <td><i>existing values</i></td>
+      <td><i>existing values</i></td>
+      <td>Blank values</td>
+      <td>Blank values</td>
+    </tr>
+    <tr>
+      <td>Datastream Configuration Overrides</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>Match datastream configuration</td>
+      <td>Match datastream configuration</td>
+    </tr>
+    <tr>
+      <td>Advanced Settings - Edge base path</td>
+      <td><i>existing value</i></td>
+      <td><i>existing value</i></td>
+      <td>ee</td>
+      <td>ee</td>
+    </tr>
+    <tr>
+      <td colspan="5"><strong><br/>Content Analytics Extension</strong></td>
+    </tr>
+    <tr>
+      <td>Datastreams</td>
+      <td><i>existing value</i></td>
+      <td><i>predetermined</i></td>
+      <td><i>predetermined</i></td>
+      <td><i>predetermined</i></td>
+    </tr>
+    <tr>
+      <td>Experience Capturing & Definition</td>
+      <td><i>existing value</i></td>
+      <td><i>user provided</i></td>
+      <td><i>user provided</i></td>
+      <td><i>user provided</i></td>
+    </tr>
+    <tr>
+      <td>Event Filtering</td>
+      <td><i>existing value</i></td>
+      <td><i>user provided</i></td>
+      <td><i>user provided</i></td>
+      <td><i>user provided</i></td>
+    </tr>
+  </tbody>
+</table>
 
 >[!MORELIKETHIS]
 >
