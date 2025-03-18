@@ -53,7 +53,7 @@ To open the preview with the following details:
 
 ## Template
 
-A Content analytics [template](/help/analysis-workspace/templates/use-templates) is available to help you to learn what content and content attributes are performing best. The template is part of the [Web channel and Engagement use case](/help/analysis-workspace/templates/use-templates.md#web-engagement) and details how your content performs at a granular level. You can look at the performance of individual assets, or specific attributes. 
+A Content analytics [template](/help/analysis-workspace/templates/use-templates.md) is available to help you to learn what content and content attributes are performing best. The template is part of the [Web channel and Engagement use case](/help/analysis-workspace/templates/use-templates.md#web-engagement) and details how your content performs at a granular level. You can look at the performance of individual assets, or specific attributes. 
 
 Based on what you learn, you might do a number of things. Like promote high performing assets on your home page, personalize content for specific segments to include high performing attributes, or rotate out content that has started to get stale.
 
