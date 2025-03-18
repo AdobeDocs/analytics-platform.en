@@ -4,8 +4,6 @@ description: Learn how to evaluate how long you need Adobe Analytics after upgra
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 ---
 # Evaluate when to disable Adobe Analytics after upgrading to Customer Journey Analytics {#evaluate-aa-needs}
@@ -25,6 +23,15 @@ exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 >id="cja-upgrade-keep-aa"
 >title="Keep both analytics products"
 >abstract="(Not recommended) If you select this option, your contract with Adobe includes both Adobe Analytics and Customer Journey Analytics, which can be more expensive for your organization over time."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-source-connector"
+>title="Disable the Analytics source connector to use data exclusively from the Web SDK"
+>abstract="The Analytics source connector is used to provide side-by-side data comparison, historical data, and access to some features that aren't fully available in Customer Journey Analytics. When you no longer need Adobe Analytics for these purposes, you can disable the Analytics source connector."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -52,6 +59,24 @@ When deciding if and when your organization should disable Adobe Analytics, cons
 >id="cja-upgrade-disable-appmeasurement-third-pary"
 >title="Disable a third-party tag management system"
 >abstract="With the Web SDK data fully functional, work with your tag admin to remove the AppMeasurement library from your third-party tag management system.<br><br>Estimated time to perform this step depends on the ease of disabling AppMeasurement from your tag management product, as well as the release cycle that your organization employs to deploy and manage tag code."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-analytics-tags"
+>title="Disable the Analytics extension in tags"
+>abstract="With Web SDK data fully functional, work with your tags administrator to remove the Adobe Analytics extension from the tag property. Before you do this, make sure that your users have transitioned from using Adobe Analytics to Customer Journey Analytics."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-disable-analytics-api"
+>title="Disable API data collection for Adobe Analytics"
+>abstract="With Web SDK data fully functional, work with the applicable engineering team to remove the Adobe Analytics code from the project. Before you do this, make sure that your users have transitioned from using Adobe Analytics to Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -102,3 +127,6 @@ When you no longer need Adobe Analytics for the purposes described in the sectio
    After you have collected enough historical data in Customer Journey Analytics with your new Web SDK implementation, you can remove the Analytics source connector entirely. 
    
    Do this when you no longer need the historical data from your Adobe Analytics environment through the Analytics source connector, and you can rely solely on the historical data you collected with the new Web SDK implementation.
+
+{{upgrade-final-step}}
+

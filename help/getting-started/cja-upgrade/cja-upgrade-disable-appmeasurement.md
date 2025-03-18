@@ -4,8 +4,6 @@ description: Learn how to add the Analytics source connector dataset to the conn
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
 ---
 # Disable Adobe Analytics {#disable-appmeasurement}
@@ -26,3 +24,8 @@ Before disabling Adobe Analytics, review the information in [Evaluate when to di
 * **Tags:** Disable the Adobe Analytics extension
 
 * **AppMeasurment:** Replace the AppMeasurement.js library s=newobject
+
+>[!NOTE]
+>
+>This information is not yet available. It will be available in the near future.
+

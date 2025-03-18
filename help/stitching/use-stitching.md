@@ -19,7 +19,7 @@ The Customer Journey Analytics package you are entitled to determines the availa
 | Available stitching methods | <li>Field-based stitching</li> | <li>Field-based stitching</li><li>Graph-based stitching</li> | <li>Field-based stitching</li><li>Graph-based stitching</li> | 
 | One-time stitching backfill duration | 13 months | 13 months | 25 months | 
 | Lookback window and replay frequency |<li>1 day, every day</li><li>up to 7 days, weekly</li> | <li>1 day, every day</li><li>up to 14 days, weekly</li>| <li>1 day, every day</li><li>up to 30 days, weekly</li> | 
-| Maximum number of datasets permitted for stitching | 5 | 10 | 50 | 
+| Maximum number of datasets permitted for stitching | 5 | 15 | 50 | 
 
 ## Request support 
 

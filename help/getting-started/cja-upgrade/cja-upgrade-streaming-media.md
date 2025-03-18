@@ -4,8 +4,6 @@ description: Learn how to set up Streaming Media Collection for Customer Journey
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: b807099d-a61d-48f9-9fec-94ecc6b76213
 ---
 # Set up Streaming Media Collection for Customer Journey Analytics {#streaming-media-setup}

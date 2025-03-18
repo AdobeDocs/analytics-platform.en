@@ -4,6 +4,8 @@ description: Learn how to retain historical data when upgrading to Customer Jour
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
+hide: yes
+hidefromtoc: yes
 exl-id: 1d17151b-3a12-468e-9a4f-9e5994599570
 ---
 # Step 4: Retain historical data when upgrading
@@ -26,19 +28,23 @@ The information on this page covers Step 4 of the upgrade process, as highlighte
 
 +++
 
+>[!AVAILABILITY]
+>
+>The information on this page is being replaced with the following more comprehensive upgrade information: <ul><li>**Recommended upgrade steps**<p>For detailed information, see [Recommended path when upgrading from Adobe Analytics to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Customer Journey Analytics Upgrade Guide**<p>A new upgrade guide is available that dynamically generates upgrade steps that are tailored for your organization and your unique circumstances.</p><p>To access the guide from Customer Journey Analytics, select the **[!UICONTROL Workspace]** tab, then select **[!UICONTROL Upgrade to Customer Journey Analytics]** in the left panel. Follow the on-screen instructions.</p></li></ul>
+
 Choose one of the following options to retain historical data when moving from Adobe Analytics to Customer Journey Analytics:  
 
 >[!IMPORTANT]
 >
 >When choosing how to retain historical data, contact your Adobe account representative to determine pricing. 
 
-## Use the Analytics Source Connector
+## Use the Analytics source connector
 
-  You can use the [Analytics Source Connector](/help/data-ingestion/analytics.md) to retain historical data. Regardless of the upgrade path that you choose (even if you upgrade using the Web SDK), you can use the Analytics Source Connector to retain historical data from your Adobe Analytics environment. 
+  You can use the [Analytics source connector](/help/data-ingestion/analytics.md) to retain historical data. Regardless of the upgrade path that you choose (even if you upgrade using the Web SDK), you can use the Analytics source connector to retain historical data from your Adobe Analytics environment. 
 
-  You can use the Analytics Source Connector to retain historical data by bringing historical data into its own dedicated location, separate from your current data.
+  You can use the Analytics source connector to retain historical data by bringing historical data into its own dedicated location, separate from your current data.
 
-  The Analytics Source Connector must be functioning for as long as you need access to the historical data.
+  The Analytics source connector must be functioning for as long as you need access to the historical data.
 
   <!-- Another possibility in the future: Map historical data in a way that allows you to tie it to your new data.  Possible? Explain -->
 

@@ -53,11 +53,13 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Create a dataset](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
       + [Create lookup datasets for classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
       + [Monitor dataset ingestion](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
-    + Create tags {#create-tags}
+    + Implement the Web SDK with tags {#create-tags}
       + [Create a tag for your property](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
       + [Add the Web SDK extension to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
       + [Implement the loader tag for the Web SDK extension](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
       + [Add XDM data collection logic to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
+    + [Implement the Web SDK manually](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
+    + [Implement the Web SDK with the API](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
     + [Create a connection](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
     + [Create a data view](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
     + [Create a marketing channel derived field](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
@@ -80,6 +82,9 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Understand Analytics implementation](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
       + [Adobe Analytics feature support when upgrading](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
       + [Customer Journey Analytics features](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md)
+      + [Web SDK implementation options](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
+      + [Configuring Adobe Analytics Web SDK for Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
+      + [Use personalization with Adobe Journey Optimizer](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)
@@ -371,7 +376,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Report Builder Hub](../report-builder/report-builder-hub.md)
   + [Select a Data View](../report-builder/select-data-view.md)
   + [Select a Date Range](../report-builder/select-date-range.md)
-  + [Work with Filters](../report-builder/work-with-filters.md)
+  + [Work with Segments](../report-builder/work-with-filters.md)
   + [Filter Dimensions](../report-builder/filter-dimensions.md)
   + [Manage Data Blocks](../report-builder/manage-reportbuilder.md)
   + [Schedule Workbooks](../report-builder/schedule-reportbuilder.md)
@@ -406,11 +411,20 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](../use-cases/cja-usecases.md)
-  + Google Analytics data {#ga}
-    + [Migrate data from Google Analytics](../use-cases/ga/overview.md)
-    + [Ingest Google Analytics historical data ](../use-cases/ga/backfill.md)
-    + [Configure streaming Google Analytics data](../use-cases/ga/streaming.md)
-    + [Report on Google Analytics data](../use-cases/ga/report.md)
+  + Third-party data {#third-party}
+    + [Overview](/help/use-cases/third-party/overview.md)
+    + Google Analytics {#ga}
+      + [Migrate data from Google Analytics](/help/use-cases/third-party/ga/overview.md)
+      + [Ingest Google Analytics historical data](/help/use-cases/third-party/ga/backfill.md)
+      + [Configure streaming Google Analytics data](/help/use-cases/third-party/ga/streaming.md)
+      + [Report on Google Analytics data](/help/use-cases/third-party/ga/report.md)
+    + Quantum Metric {#qm}
+      + [Overview](/help/use-cases/third-party/quantum-metric/qm-overview.md)
+      + [Collect session ID](/help/use-cases/third-party/quantum-metric/collect-session-id.md)
+      + [Tie session replays](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
+      + [Use heatmaps](/help/use-cases/third-party/quantum-metric/heatmap.md)
+      + [Add friction events](/help/use-cases/third-party/quantum-metric/friction-events.md)
+      + [Source connector](/help/use-cases/third-party/quantum-metric/source-connector.md)
   + Data ingestion {#data-ingestion}
     + [Ingest and use Marketo Engage data](../use-cases/data-ingestion/marketo.md)
     + [Ingest and use Experience Platform audiences ](../use-cases/data-ingestion/ingest-aep-segments.md)

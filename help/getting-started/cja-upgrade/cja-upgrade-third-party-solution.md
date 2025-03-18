@@ -4,8 +4,6 @@ description: Learn how to upgrade from a third-party analytics solution to Custo
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: bc79ba1a-1153-4fe8-b265-9703a323c977
 ---
 # Upgrade from a third-party analytics solution to Customer Journey Analytics {#upgrade-from-third-party}
@@ -15,7 +13,7 @@ exl-id: bc79ba1a-1153-4fe8-b265-9703a323c977
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-third-party"
 >title="A non-Adobe Analytics product"
->abstract="An implementation that collects data for a product other than Adobe Analytics, such as Google Analytics. Selecting this option disables several options in the questionnaire that don't apply when upgrading to Customer Journey Analytics from a non-Adobe Analytics product."
+>abstract="An implementation that collects data for a product other than Adobe Analytics, such as Google Analytics. Selecting this option disables several options in the upgrade guide that don't apply when upgrading to Customer Journey Analytics from a non-Adobe Analytics product."
 
 <!-- markdownlint-enable MD034 -->
 
