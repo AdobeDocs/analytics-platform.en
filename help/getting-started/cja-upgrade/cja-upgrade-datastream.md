@@ -4,8 +4,6 @@ description: Learn about the recommended path when upgrading from Adobe Analytic
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: f76d098d-d223-40e4-be81-d28e7581396b
 ---
 # Create a datastream to use with Customer Journey Analytics {#upgrade-create-datastream}
@@ -45,4 +43,4 @@ To set up your datastream:
 
 1. Select **[!UICONTROL Save]**.
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}

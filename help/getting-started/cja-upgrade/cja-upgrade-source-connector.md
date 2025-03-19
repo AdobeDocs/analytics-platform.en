@@ -4,8 +4,6 @@ description: Learn how to create the Analytics source connector and map fields
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
 ---
 # Create the Analytics source connector and map fields {#create-source-connector}
@@ -102,4 +100,4 @@ To create an Adobe Analytics source connector to use for historical data:
 
    If you are using the Analytics source connector to bring historical data into your Customer Journey Analytics Web SDK implementation, then you need to add this automatically created dataset to the connection that you created for your Web SDK implementation.
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}

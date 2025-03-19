@@ -1,11 +1,9 @@
 ---
-title: Recommended path when upgrading from Adobe Analytics to Customer Journey Analytics
-description: Learn about the recommended path when upgrading from Adobe Analytics to Customer Journey Analytics
+title: Upgrade from Adobe Analytics to Customer Journey Analytics
+description: Learn about the recommended steps when upgrading from Adobe Analytics to Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
 ---
 # Upgrade from Adobe Analytics to Customer Journey Analytics
@@ -20,7 +18,7 @@ After you have enough historical data using the Experience Platform Web SDK and 
 
 >[!NOTE]
 >
->If the upgrade steps described in this section are not practical for your organization, use the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/) to dynamically generate upgrade steps that are tailored to your organization's unique circumstances.
+>If the upgrade steps described in this section are not practical for your organization, use the Customer Journey Analytics Upgrade Guide to dynamically generate upgrade steps that are tailored to your organization's unique circumstances. (To access the guide from Customer Journey Analytics, select the **[!UICONTROL Workspace]** tab, then select **[!UICONTROL Upgrade to Customer Journey Analytics]** in the left panel. Follow the on-screen instructions.)
 
 ### High-level recommended upgrade process {#high-level-upgade-process}
 
@@ -83,7 +81,7 @@ Each step provides a high-level explanation of a more detailed process. Follow t
 
 1. For Adobe Analytics implementations using AppMeasurement or the Analytics extension (tags), [create a datastream in Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md). <!-- Is this correct? Will customers on the Web SDK already have a datastream that they only need to add AEP as a service to? Or does this step apply to everyone?-->
 
-   For Adobe Analytics implementations using the Web SDK, a datastream already exists.
+   For Adobe Analytics implementations using the Web SDK, a datastream already exists. For more information, see [Configure your existing Adobe Analytics Web SDK implementation to send data to Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md).
 
 1. [Add Adobe Experience Platform as a service to your datastream](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md). 
 
@@ -183,9 +181,11 @@ Depending on several factors, such as timeline and resource constraints, the rec
 
 To dynamically generate upgrade steps for your organization's unique circumstances:
 
-1. Complete the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
+1. Complete the Customer Journey Analytics Upgrade Guide.
 
-   After completing this questionnaire, step-by-step instructions are provided to you, outlining the optimal upgrade steps that are unique to your organization requirements. These are the upgrade steps that best align with your existing Adobe Analytics environment and your goals for Customer Journey Analytics.
+   To access the guide from Customer Journey Analytics, select the **[!UICONTROL Workspace]** tab, then select **[!UICONTROL Upgrade to Customer Journey Analytics]** in the left panel. Follow the on-screen instructions.
+
+   After completing this upgrade guide, step-by-step instructions are provided to you, outlining the optimal upgrade steps that are unique to your organization requirements. These are the upgrade steps that best align with your existing Adobe Analytics environment and your goals for Customer Journey Analytics.
    
 1. Follow the generated step-by-step instructions to upgrade to Customer Journey Analytics. 
 

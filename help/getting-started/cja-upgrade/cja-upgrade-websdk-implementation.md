@@ -4,8 +4,7 @@ description: Learn about the Web SDK implementation options when upgrading to Cu
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
+exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 ---
 # Understand Web SDK implementation options when upgrading to Customer Journey Analytics {#web-sdk-implementation-options}
 
@@ -36,6 +35,24 @@ hidefromtoc: yes
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-websdk-no-selection"
+>title="Implement the Web SDK for your given property"
+>abstract="Select the desired implementation type in the upgrade guide for more detailed instructions."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-websdk-third-party"
+>title="Add the Web SDK library to your third-party tag management system"
+>abstract="Work with the admin over your tag management system to add the Web SDK library to your site.<br><br>Completion time for this task heavily depends on the responsiveness of the individual responsible for your tag management system. Adding the Web SDK library might be bundled with associated implementation logic, and deployed during your organization's standard release cycles."
+
+<!-- markdownlint-enable MD034 -->
+
 {{upgrade-note}}
 
 The recommended process of upgrading from Adobe Analytics to Customer Journey Analytics is a new implementation of the Experience Platform Web SDK, which is the preferred data collection method for Customer Journey Analytics.
@@ -49,6 +66,3 @@ There are three supported ways to use Adobe Experience Platform Web SDK:
 * [NPM](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/npm): Install the Web SDK on your site using the NPM package manager.
 
 For more information, see [Web SDK installation overview](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) in the Experience Platform Web SDK Guide.
-
-
-
