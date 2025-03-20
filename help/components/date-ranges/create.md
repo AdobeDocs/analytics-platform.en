@@ -17,6 +17,7 @@ Anyone can create a custom date range. You create a date range in the following 
 * **C**. In a Workspace project, select **[!UICONTROL Components]** from the menu, and select **[!UICONTROL Create date range]**
 * **D**. In a Workspace project, use the shortcut **[!UICONTROL ctrl+shift+d]** (Windows) or **[!UICONTROL shift+command+d]** (macOS). 
 * **E**. In a Workspace project, from the Components left panel, select ![Add](/help/assets/icons/Add.svg) at ![Calendar](/help/assets/icons/Calendar.svg) **Date ranges**.
+* F. In a supported visualization, like a line visualization, from the context menu on a data point, select **[!UICONTROL Annotate Selection]**.
 
 To define the annotation, you use the [[!UICONTROL Date range builder]](#annotation-builder):
 
