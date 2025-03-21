@@ -256,7 +256,7 @@ In a new configuration, you need to define whether you want to use an existing T
 
     ![Content Analytics Data Collection Existing Tag](../assets/aca-configuration-datacollection-existingtag.png)
 
-    1. Select **[!UICONTROL Existing]**.
+    1. Select **[!UICONTROL Choose existing]**.
     2. Select an existing property from the **[!UICONTROL Tags property]** dropdown menu. You can start typing to search for and limit the available options.
 
 * To create a new Tags property:
@@ -265,16 +265,15 @@ In a new configuration, you need to define whether you want to use an existing T
 
     1. Select **[!UICONTROL Create new]**.
     1. Specify a **[!UICONTROL Tags name]**, for example `ACA Test for Documentation`.
-    <!--1. Specify **[!UICONTROL Domains]**, for example, `example.com`. -->
-    1. Select **[!UICONTROL Add]**.
+    1. Specify **[!UICONTROL Domains]**, for example, `example.com`.
 
 * If you have selected to include experiences, indicate which pages should be included or excluded when collecting data for Content Analytics.
 
-  * Specify a regular expression for **[!UICONTROL Experience]**. For example: `/^(?!.*documentation).*/` to exclude all documentation pages from Content Analytics. Ensure you escape regular expressions, using `/`.
+  * Specify a Regular expression string for **[!UICONTROL Pages to include / exclude]**. For example: `/^(?!.*documentation).*/` to exclude all documentation pages from Content Analytics. Ensure you escape regular expressions, using `/`.
 
 * Indicate which assets should be included or excluded when collecting data for Content Analytics.
 
-  * Specify a regular expression for **[!UICONTROL Asset]**. For example: `/^(?!.*(logo\.jpg|\.svg)).*$/` to exclude all logo JPEG and SVG images from Content Analytics. Ensure you escape regular expressions, using `/`.
+  * Specify a Regular expression string for **[!UICONTROL Assets to include / exclude]**. For example: `/^(?!.*(logo\.jpg|\.svg)).*$/` to exclude all logo JPEG and SVG images from Content Analytics. Ensure you escape regular expressions, using `/`.
 
 
 #### Existing configuration {#existing-configuration}
