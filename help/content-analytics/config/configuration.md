@@ -10,34 +10,21 @@ exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 ---
 # Configure Content Analytics
 
->[!WARNING]
->
->This article is a preliminary unofficial draft version of a forthcoming final version and is part of the Content Analytics documentation. All content is subject to change and no legal obligations whatsoever can be derived from the current version of this article.  
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
 The configuration of Content Analytics consists of the following steps:
 
-![Configuration of Content Analytics](../assets/aca-configuration.svg)
+![Configuration of Content Analytics](../assets/aca-configuration.svg){zoomable="yes"}
 
-1. Use the Content Analytics [guided configuration](guided.md) wizard to guide you through all steps required to set up the prerequisites for a configuration of Content Analytics. You can save your configurations and return later.
-1. Once you are comfortable with the configuration values, you can implement the configuration. This implementation creates all the required artifacts, based on what you have configured in the wizard. The following artifacts are created, updated or selected:
-   * Customer Journey Analytics
-     * A [data view](/help/data-views/data-views.md) is selected.
-     * A [connection](/help/connections/overview.md) is selected, automatically derived from the selected data view.
-   * Experience Platform
-     * The sandbox is selected, automatically derived from the connection. The necessary workflows and services are enabled in the sandbox.
-     * Content Analytics schemas are selected in the sandbox. If not available, the necessary schemas are created.
-     * Content Analytics datasets are selected in the sandbox. If not available, the necessary datasets are created.
-   * Data Collection
-     * A datastream is created and an Experience Platform service is configured within the datastream to stream data to the Content Analytics experience event dataset.
-     * A Tags property is created with the Adobe Content Analytics extension configured for the correct sandbox, datastream and other configuration options from the configuration wizard.
+1. Use the Content Analytics [guided configuration](guided.md) wizard to guide you through all steps required to set up the prerequisites for a configuration of Content Analytics. You can save your configurations at any time and return later.
+1. Once you are comfortable with the configuration values, you can implement the configuration. This implementation creates all the required artifacts, based on what you have configured in the wizard. 
 1. Only when you [manually publish](manual.md) the Tags property, your Content Analytics configuration will effectively be deployed and activated.
 
 1. You can only make some minor changes to an implemented configuration using the [guided configuration](guided.md) wizard. For example, change the [Data view](/help/data-views/data-views.md).
-1. You can make other changes to an implemented configuration. Use the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) in the associated Tags property.
-1. Only when you [manually re-publish](manual.md) the Tags property, the configuration modifications from step 4 and 5 are effectively deployed and activated.
+1. You can make other changes to an implemented configuration using the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) in the associated Tags property.
+1. Only when you [manually re-publish](manual.md) the Tags property, the configuration modifications are effectively deployed and activated.
 
 
 ## Prerequisites
