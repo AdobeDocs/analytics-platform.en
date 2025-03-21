@@ -981,7 +981,7 @@ When you have created or edited a configuration, the following actions are avail
 
 ## Publish {#publish}
 
-To activate your Content Analytics configuration, you need to publish the Tags property that is created after you selected **[!UICONTROL Implement]** [manually](manual.md).
+To activate your Content Analytics configuration, you need to [manually](manual.md) publish the Tags property that is created after you selected **[!UICONTROL Implement]**.
 
 
 >[!MORELIKETHIS]
