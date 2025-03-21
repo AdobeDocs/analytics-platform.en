@@ -40,5 +40,5 @@ Each session ID is now a clickable link. These links take you to Quantum Metric 
 ## Step 2 Viewing sessions from Customer Journey Analytics
 
 Once you create the Workspace report with clickable links, you can use Filters in Customer Journey Analytics to identify interesting sessions that you can further analyze in Quantum Metric.
-The table will return all the sessions in that segment, and you can click any one of them to explore further in QM.  Learn more about Quantum Metric session replay at [https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay)
+The table will return all the sessions in that segment, and you can click any one of them to explore further in QM.  Learn more about Quantum Metric session replay at [https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay). For any additional resources please contact your Quantum Metric customer support representative or submit a request through the Quantum Metric [Customer Request Portal](https://community.quantummetric.com/s/public-support-page). 
 
