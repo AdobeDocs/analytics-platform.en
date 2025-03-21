@@ -29,7 +29,7 @@ Based on the Content Analytics specific dimensions that you use in your project,
 
 ![Content Analytics thumbnails](../assets/aca-thumbnails.png)
 
-To configure the display of thumbnails for a Content Analytics dimension:
+By default, thumbnails are shown for relevant  Content Analytics dimensions. To configure the display of thumbnails for a Content Analytics dimension:
 
 * Hover over a header row for a Content Analytics dimension. For example, **[!UICONTROL Asset Name]** or **[!UICONTROL Experience IDs]**.
 * Select ![Setting](/help/assets/icons/Setting.svg).
