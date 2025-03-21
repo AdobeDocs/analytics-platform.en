@@ -70,7 +70,7 @@ To use the template:
 1. In the **[!UICONTROL Set up your template]** dialog, select a metric from the **[!UICONTROL Select a conversion metric]** dialog. For example, **[!UICONTROL Asset CTR]**.
 1. Select **[!UICONTROL Continue]**.
 
-A **[!UICONTROL Content Analytics Overview]** project opens in Workspace. The project consists of four panels, where each panel provides freeform tables and visualizations to answer a specific question:
+A **[!UICONTROL Content Analytics Overview]** project opens in [Analysis Workspace](/help/analysis-workspace/home.md). The project consists of four [panels](/help/analysis-workspace/c-panels/panels.md), where each panel provides [freeform tables](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) and [visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) to answer a specific question:
 
 * **What content performs the best?** 
   This panel helps you to understand which experiences and which assets in those experiences are driving engagement and conversion. Experiences are a full webpage, captured at a specific time. An experience can contain both text and multiple individual image assets. An asset is an individual image. 
@@ -79,9 +79,9 @@ A **[!UICONTROL Content Analytics Overview]** project opens in Workspace. The pr
 
   * **Experiences**
 
-    * **Experience CTR**: a summary change visualization, showing Experience CTR.
-    * **Top converting experiences**: A horizontal bar chart visualization showing top converting experiences based on the selected conversion metric.
-    * **Top performing experiences**: A freeform table (including thumbnails and previews) for the top performing experiences.
+    * **Experience CTR**: a [summary change](/help/analysis-workspace/visualizations/summary-number-change.md) visualization, showing Experience CTR.
+    * **Top converting experiences**: A [horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md)  visualization showing top converting experiences based on the selected conversion metric.
+    * **Top performing experiences**: A [freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)(including [thumbnails](#thumbnails) and [previews](#previews)) for the top performing experiences.
 
   * **Assets**
 
