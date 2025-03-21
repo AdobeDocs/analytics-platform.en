@@ -10,10 +10,7 @@ exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
 ---
 # Content Analytics manual configuration
 
->[!WARNING]
->
->This article is a preliminary unofficial draft version of a forthcoming final version and is part of the Content Analytics documentation. All content is subject to change and no legal obligations whatsoever can be derived from the current version of this article.  
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
@@ -25,14 +22,14 @@ The following manual configuration actions are available:
 
 To activate a new configuration or changes you made to an existing configuration:
 
-1. You need to follow the [publishing flow](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. Successfully publish the library for the Tags property that contains your Content Analytics configuration. Only then Content Analytics data is collected for the domains, experiences and assets that you have configured.
+1. You need to follow the [publishing flow](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. Successfully publish the library for the Tags property that contains your Content Analytics configuration.
 
 1. You need to [install](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) the embedded code in the `<head>` element of the pages on your development, staging or publishing environment, subject to Content Analytics.
 
 
 ## Deactivate
 
-To deactivate collecting content analytics data:
+To deactivate the collection of content analytics data:
 
 1. Remove the [embedded code](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments) in the `<head>` element of the pages on your development, staging or production environment, subject to Content Analytics.
 1. [Delete](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) the associated Tags property for your Content Analytics configuration.
@@ -51,6 +48,10 @@ You use the [Adobe Content Analytics extension](https://experienceleague.adobe.c
   >
   >Verify that the sandbox and datastream you configure in the Adobe Content Analytics extension are already configured for Content Analytics using the [guided configuration](guided.md) at an earlier stage. This configuration ensures that all required artifacts are available.<br/><br/>Also verify that updates for sandbox or datastreams do not interfere with another Content Analytics configuration that is configured to use the same sandbox or datastreams.
   >
+
+* [Experience capture and definition](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
+
+  You can edit the regular expression to modify how you .
 
 * [Event filtering](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering){target="_blank"}
 

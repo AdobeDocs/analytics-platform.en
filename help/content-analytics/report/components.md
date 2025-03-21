@@ -10,10 +10,7 @@ exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
 ---
 # Content Analytics components
 
->[!WARNING]
->
->This article is a preliminary unofficial draft version of a forthcoming final version and is part of the Content Analytics documentation. All content is subject to change and no legal obligations whatsoever can be derived from the current version of this article.  
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
@@ -27,7 +24,7 @@ Content Analytics adds the following categories of components (dimensions, (calc
 * [Assets events](#asset-events)
 * [Calculated metrics](#calculated-metrics)
 
-In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/ML generated value. 
+In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/ML generated attribute / value pair. 
 
 ## Experience metadata
 
