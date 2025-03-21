@@ -1347,7 +1347,7 @@ Returns Pi: 3.14159...
 >title="Sample Variance"
 >abstract="Calculates an estimate of the sample variance using the formula (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)). where N is the count of the normalizing container. <br/>This is used as a part of *any-time valid* confidence calculations. Generally, this function is not useful alone, but can be used to check calculations or for performing confidence calculations *manually*."
 
-![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL SAMPLE VARIANCE]**
+![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL SAMPLE VARIANCE(normalizing-container, success-metric)]**
 
 Calculates an estimate of the sample variance.
 
