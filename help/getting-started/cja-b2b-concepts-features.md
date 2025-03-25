@@ -51,7 +51,9 @@ Opportunity, Buying Group and Person are all sibling containers of the Account c
 | Buying group | A collection of people within an organization that is involved in the decision-making process to purchase a product or service. <br/>You would use buying group data to track buying groups through campaign management. For example, buikd an audience segment of key buying groups.<br/> You most likely want a lookup from the buying group to profile data, so you can report on the people in a buying group. |
 | Person | An individual, often identified by a unique e-mail address that has interacted with the company. <br/>You would use the profile data to identify people who work for an account. For example: target all the people at an account that have signed-up for a conference. |
 
-If you do have a B2B structure that requires you to support the concept of an account with subsidary accounts, a Global account container can be used.
+If you do have a B2B structure that requires you to support the concept of an account with subsidary accounts, a Global account container can be used as the parent container.
+
+
 
 
 <!--

@@ -40,3 +40,9 @@ Customer Journey Analytics B2B Edition aligns marketing, sales, and product team
 
 Customer Journey Analytics B2B Edition is an add-on package to Customer Journey Analytics. The B2B Edition is built upon and extends the functionality and user interface of standard Customer Journey Analytics.
 
+>[!MORELIKETHIS]
+>
+>[B2B concepts and features](cja-b2b-concepts-features.md)
+>[B2B quick start guide](cja-b2b-quick-start-guide.md)
+>
+
