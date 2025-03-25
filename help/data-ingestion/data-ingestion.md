@@ -92,3 +92,8 @@ See [Ingest and use streaming data](./streaming.md) for more information.
 You have data available from a source that is supported by a source connector. Source connectors are configurable configurations that allow you to ingest data from Adobe, first-party and third-party application into Adobe Experience Platform. See [Source connectors overview](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html) for an overview of available source connectors. Using the source connector you can easily ingest data from the source into Adobe Experience Platform and then use, combine and analyze it with data from other channels and data sources in Customer Journey Analytics.
 
 See [Ingest and use data using source connectors](./sources.md) for more information.
+
+>[!MORELIKETHIS]
+>
+>Blog: [A Closer Look at Data Processing & Ingestion in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
+

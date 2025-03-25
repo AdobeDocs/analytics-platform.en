@@ -5,7 +5,8 @@ feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
 ---
-# Configure a fallout visualization
+# Configure a fallout visualization {#configure-fallout-visualization}
+
 
 You can specify the touchpoints to create a multi-dimensional fallout sequence. Commonly, a touchpoint is a page on your site. However, touchpoints are not limited to pages. For example, you can add events, such as units, as well as unique persons and return visits. You can also add dimensions, such as a category, browser type, or internal search term.
 
@@ -48,7 +49,12 @@ You can do pathing on dimensions, metrics, and filters. For example, suppose tha
    | **[!UICONTROL Next event]** | re counted that will land on the next page in the path on the very next event. |
 
 
-## Settings
+## Settings {#settings}
+
+>[!CONTEXTUALHELP]
+>id="workspace_fallout_container"
+>title="Fallout container"
+>abstract="Select a container to analyze pathing. This selection helps you to understand engagement and constraints the analysis to the selected container."
 
 As part of the visualization, specific settings are available.
 

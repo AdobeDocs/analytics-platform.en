@@ -12,7 +12,7 @@ This topic instructs curators of Customer Journey Analytics data on how to view 
 
 ## View and configure tile properties {#tiles}
 
-When you click a tile in the scorecard builder, the right-hand rail displays the properties and characteristics associated with that tile and its detail slide. In this rail, you can provide a new **Title** for the tile and alternatively configure the tile by applying filters. Segments are filters in Customer Journey Analytics.
+When you click a tile in the scorecard builder, the right-hand rail displays the properties and characteristics associated with that tile and its detail slide. In this rail, you can provide a new **Title** for the tile and alternatively configure the tile by applying segments.
 
 ![Properties tile](assets/properties-tile-new.png)
 
@@ -103,7 +103,7 @@ To delete a slide, tap the trash icon.
 
 ### Customize a data story {#customize-data-story}
 
-Data stories allow you to customize everything so you can share information that you want to share and exclude everything that you don't need. You can customize tiles and individual slides to add filters, show breakdowns, change the layout, and change the visualizations. 
+Data stories allow you to customize everything so you can share information that you want to share and exclude everything that you don't need. You can customize tiles and individual slides to add segments, show breakdowns, change the layout, and change the visualizations. 
 
 **To customize tiles**
 

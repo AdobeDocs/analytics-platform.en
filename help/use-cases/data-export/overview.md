@@ -6,7 +6,18 @@ feature: Use Cases
 role: Admin
 exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
 ---
-# Data export use cases
+# Data export use cases {#data-export-use-cases}
+
+<!-- This contextual help is for the upgrade checklist -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-data-feeds-step"
+>title="Use export features similar to Data Feeds"
+>abstract="An exact replacement for Data Feeds is not yet available in Customer Journey Analytics. However, similar functionality can be achieved with capabilities such as full table export, Platform dataset export, BI tool integration, and the reporting API."
+
+<!-- markdownlint-enable MD034 -->
 
 This section provides data export use cases and how to implement these use cases with one or more functionalities of Customer Journey Analytics or Experience Platform. Each functionality is further detailed in a separate article.
 

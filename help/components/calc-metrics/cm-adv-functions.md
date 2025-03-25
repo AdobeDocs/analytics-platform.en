@@ -412,8 +412,8 @@ Equal. The output is either a 0 (false) or 1 (true).
 
 | Argument | Description |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | The metric you want to use to compare. |
+| metric_Y | The metric you want to use to compare against. |
 
 ### Example
 
@@ -551,8 +551,8 @@ The output is either a 0 (false) or 1 (true).
 
 | Argument | Description |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | The base metric you want to use to compare. |
+| metric_Y | The metric you want to use to compare against. |
 
 ### Example
 
@@ -576,8 +576,8 @@ Greater than or equal. The output is either a 0 (false) or 1 (true).
 
 | Argument | Description |
 |---|---|
-| metric_X ||
-| metric_Y||
+| metric_X | The base metric you want to use to compare. |
+| metric_Y | The metric you want to use to compare against.|
 
 ### Example
 
@@ -689,8 +689,8 @@ The output is either a 0 (false) or 1 (true).
 
 | Argument | Description |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | The metric you want to use to compare. |
+| metric_Y | The metric you want to use to compare against.|
 
 ### Example
 
@@ -714,8 +714,8 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 
 | Argument | Description |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | The metric you want to use to compare. |
+| metric_Y | The metric you want to use to compare against.|
 
 ### Example
 
@@ -723,7 +723,7 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 
 
 
-## Lift (#lift)
+## Lift {#lift}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -733,6 +733,10 @@ Less than or equal. The output is either a 0 (false) or 1 (true).
 >abstract="The lift of the ratio compared to the control value."
 
 <!-- markdownlint-enable MD034 -->
+
+![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LIFT(normalizing-container, success-metric, control)]**
+
+The lift of the ratio compared to the control value.
 
 | Argument | Description |
 | --- | --- |
@@ -1013,8 +1017,8 @@ Not Equal. The output is either a 0 (false) or 1 (true).
 
 | Argument | Description |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | The metric you want to use to compare. |
+| metric_Y | The metric you want to use to compare against. |
 
 ### Example
 
@@ -1332,6 +1336,27 @@ Returns Pi: 3.14159...
 | metric_Y| A metric that you would like to designate as the independent data |
 | include_zeros | Whether or not to include zero values in the calculations |
 
+
+
+## Sample Variance
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="functions-waskr-variance-estimate"
+>title="Sample Variance"
+>abstract="Calculates an estimate of the sample variance using the formula (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)). where N is the count of the normalizing container. <br/>This is used as a part of *any-time valid* confidence calculations. Generally, this function is not useful alone, but can be used to check calculations or for performing confidence calculations *manually*."
+
+![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL SAMPLE VARIANCE(normalizing-container, success-metric)]**
+
+Calculates an estimate of the sample variance.
+
+| Argument | Description |
+| --- | --- |
+| normalizing-container | The basis (People, Sessions, or Events) on which a test is run. |
+| success-metric | The metric or metrics that a user is comparing variants with. |
+
+<!-- markdownlint-enable MD034 -->
 
 
 

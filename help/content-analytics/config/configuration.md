@@ -10,14 +10,68 @@ exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 ---
 # Configure Content Analytics
 
->[!WARNING]
+{{draft-aca}}
+
+{{release-limited-testing}}
+
+The configuration of Content Analytics consists of the following steps:
+
+![Configuration of Content Analytics](../assets/aca-configuration.svg){zoomable="yes"}
+
+1. Use the Content Analytics [guided configuration](guided.md) wizard to guide you through all steps required to set up the prerequisites for a configuration of Content Analytics. You can save your configurations at any time and return later.
+1. Once you are comfortable with the configuration values, you can implement the configuration. This implementation creates all the required artifacts, based on what you have configured in the wizard. 
+1. Only when you [manually publish](manual.md) the Tags property, your Content Analytics configuration is effectively deployed and activated.
+
+1. You can only make some minor changes to an implemented configuration using the [guided configuration](guided.md) wizard. For example, change the [Data view](/help/data-views/data-views.md).
+1. You can make other changes to an implemented configuration using the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) in the associated Tags property.
+1. Only when you [manually re-publish](manual.md) the Tags property, the configuration modifications are effectively deployed and activated.
+
+
+## Prerequisites
+
+Before you configure Content Analytics, ensure that the following prerequisites are met:
+
+* You have allow-listed the User Agent and IP address for the featurization service that is used in Content Analytics. The User Agent string to configure is: <code>AdobeFeaturization/1.0</code>.
+* You have a Customer Journey Analytics Product Administrator role, with the additional permissions to manage connections and to manage data views. 
+* You have the required Experience Platform permissions:
+  
+   | Category | Permission | Description |
+   |---|---|---|
+   | [!UICONTROL Data Collection] | View Datastreams | Read-only access to datastreams. |
+   | [!UICONTROL Data Collection] | Manage Datastreams | Access to read, create, edit and delete datastreams. |
+   | [!UICONTROL Data Modeling] | [!UICONTROL View Schemas] | Read-only access to schemas and related resources. |
+   | [!UICONTROL Data Modeling] | [!UICONTROL Manage Schemas] | Access to read, create, edit, and delete schemas and related resources. |
+   | [!UICONTROL Data Management] | [!UICONTROL View Datasets] | Read-only access for datasets and schemas. |
+   | [!UICONTROL Data Management] | [!UICONTROL Manage Datasets] | Access to read, create, edit, and delete datasets. Read-only access for schemas. |
+   | [!UICONTROL Data Ingestion] | [!UICONTROL Manage Sources] | Access to read, create, edit, and disable sources. |
+   | [!UICONTROL Identity Management] | [!UICONTROL View Identity Namespaces] | Read-only access for identity namespaces. |
+
+* You have carefully considered the following important configuration options:
+
+  * Your site is suited for experience reporting. Proper experience reporting is only possible when the following conditions are met:
+     * You can access the site content by public facing URLs only. Access to the site does not require personalized tokens, cookies or other mechanisms not available through the URL.
+     * The pages on your site are reproducible using the page URL, and you understand what optional URL parameters drive experiences.
+  * You have a clear understanding for which pages you want to capture content engagement analysis and insights.
+  * You have a clear understanding for which (type of) assets you want to capture content engagement analysis and insights.
+
+
+## Access Control
+
+>[!IMPORTANT]
 >
->This article is a preliminary unofficial draft version of a forthcoming final version and is part of the Content Analytics documentation. All content is subject to change and no legal obligations whatsoever can be derived from the current version of this article.  
+>There is no Content Analytics permission that you can configure to enable or disable Content Analytics access for individual users or groups of users.
 >
 
-{#release-limited-testing}
+To provide a user or group of users access to Content Analytics, you must provide the user or group of users access to one or more [data views that are configured for Content Analytics](guided.md#data-view).
 
-To configure Content Analytics for your organization, you can either:
+This access implies:
 
-* use the Content Analytics [guided configuration](guided.md). The configuration wizard guides you through all steps required to setup the prerequisites for an automatic configuration of Content Analytics.
-* follow a [manual process](manual.md) to configure Content Analytics.
+1. The Content Analytics enabled data view is included as part of the Data View permissions for a specific Customer Journey Analytics product profile.
+1. That specific Customer Journey Analytics product profile is one of the product profiles assigned to the user or group of users.
+
+>[!MORELIKETHIS]
+>
+>* [Guided configuration](guided.md)
+>* [Manual configuration](manual.md)
+>* [Access control](/help/technotes/access-control.md)
+>

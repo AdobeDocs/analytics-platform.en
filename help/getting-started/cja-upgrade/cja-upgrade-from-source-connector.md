@@ -4,8 +4,6 @@ description: Learn how to transition to the Web SDK from the Analytics source co
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 ---
 # Transition from the Analytics source connector to the Web SDK for Customer Journey Analytics {#transition-from-source-connector}
@@ -19,17 +17,24 @@ exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Use the information on this page when answering questions in the [Customer Journey Analytics upgrade checklist](https://gigazelle.github.io/cja-ttv/).
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-delete"
+>title="Delete the existing Analytics source connector"
+>abstract="The Analytics source connector that you currently have is not compatible with your organization's custom schema. However, the data still exists in the Analytics report suite. This step removes the current Analytics source connector so you can recreate it using the correct schema in a subsequent step.<br><br>Before you delete the source connector, you might want to coordinate with others in your organization to ensure that the removal of the source connector does not impact reporting within your organization. This coordination might take several weeks to complete."
+
+<!-- markdownlint-enable MD034 -->
+
+{{upgrade-note}}
 
 There are inherent disadvantages with using the Analytics source connector as your sole implementation for Customer Journey Analytics. 
 
-If your organization has already upgraded to Customer Journey Analytics using only the Analytics source connector implementation, Adobe recommends transitioning to an implementation that uses the Analytics source connector (for historical data), in conjunction with a new implementation of the Web SDK (for ongoing data collection). 
+If your organization has already upgraded to Customer Journey Analytics using only the Analytics source connector implementation, Adobe recommends transitioning to a new implementation of the Web SDK for ongoing data collection, and using the Analytics source connector only for historical data. 
 
 ## Understand advantages and disadvantages of using the Analytics source connector exclusively
 
-For information about the advantages and disadvantages of using the Analytics source connector, see [Use the Analytics source connector exclusively to upgrade to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md).
+For information about the advantages and disadvantages of using the Analytics source connector, see [Use the Analytics source connector exclusively to upgrade to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md).
 
 ## Transition from the Analytics source connector to the Web SDK
 
@@ -64,3 +69,5 @@ Following is the high-level process for transitioning from exclusively using the
 1. Delete your original Analytics source connector. <!-- need to add steps somewhere about how to do this -->
 
 1. [Create a new Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+
+{{upgrade-final-step}}

@@ -4,8 +4,6 @@ description: Learn how to create lookup datasets to classify data in Customer Jo
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
 ---
 # Create lookup datasets to classify data in Customer Journey Analytics {#upgrade-lookup-dataset}
@@ -19,11 +17,7 @@ exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Follow the steps on this page only after you complete all previous upgrade steps. You can follow the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations), or you can follow the upgrade steps that were dynamically generated for your organization with the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
->
->After you complete the steps on this page, continue following the recommended upgrade steps or the dynamically generated upgrade steps. 
+{{upgrade-note-step}}
 
 Similar to classifications data in Adobe Analytics, lookup datasets are the method for classifying data in Customer Journey Analytics. 
 
@@ -127,5 +121,7 @@ To add the lookup dataset to your connection in Customer Journey Analytics:
 
 1. Using the **[!UICONTROL Key]** field and the **[!UICONTROL Matching key]** field, create a correlation between the field in your lookup dataset with that in your event or summary dataset. 
 
-1. After all lookup datasets are added to your connection in Customer Journey Analytics, continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/). 
+1. Repeat this process until all lookup datasets are added to your connection in Customer Journey Analytics.
+
+{{upgrade-final-step}}
 

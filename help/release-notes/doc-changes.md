@@ -13,10 +13,19 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **March 2025** | |
+| Quantum Metric use cases| Added use cases for collecting data from [Quantum Metric](/help/use-cases/third-party/quantum-metric/collect-session-id.md). |
+| **February 2025** |  |
+| Media Collection: Adobe Source Connector updates for new Media Reporting XDM | The Analytics Source Connector automatically [maps streaming media data in Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=en) to the same fields used by the Web SDK. Previously, data was mapped to both the old and new locations, but only the new location will be used in the future. |
+| BI Extension - expanded support |  The Customer Journey Analytics BI extension now supports [Looker, Jupyter Notebook and R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=en). |
 | **January 2025** ||
+| Updated Connections Usage experience  |  The [Usage](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/manage-connections?lang=en#connections-usage) tab in Connection now provides enhanced visualizations for these types of reportable rows: core, ingested and historical data. You can also view and break down the usage data by connection, dataset, sandbox, or tag. |
 | Usage metrics | Updated documentation on the improved [usage metrics](/help/connections/manage-connections.md#usage) interface. |
 | Product usage | [Product usage](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview) shows you how your organization uses Customer Journey Analytics. |
 | Guided analysis | Updated documentation with the availability of [Guided Analysis](/help/guided-analysis/overview.md) from within Guided Analysis. |
+| Documentation on using custom templates from Customer Journey Analytics on the Reports page in Journey Optimizer | You can now customize the new reporting interface in Adobe Journey Optimizer by [creating or editing a template in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=en), then saving the template to be used on the Reports page in Journey Optimizer. Previously, the new reporting interface in Adobe Journey Optimizer couldn't be customized. |
+| Templates in Analysis Workspace | [Prebuilt templates](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates) and [company templates](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates) are now available in Customer Journey Analytics. |
+| Intelligent Captions v2 | [Intelligent captions](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions?lang=en) are now supported for the following visualizations: Multi-line, Bar, Horizontal bar, Donut, Area, Flow, and Fallout. You can select to show all intelligent captions at once in an expanded view, or you can show individual intelligent captions in a one-by-one view. |
 
 ## 2024
 
@@ -186,7 +195,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | October 2022 | Mobile app: New topic on [custom detail views](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html#view-detail-slides). |
 | October 2022 | Updates to the [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md) topic. |
 | **September 2022** | |
-| September 2022 | New use case on [Migrating Google Analytics data to Customer Journey Analytics](/help/use-cases/ga/overview.md). |
+| September 2022 | New use case on [Migrating Google Analytics data to Customer Journey Analytics](/help/use-cases/third-party/ga/overview.md). |
 | September 2022 | New topic on [Combo charts](/help/analysis-workspace/visualizations/combo-charts.md) in Workspace. |
 | September 2022 | New topic on [Experimentation panel](/help/analysis-workspace/c-panels/experimentation.md) in Workspace. |
 | **August 2022** | |
@@ -256,7 +265,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | April 2021 | New topic on [persistence](/help/data-views/component-settings/persistence.md). |
 | April 2021 | New documentation on support for scheduled projects in Workspace. |
 | April 2021 | New topics on the [enhanced Data Views experience](/help/data-views/data-views.md). |
-| April 2021 | New topics on [ingesting Google Analytics data](/help/use-cases/ga/overview.md) and [analyzing that data](/help/use-cases/ga/report.md). |
+| April 2021 | New topics on [ingesting Google Analytics data](/help/use-cases/third-party/ga/overview.md) and [analyzing that data](/help/use-cases/third-party/ga/report.md). |
 | April 2021 | Added topic on [scheduled reports](/help/analysis-workspace/export/t-schedule-report.md) in Workspace. |
 | April 2021 | New topic on [high-cardinality dimensions in Customer Journey Analytics](/help/components/dimensions/high-cardinality.md). |
 | **March 2021** | |

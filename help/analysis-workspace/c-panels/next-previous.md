@@ -14,14 +14,12 @@ exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
 >title="Next or previous item"
 >abstract="Create a panel to understand the previous dimensions people come from or next dimension people go to."
 
-<!-- markdownlint-disable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_panel"
->title="Nest or previous item"
->abstract="Analyze what are the most common places visitors previously came from or go to next.<br/><br/>**Dimension**: Select a dimension. For example **Page**.<br/>**Dimension item**: Select a specific dimension item. For example **Homepage**.<br/>**Direction**: Select **Next** to see the dimension items immediately next following your selected dimension item. Select **Previous** to see the dimension items leading up to your selected dimension item.<br/>**Container**: Select **Session** to see the next/previous dimension items within the same session, or select **Person** to see the next/previous dimension item for the same person."
+>title="Next or previous item"
+>abstract="Analyze what are the most common places visitors previously came from or go to next. Specify dimension, dimension item, the direction, and the container to use for the visualization."
+
+
 
 <!-- markdownlint-enable MD034 -->
 
@@ -33,7 +31,12 @@ _This article documents the Next or previous item panel in_ ![CustomerJourneyAna
 
 The **[!UICONTROL Next or previous item]** panel contains a number of tables and visualizations to identify the next or previous dimension item for a specific dimension. For example, you might want to explore which pages customers went to most often after they visited the Home page.
 
-## Use
+## Use {#use}
+
+>[!CONTEXTUALHELP]
+>id="workspace_nextorpreviousitem_container"
+>title="Container"
+>abstract="Select the container to determine the scope of your inquiry."
 
 To use a **[!UICONTROL Next or previous item]** panel:
 

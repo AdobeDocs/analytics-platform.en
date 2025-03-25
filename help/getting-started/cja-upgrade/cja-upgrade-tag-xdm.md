@@ -4,8 +4,6 @@ description: Learn how to add XDM data collection logic to your tag
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
 ---
 # Add XDM data collection logic to your tag {#upgrade-tag-xdm}
@@ -19,11 +17,7 @@ exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Follow the steps on this page only after you complete all previous upgrade steps. You can follow the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations), or you can follow the upgrade steps that were dynamically generated for your organization with the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
->
->After you complete the steps on this page, continue following the recommended upgrade steps or the dynamically generated upgrade steps. 
+{{upgrade-note-step}}
 
 After [creating the tag and adding the Web SDK extension](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md), you must configure it with data elements and rules, according to how you want to track your site and send data to Adobe Experience Platform. After you configure data elements and rules for your tag, you can build and publish it.
 
@@ -296,3 +290,6 @@ To build and publish your tag:
 1. You can select **[!UICONTROL ...]** to rebuild the library or move the library to a staging or production environment.
 
    ![Publish - Build Library](assets/build-library.png)
+
+{{upgrade-final-step}}
+

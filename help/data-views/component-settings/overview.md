@@ -13,7 +13,7 @@ role: Admin
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="Component settings"
->abstract="View and configure the name, description, and other settings related to a component.<br/><br/>**Parameters**<br/>**Hide component in reporting**: Checking this box will hide this component from non-admin users in reporting. Admins can still access it by selecting **[!UICONTROL Show all components]** in a Workspace project."
+>abstract="View and configure the name, description, and other settings related to a component. Check this box to hide this component from non-admin users in reporting. Admins can still access the component by selecting **[!UICONTROL Show all components]** in a Workspace project."
 
 <!-- markdownlint-enable MD034 -->
 

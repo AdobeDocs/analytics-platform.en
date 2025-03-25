@@ -4,8 +4,6 @@ description: Learn how to add the Analytics source connector dataset to the conn
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
 ---
 # Add the Analytics source connector dataset to the connection {#upgrade-source-connector-dataset}
@@ -19,11 +17,7 @@ exl-id: 424485a3-a076-4656-83b6-733f16cc2326
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Follow the steps on this page only after you complete all previous upgrade steps. You can follow the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations), or you can follow the upgrade steps that were dynamically generated for your organization with the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
->
->After you complete the steps on this page, continue following the recommended upgrade steps or the dynamically generated upgrade steps. 
+{{upgrade-note-step}} 
 
 ## Understand how the Analytics source connector can bring historical data into Customer Journey Analytics
 
@@ -112,4 +106,4 @@ To add the automatically created dataset to the same connection that you created
 
    This is required only if you did not already do it when configuring your Web SDK implementation.
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}

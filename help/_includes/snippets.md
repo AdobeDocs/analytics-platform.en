@@ -194,3 +194,27 @@ Use the following information to choose the visualization that best meets your n
 | **Adobe Journey Optimizer journeys** | Yes</br>Open journeys from Journey Optimizer for deeper analysis and customization | No |  No |
 
 {style="table-layout:auto"}
+
+## Upgrade checklist note {#upgrade-note}
+
+>[!NOTE]
+> 
+>Use the information on this page when answering questions in the Customer Journey Analytics Upgrade Guide. <br><br>To access the guide from Customer Journey Analytics, select the **[!UICONTROL Workspace]** tab, then select **[!UICONTROL Upgrade to Customer Journey Analytics]** in the left panel. Follow the on-screen instructions.
+
+## Upgrade checklist note subsequent step {#upgrade-note-step}
+
+>[!NOTE]
+> 
+>Follow the steps on this page only after you complete all previous upgrade steps. You can follow the recommended upgrade steps (recommended for most organizations), or you can follow steps that are dynamically generated for your organization with the Customer Journey Analytics Upgrade Guide. <ul><li>**Recommended upgrade steps** (Recommended for most organizations)<p>A set of steps that lead to an ideal Customer Journey Analytics implementation.</p><p>For detailed information, see [Upgrade from Adobe Analytics to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Customer Journey Analytics Upgrade Guide** (Custom steps tailored to the specific needs of your organization)<p>A new upgrade guide is available that dynamically generates upgrade steps that are tailored for your organization and your unique circumstances.</p><p>To access the guide from Customer Journey Analytics, select the **[!UICONTROL Workspace]** tab, then select **[!UICONTROL Upgrade to Customer Journey Analytics]** in the left panel. Follow the on-screen instructions.</p></li></ul>
+
+## Upgrade checklist final step {#upgrade-final-step}
+
+1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the dynamically generated upgrade steps in the Customer Journey Analytics Upgrade Guide. To access the guide from Customer Journey Analytics, select the **[!UICONTROL Workspace]** tab, then select **[!UICONTROL Upgrade to Customer Journey Analytics]** in the left panel. Follow the on-screen instructions.
+
+
+## Draft Content Analytics documentation {#draft-aca}
+
+>[!WARNING]
+>
+>This article is part of the draft Content Analytics documentation. All draft Content Analytics documentation is  still subject to change and no legal obligations whatsoever can be derived from the current version of this article or any other article that is part of the Content Analytics documentation.  
+>
