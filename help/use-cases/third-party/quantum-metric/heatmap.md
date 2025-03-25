@@ -43,6 +43,6 @@ You must be entitled to Quantum Metric's **UX Ops** package in order to access Q
 
 ## Viewing heatmaps by clicking links within Customer Journey Analytics
 
-Once you’ve found a page that you want to explore heatmapping for, you can apply it to the panel that your URL is in. The table will return a URL that will let you explore heatmaps for the page in question, scroll depth, and key zones for interaction.  Lear more about Quantum Metric Heatmaps at [https://www.quantummetric.com/platform/interaction-heatmaps](https://www.quantummetric.com/platform/interaction-heatmaps)
+Once you’ve found a page that you want to explore heatmapping for, you can apply it to the panel that your URL is in. The table will return a URL that will let you explore heatmaps for the page in question, scroll depth, and key zones for interaction.  Lear more about Quantum Metric Heatmaps at [https://www.quantummetric.com/platform/interaction-heatmaps](https://www.quantummetric.com/platform/interaction-heatmaps).  For any additional resources please contact your Quantum Metric customer support representative or submit a request through the Quantum Metric [Customer Request Portal](https://community.quantummetric.com/s/public-support-page). 
 
 
