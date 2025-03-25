@@ -12,6 +12,8 @@ exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
 
 Quantum Metric collects friction events such as page load slowness, page load errors, rage clicks, and more. These events can be passed into Customer Journey Analytics as complementary events in the user journey. With this combined data, you can better understand the impact of friction on downstream metrics.
 
+## Prerequisites:
+
 This use case has two requirements:
 
 * You must be entitled to Quantum Metric's **Dev Ops** package.
