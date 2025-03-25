@@ -10,21 +10,18 @@ exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 ---
 # Content Analytics reporting overview
 
->[!WARNING]
->
->This article is a preliminary unofficial draft version of a forthcoming final version and is part of the Content Analytics documentation. All content is subject to change and no legal obligations whatsoever can be derived from the current version of this article.  
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
-Reporting on Content Analytics is done within Analysis Workspace. A specific Workspace [template](#template) is available, so you can immediately access a pre-populated Workspace project with relevant content insights.
+You report, perform analysis and gain insights on Content Analytics within [Analysis Workspace](/help/analysis-workspace/home.md). A specific Workspace [template](#template) is available, so you can immediately access a pre-populated Workspace project with relevant content insights.
 
 To start reporting on Content Analytics from scratch:
 
 1. [Create a new](/help/analysis-workspace/build-workspace-project/create-projects.md) or [open an existing](/help/analysis-workspace/build-workspace-project/open-projects.md) project in Workspace.
 1. Ensure you [select a data view](/help/analysis-workspace/c-panels/panels.md#data-view) for Content Analytics reporting. Content Analytics reporting is only available for data views that are [configured](/help/content-analytics/config/configuration.md) for Content Analytics. 
 1. Drag a ![Table](/help/assets/icons/Table.svg) [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) visualization on the canvas.
-1. Use [specific Content Analytics components](components.md) and other generic [components](/help/components/overview.md) (like filters, date ranges, annotations) to build your content analytics insights. Alternatively, use the [Content analytics template](#template).
+1. Use [specific Content Analytics components](components.md) and other generic [components](/help/components/overview.md) (like filters, date ranges, annotations) to build your content analytics insights.
 
 ## Thumbnails
 
@@ -32,9 +29,16 @@ Based on the Content Analytics specific dimensions that you use in your project,
 
 ![Content Analytics thumbnails](../assets/aca-thumbnails.png)
 
+By default, thumbnails are shown for relevant  Content Analytics dimensions. To configure the display of thumbnails for a Content Analytics dimension:
+
+* Hover over a header row for a Content Analytics dimension. For example, **[!UICONTROL Asset Name]** or **[!UICONTROL Experience IDs]**.
+* Select ![Setting](/help/assets/icons/Setting.svg).
+* In the **[!UICONTROL Row setting]** popup, underneath **[!UICONTROL Settings]**, check or uncheck **[!UICONTROL Show Thumbnails]**.
+
+
 ## Previews
 
-For dimensions that have thumbnails (like Asset Name, Experience Name, and others), you can open a preview popup window. 
+For rows of a Content Analytics dimension that show thumbnails, you can open a preview popup window. 
 
 To open the preview with the following details:
 
@@ -44,11 +48,11 @@ To open the preview with the following details:
   |---|---|
   | ![Content Analytics Experience preview](../assets/aca-experience-preview.png) | ![Content Analytics Asset preview](../assets/aca-asset-preview.png) |
   | **[!UICONTROL Name of the experience]** | **[!UICONTROL Name of the asset]** |
-  | **[!UICONTROL Impressions (all times)]**: Number of impressions for the experience. | **[!UICONTROL Impressions (all times)]**: Number of impressions for the asset. |
-  | **[!UICONTROL Assets]**: Number of assets this experience contains. Select ![Breakdown](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** to inspect the assets. |**[!UICONTROL Experiences]**: Number of experiences where this asset is shown in. ![Breakdown](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** to inspect the assets. | 
+  | **[!UICONTROL Impressions (all time)]**: Number of impressions for the experience. | **[!UICONTROL Impressions (all times)]**: Number of impressions for the asset. |
+  | **[!UICONTROL Assets]**: Number of assets this experience contains. <br/>Select ![Breakdown](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** to inspect the assets. |**[!UICONTROL Experiences]**: Number of experiences where this asset is shown in. <br/>Select ![Breakdown](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** to inspect the assets. | 
   | **[!UICONTROL First impression]**: Date of first impression of the experience. | **[!UICONTROL First impression]**: Date of first impression of the asset. |
   |**[!UICONTROL  Most recent impression]**: Date of most recent impression of the experience. | **[!UICONTROL Most recent impression]**: Date of most recent impression of the asset. |
-  | **[!UICONTROL Experience attributes]**: The attributes of the experience. | **[!UICONTROL Asset attributes]**: The attributes of the asset. |
+  | **[!UICONTROL Experience attributes]**: The [attributes](/help/content-analytics/report/components.md#experience-attributes) of the experience. | **[!UICONTROL Asset attributes]**: The [attributes](/help/content-analytics/report/components.md#asset-attributes) of the asset. |
 
 
 ## Template
@@ -66,7 +70,7 @@ To use the template:
 1. In the **[!UICONTROL Set up your template]** dialog, select a metric from the **[!UICONTROL Select a conversion metric]** dialog. For example, **[!UICONTROL Asset CTR]**.
 1. Select **[!UICONTROL Continue]**.
 
-A **[!UICONTROL Content Analytics Overview]** project opens in Workspace. The project consists of four panels, each answering specific questions:
+A **[!UICONTROL Content Analytics Overview]** project opens in Workspace. The project consists of four panels, where each panel provides freeform tables and visualizations to answer a specific question:
 
 * **What content performs the best?** 
   This panel helps you to understand which experiences and which assets in those experiences are driving engagement and conversion. Experiences are a full webpage, captured at a specific time. An experience can contain both text and multiple individual image assets. An asset is an individual image. 
@@ -123,18 +127,18 @@ A **[!UICONTROL Content Analytics Overview]** project opens in Workspace. The pr
     A [freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) showing the top experience keywords based on the selected conversion metric.
 
 * **Where do assets appear on my site?** 
-  A panel that consists of one freeform table that details where the most views assets appear on your site.
+  A panel that consists of one freeform table that details where the most viewed assets appear on your site.
 
   The panel consists of one visualization:
 
   * **Where do the most viewed assets appear?**
-    You can break down any Asset ID by dimensions that help you better understand where that image appears. 
+    You can break down any asset by dimensions to help you better understand where that image appears. 
     
-    In this example [freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (including [thumbnails](#thumbnails) and [previews](#previews)), [!UICONTROL *Asset Perception ID*] is used instead of [!UICONTROL *Asset ID*]. Sometimes, the exact same image can get duplicated on your site with a different image URL. The [!UICONTROL _Asset Perception_] attribute helps group these duplicates under a single ID. Because assets can change on a page, each asset is broken down by [!UICONTROL _Experience ID_], to identify which version of that page that asset appeared on. 
+    In the example [freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (including [thumbnails](#thumbnails) and [previews](#previews)), **[!UICONTROL Asset Perception ID]** is used instead of [!UICONTROL Asset Id]. Sometimes, the exact same image can get duplicated on your site with a different image URL. The [!UICONTROL Asset Perception ID] attribute helps to group these duplicates under a single ID. 
     
-    You can replace [!UICONTROL _Experience ID_] with other dimensions that help you understand the location of an asset location on your site. For example, [!UICONTROL _Page name_], [!UICONTROL _Page URL_], or [!UICONTROL _Site section_]. 
+    Because assets can change on a page, each asset is broken down by **[!UICONTROL Experience Id]**, to identify which version of that page the asset appeared on. You can replace [!UICONTROL Experience Id] with other dimensions that help you understand the location of an asset on your site. For example, [!UICONTROL Page name], [!UICONTROL Page URL], or [!UICONTROL Site section]. 
     
-    You can also swap out [!UICONTROL _Perception ID_] with [!UICONTROL _Asset ID_] to get a record of where specific image URLs are being referenced. 
+    You can also swap out [!UICONTROL Asset Perception ID] with [!UICONTROL Asset Id] to get a record of where specific image URLs are being referenced. 
 
 
 >[!MORELIKETHIS]
