@@ -33,19 +33,9 @@ Before you configure Content Analytics, ensure that the following prerequisites 
 
 * You have allow-listed the User Agent and IP address for the featurization service that is used in Content Analytics. The User Agent string to configure is: <code>AdobeFeaturization/1.0</code>.
 * You have a Customer Journey Analytics Product Administrator role, with the additional permissions to manage connections and to manage data views. 
-* You have the required Experience Platform permissions:
-  
-   | Category | Permission | Description |
-   |---|---|---|
-   | [!UICONTROL Data Collection] | View Datastreams | Read-only access to datastreams. |
-   | [!UICONTROL Data Collection] | Manage Datastreams | Access to read, create, edit and delete datastreams. |
-   | [!UICONTROL Data Modeling] | [!UICONTROL View Schemas] | Read-only access to schemas and related resources. |
-   | [!UICONTROL Data Modeling] | [!UICONTROL Manage Schemas] | Access to read, create, edit, and delete schemas and related resources. |
-   | [!UICONTROL Data Management] | [!UICONTROL View Datasets] | Read-only access for datasets and schemas. |
-   | [!UICONTROL Data Management] | [!UICONTROL Manage Datasets] | Access to read, create, edit, and delete datasets. Read-only access for schemas. |
-   | [!UICONTROL Data Ingestion] | [!UICONTROL Manage Sources] | Access to read, create, edit, and disable sources. |
-   | [!UICONTROL Identity Management] | [!UICONTROL View Identity Namespaces] | Read-only access for identity namespaces. |
-
+* You must have [permissions for data collection](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"}. These permission consist of:
+  * [Experience Platform permissions](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
+  * [Experience Platform Data Collection permissions](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank" }
 * You have carefully considered the following important configuration options:
 
   * Your site is suited for experience reporting. Proper experience reporting is only possible when the following conditions are met:
