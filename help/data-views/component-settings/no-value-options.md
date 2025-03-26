@@ -35,9 +35,10 @@ role: Admin
 
 When using a numeric value as a dimension, you can 
 
-* Configure the "No value" option in a data view. Note that all configuration settings are supported except for **[!UICONTROL Treat "No value" as a value]**. 
-* Use [!UICONTROL Include "No value"] for numeric dimensions in a Freeform table in Workspace.
-* In the Filter builder, use the "exists" or "does not exist" operators with numeric dimensions.
+* Configure the "No value" option in a data view. Note that all configuration settings shown above are supported except for **[!UICONTROL Treat "No value" as a value]**. 
+* Use **[!UICONTROL Include "No value"]** for numeric dimensions in a Freeform table in Workspace.
+* In the Filter builder, use the **[!UICONTROL exists]** or **[!UICONTROL does not exist]** operators with numeric dimensions.
+
 
 >[!MORELIKETHIS]
 >
