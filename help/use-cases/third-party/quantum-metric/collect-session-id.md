@@ -12,11 +12,13 @@ exl-id: cfe4bafd-afe6-4738-94f1-30882893b3b6
 
 Some use cases, such as [tying Quantum Metric session replays](tie-session-replays.md) or [using Quantum Metric heatmaps](heatmap.md) require that you modify your implementation to collect the Quantum Metric session ID. This page outlines that process to successfully bring that data into your existing implementation.
 
-## Prerequisites 
+## Prerequisites: 
 
 These steps assume that you use tags in Adobe Experience Platform Data Collection. You can adapt these data collection methods towards a manual Web SDK implementation if your organization does not use tags.
 
-### Step 1: Capture the Quantum Metric session ID using the Quantum Metric tags extension
+See the [Quantum Metric tag extension](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) documentation for more information.
+
+## Step 1: Capture the Quantum Metric session ID using the Quantum Metric tags extension
 
 Follow these steps to append the Quantum Metric session ID to the data that you send to Adobe Experience Platform.
 
@@ -31,13 +33,11 @@ Follow these steps to append the Quantum Metric session ID to the data that you 
 >[!NOTE]
 >Sometimes the Web SDK runs faster than the Quantum Metric code. In these cases, the session ID is sent on the subsequent hit. If a visitor bounces, then the session ID is not collected in these instances.
 
-See the [Quantum Metric tag extension](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) documentation for more information.
-
-### Step 2: Confirm included dataset fields
+## Step 2: Confirm included dataset fields
 
 Confirm that the datasets in your connection now have the Quantum Metric session ID in the desired dataset.
 
-### Step 3: Add Quantum Metric session ID as an available dimension
+## Step 3: Add Quantum Metric session ID as an available dimension
 
 Edit your existing data view to add the session ID as an available dimension in Customer Journey Analytics.
 
