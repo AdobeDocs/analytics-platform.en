@@ -39,7 +39,6 @@ When using a numeric value as a dimension, you can
 * Use [!UICONTROL Include "No value"] for numeric dimensions in a Freeform table in Workspace.
 * In the Filter builder, use the "exists" or "does not exist" operators with numeric dimensions.
 
-
 >[!MORELIKETHIS]
 >
 >Here is a related blog post about [handling "no value" in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
