@@ -10,10 +10,7 @@ exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
 ---
 # Content Analytics components
 
->[!WARNING]
->
->This article is a preliminary unofficial draft version of a forthcoming final version and is part of the Content Analytics documentation. All content is subject to change and no legal obligations whatsoever can be derived from the current version of this article.  
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
@@ -27,7 +24,7 @@ Content Analytics adds the following categories of components (dimensions, (calc
 * [Assets events](#asset-events)
 * [Calculated metrics](#calculated-metrics)
 
-In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI / ML generated value. 
+In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/ML generated attribute / value pair. 
 
 ## Experience metadata
 
@@ -57,7 +54,7 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI 
 | Experience Persuasion Strategies | ![AI generated](/help/assets/icons/AI.svg)  Persuasion strategies that are present in the given experience. The possible values are: Social Identity, Social Proof, Authority, Concreteness, Foot in the Door, Overcoming Reactance, Reciprocity, Anchoring and Comparison, Social Impact, Scarcity, and Anthropomorphism. | Dimension<br/>Derived Field | Show \| No value<br/>Most Recent \| Session |
 | Experience Narratives | ![AI generated](/help/assets/icons/AI.svg) Narratives which the experience is building based on relevance from a marketer's view point. | Dimension<br/>Derived Field | Show \| No value<br/>Most Recent \| Session |
 | Experience Tones | ![AI generated](/help/assets/icons/AI.svg)  Tones which the experience is building based on relevance from a marketer's view point | Dimension<br/>Derived Field | Show \| No value<br/>Most Recent \| Session |
-| Experience Marketing Emotions | ![AI generated](/help/assets/icons/AI.svg) The emotion invoked in the reader when reading the experience: Urgency, Exclusivity, Encouragement, Challenge, Curiosity, Achievement, Trust, Simplicity, and Fascination. | Dimension<br/>Derived Field | Show \| No value<br/>Most Recent \| Session |
+| Experience Marketing Emotions | ![AI generated](/help/assets/icons/AI.svg) The emotion invoked in the reader when reading the text used as part of the experience: Urgency, Exclusivity, Encouragement, Challenge, Curiosity, Achievement, Trust, Simplicity, and Fascination. | Dimension<br/>Derived Field | Show \| No value<br/>Most Recent \| Session |
 | Experience Emojis Count | ![AI generated](/help/assets/icons/AI.svg) Number of emojis for the experience. | Metric | Count values<br/>Decimal \| Decimal Places: 0 |
 | Experience Hashtags Count | ![AI generated](/help/assets/icons/AI.svg) Number of hashtags for the experience. | Metric | Count values<br/>Decimal \| Decimal Places: 0 |
 | Experience Sentences Count | ![AI generated](/help/assets/icons/AI.svg) Number of sentences for the experience. | Metric | Count values<br/>Decimal \| Decimal Places: 0 |
@@ -157,3 +154,4 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI 
 | experience Click-Through Rate | Experience clicks / Experience views | Calculated metric | |
 
 {style="table-layout:fixed"}
+

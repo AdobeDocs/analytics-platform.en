@@ -10,7 +10,7 @@ exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
 ---
 # Use Quantum Metric heatmaps with Customer Journey Analytics
 
-Linking Quantum Metric heatmapping to CJA data lets you better understand page-level engagement and optimize pages based on consumer behavior. Workspace can be used to understand consumer user flows and see what paths consumers follow from one page to the next. Then, you can click hyperlinked Page URLs to visually heatmap how users engage with the content.
+Linking Quantum Metric heatmapping to CJA data lets you better understand page-level engagement and optimize pages based on consumer behavior. Workspace can be used to understand consumer user flows and see what paths consumers follow from one page to the next. Then, you can click hyperlinked Page URLs to visually heatmap how users engage with the content.  By linking Quantum Metric Heatmapping to CJA, you can now associate page-level interactions with business outcomes, taking your analysis to the next level.  
 
 The table will return all the sessions in that segment, and you can click any one of them to explore further in QM.  Learn more about Quantum Metric session replay at https://www.quantummetric.com/platform/session-replay 
 
@@ -43,6 +43,6 @@ You must be entitled to Quantum Metric's **UX Ops** package in order to access Q
 
 ## Viewing heatmaps by clicking links within Customer Journey Analytics
 
-Once you’ve found a page that you want to explore heatmapping for, you can apply it to the panel that your URL is in. The table will return a URL that will let you explore heatmaps for the page in question, scroll depth, and key zones for interaction.  Lear more about Quantum Metric Heatmaps at https://www.quantummetric.com/platform/interaction-heatmaps
+Once you’ve found a page that you want to explore heatmapping for, you can apply it to the panel that your URL is in. The table will return a URL that will let you explore heatmaps for the page in question, scroll depth, and key zones for interaction.  Lear more about Quantum Metric Heatmaps at [https://www.quantummetric.com/platform/interaction-heatmaps](https://www.quantummetric.com/platform/interaction-heatmaps).  For any additional resources please contact your Quantum Metric customer support representative or submit a request through the Quantum Metric [Customer Request Portal](https://community.quantummetric.com/s/public-support-page). 
 
 
