@@ -14,31 +14,31 @@ exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
 
 {{release-limited-testing}}
 
-This article details the manual actions that are required to activate or de-activate a Content Analytics configuration or to edit your Content Analytics implementation.
+This article details the manual actions that are required to start or stop the data collection of a Content Analytics configuration, or to edit your Content Analytics implementation.
 
 The following manual configuration actions are available:
 
-## Activate
+## Start data collection
 
-To activate a new configuration or changes you made to an existing configuration:
+To start the data collection for an implemented Content Analytics configuration:
 
-1. You need to follow the [publishing flow](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. Successfully publish the library for the Tags property that contains your Content Analytics configuration.
+1. Follow the [publishing flow](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. Successfully publish the library for the Tags property that contains your Content Analytics configuration.
 
-1. You need to [install](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) the embedded code in the `<head>` element of the pages on your development, staging or publishing environment, subject to Content Analytics.
+1. [Install](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) the embedded code in the `<head>` element of the pages on your development, staging or publishing environment, subject to Content Analytics.
 
 
-## Deactivate
+## Stop data collection
 
-To deactivate the collection of content analytics data:
+To stop the data collection for an implemented Content Analytics configuration:
 
 1. Remove the [embedded code](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments) in the `<head>` element of the pages on your development, staging or production environment, subject to Content Analytics.
 1. [Delete](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) the associated Tags property for your Content Analytics configuration.
 
 
 
-## Modify 
+## Modify data collection
 
-You can make some minor changes to an implemented configuration using the [guided configuration wizard](guided.md). For example, change the data view. 
+You can make some minor changes to an implemented configuration using the [guided configuration wizard](guided.md). For example, change the data view, or enable or disable experiences. 
 
 You use the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) in the Tags property associated with your Content Analytics configuration to make changes to the following artifacts:
 
@@ -51,14 +51,14 @@ You use the [Adobe Content Analytics extension](https://experienceleague.adobe.c
 
 * [Experience capture and definition](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
 
-  You can edit the regular expression to modify how you .
+  You can enable or disable experiences and edit the combinations of regular expression and query parameters to determine how content is rendered on your website.
 
 * [Event filtering](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering){target="_blank"}
 
   You can edit regular expressions to modify how you filter pages and assets.
 
 
-After you make changes in the Adobe Content Analytics extension, ensure your use [publishing flow](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} to activate your changes. 
+After you make changes in the Adobe Content Analytics extension, ensure your use [publishing flow](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} to start the collection of data based on the changes made. 
 
 
 
