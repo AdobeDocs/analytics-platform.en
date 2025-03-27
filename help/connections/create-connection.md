@@ -151,7 +151,17 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 1. In Customer Journey Analytics, select **[!UICONTROL Connections]** from the main menu.
 1. Select **[!UICONTROL Create new connection]**.
 
+    >[!BEGINTABS]
+
+    >[!TAB Standard] 
+
     ![Untitled connection settings](assets/create-conn1.png)
+
+    >[!TAB B2B Edition]
+    
+    ![Untitled connection settings](assets/create-conn1-b2b.png)
+
+    >[!ENDTABS]
 
 1. Configure the connection settings.
 
@@ -163,7 +173,13 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
     | [!BADGE B2B Edition]{type=Informative} **[!UICONTROL Optional containers]** | Select additional containers.<ul><li>**[!UICONTROL Global account]**: enables configuration of global accounts in a connection.</li><li>**[!UICONTROL Opportunity]**: enables configuration of opportunities in a connection.</li><li>**[!UICONTROL Buying group]**: enables configuration of buying groups in a connection.</li><ul> |
     | **[!UICONTROL Sandbox]** | Choose a sandbox in Experience Platform that contains the dataset/s to which you want to create a connection.<p>Adobe Experience Platform provides [sandboxes](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain datasets. Sandboxes are used to control access to datasets.<p>Once you have selected the sandbox, the left rail shows all the datasets in that sandbox that you can pull from.  |
     | **[!UICONTROL Enable rolling data window]** | This checkbox, if checked, lets you define Customer Journey Analytics data retention as a rolling window in months (1 month, 3 months, 6 months, and so on), at the connection level.<p>Data retention is based on event dataset timestamps and applies to event datasets only. No rolling data window setting exists for profile or lookup datasets, since there are no applicable timestamps. However, if your connection includes any profile or lookup datasets (besides one or more event datasets), that data is retained for the same time period.<p> The main benefit is that you store or report only on data that is applicable and useful and delete older data that is no longer useful. It helps you stay under your contract limits and reduces the risk of overage cost.<p>If you leave the default (unchecked), the Adobe Experience Platform data retention setting supersedes the retention period. If you have 25 months' worth of data in Experience Platform, Customer Journey Analytics gets 25 months of data through backfill. If you deleted 10 of those months in Platform, Customer Journey Analytics would retain the remaining 15 months. |
-    | **[!UICONTROL Add datasets]** (see below) | Add datasets if no datasets appear in your dataset listing. |
+    | **[!UICONTROL Add datasets]** (see below) | Add datasets if no datasets appear in your dataset table. Otherwise you will see a list of the datasets you already added as part of the creation of the connection. |
+
+
+    For the datasets you have configured, the table of datasets shows the following columns:
+
+    | Column | Description |
+    |---|---|
     | **[!UICONTROL Dataset name]** | Select one or more datasets that you want to pull into Customer Journey Analytics and select **[!UICONTROL Add]**.<p>(If you have many datasets to choose from, you can search for the right one(s) using the Search datasets search bar above the list of datasets.) |
     | **[!UICONTROL Last updated]** | For event datasets only, this setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. "N/A" means that this dataset contains no data. |
     | **[!UICONTROL Number of records]** | The total records in the previous month for the dataset in Experience Platform. |
@@ -177,6 +193,8 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
     | **[!UICONTROL Import new data]** | Set to On or Off. |
     | **[!UICONTROL Backfill data]** | You can request to backfill the data in a dataset. For example, you can request to backfill the last 7 days worth of data. Configure the dataset correctly and test your connection. If everything looks good, you can backfill all the remaining data with ease.<p>In addition, you can enable the import of new data by dataset.  |
     | **[!UICONTROL Backfill status]** | This status indicates whether any backfill data is processing. |
+
+    You can search for a specific dataset using the ![Search](/help/assets/icons/Search.svg) field.
 
 
 ## Add and configure datasets {#add-dataset}
