@@ -29,7 +29,7 @@ Based on the Content Analytics specific dimensions that you use in your project,
 
 ![Content Analytics thumbnails](../assets/aca-thumbnails.png)
 
-By default, thumbnails are shown for relevant  Content Analytics dimensions. To configure the display of thumbnails for a Content Analytics dimension:
+By default, thumbnails are shown for relevant Content Analytics dimensions. To configure the display of thumbnails for a Content Analytics dimension:
 
 * Hover over a header row for a Content Analytics dimension. For example, **[!UICONTROL Asset Name]** or **[!UICONTROL Experience IDs]**.
 * Select ![Setting](/help/assets/icons/Setting.svg).
@@ -47,7 +47,7 @@ To open the preview with the following details:
   | Experience preview | Asset preview |
   |---|---|
   | ![Content Analytics Experience preview](../assets/aca-experience-preview.png) | ![Content Analytics Asset preview](../assets/aca-asset-preview.png) |
-  | **[!UICONTROL Name of the experience]** | **[!UICONTROL Name of the asset]** |
+  | Name of the dimension (for example, **[!UICONTROL Experience ID])** | Name of the asset dimension (for example, **[!UICONTROL Asset ID])** |
   | **[!UICONTROL Impressions (all time)]**: Number of impressions for the experience. | **[!UICONTROL Impressions (all times)]**: Number of impressions for the asset. |
   | **[!UICONTROL Assets]**: Number of assets this experience contains. <br/>Select ![Breakdown](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** to inspect the assets. |**[!UICONTROL Experiences]**: Number of experiences where this asset is shown in. <br/>Select ![Breakdown](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** to inspect the assets. | 
   | **[!UICONTROL First impression]**: Date of first impression of the experience. | **[!UICONTROL First impression]**: Date of first impression of the asset. |
@@ -77,10 +77,15 @@ A **[!UICONTROL Content Analytics Overview]** project opens in [Analysis Workspa
 
   The panel consists of the following visualizations:
 
-  * **Experiences**
+  * **Experiences**. 
+   
+    >[!NOTE]
+    >
+    >These visualizations only show when you have [included experiences](/help/content-analytics/config/guided.md#experience-capture-and-definition) in your Content Analytics configuration.
+    > 
 
     * **Experience CTR**: a [summary change](/help/analysis-workspace/visualizations/summary-number-change.md) visualization, showing Experience CTR.
-    * **Top converting experiences**: A [horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md)  visualization showing top converting experiences based on the selected conversion metric.
+    * **Top converting experiences**: A [horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md) visualization showing top converting experiences based on the selected conversion metric.
     * **Top performing experiences**: A [freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)(including [thumbnails](#thumbnails) and [previews](#previews)) for the top performing experiences.
 
   * **Assets**
@@ -111,6 +116,12 @@ A **[!UICONTROL Content Analytics Overview]** project opens in [Analysis Workspa
     An example [freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) that compares the performance of items from a single asset attribute category: Foreground Colors. You can replace this asset attribute with other asset attribute category dimensions. 
 
 * **Which experience attributes contribute to conversions?** 
+
+  >[!NOTE]
+  >
+  >This panel only shows when you have [included experiences](/help/content-analytics/config/guided.md#experience-capture-and-definition) in your Content Analytics configuration.
+  > 
+  
   While asset attributes focus on the visual qualities of images, experience attributes focus on the text of your page. The visualizations below let you explore which experience attributes contribute to conversion. These attributes are also automatically assigned using AI and GenAI models.
 
   The panel consists of the following visualizations:
