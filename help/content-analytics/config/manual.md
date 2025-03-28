@@ -4,8 +4,6 @@ description: How to configure Content Analytics manually
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-hide: yes
-hidefromtoc: yes
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
 ---
 # Content Analytics manual configuration
