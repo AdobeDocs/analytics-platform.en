@@ -4,8 +4,6 @@ description: How to configure Content Analytics using an onboarding guided confi
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-hide: yes
-hidefromtoc: yes
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 ---
 # Content Analytics guided configuration
