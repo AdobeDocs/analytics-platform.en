@@ -62,7 +62,7 @@ The following items are shown:
   * CREATE: A "create" action was performed.
   * DELETE: A "delete" action was performed.
   * EDIT: An "edit" action was performed.
-  * EMBARGO: 
+  * EMBARGO: When you restrict a request in the [Reporting Activity Manager](https://experienceleague.adobe.com/en/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests), the action is recorded in the Audit Log under EMBARGO.
   * EXPORT: An "export" action was performed.
   * ORG_CHANGE: An organization change action was performed.
   * REFRESH: A "refresh" action was performed.
