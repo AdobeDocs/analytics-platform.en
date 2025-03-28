@@ -4,13 +4,9 @@ description: Details on the specific Content Analytics components, like dimensio
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
-hide: yes
-hidefromtoc: yes
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
 ---
 # Content Analytics components
-
-{{draft-aca}}
 
 {{release-limited-testing}}
 
@@ -38,8 +34,6 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/
 | Experience Thumbnail URL | URL for the thumbnail of the experience. | Dimension | Show \| No value<br/>Most Recent \| Session |
 | Experience Horizontal Percentage Depth | Quantifiable value of the horizontal percentage depth of the experience. | Dimension<br/>Derived Field | Show \| No value<br/>Most Recent \| Session |
 | Experience Vertical Percentage Depth | Quantifiable value of the vertical percentage depth of the experience. | Dimension<br/>Derived Field | Show \| No value<br/>Most Recent \| Session |
-| Experience Horizontal Pixel Depth | Quantifiable value of the horizontal pixel depth of the experience. | Dimension<br/>Derived Field | Show \| No value<br/>Most Recent \| Session |
-| Experience Vertical Pixel Depth | Quantifiable value of the vertical pixel depth of the experience. | Dimension<br/>Derived Field | Show \| No value<br/>Most Recent \| Session |
 
 {style="table-layout:fixed"}
 
@@ -49,7 +43,6 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/
 
 | Title | Description | Type | Settings |
 |---|---|---|---|
-| Experience Readability Score  | ![AI generated](/help/assets/icons/AI.svg) Readability score for the experience. | Dimension | Show \| No value<br/>Most Recent \| Session |
 | Experience Keywords | ![AI generated](/help/assets/icons/AI.svg) Keywords for the experience. | Dimension<br>Derived Field | Show \| No value<br/>Most Recent \| Session |
 | Experience Persuasion Strategies | ![AI generated](/help/assets/icons/AI.svg)  Persuasion strategies that are present in the given experience. The possible values are: Social Identity, Social Proof, Authority, Concreteness, Foot in the Door, Overcoming Reactance, Reciprocity, Anchoring and Comparison, Social Impact, Scarcity, and Anthropomorphism. | Dimension<br/>Derived Field | Show \| No value<br/>Most Recent \| Session |
 | Experience Narratives | ![AI generated](/help/assets/icons/AI.svg) Narratives which the experience is building based on relevance from a marketer's view point. | Dimension<br/>Derived Field | Show \| No value<br/>Most Recent \| Session |
@@ -70,8 +63,8 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/
 
 | Title | Description | Type | Settings |
 |---|---|---|---|
-| Experience views | Quantifiable measure of the number of views of the experience. | Metric | Count values<br/>Decimal \| Decimal Places: 0 |
-| Experience clicks | Quantifiable measure of the number of clicks of the experience. | Metric | Count values<br/>Decimal \| Decimal Places: 0 |
+| Experience Views | Quantifiable measure of the number of views of the experience. | Metric | Count values<br/>Decimal \| Decimal Places: 0 |
+| Experience Clicks | Quantifiable measure of the number of clicks of the experience. | Metric | Count values<br/>Decimal \| Decimal Places: 0 |
 
 {style="table-layout:fixed"}
 
@@ -82,19 +75,12 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/
 |---|---|---|---|
 | Asset Source | Public accessible source URL for the asset. | Dimension | Show \| No value<br/>Most Recent \| Session |
 | Asset ID | Unique identifier of the asset. The asset binary determines the uniqueness. If the asset binary changes, the id does change. The unique id can be the URL but can also be a hash created. | Dimension | Show \| No value<br/>Most Recent \| Session |
-| Asset Name | Name of the asset. | Dimension | Show \| No value<br/>Most Recent \| Session |
-| Asset Type | Type of the asset. | Dimension | Show \| No value<br/>Most Recent \| Session |
-| Asset Thumbnail URL | URL for the thumbnail of the asset. | Dimension | Show \| No value<br/>Most Recent \| Session |
 | Asset HTML Path | Concatenated HTML path for the asset. | Dimension | Show \| No value<br/>Most Recent \| Session |
 | Asset Link URL | Nearest page anchor for the asset. | Dimension | Show \| No value<br/>Most Recent \| Session |
 | Asset Display Width | Content asset display width. | Dimension | Show \| No value<br/>Most Recent \| Session |
 | Asset Display Height | Content asset display height. | Dimension | Show \| No value<br/>Most Recent \| Session |
 | Asset Absolute Left | Content asset absolute left. | Dimension | Show \| No value<br/>Most Recent \| Session |
 | Asset Absolute Top | Content asset absolute top. | Dimension | Show \| No value<br/>Most Recent \| Session |
-| Asset Created By | Identifier for asset creation. | Dimension | Show \| No value<br/>Most Recent \| Session |
-| Asset Created Date | Asset creation date. | Dimension | Most Recent \| Session |
-| Asset Last Updated By | Identifier for asset update. | Dimension | Show \| No value<br/>Most Recent \| Session |
-| Asset Last Updated Date | Asset update date. | Dimension | Most Recent \| Session |
 
 {style="table-layout:fixed"}
 
@@ -127,8 +113,8 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/
 
 | Title | Description | Type | Settings |
 |---|---|---|---|
-| Asset views | Quantifiable measure of the number of views of the asset. | Metric | Count values<br/>Decimal \| Decimal Places: 0 |
-| Asset clicks | Quantifiable measure of the number of clicks of the asset. | Metric | Count values<br/>Decimal \| Decimal Places: 0 |
+| Asset Views | Quantifiable measure of the number of views of the asset. | Metric | Count values<br/>Decimal \| Decimal Places: 0 |
+| Asset Clicks | Quantifiable measure of the number of clicks of the asset. | Metric | Count values<br/>Decimal \| Decimal Places: 0 |
 
 {style="table-layout:fixed"}
 
@@ -150,8 +136,8 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/
 
 | Title | Description | Type | Settings |
 |---|---|---|---|
-| Asset Click-Trough Rate | Asset clicks / Asset views | Calculated metric | |
-| experience Click-Through Rate | Experience clicks / Experience views | Calculated metric | |
+| Asset Click-Trough Rate | Asset Clicks / Asset Views | Calculated metric | |
+| experience Click-Through Rate | Experience Clicks / Experience Views | Calculated metric | |
 
 {style="table-layout:fixed"}
 
