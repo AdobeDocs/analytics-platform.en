@@ -65,3 +65,4 @@ Content Analytics uses web image view data collected in event datasets in Experi
 >[Content Analytics reporting](report/report.md)
 >[Configure Content Analytics](config/configuration.md)
 >
+
