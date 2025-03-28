@@ -10,8 +10,6 @@ exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 ---
 # Content Analytics reporting overview
 
-{{draft-aca}}
-
 {{release-limited-testing}}
 
 You report, perform analysis and gain insights on Content Analytics within [Analysis Workspace](/help/analysis-workspace/home.md). A specific Workspace [template](#template) is available, so you can immediately access a pre-populated Workspace project with relevant content insights.

@@ -10,8 +10,6 @@ exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
 ---
 # Content Analytics manual configuration
 
-{{draft-aca}}
-
 {{release-limited-testing}}
 
 This article details the manual actions that are required to start or stop the data collection of a Content Analytics configuration, or to edit your Content Analytics implementation.
