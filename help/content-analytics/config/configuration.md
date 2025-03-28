@@ -4,8 +4,6 @@ description: An overview of how to configure Content Analytics
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-hide: yes
-hidefromtoc: yes
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 ---
 # Configure Content Analytics

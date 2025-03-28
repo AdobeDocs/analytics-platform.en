@@ -4,8 +4,6 @@ description: An overview of Content Analytics
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
-hide: yes
-hidefromtoc: yes
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 ---
 # Content Analytics overview
@@ -45,7 +43,7 @@ Content Analytics uses web image view data collected in event datasets in Experi
 
 
 1. When a user visits a site, [configured for Content Analytics](config/configuration.md), the Experience Platform Web SDK records impressions and interactions with content.
-1. The identity and featurization service process these interactions. That process consists of a crawler that revisits the public-facing versions of the configured URLs that define the interactions. For all of these crawled URLs, the identity service uniquely identifies the experiences and assets. And the featurization service applies AI/ML services to discover experiences and assets metadata and attributes.
+1. The identity and featurization service process these interactions. That process consists of a retrieval service that revisits the public-facing versions of the configured URLs that define the interactions. For all of these retrieved URLs, the identity service uniquely identifies the experiences and assets. And the featurization service applies AI/ML services to discover experiences and assets metadata and attributes.
 1. The results of these services ([components, attributes, and identities](/help/content-analytics/report/components.md)) are used to update the relevant specific content analytics datasets in Experience Platform.
 1. The content analytics data, together with behavioral data and other lookup data, you can use in a Customer Journey Analytics setup ([Connection](/help/connections/overview.md), [Data view](/help/data-views/data-views.md) and [Workspace](/help/analysis-workspace/home.md)). That setup provides the foundation to the unique macro-level insights on your content. <br/>You can jump start your Content Analytics reports and analysis using the [Content Analytics template](/help/content-analytics/report/report.md#template).
 
