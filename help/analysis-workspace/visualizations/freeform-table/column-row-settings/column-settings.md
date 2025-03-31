@@ -82,13 +82,11 @@ You can override the default attribution model that is configured in [Data views
 
 >[!NOTE]
 >
->Consider the following when updating a component's attribution to a non-default attribution model:
+>Consider the following when enabling a non-default attribution model on a metric:
 >
->* **When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.
+>* **When using the metric in a report with *a single dimension*:** The metric's attribution overrides the allocation model set on the dimension. For example, a metric with a "first touch" attribution overrides a "most recent" dimension allocation.
 >
->* **When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.
->
->   Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).
+>* **When using the metric in a report with *multiple dimensions*:** The metric's attribution is applied on top of the allocation model for each dimension. For example, a metric with a "first touch" attribution is applied on top of a "most recent" dimension allocation.
 >
 > For more information about allocation, see [Persistence component settings](/help/data-views/component-settings/persistence.md).
 

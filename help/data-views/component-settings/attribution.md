@@ -29,19 +29,17 @@ For example:
 
 In some reports, you might want the order attributed to Paid search. In other reports, you might want the order attributed to Social. Attribution lets you control this aspect of reporting.
 
-## Set a component's default attribution model
+## Set a component's attribution model
 
-You can set a default attribution model for a given metric by updating the metric's setting in the data view. Doing so overrides the metric's attribution model any time it's used in Analysis Workspace.
+You can change the default attribution model for a given component by updating the component's setting in the data view. Doing so overrides the component's attribution model any time it's used in Analysis Workspace.
 
 >[!NOTE]
 >
->Consider the following when enabling attribution on a metric:
+>Consider the following when enabling a non-default attribution model on a metric:
 >
->* **When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.
+>* **When using the metric in a report with *a single dimension*:** The metric's attribution overrides the allocation model set on the dimension. For example, a metric with a "first touch" attribution overrides a "most recent" dimension allocation.
 >
->* **When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.
->
->   Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).
+>* **When using the metric in a report with *multiple dimensions*:** The metric's attribution is applied on top of the allocation model for each dimension. For example, a metric with a "first touch" attribution is applied on top of a "most recent" dimension allocation.
 >
 > For more information about allocation, see [Persistence component settings](/help/data-views/component-settings/persistence.md).
 
@@ -49,7 +47,7 @@ To update a component's default attribution model:
 
 1. Go to the data view that contains the component whose default attribution model you want to update.
 
-1. Select the component, then expand the Attribution section on the right side of the screen.
+1. Select the component, then expand the **[!UICONTROL Attribution]** section on the right side of the screen.
 
    ![Data views window highlighting the Set attribution option](../assets/attribution-settings.png)
 
