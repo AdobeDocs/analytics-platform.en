@@ -151,17 +151,19 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 1. In Customer Journey Analytics, select **[!UICONTROL Connections]** from the main menu.
 1. Select **[!UICONTROL Create new connection]**.
 
-    >[!BEGINTABS]
+>[!BEGINTABS]
 
-    >[!TAB Standard] 
+>[!TAB Standard] 
 
-    ![Untitled connection settings](assets/create-conn1.png)
+![Untitled connection settings](assets/create-conn1.png)
 
-    >[!TAB B2B Edition]
-    
-    ![Untitled connection settings](assets/create-conn1-b2b.png)
+>[!TAB B2B Edition]
 
-    >[!ENDTABS]
+![Untitled connection settings](assets/create-conn1-b2b.png)
+
+>[!ENDTABS]
+
+In the **[!UICONTROL Connections]** > **[!UICONTROL Untitled connection]** screen:
 
 1. Configure the connection settings.
 
