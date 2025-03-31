@@ -34,7 +34,7 @@ Confirm that the datasets in your connection now have the Quantum Metric session
 Edit your existing data view to add the session ID as an available dimension in Customer Journey Analytics.
 
 1. Log in to [experience.adobe.com](https://experience.adobe.com).
-1. Navigate to Customer Journey Analytics, and select **[!UICONTROL Data views]** in the top menu.
+1. Navigate to Customer Journey Analytics, and select **[!UICONTROL Data views]** from **[!UICONTROL Data management]** in the top menu.
 1. Select the desired existing data view.
 1. Locate the Quantum Metric friction event field list on the left, and drag it to the metrics area in the center.
 1. In the right pane, set the [Include/Exclude values](/help/data-views/component-settings/include-exclude-values.md) setting to the desired friction events that you want to track. You can add multiple friction events to the same metric to combine them. You can also drag another copy of the friction events field to the metrics area to track other friction events as a separate metric.

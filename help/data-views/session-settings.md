@@ -26,7 +26,7 @@ Session settings definitions are non-destructive and do not alter the underlying
 
 To define the context of a session within a data view:
 
-1. Select **[!UICONTROL Data views]** in the Customer Journey Analytics UI.
+1. Select **[!UICONTROL Data views]** from **[!UICONTROL Data management]** in the main navigation of the Customer Journey Analytics UI.
 
 2. Create a new or edit an existing data view. See [Create or edit a data view](create-dataview.md) for more information.
 
