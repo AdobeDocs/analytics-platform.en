@@ -57,7 +57,7 @@ You can configure the [!UICONTROL Next or previous item] panel using these input
 | **[!UICONTROL Dimension]** | Select the dimension for which you want to explore next or previous items. |
 | **[!UICONTROL Dimension item]** | Select the specific dimension item at the center of your next / previous inquiry. |
 | **[!UICONTROL Direction]** | Specify whether you are looking for the [!UICONTROL Next] or the [!UICONTROL Previous] dimension item. |
-| **[!UICONTROL Container]** | Select the container, [!UICONTROL Session] or [!UICONTROL Person] (default), to determine the scope of your inquiry. |
+| **[!UICONTROL Container]** | Select the container, **[!UICONTROL Global Account]** [!BADGE B2B Edition]{type=Informative}, **[!UICONTROL Account]** [!BADGE B2B Edition]{type=Informative}, **[!UICONTROL Buying Group]** [!BADGE B2B Edition]{type=Informative}, **[!UICONTROL Opportunity]** [!BADGE B2B Edition]{type=Informative}, **[!UICONTROL Session]** or **[!UICONTROL Person]**, to determine the scope of your inquiry. |
 
 {style="table-layout:auto"}
 
