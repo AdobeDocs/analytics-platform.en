@@ -54,7 +54,9 @@ Opportunity, Buying Group and Person are all sibling containers of the Account c
 If you do have a B2B structure that requires you to support the concept of an account with subsidary accounts, a Global account container can be used as the parent container.
 
 
+## Report on person and account based data
 
+If you want to report on person-based containers (and person identities) and account-based containers (and account identiies), you should set up two separate connection within Customer Journey Analytics. One connection where you select Person as the Primary ID, and one connection where you select Account as the Primary ID. Customer Journey Analytics does not support person-based and account-based reporting from the same container. You can 
 
 <!--
 
