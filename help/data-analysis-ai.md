@@ -39,17 +39,13 @@ Using the Data Insights Agent to answer data-centric questions in Analysis Works
 | **Workspace actions / Capabilities**| The Data Insights Agent cannot take actions for a user in Workspace aside from building and updating visualizations. For example, it cannot do any of the following:<ul><li>Contextual action UI buttons (add to chart, new panel, new table)</li><li>Share</li><li>Export</li><li>Download</li><li>Manage user preferences</li><li>Curate</li><li>Manage data view</li><li>Analytics Dashboards app</li><li>Attribution</li></ul> |
 | **Unsupported visualization types** | <ul><li>Flow</li><li>Fallout</li><li>Cohort Table</li><li>Area, Area Stacked</li><li>Bar Stacked</li><li>Bullet</li><li>Combo</li><li>Histogram</li><li>Horizontal Bar, Horizontal Bar Stacked</li><li>Key Metric Summary</li><li>Scatter</li><li>Summary Change</li><li>Text</li><li>Treemap</li><li>Venn</li></ul> | 
 
-<!---## Feature access in the Customer Journey Analytics UI
+## Manage access to the Data Insights Agent in Customer Journey Analytics
 
-[Do we even need this section for the Alpha?]
+The following parameters govern access to the Data Insights Agent in Customer Journey Analytics:
 
-The following parameters govern access to Data visualization in AI Assistant:
+* **Solution access**: the Data Insights Agent is available for Customer Journey Analytics Prime and Ultimate customers. It is not available in Adobe Analytics. 
 
-* **Solution access**: Data visualization in AI Assistant is available for Customer Journey Analytics Prime and Ultimate customers. It is not available in Adobe Analytics. 
-
-It is also available in Adobe Experience Platform, Adobe Journey Optimizer, Adobe Real-Time CDP and additional Experience Platform apps.
-
-* **Contractual access**: If you are not able to use AI Assistant, please contact your organization's administrator or Adobe Account Representative. Before your organization can use Data visualization in AI Assistant, your must agree to certain GenAI-related legal terms.
+* **Contractual access**: If you are not able to use the Data Insights Agent in the AI Assistant, please contact your organization's administrator or Adobe Account Representative. Before your organization can use the Data Insights Agent in the AI Assistant, you must agree to certain GenAI-related legal terms.
 
 * **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL AI Assistant: Data visualization]** permission determines access to this tool. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console]:
    1. Navigate to **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
@@ -62,9 +58,9 @@ It is also available in Adobe Experience Platform, Adobe Journey Optimizer, Adob
 
    1. Select **[!UICONTROL Save]** to save the permissions.
 
-See [Access control](/help/technotes/access-control.md#access-control) for more information.--->
+See [Access control](/help/technotes/access-control.md#access-control) for more information.
 
-## Access and the Data Insights Agent in the AI Assistant
+## Access the Data Insights Agent in the AI Assistant
 
 1. Go to [experience.adobe.com](https://experience.adobe.com/) and login with your Adobe ID.
 
