@@ -6,8 +6,8 @@ feature: Content Analytics
 hide: yes
 hidefromtoc: yes
 role: Admin
+exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
 ---
-
 # Content Analytics data collection
 
 This article explains in detail how content Analytics collects data
