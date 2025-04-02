@@ -70,7 +70,7 @@ You use the Definition builder to construct your filter definition. In that cons
 You can configure the type and scope of your definition: 
 
 1. To specify the type of your definition, specify whether you want the build an include or exclude definition. Select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Options]** and from the dropdown toggle **[!UICONTROL Include]** or **[!UICONTROL Exclude]**.
-1. To specify the scope of your definition, select from the **[!UICONTROL Include]** or **[!UICONTROL Exclude]** dropdown whether you want the scope of the definition to be **[!UICONTROL Event]**, **[!UICONTROL Session]**, **[!UICONTROL Person]**, [!BADGE B2B Edition]{type=Informative} **[!UICONTROL Global Account]**, [!BADGE B2B Edition]{type=Informative} **[!UICONTROL Account]**, [!BADGE B2B Edition]{type=Informative} **[!UICONTROL Opportunity]**, or [!BADGE B2B Edition]{type=Informative} **[!UICONTROL Buying Group]**,
+1. To specify the scope of your definition, select from the **[!UICONTROL Include]** or **[!UICONTROL Exclude]** dropdown whether you want the scope of the definition to be **[!UICONTROL Event]**, **[!UICONTROL Session]**, **[!UICONTROL Person]**, **[!UICONTROL Global Account]** [!BADGE B2B Edition]{type=Informative}, **[!UICONTROL Account]** [!BADGE B2B Edition]{type=Informative}, **[!UICONTROL Opportunity]** [!BADGE B2B Edition]{type=Informative}, or  **[!UICONTROL Buying Group]** [!BADGE B2B Edition]{type=Informative}
 
 You can always change these settings later.
 
