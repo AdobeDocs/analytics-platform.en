@@ -1,5 +1,5 @@
 ---
-title: Data collection in Content Analytics
+title: Content Analytics data collection
 description: An overview of how data is collected in Content Analytics
 solution: Customer Journey Analytics
 feature: Content Analytics
@@ -8,9 +8,9 @@ hidefromtoc: yes
 role: Admin
 ---
 
-# Data collection in Content Analytics
+# Content Analytics data collection
 
-This article explains in detail how data is collected for Content Analytics.
+This article explains in detail how content Analytics collects data
 
 
 ## Definitions
@@ -76,7 +76,7 @@ Content Analytics events are sent when the following two conditions occur:
   * An asset view or click is recorded.
   * An experience view or click is recorded.
 
-* Trigger to send an event is fired, which occurs when:
+* A trigger to send an event is fired, which occurs when:
 
   * Web SDK or AppMeasurements sends an event.
   * Visibility changes to hidden, for example:
@@ -91,9 +91,8 @@ Content Analytics events are sent when the following two conditions occur:
 
 ## Schemas
 
-Content Analytics data is collected in datasets in Experience Platform, based on specific Content Analytics schemas. Reference schemas are publicly available and are used in a default implementation of Content Analytics
+Content Analytics data is collected in datasets in Experience Platform, based on specific Content Analytics schemas. Reference schemas are publicly available and are used in a default implementation of Content Analytics.
 
-* [Digital Asset](https://github.com/adobe/xdm/blob/master/components/classes/digital-asset.schema.json)
-* [Digital Experience](https://github.com/adobe/xdm/blob/master/components/classes/digital-experience.schema.json)
-* [Experience Event Content](https://github.com/adobe/xdm/blob/master/components/fieldgroups/experience-event/experienceevent-content.schema.json)
-
+* [Digital Asset schema](https://github.com/adobe/xdm/blob/master/components/classes/digital-asset.schema.json)
+* [Digital Experience schema](https://github.com/adobe/xdm/blob/master/components/classes/digital-experience.schema.json)
+* [Experience Event Content schema](https://github.com/adobe/xdm/blob/master/components/fieldgroups/experience-event/experienceevent-content.schema.json)
