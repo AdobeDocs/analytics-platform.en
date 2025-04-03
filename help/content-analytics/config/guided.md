@@ -243,6 +243,11 @@ In this section, you configure how to collect your content analytics data.
 >title="Data collection"
 >abstract="You can edit the settings for assets in the Adobe Content Analytics extension in the Tags property that is associated with the current configuration."
 
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_tags_disabled_description "
+>title="Tags property disabled"
+>abstract="Content Analytics extension is already active."
+
 <!-- markdownlint-enable MD034 -->
 
 #### New configuration {#new-configuration}
@@ -271,6 +276,11 @@ In a new configuration, you need to define whether you want to use an existing T
 * Indicate which assets should be included or excluded when collecting data for Content Analytics.
 
   * Specify a Regular expression string for **[!UICONTROL Assets to include / exclude]**. For example: `/^(?!.*(logo\.jpg|\.svg)).*$/` to exclude all logo JPEG and SVG images from Content Analytics. Ensure you escape regular expressions, using `/`.
+
+>[!IMPORTANT]
+>
+>In case you have an existing Web SDK implementation using Javascript, and not using Tags, you have to manually remove the automatic included Web SDK extension from the newly created Tags property.
+
 
 
 #### Existing configuration {#existing-configuration}

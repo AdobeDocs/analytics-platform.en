@@ -28,7 +28,7 @@ The configuration of Content Analytics consists of the following steps:
 Before you configure Content Analytics, ensure that the following prerequisites are met:
 
 * You have allow-listed the User Agent and IP address for the featurization service that is used in Content Analytics. The User Agent string to configure is: <code>AdobeFeaturization/1.0</code>.
-* If you implement the [Web SDK using Javascript](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library){target="_blank"}, ensure you are using the default name <code>alloy</code> for the Javascript library.
+* If you have implemented the [Web SDK using Javascript](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library){target="_blank"} for regular behavioral data collection, ensure you are using the default name <code>alloy</code> for the Javascript library.
 * You have a Customer Journey Analytics Product Administrator role, with the additional permissions to manage connections and to manage data views. 
 * You must have [permissions for data collection](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"}. These permission consist of:
   * [Experience Platform permissions](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
