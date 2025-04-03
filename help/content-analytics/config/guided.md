@@ -243,6 +243,11 @@ In this section, you configure how to collect your content analytics data.
 >title="Data collection"
 >abstract="You can edit the settings for assets in the Adobe Content Analytics extension in the Tags property that is associated with the current configuration."
 
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_tags_disabled_description "
+>title="Tags property disabled"
+>abstract="Content Analytics extension is already active."
+
 <!-- markdownlint-enable MD034 -->
 
 #### New configuration {#new-configuration}
