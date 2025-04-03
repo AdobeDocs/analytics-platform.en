@@ -277,6 +277,11 @@ In a new configuration, you need to define whether you want to use an existing T
 
   * Specify a Regular expression string for **[!UICONTROL Assets to include / exclude]**. For example: `/^(?!.*(logo\.jpg|\.svg)).*$/` to exclude all logo JPEG and SVG images from Content Analytics. Ensure you escape regular expressions, using `/`.
 
+>[!IMPORTANT]
+>
+>In case you have an existing Web SDK implementation using Javascript, and not using Tags, you have to manually remove the automatic included Web SDK extension from the newly created Tags property.
+
+
 
 #### Existing configuration {#existing-configuration}
 
