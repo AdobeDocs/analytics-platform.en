@@ -81,15 +81,15 @@ An experience click is recorded when:
 
 Triggers to fire a regular or specific (behaviorial) event in the context of Content Analytics are:
 
-  * Web SDK or AppMeasurements sends an event.
-  * Visibility changes to hidden, for example:
-    * Page unloads
-    * Switch tab
-    * Minimize browser
-    * Close browser
-    * Lock screen
-  * The URL changes, which results in a modified relevant URL.
-  * An asset views exceeds the batch limit of 32.
+* Web SDK or AppMeasurements sends an event.
+* Visibility changes to hidden, for example:
+  * Page unloads
+  * Switch tab
+  * Minimize browser
+  * Close browser
+  * Lock screen
+* The URL changes, which results in a modified relevant URL.
+* An asset views exceeds the batch limit of 32.
 
 
 ## Schemas
