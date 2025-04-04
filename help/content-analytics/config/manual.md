@@ -76,8 +76,8 @@ If the function is not present or no value is returned from the function, the va
 ### Example
 
 ```
-function adobe.getContentExperienceVersion() {
+window.adobe = window.adobe || {};
+window.adobe.getContentExperienceVersion = () => {
   return "1.0";
-}
-
+};
 ```
