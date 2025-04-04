@@ -87,16 +87,38 @@ Consider the following when using the @ symbol to include people in a comment:
 
 * You can include anyone in your organization in a comment, but this does not automatically grant them access to the project. Only people who already have access to the project can access it. 
 
-## Copy a link to a comment
+## Copy the link to a comment
 
-You can copy a link to a comment
+You can copy the link to a comment and share the link with others. Only people who already have access to the project can access it with the link.  
+
+To copy the link to a comment:
+
+1. With the project open in Analysis Workspace, select the comments area icon ![comments area icon](assets/comments-area-icon.png) in the right rail of Analysis Workspace. 
+
+1. Select the more icon ![comment-more-icon](assets/comment-more-icon.png) next to the comment whose link you want to copy, then select **[!UICONTROL Copy link]**. 
+
+   The link is copied to your system clipboard. You can paste the link in an email or other type of message.
 
 ## Copy the text of a comment
+
+You can copy the body text a comment and share it with others. 
+
+To copy the body text of a comment:
+
+1. With the project open in Analysis Workspace, select the comments area icon ![comments area icon](assets/comments-area-icon.png) in the right rail of Analysis Workspace. 
+
+1. Select the more icon ![comment-more-icon](assets/comment-more-icon.png) next to the comment that contains the text you want to copy, then select **[!UICONTROL Copy body text]**. 
+
+   The body text of the comment is copied to your system clipboard. 
 
 
 ## Reply to a comment
 
 Reply vs. Quote reply
+
+## Like a comment
+
+
 
 ## Delete a comment
 
@@ -134,7 +156,7 @@ If a comment is available in the comments area in the right rail but it does not
 
 1. With the project open in Analysis Workspace, select the comments area icon ![comments area icon](assets/comments-area-icon.png) in the right rail of Analysis Workspace. 
 
-1. Select the more icon ![comment-more-icon](assets/comment-more-icon.png) next to the comment for which you want to place a badge, then select **[!UICONTROL Place on project]**. 
+1. Select the more icon ![comment-more-icon](assets/comment-more-icon.png) next to the comment for which you want to place a badge, then select **[!UICONTROL Place on project]**. <!--should this be called "Place a badge" or "Place badge" instead? -->
 
 1. Select the area of the project where you want to place the badge for the existing comment. 
 
