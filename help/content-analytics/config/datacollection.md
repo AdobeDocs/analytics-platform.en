@@ -52,7 +52,7 @@ Content Analytics events are collected as a sequence of:
 1. [A recorded view or click](#recorded-view-or-click).
 1. [A regular or specific (behaviorial) event](#regular-or-specific-behaviorial-event). 
 
-Content Analytics does collect data this way to reflect that sequence, instead of collecting a view or click separately from collecting the event immediately following that view or click. This way of collecting content analytics data also reduces the amount of data collected. collection of data.
+Content Analytics does collect data this way to reflect that sequence, instead of collecting a view or click separately from collecting the event immediately following that view or click. This way of collecting content analytics data also reduces the amount of data collected.
 
 ### Recorded view or click 
 
@@ -65,7 +65,7 @@ An asset view is recorded when:
 An asset click is recorded when:
 
 * The asset has been viewed. 
-* The asset has not been excluded per ACA extension configuration.
+* The asset has not been excluded per Content Analytics  extension configuration.
 * A click directly on the asset, which is a link, that leads to another page.
 
 An experience view is recorded when:
@@ -89,7 +89,7 @@ Triggers to fire a regular or specific (behaviorial) event in the context of Con
   * Close browser
   * Lock screen
 * The URL changes, which results in a modified relevant URL.
-* An asset views exceeds the batch limit of 32.
+* Asset views recorded and ready to be sent exceed the number of 32.
 
 
 ## Schemas
