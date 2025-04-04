@@ -10,6 +10,8 @@ exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
 ---
 # Content Analytics data collection
 
+{{release-limited-testing}}
+
 This article explains in detail how content Analytics collects data
 
 
@@ -17,8 +19,8 @@ This article explains in detail how content Analytics collects data
 
 The following definitions are used in the context of this article:
 
-* **Experience**: An experience is defined as the text content on a whole web page. For data collection, Content Analytics records the Experience ID. Content Analytics does not record the text on the page.
-* **Experience ID**: A unique combination of relevant URL and experience version.  
+* **Experience**: An experience is defined as the text content on a whole web page. For data collection, Content Analytics records the Experience ID which is based on the page url. Later, the text on the page is captured via the retrieval service.
+* **Experience ID**: A unique combination of relevant URL (base URL plus any parameters that drive content on the page) and [experience version](manual.md#versioning).
   * You specify, as part of the [configuration](configuration.md), which parameters are relevant for any given full URL. 
   * You can define the [version identifier](manual.md#versioning) that is used.
 * **Asset**: An image. Content Analytics records the asset URL.
@@ -58,7 +60,7 @@ Content Analytics does collect data this way to reflect that sequence, instead o
 
 An asset view is recorded when:
 
-* The asset has not been excluded per ACA extension configuration.
+* The asset has not been excluded per Content Analytics extension configuration.
 * The asset is 75% in view.
 * That asset has not already been recorded for this page.
 
@@ -94,7 +96,7 @@ Triggers to fire a regular or specific (behaviorial) event in the context of Con
 
 ## Schemas
 
-Content Analytics data is collected in datasets in Experience Platform, based on specific Content Analytics schemas. Reference schemas are publicly available and are used in a default implementation of Content Analytics.
+Content Analytics data is collected in datasets in Experience Platform, based on specific Content Analytics schemas. Reference schemas are publicly available:
 
 * [Digital Asset schema](https://github.com/adobe/xdm/blob/master/components/classes/digital-asset.schema.json)
 * [Digital Experience schema](https://github.com/adobe/xdm/blob/master/components/classes/digital-experience.schema.json)
