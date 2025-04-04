@@ -277,11 +277,11 @@ In a new configuration, you need to define whether you want to use an existing T
 
 * Indicate which pages should be included or excluded when collecting data for Content Analytics. 
   
-  Specify a Regular expression string for **[!UICONTROL Pages to include / exclude]**. For example: `^(?!.*documentation).*` to exclude all documentation pages from Content Analytics.
+  Specify a Regular expression string for **[!UICONTROL Pages to include / exclude]**. <br/>For example: `^(?!.*documentation).*` to exclude all documentation pages from Content Analytics.
 
 * Indicate which assets should be included or excluded when collecting data for Content Analytics. 
   
-  Specify a Regular expression string for **[!UICONTROL Assets to include / exclude]**. For example: `^(?!.*(logo\.jpg|\.svg)).*$` to exclude all logo JPEG and SVG images from Content Analytics.
+  Specify a Regular expression string for **[!UICONTROL Assets to include / exclude]**. <br/>For example: `^(?!.*(logo\.jpg|\.svg)).*$` to exclude all logo JPEG and SVG images from Content Analytics.
 
 >[!IMPORTANT]
 >
