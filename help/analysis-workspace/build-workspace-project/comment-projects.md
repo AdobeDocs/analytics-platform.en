@@ -87,6 +87,24 @@ Consider the following when using the @ symbol to include people in a comment:
 
 * You can include anyone in your organization in a comment, but this does not automatically grant them access to the project. Only people who already have access to the project can access it. 
 
+## Reply to a comment
+
+1. With the project open in Analysis Workspace, select the comments area icon ![comments area icon](assets/comments-area-icon.png) in the right rail of Analysis Workspace. 
+
+1. Select **[!UICONTROL Reply]** next to the comment you want to reply to.
+
+   Or
+   
+   If you want your reply to include the text of the comment you are replying to, with the original text wrapped in a quote tag, select the 3-dot icon next to the specific comment or reply that you want to reply to, then select **[!UICONTROL Quote reply]**. A quote reply is a good way to clearly indicate the comment or reply your comment referrs to.
+
+1. In the **[!UICONTROL New comment]** field, specify your comment. 
+
+   Comments can be up to 15,000 characters and can include basic markup, hyperlinks, bulleted and numbered lists, and emojis.
+
+1. (Optional) Notify another person about your comment by typing the @ symbol followed by their name. For more information about using the @ symbol to notify others, see [Include others in a comment](#include-others-in-a-comment).
+
+1. Select **[!UICONTROL Submit]**.
+
 ## Copy the link to a comment
 
 You can copy the link to a comment and share the link with others. Only people who already have access to the project can access it with the link.  
@@ -111,14 +129,11 @@ To copy the body text of a comment:
 
    The body text of the comment is copied to your system clipboard. 
 
-
-## Reply to a comment
-
-Reply vs. Quote reply
-
 ## Like a comment
 
+1. With the project open in Analysis Workspace, select the comments area icon ![comments area icon](assets/comments-area-icon.png) in the right rail of Analysis Workspace. 
 
+1. Select **[!UICONTROL Like]** beneath the comment you want to endorse.
 
 ## Delete a comment
 
