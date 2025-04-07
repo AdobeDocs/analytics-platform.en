@@ -24,7 +24,7 @@ All comments made in an Analysis Workspace project are visible in the comments a
 
 ### View comment badges in a project
 
-Comments that are made on a specific area of the project have a **comment badge** ![comment badge](assets/comment-indicator.png) that displays over the area of the project that the comment pertains to. Select a badge to view the comment. After selecting the badge, you can select the comment itself to highlight the comment in the comments area in the right rail.
+Comments that are made [on a specific area of the project](#comment-on-a-specific-area-of-the-project) have a **comment badge** ![comment badge](assets/comment-indicator.png) that displays over the area of the project that the comment pertains to. Select a badge to view the comment. After selecting the badge, you can select the comment itself to highlight the comment in the comments area in the right rail.
 
 Numbers display on each badge in a project and are ordered in the order they were created. If multiple comments are placed in the same area of a project, the badge shows 3 dots ![comment badge multiple](assets/comment-indicator-multiple.png). Select the 3-dot badge to reveal all comments in that area.
 
@@ -58,8 +58,7 @@ To comment on a specific area of the project (such as a metric value in a freefo
 
 1. Select **[!UICONTROL Submit]**.
 
-   A **comment badge** ![comment badge](assets/comment-indicator.png) is placed in the area of the Workspace project where you added the comment. The comment also appears at the top of the comments area in the right rail. 
-  
+   A **comment badge** ![comment badge](assets/comment-indicator.png) is placed in the area of the Workspace project where you added the comment, as described in [View comment badges in a project](#view-comment-badges-in-a-project). The comment also appears at the top of the comments area in the right rail. 
 
 ### Add a general comment about the project
 
@@ -75,7 +74,7 @@ To add comments to a project in Analysis Workspace:
 
 1. Select **[!UICONTROL Submit]**.
 
-   The comment appears at the top of the comments area. 
+   The comment appears at the top of the comments area, as described in [View comments in the comments area](#view-comments-in-the-comments-area). 
 
 ## Include others in a comment
 
