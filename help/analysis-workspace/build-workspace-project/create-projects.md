@@ -59,6 +59,15 @@ Now that you have created a Blank Workspace project, ensure you are familiar wit
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_project_commenting"
+>title="Allow commenting"
+>abstract="When enabled, a comments area is available in the right rail of the project in Analysis Workspace."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Project settings provides project-level information on the currently active project.
 
@@ -77,6 +86,7 @@ Settings include:
 | Show annotations | Specify whether annotations are shown for this project or not. |
 |  [Project color palette](/help/analysis-workspace/build-workspace-project/color-palettes.md)  | You can change the categorical color palette used in Workspace, by choosing from out-of-the-box palettes that have been optimized for color blindness, or by specifying your custom palette. This feature affects many things in Workspace, including most visualizations.  |
 | [View Density](/help/analysis-workspace/build-workspace-project/view-density.md) | Lets you see more data on the screen by reducing the vertical padding of the left panel, freeform tables and cohort tables. |
+| Allow commenting | When this option is enabled, a comments area is available in the right rail of the project in Analysis Workspace. For more information, see [Add and manage comments in projects](/help/analysis-workspace/build-workspace-project/comment-projects.md). |
 
 
 
