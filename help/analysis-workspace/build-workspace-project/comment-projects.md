@@ -24,7 +24,7 @@ All comments made in an Analysis Workspace project are visible in the comments a
 
 ### View comment badges in a project
 
-Comments that are made on a specific area of the project have a **comment badge** ![comment badge](assets/comment-indicator.png) that displays over the area of the project that the comment pertains to. You can view the comment either by selecting the badge or [viewing the comments area](#view-the-comments-area).
+Comments that are made on a specific area of the project have a **comment badge** ![comment badge](assets/comment-indicator.png) that displays over the area of the project that the comment pertains to. Select a badge to view the comment. After selecting the badge, you can select the comment itself to highlight the comment in the comments area in the right rail.
 
 Numbers display on each badge in a project and are ordered in the order they were created. If multiple comments are placed in the same area of a project, the badge shows 3 dots ![comment badge multiple](assets/comment-indicator-multiple.png). Select the 3-dot badge to reveal all comments in that area.
 
@@ -192,3 +192,6 @@ You can move a comment badge that is already placed for an existing comment.
 1. Right-click the badge, then select **[!UICONTROL Move placement]**.
 
 1. Select the area of the project where you want to place the badge. 
+
+<!-- add section about adding images to comments. will be available at GA -->
+
