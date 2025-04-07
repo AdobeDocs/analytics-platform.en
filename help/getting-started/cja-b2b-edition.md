@@ -15,7 +15,7 @@ badgePremium: label="B2B Edition"
 
 >[!INFO]
 >
->In this documentation specific B2B functionality, only available with the additional Customer Journey Analytics B2B Edition add-on package, is marked with [!BADGE B2B Edition]{type=Informative}.
+>In this documentation, a specific B2B article or functionality, only available with the additional Customer Journey Analytics B2B Edition add-on package, is marked with [!BADGE B2B Edition]{type=Informative}.
 
 
 Where Adobe Analytics began as a web and digital analytics tool for marketers, Customer Journey Analytics expanded the scope of analysis to include multi-channel, offline, and call center data. The primary purpose of both Adobe Analytics and Customer Journey Analytics is to provide a Business to Consumer (B2C) company with the tools needed to analyze and optimize the marketing efforts and experience for customers.
