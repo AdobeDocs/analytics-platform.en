@@ -192,5 +192,5 @@ You can move a comment badge that is already placed for an existing comment.
 
 1. Select the area of the project where you want to place the badge. 
 
-<!-- add section about adding images to comments. will be available at GA -->
+<!-- add section about adding images to comments. will be available at GA. Include that "you can have a maximum of 5 images per comment, and each image can be up to 2 MB." -->
 
