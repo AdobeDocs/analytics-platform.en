@@ -10,13 +10,17 @@ Comments in Analysis Workspace allow you to share insights and ask questions wit
 
 ## View comments
 
-### View the comments area
+### View comments in the comments area
 
 All comments made in an Analysis Workspace project are visible in the comments area in the right rail. 
 
 1. With the project open in Analysis Workspace, select the comments area icon in the right rail of Analysis Workspace. 
 
    ![Comments area closed](assets/comments-area-closed.png)
+
+   Each comment shows a time stamp of the day the comment was posted. If the comment was posted on the current day, the time of day is shown. Mouse over the day or time to show the full date and time the comment was posted.
+
+1. (Optional) To search the comments area, select the search icon ![search icon](assets/comments-search-icon.png), then type a word or phrase. The comments area is filtered to contain only those comments that include that word or phrase.
 
 ### View comment badges in a project
 
@@ -77,7 +81,7 @@ To add comments to a project in Analysis Workspace:
 
 The comment feature in Analysis Workspace makes it easier to collaborate with others. To include another person in your comment:
 
-1. Type the @ symbol, then begin typing the name of the person you want to include.
+1. Type the @ symbol, then begin typing the first name, last name, or email address of the person you want to include.
 
 1. Select the person's name when it appears in the drop-down menu.
 
@@ -178,3 +182,13 @@ If a comment is available in the comments area in the right rail but it does not
    A **comment badge** ![comment badge](assets/comment-indicator.png) is placed in the area of the Workspace project you selected. The comment also appears at the top of the comments area in the right rail.
 
    See [View comment badges in a project](#view-comment-badges-in-a-project) for more information. 
+
+## Move a badge for an existing comment
+
+You can move a comment badge that is already placed for an existing comment. 
+
+1. With the project open in Analysis Workspace, locate the badge for the comment that you want to move.
+
+1. Right-click the badge, then select **[!UICONTROL Move placement]**.
+
+1. Select the area of the project where you want to place the badge. 
