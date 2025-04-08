@@ -229,7 +229,7 @@ Use the following information to choose the visualization that best meets your n
 
 >[!AVAILABILITY]
 >
->The functionality described in this article, and any other article or functionality badged with [!BADGE B2B Edition]{type=Informative}.  is in the Limited Testing phase of release and might not be available yet in your environment. <br/>Also, [!BADGE B2B Edition]{type=Informative url="<https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b-edition>" newtab=true tooltip="Customer Journey Analytics B2B Edition"} functionalities and documentation of [!BADGE B2B Edition]{type=Informative} functionalities are subject to change and no legal obligations can be derived from it.<br/>This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md). 
+>The functionality described in this article, and any other article or functionality badged with [!BADGE B2B Edition]{type=Informative}.  is in the Limited Testing phase of release and might not be available yet in your environment. <br/>Also, [!BADGE B2B Edition]{type=Informative} functionalities and documentation of [!BADGE B2B Edition]{type=Informative} functionalities are subject to change and no legal obligations can be derived from it.<br/>This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md). 
 >
 
 
