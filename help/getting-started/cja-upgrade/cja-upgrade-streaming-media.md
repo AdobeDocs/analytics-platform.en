@@ -41,7 +41,7 @@ As you go through the steps to upgrade from Adobe Analytics to Customer Journey 
 
 * When creating a data view for Customer Journey Analytics, include the required schema fields for the Streaming Media Collection.
 
-  Make sure you map these schema fieldds to the correct values in the XDM object.
+  Make sure you map these schema fields to the correct values in the XDM object.
 
   For more information about the required fields, see [Create a data view in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md) in the Streaming Media Collection Guide.
 
