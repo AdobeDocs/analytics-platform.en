@@ -21,6 +21,10 @@ These required standard components are added to each data view by default. They 
 | Component Name | Dimension or Metric | Notes |
 | --- | --- | --- |
 | [!UICONTROL People] | Metric | Based on the person ID specified in a [!UICONTROL Connection]. |
+| [!UICONTROL Accounts] | Metric | Based on the Account ID specified in a [!UICONTROL Connection]. |
+| [!UICONTROL Global Accounts] | Metric | Based on the Global Accounts ID specified in the [!UICONTROL Connection]. |
+| [!UICONTROL Opportunity] | Metric | The opportunities, based on the Opportunity ID specified in the [!UICONTROL Connection]. |
+| [!UICONTROL Buying Group] | Metric | The buying groups, based on the Buying group ID specified in the [!UICONTROL Connection]. | 
 | [!UICONTROL Sessions] | Metric | Based on the data view's session settings. |
 | [!UICONTROL Events] | Metric | The number of rows from all event datasets in a [!UICONTROL Connection]. |
 | [!UICONTROL Seconds] | Dimension | The second that a given event happened (rounded down). The first dimension item is the first second in the date range, and the last dimension item is the last second in the date range. |
@@ -55,9 +59,13 @@ Optional Standard components are available under **[!UICONTROL Data views]** > *
 | [!UICONTROL Return Sessions] | Metric | The number of sessions that were not a person's first-time session. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
 | [!UICONTROL Person ID] | Dimension | Each dataset schema defined in the Experience Platform can have its own set of one or more identities defined and associated with an Identity Namespace. Any of these identities can be used as the Person ID. Examples include Cookie ID, Stitched ID, User ID, Tracking Code, and so on. The [!UICONTROL Person ID] dimension is the foundation of combining datasets and identifying unique persons in Customer Journey Analytics.<p>Possible use cases include:<ul><li>Creating a filter on a specific person ID value to filter everything down to that user's behavior.</li><li>Debugging: making sure that the data for a specific cookie ID (or a specific customer ID) is there.</li><li>Identifying the users who called in to a call center.</li></ul>  |
 | [!UICONTROL Person ID namespace] | Dimension | Which type of ID the [!UICONTROL Person ID] consists of. Examples are: `email address`, `cookie ID`, `Analytics ID` |
+| [!BADGE B2B Edition]{type=Informative}<br/>[!UICONTROL Global Account ID] | Dimension | The [!UICONTROL Global Account ID], when you use the Global Account container in your connection. |
+| [!BADGE B2B Edition]{type=Informative}<br/>[!UICONTROL Account ID ] | Dimension | The [!UICONTROL Account ID], when you use the  Account container in your connection. |
+| [!BADGE B2B Edition]{type=Informative}<br/>[!UICONTROL Opportunity ID] | Dimension | The [!UICONTROL Opportunity ID], when you use the Opportunity container in your connection.  |
+| [!BADGE B2B Edition]{type=Informative}<br/>[!UICONTROL Buying Group ID] |  Dimension | The [!UICONTROL Buying Group ID], when you use the Buying group container in your connection. |
 | [!UICONTROL Quarter of Year] | Time-parting dimension | Q1, Q2, Q3, Q4 |
 | [!UICONTROL Repeat session] | Metric | The number of sessions that were not a person's first-ever session. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
-| [!UICONTROL Session Type] | Dimension | This dimension has two values: 1) [!UICONTROL First-Time] and 2) Returning. The [!UICONTROL First-time] line item includes all behavior (metrics against this dimension) from a session that has been determined to be a person's defined first session. Everything else is included in the [!UICONTROL Returning] line item (assuming everything belongs to a session). Where metrics are not part of any session, they would fall into the 'Not applicable' bucket for this dimension. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
+| [!UICONTROL Session Type] | Dimension | This dimension has two values: 1. [!UICONTROL First-Time] and 2. Returning. The [!UICONTROL First-time] line item includes all behavior (metrics against this dimension) from a session that has been determined to be a person's defined first session. Everything else is included in the [!UICONTROL Returning] line item (assuming everything belongs to a session). Where metrics are not part of any session, they would fall into the 'Not applicable' bucket for this dimension. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
 | [!UICONTROL Time Spent per Event] | Dimension | Buckets the [!UICONTROL Time Spent] metric into [!UICONTROL Event] buckets. |
 | [!UICONTROL Time Spent per Session] | Dimension | Buckets the [!UICONTROL Time Spent] metric into [!UICONTROL Session] buckets. |
 | [!UICONTROL Time Spent per Person] | Dimension | Buckets the [!UICONTROL Time Spent] metric into [!UICONTROL Person] buckets. |
