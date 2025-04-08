@@ -7,7 +7,7 @@ role: User, Admin
 hide: yes
 hidefromtoc: yes
 badgePremium: label="B2B Edition"
-
+exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
 ---
 # B2B Edition concepts and features
 
@@ -68,4 +68,4 @@ If a record dataset is matched by field, for example Marketing List Member, the 
 
 ## Report on person and account based data
 
-If you want to report on person-based containers (and person identities) and account-based containers (and account identiies), you should set up two separate connection within Customer Journey Analytics. One connection where you select Person as the Primary ID, and one connection where you select Account as the Primary ID. Customer Journey Analytics does not support person-based and account-based reporting from the same container. You can 
+If you want to report on person-based containers (and person identities) and account-based containers (and account identiies), you should set up two separate connection within Customer Journey Analytics. One connection where you select Person as the Primary ID, and one connection where you select Account as the Primary ID. Customer Journey Analytics does not support person-based and account-based reporting from the same container. You can

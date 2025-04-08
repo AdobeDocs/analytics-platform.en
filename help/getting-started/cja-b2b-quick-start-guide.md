@@ -7,7 +7,7 @@ role: User, Admin
 hide: yes
 hidefromtoc: yes
 badgePremium: label="B2B Edition"
-
+exl-id: ff8d419e-5cc6-4e1b-8cf8-9dbaa8054179
 ---
 # B2B Edition quick start guide
 
