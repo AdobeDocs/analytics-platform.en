@@ -11,38 +11,36 @@ badgePremium: label="B2B Edition"
 ---
 # Customer Journey Analytics B2B Edition
 
-{{release-limited-testing}}
+{{b2b-edition}}
 
->[!INFO]
->
->In this documentation, a specific B2B article or functionality, only available with the additional Customer Journey Analytics B2B Edition add-on package, is marked with [!BADGE B2B Edition]{type=Informative}.
+{{draft-b2b}}
 
+Adobe Analytics started as a web and digital analytics tool for marketers, while Customer Journey Analytics broadened the scope to include multi-channel, offline, and cross-platform data.  Both tools help Business to Consumer (B2C) companies analyze and optimize their marketing efforts and customer experiences.
 
-Where Adobe Analytics began as a web and digital analytics tool for marketers, Customer Journey Analytics expanded the scope of analysis to include multi-channel, offline, and call center data. The primary purpose of both Adobe Analytics and Customer Journey Analytics is to provide a Business to Consumer (B2C) company with the tools needed to analyze and optimize the marketing efforts and experience for customers.
-
-For businesses that sell to other businesses (B2B) the purchase journey includes multiple people, multiple touch points, and key stages that lead to a sale. A typical B2B company needs to see all these data points in a single journey to analyze and optimize the marketing efforts and experience for business accounts.
+In B2B (business-to-business) sales, the purchase journey involves multiple parties, online and offline touchpoints, and key stages before closing a deal. B2B companies need to track all these interactions in a unified journey view to effectively analyze and optimize their marketing efforts and account experiences.
 
 Typical B2B sales characteristics are:
 
-* large transaction amounts, 
-* long sales cycle, 
-* multiple decision makers or buying groups, 
-* more educated buyers, and 
-* an increased importance on retention and upsell. 
-  
-B2B marketing looks to maximize each touch point and reduce the time to purchase. More emphasis on in-person and offline interactions plus the focus on buying groups means that traditional digital person-based data is insufficient. Additional data is often collected through CRM systems and other point solutions. Traditional B2C marketing concepts such as ads, campaigns, channels, and visitors still play an important role in the B2B marketing story.
+* large transaction amounts
+* long sales cycles
+* multiple decision makers and influencers, usually forming a "buying group"
+* more educated buyers
+* increased importance on customer retention and upsell
+* millennial B2B buyers expect a more seamless "digital consumer" like buying experience
 
-B2B sales and marketing are undergoing a major shift from traditional lead generation funnels to a full customer lifecycle and buying group approach. B2B buyers expect a more self-service, B2C-like, experience during the B2B sales process and conduct extensive research before engaging with the sales team. Word of mouth and social media increasingly influence B2B buying decisions. 
+B2B marketing focuses on optimizing touchpoints and reducing the purchase and consideration cycle. Since B2B sales cycles rely heavily on in-person meetings, offline interactions such as live events, and working with buying groups, digital person-based data alone isn't enough. B2B organizations supplement this with data from CRM systems and specialized solutions. Yet traditional B2C marketing components, likreads, campaigns, channels, and site visitors still play a crucial role in B2B marketing.
 
-B2B marketing face increasing pressure to demonstrate how their activities contribute to revenue generation. Aligning marketing efforts with business goals and measuring revenue impact has become critical to demonstrate marketing value. Many existing measurement tools are designed for B2C scenarios. Therefore, B2B marketers are looking to invest in dedicated tools that provide accurate insights and align with B2B objectives.
+B2B sales and marketing have evolved beyond traditional lead generation funnels to focus on customer lifecycles and buying groups. This shift reflects the changing nature of B2B purchasing, where decisions involve multiple stakeholders across various touchpoints. Today's B2B buyers follow a complex, non-linear decision-making process. Like B2C customers, they prefer to research independently before engaging with sales teams. Word of mouth and social media now play key roles in shaping their buying decisions.
 
-Customer Journey Analytics B2B Edition aligns marketing, sales, and product teams at B2B companies through actionable account insights to drive revenue growth. By placing the account at the center of the data model, analysis revolves around the account journey. The addition of a new layer of entities (account, opportunity, and buying group) on top of person and time-based events provides the power to build a complete picture of the B2B marketing and revenue lifecycle.
+B2B marketers face growing pressure to demonstrate how their activities contribute to revenue generation.  While aligning marketing efforts with business goals and measuring revenue impact is crucial, many measurement tools are designed for B2C scenarios. As a result, B2B marketers are seeking dedicated tools that provide accurate insights and align with their specific objectives.
 
-Customer Journey Analytics B2B Edition is an add-on package to Customer Journey Analytics. The B2B Edition is built upon and extends the functionality and user interface of standard Customer Journey Analytics.
+Customer Journey Analytics B2B Edition helps B2B companies align their marketing, sales, and product teams by providing actionable account insights that drive revenue growth. With the account placed at the center of the data model, all analysis focuses on the account journey. Adding a new layer of entities (accounts, opportunities, and buying groups) on top of person and time-based events, creates a complete picture of the B2B marketing and revenue lifecycle.
+
 
 >[!MORELIKETHIS]
 >
 >[B2B concepts and features](cja-b2b-concepts-features.md)
 >[B2B quick start guide](cja-b2b-quick-start-guide.md)
+>B2B guardrails (documention t.b.d.)
+>B2C to B2B migration (document t.b.d.)
 >
-

@@ -223,3 +223,18 @@ Use the following information to choose the visualization that best meets your n
 >
 >This article is part of the draft Content Analytics documentation. All draft Content Analytics documentation is  still subject to change and no legal obligations whatsoever can be derived from the current version of this article or any other article that is part of the Content Analytics documentation.  
 >
+
+
+## Draft Customer Journey Analytics B2B Edition documentation {#draft-b2b}
+
+>[!AVAILABILITY]
+>
+>The functionality described in this article, and any other article or functionality badged with [!BADGE B2B Edition]{type=Informative}.  is in the Limited Testing phase of release and might not be available yet in your environment. <br/>Also, [!BADGE B2B Edition]{type=Informative url="<https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b-edition>" newtab=true tooltip="Customer Journey Analytics B2B Edition"} functionalities and documentation of [!BADGE B2B Edition]{type=Informative} functionalities are subject to change and no legal obligations can be derived from it.<br/>This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md). 
+>
+
+
+## B2B Edition {#b2b-edition}
+
+>[!INFO]
+>
+>In this documentation, specific B2B articles or functionalities, only available with the Customer Journey Analytics B2B Edition, are marked with [!BADGE B2B Edition]{type=Informative}.
