@@ -1,0 +1,101 @@
+---
+title: Content Analytics data collection
+description: An overview of how data is collected in Content Analytics
+solution: Customer Journey Analytics
+feature: Content Analytics
+role: Admin
+exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
+---
+# Content Analytics data collection
+
+{{release-limited-testing}}
+
+This article explains in detail how content Analytics collects data
+
+
+## Definitions
+
+The following definitions are used in the context of this article:
+
+* **Experience**: An experience is defined as the text content on a whole web page. For data collection, Content Analytics records the Experience ID which is based on the page url. Later, the text on the page is captured via the retrieval service.
+* **Experience ID**: A unique combination of relevant URL (base URL plus any parameters that drive content on the page) and [experience version](manual.md#versioning).
+  * You specify, as part of the [configuration](configuration.md), which parameters are relevant for any given full URL. 
+  * You can define the [version identifier](manual.md#versioning) that is used.
+* **Asset**: An image. Content Analytics records the asset URL.
+* **Asset ID**: The URL of the asset.
+* **Relevant URL**: The base URL plus any parameters that drive content on the page.
+
+
+## Functionality
+
+The Content Analytics library collects data when:
+
+* Content Analytics is included in the Tags library that is loaded on the page.
+* The page URL is configured in the [Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, part of the included Tags library.
+
+
+## Content Analytics event
+
+A Content Analytics event consists of:
+
+* Standard fields
+  * Timestamp
+  * Identity
+* Experience views (if any, and if configured)
+* Experience clicks (if any, and if configured)
+* Asset views (if any, and if configured)
+* Asset clicks (if any, and if configured)
+
+
+Content Analytics events are collected as a sequence of:
+
+1. [A recorded view or click](#recorded-view-or-click).
+1. [A regular or specific (behaviorial) event](#regular-or-specific-behaviorial-event). 
+
+Content Analytics does collect data this way to reflect that sequence, instead of collecting a view or click separately from collecting the event immediately following that view or click. This way of collecting content analytics data also reduces the amount of data collected.
+
+### Recorded view or click 
+
+An asset view is recorded when:
+
+* The asset has not been excluded per Content Analytics extension configuration.
+* The asset is 75% in view.
+* That asset has not already been recorded for this page.
+
+An asset click is recorded when:
+
+* The asset has been viewed. 
+* The asset has not been excluded per Content Analytics  extension configuration.
+* A click directly on the asset, which is a link, that leads to another page.
+
+An experience view is recorded when:
+
+* Experiences are enabled in the Content Analytics configuration.
+
+An experience click is recorded when:
+
+* Any click occurs on a link on the page for which experiences are enabled.
+
+
+### Regular or specific (behaviorial) event
+
+Triggers to fire a regular or specific (behaviorial) event in the context of Content Analytics are:
+
+* Web SDK or AppMeasurements sends an event.
+* Visibility changes to hidden, for example:
+  * Page unloads
+  * Switch tab
+  * Minimize browser
+  * Close browser
+  * Lock screen
+* The URL changes, which results in a modified relevant URL.
+* Asset views recorded and ready to be sent exceed the number of 32.
+
+
+## Schemas
+
+Content Analytics data is collected in datasets in Experience Platform, based on specific Content Analytics schemas. Reference schemas are publicly available:
+
+* [Digital Asset schema](https://github.com/adobe/xdm/blob/master/components/classes/digital-asset.schema.json)
+* [Digital Experience schema](https://github.com/adobe/xdm/blob/master/components/classes/digital-experience.schema.json)
+* [Experience Event Content schema](https://github.com/adobe/xdm/blob/master/components/fieldgroups/experience-event/experienceevent-content.schema.json)

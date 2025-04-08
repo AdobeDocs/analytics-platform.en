@@ -13,6 +13,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **April 2025**| | 
+| Content Analytics | [Documentation](/help/content-analytics/content-analytics.md) for Adobe Content Analytics. Content Analytics allows you to quickly and easily investigate large volumes of content data to uncover trends, spot anomalies, identify content fatigue, and gain insights from content exposure. |
 | **March 2025** | |
 | Quantum Metric use cases| Added use cases for collecting data from [Quantum Metric](/help/use-cases/third-party/quantum-metric/collect-session-id.md). |
 | **February 2025** |  |

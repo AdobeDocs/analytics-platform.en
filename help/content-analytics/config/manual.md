@@ -4,13 +4,12 @@ description: How to configure Content Analytics manually
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-hide: yes
-hidefromtoc: yes
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
 ---
 # Content Analytics manual configuration
 
 {{release-limited-testing}}
+
 
 This article details the manual actions that are required to start or stop the data collection of a Content Analytics configuration, or to edit your Content Analytics implementation.
 
@@ -78,8 +77,8 @@ If the function is not present or no value is returned from the function, the va
 ### Example
 
 ```
-function adobe.getContentExperienceVersion() {
+window.adobe = window.adobe || {};
+window.adobe.getContentExperienceVersion = () => {
   return "1.0";
-}
-
+};
 ```

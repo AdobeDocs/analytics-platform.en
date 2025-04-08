@@ -25,15 +25,19 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Feature release strategy](../release-notes/releases.md)
   + [Documentation updates](../release-notes/doc-changes.md)
 
-+ Get started {#cja-overview}
-  + [Customer Journey Analytics overview](../getting-started/cja-overview.md)
-  + [Quick start guide](../getting-started/cja-getting-started.md)
-  + [Landing page](../getting-started/landing.md)
-  + [Landing page (old)](../getting-started/cja-landing-old.md)
-  + [Frequently asked questions](../getting-started/cja-faq.md)
-  + [Compare Customer Journey Analytics to BI solutions](../getting-started/cja-vs-bi.md)
-  + [AI Assistant for Adobe Customer Journey Analytics](../ai-assistant.md)
-  + [Data Analysis AI Assistent for Customer Journey Analytics](../data-analysis-ai.md)
++ Get Started {#cja-overview}
+  + Customer Journey Analytics {#cja-b2c-overview}
+    + [Overview](../getting-started/cja-overview.md)
+    + [Quick start guide](../getting-started/cja-getting-started.md)
+    + [Landing page](../getting-started/landing.md)
+    + [Frequently asked questions](../getting-started/cja-faq.md)
+    + [Compare to BI solutions](../getting-started/cja-vs-bi.md)
+    + [AI Assistant](../ai-assistant.md)
+    + [Data Analysis AI Assistent for Customer Journey Analytics](../data-analysis-ai.md)
+  + Customer Journey Analytics B2B Edition {#cja-b2b}
+    + [Overview](/help/getting-started/cja-b2b-edition.md)
+    + [B2B concepts and features](/help/getting-started/cja-b2b-concepts-features.md)
+    + [Quick start guide](/help/getting-started/cja-b2b-quick-start-guide.md)
 
 + Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
   + Upgrade to Customer Journey Analytics {#upgrade-to-cja}
@@ -261,6 +265,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Overview](/help/content-analytics/config/configuration.md)
     + [Guided configuration](/help/content-analytics/config/guided.md)
     + [Manual configuration](/help/content-analytics/config/manual.md)
+    + [Data collection](/help/content-analytics/config/datacollection.md)
 
 + Analytics dashboards {#cja-dashboards}
   + [Overview](../mobile-app/home.md)
