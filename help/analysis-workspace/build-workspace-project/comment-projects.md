@@ -12,7 +12,7 @@ Comments in Analysis Workspace allow you to share insights and ask questions wit
 >
 >The ability to add and manage comments on a project can be disabled either at the project level or at the organization level. If you can't add and manage comments as described in this section, the Customer Journey Analytics administrator or project owner has disabled this ability.
 >
->* **Project:** The project owner can disable this functionality for the project, as described in 
+>* **Project:** The project owner can disable this functionality for the project, as described in [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md).
 >* **Organization:** The Customer Journey Analytics administrator can disable this functionality for the organization, as described in [Preferences](/help/analysis-workspace/user-preferences.md). 
 
 ## View comments
