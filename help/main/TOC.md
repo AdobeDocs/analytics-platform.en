@@ -33,7 +33,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Frequently asked questions](../getting-started/cja-faq.md)
     + [Compare to BI solutions](../getting-started/cja-vs-bi.md)
     + [AI Assistant](../ai-assistant.md)
-    + [Data Analysis AI Assistent for Customer Journey Analytics](../data-analysis-ai.md)
+    + [Data Insights Agent](../data-analysis-ai.md)
   + Customer Journey Analytics B2B Edition {#cja-b2b}
     + [Overview](/help/getting-started/cja-b2b-edition.md)
     + [B2B concepts and features](/help/getting-started/cja-b2b-concepts-features.md)

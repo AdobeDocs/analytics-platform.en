@@ -127,6 +127,8 @@ Each step provides a high-level explanation of a more detailed process. Follow t
 
 1. [Validate that data is flowing into the data view in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md).
 
+1. In your Adobe Analytics environment, [use the Analytics Inventory](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/analytics-inventory) to see a comprehensive overview of your Adobe Analytics environment, including the number of projects and components, report suites, users, and more. 
+
 1. [Migrate projects and components](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration). 
 
    <!-- You might not want to do this, based on the schema? Ask Zach. Will it work if you have all new schema fields? What would you want to just build from scratch. Maybe everything? -->
