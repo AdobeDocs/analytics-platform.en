@@ -10,6 +10,7 @@ exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 
 {{release-limited-testing}}
 
+
 The configuration of Content Analytics consists of the following steps:
 
 ![Configuration of Content Analytics](../assets/aca-configuration.svg){zoomable="yes"}
@@ -36,8 +37,8 @@ Before you configure Content Analytics, ensure that the following prerequisites 
 * You have carefully considered the following important configuration options:
 
   * Your site is suited for experience reporting. Proper experience reporting is only possible when the following conditions are met:
-     * You can access the site content by public facing URLs only. Access to the site does not require personalized tokens, cookies or other mechanisms not available through the URL.
-     * The pages on your site are reproducible using the page URL, and you understand what optional URL parameters drive experiences.
+     * The pages on the site must be reproducible using the page URL.
+     * The text content seen by any given user can be reproduced using the page URL and does not depends on cookies or other personalization mechanisms.
   * You have a clear understanding for which pages you want to capture content engagement analysis and insights.
   * You have a clear understanding for which (type of) assets you want to capture content engagement analysis and insights.
 

@@ -28,9 +28,22 @@ To create or edit a data view:
 
 To configure a new or existing data view:
 
+>[!BEGINTABS]
+
+>[!TAB Standard] 
+
+![Configure data view](assets/dataview-configure.png)
+
+>[!TAB B2B Edition]
+
+![Configure data view B2B](assets/dataview-configure-b2b.png)
+
+>[!ENDTABS]
+
+
 1. Select the **[!UICONTROL Configure]** tab (if not already active).
 
-   ![Configure data view](assets/dataview-configure.png)
+   
 1. Specify [!UICONTROL Settings], [!UICONTROL Container], and [!UICONTROL Calendar] details (see below). 
 1. Select **[!UICONTROL Save and continue]** to continue configuring your new or existing data view. Select **[!UICONTROL Save]** to save the configuration for your existing data view.
    
@@ -50,10 +63,10 @@ Provides overarching settings for the data view.
 
 | Setting | Description |
 | --- | --- |
-| [!UICONTROL **Connection**] | This field links the data view to the connection that you established earlier, which contains one or more Adobe Experience Platform datasets. |
-| [!UICONTROL **Name**] | Required. The name of the data view. This value appears in the top-right drop-down list in Analysis Workspace. |
-| [!UICONTROL **External ID**] | Required. The name of data view you can use in external sources, such as business intelligence tools. Default is `unspecified`. If you do not specify an external ID, the name will be generated from the Name of the data view, replacing spaces with underscores. |
-| [!UICONTROL **Description**] | Optional. Adobe recommends a detailed description so that users understand why the data view exists and who it is designed for. |
+| **[!UICONTROL Connection]** | This field links the data view to the connection that you established earlier, which contains one or more Adobe Experience Platform datasets. |
+| **[!UICONTROL Name]** | Required. The name of the data view. This value appears in the top-right drop-down list in Analysis Workspace. |
+| **[!UICONTROL External ID]** | Required. The name of data view you can use in external sources, such as business intelligence tools. Default is `unspecified`. If you do not specify an external ID, the name will be generated from the Name of the data view, replacing spaces with underscores. |
+| **[!UICONTROL Description]** | Optional. Adobe recommends a detailed description so that users understand why the data view exists and who it is designed for. |
 
 {style="table-layout:auto"}
 
@@ -86,9 +99,13 @@ Designates the name of containers for the data view. Container names are frequen
 
 | Setting | Description |
 | --- | --- |
-| [!UICONTROL **Person container name**] | [!UICONTROL Person] (default). The [!UICONTROL Person] container includes every session and event for persons within the specified time frame. If your organization uses a different term (for example, "Visitor" or "User"), you can rename the container here. |
-| [!UICONTROL **Session container name**] | [!UICONTROL Session] (default). The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session. You can rename this container to 'Visit' or any other term your organization prefers. |
-| [!UICONTROL **Event container name**] | [!UICONTROL Event] (default). The [!UICONTROL Event] container defines individual events in a dataset. If your organization uses a different term (for example, "Hits" or "Page Views"), you can rename the container here. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Global Account container name]** | `Global Account` (default). The [!UICONTROL Global Account] container includes every session and event for globa accounts within the specified time frame. If your organization uses a different term, you can rename the container here. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Account container name]** | `Account` (default). The [!UICONTROL Account] container includes every session and event for accounts within the specified time frame. If your organization uses a different term, you can rename the container here. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Opportunity container name]** | `Opportunity` (default). The [!UICONTROL Opportunity] container includes every session and event for opportunities within the specified time frame. If your organization uses a different term, you can rename the container here. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Buying group container name]** | `Buying Group` (default). The [!UICONTROL Buying group] container includes every session and event for buying groups within the specified time frame. If your organization uses a different term, you can rename the container here. |
+| **[!UICONTROL Person container name]** | `Person` (default). The [!UICONTROL Person] container includes every session and event for persons within the specified time frame. If your organization uses a different term (for example, "Visitor" or "User"), you can rename the container here. |
+| **[!UICONTROL Session container name]** | `Session` (default). The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session. You can rename this container to 'Visit' or any other term your organization prefers. |
+| **[!UICONTROL Event container name]** | `Event` (default). The [!UICONTROL Event] container defines individual events in a dataset. If your organization uses a different term (for example, "Hits" or "Page Views"), you can rename the container here. |
 
 {style="table-layout:auto"}
 
@@ -173,5 +190,11 @@ You can add filters that apply to an entire data view. This filter is applied to
 ### Session settings
 
 Determine the time period of inactivity between events before a session expires and a new one is started. A time period is required. You can optionally also force a new session to start when an event contains a certain metric. See [Session settings](session-settings.md) for more details.
+
+### Data preview
+
+The data preview compares (for the various containers) the data of this data view with data of the connection. The preview percentage is based on the total number in the connection from the last 90 days.
+
+If the preview is not loading, your connection could still be backfilling.
 
 Once all desired settings are specified, click **[!UICONTROL Save and finish]**.

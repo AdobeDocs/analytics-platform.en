@@ -10,6 +10,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 
 {{release-limited-testing}}
 
+
 The guided configuration helps you to configure Content Analytics quickly and easily. The guided configuration uses a wizard to set up the requirements to configure Content Analytics automatically for your organization. In the **[!UICONTROL Configuration]** screen, you can either create a new configuration or edit an existing configuration. 
 
 >[!IMPORTANT]
@@ -173,15 +174,20 @@ By default, **[!UICONTROL Include experiences]** is turned off. When selected, y
 
 Only consider to include experiences when the following is applicable:
 
-* You can access the site content using public facing URLs only. Access to the site does not require personalized tokens, cookies or other mechanisms not available through the URL.
-* The pages on the site must be reproducible using the page URL.
+* The pages on the site must be reproducible using the page URL. 
+* The text content seen by any given user can be reproduced using the page URL and does not depends on cookies or other personalization mechanisms.
 
 To include Experiences in a new or not implemented configuration:
 
 ![Content Analytics configuration Experience capture and definition](../assets/aca-configuration-experience.png)
 
-1. Enable **[!UICONTROL Include experiences]**.
-1. Optionally, specify the parameters for how content is rendered on your website. The parameters are zero or more combinations of a **[!UICONTROL Domain regular expression]** and **[!UICONTROL Query parameters]**. The query parameters indicate what parameters affect the content on your page. This input allows Content Analytics to ignore any parameters that don't affect content on the page, when defining a unique experience.
+1. Enable **[!UICONTROL Include experiences]**. The toggle to enable experiences affects the following:
+
+   * Data collection in the Content Analytics extension 
+   * The process that generates experience attributes from Content Analytics event data 
+   * The reporting template in Customer Journey Analytics. 
+   
+1. Specify the parameters for how content is rendered on your website. The parameters are zero or more combinations of a **[!UICONTROL Domain regular expression]** and **[!UICONTROL Query parameters]**. The query parameters indicate what parameters affect the content on your page. This input allows Content Analytics to ignore any parameters that don't affect content on the page, when defining a unique experience.
    1. Enter a **[!UICONTROL Domain regular expression]**, for example `/^(?!.*\b(store|help|admin)\b)/`. Ensure you escape regular expressions, using `/`. The domain regular expression indicates which URLs these parameters apply to. For example, you may have multiple sites, and for each site different parameters drive the content. If the query parameters apply to all of your pages, then you can use `.*` to indicate all pages.
    1. Specify a comma separated list of **[!UICONTROL Query parameters,]** for example `outdoors, patio, kitchen`.
 1. Select **[!UICONTROL Remove]** if you want to remove a combination of domain regular expression and query parameters.
@@ -191,10 +197,9 @@ To edit existing or include new Experiences in an implemented configuration:
 
 ![Content Analytics configuration Experience capture and definition](../assets/aca-configuration-experience-edit.png)
 
-* Toggle **[!UICONTROL Include experiences]** to enable or disable the availability of experience components, visualizations and panels in Analysis Workspace.
-* Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** to edit the configuration of data collection for experiences in Content Analytics. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) in the Tags property that is associated with the current configuration.
-
-
+* Toggle **[!UICONTROL Include experiences]** to enable or disable the availability of experience components, visualizations, panels and templates in Analysis Workspace. 
+   
+* Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** to further edit the configuration of data collection for experiences in Content Analytics. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) in the Tags property that is associated with the current configuration.
 
 
 ### Data collection {#onboarding-data-collection}
@@ -259,7 +264,8 @@ In a new configuration, you need to define whether you want to use an existing T
     ![Content Analytics Data Collection Existing Tag](../assets/aca-configuration-datacollection-existingtag.png)
 
     1. Select **[!UICONTROL Choose existing]**.
-    2. Select an existing property from the **[!UICONTROL Tags property]** dropdown menu. You can start typing to search for and limit the available options.
+    2. Select an existing property from the **[!UICONTROL Tags property]** dropdown menu. You can start typing to search for and limit the available options. You cannot select a Tags property that already is used by another implemented Content Analytics configuration.
+
 
 * To create a new Tags property:
 
@@ -269,13 +275,13 @@ In a new configuration, you need to define whether you want to use an existing T
     1. Specify a **[!UICONTROL Tags name]**, for example `ACA Test for Documentation`.
     1. Specify **[!UICONTROL Domains]**, for example, `example.com`.
 
-* If you have selected to include experiences, indicate which pages should be included or excluded when collecting data for Content Analytics.
+* Indicate which pages should be included or excluded when collecting data for Content Analytics. 
+  
+  Specify a Regular expression string for **[!UICONTROL Pages to include / exclude]**. <br/>For example: `^(?!.*documentation).*` to exclude all documentation pages from Content Analytics.
 
-  * Specify a Regular expression string for **[!UICONTROL Pages to include / exclude]**. For example: `/^(?!.*documentation).*/` to exclude all documentation pages from Content Analytics. Ensure you escape regular expressions, using `/`.
-
-* Indicate which assets should be included or excluded when collecting data for Content Analytics.
-
-  * Specify a Regular expression string for **[!UICONTROL Assets to include / exclude]**. For example: `/^(?!.*(logo\.jpg|\.svg)).*$/` to exclude all logo JPEG and SVG images from Content Analytics. Ensure you escape regular expressions, using `/`.
+* Indicate which assets should be included or excluded when collecting data for Content Analytics. 
+  
+  Specify a Regular expression string for **[!UICONTROL Assets to include / exclude]**. <br/>For example: `^(?!.*(logo\.jpg|\.svg)).*$` to exclude all logo JPEG and SVG images from Content Analytics.
 
 >[!IMPORTANT]
 >
@@ -312,11 +318,11 @@ Once you have provided all necessary details, a summary provides details on the 
 
 <!-- markdownlint-enable MD034 -->
 
-When you have created or edited a configuration, the following actions are available.
+When you create or edit a configuration you have these options:
 
-* **[!UICONTROL Discard]**: All changes made as part of creating a new configuration or editing an existing configuration are discarded.
-* **[!UICONTROL Save for later]**: Changes made to a new configuration or an existing, not yet implemented configuration are saved. You can revisit the configuration at a later stage to make further changes, or implement the configuration.
-* **[!UICONTROL Implement]**: Settings for or changes made to a new configuration or existing, not yet implemented configuration are saved and implemented. The implementation consists of:
+* **[!UICONTROL Discard]**: All changes made as part of configuration are discarded.
+* **[!UICONTROL Save for later]**: Changes made to a configuration are saved. You can revisit the configuration at a later stage to make further changes, or implement the configuration. Only a value for [!UICONTROL Name] is required to save a configuration.
+* **[!UICONTROL Implement]**: Settings for or changes made to a configuration are saved and implemented. All fields marked as ![Required](/help/assets/icons/Required.svg) required need to have proper values. The implementation consists of:
   
   * **[!UICONTROL Customer Journey Analytics]** configuration:
     * The selected Data view is updated to include Content Analytics dimension and metrics.

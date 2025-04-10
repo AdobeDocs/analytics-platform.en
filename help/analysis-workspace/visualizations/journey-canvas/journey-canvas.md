@@ -12,7 +12,7 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_button"
 >title="Journey canvas"
->abstract="Shows how people proceed through or fall out of a series of touchpoints. Use for journeys with multiple entry points and paths, or to analyze journeys created in Journey Optimizer.."
+>abstract="Shows how people proceed through or fall out of a series of touchpoints. Use for journeys with multiple entry points and paths, or to analyze journeys created in Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -21,7 +21,7 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
 >title="Journey canvas"
->abstract="Analyze how people proceed through or fall out of a defined journey. Build analyses of user journeys by creating a flexible graph of nodes and arrows representing any combination of events, dimension items, and filters. Drag nodes on the canvas to rearrange the events and conditions of the journey. As you do, data updates accordingly. <br/><br/>Customers with access to Adobe Journey Optimizer can analyze existing Journey Optimizer journeys"
+>abstract="Analyze how people proceed through or fall out of a defined journey. Build analyses of user journeys by creating a flexible graph of nodes and arrows representing any combination of events, dimension items, and filters. Drag nodes on the canvas to rearrange the events and conditions of the journey. As you do, data updates accordingly. <br/><br/>Customers with access to Adobe Journey Optimizer can analyze existing Journey Optimizer journeys."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -30,7 +30,7 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 >[!CONTEXTUALHELP]
 >id="journeycanvas_button"
 >title="Journey canvas"
->abstract="Shows how people proceed through or fall out of a series of touchpoints. Use for journeys with multiple entry points and paths, or to analyze journeys created in Journey Optimizer.."
+>abstract="Shows how people proceed through or fall out of a series of touchpoints. Use for journeys with multiple entry points and paths, or to analyze journeys created in Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -39,7 +39,7 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"
 >title="Journey canvas"
->abstract="Analyze how people proceed through or fall out of a defined journey. Build analyses of user journeys by creating a flexible graph of nodes and arrows representing any combination of events, dimension items, and filters. Drag nodes on the canvas to rearrange the events and conditions of the journey. As you do, data updates accordingly. <br/><br/>Customers with access to Adobe Journey Optimizer can analyze existing Journey Optimizer journeys"
+>abstract="Analyze how people proceed through or fall out of a defined journey. Build analyses of user journeys by creating a flexible graph of nodes and arrows representing any combination of events, dimension items, and filters. Drag nodes on the canvas to rearrange the events and conditions of the journey. As you do, data updates accordingly. <br/><br/>Customers with access to Adobe Journey Optimizer can analyze existing Journey Optimizer journeys."
 
 <!-- markdownlint-enable MD034 -->
 

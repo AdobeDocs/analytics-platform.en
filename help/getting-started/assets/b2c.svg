@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3800" height="1682" viewBox="0 0 3800 1682">
+  <defs>
+    <clipPath id="clip-B2C">
+      <rect width="3800" height="1682"/>
+    </clipPath>
+  </defs>
+  <g id="B2C" clip-path="url(#clip-B2C)">
+    <rect width="3800" height="1682" fill="#fff"/>
+    <g id="Component_1_42" data-name="Component 1 – 42" transform="translate(2737 550)">
+      <g id="Rectangle_1" data-name="Rectangle 1" fill="#4146ca" stroke="#707070" stroke-width="2">
+        <rect width="318" height="184" rx="20" stroke="none"/>
+        <rect x="1" y="1" width="316" height="182" rx="19" fill="none"/>
+      </g>
+      <text id="Person" transform="translate(159 108)" fill="#fff" font-size="40" font-family="AdobeClean-ExtraBold, Adobe Clean" font-weight="800"><tspan x="-60" y="0">Person</tspan></text>
+    </g>
+    <g id="Component_1_50" data-name="Component 1 – 50" transform="translate(2965 848)">
+      <g id="Rectangle_1-2" data-name="Rectangle 1" fill="#6f7071" stroke="#707070" stroke-width="2" stroke-dasharray="3 3">
+        <rect width="318" height="184" rx="20" stroke="none"/>
+        <rect x="1" y="1" width="316" height="182" rx="19" fill="none"/>
+      </g>
+      <text id="Session" transform="translate(159 108)" fill="#fff" font-size="40" font-family="AdobeClean-ExtraBold, Adobe Clean" font-weight="800"><tspan x="-64.76" y="0">Session</tspan></text>
+    </g>
+    <g id="Component_1_51" data-name="Component 1 – 51" transform="translate(2737 1146)">
+      <rect id="Rectangle_1-3" data-name="Rectangle 1" width="318" height="184" rx="20" fill="#31b880"/>
+      <text id="Event" transform="translate(159 108)" fill="#fff" font-size="40" font-family="AdobeClean-ExtraBold, Adobe Clean" font-weight="800"><tspan x="-48.26" y="0">Event</tspan></text>
+    </g>
+    <line id="Line_13" data-name="Line 13" x1="66" transform="translate(3055.5 1236.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="2 2"/>
+    <line id="Line_14" data-name="Line 14" x1="69" transform="translate(3055 642)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="2 2"/>
+    <line id="Line_9" data-name="Line 9" y2="410" transform="translate(2887.5 734.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_10" data-name="Line 10" x1="3" y2="205.5" transform="translate(3121.5 642.5)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="2 2"/>
+    <line id="Line_11" data-name="Line 11" y2="204.5" transform="translate(3121.5 1032)" fill="none" stroke="#707070" stroke-width="1" stroke-dasharray="2 2"/>
+    <g id="Component_3_1" data-name="Component 3 – 1" transform="translate(1077 551)">
+      <g id="Component_1_63" data-name="Component 1 – 63">
+        <g id="Rectangle_1-4" data-name="Rectangle 1" fill="#4146ca" stroke="#707070" stroke-width="2">
+          <rect width="318" height="184" rx="20" stroke="none"/>
+          <rect x="1" y="1" width="316" height="182" rx="19" fill="none"/>
+        </g>
+        <text id="Profile" transform="translate(159 108)" fill="#fff" font-size="40" font-family="AdobeClean-ExtraBold, Adobe Clean" font-weight="800"><tspan x="-57.02" y="0">Profile</tspan></text>
+      </g>
+      <path id="datset" d="M34,8.988C34,4.071,25.952,1.5,18,1.5S2,4.071,2,8.988a4.255,4.255,0,0,0,.046.452A1.942,1.942,0,0,0,2,9.7V32.6c0,4.751,8.294,6.912,16,6.912S34,37.354,34,32.6V9.7a1.942,1.942,0,0,0-.046-.263A4.256,4.256,0,0,0,34,8.988M31,21.072c-.184.956-4.456,3.467-13,3.467S5.18,22.028,5,21.084V13.536c3.06,1.942,8.048,2.94,13,2.94s9.94-1,13-2.94ZM18,4.956c8.578,0,13,2.827,13,4.032S26.578,13.02,18,13.02,5,10.193,5,8.988,9.422,4.956,18,4.956m0,31.1c-8.546,0-12.82-2.511-13-3.456V25.337C8.1,27.143,13.166,28,18,28s9.9-.852,13-2.659V32.59c-.18.956-4.454,3.47-13,3.47" transform="translate(15 13.5)" fill="#fff"/>
+    </g>
+    <g id="Component_3_2" data-name="Component 3 – 2" transform="translate(1077 1144)">
+      <g id="Component_1_63-2" data-name="Component 1 – 63">
+        <rect id="Rectangle_1-5" data-name="Rectangle 1" width="318" height="184" rx="20" fill="#31b880"/>
+        <text id="Activity" transform="translate(159 108)" fill="#fff" font-size="40" font-family="AdobeClean-ExtraBold, Adobe Clean" font-weight="800"><tspan x="-65.32" y="0">Activity</tspan></text>
+      </g>
+      <path id="datset-2" data-name="datset" d="M34,8.988C34,4.071,25.952,1.5,18,1.5S2,4.071,2,8.988a4.255,4.255,0,0,0,.046.452A1.942,1.942,0,0,0,2,9.7V32.6c0,4.751,8.294,6.912,16,6.912S34,37.354,34,32.6V9.7a1.942,1.942,0,0,0-.046-.263A4.256,4.256,0,0,0,34,8.988M31,21.072c-.184.956-4.456,3.467-13,3.467S5.18,22.028,5,21.084V13.536c3.06,1.942,8.048,2.94,13,2.94s9.94-1,13-2.94ZM18,4.956c8.578,0,13,2.827,13,4.032S26.578,13.02,18,13.02,5,10.193,5,8.988,9.422,4.956,18,4.956m0,31.1c-8.546,0-12.82-2.511-13-3.456V25.337C8.1,27.143,13.166,28,18,28s9.9-.852,13-2.659V32.59c-.18.956-4.454,3.47-13,3.47" transform="translate(15 13.5)" fill="#fff"/>
+    </g>
+    <g id="Component_4_2" data-name="Component 4 – 2" transform="translate(1077 1429)">
+      <g id="Component_1_23" data-name="Component 1 – 23">
+        <rect id="Rectangle_1-6" data-name="Rectangle 1" width="318" height="184" rx="20" fill="#de3c82"/>
+        <text id="Product" transform="translate(159 108)" fill="#fff" font-size="40" font-family="AdobeClean-ExtraBold, Adobe Clean" font-weight="800"><tspan x="-67.74" y="0">Product</tspan></text>
+      </g>
+      <path id="datset-3" data-name="datset" d="M34,8.988C34,4.071,25.952,1.5,18,1.5S2,4.071,2,8.988a4.255,4.255,0,0,0,.046.452A1.942,1.942,0,0,0,2,9.7V32.6c0,4.751,8.294,6.912,16,6.912S34,37.354,34,32.6V9.7a1.942,1.942,0,0,0-.046-.263A4.256,4.256,0,0,0,34,8.988M31,21.072c-.184.956-4.456,3.467-13,3.467S5.18,22.028,5,21.084V13.536c3.06,1.942,8.048,2.94,13,2.94s9.94-1,13-2.94ZM18,4.956c8.578,0,13,2.827,13,4.032S26.578,13.02,18,13.02,5,10.193,5,8.988,9.422,4.956,18,4.956m0,31.1c-8.546,0-12.82-2.511-13-3.456V25.337C8.1,27.143,13.166,28,18,28s9.9-.852,13-2.659V32.59c-.18.956-4.454,3.47-13,3.47" transform="translate(12 14.484)" fill="#fff"/>
+      <path id="datset-4" data-name="datset" d="M34,8.988C34,4.071,25.952,1.5,18,1.5S2,4.071,2,8.988a4.255,4.255,0,0,0,.046.452A1.942,1.942,0,0,0,2,9.7V32.6c0,4.751,8.294,6.912,16,6.912S34,37.354,34,32.6V9.7a1.942,1.942,0,0,0-.046-.263A4.256,4.256,0,0,0,34,8.988M31,21.072c-.184.956-4.456,3.467-13,3.467S5.18,22.028,5,21.084V13.536c3.06,1.942,8.048,2.94,13,2.94s9.94-1,13-2.94ZM18,4.956c8.578,0,13,2.827,13,4.032S26.578,13.02,18,13.02,5,10.193,5,8.988,9.422,4.956,18,4.956m0,31.1c-8.546,0-12.82-2.511-13-3.456V25.337C8.1,27.143,13.166,28,18,28s9.9-.852,13-2.659V32.59c-.18.956-4.454,3.47-13,3.47" transform="translate(12 14.484)" fill="#fff"/>
+    </g>
+    <g id="Component_4_3" data-name="Component 4 – 3" transform="translate(1077 266)">
+      <g id="Component_1_23-2" data-name="Component 1 – 23">
+        <rect id="Rectangle_1-7" data-name="Rectangle 1" width="318" height="184" rx="20" fill="#de3c82"/>
+        <text id="CRM" transform="translate(159 108)" fill="#fff" font-size="40" font-family="AdobeClean-ExtraBold, Adobe Clean" font-weight="800"><tspan x="-39.66" y="0">CRM</tspan></text>
+      </g>
+      <path id="datset-5" data-name="datset" d="M34,8.988C34,4.071,25.952,1.5,18,1.5S2,4.071,2,8.988a4.255,4.255,0,0,0,.046.452A1.942,1.942,0,0,0,2,9.7V32.6c0,4.751,8.294,6.912,16,6.912S34,37.354,34,32.6V9.7a1.942,1.942,0,0,0-.046-.263A4.256,4.256,0,0,0,34,8.988M31,21.072c-.184.956-4.456,3.467-13,3.467S5.18,22.028,5,21.084V13.536c3.06,1.942,8.048,2.94,13,2.94s9.94-1,13-2.94ZM18,4.956c8.578,0,13,2.827,13,4.032S26.578,13.02,18,13.02,5,10.193,5,8.988,9.422,4.956,18,4.956m0,31.1c-8.546,0-12.82-2.511-13-3.456V25.337C8.1,27.143,13.166,28,18,28s9.9-.852,13-2.659V32.59c-.18.956-4.454,3.47-13,3.47" transform="translate(12 14.484)" fill="#fff"/>
+    </g>
+    <line id="Line_9-2" data-name="Line 9" y2="413" transform="translate(1236 731.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_28" data-name="Line 28" y2="101.5" transform="translate(1242.5 1328)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="Line_48" data-name="Line 48" y2="101.5" transform="translate(1236 450)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="_Container_Hierarchy" data-name=" Container Hierarchy" transform="translate(2871 134)" fill="#717070" font-size="80" font-family="AdobeClean-ExtraBold, Adobe Clean" font-weight="800"><tspan x="-351.84" y="0" xml:space="preserve"> Container Hierarchy</tspan></text>
+    <text id="_Container_Hierarchy-2" data-name=" Container Hierarchy" transform="translate(2871 134)" fill="#717070" font-size="80" font-family="AdobeClean-ExtraBold, Adobe Clean" font-weight="800"><tspan x="-351.84" y="0" xml:space="preserve"> Container Hierarchy</tspan></text>
+    <text id="Example_Connection" data-name="Example Connection" transform="translate(1236 134)" fill="#717070" font-size="80" font-family="AdobeClean-ExtraBold, Adobe Clean" font-weight="800"><tspan x="-354.92" y="0">Example Connection</tspan></text>
+    <g id="Component_9_9" data-name="Component 9 – 9" transform="translate(2958 1613)">
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="45" height="42" rx="10" fill="#de3c82"/>
+      <text id="Lookup_dataset_field_records_" data-name="Lookup dataset (field records)" transform="translate(56 27)" fill="#707070" font-size="20" font-family="AdobeClean-ExtraBold, Adobe Clean" font-weight="800"><tspan x="0" y="0">Lookup dataset (field records)</tspan></text>
+    </g>
+    <g id="Component_9_10" data-name="Component 9 – 10" transform="translate(3326 1613)">
+      <rect id="Rectangle_5-2" data-name="Rectangle 5" width="45" height="42" rx="10" fill="#f68512"/>
+      <text id="Transformed_lookup_dataset_field_records_" data-name="Transformed lookup dataset (field records)" transform="translate(56 27)" fill="#707070" font-size="20" font-family="AdobeClean-ExtraBold, Adobe Clean" font-weight="800"><tspan x="0" y="0">Transformed lookup dataset (field records)</tspan></text>
+    </g>
+    <g id="Component_9_11" data-name="Component 9 – 11" transform="translate(2180 1613)">
+      <rect id="Rectangle_5-3" data-name="Rectangle 5" width="45" height="42" rx="10" fill="#31b880"/>
+      <text id="Event_dataset_time_series_data_" data-name="Event dataset (time series data)" transform="translate(56 27)" fill="#707070" font-size="20" font-family="AdobeClean-ExtraBold, Adobe Clean" font-weight="800"><tspan x="0" y="0">Event dataset (time series data)</tspan></text>
+    </g>
+    <g id="Component_9_12" data-name="Component 9 – 12" transform="translate(2555 1614)">
+      <rect id="Rectangle_5-4" data-name="Rectangle 5" width="45" height="42" rx="10" fill="#4146c9"/>
+      <text id="Lookup_dataset_container_records_" data-name="Lookup dataset (container records)" transform="translate(56 27)" fill="#707070" font-size="20" font-family="AdobeClean-ExtraBold, Adobe Clean" font-weight="800"><tspan x="0" y="0">Lookup dataset (container records)</tspan></text>
+    </g>
+    <path id="datset-6" data-name="datset" d="M24.105,7.2c0-3.744-5.56-5.7-11.053-5.7S2,3.458,2,7.2c0,.118.021.228.032.344a1.617,1.617,0,0,0-.032.2V25.183c0,3.617,5.729,5.263,11.053,5.263S24.105,28.8,24.105,25.183V7.745a1.616,1.616,0,0,0-.032-.2c.011-.116.032-.226.032-.344m-2.072,9.2c-.127.728-3.078,2.64-8.98,2.64S4.2,17.13,4.072,16.411V10.664c2.114,1.479,5.56,2.238,8.98,2.238s6.867-.76,8.98-2.238ZM13.053,4.131c5.926,0,8.98,2.152,8.98,3.07s-3.055,3.07-8.98,3.07S4.072,8.119,4.072,7.2s3.055-3.07,8.98-3.07m0,23.683c-5.9,0-8.856-1.912-8.98-2.631V19.65c2.144,1.375,5.641,2.024,8.98,2.024s6.836-.649,8.98-2.024v5.522c-.124.728-3.077,2.642-8.98,2.642" transform="translate(2188.895 1618.027)" fill="#fff"/>
+    <path id="datset-7" data-name="datset" d="M24.105,7.2c0-3.744-5.56-5.7-11.053-5.7S2,3.458,2,7.2c0,.118.021.228.032.344a1.617,1.617,0,0,0-.032.2V25.183c0,3.617,5.729,5.263,11.053,5.263S24.105,28.8,24.105,25.183V7.745a1.616,1.616,0,0,0-.032-.2c.011-.116.032-.226.032-.344m-2.072,9.2c-.127.728-3.078,2.64-8.98,2.64S4.2,17.13,4.072,16.411V10.664c2.114,1.479,5.56,2.238,8.98,2.238s6.867-.76,8.98-2.238ZM13.053,4.131c5.926,0,8.98,2.152,8.98,3.07s-3.055,3.07-8.98,3.07S4.072,8.119,4.072,7.2s3.055-3.07,8.98-3.07m0,23.683c-5.9,0-8.856-1.912-8.98-2.631V19.65c2.144,1.375,5.641,2.024,8.98,2.024s6.836-.649,8.98-2.024v5.522c-.124.728-3.077,2.642-8.98,2.642" transform="translate(2563.895 1619.027)" fill="#fff"/>
+    <path id="datset-8" data-name="datset" d="M24.105,7.2c0-3.744-5.56-5.7-11.053-5.7S2,3.458,2,7.2c0,.118.021.228.032.344a1.617,1.617,0,0,0-.032.2V25.183c0,3.617,5.729,5.263,11.053,5.263S24.105,28.8,24.105,25.183V7.745a1.616,1.616,0,0,0-.032-.2c.011-.116.032-.226.032-.344m-2.072,9.2c-.127.728-3.078,2.64-8.98,2.64S4.2,17.13,4.072,16.411V10.664c2.114,1.479,5.56,2.238,8.98,2.238s6.867-.76,8.98-2.238ZM13.053,4.131c5.926,0,8.98,2.152,8.98,3.07s-3.055,3.07-8.98,3.07S4.072,8.119,4.072,7.2s3.055-3.07,8.98-3.07m0,23.683c-5.9,0-8.856-1.912-8.98-2.631V19.65c2.144,1.375,5.641,2.024,8.98,2.024s6.836-.649,8.98-2.024v5.522c-.124.728-3.077,2.642-8.98,2.642" transform="translate(2966.895 1618.027)" fill="#fff"/>
+    <path id="datset-9" data-name="datset" d="M24.105,7.2c0-3.744-5.56-5.7-11.053-5.7S2,3.458,2,7.2c0,.118.021.228.032.344a1.617,1.617,0,0,0-.032.2V25.183c0,3.617,5.729,5.263,11.053,5.263S24.105,28.8,24.105,25.183V7.745a1.616,1.616,0,0,0-.032-.2c.011-.116.032-.226.032-.344m-2.072,9.2c-.127.728-3.078,2.64-8.98,2.64S4.2,17.13,4.072,16.411V10.664c2.114,1.479,5.56,2.238,8.98,2.238s6.867-.76,8.98-2.238ZM13.053,4.131c5.926,0,8.98,2.152,8.98,3.07s-3.055,3.07-8.98,3.07S4.072,8.119,4.072,7.2s3.055-3.07,8.98-3.07m0,23.683c-5.9,0-8.856-1.912-8.98-2.631V19.65c2.144,1.375,5.641,2.024,8.98,2.024s6.836-.649,8.98-2.024v5.522c-.124.728-3.077,2.642-8.98,2.642" transform="translate(3334.895 1618.027)" fill="#fff"/>
+  </g>
+</svg>
