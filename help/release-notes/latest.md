@@ -32,6 +32,7 @@ These release notes cover the release period of March 27 to May 15, 2025. Adobe 
 **Derived fields**: AN-370614; AN-370959
 **Export Locations**: AN-371670
 **Full table export**: AN-360492; AN-369204; AN-372363
+**Journey Canvas**: AN-373294
 **Mobile app**: AN-363169; AN-368496; AN-371766
 **Product usage**: AN-369501
 **Reporting**: AN-369085; AN-371094; AN-372580
