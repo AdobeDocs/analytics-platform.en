@@ -169,7 +169,7 @@ Discrepancies in audience counts may occur between Customer Journey Analytics an
 
 ![Infographic on audience differences between Customer Journey Analytics and Real-Time CDP.](/help/components/audiences/assets/infographic-cja-rtcdp.png)
 
-**Probabilistic versus deterministic counts**
+**Estimated versus deterministic counts**
 
 The methodology by which audience membership numbers are being calculated differs between the two apps, as described below.
 
