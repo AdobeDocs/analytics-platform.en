@@ -52,7 +52,7 @@ To view the Audience list:
 
 ## Edit audiences
 
-You can edit the settings of an audience at any time. 
+You can edit the settings of an audience at any time. When you edit an audience (either a one-time audience or a recurring audience), a republish is required. 
 
 To edit an audience:
 
@@ -66,13 +66,7 @@ To edit an audience:
 
 1. You can update any of the available fields for the audience. For information about the fields you can update, see [Audience builder](/help/components/audiences/publish.md#audience-builder) in the article, [Create and publish audiences](/help/components/audiences/publish.md).
    
-1. For one-time audiences, select **[!UICONTROL Republish]**.
-
-   Or
-   
-   For recurring audiences, select **[!UICONTROL Save]**. 
-
-   A republish is required if the audience is a one-time audience. If the audience is a recurring audience, you can save your changes without republishing.
+1. Select **[!UICONTROL Republish]**.
 
 ## Actions
 
