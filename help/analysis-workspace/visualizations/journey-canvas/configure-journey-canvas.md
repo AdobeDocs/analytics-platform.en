@@ -140,7 +140,7 @@ You create nodes in the following ways: by dragging Workspace components from th
 
 ### Show the top nodes based on existing nodes
 
-You can automatically show the top nodes based on the nodes that are already on the canvas. You can add the top nodes to Journey canvas or view them in a freeform table.
+You can automatically show the top immediate nodes based on the nodes that are already on the canvas. You can add the top nodes to Journey canvas or view them in a freeform table.
 
 Journey canvas uses the primary metric when determining which nodes to show.
 
@@ -152,7 +152,7 @@ This option is available for the following objects on the canvas:
 
 #### Show top nodes after an existing node
 
-You can select a node and show the top dimension items that come after it in the journey. You can add the top 3 dimension items to Journey canvas as separate nodes, or you can view all top dimension items in a freeform table.
+You can select a node and show the top dimension items that come immediately after it in the journey. You can add the top 3 dimension items to Journey canvas as separate nodes, or you can view all top dimension items in a freeform table.
 
 1. Right-click the node where you want to show the top dimension items that come after it in the journey.
 
@@ -172,7 +172,7 @@ You can select a node and show the top dimension items that come after it in the
 
 #### Show top nodes before an existing node
 
-You can select a node and show the top dimension items that come before it in the journey. You can add the top 3 dimension items to Journey canvas as separate nodes, or you can view all top dimension items in a freeform table.
+You can select a node and show the top dimension items that come immediately before it in the journey. You can add the top 3 dimension items to Journey canvas as separate nodes, or you can view all top dimension items in a freeform table.
 
 1. Right-click the node where you want to show the top dimension items that come before it in the journey.
 
