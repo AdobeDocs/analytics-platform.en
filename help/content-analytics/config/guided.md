@@ -197,7 +197,10 @@ To edit existing or include new Experiences in an implemented configuration:
 
 ![Content Analytics configuration Experience capture and definition](../assets/aca-configuration-experience-edit.png)
 
-* Toggle **[!UICONTROL Include experiences]** to enable or disable the availability of experience components, visualizations, panels and templates in Analysis Workspace. 
+* Toggle **[!UICONTROL Include experiences]**  to enable or disable:
+
+   * The process that generates experience attributes from Content Analytics event data 
+   * The reporting template in Customer Journey Analytics. 
    
 * Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** to further edit the configuration of data collection for experiences in Content Analytics. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) in the Tags property that is associated with the current configuration.
 
@@ -285,7 +288,7 @@ In a new configuration, you need to define whether you want to use an existing T
 
 >[!IMPORTANT]
 >
->In case you have an existing Web SDK implementation using Javascript, and not using Tags, you have to manually remove the automatic included Web SDK extension from the newly created Tags property.
+>In case you have an existing Web SDK implementation that uses the [Javascript library](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library), and not uses the [Tags extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration), you have to manually remove the automatic included Web SDK extension from the newly created Tags property.
 
 
 
