@@ -12,9 +12,9 @@ This article provides context on shared devices, how to handle and mitigate data
 
 ## What is a shared device? 
 
-A shared device is a device that is used by more than one person. Common scenarios are devices like tablets, devices used in kiosks or computer equipment shared by agents in a call centers. 
+A shared device is a device that is used by more than one person. Common scenarios are devices like tablets, devices used in kiosks or computer equipment shared by agents in a call center. 
 
-When two people use the same device and both do make a purchase, sample event data might look like:
+When two people use the same device and both make an authenticated purchase, sample event data might look like:
 
 |Event | Timestamp | Page name | Device ID | Email |
 |--:|---|---|---|---|
@@ -43,7 +43,7 @@ Stitching can attribute shared device data using either last-auth attribution or
 
 ### Last-auth attribution
 
-Last-auth attributes all unknown activity from a shared device to the user who last authenticated. The Experience Platform Identity Service builds the graph based on the last-auth attribution and, as such, is used in graph-based stitching. See [Identity graph linking rules overview](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) for more information.
+Last-auth attributes all unknown activity from a shared device to the user who last authenticated. The Experience Platform Identity Service builds the graph based on the last-auth attribution and, as such, is used in graph-based stitching. See [Identity graph linking rules](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) for more information.
 
 When last-auth attribution is used in stitching, Stitched IDs resolve as shown in the table below. 
 
@@ -59,7 +59,7 @@ When last-auth attribution is used in stitching, Stitched IDs resolve as shown i
 
 ### Device-split 
 
-Device-split attributes anonymous activity from a shared device to the user in closest proximity to the anonymous activity. Device-split is currently used in field-based stitching.
+Device-split attributes anonymous activity from a shared device to the most recent known user, looking in the past. Device-split is currently used in field-based stitching.
 
 When device-split attribution is used in stitching, Stitched IDs resolve as shown in the table below. 
 

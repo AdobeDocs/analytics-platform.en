@@ -4,23 +4,32 @@ description: Learn about the recommended path when upgrading from Adobe Analytic
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: f76d098d-d223-40e4-be81-d28e7581396b
 ---
-# Create a datastream to use with Customer Journey Analytics
+# Create a datastream to use with Customer Journey Analytics {#upgrade-create-datastream}
 
->[!NOTE]
-> 
->Follow the steps on this page only after you complete all previous upgrade steps. You can follow the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations), or you can follow the upgrade steps that were dynamically generated for your organization with the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
->
->After you complete the steps on this page, continue following the recommended upgrade steps or the dynamically generated upgrade steps. 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-datastream-create"
+>title="Create a datastream in Adobe Experience Platform"
+>abstract="A datastream is an intermediary location that passes your data along to all configured services. Create this location in Adobe Experience Platform.<br><br>The initial creation of a datastream in the Platform interface takes only a few minutes."
+
+<!-- markdownlint-enable MD034 -->
+
+{{upgrade-note-step}}
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
 A datastream represents the server-side configuration when implementing the Adobe Experience Platform Web and Mobile SDKs. When collecting data with the Adobe Experience Platform SDKs, data is sent to the Adobe Experience Platform Edge Network. It is the datastream that determines to which services that data is forwarded.
 
 In your setup, you want to configure the datastream to send the collected data to your dataset in Adobe Experience Platform.
+
+>[!NOTE]
+>
+>The following steps are required only for Adobe Analytics implementations using AppMeasurement or the Analytics extension (tags).
+>
+>If your Adobe Analytics implementation uses the Web SDK or the Web SDK Extension, the datastream already exists in your Adobe Analytics environment.
 
 To set up your datastream:
 
@@ -34,4 +43,4 @@ To set up your datastream:
 
 1. Select **[!UICONTROL Save]**.
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}

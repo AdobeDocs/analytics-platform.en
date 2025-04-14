@@ -4,23 +4,32 @@ description: Learn how to implement the loader tag for the Web SDK extension
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
 ---
-# Implement the loader tag for the Web SDK extension
+# Implement the loader tag for the Web SDK extension {#upgrade-tag-loader}
 
->[!NOTE]
-> 
->Follow the steps on this page only after you complete all previous upgrade steps. You can follow the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations), or you can follow the upgrade steps that were dynamically generated for your organization with the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
->
->After you complete the steps on this page, continue following the recommended upgrade steps or the dynamically generated upgrade steps. 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-loader"
+>title="Implement the loader tag on your site"
+>abstract="Work with your website development team to install the loader tag on every page of your site.<br><br>Completion time for this task heavily depends on the response time of the engineering team that you work with to deploy the code. Some organizations who have highly adaptive engineering teams can complete this step in days, while engineering teams with an extensive backlog of tasks can potentially take a month or longer."
+
+<!-- markdownlint-enable MD034 -->
+
+{{upgrade-note-step}}
 
 You must install your tag on the website you want to track, which implies placing code in the header tag of your website's template.
 
 The following process describes how to get the code that references your tag. For supplemental information, see the [Implementation guides for tags and event forwarding](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/implementation-guides) in the Experience Platform documentation.
 
 To get the code that references your tag:
+
+1. Log in to experience.adobe.com using your Adobe ID credentials.
+
+1. In Adobe Experience Platform, go to **[!UICONTROL Data Collection]** > **[!UICONTROL Tags]**.
+
+1. On the **[!UICONTROL Tag Properties]** page, select your newly created tag from the list of properties to open it.
 
 1. Select **[!UICONTROL Environments]** in the left rail.
 
@@ -41,4 +50,4 @@ To get the code that references your tag:
 
    See [Environments](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?) for more information.
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}

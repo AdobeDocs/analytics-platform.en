@@ -10,19 +10,24 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_attribution_button"
+>id="workspace_attribution_button"
 >title="Attribution"
->abstract="Quickly compare and visualize any number of attribution models using any dimension and conversion metric"
+>abstract="Quickly compare and visualize any number of attribution models using success metric, channel and lookback window."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ panel"
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_attribution_panel"
+>id="workspace_attribution_panel"
 >title="Attribution panel"
->abstract="Quickly compare and visualize any number of attribution models using any dimension and conversion metric.<br/><br/>**Parameters**<br/>**Channel**<br/>The dimension to attribute against. This dimension can be marketing channels, campaigns, or any other dimension.<br/>**Models**<br/>The model determines how credit is assigned to touchpoints.<br/>**Lookback window**<br/>This setting determines the window of data attribution that applies to each conversion."
+>abstract="Quickly compare and visualize any number of attribution models for a success metric. Select the channel (dimension), the models to include and the lookback window." 
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ panel"
 
 <!-- markdownlint-enable MD034 -->
 
+>[!BEGINSHADEBOX]
+
+_This article documents the Attribution panel in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_See [Attribution panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
 
 The **[!UICONTROL Attribution]** panel is an easy way to build an analysis comparing various attribution models. The panel provides you with a dedicated workspace to use and compare attribution models.
 

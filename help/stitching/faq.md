@@ -10,7 +10,9 @@ role: Admin
 
 Here are some frequently asked questions around stitching:
 
-+++**How can I use stitching to see how people move from one channel to another?**
+## Move across channels
+
++++ How can I use stitching to see how people move from one channel to another?
 
 You can use a Flow visualization with the Dataset ID dimension.
 
@@ -23,21 +25,29 @@ If you would like to rename dataset ID dimension items, you can use a lookup dat
 
 +++
 
-+++**How far back does stitching replay visitors?**
+## Replay
+
++++ How far back does stitching replay visitors?
 
 The lookback window for rekeying depends on your desired frequency of data replay. For example, if you set up stitching to replay data once every week, the lookback window for rekeying is seven days. If you set up stitching to replay data every day, the lookback window for rekeying is one day.
 
 +++
 
-+++**How are shared devices handled?**
+## Shared devices
+
++++ How are shared devices handled?
 
 In some situations, it is possible that multiple people log in from the same device. Examples include a shared device at home, shared PCs in a library, or a kiosk in a retail outlet.
 
 The transient ID overrides the persistent ID, so shared devices are considered separate people (even if they originate from the same device).
 
+See the [Shared devices](/help/use-cases/stitching/shared-devices.md) use case for more details.
+
 +++
 
-+++**How does stitching handle situations where a single person has many persistent IDs?**
+## Many persistent IDs
+
++++ How does stitching handle situations where a single person has many persistent IDs?
 
 In some situations, an individual user can associate with many persistent IDs. An example is an individual frequently clearing browser's cookies or using the browser's private/incognito mode.
 
@@ -47,13 +57,17 @@ For graph-based stitching, a single person can have many persistent ID in the id
 
 +++
 
-+++**Once I contact my Adobe Account Team with the desired information, how long does it take for the rekeyed dataset to become available?**
+## Stitching process
+
++++ Once I contact my Adobe Account Team with the desired information, how long does it take for the rekeyed dataset to become available?
 
 Live stitching is available approximately one week after Adobe enables stitching. Backfill availability depends on the amount of existing data. Small datasets (less than 1 million events per day) typically take a couple days, while large data sets (1 billion events per day) can take a week or more.
 
 +++
 
-+++**What is the difference between cross-device analytics (a feature in traditional Analytics) and cross-channel analysis?**
+## Cross-device analytics versus cross-channel analysis
+
++++ What is the difference between cross-device analytics (a feature in traditional Analytics) and cross-channel analysis?
 
 [Cross-device analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) is a feature specific to traditional Adobe Analytics that allows you to understand how people operate across devices. It offers two workflows to link device data together: field-based stitching and the device graph.
 
@@ -61,7 +75,9 @@ Cross-channel analysis is a use case specific to Customer Journey Analytics that
 
 +++
 
-+++**How does Stitching handle privacy requests?**
+## Privacy
+
++++ How does Stitching handle privacy requests?
 
 Adobe handles privacy requests in accordance with local and international laws. Adobe offers the [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) to submit data access and deletion requests. The requests apply to both the original and rekeyed datasets.
 
@@ -141,7 +157,9 @@ When a privacy request is received for customer with CustID Bob, the rows with s
 
 +++
 
-+++**What happens if the Persistent ID field in one or more events is blank?**
+## Blank persistent ID values
+
++++ What happens if the Persistent ID field in one or more events is blank?
 
 If the Persistent ID field is blank on an event in a dataset being stitched , the Stitched ID for that event in determined in one of two ways:
 
@@ -151,7 +169,9 @@ If the Persistent ID field is blank on an event in a dataset being stitched , th
 +++
 
 
-+++**What happens if the Transient ID field in one or more events has placeholder values, like 'Undefined'?**
+## Undefined transient ID values
+
++++ What happens if the Transient ID field in one or more events has placeholder values, like `Undefined`?
 
 Be cautious of 'person collapse', which occurs when stitching is applied to data that uses placeholder values for Transient IDs. In the example table below, undefined person IDs originating from a dataset sourced from a CRM system are populated with the value 'Undefined' resulting in incorrect representation of persons.
 
@@ -171,7 +191,9 @@ Be cautious of 'person collapse', which occurs when stitching is applied to data
 
 +++
 
-+++**How do metrics in Customer Journey Analytics stitched datasets compare with similar metrics in Customer Journey Analytics unstitched datasets and with  Adobe Analytics?**
+## Metrics comparison
+
++++ How do metrics in Customer Journey Analytics stitched datasets compare with similar metrics in Customer Journey Analytics unstitched datasets and with Adobe Analytics?
 
 Certain metrics in Customer Journey Analytics are similar to metrics in traditional Analytics, but others are different, depending on what you are comparing. The table below compares several common metrics:
 
@@ -185,13 +207,18 @@ Other metrics can be similar in Customer Journey Analytics and Adobe Analytics. 
 
 +++
 
-+++**Can Customer Journey Analytics use Identity Map fields?**
+## Identity Map
+
++++ Can Customer Journey Analytics use Identity Map fields?
 
 No, Customer Journey Analytics cannot currently use Identity Map fields for stitching.
 
 +++
 
-+++**Will data need to be reingested to switch from field-based stitching to graph-based stitching?**
+## Switch to graph based stitching
+
++++ Will data need to be reingested to switch from field based stitching to graph based stitching?
+
 Data does not have to be reingested into Experience Platform, however it will need to be reconfigured in Customer Journey Analytics. Please follow these steps:
 
 1. Setup the new graph-based stitched dataset. 
@@ -201,7 +228,9 @@ Data does not have to be reingested into Experience Platform, however it will ne
 
 +++
 
-+++**Would there be any disruption to existing reports?** 
+## Disruption in reporting
+
++++ Would there be any disruption to existing reports?
 
 Not if you follow the steps outlined above. Otherwise, please ask Adobe Consulting for additional support.
 

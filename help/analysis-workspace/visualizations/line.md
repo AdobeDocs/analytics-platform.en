@@ -10,22 +10,21 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_line_button"
+>id="workspace_line_button"
 >title="Line"
 >abstract="Create a line visualization that shows how values change over a period of time. A line visualization can only be used when time is used as a dimension."
 
 <!-- markdownlint-enable MD034 -->
 
 
+>[!BEGINSHADEBOX]
+
+_This article documents the Line visualization in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Line](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/line) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
+
+
 The ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Line]** visualization represents metrics using a line to show how values change over a period of time. A line visualization can be used only when time is used as a dimension.
-
-<!--
->[!NOTE]
->
->The Line visualization soon feature [intelligent captions](/help/analysis-workspace/visualizations/intelligent-captions.md).
-
-The Line visualization represents metrics using a line to show how values change over a period of time. A line chart can be used only when time is used as a dimension.
--->
 
 ![Line visualization](assets/line-viz.png)
 

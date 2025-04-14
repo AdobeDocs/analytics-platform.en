@@ -7,13 +7,12 @@ role: User
 ---
 # Row settings
 
-+++ View a video demonstration of this functionality.
 
->[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
+>[!BEGINSHADEBOX]
 
-{{videoaa}}
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Row and column settings in a Freeform table](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"} for a demo video.
 
-+++
+>[!ENDSHADEBOX]
 
 Row settings vary depending on which component you have dragged into the table. To access table row settings, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** next to a dimension, filter, metric, time period, or a breakdown within each of these objects.
 
@@ -82,3 +81,7 @@ The following additional context menu options are available when selecting a met
 | **[!UICONTROL Create annotation from selection]** | Open up the **[!UICONTROL Annotation details]** to add an annotation. | 
 | **[!UICONTROL Create filter from selection]** | Open up the **[!UICONTROL Filter builder]** to build a filter from the selection. |
 | **[!UICONTROL Create audience from selection]** | Open up the **[!UICONTROL Create audience]** dialog to build an audience from the selection. | 
+
+## Change row height
+
+You can set the view density of a project to **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]**, and **[!UICONTROL Expanded]**. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density).

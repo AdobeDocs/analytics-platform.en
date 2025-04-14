@@ -4,27 +4,30 @@ description: Learn how to create lookup datasets to classify data in Customer Jo
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
 ---
-# Create lookup datasets to classify data in Customer Journey Analytics
+# Create lookup datasets to classify data in Customer Journey Analytics {#upgrade-lookup-dataset}
 
->[!NOTE]
-> 
->Follow the steps on this page only after you complete all previous upgrade steps. You can follow the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations), or you can follow the upgrade steps that were dynamically generated for your organization with the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
->
->After you complete the steps on this page, continue following the recommended upgrade steps or the dynamically generated upgrade steps. 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-lookup-dataset-create"
+>title="Create a lookup dataset for each dimension containing classification data"
+>abstract="Similar to classifications data in Adobe Analytics, lookup datasets are the method for classifying data in Customer Journey Analytics."
+
+<!-- markdownlint-enable MD034 -->
+
+{{upgrade-note-step}}
 
 Similar to classifications data in Adobe Analytics, lookup datasets are the method for classifying data in Customer Journey Analytics. 
 
 When using the Analytics source connector, some standard lookup datasets are automatically applied at report time. For more information, see [Add standard lookups to your datasets](/help/connections/standard-lookups.md).
 
-In order to classify data in Customer Journey Analytics when using the Experience Platform Web SDK, you need to create an XDM schema and a lookup dataset for each dimension that contains data that you want to classify.
+In order to classify data in Customer Journey Analytics when using the Experience Platform Web SDK, you need to create a custom schema and a lookup dataset for each dimension that contains data that you want to classify.
 
-## Create an XDM schema
+## Create a custom schema to use with the lookup dataset
 
-Create a new XDM schema for each dimension that contains data that you want to classify in Customer Journey Analytics. When you create the lookup dataset in a later step, it will reference this schema. 
+Create a new custom schema for each dimension that contains data that you want to classify in Customer Journey Analytics. When you create the lookup dataset in a later step, it will reference this schema. 
 
 Repeat this process for each dimension that contains data that you want to classify.
 
@@ -52,7 +55,7 @@ To create a schema for use with a lookup dataset in Customer Journey Analytics:
 
 ## Create a lookup dataset
 
-After you [create an XDM schema](#create-an-xdm-schema-for-lookup-datasets) to use for a lookup dataset, you need to create the lookup dataset and map it to your schema.
+After you [create a custom schema](#create-a-custom-schema-to-use-with-the-lookup-dataset) to use for a lookup dataset, you need to create the lookup dataset and map it to your schema.
 
 Repeat this process for each dimension that contains data that you want to classify.
 
@@ -92,9 +95,9 @@ To create a lookup dataset for use with a schema in Customer Journey Analytics:
 
 1. Continue with [Add the lookup dataset to your connection in Customer Journey Analytics](#add-the-lookup-dataset-to-your-connection-in-customer-journey-analytics).
 
-## Add the lookup dataset to your connection in Customer Journey Analytics
+## Add the lookup dataset to your connection in Customer Journey Analytics 
 
-After you [create an XDM schema](#create-an-xdm-schema-for-lookup-datasets) and [create a lookup dataset](#create-a-lookup-dataset), you need to add the lookup dataset to your connection in Customer Journey Analytics.
+After you [create a custom schema](#create-a-custom-schema-to-use-with-the-lookup-dataset) and you [create a lookup dataset](#create-a-lookup-dataset), you need to add the lookup dataset to your connection in Customer Journey Analytics.
 
 Repeat this process for each dimension that contains data that you want to classify.
 
@@ -114,9 +117,11 @@ To add the lookup dataset to your connection in Customer Journey Analytics:
 
 1. Select **[!UICONTROL Add datasets]**, then select **[!UICONTROL Save]**.
 
+   <!-- is there a step right in between here where you select the dataset -->
+
 1. Using the **[!UICONTROL Key]** field and the **[!UICONTROL Matching key]** field, create a correlation between the field in your lookup dataset with that in your event or summary dataset. 
 
-1. After all lookup datasets are added to your connection in Customer Journey Analytics, continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/). 
+1. Repeat this process until all lookup datasets are added to your connection in Customer Journey Analytics.
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}
 

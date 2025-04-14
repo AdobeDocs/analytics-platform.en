@@ -10,11 +10,18 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_text_button"
+>id="workspace_text_button"
 >title="Text"
 >abstract="Add a user-defined rich text visualization to your project."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+_This article documents the Text visualization in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Text](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/text) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
 
 
 To add user-defined rich text to your Workspace project, you can use a ![Text](/help/assets/icons/Text.svg) **[!UICONTROL Text]** visualization or use descriptions for a visualization and panel. 
@@ -39,7 +46,7 @@ When editing your text box or description, you can adjust the font size (heading
 
 ## Add hyperlinks {#hyperlinks}
 
-To add a hyperlink, highlight the text and select ![Link](/help/assets/icons/Link.svg) in the menu. You can use hyperlinks to provide further assistance to your project recipients. Hyperlinks can link to external websites, documentation pages, [Workspace projects, panels, or visualizations](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links), and more.
+To add a hyperlink, highlight the text and select ![Link](/help/assets/icons/Link.svg) in the menu. You can use hyperlinks to provide further assistance to your project recipients. Hyperlinks can link to external websites, documentation pages, [Workspace projects, panels, or visualizations](/help/analysis-workspace/curate-share/shareable-links.md), and more.
 
 ![Text options with the link icon highlighted.](assets/hyperlink.png)
 

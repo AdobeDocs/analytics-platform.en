@@ -5,18 +5,30 @@ feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
 ---
-# Area and area stacked
+# Area (stacked)
+
+>[!BEGINSHADEBOX]
+
+_This article documents the Area and Area stacked visualizations in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Area and area stacked ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
+
+
+The area visualization has a standard and stacked option.
 
 ## Area {#area}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_area_button"
+>id="workspace_area_button"
 >title="Area graph"
 >abstract="Create an area graph visualization to represent the intersection of multiple metrics."
 
 <!-- markdownlint-enable MD034 -->
+
+
+
 
 
 The ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Area]** visualization is like a line graph, but with a colored area below the line. Add an  area graph when you have multiple metrics and want to visualize the area expressed by the intersection of two or more metrics.
@@ -28,13 +40,11 @@ The ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Area]** visuali
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_areastacked_button"
+>id="workspace_areastacked_button"
 >title="Area stacked"
 >abstract="Create an area graph visualization to represent the stacking of multiple metrics."
 
 <!-- markdownlint-enable MD034 -->
-
-
 
 
 The ![GraphAreaStacked](/help/assets/icons/GraphAreaStacked.svg) **[!UICONTROL Area stacked]** visualization is like an Area, but each series begins at the top of the previous series.

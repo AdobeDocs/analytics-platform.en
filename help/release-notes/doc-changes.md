@@ -9,6 +9,26 @@ feature: Release Notes
 
 The following updates were made to the Customer Journey Analytics documentation since its inception.
 
+## 2025
+
+| Feature | Description |
+| --- | --- |
+| **April 2025**| | 
+| Content Analytics | [Documentation](/help/content-analytics/content-analytics.md) for Adobe Content Analytics. Content Analytics allows you to quickly and easily investigate large volumes of content data to uncover trends, spot anomalies, identify content fatigue, and gain insights from content exposure. |
+| **March 2025** | |
+| Quantum Metric use cases| Added use cases for collecting data from [Quantum Metric](/help/use-cases/third-party/quantum-metric/collect-session-id.md). |
+| **February 2025** |  |
+| Media Collection: Adobe Source Connector updates for new Media Reporting XDM | The Analytics Source Connector automatically [maps streaming media data in Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=en) to the same fields used by the Web SDK. Previously, data was mapped to both the old and new locations, but only the new location will be used in the future. |
+| BI Extension - expanded support |  The Customer Journey Analytics BI extension now supports [Looker, Jupyter Notebook and R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=en). |
+| **January 2025** ||
+| Updated Connections Usage experience  |  The [Usage](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/manage-connections?lang=en#connections-usage) tab in Connection now provides enhanced visualizations for these types of reportable rows: core, ingested and historical data. You can also view and break down the usage data by connection, dataset, sandbox, or tag. |
+| Usage metrics | Updated documentation on the improved [usage metrics](/help/connections/manage-connections.md#usage) interface. |
+| Product usage | [Product usage](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview) shows you how your organization uses Customer Journey Analytics. |
+| Guided analysis | Updated documentation with the availability of [Guided Analysis](/help/guided-analysis/overview.md) from within Guided Analysis. |
+| Documentation on using custom templates from Customer Journey Analytics on the Reports page in Journey Optimizer | You can now customize the new reporting interface in Adobe Journey Optimizer by [creating or editing a template in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=en), then saving the template to be used on the Reports page in Journey Optimizer. Previously, the new reporting interface in Adobe Journey Optimizer couldn't be customized. |
+| Templates in Analysis Workspace | [Prebuilt templates](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates) and [company templates](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates) are now available in Customer Journey Analytics. |
+| Intelligent Captions v2 | [Intelligent captions](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions?lang=en) are now supported for the following visualizations: Multi-line, Bar, Horizontal bar, Donut, Area, Flow, and Fallout. You can select to show all intelligent captions at once in an expanded view, or you can show individual intelligent captions in a one-by-one view. |
+
 ## 2024
 
 | Feature | Description |
@@ -17,14 +37,19 @@ The following updates were made to the Customer Journey Analytics documentation 
 | BI extension use cases | Documentation of several [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md) for BI tools like Power BI Desktop and Tableau Desktop. |
 | Stitching and privacy requests | Added notice on [upcoming changes in the unstitching process](/help/stitching/faq.md#frequently-asked-questions) that are the result of privacy requests. | 
 | **October 2024** | |
+| Journey canvas visualization | [Journey canvas](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en) is a visualization in Analysis workspace that allows you to analyze how people proceed through or fall out of a defined journey. |
+| Asset transfer | Lets you [transfer ownership](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/asset-transfer/transfer-assets) of components such as projects, filters, and calculated metrics to other users to ensure continuity and appropriate access. |
+| Improved Usage interface | Updated the article on the improved interface to show your [usage of ingested and reportable rows across all connections](/help/connections/manage-connections.md#usage) | 
 | Shared devices | Added a [use case article](/help/use-cases/stitching/shared-devices.md) that provides context on shared devices, how to handle and mitigate data from shared devices using stitching, and understand shared device exposure in your data using Query Service. |
 | New information about Request factors in Analysis Workspace Performance | A new [Request factors](/help/technotes/optimizing-performance.md#request-factors) section in the [Optimize Analysis Workspace performance](/help/technotes/optimizing-performance.md) article explains how requests are processed and the various factors that influence processing times. |
 | Workspace and components  | Refreshed the documentation on Analysis Workspace projects (projects, visualizations, and panels) and conponents (annotations, dimensions, (calculated) metrics, filters, date ranges, alerts, scheduled projects and audiences). | 
 | Guided analysis | Updated documentation with the availability of [Guided Analysis](/help/guided-analysis/overview.md) from within Analysis Workspace. |
+| Updated Audience documentation | When [creating an audience](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish?lang=en) from a visualization within Analysis Workspace, panel filters and column filters are now included as additional criteria. |
 | **September 2024** | |
 | Summary data update | Updated summary data articles with information on how to properly use [lookup data](/help/data-views/summary-data.md#lookup-data) when reporting on summary data. | 
 | BI extension update | Added [defaults and limitation](/help/data-views/bi-extension.md#defaults-and-limitations) section to the BI extension documentation. |
 | Alerts | Added documentation for the [Alerts](/help/components/c-intelligent-alerts/intelligent-alerts.md)  functionality now available in Customer Journey Analytics. |
+| Additional information in the "Used in" column in the calculated metric manager and filter manager | The "Used in" column in the [calculated metric manager](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager?lang=en) and [filters manager](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-filters/manage-filters?lang=en) contains the following new reporting areas: Report Builder and Ad-hoc components |
 | **August 2024** | | 
 | An example B2B project | Added a [use case](/help/use-cases/b2b/example.md) documenting how to set up, configure and report on profile (person) level based B2B data in Customer Journey Analytics, using the new [transform datasets for B2B lookups](/help/connections/transform-datasets-b2b-lookups.md) functionality. |
 | Updated Data export use cases | Added more detailed query examples to [Query Service (Data Distiller) & Export datasets](/help/use-cases/data-export/queryservice-export-datasets.md) to illustrate how to properly apply attribution across sessions using a lookback window. | 
@@ -34,7 +59,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Derived field deduplicate function | Added documentation on the derived field [deduplicate](/help/data-views/derived-fields/derived-fields.md#deduplicate) function. |
 | Updated common error messages | Made minor updates to the [common error messages](/help/analysis-workspace/workspace-faq/error-messages.md). |
 | **June 2024** | |
-| Updated product name that refers to streaming media features | Replaced instances of "Media Analytics" and "Streaming Media" with the name "Streaming Media Collection Add-on" when referring to the set of streaming media features that collect streaming media data and surface it in Analysis Workspace. <p>These updates are available throughout the Customer Journey Analytics documentation as well as the [Streaming Media Collection Add-on documentation](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview).</p> |
+| Updated product name that refers to streaming media features | Replaced instances of "Media Analytics" and "Streaming Media" with the name "Streaming Media Collection Add-on" and "Streaming Media Collection" when referring to the set of streaming media features that collect streaming media data and surface it in Analysis Workspace. <p>These updates are available throughout the Customer Journey Analytics documentation as well as the [Streaming Media Collection documentation](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview).</p> |
 | Graph-based stitching | Updated and restructured [stitching documentation](/help/stitching/overview.md) with the introduction of graph-based stitching. |
 | AI Assistant | Added [documentation](../ai-assistant.md) on the AI Assistant for Customer Journey Analytics. |
 | Transform datasets for B2B lookups | Added documentation on how to support [person-based lookups on B2B data](/help/connections//transform-datasets-b2b-lookups.md) (including accounts, opportunities, marketing lists and campaigns) using transformation of B2B lookup datasets.  |
@@ -172,7 +197,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | October 2022 | Mobile app: New topic on [custom detail views](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html#view-detail-slides). |
 | October 2022 | Updates to the [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md) topic. |
 | **September 2022** | |
-| September 2022 | New use case on [Migrating Google Analytics data to Customer Journey Analytics](/help/use-cases/ga/overview.md). |
+| September 2022 | New use case on [Migrating Google Analytics data to Customer Journey Analytics](/help/use-cases/third-party/ga/overview.md). |
 | September 2022 | New topic on [Combo charts](/help/analysis-workspace/visualizations/combo-charts.md) in Workspace. |
 | September 2022 | New topic on [Experimentation panel](/help/analysis-workspace/c-panels/experimentation.md) in Workspace. |
 | **August 2022** | |
@@ -242,7 +267,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | April 2021 | New topic on [persistence](/help/data-views/component-settings/persistence.md). |
 | April 2021 | New documentation on support for scheduled projects in Workspace. |
 | April 2021 | New topics on the [enhanced Data Views experience](/help/data-views/data-views.md). |
-| April 2021 | New topics on [ingesting Google Analytics data](/help/use-cases/ga/overview.md) and [analyzing that data](/help/use-cases/ga/report.md). |
+| April 2021 | New topics on [ingesting Google Analytics data](/help/use-cases/third-party/ga/overview.md) and [analyzing that data](/help/use-cases/third-party/ga/report.md). |
 | April 2021 | Added topic on [scheduled reports](/help/analysis-workspace/export/t-schedule-report.md) in Workspace. |
 | April 2021 | New topic on [high-cardinality dimensions in Customer Journey Analytics](/help/components/dimensions/high-cardinality.md). |
 | **March 2021** | |

@@ -14,7 +14,7 @@ In some cases, executive users may need some additional assistance to access and
 
 1. Set up new users in the [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html).
 
-1. To be able to share scorecards, you must grant app users permissions to access scorecard components such as Analysis Workspace, the data views that scorecards are based on, as well as filters, metrics and dimensions.
+1. To be able to share scorecards, you must grant app users permissions to access scorecard components such as Analysis Workspace, the data views that scorecards are based on, as well as segments, metrics and dimensions.
 
 ## App users' system prerequisites
 
@@ -68,7 +68,7 @@ Once downloaded and installed, executive users can sign into the app using their
 
 Explain to the executive user how tiles appear in the scorecards you share.
 
-![Explain tiles including the date range, segment filter, and metrics and dimensions selected](assets/newexplain.png)
+![Explain tiles including the date range, segment, and metrics and dimensions selected](assets/newexplain.png)
 
 ![Example Scorecard](assets/intro_scorecard.png)
 

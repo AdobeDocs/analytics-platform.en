@@ -4,7 +4,7 @@ description: Multiple use cases that show how to use the BI extension in various
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
+exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
 ---
 # BI extension use cases
 
@@ -12,6 +12,9 @@ This article documents how to accomplish a number of use cases using the Custome
 
 * **Power BI Desktop**. The version used is 2.137.1102.0 64-bit (October 2024).
 * **Tableau Desktop**. The version used is 2024.1.5 (20241.24.0705.0334) 64-bit.
+* **Looker**. Online version 25.0.23, available through [looker.com](https://looker.com){target="_blank"}
+* **Jupyter Notebook**. The version used is 7.3.2.
+* **RStudio**. The version used is 2024.12.0, build 467.
 
 The following use cases are documented:
 
@@ -182,7 +185,274 @@ Tableau Desktop supports the following scenarios for the `FLATTEN` parameter. Se
 * [Connect Tableau Desktop to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau).
 
 
+>[!TAB Looker] 
+
+1. Access the required credentials and parameters from the Experience Platform Query Service UI.
+
+   1. Navigate to your Experience Platform sandbox.
+   1. Select ![Queries](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** from the left rail.
+   1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
+   1. Select `prod:cja` from the **[!UICONTROL Database]** dropdown menu.
+
+      ![Query service credentials](assets/queryservice-credentials.png){zoomable="yes"}
+
+1. Log in to Looker
+
+   1. Select **[!UICONTROL Admin]** from the left rail.
+   1. Select **[!UICONTROL Connections]**.
+   1. Select **[!UICONTROL Add Connection]**.
+   1. In the **[!UICONTROL Connect your database to Looker screen]**.
+
+      ![Looker Connect to database](assets/looker-connect.png){zoomable="yes"}
+
+      1. Enter a **[!UICONTROL Name]** for your connection, for example `Example Looker Connection`.
+      1. Ensure **[!UICONTROL All Projects]** is selected as the **[!UICONTROL Connection Scope]**.
+      1. Select **[!UICONTROL PostgreSQL 9.5+]** as the Dialect.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Host]** value from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel, as the value for **[!UICONTROL Host]**. For example: `examplecompany.platform-query.adobe.io`.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Port]** value from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel, as the value for **[!UICONTROL Port]**. For example: `80`.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Database]** value from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel as the value for **[!UICONTROL Database]**. Add `%3FFLATTEN` to the value that you paste. For example, `prod:cja%3FFLATTEN`.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Username]** value from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel as the value for **[!UICONTROL Username]**.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Password]** value from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel as the value for **[!UICONTROL Password]**.
+      1. Select **[!UICONTROL Expand all]** at **[!UICONTROL Optional Settings]**.
+      1. Set **[!UICONTROL Max connections]** per node to `5`.
+      1. Ensure **[!UICONTROL SSL]** is enabled.
+      1. Select **[!UICONTROL Test]** to test the connection. You should see a banner appear at the top of the screen with a message like **[!UICONTROL Success, can connect JDBC ....]**.
+      1. Select **[!UICONTROL Connect]** to establish and save the connection.
+   1. You see the new connection in the **[!UICONTROL Connections]** interface.
+   1. Select **←** from **[!UICONTROL Admin]** to go to main navigation in the left rail.
+   1. Select **[!UICONTROL Develop]**.
+   1. Select **[!UICONTROL Projects]**.
+   1. Select **[!UICONTROL New Model]** in LookML Projects.
+   1. To ensure you do not affect other users. select Enter Development Mode, when prompted.
+   1. In the **[!UICONTROL Create Model]** experience:
+      1. In **[!UICONTROL ➊ Select Database Connection]**:
+         1. Select your database connection in **[!UICONTROL Select database connection]**. For example: **[!UICONTROL example_looker_connection]**.
+         1. Name your project in **[!UICONTROL Create a new LookML Project for this model]**. For `example: example_looker_project`.
+         1. Select **[!UICONTROL Next]**.
+      1. In **[!UICONTROL ➋ Select Tables]**:
+         1. Select **[!UICONTROL public]** and then ensure your Customer Journey Analytics data view is selected. For example: ![SelectBox](/help/assets/icons/SelectBox.svg) **[!UICONTROL cc_data_view]**.
+         1. Select **[!UICONTROL Next]**.
+      1. In **[!UICONTROL ➌ Select Primary Keys]**:
+         1. Select **[!UICONTROL Next]**.
+      1. In **[!UICONTROL ➍ Select Explores to Create]**:
+         1. Ensure you select your view. For example: **[!UICONTROL cc_data_view.view]**. 
+         1. Select **[!UICONTROL Next]**.
+      1. In **[!UICONTROL ➎ Enter Model Name]**:
+         1. Name your model. For example: `example_looker_model`.
+      1. Select **[!UICONTROL Complete and Explore Data]**.
+   
+   You are redirected to the **[!UICONTROL Explore]** interface of Looker, ready to explore the data.
+   
       
+
+### To FLATTEN or not
+
+Looker supports the following scenarios for the `FLATTEN` parameter. See [Flatten nested data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
+
+| FLATTEN parameter | Example | Supported | Remarks | 
+|---|---|:---:|---|
+| None | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | | 
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | | 
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Recommended option to use**. Note, `%3FFLATTEN` is URL-encoded version of `?FLATTEN`. |
+
+### More information
+
+* [Prerequisites](/help/data-views/bi-extension.md#prerequisites)
+* [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+
+
+>[!TAB Jupyter Notebook]
+
+1. Access the required credentials and parameters from the Experience Platform Query Service UI.
+
+   1. Navigate to your Experience Platform sandbox.
+   1. Select ![Queries](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** from the left rail.
+   1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
+   1. Select `prod:cja` from the **[!UICONTROL Database]** dropdown menu.
+
+      ![Query service credentials](assets/queryservice-credentials.png){zoomable="yes"}
+
+1. Ensure you have set up a dedicated Python virtual environment for running your Jupyter Notebook environment.
+1. Ensure you have installed the required libraries in your virtual environment:
+   * ipython-sql: `pip install ipython-sql`.
+   * psycopg2-binary: `pip install psycopg-binary`.
+   * sqlalchemy: pip `install sqlalchemy`.
+
+1. Start Jupyter Notebook from your virtual environment: `jupyter notebook`.
+1. Create a new notebook, or download [this sample notebook](assets/BI-Extension.ipynb.zip).
+1. In your first cell, enter and execute:
+   
+   ```
+   %config SqlMagic.style = '_DEPRECATED_DEFAULT'
+   ```
+
+1. In a new cell, enter the config parameters for your connection. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the values required for the config parameters. For example:
+
+   ```
+   import ipywidgets as widgets
+   from IPython.display import display
+
+   config_host = widgets.Text(description='Host:', value='example.platform-query-stage.adobe.io',
+                           layout=widgets.Layout(width="600px"))
+   display(config_host)
+   config_port = widgets.IntText(description='Port:', value=80,
+                              layout=widgets.Layout(width="200px"))
+   display(config_port)
+   config_db = widgets.Text(description='Database:', value='prod:cja',
+                         layout=widgets.Layout(width="300px"))
+   display(config_db)
+   config_username = widgets.Text(description='Username:', value='EC582F955C8A79F70A49420E@AdobeOrg',
+                               layout=widgets.Layout(width="600px"))
+   display(config_username)
+   config_password = widgets.Password(description='Password:', value='***',
+                                   layout=widgets.Layout(width="600px"))
+   display(config_password)
+   ```
+
+1. Execute the cell.
+1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the password from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Password]** field in Jupyter Notebook.
+
+   ![Jupter Notebook Config Step 1](assets/jupyter-config-step1.png){zoomable="yes"}
+
+1. In a new cell, enter the statements to load the SQL extension, the required library and connect with Customer Journey Analytics.
+
+   ```python
+   %load_ext sql
+   from sqlalchemy import create_engine
+   %sql postgresql://{config_username.value}:{config_password.value}@{config_host.value}:{config_port.value}/{config_db.value}?sslmode=require
+   ```
+
+   Execute the shell. You should see no output but the cell should execute without any warning.
+
+   ![Jupyer Notebook Config Step 4](assets/jupyter-config-step2.png){zoomable="yes"}
+
+1. In a new call, enter the statements to get a list of available data views based on the connection.
+
+   ```python
+   %%sql
+   SELECT n.nspname as "Schema",
+      c.relname as "Name",
+      CASE c.relkind WHEN 'r' THEN 'table' WHEN 'v' THEN 'view' WHEN 'm' THEN 'materialized view' WHEN 'i' THEN 'index' WHEN 'S' THEN 'sequence' WHEN 's' THEN 'special' WHEN 't' THEN 'TOAST table' WHEN 'f' THEN 'foreign table' WHEN 'p' THEN 'partitioned table' WHEN 'I' THEN 'partitioned index' END as "Type",
+      pg_catalog.pg_get_userbyid(c.relowner) as "Owner"
+   FROM pg_catalog.pg_class c
+   LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+   WHERE c.relkind IN ('v','')
+      AND n.nspname <> 'pg_catalog'
+      AND n.nspname !~ '^pg_toast'
+      AND n.nspname <> 'information_schema'
+      AND pg_catalog.pg_table_is_visible(c.oid)
+      AND c.relname NOT LIKE '%test%'
+      AND c.relname NOT LIKE '%ajo%'
+   ORDER BY 1,2;
+   ```
+
+   Execute the shell. You should see output simular to the screenshot below.
+
+   ![Jupyter Notebook Config Step 5](assets/jupyter-config-step3.png){zoomable="yes"}
+
+   You should see the **[!UICONTROL cc_data_view]** in the list of data views.
+
+### To FLATTEN or not
+
+Jupyter Notebook supports the following scenarios for the `FLATTEN` parameter. See [Flatten nested data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
+
+| FLATTEN parameter | Example | Supported | Remarks | 
+|---|---|:---:|---|
+| None | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | | 
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | | 
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Recommended option to use**. Note, `%3FFLATTEN` is URL-encoded version of `?FLATTEN`. |
+
+### More information
+
+* [Prerequisites](/help/data-views/bi-extension.md#prerequisites)
+* [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+
+>[!TAB RStudio]
+
+1. Access the required credentials and parameters from the Experience Platform Query Service UI.
+
+   1. Navigate to your Experience Platform sandbox.
+   1. Select ![Queries](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** from the left rail.
+   1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
+   1. Select `prod:cja` from the **[!UICONTROL Database]** dropdown menu.
+
+      ![Query service credentials](assets/queryservice-credentials.png){zoomable="yes"}
+
+1. Start RStudio.
+1. Create a new R Markdown file, or download [this example R markdown file](assets/BI-Extension.Rmd.zip).
+1. In your first chunk, enter the following statements between ` ```{r} ` and ` ``` `. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the values required for the various parameters, like `host`, `dbname`, and `user`. For example:
+   
+   ```R
+   library(rstudioapi)
+   library(DBI)
+   library(dplyr)
+   library(tidyr)
+   library(RPostgres)
+   library(ggplot2)
+
+   host <- rstudioapi::showPrompt(title = "Host", message = "Host", default = "orangestagingco.platform-query-stage.adobe.io")
+   dbname <- rstudioapi::showPrompt(title = "Database", message = "Database", default = "prod:cja?FLATTEN")
+   user <- rstudioapi::showPrompt(title = "Username", message = "Username", default = "EC582F955C8A79F70A49420E@AdobeOrg")
+   password <- rstudioapi::askForPassword(prompt = "Password")
+   ```
+
+1. Run the chunk. You are prompted for **[!UICONTROL Host]**, **[!UICONTROL Database]**, and **[!UICONTROL User]**. Simply accept the values you have provided as part of the previous step. 
+1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the password from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Password]** dialog prompt in RStudio.
+
+   ![RStudio config step 1](assets/rstudio-config-step1.png){zoomable="yes"}
+
+1. Create a new chunk and enter the following statements between ` ``` {r} ` and ` ``` `.
+
+   ```R
+   con <- dbConnect(
+      RPostgres::Postgres(),
+      host = host,
+      port = 80,
+      dbname = dbname,
+      user = user,
+      password = password,
+      sslmode = 'require'
+   )
+   ```
+
+1. Run the chunk. You should see no output if the connection is successful.
+
+
+1. Create a new chunk and enter the following statements between ` ``` {r} ` and ` ``` `.
+
+   ```R
+   views <- dbListTables(con)
+   print(views)
+   ```
+
+1. Run the chunk. You should see `character(0)` as the only output.
+
+
+1. Create a new chunk and enter the following statements between ` ``` {r} ` and ` ``` `.
+
+   ```R
+   glimpse(dv)
+   ```
+
+1. Run the chunk. You should see output simular to the screenshot below.
+
+   ![RStudio config step 2](assets/rstudio-config-step2.png){zoomable="yes"}
+
+### To FLATTEN or not
+
+RStudio supports the following scenarios for the `FLATTEN` parameter. See [Flatten nested data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
+
+| FLATTEN parameter | Example | Supported | Remarks | 
+|---|---|:---:|---|
+| None | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | | 
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |  **Recommended option to use**. | 
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | |
+
+### More information
+
+* [Prerequisites](/help/data-views/bi-extension.md#prerequisites)
+* [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+
 >[!ENDTABS]
 
 +++
@@ -280,6 +550,74 @@ An example **[!UICONTROL Daily Trend]** panel for the use case:
 
       ![Tableau Desktop Dashboard 1](assets/uc2-tableau-dashboard.png){zoomable="yes"}
 
+
+>[!TAB Looker]
+
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
+      ![Looker filter](assets/uc2-looker-filter.png){zoomable="yes"}
+1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
+1. From the **[!UICONTROL Cc Data View]** section in the left rail, 
+   1. Select **[!UICONTROL ‣ Daterange Date]**, then **[!UICONTROL Date]** from the list of **[!UICONTROL DIMENSIONS]**.
+   1. Select **[!UICONTROL Count]** underneath **[!UICONTROL MEASURES]** in the left rail (at the bottom).
+1. Select **[!UICONTROL Run]**.
+1. Select **[!UICONTROL ‣ Visualization]** to display the line visualization.
+
+You should see a visualization and table similar as shown below.
+
+![Looker result daily trend](assets/uc2-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT daterangeday AS Date, COUNT(*) AS Events \
+             FROM cc_data_view \
+             WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+             GROUP BY 1 \
+             ORDER BY Date ASC
+   df = data.DataFrame()
+   df = df.groupby('Date', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.lineplot(x='Date', y='Events', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc2-jupyter-results.png){zoomable="yes"}
+
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+
+   ```R
+   ## Daily Events
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01") %>%
+      group_by(daterangeday) %>%
+      count() %>%
+      arrange(daterangeday, .by_group = FALSE)
+   ggplot(df, aes(x = daterangeday, y = n)) +
+      geom_line(color = "#69b3a2") +
+      ylab("Events") +
+      xlab("Date")
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc2-rstudio-results.png){zoomable="yes"}
+
 >[!ENDTABS]
 
 +++
@@ -349,6 +687,74 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
 
       ![Tableau Desktop Dashboard 1](assets/uc3-tableau-dashboard.png){zoomable="yes"}
 
+
+>[!TAB Looker]
+
+
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
+      ![Looker filter](assets/uc2-looker-filter.png){zoomable="yes"}
+1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/01/02]**.
+1. From the **[!UICONTROL Cc Data View]** section in the left rail, 
+   1. Select **[!UICONTROL ‣ Daterangehour Date]**, then **[!UICONTROL Time]** from the list of **[!UICONTROL DIMENSIONS]**.
+   1. Select **[!UICONTROL Count]** underneath **[!UICONTROL MEASURES]** in the left rail (at the bottom).
+1. Select **[!UICONTROL Run]**.
+1. Select **[!UICONTROL ‣ Visualization]** to display the line visualization.
+
+You should see a visualization and table similar as shown below.
+
+![Looker result daily trend](assets/uc3-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT daterangehour AS Hour, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-01-02' \
+               GROUP BY 1 \
+                ORDER BY Hour ASC
+   df = data.DataFrame()
+   df = df.groupby('Hour', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.lineplot(x='Hour', y='Events', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc3-jupyter-results.png){zoomable="yes"}
+
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+
+   ```R
+   ## Hourly Events
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-01-02") %>%
+      group_by(daterangehour) %>%
+      count() %>%
+      arrange(daterangehour, .by_group = FALSE)
+   ggplot(df, aes(x = daterangehour, y = n)) +
+      geom_line(color = "#69b3a2") +
+      ylab("Events") +
+      xlab("Hour")
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc3-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -449,6 +855,74 @@ An example **[!UICONTROL Monthly Trend]** panel for the use case:
 
       ![Tableau Desktop Dashboard 1](assets/uc4-tableau-dashboard.png){zoomable="yes"}
 
+
+>[!TAB Looker]
+
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
+      ![Looker filter](assets/uc2-looker-filter.png){zoomable="yes"}
+1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
+1. From the left **[!UICONTROL Cc Data View]** rail, 
+   1. Select **[!UICONTROL ‣ Daterangemonth Date]**, then **[!UICONTROL Month]** from the list of **[!UICONTROL DIMENSIONS]**.
+   1. Select **[!UICONTROL Count]** underneath **[!UICONTROL MEASURES]** in the left rail (at the bottom).
+1. Select **[!UICONTROL Run]**.
+1. Select **[!UICONTROL ‣ Visualization]** to display the line visualization.
+
+You should see a visualization and table similar as shown below.
+
+![Looker result daily trend](assets/uc4-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT daterangemonth AS Month, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01' \
+               GROUP BY 1 \
+               ORDER BY Month ASC
+   df = data.DataFrame()
+   df = df.groupby('Month', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.lineplot(x='Month', y='Events', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc4-jupyter-results.png){zoomable="yes"}
+
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+
+   ```R
+   ## Hourly Events
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-01-02") %>%
+      group_by(daterangehour) %>%
+      count() %>%
+      arrange(daterangehour, .by_group = FALSE)
+   ggplot(df, aes(x = daterangehour, y = n)) +
+      geom_line(color = "#69b3a2") +
+      ylab("Events") +
+      xlab("Hour")
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc4-rstudio-results.png){zoomable="yes"}
+
 >[!ENDTABS]
 
 +++
@@ -540,7 +1014,7 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
    1. Drag the **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry onto the **[!UICONTROL Filters]** shelf.
    1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
-   1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of dates]** and specify a period of `01/01/2023` - `31/12/2024`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of dates]** and specify a period of `01/01/2023` - `31/12/2023`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
 
       ![Tableau Desktop Filter](assets/uc5-tableau-filter.png){zoomable="yes"}
 
@@ -579,6 +1053,104 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
    Your **[!UICONTROL Dashboard 1]** view should look like below.
 
    ![Tableau Desktop Dashboard 1](assets/uc5-tableau-dashboard.png){zoomable="yes"}
+
+
+
+>[!TAB Looker]
+
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
+      ![Looker filter](assets/uc2-looker-filter.png){zoomable="yes"}
+1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
+1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail, select **[!UICONTROL Product Name]**.
+1. From the **[!UICONTROL ‣ Custom Fields]** section in the left rail:
+   1. Select **[!UICONTROL Custom Measure]** from the **[!UICONTROL + Add]** dropdown menu. 
+   1. In the **[!UICONTROL Create custom measure]** dialog:
+      1. Select **[!UICONTROL Purchase Revenue]** from the **[!UICONTROL Field to measure]** dropdown menu.
+      1. Select **[!UICONTROL Sum]** from the **[!UICONTROL Measure type]** dropdown menu.
+      1. Enter a custom field name for **[!UICONTROL Name]**. For example: `Purchase Revenue`.
+      1. Select the **[!UICONTROL Field details]** tab.
+      1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** dropdown menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
+         ![Looker custom metric field](assets/uc5-looker-customfield.png){zoomable="yes"}
+      1. Select **[!UICONTROL Save]**.
+   1. Select **[!UICONTROL Custom Measure]** once more from the **[!UICONTROL + Add]** dropdown menu. In the **[!UICONTROL Create custom]** measure dialog:
+      1. Select **[!UICONTROL Purchases]** from the **[!UICONTROL Field to measure]** dropdown menu.
+      1. Select **[!UICONTROL Sum]** from the **[!UICONTROL Measure type]** dropdown menu.
+      1. Enter a custom field name for **[!UICONTROL Name]**. For example: `Sum of Purchases`.
+      1. Select the **[!UICONTROL Field details]** tab.
+      1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** dropdown menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
+      1. Select **[!UICONTROL Save]**.
+   1. Both fields are automatically added to the Data view. 
+1. Select **[!UICONTROL + Filter]** to add another **[!UICONTROL Filters]** and to limit the data.
+1. In the **[!UICONTROL Add Filter]** dialog, select **[!UICONTROL ‣ Custom Fields]**, then **[!UICONTROL Purchase Revenue]**.
+1. Make the appropriate selections and enter the proposed values, so the filter reads **[!UICONTROL is between inclusive]** `1000000` **[!UICONTROL AND]** `2000000`.
+1. Select **[!UICONTROL Run]**.
+1. Select **[!UICONTROL ‣ Visualization]** to display the line visualization.
+1. Select **[!UICONTROL Edit]** in **[!UICONTROL Visualization]** to update the visualization. In the popup dialog:
+   1. Select the **[!UICONTROL Series]** tab.
+   1. Scroll down to see **[!UICONTROL Purchases]** and change the **[!UICONTROL Type]** to **[!UICONTROL Line]**.
+   1. Select the **[!UICONTROL Y]** tab.
+   1. Drag **[!UICONTROL Purchases]** from the **[!UICONTROL Left 1 ]** container to where it reads **[!UICONTROL *Drag series here to create a new left axis*]**. This action creates a **[!UICONTROL Left 2]** container.
+      ![Looker visualization configuration](assets/uc5-looker-visualization.png){zoomable="yes"}
+   1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) next to **[!UICONTROL Edit]** to hide the popup dialog
+
+You should see a visualization and table similar as shown below.
+
+![Looker result daily trend](assets/uc5-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT product_name AS `Product Name`, SUM(purchase_revenue) AS `Purchase Revenue`, SUM(purchases) AS `Purchases` \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01' \
+               GROUP BY 1 \
+               LIMIT 10;
+   df = data.DataFrame()
+   df = df.groupby('Product Name', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.barplot(x='Purchase Revenue', y='Product Name', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc5-jupyter-results.png){zoomable="yes"}
+
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+
+   ```R
+   library(tidyr)
+
+   ## Single dimension ranked
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2024-01-01") %>%
+      group_by(product_name) %>%
+      summarise(purchase_revenue = sum(purchase_revenue), purchases = sum(purchases)) %>%
+      arrange(product_name, .by_group = FALSE)
+   dfV <- df %>%
+      head(5)
+   ggplot(dfV, aes(x = purchase_revenue, y = product_name)) +
+      geom_col(position = "dodge") +
+      geom_text(aes(label = purchase_revenue), vjust = -0.5)
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc5-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -739,6 +1311,101 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
 
    ![Tableau Desktop Dashboard 1](assets/uc6-tableau-final.png){zoomable="yes"}
 
+
+>[!TAB Looker]
+
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
+      ![Looker filter](assets/uc2-looker-filter.png){zoomable="yes"}
+1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
+1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail: 
+   1. Select **[!UICONTROL Product Category]**.
+   1. Select **[!UICONTROL Product Name]**.
+1. From the **[!UICONTROL ‣ Custom Fields]** section in the left rail:
+   1. Select **[!UICONTROL Custom Measure]** from the **[!UICONTROL + Add]** dropdown menu. 
+   1. In the **[!UICONTROL Create custom measure]** dialog:
+      1. Select **[!UICONTROL Purchase Revenue]** from the **[!UICONTROL Field to measure]** dropdown menu.
+      1. Select **[!UICONTROL Sum]** from the **[!UICONTROL Measure type]** dropdown menu.
+      1. Enter a custom field name for **[!UICONTROL Name]**. For example: `Sum of Purchase Revenue`.
+      1. Select the **[!UICONTROL Field details]** tab.
+      1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** dropdown menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
+         ![Looker custom metric field](assets/uc5-looker-customfield.png){zoomable="yes"}
+      1. Select **[!UICONTROL Save]**.
+   1. Select **[!UICONTROL Custom Measure]** once more from the **[!UICONTROL + Add]** dropdown menu. In the **[!UICONTROL Create custom]** measure dialog:
+      1. Select **[!UICONTROL Purchases]** from the **[!UICONTROL Field to measure]** dropdown menu.
+      1. Select **[!UICONTROL Sum]** from the **[!UICONTROL Measure type]** dropdown menu.
+      1. Enter a custom field name for **[!UICONTROL Name]**. For example: `Sum of Purchases`.
+      1. Select the **[!UICONTROL Field details]** tab.
+      1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** dropdown menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
+      1. Select **[!UICONTROL Save]**.
+   1. Both fields are automatically added to the Data view.
+1. In the **[!UICONTROL Filters]** section, select **[!UICONTROL + Filter]**. In the **[!UICONTROL Add Filter]** dialog. Select **[!UICONTROL ‣ Custom Fields]**, then **[!UICONTROL Purchase Revenue]**.
+1. Select **[!UICONTROL is >]** and enter `800000` to limit the results.
+1. Select **[!UICONTROL Run]**.
+1. Select **[!UICONTROL ‣ Visualization]** to display the line visualization.
+1. Select **[!UICONTROL Edit]** in **[!UICONTROL Visualization]** to update the visualization. In the popup dialog:
+   1. Select the **[!UICONTROL Plot]** tab.
+   1. Scroll down and select **[!UICONTROL Edit Chart Config]**.
+   1. Modify the JSON in **[!UICONTROL Chart Config (Override)]** like in the screenshot below, and then select **[!UICONTROL Preview]**.
+      
+      ![Looker vsualization config](assets/uc6-looker-visualization.png){zoomable="yes"}
+
+   1. Select **[!UICONTROL Apply]**.
+   1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) next to **[!UICONTROL Edit]** to hide the popup dialog
+
+You should see a visualization and table similar as shown below.
+
+![Looker result daily trend](assets/uc6-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT product_category AS `Product Category`, product_name AS `Product Name`, SUM(purchase_revenue) AS `Purchase Revenue`, SUM(purchases) AS `Purchases` \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01' \
+               GROUP BY 1, 2 \
+               ORDER BY `Purchase Revenue` DESC \
+               LIMIT 10;
+   df = data.DataFrame()
+   df = df.groupby(['Product Category', 'Product Name'], as_index=False).sum()
+   plt.figure(figsize=(8, 8))
+   sns.scatterplot(x='Product Category', y='Product Name', size='Purchase Revenue', sizes=(10, 200), hue='Purchases', palette='husl', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc6-jupyter-results.png){zoomable="yes"}
+
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+
+   ```R
+   ## Multiple dimensions ranked
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2024-01-01") %>%
+      group_by(product_category, product_name) %>%
+      summarise(purchase_revenue = sum(purchase_revenue), purchases = sum(purchases), .groups = "keep") %>%
+      arrange(desc(purchase_revenue), .by_group = FALSE)
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc6-rstudio-results.png){zoomable="yes"}
+
+
 >[!ENDTABS]
 
 +++
@@ -849,12 +1516,66 @@ Alternatively, you can use the count distinct functionality from Tableau Desktop
 1. Use  **[!UICONTROL Product Name]** instead of **[!UICONTROL Cm Product Name Count Distinct]**.
 1. Apply **[!UICONTROL Measure]** > **[!UICONTROL Count (Distinct)]** on **[!UICONTROL Product Name]** in **[!UICONTROL Marks]**.
 
-   ![Power BI Count Distinct](assets/uc7-tableau-alternative.png){zoomable="yes"}
+   ![Tableau Count Distinct](assets/uc7-tableau-alternative.png){zoomable="yes"}
+
+
+>[!TAB Looker]
+
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
+      ![Looker filter](assets/uc2-looker-filter.png){zoomable="yes"}
+1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
+1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail: 
+   1. Select **[!UICONTROL Daterange Date]**, then **[!UICONTROL Date]**.
+   1. Select **[!UICONTROL Aggregate ‣ Count Distinct]** from the **⋮ More** context menu on **[!UICONTROL Product Name]**.
+      ![Looker Product Name Context menu](assets/uc7-looker-count-distinct.png){zoomable="yes"}
+1. Select **[!UICONTROL Run]**.
+1. Select **[!UICONTROL ‣ Visualization]** and select 6︎⃣ from the toolbar to display a Single value visualization.
+
+You should see a visualization and table similar as shown below.
+
+![Looker count distinct](assets/uc7-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   data = %sql SELECT COUNT(DISTINCT(product_name)) AS `Product Name` \
+      FROM cc_data_view \
+      WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01';
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc7-jupyter-results.png){zoomable="yes"}
+
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+
+   ```R
+   ## Count Distinct
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01") %>%
+      summarise(product_name_count_distinct = n_distinct(product_name))
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc7-rstudio-results.png){zoomable="yes"}
+
 
 >[!ENDTABS]
 
 +++
-
 
 
 ## Use date range names to filter
@@ -909,8 +1630,8 @@ Note how the date range defined in the Freeform table visualization overrules th
 1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
    1. Drag the **[!UICONTROL Daterange Name]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Filters]** shelf.
    1. In the **[!UICONTROL Filter \[Daterange Name\]]** dialog ensure **[!UICONTROL Select from list]** is selected, and select **[!UICONTROL Last Year 2023]** from the list. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
-   1. Drag **[!UICONTROL Daterangemonth]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Rows]**.. Select **[!UICONTROL Daterangemonth]** and select **[!UICONTROL Month]**. The value changes to **[!UICONTROL MONTH(Daterangemonth)]**.
-   1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**.. The value changes to **[!UICONTROL SUM(Occurrences)]**.
+   1. Drag **[!UICONTROL Daterangemonth]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Rows]**. Select **[!UICONTROL Daterangemonth]** and select **[!UICONTROL Month]**. The value changes to **[!UICONTROL MONTH(Daterangemonth)]**.
+   1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**. The value changes to **[!UICONTROL SUM(Occurrences)]**.
    1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
    1. Select **[!UICONTROL Swap Rows and Columns]** from the toolbar.
    1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
@@ -918,6 +1639,91 @@ Note how the date range defined in the Freeform table visualization overrules th
       Your Tableau Desktop should look like below.
 
       ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc8-tableau-final.png){zoomable="yes"}
+
+>[!TAB Looker]
+
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Name]**.
+1. Specify the **[!UICONTROL Cc Data View Daterange Name]** filter as **[!UICONTROL is]** and select **[!UICONTROL Last Year 2023]** from the list of values.
+1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail: 
+   1. Select **[!UICONTROL Daterange Month]**, then **[!UICONTROL Month]**.
+   1. Select **[!UICONTROL Count]** underneath **[!UICONTROL MEASURES]** in the left rail (at the bottom).
+1. Select **[!UICONTROL Run]**.
+1. Select **[!UICONTROL ‣ Visualization]**.
+
+You should see a visualization and table similar as shown below.
+
+![Looker count distinct](assets/uc8-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   data = %sql SELECT daterangeName FROM cc_data_view;
+   style = {'description_width': 'initial'}
+   daterange_name = widgets.Dropdown(
+      options=[d for d, in data],
+      description='Date Range Name:',
+      style=style
+   )
+   display(daterange_name)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc8-jupyter-input.png){zoomable="yes"}
+
+1. Select **[!UICONTROL Fishing Products]** from the dropdown menu.
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT daterangemonth AS Month, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterangeName = '{daterange_name.value}' \
+               GROUP BY 1 \
+               ORDER BY Month ASC
+   df = data.DataFrame()
+   df = df.groupby('Month', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.lineplot(x='Month', y='Events', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc8-jupyter-results.png){zoomable="yes"}
+
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk. Ensure you use the appropriate date range name. For example, `Last Year 2023`.
+
+   ```R
+   ## Monthly Events for Last Year
+   df <- dv %>%
+      filter(daterangeName == "Last Year 2023") %>%
+      group_by(daterangemonth) %>%
+      count() %>%
+      arrange(daterangemonth, .by_group = FALSE)
+   ggplot(df, aes(x = daterangemonth, y = n)) +
+      geom_line(color = "#69b3a2") +
+      ylab("Events") +
+      xlab("Hour")
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc8-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -927,7 +1733,7 @@ Note how the date range defined in the Freeform table visualization overrules th
 
 ## Use filter names to filter
 
-In this use case, you want to use an existing filter for the Fishing product category, that you have defined in Customer Journey Analytics, to filter and report on product names and occurrences (events) during January 2023.
+In this use case, you want to use an existing filter for the Fishing product category, that you have defined in Customer Journey Analytics. To filter and report on product names and occurrences (events) during January 2023.
 
 +++ Customer Journey Analytics
 
@@ -985,13 +1791,104 @@ You then can use that filter in an example **[!UICONTROL Using Date Range Names 
    1. In the **[!UICONTROL Filter Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
    1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of dates]**, and select `01/01/2023` - `01/02/2023`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
    1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list to **[!UICONTROL Rows]**.
-   1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**.. The value changes to **[!UICONTROL SUM(Occurrences)]**.
+   1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**. The value changes to **[!UICONTROL SUM(Occurrences)]**.
    1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
    1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
 
       Your Tableau Desktop should look like below.
 
       ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc9-tableau-final.png){zoomable="yes"}   
+
+>[!TAB Looker]
+
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
+      ![Looker filter](assets/uc2-looker-filter.png){zoomable="yes"}
+1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]** to add another filter.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Filter name]**.
+1. Ensure **[!UICONTROL is]** the selection for the filter.
+1. Select **[!UICONTROL Fishing Products]** from the list of possible values.
+1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail: 
+   1. Select **[!UICONTROL Product Name]**.
+   1. Select **[!UICONTROL Count]** underneath **[!UICONTROL MEASURES]** in the left rail (at the bottom).
+1. Select **[!UICONTROL Run]**.
+1. Select **[!UICONTROL ‣ Visualization]**.
+
+You should see a visualization and table similar as shown below.
+
+![Looker count distinct](assets/uc9-looker-result.png){zoomable="yes"}
+
+
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   data = %sql SELECT filterName FROM cc_data_view;
+   style = {'description_width': 'initial'}
+   filter_name = widgets.Dropdown(
+      options=[d for d, in data],
+      description='Filter Name:',
+      style=style
+   )
+   display(filter_name)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc9-jupyter-input.png){zoomable="yes"}
+
+1. Select **[!UICONTROL Fishing Products]** from the dropdown menu.
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT product_name AS `Product Name`, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+                  AND filterName = '{filter_name.value}' \
+               GROUP BY 1 \
+               LIMIT 10;
+   df = data.DataFrame()
+   df = df.groupby('Product Name', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.barplot(x='Events', y='Product Name', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc9-jupyter-results.png){zoomable="yes"}
+
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk. Ensure you use the appropriate filter name. For example, `Fishing Products`.
+
+   ```R
+   ## Dimension filtered by name
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01" & filterName == "Fishing Products") %>%
+      group_by(product_name) %>%
+      count() %>%
+      arrange(desc(n), .by_group = FALSE)
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc9-rstudio-results.png){zoomable="yes"}
+
 
 >[!ENDTABS]
 
@@ -1000,7 +1897,8 @@ You then can use that filter in an example **[!UICONTROL Using Date Range Names 
 
 ## Use dimension values to filter
 
-You create a new filter in Customer Journey Analytics that filters on products from the hunting product category. Then you want to use the new filter to report on product names and occurrences (events) for products from the hunting category during January 2023.
+You use the dynamic **[!UICONTROL Hunting]** value for **[!UICONTROL Product Category]** to filter products from the hunting category. Alternatively, for those BI tools that do not support the dynamic retrieval of product category values, you create a new filter in Customer Journey Analytics that filters on products from the hunting product category. 
+Then you want to use the new filter to report on product names and occurrences (events) for products from the hunting category during January 2023.
 
 +++ Customer Journey Analytics
 
@@ -1029,7 +1927,7 @@ You then can use that filter in an example **[!UICONTROL Using Dimension Values 
    
 1. In the **[!UICONTROL Data]** pane:
    1. Select **[!UICONTROL daterange]**.
-   1. Select **[!UICONTROL filterName]**.
+   1. Select **[!UICONTROL product_category]**.
    1. Select **[!UICONTROL product_name]**.
    1. Select **[!UICONTROL ∑ occurrences]**.
 
@@ -1038,20 +1936,22 @@ You then can use that filter in an example **[!UICONTROL Using Dimension Values 
 1. In the **[!UICONTROL Filters]** pane:
    1. Select **[!UICONTROL filterName is (All)]** from **[!UICONTROL Filters on this visual]**.
    1. Select **[!UICONTROL Basic filtering]** as the **[!UICONTROL Filter type]**.
-   1. Underneath the **[!UICONTROL Search]** field, select **[!UICONTROL Hunting Products]**, which is the name of the existing filter defined in Customer Journey Analytics.
    1. Select **[!UICONTROL daterange is (All)]** from **[!UICONTROL Filters on this visual]**.
    1. Select **[!UICONTROL Advanced filtering]** as the **[!UICONTROL Filter type]**.
    1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `2/1/2023`.
+   1. Select **[!UICONTROL Basic filter]** as the **[!UICONTROL Filter type]** for **[!UICONTROL product_category]**, and select **[!UICONTROL Hunting]** from the list of possible values. 
    1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove **[!UICONTROL filterName]** from **[!UICONTROL Columns]**.
    1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove **[!UICONTROL daterange]** from **[!UICONTROL Columns]**.
    
-   You see the table updated with the applied **[!UICONTROL filterName]** filter. Your Power BI Desktop should look like below.
+   You see the table updated with the applied **[!UICONTROL product_category]** filter. Your Power BI Desktop should look like below.
 
    ![Power BI Desktop Using Date Range Names To Filter](assets/uc10-powerbi-final.png){zoomable="yes"}
 
 
 
 >[!TAB Tableau Desktop] 
+
+![AlertRed](/help/assets/icons/AlertRed.svg) Tableau Desktop does not support fetching the dynamic list of product categories from Customer Journey Analytics. Instead, this use case uses the newly created filter for **[!UICONTROL Hunting Products]** and use the filter name critetia.
 
 1. In the **[!UICONTROL Data Source]** view, underneath **[!UICONTROL Data]**, from the context menu on **[!UICONTROL cc_data_view(prod:cja%3FFLATTEN)]**, select **[!UICONTROL Refresh]**. You need to refresh the connection to pick up the new filter you just defined in Customer Journey Analytics.
 1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
@@ -1061,13 +1961,98 @@ You then can use that filter in an example **[!UICONTROL Using Dimension Values 
    1. In the **[!UICONTROL Filter Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
    1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of dates]**, and select `01/01/2023` - `1/2/2023`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
    1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list to **[!UICONTROL Rows]**.
-   1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**.. The value changes to **[!UICONTROL SUM(Occurrences)]**.
+   1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**. The value changes to **[!UICONTROL SUM(Occurrences)]**.
    1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
    1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
 
       Your Tableau Desktop should look like below.
 
       ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc10-tableau-final.png){zoomable="yes"}   
+
+>[!TAB Looker]
+
+1. In the 1. In the **[!UICONTROL Explore]** interface of Looker, refresh your connection. Select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Clear cache and refresh]**.
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
+      ![Looker filter](assets/uc2-looker-filter.png){zoomable="yes"}
+1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]** to add another filter.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Product Category]**.
+1. Ensure **[!UICONTROL is]** as the selection for the filter.
+
+![AlertRed](/help/assets/icons/AlertRed.svg) Lookes does not show the list of possible values for **[!UICONTROL Product Category]**.
+
+![Looker count distinct](assets/uc10-looker-result.png){zoomable="yes"}
+
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   data = %sql SELECT DISTINCT product_category FROM cc_data_view WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01';
+   style = {'description_width': 'initial'}
+   category_filter = widgets.Dropdown(
+      options=[d for d, in data],
+      description='Product Category:',
+      style=style
+   )
+   display(category_filter)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc10-jupyter-input.png){zoomable="yes"}
+
+1. Select **[!UICONTROL Hunting]** from the dropdown menu.
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   import seaborn as sns
+   import matplotlib.pyplot as plt
+   data = %sql SELECT product_name AS `Product Name`, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+               AND product_category = '{category_filter.value}' \
+               GROUP BY 1 \
+               ORDER BY Events DESC \
+               LIMIT 10;
+   df = data.DataFrame()
+   df = df.groupby('Product Name', as_index=False).sum()
+   plt.figure(figsize=(15, 3))
+   sns.barplot(x='Events', y='Product Name', data=df)
+   plt.show()
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc10-jupyter-results.png){zoomable="yes"}
+
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk. Ensure you use an appropriate category. For examplee, `Hunting`.
+
+   ```R
+   ## Dimension 1 Filtered by Dimension 2 value
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01" & product_category == "Hunting") %>%
+      group_by(product_name) %>%
+      count() %>%
+      arrange(desc(n), .by_group = FALSE)
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc10-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1215,7 +2200,7 @@ limit 1000001
    1. In the **[!UICONTROL Filter Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
    1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of dates]**, and select `01/01/2023` - `1/2/2023`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
    1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Rows]**.
-   1. Drag **[!UICONTROL Purchases]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**.. The value changes to **[!UICONTROL SUM(Purchases)]**.
+   1. Drag **[!UICONTROL Purchases]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**. The value changes to **[!UICONTROL SUM(Purchases)]**.
    1. Drag **[!UICONTROL Purchase Revenue]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**, next to **[!UICONTROL SUM(Purchases)]**. The value changes to **[!UICONTROL SUM(Purchase Revenue)]**.
    1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
    1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
@@ -1235,6 +2220,111 @@ SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
 FROM "public"."cc_data_view" "cc_data_view"
 WHERE (("cc_data_view"."daterange" >= (DATE '2023-01-01')) AND ("cc_data_view"."daterange" <= (DATE '2023-02-01')))
 GROUP BY 1
+```
+
+>[!TAB Looker]
+
+1. In the **[!UICONTROL Explore]** interface of Looker, refresh your connection. Select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Clear cache and refresh]**.
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
+      ![Looker filter](assets/uc2-looker-filter.png){zoomable="yes"}
+1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
+1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail, select **[!UICONTROL Product Name]**.
+1. From the **[!UICONTROL ‣ Custom Fields]** section in the left rail:
+   1. Select **[!UICONTROL Custom Measure]** from the **[!UICONTROL + Add]** dropdown menu. 
+   1. In the **[!UICONTROL Create custom measure]** dialog:
+      1. Select **[!UICONTROL Purchase Revenue]** from the **[!UICONTROL Field to measure]** dropdown menu.
+      1. Select **[!UICONTROL Sum]** from the **[!UICONTROL Measure type]** dropdown menu.
+      1. Enter a custom field name for **[!UICONTROL Name]**. For example: `Sum of Purchase Revenue`.
+      1. Select the **[!UICONTROL Field details]** tab.
+      1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** dropdown menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
+         ![Looker custom metric field](assets/uc5-looker-customfield.png){zoomable="yes"}
+      1. Select **[!UICONTROL Save]**.
+1. Ensure you select **[!UICONTROL ↓]** (**[!UICONTROL Descending, Sort Order: 1]**) on the **[!UICONTROL Purchase Revenue]** column.
+1. Select **[!UICONTROL Run]**.
+1. Select **[!UICONTROL ‣ Visualization]**.
+
+You should see a visualization and table similar as shown below.
+
+![Looker count distinct](assets/uc11-looker-result.png){zoomable="yes"}
+
+
+The query generated by Looker using the BI extension is including `ORDER BY`, which implies that the sort is executed through Looker and the BI extension.
+
+```sql
+-- Looker Query Context '{"user_id":6,"history_slug":"fc83573987b999306eaf6e1a3f2cde70","instance_slug":"71d4667f0b76c0011463658f45c3f7a3"}' 
+SELECT
+    cc_data_view."product_name"  AS "cc_data_view.product_name",
+    COALESCE(SUM(CAST(( cc_data_view."purchase_revenue"  ) AS DOUBLE PRECISION)), 0) AS "purchase_revenue"
+FROM
+    "public"."cc_data_view" AS "cc_data_view"
+WHERE ((( cc_data_view."daterange"  ) >= (DATE_TRUNC('day', DATE '2024-01-31')) AND ( cc_data_view."daterange"  ) < (DATE_TRUNC('day', DATE '2023-02-01'))))
+GROUP BY
+    1
+ORDER BY
+    2 DESC
+FETCH NEXT 500 ROWS ONLY
+
+```
+
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   data = %sql SELECT product_name AS `Product Name`, SUM(purchase_revenue) AS `Purchase Revenue`, SUM(purchases) AS `Purchases` \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+               GROUP BY 1 \
+               ORDER BY `Purchase Revenue` DESC \
+               LIMIT 5;
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc11-jupyter-results.png){zoomable="yes"}
+
+The query is excuted by the BI extension as defined in Jupyter Notebook.
+
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+
+   ```R
+   ## Dimension 1 Sorted
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2023-02-01") %>%
+      group_by(product_name) %>%
+      summarise(purchase_revenue = sum(purchase_revenue), purchases = sum(purchases), .groups = "keep") %>%
+      arrange(desc(purchase_revenue), .by_group = FALSE)
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc11-rstudio-results.png){zoomable="yes"}
+
+The query generated by RStudio using the BI extension is including `ORDER BY`, which implies that the order is applied through RStudio and the BI extension.
+
+```sql
+SELECT
+  "product_name",
+  SUM("purchase_revenue") AS "purchase_revenue",
+  SUM("purchases") AS "purchases"
+FROM (
+  SELECT "cc_data_view".*
+  FROM "cc_data_view"
+  WHERE ("daterange" >= '2023-01-01' AND "daterange" < '2023-02-01')
+) AS "q01"
+GROUP BY "product_name"
+ORDER BY "purchase_revenue" DESC
+LIMIT 1000
 ```
 
 >[!ENDTABS]
@@ -1380,7 +2470,7 @@ limit 1000001
    1. In the **[!UICONTROL Filter Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
    1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Relative dates]**, select **[!UICONTROL Years]**, and select **[!UICONTROL Previous years]**. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
    1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list to **[!UICONTROL Rows]**.
-   1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**.. The value changes to **[!UICONTROL SUM(Occurrences)]**.
+   1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**. The value changes to **[!UICONTROL SUM(Occurrences)]**.
    1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
    1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
    1. Select **[!UICONTROL Product Name]** in **[!UICONTROL Rows]**. Select **[!UICONTROL Filter]** from the dropdown menu.
@@ -1425,6 +2515,99 @@ SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
 FROM "public"."cc_data_view" "cc_data_view"
 WHERE (("cc_data_view"."daterange" >= (TIMESTAMP '2023-01-01 00:00:00.000')) AND ("cc_data_view"."daterange" < (TIMESTAMP '2024-01-01 00:00:00.000')))
 GROUP BY 1
+```
+
+>[!TAB Looker]
+
+1. In the **[!UICONTROL Explore]** interface of Looker, refresh your connection. Select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Clear cache and refresh]**.
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
+      ![Looker filter](assets/uc2-looker-filter.png){zoomable="yes"}
+1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
+1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail: 
+   1. Select **[!UICONTROL Product Name]**.
+   1. Select **[!UICONTROL Count]** underneath **[!UICONTROL MEASURES]** in the left rail (at the bottom).
+1. Ensure you select **[!UICONTROL ↓]** (**[!UICONTROL Descending, Sort Order: 1]**) on the **[!UICONTROL Purchase Revenue]** column.
+1. Ensure you select **[!UICONTROL ↓]** (**[!UICONTROL Descending, Sort Order: 1]**) on the **[!UICONTROL Purchase Revenue]** column.
+1. Select **[!UICONTROL Run]**.
+1. Select **[!UICONTROL ‣ Visualization]**.
+
+You should see a visualization and table similar as shown below.
+
+![Looker count distinct](assets/uc12-looker-result.png){zoomable="yes"}
+
+The query generated by Looker using the BI extension is including `FETCH NEXT 5 ROWS ONLY`, which implies that the limit is executed through Looker and the BI extension.
+
+```sql
+-- Looker Query Context '{"user_id":6,"history_slug":"a8f3b1ebd5712413ca1ae695090f70db","instance_slug":"71d4667f0b76c0011463658f45c3f7a3"}' 
+SELECT
+    cc_data_view."product_name"  AS "cc_data_view.product_name",
+    COUNT(*) AS "cc_data_view.count"
+FROM
+    "public"."cc_data_view" AS "cc_data_view"
+WHERE ((( cc_data_view."daterange"  ) >= (DATE_TRUNC('day', DATE '2023-01-31')) AND ( cc_data_view."daterange"  ) < (DATE_TRUNC('day', DATE '2024-01-01'))))
+GROUP BY
+    1
+ORDER BY
+    2 DESC
+FETCH NEXT 5 ROWS ONLY
+```
+
+
+>[!TAB Jupyter Notebook]
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   data = %sql SELECT product_name AS `Product Name`, COUNT(*) AS Events \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01' \
+               GROUP BY 1 \
+               ORDER BY `Events` DESC \
+               LIMIT 5;
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc12-jupyter-results.png){zoomable="yes"}
+
+The query is excuted by the BI extension as defined in Jupyter Notebook.
+
+>[!TAB RStudio]
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+
+   ```R
+   ## Dimension 1 Limited
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange < "2024-01-01") %>%
+      group_by(product_name) %>%
+      count() %>%
+      arrange(desc(n), .by_group = FALSE) %>%
+      head(5)
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc12-rstudio-results.png){zoomable="yes"}
+
+The query generated by RStudio using the BI extension is including `LIMIT 5`, which implies that the limit is applied through RStudio and the BI extension.
+
+```sql
+SELECT "product_name", COUNT(*) AS "n"
+FROM (
+  SELECT "cc_data_view".*
+  FROM "cc_data_view"
+  WHERE ("daterange" >= '2023-01-01' AND "daterange" < '2024-01-01')
+) AS "q01"
+GROUP BY "product_name"
+ORDER BY "n" DESC
+LIMIT 5
 ```
 
 >[!ENDTABS]
@@ -1472,20 +2655,20 @@ Calculated metrics that you define in Customer Journey Analytics are identified 
 Date ranges that you define in Customer Journey Analytics are available as part of the **[!UICONTROL daterangeName]** field. When you use a **[!UICONTROL daterangeName]** field, you can specify which date range to use.
 
 **Custom transformations**
-Power BI Desktop provides custom transformation functionality using [Data Analysis Expressions (DAX)](https://learn.microsoft.com/en-us/dax/dax-overview). As an example, you want to execute the Single dimension ranked use case with product names in lower case.
+Power BI Desktop provides custom transformation functionality using [Data Analysis Expressions (DAX)](https://learn.microsoft.com/en-us/dax/dax-overview). As an example, you want to execute the [Single dimension ranked](#single-dimension-ranked) use case with product names in lower case.
 
 1. In the report view, select the bar visualization.
-1. Select product_name in the Data pane.
-1. Select New column in the toolbar.
+1. Select **[!UICONTROL product_name]** in the Data pane.
+1. Select **[!UICONTROL New column]** in the toolbar.
 1. In the formula editor, define a new column named `product_name_lower`, like `product_name_lower = LOWER('public.cc_data_view[product_name])`.
    ![Power BI Desktop Transformation to Lower](assets/uc14-powerbi-transformation.png){zoomable="yes"}
-1. Ensure you select the new product_name_lower column in the Data pane instead of the product_name column.
-1. Select Report as Table from ![More](/help/assets/icons/More.svg) in the table visualization.
+1. Ensure you select the new **[!UICONTROL product_name_lower]** column in the **[!UICONTROL Data]** pane instead of the **[!UICONTROL product_name]** column.
+1. Select **[!UICONTROL Report as Table]** from ![More](/help/assets/icons/More.svg) in the table visualization.
 
    Your Power BI Desktop should look like below. 
    ![Power BI Desktop Transformation Final](assets/uc14-powerbi-final.png){zoomable="yes"}
 
-The custom transformation result in an updates to SQL queries. See the use of the `lower` function in the SQL example below:
+The custom transformation result in an update to SQL queries. See the use of the `lower` function in the SQL example below:
 
 ```sql
 select "_"."product_name_lower",
@@ -1548,7 +2731,7 @@ Calculated metrics that you define in Customer Journey Analytics are identified 
 Date ranges that you define in Customer Journey Analytics are available as part of the **[!UICONTROL Daterange Name]** field. When you use a **[!UICONTROL Daterange Name]** field, you can specify which date range to use.
 
 **Custom transformations**
-Tableau Desktop provides custom transformation functionality using [Calculated Fields](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). As an example, you want to execute the Single dimension ranked use case with product names in lower case.
+Tableau Desktop provides custom transformation functionality using [Calculated Fields](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). As an example, you want to execute the [Single dimension ranked](#single-dimension-ranked) use case with product names in lower case.
 
 1. Select **[!UICONTROL Analysis]** > **[!UICONTROL Create Calculated Field]** from the main menu.
    1. Define **[!UICONTROL Lowercase Product Name]** using the function `LOWER([Product Name])`.
@@ -1573,6 +2756,117 @@ FROM "public"."cc_data_view" "cc_data_view"
 WHERE (("cc_data_view"."daterange" >= (DATE '2023-01-01')) AND ("cc_data_view"."daterange" <= (DATE '2023-12-31')))
 GROUP BY 1
 HAVING ((SUM("cc_data_view"."purchase_revenue") >= 999999.99999998999) AND (SUM("cc_data_view"."purchase_revenue") <= 2000000.00000002))
+```
+
+>[!TAB Looker]
+
+The Customer Journey Analytics objects are available in the **[!UICONTROL Explore]** interface. And are retrieved as part of setting up your connection, project, and model in Looker. For example, **[!UICONTROL cc_data_view]**. The name of the view is the same as the External ID that you have defined for your data view in Customer Journey Analytics. For example, data view with **[!UICONTROL Title]** `C&C - Data View` and **[!UICONTROL External ID]** `cc_data_view`.
+
+**Dimensions**
+Dimensions from Customer Journey Analytics are listed as **[!UICONTROL DIMENSION]** in the **[!UICONTROL Cc Data View]** left rail. The dimension is defined in your Customer Journey Analytics data view. For example, dimension **[!UICONTROL Product Name]** in Customer Journey Analytics has a **[!UICONTROL DIMENSION]** **[!UICONTROL Product Name]**, which is the name for the dimension in Looker. 
+Date range dimensions from Customer Journey Analytics, like **[!UICONTROL Day]**, **[!UICONTROL Week]**, **[!UICONTROL Month]**, and more are available as **[!UICONTROL Daterangeday Date]**, **[!UICONTROL Daterangeweek Date]**, **[!UICONTROL Daterangemonth Date]**, and more.  When you use a date range dimension, you have to select an appropriate definition of date or time. For example, **[!UICONTROL Year]**, **[!UICONTROL Quarter]**, **[!UICONTROL Month]**, **[!UICONTROL Date]**.
+
+**Metrics**
+Metrics from Customer Journey Analytics are listed as **[!UICONTROL DIMENSION]** in in the **[!UICONTROL Cc Data View]** left rail. For example, metric **[!UICONTROL Purchase Revenue]** in Customer Journey Analytics has a **[!UICONTROL DIMENSION]** **[!UICONTROL Purchase Revenue]**. To actually use as a metric, create a custom measure field as shown in the examples above, or use the shortcut on a dimension. For example, **[!UICONTROL ⋮]**, select **[!UICONTROL Aggregate]**, and then select **[!UICONTROL Sum]**..
+
+**Filters**
+Filters that you define in Customer Journey Analytics are available as part of the **[!UICONTROL Filter Name]** field. When you use a **[!UICONTROL Filter Name]** field in Looker, you can specify which filter to use.
+
+**Calculated metrics**
+Calculated metrics that you define in Customer Journey Analytics are identified by the [!UICONTROL Title] you have defined for the calculated metric. For example, calculated metric **[!UICONTROL Product Name (Count Distinct)]** has [!UICONTROL Title] **[!UICONTROL Product Name (Count Distinct)]** and is shown as **[!UICONTROL Cm Product Name Count Distinct]** in Looker.
+
+**Date ranges**
+Date ranges that you define in Customer Journey Analytics are available as part of the **[!UICONTROL Daterange Name]** field. When you use a **[!UICONTROL Daterange Name]** field, you can specify which date range to use.
+
+**Custom transformations**
+Looker provides custom transformation functionality using custom field builders, as shown above. As an example, you want to execute the [Single dimension ranked](#single-dimension-ranked) use case with product names in lower case.
+
+1. From the **[!UICONTROL ‣ Custom Fields]** section in the left rail:
+   1. Select **[!UICONTROL Custom Dimension]** from the **[!UICONTROL + Add]** dropdown menu. 
+   1. Enter `lower(${cc_data_view.product_name})` in the **[!UICONTROL Expression]** text area. You are assisted with the correct syntax when you start to type `Product Name`.
+      ![Looker transformation example](assets/uc14-looker-transformation.png){zoomable="yes"}
+   1. Enter `product name` as the **[!UICONTROL Name]**.
+   1. Select **[!UICONTROL Save]**.
+
+You should see a similar table as shown below.
+
+![Looker transformation result](assets/uc14-looker-result.png){zoomable="yes"}
+
+
+The custom transformation result in an updates to SQL queries. See the use of the `LOWER` function in the SQL example below:
+
+```sql
+SELECT
+    LOWER((cc_data_view."product_name")) AS "product_name",
+    COALESCE(SUM(CAST(( cc_data_view."purchase_revenue"  ) AS DOUBLE PRECISION)), 0) AS "sum_of_purchase_revenue",
+    COALESCE(SUM(CAST(( cc_data_view."purchases"  ) AS DOUBLE PRECISION)), 0) AS "sum_of_purchases"
+FROM public.cc_data_view  AS cc_data_view
+WHERE ((( cc_data_view."daterange"  ) >= (DATE_TRUNC('day', DATE '2023-01-01')) AND ( cc_data_view."daterange"  ) < (DATE_TRUNC('day', DATE '2024-01-01'))))
+GROUP BY
+    1
+ORDER BY
+    2 DESC
+FETCH NEXT 500 ROWS ONLY
+```
+
+>[!TAB Jupyter Notebook]
+
+The Customer Journey Analytics objects (dimensions, metrics, filters, calculated metrics, and date ranges) are available as part of the embedded SQL queries you construct. See earlier examples.
+
+**Custom transformations**
+
+1. Enter the following statements in a new cell.
+
+   ```python
+   data = %sql SELECT LOWER(product_category) AS `Product Category`, COUNT(*) AS EVENTS \
+               FROM cc_data_view \
+               WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01' \
+               GROUP BY 1 \
+               ORDER BY `Events` DESC \
+               LIMIT 5;
+   display(data)
+   ```
+
+1. Execute the cell. You should see output similar to the screenshot below.
+
+   ![Jupyter Notebook Results](assets/uc13-jupyter-results.png){zoomable="yes"}
+
+The query is excuted by the BI extension as defined in Jupyter Notebook.
+
+>[!TAB RStudio]
+
+The Customer Journey Analytics components (dimensions, metrics, filters, calculated metrics, and date ranges) are available as similar named objects in the R language. Refer to the components using the component  See earlier examples.
+
+**Custom transformations**
+
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+
+   ```R
+   df <- dv %>%
+      filter(daterange >= "2023-01-01" & daterange <= "2024-01-01") %>%
+      mutate(d2=lower(product_category)) %>%
+      group_by(d2) %>%
+      count() %>%
+      arrange(d2, .by_group = FALSE)
+   print(df)
+   ```
+
+1. Run the chunk. You should see output similar to the screenshot below.
+
+   ![RStudio Results](assets/uc13-rstudio-results.png){zoomable="yes"}
+
+The query generated by RStudio using the BI extension is including `lower`, which implies that the custom transformation is executed by RStudio and the BI extension.
+
+```sql
+SELECT "d2", COUNT(*) AS "n"
+FROM (
+  SELECT "cc_data_view".*, lower("product_category") AS "d2"
+  FROM "cc_data_view"
+  WHERE ("daterange" >= '2023-01-01' AND "daterange" <= '2024-01-01')
+) AS "q01"
+GROUP BY "d2"
+ORDER BY "d2"
+LIMIT 1000
 ```
 
 >[!ENDTABS]
@@ -1682,7 +2976,7 @@ limit 1001
 
 ### Comparison
 
-For most Customer Journey Analytics visualizations, Tableau offers equivalent experiences. See the table below.
+For most Customer Journey Analytics visualizations, Tableau Desktop offers equivalent experiences. See the table below.
 
 | Icon |Customer Journey Analytics visualization | Power BI Desktop visualization |
 | :---: | --- | ---| 
@@ -1717,7 +3011,7 @@ Tableau supports [drill mode](https://learn.microsoft.com/en-us/power-bi/consume
 
 ![Tableau drill down](assets/uc15-tableau-drilldown.png){zoomable="yes"}
 
-Drill down will update the visualization with purchase revenue for products within the selected product category.
+Drill down updates the visualization with purchase revenue for products within the selected product category.
 
 ![Tableau drill up](assets/uc15-tableau-drillup.png){zoomable="yes"}
 
@@ -1742,7 +3036,51 @@ Alternatively, you can create a drill down dashboard where one visual is the res
 ![Tableau visualization filter](assets/uc15-tableau-visualizationfilter.png){zoomable="yes"}
 
 
+>[!TAB Looker]
+
+### Comparison
+
+For most Customer Journey Analytics visualizations, Looker offers equivalent experiences. See the table below.
+
+| Icon |Customer Journey Analytics visualization | Power BI Desktop visualization |
+| :---: | --- | ---| 
+| ![GraphArea](/help/assets/icons/GraphArea.svg)| [Area](/help/analysis-workspace/visualizations/area.md)  | [Area Chart](https://cloud.google.com/looker/docs/area-options) |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg)| [Bar](/help/analysis-workspace/visualizations/bar.md)  | [Bar Chart](https://cloud.google.com/looker/docs/bar-options) |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg)| [Bar stacked](/help/analysis-workspace/visualizations/bar.md)  | [Bar Chart](https://cloud.google.com/looker/docs/bar-options) |
+| ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p>| [Bullet](/help/analysis-workspace/visualizations/bullet-graph.md)  | [Bullet Graph](https://cloud.google.com/looker/docs/bullet-chart) |
+| ![TextNumbered](/help/assets/icons/TextNumbered.svg)| [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) |  |
+| ![Combo](/help/assets/icons/ComboChart.svg) | [Combo](/help/analysis-workspace/visualizations/combo-charts.md) | [Customizing visualizations](https://cloud.google.com/looker/docs/creating-visualizations#customizing_visualizations_with_chart_settings)| 
+| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Donut](/help/analysis-workspace/visualizations/donut.md)  | [Donut](https://cloud.google.com/looker/docs/donut-multiples-options)|
+| ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) |  [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | [Funnel](https://cloud.google.com/looker/docs/funnel-options) |
+| ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) | [Sankey](https://cloud.google.com/looker/docs/sankey) | 
+| ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [Table](https://cloud.google.com/looker/docs/table-options) |
+| ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histogram](/help/analysis-workspace/visualizations/histogram.md) | |
+| ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md)| [Bar Chart](https://cloud.google.com/looker/docs/bar-options) |
+| ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Horizontal bar stacked](/help/analysis-workspace/visualizations/horizontal-bar.md)| [Bar Chart](https://cloud.google.com/looker/docs/bar-options)  |
+| ![Branch3](/help/assets/icons/Branch3.svg) | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) |  |
+| ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Key metric summary](/help/analysis-workspace/visualizations/key-metric.md) |  |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Line](/help/analysis-workspace/visualizations/line.md)| [Line Chart](https://cloud.google.com/looker/docs/line-options) |
+| ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [Scatter](/help/analysis-workspace/visualizations/scatterplot.md)  | [Scatterplot](https://cloud.google.com/looker/docs/scatter-options) |
+|  ![PageRule](/help/assets/icons/PageRule.svg) | [Section header](/help/analysis-workspace/visualizations/section-header.md) |  |
+| ![MoveUpDown](/help/assets/icons/MoveUpDown.svg)  | [Summary change](/help/analysis-workspace/visualizations/summary-number-change.md)| [Single Value](https://cloud.google.com/looker/docs/single-value-options)|
+| ![123](/help/assets/icons/123.svg)</p> |[Summary number](/help/analysis-workspace/visualizations/summary-number-change.md) | [Single Value](https://cloud.google.com/looker/docs/single-value-options)|
+| ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) | [Single Value](https://cloud.google.com/looker/docs/single-value-options)|
+| ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Treemap](/help/analysis-workspace/visualizations/treemap.md) | [Treemap](https://cloud.google.com/looker/docs/treemap) |
+| ![Type](/help/assets/icons/TwoDots.svg) | [Venn Diagram](/help/analysis-workspace/visualizations/venn.md)| [Venn Diagram](https://cloud.google.com/looker/docs/venn) |
+
+>[!TAB Jupyter Notebook]
+
+Comparing the visualization capabilities of **matplotlib.pyplot**, the state-based interface to matplotlib, is beyond the purpose of this article. See examples above for inspiration and the [matplotlib.pyplot](https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html) documentation.
+
+
+>[!TAB RStudio]
+
+Comparing the visualization capabilities of **ggplot2**, the data visualization package in R, is beyond the purpose of this article. See examples above for inspiration and the [ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2.html) documentation.
+
 >[!ENDTABS]
+
+
+
 
 +++
 
@@ -1757,12 +3095,12 @@ Each of the supported BI tools has some caveats in working with the Customer Jou
 
 >[!TAB Power BI Desktop] 
 
-* Power BI Desktop Advanced date range filtering is exclusive.  For your end date, you need to select one past the day you want to report on. For example **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL and before]** `1/2/2023`.
+* Power BI Desktop Advanced date range filtering is exclusive.  For your end date, you need to select one past the day you want to report on. For example, **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL and before]** `1/2/2023`.
 * Power BI Desktop defaults to **[!UICONTROL Import]** when you create a connection. Please ensure you use **[!UICONTROL Direct Query]**.
 * Power BI Desktop exposes data transformations through Power Query.  Power Query primarily works with Import type connections so a many transformations that you apply like date or string functions throw an error saying you need to switch to an Import type connection.  If you need to transform data at query time, you should use derived dimensions and metrics so Power BI doesn't need to do the transforms itself.
 * Power BI Desktop does not understand how to handle date-time type columns so the **[!UICONTROL daterange*X*]** dimensions like **[!UICONTROL daterangehour]** and **[!UICONTROL daterangeminute]** are not supported.
 * Power BI Desktop by default tries to make multiple connections using up more Query Service sessions.  Go in to the Power BI settings for your project and disable parallel queries.
-* Power BI Desktop does all sorting and limiting client-side. Power BI Desktop also has different semantics for top *X* filtering that includes tied values. So you cannot create the same sorting and limiting as you can do in Analysis Workspace.
+* Power BI Desktop does all the sorting and limiting client-side. Power BI Desktop also has different semantics for top *X* filtering that includes tied values. So, you cannot create the same sorting and limiting as you can do in Analysis Workspace.
 * Earlier versions of the Power BI Desktop October 2024 release break PostgreSQL data sources. Ensure you use the version mentioned in this article.
 
 >[!TAB Tableau Desktop]
@@ -1770,6 +3108,23 @@ Each of the supported BI tools has some caveats in working with the Customer Jou
 * Tableau Desktop Range of Dates filtering is exclusive. For your end date, you need to select one past the day you want to report on.
 * By default, when you add a date or date-time dimension like **[!UICONTROL Daterangemonth]** to the rows of a sheet, Tableau Desktop wraps the field in a **[!UICONTROL YEAR()]** function.  To get what you want, you need to select that dimension and from the dropdown menu select the date function you want to use.  For example, change **[!UICONTROL Year]** to **[!UICONTROL Month]** when you are trying to use **[!UICONTROL Daterangemonth]**.
 * Limiting results to the Top *X* is not obvious in Tableau Desktop. You can limit the results explicitly or using a calculated-field and the **[!UICONTROL INDEX()]** function.  Adding a Top *X* filter to a dimension generates complex SQL using an inner-join that is not supported.
+
+>[!TAB Looker]
+
+* Looker has a maximum number of connections per node setting that is required to be between 5-100.  You cannot set this value to 1.  This setting implies that a Looker connection always uses at a minimum 5 of the available Query Service sessions.
+* Looker lets you create a project with a view based on a Customer Journey Analytics Data view. Looker then creates a model based on the dimensions and metrics, available in the Data view, using LookerML.  This Project View does not automatically update to match the source.  If you make changes or additions to the CJA Data View dimensions, metrics, calculated-metrics, or filters, then these changes do not automatically show up in Looker.  You have to manually update the Project View or create a new Project.
+* Looker's user-experience on date or date-time fields like **[!UICONTROL Daterange Date]** or **[!UICONTROL Daterangeday Date]** is confusing. 
+* Looker's date range is exclusive instead of inclusive.  The **[!UICONTROL until (before)]** is in gray so you may miss that aspect.  For your end day, you need to select one past the day you want to report on.
+* Looker doesn't automatically treat your metrics as metrics.  When you select a metric, by default Looker tries to treat the metric as a dimension in the query.  To treat a metrics as a metric, you need to create a custom field as illustrated above. As a shortcut you can select **[!UICONTROL ⋮]**, select **[!UICONTROL Aggregate]**, and then select **[!UICONTROL Sum]**. 
+
+>[!TAB Jupyter Notebook]
+
+* The main caveat for Jupyter Notebook is that the tool does not a drag-and-drop user interface like other BI tools. You can create good visuals, but you have to write code to accomplish this.  
+
+>[!TAB RStudio]
+
+* R dplyr works with a flat schema so the **[!UICONTROL FLATTEN]** option is required.
+* The main caveat for RStudio is that the tool does not a drag-and-drop user interface like other BI tools. You can create good visuals, but you have to write code to accomplish this.  
 
 >[!ENDTABS]
 

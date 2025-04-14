@@ -11,7 +11,7 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_dimension_valuebucketing"
+>id="dataview_component_dimension_valuebucketing"
 >title="Value bucketing"
 >abstract="Bucket values into specific ranges. These ranges appear as dimension items in reports."
 

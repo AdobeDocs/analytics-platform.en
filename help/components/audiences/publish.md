@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_audiences_refreshfrequency"
+>id="components_audiences_refreshfrequency"
 >title="Refresh frequency"
 >abstract="See how often an audience's membership is reevaluated.<br/>One time audiences are evaluated only once."
 
@@ -19,7 +19,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_audiences_audiencelimit"
+>id="components_audiences_audiencelimit"
 >title="Audience limit"
 >abstract="Refreshing audiences are limited based on how often they refresh."
 
@@ -28,7 +28,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_component_audiences_refreshlookbackwindow"
+>id="component_audiences_refreshlookbackwindow"
 >title="Refresh lookback window"
 >abstract="Define the number of lookback days from today that an audience is evaluated from."
 
@@ -37,7 +37,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_component_audiences_audiencesizelimit"
+>id="component_audiences_audiencesizelimit"
 >title="Audience size limit"
 >abstract="Audiences cannot exceed a size of 20 million members."
 
@@ -46,7 +46,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_component_audiences_namespacesincluded"
+>id="component_audiences_namespacesincluded"
 >title="Namespaces included"
 >abstract="The identities in this audience are comprised of the namespaces below."
 
@@ -65,7 +65,7 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
 
    | Creation method | Details |
    | --- | --- |
-   | From within the **[!UICONTROL Audiences]** interface. | Select **[!UICONTROL Components]** > **[!UICONTROL Audiences]** from the main Customer Journey Analytics menu. The Audiences interface displays. Select **[!UICONTROL Create audience]** creaand the [!UICONTROL Audience builder] opens. |
+   | From within the **[!UICONTROL Audiences]** interface | Select **[!UICONTROL Components]** > **[!UICONTROL Audiences]** from the main Customer Journey Analytics menu. The Audiences interface displays. Select **[!UICONTROL Create audience]** and the [!UICONTROL Audience builder] opens. |
    | From a visualization in Analysis Workspace | Many visualizations in Analysis Workspace allow you to create an audience using the context menu. For example, you can select **[!UICONTROL Create audience]** from the context menu of an item in a [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) or a node in [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>Using this method pre-populates the filter in the Audience builder with the dimension or dimension item that you selected.</p><p>The following visualizations allow you to create an audience using the right-click menu:</p><ul><li>[Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Flow](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Note:** Audiences cannot include calculated metrics. If you try to create an audience that contains a calculated metric, the calculated metric is not included in the audience definition.</p> |
    | From the filter creation/editing UI | Check the box that says **[!UICONTROL Create an audience from this filter]**. Using this method pre-populates the filter. See [Create filters](/help/components/filters/create-filters.md) for more information. |
 
@@ -141,7 +141,7 @@ At several points prior to, during, and after audience publishing, latencies can
 
 ## Use Customer Journey Analytics audiences in Experience Platform {#audiences-aep}
 
-Customer Journey Analytics takes all the namespace and ID combinations from your published audience and streams them into Real-Time Customer Data Platform . Customer Journey Analytics sends the audience to Experience Platform with the primary identity set, according to what was selected as the [!UICONTROL Person ID] when the connection was configured.
+Customer Journey Analytics takes all the namespace and ID combinations from your published audience and streams them into Real-Time Customer Data Platform. Customer Journey Analytics sends the audience to Experience Platform with the primary identity set, according to what was selected as the [!UICONTROL Person ID] when the connection was configured.
 
 Real-Time Customer Data Platform then examines each namespace/ID combination and looks for a profile that it may be part of. A profile is basically a cluster of linked namespaces, IDs and devices. If it finds a profile, it adds the namespace and ID to the other IDs in this profile as a segment membership attribute. For example, <user@adobe.com> can be targeted across all their devices and channels. If a profile is not found, a new one is created.
 
@@ -163,6 +163,38 @@ To view Customer Journey Analytics audiences in Platform:
 
 For more information about using Audiences in Platform, see the [Audiences](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) section in the [Segment Builder UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) in the Experience Platform documentation.
    
+<!---### Understand discrepancies in audience counts between Customer Journey Analytics and Real-Time Customer Data Platform
+
+Discrepancies in audience counts may occur between Customer Journey Analytics and Real-Time Customer Data Platform. The points below provide a detailed explanation of these differences:
+
+![Infographic on audience differences between Customer Journey Analytics and Real-Time CDP.](/help/components/audiences/assets/infographic-cja-rtcdp.png)
+
+**Probabilistic versus deterministic counts**
+
+The methodology by which audience membership numbers are being calculated differs between the two apps, as described below.
+
+*  **Customer Journey Analytics**: The **[!UICONTROL Total People]** metric in Customer Journey Analytics is an estimated value. This means that the count is an estimate based on the rules of the audience and it can change between refresh intervals.
+*  **Real-Time Customer Data Platform**: The count in Real-Time Customer Data Platform is deterministic, based on daily evaluation jobs, and fixed at the time the audience finishes publishing into the audience portal. 
+
+**Publishing interval and rate**
+
+Audiences publish to Real-Time Customer Data Platform at a rate of 1500 records per second (RPS). For example, an audience of 20 million members will take approximately 3.7 hours to fully publish (20M / 1500 RPS / 3600 seconds per hour). During this time, differences in audience membership between the two apps are likely.
+
+**Profile fragmentation**
+
+If profiles imported from Customer Journey Analytics already exist in Real-Time Customer Data Platform, they are not counted as new profiles. This can lead to lower-than-expected profile counts in Real-Time Customer Data Platform.
+
+**Batch versus streaming audiences**
+
+Customer Journey Analytics audiences are not included in the daily batch evaluation job and remain fixed until the next publish interval. In contrast, other batch audiences in Real-Time Customer Data Platform are re-evaluated every 24 hours.
+
+### Key takeaways to remember
+
+* **Estimated counts in Customer Journey Analytics**: Understand that the **[!UICONTROL Total People]** count in Customer Journey Analytics is an estimate and can vary due to streaming data and identity behaviors.
+* **Deterministic counts in Real-Time Customer Data Platform**: The count in Real-Time Customer Data Platform is fixed and does not change until the next publish interval.
+* **Profile Fragmentation**: Be aware that existing profiles in Real-Time Customer Data Platform may not contribute to new profile counts when importing from Customer Journey Analytics.
+
+By clearly differentiating these aspects, you can better understand and manage your audience data across Customer Journey Analytics and Real-Time Customer Data Platform.--->
 
 ## FAQs {#faq}
 

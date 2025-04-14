@@ -4,17 +4,20 @@ description: Learn how to create a tag property and add the Web SDK extension
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 382d2b00-939a-4fff-be02-7a98d457a455
 ---
-# Add the Web SDK extension to your tag
+# Add the Web SDK extension to your tag {#upgrade-tag-extension}
 
->[!NOTE]
-> 
->Follow the steps on this page only after you complete all previous upgrade steps. You can follow the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations), or you can follow the upgrade steps that were dynamically generated for your organization with the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
->
->After you complete the steps on this page, continue following the recommended upgrade steps or the dynamically generated upgrade steps. 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-extension"
+>title="Add the Platform Web SDK extension to your tag property"
+>abstract="Add the Adobe Experience Platform Web SDK extension to your tag property. Adding the Web SDK extension to your tag property is streamlined, taking only a few minutes to complete."
+
+<!-- markdownlint-enable MD034 -->
+
+{{upgrade-note-step}}
 
 You can use the Tags feature within Adobe Experience Platform to implement code on your site to collect data. This tag management solution lets you deploy code alongside other tagging requirements. Tags offer seamless integration with Adobe Experience Platform using the Adobe Experience Platform Web SDK extension.
 
@@ -44,4 +47,4 @@ To add the Web SDK extension to your tag:
 
 1. Select **[!UICONTROL Save]**.
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}

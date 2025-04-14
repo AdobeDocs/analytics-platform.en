@@ -230,7 +230,7 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 | Data Ingestion into Data Lake from Edge Network or Streaming Ingestion | < 60 minutes |
 | Data Ingestion into Data Lake from Adobe Analytics Source Connector | < 2.25 hours |
 | Data Ingestion into Customer Journey Analytics from Data Lake | < 90 minutes |
-| Stitching (optional feature; see [Stitching overview](../stitching/overview.md) for more information) | < 3.25 hours | 
+| Stitching (optional feature; see [Stitching overview](../stitching/overview.md) for more information) | < 4 hours | 
 | Adobe Analytics Source Connector Backfill of less than 10 billion events (maximum of 13 months of historical data) | < 4 weeks |
 | Audience Publishing to Real-time Customer Profile, including automatic creation of the streaming segment, and allowing the segment to be ready to receive the data. | ≈ 60 minutes |
 | Refresh Frequency for Audiences | One-time refresh: latency of less than 5 minutes.<br/>Refresh every 4 hours, daily, weekly, monthly (latency goes hand in hand with the refresh rate). |

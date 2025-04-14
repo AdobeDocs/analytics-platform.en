@@ -11,9 +11,9 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_dimension_behavior"
+>id="dataview_component_dimension_behavior"
 >title="Behavior"
->abstract="Determine how line items in this dimension are aggregated.<br/><br/>**Parameters**<br/>**Lower case**: Allows you to specify whether the string values in the field should be lower cased."
+>abstract="Determine how line items in this dimension are aggregated. Specify whether the string values in the field should be lower cased."
 
 <!-- markdownlint-enable MD034 -->
 

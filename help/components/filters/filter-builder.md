@@ -10,11 +10,21 @@ exl-id: 160021f1-6942-4682-9114-d375307d9912
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_createaudience"
+>id="components_filters_createaudience"
 >title="Create Audience"
 >abstract="Audiences can be created from a filter and shared with the Adobe Experience Platform for activation."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="components_filters_datapreview"
+>title="Data preview"
+>abstract="Compares the data of this filter with data of the data view. The preview percentage is based on the total number in the data view from the **last 90 days**.<br><br/>If the preview is not loading, your connection could still be backfilling."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 The **[!UICONTROL Filter builder]** dialog is used to create new or edit existing filters. The dialog is titled **[!UICONTROL New filter]** or **[!UICONTROL Edit filter]** for filters that you create or manage from the [[!UICONTROL Filters] manager](/help/components/filters/manage-filters.md).
@@ -60,7 +70,7 @@ You use the Definition builder to construct your filter definition. In that cons
 You can configure the type and scope of your definition: 
 
 1. To specify the type of your definition, specify whether you want the build an include or exclude definition. Select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Options]** and from the dropdown toggle **[!UICONTROL Include]** or **[!UICONTROL Exclude]**.
-1. To specify the scope of your definition, select from the **[!UICONTROL Include]** or **[!UICONTROL Exclude]** dropdown whether you want the scope of the definition to be **[!UICONTROL Event]**, **[!UICONTROL Session]** or **[!UICONTROL Person]**. 
+1. To specify the scope of your definition, select from the **[!UICONTROL Include]** or **[!UICONTROL Exclude]** dropdown whether you want the scope of the definition to be **[!UICONTROL Event]**, **[!UICONTROL Session]**, **[!UICONTROL Person]**, **[!UICONTROL Global Account]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Account]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, or  **[!UICONTROL Buying Group]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
 
 You can always change these settings later.
 
@@ -97,7 +107,7 @@ You can group multiple components in one or more containers and define logic wit
 * To add another component to the container, drag and drop a component from the component panel into the container. Use the blue insertion line as a guide.
 * To add another component outside of the container, drag and drop a component from the component panel outside of the container, but inside the main definition container. User the blue insertion line as a guide.
 * To modify the logic between components in a container, between containers or between a container and a component, select the appropriate **[!UICONTROL And]**, **[!UICONTROL Or]**, **[!UICONTROL Then]**. When you select Then, you turn the filter into a sequential filter. See [Create sequential filter](seg-sequential-build.md) for more information.
-* To switch the container level, select ![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Event]**, ![Visit](/help/assets/icons/Visit.svg) **[!UICONTROL Session]** or ![User](/help/assets/icons/User.svg) **[!UICONTROL Person]**.
+* To switch the container level, select ![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL Global Account]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![Account](/help/assets/icons/Account.svg) **[!UICONTROL Account]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![Opportunity](/help/assets/icons/Opportunity.svg) **[!UICONTROL Opportunity]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![BuyingGroup](/help/assets/icons/BuyingGroup.svg) **[!UICONTROL Buying Group]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Event]**, ![Visit](/help/assets/icons/Visit.svg) **[!UICONTROL Session]** or ![User](/help/assets/icons/User.svg) **[!UICONTROL Person]**.
 
 You can use ![Setting](/help/assets/icons/Setting.svg) in a container for the following actions:
 
@@ -116,13 +126,13 @@ You can build filters that contain rolling date ranges. So, you are able to answ
 
 ![Filter using rolling date range](assets/filter-rolling-date-range.gif)
 
-+++ Here is a video on using rolling date ranges in filters
 
->[!VIDEO](https://video.tv.adobe.com/v/25403/?quality=12)
+>[!BEGINSHADEBOX]
 
-{{videoaa}}
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rolling date ranges in segments](https://video.tv.adobe.com/v/25403/?quality=12&learn=on){target="_blank"} for a demo video.
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## Stack filters {#stack}
 
@@ -142,7 +152,7 @@ Or, you could define 52 filters: 50 filters for the US states, one for mobile ph
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_repeating"
+>id="components_filters_attribution_repeating"
 >title="Repeating"
 >abstract="Includes instances and persisted values for the dimension."
 
@@ -151,7 +161,7 @@ Or, you could define 52 filters: 50 filters for the US states, one for mobile ph
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_instance"
+>id="components_filters_attribution_instance"
 >title="Instance"
 >abstract="Includes instances and persisted values for the dimension."
 
@@ -160,7 +170,7 @@ Or, you could define 52 filters: 50 filters for the US states, one for mobile ph
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_nonrepeatinginstance"
+>id="components_filters_attribution_nonrepeatinginstance"
 >title="Non-repeating instance"
 >abstract="Includes unique (non-repeating) instances for the dimension."
 
@@ -176,7 +186,7 @@ Select ![Setting](/help/assets/icons/Setting.svg) within the dimension component
 |---|---|
 | **[!UICONTROL Repeating model (default)]** | Include instance and persisted values for the dimension to determine qualification. |
 | **[!UICONTROL Instance]** | Include only instance values for the dimension to determine qualification. |
-|  **[!UICONTROL Non-repeating instance]** | Include unique instance (non-repeating) values for the dimension to determin qualification. |
+|  **[!UICONTROL Non-repeating instance]** | Include unique instance (non-repeating) values for the dimension to determine qualification. |
 
 
 ![Attribution model on dimension when building a filter](assets/filter-dimension-attribution.png)
@@ -197,7 +207,7 @@ The table below explains, for each attribution model, which incoming events are 
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:--:|
 |  Repeating (default) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg)  |
 |  Instance  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg) |![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg) | ![Remove](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Remove](/help/assets/icons/Remove.svg) |
-|  Non-repeating instance  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |![Remove](/help/assets/icons/Remove.svg) | ![Remove](/help/assets/icons/Remove.svg) | ![Remove](/help/assets/icons/Remove.svg) | ![Remove](/help/assets/icons/Remove.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg)  |
+|  Non-repeating instance  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |![Remove](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Remove](/help/assets/icons/Remove.svg) | ![Remove](/help/assets/icons/Remove.svg)  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)  | ![Remove](/help/assets/icons/Remove.svg)  |
 
 An example report on events using the three filters looks like:
 

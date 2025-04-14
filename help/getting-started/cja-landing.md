@@ -17,6 +17,12 @@ Get a glimpse of the newest enhancements in the Customer Journey Analytics produ
 
 >[!BEGINTABS]
 
+>[!TAB Content Analytics]
+
+Adobe Content Analytics allows you to quickly and easily investigate large volumes of content data to uncover trends, spot anomalies, identify content fatigue, and gain insights from content exposure.
+
+[![image](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
+
 >[!TAB AI Assistant] 
 
 AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace - whether its understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
@@ -29,6 +35,13 @@ AI Assistant is a conversational experience that allows practitioners to perform
 Guided Analysis is now available directly from within Analysis Workspace, enabling users to create dashboards with comprehensive insights from panels, visualizations, and guided analyses.
 
 [![image](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
+
+
+>[!TAB Intelligent captions v2] 
+
+Intelligent captions are now supported, with additional interface improvements, for [Line](/help/analysis-workspace/visualizations/line.md) (including multi-line), [Bar](/help/analysis-workspace/visualizations/bar.md), [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md), [Area](/help/analysis-workspace/visualizations/area.md) (including multiple Area lines), [Donut](/help/analysis-workspace/visualizations/donut.md), [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), and [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) visualizations.
+
+[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
 
 >[!TAB Alerts] 
 
@@ -53,21 +66,9 @@ Through Graph-based stitching, you can use the identity graph from the Experienc
 
 *_You must have the Prime package for graph-based stitching._*
 
->[!TAB B2B lookups] 
-
-As part of configuring a connection, you can transform datasets for specific B2B lookup schemas to better support person-based lookups on B2B data.
-
-[![image](assets/learn-more-button.svg)](/help/connections/transform-datasets-b2b-lookups.md)
-
->[!TAB Derived fields] 
-
-New derived field functions (Math, Next or Previous, Summarize, Deduplicate) and additional function templates (like Bounces, Friendly Dataset Name, Holiday Season, Monthly Goals, Simple Bot Detection, and others) are now available.. 
-
-[![image](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
-
 >[!TAB BI extension*] 
 
-The BI extension enables SQL access to the data views that you have defined in Customer Journey Analytics. You can now use your favorite BI tool to create reporting and dashboards based on the same data views that Customer Journey Analytics users use with their Analysis Workspace projects. [Use cases](/help/use-cases/data-views/bi-extension-usecases.md) are provided.
+The BI extension enables SQL access to the data views that you have defined in Customer Journey Analytics. You can now use your favorite BI tool (Power BI Desktop, Tableau Desktop, Looker, Juyter Notebook, and RStudio) to create reporting and dashboards based on the same data views that Customer Journey Analytics users use with their Analysis Workspace projects. [Use cases](/help/use-cases/data-views/bi-extension-usecases.md) are provided.
 
 [![image](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 

@@ -6,7 +6,16 @@ feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
 ---
-# Export Customer Journey Analytics reports to the cloud
+# Export Customer Journey Analytics reports to the cloud {#full-table-export}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-full-table-export"
+>title="Create full table exports similar to Data Warehouse"
+>abstract="Full table exports are available as soon as you see data in Analysis Workspace. You can create or schedule full table exports as needs permit.<br><br>Creating full table exports takes only a few minutes to complete if you already know what data to include in the export."
+
+<!-- markdownlint-enable MD034 -->
 
 You can export Workspace full tables from Customer Journey Analytics and send exports to designated cloud destinations. 
 
@@ -156,6 +165,7 @@ The following features are not supported and are automatically removed from full
 * Search filtering
 * Static rows
 * Date aligning
+* Metrics from summary datasets
 * Dynamic dimensions
 
   For more information, see [Dynamic vs static dimension items in freeform tables](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
@@ -172,6 +182,7 @@ The following components are not supported, and Analysis Workspace prompts you t
   * Was created from a field that is part of an [array of objects](/help/use-cases/object-arrays.md) (similar to multi-value variables in Adobe Analytics)
   * Has [persistence enabled](/help/data-views/component-settings/persistence.md)
   * Is not using a [binding dimension](/help/use-cases/data-views/binding-dimensions-metrics.md)
+* Multiple dimensions that are from fields referencing different [arrays of objects](/help/use-cases/object-arrays.md). (Multiple dimensions referencing the same array of objects are allowed.)
 * More than 5 dimensions and 5 metrics per report (up to 5 dimensions and 5 metrics are supported)
 * In table columns:
   * Date ranges

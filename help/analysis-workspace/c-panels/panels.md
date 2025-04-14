@@ -143,17 +143,18 @@ Non-filter components can also be dragged directly into the drop zone to create 
 
 For more information, see [Quick filters](/help/components/filters/quick-filters.md).
 
-![Ad hoc filters that are made public and dropped into the drop zone.](assets/adhoc-segment-filter.png)
+![Ad hoc filters that are made public and dropped into the drop zone](assets/adhoc-segment-filter.png)
 
 ### Drop-down filters
 
-+++ View a video explaining dropdown filters.
+>[!BEGINSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/23877?format=jpeg)
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Drop down filters](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} for a demo video.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 #### Static drop-down filters
 

@@ -14,9 +14,13 @@ The high-level Customer Journey Analytics architecture is shown here:
 
 ![Customer Journey Analytics architecture explained in this section](assets/cja-architecture.png)
 
-Here is a video overview of Customer Journey Analytics:
 
->[!VIDEO](https://video.tv.adobe.com/v/30090/?quality=12)
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analysis: Analytics for the Experience Business](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"} for a introduction video to Customer Journey Analytics.
+
+>[!ENDSHADEBOX]
+
 
 ## Comparing Customer Journey Analytics to Traditional Adobe Analytics
 
@@ -82,11 +86,20 @@ From Data Ingestion to direct SQL access, several components of the Experience P
 
 ## Videos
 
-* Working with data in Customer Journey Analytics:
+>[!BEGINSHADEBOX]
 
-  >[!VIDEO](https://video.tv.adobe.com/v/32112/?quality=12)
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Work with data in Customer Journey Analytics](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"} for a introduction video omn how to work with data in Customer Journey Analytics.
 
-* Architecture and Integrations of Customer Journey Analytics:
+>[!ENDSHADEBOX]
 
-  >[!VIDEO](https://video.tv.adobe.com/v/32483/?quality=12)
-  
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Architecture and integration](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"} for a introduction video on the architecture and integration of Customer Journey Analytics..
+
+>[!ENDSHADEBOX]
+
+>[!MORELIKETHIS]
+>
+>* [Adobe Customer Journey Analytics Crash Course for Analysts](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261)
+>* [Optimizing Your Mindset and Adobe Customer Journey Analytics Workflow: Team Models for Organizations of All Sizes](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456)
+>* [Building Organizational Readiness: A People-First Guide to Scaling Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273)

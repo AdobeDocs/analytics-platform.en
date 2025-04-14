@@ -10,17 +10,23 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_flow_button"
+>id="workspace_flow_button"
 >title="Flow"
 >abstract="Create a visualization to view the flow of people from one checkpoint to the next."
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_flow_panel"
+>id="workspace_flow_panel"
 >title="Flow"
->abstract="Analyze the flow of visits or visitors from one touchpoint to the next.<br/><br/>**Parameters**<br/>**Starts with**: Add a dimension, dimension item, or metric to see the top occurring touchpoints after the occurrence of the selected component.<br/>**Contains**: Add a dimension or dimension item to see the top occurring touchpoints before and after the occurrence of the selected component.<br/>**Ends with**: Add a dimension, dimension item, or metric to see the top occurring touchpoints before the occurrence of the selected component.<br/>**Pathing dimension**: Add a dimension to use as your path leading to or going from your selected component."
+>abstract="Analyze the flow of visits or visitors from one touchpoint to the next. Specify a component (metric, dimension, or item) to start with, to end with. Optionally, you can define advanced settings to further configure the visualization."
 
 <!-- markdownlint-enable MD034 -->
 
+
+>[!BEGINSHADEBOX]
+
+_This article documents the Flow visualization in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Flow](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
 
 
 The ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Flow]** visualization shows customer paths through your websites and apps.
@@ -29,15 +35,17 @@ With the visualization you can:
 
 * Visualize the customer journey through your website or application.
 * Analyze where customers go before and after specified checkpoints, such as entry, a specific dimension, or exit.
-* Create filters by designating a specific point in a chosen path
+* Create filters by designating a specific point in a chosen path.
 
-+++ View a video demonstration of the Flow visualization.
 
->[!VIDEO](https://video.tv.adobe.com/v/346063/?quality=12)
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create a flow visualization](https://video.tv.adobe.com/v/346063/?quality=12&learn=on){target="_blank"} for a demo video.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## Inter-dimensional flows
 

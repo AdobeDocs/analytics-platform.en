@@ -11,7 +11,7 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_metric_includeexcludevalues"
+>id="dataview_component_metric_includeexcludevalues"
 >title="Include exclude values"
 >abstract="Filter a metric to only count values matching specific criteria."
 
@@ -20,9 +20,9 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_dimension_includeexcludevalues"
+>id="dataview_component_dimension_includeexcludevalues"
 >title="Include exclude values"
->abstract="Narrow a dimension to only include values matching specific criteria. Inclusions and exclusions happen before allocation and filters in reports.<br/><br/>**Parameters**<br/>**Case sensitive**: Determine if the filter logic below is case-sensitive."
+>abstract="Narrow a dimension to only include values matching specific criteria. Inclusions and exclusions happen before allocation and filters in reports. Determine if the specified filter logic is case-sensitive."
 
 <!-- markdownlint-enable MD034 -->
 

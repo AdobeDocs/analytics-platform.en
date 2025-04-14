@@ -15,11 +15,11 @@ You can create an annotation in the following ways:
 
 ![Create an annotation](assets/create-annotation.png)
 
-* 🅐 In the main interface, select **[!UICONTROL Components]** and select **[!UICONTROL Annotations]**. Select ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] from the [[!UICONTROL Annotations] manager](/help/components/annotations/manage-annotations.md). 
-* 🅑 In a Workspace project, from the context menu in a visualization, select **[!UICONTROL Create annotation from selection]**.
-* 🅒 In a Workspace project, from the context menu in a line graph, select **[!UICONTROL Annotate Selection]**.
-* 🅓In a Workspace project, select **[!UICONTROL Components]** from the menu, and select **[!UICONTROL Create annotation]**. 
-* 🅔 In a Workspace project, use the shortcut **[!UICONTROL ctrl+shift+o]** (Windows) or **[!UICONTROL shift+command+o]** (macOS)
+* **A**. In the main interface, select **[!UICONTROL Components]** and select **[!UICONTROL Annotations]**. Select ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] from the [[!UICONTROL Annotations] manager](/help/components/annotations/manage-annotations.md). 
+* **B**. In a Workspace project, from the context menu in a visualization, select **[!UICONTROL Create annotation from selection]**.
+* **C**. In a Workspace project, from the context menu in a line graph, select **[!UICONTROL Annotate Selection]**.
+* **D**. In a Workspace project, select **[!UICONTROL Components]** from the menu, and select **[!UICONTROL Create annotation]**. 
+* **E**.  In a Workspace project, use the shortcut **[!UICONTROL ctrl+shift+o]** (Windows) or **[!UICONTROL shift+command+o]** (macOS)
 
 To define the annotation, you use the [[!UICONTROL Annotation builder]](#annotation-builder):
 
@@ -33,7 +33,7 @@ To define the annotation, you use the [[!UICONTROL Annotation builder]](#annotat
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_annotations_details"
+>id="components_annotations_details"
 >title="Annotation details"
 >abstract="Annotations enable you to effectively communicate contextual data nuances and insights to your organization. They let you tie calendar events to specific dimensions/metrics."
 
@@ -42,7 +42,7 @@ To define the annotation, you use the [[!UICONTROL Annotation builder]](#annotat
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_annotations_scope"
+>id="components_annotations_scope"
 >title="Scope"
 >abstract="Scope allows you to customize what data will be annotated. Calculated metrics and segments will not automatically inherit annotations applied to components used in their definitions. You may add new calculated metrics to the scope section of an existing annotation. New segments require a new annotation."
 

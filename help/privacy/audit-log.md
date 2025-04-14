@@ -10,7 +10,7 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_tools_auditlog_userid"
+>id="tools_auditlog_userid"
 >title="User ID"
 >abstract="The user ID can be found by hitting the info button on a log entry containing the desired user."
 
@@ -19,7 +19,7 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_tools_auditlog_componentid"
+>id="tools_auditlog_componentid"
 >title="Component ID"
 >abstract="The component ID can be found by hitting the info button on a log entry containing the desired component."
 
@@ -57,22 +57,22 @@ Double click the info (i) button next to a description.
 The following items are shown:
 
 * **[!UICONTROL Action Name]**: The action taken. Possible values include:
-  * API_REQUEST
-  * APPROVE
-  * CREATE
-  * DELETE
-  * EDIT
-  * EMBARGO
-  * EXPORT
-  * ORG_CHANGE
-  * REFRESH
-  * SHARE
-  * TRANSFER
-  * UNAPPROVE
-  * UNSHARE
+  * API_REQUEST: Any action triggers a backend API request. Details are displayed about what the API request was.
+  * APPROVE: An "approval" action was performed.
+  * CREATE: A "create" action was performed.
+  * DELETE: A "delete" action was performed.
+  * EDIT: An "edit" action was performed.
+  * EMBARGO: When you restrict a request in the [Reporting Activity Manager](https://experienceleague.adobe.com/en/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests), the action is recorded in the Audit Log under EMBARGO.
+  * EXPORT: An "export" action was performed.
+  * ORG_CHANGE: An organization change action was performed.
+  * REFRESH: A "refresh" action was performed.
+  * SHARE: A "share" action was performed.
+  * TRANSFER: A transfer action was performed.
+  * UNAPPROVE: An "unapprove" action was performed.
+  * UNSHARE: An "unshare" action was performed.
 * **[!UICONTROL Date Created]**: The date and time that the action was taken.
 * **[!UICONTROL Description]**: A summary of the action.
-* **[!UICONTROL User Name]**: The user that took the action.
+* **[!UICONTROL User Name]**: The user that took the action. Sometimes, the user name might be missing. Consider using the [Product Usage](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview) feature, since it always includes the login user name.
 * **[!UICONTROL Email]**: The email address of the user that took the action.
 * **[!UICONTROL Component Name]**: The component that the user took action on.
 * **[!UICONTROL Component Type]**: The type of component. Possible values include:
@@ -88,7 +88,7 @@ The following items are shown:
   * FILTER
   * IMS_ORG
   * MOBILE
-  * PROJECT
+  * PROJECT (Workspace)
   * REPORT
   * SCHEDULED_PROJECT
   * USER

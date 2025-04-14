@@ -11,7 +11,7 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_metric_deduplication"
+>id="dataview_component_metric_deduplication"
 >title="Metric deduplication"
 >abstract="Configure a metric to only count values that occur non-repetitively."
 
@@ -25,7 +25,7 @@ Metric deduplication lets you configure a metric to only count values non-repeti
 | Setting | Description |
 | --- | --- |
 | [!UICONTROL Metric deduplication] | A checkbox that allows you to enable metric deduplication. Disabled by default. |
-| [!UICONTROL Deduplication scope] | Lets you determine how far back the unique check goes.<br>**Session**: Only the first metric occurrence of the session is counted.<br>**Person**: Only the first metric occurrence in the reporting window is counted. |
+| [!UICONTROL Deduplication scope] | Lets you determine how far back the unique check goes.<br/>**[!UICONTROL Global account]**: Only the first metric occurrence in the reporting window is counted.<br/>**[!UICONTROL Account]**: Only the first metric occurrence in the reporting window is counted.<br/>**[!UICONTROL Opportunity]**: Only the first metric occurrence in the reporting window is counted.<br/>**[!UICONTROL Buying group]**: Only the first metric occurrence in the reporting window is counted.<br/>**[!UICONTROL Person]**: Only the first metric occurrence in the reporting window is counted.<br>**[!UICONTROL Session]**: Only the first metric occurrence of the session is counted.<br> |
 | [!UICONTROL Deduplication ID] | Instead of applying deduplication on the metric itself, allows you to apply metric deduplication based on a dimension instead. Valuable for dimensions like Purchase ID to apply deduplication. |
 | [!UICONTROL Value to keep]|<ul><li>**Keep first instance**: Use this in situations where the initial instance of the metric is the valid one. The most common one would probably be a purchase confirmation. Even if someone inadvertently reloads the page and we get another instance of a purchase confirmation, the initial event is the valid one.</li><li>**Keep last instance**: Use this in situations where the last instance makes more sense to collect. Example: Someone makes an update to their online profile. We only want to count one of these updates per session. However, they may update their profile multiple times during the session. If we keep the first instance, there could be activities which would not tie to the event. In this case, it makes more sense to keep the last instance.</li></ul> |
 

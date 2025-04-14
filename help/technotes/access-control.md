@@ -60,6 +60,16 @@ In addition to being added as a Product administrator in the **Customer Journey 
     
     For more information on Experience Platform permissions, see [Manage permissions for a product profile](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
+
+* If Adobe Journey Optimizer was integrated with CJA where AJO Connections exist, then Journeys permissions must also be added in order to access Connections:
+
+  | Category | Permission | Description |
+  |---|---|---|
+  | [!UICONTROL Journeys] | [!UICONTROL View Journeys Events, Data Sources and Actions] | Read-only access to journey events, journey custom actions, and journey data sources. |
+  | [!UICONTROL Journeys] | [!UICONTROL Manage Journeys Events, Data Sources and Actions ] | Read, create, edit, and delete events, sources, or actions. |
+  | [!UICONTROL Journeys] | [!UICONTROL View Journeys] | Read-only access to journeys. |
+  | [!UICONTROL Journeys] | [!UICONTROL Manage Journeys] | Read, create, edit, and delete journeys. |
+
 * Export datasets to [destinations](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets)
   
   To perform this task, users must be part of an **Experience Platform Product Profile** that provides the following permissions:

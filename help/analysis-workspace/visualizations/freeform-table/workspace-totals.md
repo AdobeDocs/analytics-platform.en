@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_freeformtable_grandtotal"
+>id="workspace_freeformtable_grandtotal"
 >title="Grand Total"
 >abstract="Grand total is not supported for tables or breakdowns with static rows"
 
@@ -29,7 +29,7 @@ In Freeform tables, a total row appears at each breakdown level and can show two
 
 ## Display totals
 
-Under ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Column settings]**, there are options to **[!UICONTROL Show totals]** and **[!UICONTROL Show grand total]**. If these settings are unchecked, totals are removed from the table, which may be desired in cases where totals don't make sense. For instance, in certain [Calculated Metric scenarios](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals).
+Under ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Column settings]**, there are options to **[!UICONTROL Show totals]** and **[!UICONTROL Show grand total]**. If these settings are unchecked, totals are removed from the table, which may be desired in cases where totals don't make sense.
 
 
 [Static row](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) totals behave differently, and are controlled using ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Row Settings]**.
@@ -47,7 +47,7 @@ See [Dynamic vs static dimension items in freeform tables](column-row-settings/m
 |Questions|Answer|
 |---|---|
 | Which *total* are the gray column percentages based on? | This *total* depends on the **[!UICONTROL Percentages]** setting selection under **[!UICONTROL Row Settings]**:<ul><li>Calculate percentages by column - This setting is the default. Percentages are based on the Table total.</li><li>Calculate percentages by row - Percentages are based on the Grand total.</li></ul>|
-|How does the **[!UICONTROL Include "No value"]** setting impact totals?|If the **[!UICONTROL Include "No value"]** setting is unchecked, the **[!UICONTROL No value]** row is removed from the table, the Table total, and carries through to any calculated metrics that use [*Total* metric types](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/calcmetric-workflow/m-metric-type-alloc)|
+|How does the **[!UICONTROL Include "No value"]** setting impact totals?|If the **[!UICONTROL Include "No value"]** setting is unchecked, the **[!UICONTROL No value]** row is removed from the table, the Table total, and carries through to any calculated metrics that use [*Total* metric types](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md).|
 |When custom table filters are applied to a freeform table, do all of my calculated metrics and conditional formatting account for the filter?|Not currently. **[!UICONTROL Include "No value"]** is account for, but custom table filters do not impact the following:<ul><li>The column max / min range that conditional formatting uses looks across all data.</li><li>Calculated metrics that leverage **[!UICONTROL Grand total]** metric types.</li><li>Calculated metrics with functions that calculate across rows in a freeform table: Column Sum, Column max, Column min, Count, Mean, Median, Percentile, Quartile, Row Count, Standard Deviation, Variance, Cumulative, Cumulative Average, Regression variants, T-Score, T-Test, Z-Score, and Z-Test.</li></ul>|
 |In Calculated Metrics, what does the **[!UICONTROL Grand total]** metric type reflect?|**[!UICONTROL Grand total]** continues to refer to the **[!UICONTROL Grand total]**, and does not reflect filters applied to a table or the **[!UICONTROL Table total]**.|
 |What total is shown when data is either copied and pasted from a freeform table or downloaded via CSV?|The total row reflects the **[!UICONTROL Table total]** only and respects the column **[!UICONTROL Show totals]** setting.|

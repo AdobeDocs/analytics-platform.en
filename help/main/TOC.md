@@ -13,11 +13,10 @@ breadcrumb-title: Customer Journey Analytics Guide
 # Adobe Customer Journey Analytics Guide {#using}
 
 + [Adobe Customer Journey Analytics Guide](../getting-started/cja-landing.md)
-+ [AI Assistant for Adobe Customer Journey Analytics](../ai-assistant.md)
-+ [Data Analysis AI Assistent for Customer Journey Analytics](../data-analysis-ai.md)
 
 + Release Notes {#releases}
   + [Latest release](../release-notes/latest.md)
+  + [2025 releases](../release-notes/2025.md)
   + [2024 releases](../release-notes/2024.md)
   + [2023 releases](../release-notes/2023.md)
   + [2022 releases](../release-notes/2022.md)
@@ -26,13 +25,19 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Feature release strategy](../release-notes/releases.md)
   + [Documentation updates](../release-notes/doc-changes.md)
 
-+ Getting Started {#cja-overview}
-  + [Customer Journey Analytics overview](../getting-started/cja-overview.md)
-  + [Quick start guide](../getting-started/cja-getting-started.md)
-  + [Landing page](../getting-started/landing.md)
-  + [Landing page (old)](../getting-started/cja-landing-old.md)
-  + [Frequently asked questions](../getting-started/cja-faq.md)
-  + [Compare Customer Journey Analytics to BI solutions](../getting-started/cja-vs-bi.md)
++ Get Started {#cja-overview}
+  + Customer Journey Analytics {#cja-b2c-overview}
+    + [Overview](../getting-started/cja-overview.md)
+    + [Quick start guide](../getting-started/cja-getting-started.md)
+    + [Landing page](../getting-started/landing.md)
+    + [Frequently asked questions](../getting-started/cja-faq.md)
+    + [Compare to BI solutions](../getting-started/cja-vs-bi.md)
+    + [AI Assistant](../ai-assistant.md)
+    + [Data Insights Agent](../data-analysis-ai.md)
+  + Customer Journey Analytics B2B Edition {#cja-b2b}
+    + [Overview](/help/getting-started/cja-b2b-edition.md)
+    + [B2B concepts and features](/help/getting-started/cja-b2b-concepts-features.md)
+    + [Quick start guide](/help/getting-started/cja-b2b-quick-start-guide.md)
 
 + Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
   + Upgrade to Customer Journey Analytics {#upgrade-to-cja}
@@ -40,27 +45,50 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Choose your upgrade path](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
     + [Send data to Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
     + [Retain historical data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
-    + [Recommended process](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
-    + [Understand Analytics implementation](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
-    + [Create lookup datasets for classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
-    + [Create a marketing channel derived field](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
-    + [Implement the loader tag for the Web SDK extension](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
-    + [Create a tag for your property](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
-    + [Add the Web SDK extension to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
-    + [Add XDM data collection logic to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
-    + [Architect your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
-    + [Create your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
-    + [Use your existing schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
-    + [Create a dataset](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
-    + [Create a datastream](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
-    + [Add Platform as a service](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+    + [Recommended upgrade process](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+    + Architect and create a schema {#schema}
+      + [Architect your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
+      + [Create your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
+      + [Use your existing schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
+    + Create a datastream {#create-datastream}
+      + [Create a datastream](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
+      + [Add Platform as a service](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+    + Create datasets {#create-datasets}
+      + [Create a dataset](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
+      + [Create lookup datasets for classifications](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
+      + [Monitor dataset ingestion](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
+    + Implement the Web SDK with tags {#create-tags}
+      + [Create a tag for your property](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
+      + [Add the Web SDK extension to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+      + [Implement the loader tag for the Web SDK extension](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
+      + [Add XDM data collection logic to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
+    + [Implement the Web SDK manually](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
+    + [Implement the Web SDK with the API](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
     + [Create a connection](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
     + [Create a data view](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
+    + [Create a marketing channel derived field](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
     + [Validate data flow](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
-    + [Upgrade shortcut: Migrate to Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-shortcut-websdk.md)
-    + [Create an XDM schema for the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
-    + [Create the Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
-    + [Add the Analytics source connector dataset to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+    + [Set up Streaming Media Collection](/help/getting-started/cja-upgrade/cja-upgrade-streaming-media.md)
+    + Retain historical data with the Analytics source connector {#historical-data-source-connector}
+      + [Create an XDM schema for the Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+      + [Create the Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+      + [Add the Analytics source connector dataset to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+    + [Evaluate when to disable Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
+    + [Disable Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
+    + Alternative upgrade methods {#alternative-upgrade-methods}
+      + [Use AppMeasurement data collection](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)
+      + [Send data layer](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)
+      + [Analytics source connector](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)
+    + Other upgrade scenarios {#other-upgrade-scenarios}
+      + [Move from the Analytics source connector to the Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
+      + [Upgrade from a non-Adobe Analytics solution](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
+    + Additional information {#additional-information}
+      + [Understand Analytics implementation](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
+      + [Adobe Analytics feature support when upgrading](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
+      + [Customer Journey Analytics features](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md)
+      + [Web SDK implementation options](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
+      + [Configuring Adobe Analytics Web SDK for Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
+      + [Use personalization with Adobe Journey Optimizer](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
   + Comparison with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)
@@ -73,7 +101,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Evolution from Adobe Analytics ](../getting-started/aa-to-cja.md)
   + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
 
-+ Data Ingestion {#cja-data-ingestion}
++ Data ingestion {#cja-data-ingestion}
   + [Data ingestion overview](../data-ingestion/data-ingestion.md)
   + Ingest and use quick start guides{#ingest-use-guides}
     + [Adobe Analytics](../data-ingestion/analytics.md)
@@ -97,7 +125,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Data views overview](../data-views/data-views.md)
   + [Create or edit a data view](../data-views/create-dataview.md)
   + [Session settings](../data-views/session-settings.md)
-  + Component Settings {#component-settings}
+  + Component settings {#component-settings}
     + [Component settings overview](../data-views/component-settings/overview.md)
     + [Attribution](../data-views/component-settings/attribution.md)
     + [Behavior](../data-views/component-settings/behavior.md)
@@ -140,7 +168,9 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Hotkeys (Shortcuts)](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
     + [Color palettes](../analysis-workspace/build-workspace-project/color-palettes.md)
     + [View density](../analysis-workspace/build-workspace-project/view-density.md)
-  + [Use templates](../analysis-workspace/templates/use-templates.md)
+  + Templates {#templates}
+    + [Use templates](../analysis-workspace/templates/use-templates.md)
+    + [Create and manage templates](../analysis-workspace/templates/create-templates.md)
   + Visualizations {#visualizations}
     + [Overview](../analysis-workspace/visualizations/freeform-analysis-visualizations.md)
     + [Manage data sources](../analysis-workspace/visualizations/t-sync-visualization.md)
@@ -154,7 +184,7 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [Dynamic and static items](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
       + [Filter and sort tables](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
       + [Workspace totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
-    + Cohort Table {#cohort-table}
+    + Cohort table {#cohort-table}
       + [Overview](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
       + [Configure](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
       + [Use cases](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
@@ -180,9 +210,10 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Horizontal bar (stacked)](../analysis-workspace/visualizations/horizontal-bar.md)
     + [Key metric summary](../analysis-workspace/visualizations/key-metric.md)
     + [Line](../analysis-workspace/visualizations/line.md)
+    + [Map](/help/analysis-workspace/visualizations/map.md)
     + [Scatter](../analysis-workspace/visualizations/scatterplot.md)
-    + [Summary number and change](../analysis-workspace/visualizations/summary-number-change.md)
     + [Section header](/help/analysis-workspace/visualizations/section-header.md)
+    + [Summary number and change](../analysis-workspace/visualizations/summary-number-change.md)
     + [Text](../analysis-workspace/visualizations/text.md)
     + [Tree map](../analysis-workspace/visualizations/treemap.md)
     + [Venn](../analysis-workspace/visualizations/venn.md)
@@ -197,7 +228,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Media playback time spent](../analysis-workspace/c-panels/media-playback-time-spent.md)
     + [Next or previous item](../analysis-workspace/c-panels/next-previous.md)
     + [Quick insights](../analysis-workspace/c-panels/quickinsight.md)
-  + Curate, Share and Schedule projects {#curate-share}
+  + Curate, share and schedule projects {#curate-share}
     + [Overview](../analysis-workspace/curate-share/send-schedule-files.md)
     + [Curate projects](../analysis-workspace/curate-share/curate.md)
     + [Share projects](../analysis-workspace/curate-share/share-projects.md)
@@ -224,6 +255,17 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Limitations](../analysis-workspace/workspace-faq/aw-limitations.md)
     + [Administration requirements](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
     + [Accessibility](../analysis-workspace/workspace-faq/aw-accessibility.md)
+
++ Content Analytics {#content-analytics}
+  + [Overview](/help/content-analytics/content-analytics.md)
+  + Report {#report}
+    + [Overview](/help/content-analytics/report/report.md)
+    + [Components](/help/content-analytics/report/components.md)
+  + Configuration {#configuration}
+    + [Overview](/help/content-analytics/config/configuration.md)
+    + [Guided configuration](/help/content-analytics/config/guided.md)
+    + [Manual configuration](/help/content-analytics/config/manual.md)
+    + [Data collection](/help/content-analytics/config/datacollection.md)
 
 + Analytics dashboards {#cja-dashboards}
   + [Overview](../mobile-app/home.md)
@@ -339,7 +381,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Report Builder Hub](../report-builder/report-builder-hub.md)
   + [Select a Data View](../report-builder/select-data-view.md)
   + [Select a Date Range](../report-builder/select-date-range.md)
-  + [Work with Filters](../report-builder/work-with-filters.md)
+  + [Work with Segments](../report-builder/work-with-filters.md)
   + [Filter Dimensions](../report-builder/filter-dimensions.md)
   + [Manage Data Blocks](../report-builder/manage-reportbuilder.md)
   + [Schedule Workbooks](../report-builder/schedule-reportbuilder.md)
@@ -352,9 +394,12 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Cancel reporting requests](../reporting-activity-manager/reporting-activity-cancel-requests.md)
 
 + Stitching {#stitching}
-  + [Overview](../stitching/overview.md)
-  + [Create and manage stitched datasets](../stitching/stitching-ui.md)
-  + [Frequently Asked Questions](../stitching/faq.md)  
+  + [Overview](/help/stitching/overview.md)
+  + [Field based stitching](/help/stitching/fbs.md)
+  + [Graph based stitching](/help/stitching/gbs.md)
+  + [Use stitching](/help/stitching/use-stitching.md)
+  + [Create and manage stitched datasets](/help/stitching/stitching-ui.md)
+  + [Frequently Asked Questions](/help/stitching/faq.md)  
 
 + Adobe integrations {#integrations}
   + [Overview](/help/integrations/overview.md)
@@ -371,11 +416,20 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](../use-cases/cja-usecases.md)
-  + Google Analytics data {#ga}
-    + [Migrate data from Google Analytics](../use-cases/ga/overview.md)
-    + [Ingest Google Analytics historical data ](../use-cases/ga/backfill.md)
-    + [Configure streaming Google Analytics data](../use-cases/ga/streaming.md)
-    + [Report on Google Analytics data](../use-cases/ga/report.md)
+  + Third-party data {#third-party}
+    + [Overview](/help/use-cases/third-party/overview.md)
+    + Google Analytics {#ga}
+      + [Migrate data from Google Analytics](/help/use-cases/third-party/ga/overview.md)
+      + [Ingest Google Analytics historical data](/help/use-cases/third-party/ga/backfill.md)
+      + [Configure streaming Google Analytics data](/help/use-cases/third-party/ga/streaming.md)
+      + [Report on Google Analytics data](/help/use-cases/third-party/ga/report.md)
+    + Quantum Metric {#qm}
+      + [Overview](/help/use-cases/third-party/quantum-metric/qm-overview.md)
+      + [Collect session ID](/help/use-cases/third-party/quantum-metric/collect-session-id.md)
+      + [Tie session replays](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
+      + [Use heatmaps](/help/use-cases/third-party/quantum-metric/heatmap.md)
+      + [Add friction events](/help/use-cases/third-party/quantum-metric/friction-events.md)
+      + [Source connector](/help/use-cases/third-party/quantum-metric/source-connector.md)
   + Data ingestion {#data-ingestion}
     + [Ingest and use Marketo Engage data](../use-cases/data-ingestion/marketo.md)
     + [Ingest and use Experience Platform audiences ](../use-cases/data-ingestion/ingest-aep-segments.md)

@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_cohorttable_button"
+>id="workspace_cohorttable_button"
 >title="Cohort table"
 >abstract="Create a cohort visualization to group users based on completion of an event and analyze ongoing engagement and churn over time."
 
@@ -19,11 +19,18 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_cohorttable_panel"
->title="Chohort table"
->abstract="Group users based on completion of an event, then analyze their ongoing engagement and churn over time.<br/><br/>**Parameters**<br/>**Inclusion criteria**: The components used to define your initial visitor cohorts.<br/>**Return criteria**: The components used to determine if a visitor has returned."
+>id="workspace_cohorttable_panel"
+>title="Cohort table"
+>abstract="Group users based on completion of an event, then analyze their ongoing engagement and churn over time. Specify additional settings like granularity, type of cohort analysis, and whether or not to use rolling calculation. You can set advanced options to build a latency table or a custom dimension cohort based on a selected dimension."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+_This article documents the Cohort table in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Cohort table](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
 
 
 A *cohort* is a group of people sharing common characteristics over a specified period. A ![TextNumbered](/help/assets/icons/TextNumbered.svg) **[!UICONTROL Cohort table]** visualization is useful, for example, when you want to learn how a cohort engages with a brand. You can easily spot changes in trends, then respond accordingly. (Explanations of [!UICONTROL Cohort Analysis] are available on the web, such as at [Cohort Analysis 101](https://en.wikipedia.org/wiki/Cohort_analysis).)
@@ -39,21 +46,27 @@ Examples of what you can do with a [!UICONTROL Cohort table]:
 
 [!UICONTROL Cohort table] is available for all Customer Journey Analytics customers with access rights to [!UICONTROL Analysis Workspace].
 
-+++ View a video demonstration of the cohort table.
 
->[!VIDEO](https://video.tv.adobe.com/v/23990/?quality=12)
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Cohort analysis in Analysis Workspace](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"} for a demo video.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 >[!IMPORTANT]
 >
 >[!UICONTROL Cohort Analysis] does not support non-filterable metrics (including calculated metrics), non-integer metrics (such as Revenue), or Occurrences. Only metrics that can be used in filters can be used in [!UICONTROL Cohort Analysis], and they can only be incremented 1 at a time. 
 
+Cohort tables in Customer Journey Analytics support double-based (or any numeric-based) metric. For example, Purchase.Value (a double) can be used as an  Inclusion/Return Metric. In addition, all metrics that are passed into Adobe Experience Platform via the Analytics Source Connector are also doubles.
+
 ## Cohort table capabilities
 
-The following capabilities allow for fine-tuned control over the cohorts you are building:
+The following sections describe Cohort Analysis features that allow for fine-tuned control over the cohorts you are building.
+
+For more detailed information about creating a cohort and running a [!UICONTROL Cohort Analysis] report, see [Configure a Cohort table](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
 
 ### [!UICONTROL Retention] table
 

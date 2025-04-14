@@ -37,7 +37,7 @@ General preferences apply to your Customer Journey Analytics experience in the b
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_shareonlyworkspace"
+>id="workspace_prefs_shareonlyworkspace"
 >title="Allow sharing only with Workspace users"
 >abstract="When enabled, the **[!UICONTROL Share with anyone]** option is no longer available to users when sharing an Analysis Workspace project. People who previously received access to a project through this share option can no longer access the project."
 
@@ -46,7 +46,7 @@ General preferences apply to your Customer Journey Analytics experience in the b
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_requireexperiencecloudauth"
+>id="workspace_prefs_requireexperiencecloudauth"
 >title="Require Experience Cloud authentication"
 >abstract="When enabled, people who are given access to a project from the Share with anyone option in Analysis Workspace must authenticate using their Experience Cloud credentials."
 
@@ -69,7 +69,7 @@ You can update company preferences that apply to all users and projects within y
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_categoricalpalette"
+>id="workspace_prefs_categoricalpalette"
 >title="Categorical palette"
 >abstract="Applied to many visualizations in Analysis Workspace and Guided analysis. Each color represents a distinct categorical value."
 
@@ -78,7 +78,7 @@ You can update company preferences that apply to all users and projects within y
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_divergingpalette"
+>id="workspace_prefs_divergingpalette"
 >title="Diverging palette"
 >abstract="Applied to the Cohort table in Analysis Workspace and User growth guided analysis. This palette holds a numeric meaning with two extremes and a baseline in the middle."
 
@@ -87,7 +87,7 @@ You can update company preferences that apply to all users and projects within y
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_sequentialpalette"
+>id="workspace_prefs_sequentialpalette"
 >title="Sequential palette"
 >abstract="Applied to the Frequency trends (stacked bar) guided analysis. This palette holds a numeric meaning from light to dark."
 
@@ -101,12 +101,12 @@ Some of these same preferences can also be customized for individual projects in
 | Section | Preference | Options |
 | --- | --- | --- |
 | **Display** | | |
-|  | [View density](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) | Choose how much content to display on the screen by reducing the vertical padding of the left panel, freeform tables, and cohort tables. <ul><li>Compact</li><li>Comfortable</li><li>Expanded (default)</li></ul> |
-| | [Color palette](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html) | Choose the visualization color palettes that are used in Analysis Workspace and guided analysis. <ul><li> Categorical palette: Applied to many visualizations in Analysis Workspace and guided analysis. Each color represents a distinct categorical value. Choose from Adobe-provided options or enter a custom palette defined by comma-delimited hex values.</li><li> Divergent palette: Applied to the Cohort table in Analysis Workspace and User growth guided analysis. This palette holds a numeric meaning with two extremes and a baseline in the middle.<li> Sequential palette: Applied to the Frequency trends (stacked bar) guided analysis. This palette holds a numeric meaning from light to dark.</li></ul> |
+|  | [View density](/help/analysis-workspace/build-workspace-project/view-density.md) | Choose how much content to display on the screen by reducing the vertical padding of the left panel, freeform tables, and cohort tables. <ul><li>Compact</li><li>Comfortable</li><li>Expanded (default)</li></ul> |
+| | [Color palette](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Choose the visualization color palettes that are used in Analysis Workspace and guided analysis. <ul><li> Categorical palette: Applied to many visualizations in Analysis Workspace and guided analysis. Each color represents a distinct categorical value. Choose from Adobe-provided options or enter a custom palette defined by comma-delimited hex values.</li><li> Divergent palette: Applied to the Cohort table in Analysis Workspace and User growth guided analysis. This palette holds a numeric meaning with two extremes and a baseline in the middle.<li> Sequential palette: Applied to the Frequency trends (stacked bar) guided analysis. This palette holds a numeric meaning from light to dark.</li></ul> |
 | **Data** | | |
-|  | [Data view](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#report-suite) | Choose the data where tables and visualizations derive their data. <ul><li>Most recent (default)</li><li>Specific data view selected from a list</li></ul> |
-|  | [Calendar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?#calendar) | Select from a list of: <ul><li>Adobe-provided ranges (default is This Month)</li><li>You can enable [!UICONTROL Make date range components relative to panel calendar by default].</li></ul> |
-|  | [Panel Type](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html) | <ul><li>Freeform (default)</li><li>Blank</li><li>Quick Insights</li></ul> |
+|  | [Data view](/help/analysis-workspace/c-panels/panels.md#data-view) | Choose the data where tables and visualizations derive their data. <ul><li>Most recent (default)</li><li>Specific data view selected from a list</li></ul> |
+|  | [Calendar](/help/analysis-workspace/c-panels/panels.md#calendar) | Select from a list of: <ul><li>Adobe-provided ranges (default is This Month)</li><li>You can enable [!UICONTROL Make date range components relative to panel calendar by default].</li></ul> |
+|  | [Panel Type](/help/analysis-workspace/c-panels/panels.md#panel-types) | <ul><li>Freeform (default)</li><li>Blank</li><li>Quick Insights</li></ul> |
 |  | Instance counting  | Enable [!UICONTROL Count repeat instances] to specifies whether repeat instances are counted in reports. For example, when enabled, multiple consecutive page views to the same page are treated as multiple page views. When disabled, multiple consecutive page views to the same page count as a single page view. <p>**Note:** This setting affects only certain metrics (such as Sessions) and it does not apply to Flow or Fallout visualizations.</p> |
 |  | Number format | <ul><li>1,000.00 (default)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV separator character | <ul><li>Comma (default)</li><li>Semicolon</li><li>Colon</li><li>Pipe</li><li>Period</li><li>Space</li><li>Tab</li></ul> |
@@ -118,7 +118,7 @@ Some of these same preferences can also be customized for individual projects in
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_showanomalies"
+>id="workspace_prefs_showanomalies"
 >title="Show anomalies"
 >abstract="Selecting **[!UICONTROL Show anomalies]** will automatically run anomaly detection on the first metric column added to a time series Freeform table visualization."
 
@@ -127,11 +127,22 @@ Some of these same preferences can also be customized for individual projects in
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_showforecast"
+>id="workspace_prefs_showforecast"
 >title="Show forecast"
 >abstract="Selecting **[!UICONTROL Show forecast]** will automatically forecast the first metric column added to a time series Freeform table visualization."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaulttablemetric"
+>title="Default table metric"
+>abstract="Select the default metric to use for freeform tables. If the selected data view does not contain the selected default metric, the table will automatically switch to another primary metric."
+
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 You can customize freeform table preferences for all new projects that you create in Analysis Workspace. For information about how to access these preferences, see [Update preferences](#update-preferences). 
@@ -164,7 +175,28 @@ Select the linked section titles for more information and context about the avai
 | | Percentage calculation | <ul><li>Column</li><li>Row</li></ul> |
 | | Column totals (Static rows only) |<ul><li>Display sum of rows: Shows the sum of the individual line items </li><li>Display grand total: Shows the de-duplicated sum of rows.</li></ul> |
 
-### Visualizations preferences
+### Visualizations preferences {#visalization-preferences}
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaultflowcontainer"
+>title="Default container"
+>abstract="Select the default container to use for [!UICONTROL Flow] visualizations. If the selected data view does not contain the selected default container, the [!UICONTROL Flow] visualization will automatically switch to another primary container."
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaultfalloutcontainer"
+>title="Default container"
+>abstract="Select the default container to use for [!UICONTROL Fallout] visualizations. If the selected data view does not contain the selected default container, the [!UICONTROL Fallout] visualization will automatically switch to another primary container."
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaulthistogramcountingmethod"
+>title="Default counting method"
+>abstract="Select the default counting method to use for [!UICONTROL Histogram] visualizations. If the selected data view does not contain the selected default counting method, the [!UICONTROL Histogram] visualization will automatically switch to another primary counting method."
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaultjourneycanvascontainer"
+>title="Default container"
+>abstract="Select the default container to use for [!UICONTROL Journey canvas] visualizations. If the selected data view does not contain the selected default container, the [!UICONTROL Journey canvas] visualization will automatically switch to another primary container."
+
 
 You can update visualization preferences for all new prjects that you create in Analysis Workspace. For information about how to access these preferences, see [Update preferences](#update-preferences). 
 

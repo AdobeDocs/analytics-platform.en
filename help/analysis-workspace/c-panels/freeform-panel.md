@@ -7,6 +7,14 @@ role: User
 ---
 # Freeform panel
 
+
+>[!BEGINSHADEBOX]
+
+_This article documents the Freeform panel in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_See [Freeform panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/freeform-panel) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
+
+
 A **[!UICONTROL Freeform panel]** is a blank panel with a [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) visualization as the default starting state.
 
 ## Use

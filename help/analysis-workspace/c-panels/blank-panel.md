@@ -10,12 +10,19 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_blankpanel_button"
+>id="workspace_blankpanel_button"
 >title="Blank panel"
 >abstract="Show a selection of panels or visualizations that you can create to build a completely customized analysis."
 >additional-url="https://www.youtube.com/watch?v=SYaioiwBTrk" text="Panels in Analysis Workspace"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+_This article documents the Blank panel in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_See [Blank panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
+
+>[!ENDSHADEBOX]
 
 
 A **[!UICONTROL Blank panel]** shows a selection of panels (indicated by ![WebPage](/help/assets/icons/WebPage.svg)) or visualizations that you can create to build a completely customized analysis. 

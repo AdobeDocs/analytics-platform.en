@@ -4,17 +4,20 @@ description: Learn about the recommended path when upgrading from Adobe Analytic
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 22d3e7b8-4a4d-48a8-a98d-5172a9876286
 ---
-# Create and configure a connection to use with Customer Journey Analytics
+# Create and configure a connection to use with Customer Journey Analytics {#upgrade-create-connection}
 
->[!NOTE]
-> 
->Follow the steps on this page only after you complete all previous upgrade steps. You can follow the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations), or you can follow the upgrade steps that were dynamically generated for your organization with the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
->
->After you complete the steps on this page, continue following the recommended upgrade steps or the dynamically generated upgrade steps. 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-connection"
+>title="Create a connection in Customer Journey Analytics"
+>abstract="A connection allows you to translate data from Adobe Experience Platform into a format optimized for Customer Journey Analytics reporting. Creating a connection in Customer Journey Analytics is straightforward, taking only a few minutes to complete."
+
+<!-- markdownlint-enable MD034 -->
+
+{{upgrade-note-step}}
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/connections/create-connection.md -->
 
@@ -110,4 +113,4 @@ You can add an Experience Platform dataset when you create a connection.
 
     {style="table-layout:auto"}
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}

@@ -12,7 +12,7 @@ role: Admin
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_dimension_persistence"
+>id="dataview_component_dimension_persistence"
 >title="Persistence"
 >abstract="Configure the default allocation model applied to a dimension. Allocation applies before filters in reporting. See for more information [allocation settings](/help/data-views/component-settings/persistence.md#allocation-settings), [expiration settings](/help/data-views/component-settings/persistence.md#expiration-settings), [binding dimension](/help/data-views/component-settings/persistence.md#binding-dimension) and [binding metrics](/help/data-views/component-settings/persistence.md#binding-metric)."
 
@@ -78,14 +78,20 @@ Details around the available allocation settings.
   | First known | C | C | C | C | C |
   | Last known | A | A | A | A | A |
 
+
 ## [!UICONTROL Expiration] settings
 
 Details around the available expiration settings.
 
 * **Session**: Expires after a given session. Default expiration window.
-* **Person**: Expires at the end of the reporting window.
+* **Person Reporting Window**: Expires at the end of the reporting window.
+* **Global Account Reporting Window** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}: Expires at the end of the reporting window.
+* **Account Reporting Window** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}: Expires at the end of the reporting window.
+* **Opportunity Reporting Window** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}: Expires at the end of the reporting window.
+* **Buying Group Reporting Window** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}: Expires at the end of the reporting window.
 * **Custom Time**: Expires after a specified time period (up to 90 days). This expiration option is only available for Original and Most Recent allocation models. When using time-based expiration, values previous to the start of your reporting window (up to 90 days) are considered.
 * **Metric**: When this metric is seen in a event, immediately expire the persisted value in the dimension. You can use any metric as the expiration end for this dimension. This expiration option is only available for Original and Most Recent allocation settings.
+
 
 ## [!UICONTROL Binding Dimension]
 
@@ -93,7 +99,13 @@ A drop-down list that lets you bind the persistence of a dimension value to dime
 
 See [Using binding dimensions and metrics in Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) for examples around how to effectively use binding dimensions.
 
->[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Binding dimensions](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
 
 ## [!UICONTROL Binding Metric]
 

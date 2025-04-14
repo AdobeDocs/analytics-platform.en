@@ -10,7 +10,7 @@ exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_component_datadictionary"
+>id="component_datadictionary"
 >title="Data dictionary"
 >abstract="The Data Dictionary helps both users and and administrators keep track of and better understand the components in their Analytics environment. <br/>Analytics administrators are responsible for curating information about each component the Data Dictionary to users."
 
@@ -22,13 +22,15 @@ The Data Dictionary in Analysis Workspace helps both users and administrators ke
 Analytics administrators are responsible for curating information about each component in the Data Dictionary to make it available to users.
 
 
-+++ View a video to demonstrate the Data Dictionary 
+>[!BEGINSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on)
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Data dictionary for Analyis Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} for a demo video.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
+
 
 ## Benefits for users
 

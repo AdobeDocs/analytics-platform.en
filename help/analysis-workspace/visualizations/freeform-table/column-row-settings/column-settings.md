@@ -9,13 +9,15 @@ role: User
 
 [!UICONTROL Column settings] let you configure column formatting, some of which can be conditional.
 
-+++ View a video demonstration of this functionality.
 
->[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Row and column settings in a Freeform table](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"} for a demo video.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 To access [!UICONTROL Column settings], select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in the column heading.
 
@@ -49,7 +51,7 @@ Conditional formatting applies formatting to upper, midpoint, and lower limits t
 
 | Conditional formatting options | Description |
 | --- | --- |
-|**[!UICONTROL  Use percent limits]** | Change the limit range to be based on percentages rather than absolute values. The percentage limit range works for metrics that are solely percentage based (like Bounce Rate) and for metrics that have a count and a percentage (like Page Views). |
+|**[!UICONTROL Use percent limits]** | Change the limit range to be based on percentages rather than absolute values. The percentage limit range works for metrics that are solely percentage based (like Bounce Rate) and for metrics that have a count and a percentage (like Page Views). |
 | **[!UICONTROL Auto-generated]**| Automatically calculate upper/mid/lower limits based on the data. The upper limit is the largest value in this column. The lower limit is the lowest, and the midpoint is the average of the upper and lower limits. |
 | **[!UICONTROL Custom]** | Manually assign **[!UICONTROL Upper limit]**, **[!UICONTROL Midpoint]** and **[!UICONTROL Lower limit]**. Limits provide the flexibility to determine when a column value becomes good, average, or poor. |
 | **[!UICONTROL Conditional formatting palette]** | Apply a preconfigured color set to cells. Depending on which of the four available color schemes you select, different colors are assigned to high values, midpoint values, and low values. <br> Replacing a dimension in the table resets the conditional formatting limits. Replacing a metric recalculates the limits for that column (where a metric is on the X axis and a dimension is on the Y axis). |
@@ -59,7 +61,7 @@ Conditional formatting applies formatting to upper, midpoint, and lower limits t
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_freeformtable_column_usenondefaultattributionmodel"
+>id="workspace_freeformtable_column_usenondefaultattributionmodel"
 >title="Use non-default attribution model"
 >abstract="Enable a non-default attribution model for the selected columns."
 
@@ -68,7 +70,7 @@ Conditional formatting applies formatting to upper, midpoint, and lower limits t
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
+>id="workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
 >title="Use non-default attribution model"
 >abstract="Non-default attribution mode are unavailable for this metric."
 

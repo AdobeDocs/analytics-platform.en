@@ -12,7 +12,7 @@ This topic instructs curators of Customer Journey Analytics data on how to view 
 
 ## View and configure tile properties {#tiles}
 
-When you click a tile in the scorecard builder, the right-hand rail displays the properties and characteristics associated with that tile and its detail slide. In this rail, you can provide a new **Title** for the tile and alternatively configure the tile by applying filters. Segments are filters in Customer Journey Analytics.
+When you click a tile in the scorecard builder, the right-hand rail displays the properties and characteristics associated with that tile and its detail slide. In this rail, you can provide a new **Title** for the tile and alternatively configure the tile by applying segments.
 
 ![Properties tile](assets/properties-tile-new.png)
 
@@ -34,7 +34,12 @@ Each dimension added to the tile will show up in a drop-down list in the detaile
 
 Custom detail slides allow you to be even more targeted about what information you share with your audience.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410002)
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Custom detail views](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
 
 You can modify the layout for each detail slide and add text to better explain what the end user may see in the data. You can also change the chart type using the drop-down menu.
 
@@ -72,7 +77,13 @@ For example, if you focus on web traffic, your most important metric may be visi
 
 Watch the video to learn more about creating data stories in mobile scorecard projects in Analysis Workspace.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on)
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Data stories for Mobile scorecard projects](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
 
 **To create a data story** {#data-story-create}
 
@@ -92,7 +103,7 @@ To delete a slide, tap the trash icon.
 
 ### Customize a data story {#customize-data-story}
 
-Data stories allow you to customize everything so you can share information that you want to share and exclude everything that you don't need. You can customize tiles and individual slides to add filters, show breakdowns, change the layout, and change the visualizations. 
+Data stories allow you to customize everything so you can share information that you want to share and exclude everything that you don't need. You can customize tiles and individual slides to add segments, show breakdowns, change the layout, and change the visualizations. 
 
 **To customize tiles**
 

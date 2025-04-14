@@ -10,7 +10,7 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_experimentation_button"
+>id="workspace_experimentation_button"
 >title="Experimentation"
 >abstract="Create a panel to compare different user experiences, marketing, or messaging variations. And to determine which variation is best at driving a specific outcome."
 
@@ -19,12 +19,18 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_experimentation_panel"
+>id="workspace_experimentation_panel"
 >title="Experimentation"
->abstract="Compare different user experiences, marketing, or messaging variations to determine which is best at driving a specific outcome.<br/><br/>**Parameters**<br/>**Experiment**: The experiment that is analyzed.<br>**Control variant**: Control variant for the selected experiment.<br/>**Success metric**: Up to 5 standard (non-calculated) success metrics to analyze the experiment against.<br/>**Normalizing metric**: People, sessions, or events. This metric (also referred to as the counting methodology) becomes the denominator of the lift calculation. This metric also affects how the data is aggregated before the confidence calculation is applied."
+>abstract="Compare different user experiences, marketing, or messaging variations to determine which is best at driving a specific outcome. Specify the experiment, the control variant to compare against, the success metric and the normalizing metric. Optionally, set upper and lower bounds for confidence."
 
 <!-- markdownlint-enable MD034 -->
 
+
+>[!BEGINSHADEBOX]
+
+_This article documents the Experimentation panel in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Analytics for Target panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) for information on how to analyze Adobe Target activities and experiences in_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
+
+>[!ENDSHADEBOX]
 
 
 The **[!UICONTROL Experimentation]** panel lets analysts compare different user experiences, marketing, or messaging variations to determine which is best at driving a specific outcome. You can evaluate the lift and confidence of any A/B experiment from any experimentation platform: online, offline, from Adobe solutions like Target or Journey Optimizer, and even BYO (bring-your-own) data.
@@ -93,7 +99,7 @@ To use the Experimentation panel:
    | **[!UICONTROL Experiment]** | A set of variations on an experience that were exposed to end users to determine which is best to keep in perpetuity. An experiment is made up of two or more variants, one of which is considered the control variant. This setting is pre-populated with the dimensions that have been labeled with the **[!UICONTROL Experiment]** label in data views, and the last 3 months' worth of experimentation data. |
    | **[!UICONTROL Control variant]** | One of two or more alterations in an end user's experience that are being compared for the purpose of identifying the better alternative. One variant must be selected as the control, and only one variant can be considered to be the control variant. This setting is pre-populated with the dimensions that have been labeled with the **[!UICONTROL Variant]** label in data views. This setting pulls up the variant data that is associated with this experiment. |
    | **[!UICONTROL Success metrics]** ➊ | The metric or metrics that a user is comparing variants with. The variant with the most desirable outcome for the conversion metric (whether highest or lowest) is declared the *best performing variant* of an experiment. You can add up to 5 metrics. |
-   | **[!UICONTROL Normalizing metric]** ➋| The basis ([!UICONTROL People], [!UICONTROL Sessions], or [!UICONTROL Events]) on which a test runs. For example, a test may compare the conversion rates of several variations where **[!UICONTROL Conversion rate]** is calculated as Page View |
+   | **[!UICONTROL Normalizing metric]** ➋| The basis (**[!UICONTROL Global Account]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Account]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Buying Group]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL People]**, **[!UICONTROL Sessions]**, or **[!UICONTROL Events]**) on which a test runs. For example, a test may compare the conversion rates of several variations where **[!UICONTROL Conversion rate]** is calculated as Page View. |
    | **[!UICONTROL Include confidence upper/lower bounds]** | Enable this option to show upper and lower bounds for confidence levels. |
 
 
@@ -177,3 +183,7 @@ Calculated metrics that are not compatible with the Experimentation panel have t
 ## Use calculated metrics in the Experimentation panel
 
 Refer to this blog post for information on [using calculated metrics in the Experimentation panel](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
+
+>[!MORELIKETHIS]
+>[Mastering Adobe Customer Journey Analytics Experimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338)
+>

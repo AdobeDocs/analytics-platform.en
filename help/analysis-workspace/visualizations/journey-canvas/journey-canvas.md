@@ -5,7 +5,49 @@ feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 ---
-# Journey canvas overview
+# Journey canvas overview {#journey-canvas-overview}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_button"
+>title="Journey canvas"
+>abstract="Shows how people proceed through or fall out of a series of touchpoints. Use for journeys with multiple entry points and paths, or to analyze journeys created in Journey Optimizer."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_panel"
+>title="Journey canvas"
+>abstract="Analyze how people proceed through or fall out of a defined journey. Build analyses of user journeys by creating a flexible graph of nodes and arrows representing any combination of events, dimension items, and filters. Drag nodes on the canvas to rearrange the events and conditions of the journey. As you do, data updates accordingly. <br/><br/>Customers with access to Adobe Journey Optimizer can analyze existing Journey Optimizer journeys."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="journeycanvas_button"
+>title="Journey canvas"
+>abstract="Shows how people proceed through or fall out of a series of touchpoints. Use for journeys with multiple entry points and paths, or to analyze journeys created in Journey Optimizer."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="journeycanvas_panel"
+>title="Journey canvas"
+>abstract="Analyze how people proceed through or fall out of a defined journey. Build analyses of user journeys by creating a flexible graph of nodes and arrows representing any combination of events, dimension items, and filters. Drag nodes on the canvas to rearrange the events and conditions of the journey. As you do, data updates accordingly. <br/><br/>Customers with access to Adobe Journey Optimizer can analyze existing Journey Optimizer journeys."
+
+<!-- markdownlint-enable MD034 -->
+
+>[!BEGINSHADEBOX]
+
+_This article documents the Journey canvas visualization in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**.<br/>There is no equivalent visualization in **Adobe Analytics**._
+
+>[!ENDSHADEBOX]
 
 The Journey canvas visualization allows you to analyze and gain deep insights on the journeys that you provide to your users and customers. It allows you to define a journey from scratch or view one from Journey Optimizer, then see how people left (fell out) or continued through (fell through) the journey. 
 
@@ -114,7 +156,7 @@ Use [the table above](#understand-the-differences) to understand the differences
 
 Analyzing Journey Optimizer journeys in Journey canvas provides deep, actionable insights on how people interact with a journey. 
 
-When you analyze a Journey Optimizer journey in Journey canvas, the journey displays with the same order, sequence, and structure as it has in Journey Optimizer. If you can make changes to a journey within Journey canvas, [changes are no longer synchronized from Journey Optimizer](#synchronization-between-journey-optimizer-and-journey-canvas).
+When you analyze a Journey Optimizer journey in Journey canvas, the journey displays with the same order, sequence, and structure as it has in Journey Optimizer. If you make significant changes to a journey within Journey canvas, [changes are no longer synchronized from Journey Optimizer](#synchronization-between-journey-optimizer-and-journey-canvas).
 
 ### Benefits of analyzing Journey Optimizer journeys with Journey canvas
 
@@ -144,9 +186,21 @@ Using Journey canvas to analyze journeys that were created in Journey Optimizer 
 
 ### Synchronization between Journey Optimizer and Journey canvas
 
-After you create an analysis of a Journey Optimizer journey in Journey canvas, data syncs in only one direction, from Journey Optimizer to Journey canvas. This means that changes made to a journey in Journey canvas are never reflected in Journey Optimizer.
+Consider the following behaviors to understand synchronization between Journey Optimizer and Journey canvas:
 
-Furthermore, changes made to a journey in Journey Optimizer sync to Journey canvas only if the journey remains unmodified in Journey canvas. After you modify a journey in Journey canvas, any changes you make to the journey in Journey Optimizer are not reflected in Journey canvas. To see the changes reflected in Journey canvas, you can delete and [re-create the journey in Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+* **Data synchronization is one-way only** 
+  
+  After you create an analysis of a Journey Optimizer journey in Journey canvas, data syncs in only one direction, from Journey Optimizer to Journey canvas. This means that changes made to a journey in Journey canvas are never reflected in Journey Optimizer.
+
+* **Modifying a journey in Journey canvas stops synchronization** 
+
+  Changes made to a journey in Journey Optimizer sync to Journey canvas [only if the journey has not been significantly modified in Journey canvas](#differences-after-modifying-a-journey-in-journey-canvas). After you modify a journey in Journey canvas, any changes you make to the journey in Journey Optimizer are not reflected in Journey canvas. To see the changes reflected in Journey canvas, you can delete and [re-create the journey in Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+
+* **Using a "Share with anyone" link requires that the project is saved in Customer Journey Analytics after changes are made in Journey Optimizer** 
+
+  When using a "Share with anyone" link, changes made in Journey Optimizer are not reflected in Journey canvas until the project is saved in Customer Journey Analytics.
+
+  For more information about "Share with anyone" links, see [Share a project with anyone (no longin required)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md).
 
 ### Differences after modifying a journey in Journey canvas {#differences-after-modifying}
 
@@ -174,7 +228,7 @@ This is because, unlike Journey Optimizer, Journey canvas allows you to apply mu
 
 #### Feature differences
 
-After you modify a Journey Optimizer journey in Journey canvas, The options that are available in the [!UICONTROL **Arrow settings**] drop-down field change, depending on your modifications. For more information, see [Configure settings](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+After you modify a Journey Optimizer journey in Journey canvas, the options that are available in the [!UICONTROL **Arrow settings**] drop-down field change, depending on your modifications. For more information, see [Configure settings](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 The [!UICONTROL **Node type**] field is available only in Journey Optimizer. It is not available when viewing a Journey Optimizer journey in Journey canvas, regardless of whether you make modifications to the journey in Journey canvas. 
 
@@ -199,3 +253,9 @@ For information about analyzing a Journey Optimizer journey in Journey canvas, s
 ## Build analyses in Journey canvas
 
 You can build analyses in Journey canvas that are based on any dimensions or metrics that are available in Analysis Workspace. Or, you can analyze journeys that were created in Journey Optimizer. For more information, see [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+
+
+>[!MORELIKETHIS]
+>
+> * [A Guide to Journey Canvas Visualization in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
+

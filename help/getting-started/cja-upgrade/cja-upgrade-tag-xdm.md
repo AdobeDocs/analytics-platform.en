@@ -4,41 +4,58 @@ description: Learn how to add XDM data collection logic to your tag
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
 ---
-# Add XDM data collection logic to your tag
+# Add XDM data collection logic to your tag {#upgrade-tag-xdm}
 
->[!NOTE]
-> 
->Follow the steps on this page only after you complete all previous upgrade steps. You can follow the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations), or you can follow the upgrade steps that were dynamically generated for your organization with the [Adobe Analytics to Customer Journey Analytics upgrade questionnaire](https://gigazelle.github.io/cja-ttv/). 
->
->After you complete the steps on this page, continue following the recommended upgrade steps or the dynamically generated upgrade steps. 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-xdm"
+>title="Add XDM data collection logic to your tag"
+>abstract="With the loader tag installed on your site, you can add rules and data elements to populate an XDM object to send to Adobe. Adobe recommends maintaining a solution design document to track how your tags are configured.<br><br>This step is a lot of work, as it involves setting up all Analytics logic for your property. Expect to dedicate a month or longer to establish the correct tag rules, test them, and deploy them on your site."
+
+<!-- markdownlint-enable MD034 -->
+
+{{upgrade-note-step}}
 
 After [creating the tag and adding the Web SDK extension](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md), you must configure it with data elements and rules, according to how you want to track your site and send data to Adobe Experience Platform. After you configure data elements and rules for your tag, you can build and publish it.
 
 ## Configure data elements
 
-Data elements are the building blocks for your data dictionary (or data map). Use data elements to collect, organize, and deliver data across marketing and ad technology. You set up data elements in your tag that read from your data layer and can be used to deliver data into Adobe Experience Platform.
+Data elements are the building blocks for your data dictionary (or data map). Use data elements to collect, organize, and deliver data across marketing and ad technology. You set up data elements in your tag that read from your data layer and can be used to deliver data into Adobe Experience Platform. (For more information about data elements, see [Data elements](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements) in the Tags Documentation.)
 
-There are different types of data elements. First, set up a data element to capture the page name persons are viewing on your site. Then, set up a data element referencing the Experience Cloud ID. Finally, define an XDM object data element.
+The following sections describe suggested data elements and other common data elements that you can configure. 
 
-### Page name data element
+There are various types of data elements. Two common data elements that you might want to configure are: one that captures the page name that persons are viewing on your site, and another that captures the Experience Cloud ID of each person who visits your site. 
 
-To define a page name data element:
+After you configure these two data elements, you can configure additional data elements for the specific data you want to capture.
+
+Finally, after you define all your desired data elements, you need to assign the data elements to the [schema you created](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) earlier. To do this, you define an XDM data element, which provides a representation of your XDM schema.
+
+<!-- Assigning data elements to an XDM object. All of the available XDM objects are based on the schema -->
+
+### Create suggested data elements
+
+The following sections describe how to create common data elements that apply to most organizations.
+
+#### Page name data element
+
+A common data element that applies to most organizations is a data element that captures the page name that persons are viewing.
+
+To create a page name data element:
 
 1. Log in to experience.adobe.com using your Adobe ID credentials.
 
 1. In Adobe Experience Platform, go to **[!UICONTROL Data Collection]** > **[!UICONTROL Tags]**.
 
-1. Select your newly created tag from the list of [!UICONTROL Tag Properties] to open it.
+1. On the **[!UICONTROL Tag Properties]** page, select your newly created tag from the list of properties to open it.
 
 1. Select **[!UICONTROL Data Elements]** in the left rail.
 
 1. Select **[!UICONTROL Add Data Element]**.
 
-1. In the [!UICONTROL Create Data Element] dialog, specify the following information:
+1. In the **[!UICONTROL Create Data Element]** dialog, specify the following information:
 
    * **[!UICONTROL Name]**: The name of your data element. For example `Page Name`.
 
@@ -60,9 +77,11 @@ To define a page name data element:
 
 1. Continue with [ECID data element](#ecid-data-element).
 
-### ECID data element
+#### ECID data element
 
-To define an ECID data element:
+A common data element that applies to most organizations is a data element that captures the Experience Cloud ID of each person who visits your site.
+
+To create an ECID data element:
 
 1. Log in to experience.adobe.com using your Adobe ID credentials.
 
@@ -70,11 +89,23 @@ To define an ECID data element:
 
 1. Select your newly created tag from the list of [!UICONTROL Tag Properties] to open it.
 
+1. (Conditional) Install the Experience Cloud ID Service extension if it is not already installed:
+
+   1. Select **[!UICONTROL Extensions]** in the left rail.
+
+   1. The **[!UICONTROL Installed]** tab is selected by default. If the **[!UICONTROL Experience Cloud ID Service]** tile is listed, skip to Step 5.
+   
+   1. If the **[!UICONTROL Experience Cloud ID Service]** tile is not listed, select the **[!UICONTROL Catalog]** tab.
+
+   1. In the search field, search for **[!UICONTROL Experience Cloud ID Service]**, then select the tile when it appears
+   
+   1. Select **[!UICONTROL Install]** > **[!UICONTROL Save]**.
+
 1. Select **[!UICONTROL Data Elements]** in the left rail.
 
 1. Select **[!UICONTROL Add Data Element]**.
 
-1. In the [!UICONTROL Create Data Element] dialog, specify the following information:
+1. In the **[!UICONTROL Create Data Element]** dialog, specify the following information:
 
    * **[!UICONTROL Name]**: The name of your data element. For example `ECID`.
 
@@ -86,11 +117,45 @@ To define an ECID data element:
 
 1. Select **[!UICONTROL Save]**.
 
-1. Continue with [XDM object data element](#xdm-object-data-element).
+1. Continue with [Create additional data elements](#create-additional-data-elements).
+
+### Create additional data elements 
+
+Create a data element for each type of data that you want to collect. Use the same process described in [Page name data element](#page-name-data-element) and [ECID data element](#ecid-data-element) to create each additional data element.
+
+The data elements that you create should have a correlating field in your schema. 
+
+Common data elements vary depending on industry and business requirements. Consider the following common data elements, organized by industry:
+
+**Retail data elements**
+
+* Products
+
+* Cart additions
+
+* Checkouts
+
+**Financial data elements**
+
+* Transaction ID
+
+* Transaction date
+
+* Service type
+
+**Healthcare data elements**
+
+* Provider ID
+
+* Visit date
+
+* Treatment type
+
+After you create all the data elements required by your organization for your implementation, continue with [XDM object data element](#xdm-object-data-element).
 
 ### XDM object data element
 
-Finally, you now want to map any of your specific data elements to the schema you defined earlier. You define another data element which provides a representation of your XDM schema.
+Finally, you now want to map any data element that you created to the [schema you created](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) earlier. To do this, define an XDM object data element that provides a representation of your XDM schema.
 
 To define an XDM object data element:
 
@@ -104,7 +169,7 @@ To define an XDM object data element:
 
 1. Select **[!UICONTROL Add Data Element]**.
 
-1. In the [!UICONTROL Create Data Element] dialog, specify the following information:
+1. In the **[!UICONTROL Create Data Element]** dialog, specify the following information:
 
    * **[!UICONTROL Name]**: The name of your data element. For example `XDM - Page View`.
 
@@ -121,7 +186,6 @@ To define an XDM object data element:
    ![Pick ECID Data Element](assets/pick-ecid-dataelement.png)
 
    ![Map ECID Data Element](assets/map-ecid.png)
-
 
 1. Map the `web > webPageDetails > name` attribute, defined in your schema, to the Page Name data element.
 
@@ -153,13 +217,13 @@ To define a rule:
 
 1. Select **[!UICONTROL Rules]** in the left rail.
 
-1. Select **[!UICONTROL Create New Rule]**.
+1. Select **[!UICONTROL Add Rule]**.
 
-1. In the [!UICONTROL Create Rule] dialog, specify the following information:
+1. In the **[!UICONTROL Create Rule]** dialog, specify the following information:
 
    * **[!UICONTROL Name]**: The name of the rule. For example `Page View`.
 
-   * **[!UICONTROL Events]**: Select **[!UICONTROL + Add]**. Then, in the [!UICONTROL Event Configuration] dialog, specify the following information. When you are finished, select **[!UICONTROL Keep Changes]**.
+   * **[!UICONTROL Events]**: Select **[!UICONTROL + Add]**. Then, in the **[!UICONTROL Event Configuration]** dialog, specify the following information. When you are finished, select **[!UICONTROL Keep Changes]**.
 
      * **[!UICONTROL Extension]**: Select **[!UICONTROL Core]** from the list.
 
@@ -171,9 +235,9 @@ To define a rule:
 
      * **[!UICONTROL Extension]**: Select **[!UICONTROL Adobe Experience Platform Web SDK]** from the list.
 
-     * **[!UICONTROL Action Type]**: Select **[!UICONTROL Send Event]** from the list.
+     * **[!UICONTROL Action Type]**: Select **[!UICONTROL Send event]** from the list.
 
-     * **[!UICONTROL Type]**: Select **[!UICONTROL web.webpagedetails.pageViews]** from the list.
+     * **[!UICONTROL Type]**: Select **[!UICONTROL Web Webpagedetails Page Views]** from the list.
 
      * **[!UICONTROL XDM data]**: Select the cylinder icon, then select **[!UICONTROL XDM - Page View]** from the list of data elements.
 
@@ -184,6 +248,12 @@ To define a rule:
        ![Create Rule](assets/rule-pageview.png)
 
 1. Select **[!UICONTROL Save]**.
+
+1. Repeat this process for each rule that you want to add to your site.
+
+   For more information about rules, see [Rules](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules) in the Tags Documentation.
+
+1. Continue with [Build and publish your tag](#build-and-publish-your-tag).
 
 ## Build and publish your tag
 
@@ -201,9 +271,9 @@ To build and publish your tag:
 
 1. Select **[!UICONTROL Publishing Flow]** from the left rail.
 
-1. Select **[!UICONTROL Select a working library]**, followed by **[!UICONTROL Add Library…]**.
+1. Select **[!UICONTROL Add Library]**.
 
-1. In the [!UICONTROL Create Library] dialog, specify the following information:
+1. In the **[!UICONTROL Create Library]** dialog, specify the following information:
 
     * **[!UICONTROL Name]**: The name of the library.
 
@@ -215,8 +285,11 @@ To build and publish your tag:
 
 1. Select **[!UICONTROL Save & Build to Development]**.
 
-    Your tag is saved and is build for your development environment. A green dot indicates a successful build of your tag on your development environment.
+    Your tag is saved and is built for your development environment. A green dot indicates a successful build of your tag on your development environment.
 
 1. You can select **[!UICONTROL ...]** to rebuild the library or move the library to a staging or production environment.
 
    ![Publish - Build Library](assets/build-library.png)
+
+{{upgrade-final-step}}
+

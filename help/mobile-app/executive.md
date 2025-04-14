@@ -8,9 +8,14 @@ solution: Customer Journey Analytics
 ---
 # Executive user quick start guide
 
-The following information provides executive users with information on best practices for using and viewing Analytics dashboards. Here is a video demonstrating this information:
+The following information provides executive users with information on best practices for using and viewing Analytics dashboards.
 
->[!VIDEO](https://video.tv.adobe.com/v/343460/)
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Assist executives to access mobile scorecards](https://video.tv.adobe.com/v/343460/){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
 
 This guide is intended to help executive users read and interpret scorecards on Analytics dashboards. The app allows executive users to view a broad rendering of important summary data quickly and easily on their own mobile devices.
 
@@ -109,11 +114,11 @@ To use dashboards:
 
     * Depending on the interval you tap (**Day**, **Week**, **Month**, or **Year**), you will see two options for date ranges—either the present span of time or the one immediately preceding it. Tap one of these two options to select the first range. Under the **[!UICONTROL COMPARE TO]** list, tap one of the presented options to compare the data of this time period with the first date range you selected. Tap **[!UICONTROL Done]** in the upper right of the screen. The **[!UICONTROL Date Ranges]** field and the Scorecard tiles are updated with the new comparison data from the new ranges you selected.
 
-1. To apply a segment filter to your Scorecard, tap the filter drop-down list and select a segment that has been configured by your curator. [Filters](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) in the app function the same way they do in Workspace.
+1. To apply a segment to your Scorecard, tap the segment drop-down list and select a segment that has been configured by your curator. [Segments](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) in the app function the same way they do in Workspace.
 
-    ![Segment filter](assets/segment_filter.png)
+    ![Segment](assets/segment_filter.png)
 
-1. Get Scorecard updates. If a Scorecard does not include all of the metric or breakdowns that you may be interested in, please contact your Customer Journey Analytics team to have the Scorecard updated. Once updated, you can pull down the card on the screen to refresh it and load the recently-added data.
+1. Get [!UICONTROL Scorecard] updates. If a [!UICONTROL Scorecard] does not include all of the metric or breakdowns that you may be interested in, please contact your Customer Journey Analytics team to have the Scorecard updated. Once updated, you can pull down the card on the screen to refresh it and load the recently-added data.
 
 1. To leave feedback on this app:
 

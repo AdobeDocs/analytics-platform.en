@@ -35,63 +35,70 @@ Adobe offers several types of metrics for use in Analysis Workspace:
 
 You can see whether a metric is approved ![Approved icon](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  or not. If you want more details on a metric, hover over the metric, and select ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg). See [Component info](use-components-in-workspace.md#component-info) for more information.
 
+## Compare metrics with different attribution models
 
+To quickly compare one attribution model to another for a metric, select **[!UICONTROL Compare attribution models]** from the context menu for a metric.
 
-## Calculated metrics
+![Workspace panel highlighting Compare attribution models](assets/compare-attribution.png)
 
-Calculated metrics allow you to easily configure how metrics relate to each other using simple operators or statistical functions. See [Calculated metrics overview](/help/components/calc-metrics/calc-metr-overview.md) for more information.
+This shortcut lets you compare one attribution model to another without dragging in a metric and configuring it twice.
 
-<!--
+## Create calculated metrics
 
-There are several ways to create calculated metrics. See [Create calculated metrics]()
+Calculated metrics allow you to easily configure how metrics relate to each other, using simple operators or statistical functions. See [Calculated metrics overview](/help/components/calc-metrics/calc-metr-overview.md) for more information.
+
+There are several ways to create calculated metrics. The method you choose determines whether the calculated metric is available from the component list across all projects, or only in the project where it was created.
 
 ### Create calculated metrics for all projects
 
 You can use the calculated metric builder to create calculated metrics. When created in this way, calculated metrics are available in the component list and can then be used in projects throughout your organization. 
 
-For information about how to access the calculated metrics builder, see [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+For information about how to access the calculated metrics builder, see [Create calculated metrics](/help/components/calc-metrics/cm-workflow/cm-workflow.md).
 
 ### Create calculated metrics for a single project
 
-You can create quick calculated metrics that are available only for the project where they were created.
+You can quickly create a calculate metric that is available only for the project where it was created.
 
 To create a calculated metric for a single project:
 
 1. In Analysis Workspace, open the project where you want to create the calculated metric.
 
-1. In a freeform table, select **[!UICONTROL Create metric from selection]** from the context menu in a column header.
+1. In a freeform table, right-click the column header of a single column.
+
+   Or
+
+   Select two columns while holding the Shift key, then right-click one of the selected columns.
+   
+1. Select **[!UICONTROL Create metric from selection]**
 
    ![Workspace panel highlighting Create from selection](assets/create-metric-from-selection.png)
 
-1. To create a calculated metric for this project only, choose from the following options:
+1. To create a calculated metric for this project only, choose from the available options.
 
-   * [!UICONTROL **Divide**]
+   When a single column is selected, the following options are available:
+
+   * [!UICONTROL **Mean**]: Creates a new column that shows the mean value in the set of dimension elements for the column. This uses the [Mean](/help/components/calc-metrics/cm-functions.md#mean) function.
    
-   * [!UICONTROL **Subtract**]
+   * [!UICONTROL **Median**]: Creates a new column that shows the median value in the set of dimension elements for the column. This uses the [Median](/help/components/calc-metrics/cm-functions.md#median) function.
 
-   * [!UICONTROL **Add**]
+   * [!UICONTROL **Column max**]: Creates a new column that shows the largest value in the set of dimension elements for the column. This uses the [Column Maximum](/help/components/calc-metrics/cm-functions.md#column-maximum) function.
 
-   * [!UICONTROL **Multiply**]
+   * [!UICONTROL **Column min**]: Creates a new column that shows the smallest value in the set of dimension elements for the column. This uses the [Column Minimum](/help/components/calc-metrics/cm-functions.md#column-minimum) function.
 
-   Or, to open the calculated metric builder and create the calculated metric for all projects, select [!UICONTROL **Open in Calculated Metric Builder**], then continue with [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+   * [!UICONTROL **Column sum**]:Creates a new column that adds all numeric values for a metric within a column (across the elements of a dimension). This uses the [Column Sum](/help/components/calc-metrics/cm-functions.md#column-sum) function.
 
+   When two columns are selected, the following options are available:
 
-<!-- This video really shows an AA example using hits, etc.  Not suitable for CJA... >
-+++ See the following video on how to create an implementation-less calculated metric from within Analysis Workspace.
+   * [!UICONTROL **Divide**]: Creates a new column that divides the values of the two selected columns.
+   
+   * [!UICONTROL **Subtract**]: Creates a new column that subtracts the values of the two selected columns.
+
+   * [!UICONTROL **Add**]: Creates a new column that adds the values of the two selected columns.
+
+   * [!UICONTROL **Multiply**]: Creates a new column that multiplies the values of the two selected columns.
+
+   * [!UICONTROL **Percent change**]: Creates a new column that shows the percent change between the two selected columns.
 
 [Calculated Metrics: Implementation-less metrics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
 
 
->[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12)
-
-+++
-
--->
-
-## Compare metrics with different attribution models
-
-If you'd like to quickly and easily compare one attribution model to anothe for a metric, select **[!UICONTROL Compare attribution models]** from the context menu for a metric.
-
-![Workspace panel highlighting Compare attribution models](assets/compare-attribution.png)
-
-This shortcut lets you quickly and easily compare attribution models.
