@@ -35,7 +35,7 @@ With the visualization you can:
 
 * Visualize the customer journey through your website or application.
 * Analyze where customers go before and after specified checkpoints, such as entry, a specific dimension, or exit.
-* Create filters by designating a specific point in a chosen path.
+* Create segments by designating a specific point in a chosen path.
 
 
 >[!BEGINSHADEBOX]
