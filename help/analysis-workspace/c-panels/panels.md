@@ -138,7 +138,7 @@ Drag and drop any segments from the left panel into the panel drop zone to begin
 
 #### Quick segments 
 
-Non-segment components can also be dragged directly into the drop zone to create quick segments, saving you the time and effort of going to the [Filter builder](/help/components/segments/filter-builder.md). Filters created in this way are automatically defined as event-level segments. This definition can be quickly modified by selecting ![Edit](/help/assets/icons/Edit.svg) next to the segment name. 
+Non-segment components can also be dragged directly into the drop zone to create quick segments, saving you the time and effort of going to the [Segment builder](/help/components/filters/filter-builder.md). Filters created in this way are automatically defined as event-level segments. This definition can be quickly modified by selecting ![Edit](/help/assets/icons/Edit.svg) next to the segment name. 
 
 
 For more information, see [Quick segments](/help/components/filters/quick-filters.md).
