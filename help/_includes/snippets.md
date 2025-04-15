@@ -34,10 +34,10 @@
 
 | Option | Function |
 |---------|----------|
-| **[!UICONTROL Recommended]** | Sort components for each type (dimension, metric, filter and date range) based on their recommendation. Components that are used most frequently and most recently by you or by others in your organization are shown higher in each list. |
-| **[!UICONTROL Last modified]** | Sort components for each type (dimension, metric, filter and date range) based on their last modified date. Components that are modified most recently are shown highter in each list. | 
-| **[!UICONTROL Alphabetical]** | Sort components for each type (dimension, metric, filter and date range) in ascending alphabetic order. |
-| **[!UICONTROL Categorical]** | Sort components for each type (dimension, metric, filter and date range) based on their category. For example Curated versus Non-curated data view components. |
+| **[!UICONTROL Recommended]** | Sort components for each type (dimension, metric, segment and date range) based on their recommendation. Components that are used most frequently and most recently by you or by others in your organization are shown higher in each list. |
+| **[!UICONTROL Last modified]** | Sort components for each type (dimension, metric, segment and date range) based on their last modified date. Components that are modified most recently are shown highter in each list. | 
+| **[!UICONTROL Alphabetical]** | Sort components for each type (dimension, metric, segment and date range) in ascending alphabetic order. |
+| **[!UICONTROL Categorical]** | Sort components for each type (dimension, metric, segment and date range) based on their category. For example Curated versus Non-curated data view components. |
 
 {style="table-layout:auto"}
 

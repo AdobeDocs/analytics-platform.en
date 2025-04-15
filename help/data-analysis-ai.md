@@ -25,7 +25,7 @@ Using the Data Insights Agent to answer data-centric questions in Analysis Works
 | **Build and update visualizations** | Generates a freeform table and associated visualization (such as a line, bar, donut, and so forth).<p>Example: *What is the profit across SKUs from February to May?* |
 | **Supported visualization types** | <ul><li>Line</li><li>Multi-line</li><li>Freeform table</li><li>Bar</li><li>Donut</li><li>Summary number</li></ul> |
 | **Out-of-scope prompt detection** | If you submit a prompt that is out of scope, such as "export this project," the Data Insights Agent responds by letting you know that the question is out of scope. | 
-| **Clarifying questions** | If you ask a question that does not have enough context for the Data Insights Agent to answer, or is too generic, the Data Insights Agent responds with a clarifying question or suggested options. Examples: <p>**Components**<ul><li>Metric: *Which "revenue" metric did you mean?*</li><li>Dimension: *Which of the below "regions" do you want to focus on?*</li><li>Filter: *Which "Account" filter did you want to apply?*</li><li>Date Range: *By "last month," did you mean the last full month or the last 30 days?*</li></ul>**Dimension items**: Which "store name" did you mean? (For example, Store #5274, Store #2949, and so forth.) |
+| **Clarifying questions** | If you ask a question that does not have enough context for the Data Insights Agent to answer, or is too generic, the Data Insights Agent responds with a clarifying question or suggested options. Examples: <p>**Components**<ul><li>Metric: *Which "revenue" metric did you mean?*</li><li>Dimension: *Which of the below "regions" do you want to focus on?*</li><li>Filter: *Which "Account" segment did you want to apply?*</li><li>Date Range: *By "last month," did you mean the last full month or the last 30 days?*</li></ul>**Dimension items**: Which "store name" did you mean? (For example, Store #5274, Store #2949, and so forth.) |
 | **Multi-turn** | The Data Insights Agent responds to a prompt with the context from any prior prompts, allowing users to update visualizations and ask follow-up questions. Example: <ul><li>Prompt 1: *Trend events from March.*</li><li>Prompt 2: *Show me the data from March to April instead*</li></ul> |
 | **Verifiability** | Data verifiability and correctness can be confirmed via the generated freeform table and data visualization. For example, if a user asks *Trend orders last month*, you can confirm that the correct metric ("orders") and date range ("last month") were selected in the newly generated panel, data visualization, and freeform table. |
 | **Feedback** |<ul><li>Thumbs up</li><li>Thumbs down</li><li>Flag</li></ul> |
@@ -161,7 +161,7 @@ To achieve the best results, consider the following guidelines:
 
 * Be specific: Include exact terms to narrow down the response. Following is an example of a specific prompt: "Last month's sales in California"
 
-* Use clear metrics and filters: Adding specific metrics (such as "Revenue"), dimensions (such as "website name"), filters (such as "iPhone users"), and date ranges (such as "last three months") helps the Data Insights Agent focus on the right data.
+* Use clear metrics and segments: Adding specific metrics (such as "Revenue"), dimensions (such as "website name"), segments (such as "iPhone users"), and date ranges (such as "last three months") helps the Data Insights Agent focus on the right data.
 
 * Ask direct questions: Phrasing questions directly makes it easier for the Data Insights Agent to provide clear, relevant insights. Following is an example of asking a direct question in a prompt: "What is the average revenue by product category this year?" 
 
@@ -187,7 +187,7 @@ Consider the following when evaluating a response from the Data Insights Agent:
 
 * Visualization/chart: Evaluate the visualization. Is it the appropriate or expected visualization for your question, or would you have expected a different visualization?  
 
-* Freeform table: Evaluate the freeform table. Is the freeform table data correct? Is it breaking down data where requested? Are the applied filters those that you requested or expected? 
+* Freeform table: Evaluate the freeform table. Is the freeform table data correct? Is it breaking down data where requested? Are the applied segments those that you requested or expected? 
 
 * Error Message / Out-of-Scope: If a generic error message is given stating the question is out of scope, provide feedback on whether you think the out-of-scope message is appropriate, given your prompt. Was your prompt actually in scope? 
 
