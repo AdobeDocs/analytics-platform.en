@@ -22,7 +22,7 @@ The following visualization types are available in Analysis Workspace:
 | ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p>| [Bullet](/help/analysis-workspace/visualizations/bullet-graph.md)  | A bullet graph visualization, which shows how a value you are interested in compares to or measures against other performance ranges (goals). |
 | ![TextNumbered](/help/assets/icons/TextNumbered.svg)| [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | A cohort visualization is a group of people sharing common characteristics over a specified period. A cohort table is useful for retention, churn or latency analysis. |
 | ![Combo](/help/assets/icons/ComboChart.svg) | [Combo](combo-charts.md) | A combo chart enables you to build quickly a comparison visualization without having to build a table first.  | 
-| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Donut](/help/analysis-workspace/visualizations/donut.md)  | Similar to a pie chart, a donut visualization shows data as parts or filters of a whole. |
+| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Donut](/help/analysis-workspace/visualizations/donut.md)  | Similar to a pie chart, a donut visualization shows data as parts or segments of a whole. |
 | ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) |  [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | A fallout visualization shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages. |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) | A flow visualization shows exact customer paths through your websites and apps. | 
 | ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | A freeform table visualization is an interactive visualization. The freeform table visualization is the foundation for data analysis in Workspace.|
@@ -38,7 +38,7 @@ The following visualization types are available in Analysis Workspace:
 | ![123](/help/assets/icons/123.svg)</p> |[Summary number](/help/analysis-workspace/visualizations/summary-number-change.md) | A summary number visualization shows the selected cell as one large number. |
 | ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) | A text visualization lets you add user-defined text to your Workspace. Helpful for adding additional context to your analysis and insights, in addition to leveraging panel/visualization descriptions |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Treemap](/help/analysis-workspace/visualizations/treemap.md)<p> | A treemap visualization displays hierarchical (tree-structured) data as a set of nested rectangles. |
-| ![Type](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | A venn visualization uses circles to depict the metric overlap of up to 3 filters. |
+| ![Type](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | A venn visualization uses circles to depict the metric overlap of up to 3 segments. |
 
 <!-- Add beneath Horizontal bar in the table above: | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Similar to Fallout, Journey canvas shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages. <p>Unlike Fallout, Journey canvas supports not only linear journeys, but any number of entry points and paths. Furthermore, journeys can be created in Adobe Journey Optimizer and then analyzed in Journey canvas.</p> | -->
 
@@ -152,6 +152,6 @@ Some visualizations (like Cohort table, Fallout, Flow, and others) have a config
 
 ## Visualize
 
-If you are not sure which visualization to pick, select ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL Visualize]** in any freeform table row (available on hover). This selection is the fastest way to add a visualization. Analysis Workspace takes an educated guess at which visualization would best fit your data. For example, if you have one row selected, it creates a trended [line graph](line.md). If you have three filter rows selected, it creates a [venn](venn.md) diagram. 
+If you are not sure which visualization to pick, select ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL Visualize]** in any freeform table row (available on hover). This selection is the fastest way to add a visualization. Analysis Workspace takes an educated guess at which visualization would best fit your data. For example, if you have one row selected, it creates a trended [line graph](line.md). If you have three segment rows selected, it creates a [venn](venn.md) diagram. 
 
 ![Quick visualization](assets/quick-viz.png)

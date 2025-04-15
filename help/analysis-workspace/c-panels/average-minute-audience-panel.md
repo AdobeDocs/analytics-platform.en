@@ -21,7 +21,7 @@ exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
 >[!CONTEXTUALHELP]
 >id="workspace_mediaaverageminuteaudience_panel"
 >title="Media average minute audience"
->abstract="Shows the performance of specific media content or the performance over a custom time period. Specify the reporting dimension and optionally filter content."
+>abstract="Shows the performance of specific media content or the performance over a custom time period. Specify the reporting dimension and optionally segment content."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -76,7 +76,7 @@ Use the input settings described in this section to configure the Media average 
    | Setting | Description |
    |---------|------------|
    | **Panel date range** | The panel date range default is [!UICONTROL **This month**]. You can edit it to view a single day or many months at a time. <br></br> This visualization is limited to 1440 rows of data (for example, 24-hours at minute-level granularity). If a date range and granularity combination results in more than 1440 rows, the granularity is automatically updated to accommodate the full date range. |
-   | [!UICONTROL **Drop a segment here (or any other component)**] | Like other panels, this setting filters your selections based on segments you've created. This setting is a great way to look at specific platforms, live streams, or other common media segments. |
+   | [!UICONTROL **Drop a segment here (or any other component)**] | Like other panels, this setting segments your selections based on segments you've created. This setting is a great way to look at specific platforms, live streams, or other common media segments. |
    | [!UICONTROL **Calculate metric for**] | Choose whether you want to see the average minute audience for [**[!UICONTROL Specific content]**](#specific-content). Or if you want to see the average minute audience for a [**[!UICONTROL Custom time period]**](#custom-time-period).<br/><br/>Select [!UICONTROL **Custom time period**]: <ul><li>If the duration is unavailable, or </li><li>if you want to view the average minute audience for a time series with multiple pieces of content, or</li><li>for content without a specific assigned duration (like during a live stream or event)</li></ul></li></li></ul> <p>This setting changes the workflow and report output.</p>  |
 
 1. Continue with [Specific content](#specific-content) or [Custom time period](#custom-time-period), depending on the option you chose in the [!UICONTROL **Calculate metric for**] drop-down list.
