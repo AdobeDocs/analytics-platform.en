@@ -131,8 +131,13 @@ A lookback window is the amount of time a conversion should look back to include
 * **30 Days**: Looks back up to 30 days from when the conversion happened.
 * **60 Days**: Looks back up to 60 days from when the conversion happened.
 * **90 Days**: Looks back up to 90 days from when the conversion happened.
+* **13 Months** [!BADGE B2B Edition]{type=Informative}: Looks back up to 13 months from when the conversion happened. 
 * **Session**: Looks back up to the beginning of the session where a conversion happened. Session lookback windows respect the modified [Session timeout](/help/data-views/create-dataview.md#session-settings) in a data view.
 * **Person (Reporting Window)**: Looks at all visits back up to the first of the month of the current date range. For example, if the report date range is September 15 - September 30, the person lookback date range includes September 1 - September 30. If you use this lookback window, you can occasionally see that dimension items are attributed to dates outside of your reporting window.
+* **Global Account (Reporting Window)** [!BADGE B2B Edition]{type=Informative}: Looks at all global accounts back up to the first of the month of the current date range. For example, if the report date range is September 15 - September 30, the global account lookback date range includes September 1 - September 30. If you use this lookback window, you can occasionally see that dimension items are attributed to dates outside of your reporting window.
+* **Accounts (Reporting Window)** [!BADGE B2B Edition]{type=Informative}: Looks at all accounts back up to the first of the month of the current date range. For example, if the report date range is September 15 - September 30, the account lookback date range includes September 1 - September 30. If you use this lookback window, you can occasionally see that dimension items are attributed to dates outside of your reporting window.
+* **Opportunity (Reporting Window)** [!BADGE B2B Edition]{type=Informative}: Looks at all opportunities back up to the first of the month of the current date range. For example, if the report date range is September 15 - September 30, the opportunity lookback date range includes September 1 - September 30. If you use this lookback window, you can occasionally see that dimension items are attributed to dates outside of your reporting window.
+* **Buying group (Reporting Window)** [!BADGE B2B Edition]{type=Informative}: Looks at all buying groups back up to the first of the month of the current date range. For example, if the report date range is September 15 - September 30, the buying group lookback date range includes September 1 - September 30. If you use this lookback window, you can occasionally see that dimension items are attributed to dates outside of your reporting window.
 * **Custom Time:** Allows you to set a custom lookback window from when a conversion happened. You can specify the number of minutes, hours, days, weeks, months, or quarters. For example, if a conversion happened on February 20, a lookback window of five days would evaluate all dimension touchpoints from February 15 to February 20 in the attribution model.
 
 ## Attribution example {#attribution-example}
@@ -181,17 +186,17 @@ Use the following information to choose the visualization that best meets your n
 
 | Function | Journey canvas | Fallout | Flow |
 |---------|----------|---------|---------|
-| **Predefined sequence of pages** | Yes</br>Combines predefined and exploratory analysis. The eventual path is used when using predefined nodes on the path (visitors are counted as long as they eventually move from one predefined node to the other). The immediate (not eventual) next nodes can also be shown.  | Yes</br>The path can be an eventual path or can be constrained to the next touchpoint | No |
-| **Exploratory sequence of pages (ad hoc analysis)** | Yes</br>Combines predefined and exploratory analysis. The eventual path is used when using predefined nodes on the path (visitors are counted as long as they eventually move from one predefined node to the other). The immediate (not eventual) next nodes can also be shown. | Limited</br>Allows you to right-click and view immediate fallout in a Freeform table. | Yes</br>Exploratory analysis only. Always within one dimension instance between nodes. This means that each node shows the immediate (not eventual) next touchpoint along the path. |
-| **Shows where people left (fell out) and continued through (fell through)** | Yes</br>Shows for both predefined and exploratory journeys  | Yes</br>Shows predefined journeys  | Yes</br>Shows for exploratory journeys  |
+| **Predefined sequence of pages** | Yes</br>Combines predefined and exploratory analysis. The eventual path is used when using predefined nodes on the path (visitors are counted as long as they eventually move from one predefined node to the other). The immediate (not eventual) next nodes can also be shown by [showing the top nodes based on existing nodes](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#show-the-top-nodes-based-on-existing-nodes).  | Yes</br>The path can be an eventual path or can be constrained to the next touchpoint | No |
+| **Exploratory sequence of pages (ad hoc analysis)** | Yes</br>Combines predefined and exploratory analysis. The eventual path is used when using predefined nodes on the path (visitors are counted as long as they eventually move from one predefined node to the other). The immediate (not eventual) next nodes can also be shown by [showing the top nodes based on existing nodes](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#show-the-top-nodes-based-on-existing-nodes). | Limited</br>Allows you to right-click and view immediate fallout in a Freeform table. | Yes</br>Exploratory analysis only. Always within one dimension instance between nodes. This means that each node shows the immediate (not eventual) next touchpoint along the path. |
+| **Shows where people left (fell out) and continued through (fell through)** | Yes</br>Shows for both predefined and exploratory journeys.  | Yes</br>Shows predefined journeys  | Yes</br>Shows for exploratory journeys  |
 | **Linear journeys** | Yes | Yes | No |
 | **Non-linear journeys with multiple entry points and paths** | Yes | No | Yes |
-| **Primary metric** | Any metric, including calculated metrics | Only Session or Person | Only Occurrences (Path views) |
-| **Secondary metric** | Yes<p>Any metric, including calculated metrics</p> | No | No  |
+| **Primary metric** | Any metric, including calculated metrics. | Only Session or Person | Only Occurrences (Path views) |
+| **Secondary metric** | Yes<p>Any metric, including calculated metrics.</p> | No | No  |
 | **Component support in nodes or touchpoints** | Metrics, dimension items, filters, and date ranges.| Metrics, dimension items, filters, and date ranges. | Only dimension items (except for the starting and ending touchpoint)  |
 | **Compare filters** | No | Yes<p>Perform side-by-side comparisons of two different filters in the same report.</p> | No |
 | **Drag-and-drop component interaction** | Yes | Yes | No |
-| **Adobe Journey Optimizer journeys** | Yes</br>Open journeys from Journey Optimizer for deeper analysis and customization | No |  No |
+| **Adobe Journey Optimizer journeys** | Yes</br>Open journeys from Journey Optimizer for deeper analysis and customization. | No |  No |
 
 {style="table-layout:auto"}
 
@@ -218,3 +223,18 @@ Use the following information to choose the visualization that best meets your n
 >
 >This article is part of the draft Content Analytics documentation. All draft Content Analytics documentation is  still subject to change and no legal obligations whatsoever can be derived from the current version of this article or any other article that is part of the Content Analytics documentation.  
 >
+
+
+## Draft Customer Journey Analytics B2B Edition documentation {#draft-b2b}
+
+>[!AVAILABILITY]
+>
+>The functionality described in this article, and any other article or functionality badged with [!BADGE B2B Edition]{type=Informative}.  is in the Limited Testing phase of release and might not be available yet in your environment. <br/>Also, [!BADGE B2B Edition]{type=Informative} functionalities and documentation of [!BADGE B2B Edition]{type=Informative} functionalities are subject to change and no legal obligations can be derived from it.<br/>This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md). 
+>
+
+
+## B2B Edition {#b2b-edition}
+
+>[!INFO]
+>
+>In this documentation, specific B2B articles or functionalities, only available with the Customer Journey Analytics B2B Edition, are marked with [!BADGE B2B Edition]{type=Informative}.

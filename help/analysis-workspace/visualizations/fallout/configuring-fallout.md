@@ -46,7 +46,7 @@ You can do pathing on dimensions, metrics, and filters. For example, suppose tha
    | Option | Description | 
    |---|---|
    | **[!UICONTROL Eventual path]** (default) | Persons are counted that will *eventually* land on the next page in the path, but not necessarily on the next event. |
-   | **[!UICONTROL Next event]** | re counted that will land on the next page in the path on the very next event. |
+   | **[!UICONTROL Next event]** | Persons are counted that will land on the next page in the path on the very next event. |
 
 
 ## Settings {#settings}
