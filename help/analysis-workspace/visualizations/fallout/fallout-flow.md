@@ -37,7 +37,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create a fallout
 
 Fallout visualizations let you:
 
-* Perform side-by-side comparisons of two different filters in the same report.
+* Perform side-by-side comparisons of two different segments in the same report.
 * Drag and drop (and rearrange) funnel steps (touchpoints).
 * Mix and match values from different dimensions and metrics.
 * Create a multi-dimensional fallout report. 
@@ -69,7 +69,7 @@ Fallout visualizations are best suited for:
 
 * Fallout analysis involving journeys with a predefined sequence of pages and a single entry point and path. (Use Journey canvas for journeys with multiple entry points and paths.)
 
-* Journeys where you need to perform side-by-side comparisons of two different filters in the same report.
+* Journeys where you need to perform side-by-side comparisons of two different segments in the same report.
 
 Use [the table above](#understand-the-differences) to understand the differences between Journey canvas, Fallout, and Flow visualizations.
 
