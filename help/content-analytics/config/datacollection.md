@@ -10,7 +10,7 @@ exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
 
 {{release-limited-testing}}
 
-This article explains in detail how content Analytics collects data
+This article explains in detail how Content Analytics collects data
 
 
 ## Definitions
