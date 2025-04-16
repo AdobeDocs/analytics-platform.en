@@ -24,7 +24,7 @@ To manage your Customer Journey Analytics usage:
 
 You may need to know how many rows of event data you currently have in [!UICONTROL Customer Journey Analytics]. To get an accurate account of your organization's event data records (data rows) usage, do the following **for each of the connections created by your organization**.  
 
-1. In [!UICONTROL Customer Journey Analytics], click the **[!UICONTROL Connections]** tab. 
+1. In [!UICONTROL Customer Journey Analytics],  select **[!UICONTROL Connections]**, optionally from **[!UICONTROL Data Management]**, in the top menu.
 
     You can now see a list of all your current connections.
 
