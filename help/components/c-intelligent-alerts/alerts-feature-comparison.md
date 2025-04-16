@@ -47,7 +47,7 @@ In Adobe Analytics, the following options are available:
 
 * Select one or more line items in a freeform table, then right-click and select **[!UICONTROL Create alert from selection]**.
 
-  This instantly pre-populates the alert builder to create an alert with the correct metrics and filters.
+  This instantly pre-populates the alert builder to create an alert with the correct metrics and segments.
 
 * Open a project in Analysis Workspace, then select **[!UICONTROL Components]** > **[!UICONTROL Create alert]**.
    

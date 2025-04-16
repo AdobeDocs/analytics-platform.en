@@ -6,7 +6,7 @@ exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
 ---
 # Approve calculated metrics
 
-In the [Calculated metrics manager](cm-manager.md), you can approve and unapprove filters. Only administrators can approve calculated metrics.
+In the [Calculated metrics manager](cm-manager.md), you can approve and unapprove segments. Only administrators can approve calculated metrics.
 
 To approve calculated metrics:
 
