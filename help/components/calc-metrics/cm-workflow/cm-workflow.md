@@ -13,7 +13,7 @@ However, administrators can give the **[!UICONTROL Calculated Metric Creation]**
 
 You can create a calculated metric in the following ways:
 
-![Ways to create a filter](assets/create-metric.png)
+![Ways to create a metric](assets/create-metric.png)
 
 * **A**. In the main interface, select **[!UICONTROL Components]** and select **[!UICONTROL Calculated metrics]**. Select ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] from the [[!UICONTROL Calculated metrics] manager](/help/components/calc-metrics/cm-workflow/cm-manager.md). 
 * **B**. In a Workspace project, from the Components left panel, select ![Add](/help/assets/icons/Add.svg) at ![Event](/help/assets/icons/Event.svg) **Metrics**.
