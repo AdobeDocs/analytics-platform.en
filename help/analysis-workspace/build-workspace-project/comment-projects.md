@@ -3,6 +3,8 @@ description: Learn how to comment on a project in Analysis Workspace
 title: Add and view comments in projects
 feature: Workspace Basics
 role: User
+hide: yes
+hidefromtoc: yes
 ---
 # Add and manage comments in projects {#comment-on-projects}
 
