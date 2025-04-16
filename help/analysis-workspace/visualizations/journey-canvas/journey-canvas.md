@@ -21,7 +21,7 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
 >title="Journey canvas"
->abstract="Analyze how people proceed through or fall out of a defined journey. Build analyses of user journeys by creating a flexible graph of nodes and arrows representing any combination of events, dimension items, and filters. Drag nodes on the canvas to rearrange the events and conditions of the journey. As you do, data updates accordingly. <br/><br/>Customers with access to Adobe Journey Optimizer can analyze existing Journey Optimizer journeys."
+>abstract="Analyze how people proceed through or fall out of a defined journey. Build analyses of user journeys by creating a flexible graph of nodes and arrows representing any combination of events, dimension items, and segments. Drag nodes on the canvas to rearrange the events and conditions of the journey. As you do, data updates accordingly. <br/><br/>Customers with access to Adobe Journey Optimizer can analyze existing Journey Optimizer journeys."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -39,7 +39,7 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"
 >title="Journey canvas"
->abstract="Analyze how people proceed through or fall out of a defined journey. Build analyses of user journeys by creating a flexible graph of nodes and arrows representing any combination of events, dimension items, and filters. Drag nodes on the canvas to rearrange the events and conditions of the journey. As you do, data updates accordingly. <br/><br/>Customers with access to Adobe Journey Optimizer can analyze existing Journey Optimizer journeys."
+>abstract="Analyze how people proceed through or fall out of a defined journey. Build analyses of user journeys by creating a flexible graph of nodes and arrows representing any combination of events, dimension items, and segments. Drag nodes on the canvas to rearrange the events and conditions of the journey. As you do, data updates accordingly. <br/><br/>Customers with access to Adobe Journey Optimizer can analyze existing Journey Optimizer journeys."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -51,7 +51,7 @@ _This article documents the Journey canvas visualization in_ ![CustomerJourneyAn
 
 The Journey canvas visualization allows you to analyze and gain deep insights on the journeys that you provide to your users and customers. It allows you to define a journey from scratch or view one from Journey Optimizer, then see how people left (fell out) or continued through (fell through) the journey. 
 
-You can [build analyses of user journeys](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) by using any combination of events, dimension items, filters, and date ranges to create journey nodes. Connect the nodes to create the journey's flow, and include multiple paths and decision points. Drag nodes on the canvas to rearrange the events and conditions of the journey. Data updates in real time as you make changes. 
+You can [build analyses of user journeys](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) by using any combination of events, dimension items, segments, and date ranges to create journey nodes. Connect the nodes to create the journey's flow, and include multiple paths and decision points. Drag nodes on the canvas to rearrange the events and conditions of the journey. Data updates in real time as you make changes. 
 
 [Nodes are connected](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) as an "eventual path," which means that visitors are counted as long as they eventually move from one node to the other, regardless of any events occurring between the 2 nodes. The time allotted for users to move along the path is determined by the container setting. 
 
@@ -164,7 +164,7 @@ Journey canvas provides deep, thorough analysis that isn't possible in Journey O
 
 Using Journey canvas to analyze journeys that were created in Journey Optimizer provides various benefits:
 
-* Create events by using any Customer Journey Analytics dimensions, metrics, filters, or date ranges. 
+* Create events by using any Customer Journey Analytics dimensions, metrics, segments, or date ranges. 
   
   In Journey Optimizer, a technical user must create an event before it can be added to a journey.
 

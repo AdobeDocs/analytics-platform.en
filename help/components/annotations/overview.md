@@ -18,7 +18,7 @@ Annotations can apply to:
 
 * A single date or a date range.
 
-* Your entire dataset or specific metrics, dimensions, or filters.
+* Your entire dataset or specific metrics, dimensions, or segments.
 
 * The project in which annotations are created (default) or all projects.
 
