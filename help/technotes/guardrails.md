@@ -72,6 +72,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 | Export Insights batches | 12 | Maximum number of export batches times the number of authorized Attribution AI Insights per year. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
 
 {style="table-layout:auto"}
+
 -->
 
 ## Audiences
