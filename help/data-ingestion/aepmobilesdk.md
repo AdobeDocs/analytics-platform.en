@@ -431,7 +431,7 @@ A connection lets you integrate datasets from Adobe Experience Platform into Wor
 
 To create your connection:
 
-1. In the Customer Journey Analytics UI, select **[!UICONTROL Connections]** from **[!UICONTROL Data management]** in the top menu.
+1. In the Customer Journey Analytics UI, Select **[!UICONTROL Connections]** (from **[!UICONTROL Data Management]**) in the top menu.
 
 2. Select **[!UICONTROL Create new connection]**.
 
@@ -477,7 +477,7 @@ A data view is a container specific to Customer Journey Analytics that lets you 
 
 To create your data view:
 
-1. In the Customer Journey Analytics UI, select **[!UICONTROL Data views]** from **[!UICONTROL Data management]** in the top menu.
+1. In the Customer Journey Analytics UI, select **[!UICONTROL Data views]** (optionally from **[!UICONTROL Data Management]**) in the top menu.
 
 2. Select **[!UICONTROL Create new data view]**.
 

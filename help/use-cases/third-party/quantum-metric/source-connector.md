@@ -29,7 +29,7 @@ See [Adobe Experience Platform source connectors](https://experienceleague.adobe
 Creating a source connector for Quantum Metric data automatically creates a dataset in Adobe Experience Platform. Add this dataset to a new or existing [connection](/help/connections/overview.md) in Customer Journey Analytics.
 
 1. Log in to [experience.adobe.com](https://experience.adobe.com).
-1. Navigate to Customer Journey Analytics, and select **[!UICONTROL Connections]** from **[!UICONTROL Data management]** in the top menu.
+1. Navigate to Customer Journey Analytics, and select **[!UICONTROL Connections]** (from **[!UICONTROL Data Management]**) in the top menu.
 1. Give the connection a name, and add the Quantum Metric dataset to the connection.
 1. Click **[!UICONTROL Save]**.
 
@@ -41,7 +41,7 @@ Creating a source connector for Quantum Metric data automatically creates a data
 Create a [data view](/help/data-views/data-views.md) to configure dimension and metric settings.
 
 1. Log in to [experience.adobe.com](https://experience.adobe.com).
-1. Navigate to Customer Journey Analytics, and select **[!UICONTROL Data views]** from **[!UICONTROL Data management]** in the top menu.
+1. Navigate to Customer Journey Analytics, and select **[!UICONTROL Data views]** (from **[!UICONTROL Data Management]**) in the top menu.
 1. Select the desired data view, or create a data view.
 1. Locate the desired Quantum Metric dimensions and metrics in the schema fields list on the right, and drag them to the dimensions and metrics area in the center.
 1. Use the right pane to configure each desired dimension and metric.
