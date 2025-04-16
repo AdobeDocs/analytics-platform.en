@@ -89,9 +89,9 @@ Settings include:
 
 <!--
 
-Add this to the table above: (End of April, 2025 when project commenting is GA)
+Add this to the table above - exchange - for pipe: (End of April, 2025 when project commenting is GA)
 
-| Allow commenting | When this option is enabled, a comments area is available in the right rail of the project in Analysis Workspace. For more information, see [Add and manage comments in projects](/help/analysis-workspace/build-workspace-project/comment-projects.md). |
+Allow commenting - When this option is enabled, a comments area is available in the right rail of the project in Analysis Workspace. For more information, see [Add and manage comments in projects](/help/analysis-workspace/build-workspace-project/comment-projects.md). 
 
 -->
 

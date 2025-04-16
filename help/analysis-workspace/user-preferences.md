@@ -65,10 +65,10 @@ You can update company preferences that apply to all users and projects within y
 
 <!-- 
 
-Add this to the table above: (End of April, 2025 when project commenting is GA)
+Add this to the table above - exchange - for pipe: (End of April, 2025 when project commenting is GA)
 
-| **Project commenting** | | |
-| | Allow commenting on projects | When this option is enabled, a comments area is available in the right rail of each project in Analysis Workspace. <p>Project owners can disable the comments area for a given project, as described in [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md).</p> <p>For more information about commenting in Analysis Workspace projects, see [Add and manage comments in projects](/help/analysis-workspace/build-workspace-project/comment-projects.md).</p> |
+**Project commenting** 
+- - Allow commenting on projects - When this option is enabled, a comments area is available in the right rail of each project in Analysis Workspace. <p>Project owners can disable the comments area for a given project, as described in [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md).</p> <p>For more information about commenting in Analysis Workspace projects, see [Add and manage comments in projects](/help/analysis-workspace/build-workspace-project/comment-projects.md).</p> 
 
 -->
 

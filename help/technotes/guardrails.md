@@ -52,12 +52,12 @@ Some of the features and their associated value for the limit depend on the Cust
 
 <!--
 
-Add this to the table above: (End of April, 2025 when project commenting is GA)
+Add this to the table above, change - for pipe : (End of April, 2025 when project commenting is GA)
 
-| Comments per project | 1,000 | System-enforced Guardrail | Maximum number of comments per project. |
-| Replies per comment | 100 | System-enforced Guardrail | Maximum number of replies per comment. |
-| Images per comment | 5 | System-enforced Guardrail | Maximum number of images per comment. |
-| Image size | 2 | System-enforced Guardrail | Maximim upload size per image in MB |
+Comments per project - 1,000 - System-enforced Guardrail - Maximum number of comments per project. 
+Replies per comment - 100 - System-enforced Guardrail - Maximum number of replies per comment. 
+Images per comment - 5 - System-enforced Guardrail - Maximum number of images per comment. 
+Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB 
 
 -->
 
