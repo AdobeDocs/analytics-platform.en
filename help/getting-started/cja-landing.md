@@ -17,6 +17,12 @@ Get a glimpse of the newest enhancements in the Customer Journey Analytics produ
 
 >[!BEGINTABS]
 
+>[!TAB Content Analytics]
+
+Adobe Content Analytics allows you to quickly and easily investigate large volumes of content data to uncover trends, spot anomalies, identify content fatigue, and gain insights from content exposure.
+
+[![image](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
+
 >[!TAB AI Assistant] 
 
 AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace - whether its understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
@@ -59,18 +65,6 @@ Through Graph-based stitching, you can use the identity graph from the Experienc
 [![image](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
 *_You must have the Prime package for graph-based stitching._*
-
->[!TAB B2B lookups] 
-
-As part of configuring a connection, you can transform datasets for specific B2B lookup schemas to better support person-based lookups on B2B data.
-
-[![image](assets/learn-more-button.svg)](/help/connections/transform-datasets-b2b-lookups.md)
-
->[!TAB Derived fields] 
-
-New derived field functions (Math, Next or Previous, Summarize, Deduplicate) and additional function templates (like Bounces, Friendly Dataset Name, Holiday Season, Monthly Goals, Simple Bot Detection, and others) are now available.. 
-
-[![image](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
 >[!TAB BI extension*] 
 

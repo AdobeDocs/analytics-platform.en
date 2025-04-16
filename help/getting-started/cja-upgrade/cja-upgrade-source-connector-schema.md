@@ -4,8 +4,6 @@ description: Learn how to create a custom schema for the Analytics source connec
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
 ---
 # Create a custom schema for the Analytics source connector {#create-custom-schema}
@@ -16,6 +14,15 @@ exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
 >id="cja-upgrade-source-connector-create-schema"
 >title="Create a schema for the Analytics source connector"
 >abstract="This schema is a combination of the Adobe Analytics ExperienceEvent field group with all field groups that make up your organization's custom schema. It allows you to map the fields used by the Analytics source connector to your organization's schema, and is only used for historical data.<br><br>While technical in nature, creating this schema can be completed in hours, possibly faster if you know exactly which field groups make up your organization's custom schema."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-source-connector-historical"
+>title="Create the Analytics source connector for historical data"
+>abstract="You can use the Analytics source connector to bring Adobe Analytics report suite data into Adobe Experience Platform. This data can then be used as historical data in Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -71,4 +78,4 @@ To create the custom schema to use with the Analytics source connector:
 
 1. Select **[!UICONTROL Save]** to save your schema.
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}

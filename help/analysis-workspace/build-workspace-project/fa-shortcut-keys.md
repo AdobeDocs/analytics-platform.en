@@ -40,7 +40,7 @@ Note that on your keyboard the following symbols might be used:
  | Create an Alert | **[!UICONTROL *cmd + shift + a*]** | **[!UICONTROL *ctrl + shift + a*]** | 
  | Create Calculated Metric | **[!UICONTROL *cmd + shift + c*]** | **[!UICONTROL *ctrl + shift + c*]**| 
  | Create a Date Range | **[!UICONTROL *cmd + shift + d*]** | **[!UICONTROL *ctrl + shift + d*]** | 
- | Create a filter  | **[!UICONTROL *cmd + shift + e*]** | **[!UICONTROL *ctrl + shift + e*]** | 
+ | Create a segment  | **[!UICONTROL *cmd + shift + e*]** | **[!UICONTROL *ctrl + shift + e*]** | 
  | Clear All | **[!UICONTROL *alt + w*]** | **[!UICONTROL *opt + w*]** | 
  | Copy | **[!UICONTROL *cmd + c*]** | **[!UICONTROL *ctrl + c*]** | 
  | Redo | **[!UICONTROL *cmd + shift + z*]** | **[!UICONTROL *ctrl + shift + z*]** | 

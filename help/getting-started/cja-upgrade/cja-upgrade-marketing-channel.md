@@ -4,8 +4,6 @@ description: Learn how to create a marketing channel derived field for Customer 
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
 ---
 # Create a marketing channel derived field for Customer Journey Analytics {#create-marketing-channel-derived-field}
@@ -47,4 +45,4 @@ In order to use marketing channels in Customer Journey Analytics when using the 
 
    Your new derived field is added to the Derived fields > container, as part of Schema fields in the left rail of your Data view.
 
-1. Continue following the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the [dynamically generated upgrade steps](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}

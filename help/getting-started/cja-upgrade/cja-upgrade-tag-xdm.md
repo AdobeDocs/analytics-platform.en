@@ -4,8 +4,6 @@ description: Learn how to add XDM data collection logic to your tag
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
 ---
 # Add XDM data collection logic to your tag {#upgrade-tag-xdm}
@@ -292,3 +290,6 @@ To build and publish your tag:
 1. You can select **[!UICONTROL ...]** to rebuild the library or move the library to a staging or production environment.
 
    ![Publish - Build Library](assets/build-library.png)
+
+{{upgrade-final-step}}
+

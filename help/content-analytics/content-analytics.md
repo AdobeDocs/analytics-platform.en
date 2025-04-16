@@ -4,24 +4,17 @@ description: An overview of Content Analytics
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
-hide: yes
-hidefromtoc: yes
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 ---
 # Content Analytics overview
 
->[!WARNING]
->
->This article is a preliminary unofficial draft version of a forthcoming final version and is part of the Content Analytics documentation. All content is subject to change and no legal obligations whatsoever can be derived from the current version of this article.  
->
-
 {{release-limited-testing}}
 
-Content Analytics helps marketers to understand how content impacts the key performance indicators that a business has defined. On top of the behavioral data, Content Analytics collects data how content is consumed and how content drives impact. For example, do customers respond better to a specific tone of voice, a specific color pallet, or specific themes? This information, together with specifically designed reporting workflows and templates, can help you to perform even better analysis and gain deeper insights on customer journey data in Customer Journey Analytics. 
+Content Analytics helps marketers to understand how content impacts the key performance indicators that a business has defined. On top of the behavioral data, Content Analytics collects data on how content is consumed and how content drives impact. For example, do customers respond better to a specific tone of voice, a specific color palette, or specific themes? This information, together with specifically designed reporting workflows and templates, can help you to perform even better analysis and gain deeper insights on customer journey data in Customer Journey Analytics. 
 
 Content Analytics uses an AI and machine learning based **featurization service** to break content down into components and attributes. By creating a structured metadata profile on all your content, you can analyze what content and what attributes of that content drives business results. 
 
-In addition to the creation of this structured metadata profile, Content Analytics provides an **identity service** that identifies assets and experiences using a single identifier. The identity service can recognize when the exact same asset appears in more than one place. When that happens the two instances of assets will be treated as the same, allowing for a more holistic view of content usage and consumption.
+In addition to the creation of this structured metadata profile, Content Analytics provides an **identity service** that identifies assets and experiences using a single identifier. The identity service can recognize when the exact same asset appears in more than one place. When that happens, the instances of this asset are treated as the same asset, allowing for a more holistic view of content usage and consumption.
 
 ## Value
 
@@ -36,31 +29,40 @@ Content Analytics does provide value at an increasing level:
 
 Content Analytics uses the following key terms:
 
-![Assets and experiences](/help/content-analytics/assets//content-analytics-experience-asset.png)
+![Assets and experiences](/help/content-analytics/assets/content-analytics-experience-asset.png)
 
-* **Experience**: An experience is all text on a web page that is reproducible using the URL used by the initial user visiting that web page. Each experience gets a unique identifier.
-* **Asset**: An asset is an individual and unique piece of content, like an image. Each asset also gets a unique identifier.
+* **Experience**: An experience is all text on a web page that is reproducible using the URL that is used by the initial user who visited the web page. Each experience gets a unique identifier. Changes to the page resulting in changes to the HTML of the page results in a new experience.
+* **Asset**: An asset is an individual and unique piece of content, like an image. Each asset also gets a unique identifier and a perceptual ID. A perceptual ID is an identifier that is shared with assets that are visually identical. Perceptual IDs help to deduplicate assets that may have a different asset URL and therefor a different asset ID, but are perceptually identical.
 * **Attribute**: An attribute is a descriptive metadata element associated with an experience or asset. Examples of an attribute are: style of photography, readability, persuasion strategy, object color, background color.
 
 ## How it works
 
 Content Analytics uses web image view data collected in event datasets in Experience Platform. This data might be collected through the various methods available: Experience Platform Edge Network (Web SDK, Server API), or Analytics source connector.
 
-![Content Analytics - How it works](assets/how-it-works.png)
+![Content Analytics - How it works](assets/aca-overview.gif)
 
 
-1. When a user visits a site, the Experience Plarform Web SDK, configured for Content Analytics, records interactions with content.
-1. The featurization assembler service and identity service process the revisited data. 
-1. The results of these services (components, attributes, and identities) are used to update the relevant specific content analytics datasets in Experience Platform.
-1. The content analytics data, together with behavioral data and other lookup datasets, can then be used in a Customer Journey Analytics configuration (Connection, Data view and Workspace). That configuration provides the foundation to the unique macro-level insights on your content.
+1. When a user visits a site, [configured for Content Analytics](config/configuration.md), the Experience Platform Web SDK records impressions and interactions with content.
+1. The identity and featurization service process these interactions. That process consists of a retrieval service that revisits the public-facing versions of the configured URLs that define the interactions. For all of these retrieved URLs, the identity service uniquely identifies the experiences and assets. And the featurization service applies AI/ML services to discover experiences and assets metadata and attributes.
+1. The results of these services ([components, attributes, and identities](/help/content-analytics/report/components.md)) are used to update the relevant specific content analytics datasets in Experience Platform.
+1. The content analytics data, together with behavioral data and other lookup data, you can use in a Customer Journey Analytics setup ([Connection](/help/connections/overview.md), [Data view](/help/data-views/data-views.md) and [Workspace](/help/analysis-workspace/home.md)). That setup provides the foundation to the unique macro-level insights on your content. <br/>You can jump start your Content Analytics reports and analysis using the [Content Analytics template](/help/content-analytics/report/report.md#template).
 
 >[!NOTE]
 >
->Content Analytics leverages AI/ML. The results (for the featurization of experiences and assets) may be inaccurate.
+>Content Analytics leverages AI/ML services which may produce inaccurate or misleading results. As a result, please use your judgment to review and validate AI/ML generated outputs.
+>
+>You can use the **[!UICONTROL Feedback]** tab, available from ![InfoOutline](/help/assets/icons/InfoOutline.svg) on the main interface, to provide feedback on the AI/ML generated outputs.
+>
+
+>[!NOTE]
+>
+>If you have licensed the Privacy and Security Shield add-on, be aware that (any data generated from) experiences and assets, subject to Content Analytics, are not covered by DULE labeling or Customer Managed Keys.
 >
 
 
 >[!MORELIKETHIS]
 >
->[ Content Analytics reporting](report/report.md)
+>[Content Analytics reporting](report/report.md)
 >[Configure Content Analytics](config/configuration.md)
+>
+

@@ -7,13 +7,13 @@ exl-id: 5ef235e2-50d8-4202-bad7-06090102cf73
 ---
 # Open projects
 
-You can open a project directly from the [Projects](/help/analysis-workspace/build-workspace-project/freeform-overview.md) page. Look for your project in the list. Use [search](/help/analysis-workspace/build-workspace-project/freeform-overview.md#search) or the [filter panel](/help/analysis-workspace/build-workspace-project/freeform-overview.md#filter-panel) to narrow down the list.
+You can open a project directly from the [Projects](/help/analysis-workspace/build-workspace-project/freeform-overview.md) page. Look for your project in the list. Use [search](/help/analysis-workspace/build-workspace-project/freeform-overview.md#search) or the [segment panel](/help/analysis-workspace/build-workspace-project/freeform-overview.md#segment-panel) to narrow down the list.
 
 * Select the title of your project to open the project in Analysis Workspace.
 
 You can also open a project while you are working in another project.
 
-* Select **[!UICONTROL Open]** from the **[!UICONTROL Project]** menu. You see a dialog similar to the [Projects](/help/analysis-workspace/build-workspace-project/freeform-overview.md) page.  Use [search](/help/analysis-workspace/build-workspace-project/freeform-overview.md#search) or the [filter panel](/help/analysis-workspace/build-workspace-project/freeform-overview.md#filter-panel) to narrow down the list.
+* Select **[!UICONTROL Open]** from the **[!UICONTROL Project]** menu. You see a dialog similar to the [Projects](/help/analysis-workspace/build-workspace-project/freeform-overview.md) page.  Use [search](/help/analysis-workspace/build-workspace-project/freeform-overview.md#search) or the [segment panel](/help/analysis-workspace/build-workspace-project/freeform-overview.md#segment-panel) to narrow down the list.
 * Select the title of your project to open the project in Analysis Workspace.
 
 If you cannot find the project and want to start a new project, select **[!UICONTROL Create new]**.

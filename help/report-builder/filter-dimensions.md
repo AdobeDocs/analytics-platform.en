@@ -15,7 +15,7 @@ To change the dimension items returned for each dimension
 
 1. Select a data block and click Edit data block in the COMMANDS panel.
 
-1. Click Next to display the Dimensions tab.
+1. Click **[!UICONTROL Next]** to display the Dimensions tab.
 
 1. Click the **...** icon next to a component name in the table.
 

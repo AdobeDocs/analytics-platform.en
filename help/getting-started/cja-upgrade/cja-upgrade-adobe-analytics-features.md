@@ -4,8 +4,6 @@ description: Learn about Adobe Analytics feature support when upgrading to Custo
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
 exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 ---
 # Understand Adobe Analytics feature support when upgrading to Customer Journey Analytics {#feature-support-upgrade}

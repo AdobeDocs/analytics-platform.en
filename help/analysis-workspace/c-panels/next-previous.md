@@ -36,7 +36,7 @@ The **[!UICONTROL Next or previous item]** panel contains a number of tables and
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_container"
 >title="Container"
->abstract="Select the container to determine the scop of your inquiry."
+>abstract="Select the container to determine the scope of your inquiry."
 
 To use a **[!UICONTROL Next or previous item]** panel:
 
@@ -57,7 +57,7 @@ You can configure the [!UICONTROL Next or previous item] panel using these input
 | **[!UICONTROL Dimension]** | Select the dimension for which you want to explore next or previous items. |
 | **[!UICONTROL Dimension item]** | Select the specific dimension item at the center of your next / previous inquiry. |
 | **[!UICONTROL Direction]** | Specify whether you are looking for the [!UICONTROL Next] or the [!UICONTROL Previous] dimension item. |
-| **[!UICONTROL Container]** | Select the container, [!UICONTROL Session] or [!UICONTROL Person] (default), to determine the scope of your inquiry. |
+| **[!UICONTROL Container]** | Select the container, **[!UICONTROL Global Account]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Account]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Buying Group]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Session]** or **[!UICONTROL Person]**, to determine the scope of your inquiry. |
 
 {style="table-layout:auto"}
 

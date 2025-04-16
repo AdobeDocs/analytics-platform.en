@@ -17,12 +17,12 @@ You can create a filter in the following ways:
 
 ![Ways to create a filter](assets/create-filter.png)
 
-* 🅐 In the main interface, select **[!UICONTROL Components]** and select **[!UICONTROL Filters]**. Select ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] from the [[!UICONTROL Filters] manager](/help/components/filters/manage-filters.md). 
-* 🅑 In a Workspace project, from the Components left panel, select ![Add](/help/assets/icons/Add.svg) at ![Segment](/help/assets/icons/Segmentation.svg) **Filters**.
-* 🅒 In a Workspace project, from the context menu in a visualization, select **[!UICONTROL Create filter from selection]**.
-* 🅓 In a Workspace project, select **[!UICONTROL Components]** from the menu, and select **[!UICONTROL Create filter]**. 
-* 🅔 In a Workspace project, use the shortcut **[!UICONTROL shift+cmd+e]** (macOS) or **[!UICONTROL shift+ctrl+e]** (Windows).
-* 🅕 Select ![Add](/help/assets/icons/Add.svg) in ***Drop a filter here (or any other component)*** drop zone. This action creates a Project-only filter.
+* **A**. In the main interface, select **[!UICONTROL Components]** and select **[!UICONTROL Filters]**. Select ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] from the [[!UICONTROL Filters] manager](/help/components/filters/manage-filters.md). 
+* **B**. In a Workspace project, from the Components left panel, select ![Add](/help/assets/icons/Add.svg) at ![Segment](/help/assets/icons/Segmentation.svg) **Filters**.
+* **C**. In a Workspace project, from the context menu in a visualization, select **[!UICONTROL Create filter from selection]**.
+* **D**. In a Workspace project, select **[!UICONTROL Components]** from the menu, and select **[!UICONTROL Create filter]**. 
+* **E**. In a Workspace project, use the shortcut **[!UICONTROL shift+cmd+e]** (macOS) or **[!UICONTROL shift+ctrl+e]** (Windows).
+* **F**. Select ![Add](/help/assets/icons/Add.svg) in ***Drop a filter here (or any other component)*** drop zone. This action creates a Project-only filter.
 
 To define the new filter, you use the [Filter builder](/help/components/filters/filter-builder.md).
 

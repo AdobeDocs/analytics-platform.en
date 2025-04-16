@@ -16,7 +16,7 @@ This page includes ip addresses you need to add to your allowlist in order for o
 >
 >While Adobe does its best to keep this document current, it cannot guarantee that the list of IP ranges remains the same. Possible changes include growth and expansion of the business, an Internet registry requires changes to Adobe's IP address space, or an Internet service provider stops functioning.
 
-## VA7: US and Americas customers
+## US and Americas customers
 
 | IP block (CIDR notation) |
 | --- |
@@ -41,8 +41,9 @@ This page includes ip addresses you need to add to your allowlist in order for o
 | `52.254.106.208/28` |
 | `20.186.185.227` |
 | `52.254.107.0/28` |
+| `66.117.18.0/24` |
 
-## NLD2: Europe
+## Europe
 
 | IP block (CIDR notation) |
 | --- |
@@ -70,7 +71,7 @@ This page includes ip addresses you need to add to your allowlist in order for o
 | `40.74.7.208/28` |
 | `40.74.6.112/28` |
 
-## AUS5: Australia
+## Australia
 
 | IP block (CIDR notation) |
 | --- |
@@ -102,7 +103,7 @@ This page includes ip addresses you need to add to your allowlist in order for o
 | `20.193.56.128/28` |
 | `20.227.32.175` |
 
-## CAN2: Canada
+## Canada
 
 | IP block (CIDR notation) |
 | --- |

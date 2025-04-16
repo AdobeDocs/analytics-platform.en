@@ -13,7 +13,7 @@ Report Builder for Customer Journey Analytics allows you to easily create, edit,
 
 With Report Builder for Customer Journey Analytics, you can:
 
-- Reference existing worksheet cells to get the perfect row order, date range, or filter
+- Reference existing worksheet cells to get the perfect row order, date range, or segment
 - Create custom dates using calendar, cell references, or date math
 - Design your tables and visualizations with familiar Excel formatting tools
 
@@ -45,4 +45,4 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Buider fo
 >[!ENDSHADEBOX]
 
  You can download Report Builder for Customer Journey Analytics from the
- [Microsoft Store](https://www.microsoft.com/en-us/store/apps/windows).
+ [Microsoft Store](https://appsource.microsoft.com/en-us/product/Office365/WA200003101).
