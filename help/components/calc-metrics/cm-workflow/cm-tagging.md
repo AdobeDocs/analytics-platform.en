@@ -30,7 +30,7 @@ Once saved, the tags are listed in the [!UICONTROL Tag] field for the selected c
 
 <!--
 
-In the Calculated metric manager, you can organize filters by tagging them.
+In the Calculated metric manager, you can organize segments by tagging them.
 
 All users can create tags for calculated metrics and apply one or more tags to a metric. However, you can see tags only for those calculated metrics that you own or that have been shared with you. 
 

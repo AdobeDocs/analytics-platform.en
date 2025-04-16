@@ -6,7 +6,7 @@ exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
 ---
 # Create calculated metrics
 
-By default, only administrators can create calculated metrics. Users have rights to view calculated metrics, similar to how users view other components (such as filters, annotations, and more).
+By default, only administrators can create calculated metrics. Users have rights to view calculated metrics, similar to how users view other components (such as segments, annotations, and more).
 
 However, administrators can give the **[!UICONTROL Calculated Metric Creation]** permission for **[!UICONTROL Reporting Tools]** in **[!UICONTROL Edit permissions for CJA Workspace Access]** to users via the [Admin Console](/help/technotes/access-control.md#user-level-access).
 

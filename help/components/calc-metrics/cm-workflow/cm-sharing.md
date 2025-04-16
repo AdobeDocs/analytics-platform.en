@@ -33,7 +33,7 @@ Below are some best practices when you should share calculated metrics and with 
 
 * As an administrator, share a calculated metric with a specific group if that calculated metric provides business value for the users part of that group.
 
-* As an administrator or an individual user, share a calculated metric with one or more individuals to validate a calculated metric. If the filters do not prove to be useful, you can delete the calculated metric.  
+* As an administrator or an individual user, share a calculated metric with one or more individuals to validate a calculated metric. If the segments do not prove to be useful, you can delete the calculated metric.  
 
 
 <!--
