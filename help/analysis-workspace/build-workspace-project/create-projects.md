@@ -43,7 +43,7 @@ Now that you have created a Blank Workspace project, ensure you are familiar wit
   * **[!DNL Store Country]** [dimension](/help/components/dimensions/overview.md) ➍
   * **[!DNL People]** [metric](/help/components/apply-create-metrics.md) ➎ 
   * **[!DNL Avg Order Value]** [calculated metric](/help/components/calc-metrics/calc-metr-overview.md) ➏ 
-  * **[!DNL Mobile App Sessions]** [filter](/help/components/filters/filters-overview.md) ➐
+  * **[!DNL Mobile App Sessions]** [segment](/help/components/filters/filters-overview.md) ➐
   * **[!DNL Last Month]** [date range](/help/components/date-ranges/overview.md) ➑ 
   * **[!DNL Example]** [annotation](/help/components/annotations/overview.md) ➒
 

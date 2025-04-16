@@ -13,7 +13,7 @@ Depending on the date granularity used in the report, 3 different statistical te
 
 ## Anomaly detection for daily granularity
 
-For daily granularity reports, the algorithm considers several important factors to deliver the most accurate results possible. First, the algorithm determines which type of model to apply based on available data of which we select between one of two classes - a time-series-based model or an outlier-detection model (called functional filtering).
+For daily granularity reports, the algorithm considers several important factors to deliver the most accurate results possible. First, the algorithm determines which type of model to apply based on available data of which we select between one of two classes - a time-series-based model or an outlier-detection model (called functional segmenting).
 
 The time series model selection is based on the following combinations for type of error, trend, and seasonality (ETS) as described by [Hyndman et al. (2008)](https://www.springer.com/us/book/9783540719168). Specifically, the algorithm tries the following combinations:
 
@@ -23,7 +23,7 @@ The time series model selection is based on the following combinations for type 
 1. MNA (multiplicative error, no trend, additive seasonality) 
 1. AAN (additive error, additive trend, no seasonality)
 
-The algorithm tests the suitability of each of these by selecting the one with the best mean absolute percentage error (MAPE). If the MAPE of the best time series model is greater than 15% however, functional filtering is applied. Typically, data with a high degree of repetition (e.g. week over week or month over month) is the best fit with a time series model.
+The algorithm tests the suitability of each of these by selecting the one with the best mean absolute percentage error (MAPE). If the MAPE of the best time series model is greater than 15% however, functional segmenting is applied. Typically, data with a high degree of repetition (e.g. week over week or month over month) is the best fit with a time series model.
 
 After model selection, the algorithm then adjusts the results based on holidays, and year-over-year seasonality. For holidays, the algorithm checks to see if any of the following holidays are present in the reporting date range:
 
