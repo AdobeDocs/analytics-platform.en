@@ -23,9 +23,7 @@ The audiences you create in Customer Journey Analytics do not have to be based o
 
 **Audience**: A set or list of identities that have both a namespace and a specific ID related to that namespace. Audiences are transportable from the Adobe Experience Platform and applications that sit on top of it (such as Customer Journey Analytics). Audiences can contain mixed namespaces.
 
-**Segment**: A set of rules that, when evaluated over a set of data for a time period, produces a subset of data. A segment can be used in the process of creating an audience when coupled with other supporting services. Filters are defined and maintained in Customer Journey Analytics.
-
-**Filters** versus **Segments**: Customer Journey Analytics does not use the concept of *segments* - instead, it uses *filters*. While both are a set of rules that can contain similar logic, they produce different outputs. A filter is used to narrow down a dataset for analysis purposes. A segment is used to produce a list of identities that can be used for activation. Segments produce audiences in Real-time Customer Profile, whereas filters (alone) do not. Customer Journey Analytics Audience Publishing is the process by which we use a Customer Journey Analytics filter to create an audience that can be consumed by Real-time Customer Profile.
+**Segment**: A set of rules that, when evaluated over a set of data for a time period, produces a subset of data. A segment can be used in the process of creating an audience when coupled with other supporting services. Segments are defined and maintained in Customer Journey Analytics.
 
 ## Permissions
 
