@@ -19,7 +19,7 @@ The configuration of Content Analytics consists of the following steps:
 1. Once you are comfortable with the configuration values, you can implement the configuration. This implementation creates all the required artifacts, based on what you have configured in the wizard. 
 1. Only when you [manually publish](manual.md) the Tags property, your Content Analytics configuration is effectively deployed and data collection is started.
 
-1. You can only make some minor changes to an implemented configuration using the [guided configuration](guided.md) wizard. For example, change the [Data view](/help/data-views/data-views.md).
+1. You can only make some minor changes to an implemented configuration using the [guided configuration](guided.md) wizard. For example, change the [data view](/help/data-views/data-views.md).
 1. You can make other changes to an implemented configuration using the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) in the associated Tags property.
 1. Only when you [manually re-publish](manual.md) the Tags property, the configuration modifications are effectively deployed and data collection, based on your changes, is started.
 
