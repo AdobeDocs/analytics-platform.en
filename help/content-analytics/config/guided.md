@@ -212,7 +212,7 @@ To include experiences in a new or not implemented configuration:
 1. Select **[!UICONTROL Add Regex]** if you want to add another combination of a regular expression and query parameters.
 
 
-### Implemented configuration {#implemented-experiences-configuration}
+#### Implemented configuration {#implemented-experiences-configuration}
 
 To edit existing or include new experiences in an implemented configuration:
 
