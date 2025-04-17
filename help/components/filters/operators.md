@@ -1,6 +1,6 @@
 ---
 title: Operators
-description: Determine how a component interacts with a value within a filter.
+description: Determine how a component interacts with a value within a segment.
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
 feature: Filters
 role: User
@@ -33,7 +33,7 @@ The Filter builder lets you compare and constrain values for components using se
 
 ## Distinct Count operators
 
-You can filter on a distinct count of items within a dimension. For example, you can create filters for persons who viewed more than 5 distinct products or visits where more than 5 distinct pages were seen.
+You can segment on a distinct count of items within a dimension. For example, you can create segments for persons who viewed more than 5 distinct products or visits where more than 5 distinct pages were seen.
 
 | Operator | Description |
 | --- | --- |
