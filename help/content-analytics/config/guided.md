@@ -189,7 +189,7 @@ Only consider to include experiences when the following is applicable:
 
 >[!IMPORTANT]
 >
->Implement [Content Analytics versioning](manual#versioning) to collect changes that you make to the experiences (pages) subject to Content Analytics. 
+>Implement [Content Analytics versioning](manual.md#versioning) to collect changes that you make to the experiences (pages) subject to Content Analytics. 
 
 
 
