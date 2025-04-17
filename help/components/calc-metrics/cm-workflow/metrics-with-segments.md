@@ -33,7 +33,7 @@ See the sections below to illustrate how segmented metrics can help you answer t
 
    Your segment could look like.
 
-   ![Filter Germany](assets/segment-germany.png)
+   ![Filter Germany](assets/filter-germany.png)
 
 1. Back in the Calculated metric builder, use the segment to update the calculated metric.
 
