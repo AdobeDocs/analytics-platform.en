@@ -55,7 +55,7 @@ This visualization addresses various common use cases, including:
    | **[!UICONTROL Metric]** | Select the metric you want to examine. All metrics are supported. |
    | **[!UICONTROL Primary date range]** | The current date range for the freeform table.<p>Choose from any available date ranges in your data view.</p> <p>Choose [!UICONTROL **Panel date range**] if you want to use the same date range that is being used on the panel where the visualization is located.</p>  |
    | **[!UICONTROL Comparison date range]** | The date range that you want to compare with the primary date range. |
-   | **[!UICONTROL Filter (optional)]** | Any filter that you are interested in for this summary.  |
+   | **[!UICONTROL Filter (optional)]** | Any segment that you are interested in for this summary.  |
 
    {style="table-layout:auto"}
 
@@ -147,7 +147,7 @@ After building the visualization, you can still edit the original configuration.
 
    You are now taken back to the original configuration view. 
 
-1. Change the metric, primary date range, comparison date range, or filter as preferred.
+1. Change the metric, primary date range, comparison date range, or segment as preferred.
 
 >[!MORELIKETHIS]
 >

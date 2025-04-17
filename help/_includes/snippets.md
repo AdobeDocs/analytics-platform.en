@@ -34,10 +34,10 @@
 
 | Option | Function |
 |---------|----------|
-| **[!UICONTROL Recommended]** | Sort components for each type (dimension, metric, filter and date range) based on their recommendation. Components that are used most frequently and most recently by you or by others in your organization are shown higher in each list. |
-| **[!UICONTROL Last modified]** | Sort components for each type (dimension, metric, filter and date range) based on their last modified date. Components that are modified most recently are shown highter in each list. | 
-| **[!UICONTROL Alphabetical]** | Sort components for each type (dimension, metric, filter and date range) in ascending alphabetic order. |
-| **[!UICONTROL Categorical]** | Sort components for each type (dimension, metric, filter and date range) based on their category. For example Curated versus Non-curated data view components. |
+| **[!UICONTROL Recommended]** | Sort components for each type (dimension, metric, segment and date range) based on their recommendation. Components that are used most frequently and most recently by you or by others in your organization are shown higher in each list. |
+| **[!UICONTROL Last modified]** | Sort components for each type (dimension, metric, segment and date range) based on their last modified date. Components that are modified most recently are shown highter in each list. | 
+| **[!UICONTROL Alphabetical]** | Sort components for each type (dimension, metric, segment and date range) in ascending alphabetic order. |
+| **[!UICONTROL Categorical]** | Sort components for each type (dimension, metric, segment and date range) based on their category. For example Curated versus Non-curated data view components. |
 
 {style="table-layout:auto"}
 
@@ -50,7 +50,7 @@ Available time comparison options include the previous period, 13 weeks prior, 5
 
 ## Video demonstration Adobe Analytics {#videoaa}
 
-*This video demonstrates the functionality using Adobe Analytics. However, the functionality is similarly available in Customer Journey Analytics. Be aware of the differences in terminology between Adobe Analytics and Customer Journey Analytics (for example segments versus filters, or visits versus sessions).*
+*This video demonstrates the functionality using Adobe Analytics. However, the functionality is similarly available in Customer Journey Analytics. Be aware of the differences in terminology between Adobe Analytics and Customer Journey Analytics (for example "visits" versus "sessions").*
 
 
 ## Filters panel {#filterspanel}
@@ -229,7 +229,7 @@ Use the following information to choose the visualization that best meets your n
 
 >[!AVAILABILITY]
 >
->The functionality described in this article, and any other article or functionality badged with [!BADGE B2B Edition]{type=Informative}.  is in the Limited Testing phase of release and might not be available yet in your environment. <br/>Also, [!BADGE B2B Edition]{type=Informative} functionalities and documentation of [!BADGE B2B Edition]{type=Informative} functionalities are subject to change and no legal obligations can be derived from it.<br/>This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md). 
+>The functionality described in this article, and any other article or functionality badged with [!BADGE B2B Edition]{type=Informative}, is in the Limited Testing phase of release and might not be available yet in your environment. <br/>Also, [!BADGE B2B Edition]{type=Informative} functionalities and documentation of [!BADGE B2B Edition]{type=Informative} functionalities are subject to change and no legal obligations can be derived from it.<br/>This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md). 
 >
 
 

@@ -211,7 +211,7 @@ It depends on your use case, so work with your Adobe Account team. Your current 
 
 ## 9. Estimate connection size {#estimate-size}
 
-See [Estimate and manage usage](/help/technotes/estimate-usage.md).
+See [Connections usage](/help/connections/manage-connections.md#usage).
 
 ## 10. Regarding usage overages {#overage}
 

@@ -1,5 +1,5 @@
 ---
-description: The Venn visualization lets you drag in up to 3 filters (from Components) and one metric to build a Venn diagram.
+description: The Venn visualization lets you drag in up to 3 segments (from Components) and one metric to build a Venn diagram.
 title: Venn
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
@@ -24,11 +24,11 @@ _This article documents the Venn visualization in_ ![CustomerJourneyAnalytics](/
 >[!ENDSHADEBOX]
 
 
-The ![Type](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** visualization lets you drag in up to 3 filters and one metric (from the Components panel) to build a Venn diagram.
+The ![Type](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** visualization lets you drag in up to 3 segments and one metric (from the Components panel) to build a Venn diagram.
 
- ![Venn visualization that includes three filters.](assets/venn.png)
+ ![Venn visualization that includes three segments.](assets/venn.png)
 
-You can hover over the filters to gain more insight into percentages, and more.
+You can hover over the segments to gain more insight into percentages, and more.
 
 To generate a [!UICONTROL Freeform table] from the [!UICONTROL Venn] visualization, select the colored ![StatusOrange](/help/assets/icons/StatusOrange.svg) next to the **[!UICONTROL Venn]** header and select **[!UICONTROL Show data source]**. You will see a **[!UICONTROL Venn Data]** Freeform table with the data used to create the [!UICONTROL Venn] visualization.
 

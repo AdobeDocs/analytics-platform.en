@@ -50,7 +50,20 @@ Some of the features and their associated value for the limit depend on the Cust
 
 {style="table-layout:auto"}
 
+
 <!--
+
+Add this to the table above, change - for pipe : (End of April, 2025 when project commenting is GA)
+
+Comments per project - 1,000 - System-enforced Guardrail - Maximum number of comments per project. 
+Replies per comment - 100 - System-enforced Guardrail - Maximum number of replies per comment. 
+Images per comment - 5 - System-enforced Guardrail - Maximum number of images per comment. 
+Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB 
+
+-->
+
+<!--
+
 ## Attribution AI
 
 | Name |  Value | Description | PD? |
@@ -59,7 +72,6 @@ Some of the features and their associated value for the limit depend on the Cust
 | Region based iterations | 10 | Maximum number of region-based iterations of each Attribution AI model. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
 | Export Insights batches | 12 | Maximum number of export batches times the number of authorized Attribution AI Insights per year. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
 
-{style="table-layout:auto"}
 -->
 
 ## Audiences

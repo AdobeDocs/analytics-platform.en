@@ -29,16 +29,17 @@ The configuration of Content Analytics consists of the following steps:
 Before you configure Content Analytics, ensure that the following prerequisites are met:
 
 * You have allow-listed the User Agent and IP address for the featurization service that is used in Content Analytics. The User Agent string to configure is: <code>AdobeFeaturization/1.0</code>.
-* If you have implemented the [Web SDK using Javascript](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library){target="_blank"} for regular behavioral data collection, ensure you are using the default name <code>alloy</code> for the Javascript library.
+* If you have implemented the [Web SDK using JavaScript](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library){target="_blank"} for regular behavioral data collection, ensure you are using the default name <code>alloy</code> for the JavaScript library.
 * You have a Customer Journey Analytics Product Administrator role, with the additional permissions to manage connections and to manage data views. 
-* You must have [permissions for data collection](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"}. These permission consist of:
+* If you consider to collect Content Analytics experiences, ensure you setup and update [Content Analytics versioning](manual.md#versioning) based on changes on your web pages.
+* You must have [permissions for data collection](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"}: 
   * [Experience Platform permissions](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
   * [Experience Platform Data Collection permissions](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank" }
 * You have carefully considered the following important configuration options:
 
   * Your site is suited for experience reporting. Proper experience reporting is only possible when the following conditions are met:
      * The pages on the site must be reproducible using the page URL.
-     * The text content seen by any given user can be reproduced using the page URL and does not depends on cookies or other personalization mechanisms.
+     * The text content seen by any given user can be reproduced using the page URL and does not depend on cookies or other personalization mechanisms.
   * You have a clear understanding for which pages you want to capture content engagement analysis and insights.
   * You have a clear understanding for which (type of) assets you want to capture content engagement analysis and insights.
 

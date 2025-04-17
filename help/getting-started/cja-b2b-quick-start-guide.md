@@ -34,6 +34,10 @@ To implement Customer Journey Analytics B2B Edition, the following prerequisites
 | **Step 3: Create data views** | A data view is a *filtered* view of the data. You can create different data views for the same connection, with different settings for visit timeout, attribution, and more. You can create multiple data views for a single dataset. You have additional options when you configure a data view when you have the B2B Edition.<br>See [Create a data view](/help/data-views/create-dataview.md). |
 | **Step 4: Report on your cross-channel data in Workspace** | After you have created connections and data views, analyze the B2B data you have brought in using the power and flexibility of Analysis Workspace.<br>See [Perform basic analysis](/help/analysis-workspace/perform-basic-analysis.md) and [Perform advanced analysis](/help/analysis-workspace/perform-adv-analysis.md). |
 
+<!--
+
 ## Use Case
 
 The [B2B Use Case ](../data-ingestion/data-ingestion.md) document provides an example use case on how to implement Customer  Journey Analytics B2B Edition.
+
+-->

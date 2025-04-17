@@ -14,7 +14,7 @@ For a list of all functions, refer to [Basic functions](/help/components/calc-me
 
 >[!NOTE]
 >
->When you include functions in the Definition of the calculated metrics builder, always apply the function before dragging in metrics or filters.
+>When you include functions in the Definition of the calculated metrics builder, always apply the function before dragging in metrics or segments.
 >
 
 
