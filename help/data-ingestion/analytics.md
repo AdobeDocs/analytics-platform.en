@@ -162,7 +162,7 @@ To create your data view:
 
     Leave the settings as they are and select **[!UICONTROL Save and finish]**.
 
-See [Data views overview](../data-views/data-views.md) for more information on how to create and edit a data view, what components are available for you to use in your data view and how to use filter and sessions settings.
+See [Data views overview](../data-views/data-views.md) for more information on how to create and edit a data view, what components are available for you to use in your data view and how to use segment and sessions settings.
 
 
 ## Set up a project

@@ -50,9 +50,9 @@ You use the [Adobe Content Analytics extension](https://experienceleague.adobe.c
 
   You can enable or disable experiences and edit the combinations of regular expression and query parameters to determine how content is rendered on your website.
 
-* [Event filtering](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering){target="_blank"}
+* [Event segmenting](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
-  You can edit regular expressions to modify how you filter pages and assets.
+  You can edit regular expressions to modify how you segment pages and assets.
 
 
 After you make changes in the Adobe Content Analytics extension, ensure your use [publishing flow](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} to start the collection of data based on the changes made. 
