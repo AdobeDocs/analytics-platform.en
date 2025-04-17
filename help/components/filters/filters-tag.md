@@ -11,11 +11,11 @@ In the [Filter manager](manage-segments.md), you can use tags to organize segmen
 
 To tag one or more segments:
 
-1. In the [Filter manager](manage-segments.md), select one or more of the segments you want to tag.
+1. In the [Segment manager](manage-filters.md), select one or more of the segments you want to tag.
 1. From the action bar, select ![Labels](/help/assets/icons/Labels.svg) **[!UICONTROL Tag]**.
-1. In the **[!UICONTROL Tag Filters]** dialog:
+1. In the **[!UICONTROL Tag Segments]** dialog:
    
-   ![Tag Filters dialog](assets/tag-segment-dialog.png)
+   ![Tag Segments dialog](assets/tag-segment-dialog.png)
 
    1. (optionally) use ![Search](/help/assets/icons/Search.svg) to search for and limit the list of tags.
 
@@ -26,7 +26,7 @@ To tag one or more segments:
 
 1. Select **[!UICONTROL Save]** to save the tags for the segment. Select **[!UICONTROL Cancel]** to cancel.
 
-Once saved, the tags are listed in the [!UICONTROL Tag] field for the selected segments in the [Filter builder](segment-builder.md). 
+Once saved, the tags are listed in the [!UICONTROL Tag] field for the selected segments in the [Segment builder](filter-builder.md). 
 
 
 ## Suggestions
