@@ -20,7 +20,7 @@ The following definitions are used in the context of this article:
 * **Experience**: An experience is defined as the text content on a whole web page. For data collection, Content Analytics records the Experience ID which is based on the page url. Later, the text on the page is captured via the retrieval service.
 * **Experience ID**: A unique combination of relevant URL (base URL plus any parameters that drive content on the page) and [experience version](manual.md#versioning).
   * You specify, as part of the [configuration](configuration.md), which parameters are relevant for any given full URL. 
-  * You can define the [version identifier](manual.md#versioning) that is used.
+  * You define a [version identifier](manual.md#versioning) to use, so you properly collect changes to your experiences.
 * **Asset**: An image. Content Analytics records the asset URL.
 * **Asset ID**: The URL of the asset.
 * **Relevant URL**: The base URL plus any parameters that drive content on the page.
@@ -50,7 +50,7 @@ A Content Analytics event consists of:
 Content Analytics events are collected as a sequence of:
 
 1. [A recorded view or click](#recorded-view-or-click).
-1. [A regular or specific (behaviorial) event](#regular-or-specific-behaviorial-event). 
+1. [A regular or specific (behavioral) event](#regular-or-specific-behaviorial-event). 
 
 Content Analytics does collect data this way to reflect that sequence, instead of collecting a view or click separately from collecting the event immediately following that view or click. This way of collecting content analytics data also reduces the amount of data collected.
 
@@ -65,7 +65,7 @@ An asset view is recorded when:
 An asset click is recorded when:
 
 * The asset has been viewed. 
-* The asset has not been excluded per Content Analytics  extension configuration.
+* The asset has not been excluded per Content Analytics extension configuration.
 * A click directly on the asset, which is a link, that leads to another page.
 
 An experience view is recorded when:
@@ -77,9 +77,9 @@ An experience click is recorded when:
 * Any click occurs on a link on the page for which experiences are enabled.
 
 
-### Regular or specific (behaviorial) event
+### Regular or specific (behavioral) event
 
-Triggers to fire a regular or specific (behaviorial) event in the context of Content Analytics are:
+Triggers to fire a regular or specific (behavioral) event in the context of Content Analytics are:
 
 * Web SDK or AppMeasurements sends an event.
 * Visibility changes to hidden, for example:
