@@ -46,7 +46,7 @@ Repeat the steps above for the international version of your calculated metric.
  
    Your segment should look like.
 
-   ![Filter Germany](assets/segment-not-germany.png)
+   ![Filter Germany](assets/filter-not-germany.png)
 
 1. Back in the Calculated metric builder, use the segment to update the calculated metric.
 
