@@ -514,7 +514,7 @@ Due to the underlying nature of how Customer Journey Analytics works, the only d
 
 #### Conditional metrics
 
-You can embed an `IF` or `CASE` clause in the `SUM` or `COUNT` functions to add additional filtering that is specific to a selected metric. Adding these clauses is similar to applying a filter to a metric column in a Workspace report table.
+You can embed an `IF` or `CASE` clause in the `SUM` or `COUNT` functions to add additional segmenting that is specific to a selected metric. Adding these clauses is similar to applying a segment to a metric column in a Workspace report table.
 
 Examples:
 
@@ -551,26 +551,26 @@ The `timestamp` is optional and if no full range is provided, defaults are used:
 * If only a max is provided (`timestamp < X` or `timestamp <= X`), the range is from X minus 30 days to X. 
 * If nothing is provided, the range is from now minus 30 days to now.
 
-The timestamp range is converted to a date range global filter in the RankedRequest.
+The timestamp range is converted to a date range global segment in the RankedRequest.
 The timestamp field can also be used in date/time functions to parse or truncate the event timestamp.
 
 #### Date range
 
-The `daterange` special column works similar to `timestamp`; however the filtering is limited to full days. The `daterange` is also optional and has the same range defaults as `timestamp`.
+The `daterange` special column works similar to `timestamp`; however the segmenting is limited to full days. The `daterange` is also optional and has the same range defaults as `timestamp`.
 The `daterange` field can also be used in date/time functions to parse or truncate the event date.
 
-The `daterangeName` special column can be used to filter your query using a named date range like `Last Quarter`.
+The `daterangeName` special column can be used to segment your query using a named date range like `Last Quarter`.
 
 >[!NOTE]
 >
 >Power BI is not supporting `daterange` metrics that are less than a day (hour, 30 minute, 5 minute, etc.).
 >
 
-#### Filter ID
+#### Segment ID
 
-The `filterId` special column is optional and is used to apply an externally defined filter to the query. Applying an externally defined filter to a query is similar to dragging a filter on a panel in Workspace. Multiple filter IDs can be used by `AND`-ing them.
+The `filterId` special column is optional and is used to apply an externally defined segment to the query. Applying an externally defined segment to a query is similar to dragging a segment on a panel in Workspace. Multiple segment IDs can be used by `AND`-ing them.
 
-Along with `filterId`, you can use `filterName` to use a filter's name instead of ID.
+Along with `filterId`, you can use `filterName` to use a segment's name instead of ID.
 
 ### Where clause
 
@@ -578,11 +578,11 @@ The `WHERE` clause is handled in three steps:
 
 1. Find the date range from the `timestamp`, `daterange`, or `daterangeName` special fields.
   
-1. Find any externally defined `filterId`s or `filterName`s to include in the filtering.
+1. Find any externally defined `filterId`s or `filterName`s to include in the segment.
 
-1. Turn the remaining expressions into ad-hoc filters.
+1. Turn the remaining expressions into ad-hoc segments.
 
-The handling is done by parsing the first level of `AND`s in the `WHERE` clause. Each top-level `AND`-ed expression must match one of the above. Anything deeper than the first level of `AND`s, or, if the `WHERE` clause uses `OR`s at the top level, is handled as an ad-hoc filter.
+The handling is done by parsing the first level of `AND`s in the `WHERE` clause. Each top-level `AND`-ed expression must match one of the above. Anything deeper than the first level of `AND`s, or, if the `WHERE` clause uses `OR`s at the top level, is handled as an ad-hoc segment.
 
 ### Sorting order
 

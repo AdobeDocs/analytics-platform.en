@@ -1,12 +1,12 @@
 ---
-description: Sequential filters are filters that use the THEN operator to define the sequence of filter conditions.
-title: Sequential filters
+description: Sequential segments are segments that use the THEN operator to define the sequence of segment conditions.
+title: Sequential segments
 feature: Filters
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
 ---
-# Sequential filters
+# Sequential segments
 
-You create sequential filters using the [!UICONTROL Then] logical operator between components, containers and components, or containers. The [!UICONTROL Then] logical operator implies that one filter condition occurs, followed by another. 
+You create sequential segments using the [!UICONTROL Then] logical operator between components, containers and components, or containers. The [!UICONTROL Then] logical operator implies that one segment condition occurs, followed by another. 
 
 
 
@@ -18,48 +18,48 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Sequential segme
 
 >[!ENDSHADEBOX]
 
-A sequential filter has some [basic functionality](#basics) and additional options that you can configure to add more complexity to the sequential filter:
+A sequential segment has some [basic functionality](#basics) and additional options that you can configure to add more complexity to the sequential segment:
 
-![Sequential filter](assets/sequential-filter.gif)
+![Sequential segment](assets/sequential-filter.gif)
 
-* [After and within](#after-and-within) constraints for the Then logic in the sequence filter definition:
+* [After and within](#after-and-within) constraints for the Then logic in the sequence segment definition:
 
-* What data to [include](#include) as part of the overall sequence for the filter definition. Or for a sequence defined as part of a container. By default all matching data are considered. That data is identified by ![UserGroup](/help/assets/icons/UserGroup.svg) [!UICONTROL Include Everyone].
+* What data to [include](#include) as part of the overall sequence for the segment definition. Or for a sequence defined as part of a container. By default all matching data are considered. That data is identified by ![UserGroup](/help/assets/icons/UserGroup.svg) [!UICONTROL Include Everyone].
   
   * Select ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** to consider only data before the sequence.
   * Select ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** to consider only data after the sequence.
 
-* What data to [exclude](#exclude) as part of the sequential filter definition.
+* What data to [exclude](#exclude) as part of the sequential segment definition.
 
-* How to [logically group](#logic-group) conditions in your sequential filter definition.
+* How to [logically group](#logic-group) conditions in your sequential segment definition.
 
 ## Basics
 
 
 
-The basics of building a sequential filter are no different than building a regular filter using the [Filter builder](filter-builder.md). You can use the [Definition builder](filter-builder.md#definition-builder) to construct your filter definition. In that construction, you use components, containers, operators and logic. A regular filter becomes a sequential filter automatically as soon as you select the **[!UICONTROL Then]** operator in the main definition or in any of the containers you use within the [Definition builder](filter-builder.md#definition-builder).
+The basics of building a sequential segment are no different than building a regular segment using the [Segment builder](filter-builder.md). You can use the [Definition builder](filter-builder.md#definition-builder) to construct your segment definition. In that construction, you use components, containers, operators and logic. A regular segment becomes a sequential filter as soon as you select the **[!UICONTROL Then]** operator in the main definition or in any of the containers you use within the [Definition builder](filter-builder.md#definition-builder).
 
 ### Examples
 
-The examples below illustrate how you use sequential filters in various use cases.
+The examples below illustrate how you use sequential segments in various use cases.
 
 #### Simple sequence
 
-Identify persons who viewed a page and then viewed another page. The event-level data is filtered using this sequence. Irrespective of previous, past, or interim person sessions, or the time or number of page views occurring between the sessions.
+Identify persons who viewed a page and then viewed another page. The event-level data is segmented using this sequence. Irrespective of previous, past, or interim person sessions, or the time or number of page views occurring between the sessions.
 
-![Sequential filter include everyone](assets/sequence-include-everyone.png)
+![Sequential segment include everyone](assets/sequence-include-everyone.png)
 
 #### Sequence across sessions
 
 Identify persons who viewed a page in one session, then viewed another page in another session. To differentiate between sessions, use containers to build the sequence and define ![Visit](/help/assets/icons/Visit.svg) **[!UICONTROL Session]** level for each container.
 
-![Sequence filter across sessions](assets/sequence-filter-session.png)
+![Sequence segment across sessions](assets/sequence-filter-session.png)
 
 #### Mixed-level sequence
 
 Identify persons who view two pages across an undetermined number of sessions, and then view a third page in a separate session. Again, use containers to build the sequence and define ![Visit](/help/assets/icons/Visit.svg) **[!UICONTROL Session]** level on the container that defines the separate session.
 
-![Sequence filter with separate final session](assets/sequence-filter-final-session.png)
+![Sequential segment with separate final session](assets/sequence-filter-final-session.png)
 
 #### Aggregate sequence
 
@@ -93,9 +93,9 @@ The table below explains in more detail the time constraint operators.
 
 |  Operators | Description |
 |--- |--- |
-| **[!UICONTROL After]** |The [!UICONTROL After] operator is used to specify a minimum limit on the amount of time between two checkpoints. When setting the After values, the time limit begins when the filter is applied. For example, if the [!UICONTROL After] operator is set on a container to identify persons who visit page A, but don't return to visit page B until after one day, then that day will start when the visitor leaves page A.  For the visitor to be included in the filter, a minimum of 1440 minutes (one day) must transpire after leaving page A to view page B. |
-| **[!UICONTROL Within]** | The [!UICONTROL Within] operator is used to specify a maximum limit on the amount of time between two checkpoints. For example, if the [!UICONTROL Within] operator is set on a container to identify persons who visit page A, and then return to visit page B within one day, then that day begins when the person leaves page A. To be included in the filter, the person has a maximum time of one day before opening page B. For the person to be included in the filter, opening page B must occur within a maximum of 1440 minutes (one day) after leaving page A to view page B.|
-| **[!UICONTROL After but Within]** | When using both the [!UICONTROL After] and [!UICONTROL Within] operators, both operators start and end in parallel, not sequentially. <br/>For example, you build a filter with the container set to: `After = 1 Week(s) and Within = 2 Week(s)`.<br/>The conditions to identify visitors in this filter are met only between one and two weeks. Both conditions are enforced from the time of the first page view. |
+| **[!UICONTROL After]** |The [!UICONTROL After] operator is used to specify a minimum limit on the amount of time between two checkpoints. When setting the After values, the time limit begins when the segment is applied. For example, if the [!UICONTROL After] operator is set on a container to identify persons who visit page A, but don't return to visit page B until after one day, then that day will start when the visitor leaves page A.  For the visitor to be included in the segment, a minimum of 1440 minutes (one day) must transpire after leaving page A to view page B. |
+| **[!UICONTROL Within]** | The [!UICONTROL Within] operator is used to specify a maximum limit on the amount of time between two checkpoints. For example, if the [!UICONTROL Within] operator is set on a container to identify persons who visit page A, and then return to visit page B within one day, then that day begins when the person leaves page A. To be included in the segment, the person has a maximum time of one day before opening page B. For the person to be included in the segment, opening page B must occur within a maximum of 1440 minutes (one day) after leaving page A to view page B.|
+| **[!UICONTROL After but Within]** | When using both the [!UICONTROL After] and [!UICONTROL Within] operators, both operators start and end in parallel, not sequentially. <br/>For example, you build a segment with the container set to: `After = 1 Week(s) and Within = 2 Week(s)`.<br/>The conditions to identify visitors in this segment are met only between one and two weeks. Both conditions are enforced from the time of the first page view. |
 
 
 #### Examples
@@ -133,9 +133,9 @@ The ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** and ![Clock](/
 
 #### Example
 
-Below is an example of a sequential filter looking for persons that visited one product category page (Women | Shoes), followed by a checkout page (Checkout | Thank You) within one page.
+Below is an example of a sequential segment looking for persons that visited one product category page (Women | Shoes), followed by a checkout page (Checkout | Thank You) within one page.
 
-![Sequence filter within](assets/sequence-filter-within.png)
+![Sequence segment within](assets/sequence-filter-within.png)
 
 The following example sequences match or do not match:
 
@@ -146,15 +146,15 @@ The following example sequences match or do not match:
 
 ## [!UICONTROL Include]
 
-You can specify what data to include in your sequential filter or in a sequential container that is part of your sequential filter. 
+You can specify what data to include in your sequential segment or in a sequential container that is part of your sequential segment. 
 
 ### [!UICONTROL Everyone] {#include_everyone}
 
-To create a sequential filter that includes everyone, select the option ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Include Everyone]**.
+To create a sequential segment that includes everyone, select the option ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Include Everyone]**.
 
-The sequential filter identifies data that match the given pattern as a whole.  Below is an example of a basic sequence filter looking for persons that visited one product category page (Women | Shoes), followed by a checkout page (Checkout | Thank You). The filter is set to ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Include Everyone]**.
+The sequential segment identifies data that match the given pattern as a whole.  Below is an example of a basic sequence segment looking for persons that visited one product category page (Women | Shoes), followed by a checkout page (Checkout | Thank You). The segment is set to ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Include Everyone]**.
 
-![Sequential filter include everyone](assets/sequence-include-everyone.png)
+![Sequential segment include everyone](assets/sequence-include-everyone.png)
 
 The following example sequences match or do not match:
 
@@ -166,7 +166,7 @@ The following example sequences match or do not match:
 
 ### [!UICONTROL Only Before Sequence] and [!UICONTROL Only After Sequence]
 
-The options ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** and ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** filter the data to a subset before or after the specified sequence.
+The options ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** and ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** segment the data to a subset before or after the specified sequence.
 
 * ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **Only Before Sequence**: Includes all data before a sequence and the first data of the sequence itself. If a sequence appears multiple times as part of the data, [!UICONTROL Only Before Sequence] includes the first hit of the last occurrence of the sequence and all prior hits.
 * ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **Only After Sequence**: Includes all hits after a sequence and the last data of the sequence itself. If a sequence appears multiple times as part of the data, [!UICONTROL Only After Sequence] includes the last hit of the first occurrence of the sequence and all subsequent hits.
@@ -190,23 +190,23 @@ Consider a definition specifying a sequence of a component with criteria identif
 
 #### Example
 
-You have defined three version of a sequential filter for site sections. One with the option ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Include Everyone]**, one with the option ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]**, and one with the option ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]**. You named the three filters accordingly.
+You have defined three version of a sequential segment for site sections. One with the option ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Include Everyone]**, one with the option ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]**, and one with the option ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]**. You named the three segments accordingly.
 
-![Sequence filter](assets/site-section-filters.png)
+![Sequence segment](assets/site-section-filters.png)
 
-When reporting on site sections using these three filters, the example output in a freeform table looks like:
+When reporting on site sections using these three segments, the example output in a freeform table looks like:
 
-![Sequential filter report](assets/sequential-filter-freeform-table.png)
+![Sequential segment report](assets/sequential-filter-freeform-table.png)
 
 ## [!UICONTROL Exclude]
 
-Filter definitions include all data unless you specifically exclude ![User](/help/assets/icons/User.svg) [!UICONTROL Person], ![Visit](/help/assets/icons/Visit.svg) [!UICONTROL Session], or ![WebPage](/help/assets/icons/WebPage.svg) [!UICONTROL Event] data using **[!UICONTROL Exclude]**. 
+Segment definitions include all data unless you specifically exclude ![User](/help/assets/icons/User.svg) [!UICONTROL Person], ![Visit](/help/assets/icons/Visit.svg) [!UICONTROL Session], or ![WebPage](/help/assets/icons/WebPage.svg) [!UICONTROL Event] data using **[!UICONTROL Exclude]**. 
 
-[!UICONTROL Exclude] allows you to dismiss common data and create filters with more focus. Exclude also allows you to create filters excluding specific groups of persons. For example, to define a filter that specifies persons that placed orders and then excluding that group of persons to identify *non-purchasers*. A best practice is to create rules that use a broad definition rather than trying to use [!UICONTROL Exclude] to target specific persona that match specific include values.
+[!UICONTROL Exclude] allows you to dismiss common data and create segments with more focus. Exclude also allows you to create segments excluding specific groups of persons. For example, to define a segment that specifies persons that placed orders and then excluding that group of persons to identify *non-purchasers*. A best practice is to create rules that use a broad definition rather than trying to use [!UICONTROL Exclude] to target specific persona that match specific include values.
 
 Example of exclude definitions are:
 
-* **Exclude pages**. Use a filter definition to strip out a specific page (such as *Home Page*) from a report, create an Event rule where the page equals `Home Page`, and then exclude the rule. This definition automatically includes all pages except the *Home Page*.
+* **Exclude pages**. Use a segment definition to strip out a specific page (such as *Home Page*) from a report, create an Event rule where the page equals `Home Page`, and then exclude the rule. This definition automatically includes all pages except the *Home Page*.
 * **Exclude referring domains**. Use a definition that includes only referring domains from Google.com and excludes all others.
 * **Identify non-purchasers**. Identify when orders are greater than zero and then exclude the [!UICONTROL Person].
 
@@ -243,9 +243,9 @@ Identify persons who visited one page but never visited other pages. For example
 
 >[!NOTE]
 >
->A [!UICONTROL Logic Group] can only be defined in a sequential filter, meaning that the [!UICONTROL Then] operator is used within the container.
+>A [!UICONTROL Logic Group] can only be defined in a sequential segment, meaning that the [!UICONTROL Then] operator is used within the container.
 
-Logic Group enables you to group conditions into a single sequential filter checkpoint. As part of the sequence, the logic defined in the container identified as Logic Group is evaluated after any prior sequential checkpoint and before any following sequential checkpoint. 
+Logic Group enables you to group conditions into a single sequential segment checkpoint. As part of the sequence, the logic defined in the container identified as Logic Group is evaluated after any prior sequential checkpoint and before any following sequential checkpoint. 
 
 The conditions within the Logic Group itself may be met in any order. By contrast, non-sequential containers (event, session, person) do not require their conditions to be met within the overall sequence, producing possible unintuitive results if used with a Then operator.
 
@@ -254,7 +254,7 @@ The conditions within the Logic Group itself may be met in any order. By contras
 Some best practices to use Logic Group are:
 
 * To group sequential checkpoints. 
-* To simplify the construction of sequential filters.
+* To simplify the construction of sequential segments.
 
 ### Examples
 
@@ -264,11 +264,11 @@ Here are examples on how to use the Logic Group container.
 
 Identify persons that visited one page, then viewed each page out of another set of pages in any order. For example, persons that visited the Home page, then visited each of the Men page, the Women page, and the Kids page, irrespective of the order.
 
-You can build this filter without a [!UICONTROL Logic Group], but the construction is going to be complex and laborious. Specify every sequence of pages that the visitor could view. For clarity, only the first container is opened ![ChevronDown](/help/assets/icons/ChevronDown.svg) and the other containers are closed ![ChevronRight](/help/assets/icons/ChevronRight.svg). You can derive the contents of the other containers by the titles.
+You can build this segment without a [!UICONTROL Logic Group], but the construction is going to be complex and laborious. Specify every sequence of pages that the visitor could view. For clarity, only the first container is opened ![ChevronDown](/help/assets/icons/ChevronDown.svg) and the other containers are closed ![ChevronRight](/help/assets/icons/ChevronRight.svg). You can derive the contents of the other containers by the titles.
 
 ![Example not using a logic group](assets/logicgroup-example-notusing.png)
 
-You can use [!UICONTROL Logic Group] to simplify building this filter, as shown below. Ensure you select ![Group](/help/assets/icons/Group.svg) **[!UICONTROL Logic Group]** for the container.
+You can use [!UICONTROL Logic Group] to simplify building this segment, as shown below. Ensure you select ![Group](/help/assets/icons/Group.svg) **[!UICONTROL Logic Group]** for the container.
 
 ![Example not using a logic group](assets/logicgroup-example-using.png)
 
@@ -292,7 +292,7 @@ Identify persons that visited one page then explicitly did not visit any page of
 
 
 <!--
-An example of a complex sequential filter if you want to find the persons that 
+An example of a complex sequential segment if you want to find the persons that 
 
 | Session One | Session Two | Session Three |
 | --- | --- | --- |
@@ -305,4 +305,4 @@ An example of a complex sequential filter if you want to find the persons that
 As a final example, you want to identify persons that learned about a specific product page, without these persons ever touched by your Empower Your Move campaign. And in their first visit to your online store viewed the Home page but did not look further at any fitness (gear) products from the Men category. However, in their next session directly after that, they went to a product page and placed an online order without going through the Home page first.
 
 
-![Complex sequential filter example](assets/sequential-complex.png)
+![Complex sequential segment example](assets/sequential-complex.png)
