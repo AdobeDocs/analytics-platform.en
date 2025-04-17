@@ -7,7 +7,7 @@ role: User
 ---
 # Tag segments
 
-In the [Filter manager](manage-segments.md), you can use tags to organize segments. Administrators can tag all segments. Non administroators can tags only the segments they create or have been shared with them.
+In the [Segment manager](manage-filters.md), you can use tags to organize segments. Administrators can tag all segments. Non administroators can tags only the segments they create or have been shared with them.
 
 To tag one or more segments:
 
@@ -15,7 +15,7 @@ To tag one or more segments:
 1. From the action bar, select ![Labels](/help/assets/icons/Labels.svg) **[!UICONTROL Tag]**.
 1. In the **[!UICONTROL Tag Segments]** dialog:
    
-   ![Tag Segments dialog](assets/tag-segment-dialog.png)
+   ![Tag Segments dialog](assets/tag-filter-dialog.png)
 
    1. (optionally) use ![Search](/help/assets/icons/Search.svg) to search for and limit the list of tags.
 
