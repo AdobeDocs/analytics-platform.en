@@ -9,7 +9,7 @@ role: User
 ---
 # Break down dimensions in Workspace
 
-You can break down your data in unlimited ways for your specific needs; build queries using relevant metrics, dimensions, filters, time lines, and other analysis breakdown values.
+You can break down your data in unlimited ways for your specific needs; build queries using relevant metrics, dimensions, segments, time lines, and other analysis breakdown values.
 
 1. In a [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), from the context menu of one or more selected rows, select **[!UICONTROL Breakdown]** ![ChevronRight](/help/assets/icons/ChevronRight.svg).
 
@@ -17,7 +17,7 @@ You can break down your data in unlimited ways for your specific needs; build qu
 
 1. From the submenu select **[!UICONTROL Dimensions]**, **[!UICONTROL Metrics]**, **[!UICONTROL Filters]** or **[!UICONTROL Date ranges]** and then select an item.
 
-You can break down metrics by dimension items or audience filters across selected time periods. You can also drill down further to a more granular level.
+You can break down metrics by dimension items or audience segments across selected time periods. You can also drill down further to a more granular level.
 
    >[!NOTE]
    >
