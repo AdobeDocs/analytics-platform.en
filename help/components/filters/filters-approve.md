@@ -7,7 +7,7 @@ role: User
 ---
 # Approve segments
 
-In the [Segment manager](manage-segments.md), you can approve and unapprove segments. Only administrators can approve segments.
+In the [Segment manager](manage-filters.md), you can approve and unapprove segments. Only administrators can approve segments.
 
 To approve segments:
 
