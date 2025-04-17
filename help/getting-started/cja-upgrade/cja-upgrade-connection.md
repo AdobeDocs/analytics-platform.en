@@ -25,7 +25,7 @@ The following information explains how to create and configure a connection, as 
 
 ## Create and configure the connection {#create-connection}
 
-1. In Customer Journey Analytics, select **[!UICONTROL Connections]**, optionally from **[!UICONTROL Data Management]**, in the top menu.
+1. In Customer Journey Analytics, select **[!UICONTROL Connections]**, optionally from **[!UICONTROL Data management]**, in the top menu.
 1. Select **[!UICONTROL Create new connection]**.
 
     ![Untitled connection settings](assets/create-conn1.png)

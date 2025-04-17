@@ -103,7 +103,7 @@ Repeat this process for each dimension that contains data that you want to class
 
 To add the lookup dataset to your connection in Customer Journey Analytics:
 
-1. In Customer Journey Analytics,  select **[!UICONTROL Connections]**, optionally from **[!UICONTROL Data Management]**, in the top menu.
+1. In Customer Journey Analytics,  select **[!UICONTROL Connections]**, optionally from **[!UICONTROL Data management]**, in the top menu.
 
 1. Select ![More icon](assets/More.svg) next to the connection where you want to add the lookup dataset, then select **[!UICONTROL Edit]**.
 
