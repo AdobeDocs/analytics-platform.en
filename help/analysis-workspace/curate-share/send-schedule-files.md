@@ -17,4 +17,4 @@ You can curate, share and schedule projects as PDF or CSV files to recipients in
 | **[!UICONTROL Share with anyone]** |Grant read-only access to Analysis Workspace projects to people who don't have access to Customer Journey Analytics. [Learn more](/help/analysis-workspace/curate-share/share-projects.md)|
 | **[!UICONTROL Export file]** |Send a project as a CSV or PDF immediately to specified recipients. [Learn more](/help/analysis-workspace/export/t-schedule-report.md)|
 | **[!UICONTROL Schedule file export]** |Send a project as a CSV or PDF on a schedule to specified recipients. [Learn more](/help/analysis-workspace/export/t-schedule-report.md)|
-| **[!UICONTROL Curate project data]** |Limit the components (dimensions, metrics, filters, date ranges) available in a project. [Learn more](/help/analysis-workspace/curate-share/curate.md)|
+| **[!UICONTROL Curate project data]** |Limit the components (dimensions, metrics, segments, date ranges) available in a project. [Learn more](/help/analysis-workspace/curate-share/curate.md)|

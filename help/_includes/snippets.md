@@ -50,7 +50,7 @@ Available time comparison options include the previous period, 13 weeks prior, 5
 
 ## Video demonstration Adobe Analytics {#videoaa}
 
-*This video demonstrates the functionality using Adobe Analytics. However, the functionality is similarly available in Customer Journey Analytics. Be aware of the differences in terminology between Adobe Analytics and Customer Journey Analytics (for example segments versus filters, or visits versus sessions).*
+*This video demonstrates the functionality using Adobe Analytics. However, the functionality is similarly available in Customer Journey Analytics. Be aware of the differences in terminology between Adobe Analytics and Customer Journey Analytics (for example "visits" versus "sessions").*
 
 
 ## Filters panel {#filterspanel}
@@ -186,17 +186,17 @@ Use the following information to choose the visualization that best meets your n
 
 | Function | Journey canvas | Fallout | Flow |
 |---------|----------|---------|---------|
-| **Predefined sequence of pages** | Yes</br>Combines predefined and exploratory analysis. The eventual path is used when using predefined nodes on the path (visitors are counted as long as they eventually move from one predefined node to the other). The immediate (not eventual) next nodes can also be shown.  | Yes</br>The path can be an eventual path or can be constrained to the next touchpoint | No |
-| **Exploratory sequence of pages (ad hoc analysis)** | Yes</br>Combines predefined and exploratory analysis. The eventual path is used when using predefined nodes on the path (visitors are counted as long as they eventually move from one predefined node to the other). The immediate (not eventual) next nodes can also be shown. | Limited</br>Allows you to right-click and view immediate fallout in a Freeform table. | Yes</br>Exploratory analysis only. Always within one dimension instance between nodes. This means that each node shows the immediate (not eventual) next touchpoint along the path. |
-| **Shows where people left (fell out) and continued through (fell through)** | Yes</br>Shows for both predefined and exploratory journeys  | Yes</br>Shows predefined journeys  | Yes</br>Shows for exploratory journeys  |
+| **Predefined sequence of pages** | Yes</br>Combines predefined and exploratory analysis. The eventual path is used when using predefined nodes on the path (visitors are counted as long as they eventually move from one predefined node to the other). The immediate (not eventual) next nodes can also be shown by [showing the top nodes based on existing nodes](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#show-the-top-nodes-based-on-existing-nodes).  | Yes</br>The path can be an eventual path or can be constrained to the next touchpoint | No |
+| **Exploratory sequence of pages (ad hoc analysis)** | Yes</br>Combines predefined and exploratory analysis. The eventual path is used when using predefined nodes on the path (visitors are counted as long as they eventually move from one predefined node to the other). The immediate (not eventual) next nodes can also be shown by [showing the top nodes based on existing nodes](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#show-the-top-nodes-based-on-existing-nodes). | Limited</br>Allows you to right-click and view immediate fallout in a Freeform table. | Yes</br>Exploratory analysis only. Always within one dimension instance between nodes. This means that each node shows the immediate (not eventual) next touchpoint along the path. |
+| **Shows where people left (fell out) and continued through (fell through)** | Yes</br>Shows for both predefined and exploratory journeys.  | Yes</br>Shows predefined journeys  | Yes</br>Shows for exploratory journeys  |
 | **Linear journeys** | Yes | Yes | No |
 | **Non-linear journeys with multiple entry points and paths** | Yes | No | Yes |
-| **Primary metric** | Any metric, including calculated metrics | Only Session or Person | Only Occurrences (Path views) |
-| **Secondary metric** | Yes<p>Any metric, including calculated metrics</p> | No | No  |
+| **Primary metric** | Any metric, including calculated metrics. | Only Session or Person | Only Occurrences (Path views) |
+| **Secondary metric** | Yes<p>Any metric, including calculated metrics.</p> | No | No  |
 | **Component support in nodes or touchpoints** | Metrics, dimension items, filters, and date ranges.| Metrics, dimension items, filters, and date ranges. | Only dimension items (except for the starting and ending touchpoint)  |
 | **Compare filters** | No | Yes<p>Perform side-by-side comparisons of two different filters in the same report.</p> | No |
 | **Drag-and-drop component interaction** | Yes | Yes | No |
-| **Adobe Journey Optimizer journeys** | Yes</br>Open journeys from Journey Optimizer for deeper analysis and customization | No |  No |
+| **Adobe Journey Optimizer journeys** | Yes</br>Open journeys from Journey Optimizer for deeper analysis and customization. | No |  No |
 
 {style="table-layout:auto"}
 
@@ -229,7 +229,7 @@ Use the following information to choose the visualization that best meets your n
 
 >[!AVAILABILITY]
 >
->The functionality described in this article, and any other article or functionality badged with [!BADGE B2B Edition]{type=Informative}.  is in the Limited Testing phase of release and might not be available yet in your environment. <br/>Also, [!BADGE B2B Edition]{type=Informative} functionalities and documentation of [!BADGE B2B Edition]{type=Informative} functionalities are subject to change and no legal obligations can be derived from it.<br/>This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md). 
+>The functionality described in this article, and any other article or functionality badged with [!BADGE B2B Edition]{type=Informative}, is in the Limited Testing phase of release and might not be available yet in your environment. <br/>Also, [!BADGE B2B Edition]{type=Informative} functionalities and documentation of [!BADGE B2B Edition]{type=Informative} functionalities are subject to change and no legal obligations can be derived from it.<br/>This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md). 
 >
 
 

@@ -114,7 +114,6 @@ role: Admin
 >title="Average number of daily uses"
 >abstract="Select a range for the number of expected daily events for the entire connection."
 
-<!-- markdownlint-enable MD034 -->
 
 
 The connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with an assistive workflow. It provides detailed dataset selection, configuration, and review experience. And allows you to specify critical information like dataset type, size, schema, dataset id, batch status, backfill status, Person IDs, and much more, to reduce the risk of wrong connection configuration. Here is an overview of the capabilities:
@@ -148,7 +147,7 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 
 ## Create and configure the connection {#create-connection}
 
-1. In Customer Journey Analytics, select **[!UICONTROL Connections]** from the main menu.
+1. In Customer Journey Analytics, select **[!UICONTROL Connections]**, optionally from **[!UICONTROL Data management]**, in the top menu.
 1. Select **[!UICONTROL Create new connection]**.
 
 >[!BEGINTABS]
@@ -436,7 +435,6 @@ In the **[!UICONTROL Connections]** > **[!UICONTROL Untitled connection]** scree
 >title="Connection map"
 >abstract="The Connection map visualizes the relationships between event, person, account and relevant lookup datasets (like opportunities, campaign members, and more)."
 
-<!-- markdownlint-enable MD034 -->
 
 
 The workflow lets you add one or more Experience Platform datasets when you create a connection. 

@@ -7,7 +7,7 @@ exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
 ---
 # Use components in Analysis Workspace
 
-Components make up the actual data of any project in Analysis Workspace. Components consist of dimensions, metrics, filters, and date ranges. You can add components to a project by dragging them into visualizations or panels.
+Components make up the actual data of any project in Analysis Workspace. Components consist of dimensions, metrics, segments, and date ranges. You can add components to a project by dragging them into visualizations or panels.
 
 See the [Components overview](/help/components/overview.md) for more information on the types of components that you can add.
 
@@ -25,8 +25,8 @@ See the [Components overview](/help/components/overview.md) for more information
 
 1. Scroll to or search for the component that you want to add, then drag it to a panel or visualization within your project. 
 
-1. You can optionally drag a component to the filter drop zone in a panel header. This drag and drop defines the component as a filter and applies the filter to all the content within the panel.
-   For information about how you can use the filter drop zone on a panel to filter your panel, see [Drop zone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Panels overview](/help/analysis-workspace/c-panels/panels.md).
+1. You can optionally drag a component to the segment drop zone in a panel header. This drag and drop defines the component as a segment and applies the segment to all the content within the panel.
+   For information about how you can use the segment drop zone on a panel to segment your panel, see [Drop zone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Panels overview](/help/analysis-workspace/c-panels/panels.md).
 
 1. For more detailed information, see the following sections:
 
@@ -34,7 +34,7 @@ See the [Components overview](/help/components/overview.md) for more information
 
    * [Add metrics to a project](#add-metrics-to-a-project)
 
-   * [Add filters to a project](#add-filters-to-a-project)
+   * [Add segments to a project](#add-segments-to-a-project)
 
    * [Add date ranges to a project](#add-date-ranges-to-a-project)
 
@@ -50,7 +50,7 @@ See the [Components overview](/help/components/overview.md) for more information
 
    * Drag a dimension to a visualization (such as a freeform table) in Analysis Workspace.
    
-   * Drag one or more dimensions from the left panel onto the filter drop zone to create a quick filter, as described in [Add filters to a project](#add-filters-to-a-project).
+   * Drag one or more dimensions from the left panel onto the segment drop zone to create a quick segment, as described in [Add segments to a project](#add-filters-to-a-project).
 
 1. You can optionally break down dimensions and dimension items in Analysis Workspace with other components. For more information, see [Break down dimensions in Workspace](/help/components/dimensions/t-breakdown-fa.md).
 
@@ -87,17 +87,17 @@ For more information about metrics, see [Metrics](/help/components/apply-create-
 
 [Filters](/help/components/filters/filters-overview.md) allow you to identify subsets of persons, sessions or events based on characteristics or specific interactions.
 
-You can use filters in Analysis Workspace in any of the following ways:
+You can use segments in Analysis Workspace in any of the following ways:
 
-* Add filters to a panel
-  When you add filters to a panel, the filters apply to all content within the panel.
-  For information about how you can use the filter drop zone on a panel to filter your panel, see [Drop zone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Panels overview](/help/analysis-workspace/c-panels/panels.md).
+* Add segments to a panel
+  When you add segments to a panel, the segments apply to all content within the panel.
+  For information about how you can use the segment drop zone on a panel to segment your panel, see [Drop zone](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Panels overview](/help/analysis-workspace/c-panels/panels.md).
 
-* Add filters to a visualization
-  When you add filters to a column in a freeform table, the filters apply to all content within the table column. You can also add filters as part of a fallout visualization.
+* Add segments to a visualization
+  When you add segments to a column in a freeform table, the segments apply to all content within the table column. You can also add segments as part of a fallout visualization.
 
-* Use filters in components
-  Whe you define components like [calculated metrics](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [annotations](/help/components/annotations/create-annotations.md#annotation-builder), or even [filters](/help/components/filters/filter-builder.md) you can use filters as part of the definition.
+* Use segments in components
+  Whe you define components like [calculated metrics](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [annotations](/help/components/annotations/create-annotations.md#annotation-builder), or even [segments](/help/components/filters/filter-builder.md) you can use filters as part of the definition.
 
 
 ### Add date ranges to a project

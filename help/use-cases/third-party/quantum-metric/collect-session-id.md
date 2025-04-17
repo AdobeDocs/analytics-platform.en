@@ -42,7 +42,7 @@ Confirm that the datasets in your connection now have the Quantum Metric session
 Edit your existing data view to add the session ID as an available dimension in Customer Journey Analytics.
 
 1. Log in to [experience.adobe.com](https://experience.adobe.com).
-1. Navigate to Customer Journey Analytics, and select **[!UICONTROL Data views]** in the top menu.
+1. Navigate to Customer Journey Analytics, and select **[!UICONTROL Data views]**, optionally from **[!UICONTROL Data management]**, in the top menu.
 1. Select the desired existing data view.
 1. Locate the Quantum Metric session ID field list on the left, and drag it to the dimensions area in the center.
 1. In the right pane, set the [persistence](/help/data-views/component-settings/persistence.md) setting to 'Session'.

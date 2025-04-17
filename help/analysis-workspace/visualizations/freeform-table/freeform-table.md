@@ -40,7 +40,7 @@ The quickest way to build a table is to drop components directly into a blank pr
 
 ## Freeform table builder
 
-If you prefer to add several components to your table first, then render the data, you can select **[!UICONTROL Enable table builder]**. With the builder enabled, you can drag and drop dimensions, breakdowns, metrics and filters to build tables that answer more complex questions. Data updates once you select **[!UICONTROL Build]**.
+If you prefer to add several components to your table first, then render the data, you can select **[!UICONTROL Enable table builder]**. With the builder enabled, you can drag and drop dimensions, breakdowns, metrics and segments to build tables that answer more complex questions. Data updates once you select **[!UICONTROL Build]**.
 
 ![A Freeform Table Builder showing ](assets/table-builder.png)
 
@@ -50,7 +50,7 @@ You can interact with and customize a freeform table in a variety of ways:
 
 ### Filter and sort
 
-* You can [filter and sort](filter-and-sort.md) the data in a table.
+* You can [segment and sort](filter-and-sort.md) the data in a table.
 
 ### Rows
 
@@ -58,11 +58,11 @@ You can interact with and customize a freeform table in a variety of ways:
 * You can fit more rows into a single screen by adjusting the project's [view density](/help/analysis-workspace/build-workspace-project/view-density.md).
 * Each dimension row can show up to 400 rows, before pagination occurs. Select the number next to **[!UICONTROL Rows]** in the first column header, to show more rows on a page. Navigate to a different page using ![ChevronRight](/help/assets/icons/ChevronRight.svg) in the first column header.
 * You can break down rows by additional components. To break down many rows at once, select multiple rows and then drag the next component on top of the selected rows. Learn more about [breakdowns](/help/components/dimensions/t-breakdown-fa.md).
-* Rows can be [filtered](/help/components/filters/filters-overview.md) to show a reduced set of items. Additional settings are available under [Row settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md).
+* Rows can be [segmented](/help/components/filters/filters-overview.md) to show a reduced set of items. Additional settings are available under [Row settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md).
 
 ### Columns
 
-* Components can be stacked within columns to create filtered metrics, cross-tab analysis and more.
+* Components can be stacked within columns to create segmented metrics, cross-tab analysis and more.
 * Each column's view can be adjusted under the [column settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md).
 * Several actions are available through the [context menu](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu). The menu provides different actions depending on if you select the table header, rows, or columns.
 
