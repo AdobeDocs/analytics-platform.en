@@ -381,7 +381,7 @@ To use your sample data in Customer Journey Analytics, you create a connection t
 
 
 1. Select **[!UICONTROL Customer Journey Analytics]** from the &nbsp; ![App](/help/assets/icons/Apps.svg) &nbsp; app switcher.
-1. Select **[!UICONTROL Connections]** from the top menu.
+1. Select **[!UICONTROL Connections]**, optionally from **[!UICONTROL Data management]**, in the top menu.
 1. Select **[!UICONTROL Create new connection]**.
 1. In **[!UICONTROL Connections]** > **[!UICONTROL Untitled connection]**:
    1. Enter a **[!UICONTROL Connection name]**, for example `Example Connection Using Summary Data`.
@@ -422,7 +422,7 @@ The data from the datasets is added to Customer Journey Analytics, which can tak
 After a while, verify that data from your datasets is properly loaded in Customer Journey Analytics.
 
 1. Select **[!UICONTROL Customer Journey Analytics]** from the &nbsp; ![App](/help/assets/icons/Apps.svg) &nbsp; app switcher.
-1. Select **[!UICONTROL Connections]** from the top menu.
+1. Select **[!UICONTROL Connections]**, optionally from **[!UICONTROL Data management]**, in the top menu.
 1. Select your connection, for example **[!UICONTROL Example Connection Using Summary Data]**.
 1. Select an appropriate date range in the **[!UICONTROL Connection]** > **[!UICONTROL Example Connection Using Summary data]** details.
    1. Select ![Calendar](/help/assets/icons/Calendar.svg) and then select **[!UICONTROL Last 7 days]**.
@@ -437,7 +437,7 @@ In the list of **[!UICONTROL Datasets]**, the values in the **[!UICONTROL Record
 To ensure you can report on the correct data in Workspace, you want to create a data view containing the relevant metrics and dimensions.
 
 1. Select **[!UICONTROL Customer Journey Analytics]** from the &nbsp; ![App](/help/assets/icons/Apps.svg) &nbsp; app switcher.
-1. Select **[!UICONTROL Data views]** from the top menu.
+1. Select **[!UICONTROL Data views]**, optionally from **[!UICONTROL Data management]**, in the top menu.
 1. Select **[!UICONTROL Create new data view]**.
 1. In **[!UICONTROL Data views]**, go through the wizard screens to configure your data view.
    1. In the **[!UICONTROL Configure]** step of **[!UICONTROL Data views]**:

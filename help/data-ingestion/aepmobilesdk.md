@@ -431,7 +431,7 @@ A connection lets you integrate datasets from Adobe Experience Platform into Wor
 
 To create your connection:
 
-1. In the Customer Journey Analytics UI, select **[!UICONTROL Connections]** in the top navigation.
+1. In the Customer Journey Analytics UI, select **[!UICONTROL Connections]**, optionally from **[!UICONTROL Data management]**, in the top menu.
 
 2. Select **[!UICONTROL Create new connection]**.
 
@@ -477,7 +477,7 @@ A data view is a container specific to Customer Journey Analytics that lets you 
 
 To create your data view:
 
-1. In the Customer Journey Analytics UI, select **[!UICONTROL Data views]** in the top navigation.
+1. In the Customer Journey Analytics UI, select **[!UICONTROL Data views]**, optionally from **[!UICONTROL Data management]**, in the top menu.
 
 2. Select **[!UICONTROL Create new data view]**.
 
@@ -514,7 +514,7 @@ Analysis Workspace is a flexible browser tool that allows you to quickly build a
 
 To create your project:
 
-1. In the Customer Journey Analytics UI, select **[!UICONTROL Projects]** in the top navigation.
+1. In the Customer Journey Analytics UI, select **[!UICONTROL Projects]** in the top menu.
 
 2. Select **[!UICONTROL Projects]** in the left navigation.
 

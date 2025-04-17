@@ -25,7 +25,7 @@ Creating a data view involves either creating metrics and dimensions from schema
 
 To create a data view:
 
-1. Log in to [Customer Journey Analytics](https://analytics.adobe.com) and go to the **[!UICONTROL Data views]** tab.
+1. Log in to [Customer Journey Analytics](https://analytics.adobe.com) and select **[!UICONTROL Data views]**, optionally from **[!UICONTROL Data management]**, in the top menu.
 
 1. Select **[!UICONTROL Create new data view]**. Alternatively, you can select an existing data view from the list of data views to edit it.
 

@@ -20,7 +20,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create or edit a
 
 To create or edit a data view:
 
-1. Log in to [Customer Journey Analytics](https://analytics.adobe.com) and go to the **[!UICONTROL Data views]** tab.
+1. Log in to [Customer Journey Analytics](https://analytics.adobe.com) and select **[!UICONTROL Data views]**, optionally from **[!UICONTROL Data management]**, in the top menu.
 1. To create a data view, select **[!UICONTROL Create new data view]**. Alternatively, you can select an existing data view from the list of data views to edit it.
 
 
