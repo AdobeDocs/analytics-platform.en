@@ -59,10 +59,15 @@ Content Analytics uses web image view data collected in event datasets in Experi
 >If you have licensed the Privacy and Security Shield add-on, be aware that (any data generated from) experiences and assets, subject to Content Analytics, are not covered by DULE labeling or Customer Managed Keys.
 >
 
+>[!NOTE]
+>
+>Content Analytics [sends additional events](config/datacollection.md#content-analytics-event) that most likely affect any bounce rate definition that is based on the number of events in a session or a page. 
+>
 
 >[!MORELIKETHIS]
 >
 >[Content Analytics reporting](report/report.md)
 >[Configure Content Analytics](config/configuration.md)
+>[Calculating bounces and bounce rate in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 
