@@ -63,11 +63,11 @@ The following visualizations can be used to gain insights from your stitched dat
 
 This visualization helps you understand how well CCA stitches data together.
 
-1. Create two filters. The variable used in these two filters is the same variable mentioned above that reflects the source of data of each event. See [Create a filter](/help/components/filters/create-filters.md) for more information.
+1. Create two segments. The variable used in these two segments is the same variable mentioned above that reflects the source of data of each event. See [Create a segment](/help/components/filters/create-filters.md) for more information.
    * Person container where Dataset ID equals your web data
    * Person container where Dataset ID equals your call center data
 2. In Analysis Workspace, drag a [Venn](/help/analysis-workspace/visualizations/venn.md) visualization onto the workspace canvas.
-3. Drag the two newly created filters to the **[!UICONTROL Add Filter]** area, and the People metric to the **[!UICONTROL Add Metric]** area.
+3. Drag the two newly created segments to the **[!UICONTROL Add Filter]** area, and the People metric to the **[!UICONTROL Add Metric]** area.
 
 The resulting Venn visualization shows the number of people in your dataset that contain both web and call center data. The larger the overlap, the more people that were successfully stitched. The areas that don't overlap represent people that reside exclusively in one dataset or the other.
 
@@ -87,8 +87,8 @@ The resulting report shows the top pages that drive calls to your call center. <
 You can further increase insight with this table by splitting Calls by reason or category.
 
 1. Click the right chevron under the 'Call Reason' dimension in the list of components. This action reveals individual dimension values.
-2. Drag the desired dimension value(s) under the 'Calls' metric, which filters that metric by each respective call reason.
-3. Repeat for each call reason that you would like to drill into. Use the 'All sessions' filter to view the aggregate total.
+2. Drag the desired dimension value(s) under the 'Calls' metric, which segments that metric by each respective call reason.
+3. Repeat for each call reason that you would like to drill into. Use the 'All sessions' segment to view the aggregate total.
 
 <!-- screenshot -->
 
@@ -133,10 +133,10 @@ step 2:
 
 Slide 4
 
-Create a bunch of filters - facets to their business. Filters were used because they didn't have all of these in the same dimension, so they could create everything in this report as a single dimension (really filters)
+Create a bunch of segments - facets to their business. Segments were used because they didn't have all of these in the same dimension, so they could create everything in this report as a single dimension (really segments)
 
 wanted to understand when someone interacts with a facet, whats the highest percentage of people that abandon that channel to call them. not from volume perspective, but percentage perspective.
 
-use sequential filters, but you lose the ability to use attribution IQ
+use sequential segments, but you lose the ability to use attribution IQ
 
 ## What to do when you've found insight -->

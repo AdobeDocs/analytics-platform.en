@@ -28,9 +28,9 @@ The following use cases are documented:
   * [Single dimension ranked](#single-dimension-ranked)
   * [Multiple dimension ranked](#multiple-dimension-ranked)
   * [Count distinct dimension values](#count-distinct-dimension-values)
-  * [Use date range names to filter](#use-date-range-names-to-filter)
-  * [Use filter names to filter](#use-filter-names-to-filter)
-  * [Use dimension values to filter](#use-dimension-values-to-filter)
+  * [Use date range names to segment](#use-date-range-names-to-segment)
+  * [Use segment names to segment](#use-segment-names-to-segment)
+  * [Use dimension values to segment](#use-dimension-values-to-segment)
   * [Sort](#sort)
   * [Limits](#limits)
 

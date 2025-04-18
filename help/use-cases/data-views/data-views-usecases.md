@@ -33,7 +33,7 @@ For example, when creating a data view, you could create an [!UICONTROL Orders] 
 1. Open the **[!UICONTROL Include/Exclude Values]** section and specify the following:
    1. Enable **[!UICONTROL Set include exclude values]**.
    1. Select **[!UICONTROL If all criteria are met]** from **[!UICONTROL Match]**.
-   1. Specify `confirmation`. This text for the page_title indicates that this page is related to placing an order. After reviewing all the page titles where those criteria are met, a `1` will be counted for each instance. The result is a new metric (not a calculated metric.) A metric that has included/excluded values can be used everywhere any other metric can be used. It works with Attribution IQ, filters, and everywhere else you can use standard metrics.
+   1. Specify `confirmation`. This text for the page_title indicates that this page is related to placing an order. After reviewing all the page titles where those criteria are met, a `1` will be counted for each instance. The result is a new metric (not a calculated metric.) A metric that has included/excluded values can be used everywhere any other metric can be used. It works with Attribution IQ, segments, and everywhere else you can use standard metrics.
 
    ![Dimension to metric](../assets/string-to-metric.gif){width=100%}
 1. You can further specify an attribution model for this metric, such as [!UICONTROL Last Touch], with a [!UICONTROL Lookback window] of [!UICONTROL Session].
