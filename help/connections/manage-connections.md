@@ -131,7 +131,7 @@ See [Create or edit a data view](/help/data-views/create-dataview.md) for more i
 ### Use a Journey Optimizer connection in Customer Journey Analytics {#use-connection-in-cja}
 
 >[!IMPORTANT]
->When you enable a Journey Optimizer connection for use with Customer Journey Analytics as described in this section, you incur Customer Journey Analytics costs for each row of data in the connection. Select the **[!UICONTROL Use in CJA]** option on the connection only if you are comfortable with these additional costs. 
+>When you enable a Journey Optimizer connection for use with Customer Journey Analytics as described in this section, each row of data within the connection counts toward your billable data allotment each month for Customer Journey Analytics and appears within the Connections Usage UI. Select the **[!UICONTROL Use in CJA]** option on the connection only if you are comfortable with these additional costs. 
 >
 
 You can use a Journey Optimizer connection in Customer Journey Analytics to bring the following additional value to your connection:
