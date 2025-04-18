@@ -45,7 +45,7 @@ To create a data view:
 
    For detailed information about the options available when adding components to a data view, see [Components](/help/data-views/create-dataview.md#components) in [Create or edit a data view](/help/data-views/create-dataview.md).
 
-1. Select the [!UICONTROL **Settings**] tab. From here, you can configure filters to apply to your entire data view and configure session timeout and metrics.
+1. Select the [!UICONTROL **Settings**] tab. From here, you can configure segments to apply to your entire data view and configure session timeout and metrics.
 
    For detailed information about the options available when configuring settings for a data view, see [Settings](/help/data-views/create-dataview.md#settings) in [Create or edit a data view](/help/data-views/create-dataview.md).
 

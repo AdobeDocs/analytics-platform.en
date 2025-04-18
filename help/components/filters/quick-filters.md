@@ -51,11 +51,11 @@ The results of the quick segments you create in a panel are applied (using AND l
 To manage a quick segment, hover over the specific **[!UICONTROL Quick segment]**.
 
 * Select ![Edit](/help/assets/icons/Edit.svg) to open the [Quick segment builder](#quick-filter-builder) and edit the quick segment.
-* Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to open a popup. The popup displays information about the filter. You can select **[!UICONTROL Make available to all projects and add to your component list]** To add the segment to the ![Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]** component list in the component panel. You see a **[!UICONTROL Save quick segment]** dialog, prompting you to specify a name for the segment. Select **[!UICONTROL Save]** to continue. Your [!UICONTROL Quick segment] turns into a **[!UICONTROL Segment]**. You cannot edit the segment any more using the [Quick segment builder](#quick-filter-builder). Instead, you have to edit the segment as a regular segment, using the [Segment builder](filter-builder.md).
+* Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to open a popup. The popup displays information about the segment. You can select **[!UICONTROL Make available to all projects and add to your component list]** To add the segment to the ![Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]** component list in the component panel. You see a **[!UICONTROL Save quick segment]** dialog, prompting you to specify a name for the segment. Select **[!UICONTROL Save]** to continue. Your [!UICONTROL Quick segment] turns into a **[!UICONTROL Segment]**. You cannot edit the segment any more using the [Quick segment builder](#quick-filter-builder). Instead, you have to edit the segment as a regular segment, using the [Segment builder](filter-builder.md).
 
 ## Quick segment builder
 
-See below for an example of the Quick segment builder. In the example, the builder is opened for a quick filter titled `Call Reason = Order Change AND Online Orders is greater than or equal 1`. Both quick filters at the top do apply to the [!UICONTROL Average Order Value Dashboard] panel and all visualizations within, such as the [!UICONTROL Average Order Value Per Country] freeform table.
+See below for an example of the Quick segment builder. In the example, the builder is opened for a quick segment titled `Call Reason = Order Change AND Online Orders is greater than or equal 1`. Both quick segments at the top do apply to the [!UICONTROL Average Order Value Dashboard] panel and all visualizations within, such as the [!UICONTROL Average Order Value Per Country] freeform table.
 
 ![Quick segment builder](assets/quick-filter-builder.png)
 
