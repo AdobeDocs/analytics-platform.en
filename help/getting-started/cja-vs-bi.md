@@ -50,7 +50,7 @@ Customer Journey Analytics uses a powerful proprietary architecture that distrib
 
 The reporting engine is fundamental for Customer Journey Analytics to allow you to progressively interact with and act on all the customer journey data within that reporting engine. Customer Journey Analytics comes with an extensive set of components that empower you to do this visually and through drag-and-drop. BI visualization tools allow you to explore within the boundaries of SQL-prepared data (as defined by IT). Customer Journey Analytics allows you to break down and slice-and-dice as much as you want, without having to go back to IT to build yet another SQL view.  
 
-"Progressively" is a key concept here: contrary to most visualizations in BI tools, the visual drag-and-drop UI in Customer Journey Analytics allows you to continuously break down your data for your specific needs: you can interactively build visual queries using relevant metrics, dimensions, filters (segments), calculations, time lines, annotations, and other analysis values.
+"Progressively" is a key concept here: contrary to most visualizations in BI tools, the visual drag-and-drop UI in Customer Journey Analytics allows you to continuously break down your data for your specific needs: you can interactively build visual queries using relevant metrics, dimensions, segments, calculations, time lines, annotations, and other analysis values.
 
 Built into these visualization components are smart capabilities like:
 

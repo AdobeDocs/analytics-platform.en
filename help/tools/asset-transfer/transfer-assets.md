@@ -7,9 +7,9 @@ exl-id: c5ed81ea-1d55-4193-9bb1-a2a93ebde91f
 ---
 # Transfer assets
 
-The Asset Transfer tool lets you transfer ownership of assets to other users. Assets can include components such as projects, filters, date ranges, calculated metrics, annotations, alerts and scheduled projects.
+The Asset Transfer tool lets you transfer ownership of assets to other users. Assets can include components such as projects, segments, date ranges, calculated metrics, annotations, alerts and scheduled projects.
 
-Assets are often tied to an individual owner and in some cases, such as filters and calculated metrics, cannot be edited or shared even by administrators. When users leave the organization or their role changes, it may become necessary to transfer ownership of these assets to other users to ensure continuity and appropriate access. 
+Assets are often tied to an individual owner and in some cases, such as segments and calculated metrics, cannot be edited or shared even by administrators. When users leave the organization or their role changes, it may become necessary to transfer ownership of these assets to other users to ensure continuity and appropriate access. 
 
 ## Permissions
 
@@ -45,7 +45,7 @@ Asset Transfer requires the Product Administrator permission for Customer Journe
 
     >[!NOTE]
     >
-    >    When transferring assets that reference other components (for example, projects that reference other filters and calculated metrics), components not owned by the current owner of the project will only be shared with the recipient. Ownership of all other components will be transferred to the recipient.
+    >    When transferring assets that reference other components (for example, projects that reference other segments and calculated metrics), components not owned by the current owner of the project will only be shared with the recipient. Ownership of all other components will be transferred to the recipient.
 
 1. To select _all_ assets in a folder, check the box next to **[!UICONTROL Name]** at the top of the table.
 

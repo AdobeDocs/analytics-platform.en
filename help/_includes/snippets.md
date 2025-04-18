@@ -53,7 +53,7 @@ Available time comparison options include the previous period, 13 weeks prior, 5
 *This video demonstrates the functionality using Adobe Analytics. However, the functionality is similarly available in Customer Journey Analytics. Be aware of the differences in terminology between Adobe Analytics and Customer Journey Analytics (for example "visits" versus "sessions").*
 
 
-## Filters panel {#filterspanel}
+## Segments panel {#filterspanel}
 
 1. Select ![Filter](/help/assets/icons/Filter.svg) to open the Filters panel. If you need more space for the Filters list, you can select ![Filter](/help/assets/icons/Filter.svg) once more to close the panel.
 1. Select filters from any of the available filter sections. 

@@ -147,7 +147,7 @@ The Search area also shows the filters applied from the Filter panel.
 * To remove a filter, select ![CrossSize75](/help/assets/icons/CrossSize75.svg) in the filter.
 * To remove all filters, select Clear all.
 
-If space is limited to display the individual filters, you see **[!UICONTROL Filtering by *x* filters]**. 
+If space is limited to display the individual filters, you see **[!UICONTROL Segmenting by *x* filters]**. 
 
 * To remove a filter:
   
@@ -236,7 +236,7 @@ Within a project, various icons are available in the left panel, and each repres
 
 * [Table of contents](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) ![toc icon](assets/toc-icon.png)
 
-Components (Dimensions, Metrics, Filters, Date Ranges) in the left panel relate to the active panel data view. The active panel is identified by the blue border that surrounds it, and the active data view is listed at the top of the component panel.
+Components (Dimensions, Metrics, Segments, Date Ranges) in the left panel relate to the active panel data view. The active panel is identified by the blue border that surrounds it, and the active data view is listed at the top of the component panel.
 
 ![The components relating to the active panel data view for Cross-Industry Demo Data data view.](assets/left-rail.png)
 

@@ -71,6 +71,6 @@ Each session ID is now a clickable link. See [Create hyperlinks in a freeform ta
 
 ## Step 5: View sessions from Customer Journey Analytics
 
-Once you've found an insteresting segment that you want to explore session replays, you can apply it to the panel that includes your session ID links and filter by segment. The table returns all sessions in that segment, and you can click any one of them to explore further in Quantum Metric. 
+Once you've found an insteresting segment that you want to explore session replays, you can apply it to the panel that includes your session ID links and  segment. The table returns all sessions in that segment, and you can click any one of them to explore further in Quantum Metric. 
 
 See [The enterprise guide to session replay](https://www.quantummetric.com/resources/ebook/the-enterprise-guide-to-session-replay) on Quantum Metric for more information. You can also contact your Quantum Metric customer support representative or submit a request through the [Quantum Metric Customer Request Portal](https://community.quantummetric.com/s/public-support-page).

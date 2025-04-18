@@ -33,11 +33,11 @@ One use case you might explore is: How many web page visits by leads did we have
 1. Open [Analytics Workspace](/help/analysis-workspace/home.md) and create a new project. 
    Customers with B2B/B2P CDP can conduct B2C-style analysis in Customer Journey Analytics. B2B objects are not yet available.
 
-1. Create a [filter](/help/components/filters/create-filters.md) for web page views as follows - Event Type = web.webpagedetails.pageViews : 
+1. Create a [segment](/help/components/filters/create-filters.md) for web page views as follows - Event Type = web.webpagedetails.pageViews : 
 
    ![Definition window showing Event and Event Type](../assets/marketo-filter.png)
 
-1. Into the Freeform table, pull in the filter you created - Web Page Views, then pull in the Month date range. This gives you Web page visits by leads each month:
+1. Pull in the segment you created into the Freeform table - Web Page Views, then pull in the Month date range. This gives you Web page visits by leads each month:
 
    ![Freeform table showing Events by Month.](../assets/marketo-freeform.png)
 
