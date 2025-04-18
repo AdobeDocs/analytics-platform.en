@@ -16,7 +16,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | **April 2025**| | 
 | Content Analytics | [Documentation](/help/content-analytics/content-analytics.md) for Adobe Content Analytics. Content Analytics allows you to quickly and easily investigate large volumes of content data to uncover trends, spot anomalies, identify content fatigue, and gain insights from content exposure. |
 | **March 2025** | |
-| Quantum Metric use cases| Added use cases for collecting data from [Quantum Metric](/help/use-cases/third-party/quantum-metric/collect-session-id.md). |
+| Quantum Metric use cases| Added use cases for collecting data from [Quantum Metric](/help/use-cases/third-party/quantum-metric/qm-overview.md). |
 | **February 2025** |  |
 | Media Collection: Adobe Source Connector updates for new Media Reporting XDM | The Analytics Source Connector automatically [maps streaming media data in Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=en) to the same fields used by the Web SDK. Previously, data was mapped to both the old and new locations, but only the new location will be used in the future. |
 | BI Extension - expanded support |  The Customer Journey Analytics BI extension now supports [Looker, Jupyter Notebook and R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=en). |
