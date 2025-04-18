@@ -479,3 +479,5 @@ The Usage interface consists of two panels:
 >[!MORELIKETHIS]
 >
 >[View, troubleshoot, and modify connection settings](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja) tutorial.
+>[Manage your Customer Journey Analytics usage](/help/technotes/estimate-usage.md)
+>

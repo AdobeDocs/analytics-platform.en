@@ -88,7 +88,7 @@ Note: this option does not seem to work. AN-338422
 
  1. Select **[!UICONTROL Apply]** to filter the data. Select **[!UICONTROL Clear]** to clear all input. Select **[!UICONTROL Cancel]** to cancel and close the dialog. <br/>A colored ![Filter](/help/assets/icons/FilterColored.svg) **Filter** icon indicates and displays details when a filter is applied to the table. 
 
-### Use audience filters
+### Use audience segments
 
 See [Filters overview](/help/components/filters/filters-overview.md) for more details.
 

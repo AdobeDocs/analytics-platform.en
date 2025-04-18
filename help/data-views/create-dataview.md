@@ -20,7 +20,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create or edit a
 
 To create or edit a data view:
 
-1. Log in to [Customer Journey Analytics](https://analytics.adobe.com) and go to the **[!UICONTROL Data views]** tab.
+1. Log in to [Customer Journey Analytics](https://analytics.adobe.com) and select **[!UICONTROL Data views]**, optionally from **[!UICONTROL Data management]**, in the top menu.
 1. To create a data view, select **[!UICONTROL Create new data view]**. Alternatively, you can select an existing data view from the list of data views to edit it.
 
 
@@ -95,7 +95,7 @@ This section is visible only for administrators who are provisioned with Journey
 
 ### Containers
 
-Designates the name of containers for the data view. Container names are frequently used in [filters](/help/components/filters/filters-overview.md#Filter-containers).
+Designates the name of containers for the data view. Container names are frequently used in [segments](/help/components/filters/filters-overview.md#Filter-containers).
 
 | Setting | Description |
 | --- | --- |
@@ -179,13 +179,13 @@ You can filter ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_1
 ## Settings
 
 1. Select the **[!UICONTROL Settings]** tab.
-1. Configure filters to apply to your entire data view. See [Settings (filters)](#settings-filters) below.
+1. Configure segments to apply to your entire data view. See [Settings (segments)](#settings-filters) below.
 1. Configure session timeout and metrics. See [Session settings](#session-settings) below.
 1. Select **[!UICONTROL Save and continue]** to continue configuring your new or existing data view. Select **[!UICONTROL Save]** to save the configuration for your existing data view.
 
-### Settings (filters)
+### Settings (segments)
 
-You can add filters that apply to an entire data view. This filter is applied to any report that you run in Workspace. Drag a filter from the list in the left rail to the [!UICONTROL Add filters] field.
+You can add segments that apply to an entire data view. This segment is applied to any report that you run in Workspace. Drag a segment from the list in the left rail to the [!UICONTROL Add segments] field.
 
 ### Session settings
 

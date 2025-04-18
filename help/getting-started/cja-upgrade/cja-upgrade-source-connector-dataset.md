@@ -45,7 +45,7 @@ You need to add this automatically created dataset to the same connection that y
 
 To add the automatically created dataset to the same connection that you created for your Web SDK implementation:
 
-1. In Customer Journey Analytics, select the **[!UICONTROL Connections]** tab.
+1. In Customer Journey Analytics,  select **[!UICONTROL Connections]**, optionally from **[!UICONTROL Data management]**, in the top menu.
 
 1. Select the connection that you [created for your Web SDK implementation](/help/getting-started/cja-upgrade/cja-upgrade-connection.md).
 

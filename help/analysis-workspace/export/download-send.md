@@ -74,7 +74,7 @@ If you want to analyze more than the visible 400 rows of data in a table, right-
 
 >[!TIP]
 >
-> If your dimension exceeds 50,000 items, download the file with different sort metrics applied or apply a filter. For example, sort descending by Visits in one download and then ascending by Visits in a second download. This tip can help you retrieve longer-tail items.
+> If your dimension exceeds 50,000 items, download the file with different sort metrics applied or apply a segment. For example, sort descending by Visits in one download and then ascending by Visits in a second download. This tip can help you retrieve longer-tail items.
 
 You can multi-task within the project and even navigate to a new Workspace project in the same tab while the download is in progress. The download pauses if you open a new browser tab. The download is canceled if you leave Workspace completely or close the browser tab.
 
@@ -84,7 +84,7 @@ You can multi-task within the project and even navigate to a new Workspace proje
 
 Features of the table will be applied to the downloaded file as follows:
 
-* All panel filters are applied as filters.
+* All panel segments are applied as filters.
 * Breakdowns **above** the selected dimension in the table are applied as filters above each column. 
 * Breakdowns **below** the selected dimension in the table are removed.
 

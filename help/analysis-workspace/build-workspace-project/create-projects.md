@@ -43,7 +43,7 @@ Now that you have created a Blank Workspace project, ensure you are familiar wit
   * **[!DNL Store Country]** [dimension](/help/components/dimensions/overview.md) ➍
   * **[!DNL People]** [metric](/help/components/apply-create-metrics.md) ➎ 
   * **[!DNL Avg Order Value]** [calculated metric](/help/components/calc-metrics/calc-metr-overview.md) ➏ 
-  * **[!DNL Mobile App Sessions]** [filter](/help/components/filters/filters-overview.md) ➐
+  * **[!DNL Mobile App Sessions]** [segment](/help/components/filters/filters-overview.md) ➐
   * **[!DNL Last Month]** [date range](/help/components/date-ranges/overview.md) ➑ 
   * **[!DNL Example]** [annotation](/help/components/annotations/overview.md) ➒
 
@@ -56,6 +56,15 @@ Now that you have created a Blank Workspace project, ensure you are familiar wit
 >id="workspace_project_repeatinstances"
 >title="Count repeat instances"
 >abstract="Specifies whether repeat instances are counted in reports.<br/>Note: this setting does not apply to Flow or Fallout visualizations."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_project_commenting"
+>title="Allow commenting"
+>abstract="When enabled, a comments area is available in the right rail of the project in Analysis Workspace."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -77,6 +86,14 @@ Settings include:
 | Show annotations | Specify whether annotations are shown for this project or not. |
 |  [Project color palette](/help/analysis-workspace/build-workspace-project/color-palettes.md)  | You can change the categorical color palette used in Workspace, by choosing from out-of-the-box palettes that have been optimized for color blindness, or by specifying your custom palette. This feature affects many things in Workspace, including most visualizations.  |
 | [View Density](/help/analysis-workspace/build-workspace-project/view-density.md) | Lets you see more data on the screen by reducing the vertical padding of the left panel, freeform tables and cohort tables. |
+
+<!--
+
+Add this to the table above - exchange - for pipe: (End of April, 2025 when project commenting is GA)
+
+Allow commenting - When this option is enabled, a comments area is available in the right rail of the project in Analysis Workspace. For more information, see [Add and manage comments in projects](/help/analysis-workspace/build-workspace-project/comment-projects.md). 
+
+-->
 
 
 

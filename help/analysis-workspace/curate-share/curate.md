@@ -8,10 +8,10 @@ role: User
 ---
 # Curate projects
 
-Curation lets you limit the components (dimensions, metrics, filters, date ranges) before sharing a project. When a recipient opens the project, they will see a limited set of components that you have curated for them. Curation is an optional but recommended step before sharing a project. 
+Curation lets you limit the components (dimensions, metrics, segments, date ranges) before sharing a project. When a recipient opens the project, they will see a limited set of components that you have curated for them. Curation is an optional but recommended step before sharing a project. 
 
 >[!NOTE]
-> Product profiles are the primary mechanism governing which components a user can see. They are managed through the [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). Curation is a secondary filter. 
+> Product profiles are the primary mechanism governing which components a user can see. They are managed through the [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). Curation is a secondary segment. 
 
 ## Apply project curation
 

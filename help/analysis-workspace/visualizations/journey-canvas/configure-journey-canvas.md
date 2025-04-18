@@ -95,7 +95,7 @@ You create nodes in the following ways: by dragging Workspace components from th
 
 1. In Analysis Workspace, open an existing Journey canvas visualization, or [begin building a new one](#begin-building-a-journey-canvas-visualization).
 
-1. Drag metrics, dimensions, dimension items, filters, or date ranges from the left rail onto the canvas. Metrics that are based on a [derived field](/help/data-views/derived-fields/derived-fields.md) are supported. However, calculated metrics, as well as any metrics or dimensions that are based on a [summary dataset](/help/data-views/summary-data.md) are not supported.
+1. Drag metrics, dimensions, dimension items, segments, or date ranges from the left rail onto the canvas. Metrics that are based on a [derived field](/help/data-views/derived-fields/derived-fields.md) are supported. However, calculated metrics, as well as any metrics or dimensions that are based on a [summary dataset](/help/data-views/summary-data.md) are not supported.
      
    You can select multiple components in the left rail by holding Shift, or by holding Command (on Mac) or Ctrl (on Windows).
 
@@ -112,10 +112,10 @@ You create nodes in the following ways: by dragging Workspace components from th
    | Dimension item | Blank area of the canvas | The node displays where the component was dropped, unconnected with any existing nodes. |
    | Dimension item | An existing node | The component is automatically combined with the existing node. |
    | Dimension item | An arrow that connects 2 existing nodes | The node displays between the two existing nodes where the component was dropped and is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p> |
-   | Filter | Blank area of the canvas  | The node displays where the component was dropped unconnected with any other nodes.<p>The number and percentage that appear on the node include the total of the primary metric, filtered by the filter you selected.</p> <p>For example, if People is selected as the primary metric for the journey, then adding a filter of Today to a blank area of the canvas shows all the people who had an event today.</p> |
-   | Filter | An existing node | Applies the filter to the existing node. |
-   | Filter | An arrow that connects 2 nodes | The node displays between the two existing nodes where the component was dropped and is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p><p>Applies the filter to the point on the path where the component was dropped.</p> |
-   | Date range | Blank area of the canvas | The node displays where the component was dropped, unconnected with any other nodes.<p>The number and percentage that appear on the node include the total of the primary metric, filtered by the date range you selected.</p> <p>For example, if People is selected as the primary metric for the journey, then adding a date range of This month to a blank area of the canvas shows all the people who had an event during the current month.</p> |
+   | Filter | Blank area of the canvas  | The node displays where the component was dropped unconnected with any other nodes.<p>The number and percentage that appear on the node include the total of the primary metric, segmented by the segment you selected.</p> <p>For example, if People is selected as the primary metric for the journey, then adding a segment of Today to a blank area of the canvas shows all the people who had an event today.</p> |
+   | Filter | An existing node | Applies the segment to the existing node. |
+   | Filter | An arrow that connects 2 nodes | The node displays between the two existing nodes where the component was dropped and is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p><p>Applies the segment to the point on the path where the component was dropped.</p> |
+   | Date range | Blank area of the canvas | The node displays where the component was dropped, unconnected with any other nodes.<p>The number and percentage that appear on the node include the total of the primary metric, segmented by the date range you selected.</p> <p>For example, if People is selected as the primary metric for the journey, then adding a date range of This month to a blank area of the canvas shows all the people who had an event during the current month.</p> |
    | Date range | An existing node | Applies the date range to the existing node. |
    | Date range | An arrow that connects 2 nodes | The node displays between the two existing nodes where the component was dropped and is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p><p>Applies the date range to the point on the path where the component was dropped.</p> |
    | Multiple components | A blank area of the canvas | **If none of the components are dimensions:**<p>Each component displays as a separate node where the components were dropped, unconnected with any existing nodes.</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node. </p><p>**If any of the components you are adding are dimensions:**</p><p>Each component displays as a separate node where the components were dropped, unconnected with any existing nodes.</p><p>Only one dimension can be added at a time. When the dimension is added, 3 nodes are created for the top 3 dimension items where the component was dropped.</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node. The top 3 dimension items are combined with each node. (See [Combine nodes](#combine-nodes) for more information.)</p> |
@@ -140,7 +140,7 @@ You create nodes in the following ways: by dragging Workspace components from th
 
 ### Show the top nodes based on existing nodes
 
-You can automatically show the top nodes based on the nodes that are already on the canvas. You can add the top nodes to Journey canvas or view them in a freeform table.
+You can automatically show the top immediate nodes based on the nodes that are already on the canvas. You can add the top nodes to Journey canvas or view them in a freeform table.
 
 Journey canvas uses the primary metric when determining which nodes to show.
 
@@ -152,7 +152,7 @@ This option is available for the following objects on the canvas:
 
 #### Show top nodes after an existing node
 
-You can select a node and show the top dimension items that come after it in the journey. You can add the top 3 dimension items to Journey canvas as separate nodes, or you can view all top dimension items in a freeform table.
+You can select a node and show the top dimension items that come immediately after it in the journey. You can add the top 3 dimension items to Journey canvas as separate nodes, or you can view all top dimension items in a freeform table.
 
 1. Right-click the node where you want to show the top dimension items that come after it in the journey.
 
@@ -172,7 +172,7 @@ You can select a node and show the top dimension items that come after it in the
 
 #### Show top nodes before an existing node
 
-You can select a node and show the top dimension items that come before it in the journey. You can add the top 3 dimension items to Journey canvas as separate nodes, or you can view all top dimension items in a freeform table.
+You can select a node and show the top dimension items that come immediately before it in the journey. You can add the top 3 dimension items to Journey canvas as separate nodes, or you can view all top dimension items in a freeform table.
 
 1. Right-click the node where you want to show the top dimension items that come before it in the journey.
 
@@ -232,7 +232,7 @@ After nodes are added to the canvas, you can rearrange them, combine them, conne
 
 ### Rearrange nodes
 
-Journeys in Journey canvas consist of a flexible graph of nodes and arrows representing any combination of events, dimension items, and filters. 
+Journeys in Journey canvas consist of a flexible graph of nodes and arrows representing any combination of events, dimension items, and segments. 
 
 You can drag nodes on the canvas to rearrange the events and conditions of the journey. 
 
@@ -260,7 +260,7 @@ The logic that is applied to nodes when they are combined differs depending on w
 
 >[!TIP]
 >
->You can view the logic of a combined node by right-clicking the node, then selecting [!UICONTROL **Create filter from node**]. The logic is shown in the [!UICONTROL **Definition**] section.
+>You can view the logic of a combined node by right-clicking the node, then selecting [!UICONTROL **Create segment from node**]. The logic is shown in the [!UICONTROL **Definition**] section.
 
 
 | Component types to combine | Logic (operator) used |
@@ -291,11 +291,11 @@ Nodes are connected by an arrow. Both the arrow direction and width have signifi
 
 #### Logic when connecting nodes
 
-When you connect nodes in Journey canvas, they are connected using the THEN operator. This is also known as [sequential filtering](/help/components/filters/seg-sequential-build.md). 
+When you connect nodes in Journey canvas, they are connected using the THEN operator. This is also known as [sequential segmenting](/help/components/filters/seg-sequential-build.md). 
 
 Nodes are connected as an "eventual path," which means that visitors are counted as long as they eventually move from one node to the other, regardless of any events occurring between the 2 nodes. The time allotted for users to move along the path is determined by the container setting. <!-- It can also be controlled by [adding a time constraint](#add-a-time-constraint-between-nodes). -->
 
-You can view the logic of connected nodes by right-clicking the node, then selecting [!UICONTROL **Create filter from node**]. The logic is shown in the [!UICONTROL **Definition**] section.
+You can view the logic of connected nodes by right-clicking the node, then selecting [!UICONTROL **Create segment from node**]. The logic is shown in the [!UICONTROL **Definition**] section.
 
 #### Connect existing nodes
 
@@ -536,25 +536,25 @@ To view trend data:
 
 1. Select [!UICONTROL **Trend**].
 
-### Create a filter based on a node or arrow
+### Create a segment based on a node or arrow
 
-You can create a new filter based on a node or arrow within a journey. After the filter is created, you can use it anywhere in Analysis Workspace. 
+You can create a new segment based on a node or arrow within a journey. After the segment is created, you can use it anywhere in Analysis Workspace. 
 
-Filters created from Journey canvas use [sequential filtering](/help/components/filters/seg-sequential-build.md). This means that the filter uses the THEN operator to link together the sequence of events (the journey) that people flowed through, leading up to the selected node or arrow. All events that match the selected node or arrow are included in the filter.
+Filters created from Journey canvas use [sequential segmenting](/help/components/filters/seg-sequential-build.md). This means that the segment uses the THEN operator to link together the sequence of events (the journey) that people flowed through, leading up to the selected node or arrow. All events that match the selected node or arrow are included in the segment.
 
-If you create a filter based on a node that has multiple paths flowing into it, all paths are included in the filter. Separate paths are joined with the OR operator.
+If you create a segment based on a node that has multiple paths flowing into it, all paths are included in the segment. Separate paths are joined with the OR operator.
 
-To create a filter:
+To create a segment:
 
-1. In a Journey canvas visualization, right-click the node or arrow that you want to use to create the filter.
+1. In a Journey canvas visualization, right-click the node or arrow that you want to use to create the segment.
 
-1. Select [!UICONTROL **Create filter from node**] or [!UICONTROL **Create filter from arrow**].
+1. Select [!UICONTROL **Create segment from node**] or [!UICONTROL **Create segment from arrow**].
 
-   The Filter builder displays. In the [!UICONTROL **Definition**] section, the filter definition is created based on the node or arrow you selected and its context within the journey. 
+   The Filter builder displays. In the [!UICONTROL **Definition**] section, the segment definition is created based on the node or arrow you selected and its context within the journey. 
 
-1. Specify a title for the filter and make any other changes. For more information about creating a filter, see [Filter builder](/help/components/filters/filter-builder.md).
+1. Specify a title for the segment and make any other changes. For more information about creating a segment, see [Filter builder](/help/components/filters/filter-builder.md).
 
-1. Select [!UICONTROL **Save**] to save the filter.
+1. Select [!UICONTROL **Save**] to save the segment.
 
 ### Delete nodes
 

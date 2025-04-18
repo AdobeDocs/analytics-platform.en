@@ -50,9 +50,9 @@ You use the [Adobe Content Analytics extension](https://experienceleague.adobe.c
 
   You can enable or disable experiences and edit the combinations of regular expression and query parameters to determine how content is rendered on your website.
 
-* [Event filtering](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering){target="_blank"}
+* [Event segmenting](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
-  You can edit regular expressions to modify how you filter pages and assets.
+  You can edit regular expressions to modify how you segment pages and assets.
 
 
 After you make changes in the Adobe Content Analytics extension, ensure your use [publishing flow](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} to start the collection of data based on the changes made. 
@@ -68,7 +68,9 @@ After you make changes in the Adobe Content Analytics extension, ensure your use
 
 ## Versioning
 
-If you require versioning of your Content Analytics experiences, you must add a global `adobe.getContentExperienceVersion` function on the pages that you consider experiences that you want to analyze.
+If you want to collect Content Analytics experiences, you should consider implementing versioning to ensure new experiences (changes to your web page) are properly collected. 
+
+To implement versioning, you add a global `adobe.getContentExperienceVersion` function on the pages that you consider experiences that you want to analyze.
 
 The `adobe.getContentExperienceVersion` function should return a string as value, which can be anything you choose, to identify the version. The version is appended to the [Experience ID URL](/help/content-analytics/report/components.md#experience-metadata). 
 

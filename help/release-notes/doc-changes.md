@@ -14,6 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **April 2025**| | 
+| View and manage usage | Reworked the documentation on how to [view](/help/connections/manage-connections.md#usage) and [manage](/help/technotes/estimate-usage.md) Customer Journey Analytics usage |
 | Content Analytics | [Documentation](/help/content-analytics/content-analytics.md) for Adobe Content Analytics. Content Analytics allows you to quickly and easily investigate large volumes of content data to uncover trends, spot anomalies, identify content fatigue, and gain insights from content exposure. |
 | **March 2025** | |
 | Quantum Metric use cases| Added use cases for collecting data from [Quantum Metric](/help/use-cases/third-party/quantum-metric/qm-overview.md). |
@@ -187,7 +188,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Date | Update description |
 | --- | --- |
 | **December 2022** |  |
-| December 16, 2022 | New topic on [measuring and managing your Customer Journey Analytics data usage](/help/technotes/estimate-usage.md). |
+| December 16, 2022 | New topic on [managing your Customer Journey Analytics data usage](/help/technotes/estimate-usage.md). |
 | **October 2022** | |
 | October 2022 | New topic on [password protection of scheduled projects](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password). This feature is in support of [HIPAA readiness](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | October 2022 | New topic on [Customer Managed Keys](/help/privacy/cmk.md). This feature is in support of [HIPAA readiness](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
