@@ -1,5 +1,5 @@
 ---
-description: Describes the two main ways of finding your metrics: sorting and filtering.
+description: Describes sorting and filtering, the two main ways of finding your metrics.
 title: Find metrics
 feature: Calculated Metrics
 exl-id: 34d2563a-7cd2-4f22-9ad0-6a3dab8d84ea
