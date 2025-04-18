@@ -49,7 +49,7 @@ Data views let you spontaneously change schema element settings, without having 
 
 * You can apply formatting to a metric, such as showing decimal, time, percent, or currency; specifying decimal places; showing upward trend as green or red; and specifying currency options.
 
-* You can create a metric or dimension based on only some of the values in the schema field. For example, if you wanted an Errors metric, you could create a metric from the page name field but only include pages that contain the word `error`. The Errors metric created this way supports filters, can be inserted into calculated metrics, and works with attribution, flow, fallout, etc.
+* You can create a metric or dimension based on only some of the values in the schema field. For example, if you wanted an Errors metric, you could create a metric from the page name field but only include pages that contain the word `error`. The Errors metric created this way supports segments, can be inserted into calculated metrics, and works with attribution, flow, fallout, etc.
 
 * For dimensions, you can automatically include or exclude only certain values within a specific field. For example, if a developer sent in a wrong value of `dev mistake` into a field, you could easily exclude it from reporting using an exclude rule. The dimension behaves as if the wrong value never existed in the data.
 

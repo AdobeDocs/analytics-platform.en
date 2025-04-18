@@ -22,7 +22,7 @@ role: Admin
 
 ![Substring settings](../assets/substring-settings.png)
 
-[!UICONTROL Substring] is available only on dimensions, and is retroactive to the data it is applied to. It is an immediate data transformation that happens before filtering or other analysis operations are applied.
+[!UICONTROL Substring] is available only on dimensions, and is retroactive to the data it is applied to. It is an immediate data transformation that happens before segmenting or other analysis operations are applied.
 
 ## From the Left/Right
 
