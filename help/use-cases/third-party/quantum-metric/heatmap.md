@@ -10,17 +10,15 @@ exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
 ---
 # Use Quantum Metric heatmaps with Customer Journey Analytics
 
-Linking Quantum Metric heatmapping to CJA data lets you better understand page-level engagement and optimize pages based on consumer behavior. Workspace can be used to understand consumer user flows and see what paths consumers follow from one page to the next. Then, you can click hyperlinked Page URLs to visually heatmap how users engage with the content.  By linking Quantum Metric Heatmapping to CJA, you can now associate page-level interactions with business outcomes, taking your analysis to the next level.  
+Linking Quantum Metric heatmapping to CJA data lets you better understand page-level engagement and optimize pages based on consumer behavior. Workspace can be used to understand consumer user flows and see what paths consumers follow from one page to the next. Then, you can click hyperlinked Page URLs to visually heatmap how users engage with the content. By linking Quantum Metric Heatmapping to CJA, you can now associate page-level interactions with business outcomes, taking your analysis to the next level.
 
 The table will return all the sessions in that segment, and you can click any one of them to explore further in QM.  Learn more about Quantum Metric session replay at https://www.quantummetric.com/platform/session-replay 
 
 ## Prerequisites
 
-This use case requires that you collect Quantum Metric's session ID alongside the rest of your implementation. See [Collect Quantum Metric session IDs in Customer Journey Analytics](collect-session-id.md) to learn how to modify your implementation.
-
 You must be entitled to Quantum Metric's **UX Ops** package in order to access Quantum Metric's heatmap capabilities.
 
-## Create a freeform table in Workspace and configure it so that session ID values are links directly to Quantum Metric.
+## Step 1: Create a freeform table in Workspace and configure it so that session ID values are links directly to Quantum Metric.
 
 1. Log in to [experience.adobe.com](https://experience.adobe.com).
 1. Navigate to Customer Journey Analytics, and select **[!UICONTROL Workspace]** in the top menu.
@@ -33,16 +31,11 @@ You must be entitled to Quantum Metric's **UX Ops** package in order to access Q
 
     ```
     $value?qm-visible=true
-
     ```
 
 1. Click **[!UICONTROL Create]**.
+1. Test one of the links to see if it opens in the URL with the Quantum Metric extension visible. These links open in a new tab so your Workspace project remains open.
 
-1. Click Create and then test one of the links to see if it opens in the URL with the QM extension popped open. Note – it will open in a separate tab, so you don’t lose your work.
+## Step 2: View heatmaps by clicking links within Customer Journey Analytics
 
-
-## Viewing heatmaps by clicking links within Customer Journey Analytics
-
-Once you’ve found a page that you want to explore heatmapping for, you can apply it to the panel that your URL is in. The table will return a URL that will let you explore heatmaps for the page in question, scroll depth, and key zones for interaction.  Lear more about Quantum Metric Heatmaps at [https://www.quantummetric.com/platform/interaction-heatmaps](https://www.quantummetric.com/platform/interaction-heatmaps).  For any additional resources please contact your Quantum Metric customer support representative or submit a request through the Quantum Metric [Customer Request Portal](https://community.quantummetric.com/s/public-support-page). 
-
-
+Once you've found a page that you want to explore heatmapping, you can apply it to the desired panel. The table returns a URL that lets you explore heatmaps, scroll depth, and key zones for interaction using Quantum Metric. See [Quantum Metric heatmap product overview](https://www.quantummetric.com/platform/interaction-heatmaps) for more information. You can also contact your Quantum Metric customer support representative or submit a request through the [Quantum Metric Customer Request Portal](https://community.quantummetric.com/s/public-support-page).

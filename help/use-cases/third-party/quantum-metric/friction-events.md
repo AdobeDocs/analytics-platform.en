@@ -1,6 +1,6 @@
 ---
 title: Add Quantum Metric friction events to Customer Journey Analytics
-description: Add depths to insights in Customer Journey Analytics using friction events collected in Quantum Metric.
+description: Add Quantum Metric collected friction events to Customer Journey Analytics behavioral data to add depth to insights in CJA.
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -21,15 +21,20 @@ This use case has two requirements:
 
 ## Step 1: Capture friction events using the Quantum Metric tag extension
 
-The Quantum Metric CSM team can help you determine the right schema elements to add, and help instruct you to modify your implementation to collect the desired data for use in Customer Journey Analytics. Contact your Quantum Metric customer success manager for more information.
+See [Quantum Metric extension](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) in the Adobe Experience Platform Destinations guide for instructions on how to set up your tags to include Quantum Metric data. Usage of this extension passes more rows into an existing dataset. 
 
-Ultimately, you will want to begin tracking the friction event name in a field.
+Use tags in Adobe Experience Platform Data Collection to manually set the name of the friction event so that it can be included in the XDM object and analyzed. One way to do this is in the rule's custom code:
 
-## Step 2: Confirm included dataset fields
+```js
+_satellite.setVar('qm_error_name','error rage click');
+return true;
+```
 
-Confirm that the datasets in your connection now have the Quantum Metric session ID in the desired dataset.
+Then, add the dynamically set data element to your XDM object:
 
-## Step 3: Add one or more dimensions and metrics to the data view in Customer Journey Analytics
+![Quantum Metric error name screenshot](assets/error-name.png)
+
+## Step 2: Add one or more dimensions and metrics to the data view in Customer Journey Analytics
 
 Edit your existing data view to add the session ID as an available dimension in Customer Journey Analytics.
 
@@ -39,8 +44,9 @@ Edit your existing data view to add the session ID as an available dimension in 
 1. Locate the Quantum Metric friction event field list on the left, and drag it to the metrics area in the center.
 1. In the right pane, set the [Include/Exclude values](/help/data-views/component-settings/include-exclude-values.md) setting to the desired friction events that you want to track. You can add multiple friction events to the same metric to combine them. You can also drag another copy of the friction events field to the metrics area to track other friction events as a separate metric.
 1. Once you have created all desired dimensions and metrics, Click **[!UICONTROL Save]**.
+1. For a full list of error events, please refer to your Quantum Metric documentation. If you have additional questions, contact your Quantum Metric customer support representative or submit a request through the [Quantum Metric Customer Request Portal](https://community.quantummetric.com/s/public-support-page).
 
-## Step 4: Use the dimension and metrics with the rest of your data in Analysis Workspace
+## Step 3: Use the dimension and metrics with the rest of your data in Analysis Workspace
 
 With Quantum Metric friction event data collected alongside the rest of your visitor data, you can use them exactly as you would any other dimension or metric in Customer Journey Analytics.
 
