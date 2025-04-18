@@ -20,6 +20,8 @@ Comments in Analysis Workspace allow you to share insights and ask questions wit
 
 ## View comments
 
+You can view comments from the comments area in the right rail or from the comment badge if one exists. 
+
 ### View comments in the comments area
 
 All comments made in an Analysis Workspace project are visible in the comments area in the right rail. 
@@ -56,6 +58,28 @@ To comment on a specific area of the project (such as a metric value in a freefo
 
 1. With the project open in Analysis Workspace, right-click the area of the project where you want to insert the comment.
 
+   Not all visualizations support comment badges.  The following visualizations support comment badges on specific data points:
+
+   * Bar
+   * Bar stacked
+   * Combo
+   * Freeform table
+   * Histogram
+   * Horizontal bar
+   * Horizontal bar stacked
+   * Line
+   
+    The following visualizations support comment badges on the visualization in general but not on specific data points:
+    
+    * Area
+    * Area stacked 
+    * Key metric summary
+    * Summary number
+    * Summary change
+    * Text
+
+   <!--double-check the lists above-->
+   
    <!--add screenshot-->
 
 1. Select **[!UICONTROL Add comment]**.
