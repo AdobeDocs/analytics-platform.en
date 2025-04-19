@@ -17,7 +17,7 @@ You can create a segment in the following ways:
 
 ![Ways to create a segment](assets/create-filter.png)
 
-* **A**. In the main interface, select **[!UICONTROL Components]** and select **[!UICONTROL Segments]**. Select ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] from the [[!UICONTROL Filters] manager](/help/components/filters/manage-filters.md). 
+* **A**. In the main interface, select **[!UICONTROL Components]** and select **[!UICONTROL Segments]**. Select ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] from the [[!UICONTROL Segments] manager](/help/components/filters/manage-filters.md). 
 * **B**. In a Workspace project, from the Components left panel, select ![Add](/help/assets/icons/Add.svg) at ![Segment](/help/assets/icons/Segmentation.svg) **Filters**.
 * **C**. In a Workspace project, from the context menu in a visualization, select **[!UICONTROL Create segment from selection]**.
 * **D**. In a Workspace project, select **[!UICONTROL Components]** from the menu, and select **[!UICONTROL Create segment]**. 

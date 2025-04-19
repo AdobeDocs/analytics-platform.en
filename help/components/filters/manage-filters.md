@@ -56,7 +56,7 @@ You can action on segments using the action bar ➋. The action bar contains the
 | ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Rename]** | Rename a single selected segment. When selected, you can rename the segment inline. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Approve the selected segments. See [Approve segments](filters-approve.md) for more information. | 
 | ![Copy](/help/assets/icons/Copy.svg)  **[!UICONTROL Copy]** | Copy the selected segment. New segments are created with the same name and suffix `(Copy)`. | 
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** | Export the segments to a `Filters List.csv` file. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** | Export the segments to a `Segments List.csv` file. |
 
 ### Active segment bar
 
