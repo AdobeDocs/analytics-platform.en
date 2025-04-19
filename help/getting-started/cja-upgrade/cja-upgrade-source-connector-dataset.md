@@ -90,13 +90,13 @@ To add the automatically created dataset to the same connection that you created
    
    * Choose an end date that is the same date as when you first started gathering data with your Web SDK implementation. 
 
-   * Choose an end date that is shortly after the date when you first started gathering data with your Web SDK implementation, then use data view segments to filter out the overlapping data. 
+   * Choose an end date that is shortly after the date when you first started gathering data with your Web SDK implementation, then use data view segments to segment out the overlapping data. 
 
-   * Choose an end date that results in a greater overlap in data, then use data view segments to filter out the overlapping data.  
+   * Choose an end date that results in a greater overlap in data, then use data view segments to segment out the overlapping data.  
    
      **Note:** This option would result in increased costs because there would be more rows in the connection. 
 
-   <!-- Include any of the following?  Make sure you're explicit as to the dates you request backfill to. You want to request it to the date that you start gathering data with your Web SDK implementation. Also possibly include segments for any overlapping date. So you could request everything and then use a segment to exclude data that you don't want. That way if you need to move up the date, then you could change the date in the filter. Downside would be that you might pay for double rows.  When they do that, they're going to see all schema fields from both their custom schema and their Analytics schema. So they'll need to be cognizant to select the right fields, and never select any Analytics fields, because they will be mapped as part of the source connector. Never select any Analytics field group fields because they'll be mapped.  -->
+   <!-- Include any of the following?  Make sure you're explicit as to the dates you request backfill to. You want to request it to the date that you start gathering data with your Web SDK implementation. Also possibly include segments for any overlapping date. So you could request everything and then use a segment to exclude data that you don't want. That way if you need to move up the date, then you could change the date in the segment. Downside would be that you might pay for double rows.  When they do that, they're going to see all schema fields from both their custom schema and their Analytics schema. So they'll need to be cognizant to select the right fields, and never select any Analytics fields, because they will be mapped as part of the source connector. Never select any Analytics field group fields because they'll be mapped.  -->
 
 1. Select **[!UICONTROL Queue backfill]**.
 

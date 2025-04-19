@@ -56,7 +56,7 @@ While [Analysis Workspace](../analysis-workspace/home.md) and guided analysis us
 
 * **Analysis Workspace is a dimension-centered experience.** Tables typically consist of dimensional rows, while columns are typically metrics. Filters can be applied in both rows and columns to obtain the desired data.
 
-* **Guided analysis is an event and user-centered experience.** Each analysis starts by selecting events, then dimensions and filters can be added to refine that event data.
+* **Guided analysis is an event and user-centered experience.** Each analysis starts by selecting events, then dimensions and segments can be added to refine that event data.
 
 ![Analysis Workspace and guided analysis views](assets/structure.png){style="border:1px solid gray"}
 

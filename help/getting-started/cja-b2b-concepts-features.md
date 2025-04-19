@@ -17,7 +17,7 @@ This article explains general concepts and features on datasets and containers a
 
 Datasets are the sources of a connection. As part of setting up a connection, you define datasets to be part of that connection. 
 
-Containers are a used in Customer Journey Analytics to to support and facilitate features like filters, calculated metrics, and advanced analytics capabilities. 
+Containers are a used in Customer Journey Analytics to to support and facilitate features like segments, calculated metrics, and advanced analytics capabilities. 
 
 
 

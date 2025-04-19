@@ -14,7 +14,7 @@ role: Admin
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_persistence"
 >title="Persistence"
->abstract="Configure the default allocation model applied to a dimension. Allocation applies before filters in reporting. See for more information [allocation settings](/help/data-views/component-settings/persistence.md#allocation-settings), [expiration settings](/help/data-views/component-settings/persistence.md#expiration-settings), [binding dimension](/help/data-views/component-settings/persistence.md#binding-dimension) and [binding metrics](/help/data-views/component-settings/persistence.md#binding-metric)."
+>abstract="Configure the default allocation model applied to a dimension. Allocation applies before segments in reporting. See for more information [allocation settings](/help/data-views/component-settings/persistence.md#allocation-settings), [expiration settings](/help/data-views/component-settings/persistence.md#expiration-settings), [binding dimension](/help/data-views/component-settings/persistence.md#binding-dimension) and [binding metrics](/help/data-views/component-settings/persistence.md#binding-metric)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -34,7 +34,7 @@ role: Admin
 
 * **Expiration** lets you determine how long a dimension item persists beyond the event it is set on.
 
-[!UICONTROL Persistence] is available only on dimensions, and is retroactive to the data it is applied to. It is an immediate data transformation that happens before filtering or other analysis operations are applied.
+[!UICONTROL Persistence] is available only on dimensions, and is retroactive to the data it is applied to. It is an immediate data transformation that happens before segmenting or other analysis operations are applied.
 
 | Setting | Description |
 | --- | --- |
