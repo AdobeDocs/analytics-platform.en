@@ -193,8 +193,8 @@ Use the following information to choose the visualization that best meets your n
 | **Non-linear journeys with multiple entry points and paths** | Yes | No | Yes |
 | **Primary metric** | Any metric, including calculated metrics. | Only Session or Person | Only Occurrences (Path views) |
 | **Secondary metric** | Yes<p>Any metric, including calculated metrics.</p> | No | No  |
-| **Component support in nodes or touchpoints** | Metrics, dimension items, filters, and date ranges.| Metrics, dimension items, filters, and date ranges. | Only dimension items (except for the starting and ending touchpoint)  |
-| **Compare filters** | No | Yes<p>Perform side-by-side comparisons of two different filters in the same report.</p> | No |
+| **Component support in nodes or touchpoints** | Metrics, dimension items, segments, and date ranges.| Metrics, dimension items, segments, and date ranges. | Only dimension items (except for the starting and ending touchpoint)  |
+| **Compare segments** | No | Yes<p>Perform side-by-side comparisons of two different segments in the same report.</p> | No |
 | **Drag-and-drop component interaction** | Yes | Yes | No |
 | **Adobe Journey Optimizer journeys** | Yes</br>Open journeys from Journey Optimizer for deeper analysis and customization. | No |  No |
 
