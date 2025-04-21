@@ -42,14 +42,14 @@ For more information, see: [Data views overview](https://experienceleague.adobe.
 
 A data view:
 
-* Can be based on Customer Journey Analytics filters.
+* Can be based on Customer Journey Analytics segments.
 * Can be applied to both historical and new data in a non-destructive manner.
 * Allows you to create one or many virtual views on top of a Customer Journey Analytics connection, for use by different business teams.
 * May be used to control access to and curate different kinds of data for different users in Customer Journey Analytics.
 * Provides powerful non-destructive options for transforming and enhancing data coming into Customer Journey Analytics through a Customer Journey Analytics connection.
 * Is based on the report-time processing capabilities of Customer Journey Analytics.
 * Allows users to create a custom definition for "session."
-* Is applied at report runtime, similar to a filter evaluation. This is _after_ the Source Connector (Adobe Analytics or other) has written data to a dataset in the Adobe Experience Platform data lake, and _after_ the data has been ingested into Customer Journey Analytics via a Customer Journey Analytics connection.
+* Is applied at report runtime, similar to a segment evaluation. This is _after_ the Source Connector (Adobe Analytics or other) has written data to a dataset in the Adobe Experience Platform data lake, and _after_ the data has been ingested into Customer Journey Analytics via a Customer Journey Analytics connection.
 * Allows for an unlimited number of variables, although curation can limit which variables are exposed to users
 * Allows for custom naming of Event, Session & Person containers.
 * Supports custom calendar options.

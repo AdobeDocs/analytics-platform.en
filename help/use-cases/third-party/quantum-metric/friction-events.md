@@ -60,4 +60,4 @@ Possible analysis ideas are:
 
 * Trend friction event data over time
 * In a fallout or funnel visualization, add Customer Journey Analytics events as some steps and Quantum Metric friction events as others. This report allows you to see where visitors most commonly run into trouble.
-* Create and apply a filter for visitors who experience friction events for deeper analysis
+* Create and apply a segment for visitors who experience friction events for deeper analysis

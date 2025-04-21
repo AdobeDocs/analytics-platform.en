@@ -45,11 +45,11 @@ For more information about Reporting Activity manager, including key benefits an
 
    ![Reporting Activity showing the reports queue](assets/reporting-activity-monthly.png)
 
-1. (Optional) You can search or filter the list of connections:
+1. (Optional) You can search or segment the list of connections:
 
    * Use the search field to search for a specific connection. Begin typing the connection name or ID and the list of connections updates as you type.
 
-   * Select ![Filter](/help/assets/icons/Filter.svg) to expand the list of filter options. You can filter by [!UICONTROL **Favorites**] or [!UICONTROL **Status**].
+   * Select ![Filter](/help/assets/icons/Filter.svg) to expand the list of segment options. You can filter by [!UICONTROL **Favorites**] or [!UICONTROL **Status**].
 
      To mark a connection as a favorite, select the star icon to the left of the connection name.
       
