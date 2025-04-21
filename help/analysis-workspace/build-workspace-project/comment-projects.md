@@ -20,6 +20,10 @@ Comments in Analysis Workspace allow you to share insights and ask questions wit
 
 ## View comments
 
+You can view comments from the comments area in the right rail or from the comment badge if one exists. 
+
+![View comments in Analysis Workspace](assets/workspace-comments-view.png)
+
 ### View comments in the comments area
 
 All comments made in an Analysis Workspace project are visible in the comments area in the right rail. 
@@ -56,6 +60,12 @@ To comment on a specific area of the project (such as a metric value in a freefo
 
 1. With the project open in Analysis Workspace, right-click the area of the project where you want to insert the comment.
 
+   All visualizations support comment badges on the vizualization header, but only the following visualizations support comment badges on specific data points within the visualization:
+
+   * Freeform table
+   * Cohort table
+   * Line
+   
    <!--add screenshot-->
 
 1. Select **[!UICONTROL Add comment]**.
@@ -92,6 +102,8 @@ The comment feature in Analysis Workspace makes it easier to collaborate with ot
 
 1. Type the @ symbol, then begin typing the first name, last name, or email address of the person you want to include.
 
+   ![tag user](assets/comments-tag-user.png)
+
 1. Select the person's name when it appears in the drop-down menu.
 
 Consider the following when using the @ symbol to include people in a comment: 
@@ -117,6 +129,38 @@ Consider the following when using the @ symbol to include people in a comment:
 1. (Optional) Notify another person about your comment by typing the @ symbol followed by their name. For more information about using the @ symbol to notify others, see [Include others in a comment](#include-others-in-a-comment).
 
 1. Select **[!UICONTROL Submit]**.
+
+## Place a badge for an existing comment
+
+If a comment is available in the comments area in the right rail but it does not yet have a badge in the project, you can add the badge.
+
+1. With the project open in Analysis Workspace, select the comments area icon ![comments area icon](assets/comments-area-icon.png) in the right rail of Analysis Workspace. 
+
+1. Select the more icon ![comment-more-icon](assets/comment-more-icon.png) next to the comment for which you want to place a badge, then select **[!UICONTROL Place badge]**. 
+
+1. Select the area of the project where you want to place the badge for the existing comment. 
+
+   A **comment badge** ![comment badge](assets/comment-indicator.png) is placed in the area of the Workspace project you selected. The comment also appears at the top of the comments area in the right rail.
+
+   See [View comment badges in a project](#view-comment-badges-in-a-project) for more information. 
+
+To remove a badge:
+
+1. Select the badge that you want to remove, then select **[!UICONTROL Remove badge]**.
+
+   The badge is removed, but the comment is still available in the comments area in the right rail.
+
+## Move a badge for an existing comment
+
+You can move a comment badge that is already placed for an existing comment. 
+
+1. With the project open in Analysis Workspace, locate the badge for the comment that you want to move.
+
+1. Right-click the badge, then select **[!UICONTROL Move placement]**.
+
+1. Select the area of the project where you want to place the badge. 
+
+<!-- add section about adding images to comments. will be available at GA. Include that "you can have a maximum of 5 images per comment, and each image can be up to 2 MB." -->
 
 ## Copy the link to a comment
 
@@ -177,35 +221,3 @@ To resolve a comment:
 By default, resolved comments are hidden from the comments area. To show resolved comments:
 
 1. Select the filter icon in the comments area, then deselect the option, **[!UICONTROL Hide resolved comments]**.
-
-## Place a badge for an existing comment
-
-If a comment is available in the comments area in the right rail but it does not yet have a badge in the project, you can add the badge.
-
-1. With the project open in Analysis Workspace, select the comments area icon ![comments area icon](assets/comments-area-icon.png) in the right rail of Analysis Workspace. 
-
-1. Select the more icon ![comment-more-icon](assets/comment-more-icon.png) next to the comment for which you want to place a badge, then select **[!UICONTROL Place badge]**. 
-
-1. Select the area of the project where you want to place the badge for the existing comment. 
-
-   A **comment badge** ![comment badge](assets/comment-indicator.png) is placed in the area of the Workspace project you selected. The comment also appears at the top of the comments area in the right rail.
-
-   See [View comment badges in a project](#view-comment-badges-in-a-project) for more information. 
-
-To remove a badge:
-
-1. Select the badge that you want to remove, then select **[!UICONTROL Remove badge]**.
-
-   The badge is removed, but the comment is still available in the comments area in the right rail.
-
-## Move a badge for an existing comment
-
-You can move a comment badge that is already placed for an existing comment. 
-
-1. With the project open in Analysis Workspace, locate the badge for the comment that you want to move.
-
-1. Right-click the badge, then select **[!UICONTROL Move placement]**.
-
-1. Select the area of the project where you want to place the badge. 
-
-<!-- add section about adding images to comments. will be available at GA. Include that "you can have a maximum of 5 images per comment, and each image can be up to 2 MB." -->
