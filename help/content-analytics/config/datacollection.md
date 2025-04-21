@@ -28,10 +28,13 @@ The following definitions are used in the context of this article:
 
 ## Functionality
 
+Content Analytics requires the Experience Platform Edge Network Web SDK to collect content event data. That event data collection is combined with the (existing) data collection of behaviorial event data through mechanisms like Experience Platform Edge Network (Web SDK, Server API) or Analytics source connector (for example, using AppMeasurement).
+
 The Content Analytics library collects data when:
 
 * Content Analytics is included in the Tags library that is loaded on the page.
 * The page URL is configured in the [Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, part of the included Tags library.
+
 
 
 ## Content Analytics event
