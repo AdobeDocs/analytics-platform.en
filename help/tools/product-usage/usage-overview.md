@@ -67,7 +67,7 @@ When you enable Product usage, the following dimensions are available. If you wa
 * **[!UICONTROL Component Type]**: The type of component that was added, removed, or modified. Dimension items include:
   * [!UICONTROL Dimension]
   * [!UICONTROL Metric]
-  * [!UICONTROL Filter]
+  * [!UICONTROL Segment]
   * [!UICONTROL Calculated metric]
   * [!UICONTROL Date range]
   * [!UICONTROL Annotation]

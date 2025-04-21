@@ -37,7 +37,7 @@ A sequential segment has some [basic functionality](#basics) and additional opti
 
 
 
-The basics of building a sequential segment are no different than building a regular segment using the [Segment builder](filter-builder.md). You can use the [Definition builder](filter-builder.md#definition-builder) to construct your segment definition. In that construction, you use components, containers, operators and logic. A regular segment becomes a sequential filter as soon as you select the **[!UICONTROL Then]** operator in the main definition or in any of the containers you use within the [Definition builder](filter-builder.md#definition-builder).
+The basics of building a sequential segment are no different than building a regular segment using the [Segment builder](filter-builder.md). You can use the [Definition builder](filter-builder.md#definition-builder) to construct your segment definition. In that construction, you use components, containers, operators and logic. A regular segment becomes a sequential segment as soon as you select the **[!UICONTROL Then]** operator in the main definition or in any of the containers you use within the [Definition builder](filter-builder.md#definition-builder).
 
 ### Examples
 

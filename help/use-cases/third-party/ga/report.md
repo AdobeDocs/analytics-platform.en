@@ -50,9 +50,9 @@ Using a calculated metric, you can apply that attribution to your web revenue, m
 
 ![Calculated metric](../../assets/calc-metric.png)
 
-Attribution IQ also lets you filter your data. You can see attribution against only specific sets of users, such as those who are using more than one device.
+Attribution IQ also lets you segment your data. You can see attribution against only specific sets of users, such as those who are using more than one device.
 
-![Filter](../../assets/filter.png)
+![Segment](../../assets/filter.png)
 
 You can also attribute your Web and App revenue to your Google Ad Content. This dataset's example gained more revenue from the mobile app being driven by online Google Ads than from the web. By sorting ads by web and app revenue, you get a different picture of what your top performing Google ads were.
 

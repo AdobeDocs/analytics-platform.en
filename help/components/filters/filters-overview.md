@@ -8,9 +8,9 @@ role: User
 
 # Segmentation overview
 
-Customer Journey Analytics lets you build, manage, share, and apply powerful, focused audience segments to your reports. Filters let you identify subsets of persons, sessions or events based on characteristics or interactions. Filters are designed as codified audience insights that you can build for your specific needs, and then verify, edit, and share with other team members.
+Customer Journey Analytics lets you build, manage, share, and apply powerful, focused audience segments to your reports. Segments let you identify subsets of persons, sessions or events based on characteristics or interactions. Segments are designed as codified audience insights that you can build for your specific needs, and then verify, edit, and share with other team members.
 
-Filters can be based on: 
+Segments can be based on: 
 
 - attributes (browser type, device, number of visits, country, gender), 
 - interactions (campaigns, keyword search, search engine), 
@@ -113,7 +113,7 @@ The Person container includes every session and every event for the persons that
 - All sessions for these persons.
 - All event data for these persons. 
 
-As the most broadly defined container, reports generated at the Person container level return events and sessions for all persons that qualify for the filter. The Person container is the most susceptible to change based on defined date ranges.
+As the most broadly defined container, reports generated at the Person container level return events and sessions for all persons that qualify for the segment. The Person container is the most susceptible to change based on defined date ranges.
 Person containers can include values based on a person's overall history:
 
 - Days before the first purchase.
@@ -185,7 +185,7 @@ You can use nesting between containers and between conditions within a container
 
 Traditional Analytics comes with numerous out-of-the-box templates and calculated metrics. Many of them do not apply in Customer Journey Analytics, or have to be renamed or recreated. Others depend on a solution for context-aware variables in Customer Journey Analytics.
 
-| Filter Name | Description |
+| Segment Name | Description |
 | --- | --- |
 | All Data | All Data is a required segment that gets dynamically added to reporting when a metric is added to the row of a Freeform table. |
 -->

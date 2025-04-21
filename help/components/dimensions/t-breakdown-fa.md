@@ -15,7 +15,7 @@ You can break down your data in unlimited ways for your specific needs; build qu
 
    ![Step Result showing Create alert from selection selected.](assets/breakdown.png)
 
-1. From the submenu select **[!UICONTROL Dimensions]**, **[!UICONTROL Metrics]**, **[!UICONTROL Filters]** or **[!UICONTROL Date ranges]** and then select an item.
+1. From the submenu select **[!UICONTROL Dimensions]**, **[!UICONTROL Metrics]**, **[!UICONTROL Segments]** or **[!UICONTROL Date ranges]** and then select an item.
 
 You can break down metrics by dimension items or audience segments across selected time periods. You can also drill down further to a more granular level.
 

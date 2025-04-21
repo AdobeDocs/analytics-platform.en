@@ -181,10 +181,10 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 
 | Name |  Value | Limit Type | Description | 
 |---|--:|---|---|
-| Containers per Filter | 50 | System-enforced Guardrail  | Maximum number of containers per segment. | 
+| Containers per Segment | 50 | System-enforced Guardrail  | Maximum number of containers per segment. | 
 | Metrics per Calculated Metric | 25 | System-enforced Guardrail  | Maximum number of metrics per calculated metric. |
-| Metrics and Dimensions per Filter | 25 |System-enforced Guardrail  |  Maximum number of unique metrics and dimensions per segment. | 
-| Nested Containers per Filter | 10 | System-enforced Guardrail  | Maximum number of nested containers per segment. |
+| Metrics and Dimensions per Segment | 25 |System-enforced Guardrail  |  Maximum number of unique metrics and dimensions per segment. | 
+| Nested Containers per Segment | 10 | System-enforced Guardrail  | Maximum number of nested containers per segment. |
 | Rules per segment| 100 | System-enforced Guardrail  | Maximum number of rules per segment. |
 | String Compares per Dimension per Segment | 100 |  System-enforced Guardrail  | Maximum number of strings comparisons per dimension per segment. | 
 | Calculated Metrics | 6,000 | System-enforced Guardrail  |  Maximum number of calculated metrics for an organization. |

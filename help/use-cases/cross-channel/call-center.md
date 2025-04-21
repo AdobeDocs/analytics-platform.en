@@ -67,7 +67,7 @@ This visualization helps you understand how well CCA stitches data together.
    * Person container where Dataset ID equals your web data
    * Person container where Dataset ID equals your call center data
 2. In Analysis Workspace, drag a [Venn](/help/analysis-workspace/visualizations/venn.md) visualization onto the workspace canvas.
-3. Drag the two newly created segments to the **[!UICONTROL Add Filter]** area, and the People metric to the **[!UICONTROL Add Metric]** area.
+3. Drag the two newly created segments to the **[!UICONTROL Add Segment]** area, and the People metric to the **[!UICONTROL Add Metric]** area.
 
 The resulting Venn visualization shows the number of people in your dataset that contain both web and call center data. The larger the overlap, the more people that were successfully stitched. The areas that don't overlap represent people that reside exclusively in one dataset or the other.
 
