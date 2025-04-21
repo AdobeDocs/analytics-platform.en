@@ -61,7 +61,7 @@ The following information describes how to access and use templates from the [!U
    >
    >For more information about context labels, see [Component settings](/help/data-views/component-settings/overview.md).
 
-   1. Select the filter icon.
+   1. Select the segment icon.
    
    1. Select **[!UICONTROL Not ready for use]** to show templates that require additional components.
 
@@ -100,7 +100,7 @@ To customize a template and save it as a project:
 1. Do any of the following:
 
    * View the template.
-   * Drag one or more filters into the Filter drop zone at the top. For example, drag the filter [!UICONTROL **Mobile Customers**] and view the results. 
+   * Drag one or more segments into the Segment drop zone at the top. For example, drag the segment [!UICONTROL **Mobile Customers**] and view the results. 
    * Change the date range by going to the calendar at the top-right.
    * Add dimension breakdowns, drag in other metrics, and generally customize the template to suit your needs.
 

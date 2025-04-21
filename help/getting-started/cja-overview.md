@@ -64,7 +64,6 @@ See [Access Control](/help/technotes/access-control.md).
 
 Several features in Customer Journey Analytics have been renamed, when compared to traditional Adobe Analytics, to align with industry standards. Some updated terminology includes:
 
-* Segments are now known as 'Filters'.
 * Virtual report suites are now known as 'Data views'.
 * Classifications are now known as 'Lookup datasets'.
 * Customer attributes are now known as 'Profile datasets'.

@@ -26,7 +26,7 @@ Dynamic dimension items have the row filter option ![Filter](/help/assets/icons/
 
 Static dimension items do not change with time; they are fixed components that are always returned in a freeform table. Static dimension items are preferred when you want to always analyze the same item, whether it be specific campaigns or specific days in the week.
 
-Any time you manually select and drop specific component values (dimension, metric, filter, date range) into a table, the result is a static list of rows or columns. 
+Any time you manually select and drop specific component values (dimension, metric, segment, date range) into a table, the result is a static list of rows or columns. 
 
 For example, when you drag over specific Browser Type items such as Microsoft and Apple, those 2 specific items always get pulled into the table. 
 
