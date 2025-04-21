@@ -58,7 +58,7 @@ To comment on a specific area of the project (such as a metric value in a freefo
 
 1. With the project open in Analysis Workspace, right-click the area of the project where you want to insert the comment.
 
-   All visualization support comment badges on the vizualization header, but only the following visualizations support comment badges on specific data points within the visualization:
+   All visualizations support comment badges on the vizualization header, but only the following visualizations support comment badges on specific data points within the visualization:
 
    * Freeform table
    * Cohort table
