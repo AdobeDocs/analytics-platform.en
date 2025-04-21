@@ -57,7 +57,7 @@ The following table lists features that are available in Customer Journey Analyt
 | **List variables/List props** | Full support. Customer Journey Analytics uses XDM and supports unlimited string arrays which can be used similarly to listVars. |
 | **Merchandising eVars** | Full support via [binding dimensions and binding metrics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
 | **Metrics** | Full support; Customer Journey Analytics uses the Experience Data Model (XDM) and supports unlimited metrics and is not tied to the custom success events of Adobe Analytics. Some standard metrics have been renamed from Adobe Analytics: Visitors = People, Visits = Sessions, Hits = Events. |
-| **Migrating projects, filters, and calculated metrics from Adobe Analytics to Customer Journey Analytics** | Full support. |
+| **Migrating projects, segments, and calculated metrics from Adobe Analytics to Customer Journey Analytics** | Full support. |
 | **Mobile scorecard/Dashboards** | Full support |
 | **Panels** | Full support for the following panels: Blank panel, Attribution, Freeform, Quick insights, and Next or previous item. |
 | **PDF export** | Full Support |
@@ -67,7 +67,7 @@ The following table lists features that are available in Customer Journey Analyt
 | **Report time processing** | Full Support; Customer Journey Analytics relies exclusively on Report Time Processing. |
 | **Reporting API access** | Full Support; Available through the [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/). |
 | **Scheduled reports/projects** | Full Support |
-| **Segments** | Full Support. Now called "Filters" - note that any existing segments in traditional Analysis Workspace are not ported to Customer Journey Analytics. |
+| **Segments** | Full Support. (Previously called "Filters".) |
 | **Streaming Media Collection** | Streaming media data are available using the Analytics source connector as part of the Media Concurrent Viewers panel and the Media Playback Time Spent panel in Workspace. |
 | **Summary-level data sources** | Full support |
 | **Virtual report suites** | Full Support. Now called [Data views](/help/data-views/create-dataview.md). |
@@ -103,7 +103,7 @@ The following table lists features that are available in Customer Journey Analyt
 | **Products variable** | Within the Experience Platform, users can use an array of objects within a dataset schema to satisfy this use case. Within Customer Journey Analytics, customers can use any number of product variables and are not restricted to a single variable as in Adobe Analytics. |
 | **Project sharing** | Project sharing is only supported between users of Customer Journey Analytics - there is not project sharing between Customer Journey Analytics and the traditional Analysis Workspace. |
 | **Report Builder** | Supported with a new Office 365 plugin for Excel. |
-| **User permissions/Data access controls** | Customer Journey Analytics distinguishes between [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) product admins, product profile admins, and users. Only product admins can Create/update/delete Connections, Projects, Filters, or Calculated Metrics that were created by other users, while product admins and product profile admins can edit Data views. Additional user permissions are available for things like creating calculated metrics, segments, or annotations. |
+| **User permissions/Data access controls** | Customer Journey Analytics distinguishes between [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) product admins, product profile admins, and users. Only product admins can Create/update/delete Connections, Projects, Segments, or Calculated Metrics that were created by other users, while product admins and product profile admins can edit Data views. Additional user permissions are available for things like creating calculated metrics, segments, or annotations. |
 | **Visualizations** | All Workspace visualizations are supported except for the Map visualization. |
 | **Cross-device/cross-channel stitching** | Supported for event datasets containing identity information. See [Stitching](../../stitching/overview.md). |
 

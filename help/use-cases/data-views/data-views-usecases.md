@@ -63,7 +63,7 @@ You can use a numeric dimension to get metrics into your [!UICONTROL  Flow] visu
 
 ## Do sub-event filtering {#sub-event}
 
-This capability is specifically applicable to array-based fields. The include/exclude functionality lets you filter at the sub-event level, whereas filters (segments) built in the filter builder only give you filtering at the event level. So, you can do sub-event filtering by using include/exclude in Data views, and then reference that new metric/dimension in a filter at the event level.
+This capability is specifically applicable to array-based fields. The include/exclude functionality lets you filter at the sub-event level, whereas segments built in the Segment builder only give you filtering at the event level. You can do sub-event filtering by using include/exclude in Data views, and then reference that new metric/dimension in a segment at the event level.
 
 For example, use the include/exclude functionality in Data views to focus only on products that generated sales of more than $50. So, if you have an order that includes a $50 product purchase and a $25 product purchase, the include/exclude functionality removes the $25 product purchase, not the entire order.
 

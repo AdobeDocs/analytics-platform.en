@@ -16,9 +16,9 @@ To share one or more segments:
 
 1. In the [Segment manager](manage-filters.md), select one or more of the segments you want to share.
 1. From the action bar, select ![Share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]**.
-1. In the **[!UICONTROL Share Filters]** dialog:
+1. In the **[!UICONTROL Share Segments]** dialog:
    
-   ![Share Filters dialog](assets/share-filter-dialog.png)
+   ![Share Segment dialog](assets/share-filter-dialog.png)
 
    1. (optionally) use ![Search](/help/assets/icons/Search.svg) to *Search individuals or groups* for and limit the list of groups or individuals you want to share the segment with.
    
