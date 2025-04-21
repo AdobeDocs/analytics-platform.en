@@ -60,12 +60,12 @@ The following additional context menu options are available when selecting one o
 | **[!UICONTROL Create hyperlink]** | Create a hyperlink for the item. See [Hyperlinks for dimensions in a freeform table](../freeform-table-hyperlinks.md) |
 | **[!UICONTROL Edit hyperlink]** | Edit a hyperlink for the item. See [Hyperlinks for dimensions in a freeform table](../freeform-table-hyperlinks.md) |
 | **[!UICONTROL Remove hyperlink]** | Remove a hyperlink for the item. See [Hyperlinks for dimensions in a freeform table](../freeform-table-hyperlinks.md) |
-| **[!UICONTROL Breakdown]** | Break down the dimension item. Select from the list of **[!UICONTROL Dimensions]**, **[!UICONTROL Metrics]**, **[!UICONTROL Filters]** or **[!UICONTROL Date ranges]**. Alternative search for a component, using *Search*. |
+| **[!UICONTROL Breakdown]** | Break down the dimension item. Select from the list of **[!UICONTROL Dimensions]**, **[!UICONTROL Metrics]**, **[!UICONTROL Segments]** or **[!UICONTROL Date ranges]**. Alternative search for a component, using *Search*. |
 | **[!UICONTROL Delete selected]** | Delete the selected rows (items). |
 | **[!UICONTROL Trend selection]** | Create a trended line chart visualization for the selection. | 
 | **[!UICONTROL Display only selected rows]** | Display only the selected rows in the visualization. |
 | **[!UICONTROL Display all rows]** | Display all rows in the visualization. |
-| **[!UICONTROL Create segment from selection]** | Open up the **[!UICONTROL Filter builder]** to build a segment from the selection. |
+| **[!UICONTROL Create segment from selection]** | Open up the **[!UICONTROL Segment builder]** to build a segment from the selection. |
 | **[!UICONTROL Create audience from selection]** | Open up the **[!UICONTROL Create audience]** dialog to build an audience from the selection. | 
 
 The following additional context menu options are available when selecting a metric column header.
@@ -79,7 +79,7 @@ The following additional context menu options are available when selecting a met
 | **[!UICONTROL Compare attribution model]** | Specify a new attibution model and compare it to the attribution model for the selected column. A new column is added with the new attribution model metrics. Also, a Percent change column is added for comparison. |
 | **[!UICONTROL Reset column widths]** | Reset the column widths to the default width. |
 | **[!UICONTROL Create annotation from selection]** | Open up the **[!UICONTROL Annotation details]** to add an annotation. | 
-| **[!UICONTROL Create segment from selection]** | Open up the **[!UICONTROL Filter builder]** to build a segment from the selection. |
+| **[!UICONTROL Create segment from selection]** | Open up the **[!UICONTROL Segment builder]** to build a segment from the selection. |
 | **[!UICONTROL Create audience from selection]** | Open up the **[!UICONTROL Create audience]** dialog to build an audience from the selection. | 
 
 ## Change row height
