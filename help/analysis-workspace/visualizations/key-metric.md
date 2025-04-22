@@ -46,7 +46,7 @@ This visualization addresses various common use cases, including:
 
 1. Add a ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Key metric summary]** visualization. See [Add a visualization to a panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
-1. Configure the visualization by selecting a **[!UICONTROL Metric]**, a **[!UICONTROL Primary date range]**, a **[!UICONTROL Comparison date range]** (optional) and a **[!UICONTROL Filter]** (optional):
+1. Configure the visualization by selecting a **[!UICONTROL Metric]**, a **[!UICONTROL Primary date range]**, a **[!UICONTROL Comparison date range]** (optional) and a **[!UICONTROL Segment]** (optional):
 
    ![Key metric configuration showing the options for metric, primary date range, comparison date range, and segment.](assets/key-metrics-config.png)
 
@@ -55,7 +55,7 @@ This visualization addresses various common use cases, including:
    | **[!UICONTROL Metric]** | Select the metric you want to examine. All metrics are supported. |
    | **[!UICONTROL Primary date range]** | The current date range for the freeform table.<p>Choose from any available date ranges in your data view.</p> <p>Choose [!UICONTROL **Panel date range**] if you want to use the same date range that is being used on the panel where the visualization is located.</p>  |
    | **[!UICONTROL Comparison date range]** | The date range that you want to compare with the primary date range. |
-   | **[!UICONTROL Filter (optional)]** | Any segment that you are interested in for this summary.  |
+   | **[!UICONTROL Segment (optional)]** | Any segment that you are interested in for this summary.  |
 
    {style="table-layout:auto"}
 

@@ -53,7 +53,7 @@ Available time comparison options include the previous period, 13 weeks prior, 5
 *This video demonstrates the functionality using Adobe Analytics. However, the functionality is similarly available in Customer Journey Analytics. Be aware of the differences in terminology between Adobe Analytics and Customer Journey Analytics (for example "visits" versus "sessions").*
 
 
-## Segments panel {#filterspanel}
+## Filter panel {#filterspanel}
 
 1. Select ![Filter](/help/assets/icons/Filter.svg) to open the Filters panel. If you need more space for the Filters list, you can select ![Filter](/help/assets/icons/Filter.svg) once more to close the panel.
 1. Select filters from any of the available filter sections. 
@@ -193,8 +193,8 @@ Use the following information to choose the visualization that best meets your n
 | **Non-linear journeys with multiple entry points and paths** | Yes | No | Yes |
 | **Primary metric** | Any metric, including calculated metrics. | Only Session or Person | Only Occurrences (Path views) |
 | **Secondary metric** | Yes<p>Any metric, including calculated metrics.</p> | No | No  |
-| **Component support in nodes or touchpoints** | Metrics, dimension items, filters, and date ranges.| Metrics, dimension items, filters, and date ranges. | Only dimension items (except for the starting and ending touchpoint)  |
-| **Compare filters** | No | Yes<p>Perform side-by-side comparisons of two different filters in the same report.</p> | No |
+| **Component support in nodes or touchpoints** | Metrics, dimension items, segments, and date ranges.| Metrics, dimension items, segments, and date ranges. | Only dimension items (except for the starting and ending touchpoint)  |
+| **Compare segments** | No | Yes<p>Perform side-by-side comparisons of two different segments in the same report.</p> | No |
 | **Drag-and-drop component interaction** | Yes | Yes | No |
 | **Adobe Journey Optimizer journeys** | Yes</br>Open journeys from Journey Optimizer for deeper analysis and customization. | No |  No |
 

@@ -8,9 +8,9 @@ role: User
 
 # Segmentation overview
 
-Customer Journey Analytics lets you build, manage, share, and apply powerful, focused audience segments to your reports.   let you identify subsets of persons, sessions or events based on characteristics or interactions. Segments are designed as codified audience insights that you can build for your specific needs, and then verify, edit, and share with other team members.
+Customer Journey Analytics lets you build, manage, share, and apply powerful, focused audience segments to your reports. Segments let you identify subsets of persons, sessions or events based on characteristics or interactions. Segments are designed as codified audience insights that you can build for your specific needs, and then verify, edit, and share with other team members.
 
-Filters can be based on: 
+Segments can be based on: 
 
 - attributes (browser type, device, number of visits, country, gender), 
 - interactions (campaigns, keyword search, search engine), 
@@ -193,7 +193,7 @@ You can use nesting between containers and between conditions within a container
 
 Traditional Analytics comes with numerous out-of-the-box templates and calculated metrics. Many of them do not apply in Customer Journey Analytics, or have to be renamed or recreated. Others depend on a solution for context-aware variables in Customer Journey Analytics.
 
-| Filter Name | Description |
+| Segment Name | Description |
 | --- | --- |
 | All Data | All Data is a required segment that gets dynamically added to reporting when a metric is added to the row of a Freeform table. |
 -->

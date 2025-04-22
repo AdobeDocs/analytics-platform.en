@@ -112,7 +112,7 @@ Use a context menu on any node in the flow visualization with the following opti
 |--- |--- |
 | **[!UICONTROL Focus on this node]** | Change the focus to the selected node. The focus node appears at the center of the Flow diagram. |
 | **[!UICONTROL Start over]** | Return you to the Freeform diagram builder, where you can build a new Flow diagram. |
-| **[!UICONTROL Create a filter for this path]** | Create a filter. This selection takes you into the Filter builder, where you can configure the new filter. |
+| **[!UICONTROL Create a segment for this path]** | Create a segment. This selection takes you into the Segment builder, where you can configure the new segment. |
 | **[!UICONTROL Breakdown]** | Break the node down by available Dimensions, Metrics, or Time. |
 | **[!UICONTROL Filter column]** | The same filter options appear as are available in the Freeform table. For more information about the available options, see the section "Apply a simple or advanced filter to a table" in [Filter and sort tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).|
 | **[!UICONTROL Exclude item]** or **[!UICONTROL Restore excluded items]** | Removes a specific node from the column and automatically creates it as a filter at the top of the column. To restore the excluded item, from the context menu select **[!UICONTROL Restore Excluded Item]**. you can also open the segment at the top of the column and remove the pillbox with the item you just excluded. |

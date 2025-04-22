@@ -15,7 +15,7 @@ You can [share](filters-share.md), [segment](filters-filter.md), [tag](filters-t
 
 >[!NOTE]
 >
->The quick segments that you create within a specific Workspace project do not appear in the [!UICONTROL Filters] manager, unless you have made the segment available to all your projects. 
+>The quick segments that you create within a specific Workspace project do not appear in the [!UICONTROL Segment] manager, unless you have made the segment available to all your projects. 
 >
 
 ## Segment manager
@@ -31,7 +31,7 @@ The segments list ➊ displays all the segments that you own, the segments that 
 | Column | Description |
 | --- | --- | 
 | ![StarOutline](/help/assets/icons/StarOutline.svg)  | Select to favor ![Star](/help/assets/icons/Star.svg) or un-favor ![StarOutline](/help/assets/icons/StarOutline.svg) a segment. See [Mark segment as favorite](/help/components/filters/filters-favorite.md) |
-| **[!UICONTROL Title and description]** | To edit the segment, select the title link, which opens the [Filters builder](filter-builder.md). A shared segment is indicated with ![Share](/help/assets/icons/ShareAlt.svg). |
+| **[!UICONTROL Title and description]** | To edit the segment, select the title link, which opens the [Segment builder](filter-builder.md). A shared segment is indicated with ![Share](/help/assets/icons/ShareAlt.svg). |
 | **[!UICONTROL Data view]** | The data views that this segment applies to.  | 
 | **[!UICONTROL Owner]** | The owner of the segment. As a user, you only see the segments that you own or the annotations that are shared with you. |
 | **[!UICONTROL Tags]** | The tags for this segment. |
@@ -48,7 +48,7 @@ You can action on segments using the action bar ➋. The action bar contains the
 
 | Action | Description |
 |---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Add another segment, using the [Filter builder](filter-builder.md). |
+| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** | Add another segment, using the [Segment builder](filter-builder.md). |
 | ![Search](/help/assets/icons/Search.svg) [!UICONTROL *Search by title*] | When no segment is selected in the list, search for segments using this search field. |
 | ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tag the selected segments. In the **[!UICONTROL Tag Segment]** dialog, select or de-select the tags for the selected segments. Select **[!UICONTROL Save]** to save the tags for the selected segments. See [Tag segments](/help/components/filters/filters-tag.md) for more information.|
 | ![Share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | Share the selected segments. In the **[!UICONTROL Share Segment]** dialog, you can ![Search](/help/assets/icons/Search.svg) *Search individuals or groups* or you can select **[!UICONTROL Organization]** or **[!UICONTROL Groups]**. Select **[!UICONTROL Save]** to save share details for the selected segments. See [Share segments](filters-share.md) for more information. |

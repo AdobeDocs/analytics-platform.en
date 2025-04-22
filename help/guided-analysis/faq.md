@@ -42,7 +42,7 @@ Guided analysis and [Analysis Workspace](../analysis-workspace/home.md) align on
 | Users | People |
 | Dimension | Dimension |
 | Dimension item | Dimension item |
-| Segment | Filter |
+| Segment | Segment |
 | Filter | Report filter |
 | Calculated metric, Metrics | Calculated metric |
 
@@ -54,7 +54,7 @@ Guided analysis and [Analysis Workspace](../analysis-workspace/home.md) align on
 
 While [Analysis Workspace](../analysis-workspace/home.md) and guided analysis use the same underlying data, the way that each tool enables you to form queries of that data is different.
 
-* **Analysis Workspace is a dimension-centered experience.** Tables typically consist of dimensional rows, while columns are typically metrics. Filters can be applied in both rows and columns to obtain the desired data.
+* **Analysis Workspace is a dimension-centered experience.** Tables typically consist of dimensional rows, while columns are typically metrics. Segments can be applied in both rows and columns to obtain the desired data.
 
 * **Guided analysis is an event and user-centered experience.** Each analysis starts by selecting events, then dimensions and segments can be added to refine that event data.
 

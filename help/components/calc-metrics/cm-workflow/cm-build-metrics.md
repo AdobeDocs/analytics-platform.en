@@ -1,5 +1,5 @@
 ---
-description: The Calculated Metrics Builder provides a canvas to drag and drop Dimensions, Metrics, Filters, and Functions to create custom metrics based on container hierarchy logic, rules, and operators. This integrated development tool lets you build and save simple calculated metrics or complex advanced calculated metrics.
+description: The Calculated Metrics Builder provides a canvas to drag and drop Dimensions, Metrics, Segments, and Functions to create custom metrics based on container hierarchy logic, rules, and operators. This integrated development tool lets you build and save simple calculated metrics or complex advanced calculated metrics.
 title: Build calculated metrics
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
@@ -150,7 +150,7 @@ You use the concept of a segment container to create a [segmented metric](metric
 * To add a segment container from a dimension:
 
   1. Drag and drop a ![Dimensions](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensions]** component from the components panel onto **[!UICONTROL Drag and drop metrics, dimensions, dimension items, segments, and/or functions here]**. You can use the ![Search](/help/assets/icons/Search.svg) in the components bar to search for specific components.
-  1. In the **[!UICONTROL Create Filter from Dimension]** popup, define the condition for the segment. Select from the list of operators and select a value or enter a value. For example, **[!UICONTROL Month]** **[!UICONTROL equals]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
+  1. In the **[!UICONTROL Create Segment from Dimension]** popup, define the condition for the segment. Select from the list of operators and select a value or enter a value. For example, **[!UICONTROL Month]** **[!UICONTROL equals]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
   1. Select **[!UICONTROL Done]**. A segment container is added to the **[!UICONTROL Definition]**. 
 
 
@@ -159,11 +159,11 @@ You use the concept of a segment container to create a [segmented metric](metric
   * Drag and drop a ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]** component from the components panel onto **[!UICONTROL Drag and drop metrics, dimensions, dimension items, segments, and/or functions here]**. You can use the ![Search](/help/assets/icons/Search.svg) in the components bar to search for specific segments.
     Automatically a segment container is added to the **[!UICONTROL Definition]**, using the name of the segment.
 
-  * Drag and drop a ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filters]** component from the components panel onto a generic container. The container is modified into a segment container.
+  * Drag and drop a ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** component from the components panel onto a generic container. The container is modified into a segment container.
 
   * Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** from within a container:
 
-    1. Select **[!UICONTROL Filter]**. A segment container is added to the **[!UICONTROL Definition]**.
+    1. Select **[!UICONTROL Segment]**. A segment container is added to the **[!UICONTROL Definition]**.
     1. In the new segment container, select a segment from the [!UICONTROL *Select...*] dropdown menu.
 
   >[!TIP]
@@ -176,7 +176,7 @@ To remove a segment from a container:
 
 * Select ![Close](/help/assets/icons/Close.svg) next to the segment name.
 
-See [Filtered metrics](metrics-with-segments.md) for more details and examples.
+See [Segmented metrics](metrics-with-segments.md) for more details and examples.
 
 #### Function container
 
@@ -212,6 +212,6 @@ To delete a container, select ![Close](/help/assets/icons/Close.svg) at the cont
 >[!MORELIKETHIS]
 >
 >[Use functions](cm-using-functions.md)
->[Filters](/help/components/filters/filters-overview.md)
+>[Segments](/help/components/filters/filters-overview.md)
 >
 
