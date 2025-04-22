@@ -15,13 +15,13 @@ In graph based stitching, you specify an event dataset as well as the persistent
 
 ## IdentityMap
 
-Graph based stitching supports the use of identifyMap in the following scenarios:
+Graph based stitching supports the use of the [`identifyMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) in the following scenarios:
 
-- Use of the primary identity in identityMap to define the persistentID:
+- Use of the primary identity in `identityMap` namespace to define the persistentID:
   - If multiple primary identities found in different namespaces, the namespaces are sorted alphabetically and the first identity in the sorted namespaces is selected.
   - If multiple primary identities are found in a single namespace, first available primary identity is selected.
-- Use for identityMap namespace to define the persistentID:
-  - If multiple values for persitentID are found in an identityMap namespace, the first available value is used.
+- Use for `identityMap` namespace to define the persistentID:
+  - If multiple values for persitentID are found in an `identityMap` namespace, the first available value is used.
 
 
 ## How graph-based stitching works
