@@ -30,11 +30,29 @@ Field based stitching supports the use of the [`identifyMap` field group](https:
     </tr>
     <tr>
       <td>ECID</td>
-      <td><code>{<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>&nbsp;}</code> </td>
+      <td>
+      
+      ```json
+      {
+        { "id": "ecid-3" },
+        { "id": "ecid-2", "primary": true }.
+        { "id": "ecid-2", "primary": true }
+      }
+      ```
+
     </tr>
     <tr>
       <td>CCID</td>
-      <td><code>{<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true},<br/>&nbsp;}</code></td>
+      <td>
+      
+      ```json
+      {
+        {"id": "ccid-1"},
+        {"id": "ccid-2", "primary": true }
+      }
+      ``` 
+      
+      </td>
     </tr>
   </table>
 
@@ -81,8 +99,8 @@ Field based stitching supports the use of the [`identifyMap` field group](https:
       <th>Selected identity</th>
     </tr>
     <tr>
-      <td><<code>[<br/>&nbsp;&nbsp;"id": "ecid-1",<br/>&nbsp;&nbsp;"id": "ecid-2",<br/>&nbsp;&nbsp;"id": "ecid-3"<br/>&nbsp;]</code> </td>
-      <td><<code>"id": "ecid-1",<br/>"namespace": "ECID"</code> </td>
+      <td><code>[<br/>&nbsp;&nbsp;"id": "ecid-1",<br/>&nbsp;&nbsp;"id": "ecid-2",<br/>&nbsp;&nbsp;"id": "ecid-3"<br/>&nbsp;]</code> </td>
+      <td><code>"id": "ecid-1",<br/>"namespace": "ECID"</code> </td>
     </tr>
   </table>
 
