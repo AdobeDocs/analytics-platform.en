@@ -20,7 +20,7 @@ The main benefit is that you store or report only on data that is applicable and
 
 If you leave the default (unchecked), the retention period will be superseded by the Adobe Experience Platform data retention setting. If you have 25 months' worth of data in Experience Platform, Customer Journey Analytics will get 25 months of data through backfill. If you deleted 10 of those months in Platform, Customer Journey Analytics would retain the remaining 15 months. 
 
-Data retention is based on event dataset timestamps and applies to event datasets only. No rolling data window setting exists for profile or lookup datasets, since there are no applicable timestamps. If your connection includes any profile or lookup datasets, since they are joined with event datasets, the data is retained in Customer Journey Analytics based on your data retention settings on the event dataset timestamps.
+Data retention is based on timestamps and applies to event datasets and summary data datasets only. No rolling data window setting exists for profile or lookup datasets, since there are no applicable timestamps. If your connection includes any profile or lookup datasets, since they are joined with event datasets, the data is retained in Customer Journey Analytics based on your data retention settings on the event dataset timestamps.
 
 
 >[!MORELIKETHIS]
