@@ -21,43 +21,22 @@ Field based stitching supports the use of the [`identifyMap` field group](https:
   - If multiple primary identities found in different namespaces, the identities in the namespaces are sorted lexigraphically and the first identity is selected.
   - If multiple primary identities are found in a single namespace, the first lexicographical available primary identity is selected.
   
-  Example:
+  In the example below, the namespaces and identities result in a sorted primary identities list, and finally the selected identity.
 
   <table>
-    <tr>
-      <th>Namespaces</th>
-      <th>Identities list</th>
-    </tr>
-    <tr>
-      <td>ECID</td>
-      <td>
-
-        ```json
-        [
-           { "id": "ecid-3" },
-           { "id": "ecid-2", "primary": true }.
-           { "id": "ecid-2", "primary": true }
-        ]
-        ```
-
-      </td>
-    </tr>
-    <tr>
-      <td>CCID</td>
-      <td>
-      
-      ```json
-      [
-        {"id": "ccid-1"},
-        {"id": "ccid-2", "primary": true }
-      ]
-      ``` 
-
-      </td>
-    </tr>
-  </table>
-
-  results in
+     <tr>
+       <th>Namespaces</th>
+       <th>Identities list</th>
+     </tr>
+     <tr>
+       <td>ECID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>&nbsp;]</code></pre></td>
+     </tr>
+     <tr>
+       <td>CCID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true}<br/>]</code></pre></td>
+     </tr>
+   </table>
 
   <table>
     <tr>
@@ -65,34 +44,32 @@ Field based stitching supports the use of the [`identifyMap` field group](https:
       <th>Selected identity</th>
     </tr>
     <tr>
-      <td><code>PrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-2", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-1", "namespace": "ECID"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "namespace": "ECID"}<br/>&nbsp;]<br/>&nbsp;NonPrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-1", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-3", "namespace": "ECID"}<br/>]</code> </td>
-      <td><code>"id": "ccid-1",<br/>&nbsp;"namespace": "CCID"</code> </td>
+      <td><pre lang="json"><code>PrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-2", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-1", "namespace": "ECID"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "namespace": "ECID"}<br/>]<br/>NonPrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-1", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-3", "namespace": "ECID"}<br/>]</code></pre></td>
+      <td><pre lang="json"><code>"id": "ccid-2",<br/>"namespace": "CCID"</code></pre></td>
     </tr>
   </table>
 
 
-- Use for `identityMap` namespace to define either persistentID or transientID or both:
+- Use of `identityMap` namespace to define either persistentID or transientID or both:
   - If multiple values for persitentID or transientID are found in an `identityMap` namespace, the first lexicographical available value is used.
   - Namespaces for persistentID and transientID have to be mutually exclusive.
 
-  Example:
+  In the example below, the namespaces and identities result in a sorted identities list for the selected namespace (ECID), and finally the selected identity.
 
     <table>
-    <tr>
-      <th>Namespaces</th>
-      <th>Identities list</th>
-    </tr>
-    <tr>
-      <td>ECID</td>
-      <td><code>{<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>&nbsp;}</code> </td>
-    </tr>
-    <tr>
-      <td>CCID</td>
-      <td><code>{<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true},<br/>&nbsp;}</code></td>
-    </tr>
-  </table>
-
-  results in
+     <tr>
+       <th>Namespaces</th>
+       <th>Identities list</th>
+     </tr>
+     <tr>
+       <td>ECID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>]</code></pre></td>
+     </tr>
+     <tr>
+       <td>CCID</td>
+       <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true}<br/>]</code></pre></td>
+     </tr>
+   </table>
 
   <table>
     <tr>
@@ -100,8 +77,8 @@ Field based stitching supports the use of the [`identifyMap` field group](https:
       <th>Selected identity</th>
     </tr>
     <tr>
-      <td><code>[<br/>&nbsp;&nbsp;"id": "ecid-1",<br/>&nbsp;&nbsp;"id": "ecid-2",<br/>&nbsp;&nbsp;"id": "ecid-3"<br/>&nbsp;]</code> </td>
-      <td><code>"id": "ecid-1",<br/>"namespace": "ECID"</code> </td>
+      <td><pre lang="json"><code>[<br/>&nbsp;&nbsp;"id": "ecid-1",<br/>&nbsp;&nbsp;"id": "ecid-2",<br/>&nbsp;&nbsp;"id": "ecid-3"<br/>]</code></pre></td>
+      <td><pre lang="json"><code>"id": "ecid-1",<br/>"namespace": "ECID"</code></pre></td>
     </tr>
   </table>
 
