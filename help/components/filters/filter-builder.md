@@ -14,17 +14,10 @@ exl-id: 160021f1-6942-4682-9114-d375307d9912
 >title="Create Audience"
 >abstract="Audiences can be created from a segment and shared with the Adobe Experience Platform for activation."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
 >title="Data preview"
 >abstract="Compares the data of this segment with data of the data view. The preview percentage is based on the total number in the data view from the **last 90 days**.<br><br/>If the preview is not loading, your connection could still be backfilling."
-
-<!-- markdownlint-enable MD034 -->
-
 
 
 The **[!UICONTROL Segment builder]** dialog is used to create new or edit existing segments. The dialog is titled **[!UICONTROL New segment]** or **[!UICONTROL Edit segment]** for segments that you create or manage from the [[!UICONTROL Segment] manager](/help/components/filters/manage-filters.md).
@@ -149,32 +142,23 @@ Or, you could define 52 segments: 50 segments for the US states, one for mobile 
 
 ## Attribution {#attribution}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_repeating"
 >title="Repeating"
 >abstract="Includes instances and persisted values for the dimension."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_instance"
 >title="Instance"
 >abstract="Includes instances and persisted values for the dimension."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_nonrepeatinginstance"
 >title="Non-repeating instance"
 >abstract="Includes unique (non-repeating) instances for the dimension."
 
-<!-- markdownlint-enable MD034 -->
 
 
 
@@ -212,3 +196,5 @@ The table below explains, for each attribution model, which incoming events are 
 An example report on events using the three segments looks like:
 
 ![Segment attribution model results](assets/filter-dimension-attribution-results.png)
+
+<!-- markdownlint-enable MD034 -->

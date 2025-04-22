@@ -156,6 +156,14 @@ Event containers include value-based, single page breakdowns for:
 - Merchandising dimensions (in the context of events) 
 
 
+
+### B2B containers
+
+[!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
+
+When you do have access to [Customer Journey Analytics B2B Edition](/help/getting-started/cja-b2b-edition.md), additional containers for use in segments are available. You can find more details on the use of these additional containers in [B2B concepts and features](/help/getting-started/cja-b2b-concepts-features.md).
+
+
 ### Logic group container
 
 Logic Group enables you to group conditions into a single sequential segment checkpoint. As part of the sequence, the logic defined in the container identified as [!UICONTROL Logic Group] is evaluated after any prior sequential checkpoint and before any following sequential checkpoint. See [Logic Group](seg-sequential-build.md#logic-group) for more information.

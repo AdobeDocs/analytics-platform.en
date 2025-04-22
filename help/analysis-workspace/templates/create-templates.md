@@ -104,7 +104,7 @@ Administrators can Rename, tag, and approve company templates.
 
 1. Select the filter icon to filter the list of projects.
 
-1. In the filter rail, select **OTHER FILTERS** and then select **Company templates**. 
+1. In the filter rail, select **[!UICONTROL Other filters]** and then select **[!UICONTROL Company templates]**. 
     
    A list of the company templates are displayed. All regular projects, unless they're pinned, are not displayed.
 

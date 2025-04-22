@@ -58,12 +58,12 @@ You can action on segments using the action bar ➋. The action bar contains the
 | ![Copy](/help/assets/icons/Copy.svg)  **[!UICONTROL Copy]** | Copy the selected segment. New segments are created with the same name and suffix `(Copy)`. | 
 | ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** | Export the segments to a `Segments List.csv` file. |
 
-### Active segment bar
+### Active filter bar
 
-The segment bar ➌ shows the active segments applied from the segment panel to the list of segments (if any). You can quickly remove a segment using ![CrossSize75](/help/assets/icons/CrossSize75.svg). If more than one segment is specified, you can remove all segments using **[!UICONTROL Remove all]**.
+The filter bar ➌ shows the active segments applied from the filter panel to the list of segments (if any). You can quickly remove a filter using ![CrossSize75](/help/assets/icons/CrossSize75.svg). If more than one filter is specified, you can remove all filter using **[!UICONTROL Remove all]**.
 
-### Segment panel
+### Filter panel
 
-You can segment the list of segments using the ![Segment](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** left panel ➍. The segment panel displays the type of segment and the number of segments that honor the specific segment. Select ![Segment](/help/assets/icons/Filter.svg) to toggle the display of the segment panel. 
+You can filter the list of segments using the ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** left panel ➍. The filter panel displays the type of filter and the number of segments that honor the specific filter. Select ![Filter](/help/assets/icons/Filter.svg) to toggle the display of the Filter panel. 
 
 See [Filter the list of segments](filters-filter.md) for more information.

@@ -28,7 +28,7 @@ The following use cases are documented:
   * [Single dimension ranked](#single-dimension-ranked)
   * [Multiple dimension ranked](#multiple-dimension-ranked)
   * [Count distinct dimension values](#count-distinct-dimension-values)
-  * [Use date range names to segment](#use-date-range-names-to-segment)
+  * [Use date range names to filter](#use-date-range-names-to-filter)
   * [Use segment names to segment](#use-segment-names-to-segment)
   * [Use dimension values to segment](#use-dimension-values-to-segment)
   * [Sort](#sort)
@@ -1731,17 +1731,17 @@ You should see a visualization and table similar as shown below.
 
 
 
-## Use filter names to filter
+## Use segment names to segment
 
-In this use case, you want to use an existing filter for the Fishing product category, that you have defined in Customer Journey Analytics. To filter and report on product names and occurrences (events) during January 2023.
+In this use case, you want to use an existing segment for the Fishing product category, that you have defined in Customer Journey Analytics. To segment and report on product names and occurrences (events) during January 2023.
 
 +++ Customer Journey Analytics
 
-Inspect the filter that you want to use in Customer Journey Analytics.
+Inspect the segment that you want to use in Customer Journey Analytics.
 
 ![Customer Journey Analytics Use Filter Names To Filter](assets/cja-fishing-products.png){zoomable="yes"}
 
-You then can use that filter in an example **[!UICONTROL Using Date Range Names To Filter]** panel for the use case:
+You then can use that segment in an example **[!UICONTROL Using Segment Names To Segment]** panel for the use case:
 
 ![Customer Journey Analytics Distinct Count Values](assets/cja-using-filter-names-to-filter.png){zoomable="yes"}
 
@@ -1895,18 +1895,18 @@ You should see a visualization and table similar as shown below.
 +++
 
 
-## Use dimension values to filter
+## Use dimension values to segment
 
-You use the dynamic **[!UICONTROL Hunting]** value for **[!UICONTROL Product Category]** to filter products from the hunting category. Alternatively, for those BI tools that do not support the dynamic retrieval of product category values, you create a new filter in Customer Journey Analytics that filters on products from the hunting product category. 
-Then you want to use the new filter to report on product names and occurrences (events) for products from the hunting category during January 2023.
+You use the dynamic **[!UICONTROL Hunting]** value for **[!UICONTROL Product Category]** to segment products from the hunting category. Alternatively, for those BI tools that do not support the dynamic retrieval of product category values, you create a new segment in Customer Journey Analytics that segments on products from the hunting product category. 
+Then you want to use the new segment to report on product names and occurrences (events) for products from the hunting category during January 2023.
 
 +++ Customer Journey Analytics
 
-Create a new filter with **[!UICONTROL Title]** `Hunting Products` in Customer Journey Analytics.
+Create a new segment with **[!UICONTROL Title]** `Hunting Products` in Customer Journey Analytics.
 
-![Customer Journey Analytics Use Dimension Values To Filter](assets/cja-hunting-products.png){zoomable="yes"}
+![Customer Journey Analytics Use Dimension Values To Segment](assets/cja-hunting-products.png){zoomable="yes"}
 
-You then can use that filter in an example **[!UICONTROL Using Dimension Values To Filter]** panel for the use case:
+You then can use that segment in an example **[!UICONTROL Using Dimension Values To Filter]** panel for the use case:
 
 ![Customer Journey Analytics Distinct Count Values](assets/cja-using-dimension-values-to-filter.png){zoomable="yes"}
 
