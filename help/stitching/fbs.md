@@ -31,27 +31,28 @@ Field based stitching supports the use of the [`identifyMap` field group](https:
     <tr>
       <td>ECID</td>
       <td>
-      
-      ```json
-      {
-        { "id": "ecid-3" },
-        { "id": "ecid-2", "primary": true }.
-        { "id": "ecid-2", "primary": true }
-      }
-      ```
 
+        ```json
+        [
+           { "id": "ecid-3" },
+           { "id": "ecid-2", "primary": true }.
+           { "id": "ecid-2", "primary": true }
+        ]
+        ```
+
+      </td>
     </tr>
     <tr>
       <td>CCID</td>
       <td>
       
       ```json
-      {
+      [
         {"id": "ccid-1"},
         {"id": "ccid-2", "primary": true }
-      }
+      ]
       ``` 
-      
+
       </td>
     </tr>
   </table>
