@@ -23,16 +23,33 @@ Field based stitching supports the use of the [`identifyMap` field group](https:
   
   Example:
 
-  | Namespaces | Identities list |
-  |---|---|
-  | ECID | <code>{<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>&nbsp;}</code> |
-  | CCID | <code>{<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true},<br/>&nbsp;}</code> |
+  <table>
+    <tr>
+      <th>Namespaces</th>
+      <th>Identities list</th>
+    </tr>
+    <tr>
+      <td>ECID</td>
+      <td><code>{<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>&nbsp;}</code> </td>
+    </tr>
+    <tr>
+      <td>CCID</td>
+      <td><code>{<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true},<br/>&nbsp;}</code></td>
+    </tr>
+  </table>
 
   results in
 
-  | Sorted identities list | Selected identity |
-  |---|---|
-  | <code>PrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-2", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-1", "namespace": "ECID"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "namespace": "ECID"}<br/>&nbsp;]<br/>&nbsp;NonPrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-1", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-3", "namespace": "ECID"}<br/>]</code> | <code>"id": "ccid-1",<br/>&nbsp;"namespace": "CCID"</code> |
+  <table>
+    <tr>
+      <th>Sorted identities list</th>
+      <th>Selected identity</th>
+    </tr>
+    <tr>
+      <td><code>PrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-2", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-1", "namespace": "ECID"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "namespace": "ECID"}<br/>&nbsp;]<br/>&nbsp;NonPrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-1", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-3", "namespace": "ECID"}<br/>]</code> </td>
+      <td><code>"id": "ccid-1",<br/>&nbsp;"namespace": "CCID"</code> </td>
+    </tr>
+  </table>
 
 
 - Use for `identityMap` namespace to define either persistentID or transientID or both:
@@ -41,17 +58,33 @@ Field based stitching supports the use of the [`identifyMap` field group](https:
 
   Example:
 
-  | Namespaces | Identities list |
-  |---|---|
-  | ECID | <code>{<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>&nbsp;}</code> |
-  | CCID | <code>{<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true},<br/>&nbsp;}</code> |
+    <table>
+    <tr>
+      <th>Namespaces</th>
+      <th>Identities list</th>
+    </tr>
+    <tr>
+      <td>ECID</td>
+      <td><code>{<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>&nbsp;}</code> </td>
+    </tr>
+    <tr>
+      <td>CCID</td>
+      <td><code>{<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true},<br/>&nbsp;}</code></td>
+    </tr>
+  </table>
 
   results in
 
-  | Sorted identities list | Selected identity |
-  |---|---|
-  | <code>[<br/>&nbsp;&nbsp;"id": "ecid-1",<br/>&nbsp;&nbsp;"id": "ecid-2",<br/>&nbsp;&nbsp;"id": "ecid-3"<br/>&nbsp;]</code> | <code>"id": "ecid-1",<br/>"namespace": "ECID"</code> |  
-
+  <table>
+    <tr>
+      <th>Sorted identities list</th>
+      <th>Selected identity</th>
+    </tr>
+    <tr>
+      <td><<code>[<br/>&nbsp;&nbsp;"id": "ecid-1",<br/>&nbsp;&nbsp;"id": "ecid-2",<br/>&nbsp;&nbsp;"id": "ecid-3"<br/>&nbsp;]</code> </td>
+      <td><<code>"id": "ecid-1",<br/>"namespace": "ECID"</code> </td>
+    </tr>
+  </table>
 
 ## How field-based stitching works
 
