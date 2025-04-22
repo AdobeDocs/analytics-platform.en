@@ -153,8 +153,8 @@ You can provide Product profile administration access to a team lead of a third 
 
 You want to give users access to data from one day only. Here is how you would limit access to those specific rows:
 
-1. Create a filter in [!UICONTROL Settings] of a specific data view, where [!UICONTROL Day] equals the date you want them to have data access to. See [Create data view](/help/data-views/create-dataview.md#settings-filters) for more information.
-1. Save the data view, which applies the filter to the data part of the datasets in the underlying connection. Any rows that don't fit the filter definition are automatically excluded from the data view and not available to Analysis Workspace when using this data view.
+1. Create a segment in [!UICONTROL Settings] of a specific data view, where [!UICONTROL Day] equals the date you want them to have data access to. See [Create data view](/help/data-views/create-dataview.md#settings-filters) for more information.
+1. Save the data view, which applies the segment to the data part of the datasets in the underlying connection. Any rows that don't fit the segment definition are automatically excluded from the data view and not available to Analysis Workspace when using this data view.
 1. Create a new [Product profile](#product-profile-admin-role) in the Admin Console, add users to the product profile, and include only this specific data view to the product profile.
 
 ### Value-level access control

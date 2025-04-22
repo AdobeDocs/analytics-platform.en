@@ -132,7 +132,7 @@ Your configuration requires the selection of a [Data view](/help/data-views/data
    You can perform the following actions:
 
    * To search for a specific data view, use the ![Search](/help/assets/icons/Search.svg) field.
-   * To segment the list of available data views, select ![Show segments](/help/assets/icons/Filter.svg). You can filter the list on [!UICONTROL Connection], [!UICONTROL Owner] and [!UICONTROL Sandbox].<br/>Use ![Hide](/help/assets/icons/Filter.svg) **[!UICONTROL Hide segments]** to hide the segment pane.
+   * To filter the list of available data views, select ![Show filter](/help/assets/icons/Filter.svg). You can filter the list on [!UICONTROL Connection], [!UICONTROL Owner] and [!UICONTROL Sandbox].<br/>Use ![Hide](/help/assets/icons/Filter.svg) **[!UICONTROL Hide segments]** to hide the segment pane.
    * To define which columns to show in the table, select ![Column Settings](/help/assets/icons/ColumnSetting.svg). Select which columns to display in the **[!UICONTROL Customize table]** dialog and select **[!UICONTROL Apply]** to apply the changes.
   
 1. Select ![SelectBox](/help/assets/icons/SelectBox.svg) the data view that you want to use.
