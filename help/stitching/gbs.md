@@ -18,10 +18,37 @@ In graph based stitching, you specify an event dataset as well as the persistent
 Graph based stitching supports the use of the [`identifyMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) in the following scenarios:
 
 - Use of the primary identity in `identityMap` namespace to define the persistentID:
-  - If multiple primary identities found in different namespaces, the namespaces are sorted alphabetically and the first identity in the sorted namespaces is selected.
-  - If multiple primary identities are found in a single namespace, first available primary identity is selected.
+  - If multiple primary identities found in different namespaces, the identities in the namespaces are sorted lexigraphically and the first identity is selected.
+  - If multiple primary identities are found in a single namespace, the first lexicographical available primary identity is selected.
+
+  Example:
+
+  | Namespaces | Identities list |
+  |---|---|
+  | ECID | <code>{<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>&nbsp;}</code> |
+  | CCID | <code>{<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true},<br/>&nbsp;}</code> |
+
+  results in
+
+  | Sorted identities list | Selected identity |
+  |---|---|
+  | <code>PrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-2", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-1", "namespace": "ECID"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "namespace": "ECID"}<br/>&nbsp;]<br/>&nbsp;NonPrimaryIdentities [<br/>&nbsp;&nbsp;{"id": "ccid-1", "namespace": "CCID"},<br/>&nbsp;&nbsp;{"id": "ecid-3", "namespace": "ECID"}<br/>]</code> | <code>"id": "ccid-1",<br/>&nbsp;"namespace": "CCID"</code> |
+
 - Use for `identityMap` namespace to define the persistentID:
-  - If multiple values for persitentID are found in an `identityMap` namespace, the first available value is used.
+  - If multiple values for persitentID are found in an `identityMap` namespace, the first lexicographical available identity is used.
+
+  Example:
+
+  | Namespaces | Identities list |
+  |---|---|
+  | ECID | <code>{<br/>&nbsp;&nbsp;{"id": "ecid-3"},<br/>&nbsp;&nbsp;{"id": "ecid-2", "primary": true},<br/>&nbsp;&nbsp;{"id": "ecid-1", "primary": true}<br/>&nbsp;}</code> |
+  | CCID | <code>{<br/>&nbsp;&nbsp;{"id": "ccid-1"},<br/>&nbsp;&nbsp;{"id": "ccid-2", "primary": true},<br/>&nbsp;}</code> |
+
+  results in
+
+  | Sorted identities list | Selected identity |
+  |---|---|
+  | <code>[<br/>&nbsp;&nbsp;"id": "ecid-1",<br/>&nbsp;&nbsp;"id": "ecid-2",<br/>&nbsp;&nbsp;"id": "ecid-3"<br/>&nbsp;]</code> | <code>"id": "ecid-1",<br/>"namespace": "ECID"</code> |  
 
 
 ## How graph-based stitching works
