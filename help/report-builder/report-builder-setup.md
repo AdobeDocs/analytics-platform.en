@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 ---
 # Report Builder Set Up
 
-You can quickly access Report Builder using the Excel Add-in menu.
+You can access Report Builder using the Excel Add-in menu.
 
 ## Requirements
 
@@ -36,9 +36,9 @@ Report Builder for Customer Journey Analytics is supported on the following oper
 - Supports all browsers and versions
 
 
-## Report Builder Excel Add-in
+## Report Builder Excel add-in
 
-You must install the Report Builder Excel Add-in to use Report Builder for Customer Journey Analytics. Once you install the Report Builder Excel Add-in, you can access Report Builder from within an open Excel workbook.
+You must install the Report Builder Excel add-in to use Report Builder for Customer Journey Analytics. Once you install the Report Builder Excel add-in, you can access Report Builder from within an open Excel workbook.
 
 ### Download and install the Report Builder Add-in
 
@@ -46,55 +46,57 @@ To download and install the Report Builder Add-in
 
 1. Launch Excel and open a new workbook.
 
-1. Select Insert > Get Add-ins.
+1. Select **[!UICONTROL Insert]** > **[!UICONTROL Add-ins]** >  **[!UICONTROL Get Add-ins]** from the main menu.
 
-1. In the Office Add-ins dialog, select the Store tab.
+1. In the Office Add-ins dialog, select the **[!UICONTROL Store]** tab.
 
-1. Search for "Report Builder" and click Add.
+1. Search for `Report Builder` and select **[!UICONTROL Add]**.
 
-1. In the License terms and privacy policy dialog box, click Continue.
+1. In the License terms and privacy policy dialog box, select **[!UICONTROL Continue]**.
 
-**If the Store tab isn't displayed**
+If the **[!UICONTROL Store]** tab isn't displayed:
 
-1. In Excel, select File > Account >Manage Settings.
+1. In Excel, select **[!UICONTROL File]** > **[!UICONTROL Account]** > **[!UICONTROL Manage Settings]** from the main menu.
 
-1. Check the box next to "Enable optional connected experiences"
+1. Check the box next to **[!UICONTROL Enable optional connected experiences]**.
 
 1. Restart Excel.
 
-**If your organization blocks access to the Microsoft Store**
+If your organization blocks access to the Microsoft Store:
 
-Reach out to your IT or security team to request approval for the Report Builder Add-in. After approval is granted, in the Office Add-ins dialog, select the Admin Managed tab.
+- Reach out to your IT or security team to request approval for the Report Builder Add-in. After approval is granted, in the Office **[!UICONTROL Add-ins]** dialog, select the **[!UICONTROL Admin Managed]** tab.
 
-![The Admin Managed tab in Office Add-ins dialog.](./assets/image1.png)
+  ![The Admin Managed tab in Office Add-ins dialog.](./assets/image1.png)
 
 After installing the Report Builder Add-in, the Report Builder icon is displayed in the Excel ribbon under the Home tab.
 
 ![The Report Builder icon in Excel](./assets/rb_app_icon.png)
 
+
 ## Log in to Report Builder
 
-After you install the Report Builder for Excel Add-in for your operating platform or browser, follow these steps to log in to Report Builder.
+After you have installed the Report Builder for Excel Add-in for your operating platform or browser, follow these steps to log in to Report Builder.
 
 1. Open an Excel workbook.
 
-1. Click the Report Builder icon to launch Report Builder.
+1. Select  ![AdobeLogoRedonWhite](/help/assets/icons/AdobeLogoRedonWhite.svg) **[!UICONTROL Report Builder]** to launch Report Builder.
 
-1. From the Adobe Report Builder toolbar, click **Login**.
+1. From the Adobe Report Builder toolbar, select **[!UICONTROL Login]**.
 
     ![Click the Report Builder login button.](./assets/rb_login.png)
 
-1. Enter your Adobe Experience ID account information. Your account information should match your Customer Journey Analytics credentials.
+1. Enter your Adobe account information. Your account information should match your Customer Journey Analytics credentials.
 
     ![Your login icon and organization.](./assets/image4.png)
 
 After you log in, your login icon and organization will appear at the top of the panel
 
+
 ## Switch organizations
 
-When you first log in, you are logged in to the default organization assigned to your profile.
+When you first log in, you are logged in to the default organization assigned to your profile or to the organization you have selected as part of the login flow.
 
-1. Click the name of the organization that is displayed when you log in.
+1. Select the name of the organization that is displayed when you log in.
 
 1. Select an organization from the list of available organizations. Only organizations that you have access to are listed.
 
@@ -106,8 +108,8 @@ You can sign out from Report Builder from the user profile.
 
 1. Save changes to any open workbooks.
 
-1. Click the avatar icon to display your user profile.
+1. Select the avatar icon to display your user profile.
 
     ![Your user profile avatar and the Sign Out button.](./assets/image6.png)
 
-1. Click **Sign Out**.
+1. Select **[!UICONTROL Sign Out]**.

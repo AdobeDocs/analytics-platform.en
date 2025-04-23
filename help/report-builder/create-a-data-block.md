@@ -41,7 +41,7 @@ Configure the initial data block parameters for the Data block location, Data vi
 
     Select **[!UICONTROL From Cell]** to define a start and end data based on a cell in the current sheet.
 
-1. Select **Next**.
+1. Select **[!UICONTROL Next]**.
 
     ![Screenshot showing the date range option and the active Next button.](./assets/choose_date_data_view3.png)
 
@@ -51,53 +51,52 @@ Configure the initial data block parameters for the Data block location, Data vi
 
 To build the data block, select report components, and then customize the layout.
 
-1. Add Dimensions, Metrics, and Segments.
+1. Add **[!UICONTROL Dimensions]**, **[!UICONTROL Metrics]**, and **[!UICONTROL Segments]** components.
 
-    Scroll the component lists or use the **search** field to locate components. Drag and drop components to the Table pane or double-click a component name in the list to automatically add the component to the Table pane.
+    Scroll the component lists or use the ![Search](/help/assets/icons/Search.svg) **[!UICONTROL _Search components_]**  field to locate components. Drag and drop components to the [!UICONTROL Table] pane or double-click a component name in the list to automatically add the component to the [!UICONTROL Table] pane.
 
     Double-click a component to add the component to a default section of the table.
 
-    - Dimension components are added to the Row section or to the Column section if you have a dimension already in the columns.
-    - Date components are added to the Column section.
-    - Segment components are added to the Segments section.
-
-### Start date as a Dimension
-
-Set the Start date as a dimension to clearly identify the start date of your data block. This is helpful if you have a regularly scheduled report that has a rolling date range or if you have an unconventional date range and you need to be clear of the start date.
-
-![Screenshot showing the Start date in the list of dimensions.](./assets/start-date-dimension.png)
+    - Dimension components are added to the ![TableSelectRow](/help/assets/icons/TableSelectRow.svg) **[!UICONTROL Row]** section or to the ![TableSelectColumn](/help/assets/icons/TableSelectColumn.svg) **[!UICONTROL Column]** section if you have a dimension already in the columns.
+    - Date components are added to the ![TableSelectColumn](/help/assets/icons/TableSelectColumn.svg) **[!UICONTROL Column]** section.
+    - Segment components are added to the ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]** section.
+    - Metrics components are added to the ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Values]** section.
 
 1. Arrange the items in the Table pane to customize the layout of your data block.
 
-    Drag and drop components in the Table pane to reorder components or right-click a component name and select from the options menu.
+    Drag and drop components in the Table pane to reorder components or select ![MoreSmall](/help/assets/icons/MoreSmall.svg) and select ![ArrowUp](/help/assets/icons/ArrowUp.svg) Move up, ![ArrowDown](/help/assets/icons/ArrowDown.svg) Move down, and more to move components within or around the .
 
     When you add components to the table, a preview of the data block is displayed at the Data block location in the worksheet. The layout of the data block preview automatically updates as you add, move, or remove items in the table.
 
     ![Screenshot showing the added components and updated worksheet.](./assets/image10.png)
 
-### Display or hide row and column headers
 
-1. Select the **[!UICONTROL Table]** ![Setting](/help/assets/icons/Setting.svg)settings icon.
+1. Optionally set the **[!UICONTROL Start date]** as a dimension to clearly identify the start date of your data block. This is helpful if you have a regularly scheduled report that has a rolling date range or if you have an unconventional date range and you need to be clear of the start date.
 
-    ![Screenshot showing the Table settings option.](./assets/table-settings.png)
+   ![Screenshot showing the Start date in the list of dimensions.](./assets/start-date-dimension.png)
 
-1. Check or uncheck the option to Display row and column headers. The headers are displayed by default.
+1. Optionally, display or hide row and column headers. To do so:
 
-### Hide or show dimension labels and metric headers
+   1. Select the **[!UICONTROL Table]** ![Setting](/help/assets/icons/Setting.svg)settings icon.
 
-Select the ellipsis icon on either the dimensions or the column headers to display the settings.
+      ![Screenshot showing the Table settings option.](./assets/table-settings.png)
 
-![The ellipsis icon in the Row section.](./assets/row-heading.png)
+   1. Check or uncheck the option to **[!UICONTROL Display row and column headers]**. The headers are displayed by default.
 
-1. Select ![VisibilityOff](/help/assets/icons/VisibilityOff.svg) **[!UICONTROL Hide]** or ![Visibility](/help/assets/icons/Visibility.svg) **[!UICONTROL Show]** to toggle the dimension labels or column headers. All labels are displayed by default.
+1. Optionally, you can also hide or show dimension labels and metric headers. To do so:
 
-1. Select **[!UICONTROL Finish]**.
+   1. Select ![MoreSmall](/help/assets/icons/MoreSmall.svg) on the dimension label or the column header to display the context menu.
 
+      ![The ellipsis icon in the Row section.](./assets/row-heading.png)
 
-A processing message is displayed while the analytics data is retrieved.
+   1. Select ![VisibilityOff](/help/assets/icons/VisibilityOff.svg) **[!UICONTROL Hide]** or ![Visibility](/help/assets/icons/Visibility.svg) **[!UICONTROL Show]** to toggle the dimension label or column header. All labels are displayed by default.
 
-![The processing message.](./assets/image11.png)
+1. Select **[!UICONTROL Finish]** to finish the configuration of your data block.
 
-Report Builder retrieves the data and displays the completed data block in the worksheet.
+1. A processing message **[!UICONTROL #BUSY]** is displayed while the analytics data is retrieved.
 
-![The completed data block.](./assets/image12.png)
+   ![The processing message.](./assets/image11.png)
+
+1. Report Builder retrieves the data and displays the completed data block in the worksheet.
+
+   ![The completed data block.](./assets/image12.png)

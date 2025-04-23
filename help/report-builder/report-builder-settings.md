@@ -19,38 +19,35 @@ To change Report Builder settings
 
 1. Click **Apply**.
 
-    ![Report Builder date range pane showing the Cancel and Apply button.](./assets/image38.png)
+    ![Report Builder date range pane showing the Cancel and Apply button.](./assets/report-builder-settings.png)
 
 ## Off-line mode
 
-When creating and editing a data block in off-line mode, data is not retrieved. Instead, simulation data is used so that you can quickly create and edit a data block without waiting for the request to run. When you are back online, the *Refresh data block* command or *Refresh all data blocks* command refreshes the data blocks that you created with actual data.
+When you create and edit a data block in off-line mode, data is not retrieved. Instead, simulation data is used so that you can quickly work without waiting for the request to run. When you are back online, ![Refresh](/help/assets/icons/Refresh.svg) **[!UICONTROL Refresh data block]**  or ![DocumentRefresh](/help/assets/icons/DocumentRefresh.svg) **[!UICONTROL Refresh all data blocks]** refreshes the data blocks with actual data.
 
 To enable off-line mode
 
-1. Click the **Settings** icon.
+1. Select the ![Setting](/help/assets/icons/Setting.svg).
 
-1. Select **Enable off-line mode**.
+1. Toggle **[!UICONTROL Enable off-line mode]** on.
 
-1. Enter a positive integer in the **Display metric data as** field.
+1. Enter a positive integer in the **[!UICONTROL Display metric data]** as field.
 
-1. Click **Apply**.
+1. Click **[!UICONTROL Apply]**.
+
 
 ## Language
 
-You can choose the language for the Report Builder UI. All supported Adobe Analytics languages are available.
+You can choose the language for the Report Builder interface. All supported Customer Journey Analytics languages are available.
 
-To select the language used in the Report Builder UI
+To select the language used in the Report Builder interface:
 
- 1. Click Settings.
+1. Select a language from the **[!UICONTROL Language]** drop-down menu.
 
- 1. Select a language from the **Language** drop down menu.
-
-     ![Report Builder date range pane showing the Language list with English selected.](./assets/image39.png)
-
- 1. Click **Apply.**
+1. Select **Apply.**
 
 ## Troubleshooting
 
-Use the Troubleshooting setting to log all client/server data to a local file. Use this option to help resolve support tickets.
+The **[!UICONTROL Troubleshooting logs]** setting logs all client/server data to a local file. Use this option to help resolve support tickets.
 
-To enable the Troubleshooting option, select **Log report builder request to local file**.
+To enable troubleshooting logs, check **[!UICONTROL Log report builder request to local file]**.

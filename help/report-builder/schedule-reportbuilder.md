@@ -9,11 +9,11 @@ exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
 ---
 # Schedule Workbooks
 
-After you saved your workbook and completed your analysis, you can easily share your workbook with others on your team using the scheduling feature. The Schedule feature allows you to create a schedule that automatically refreshes the data in the workbook and emails the Excel workbook .xlsx file as an attachment to your specified audience at a specific date and time. Setting up a schedule provides recipients with regular updates&ndash;automatically. You can also use the schedule feature to send out the workbook once without scheduling automatic updates.
+After you saved your workbook and completed your analysis, you can easily share your workbook with others on your team using the scheduling feature. The schedule feature allows you to create a schedule that automatically refreshes the data in the workbook and emails the Excel workbook file as an attachment to your specified audience at a specific date and time. Setting up a schedule provides recipients with regular updates automatically. You can also use the schedule feature to send out the workbook once without scheduling automatic updates.
 
 You can create multiple schedules for a single workbook. For example, you can send a workbook to your team on a daily basis and you can send the workbook to your manager once a week by creating two different schedules.
 
-The Schedule feature also allows you to set up password protection for a workbook and edit previously scheduled workbooks.
+The schedule feature also allows you to set up password protection for a workbook and edit previously scheduled workbooks.
 
 
 >[!BEGINSHADEBOX]
@@ -27,17 +27,17 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schedule Workboo
 
 Use the Schedule task button in the Report Builder hub to quickly create a schedule so that you can automatically distribute a workbook Excel file (.xlsx) to an individual or a group.
 
-1. Click the Schedule button in the Report Builder hub.
+1. Select  **[!UICONTROL Schedule]** in the Report Builder hub.
 
-    ![Click the Schedule button to create a schedule.](./assets/schedule-button.png){width="55%"}
+    ![Click the Schedule button to create a schedule.](./assets/schedule.png)
 
-1. Click Schedule Workbook or the plus button in the upper-left to create a new scheduled workbook.
+1. Select **[!UICONTROL Schedule Workbook]** or ![Add](/help/assets/icons/Add.svg) to create a new scheduled workbook.
 
-    ![The Schedule workbooks window.](./assets/schedule-workbook.png){width="55%"}
+    ![The Schedule workbooks window.](./assets/schedule-workbook.png)
 
     The scheduling pane displays some pre-defined information about the workbook such as the workbook name and the last date that the workbook was modified.
 
-    ![The scheduling pane.](./assets/schedule-pane.png){width="55%"}
+    ![The scheduling pane.](./assets/schedule-pane.png)
 
 1. (Optional) Enter a file name.
 
