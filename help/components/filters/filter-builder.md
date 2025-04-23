@@ -1,7 +1,7 @@
 ---
 description: The Segment builder provides a canvas to drag and drop Metric Dimensions, Segments, and Events to segment persons based on container hierarchy logic, rules, and operators. This integrated development tool lets you build and save simple or complex segments that identify person attributes and actions across visits and events.
 title: Build segments
-feature: Filters
+feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
 ---
