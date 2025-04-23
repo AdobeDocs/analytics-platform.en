@@ -2,7 +2,7 @@
 title: Create segments
 description: Understand the segment creation user interface.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
-feature: Filters
+feature: Filters, Segments
 role: User
 ---
 # Create segments

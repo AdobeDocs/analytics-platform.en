@@ -1,7 +1,7 @@
 ---
 description: You can set up a workflow that includes approving segments for various levels of application, for specific departments or groups, and consistent with reporting policies.
 title: Approve segments
-feature: Filters
+feature: Filters, Segments
 exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
 role: User
 ---

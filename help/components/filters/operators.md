@@ -2,7 +2,7 @@
 title: Operators
 description: Determine how a component interacts with a value within a segment.
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
-feature: Filters
+feature: Filters, Segments
 role: User
 ---
 # Operators

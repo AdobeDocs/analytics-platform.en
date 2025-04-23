@@ -2,7 +2,7 @@
 title: Segmentation overview
 description: Understand what segments are used for and how to create a simple segment.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-feature: Filters
+feature: Filters, Segments
 role: User
 ---
 
