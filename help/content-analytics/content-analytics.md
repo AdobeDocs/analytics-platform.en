@@ -8,8 +8,6 @@ exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 ---
 # Content Analytics overview
 
-{{release-limited-testing}}
-
 Content Analytics helps marketers to understand how content impacts the key performance indicators that a business has defined. On top of the behavioral data, Content Analytics collects data on how content is consumed and how content drives impact. For example, do customers respond better to a specific tone of voice, a specific color palette, or specific themes? This information, together with specifically designed reporting workflows and templates, can help you to perform even better analysis and gain deeper insights on customer journey data in Customer Journey Analytics. 
 
 Content Analytics uses an AI and machine learning based **featurization service** to break content down into components and attributes. By creating a structured metadata profile on all your content, you can analyze what content and what attributes of that content drives business results. 

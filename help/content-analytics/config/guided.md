@@ -8,9 +8,6 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 ---
 # Content Analytics guided configuration
 
-{{release-limited-testing}}
-
-
 The guided configuration helps you to configure Content Analytics quickly and easily. The guided configuration uses a wizard to set up the requirements to configure Content Analytics automatically for your organization. In the **[!UICONTROL Configuration]** screen, you can either create a new configuration or edit an existing configuration. 
 
 >[!IMPORTANT]
