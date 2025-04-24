@@ -17,7 +17,7 @@ Configure the initial data block parameters for the Data block location, Data vi
 
 1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create]**.
 
-    ![Screenshot showing the Create data block option.](./assets/create-datablock.png)
+    ![Screenshot showing the Create data block option.](./assets/create-datablock.png){zoomable="yes}
 
 1. Set the **[!UICONTROL Data block location]**.
 
@@ -25,7 +25,7 @@ Configure the initial data block parameters for the Data block location, Data vi
 
     To specify the data block location, select a single cell in the worksheet or enter a cell address such as `a3`, `\\\$a3`, `a\\\$3` or `sheet1!a2`. The cell specified will be the upper-left corner of the data block when the data is retrieved.
 
-    Use ![DataBlockSelector](/help/assets/icons/DataBlockSelector.svg) to pick a Data block location from the current selected cell in the sheet.
+    Use ![DataBlockSelector](/help/assets/icons/DataBlockSelector.svg) to pick a data block location from the current selected cell in the sheet.
 
 1. Choose the **[!UICONTROL Data views]**.
 
@@ -35,11 +35,13 @@ Configure the initial data block parameters for the Data block location, Data vi
 
 1. Set the **[!UICONTROL Date range]**.
 
-    The Date range option allows you to choose a date range. Date ranges may be fixed or rolling. For information about date range options, see [Select a Date Range](select-date-range.md).
+    The **[!UICONTROL Date range]** option allows you to choose a date range. Date ranges may be fixed or rolling. 
 
     Select **[!UICONTROL Calendar]** to pick a data range using ![Calendar](/help/assets/icons/Calendar.svg) or enter a date range manually. Optionally, you can pick a preset drom the Search Presets drop-down menu.
 
-    Select **[!UICONTROL From Cell]** to define a start and end data based on a cell in the current sheet.
+    Select **[!UICONTROL From cell]** to define a start and end data based on a cell in the current sheet.
+
+    For information about date range options, see [Select a date range](select-date-range.md).
 
 1. Select **[!UICONTROL Next]**.
 
@@ -53,9 +55,9 @@ To build the data block, select report components, and then customize the layout
 
 1. Add **[!UICONTROL Dimensions]**, **[!UICONTROL Metrics]**, and **[!UICONTROL Segments]** components.
 
-    Scroll the component lists or use the ![Search](/help/assets/icons/Search.svg) **[!UICONTROL _Search components_]**  field to locate components. Drag and drop components to the [!UICONTROL Table] pane or double-click a component name in the list to automatically add the component to the [!UICONTROL Table] pane.
+    Scroll the component lists or use the ![Search](/help/assets/icons/Search.svg) **[!UICONTROL _Search components_]**  field to locate components. Drag and drop components to the [!UICONTROL Table] pane or Double select a component name in the list to automatically add the component to the [!UICONTROL Table] pane.
 
-    Double-click a component to add the component to a default section of the table.
+    Double select a component to add the component to a default section of the table.
 
     - Dimension components are added to the ![TableSelectRow](/help/assets/icons/TableSelectRow.svg) **[!UICONTROL Row]** section or to the ![TableSelectColumn](/help/assets/icons/TableSelectColumn.svg) **[!UICONTROL Column]** section if you have a dimension already in the columns.
     - Date components are added to the ![TableSelectColumn](/help/assets/icons/TableSelectColumn.svg) **[!UICONTROL Column]** section.
@@ -100,3 +102,12 @@ To build the data block, select report components, and then customize the layout
 1. Report Builder retrieves the data and displays the completed data block in the worksheet.
 
    ![The completed data block.](./assets/image12.png)
+
+
+>[!MORELIKETHIS]
+>
+>[Select a data view](select-data-view.md)
+>[Select a date range](select-date-range.md)
+>[Filter dimensions](filter-dimensions.md)
+>[Work with segments](work-with-filters.md)
+>

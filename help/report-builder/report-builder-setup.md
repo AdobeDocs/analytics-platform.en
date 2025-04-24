@@ -66,11 +66,11 @@ If your organization blocks access to the Microsoft Store:
 
 - Reach out to your IT or security team to request approval for the Report Builder Add-in. After approval is granted, in the Office **[!UICONTROL Add-ins]** dialog, select the **[!UICONTROL Admin Managed]** tab.
 
-  ![The Admin Managed tab in Office Add-ins dialog.](./assets/image1.png)
+  ![The Admin Managed tab in Office Add-ins dialog.](./assets/image1.png){zoomable="yes"}
 
 After installing the Report Builder Add-in, the Report Builder icon is displayed in the Excel ribbon under the Home tab.
 
-![The Report Builder icon in Excel](./assets/rb_app_icon.png)
+![The Report Builder icon in Excel](./assets/rb_app_icon.png){zoomable="yes"}
 
 
 ## Log in to Report Builder
@@ -83,11 +83,11 @@ After you have installed the Report Builder for Excel Add-in for your operating 
 
 1. From the Adobe Report Builder toolbar, select **[!UICONTROL Login]**.
 
-    ![Click the Report Builder login button.](./assets/rb_login.png)
+    ![Click the Report Builder login button.](./assets/rb_login.png){zoomable="yes"}
 
 1. Enter your Adobe account information. Your account information should match your Customer Journey Analytics credentials.
 
-    ![Your login icon and organization.](./assets/image4.png)
+    ![Your login icon and organization.](./assets/image4.png){zoomable="yes"}
 
 After you log in, your login icon and organization will appear at the top of the panel
 
@@ -100,7 +100,7 @@ When you first log in, you are logged in to the default organization assigned to
 
 1. Select an organization from the list of available organizations. Only organizations that you have access to are listed.
 
-    ![The list of organizations that you can access.](./assets/image5.png)
+    ![The list of organizations that you can access.](./assets/image5.png){zoomable="yes"}
 
 ## Sign out
 
@@ -110,6 +110,6 @@ You can sign out from Report Builder from the user profile.
 
 1. Select the avatar icon to display your user profile.
 
-    ![Your user profile avatar and the Sign Out button.](./assets/image6.png)
+    ![Your user profile avatar and the Sign Out button.](./assets/image6.png){zoomable="yes"}
 
 1. Select **[!UICONTROL Sign Out]**.

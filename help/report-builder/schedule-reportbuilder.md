@@ -29,11 +29,11 @@ To schedule a workbook:
 
 1. Select **[!UICONTROL Schedule]** in the Report Builder hub to create a schedule so that you can automatically distribute a workbook Excel file (.xlsx) to an individual or a group.
 
-   ![Click the Schedule button to create a schedule.](./assets/schedule.png)
+   ![Select the Schedule button to create a schedule.](./assets/schedule.png){zoomable="yes"}
 
 1. Select **[!UICONTROL Schedule Workbook]** or ![Add](/help/assets/icons/Add.svg) to create a new scheduled workbook.
 
-    ![The Schedule workbooks window.](./assets/schedule-workbook.png)
+    ![The Schedule workbooks window.](./assets/schedule-workbook.png){zoomable="yes"}
 
     The scheduling pane displays some pre-defined information about the workbook such as the workbook name and the last date that the workbook was modified.
 
@@ -41,7 +41,7 @@ To schedule a workbook:
 
 In the **[!UICONTROL File]** section you provide details of the file type, name and a password to protect the file.
 
-![The scheduling pane.](./assets/schedule-pane.png)
+![The scheduling pane.](./assets/schedule-pane.png){zoomable="yes"}
 
 1. Use ![TableSelect](/help/assets/icons/TableSelect.svg) to select the current workbook, if not already selected.
 
@@ -69,7 +69,7 @@ In the **[!UICONTROL File]** section you provide details of the file type, name 
 
     When you make this selection, you're prompted to enter a password to open the file. This is helpful if you have concerns about data security and you want to password protect the workbook. Protecting the file with a password requires you to select **.zip compression**. The password must be at least 8 characters and contain a number and a special character.
 
-    ![Enter a password in the Password protect the workbook field.](./assets/zip-compression.png){width="55%"}
+    ![Enter a password in the Password protect the workbook field.](./assets/zip-compression.png){zoomable="yes"}{width="55%"}
 -->
 
 1. Enter a password in **[!UICONTROL Password protect the workbook]**. A valid password requires at least 8 characters, a number, and a special character. Select ![VisibilityOff](/help/assets/icons/VisibilityOff.svg) to display the password and ![Visibility](/help/assets/icons/Visibility.svg) to hide the password (default).
@@ -79,18 +79,20 @@ In the **[!UICONTROL File]** section you provide details of the file type, name 
 
 In the **[!UICONTROL Email]** section you provide recipients, subject and description of the email.
 
-![Schedule email settings](assets/schedule-email.png)
+![Schedule email settings](assets/schedule-email.png){zoomable="yes"}
 
 1. Enter **Recipients**. You can enter the name of a person that is recognized in your organization, or you can enter an email address of a person or outside of your organization.
 
 1. Enter the **Subject** of the email and a description for your recipients. The subject defaults to the workbook file name but you can modify the subject if needed. You can add details in the description section.
+
+1. You can optionally enter a description in the **[!UICONTROL Description]** text area.
 
 
 ### Schedule
 
 In the **[!UICONTROL Schedule]** section you can define the schedule to send the emails with the workbook to your recipients.
 
-![Schedule definition](assets/schedule-enable.png)
+![Schedule definition](assets/schedule-enable.png){zoomable="yes"}
 
 1. Select **[!UICONTROL Show scheduling options]** to define a schedule.
 
@@ -130,7 +132,7 @@ You can view and manage all scheduled workbooks in the **[!UICONTROL Workbooks]*
 
 1. Select the **[!UICONTROL Workbooks]** tab. You see a list of all scheduled workbooks.
 
-   ![Scheduled workbook](assets/scheduled-workbooks.png)
+   ![Scheduled workbook](assets/scheduled-workbooks.png){zoomable="yes"}
 
    You can hover over the icon to see the status of a scheduled workbook.
 
@@ -139,7 +141,7 @@ You can view and manage all scheduled workbooks in the **[!UICONTROL Workbooks]*
 
 1. Select one or more workbooks.
 
-   ![Schedule workbooks selected](assets/scheduled-workbooks-selected.png)
+   ![Schedule workbooks selected](assets/scheduled-workbooks-selected.png){zoomable="yes"}
    
    The following options are available:
 
@@ -161,14 +163,14 @@ You can view the history and status of scheduled workbooks in the **[!UICONTROL 
 
 1. Select the **[!UICONTROL History]** tab. You see a list of all scheduled workbooks.
 
-   ![Scheduled history](assets/scheduled-workbooks-history.png)
+   ![Scheduled history](assets/scheduled-workbooks-history.png){zoomable="yes"}
 
    Use ![Search](/help/assets/icons/Search.svg) to search for specific workbooks in the list.
    Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) to define which columns to show.
 
    The **[!UICONTROL History]** tab allows you to review the status of each scheduled task. A separate row documents the status change for each scheduled task.
 
-   * A green ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) indicates that the workbook was sent successfully. 
+   * A ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) indicates that the workbook was sent successfully. 
    * A ![AlertRed](/help/assets/icons/AlertRed.svg) indicates that an error occurred.
 
 Alternatively, you can select ![History](/help/assets/icons/History.svg) for one or more selected workbooks in the **[!UICONTROL Workbooks]** tab. This action will show the **[!UICONTROL History]** tab with a list filtered by your selection. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a filter.

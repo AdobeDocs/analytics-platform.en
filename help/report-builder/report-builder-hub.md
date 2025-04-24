@@ -7,18 +7,16 @@ type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 solution: Customer Journey Analytics
 ---
-# Report Builder Hub
+# Report Builder hub
 
 Use the Report Builder hub to create, update, delete, and manage data blocks.
 
-The Report Builder hub contains the  Create and Manage buttons, the COMMANDS list, and the QUICK EDIT panels.
+The Report Builder hub contains the  ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create]**, ![TableManage](/help/assets/icons/TableManage.svg) **[!UICONTROL Manage]** and ![Calendar](/help/assets/icons/Calendar.svg) **[!UICONTROL Schedule]** buttons, the **[!UICONTROL Commands]** panel, and the **[!UICONTROL Quick edit]** panel.
 
-![Report Builder hub](assets/hub51.png)
+![Report Builder hub](assets/hub51.png){zoomable="yes"}
 
 
-## Create and Manage buttons
-
-Use  ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create]** to create new data blocks. Use ![TableManage](/help/assets/icons/TableManage.svg) **[!UICONTROL Manage]** to manage existing data blocks.
+Use  ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create]** to [create new data blocks](create-a-data-block.md).  Use ![TableManage](/help/assets/icons/TableManage.svg) **[!UICONTROL Manage]** to [manage existing data blocks](manage-reportbuilder.md).
 
 ## Commands panel
 
@@ -56,3 +54,10 @@ To change the data view, select a new data view from the **[!UICONTROL Data view
 ### Segments
 
 The **Segments** link displays a summary list of the segments used by the selected data blocks. If multiple data blocks are selected with multiple segments applied, the **Segments** link displays **[!UICONTROL _Multiple_]**.
+
+>[!MORELIKETHIS]
+>
+>[Select data views](select-data-view.md)
+>[Select date range](select-date-range.md)
+>[Work with filters](work-with-filters.md)
+>

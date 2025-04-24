@@ -7,13 +7,13 @@ type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
 ---
-# Work with Segments in Report Builder
+# Work with segments
 
 You can apply segments when you create a new data block or when you select **[!UICONTROL Edit data block]** from the **[!UICONTROL Commands]** panel.
 
 ## Apply segments to a data block
 
-To apply a segment to the entire data block, double-click a segment or drag and drop segments from the components list into the segments section of the Table.
+To apply a segment to the entire data block, Double select a segment or drag and drop segments from the components list into the segments section of the Table.
 
 ## Apply filters to individual metrics
 
@@ -25,10 +25,12 @@ To apply filters using segments to individual metrics:
 
   1. Select ![MoreSmall](/help/assets/icons/MoreSmall.svg) for a specific metric in the **[!UICONTROL Table]** pane and then select **[!UICONTROL Filter metric]**. 
 
-   ![segments tab displaying metrics.](./assets/filter-metric.png)
+     ![segments tab displaying metrics.](./assets/filter-metric.png){zoomable="yes"}
 
   1. Select one or more segments from **[!UICONTROL Segments]** drop-down menu. The segments are added to the **[!UICONTROL Segments applied]** list.
-  1. Select ![MoreSmall](/help/assets/icons/MoreSmall.svg) to remove a segment from the **[!UICONTROL Segment applied]** list.
+
+     ![Segments applied](assets/segments-applied.png)
+  1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a segment from the **[!UICONTROL Segment applied]** list. Or select **[!UICONTROL Clear all]** to remove all segments from the **[!UICONTROL Segment applied]** list.
   1. Select **[!UICONTROL Apply]**.
 
 To view applied filters, hover over or select a metric in the Table pane. Metrics with applied segments display a segment icon.
@@ -55,10 +57,10 @@ You can add or remove segments using the Add/Remove options.
 
     
    1. Select one or more segments from **[!UICONTROL Segments]** drop-down menu. The segments are added to the **[!UICONTROL Segments applied]** list.
-   1. Select ![MoreSmall](/help/assets/icons/MoreSmall.svg) to remove a segment from the **[!UICONTROL Segment applied]** list.
+   1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a segment from the **[!UICONTROL Segment applied]** list.
    1. Select **[!UICONTROL Apply]**.
 
-    Report Builder displays a message to confirm the applied segment changes.
+Report Builder displays a message to confirm the applied segment changes.
 
 ### Replace segments
 
@@ -72,9 +74,9 @@ You can replace an existing segment with another segment to change how the data 
 
 1. Search for one or more segments from the Replace with dropdown-menu to add the segment to the **[!UICONTROL Replace with]** list.
 
-1. Click **[!UICONTROL Apply]**.
+1. Select **[!UICONTROL Apply]**.
 
-    Report Builder updates the list of segments to reflect the replacement.
+Report Builder updates the list of segments to reflect the replacement.
 
 ## Define data block segments from cell
 
@@ -86,17 +88,17 @@ To apply segments from a cell:
 1. Select the **[!UICONTROL Segments]** tab to define segments.
 1. Select ![DataViewSelector](/help/assets/icons/DataViewSelector.svg).
    
-   ![Select segment from cell](assets/select-segment-from-cell.png)
+   ![Select segment from cell](assets/select-segment-from-cell.png){zoomable="yes"}
 
 1. Select the cell from which you want the data blocks to reference a segment.
    
-1. Double click to add a segment to the cell. Alternatively, drag and drop one or more segments  into the **[!UICONTROL Segments included]** section. 
+1. Double select to add a segment to the cell. Alternatively, drag and drop one or more segments  into the **[!UICONTROL Segments included]** section. 
 
 1. Select **[!UICONTROL Apply]** to create the reference cell.
 
 1. From the **Segments** tab, add the newly created reference cell segment to your data block.
 
-    ![segments tab showing Sheet1!J1(All Data) segment added to the table.](assets/segment-from-cell-applied.png)
+    ![segments tab showing Sheet1!J1(All Data) segment added to the table.](assets/segment-from-cell-applied.png){zoomable="yes"}
 
 1. Select Finish.
 
@@ -108,8 +110,8 @@ Now this cell can be referenced by other data blocks in their segments. To apply
 
 1. Select the link under **[!UICONTROL Segments from cell]** in the **[!UICONTROL Quick Edit]** menu.
 
-    ![segments from cell link showing Sheet1!J1 (All Data)](assets/select-segment-from-cell-in-sheet.png)
+    ![segments from cell link showing Sheet1!J1 (All Data)](assets/select-segment-from-cell-in-sheet.png){zoomable="yes"}
 
 1. Select your segment from the drop-down menu.
 
-1. Click **[!UICONTROL Apply]**.
+1. Select **[!UICONTROL Apply]**.
