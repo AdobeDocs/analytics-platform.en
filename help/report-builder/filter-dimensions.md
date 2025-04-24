@@ -87,8 +87,9 @@ The tabel below lists minimum and maximum values for page and rows.
 
 |       | Minimum values | Maximum values |
 |-------|---------------:|---------------:|
-Starting page | 1| 50 million |
-Number of rows| 1| 50,000|
+| Starting page | 1| 50 million |
+| Number of rows| 1| 50,000|
+
 
 #### Include "No value"
 
