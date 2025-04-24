@@ -130,6 +130,15 @@ See [Create or edit a data view](/help/data-views/create-dataview.md) for more i
 
 ### Use a Journey Optimizer connection in Customer Journey Analytics {#use-connection-in-cja}
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_enable_cja"
+>title="Enable Customer Journey Analytics"
+>abstract="To analyze this report in Customer Journey Analytics, contact your administrator to make sure your organization has purchased Customer Journey Analytics and that the integration is properly configured."
+
+<!-- markdownlint-enable MD034 -->
+
 >[!IMPORTANT]
 >When you enable a Journey Optimizer connection for use with Customer Journey Analytics as described in this section, each Row of Data within the connection counts toward your billable Rows of Data each month for Customer Journey Analytics and appears within the Connections Usage UI. Select the **[!UICONTROL Use in CJA]** option on the connection only if you are comfortable with the additional usage of Rows of Data in Customer Journey Analytics. 
 >
