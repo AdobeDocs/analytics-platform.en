@@ -17,7 +17,7 @@ Configure the initial data block parameters for the Data block location, Data vi
 
 1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create]**.
 
-    ![Screenshot showing the Create data block option.](./assets/create-datablock.png){zoomable="yes}
+    ![Screenshot showing the Create data block option](./assets/create-data-block.png){zoomable="yes}
 
 1. Set the **[!UICONTROL Data block location]**.
 
