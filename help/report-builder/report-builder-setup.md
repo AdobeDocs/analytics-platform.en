@@ -7,13 +7,13 @@ type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
 ---
-# Report Builder Set Up
+# Report Builder set up
 
-You can access Report Builder using the Excel Add-in menu.
+This article outlines the requirements to use Report Builder for Customer Journey Analytics in Microsoft Excel. And how to install and set up the add-in.
 
 ## Requirements
 
-Report Builder for Customer Journey Analytics is supported on the following operating systems and web browsers.
+Report Builder for Customer Journey Analytics is supported on the following operating systems and Web browsers.
 
 ### macOS
 
@@ -25,20 +25,20 @@ Report Builder for Customer Journey Analytics is supported on the following oper
 - Windows 10, version 1904 or later
 - Excel Version 2106 or later
 
-  All Windows desktop Excel users must install Microsoft Edge Webview2 to use the add-in. To install the controller:
+  All Windows desktop Excel users must install Microsoft Edge Webview2 to use the add-in. To install:
 
-  1. Go to <https://aka.ms/webview2installer>.
-  1. Select and download the Evergreen Standalone Installer.
-  1. Follow the installation prompts.
+  1. Go to <https://developer.microsoft.com/en-us/microsoft-edge/webview2/>.
+  1. Select and download the appropriate version of the **[!UICONTROL Evergreen Standalone Installer]** for your platform.
+  1. Run the installer and follow the installation prompts.
 
 ### Web Office
 
-- Supports all browsers and versions
+- Supports all browsers and versions.
 
 
 ## Report Builder Excel add-in
 
-You must install the Report Builder Excel add-in to use Report Builder for Customer Journey Analytics. Once you install the Report Builder Excel add-in, you can access Report Builder from within an open Excel workbook.
+Install the Report Builder Excel add-in to use Report Builder for Customer Journey Analytics. Once you install the Report Builder Excel add-in, you can access Report Builder from within an open Excel workbook.
 
 ### Download and install the Report Builder Add-in
 
@@ -64,18 +64,18 @@ If the **[!UICONTROL Store]** tab isn't displayed:
 
 If your organization blocks access to the Microsoft Store:
 
-- Reach out to your IT or security team to request approval for the Report Builder Add-in. After approval is granted, in the Office **[!UICONTROL Add-ins]** dialog, select the **[!UICONTROL Admin Managed]** tab.
+- Reach out to your IT or security team to request approval for the Report Builder add-in. After approval is granted, in the Office **[!UICONTROL Add-ins]** dialog, select the **[!UICONTROL Admin Managed]** tab.
 
   ![The Admin Managed tab in Office Add-ins dialog.](./assets/image1.png){zoomable="yes"}
 
-After installing the Report Builder Add-in, the Report Builder icon is displayed in the Excel ribbon under the Home tab.
+After installing the Report Builder add-in, the ![AdobeLogoRedonWhite](/help/assets/icons/AdobeLogoRedonWhite.svg) **[!UICONTROL Report Builder]** icon is displayed in the Excel ribbon under the **[!UICONTROL Home]** tab.
 
 ![The Report Builder icon in Excel](./assets/rb_app_icon.png){zoomable="yes"}
 
 
 ## Log in to Report Builder
 
-After you have installed the Report Builder for Excel Add-in for your operating platform or browser, follow these steps to log in to Report Builder.
+After you have installed the Report Builder for Excel add-in for your operating platform or browser, follow these steps to log in to Report Builder.
 
 1. Open an Excel workbook.
 
@@ -104,7 +104,7 @@ When you first log in, you are logged in to the default organization assigned to
 
 ## Sign out
 
-You can sign out from Report Builder from the user profile.
+To sign out from Report Builder:
 
 1. Save changes to any open workbooks.
 

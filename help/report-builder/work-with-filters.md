@@ -49,7 +49,7 @@ To edit segments using the **[!UICONTROL Quick edit]** panel:
 1. Select the **[!UICONTROL Segments]** link to launch the **[!UICONTROL Quick edit]** **[!UICONTROL Segments]** panel.
 
 
-### Add or remove segmens
+### Add or remove segments
 
 You can add or remove segments using the Add/Remove options.
 
@@ -80,7 +80,7 @@ Report Builder updates the list of segments to reflect the replacement.
 
 ## Define data block segments from cell
 
-Data blocks can reference segments from a cell. Multiple data blocks can reference the same cell for segments, allowing you to easily switch segments for multiple data blocks at a time.
+Data blocks can reference segments from a cell. Multiple data blocks can reference the same cell for segments, allowing you to switch segments easily for multiple data blocks at a time.
 
 To apply segments from a cell:
 
@@ -92,7 +92,7 @@ To apply segments from a cell:
 
 1. Select the cell from which you want the data blocks to reference a segment.
    
-1. Double select to add a segment to the cell. Alternatively, drag and drop one or more segments  into the **[!UICONTROL Segments included]** section. 
+1. Double select to add a segment to the cell. Alternatively, drag and drop one or more segments into the **[!UICONTROL Segments included]** section. 
 
 1. Select **[!UICONTROL Apply]** to create the reference cell.
 
@@ -100,9 +100,9 @@ To apply segments from a cell:
 
     ![segments tab showing Sheet1!J1(All Data) segment added to the table.](assets/segment-from-cell-applied.png){zoomable="yes"}
 
-1. Select Finish.
+1. Select **[!UICONTROL Finish]**.
 
-Now this cell can be referenced by other data blocks in their segments. To apply the reference cell as a segment to other data blocks, simply use the cell reference as one of the segments from the **[!UICONTROL Segments]** tab. 
+To apply the reference cell as a segment to other data blocks, use the cell reference as one of the segments in the **[!UICONTROL Segments]** list in the **[!UICONTROL Table]** tab. 
 
 ### Use the reference cell to change data block segments
 

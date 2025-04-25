@@ -9,9 +9,9 @@ exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
 ---
 # Schedule Workbooks
 
-After you saved your workbook and completed your analysis, you can easily share your workbook with others on your team using the scheduling feature. The schedule feature allows you to create a schedule that automatically refreshes the data in the workbook and emails the Excel workbook file as an attachment to your specified audience at a specific date and time. Setting up a schedule provides recipients with regular updates automatically. You can also use the schedule feature to send out the workbook once without scheduling automatic updates.
+After you saved your workbook and completed your analysis, you can share your workbook with others on your team using the scheduling feature. The schedule feature allows you to create a schedule that automatically refreshes the data in the workbook. And emails the Excel workbook file as an attachment to your specified audience at a specific date and time. Setting up a schedule provides recipients with regular updates automatically. You can also use the schedule feature to send out the workbook once without scheduling automatic updates.
 
-You can create multiple schedules for a single workbook. For example, you can send a workbook to your team on a daily basis and you can send the workbook to your manager once a week by creating two different schedules.
+You can create multiple schedules for a single workbook. For example, you create two schedules to send a workbook to your team daily and to your manager once a week.
 
 The schedule feature also allows you to set up password protection for a workbook and edit previously scheduled workbooks.
 
@@ -39,7 +39,7 @@ To schedule a workbook:
 
 ### File
 
-In the **[!UICONTROL File]** section you provide details of the file type, name and a password to protect the file.
+In the **[!UICONTROL File]** section, you provide details of the file type, name and a password to protect the file.
 
 ![The scheduling pane.](./assets/schedule-pane.png){zoomable="yes"}
 
@@ -47,7 +47,7 @@ In the **[!UICONTROL File]** section you provide details of the file type, name 
 
 1. (Optional) Enter a **[!UICONTROL File name]**.
 
-    The workbook file name defaults to the name of the workbook but you can change this if you want.
+    The workbook file name defaults to the name of the workbook but you can change the file name if you want.
 
 1. Select a **[!UICONTROL File type]**.
 
@@ -59,7 +59,7 @@ In the **[!UICONTROL File]** section you provide details of the file type, name 
 
 1. (Optional) Select **[!UICONTROL Append time-stamp to file name]**.
 
-    You can append a timestamp to the file name to identify the date the workbook was updated. This is helpful to see which version of a workbook was sent on a specific date. When selected, you can choose between:
+    You can append a timestamp to the file name to identify the date the workbook was updated. A timestamp is helpful to see which version of a workbook was sent on a specific date. When selected, you can choose between:
 
     * **[!UICONTROL ISO Date format]**, which results in `YYYY-MM-DD` being appended to the filename.
     * **[!UICONTROL ISO Date format + time stamp]**, which results in `YYYY-MM-DD_HH-MM-SS` being appended to the filename.
@@ -77,11 +77,11 @@ In the **[!UICONTROL File]** section you provide details of the file type, name 
 
 ### Email
 
-In the **[!UICONTROL Email]** section you provide recipients, subject and description of the email.
+In the **[!UICONTROL Email]** section, you provide the recipients, subject and description of the email.
 
 ![Schedule email settings](assets/schedule-email.png){zoomable="yes"}
 
-1. Enter **Recipients**. You can enter the name of a person that is recognized in your organization, or you can enter an email address of a person or outside of your organization.
+1. Enter **Recipients**. You can enter the name of a person that is recognized in your organization. Or you can enter an email address of a person that is outside of your organization.
 
 1. Enter the **Subject** of the email and a description for your recipients. The subject defaults to the workbook file name but you can modify the subject if needed. You can add details in the description section.
 
@@ -90,7 +90,7 @@ In the **[!UICONTROL Email]** section you provide recipients, subject and descri
 
 ### Schedule
 
-In the **[!UICONTROL Schedule]** section you can define the schedule to send the emails with the workbook to your recipients.
+In the **[!UICONTROL Schedule]** section, you can define the schedule to send the emails with the workbook to your recipients.
 
 ![Schedule definition](assets/schedule-enable.png){zoomable="yes"}
 
@@ -108,8 +108,8 @@ In the **[!UICONTROL Schedule]** section you can define the schedule to send the
    | **[!UICONTROL Send daily]** | Select a **[!UICONTROL Daily frequency]**: **[!UICONTROL Send every day]**, **[!UICONTROL Send every weekday]**, or **[!UICONTROL Custom frequency]**.<br/>If you select **[!UICONTROL Custom frequency]**, enter a value for **[!UICONTROL Send every number of days]**. |
    | **[!UICONTROL Send weekly]** | Enter a value for **[!UICONTROL Send every number of weeks]**. And select a **[!UICONTROL Day of week]**. |
    | **[!UICONTROL Send monthly by day of the week]** | Select a **[!UICONTROL Day of week]** and a **[!UICONTROL Week of month]**. |
-   | **[!UICONTROL Send monhtly by day of the month]** | Select a value from **[!UICONTROL Send on this day of the month]**. |
-   | **[!UICONTROL Send yearly by day of the month]** | Select a **[!UICONTROL Day of week]**, select a **[!UICONTROL Week of month]**, and select a **[!UICONTROL Monthy of year]**. |
+   | **[!UICONTROL Send monthly by day of the month]** | Select a value from **[!UICONTROL Send on this day of the month]**. |
+   | **[!UICONTROL Send yearly by day of the month]** | Select a **[!UICONTROL Day of week]**, select a **[!UICONTROL Week of month]**, and select a **[!UICONTROL Monthly of year]**. |
    | **[!UICONTROL Send yearly by specific date]** | Select a **[!UICONTROL Month of year]** and select a value from **[!UICONTROL Send on this day of the month]**. |
 
 ### Send
@@ -119,7 +119,7 @@ To send the workbook:
 * If you have not defined a schedule using **[!UICONTROL Show scheduling options]**, select **[!UICONTROL Send now]** to send the workbook by email immediately.
 * If you have defined a schedule using **[!UICONTROL Show scheduling options]**, select **[!UICONTROL Send on schedule]** to send the workbook by email using the schedule you defined.
 
-In both cases, you will see a confirmation toast at the bottom of the Report Bulder hub.
+In both cases, you see a confirmation toast at the bottom of the Report Builder hub.
 
 To cancel sending the workbook, select **[!UICONTROL Cancel]**.
 
@@ -173,4 +173,4 @@ You can view the history and status of scheduled workbooks in the **[!UICONTROL 
    * A ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) indicates that the workbook was sent successfully. 
    * A ![AlertRed](/help/assets/icons/AlertRed.svg) indicates that an error occurred.
 
-Alternatively, you can select ![History](/help/assets/icons/History.svg) for one or more selected workbooks in the **[!UICONTROL Workbooks]** tab. This action will show the **[!UICONTROL History]** tab with a list filtered by your selection. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a filter.
+Alternatively, you can select ![History](/help/assets/icons/History.svg) for one or more selected workbooks in the **[!UICONTROL Workbooks]** tab. This action shows the **[!UICONTROL History]** tab with a list filtered by your selection. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a filter.

@@ -40,16 +40,16 @@ To define rolling dates:
 
 ![USe rolling dates](assets/date-range-rolling-date.png){zoomable="yes"}
 
-1. Select **[!UICONTROL Use rolling dates]** to define the logic for a rolling date definition. You can select the text in brackets (for exampe **[!UICONTROL fixed start - rolling daily]**) to extend the panel and specify details for **[!UICONTROL Start]** and **[!UICONTROL End]**.
+1. Select **[!UICONTROL Use rolling dates]** to define the logic for a rolling date definition. You can select the text in brackets (for example **[!UICONTROL fixed start - rolling daily]**) to extend the panel and specify details for **[!UICONTROL Start]** and **[!UICONTROL End]**.
 
 1. Select **[!UICONTROL Start of]**, **[!UICONTROL End of]**, or **[!UICONTROL Fixed day]**.
 
    - When you have selected **[!UICONTROL Start of]** or **[!UICONTROL End of]**, you can build a full expression. For example: **[!UICONTROL End of]** **[!UICONTROL current year]** **[!UICONTROL plus]** `1` **[!UICONTROL day]**. Pick the appropriate value for each individual part of the expression.
   
-     - Select a value for current. For example **[!UICONTROL current year]**.
-     - Select a value for additional calculation. For example, **[!UICONTROL plus]**.
-     - When you have specified additional calculation, specify a value. For example `1`.
-     - When you have specified additional calculation, select the time period to use for the calculation. For example **[!UICONTROL day]**.
+     - Select a value for current. For example, **[!UICONTROL current year]**.
+     - Select a value for an optional additional calculation. For example, **[!UICONTROL plus]**.
+     - When you have specified an additional calculation, specify a value. For example, `1`.
+     - When you have specified an additional calculation, select the time period to use for the calculation. For example, **[!UICONTROL day]**.
 
    - When you have select **[!UICONTROL Fixed Day]**, specify a fixed day or use the picker to select a day.
      
@@ -66,7 +66,7 @@ The custom expression option allows you to change the date range by building a c
 
 1. Select **[!UICONTROL Use custom expression]**.
 
-    When you select  **[!UICONTROL Use custom expression]** , the standard rolling date range controls are disabled.
+    When you select **[!UICONTROL Use custom expression]**, the standard rolling date range controls are disabled.
 
 1. Enter a [custom expression](#create-a-custom-expression).
 
@@ -129,12 +129,12 @@ The date range can be specified in worksheet cells. Use the **[!UICONTROL Date r
 
 ## Exclude today
 
-Select **[!UICONTROL Exclude today]**  to exclude today from a selected date range. The current day is excluded from all modes used to define a date range: calendar, rolling dates, or custom expressions.
+Select **[!UICONTROL Exclude today]** to exclude today from a selected date range. The current day is excluded from all modes used to define a date range: calendar, rolling dates, or custom expressions.
 
 
 ## Valid date ranges
 
-The following list describe valid date range formats.
+The following list describes valid date range formats.
 
 - The start and end dates must be in the following format: YYYY-MM-DD
 

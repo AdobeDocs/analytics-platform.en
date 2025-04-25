@@ -13,7 +13,12 @@ You can select a data view from the drop-down list or select a data view from a 
 
 ## Select data view from a cell
 
-Selecting a data view from a cell makes it easy to refresh data blocks using different data views. If your organization has multiple data views that are similar or identical to each other in structure, instead of creating completely new reports with separate data blocks, you can refresh data blocks with a data view selected from a cell. This is also helpful if you have complicated data block formats that include customized components and layouts.
+Selecting a data view from a cell makes it easy to refresh data blocks using different data views. Instead of creating completely new reports with separate data blocks, you can refresh data blocks with a data view selected from a cell. 
+
+Selecting a data view from a cell is helpful when you have:
+
+* Multiple data views that are similar or identical to each other in structure.  
+* Complicated data block formats that include customized components and layouts.
 
 To select a data view from a cell, first build a data block and assign multiple data views to a cell outside of your data block. Then, use the **[!UICONTROL Data view from cell]** panel to refresh your data blocks from different data views.
 
@@ -43,4 +48,4 @@ To select a data view from a cell, first build a data block and assign multiple 
    ![Change data view from a cell](assets/change-data-view-from-cell.png){zoomable="yes"}
 1. Optional, select **[!UICONTROL Refresh data block(s) upon change]**.
 
-1. Select **[!UICONTROL Apply]**. Report Builder refreshes the data block with chosen data view.
+1. Select **[!UICONTROL Apply]**. Report Builder refreshes the data block based on the selected data view.

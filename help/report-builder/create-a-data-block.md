@@ -21,9 +21,9 @@ Configure the initial data block parameters for the Data block location, Data vi
 
 1. Set the **[!UICONTROL Data block location]**.
 
-    The data block location option defines the worksheet location where report builder adds the data to your worksheet.
+    The data block location option defines the worksheet location where Report Builder adds the data to your worksheet.
 
-    To specify the data block location, select a single cell in the worksheet or enter a cell address such as `a3`, `\\\$a3`, `a\\\$3` or `sheet1!a2`. The cell specified will be the upper-left corner of the data block when the data is retrieved.
+    To specify the data block location, select a single cell in the worksheet or enter a cell address, such as `a3`, `\\\$a3`, `a\\\$3` or `sheet1!a2`. The cell specified becomes the upper-left corner of the data block when the data is retrieved.
 
     Use ![DataBlockSelector](/help/assets/icons/DataBlockSelector.svg) to pick a data block location from the current selected cell in the sheet.
 
@@ -37,7 +37,7 @@ Configure the initial data block parameters for the Data block location, Data vi
 
     The **[!UICONTROL Date range]** option allows you to choose a date range. Date ranges may be fixed or rolling. 
 
-    Select **[!UICONTROL Calendar]** to pick a data range using ![Calendar](/help/assets/icons/Calendar.svg) or enter a date range manually. Optionally, you can pick a preset drom the Search Presets drop-down menu.
+    Select **[!UICONTROL Calendar]** to pick a data range using ![Calendar](/help/assets/icons/Calendar.svg) or enter a date range manually. Optionally, you can pick a preset from the **[!UICONTROL _Search Presets_]** drop-down menu.
 
     Select **[!UICONTROL From cell]** to define a start and end data based on a cell in the current sheet.
 
@@ -47,7 +47,7 @@ Configure the initial data block parameters for the Data block location, Data vi
 
     ![Screenshot showing the date range option and the active Next button.](./assets/choose_date_data_view3.png)
 
-    After you configure the data block, you can select dimensions, metrics, and segments to build your data block. The Dimensions, Metrics, and Segments tabs are displayed above the Table builder pane.
+    After you configure the data block, you can select dimensions, metrics, and segments to build your data block. The **[!UICONTROL Dimensions]**, **[!UICONTROL Metrics]**, and **[!UICONTROL Segments]** tabs are displayed above the **[!UICONTROL Table]** pane.
 
 ## Build the data block
 
@@ -55,7 +55,7 @@ To build the data block, select report components, and then customize the layout
 
 1. Add **[!UICONTROL Dimensions]**, **[!UICONTROL Metrics]**, and **[!UICONTROL Segments]** components.
 
-    Scroll the component lists or use the ![Search](/help/assets/icons/Search.svg) **[!UICONTROL _Search components_]**  field to locate components. Drag and drop components to the [!UICONTROL Table] pane or Double select a component name in the list to automatically add the component to the [!UICONTROL Table] pane.
+    Scroll the component lists or use the ![Search](/help/assets/icons/Search.svg) **[!UICONTROL _Search components_]** field to locate components. Drag and drop components to the [!UICONTROL Table] pane or Double select a component name in the list to add the component to the [!UICONTROL Table] pane.
 
     Double select a component to add the component to a default section of the table.
 
@@ -66,14 +66,14 @@ To build the data block, select report components, and then customize the layout
 
 1. Arrange the items in the Table pane to customize the layout of your data block.
 
-    Drag and drop components in the Table pane to reorder components or select ![MoreSmall](/help/assets/icons/MoreSmall.svg) and select ![ArrowUp](/help/assets/icons/ArrowUp.svg) Move up, ![ArrowDown](/help/assets/icons/ArrowDown.svg) Move down, and more to move components within or around the .
+    Drag and drop components within each list in the Table pane to reorder components or select ![MoreSmall](/help/assets/icons/MoreSmall.svg) and select ![ArrowUp](/help/assets/icons/ArrowUp.svg) Move up, ![ArrowDown](/help/assets/icons/ArrowDown.svg) Move down, and more to move components within a list.
 
     When you add components to the table, a preview of the data block is displayed at the Data block location in the worksheet. The layout of the data block preview automatically updates as you add, move, or remove items in the table.
 
     ![Screenshot showing the added components and updated worksheet.](./assets/image10.png)
 
 
-1. Optionally set the **[!UICONTROL Start date]** as a dimension to clearly identify the start date of your data block. This is helpful if you have a regularly scheduled report that has a rolling date range or if you have an unconventional date range and you need to be clear of the start date.
+1. Optionally set the **[!UICONTROL Start date]** as a dimension to identify the start date of your data block. Adding the start data as a dimension is helpful if you have a regularly scheduled report that has a rolling date range. Or if you have an unconventional date range and you need to be explicit about the start date.
 
    ![Screenshot showing the Start date in the list of dimensions.](./assets/start-date-dimension.png)
 

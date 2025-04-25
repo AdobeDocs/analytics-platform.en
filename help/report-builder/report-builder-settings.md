@@ -23,7 +23,7 @@ To change Report Builder settings
 
 ## Off-line mode
 
-When you create and edit a data block in off-line mode, data is not retrieved. Instead, simulation data is used so that you can quickly work without waiting for the request to run. When you are back online, select ![Refresh](/help/assets/icons/Refresh.svg) **[!UICONTROL Refresh data block]**  or ![DocumentRefresh](/help/assets/icons/DocumentRefresh.svg) **[!UICONTROL Refresh all data blocks]** to refresh the data blocks with actual data.
+When you create and edit a data block in off-line mode, data is not retrieved. Instead, simulation data is used so that you can quickly work without waiting for the request to run. When you are back online, select ![Refresh](/help/assets/icons/Refresh.svg) **[!UICONTROL Refresh data block]** or ![DocumentRefresh](/help/assets/icons/DocumentRefresh.svg) **[!UICONTROL Refresh all data blocks]** to refresh the data blocks with actual data.
 
 To enable off-line mode
 

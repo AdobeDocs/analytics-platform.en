@@ -9,7 +9,7 @@ exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
 ---
 # Manage data blocks
 
-You can view and manage all data blocks in a workbook using the [!UICONTROL Data block manager]. The [!UICONTROL Data block manager] provides search, filter, and sort capabilities that allow you to quickly locate specific data blocks. After selecting one or more data blocks, you can edit, delete, or refresh the selected data blocks.
+You can view and manage all data blocks in a workbook using the [!UICONTROL Data block manager]. The [!UICONTROL Data block manager] provides search, filter, and sort capabilities that allow you to locate specific data blocks. After selecting one or more data blocks, you can edit, delete, or refresh the selected data blocks.
 
 ## View data blocks
 
@@ -37,7 +37,7 @@ Use the ![Search](/help/assets/icons/Search.svg) **[!UICONTROL _Search_]** field
 
 ## Edit data blocks
 
-You can edit the data view, date range, or the segments applied to one or more data blocks.
+You can edit data views and date ranges data blocks. Or the segments applied to data blocks.
 
 For example, you can replace an existing segment with a new segment in one or more data blocks.
 
@@ -49,7 +49,7 @@ For example, you can replace an existing segment with a new segment in one or mo
 
    ![The Quick edit window](./assets/image58.png){zoomable="yes"}
 
-1. Select a link to update data views, date ranges, or segments. For example, below shows the screen to add, remove or update the segments for the selected data blocks.
+1. Select a link to update data views, date ranges, or segments. In **[!UICONTROL Quick Edit]** - **[!UICONTROL Segments]** you can add, remove or update the segments for the selected data blocks.
 
    ![The Add Segment field in the Quick edit window](./assets/image59.png){zoomable="yes"}
 
@@ -78,7 +78,7 @@ You can group data blocks using the **[!UICONTROL Group by]** drop-down menu or 
 
 To sort data blocks by column, select the column title. To group data blocks by groups, select a group name from the **[!UICONTROL Group by]** drop-down menu. For example, the screenshot below shows data blocks grouped by Data view. 
 
-You should use grouping to select quickly data blocks for which you want to modify a common element, like segment.
+You can use grouping to select quickly data blocks for which you want to modify a common element, like segment.
 
 ![Data block manager showing the Group by Sheet list.](./assets/group-data-blocks.png){zoomable="yes"}
 
