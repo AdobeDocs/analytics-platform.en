@@ -162,7 +162,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Overview](../analysis-workspace/build-workspace-project/freeform-overview.md)
     + [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md)
     + [Open projects](/help/analysis-workspace/build-workspace-project/open-projects.md)
-    + [Comment in projects](/help/analysis-workspace/build-workspace-project/comment-projects.md)
+    + [Comment on projects](/help/analysis-workspace/build-workspace-project/comment-projects.md)
     + [Save projects](../analysis-workspace/build-workspace-project/save-projects.md)
     + Folders in Workspace {#workspace-folders}
       + [About folders](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)

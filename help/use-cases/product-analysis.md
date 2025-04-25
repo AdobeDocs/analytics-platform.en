@@ -1,6 +1,6 @@
 ---
 title: Product analysis in Customer Journey Analytics
-description: Learn what features that you can use inside Customer Journey Analytics to effectively perform product analysis.
+description: Learn what features that you can use inside Customer Journey Analytics to perform product analysis effectively.
 ---
 # Product analysis in Customer Journey Analytics
 
@@ -13,7 +13,7 @@ Customer Journey Analytics empowers teams with the tools to analyze and optimize
 * **Measure Engagement and Adoption**: Understand how users progress through the product funnel, identify friction points, and track adoption of key features.
 * **Measure Retention and Churn**: Analyze user retention over time, identify indicators of churn, and develop strategies to reduce drop-off and increase loyalty.
 * **Action product insights**: Turn data-driven insights into actionable strategies to improve the user experience and drive sustainable product growth.
-* **Share insights with your organization**: Communicate key findings across teams to align efforts, foster collaboration, and ensure everyone is working toward shared product and business goals.
+* **Share insights with your organization**: Communicate key findings across teams to align efforts, foster collaboration, and ensure that everyone is working toward shared product and business goals.
 
 By leveraging these capabilities, Customer Journey Analytics enables you to unlock the full potential of your product and create a seamless, data-driven approach to driving user and business success.
 
@@ -26,7 +26,7 @@ The following capabilities within Adobe Experience Platform and Customer Journey
 * Adobe Experience Platform
   * [Datasets​](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)
   * [Data prep​](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/home)
-  * [Data distiller​](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
+  * [Data Distiller​](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
   * [Connections​](/help/connections/overview.md)
   * [Data views](/help/data-views/data-views.md), including [derived fields​](/help/data-views/derived-fields/derived-fields.md)
@@ -36,7 +36,7 @@ The following capabilities within Adobe Experience Platform and Customer Journey
 
 ## Measure acquisition and activation
 
-Driving product growth is essential. To achieve this, you must attract new users, uncover pathways to conversion, and eliminate friction along the journey—all of which require actionable top-of-funnel insights.
+Product growth hinges on actionable top-of-funnel insights that attract new users, reveal conversion paths, and eliminate friction along the journey.
 
 * Acquisition tracks new users coming to your product, including how they arrive and which efforts are most or least effective.
 * Activation monitors new users who engage with your first value event, defined according to your specific goals.
@@ -51,7 +51,7 @@ The following capabilities in Customer Journey Analytics enable you to measure b
 
 ## Measure engagement and adoption
 
-Acquiring new users expands the top of your product funnel, but engagement focuses on guiding those users further down the funnel and removing obstacles to their success. Their success directly drives your business success.
+Acquiring new users expands the top of your product funnel. Engagement focuses on guiding those users further down the funnel and removing obstacles to their success. Their success directly drives your business success.
 
 The following capabilities in Customer Journey Analytics help you track product engagement and adoption:
 
