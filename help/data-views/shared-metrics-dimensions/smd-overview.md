@@ -34,7 +34,7 @@ Directly below these two buttons, four overview cards are visible:
 * **Duplicate components to review**: When importing components across multiple data views, some dimensions or metrics might share the same component ID. The number in this overview card shows the total number of components that have the same component ID but different component settings. Selecting **[!UICONTROL Review]** enables a filter that allows you to select the desired component to act as a source of truth for all other components with the same ID.
 * **Components available to merge**: If a dimension or metric shares the same component ID and the same component settings, then they are effectively identical and are ready to deduplicate. Selecting **[!UICONTROL Review]** enables a filter that allows you to merge all components with the same component ID into a single shared dimension or metric.
 
-Below the four overview cards displays all shared dimensions and metrics.
+All shared dimensions and metrics are displayed below the four overview cards.
 
 ![Available dimensions and metrics preview](assets/shared-metrics-dimensions.png)
 
