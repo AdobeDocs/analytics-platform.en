@@ -79,7 +79,7 @@ After you have installed the Report Builder for Excel add-in for your operating 
 
 1. Open an Excel workbook.
 
-1. Select  ![AdobeLogoRedonWhite](/help/assets/icons/AdobeLogoRedOnWhite.svg) **[!UICONTROL Report Builder]** to launch Report Builder.
+1. Select ![AdobeLogoRedOnWhite](/help/assets/icons/AdobeLogoRedOnWhite.svg) **[!UICONTROL Report Builder]** to launch Report Builder.
 
 1. From the Adobe Report Builder toolbar, select **[!UICONTROL Login]**.
 
