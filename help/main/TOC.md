@@ -142,6 +142,9 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Derived fields](../data-views/derived-fields/derived-fields.md)
   + [Summary data](../data-views/summary-data.md)
   + [Labels and policies](../data-views/data-governance.md)
+  + Shared metrics & dimensions{#shared-metrics-dimensions}
+    + [Overview](/help/data-views/shared-metrics-dimensions/smd-overview.md)
+    + [Editor](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
 
 + Tools {#tools}
   + Asset Transfer {#asset-transfer}
@@ -159,7 +162,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Overview](../analysis-workspace/build-workspace-project/freeform-overview.md)
     + [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md)
     + [Open projects](/help/analysis-workspace/build-workspace-project/open-projects.md)
-    + [Comment in projects](/help/analysis-workspace/build-workspace-project/comment-projects.md)
+    + [Comment on projects](/help/analysis-workspace/build-workspace-project/comment-projects.md)
     + [Save projects](../analysis-workspace/build-workspace-project/save-projects.md)
     + Folders in Workspace {#workspace-folders}
       + [About folders](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
@@ -418,6 +421,36 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](../use-cases/cja-usecases.md)
+  + Adobe Analytics data {#aa-data}
+    + [Use Marketing channel dimensions](../use-cases/aa-data/marketing-channels.md)
+    + [Combine report suites with different schemas](../use-cases/aa-data/combine-report-suites.md)
+  + B2B {#b2b}
+    + [An example B2B project](../use-cases/b2b/example.md)
+  + Complex data {#complex-data}
+    + [Use arrays of objects](../use-cases/object-arrays.md)
+  + Cross-channel data {#cross-channel}
+    + [Analyze data across channels](../use-cases/cross-channel/cross-channel.md)
+    + [Import call center and web data](../use-cases/cross-channel/call-center.md)
+  + Data export {#data-export}
+    + [Overview](../use-cases/data-export/overview.md)
+    + [BI extension](../use-cases/data-export/bi-extension.md)
+    + [Export datasets](../use-cases/data-export/export-datasets.md)
+    + [Export full table](../use-cases/data-export/export-full-table.md)
+    + [Query Service and Export datasets](../use-cases/data-export/queryservice-export-datasets.md)
+  + Data ingestion {#data-ingestion}
+    + [Ingest and use Marketo Engage data](../use-cases/data-ingestion/marketo.md)
+    + [Ingest and use Experience Platform audiences ](../use-cases/data-ingestion/ingest-aep-segments.md)
+  + Data views {#data-views}
+    + [Data views use cases](/help/use-cases/data-views/data-views-usecases.md)
+    + [Use binding dimensions and metrics](/help/use-cases/data-views/binding-dimensions-metrics.md)
+    + [Use summary data](/help/use-cases/data-views/summary-data.md)
+    + [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md)
+  + Derived fields {#derived-fields}
+    + [Report on goals](../use-cases/goals-using-derived-fields.md)
+  + Product analysis {#product-analysis}
+    + [Product analysis](/help/use-cases/product-analysis.md)
+  + Stitching {#stitching}
+    + [Shared devices](/help/use-cases/stitching/shared-devices.md)
   + Third-party data {#third-party}
     + [Overview](/help/use-cases/third-party/overview.md)
     + Google Analytics {#ga}
@@ -431,34 +464,6 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Use heatmaps](/help/use-cases/third-party/quantum-metric/heatmap.md)
       + [Add friction events](/help/use-cases/third-party/quantum-metric/friction-events.md)
       + [Source connector](/help/use-cases/third-party/quantum-metric/source-connector.md)
-  + Data ingestion {#data-ingestion}
-    + [Ingest and use Marketo Engage data](../use-cases/data-ingestion/marketo.md)
-    + [Ingest and use Experience Platform audiences ](../use-cases/data-ingestion/ingest-aep-segments.md)
-  + Data views {#data-views}
-    + [Data views use cases](/help/use-cases/data-views/data-views-usecases.md)
-    + [Use binding dimensions and metrics](/help/use-cases/data-views/binding-dimensions-metrics.md)
-    + [Use summary data](/help/use-cases/data-views/summary-data.md)
-    + [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md)
-  + Data export {#data-export}
-    + [Overview](../use-cases/data-export/overview.md)
-    + [BI extension](../use-cases/data-export/bi-extension.md)
-    + [Export datasets](../use-cases/data-export/export-datasets.md)
-    + [Export full table](../use-cases/data-export/export-full-table.md)
-    + [Query Service and Export datasets](../use-cases/data-export/queryservice-export-datasets.md)
-  + B2B {#b2b}
-    + [An example B2B project](../use-cases/b2b/example.md)
-  + Cross-channel data {#cross-channel}
-    + [Analyze data across channels](../use-cases/cross-channel/cross-channel.md)
-    + [Import call center and web data](../use-cases/cross-channel/call-center.md)
-  + Adobe Analytics data {#aa-data}
-    + [Use Marketing channel dimensions](../use-cases/aa-data/marketing-channels.md)
-    + [Combine report suites with different schemas](../use-cases/aa-data/combine-report-suites.md)
-  + Complex data {#complex-data}
-    + [Use arrays of objects](../use-cases/object-arrays.md)
-  + Stitching {#stitching}
-    + [Shared devices](/help/use-cases/stitching/shared-devices.md)
-  + Derived fields {#derived-fields}
-    + [Report on goals](../use-cases/goals-using-derived-fields.md)
 
 + Labs {#labs}
   + [Labs User Guide](../labs/labs.md)
