@@ -55,7 +55,7 @@ For example, you can replace an existing segment with a new segment in one or mo
 
 ## Refresh data blocks
 
-Select ![Refresh](/help/assets/icons/Refresh.svg) refresh the data blocks table.
+Select ![Refresh](/help/assets/icons/Refresh.svg) to refresh the data blocks table.
 
 To verify if a data block is refreshed, view the refresh status icon: 
 
