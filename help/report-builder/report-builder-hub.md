@@ -9,6 +9,8 @@ solution: Customer Journey Analytics
 ---
 # Report Builder hub
 
+The Report Builder hub is the right pane that is displayed within your Excel workbook when you select ![AdobeLogoRedonWhite](/help/assets/icons/AdobeLogoRedonWhite.svg) **[!UICONTROL Report Builder]** from the Excel ribbon bar.
+
 Use the Report Builder hub to create, update, delete, and manage data blocks.
 
 The Report Builder hub contains the  ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create]**, ![TableManage](/help/assets/icons/TableManage.svg) **[!UICONTROL Manage]** and ![Calendar](/help/assets/icons/Calendar.svg) **[!UICONTROL Schedule]** buttons, the **[!UICONTROL Commands]** panel, and the **[!UICONTROL Quick edit]** panel.
@@ -16,7 +18,11 @@ The Report Builder hub contains the  ![AddCircle](/help/assets/icons/AddCircle.s
 ![Report Builder hub](assets/hub51.png){zoomable="yes"}
 
 
-Use  ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create]** to [create new data blocks](create-a-data-block.md).  Use ![TableManage](/help/assets/icons/TableManage.svg) **[!UICONTROL Manage]** to [manage existing data blocks](manage-reportbuilder.md).
+Select
+
+* ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create]** to [create new data blocks](create-a-data-block.md).  
+* ![TableManage](/help/assets/icons/TableManage.svg) **[!UICONTROL Manage]** to [manage existing data blocks](manage-reportbuilder.md).
+* ![Calendar](/help/assets/icons/Calendar.svg) **[!UICONTROL Schedule]** to [manage schedules to send your workbook by email](schedule-reportbuilder.md).
 
 ## Commands panel
 

@@ -7,7 +7,7 @@ type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
 ---
-# About Report Builder for Customer Journey Analytics
+# Report Builder overview
 
 Report Builder for Customer Journey Analytics allows you to create, edit, and refresh custom reports easily within Microsoft Excel using Adobe Customer Journey Analytics data. 
 

@@ -7,7 +7,7 @@ type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
 ---
-# Schedule Workbooks
+# Schedule workbooks
 
 After you saved your workbook and completed your analysis, you can share your workbook with others on your team using the scheduling feature. The schedule feature allows you to create a schedule that automatically refreshes the data in the workbook. And emails the Excel workbook file as an attachment to your specified audience at a specific date and time. Setting up a schedule provides recipients with regular updates automatically. You can also use the schedule feature to send out the workbook once without scheduling automatic updates.
 
@@ -124,7 +124,7 @@ In both cases, you see a confirmation toast at the bottom of the Report Builder 
 To cancel sending the workbook, select **[!UICONTROL Cancel]**.
 
 
-## View and edit scheduled workbooks
+## View and manage scheduled workbooks
 
 You can view and manage all scheduled workbooks in the **[!UICONTROL Workbooks]** tab.
 
@@ -155,7 +155,7 @@ You can view and manage all scheduled workbooks in the **[!UICONTROL Workbooks]*
    | ![Delete](/help/assets/icons/Delete.svg) | Delete the schedule of selected workbooks. |
  
 
-## Review history and status
+## History and status of scheduled workbooks
 
 You can view the history and status of scheduled workbooks in the **[!UICONTROL History]** tab.
 

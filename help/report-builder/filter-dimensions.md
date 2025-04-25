@@ -56,7 +56,7 @@ To change the metric used to filter and sort the data block:
 
 
 
-## Filter Type
+## Filter type
 
 There are two ways to filter dimension items: [Most popular](#most-popular) and [Specific](#specific-filtering)
 

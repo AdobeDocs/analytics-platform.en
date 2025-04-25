@@ -19,7 +19,7 @@ This integration allows you to manage compliance. Data stewards in your organiza
 
 For more information, see [Customer Journey Analytics and Data Governance](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-privacy/privacy-overview)
 
-## View restricted data in Report Builder
+## View restricted data
 
 Two Adobe-defined policies are surfaced in Customer Journey Analytics that affect reporting, downloading, and sharing:
 
@@ -35,7 +35,7 @@ For more information, see [Labels and policies](https://experienceleague.adobe.c
 ![The policy note indicating prohibited use of data.](assets/rb-restricted-label.png){zoomable="yes"}
 -->
 
-## Update reports containing restricted data
+## Update reports that contain restricted data
 
 In cases where a user created a Report Builder report with data elements that are later restricted, when the report is refreshed, an error message is displayed.
 

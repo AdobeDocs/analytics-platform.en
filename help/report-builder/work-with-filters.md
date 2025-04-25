@@ -104,7 +104,7 @@ To apply segments from a cell:
 
 To apply the reference cell as a segment to other data blocks, use the cell reference as one of the segments in the **[!UICONTROL Segments]** list in the **[!UICONTROL Table]** tab. 
 
-### Use the reference cell to change data block segments
+### Use a reference cell to change data block segments
 
 1. Select the reference cell in your spreadsheet.
 
