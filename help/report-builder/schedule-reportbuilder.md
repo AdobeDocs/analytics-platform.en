@@ -7,13 +7,13 @@ type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
 ---
-# Schedule Workbooks
+# Schedule workbooks
 
-After you saved your workbook and completed your analysis, you can easily share your workbook with others on your team using the scheduling feature. The Schedule feature allows you to create a schedule that automatically refreshes the data in the workbook and emails the Excel workbook .xlsx file as an attachment to your specified audience at a specific date and time. Setting up a schedule provides recipients with regular updates&ndash;automatically. You can also use the schedule feature to send out the workbook once without scheduling automatic updates.
+After you saved your workbook and completed your analysis, you can share your workbook with others on your team using the scheduling feature. The schedule feature allows you to create a schedule that automatically refreshes the data in the workbook. And emails the Excel workbook file as an attachment to your specified audience at a specific date and time. Setting up a schedule provides recipients with regular updates automatically. You can also use the schedule feature to send out the workbook once without scheduling automatic updates.
 
-You can create multiple schedules for a single workbook. For example, you can send a workbook to your team on a daily basis and you can send the workbook to your manager once a week by creating two different schedules.
+You can create multiple schedules for a single workbook. For example, you create two schedules to send a workbook to your team daily and to your manager once a week.
 
-The Schedule feature also allows you to set up password protection for a workbook and edit previously scheduled workbooks.
+The schedule feature also allows you to set up password protection for a workbook and edit previously scheduled workbooks.
 
 
 >[!BEGINSHADEBOX]
@@ -25,104 +25,152 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schedule Workboo
 
 ## Schedule a workbook
 
-Use the Schedule task button in the Report Builder hub to quickly create a schedule so that you can automatically distribute a workbook Excel file (.xlsx) to an individual or a group.
+To schedule a workbook:
 
-1. Click the Schedule button in the Report Builder hub.
+1. Select **[!UICONTROL Schedule]** in the Report Builder hub to create a schedule so that you can automatically distribute a workbook Excel file (.xlsx) to an individual or a group.
 
-    ![Click the Schedule button to create a schedule.](./assets/schedule-button.png){width="55%"}
+   ![Select the Schedule button to create a schedule.](./assets/schedule.png){zoomable="yes"}
 
-1. Click Schedule Workbook or the plus button in the upper-left to create a new scheduled workbook.
+1. Select **[!UICONTROL Schedule Workbook]** or ![Add](/help/assets/icons/Add.svg) to create a new scheduled workbook.
 
-    ![The Schedule workbooks window.](./assets/schedule-workbook.png){width="55%"}
+    ![The Schedule workbooks window.](./assets/schedule-workbook.png){zoomable="yes"}
 
     The scheduling pane displays some pre-defined information about the workbook such as the workbook name and the last date that the workbook was modified.
 
-    ![The scheduling pane.](./assets/schedule-pane.png){width="55%"}
+### File
 
-1. (Optional) Enter a file name.
+In the **[!UICONTROL File]** section, you provide details of the file type, name and a password to protect the file.
 
-    The workbook file name defaults to the name of the workbook but you can change this if you want. If you\'re sending the same workbook to multiple audiences and you want to name it something a little bit more friendly for a certain audience, you can change the name.
+![The scheduling pane.](./assets/schedule-pane.png){zoomable="yes"}
 
-1. (Optional) Select **Append time-stamp to file name**.
+1. Use ![TableSelect](/help/assets/icons/TableSelect.svg) to select the current workbook, if not already selected.
 
-    You can append a timestamp to the file name to identify the date the workbook was updated. This is helpful to quickly see which version of a workbook was sent on a specific date. The **Filename preview** shows how the workbook file name will appear in the email when the workbook is distributed. The time-stamp format is YYYY-MM-DD.
+1. (Optional) Enter a **[!UICONTROL File name]**.
 
+    The workbook file name defaults to the name of the workbook but you can change the file name if you want.
+
+1. Select a **[!UICONTROL File type]**.
+
+   * **[!UICONTROL Excel]**
+   * **[!UICONTROL PDF]**
+   * **[!UICONTROL CSV]**
+
+   When you select **[!UICONTROL CSV]**, be aware that the scheduled workbook is sent as a zip attachment. Some corporate email administrations may block email with zip attachments. You see a warning accordingly.
+
+1. (Optional) Select **[!UICONTROL Append time-stamp to file name]**.
+
+    You can append a timestamp to the file name to identify the date the workbook was updated. A timestamp is helpful to see which version of a workbook was sent on a specific date. When selected, you can choose between:
+
+    * **[!UICONTROL ISO Date format]**, which results in `YYYY-MM-DD` being appended to the filename.
+    * **[!UICONTROL ISO Date format + time stamp]**, which results in `YYYY-MM-DD_HH-MM-SS` being appended to the filename.
+
+<!-- Does no longer seem to be an option? 
 1. (Optional) Select **.zip compression** to compress the file and set up password protection on the file.
 
     When you make this selection, you're prompted to enter a password to open the file. This is helpful if you have concerns about data security and you want to password protect the workbook. Protecting the file with a password requires you to select **.zip compression**. The password must be at least 8 characters and contain a number and a special character.
 
-    ![Enter a password in the Password protect the workbook field.](./assets/zip-compression.png){width="55%"}
+    ![Enter a password in the Password protect the workbook field.](./assets/zip-compression.png){zoomable="yes"}{width="55%"}
+-->
 
-1. Enter **Recipients**. You can enter the name of a person that is recognized in your organization, or you can enter an email address of a person inside or outside of your organization.
+1. Enter a password in **[!UICONTROL Password protect the workbook]**. A valid password requires at least 8 characters, a number, and a special character. Select ![VisibilityOff](/help/assets/icons/VisibilityOff.svg) to display the password and ![Visibility](/help/assets/icons/Visibility.svg) to hide the password (default).
+
+
+### Email
+
+In the **[!UICONTROL Email]** section, you provide the recipients, subject and description of the email.
+
+![Schedule email settings](assets/schedule-email.png){zoomable="yes"}
+
+1. Enter **Recipients**. You can enter the name of a person that is recognized in your organization. Or you can enter an email address of a person that is outside of your organization.
 
 1. Enter the **Subject** of the email and a description for your recipients. The subject defaults to the workbook file name but you can modify the subject if needed. You can add details in the description section.
 
-    ![Enter a subject in the Subject field.](./assets/recipients-subject.png){width="55%"}
+1. You can optionally enter a description in the **[!UICONTROL Description]** text area.
 
-1. Set up the scheduling options to set the date and time that you want the workbook emailed to your recipients.
 
-    Choose the start and end date and time frames. This can be today's date or a date in the future.
+### Schedule
 
-    Choose the **Frequency** from the drop-down menu. You can set the frequency to be hourly, daily, weekly, monthly, or yearly on a specific day. For example, you can set up a schedule to send the workbook on the first Sunday night of the month so that your recipients will have the email in their inbox first thing on Monday morning.
+In the **[!UICONTROL Schedule]** section, you can define the schedule to send the emails with the workbook to your recipients.
 
-    ![Select the frequency to schedule your report.](./assets/frequency.png){width="55%"}
+![Schedule definition](assets/schedule-enable.png){zoomable="yes"}
 
-1. After you set the schedule, click **Send on schedule**.
+1. Select **[!UICONTROL Show scheduling options]** to define a schedule.
 
-    ![Click Send on schedule.](./assets/send-on-schedule.png){width="55%"}
+1. Enter a start date in **[!UICONTROL Starting on]**. Alternatively, select ![Calendar](/help/assets/icons/Calendar.svg) to pick a start date from the calendar.
+   
+1. Enter an end date in **[!UICONTROL Ending on]**. Alternatively, select ![Calendar](/help/assets/icons/Calendar.svg) to pick an end date from the calendar.
 
-    You'll see a confirmation toast at the bottom of the Report Builder hub and the scheduled workbook is listed under the Workbooks tab.
+1. Select a **[!UICONTROL Frequency]**. Depending on the frequency selected, you do have additional options. See table below.
 
-    ![Confirmation toast](./assets/confirmation-toast.png){width="55%"}
+   | Frequency | Options |
+   |---|---|
+   | **[!UICONTROL Send hourly]** | Enter a value for **[!UICONTROL Send every number of hours]**. |
+   | **[!UICONTROL Send daily]** | Select a **[!UICONTROL Daily frequency]**: **[!UICONTROL Send every day]**, **[!UICONTROL Send every weekday]**, or **[!UICONTROL Custom frequency]**.<br/>If you select **[!UICONTROL Custom frequency]**, enter a value for **[!UICONTROL Send every number of days]**. |
+   | **[!UICONTROL Send weekly]** | Enter a value for **[!UICONTROL Send every number of weeks]**. And select a **[!UICONTROL Day of week]**. |
+   | **[!UICONTROL Send monthly by day of the week]** | Select a **[!UICONTROL Day of week]** and a **[!UICONTROL Week of month]**. |
+   | **[!UICONTROL Send monthly by day of the month]** | Select a value from **[!UICONTROL Send on this day of the month]**. |
+   | **[!UICONTROL Send yearly by day of the month]** | Select a **[!UICONTROL Day of week]**, select a **[!UICONTROL Week of month]**, and select a **[!UICONTROL Monthly of year]**. |
+   | **[!UICONTROL Send yearly by specific date]** | Select a **[!UICONTROL Month of year]** and select a value from **[!UICONTROL Send on this day of the month]**. |
 
-## Send the workbook one-time only
+### Send
 
-You can also send out the workbook only once.
+To send the workbook:
 
-1. Un-check **Show scheduling options** 
+* If you have not defined a schedule using **[!UICONTROL Show scheduling options]**, select **[!UICONTROL Send now]** to send the workbook by email immediately.
+* If you have defined a schedule using **[!UICONTROL Show scheduling options]**, select **[!UICONTROL Send on schedule]** to send the workbook by email using the schedule you defined.
 
-    ![Click Un-check Show scheduling options to send out a workbook one time.](./assets/send-now.png){width="40%"}
+In both cases, you see a confirmation toast at the bottom of the Report Builder hub.
 
-1. Click **Send Now**.
+To cancel sending the workbook, select **[!UICONTROL Cancel]**.
 
-## View and edit scheduled workbooks
 
-You can view and manage all scheduled workbooks in one place under the Workbooks tab.
+## View and manage scheduled workbooks
 
-1. In the Schedule section of the Report Builder hub, click the Workbooks tab. Use this view to see a list of all scheduled workbooks.
+You can view and manage all scheduled workbooks in the **[!UICONTROL Workbooks]** tab.
 
-1. Select a workbook. Several tools are displayed that allow you to edit the workbook, edit the schedule task, pause and restart the schedule task, download a scheduled task report, or delete the schedule task.
+1. Select **[!UICONTROL Schedule]** in the Report Builder hub 
 
-    ![Screenshot showing the workbook schedule icons.](./assets/schedule-icons.png){width="20%"}
+1. Select the **[!UICONTROL Workbooks]** tab. You see a list of all scheduled workbooks.
 
-* (Optional) Click the pencil icon to edit the workbook schedule task.
+   ![Scheduled workbook](assets/scheduled-workbooks.png){zoomable="yes"}
 
-* (Optional) Click the clock icon to view a history of each scheduled task.
+   You can hover over the icon to see the status of a scheduled workbook.
 
-* (Optional) Click the pause icon to pause and restart the distribution schedule task. This is helpful if you need to modify the workbook before the workbook is sent. Click the pause icon again when you want to restart the distribution.
+   Use ![Search](/help/assets/icons/Search.svg) to search for specific scheduled workbooks.
+   Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) to define which columns to show.
 
-* (Optional) Click the download icon to download a copy of the workbook schedule task.
+1. Select one or more workbooks.
 
-* (Optional) Click the trash can to delete the schedule task.
+   ![Schedule workbooks selected](assets/scheduled-workbooks-selected.png){zoomable="yes"}
+   
+   The following options are available:
 
-    ![Screenshot showing the list of schedule tasks.](./assets/selected-workbook.png){width="40%"}
+   | Option | Description |
+   |---|---|
+   | ![Edit](/help/assets/icons/Edit.svg) | Edit the schedule for a selected workbook. |
+   | ![History](/help/assets/icons/History.svg) | Show the history of selected workbooks. |
+   | ![Pause](/help/assets/icons/Pause.svg) | Pause the schedule of selected workbooks. |
+   | ![Play](/help/assets/icons/Play.svg) | Resume the schedule of selected workbooks. |
+   | ![Download](/help/assets/icons/Download.svg) | Download the selected workbook into a new workbook. |
+   | ![Delete](/help/assets/icons/Delete.svg) | Delete the schedule of selected workbooks. |
+ 
 
-## Review the status of scheduled tasks
+## History and status of scheduled workbooks
 
-The history view allows you to review the status of each scheduled task. There is a separate row documenting the status change for each scheduled task. In the example shown below, the *New Hourly Schedule* was initiated on January 5, at 3:04pm. By 3:05pm it successfully refreshed and was sent to recipients. The next workbook, *Bad workbook*, encountered an error during the refresh process. If a workbook failed to send, the history tab helps you troubleshoot by showing where in the process the error occurred. In this case, it is likely due to some data block error, perhaps a missing component, that kept the workbook from successfully refreshing.
+You can view the history and status of scheduled workbooks in the **[!UICONTROL History]** tab.
 
-A green checkmark indicates that the workbook was sent successfully. An exclamation point in a red triangle indicates that an error occurred.
+1. Select **[!UICONTROL Schedule]** in the Report Builder hub.
 
-You can choose which columns to display in the history tab by clicking the columns setting icon to the right of the search bar.
+1. Select the **[!UICONTROL History]** tab. You see a list of all scheduled workbooks.
 
-![Click the column icon to display or hide specific columns.](./assets/history.png){width="55%"}
+   ![Scheduled history](assets/scheduled-workbooks-history.png){zoomable="yes"}
 
-You can filter down the history to see only that of a single scheduled workbooks by going to the workbooks tab, selecting the workbook and clicking the history icon. 
+   Use ![Search](/help/assets/icons/Search.svg) to search for specific workbooks in the list.
+   Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) to define which columns to show.
 
-You can also view the history of a specific workbook from the Workbooks tab. On the Workbooks tab, select the workbook and then click the history icon.
+   The **[!UICONTROL History]** tab allows you to review the status of each scheduled task. A separate row documents the status change for each scheduled task.
 
-![The workbooks history icon](./assets/history2.png){width="55%"}
+   * A ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) indicates that the workbook was sent successfully. 
+   * A ![AlertRed](/help/assets/icons/AlertRed.svg) indicates that an error occurred.
 
-The workbook filter will then appear at the top of the history. To view the history of all scheduled tasks again, click the x next to the filter. 
-
-![The workbook filter.](./assets/history3.png){width="55%"}
+Alternatively, you can select ![History](/help/assets/icons/History.svg) for one or more selected workbooks in the **[!UICONTROL Workbooks]** tab. This action shows the **[!UICONTROL History]** tab with a list filtered by your selection. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a filter.

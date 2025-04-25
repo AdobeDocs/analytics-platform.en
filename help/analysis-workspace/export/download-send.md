@@ -88,7 +88,7 @@ Features of the table will be applied to the downloaded file as follows:
 * Breakdowns **above** the selected dimension in the table are applied as filters above each column. 
 * Breakdowns **below** the selected dimension in the table are removed.
 
-In the example above, Page items are downloaded with the panel filter (New Visitors Customers) and components above (Marketing Channel = Email) applied as filters, and the components below (Mobile Device Type) removed from the downloaded CSV.
+In the example above, Page items are downloaded with the panel segment (New Visitors Customers) and components above (Marketing Channel = Email) applied as filters, and the components below (Mobile Device Type) removed from the downloaded CSV.
 
 ![The downloaded .csv file opened in Excel.](assets/downloaded-file.png)
 
