@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 ---
 # Report Builder hub
 
-The Report Builder hub is the right pane that is displayed within your Excel workbook when you select ![AdobeLogoRedonWhite](/help/assets/icons/AdobeLogoRedonWhite.svg) **[!UICONTROL Report Builder]** from the Excel ribbon bar.
+The Report Builder hub is the right pane that is displayed within your Excel workbook when you select ![AdobeLogoRedonWhite](/help/assets/icons/AdobeLogoRedOnWhite.svg) **[!UICONTROL Report Builder]** from the Excel ribbon bar.
 
 Use the Report Builder hub to create, update, delete, and manage data blocks.
 

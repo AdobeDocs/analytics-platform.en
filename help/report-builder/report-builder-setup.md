@@ -68,7 +68,7 @@ If your organization blocks access to the Microsoft Store:
 
   ![The Admin Managed tab in Office Add-ins dialog.](./assets/image1.png){zoomable="yes"}
 
-After installing the Report Builder add-in, the ![AdobeLogoRedonWhite](/help/assets/icons/AdobeLogoRedonWhite.svg) **[!UICONTROL Report Builder]** icon is displayed in the Excel ribbon under the **[!UICONTROL Home]** tab.
+After installing the Report Builder add-in, the ![AdobeLogoRedonWhite](/help/assets/icons/AdobeLogoRedOnWhite.svg) **[!UICONTROL Report Builder]** icon is displayed in the Excel ribbon under the **[!UICONTROL Home]** tab.
 
 ![The Report Builder icon in Excel](./assets/rb_app_icon.png){zoomable="yes"}
 
