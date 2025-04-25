@@ -13,7 +13,9 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
-| **April 2025**| | 
+| **April 2025**| |
+| Product analysis use case | Added [Product analysis in Customer Journey Analytics](/help/use-cases/product-analysis.md). |
+| Shared metrics & dimensions | Added documentation for the [Shared metrics & dimensions](/help/data-views/shared-metrics-dimensions/smd-overview.md) feature. |
 | Report Builder | Reviewed and updated the [Report Builder](/help/report-builder/report-buider-overview.md) documentation. |
 | View and manage usage | Reworked the documentation on how to [view](/help/connections/manage-connections.md#usage) and [manage](/help/technotes/estimate-usage.md) Customer Journey Analytics usage |
 | Adobe Content Analytics | [Content Analytics](/help/content-analytics/content-analytics.md) allows you to quickly and easily investigate large volumes of content data to uncover trends, spot anomalies, identify content fatigue, and gain insights from content exposure. |
