@@ -30,10 +30,9 @@ Components subject to these policies are grayed out and do have an ![InfoOutline
 
 For more information, see [Labels and policies](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-governance).
 
-<!--
 
-![The policy note indicating prohibited use of data.](assets/rb-restricted-label.png){zoomable="yes"}
--->
+![The policy note indicating prohibited use of data.](assets/restricted-label.png){zoomable="yes"}
+
 
 ## Update reports that contain restricted data
 
