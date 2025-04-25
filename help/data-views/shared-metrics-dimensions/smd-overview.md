@@ -32,7 +32,7 @@ Directly below these two buttons, four overview cards are visible:
 * **Metrics**: The total number of metrics available to share across data views for this connection. Each connection can contain up to 10,000 shared metrics.
 * **Dimensions**: The total number of dimensions available to share across data views for this connection. Each connection can contain up to 10,000 shared dimensions.
 * **Duplicate components to review**: When importing components across multiple data views, some dimensions or metrics might share the same component ID. The number in this overview card shows the total number of components that have the same component ID but different component settings. Selecting **[!UICONTROL Review]** enables a filter that allows you to select the desired component to act as a source of truth for all other components with the same ID.
-* **Components available to merge**: If a dimension or metric shares the same component ID and component settings, then they are effectively identical and are ready to deduplicate. Selecting **[!UICONTROL Review]** enables a filter that allows you to merge all components with the same component ID into a single shared dimension or metric.
+* **Components available to merge**: If a dimension or metric shares the same component ID and the same component settings, then they are effectively identical and are ready to deduplicate. Selecting **[!UICONTROL Review]** enables a filter that allows you to merge all components with the same component ID into a single shared dimension or metric.
 
 Below the four overview cards displays all shared dimensions and metrics.
 
@@ -45,7 +45,7 @@ Below the four overview cards displays all shared dimensions and metrics.
   * **[!UICONTROL Created by]**: View only components created by a given user.
   * **[!UICONTROL Duplicates]**: View only components that have the same component ID as another component. These filters are identical to reviewing components through the overview cards.
 * **Search**: Use the ![Search icon](../../assets/icons/Search.svg) icon to search for a component by name.
-* **[!UICONTROL Connection]**: A dropdown that changes the [connection](/help/connections/overview.md). Dimensions and metrics are always specific to a single connection.
+* **[!UICONTROL Connection]**: A dropdown that changes the [connection](/help/connections/overview.md). Shared dimensions and metrics are always specific to a single connection.
 * **[!UICONTROL Customize table]**: Select the ![Customize table icon](/help/assets/icons/ColumnSetting.svg) icon to show or hide columns in the table. Available options include:
   * **[!UICONTROL Field name]**: The name of the shared dimension or metric. This field is always visible.
   * **[!UICONTROL Type]**: Indicates if the component is a dimension or a metric. This field is always visible.
@@ -81,8 +81,8 @@ Use the check box next to a component to reveal all available actions that you c
 
 ![Preview of available actions](assets/smd-actions.png)
 
-* ![Pencil icon](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]**: Open the selected dimensions and metrics in an [editor](shared-component-editor.md) that lets you adjust their [component settings](/help/data-views/component-settings/overview.md). When you select multiple components to edit, they are all opened in the component editor. You can shift+click components in the component editor to edit the same field for multiple components.
+* ![Pencil icon](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]**: Open the selected dimensions and metrics in the [shared component editor](shared-component-editor.md), which lets you adjust their [component settings](/help/data-views/component-settings/overview.md). When you select multiple components to edit, they are all opened in the component editor. You can shift + click components in the component editor to edit the same field for multiple components.
 * ![Share icon](/help/assets/icons/Share.svg) **[!UICONTROL Share to data view(s)]**: Opens a window that shows all data views available within the selected connection. Select the check box for each data view that you want to make this component available in, then select **[!UICONTROL Share]**.
 * ![Unshare icon](/help/assets/icons/SaveTo.svg) **[!UICONTROL Unshare to data view(s)]**: Opens a window that shows all data views that this component is currently shared with. Select the check box for each data view that you want to remove this component's availability from, then select **[!UICONTROL Unshare]**.
-* ![Duplicate icon](/help/assets/icons/Copy.svg) **[!UICONTROL Duplicate]**: Creates a copy of the selected components. A new component ID is generated for duplicated components.
+* ![Duplicate icon](/help/assets/icons/Copy.svg) **[!UICONTROL Duplicate]**: Creates a copy of the selected component(s). A new component ID is generated for duplicated components.
 * ![Delete icon](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]**: Removes the selected components from the interface. If the selected components are shared with any data views, they are unshared.
