@@ -377,17 +377,17 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Report Builder {#cja-reportbuilder}
   + [Overview](../report-builder/report-buider-overview.md)
-  + [Report Builder Set Up](../report-builder/report-builder-setup.md)
-  + [Create a Data Block](../report-builder/create-a-data-block.md)
-  + [Report Builder Hub](../report-builder/report-builder-hub.md)
-  + [Select a Data View](../report-builder/select-data-view.md)
-  + [Select a Date Range](../report-builder/select-date-range.md)
-  + [Work with Segments](../report-builder/work-with-filters.md)
-  + [Filter Dimensions](../report-builder/filter-dimensions.md)
-  + [Manage Data Blocks](../report-builder/manage-reportbuilder.md)
-  + [Schedule Workbooks](../report-builder/schedule-reportbuilder.md)
-  + [Restricted Labels](../report-builder/restricted-labels.md)
-  + [Report Builder Settings](../report-builder/report-builder-settings.md)
+  + [Report Builder set up](../report-builder/report-builder-setup.md)
+  + [Create a data block](../report-builder/create-a-data-block.md)
+  + [Report Builder hub](../report-builder/report-builder-hub.md)
+  + [Select a data view](../report-builder/select-data-view.md)
+  + [Select a date range](../report-builder/select-date-range.md)
+  + [Work with segments](../report-builder/work-with-filters.md)
+  + [Filter dimensions](../report-builder/filter-dimensions.md)
+  + [Manage data blocks](../report-builder/manage-reportbuilder.md)
+  + [Schedule workbooks](../report-builder/schedule-reportbuilder.md)
+  + [Restricted labels](../report-builder/restricted-labels.md)
+  + [Report Builder settings](../report-builder/report-builder-settings.md)
 
 + Reporting Activity Manager {#reporting-activity-manager}
   + [Overview](../reporting-activity-manager/reporting-activity-overview.md)

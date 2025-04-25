@@ -185,7 +185,7 @@ You can filter ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_1
 
 ### Settings (segments)
 
-You can add segments that apply to an entire data view. This segment is applied to any report that you run in Workspace. Drag a segment from the list in the left rail to the [!UICONTROL Add segments] field.
+You can add segments that apply to an entire data view. This segment is applied to any report that you run in Workspace. Drag a segment from the list in the left rail to the **[!UICONTROL Add segments]** field.
 
 ### Session settings
 
