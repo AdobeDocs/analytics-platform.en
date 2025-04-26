@@ -1,6 +1,7 @@
 ---
 title: Product analysis in Customer Journey Analytics
 description: Learn what features that you can use inside Customer Journey Analytics to perform product analysis effectively.
+exl-id: b185a2ed-18c8-4fb3-8c69-693d5fee0e67
 ---
 # Product analysis in Customer Journey Analytics
 

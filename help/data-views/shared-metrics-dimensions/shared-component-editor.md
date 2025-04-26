@@ -1,6 +1,7 @@
 ---
 title: Shared component editor
 description: Create or edit shared dimensions and metrics.
+exl-id: 3f6a808a-d6ac-4a47-a5e2-63b9f17952e8
 ---
 # Shared component editor
 

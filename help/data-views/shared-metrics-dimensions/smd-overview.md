@@ -1,6 +1,7 @@
 ---
 title: Shared metrics & dimensions overview
 description: Use the same dimension or metric reference across multiple data views.
+exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
 ---
 # Shared metrics & dimensions overview
 
