@@ -23,7 +23,7 @@ Field based stitching supports the use of the [`identifyMap` field group](https:
   
   In the example below, the namespaces and identities result in a sorted primary identities list, and finally the selected identity.
 
-  <table>
+  <table style="table-layout:auto">
      <tr>
        <th>Namespaces</th>
        <th>Identities list</th>
@@ -38,7 +38,7 @@ Field based stitching supports the use of the [`identifyMap` field group](https:
      </tr>
    </table>
 
-  <table>
+  <table style="table-layout:auto">
     <tr>
       <th>Sorted identities list</th>
       <th>Selected identity</th>
@@ -56,7 +56,7 @@ Field based stitching supports the use of the [`identifyMap` field group](https:
 
   In the example below, the namespaces and identities result in a sorted identities list for the selected namespace (ECID), and finally the selected identity.
 
-    <table>
+    <table style="table-layout:auto">
      <tr>
        <th>Namespaces</th>
        <th>Identities list</th>
@@ -71,7 +71,7 @@ Field based stitching supports the use of the [`identifyMap` field group](https:
      </tr>
    </table>
 
-  <table>
+  <table style="table-layout:auto">
     <tr>
       <th>Sorted identities list</th>
       <th>Selected identity</th>
