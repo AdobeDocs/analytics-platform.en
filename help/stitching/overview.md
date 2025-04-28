@@ -44,7 +44,6 @@ You benefit from cross-channel analysis if you combine one or more of your stitc
 
 >[!IMPORTANT]
 >
->- No support for using `identityMap` as the persistent ID. You have to define a specific identifier in the dataset (for example, `ECID`) as the persistent ID.
 >
 >- Apply any change that you make to the source event dataset schema also to the new stitched dataset schema, otherwise it breaks the stitched dataset.
 >
