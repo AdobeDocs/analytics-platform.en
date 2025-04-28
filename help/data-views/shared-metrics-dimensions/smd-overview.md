@@ -76,7 +76,7 @@ All shared dimensions and metrics are displayed below the four overview cards.
   * **[!UICONTROL Last modified]**: If the component has been modified after it was created, the date that it was last modified.
 * **[!UICONTROL Job history]**: Select the ![History icon](/help/assets/icons/History.svg) icon to open a modal window that shows all instances of importing dimensions and metrics from individual data views.
 
-## Editing components or sharing components to data views
+## Edit components or share components to data views
 
 Use the check box next to a component to reveal all available actions that you can take. Multiple selections are supported.
 
