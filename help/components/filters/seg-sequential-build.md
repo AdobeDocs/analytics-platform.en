@@ -1,7 +1,7 @@
 ---
 description: Sequential segments are segments that use the THEN operator to define the sequence of segment conditions.
 title: Sequential segments
-feature: Filters
+feature: Filters, Segments
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
 ---
 # Sequential segments
