@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 ---
-# Create or edit a connection {#create-or-edit-a-connection}
+# Create and configure a connection {#create-or-edit-a-connection}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -115,7 +115,6 @@ role: Admin
 >abstract="Select a range for the number of expected daily events for the entire connection."
 
 
-
 The connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with an assistive workflow. It provides detailed dataset selection, configuration, and review experience. And allows you to specify critical information like dataset type, size, schema, dataset id, batch status, backfill status, Person IDs, and much more, to reduce the risk of wrong connection configuration. Here is an overview of the capabilities:
 
 * You can enable a rolling data retention window when you create the connection.
@@ -145,24 +144,24 @@ Contact your administrator if you're unsure which Customer Journey Analytics pac
 
 {style="table-layout:auto"}
 
-## Create and configure the connection {#create-connection}
+## Create a connection {#create-connection}
+
+To create a connection: 
 
 1. In Customer Journey Analytics, select **[!UICONTROL Connections]**, optionally from **[!UICONTROL Data management]**, in the top menu.
 1. Select **[!UICONTROL Create new connection]**.
 
+### Edit a connection {#edit-connection}
+
+How you edit (or configure) the connection depends on the Customer Journey Analytics package you have licensed. 
+
 >[!BEGINTABS]
 
->[!TAB Standard] 
+>[!TAB Customer Journey Analytics] 
 
 ![Untitled connection settings](assets/create-conn1.png)
 
->[!TAB B2B Edition]
-
-![Untitled connection settings](assets/create-conn1-b2b.png)
-
->[!ENDTABS]
-
-In the **[!UICONTROL Connections]** > **[!UICONTROL Untitled connection]** screen:
+In the **[!UICONTROL Connections]** > **[!UICONTROL *Name of the connection*]** screen:
 
 1. Configure the connection settings.
 
@@ -170,11 +169,10 @@ In the **[!UICONTROL Connections]** > **[!UICONTROL Untitled connection]** scree
     | --- | --- |
     | **[!UICONTROL Connection name]** | Enter a unique name for the connection. |
     | **[!UICONTROL Connection description]** | Describe the purpose of this connection. |
-    | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Primary ID]** | Select the proper primary ID for your connection: <ul><li>![User](/help/assets/icons/User.svg) **[!UICONTROL Person]** for a B2C scenario</li><li> ![Building](/help/assets/icons/Building.svg) **[!UICONTROL Account]** for a B2B scenario.</li></ul> |
-    | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Optional containers]** | Select additional containers.<ul><li>**[!UICONTROL Global account]**: enables configuration of global accounts in a connection.</li><li>**[!UICONTROL Opportunity]**: enables configuration of opportunities in a connection.</li><li>**[!UICONTROL Buying group]**: enables configuration of buying groups in a connection.</li><ul> |
-    | **[!UICONTROL Sandbox]** | Choose a sandbox in Experience Platform that contains the dataset/s to which you want to create a connection.<p>Adobe Experience Platform provides [sandboxes](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain datasets. Sandboxes are used to control access to datasets.<p>Once you have selected the sandbox, the left rail shows all the datasets in that sandbox that you can pull from.  |
-    | **[!UICONTROL Enable rolling data window]** | This checkbox, if checked, lets you define Customer Journey Analytics data retention as a rolling window in months (1 month, 3 months, 6 months, and so on), at the connection level.<p>Data retention is based on event dataset timestamps and applies to event datasets only. No rolling data window setting exists for profile or lookup datasets, since there are no applicable timestamps. However, if your connection includes any profile or lookup datasets (besides one or more event datasets), that data is retained for the same time period.<p> The main benefit is that you store or report only on data that is applicable and useful and delete older data that is no longer useful. It helps you stay under your contract limits and reduces the risk of overage cost.<p>If you leave the default (unchecked), the Adobe Experience Platform data retention setting supersedes the retention period. If you have 25 months' worth of data in Experience Platform, Customer Journey Analytics gets 25 months of data through backfill. If you deleted 10 of those months in Platform, Customer Journey Analytics would retain the remaining 15 months. |
-    | **[!UICONTROL Add datasets]** (see below) | Add datasets if no datasets appear in your dataset table. Otherwise you will see a list of the datasets you already added as part of the creation of the connection. |
+    | **[!UICONTROL Tags]** | Specify tags to add tags to  your connection so you can use these tags to search for the connection at a later stage. |
+    | **[!UICONTROL Enable rolling data window]** | This checkbox, if checked, lets you define Customer Journey Analytics data retention as a rolling window in months (1 month, 3 months, 6 months, and so on), at the connection level.<p>Data retention is based on event dataset timestamps and applies to event datasets only. No rolling data window setting exists for profile or lookup datasets, since there are no applicable timestamps. However, if your connection includes any profile or lookup datasets (besides one or more event datasets), that data is retained for the same time period.<p> The main benefit is that you store or report only on data that is applicable and useful and delete older data that is no longer useful. It helps you stay under your contract limits and reduces the risk of overage cost.<p><ul><li>If you leave the default (unchecked), the Adobe Experience Platform data retention setting supersedes the retention period. If you have 25 months' worth of data in Experience Platform, Customer Journey Analytics gets 25 months of data through backfill. If you deleted 10 of those months in Platform, Customer Journey Analytics would retain the remaining 15 months.</li><li>If you enable a rolling data window, specify in **[!UICONTROL Select number of months]** the number of months for which you enable the rolling data window. |
+    | **[!UICONTROL Sandbox]** | Choose a sandbox in Experience Platform that contains the datasets for which you want to create a connection.<p>Adobe Experience Platform provides [sandboxes](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain datasets. Sandboxes are used to control access to datasets.<p>Once you have selected the sandbox, the left rail shows all the datasets in that sandbox that you can pull from.  |
+    | **[!UICONTROL Add datasets]** | Select ![DataAdd](/help/assets/icons/DataAdd.svg) **[!UICONTROL Add datasets]** to add datasets. If the connection has no datasets yet, you can also select **[!UICONTROL Add datasets]** in the datasets table. |
 
 
     For the datasets you have configured, the table of datasets shows the following columns:
@@ -188,21 +186,64 @@ In the **[!UICONTROL Connections]** > **[!UICONTROL Untitled connection]** scree
     | **[!UICONTROL Dataset type]** | For each dataset that you added to this connection, Customer Journey Analytics automatically sets the dataset type based on the data coming in. There are 3 different dataset types: Event data, Profile data, and Lookup data. See the table below for an explanation of dataset types. |
     | **[!UICONTROL Granularity]** | The granularity of the data in the dataset; only applicable for summary datasets. | 
     | **[!UICONTROL Data source type]** | The data source type of the dataset. Not applicable for summary datasets. |
-    | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Account ID]** | The Account ID that is used to support account-based reporting for the dataset. |
-    | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Global Account ID]** | The global account ID that is used to lookup global account data. |
-    | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Buying Group ID]** | The Buying Group ID that is used to lookup buying group data. |
-    | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Opportunity ID]** | The Opportunity ID that is used to lookup opportunity data. | 
     | **[!UICONTROL Person ID]** | The Person ID that is used to support person-based reporting for the dataset. |
     | **[!UICONTROL Key]** | For lookup datasets only (such as _id). |
     | **[!UICONTROL Matching Key]** | For lookup datasets only (such as _id). |
     | **[!UICONTROL Import new data]** | Set to On or Off. |
-    | **[!UICONTROL Backfill data]** | You can request to backfill the data in a dataset. For example, you can request to backfill the last 7 days worth of data. Configure the dataset correctly and test your connection. If everything looks good, you can backfill all the remaining data with ease.<p>In addition, you can enable the import of new data by dataset.  |
-    | **[!UICONTROL Backfill status]** | This status indicates whether any backfill data is processing. |
+    | **[!UICONTROL Backfill data]** | The status of backfill data. |
 
     You can search for a specific dataset using the ![Search](/help/assets/icons/Search.svg) field.
 
+>[!TAB Customer Journey Analytics B2B Edition]
 
-## Add datasets {#add-dataset}
+![Untitled connection settings](assets/create-conn1-b2b.png)
+
+[!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
+
+In the **[!UICONTROL Connections]** > **[!UICONTROL *Name of the connection*]** screen:
+
+1. Configure the connection settings.
+
+    | Setting | Description |
+    | --- | --- |
+    | **[!UICONTROL Connection name]** | Enter a unique name for the connection. |
+    | **[!UICONTROL Connection description]** | Describe the purpose of this connection. |
+    | **[!UICONTROL Tags]** | Specify tags to add tags to  your connection so you can use these tags to search for the connection at a later stage. |
+    | **[!UICONTROL Primary ID]** | Select the proper primary ID for your connection: <ul><li>![User](/help/assets/icons/User.svg) **[!UICONTROL Person]** for a B2C scenario</li><li> ![Building](/help/assets/icons/Building.svg) **[!UICONTROL Account]** for a B2B scenario.</li></ul>.<br/>As soon as you add one or more datasets to your connection, you will not be able to change the Primary ID. |
+    | **[!UICONTROL Optional containers]** | If you have selected ![Building](/help/assets/icons/Building.svg) **[!UICONTROL Account]** as the **[!UICONTROL Primary ID]**, select additional containers.<ul><li>**[!UICONTROL Global account]**: enables configuration of global accounts in a connection.</li><li>**[!UICONTROL Opportunity]**: enables configuration of opportunities in a connection.</li><li>**[!UICONTROL Buying group]**: enables configuration of buying groups in a connection.</li><ul> |
+    | **[!UICONTROL Sandbox]** | Choose a sandbox in Experience Platform that contains the dataset/s to which you want to create a connection.<p>Adobe Experience Platform provides [sandboxes](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain datasets. Sandboxes are used to control access to datasets.<p>Once you have selected the sandbox, the left rail shows all the datasets in that sandbox that you can pull from.  |
+    | **[!UICONTROL Enable rolling data window]** | This checkbox, if checked, lets you define Customer Journey Analytics data retention as a rolling window in months (1 month, 3 months, 6 months, and so on), at the connection level.<p>Data retention is based on event dataset timestamps and applies to event datasets only. No rolling data window setting exists for profile or lookup datasets, since there are no applicable timestamps. However, if your connection includes any profile or lookup datasets (besides one or more event datasets), that data is retained for the same time period.<p> The main benefit is that you store or report only on data that is applicable and useful and delete older data that is no longer useful. It helps you stay under your contract limits and reduces the risk of overage cost.<p><ul><li>If you leave the default (unchecked), the Adobe Experience Platform data retention setting supersedes the retention period. If you have 25 months' worth of data in Experience Platform, Customer Journey Analytics gets 25 months of data through backfill. If you deleted 10 of those months in Platform, Customer Journey Analytics would retain the remaining 15 months.</li><li>If you enable a rolling data window, specify in **[!UICONTROL Select number of months]** the number of months for which you enable the rolling data window. |
+    | **[!UICONTROL Add datasets]** (see below) | Select ![DataAdd](/help/assets/icons/DataAdd.svg) **[!UICONTROL Add datasets]** to add datasets. If the connection has no datasets yet, you can also select **[!UICONTROL Add datasets]** in the datasets table. |
+
+
+    For the datasets you have configured, the table of datasets shows the following columns:
+
+    | Column | Description |
+    |---|---|
+    | **[!UICONTROL Dataset name]** | Select one or more datasets that you want to pull into Customer Journey Analytics and select **[!UICONTROL Add]**.<p>(If you have many datasets to choose from, you can search for the right one(s) using the Search datasets search bar above the list of datasets.) |
+    | **[!UICONTROL Last updated]** | For event datasets only, this setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. "N/A" means that this dataset contains no data. |
+    | **[!UICONTROL Number of records]** | The total records in the previous month for the dataset in Experience Platform. |
+    | **[!UICONTROL Schema]** | The [schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) based on which the dataset was created in Adobe Experience Platform. |
+    | **[!UICONTROL Dataset type]** | For each dataset that you added to this connection, Customer Journey Analytics automatically sets the dataset type based on the data coming in. There are 3 different dataset types: Event data, Profile data, and Lookup data. See the table below for an explanation of dataset types. |
+    | **[!UICONTROL Granularity]** | The granularity of the data in the dataset; only applicable for summary datasets. | 
+    | **[!UICONTROL Data source type]** | The data source type of the dataset. Not applicable for summary datasets. |
+    | **[!UICONTROL Account ID]** | (only displayed when **[!UICONTROL Primary ID]** is ![Building](/help/assets/icons/Building.svg) **[!UICONTROL Account]**) The account ID that is used to support account-based reporting for the dataset. |
+    | **[!UICONTROL Global Account ID]** | (only displayed when **[!UICONTROL Primary ID]** is ![Building](/help/assets/icons/Building.svg) **[!UICONTROL Account]**) The global account ID that is used to support account-based reporting for the dataset. |
+    | **[!UICONTROL Buying Group ID]** | (only displayed when **[!UICONTROL Primary ID]** is ![Building](/help/assets/icons/Building.svg) **[!UICONTROL Account]**) The Buying Group ID that is used to lookup buying group data. |
+    | **[!UICONTROL Opportunity ID]** | (only displayed when **[!UICONTROL Primary ID]** is ![Building](/help/assets/icons/Building.svg) **[!UICONTROL Account]**) The Opportunity ID that is used to lookup opportunity data. | 
+    | **[!UICONTROL Person ID]** | The Person ID that is used to support person-based reporting for the dataset. |
+    | **[!UICONTROL Key]** | For lookup datasets only (such as _id). |
+    | **[!UICONTROL Matching Key]** | For lookup datasets only (such as _id). |
+    | **[!UICONTROL Import new data]** | Set to On or Off. |
+    | **[!UICONTROL Backfill data]** | The status of backfill data. |
+
+    You can search for a specific dataset using the ![Search](/help/assets/icons/Search.svg) field.
+
+>[!ENDTABS]
+
+## Datasets
+
+You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-a-dataset) as part of connection workflow.
 
 <!-- markdownlint-disable MD034 -->
 
@@ -435,12 +476,12 @@ In the **[!UICONTROL Connections]** > **[!UICONTROL Untitled connection]** scree
 >title="Connection map"
 >abstract="The Connection map visualizes the relationships between event, person, account and relevant lookup datasets (like opportunities, campaign members, and more)."
 
+## Add datasets {#add-dataset}
+
+You can add one or more Experience Platform datasets when you create or edit a connection. 
 
 
-The workflow lets you add one or more Experience Platform datasets when you create a connection. 
-
-
-1. In the Connection settings dialog, select **[!UICONTROL Add datasets]**.
+1. In **[!UICONTROL Connection]** > **[!UICONTROL _Name of the connection_]** interface, select ![DataAdd](/help/assets/icons/DataAdd.svg) **[!UICONTROL Add datasets]**.
 
 1. In the ➊ **[!UICONTROL Select datasets]** step, you see a list of the Experience Platform datasets. 
 
@@ -464,51 +505,131 @@ The workflow lets you add one or more Experience Platform datasets when you crea
    * To remove a dataset from the list of selected datasets, use ![Close](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). To remove all selected datasets, select **[!UICONTROL Clear all]**.
 
    
-1. Select one or more datasets and select **[!UICONTROL Next]**. You will [configure](#configure-datasets) each of the datasets. At least one event dataset must be part of the connection.
+1. Select one or more datasets and select **[!UICONTROL Next]**. At least one event dataset must be part of the connection.
+
+1. Configure the [settings for each of the selected datasets](#dataset-settings), one by one, in the ➋ **[!UICONTROL Datasets settings]** step of the **[!UICONTROL Add datsets]** dialog.
+
+    ![Add datasets](assets/add-dataset.png)
+
+1. Select **[!UICONTROL Add datasets]** to add the configured datasets to the connection. You are notified when you have not provided all required settings for each of the datasets you want to add. 
+   
+   Alternatively, you can select **[!UICONTROL Cancel]** to cancel the addition of datasets to the connection. Or select **[!UICONTROL Back]** to step back to the  ➊ **[!UICONTROL Select datasets]** step.
 
 
-## Configure datasets 
+### Edit a dataset
 
-You configure each of the selected datasets, one by one, in the ➋ **[!UICONTROL Datasets settings]** step of the **[!UICONTROL Add datsets]** dialog.
+To edit an dataset that is already configured for a connection, in the **[!UICONTROL Connections]** > **[!UICONTROL _Name of the connection_]** interface:
 
->[!BEGINTABS]
+1. Select ![More](/help/assets/icons/More.svg) for the dataset listed in the dataset table that you want to edit 
+1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit dataset]**.
 
->[!TAB Standard] 
+1. Configure the [dataset settings](#dataset-settings) in the **[!UICONTROL Edit dataset: _Dataset name_]** dialog.
 
-![Add datasets](assets/add-dataset.png)
+   ![Edit dataset](assets/edit-dataset.png)
 
->[!TAB B2B Edition]
+1. Select **[!UICONTROL Apply]** to apply the dataset settings. Select **[!UICONTROL Cancel]** to cancel.
 
-![Add dataset B2B](assets/add-dataset-b2b.png)
 
->[!ENDTABS]
+### Dataset settings
+
+When you add datasets or edit an existing datasets, you can configure the dataset settings for each dataset. The settings available depend on the type of dataset and, for some dataset types, on the type of connection (person based versus [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} account based.).
+
+All datasets and dataset types have [general settings and details](#general-dataset-settings-and-details), such as whether or not to import new data and backfill settings.
+
+#### Event dataset
+
+See below for details on the settings for an event dataset: 
+
+##### Person based connection
+
+![Event dataset settings B2C](assets/event-dataset-settings-b2c.png)
 
 | Setting | Description |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Account ID]** | Only available for event datasets and for lookup datasets that are [matched by container](/help/getting-started/cja-b2b-concepts-features.md#match-by-container-or-field). Select an account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Opportunity ID]** | Only available for event datasets. Select an opportunity ID (the unique identifier for an opportunity) from the available identities defined in the dataset schema in the Experience Platform. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Buying Group ID]** | Only available for event datasets. Select a buying group ID (the unique identifier for a buying group) from the available identities defined in the dataset schema in the Experience Platform. |
-| **[!UICONTROL Person ID]** | Only available for event and profile datasets. Select a Person ID from the drop-down list of available identities. These identities were defined in the dataset schema in the Experience Platform. See below for information on how to use Identity Map as a Person ID.<p>If there are no Person IDs to choose from, that means one or more Person IDs have not been defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information. <p>The value for the selected Person ID is considered to be case sensitive. For example, `abc123` and `ABC123` are two different values. |
-| **[!UICONTROL Timestamp]** | For event and summary datasets only, this setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. |
-| **[!UICONTROL Key]** | Only available for lookup datasets. The key to use for a Lookup dataset. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} **[!UICONTROL Matching key type]** | Select how to join the datasets: based on a **[!UICONTROL Match by field]** or **[!UICONTROL Match by container]**. See [Match by container of field](/help/getting-started/cja-b2b-concepts-features.md#match-by-container-or-field) for more information.|
-| **[!UICONTROL Matching key]** | Only available for lookup or profile datasets. The matching key to join on in one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset. <br/><br/>[!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>Based on your selected **[!UICONTROL Matching key type]**, select the appropriate value:<ul><li>**[!UICONTROL Match by field]**: Select a field to join on with one of the event datasets. If this list is empty you probably haven't added or configured an event dataset.</li><li>**[!UICONTROL Match by container]**: Select a container to use to join with one of the event datasets. The containers available to select are determined by the containers you included as part of setting up the connection. If this list is empty you probably haven't configured one or more containers.</li></ul>  |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Account field]** | The account id to use for account-based reporting. | 
-| **[!UICONTROL Timezone]** | Only available for summary data. Select the appropriate timezone for the time-series summary data. |
+| **[!UICONTROL Person ID]** | Select a Person ID from the drop-down list of available identities. These identities were defined in the dataset schema in Experience Platform. See [Use Identity Map as a Person ID](#id-map) for information on how to use Identity Map as a Person ID.<p>If there are no Person IDs to choose from, that means no Person IDs have not been defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information. <p>The value for the selected Person ID is considered to be case sensitive. For example, `abc123` and `ABC123` are two different values. |
+| **[!UICONTROL Timestamp]** | This setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. |
 | **[!UICONTROL Data source type]** | Select a type of data source. <br/>Types of data sources include: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>This field is used to survey the types of data sources in use. |
-| **[!UICONTROL Import new data]** | Enable this option if you want to establish an ongoing connection. With an ongoing connection new data batches that are added to the datasets are available automatically in Workspace. |
-| **[!UICONTROL Dataset backfill]** | Enable **[!UICONTROL Backfill all existing data]** to ensure that all existing data is backfilled.<br/><br/>Select **[!UICONTROL Request backfill]** to backfill historical data for a specific period. You can define up to 10 dataset backfill periods.<ol><li>Define the period by entering start and end data or selecting dates using ![Calendar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).</li><li>Select **[!UICONTROL Queue backfill]** to add the backfill to the list, or **[!UICONTROL Cancel]** to cancel.</li></ol>For each entry, select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) to edit the period, or select ![Delete](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) to delete the entry.<br/><br/>On backfills:<ul><li>You can backfill each dataset individually.</li><li>You prioritize new data added to a dataset in the connection, so this new data has the lowest latency.</li><li>Any backfill (historical) data is imported at a slower rate. The amount of historical data influences the latency.</li><li>The Analytics source connector imports up to 13 months of data (irrespective of size) for production sandboxes. The backfill in non-production sandboxes is limited to 3 months.</li></ul> |
-| **[!UICONTROL Transform dataset]** | For specific B2B lookup datasets, you can enable the transformation of a dataset for proper B2B person-based reporting scenarios. See [Transform datasets for B2B lookups](transform-datasets-b2b-lookups.md) for more information. |
-| **[!UICONTROL Batch status]** | Possible status indicators are:<ul><li>Success</li><li>X backfill(s) processing</li><li>Off</li></ul> |
-| **[!UICONTROL Dataset ID]** | This ID is automatically generated. |
-| **[!UICONTROL Description]** | The description given to this dataset when the dataset was created. |
-| **[!UICONTROL Number of records]** | The dataset's size. |
-| **[!UICONTROL Schema]** | The schema based on which the dataset was created in Adobe Experience Platform. |
-| **[!UICONTROL Dataset]** | The name of the dataset. |
-| **[!UICONTROL Preview: *dataset name*]** | Previews the dataset for first 10 rows and first 10 columns. |
-| **[!UICONTROL Remove]** | You can delete or remove the dataset and change the [!UICONTROL Person ID] or [!UICONTROL Account ID] [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} without deleting the whole connection. Deleting or removing reduces the costs involved in data ingestion and the cumbersome process of recreating the whole connection and associated data views. |
+| **[!UICONTROL Data source description]** | Describe the data source when you have selected Other as the data source type. |
 
-{style="table-layout:auto"}
+
+##### Account based connection
+
+[!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
+
+
+![Event dataset settings B2C](assets/event-dataset-settings-b2b.png)
+
+| Setting | Description |
+| --- | --- |
+| **[!UICONTROL Account ID]** | Select an account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform. |
+| **[!UICONTROL Global Account ID]** | Select an account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform. |
+| **[!UICONTROL Opportunity ID]** | Select an opportunity ID (the unique identifier for an opportunity) from the available identities defined in the dataset schema in the Experience Platform. |
+| **[!UICONTROL Buying Group ID]** | Select a buying group ID (the unique identifier for a buying group) from the available identities defined in the dataset schema in the Experience Platform. |
+| **[!UICONTROL Person ID]** | Select a Person ID from the drop-down list of available identities. These identities were defined in the dataset schema in the Experience Platform. See [Use Identity Map as a Person ID](#id-map) for information on how to use Identity Map as a Person ID.<p>If there are no Person IDs to choose from, that means one or more Person IDs have not been defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information. <p>The value for the selected Person ID is considered to be case sensitive. For example, `abc123` and `ABC123` are two different values. |
+| **[!UICONTROL Timestamp]** | This setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. |
+| **[!UICONTROL Data source type]** | Select a type of data source. <br/>Types of data sources include: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>This field is used to survey the types of data sources in use. |
+| **[!UICONTROL Data source description]** | Describe the data source when you have selected Other as the data source type. |
+
+
+#### Profile dataset
+
+See below for details on the settings for a profile dataset: 
+
+![Profile dataset settings B2C](assets/profile-dataset-settings-b2c.png)
+
+| Setting | Description |
+| --- | --- |
+| **[!UICONTROL Person ID]** | Select a Person ID from the drop-down list of available identities. These identities were defined in the dataset schema in Experience Platform. See [Use Identity Map as a Person ID](#id-map) for information on how to use Identity Map as a Person ID.<p>If there are no Person IDs to choose from, that means no Person IDs have not been defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information. <p>The value for the selected Person ID is considered to be case sensitive. For example, `abc123` and `ABC123` are two different values. |
+| **[!UICONTROL Timestamp]** | This setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. |
+| **[!UICONTROL Data source type]** | Select a type of data source. <br/>Types of data sources include: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>This field is used to survey the types of data sources in use. |
+| **[!UICONTROL Data source description]** | Describe the data source when you have selected Other as the data source type. |
+
+
+
+#### Lookup dataset 
+
+The specifc settings for a lookup dataset are dependent on the type of connection
+
+##### Person based connection
+
+| Settings | Description |
+|---|---|
+| **[!UICONTROL Key]** | The key to use for a Lookup dataset. |
+| **[!UICONTROL Matching key]** | The matching key to join on in one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.  | 
+| **[!UICONTROL Transform dataset]** | For specific B2B lookup datasets, you can enable the transformation of a dataset for proper B2B person-based reporting scenarios. See [Transform datasets for B2B lookups](transform-datasets-b2b-lookups.md) for more information. |
+
+
+##### Account based connection
+
+[!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
+
+
+| Settings | Description |
+|---|---|
+| **[!UICONTROL Key]** | The key to use for a Lookup dataset. |
+|  **[!UICONTROL Matching key type]** | Select how to join the datasets: based on a **[!UICONTROL Match by field]** or **[!UICONTROL Match by container]**. See [Match by container of field](/help/getting-started/cja-b2b-concepts-features.md#match-by-container-or-field) for more information.|
+| **[!UICONTROL Matching key]** | The matching key to join on in one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset. <br/><br/>Based on your selected **[!UICONTROL Matching key type]**, select the appropriate value:<ul><li>**[!UICONTROL Match by field]**: Select a field to join on with one of the event datasets. If this list is empty you probably haven't added or configured an event dataset.</li><li>**[!UICONTROL Match by container]**: Select a container to use to join with one of the event datasets. The containers available to select are determined by the containers you included as part of setting up the connection. If this list is empty you probably haven't configured one or more containers.</li></ul>  |
+| **[!UICONTROL Account field]** | The account id to use for account-based reporting. | 
+
+
+
+#### Summary dataset
+
+The specific settings for a summary dataset are:
+
+| Setting | Description |
+|---|---|
+| **[!UICONTROL Timestamp]** | This setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. |
+| **[!UICONTROL Timezone]** | Select the appropriate timezone for the time-series summary data. |
+| **[!UICONTROL Granularity]** | Represents the time frame used to aggregate summary data by, currently either hour or day. Derived from the data in the dataset. | 
+
+
+#### General dataset settings and details
+
+Each (type of dataset) has the following common settings:
+
+{{common-dataset-settings}}
+
 
 ## Connection preview {#preview}
 
