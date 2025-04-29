@@ -9,7 +9,7 @@ role: Admin
 ---
 # Manage connections
 
-Once you have [created or edited one or more connections](/help/connections/create-connection.md), you can manage them in **[!UICONTROL Connections]**. Connections let you:
+Once you have [created or edited one or more connections](/help/connections/create-connection.md), you can manage them in **[!UICONTROL Connections]**. The [!UICONTROL Connections] interface let you:
 
 * View all your connections at a glance, including the owner, the sandbox, and when the connections were created and modified.
 * Edit a connection.
@@ -25,7 +25,7 @@ Once you have [created or edited one or more connections](/help/connections/crea
 
 ## List
 
-The [!UICONTROL List] interface is the default interface for Connections. If not selected, select the **[!UICONTROL List]** tab to access the interface.
+The **[!UICONTROL List]** interface is the default interface for Connections. If not selected, select the **[!UICONTROL List]** tab to access the interface.
 
 ![list view](assets/list-view.png)
 
@@ -35,14 +35,14 @@ The following columns or icons are available in the table.
 
 | Column or Icon | Description |
 | --- | --- |
-| [!UICONTROL Name] | The connection's friendly name. To see the details of the connection, select the hyperlinked name. See [Connection details](#connection-details). |
-| ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | To view information about [!UICONTROL Datasets included], [!UICONTROL Sandbox], [!UICONTROL Owner], and more, select ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) next to the connection name.<p>A popup window displays details. <p><img src="./assets/conn-info.png" alt="View connection info" width="400"/> |
-| ![Data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) | To [create a data view](#create-a-data-view) for the connection, select ![Data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg). This icon only shows when no data view is already associated with the connection. |
-| ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) to: <p>![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [Edit](#edit-a-connection) a connection.<p>![Delete](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [Delete](#delete-a-connection) a connection.<p>![Data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) [Create new data view](#create-a-data-view). To create additional data views for the connection.<p>![GraphPathing](/help/assets/icons/GraphPathing.svg) Connection map. To view a connection map for the connection. |
-| **[!UICONTROL Datasets]** | One or more links to the datasets that are part of the connection. You can select the dataset hyperlink to view the dataset in the connection. If more datasets are part of the selected connection, select **[!UICONTROL +*x* more]** to show a **[!UICONTROL Datasets included]** panel. This panel shows links to all datasets and an option to search for a specific dataset that is part of the connection.<p><img src="./assets/datasets-included.png" alt="Datassets included" width="400"/><p>Selecting a dataset name opens the dataset in the Experience Platform UI in a new tab. |
+| **[!UICONTROL _Name_]** | The connection's friendly name. To see the details of the connection, select the hyperlinked name. See [Connection details](#connection-details). |
+| ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | To view information about [!UICONTROL Datasets included], [!UICONTROL Sandbox], [!UICONTROL Owner], and more, select ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) next to the connection name.<p>A popup window displays details. <p>![Connection info popup](assets/connection-info-popup.png) |
+| ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) to open a context menu. You can select: <p>![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** to [edit](#edit-a-connection) a connection.<p>![Delete](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Delete]** to [delete](#delete-a-connection) a connection.<p>![Data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Create new data view]** to [create a new data view](#create-a-data-view) for the connection.<p>![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Connection map]** to view a [connection map](#map-a-connection) for the connection. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Connection type]** | Indicates whether the connection is a **[!UICONTROL Person]** based or an **[!UICONTROL Account]** based connection. |
+| **[!UICONTROL Datasets]** | One or more links to the datasets that are part of the connection. You can select the dataset hyperlink to view the dataset in the connection. If more datasets are part of the selected connection, select **[!UICONTROL +*x* more]** to show a **[!UICONTROL Datasets included]** panel. This panel shows links to all datasets and an option to ![Search](/help/assets/icons/Search.svg) search for specific datasets that is part of the connection.<p>![Datasets included](assets/datasets-included.png)<p>Select a dataset name to open the dataset in the Experience Platform interface in a new tab. |
 | **[!UICONTROL Sandbox]** | The [Experience Platform sandbox](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) from which this connection draws its datasets. This sandbox was selected when you first created the connection. It cannot be changed.|
 | **[!UICONTROL Owner]** | The person who created the connection. |
-| **[!UICONTROL Import new data]** | The status of importing new data for datasets: <p>![Status green](assets/status-green.svg) &nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** for datasets configured to import new data, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** for datasets not configured to import new data. |
+| **[!UICONTROL Import new data]** | The status of importing new data for datasets: <p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** for datasets configured to import new data, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** for datasets not configured to import new data. |
 | **[!UICONTROL Date created]** | The timestamp when the connection was created. |
 | **[!UICONTROL Last modified]** | The timestamp when the connection is last updated. |
 | **[!UICONTROL Backfill data]** | The status for backfill data across datasets.<p>![Status red](assets/status-red.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills across datasets,<p>![Status orange](assets/status-orange.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of processing backfills across datasets,<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of completed backfills for datasets, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no backfills are defined for the datasets in the connection. |
@@ -87,9 +87,13 @@ Alternatively, you can:
 
 When you delete a connection, a **[!UICONTROL Delete connection]** panel indicates which data views are deleted and which workspace projects are affected.
 
-![Delete connection](assets/delete-connection.png)
+* In ➊ **[!UICONTROL Info]**, the implications of the deletion of the connection are shown.
 
-Select **[!UICONTROL Continue]** to delete the connection.
+  ![Delete connection](assets/delete-connection.png)
+
+  Select **[!UICONTROL Continue]** to confirm the deletion.
+
+* In ➋ **[!UICONTROL Confirmation]**, enter the name of the connection in **[!UICONTROL Type connection name]**, and select **[!UICONTROL Delete]** to delete the connection. Select **[!UICONTROL Cancel]** to cancel.
 
 See [Deletion implications](/help/technotes/deletion.md) for more information about deleting a connection.
 
@@ -98,14 +102,8 @@ See [Deletion implications](/help/technotes/deletion.md) for more information ab
 
 To create a new data view for a connection
 
-* If no data view is associated with the connection:
-
-    1. Select ![Add data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) next to the connection name.
-
-* If one or more data views are already created for the connection:
-
-  1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the connection name.
-  1. Select ![Add data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Create new data view]**.
+1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the connection name.
+1. Select ![Add data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Create new data view]**.
 
 Alternatively, you can:
 

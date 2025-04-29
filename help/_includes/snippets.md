@@ -247,4 +247,4 @@ Use the following information to choose the visualization that best meets your n
 | **[!UICONTROL Schema]** | The schema based on which the dataset was created in Adobe Experience Platform. |
 | **[!UICONTROL Dataset]** | The name of the dataset. |
 | **[!UICONTROL Preview: *dataset name*]** | Previews the dataset for first 10 rows and first 10 columns. |
-| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]** | You can delete or remove the dataset without deleting the whole connection. Deleting or removing reduces the costs involved in data ingestion and the cumbersome process of recreating the whole connection and associated data views. |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]** | You can [delete a dataset](/help/connections/create-connection.md#delete-a-dataset) without deleting the whole connection. The deletion of a dataset from a connection reduces the costs involved in data ingestion and the cumbersome process of recreating the whole connection and associated data views. |

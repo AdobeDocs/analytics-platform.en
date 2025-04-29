@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 ---
-# Create and configure a connection {#create-or-edit-a-connection}
+# Create or edit a connection {#create-or-edit-a-connection}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -115,7 +115,7 @@ role: Admin
 >abstract="Select a range for the number of expected daily events for the entire connection."
 
 
-The connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with an assistive workflow. It provides detailed dataset selection, configuration, and review experience. And allows you to specify critical information like dataset type, size, schema, dataset id, batch status, backfill status, Person IDs, and much more, to reduce the risk of wrong connection configuration. Here is an overview of the capabilities:
+The connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with an assistive workflow. It provides detailed dataset selection, configuration, and review experience. And allows you to specify critical information like dataset type, size, schema, dataset id, batch status, backfill status, identities, and much more, to reduce the risk of wrong connection configuration. Here is an overview of the capabilities:
 
 * You can enable a rolling data retention window when you create the connection.
 * You can add to and remove datasets from a connection. (Removing a dataset removes it from the connection and impacts any associated data views and underlying Analysis Workspace projects.)
@@ -183,6 +183,7 @@ In the **[!UICONTROL Connections]** > **[!UICONTROL *Name of the connection*]** 
     | Column | Description |
     |---|---|
     | **[!UICONTROL Dataset name]** | Select one or more datasets that you want to pull into Customer Journey Analytics and select **[!UICONTROL Add]**.<p>(If you have many datasets to choose from, you can search for the right one(s) using the Search datasets search bar above the list of datasets.) |
+    | ![More](/help/assets/icons/More.svg) | Select ![More](/help/assets/icons/More.svg) to open a context menu for the selected dataset. Based on the (type of) dataset, you can select:<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)&nbsp; **[!UICONTROL Delete dataset]** to [delete a dataset](#delete-a-dataset).</li><li>![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit dataset]** to [edit a dataset](#edit-a-dataset).</li><li>![History](/help/assets/icons/History.svg) **[!UICONTROL Past backfills]** to display [past backfills for the dataset](#past-backfills). |
     | **[!UICONTROL Last updated]** | For event datasets only, this setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. "N/A" means that this dataset contains no data. |
     | **[!UICONTROL Number of records]** | The total records in the previous month for the dataset in Experience Platform. |
     | **[!UICONTROL Schema]** | The [schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) based on which the dataset was created in Adobe Experience Platform. |
@@ -222,6 +223,7 @@ In the **[!UICONTROL Connections]** > **[!UICONTROL *Name of the connection*]** 
     | Column | Description |
     |---|---|
     | **[!UICONTROL Dataset name]** | Select one or more datasets that you want to pull into Customer Journey Analytics and select **[!UICONTROL Add]**.<p>(If you have many datasets to choose from, you can search for the right one(s) using the Search datasets search bar above the list of datasets.) |
+    | ![More](/help/assets/icons/More.svg) | Select ![More](/help/assets/icons/More.svg) to open a context menu for the selected dataset. Based on the (type of) dataset, you can select:<ul><li>![CrossSize75](/help/assets/icons/CrossSize400.svg)&nbsp; **[!UICONTROL Delete dataset]** to [delete a dataset](#delete-a-dataset).</li><li>![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit dataset]** to [edit a dataset](#edit-a-dataset).</li><li>![History](/help/assets/icons/History.svg) **[!UICONTROL Past backfills]** to display [past backfills for the dataset](#past-backfills). |
     | **[!UICONTROL Last updated]** | For event datasets only, this setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. "N/A" means that this dataset contains no data. |
     | **[!UICONTROL Number of records]** | The total records in the previous month for the dataset in Experience Platform. |
     | **[!UICONTROL Schema]** | The [schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) based on which the dataset was created in Adobe Experience Platform. |
@@ -640,6 +642,15 @@ Each (type of dataset) has the following common settings:
 
 {{common-dataset-settings}}
 
+
+### Delete a dataset
+
+when you delete a dataset, you are notified about the implications of the deletion. Deletion of a dataset can impact all associated connections, data views and projects. Also, if you do delete the one and only event or summary dataset in your connection, you are prompted to add another event or summary dataset to your connection when you try to save the connection. A connection cannot be saved without at least one event or summary dataset.
+
+
+### Past backfills
+
+When you select ![History](/help/assets/icons/History.svg) **[!UICONTROL Past backfills]** in the interface, a **[!UICONTROL Past backfills: _Name of dataset_]** dialog shows the most recent backfills from the dataset. 
 
 ## Connection preview {#preview}
 
