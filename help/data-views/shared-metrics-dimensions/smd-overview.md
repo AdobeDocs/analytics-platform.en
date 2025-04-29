@@ -76,14 +76,14 @@ All shared dimensions and metrics are displayed below the four overview cards.
   * **[!UICONTROL Last modified]**: If the component has been modified after it was created, the date that it was last modified.
 * **[!UICONTROL Job history]**: Select the ![History icon](/help/assets/icons/History.svg) icon to open a modal window that shows all instances of importing dimensions and metrics from individual data views.
 
-## Editing components or sharing components to data views
+## Edit components or share components to data views
 
 Use the check box next to a component to reveal all available actions that you can take. Multiple selections are supported.
 
 ![Preview of available actions](assets/smd-actions.png)
 
 * ![Pencil icon](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]**: Open the selected dimensions and metrics in the [shared component editor](shared-component-editor.md), which lets you adjust their [component settings](/help/data-views/component-settings/overview.md). When you select multiple components to edit, they are all opened in the component editor. You can shift + click components in the component editor to edit the same field for multiple components.
-* ![Share icon](/help/assets/icons/Share.svg) **[!UICONTROL Share to data view(s)]**: Opens a window that shows all data views available within the selected connection. Select the check box for each data view that you want to make this component available in, then select **[!UICONTROL Share]**.
-* ![Unshare icon](/help/assets/icons/SaveTo.svg) **[!UICONTROL Unshare to data view(s)]**: Opens a window that shows all data views that this component is currently shared with. Select the check box for each data view that you want to remove this component's availability from, then select **[!UICONTROL Unshare]**.
+* ![Share icon](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share to data view(s)]**: Opens a window that shows all data views available within the selected connection. Select the check box for each data view that you want to make this component available in, then select **[!UICONTROL Share]**.
+* ![Unshare icon](/help/assets/icons/SaveTo.svg) **[!UICONTROL Unshare from data view(s)]**: Opens a window that shows all data views that this component is currently shared with. Select the check box for each data view that you want to remove this component's availability from, then select **[!UICONTROL Unshare]**.
 * ![Duplicate icon](/help/assets/icons/Copy.svg) **[!UICONTROL Duplicate]**: Creates a copy of the selected component(s). A new component ID is generated for duplicated components.
 * ![Delete icon](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]**: Removes the selected components from the interface. If the selected components are shared with any data views, they are unshared.
