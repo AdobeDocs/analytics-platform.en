@@ -15,7 +15,7 @@ In field based stitching you specify an event dataset as well as the persistent 
 
 ## IdentityMap
 
-Field based stitching supports the use of the [`identifyMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) in the following scenarios:
+Field based stitching supports the use of the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) in the following scenarios:
 
 - Use of the primary identity in `identityMap` namespace to define the persistentID:
   - If multiple primary identities found in different namespaces, the identities in the namespaces are sorted lexigraphically and the first identity is selected.
