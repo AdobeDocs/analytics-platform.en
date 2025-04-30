@@ -233,7 +233,7 @@ In the **[!UICONTROL Connections]** > **[!UICONTROL *Name of the connection*]** 
     | **[!UICONTROL Granularity]** | The granularity of the data in the dataset; only applicable for summary datasets. | 
     | **[!UICONTROL Data source type]** | The data source type of the dataset. Not applicable for summary datasets. |
     | **[!UICONTROL Account ID]** | (only displayed for account-based connections) The Account ID that is used to support account-based reporting for the dataset. |
-    | **[!UICONTROL Global Account ID]** | (only displayed for account-based connections) The global Account ID that is used to support account-based reporting for the dataset. |
+    | **[!UICONTROL Global Account ID]** | (only displayed for account-based connections) The Global Account ID that is used to support account-based reporting for the dataset. |
     | **[!UICONTROL Buying Group ID]** | (only displayed for account-based connections) The Buying Group ID that is used to lookup buying group data. |
     | **[!UICONTROL Opportunity ID]** | (only displayed for account-based connections) The Opportunity ID that is used to lookup opportunity data. | 
     | **[!UICONTROL Person ID]** | The Person ID that is used to support person-based reporting for the dataset. |
@@ -459,7 +459,7 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >[!CONTEXTUALHELP]
 >id="connection_datasetbackfill"
 >title="Dataset backfill"
->abstract="This option will backfill the existing (historical) data from Experience Platform for this dataset in the connection."
+>abstract="This option backfills the existing (historical) data from Experience Platform for this dataset in the connection."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -544,7 +544,7 @@ All datasets and dataset types have [general settings and details](#general-data
 
 The specific settings for an event dataset are dependent on the type of connection.
 
-##### person-based connection
+##### Person-based connection
 
 ![Event dataset settings B2C](assets/event-dataset-settings-b2c.png)
 
@@ -558,7 +558,7 @@ For an event dataset in a person-based connection, you can specify:
 | **[!UICONTROL Data source description]** | A description of the data source when you have selected Other as the data source type. |
 
 
-##### account-based connection
+##### Account-based connection
 
 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
 
@@ -582,7 +582,7 @@ For an event dataset in an account-based connection, you can specify:
 
 The specific settings for a profile dataset are dependent on the type of connection.
 
-##### person-based connection
+##### Person-based connection
 
 ![Profile dataset settings B2C](assets/profile-dataset-settings-b2c.png)
 
@@ -590,11 +590,11 @@ For a profile dataset in a person-based connection, you specify:
 
 | Setting | Description |
 | --- | --- |
-| **[!UICONTROL Person ID]** | Select a Person ID from the drop-down list of available identities. These identities were defined in the dataset schema in Experience Platform. See [Use Identity Map as a Person ID](#id-map) for information on how to use Identity Map as a Person ID.<p>If there are no Person IDs to choose from, that means no Person IDs have not been defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information. <p>The value for the selected Person ID is considered to be case sensitive. For example, `abc123` and `ABC123` are two different values. |
+| **[!UICONTROL Person ID]** | Select a Person ID from the drop-down list of available identities. These identities were defined in the dataset schema in Experience Platform. See [Use Identity Map as a Person ID](#id-map) for information on how to use Identity Map as a Person ID.<p>If there are no Person IDs to choose from, no Person IDs are defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information. <p>The value for the selected Person ID is considered to be case sensitive. For example, `abc123` and `ABC123` are two different values. |
 | **[!UICONTROL Data source type]** | Select a type of data source. Types of data sources include: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>This field is used to survey the types of data sources in use. |
 | **[!UICONTROL Data source description]** | A description of the data source when you have selected Other as the data source type. |
 
-#### account-based connection
+#### Account-based connection
 
 ![Profile dataset settings B2B](assets/profile-dataset-settings-b2b.png)
 
@@ -602,7 +602,7 @@ For a profile dataset in an account-based connection, you specify:
 
 | Setting | Description |
 | --- | --- |
-| **[!UICONTROL Person ID]** | Select a Person ID from the drop-down list of available identities. These identities were defined in the dataset schema in Experience Platform. See [Use Identity Map as a Person ID](#id-map) for information on how to use Identity Map as a Person ID.<p>If there are no Person IDs to choose from, that means no Person IDs have not been defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information. <p>The value for the selected Person ID is considered to be case sensitive. For example, `abc123` and `ABC123` are two different values. |
+| **[!UICONTROL Person ID]** | Select a Person ID from the drop-down list of available identities. These identities were defined in the dataset schema in Experience Platform. See [Use Identity Map as a Person ID](#id-map) for information on how to use Identity Map as a Person ID.<p>If there are no Person IDs to choose from, no Person IDs are defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information. <p>The value for the selected Person ID is considered to be case sensitive. For example, `abc123` and `ABC123` are two different values. |
 | **[!UICONTROL Global Account field]** | Select a global account field to support account-based reporting for the dataset from the dropdown list of available identities. Applicable when you have added Global Account as a container to your connection.  |  
 | **[!UICONTROL Account field]** | Select an account field to support account-based reporting for the dataset from the dropdown list of available identities. Applicable when you have not added Global Account as a container to your connection.  |  
 | **[!UICONTROL Data source type]** | Select a type of data source. Types of data sources include: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>This field is used to survey the types of data sources in use. |
@@ -612,7 +612,7 @@ For a profile dataset in an account-based connection, you specify:
 
 The specific settings for a lookup dataset are dependent on the type of connection.
 
-##### person-based connection
+##### Person-based connection
 
 ![Lookup event dataset settings person-based](assets/lookup-dataset-settings-b2c.png)
 
@@ -628,7 +628,7 @@ For a lookup dataset in a person-based connection, you specify:
 
 
 
-##### account-based connection
+##### Account-based connection
 
 [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
 

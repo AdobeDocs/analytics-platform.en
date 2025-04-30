@@ -35,7 +35,7 @@ On a high-level, the Connections workflow allows you to:
 |:---:|---|
 | ➊ | [Manage your connections and overall usage](manage-connections.md) of Customer Journey Analytics from the Connections manager. |
 | ➋ | [Inspect the details of a connection](manage-connections.md#connection-details), like dataset records ingested, skipped, or deleted. |
-| ➌ | [Create or edit the configuration of a connection](create-connection.md#create-or-edit-a-connection), like a rolling data window, which sandbox to use, which datasets are part of the connection, and more.  |
+| ➌ | [Create or edit the configuration of a connection](create-connection.md#create-or-edit-a-connection), like a rolling data window, the sandbox to use, which datasets are part of the connection, and more.  |
 | ➍ | [Add datasets to a connection](create-connection.md#add-datasets). Your connection should at least have one event or summary dataset but can contain a variety of event, profile, lookup, and summary datasets. |
 | ➎ | [Configure the settings](create-connection.md#dataset-settings) for datasets that you add. You can determine how to link different datasets based on a common person-based or [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} account-based identifier. |
 | ➏ | [Edit the settings for an existing dataset](create-connection.md#edit-a-dataset). You can always revisit the dataset settings at a later stage. |
