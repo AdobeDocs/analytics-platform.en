@@ -14,6 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **April 2025**| |
+| Connections | Reworked and updated the Customer Journey Connections documentation for upcoming Customer Journey B2B Edition. | 
 | Product analysis use case | Added [Product analysis in Customer Journey Analytics](/help/use-cases/product-analysis.md). |
 | Shared metrics & dimensions | Added documentation for the [Shared metrics & dimensions](/help/data-views/shared-metrics-dimensions/smd-overview.md) feature. |
 | Report Builder | Reviewed and updated the [Report Builder](/help/report-builder/report-buider-overview.md) documentation. |
