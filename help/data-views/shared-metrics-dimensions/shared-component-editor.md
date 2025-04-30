@@ -14,7 +14,7 @@ The shared component editor allows you to create or edit shared dimensions and m
 
 The top right includes three buttons:
 
-* **[!UICONTROL Close]** or **[!UICONTROL Cancel]**: If all changes are saved, the **[!UICONTROL Close]** button closes the editor. If there are any unsaved changes, the **[!UICONTROL Cancel] button closes the editor without saving those changes.
+* **[!UICONTROL Close]** or **[!UICONTROL Cancel]**: If all changes are saved, the **[!UICONTROL Close]** button closes the editor. If there are any unsaved changes, the **[!UICONTROL Cancel]** button closes the editor without saving those changes.
 * **[!UICONTROL Save]**: Saves all components and keeps the editor open.
 * **[!UICONTROL Save and finish]**: Saves all components and closes the editor.
 
