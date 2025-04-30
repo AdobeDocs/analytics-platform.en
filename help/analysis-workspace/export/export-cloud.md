@@ -221,8 +221,8 @@ If you previously used Data Warehouse to export Adobe Analytics data, the follow
 | Build a custom report | Yes | Yes |
 | Calculated metrics | Yes | No |
 | Segments | Yes | Limited |
-| Dimensions | Limit of 5 | Unlimited |
-| Metrics | Limit of 5 | Unlimited |
+| Dimensions | Limit of 10 | Unlimited |
+| Metrics | Limit of 10 | Unlimited |
 | Reporting rows | Limit of 3 million, 30 million, 150 million, or 300 million, depending on tier | Unlimited |
 | Number of reports | Unlimited | Unlimited |
 | Ad hoc (one-time) delivery | Yes | Yes |

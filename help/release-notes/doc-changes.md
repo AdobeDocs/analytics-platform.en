@@ -14,6 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **April 2025**| |
+| Increased full table export limits | Changed the [number of columns](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/export/export-cloud#comparison-of-full-table-export-in-customer-journey-analytics-to-data-warehouse-in-adobe-analytics) customers can use with full table export from 5 dimensions and 5 metrics to 10 dimensions and 10 metrics. |
 | Connections | Reworked and updated the Customer Journey Connections documentation for upcoming Customer Journey B2B Edition. | 
 | Product analysis use case | Added [Product analysis in Customer Journey Analytics](/help/use-cases/product-analysis.md). |
 | Shared metrics & dimensions | Added documentation for the [Shared metrics & dimensions](/help/data-views/shared-metrics-dimensions/smd-overview.md) feature. |
