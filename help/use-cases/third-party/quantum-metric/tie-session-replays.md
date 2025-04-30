@@ -69,6 +69,7 @@ Now that the data element has logic to obtain the desired value, map the data el
 If your XDM object is already included in a send event action configuration, then you'll start seeing data when the changes are published.
 
 >[!NOTE]
+>
 >Sometimes the Web SDK runs faster than the Quantum Metric code. In these cases, the session ID is sent on the subsequent hit. If a visitor bounces, then the session ID is not collected in these instances.
 
 ## Step 3: Add Quantum Metric session ID as an available dimension
