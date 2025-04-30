@@ -10,7 +10,7 @@ exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
 ---
 # Tie Quantum Metric session replays to data in Customer Journey Analytics
 
-By linking Quantum Metric session replays with CJA data, customers can better understand "the why" behind "the what".  Workspace can be used to discover sessions with friction, then you can click hyperlinked session IDs to explore the session replay in Quantum Metric.  This data allows for viewing behavior within a session and better understanding of what drives consumer friction.  Through session replays tied with CJA, you can capture critical context around customer behavior in your experience. 
+By linking Quantum Metric session replays with CJA data, customers can better understand "the why" behind "the what".  Workspace can be used to discover sessions with friction, then you can click hyperlinked session IDs to explore the session replay in Quantum Metric.  This data allows for viewing behavior within a session and a better understanding of what drives consumer friction.  Through session replays tied with CJA, you can capture critical context around customer behavior in your experience. 
 
 ## Prerequisites
 
@@ -80,12 +80,12 @@ Once your implementation has the above changes published, edit your existing dat
 1. Navigate to Customer Journey Analytics, and select **[!UICONTROL Data views]** in the top menu.
 1. Select the desired existing data view.
 1. Locate the Quantum Metric session ID field on the left, and drag it to the dimensions area in the center.
-1. In the right pane, set the [persistence](/help/data-views/component-settings/persistence.md) setting to 'Session'.
+1. In the right pane, set the [persistence](/help/data-views/component-settings/persistence.md) setting to `Session`.
 1. Select **[!UICONTROL Save]**.
 
-## Step 4: Configure Workspace to accommodate the session ID dimension
+## Step 4: Configure Analysis Workspace to accommodate the session ID dimension
 
-Create a freeform table in Workspace and configure it so that session ID values are links directly to Quantum Metric.
+Create a freeform table in Workspace and configure it so that session ID values link directly to Quantum Metric.
 
 1. Log in to [experience.adobe.com](https://experience.adobe.com).
 1. Navigate to Customer Journey Analytics, and select **[!UICONTROL Workspace]** in the top menu.
@@ -106,6 +106,6 @@ Each session ID is now a clickable link. See [Create hyperlinks in a freeform ta
 
 ## Step 5: View sessions from Customer Journey Analytics
 
-Once you've found an insteresting segment that you want to explore session replays, you can apply it to the panel that includes your session ID links and  segment. The table returns all sessions in that segment, and you can click any one of them to explore further in Quantum Metric. 
+Once you've found an interesting segment that you want to explore session replays, you can apply it to the panel that includes your session ID links. The table returns all sessions in that segment, and you can click any one of them to explore further in Quantum Metric. 
 
 See [The enterprise guide to session replay](https://www.quantummetric.com/resources/ebook/the-enterprise-guide-to-session-replay) on Quantum Metric for more information. You can also contact your Quantum Metric customer support representative or submit a request through the [Quantum Metric Customer Request Portal](https://community.quantummetric.com/s/public-support-page).
