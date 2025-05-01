@@ -27,7 +27,7 @@ This use case requires a dedicated schema field to send data to. You can create 
 1. Navigate to **[!UICONTROL Data Collection]** > **[!UICONTROL Schemas]**.
 1. Select the desired schema from the list.
 1. Select the ![Add field icon](/help/assets/icons/AddCircle.svg) icon next to the desired object. For example, next to `Implementation Details`.
-1. In the right, enter the desired [!UICONTROL Name]. For example, `qmErrorName`.
+1. On the right, enter the desired [!UICONTROL Name]. For example, `qmErrorName`.
 1. Enter the desired [!UICONTROL Display name]. For example, `Quantum Metric error name`.
 1. Select the [!UICONTROL Type] as **[!UICONTROL String]**.
 1. Select **[!UICONTROL Save]**.
