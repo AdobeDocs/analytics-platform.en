@@ -23,7 +23,7 @@ To move projects to a folder from the [Project list](/help/analysis-workspace/bu
 
 1. Select ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) **Move to** from the list of possible [actions](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions). The **[!UICONTROL Select Folder]** dialog is displayed.
 
-1. Select a folder name from the **[!UICONTROL Folder]** drop-down menu. The dropdown lets you traverse the folder hierarchy to select a subfolder at any level.
+1. Select a folder name from the **[!UICONTROL Folder]** drop-down menu. The drop-down menu lets you traverse the folder hierarchy to select a subfolder at any level.
 
     ![The Select Folder view showing the drop down menu and available subfolders.](/help/analysis-workspace/build-workspace-project/assets/add-projects.png)
 

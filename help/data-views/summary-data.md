@@ -87,7 +87,7 @@ To use summary data properly in your reports and analysis, a number of prerequis
 
 ### Granularity and timezone
 
-When configuring the dataset containing the summary data in Customer Journey Analytics, you notice that the granularity is automatically derived from the data. The selections for **[!UICONTROL Timestamp]** and **[!UICONTROL Timezone]** dropdown are disabled as both are derived from the schema definition. 
+When configuring the dataset containing the summary data in Customer Journey Analytics, you notice that the granularity is automatically derived from the data. The selections for **[!UICONTROL Timestamp]** and **[!UICONTROL Timezone]** drop-down menu are disabled as both are derived from the schema definition. 
 
 #### Granularity
 

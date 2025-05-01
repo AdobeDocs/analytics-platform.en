@@ -30,9 +30,9 @@ To change the number of rows that are displayed:
 
 1. Click the number next to **[!UICONTROL Rows]** at the top of the first column of the table.
 
-   ![Freeform table showing the drop-down list of for the number of rows displayed. 400 rows is selected.](assets/change-row-count.gif)
+   ![Freeform table showing the drop-down menu of for the number of rows displayed. 400 rows is selected.](assets/change-row-count.gif)
 
-1. From the drop-down list, select the number of rows you would like the table to display.
+1. From the drop-down menu, select the number of rows you would like the table to display.
 
 
 ## Context-menu

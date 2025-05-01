@@ -164,7 +164,7 @@ You use the concept of a segment container to create a [segmented metric](metric
   * Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** from within a container:
 
     1. Select **[!UICONTROL Segment]**. A segment container is added to the **[!UICONTROL Definition]**.
-    1. In the new segment container, select a segment from the [!UICONTROL *Select...*] dropdown menu.
+    1. In the new segment container, select a segment from the [!UICONTROL *Select...*] drop-down menu.
 
   >[!TIP]
   >
@@ -190,7 +190,7 @@ To add a function container, you can use:
 * Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** from within a container:
 
   1. Select **[!UICONTROL Function]**.
-  1. In the container, select a function from the [!UICONTROL *Select...*] dropdown menu.
+  1. In the container, select a function from the [!UICONTROL *Select...*] drop-down menu.
 
 The function container is named after the function component. For example, ![Function](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT (metric)]**. Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup with details on the function. Select **[!UICONTROL Learn more]** for more information on the function. 
 
