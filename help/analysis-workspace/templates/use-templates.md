@@ -1465,32 +1465,25 @@ The following templates are available:
 >title="View call center data, including why customers called and the number of times."
 >abstract="**This can help you** better understand where customers are experiencing problems and where call center resources are being spent.<br/>**Based on what you learn, you might** do any number of things, like address product issues that are driving higher call center traffic, ultimately improving product profitability."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja-template--pointOfSale"
 >title="View point-of-sale (POS) transaction data, including revenue earned, orders made, and units sold. This template also includes visualizations that display information about top stores, top products, and top product categories, as well as online vs. offline sales."
 >abstract="**This can help you** better understand which are your top-selling products across store locations and online.<br/>**Based on what you learn, you might** do any number of things, like assign more marketing resources to your highest-performing products and channels."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-email"
 >title="View how the emails that you design and send using Adobe Journey Optimizer are generating new memberships, loyalty members, and cross-sell opportunities."
 >abstract="**This can help you** better understand the effectiveness of emails that you design and send using Adobe Journey Optimizer.<br/>**Based on what you learn, you might** do any number of things, like adjust your email strategy for a given email campaign."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja-template--survey"
 >title="View user engagement for your surveys. View the number of starts and completions, the top questions and answers, and the number of first vs. repeat participants."
 >abstract="**This can help you** better understand the engagement levels and success rate of your surveys.<br/>**Based on what you learn, you might** do any number of things, like adjust future surveys to yield better participation."
+
+>[!CONTEXTUALHELP]
+>id="cja-template--product-usage"
+>title="View how your organization uses Customer Journey Analytics."
+>abstract="**This can help you** better understand how many people in your organization use Customer Journey Analytics, how often they use it, and trend that data over time. You can also see the number of projects created and details about those projects. See which components, visualizations, and panels are most commonly used, among other usage statistics.<br/>**Based on what you learn, you might** do any number of things, like delete unused projects or components, or provide user training for popular features."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1502,6 +1495,7 @@ The following templates are available:
 | **Point of sale** | View point-of-sale (POS) transaction data, including revenue earned, orders made, and units sold. This template also includes visualizations that display information about top stores, top products, and top product categories, as well as online vs. offline sales. <p>**This can help you** better understand which are your top-selling products across store location and online.</p><p>**Based on what you learn, you might** do any number of things, like assign more marketing resources to your highest-performing products and channels.</p><p>This template uses the Users, Revenue, and Orders metrics.</p>  |
 | **Journey Optimizer email analysis** | View how the emails that you design and send using Adobe Journey Optimizer are generating new memberships, loyalty members, and cross-sell opportunities. <p>**This can help you** better understand the effectiveness of emails that you design and send using Adobe Journey Optimizer.</p><p>**Based on what you learn, you might** do any number of things, like adjust your email strategy for a given email campaign.</p>  |
 | **Survey** | View user engagement for your surveys. View the number of starts and completions, the top questions and answers, and the number of first vs. repeat participants.<p>**This can help you** better understand the engagement levels and success rate of your surveys.</p><p>**Based on what you learn, you might** do any number of things, like adjust future surveys to yield better participation.</p><p>This template uses the Users, Events, Suvey starts, Survey completes, and Survey completion rate metrics.</p>  |
+| **Product usage overview** | View how your organization uses Customer Journey Analytics.<p>**This can help you** better understand how many people in your organization use Customer Journey Analytics, how often they use it, and trend that data over time. You can also see the number of projects created and details about those projects. See which components, visualizations, and panels are most commonly used, among other usage statistics.</p><p>**Based on what you learn, you might** do any number of things, like delete unused projects or components, or provide user training for popular features.</p> |
 
 ### Journey Optimizer {#AJO-templates}
 
