@@ -38,7 +38,7 @@ To move folders in Workspace:
 * Select a folder that you want to move in the [Project list](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list).
 
   1. Select **[!UICONTROL Move to]** from the [actions](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions) available from the context menu ![More](/help/assets/icons/More.svg) of the selected folder, or the blue action bar.
-  1. In the **[!UICONTROL Select Folder]** dialog, select a folder from the **[!UICONTROL Folder]** dropdown menu to move the folder to.
+  1. In the **[!UICONTROL Select Folder]** dialog, select a folder from the **[!UICONTROL Folder]** drop-down menu to move the folder to.
 
   1. Select **[!UICONTROL Move]**.
 
@@ -46,7 +46,7 @@ To move folders in Workspace:
 
   1. Select **[!UICONTROL Move folder]** from ![More](/help/assets/icons/More.svg) in the [Title area](/help/analysis-workspace/build-workspace-project/freeform-overview.md#title-area).
 
-  1. In the **[!UICONTROL Select Folder]** dialog, select a folder from the **[!UICONTROL Folder]** dropdown menu to move the folder to.
+  1. In the **[!UICONTROL Select Folder]** dialog, select a folder from the **[!UICONTROL Folder]** drop-down menu to move the folder to.
 
   1. Select **[!UICONTROL Move]**.
 

@@ -46,7 +46,7 @@ Keep in mind that:
 
 1. Add a ![Comment](/help/assets/icons/ComboChart.svg) [!UICONTROL Combo] visualization. See [Add a visualization to a panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 
-1. From the drop-down lists, select a dimension for the X-axis and a metric for the Y-axis.
+1. From the drop-down menus, select a dimension for the X-axis and a metric for the Y-axis.
 
 1. Select the type of [!UICONTROL Line comparison] that you want to use.
 

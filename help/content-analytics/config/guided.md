@@ -285,7 +285,7 @@ In a new configuration, you need to define whether you want to use an existing T
     ![Content Analytics Data Collection Existing Tag](../assets/aca-configuration-datacollection-existingtag.png)
 
     1. Select **[!UICONTROL Choose existing]**.
-    2. Select an existing property from the **[!UICONTROL Tags property]** dropdown menu. You can start typing to search for and limit the available options. You cannot select a Tags property that already is used by another implemented Content Analytics configuration.
+    2. Select an existing property from the **[!UICONTROL Tags property]** drop-down menu. You can start typing to search for and limit the available options. You cannot select a Tags property that already is used by another implemented Content Analytics configuration.
 
 
 * To create a new Tags property:

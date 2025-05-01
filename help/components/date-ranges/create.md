@@ -49,7 +49,7 @@ The **[!UICONTROL New date range]** or **[!UICONTROL Edit date range]** dialog i
 1. Optionally, specify a **[!UICONTROL Description]**.
 1. Organize the segment by creating or applying one or more **[!UICONTROL Tags]**. Start typing to find existing tags you can select. Or press **[!UICONTROL ENTER]** to add a new tag. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a tag. |
 1. Select a **[!UICONTROL Date Range]** by selecting first the start date and then the end date. 
-   Alternatively, you can select a **[!UICONTROL Preset]** from the [!UICONTROL *Select a preset*] dropdown menu.
+   Alternatively, you can select a **[!UICONTROL Preset]** from the [!UICONTROL *Select a preset*] drop-down menu.
 
 1. Optionally, select **[!UICONTROL Show advanced settings]** to:
 

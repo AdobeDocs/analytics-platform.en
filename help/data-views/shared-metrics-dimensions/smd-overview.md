@@ -46,7 +46,7 @@ All shared dimensions and metrics are displayed below the four overview cards.
   * **[!UICONTROL Created by]**: View only components created by a given user.
   * **[!UICONTROL Duplicates]**: View only components that have the same component ID as another component. These filters are identical to reviewing components through the overview cards.
 * **Search**: Use the ![Search icon](../../assets/icons/Search.svg) icon to search for a component by name.
-* **[!UICONTROL Connection]**: A dropdown that changes the [connection](/help/connections/overview.md). Shared dimensions and metrics are always specific to a single connection.
+* **[!UICONTROL Connection]**: A drop-down menu that changes the [connection](/help/connections/overview.md). Shared dimensions and metrics are always specific to a single connection.
 * **[!UICONTROL Customize table]**: Select the ![Customize table icon](/help/assets/icons/ColumnSetting.svg) icon to show or hide columns in the table. Available options include:
   * **[!UICONTROL Field name]**: The name of the shared dimension or metric. This field is always visible.
   * **[!UICONTROL Type]**: Indicates if the component is a dimension or a metric. This field is always visible.

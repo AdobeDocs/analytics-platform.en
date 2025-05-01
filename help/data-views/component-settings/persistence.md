@@ -95,7 +95,7 @@ Details around the available expiration settings.
 
 ## [!UICONTROL Binding Dimension]
 
-A drop-down list that lets you bind the persistence of a dimension value to dimension values in another dimension. Valid options include other dimensions included in the data view.
+A drop-down menu that lets you bind the persistence of a dimension value to dimension values in another dimension. Valid options include other dimensions included in the data view.
 
 See [Using binding dimensions and metrics in Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) for examples around how to effectively use binding dimensions.
 
@@ -109,7 +109,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Binding dimensio
 
 ## [!UICONTROL Binding Metric]
 
-A drop-down list that lets you choose a metric that acts as a binding trigger. Valid options include metrics included in the data view.
+A drop-down menu that lets you choose a metric that acts as a binding trigger. Valid options include metrics included in the data view.
 
 This setting only appears when the Binding Dimension is lower in the object array than the component. When the binding metric is present in an event, dimension values are copied from the event-level dimension down to the lower schema level of the binding dimension.
 
