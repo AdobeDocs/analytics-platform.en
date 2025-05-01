@@ -77,7 +77,7 @@ An experience click is recorded when:
 
 ### Trigger to send a Content Analytics event
 
-To reduce the number of calls leaving the page, Content Analytics collects information but does not send that information immediately. Content interaction information is collected and an event containing that information is only send when one of the following triggers occurs:
+To reduce the number of calls leaving the page, Content Analytics collects information but does not send that information immediately. Content interaction information is collected and an event containing that information is only sent when one of the following triggers occurs:
 
 * Web SDK or AppMeasurements sends an event. The timestamp of this event is 
 * Visibility changes to hidden, for example:
