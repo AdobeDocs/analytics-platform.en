@@ -19,13 +19,13 @@ Get a glimpse of the newest enhancements in the Customer Journey Analytics produ
 
 >[!TAB Content Analytics]
 
-Adobe Content Analytics allows you to quickly and easily investigate large volumes of content data to uncover trends, spot anomalies, identify content fatigue, and gain insights from content exposure.
+Content Analytics allows you to quickly and easily investigate large volumes of content data to uncover trends, spot anomalies, identify content fatigue, and gain insights from content exposure.
 
 [![image](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 
->[!TAB Shared metrics and dimensoons]
+>[!TAB Shared metrics and dimensions]
 
-Shared metrics & dimensions provide a central location to manage dimensions and metrics that can be used across any number of data views. These components are especially valuable to organizations that use multiple data views, especially if those data views share common component settings.
+Shared metrics and dimensions provide a central location to manage dimensions and metrics that can be used across any number of data views. These components are especially valuable to organizations that use multiple data views, especially if those data views share common component settings.
 
 [![image](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 

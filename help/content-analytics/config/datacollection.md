@@ -10,7 +10,6 @@ exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
 
 This article explains in detail how Content Analytics collects data
 
-
 ## Definitions
 
 The following definitions are used in the context of this article:
@@ -34,7 +33,6 @@ The Content Analytics library collects data when:
 * The page URL is configured in the [Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, part of the included Tags library.
 
 
-
 ## Content Analytics event
 
 A Content Analytics event consists of:
@@ -46,7 +44,6 @@ A Content Analytics event consists of:
 * Experience clicks (if any, and if configured)
 * Asset views (if any, and if configured)
 * Asset clicks (if any, and if configured)
-
 
 Content Analytics events are collected as a sequence of:
 
@@ -80,7 +77,7 @@ An experience click is recorded when:
 
 ### Trigger to send a Content Analytics event
 
-To reduce the number of calls leaving the page, Content Analytics collects information but does not send that information immediately. Content interaction information is collected and an event containing that information is only send when one of the following triggers occurs:
+To reduce the number of calls leaving the page, Content Analytics collects information but does not send that information immediately. Content interaction information is collected and an event containing that information is only sent when one of the following triggers occurs:
 
 * Web SDK or AppMeasurements sends an event. The timestamp of this event is 
 * Visibility changes to hidden, for example:
