@@ -18,7 +18,7 @@ These steps assume that you use tags in Adobe Experience Platform Data Collectio
 
 See the [Quantum Metric tag extension](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) documentation for more information.
 
-## Step 1: Create a schema field to accommodate Quantum Metric data
+## Step 1: Create a schema field to accommodate Quantum Metric session ID
 
 This use case requires a dedicated schema field to send data to. You can create this field in any desired location in your schema and name it whatever you'd like. Example values are provided if your organization does not have a preference on name or location.
 
@@ -26,7 +26,7 @@ This use case requires a dedicated schema field to send data to. You can create 
 1. Navigate to **[!UICONTROL Data Collection]** > **[!UICONTROL Schemas]**.
 1. Select the desired schema from the list.
 1. Select the ![Add field icon](/help/assets/icons/AddCircle.svg) icon next to the desired object. For example, next to `Implementation Details`.
-1. In the right, enter the desired [!UICONTROL Name]. For example, `qmSessionId`.
+1. On the right, enter the desired [!UICONTROL Name]. For example, `qmSessionId`.
 1. Enter the desired [!UICONTROL Display name]. For example, `Quantum Metric session ID`.
 1. Select the [!UICONTROL Type] as **[!UICONTROL String]**.
 1. Select **[!UICONTROL Save]**.
