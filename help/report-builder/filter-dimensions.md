@@ -103,7 +103,7 @@ You can filter dimension items based on whether all criteria are met or if any c
 
 To set filtering criteria:
 
-1. Select an operator from the operator drop-down list. By default **[!UICONTROL Contains the phrase]** is selected
+1. Select an operator from the operator drop-down menu. By default **[!UICONTROL Contains the phrase]** is selected
 
     ![The operator list.](./assets/image31.png){zoomable="yes"}
 

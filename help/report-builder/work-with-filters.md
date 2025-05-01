@@ -72,7 +72,7 @@ You can replace an existing segment with another segment to change how the data 
 
 1. Select one or more segments that you want to replace.
 
-1. Search for one or more segments from the Replace with dropdown-menu to add the segment to the **[!UICONTROL Replace with]** list.
+1. Search for one or more segments from the Replace with drop-down menu to add the segment to the **[!UICONTROL Replace with]** list.
 
 1. Select **[!UICONTROL Apply]**.
 

@@ -22,7 +22,7 @@ The interface includes three main columns/sections:
 
 * **Schema field selector**: Locate the desired schema field(s) and drag them to the included components area.
   * **Connection**: The active connection. Change the active connection in the [shared metrics & dimensions manager](smd-overview.md).
-  * **Component list dropdown**: You can choose between selecting [!UICONTROL Schema fields] (net new shared dimensions and metrics), or [!UICONTROL Metrics & Dimensions] (existing shared components).
+  * **Component list**: You can choose between selecting [!UICONTROL Schema fields] (net new shared dimensions and metrics), or [!UICONTROL Metrics & Dimensions] (existing shared components) from the drop-down menu.
   * **Search**: Use the ![Search icon](/help/assets/icons/Search.svg) text search to locate the desired schema field or shared component by name. You can also use ![Filter icon](/help/assets/icons/Filter.svg) filters to narrow down the list of components. The `Is not deprecated` filter is active by default.
   * **Create derived field**: Allows you to [create a derived field](/help/data-views/derived-fields/derived-fields.md).
 * **Included components**: The components that you configure to be shared. When creating shared components, you can drag more than one schema field to this area to create multiple components simultaneously. When editing shared components, you can select multiple components to edit, which lists all selected components in this area.

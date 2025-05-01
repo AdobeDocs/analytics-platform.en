@@ -307,8 +307,8 @@ To add a field group, containing the fields for your sample data:
 1. Select the ![AddCircle](/help/assets/icons/AddCircle.svg) next to the schema name **[!UICONTROL Example summary Data Schema]**. A **[!UICONTROL Field properties]** panel opens up allowing you to add details for a field.
    1. Enter a **[!UICONTROL Field name]**: `campaign_id`
    1. Enter a **[!UICONTROL Display name]**: `campaign_id`
-   1. Select a **[!UICONTROL Type]** from the **[!UICONTROL Select data type]** dropdown: **[!UICONTROL String]**
-   1. Ensure **[!UICONTROL Assign to]** **[!UICONTROL Field group]** is selected, and select **[!UICONTROL Example Summary Data]** from the dropdown.
+   1. Select a **[!UICONTROL Type]** from the **[!UICONTROL Select data type]** drop-down menu: **[!UICONTROL String]**
+   1. Ensure **[!UICONTROL Assign to]** **[!UICONTROL Field group]** is selected, and select **[!UICONTROL Example Summary Data]** from the drop-down menu.
    1. Scroll down to the bottom, and select **[!UICONTROL Apply]**.
 1. Repeat the previous step for the other fields of the summary data. See the table below for the correct values.
 
@@ -356,7 +356,7 @@ To upload your sample data into this dataset:
    1. Select **[!UICONTROL Launch]** from the **[!UICONTROL Map CSV to XDM schema]** panel.
 1. In the **[!UICONTROL Dataflow detail]** step of the **[!UICONTROL Workflows]** > **[!UICONTROL Map CSV to XDM schema]** wizard:
    1. Select **[!UICONTROL Existing dataset]** for **[!UICONTROL Target dataset]**.
-   1. Select **[!UICONTROL Example Summary Data Dataset]** from the dropdown list.
+   1. Select **[!UICONTROL Example Summary Data Dataset]** from the drop-down menu.
    1. Select **[!UICONTROL Next]**.
 1. In the **[!UICONTROL Select data]** step of the **[!UICONTROL Workflows]** > **[!UICONTROL Map CSV to XDM schema]** wizard:
    1. Drag and drop your file with summary data in CSV format onto **[!UICONTROL Drag and drop files]**. Alternatively, use **[!UICONTROL Choose files]** to select your file.
@@ -385,8 +385,8 @@ To use your sample data in Customer Journey Analytics, you create a connection t
 1. Select **[!UICONTROL Create new connection]**.
 1. In **[!UICONTROL Connections]** > **[!UICONTROL Untitled connection]**:
    1. Enter a **[!UICONTROL Connection name]**, for example `Example Connection Using Summary Data`.
-   1. Select the sandbox that contains the dataset you created and the other datasets you want to include from the Sandbox dropdown list.
-   1. Select **[!UICONTROL less than 1 million]** from the **[!UICONTROL Average number of daily events]** dropdown list.
+   1. Select the sandbox that contains the dataset you created and the other datasets you want to include from the Sandbox drop-down menu.
+   1. Select **[!UICONTROL less than 1 million]** from the **[!UICONTROL Average number of daily events]** drop-down menu.
    1. Select **[!UICONTROL Add datasets]**.
    1. In the **[!UICONTROL Select datasets]** step of the **[!UICONTROL Add datasets]** wizard:
       1. Search ![Search](/help/assets/icons/Search.svg) and select **[!UICONTROL Example Summary Data Dataset]**, **[!UICONTROL Example Event Data Dataset]**, and **[!UICONTROL Example Lookup Data Dataset]**.
@@ -477,7 +477,7 @@ To ensure you can report on the correct data in Workspace, you want to create a 
          ![Tracking code summary data](../assets/tracking-code-summary-data.png)
          1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
          1. Enable **[!UICONTROL Create grouping]**.
-         1. Select **[!UICONTROL Campaign Id]** from the **[!UICONTROL Dimension]** dropdown list. This step ensures that event data and summary data is properly combined for reporting.
+         1. Select **[!UICONTROL Campaign Id]** from the **[!UICONTROL Dimension]** drop-down menu. This step ensures that event data and summary data is properly combined for reporting.
          1. You can optionally enable **[!UICONTROL Hide in reporting]**. [!UICONTROL Hide in reporting] ensures the selected dimension ([!UICONTROL Campaign Id]) is hidden in Analysis Workspace and other Customer Journey Analytics reporting tools. If you have enabled this option, you can verify the option:
             1. Select the **[!UICONTROL Campaign Id]** dimension in the **[!UICONTROL Dimensions]** list.
             1. You notice that **[!UICONTROL Hide component in reporting]** in **[!UICONTROL Component settings]** is now automatically enabled.
@@ -487,9 +487,9 @@ To ensure you can report on the correct data in Workspace, you want to create a 
          ![Derived field for campaign name](../aa-data/../assets/summary-derived-field.png)
 
          1. Select **[!UICONTROL campaign_id]** for **[!UICONTROL Value]**.
-         1. Select **[!UICONTROL Example Lookup Data Dataset]** from the **[!UICONTROL Lookup dataset]** dropdown menu.
-         1. Select **[!UICONTROL tracking_code]** from the **[!UICONTROL Matching Key]** dropdown menu.
-         1. Select **[!UICONTROL campaign_name]** from the **[!UICONTROL Values to return]** dropdown menu.
+         1. Select **[!UICONTROL Example Lookup Data Dataset]** from the **[!UICONTROL Lookup dataset]** drop-down menu.
+         1. Select **[!UICONTROL tracking_code]** from the **[!UICONTROL Matching Key]** drop-down menu.
+         1. Select **[!UICONTROL campaign_name]** from the **[!UICONTROL Values to return]** drop-down menu.
          1. Select **[!UICONTROL Save]**.
 
       1. Add the newly created derived field, **[!UICONTROL Campaign Name (Lookup Derived Field)]**, to the **[!UICONTROL Dimensions]** component list.
@@ -500,27 +500,27 @@ To ensure you can report on the correct data in Workspace, you want to create a 
 
          1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary Data Group]**.
          1. Enable **[!UICONTROL Create grouping]**.
-         1. Select **[!UICONTROL Campaign Name (Lookup Derived Field)]** from the **[!UICONTROL Dimension]** dropdown list. This step ensures that the Campaign Name (Lookup) from the Example Lookup Data Dataset can be safely used in reporting (see [Workspace](#workspace)).
+         1. Select **[!UICONTROL Campaign Name (Lookup Derived Field)]** from the **[!UICONTROL Dimension]** drop-down menu. This step ensures that the Campaign Name (Lookup) from the Example Lookup Data Dataset can be safely used in reporting (see [Workspace](#workspace)).
 
       1. Select the **[!UICONTROL Revenue]** metric from the **[!UICONTROL Metrics]** list. In the component panel:
 
          ![Revenue summary data](../assets/revenue-summary-data.png)
          1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Attribution]**.
-            1. Select ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]** from the **[!UICONTROL Attribution Model]** dropdown list.
-            1. Select **[!UICONTROL 30 Day]** from the **[!UICONTROL Lookback window]** dropdown list.
+            1. Select ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]** from the **[!UICONTROL Attribution Model]** drop-down menu.
+            1. Select **[!UICONTROL 30 Day]** from the **[!UICONTROL Lookback window]** drop-down menu.
          1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **Format**.
-            1. Select **[!UICONTROL Currency]** from the **[!UICONTROL Format]** dropdown list.
-            1. Select **[!UICONTROL 2]** from the **[!UICONTROL Decimal places]** dropdown list.
+            1. Select **[!UICONTROL Currency]** from the **[!UICONTROL Format]** drop-down menu.
+            1. Select **[!UICONTROL 2]** from the **[!UICONTROL Decimal places]** drop-down menu.
 
       1. Select the **[!UICONTROL Orders]** metric from the **[!UICONTROL Metrics]** list. In the component panel:
 
          ![Orders summary data](../assets/orders-summary-data.png)
          1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Attribution]**.
-            1. Select ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]** from the **[!UICONTROL Attribution Model]** dropdown list.
-            1. Select **[!UICONTROL 30 Day]** from the **[!UICONTROL Lookback window]** dropdown list.
+            1. Select ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]** from the **[!UICONTROL Attribution Model]** drop-down menu.
+            1. Select **[!UICONTROL 30 Day]** from the **[!UICONTROL Lookback window]** drop-down menu.
          1. Unfold ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Format]**.
-            1. Select **[!UICONTROL Decimal]** from the **[!UICONTROL Format]** dropdown list.
-            1. Select **[!UICONTROL ▲ Good (green)]** from the **[!UICONTROL Show upward trend as]** dropdown list.
+            1. Select **[!UICONTROL Decimal]** from the **[!UICONTROL Format]** drop-down menu.
+            1. Select **[!UICONTROL ▲ Good (green)]** from the **[!UICONTROL Show upward trend as]** drop-down menu.
 
       1. Select **[!UICONTROL Save and continue]**.
 

@@ -34,7 +34,7 @@ When you first start using this [!UICONTROL Analysis Workspace], you might wonde
 * where to create a segment, 
 * and more. 
 
-To help with these questions,[!UICONTROL Quick insights] leverages an algorithm that presents you with the most popular dimensions, metrics, segments, and date ranges your company uses. This algorithm is based on your own company's usage of data components in [!UICONTROL Analysis Workspace]. In fact, you see dimensions, metrics, and segment tagged with [!UICONTROL POPULAR] in the drop-down list, as shown here:
+To help with these questions,[!UICONTROL Quick insights] leverages an algorithm that presents you with the most popular dimensions, metrics, segments, and date ranges your company uses. This algorithm is based on your own company's usage of data components in [!UICONTROL Analysis Workspace]. In fact, you see dimensions, metrics, and segment tagged with [!UICONTROL POPULAR] in the drop-down menu, as shown here:
 
 ![The Quick Insights panel.](assets/popular-tag.png)
 
@@ -88,7 +88,7 @@ You can specify the building blocks in three ways:
 
 * Drag and drop components from the left panel.
 * Start typing in one of the building block fields. When input is found, the building block field auto populates with possible values.
-* Specify a building block drop-down (for example `Country` in **[!UICONTROL Analyze]**) and search the list of possible value (using ![ChevronRight](/help/assets/icons/ChevronRight.svg)) for the value you want to use (for example, **[!UICONTROL Country code]**).
+* Specify a building block drop-down menu (for example `Country` in **[!UICONTROL Analyze]**) and search the list of possible value (using ![ChevronRight](/help/assets/icons/ChevronRight.svg)) for the value you want to use (for example, **[!UICONTROL Country code]**).
 
 Select **[!UICONTROL Clear]** to clear all input fields.
 

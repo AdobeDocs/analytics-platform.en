@@ -9,7 +9,7 @@ exl-id: bf765144-34f8-465b-b06d-53e4ca91014a
 ---
 # Select a data view
 
-You can select a data view from the drop-down list or select a data view from a cell and automatically update your data block with a new data view.
+You can select a data view from the drop-down menu or select a data view from a cell and automatically update your data block with a new data view.
 
 ## Select data view from a cell
 
