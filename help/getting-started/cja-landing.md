@@ -23,6 +23,12 @@ Adobe Content Analytics allows you to quickly and easily investigate large volum
 
 [![image](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 
+>[!TAB Shared metrics and dimensoons]
+
+Shared metrics & dimensions provide a central location to manage dimensions and metrics that can be used across any number of data views. These components are especially valuable to organizations that use multiple data views, especially if those data views share common component settings.
+
+[![image](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
+
 >[!TAB AI Assistant] 
 
 AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace - whether its understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
@@ -48,6 +54,7 @@ Intelligent captions are now supported, with additional interface improvements, 
 Alerts allow you to be notified based on changed percentages or specific data points. You can preview how often an alert will trigger, send alerts by email or SMS, create stacked alerts, and more.
 
 [![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
 
 >[!TAB Summary data] 
 
