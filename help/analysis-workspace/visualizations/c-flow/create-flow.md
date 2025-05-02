@@ -12,6 +12,17 @@ role: User
 >title="Flow container"
 >abstract="Select the container to use to display (numbers for) the pathing."
 
+>[!CONTEXTUALHELP]
+>id="workspace_flow_include_repeats_disabled"
+>title="Include repeats (disabled)"
+>abstract="Repeats cannot be removed from Flow visualizations that include multi-valued dimensions."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_include_repeats_default"
+>title="Include repeats "
+>abstract="Flow visualizations are based on instances of a dimension. This setting gives you the option to include or exclude repeated instances, For example: Page reloads."
+
+
 
 Flow visualizations help you understand the journey originating from a specific conversion event on your website or your app. Or leading up to a specific conversion event. The visualization traces a path through your dimensions (and dimension items) or metrics. 
 
