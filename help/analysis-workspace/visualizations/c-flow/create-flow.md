@@ -57,6 +57,10 @@ role: User
 >title="Items expanded per column"
 >abstract="This field can only be set on the initial build. To update this field, select **[!UICONTROL Reset]** to build a new Flow visualization."
 
+>[!CONTEXTUALHELP]
+>id="workspace_flow_resettoupdate"
+>title="Reset to update"
+>abstract="This field can only be set on the initial build. To update this field, select **[!UICONTROL Reset]** to build a new Flow visualization."
 
 
 Flow visualizations help you understand the journey originating from a specific conversion event on your website or your app. Or leading up to a specific conversion event. The visualization traces a path through your dimensions (and dimension items) or metrics. 
