@@ -26,6 +26,15 @@ role: User
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_freeformtable_showtable"
+>title="Show table"
+>abstract="Select **[!UICONTROL Show table]** to generate a new data source for your current visualization, separate from the original data source."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 Synchronizing visualizations lets you control which data table or data source corresponds to a visualization.
