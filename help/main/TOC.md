@@ -317,7 +317,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Time-parting dimensions](../components/dimensions/time-parting-dimensions.md)
     + [High cardinality dimensions](../components/dimensions/high-cardinality.md)
   + [Metrics](../components/apply-create-metrics.md)
-  + Segments {#cja-segments}
+  + Segments {#cja-filters}
     + [Overview](../components/filters/filters-overview.md)
     + [Create segments](../components/filters/create-filters.md)
     + [Build segments](../components/filters/filter-builder.md)
