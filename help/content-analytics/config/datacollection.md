@@ -10,7 +10,6 @@ exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
 
 This article explains in detail how Content Analytics collects data
 
-
 ## Definitions
 
 The following definitions are used in the context of this article:
@@ -26,13 +25,12 @@ The following definitions are used in the context of this article:
 
 ## Functionality
 
-Content Analytics requires the Experience Platform Edge Network Web SDK to collect content event data. That event data collection is combined with the (existing) data collection of behaviorial event data through mechanisms like Experience Platform Edge Network (Web SDK, Server API) or Analytics source connector (for example, using AppMeasurement).
+Content Analytics requires the Experience Platform Edge Network Web SDK to collect content event data. That event data collection is combined with the (existing) data collection of behavioral event data through mechanisms like Experience Platform Edge Network (Web SDK, Server API) or Analytics source connector (for example, using AppMeasurement).
 
 The Content Analytics library collects data when:
 
 * Content Analytics is included in the Tags library that is loaded on the page.
 * The page URL is configured in the [Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, part of the included Tags library.
-
 
 
 ## Content Analytics event
@@ -47,11 +45,10 @@ A Content Analytics event consists of:
 * Asset views (if any, and if configured)
 * Asset clicks (if any, and if configured)
 
-
 Content Analytics events are collected as a sequence of:
 
 1. [A recorded view or click](#recorded-view-or-click).
-1. [A regular or specific (behavioral) event](#regular-or-specific-behaviorial-event). 
+1. [A trigger to send a Content Analytics event](#trigger-to-send-a-content-analytics-event). 
 
 Content Analytics does collect data this way to reflect that sequence, instead of collecting a view or click separately from collecting the event immediately following that view or click. This way of collecting content analytics data also reduces the amount of data collected.
 
@@ -78,11 +75,11 @@ An experience click is recorded when:
 * Any click occurs on a link on the page for which experiences are enabled.
 
 
-### Regular or specific (behavioral) event
+### Trigger to send a Content Analytics event
 
-Triggers to fire a regular or specific (behavioral) event in the context of Content Analytics are:
+To reduce the number of calls leaving the page, Content Analytics collects information but does not send that information immediately. Content interaction information is collected and an event containing that information is only sent when one of the following triggers occurs:
 
-* Web SDK or AppMeasurements sends an event.
+* Web SDK or AppMeasurements sends an event. The timestamp of this event is 
 * Visibility changes to hidden, for example:
   * Page unloads
   * Switch tab

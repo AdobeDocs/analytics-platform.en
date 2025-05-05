@@ -8,9 +8,59 @@ role: User
 # Configure a flow visualization {#configure-a-flow-visualization}
 
 >[!CONTEXTUALHELP]
+>id="workspace_flow_startswith"
+>title="Starts with"
+>abstract="This field can only be set on the initial build. To update this field, select **[!UICONTROL Reset]** to build a new Flow visualization."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_contains"
+>title="Contains"
+>abstract="This field can only be set on the initial build. To update this field, select **[!UICONTROL Reset]** to build a new Flow visualization."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_endswith"
+>title="Ends with"
+>abstract="This field can only be set on the initial build. To update this field, select **[!UICONTROL Reset]** to build a new Flow visualization."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_pathingdimension"
+>title="Pathing dimension"
+>abstract="Select a dimension to use as your path leading to or going from your selected component."
+
+>[!CONTEXTUALHELP]
 >id="workspace_flow_container"
 >title="Flow container"
 >abstract="Select the container to use to display (numbers for) the pathing."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_include_repeats_disabled"
+>title="Include repeats (disabled)"
+>abstract="Repeats cannot be removed from Flow visualizations that include multi-valued dimensions."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_include_repeats_default"
+>title="Include repeats"
+>abstract="Flow visualizations are based on instances of a dimension. This setting gives you the option to include or exclude repeated instances, For example: Page reloads."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_limit_occurrence"
+>title="Limit to first/last occurrence"
+>abstract="Results are limited to paths when the first/last touchpoint is an entry/exit."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_numberofcolumns"
+>title="Number of columns"
+>abstract="This field can only be set on the initial build. To update this field, select **[!UICONTROL Reset]** to build a new Flow visualization."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_itemsexpandedpercolumn"
+>title="Items expanded per column"
+>abstract="This field can only be set on the initial build. To update this field, select **[!UICONTROL Reset]** to build a new Flow visualization."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_resettoupdate"
+>title="Reset to update"
+>abstract="This field can only be set on the initial build. To update this field, select **[!UICONTROL Reset]** to build a new Flow visualization."
 
 
 Flow visualizations help you understand the journey originating from a specific conversion event on your website or your app. Or leading up to a specific conversion event. The visualization traces a path through your dimensions (and dimension items) or metrics. 
