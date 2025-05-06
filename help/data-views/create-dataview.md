@@ -78,7 +78,6 @@ Provides overarching settings for the data view.
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="Which components and datasets are added." 
 
 
-
 Provides settings that are applicable when using Adobe Journey Optimizer in addition to Customer Journey Analytics.
 
 This section is visible only for administrators who are provisioned with Journey Optimizer.
