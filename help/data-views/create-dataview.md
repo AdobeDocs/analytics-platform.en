@@ -50,14 +50,12 @@ To configure a new or existing data view:
 
 ### Settings {#settings}
 
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="dataview_externalid"
 >title="External ID"
 >abstract="Changing the External ID may impact how the data view name appears in external sources, such as business intelligence tools."
 
-<!-- markdownlint-enable MD034 -->
 
 Provides overarching settings for the data view.
 
@@ -72,7 +70,6 @@ Provides overarching settings for the data view.
 
 ### Compatibility {#compatibility}
 
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="dataview_dataviewsinadobejourneyoptimizer"
@@ -80,7 +77,6 @@ Provides overarching settings for the data view.
 >abstract="Customer Journey Analytics needs to use a connection and data view that are compatible with Adobe Journey Optimizer. By default, a connection and data view are automatically created for this purpose.<br/>Alternatively, you can enable this option to make this the default data view that is used in Adobe Journey Optimizer reporting. When enabled, all the necessary components required for Journey Optimizer are added to this data view, and all the necessary Journey Optimizer datasets are added to the connection associated with this data view."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="Which components and datasets are added." 
 
-<!-- markdownlint-enable MD034 -->
 
 
 Provides settings that are applicable when using Adobe Journey Optimizer in addition to Customer Journey Analytics.
