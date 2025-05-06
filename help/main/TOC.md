@@ -380,7 +380,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Monitor Data Dictionary health](../components/data-dictionary/monitor-data-dictionary-health.md)
 
 + Report Builder {#cja-reportbuilder}
-  + [Overview](../report-builder/report-buider-overview.md)
+  + [Overview](../report-builder/rb-overview.md)
   + [Report Builder set up](../report-builder/report-builder-setup.md)
   + [Create a data block](../report-builder/create-a-data-block.md)
   + [Report Builder hub](../report-builder/report-builder-hub.md)

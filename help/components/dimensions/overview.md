@@ -6,7 +6,7 @@ exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
 ---
 # Dimensions overview
 
-Dimensions are a component type in Customer Journey Analytics that are used to analyze data. For example, you use dimensions when building reports in [Analysis Workspace](/help/analysis-workspace/home.md) or in [Report Builder](/help/report-builder/report-buider-overview.md).
+Dimensions are a component type in Customer Journey Analytics that are used to analyze data. For example, you use dimensions when building reports in [Analysis Workspace](/help/analysis-workspace/home.md) or in [Report Builder](/help/report-builder/rb-overview.md).
 
 Customer Journey Analytics dimensions are of unlimited type; values can be numeric, text, objects, lists, or mixtures of all. 
 
@@ -31,7 +31,7 @@ Customer Journey Analytics administrators can [create dimensions within a data v
 
 ## Default dimensions
 
-When you create a dataview, the following time-based components are added by default as dimensions to your data view:
+When you create a data view, the following time-based components are added by default as dimensions to your data view:
 
 - 15 Minute
 - 30 Minute
