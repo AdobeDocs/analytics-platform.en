@@ -31,7 +31,7 @@ Customer Journey Analytics administrators can [create dimensions within a data v
 
 ## Default dimensions
 
-When you create a dataview, the following time-based components are added by default as dimensions to your data view:
+When you create a data view, the following time-based components are added by default as dimensions to your data view:
 
 - 15 Minute
 - 30 Minute
