@@ -116,9 +116,13 @@ The Data preview panel provides the following information.
 
 ## What happens after an audience is created and published? {#after-audience-created} 
 
-After you create and publish an audience in Customer Journey Analytics, the audience is available in Experience Platform. An Adobe Experience Platform streaming segment is created only if your organization is set up for streaming segmentation.
+After you create and publish an audience in Customer Journey Analytics, the audience is available in Experience Platform and can be viewed in the [Audience portal](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal). With the audience available in Experience Platform, it can be used in other Experience Platform applications, such as Adobe Journey Optimizer. 
 
-* The audience in Platform shares the same name and description as the Customer Journey Analytics audience. The name is appended with the Customer Journey Analytics audience ID to ensure that the audience is unique.
+An Adobe Experience Platform streaming segment is created only if your organization is set up for streaming segmentation.
+
+Consider the following when working with audiences that are published from Customer Journey Analytics to Experience Platform:
+
+* The audience in Experience Platform shares the same name and description as the Customer Journey Analytics audience. The name is appended with the Customer Journey Analytics audience ID to ensure that the audience is unique.
 * Any changes made to the name or description of the audience in Customer Journey Analytics are reflected in Experience Platform.
 * If an audience is deleted in Customer Journey Analytics, the audience continues to be available in Experience Platform until the profile membership of the audience expires. The profile membership expires after 420 days for one-time audiences and after 16 days for recurring audiences.
 

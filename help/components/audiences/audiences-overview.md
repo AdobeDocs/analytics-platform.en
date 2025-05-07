@@ -11,10 +11,12 @@ You can now create and publish audiences discovered in Customer Journey Analytic
 
 Publishing audiences provides a clear way to activate and to take action on insights found within Customer Journey Analytics. These actions might include:
 
-* Using the audience for a journey in Adobe Journey Optimizer.
+* Using the audience for a journey in Adobe Journey Optimizer. 
+  For more information about using audiences that are published to Experience Platform, see [Get started with audiences](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences) in the Journey Optimizer documentation.
 * Exporting the audience to a 3rd-party through an Experience Platform destination.
 * Enriching the Real-time customer profile with useful attributes derived from event-based data in Customer Journey Analytics.
-* Doing all this with minimal latency after publishing the audience. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency)
+* Doing all this with minimal latency after publishing the audience. 
+  For more information, see [Latency considerations](/help/components/audiences/publish.md#latency-considerations) in [Create and publish audiences](/help/components/audiences/publish.md).
 * Publishing one-time audiences or recurring audiences.
 
 The audiences you create in Customer Journey Analytics do not have to be based on datasets enabled for profile. You can ingest historical data into Experience Platform without enabling associated datasets and schemas for profile. Then use these datasets to discover relevant audiences in Customer Journey Analytics and publish these audiences to Real-time Customer Profile in Experience Platform for activation purposes.
