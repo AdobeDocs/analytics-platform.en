@@ -124,17 +124,17 @@ To access all available pre-built templates:
    
    * **[[!UICONTROL Most popular]](#most-popular)**
 
-   * **[[!UICONTROL Web] > [!UICONTROL Engagement]](#engagement)**
+   * **[[!UICONTROL Web]** > **[!UICONTROL Engagement]](#engagement)**
 
-   * **[[!UICONTROL Web] > [!UICONTROL Conversion]](#web-conversion)**
+   * **[[!UICONTROL Web]** > **[!UICONTROL Conversion]](#web-conversion)**
 
-   * **[[!UICONTROL Web] > [!UICONTROL Audience]](#web-audience)**
+   * **[[!UICONTROL Web]** > **[!UICONTROL Audience]](#web-audience)**
 
-   * **[[!UICONTROL Web] > [!UICONTROL Acquisition]](#web-acquisition)**
+   * **[[!UICONTROL Web]** > **[!UICONTROL Acquisition]](#web-acquisition)**
 
-   * **[[!UICONTROL Mobile] > [!UICONTROL Mobile App]](#mobile-mobile-app)**
+   * **[[!UICONTROL Mobile]** > **[!UICONTROL Mobile App]](#mobile-mobile-app)**
 
-   * **[[!UICONTROL Mobile] > [!UICONTROL Mobile Device Information]](#mobile-mobile-device-information)**
+   * **[[!UICONTROL Mobile]** > **[!UICONTROL Mobile Device Information]](#mobile-mobile-device-information)**
 
    * **[[!UICONTROL Time Parting]](#time-parting)**
    
