@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (May 2025)
 
-**Last update**: May 6, 2025
+**Last update**: May 7, 2025
 
 These release notes cover the release period of April 22 to June 18, 2025. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -21,7 +21,7 @@ These release notes cover the release period of April 22 to June 18, 2025. Adobe
 | **Data Insights Agent**  | The Data Insights Agent, part of the AI Assistant in Customer Journey Analytics, is a generative AI conversation agent. It uses components from your data view and your actual data to quickly and efficiently answer data-centric questions by building relevant visualizations in Analysis Workspace. [Documentation link to follow]|  | May 28, 2025  |
 | **Add and view comments in Analysis Workspace projects** | A new [commenting feature](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects) in Analysis Workspace allows you to share insights and ask questions within the context of an Analysis Workspace project. This can streamline discussions about the data, keeping conversations within the context of the data that is being discussed. You can <ul><li>Comment on any Analysis Workspace project to which you have access</li><li>Comment on a specific point in a visualization or make general comments about a project</li><li>Tag other users to notify them about your comments</li><li>Manage existing comments (edit, pin, resolve, and so forth)</li></ul>Customer Journey Analytics administrators can [disable commenting at the organization level](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences). Project owners can [disable commenting at the project level](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects). |  |  May 29, 2025 |
 | **Analysis Workspace left panel no longer opens and closes on hover** | The left panel in Analysis Workspace is used to add things like components, panels, and visualizations to your project. The option to temporarily open the left panel by hovering over one of the icons on the far left is no longer available. Instead, simply click one of these icons to keep the panel open, then click the same icon to close it. |  | May 29, 2025  |
-| **Disable the manifest file when exporting full tables** | You can now disable the manifest file that is included by default when exporting full tables from Analysis Workspace. |  | TBD |
+| **Disable the manifest file when exporting full tables** | You can now disable the manifest file that is included by default when exporting full tables from Analysis Workspace. |  | End of May, 2025 |
 | **Customer Journey Analytics B2B Edition** |  Customer Journey Analytics B2B Edition helps B2B companies align their marketing, sales, and product teams by providing actionable account insights that drive revenue growth. With the account placed at the center of the data model, all analysis focuses on the account journey. Adding a new layer of entities (accounts, opportunities, and buying groups) on top of person and time-based events, creates a complete picture of the B2B marketing and revenue lifecycle. |  |  June 18, 2025 |
 
 
