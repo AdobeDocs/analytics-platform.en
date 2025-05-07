@@ -326,7 +326,7 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
 >title="Matching key type"
->abstract="Select how to join: based on a match by field or match by container.<br/><br/>**[!UICONTROL Match by field]**: Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.<br/>**[!UICONTROL Match by container]**: Select a container to use to join with one of the event datasets. If this list is empty, you probably haven't configured one or more containers."
+>abstract="Select how to join: based on a match by field or match by container.<br/><br/>**[!UICONTROL Match by field]**: Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.<br/>**[!UICONTROL Match by container]**: Select a container to use to join with one of the event datasets."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -577,7 +577,6 @@ For an event dataset in an account-based connection, you can specify:
 | **[!UICONTROL Data source type]** | Select a type of data source. Types of data sources include: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>This field is used to survey the types of data sources in use. |
 | **[!UICONTROL Data source description]** | A description of the data source when you have selected Other as the data source type. |
 
-
 #### Profile dataset
 
 The specific settings for a profile dataset are dependent on the type of connection.
@@ -661,6 +660,25 @@ The specific settings for a summary dataset are:
 Each (type of dataset) has the following common settings:
 
 {{common-dataset-settings}}
+
+
+### Re-ingest data
+
+You sometimes require to re-ingest data from one or more datasets into a connection. To do so:
+
+1. For each dataset you want to re-ingest data for:
+
+   1. Change any of the following:
+
+      * An identifier (Person ID, Account ID, or other ID) for an already ingested event dataset. 
+      * A key, matching key, or matching key type (field or container) for an already ingested profile or lookup dataset.
+
+      Alternatively, you can toggle **[!UICONTROL Backfill all existing data backfill]** on the dataset.
+
+   1. **[!UICONTROL Apply]** the changes for the dataset.
+
+1. **[!UICONTROL Save]** the connection. Data is re-ingested for the specific datasets.
+
 
 
 ### Delete a dataset
