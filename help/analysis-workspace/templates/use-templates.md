@@ -122,27 +122,27 @@ To access all available pre-built templates:
 
    The following sections correspond to the available categories and provide information about each template.
    
-   * [[!UICONTROL Most popular]](#most-popular)
+   * **[[!UICONTROL Most popular]](#most-popular)**
 
-   * [[!UICONTROL Web] > [!UICONTROL Engagement]](#engagement)
+   * **[[!UICONTROL Web] > [!UICONTROL Engagement]](#engagement)**
 
-   * [[!UICONTROL Web] > [!UICONTROL Conversion]](#web-conversion)
+   * **[[!UICONTROL Web] > [!UICONTROL Conversion]](#web-conversion)**
 
-   * [[!UICONTROL Web] > [!UICONTROL Audience]](#web-audience)
+   * **[[!UICONTROL Web] > [!UICONTROL Audience]](#web-audience)**
 
-   * [[!UICONTROL Web] > [!UICONTROL Acquisition]](#web-acquisition)
+   * **[[!UICONTROL Web] > [!UICONTROL Acquisition]](#web-acquisition)**
 
-   * [[!UICONTROL Mobile] > [!UICONTROL Mobile App]](#mobile-mobile-app)
+   * **[[!UICONTROL Mobile] > [!UICONTROL Mobile App]](#mobile-mobile-app)**
 
-   * [[!UICONTROL Mobile] > [!UICONTROL Mobile Device Information]](#mobile-mobile-device-information)
+   * **[[!UICONTROL Mobile] > [!UICONTROL Mobile Device Information]](#mobile-mobile-device-information)**
 
-   * [[!UICONTROL Time Parting]](#time-parting)
+   * **[[!UICONTROL Time Parting]](#time-parting)**
    
-   * [[!UICONTROL Cross-Channel]](#cross-channel)
+   * **[[!UICONTROL Cross-Channel]](#cross-channel)**
 
-   * [[!UICONTROL Other Channels]](#other-channels)
+   * **[[!UICONTROL Other Channels]](#other-channels)**
 
-   * [[!UICONTROL AJO]](#ajo)
+   * **[[!UICONTROL AJO]](#ajo)**
 
 ### Most popular {#most-popular}
 
