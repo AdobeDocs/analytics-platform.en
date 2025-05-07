@@ -4,8 +4,6 @@ description: Link Quantum Metric session replays with CJA data to better underst
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hidefromtoc: yes
-hide: yes
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
 ---
 # Tie Quantum Metric session replays to data in Customer Journey Analytics
@@ -103,6 +101,8 @@ Create a freeform table in Workspace and configure it so that session ID values 
 1. Click **[!UICONTROL Create]**.
 
 Each session ID is now a clickable link. See [Create hyperlinks in a freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) for more information on adding hyperlinks to Analysis Workspace dimension items.
+
+![Session replay](assets/session-replay.png)
 
 ## Step 5: View sessions from Customer Journey Analytics
 

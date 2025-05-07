@@ -4,11 +4,10 @@ description: Concepts and features for the B2B Edition of Customer Journey Analy
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-hide: yes
-hidefromtoc: yes
 badgePremium: label="B2B Edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
 ---
+
 # B2B Edition concepts and features
 
 {{draft-b2b}}

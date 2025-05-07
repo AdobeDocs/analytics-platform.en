@@ -10,6 +10,7 @@ user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Learn about Adobe Customer Journey Analytics and how to use Analysis Workspace with data from Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
 ---
+
 # Adobe Customer Journey Analytics Guide {#using}
 
 + [Adobe Customer Journey Analytics Guide](../getting-started/cja-landing.md)
@@ -317,7 +318,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Time-parting dimensions](../components/dimensions/time-parting-dimensions.md)
     + [High cardinality dimensions](../components/dimensions/high-cardinality.md)
   + [Metrics](../components/apply-create-metrics.md)
-  + Segments {#cja-segments}
+  + Segments {#cja-filters}
     + [Overview](../components/filters/filters-overview.md)
     + [Create segments](../components/filters/create-filters.md)
     + [Build segments](../components/filters/filter-builder.md)
@@ -379,7 +380,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Monitor Data Dictionary health](../components/data-dictionary/monitor-data-dictionary-health.md)
 
 + Report Builder {#cja-reportbuilder}
-  + [Overview](../report-builder/report-buider-overview.md)
+  + [Overview](../report-builder/rb-overview.md)
   + [Report Builder set up](../report-builder/report-builder-setup.md)
   + [Create a data block](../report-builder/create-a-data-block.md)
   + [Report Builder hub](../report-builder/report-builder-hub.md)

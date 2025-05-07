@@ -148,7 +148,7 @@ Understand how Customer Journey Analytics compares to Adobe Analytics. And how t
     </td>
     <td>
       <img src="./assets/share.svg" width="35px"><br/>
-      <strong>Share, export, integrate</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">Projects</a> - <a href="/help/mobile-app/home.md">Analytics Dashboards</a> - <a href="/help/report-builder/report-buider-overview.md">Report Builder</a>  - <a href="/help/components/exports/manage-exports.md">Cloud export</a> - <a href="/help/integrations/overview.md">Integrations</a>
+      <strong>Share, export, integrate</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">Projects</a> - <a href="/help/mobile-app/home.md">Analytics Dashboards</a> - <a href="/help/report-builder/rb-overview.md">Report Builder</a>  - <a href="/help/components/exports/manage-exports.md">Cloud export</a> - <a href="/help/integrations/overview.md">Integrations</a>
     </td>
   </tr>
 </table> 

@@ -4,11 +4,10 @@ description: Learn about the B2B Edition of Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-hide: yes
-hidefromtoc: yes
 badgePremium: label="B2B Edition"
 exl-id: 89e482b8-8082-4413-8fd3-cc1331780af4
 ---
+
 # Customer Journey Analytics B2B Edition
 
 {{b2b-edition}}

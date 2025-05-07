@@ -4,8 +4,6 @@ description: Better understand page-level engagement and optimize pages based on
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hidefromtoc: yes
-hide: yes
 exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
 ---
 # Use Quantum Metric heatmaps with Customer Journey Analytics
@@ -18,7 +16,7 @@ The table will return all the sessions in that segment, and you can click any on
 
 You must be entitled to Quantum Metric's **UX Ops** package in order to access Quantum Metric's heatmap capabilities.
 
-## Step 1: Create a freeform table in Workspace and configure it so that session ID values are links directly to Quantum Metric.
+## Step 1: Configure links in Analysis Workspace
 
 1. Log in to [experience.adobe.com](https://experience.adobe.com).
 1. Navigate to Customer Journey Analytics, and select **[!UICONTROL Workspace]** in the top menu.
@@ -35,6 +33,8 @@ You must be entitled to Quantum Metric's **UX Ops** package in order to access Q
 
 1. Click **[!UICONTROL Create]**.
 1. Test one of the links to see if it opens in the URL with the Quantum Metric extension visible. These links open in a new tab so your Workspace project remains open.
+
+![Heatmap](assets/heatmap.png)
 
 ## Step 2: View heatmaps by clicking links within Customer Journey Analytics
 
