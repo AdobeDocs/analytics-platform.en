@@ -7,7 +7,7 @@ role: User
 ---
 # Calculated metrics templates
 
-Customer Journey Analytics provides the following calculated metrics templates to cover the most common use-cases. These Adobe-defined calculated metrics are identified by a small ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) logo. To quickly filter on these metrics, select ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Adobe Template]** in the [Components filter](/help/components/overview.md#filter).
+Customer Journey Analytics provides the following calculated metrics templates to cover the most common use cases. These Adobe-defined calculated metrics are identified by a small ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) logo. To quickly filter these metrics, select ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Adobe Template]** in the [Components filter](/help/components/overview.md#filter).
 
 | Calculated metric name | Description<br/>Formula |
 |---------|----------|
