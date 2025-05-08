@@ -13,6 +13,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **May 2025** | |
+| Event Depth dimension | Documentation for the new Event Depth dimension, as part of the [required standard components](/help/data-views/component-reference.md#required-standard-components) for a data view. |
 | **April 2025**| |
 | Increased full table export limits | Changed the [number of columns](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/export/export-cloud#comparison-of-full-table-export-in-customer-journey-analytics-to-data-warehouse-in-adobe-analytics) customers can use with full table export from 5 dimensions and 5 metrics to 10 dimensions and 10 metrics. |
 | Connections | Reworked and updated the Customer Journey Connections documentation for upcoming Customer Journey B2B Edition. | 
