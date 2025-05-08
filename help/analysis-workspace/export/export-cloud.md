@@ -117,7 +117,7 @@ A manifest file with a filename of `cja-export-{reportInstanceId}-{idx}.json.gz`
 
 <!-- add in  what the file name, structure, and file format will be -->
 
-## Advantages of exporting to the cloud
+## Advantages of exporting to the cloud {#advantages}
 
 Exporting Customer Journey Analytics data to the cloud allows you to: 
 
@@ -211,7 +211,7 @@ If a non-default attribution model is being used in a report, the allocation mod
    >
    >Multi-dimensional reports are supported only when exporting data to the cloud, as described in this article.
 
-## Comparison of Full Table Export (in Customer Journey Analytics) to Data Warehouse (in Adobe Analytics)
+## Comparison of Full Table Export (in Customer Journey Analytics) to Data Warehouse (in Adobe Analytics) {#comparison}
 
 If you previously used Data Warehouse to export Adobe Analytics data, the following table can help you understand the differences between exporting full tables in Customer Journey Analytics versus exporting data with Data Warehouse in Adobe Analytics.
 
