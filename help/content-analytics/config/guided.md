@@ -8,9 +8,6 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 ---
 # Content Analytics guided configuration
 
-{{release-limited-testing}}
-
-
 The guided configuration helps you to configure Content Analytics quickly and easily. The guided configuration uses a wizard to set up the requirements to configure Content Analytics automatically for your organization. In the **[!UICONTROL Configuration]** screen, you can either create a new configuration or edit an existing configuration. 
 
 >[!IMPORTANT]
@@ -99,7 +96,7 @@ Each configuration requires a unique name. For example, `Example Content Analyti
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_current_cleanup_labels_dialog"
 >title="Cleanup selected data view"
->abstract="You have selected a aata view that is already provisioned for Content Analytics. That existing Content Analytics configuration is removed and the data view is provisioned with your new configuration."
+>abstract="You have selected a data view that is already provisioned for Content Analytics. That existing Content Analytics configuration is removed and the data view is provisioned with your new configuration."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_prev_cleanup_labels_dialog"
@@ -132,14 +129,14 @@ Your configuration requires the selection of a [Data view](/help/data-views/data
    You can perform the following actions:
 
    * To search for a specific data view, use the ![Search](/help/assets/icons/Search.svg) field.
-   * To filter the list of available data views, select ![Show filters](/help/assets/icons/Filter.svg). You can filter the list on [!UICONTROL Connection], [!UICONTROL Owner] and [!UICONTROL Sandbox].<br/>Use ![Hide](/help/assets/icons/Filter.svg) **[!UICONTROL Hide filters]** to hide the filter pane.
+   * To filter the list of available data views, select ![Show filter](/help/assets/icons/Filter.svg). You can filter the list on [!UICONTROL Connection], [!UICONTROL Owner] and [!UICONTROL Sandbox].<br/>Use ![Hide](/help/assets/icons/Filter.svg) **[!UICONTROL Hide segments]** to hide the segment pane.
    * To define which columns to show in the table, select ![Column Settings](/help/assets/icons/ColumnSetting.svg). Select which columns to display in the **[!UICONTROL Customize table]** dialog and select **[!UICONTROL Apply]** to apply the changes.
   
 1. Select ![SelectBox](/help/assets/icons/SelectBox.svg) the data view that you want to use.
 1. Select **[!UICONTROL Save]** to confirm the selected data view. Select **[!UICONTROL Cancel]** to cancel.
 
 
-In Customer Journey Analytics, a [data view](/help/data-views/data-views.md) is tied to a Customer Journey Analytics [connection](/help/connections/overview.md). And a connection is based on a sandbox within your organization. Once you save the configuration, **[!UICONTROL Sandbox]** is auto populated with the name of the sandbox, based on the selected data view.
+In Customer Journey Analytics, a [data view](/help/data-views/data-views.md) is tied to a Customer Journey Analytics [connection](/help/connections/overview.md). And a connection is based on a sandbox within your organization. Once you save the configuration, the **[!UICONTROL Sandbox]** field is auto populated with the name of the sandbox, based on the selected data view.
 
 
 ### Experience capture and definition {#onboarding-experiences} 
@@ -174,7 +171,7 @@ In Customer Journey Analytics, a [data view](/help/data-views/data-views.md) is 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
 >title="Experience capture and definition"
->abstract="You must edit the settings for experience data collection in the Adobe Content Analytics extension in the Tags property that is associated with the current configuration."
+>abstract="You must edit the settings for experience data collection in the Adobe Content Analytics extension."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -185,7 +182,15 @@ By default, **[!UICONTROL Include experiences]** is turned off. When selected, y
 Only consider to include experiences when the following is applicable:
 
 * The pages on the site must be reproducible using the page URL. 
-* The text content seen by any given user can be reproduced using the page URL and does not depends on cookies or other personalization mechanisms.
+* The text content seen by any given user can be reproduced using the page URL and does not depend on cookies or other personalization mechanisms.
+
+>[!IMPORTANT]
+>
+>Implement [Content Analytics versioning](manual.md#versioning) to collect changes that you make to the experiences (pages) subject to Content Analytics. 
+
+
+
+#### New configuration {#new-experiences-configuration}
 
 To include experiences in a new or not implemented configuration:
 
@@ -203,16 +208,19 @@ To include experiences in a new or not implemented configuration:
 1. Select **[!UICONTROL Remove]** if you want to remove a combination of domain regular expression and query parameters.
 1. Select **[!UICONTROL Add Regex]** if you want to add another combination of a regular expression and query parameters.
 
+
+#### Implemented configuration {#implemented-experiences-configuration}
+
 To edit existing or include new experiences in an implemented configuration:
 
 ![Content Analytics configuration experience capture and definition](../assets/aca-configuration-experience-edit.png)
 
-* Toggle **[!UICONTROL Include experiences]**  to enable or disable:
+* Toggle **[!UICONTROL Include experiences]** to enable or disable:
 
    * The process that generates experience attributes from Content Analytics event data 
    * The reporting template in Customer Journey Analytics. 
    
-* Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** to further edit the configuration of data collection for experiences in Content Analytics. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) in the Tags property that is associated with the current configuration.
+* Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** to edit further the configuration of data collection for experiences in Content Analytics. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) in the Tags property that is associated with the current configuration.
 
 
 ### Data collection {#onboarding-data-collection}
@@ -277,7 +285,7 @@ In a new configuration, you need to define whether you want to use an existing T
     ![Content Analytics Data Collection Existing Tag](../assets/aca-configuration-datacollection-existingtag.png)
 
     1. Select **[!UICONTROL Choose existing]**.
-    2. Select an existing property from the **[!UICONTROL Tags property]** dropdown menu. You can start typing to search for and limit the available options. You cannot select a Tags property that already is used by another implemented Content Analytics configuration.
+    2. Select an existing property from the **[!UICONTROL Tags property]** drop-down menu. You can start typing to search for and limit the available options. You cannot select a Tags property that already is used by another implemented Content Analytics configuration.
 
 
 * To create a new Tags property:
@@ -298,7 +306,8 @@ In a new configuration, you need to define whether you want to use an existing T
 
 >[!IMPORTANT]
 >
->In case you have an existing Web SDK implementation that uses the [Javascript library](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library), and not uses the [Tags extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration), you have to manually remove the automatic included Web SDK extension from the newly created Tags property.
+>Manually remove the automatic included Web SDK extension from the newly created Tags property in case you have an existing Web SDK implementation that uses the [JavaScript library](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library) instead of the [Tags extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+>
 
 
 
@@ -306,9 +315,9 @@ In a new configuration, you need to define whether you want to use an existing T
 
 For an existing configuration, you cannot edit the Tags property. You can, however, edit the pages and assets to include or exclude.
 
-* To edit which pages should be included or excluded when collecting data for Content Analytics, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** underneath **[!UICONTROL Experience]**. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) that is associated with the Tags property for the current Content Analytics configuration. You can edit the regular expression to include or exclude pages. Ensure you [publish](#publish) your changes.
+* To edit which pages should be included or excluded when collecting data for Content Analytics, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** underneath **[!UICONTROL Experience]**. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) that is associated with the Tags property for the current Content Analytics configuration. You can edit the regular expression to include or exclude pages. Ensure you [publish](#publish) your changes.
 
-* To edit which assets should be included or excluded when collecting data for Content Analytics, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** underneath **[!UICONTROL Asset]**. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) that is associated with the Tags property for the current Content Analytics configuration. You can edit the regular expression to include or exclude assets. Ensure you [publish](#publish) your changes.
+* To edit which assets should be included or excluded when collecting data for Content Analytics, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** underneath **[!UICONTROL Asset]**. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) that is associated with the Tags property for the current Content Analytics configuration. You can edit the regular expression to include or exclude assets. Ensure you [publish](#publish) your changes.
 
 ### Summary {#summary}
 

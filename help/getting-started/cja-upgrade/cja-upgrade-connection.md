@@ -25,7 +25,7 @@ The following information explains how to create and configure a connection, as 
 
 ## Create and configure the connection {#create-connection}
 
-1. In Customer Journey Analytics, select the **[!UICONTROL Connections]** tab.
+1. In Customer Journey Analytics, select **[!UICONTROL Connections]**, optionally from **[!UICONTROL Data management]**, in the top menu.
 1. Select **[!UICONTROL Create new connection]**.
 
     ![Untitled connection settings](assets/create-conn1.png)
@@ -46,7 +46,7 @@ The following information explains how to create and configure a connection, as 
     | **[!UICONTROL Dataset type]** | For each dataset that you added to this connection, Customer Journey Analytics automatically sets the dataset type based on the data coming in. There are 3 different dataset types: Event data, Profile data, and Lookup data. See the table below for an explanation of dataset types. |
     | **[!UICONTROL Granularity]** | The granularity of the data in the dataset; only applicable for summary datasets. | 
     | **[!UICONTROL Data source type]** | The data source type of the dataset. Not applicable for summary datasets. |
-    | **[!UICONTROL Person ID]** | Select a Person ID from the drop-down list of available identities. These identities were defined in the dataset schema in the Experience Platform. See below for information on how to use Identity Map as a Person ID.<p>IMPORTANT: If there are no Person IDs to choose from, that means one or more Person IDs have not been defined in the schema. View [this video](https://www.youtube.com/watch?v=G_ttmGl_LRU) on how to define an identity in Experience Platform. |
+    | **[!UICONTROL Person ID]** | Select a Person ID from the drop-down menu of available identities. These identities were defined in the dataset schema in the Experience Platform. See below for information on how to use Identity Map as a Person ID.<p>IMPORTANT: If there are no Person IDs to choose from, that means one or more Person IDs have not been defined in the schema. View [this video](https://www.youtube.com/watch?v=G_ttmGl_LRU) on how to define an identity in Experience Platform. |
     | **[!UICONTROL Key]** | For lookup datasets only (such as _id). |
     | **[!UICONTROL Matching Key]** | For lookup datasets only (such as _id). |
     | **[!UICONTROL Import new data]** | Set to On or Off. |
@@ -93,7 +93,7 @@ You can add an Experience Platform dataset when you create a connection.
 
     | Setting | Description |
     | --- | --- |
-    | **[!UICONTROL Person ID]** | Only available for event and profile datasets. Select a Person ID from the drop-down list of available identities. These identities were defined in the dataset schema in the Experience Platform. See below for information on how to use Identity Map as a Person ID.<p>If there are no Person IDs to choose from, that means one or more Person IDs have not been defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information. <p>The value for the selected Person ID is considered to be case sensitive. For example, `abc123` and `ABC123` are two different values. |
+    | **[!UICONTROL Person ID]** | Only available for event and profile datasets. Select a Person ID from the drop-down menu of available identities. These identities were defined in the dataset schema in the Experience Platform. See below for information on how to use Identity Map as a Person ID.<p>If there are no Person IDs to choose from, that means one or more Person IDs have not been defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information. <p>The value for the selected Person ID is considered to be case sensitive. For example, `abc123` and `ABC123` are two different values. |
     | **[!UICONTROL Timestamp]** | For event and summary datasets only, this setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. |
     | **[!UICONTROL Key]** | Only available for lookup datasets. The key to use for a Lookup dataset. |
     | **[!UICONTROL Matching key]** | Only available for lookup datasets. The matching key to join on in one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset. |

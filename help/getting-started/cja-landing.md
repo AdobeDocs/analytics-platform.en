@@ -9,7 +9,7 @@ exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 
 This technical documentation guide provides self help assistance for Customer Journey Analytics. Customer Journey Analytics allows you to bring your customer data from any channel you choose (both online and offline) into Adobe Experience Platform. And then analyze this data just as you would your existing digital data using Analysis Workspace today.
 
-Customer Journey Analytics lets you control how you connect your online and offline data in Analysis Workspace on any common customer ID, allowing you to do attribution, filters, flow, fallout, etc. across your customer data.
+Customer Journey Analytics lets you control how you connect your online and offline data in Analysis Workspace on any common customer ID, allowing you to do attribution, segments, flow, fallout, etc. across your customer data.
 
 ## What's new?
 
@@ -19,9 +19,15 @@ Get a glimpse of the newest enhancements in the Customer Journey Analytics produ
 
 >[!TAB Content Analytics]
 
-Adobe Content Analytics allows you to quickly and easily investigate large volumes of content data to uncover trends, spot anomalies, identify content fatigue, and gain insights from content exposure.
+Content Analytics allows you to quickly and easily investigate large volumes of content data to uncover trends, spot anomalies, identify content fatigue, and gain insights from content exposure.
 
 [![image](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
+
+>[!TAB Shared metrics and dimensions]
+
+Shared metrics and dimensions provide a central location to manage dimensions and metrics that can be used across any number of data views. These components are especially valuable to organizations that use multiple data views, especially if those data views share common component settings.
+
+[![image](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
 >[!TAB AI Assistant] 
 
@@ -48,6 +54,7 @@ Intelligent captions are now supported, with additional interface improvements, 
 Alerts allow you to be notified based on changed percentages or specific data points. You can preview how often an alert will trigger, send alerts by email or SMS, create stacked alerts, and more.
 
 [![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
 
 >[!TAB Summary data] 
 
@@ -141,7 +148,7 @@ Understand how Customer Journey Analytics compares to Adobe Analytics. And how t
     </td>
     <td>
       <img src="./assets/share.svg" width="35px"><br/>
-      <strong>Share, export, integrate</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">Projects</a> - <a href="/help/mobile-app/home.md">Analytics Dashboards</a> - <a href="/help/report-builder/report-buider-overview.md">Report Builder</a>  - <a href="/help/components/exports/manage-exports.md">Cloud export</a> - <a href="/help/integrations/overview.md">Integrations</a>
+      <strong>Share, export, integrate</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">Projects</a> - <a href="/help/mobile-app/home.md">Analytics Dashboards</a> - <a href="/help/report-builder/rb-overview.md">Report Builder</a>  - <a href="/help/components/exports/manage-exports.md">Cloud export</a> - <a href="/help/integrations/overview.md">Integrations</a>
     </td>
   </tr>
 </table> 

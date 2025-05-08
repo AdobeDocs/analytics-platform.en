@@ -7,59 +7,75 @@ type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
 ---
-# Filter Dimensions
+
+# Filter dimensions
 
 By default, each dimension item in the table returns the top 10 items for that dimension.
 
-To change the dimension items returned for each dimension
+To change the dimension items returned for each dimension:
 
-1. Select a data block and click Edit data block in the COMMANDS panel.
+1. Select a cell in the data block.
 
-1. Click **[!UICONTROL Next]** to display the Dimensions tab.
+1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit data block]** in the **[!UICONTROL Commands]** panel.
 
-1. Click the **...** icon next to a component name in the table.
+1. Select **[!UICONTROL Next]** to display the **[!UICONTROL Dimensions]** tab.
 
-    ![The ellipsis icon options.](./assets/image27.png)
+1. Select ![MoreSmall](/help/assets/icons/MoreSmall.svg) next to a component name in the table.
 
-1. Select **Filter dimension** in the pop-up menu to display the **Filter dimension** pane.
+    ![The ellipsis icon options.](./assets/image27.png){zoomable="yes"}
 
-1. Select **Most popular** or **Specific**.
+1. Select **[!UICONTROL Filter dimension]** in the pop-up menu to display the **[!UICONTROL Filter dimension]** pane.
 
-    ![The specific option selected in the Filter dimension pane.](./assets/image28.png)
+1. Select **Most popular** or **Specific** as the **[!UICONTROL Type]**.
 
-1. Select appropriate options based on the filter type chosen.
+    ![The specific option selected in the Filter dimension pane.](./assets/image28.png){zoomable="yes"}
 
-1. Click **Apply** to add the filter.
+1. Select appropriate options based on the [filter type](#filter-type) chosen.
 
-    Report Builder displays a notification to confirm the added filter.
+1. Select **[!UICONTROL Apply]** to add the filter.
 
-To display applied filters, hover over a dimension. Dimensions with applied filters display a filter icon to the right of the Dimension name.
+1. Report Builder displays a notification to confirm the added filter.
 
-## Filter Type
+To display applied filters, hover over a dimension. Dimensions with applied filters display a ![Filter](/help/assets/icons/Filter.svg) filter icon next to the dimension name.
 
-There are two ways to filter dimension items: Most popular and Specific.
+## Change the filter and sort order
 
-## Most popular
+A ![ArrowUp](/help/assets/icons/ArrowUp.svg) or ![ArrowDown](/help/assets/icons/ArrowDown.svg) appears next to the metric used to filter and sort the data block. The direction of the arrow indicates whether the metric is sorted in ascending or descending order.
 
-The Most popular option allows you to dynamically filter dimension items based on metric values. Most popular filtering returns the highest ranked dimension items based on metric values. By default, the first 10 dimensions items are listed, sorted by the first metric added to the data block.
+To change the sort order:
 
- ![The Most popular option.](./assets/image29.png)
+- Select ![ArrowUp](/help/assets/icons/ArrowUp.svg) or ![ArrowDown](/help/assets/icons/ArrowDown.svg) next to the metric to toggle the sort order.
+
+To change the metric used to filter and sort the data block:
+
+1. Hover over the desired metric component in the Table builder to display additional options.
+
+2. Select ![ArrowDown](/help/assets/icons/ArrowDown.svg) for the preferred metric.
+
+   ![The Table builder and metrics.](./assets/image30.png){zoomable="yes"}
 
 
-### Page and Rows options
 
-Use the **Page** and **Rows** fields to divide data into sequential groups or pages. This allows you to pull ranked row values other than the top-most values into your report. This feature is especially useful for pulling data beyond the 50,000 row limit.
+## Filter type
 
-#### Page and Rows defaults
+There are two ways to filter dimension items: [Most popular](#most-popular) and [Specific](#specific-filtering)
 
-- Page = 1
-- Rows = 10
+### **[!UICONTROL Most popular]**
 
-The Page and Rows default settings identify that each page has 10 rows of data. Page 1 returns the top 10 items, page 2 returns the next 10 items, and so on.
+The **[!UICONTROL Most popular]** option allows you to dynamically filter dimension items based on metric values. Most popular returns the highest ranked dimension items based on metric values. By default, the first 10 dimensions items are listed, sorted by the first metric added to the data block.
+
+ ![The Most popular option.](./assets/image29.png){zoomable="yes"}
+
+
+#### Page and Rows options
+
+Use the **[!UICONTROL Page]** and **[!UICONTROL Rows]** fields to divide data into sequential groups or pages. This feature allows you to pull ranked row values other than the top-most values into your report. And is especially useful for pulling data beyond the 50,000 row limit.
+
+The default for Page is `1` and for Rows is `10`. These defaults imply that each page has 10 rows of data. Page 1 returns the top 10 items, page 2 returns the next 10 items, and so on.
 
 The table below lists examples of page and row values and the resulting output.
 
-| Page | Row    | Output               |
+| Page | Row    | Output               | 
 |------|--------|----------------------|
 | 1    | 10     | Top 10 items         |
 | 2    | 10     | Items 11-20          |
@@ -67,95 +83,69 @@ The table below lists examples of page and row values and the resulting output.
 | 2    | 100    | Items 101-200        |
 | 2    | 50,000 | Items 50,001-100,000 |
 
-#### Minimum and maximum values
+The table below lists minimum and maximum values for page and rows.
 
-- Starting page: Min = 1, Max: 50 million
-- Number of rows: Min = 1, Max: 50,000
+|       | Minimum values | Maximum values |
+|-------|---------------:|---------------:|
+| Starting page | 1| 50 million |
+| Number of rows| 1| 50,000|
 
-### Include "No value"
 
-In Customer Journey Analytics, some dimensions collect a "no value" entry. This filter allows you to exclude these values from reports. For example, you can create a classification such as the Product Name classification based on the Product SKU key. If a specific product SKU has not been set up with its specific Product Name classification, its Product Name value is set to "no value".
+#### Include "No value"
 
-Include "**No value**" is selected by default. Deselect this option to exclude entries with no value.
+In Customer Journey Analytics, some dimensions collect a *No value* entry. The **[!UICONTROL Include "No value"]** setting allows you to exclude these values from reports. For example, you can create a classification such as the Product Name classification based on the Product SKU key. If a specific product SKU has not been set up with its specific Product Name classification, its Product Name value is set to *No value*.
 
-### Filter by Criteria
+**[!UICONTROL Include "No value"]** is selected by default. Deselect this option to exclude entries with no value.
+
+#### Filter by Criteria
 
 You can filter dimension items based on whether all criteria are met or if any criteria are met.
 
-To set filtering criteria
+To set filtering criteria:
 
-1. Select an operator from the drop-down list.
+1. Select an operator from the operator drop-down menu. By default **[!UICONTROL Contains the phrase]** is selected
 
-    ![The operator list.](./assets/image31.png)
+    ![The operator list.](./assets/image31.png){zoomable="yes"}
 
-1. Enter a value into the search field.
+1. Enter a search term.
 
-1. Click Add row to confirm the selection and add another criteria item.
+1. Select ![Add](/help/assets/icons/Add.svg) **[!UICONTROL Add row]** to confirm the selection and add another criteria item.
 
-1. Click the delete icon to remove a criteria item.
+1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a criteria item.
 
-    You can include up to 10 criteria items.
+You can include up to 10 criteria items.
 
-### Change the filter and sort order
+### **[!UICONTROL  Specific]**
 
-An arrow appears next to the metric used to filter and sort the data block. The direction of the arrow indicates whether the metric is sorted greatest to least or least to greatest.
+The **[!UICONTROL Specific]** option allows you to create a fixed list of dimension items for each dimension. Use the **[!UICONTROL Specific]** filtering type to specify the exact dimension items to include in your filter. You can select items from a list or from a range of cells.
 
-To change the sort direction, click the arrow next to the metric. 
+![The Specific options and selected items.](./assets/image32.png){zoomable="yes"}
 
-To change the metric used to filter and sort the data block,
+#### From list
 
-1. Hover over the desired metric component in the Table builder to display additional options.
+1. Select the **[!UICONTROL From list]** option to search for and select dimension items.
 
-2. Click the arrow on the preferred metric. 
+    When you select the **From list** option, the **[!UICONTROL Dimension items]** list is populated with dimension items ordered by number of events.
 
-   ![The Table builder and metrics.](./assets/image30.png)
+    ![The From list option and available items.](./assets/image33.png){zoomable="yes"}
 
+1. Enter a search term in the ![Search](/help/assets/icons/Search.svg) **[!UICONTROL _Add item_]** to search the list.
 
-## Specific filtering
+1. To search for an item not included in the last 90 days of data, select **[!UICONTROL Show items for the last 6 months]** to extend the search. After data from the past 6 months loads, Report Builder updates the link to **[!UICONTROL Show items for last 18 months]**.
 
-The Specific option allows you to create a fixed list of dimension items for each dimension. Use the **Specific** filtering type to specify the exact dimension items to include in your filter. You can select items from a list or from a range of cells.
+1. To delete an item from the **[!UICONTROL Selected items]** list, select ![CrossSize75](/help/assets/icons/CrossSize75.svg).
 
-![The Specific options and selected items.](./assets/image32.png)
+1. To move an item in the **[!UICONTROL Selected items]** list, drag and drop the item or select ![MoreSmall](/help/assets/icons/MoreSmall.svg) to display the context menu and select from the move options.
 
-### From list
+1. Select **[!UICONTROL Apply]**.
 
-1. Select the **From list** option to search for and select dimension items.
+Report Builder updates the list to show the specific filtering you applied.
 
-    When you select the **From list** option, the list is populated with dimension items with the most events first.
+#### From range of cells
 
-    ![The From list option and available items.](./assets/image33.png)
+Select the **From range of cells** option to choose a range of cell that contains the list of dimensions items to match.
 
-    The **Available items** list is ordered from dimension items with the most events to those with the least.
-
-1. Enter a search term in the **Add item** field to search the list.
-
-1. To search for an item not included in the last 90 days of data, click **Show items for the last 6 months** to extend the search.
-
-    ![The Show items from the last 6 months list.](./assets/image34.png)
-
-    After data from the past 6 months loads, Report Builder updates the link to **Show items for last 18 months**.
-
-1. Select a dimension item.
-
-    Selected dimension items are automatically added to the **Selected items** list.
-
-    ![](./assets/image35.png)
-
-    To delete an item from the list, click the delete icon to remove the item from the list.
-
-    To move an item in the list, drag and drop the item or click ... to display the move menu.
-
-    ![The dimension items list.](./assets/image36.png)
-
-1. Click **Apply**
-
-    Report Builder updates the list to show the specific filtering you applied.
-
-### From range of cells
-
-Select the **From range of cells** option to choose a range of cell that contain the list of dimensions items to match.
-
- ![The From range of cells option and field to select one range of cells.](./assets/image37.png)
+ ![The From range of cells option and field to select one range of cells.](./assets/image37.png){zoomable="yes"}
 
 When you select a range of cells, consider the following restrictions:
 
@@ -165,10 +155,14 @@ When you select a range of cells, consider the following restrictions:
 
 Your selection can contain empty cells or cells with values that don't match with a specific dimension item.
 
-### From the Dimensions tab in the Table builder
 
-From the **Dimensions** tab, click the chevron icon next to a dimension name to view the list of dimension items.
+### Quickly filter a dimension
 
- ![The Dimensions tab and the list of dimensions.](./assets/dimensions_chevron.png)
+To filter a dimension for which currently no filter is applied:
 
-You can drag and drop items onto the **Table** or double-click an item name to add it to the **Table** builder.
+1. Select ![ChevronRight](/help/assets/icons/ChevronRight.svg) for a dimension. For example, **[!UICONTROL Interaction channel]**.
+
+1. Double select a dimension items to add to the filter. Alternatively, select one or more dimension items and drag and drop the selection onto the ![TableSelectRow](/help/assets/icons/TableSelectRow.svg) **[!UICONTROL Row]** section.
+
+   ![The Dimensions tab and the list of dimensions.](./assets/quickly-filter.png){zoomable="yes"}
+

@@ -20,7 +20,7 @@ Alerts let you:
 
 The following video tutorial provides a basic overview of alerts: [Alerts](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html) (5:34)
 
-## Understand how alerts differ in Customer Journey Analytics from Adobe Analytics
+## Understand how alerts differ
 
 The process of using alerts in Customer Journey Analytics is nearly identical to using alerts in Adobe Analytics. However, there are important differences.
 

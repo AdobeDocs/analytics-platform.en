@@ -74,7 +74,7 @@ The following are common actions in the Scheduled Projects manager. You can sele
 
 | Icon | Action | Description |
 |:---:|---|---|
-| ![Labels](/help/assets/icons/Labels.svg)| **[!UICONTROL Tag]** | Tag the selected audiences. In the **[!UICONTROL Update tags: *audience name*]** dialog, select tags from the dropdown menu or type one or more new tags. Select **[!UICONTROL Save]** to save. |
+| ![Labels](/help/assets/icons/Labels.svg)| **[!UICONTROL Tag]** | Tag the selected audiences. In the **[!UICONTROL Update tags: *audience name*]** dialog, select tags from the drop-down menu or type one or more new tags. Select **[!UICONTROL Save]** to save. |
 | ![Delete](/help/assets/icons/Delete.svg) | **[!UICONTROL Delete]** | Delete the selected audiences.|
 | ![Edit](/help/assets/icons/Edit.svg) | **[!UICONTROL Rename]** | Rename the selected audience. Use the **[!UICONTROL Rename: *audience name*]** dialog to rename the audience and select **[!UICONTROL Save]** to save. |
 

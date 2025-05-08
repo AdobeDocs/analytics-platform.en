@@ -112,9 +112,9 @@ You create nodes in the following ways: by dragging Workspace components from th
    | Dimension item | Blank area of the canvas | The node displays where the component was dropped, unconnected with any existing nodes. |
    | Dimension item | An existing node | The component is automatically combined with the existing node. |
    | Dimension item | An arrow that connects 2 existing nodes | The node displays between the two existing nodes where the component was dropped and is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p> |
-   | Filter | Blank area of the canvas  | The node displays where the component was dropped unconnected with any other nodes.<p>The number and percentage that appear on the node include the total of the primary metric, segmented by the segment you selected.</p> <p>For example, if People is selected as the primary metric for the journey, then adding a segment of Today to a blank area of the canvas shows all the people who had an event today.</p> |
-   | Filter | An existing node | Applies the segment to the existing node. |
-   | Filter | An arrow that connects 2 nodes | The node displays between the two existing nodes where the component was dropped and is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p><p>Applies the segment to the point on the path where the component was dropped.</p> |
+   | Segment | Blank area of the canvas  | The node displays where the component was dropped unconnected with any other nodes.<p>The number and percentage that appear on the node include the total of the primary metric, segmented by the segment you selected.</p> <p>For example, if People is selected as the primary metric for the journey, then adding a segment of Today to a blank area of the canvas shows all the people who had an event today.</p> |
+   | Segment | An existing node | Applies the segment to the existing node. |
+   | Segment | An arrow that connects 2 nodes | The node displays between the two existing nodes where the component was dropped and is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p><p>Applies the segment to the point on the path where the component was dropped.</p> |
    | Date range | Blank area of the canvas | The node displays where the component was dropped, unconnected with any other nodes.<p>The number and percentage that appear on the node include the total of the primary metric, segmented by the date range you selected.</p> <p>For example, if People is selected as the primary metric for the journey, then adding a date range of This month to a blank area of the canvas shows all the people who had an event during the current month.</p> |
    | Date range | An existing node | Applies the date range to the existing node. |
    | Date range | An arrow that connects 2 nodes | The node displays between the two existing nodes where the component was dropped and is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p><p>Applies the date range to the point on the path where the component was dropped.</p> |
@@ -268,10 +268,10 @@ The logic that is applied to nodes when they are combined differs depending on w
 | Metric + Metric | Joined with OR | 
 | Dimension item + Dimension item (from the same parent dimension) | Joined with OR |
 | Dimension item + Dimension item (from different parent dimensions) | Joined with AND |
-| Filter + Filter | Joined with AND | 
-| Dimension + Metric, Date range, or Filter | Joined with AND | 
-| Date range + Metric, Filter, or Dimension | Joined with AND | 
-| Filter + Metric, Date range, or Dimension | Joined with AND | 
+| Segment + Segment | Joined with AND | 
+| Dimension + Metric, Date range, or Segment | Joined with AND | 
+| Date range + Metric, Segment, or Dimension | Joined with AND | 
+| Segment + Metric, Date range, or Dimension | Joined with AND | 
 
 ### Connect nodes
 
@@ -540,7 +540,7 @@ To view trend data:
 
 You can create a new segment based on a node or arrow within a journey. After the segment is created, you can use it anywhere in Analysis Workspace. 
 
-Filters created from Journey canvas use [sequential segmenting](/help/components/filters/seg-sequential-build.md). This means that the segment uses the THEN operator to link together the sequence of events (the journey) that people flowed through, leading up to the selected node or arrow. All events that match the selected node or arrow are included in the segment.
+Segments created from Journey canvas use [sequential segmenting](/help/components/filters/seg-sequential-build.md). This means that the segment uses the THEN operator to link together the sequence of events (the journey) that people flowed through, leading up to the selected node or arrow. All events that match the selected node or arrow are included in the segment.
 
 If you create a segment based on a node that has multiple paths flowing into it, all paths are included in the segment. Separate paths are joined with the OR operator.
 
@@ -550,9 +550,9 @@ To create a segment:
 
 1. Select [!UICONTROL **Create segment from node**] or [!UICONTROL **Create segment from arrow**].
 
-   The Filter builder displays. In the [!UICONTROL **Definition**] section, the segment definition is created based on the node or arrow you selected and its context within the journey. 
+   The Segment builder displays. In the [!UICONTROL **Definition**] section, the segment definition is created based on the node or arrow you selected and its context within the journey. 
 
-1. Specify a title for the segment and make any other changes. For more information about creating a segment, see [Filter builder](/help/components/filters/filter-builder.md).
+1. Specify a title for the segment and make any other changes. For more information about creating a segment, see [Segment builder](/help/components/filters/filter-builder.md).
 
 1. Select [!UICONTROL **Save**] to save the segment.
 

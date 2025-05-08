@@ -8,9 +8,59 @@ role: User
 # Configure a flow visualization {#configure-a-flow-visualization}
 
 >[!CONTEXTUALHELP]
+>id="workspace_flow_startswith"
+>title="Starts with"
+>abstract="This field can only be set on the initial build. To update this field, select **[!UICONTROL Reset]** to build a new Flow visualization."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_contains"
+>title="Contains"
+>abstract="This field can only be set on the initial build. To update this field, select **[!UICONTROL Reset]** to build a new Flow visualization."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_endswith"
+>title="Ends with"
+>abstract="This field can only be set on the initial build. To update this field, select **[!UICONTROL Reset]** to build a new Flow visualization."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_pathingdimension"
+>title="Pathing dimension"
+>abstract="Select a dimension to use as your path leading to or going from your selected component."
+
+>[!CONTEXTUALHELP]
 >id="workspace_flow_container"
 >title="Flow container"
 >abstract="Select the container to use to display (numbers for) the pathing."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_include_repeats_disabled"
+>title="Include repeats (disabled)"
+>abstract="Repeats cannot be removed from Flow visualizations that include multi-valued dimensions."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_include_repeats_default"
+>title="Include repeats"
+>abstract="Flow visualizations are based on instances of a dimension. This setting gives you the option to include or exclude repeated instances, For example: Page reloads."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_limit_occurrence"
+>title="Limit to first/last occurrence"
+>abstract="Results are limited to paths when the first/last touchpoint is an entry/exit."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_numberofcolumns"
+>title="Number of columns"
+>abstract="This field can only be set on the initial build. To update this field, select **[!UICONTROL Reset]** to build a new Flow visualization."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_itemsexpandedpercolumn"
+>title="Items expanded per column"
+>abstract="This field can only be set on the initial build. To update this field, select **[!UICONTROL Reset]** to build a new Flow visualization."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_resettoupdate"
+>title="Reset to update"
+>abstract="This field can only be set on the initial build. To update this field, select **[!UICONTROL Reset]** to build a new Flow visualization."
 
 
 Flow visualizations help you understand the journey originating from a specific conversion event on your website or your app. Or leading up to a specific conversion event. The visualization traces a path through your dimensions (and dimension items) or metrics. 
@@ -33,7 +83,7 @@ You can configure the start or end of the path you are interested in. Or analyze
 
    * Use the drop-down menu to select metrics or dimensions.
    * Drag dimensions or metrics from the left panel.
-   * Begin typing the name of a dimension or metric, then select it when it appears in the drop-down list.
+   * Begin typing the name of a dimension or metric, then select it when it appears in the drop-down menu.
 
    >[!IMPORTANT]
    >
@@ -112,7 +162,7 @@ Use a context menu on any node in the flow visualization with the following opti
 |--- |--- |
 | **[!UICONTROL Focus on this node]** | Change the focus to the selected node. The focus node appears at the center of the Flow diagram. |
 | **[!UICONTROL Start over]** | Return you to the Freeform diagram builder, where you can build a new Flow diagram. |
-| **[!UICONTROL Create a filter for this path]** | Create a filter. This selection takes you into the Filter builder, where you can configure the new filter. |
+| **[!UICONTROL Create a segment for this path]** | Create a segment. This selection takes you into the Segment builder, where you can configure the new segment. |
 | **[!UICONTROL Breakdown]** | Break the node down by available Dimensions, Metrics, or Time. |
 | **[!UICONTROL Filter column]** | The same filter options appear as are available in the Freeform table. For more information about the available options, see the section "Apply a simple or advanced filter to a table" in [Filter and sort tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).|
 | **[!UICONTROL Exclude item]** or **[!UICONTROL Restore excluded items]** | Removes a specific node from the column and automatically creates it as a filter at the top of the column. To restore the excluded item, from the context menu select **[!UICONTROL Restore Excluded Item]**. you can also open the segment at the top of the column and remove the pillbox with the item you just excluded. |

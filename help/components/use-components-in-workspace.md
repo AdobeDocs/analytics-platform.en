@@ -83,9 +83,9 @@ To add a metric to a project in Analysis Workspace:
      
 For more information about metrics, see [Metrics](/help/components/apply-create-metrics.md).
 
-### Add filters to a project
+### Add segments to a project
 
-[Filters](/help/components/filters/filters-overview.md) allow you to identify subsets of persons, sessions or events based on characteristics or specific interactions.
+[Segments](/help/components/filters/filters-overview.md) allow you to identify subsets of persons, sessions or events based on characteristics or specific interactions.
 
 You can use segments in Analysis Workspace in any of the following ways:
 
@@ -97,7 +97,7 @@ You can use segments in Analysis Workspace in any of the following ways:
   When you add segments to a column in a freeform table, the segments apply to all content within the table column. You can also add segments as part of a fallout visualization.
 
 * Use segments in components
-  Whe you define components like [calculated metrics](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [annotations](/help/components/annotations/create-annotations.md#annotation-builder), or even [segments](/help/components/filters/filter-builder.md) you can use filters as part of the definition.
+  Whe you define components like [calculated metrics](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [annotations](/help/components/annotations/create-annotations.md#annotation-builder), or even [segments](/help/components/filters/filter-builder.md) you can use segments as part of the definition.
 
 
 ### Add date ranges to a project

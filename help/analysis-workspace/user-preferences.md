@@ -30,7 +30,7 @@ General preferences apply to your Customer Journey Analytics experience in the b
 | --- | --- |
 | **[!UICONTROL Landing page]** | Choose what page displays as the default page when you access Customer Journey Analytics: <ul><li>Project list (default)</li><li>Blank project</li><li>Blank Trends guided analysis</li><li>Specific project, selected from a list</li></ul> |
 | **[!UICONTROL Tips]** | Displays tips in a blue box in the lower-right area of Analysis Workspace. <p>This option is enabled by default.</p> |
-| **[!UICONTROL Components displayed in left panel groups]** | Choose how many of each component group to display in the Components menu in the left panel. <p>If you choose 0 for a component group, the component group is no longer accessible from the left panel.</p><p>By default, 5 components are displayed for each of the following component groups:</p> <ul><li>Dimensions</li><li>Metrics</li><li>Filters</li><li>Date ranges</li></ul> <p>For more information about Components in Analysis Workspace, see [Components overview](/help/components/overview.md).</p> |
+| **[!UICONTROL Components displayed in left panel groups]** | Choose how many of each component group to display in the Components menu in the left panel. <p>If you choose 0 for a component group, the component group is no longer accessible from the left panel.</p><p>By default, 5 components are displayed for each of the following component groups:</p> <ul><li>Dimensions</li><li>Metrics</li><li>Segments</li><li>Date ranges</li></ul> <p>For more information about Components in Analysis Workspace, see [Components overview](/help/components/overview.md).</p> |
 
 ### IMS Organization preferences {#ims-organization-preferences}
 
@@ -42,7 +42,7 @@ General preferences apply to your Customer Journey Analytics experience in the b
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_requireexperiencecloudauth"
 >title="Require Experience Cloud authentication"
->abstract="When enabled, people who are given access to a project from the Share with anyone option in Analysis Workspace must authenticate using their Experience Cloud credentials."
+>abstract="When enabled, people who are given access to a project from the **[!UICONTROL Share with anyone]** option in Analysis Workspace must authenticate using their Experience Cloud credentials."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -211,6 +211,7 @@ Select the linked section titles for more information and context about the avai
 | | Show max | overlay a maximum value label to highlight quickly the peaks in a metric. Note: The max values are derived from the visible data points in the visualization, not the full set of values within a dimension. |
 | | Show trendline | Show a regression or moving average trendline to your line series. Trendlines help to depict a clearer pattern in the data. |
 | **[Cohort](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md)** | | |
+| | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>Container | Select the preferred container for cohort analysis in case of an account-based [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} connection. <p>The following options are available:</p> <ul><li>Global Accounts [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}</li><li>Accounts [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}</li><li>Buying Groups [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}</li><li>Opportunities [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}</li><li>Person</li></ul> |
 | | Granularity | For trended visualizations, you can change the time granularity (Day, Week, Month, Quarter, or Year). This change also applies to the data source table. |
 | | Only show percent | Removes the number value and only shows the percentage. |
 | | Round percent to nearest whole | Rounds the percent value to the nearest whole instead of showing the decimal value. |

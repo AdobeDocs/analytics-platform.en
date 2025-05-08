@@ -177,13 +177,13 @@ The following features are not supported and are automatically removed from full
 The following components are not supported, and Analysis Workspace prompts you to remove them from your table when performing a full-table export:
 
 * Calculated metrics that use basic or advanced functions in the metric definition (see [Basic functions](/help/components/calc-metrics/cm-functions.md) and [Advanced functions](/help/components/calc-metrics/cm-adv-functions.md) for more information)
-* Components that have been restricted by an administrator from being exported (see the *Filter on Data Governance policies in data views* section in [Labels and policies](/help/data-views/data-governance.md) for more information)
+* Components that have been restricted by an administrator from being exported (see the *Segment on Data Governance policies in data views* section in [Labels and policies](/help/data-views/data-governance.md) for more information)
 * Any dimension that meets all of the following criteria:
   * Was created from a field that is part of an [array of objects](/help/use-cases/object-arrays.md) (similar to multi-value variables in Adobe Analytics)
   * Has [persistence enabled](/help/data-views/component-settings/persistence.md)
   * Is not using a [binding dimension](/help/use-cases/data-views/binding-dimensions-metrics.md)
 * Multiple dimensions that are from fields referencing different [arrays of objects](/help/use-cases/object-arrays.md). (Multiple dimensions referencing the same array of objects are allowed.)
-* More than 5 dimensions and 5 metrics per report (up to 5 dimensions and 5 metrics are supported)
+* More than 10 dimensions and 10 metrics per report (up to 10 dimensions and 10 metrics are supported)
 * In table columns:
   * Date ranges
   * Dimensions
@@ -191,7 +191,7 @@ The following components are not supported, and Analysis Workspace prompts you t
   * Calculated metrics
   * Metrics
   * Date ranges
-  * Filters
+  * Segments
 
 ### Attribution behavior
 
@@ -221,8 +221,8 @@ If you previously used Data Warehouse to export Adobe Analytics data, the follow
 | Build a custom report | Yes | Yes |
 | Calculated metrics | Yes | No |
 | Segments | Yes | Limited |
-| Dimensions | Limit of 5 | Unlimited |
-| Metrics | Limit of 5 | Unlimited |
+| Dimensions | Limit of 10 | Unlimited |
+| Metrics | Limit of 10 | Unlimited |
 | Reporting rows | Limit of 3 million, 30 million, 150 million, or 300 million, depending on tier | Unlimited |
 | Number of reports | Unlimited | Unlimited |
 | Ad hoc (one-time) delivery | Yes | Yes |

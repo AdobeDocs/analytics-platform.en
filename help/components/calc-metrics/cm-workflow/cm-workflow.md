@@ -23,8 +23,6 @@ You can create a calculated metric in the following ways:
 
 To define the new calculated metric, you use the [Calculated metric builder](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
-<!--
-
 Learn about the steps to take for creating calculated metrics.
 
 | Workflow Task | Description |
@@ -37,4 +35,3 @@ Learn about the steps to take for creating calculated metrics.
 | Filter Calculated Metrics | In the Metric Selector, click [!UICONTROL Advanced Selection] and filter by tags, owners, and other filters (Show All, Mine, Shared With me, Favorites, and Approved.) |
 | Mark Calculated Metrics as [Favorites](cm-finding.md) | Marking metrics as favorites is another way to organize them for ease of use.|
 
--->

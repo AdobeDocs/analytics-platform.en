@@ -14,7 +14,7 @@ role: Admin
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_persistence"
 >title="Persistence"
->abstract="Configure the default allocation model applied to a dimension. Allocation applies before filters in reporting. See for more information [allocation settings](/help/data-views/component-settings/persistence.md#allocation-settings), [expiration settings](/help/data-views/component-settings/persistence.md#expiration-settings), [binding dimension](/help/data-views/component-settings/persistence.md#binding-dimension) and [binding metrics](/help/data-views/component-settings/persistence.md#binding-metric)."
+>abstract="Configure the default allocation model applied to a dimension. Allocation applies before segments in reporting. See for more information [allocation settings](/help/data-views/component-settings/persistence.md#allocation-settings), [expiration settings](/help/data-views/component-settings/persistence.md#expiration-settings), [binding dimension](/help/data-views/component-settings/persistence.md#binding-dimension) and [binding metrics](/help/data-views/component-settings/persistence.md#binding-metric)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -34,7 +34,7 @@ role: Admin
 
 * **Expiration** lets you determine how long a dimension item persists beyond the event it is set on.
 
-[!UICONTROL Persistence] is available only on dimensions, and is retroactive to the data it is applied to. It is an immediate data transformation that happens before filtering or other analysis operations are applied.
+[!UICONTROL Persistence] is available only on dimensions, and is retroactive to the data it is applied to. It is an immediate data transformation that happens before segmenting or other analysis operations are applied.
 
 | Setting | Description |
 | --- | --- |
@@ -95,7 +95,7 @@ Details around the available expiration settings.
 
 ## [!UICONTROL Binding Dimension]
 
-A drop-down list that lets you bind the persistence of a dimension value to dimension values in another dimension. Valid options include other dimensions included in the data view.
+A drop-down menu that lets you bind the persistence of a dimension value to dimension values in another dimension. Valid options include other dimensions included in the data view.
 
 See [Using binding dimensions and metrics in Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) for examples around how to effectively use binding dimensions.
 
@@ -109,7 +109,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Binding dimensio
 
 ## [!UICONTROL Binding Metric]
 
-A drop-down list that lets you choose a metric that acts as a binding trigger. Valid options include metrics included in the data view.
+A drop-down menu that lets you choose a metric that acts as a binding trigger. Valid options include metrics included in the data view.
 
 This setting only appears when the Binding Dimension is lower in the object array than the component. When the binding metric is present in an event, dimension values are copied from the event-level dimension down to the lower schema level of the binding dimension.
 

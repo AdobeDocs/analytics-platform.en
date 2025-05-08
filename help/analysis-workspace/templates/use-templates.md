@@ -61,7 +61,7 @@ The following information describes how to access and use templates from the [!U
    >
    >For more information about context labels, see [Component settings](/help/data-views/component-settings/overview.md).
 
-   1. Select the filter icon.
+   1. Select the segment icon.
    
    1. Select **[!UICONTROL Not ready for use]** to show templates that require additional components.
 
@@ -100,7 +100,7 @@ To customize a template and save it as a project:
 1. Do any of the following:
 
    * View the template.
-   * Drag one or more filters into the Filter drop zone at the top. For example, drag the filter [!UICONTROL **Mobile Customers**] and view the results. 
+   * Drag one or more segments into the Segment drop zone at the top. For example, drag the segment [!UICONTROL **Mobile Customers**] and view the results. 
    * Change the date range by going to the calendar at the top-right.
    * Add dimension breakdowns, drag in other metrics, and generally customize the template to suit your needs.
 
@@ -122,27 +122,27 @@ To access all available pre-built templates:
 
    The following sections correspond to the available categories and provide information about each template.
    
-   * [[!UICONTROL **Most popular**]](#most-popular)
+   * **[[!UICONTROL Most popular]](#most-popular)**
 
-   * [[!UICONTROL **Web**] > [!UICONTROL **Engagement**]](#engagement)
+   * **[[!UICONTROL Web]** > **[!UICONTROL Engagement]](#engagement)**
 
-   * [[!UICONTROL **Web**] > [!UICONTROL **Conversion**]](#web-conversion)
+   * **[[!UICONTROL Web]** > **[!UICONTROL Conversion]](#web-conversion)**
 
-   * [[!UICONTROL **Web**] > [!UICONTROL **Audience**]](#web-audience)
+   * **[[!UICONTROL Web]** > **[!UICONTROL Audience]](#web-audience)**
 
-   * [[!UICONTROL **Web**] > [!UICONTROL **Acquisition**]](#web-acquisition)
+   * **[[!UICONTROL Web]** > **[!UICONTROL Acquisition]](#web-acquisition)**
 
-   * [[!UICONTROL **Mobile**] > [!UICONTROL **Mobile App**]](#mobile-mobile-app)
+   * **[[!UICONTROL Mobile]** > **[!UICONTROL Mobile App]](#mobile-mobile-app)**
 
-   * [[!UICONTROL **Mobile**] > [!UICONTROL **Mobile Device Information**]](#mobile-mobile-device-information)
+   * **[[!UICONTROL Mobile]** > **[!UICONTROL Mobile Device Information]](#mobile-mobile-device-information)**
 
-   * [[!UICONTROL **Time Parting**]](#time-parting)
+   * **[[!UICONTROL Time Parting]](#time-parting)**
    
-   * [[!UICONTROL **Cross-Channel**]](#cross-channel)
+   * **[[!UICONTROL Cross-Channel]](#cross-channel)**
 
-   * [[!UICONTROL **Other Channels**]](#other-channels)
+   * **[[!UICONTROL Other Channels]](#other-channels)**
 
-   * [[!UICONTROL **AJO**]](#ajo)
+   * **[[!UICONTROL AJO]](#ajo)**
 
 ### Most popular {#most-popular}
 
@@ -280,7 +280,7 @@ To access all available pre-built templates:
 
 >[!CONTEXTUALHELP]
 >id="template--revenueOvertimeReport"
->title="View the monetary amount of all products purchased within all orders. Data is shown over a period of time and compared with prior periods."
+>title="View the monetary number of products purchased within all orders. Data is shown over a period of time and compared with prior periods."
 >abstract="**This can help you** understand how revenue is increasing or decreasing over time. You can combine this metric with any dimension to learn which dimension items contributed to revenue.<br/>**Based on what you learn, you might** do any number of things, like project future revenue based on previous trends. You could also add another dimension, like the Tracking code dimension, to learn which campaigns are generating the most revenue.<br/>This template uses the Day dimension and the Revenue metric."
 
 <!-- markdownlint-enable MD034 -->
@@ -311,7 +311,7 @@ The following templates are available:
 | [!UICONTROL **Products**] | View the number of orders by product. Data is shown over a period of time. <p>**This can help you** understand which products are in the highest or lowest demand.</p><p>**Based on what you learn, you might** do any number of things, like adjust your marketing strategies to promote high-performing products or to improve or discontinue under-performing products. You could also adjust your product inventory based on your analysis of the data.</p><p>This template uses the Product dimension and the Orders metric.</p>   | 
 | [!UICONTROL **Last touch channel**] | View the most recent marketing channels visitors match with during their engagement period (30 days by default).<p>**This can help you** understand which marketing channels were most effective at bringing people to your site that result in conversions.</p><p>**Based on what you learn, you might** do any number of things, like allocate more resources to high-performing channels, or allocate fewer resources to under-performing channels.</p><p>This template uses the Last Touch Channel dimension and the Unique Visitors metric.</p>  | 
 | [!UICONTROL **Last touch channel detail**] | View details about the most recent marketing channels visitors match with during their engagement period (30 days by default).<p>**This can help you** understand not only which marketing channels were most effective at bringing people to your site that result in conversions, but details about those marketing channels. For example, if a visitor arrived to your site and matched with the 'Paid search' Marketing channel, you could use the channel detail to see which search engine was used, or which keyword they searched for.</p><p>**Based on what you learn, you might** do any number of things, like allocate more resources to high-performing channels, or allocate fewer resources to under-performing channels.</p><p>This template uses the Last Touch Channel Detail dimension and the Unique Visitors metric.</p>  | 
-| [!UICONTROL **Revenue**] | <!--duplicated in Web Conversion section-->View the monetary amount of products purchased within all orders. Data is shown over a period of time and compared with prior periods.<p>**This can help you** understand how revenue is increasing or decreasing over time. You can combine this metric with any dimension to learn which dimension items contributed to revenue.</p><p>**Based on what you learn, you might** do any number of things, like project future revenue based on previous trends. You could also add another dimension, like the Tracking code dimension, to learn which campaigns are generating the most revenue.</p><p>This template uses the Day dimension and the Revenue metric.</p>  | 
+| [!UICONTROL **Revenue**] | <!--duplicated in Web Conversion section-->View the monetary number of products purchased within all orders. Data is shown over a period of time and compared with prior periods.<p>**This can help you** understand how revenue is increasing or decreasing over time. You can combine this metric with any dimension to learn which dimension items contributed to revenue.</p><p>**Based on what you learn, you might** do any number of things, like project future revenue based on previous trends. You could also add another dimension, like the Tracking code dimension, to learn which campaigns are generating the most revenue.</p><p>This template uses the Day dimension and the Revenue metric.</p>  | 
 | [!UICONTROL **Orders**] | <!--duplicated in Web Conversion section-->View the total number of purchase events. Data is shown over a period of time and compared with prior periods. <p>**This can help you** better understand how interest in your products and services is increasing or decreasing over time. You could apply a segment to learn which customers or geographies are placing the most orders and how those orders are trending over time.</p><p>**Based on what you learn, you might** do any number of things, like assess the effectiveness of a recently launched marketing campaign by comparing orders before and after the campaign launched. Or you might compare year-over-year holiday orders.</p><p>This template uses the Day dimension and the Orders metric.</p>  |  
 
 ### Web: Engagement {#web-engagement}
@@ -367,7 +367,7 @@ The following templates are available:
 
 >[!CONTEXTUALHELP]
 >id="aa-template--web-retention"
->title="View who your loyal users are and what they are doing on your site."
+>title="View who your loyal customers are and what they are doing on your site."
 >abstract="**This can help you** better understand the number of times the average person visits your site, the frequency with which people return to the site, and the number of days between return visits.<br/>**Based on what you learn, you might** do any number of things, like analyze what content is most effective at bringing people back to the site.<br/>This template uses the Visits metric and the Unique visitors metric."
 
 <!-- markdownlint-enable MD034 -->
@@ -478,7 +478,7 @@ The following templates are available:
 >[!CONTEXTUALHELP]
 >id="template--media-content-consumption"
 >title="View which media content is consumed most and is engaging users."
->abstract="**This can help you** better understand where people go upon first entering the site, which sections of the site people are visiting most, and which pages are most likely to drive people away from the site.<br/>**Based on what you learn, you might** do any number of things, like assess which paths on the site drive people to the most important pages, and which pages are more likely to lead people away from the site.<br/>This template uses the Page dimension and the Page Views metric, the Visits metric, the Unique Visitors metric, the Entry Rate metric, the Bounce Rate metric, the Exit Rate metric, and the Content Velocity metric. It also uses Flow visualizations for entry, exit, and top sections; a Satterplot visualization that shows page views for the most common pages; a Bar visualization that shows page views by bucketed time; and a Line visualization that shows a trended view of the average time spent on the site."
+>abstract="**This can help you** better understand where people go upon first entering the site, which sections of the site people are visiting most, and which pages are most likely to drive people away from the site.<br/>**Based on what you learn, you might** do any number of things, like assess which paths on the site drive people to the most important pages, and which pages are more likely to lead people away from the site.<br/>This template uses the Page dimension and the Page Views metric, the Visits metric, the Unique Visitors metric, the Entry Rate metric, the Bounce Rate metric, the Exit Rate metric, and the Content Velocity metric. It also uses Flow visualizations for entry, exit, and top sections; a Scatterplot visualization that shows page views for the most common pages; a Bar visualization that shows page views by bucketed time; and a Line visualization that shows a trended view of the average time spent on the site."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -523,7 +523,7 @@ The following templates are available:
 >[!CONTEXTUALHELP]
 >id="template--productUsageOverviewReport"
 >title="View how the Customer Journey Analytics product is used within your organization."
->abstract="**This can help you** better understand how many people are using Customer Journey Analytics, how often they use it, and usage trends over time. You can also see the number of projects being created and details about those projects (such as which components, visualizations, and panels are most commonly used), and many other usage statistics.<br/>**Based on what you learn, you might** do any number of things, like delete unused projects or components, or provide user training for popular features."
+>abstract="**This can help you** better understand how many people use Customer Journey Analytics, how often they use it, and usage trends over time. You can also see the number of projects being created and details about those projects (such as which components, visualizations, and panels are most commonly used), and many other usage statistics.<br/>**Based on what you learn, you might** do any number of things, like delete unused projects or components, or provide user training for popular features."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -549,12 +549,12 @@ The following templates are available:
 | [!UICONTROL **Time spent**] | View the average time visitors spend on your site during each visit, as well as the average time users spend prior to a success event. Data is shown over a period of time and compared with prior periods. <p>**This can help you** better understand visitor engagement levels and how much time it takes visitors to perform a desired action, such as making a purchase.</p><p>**Based on what you learn, you might** do any number of things, like assess whether changes to your site improve visitors' ability to quickly reach a success event.</p><p>This template uses the Day dimension and the Time Spent per Visit (seconds) metric, the Day dimension, and the Time Spent per Visit (seconds) metric.</p> |   
 | [!UICONTROL **Site sections**] | <!--duplicated in Most popular section-->View the most popular or highest performing sections of your site. <p>**This can help you** better understand which sections of your site are the most visited.</p><p>**Based on what you learn, you might** do any number of things, like assess which products or services that you provide generate the most interest.</p> <p>This template uses the Site Section dimension and the Visits metric.</p> | 
 | [!UICONTROL **Web content consumption**] | View which web content is consumed most and is engaging users.<p>**This can help you** better understand where people go upon first entering the site, which sections of the site people are visiting most, and which pages are most likely to drive people away from the site.</p><p>**Based on what you learn, you might** do any number of things, like assess which paths on the site drive people to the most important pages, and which pages are more likely to lead people away from the site.</p> <p>This template uses the Page dimension and the Page Views metric, the Visits metric, the Unique Visitors metric, the Entry Rate metric, the Bounce Rate metric, the Exit Rate metric, and the Content Velocity metric. It also uses Flow visualizations for entry, exit, and top sections.</p> |
-| [!UICONTROL **Media content consumption**] | View which media content is consumed most and is engaging users.<p>**This can help you** better understand where people go upon first entering the site, which sections of the site people are visiting most, and which pages are most likely to drive people away from the site.</p><p>**Based on what you learn, you might** do any number of things, like assess which paths on the site drive people to the most important pages, and which pages are more likely to lead people away from the site <!-- not sure about these takeaways... -->.</p> <p>This template uses the Page dimension and the Page Views metric, the Visits metric, the Unique Visitors metric, the Entry Rate metric, the Bounce Rate metric, the Exit Rate metric, and the Content Velocity metric. It also uses Flow visualizations for entry, exit, and top sections; a Satterplot visualization that shows page views for the most common pages; a Bar visualization that shows page views by bucketed time; and a Line visualization that shows a trended view of the average time spent on the site.</p> |
+| [!UICONTROL **Media content consumption**] | View which media content is consumed most and is engaging users.<p>**This can help you** better understand where people go upon first entering the site, which sections of the site people are visiting most, and which pages are most likely to drive people away from the site.</p><p>**Based on what you learn, you might** do any number of things, like assess which paths on the site drive people to the most important pages, and which pages are more likely to lead people away from the site <!-- not sure about these takeaways... -->.</p> <p>This template uses the Page dimension and the Page Views metric, the Visits metric, the Unique Visitors metric, the Entry Rate metric, the Bounce Rate metric, the Exit Rate metric, and the Content Velocity metric. It also uses Flow visualizations for entry, exit, and top sections; a Scatterplot visualization that shows page views for the most common pages; a Bar visualization that shows page views by bucketed time; and a Line visualization that shows a trended view of the average time spent on the site.</p> |
 | [!UICONTROL **Next and previous page flow**] | View a flow visualization of the most common places people go immediately after visiting and immediately before visiting a certain page. <p>**This can help you** understand how traffic moves from a given page to other parts of your site, and understand the paths people take to arrive at a given page.</p><p>**Based on what you learn, you might** do any number of things, like assess whether the page design or layout could be optimized to direct people to more desirable pages, such as a page to make a purchase or leave a review. Or assess whether the information on the current page is likely to provide the direction or actions that people are looking for as they arrive from previous pages. Or you might assess whether pages that aren't appearing as previous pages need more prominent links to the current page.</p><p>This template uses the Next or previous item panel.</p>   | 
 | **Page summary** | View key information about any page across your properties. Shows page views, a trend line, a flow visualization, and more.  <p>**This can help you** better understand how people interact with a given page.</p><p>**Based on what you learn, you might** do any number of things, like analyze the page's performance over a period of time or better understand what drives traffic to the page.</p><p>This template uses the Page Views metric. It also uses the Line visualization and Flow visualization.</p> |
 | **Entry pages** | View the top pages that people access upon first visiting your site. <p>**This can help you** better understand which pages are driving the most traffic to your site or understand more about the first impressions visitors have on your site.</p><p>**Based on what you learn, you might** do any number of things, like optimize the initial experience people get on the site, or ensure that the pages people first see upon entering your site are welcoming and provide the necessary links to other areas of your site.</p><p>This template uses the Sessions metric. It also uses the Bar visualization and the Freeform table visualization.</p> | 
 | **Exit pages** | View the top pages that people access immediately before leaving your site.<p>**This can help you** better understand which pages are leading people away from the site. </p><p>**Based on what you learn, you might** do any number of things, like update common exit pages to optimize the experience people get before they leave, or include content or links to encourage people to stay on your site.</p><p>This template uses the Sessions metric. It also uses the Bar visualization and the Freeform table visualization.</p> | 
-| **Product usage overview** | View how the Customer Journey Analytics product is used within your organization. <p>**This can help you** better understand how many people are using Customer Journey Analytics, how often they use it, and usage trends over time. You can also see the number of projects being created and details about those projects (such as which components, visualizations, and panels are most commonly used), and many other usage statistics.</p><p>**Based on what you learn, you might** do any number of things, like delete unused projects or components, or provide user training for popular features.</p> |
+| **Product usage overview** | View how the Customer Journey Analytics product is used within your organization. <p>**This can help you** better understand how many people use Customer Journey Analytics, how often they use it, and usage trends over time. You can also see the number of projects being created and details about those projects (such as which components, visualizations, and panels are most commonly used), and many other usage statistics.</p><p>**Based on what you learn, you might** do any number of things, like delete unused projects or components, or provide user training for popular features.</p> |
 | **Content analytics** | Learn what content and content attributes are performing best.<p>**This can help you** learn how your content is performing at a granular level. You can look at the performance of individual assets, or specific attributes. Content Analytics uses AI to automatically generate attributes and tag your content with them. [Learn more](/help/content-analytics/content-analytics.md).</p><p>**Based on what you learn, you might** do any number of things, like promote high performing assets on your home page, personalize content for specific segments to include high performing attributes, or rotate out content that has started to get stale.</p> |
 
 ### Web: Conversion {#web-conversion}
@@ -666,7 +666,7 @@ The following templates are available:
 | **Cart additions** | View the number of times people added something to their cart. <p>**This can help you** better understand the part of the conversion funnel where customer interest in a product is high enough that they add it to their cart.</p><p>**Based on what you learn, you might** do any number of things, like improve product recommendations for all customers. This can be done by analyzing which products are frequently added to the same carts and suggesting related products based on items already in the cart. | 
 | **Cart removals** | View the number of times people removed something from their cart.<p>**This can help you** better understand the part of the conversion funnel where customers are no longer interested in a product, or it can help you understand where problems might exist in the checkout process.</p><p>**Based on what you learn, you might** do any number of things, like remove any potential barriers that might exist in the checkout process, such as a complicated user experience.</p><p>This template uses the Cart Removals metric. | 
 | **Purchase conversion funnel** | View purchase conversion in a funnel visualization that shows sessions, carts, and orders. You can also see conversion percentages, revenue averages, unit averages, and order averages.<p>**This can help you** better understand how people progress through and drop off during the conversion process.</p><p>**Based on what you learn, you might** do any number of things, like improve your website to facilitate a smoother checkout process.</p> | 
-| **Revenue** | <!--duplicated in Most popular section-->View the monetary amount of products purchased within all orders.<p>**This can help you** better understand which dimension items contributed to revenue, by combining the Revenue metric with any dimension. For example, you could see the top campaigns (using the Tracking code dimension) that contributed to revenue. </p><p>**Based on what you learn, you might** do any number of things, like adjust campaigns that aren't meeting the revenue targets you would expect.</p><p>This template uses the Revenue metric. |
+| **Revenue** | <!--duplicated in Most popular section-->View the monetary number of products purchased within all orders.<p>**This can help you** better understand which dimension items contributed to revenue, by combining the Revenue metric with any dimension. For example, you could see the top campaigns (using the Tracking code dimension) that contributed to revenue. </p><p>**Based on what you learn, you might** do any number of things, like adjust campaigns that aren't meeting the revenue targets you would expect.</p><p>This template uses the Revenue metric. |
 | **Orders** | <!--duplicated in Most popular section-->View the total number of purchase events made on your site. <p>**This can help you** better understand which dimension items contributed to an order, by combining the Orders metric with any dimension. For example, you could see the top campaigns (using the Tracking code dimension) that contributed to purchases.</p><p>**Based on what you learn, you might** do any number of things, like adjust campaigns that aren't meeting the purchase targets you would expect. </p><p>This template uses the Orders metric. |
 
 ### Web: Audience {#web-audience}
@@ -923,7 +923,7 @@ The following templates are available:
 >[!CONTEXTUALHELP]
 >id="template--web-technology-template"
 >title="View information related to the technology people use to access your site, such as the operating systems, browsers, and devices."
->abstract="**This can help you** better understand which technologies are most often used when accessing your site.<br/>**Based on what you learn, you might** do any number of things, like optimize your site for the technologies that are being used."
+>abstract="**This can help you** better understand which technologies are most often used when accessing your site.<br/>**Based on what you learn, you might** do any number of things, like optimize your site for the technologies that are used."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -957,7 +957,7 @@ The following templates are available:
 | **Geo cities** | View the city from which people visiting the site originated. <p>**This can help you** better understand the most popular cities visitors originate from who visit your site.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these cities. </p><p>This template uses the Cities dimension. </p> |
 | **Geo US DMA** | View the designated marketing areas (DMAs) within the United States from which people visiting the site originated.<p>**This can help you** better understand the most popular regions visitors originate from who visit your site.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in the most successful regions. </p><!-- This template uses the --> |
 | **Languages** | View the top languages that visitors prefer to see content in. <p>**This can help you** better understand the most frequently preferred languages of visitors.</p><p>**Based on what you learn, you might** do any number of things, like focus localization efforts or marketing efforts for the most popular languages.</p><p>This template uses the Language dimension.</p>  |
-| **Technology overview** | View information related to the technology that people use to access your site, such as the operating systems, browsers, and devices. <p>**This can help you** better understand which technologies are most often used when accessing your site.</p><p>**Based on what you learn, you might** do any number of things, like optimize your site for the technologies that are being used.</p> |
+| **Technology overview** | View information related to the technology that people use to access your site, such as the operating systems, browsers, and devices. <p>**This can help you** better understand which technologies are most often used when accessing your site.</p><p>**Based on what you learn, you might** do any number of things, like optimize your site for the technologies that are used.</p> |
 | **Browsers** | View the name and version of the top browsers people use to access your site.<p>**This can help you** better understand the most common browsers that visitors use.</p><p>**Based on what you learn, you might** do any number of things, like improve site quality by testing new versions of your site using the top browsers. Doing so can maximize quality control efforts.</p><p>This template uses the Browser dimension. </p> |
 | **Browser types** | View the names of the organizations who made the top browsers that people use to access your site. This differs from the Browser template in that it does not list different versions of the same browser as separate dimension items.<p>**This can help you** better understand the most common browsers that visitors use</p><p>**Based on what you learn, you might** do any number of things, like improve site quality by testing new versions of your site using the top browsers. Doing so can maximize quality control efforts. </p><p>This template uses the Browser type dimension. </p> |
 
@@ -1053,7 +1053,7 @@ The following templates are available:
 >[!CONTEXTUALHELP]
 >id="template--searchKeywordRankedReport"
 >title="View the search keywords that visitors use to reach your site, regardless whether it is paid or natural."
->abstract="**This can help you** better understand the keywords people use in searches that result in site traffic. <br/>**Based on what you learn, you might** do any number of things, like identify and fill SEO gaps between keywords being used and those that drive site traffic.<br/>This template uses the Search Keyword dimension."
+>abstract="**This can help you** better understand the keywords people use in searches that result in site traffic. <br/>**Based on what you learn, you might** do any number of things, like identify and fill SEO gaps between keywords used and those that drive site traffic.<br/>This template uses the Search Keyword dimension."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1062,7 +1062,7 @@ The following templates are available:
 >[!CONTEXTUALHELP]
 >id="template--searchPaidKeywordRankedReport"
 >title="View the search keywords that visitors use to reach your site, which matched paid search detection."
->abstract="**This can help you** better understand the keywords people use in searches that result in site traffic.<br/>**Based on what you learn, you might** do any number of things, like identify and fill SEO gaps between keywords being used and those that drive site traffic. <br/>This template uses the Search Keyword - Paid dimension. "
+>abstract="**This can help you** better understand the keywords people use in searches that result in site traffic.<br/>**Based on what you learn, you might** do any number of things, like identify and fill SEO gaps between keywords used and those that drive site traffic. <br/>This template uses the Search Keyword - Paid dimension. "
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1071,7 +1071,7 @@ The following templates are available:
 >[!CONTEXTUALHELP]
 >id="template--searchNaturalKeywordRankedReport"
 >title="View the search keywords that visitors use to reach your site, which did not match paid search detection."
->abstract="**This can help you** better understand the keywords people use in searches that result in site traffic.<br/>**Based on what you learn, you might** do any number of things, like identify and fill SEO gaps between keywords being used and those that drive site traffic.<br/>This template uses the Search Keyword - Natural dimension. "
+>abstract="**This can help you** better understand the keywords people use in searches that result in site traffic.<br/>**Based on what you learn, you might** do any number of things, like identify and fill SEO gaps between keywords used and those that drive site traffic.<br/>This template uses the Search Keyword - Natural dimension. "
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1151,9 +1151,9 @@ The following templates are available:
 | [!UICONTROL **Campaigns**] > [!UICONTROL **Campaign conversion funnel**] | View the number of clickthroughs and checkouts for your campaigns. <p>**This can help you** better understand how marketing campaigns are driving conversion.</p><p>**Based on what you learn, you might** do any number of things, like determine which marketing campaigns are generating the most ROI.</p> | 
 | [!UICONTROL **Campaigns**] > [!UICONTROL **Campaign performance**] | View details about how your marketing campaigns are performing.<p>**This can help you** better understand more about the various success indicators associated with campaigns, such as revenue, product views, orders, and so forth.</p><p>**Based on what you learn, you might** do any number of things, like focus marketing efforts on the campaigns that drive the most revenue. </p><p>This template uses the Revenue metric, Product Views metric, Cart Additions metric, Orders metric, and Units metric. It also uses the Tracking Code dimension and the Referring Domain dimension. </p> | 
 | **Web acquisition** | View how your website obtains visitors.<p>**This can help you** better understand more about the various factors that lead to acquisition, such as search keywords, referring domain, and so forth.</p><p>**Based on what you learn, you might** do any number of things, like focus marketing efforts into the most effective channels.</p><p>This template uses the Bounce Rate metric and the Bounces metric. It also uses the Search Engine dimension, Search Keyword dimension, Entry Page dimension, Referring Domain dimension, Tracking Code dimension, and Referrer dimension.  </p>|
-| **Search keywords - all** | View the search keywords that visitors use to reach your site, regardless whether it is paid or natural. <p>**This can help you** better understand the keywords people use in searches that result in site traffic. </p><p>**Based on what you learn, you might** do any number of things, like identify and fill SEO gaps between keywords being used and those that drive site traffic.</p><p>This template uses the Search Keyword dimension. </p> |
-| **Search keywords - paid** | View the search keywords that visitors use to reach your site, which matched paid search detection.<p>**This can help you** better understand the keywords people use in searches that result in site traffic.</p><p>**Based on what you learn, you might** do any number of things, like identify and fill SEO gaps between keywords being used and those that drive site traffic. </p><p>This template uses the Search Keyword - Paid dimension. </p> |
-| **Search keywords - natural** | View the search keywords that visitors use to reach your site, which did not match paid search detection.<p>**This can help you** better understand the keywords people use in searches that result in site traffic.</p><p>**Based on what you learn, you might** do any number of things, like identify and fill SEO gaps between keywords being used and those that drive site traffic.</p><p>This template uses the Search Keyword - Natural dimension. </p> |
+| **Search keywords - all** | View the search keywords that visitors use to reach your site, regardless whether it is paid or natural. <p>**This can help you** better understand the keywords people use in searches that result in site traffic. </p><p>**Based on what you learn, you might** do any number of things, like identify and fill SEO gaps between keywords used and those that drive site traffic.</p><p>This template uses the Search Keyword dimension. </p> |
+| **Search keywords - paid** | View the search keywords that visitors use to reach your site, which matched paid search detection.<p>**This can help you** better understand the keywords people use in searches that result in site traffic.</p><p>**Based on what you learn, you might** do any number of things, like identify and fill SEO gaps between keywords used and those that drive site traffic. </p><p>This template uses the Search Keyword - Paid dimension. </p> |
+| **Search keywords - natural** | View the search keywords that visitors use to reach your site, which did not match paid search detection.<p>**This can help you** better understand the keywords people use in searches that result in site traffic.</p><p>**Based on what you learn, you might** do any number of things, like identify and fill SEO gaps between keywords used and those that drive site traffic.</p><p>This template uses the Search Keyword - Natural dimension. </p> |
 | **Search engines - all** | View the search engines that visitors use to reach your site, regardless whether it is paid or natural. <p>**This can help you** better understand the search engines people use that result in site traffic. </p><p>**Based on what you learn, you might** do any number of things, like focus your SEO efforts on the search engines that drive the most traffic to the site.</p><p>This template uses the Search Engine dimension. </p> |
 | **Search engines - paid** | View the search engines that visitors use to reach your site, which matched paid search detection.<p>**This can help you** better understand the search engines people use that result in site traffic.</p><p>**Based on what you learn, you might** do any number of things, like focus your SEO efforts on the search engines that drive the most traffic to the site. </p><p>This template uses the Search Engine - Paid dimension. </p> |
 | **Search engines - natural** | View the search keywords that visitors use to reach your site, which did not match paid search detection.<p>**This can help you** better understand the search engines people use that result in site traffic.</p><p>**Based on what you learn, you might** do any number of things, like focus your SEO efforts on the search engines that drive the most traffic to the site.</p><p>This template uses the Search Engine - Natural dimension. </p> |
@@ -1178,7 +1178,7 @@ The following templates are available:
 >[!CONTEXTUALHELP]
 >id="template--mobileappactions"
 >title="View the actions people are taking on your mobile app."
->abstract="**This can help you** better understand how people are using your app and the value they're getting from it.<br/>**Based on what you learn, you might** do any number of things, like develop features that compliment or improve upon those that are most popular."
+>abstract="**This can help you** better understand how people use your app and the value that they get from it.<br/>**Based on what you learn, you might** do any number of things, like develop features that compliment or improve upon those that are most popular."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1189,7 +1189,7 @@ The following templates are available:
 >[!CONTEXTUALHELP]
 >id="template--mobile-lifecycle-metrics-app-usage-template"
 >title="View the number of users, launches, and first launches on your app, as well as the average session length."
->abstract="**This can help you** better understand how much your app is being used. <br/>**Based on what you learn, you might** do any number of things, like improve app performance so it can scale to the amount of usage."
+>abstract="**This can help you** better understand how much your app is used. <br/>**Based on what you learn, you might** do any number of things, like improve app performance so it can scale to the amount of usage."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1198,7 +1198,7 @@ The following templates are available:
 >[!CONTEXTUALHELP]
 >id="template--mobile-app-journeys"
 >title="View the prominent usage patterns for your mobile app."
->abstract="**This can help you** better understand how people are using your app. <br/>**Based on what you learn, you might** do any number of things, like improve how people can get from one screen to another to target the most common workflows."
+>abstract="**This can help you** better understand how people use your app. <br/>**Based on what you learn, you might** do any number of things, like improve how people can get from one screen to another to target the most common workflows."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1216,7 +1216,7 @@ The following templates are available:
 >[!CONTEXTUALHELP]
 >id="template--mobile-app-messaging"
 >title="View performance data for in-app messaging and push messaging for your app."
->abstract="**This can help you** better understand how people are using in-app messaging capabilities, as well as how effectively push notifications are driving traffic to your app.<br/>**Based on what you learn, you might** do any number of things, like improve the in-app messaging push notification experience."
+>abstract="**This can help you** better understand how people use in-app messaging capabilities, as well as how effectively push notifications are driving traffic to your app.<br/>**Based on what you learn, you might** do any number of things, like improve the in-app messaging push notification experience."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1233,8 +1233,8 @@ The following templates are available:
 
 >[!CONTEXTUALHELP]
 >id="template--mobile-app-retention"
->title="View which users are the most loyal users of your app and what they do within the app."
->abstract="**This can help you** better understand how your most loyal users are using your app.<br/>**Based on what you learn, you might** do any number of things, like improve your marketing efforts for the features that your most loyal users are using."
+>title="View which users are the most loyal customers of your app and what they do within the app."
+>abstract="**This can help you** better understand how your most loyal customers use your app.<br/>**Based on what you learn, you might** do any number of things, like improve your marketing efforts for the features that your most loyal customers use."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1243,13 +1243,13 @@ The following templates are available:
 | Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
 | [!UICONTROL **Mobile app screens**] | View the number of events, sessions, and people associated with each screen on the mobile app.<p>**This can help you** better understand which screens on your site are the most popular.</p><p>**Based on what you learn, you might** do any number of things, like improve content on the most popular screens.</p><p>This template uses the Events, Sessions, People, and Percent change metrics. It also uses the Page Title dimension.</p>  | 
-| **Mobile app actions** | View the actions people are taking on your mobile app. <p>**This can help you** better understand how people are using your app and the value they're getting form it.</p><p>**Based on what you learn, you might** do any number of things, like improve develop features that compliment or improve upon those that are most popular.</p><p>This template uses the Events, Sessions, People, and Percent change metrics. |
-| **Mobile app usage** | View the number of users, launches, and first launches on your app, as well as the average session length.<p>**This can help you** better understand how much your app is being used. </p><p>**Based on what you learn, you might** do any number of things, like improve app performance so it can scale to the amount of usage.</p><!-- This template uses the --> |
-| **Mobile app journeys** | View the prominent usage patterns for your mobile app. <p>**This can help you** better understand how people are using your app. </p><p>**Based on what you learn, you might** do any number of things, like improve how people can get from one screen to another to target the most common workflows. </p><!-- This template uses the --> |
+| **Mobile app actions** | View the actions people are taking on your mobile app. <p>**This can help you** better understand how people use your app and the value that get from it.</p><p>**Based on what you learn, you might** do any number of things, like improve develop features that compliment or improve upon those that are most popular.</p><p>This template uses the Events, Sessions, People, and Percent change metrics. |
+| **Mobile app usage** | View the number of users, launches, and first launches on your app, as well as the average session length.<p>**This can help you** better understand how much your app is used. </p><p>**Based on what you learn, you might** do any number of things, like improve app performance so it can scale to the amount of usage.</p><!-- This template uses the --> |
+| **Mobile app journeys** | View the prominent usage patterns for your mobile app. <p>**This can help you** better understand how people use your app. </p><p>**Based on what you learn, you might** do any number of things, like improve how people can get from one screen to another to target the most common workflows. </p><!-- This template uses the --> |
 | **Mobile app metrics** | View some of the most common mobile app metrics. <p>**This can help you** better understand the basic performance of your mobile app.</p><p>**Based on what you learn, you might** do any number of things, like assess the overall health and performance of your app.</p><!-- This template uses the --> |
-| **Mobile app messaging** | View performance data for in-app messaging and push messaging for your app.<p>**This can help you** better understand how people are using in-app messaging capabilities, as well as how effectively push notifications are driving traffic to your app.</p><p>**Based on what you learn, you might** do any number of things, like improve the in-app messaging push notification experience.</p><!-- This template uses the --> |
+| **Mobile app messaging** | View performance data for in-app messaging and push messaging for your app.<p>**This can help you** better understand how people use in-app messaging capabilities, as well as how effectively push notifications are driving traffic to your app.</p><p>**Based on what you learn, you might** do any number of things, like improve the in-app messaging push notification experience.</p><!-- This template uses the --> |
 | **Mobile app performance** | View how your app is performing and where users are experiencing issues. <p>**This can help you** better understand if people using your app are encountering slowness or a degraded performance. </p><p>**Based on what you learn, you might** do any number of things, like fix existing issues or improve app performance before issues occur.</p><!-- This template uses the -->  |
-| **Mobile app retention** | View which users are the most loyal users of your app and what they do within the app. <p>**This can help you** better understand how your most loyal users are using your app.</p><p>**Based on what you learn, you might** do any number of things, like improve your marketing efforts for the features that your most loyal users are using.</p><!-- This template uses the --> |
+| **Mobile app retention** | View which users are the most loyal customers of your app and what they do within the app. <p>**This can help you** better understand how your most loyal customers use your app.</p><p>**Based on what you learn, you might** do any number of things, like improve your marketing efforts for the features that your most loyal customers use.</p><!-- This template uses the --> |
 
 ### Mobile: Mobile Device Information {#mobile-devices}
 
@@ -1276,7 +1276,7 @@ The following templates are available:
 >[!CONTEXTUALHELP]
 >id="template--mobileDeviceTypeRankedReport"
 >title="View the mobile device types that people use to access your site, such as phones and tablets."
->abstract="**This can help you** better understand the various kinds of mobile devices that are being used to access your site.<br/>**Based on what you learn, you might** do any number of things, like optimize your site for the types of mobile devices that are being used the most.<br/>This template uses the Mobile Device Type dimension."
+>abstract="**This can help you** better understand the various kinds of mobile devices that are used to access your site.<br/>**Based on what you learn, you might** do any number of things, like optimize your site for the types of mobile devices that are used the most.<br/>This template uses the Mobile Device Type dimension."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1295,7 +1295,7 @@ The following templates are available:
 | --- | --- | 
 | [!UICONTROL **Mobile carrier**] | View the telecommunications company that provides cellular network connectivity to the mobile devices.that people use to access your site.<p>**This can help you** better understand which mobile carriers are most popular among your user base.</p><p>**Based on what you learn, you might** do any number of things, like tailor your content delivery based on the network capabilities of different carriers to ensure a smooth user experience.</p><p>This template uses the Mobile Carrier dimension.</p> | 
 | **Devices** | View the make and model of mobile devices that people use to access your site.<p>**This can help you** better understand which mobile devices are most popular among your user base.</p><p>**Based on what you learn, you might** do any number of things, like optimize the rendering of your site for the most common mobile devices.</p><p>This template uses the Mobile Device Name dimension.</p>  |
-| **Device type** | View the mobile device types that people use to access your site, such as phones and tablets.<p>**This can help you** better understand the various kinds of mobile devices that are being used to access your site.</p><p>**Based on what you learn, you might** do any number of things, like optimize your site for the types of mobile devices that are being used the most.</p><p>This template uses the Mobile Device Type dimension.</p>  |
+| **Device type** | View the mobile device types that people use to access your site, such as phones and tablets.<p>**This can help you** better understand the various kinds of mobile devices that are used to access your site.</p><p>**Based on what you learn, you might** do any number of things, like optimize your site for the types of mobile devices that are used the most.</p><p>This template uses the Mobile Device Type dimension.</p>  |
 | **Manufacturer** |  View which manufacturers produce the mobile devices that people use to access your site, such as Apple and Samsung.<p>**This can help you** better understand which manufacturers are most popular among your user base.</p><p>**Based on what you learn, you might** do any number of things, like tailor your content delivery based on the abilities of different manufacturers to ensure a smooth user experience.</p><p>This template uses the Mobile Manufacturer dimension.</p>  |
 
 ### Time Parting {#time-parting}
@@ -1465,32 +1465,25 @@ The following templates are available:
 >title="View call center data, including why customers called and the number of times."
 >abstract="**This can help you** better understand where customers are experiencing problems and where call center resources are being spent.<br/>**Based on what you learn, you might** do any number of things, like address product issues that are driving higher call center traffic, ultimately improving product profitability."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja-template--pointOfSale"
 >title="View point-of-sale (POS) transaction data, including revenue earned, orders made, and units sold. This template also includes visualizations that display information about top stores, top products, and top product categories, as well as online vs. offline sales."
 >abstract="**This can help you** better understand which are your top-selling products across store locations and online.<br/>**Based on what you learn, you might** do any number of things, like assign more marketing resources to your highest-performing products and channels."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-email"
 >title="View how the emails that you design and send using Adobe Journey Optimizer are generating new memberships, loyalty members, and cross-sell opportunities."
 >abstract="**This can help you** better understand the effectiveness of emails that you design and send using Adobe Journey Optimizer.<br/>**Based on what you learn, you might** do any number of things, like adjust your email strategy for a given email campaign."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja-template--survey"
 >title="View user engagement for your surveys. View the number of starts and completions, the top questions and answers, and the number of first vs. repeat participants."
 >abstract="**This can help you** better understand the engagement levels and success rate of your surveys.<br/>**Based on what you learn, you might** do any number of things, like adjust future surveys to yield better participation."
+
+>[!CONTEXTUALHELP]
+>id="cja-template--product-usage"
+>title="View how your organization uses Customer Journey Analytics."
+>abstract="**This can help you** better understand how many people in your organization use Customer Journey Analytics, how often they use it, and trend that data over time. You can also see the number of projects created and details about those projects. See which components, visualizations, and panels are most commonly used, among other usage statistics.<br/>**Based on what you learn, you might** do any number of things, like delete unused projects or components, or provide user training for popular features."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1501,7 +1494,8 @@ The following templates are available:
 | [!UICONTROL **Call center dashboard**] | View call center data, including why customers called and the number of times. <p>**This can help you** better understand where customers are experiencing problems and where call center resources are being spent.</p><p>**Based on what you learn, you might** do any number of things, like address product issues that are driving higher call center traffic, ultimately improving product profitability.</p>  | 
 | **Point of sale** | View point-of-sale (POS) transaction data, including revenue earned, orders made, and units sold. This template also includes visualizations that display information about top stores, top products, and top product categories, as well as online vs. offline sales. <p>**This can help you** better understand which are your top-selling products across store location and online.</p><p>**Based on what you learn, you might** do any number of things, like assign more marketing resources to your highest-performing products and channels.</p><p>This template uses the Users, Revenue, and Orders metrics.</p>  |
 | **Journey Optimizer email analysis** | View how the emails that you design and send using Adobe Journey Optimizer are generating new memberships, loyalty members, and cross-sell opportunities. <p>**This can help you** better understand the effectiveness of emails that you design and send using Adobe Journey Optimizer.</p><p>**Based on what you learn, you might** do any number of things, like adjust your email strategy for a given email campaign.</p>  |
-| **Survey** | View user engagement for your surveys. View the number of starts and completions, the top questions and answers, and the number of first vs. repeat participants.<p>**This can help you** better understand the engagement levels and success rate of your surveys.</p><p>**Based on what you learn, you might** do any number of things, like adjust future surveys to yield better participation.</p><p>This template uses the Users, Events, Suvey starts, Survey completes, and Survey completion rate metrics.</p>  |
+| **Survey** | View user engagement for your surveys. View the number of starts and completions, the top questions and answers, and the number of first vs. repeat participants.<p>**This can help you** better understand the engagement levels and success rate of your surveys.</p><p>**Based on what you learn, you might** do any number of things, like adjust future surveys to yield better participation.</p><p>This template uses the Users, Events, Survey starts, Survey completes, and Survey completion rate metrics.</p>  |
+| **Product usage overview** | View how your organization uses Customer Journey Analytics.<p>**This can help you** better understand how many people in your organization use Customer Journey Analytics, how often they use it, and trend that data over time. You can also see the number of projects created and details about those projects. See which components, visualizations, and panels are most commonly used, among other usage statistics.</p><p>**Based on what you learn, you might** do any number of things, like delete unused projects or components, or provide user training for popular features.</p> |
 
 ### Journey Optimizer {#AJO-templates}
 

@@ -33,7 +33,7 @@ For example, when creating a data view, you could create an [!UICONTROL Orders] 
 1. Open the **[!UICONTROL Include/Exclude Values]** section and specify the following:
    1. Enable **[!UICONTROL Set include exclude values]**.
    1. Select **[!UICONTROL If all criteria are met]** from **[!UICONTROL Match]**.
-   1. Specify `confirmation`. This text for the page_title indicates that this page is related to placing an order. After reviewing all the page titles where those criteria are met, a `1` will be counted for each instance. The result is a new metric (not a calculated metric.) A metric that has included/excluded values can be used everywhere any other metric can be used. It works with Attribution IQ, filters, and everywhere else you can use standard metrics.
+   1. Specify `confirmation`. This text for the **[!UICONTROL page_title]** indicates that this page is related to placing an order. After reviewing all the page titles where those criteria are met, a `1` will be counted for each instance. The result is a new metric (not a calculated metric.) A metric that has included/excluded values can be used everywhere any other metric can be used. It works with Attribution IQ, segments, and everywhere else you can use standard metrics.
 
    ![Dimension to metric](../assets/string-to-metric.gif){width=100%}
 1. You can further specify an attribution model for this metric, such as [!UICONTROL Last Touch], with a [!UICONTROL Lookback window] of [!UICONTROL Session].
@@ -63,7 +63,7 @@ You can use a numeric dimension to get metrics into your [!UICONTROL  Flow] visu
 
 ## Do sub-event filtering {#sub-event}
 
-This capability is specifically applicable to array-based fields. The include/exclude functionality lets you filter at the sub-event level, whereas filters (segments) built in the filter builder only give you filtering at the event level. So, you can do sub-event filtering by using include/exclude in Data views, and then reference that new metric/dimension in a filter at the event level.
+This capability is specifically applicable to array-based fields. The include/exclude functionality lets you filter at the sub-event level, whereas segments built in the Segment builder only give you segmentation at the event level. You can do sub-event filtering by using include/exclude in Data views, and then reference that new metric/dimension in a segment at the event level.
 
 For example, use the include/exclude functionality in Data views to focus only on products that generated sales of more than $50. So, if you have an order that includes a $50 product purchase and a $25 product purchase, the include/exclude functionality removes the $25 product purchase, not the entire order.
 

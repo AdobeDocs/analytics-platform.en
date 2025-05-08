@@ -1,16 +1,16 @@
 ---
-description: Filtering on individual metrics allows you to make metric comparisons within the same report.
-title: Filtered metrics
+description: Segmenting individual metrics allows you to make metric comparisons within the same report.
+title: Segmented metrics
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
 ---
-# Filtered metrics
+# Segmented metrics
 
-In the [Calculated metric builder](cm-build-metrics.md#definition-builder), you can apply filters within your metric definition. Applying filters is helpful if you want to use metrics for a subset of your data in your analysis. 
+In the [Calculated metric builder](cm-build-metrics.md#definition-builder), you can apply segments within your metric definition. Applying segments is helpful if you want to use metrics for a subset of your data in your analysis. 
 
 >[!NOTE]
 >
->Filter definitions are updated through the [Filter builder](/help/components/filters/filter-builder.md). If you make a change to a filter, the filter is automatically updated everywhere the filter is used, including if the filter is part of a calculated metric definition.
+>Segment definitions are updated through the [Segment builder](/help/components/filters/filter-builder.md). If you make a change to a segment, the segment is automatically updated everywhere it is used, including if the segment is part of a calculated metric definition.
 >
 
 You want to compare metrics for German people interacting with your brand versus people outside of Germany. So, you can answer questions like:
@@ -19,36 +19,36 @@ You want to compare metrics for German people interacting with your brand versus
 1. How many German versus international people in [total](#totals) have interacted online with your brand this month.
 1. What are the [percentages](#percentages) of Germans and international people that have visited your popular pages?
    
-See the sections below to illustrate how filtered metrics can help you answer these questions. Where appropriate, references are made to more detailed documentation.
+See the sections below to illustrate how segmented metrics can help you answer these questions. Where appropriate, references are made to more detailed documentation.
 
 ## Popular pages
 
 1. [Create a calculated metric](cm-workflow.md) from a Workspace project, named `German people`.
-1. From within the [Calculated metric builder](cm-build-metrics.md), [create a filter](/help/components/filters/filter-builder.md), titled `Germany`, that is using the CRM Country field from your CRM data to determine where a person is coming from. 
+1. From within the [Calculated metric builder](cm-build-metrics.md), [create a segment](/help/components/filters/filter-builder.md), titled `Germany`, that is using the CRM Country field from your CRM data to determine where a person is coming from. 
 
    >[!TIP]
    >
-   >In the Calculated metric builder, you can create a filter directly using the Components panel.
+   >In the Calculated metric builder, you can create a segment directly using the Components panel.
    >   
 
-   Your filter could look like.
+   Your segment could look like.
 
-   ![Filter Germany](assets/filter-germany.png)
+   ![Segment Germany](assets/filter-germany.png)
 
-1. Back in the Calculated metric builder, use the filter to update the calculated metric.
+1. Back in the Calculated metric builder, use the segment to update the calculated metric.
 
    ![Calculated metric Germany](assets/calculated-metric-germany.png)
 
 Repeat the steps above for the international version of your calculated metric.
 
 1. Create a calculated metric from your Workspace project, titled `International people`.
-1. From within the Calculated metric builder, create a filter, titled `Not Germany`, that is using the CRM Country field from your CRM data to determine where a person is coming from.
+1. From within the Calculated metric builder, create a segment, titled `Not Germany`, that is using the CRM Country field from your CRM data to determine where a person is coming from.
  
-   Your filter should look like.
+   Your segment should look like.
 
-   ![Filter Germany](assets/filter-not-germany.png)
+   ![Segment Germany](assets/filter-not-germany.png)
 
-1. Back in the Calculated metric builder, use the filter to update the calculated metric.
+1. Back in the Calculated metric builder, use the segment to update the calculated metric.
 
    ![Calculated metric Germany](assets/calculated-metric-notgermany.png)
 
@@ -60,7 +60,7 @@ Repeat the steps above for the international version of your calculated metric.
 
 ## Totals
 
-1. Create two new filters based on Grand Total. Open each of the filters created earlier, rename the filter, set the **[!UICONTROL Metric type]** for **[!UICONTROL People]** to **[!UICONTROL Grand Total]** and use **[!UICONTROL Save As]** to save the filter using the new name. For example:
+1. Create two new segments based on Grand Total. Open each of the segments created earlier, rename the segment, set the **[!UICONTROL Metric type]** for **[!UICONTROL People]** to **[!UICONTROL Grand Total]** and use **[!UICONTROL Save As]** to save the segment using the new name. For example:
 
    ![Total metric for Germany](assets/calculated-metric-germany-total.png)
 
@@ -84,7 +84,7 @@ Repeat the steps above for the international version of your calculated metric.
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Use a filtered calculated metric as an implementationless metric](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Use a segmented calculated metric as an implementationless metric](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} for a demo video.
 
 {{videoaa}}
 

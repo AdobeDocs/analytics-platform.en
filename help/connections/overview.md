@@ -8,9 +8,16 @@ role: Admin
 ---
 # Connections overview
 
-Connections allow Customer Journey Analytics product administrators to establish connections with different [!DNL Adobe Experience Platform] data sources, such as event, lookup, and profile datasets. These connections enable the integration of data from a Connection to a derivative Data View. Connections are the foundation of CJA and are created from [!DNL Experience Platform] source datasets. Access to Connections also lets you view the Connections manager, where you can view the underlying datasets that make up the connection, as well as make critical editing and configuration selections.
+Connections allow Customer Journey Analytics product administrators to establish connections with different [!DNL  Experience Platform] data sources, such as event, lookup, profile, and summary datasets. These connections enable the integration of data from a connection to a derivative data view. Connections are the foundation of Customer Journey Analytics and are created from [!DNL Experience Platform] source datasets. 
 
-We recommended restricting access to Connections management to a core management group. Configurations at the Connection level have contractual implications regarding volume allotments for data brought into Customer Journey Analytics. 
+>[!IMPORTANT]
+>
+>You can combine multiple [!DNL Experience Platform] datasets into a single connection.
+
+
+## Connections workflow
+
+![Connections workflow](assets/connection-workflow.png)
 
 <!-- Outdated interface 
 
@@ -22,23 +29,24 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configuring conn
 
 -->
 
-## Required permissions
+On a high-level, the Connections workflow allows you to:
 
-To create a Customer Journey Analytics Connection, you need the following permissions. For additional details about permissions, refer to documentation for the [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) and [Adobe Experience Platform Permissions](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
+| Interface | Description |
+|:---:|---|
+| ➊ | [Manage your connections and overall usage](manage-connections.md) of Customer Journey Analytics from the Connections manager. |
+| ➋ | [Inspect the details of a connection](manage-connections.md#connection-details), like dataset records ingested, skipped, or deleted. |
+| ➌ | [Create or edit the configuration of a connection](create-connection.md#create-or-edit-a-connection), like a rolling data window, the sandbox to use, which datasets are part of the connection, and more.  |
+| ➍ | [Add datasets to a connection](create-connection.md#add-datasets). Your connection should at least have one event or summary dataset but can contain a variety of event, profile, lookup, and summary datasets. |
+| ➎ | [Configure the settings](create-connection.md#dataset-settings) for datasets that you add. You can determine how to link different datasets based on a common person-based or [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} account-based identifier. |
+| ➏ | [Edit the settings for an existing dataset](create-connection.md#edit-a-dataset). You can always revisit the dataset settings at a later stage. |
 
-### Within Adobe Admin Console:
 
-* Customer Journey Analytics: Product Admin
-* Adobe Experience Platform: Added to Product Profile named *AEP-Default-All-Users*
 
-### Within Adobe Experience Platform Permissions:
+## Access control
 
-* Data Modeling: View Schemas, Manage Schemas
-* Data Management: View Datasets, Manage Datasets
-* Data Ingestion: Manage Sources
-* Identity Management: View Identity Namespaces
-* Sandboxes: Sandboxes used in related Customer Journey Analytics Connections
+Access to connections management should be restricted to a core management group. Connection configurations have contractual implications regarding volume allotments for data brought into Customer Journey Analytics. 
 
->[!IMPORTANT]
+>[!MORELIKETHIS]
 >
->You can combine multiple [!DNL Experience Platform] datasets into a single connection.
+>[Access control](/help/technotes/access-control.md).
+

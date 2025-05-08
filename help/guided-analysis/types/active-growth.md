@@ -8,14 +8,11 @@ role: User
 ---
 # [!UICONTROL Active growth] analysis {#active-growth}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_guidedanalysis_activegrowth_button"
 >title="Active growth"
 >abstract="Identify who is new, retained, returning, or dormant."
 
-<!-- markdownlint-enable MD034 -->
 
 
 The ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Active growth]** analysis provides insights into the growth and acquisition of users over a specific period. The horizontal axis is a time interval, while the vertical axis is a measurement of users. Users are split into four categories:
@@ -48,8 +45,8 @@ The query rail allows you to configure the following components:
 
 * **[!UICONTROL View]**: Switch between this analysis and [Net growth](net-growth.md).
 * **[!UICONTROL Events]**: The event that you want to measure. Since this analysis is user-based, a user who interacts with the event once within the period is counted as an active user. You can include one event in a query.
-* **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. Options include [!UICONTROL Number of users] and [!UICONTROL Percentage of users].
-* **[!UICONTROL Segments]**: The segment that you want to filter data by. You can include one segment in a query.
+* **[!UICONTROL Counted as]**: The counting method that you want to apply to the selected events. <ul><li>**[!UICONTROL Options]** include [!UICONTROL Number of users] and [!UICONTROL Percentage of users].</li><li>[!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Additional **[!UICONTROL B2B options]** are available for Customer Journey Analytics B2B Edition: [!UICONTROL Global accounts], [!UICONTROL Accounts], [!UICONTROL Buying groups], [!UICONTROL Opportunities], [!UICONTROL Percentage of global accounts], [!UICONTROL Percentage of accounts], [!UICONTROL Percentage of buying groups], and [!UICONTROL Percentage of opportunities].</li></ul>
+* **[!UICONTROL Segments]**: The segment that you want to segment data by. You can include one segment in a query.
 
 ### Chart settings
 

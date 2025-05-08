@@ -28,7 +28,7 @@ Though some individual dimension items might be missing from high cardinality re
 
 The best way to accommodate high cardinality dimensions is to limit the number of dimension items that a report processes. Since all reports are processed at the time that they are requested, you can adjust report parameters for immediate results. Adobe recommends any of the following optimizations to high cardinality dimensions:
 
-* Use a [Filter](/help/components/filters/create-filters.md). Filters apply at the time that each server processes a subset of data.
+* Use a [segment](/help/components/filters/create-filters.md). Segments apply at the time that each server processes a subset of data.
 * Use a search. Dimension items excluded from the search term are removed from the report results, making it more likely that you see the desired dimension items.
 * Use a lookup dataset dimension. Lookup dataset dimensions combine event dataset dimension items, which limit the number of unique values returned.
 * Use the [Include/exclude](/help/data-views/component-settings/include-exclude-values.md) component setting in the data view manager.

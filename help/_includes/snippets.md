@@ -53,12 +53,6 @@ Available time comparison options include the previous period, 13 weeks prior, 5
 *This video demonstrates the functionality using Adobe Analytics. However, the functionality is similarly available in Customer Journey Analytics. Be aware of the differences in terminology between Adobe Analytics and Customer Journey Analytics (for example "visits" versus "sessions").*
 
 
-## Filters panel {#filterspanel}
-
-1. Select ![Filter](/help/assets/icons/Filter.svg) to open the Filters panel. If you need more space for the Filters list, you can select ![Filter](/help/assets/icons/Filter.svg) once more to close the panel.
-1. Select filters from any of the available filter sections. 
-
-
 ## Tag filter section {#tagfiltersection}
 
 | Tags   | Description |
@@ -193,8 +187,8 @@ Use the following information to choose the visualization that best meets your n
 | **Non-linear journeys with multiple entry points and paths** | Yes | No | Yes |
 | **Primary metric** | Any metric, including calculated metrics. | Only Session or Person | Only Occurrences (Path views) |
 | **Secondary metric** | Yes<p>Any metric, including calculated metrics.</p> | No | No  |
-| **Component support in nodes or touchpoints** | Metrics, dimension items, filters, and date ranges.| Metrics, dimension items, filters, and date ranges. | Only dimension items (except for the starting and ending touchpoint)  |
-| **Compare filters** | No | Yes<p>Perform side-by-side comparisons of two different filters in the same report.</p> | No |
+| **Component support in nodes or touchpoints** | Metrics, dimension items, segments, and date ranges.| Metrics, dimension items, segments, and date ranges. | Only dimension items (except for the starting and ending touchpoint)  |
+| **Compare segments** | No | Yes<p>Perform side-by-side comparisons of two different segments in the same report.</p> | No |
 | **Drag-and-drop component interaction** | Yes | Yes | No |
 | **Adobe Journey Optimizer journeys** | Yes</br>Open journeys from Journey Optimizer for deeper analysis and customization. | No |  No |
 
@@ -238,3 +232,19 @@ Use the following information to choose the visualization that best meets your n
 >[!INFO]
 >
 >In this documentation, specific B2B articles or functionalities, only available with the Customer Journey Analytics B2B Edition, are marked with [!BADGE B2B Edition]{type=Informative}.
+
+
+## Common dataset settings {#common-dataset-settings}
+
+| Setting | Description |
+|---|---|
+| **[!UICONTROL Import new data]** | Enable this option if you want to establish an ongoing connection. With an ongoing connection new data batches that are added to the datasets are available automatically in Workspace. |
+| **[!UICONTROL Dataset backfill]** | Enable **[!UICONTROL Backfill all existing data]** to ensure that all existing data is backfilled.<br/><br/>Select **[!UICONTROL Request backfill]** to backfill historical data for a specific period. You can define up to 10 dataset backfill periods.<ol><li>Define the period by entering start and end data or selecting dates using ![Calendar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).</li><li>Select **[!UICONTROL Queue backfill]** to add the backfill to the list, or **[!UICONTROL Cancel]** to cancel.</li></ol>For each entry, select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) to edit the period, or select ![Delete](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) to delete the entry.<br/><br/>On backfills:<ul><li>You can backfill each dataset individually.</li><li>You prioritize new data added to a dataset in the connection, so this new data has the lowest latency.</li><li>Any backfill (historical) data is imported at a slower rate. The amount of historical data influences the latency.</li><li>The Analytics source connector imports up to 13 months of data (irrespective of size) for production sandboxes. The backfill in non-production sandboxes is limited to 3 months.</li></ul> |
+| **[!UICONTROL Batch status]** | Possible status indicators are:<ul><li>Success</li><li>X backfill(s) processing</li><li>Off</li></ul> |
+| **[!UICONTROL Dataset ID]** | This ID is automatically generated. |
+| **[!UICONTROL Description]** | The description given to this dataset when the dataset was created. |
+| **[!UICONTROL Number of records]** | The dataset's size. |
+| **[!UICONTROL Schema]** | The schema based on which the dataset was created in Adobe Experience Platform. |
+| **[!UICONTROL Dataset]** | The name of the dataset. |
+| **[!UICONTROL Preview: *dataset name*]** | Previews the dataset for first 10 rows and first 10 columns. |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]** | You can [delete a dataset](/help/connections/create-connection.md#delete-a-dataset) without deleting the whole connection. The deletion of a dataset from a connection reduces the costs involved in data ingestion and the cumbersome process of recreating the whole connection and associated data views. |

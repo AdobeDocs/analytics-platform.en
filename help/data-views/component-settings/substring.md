@@ -22,20 +22,20 @@ role: Admin
 
 ![Substring settings](../assets/substring-settings.png)
 
-[!UICONTROL Substring] is available only on dimensions, and is retroactive to the data it is applied to. It is an immediate data transformation that happens before filtering or other analysis operations are applied.
+[!UICONTROL Substring] is available only on dimensions, and is retroactive to the data it is applied to. It is an immediate data transformation that happens before segmenting or other analysis operations are applied.
 
 ## From the Left/Right
 
-Take a part of a string based on its position to the beginning or end of a string. **[!UICONTROL From the Left]** and **[!UICONTROL From the Right]** methods provide two drop-down lists: **[!UICONTROL From]** (where the output starts) and **[!UICONTROL To]** (where the output ends).
+Take a part of a string based on its position to the beginning or end of a string. **[!UICONTROL From the Left]** and **[!UICONTROL From the Right]** methods provide two drop-down menus: **[!UICONTROL From]** (where the output starts) and **[!UICONTROL To]** (where the output ends).
 
 * **[!UICONTROL String Start]**: The start of the string.
 * **[!UICONTROL String End]**: The end of the string.
 * **[!UICONTROL Position]**: A static number of characters from the left or right, depending on the method.
-* **[!UICONTROL String]**: Match a character or sequence of characters to indicate the beginning or end of a string. This drop-down list also reveals additional options:
+* **[!UICONTROL String]**: Match a character or sequence of characters to indicate the beginning or end of a string. This drop-down menu also reveals additional options:
   * **[!UICONTROL Match]**: The string to match. If the input has no match with this field, [No value options](no-value-options.md) apply.
   * **[!UICONTROL Index]**: The **[!UICONTROL Match]** criteria can be present multiple times in a string. This integer determines which match to start or end the output, depending on the method. For example, an index of `1` represents the first match. If the index is higher than the number of matches available, [No value options](no-value-options.md) apply.
   * **[!UICONTROL Include String]**: A checkbox that includes the **[!UICONTROL Match]** string in the output if enabled.
-* **[!UICONTROL Length]**: An integer that specifies the character count to include after the starting position of the output. Only available under the **[!UICONTROL To]** drop-down list.
+* **[!UICONTROL Length]**: An integer that specifies the character count to include after the starting position of the output. Only available under the **[!UICONTROL To]** drop-down menu.
 
 ## Delimiter
 

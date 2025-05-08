@@ -29,8 +29,8 @@ The following use cases are documented:
   * [Multiple dimension ranked](#multiple-dimension-ranked)
   * [Count distinct dimension values](#count-distinct-dimension-values)
   * [Use date range names to filter](#use-date-range-names-to-filter)
-  * [Use filter names to filter](#use-filter-names-to-filter)
-  * [Use dimension values to filter](#use-dimension-values-to-filter)
+  * [Use segment names to segment](#use-segment-names-to-segment)
+  * [Use dimension values to segment](#use-dimension-values-to-segment)
   * [Sort](#sort)
   * [Limits](#limits)
 
@@ -81,7 +81,7 @@ When you go through the use cases, replace these example objects with objects th
    1. Navigate to your Experience Platform sandbox.
    1. Select ![Queries](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** from the left rail.
    1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
-   1. Select `prod:cja` from the **[!UICONTROL Database]** dropdown menu.
+   1. Select `prod:cja` from the **[!UICONTROL Database]** drop-down menu.
 
       ![Query service credentials](assets/queryservice-credentials.png){zoomable="yes"}
 
@@ -100,7 +100,7 @@ When you go through the use cases, replace these example objects with objects th
    1. In the **[!UICONTROL PostgreSQL database]** - **[!UICONTROL Database]** dialog:
       ![PowerBI Desktop User and Password](assets/powerbi-userpassword.png){zoomable="yes"}
       1. Use ![Copy](/help/assets/icons/Copy.svg) to copy the **[!UICONTROL Username]** and **[!UICONTROL Password]** values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel in the **[!UICONTROL User name]** and **[!UICONTROL Password]** fields. If you are using a [non-expiring credential](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use the password of your non-expiring credential.
-      1. Ensure that the dropdown menu for **[!UICONTROL Select which level to apply these settings to]** is set to the **[!UICONTROL Server]** that you have defined earlier.
+      1. Ensure that the drop-down menu for **[!UICONTROL Select which level to apply these settings to]** is set to the **[!UICONTROL Server]** that you have defined earlier.
       1. Select **[!UICONTROL Connect]**.
    1. In the **[!UICONTROL Navigator]** dialog, the data views are retrieved. This retrieval can take some time. Once retrieved, you see the following in Power BI Desktop.
       ![Power BI Destkop Load Data](assets/powerbi-navigator-load.png){zoomable="yes"}
@@ -140,7 +140,7 @@ Power BI Desktop supports the following scenarios for the `FLATTEN` parameter. S
    1. Navigate to your Experience Platform sandbox.
    1. Select ![Queries](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** from the left rail.
    1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
-   1. Select `prod:cja` from the **[!UICONTROL Database]** dropdown menu.
+   1. Select `prod:cja` from the **[!UICONTROL Database]** drop-down menu.
 
       ![Query service credentials](assets/queryservice-credentials.png){zoomable="yes"}
 
@@ -152,7 +152,7 @@ Power BI Desktop supports the following scenarios for the `FLATTEN` parameter. S
       1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Host]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Server]**.
       1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Port]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Port]**.
       1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Database]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Database]**. Add `%3FFLATTEN` to the value that you paste. For example: `prod:cja%3FFLATTEN`.  
-      1. Select **[!UICONTROL Username and Password]** from the **[!UICONTROL Authentication]** dropdown menu.
+      1. Select **[!UICONTROL Username and Password]** from the **[!UICONTROL Authentication]** drop-down menu.
       1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Username]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Username]**.
       1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Password]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Password]**. If you are using a [non-expiring credential](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use the password of your non-expiring credential.
       1. Ensure that **[!UICONTROL Require SSL]** is checked.
@@ -192,7 +192,7 @@ Tableau Desktop supports the following scenarios for the `FLATTEN` parameter. Se
    1. Navigate to your Experience Platform sandbox.
    1. Select ![Queries](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** from the left rail.
    1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
-   1. Select `prod:cja` from the **[!UICONTROL Database]** dropdown menu.
+   1. Select `prod:cja` from the **[!UICONTROL Database]** drop-down menu.
 
       ![Query service credentials](assets/queryservice-credentials.png){zoomable="yes"}
 
@@ -268,7 +268,7 @@ Looker supports the following scenarios for the `FLATTEN` parameter. See [Flatte
    1. Navigate to your Experience Platform sandbox.
    1. Select ![Queries](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** from the left rail.
    1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
-   1. Select `prod:cja` from the **[!UICONTROL Database]** dropdown menu.
+   1. Select `prod:cja` from the **[!UICONTROL Database]** drop-down menu.
 
       ![Query service credentials](assets/queryservice-credentials.png){zoomable="yes"}
 
@@ -374,7 +374,7 @@ Jupyter Notebook supports the following scenarios for the `FLATTEN` parameter. S
    1. Navigate to your Experience Platform sandbox.
    1. Select ![Queries](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** from the left rail.
    1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
-   1. Select `prod:cja` from the **[!UICONTROL Database]** dropdown menu.
+   1. Select `prod:cja` from the **[!UICONTROL Database]** drop-down menu.
 
       ![Query service credentials](assets/queryservice-credentials.png){zoomable="yes"}
 
@@ -521,9 +521,9 @@ An example **[!UICONTROL Daily Trend]** panel for the use case:
       ![Tableau Desktop Filter](assets/uc2-tableau-filter.png){zoomable="yes"}
 
    1. Drag and drop **[!UICONTROL Daterangeday]** from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Columns]**.
-      * Select **[!UICONTROL Day]** from the **[!UICONTROL Daterangeday]** dropdown menu, so that the value is updated to **[!UICONTROL DAY(Daterangeday)]**.
+      * Select **[!UICONTROL Day]** from the **[!UICONTROL Daterangeday]** drop-down menu, so that the value is updated to **[!UICONTROL DAY(Daterangeday)]**.
    1. Drag and drop **[!UICONTROL Occurrences]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**. The value is automatically converted to **[!UICONTROL SUM(Occurrences)]**.
-   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** dropdown menu in the toolbar.
+   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** drop-down menu in the toolbar.
 
       Your Tableau Desktop should look like below.
 
@@ -535,7 +535,7 @@ An example **[!UICONTROL Daily Trend]** panel for the use case:
 1. Ensure that the **[!UICONTROL Data]** sheet is selected. In the **[!UICONTROL Data]** view:
    1. Select **[!UICONTROL Show me]** at the top right and select **[!UICONTROL Text table]** (upper left top visualization) to modify the content of the Data view to a table.
    1. Select **[!UICONTROL Swap Rows and Columns]** from the toolbar.
-   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** dropdown menu in the toolbar.
+   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** drop-down menu in the toolbar.
 
       Your Tableau Desktop should look like below.
 
@@ -658,9 +658,9 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
       ![Tableau Desktop Filter](assets/uc3-tableau-filter.png){zoomable="yes"}
 
    1. Drag and drop **[!UICONTROL Daterangehour]** from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Columns]**.
-      * Select **[!UICONTROL More]** > **[!UICONTROL Hours]** from the **[!UICONTROL Daterangeday]** dropdown menu, so that the value is updated to **[!UICONTROL HOUR(Daterangeday)]**.
+      * Select **[!UICONTROL More]** > **[!UICONTROL Hours]** from the **[!UICONTROL Daterangeday]** drop-down menu, so that the value is updated to **[!UICONTROL HOUR(Daterangeday)]**.
    1. Drag and drop **[!UICONTROL Occurrences]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**. The value is automatically converted to **[!UICONTROL SUM(Occurrences)]**.
-   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** dropdown menu in the toolbar.
+   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** drop-down menu in the toolbar.
 
       Your Tableau Desktop should look like below.
 
@@ -672,7 +672,7 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
 1. Ensure that the **[!UICONTROL Data]** sheet is selected. In the **[!UICONTROL Data]** view:
    1. Select **[!UICONTROL Show me]** at the top right and select **[!UICONTROL Text table]** (upper left top visualization) to modify the content of the Data view to a table.
    1. Drag **[!UICONTROL HOUR(Daterangeday)]** from **[!UICONTROL Columns]** to **[!UICONTROL Rows]**.
-   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** dropdown menu in the toolbar.
+   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** drop-down menu in the toolbar.
 
       Your Tableau Desktop should look like below.
 
@@ -826,9 +826,9 @@ An example **[!UICONTROL Monthly Trend]** panel for the use case:
       ![Tableau Desktop Filter](assets/uc4-tableau-filter.png){zoomable="yes"}
 
    1. Drag and drop **[!UICONTROL Daterangeday]** from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Columns]**.
-      * Select **[!UICONTROL MONTH]** from the **[!UICONTROL Daterangeday]** dropdown menu, so that the value is updated to **[!UICONTROL MONTH(Daterangeday)]**.
+      * Select **[!UICONTROL MONTH]** from the **[!UICONTROL Daterangeday]** drop-down menu, so that the value is updated to **[!UICONTROL MONTH(Daterangeday)]**.
    1. Drag and drop **[!UICONTROL Occurrences]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**. The value is automatically converted to **[!UICONTROL SUM(Occurrences)]**.
-   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** dropdown menu in the toolbar.
+   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** drop-down menu in the toolbar.
 
       Your Tableau Desktop should look like below.
 
@@ -840,7 +840,7 @@ An example **[!UICONTROL Monthly Trend]** panel for the use case:
 1. Ensure that the **[!UICONTROL Data]** sheet is selected. In the Data view:
    1. Select **[!UICONTROL Show me]** at the top right and select **[!UICONTROL Text table]** (upper left top visualization) to modify the content of the Data view to a table.
    1. Drag **[!UICONTROL MONTH(Daterangeday)]** from **[!UICONTROL Columns]** to **[!UICONTROL Rows]**.
-   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** dropdown menu in the toolbar.
+   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** drop-down menu in the toolbar.
 
       Your Tableau Desktop should look like below.
 
@@ -1022,12 +1022,12 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
    1. Drag and drop **[!UICONTROL Purchases]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**. The value is automatically converted to **[!UICONTROL SUM(Purchases)]**.
    1. Drag and drop **[!UICONTROL Purchase Revenue]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Columns]** and left from **[!UICONTROL SUM(Purchases)]**. The value is automatically converted to **[!UICONTROL SUM(Purchase Revenue)]**.
    1. To order both charts in descending purchase revenue order, hover over the **[!UICONTROL Purchase Revenue]** title and select the sort icon.
-   1. To limit the number of entries in the charts, select **[!UICONTROL SUM(Purchase Revenue)]** in **[!UICONTROL Rows]** and from the dropdown menu select **[!UICONTROL Filter]**.
+   1. To limit the number of entries in the charts, select **[!UICONTROL SUM(Purchase Revenue)]** in **[!UICONTROL Rows]** and from the drop-down menu select **[!UICONTROL Filter]**.
    1. In the **[!UICONTROL Filter \[Purchase Revenue\]]** dialog select **[!UICONTROL Range of values]** and enter appropriate values. For example: `1,000,000` - `2,000,000`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
-   1. To convert the two bar charts to a dual combination chart, select **[!UICONTROL SUM(Purchases)]** in **[!UICONTROL Rows]** and from the dropdown menu, select **[!UICONTROL Dual Axis]**. The bar charts transform into a scatter plot.
+   1. To convert the two bar charts to a dual combination chart, select **[!UICONTROL SUM(Purchases)]** in **[!UICONTROL Rows]** and from the drop-down menu, select **[!UICONTROL Dual Axis]**. The bar charts transform into a scatter plot.
    1. To modify the scatter plot to a bar chart:
-      1. Select **[!UICONTROL SUM(Purchases)]** in the **[!UICONTROL Marks]** area and select **[!UICONTROL Line]** from the dropdown menu.
-      1. Select **[!UICONTROL SUM(Purchase Revenue)]** in the **[!UICONTROL Marks]** area and select **[!UICONTROL Bar]** from the dropdown menu.
+      1. Select **[!UICONTROL SUM(Purchases)]** in the **[!UICONTROL Marks]** area and select **[!UICONTROL Line]** from the drop-down menu.
+      1. Select **[!UICONTROL SUM(Purchase Revenue)]** in the **[!UICONTROL Marks]** area and select **[!UICONTROL Bar]** from the drop-down menu.
 
    Your Tableau Desktop should look like below.
 
@@ -1039,7 +1039,7 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 1. Ensure that the **[!UICONTROL Data]** sheet is selected.
    1. Select **[!UICONTROL Show me]** at the top right and select **[!UICONTROL Text table]** (upper left top visualization) to modify the content of the two charts to a table.
    1. To order purchase revenue in descending order, hover over **[!UICONTROL Purchase Revenue]** in the table and select ![SortOrderDown](/help/assets/icons/SortOrderDown.svg).
-   1. Select **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** dropdown menu.
+   1. Select **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** drop-down menu.
 
    Your Tableau Desktop should look like below.
 
@@ -1067,21 +1067,21 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
 1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail, select **[!UICONTROL Product Name]**.
 1. From the **[!UICONTROL ‣ Custom Fields]** section in the left rail:
-   1. Select **[!UICONTROL Custom Measure]** from the **[!UICONTROL + Add]** dropdown menu. 
+   1. Select **[!UICONTROL Custom Measure]** from the **[!UICONTROL + Add]** drop-down menu. 
    1. In the **[!UICONTROL Create custom measure]** dialog:
-      1. Select **[!UICONTROL Purchase Revenue]** from the **[!UICONTROL Field to measure]** dropdown menu.
-      1. Select **[!UICONTROL Sum]** from the **[!UICONTROL Measure type]** dropdown menu.
+      1. Select **[!UICONTROL Purchase Revenue]** from the **[!UICONTROL Field to measure]** drop-down menu.
+      1. Select **[!UICONTROL Sum]** from the **[!UICONTROL Measure type]** drop-down menu.
       1. Enter a custom field name for **[!UICONTROL Name]**. For example: `Purchase Revenue`.
       1. Select the **[!UICONTROL Field details]** tab.
-      1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** dropdown menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
+      1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** drop-down menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
          ![Looker custom metric field](assets/uc5-looker-customfield.png){zoomable="yes"}
       1. Select **[!UICONTROL Save]**.
-   1. Select **[!UICONTROL Custom Measure]** once more from the **[!UICONTROL + Add]** dropdown menu. In the **[!UICONTROL Create custom]** measure dialog:
-      1. Select **[!UICONTROL Purchases]** from the **[!UICONTROL Field to measure]** dropdown menu.
-      1. Select **[!UICONTROL Sum]** from the **[!UICONTROL Measure type]** dropdown menu.
+   1. Select **[!UICONTROL Custom Measure]** once more from the **[!UICONTROL + Add]** drop-down menu. In the **[!UICONTROL Create custom]** measure dialog:
+      1. Select **[!UICONTROL Purchases]** from the **[!UICONTROL Field to measure]** drop-down menu.
+      1. Select **[!UICONTROL Sum]** from the **[!UICONTROL Measure type]** drop-down menu.
       1. Enter a custom field name for **[!UICONTROL Name]**. For example: `Sum of Purchases`.
       1. Select the **[!UICONTROL Field details]** tab.
-      1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** dropdown menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
+      1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** drop-down menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
       1. Select **[!UICONTROL Save]**.
    1. Both fields are automatically added to the Data view. 
 1. Select **[!UICONTROL + Filter]** to add another **[!UICONTROL Filters]** and to limit the data.
@@ -1255,9 +1255,9 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
    1. Drag **[!UICONTROL Product Category]** and drop next to **[!UICONTROL Columns]**.
    1. Drag **[!UICONTROL Purchase Revenue]** and drop next to **[!UICONTROL Rows]**. The value changes to **[!UICONTROL SUM(Purchase Revenue)]**.
    1. Drag Purchases and drop next to **[!UICONTROL Rows]**. The value changes to **[!UICONTROL SUM(Purchases)]**.
-   1. Select **[!UICONTROL SUM(Purchases)]** and from the dropdown menu select **[!UICONTROL Dual Axis]**.
-   1. Select **[!UICONTROL SUM(Purchases)]** in **[!UICONTROL Marks]** and select **[!UICONTROL Line]** from the dropdown menu.
-   1. Select **[!UICONTROL SUM(Purchase Revenue)]** in **[!UICONTROL Marks]** and select **[!UICONTROL Bar]** from the dropdown menu.
+   1. Select **[!UICONTROL SUM(Purchases)]** and from the drop-down menu select **[!UICONTROL Dual Axis]**.
+   1. Select **[!UICONTROL SUM(Purchases)]** in **[!UICONTROL Marks]** and select **[!UICONTROL Line]** from the drop-down menu.
+   1. Select **[!UICONTROL SUM(Purchase Revenue)]** in **[!UICONTROL Marks]** and select **[!UICONTROL Bar]** from the drop-down menu.
    1. Select **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** menu.
    1. Select the **[!UICONTROL Purchase Revenue]** title in the chart and ensure that the purchase revenue is in ascending order.
 
@@ -1276,9 +1276,9 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
    1. Drag **[!UICONTROL Product Category]** from the **[!UICONTROL Data]** pane to **[!UICONTROL Rows]**.
    1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Data]** pane to **[!UICONTROL Rows]**, next to **[!UICONTROL Product Category]**.
    1. To change the two horizontal bars to a table, select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
-   1. To limit the number of products, select **[!UICONTROL Purchases]** in **[!UICONTROL Measure Values]**. From the dropdown menu, select **[!UICONTROL Filter]**.
+   1. To limit the number of products, select **[!UICONTROL Purchases]** in **[!UICONTROL Measure Values]**. From the drop-down menu, select **[!UICONTROL Filter]**.
    1. In the **[!UICONTROL Filter \[Purchases\]]** dialog, select **[!UICONTROL At least]** and enter `7000`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
-   1. Select **[!UICONTROL Fit Width]** from **[!UICONTROL the]** Fit dropdown menu.
+   1. Select **[!UICONTROL Fit Width]** from **[!UICONTROL the]** Fit drop-down menu.
 
       Your Tableau Desktop should look like below.
 
@@ -1293,9 +1293,9 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
    1. Drag **[!UICONTROL Product Category]** from the **[!UICONTROL Data]** pane to **[!UICONTROL Columns]**.
    1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Data]** pane to **[!UICONTROL Columns]**.
    1. To change the two vertical bar charts to a treemap, select **[!UICONTROL Treemap]** from **[!UICONTROL Show Me]**.
-   1. To limit the number of products, select **[!UICONTROL Purchases]** in **[!UICONTROL Measure Values]**. From the dropdown menu, select **[!UICONTROL Filter]**.
+   1. To limit the number of products, select **[!UICONTROL Purchases]** in **[!UICONTROL Measure Values]**. From the drop-down menu, select **[!UICONTROL Filter]**.
    1. In the **[!UICONTROL Filter \[Purchases\]]** dialog, select **[!UICONTROL At least]** and enter `7000`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
-   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** drop-down menu.
 
       Your Tableau Desktop should look like below.
 
@@ -1325,21 +1325,21 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
    1. Select **[!UICONTROL Product Category]**.
    1. Select **[!UICONTROL Product Name]**.
 1. From the **[!UICONTROL ‣ Custom Fields]** section in the left rail:
-   1. Select **[!UICONTROL Custom Measure]** from the **[!UICONTROL + Add]** dropdown menu. 
+   1. Select **[!UICONTROL Custom Measure]** from the **[!UICONTROL + Add]** drop-down menu. 
    1. In the **[!UICONTROL Create custom measure]** dialog:
-      1. Select **[!UICONTROL Purchase Revenue]** from the **[!UICONTROL Field to measure]** dropdown menu.
-      1. Select **[!UICONTROL Sum]** from the **[!UICONTROL Measure type]** dropdown menu.
+      1. Select **[!UICONTROL Purchase Revenue]** from the **[!UICONTROL Field to measure]** drop-down menu.
+      1. Select **[!UICONTROL Sum]** from the **[!UICONTROL Measure type]** drop-down menu.
       1. Enter a custom field name for **[!UICONTROL Name]**. For example: `Sum of Purchase Revenue`.
       1. Select the **[!UICONTROL Field details]** tab.
-      1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** dropdown menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
+      1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** drop-down menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
          ![Looker custom metric field](assets/uc5-looker-customfield.png){zoomable="yes"}
       1. Select **[!UICONTROL Save]**.
-   1. Select **[!UICONTROL Custom Measure]** once more from the **[!UICONTROL + Add]** dropdown menu. In the **[!UICONTROL Create custom]** measure dialog:
-      1. Select **[!UICONTROL Purchases]** from the **[!UICONTROL Field to measure]** dropdown menu.
-      1. Select **[!UICONTROL Sum]** from the **[!UICONTROL Measure type]** dropdown menu.
+   1. Select **[!UICONTROL Custom Measure]** once more from the **[!UICONTROL + Add]** drop-down menu. In the **[!UICONTROL Create custom]** measure dialog:
+      1. Select **[!UICONTROL Purchases]** from the **[!UICONTROL Field to measure]** drop-down menu.
+      1. Select **[!UICONTROL Sum]** from the **[!UICONTROL Measure type]** drop-down menu.
       1. Enter a custom field name for **[!UICONTROL Name]**. For example: `Sum of Purchases`.
       1. Select the **[!UICONTROL Field details]** tab.
-      1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** dropdown menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
+      1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** drop-down menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
       1. Select **[!UICONTROL Save]**.
    1. Both fields are automatically added to the Data view.
 1. In the **[!UICONTROL Filters]** section, select **[!UICONTROL + Filter]**. In the **[!UICONTROL Add Filter]** dialog. Select **[!UICONTROL ‣ Custom Fields]**, then **[!UICONTROL Purchase Revenue]**.
@@ -1478,10 +1478,10 @@ Alternatively, you can use the count distinct functionality from Power BI.
    1. In the **[!UICONTROL Filter Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
    1. In the **[!UICONTROL Filter \[Daterange]]** dialog, select **[!UICONTROL Range of dates]**, and select `01/01/2023` - `31/1/2023`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
    1. Drag **[!UICONTROL Cm Product Name Count Distinct]** to **[!UICONTROL Rows]**. The value changes to **[!UICONTROL SUM(Cm Product Name Count Distinct)]**. This field is the calculated metric that you have defined in Customer Journey Analytics.
-   1. Drag **[!UICONTROL Daterangeday]** and drop next to **[!UICONTROL Columns]**. Select **[!UICONTROL Daterangeday]** and from the dropdown menu select **[!UICONTROL Day]**.
+   1. Drag **[!UICONTROL Daterangeday]** and drop next to **[!UICONTROL Columns]**. Select **[!UICONTROL Daterangeday]** and from the drop-down menu select **[!UICONTROL Day]**.
    1. To modify the lines visualization to a table, select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
    1. Select **[!UICONTROL Swap Rows and Columns]** from the toolbar.
-   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** drop-down menu.
 
       Your Tableau Desktop should look like below.
 
@@ -1492,8 +1492,8 @@ Alternatively, you can use the count distinct functionality from Power BI.
 1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1 (2)]** tab context menu to rename the sheet to `Card`.
 
 1. Ensure you have selected the **[!UICONTROL Card]** view.
-1. Select **[!UICONTROL DAY(Daterangeday)]** and from the dropdown menu select **[!UICONTROL Month]**. The value changes to **[!UICONTROL MONTH(Daterangeday)]**.
-1. Select **[!UICONTROL SUM(Cm Product Name Count Distinct)]** in **[!UICONTROL Marks]** and from the dropdown menu select **[!UICONTROL Format]**.
+1. Select **[!UICONTROL DAY(Daterangeday)]** and from the drop-down menu select **[!UICONTROL Month]**. The value changes to **[!UICONTROL MONTH(Daterangeday)]**.
+1. Select **[!UICONTROL SUM(Cm Product Name Count Distinct)]** in **[!UICONTROL Marks]** and from the drop-down menu select **[!UICONTROL Format]**.
 1. To change the font size, in the **[!UICONTROL Format SUM(CM Product Name Count Distinct)]** pane, select **[!UICONTROL Font]** within **[!UICONTROL Default]** and select **[!UICONTROL 72]** for the font size.
 1. To align the number, select **[!UICONTROL Automatic]** next to **[!UICONTROL Alignment]** and set **[!UICONTROL Horizontal]** to centered.
 1. To use whole numbers, select **[!UICONTROL 123.456]** next to **[!UICONTROL Numbers]** and select **[!UICONTROL Number (Custom)]**. Set **[!UICONTROL Decimal places]** to `0`.
@@ -1634,7 +1634,7 @@ Note how the date range defined in the Freeform table visualization overrules th
    1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**. The value changes to **[!UICONTROL SUM(Occurrences)]**.
    1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
    1. Select **[!UICONTROL Swap Rows and Columns]** from the toolbar.
-   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** drop-down menu.
 
       Your Tableau Desktop should look like below.
 
@@ -1678,7 +1678,7 @@ You should see a visualization and table similar as shown below.
 
    ![Jupyter Notebook Results](assets/uc8-jupyter-input.png){zoomable="yes"}
 
-1. Select **[!UICONTROL Fishing Products]** from the dropdown menu.
+1. Select **[!UICONTROL Fishing Products]** from the drop-down menu.
 
 1. Enter the following statements in a new cell.
 
@@ -1731,17 +1731,17 @@ You should see a visualization and table similar as shown below.
 
 
 
-## Use filter names to filter
+## Use segment names to segment
 
-In this use case, you want to use an existing filter for the Fishing product category, that you have defined in Customer Journey Analytics. To filter and report on product names and occurrences (events) during January 2023.
+In this use case, you want to use an existing segment for the Fishing product category, that you have defined in Customer Journey Analytics. To segment and report on product names and occurrences (events) during January 2023.
 
 +++ Customer Journey Analytics
 
-Inspect the filter that you want to use in Customer Journey Analytics.
+Inspect the segment that you want to use in Customer Journey Analytics.
 
 ![Customer Journey Analytics Use Filter Names To Filter](assets/cja-fishing-products.png){zoomable="yes"}
 
-You then can use that filter in an example **[!UICONTROL Using Date Range Names To Filter]** panel for the use case:
+You then can use that segment in an example **[!UICONTROL Using Segment Names To Segment]** panel for the use case:
 
 ![Customer Journey Analytics Distinct Count Values](assets/cja-using-filter-names-to-filter.png){zoomable="yes"}
 
@@ -1793,7 +1793,7 @@ You then can use that filter in an example **[!UICONTROL Using Date Range Names 
    1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list to **[!UICONTROL Rows]**.
    1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**. The value changes to **[!UICONTROL SUM(Occurrences)]**.
    1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
-   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** drop-down menu.
 
       Your Tableau Desktop should look like below.
 
@@ -1845,7 +1845,7 @@ You should see a visualization and table similar as shown below.
 
    ![Jupyter Notebook Results](assets/uc9-jupyter-input.png){zoomable="yes"}
 
-1. Select **[!UICONTROL Fishing Products]** from the dropdown menu.
+1. Select **[!UICONTROL Fishing Products]** from the drop-down menu.
 
 1. Enter the following statements in a new cell.
 
@@ -1895,18 +1895,18 @@ You should see a visualization and table similar as shown below.
 +++
 
 
-## Use dimension values to filter
+## Use dimension values to segment
 
-You use the dynamic **[!UICONTROL Hunting]** value for **[!UICONTROL Product Category]** to filter products from the hunting category. Alternatively, for those BI tools that do not support the dynamic retrieval of product category values, you create a new filter in Customer Journey Analytics that filters on products from the hunting product category. 
-Then you want to use the new filter to report on product names and occurrences (events) for products from the hunting category during January 2023.
+You use the dynamic **[!UICONTROL Hunting]** value for **[!UICONTROL Product Category]** to segment products from the hunting category. Alternatively, for those BI tools that do not support the dynamic retrieval of product category values, you create a new segment in Customer Journey Analytics that segments on products from the hunting product category. 
+Then you want to use the new segment to report on product names and occurrences (events) for products from the hunting category during January 2023.
 
 +++ Customer Journey Analytics
 
-Create a new filter with **[!UICONTROL Title]** `Hunting Products` in Customer Journey Analytics.
+Create a new segment with **[!UICONTROL Title]** `Hunting Products` in Customer Journey Analytics.
 
-![Customer Journey Analytics Use Dimension Values To Filter](assets/cja-hunting-products.png){zoomable="yes"}
+![Customer Journey Analytics Use Dimension Values To Segment](assets/cja-hunting-products.png){zoomable="yes"}
 
-You then can use that filter in an example **[!UICONTROL Using Dimension Values To Filter]** panel for the use case:
+You then can use that segment in an example **[!UICONTROL Using Dimension Values To Filter]** panel for the use case:
 
 ![Customer Journey Analytics Distinct Count Values](assets/cja-using-dimension-values-to-filter.png){zoomable="yes"}
 
@@ -1963,7 +1963,7 @@ You then can use that filter in an example **[!UICONTROL Using Dimension Values 
    1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list to **[!UICONTROL Rows]**.
    1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**. The value changes to **[!UICONTROL SUM(Occurrences)]**.
    1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
-   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** drop-down menu.
 
       Your Tableau Desktop should look like below.
 
@@ -2009,7 +2009,7 @@ You then can use that filter in an example **[!UICONTROL Using Dimension Values 
 
    ![Jupyter Notebook Results](assets/uc10-jupyter-input.png){zoomable="yes"}
 
-1. Select **[!UICONTROL Hunting]** from the dropdown menu.
+1. Select **[!UICONTROL Hunting]** from the drop-down menu.
 
 1. Enter the following statements in a new cell.
 
@@ -2203,7 +2203,7 @@ limit 1000001
    1. Drag **[!UICONTROL Purchases]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**. The value changes to **[!UICONTROL SUM(Purchases)]**.
    1. Drag **[!UICONTROL Purchase Revenue]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**, next to **[!UICONTROL SUM(Purchases)]**. The value changes to **[!UICONTROL SUM(Purchase Revenue)]**.
    1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
-   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** drop-down menu.
    1. Select the **[!UICONTROL Purchase Revenue]** column header and sort the table on this column in descending order.
 
       Your Tableau Desktop should look like below.
@@ -2234,13 +2234,13 @@ GROUP BY 1
 1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
 1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail, select **[!UICONTROL Product Name]**.
 1. From the **[!UICONTROL ‣ Custom Fields]** section in the left rail:
-   1. Select **[!UICONTROL Custom Measure]** from the **[!UICONTROL + Add]** dropdown menu. 
+   1. Select **[!UICONTROL Custom Measure]** from the **[!UICONTROL + Add]** drop-down menu. 
    1. In the **[!UICONTROL Create custom measure]** dialog:
-      1. Select **[!UICONTROL Purchase Revenue]** from the **[!UICONTROL Field to measure]** dropdown menu.
-      1. Select **[!UICONTROL Sum]** from the **[!UICONTROL Measure type]** dropdown menu.
+      1. Select **[!UICONTROL Purchase Revenue]** from the **[!UICONTROL Field to measure]** drop-down menu.
+      1. Select **[!UICONTROL Sum]** from the **[!UICONTROL Measure type]** drop-down menu.
       1. Enter a custom field name for **[!UICONTROL Name]**. For example: `Sum of Purchase Revenue`.
       1. Select the **[!UICONTROL Field details]** tab.
-      1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** dropdown menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
+      1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** drop-down menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
          ![Looker custom metric field](assets/uc5-looker-customfield.png){zoomable="yes"}
       1. Select **[!UICONTROL Save]**.
 1. Ensure you select **[!UICONTROL ↓]** (**[!UICONTROL Descending, Sort Order: 1]**) on the **[!UICONTROL Purchase Revenue]** column.
@@ -2472,15 +2472,15 @@ limit 1000001
    1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list to **[!UICONTROL Rows]**.
    1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**. The value changes to **[!UICONTROL SUM(Occurrences)]**.
    1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
-   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** dropdown menu.
-   1. Select **[!UICONTROL Product Name]** in **[!UICONTROL Rows]**. Select **[!UICONTROL Filter]** from the dropdown menu.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** drop-down menu.
+   1. Select **[!UICONTROL Product Name]** in **[!UICONTROL Rows]**. Select **[!UICONTROL Filter]** from the drop-down menu.
       1. In the **[!UICONTROL Filter \[Product Name\]]** dialog, select the **[!UICONTROL Top]** tab.
       1. Select **[!UICONTROL By field:]** **[!UICONTROL Top]** `5` **[!UICONTROL by Occurrences]** **[!UICONTROL Sum]**.
       1. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
       
          ![AlertRed](/help/assets/icons/AlertRed.svg) You notice that the table disappears. Selecting the top 5 product names by occurrences does **not** work properly using this filter.
-      1. Select the **[!UICONTROL Product Name]** in the **[!UICONTROL Filter]** shelf and from the dropdown menu select **[!UICONTROL Remove]**. The table reappears.
-   1. Select **[!UICONTROL SUM(Occurrences)]** in the **[!UICONTROL Marks]** shelf. Select **[!UICONTROL Filter]** from the dropdown menu.
+      1. Select the **[!UICONTROL Product Name]** in the **[!UICONTROL Filter]** shelf and from the drop-down menu select **[!UICONTROL Remove]**. The table reappears.
+   1. Select **[!UICONTROL SUM(Occurrences)]** in the **[!UICONTROL Marks]** shelf. Select **[!UICONTROL Filter]** from the drop-down menu.
       1. In the **[!UICONTROL Filter \[Occurrences\]]** dialog, select **[!UICONTROL At least]**.
       1. Enter `47.799` as the value. This value ensures that only the top 5 items are shown in the table. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
 
@@ -2716,7 +2716,7 @@ The Customer Journey Analytics objects are available in the **[!UICONTROL Data]*
 
 **Dimensions**
 Dimensions from Customer Journey Analytics are identified by the [!UICONTROL Component name]. The [!UICONTROL Component name] is defined in your Customer Journey Analytics data view. For example, dimension **[!UICONTROL Product Name]** in Customer Journey Analytics has a [!UICONTROL Component name] **[!UICONTROL Product Name]**, which is the name for the dimension in Tableau. All dimensions are identified by **[!UICONTROL Abc]**.
-Date range dimensions from Customer Journey Analytics, like **[!UICONTROL Day]**, **[!UICONTROL Week]**, **[!UICONTROL Month]**, and more are available as **[!UICONTROL Daterangeday]**, **[!UICONTROL Daterangeweek]**, **[!UICONTROL Daterangemonth]**, and more. When you use a date range dimension, you have to select an appropriate definition of date or time to apply to that date range dimension from the dropdown menu. For example, **[!UICONTROL Year]**, **[!UICONTROL Quarter]**, **[!UICONTROL Month]**, **[!UICONTROL Day]**.
+Date range dimensions from Customer Journey Analytics, like **[!UICONTROL Day]**, **[!UICONTROL Week]**, **[!UICONTROL Month]**, and more are available as **[!UICONTROL Daterangeday]**, **[!UICONTROL Daterangeweek]**, **[!UICONTROL Daterangemonth]**, and more. When you use a date range dimension, you have to select an appropriate definition of date or time to apply to that date range dimension from the drop-down menu. For example, **[!UICONTROL Year]**, **[!UICONTROL Quarter]**, **[!UICONTROL Month]**, **[!UICONTROL Day]**.
 
 **Metrics**
 Metrics from Customer Journey Analytics are identified by the [!UICONTROL Component Name]. The [!UICONTROL Component Name] is defined in your Customer Journey Analytics data view. For example, metric **[!UICONTROL Purchase Revenue]** in Customer Journey Analytics has a [!UICONTROL Component Name] **[!UICONTROL Purchase Revenue]**, which is the name for the metric in Tableau. All metrics are identified by **[!UICONTROL #]**. When you use a metric in any visualization, the metric is renamed to **[!UICONTROL Sum(*metric*)]**.
@@ -2782,7 +2782,7 @@ Date ranges that you define in Customer Journey Analytics are available as part 
 Looker provides custom transformation functionality using custom field builders, as shown above. As an example, you want to execute the [Single dimension ranked](#single-dimension-ranked) use case with product names in lower case.
 
 1. From the **[!UICONTROL ‣ Custom Fields]** section in the left rail:
-   1. Select **[!UICONTROL Custom Dimension]** from the **[!UICONTROL + Add]** dropdown menu. 
+   1. Select **[!UICONTROL Custom Dimension]** from the **[!UICONTROL + Add]** drop-down menu. 
    1. Enter `lower(${cc_data_view.product_name})` in the **[!UICONTROL Expression]** text area. You are assisted with the correct syntax when you start to type `Product Name`.
       ![Looker transformation example](assets/uc14-looker-transformation.png){zoomable="yes"}
    1. Enter `product name` as the **[!UICONTROL Name]**.
@@ -3106,13 +3106,13 @@ Each of the supported BI tools has some caveats in working with the Customer Jou
 >[!TAB Tableau Desktop]
 
 * Tableau Desktop Range of Dates filtering is exclusive. For your end date, you need to select one past the day you want to report on.
-* By default, when you add a date or date-time dimension like **[!UICONTROL Daterangemonth]** to the rows of a sheet, Tableau Desktop wraps the field in a **[!UICONTROL YEAR()]** function.  To get what you want, you need to select that dimension and from the dropdown menu select the date function you want to use.  For example, change **[!UICONTROL Year]** to **[!UICONTROL Month]** when you are trying to use **[!UICONTROL Daterangemonth]**.
+* By default, when you add a date or date-time dimension like **[!UICONTROL Daterangemonth]** to the rows of a sheet, Tableau Desktop wraps the field in a **[!UICONTROL YEAR()]** function.  To get what you want, you need to select that dimension and from the drop-down menu select the date function you want to use.  For example, change **[!UICONTROL Year]** to **[!UICONTROL Month]** when you are trying to use **[!UICONTROL Daterangemonth]**.
 * Limiting results to the Top *X* is not obvious in Tableau Desktop. You can limit the results explicitly or using a calculated-field and the **[!UICONTROL INDEX()]** function.  Adding a Top *X* filter to a dimension generates complex SQL using an inner-join that is not supported.
 
 >[!TAB Looker]
 
 * Looker has a maximum number of connections per node setting that is required to be between 5-100.  You cannot set this value to 1.  This setting implies that a Looker connection always uses at a minimum 5 of the available Query Service sessions.
-* Looker lets you create a project with a view based on a Customer Journey Analytics Data view. Looker then creates a model based on the dimensions and metrics, available in the Data view, using LookerML.  This Project View does not automatically update to match the source.  If you make changes or additions to the CJA Data View dimensions, metrics, calculated-metrics, or filters, then these changes do not automatically show up in Looker.  You have to manually update the Project View or create a new Project.
+* Looker lets you create a project with a view based on a Customer Journey Analytics Data view. Looker then creates a model based on the dimensions and metrics, available in the Data view, using LookerML.  This Project View does not automatically update to match the source.  If you make changes or additions to the CJA Data View dimensions, metrics, calculated-metrics, or segments, then these changes do not automatically show up in Looker.  You have to manually update the Project View or create a new Project.
 * Looker's user-experience on date or date-time fields like **[!UICONTROL Daterange Date]** or **[!UICONTROL Daterangeday Date]** is confusing. 
 * Looker's date range is exclusive instead of inclusive.  The **[!UICONTROL until (before)]** is in gray so you may miss that aspect.  For your end day, you need to select one past the day you want to report on.
 * Looker doesn't automatically treat your metrics as metrics.  When you select a metric, by default Looker tries to treat the metric as a dimension in the query.  To treat a metrics as a metric, you need to create a custom field as illustrated above. As a shortcut you can select **[!UICONTROL ⋮]**, select **[!UICONTROL Aggregate]**, and then select **[!UICONTROL Sum]**. 

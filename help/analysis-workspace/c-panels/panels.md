@@ -71,7 +71,7 @@ You can:
 
 ## Data view 
 
-Each panel is associated with a [data view](/help/data-views/data-views.md), identified by ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *name of data view*]** in the dropdown menu at the top right of the panel.
+Each panel is associated with a [data view](/help/data-views/data-views.md), identified by ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *name of data view*]** in the drop-down menu at the top right of the panel.
 
 When you create a Blank Workspace project, the default data view for the initial panel is the data view you last worked on in Customer Journey Analytics.
 
@@ -101,7 +101,7 @@ The panel calendar controls the reporting date range for tables and visualizatio
 ![The calendar window showing the selected date range.](assets/panel-calendar.png)
 
 1. Select a date range by selecting first the start date and then the end date. 
-   Alternatively, you can select a **[!UICONTROL Preset]** from the [!UICONTROL *Select a preset*] dropdown menu.
+   Alternatively, you can select a **[!UICONTROL Preset]** from the [!UICONTROL *Select a preset*] drop-down menu.
 
 1. Optionally, select **[!UICONTROL Show advanced settings]** to:
 
@@ -130,26 +130,26 @@ The panel calendar controls the reporting date range for tables and visualizatio
 
 The panel drop zone enables you to apply segments and drop-down segments to all tables and visualizations within a panel. You can apply one or many segments to a panel. 
 
-### Filters
+### Segments
 
-Drag and drop any segments from the left panel into the panel drop zone to begin segmenting your panel. Repeat this process to add additional segments to the panel. Filters appear side by side at the top of the panel.
+Drag and drop any segments from the left panel into the panel drop zone to begin segmenting your panel. Repeat this process to add additional segments to the panel. Segments appear side by side at the top of the panel.
 
 ![The left panel shows available Metrics and the Mobile Customer metric dragged to the panel drop zone.](assets/segment-filter.png)
 
 #### Quick segments 
 
-Non-segment components can also be dragged directly into the drop zone to create quick segments, saving you the time and effort of going to the [Segment builder](/help/components/filters/filter-builder.md). Filters created in this way are automatically defined as event-level segments. This definition can be quickly modified by selecting ![Edit](/help/assets/icons/Edit.svg) next to the segment name. 
+Non-segment components can also be dragged directly into the drop zone to create quick segments, saving you the time and effort of going to the [Segment builder](/help/components/filters/filter-builder.md). Segments created in this way are automatically defined as event-level segments. This definition can be quickly modified by selecting ![Edit](/help/assets/icons/Edit.svg) next to the segment name. 
 
 
 For more information, see [Quick segments](/help/components/filters/quick-filters.md).
 
 ![Ad hoc segments that are made public and dropped into the drop zone](assets/adhoc-segment-filter.png)
 
-### Drop-down filters
+### Drop-down segments
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Drop down filters](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Drop down segments](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} for a demo video.
 
 {{videoaa}}
 
@@ -194,7 +194,7 @@ Users can use the drop-down segment menu in any of the following ways to segment
 
 #### Dynamic drop-down segments
 
-Dynamic drop-down segments allow you to determine available values based on data within the panel's reporting range and values in other drop-down segments. For example, you can create two dynamic drop-downs using a Countries dimension and a Cities dimension. When you select a country from the **[!UICONTROL Countries]** drop-down list, the **[!UICONTROL Cities]** drop-down list dynamically adjusts to show only cities within that country.
+Dynamic drop-down segments allow you to determine available values based on data within the panel's reporting range and values in other drop-down segments. For example, you can create two dynamic drop-downs using a Countries dimension and a Cities dimension. When you select a country from the **[!UICONTROL Countries]** drop-down menu, the **[!UICONTROL Cities]** drop-down menu dynamically adjusts to show only cities within that country.
 
 This same concept applies to all dimensions; only dimension items that appear within the panel's date range and selected segments are visible. Dimension items selected in static drop-down segments affect available values in dynamic drop-down segments. However, the inverse is not true; Dimension items selected in dynamic drop-down segments do not affect available values in static drop-down segments.
 

@@ -147,7 +147,7 @@ The Search area also shows the filters applied from the Filter panel.
 * To remove a filter, select ![CrossSize75](/help/assets/icons/CrossSize75.svg) in the filter.
 * To remove all filters, select Clear all.
 
-If space is limited to display the individual filters, you see **[!UICONTROL Filtering by *x* filters]**. 
+If space is limited to display the individual filters, you see **[!UICONTROL Segmenting by *x* filters]**. 
 
 * To remove a filter:
   
@@ -198,7 +198,7 @@ Within a project, the menu provides options for managing your project, adding co
 |  Project  | Includes common actions for project management, including New, Open, Save, and Save As. You can also refresh the entire project to retrieve the most recent data and definitions by clicking Refresh Project. [Download project data](/help/analysis-workspace/export/download-send.md) options enable you to export data from Workspace. **Project Info & Settings** (see below) offers many options for managing your project.  |
 |  Edit  | Undo or redo your last action. Clear All will reset your project to a blank starting point. |
 |  Insert  | Insert new panels or visualizations from this menu. You can also insert new panels and visualizations from the left panel.  |
-|  [Components](/help/components/overview.md)  | Create new filters, calculated metric, date range, or alert components from your project. You can also create new components from the left panel. If your component definitions have recently changed, Refresh Components will retrieve the latest definitions. |
+|  [Components](/help/components/overview.md)  | Create new segments, calculated metric, date range, or alert components from your project. You can also create new components from the left panel. If your component definitions have recently changed, Refresh Components will retrieve the latest definitions. |
 |  [Share](/help/analysis-workspace/curate-share/send-schedule-files.md)  | Curate, share and schedule PDF/CSV projects to recipients in your organization.  |
 |  Help  | Access help documentation, videos, and the Analytics [Experience League community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community). Manage the visibility of Workspace tips as well as the [debugger](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/apis/using-analysis-workspace-to-build-api-2-requests). Find details about Workspace and factors that impact project [performance](/help/technotes/optimizing-performance.md).  |
 |  Share button or Owner  | If you are in an Own or Edit for the project, the Share button in the top-right gives you one-click access to manage your project recipients. If you are in a Duplicate or View role for the project, you will see the project owner's name. |
@@ -236,7 +236,7 @@ Within a project, various icons are available in the left panel, and each repres
 
 * [Table of contents](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) ![toc icon](assets/toc-icon.png)
 
-Components (Dimensions, Metrics, Filters, Date Ranges) in the left panel relate to the active panel data view. The active panel is identified by the blue border that surrounds it, and the active data view is listed at the top of the component panel.
+Components (Dimensions, Metrics, Segments, Date Ranges) in the left panel relate to the active panel data view. The active panel is identified by the blue border that surrounds it, and the active data view is listed at the top of the component panel.
 
 ![The components relating to the active panel data view for Cross-Industry Demo Data data view.](assets/left-rail.png)
 

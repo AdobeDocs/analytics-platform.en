@@ -8,8 +8,6 @@ exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 ---
 # Content Analytics reporting overview
 
-{{release-limited-testing}}
-
 You report, perform analysis and gain insights on Content Analytics within [Analysis Workspace](/help/analysis-workspace/home.md). A specific Workspace [template](#template) is available, so you can immediately access a pre-populated Workspace project with relevant content insights.
 
 To start reporting on Content Analytics from scratch:
@@ -17,7 +15,7 @@ To start reporting on Content Analytics from scratch:
 1. [Create a new](/help/analysis-workspace/build-workspace-project/create-projects.md) or [open an existing](/help/analysis-workspace/build-workspace-project/open-projects.md) project in Workspace.
 1. Ensure you [select a data view](/help/analysis-workspace/c-panels/panels.md#data-view) for Content Analytics reporting. Content Analytics reporting is only available for data views that are [configured](/help/content-analytics/config/configuration.md) for Content Analytics. 
 1. Drag a ![Table](/help/assets/icons/Table.svg) [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) visualization on the canvas.
-1. Use [specific Content Analytics components](components.md) and other generic [components](/help/components/overview.md) (like filters, date ranges, annotations) to build your content analytics insights.
+1. Use [specific Content Analytics components](components.md) and other generic [components](/help/components/overview.md) (like segments, date ranges, annotations) to build your content analytics insights.
 
 ## Thumbnails
 
@@ -61,7 +59,7 @@ To use the template:
 
 1. Select **[!UICONTROL Workspace]** from the main menu.
 1. Ensure you have selected a Data view that is configured for Content Analytics.
-1. Search for, or use filters (**[!UICONTROL Web]** for **[!UICONTROL Channel]** and **[!UICONTROL Engagement]** for **[!UICONTROL Use Case]**s) to find and select the **[!UICONTROL Content analytics]** template.
+1. Search for, or use segments (**[!UICONTROL Web]** for **[!UICONTROL Channel]** and **[!UICONTROL Engagement]** for **[!UICONTROL Use Case]**s) to find and select the **[!UICONTROL Content analytics]** template.
 1. Select **[!UICONTROL Use template]**.
 1. In the **[!UICONTROL Set up your template]** dialog, select a metric from the **[!UICONTROL Select a conversion metric]** dialog. For example, **[!UICONTROL Asset CTR]**.
 1. Select **[!UICONTROL Continue]**.

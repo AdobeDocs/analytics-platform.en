@@ -67,7 +67,7 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
    | --- | --- |
    | From within the **[!UICONTROL Audiences]** interface | Select **[!UICONTROL Components]** > **[!UICONTROL Audiences]** from the main Customer Journey Analytics menu. The Audiences interface displays. Select **[!UICONTROL Create audience]** and the [!UICONTROL Audience builder] opens. |
    | From a visualization in Analysis Workspace | Many visualizations in Analysis Workspace allow you to create an audience using the context menu. For example, you can select **[!UICONTROL Create audience]** from the context menu of an item in a [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) or a node in [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>Using this method pre-populates the segment in the Audience builder with the dimension or dimension item that you selected.</p><p>The following visualizations allow you to create an audience using the right-click menu:</p><ul><li>[Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Flow](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Note:** Audiences cannot include calculated metrics. If you try to create an audience that contains a calculated metric, the calculated metric is not included in the audience definition.</p> |
-   | From the segment creation/editing UI | Check the box that says **[!UICONTROL Create an audience from this segment]**. Using this method pre-populates the segment. See [Create filters](/help/components/filters/create-filters.md) for more information. |
+   | From the segment creation/editing UI | Check the box that says **[!UICONTROL Create an audience from this segment]**. Using this method pre-populates the segment. See [Create segments](/help/components/filters/create-filters.md) for more information. |
 
    {style="table-layout:auto"}
 
@@ -116,9 +116,13 @@ The Data preview panel provides the following information.
 
 ## What happens after an audience is created and published? {#after-audience-created} 
 
-After you create and publish an audience in Customer Journey Analytics, the audience is available in Experience Platform. An Adobe Experience Platform streaming segment is created only if your organization is set up for streaming segmentation.
+After you create and publish an audience in Customer Journey Analytics, the audience is available in Experience Platform and can be viewed in the [Audience portal](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal). With the audience available in Experience Platform, it can be used in other Experience Platform applications, such as Adobe Journey Optimizer. 
 
-* The audience in Platform shares the same name and description as the Customer Journey Analytics audience. The name is appended with the Customer Journey Analytics audience ID to ensure that the audience is unique.
+An Adobe Experience Platform streaming segment is created only if your organization is set up for streaming segmentation.
+
+Consider the following when working with audiences that are published from Customer Journey Analytics to Experience Platform:
+
+* The audience in Experience Platform shares the same name and description as the Customer Journey Analytics audience. The name is appended with the Customer Journey Analytics audience ID to ensure that the audience is unique.
 * Any changes made to the name or description of the audience in Customer Journey Analytics are reflected in Experience Platform.
 * If an audience is deleted in Customer Journey Analytics, the audience continues to be available in Experience Platform until the profile membership of the audience expires. The profile membership expires after 420 days for one-time audiences and after 16 days for recurring audiences.
 
