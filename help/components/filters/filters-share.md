@@ -32,6 +32,6 @@ Below are some best practices when you should share segments and with whom you s
 
 * As an administrator, only share a segment with All if you are convinced anyone in your organization is comfortable using the segments. You can also consider favoring these segments. See [Mark a segment as favorite](filters-favorite.md) for more information.
 
-* As an administrator, share a segment with a specific gorpu if that segment provides business value for the users part of that group
+* As an administrator, share a segment with a specific group if that segment provides business value for the users part of that group.
 
 * As an administrator or an individual user, share a segment with one or more individuals to validate a segment. If the segments do not prove to be useful, you can delete the segment.  
