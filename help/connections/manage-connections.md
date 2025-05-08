@@ -172,7 +172,9 @@ After you have access to Customer Journey Analytics, you must allow the Journey 
 
 You can remove the Journey Optimizer connection from Customer Journey Analytics at any time. However, removing the connection from Customer Journey Analytics after it is being used results in the following:
 
-* The Journey Optimizer connection and any associated data views are reset to their default state and can no longer be edited. 
+* The Journey Optimizer connection and any associated data views are reset to their default state and can no longer be edited 
+
+* Any custom derived fields associated with the connection will be deleted
 
 * You can no longer perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics
 
