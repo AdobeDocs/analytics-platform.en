@@ -7,15 +7,6 @@ exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 ---
 # Create projects {#create-projects}
 
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_project_countrepeatinstances"
->title="Count repeat instances"
->abstract="Specifies whether repeat instances are counted in reports.<br/><br/>Note: this setting does not apply to Flow or Fallout visualizations."
-
-<!-- markdownlint-enable MD034 -->
-
 
 [Projects](/help/analysis-workspace/build-workspace-project/freeform-overview.md) in Analysis Workspace allow you to create and view business-critical analyses.  These analyses can be shared with stakeholders inside or outside your organization. 
 
@@ -50,23 +41,21 @@ Now that you have created a Blank Workspace project, ensure you are familiar wit
 
 ## Project Info & Settings {#project-info-settings}
 
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="workspace_project_countrepeatinstances"
+>title="Count repeat instances"
+>abstract="Specifies whether repeat instances are counted in reports.<br/><br/>Note: this setting does not apply to Flow or Fallout visualizations."
 
 >[!CONTEXTUALHELP]
 >id="workspace_project_repeatinstances"
 >title="Count repeat instances"
 >abstract="Specifies whether repeat instances are counted in reports.<br/>Note: this setting does not apply to Flow or Fallout visualizations."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_project_commenting"
 >title="Allow commenting"
 >abstract="When enabled, a comments area is available in the right rail of the project in Analysis Workspace."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Project settings provides project-level information on the currently active project.
