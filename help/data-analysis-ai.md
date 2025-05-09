@@ -8,16 +8,15 @@ hidefromtoc: yes
 hide: yes
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 ---
-# Visualize data with the Data Insights Agent in Customer Journey Analytics
+# Visualize data with Data Insights Agent in Customer Journey Analytics
 
 >[!AVAILABILITY]
 >
->Data Insights Agent is available for eligible Customer Journey Analytics customers until November 30, 2025. After that date, a license is required if you want to continue using Data Insights Agent. Please contact our support team for assistance with the licensing process.
+>Data Insights Agent is available for eligible Customer Journey Analytics customers until November 30, 2025. After that date, a license is required if you want to continue using Data Insights Agent. Please contact your Adobe account team for assistance with the licensing process.
 
+Data Insights Agent, part of the AI Assistant in Customer Journey Analytics, is a generative AI conversation agent that quickly and efficiently answers questions about your data. It builds relevant visualizations in Analysis Workspace using components from your data view and using your actual data.
 
-The Data Insights Agent, part of the AI Assistant in Customer Journey Analytics, is a generative AI conversation agent that quickly and efficiently answers questions about your data. It builds relevant visualizations in Analysis Workspace using components from your data view and using your actual data.
-
-Using the Data Insights Agent to answer data-centric questions in Analysis Workspace can save countless hours that you might otherwise spend manually building visualizations in Analysis Workspace and familiarizing yourself with your data view components. 
+Using Data Insights Agent to answer data-centric questions in Analysis Workspace can save countless hours that you might otherwise spend manually building visualizations in Analysis Workspace and familiarizing yourself with your data view components. 
 
 ![Data Insights Agent within the AI Assistant](assets/cja-ai-asst-da.gif)
 
