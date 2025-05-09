@@ -168,7 +168,7 @@ After you have access to Customer Journey Analytics, you must allow the Journey 
 
 1. Select **[!UICONTROL Use connection]**. <!-- double-check these dialog button names -->
 
-#### Remove the connection from Customer Journey Analytics
+#### Remove the connection from Customer Journey Analytics {#remove-connection-in-cja}
 
 You can remove the Journey Optimizer connection from Customer Journey Analytics at any time. However, removing the connection from Customer Journey Analytics after it is being used results in the following:
 
