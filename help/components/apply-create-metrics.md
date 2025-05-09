@@ -29,11 +29,19 @@ Adobe offers several types of metrics for use in Analysis Workspace:
   * **Sessions**: The Sessions metric in Customer Journey Analytics is what you define as part of the configuration of the Sessions settings in your data view. See [Session settings](/help/data-views/session-settings.md).
   * **Events**: The Events metric in Customer Journey Analytics are comprised of the events that are part of any event dataset you have configured as part of your connection.
 
+  See [Standard metrics](#standard-metrics) for the full list of standard metrics.
+
 * **Calculated metrics** ![Calculator](/help/assets/icons/Calculator.svg): User-defined metrics that are based on standard metrics, static numbers, or algorithmic functions.
 
 * **Calculated metric templates**  ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : Adobe-defined metrics that behave similarly to calculated metrics. You can use them as-is in Workspace projects, or save a copy to customize the logic. See [Default calculated metrics](calc-metrics/cm-workflow/../default-calcmetrics.md).
 
 You can see whether a metric is approved ![Approved icon](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  or not. If you want more details on a metric, hover over the metric, and select ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg). See [Component info](use-components-in-workspace.md#component-info) for more information.
+
+
+## Standard metrics
+
+The full list of standard metrics in Customer Journey Analytics:
+{{standard-metrics}}
 
 ## Compare metrics with different attribution models
 

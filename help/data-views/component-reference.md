@@ -18,29 +18,15 @@ Most dimensions and metrics in Customer Journey Analytics are based on schema el
 
 These required standard components are added to each data view by default. They are essential to the reporting capabilities that Customer Journey Analytics offers.
 
-| Component Name | Dimension or Metric | Notes |
-| --- | --- | --- |
-| [!UICONTROL People] | Metric | Based on the person ID specified in a [!UICONTROL Connection]. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL Accounts] | Metric | Based on the Account ID specified in a [!UICONTROL Connection]. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL Global Accounts] | Metric | Based on the Global Accounts ID specified in the [!UICONTROL Connection]. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL Opportunity] | Metric | The opportunities, based on the Opportunity ID specified in the [!UICONTROL Connection]. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL Buying Group] | Metric | The buying groups, based on the Buying group ID specified in the [!UICONTROL Connection]. | 
-| [!UICONTROL Sessions] | Metric | Based on the data view's session settings. |
-| [!UICONTROL Events] | Metric | The number of rows from all event datasets in a [!UICONTROL Connection]. |
-| [!UICONTROL Seconds] | Dimension | The second that a given event happened (rounded down). The first dimension item is the first second in the date range, and the last dimension item is the last second in the date range. |
-| [!UICONTROL Minute] | Dimension | The minute that a given event happened (rounded down). The first dimension item is the first minute in the date range, and the last dimension item is the last minute in the date range. |
-| [!UICONTROL Hour] | Dimension | The hour that a given event happened (rounded down). The first dimension item is the first hour in the date range, and the last dimension item is the last hour in the date range. |
-| [!UICONTROL Day] | Dimension | The day that a given event happened. The first dimension item is the first day in the date range, and the last dimension item is the last day in the date range. |
-| [!UICONTROL Week] | Dimension | The week that a given event happened. The first dimension item is the first week in the date range, and the last dimension item is the last week in the date range.|
-| [!UICONTROL Month] | Dimension | The month that a given event happened. The first dimension item is the first month in the date range, and the last dimension item is the last month in the date range. |
-| [!UICONTROL Quarter] | Dimension | The quarter that a given event happened. The first dimension item is the first quarter in the date range, and the last dimension item is the last quarter in the date range. |
-| [!UICONTROL Year] | Dimension | The year that a given event happened. The first dimension item is the first year in the date range, and the last dimension item is the most recent year in the date range. |
-| Event Depth | Dimension | Assigns sequential numerical values (1, 2, 3, etc.) to each event interaction within a session. With this dimension you can track the progression of events from start to finish within a bounded session. For example, when used in a segment definition with a rule defined as **[!UICONTROL Event Depth]** **[!UICONTROL equals]** `1` within a Session container, you define a segment that segments down to just the first event of every session. |
-| [!UICONTROL Session Starts] | Metric | The number of events that were the first event of a session. When used in a segment definition (for example, '[!UICONTROL Session Starts] exists'), it segments down to just the first event of every session.<p>This component must be included in your data view for the following [calculated metric](/help/components/calc-metrics/default-calcmetrics.md) to be available in Workspace: <ul><li>Session Start Rate</li></p> |
-| [!UICONTROL Session Ends] | Metric | The number of events that were the last event of a session. Similar to [!UICONTROL Session Starts], it can also be used in a segment definition to segment things down to the last event of every session.<p>This component must be included in your data view for the following [calculated metric](/help/components/calc-metrics/default-calcmetrics.md) to be available in Workspace: <ul><li>Session End Rate</li></p> |
-| [!UICONTROL Time Spent (seconds)] | Metric | Sums the time between two different values for a dimension.<p>This component must be included in your data view for the following [calculated metrics](/help/components/calc-metrics/default-calcmetrics.md) to be available in Workspace: <ul><li>Time Spent Per Person</li><li>Time Spent Per Session</li></p> |
+### Standard dimensions
 
-{style="table-layout:auto"}
+{{standard-dimensions}}
+
+
+### Standard metrics
+
+{{standard-metrics}}
+
 
 ## Optional standard components {#optional}
 
