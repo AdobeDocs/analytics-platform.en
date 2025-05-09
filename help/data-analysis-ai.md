@@ -100,19 +100,17 @@ The following parameters govern access to Data Insights Agent in Customer Journe
 
 3. Select **[!UICONTROL Blank project]** in the banner at the top of the projects page to open a new blank project.
 
-4. Ensure that the selected data view for the panel is the same data view that was enabled for use with Data Insights Agent for Beta testing. 
-
-   If you are unsure, contact the Beta Slack channel.
+4. Ensure that the selected data view for the panel is a data view that was enabled for use with Data Insights Agent, as described in [Manage access to Data Insights Agent in Customer Journey Analytics](#manage-access-to-data-insights-agent-in-customer-journey-analytics). 
 
 5. Select the AI Assistant chat icon at the top-right area of the page. 
 
    If you do not see the chat icon, contact your administrator so they can enable the following features in the Admin Conole:
    
-   * **[!UICONTROL AI Assistant: Product Knowledge]**
+   * Reporting Tools: **[!UICONTROL AI Assistant: Product Knowledge]**
 
-   * **[!UICONTROL AI Assistant: Data Analysis]**
+   * Data View Tools: **[!UICONTROL Data Insights Agent]**
    
-   For additional details, administrators can see [these instructions](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/access). 
+   For additional details, see [Manage access to Data Insights Agent in Customer Journey Analytics](#manage-access-to-data-insights-agent-in-customer-journey-analytics). 
 
    ![AI Assistant icon](/help/assets/ai-asst-icon.png)
 
@@ -193,7 +191,7 @@ To achieve the best results, consider the following guidelines:
 
 * Be specific: Include exact terms to narrow down the response. Following is an example of a specific prompt: "Last month's sales in California"
 
-* Use clear metrics and segments: Adding specific metrics (such as "Revenue"), dimensions (such as "website name"), segments (such as "iPhone users"), and date ranges (such as "last three months") helps Data Insights Agent focus on the right data.
+* Use clear metrics, dimensions, and segments: Adding specific metrics (such as "Revenue"), dimensions (such as "website name"), segments (such as "iPhone users"), and date ranges (such as "last three months") helps Data Insights Agent focus on the right data.
 
 * Ask direct questions: Phrasing questions directly makes it easier for Data Insights Agent to provide clear, relevant insights. Following is an example of asking a direct question in a prompt: "What is the average revenue by product category this year?" 
 
@@ -208,6 +206,8 @@ These examples are designed to help you get familiar with how specific words or 
 | Donut visualization | <ul><li>Proportion</li><li>Share of</li><li>Distribution</li><li>Percentage</li><li>Contribution</li><li>Portion</li><li>Parts</li></ul> |
 | Line visualization | <ul><li>Trend</li><li>[Metric] in [Time range]</li></ul> |
 | Bar visualization | <ul><li>[Metric] by [Dimension]</li></ul> |
+
+<!--
 
 ## Beta testing expectations and requested feedback
 
@@ -230,3 +230,6 @@ Following the thumbs up or thumbs down selection, please make a selection for th
 ## Questions and Contact
 
 * Send questions and feedback in the Beta Slack channel: #data-insights-agent-in-cja-beta
+
+-->
+
