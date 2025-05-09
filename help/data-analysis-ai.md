@@ -10,6 +10,8 @@ exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 ---
 # Visualize data with Data Insights Agent in Customer Journey Analytics
 
+{{release-limited-testing}}
+
 >[!AVAILABILITY]
 >
 >Data Insights Agent is available for eligible Customer Journey Analytics customers until November 30, 2025. After that date, a license is required if you want to continue using Data Insights Agent. Please contact your Adobe account team for assistance with the licensing process.
