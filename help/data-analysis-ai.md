@@ -82,7 +82,7 @@ The following parameters govern access to Data Insights Agent in Customer Journe
 
       >[!IMPORTANT]
       >
-      >The Data Insights Agent will be able to reference the included data views sometime during the same day that you enable them in the Admin Console. 
+      >The Data Insights Agent can reference the included data views sometime during the same day that you enable them in the Admin Console. 
    
    1. Search for or scroll to the data views that you want to enable, then select the plus icon ![AddCircle](/help/assets/icons/AddCircle.svg) next to the name of each data view.
 
@@ -146,7 +146,7 @@ Next, you want to see how your revenue compares by region.
    
 ### Example 3
 
-Next, in addition to understanding revenue by region you also want to see data for profit by region. Instead of repeating the previous prompt, you can ask Data Insights Agent to update the most recent visualization and freeform table. 
+Next, in addition to understanding revenue by region, you also want to see data for profit by region. Instead of repeating the previous prompt, you can ask Data Insights Agent to update the most recent visualization and freeform table. 
 
 **Prompt:** In the prompt window, type *"Add profit."*
 
@@ -166,7 +166,7 @@ Finally, let's look at the revenue by product category.
 
 ## Example data visualization prompts
 
-Following are some examples of common prompts and the visualizations used by Data Insights Agent to respond to those prompts.
+The following are some examples of common prompts and the visualizations used by Data Insights Agent to respond to those prompts.
 
 | Example prompt | Expected visualization |
 | --- | --- |
@@ -191,11 +191,11 @@ Responses can vary based on the specific words and phrases used in the prompt, a
 
 To achieve the best results, consider the following guidelines: 
 
-* Be specific: Include exact terms to narrow down the response. Following is an example of a specific prompt: "Last month's sales in California"
+* **Be specific:** Include exact terms to narrow down the response. The following is an example of a specific prompt: "Last month's sales in California"
 
-* Use clear metrics, dimensions, and segments: Adding specific metrics (such as "Revenue"), dimensions (such as "website name"), segments (such as "iPhone users"), and date ranges (such as "last three months") helps Data Insights Agent focus on the right data.
+* **Use clear metrics, dimensions, and segments:** Adding specific metrics (such as "Revenue"), dimensions (such as "website name"), segments (such as "iPhone users"), and date ranges (such as "last three months") helps Data Insights Agent focus on the right data.
 
-* Ask direct questions: Phrasing questions directly makes it easier for Data Insights Agent to provide clear, relevant insights. Following is an example of asking a direct question in a prompt: "What is the average revenue by product category this year?" 
+* **Ask direct questions:** Phrasing questions directly makes it easier for Data Insights Agent to provide clear, relevant insights. The following is an example of asking a direct question in a prompt: "What is the average revenue by product category this year?" 
 
 Review the following table of example terms and phrases that you can use in prompts with Data Insights Agent, along with the types of responses you can expect. 
 
