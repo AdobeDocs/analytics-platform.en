@@ -4,8 +4,6 @@ title: Visualize data with the Data Insights Agent in Customer Journey Analytics
 role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
-hidefromtoc: yes
-hide: yes
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 ---
 # Visualize data with Data Insights Agent in Customer Journey Analytics
