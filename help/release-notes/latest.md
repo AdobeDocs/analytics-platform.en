@@ -31,13 +31,14 @@ These release notes cover the release period of April 22 to June 18, 2025. Adobe
 **Admin Console**: 
 **Analysis Workspace**: AN-361874; AN-371360; AN-373079; AN-374382; AN-374447; AN-375277; AN-375680
 **Audiences**: AN-372343
+**Audit Log**: AN-378168
 **Connections**: AN-373121; AN-372996
 **Data deletion**: AN-375450
 **Derived fields**: AN-373689
 **Export locations**: AN-374167
 **Journey Canvas**: AN-373319
 **Report Builder**: AN-369786
-**Reporting**: AN-377326
+**Reporting**: AN-377326; AN-378051
 
 
 ## Important notices for Customer Journey Analytics Administrators
