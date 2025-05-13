@@ -8,111 +8,85 @@ role: Admin
 ---
 # Create or edit a connection {#create-or-edit-a-connection}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsadded"
 >title="Records added"
 >abstract="The number of records (rows) added to a Connection during the selected time interval for the selected datasets."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsskipped"
 >title="Records skipped"
 >abstract="The number of records (rows) skipped during data transfer for a Connection during the selected time interval for the selected datasets."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsdeleted"
 >title="Records deleted"
 >abstract="The number of records (rows) removed from a Connection during the selected time interval for the selected datasets."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_lastadded"
 >title="Last added"
 >abstract="The timestamp of the latest batch from any dataset transferred to a Connection."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_enablerollingdatawindow"
 >title="Enable rolling data window"
 >abstract="Define data retention as a rolling window in months at a connection level."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_averagenumberofdailyuses"
 >title="Average number of daily uses"
 >abstract="Select a range for the number of expected daily events for the entire connection."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connections_recordsadded"
 >title="Records added"
 >abstract="The number of records (rows) added to a Connection during the selected time interval for the selected datasets."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_recordsskipped"
 >title="Records skipped"
 >abstract="The number of records (rows) skipped during data transfer for a Connection during the selected time interval for the selected datasets."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connections_recordsdeleted"
 >title="Records deleted"
 >abstract="The number of records (rows) removed from a Connection during the selected time interval for the selected datasets"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connection_lastadded"
 >title="Last added"
 >abstract="The timestamp of the latest batch from any dataset transferred to a Connection."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_enablerollingdatawindow"
 >title="Enable rolling data window"
 >abstract="Define data retention as a rolling window in months at a connection level."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_averagenumberofdailyuses"
 >title="Average number of daily uses"
 >abstract="Select a range for the number of expected daily events for the entire connection."
+
+>[!CONTEXTUALHELP]
+>id="connection_change_accountid"
+>title="Change Account ID"
+>abstract="A change of the Account ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Account ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
+
+>[!CONTEXTUALHELP]
+>id="connection_change_globalaccountid"
+>title="Change Global Account ID"
+>abstract="A change of the Global Account ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Global Account ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
+
+>[!CONTEXTUALHELP]
+>id="connection_change_opportunityid"
+>title="Change Opportunity ID"
+>abstract="A change of the Opportunity ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Opportunity ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
+
+>[!CONTEXTUALHELP]
+>id="connection_change_buyinggroupid"
+>title="Change Buying Group ID"
+>abstract="A change of the Buying Group ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Buying Group ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
 
 
 The connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with an assistive workflow. It provides detailed dataset selection, configuration, and review experience. And allows you to specify critical information like [dataset type](#dataset-types), size, schema, dataset id, batch status, backfill status, identities, and much more, to reduce the risk of wrong connection configuration. Here is an overview of the capabilities:
