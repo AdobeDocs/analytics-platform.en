@@ -13,7 +13,7 @@ Customer Journey Analytics lets you control how you connect your online and offl
 
 ## What's new?
 
-Get a glimpse of the newest enhancements in the Customer Journey Analytics product and documentation! For a comprehensive list of features, improvements, and fixes, check out the detailed [Release Notes](../release-notes/latest.md). Visit the [documentation updates page](../release-notes/doc-changes.md) to stay up-to-date with the latest changes.
+Get a glimpse of the newest enhancements in the Customer Journey Analytics product and documentation! For a comprehensive list of features, improvements, and fixes, check out the detailed [Release Notes](../release-notes/latest.md). Visit the [documentation updates page](../release-notes/doc-changes.md) to stay up-to-date with the latest documentation updates.
 
 >[!BEGINTABS]
 
@@ -23,12 +23,21 @@ Content Analytics allows you to quickly and easily investigate large volumes of 
 
 [![image](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 
+>[!TAB Event Depth]
+
+Event Depth is a new standard dimension and provides new ways to measure and better understand how events are positioned within customer sessions. The Event Depth dimension enables detailed tracking and analysis of where specific events occur in the sequential flow of user interactions within a session.
+
+[![image](assets/learn-more-button.svg)](/help/components/dimensions/overview.md#standard-dimensions)
+
+
 >[!TAB Shared metrics and dimensions]
 
 Shared metrics and dimensions provide a central location to manage dimensions and metrics that can be used across any number of data views. These components are especially valuable to organizations that use multiple data views, especially if those data views share common component settings.
 
 [![image](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
+
+<!--
 >[!TAB AI Assistant] 
 
 AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace - whether its understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
@@ -43,11 +52,13 @@ Guided Analysis is now available directly from within Analysis Workspace, enabli
 [![image](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
 
 
+
 >[!TAB Intelligent captions v2] 
 
 Intelligent captions are now supported, with additional interface improvements, for [Line](/help/analysis-workspace/visualizations/line.md) (including multi-line), [Bar](/help/analysis-workspace/visualizations/bar.md), [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md), [Area](/help/analysis-workspace/visualizations/area.md) (including multiple Area lines), [Donut](/help/analysis-workspace/visualizations/donut.md), [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), and [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) visualizations.
 
 [![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
 
 >[!TAB Alerts] 
 
@@ -64,6 +75,8 @@ Allows you to bring in time-series data that does not have a person ID. This tim
 - Uploading targets or goals at an hourly or daily basis, then positioning these targets or goals against event-level metrics. 
 
 [![image](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
+
+-->
 
 >[!TAB Graph-based stitching*] 
 

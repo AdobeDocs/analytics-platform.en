@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (April 2025)
 
-**Last update**: April 30, 2025
+**Last update**: May 8, 2025
 
 These release notes cover the release period of March 27 to May 15, 2025. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -14,7 +14,8 @@ These release notes cover the release period of March 27 to May 15, 2025. Adobe 
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Increase in full table export limits** | We are increasing the number of columns customers can use with full table export from 5 dimensions and 5 metrics to 10 dimensions and 10 metrics. This applies to all Customer Journey Analytics tiers. There is no change in the entitlements for the number of rows which can be exported. |  |  April 30, 2025 |
+| **Event Depth dimension** | A new Event Depth dimension is added to the list of [standard dimensions](/help/components/dimensions/overview.md#standard-dimensions) for a data view. |  | May 8, 2025 |
+| **Increase in full table export limits** | The number of columns customers you can use with full table export are increased from 5 dimensions and 5 metrics to 10 dimensions and 10 metrics. This increase applies to all Customer Journey Analytics tiers. There is no change in the entitlements for the number of rows which can be exported. |  |  April 30, 2025 |
 | **Updates to "No Value" line item on numeric dimensions** | For numeric dimensions, this update lets you<ul><li>Use the "No Value" dimension item in a segment.</li><li>Perform a breakdown in a report on the "No Value" line item.</li></ul> [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/no-value-options#numeric) | | March 27, 2025 |
 | **Adobe Content Analytics** |  Adobe Content Analytics allows you to quickly and easily investigate large volumes of content data to uncover trends, spot anomalies, identify content fatigue, and gain insights from content exposure.<p>Out of the box, you can save time with pre-built reporting templates and new features like Asset Inspector. This capability lets you not only visualize the asset in-line with your data, but also open each asset for summarized details including performance, placements, attributes and more.<p>You can investigate this new set of content data within the context of the complete customer journey to answer important business questions, assess content performance, enhance segmentation, identify optimization opportunities, and define new audiences for activation.<p>Content Analytics is an add-on to Customer Journey Analytics. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics) |  | March 27, 2025 |
 | **Media Collection: Adobe Source Connector updates for new Media Reporting XDM** | The Analytics Source Connector automatically maps streaming media data in Adobe Analytics to the same fields used by the Web SDK. Previously, data was mapped to both the old and new locations, but only the new location will be used in the future. [Learn more](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | March 31, 2025 |

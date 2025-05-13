@@ -248,3 +248,44 @@ Use the following information to choose the visualization that best meets your n
 | **[!UICONTROL Dataset]** | The name of the dataset. |
 | **[!UICONTROL Preview: *dataset name*]** | Previews the dataset for first 10 rows and first 10 columns. |
 | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]** | You can [delete a dataset](/help/connections/create-connection.md#delete-a-dataset) without deleting the whole connection. The deletion of a dataset from a connection reduces the costs involved in data ingestion and the cumbersome process of recreating the whole connection and associated data views. |
+
+## Standard dimensions {#standard-dimensions}
+
+| Component Name | Notes |
+|---|---|
+| 15 Minute | Each 15 minutes that a given event happened (rounded down). The first dimension item is the first 15 minutes in the date range, and the last dimension item is the last 15 minutes in the date range. |
+| 30 Minute | Each 30 minutes that a given event happened (rounded down). The first dimension item is the first 30 minutes in the date range, and the last dimension item is the last 30 minutes in the date range. |
+| 5 Minute | Each 5 minutes that a given event happened (rounded down). The first dimension item is the first 15 minutes in the date range, and the last dimension item is the last 5 minutes in the date range. |
+| [!UICONTROL Day] |  The day that a given event happened. The first dimension item is the first day in the date range, and the last dimension item is the last day in the date range. |
+| [!UICONTROL Day of Month] |  The day of the month that a given event happened. The first dimension item is the first day of the month in the date range, and the last dimension item is the last day of the month in the date range. |
+| [!UICONTROL Day of Week] |  The day of the week that a given event happened. The first dimension item is the first day of the week in the date range, and the last dimension item is the last day of the week in the date range. |
+| [!UICONTROL Day of Month] |  The day of the month that a given event happened. The first dimension item is the first day of the month in the date range, and the last dimension item is the last day of the month in the date range. |
+| Event Depth |  Assigns sequential numerical values (1, 2, 3, etc.) to each event interaction within a session. With this dimension you can enable  detailed tracking and analysis of where specific events occur in the sequential flow of user interactions within the [bounded experience session you have defined for your data view](/help/data-views/session-settings.md#session-settings). You can track the progression of events from start to finish within a bounded session. As an example: A visitor lands on your homepage (event 1, session start), uses the search function (event 2), views a product details page (event 3), adds to cart (event 4), proceeds to checkout (event 5), and completes a purchase (event 6, session end). You can use [!UICONTROL Event depth] now in a segment definition to segment data based on interaction depth. |
+| [!UICONTROL Hour] |  The hour that a given event happened (rounded down). The first dimension item is the first hour in the date range, and the last dimension item is the last hour in the date range. |
+| [!UICONTROL Hour of Day] |  The hour of the day that a given event happened (rounded down). The first dimension item is the first hour of the day in the date range, and the last dimension item is the last hour of the day in the date range. |
+| [!UICONTROL Minute] |  The minute that a given event happened (rounded down). The first dimension item is the first minute in the date range, and the last dimension item is the last minute in the date range. |
+| [!UICONTROL Minute of Hour] |  The minute of the hour that a given event happened (rounded down). The first dimension item is the first minute of the hour in the date range, and the last dimension item is the last minute of the hour in the date range. |
+| [!UICONTROL Month] |  The month that a given event happened. The first dimension item is the first month in the date range, and the last dimension item is the last month in the date range. |
+| [!UICONTROL Month of Year] |  The month of the year that a given event happened. The first dimension item is the first month of the year in the date range, and the last dimension item is the last month of the year in the date range. |
+| [!UICONTROL Quarter] |  The quarter that a given event happened. The first dimension item is the first quarter in the date range, and the last dimension item is the last quarter in the date range. |
+| [!UICONTROL Quarter of Year] |  The quarter of the year that a given event happened. The first dimension item is the first quarterof the year in the date range, and the last dimension item is the last quarter of the year in the date range. |
+| [!UICONTROL Second] |  The second that a given event happened (rounded down). The first dimension item is the first second in the date range, and the last dimension item is the last second in the date range. |
+| [!UICONTROL Week] |  The week that a given event happened. The first dimension item is the first week in the date range, and the last dimension item is the last week in the date range.|
+| [!UICONTROL Week of year] |  The week of year that a given event happened. The first dimension item is the first week of year in the date range, and the last dimension item is the last week of year in the date range.|
+| [!UICONTROL Year] |  The year that a given event happened. The first dimension item is the first year in the date range, and the last dimension item is the most recent year in the date range. |
+
+
+## Standard metrics {#standard-metrics}
+
+| Component Name | Notes |
+| --- | --- |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL Accounts] |  Based on the Account ID specified in a [!UICONTROL Connection]. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL Buying Group] |  The buying groups, based on the Buying group ID specified in the [!UICONTROL Connection]. | 
+| [!UICONTROL Events] |  The number of rows from all event datasets in a [!UICONTROL Connection]. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL Global Accounts] |  Based on the Global Accounts ID specified in the [!UICONTROL Connection]. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL Opportunities] |  The opportunities, based on the Opportunity ID specified in the [!UICONTROL Connection]. |
+| [!UICONTROL People] | Based on the person ID specified in a [!UICONTROL Connection]. |
+| [!UICONTROL Session Ends] |  The number of events that were the last event of a session. Similar to [!UICONTROL Session Starts], it can also be used in a segment definition to segment things down to the last event of every session.<p>This component must be included in your data view for the following [calculated metric](/help/components/calc-metrics/default-calcmetrics.md) to be available in Workspace: <ul><li>Session End Rate</li></p> |
+| [!UICONTROL Session Starts] |  The number of events that were the first event of a session. When used in a segment definition (for example, '[!UICONTROL Session Starts] exists'), it segments down to just the first event of every session.<p>This component must be included in your data view for the following [calculated metric](/help/components/calc-metrics/default-calcmetrics.md) to be available in Workspace: <ul><li>Session Start Rate</li></p> |
+| [!UICONTROL Sessions] |  Based on the data view's session settings. |
+| [!UICONTROL Time Spent (seconds)] |  Sums the time between two different values for a dimension.<p>This component must be included in your data view for the following [calculated metrics](/help/components/calc-metrics/default-calcmetrics.md) to be available in Workspace: <ul><li>Time Spent Per Person</li><li>Time Spent Per Session</li></p> |

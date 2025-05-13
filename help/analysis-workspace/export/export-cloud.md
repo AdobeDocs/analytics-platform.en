@@ -45,7 +45,16 @@ Use the following process when exporting full tables to the cloud:
 
 ![The full table export process described in steps 1 through 4.](assets/export-full-table-process.png)
 
-## Export full tables from Analysis Workspace {#export-full-tables}
+## Export full tables from Analysis Workspace {#export-from-workspace}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="export-manifest"
+>title="Manifest file"
+>abstract="When enabled, a manifest file is included with any successful export delivery. The manifest file enables you to confirm that all files were delivered successfully."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 >
@@ -106,7 +115,7 @@ The filename of the compressed file is as follows, depending on whether you chos
 >
 >You choose the file format in the [!UICONTROL **File format**] field when exporting the table, as described in [Export full tables from Analysis Workspace](#export-full-tables-from-analysis-workspace).
 
-## Advantages of exporting to the cloud
+## Advantages of exporting to the cloud {#advantages}
 
 Exporting Customer Journey Analytics data to the cloud allows you to: 
 
@@ -200,7 +209,7 @@ If a non-default attribution model is being used in a report, the allocation mod
    >
    >Multi-dimensional reports are supported only when exporting data to the cloud, as described in this article.
 
-## Comparison of Full Table Export (in Customer Journey Analytics) to Data Warehouse (in Adobe Analytics)
+## Comparison of Full Table Export (in Customer Journey Analytics) to Data Warehouse (in Adobe Analytics) {#comparison}
 
 If you previously used Data Warehouse to export Adobe Analytics data, the following table can help you understand the differences between exporting full tables in Customer Journey Analytics versus exporting data with Data Warehouse in Adobe Analytics.
 

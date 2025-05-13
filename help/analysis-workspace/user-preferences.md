@@ -42,7 +42,7 @@ General preferences apply to your Customer Journey Analytics experience in the b
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_requireexperiencecloudauth"
 >title="Require Experience Cloud authentication"
->abstract="When enabled, people who are given access to a project from the Share with anyone option in Analysis Workspace must authenticate using their Experience Cloud credentials."
+>abstract="When enabled, people who are given access to a project from the **[!UICONTROL Share with anyone]** option in Analysis Workspace must authenticate using their Experience Cloud credentials."
 
 <!-- markdownlint-enable MD034 -->
 
