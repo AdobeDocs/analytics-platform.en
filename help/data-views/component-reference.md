@@ -59,3 +59,9 @@ Optional Standard components are available under **[!UICONTROL Data views]** > *
 | [!UICONTROL Weekend]/[!UICONTROL Weekday] | Time-parting dimension | Weekend or Weekday |
 
 {style="table-layout:auto"}
+
+
+>[!MORELIKETHIS]
+>
+>[Discover Deeper Customer Insights with the Event Depth Feature](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947#M576)
+>
