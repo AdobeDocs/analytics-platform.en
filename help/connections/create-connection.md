@@ -69,6 +69,11 @@ role: Admin
 >abstract="Select a range for the number of expected daily events for the entire connection."
 
 >[!CONTEXTUALHELP]
+>id="connection_change_personid"
+>title="Change Person ID"
+>abstract="A change of the Person ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Person ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
+
+>[!CONTEXTUALHELP]
 >id="connection_change_accountid"
 >title="Change Account ID"
 >abstract="A change of the Account ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Account ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
@@ -260,6 +265,7 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountfield"
 >title="Account field"
@@ -294,6 +300,11 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >abstract="Select a Buying Group ID (the unique identifier for a buying group) from the available identities that you have defined in the dataset schema in the Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_personid"
+>title="Person ID"
+>abstract="Select an Person ID (the unique identifier for a person) from the available identities that you have defined in the dataset schema in the Experience Platform."
 
 <!-- markdownlint-disable MD034 -->
 
@@ -698,7 +709,7 @@ To see a map of the relationships between the datasets that are part of your con
 
 ![Connection map](assets/connectionmap.png)
 
-This map helps you to get a better understanding of how you have defined your connection and set up the relationship between your event, profile, lookup, and summary datasets using identifiers.
+This map helps you to get a better understanding of how you have defined your connection and set up the relationship between your event, profile, lookup, and summary datasets using containers and identifiers.
 
 
 ## Use numeric fields as lookup keys and lookup values {#numeric}
