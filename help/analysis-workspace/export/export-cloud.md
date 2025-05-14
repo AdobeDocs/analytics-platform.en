@@ -45,7 +45,16 @@ Use the following process when exporting full tables to the cloud:
 
 ![The full table export process described in steps 1 through 4.](assets/export-full-table-process.png)
 
-## Export full tables from Analysis Workspace
+## Export full tables from Analysis Workspace {#export-from-workspace}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="export-manifest"
+>title="Manifest file"
+>abstract="When enabled, a manifest file is included with any successful export delivery. The manifest file enables you to confirm that all files were delivered successfully."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 >
