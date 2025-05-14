@@ -4,8 +4,6 @@ description: Add Quantum Metric collected friction events to Customer Journey An
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hidefromtoc: yes
-hide: yes
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
 ---
 # Add Quantum Metric friction events to Customer Journey Analytics
@@ -68,6 +66,8 @@ With Quantum Metric friction event data collected alongside the rest of your vis
 1. Select an existing project, or create a project.
 1. Create a [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
 1. Drag the desired dimensions and metrics to the Workspace canvas for analysis.
+
+![Friction graph](assets/friction-graph.png)
 
 Possible analysis ideas include:
 

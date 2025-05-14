@@ -27,7 +27,7 @@ In Customer Journey Analytics B2B Edition, you can select between a person-based
 
 ## Containers
 
-In Customer Journey Analytics containers are generated as part of the configuration of a connection and data view. Containers store only identifiers to facilitate quick and performant execution of functionalities like segmentation, breakdowns, and more.
+In Customer Journey Analytics containers are generated as part of the configuration of a connection and data view. Containers store groups of identifiers to facilitate quick and performant execution of functionalities like segmentation, breakdowns, and more.
 
 ### Standard containers
 
@@ -61,6 +61,24 @@ The hierarchy and relationships between the containers is predetermined. Opportu
 
 ## Datasets
 
+The Customer Journey Analytics B2B distinguishes between the following data types and datasets.
+
+| Data type | Time series | Container records | Field records |
+|---|---|---|---|
+| **Datasets** | **Event datasets**<br/>For example:<ul><li>Digital analytics</li><li>CRM events</li><li>In-person events</li><li>Call center data</li></ul> | **Profile datasets**<br/>For example:<ul><li>CRM records</li><li>AJO B2B records</li><li>CDP records</li><ul> | **Classications**<br/>For example:<ul><li>Campaign records</li><li>Marketing list records</li><li>Content metadata</li><li>Product records</li></ul> |
+| Requirements | **Time stamp**<br>Every record needs:<ul><li>Account ID</li><li>Global Account ID</li><li>Person ID</li></ul> | **Account ID**<br>Records need a container ID, like:<ul><li>Account</li><li>Person</li><li>Opportunity</li><li>Buying Group</li></ul> | **Matching key**<br>Records need an ID contained in a container or event dataset, like:<ul><li>Campaign ID</li><li>Content ID</li><li>Product ID</li></ul> |
+
+{style="table-layout:fixed"}
+
+An example account-based connection in the Customer Journey Analytics B2B Edition:
+
+![Example account-based connection](assets/b2b-datasets.svg)
+
+Customer Journey Analytics B2B Edition offers the [Connection map](/help/connections/create-connection.md#connection-map) interface to provide you with an overview of the relationships between datasets in your connection.
+
+
+Similar to Customer Journey Analytics, event-based time series data is at the core of Customer Journey Analytics B2B Edition. The main difference for an account-based connection is that you need an account id on every record in your event dataset instead of a person id. 
+
 When you configure [datasets settings](/help/connections/create-connection.md#dataset-settings) for your account-based connection in Customer Journey Analytics B2B Edition, the options available for some of the settings depend on the [dataset type](/help/connections/create-connection.md#dataset-types). For example, you have to:
 
 * Specify identifiers for each of the containers that you have configured for your event datasets.
@@ -73,11 +91,11 @@ You can define for each lookup dataset, whether you match the dataset by field o
 
 ### Match by container
 
-If a record dataset uses a match by container, the record dataset is treated as a profile dataset type and as a Profile dataset in the user interface. Use match by container on datasets that support your configured containers. For example, a Buying Group dataset. 
+If a record dataset uses a match by container, the record dataset is treated as a profile dataset type and as a Profile dataset in the user interface. Use match by container on datasets that contain container records and that support your configured containers. For example, a Buying Group dataset. 
 
 ### Match by field
 
-If a record dataset uses a match by field, the record dataset is treated as a lookup dataset type and as a Lookup dataset in the user interface. Use match by field on datasets that support additional details through lookup For example, a Marketing List Member dataset, or a Product Details dataset.
+If a record dataset uses a match by field, the record dataset is treated as a lookup dataset type and as a Lookup dataset in the user interface. Use match by field on datasets that contain additional classification details through lookup. For example, a Marketing List Member dataset, or a Product Details dataset.
  
 
 ## Report on person and account based data

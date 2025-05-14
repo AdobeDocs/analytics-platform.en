@@ -13,12 +13,14 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **May 2025** | |
+| Event Depth dimension | Documentation for the new Event Depth dimension, as part of the [standard dimensions](/help/components/dimensions/overview.md#standard-dimensions) for a data view. |
 | **April 2025**| |
 | Increased full table export limits | Changed the [number of columns](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/export/export-cloud#comparison-of-full-table-export-in-customer-journey-analytics-to-data-warehouse-in-adobe-analytics) customers can use with full table export from 5 dimensions and 5 metrics to 10 dimensions and 10 metrics. |
 | Connections | Reworked and updated the Customer Journey Connections documentation for upcoming Customer Journey B2B Edition. | 
 | Product analysis use case | Added [Product analysis in Customer Journey Analytics](/help/use-cases/product-analysis.md). |
 | Shared metrics & dimensions | Added documentation for the [Shared metrics & dimensions](/help/data-views/shared-metrics-dimensions/smd-overview.md) feature. |
-| Report Builder | Reviewed and updated the [Report Builder](/help/report-builder/report-buider-overview.md) documentation. |
+| Report Builder | Reviewed and updated the [Report Builder](/help/report-builder/rb-overview.md) documentation. |
 | View and manage usage | Reworked the documentation on how to [view](/help/connections/manage-connections.md#usage) and [manage](/help/technotes/estimate-usage.md) Customer Journey Analytics usage |
 | Adobe Content Analytics | [Content Analytics](/help/content-analytics/content-analytics.md) allows you to quickly and easily investigate large volumes of content data to uncover trends, spot anomalies, identify content fatigue, and gain insights from content exposure. |
 | Updated XDM fields for collecting Streaming Media data into Adobe Experience Platform | When collecting Streaming Media data into Adobe Experience Platform, the XDM field paths shown under the heading of "XDM Field Path" of the Streaming Media parameters documentation should no longer be used. These field paths are found on the following pages and are marked as "Deprecated": [Audio and video parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters), [Ad parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/ad-parameters), [Chapter parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters), [Player state parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/player-state-parameters), and [Quality parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/quality-parameters). |
@@ -260,7 +262,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | **November 2021** | |
 | November 2021 | Updated documentation for [[!UICONTROL Records skipped]](/help/connections/manage-connections.md) on the Connections Details page. |
 | **October 2021** | |
-| October 2021 | Documentation for [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/report-buider-overview.html#) in Customer Journey Analytics. |
+| October 2021 | Documentation for [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/rb-overview.html#) in Customer Journey Analytics. |
 | October 2021 | Customer Journey Analytics [Audit Log](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) API documentation |
 | October 2021 | Documented [Visualizations for Analytics dashboards](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#apply-visualizations) |
 | October 2021 | Doc for rolling window for [!UICONTROL Connection] [data retention](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#set-rolling-window-for-connection-data-retention). |

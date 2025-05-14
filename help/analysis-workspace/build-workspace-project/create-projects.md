@@ -7,15 +7,6 @@ exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 ---
 # Create projects {#create-projects}
 
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_project_countrepeatinstances"
->title="Count repeat instances"
->abstract="Specifies whether repeat instances are counted in reports.<br/><br/>Note: this setting does not apply to Flow or Fallout visualizations."
-
-<!-- markdownlint-enable MD034 -->
-
 
 [Projects](/help/analysis-workspace/build-workspace-project/freeform-overview.md) in Analysis Workspace allow you to create and view business-critical analyses.  These analyses can be shared with stakeholders inside or outside your organization. 
 
@@ -50,23 +41,21 @@ Now that you have created a Blank Workspace project, ensure you are familiar wit
 
 ## Project Info & Settings {#project-info-settings}
 
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="workspace_project_countrepeatinstances"
+>title="Count repeat instances"
+>abstract="Specifies whether repeat instances are counted in reports.<br/><br/>Note: this setting does not apply to Flow or Fallout visualizations."
 
 >[!CONTEXTUALHELP]
 >id="workspace_project_repeatinstances"
 >title="Count repeat instances"
 >abstract="Specifies whether repeat instances are counted in reports.<br/>Note: this setting does not apply to Flow or Fallout visualizations."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_project_commenting"
 >title="Allow commenting"
 >abstract="When enabled, a comments area is available in the right rail of the project in Analysis Workspace."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Project settings provides project-level information on the currently active project.
@@ -86,14 +75,7 @@ Settings include:
 | Show annotations | Specify whether annotations are shown for this project or not. |
 |  [Project color palette](/help/analysis-workspace/build-workspace-project/color-palettes.md)  | You can change the categorical color palette used in Workspace, by choosing from out-of-the-box palettes that have been optimized for color blindness, or by specifying your custom palette. This feature affects many things in Workspace, including most visualizations.  |
 | [View Density](/help/analysis-workspace/build-workspace-project/view-density.md) | Lets you see more data on the screen by reducing the vertical padding of the left panel, freeform tables and cohort tables. |
-
-<!--
-
-Add this to the table above - exchange - for pipe: (End of April, 2025 when project commenting is GA)
-
-Allow commenting - When this option is enabled, a comments area is available in the right rail of the project in Analysis Workspace. For more information, see [Add and manage comments in projects](/help/analysis-workspace/build-workspace-project/comment-projects.md). 
-
--->
+| Allow commenting | **Note:** This functionality is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md). <p>When this option is enabled, a comments area is available in the right rail of the project in Analysis Workspace. For more information, see [Add and manage comments in projects](/help/analysis-workspace/build-workspace-project/comment-projects.md).</p>  |
 
 
 

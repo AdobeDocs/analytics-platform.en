@@ -42,6 +42,10 @@ Product growth hinges on actionable top-of-funnel insights that attract new user
 * Acquisition tracks new users coming to your product, including how they arrive and which efforts are most or least effective.
 * Activation monitors new users who engage with your first value event, defined according to your specific goals.
 
+![Active growth](/help/guided-analysis/assets/active.png)
+
+![Engagement analysis](/help/guided-analysis/assets/feature-matrix.png)
+
 The following capabilities in Customer Journey Analytics enable you to measure both acquisition and activation effectively:
 
 * [Guided analysis​: Active growth](/help/guided-analysis/types/active-growth.md)
@@ -71,6 +75,8 @@ The following capabilities in Customer Journey Analytics help you track product 
 
 Retention measures how many users continue to engage with the product after initial acquisition and activation. High-performing products maintain a stable, loyal user base by maximizing interaction with the features that most strongly correlate with continued use. A retained user returns and interacts with the product over time, while a churned user does not. Product teams track retention to pinpoint the features that drive ongoing engagement, and design interventions that shift churned users toward retained user behavior.
 
+![Retention analysis](/help/guided-analysis/assets/retention.png)
+
 The following capabilities in Customer Journey Analytics help you track retention and churn effectively:
 
 * [Guided analysis: Retention](/help/guided-analysis/types/retention.md)​
@@ -93,6 +99,8 @@ The following capabilities within Experience Cloud enable you to act on insights
 ## Share insights to the organization​
 
 Communicate key findings across teams to align efforts, foster collaboration, and ensure everyone works toward shared product and business goals.
+
+![Guided Analysis in Workspace](assets/guided-analysis-workspace.png)
 
 The following capabilities in Customer Journey Analytics help you share insights effectively:
 

@@ -8,111 +8,85 @@ role: Admin
 ---
 # Create or edit a connection {#create-or-edit-a-connection}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsadded"
 >title="Records added"
 >abstract="The number of records (rows) added to a Connection during the selected time interval for the selected datasets."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsskipped"
 >title="Records skipped"
 >abstract="The number of records (rows) skipped during data transfer for a Connection during the selected time interval for the selected datasets."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsdeleted"
 >title="Records deleted"
 >abstract="The number of records (rows) removed from a Connection during the selected time interval for the selected datasets."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_lastadded"
 >title="Last added"
 >abstract="The timestamp of the latest batch from any dataset transferred to a Connection."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_enablerollingdatawindow"
 >title="Enable rolling data window"
 >abstract="Define data retention as a rolling window in months at a connection level."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_averagenumberofdailyuses"
 >title="Average number of daily uses"
 >abstract="Select a range for the number of expected daily events for the entire connection."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connections_recordsadded"
 >title="Records added"
 >abstract="The number of records (rows) added to a Connection during the selected time interval for the selected datasets."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_recordsskipped"
 >title="Records skipped"
 >abstract="The number of records (rows) skipped during data transfer for a Connection during the selected time interval for the selected datasets."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connections_recordsdeleted"
 >title="Records deleted"
 >abstract="The number of records (rows) removed from a Connection during the selected time interval for the selected datasets"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connection_lastadded"
 >title="Last added"
 >abstract="The timestamp of the latest batch from any dataset transferred to a Connection."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_enablerollingdatawindow"
 >title="Enable rolling data window"
 >abstract="Define data retention as a rolling window in months at a connection level."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_averagenumberofdailyuses"
 >title="Average number of daily uses"
 >abstract="Select a range for the number of expected daily events for the entire connection."
+
+>[!CONTEXTUALHELP]
+>id="connection_change_accountid"
+>title="Change Account ID"
+>abstract="A change of the Account ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Account ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
+
+>[!CONTEXTUALHELP]
+>id="connection_change_globalaccountid"
+>title="Change Global Account ID"
+>abstract="A change of the Global Account ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Global Account ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
+
+>[!CONTEXTUALHELP]
+>id="connection_change_opportunityid"
+>title="Change Opportunity ID"
+>abstract="A change of the Opportunity ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Opportunity ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
+
+>[!CONTEXTUALHELP]
+>id="connection_change_buyinggroupid"
+>title="Change Buying Group ID"
+>abstract="A change of the Buying Group ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Buying Group ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
 
 
 The connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with an assistive workflow. It provides detailed dataset selection, configuration, and review experience. And allows you to specify critical information like [dataset type](#dataset-types), size, schema, dataset id, batch status, backfill status, identities, and much more, to reduce the risk of wrong connection configuration. Here is an overview of the capabilities:
@@ -326,7 +300,7 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
 >title="Matching key type"
->abstract="Select how to join: based on a match by field or match by container.<br/><br/>**[!UICONTROL Match by field]**: Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.<br/>**[!UICONTROL Match by container]**: Select a container to use to join with one of the event datasets. If this list is empty, you probably haven't configured one or more containers."
+>abstract="Select how to join: based on a match by field or match by container.<br/><br/>**[!UICONTROL Match by field]**: Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.<br/>**[!UICONTROL Match by container]**: Select a container to use to join with one of the event datasets."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -441,7 +415,7 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >[!CONTEXTUALHELP]
 >id="connection_matchingkey"
 >title="Matching key type"
->abstract="Select how to join: based on a match by field or match by container.<br/><br/>**[!UICONTROL Match by field]**: Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.<br/>**[!UICONTROL Match by container]**: Select a container to use to join with one of the event datasets. If this list is empty, you probably haven't configured one or more containers."
+>abstract="Select how to join: based on a match by field or match by container.<br/><br/>**[!UICONTROL Match by field]**: Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.<br/>**[!UICONTROL Match by container]**: Select a container to use to join with one of the event datasets."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -552,7 +526,7 @@ For an event dataset in a person-based connection, you can specify:
 
 | Setting | Description |
 | --- | --- |
-| **[!UICONTROL Person ID]** | Select a Person ID from the drop-down menu of available identities. These identities were defined in the dataset schema in Experience Platform. See [Use Identity Map as a Person ID](#id-map) for information on how to use Identity Map as a Person ID.<p>If there are no Person IDs to choose from, that means no Person IDs are defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information. <p>The value for the selected Person ID is considered to be case sensitive. For example, `abc123` and `ABC123` are two different values. |
+| **[!UICONTROL Person ID]** | Select a Person ID from the drop-down menu of available identities. These identities were defined in the dataset schema in Experience Platform. See [Use Identity Map as a Person ID](#id-map) for information on how to use Identity Map as a Person ID.<p>If there are no Person IDs to choose from, that means no Person IDs are defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information. <p>The value for the selected Person ID is considered to be case sensitive. For example, `abc123` and `ABC123` are two different values.<p>If a record doesn't contain a value for the identity you have selected as the Person ID for the event dataset, the record is skipped. |
 | **[!UICONTROL Timestamp]** | This setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. |
 | **[!UICONTROL Data source type]** | Select a type of data source. Types of data sources include: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>This field is used to survey the types of data sources in use. |
 | **[!UICONTROL Data source description]** | A description of the data source when you have selected Other as the data source type. |
@@ -568,7 +542,7 @@ For an event dataset in an account-based connection, you can specify:
 
 | Setting | Description |
 | --- | --- |
-| **[!UICONTROL Account ID]** | Select a Global Account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform. Applicable when you have added Global Account as a container to your connection. |
+| **[!UICONTROL Account ID]** | Select a Global Account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform. Applicable when you have added Global Account as a container to your connection. <p>If a record doesn't contain a value for the identity you have selected as the Account ID for the event dataset, the record is skipped. |
 | **[!UICONTROL Global Account ID]** | Select an Account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform. Applicable when you have not added Global Account as a container to your connection.|
 | **[!UICONTROL Opportunity ID]** | Select an Opportunity ID (the unique identifier for an opportunity) from the available identities defined in the dataset schema in the Experience Platform. |
 | **[!UICONTROL Buying Group ID]** | Select a Buying Group ID (the unique identifier for a buying group) from the available identities defined in the dataset schema in the Experience Platform. |
@@ -576,7 +550,6 @@ For an event dataset in an account-based connection, you can specify:
 | **[!UICONTROL Timestamp]** | This setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. |
 | **[!UICONTROL Data source type]** | Select a type of data source. Types of data sources include: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>This field is used to survey the types of data sources in use. |
 | **[!UICONTROL Data source description]** | A description of the data source when you have selected Other as the data source type. |
-
 
 #### Profile dataset
 
@@ -590,7 +563,7 @@ For a profile dataset in a person-based connection, you specify:
 
 | Setting | Description |
 | --- | --- |
-| **[!UICONTROL Person ID]** | Select a Person ID from the drop-down menu of available identities. These identities were defined in the dataset schema in Experience Platform. See [Use Identity Map as a Person ID](#id-map) for information on how to use Identity Map as a Person ID.<p>If there are no Person IDs to choose from, no Person IDs are defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information. <p>The value for the selected Person ID is considered to be case sensitive. For example, `abc123` and `ABC123` are two different values. |
+| **[!UICONTROL Person ID]** | Select a Person ID from the drop-down menu of available identities. These identities were defined in the dataset schema in Experience Platform. See [Use Identity Map as a Person ID](#id-map) for information on how to use Identity Map as a Person ID.<p>If there are no Person IDs to choose from, no Person IDs are defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information. <p>The value for the selected Person ID is considered to be case sensitive. For example, `abc123` and `ABC123` are two different values. <p>If a record doesn't contain a value for the identity you have selected as the Person ID for the profile dataset, the record is skipped. |
 | **[!UICONTROL Data source type]** | Select a type of data source. Types of data sources include: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>This field is used to survey the types of data sources in use. |
 | **[!UICONTROL Data source description]** | A description of the data source when you have selected Other as the data source type. |
 
@@ -602,7 +575,7 @@ For a profile dataset in an account-based connection, you specify:
 
 | Setting | Description |
 | --- | --- |
-| **[!UICONTROL Person ID]** | Select a Person ID from the drop-down menu of available identities. These identities were defined in the dataset schema in Experience Platform. See [Use Identity Map as a Person ID](#id-map) for information on how to use Identity Map as a Person ID.<p>If there are no Person IDs to choose from, no Person IDs are defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information. <p>The value for the selected Person ID is considered to be case sensitive. For example, `abc123` and `ABC123` are two different values. |
+| **[!UICONTROL Person ID]** | Select a Person ID from the drop-down menu of available identities. These identities were defined in the dataset schema in Experience Platform. See [Use Identity Map as a Person ID](#id-map) for information on how to use Identity Map as a Person ID.<p>If there are no Person IDs to choose from, no Person IDs are defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information. <p>The value for the selected Person ID is considered to be case sensitive. For example, `abc123` and `ABC123` are two different values. <p>If a record doesn't contain a value for the identity you have selected as the Person ID for the profile dataset, the record is skipped.|
 | **[!UICONTROL Global Account field]** | Select a global account field to support account-based reporting for the dataset from the drop-down menu of available identities. Applicable when you have added Global Account as a container to your connection.  |  
 | **[!UICONTROL Account field]** | Select an account field to support account-based reporting for the dataset from the drop-down menu of available identities. Applicable when you have not added Global Account as a container to your connection.  |  
 | **[!UICONTROL Data source type]** | Select a type of data source. Types of data sources include: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>This field is used to survey the types of data sources in use. |
@@ -620,7 +593,7 @@ For a lookup dataset in a person-based connection, you specify:
 
 | Settings | Description |
 |---|---|
-| **[!UICONTROL Key]** | The key to use for a Lookup dataset. |
+| **[!UICONTROL Key]** | The key to use for a Lookup dataset. <p>If a record doesn't contain a value for the key you have selected for the lookup dataset, the record is skipped. |
 | **[!UICONTROL Matching key]** | The matching key to join on in one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.  | 
 | **[!UICONTROL Data source type]** | Select a type of data source. Types of data sources include: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>This field is used to survey the types of data sources in use. |
 | **[!UICONTROL Data source description]** | A description of the data source when you have selected Other as the data source type. |
@@ -638,9 +611,9 @@ For a lookup dataset in an account-based connection, you can specify:
 
 | Settings | Description |
 |---|---|
-| **[!UICONTROL Key]** | The key to use for a Lookup dataset. |
+| **[!UICONTROL Key]** | The key to use for a Lookup dataset. <p>If a record doesn't contain a value for the key you have selected for the lookup dataset, the record is skipped. |
 |  **[!UICONTROL Matching key type]** | Select how to join the datasets: based on a **[!UICONTROL Match by field]** or **[!UICONTROL Match by container]**. See [Match by container of field](/help/getting-started/cja-b2b-concepts-features.md#match-by-container-or-field) for more information.|
-| **[!UICONTROL Matching key]** | The matching key to join on in one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset. <br/><br/>Based on your selected **[!UICONTROL Matching key type]**, select the appropriate value:<ul><li>**[!UICONTROL Match by field]**: ![Match by field](assets/match-by-field.png)<br/>Select a field from the **[!UICONTROL Matching key]** drop-down menu to join with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.</li><li>**[!UICONTROL Match by container]**: ![Match by container](assets/match-by-container.png)<br/>Select a container from the **[!UICONTROL Matching key]** drop-down menu to use to join with one of the event datasets. The containers you included as part of setting up the connection determine the available containers to select. If this list is empty, you probably haven't configured one or more containers.</li></ul>  |
+| **[!UICONTROL Matching key]** | The matching key to join on in one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset. <br/><br/>Based on your selected **[!UICONTROL Matching key type]**, select the appropriate value:<ul><li>**[!UICONTROL Match by field]**: ![Match by field](assets/match-by-field.png)<br/>Select a field from the **[!UICONTROL Matching key]** drop-down menu to join with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.</li><li>**[!UICONTROL Match by container]**: ![Match by container](assets/match-by-container.png)<br/>Select a container from the **[!UICONTROL Matching key]** drop-down menu to use to join with one of the event datasets. The containers you included as part of setting up the connection determine the available containers to select.</li></ul>  |
 | **[!UICONTROL Global Account field]** | The global Account ID to use for account-based reporting. | 
 
 
@@ -661,6 +634,25 @@ The specific settings for a summary dataset are:
 Each (type of dataset) has the following common settings:
 
 {{common-dataset-settings}}
+
+
+### Re-ingest data
+
+You sometimes require to re-ingest data from one or more datasets into a connection. To do so:
+
+1. For each dataset you want to re-ingest data for:
+
+   1. Change any of the following:
+
+      * An identifier (Person ID, Account ID, or other ID) for an already ingested event dataset. 
+      * A key, matching key, or matching key type (field or container) for an already ingested profile or lookup dataset.
+
+      Alternatively, you can toggle **[!UICONTROL Backfill all existing data backfill]** on the dataset.
+
+   1. **[!UICONTROL Apply]** the changes for the dataset.
+
+1. **[!UICONTROL Save]** the connection. Data is re-ingested for the specific datasets.
+
 
 
 ### Delete a dataset
