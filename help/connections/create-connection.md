@@ -227,237 +227,133 @@ In the **[!UICONTROL Connections]** > **[!UICONTROL *Name of the connection*]** 
 
 You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-a-dataset) as part of connection workflow.
 
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_primaryid"
 >title="Primary ID"
 >abstract="Select the proper primary ID for your connection: Person for a B2C scenario. Account for a B2B scenario."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_optionalcontainers"
 >title="Optional containers"
 >abstract="Select additional containers.<br/><br/>**[!UICONTROL Global account]**: enables configuration of global accounts in a connection.<br/>**[!UICONTROL Opportunity]**: enables configuration of opportunities in a connection.<br/>**[!UICONTROL Buying group]**: enables configuration of buying groups in a connection."
 
-<!-- markdownlint-enable MD034 -->
 
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connection_personid"
->title="Person ID"
->abstract="Select a person ID from the available identities defined in the dataset schema in the Experience Platform."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
 >title="Account ID"
 >abstract="Select an account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountfield"
 >title="Account field"
 >abstract="Select a field that represents the account ID (the unique identifier for an account)."
-
-<!-- markdownlint-enable MD034 -->
-
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_globalaccountid"
 >title="Global account ID"
 >abstract="Select a Global Account ID (the unique identifier for a global account) from the available identities that you have defined in the dataset schema in the Experience Platform."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_opportunityid"
 >title="Opportunity ID"
 >abstract="Select an Opportunity ID (the unique identifier for an opportunity) from the available identities that you have defined in the dataset schema in the Experience Platform."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_buyinggroupid"
 >title="Buying group ID"
 >abstract="Select a Buying Group ID (the unique identifier for a buying group) from the available identities that you have defined in the dataset schema in the Experience Platform."
 
-<!-- markdownlint-enable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_personid"
 >title="Person ID"
 >abstract="Select an Person ID (the unique identifier for a person) from the available identities that you have defined in the dataset schema in the Experience Platform."
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
 >title="Matching key type"
 >abstract="Select how to join: based on a match by field or match by container.<br/><br/>**[!UICONTROL Match by field]**: Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.<br/>**[!UICONTROL Match by container]**: Select a container to use to join with one of the event datasets."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_importnewdata"
 >title="Import new data"
 >abstract="Any new batches that get added in the Experience Platform dataset are automatically added in this connection and made available for analysis."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_datasetbackfill"
 >title="Dataset backfill"
 >abstract="This option backfills the existing (historical) data from Experience Platform for this dataset in the connection."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_transformdataset"
 >title="Transform dataset"
 >abstract="This option transforms the dataset so it can be used for person-based lookups in B2B scenarios. Once turned on, the transformation of the dataset is irreversible."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_connectionmap"
 >title="Connection map"
 >abstract="The Connection map visualizes the relationships between event, person, account and relevant lookup datasets (like opportunities, campaign members, and more)."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_primaryid"
 >title="Primary ID"
 >abstract="Select the proper primary ID for your connection: Person for a B2C scenario. Account for a B2B scenario."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connection_optionalcontainers"
 >title="Optional containers"
 >abstract="Select additional containers.<br/><br/>**[!UICONTROL Global account]**: enables configuration of global accounts in a connection.<br/>**[!UICONTROL Opportunity]**: enables configuration of opportunities in a connection.<br/>**[!UICONTROL Buying group]**: enables configuration of buying groups in a connection."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_personid"
 >title="Person ID"
 >abstract="Select a person ID from the available identities defined in the dataset schema in the Experience Platform."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connection_accountid"
 >title="Account ID"
 >abstract="Select an account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform."
 
-<!-- markdownlint-enable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"
 >title="Account field"
 >abstract="Select a field that represents the account ID (the unique identifier for an account)."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connection_globalaccountid"
 >title="Global account ID"
 >abstract="Select a Global Account ID (the unique identifier for a global account) from the available identities that you have defined in the dataset schema in the Experience Platform."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_opportunityid"
 >title="Opportunity ID"
 >abstract="Select an Opportunity ID (the unique identifier for an opportunity) from the available identities that you have defined in the dataset schema in the Experience Platform."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connection_buyinggroupid"
 >title="Buying group ID"
 >abstract="Select a Buying Group ID (the unique identifier for a buying group) from the available identities that you have defined in the dataset schema in the Experience Platform."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_matchingkey"
 >title="Matching key type"
 >abstract="Select how to join: based on a match by field or match by container.<br/><br/>**[!UICONTROL Match by field]**: Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.<br/>**[!UICONTROL Match by container]**: Select a container to use to join with one of the event datasets."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connection_importnewdata"
 >title="Import new data"
 >abstract="Any new batches that get added in the Experience Platform dataset are added automatically in this connection and made available for analysis."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_datasetbackfill"
 >title="Dataset backfill"
 >abstract="This option backfills the existing (historical) data from Experience Platform for this dataset in the connection."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connection_transformdataset"
 >title="Transform dataset"
 >abstract="This option transforms the dataset so it can be used for person-based lookups in B2B scenarios. Once turned on, the transformation of the dataset is irreversible."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connection_connectionmap"
