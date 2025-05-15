@@ -43,7 +43,7 @@ _This article documents the Map visualization in_ ![CustomerJourneyAnalytics](/h
 
 >[!ENDSHADEBOX]
 
-
+## Map overview
 
 The ![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL Map]** visualization in Analysis Workspace
 
@@ -53,6 +53,10 @@ The ![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL Map]** visualization in
 * supports PDF export, and
 * leverages WebGL for graphics display. If your graphics drivers do not support WebGL rendering, you may need to update your drivers.
 
+## Map visualization in Customer Journey Analytics vs. Adobe Analytics
+
+The map visualization in Customer Journey Analytics contains the following enhancements
+
 
 >[!BEGINSHADEBOX]
 
@@ -61,13 +65,18 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Map visualizatio
 >[!ENDSHADEBOX]
 
 
-## Use
+## Begin building a map visualization
 
-1. Add a ![Map](/help/assets/icons/Globe.svg) [!UICONTROL Map] visualization. See [Add a visualization to a panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel). You can only drag a Map visualization on top of a Freeform table.
+1. Add a blank panel to your project, select the [!UICONTROL **Visualizations**] icon in the left rail, then drag the ![Map](/help/assets/icons/Globe.svg) [!UICONTROL Map] visualization into the panel. 
+
+   Or
+
+   Add a map visualization in any of the ways described in the [Add visualizations to a panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel) section in [Visualizations overview](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 
    ![Map configuration](assets/map-configuration.png){width="50%"}
 
 1. From the drop-down lists, select a metric. Or drag in a metric from the list of metrics (including calculated metrics).
+
 1. Specify the data source that you want to draw from. This dialog appears only if you have location tracking enabled for mobile app data.
 
    | Source | Description |
@@ -81,31 +90,11 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Map visualizatio
 
    ![](assets/bubble-world-view.png)
 
-1. You can now:
+## Configure visualization settings
 
-    * **Zoom** into this map to magnify certain areas by double-clicking the map or by using your scroll wheel. The map zooms according to where you have placed your cursor. Through zoom interaction, the required dimension (country > state > city) is automatically updated, based on the zoom level.
-    * **Compare** two or more map visualizations in the same project by placing them side by side.
-    * **Show period-over-period (such as, year-over-year) comparisons**:
+To configure settings for the visualization, select the Settings icon ![Setting](/help/assets/icons/Setting.svg).
 
-        * Show negative numbers: For example, if you are plotting a year-over-year metric, the map can show -33% over New York.
-        * With metrics that are of type *percent*, clustering averages the percentages together.
-        * A green/red color scheme: Positive/Negative
-
-    * **Rotate** the map in 2D or 3D by holding the [!UICONTROL Ctrl] key and moving the map.
-    
-    * **Toggle** to a different view, such as the heat map, using the [settings](/help/analyze/analysis-workspace/visualizations/map-visualization.md#section_5F89C620A6AA42BC8E0955478B3A427E) described below. Note that the bubble view is the default setting.
-
-1. **Save** the project to save all map settings (coordinates, zoom, rotation).
-1. The freeform table, below the visualization, can be populated by dragging in location dimensions and metrics from the left rail.
-
-## Configure
-
-To reconfigure the Map visualization, select ![Edit](/help/assets/icons/Edit.svg).
-
-
-## Settings
-
-To define settings for the visualization, select ![Setting](/help/assets/icons/Setting.svg).
+The following options are available:
 
 | Setting | Description |
 |--- |--- |
@@ -117,3 +106,7 @@ To define settings for the visualization, select ![Setting](/help/assets/icons/S
 |[!UICONTROL Map style]|You can choose from Basic, Streets, Bright, Light, Dark, and Satellite.|
 |**[!UICONTROL Cluster Radius]**|Groups data points together that are within the specified number of pixels. The default is 50.|
 |**[!UICONTROL Custom Max Value]**|Lets you alter the threshold for the max value for the map - adjusting this value adjusts the scale for the bubbles/heatmap values (color and size) relative to the custom max value set.|
+
+## Reconfigure the visualization
+
+To reconfigure the map visualization, select ![Edit](/help/assets/icons/Edit.svg).
