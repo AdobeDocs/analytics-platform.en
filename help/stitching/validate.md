@@ -37,42 +37,68 @@ Furthermore, you need to add two stitching metrics that are based on the presenc
 1. In a similar way, add the previously created Stitched Namespace dimension as a metric, provide a name. Additionaly specify an include filter to only consider values of the namespace you are trying to elevate rows of data to.  In the example, since events are being elevated to the Email namespace, specify Equals email.
 
 
-Stitched dimensions
-With both of these dimensions added to the Data View, let's add them to a freeform table to check the data that each has.
+## Stitched dimensions
+
+With both of these dimensions added to the Data View, use a Freeform table in Analysis Workspace to check the data that each dimension has.
  
-For the Stitched Namespace dimension, you will typically see two values for each dataset, one represents when the stitching process had to use the fallback method while the other line item shows events associated with the desired identity namespace, in this case ECID and email.
+For the Stitched Namespace dimension, you will typically see two rows for each dataset, one row represents when the stitching process had to use the fallback method (ECID) while the other row shows events associated with the desired identity namespace (Email).
+
+![Stiched namespace dimension](assets/stiched-namespace-dimension.png)
+
+For the Stitched ID dimension, you see  raw values that are coming from the events. In this table you  see values oscillate between the persistent id and the desired person id.
+
+![Stitched ID dimension](assets/stitched-id-dimension.png)
 
 
-Device or Person-Centric Reporting
-When creating a Connection, we have a choice to make, what field/identity will be used for my person Id. For instance, on a web dataset if you choose a device id as the person id, then you are creating device centric reports and lose the ability to join this data with other offline channels. On the other hand, if you select just the field/identity where you have a cross-channel identity like an email you will lose out on any unauthenticated events. To understand this impact, it is important to see how much of your traffic is unauthenticated and how much of it is authenticated.
+## Device or Person-Centric Reporting
 
-First, we need to create a calculated metric "Unauthenticated events over total" with the formula of the following:
+When you create a Connection, you have to define what field or identity is used for my person Id. For instance, on a web dataset, if you choose a device id as the Person ID, then you are creating device centric reports and lose the ability to join this data with other offline channels. If you select a cross-channel field or identity, for example email, you will lose out on any unauthenticated events. To understand this impact, it is important to understand how much of your traffic is unauthenticated and how much of it is authenticated.
 
-Now with this new metric and the metric we created from a dimension in the " Stitching Validation Data View Prerequisites" section we can create some summary visualizations showing the number of events in the dataset that are unauthenticated and those that are authenticated
+1. Create a calculated metric **[!UICONTROL Unauthenticated events over total]** defined in the rule builder like below:
 
-Stitching Identification Rates
-Now let's look at how we measure the identification performance before and after Stitching by creating four calculated metrics.
-1.    First, we need to create a calculated metric that lets us look at the number of events that have an identity present over the total. Here is the definition (email set events divided by total events in the reporting range):
-1.    
-1.    2.    The next calculated metric we need to create lets us look at the number of events where the Stitched Namespace is set to the desired identity. When we first set up our Data View, we created a metric from the dimension of Stitched Namespace. With this metric we added a filter only counting times when an event is set with "email", since in this example that is what we are trying to elevate rows of data to. Using this earlier created metric and dividing that over all the events we get a sense of what percent of the data has the desired identity on them. Here is the definition:
-1.    3.    The next calculated metric we need to create lets us look at the shows the raw percentage change between the current identification rate and the stitched one. Here is the definition:
-1.    4.    Lastly, we need to create a calculated metric that lets us look at the lift between the current identification rate and the stitched one. Here is the definition:
+   ![Unauthenticated events over total](assets/unauthenticated-events-over-total.png)
+
+1. Use the **[!UICONTROL Unauthenticated events over total]** calculated metric, together with the metric you created from a dimension in the [Data view Prerequisites](#data-view-prerequisites) section, To create a summary visualizations that show the number of events in the dataset that are unauthenticated and are authenticated.
+
+![Identification details](assets/identification-details.png)
 
 
 
-Conclusion
-Putting it all together in an Analysis Workspace Freeform table you can start to see the impact and value that Stitching provides inclusive of:
-*    Current Authentication Rate – The baseline of the number of events that already had the correct person id over the total number of events.
-*    Stitched Authentication Rate - The new number of events that have the correct person id over the total number of events.
-*    Percent Increase – The raw percentage increase from the stitched authentication rate minus the baseline Current Authentication Rate.
-*    Lift – The percent change over the baseline Current Authentication Rate.
+## Stitching identification rates
 
-Key takeaways from constructing this analysis:
+You want to measure the identification performance before and after stitching. To do this, create four calculated metrics:
 
-*    Provides a comprehensive custom view of authentication effectiveness by comparing current vs. stitched rates
-*    Enables clear measurement of improvement through percentage increases and lift metrics
-*    Helps identify the true impact of implementing stitching on user authentication
-*    Creates a standardized way to communicate authentication performance across teams
-*    Allows for data-driven decisions about authentication strategy and optimization
+1. A calculated metric that calculates the number of events that have an identity over the total number of events.
+   ![Emails set divided by events](assets/email-set-divided-by-events.png)
 
-These metrics together give stakeholders a complete picture of how CJA Stitching affects authentication success rates and overall CJA Person identification performance.
+1. A calculated metric that calculates the number of events where the Stitched Namespace is set to the desired identity over the total number of events. When you set up our Data View, you created a metric from the  Stitched Namespace dimension. To this metric you added a filter to only count when an event is set with email. In your example the namespace you use to elevate rows of data to. Our calculated metric provides an idnciation of what percentage of the data has the desired identity.
+   ![Email stitched namespace divided by events](assets/email-stitched-namespace-divided-by-events.png)
+
+1. A calculated metric that calculates the raw percentage change between the current identification rate and the stitched one.
+   ![Email stiched namespace divided by events minus emails set divided by events](assets/email-stitched-namespace-events-minus-emails-set-events.png)
+
+1. A calculated metric that calculates the lift between the current identification rate and the stitched identification rate.
+   ![Lift between current identifiation rate and stitched identification rate](assets/lift-current-identification-stiched-identification.png)
+
+
+
+## Conclusion
+
+If you combine all data in an Analysis Workspace Freeform table you can start to see the impact and value that Stitching provides inclusive of:
+
+* Current authentication rate: The baseline of the number of events that already had the correct person id over the total number of events.
+* Stitched authentication rate: The new number of events that have the correct person id over the total number of events.
+* Percent increase: The raw percentage increase from the stitched authentication rate minus the baseline Current authentication rate.
+* Lift: The percent change over the baseline Current authentication rate.
+
+![Identification performance](assets/identification-performance-freeform-table.png)
+
+The key takeaways from this analysis:
+
+* Provides a comprehensive custom view of authentication effectiveness by comparing current versus stitched rates.
+* Enables clear measurement of the improvement through percentage increases and lift metrics.
+* Helps identify the true impact of implementing stitching on user authentication.
+* Creates a standardized way to communicate authentication performance across teams.
+* Allows for data-driven decisions about authentication strategy and optimization.
+
+These metrics together give stakeholders a complete picture of how Customer Journey Analytics stitching affects authentication success rates and overall person identification performance.
