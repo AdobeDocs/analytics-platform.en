@@ -81,31 +81,39 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Map visualizatio
 
    | Source | Description |
    | --- | --- |
-   | **[!UICONTROL Mobile Lat/Long]** | This option represents mobile app data. You see this option only if you have enabled it for your report suite in [!UICONTROL Analytics] > [!UICONTROL Admin] > [!UICONTROL Report Suites] > (select report suite) > [!UICONTROL Edit Settings] >  [!UICONTROL Mobile Management] > [!UICONTROL Enable Location Tracking]. This settings is the default (if location tracking is enabled). |
+   | **[!UICONTROL Mobile Lat/Long]** | This option represents mobile app data. You see this option only if you have enabled it for your report suite in [!UICONTROL Analytics] > [!UICONTROL Admin] > [!UICONTROL Report Suites] > (select report suite) > [!UICONTROL Edit Settings] >  [!UICONTROL Mobile Management] > [!UICONTROL Enable Location Tracking]. <p>This settings is selected by default if location tracking is enabled.</p> |
    | **[!UICONTROL Geographic Dimension]** | This option represents geo segmentation data about visitor location based on the visitor's IP address. This data gets transformed into [!UICONTROL Country], [!UICONTROL Region], and [!UICONTROL City]. Note that it does not go to the DMA or Zip Code level. Almost all report suites have this dimension enabled. If yours does not, contact Adobe Customer Care to have geographic reports enabled. |
 
 1. Select **[!UICONTROL Build]**.
 
    A world map visualization with bubbles is generated.
 
-   ![](assets/bubble-world-view.png)
+   ![](assets/map-visualization.png)
+
+1. (Optional) Continue with [Configure visualization settings](#configure-visualization-settings).
 
 ## Configure visualization settings
 
-To configure settings for the visualization, select the Settings icon ![Setting](/help/assets/icons/Setting.svg).
+To configure settings for the map visualization:
 
-The following options are available:
+1. In Analysis Workspace, open an existing map visualization, or [begin building a new one](#begin-building-a-map-visualization).
 
-| Setting | Description |
-|--- |--- |
-| **[!UICONTROL Map type]** | |
-|[!UICONTROL Bubbles]|Plots events using bubbles. A bubble chart is a multi-variable graph that is a cross between a scatterplot and a proportional area chart. This view is the default.|
-|Heatmap|Plots events using a heatmap. A heatmap is a graphical representation of data where the individual values contained in a matrix are represented as colors.|
-| **[!UICONTROL Styles]** | |
-|[!UICONTROL Color theme]|Shows the color scheme for the heat map and bubbles. You can choose among Coral, Reds, Greens or Blues. The default is Coral.|
-|[!UICONTROL Map style]|You can choose from Basic, Streets, Bright, Light, Dark, and Satellite.|
-|**[!UICONTROL Cluster Radius]**|Groups data points together that are within the specified number of pixels. The default is 50.|
-|**[!UICONTROL Custom Max Value]**|Lets you alter the threshold for the max value for the map - adjusting this value adjusts the scale for the bubbles/heatmap values (color and size) relative to the custom max value set.|
+1. Hover over the map visualization, then select the Settings icon ![Setting](/help/assets/icons/Setting.svg) in the visualization header.
+
+   The following options are available:
+
+   | Section | Setting | Description |
+   | --- |--- |--- |
+   | **[!UICONTROL Map type]** | | |
+   | |**[!UICONTROL Bubbles]**|Plots events using bubbles. A bubble chart is a multi-variable graph that is a cross between a scatterplot and a proportional area chart. This view is the default.|
+   | |**[!UICONTROL Heatmap]**|Plots events using a heatmap. A heatmap is a graphical representation of data where the individual values contained in a matrix are represented as colors.|
+   | **[!UICONTROL Styles]** | | |
+   | |**[!UICONTROL Color theme]**|Shows the color scheme for the heat map and bubbles. You can choose among Coral, Reds, Greens or Blues. The default is Coral.|
+   | |**[!UICONTROL Map style]**|You can choose from Basic, Streets, Bright, Light, Dark, and Satellite.|
+   | | **[!UICONTROL Cluster radius]**|Groups data points together that are within the specified number of pixels. The default is 50.|
+   | | **[!UICONTROL Custom max value]**|Lets you alter the threshold for the max value for the map. Adjusting this value adjusts the scale for the bubbles or heatmap values (color and size) relative to the custom max value that you set.|
+   | | **[!UICONTROL Show annotations]** | Show the annotations made for this visualization. |
+   | | **[!UICONTROL Hide title]** | Hide the title of the visualization.  |
 
 ## Reconfigure the visualization
 
