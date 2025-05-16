@@ -60,7 +60,7 @@ The map visualization in Customer Journey Analytics differs from the map visuali
 
 | Feature | Customer Journey Analytics | Adobe Analytics |
 |---------|----------|---------|
-| Data source | Use any segment available in your data view as your data source.<p>For datasets with deep precision, you can configure the dimensions in your data view to show up to 5 decimal places. This allows the map visualization to be accurate within a single meter. For more information, see </p>  | Provides the following options: <ul><li>Mobile lat/long</li><li>Geographic Dimension<br/>Represents geo segmentation data about visitor location based on the visitor's IP address. This data gets transformed into [!UICONTROL Country], [!UICONTROL Region], and [!UICONTROL City]. Note that it does not go to the DMA or Zip Code level.</li></ul> |
+| Data source | Use any segment available in your data view as your data source.<p>For datasets with deep precision, you can configure the dimensions in your data view to show up to 5 decimal places. This allows the map visualization to be accurate within a single meter. For more information, see [Configure precise locations for dimensions](#configure-precise-locations-for-dimensions).</p>  | Provides the following options: <ul><li>Mobile lat/long</li><li>Geographic Dimension<br/>Represents geo segmentation data about visitor location based on the visitor's IP address. This data gets transformed into [!UICONTROL Country], [!UICONTROL Region], and [!UICONTROL City]. Note that it does not go to the DMA or Zip Code level.</li></ul> |
 | A2 | B2 | C2 |
 | A3 | B3 | C3 |
 
@@ -125,8 +125,44 @@ To configure settings for the map visualization:
 
 If you have custom datasets with deep precision, you can configure the map visualization to achieve location accuracy within a single meter. 
 
-1. In Customer Journey Analytics, go to the data view that 
+1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Data views]**.
 
-If you have custom datasets with deep precision, you can configure the dimensions in your data view to show up to 5 decimal places when they are referenced within reports in Analysis Workspace. achieve location accuracy within a single meter. 
+1. Select the data view that contains the dimensions that you want to configure to use more precise locations.
+
+1. In the data view, select the **[!UICONTROL Components]** tab.
+
+1. Select the dimension that you want to configure.
+
+1. Configure the level of precision for the dimension:
+
+   1. Expand the **[!UICONTROL Format]** section in the right rail.
+
+      ![dimension item selected with format section expanded](assets/map-dimension-format.png)
+
+   1. In the **[!UICONTROL Decimal places]** field, change the number of decimals to reflect the desired level of precision: 
+
+      * **0:** Precise to the country level in the map visualization. Shows 0 decimal places in Worspace reports. 
+
+      * **1:** Precise to the county or province level in the map visualization.  Shows 1 decimal place in Worspace reports. 
+   
+      * **2:** Precise to the town or zip code level in the map visualization. Shows 2 decimal places in Worspace reports. 
+
+        This is the default selection.
+
+      * **3:** Precise to the ____ level in the map visualization. Shows 3 decimal places in Worspace reports. 
+
+      * **4:** Precise to the ___ level in the map visualization. Shows 4 decimal places in Worspace reports. 
+
+      * **5:** Precise to a single meter in the map visualization. Shows 2 decimal places in Worspace reports. 
+
+1. Configure latitude and longitude context labels for the dimension:
+
+   1. With the dimension that you want to configure still selected, expand the **[!UICONTROL Component settings]** section in the right rail.
+
+   1. In the **[!UICONTROL Context labels]** field, begin typing `Latitude`, then select it when it appears in the drop-down menu.
+
+      ![Latitude context label](assets/map-dimension-latitude.png)
+
+   1. In the **[!UICONTROL Context labels]** field, begin typing `Longitude`, then select it when it appears in the drop-down menu. 
 
 
