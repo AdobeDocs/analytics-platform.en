@@ -35,7 +35,7 @@ Using Data Insights Agent to answer data-centric questions in Analysis Workspace
 
 The following parameters govern access to Data Insights Agent in Customer Journey Analytics:
 
-* **Solution access**: Data Insights Agent is available for Customer Journey Analytics Prime and Ultimate customers. It is not available in Adobe Analytics. 
+* **Solution access**: Access to Data Insights Agent is available to Customer Journey Analytics customers through a trial offer until November 30, 2025. It is not available in Adobe Analytics. 
 
 * **Contractual access**: If you are not able to use Data Insights Agent in the AI Assistant, please contact your organization's administrator or Adobe account team. Before your organization can use Data Insights Agent, you must agree to certain legal terms related to generative AI.
 
