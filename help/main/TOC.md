@@ -405,6 +405,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Graph based stitching](/help/stitching/gbs.md)
   + [Use stitching](/help/stitching/use-stitching.md)
   + [Create and manage stitched datasets](/help/stitching/stitching-ui.md)
+  + [Validate stitching](/help/stitching/validate.md)
   + [Frequently Asked Questions](/help/stitching/faq.md)  
 
 + Adobe integrations {#integrations}
