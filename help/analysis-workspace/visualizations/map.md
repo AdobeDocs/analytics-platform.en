@@ -55,7 +55,14 @@ The ![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL Map]** visualization in
 
 ## Map visualization in Customer Journey Analytics vs. Adobe Analytics
 
-The map visualization in Customer Journey Analytics contains the following enhancements
+The map visualization in Customer Journey Analytics differs from the map visualization in Adobe Analytics in the following ways:
+
+
+| Feature | Customer Journey Analytics | Adobe Analytics |
+|---------|----------|---------|
+| Data source | Use any segment available in your data view as your data source.<p>For datasets with deep precision, you can configure the dimensions in your data view to show up to 5 decimal places. This allows the map visualization to be accurate within a single meter. For more information, see </p>  | Provides the following options: <ul><li>Mobile lat/long</li><li>Geographic Dimension<br/>Represents geo segmentation data about visitor location based on the visitor's IP address. This data gets transformed into [!UICONTROL Country], [!UICONTROL Region], and [!UICONTROL City]. Note that it does not go to the DMA or Zip Code level.</li></ul> |
+| A2 | B2 | C2 |
+| A3 | B3 | C3 |
 
 
 >[!BEGINSHADEBOX]
@@ -75,14 +82,13 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Map visualizatio
 
    ![Map configuration](assets/map-configuration.png){width="50%"}
 
-1. From the drop-down lists, select a metric. Or drag in a metric from the list of metrics (including calculated metrics).
+1. Specify the following basic information to configure the map visualization:
 
-1. Specify the data source that you want to draw from. This dialog appears only if you have location tracking enabled for mobile app data.
+   * Metric: In the metric drop-down list, select a metric. Or drag in a metric from the list of metrics (including calculated metrics).
 
-   | Source | Description |
-   | --- | --- |
-   | **[!UICONTROL Mobile Lat/Long]** | This option represents mobile app data. You see this option only if you have enabled it for your report suite in [!UICONTROL Analytics] > [!UICONTROL Admin] > [!UICONTROL Report Suites] > (select report suite) > [!UICONTROL Edit Settings] >  [!UICONTROL Mobile Management] > [!UICONTROL Enable Location Tracking]. <p>This settings is selected by default if location tracking is enabled.</p> |
-   | **[!UICONTROL Geographic Dimension]** | This option represents geo segmentation data about visitor location based on the visitor's IP address. This data gets transformed into [!UICONTROL Country], [!UICONTROL Region], and [!UICONTROL City]. Note that it does not go to the DMA or Zip Code level. Almost all report suites have this dimension enabled. If yours does not, contact Adobe Customer Care to have geographic reports enabled. |
+   * Segment: In the segment drop-down list, select a segment. Or drag in a segment from the list of segments.
+
+   You can update this information after the visualization is built by selecting the edit icon ![Edit](/help/assets/icons/Edit.svg) in the visualization header.
 
 1. Select **[!UICONTROL Build]**.
 
@@ -115,6 +121,12 @@ To configure settings for the map visualization:
    | | **[!UICONTROL Show annotations]** | Show the annotations made for this visualization. |
    | | **[!UICONTROL Hide title]** | Hide the title of the visualization.  |
 
-## Reconfigure the visualization
+## Configure precise locations for dimensions
 
-To reconfigure the map visualization, select ![Edit](/help/assets/icons/Edit.svg).
+If you have custom datasets with deep precision, you can configure the map visualization to achieve location accuracy within a single meter. 
+
+1. In Customer Journey Analytics, go to the data view that 
+
+If you have custom datasets with deep precision, you can configure the dimensions in your data view to show up to 5 decimal places when they are referenced within reports in Analysis Workspace. achieve location accuracy within a single meter. 
+
+
