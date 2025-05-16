@@ -135,25 +135,25 @@ If you have custom datasets with deep precision, you can configure the map visua
 
 1. Configure the level of precision for the dimension:
 
-   1. Expand the **[!UICONTROL Format]** section in the right rail.
+   1. With the dimension that you want to configure still selected, expand the **[!UICONTROL Format]** section in the right rail.
 
       ![dimension item selected with format section expanded](assets/map-dimension-format.png)
 
    1. In the **[!UICONTROL Decimal places]** field, change the number of decimals to reflect the desired level of precision: 
 
-      * **0:** Precise to the country level in the map visualization. Shows 0 decimal places in Worspace reports. 
+      * **0:** Precise to the large region or country level in the map visualization. Shows 0 decimal places in Worspace reports. 
 
-      * **1:** Precise to the county or province level in the map visualization.  Shows 1 decimal place in Worspace reports. 
+      * **1:** Precise to the region or large city level in the map visualization.  Shows 1 decimal place in Worspace reports. 
    
       * **2:** Precise to the town or zip code level in the map visualization. Shows 2 decimal places in Worspace reports. 
 
         This is the default selection.
 
-      * **3:** Precise to the ____ level in the map visualization. Shows 3 decimal places in Worspace reports. 
+      * **3:** Precise to the very small town or neighborhood level in the map visualization. Shows 3 decimal places in Worspace reports. 
 
-      * **4:** Precise to the ___ level in the map visualization. Shows 4 decimal places in Worspace reports. 
+      * **4:** Precise to a specific parcel of land or building level in the map visualization. Shows 4 decimal places in Worspace reports. 
 
-      * **5:** Precise to a single meter in the map visualization. Shows 2 decimal places in Worspace reports. 
+      * **5:** Precise to a single meter in the map visualization. Shows 5 decimal places in Worspace reports. 
 
 1. Configure latitude and longitude context labels for the dimension:
 
