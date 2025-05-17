@@ -6,6 +6,7 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 hide: yes
 hidefromtoc: yes
+exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
 ---
 # Validate stitching
 
