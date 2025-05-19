@@ -68,7 +68,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Map visualizatio
 
 ## Begin building a map visualization
 
-1. Add a blank panel to your project, select the [!UICONTROL **Visualizations**] icon in the left rail, then drag the ![Map](/help/assets/icons/Globe.svg) [!UICONTROL Map] visualization into the panel. 
+1. Select the [!UICONTROL **Visualizations**] icon in the left rail, then drag the **[!UICONTROL Map]** visualization ![Map](/help/assets/icons/Globe.svg) into a panel that contains a freeform table. 
 
    Or
 
@@ -78,9 +78,9 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Map visualizatio
 
 1. Specify the following basic information to configure the map visualization:
 
-   * Metric: In the metric drop-down list, select a metric. Or drag in a metric from the list of metrics (including calculated metrics).
+   * Add a metric: In the metric drop-down list, select a metric. Or drag in a metric from the list of metrics (including calculated metrics).
 
-   * Segment: In the segment drop-down list, select a segment. Or drag in a segment from the list of segments.
+   * Add a segment: In the segment drop-down list, select a segment. Or drag in a segment from the list of segments.
 
    You can update this information after the visualization is built by selecting the edit icon ![Edit](/help/assets/icons/Edit.svg) in the visualization header.
 
@@ -90,11 +90,54 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Map visualizatio
 
    ![](assets/map-visualization.png)
 
-1. (Optional) Continue with [Configure visualization settings](#configure-visualization-settings).
+1. (Optional) Continue with [View a map visualization](#view-a-map-visualization) and [Configure visualization settings](#configure-visualization-settings).
 
 ## View a map visualization
 
+1. If you haven't already, build a map visualization as described in [Begin building a map visualization](#begin-building-a-map-visualization).
 
+1. In the map visualization in Analysis Workspace, do any of the following:
+
+    * **Zoom in**: You can zoom in on the map to magnify certain areas in any of the following ways:
+    
+      * Double-click the map with your mouse.
+      
+      * Use your mouse scroll wheel or similar action on your trackpad.  
+      
+      * Select the plus icon ![zoom-in icon](assets/map-zoomin-icon.png) on the map visualization. 
+      
+      The map zooms accordingly. The required dimension (country > state > city) is automatically updated, based on the zoom level.
+
+    * **Zoom out**: You can zoom out on the map to view larger areas in any of the following ways:
+    
+      * Hold the Shift key and double-click the map with your mouse.
+      
+      * Use your mouse scroll wheel or similar action on your trackpad.  
+      
+      * Select the minus icon ![zoom-out icon](assets/map-zoomout-icon.png) on the map visualization. 
+      
+      The map zooms accordingly. The required dimension (country > state > city) is automatically updated, based on the zoom level.
+
+    * **Rotate**: You can rotate the map in 2D or 3D by holding the [!UICONTROL Ctrl] key while draggin the map with your mouse.
+
+      To reset the map to its original north alignment, select the compass icon ![compass icon](assets/map-compass-icon.png).
+
+    * **Area selection**:
+
+    * **Compare**: You can compare two or more map visualizations in the same project by placing them side by side.
+
+    * **Show period-over-period comparisons (such as year-over-year)**:
+
+        * Show negative numbers. 
+        
+          For example, if you are plotting a year-over-year metric, the map can show -33% over New York.
+        * With metrics that are of type *percent*, clustering averages the percentages together.
+        * A green and red color scheme indicates positive and negative.
+
+    * **Additional visualization settings**: Select the Settings icon ![Setting](/help/assets/icons/Setting.svg) in the visualization header to view additional settings for the map visualization. For more information, see [Configure visualization settings](#configure-visualization-settings).
+
+1. **Save** the project to save all map settings (coordinates, zoom, rotation).
+1. The freeform table below the visualization can be populated by dragging in location dimensions and metrics from the left rail.
 
 ## Configure visualization settings
 
