@@ -6,5 +6,3 @@ feature: Use Cases
 role: User
 ---
 # Optimize account marketing
-
-
