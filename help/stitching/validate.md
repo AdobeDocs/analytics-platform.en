@@ -111,3 +111,4 @@ The key takeaway from this article is that this type of stitching validation and
 * Allow for data-driven decisions about authentication strategy and optimization.
 
 These metrics together give stakeholders a complete picture of how Customer Journey Analytics stitching affects authentication success rates and overall person identification performance.
+
