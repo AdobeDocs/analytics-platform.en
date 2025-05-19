@@ -252,6 +252,7 @@ The SKU records are supported through a custom CJA_B2B_SKU_Lookup record based s
 
 You setup an account-based connection in Customer Journey Analytics to ingest and join records from event, account, person and SKU datasets.
 
+1. Create a new connection in Customer Journey Analyics.
 1. Enter a descriptive name and description for the connection.
 1. Select ![Building](/help/assets/icons/Building.svg) **[!UICONTROL Account]** as the **[!UICONTROL Primary ID]**.
 1. Select all **[!UICONTROL Optional containers]**.
@@ -282,5 +283,24 @@ You setup an account-based connection in Customer Journey Analytics to ingest an
 
 1. Select **[!UICONTROL Add datasets]** to save the datasets and their configured settings.
 
-1. Select **[!UICONTROL Save]** to save the connection.
+1. Select **[!UICONTROL Save]** to save the connection. 
 
+
+## Data view
+
+After data is ingested in Customer Journey Analytics through the connection you have defined, you want to create a data view that includes all the components you have defined in your solution design reference. 
+
+
+### Configure
+
+1. Create a new data view in Customer Journey Analytics.
+1. Select the connection you previously created (for example B2B Demo Connection (ExL)).
+1. Provide a name for the data view. For example: B2B Demo Data view (ExL) and optionally a description.
+1. Optionally, rename the containers or stick with the default container names.
+1. Select Save and continue.
+
+### Components
+
+By default, all [standard components](/help/data-views/component-reference.md) are already included in your data view. This includes the B2B specific metrics for Accounts, Buying Groups, Global Accounts, Opportunities.
+
+1. Ensure you add all relevant event metrics to your 
