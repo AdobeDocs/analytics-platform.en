@@ -179,7 +179,7 @@ For the use cases, the following solution design reference is used.
 | Company CLTV Score | Metric | 
 | Company Country | Dimension | 
 | Company Name | Dimension | 
-| Company Phone Dimension |
+| Company Phone | Dimension |
 | Company Postal Code | Dimension |
 | Company Propensity to Buy Level | Dimension | 
 | Company Propensity to Buy Score | Metric | 
@@ -251,4 +251,36 @@ The SKU records are supported through a custom CJA_B2B_SKU_Lookup record based s
 ## Connection
 
 You setup an account-based connection in Customer Journey Analytics to ingest and join records from event, account, person and SKU datasets.
+
+1. Enter a descriptive name and description for the connection.
+1. Select ![Building](/help/assets/icons/Building.svg) **[!UICONTROL Account]** as the **[!UICONTROL Primary ID]**.
+1. Select all **[!UICONTROL Optional containers]**.
+1. Select your preferred sandbox and estimate the average number of daily events.
+
+   ![B2B account-based connection](assets/b2b-connection-account-based.png)
+
+1. Select **[!UICONTROL Add datasets]** and add the B2B datasets that contain the data for events, accounts, persons and SKUs.
+
+   ![B2B connection - add datasets](assets/b2b-connection-add-datasets.png)
+
+1. Select **[!UICONTROL Next]** to configure the settings for each of the selected datasets.
+1. For the event dataset, ensure you select the appropriate eVars that correspond to the identities for **[!UICONTROL Account ID]**, **[!UICONTROL Global Account ID]**, **[!UICONTROL Opportunity ID]**, **[!UICONTROL Buying Group ID]** and **[!UICONTROL Person ID]**.
+
+   ![B2B connection - add event dataset](assets/b2b-connection-add-datasets-event-data.png). 
+
+1. Scroll down to configure the account records dataset. Ensure you select the correct identifier (**[!UICONTROL Account_ID]**) to match account by the **[!UICONTROL Global Account]** container. Select the correct identifier (**[!UICONTROL Account_ID]**) as the **[!UICONTROL Global Account field]**.
+
+   ![B2B connection - add account dataset](assets/b2b-connection-add-datasets-account-data.png)
+
+1. Scroll down to configure the person records dataset. Esnrue you select the correct key (**[!UICONTROL Person_ID]**) to match person by the **[!UICONTROL Person]** container. Select the appropriate identity (**[!UICONTROL Profile_Account_ID_Individual]**) to match the **[!UICONTROL Global Account]** field.
+
+   ![B2B connection - add person dataset](assets/b2b-connection-add-datasets-person-data.png)
+
+1. Scroll down to conigure the SKU records dataset. Ensure you select the correct key (**[!UICONTROL Sku]**). Select **[!UICONTROL Match by field]** because no container is configured or available for this data. Select the SKU field in the event dataset(**[!UICONTROL SKU (event datasets)]**) as the matching key.
+
+   ![B2B connection - add SKU dataset](assets/b2b-connection-add-datasets-sku-data.png)
+
+1. Select **[!UICONTROL Add datasets]** to save the datasets and their configured settings.
+
+1. Select **[!UICONTROL Save]** to save the connection.
 
