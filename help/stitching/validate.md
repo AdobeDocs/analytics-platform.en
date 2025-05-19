@@ -4,8 +4,6 @@ description: How to validate stitching
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
-hide: yes
-hidefromtoc: yes
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
 ---
 # Validate stitching
@@ -24,7 +22,7 @@ While these analysis methods can be used for both field-based stitching and grap
 
 >[!NOTE]
 >
->This article does not address the overall value of a Customer Journey Analytics configuration that has all datasets in Experience Platform aligned to the same identity namespace. And that all these datasets are nicely joined together to perform analysis across an entire customer journey. 
+>The (validation of) stitching of one or more datasets contributes ultimately to better analysis and insights. However, this article does not discuss the overall value of a Customer Journey Analytics configuration that has all datasets in Experience Platform aligned to the same identity namespace. And that all these datasets are nicely joined together to perform analysis across an entire customer journey. 
 
 
 ## Data view prerequisites
