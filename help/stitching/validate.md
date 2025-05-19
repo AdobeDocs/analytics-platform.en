@@ -4,8 +4,6 @@ description: How to validate stitching
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
-hide: yes
-hidefromtoc: yes
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
 ---
 # Validate stitching
@@ -24,7 +22,7 @@ While these analysis methods can be used for both field-based stitching and grap
 
 >[!NOTE]
 >
->This article does not address the overall value of a Customer Journey Analytics configuration that has all datasets in Experience Platform aligned to the same identity namespace. And that all these datasets are nicely joined together to perform analysis across an entire customer journey. 
+>The (validation of) stitching of one or more datasets contributes ultimately to better analysis and insights. However, this article does not discuss the overall value of a Customer Journey Analytics configuration that has all datasets in Experience Platform aligned to the same identity namespace. And that all these datasets are nicely joined together to perform analysis across an entire customer journey. 
 
 
 ## Data view prerequisites
@@ -65,7 +63,7 @@ For the **[!UICONTROL Stitched ID dimension**] table, you see the raw values tha
 
 ## Device-centric or Person-centric reporting
 
-When you create a Connection, you have to define what field or identity is used for the Person ID. For instance, on a web dataset, if you choose a device id as the Person ID, then you create device centric reports and lose the ability to join this data with other offline channels. If you select a cross-channel field or identity, for example email, you lose out on any unauthenticated events. To understand this impact, you need to figure out how much of the traffic is unauthenticated and how much of the traffic is authenticated.
+When you create a connection, you have to define what field or identity is used for the Person ID. For instance, on a web dataset, if you choose a device id as the Person ID, then you create device centric reports and lose the ability to join this data with other offline channels. If you select a cross-channel field or identity, for example email, you lose out on any unauthenticated events. To understand this impact, you need to figure out how much of the traffic is unauthenticated and how much of the traffic is authenticated.
 
 1. Create a calculated metric **[!UICONTROL Unauthenticated events over total]**. Define the rule in the rule builder like below:
    ![Unauthenticated events over total](assets/calcmetric-unauthenticatedeventsovertotal.png)
@@ -83,7 +81,7 @@ When you create a Connection, you have to define what field or identity is used 
 
 You want to measure the identification performance before and after stitching. To do so, create three additional calculated metrics:
 
-1. A **[!UICONTROL Stitched authentication rate]** calculated metric that calculates the number of events where the stitched namespace is set to the desired identity over the total number of events. When you set up the data view, you created a **[!UICONTROL Email stitched namespace]** metric that included a filter to count only when an event has a namespace set to email. The calculated metric uses this **[!UICONTROL Email stitched namespace]** metric to provide an indication of what percentage of the data has the desired identity.
+1. A **[!UICONTROL Stitched authentication rate]** calculated metric that calculates the number of events where the stitched namespace is set to the desired identity over the total number of events. When you set up the data view, you created an **[!UICONTROL Email stitched namespace]** metric that included a filter to count only when an event has a namespace set to email. The calculated metric uses this **[!UICONTROL Email stitched namespace]** metric to provide an indication of what percentage of the data has the desired identity.
    ![Stiched authentication rate calculated metric](assets/calcmetric-stitchedauthenticationrate.png)
 
 1. A **[!UICONTROL Percent increase]** calculated metric that calculates the raw percentage change between the current identification rate and the stitched one.

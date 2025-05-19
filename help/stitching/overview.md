@@ -68,5 +68,6 @@ Ensure you do not confuse stitching with:
 >[Field based stitching](fbs.md)
 >[Graph based stitching](gbs.md)
 >[Use stitching](use-stitching.md)
+>[Validate stitching](validate.md)
 >[FAQ on stitching](faq.md)
 
