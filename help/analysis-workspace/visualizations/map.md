@@ -57,14 +57,9 @@ The map visualization in Customer Journey Analytics differs from the map visuali
 |---------|----------|---------|
 | Data source | Use any segment available in your data view as your data source.  | Provides the following options: <ul><li>Mobile lat/long</li><li>Geographic Dimension<br/>Represents geo segmentation data about visitor location based on the visitor's IP address. This data gets transformed into [!UICONTROL Country], [!UICONTROL Region], and [!UICONTROL City]. Note that it does not go to the DMA or Zip Code level.</li></ul> |
 | Precision | For datasets with deep precision, you can configure the dimensions in your data view to show up to 5 decimal places. This allows the map visualization to be accurate within a single meter. <p>For more information, see [Configure precise locations for dimensions](#configure-precise-locations-for-dimensions).</p> | C2 |
-| A3 | B3 | C3 |
-
-
->[!BEGINSHADEBOX]
-
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Map visualization in Analysis Workspace](https://video.tv.adobe.com/v/23559/?quality=12){target=&#34;_blank&#34;} for a demo video.
-
->[!ENDSHADEBOX]
+| Create a segment from a selection | Create a segment based on a specific area that you select in the map visualization. <p>For more information, see [Create a segment from the map visualization](#create-a-segment-from-the-map-visualization).</p> | Create a segment based on the data that is being reported in the map visualization in general.|
+| Create a trend from a selection | Create a trended line chart visualization based on a specific area that you select in the map visualization. <p>For more information, see [Create a trended line chart from the map visualization](#create-a-trended-line-chart-from-the-map-visualization). <!-- is this correct? --> | Cannot create a trend from the map visualization. |
+| Add a breakdown from a selection | Break down a specific dimension item, metric, segment, or date range within a specific area that you select in the map visualization. <p>For more information, see [Add a breakdown from the map visualization](#add-a-breakdown-from-the-map-visualization). | Cannot add a breakdown from the map visualization. |
 
 ## Begin building a map visualization
 
@@ -122,7 +117,9 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Map visualizatio
 
       To reset the map to its original north alignment, select the compass icon ![compass icon](assets/map-compass-icon.png).
 
-    * **Area selection**:
+    * **Area selection**: You can select an area of the map to [create a segment](#create-a-segment-from-the-map-visualization), [create a trend](#create-a-trended-line-chart-from-the-map-visualization), or [add a breakdown](#add-a-breakdown-from-the-map-visualization). 
+    
+      Click the selection tool ![map selection icon](assets/map-selection-icon.png), then drag your mouse to select the desired area.
 
     * **Compare**: You can compare two or more map visualizations in the same project by placing them side by side.
 
@@ -137,7 +134,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Map visualizatio
     * **Additional visualization settings**: Select the Settings icon ![Setting](/help/assets/icons/Setting.svg) in the visualization header to view additional settings for the map visualization. For more information, see [Configure visualization settings](#configure-visualization-settings).
 
 1. **Save** the project to save all map settings (coordinates, zoom, rotation).
-1. The freeform table below the visualization can be populated by dragging in location dimensions and metrics from the left rail.
+1. (Optional) The freeform table below the visualization can be populated by dragging in location dimensions and metrics from the left rail.
 
 ## Configure visualization settings
 
@@ -205,6 +202,36 @@ If you have custom datasets with deep precision, you can configure the map visua
       ![Latitude context label](assets/map-dimension-latitude.png)
 
    1. In the **[!UICONTROL Context labels]** field, begin typing `Longitude`, then select it when it appears in the drop-down menu. 
+
+1. Select **[!UICONTROL Save and continue]** > **[!UICONTROL Save and finish]**.
+
+## Create a segment from the map visualization
+
+You can create a segment based on a specific area that you select in the map visualization. When you create a segment based on a selected area, any data that is within the latitude and longitude of your selection is included in the segment. 
+
+To create a segment from the map visualization:
+
+1. (Optional) Zoom in on the specific area of the map where you want to create the segment. 
+
+1. Click the selection tool ![map selection icon](assets/map-selection-icon.png), then drag your mouse to select the desired area.
+
+1. 
+
+## Create a trended line chart from the map visualization
+
+You can create a trended line chart visualization  based on a specific area that you select in the map visualization.
+
+1. In the map visualization, click the selection tool ![map selection icon](assets/map-selection-icon.png), then drag your mouse to select the desired area.
+
+1. 
+
+## Add a breakdown from the map visualization
+
+You can break down a specific dimension item, metric, segment, or date range within a specific area that you select in the map visualization.
+
+1. In the map visualization, click the selection tool ![map selection icon](assets/map-selection-icon.png), then drag your mouse to select the desired area.
+
+1. 
 
 ## Export the map visualization as a PDF
 
