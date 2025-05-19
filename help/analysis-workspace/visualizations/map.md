@@ -43,25 +43,20 @@ _This article documents the Map visualization in_ ![CustomerJourneyAnalytics](/h
 
 >[!ENDSHADEBOX]
 
-## Map overview
+The ![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL Map]** visualization in Analysis Workspace allows you to build a visual map of any metric (including calculated metrics). It is useful for identifying and comparing metric data across different geographic regions.
 
-The ![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL Map]** visualization in Analysis Workspace
-
-* allows you to build a visual map of any metric (including calculated metrics),
-* is useful for identifying and comparing metric data across different geographic regions,
-* can support 2 data sources: latitude/longitude from mobile usage or geographic dimension for web usage,
-* supports PDF export, and
-* leverages WebGL for graphics display. If your graphics drivers do not support WebGL rendering, you may need to update your drivers.
+>[!NOTE]
+>
+>The map visualization uses WebGL for graphics display. If your graphics drivers do not support WebGL rendering, you might need to update your drivers.
 
 ## Map visualization in Customer Journey Analytics vs. Adobe Analytics
 
 The map visualization in Customer Journey Analytics differs from the map visualization in Adobe Analytics in the following ways:
 
-
 | Feature | Customer Journey Analytics | Adobe Analytics |
 |---------|----------|---------|
-| Data source | Use any segment available in your data view as your data source.<p>For datasets with deep precision, you can configure the dimensions in your data view to show up to 5 decimal places. This allows the map visualization to be accurate within a single meter. For more information, see [Configure precise locations for dimensions](#configure-precise-locations-for-dimensions).</p>  | Provides the following options: <ul><li>Mobile lat/long</li><li>Geographic Dimension<br/>Represents geo segmentation data about visitor location based on the visitor's IP address. This data gets transformed into [!UICONTROL Country], [!UICONTROL Region], and [!UICONTROL City]. Note that it does not go to the DMA or Zip Code level.</li></ul> |
-| A2 | B2 | C2 |
+| Data source | Use any segment available in your data view as your data source.  | Provides the following options: <ul><li>Mobile lat/long</li><li>Geographic Dimension<br/>Represents geo segmentation data about visitor location based on the visitor's IP address. This data gets transformed into [!UICONTROL Country], [!UICONTROL Region], and [!UICONTROL City]. Note that it does not go to the DMA or Zip Code level.</li></ul> |
+| Precision | For datasets with deep precision, you can configure the dimensions in your data view to show up to 5 decimal places. This allows the map visualization to be accurate within a single meter. <p>For more information, see [Configure precise locations for dimensions](#configure-precise-locations-for-dimensions).</p> | C2 |
 | A3 | B3 | C3 |
 
 
@@ -70,7 +65,6 @@ The map visualization in Customer Journey Analytics differs from the map visuali
 See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Map visualization in Analysis Workspace](https://video.tv.adobe.com/v/23559/?quality=12){target=&#34;_blank&#34;} for a demo video.
 
 >[!ENDSHADEBOX]
-
 
 ## Begin building a map visualization
 
@@ -97,6 +91,10 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Map visualizatio
    ![](assets/map-visualization.png)
 
 1. (Optional) Continue with [Configure visualization settings](#configure-visualization-settings).
+
+## View a map visualization
+
+
 
 ## Configure visualization settings
 
@@ -165,4 +163,9 @@ If you have custom datasets with deep precision, you can configure the map visua
 
    1. In the **[!UICONTROL Context labels]** field, begin typing `Longitude`, then select it when it appears in the drop-down menu. 
 
+## Export the map visualization as a PDF
+
+To export the map visualization in PDF format:
+
+1. 
 
