@@ -293,14 +293,75 @@ After data is ingested in Customer Journey Analytics through the connection you 
 
 ### Configure
 
-1. Create a new data view in Customer Journey Analytics.
-1. Select the connection you previously created (for example B2B Demo Connection (ExL)).
-1. Provide a name for the data view. For example: B2B Demo Data view (ExL) and optionally a description.
-1. Optionally, rename the containers or stick with the default container names.
-1. Select Save and continue.
+1. [Create a new data view](/help/data-views/data-views.md) in Customer Journey Analytics.
+1. Select the connection you previously created (for example: **[!UICONTROL B2B Demo Connection (ExL)]**).
+1. Provide a name for the data view. For example: `B2B Demo Data view (ExL)` and optionally a description.
+1. Optionally, rename the containers. Or stick with the default container names.
+
+   ![B2B data view - configure](assets/b2b-dataview-configure.png)
+1. Select **[!UICONTROL Save and continue]**.
+
+
 
 ### Components
 
 By default, all [standard components](/help/data-views/component-reference.md) are already included in your data view. This includes the B2B specific metrics for Accounts, Buying Groups, Global Accounts, Opportunities.
 
-1. Ensure you add all relevant event metrics to your 
+1. Add all event dimensions that you have defined in your solution design reference to the dimension components in your data view. For example field **[!UICONTROL Sales Stage Name]** (custom conversion variable 10 (eVar10)) that represents the **[!UICONTROL Sales Stage Name]** dimension. Ensure you configure the dimension component using available [Component settings](/help/data-views/component-settings/overview.md).
+
+   ![B2B data view - components - event dimensions](assets/b2b-dataview-components-event-dimensions.png)
+
+1. Add all event metrics that you have defined in your solution design reference to the metrics components in your data view. For example: field **[!UICONTROL eVar45]** that represents the **[!UICONTROL VoC Survey Satisfaction]** metric. Ensure you configure the dimension component using available [Component settings](/help/data-views/component-settings/overview.md).
+
+   ![B2B data view - components - event metrics](assets/b2b-dataview-components-event-metrics.png)
+
+1. Add all account dimensions that you have defined in your solution design reference to the dimension components in your data view. For example field **[!UICONTROL Industry]** that represents the **[!UICONTROL Industry]** dimension. Ensure you configure the dimension component using available [Component settings](/help/data-views/component-settings/overview.md).
+
+   ![B2B data view - components - account dimensions](assets/b2b-dataview-components-account-dimensions.png)
+
+1. Add all account metrics that you have defined in your solution design reference to the metrics components in your data view. For example: field **[!UICONTROL Number_of_Employees]** that represents the **[!UICONTROL Number_of_Employees]** metric. Ensure you configure the dimension component using available [Component settings](/help/data-views/component-settings/overview.md).
+
+   ![B2B data view - components - account metrics](assets/b2b-dataview-components-account-metrics.png)
+
+1. Add all person dimensions that you have defined in your solution design reference to the dimension components in your data view. For example field **[!UICONTROL Category_1_Affinity_Level]** that represents the **[!UICONTROL Category_1_Affinity_Level]** dimension. Ensure you configure the dimension component using available [Component settings](/help/data-views/component-settings/overview.md).
+
+   ![B2B data view - components - account dimensions](assets/b2b-dataview-components-person-dimensions.png)
+
+1. Add all person metrics that you have defined in your solution design reference to the metrics components in your data view. For example: field **[!UICONTROL Category_1_Affinity_Score]** that represents the **[!UICONTROL Category_1_Affinity_Score]** metric. Ensure you configure the dimension component using available [Component settings](/help/data-views/component-settings/overview.md).
+
+   ![B2B data view - components - account metrics](assets/b2b-dataview-components-person-metrics.png)
+
+1. Add all SKU dimensions that you have defined in your solution design reference to the dimension components in your data view. For example field **[!UICONTROL Service Category]** that represents the **[!UICONTROL Service Category]** dimension. Ensure you configure the dimension component using available [Component settings](/help/data-views/component-settings/overview.md).
+
+   ![B2B data view - components - account dimensions](assets/b2b-dataview-components-sku-dimensions.png)
+
+1. Select **[!UICONTROL Save and Continue]**.
+
+
+### Settings
+
+1. You can optionally define specific [settings](/help/data-views/create-dataview.md#settings-1) for the data view:
+
+   * Add segments to the data view.
+   * Use a (calculated) metric to define session settings.
+
+1. Select **[!UICONTROL Save and continue]**.
+
+
+## Segments
+
+You can prepare one or more B2B specific container-based segments that you can use in your Workspace project.
+
+As an example, a segments that returns all global accounts with a propensity to buy score that is greater than 8.
+
+1. [Create a segment](/help/components/filters/create-filters.md) in Customer Journey Analytics.
+1. Enter a title for the segment. For example: `Companies Likely To Buy`. Optionally, enter a description.
+1. Drag the **[!UICONTROL Company_Propensity_to_Buy_Score]** on the segment builder.
+1. Select the **[!UICONTROL is greater than]** operator.
+1. Enter a value. For example: `8`.
+1. Ensure you select the **[!UICONTROL Global Account]** from the **[!UICONTROL Include]** container.
+1. **[!UICONTROL Save]** the segment.
+
+## Other
+
+You can optionally configure other components for your use cases, like calculated metrics, date ranges, alerts.
