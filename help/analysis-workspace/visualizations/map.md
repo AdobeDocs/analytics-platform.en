@@ -53,7 +53,7 @@ In Customer Journey Analytics data views settings, administrators can add [conte
 
 #### Required context labels for the map visualization
 
-Two pre-defined context labels are required for the map visualization to function:
+Two context labels are required for the map visualization to function:
 
 * [!UICONTROL Geo: Latitude]
 * [!UICONTROL Geo: Longitude]
