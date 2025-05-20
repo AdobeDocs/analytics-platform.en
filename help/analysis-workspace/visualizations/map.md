@@ -45,9 +45,48 @@ _This article documents the Map visualization in_ ![CustomerJourneyAnalytics](/h
 
 The ![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL Map]** visualization in Analysis Workspace allows you to build a visual map of any metric (including calculated metrics). It is useful for identifying and comparing metric data across different geographic regions.
 
->[!NOTE]
->
->The map visualization uses WebGL for graphics display. If your graphics drivers do not support WebGL rendering, you might need to update your drivers.
+## Prerequisites
+
+### Add context labels in data views
+
+In Customer Journey Analytics data views settings, administrators can add [context labels](/help/data-views/component-settings/overview.md) to a dimension or metric and Customer Journey Analytics services like the [!UICONTROL map] visualization can use these labels for their purposes. 
+
+#### Required context labels for the map visualization
+
+Two pre-defined context labels are required for the map visualization to function:
+
+* [!UICONTROL Geo: Latitude]
+* [!UICONTROL Geo: Longitude]
+
+In your data view that contains data that you want to analyze in the map visualization, pick two dimensions, one with the latitude data and one with the longitude data. Then label those dimensions with the **[!UICONTROL Geo: Latitude]** and the **[!UICONTROL Geo: Longitude]** context labels.
+
+![Latitude and longitude context labels](assets/map-context-labels-lat-long.png)
+
+Without these labels present, the map visualization does not work, because there is no latitude and longitude data to work with.
+
+#### Required context labels for geo templates
+
+Adobe provides several [pre-built templates](/help/analysis-workspace/templates/use-templates.md#web-audience) that use the map visualization. In order to use each template, you must add the corresponding context label to a dimension in your data view.
+
+Following are the templates and the required context label:
+
+| Template | Required context label | 
+|---------|----------|
+| Geo contries | [!UICONTROL Geo: Geo Country] | 
+| Geo regions | [!UICONTROL Geo: Geo Region] | 
+| Geo cities | [!UICONTROL Geo: Geo City] | 
+| Geo US states | [!UICONTROL Geo: Geo State] | 
+| Geo US DMA | [!UICONTROL Geo: Geo Dma] | 
+
+In your data view that contains data that you want to analyze in the map visualization in one of these pre-built templates, pick five dimensions, one with the country data, one with the region data, one with the city data, one with the state data, and one with the DMA data. Then label those dimensions with the **[!UICONTROL Geo: Geo Country]**, **[!UICONTROL Geo: Geo Region]**, **[!UICONTROL Geo: Geo City]**, **[!UICONTROL Geo: Geo State]**, and the **[!UICONTROL Geo: Dma]** context labels, respectively.
+
+![Templates context labels](assets/map-context-labels-templates.png)
+
+Without these labels present, the templates do not work, because there is no geo data to work with.
+
+### Graphics drivers must support WebGL rendering
+
+The map visualization uses WebGL for graphics display. If your graphics drivers do not support WebGL rendering, you might need to update your drivers.
 
 ## Map visualization in Customer Journey Analytics vs. Adobe Analytics
 
@@ -55,9 +94,10 @@ The map visualization in Customer Journey Analytics differs from the map visuali
 
 | Feature | Customer Journey Analytics | Adobe Analytics |
 |---------|----------|---------|
-| Data source | Use any segment available in your data view as your data source.  | Provides the following options: <ul><li>Mobile lat/long</li><li>Geographic Dimension<br/>Represents geo segmentation data about visitor location based on the visitor's IP address. This data gets transformed into [!UICONTROL Country], [!UICONTROL Region], and [!UICONTROL City]. Note that it does not go to the DMA or Zip Code level.</li></ul> |
-| Precision | For datasets with deep precision, you can configure the dimensions in your data view to show up to 5 decimal places. This allows the map visualization to be accurate within a single meter. <p>For more information, see [Configure precise locations for dimensions](#configure-precise-locations-for-dimensions).</p> | C2 |
+| Data source | Use any segment available in your data view as your data source.  | Provides the following options: <ul><li>Mobile lat/long</li><li>Geographic Dimension<br/>Represents geo segmentation data about visitor location based on the visitor's IP address. </li></ul> |
+| Precision | For datasets with deep precision, you can configure the dimensions in your data view to show up to 5 decimal places. This allows the map visualization to be accurate within a single meter. <p>For more information, see [Configure precise locations for dimensions](#configure-precise-locations-for-dimensions).</p> | Data is accurate to the [!UICONTROL Country], [!UICONTROL Region], and [!UICONTROL City] level. (It does not go to the DMA or Zip Code level.) |
 | Create a segment from a selection | Create a segment based on a specific area that you select in the map visualization. <p>For more information, see [Create a segment from the map visualization](#create-a-segment-from-the-map-visualization).</p> | Create a segment based on the data that is being reported in the map visualization in general.|
+| Create an audience from a selection | Create an audience based on a specific area that you select in the map visualization. <p>For more information, see [Create an audience from the map visualization](#create-an-audience-from-the-map-visualization). | Cannot create an audience from the map visualization. |
 | Create a trend from a selection | Create a trended line chart visualization based on a specific area that you select in the map visualization. <p>For more information, see [Create a trended line chart from the map visualization](#create-a-trended-line-chart-from-the-map-visualization). <!-- is this correct? --> | Cannot create a trend from the map visualization. |
 | Add a breakdown from a selection | Break down a specific dimension item, metric, segment, or date range within a specific area that you select in the map visualization. <p>For more information, see [Add a breakdown from the map visualization](#add-a-breakdown-from-the-map-visualization). | Cannot add a breakdown from the map visualization. |
 
@@ -117,7 +157,7 @@ The map visualization in Customer Journey Analytics differs from the map visuali
 
       To reset the map to its original north alignment, select the compass icon ![compass icon](assets/map-compass-icon.png).
 
-    * **Area selection**: You can select an area of the map to [create a segment](#create-a-segment-from-the-map-visualization), [create a trend](#create-a-trended-line-chart-from-the-map-visualization), or [add a breakdown](#add-a-breakdown-from-the-map-visualization). 
+    * **Selection tool**: You can select an area of the map to [create a segment](#create-a-segment-from-the-map-visualization), [create a trend](#create-a-trended-line-chart-from-the-map-visualization), or [add a breakdown](#add-a-breakdown-from-the-map-visualization). 
     
       Click the selection tool ![map selection icon](assets/map-selection-icon.png), then drag your mouse to select the desired area.
 
@@ -205,31 +245,57 @@ If you have custom datasets with deep precision, you can configure the map visua
 
 1. Select **[!UICONTROL Save and continue]** > **[!UICONTROL Save and finish]**.
 
-## Create a segment from the map visualization
+## Create a segment from the map visualization {#map-create-segment}
 
 You can create a segment based on a specific area that you select in the map visualization. When you create a segment based on a selected area, any data that is within the latitude and longitude of your selection is included in the segment. 
 
 To create a segment from the map visualization:
 
-1. (Optional) Zoom in on the specific area of the map where you want to create the segment. 
+1. (Optional) Zoom in on the specific area of the map that contains the data that you want to use for the segment. 
 
 1. Click the selection tool ![map selection icon](assets/map-selection-icon.png), then drag your mouse to select the desired area.
 
-1. 
+1. Select **[!UICONTROL Create segment from selection]** from the drop-down menu that appears.
+
+1. Use the Segment builder to define the new segment. For more information, see [Segment builder](/help/components/filters/filter-builder.md).
+
+## Create an audience from the map visualization
+
+You can create an audience based on a specific area that you select in the map visualization.
+
+To create an audience from the map visualization:
+
+1. (Optional) Zoom in on the specific area of the map that contains the data that you want to use for the audience.
+
+1. Click the selection tool ![map selection icon](assets/map-selection-icon.png), then drag your mouse to select the desired area.
+
+1. Select **[!UICONTROL Create audience from selection]** from the drop-down menu that appears.
+
+1. Use the Audience builder to define the new audience. For more information, see [Audience builder](/help/components/audiences/publish.md#audience-builder) in [Create and publish audiences](/help/components/audiences/publish.md)
 
 ## Create a trended line chart from the map visualization
 
-You can create a trended line chart visualization  based on a specific area that you select in the map visualization.
+You can create a trended line chart visualization for the data within a specific area that you select in the map visualization.
 
-1. In the map visualization, click the selection tool ![map selection icon](assets/map-selection-icon.png), then drag your mouse to select the desired area.
+To create a trended line chart from the map visualization:
 
-1. 
+1. (Optional) Zoom in on the specific area of the map that contains the data that you want to use for the trended line chart.
+
+1. Click the selection tool ![map selection icon](assets/map-selection-icon.png), then drag your mouse to select the desired area.
+
+1. Select **[!UICONTROL Trend]** from the drop-down menu that appears.
+
+   A line visualization is built that includes a trendline. For more information about this visualization, see [Line](/help/analysis-workspace/visualizations/line.md).
 
 ## Add a breakdown from the map visualization
 
-You can break down a specific dimension item, metric, segment, or date range within a specific area that you select in the map visualization.
+You can break down a specific dimension item, metric, segment, or date range for the data within a specific area that you select in the map visualization.
 
-1. In the map visualization, click the selection tool ![map selection icon](assets/map-selection-icon.png), then drag your mouse to select the desired area.
+To add a breakdown from the map visualization:
+
+1. (Optional) Zoom in on the specific area of the map that contains the data where you want to add the breakdown.
+
+1. Click the selection tool ![map selection icon](assets/map-selection-icon.png), then drag your mouse to select the desired area.
 
 1. 
 
