@@ -4,6 +4,8 @@ description: Learn about how to setup Customer Journey Analytics B2B Edition for
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
+hide: yes
+hidefromtoc: yes
 ---
 # Setup for B2B Edition use cases
 
@@ -13,9 +15,18 @@ This article covers a typical setup of the Customer Journey Analytics B2B Editio
 * [Grow key accounts](grow-key-accounts.md)
 * [Build product value](build-product-value.md)
 
-## Solution Design Reference
 
-For the use cases, the following solution design reference is used.
+>[!NOTE]
+>
+>The demo data and screenshots that are used in these use cases are for illustration purposes only and do not reflect real world data.
+
+
+## Solution design reference
+
+Before you set up Customer Journey Analytics B2B Edition, ensure you have a proper solution design reference in place that documents each of the fields you collect.
+
+An example solution design reference could look like:
+
 
 +++ Event dimensions
 
@@ -221,28 +232,30 @@ The data that supports the solution design reference is structured using the fol
 
 ### Event data
 
-The event dimensions and metrics are supported through an XDM Experience Event based schema and one or more datasets containing data. In the example, data is ingested into Experience Platform from the Analytics source connector. And evars and props are mapped to the relevant event dimensions and metrics. For example: `_experience.analytics.customDimensions.eVars.eVar1` is mapped to **[!UICONTROL Account ID]**. See below for a preview of the data typically available in such a dataset.
+The event dimensions and metrics are supported through a time-series (event) based schema and one or more datasets that contain event data. 
 
-![B2B event schema and datasets](assets/b2b-event-schema-datasets.png)
+<!--For example: the Account ID field is mapped to **[!UICONTROL Account ID]**. See below for a preview of the data typically available in such a dataset.
+
+![B2B event schema and datasets](assets/b2b-event-schema-datasets.png)-->
 
 
 ### Person data
 
-The person records are supported through a custom CJA_B2B_Person_ID_Lookup record based schema (based on a CID_personID_Lookup class and dedicated personData field group). See below for a preview of the data typically available in such a dataset. 
+The person records are supported through a record (profile) based schema and one or more datasets that contain person data. See below for an example of person data (based on the example solution design reference) typically available in such a dataset. 
 
 ![B2B person schema and datasets](assets/b2b-person-schema-datasets.png)
 
 
 ### Account data
 
-The account records are supported through a custom CJA_B2B_Account_ID_Lookup record based schema (based on a CID_accountID_Lookup class and dedicated accountData field group). See below for a preview of the data typically available in such a dataset. 
+The account records are supported through a record (lookup) record based schema and one or more datasets that contain account data. See below for an example of account data (based on the example solution design reference) typically available in such a dataset. 
 
 ![B2B account schema and datasets](assets/b2b-account-schema-datasets.png)
 
 
 ### SKU data
 
-The SKU records are supported through a custom CJA_B2B_SKU_Lookup record based schema (based on a CID_sku_Lookup class and skuData field group). See below for a preview of the data typically available in such a dataset. 
+The SKU records are supported through a record (lookup) based schema and one or more datasets that contain SKU data. See below for an example of SKU data (based on the example solution design reference) typically available in such a dataset. 
 
 
 ![B2B SKU schema and datasets](assets/b2b-sku-schema-datasets.png)
@@ -250,9 +263,9 @@ The SKU records are supported through a custom CJA_B2B_SKU_Lookup record based s
 
 ## Connection
 
-You setup an account-based connection in Customer Journey Analytics to ingest and join records from event, account, person and SKU datasets.
+Define an account-based connection in Customer Journey Analytics to ingest and join records from the event, account, person and SKU datasets.
 
-1. Create a new connection in Customer Journey Analyics.
+1. [Create a new connection](/help/connections/create-connection.md) in Customer Journey Analytics.
 1. Enter a descriptive name and description for the connection.
 1. Select ![Building](/help/assets/icons/Building.svg) **[!UICONTROL Account]** as the **[!UICONTROL Primary ID]**.
 1. Select all **[!UICONTROL Optional containers]**.
@@ -269,15 +282,15 @@ You setup an account-based connection in Customer Journey Analytics to ingest an
 
    ![B2B connection - add event dataset](assets/b2b-connection-add-datasets-event-data.png). 
 
-1. Scroll down to configure the account records dataset. Ensure you select the correct identifier (**[!UICONTROL Account_ID]**) to match account by the **[!UICONTROL Global Account]** container. Select the correct identifier (**[!UICONTROL Account_ID]**) as the **[!UICONTROL Global Account field]**.
+1. Scroll down to configure the account records dataset. Ensure you select the correct identifier (**[!UICONTROL Account_ID]**) to match the account by the **[!UICONTROL Global Account]** container. Select the correct identifier (**[!UICONTROL Account_ID]**) as the **[!UICONTROL Global Account field]**.
 
    ![B2B connection - add account dataset](assets/b2b-connection-add-datasets-account-data.png)
 
-1. Scroll down to configure the person records dataset. Esnrue you select the correct key (**[!UICONTROL Person_ID]**) to match person by the **[!UICONTROL Person]** container. Select the appropriate identity (**[!UICONTROL Profile_Account_ID_Individual]**) to match the **[!UICONTROL Global Account]** field.
+1. Scroll down to configure the person records dataset. Ensure you select the correct key (**[!UICONTROL Person_ID]**) to match the person by the **[!UICONTROL Person]** container. Select the appropriate identity (**[!UICONTROL Profile_Account_ID_Individual]**) to match the **[!UICONTROL Global Account]** field.
 
    ![B2B connection - add person dataset](assets/b2b-connection-add-datasets-person-data.png)
 
-1. Scroll down to conigure the SKU records dataset. Ensure you select the correct key (**[!UICONTROL Sku]**). Select **[!UICONTROL Match by field]** because no container is configured or available for this data. Select the SKU field in the event dataset(**[!UICONTROL SKU (event datasets)]**) as the matching key.
+1. Scroll down to configure the SKU records dataset. Ensure you select the correct key (**[!UICONTROL Sku]**). Select **[!UICONTROL Match by field]** because no container is configured or available for this data. Select the SKU field in the event dataset(**[!UICONTROL SKU (event datasets)]**) as the matching key.
 
    ![B2B connection - add SKU dataset](assets/b2b-connection-add-datasets-sku-data.png)
 
@@ -288,7 +301,7 @@ You setup an account-based connection in Customer Journey Analytics to ingest an
 
 ## Data view
 
-After data is ingested in Customer Journey Analytics through the connection you have defined, you want to create a data view that includes all the components you have defined in your solution design reference. 
+After data is ingested in Customer Journey Analytics, you want to create a data view that includes all the components you have defined in your solution design reference. 
 
 
 ### Configure
@@ -305,33 +318,33 @@ After data is ingested in Customer Journey Analytics through the connection you 
 
 ### Components
 
-By default, all [standard components](/help/data-views/component-reference.md) are already included in your data view. This includes the B2B specific metrics for Accounts, Buying Groups, Global Accounts, Opportunities.
+By default, all [standard components](/help/data-views/component-reference.md) are already included in your data view. These standard components include the B2B specific metrics for Accounts, Buying Groups, Global Accounts, and Opportunities.
 
-1. Add all event dimensions that you have defined in your solution design reference to the dimension components in your data view. For example field **[!UICONTROL Sales Stage Name]** (custom conversion variable 10 (eVar10)) that represents the **[!UICONTROL Sales Stage Name]** dimension. Ensure you configure the dimension component using available [Component settings](/help/data-views/component-settings/overview.md).
+1. Add all event dimensions that you have defined in the [solution design reference](#solution-design-reference), to the dimension components in your data view. For example, the field **[!UICONTROL Event Name]**, which represents the **[!UICONTROL Event Name]** dimension. Ensure you configure the dimension component through the available [Component settings](/help/data-views/component-settings/overview.md).
 
    ![B2B data view - components - event dimensions](assets/b2b-dataview-components-event-dimensions.png)
 
-1. Add all event metrics that you have defined in your solution design reference to the metrics components in your data view. For example: field **[!UICONTROL eVar45]** that represents the **[!UICONTROL VoC Survey Satisfaction]** metric. Ensure you configure the dimension component using available [Component settings](/help/data-views/component-settings/overview.md).
+1. Add all event metrics that you have defined in the [solution design reference](#solution-design-reference) to the metrics components in your data view. For example, the field **[!UICONTROL SQL Qualified]**, which represents the **[!UICONTROL SQL Qualified]** metric. Ensure you configure the dimension component through the available [Component settings](/help/data-views/component-settings/overview.md).
 
    ![B2B data view - components - event metrics](assets/b2b-dataview-components-event-metrics.png)
 
-1. Add all account dimensions that you have defined in your solution design reference to the dimension components in your data view. For example field **[!UICONTROL Industry]** that represents the **[!UICONTROL Industry]** dimension. Ensure you configure the dimension component using available [Component settings](/help/data-views/component-settings/overview.md).
+1. Add all account dimensions that you have defined in the [solution design reference](#solution-design-reference) to the dimension components in your data view. For example, the field **[!UICONTROL Industry]**, which represents the **[!UICONTROL Industry]** dimension. Ensure you configure the dimension component through the available [Component settings](/help/data-views/component-settings/overview.md).
 
    ![B2B data view - components - account dimensions](assets/b2b-dataview-components-account-dimensions.png)
 
-1. Add all account metrics that you have defined in your solution design reference to the metrics components in your data view. For example: field **[!UICONTROL Number_of_Employees]** that represents the **[!UICONTROL Number_of_Employees]** metric. Ensure you configure the dimension component using available [Component settings](/help/data-views/component-settings/overview.md).
+1. Add all account metrics that you have defined in the [solution design reference](#solution-design-reference) to the metrics components in your data view. For example, the field **[!UICONTROL Number_of_Employees]**, which represents the **[!UICONTROL Number_of_Employees]** metric. Ensure you configure the dimension component through the available [Component settings](/help/data-views/component-settings/overview.md).
 
    ![B2B data view - components - account metrics](assets/b2b-dataview-components-account-metrics.png)
 
-1. Add all person dimensions that you have defined in your solution design reference to the dimension components in your data view. For example field **[!UICONTROL Category_1_Affinity_Level]** that represents the **[!UICONTROL Category_1_Affinity_Level]** dimension. Ensure you configure the dimension component using available [Component settings](/help/data-views/component-settings/overview.md).
+1. Add all person dimensions that you have defined in the [solution design reference](#solution-design-reference) to the dimension components in your data view. For example, the field **[!UICONTROL Category_1_Affinity_Level]**, which represents the **[!UICONTROL Category_1_Affinity_Level]** dimension. Ensure you configure the dimension component through the available [Component settings](/help/data-views/component-settings/overview.md).
 
    ![B2B data view - components - account dimensions](assets/b2b-dataview-components-person-dimensions.png)
 
-1. Add all person metrics that you have defined in your solution design reference to the metrics components in your data view. For example: field **[!UICONTROL Category_1_Affinity_Score]** that represents the **[!UICONTROL Category_1_Affinity_Score]** metric. Ensure you configure the dimension component using available [Component settings](/help/data-views/component-settings/overview.md).
+1. Add all person metrics that you have defined in the [solution design reference](#solution-design-reference) to the metrics components in your data view. For example, the field **[!UICONTROL Category_1_Affinity_Score]**, which represents the **[!UICONTROL Category_1_Affinity_Score]** metric. Ensure you configure the dimension component through the available [Component settings](/help/data-views/component-settings/overview.md).
 
    ![B2B data view - components - account metrics](assets/b2b-dataview-components-person-metrics.png)
 
-1. Add all SKU dimensions that you have defined in your solution design reference to the dimension components in your data view. For example field **[!UICONTROL Service Category]** that represents the **[!UICONTROL Service Category]** dimension. Ensure you configure the dimension component using available [Component settings](/help/data-views/component-settings/overview.md).
+1. Add all SKU dimensions that you have defined in the [solution design reference](#solution-design-reference) to the dimension components in your data view. For example, the field **[!UICONTROL Service Category]**, which represents the **[!UICONTROL Service Category]** dimension. Ensure you configure the dimension component through the available [Component settings](/help/data-views/component-settings/overview.md).
 
    ![B2B data view - components - account dimensions](assets/b2b-dataview-components-sku-dimensions.png)
 
@@ -352,16 +365,17 @@ By default, all [standard components](/help/data-views/component-reference.md) a
 
 You can prepare one or more B2B specific container-based segments that you can use in your Workspace project.
 
-As an example, a segments that returns all global accounts with a propensity to buy score that is greater than 8.
+For example: 
 
-1. [Create a segment](/help/components/filters/create-filters.md) in Customer Journey Analytics.
-1. Enter a title for the segment. For example: `Companies Likely To Buy`. Optionally, enter a description.
-1. Drag the **[!UICONTROL Company_Propensity_to_Buy_Score]** on the segment builder.
-1. Select the **[!UICONTROL is greater than]** operator.
-1. Enter a value. For example: `8`.
-1. Ensure you select the **[!UICONTROL Global Account]** from the **[!UICONTROL Include]** container.
-1. **[!UICONTROL Save]** the segment.
+* Accounts with event registration segment.
+
+  ![B2B use case - segment - accounts registered](assets/b2b-segments-accounts-registered.png)
+
+* US accounts with Buying Groups and stage 5 opportunities segment.
+
+  ![B2B use case - segment - stage 5](assets/b2b-segments-stage5.png)
+
 
 ## Other
 
-You can optionally configure other components for your use cases, like calculated metrics, date ranges, alerts.
+You can optionally define other components for your use cases, like [calculated metrics](/help/components/calc-metrics/calc-metr-overview.md), [date ranges](/help/components/date-ranges/overview.md), or [alerts]((/help/components/c-intelligent-alerts/intelligent-alerts.md).

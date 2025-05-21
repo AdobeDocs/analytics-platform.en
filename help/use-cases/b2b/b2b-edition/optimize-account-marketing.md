@@ -4,12 +4,14 @@ description: Learn about how to optimize account marketing using the Customer Jo
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
+hide: yes
+hidefromtoc: yes
 ---
 # Optimize account marketing
 
-Effective account based marketing requires a deep understanding of the buying journey at the account level. So you can determine the most impactful marketing activities to drive deal close.
+Effective account based marketing requires a deep understanding of the buying journey at the account level. So, you can determine the most impactful marketing activities to drive deal close.
 
-For this you want to analyze and explore:
+For this understanding you want to analyze and explore:
 
 * Marketing impact:
    
@@ -21,26 +23,26 @@ For this you want to analyze and explore:
 * Customer account health.
 
 
-Examples of how Customer Journey Analytics B2B Edition can support you in the optimization of account marketing are outlined below.
+Customer Journey Analytics B2B Edition can support you in the optimization of account marketing. See the following sections for examples.
 
 
 ## Account based marketing engagement
 
 You want to identify which experiences, both online and offline, are most impactful in driving closed opportunities.
 
-Use the [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) visualization to map every interaction across accounts, opportuniities, buying groups, campaigns, and channels for insights in what is working in your account marketing and where you can improve.
+Use the [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) visualization to map every interaction across accounts, opportunities, buying groups, campaigns, and channels for insights in what is working in your account marketing and where you can improve.
 
 A journey canvas visualization helps you to:
 
 * See the full story. For example, you can show a detailed path of a *specific* high-value account or buying group that includes all known online and offline interactions.
 * Contextualize key moments that lead up to or follow critical milestones (for example: a marketing qualified lead trigger, or opportunity creation).
-* Supports sales staff through the visualization's interaction history on specific accounts. This enables relevant conversations.
+* Supports sales staff through the visualization's interaction history on specific accounts. Such a visualization enables relevant conversations.
 
 ### Example
 
 You want to visualize the journey from a lead form to a closed won.
 
-1. Create and configure a [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) visalization.
+1. [Create and configure a Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) visualization.
 1. Configure **[!UICONTROL Account]** as the **[!UICONTROL Primary metric]**.
 1. Ensure you select **[!UICONTROL Account]** as the **[!UICONTROL Journey canvas container]**.
 
@@ -56,7 +58,7 @@ You want to visualize the journey from a lead form to a closed won.
 
 You want to identify key group of buyers so you activate these buyer groups for other channels, like paid media, email, social.
 
-Use the [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) visualization to group B2B entities (accounts, opportunites, buying groups) based on a shared starting point (like a market qualification (MQL) lead date). And track the progress of each of these entities iver time at subsequent stages or milestones.
+Use the [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) visualization to group B2B entities (accounts, opportunities, buying groups) based on a shared starting point (like a market qualification (MQL) lead date). And track the progress of each of these entities over time at subsequent stages or milestones.
 
 A cohort table visualization helps you to:
 
@@ -68,7 +70,7 @@ A cohort table visualization helps you to:
 
 You want to see monthly cohorts of closed opportunities.
 
-1. Create a [Cohort table](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md) visalization.
+1. [Create and configure a Cohort table](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md) visualization.
 1. Use **[!UICONTROL Opportunity Created]** as the **[!UICONTROL Inclusion criteria]** metric. Select **[!UICONTROL >=]** as the operator and enter value `1`.
 1. Use **[!UICONTROL Closed-Won]** as the **[!UICONTROL Return criteria]** metric. Select **[!UICONTROL >=]** as the operator and enter value `1`.
 1. Select **[!UICONTROL Opportunity]** as the container.
@@ -82,21 +84,21 @@ You want to see monthly cohorts of closed opportunities.
 
 ## In-person events
 
-You want to report on engaged account and viewing activity across multiple in-person events. So you can analyze and optimize the impact of in-person event attendance.
+You want to report on engaged account and viewing activity across multiple in-person events. So, you can analyze and optimize the impact of in-person event attendance.
 
-A [flow](/help/analysis-workspace/visualizations/c-flow/flow.md) visualization lets you visualize the paths users, but now also accounts or buying group take between interactions or stages over time.
+A [flow](/help/analysis-workspace/visualizations/c-flow/flow.md) visualization lets you visualize the paths users, but now also accounts or buying group, take between interactions or stages over time.
 
 A flow visualization helps you to:
 
-* Identify the most frequent sequences of touchpoints traversed by B2B entities (for example: from Site Visit to Whitepaper Download to Demo Request).
+* Identify the most frequent sequences of touchpoints traversed by B2B entities (for example: from *Site Visit* to *Whitepaper Download* to *Demo Request*).
 * Visualize how accounts or buying groups navigate non-linearly (for example: loop back, skip stages, or take unexpected routes).
-* Focus on the flow before or after critical a interaction (for example: a demo request) to understand what factors contribute to or what actions follow after the interaction.
+* Focus on the flow before or after a critical interaction (for example: a demo request) to understand what factors contribute to or what actions follow after the interaction.
 
 ### Example
 
 You want to visualize the influence on the generation of MQLs (marketing qualified leads).
 
-1. Create a [Flow](/help/analysis-workspace/visualizations/c-flow/create-flow.md) visualization.
+1. [Create and configure a Flow](/help/analysis-workspace/visualizations/c-flow/create-flow.md) visualization.
 1. Select **[!UICONTROL MQL Qualified]** for **[!UICONTROL End with]**.
 1. Select **[!UICONTROL Content Type]** for **[!UICONTROL Pathing dimension]**.
 1. Select **[!UICONTROL Show advanced settings]**.

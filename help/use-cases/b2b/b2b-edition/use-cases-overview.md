@@ -4,6 +4,8 @@ description: Learn about typical Customer Journey Analytics B2B Edition use case
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User, Admin
+hide: yes
+hidefromtoc: yes
 ---
 # B2B Edition use cases overview
 
@@ -27,11 +29,14 @@ The key personas that benefit from the analysis that Customer Journey Analytics 
 
 ## Use cases
 
-Based on above personas and their requirements, the following use cases are identified:
+Based on the above personas and their requirements, the following use cases are identified:
 
 ### Optimize account marketing
 
-Analyze and explore marketing impact across campaigns, channels, and content on buying groups within accounts, sales pipeline progression, upsell/cross-sell opportunities, and customer account health.
+Analyze and explore marketing impact: 
+
+- across campaigns, channels, and content,
+- on buying groups within accounts, sales pipeline progression, upsell- and cross-sell opportunities, and customer account health.
 
 The [detailed use case article](optimize-account-marketing.md) explores how Customer Journey Analytics B2B Edition can help to optimize account marketing.
 
@@ -43,11 +48,11 @@ The [detailed use case article](grow-key-accounts.md) explores how Customer Jour
 
 ### Build product value
 
-Measure impact of product  releases and product usage on customer satisfaction at the account and user level for optimizing product features and capabilities and informing future product development. 
+Measure the impact of product  releases and product usage on customer satisfaction at the account and user level. So, you can optimize product features and capabilities and inform future product development. 
 
 The [detailed use case article](build-product-value.md) explores how Customer Journey Analytics B2B Edition can help to build product value.
 
 
 ## Setup
 
-Before you can implement above mentioned use cases, ensure you have [setup](setup.md) your Customer Journey Analytics B2B Edition properly.
+The [setup article](setup.md) discusses how to set up Customer Journey Analytics B2B Edition to support these use cases.
