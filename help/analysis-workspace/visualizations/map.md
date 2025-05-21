@@ -60,9 +60,9 @@ Two context labels are required for the map visualization to function:
 
 In your data view that contains data that you want to analyze in the map visualization, pick two dimensions, one with the latitude data and one with the longitude data. Then label those dimensions with the **[!UICONTROL Geo: Latitude]** and the **[!UICONTROL Geo: Longitude]** context labels.
 
-![Latitude and longitude context labels](assets/map-context-labels-lat-long.png)
-
 Without these labels present, the map visualization does not work, because there is no latitude and longitude data to work with.
+
+![Latitude and longitude context labels](assets/map-context-labels-lat-long.png)
 
 #### Required context labels for geo templates
 
@@ -70,7 +70,7 @@ Adobe provides several [pre-built templates](/help/analysis-workspace/templates/
 
 Following are the templates and the required context label:
 
-| Template | Required context label | 
+| Template name | Required context label | 
 |---------|----------|
 | Geo contries | [!UICONTROL Geo: Geo Country] | 
 | Geo regions | [!UICONTROL Geo: Geo Region] | 
@@ -78,11 +78,11 @@ Following are the templates and the required context label:
 | Geo US states | [!UICONTROL Geo: Geo State] | 
 | Geo US DMA | [!UICONTROL Geo: Geo Dma] | 
 
-In your data view that contains data that you want to analyze in the map visualization in one of these pre-built templates, pick five dimensions, one with the country data, one with the region data, one with the city data, one with the state data, and one with the DMA data. Then label those dimensions with the **[!UICONTROL Geo: Geo Country]**, **[!UICONTROL Geo: Geo Region]**, **[!UICONTROL Geo: Geo City]**, **[!UICONTROL Geo: Geo State]**, and the **[!UICONTROL Geo: Dma]** context labels, respectively.
-
-![Templates context labels](assets/map-context-labels-templates.png)
+In your data view that contains data that you want to analyze with a pre-built templates that uses the map visualization, pick five dimensions, one with the country data, one with the region data, one with the city data, one with the state data, and one with the DMA data. Then label those dimensions with the corresponding context label: **[!UICONTROL Geo: Geo Country]**, **[!UICONTROL Geo: Geo Region]**, **[!UICONTROL Geo: Geo City]**, **[!UICONTROL Geo: Geo State]**, and **[!UICONTROL Geo: Dma]**.
 
 Without these labels present, the templates do not work, because there is no geo data to work with.
+
+![Templates context labels](assets/map-context-labels-templates.png)
 
 ### Graphics drivers must support WebGL rendering
 
