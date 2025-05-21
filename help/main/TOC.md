@@ -430,7 +430,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [An example person-based B2B project](../use-cases/b2b/example.md)
     + B2B Edition {b2b-edition}
       + [Use cases overview](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
-      + [Set up](/help/use-cases/b2b/b2b-edition/setup.md)
+      + [Setup](/help/use-cases/b2b/b2b-edition/setup.md)
       + [Optimize account marketing](/help/use-cases/b2b/b2b-edition/optimize-account-marketing.md)
       + [Grow key accounts](/help/use-cases/b2b/b2b-edition/grow-key-accounts.md)
       + [Build product value](/help/use-cases/b2b/b2b-edition/build-product-value.md)
