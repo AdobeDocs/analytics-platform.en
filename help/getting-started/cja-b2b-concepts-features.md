@@ -27,7 +27,7 @@ In Customer Journey Analytics B2B Edition, you can select between a person-based
 
 ## Containers
 
-In Customer Journey Analytics containers are generated as part of the configuration of a connection and data view. Containers store groups of identifiers to facilitate quick and performant execution of functionalities like segmentation, breakdowns, and more.
+In Customer Journey Analytics containers are generated as part of the configuration of a connection and data view, and provide provide data structure and scope. Containers store groups of identifiers to sequence all event timestamps by unique identifiers. That storage facilitates quick and performant execution of functionalities like segmentation, attribution, and visualizations.
 
 ### Standard containers
 
@@ -59,7 +59,7 @@ The hierarchy and relationships between the containers is predetermined. Opportu
 >* If you have **enabled** the Global Account container in an account-based connection, every record in your event datasets should contain an Account ID and Global Account ID. If not, the record is skipped.
 >* If you have **not enabled** the Global Account container in an account-based connection, every record in your event datasets should contain an Account ID. If not, the record is skipped.
 
-Use the additional B2B containers for specific additional B2B functionality in Analysis Workspace:
+You can use the B2B containers for specific B2B functionality in Analysis Workspace:
 
 * **Segmentation**: [B2B segment containers](/help/components/filters/filters-overview.md#b2b-containers) allow you to build segments with a container scope beyond person, session or event. For example: an Accounts with event registration segment, or a US accounts with buying groups and stage 5 opportunities segment.
    
