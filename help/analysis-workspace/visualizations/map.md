@@ -133,9 +133,18 @@ The map visualization in Customer Journey Analytics differs from the map visuali
 
 1. Specify the following basic information to configure the map visualization:
 
-   * Add a metric: In the metric drop-down list, select a metric. Or drag in a metric from the list of metrics (including calculated metrics).
+   * **[!UICONTROL Add metric]**: In the metric drop-down list, select a metric or calculated metric. (You can also drag a metric from the left rail.)
 
-   * Add a segment: In the segment drop-down list, select a segment. Or drag in a segment from the list of segments.
+     >[!IMPORTANT]
+     >
+     >Only choose metrics that use an [attribution model](/help/data-views/component-settings/attribution.md#attribution-models) that gives 100% credit to the touch point. For example, Last Touch, First Touch, Same Touch, and Participation all give 100% credit. 
+     >
+     >Avoid choosing metrics that have attribution models that give partial credit, such as U Shaped and Time Decay. Metrics with these attribution models result in inaccurate map data, because attribution is applied to the latitude and longitude pairs. 
+     >
+     
+     <!-- Only choose metrics that use Last Touch as the [attribution model](/help/data-views/component-settings/attribution.md#attribution-models) (this is the default attribution model for all metrics). Choosing a metric that has an attribution model other than Last Touch results in inaccurate map data, because attribution is applied to the latitude and longitude pairs. -->
+
+   * **[!UICONTROL Add segment]**: In the segment drop-down list, select a segment. Or drag in a segment from the list of segments.
 
    You can update this information after the visualization is built by selecting the edit icon ![Edit](/help/assets/icons/Edit.svg) in the visualization header.
 
@@ -145,7 +154,7 @@ The map visualization in Customer Journey Analytics differs from the map visuali
 
    ![](assets/map-visualization.png)
 
-1. (Optional) Continue with [View a map visualization](#view-a-map-visualization) and [Configure visualization settings](#configure-visualization-settings).
+1. Continue with [View a map visualization](#view-a-map-visualization) and [Configure visualization settings](#configure-visualization-settings).
 
 ## View a map visualization
 
