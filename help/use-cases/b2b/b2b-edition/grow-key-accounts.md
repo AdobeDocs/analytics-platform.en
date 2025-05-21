@@ -1,11 +1,12 @@
 ---
-title:  Grow Key Accounts
+title: Grow Key Accounts
 description: Learn about how to grow key accounts using the Customer Journey Analytics B2B Edition.
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
 hide: yes
 hidefromtoc: yes
+exl-id: f5294af8-b8dc-4239-b0f7-5c20d39007ee
 ---
 # Grow key accounts
 
@@ -45,4 +46,3 @@ You can use these Customer Journey Analytics B2B Edition features:
 1. [Intelligent alerts](/help/components/c-intelligent-alerts/intelligent-alerts.md)
 1. [Share with workspace users or with anyone](/help/analysis-workspace/curate-share/share-projects.md)
 1. [Comments](/help/analysis-workspace/build-workspace-project/comment-projects.md)
-

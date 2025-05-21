@@ -1,11 +1,12 @@
 ---
-title:  Build Product Value
+title: Build Product Value
 description: Learn about how to build product value using the Customer Journey Analytics B2B Edition.
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
 hide: yes
 hidefromtoc: yes
+exl-id: 509c68e1-a8cc-48ac-9e9d-50c703356dbc
 ---
 # Build product value
 
@@ -55,5 +56,3 @@ You want to create a mobile scorecard that combines details about accounts, oppo
 1. Use **[!UICONTROL Preview]** to preview the dashboard. The dashboard is now available from the Adobe Analytics dashboard app, available from the [App Store](https://apps.apple.com/us/app/adobe-analytics-dashboards/id1509062264) or [Google Play](https://play.google.com/store/apps/details?id=com.adobe.analyticsdashboards).
 
    ![B2B use case - Build product value - Democratize insights - mobile scorecard preview](assets/b2b-uc-build-product-value-mobile-scorecard-preview.png)
-
-   
