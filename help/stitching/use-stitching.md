@@ -8,7 +8,7 @@ exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
 ---
 # Use stitching
 
-Once your organization meets all [prerequisites](#prerequisites) and understands common [limitations](#limitations) and stitching method specific ([field-based](#limitations-1) and [graph-based](#limitations-2)) limitations, you can follow these steps to start using stitching in Customer Journey Analytics.
+Once your organization meets all [prerequisites](overview.md#prerequisites) and understands common [limitations](overview.md#limitations) and stitching method specific ([field-based](fbs.md#limitations) and [graph-based](gbs.md#limitations)) limitations, you can follow these steps to start using stitching in Customer Journey Analytics.
 
 ## Select options
 
