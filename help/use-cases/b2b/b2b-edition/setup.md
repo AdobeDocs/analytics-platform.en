@@ -378,4 +378,4 @@ For example:
 
 ## Other
 
-You can optionally define other components for your use cases, like [calculated metrics](/help/components/calc-metrics/calc-metr-overview.md), [date ranges](/help/components/date-ranges/overview.md), or [alerts]((/help/components/c-intelligent-alerts/intelligent-alerts.md).
+You can optionally define other components for your use cases, like [calculated metrics](/help/components/calc-metrics/calc-metr-overview.md), [date ranges](/help/components/date-ranges/overview.md), or [alerts](/help/components/c-intelligent-alerts/intelligent-alerts.md).
