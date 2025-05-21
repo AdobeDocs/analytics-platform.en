@@ -1,5 +1,5 @@
 ---
-title:  Optimize Account Marketing
+title: Optimize Account Marketing
 description: Learn about how to optimize account marketing using the Customer Journey Analytics B2B Edition.
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -7,6 +7,7 @@ role: User
 hide: yes
 hidefromtoc: yes
 badgePremium: label="B2B Edition"
+exl-id: d5e44546-ea82-42eb-98df-19d51c71e9be
 ---
 # Optimize account marketing
 
@@ -113,4 +114,3 @@ You want to visualize the influence on the generation of MQLs (marketing qualifi
 1. Select **[!UICONTROL Build]**.
 
    ![B2B use case - in-person-events - flow config](assets/b2b-uc-optimize-marketing-flow.png)
-

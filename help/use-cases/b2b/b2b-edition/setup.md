@@ -7,6 +7,7 @@ role: User
 hide: yes
 hidefromtoc: yes
 badgePremium: label="B2B Edition"
+exl-id: f959a77b-ccfb-43f2-93bb-b330e73d59ac
 ---
 # Setup for B2B Edition use cases
 
