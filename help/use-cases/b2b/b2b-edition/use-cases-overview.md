@@ -6,8 +6,11 @@ feature: Use Cases
 role: User, Admin
 hide: yes
 hidefromtoc: yes
+badgePremium: label="B2B Edition"
 ---
 # B2B Edition use cases overview
+
+{{draft-b2b}}
 
 This section of the documentation details some specific B2B use cases that aim to provide insights in the often more complex B2B purchase journey. A typical B2B purchase involves buying groups, cross-channel touchpoints by different stakeholders, opportunities at various stages in the sales cycle, and more.
 

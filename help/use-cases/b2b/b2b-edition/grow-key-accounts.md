@@ -6,8 +6,11 @@ feature: Use Cases
 role: User
 hide: yes
 hidefromtoc: yes
+badgePremium: label="B2B Edition"
 ---
 # Grow key accounts
+
+{{draft-b2b}}
 
 Growing and retaining key accounts is a high priority for B2B companies. A prerequisite to ensure that deals progress is to communicate with key stakeholders in your target accounts at the right time.
 

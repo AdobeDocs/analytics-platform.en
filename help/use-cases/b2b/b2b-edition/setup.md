@@ -6,8 +6,11 @@ feature: Use Cases
 role: User
 hide: yes
 hidefromtoc: yes
+badgePremium: label="B2B Edition"
 ---
 # Setup for B2B Edition use cases
+
+{{draft-b2b}}
 
 This article covers a typical setup of the Customer Journey Analytics B2B Edition to support the following uses cases:
 

@@ -6,8 +6,11 @@ feature: Use Cases
 role: User
 hide: yes
 hidefromtoc: yes
+badgePremium: label="B2B Edition"
 ---
 # Build product value
+
+{{draft-b2b}}
 
 You want to deliver B2B product value insights to product managers and CMO or CEOs. For example, through a data driven churn analysis or predications. And make these insights digestible through mobile dashboards.
 
