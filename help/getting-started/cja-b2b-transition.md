@@ -7,6 +7,7 @@ role: User, Admin
 badgePremium: label="B2B Edition"
 hide: yes
 hidefromtoc: yes
+exl-id: d0e6398b-8080-4e36-b178-0cb91945d0c5
 ---
 # Transition guide
 
