@@ -112,6 +112,7 @@ To ensure Content Analytics data and Adobe Experience Platform Web SDK data is s
 
 1. Select **[!UICONTROL Save]** to save the code.
 1. Select **[!UICONTROL Save]** to save the extension.
+1. [Publish](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) the updates for your Tags property.
 
 
 
