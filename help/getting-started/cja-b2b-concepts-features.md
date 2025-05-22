@@ -27,7 +27,7 @@ In Customer Journey Analytics B2B Edition, you can select between a person-based
 
 ## Containers
 
-In Customer Journey Analytics containers are generated as part of the configuration of a connection and data view. Containers store groups of identifiers to facilitate quick and performant execution of functionalities like segmentation, breakdowns, and more.
+In Customer Journey Analytics containers are generated as part of the configuration of a connection and data view, and provide provide data structure and scope. Containers store groups of identifiers to sequence all event timestamps by unique identifiers. That storage facilitates quick and performant execution of functionalities like segmentation, attribution, and visualizations.
 
 ### Standard containers
 
@@ -58,6 +58,23 @@ The hierarchy and relationships between the containers is predetermined. Opportu
 >
 >* If you have **enabled** the Global Account container in an account-based connection, every record in your event datasets should contain an Account ID and Global Account ID. If not, the record is skipped.
 >* If you have **not enabled** the Global Account container in an account-based connection, every record in your event datasets should contain an Account ID. If not, the record is skipped.
+
+You can use the B2B containers for specific B2B functionality in Analysis Workspace:
+
+* **Segmentation**: [B2B segment containers](/help/components/filters/filters-overview.md#b2b-containers) allow you to build segments with a container scope beyond person, session or event. For example: an Accounts with event registration segment, or a US accounts with buying groups and stage 5 opportunities segment.
+   
+  >[!NOTE]
+  >
+  >The B2B event data in an account based setup in Customer Journey Analytics B2B Edition may contain rows of data without a person or session. For example: a row that details opportunity stage progression. When you evaluate your segment, keep in mind that people and sessions may no longer be the right criteria.
+  >
+
+* **Attribution**: You can use the new B2B containers in [attribution panel](/help/analysis-workspace/c-panels/attribution.md), in [attribution component settings](/help/data-views/component-settings/attribution.md),  in [calculated metrics](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md), or in [columns in a Freeform table](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md). Account lookbacks are extended to 13 months.
+
+* **Visualizations**: [Fall out](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md), [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md), and [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) visualizations support the new B2B containers. For example: you can use the new containers to understand how buying groups consume content, or how opportunity cohorts move towards the close of a sale. 
+You can also set the default container for these visualization in the [user preferences](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
+
+Segments, attribution, and visualizations together with the B2B containers support you in deep B2B analysis and insights. 
+
 
 ## Datasets
 

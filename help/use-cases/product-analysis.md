@@ -44,8 +44,6 @@ Product growth hinges on actionable top-of-funnel insights that attract new user
 
 ![Active growth](/help/guided-analysis/assets/active.png)
 
-![Engagement analysis](/help/guided-analysis/assets/feature-matrix.png)
-
 The following capabilities in Customer Journey Analytics enable you to measure both acquisition and activation effectively:
 
 * [Guided analysis​: Active growth](/help/guided-analysis/types/active-growth.md)
@@ -57,6 +55,8 @@ The following capabilities in Customer Journey Analytics enable you to measure b
 ## Measure engagement and adoption
 
 Acquiring new users expands the top of your product funnel. Engagement focuses on guiding those users further down the funnel and removing obstacles to their success. Their success directly drives your business success.
+
+![Engagement analysis](/help/guided-analysis/assets/feature-matrix.png)
 
 The following capabilities in Customer Journey Analytics help you track product engagement and adoption:
 

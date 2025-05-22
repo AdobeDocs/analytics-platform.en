@@ -39,6 +39,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Overview](/help/getting-started/cja-b2b-edition.md)
     + [B2B concepts and features](/help/getting-started/cja-b2b-concepts-features.md)
     + [Quick start guide](/help/getting-started/cja-b2b-quick-start-guide.md)
+    + [Transition guide](/help/getting-started/cja-b2b-transition.md)
 
 + Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
   + Upgrade to Customer Journey Analytics {#upgrade-to-cja}
@@ -405,6 +406,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Graph based stitching](/help/stitching/gbs.md)
   + [Use stitching](/help/stitching/use-stitching.md)
   + [Create and manage stitched datasets](/help/stitching/stitching-ui.md)
+  + [Validate stitching](/help/stitching/validate.md)
   + [Frequently Asked Questions](/help/stitching/faq.md)  
 
 + Adobe integrations {#integrations}
@@ -426,7 +428,13 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Use Marketing channel dimensions](../use-cases/aa-data/marketing-channels.md)
     + [Combine report suites with different schemas](../use-cases/aa-data/combine-report-suites.md)
   + B2B {#b2b}
-    + [An example B2B project](../use-cases/b2b/example.md)
+    + [An example person-based B2B project](../use-cases/b2b/example.md)
+    + B2B Edition {#b2b-edition}
+      + [Use cases overview](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
+      + [Setup](/help/use-cases/b2b/b2b-edition/setup.md)
+      + [Optimize account marketing](/help/use-cases/b2b/b2b-edition/optimize-account-marketing.md)
+      + [Grow key accounts](/help/use-cases/b2b/b2b-edition/grow-key-accounts.md)
+      + [Build product value](/help/use-cases/b2b/b2b-edition/build-product-value.md)
   + Complex data {#complex-data}
     + [Use arrays of objects](../use-cases/object-arrays.md)
   + Cross-channel data {#cross-channel}

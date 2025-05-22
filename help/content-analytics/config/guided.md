@@ -103,6 +103,11 @@ Each configuration requires a unique name. For example, `Example Content Analyti
 >title="Cleanup previous data view"
 >abstract="You have selected a new data view. The Content Analytics configuration for the previous selected data view is removed."
 
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataview_new_dialog"
+>title="New data view"
+>abstract="You have selected a new data view for this configuration. The new data view will be updated to include Content Analytics metrics and dimensions. Similar metrics and dimensions will be removed from the existing data view.<br/>If a different connection is associated with the new data view then the connection will be updated to include Content Analytics datasets. Note that Content Analytics datasets are not removed from the existing configuration."
+
 <!-- markdownlint-enable MD034 -->
 
 Your configuration requires the selection of a [Data view](/help/data-views/data-views.md). 

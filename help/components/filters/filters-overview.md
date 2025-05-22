@@ -31,7 +31,7 @@ Especially, as an administrator, the proper planning of segments improves the ch
 
   - When should I use this segment? 
 
-- **Scope**: Which [Segment container](#filter-containers) best represents the data you are after? Use the smallest container possible.
+- **Scope**: Which [Segment container](#segment-containers) best represents the data you are after? Use the smallest container possible.
 
 - **Components**: Decide which components to include in the segment definition, and against which values the conditions should validate.
 
