@@ -138,7 +138,7 @@ See [Create or edit a data view](/help/data-views/create-dataview.md) for more i
 
 You can use a Journey Optimizer connection in Customer Journey Analytics to bring the following additional value to your connection:
 
-* Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics (by using the **[!UICONTROL Analyze in CJA]** option within Journey Optimizer).
+* Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics (by using the **[!UICONTROL Analyze in CJA]** button within Journey Optimizer).
 
   For more information, see [Analyze in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template) in the Journey Optimizer documentation. 
 
@@ -178,7 +178,9 @@ You can remove the Journey Optimizer connection from Customer Journey Analytics 
 
 * Any custom derived fields associated with the connection will be deleted
 
-* You can no longer perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics
+* You can no longer perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics 
+
+  The **[!UICONTROL Analyze in CJA]** button in Journey Optimizer will be disabled
 
 >[!IMPORTANT]
 >
