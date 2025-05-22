@@ -121,7 +121,16 @@ The map visualization in Customer Journey Analytics differs from the map visuali
 | Create a trend from a selection | Create a trended line chart visualization based on a specific area that you select in the map visualization. <p>For more information, see [Create a trended line chart from the map visualization](#create-a-trended-line-chart-from-the-map-visualization). <!-- is this correct? --> | Cannot create a trend from the map visualization. |
 | Add a breakdown from a selection | Break down a specific dimension item, metric, segment, or date range within a specific area that you select in the map visualization. <p>For more information, see [Add a breakdown from the map visualization](#add-a-breakdown-from-the-map-visualization). | Cannot add a breakdown from the map visualization. |
 
-## Begin building a map visualization
+## Begin building a map visualization {#begin-building-map}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_map_panel"
+>title="Configure the map visualization"
+>abstract="Choose the metric or calculated metric that is used as the basis for your map visualization. You can also add a segment if you want to focus on a specific subset of the data.<p>You can update this information any time after the visualization renders.</p>"
+
+<!-- markdownlint-enable MD034 -->
 
 1. Select the [!UICONTROL **Visualizations**] icon in the left rail, then drag the **[!UICONTROL Map]** visualization ![Map](/help/assets/icons/Globe.svg) into a panel that contains a freeform table. 
 
@@ -142,7 +151,7 @@ The map visualization in Customer Journey Analytics differs from the map visuali
      
      <!-- Only choose metrics that use Last Touch as the [attribution model](/help/data-views/component-settings/attribution.md#attribution-models) (this is the default attribution model for all metrics). Choosing a metric that has an attribution model other than Last Touch results in inaccurate map data, because attribution is applied to the latitude and longitude pairs. -->
 
-   * **[!UICONTROL Add segment]**: In the segment drop-down list, select a segment. Or drag in a segment from the list of segments.
+   * **[!UICONTROL Add segment]**: (Optional) In the segment drop-down list, select a segment. Or drag in a segment from the list of segments.
 
    You can update this information after the visualization is built by selecting the edit icon ![Edit](/help/assets/icons/Edit.svg) in the visualization header.
 
