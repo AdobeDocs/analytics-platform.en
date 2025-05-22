@@ -39,6 +39,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Overview](/help/getting-started/cja-b2b-edition.md)
     + [B2B concepts and features](/help/getting-started/cja-b2b-concepts-features.md)
     + [Quick start guide](/help/getting-started/cja-b2b-quick-start-guide.md)
+    + [Transition guide](/help/getting-started/cja-b2b-transition.md)
 
 + Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
   + Upgrade to Customer Journey Analytics {#upgrade-to-cja}
