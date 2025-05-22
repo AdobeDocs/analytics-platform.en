@@ -102,7 +102,7 @@ The comment feature in Analysis Workspace makes it easier to collaborate with ot
 
 Consider the following when using the @ symbol to include people in a comment: 
    
-* People you include receive notifications based on their Adobe Experience Cloud notification settings. By default, they receive an [Experience Cloud notification](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications). 
+* People you include receive notifications based on their Adobe Experience Cloud notification settings. By default, they receive an in-app notification, visible from the [Experience Cloud notification](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) icon ![Experience Cloud notification icon](assets/experience-cloud-notification.png) in Customer Journey Analytics. 
 
   Additionally, people can configure their Experience Cloud notification settings to receive email notifications and Slack notifications by [subscribing to email notifications](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) and [subscribing to Slack notifications](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
 
