@@ -98,19 +98,23 @@ To add comments to a project in Analysis Workspace:
 
 ## Include others in a comment
 
-The comment feature in Analysis Workspace makes it easier to collaborate with others. To include another person in your comment:
+The comment feature in Analysis Workspace makes it easier to collaborate with others. 
+
+Consider the following when using the @ symbol to include people in a comment: 
+   
+* People you include receive notifications based on their Adobe Experience Cloud notification settings. By default, they receive an [Experience Cloud notification](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications). 
+
+  Additionally, people can configure their Experience Cloud notification settings to also receive email notifications and Slack notifications by [subscribing to email notifications](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) and [subscribing to Slack notifications](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
+
+* You can include anyone in your organization in a comment, but this does not automatically grant them access to the project. Only people who already have access to the project can access it.
+
+To include another person in your comment:
 
 1. Type the @ symbol, then begin typing the first name, last name, or email address of the person you want to include.
 
    ![tag user](assets/comments-tag-user.png)
 
-1. Select the person's name when it appears in the drop-down menu.
-
-Consider the following when using the @ symbol to include people in a comment: 
-   
-* People you include receive an email notification and a Pulse notification.
-
-* You can include anyone in your organization in a comment, but this does not automatically grant them access to the project. Only people who already have access to the project can access it. 
+1. Select the person's name when it appears in the drop-down menu. 
 
 ## Reply to a comment
 
