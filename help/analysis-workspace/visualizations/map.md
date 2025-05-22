@@ -137,9 +137,7 @@ The map visualization in Customer Journey Analytics differs from the map visuali
 
      >[!IMPORTANT]
      >
-     >Only choose metrics that use an [attribution model](/help/data-views/component-settings/attribution.md#attribution-models) that gives 100% credit to the touch point. For example, Last Touch, First Touch, Same Touch, and Participation all give 100% credit. 
-     >
-     >Avoid choosing metrics that have attribution models that give partial credit, such as U Shaped and Time Decay. Metrics with these attribution models result in inaccurate map data, because attribution is applied to the latitude and longitude pairs. 
+     >If you choose a metric that has [attribution applied](/help/data-views/component-settings/attribution.md#attribution-models), the same attribution is applied to the latitude and longitude pairs within the map visualization's current viewport.  
      >
      
      <!-- Only choose metrics that use Last Touch as the [attribution model](/help/data-views/component-settings/attribution.md#attribution-models) (this is the default attribution model for all metrics). Choosing a metric that has an attribution model other than Last Touch results in inaccurate map data, because attribution is applied to the latitude and longitude pairs. -->
