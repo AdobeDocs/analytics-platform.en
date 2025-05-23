@@ -126,11 +126,14 @@ See [Example](#example) for an example of using an attribution model and lookbac
 >abstract="Credit is dynamically determined on a statistical algorithm."
 
 
+>[!CONTEXTUALHELP]
+>id="components_calculatedmetrics_attribution_container"
+>title="Container"
+>abstract="Select a container to set the desired scope for the attribution."
+
 
 {{attribution-models-details}}
 
-
-### Lookback window {#lookback-window}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -139,7 +142,6 @@ See [Example](#example) for an example of using an attribution model and lookbac
 >title="Lookback window"
 >abstract="This setting determines the window of data attribution that will be applied for each conversion."
 
-<!-- markdownlint-enable MD034 -->
 
 {{attribution-lookback-window}}
 
