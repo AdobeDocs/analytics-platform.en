@@ -151,7 +151,7 @@ Or, you could define 52 segments: 50 segments for the US states, one for mobile 
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_instance"
 >title="Instance"
->abstract="Includes instances and persisted values for the dimension."
+>abstract="Includes instances for the dimension."
 
 
 >[!CONTEXTUALHELP]
