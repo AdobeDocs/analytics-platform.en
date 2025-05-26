@@ -89,6 +89,11 @@ To reduce the number of calls leaving the page, Content Analytics collects infor
 * The URL changes, which results in a modified relevant URL.
 * Asset views recorded and ready to be sent exceed the number of 32.
 
+>[!NOTE]
+>
+>The additional Content Analytics events most likely affect any bounce rate definition that is based on the number of events in a session or a page. 
+>
+
 
 ## Schemas
 

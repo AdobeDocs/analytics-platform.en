@@ -7,14 +7,10 @@ role: User
 ---
 # Workspace totals {#workspace-totals}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_grandtotal"
 >title="Grand Total"
->abstract="Grand total is not supported for tables or breakdowns with static rows"
-
-<!-- markdownlint-enable MD034 -->
+>abstract="Grand total is not supported for tables or breakdowns with static rows."
 
 
 In Freeform tables, a total row appears at each breakdown level and can show two totals:

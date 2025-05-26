@@ -54,13 +54,9 @@ Content Analytics uses web image view data in event datasets in Experience Platf
 
 >[!NOTE]
 >
->If you have licensed the Privacy and Security Shield add-on, be aware that (any data generated from) experiences and assets, subject to Content Analytics, are not covered by DULE labeling or Customer Managed Keys.
+>If you have licensed the Privacy and Security Shield add-on, be aware that (any data generated from) experiences and assets, subject to Content Analytics, are not covered by DULE labeling or Customer Managed Keys. Also, Content Analytics is not HIPAA-Ready.
 >
 
->[!NOTE]
->
->Content Analytics [sends additional events](config/datacollection.md#content-analytics-event) that most likely affect any bounce rate definition that is based on the number of events in a session or a page. 
->
 
 >[!MORELIKETHIS]
 >
