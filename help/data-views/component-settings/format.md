@@ -18,11 +18,11 @@ role: Admin
 <!-- markdownlint-enable MD034 -->
 
 
-Format lets you determine how a given metric is displayed when used in reports.
+Format lets you determine how a given component is displayed when used in reports.
 
-## Configure format settings for a metric
+## Configure format settings for a component
 
-You can determine how a given metric is displayed by adjusting its format settings.
+You can determine how a given component is displayed by adjusting its format settings.
 
 1. In Customer Journey Analytics, select the [!UICONTROL **Data views**] tab.
 
@@ -38,12 +38,12 @@ You can determine how a given metric is displayed by adjusting its format settin
 
    | Setting | Description |
    | --- | --- |
-   | **[!UICONTROL Format]** | Lets you specify the formatting of a metric as Decimal, Time, Percent, or Currency. |
-   | **[!UICONTROL Decimal]** | Not visible on Integer schema data types. Lets you specify the number of decimal places a metric displays. |
+   | **[!UICONTROL Format]** | Lets you specify the formatting of a component as Decimal, Time, Percent, or Currency. |
+   | **[!UICONTROL Decimal]** | Not visible on Integer schema data types. Lets you specify the number of decimal places a component displays. |
    | **[!UICONTROL Date]** | Lets you determine how you want the date-time field displayed when used as a dimension in reporting. [Learn more](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
    | **[!UICONTROL Date-Time]** | Lets you determine how you want the date-time field displayed when used as a dimension in reporting. [Learn more](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
-   | **[!UICONTROL Currency]** | Lets you determine which currency you want the metric to display in. <p>If you analyze global data where transactions occur in different currencies, see  [Use currency conversion](#use-currency-conversion).</p> |
-   | **[!UICONTROL Show upward trend as]** | Lets you specify if an upward trend on this metric is good (green) or bad (red). |
+   | **[!UICONTROL Currency]** | Lets you determine which currency you want the component to display in. <p>If you analyze global data where transactions occur in different currencies, see  [Use currency conversion](#use-currency-conversion).</p> |
+   | **[!UICONTROL Show upward trend as]** | Lets you specify if an upward trend on this component is good (green) or bad (red). |
    | **[!UICONTROL True value]** and **[!UICONTROL False value]** | Only visible on Boolean schema data types. Lets you customize the dimension item label for `true` and `false` values. |
 
    {style="table-layout:auto"}
