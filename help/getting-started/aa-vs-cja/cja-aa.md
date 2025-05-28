@@ -112,13 +112,12 @@ The following table lists features that are available in Customer Journey Analyt
 
 | Feature | Notes |
 | --- | --- |
-| **Panels** | Blank Panel, Attribution Panel, Freeform Panel, and Quick Insights are fully supported. The Segment Comparison and Analytics for Target (A4T) panels are not supported. |
+| **Workspace panels** | Blank Panel, Attribution Panel, Freeform Panel, and Quick Insights are fully supported. The Segment Comparison and Analytics for Target (A4T) panels are not supported. |
 
 ## No support, but planned {#planned}
 
 | Feature | Notes |
 | --- | --- |
-| **Contribution analysis** | Support is planned. |
 | **Real-time reporting** | Support is planned. |
 | **Segment IQ** | Support is planned. |
 | **Transaction ID data sources** | Support is planned. |
@@ -128,6 +127,7 @@ The following table lists features that are available in Customer Journey Analyt
 | Feature | Notes |
 | --- | --- |
 | **Activity Map** | Support is not yet planned. |
+| **Contribution analysis** | Support is not yet planned. |
 
 ## Will never be supported {#never}
 
