@@ -82,9 +82,16 @@ window.adobe.getContentExperienceVersion = () => {
 };
 ```
 
-## Stitching
+## Identities
 
-To ensure Content Analytics data and Adobe Experience Platform Web SDK data is stitched correctly at the field level, you need to make modifications to the Web SDK [on before event send](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} callback.
+Content Analytics handle identities in the following way:
+
+* ECID is automatically populated in the `identityMap` portion of the Content Analytics schema.
+* If you require other identity values in the `identityMap`, you need to set these values in the `onBeforeEventSend` callback within the Web SDK extension.
+* Field-based stitching is not supported because the schema is system-owned. So, you cannot add another field to the schema to support field-based stitching
+
+
+To ensure Content Analytics identity data and Adobe Experience Platform Web SDK data identity data are stitched correctly at the field level, you need to make modifications to the Web SDK [on before event send](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} callback.
 
 1. Navigate to your **[!UICONTROL Tags]** property that contains the Adobe Experience Platform Web SDK extension and Adobe Content Analytics extension.
 1. Select ![Plug](/help/assets/icons/Plug.svg) **[!UICONTROL Extensions]**.
