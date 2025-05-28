@@ -7,7 +7,18 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 ---
-# Manage connections
+# Manage connections {#manage-connections}
+
+>[!CONTEXTUALHELP]
+>id="connections_use_ajo"
+>title="Use Journey Optimizer connection"
+>abstract="Leverages the advanced Customer Journey Analytics reporting capabilities with Journey Optimizer."
+
+>[!CONTEXTUALHELP]
+>id="connections_cancel_ajo"
+>title="Cancel Journey Optimizer connection"
+>abstract="Cancels the advanced Customer Journey Analytics reporting capabilities with Journey Optimizer."
+
 
 Once you have [created or edited one or more connections](/help/connections/create-connection.md), you can manage them in **[!UICONTROL Connections]**. The [!UICONTROL Connections] interface let you:
 
