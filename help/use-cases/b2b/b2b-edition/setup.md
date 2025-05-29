@@ -282,7 +282,7 @@ Define an account-based connection in Customer Journey Analytics to ingest and j
    ![B2B connection - add datasets](assets/b2b-connection-add-datasets.png)
 
 1. Select **[!UICONTROL Next]** to configure the settings for each of the selected datasets.
-1. For the event dataset, ensure you select the appropriate eVars that correspond to the identities for **[!UICONTROL Account ID]**, **[!UICONTROL Global Account ID]**, **[!UICONTROL Opportunity ID]**, **[!UICONTROL Buying Group ID]** and **[!UICONTROL Person ID]**.
+1. For the event dataset, ensure you select the appropriate fields that correspond to the identities for **[!UICONTROL Account ID]**, **[!UICONTROL Global Account ID]**, **[!UICONTROL Opportunity ID]**, **[!UICONTROL Buying Group ID]** and **[!UICONTROL Person ID]**.
 
    ![B2B connection - add event dataset](assets/b2b-connection-add-datasets-event-data.png). 
 
