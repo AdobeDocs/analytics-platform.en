@@ -36,7 +36,7 @@ Product administrators have permissions to complete most tasks within Customer J
 Product administrators are granted the necessary permissions to perform the following tasks by default:
 
 * Create, update, and delete data views
-* Update and delete projects, filters, calculated metrics, audiences, annotations, or filters created by other users
+* Update and delete projects, segments, calculated metrics, audiences, annotations, or segments created by other users
 * Share Workspace projects to all users
 * Manage reporting activity in the [Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md)
 * [Export full tables](/help/analysis-workspace/export/export-cloud.md) from Analysis Workspace
@@ -118,7 +118,7 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in the [Adm
 | [!UICONTROL Reporting Tools] | [!UICONTROL Analysis Workspace Access] |  Let users access [Analysis Workspace](/help/analysis-workspace/home.md). |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Guided Analysis Access] | Let users access [Guided Analysis](/help/guided-analysis/overview.md).  |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Calculated Metrics Creation] | Let users create [calculated metrics](/help/components/calc-metrics/calc-metr-overview.md). Users can tag, share, delete, rename, approve, unapprove only the calculated metrics they create or the calculate metrics shared with them.  |
-| [!UICONTROL Reporting Tools] | [!UICONTROL Filter Creation] | Let users create [filters](/help/components/filters/filters-overview.md). Users can tag, share, delete, rename, approve, unapprove only the filters they create or the filters shared with them. |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Segment Creation] | Let users create [segments](/help/components/filters/filters-overview.md). Users can tag, share, delete, rename, approve, unapprove only the segments they create or the segments shared with them. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Labs Access] | Let users access the [Labs](/help/labs/labs.md) tab in Customer Journey Analytics. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Annotation Creation] | Let users create [annotations](/help/components/annotations/overview.md). Users can tag, share, delete, and rename only the annotations they create or annotations shared with them. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Audience View] | Let users view [audiences](/help/components/audiences/audiences-overview.md). |
@@ -135,7 +135,7 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in the [Adm
 
 ## Workspace project curation
 
-Another level of access control can be used at the Workspace reporting level. You can limit access to specific components for certain users. For more information on how to limit components (dimensions, metrics, filters, date ranges) at the Workspace project level, and how curation is tied to data views, see [Curate projects](/help/analysis-workspace/curate-share/curate.md).
+Another level of access control can be used at the Workspace reporting level. You can limit access to specific components for certain users. For more information on how to limit components (dimensions, metrics, segments, date ranges) at the Workspace project level, and how curation is tied to data views, see [Curate projects](/help/analysis-workspace/curate-share/curate.md).
 
 ## Grant access to individual metrics or dimensions
 
@@ -153,8 +153,8 @@ You can provide Product profile administration access to a team lead of a third 
 
 You want to give users access to data from one day only. Here is how you would limit access to those specific rows:
 
-1. Create a filter in [!UICONTROL Settings] of a specific data view, where [!UICONTROL Day] equals the date you want them to have data access to. See [Create data view](/help/data-views/create-dataview.md#settings-filters) for more information.
-1. Save the data view, which applies the filter to the data part of the datasets in the underlying connection. Any rows that don't fit the filter definition are automatically excluded from the data view and not available to Analysis Workspace when using this data view.
+1. Create a segment in [!UICONTROL Settings] of a specific data view, where [!UICONTROL Day] equals the date you want them to have data access to. See [Create data view](/help/data-views/create-dataview.md#settings-filters) for more information.
+1. Save the data view, which applies the segment to the data part of the datasets in the underlying connection. Any rows that don't fit the segment definition are automatically excluded from the data view and not available to Analysis Workspace when using this data view.
 1. Create a new [Product profile](#product-profile-admin-role) in the Admin Console, add users to the product profile, and include only this specific data view to the product profile.
 
 ### Value-level access control

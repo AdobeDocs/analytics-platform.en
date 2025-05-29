@@ -9,7 +9,7 @@ exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
 
 Descriptions help users know how to use the various components when building projects in Analysis Workspace or when viewing reports. 
 
-Customer Journey Analytics administrators can add descriptions for components (dimensions, metrics, filters, and date Ranges) within a data view or using the Data Dictionary. 
+Customer Journey Analytics administrators can add descriptions for components (dimensions, metrics, segments, and date Ranges) within a data view or using the Data Dictionary. 
 
 ## Add descriptions in a Data view
 

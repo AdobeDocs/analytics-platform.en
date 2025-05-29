@@ -25,7 +25,7 @@ You can use several methods to filter rows from a freeform table.
 
 - Exclude specific rows from a table
 - Apply filters to a table 
-- Use audience filters
+- Use audience segments
 
 Be sure to read how each method impacts [Freeform table totals](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
 
@@ -88,9 +88,9 @@ Note: this option does not seem to work. AN-338422
 
  1. Select **[!UICONTROL Apply]** to filter the data. Select **[!UICONTROL Clear]** to clear all input. Select **[!UICONTROL Cancel]** to cancel and close the dialog. <br/>A colored ![Filter](/help/assets/icons/FilterColored.svg) **Filter** icon indicates and displays details when a filter is applied to the table. 
 
-### Use audience filters
+### Use audience segments
 
-See [Filters overview](/help/components/filters/filters-overview.md) for more details.
+See [Segmentation overview](/help/components/filters/filters-overview.md) for more details.
 
 ## Sort tables
 

@@ -12,7 +12,7 @@ You can filter, tag, delete, rename, copy, enable, disable renew, and export ale
 
 * Select **[!UICONTROL Components]** in the main interface, then select **[!UICONTROL Alerts]**.
 
-The Alerts manager is structured very much like the [Filter manager](/help/components/filters/manage-filters.md) and the [Calculated metric manager](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+The Alerts manager is structured like the [Segment manager](/help/components/filters/manage-filters.md) and the [Calculated metric manager](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
 
 ## Alerts manager
@@ -67,7 +67,9 @@ The filter bar ➌ shows the active filters applied from the filter panel to the
 
 You can filter the list of alerts using the ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** left panel ➍. The filter panel displays the type of filter and the number of alerts that honor the specific filter.
 
-{{filterspanel}}
+
+1. Select ![Filter](/help/assets/icons/Filter.svg) to open the Filters panel. If you need more space for the Alerts list, you can select ![Filter](/help/assets/icons/Filter.svg) once more to close the panel.
+1. Select filters from any of the available filter sections. 
 
 
 #### Tags filter section

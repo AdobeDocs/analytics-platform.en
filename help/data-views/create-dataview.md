@@ -20,7 +20,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create or edit a
 
 To create or edit a data view:
 
-1. Log in to [Customer Journey Analytics](https://analytics.adobe.com) and go to the **[!UICONTROL Data views]** tab.
+1. Log in to [Customer Journey Analytics](https://analytics.adobe.com) and select **[!UICONTROL Data views]**, optionally from **[!UICONTROL Data management]**, in the top menu.
 1. To create a data view, select **[!UICONTROL Create new data view]**. Alternatively, you can select an existing data view from the list of data views to edit it.
 
 
@@ -28,46 +28,54 @@ To create or edit a data view:
 
 To configure a new or existing data view:
 
+>[!BEGINTABS]
+
+>[!TAB Standard] 
+
+![Configure data view](assets/dataview-configure.png)
+
+>[!TAB B2B Edition]
+
+![Configure data view B2B](assets/dataview-configure-b2b.png)
+
+>[!ENDTABS]
+
+
 1. Select the **[!UICONTROL Configure]** tab (if not already active).
 
-   ![Configure data view](assets/dataview-configure.png)
+   
 1. Specify [!UICONTROL Settings], [!UICONTROL Container], and [!UICONTROL Calendar] details (see below). 
 1. Select **[!UICONTROL Save and continue]** to continue configuring your new or existing data view. Select **[!UICONTROL Save]** to save the configuration for your existing data view.
    
 
-### Settings {#settings}
+### Settings {#configure-settings}
 
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="dataview_externalid"
 >title="External ID"
 >abstract="Changing the External ID may impact how the data view name appears in external sources, such as business intelligence tools."
 
-<!-- markdownlint-enable MD034 -->
 
 Provides overarching settings for the data view.
 
 | Setting | Description |
 | --- | --- |
-| [!UICONTROL **Connection**] | This field links the data view to the connection that you established earlier, which contains one or more Adobe Experience Platform datasets. |
-| [!UICONTROL **Name**] | Required. The name of the data view. This value appears in the top-right drop-down list in Analysis Workspace. |
-| [!UICONTROL **External ID**] | Required. The name of data view you can use in external sources, such as business intelligence tools. Default is `unspecified`. If you do not specify an external ID, the name will be generated from the Name of the data view, replacing spaces with underscores. |
-| [!UICONTROL **Description**] | Optional. Adobe recommends a detailed description so that users understand why the data view exists and who it is designed for. |
+| **[!UICONTROL Connection]** | This field links the data view to the connection that you established earlier, which contains one or more Adobe Experience Platform datasets. |
+| **[!UICONTROL Name]** | Required. The name of the data view. This value appears in the top-right drop-down menu in Analysis Workspace. |
+| **[!UICONTROL External ID]** | Required. The name of data view you can use in external sources, such as business intelligence tools. Default is `unspecified`. If you do not specify an external ID, the name will be generated from the Name of the data view, replacing spaces with underscores. |
+| **[!UICONTROL Description]** | Optional. Adobe recommends a detailed description so that users understand why the data view exists and who it is designed for. |
 
 {style="table-layout:auto"}
 
 ### Compatibility {#compatibility}
 
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="dataview_dataviewsinadobejourneyoptimizer"
 >title="Data views in Journey Optimizer"
 >abstract="Customer Journey Analytics needs to use a connection and data view that are compatible with Adobe Journey Optimizer. By default, a connection and data view are automatically created for this purpose.<br/>Alternatively, you can enable this option to make this the default data view that is used in Adobe Journey Optimizer reporting. When enabled, all the necessary components required for Journey Optimizer are added to this data view, and all the necessary Journey Optimizer datasets are added to the connection associated with this data view."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="Which components and datasets are added." 
-
-<!-- markdownlint-enable MD034 -->
 
 
 Provides settings that are applicable when using Adobe Journey Optimizer in addition to Customer Journey Analytics.
@@ -82,13 +90,17 @@ This section is visible only for administrators who are provisioned with Journey
 
 ### Containers
 
-Designates the name of containers for the data view. Container names are frequently used in [filters](/help/components/filters/filters-overview.md#Filter-containers).
+Designates the name of containers for the data view. Container names are frequently used in [segments](/help/components/filters/filters-overview.md#Filter-containers).
 
 | Setting | Description |
 | --- | --- |
-| [!UICONTROL **Person container name**] | [!UICONTROL Person] (default). The [!UICONTROL Person] container includes every session and event for persons within the specified time frame. If your organization uses a different term (for example, "Visitor" or "User"), you can rename the container here. |
-| [!UICONTROL **Session container name**] | [!UICONTROL Session] (default). The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session. You can rename this container to 'Visit' or any other term your organization prefers. |
-| [!UICONTROL **Event container name**] | [!UICONTROL Event] (default). The [!UICONTROL Event] container defines individual events in a dataset. If your organization uses a different term (for example, "Hits" or "Page Views"), you can rename the container here. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Global Account container name]** | `Global Account` (default). The [!UICONTROL Global Account] container includes every session and event for globa accounts within the specified time frame. If your organization uses a different term, you can rename the container here. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Account container name]** | `Account` (default). The [!UICONTROL Account] container includes every session and event for accounts within the specified time frame. If your organization uses a different term, you can rename the container here. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Opportunity container name]** | `Opportunity` (default). The [!UICONTROL Opportunity] container includes every session and event for opportunities within the specified time frame. If your organization uses a different term, you can rename the container here. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Buying group container name]** | `Buying Group` (default). The [!UICONTROL Buying group] container includes every session and event for buying groups within the specified time frame. If your organization uses a different term, you can rename the container here. |
+| **[!UICONTROL Person container name]** | `Person` (default). The [!UICONTROL Person] container includes every session and event for persons within the specified time frame. If your organization uses a different term (for example, "Visitor" or "User"), you can rename the container here. |
+| **[!UICONTROL Session container name]** | `Session` (default). The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session. You can rename this container to 'Visit' or any other term your organization prefers. |
+| **[!UICONTROL Event container name]** | `Event` (default). The [!UICONTROL Event] container defines individual events in a dataset. If your organization uses a different term (for example, "Hits" or "Page Views"), you can rename the container here. |
 
 {style="table-layout:auto"}
 
@@ -159,19 +171,25 @@ You can filter ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_1
 
 
 
-## Settings
+## Settings {#dataview-settings}
 
 1. Select the **[!UICONTROL Settings]** tab.
-1. Configure filters to apply to your entire data view. See [Settings (filters)](#settings-filters) below.
+1. Configure segments to apply to your entire data view. See [Settings (segments)](#settings-filters) below.
 1. Configure session timeout and metrics. See [Session settings](#session-settings) below.
 1. Select **[!UICONTROL Save and continue]** to continue configuring your new or existing data view. Select **[!UICONTROL Save]** to save the configuration for your existing data view.
 
-### Settings (filters)
+### Settings (segments) {#segment-settings}
 
-You can add filters that apply to an entire data view. This filter is applied to any report that you run in Workspace. Drag a filter from the list in the left rail to the [!UICONTROL Add filters] field.
+You can add segments that apply to an entire data view. This segment is applied to any report that you run in Workspace. Drag a segment from the list in the left rail to the **[!UICONTROL Add segments]** field.
 
 ### Session settings
 
 Determine the time period of inactivity between events before a session expires and a new one is started. A time period is required. You can optionally also force a new session to start when an event contains a certain metric. See [Session settings](session-settings.md) for more details.
+
+### Data preview
+
+The data preview compares (for the various containers) the data of this data view with data of the connection. The preview percentage is based on the total number in the connection from the last 90 days.
+
+If the preview is not loading, your connection could still be backfilling.
 
 Once all desired settings are specified, click **[!UICONTROL Save and finish]**.

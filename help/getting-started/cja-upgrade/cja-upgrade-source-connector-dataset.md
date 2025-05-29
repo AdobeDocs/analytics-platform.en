@@ -45,7 +45,7 @@ You need to add this automatically created dataset to the same connection that y
 
 To add the automatically created dataset to the same connection that you created for your Web SDK implementation:
 
-1. In Customer Journey Analytics, select the **[!UICONTROL Connections]** tab.
+1. In Customer Journey Analytics,  select **[!UICONTROL Connections]**, optionally from **[!UICONTROL Data management]**, in the top menu.
 
 1. Select the connection that you [created for your Web SDK implementation](/help/getting-started/cja-upgrade/cja-upgrade-connection.md).
 
@@ -71,7 +71,7 @@ To add the automatically created dataset to the same connection that you created
 
    | Setting | Description |
    | --- | --- |
-   | **[!UICONTROL Person ID]** | Only available for event and profile datasets. Select a Person ID from the drop-down list of available identities. These identities were defined in the dataset schema in the Experience Platform. See below for information on how to use Identity Map as a Person ID.<p>If there are no Person IDs to choose from, that means one or more Person IDs have not been defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information. <p>The value for the selected Person ID is considered to be case sensitive. For example, `abc123` and `ABC123` are two different values. |
+   | **[!UICONTROL Person ID]** | Only available for event and profile datasets. Select a Person ID from the drop-down menu of available identities. These identities were defined in the dataset schema in the Experience Platform. See below for information on how to use Identity Map as a Person ID.<p>If there are no Person IDs to choose from, that means one or more Person IDs have not been defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information. <p>The value for the selected Person ID is considered to be case sensitive. For example, `abc123` and `ABC123` are two different values. |
    | **[!UICONTROL Timestamp]** | For event and summary datasets only, this setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. |
    | **[!UICONTROL Timezone]** | Only available for summary data. Select the appropriate timezone for the time-series summary data. |
    | **[!UICONTROL Data source type]** | Select a type of data source. <br/>Types of data sources include: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>This field is used to survey the types of data sources in use. |
@@ -90,13 +90,13 @@ To add the automatically created dataset to the same connection that you created
    
    * Choose an end date that is the same date as when you first started gathering data with your Web SDK implementation. 
 
-   * Choose an end date that is shortly after the date when you first started gathering data with your Web SDK implementation, then use data view segments to filter out the overlapping data. 
+   * Choose an end date that is shortly after the date when you first started gathering data with your Web SDK implementation, then use data view segments to segment out the overlapping data. 
 
-   * Choose an end date that results in a greater overlap in data, then use data view segments to filter out the overlapping data.  
+   * Choose an end date that results in a greater overlap in data, then use data view segments to segment out the overlapping data.  
    
      **Note:** This option would result in increased costs because there would be more rows in the connection. 
 
-   <!-- Include any of the following?  Make sure you're explicit as to the dates you request backfill to. You want to request it to the date that you start gathering data with your Web SDK implementation. Also possibly include segments for any overlapping date. So you could request everything and then use a segment to exclude data that you don't want. That way if you need to move up the date, then you could change the date in the filter. Downside would be that you might pay for double rows.  When they do that, they're going to see all schema fields from both their custom schema and their Analytics schema. So they'll need to be cognizant to select the right fields, and never select any Analytics fields, because they will be mapped as part of the source connector. Never select any Analytics field group fields because they'll be mapped.  -->
+   <!-- Include any of the following?  Make sure you're explicit as to the dates you request backfill to. You want to request it to the date that you start gathering data with your Web SDK implementation. Also possibly include segments for any overlapping date. So you could request everything and then use a segment to exclude data that you don't want. That way if you need to move up the date, then you could change the date in the segment. Downside would be that you might pay for double rows.  When they do that, they're going to see all schema fields from both their custom schema and their Analytics schema. So they'll need to be cognizant to select the right fields, and never select any Analytics fields, because they will be mapped as part of the source connector. Never select any Analytics field group fields because they'll be mapped.  -->
 
 1. Select **[!UICONTROL Queue backfill]**.
 

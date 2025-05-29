@@ -81,7 +81,7 @@ No, you cannot access data across sandboxes. You can combine only datasets that 
 
 +++**How do I connect online data to offline data in [!UICONTROL Customer Journey Analytics]?**
 
-As long as the person ID matches between datasets, [!UICONTROL Customer Journey Analytics] can connect filters, attribution, flow, fallout, and so on across datasets.
+As long as the person ID matches between datasets, [!UICONTROL Customer Journey Analytics] can connect segments, attribution, flow, fallout, and so on across datasets.
 
 +++
 
@@ -168,7 +168,7 @@ If you plan to ingest Adobe Analytics data through the [Adobe Analytics source c
 | [!UICONTROL Sessions] and [!UICONTROL People] counts | They get deduplicated across report suites. As a result, counts may not match. |
 | Metric deduplication | Deduplicates instances of a metric (for example, [!UICONTROL Orders]) if multiple rows have the same transaction ID (for example, [!UICONTROL Purchase ID]). This prevents over-counting of key metrics. As a result, metrics like [!UICONTROL Orders] may not add up across report suites. |
 | Currency | Currency conversion is not yet supported in Customer Journey Analytics. If the report suites you are trying to merge use different base currencies, problems may arise. | 
-| [!UICONTROL Persistence]| [Persistence](../data-views/component-settings/persistence.md) extends across report suites, which impacts [!UICONTROL filters], [!UICONTROL attribution], and so on. Numbers may not add up properly. |
+| [!UICONTROL Persistence]| [Persistence](../data-views/component-settings/persistence.md) extends across report suites, which impacts [!UICONTROL segments], [!UICONTROL attribution], and so on. Numbers may not add up properly. |
 | [!UICONTROL Classifications] | [!UICONTROL Classifications] do not automatically get deduplicated when merging report suites. When combining multiple classifications files into a single [!UICONTROL lookup] dataset, you could encounter problems. |
 
 ## 8. [!UICONTROL Adobe Analytics] components
@@ -211,7 +211,7 @@ It depends on your use case, so work with your Adobe Account team. Your current 
 
 ## 9. Estimate connection size {#estimate-size}
 
-See [Estimate and manage usage](/help/technotes/estimate-usage.md).
+See [Connections usage](/help/connections/manage-connections.md#usage).
 
 ## 10. Regarding usage overages {#overage}
 

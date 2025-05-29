@@ -6,9 +6,11 @@ feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
 ---
-# An example B2B project
+# An example person-based B2B project
 
-This article illustrates a use case where you want to properly report in Customer Journey Analytics on person data within the context of a typical B2B configuration. Such a configuration is part of the [Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  The use case explains how to set up, configure and report on profile (person) level based B2B data in Customer Journey Analytics.
+This article illustrates a use case where you want to properly report in Customer Journey Analytics on person data within the context of a typical person-based B2B setup. Such a configuration is facilitated by the [Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  The use case explains how to set up, configure and report on profile (person) level based B2B data in Customer Journey Analytics.
+
+[!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} A separate section for account-based reporting use cases is published with the release of [Customer Journey Analytics B2B Edition](/help/getting-started/cja-b2b-edition.md).
 
 ## Connection
 

@@ -6,7 +6,7 @@ exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
 ---
 # Approve calculated metrics
 
-In the [Calculated metrics manager](cm-manager.md), you can approve and unapprove filters. Only administrators can approve calculated metrics.
+In the [Calculated metrics manager](cm-manager.md), you can approve and unapprove calculated metrics. Only administrators can approve calculated metrics.
 
 To approve calculated metrics:
 
@@ -15,7 +15,7 @@ To approve calculated metrics:
    
 To unapprove calculated metrics:
 
-1. In the [Filter manager](cm-approving.md), select one or more of the calculated metrics you want to unapprove.
+1. In the [Calculated metrics manager](cm-approving.md), select one or more of the calculated metrics you want to unapprove.
 1. From the action bar, select ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Unapprove]**.
    
 

@@ -14,7 +14,7 @@ For information about how to create a new location, see [Configure cloud export 
 
 ## Filter and search locations
 
-To find information you need, you can either filter the list of locations or search for a location.
+To find information you need, you can either filter on the list of locations or search for a location.
 
 ### Filter the list of locations
 

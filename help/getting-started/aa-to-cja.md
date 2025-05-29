@@ -64,7 +64,7 @@ This shift will result in some differences in how data is reported, especially f
 
 ### Identify critical Segments and Calculated Metrics {#segments-calcmetrics}
 
-Adobe Analytics segments (called [!UICONTROL filters] in Customer Journey Analytics) and calculated metrics are not compatible with Customer Journey Analytics. In many cases, these components can be rebuilt in Customer Journey Analytics using the new schemas and data available. 
+Adobe Analytics segments and calculated metrics are not compatible with Customer Journey Analytics. In many cases, these components can be rebuilt in Customer Journey Analytics using the new schemas and data available. 
 
 To make the transition as smooth as possible for users when they transition between the systems, plan ahead by
 
@@ -72,7 +72,7 @@ To make the transition as smooth as possible for users when they transition betw
 
 2. Documenting their definitions, and 
 
-3. Identifying what fields will be required in the data to replicate them in Customer Journey Analytics as [Filters](/help/components/filters/filters-overview.md) and [Calculated Metrics](/help/components/calc-metrics/calc-metr-overview.md).
+3. Identifying what fields will be required in the data to replicate them in Customer Journey Analytics as [Segments](/help/components/filters/filters-overview.md) and [Calculated Metrics](/help/components/calc-metrics/calc-metr-overview.md).
 
 Here are a couple of videos to guide you:
 

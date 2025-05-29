@@ -47,10 +47,27 @@ Some of the features and their associated value for the limit depend on the Cust
 | Panels per Project | 15 | System-enforced Guardrail  | Maximum number of [panels](../analysis-workspace/home.md#panels) per project. |
 | Visualizations per Panel | 25 | System-enforced Guardrail  |  Maximum number of [visualizations](../analysis-workspace/home.md#visualizations) per panel. |
 | Derived Fields per Freeform Table | 5 | System-enforced Guardrail | Maximum number of different derived fields in a single freeform table. |
+| Comments per project <p>**Note:** The ability to comment on projects is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).</p> | 1,000 | System-enforced Guardrail | Maximum number of comments per project. |
+| Replies per comment <p>**Note:** The ability to comment on projects is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).</p> | 100 | System-enforced Guardrail | Maximum number of replies per comment. | 
+| Images per comment <p>**Note:** The ability to comment on projects is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).</p> | 5 | System-enforced Guardrail | Maximum number of images per comment. |
+| Image size <p>**Note:** The ability to comment on projects is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).</p> | 2 | System-enforced Guardrail | Maximim upload size per image in MB for comments in projects |
 
 {style="table-layout:auto"}
 
+
 <!--
+
+Add this to the table above, change - for pipe : (End of April, 2025 when project commenting is GA)
+
+Comments per project - 1,000 - System-enforced Guardrail - Maximum number of comments per project. 
+Replies per comment - 100 - System-enforced Guardrail - Maximum number of replies per comment. 
+Images per comment - 5 - System-enforced Guardrail - Maximum number of images per comment. 
+Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB 
+
+-->
+
+<!--
+
 ## Attribution AI
 
 | Name |  Value | Description | PD? |
@@ -59,14 +76,13 @@ Some of the features and their associated value for the limit depend on the Cust
 | Region based iterations | 10 | Maximum number of region-based iterations of each Attribution AI model. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
 | Export Insights batches | 12 | Maximum number of export batches times the number of authorized Attribution AI Insights per year. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
 
-{style="table-layout:auto"}
 -->
 
 ## Audiences
 
 | Name | Value | Limit Type | Description | 
 |---|--:|---|---|
-| Audience Filters | 20 | System-enforced Guardrail  | Maximum number of [filters](../components/filters/filters-overview.md) per audience. | 
+| Audience segments | 20 | System-enforced Guardrail  | Maximum number of [segments](../components/filters/filters-overview.md) per audience. | 
 | Number of Audience Identities | 20 million | System-enforced Guardrail  | Maximum number of identities per audience. | 
 | Audience Refresh Frequency | 4 | System-enforced Guardrail  | Maximum frequency in hours an [audience](../components/audiences/audiences-overview.md) may be refreshed. |
 | Audience Refresh Lookback Window | 90 | System-enforced Guardrail  | Maximum number of days for refresh lookback window. | 
@@ -165,18 +181,18 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 | Lookback Window / Replay Frequency | 1/1 - 30/7 | System-enforced Guardrail | Maximum lookback window in days / Replay frequency. Value varies depending on the Customer Journey Analytics package (see Product Description). |
 
 
-## Filters and calculated metrics 
+## Segments and calculated metrics 
 
 | Name |  Value | Limit Type | Description | 
 |---|--:|---|---|
-| Containers per Filter | 50 | System-enforced Guardrail  | Maximum number of containers per filter. | 
+| Containers per Segment | 50 | System-enforced Guardrail  | Maximum number of containers per segment. | 
 | Metrics per Calculated Metric | 25 | System-enforced Guardrail  | Maximum number of metrics per calculated metric. |
-| Metrics and Dimensions per Filter | 25 |System-enforced Guardrail  |  Maximum number of unique metrics and dimensions per filter. | 
-| Nested Containers per Filter | 10 | System-enforced Guardrail  | Maximum number of nested containers per filter. |
-| Rules per filter| 100 | System-enforced Guardrail  | Maximum number of rules per filter. |
-| String Compares per Dimension per Filter | 100 |  System-enforced Guardrail  | Maximum number of strings comparisons per dimension per filter. | 
+| Metrics and Dimensions per Segment | 25 |System-enforced Guardrail  |  Maximum number of unique metrics and dimensions per segment. | 
+| Nested Containers per Segment | 10 | System-enforced Guardrail  | Maximum number of nested containers per segment. |
+| Rules per segment| 100 | System-enforced Guardrail  | Maximum number of rules per segment. |
+| String Compares per Dimension per Segment | 100 |  System-enforced Guardrail  | Maximum number of strings comparisons per dimension per segment. | 
 | Calculated Metrics | 6,000 | System-enforced Guardrail  |  Maximum number of calculated metrics for an organization. |
-| Filters | 50,000 | System-enforced Guardrail | Maximum number of filters you can define for an organization. |
+| Segments | 50,000 | System-enforced Guardrail | Maximum number of segments you can define for an organization. |
 | API Calls | 120 | System-enforced Guardrail | API requests per minute (12 requests every 6 seconds). |
 
 {style="table-layout:auto"}
@@ -187,7 +203,7 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 | Name |  Value | Limit Type | Description |
 |---|--:|---|---|
 | Tiles | 16 | System-enforced Guardrail  | Maximum number of tiles per scorecard. |
-| Filters | 10 | System-enforced Guardrail  | Maximum number of filters per scorecard. | 
+| Segments | 10 | System-enforced Guardrail  | Maximum number of segments per scorecard. | 
 | Dimensions | 10 | System-enforced Guardrail  | Maximum number of dimensions per scorecard. |
 
 {style="table-layout:auto"}

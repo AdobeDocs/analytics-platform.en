@@ -8,9 +8,59 @@ role: User
 # Configure a flow visualization {#configure-a-flow-visualization}
 
 >[!CONTEXTUALHELP]
+>id="workspace_flow_startswith"
+>title="Starts with"
+>abstract="This field can only be set on the initial build. To update this field, select **[!UICONTROL Reset]** to build a new Flow visualization."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_contains"
+>title="Contains"
+>abstract="This field can only be set on the initial build. To update this field, select **[!UICONTROL Reset]** to build a new Flow visualization."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_endswith"
+>title="Ends with"
+>abstract="This field can only be set on the initial build. To update this field, select **[!UICONTROL Reset]** to build a new Flow visualization."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_pathingdimension"
+>title="Pathing dimension"
+>abstract="Select a dimension to use as your path leading to or going from your selected component."
+
+>[!CONTEXTUALHELP]
 >id="workspace_flow_container"
 >title="Flow container"
 >abstract="Select the container to use to display (numbers for) the pathing."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_include_repeats_disabled"
+>title="Include repeats (disabled)"
+>abstract="Repeats cannot be removed from Flow visualizations that include multi-valued dimensions."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_include_repeats_default"
+>title="Include repeats"
+>abstract="Flow visualizations are based on instances of a dimension. This setting gives you the option to include or exclude repeated instances, For example: Page reloads."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_limit_occurrence"
+>title="Limit to first/last occurrence"
+>abstract="Results are limited to paths when the first/last touchpoint is an entry/exit."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_numberofcolumns"
+>title="Number of columns"
+>abstract="This field can only be set on the initial build. To update this field, select **[!UICONTROL Reset]** to build a new Flow visualization."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_itemsexpandedpercolumn"
+>title="Items expanded per column"
+>abstract="This field can only be set on the initial build. To update this field, select **[!UICONTROL Reset]** to build a new Flow visualization."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_resettoupdate"
+>title="Reset to update"
+>abstract="This field can only be set on the initial build. To update this field, select **[!UICONTROL Reset]** to build a new Flow visualization."
 
 
 Flow visualizations help you understand the journey originating from a specific conversion event on your website or your app. Or leading up to a specific conversion event. The visualization traces a path through your dimensions (and dimension items) or metrics. 
@@ -33,7 +83,7 @@ You can configure the start or end of the path you are interested in. Or analyze
 
    * Use the drop-down menu to select metrics or dimensions.
    * Drag dimensions or metrics from the left panel.
-   * Begin typing the name of a dimension or metric, then select it when it appears in the drop-down list.
+   * Begin typing the name of a dimension or metric, then select it when it appears in the drop-down menu.
 
    >[!IMPORTANT]
    >
@@ -53,7 +103,7 @@ You can configure the start or end of the path you are interested in. Or analyze
    | **[!UICONTROL Limit to first/last occurrence]** | Limit paths to paths that start or end with the first or last occurrence of a dimension, item, or metric. See [Limit to first/last occurrence](#example-scenario-for-limit-to-firstlast-occurrence) for a more detailed explanation. |
    | **[!UICONTROL Number of columns]** | The number of columns you want in your Flow diagram. You can specify a maximum of 5 columns. |
    | **[!UICONTROL Items expanded per column]** | The number of items you want in each column. You can specify a maximum of 10 items expanded per column. |
-   | **[!UICONTROL Flow container]** | You can switch between **[!UICONTROL Sessions]** and **[!UICONTROL Person]** to analyze pathing. These settings help you understand a person's engagement at the person level (across sessions), or constrain the analysis to a single session.  |
+   | **[!UICONTROL Flow container]** | You can switch between **[!UICONTROL Global Account]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Account]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Buying Group]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Sessions]** and **[!UICONTROL Person]** to analyze pathing. These settings help you understand engagement at a specific container level (across sessions), or constrain the analysis to a single session.  |
 
    >[!IMPORTANT]
    >
@@ -112,10 +162,10 @@ Use a context menu on any node in the flow visualization with the following opti
 |--- |--- |
 | **[!UICONTROL Focus on this node]** | Change the focus to the selected node. The focus node appears at the center of the Flow diagram. |
 | **[!UICONTROL Start over]** | Return you to the Freeform diagram builder, where you can build a new Flow diagram. |
-| **[!UICONTROL Create a filter for this path]** | Create a filter. This selection takes you into the Filter builder, where you can configure the new filter. |
+| **[!UICONTROL Create a segment for this path]** | Create a segment. This selection takes you into the Segment builder, where you can configure the new segment. |
 | **[!UICONTROL Breakdown]** | Break the node down by available Dimensions, Metrics, or Time. |
 | **[!UICONTROL Filter column]** | The same filter options appear as are available in the Freeform table. For more information about the available options, see the section "Apply a simple or advanced filter to a table" in [Filter and sort tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).|
-| **[!UICONTROL Exclude item]** or **[!UICONTROL Restore excluded items]** | Removes a specific node from the column and automatically creates it as a filter at the top of the column. To restore the excluded item, from the context menu select **[!UICONTROL Restore Excluded Item]**. you can also open the filter at the top of the column and remove the pillbox with the item you just excluded. |
+| **[!UICONTROL Exclude item]** or **[!UICONTROL Restore excluded items]** | Removes a specific node from the column and automatically creates it as a filter at the top of the column. To restore the excluded item, from the context menu select **[!UICONTROL Restore Excluded Item]**. you can also open the segment at the top of the column and remove the pillbox with the item you just excluded. |
 | **[!UICONTROL Trend]** | Create a trended diagram for the node. |
 | **[!UICONTROL Show next column]** / **[!UICONTROL Show previous column]** | Reveals the next (right) or previous (left) column of the visualization. |
 | **[!UICONTROL Hide colum]**n | Hides the selected column from the visualization. | 
@@ -140,7 +190,7 @@ When using this option, keep in mind that:
 
   In the example below, only the **last** occurrences of *Product main category* and *Add to cart* in each step of the flow are included.
   ![Lint, start](assets/limitonlast.png)
-* The series used differs based on the container. If using the **[!UICONTROL Person]** container, the series of events are the session. If using the **[!UICONTROL Session]** container, the series of events are all the events for a given user in the provided date range. 
+* The series used differs based on the container. If you use the **[!UICONTROL Session]** container, the series of events are limited to a session.  If you use any of the other containers (for example, **[!UICONTROL Person]**, or **[!UICONTROL Account]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, or **[!UICONTROL Opportunity]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}), the series of events are based on the specified container and potentially span multiple sessions. 
 * The **[!UICONTROL Limit to first/last occurrence]** option can be configured in the advanced settings when using a Metric or Dimension Item in the **[!UICONTROL Starts with]** or **[!UICONTROL Ends with]** fields.
 
 

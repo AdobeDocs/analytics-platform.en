@@ -1,5 +1,5 @@
 ---
-description: The Calculated Metrics Builder provides a canvas to drag and drop Dimensions, Metrics, Filters, and Functions to create custom metrics based on container hierarchy logic, rules, and operators. This integrated development tool lets you build and save simple calculated metrics or complex advanced calculated metrics.
+description: The Calculated Metrics Builder provides a canvas to drag and drop Dimensions, Metrics, Segments, and Functions to create custom metrics based on container hierarchy logic, rules, and operators. This integrated development tool lets you build and save simple calculated metrics or complex advanced calculated metrics.
 title: Build calculated metrics
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
@@ -25,7 +25,7 @@ exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 
 <!-- markdownlint-enable MD034 -->
 
-Customer Journey Analytics provides a canvas to drag and drop dimensions, metrics, filters, and functions to create custom metrics based on container hierarchy logic, rules, and operators. This integrated development tool lets you build and save simple or complex calculated metrics.
+Customer Journey Analytics provides a canvas to drag and drop dimensions, metrics, segments, and functions to create custom metrics based on container hierarchy logic, rules, and operators. This integrated development tool lets you build and save simple or complex calculated metrics.
 
 ## Begin building a calculated metric
 
@@ -65,7 +65,7 @@ The **[!UICONTROL Calculated metric builder]** dialog is used to create new or e
    | **[!UICONTROL Project-only metric]** | An info box appears at the top of this dialog when you edit a calculated metric that was created for a single project, as described in [Create calculated metrics for a single project](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project). <p>If you want to make this calculated metric available for all projects, select the option, **[!UICONTROL Make this metric available to all your projects and add it to your component list]**.</p> |
    | **[!UICONTROL Title]** ![Required](/help/assets/icons/Required.svg) | Name the calculated metric, for example, `Conversion Rate`. |
    | **[!UICONTROL External ID]** ![Required](/help/assets/icons/Required.svg) | The name of the calculated metric when using an external BI tool and the BI extension. The value is automatically defined as `undefined_xxx` unless you override the value. |
-   | **[!UICONTROL Description]** | Provide a description for the filter, for example, `Calculated metric to define the conversion rate.` There is no need to describe the formula for the calculated metric as the formula is already automatically available in [!UICONTROL Summary]. |
+   | **[!UICONTROL Description]** | Provide a description for the segment, for example, `Calculated metric to define the conversion rate.` There is no need to describe the formula for the calculated metric as the formula is already automatically available in [!UICONTROL Summary]. |
    | **[!UICONTROL Format]** | Select a format for the calculated metric: You can select between **[!UICONTROL Decimal]**, **[!UICONTROL Time]**, **[!UICONTROL Percent]**, and **[!UICONTROL Currency]**. |
    | **[!UICONTROL Decimal places]** | Specify the number of decimal places for the format selected. Only enabled when the format selected is Decimal, Currency, and Percent. |
    | **[!UICONTROL Show upward trend as]** | Specify whether an upward trend of the calculated metric displays as ▲ **[!UICONTROL Good (Green)]** or as ▼ **[!UICONTROL Bad (Red)]**. | 
@@ -73,7 +73,7 @@ The **[!UICONTROL Calculated metric builder]** dialog is used to create new or e
    | **[!UICONTROL Tags]**| Organize the calculated metric by creating or applying one or more tags. Start typing to find existing tags you can select. Or press **[!UICONTROL ENTER]** to add a new tag. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a tag. |
    | **[!UICONTROL Preview]** | The preview covers the last 90 days and is a way to gauge whether you have defined your metric correctly. | 
    | **[!UICONTROL Summary]** | Displays a summary of the definition of the calculated metric. <br/>For example:  ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Total Orders]** ![Divide](/help/assets/icons/Divide.svg) ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Sessions]**. |
-   | **[!UICONTROL Definition]** ![Required](/help/assets/icons/Required.svg)| Define your filter using the [Definition builder](#definition-builder). |
+   | **[!UICONTROL Definition]** ![Required](/help/assets/icons/Required.svg)| Define your segment using the [Definition builder](#definition-builder). |
 
 1. To verify whether your calculated metric definition is correct, use the constantly updated **[!UICONTROL Preview]** of the results of the calculated metric. The **[!UICONTROL Preview]** covers the last 90 days and evaluates the definition of your calculated metric continuously.
    
@@ -89,7 +89,7 @@ The **[!UICONTROL Calculated metric builder]** dialog is used to create new or e
 
 ## Definition builder
 
-You use the Definition builder to drag and drop dimensions, metrics, filters, and functions to create custom metrics based on container hierarchy logic, rules, and operators. In that construction, you can use standard metrics, Adobe defined metrics, calculated metrics, filters, dimensions and functions. All these components are available from the component panel in the Calculated metric builder. Furthermore, you can use operators and containers in the definition.
+You use the Definition builder to drag and drop dimensions, metrics, segments, and functions to create custom metrics based on container hierarchy logic, rules, and operators. In that construction, you can use standard metrics, Adobe defined metrics, calculated metrics, segments, dimensions and functions. All these components are available from the component panel in the Calculated metric builder. Furthermore, you can use operators and containers in the definition.
 
 ![Create calculated metric](/help/components/calc-metrics/cm-workflow/assets/create-calculated-metric.gif)
 
@@ -99,7 +99,7 @@ Only metrics are defined as singular components in the **[!UICONTROL Definition]
 
 To add a metric:
 
-* Drag and drop an ![Events](/help/assets/icons/Event.svg) **[!UICONTROL Metrics]** component from the components panel onto **[!UICONTROL Drag and drop metrics, dimensions, dimension items, filters, and/or functions here]**. You can use the ![Search](/help/assets/icons/Search.svg) in the components bar to search for specific components.
+* Drag and drop an ![Events](/help/assets/icons/Event.svg) **[!UICONTROL Metrics]** component from the components panel onto **[!UICONTROL Drag and drop metrics, dimensions, dimension items, segments, and/or functions here]**. You can use the ![Search](/help/assets/icons/Search.svg) in the components bar to search for specific components.
 
 When you use a calculated metric as part of your definition, the calculated metric is expanded.
 
@@ -140,43 +140,43 @@ You can add a static number to your calculated metric definition. To add a stati
 
 ### Containers
 
-You add dimensions, filters and functions as containers to a calculated metric definition. You can also add a generic container. Containers function like a math expression and determine the order of operations. Anything within a container gets processed before the next component or container.
+You add dimensions, segments and functions as containers to a calculated metric definition. You can also add a generic container. Containers function like a math expression and determine the order of operations. Anything within a container gets processed before the next component or container.
 
 
-#### Filter container
+#### Segment container
 
-You use the concept of a filter container to create a [filtered metric](metrics-with-segments.md). You can construct a filter container using a filter, or using a filter you create from a dimension.
+You use the concept of a segment container to create a [segmented metric](metrics-with-segments.md). You can construct a segment container using a segment, or using a segment you create from a dimension.
 
-* To add a filter container from a dimension:
+* To add a segment container from a dimension:
 
-  1. Drag and drop a ![Dimensions](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensions]** component from the components panel onto **[!UICONTROL Drag and drop metrics, dimensions, dimension items, filters, and/or functions here]**. You can use the ![Search](/help/assets/icons/Search.svg) in the components bar to search for specific components.
-  1. In the **[!UICONTROL Create Filter from Dimension]** popup, define the condition for the filter. Select from the list of operators and select a value or enter a value. For example, **[!UICONTROL Month]** **[!UICONTROL equals]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
-  1. Select **[!UICONTROL Done]**. A filter container is added to the **[!UICONTROL Definition]**. 
+  1. Drag and drop a ![Dimensions](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensions]** component from the components panel onto **[!UICONTROL Drag and drop metrics, dimensions, dimension items, segments, and/or functions here]**. You can use the ![Search](/help/assets/icons/Search.svg) in the components bar to search for specific components.
+  1. In the **[!UICONTROL Create Segment from Dimension]** popup, define the condition for the segment. Select from the list of operators and select a value or enter a value. For example, **[!UICONTROL Month]** **[!UICONTROL equals]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
+  1. Select **[!UICONTROL Done]**. A segment container is added to the **[!UICONTROL Definition]**. 
 
 
-* To add a filter container from a filter, you can use:
+* To add a segment container from a segment, you can use:
 
-  * Drag and drop a ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filters]** component from the components panel onto **[!UICONTROL Drag and drop metrics, dimensions, dimension items, filters, and/or functions here]**. You can use the ![Search](/help/assets/icons/Search.svg) in the components bar to search for specific filters.
-    Automatically a filter container is added to the **[!UICONTROL Definition]**, using the name of the filter.
+  * Drag and drop a ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]** component from the components panel onto **[!UICONTROL Drag and drop metrics, dimensions, dimension items, segments, and/or functions here]**. You can use the ![Search](/help/assets/icons/Search.svg) in the components bar to search for specific segments.
+    Automatically a segment container is added to the **[!UICONTROL Definition]**, using the name of the segment.
 
-  * Drag and drop a ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filters]** component from the components panel onto a generic container. The container is modified into a filter container.
+  * Drag and drop a ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** component from the components panel onto a generic container. The container is modified into a segment container.
 
   * Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** from within a container:
 
-    1. Select **[!UICONTROL Filter]**. A filter container is added to the **[!UICONTROL Definition]**.
-    1. In the new filter container, select a filter from the [!UICONTROL *Select...*] dropdown menu.
+    1. Select **[!UICONTROL Segment]**. A segment container is added to the **[!UICONTROL Definition]**.
+    1. In the new segment container, select a segment from the [!UICONTROL *Select...*] drop-down menu.
 
   >[!TIP]
   >
-  >You can add more than one filter to a container. 
+  >You can add more than one segment to a container. 
 
-  The filters in the container are named after the filter component. For example, ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Web sessions]**. Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup with details on the filter. In the popup, select ![Edit](/help/assets/icons/Edit.svg) to edit the filter definition.
+  The segments in the container are named after the segment component. For example, ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Web sessions]**. Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup with details on the segment. In the popup, select ![Edit](/help/assets/icons/Edit.svg) to edit the segment definition.
 
-To remove a filter from a container:
+To remove a segment from a container:
 
-* Select ![Close](/help/assets/icons/Close.svg) next to the filter name.
+* Select ![Close](/help/assets/icons/Close.svg) next to the segment name.
 
-See [Filtered metrics](metrics-with-segments.md) for more details and examples.
+See [Segmented metrics](metrics-with-segments.md) for more details and examples.
 
 #### Function container
 
@@ -184,13 +184,13 @@ To add a function container, you can use:
 
 * Drag and drop:
 
-  1. Drag and drop a ![Function](/help/assets/icons/Effect.svg) **[!UICONTROL Functions]** component from the components panel onto **[!UICONTROL Drag and drop metrics, dimensions, dimension items, filters, and/or functions here]**. You can use the ![Search](/help/assets/icons/Search.svg) in the components bar to search for specific functions.
+  1. Drag and drop a ![Function](/help/assets/icons/Effect.svg) **[!UICONTROL Functions]** component from the components panel onto **[!UICONTROL Drag and drop metrics, dimensions, dimension items, segments, and/or functions here]**. You can use the ![Search](/help/assets/icons/Search.svg) in the components bar to search for specific functions.
   1. Automatically a function container is added to the **[!UICONTROL Definition]** using the name of the function. 
 
 * Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** from within a container:
 
   1. Select **[!UICONTROL Function]**.
-  1. In the container, select a function from the [!UICONTROL *Select...*] dropdown menu.
+  1. In the container, select a function from the [!UICONTROL *Select...*] drop-down menu.
 
 The function container is named after the function component. For example, ![Function](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT (metric)]**. Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup with details on the function. Select **[!UICONTROL Learn more]** for more information on the function. 
 
@@ -212,6 +212,6 @@ To delete a container, select ![Close](/help/assets/icons/Close.svg) at the cont
 >[!MORELIKETHIS]
 >
 >[Use functions](cm-using-functions.md)
->[Filters](/help/components/filters/filters-overview.md)
+>[Segments](/help/components/filters/filters-overview.md)
 >
 

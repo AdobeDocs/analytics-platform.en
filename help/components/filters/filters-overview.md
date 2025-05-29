@@ -1,16 +1,16 @@
 ---
-title: Filters overview
-description: Understand what filters are used for and how to create a simple filter.
+title: Segmentation overview
+description: Understand what segments are used for and how to create a simple segment.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-feature: Filters
+feature: Filters, Segments
 role: User
 ---
 
-# Filters overview
+# Segmentation overview
 
-Customer Journey Analytics lets you build, manage, share, and apply powerful, focused audience filters to your reports. Filters let you identify subsets of persons, sessions or events based on characteristics or interactions. Filters are designed as codified audience insights that you can build for your specific needs, and then verify, edit, and share with other team members.
+Customer Journey Analytics lets you build, manage, share, and apply powerful, focused audience segments to your reports. Segments let you identify subsets of persons, sessions or events based on characteristics or interactions. Segments are designed as codified audience insights that you can build for your specific needs, and then verify, edit, and share with other team members.
 
-Filters can be based on: 
+Segments can be based on: 
 
 - attributes (browser type, device, number of visits, country, gender), 
 - interactions (campaigns, keyword search, search engine), 
@@ -18,60 +18,60 @@ Filters can be based on:
 - custom variables (form field, defined categories, customer ID), 
 - and other criteria.
 
-See [Create filters](/help/components/filters/create-filters.md) for the various options available to create filters. You then build, modify, and save the definition of a filter in the [Filter builder](filter-builder.md). Alternatively, you can create quick filters using the [Quick filter bulder](quick-filters.md). And you can also generate filters from visualizations in Workspace, for example using the [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu) visualization. 
+See [Create segments](/help/components/filters/create-filters.md) for the various options available to create segments. You then build, modify, and save the definition of a segment in the [Segment builder](filter-builder.md). Alternatively, you can create quick segments using the [Quick segment builder](quick-filters.md). And you can also generate segments from visualizations in Workspace, for example using the [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu) visualization. 
 
-You use the [Filters manager](manage-filters.md) to manage filters.
+You use the [Segment manager](manage-filters.md) to manage segments.
 
-## Plan filters
+## Plan segments
 
-Especially, as an administrator, the proper planning of filters improves the chances that the filters are used. Consider the following when planning filters:
+Especially, as an administrator, the proper planning of segments improves the chances that the segments are used. Consider the following when planning segments:
 
-- **Audience**: Who will use your filters? Ensure you provide a good filter description so the audience understands:
-  - What is this filter useful for?
+- **Audience**: Who will use your segments? Ensure you provide a good segment description so the audience understands:
+  - What is this segment useful for?
 
-  - When should I use this filter? 
+  - When should I use this segment? 
 
-- **Scope**: Which [Filter container](#filter-containers) best represents the data you are after? Use the smallest container possible.
+- **Scope**: Which [Segment container](#segment-containers) best represents the data you are after? Use the smallest container possible.
 
-- **Components**: Decide which components to include in the filter definition, and against which values the conditions should validate.
+- **Components**: Decide which components to include in the segment definition, and against which values the conditions should validate.
 
-- **Process**: Consider an approval process for your filter. There is no approval workflow in Customer Journey Analytics but you can still organize a process to determine whether you approve a filter or not. 
+- **Process**: Consider an approval process for your segments. There is no approval workflow in Customer Journey Analytics but you can still organize a process to determine whether you approve a segment or not. 
 
-- **Modularity**: Define filters with modularity in mind. So, the users of your filters can easily [stack filters](filter-builder.md#stack-filters) to create powerful new filters.
+- **Modularity**: Define segments with modularity in mind. The users of your segments should be able to easily [stack segments](filter-builder.md#stack-filters) to create powerful new segments.
 
 
-## Filter types
+## Segment types
 
-You can create three types of filters:
+You can create three types of segments:
 
-### Quick filters
+### Quick segments
 
-Quick filters allow you to explore data easily within a given Workspace project, without the need of creating a filter in the [Filter Builder](/help/components/filters/create-filters.md). You define your filter within the Workspace interface directly. See [Quick filters](quick-filters.md) for more information.
+Quick segments allow you to explore data easily within a given Workspace project, without the need of creating a segment in the [Segment Builder](/help/components/filters/create-filters.md). You define your segment within the Workspace interface directly. See [Quick segments](quick-filters.md) for more information.
 
-### Regular filters
+### Regular segments
 
-Regular filters let you identify data (persons, sessions, events) based on one or more conditions. If more than one conditions, you use logical operators like And and Or to define the filter further. You can use containers to group conditions and build more complex filters. See [Filter builder](filter-builder.md) for more information.
+Regular segments let you identify data (persons, sessions, events) based on one or more conditions. If you have more than one condition, you use logical operators like And and Or to define the segment further. You can use containers to group conditions and build more complex segments. See [Segment builder](filter-builder.md) for more information.
 
-### Sequential filters
+### Sequential segments
 
 >[!IMPORTANT]
 >
->You must have the **Select** package to create cross-channel sequential filters. Contact your administrator if you're unsure what Customer Journey Analytics package you have. 
+>You must have the **Select** package to create cross-channel sequential segments. Contact your administrator if you're unsure which Customer Journey Analytics package you have. 
 
-Sequential filters let you identify data (persons, sessions, events) based on navigation (page views across your site, interactions with scenes in your mobile app, or using a menu on a set-top box). Sequential filters help you identify, for example, what a person likes and what a person avoids. You use the Then logical operator to define a sequential filter. See [Sequential filters](seg-sequential-build.md) for more information.
+Sequential segments let you identify data (persons, sessions, events) based on navigation (page views across your site, interactions with scenes in your mobile app, or using a menu on a set-top box). Sequential segments help you identify, for example, what a person likes and what a person avoids. You use the Then logical operator to define a sequential segment. See [Sequential segments](seg-sequential-build.md) for more information.
 
 
 <!--
-An example of a complex sequential filter if you want to find the persons that 
+An example of a complex sequential segment if you want to find the persons that 
 
 | Session One | Session Two | Session Three |
 | --- | --- | --- |
 | The person went to the main landing page A, excluded the campaign page B, and then viewed the Product page C.| The person again went to the main landing page A, excluded the campaign page B, and went again to the Product page C, and then to a new page D. | The person entered and followed that same path as in the first and second visits, then excluded page F to go directly to a targeted product on page G. |
 -->
 
-## Filter containers {#containers}
+## Segment containers {#containers}
 
-Filters are based on a Person-, Session-, and Event-level hierarchy using a nested container model. The nested containers allow you to define conditions between and within the containers. 
+Segments are based on a Person-, Session-, and Event-level hierarchy using a nested container model. The nested containers allow you to define conditions between and within the containers. 
 
 
 <table style="table-layout: fixed; border: none;" width="100%">
@@ -101,19 +101,19 @@ Filters are based on a Person-, Session-, and Event-level hierarchy using a nest
 > - The **Event** container is known in Adobe Analytics as the **Hit** container.
 >
 
-A filter sets conditions to filter persons, sessions or events based on conditions. For example, conditions to filter persons based on person characteristics and navigation traits. To further breakdown the data, you can filter on specific sessions, page view events, screen taps, menu choices on a set-top box, and more. But also filter on attributes that you have ingested from a CRM or loyalty system. The [Filter builder](/help/components/filters/filter-builder.md) provides a simple interface to build these subsets and apply conditions in nested, hierarchical Person, Session, or Event containers.
+A segment sets conditions to segment persons, sessions or events based on conditions. For example, conditions to segment persons are based on person characteristics and navigation traits. To further break down the data, you can segment on specific sessions, page view events, screen taps, menu choices on a set-top box, and more. You can also segment on attributes that you have ingested from a CRM or loyalty system. The [Segment builder](/help/components/filters/filter-builder.md) provides a simple interface to build these subsets and apply conditions in nested, hierarchical Person, Session, or Event containers.
 
-The container architecture employed in the [Filter builder](/help/components/filters/filter-builder.md) defines Person as the outermost container. The container contains overarching data specific for the person across sessions and events like page views, mobile application screens, or menu screens on a set-top box. A nested Session container lets you set rules to break down the person's data based on sessions. A nested Event container lets you break down person information based on individual interactions. Each container lets you report across a person's history, interactions broken down by sessions, or break down individual events. 
+The container architecture employed in the [Segment builder](/help/components/filters/filter-builder.md) defines Person as the outermost container. This container contains overarching data specific for the person across sessions and events like page views, mobile application screens, or menu screens on a set-top box. A nested Session container lets you set rules to break down the person's data based on sessions. A nested Event container lets you break down person information based on individual interactions. Each container lets you report across a person's history, interactions broken down by sessions, or break down individual events. 
 
 ### Person container
 
-The Person container includes every session and every event for the persons that qualify for the condition specified in the container. When you define a filter with a simple condition like `Page Name equals Checkout`, then the Person container resolves to:
+The Person container includes every session and every event for the persons that qualify for the condition specified in the container. When you define a segment with a simple condition like `Page Name equals Checkout`, then the Person container resolves to:
 
 - All persons that have visited the page with name `Checkout`.
 - All sessions for these persons.
 - All event data for these persons. 
 
-As the most broadly defined container, reports generated at the Person container level returns events and sessions for all persons that qualify for the filter. The Person container is the most susceptible to change based on defined date ranges.
+As the most broadly defined container, reports generated at the Person container level return events and sessions for all persons that qualify for the segment. The Person container is the most susceptible to change based on defined date ranges.
 Person containers can include values based on a person's overall history:
 
 - Days before the first purchase.
@@ -122,7 +122,7 @@ Person containers can include values based on a person's overall history:
 
 ### Session container
 
-The Session container lets you identify page interactions or mobile app interactions, campaigns, or conversions for a specific session. The Session container is the most commonly used container because it captures behaviors for the entire session once the rule is met. The Session container also lets you define which sessions you want to include or exclude in building and applying a filter.  When you define a filter with a simple condition like `Page Name equals Checkout`, then the Session container resolves to:
+The Session container lets you identify page interactions or mobile app interactions, campaigns, or conversions for a specific session. The Session container is the most commonly used container because it captures behaviors for the entire session once the rule is met. The Session container also lets you define which sessions you want to include or exclude in building and applying a segment.  When you define a segment with a simple condition like `Page Name equals Checkout`, then the Session container resolves to:
 
 - All sessions where a page with name `Checkout` is visited.
 - All event data for those sessions.
@@ -144,7 +144,7 @@ Data views in Customer Journey Analytics let you determine how long a session la
 
 ### Event container
 
-The Event container defines which page, mobile application, or other type of events that you would like to include or exclude from a filter. It is the most narrow of the containers available to let you identify specific clicks, page view, taps on button in a mobile app where a condition is true. The Event container lets you view a single tracking code, or isolate behavior within a particular area of your mobile app. You may also want to pinpoint a specific value when an action occurs, such as the marketing channel when an order was placed. When you define a filter with a simple condition like `Page Name equals Checkout`, then the Event container resolves to:
+The Event container defines which page, mobile application, or other type of events you would like to include or exclude from a segment. It is the most narrow of the containers available. It lets you identify specific clicks, page view, taps on button in a mobile app where a condition is true. The Event container lets you view a single tracking code, or isolate behavior within a particular area of your mobile app. You may also want to pinpoint a specific value when an action occurs, such as the marketing channel when an order was placed. When you define a segment with a simple condition like `Page Name equals Checkout`, then the Event container resolves to:
 
 - All page view events where the page name equals `Checkout`.
 
@@ -156,21 +156,29 @@ Event containers include value-based, single page breakdowns for:
 - Merchandising dimensions (in the context of events) 
 
 
+
+### B2B containers
+
+[!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
+
+When you do have access to [Customer Journey Analytics B2B Edition](/help/getting-started/cja-b2b-edition.md), additional containers for use in segments are available. You can find more details on the use of these additional containers in [B2B concepts and features](/help/getting-started/cja-b2b-concepts-features.md).
+
+
 ### Logic group container
 
-Logic Group enables you to group conditions into a single sequential filter checkpoint. As part of the sequence, the logic defined in the container identified as [!UICONTROL Logic Group] is evaluated after any prior sequential checkpoint and before any following sequential checkpoint. See [Logic Group](seg-sequential-build.md#logic-group) for more information.
+Logic Group enables you to group conditions into a single sequential segment checkpoint. As part of the sequence, the logic defined in the container identified as [!UICONTROL Logic Group] is evaluated after any prior sequential checkpoint and before any following sequential checkpoint. See [Logic Group](seg-sequential-build.md#logic-group) for more information.
 
 ### Nest containers
 
-When creating containers within other containers, you are actually creating a filter within a filter. The following logic is applied to nested containers:
+When creating containers within other containers, you are actually creating a segment within a segment. The following logic is applied to nested containers:
 
 1. Determine what data is included using the outermost container. Any data that does not match this outer rule is discarded in the report.
-2. Apply the nested filter definition to the remaining data. The nested filter definition does NOT apply to any data that the first definition discarded.
-3. Repeat until all nested container filter definitions have been calculated. The remaining data is then included in the result and used for reporting.
+2. Apply the nested segment definition to the remaining data. The nested segment definition does NOT apply to any data that the first definition discarded.
+3. Repeat until all nested-container segment definitions have been calculated. The remaining data is then included in the result and used for reporting.
 
 >[!NOTE]
 >
->When you nest a filter within a filter (for example, you drag a filter from the Components panel onto your filter definition), a container is created with a copy (not a reference) of the dragged filter definition. 
+>When you nest a segment within a segment (for example, you drag a segment from the Components panel onto your segment definition), a container is created with a copy (not a reference) of the dragged segment definition. 
 
 <!--
 You can use nesting between containers and between conditions within a container. Here is what you can nest in each container:
@@ -181,20 +189,20 @@ You can use nesting between containers and between conditions within a container
 | Session | Session
 
 
-## Out-of-the-box filter template {#template}
+## Out-of-the-box segment template {#template}
 
 Traditional Analytics comes with numerous out-of-the-box templates and calculated metrics. Many of them do not apply in Customer Journey Analytics, or have to be renamed or recreated. Others depend on a solution for context-aware variables in Customer Journey Analytics.
 
-| Filter Name | Description |
+| Segment Name | Description |
 | --- | --- |
-| All Data | All Data is a required filter that gets dynamically added to reporting when a metric is added to the row of a Freeform table. |
+| All Data | All Data is a required segment that gets dynamically added to reporting when a metric is added to the row of a Freeform table. |
 -->
 
 >[!MORELIKETHIS]
 >
->[Create filters](create-filters.md)
->[Filter builder](filter-builder.md)
->[Quick filters](quick-filters.md)
->[Sequential filters](seg-sequential-build.md)
->[Manage filters](manage-filters.md)
+>[Create segments](create-filters.md)
+>[Segment builder](filter-builder.md)
+>[Quick segments](quick-filters.md)
+>[Sequential segments](seg-sequential-build.md)
+>[Manage segments](manage-filters.md)
 >

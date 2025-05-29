@@ -1,5 +1,5 @@
 ---
-description: Donut visualization shows data as parts or filters of a whole.
+description: Donut visualization shows data as parts or segments of a whole.
 title: Donut
 feature: Visualizations
 exl-id: 97b846a6-3a38-48c7-b686-b792bb882fdb
@@ -24,9 +24,9 @@ _This article documents the Donut visualization in_ ![CustomerJourneyAnalytics](
 >[!ENDSHADEBOX]
 
 
-Similar to a pie chart, the ![GraphDonut](/help/assets/icons/GraphDonut.svg) **[!UICONTROL Donut]** visualization shows data as parts or filters of a whole. Use a donut visualization when comparing percentages of a total, typically with a small number of items.
+Similar to a pie chart, the ![GraphDonut](/help/assets/icons/GraphDonut.svg) **[!UICONTROL Donut]** visualization shows data as parts or segments of a whole. Use a donut visualization when comparing percentages of a total, typically with a small number of items.
 
-![A Donut chart showing data as parts or filters of a whole.](assets/donut.png)
+![A Donut chart showing data as parts or segments of a whole.](assets/donut.png)
 
 
 >[!BEGINSHADEBOX]

@@ -12,12 +12,12 @@ Anyone can create a custom date range. You create a date range in the following 
 
 ![Create an annotation](assets/create-date-range.png)
 
-* **A**. In the main interface, select **[!UICONTROL Components]** and select **[!UICONTROL Date range]**. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** from the [[!UICONTROL Date range] manager](/help/components/date-ranges/manage.md). 
-* **B**. In a Workspace project, from the context menu in a visualization, select **[!UICONTROL Custom date range to this date range]**.
-* **C**. In a Workspace project, select **[!UICONTROL Components]** from the menu, and select **[!UICONTROL Create date range]**
-* **D**. In a Workspace project, use the shortcut **[!UICONTROL ctrl+shift+d]** (Windows) or **[!UICONTROL shift+command+d]** (macOS). 
-* **E**. In a Workspace project, from the Components left panel, select ![Add](/help/assets/icons/Add.svg) at ![Calendar](/help/assets/icons/Calendar.svg) **Date ranges**.
-* **F**. In a supported visualization, like a line visualization, from the context menu on a data point, select **[!UICONTROL Annotate Selection]**.
+* **A** - In the main interface, select **[!UICONTROL Components]** and select **[!UICONTROL Date range]**. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** from the [[!UICONTROL Date range] manager](/help/components/date-ranges/manage.md). 
+* **B** - In a Workspace project, from the context menu in a visualization, select **[!UICONTROL Custom date range to this date range]**.
+* **C** - In a Workspace project, select **[!UICONTROL Components]** from the menu, and select **[!UICONTROL Create date range]**
+* **D** - In a Workspace project, use the shortcut **[!UICONTROL ctrl+shift+d]** (Windows) or **[!UICONTROL shift+command+d]** (macOS). 
+* **E** - In a Workspace project, from the Components left panel, select ![Add](/help/assets/icons/Add.svg) at ![Calendar](/help/assets/icons/Calendar.svg) **Date ranges**.
+* **F** - In a supported visualization, like a line visualization, from the context menu on a data point, select **[!UICONTROL Annotate Selection]**.
 
 To define the annotation, you use the [[!UICONTROL Date range builder]](#annotation-builder):
 
@@ -47,9 +47,9 @@ The **[!UICONTROL New date range]** or **[!UICONTROL Edit date range]** dialog i
 
 1. Specify a **[!UICONTROL Title]** for the date range. For example, **[!UICONTROL Quarterly]**.
 1. Optionally, specify a **[!UICONTROL Description]**.
-1. Organize the filter by creating or applying one or more **[!UICONTROL Tags]**. Start typing to find existing tags you can select. Or press **[!UICONTROL ENTER]** to add a new tag. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a tag. |
+1. Organize the segment by creating or applying one or more **[!UICONTROL Tags]**. Start typing to find existing tags you can select. Or press **[!UICONTROL ENTER]** to add a new tag. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a tag. |
 1. Select a **[!UICONTROL Date Range]** by selecting first the start date and then the end date. 
-   Alternatively, you can select a **[!UICONTROL Preset]** from the [!UICONTROL *Select a preset*] dropdown menu.
+   Alternatively, you can select a **[!UICONTROL Preset]** from the [!UICONTROL *Select a preset*] drop-down menu.
 
 1. Optionally, select **[!UICONTROL Show advanced settings]** to:
 

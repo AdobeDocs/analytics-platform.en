@@ -25,7 +25,7 @@ Creating a data view involves either creating metrics and dimensions from schema
 
 To create a data view:
 
-1. Log in to [Customer Journey Analytics](https://analytics.adobe.com) and go to the **[!UICONTROL Data views]** tab.
+1. Log in to [Customer Journey Analytics](https://analytics.adobe.com) and select **[!UICONTROL Data views]**, optionally from **[!UICONTROL Data management]**, in the top menu.
 
 1. Select **[!UICONTROL Create new data view]**. Alternatively, you can select an existing data view from the list of data views to edit it.
 
@@ -45,7 +45,7 @@ To create a data view:
 
    For detailed information about the options available when adding components to a data view, see [Components](/help/data-views/create-dataview.md#components) in [Create or edit a data view](/help/data-views/create-dataview.md).
 
-1. Select the [!UICONTROL **Settings**] tab. From here, you can configure filters to apply to your entire data view and configure session timeout and metrics.
+1. Select the [!UICONTROL **Settings**] tab. From here, you can configure segments to apply to your entire data view and configure session timeout and metrics.
 
    For detailed information about the options available when configuring settings for a data view, see [Settings](/help/data-views/create-dataview.md#settings) in [Create or edit a data view](/help/data-views/create-dataview.md).
 

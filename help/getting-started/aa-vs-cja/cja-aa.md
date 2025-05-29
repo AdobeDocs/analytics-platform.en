@@ -19,6 +19,7 @@ The following table lists features that are available in Customer Journey Analyt
 | **Ability to combine datasets (such as Adobe Analytics report suites)** | Customer Journey Analytics allows you to [combine data](/help/connections/combined-dataset.md) from multiple report suites as if they were a single report suite in Adobe Analytics. |
 | **Accommodation for any kind of data** | Customer Journey Analytics is combined with Experience Platform's ability to hold all kinds of data schemas and types. Using [Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html), data can be uniformly represented and organized, ready for combination and exploration. Adobe Analytics is predominantly focused on web and mobile analytics data with some capabilities to [import data](https://experienceleague.adobe.com/docs/analytics/import/home.html). |
 | **BI Extension** | The [BI Extension](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) lets you connect CJA directly to popular BI visualization tools such as PowerBI or Tableau. By using this extension, you can have your BI reports precisely match what you see in Analysis Workspace and other CJA reporting interfaces. This is a much easier way to get BI reporting for CJA without the need to recreate reports/metrics from raw data. |
+| **Content Analytics** | [Content Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics) helps marketers to understand how content impacts the key performance indicators that a business has defined. On top of the behavioral data, Content Analytics collects data on how content is consumed and how content drives impact. |
 | **Cross-Device Analytics** | Customer Journey Analytics supports the seamless combination of device-specific datasets from unauthenticated and authenticated sessions. Customer Journey Analytics offers to backfill historical data to known devices. In Adobe Analytics, this capability is limited to a single report suite and the use of a device graph. |
 | **Dimension enhancements** | Customer Journey Analytics provides greater flexibility when using dimensions: <ul><li>**Custom numeric-based dimensions**: [Create your own numeric-based dimensions within a data view](/help/data-views/create-dataview.md#components).</li><li>**Sort string-based dimensions**: [Sort string-based dimensions alphabetically in a freeform table.](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>In Adobe Analytics, only a handful of built-in numeric dimensions were available, and sorting by string-based dimensions was not possible.</p> |
 | **Derived Fields** | [Derived fields](/help/data-views/derived-fields/derived-fields.md) allow for report-time transformations to your data. Data can be combined, corrected, or created on the fly and these transformations apply retroactively to all reporting. |
@@ -30,11 +31,12 @@ The following table lists features that are available in Customer Journey Analyt
 | **Journey Canvas** | [Journey canvas](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en) is a visualization in Analysis workspace that allows you to analyze how people proceed through or fall out of a defined journey. |
 | **Product Usage** | [Product usage](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview) shows you how your organization uses Customer Journey Analytics. |
 | **Report-time transformations** | [Data views](/help/data-views/data-views.md) in Customer Journey Analytics allow you to further interpret data from a connection. You can alter or remove data without changing your implementation, use substrings to manipulate dimensions, create metrics from any value, or filter subevents. All of these transformations are done non-destructively. Adobe Analytics provides limited capabilities through virtual report suites and custom session length. |
+| **Shared metrics and dimensions across data views** | Allows you to [apply dimension and metric settings across multiple data views](/help/data-views/shared-metrics-dimensions/smd-overview.md). Changes made to a shared dimension or metric apply to all instances of that dimension or metric across all applicable data views. |
 | **SQL access** | Using the Data Distiller option, Customer Journey Analytics can remove the limitations of data collected on Adobe's backend processing. You can modify your data with SQL, create values and datasets unique to your business and continue to explore. Analytics does not support any kind of SQL access to its data. |
 | **Stitching** | [Stitching](/help/stitching/overview.md) is a powerful feature that elevates an event dataset's suitability for cross-channel analysis. Cross-channel analysis is a main use case that Customer Journey Analytics can handle, allowing you to seamlessly combine and run reports on multiple datasets from different channels, based on a common identifier (person ID). |
 | **Templates in Adobe Journey Optimizer** | Customize the new reporting interface in Adobe Journey Optimizer by creating or editing a [template](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=en) in Customer Journey Analytics, then saving the template to be used on the Reports page in Journey Optimizer. |
 | **Unlimited customer dimensions and metrics** | Customer Journey Analytics dimensions are unlimited; values can be numeric, text, objects, lists, or mixtures of all. Dimensions can be nested or hierarchical. <br/>By contrast, Adobe Analytics supports up to a maximum of 75 props and 250 eVars. |
-| **Unlimited unique values** | Customer Journey Analytics supports unlimited unique values or dimension items that can be reported on within a single dimension.<p>There are no [cardinality limits on a dimension](/help/components/dimensions/high-cardinality.md), allowing for any unique value to appear and be counted.</p><p>This approach removes reporting and analysis limitations that can exist with large-scale Adobe Analytics implementations, resulting in [!UICONTROL Low Traffic] labels.</p><p>In Customer Journey Analytics, it is possible to see a [!UICONTROL Uniques Exceeded] label, but these occur far less frequently and can be mitigated by applying a filter or segment to the data.</p> |
+| **Unlimited unique values** | Customer Journey Analytics supports unlimited unique values or dimension items that can be reported on within a single dimension.<p>There are no [cardinality limits on a dimension](/help/components/dimensions/high-cardinality.md), allowing for any unique value to appear and be counted.</p><p>This approach removes reporting and analysis limitations that can exist with large-scale Adobe Analytics implementations, resulting in [!UICONTROL Low Traffic] labels.</p><p>In Customer Journey Analytics, it is possible to see a [!UICONTROL Uniques Exceeded] label, but these occur far less frequently and can be mitigated by applying a segment to the data.</p> |
 
 ## Fully supported Adobe Analytics features/components {#full-support}
 
@@ -56,7 +58,7 @@ The following table lists features that are available in Customer Journey Analyt
 | **List variables/List props** | Full support. Customer Journey Analytics uses XDM and supports unlimited string arrays which can be used similarly to listVars. |
 | **Merchandising eVars** | Full support via [binding dimensions and binding metrics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
 | **Metrics** | Full support; Customer Journey Analytics uses the Experience Data Model (XDM) and supports unlimited metrics and is not tied to the custom success events of Adobe Analytics. Some standard metrics have been renamed from Adobe Analytics: Visitors = People, Visits = Sessions, Hits = Events. |
-| **Migrating projects, filters, and calculated metrics from Adobe Analytics to Customer Journey Analytics** | Full support. |
+| **Migrating projects, segments, and calculated metrics from Adobe Analytics to Customer Journey Analytics** | Full support. |
 | **Mobile scorecard/Dashboards** | Full support |
 | **Panels** | Full support for the following panels: Blank panel, Attribution, Freeform, Quick insights, and Next or previous item. |
 | **PDF export** | Full Support |
@@ -66,7 +68,7 @@ The following table lists features that are available in Customer Journey Analyt
 | **Report time processing** | Full Support; Customer Journey Analytics relies exclusively on Report Time Processing. |
 | **Reporting API access** | Full Support; Available through the [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/). |
 | **Scheduled reports/projects** | Full Support |
-| **Segments** | Full Support. Now called "Filters" - note that any existing segments in traditional Analysis Workspace are not ported to Customer Journey Analytics. |
+| **Segments** | Full Support. (Previously called "Filters".) |
 | **Streaming Media Collection** | Streaming media data are available using the Analytics source connector as part of the Media Concurrent Viewers panel and the Media Playback Time Spent panel in Workspace. |
 | **Summary-level data sources** | Full support |
 | **Virtual report suites** | Full Support. Now called [Data views](/help/data-views/create-dataview.md). |
@@ -101,8 +103,8 @@ The following table lists features that are available in Customer Journey Analyt
 | **Processing rules, VISTA rules, Marketing channel processing rules** | Supported using Adobe Experience Platform Data Prep functionality as well as [derived fields](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/derived-fields.html) for both WebSDK based datasets and data from the Analytics source connector. |
 | **Products variable** | Within the Experience Platform, users can use an array of objects within a dataset schema to satisfy this use case. Within Customer Journey Analytics, customers can use any number of product variables and are not restricted to a single variable as in Adobe Analytics. |
 | **Project sharing** | Project sharing is only supported between users of Customer Journey Analytics - there is not project sharing between Customer Journey Analytics and the traditional Analysis Workspace. |
-| **Report Builder** | Supported with a new Office 365 plugin for Excel. |
-| **User permissions/Data access controls** | Customer Journey Analytics distinguishes between [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) product admins, product profile admins, and users. Only product admins can Create/update/delete Connections, Projects, Filters, or Calculated Metrics that were created by other users, while product admins and product profile admins can edit Data views. Additional user permissions are available for things like creating calculated metrics, filters, or annotations. |
+| **Report Builder** | Supported with a new Office 365 plugin for Microsoft Excel. |
+| **User permissions/Data access controls** | Customer Journey Analytics distinguishes between [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html) product admins, product profile admins, and users. Only product admins can Create/update/delete Connections, Projects, Segments, or Calculated Metrics that were created by other users, while product admins and product profile admins can edit Data views. Additional user permissions are available for things like creating calculated metrics, segments, or annotations. |
 | **Visualizations** | All Workspace visualizations are supported except for the Map visualization. |
 | **Cross-device/cross-channel stitching** | Supported for event datasets containing identity information. See [Stitching](../../stitching/overview.md). |
 
@@ -110,13 +112,12 @@ The following table lists features that are available in Customer Journey Analyt
 
 | Feature | Notes |
 | --- | --- |
-| **Panels** | Blank Panel, Attribution Panel, Freeform Panel, and Quick Insights are fully supported. The Segment Comparison and Analytics for Target (A4T) panels are not supported. |
+| **Workspace panels** | Blank Panel, Attribution Panel, Freeform Panel, and Quick Insights are fully supported. The Segment Comparison and Analytics for Target (A4T) panels are not supported. |
 
 ## No support, but planned {#planned}
 
 | Feature | Notes |
 | --- | --- |
-| **Contribution analysis** | Support is planned. |
 | **Real-time reporting** | Support is planned. |
 | **Segment IQ** | Support is planned. |
 | **Transaction ID data sources** | Support is planned. |
@@ -126,7 +127,9 @@ The following table lists features that are available in Customer Journey Analyt
 | Feature | Notes |
 | --- | --- |
 | **Activity Map** | Support is not yet planned. |
+| **Contribution analysis** | Support is not yet planned. |
 
 ## Will never be supported {#never}
 
 * People metric using Cross-Device Coop
+* Triggers
