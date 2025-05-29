@@ -22,6 +22,11 @@ Comments in Analysis Workspace allow you to share insights and ask questions wit
 
 You can view comments from the comments area in the right rail or from the comment badge if one exists. 
 
+>[!NOTE]
+>
+>A project must be saved before the comments area is visible in the right rail. If the project has not been previously saved, you need to [save the project](/help/analysis-workspace/build-workspace-project/save-projects.md) before adding comments.
+
+
 ![View comments in Analysis Workspace](assets/workspace-comments-view.png)
 
 ### View comments in the comments area
