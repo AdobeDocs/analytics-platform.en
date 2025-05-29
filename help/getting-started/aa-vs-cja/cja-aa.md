@@ -132,3 +132,4 @@ The following table lists features that are available in Customer Journey Analyt
 ## Will never be supported {#never}
 
 * People metric using Cross-Device Coop
+* Triggers
