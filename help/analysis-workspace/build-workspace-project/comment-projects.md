@@ -22,6 +22,11 @@ Comments in Analysis Workspace allow you to share insights and ask questions wit
 
 You can view comments from the comments area in the right rail or from the comment badge if one exists. 
 
+>[!NOTE]
+>
+>A project must be saved before the comments area is visible in the right rail. If the project has not been previously saved, you need to [save the project](/help/analysis-workspace/build-workspace-project/save-projects.md) before adding comments.
+
+
 ![View comments in Analysis Workspace](assets/workspace-comments-view.png)
 
 ### View comments in the comments area
@@ -32,7 +37,7 @@ All comments made in an Analysis Workspace project are visible in the comments a
 
    ![Comments area closed](assets/comments-area-closed.png)
 
-   Each comment shows a time stamp of the day the comment was posted. If the comment was posted on the current day, the time of day is shown. Mouse over the day or time to show the full date and time the comment was posted.
+   Each comment shows a time stamp of the day that the comment was posted. If the comment was posted on the current day, the time of day is shown. Mouse over the day or time to show the full date and time the comment was posted.
 
 1. (Optional) To search the comments area, select the search icon ![search icon](assets/comments-search-icon.png), then type a word or phrase. The comments area is filtered to contain only those comments that include that word or phrase.
 
@@ -60,7 +65,7 @@ To comment on a specific area of the project (such as a metric value in a freefo
 
 1. With the project open in Analysis Workspace, right-click the area of the project where you want to insert the comment.
 
-   All visualizations support comment badges on the vizualization header, but only the following visualizations support comment badges on specific data points within the visualization:
+   All visualizations support comment badges on the visualization header, but only the following visualizations support comment badges on specific data points within the visualization:
 
    * Freeform table
    * Cohort table
@@ -98,19 +103,23 @@ To add comments to a project in Analysis Workspace:
 
 ## Include others in a comment
 
-The comment feature in Analysis Workspace makes it easier to collaborate with others. To include another person in your comment:
+The comment feature in Analysis Workspace makes it easier to collaborate with others. 
+
+Consider the following when using the @ symbol to include people in a comment: 
+   
+* People you include receive notifications based on their Adobe Experience Cloud notification settings. By default, they receive an in-app notification, visible from the [Experience Cloud notification](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) icon ![Experience Cloud notification icon](assets/experience-cloud-notification.png) in Customer Journey Analytics. 
+
+  Additionally, people can configure their Experience Cloud notification settings to receive email notifications and Slack notifications by [subscribing to email notifications](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) and [subscribing to Slack notifications](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
+
+* You can include anyone in your organization in a comment, but doing so does not automatically grant them access to the project. Only people who already have access to the project can access it.
+
+To include another person in your comment:
 
 1. Type the @ symbol, then begin typing the first name, last name, or email address of the person you want to include.
 
    ![tag user](assets/comments-tag-user.png)
 
-1. Select the person's name when it appears in the drop-down menu.
-
-Consider the following when using the @ symbol to include people in a comment: 
-   
-* People you include receive an email notification and a Pulse notification.
-
-* You can include anyone in your organization in a comment, but this does not automatically grant them access to the project. Only people who already have access to the project can access it. 
+1. Select the person's name when it appears in the drop-down menu. 
 
 ## Reply to a comment
 
@@ -120,7 +129,7 @@ Consider the following when using the @ symbol to include people in a comment:
 
    Or
    
-   If you want your reply to include the text of the comment you are replying to, with the original text wrapped in a quote tag, select the 3-dot icon next to the specific comment or reply that you want to reply to, then select **[!UICONTROL Quote reply]**. A quote reply is a good way to clearly indicate the comment or reply your comment referrs to.
+   To include the text of the comment you are replying to, with the original text wrapped in a quote tag, select the 3-dot icon next to the specific comment or reply that you want to reply to, then select **[!UICONTROL Quote reply]**. A quote reply is a good way to indicate which comment or reply your comment refers to.
 
 1. In the **[!UICONTROL New comment]** field, specify your comment. 
 
@@ -140,7 +149,7 @@ If a comment is available in the comments area in the right rail but it does not
 
 1. Select the area of the project where you want to place the badge for the existing comment. 
 
-   A **comment badge** ![comment badge](assets/comment-indicator.png) is placed in the area of the Workspace project you selected. The comment also appears at the top of the comments area in the right rail.
+   A **comment badge** ![comment badge](assets/comment-indicator.png) is placed in the area of the Workspace project that you selected. The comment also appears at the top of the comments area in the right rail.
 
    See [View comment badges in a project](#view-comment-badges-in-a-project) for more information. 
 
@@ -176,7 +185,7 @@ To copy the link to a comment:
 
 ## Copy the text of a comment
 
-You can copy the body text a comment and share it with others. 
+You can copy the body text of a comment and share it with others. 
 
 To copy the body text of a comment:
 
@@ -190,7 +199,7 @@ To copy the body text of a comment:
 
 1. With the project open in Analysis Workspace, select the comments area icon ![comments area icon](assets/comments-area-icon.png) in the right rail of Analysis Workspace. 
 
-1. Select **[!UICONTROL Like]** beneath the comment you want to endorse.
+1. Select **[!UICONTROL Like]** beneath the comment that you want to endorse.
 
 ## Delete a comment
 
@@ -202,7 +211,7 @@ To delete a comment:
 
 1. With the project open in Analysis Workspace, select the comments area icon ![comments area icon](assets/comments-area-icon.png) in the right rail of Analysis Workspace. 
 
-1. Select the more icon ![comment-more-icon](assets/comment-more-icon.png) next to the comment you want to delete, then select **[!UICONTROL Delete]**. 
+1. Select the more icon ![comment-more-icon](assets/comment-more-icon.png) next to the comment that you want to delete, then select **[!UICONTROL Delete]**. 
 
 1. Select **[!UICONTROL Delete]** again to confirm the deletion.
 
@@ -214,7 +223,7 @@ To resolve a comment:
 
 1. With the project open in Analysis Workspace, select the comments area icon ![comments area icon](assets/comments-area-icon.png) in the right rail of Analysis Workspace. 
 
-1. Select the more icon ![comment-more-icon](assets/comment-more-icon.png) next to the comment you want to resolve, then select **[!UICONTROL Resolve]**. 
+1. Select the more icon ![comment-more-icon](assets/comment-more-icon.png) next to the comment that you want to resolve, then select **[!UICONTROL Resolve]**. 
 
 1. Select **[!UICONTROL Resolve]** again to confirm.
 

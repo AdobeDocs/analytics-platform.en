@@ -10,65 +10,10 @@ role: User
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_area"
->title="Intelligent captions: Area"
+>id="workspace_intelligentcaptions"
+>title="Intelligent captions"
 >abstract="Generate insights in natural-language form to help you more easily understand and interpret data for this visualization."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_bar"
->title="Intelligent captions: Bar"
->abstract="Generate insights in natural-language form to help you more easily understand and interpret data for this visualization."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_donut"
->title="Intelligent captions: Donut"
->abstract="Generate insights in natural-language form to help you more easily understand and interpret data for this visualization."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_horizontalbar"
->title="Intelligent captions: Horizontal Bar"
->abstract="Generate insights in natural-language form to help you more easily understand and interpret data for this visualization."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_line"
->title="Intelligent captions: Line"
->abstract="Generate insights in natural-language form to help you more easily understand and interpret data for this visualization."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_fallout"
->title="Intelligent captions: Fallout"
->abstract="Generate insights in natural-language form to help you more easily understand and interpret data for this visualization."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_flow"
->title="Intelligent captions: Flow"
->abstract="Generate insights in natural-language form to help you more easily understand and interpret data for this visualization."
-
-<!-- markdownlint-enable MD034 -->
  
 The Intelligent captions functionality uses advanced Generative AI to provide key insights for the most frequently used Workspace visualizations in natural language. 
 
