@@ -75,7 +75,7 @@ Provides overarching settings for the data view.
 >id="dataview_dataviewsinadobejourneyoptimizer"
 >title="Data views in Journey Optimizer"
 >abstract="Customer Journey Analytics needs to use a connection and data view that are compatible with Adobe Journey Optimizer. By default, a connection and data view are automatically created for this purpose.<br/>Alternatively, you can enable this option to make this the default data view that is used in Adobe Journey Optimizer reporting. When enabled, all the necessary components required for Journey Optimizer are added to this data view, and all the necessary Journey Optimizer datasets are added to the connection associated with this data view."
->additional-url="<https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection>" text="Which components and datasets are added." 
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="Which components and datasets are added." 
 
 
 Provides settings that are applicable when using Adobe Journey Optimizer in addition to Customer Journey Analytics.
@@ -177,46 +177,45 @@ You can filter ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_1
 >id="dataview_includedcomponents_filter_datagovernance_custom"
 >title="Custom labels"
 >abstract="In addition to the labels provided by Adobe, you can also define your own custom labels for your organization."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_contract"
 >title="Contract labels"
 >abstract="Contract (C) labels are used to categorize data that has contractual obligations or is related to your organization's data governance policies."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_identity"
 >title="Identity labels"
 >abstract="Identity (I) labels are used to categorize data that can identify or contact a specific person."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_sensitive"
 >title="Sensitive labels"
 >abstract="Sensitive (S) labels are used to categorize data that you, and your organization, consider sensitive."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
 
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_partner_ecosystem"
 >title="Partner ecosystem"
 >abstract="Partner Ecosystem (P) labels are used to categorize data that is shared with third-party partners."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_policies"
 >title="Policies"
 >abstract="In order for data usage labels to effectively support data compliance, data usage policies must be implemented. Data usage policies are rules that describe the kinds of marketing actions that you are allowed to, or restricted from, performing on data within Experience Platform. The Policies filters apply the enabled policy to the Data View."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
 
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_responsible_engagement"
 >title="Responsible engagement labels"
 >abstract="Responsible engagement labels are used to support responsible engagement."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview"
-
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
 
 
 The **[!UICONTROL Included components]** contains the list of **[!UICONTROL Metrics]** and **[!UICONTROL Dimensions]** you configure for the data view. 
