@@ -4,8 +4,6 @@ description: Learn about how to optimize account marketing using the Customer Jo
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-hide: yes
-hidefromtoc: yes
 badgePremium: label="B2B Edition"
 exl-id: d5e44546-ea82-42eb-98df-19d51c71e9be
 ---

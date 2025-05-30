@@ -4,8 +4,6 @@ description: Learn about typical Customer Journey Analytics B2B Edition use case
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User, Admin
-hide: yes
-hidefromtoc: yes
 badgePremium: label="B2B Edition"
 exl-id: 7c16cc62-5032-44a2-92e4-4a1c320f17aa
 ---

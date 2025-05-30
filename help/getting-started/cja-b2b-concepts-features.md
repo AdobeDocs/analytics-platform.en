@@ -71,7 +71,7 @@ You can use the B2B containers for specific B2B functionality in Analysis Worksp
 * **Attribution**: You can use the new B2B containers in [attribution panel](/help/analysis-workspace/c-panels/attribution.md), in [attribution component settings](/help/data-views/component-settings/attribution.md),  in [calculated metrics](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md), or in [columns in a Freeform table](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md). Account lookbacks are extended to 13 months.
 
 * **Visualizations**: [Fall out](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md), [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md), and [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) visualizations support the new B2B containers. For example: you can use the new containers to understand how buying groups consume content, or how opportunity cohorts move towards the close of a sale. 
-You can also set the default container for these visualization in the [user preferences](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
+You can also set the default container for these visualizations in the [user preferences](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
 
 Segments, attribution, and visualizations together with the B2B containers support you in deep B2B analysis and insights. 
 
