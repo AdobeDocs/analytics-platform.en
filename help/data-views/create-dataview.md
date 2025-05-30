@@ -134,9 +134,9 @@ Next, you can set a data view's components, which means you can create metrics a
 
 1. Search for a schema field using ![Search icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Search schema fields]** or find a field by moving into any of the dataset collections, like ![Folder icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Event datasets]**.<br/>Alternatively, you can create a derived field using ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Create derived field** . See [Derived fields](./derived-fields/derived-fields.md) for more information.
 
-1. When you found your specific schema field or defined your derived field, drag that field, such as ![Handle icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Page Name]**, from the left rail into the Metrics or Dimensions section.
-   You can drag the same schema field into the dimensions or metrics sections multiple times and configure the same dimension or metric in different ways. For example, from the  pageName field, you can create a dimension called "Product Pages", and another one "Error pages", by using different [Component settings](component-settings/overview.md) on the right.
-   If you drag a schema field folder from the left rail, they are automatically sorted into typical sections. String fields end up in the [!UICONTROL Dimensions] section and numeric schema types end up in the [!UICONTROL Metrics] section. You can also click **[!UICONTROL Add all]** and all schema fields are added to their respective locations.
+1. When you found your specific schema field or defined your derived field, drag that field, such as ![Handle icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Page Name]**, from the left rail into the **[!UICONTROL Metrics]** or **[!UICONTROL Dimensions]** section underneath **[!UICONTROL Included components]**.
+   You can drag the same schema field into the dimensions or metrics sections multiple times and configure the same dimension or metric in different ways. For example, from the  pageName field, you can create a dimension titled `Product Pages`, and another one titled `Error pages`, by using different [Component settings](component-settings/overview.md) on the right.
+   If you drag a schema field folder from the left rail, the fields in the folder are automatically sorted into the appropriate section. String fields end up in the [!UICONTROL Dimensions] section and numeric schema types end up in the [!UICONTROL Metrics] section. You can also click **[!UICONTROL Add all]** and all schema fields are added to their respective section.
 
 1. Once you select a component, settings appear on the right.
 
@@ -155,11 +155,11 @@ Next, you can set a data view's components, which means you can create metrics a
 
 1. Select **[!UICONTROL Save and continue]** to continue configuring your new or existing data view. Select **[!UICONTROL Save]** to save the configuration for your existing data view.
 
-**Duplicate metrics or dimensions**
+### Duplicate metrics or dimensions
 
 Duplicating metrics or dimensions and then modifying specific settings is an easy way to create multiple metrics or dimensions from a single schema field. Select the [!UICONTROL Duplicate] setting underneath the metric's or dimensions's name at the top right. Modify the new dimension or metric and save it under a more descriptive name.
 
-**Filter schema fields or datasets**
+### Filter schema fields or datasets
 
 You can filter ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) schema fields in the left rail by [!UICONTROL data type], [!UICONTROL datasets], [!UICONTROL data governance], and [!UICONTROL other] criteria ([!UICONTROL contains data], [!UICONTROL is identity], and [!UICONTROL is not deprecated]):
 
@@ -168,6 +168,71 @@ You can filter ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_1
 >[!TIP]
 >
 >If the components do not load properly in your data view and you see an error message instead, please refer to [Lack of permissions](../troubleshooting/lack-of-permissions.md) for a resolution.
+
+
+### Included components {#included-components}
+
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_custom"
+>title="Custom labels"
+>abstract="In addition to the labels provided by Adobe, you can also define your own custom labels for your organization."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_contract"
+>title="Contract labels"
+>abstract="Contract (C) labels are used to categorize data that has contractual obligations or is related to your organization's data governance policies."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_identity"
+>title="Identity labels"
+>abstract="Identity (I) labels are used to categorize data that can identify or contact a specific person."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_sensitive"
+>title="Sensitive labels"
+>abstract="Sensitive (S) labels are used to categorize data that you, and your organization, consider sensitive."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
+
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_partner_ecosystem"
+>title="Partner ecosystem"
+>abstract="Partner Ecosystem (P) labels are used to categorize data that is shared with third-party partners."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_policies"
+>title="Policies"
+>abstract="In order for data usage labels to effectively support data compliance, data usage policies must be implemented. Data usage policies are rules that describe the kinds of marketing actions that you are allowed to, or restricted from, performing on data within Experience Platform. The Policies filters apply the enabled policy to the Data View."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
+
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_responsible_engagement"
+>title="Responsible engagement labels"
+>abstract="Responsible engagement labels are used to support responsible engagement."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
+
+
+The **[!UICONTROL Included components]** contains the list of **[!UICONTROL Metrics]** and **[!UICONTROL Dimensions]** you configure for the data view. 
+
+* To search for components, use ![Search](/help/assets/icons/Search.svg) **[!UICONTROL _Search components_]**.
+* To filter the listed included components, select ![Filter](/help/assets/icons/Filter.svg).
+
+  ![Includec components filter dialog](assets/dataview_includedcomponents_filter.png)
+
+  In the **[!UICONTROL Filter field by]** dialog, you can filter on the following categories:
+
+  * **[!UICONTROL Data type]** - You can select one or more of the following data types: [!UICONTROL String], [!UICONTROL Integer], [!UICONTROL Short], [!UICONTROL Boolean], [!UICONTROL Double], [!UICONTROL Byte], [!UICONTROL Long], [!UICONTROL Date], or [!UICONTROL Date-time].
+  * **[!UICONTROL Datasets]** - Select one or more datasets.
+  * **[!UICONTROL Data governance]**: Select one or more labels from the [!UICONTROL Custom labels], [!UICONTROL Contract labels], [!UICONTROL Identity labels], [!UICONTROL Sensitivity labels], P[!UICONTROL artner ecosystem] or [!UICONTROL Policies] subcategories.
+  * **[!UICONTROL Other]** - Select one or more of the options [!UICONTROL Contains data], [!UICONTROL Is identity], or [!UICONTROL Is not deprecated].
+
+  Select **[!UICONTROL Apply]** to apply the filters.
 
 
 
