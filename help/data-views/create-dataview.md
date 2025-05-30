@@ -199,7 +199,7 @@ You can filter ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_1
 
 
 >[!CONTEXTUALHELP]
->id="dataview_includedcomponents_filter_datagovernance_partner_ecosystem"
+>id="dataview_includedcomponents_filter_datagovernance_partnerecosystem"
 >title="Partner ecosystem"
 >abstract="Partner Ecosystem (P) labels are used to categorize data that is shared with third-party partners."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
@@ -212,7 +212,7 @@ You can filter ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_1
 
 
 >[!CONTEXTUALHELP]
->id="dataview_includedcomponents_filter_responsible_engagement"
+>id="dataview_includedcomponents_filter_datagovernance_responsibleengagement"
 >title="Responsible engagement labels"
 >abstract="Responsible engagement labels are used to support responsible engagement."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
