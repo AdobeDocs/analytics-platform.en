@@ -4,8 +4,6 @@ description: Learn about how to build product value using the Customer Journey A
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-hide: yes
-hidefromtoc: yes
 badgePremium: label="B2B Edition"
 exl-id: 509c68e1-a8cc-48ac-9e9d-50c703356dbc
 ---

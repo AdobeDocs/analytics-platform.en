@@ -4,8 +4,6 @@ description: Learn about how to grow key accounts using the Customer Journey Ana
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-hide: yes
-hidefromtoc: yes
 badgePremium: label="B2B Edition"
 exl-id: f5294af8-b8dc-4239-b0f7-5c20d39007ee
 ---
