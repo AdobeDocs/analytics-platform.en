@@ -371,7 +371,7 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
 
 >[!CONTEXTUALHELP]
->id="connection_persistent"
+>id="connection_persistentid"
 >title="Person ID"
 >abstract="Select a persistent ID from the available identities. A persistent ID is an identifier that is available on all events in the event dataset."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
