@@ -21,6 +21,12 @@ This integration allows you to manage compliance more easily. Data stewards in y
 
 [Learn more](/help/data-views/data-governance.md)
 
+## Privacy
+
+Adobe handles privacy requests in accordance with local and international laws. 
+
+Because Customer Journey Analytics uses data that is available in Adobe Experience Platform, Adobe offers the [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) to submit data access and deletion requests. The requests apply to both the original and rekeyed datasets.
+
 ## GDPR
 
 Customer Journey Analytics will not subscribe to the General Data Protection Regulation (GDPR) Central Service directly and will instead inherit all dataset changes made in Experience Platform. Customer Journey Analytics depends on Platform Data Lake to enforce GDPR deletion requests and notify Customer Journey Analytics when requests are complete. All changes to affected batches in Customer Journey Analytics for event datasets are synchronized with Platform data. Profile and lookup datasets affected by GDPR deletion requests are fully re-ingested after each delete request. Deletion requests are typically finished within 7 days of a deletion event in Data Lake.
