@@ -91,7 +91,7 @@ Each configuration requires a unique name. For example, `Example Content Analyti
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
 >title="New data view"
->abstract="The selection of a new data view results in an update to that data view to include Content Analytics metrics and dimensions. If necessary, the associated connection is also updated to include Content Analytics datasets. The connection and data view that are currently configured for Content Analytics are not modified."
+>abstract="You have selected a new data view for this configuration. The new data view will be updated to include Content Analytics metrics and dimensions. These metrics and dimensions will be removed from the originally selected data view.<br/><br/>If a different connection is associated with the new data view then the connection will be updated to include Content Analytics datasets. The Content Analytics datasets are not removed from the originally selected connection."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_current_cleanup_labels_dialog"
