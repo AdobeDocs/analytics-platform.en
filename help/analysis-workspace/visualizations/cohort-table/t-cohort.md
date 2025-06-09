@@ -34,7 +34,7 @@ To create and configure a [!UICONTROL Cohort table]:
 
    ![Create segment or audience](assets/retention-createfilter.png)
 
-1. In the [Segment builder](/help/components/filters/filter-builder.md), further edit the segment, then click **[!UICONTROL Save]**.
+1. In the [Segment builder](/help/components/segments/seg-builder.md), further edit the segment, then click **[!UICONTROL Save]**.
 
    The saved segment is available for use in the [!UICONTROL Segment] panel in [!UICONTROL Analysis Workspace].
 

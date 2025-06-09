@@ -31,7 +31,7 @@ The following capabilities within Adobe Experience Platform and Customer Journey
 * Customer Journey Analytics
   * [Connections​](/help/connections/overview.md)
   * [Data views](/help/data-views/data-views.md), including [derived fields​](/help/data-views/derived-fields/derived-fields.md)
-  * [Segments​](/help/components/filters/filters-overview.md)
+  * [Segments​](/help/components/segments/seg-overview.md)
   * [Calculated metrics](/help/components/calc-metrics/calc-metr-overview.md)
   * [Guided analysis​: Timeline​](/help/guided-analysis/types/timeline.md)
 

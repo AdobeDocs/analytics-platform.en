@@ -118,7 +118,7 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in the [Adm
 | [!UICONTROL Reporting Tools] | [!UICONTROL Analysis Workspace Access] |  Let users access [Analysis Workspace](/help/analysis-workspace/home.md). |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Guided Analysis Access] | Let users access [Guided Analysis](/help/guided-analysis/overview.md).  |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Calculated Metrics Creation] | Let users create [calculated metrics](/help/components/calc-metrics/calc-metr-overview.md). Users can tag, share, delete, rename, approve, unapprove only the calculated metrics they create or the calculate metrics shared with them.  |
-| [!UICONTROL Reporting Tools] | [!UICONTROL Segment Creation] | Let users create [segments](/help/components/filters/filters-overview.md). Users can tag, share, delete, rename, approve, unapprove only the segments they create or the segments shared with them. |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Segment Creation] | Let users create [segments](/help/components/segments/seg-overview.md). Users can tag, share, delete, rename, approve, unapprove only the segments they create or the segments shared with them. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Labs Access] | Let users access the [Labs](/help/labs/labs.md) tab in Customer Journey Analytics. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Annotation Creation] | Let users create [annotations](/help/components/annotations/overview.md). Users can tag, share, delete, and rename only the annotations they create or annotations shared with them. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Audience View] | Let users view [audiences](/help/components/audiences/audiences-overview.md). |
