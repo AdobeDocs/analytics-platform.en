@@ -72,7 +72,7 @@ To make the transition as smooth as possible for users when they transition betw
 
 2. Documenting their definitions, and 
 
-3. Identifying what fields will be required in the data to replicate them in Customer Journey Analytics as [Segments](/help/components/filters/filters-overview.md) and [Calculated Metrics](/help/components/calc-metrics/calc-metr-overview.md).
+3. Identifying what fields will be required in the data to replicate them in Customer Journey Analytics as [Segments](/help/components/segments/seg-overview.md) and [Calculated Metrics](/help/components/calc-metrics/calc-metr-overview.md).
 
 Here are a couple of videos to guide you:
 

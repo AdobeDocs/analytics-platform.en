@@ -58,7 +58,7 @@ You can interact with and customize a freeform table in a variety of ways:
 * You can fit more rows into a single screen by adjusting the project's [view density](/help/analysis-workspace/build-workspace-project/view-density.md).
 * Each dimension row can show up to 400 rows, before pagination occurs. Select the number next to **[!UICONTROL Rows]** in the first column header, to show more rows on a page. Navigate to a different page using ![ChevronRight](/help/assets/icons/ChevronRight.svg) in the first column header.
 * You can break down rows by additional components. To break down many rows at once, select multiple rows and then drag the next component on top of the selected rows. Learn more about [breakdowns](/help/components/dimensions/t-breakdown-fa.md).
-* Rows can be [segmented](/help/components/filters/filters-overview.md) to show a reduced set of items. Additional settings are available under [Row settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md).
+* Rows can be [segmented](/help/components/segments/seg-overview.md) to show a reduced set of items. Additional settings are available under [Row settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md).
 
 ### Columns
 
