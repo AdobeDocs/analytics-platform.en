@@ -13,5 +13,16 @@ You can export Customer Journey Analytics reports from Report Builder. You might
 
 The following sections describe supported file types, the various methods available for exporting, and the advantages of each method.
 
+## Supported file types
+
+
+## Export methods
+
+
+
+## Add export account
+
+CJA > Components > Exports > Add account
+
 
 
