@@ -33,7 +33,9 @@ You can view comments from the comments area in the right rail or from the comme
 
 All comments made in an Analysis Workspace project are visible in the comments area in the right rail. 
 
-1. With the project open in Analysis Workspace, select the comments area icon in the right rail of Analysis Workspace. 
+1. By default, the comments area is expanded for each project in Analysis Workspace the first time you open a project. 
+
+   Select the comments area icon in the right rail of a project to open or close the comments area. 
 
    ![Comments area closed](assets/comments-area-closed.png)
 
@@ -107,11 +109,11 @@ The comment feature in Analysis Workspace makes it easier to collaborate with ot
 
 Consider the following when using the @ symbol to include people in a comment: 
    
-* People you include receive notifications based on their Adobe Experience Cloud notification settings. By default, they receive an in-app notification, visible from the [Experience Cloud notification](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) icon ![Experience Cloud notification icon](assets/experience-cloud-notification.png) in Customer Journey Analytics. 
+* People you include receive notifications based on their Adobe Experience Cloud notification settings.
 
-  Additionally, people can configure their Experience Cloud notification settings to receive email notifications and Slack notifications by [subscribing to email notifications](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) and [subscribing to Slack notifications](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
+  For more information, see [Receive notifications about comments](#receive-notifications-about-comments).
 
-* You can include anyone in your organization in a comment, but doing so does not automatically grant them access to the project. Only people who already have access to the project can access it.
+* You can include anyone in a comment who is in your organization and has access to Customer Journey Analytics, but doing so does not automatically grant them access to edit the project.
 
 To include another person in your comment:
 
@@ -138,6 +140,12 @@ To include another person in your comment:
 1. (Optional) Notify another person about your comment by typing the @ symbol followed by their name. For more information about using the @ symbol to notify others, see [Include others in a comment](#include-others-in-a-comment).
 
 1. Select **[!UICONTROL Submit]**.
+
+## Receive notifications about comments
+
+Project owners and [specific people you mention](#include-others-in-a-comment) receive notifications based on their Adobe Experience Cloud notification settings. By default, they receive an in-app notification, visible from the [Experience Cloud notification](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) icon ![Experience Cloud notification icon](assets/experience-cloud-notification.png) in Customer Journey Analytics. 
+
+Additionally, people can configure their Experience Cloud notification settings to receive email notifications and Slack notifications by [subscribing to email notifications](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) and [subscribing to Slack notifications](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
 
 ## Place a badge for an existing comment
 

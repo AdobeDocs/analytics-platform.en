@@ -63,7 +63,7 @@ The following visualizations can be used to gain insights from your stitched dat
 
 This visualization helps you understand how well CCA stitches data together.
 
-1. Create two segments. The variable used in these two segments is the same variable mentioned above that reflects the source of data of each event. See [Create a segment](/help/components/filters/create-filters.md) for more information.
+1. Create two segments. The variable used in these two segments is the same variable mentioned above that reflects the source of data of each event. See [Create a segment](/help/components/segments/seg-create.md) for more information.
    * Person container where Dataset ID equals your web data
    * Person container where Dataset ID equals your call center data
 2. In Analysis Workspace, drag a [Venn](/help/analysis-workspace/visualizations/venn.md) visualization onto the workspace canvas.
