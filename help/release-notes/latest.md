@@ -26,14 +26,9 @@ These release notes cover the release period of June 2, 2025 to July 15, 2025. A
 ## Fixes in Customer Journey Analytics
 
 **Analysis Workspace**: AN-339607; AN-379222
-**Audiences**: 
-**Audit Log**: 
 **B2B**: AN-376028
 **BI Extension for Tableau**: AN-377488
 **Components**: AN-376174
-**Connections**: 
-**Data deletion**:
-**Derived fields**: 
 **Export locations**: AN-382191
 **Full table export**: AN-375646; AN-376986; AN-380355; AN-381310
 **Journey Canvas**: AN-378011
