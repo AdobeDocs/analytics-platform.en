@@ -20,7 +20,7 @@ exl-id: 160021f1-6942-4682-9114-d375307d9912
 >abstract="Compares the data of this segment with data of the data view. The preview percentage is based on the total number in the data view from the **last 90 days**.<br><br/>If the preview is not loading, your connection could still be backfilling."
 
 
-The **[!UICONTROL Segment builder]** dialog is used to create new or edit existing segments. The dialog is titled **[!UICONTROL New segment]** or **[!UICONTROL Edit segment]** for segments that you create or manage from the [[!UICONTROL Segment] manager](/help/components/filters/manage-filters.md).
+The **[!UICONTROL Segment builder]** dialog is used to create new or edit existing segments. The dialog is titled **[!UICONTROL New segment]** or **[!UICONTROL Edit segment]** for segments that you create or manage from the [[!UICONTROL Segment] manager](/help/components/segments/seg-manage.md).
 
 >[!BEGINTABS]
 
@@ -39,7 +39,7 @@ The **[!UICONTROL Segment builder]** dialog is used to create new or edit existi
    | Element | Description |
    | --- | --- |
    | **[!UICONTROL Data view]** | You can select the data view for the segment.  The segment you define is available as a segment in the [Settings](/help/data-views/create-dataview.md#settings-filters) tab of a data view. | 
-   | **[!UICONTROL Project-only segment]** | An info box to explain that the segment is only visible in the project where it is created and that the segment will not be added to your component list. Enable **[!UICONTROL Make this segment available to all your projects and add it to your component list]** to change that setting. This info box is only visible when you create a [quick segment](quick-filters.md) and turn the quick segment info a regular segment using **[!UICONTROL Open builder]** from the [!UICONTROL Quick segment] interface. |
+   | **[!UICONTROL Project-only segment]** | An info box to explain that the segment is only visible in the project where it is created and that the segment will not be added to your component list. Enable **[!UICONTROL Make this segment available to all your projects and add it to your component list]** to change that setting. This info box is only visible when you create a [quick segment](seg-quick.md) and turn the quick segment info a regular segment using **[!UICONTROL Open builder]** from the [!UICONTROL Quick segment] interface. |
    | **[!UICONTROL Title]** ![Required](/help/assets/icons/Required.svg) | Name the segment, for example, `Last month mobile customers`. |
    | **[!UICONTROL Description]** | Provide a description for the segment, for example, `Segment to define the mobile customers for the last month`. |
    | **[!UICONTROL Tags]**| Organize the segment by creating or applying one or more tag. Start typing to find existing tags you can select. Or press **[!UICONTROL ENTER]** to add a new tag. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a tag. |
@@ -77,13 +77,13 @@ To add a component:
 
 1. Drag and drop a component from the components panel onto **[!UICONTROL Drag and drop Metric(s), Segment(s), and/or Dimensions here]**. You can use the ![Search](/help/assets/icons/Search.svg) in the components bar to search for specific components.
 1. Specify details for the component. For example, select a value from **[!UICONTROL Select value]**. Or enter a value. What and how you can specify one or more values depends on the component and the operator.
-1. Optionally modify the default operator. For example, from **[!UICONTROL equals]** to **[!UICONTROL equals any of]**. See [Operators](operators.md) for a detailed overview of the available operators.
+1. Optionally modify the default operator. For example, from **[!UICONTROL equals]** to **[!UICONTROL equals any of]**. See [Operators](seg-operators.md) for a detailed overview of the available operators.
 
 To edit a component:
 
 * Select a new operator for the component from the operator drop-down menu.
 * Select or specify a different value for the operator if appropriate. 
-* If the component type is a dimension, you can define the attribution model. See [Attribution model](#attribution-models) for more information.
+* If the component type is a dimension, you can define the attribution model. See [Attribution model](#attribution) for more information.
 
 To delete a component:
 
@@ -127,7 +127,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rolling date ran
 >[!ENDSHADEBOX]
 
 
-## Stack segmentss {#stack}
+## Stack segments {#stack}
 
 You can build a segment using segments. When you use segments in a segment, you can optimize your segment and reduce the complexity.
 

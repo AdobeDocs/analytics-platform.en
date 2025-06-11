@@ -7,11 +7,11 @@ role: User
 ---
 # Filter the list of segments
 
-You can filter the list of segments. Using a filter on segments makes it easier to find the segments that are available to you, and manage segments from the [Segment manager](manage-filters.md). 
+You can filter the list of segments. Using a filter on segments makes it easier to find the segments that are available to you, and manage segments from the [Segment manager](seg-manage.md). 
 
 >[!NOTE]
 >
->The list of segments refers to the [segment list](manage-filters.md#filters-list) as part of the [Segment manager](manage-filters.md). You can filter that list using the ![Filter](/help/assets/icons/Filter.svg) [Filter panel](manage-filters.md#filter-panel), part of that same [Segment manager](manage-filters.md).
+>The list of segments refers to the [segment list](seg-manage.md#filters-list) as part of the [Segment manager](seg-manage.md). You can filter that list using the ![Filter](/help/assets/icons/Filter.svg) [Filter panel](seg-manage.md#filter-panel), part of that same [Segment manager](seg-manage.md).
 >
 
 
@@ -22,7 +22,7 @@ To filter the list of segments:
    
    >[!INFO]
    >
-   >*Items* refer to the filter items displayed in the [Filter list](manage-filters.md#filters-list).
+   >*Items* refer to the filter items displayed in the [Filter list](seg-manage.md#segment-list).
    > 
 
 ## Filter sections
@@ -47,4 +47,4 @@ The following filter sections are available:
 {{otherfiltersfiltersection}}
 
 
-The [Filter list](manage-filters.md#filters-list) is automatically updated based on your filter configuration. You can see the configured filters in the [Active filter bar](manage-filters.md#active-filter-bar).
+The [Filter list](seg-manage.md#segment-list) is automatically updated based on your filter configuration. You can see the configured filters in the [Active filter bar](seg-manage.md#active-filter-bar).

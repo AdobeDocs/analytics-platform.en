@@ -82,7 +82,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 | Name | Value | Limit Type | Description | 
 |---|--:|---|---|
-| Audience segments | 20 | System-enforced Guardrail  | Maximum number of [segments](../components/filters/filters-overview.md) per audience. | 
+| Audience segments | 20 | System-enforced Guardrail  | Maximum number of [segments](../components/segments/seg-overview.md) per audience. | 
 | Number of Audience Identities | 20 million | System-enforced Guardrail  | Maximum number of identities per audience. | 
 | Audience Refresh Frequency | 4 | System-enforced Guardrail  | Maximum frequency in hours an [audience](../components/audiences/audiences-overview.md) may be refreshed. |
 | Audience Refresh Lookback Window | 90 | System-enforced Guardrail  | Maximum number of days for refresh lookback window. | 

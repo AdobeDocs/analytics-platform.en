@@ -4,8 +4,6 @@ description: Learn about how to setup Customer Journey Analytics B2B Edition for
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-hide: yes
-hidefromtoc: yes
 badgePremium: label="B2B Edition"
 exl-id: f959a77b-ccfb-43f2-93bb-b330e73d59ac
 ---
@@ -282,9 +280,9 @@ Define an account-based connection in Customer Journey Analytics to ingest and j
    ![B2B connection - add datasets](assets/b2b-connection-add-datasets.png)
 
 1. Select **[!UICONTROL Next]** to configure the settings for each of the selected datasets.
-1. For the event dataset, ensure you select the appropriate eVars that correspond to the identities for **[!UICONTROL Account ID]**, **[!UICONTROL Global Account ID]**, **[!UICONTROL Opportunity ID]**, **[!UICONTROL Buying Group ID]** and **[!UICONTROL Person ID]**.
+1. For the event dataset, ensure you select the appropriate fields that correspond to the identities for **[!UICONTROL Account ID]**, **[!UICONTROL Global Account ID]**, **[!UICONTROL Opportunity ID]**, **[!UICONTROL Buying Group ID]** and **[!UICONTROL Person ID]**.
 
-   ![B2B connection - add event dataset](assets/b2b-connection-add-datasets-event-data.png). 
+   ![B2B connection - add event dataset](assets/b2b-connection-add-datasets-event-data.png) 
 
 1. Scroll down to configure the account records dataset. Ensure you select the correct identifier (**[!UICONTROL Account_ID]**) to match the account by the **[!UICONTROL Global Account]** container. Select the correct identifier (**[!UICONTROL Account_ID]**) as the **[!UICONTROL Global Account field]**.
 

@@ -7,7 +7,7 @@ exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
 ---
 # Quick segments
 
-Quick segments allow you to explore data within a Workspace project quickly, without the need to create a segment in the [Segment Builder](/help/components/filters/create-filters.md). 
+Quick segments allow you to explore data within a Workspace project quickly, without the need to create a segment in the [Segment Builder](/help/components/segments/seg-create.md). 
 
 
 
@@ -31,17 +31,17 @@ Quick segments apply to panels. You can create one or more quick segments for ev
 
 To create a quick segment:
 
-* Select ![SegmentAdd](/help/assets/icons/FilterAdd.svg) at the top of the panel. <br/>Then, directly edit the segment in the [Quick segment builder](#quick-filter-builder).
-* Drag a component from the component panel to the segment drop zone in the panel header. Once dropped, hover over the segment and select ![Edit](/help/assets/icons/Edit.svg) to edit the segment in the [Quick segment builder](#quick-filter-builder).
+* Select ![SegmentAdd](/help/assets/icons/FilterAdd.svg) at the top of the panel. <br/>Then, directly edit the segment in the [Quick segment builder](#quick-segment-builder).
+* Drag a component from the component panel to the segment drop zone in the panel header. Once dropped, hover over the segment and select ![Edit](/help/assets/icons/Edit.svg) to edit the segment in the [Quick segment builder](#quick-segment-builder).
 
 When you create a quick segment using drag and drop, note that:
 
 * Not all component types are supported. Calculated metrics are not supported, and only dimensions and metrics from which you can build segments are supported.
-* For dimensions and metrics components, the [Quick segment builder](#quick-filter-builder) creates automatically an `exists` conditions. For example, if you drag and drop `City`, the condition `City exists` is created.
-* For dimension values, the [Quick segment builder](#quick-filter-builder) automatically creates an `equals` condition. For example, if you drag and drop `amsterdam` from the `City` dimension, the condition `City equals amsterdam` is created.
-* If you drag and drop `unspecified` or `none`, the [Quick segment builder](#quick-filter-builder) automatically creates a `does not exist` condition.
+* For dimensions and metrics components, the [Quick segment builder](#quick-segment-builder) creates automatically an `exists` conditions. For example, if you drag and drop `City`, the condition `City exists` is created.
+* For dimension values, the [Quick segment builder](#quick-segment-builder) automatically creates an `equals` condition. For example, if you drag and drop `amsterdam` from the `City` dimension, the condition `City equals amsterdam` is created.
+* If you drag and drop `unspecified` or `none`, the [Quick segment builder](#quick-segment-builder) automatically creates a `does not exist` condition.
 
-Quick segments you create appear at the top of the panel. Quick segments do have a light blue thin left bar. When a quick segment is in edit mode using the [Quick segment builder](#quick-filter-builder), the background of the Quick segment is light blue.
+Quick segments you create appear at the top of the panel. Quick segments do have a light blue thin left bar. When a quick segment is in edit mode using the [Quick segment builder](#quick-segment-builder), the background of the Quick segment is light blue.
 
 The results of the quick segments you create in a panel are applied (using AND logic) to all the visualizations that are part of the panel.
 
@@ -50,8 +50,8 @@ The results of the quick segments you create in a panel are applied (using AND l
 
 To manage a quick segment, hover over the specific **[!UICONTROL Quick segment]**.
 
-* Select ![Edit](/help/assets/icons/Edit.svg) to open the [Quick segment builder](#quick-filter-builder) and edit the quick segment.
-* Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to open a popup. The popup displays information about the segment. You can select **[!UICONTROL Make available to all projects and add to your component list]** To add the segment to the ![Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]** component list in the component panel. You see a **[!UICONTROL Save quick segment]** dialog, prompting you to specify a name for the segment. Select **[!UICONTROL Save]** to continue. Your [!UICONTROL Quick segment] turns into a **[!UICONTROL Segment]**. You cannot edit the segment any more using the [Quick segment builder](#quick-filter-builder). Instead, you have to edit the segment as a regular segment, using the [Segment builder](filter-builder.md).
+* Select ![Edit](/help/assets/icons/Edit.svg) to open the [Quick segment builder](#quick-segment-builder) and edit the quick segment.
+* Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to open a popup. The popup displays information about the segment. You can select **[!UICONTROL Make available to all projects and add to your component list]** To add the segment to the ![Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]** component list in the component panel. You see a **[!UICONTROL Save quick segment]** dialog, prompting you to specify a name for the segment. Select **[!UICONTROL Save]** to continue. Your [!UICONTROL Quick segment] turns into a **[!UICONTROL Segment]**. You cannot edit the segment any more using the [Quick segment builder](#quick-segment-builder). Instead, you have to edit the segment as a regular segment, using the [Segment builder](seg-builder.md).
 
 ## Quick segment builder
 
@@ -80,7 +80,7 @@ The condition area specifies the conditions (up to a maximum of three). For each
 |---|---|
 | **[!UICONTROL Dimension]**<br/>**[!UICONTROL Metric]**<br/>**[!UICONTROL Date&nbsp;range]** | Select from the drop-down menu ![ChevronDown](/help/assets/icons/ChevronDown.svg) whether you want to specify a condition for a dimension, metric or date range. |
 | **[!UICONTROL *component*]** | The component field for the condition. You can [!UICONTROL *Type to add*] a component, select a component from the list, or you can drag and drop a component from the component panel. You can only drop similar components on the component field of the condition. For example, you can only drop a dimension component from the component panel on a dimension condition. <br/>You can also drag and drop to replace an existing component.<br/>Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to delete the component from the component field. | 
-| **[!UICONTROL *operator*]** | The operator for the component. See [Operators](operators.md) for more information. Only available for dimensions and metrics. |
+| **[!UICONTROL *operator*]** | The operator for the component. See [Operators](seg-operators.md) for more information. Only available for dimensions and metrics. |
 | **[!UICONTROL *value*]** | The value for the condition. Depending on the operator selected, the value can be selected from a list or you enter a value. |
 | ![CrossSize75](/help/assets/icons/CrossSize75.svg) | Select to delete a condition from the quick segment. |
 
@@ -91,7 +91,7 @@ The condition area specifies the conditions (up to a maximum of three). For each
 | **[!UICONTROL AND]**<br/>**[!UICONTROL OR]** | Only available when you define more than one condition. Select from the drop-down menu ![ChevronDown](/help/assets/icons/ChevronDown.svg) between the conditions. The selection determines the boolean logic for the quick segment. You cannot mix logic when having three conditions. The boolean logic is either **[!UICONTROL AND]** or **[!UICONTROL OR]**. |
 | ![AddCircle](/help/assets/icons/AddCircle.svg) | Adds another condition to your quick segment. This button is only available when you have defined one or two conditions for the quick segment. |
 | **[!UICONTROL Apply]** | Apply the changes to the quick segment. |
-| **[!UICONTROL Open builder]** | You are prompted for confirmation with an **[!UICONTROL Are your sure?]** dialog. If you select **[!UICONTROL OK]**, you can no longer modify your segment in the [Quick segment builder](#quick-filter-builder) Your quick segment is renamed to **[!UICONTROL Segment]** and now has a darker blue thin left bar.<br/>The regular [Segment builder](filter-builder.md) opens with the option to **[!UICONTROL Make this segment available to all your projects and add it to your component list]**. <ul><li>If you select this option and select **[!UICONTROL Apply]**, the segment is added to the ![Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** component list in the component panel.</li><li>If you do not select this option and select **[!UICONTROL Apply]**, the segment remains a Workspace project-only segment.</li></ul> | 
+| **[!UICONTROL Open builder]** | You are prompted for confirmation with an **[!UICONTROL Are your sure?]** dialog. If you select **[!UICONTROL OK]**, you can no longer modify your segment in the [Quick segment builder](#quick-segment-builder) Your quick segment is renamed to **[!UICONTROL Segment]** and now has a darker blue thin left bar.<br/>The regular [Segment builder](seg-builder.md) opens with the option to **[!UICONTROL Make this segment available to all your projects and add it to your component list]**. <ul><li>If you select this option and select **[!UICONTROL Apply]**, the segment is added to the ![Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** component list in the component panel.</li><li>If you do not select this option and select **[!UICONTROL Apply]**, the segment remains a Workspace project-only segment.</li></ul> | 
 | **[!UICONTROL Cancel]** | Select to cancel the creation or edit of a quick segment. |
 
 ## Quick segments versus segments
