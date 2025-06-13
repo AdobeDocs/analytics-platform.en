@@ -25,7 +25,7 @@ This is the view you are used to in Workspace.
 
 >[!TAB Expanded]
 
-This is the view you are used to in Workspace.
+This is the version with the mostd expanded view.
 
 ![The Expanded view densities.](assets/view-density-expanded.png)
 
