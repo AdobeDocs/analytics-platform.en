@@ -212,6 +212,6 @@ To delete a container, select ![Close](/help/assets/icons/Close.svg) at the cont
 >[!MORELIKETHIS]
 >
 >[Use functions](cm-using-functions.md)
->[Segments](/help/components/filters/filters-overview.md)
+>[Segments](/help/components/segments/seg-overview.md)
 >
 

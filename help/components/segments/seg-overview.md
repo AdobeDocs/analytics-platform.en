@@ -18,9 +18,9 @@ Segments can be based on:
 - custom variables (form field, defined categories, customer ID), 
 - and other criteria.
 
-See [Create segments](/help/components/filters/create-filters.md) for the various options available to create segments. You then build, modify, and save the definition of a segment in the [Segment builder](filter-builder.md). Alternatively, you can create quick segments using the [Quick segment builder](quick-filters.md). And you can also generate segments from visualizations in Workspace, for example using the [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu) visualization. 
+See [Create segments](/help/components/segments/seg-create.md) for the various options available to create segments. You then build, modify, and save the definition of a segment in the [Segment builder](seg-builder.md). Alternatively, you can create quick segments using the [Quick segment builder](seg-quick.md). And you can also generate segments from visualizations in Workspace, for example using the [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu) visualization. 
 
-You use the [Segment manager](manage-filters.md) to manage segments.
+You use the [Segment manager](seg-manage.md) to manage segments.
 
 ## Plan segments
 
@@ -37,7 +37,7 @@ Especially, as an administrator, the proper planning of segments improves the ch
 
 - **Process**: Consider an approval process for your segments. There is no approval workflow in Customer Journey Analytics but you can still organize a process to determine whether you approve a segment or not. 
 
-- **Modularity**: Define segments with modularity in mind. The users of your segments should be able to easily [stack segments](filter-builder.md#stack-filters) to create powerful new segments.
+- **Modularity**: Define segments with modularity in mind. The users of your segments should be able to easily [stack segments](seg-builder.md#stack-filters) to create powerful new segments.
 
 
 ## Segment types
@@ -46,11 +46,11 @@ You can create three types of segments:
 
 ### Quick segments
 
-Quick segments allow you to explore data easily within a given Workspace project, without the need of creating a segment in the [Segment Builder](/help/components/filters/create-filters.md). You define your segment within the Workspace interface directly. See [Quick segments](quick-filters.md) for more information.
+Quick segments allow you to explore data easily within a given Workspace project, without the need of creating a segment in the [Segment Builder](/help/components/segments/seg-create.md). You define your segment within the Workspace interface directly. See [Quick segments](seg-quick.md) for more information.
 
 ### Regular segments
 
-Regular segments let you identify data (persons, sessions, events) based on one or more conditions. If you have more than one condition, you use logical operators like And and Or to define the segment further. You can use containers to group conditions and build more complex segments. See [Segment builder](filter-builder.md) for more information.
+Regular segments let you identify data (persons, sessions, events) based on one or more conditions. If you have more than one condition, you use logical operators like And and Or to define the segment further. You can use containers to group conditions and build more complex segments. See [Segment builder](seg-builder.md) for more information.
 
 ### Sequential segments
 
@@ -101,9 +101,9 @@ Segments are based on a Person-, Session-, and Event-level hierarchy using a nes
 > - The **Event** container is known in Adobe Analytics as the **Hit** container.
 >
 
-A segment sets conditions to segment persons, sessions or events based on conditions. For example, conditions to segment persons are based on person characteristics and navigation traits. To further break down the data, you can segment on specific sessions, page view events, screen taps, menu choices on a set-top box, and more. You can also segment on attributes that you have ingested from a CRM or loyalty system. The [Segment builder](/help/components/filters/filter-builder.md) provides a simple interface to build these subsets and apply conditions in nested, hierarchical Person, Session, or Event containers.
+A segment sets conditions to segment persons, sessions or events based on conditions. For example, conditions to segment persons are based on person characteristics and navigation traits. To further break down the data, you can segment on specific sessions, page view events, screen taps, menu choices on a set-top box, and more. You can also segment on attributes that you have ingested from a CRM or loyalty system. The [Segment builder](/help/components/segments/seg-builder.md) provides a simple interface to build these subsets and apply conditions in nested, hierarchical Person, Session, or Event containers.
 
-The container architecture employed in the [Segment builder](/help/components/filters/filter-builder.md) defines Person as the outermost container. This container contains overarching data specific for the person across sessions and events like page views, mobile application screens, or menu screens on a set-top box. A nested Session container lets you set rules to break down the person's data based on sessions. A nested Event container lets you break down person information based on individual interactions. Each container lets you report across a person's history, interactions broken down by sessions, or break down individual events. 
+The container architecture employed in the [Segment builder](/help/components/segments/seg-builder.md) defines Person as the outermost container. This container contains overarching data specific for the person across sessions and events like page views, mobile application screens, or menu screens on a set-top box. A nested Session container lets you set rules to break down the person's data based on sessions. A nested Event container lets you break down person information based on individual interactions. Each container lets you report across a person's history, interactions broken down by sessions, or break down individual events. 
 
 ### Person container
 
@@ -200,9 +200,8 @@ Traditional Analytics comes with numerous out-of-the-box templates and calculate
 
 >[!MORELIKETHIS]
 >
->[Create segments](create-filters.md)
->[Segment builder](filter-builder.md)
->[Quick segments](quick-filters.md)
+>[Create segments](seg-create.md)
+>[Segment builder](seg-builder.md)
+>[Quick segments](seg-quick.md)
 >[Sequential segments](seg-sequential-build.md)
->[Manage segments](manage-filters.md)
->
+>[Manage segments](seg-manage.md)

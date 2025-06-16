@@ -90,7 +90,7 @@ Note: this option does not seem to work. AN-338422
 
 ### Use audience segments
 
-See [Segmentation overview](/help/components/filters/filters-overview.md) for more details.
+See [Segmentation overview](/help/components/segments/seg-overview.md) for more details.
 
 ## Sort tables
 

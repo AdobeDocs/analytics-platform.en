@@ -25,7 +25,7 @@ Here is a list of known limitations in Analysis Workspace and its related compon
 ## Segments
 
 * Certain metrics and dimensions cannot be segmented, such as [!UICONTROL Events], [!UICONTROL Persons], etc.
-* Ad hoc segments created in the [panel dropzone](/help/analysis-workspace/c-panels/panels.md) are a type of quick segment. They do not appear in the left panel of Workspace or the Segment manager unless they are made public. For more information, see [Quick segments](/help/components/filters/quick-filters.md).
+* Ad hoc segments created in the [panel dropzone](/help/analysis-workspace/c-panels/panels.md) are a type of quick segment. They do not appear in the left panel of Workspace or the Segment manager unless they are made public. For more information, see [Quick segments](/help/components/segments/seg-quick.md).
 
 ## Calculated Metrics
 

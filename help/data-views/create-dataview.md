@@ -90,7 +90,7 @@ This section is visible only for administrators who are provisioned with Journey
 
 ### Containers
 
-Designates the name of containers for the data view. Container names are frequently used in [segments](/help/components/filters/filters-overview.md#Filter-containers).
+Designates the name of containers for the data view. Container names are frequently used in [segments](/help/components/segments/seg-overview.md#containers).
 
 | Setting | Description |
 | --- | --- |
