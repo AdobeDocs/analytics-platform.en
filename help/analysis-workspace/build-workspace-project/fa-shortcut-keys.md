@@ -67,7 +67,7 @@ Note that on your keyboard the following symbols might be used:
 |  Action  |  Shortcut Mac  |  Shortcut Windows  | 
 | --- | --- | --- | 
 | Move panel up | **[!UICONTROL *cmd + opt + up*]** |  **[!UICONTROL *alt + ctrl + up*]** | 
-| Move panel down | **[!UICONTROL *cmd + opt + down*]** |  **[!UICONTROL *alt + ctrl + down*]** |  
+| Move panel down | **[!UICONTROL *cmd + opt + down*]** |  **[!UICONTROL *alt + ctrl + down*]** |   
 
 ## Democratization actions
 
