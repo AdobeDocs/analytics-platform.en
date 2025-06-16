@@ -62,6 +62,13 @@ Note that on your keyboard the following symbols might be used:
  | New Bar Chart | **[!UICONTROL *opt + 3*]** | **[!UICONTROL *alt + 3*]** | 
  | New Combo chart | **[!UICONTROL *opt + 4*]** |  **[!UICONTROL *alt + 4*]** | 
 
+## Move panel actions
+
+|  Action  |  Shortcut Mac  |  Shortcut Windows  | 
+| --- | --- | --- | 
+| Move panel up | **[!UICONTROL *cmd + opt + up*]** |  **[!UICONTROL *alt + ctrl + up*]** | 
+| Move panel down | **[!UICONTROL *cmd + opt + down*]** |  **[!UICONTROL *alt + ctrl + down*]** |   
+
 ## Democratization actions
 
  |  Action  |  Shortcut Mac  |  Shortcut Windows  | 
