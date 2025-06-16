@@ -21,9 +21,9 @@ This integration allows you to manage compliance more easily. Data stewards in y
 
 [Learn more](/help/data-views/data-governance.md)
 
-## Privacy
+## Privacy Requests
 
-Adobe handles privacy requests in accordance with local and international laws. 
+Adobe handles privacy requests in accordance with applicable local and international laws. 
 
 Because Customer Journey Analytics uses data that is available in Adobe Experience Platform, Adobe offers the [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) to submit data access and deletion requests. The requests apply to both the original and rekeyed datasets.
 
