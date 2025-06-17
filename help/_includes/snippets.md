@@ -122,7 +122,7 @@ An attribution model determines which dimension items get credit for a metric wh
 An attribution container defines the desired scope for the attribution. Possible options are: 
 
 * **Session**: Looks back up to the beginning of the session where a conversion happened. Session lookback windows respect the modified [Session timeout](/help/data-views/create-dataview.md#session-settings) in a data view.
-* **Person**: Looks at conversions from the scope of the person container
+* **Person**: Looks at conversions from the scope of the person container.
 * **Global Account** [!BADGE B2B Edition]{type=Informative}: Looks at conversions from the scope of the global accounts container.
 * **Accounts** [!BADGE B2B Edition]{type=Informative}: Looks at conversions from the scope of the person container .
 * **Opportunity** [!BADGE B2B Edition]{type=Informative}: Looks at conversions from the scope of the opportunity container .
