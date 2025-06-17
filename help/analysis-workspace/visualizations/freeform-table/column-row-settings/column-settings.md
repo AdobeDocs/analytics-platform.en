@@ -103,15 +103,21 @@ To use a non-default attribution model for a metric in an Analysis Workspace:
    ![The Column Attribution Model options showing Linear selected.](assets/attribution-select.png)
 
 
-### Attribution models
+### Models
 
 {{attribution-models-details}}
+
+### Container
+
+{{attribution-container}}
 
 ### Lookback window
 
 {{attribution-lookback-window}}
 
+### Example
 
+{{attribution-example}}
 
 >[!MORELIKETHIS]
 >
