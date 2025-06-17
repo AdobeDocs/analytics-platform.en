@@ -237,7 +237,7 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 
 | Name |  Value | Limit Type | Description | 
 |---|--:|---|---|
-| Shared library | 1 | System-enforced Guardrail | Maximum number of shared libraries for a a connection. |
+| Shared library | 1 | System-enforced Guardrail | Maximum number of shared libraries for a connection. |
 | Shared metrics | 10,000 | System-enforced Guardrail | Maximum number of shared metrics per shared library. |
 | Shared dimensions | 10,000 | System-enforced Guardrail | Maximum number of shared dimensions per shared library. | 
 
