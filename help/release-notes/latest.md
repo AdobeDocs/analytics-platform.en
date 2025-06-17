@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (June 2025)
 
-**Last update**: June 16, 2025
+**Last update**: June 17, 2025
 
 
 These release notes cover the release period of June 2, 2025 to July 15, 2025. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
@@ -25,14 +25,16 @@ These release notes cover the release period of June 2, 2025 to July 15, 2025. A
 
 ## Fixes in Customer Journey Analytics
 
-**Analysis Workspace**: AN-339607; AN-379222
+**Alerts**: AN-379554
+**Analysis Workspace**: AN-339607; AN-379222; AN-381138; AN-383291
 **B2B**: AN-376028
 **BI Extension for Tableau**: AN-377488
 **Components**: AN-376174
+**Data views**: AN-379011
 **Export locations**: AN-382191
 **Full table export**: AN-375646; AN-376986; AN-380355; AN-381310
-**Journey Canvas**: AN-378011
-**Report Builder**: AN-372809
+**Journey Canvas**: AN-375865; AN-378011
+**Report Builder**: AN-369786; AN-371395; AN-372809
 **Reporting**: AN-372615; AN-378578; 
 
 
