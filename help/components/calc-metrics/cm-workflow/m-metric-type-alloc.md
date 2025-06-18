@@ -45,7 +45,6 @@ See [Example](#example) for an example of using an attribution model, container,
 >title="Use non-default attribution model"
 >abstract="Enable a non-default attribution model for the selected metric."
 
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attributionmodel"
 >title="Model"
