@@ -9,8 +9,6 @@ exl-id: 7c16cc62-5032-44a2-92e4-4a1c320f17aa
 ---
 # B2B Edition use cases overview
 
-{{draft-b2b}}
-
 This section of the documentation details some specific B2B use cases that aim to provide insights in the often more complex B2B purchase journey. A typical B2B purchase involves buying groups, cross-channel touchpoints by different stakeholders, opportunities at various stages in the sales cycle, and more.
 
 

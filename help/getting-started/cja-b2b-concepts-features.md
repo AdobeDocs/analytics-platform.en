@@ -10,8 +10,6 @@ exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
 
 # B2B Edition concepts and features
 
-{{draft-b2b}}
-
 This article explains concepts like connections, identifiers, containers, and datasets, commonly used in Customer Journey Analytics. And how the Customer Journey Analytics B2B Edition adds additional features to these concepts.
 
 
@@ -61,7 +59,7 @@ The hierarchy and relationships between the containers is predetermined. Opportu
 
 You can use the B2B containers for specific B2B functionality in Analysis Workspace:
 
-* **Segmentation**: [B2B segment containers](/help/components/filters/filters-overview.md#b2b-containers) allow you to build segments with a container scope beyond person, session or event. For example: an Accounts with event registration segment, or a US accounts with buying groups and stage 5 opportunities segment.
+* **Segmentation**: [B2B segment containers](/help/components/segments/seg-overview.md#b2b-containers) allow you to build segments with a container scope beyond person, session or event. For example: an Accounts with event registration segment, or a US accounts with buying groups and stage 5 opportunities segment.
    
   >[!NOTE]
   >

@@ -82,7 +82,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 | Name | Value | Limit Type | Description | 
 |---|--:|---|---|
-| Audience segments | 20 | System-enforced Guardrail  | Maximum number of [segments](../components/filters/filters-overview.md) per audience. | 
+| Audience segments | 20 | System-enforced Guardrail  | Maximum number of [segments](../components/segments/seg-overview.md) per audience. | 
 | Number of Audience Identities | 20 million | System-enforced Guardrail  | Maximum number of identities per audience. | 
 | Audience Refresh Frequency | 4 | System-enforced Guardrail  | Maximum frequency in hours an [audience](../components/audiences/audiences-overview.md) may be refreshed. |
 | Audience Refresh Lookback Window | 90 | System-enforced Guardrail  | Maximum number of days for refresh lookback window. | 
@@ -231,6 +231,19 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 | Schedule Frequency |  1 | System-enforced Guardrail  | Exports can be scheduled once (1) a day or on a longer schedule (for example: once every 2 days, or weekly). |
 
 {style="table-layout:auto"}
+
+
+## Shared metrics and shared dimensions
+
+| Name |  Value | Limit Type | Description | 
+|---|--:|---|---|
+| Shared library | 1 | System-enforced Guardrail | Maximum number of shared libraries for a connection. |
+| Shared metrics | 10,000 | System-enforced Guardrail | Maximum number of shared metrics per shared library. |
+| Shared dimensions | 10,000 | System-enforced Guardrail | Maximum number of shared dimensions per shared library. | 
+
+{style="table-layout:auto"}
+
+
 
 ## Latencies
 

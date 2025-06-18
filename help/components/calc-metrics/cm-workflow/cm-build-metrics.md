@@ -6,8 +6,6 @@ exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 ---
 # Build calculated metrics {#build-metrics}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_productcompatibility"
 >title="Product Compatibility"
@@ -212,6 +210,5 @@ To delete a container, select ![Close](/help/assets/icons/Close.svg) at the cont
 >[!MORELIKETHIS]
 >
 >[Use functions](cm-using-functions.md)
->[Segments](/help/components/filters/filters-overview.md)
+>[Segments](/help/components/segments/seg-overview.md)
 >
-

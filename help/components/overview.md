@@ -17,7 +17,7 @@ To manage components from the main Customer Journey Analytics interface:
 
 You can manage the following components:  
 
-* [Segments](filters/filters-overview.md): Build, manage, share, and apply powerful, focused audience segments to your reports. Segments let you identify subsets of persons based on characteristics or interactions.
+* [Segments](segments/seg-overview.md): Build, manage, share, and apply powerful, focused audience segments to your reports. Segments let you identify subsets of persons based on characteristics or interactions.
 * [Calculated metrics](calc-metrics/calc-metr-overview.md): Use metrics and formulas as new components for use in reporting
 * [Date ranges](date-ranges/create.md): Customize and refine the date ranges Analysis Workspace offers.
 * [Annotations](/help/components/annotations/overview.md): Communicate contextual data nuances and insights to your organization.
@@ -66,7 +66,7 @@ You can manage components (individually or by selecting more than one).
    | ![Share](/help/assets/icons/ShareAlt.svg) [!UICONTROL **Share**] | Share components to users in your organization. This option is available for custom components only, such as segments or calculated metrics. |
    | ![Delete](/help/assets/icons/Delete.svg) [!UICONTROL **Delete**] | Delete components that you no longer need. This option is available for custom components only, such as segments or calculated metrics. |
 
-Custom components can also be managed through their respective Component managers. For example, see [Manage segments](/help/components/filters/manage-filters.md).
+Custom components can also be managed through their respective Component managers. For example, see [Manage segments](/help/components/segments/seg-manage.md).
 
 ## Manage the component list
 

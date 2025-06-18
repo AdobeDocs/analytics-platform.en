@@ -10,7 +10,7 @@ In the [Calculated metrics manager](cm-manager.md), you can approve and unapprov
 
 To approve calculated metrics:
 
-1. In the [Calculated metrics manager](cm-approving.md), select one or more of the calculated metrics you want to approve.
+1. In the [Calculated metrics manager](cm-manager.md), select one or more of the calculated metrics you want to approve.
 1. From the action bar, select ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]**. The approved calculated metrics are indicated with ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)
    
 To unapprove calculated metrics:
