@@ -5,6 +5,8 @@ role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
+hide: yes
+hidefromtoc: yes
 ---
 
 # Export data from Report Builder
@@ -15,9 +17,9 @@ The following sections describe supported export locations, the various methods 
 
 ## Supported export locations
 
-In the legacy Report Builder, you could schedule a workbook to be delivered by email or by FTP. Because of security concerns, we no longer support FTP in the new Report Builder.
+[AA only] In the legacy Report Builder, you could schedule a workbook to be delivered by email or by FTP. Because of security concerns, we no longer support FTP in the new Report Builder.
 
-These export locations are supported:
+These public-cloud export locations are supported:
 
 * Amazon S3 Role ARN
 * Google Cloud Platform
