@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (June 2025)
 
-**Last update**: June 17, 2025
+**Last update**: June 18, 2025
 
 
 These release notes cover the release period of June 2, 2025 to July 15, 2025. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
@@ -22,7 +22,7 @@ These release notes cover the release period of June 2, 2025 to July 15, 2025. A
 | **Modified attribution model dialog** | You can now define the container and time period separately in the attribution model dialog. |  |  June 18,2025 |
 | **Connection map** | A  new [connection map interface](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection#connection-map) is available to visually display your connection configuration. |  | June 18, 2025 |
 | **Add and view comments in Analysis Workspace projects** | A new [commenting feature](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects) in Analysis Workspace allows you to share insights and ask questions within the context of an Analysis Workspace project. This can streamline discussions about the data, keeping conversations within the context of the data that is being discussed. You can <ul><li>Comment on any Analysis Workspace project to which you have access</li><li>Comment on a specific point in a visualization or make general comments about a project</li><li>Tag other users to notify them about your comments</li><li>Manage existing comments (edit, pin, resolve, and so forth)</li></ul>Customer Journey Analytics administrators can [disable commenting at the organization level](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences). Project owners can [disable commenting at the project level](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects). |  |  June 25, 2025 <p>(Originally planned to release on May 29, 2025)</p> |
-| **Support for Chrome pre-rendering** | Control how data collection libraries behave when Chrome pre-renders a page. |  |  June 30, 2025 |
+| **Support for Chrome pre-rendering** | Control how data collection libraries behave when Chrome pre-renders a page. (Documentation link to follow)|  |  June 30, 2025 |
 
 ## Fixes in Customer Journey Analytics
 
