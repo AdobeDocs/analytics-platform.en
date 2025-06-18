@@ -49,13 +49,13 @@ To update a component's default attribution model:
 
 1. Go to the data view that contains the component whose default attribution model you want to update.
 
-1. Select the component, then expand the Attribution section on the right side of the screen.
+1. Select the component, then expand the **[!UICONTROL Attribution]** section on the right side of the screen.
 
    ![Data views window highlighting the Set attribution option](../assets/attribution-settings.png)
 
-1. Select [!UICONTROL **Set attribution**], then select the attribution model in the [!UICONTROL **Attribution Model**] drop-down menu.
+1. Select [!UICONTROL **Set attribution**], then select the [attribution model](#attribution-models), [container](#container) and [lookback](#lookback-window) window.
 
-   See [Attribution models](#attribution-models) to learn about each attribution model.
+
 
 1. Select [!UICONTROL **Save and continue**].
 

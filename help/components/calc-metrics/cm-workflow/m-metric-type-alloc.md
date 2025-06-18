@@ -27,17 +27,18 @@ You can configure the metric type and [attribution model](#attribution-models) f
         * Disable **[!UICONTROL Use non-default attribution model]** to use the default column attribution model, which is Last Touch, with a lookback window of 30 days.
         * Enable **[!UICONTROL Use non-default attribution model]**. In the **[!UICONTROL Column attribution model]** dialog, 
        
-          * Select a **[!UICONTROL Model]** from the attribution models.
-          * Select a **[!UICONTROL Lookback window]**. If you select **[!UICONTROL Custom Time]**, you can define the time period in **[!UICONTROL Minute(s)]** up to **[!UICONTROL Quarter(s)]**. See [Lookback window](#lookback-window) for more information
+          * Select a **[!UICONTROL Model]** from the [attribution models](#attribution-models).
+          * Select a **[!UICONTROL Container]** from the [container](#container) options.
+          * Select a **[!UICONTROL Lookback window]** from the [lookback window](#lookback-window) options. If you select **[!UICONTROL Custom Time]**, you can define the time period in **[!UICONTROL Minute(s)]** up to **[!UICONTROL Quarter(s)]**.
 
      1. Select **[!UICONTROL Apply]** to apply the non-default attribution model. Select Cancel to cancel.
 
      If you already have defined a non-default attribution model, select **[!UICONTROL Edit]** to modify the selection.
 
-See [Example](#example) for an example of using an attribution model and lookback window.
+See [Example](#example) for an example of using an attribution model, container, and lookback window.
 
 
-## Attribution {#attribution}
+## Attribution models
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_nondefaultattributionmodel"
@@ -125,34 +126,32 @@ See [Example](#example) for an example of using an attribution model and lookbac
 >title="Algorithmic"
 >abstract="Credit is dynamically determined on a statistical algorithm."
 
+{{attribution-models-details}}
+
+
+## Container 
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_container"
 >title="Container"
 >abstract="Select a container to set the desired scope for the attribution."
 
+{{attribution-container}}
 
-### Model
 
-{{attribution-models-details}}
+## Lookback window
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_lookbackwindow"
 >title="Lookback window"
 >abstract="This setting determines the window of data attribution that will be applied for each conversion."
 
-
-### Container 
-
-{{attribution-container}}
-
-
-### Lookback window
-
 {{attribution-lookback-window}}
 
 
-### Example
+
+
+## Example
 
 {{attribution-example}}
 

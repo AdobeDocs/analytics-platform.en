@@ -9,8 +9,6 @@ exl-id: f5294af8-b8dc-4239-b0f7-5c20d39007ee
 ---
 # Grow key accounts
 
-{{draft-b2b}}
-
 Growing and retaining key accounts is a high priority for B2B companies. A prerequisite to ensure that deals progress is to communicate with key stakeholders in your target accounts at the right time.
 
 When you consider how to grow key accounts through new acquisition or retention or upsell motions, Customer Journey Analytics B2B Edition assists you (the sales team and business analysts) with deeper insights in sales stage progression and cross team collaboration. See the following sections for examples.

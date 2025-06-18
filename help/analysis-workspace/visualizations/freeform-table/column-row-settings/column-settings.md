@@ -103,7 +103,7 @@ To use a non-default attribution model for a metric in an Analysis Workspace:
    ![The Column Attribution Model options showing Linear selected.](assets/attribution-select.png)
 
 
-### Models
+### Attribution models
 
 {{attribution-models-details}}
 
