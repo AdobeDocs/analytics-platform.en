@@ -239,13 +239,17 @@ The **[!UICONTROL Included components]** contains the list of **[!UICONTROL Metr
 ## Settings {#dataview-settings}
 
 1. Select the **[!UICONTROL Settings]** tab.
+   
+   ![Data view settings](assets/dataview-settings.png)
+
 1. Configure segments to apply to your entire data view. See [Settings (segments)](#settings-filters) below.
 1. Configure session timeout and metrics. See [Session settings](#session-settings) below.
+
 1. Select **[!UICONTROL Save and continue]** to continue configuring your new or existing data view. Select **[!UICONTROL Save]** to save the configuration for your existing data view.
 
 ### Settings (segments) {#segment-settings}
 
-You can add segments that apply to an entire data view. This segment is applied to any report that you run in Workspace. Drag a segment from the list in the left rail to the **[!UICONTROL Add segments]** field.
+You can add segments that apply to an entire data view. This segment is applied to any report that you run in Workspace. Drag a segment from the components in the left rail to the **[!UICONTROL Add segments]** field.
 
 ### Session settings
 

@@ -107,11 +107,17 @@ To use a non-default attribution model for a metric in an Analysis Workspace:
 
 {{attribution-models-details}}
 
+### Container
+
+{{attribution-container}}
+
 ### Lookback window
 
 {{attribution-lookback-window}}
 
+### Example
 
+{{attribution-example}}
 
 >[!MORELIKETHIS]
 >

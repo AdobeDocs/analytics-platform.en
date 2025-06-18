@@ -27,23 +27,23 @@ You can configure the metric type and [attribution model](#attribution-models) f
         * Disable **[!UICONTROL Use non-default attribution model]** to use the default column attribution model, which is Last Touch, with a lookback window of 30 days.
         * Enable **[!UICONTROL Use non-default attribution model]**. In the **[!UICONTROL Column attribution model]** dialog, 
        
-          * Select a **[!UICONTROL Model]** from the attribution models.
-          * Select a **[!UICONTROL Lookback window]**. If you select **[!UICONTROL Custom Time]**, you can define the time period in **[!UICONTROL Minute(s)]** up to **[!UICONTROL Quarter(s)]**. See [Lookback window](#lookback-window) for more information
+          * Select a **[!UICONTROL Model]** from the [attribution models](#attribution-models).
+          * Select a **[!UICONTROL Container]** from the [container](#container) options.
+          * Select a **[!UICONTROL Lookback window]** from the [lookback window](#lookback-window) options. If you select **[!UICONTROL Custom Time]**, you can define the time period in **[!UICONTROL Minute(s)]** up to **[!UICONTROL Quarter(s)]**.
 
      1. Select **[!UICONTROL Apply]** to apply the non-default attribution model. Select Cancel to cancel.
 
      If you already have defined a non-default attribution model, select **[!UICONTROL Edit]** to modify the selection.
 
-See [Example](#example) for an example of using an attribution model and lookback window.
+See [Example](#example) for an example of using an attribution model, container, and lookback window.
 
 
-## Attribution {#attribution}
+## Attribution models {#attribution-models}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_nondefaultattributionmodel"
 >title="Use non-default attribution model"
 >abstract="Enable a non-default attribution model for the selected metric."
-
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attributionmodel"
@@ -125,65 +125,34 @@ See [Example](#example) for an example of using an attribution model and lookbac
 >title="Algorithmic"
 >abstract="Credit is dynamically determined on a statistical algorithm."
 
+{{attribution-models-details}}
+
+
+## Container {#container}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_container"
 >title="Container"
 >abstract="Select a container to set the desired scope for the attribution."
 
+{{attribution-container}}
 
-{{attribution-models-details}}
 
-
-<!-- markdownlint-disable MD034 -->
+## Lookback window {#lookback-winwow}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_lookbackwindow"
 >title="Lookback window"
 >abstract="This setting determines the window of data attribution that will be applied for each conversion."
 
-
 {{attribution-lookback-window}}
 
 
-### Attribution example {#attribution-example}
 
-Consider the following example:
 
-1. On September 15, a person arrives to your site through a paid search advertisement, then leaves.
-1. On September 18, the person arrives to your site again through a social media link they got from a friend. They add several items to their cart, but do not purchase anything.
-1. On September 24, your marketing team sends them an email with a coupon for some of the items in their cart. They apply the coupon, but visit several other sites to see if any other coupons are available. They find another through a display ad, then ultimately make a purchase for $50.
+## Example
 
-Depending on your lookback window and attribution model, channels receive different credit. The following are some examples:
-
-* Using **first touch** and a **session lookback window**, attribution looks at only the third visit. Between email and display, email was first, so email gets 100% credit for the $50 purchase.
-
-* Using **first touch** and a **person lookback window**, attribution looks at all three visits. Paid search was first, so it gets 100% credit for the $50 purchase.
-
-* Using **linear** and a **session lookback window**, credit is divided between email and display. Both of these channels each get $25 credit.
-Using **linear** and a **person lookback window**, credit is divided between paid search, social, email, and display. Each channel gets $12.50 credit for this purchase.
-
-* Using **J-shaped** and a **person lookback window**, credit is divided between paid search, social, email, and display.
-
-  * 60% credit is given to display, for $30.
-  * 20% credit is given to paid search, for $10.
-  * The remaining 20% is divided between social and email, giving $5 to each.
-
-* Using **Time Decay** and a **person lookback window**, credit is divided between paid search, social, email, and display. Using the default 7-day half-life:
-
-  * Gap of zero days between display touch point and conversion. `2^(-0/7) = 1`
-  * Gap of zero days between email touch point and conversion. `2^(-0/7) = 1`
-  * Gap of six days between social touch point and conversion. `2^(-6/7) = 0.552`
-  * Gap of nine days between paid search touch point and conversion. `2^(-9/7) = 0.41`
-  * Normalizing these values results in the following:
-  
-      * Display: 33.8%, getting $16.88
-      * Email: 33.8% getting $16.88
-      * Social: 18.6%, getting $9.32
-      * Paid Search: 13.8%, getting $6.92
-
-Conversion events that typically have whole numbers are divided if credit belongs to more than one channel. For example, if two channels contribute to an order using a Linear attribution model, both channels get 0.5 of that order. These partial metrics are summed across all people then rounded to the nearest integer for reporting.
-
+{{attribution-example}}
 
 >[!MORELIKETHIS]
 >
