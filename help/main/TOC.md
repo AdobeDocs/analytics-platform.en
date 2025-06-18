@@ -16,7 +16,8 @@ breadcrumb-title: Customer Journey Analytics Guide
 + [Adobe Customer Journey Analytics Guide](../getting-started/cja-landing.md)
 
 + Release Notes {#releases}
-  + [Latest release](../release-notes/latest.md)
+  + [Latest Customer Journey Analytics release](../release-notes/latest.md)
+  + [Customer Journey Analytics Pre-Release Notes](../release-notes/pre-release-notes.md)
   + [2025 releases](../release-notes/2025.md)
   + [2024 releases](../release-notes/2024.md)
   + [2023 releases](../release-notes/2023.md)
