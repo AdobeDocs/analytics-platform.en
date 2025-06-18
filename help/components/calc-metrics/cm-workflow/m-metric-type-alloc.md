@@ -38,7 +38,7 @@ You can configure the metric type and [attribution model](#attribution-models) f
 See [Example](#example) for an example of using an attribution model, container, and lookback window.
 
 
-## Attribution models
+## Attribution models {#attribution-models}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_nondefaultattributionmodel"
@@ -129,7 +129,7 @@ See [Example](#example) for an example of using an attribution model, container,
 {{attribution-models-details}}
 
 
-## Container 
+## Container {#container}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_container"
@@ -139,7 +139,7 @@ See [Example](#example) for an example of using an attribution model, container,
 {{attribution-container}}
 
 
-## Lookback window
+## Lookback window {#lookback-winwow}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_lookbackwindow"
