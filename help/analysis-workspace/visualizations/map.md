@@ -232,8 +232,8 @@ To configure settings for the map visualization:
    | |**[!UICONTROL Map style]**|You can choose from Basic, Streets, Bright, Light, Dark, and Satellite.|
    | | **[!UICONTROL Cluster radius]**|Groups data points together that are within the specified number of pixels. The default is 50.|
    | | **[!UICONTROL Custom max value]**|Lets you alter the threshold for the max value for the map. Adjusting this value adjusts the scale for the bubbles or heatmap values (color and size) relative to the custom max value that you set.|
-   | | **[!UICONTROL Show annotations]** | Show the annotations made for this visualization. |
-   | | **[!UICONTROL Hide title]** | Hide the title of the visualization.  |
+   | | **[!UICONTROL Show annotations]** | Shows the annotations made for this visualization. |
+   | | **[!UICONTROL Hide title]** | Hides the title of the visualization.  |
 
 ## Configure precise locations for dimensions
 
@@ -315,7 +315,7 @@ To create a trended line chart from the map visualization:
 
 ## Add a breakdown from the map visualization
 
-You can break down a specific dimension item, metric, segment, or date range for the data within a specific area that you select in the map visualization.
+You can break down a specific dimension item, metric, segment, or date range for the data within a designated area that you select in the map visualization.
 
 To add a breakdown from the map visualization:
 
