@@ -394,6 +394,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Schedule workbooks](../report-builder/schedule-reportbuilder.md)
   + [Restricted labels](../report-builder/restricted-labels.md)
   + [Report Builder settings](../report-builder/report-builder-settings.md)
+  + [Export data](../report-builder/report-builder-export.md)
   
 
 + Reporting Activity Manager {#reporting-activity-manager}
