@@ -66,7 +66,7 @@ To export reports from Report Builder:
    |---------|----------|
    | **[!UICONTROL File]** | Displays the workbook file that is currently selected for export. Select the icon next to the file name to choose a different file. |
    | **[!UICONTROL Filename]** <!--should be File name --> | Allows you to change the filename before exporting the workbook. |
-   | **[!UICONTROL File type]** | Choose the file type for the exported file. |
+   | **[!UICONTROL File type]** | Choose the file type for the exported file. You can choose Excel, PDF, or CSV. |
    | **[!UICONTROL Append time stamp to file name]** | Select this option to include a timestamp of the export in the exported file name. |
    | **[!UICONTROL Filename preview]** <!--should be File name preview --> | Shows a preview of how the file name will appear after the export. |
    | **[!UICONTROL Password protect the workbook]** | Specify a password to protect the exported file so only people with the password can access it. <p>Passwords must be at least 8 characters and contain at least 1 number and 1 special character (such as `!`,`@`,`#`, and `$`).</p> |
@@ -97,21 +97,19 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
 
 * Export to a shared location, such as Adobe Experience Platform Data Landing Zone, Google Cloud Platform, Microsoft Azure, Amazon S3, or Snowflake.
 
-* Store large amounts of historical data.
+* Store large amounts of historical data. **(Does this apply to Report Builder???)**
 
   This type of data can be used to detect long-term trends in order to gain business intelligence, and ultimately lead to better business decision-making.
-  
-* Export full tables that contain thousands or millions of rows (3 million, 30 million, 150 million, or 300 million rows, depending on license type). Other export methods allow a maximum of 50,000 rows.
 
-* Include calculated metrics in the exported Customer Journey Analytics data.
+* Include calculated metrics in the exported Customer Journey Analytics data. ???
 
-* Structure data output as concatenated values.
+* Structure data output as concatenated values. **(Does this apply to Report Builder???)**
 
 * Export one-time or on a schedule. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
 
-* Export files in CSV or JSON format. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
+* Export files in Excel, PDF, or CSV format. 
 
-* Export tables that include multiple dimensions.
+* Export tables that include multiple dimensions. **(Does this apply to Report Builder???)**
 
 ## Export requirements {#export-requirements}
 
@@ -119,7 +117,7 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
 
 Make sure that your tables, your environment, and your permissions meet the following requirements:
 
-* **Tables:** All tables must include at least one dimension in the row and one metric in each column in order to be supported with a full-table export. 
+* **Tables:** All tables must include at least one dimension in the row and one metric in each column in order to be supported with a full-table export.  **(Does this apply to Report Builder???)**
 
 * **Environment:** Ensure that the [IP addresses](/help/technotes/ip-addresses.md) and [Domains](/help/technotes/domains.md) used by Customer Journey Analytics are allowed through their organization's firewall.
 
@@ -127,10 +125,10 @@ Make sure that your tables, your environment, and your permissions meet the foll
 
   >[!NOTE]
   >
-  >  Users who are assigned the [Product Admin role](/help/technotes/access-control.md#product-admin-role) always have access to export full tables; these users do not need to be assigned the [!UICONTROL **Full Table Export**] permission.
+  >  Users who are assigned the [Product Admin role](/help/technotes/access-control.md#product-admin-role) always have access to export reports from Report Builder. **(Does this apply to Report Builder???)**
 
 
-### Unsupported features
+### Unsupported features **(Does this apply to Report Builder???)**
 
 The following features are not supported and are automatically removed from full-table exports:
 
@@ -146,7 +144,7 @@ The following features are not supported and are automatically removed from full
 * Dimensions in the first breakdown are converted and added as a secondary dimension in the row of the exported table; any other breakdowns are not included in the table
 * Sorting is not supported for most data sets; data might be sorted for small data sets
 
-### Unsupported components
+### Unsupported components **(Does this apply to Report Builder???)**
 
 The following components are not supported, and Analysis Workspace prompts you to remove them from your table when performing a full-table export:
 
@@ -167,7 +165,7 @@ The following components are not supported, and Analysis Workspace prompts you t
   * Date ranges
   * Segments
 
-### Attribution behavior
+### Attribution behavior **(Does this apply to Report Builder???)**
 
 Full table export supports calculated metrics that use a non-default attribution model (as described in the *Use non-default attribution model* section in [Column settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)). 
 
@@ -185,37 +183,6 @@ If a non-default attribution model is being used in a report, the allocation mod
    >
    >Multi-dimensional reports are supported only when exporting data to the cloud, as described in this article.
 
-## Comparison of Full Table Export (in Customer Journey Analytics) to Data Warehouse (in Adobe Analytics) {#comparison}
 
-If you previously used Data Warehouse to export Adobe Analytics data, the following table can help you understand the differences between exporting full tables in Customer Journey Analytics versus exporting data with Data Warehouse in Adobe Analytics.
-
-
-|Feature | Full Table Export in Customer Journey Analytics | Data Warehouse in Adobe Analytics |
-|---------|----------|---------|
-| Build a custom report | Yes | Yes |
-| Calculated metrics | Yes | No |
-| Segments | Yes | Limited |
-| Dimensions | Limit of 10 | Unlimited |
-| Metrics | Limit of 10 | Unlimited |
-| Reporting rows | Limit of 3 million, 30 million, 150 million, or 300 million, depending on tier | Unlimited |
-| Number of reports | Unlimited | Unlimited |
-| Ad hoc (one-time) delivery | Yes | Yes |
-| Schedule recurring delivery | Yes | Yes |
-| Email delivery | No | Yes |
-| FTP / SFTP | No | Legacy support |
-| Azure | Yes | Yes |
-| Amazon S3 | Yes | Yes |
-| Google Cloud Platform | Yes | Yes |
-| Snowflake | Yes | No |
-| Delivery frequency | Daily | Hourly |
-
-
-
-
-Other stuff:
-
-
-
-[AA only] In the legacy Report Builder, you could schedule a workbook to be delivered by email or by FTP. Because of security concerns, we no longer support FTP in the new Report Builder.
 
 
