@@ -1,5 +1,5 @@
 ---
-title: Export data from Report Builder
+title: Export reports from Report Builder
 description: Describes how to export data from Report Builder to secure destinations
 role: User, Admin
 feature: Report Builder
