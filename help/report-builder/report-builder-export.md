@@ -7,8 +7,8 @@ type: Documentation
 solution: Customer Journey Analytics
 hide: yes
 hidefromtoc: yes
+exl-id: 1d5d87d8-1920-406b-8cce-41b89b7ae70b
 ---
-
 # Export data from Report Builder
 
 You can export Customer Journey Analytics reports from Report Builder. You might want to export Customer Journey Analytics reports for a number of reasons, such as to utilize them in third-party tools or combine them with outside data.
@@ -33,6 +33,3 @@ These public-cloud export locations are supported:
 ## Add export account
 
 CJA > Components > Exports > Add account
-
-
-
