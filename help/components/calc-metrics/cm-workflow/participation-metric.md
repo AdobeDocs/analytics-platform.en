@@ -17,7 +17,7 @@ The steps below show how any user with [Create calculated metric permission](/he
 1. [Create a calculated metric](cm-workflow.md), and in the [Calculated metrics builder](cm-build-metrics.md), name the metric `Participation` or something similar.
 1. Drag a metric containing a success event, for example [!DNL Orders], into [!UICONTROL **[!UICONTROL Definition]**] area.
 1. Select ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) for the metric. 
-1. In the popup that appears, select **[!UICONTROL Use a non-default attribution model]** to define the [attribution model](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) of that event to **[!UICONTROL Participation]** and select **[!UICONTROL Session]** for the [!UICONTROL Lookback window]. Select **[!UICONTROL Apply]** to confirm.
+1. In the popup that appears, select **[!UICONTROL Use a non-default attribution model]** to define the [attribution model](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) of that event to **[!UICONTROL Participation]** and select **[!UICONTROL Session]** for the [!UICONTROL Container]. Select **[!UICONTROL Apply]** to confirm.
 
 
     ![Column attribution model popup showing Participation selected as the model  and Session selected for Lookback window.](assets/participation-setup.png)
