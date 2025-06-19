@@ -31,7 +31,7 @@ You can view comments from the comments area in the right rail or from the comme
 
 ### View comments in the comments area
 
-All comments made in an Analysis Workspace project are visible in the comments area in the right rail. 
+All comments made in an Analysis Workspace project are visible in the comments area in the right rail. The total number of existing comments is shown on the comments icon.
 
 1. By default, the comments area is expanded for each project in Analysis Workspace the first time you open a project. 
 
@@ -45,7 +45,7 @@ All comments made in an Analysis Workspace project are visible in the comments a
 
 ### View comment badges in a project
 
-Comments that are made [on a specific area of the project](#comment-on-a-specific-area-of-the-project) have a **comment badge** ![comment badge](assets/comment-indicator.svg) that displays over the area of the project that the comment pertains to. Select a badge to view the comment. After selecting the badge, you can select the comment itself to highlight the comment in the comments area in the right rail.
+Comments that are made [on a specific area of the project](#comment-on-a-specific-area-of-the-project) have a **comment badge** ![comment badge](assets/comment-indicator.svg) that displays over the area of the project that the comment pertains to. Select a badge to view the comment. After selecting the badge, you can select the comment itself to highlight the comment in the comments area in the right rail. 
 
 Numbers display on each badge in a project and are ordered in the order they were created. If multiple comments are placed in the same area of a project, the badge shows 3 dots ![comment badge multiple](assets/comment-indicator-multiple.svg). Select the 3-dot badge to reveal all comments in that area.
 
@@ -125,13 +125,15 @@ To include another person in your comment:
 
 ## Reply to a comment
 
-1. With the project open in Analysis Workspace, select the comments area icon ![Comments area icon](/help/assets/icons/Comment.svg) in the right rail of Analysis Workspace. 
+1. In Analysis Workspace, open the project where you want to add a comment.
 
-1. Select **[!UICONTROL Reply]** next to the comment you want to reply to.
+1. Select the comments area icon ![Comments area icon](/help/assets/icons/Comment.svg) in the right rail of Analysis Workspace, then select **[!UICONTROL Reply]** next to the comment you want to reply to.
+
+   To include the text of the comment you are replying to, with the original text wrapped in a quote tag, select the 3-dot icon next to the specific comment or reply that you want to reply to, then select **[!UICONTROL Quote reply]**. A quote reply is a good way to indicate which comment or reply your comment refers to.
 
    Or
-   
-   To include the text of the comment you are replying to, with the original text wrapped in a quote tag, select the 3-dot icon next to the specific comment or reply that you want to reply to, then select **[!UICONTROL Quote reply]**. A quote reply is a good way to indicate which comment or reply your comment refers to.
+
+   Select the comment icon on the panel or visualization where the comment was made, then select **[!UICONTROL Reply]**.
 
 1. In the **[!UICONTROL New comment]** field, specify your comment. 
 
