@@ -10,8 +10,6 @@ exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
 
 # B2B Edition concepts and features
 
-{{draft-b2b}}
-
 This article explains concepts like connections, identifiers, containers, and datasets, commonly used in Customer Journey Analytics. And how the Customer Journey Analytics B2B Edition adds additional features to these concepts.
 
 

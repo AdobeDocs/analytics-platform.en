@@ -4,42 +4,39 @@ description: View the latest Customer Journey Analytics release notes
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 ---
-# Current Adobe Customer Journey Analytics release notes (May 2025)
+# Current Adobe Customer Journey Analytics release notes (June 2025)
 
-**Last update**: May 22, 2025
+**Last update**: June 18, 2025
 
 
-These release notes cover the release period of April 22 to June 18, 2025. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
+These release notes cover the release period of June 2, 2025 to July 15, 2025. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
 ## New or updated features 
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Updated XDM fields for collecting Streaming Media data into Adobe Experience Platform** | When collecting Streaming Media data into Adobe Experience Platform, the XDM field paths shown under the heading of "XDM Field Path" of the Streaming Media parameters documentation should no longer be used. These field paths are found on the following pages and are marked as "Deprecated": [Audio and video parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters), [Ad parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/ad-parameters), [Chapter parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters), [Player state parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/player-state-parameters), and [Quality parameters](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/quality-parameters). <p>Instead, customers should migrate to the `mediaReporting` field paths, as shown under the heading of "Reporting XDM Field Path" of the Streaming Media parameters documentation referenced above.<p>During a transitional period of three months, data ingestion on the deprecated XDM field paths will continue. However, at the end of July 2025, deprecated field paths will be fully removed and no longer visible in the Adobe Experience Platform Schema UI, and data will be sent only using the `mediaReporting` field paths.<p>Customers who implemented the Analytics source connector to collect Streaming Media data into Platform before April 22, 2025 must migrate their existing configurations to use the new field paths. This migration must be complete by the end of July 2025. Please contact your Adobe Consulting Services or Account team for migration support. No action is required for customers who implement the Analytics source connector after April 22, 2025.</p> |  | April 22, 2025  |
-| **Stitching: Retrieve persistent and transient IDs from XDM IdentityMap** |  This feature provides support for using identities stored in the XDM identityMap in the stitching process. The identityMap can be used for the persistent or transient ID for field-based stitching and can be used for the persistent ID for graph-based stitching.  You can use either a specific namespace or primary identity from the identityMap. Learn more [here](https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/fbs#identitymap) and [here](https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs#identitymap)|  | April 28, 2025 |
-| **Shared metrics and dimensions across data views** | Allows you to apply dimension and metric settings across multiple data views. Changes made to a shared dimension or metric apply to all instances of that dimension or metric across all applicable data views. This interface allows Customer Journey Analytics admins to more easily manage components when many data views are used. [Learn more](/help/data-views/shared-metrics-dimensions/smd-overview.md) |  | April 30, 2025 |
-| **Increase in full table export limits** | Adobe increased the number of columns you can use with [full table export](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/export/export-cloud#comparison-of-full-table-export-in-customer-journey-analytics-to-data-warehouse-in-adobe-analytics) from 5 dimensions and 5 metrics to 10 dimensions and 10 metrics. This applies to all Customer Journey Analytics tiers. There is no change in the entitlements for the number of rows which can be exported. |  |  April 30, 2025 |
-| **Event Depth dimension**  |  A new [Event Depth dimension](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference#required-standard-components) was added to the list of required standard components for a data view. |  | May 8, 2025 |
-| **Disable the manifest file when exporting full tables** | Will allow you to disable the manifest file that is included by default when exporting full tables from Analysis Workspace. [Learn more](/help/analysis-workspace/export/export-cloud.md) |  | May 20, 2025 |
-| **Data Insights Agent**  | The Data Insights Agent, part of the AI Assistant in Customer Journey Analytics, is a generative AI conversation agent. It uses components from your data view and your actual data to quickly and efficiently answer data-centric questions by building relevant visualizations in Analysis Workspace. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai)|  | May 28, 2025  |
-| **Dimension format defaults to 2 for Double type dimensions** | For schemas with Double data types, the dimension format now defaults to 2 decimal places. You can change this number to 0 through 5 decimal places.<p>Previously, the format defaulted to 0 decimal places.</p><p>This means that if you are using double-type dimensions in your Analysis Workspace reports, no decimal places were shown by default. These same reports will now show 2 decimal places.</p><p>For more information about how to update the number of decimal places that are shown for double-type dimensions, see [Format component settings](/help/data-views/component-settings/format.md).</p> | | May 29, 2025 |
 | **Analysis Workspace left panel no longer opens and closes on hover** | The left panel in Analysis Workspace is used to add things like components, panels, and visualizations to your project. The option to temporarily open the left panel by hovering over one of the icons on the far left is no longer available. Instead, simply click one of these icons to keep the panel open, then click the same icon to close it. |  | June 2, 2025 <p>(Originally planned to release on May 29, 2025)</p>  |
 | **Customer Journey Analytics B2B Edition** |  Customer Journey Analytics B2B Edition helps B2B companies align their marketing, sales, and product teams by providing actionable account insights that drive revenue growth. With the account placed at the center of the data model, all analysis focuses on the account journey. Adding a new layer of entities (accounts, opportunities, and buying groups) on top of person and time-based events, creates a complete picture of the B2B marketing and revenue lifecycle. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition)|  |  June 18, 2025 |
-| **Add and view comments in Analysis Workspace projects** | A new [commenting feature](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects) in Analysis Workspace allows you to share insights and ask questions within the context of an Analysis Workspace project. This can streamline discussions about the data, keeping conversations within the context of the data that is being discussed. You can <ul><li>Comment on any Analysis Workspace project to which you have access</li><li>Comment on a specific point in a visualization or make general comments about a project</li><li>Tag other users to notify them about your comments</li><li>Manage existing comments (edit, pin, resolve, and so forth)</li></ul>Customer Journey Analytics administrators can [disable commenting at the organization level](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences). Project owners can [disable commenting at the project level](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects). |  |  June 25, 2025 <p>(Originally planned to release on May 29, 2025)</p> |
+| **Support for Secure Destinations in Report Builder** | New export destinations have been added to the Report Builder add-in. The following cloud storage destinations are supported: <ul><li>Amazon S3 Role ARN</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li></ul> (Documentation link to follow) |  | June 19,2025 (Originally June 18, 2025)|
+| **New preview experience** | The preview panel, used to preview segments, calculated metrics, and more, is now using a horizontal bar visualization instead of a donut visualisation. |  |  June 18, 2025 |
+| **Modified attribution model dialog** | You can now define the container and time period separately in the attribution model dialog. |  |  June 18,2025 |
+| **Connection map** | A  new [connection map interface](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection#connection-map) is available to visually display your connection configuration. |  | June 18, 2025 |
+| **Add and view comments in Analysis Workspace projects** | A new [commenting feature](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects) in Analysis Workspace allows you to share insights and ask questions within the context of an Analysis Workspace project. This can streamline discussions about the data, keeping conversations within the context of the data that is being discussed. You can <ul><li>Comment on any Analysis Workspace project to which you have access</li><li>Comment on a specific point in a visualization or make general comments about a project</li><li>Tag other users to notify them about your comments</li><li>Manage existing comments (edit, pin, resolve, and so forth)</li></ul>Customer Journey Analytics administrators can [disable commenting at the organization level](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences). Project owners can [disable commenting at the project level](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects). | June 25, 2025 |  July 11, 2025 <p>(Originally planned to release on May 29, 2025)</p> |
+| **Support for Chrome pre-rendering** | Control how data collection libraries behave when Chrome pre-renders a page. (Documentation link to follow)|  |  June 30, 2025 |
 
 ## Fixes in Customer Journey Analytics
 
-**Analysis Workspace**: AN-361874; AN-371360; AN-373079; AN-374382; AN-374447; AN-375277; AN-375680
-**Audiences**: AN-372343
-**Audit Log**: AN-378168
-**Connections**: AN-373121; AN-372996
-**Data deletion**: AN-375450
-**Derived fields**: AN-373689; AN-377852
-**Export locations**: AN-374167
-**Journey Canvas**: AN-373319
-**Report Builder**: AN-369786
-**Reporting**: AN-377326; AN-378051
-**Reporting activity manager**: AN-377148
+**Alerts**: AN-379554
+**Analysis Workspace**: AN-339607; AN-379222; AN-381138; AN-383291
+**B2B**: AN-376028
+**BI Extension for Tableau**: AN-377488
+**Components**: AN-376174
+**Data views**: AN-379011
+**Export locations**: AN-382191
+**Full table export**: AN-375646; AN-376986; AN-380355; AN-381310
+**Journey Canvas**: AN-375865; AN-378011
+**Report Builder**: AN-369786; AN-371395; AN-372809
+**Reporting**: AN-372615; AN-378578; 
 
 
 ## Important notices for Customer Journey Analytics Administrators

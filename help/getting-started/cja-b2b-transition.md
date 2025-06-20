@@ -9,8 +9,6 @@ exl-id: d0e6398b-8080-4e36-b178-0cb91945d0c5
 ---
 # Transition guide
 
-{{draft-b2b}}
-
 This guide discusses how to transition from Customer Journey Analytics to the B2B Edition of Customer Journey Analytics.
 
 The article assumes you already use Customer Journey Analytics to some extent:
