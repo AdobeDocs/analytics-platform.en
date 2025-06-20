@@ -25,7 +25,7 @@ In Customer Journey Analytics B2B Edition, you can select between a person-based
 
 ## Containers
 
-In Customer Journey Analytics containers are generated as part of the configuration of a connection and data view, and provide provide data structure and scope. Containers store groups of identifiers to sequence all event timestamps by unique identifiers. That storage facilitates quick and performant execution of functionalities like segmentation, attribution, and visualizations.
+In Customer Journey Analytics containers are generated as part of the configuration of a connection and data view, and provide data structure and scope. Containers store groups of identifiers to sequence all event timestamps by unique identifiers. That storage facilitates quick and performant execution of functionalities like segmentation, attribution, and visualizations.
 
 ### Standard containers
 
@@ -92,7 +92,7 @@ An example account-based connection in the Customer Journey Analytics B2B Editio
 Customer Journey Analytics B2B Edition offers the [Connection map](/help/connections/create-connection.md#connection-map) interface to provide you with an overview of the relationships between datasets in your connection.
 
 
-Similar to Customer Journey Analytics, event-based time series data is at the core of Customer Journey Analytics B2B Edition. The main difference for an account-based connection is that you need an account id on every record in your event dataset instead of a person id. 
+Similar to Customer Journey Analytics, event-based time series data is at the core of Customer Journey Analytics B2B Edition. The main difference for an account-based connection is that you need an account ID on every record in your event dataset instead of a person ID. 
 
 When you configure [datasets settings](/help/connections/create-connection.md#dataset-settings) for your account-based connection in Customer Journey Analytics B2B Edition, the options available for some of the settings depend on the [dataset type](/help/connections/create-connection.md#dataset-types). For example, you have to:
 
@@ -115,5 +115,5 @@ If a record dataset uses a match by field, the record dataset is treated as a lo
 
 ## Report on person and account based data
 
-If you want to report on person-based containers (and person identities) and account-based containers (and account identities), you should set up two separate connection within Customer Journey Analytics. One connection where you select Person as the Primary ID, and one connection where you select Account as the Primary ID. Customer Journey Analytics does not support person-based and account-based reporting from a single container hierarchy. 
+If you want to report on person-based containers (and person identities) and account-based containers (and account identities), you should set up two separate connection within Customer Journey Analytics. One connections where you select Person as the Primary ID, and one connection where you select Account as the Primary ID. Customer Journey Analytics does not support person-based and account-based reporting from a single container hierarchy. 
 
