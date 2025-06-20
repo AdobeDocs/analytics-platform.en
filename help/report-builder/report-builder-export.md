@@ -35,15 +35,6 @@ Use the following process when exporting reports from Report Builder to the clou
 
 ## Export a report from Report Builder {#export-from-report-builder}
 
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="export-manifest"
->title="Manifest file"
->abstract="When enabled, a manifest file is included with any successful export delivery. The manifest file enables you to confirm that all files were delivered successfully."
-
-<!-- markdownlint-enable MD034 -->
-
 >[!NOTE]
 >
 >Before you export data as described in this section, learn more about [the export process](#understand-the-export-process) in the section above.
