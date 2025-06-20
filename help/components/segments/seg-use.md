@@ -1,7 +1,7 @@
 ---
 description: How to use segments to a report.
 title: Use segments
-feature: Segmentation
+feature: Filters, Segments
 role: User
 ---
 
