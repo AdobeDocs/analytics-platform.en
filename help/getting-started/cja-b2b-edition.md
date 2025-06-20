@@ -38,4 +38,6 @@ Customer Journey Analytics B2B Edition helps B2B companies align their marketing
 >
 >[B2B concepts and features](cja-b2b-concepts-features.md)
 >[B2B quick start guide](cja-b2b-quick-start-guide.md)
+>[B2B transition guide](cja-b2b-transition.md)
+>[B2B use cases](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
 >
