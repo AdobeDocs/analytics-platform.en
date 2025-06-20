@@ -7,7 +7,7 @@ type: Documentation
 solution: Customer Journey Analytics
 ---
 
-# Schedule workbooks for export to cloud destinations
+# Schedule workbooks by exporting to cloud destinations
 
 You can export Customer Journey Analytics workbooks from Report Builder to cloud providers like Google, Azure, and Amazon. 
 
