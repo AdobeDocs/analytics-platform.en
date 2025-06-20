@@ -3,8 +3,8 @@ description: How to use segments to a report.
 title: Use segments
 feature: Filters, Segments
 role: User
+exl-id: 3d54dd03-96bf-4551-a523-fb6729eb09cb
 ---
-
 # Use segments
 
 To use segments across Analysis Workspace you simply drag one or more segments from **[!UICONTROL Segments]** in the component rail and drop on:
