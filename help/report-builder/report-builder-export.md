@@ -7,21 +7,17 @@ type: Documentation
 solution: Customer Journey Analytics
 ---
 
-# Export reports from Report Builder
+# Schedule workbooks for export to cloud destinations
 
-You can export Customer Journey Analytics reports from Report Builder to cloud providers like Google, Azure, and Amazon. 
+You can export Customer Journey Analytics workbooks from Report Builder to cloud providers like Google, Azure, and Amazon. 
 
 [Advantages of exporting reports from report builder to the cloud](#advantages-of-exporting-to-the-cloud) include the ability to utilize them in third-party tools or combine them with outside data. 
 
-When exporting reports from Report Builder, consider the following:
-
-* Before you export to the cloud, make sure that your data blocks, your environment, and your permissions meet the [export requirements](#export-requirements).
-
-* Some [features](#unsupported-features) and [components](#unsupported-components) are not supported when exporting reports from Report Builder to the cloud.
+Before you export workbooks from Report Builder to a cloud destination, make sure that your data blocks, your environment, and your permissions meet the [export requirements](#export-requirements).
 
 ## Understand the export process
 
-Use the following process when exporting reports from Report Builder to the cloud:
+Use the following process when exporting workbooks from Report Builder to the cloud:
 
 1. [Configure a cloud account](/help/components/exports/cloud-export-accounts.md)
 
@@ -66,7 +62,7 @@ To export reports from Report Builder:
    | **[!UICONTROL Show scheduling options]**  | Select this option to view additional options for scheduling the export. Leave this option unselected if you want to send the export only once. When this option is unselected, the export is initiated immediately. | 
    | **[!UICONTROL Starting on]**  | The day and time that the scheduled export should begin. <p>This option is available only when choosing a scheduled export frequency.</p> | 
    | **[!UICONTROL Ending on]** | The day and time that the scheduled export expires. The scheduled export no longer runs after the date and time that you set. <p>This option is available only when choosing a scheduled export frequency.</p> |  
-   | **[!UICONTROL Frequency]** | Set the schedule for how often the export should occur. When sending on a schedule, options include [!UICONTROL **Send every day**], [!UICONTROL **Send every weekday**], and [!UICONTROL **Custom frequency**]. </p>  |
+   | **[!UICONTROL Frequency]** | You can set the frequency to be hourly, daily, weekly, monthly, or yearly on a specific day. For example, you can set up a schedule to send the workbook on the first Sunday night of the month so that your recipients will have the email in their inbox first thing on Monday morning.  |
    
    {style="table-layout:auto"}
 
