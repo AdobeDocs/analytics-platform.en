@@ -334,6 +334,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Copy segments](/help/components/segments/seg-copy.md)
     + [Manage segments](/help/components/segments/seg-manage.md)
     + [Operators](/help/components/segments/seg-operators.md)
+    + [Use segments](/help/components/segments/seg-use.md)
   + Calculated metrics {#cja-calcmetrics}
     + [Overview](../components/calc-metrics/calc-metr-overview.md)
     + Calculated metrics workflow {#cm-workflow}
