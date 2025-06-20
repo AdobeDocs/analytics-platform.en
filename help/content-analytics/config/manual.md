@@ -101,18 +101,16 @@ To ensure Content Analytics identity data and Adobe Experience Platform Web SDK 
 
    ![On before event send callback](/help/content-analytics/assets/onbeforeeventsendcallback.png)
 
-1. Select </> Provide on before event send callback code.
+1. Select **[!UICONTROL </> Provide on before event send callback code]**.
 1. Add the following code:
 
    ```javascript
-
    window.adobeContentAnalytics?.forwardEvent(content);
 
    content.xdm.identityMap = _satellite.getVar('identityMap');
    if ((content.xdm.eventType === "content.contentEngagement") && (_satellite.getVar('identityMap') != null)) {
       return true;
    }
-
    ```
 
    ![On before event send callback](/help/content-analytics/assets/onbeforeeventsendcallbackcode.png)
