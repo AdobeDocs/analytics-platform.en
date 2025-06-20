@@ -4,8 +4,8 @@ description: View the latest Customer Journey Analytics pre-release notes
 feature: Release Notes
 hide: true
 hidefromtoc: true
+exl-id: 61982e38-b43a-41b5-85e0-59ed374463a9
 ---
-
 # Adobe Customer Journey Analytics pre-release notes
 
 >[!IMPORTANT]
@@ -33,4 +33,3 @@ Refer to the following documentation for release notes of Adobe Experience Platf
 | **Modified attribution model dialog** | You can now define the container and time period separately in the attribution model dialog. |  |  June 18,2025 |
 | **Connection map** | A  new [connection map interface](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection#connection-map) is available to visually display your connection configuration. |  | June 18, 2025 |
 | **Add and view comments in Analysis Workspace projects** | A new [commenting feature](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects) in Analysis Workspace allows you to share insights and ask questions within the context of an Analysis Workspace project. This can streamline discussions about the data, keeping conversations within the context of the data that is being discussed. You can <ul><li>Comment on any Analysis Workspace project to which you have access</li><li>Comment on a specific point in a visualization or make general comments about a project</li><li>Tag other users to notify them about your comments</li><li>Manage existing comments (edit, pin, resolve, and so forth)</li></ul>Customer Journey Analytics administrators can [disable commenting at the organization level](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences). Project owners can [disable commenting at the project level](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects). |  |  June 25, 2025 <p>(Originally planned to release on May 29, 2025)</p> |
-

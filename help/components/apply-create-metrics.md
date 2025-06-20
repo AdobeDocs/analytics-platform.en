@@ -43,13 +43,6 @@ You can see whether a metric is approved ![Approved icon](https://spectrum.adobe
 The full list of standard metrics in Customer Journey Analytics:
 {{standard-metrics}}
 
-## Compare metrics with different attribution models
-
-To quickly compare one attribution model to another for a metric, select **[!UICONTROL Compare attribution models]** from the context menu for a metric.
-
-![Workspace panel highlighting Compare attribution models](assets/compare-attribution.png)
-
-This shortcut lets you compare one attribution model to another without dragging in a metric and configuring it twice.
 
 ## Create calculated metrics
 
@@ -59,9 +52,7 @@ There are several ways to create calculated metrics. The method you choose deter
 
 ### Create calculated metrics for all projects
 
-You can use the calculated metric builder to create calculated metrics. When created in this way, calculated metrics are available in the component list and can then be used in projects throughout your organization. 
-
-For information about how to access the calculated metrics builder, see [Create calculated metrics](/help/components/calc-metrics/cm-workflow/cm-workflow.md).
+You can use the [calculated metric builder](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) to [create calculated metrics](/help/components/calc-metrics/cm-workflow/cm-workflow.md). When created in this way, calculated metrics are available in the component list and can then be used in projects throughout your organization. 
 
 ### Create calculated metrics for a single project
 
@@ -107,6 +98,13 @@ To create a calculated metric for a single project:
 
    * [!UICONTROL **Percent change**]: Creates a new column that shows the percent change between the two selected columns.
 
-[Calculated Metrics: Implementation-less metrics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
+
+## Compare metrics with different attribution models
+
+To quickly compare one attribution model to another for a metric, select **[!UICONTROL Compare attribution models]** from the context menu for a metric.
+
+![Workspace panel highlighting Compare attribution models](assets/compare-attribution.png)
+
+This shortcut lets you compare one attribution model to another without dragging in a metric and configuring it twice.
 
 

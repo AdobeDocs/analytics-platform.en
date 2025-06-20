@@ -9,7 +9,7 @@ exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
 In the [Calculated metrics manager](cm-manager.md), you can share calculated metrics. Depending on your permissions, you can share calculated metrics with your whole organization, groups, or individual users: 
 
 * **Administrators**: Administrators can share calculated metric with the whole organization, with groups within an organization, and with individual users. See the [Admin Console documentation](https://helpx.adobe.com/enterprise/using/manage-products.html) for more information. 
-* **Non-administrators**: Non-administrators can only share the calculated metric they have created and only with individual users. |
+* **Non-administrators**: Non-administrators can only share the calculated metric they have created and only with individual users.
 
 To share one or more calculated metric:
 

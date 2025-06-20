@@ -101,6 +101,6 @@ Quick segments are exactly what they are named. You can create and edit quick se
 Segments do have the following advantages compared to quick segments.
 
 * Segments can be made available across all your Workspace projects
-* Segments support more complexity using nested and hierarchical containers, and sequences (using sequence segments).
+* Segments support more complexity using nested and hierarchical [containers](seg-builder.md#containers), and sequences (using [sequential segments](seg-sequential-build.md)).
 
 
