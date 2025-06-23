@@ -11,7 +11,7 @@ solution: Customer Journey Analytics
 
 You can schedule a workbook for sharing through email or by exporting to a cloud destination, as described in the following articles:
 
-* [Schedule workbooks for sharing through email](/help/report-builder/schedule-reportbuilder.md)
+* [Schedule workbooks by sharing through email](/help/report-builder/schedule-reportbuilder.md)
 
 * [Schedule workbooks for export to cloud destinations](/help/report-builder/report-builder-export.md)
 
