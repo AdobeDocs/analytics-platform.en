@@ -114,11 +114,5 @@ Make sure that your data blocks, your environment, and your permissions meet the
 
 * **Environment:** Ensure that the [IP addresses](/help/technotes/ip-addresses.md) and [Domains](/help/technotes/domains.md) used by Customer Journey Analytics are allowed through their organization's firewall.
 
-* **Permissions:** In the Adobe Admin Console, users must be assigned a product profile that has the [!UICONTROL **Full Table Export**] permission assigned to it in order to export full tables. For information about assigning a permission to a product profile in the Admin Console, see [Customer Journey Analytics permission in Admin Console](/help/technotes/access-control.md).
-
-  >[!NOTE]
-  >
-  >  Users who are assigned the [Product Admin role](/help/technotes/access-control.md#product-admin-role) always have access to export reports from Report Builder. **(Does this apply to Report Builder???)**
-
 
 
