@@ -5,8 +5,8 @@ role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
+exl-id: 1d5d87d8-1920-406b-8cce-41b89b7ae70b
 ---
-
 # Schedule workbooks by exporting to cloud destinations
 
 You can export Customer Journey Analytics workbooks from Report Builder to cloud providers like Google, Azure, and Amazon. 
@@ -113,6 +113,3 @@ Make sure that your data blocks, your environment, and your permissions meet the
 * **Data blocks:** All data blocks must include at least one component to a column, row, or value.
 
 * **Environment:** Ensure that the [IP addresses](/help/technotes/ip-addresses.md) and [Domains](/help/technotes/domains.md) used by Customer Journey Analytics are allowed through their organization's firewall.
-
-
-

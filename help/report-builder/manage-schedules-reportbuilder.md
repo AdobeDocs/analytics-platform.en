@@ -5,8 +5,8 @@ role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
+exl-id: 0a0427d9-223e-410b-a8ef-8601390d88aa
 ---
-
 # Manage scheduled workbooks
 
 You can schedule a workbook for sharing through email or by exporting to a cloud destination, as described in the following articles:
