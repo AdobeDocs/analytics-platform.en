@@ -392,10 +392,11 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Work with segments](../report-builder/work-with-filters.md)
   + [Filter dimensions](../report-builder/filter-dimensions.md)
   + [Manage data blocks](../report-builder/manage-reportbuilder.md)
-  + [Schedule workbooks](../report-builder/schedule-reportbuilder.md)
+  + [Schedule workbooks for email](../report-builder/schedule-reportbuilder.md)
+  + [Schedule workbooks for cloud exports](../report-builder/report-builder-export.md)
+  + [Manage workbook schedules](/help/report-builder/manage-schedules-reportbuilder.md)
   + [Restricted labels](../report-builder/restricted-labels.md)
   + [Report Builder settings](../report-builder/report-builder-settings.md)
-  + [Export data](../report-builder/report-builder-export.md)
   
 
 + Reporting Activity Manager {#reporting-activity-manager}
