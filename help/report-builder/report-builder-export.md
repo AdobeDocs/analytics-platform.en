@@ -29,7 +29,7 @@ Use the following process when exporting workbooks from Report Builder to the cl
 
 ![The export process described in steps 1 through 4.](assets/report-builder-export-process.png)
 
-## Export a report from Report Builder {#export-from-report-builder}
+## Export a report from Report Builder
 
 >[!NOTE]
 >
