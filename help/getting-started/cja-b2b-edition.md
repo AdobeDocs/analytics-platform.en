@@ -14,6 +14,7 @@ exl-id: 89e482b8-8082-4413-8fd3-cc1331780af4
 
 Adobe Analytics started as a web and digital analytics tool for marketers, while Customer Journey Analytics broadened the scope to include multi-channel, offline, and cross-platform data.  Both tools help Business to Consumer (B2C) companies analyze and optimize their marketing efforts and customer experiences. And focus on **person-based reporting and analysis**: understand the customer journey, where the customer is a person that interacts with your brand across multiple channels.
 
+![B2B hero image](assets/b2b-image.png)
 Customer Journey Analytics B2B Edition adds **account-based reporting and analysis**. In B2B (business-to-business) sales, the purchase journey involves multiple parties, online and offline touchpoints, and key stages before closing a deal. B2B companies need to track all these interactions in a unified journey view to effectively analyze and optimize their marketing efforts and account experiences.
 
 Typical B2B sales characteristics are:
