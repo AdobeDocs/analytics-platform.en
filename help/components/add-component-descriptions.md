@@ -11,7 +11,7 @@ Descriptions help users know how to use the various components when building pro
 
 Customer Journey Analytics administrators can add descriptions for components (dimensions, metrics, segments, and date Ranges) within a data view or using the Data Dictionary. 
 
-## Add descriptions in a Data view
+## Add descriptions in a data view
 
 You can add a description to a component you have added to your data view. See [Component settings](/help/data-views/component-settings/overview.md).
 

@@ -8,7 +8,7 @@ exl-id: f093ac54-7d31-449b-a441-a65856a1d535
 ---
 # Customer Journey Analytics Guardrails
 
-This document provides limits for various components of Customer Journey Analytics. For Guardrails, Scoping Parameters, and Entitlements, see the [Product Description for Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html) or the [Product Description for Adobe Analytics Add-on: Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html).
+This document provides limits for various components of Customer Journey Analytics. For Guardrails, Scoping Parameters, and Entitlements, see the [Product Description for Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html), the [Product Description for Adobe Analytics Add-on: Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html), or the [Product Description for Customer Journey Analytics B2B Edition](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics-b2b.html).
 
 ## Limit types
 

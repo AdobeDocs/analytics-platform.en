@@ -6,7 +6,7 @@ feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
 ---
-# About folders in Analysis Workspace
+# Folders overview
 
 Folders in Customer Journey Analytics are available on the Workspace landing page when you have selected to [Show Folders & Projects](../freeform-overview.md#show-selector).
 
