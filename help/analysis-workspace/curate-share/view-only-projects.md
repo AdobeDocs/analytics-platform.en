@@ -1,14 +1,14 @@
 ---
-description: View-only projects in Workspace
-keywords: View-only projects
-title: View-only projects
+description: Read-only projects in Workspace
+keywords: Read-only projects
+title: Read-only projects
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 role: User
 ---
-# View-only projects
+# Read-only projects
 
-You can share projects as "view-only" to recipients through the [Project share workflow](/help/analysis-workspace/curate-share/share-projects.md). Recipients placed in the Can View role will receive a more limited project experience. This may be desired if you are sharing a project to users that are less familiar with your organization's data structure, Analysis Workspace or Customer Journey Analytics generally, but you still want them to consume data and insights in a safe environment. 
+You can share projects as readonly to recipients through the [Project share workflow](/help/analysis-workspace/curate-share/share-projects.md). Recipients placed in the Can View role will receive a more limited project experience. This may be desired if you are sharing a project to users that are less familiar with your organization's data structure, Analysis Workspace or Customer Journey Analytics generally, but you still want them to consume data and insights in a safe environment. 
 
 ![A vieiw-only shared project.](assets/view-only-project.png)
 

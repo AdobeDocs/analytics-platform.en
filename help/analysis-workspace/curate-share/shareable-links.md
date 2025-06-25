@@ -31,7 +31,7 @@ You can also share a link to a specific part of a project, such as a panel or in
 
 [Watch the video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) on how to create links and use them to drive recipients to specific parts of your project. 
 
-![The drop-down menu after you right-click the header with the Get visualization link highlighted.](assets/get-viz-link.png)
+![The drop-down menu after you right-click the header with the Get visualization link highlighted.](assets/get-visualization-link.png)
 
 ## Use links in a Table of contents {#TOC} 
 
