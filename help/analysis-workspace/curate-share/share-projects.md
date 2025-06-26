@@ -104,13 +104,14 @@ To share a specific project role with users or groups in your organization:
    
    Select **[!UICONTROL Curate and Share]** to apply project curation automatically. (If the project has already been shared, select **[!UICONTROL Curate & Update]**.) Learn more about [project curation](curate.md).
 
+
 ## Share a link to a project 
 
 When sharing a link as described in this section, consider the following: 
 
 * Recipients who use the link are required to log in to Customer Journey Analytics before gaining access to the project. 
 
-* If a recipient is not assigned a role and receives a [link](/help/analysis-workspace/curate-share/shareable-links.md) to the project (**[!UICONTROL Share] > [!UICONTROL Get project link]**), they are given a role by default. Admins receive **[!UICONTROL Edit original]** and non-admins receive **[!UICONTROL Edit copy]**.
+* If a recipient is not assigned a role and receives a [shareable link](/help/analysis-workspace/curate-share/shareable-links.md) to the project (**[!UICONTROL Share] > [!UICONTROL Get project link]**), they are given a role by default. Admins receive **[!UICONTROL Edit original]** and non-admins receive **[!UICONTROL Edit copy]**.
 
 To share the project link with users in your organization:
 

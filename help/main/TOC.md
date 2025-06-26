@@ -240,7 +240,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Curate projects](../analysis-workspace/curate-share/curate.md)
     + [Share projects](../analysis-workspace/curate-share/share-projects.md)
     + [Create shareable links](../analysis-workspace/curate-share/shareable-links.md)
-    + [View-only projects](../analysis-workspace/curate-share/view-only-projects.md)
+    + [Read-only projects](../analysis-workspace/curate-share/view-only-projects.md)
   + Export {#export}
     + [Overview](../analysis-workspace/export/export-project-overview.md)
     + [Download](../analysis-workspace/export/download-send.md)
