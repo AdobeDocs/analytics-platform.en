@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 ---
-# Visualize data with Data Insights Agent in Customer Journey Analytics
+# Visualize data with Data Insights Agent
 
 >[!AVAILABILITY]
 >
@@ -33,7 +33,7 @@ Using Data Insights Agent to answer data-centric questions in Analysis Workspace
 | **Feedback mechanisms** | <ul><li>Thumbs up</li><li>Thumbs down</li><li>Flag</li></ul> |  |
  
 
-## Manage access to Data Insights Agent in Customer Journey Analytics
+## Manage access to Data Insights Agent
 
 The following parameters govern access to Data Insights Agent in Customer Journey Analytics:
 
@@ -223,3 +223,24 @@ Following the thumbs up or thumbs down selection, please make a selection for th
 
 -->
 
+
+## Configuration best practices
+
+Below are best practices for your Customer Journey Analytics configuration (data view, calculated metrics, segments, and more) to ensure the Data Insights Agent can locate the correct components and return cleaner answers without having you to prompt for additional information.
+
+* **Balance what components you need**. Do not add all the fields of your datasets as metrics or dimension components to your data view. Especially, those you most certainly will not use in your analysis. On the other hand, do not strictly limit yourself only to the fields you anticipate you require for your analysis. A too limited data view restricts the flexibility in your analysis and the Data Insight's agent functionality.
+* **Always use friendly display names**. Ensure that all fields you define in your data view, either as a metrics or dimension component, do have a friendly component name. The process of renaming fields with a friendly name is especially relevant for fields from Adobe Analytics source connector datasets. These fields often have non-friendly unidentifiable names like `eVar41`, or `prop25`.
+* **Use distinctive names**. Distinctive names are especially relevant when you use a field both as a metric and a dimension component in your data view. Or when you use a field in multiple components, each with different component settings. 
+* **Use a component naming convention**. You can use a component naming convention to group components. For example, **[!UICONTROL Orders | Product]** and  **[!UICONTROL Orders | Customer]** to distinguish between different order metrics that might exist in your data.
+* **Use the Data Dictionary**. Add description and other relevant data for components in the Data Dictionary. The Data Insight agent currently does not use description and tags. but might use Data Dictionary description and tags in the future. 
+* **Use approved calculated metrics**. Agree on a process to use only approved calculated metrics as components in your data view, and avoid using experimental calculated metrics.
+* **Share required segments**. Ensure you share segments and make segments visible that are required for Data Insights agent prompts.
+* **Standardize on component names across data views**. If you use the same fields as a component in multiple data views, ensure you use a single friendly name and a single identifier for that component. A single name and identifier allows the Data Insights agent to switch data views without losing context.
+
+>[!MORELIKETHIS]
+>
+>[Component settings](/help/data-views/component-settings/overview.md)
+>[Data Dictionary](/help/components/data-dictionary/data-dictionary-overview.md)
+>[Approve calculated metric](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>[Share segments](/help/components/segments/seg-share.md)
+>
