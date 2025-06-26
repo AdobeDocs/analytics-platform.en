@@ -8,9 +8,15 @@ role: User
 ---
 # Read-only projects
 
-You can share projects as readonly to recipients through the [Project share workflow](/help/analysis-workspace/curate-share/share-projects.md). Recipients placed in the Can View role will receive a more limited project experience. This may be desired if you are sharing a project to users that are less familiar with your organization's data structure, Analysis Workspace or Customer Journey Analytics generally, but you still want them to consume data and insights in a safe environment. 
+You can share projects as read-only to recipients through the [share functionality](/help/analysis-workspace/curate-share/share-projects.md). Recipients placed in the **[!UICONTROL Read only]** role will receive a more limited project experience. 
 
-![A vieiw-only shared project.](assets/view-only-project.png)
+This may be desired if you are sharing a project to users that are less familiar with your organization's data structure, Analysis Workspace or Customer Journey Analytics generally, but you still want them to consume data and insights in a safe environment. 
+
+![Share as read-only](assets/read-only-project-sender.png)
+
+The interactions for the read-only recipients are limited.
+
+![Share as read-only received](assets/read-only-project-receiver.png)
 
 ## Disabled interactions
 
@@ -31,7 +37,14 @@ Some of the more notable enabled interactions in a view-only project include:
 
 | Area | Enabled interactions |
 | --- | --- |
-| Freeform tables | <ul><li>Pagination and sorting</li><li>Hovering</li><li>Cell selections that update linked visualizations</li><li>Right-click > Get Visualization Link</li><li>Right-click > Copy to Clipboard</li></ul> |
-| Visualizations | <ul><li>Clicking to turn on/off legend</li><li>Hovering</li><li>Right-click > Get Visualization Link</li><li>Collapse/expand</li><li>Flow - expand Flow nodes</li><li>Map - zoom</li></ul> |
-| Panels | <ul><li>Interactive drop-down segments</li><li>Right-click > Get Panel Link</li><li>Collapse/expand</li></ul> |
+| Freeform tables | <ul><li>Pagination and sorting</li><li>Hovering</li><li>Cell selections that update linked visualizations</li><li>From the context menu > Get Visualization Link</li><li>From the context menu > Copy to Clipboard</li></ul> |
+| Visualizations | <ul><li>Clicking to turn on/off legend</li><li>Hovering</li><li>From the context menu > Get Visualization Link</li><li>Collapse/expand</li><li>Flow - expand Flow nodes</li><li>Map - zoom</li></ul> |
+| Panels | <ul><li>Interactive drop-down segments</li><li>From the context menu > Get Panel Link</li><li>Collapse/expand</li></ul> |
 | Project | <ul><li>Inspecting all info icons</li><li>Project menu - New, Open, Set as landing page, Refresh, Download CSV/PDF, limited Project Info & Settings</li><li>Share menu - Get project link, Send file now</li><li>Help menu - All actions except Tips & Debugger options</li></ul> |
+
+
+## Share with anyone experience
+
+If you have selected a project using [Share with anyone](share-projects.md#share-a-project-with-anyone-no-login-required) the receiver of the link can only view the project and not interact with the project.
+
+![Share with anyone experience](assets/share-with-anyone-receiver.png)
