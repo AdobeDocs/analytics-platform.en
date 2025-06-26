@@ -223,7 +223,7 @@ Following the thumbs up or thumbs down selection, please make a selection for th
 
 -->
 
-
+<!--
 ## Configuration best practices
 
 Below are best practices for your Customer Journey Analytics configuration (data view, calculated metrics, segments, and more) to ensure the Data Insights Agent can locate the correct components and return cleaner answers without having you to prompt for additional information.
@@ -244,3 +244,5 @@ Below are best practices for your Customer Journey Analytics configuration (data
 >[Approve calculated metric](/help/components/calc-metrics/cm-workflow/cm-approving.md)
 >[Share segments](/help/components/segments/seg-share.md)
 >
+
+-->
