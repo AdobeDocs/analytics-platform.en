@@ -29,7 +29,7 @@ Use the following process when exporting workbooks from Report Builder to the cl
 
 ![The export process described in steps 1 through 4.](assets/report-builder-export-process.png)
 
-## Export a report from Report Builder {#export-from-report-builder}
+## Export a report from Report Builder
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ To export reports from Report Builder:
 
 After data is exported from Analysis Workspace, you can edit, re-export, duplicate, tag, or delete existing exports, as described in [Manage exports](/help/components/exports/manage-exports.md). 
 
-## Advantages of exporting to the cloud {#advantages}
+## Advantages of exporting to the cloud
 
 Exporting Customer Journey Analytics data to the cloud allows you to: 
 
