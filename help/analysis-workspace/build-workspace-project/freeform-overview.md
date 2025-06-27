@@ -1,7 +1,7 @@
 ---
-description: Overview of Workspace projects with menu bar and settings
+description: Learn how to work with projects in Analysis Workspace. Use the projects manager to manage (create, delete, move, share, approve, pin, copy, and tag) projects.
 keywords: Analysis Workspace
-title: Projects overview
+title: Projects Overview
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User

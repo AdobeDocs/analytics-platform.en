@@ -1,6 +1,6 @@
 ---
-description: Learn how to comment on a project in Analysis Workspace
-title: Add and view comments in projects
+description: Learn how to comment on a project in Analysis Workspace.
+title: Add And Manage Comments In Projects
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1

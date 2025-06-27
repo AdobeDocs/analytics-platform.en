@@ -1,14 +1,18 @@
 ---
-description: Learn how to rename projects from folders
+description: Learn how to remove projects from Analysis Workspace
 keywords: Analysis Workspace
-title: Remove projects from folders
+title: Remove Projects
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
 ---
-# Delete projects
+# Remove projects
 
-<!-- Is this article still needed -->
+
+See [Actions in Manage projects](../freeform-overview.md#actions) on how to remove projects from Analysis Workspace.
+
+
+<!-- Is this article still needed; not in the TOC anymore
 
 
 ## Move a project {#move-project-in-folder}
@@ -42,3 +46,5 @@ When you delete a project from a folder, it gets purged from the system after 18
 1. Select **Delete**.
 
 1. A confirmation window asks you to confirm the deletion.
+
+-->

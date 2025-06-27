@@ -1,6 +1,6 @@
 ---
 description: How to change the visualization color palette or specify your own custom color palette.
-title: Visualization color palette
+title: Visualization Color Palette
 feature: Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
 role: User
