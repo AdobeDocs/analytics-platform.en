@@ -1,20 +1,16 @@
 ---
 description: Use the key metric summary visualization to compare metric performance across two timelines.
-title: Key metric summary
+title: Key Metric Summary
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
 ---
 # Key metric summary {#key-metric-summary}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_keymetricsummary_button"
 >title="Key metric summary"
 >abstract="Create a visualization that is a combination of the line, summary change, and summary number charts. Use this visualization to compare how important metrics are trending between two periods of time."
-
-<!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]

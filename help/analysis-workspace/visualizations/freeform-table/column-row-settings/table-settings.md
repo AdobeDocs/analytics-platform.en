@@ -1,6 +1,6 @@
 ---
-description: Row settings vary depending on which component you have dragged into the table.
-title: Row settings
+description: Learn how to use row settings and how row settings vary depending on which component you have dragged into a freeform table in Analysis Workspace.
+title: Row Settings
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
@@ -84,4 +84,4 @@ The following additional context menu options are available when selecting a met
 
 ## Change row height
 
-You can set the view density of a project to **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]**, and **[!UICONTROL Expanded]**. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density).
+You can set the [view density](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) of a project to **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]**, and **[!UICONTROL Expanded]**. .

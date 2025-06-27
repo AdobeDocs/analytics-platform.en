@@ -1,6 +1,6 @@
 ---
-description: Configure a Journey canvas visualization
-title: Journey canvas
+description: Understand how to configure a journey canvas visualization.
+title: Configure A Journey Canvas Visualization
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553

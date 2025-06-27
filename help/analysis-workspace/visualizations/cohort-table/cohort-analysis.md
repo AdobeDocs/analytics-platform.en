@@ -1,6 +1,6 @@
 ---
-title: Cohort table overview
-description: Learn how to use a cohort table for cohort analysis in Analysis Workspace
+title: Cohort Table Overview
+description: Learn how to dig deeper into the data around your audience and break that data into related groups with cohort analysis. Use cohort analysis in Analysis Workspace.
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
@@ -68,31 +68,31 @@ The following sections describe Cohort Analysis features that allow for fine-tun
 
 For more detailed information about creating a cohort and running a [!UICONTROL Cohort Analysis] report, see [Configure a Cohort table](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
 
-### [!UICONTROL Retention] table
+### Retention table
 
 A [!UICONTROL Retention] cohort table returns persons: each data cell shows the raw number and percentage of persons in the cohort who did the action during that time period. You can include up to 3 metrics and up to 10 segments.
 
 ![A Rention cohort report showing the units and percentage of persons in the cohort.](assets/retention-report.png)
 
-### [!UICONTROL Churn] table
+### Churn table
 
 A [!UICONTROL Churn] cohort table is the inverse of a retention table and shows the persons who fell out or never met the return criteria for your cohort over time. You can include up to 3 metrics and up to 10 segments.
 
 ![A Churn table showing units and percentage of people who didn't meet the return criteria for a cohort.](assets/churn-report.png)
 
-### [!UICONTROL Rolling Calculation]
+### Rolling calculation
 
 You can calculate retention or churn based on the previous column, not the included column, which is referred to as rolling calculation.
 
 ![A Cohort retention report showing calculations based on a previous column of data.](assets/retention-report-rolling.png)
 
-### [!UICONTROL Latency] table
+### Latency table
 
 A latency table measures the time that has elapsed before and after the inclusion event occurred. Measuring latency is an excellent tool for pre- and post analysis. The **[!UICONTROL Included]** column is in the center of the table and time periods before and after the inclusion event are shown on both sides.
 
 ![A Cohort report showing the elapsed time before and after an event.](assets/retention-report-latency.png)
 
-### [!UICONTROL Custom dimension] cohort
+### Custom dimension cohort
 
 You can create cohorts based on a selected dimension, and not time-based cohorts (which are the default). Use dimensions such as [!UICONTROL City geo], [!UICONTROL Marketing channel], [!UICONTROL campaign], [!UICONTROL product], [!UICONTROL page], [!UICONTROL region], or any other dimension to show how retention changes. Based on the different values of these dimensions.
 

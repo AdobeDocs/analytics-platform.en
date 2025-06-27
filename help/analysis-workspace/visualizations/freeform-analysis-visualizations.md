@@ -1,7 +1,7 @@
 ---
-description: Visually represent your data in Analysis Workspace.
+description: Learn how to visually represent your data with visualizations available in Analysis Workspace.
 keywords: Analysis Workspace
-title: Visualizations overview
+title: Visualizations Overview
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User

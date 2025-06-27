@@ -1,6 +1,6 @@
 ---
-description: Quick Insights is a tool for new Workspace users that guides them in building data tables and visualizations
-title: Quick Insights panel
+description: Understand how to use the Quick insights panel to guide you in building data tables and visualizations in Analysis Workspace.
+title: Quick Insights Panel
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
