@@ -1,5 +1,5 @@
 ---
-description: Learn how to remove projects from Analysis Workspace
+description: Learn how to remove projects from Analysis Workspace.
 keywords: Analysis Workspace
 title: Remove Projects
 feature: Workspace Basics
