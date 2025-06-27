@@ -1,6 +1,6 @@
 ---
-description: Examples when configuring a Journey canvas visualization
-title: Journey canvas examples
+description: Learn how to troubleshoot when configuring a journey canvas visualization.
+title: Journey Canvas Troubleshooting
 feature: Visualizations
 role: User
 exl-id: f0ac3752-9244-4d9e-807b-e6471e6aa55b

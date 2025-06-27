@@ -1,5 +1,5 @@
 ---
-description: Use the line visualization to depict trended (time-based) datasets
+description: Use the line visualization to depict trended (time-based) datasets.
 title: Line
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479

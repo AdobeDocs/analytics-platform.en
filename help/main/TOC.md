@@ -223,11 +223,11 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Section header](/help/analysis-workspace/visualizations/section-header.md)
     + [Summary number and change](../analysis-workspace/visualizations/summary-number-change.md)
     + [Text](../analysis-workspace/visualizations/text.md)
-    + [Tree map](../analysis-workspace/visualizations/treemap.md)
+    + [Treemap](../analysis-workspace/visualizations/treemap.md)
     + [Venn](../analysis-workspace/visualizations/venn.md)
   + Panels {#panels}
     + [Overview](../analysis-workspace/c-panels/panels.md)
-    + [Blank panel](../analysis-workspace/c-panels/blank-panel.md)
+    + [Blank](../analysis-workspace/c-panels/blank-panel.md)
     + [Attribution](../analysis-workspace/c-panels/attribution.md)
     + [Experimentation](../analysis-workspace/c-panels/experimentation.md)
     + [Freeform](../analysis-workspace/c-panels/freeform-panel.md)
