@@ -7,7 +7,7 @@ mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
 ---
-# Send and schedule
+# Send and schedule projects
 
 You can send Customer Journey Analytics projects as files to selected users by email. You can send files ad hoc, or you can configure projects to be sent on a schedule. Projects can be sent in CSV or PDF format.
 
