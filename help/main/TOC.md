@@ -163,6 +163,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Perform advanced analysis](../analysis-workspace/perform-adv-analysis.md)
   + Projects {#build-workspace-project}
     + [Overview](../analysis-workspace/build-workspace-project/freeform-overview.md)
+    + [Quickly start projects](/help/analysis-workspace/build-workspace-project/starter-projects.md)
     + [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md)
     + [Open projects](/help/analysis-workspace/build-workspace-project/open-projects.md)
     + [Comment on projects](/help/analysis-workspace/build-workspace-project/comment-projects.md)
@@ -236,16 +237,16 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Media playback time spent](../analysis-workspace/c-panels/media-playback-time-spent.md)
     + [Next or previous item](../analysis-workspace/c-panels/next-previous.md)
     + [Quick insights](../analysis-workspace/c-panels/quickinsight.md)
-  + Curate, share and schedule projects {#curate-share}
+  + Curate and share {#curate-share}
     + [Overview](../analysis-workspace/curate-share/send-schedule-files.md)
     + [Curate projects](../analysis-workspace/curate-share/curate.md)
     + [Share projects](../analysis-workspace/curate-share/share-projects.md)
     + [Create shareable links](../analysis-workspace/curate-share/shareable-links.md)
     + [Read-only projects](../analysis-workspace/curate-share/view-only-projects.md)
+    + [Send and schedule projects](../analysis-workspace/curate-share//t-schedule-report.md)
   + Export {#export}
     + [Overview](../analysis-workspace/export/export-project-overview.md)
     + [Download](../analysis-workspace/export/download-send.md)
-    + [Send to others](../analysis-workspace/export/t-schedule-report.md)
     + [Export to the cloud](../analysis-workspace/export/export-cloud.md)
   + Anomaly Detection {#anomaly-detection}
     + [Overview](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)

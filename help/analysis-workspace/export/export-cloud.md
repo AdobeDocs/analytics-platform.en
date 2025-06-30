@@ -123,7 +123,9 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
 
 * Export tables that include multiple dimensions.
 
-## Export requirements {#export-requirements}
+## Requirements and unsupported features {#export-requirements}
+
+This section details the minimum requirements and unsupported features you should take into account when you export data.
 
 ### Minimum requirements
 

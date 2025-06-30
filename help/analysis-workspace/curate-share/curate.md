@@ -1,7 +1,7 @@
 ---
-description: Curation lets you limit components before sharing a project.
+description: Learn how to curate projects in Analysis Workspace. Curation limits access to components before you share a project.
 keywords: Analysis Workspace curation
-title: Curate projects
+title: Curate Projects
 feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
 role: User
