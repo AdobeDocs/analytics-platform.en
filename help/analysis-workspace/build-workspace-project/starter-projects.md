@@ -3,6 +3,7 @@ description: Learn how to quickly start a project based on common reporting scen
 title: Quickly Start Projects
 feature: Workspace Basics
 role: User, Admin
+exl-id: 464032a1-6dae-4df5-b4db-b277788e88c2
 ---
 # Quickly start projects
 
@@ -13,4 +14,3 @@ For information about using templates in Customer Journey Analytics, see the fol
 * [Use templates](/help/analysis-workspace/templates/use-templates.md)
 
 * [Create and manage templates](/help/analysis-workspace/templates/create-templates.md)
-
