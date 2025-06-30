@@ -1,7 +1,7 @@
 ---
-description: Project sharing and project roles in Workspace
+description: Learn how to share projects in Analysis Workspace.
 keywords: Analysis Workspace sharing
-title: Share projects
+title: Share Projects
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
@@ -41,9 +41,9 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Project sharing 
 >[!ENDSHADEBOX]
 
 
-## Share with Customer Journey Analytics users and groups in your organization {#Add}
+## Share with users and groups in your organization {#Add}
 
-You can share a project with existing Customer Journey Analytics users or groups in your organization. When you share a project as described in this section, the users you share with must already have an Customer Journey Analytics account.
+You can share a project with existing Analysis Workspace users or groups in your organization. When you share a project as described in this section, the users you share with must already have an Customer Journey Analytics account.
 
 You can share a specific role with users or groups, or you can share a link.
 
