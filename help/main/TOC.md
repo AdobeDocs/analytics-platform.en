@@ -10,7 +10,6 @@ user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Learn about Adobe Customer Journey Analytics and how to use Analysis Workspace with data from Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
 ---
-
 # Adobe Customer Journey Analytics Guide {#using}
 
 + [Adobe Customer Journey Analytics Guide](../getting-started/cja-landing.md)
@@ -42,7 +41,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Quick start guide](/help/getting-started/cja-b2b-quick-start-guide.md)
     + [Transition guide](/help/getting-started/cja-b2b-transition.md)
 
-+ Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
++ Upgrade and compare {#compare-aa-cja}
   + Upgrade to Customer Journey Analytics {#upgrade-to-cja}
     + [Get started](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
     + [Choose your upgrade path](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
@@ -92,7 +91,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Web SDK implementation options](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
       + [Configuring Adobe Analytics Web SDK for Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
       + [Use personalization with Adobe Journey Optimizer](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
-  + Comparison with Adobe Analytics {#cja-aa-comparison}
+  + Compare with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)
     + [Feature support](../getting-started/aa-vs-cja/cja-aa.md)
