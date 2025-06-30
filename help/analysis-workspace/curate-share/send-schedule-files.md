@@ -5,7 +5,7 @@ feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
 role: User
 ---
-# Curate and share overview
+# Curate and share projects overview
 
 You can curate and share projects, or send projects as PDF or CSV files to recipients in your organization or with anyone else using the options available from the **[!UICONTROL Share]** menu in Analysis Workspace or when you select **[!UICONTROL Share]** at the top right of the interface.
 
