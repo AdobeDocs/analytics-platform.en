@@ -14,7 +14,7 @@ You can view anomalies in Analysis Workspace in a table or in a line chart.
 
 You can view anomalies in a time-series Freeform Table.
 
-1. Select the ![Setting](/help/assets/icons/Setting.svg) in the column header, then ensure that the **[!UICONTROL Show anomalies]** option is selected in the list of options. For more information, see [Column settings](/help/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md).
+1. Select the ![Setting](/help/assets/icons/Setting.svg) in the column header, then ensure that the **[!UICONTROL Show anomalies]** option is selected in the list of options. For more information, see [Column settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md).
 
 1. Anomalies are shown in the table as follows:
 
@@ -22,7 +22,7 @@ You can view anomalies in a time-series Freeform Table.
 
    A ◥ appears in the upper-right corner of each row where a data anomaly is detected.
 
-   The **colored vertical line** in each row ➋ indicates the expected value. The **colored shaded area** in each row ➊ indicates the actual value. How the line (expected value) compares with the shaded area (actual value) determines whether there is an anomaly. (An observation is considered anomalous based on the advanced statistical techniques described in [Statistical techniques used in anomaly detection](/help/analyze/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).)
+   The **colored vertical line** in each row ➋ indicates the expected value. The **colored shaded area** in each row ➊ indicates the actual value. How the line (expected value) compares with the shaded area (actual value) determines whether there is an anomaly. (An observation is considered anomalous based on the advanced statistical techniques described in [Statistical techniques used in anomaly detection](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).)
 
 1. Select ◥ in the upper-right corner of a row to view details about the anomaly. This shows the extent (as a percentage) to which the actual value diverges either above or below the expected value.
 
@@ -32,7 +32,7 @@ Line charts are the only visualization that allows you to view anomalies.
 
 To view anomalies in a line chart:
 
-1. Select ![Setting](/help/assets/icons/Setting.svg) in the visualization header, then ensure that the [!UICONTROL **Show anomalies**] option is selected in the list of options. For more information, see [Line](/help/analyze/analysis-workspace/visualizations/line.md).
+1. Select ![Setting](/help/assets/icons/Setting.svg) in the visualization header, then ensure that the [!UICONTROL **Show anomalies**] option is selected in the list of options. For more information, see [Line](/help/analysis-workspace/visualizations/line.md).
 
 1. (Optional) To allow the confidence interval to scale the chart, select ![Setting](/help/assets/icons/Setting.svg) in the visualization header, then select the option, **[!UICONTROL Allow anomalies to Scale Y-axis]**. 
 
@@ -42,7 +42,7 @@ To view anomalies in a line chart:
 
    ![Anomaly detected line visualization](assets/anomaly-detected-line.png)
    
-   A **white dot** appears on the line wherever a data anomaly is detected. (An observation is considered anomalous based on the advanced statistical techniques described in [Statistical techniques used in anomaly detection](/help/analyze/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).)
+   A **white dot** appears on the line wherever a data anomaly is detected. (An observation is considered anomalous based on the advanced statistical techniques described in [Statistical techniques used in anomaly detection](/help/analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md).)
 
    The **light shaded area** is the confidence band, or expected range, where values should occur. Any value that falls outside of this expected range is an anomaly. 
 
