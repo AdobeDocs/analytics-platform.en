@@ -242,10 +242,10 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Share projects](../analysis-workspace/curate-share/share-projects.md)
     + [Create shareable links](../analysis-workspace/curate-share/shareable-links.md)
     + [Read-only projects](../analysis-workspace/curate-share/view-only-projects.md)
-    + [Send and schedule](../analysis-workspace/export/t-schedule-report.md)
   + Export {#export}
     + [Overview](../analysis-workspace/export/export-project-overview.md)
     + [Download](../analysis-workspace/export/download-send.md)
+    + [Send and schedule](../analysis-workspace/export/t-schedule-report.md)
     + [Export to the cloud](../analysis-workspace/export/export-cloud.md)
   + Anomaly Detection {#anomaly-detection}
     + [Overview](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
@@ -258,7 +258,8 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [User preferences](../analysis-workspace/user-preferences.md)
   + Workspace FAQs and more {#workspace-faq}
     + [Frequently asked questions](../analysis-workspace/workspace-faq/faq.md)
-    + [Error messages](../analysis-workspace/workspace-faq/error-messages.md)
+    + [Optimize performance](../analysis-workspace/workspace-faq/optimizing-performance.md)
+    + [Error and troubleshooting](../analysis-workspace/workspace-faq/error-messages.md)
     + [Limitations](../analysis-workspace/workspace-faq/aw-limitations.md)
     + [Administration requirements](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
     + [Accessibility](../analysis-workspace/workspace-faq/aw-accessibility.md)

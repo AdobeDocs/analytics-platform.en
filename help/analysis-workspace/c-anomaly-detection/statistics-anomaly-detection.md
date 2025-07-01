@@ -1,11 +1,11 @@
 ---
-description: Anomaly detection in Analysis Workspace uses a series of advanced statistical techniques to determine whether an observation should be considered anomalous or not.
-title: Statistical techniques used in anomaly detection
+description: Learn how to identify statistical anomalies with anomaly detection techniques.
+title: Statistical Techniques Used In Anomaly Detection
 feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
 role: User
 ---
-# Statistical techniques used in anomaly detection
+# Statistical techniques
 
 Anomaly detection in Analysis Workspace uses a series of advanced statistical techniques to determine whether an observation should be considered anomalous or not.
 

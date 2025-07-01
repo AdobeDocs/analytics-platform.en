@@ -44,7 +44,7 @@ The following table lists features that are available in Customer Journey Analyt
 | --- | --- |
 | **Anomaly detection** | Full support |
 | **Asset transfer** | Full support |
-| **Attribution IQ** | Full support |
+| **Attribution features** | Full support |
 | **Bot detection** | [Full support](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) |
 | **Calculated metrics** | Full support. Any existing calculated metric in the traditional Analysis Workspace is not ported to Customer Journey Analytics. |
 | **Calendar events** | Full support. Calendar events have been implemented as [Annotations](/help/components/annotations/overview.md) in Workspace. |
@@ -119,7 +119,6 @@ The following table lists features that are available in Customer Journey Analyt
 | Feature | Notes |
 | --- | --- |
 | **Real-time reporting** | Support is planned. |
-| **Segment IQ** | Support is planned. |
 | **Transaction ID data sources** | Support is planned. |
 
 ## No support, not yet planned {#not-planned}

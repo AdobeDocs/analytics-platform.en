@@ -40,7 +40,7 @@ Your marketing channel dimensions are now available for use in Analysis Workspac
 
 >[!NOTE]
 >
->To maximize effectiveness of Marketing Channels for Attribution IQ and Customer Journey Analytics, we have published some [revised best practices](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html).
+>To maximize effectiveness of Marketing Channels for attribution and Customer Journey Analytics, we have published some [revised best practices](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html).
 
 Marketing channel settings operate differently between Platform data and report suite data. Consider the following differences when setting up Marketing channels for Customer Journey Analytics:
 

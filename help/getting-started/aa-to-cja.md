@@ -46,7 +46,7 @@ Traditional Adobe Analytics Marketing Channel settings do not perform the same i
 
 * The report-time nature of Customer Journey Analytics  
 
-Adobe has published [updated best practices for Marketing Channel implementation](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html). These updated recommendations  help you make the most of the capabilities already in Adobe Analytics with Attribution IQ. They will also set you up for success when transitioning to Customer Journey Analytics.
+Adobe has published [updated best practices for Marketing Channel implementation](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html). These updated recommendations  help you make the most of the capabilities already in Adobe Analytics with advanced attribution features. They will also set you up for success when transitioning to Customer Journey Analytics.
 
 With the introduction of [Derived fields](../data-views/derived-fields/derived-fields.md) as part of Customer Journey Analytics Data views, Marketing Channels are also supported in a non-destructive and retro-active manner using the [Marketing Channel function template](../data-views/derived-fields/derived-fields.md#function-templates).
 
