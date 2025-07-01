@@ -1,6 +1,6 @@
 ---
-title: Date ranges overview
-description: Learn what date ranges are and how you can use them in reporting.
+description: Use the calendar and data ranges to specify date ranges in Analysis Workspave.
+title: Date Ranges Overview
 feature: Calendar
 exl-id: 99b31bd9-32f1-4da1-9e47-6d90c66282c5
 role: User

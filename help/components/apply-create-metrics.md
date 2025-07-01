@@ -1,5 +1,5 @@
 ---
-description: There are two ways to use metrics in Analysis Workspace.
+description: Understand what metrics are and how to use metrics in Adobe Analytics.
 title: Metrics
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
@@ -23,15 +23,9 @@ Adobe offers several types of metrics for use in Analysis Workspace:
 
 * **Standard metrics**: Example of standard metrics are People, Sessions, Events.
 
-  Contrary to Adobe Analytics, Customer Journey Analytics allows you to define standard metrics in a flexible way within the scope of a connection and a data view. 
+  Contrary to Adobe Analytics, Customer Journey Analytics allows you to define standard metrics in a flexible way within the scope of a connection and a data view.  See [Standard metrics](#standard-metrics) for the full list of standard metrics.
 
-  * **People**: The People metric in Customer Journey Analytics is the count distinct of Person IDs. Depending on what you choose as the Person ID when you configure datasets in your connection, the People metric can mean different things.
-  * **Sessions**: The Sessions metric in Customer Journey Analytics is what you define as part of the configuration of the Sessions settings in your data view. See [Session settings](/help/data-views/session-settings.md).
-  * **Events**: The Events metric in Customer Journey Analytics are comprised of the events that are part of any event dataset you have configured as part of your connection.
-
-  See [Standard metrics](#standard-metrics) for the full list of standard metrics.
-
-* **Calculated metrics** ![Calculator](/help/assets/icons/Calculator.svg): User-defined metrics that are based on standard metrics, static numbers, or algorithmic functions.
+* **Calculated metrics** ![Calculator](/help/assets/icons/Calculator.svg): [User-defined metrics](/help/components/calc-metrics/calc-metr-overview.md) that are based on standard metrics, static numbers, or algorithmic functions.
 
 * **Calculated metric templates**  ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : Adobe-defined metrics that behave similarly to calculated metrics. You can use them as-is in Workspace projects, or save a copy to customize the logic. See [Default calculated metrics](calc-metrics/cm-workflow/../default-calcmetrics.md).
 

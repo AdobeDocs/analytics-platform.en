@@ -1,6 +1,6 @@
 ---
-description: Alerts allow for granular control over notifications, and integration with anomaly detection.
-title: Alerts overview
+description: Understand how to use alerts to allow for granular control over notifications, and integration with anomaly detection.
+title: Alerts Overview
 feature: Workspace Basics
 role: User, Admin
 exl-id: 029be0c8-ec78-4bb7-a6cd-bb303b5ac82a
