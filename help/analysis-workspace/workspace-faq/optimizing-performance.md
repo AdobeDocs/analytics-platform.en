@@ -23,7 +23,7 @@ To gain insight into the performance of Analysis Workspace:
 >
 >The information on the Performance page varies each time the modal is opened, as factors are subject to change. Additionally, Adobe will continue to refine the guidelines provided as more data becomes available.
 
-![](assets/aa-performance.png)
+![](assets/cja-performance.png)
 
 ## Network factors
 
