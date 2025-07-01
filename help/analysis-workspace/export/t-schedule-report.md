@@ -93,7 +93,7 @@ The password requirements conform to the Adobe standards, requiring a minimum of
 ### Password-protect a new scheduled project
 
 1. After you save your project, go to **[!UICONTROL Share]** > **[!UICONTROL Send file now]**, or **[!UICONTROL Share]** > **[!UICONTROL Send file on schedule]**.
-1. Follow the instructions above, under [Send file now](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#now) or [Send file on schedule](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#schedule).
+1. Follow the instructions above, under [Send file now](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#now) or [Send file on schedule](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#schedule).
 
 ### Password-protect an existing scheduled project 
 
