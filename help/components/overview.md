@@ -22,7 +22,7 @@ You can manage the following components:
 * [Date ranges](date-ranges/create.md): Customize and refine the date ranges Analysis Workspace offers.
 * [Annotations](/help/components/annotations/overview.md): Communicate contextual data nuances and insights to your organization.
 * [Intelligent alerts](/help/components/c-intelligent-alerts/intelligent-alerts.md): Allow you to be notified based on changed percentages or specific data points. 
-* [Scheduled projects](/help/analysis-workspace/curate-share/t-schedule-report.md#scheduled-projects-manager): Manage your scheduled projects.
+* [Scheduled projects](/help/analysis-workspace/export/t-schedule-report.md#scheduled-projects-manager): Manage your scheduled projects.
 * [Preferences](/help/analysis-workspace/user-preferences.md): Manage the preferences for Analysis Workspace.
 * [Audiences](/help/components/audiences/audiences-overview.md): Create and publish audiences from Customer Journey Analytics to [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home) in Experience Platform for targeting and personalization.
 * [Exports](/help/components/exports/manage-export-locations.md): Manage your export account and locations.

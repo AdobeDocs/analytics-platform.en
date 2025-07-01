@@ -142,7 +142,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | **August 2023** | | 
 | Media Playback Time Spent panel | Updated content for  [Media Playback Time Spent panel](/help/analysis-workspace/c-panels/media-playback-time-spent.md) to improve readability. |
 | Report Builder enhancements | Updated content for [Schedule workbooks](/help/report-builder/schedule-reportbuilder.md) to provide information for downloading scheduled tasks. Updated content for  [Create a data block](/help/report-builder/create-a-data-block.md) to provide information for using Start date as a dimension. |
-| Moved content about managing scheduled projects | Created a new article in the Analytics Components Guide called [Scheduled projects](/help/components/scheduled-projects-manager.md). This content was previously located in the [Schedule projects](/help/analysis-workspace/curate-share/t-schedule-report.md) article in the Analytics Tools Guide. |
+| Moved content about managing scheduled projects | Created a new article in the Analytics Components Guide called [Scheduled projects](/help/components/scheduled-projects-manager.md). This content was previously located in the [Schedule projects](/help/analysis-workspace/export/t-schedule-report.md) article in the Analytics Tools Guide. |
 | Adobe Customer Journey Analytics feature support | Added more information in the *Supported in a new way* table on the sessionization capabilities in Customer Journey Analytics compared to Adobe Analytics. [Learn more](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) | 
 | Evolution from Adobe Analytics | Updated the *(Re-)Configure Marketing Channels* section with a reference to the Derived fields Marketing channels function template. [Learn more](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) | 
 | Data ingestion quick start guides for mobile applications and other platforms | Added additional data ingestion quick start guides outlining how to ingest and use data from mobile applications or other platforms (like desktop applications, games on consoles, applications on set-top boxes and IoT devices) in Customer Journey Analytics. [Learn more](../data-ingestion/data-ingestion.md) | 
@@ -208,7 +208,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | **December 2022** |  |
 | December 16, 2022 | New topic on [managing your Customer Journey Analytics data usage](/help/technotes/estimate-usage.md). |
 | **October 2022** | |
-| October 2022 | New topic on [password protection of scheduled projects](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password). This feature is in support of [HIPAA readiness](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
+| October 2022 | New topic on [password protection of scheduled projects](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#password). This feature is in support of [HIPAA readiness](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | October 2022 | New topic on [Customer Managed Keys](/help/privacy/cmk.md). This feature is in support of [HIPAA readiness](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | October 2022 | New topic on [Customer Journey Analytics Audit Log](/help/privacy/audit-log.md). |
 | October 2022 | New topic on [Key metric summary](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html) visualization. |
@@ -287,7 +287,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | April 2021 | New documentation on support for scheduled projects in Workspace. |
 | April 2021 | New topics on the [enhanced Data Views experience](/help/data-views/data-views.md). |
 | April 2021 | New topics on [ingesting Google Analytics data](/help/use-cases/third-party/ga/overview.md) and [analyzing that data](/help/use-cases/third-party/ga/report.md). |
-| April 2021 | Added topic on [scheduled reports](/help/analysis-workspace/curate-share/t-schedule-report.md) in Workspace. |
+| April 2021 | Added topic on [scheduled reports](/help/analysis-workspace/export/t-schedule-report.md) in Workspace. |
 | April 2021 | New topic on [high-cardinality dimensions in Customer Journey Analytics](/help/components/dimensions/high-cardinality.md). |
 | **March 2021** | |
 | March 2021 | Added topic on support for [Analytics dashboards](/help/mobile-app/home.md) (mobile app). |
