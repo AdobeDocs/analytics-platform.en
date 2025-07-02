@@ -3,6 +3,7 @@ description: Factors that impact Workspace performance and optimizations you can
 title: Optimize Analysis Workspace Performance
 feature: Workspace Basics
 role: User, Admin
+exl-id: 226afef7-00da-4ac2-be4e-e19995621c61
 ---
 # Optimize Analysis Workspace performance
 
@@ -108,4 +109,3 @@ Additional factors that are not included in Help > Performance include:
 See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Tips to increase productivity](https://video.tv.adobe.com/v/31157?quality=12&learn=on){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
-
