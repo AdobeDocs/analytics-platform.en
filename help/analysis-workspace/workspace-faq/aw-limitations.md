@@ -1,6 +1,6 @@
 ---
 description: Learn about known limitations in Adobe Analysis Workspace and its related components
-title: Known limitations in Analysis Workspace
+title: Known Limitations In Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User

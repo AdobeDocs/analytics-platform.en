@@ -1,5 +1,5 @@
 ---
-title: What are components in Customer Journey Analytics?
+title: Components Overview
 description: Learn what components Customer Journey Analytics offers, and how you can use them in reporting.
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics

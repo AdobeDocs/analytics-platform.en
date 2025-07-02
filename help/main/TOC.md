@@ -242,10 +242,10 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Share projects](../analysis-workspace/curate-share/share-projects.md)
     + [Create shareable links](../analysis-workspace/curate-share/shareable-links.md)
     + [Read-only projects](../analysis-workspace/curate-share/view-only-projects.md)
-    + [Send and schedule](../analysis-workspace/export/t-schedule-report.md)
   + Export {#export}
     + [Overview](../analysis-workspace/export/export-project-overview.md)
     + [Download](../analysis-workspace/export/download-send.md)
+    + [Send and schedule](../analysis-workspace/export/t-schedule-report.md)
     + [Export to the cloud](../analysis-workspace/export/export-cloud.md)
   + Anomaly Detection {#anomaly-detection}
     + [Overview](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
@@ -258,7 +258,8 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [User preferences](../analysis-workspace/user-preferences.md)
   + Workspace FAQs and more {#workspace-faq}
     + [Frequently asked questions](../analysis-workspace/workspace-faq/faq.md)
-    + [Error messages](../analysis-workspace/workspace-faq/error-messages.md)
+    + [Optimize performance](../analysis-workspace/workspace-faq/optimizing-performance.md)
+    + [Error and troubleshooting](../analysis-workspace/workspace-faq/error-messages.md)
     + [Limitations](../analysis-workspace/workspace-faq/aw-limitations.md)
     + [Administration requirements](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
     + [Accessibility](../analysis-workspace/workspace-faq/aw-accessibility.md)
@@ -300,21 +301,20 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Components {#cja-components}
   + [Overview](../components/overview.md)
-  + [Use components in Analysis Workspace](../components/use-components-in-workspace.md)
+  + [Use components](../components/use-components-in-workspace.md)
   + [Add component descriptions](../components/add-component-descriptions.md)
   + Annotations {#annotations}
-    + [Annotations overview](../components/annotations/overview.md)
+    + [Overview](../components/annotations/overview.md)
     + [Create annotations](../components/annotations/create-annotations.md)
     + [Manage annotations](../components/annotations/manage-annotations.md)
     + [View annotations](../components/annotations/view-annotations.md)
-    + [Mobile annotations](../components/annotations/mobile-annotations.md)
-  + [Scheduled projects](../components/scheduled-projects-manager.md)
+    + [Mobile scorecard annotations](../components/annotations/mobile-annotations.md)
   + Audiences {#audiences}
     + [Audiences overview](../components/audiences/audiences-overview.md)
     + [Create and publish audiences](../components/audiences/publish.md)
     + [Manage audiences](../components/audiences/manage.md)
   + Dimensions {#dimensions}
-    + [Dimensions overview](../components/dimensions/overview.md)
+    + [Overview](../components/dimensions/overview.md)
     + [Preview dimensions](../components/dimensions/view-dimensions.md)
     + [Break down dimensions](../components/dimensions/t-breakdown-fa.md)
     + [Time-parting dimensions](../components/dimensions/time-parting-dimensions.md)
@@ -337,7 +337,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Use segments](/help/components/segments/seg-use.md)
   + Calculated metrics {#cja-calcmetrics}
     + [Overview](../components/calc-metrics/calc-metr-overview.md)
-    + Calculated metrics workflow {#cm-workflow}
+    + Workflow {#cm-workflow}
       + [Create calculated metrics](../components/calc-metrics/cm-workflow/cm-workflow.md)
       + [Build calculated metrics](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
       + [Find metrics](../components/calc-metrics/cm-workflow/cm-finding.md)
@@ -381,6 +381,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
     + [Edit component entries in the Data Dictionary](../components/data-dictionary/edit-entries-data-dictionary.md)
     + [Monitor Data Dictionary health](../components/data-dictionary/monitor-data-dictionary-health.md)
+  + [Scheduled projects](../components/scheduled-projects-manager.md)
 
 + Report Builder {#cja-reportbuilder}
   + [Overview](../report-builder/rb-overview.md)

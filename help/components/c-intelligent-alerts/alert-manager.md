@@ -1,6 +1,6 @@
 ---
-description: Create, edit, or delete alerts.
-title: Manage aletts
+description: Learm how to manage alerts.
+title: Manage Alerts
 feature: Workspace Basics
 role: User, Admin
 exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6

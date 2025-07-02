@@ -1,6 +1,6 @@
 ---
-description: Learn about the error messages and how to troubleshoot in Adobe Analysis Workspace
-title: Common errors and troubleshooting in Analysis Workspace
+description: Learn about errors and troubleshooting for Analysis Workspace.
+title: Errors In Troubleshooting In Analysis Workspace
 feature: FAQ
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
 role: User
