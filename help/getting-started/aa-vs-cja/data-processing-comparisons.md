@@ -16,15 +16,15 @@ In Adobe Analytics, report-time processing commonly represents a smaller amount 
 
 ![Adobe Analytics collection-time processing](../assets/aa-processing.png)
 
-In contrast, Customer Journey Analytics is designed to require minimal upfront collection-time processing before data being is organized and stored. The underlying architecture of Customer Journey Analytics is designed to work with the stored data at report-time and offers its powerful report-time processing functionality not only in  Workspace but also, even more importantly, through the definition of [components](/help/data-views/component-settings/overview.md) and [derived fields](/help/data-views/derived-fields/derived-fields.md) in your Data views. 
+In contrast, Customer Journey Analytics is designed to require minimal upfront collection-time processing before data is organized and stored. The underlying architecture of Customer Journey Analytics is designed to work with the stored data at report-time. Customer Journey Analytics offers its powerful report-time processing functionality not only in Analysis Workspace but also, even more importantly, through the definition of [components](/help/data-views/component-settings/overview.md) and [derived fields](/help/data-views/derived-fields/derived-fields.md) in your data views. 
 
 ![Customer Journey Analytics report-time processing](../assets/cja-processing.png)
 
 Understanding the differences in data processing for the various reporting features can be helpful in understanding which metrics are available where and why they may differ. 
 
-For example, since "visits" as a metric in Adobe Analytics is defined at data processing time, and "sessions" as a metric in Customer Journey Analytics is calculated at report time, the two metrics may differ based on the rules used for session definition inside the Customer Journey Analytics data view. 
+For example, *visits* is defined as a metric in Adobe Analytics at data processing time. And *sessions* is calculated as a metric in Customer Journey Analytics at report time. As a result, the two metrics may differ based on the rules used for session definition inside a Customer Journey Analytics data view. 
 
-Also, neither visits nor sessions as a metric is available in datasets created by the Analytics source connector and therefore would require you to define the session in your query logic in order to do comparisons.
+Also, visits and sessions as a metric are not available in datasets created by the Analytics source connector. And therefore would require you to define the session in your query logic to do comparisons.
 
 ## Terminology {#terms}
 
@@ -35,12 +35,12 @@ The table below defines terminology for the different types of processing logic 
 | Collection-time processing | Logic that is performed when data is being collected and processed, before being stored for reporting and analytics purposes. | This logic is 'baked into' historical data and generally cannot easily be changed. |
 | Report-time processing | Logic that is performed at the time a report is run. | This logic can be applied to future and historical data at report runtime in a non-destructive manner. |
 | Hit-level logic | Logic applied at a row-by-row level. | Examples: Processing rules, VISTA, certain marketing channel rules. |
-| Visit-level logic | Logic applied at the visit level. | Examples: Visit and session definition. |
-| Visitor-level logic | Logic applied at the person level. | Example: Cross-device/cross-channel person stitching. |
+| Visit-level logic | Logic that is applied at the visit level. | Examples: Visit and session definition. |
+| Visitor-level logic | Logic that is applied at the person level. | Example: Cross-device/cross-channel person stitching. |
 | Segment logic | Evaluation of event/visit/person (event/session/person) segment rules. | Example: People who bought red shoes. |
-| Calculated metrics | Evaluation of customer-created custom metrics which can be based on complex formulas,  including segments. | Example: number of people who bought red shoes. |
+| Calculated metrics | Evaluation of customer-created custom metrics. Calculated metrics can be based on complex formulas,  including segments. | Example: number of people who bought red shoes. |
 | Attribution logic | Logic to calculate attribution. | Example: eVar persistence. |
-| Component Settings | Applying customizations to metrics or dimensions, like attribution, behaviour, format, and others | Example: value bucketing to combine numeric values based on a range |
+| Component Settings | Applying customizations to metrics or dimensions, like attribution, behavior, format, and others | Example: value bucketing to combine numeric values based on a range |
 | Derived fields | Logic applies to schema or standard fields as part of defining components in a Data view. | Example: creating a new marketing channel dimension |
 
 {style="table-layout:auto"}
