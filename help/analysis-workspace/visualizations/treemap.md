@@ -1,5 +1,5 @@
 ---
-description: Displays hierarchical (tree-structured) data as a set of nested rectangles.
+description: Understand how to displays hierarchical (tree-structured) data as a set of nested rectangles.
 title: Treemap
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b

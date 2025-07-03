@@ -1,5 +1,5 @@
 ---
-title: Mobile Scorecard Annotations
+title: Mobile Annotations
 description: Learn how to surface annotations in Mobile scorecards.
 solution: Customer Journey Analytics
 feature: Components
@@ -7,7 +7,7 @@ exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
 role: User
 ---
 
-# Share Annotations in Mobile Scorecards
+# Mobile scorecard annotations
 
 You can display annotations that are created in Workspace in Mobile scorecards. Annotations in mobile scorecards allow you to share contextual data nuances and insights about your organization and campaigns.
 

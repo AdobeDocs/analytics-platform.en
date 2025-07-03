@@ -50,7 +50,7 @@ Using a calculated metric, you can apply that attribution to your web revenue, m
 
 ![Calculated metric](../../assets/calc-metric.png)
 
-Attribution IQ also lets you segment your data. You can see attribution against only specific sets of users, such as those who are using more than one device.
+Attribution also lets you segment your data. You can see attribution against only specific sets of users, such as those who are using more than one device.
 
 ![Segment](../../assets/filter.png)
 

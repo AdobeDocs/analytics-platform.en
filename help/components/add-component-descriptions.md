@@ -1,6 +1,6 @@
 ---
-description: Administrators can add descriptions for components using the data view.
-title: Add component descriptions
+description: Administrators can add descriptions for components in data view or using the data dictionary
+title: Add Component Descriptions
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877

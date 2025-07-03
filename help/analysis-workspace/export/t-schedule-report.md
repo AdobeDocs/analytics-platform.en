@@ -1,15 +1,15 @@
 ---
-description: Send an Analysis Workspace project by email or schedule it for delivery.
+description: Learn how to send an Analysis Workspace project directly or on a schedule for email delivery.
 keywords: Analysis Workspace
-title: Send reports to others by email
+title: Send And Schedule Projects
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
 ---
-# Send files to others
+# Send and schedule projects
 
-You can send Customer Journey Analytics reports as files to selected users by email. You can send files ad hoc, or you can configure files to be sent on a schedule. Files can be sent in CSV or PDF format.
+You can send Customer Journey Analytics projects as files to selected users by email. You can send files ad hoc, or you can configure projects to be sent on a schedule. Projects can be sent in CSV or PDF format.
 
 Any tags applied to the project are automatically applied to the export.
 
@@ -93,7 +93,7 @@ The password requirements conform to the Adobe standards, requiring a minimum of
 ### Password-protect a new scheduled project
 
 1. After you save your project, go to **[!UICONTROL Share]** > **[!UICONTROL Send file now]**, or **[!UICONTROL Share]** > **[!UICONTROL Send file on schedule]**.
-1. Follow the instructions above, under [Send file now](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#now) or [Send file on schedule](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#schedule).
+1. Follow the instructions above, under [Send file now](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#now) or [Send file on schedule](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#schedule).
 
 ### Password-protect an existing scheduled project 
 
@@ -108,6 +108,6 @@ When you password-protect an existing scheduled project, the project owner recei
 
 
 
-## Scheduled Projects manager {#manager}
+## Scheduled projects manager {#manager}
 
 Scheduled Analysis Workspace projects can be managed from the main interface, using **[!UICONTROL Components]** > **[!UICONTROL Scheduled Projects]**. For more information, see [Scheduled projects](/help/components/scheduled-projects-manager.md).

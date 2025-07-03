@@ -1,11 +1,11 @@
 ---
-title: Create hyperlinks in a freeform table
-description: Learn how to create hyperlinks for dimension items in a freeform table in Analysis Workspace
+title: Create Hyperlinks For Dimensions In A Freeform Table
+description: Learn how to create hyperlinks for dimension items in a freeform table in Analysis Workspace.
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
 ---
-# Create hyperlinks in a freeform table
+# Create hyperlinks
 
 You can create hyperlinks for dimension items to make them clickable within a freeform table in Analysis Workspace. 
 

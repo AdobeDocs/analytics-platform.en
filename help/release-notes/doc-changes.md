@@ -208,7 +208,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | **December 2022** |  |
 | December 16, 2022 | New topic on [managing your Customer Journey Analytics data usage](/help/technotes/estimate-usage.md). |
 | **October 2022** | |
-| October 2022 | New topic on [password protection of scheduled projects](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password). This feature is in support of [HIPAA readiness](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
+| October 2022 | New topic on [password protection of scheduled projects](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#password). This feature is in support of [HIPAA readiness](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | October 2022 | New topic on [Customer Managed Keys](/help/privacy/cmk.md). This feature is in support of [HIPAA readiness](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | October 2022 | New topic on [Customer Journey Analytics Audit Log](/help/privacy/audit-log.md). |
 | October 2022 | New topic on [Key metric summary](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html) visualization. |

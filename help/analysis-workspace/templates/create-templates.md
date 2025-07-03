@@ -1,6 +1,6 @@
 ---
-description: An overview of how to use default templates in Analysis Workspace.
-title: Use templates
+description: Learn how to create and manage templates in Analysis Workspace.
+title: Create And Manage Templates
 feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af

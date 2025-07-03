@@ -1,6 +1,6 @@
 ---
-description: Journey canvas overview
-title: Journey canvas
+description: Learn ho to use the journey canvas in Analysis Workspace.
+title: Journey Canvas Overview
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488

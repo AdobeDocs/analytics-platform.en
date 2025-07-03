@@ -10,7 +10,6 @@ user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Learn about Adobe Customer Journey Analytics and how to use Analysis Workspace with data from Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
 ---
-
 # Adobe Customer Journey Analytics Guide {#using}
 
 + [Adobe Customer Journey Analytics Guide](../getting-started/cja-landing.md)
@@ -42,7 +41,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Quick start guide](/help/getting-started/cja-b2b-quick-start-guide.md)
     + [Transition guide](/help/getting-started/cja-b2b-transition.md)
 
-+ Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
++ Upgrade and compare {#compare-aa-cja}
   + Upgrade to Customer Journey Analytics {#upgrade-to-cja}
     + [Get started](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
     + [Choose your upgrade path](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
@@ -92,7 +91,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Web SDK implementation options](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
       + [Configuring Adobe Analytics Web SDK for Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
       + [Use personalization with Adobe Journey Optimizer](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
-  + Comparison with Adobe Analytics {#cja-aa-comparison}
+  + Compare with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)
     + [Feature support](../getting-started/aa-vs-cja/cja-aa.md)
@@ -163,16 +162,18 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Perform advanced analysis](../analysis-workspace/perform-adv-analysis.md)
   + Projects {#build-workspace-project}
     + [Overview](../analysis-workspace/build-workspace-project/freeform-overview.md)
+    + [Quickly start projects](/help/analysis-workspace/build-workspace-project/starter-projects.md)
     + [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md)
     + [Open projects](/help/analysis-workspace/build-workspace-project/open-projects.md)
     + [Comment on projects](/help/analysis-workspace/build-workspace-project/comment-projects.md)
     + [Save projects](../analysis-workspace/build-workspace-project/save-projects.md)
+    + [Table of contents](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
     + Folders in Workspace {#workspace-folders}
-      + [About folders](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
-      + [Create folders and subfolders](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+      + [Overview](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+      + [Create folders](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
       + [Manage folders](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
-      + [Add or move projects to folders](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
-    + [Hotkeys (Shortcuts)](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
+      + [Add or move projects](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
+    + [Hotkeys](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
     + [Color palettes](../analysis-workspace/build-workspace-project/color-palettes.md)
     + [View density](../analysis-workspace/build-workspace-project/view-density.md)
   + Templates {#templates}
@@ -189,8 +190,8 @@ breadcrumb-title: Customer Journey Analytics Guide
         + [Column settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
         + [Row settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
         + [Dynamic and static items](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-      + [Filter and sort tables](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-      + [Workspace totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+      + [Filter and sort](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
+      + [Totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
     + Cohort table {#cohort-table}
       + [Overview](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
       + [Configure](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
@@ -222,11 +223,11 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Section header](/help/analysis-workspace/visualizations/section-header.md)
     + [Summary number and change](../analysis-workspace/visualizations/summary-number-change.md)
     + [Text](../analysis-workspace/visualizations/text.md)
-    + [Tree map](../analysis-workspace/visualizations/treemap.md)
+    + [Treemap](../analysis-workspace/visualizations/treemap.md)
     + [Venn](../analysis-workspace/visualizations/venn.md)
   + Panels {#panels}
     + [Overview](../analysis-workspace/c-panels/panels.md)
-    + [Blank panel](../analysis-workspace/c-panels/blank-panel.md)
+    + [Blank](../analysis-workspace/c-panels/blank-panel.md)
     + [Attribution](../analysis-workspace/c-panels/attribution.md)
     + [Experimentation](../analysis-workspace/c-panels/experimentation.md)
     + [Freeform](../analysis-workspace/c-panels/freeform-panel.md)
@@ -235,7 +236,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Media playback time spent](../analysis-workspace/c-panels/media-playback-time-spent.md)
     + [Next or previous item](../analysis-workspace/c-panels/next-previous.md)
     + [Quick insights](../analysis-workspace/c-panels/quickinsight.md)
-  + Curate, share and schedule projects {#curate-share}
+  + Curate and share {#curate-share}
     + [Overview](../analysis-workspace/curate-share/send-schedule-files.md)
     + [Curate projects](../analysis-workspace/curate-share/curate.md)
     + [Share projects](../analysis-workspace/curate-share/share-projects.md)
@@ -244,7 +245,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Export {#export}
     + [Overview](../analysis-workspace/export/export-project-overview.md)
     + [Download](../analysis-workspace/export/download-send.md)
-    + [Send to others](../analysis-workspace/export/t-schedule-report.md)
+    + [Send and schedule](../analysis-workspace/export/t-schedule-report.md)
     + [Export to the cloud](../analysis-workspace/export/export-cloud.md)
   + Anomaly Detection {#anomaly-detection}
     + [Overview](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
@@ -254,11 +255,11 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Overview](../analysis-workspace/c-forecast/forecasting.md)
     + [View forecasts](../analysis-workspace/c-forecast/view-forecasts.md)
     + [Statistical techniques](../analysis-workspace/c-forecast/statistics-forecasting.md)
-  + [Table of contents](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
   + [User preferences](../analysis-workspace/user-preferences.md)
   + Workspace FAQs and more {#workspace-faq}
     + [Frequently asked questions](../analysis-workspace/workspace-faq/faq.md)
-    + [Error messages](../analysis-workspace/workspace-faq/error-messages.md)
+    + [Optimize performance](../analysis-workspace/workspace-faq/optimizing-performance.md)
+    + [Error and troubleshooting](../analysis-workspace/workspace-faq/error-messages.md)
     + [Limitations](../analysis-workspace/workspace-faq/aw-limitations.md)
     + [Administration requirements](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
     + [Accessibility](../analysis-workspace/workspace-faq/aw-accessibility.md)
@@ -300,21 +301,20 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Components {#cja-components}
   + [Overview](../components/overview.md)
-  + [Use components in Analysis Workspace](../components/use-components-in-workspace.md)
+  + [Use components](../components/use-components-in-workspace.md)
   + [Add component descriptions](../components/add-component-descriptions.md)
   + Annotations {#annotations}
-    + [Annotations overview](../components/annotations/overview.md)
+    + [Overview](../components/annotations/overview.md)
     + [Create annotations](../components/annotations/create-annotations.md)
     + [Manage annotations](../components/annotations/manage-annotations.md)
     + [View annotations](../components/annotations/view-annotations.md)
-    + [Mobile annotations](../components/annotations/mobile-annotations.md)
-  + [Scheduled projects](../components/scheduled-projects-manager.md)
+    + [Mobile scorecard annotations](../components/annotations/mobile-annotations.md)
   + Audiences {#audiences}
     + [Audiences overview](../components/audiences/audiences-overview.md)
     + [Create and publish audiences](../components/audiences/publish.md)
     + [Manage audiences](../components/audiences/manage.md)
   + Dimensions {#dimensions}
-    + [Dimensions overview](../components/dimensions/overview.md)
+    + [Overview](../components/dimensions/overview.md)
     + [Preview dimensions](../components/dimensions/view-dimensions.md)
     + [Break down dimensions](../components/dimensions/t-breakdown-fa.md)
     + [Time-parting dimensions](../components/dimensions/time-parting-dimensions.md)
@@ -337,7 +337,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Use segments](/help/components/segments/seg-use.md)
   + Calculated metrics {#cja-calcmetrics}
     + [Overview](../components/calc-metrics/calc-metr-overview.md)
-    + Calculated metrics workflow {#cm-workflow}
+    + Workflow {#cm-workflow}
       + [Create calculated metrics](../components/calc-metrics/cm-workflow/cm-workflow.md)
       + [Build calculated metrics](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
       + [Find metrics](../components/calc-metrics/cm-workflow/cm-finding.md)
@@ -381,6 +381,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
     + [Edit component entries in the Data Dictionary](../components/data-dictionary/edit-entries-data-dictionary.md)
     + [Monitor Data Dictionary health](../components/data-dictionary/monitor-data-dictionary-health.md)
+  + [Scheduled projects](../components/scheduled-projects-manager.md)
 
 + Report Builder {#cja-reportbuilder}
   + [Overview](../report-builder/rb-overview.md)

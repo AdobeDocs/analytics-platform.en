@@ -1,15 +1,15 @@
 ---
-description: Break down dimensions and dimension items in Analysis Workspace.
+description: Learn how to break down dimensions and dimension items in Analysis Workspace.
 keywords: Analysis Workspace
-title: Break down dimensions
+title: Break Down Dimensions
 feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
 ---
-# Break down dimensions in Workspace
+# Break down dimensions
 
-You can break down your data in unlimited ways for your specific needs; build queries using relevant metrics, dimensions, segments, time lines, and other analysis breakdown values.
+You can break down your data in Analysis Workspace in unlimited ways for your specific needs; build queries using relevant metrics, dimensions, segments, time lines, and other analysis breakdown values.
 
 1. In a [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), from the context menu of one or more selected rows, select **[!UICONTROL Breakdown]** ![ChevronRight](/help/assets/icons/ChevronRight.svg).
 

@@ -1,6 +1,6 @@
 ---
-title: Dimensions overview
-description: Learn what dimensions are and how they are used in Customer Journey Analytics
+title: Dimensions Overview
+description: Learn what dimensions are and how they are used in Customer Journey Analytics.
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
 ---

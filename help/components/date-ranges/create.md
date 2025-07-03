@@ -1,6 +1,6 @@
 ---
-title: Create date ranges
-description: Create a date range for use in reporting.
+title: Create Date Ranges
+description: Understand how to create a date range that you can use in Analysis Workspace.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User

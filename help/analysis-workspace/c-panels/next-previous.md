@@ -1,13 +1,11 @@
 ---
-description: A panel that shows the next or previous dimension items for a specific dimension.
-title: Next or previous item panel
+description: Understand how to use the Next or previous item panel that shows the next or previous dimension items for a specific dimension.
+title: Next Or Previous Item Panel
 feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
 ---
 # Next or previous item panel {#next-or-previous-item-panel}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_button"
@@ -19,9 +17,6 @@ exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
 >title="Next or previous item"
 >abstract="Analyze what are the most common places visitors previously came from or go to next. Specify dimension, dimension item, the direction, and the container to use for the visualization."
 
-
-
-<!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 

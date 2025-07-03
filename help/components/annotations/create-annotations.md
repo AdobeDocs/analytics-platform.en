@@ -1,6 +1,6 @@
 ---
-title: Create annotations
-description: How to create annotations in Workspace.
+title: Create Annotations
+description: How to create annotations in Analysis Workspace.
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
@@ -35,7 +35,7 @@ To define the annotation, you use the [[!UICONTROL Annotation builder]](#annotat
 >[!CONTEXTUALHELP]
 >id="components_annotations_details"
 >title="Annotation details"
->abstract="Annotations enable you to effectively communicate contextual data nuances and insights to your organization. They let you tie calendar events to specific dimensions/metrics."
+>abstract="Annotations enable you to communicate contextual data nuances and insights to your organization effectively. Annotations let you tie calendar events to specific dimensions and metrics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,7 +44,7 @@ To define the annotation, you use the [[!UICONTROL Annotation builder]](#annotat
 >[!CONTEXTUALHELP]
 >id="components_annotations_scope"
 >title="Scope"
->abstract="Scope allows you to customize what data will be annotated. Calculated metrics and segments will not automatically inherit annotations applied to components used in their definitions. You may add new calculated metrics to the scope section of an existing annotation. New segments require a new annotation."
+>abstract="Scope allows you to customize what data is annotated. Calculated metrics and segments do not automatically inherit annotations applied to components used in their definitions. You may add new calculated metrics to the scope section of an existing annotation. New segments require a new annotation."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -56,11 +56,11 @@ The **[!UICONTROL Annotations builder]** dialog is used to create new or edit ex
 
 >[!TAB Annotation builder] 
 
-![Annotation details window showing fields and options described in the next section.](assets/annotation-builder.png)
+![Annotation details window showing fields and options described in the next section.](assets/annotation-builder.png){zoomable="yes"}
 
->[!TAB Create / Edit annotation] 
+>[!TAB  Edit annotation] 
 
-![Annotation details window showing fields and options described in the next section.](assets/create-edit-annotation.png)
+![Annotation details window showing fields and options described in the next section.](assets/create-edit-annotation.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -73,9 +73,9 @@ The **[!UICONTROL Annotations builder]** dialog is used to create new or edit ex
    | **[!UICONTROL Title]** ![Required](/help/assets/icons/Required.svg) | Name the annotation, for example, `Needs further investigation`. |
    | **[!UICONTROL Description]** | Provide a description for the annotation, for example, `We never expected such a fluctuation in numbers.`. |
    | **[!UICONTROL Tags]**|  Organize the annotation by creating or applying one or more tags. Start typing to find existing tags you can select. Or press **[!UICONTROL Enter]** to add a new tag. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a tag. |
-   | **[!UICONTROL Applied date]** ![Required](/help/assets/icons/Required.svg) | Select the date or date range that needs to be present for the annotation to be visible. When you create an annotation using the shortcut, the annotation defaults to a date range for just the day. When you create an annotation using a selection in a visualization, the annotation defaults to the date range based on date range from the panel the visualization belongs to. |
+   | **[!UICONTROL Applied date]** ![Required](/help/assets/icons/Required.svg) | Select the date or date range that needs to be present for the annotation to be visible. When you create an annotation using the shortcut, the annotation defaults to a date range for just the day. When you create an annotation using a selection in a visualization, the annotation defaults to the date range based on the date range for the panel the visualization belongs to. |
    | **[!UICONTROL Color]** | Apply a color to the annotation. The annotation appears in the project with the selected color. Color can be used to categorize annotations, such as public holidays, external events, tracking issues, etc. |
-   | **[!UICONTROL Scope]** | Drag and drop metrics from the component panel that trigger the annotation. For example People, Sessions and Events. Then drag and drop any dimensions or segments from the component panel that act as segments to determine whether to display or not to display the annotation. If you don't specify a scope, the annotation applies to all your data. <br/>You have two options:<ul><li>**[!UICONTROL Any of these metrics are present]**: Drag and drop up to 10 metrics that trigger the annotation to show.<br/>For example, the Revenue metric have stopped collecting data for a specific date range. Drag the Revenue metric into this box.</li><li>**[!UICONTROL With all of these segments]**: Drag and drop up to 10 dimensions or segments that segment whether the annotation shows.</li></ul><p><p>**Note:** Any annotation applied to a component that is then subsequently used as part of a calculated metric or segment definition does NOT automatically inherit the annotation. The desired calculated metric must also be added to the scope section to display the annotation. However, a new annotation should be created for any segment that you wish to annotate with the same information. For example, you apply an annotation to [!UICONTROL Orders] on a specific day. You then use [!UICONTROL Orders] in a calculated metric for the same date range. The new calculated metric does not automatically display the annotation for orders. Also add the calculated metric to the scope section for the annotation to display.|
+   | **[!UICONTROL Scope]** | Drag and drop metrics from the component panel that trigger the annotation. For example, People, Sessions and Events. Then drag and drop any dimensions or segments from the component panel that act as segments to determine whether to display or not to display the annotation. If you don't specify a scope, the annotation applies to all your data. <br/>You have two options:<ul><li>**[!UICONTROL Any of these metrics are present]**: Drag and drop up to 10 metrics that trigger the annotation to show.<br/>For example, the Revenue metric has stopped collecting data for a specific date range. Drag the Revenue metric into this box.</li><li>**[!UICONTROL With all of these segments]**: Drag and drop up to 10 dimensions or segments that segment whether the annotation shows.</li></ul><p><p>**Note:** Any annotation applied to a component that is then subsequently used as part of a calculated metric or segment definition does NOT automatically inherit the annotation. The desired calculated metric must also be added to the scope section to display the annotation. However, a new annotation should be created for any segment that you wish to annotate with the same information. For example, you apply an annotation to [!UICONTROL Orders] on a specific day. You then use [!UICONTROL Orders] in a calculated metric for the same date range. The new calculated metric does not automatically display the annotation for orders. Also add the calculated metric to the scope section for the annotation to display.|
    | **[!UICONTROL Apply to all data views]** | By default, the annotation applies to the originating data view. By checking this box, you can make the annotation apply to all data views in the company. |
 
    {style="table-layout:auto"}
