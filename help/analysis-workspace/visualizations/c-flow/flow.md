@@ -1,5 +1,5 @@
 ---
-description: Learn how to use the flow visualization in a Analysis Workspace.
+description: Learn how to use the flow visualization in Analysis Workspace.
 title: Flow Overview
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823

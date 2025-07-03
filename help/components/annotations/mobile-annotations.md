@@ -9,7 +9,7 @@ role: User
 
 # Mobile scorecard annotations
 
-You can display annotations that are created in Workspace in Mobile scorecards. Annotations in mobile scorecards allow you to share contextual data nuances and insights about your organization and campaigns.
+You can display annotations that are created in Analysis Workspace in Mobile scorecards. Annotations in mobile scorecards allow you to share contextual data nuances and insights about your organization and campaigns.
 
 
 ## Display annotations in Mobile scorecards

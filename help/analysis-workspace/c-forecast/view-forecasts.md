@@ -22,7 +22,7 @@ Forecasts are shown in the table as follows:
 ![Show forecast in table](assets/show-forecast-table.png)
 
 * The forecast value and percentage for each cell are displayed in **dark grey**.
-* To indicate a forecast value, a forecast symbol <img src="./assets/forecast.svg" alt="Forecast symbol" width=20/> is displayed in the upper-right corner of the cell.
+* To indicate a forecast value, a forecast symbol ![ForecastAnalytics](/help/assets/icons/ForecastAnalytics.svg) is displayed in the upper-right corner of the cell.
 
 
 ## View forecasts in a line chart
