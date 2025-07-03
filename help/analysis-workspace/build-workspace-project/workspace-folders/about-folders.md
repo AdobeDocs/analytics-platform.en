@@ -1,7 +1,7 @@
 ---
 description: Learn how to organize your projects in folders in Analysis Workspace.
 keywords: Analysis Workspace
-title: Folders overview
+title: Folders Overview
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User

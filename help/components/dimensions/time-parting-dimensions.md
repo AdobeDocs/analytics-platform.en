@@ -1,5 +1,5 @@
 ---
-description: Learn about how time-parting dimensions take the timestamp of collected events and breaks it into more meaningful dimensions, such as Hour of Day or Day of Week.
+description: Learn about how time-parting dimensions take the timestamp of collected events and breaks down these events into more meaningful dimensions, such as Hour of Day or Day of Week.
 title: Time-Parting Dimensions
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
