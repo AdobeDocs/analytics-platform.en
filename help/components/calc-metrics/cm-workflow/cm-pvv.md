@@ -8,7 +8,7 @@ exl-id: 2d1c4677-b07c-4eca-97b7-e5e4594daee1
 
 The following information explains how to create a simple *Page Views per Visits* metric.
 
-1. Start to build a metric, as described in [Build metrics](/help/components/c-calcmetrics/c-workflow/cm-workflow/c-build-metrics/cm-build-metrics.md).
+1. Start to build a metric, as described in [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 1. Name the metric `Page Views per Session` or something similar.
 1. Give the metric a user-friendly **[!UICONTROL Description]** to show what the metric is used for.
 1. Select the right **[!UICONTROL Format]**. For this example, choose **[!UICONTROL Decimal]**.
@@ -19,12 +19,12 @@ The following information explains how to create a simple *Page Views per Visits
 1. Then drag **[!UICONTROL Sessions]** from the **[!UICONTROL Metrics]** components and drop the metric underneath **[!UICONTROL Page Views]** (wait until the blue line appears before you drop the metric).
 1. Select the divide ![Divide](/help/assets/icons/Divide.svg) operator. (Divide is the default operator.) 
 1. You can see a **[!UICONTROL Preview]** of the metric while you are building the metric.
-1. [Product compatibility](../../../cm-compatibility.md) shows the calculated metric is cpmpatible everywhere in Customer Journey Analytics (excluding experimentation).
+1. **[!UICONTROL Product compatibility]** shows if the calculated metric is compatible everywhere in Customer Journey Analytics (excluding experimentation).
 
    ![Simple calculated metric](assets/simple-calculated-metric.png)
 1. Select **[!UICONTROL Save]**.
   
    Notice that the **[!UICONTROL Summary]** formula updates anytime you make a change to the metric definition.
 
-1. (Optional) To share, approve, (re-)tag, rename, or delete a metric, you can go to the [Calculated metrics manager](/help/components/c-calcmetrics/c-workflow/cm-workflow/cm-manager.md).
+1. (Optional) To share, approve, (re-)tag, rename, or delete a metric, you can go to the [Calculated metrics manager](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
