@@ -72,7 +72,3 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adding side-by-s
 
 >[!ENDSHADEBOX]
 
-
-## Adobe Analytics tools that do not support attribution
-
-Any tools that do not support the Analytics 2.0 API, such as [Legacy Report Builder](/help/analyze/legacy-report-builder/home.md), do not support Attribution.
