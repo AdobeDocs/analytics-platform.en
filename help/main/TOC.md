@@ -228,7 +228,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Venn](../analysis-workspace/visualizations/venn.md)
   + Panels {#panels}
     + [Overview](../analysis-workspace/c-panels/panels.md)
-    + [Blank](../analysis-workspace/c-panels/blank-panel.md)
+    + [Blank panel](../analysis-workspace/c-panels/blank-panel.md)
     + [Attribution](../analysis-workspace/c-panels/attribution.md)
     + [Experimentation](../analysis-workspace/c-panels/experimentation.md)
     + [Freeform](../analysis-workspace/c-panels/freeform-panel.md)
@@ -248,6 +248,12 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Download](../analysis-workspace/export/download-send.md)
     + [Send and schedule](../analysis-workspace/export/t-schedule-report.md)
     + [Export to the cloud](../analysis-workspace/export/export-cloud.md)
+  + Attribution {#attribution}
+    + [Attribution overview](../analysis-workspace/attribution/overview.md)
+    + [Model, container and lookback window](../analysis-workspace/attribution/models.md)
+    + [Algorithmic attribution](../analysis-workspace/attribution/algorithmic.md)
+    + [Best practices](../analysis-workspace/attribution/best-practices.md)
+    + [FAQ](../analysis-workspace/attribution/faq.md)
   + Anomaly Detection {#anomaly-detection}
     + [Overview](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
     + [View anomalies](../analysis-workspace/c-anomaly-detection/view-anomalies.md)

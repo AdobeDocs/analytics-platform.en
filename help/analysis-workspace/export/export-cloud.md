@@ -1,12 +1,12 @@
 ---
-description: Learn how to export an Analysis Workspace project to a cloud location.
+description: Learn how to export a full table to a cloud location.
 keywords: Analysis Workspace
-title: Export Customer Journey Analytics reports to the cloud
+title: Export Full Tables To The Cloud
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
 ---
-# Export Customer Journey Analytics reports to the cloud {#full-table-export}
+# Export full tables to the cloud {#full-table-export}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -17,7 +17,7 @@ role: User
 
 <!-- markdownlint-enable MD034 -->
 
-You can export Workspace full tables from Customer Journey Analytics and send exports to designated cloud destinations. 
+You can export Analysis Workspace full tables from Customer Journey Analytics and send the exports to designated cloud destinations. 
 
 Other methods of exporting Customer Journey Analytics reports are also available, as described in [Export overview](/help/analysis-workspace/export/export-project-overview.md).
 
@@ -45,7 +45,7 @@ Use the following process when exporting full tables to the cloud:
 
 ![The full table export process described in steps 1 through 4.](assets/export-full-table-process.png)
 
-## Export full tables from Analysis Workspace {#export-from-workspace}
+## Export full tables  {#export-from-workspace}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -64,9 +64,7 @@ To export full tables from Analysis Workspace:
 
 1. If you haven't already, configure an export account and location, as described in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md).
 
-1. In Analysis Workspace, right-click the Freeform table that contains the data that you want to export. 
-
-1. Select [!UICONTROL **Export full table**].
+1. In Analysis Workspace, select [!UICONTROL **Export full table**] from the context menu of a freeform table.
 
    ![The Freeform table drop-down menue with Export full table highlighted.](assets/export-full-table.png)
 
@@ -77,7 +75,7 @@ To export full tables from Analysis Workspace:
    | Name | Specify a name for the export. This name displays in the list of exports. | 
    | Tags | You can apply an existing tag to the export or you can create a new tag and apply it. <p>To apply an existing tag to the export, select any tags from the drop-down menu. Any tags in your company are available to apply<!-- double-check this -->.</p> <p>To create a new tag, type the name of the new tag, then press Enter.</p><p>Consider the following when applying tags to an export: <ul><li>Tags that you apply can be filtered on or searched for in the exports table.</li> <li>Tags applied to a project are not automatically applied when exporting a full table, as described in "Configure columns on the exports page" in [Manage exports](/help/components/exports/manage-exports.md). (Alternatively, when [scheduling a full project for export](/help/analysis-workspace/export/t-schedule-report.md), any tags applied to the project are automatically applied to the export.)  <!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> | 
    | Description | Add a description to the export. You can choose to view descriptions as a column in the [Exports page](/help/components/exports/manage-exports.md) when viewing exports. |
-   | Data view | Select the data view that contains the components that you want to include in the export. The Data view drop-down menu is located in the upper-left corner of the dialog and can be identified by the data view icon![data view icon](assets/data-view-icon.png).  <p>**Note:** If you choose a data view that is missing components that are already included in your data table, then you are prompted to clear the data table and re-create it using components that are included in the selected data view. </p> | 
+   | Data view | Select the data view that contains the components that you want to include in the export. The Data view drop-down menu is located in the upper-left corner of the dialog and can be identified by the data view icon ![Data](/help/assets/icons/Data.svg).  <p>**Note:** If you choose a data view that is missing components that are already included in your data table, then you are prompted to clear the data table and re-create it using components that are included in the selected data view. </p> | 
    | Lookback window | Select the reporting time-frame to include in each export file. Options include [!UICONTROL **Today**], [!UICONTROL **Yesterday**], [!UICONTROL **Last 7 days**], [!UICONTROL **Last 30 days**], [!UICONTROL **This week**], and [!UICONTROL **This month**]. <p>This option is not displayed when the [!UICONTROL **Export frequency**] is set to [!UICONTROL **Send now (one-time)**]. | 
    | Data table | Displays the Freeform table that you are exporting. You can modify the data table by dragging components from the left panel to the table. The table dynamically updates as you add components to the canvas.  <p>Any segments that were applied to the full table in the project appear at the top of each individual column in the table.</p> |
    | Clear | Clears the contents of the data table. This allows you to start building a new table directly within the New full table export dialog.  | 
@@ -101,7 +99,7 @@ To export full tables from Analysis Workspace:
 
 After data is exported from Analysis Workspace, you can edit, re-export, duplicate, tag, or delete existing exports, as described in [Manage exports](/help/components/exports/manage-exports.md). 
 
-## Advantages of exporting to the cloud {#advantages}
+## Advantages of full table export {#advantages}
 
 Exporting Customer Journey Analytics data to the cloud allows you to: 
 
@@ -123,11 +121,7 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
 
 * Export tables that include multiple dimensions.
 
-## Requirements and unsupported features {#export-requirements}
-
-This section details the minimum requirements and unsupported features you should take into account when you export data.
-
-### Minimum requirements
+## Minimum requirements
 
 Make sure that your tables, your environment, and your permissions meet the following requirements:
 
@@ -142,7 +136,7 @@ Make sure that your tables, your environment, and your permissions meet the foll
   >  Users who are assigned the [Product Admin role](/help/technotes/access-control.md#product-admin-role) always have access to export full tables; these users do not need to be assigned the [!UICONTROL **Full Table Export**] permission.
 
 
-### Unsupported features
+## Unsupported features
 
 The following features are not supported and are automatically removed from full-table exports:
 
@@ -158,7 +152,7 @@ The following features are not supported and are automatically removed from full
 * Dimensions in the first breakdown are converted and added as a secondary dimension in the row of the exported table; any other breakdowns are not included in the table
 * Sorting is not supported for most data sets; data might be sorted for small data sets
 
-### Unsupported components
+## Unsupported components
 
 The following components are not supported, and Analysis Workspace prompts you to remove them from your table when performing a full-table export:
 
@@ -179,7 +173,7 @@ The following components are not supported, and Analysis Workspace prompts you t
   * Date ranges
   * Segments
 
-### Attribution behavior
+## Attribution behavior
 
 Full table export supports calculated metrics that use a non-default attribution model (as described in the *Use non-default attribution model* section in [Column settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)). 
 
@@ -197,7 +191,7 @@ If a non-default attribution model is being used in a report, the allocation mod
    >
    >Multi-dimensional reports are supported only when exporting data to the cloud, as described in this article.
 
-## Comparison of Full Table Export (in Customer Journey Analytics) to Data Warehouse (in Adobe Analytics) {#comparison}
+## Comparison to Data Warehouse
 
 If you previously used Data Warehouse to export Adobe Analytics data, the following table can help you understand the differences between exporting full tables in Customer Journey Analytics versus exporting data with Data Warehouse in Adobe Analytics.
 

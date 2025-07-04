@@ -17,7 +17,7 @@ role: User
 
 You can share an Analysis Workspace project with the following types of people:
 
-* Users and groups in your organization who have access to Adobe Customer Journey Analytics 
+* Users and groups in your organization who have access to Customer Journey Analytics 
 
   You can share Edit, Duplicate, or View access
 
