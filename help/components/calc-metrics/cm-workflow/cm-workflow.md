@@ -1,6 +1,6 @@
 ---
 description: Learn how to create calculated metrics.
-title: Create calculated metrics
+title: Create Calculated Metrics
 feature: Calculated Metrics
 exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
 ---
@@ -30,7 +30,7 @@ Before you create calculated metrics, carefully consider the following workflow:
 
 | Workflow Task | Description |
 | --- | --- |
-| Plan calculated metrics | Especially for metrics that are going to be officially "approved", it makes sense to outline which calculated metrics will be widely used and how they will be defined. |
+| Plan calculated metrics | Especially for metrics that are going to be officially approved, planning makes sense to outline which calculated metrics will be widely used and how they will be defined. |
 | [Build](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) calculated metrics | Build and edit calculated and advanced calculated metrics for use in [!DNL Customer Journey Analytics] components. |
 | [Tag](cm-tagging.md) calculated metrics | Tag calculated metrics for ease of organization and sharing. See how to plan and assign tags for simple and advanced searches and organization. |
 | [Approve](cm-approving.md) calculated metrics | Approve calculated metrics to make them canonical. |

@@ -1,6 +1,6 @@
 ---
-title: Manage segments
-description: Learn how to manage segments in Customer Journey Analytics
+description: Understand how to use the segment manager to manage segments, such as share, filter, tag, approve, copy, delete segments, and mark segments as favorites.
+title: Manage Segments
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters, Segments
 role: User
@@ -52,7 +52,7 @@ You can action on segments using the action bar ➋. The action bar contains the
 | ![Search](/help/assets/icons/Search.svg) [!UICONTROL *Search by title*] | When no segment is selected in the list, search for segments using this search field. |
 | ![Label](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tag the selected segments. In the **[!UICONTROL Tag Segment]** dialog, select or de-select the tags for the selected segments. Select **[!UICONTROL Save]** to save the tags for the selected segments. See [Tag segments](/help/components/segments/seg-tag.md) for more information.|
 | ![Share](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | Share the selected segments. In the **[!UICONTROL Share Segment]** dialog, you can ![Search](/help/assets/icons/Search.svg) *Search individuals or groups* or you can select **[!UICONTROL Organization]** or **[!UICONTROL Groups]**. Select **[!UICONTROL Save]** to save share details for the selected segments. See [Share segments](seg-share.md) for more information. |
-| ![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Delete the selected segments. You are prompted for a confirmation. |
+| ![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Delete the selected segments. You are prompted for a confirmation. <br/>When you delete a segment, be aware that: <ul><li>Scheduled reports and projects that have this segment applied continue to work normally.</li><li> Scheduled reports do not update when you edit a segment with the same name.</li> </ul> |
 | ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Rename]** | Rename a single selected segment. When selected, you can rename the segment inline. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Approve the selected segments. See [Approve segments](seg-approve.md) for more information. | 
 | ![Copy](/help/assets/icons/Copy.svg)  **[!UICONTROL Copy]** | Copy the selected segment. New segments are created with the same name and suffix `(Copy)`. | 

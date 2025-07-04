@@ -1,6 +1,6 @@
 ---
-description: You can set up a workflow that includes approving segments for various levels of application, for specific departments or groups, and consistent with reporting policies.
-title: Approve segments
+description: Understand how you, as an administrator, can approve segmentss.
+title: Approve Segments
 feature: Filters, Segments
 exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
 role: User
@@ -20,4 +20,4 @@ To unapprove segments:
 1. From the action bar, select ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Unapprove]**.
    
 
-You can segment your list of segments by approved segments. Select **[!UICONTROL Other segments]** from the ![Segment](/help/assets/icons/Filter.svg) **[!UICONTROL Segment]** panel and select **[!UICONTROL Approved]**. See [Segment the list of segments](/help/components/segments/seg-filter.md) for more information.
+You can segment your list of segments by approved segments. Select **[!UICONTROL Other segments]** from the ![Segment](/help/assets/icons/Filter.svg) **[!UICONTROL Segment]** panel and select **[!UICONTROL Approved]**. See [Filter the list of segments](/help/components/segments/seg-filter.md) for more information.

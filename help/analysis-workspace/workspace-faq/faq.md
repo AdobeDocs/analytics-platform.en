@@ -1,7 +1,7 @@
 ---
-description: Workspace FAQs
+description: Get answers on common questions about Analysis Workspace.
 title: Frequently Asked Questions
-feature: FAQ
+feature: Workspace Basics
 exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
 role: User
 ---

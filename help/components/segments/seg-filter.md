@@ -1,6 +1,6 @@
 ---
-description: Filter by tags, owners, and other filters (Show All, Mine, Shared with me, Favorites, and Approved.)
-title: Filter the list of segments
+description: Learn how to filter segments by tags, owners, and other filters.
+title: Filter Segments
 feature: Filters, Segments
 exl-id: 25e617da-8249-4332-970a-c2ef00bf42e3
 role: User
