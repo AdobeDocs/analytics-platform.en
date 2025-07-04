@@ -1,5 +1,5 @@
 ---
-description: Use the map visualization to plot data on a geographic map visualization
+description: Use the map visualization to plot data on a geographic map visualization.
 title: Map
 feature: Visualizations
 role: User, Admin

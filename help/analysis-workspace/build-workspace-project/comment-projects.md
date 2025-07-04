@@ -1,5 +1,5 @@
 ---
-description: Learn how to comment on a project in Analysis Workspace.
+description: Learn how to comment on a project in Analysis Workspace
 title: Add And Manage Comments In Projects
 feature: Workspace Basics
 role: User

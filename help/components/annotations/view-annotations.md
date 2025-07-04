@@ -1,6 +1,6 @@
 ---
 title: View Annotations
-description: How to view annotations in Analysis Workspace.
+description: Learn how to view annotations in Analysis Workspace.
 role: User
 feature: Components
 exl-id: c0e4fb37-b20c-463c-b29a-310ca3adb2c7

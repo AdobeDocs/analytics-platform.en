@@ -1,6 +1,6 @@
 ---
 title: Manage Annotations
-description: How to manage annotations in Analysis Workspace.
+description: Learn how to manage annotations in Workspace.
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User

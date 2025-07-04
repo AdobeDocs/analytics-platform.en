@@ -5,7 +5,7 @@ feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
 ---
-# Summary number and Summary change
+# Summary number and change
 
 >[!BEGINSHADEBOX]
 

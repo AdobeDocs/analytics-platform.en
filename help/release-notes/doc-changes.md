@@ -13,6 +13,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **July 2025** | |
+| Debugger | New article on how to enable, use and disable the project debugger in Analysis Workspace. |
 | **June 2025** | |
 | New shortcut actions | New keyboard shortcuts in Analysis Workspace now allow you to [move Workspace panels](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#move-panel-actions) up and down in a project.  | 
 | **May 2025** | |

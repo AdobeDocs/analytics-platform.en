@@ -5,7 +5,7 @@ feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
 ---
-# Use components in Analysis Workspace
+# Use components in a project
 
 Components make up the actual data of any project in Analysis Workspace. Components consist of dimensions, metrics, segments, and date ranges. You can add components to a project by dragging them into visualizations or panels.
 
