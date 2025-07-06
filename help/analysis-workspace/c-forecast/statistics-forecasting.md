@@ -1,11 +1,11 @@
 ---
-description: Forecasting in Analysis Workspace uses a series of advanced statistical techniques to determine forecast values.
-title: Statistical techniques used in forecasting
+description: Learn about how forecasting in Analysis Workspace uses a series of advanced statistical techniques to determine forecast values.
+title: Statistical Techniques
 feature: Visualizations
 role: User
 exl-id: f042a6dd-6af5-4bdd-afc9-07546d8ded6e
 ---
-# Statistical techniques used in forecasting service
+# Statistical techniques
 
 The forecasting service currently supports Prophet and has been shown to work efficiently and reliably for most data. Prophet is a widely used open-source forecasting package developed by Meta. It decomposes data into trends, seasonalities, and events components. The Prophet model is efficient and scales well to many forecasting applications. Besides, the model works robustly against outliers and missing data.  
  

@@ -1,6 +1,6 @@
 ---
-description: Learn about metric type and attribution
-title: Metric type and Attribution
+description: Learn about metric type and attribution.
+title: Metric Type And Attribution
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
 ---

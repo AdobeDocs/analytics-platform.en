@@ -1,6 +1,6 @@
 ---
-description: The Calculated metric manager allows you to share, filter, tag, approve, copy, delete, and marking as favorites.
-title: Calculated metric manager
+description: Learn how to share, filter, tag, approve, copy, delete calculated metrics, and mark calculated metrics as favorites.
+title: Manage Calculated Metrics
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
 ---

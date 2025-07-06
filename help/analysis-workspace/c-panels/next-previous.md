@@ -1,5 +1,5 @@
 ---
-description: Understand how to use the Next or previous item panel that shows the next or previous dimension items for a specific dimension.
+description: Understand how to use the Next or previous item panel that shows the next or previous items for a specific dimension.
 title: Next Or Previous Item Panel
 feature: Panels
 role: User, Admin

@@ -1,6 +1,6 @@
 ---
-description: How to use segments to a report.
-title: Use segments
+description: Learn how to use segments in Analysis Workspace.
+title: Use Segments
 feature: Filters, Segments
 role: User
 exl-id: 3d54dd03-96bf-4551-a523-fb6729eb09cb
