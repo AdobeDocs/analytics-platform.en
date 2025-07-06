@@ -290,7 +290,7 @@ Identify persons that visited one page then explicitly did not visit a set of ot
 
 #### [!UICONTROL Exclude] [!UICONTROL Or]
 
-Identify persons that visited one page then explicitly did not visit any page of a set of pages, but did visit yet another page. For example, persons that visited the Home Page, did not visit the Men and the Women page, but did visit the Kids page.
+Identify persons that visited one page then explicitly did not visit any page of a set of pages, but did visit yet another page. For example, persons that visited the Home Page and did not visit the Men and the Women page, but did visit the Kids page.
 
 ![Logic group exclude and](assets/logicgroup-exclude-or.png)
 
