@@ -926,7 +926,7 @@ Returns the difference between two dates or two date-time fields.
 
 | Input Data Type | Input | Included Operators | Limitations | Output |
 |---|---|---|---|---|
-| <ul><li>Date</li><li>DateTime</li></ul> | <ul><li>[!UICONTROL Scope]<ul><li>Person</li><li>Session</li></ul></li><li>[!UICONTROL Value]:<ul><li>Date</li><li>Date-Time</li><li>Static Date (user entered)</li><li>Static DateTime (user entered)</li><li>Dynamic Date<ul><li>Today</li></ul></li><li>Dynamic DateTime<ul><li>Now</li></ul></li></ul></li><li>[!UICONTROL Granularity]:<ul><li>Seconds</li><li>Minutes</li><li>Hours</li><li>Days</li><li>Weeks</li><li>Months</li><li>Quarters</li><li>Years</li></ul></li><li>For each Date or DateTime return:<ul><li>First (within session or person)</li><li>Last (within session or person)</li></ul></li></ul> | <p>N/A</p>| <p>2 functions per derived field</p> | <p>New derived field</p> |
+| <ul><li>Date</li><li>DateTime</li></ul> | <ul><li>[!UICONTROL Scope]<ul><li>Event</li><li>Session</li><li>Person</li></ul></li><li>[!UICONTROL Value]:<ul><li>Date</li><li>Date-Time</li><li>Static Date (user entered)</li><li>Static DateTime (user entered)</li><li>Dynamic Date<ul><li>Today</li></ul></li><li>Dynamic DateTime<ul><li>Now</li></ul></li></ul></li><li>[!UICONTROL Granularity]:<ul><li>Seconds</li><li>Minutes</li><li>Hours</li><li>Days</li><li>Weeks</li><li>Months</li><li>Quarters</li><li>Years</li></ul></li><li>For each Date or DateTime return:<ul><li>First (within session or person)</li><li>Last (within session or person)</li></ul></li></ul> | <p>N/A</p>| <p>2 functions per derived field</p> | <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
