@@ -1,7 +1,7 @@
 ---
 description: Learn how to create and configure a cohort tabe and run a cohort analysis report in Analysis Workspace.
 keywords: Analysis Workspace
-title: Configure A Cohort Table
+title: Configure a Cohort Table
 feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
 role: User
