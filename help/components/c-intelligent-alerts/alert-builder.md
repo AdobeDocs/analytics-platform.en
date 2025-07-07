@@ -31,9 +31,11 @@ To create an alert:
 
 1. In Customer Journey Analytics, select **[!UICONTROL Components]** > **[!UICONTROL Alerts]**. In the [Alerts manager](alert-manager.md), select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** to create a new alert, or select any of the alerts listed to modify an existing alert. 
 
-   The [Alert builder](#alert-builder) interface displays.
+   
 
-1. Select **[!UICONTROL Save]** to save the alert. Select **[!UICONTROL Save as]** to save a copy of the alert.
+1. In Analysis Workspace, in a [freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), select **[!UICONTROL Create alert from selection]**.
+
+The [Alert builder](#alert-builder) interface displays. When you create an alert from a selection in a freeform table, the alert builder is populated with the metrics you have selected.
 
 
 ## Alert builder
