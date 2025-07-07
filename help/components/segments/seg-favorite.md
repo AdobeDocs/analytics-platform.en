@@ -1,6 +1,6 @@
 ---
-description: Marking segments as favorites is another way to organize them for ease of use.
-title: Mark segments as favorites
+description: Learn how to mark segments as favorites as another way to organize segments for ease of use.
+title: Mark Segments As Favorite
 feature: Filters, Segments
 exl-id: b13457dd-06e5-4316-af7e-edcf4ee46408
 role: User

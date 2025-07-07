@@ -1,6 +1,6 @@
 ---
-description: Describes how to copy a segment in the Segment manager
-title: Copy segments
+description: Understand how to copy a segment in the Segment manager
+title: Copy Segments
 feature: Filters, Segments
 exl-id: a64737bd-5d5b-4e85-95ff-eb1d90b95e18
 role: User

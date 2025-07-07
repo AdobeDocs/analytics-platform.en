@@ -1,6 +1,6 @@
 ---
 title: Components Overview
-description: Learn what components Customer Journey Analytics offers, and how you can use them in reporting.
+description: Learn what components Adobe Analytics offers, and how you can use component in Analysis Workspace.
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components

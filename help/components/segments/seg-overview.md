@@ -1,5 +1,5 @@
 ---
-title: Segmentation overview
+title: Segmentation Overview
 description: Understand what segments are used for and how to create a simple segment.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters, Segments

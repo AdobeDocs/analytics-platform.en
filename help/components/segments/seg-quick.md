@@ -1,6 +1,6 @@
 ---
-description: Use quick segments in Analysis Workspace for Customer Journey Analytics
-title: Quick segments
+description: Learn how to use quick segments in Analysis Workspace.
+title: Quick Segments
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309

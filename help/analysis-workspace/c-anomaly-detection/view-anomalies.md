@@ -1,6 +1,6 @@
 ---
-description: Understand how you can view and analyze data anomalies contextually, within Analysis Workspace.
-title: Anomaly Detection Overview
+description: Understand how you can view and analyze data anomalies within Analysis Workspace.
+title: View Anomalies
 feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
 role: User
