@@ -21,7 +21,7 @@ role: Admin
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_datemath"
 >title="Date math"
->abstract="This function provides the ability the ability to return the difference between two date or date-time fields."
+>abstract="This function provides the ability to return the difference between two date or date-time fields."
 
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_typecast"
@@ -912,11 +912,6 @@ You define an `Origin - Destination` derived field. You use the [!UICONTROL CONC
 
 ### Date Math {#datemath}
 
->[!CONTEXTUALHELP]
->id="dataview_derivedfields_datemath"
->title="Date Math"
->abstract="This function provides the ability to return the difference between tow dates or two date-time fields."
-
 Returns the difference between two dates or two date-time fields.
 
 +++ Details
@@ -926,71 +921,30 @@ Returns the difference between two dates or two date-time fields.
 
 | Input Data Type | Input | Included Operators | Limitations | Output |
 |---|---|---|---|---|
-| <ul><li>Date</li><li>DateTime</li></ul> | <ul><li>[!UICONTROL Scope]<ul><li>Event</li><li>Session</li><li>Person</li></ul></li><li>[!UICONTROL Value]:<ul><li>Date</li><li>Date-Time</li><li>Static Date (user entered)</li><li>Static DateTime (user entered)</li><li>Dynamic Date<ul><li>Today</li></ul></li><li>Dynamic DateTime<ul><li>Now</li></ul></li></ul></li><li>[!UICONTROL Granularity]:<ul><li>Seconds</li><li>Minutes</li><li>Hours</li><li>Days</li><li>Weeks</li><li>Months</li><li>Quarters</li><li>Years</li></ul></li><li>For each Date or DateTime return:<ul><li>First (within session or person)</li><li>Last (within session or person)</li></ul></li></ul> | <p>N/A</p>| <p>2 functions per derived field</p> | <p>New derived field</p> |
+| <ul><li>Date</li><li>Date-time</li></ul> | <ul><li>[!UICONTROL Scope]<ul><li>Event</li><li>Session</li><li>Person</li></ul></li><li>[!UICONTROL Value]:<ul><li>Date</li><li>Date-Time</li><li>Static Date (user entered)</li><li>Static Date-time (user entered)</li><li>Dynamic Date<ul><li>Today</li></ul></li><li>Dynamic Date-time<ul><li>Now</li></ul></li></ul></li><li>[!UICONTROL Granularity]:<ul><li>Seconds</li><li>Minutes</li><li>Hours</li><li>Days</li><li>Weeks</li><li>Months</li><li>Quarters</li><li>Years</li></ul></li><li>For each Date or Date-time return:<ul><li>First (within session or person)</li><li>Last (within session or person)</li></ul></li></ul> | <p>N/A</p>| <p>2 functions per derived field</p> | <p>New derived field</p> |
 
 {style="table-layout:auto"}
 
 
 ## Use case 1 {#datemath-uc1}
 
- As the marketing analyst of an hotel company you would like to understand the difference of the number of days between a user's check-in dates and booking dates over the last week.
+ As the marketing analyst of an hotel company you would like to understand the difference of the number of days between  customers check-in dates and booking dates over the last week.
 
-### Data before {#datemath-uc1-databefore}
-
-<!--
-| Booking Confirmation ID | Revenue |
-|----|---:|
-| ABC123456789 | 359 |
-| ABC123456789 | 359 |
-| ABC123456789 | 359 |
-
-{style="table-layout:auto"}
--->
 
 ### Derived field {#datemath-uc1-derivedfield}
 
-<!--
-You define a `Booking Confirmation` derived field. You use the [!UICONTROL DEDUPLICATE] function to define a rule to deduplicate the [!UICONTROL Value] [!DNL Booking] for [!UICONTROL Scope] [!DNL Person] using [!UICONTROL Deduplication ID] [!UICONTROL Booking Confirmation ID]. You select [!UICONTROL Keep first instance] as [!UICONTROL Value to keep].
+You define a `Days between booking and check-in` derived field. You use the [!UICONTROL DATE MATH] function to define a rule to calculate the days for [!UICONTROL Scope] [!DNL Person] between the [!UICONTROL Booking Date] and [!UICONTROL Check-in Date]. You select [!UICONTROL Day] as [!UICONTROL Granularity]. And you select [!UICONTROL Return the last] for both [!UICONTROL Booking Date] and [!UICONTROL Check-in Date] to ensure the last person scoped value is used in the calculation.
 
-![Screenshot of the Concatenate rule](assets/deduplicate-1.png)
--->
+![Screenshot of the Concatenate rule](assets/datemath-1.png)
 
-### Data after {#datemath-uc1-dataafter}
-
-<!--
-| Booking Confirmation ID | Revenue |
-|----|---:|
-| ABC123456789 | 359 |
-| ABC123456789 | 0 |
-| ABC123456789 | 0 |
-
-{style="table-layout:auto"}
--->
 
 ## Use case 2 {#datemath-uc2}
 
-As a marketing analyst of a software company you want to understand how long a customer has been signed up. You want to take a profile field, like subscription start date, and compare it to today's date, to get the number of days.
-
-### Data before {#datemath-uc2-databefore}
-
-<!--
-| Visitor ID | Marketing Channel | Events |
-|----|---|---:|
-| ABC123 | paid search | 1 |
-| ABC123 | paid search | 1 |
-| ABC123 | paid search | 1 |
-| DEF123 | email | 1 |
-| DEF123 | email | 1 |
-| JKL123 | natural search | 1 |
-| JKL123 | natural search | 1 |
-
-{style="table-layout:auto"}
--->
+As a marketing analyst of a brick and mortar shop you want to understand how many days ago was the last visit of a customer to the store. You use geolocation functionality within a mobile app and beacons in the shop to capture physical visits of customers.
 
 ### Derived field {#datemath-uc2-derivedfield}
 
-<!--
-You define a new `Tracking Code (deduplicated)` derived field. You use the [!UICONTROL DEDUPLICATE] function to define a rule to deduplicate the [!UICONTROL Tracking Code] with a [!UICONTROL Deduplication scope] of [!UICONTROL Session] and [!UICONTROL Keep first instance] as the [!UICONTROL Value to keep].
+You define a new `Days Since Visit To Shop` derived field. You use the [!UICONTROL DATE MATH] function to define a rule to calculate the days between a Custom Date-Time ( which you specify in [!UICONTROL Date]) and the [!UICONTROL Local Time] with a [!UICONTROL Deduplication scope] of [!UICONTROL Person]. And you select [!UICONTROL Return the last] to ensure the last person scoped value for [!UICONTROL Local time] is used in the calculation.
 
 ![Screenshot of the Concatenate rule](assets/deduplicate-2.png)
 -->
