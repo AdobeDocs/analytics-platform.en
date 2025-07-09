@@ -8,7 +8,7 @@ exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
 ---
 # BI extension use cases
 
-This article documents how to accomplish a number of use cases using the Customer Journey Analytics BI extension. Each use case explains the Customer Journey Analytics functionality, followed with details for each of the BI tools supported:
+This article documents how to accomplish a number of use cases (15) using the Customer Journey Analytics BI extension. Each use case explains the Customer Journey Analytics functionality, followed with details for each of the BI tools supported:
 
 * **Power BI Desktop**. The version used is 2.137.1102.0 64-bit (October 2024).
 * **Tableau Desktop**. The version used is 2024.1.5 (20241.24.0705.0334) 64-bit.
