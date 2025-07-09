@@ -937,6 +937,7 @@ In this use case, you want to display a table and simple bar visualization that 
 An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 
 ![Customer Journey Analytics Single dimension ranked visualization](assets/cja-single-dimension-ranked.png){zoomable="yes"}
+
 +++
 
 +++ BI tools
