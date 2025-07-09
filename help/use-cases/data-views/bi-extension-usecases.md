@@ -8,7 +8,7 @@ exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
 ---
 # BI extension use cases
 
-This article documents how to accomplish a number of use cases (15) using the Customer Journey Analytics BI extension. Each use case explains the Customer Journey Analytics functionality, followed with details for each of the BI tools supported:
+This article documents how to accomplish a number of use cases using the Customer Journey Analytics BI extension. Each use case explains the Customer Journey Analytics functionality, followed with details for each of the BI tools supported:
 
 * **Power BI Desktop**. The version used is 2.137.1102.0 64-bit (October 2024).
 * **Tableau Desktop**. The version used is 2024.1.5 (20241.24.0705.0334) 64-bit.
@@ -483,7 +483,7 @@ An example **[!UICONTROL Daily Trend]** panel for the use case:
 
 1. In the **[!UICONTROL Data]** pane:
    1. Select **[!UICONTROL daterangeday]**.
-   1. Select **[!UICONTROL ∑ occurrences]**.
+   1. Select **[!UICONTROL sum occurrences]**.
    
    You see a table displaying the occurrences for the current month. For better visibility, enlarge the visualization.
 
@@ -786,7 +786,7 @@ An example **[!UICONTROL Monthly Trend]** panel for the use case:
 
 1. In the **[!UICONTROL Data]** pane:
    1. Select **[!UICONTROL daterangemonth]**.
-   1. Select **[!UICONTROL ∑ occurrences]**.
+   1. Select **[!UICONTROL sum occurrences]**.
    
    You see a table displaying the occurrences for the current month. For better visibility, enlarge the visualization.
 
@@ -954,8 +954,8 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 1. In the **[!UICONTROL Data]** pane:
    1. Select **[!UICONTROL daterange]**.
    1. Select **[!UICONTROL product_name]**.
-   1. Select **[!UICONTROL ∑ purchase_revenue]**.
-   1. Select **[!UICONTROL ∑ purchases]**.
+   1. Select **[!UICONTROL sum purchase_revenue]**.
+   1. Select **[!UICONTROL sum purchases]**.
    
    You see an empty table displaying only the column headers for the selected element. For better visibility, enlarge the visualization.
 
@@ -1191,8 +1191,8 @@ An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
    1. Select **[!UICONTROL datarangeday]**.
    1. Select **[!UICONTROL product_category]**.
    1. Select **[!UICONTROL product_name]**.
-   1. Select **[!UICONTROL ∑ purchase_revenue]**
-   1. Select **[!UICONTROL ∑ purchases]**
+   1. Select **[!UICONTROL sum purchase_revenue]**
+   1. Select **[!UICONTROL sum purchases]**
 
 1. To modify the vertical bar chart to a Table, ensure you have the table selected and select **[!UICONTROL Matrix]** from the **[!UICONTROL Visualizations]** pane.
    * Drag **[!UICONTROL product_name]** from **[!UICONTROL Columns]** and drop the field underneath **[!UICONTROL product_categor]**y in **[!UICONTROL Rows]** in the **[!UICONTROL Visualization]** pane.
@@ -1447,7 +1447,7 @@ You then can use that metric in an example **[!UICONTROL Count Distinct Dimensio
    
 1. In the **[!UICONTROL Data]** pane:
    1. Select **[!UICONTROL datarangeday]**.
-   1. Select **[!UICONTROL ∑ cm_product_name_count_distinct]**, which is the calculated metric defined in Customer Journey Analytics.
+   1. Select **[!UICONTROL sum cm_product_name_count_distinct]**, which is the calculated metric defined in Customer Journey Analytics.
 
 1. To modify the vertical bar chart to a Table, ensure you have the chart selected and select **[!UICONTROL Table]** from the **[!UICONTROL Visualizations]** pane.
     
@@ -1611,7 +1611,7 @@ Note how the date range defined in the Freeform table visualization overrules th
 1. In the **[!UICONTROL Data]** pane:
    1. Select **[!UICONTROL daterangemonth]**.
    1. Select **[!UICONTROL daterangeName]**.
-   1. Select **[!UICONTROL ∑ occurrences]**.
+   1. Select **[!UICONTROL sum occurrences]**.
    
    You see a visualization displaying **[!UICONTROL Error fetching data for this visual]**.
 
@@ -1763,7 +1763,7 @@ You then can use that segment in an example **[!UICONTROL Using Segment Names To
    1. Select **[!UICONTROL daterange]**.
    1. Select **[!UICONTROL filterName]**.
    1. Select **[!UICONTROL product_name]**.
-   1. Select **[!UICONTROL ∑ occurrences]**.
+   1. Select **[!UICONTROL sum occurrences]**.
 
   You see a visualization displaying **[!UICONTROL Error fetching data for this visual]**.
 
@@ -1930,7 +1930,7 @@ You then can use that segment in an example **[!UICONTROL Using Dimension Values
    1. Select **[!UICONTROL daterange]**.
    1. Select **[!UICONTROL product_category]**.
    1. Select **[!UICONTROL product_name]**.
-   1. Select **[!UICONTROL ∑ occurrences]**.
+   1. Select **[!UICONTROL sum occurrences]**.
 
   You see a visualization displaying **[!UICONTROL Error fetching data for this visual]**.
 
@@ -2087,8 +2087,8 @@ An example **[!UICONTROL Sort]** panel for the use case:
 1. In the **[!UICONTROL Data]** pane:
    1. Select **[!UICONTROL daterange]**.
    1. Select **[!UICONTROL product_namr]**.
-   1. Select **[!UICONTROL ∑ purchase_revenue]**.
-   1. Select **[!UICONTROL ∑ purchases]**.
+   1. Select **[!UICONTROL sum purchase_revenue]**.
+   1. Select **[!UICONTROL sum purchases]**.
 
 1. In the **[!UICONTROL Filters]** pane:
    1. Select **[!UICONTROL daterange is (All)]** from **[!UICONTROL Filters on this visual]**.
@@ -2358,7 +2358,7 @@ An example **[!UICONTROL Limit]** panel for the use case:
 1. In the **[!UICONTROL Data]** pane:
    1. Select **[!UICONTROL daterange]**.
    1. Select **[!UICONTROL product_name]**.
-   1. Select **[!UICONTROL ∑ occurrences]**.
+   1. Select **[!UICONTROL sum occurrences]**.
 
 1. In the **[!UICONTROL Filters]** pane:
    1. Select **[!UICONTROL daterange is (All)]** from **[!UICONTROL Filters on this visual]**.
@@ -2368,7 +2368,7 @@ An example **[!UICONTROL Limit]** panel for the use case:
    1. Select **[!UICONTROL product_name is (All)]** from **[!UICONTROL Filters on this visual]**.
    1. Select **[!UICONTROL Top N]** as the **[!UICONTROL Filter type]**.
    1. Select **[!UICONTROL Show Items]** **[!UICONTROL Top]** `5` **[!UICONTROL By value]**.
-   1. Drag and drop **[!UICONTROL ∑ occurrences]** from the **[!UICONTROL Data]** pane and drop it on **[!UICONTROL Add data fields here]**.
+   1. Drag and drop **[!UICONTROL sum occurrences]** from the **[!UICONTROL Data]** pane and drop it on **[!UICONTROL Add data fields here]**.
    1. Select **[!UICONTROL Apply filter]**.
 
 1. In the Visualization pane:
