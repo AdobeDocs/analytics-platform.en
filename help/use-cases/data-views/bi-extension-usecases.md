@@ -940,6 +940,8 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 
 +++
 
+<!--
+
 +++ BI tools
 
 >[!PREREQUISITES]
@@ -1156,6 +1158,8 @@ You should see a visualization and table similar as shown below.
 >[!ENDTABS]
 
 +++
+
+-->
 
 
 ## Multiple dimension ranked
