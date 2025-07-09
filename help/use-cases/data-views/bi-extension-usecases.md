@@ -8,7 +8,7 @@ exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
 ---
 # BI extension use cases
 
-This article documents how to accomplish a number of use cases using the Customer Journey Analytics BI extension. Each use case explains the Customer Journey Analytics functionality, followed with details for each of the BI tools supported:
+This article documents how to accomplish a number of use cases (15) using the Customer Journey Analytics BI extension. Each use case explains the Customer Journey Analytics functionality, followed with details for each of the BI tools supported:
 
 * **Power BI Desktop**. The version used is 2.137.1102.0 64-bit (October 2024).
 * **Tableau Desktop**. The version used is 2024.1.5 (20241.24.0705.0334) 64-bit.
@@ -940,8 +940,6 @@ An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 
 +++
 
-<!--
-
 +++ BI tools
 
 >[!PREREQUISITES]
@@ -1109,7 +1107,7 @@ You should see a visualization and table similar as shown below.
 
 1. Enter the following statements in a new cell.
 
-   ```python
+   ```
    import seaborn as sns
    import matplotlib.pyplot as plt
    data = %sql SELECT product_name AS `Product Name`, SUM(purchase_revenue) AS `Purchase Revenue`, SUM(purchases) AS `Purchases` \
@@ -1158,8 +1156,6 @@ You should see a visualization and table similar as shown below.
 >[!ENDTABS]
 
 +++
-
--->
 
 
 ## Multiple dimension ranked
@@ -1370,7 +1366,7 @@ You should see a visualization and table similar as shown below.
 
 1. Enter the following statements in a new cell.
 
-   ```python
+   ```
    import seaborn as sns
    import matplotlib.pyplot as plt
    data = %sql SELECT product_category AS `Product Category`, product_name AS `Product Name`, SUM(purchase_revenue) AS `Purchase Revenue`, SUM(purchases) AS `Purchases` \
@@ -1549,7 +1545,7 @@ You should see a visualization and table similar as shown below.
 
 1. Enter the following statements in a new cell.
 
-   ```python
+   ```
    data = %sql SELECT COUNT(DISTINCT(product_name)) AS `Product Name` \
       FROM cc_data_view \
       WHERE daterange BETWEEN '2023-01-01' AND '2023-02-01';
