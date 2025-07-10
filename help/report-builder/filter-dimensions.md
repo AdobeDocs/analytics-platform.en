@@ -1,5 +1,5 @@
 ---
-title: How to filter dimensions in Report Builder
+title: Filter dimensions in Report Builder
 description: Describes how to use filter dimensions in Report Builder for Customer Journey Analytics
 role: User
 feature: Report Builder

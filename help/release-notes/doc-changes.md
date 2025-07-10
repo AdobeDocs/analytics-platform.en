@@ -13,6 +13,10 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **July 2025** | |
+| Debugger | New article on how to enable, use and disable the project debugger in Analysis Workspace. |
+| **June 2025** | |
+| New shortcut actions | New keyboard shortcuts in Analysis Workspace now allow you to [move Workspace panels](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#move-panel-actions) up and down in a project.  | 
 | **May 2025** | |
 | Customer Journey Analytics [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Draft documentation on the upcoming Customer Journey Analytics B2B Edition, including: <ul><li>new [overview](/help/getting-started/cja-b2b-edition.md), [concepts and features](/help/getting-started/cja-b2b-concepts-features.md), [quick start guide](/help/getting-started/cja-b2b-quick-start-guide.md), [transition guide](/help/getting-started/cja-b2b-transition.md), and [use cases](/help/use-cases/b2b/b2b-edition/use-cases-overview.md) articles, and</li><li>numerous updates to existing documentation.</li></ul>The Customer Journey B2B Edition documentation, articles and features are labeled with a [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} badge. |  
 | Validate stitching | Added documentation to [validate](/help/stitching/validate.md) how identify stitching affects authentication success rates and overall person identification performance. | 
@@ -206,7 +210,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | **December 2022** |  |
 | December 16, 2022 | New topic on [managing your Customer Journey Analytics data usage](/help/technotes/estimate-usage.md). |
 | **October 2022** | |
-| October 2022 | New topic on [password protection of scheduled projects](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#password). This feature is in support of [HIPAA readiness](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
+| October 2022 | New topic on [password protection of scheduled projects](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#password). This feature is in support of [HIPAA readiness](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | October 2022 | New topic on [Customer Managed Keys](/help/privacy/cmk.md). This feature is in support of [HIPAA readiness](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | October 2022 | New topic on [Customer Journey Analytics Audit Log](/help/privacy/audit-log.md). |
 | October 2022 | New topic on [Key metric summary](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html) visualization. |

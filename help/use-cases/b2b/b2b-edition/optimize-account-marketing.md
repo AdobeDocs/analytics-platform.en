@@ -9,8 +9,6 @@ exl-id: d5e44546-ea82-42eb-98df-19d51c71e9be
 ---
 # Optimize account marketing
 
-{{draft-b2b}}
-
 Effective account based marketing requires a deep understanding of the buying journey at the account level. So, you can determine the most impactful marketing activities to drive deal close.
 
 For this understanding you want to analyze and explore:

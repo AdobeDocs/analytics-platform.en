@@ -1,13 +1,11 @@
 ---
-description: The Segment builder provides a canvas to drag and drop Metric Dimensions, Segments, and Events to segment persons based on container hierarchy logic, rules, and operators. This integrated development tool lets you build and save simple or complex segments that identify person attributes and actions across visits and events.
-title: Build segments
+description: Understand how the segment builder provides a canvas to drag and drop metric, dimensions, segments, and events to segment visitors based on container hierarchy logic, rules, and operators. Understand how you can build and save simple or complex segments that identify visitor attributes and actions across visits and page hits.
+title: Build Segments
 feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
 ---
 # Build segments {#build-segments}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_filters_createaudience"
@@ -18,7 +16,6 @@ exl-id: 160021f1-6942-4682-9114-d375307d9912
 >id="components_filters_datapreview"
 >title="Data preview"
 >abstract="Compares the data of this segment with data of the data view. The preview percentage is based on the total number in the data view from the **last 90 days**.<br><br/>If the preview is not loading, your connection could still be backfilling."
-
 
 The **[!UICONTROL Segment builder]** dialog is used to create new or edit existing segments. The dialog is titled **[!UICONTROL New segment]** or **[!UICONTROL Edit segment]** for segments that you create or manage from the [[!UICONTROL Segment] manager](/help/components/segments/seg-manage.md).
 
@@ -42,7 +39,7 @@ The **[!UICONTROL Segment builder]** dialog is used to create new or edit existi
    | **[!UICONTROL Project-only segment]** | An info box to explain that the segment is only visible in the project where it is created and that the segment will not be added to your component list. Enable **[!UICONTROL Make this segment available to all your projects and add it to your component list]** to change that setting. This info box is only visible when you create a [quick segment](seg-quick.md) and turn the quick segment info a regular segment using **[!UICONTROL Open builder]** from the [!UICONTROL Quick segment] interface. |
    | **[!UICONTROL Title]** ![Required](/help/assets/icons/Required.svg) | Name the segment, for example, `Last month mobile customers`. |
    | **[!UICONTROL Description]** | Provide a description for the segment, for example, `Segment to define the mobile customers for the last month`. |
-   | **[!UICONTROL Tags]**| Organize the segment by creating or applying one or more tag. Start typing to find existing tags you can select. Or press **[!UICONTROL ENTER]** to add a new tag. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a tag. |
+   | **[!UICONTROL Tags]**| Organize the segment by creating or applying one or more tags. Start typing to find existing tags you can select. Or press **[!UICONTROL ENTER]** to add a new tag. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a tag. |
    | **[!UICONTROL Definition]** ![Required](/help/assets/icons/Required.svg)| Define your segment using the [Definition builder](#definition-builder). |
    
    {style="table-layout:auto"}
@@ -196,5 +193,3 @@ The table below explains, for each attribution model, which incoming events are 
 An example report on events using the three segments looks like:
 
 ![Segment attribution model results](assets/filter-dimension-attribution-results.png)
-
-<!-- markdownlint-enable MD034 -->

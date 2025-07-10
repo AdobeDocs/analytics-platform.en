@@ -1,6 +1,6 @@
 ---
-description: You can tag segments to organize them.
-title: Tag segments
+description: Understand how to tag segments to allow you to organize segments.
+title: Tag Segments
 feature: Filters, Segments
 exl-id: d3b8d9f7-11a4-4eac-8c22-5c86601ec7f3
 role: User

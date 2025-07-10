@@ -1,11 +1,11 @@
 ---
 description: Learn how to edit column settings to configure column formatting, some of which can be conditional.
-title: Column settings
+title: Column Settings
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
 ---
-# [!UICONTROL Column Settings]
+# Column settings
 
 [!UICONTROL Column settings] let you configure column formatting, some of which can be conditional.
 
@@ -107,11 +107,17 @@ To use a non-default attribution model for a metric in an Analysis Workspace:
 
 {{attribution-models-details}}
 
+### Container
+
+{{attribution-container}}
+
 ### Lookback window
 
 {{attribution-lookback-window}}
 
+### Example
 
+{{attribution-example}}
 
 >[!MORELIKETHIS]
 >

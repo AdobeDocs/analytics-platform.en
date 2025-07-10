@@ -1,6 +1,6 @@
 ---
-description: The Calculated metric manager allows you to share, filter, tag, approve, copy, delete, and marking as favorites.
-title: Calculated metric manager
+description: Learn how to share, filter, tag, approve, copy, delete calculated metrics, and mark calculated metrics as favorites.
+title: Manage Calculated Metrics
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
 ---
@@ -17,11 +17,11 @@ You can share, filter, tag, approve, rename, copy, delete, export calculated met
 The Calculated metrics manager has the following interface elements:
 
 
-![Filters interface](assets/calculated-metrics-manager.png)
+![Calculated metrics manager interface](assets/calculated-metrics-manager.png)
 
-### Filters list
+### Calculated metrics list
 
-The filters list ➊ displays all the calculated metrics that you own or that have been shared with you. The list has the following columns:
+The calculated metrics list ➊ displays all the calculated metrics that you own or that have been shared with you. The list has the following columns:
 
 <!-- I think this table incorrectly talks about quick calculated metrics -->
 

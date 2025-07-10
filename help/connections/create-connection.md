@@ -634,8 +634,6 @@ This preview contains some columns listing the connection configuration. What co
 
 ## Connection map
 
-[!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} 
-
 To see a map of the relationships between the datasets that are part of your connection, select ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Connection map]** in the Connection settings dialog.
 
 ![Connection map](assets/connectionmap.png)

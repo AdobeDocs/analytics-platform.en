@@ -7,7 +7,7 @@ type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
 ---
-# Schedule workbooks
+# Schedule workbooks by sharing through email
 
 After you saved your workbook and completed your analysis, you can share your workbook with others on your team using the scheduling feature. The schedule feature allows you to create a schedule that automatically refreshes the data in the workbook. And emails the Excel workbook file as an attachment to your specified audience at a specific date and time. Setting up a schedule provides recipients with regular updates automatically. You can also use the schedule feature to send out the workbook once without scheduling automatic updates.
 
@@ -123,54 +123,7 @@ In both cases, you see a confirmation toast at the bottom of the Report Builder 
 
 To cancel sending the workbook, select **[!UICONTROL Cancel]**.
 
+## Manage scheduled workbooks
 
-## View and manage scheduled workbooks
+For information about managing workbooks that are already scheduled, see [Manage scheduled workbooks](/help/report-builder/manage-schedules-reportbuilder.md).
 
-You can view and manage all scheduled workbooks in the **[!UICONTROL Workbooks]** tab.
-
-1. Select **[!UICONTROL Schedule]** in the Report Builder hub 
-
-1. Select the **[!UICONTROL Workbooks]** tab. You see a list of all scheduled workbooks.
-
-   ![Scheduled workbook](assets/scheduled-workbooks.png){zoomable="yes"}
-
-   You can hover over the icon to see the status of a scheduled workbook.
-
-   Use ![Search](/help/assets/icons/Search.svg) to search for specific scheduled workbooks.
-   Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) to define which columns to show.
-
-1. Select one or more workbooks.
-
-   ![Schedule workbooks selected](assets/scheduled-workbooks-selected.png){zoomable="yes"}
-   
-   The following options are available:
-
-   | Option | Description |
-   |---|---|
-   | ![Edit](/help/assets/icons/Edit.svg) | Edit the schedule for a selected workbook. |
-   | ![History](/help/assets/icons/History.svg) | Show the history of selected workbooks. |
-   | ![Pause](/help/assets/icons/Pause.svg) | Pause the schedule of selected workbooks. |
-   | ![Play](/help/assets/icons/Play.svg) | Resume the schedule of selected workbooks. |
-   | ![Download](/help/assets/icons/Download.svg) | Download the selected workbook into a new workbook. |
-   | ![Delete](/help/assets/icons/Delete.svg) | Delete the schedule of selected workbooks. |
- 
-
-## History and status of scheduled workbooks
-
-You can view the history and status of scheduled workbooks in the **[!UICONTROL History]** tab.
-
-1. Select **[!UICONTROL Schedule]** in the Report Builder hub.
-
-1. Select the **[!UICONTROL History]** tab. You see a list of all scheduled workbooks.
-
-   ![Scheduled history](assets/scheduled-workbooks-history.png){zoomable="yes"}
-
-   Use ![Search](/help/assets/icons/Search.svg) to search for specific workbooks in the list.
-   Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) to define which columns to show.
-
-   The **[!UICONTROL History]** tab allows you to review the status of each scheduled task. A separate row documents the status change for each scheduled task.
-
-   * A ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) indicates that the workbook was sent successfully. 
-   * A ![AlertRed](/help/assets/icons/AlertRed.svg) indicates that an error occurred.
-
-Alternatively, you can select ![History](/help/assets/icons/History.svg) for one or more selected workbooks in the **[!UICONTROL Workbooks]** tab. This action shows the **[!UICONTROL History]** tab with a list filtered by your selection. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a filter.

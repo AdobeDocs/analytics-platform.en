@@ -1,6 +1,6 @@
 ---
-title: Create date ranges
-description: Create a date range for use in reporting.
+title: Create Date Ranges
+description: Understand how to create a date range that you can use in Analysis Workspace.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
@@ -19,7 +19,7 @@ Anyone can create a custom date range. You create a date range in the following 
 * **E** - In a Workspace project, from the Components left panel, select ![Add](/help/assets/icons/Add.svg) at ![Calendar](/help/assets/icons/Calendar.svg) **Date ranges**.
 * **F** - In a supported visualization, like a line visualization, from the context menu on a data point, select **[!UICONTROL Annotate Selection]**.
 
-To define the annotation, you use the [[!UICONTROL Date range builder]](#annotation-builder):
+To define the annotation, you use the [[!UICONTROL Date range builder]](#annotation-builder).
 
 <!-- Should we really mention API here. If so, we can do it all over the place in the docs...
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |

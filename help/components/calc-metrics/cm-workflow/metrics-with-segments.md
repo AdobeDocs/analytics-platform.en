@@ -1,6 +1,6 @@
 ---
-description: Segmenting individual metrics allows you to make metric comparisons within the same report.
-title: Segmented metrics
+description: Learn how to segment on individual metrics which allows you to make metric comparisons within the same visualization. 
+title: Segmented Metrics
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
 ---
@@ -60,7 +60,7 @@ Repeat the steps above for the international version of your calculated metric.
 
 ## Totals
 
-1. Create two new segments based on Grand Total. Open each of the segments created earlier, rename the segment, set the **[!UICONTROL Metric type]** for **[!UICONTROL People]** to **[!UICONTROL Grand Total]** and use **[!UICONTROL Save As]** to save the segment using the new name. For example:
+1. Create two new calculated metrics based on Grand Total. Open each of the segments created earlier, rename the segment, set the **[!UICONTROL Metric type]** for **[!UICONTROL People]** to **[!UICONTROL Grand Total]** and use **[!UICONTROL Save As]** to save the segment using the new name. For example:
 
    ![Total metric for Germany](assets/calculated-metric-germany-total.png)
 

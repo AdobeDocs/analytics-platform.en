@@ -1,6 +1,6 @@
 ---
-title: Annotations overview
-description: How to use annotations in Workspace.
+title: Annotations Overview
+description: Learn how to use annotations in Analysis Workspace.
 solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398

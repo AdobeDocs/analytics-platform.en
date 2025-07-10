@@ -1,14 +1,16 @@
 ---
-description: Learn about saving projects to folders in Workspace
+description: Learn how to save a new project to a folder in Analysis Workspace.
 keywords: Analysis Workspace
-title: Saving projects to folders
+title: Save A New Project To A Folder
 feature: Workspace Basics
 exl-id: d08a558b-a2bb-4002-b179-437e1885c6c4
 role: User
 ---
-# Save a New Project to a Folder
+# Save a new project to a polder
 
-<!-- Is this article still needed -->
+See [Save projects](../save-projects.md#save) for more information.
+
+<!-- Is this article still needed; removed from TOC
 
 
 To save a new project to a specific folder, select the folder name in the Save project dialogue window.
@@ -24,3 +26,5 @@ To save a new project to a specific folder, select the folder name in the Save p
 1. Click **Save**.
 
     The project is saved in the selected folder.
+
+-->

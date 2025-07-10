@@ -1,6 +1,6 @@
 ---
 description: Learn how to comment on a project in Analysis Workspace
-title: Add and view comments in projects
+title: Add And Manage Comments In Projects
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
@@ -31,7 +31,7 @@ You can view comments from the comments area in the right rail or from the comme
 
 ### View comments in the comments area
 
-All comments made in an Analysis Workspace project are visible in the comments area in the right rail. 
+All comments made in an Analysis Workspace project are visible in the comments area in the right rail. The total number of existing comments is shown on the comments icon.
 
 1. By default, the comments area is expanded for each project in Analysis Workspace the first time you open a project. 
 
@@ -45,15 +45,15 @@ All comments made in an Analysis Workspace project are visible in the comments a
 
 ### View comment badges in a project
 
-Comments that are made [on a specific area of the project](#comment-on-a-specific-area-of-the-project) have a **comment badge** ![comment badge](assets/comment-indicator.png) that displays over the area of the project that the comment pertains to. Select a badge to view the comment. After selecting the badge, you can select the comment itself to highlight the comment in the comments area in the right rail.
+Comments that are made [on a specific area of the project](#comment-on-a-specific-area-of-the-project) have a **comment badge** ![comment badge](assets/comment-indicator.svg) that displays over the area of the project that the comment pertains to. Select a badge to view the comment. After selecting the badge, you can select the comment itself to highlight the comment in the comments area in the right rail. 
 
-Numbers display on each badge in a project and are ordered in the order they were created. If multiple comments are placed in the same area of a project, the badge shows 3 dots ![comment badge multiple](assets/comment-indicator-multiple.png). Select the 3-dot badge to reveal all comments in that area.
+Numbers display on each badge in a project and are ordered in the order they were created. If multiple comments are placed in the same area of a project, the badge shows 3 dots ![comment badge multiple](assets/comment-indicator-multiple.svg). Select the 3-dot badge to reveal all comments in that area.
 
 <!-- Insert screeshot-->
 
 To hide all comment badges from a project:
 
-1. With the project open in Analysis Workspace, select the comments area icon ![comments area icon](assets/comments-area-icon.png) in the right rail of Analysis Workspace.
+1. With the project open in Analysis Workspace, select the comments area icon ![Comments area icon](/help/assets/icons/Comment.svg) in the right rail of Analysis Workspace.
 
 1. At the bottom of the comments area, enable the option, **[!UICONTROL Hide placed badges]**.
 
@@ -91,7 +91,7 @@ To comment on a specific area of the project (such as a metric value in a freefo
 
 To add comments to a project in Analysis Workspace:
 
-1. With the project open in Analysis Workspace, select the comments area icon ![comments area icon](assets/comments-area-icon.png) in the right rail of Analysis Workspace. <!-- add screen shot -->
+1. With the project open in Analysis Workspace, select the comments area icon ![Comments area icon](/help/assets/icons/Comment.svg) in the right rail of Analysis Workspace. <!-- add screen shot -->
 
 1. In the **[!UICONTROL New comment]** field, specify your comment. 
 
@@ -125,13 +125,15 @@ To include another person in your comment:
 
 ## Reply to a comment
 
-1. With the project open in Analysis Workspace, select the comments area icon ![comments area icon](assets/comments-area-icon.png) in the right rail of Analysis Workspace. 
+1. In Analysis Workspace, open the project where you want to add a comment.
 
-1. Select **[!UICONTROL Reply]** next to the comment you want to reply to.
+1. Select the comments area icon ![Comments area icon](/help/assets/icons/Comment.svg) in the right rail of Analysis Workspace, then select **[!UICONTROL Reply]** next to the comment you want to reply to.
+
+   To include the text of the comment you are replying to, with the original text wrapped in a quote tag, select the 3-dot icon next to the specific comment or reply that you want to reply to, then select **[!UICONTROL Quote reply]**. A quote reply is a good way to indicate which comment or reply your comment refers to.
 
    Or
-   
-   To include the text of the comment you are replying to, with the original text wrapped in a quote tag, select the 3-dot icon next to the specific comment or reply that you want to reply to, then select **[!UICONTROL Quote reply]**. A quote reply is a good way to indicate which comment or reply your comment refers to.
+
+   Select the comment icon on the panel or visualization where the comment was made, then select **[!UICONTROL Reply]**.
 
 1. In the **[!UICONTROL New comment]** field, specify your comment. 
 
@@ -143,7 +145,7 @@ To include another person in your comment:
 
 ## Receive notifications about comments
 
-Project owners and [specific people you mention](#include-others-in-a-comment) receive notifications based on their Adobe Experience Cloud notification settings. By default, they receive an in-app notification, visible from the [Experience Cloud notification](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) icon ![Experience Cloud notification icon](assets/experience-cloud-notification.png) in Customer Journey Analytics. 
+Project owners and [specific people you mention](#include-others-in-a-comment) receive notifications based on their Adobe Experience Cloud notification settings. By default, they receive an in-app notification, visible from the [Experience Cloud notification](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) icon ![Experience Cloud notification icon](assets/experience-cloud-notification.svg) in Customer Journey Analytics. 
 
 Additionally, people can configure their Experience Cloud notification settings to receive email notifications and Slack notifications by [subscribing to email notifications](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) and [subscribing to Slack notifications](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
 
@@ -151,9 +153,9 @@ Additionally, people can configure their Experience Cloud notification settings 
 
 If a comment is available in the comments area in the right rail but it does not yet have a badge in the project, you can add the badge.
 
-1. With the project open in Analysis Workspace, select the comments area icon ![comments area icon](assets/comments-area-icon.png) in the right rail of Analysis Workspace. 
+1. With the project open in Analysis Workspace, select the comments area icon ![Comments area icon](/help/assets/icons/Comment.svg) in the right rail of Analysis Workspace. 
 
-1. Select the more icon ![comment-more-icon](assets/comment-more-icon.png) next to the comment for which you want to place a badge, then select **[!UICONTROL Place badge]**. 
+1. Select the more icon ![More icon](/help/assets/icons/MoreSmallList.svg) next to the comment for which you want to place a badge, then select **[!UICONTROL Place badge]**. 
 
 1. Select the area of the project where you want to place the badge for the existing comment. 
 
@@ -185,9 +187,9 @@ You can copy the link to a comment and share the link with others. Only people w
 
 To copy the link to a comment:
 
-1. With the project open in Analysis Workspace, select the comments area icon ![comments area icon](assets/comments-area-icon.png) in the right rail of Analysis Workspace. 
+1. With the project open in Analysis Workspace, select the comments area icon ![Comments area icon](/help/assets/icons/Comment.svg) in the right rail of Analysis Workspace. 
 
-1. Select the more icon ![comment-more-icon](assets/comment-more-icon.png) next to the comment whose link you want to copy, then select **[!UICONTROL Copy link]**. 
+1. Select the more icon ![More icon](/help/assets/icons/MoreSmallList.svg) next to the comment whose link you want to copy, then select **[!UICONTROL Copy link]**. 
 
    The link is copied to your system clipboard. You can paste the link in an email or other type of message.
 
@@ -197,15 +199,15 @@ You can copy the body text of a comment and share it with others.
 
 To copy the body text of a comment:
 
-1. With the project open in Analysis Workspace, select the comments area icon ![comments area icon](assets/comments-area-icon.png) in the right rail of Analysis Workspace. 
+1. With the project open in Analysis Workspace, select the comments area icon ![Comments area icon](/help/assets/icons/Comment.svg) in the right rail of Analysis Workspace. 
 
-1. Select the more icon ![comment-more-icon](assets/comment-more-icon.png) next to the comment that contains the text you want to copy, then select **[!UICONTROL Copy body text]**. 
+1. Select the more icon ![More icon](/help/assets/icons/MoreSmallList.svg) next to the comment that contains the text you want to copy, then select **[!UICONTROL Copy body text]**. 
 
    The body text of the comment is copied to your system clipboard. 
 
 ## Like a comment
 
-1. With the project open in Analysis Workspace, select the comments area icon ![comments area icon](assets/comments-area-icon.png) in the right rail of Analysis Workspace. 
+1. With the project open in Analysis Workspace, select the comments area icon ![Comments area icon](/help/assets/icons/Comment.svg) in the right rail of Analysis Workspace. 
 
 1. Select **[!UICONTROL Like]** beneath the comment that you want to endorse.
 
@@ -217,9 +219,9 @@ Deleted comments cannot be recovered.
 
 To delete a comment:
 
-1. With the project open in Analysis Workspace, select the comments area icon ![comments area icon](assets/comments-area-icon.png) in the right rail of Analysis Workspace. 
+1. With the project open in Analysis Workspace, select the comments area icon ![Comments area icon](/help/assets/icons/Comment.svg) in the right rail of Analysis Workspace. 
 
-1. Select the more icon ![comment-more-icon](assets/comment-more-icon.png) next to the comment that you want to delete, then select **[!UICONTROL Delete]**. 
+1. Select the more icon ![More icon](/help/assets/icons/MoreSmallList.svg) next to the comment that you want to delete, then select **[!UICONTROL Delete]**. 
 
 1. Select **[!UICONTROL Delete]** again to confirm the deletion.
 
@@ -229,9 +231,9 @@ When you resolve a comment, the comment is marked as resolved and hidden from th
 
 To resolve a comment:
 
-1. With the project open in Analysis Workspace, select the comments area icon ![comments area icon](assets/comments-area-icon.png) in the right rail of Analysis Workspace. 
+1. With the project open in Analysis Workspace, select the comments area icon ![Comments area icon](/help/assets/icons/Comment.svg) in the right rail of Analysis Workspace. 
 
-1. Select the more icon ![comment-more-icon](assets/comment-more-icon.png) next to the comment that you want to resolve, then select **[!UICONTROL Resolve]**. 
+1. Select the more icon ![More icon](/help/assets/icons/MoreSmallList.svg) next to the comment that you want to resolve, then select **[!UICONTROL Resolve]**. 
 
 1. Select **[!UICONTROL Resolve]** again to confirm.
 

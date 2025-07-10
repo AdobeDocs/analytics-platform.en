@@ -1,6 +1,6 @@
 ---
-description: Learn how to use the flow visualization in a Workspace project.
-title: How to configure a flow visualization
+description: Learn how to configure the flow visualization in Analysis Workspace
+title: Configure A Flow Visualization
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User

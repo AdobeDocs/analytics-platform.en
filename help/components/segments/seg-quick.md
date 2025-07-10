@@ -1,6 +1,6 @@
 ---
-description: Use quick segments in Analysis Workspace for Customer Journey Analytics
-title: Quick segments
+description: Learn how to use quick segments in Analysis Workspace.
+title: Quick Segments
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
@@ -37,9 +37,9 @@ To create a quick segment:
 When you create a quick segment using drag and drop, note that:
 
 * Not all component types are supported. Calculated metrics are not supported, and only dimensions and metrics from which you can build segments are supported.
-* For dimensions and metrics components, the [Quick segment builder](#quick-segment-builder) creates automatically an `exists` conditions. For example, if you drag and drop `City`, the condition `City exists` is created.
-* For dimension values, the [Quick segment builder](#quick-segment-builder) automatically creates an `equals` condition. For example, if you drag and drop `amsterdam` from the `City` dimension, the condition `City equals amsterdam` is created.
-* If you drag and drop `unspecified` or `none`, the [Quick segment builder](#quick-segment-builder) automatically creates a `does not exist` condition.
+* For dimensions and metrics components, the [Quick segment builder](#quick-segment-builder) creates automatically an `exists` conditions. For example, if you drag and drop **[!UICONTROL City]**, the condition **[!UICONTROL City]** **[!UICONTROL exists]** is created.
+* For dimension values, the [Quick segment builder](#quick-segment-builder) automatically creates an **[!UICONTROL equals]** condition. For example, if you drag and drop **[!UICONTROL Amsterdam]** from the **[!UICONTROL City]** dimension list, the condition **[!UICONTROL City]** **[!UICONTROL equals]** `Amsterdam` is created.
+* If you drag and drop **[!UICONTROL unspecified]** or **[!UICONTROL none]**, the [Quick segment builder](#quick-segment-builder) automatically creates a **[!UICONTROL does not exist]** condition.
 
 Quick segments you create appear at the top of the panel. Quick segments do have a light blue thin left bar. When a quick segment is in edit mode using the [Quick segment builder](#quick-segment-builder), the background of the Quick segment is light blue.
 
@@ -55,7 +55,7 @@ To manage a quick segment, hover over the specific **[!UICONTROL Quick segment]*
 
 ## Quick segment builder
 
-See below for an example of the Quick segment builder. In the example, the builder is opened for a quick segment titled `Call Reason = Order Change AND Online Orders is greater than or equal 1`. Both quick segments at the top do apply to the [!UICONTROL Average Order Value Dashboard] panel and all visualizations within, such as the [!UICONTROL Average Order Value Per Country] freeform table.
+See below for an example of the Quick segment builder. In the example, the builder is opened for a quick segment titled `Call Reason = Order Change AND Online Orders is greater than or equal 1`. Both quick segments at the top do apply to the **[!UICONTROL Average Order Value Dashboard]** panel and all visualizations within, such as the [!UICONTROL Average Order Value Per Country] freeform table.
 
 ![Quick segment builder](assets/quick-filter-builder.png)
 
@@ -68,7 +68,7 @@ The header area determines the name, type and scope of the quick segment. It als
 | Element | Description | 
 |---|---|
 | **[!UICONTROL Name]** | The name is automatically derived from the quick segment definition. |
-| **[!UICONTROL People]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![Alert](/help/assets/icons/Alert.svg) | Preview visual of the data resulting from the quick segment. A bar and percentage provide insight in how much of the overall data is part of the result of the quick segment. A red ![Alert](/help/assets/icons/Alert.svg) signals that the quick segment does not return data. |
+| **[!UICONTROL People]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![Alert](/help/assets/icons/Alert.svg) | Preview visual of the data resulting from the quick segment. A bar and percentage provide insight in how much of the overall data is part of the result of the quick segment. A ![Alert](/help/assets/icons/AlertRed.svg) signals that the quick segment does not return data. |
 | **[!UICONTROL Include]**<br/>**[!UICONTROL Exclude]** | Select from the drop-down ![ChevronDown](/help/assets/icons/ChevronDown.svg) whether you want to include or exclude the results of the quick segment from the data in the panel. |
 | **[!UICONTROL Event]**<br/>**[!UICONTROL Session]**<br/>**[!UICONTROL Person]** | Select from the drop-down menu ![ChevronDown](/help/assets/icons/ChevronDown.svg) the scope of the quick segment. |
 
@@ -101,6 +101,6 @@ Quick segments are exactly what they are named. You can create and edit quick se
 Segments do have the following advantages compared to quick segments.
 
 * Segments can be made available across all your Workspace projects
-* Segments support more complexity using nested and hierarchical containers, and sequences (using sequence segments).
+* Segments support more complexity using nested and hierarchical [containers](seg-builder.md#containers), and sequences (using [sequential segments](seg-sequential-build.md)).
 
 

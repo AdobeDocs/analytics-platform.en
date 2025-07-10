@@ -1,6 +1,6 @@
 ---
-description: Easily visualize comparison data in Analysis Workspace, such as building comparisons to last month, last year, and so on.
-title: Combo charts visualization
+description: Learn how to visualize comparison data in Analysis Workspace, such as building comparisons to last month, last year, and so on.
+title: Combo
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User

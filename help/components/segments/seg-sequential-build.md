@@ -1,6 +1,6 @@
 ---
-description: Sequential segments are segments that use the THEN operator to define the sequence of segment conditions.
-title: Sequential segments
+description: Learn about sequential segments that use the THEN operator to define a sequence of segment conditions.
+title: SequentialSsegments
 feature: Filters, Segments
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
 ---
@@ -290,7 +290,7 @@ Identify persons that visited one page then explicitly did not visit a set of ot
 
 #### [!UICONTROL Exclude] [!UICONTROL Or]
 
-Identify persons that visited one page then explicitly did not visit any page of a set of pages, but did visit yet another page. For example, persons that visited the Home Page, did not visit the Men and the Women page, but did visit the Kids page.
+Identify persons that visited one page then explicitly did not visit any page of a set of pages, but did visit yet another page. For example, persons that visited the Home Page and did not visit the Men and the Women page, but did visit the Kids page.
 
 ![Logic group exclude and](assets/logicgroup-exclude-or.png)
 
