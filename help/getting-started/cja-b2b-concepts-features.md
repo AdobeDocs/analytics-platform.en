@@ -81,7 +81,7 @@ The Customer Journey Analytics B2B distinguishes between the following data type
 | Data type | Time series | Container records | Field records |
 |---|---|---|---|
 | **Datasets** | **Event datasets**<br/>For example:<ul><li>Digital analytics</li><li>CRM events</li><li>In-person events</li><li>Call center data</li></ul> | **Profile datasets**<br/>For example:<ul><li>CRM records</li><li>AJO B2B records</li><li>CDP records</li><ul> | **Classications**<br/>For example:<ul><li>Campaign records</li><li>Marketing list records</li><li>Content metadata</li><li>Product records</li></ul> |
-| Requirements | **Time stamp**<br>Every record needs:<ul><li>Account ID</li><li>Global Account ID</li><li>Person ID</li></ul> | **Account ID**<br>Records need a container ID, like:<ul><li>Account</li><li>Person</li><li>Opportunity</li><li>Buying Group</li></ul> | **Matching key**<br>Records need an ID contained in a container or event dataset, like:<ul><li>Campaign ID</li><li>Content ID</li><li>Product ID</li></ul> |
+| Requirements | **Time stamp**<br>Every record needs:<ul><li>Account ID</li><li>Global Account ID (optional)</li></ul> | **Account ID**<br>Records need a container ID, like:<ul><li>Account</li><li>Person</li><li>Opportunity</li><li>Buying Group</li></ul> | **Matching key**<br>Records need an ID contained in a container or event dataset, like:<ul><li>Campaign ID</li><li>Content ID</li><li>Product ID</li></ul> |
 
 {style="table-layout:fixed"}
 
