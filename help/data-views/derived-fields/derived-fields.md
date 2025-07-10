@@ -935,7 +935,7 @@ Returns the difference between two dates or two date-time fields.
 
 You define a `Days between booking and check-in` derived field. You use the [!UICONTROL DATE MATH] function to define a rule to calculate the days for [!UICONTROL Scope] [!DNL Person] between the [!UICONTROL Booking Date] and [!UICONTROL Check-in Date]. You select [!UICONTROL Day] as [!UICONTROL Granularity]. And you select [!UICONTROL Return the last] for both [!UICONTROL Booking Date] and [!UICONTROL Check-in Date] to ensure the last person scoped value is used in the calculation.
 
-![Screenshot of the Concatenate rule](assets/datemath-1.png)
+![Screenshot of the Date Math rule](assets/datemath-1.png)
 
 
 ## Use case 2 {#datemath-uc2}
@@ -944,10 +944,10 @@ As a marketing analyst of a brick and mortar shop you want to understand how man
 
 ### Derived field {#datemath-uc2-derivedfield}
 
-You define a new `Days Since Visit To Shop` derived field. You use the [!UICONTROL DATE MATH] function to define a rule to calculate the days between a Custom Date-Time ( which you specify in [!UICONTROL Date]) and the [!UICONTROL Local Time] with a [!UICONTROL Deduplication scope] of [!UICONTROL Person]. And you select [!UICONTROL Return the last] to ensure the last person scoped value for [!UICONTROL Local time] is used in the calculation.
+You define a new `Days Since Visit To Shop` derived field. You use the [!UICONTROL DATE MATH] function to define a rule to calculate the days between a Custom Date-Time ( which you specify in [!UICONTROL Date]) and the [!UICONTROL Local Time] (from your [!UICONTROL placeContext] field group of your event dataset) with a [!UICONTROL Deduplication scope] of [!UICONTROL Person]. And you select [!UICONTROL Return the last] to ensure the last person scoped value for [!UICONTROL Local time] is used in the calculation.
 
-![Screenshot of the Concatenate rule](assets/deduplicate-2.png)
--->
+![Screenshot of the Date Math rule](assets/datemath-2.png)
+
 
 ### Data after {#datemath-uc2-dataafter}
 
@@ -959,6 +959,7 @@ You define a new `Days Since Visit To Shop` derived field. You use the [!UICONTR
 | JKL123 | natural search | 1 |
 
 {style="table-layout:auto"}
+
 -->
 
 +++
@@ -1058,6 +1059,43 @@ You define a new `Tracking Code (deduplicated)` derived field. You use the [!UIC
 {style="table-layout:auto"}
 
 +++
+
+
+<!-- DEPTH -->
+
+### Depth {#depth}
+
+Returns the depth of a field, similar to what is possible with the out-of-the-box [standard Event Depth dimension](/help/components/dimensions/overview.md#standard-dimensions).
+
++++ Details
+
+## Specifications {#depth-io}
+
+| Input Data Type | Input | Included Operators | Limitations | Output |
+|---|---|---|---|---|
+| Any | Any field| N/A | <p>3 functions per derived field</p> | <p>New derived field</p> |
+
+{style="table-layout:auto"}
+
+
+## Example Data {#depth-example}
+
+| event# | page name | search | product view | cart add  | order |
+|:---:|---|:---:|:---:|:---:|:---:|
+| 1 |  home page        |  0  | 0  | 0  | 0 |
+| 2 |  search page      |  1  | 0  | 0  | 0 |
+| 3 |  product page     |  0  | 0  | 0  | 0 |
+| 4 |  cart page        |  0  | 0  | 1  | 0 |
+| 5 |  confirmation     |  0  | 0  | 0  | 1 |
+
+
+## Use case 1 {#depth-uc1}
+
+You to understand the search depth (also could be interpreted as the number of searches). And then would want to understand the values of the search term for people's third search (or second or fourth).
+
+
++++
+
 
 
 <!-- FIND AND REPLACE -->
@@ -1919,6 +1957,50 @@ You create a  `Store Identifier` derived field. You use the [!UICONTROL TRIM] fu
 {style="table-layout:auto"}
 +++
 
+
+<!-- TYPECASE -->
+
+### Typecast {#typecast}
+
+Change the field type of a field to make it available for additional transformations within Customer Journey Analytics.
+
++++ Details
+
+## Specifications {#typecast-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>Numeric</li><li>Date</li><li>Date-time</li><li>String</li></ul> | <ul><li>[!UICONTROL Field] | <p><ul><li>Integer<ul><li>To String <strong>(Must)</strong></li></ul></li><li>Double<ul><li>To String <strong>(Must)</strong><ul><li>Include # of decimal places to inherit (max 5?)</li></ul></li><li>To Integer <strong>(Should)</strong></li></ul></li><li>Byte<ul><li>To String <strong>(Must)</strong></li></ul></li><li>Long<ul><li>To String <strong>(Must)</strong></li></ul></li><li>Date<ul><li>To String <strong>(Must)</strong><ul><li>Provide the ability to define the output format</li></ul></li><li>Examples<ul><li>Date (Example of January 7, 2025)<ul><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01/07/25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MMM DD, YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. January 07, 2025</li></ul></li></ul></li></ul></li></ul></li><li>Date-time<ul><li>To String <strong>(Must)</strong><ul><li>Provide the ability to define the output format</li></ul></li><li>Examples<ul><li data-stringify-indent="0" data-stringify-border="0">Date-Time (Example of January 7, 2025 at 1:30pm, 52 seconds)<ul><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY/MM/DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY/MM/DD hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM DD, YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. January 07, 2025 13:30:52</li></ul></li></ul></li></ul></li><li>String<ul><li>To Numeric <strong>(Should)</strong><ul><li>If we have values that are not numeric in nature, they will return null.</li><li>We will need the user to input the precision and the locale to use.&nbsp;</li></ul></li></ul></li></ul></li></ul></p> | <p>3 functions per derived field</p> | <p>New derived field</p> |
+
+{style="table-layout:auto"}
+
+
+## Use case 1 {#typecast-uc1}
+
+You have an integer field, screen height (for example device.screenHeight from your event dataset), that you would like to use as a string based dimension.
+
+
+### Derived field {#typecast-uc1-derivedfield}
+
+You define a  `Screen Height` derived field. You use the [!UICONTROL TYPECAST] function to define a rule to [!UICONTROL Typecast to] [!UICONTROL String] the [!UICONTROL Screen height] field and store that in the new derived field.
+
+![Screenshot of the Typecast rule 1](assets/typecast-1.png)
+
+
+
+## Use case 2 {#typecast-uc2}
+
+You want to use Revenue in a Cohort table (which only supports integers), but the Revenue field has a Double type.
+
+![Screenshot of the Typecast rule 2](assets/typecast-2.png)
+
+
+### Derived field {#typecast-uc2-derivedfield}
+
+You define a  `Revenue (integer)` derived field. You use the [!UICONTROL TYPECAST] function to define a rule to [!UICONTROL Typecast to] [!UICONTROL Integer] the [!UICONTROL Revenue] field and store that in the new derived field.
+
+
++++
 
 <!-- URL PARSE -->
 
