@@ -1091,8 +1091,7 @@ Returns the depth of a field, similar to what is possible with the out-of-the-bo
 
 ## Use case 1 {#depth-uc1}
 
-You to understand the search depth (also could be interpreted as the number of searches). And then would want to understand the values of the search term for people's third search (or second or fourth).
-
+You want to understand the search depth (also could be interpreted as the number of searches). And then would want to understand the values of the search term for people's third search (or second or fourth).
 
 +++
 
