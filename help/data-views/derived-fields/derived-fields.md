@@ -928,12 +928,12 @@ Returns the difference between two dates or two date-time fields.
 
 ## Use case 1 {#datemath-uc1}
 
- As the marketing analyst of an hotel company you would like to understand the difference of the number of days between  customers check-in dates and booking dates over the last week.
+ As the marketing analyst of an hotel company you would like to understand the difference of the number of days between customers check-in dates and booking dates over the last week.
 
 
 ### Derived field {#datemath-uc1-derivedfield}
 
-You define a `Days between booking and check-in` derived field. You use the [!UICONTROL DATE MATH] function to define a rule to calculate the days for [!UICONTROL Scope] [!DNL Person] between the [!UICONTROL Booking Date] and [!UICONTROL Check-in Date]. You select [!UICONTROL Day] as [!UICONTROL Granularity]. And you select [!UICONTROL Return the last] for both [!UICONTROL Booking Date] and [!UICONTROL Check-in Date] to ensure the last person scoped value is used in the calculation.
+You define a `Days between booking and check-in` derived field. You use the [!UICONTROL DATE MATH] function to define a rule to calculate the days for [!UICONTROL Scope] [!DNL Person] between the [!UICONTROL Booking Date] and [!UICONTROL Check-in Date]. You select [!UICONTROL Day] as [!UICONTROL Output granularity]. And you select [!UICONTROL Return the last] for both [!UICONTROL Booking Date] and [!UICONTROL Check-in Date] to ensure the last person scoped value is used in the calculation.
 
 ![Screenshot of the Date Math rule](assets/datemath-1.png)
 
@@ -944,12 +944,21 @@ As a marketing analyst of a brick and mortar shop you want to understand how man
 
 ### Derived field {#datemath-uc2-derivedfield}
 
-You define a new `Days Since Visit To Shop` derived field. You use the [!UICONTROL DATE MATH] function to define a rule to calculate the days between a Custom Date-Time ( which you specify in [!UICONTROL Date]) and the [!UICONTROL Local Time] (from your [!UICONTROL placeContext] field group of your event dataset) with a [!UICONTROL Deduplication scope] of [!UICONTROL Person]. And you select [!UICONTROL Return the last] to ensure the last person scoped value for [!UICONTROL Local time] is used in the calculation.
+You define a new `Days Since Visit To Shop` derived field. You use the [!UICONTROL DATE MATH] function to define a rule to calculate the days between a Custom Date-Time (which you specify in [!UICONTROL Date]) and the [!UICONTROL Local Time] (from your [!UICONTROL placeContext] field group of your event dataset) with a [!UICONTROL Deduplication scope] of [!UICONTROL Person]. You select [!UICONTROL Return the last] to ensure the last person scoped value for [!UICONTROL Local time] is used in the calculation. You select Day as the [!UICONTROL Output granularity].
 
-![Screenshot of the Date Math rule](assets/datemath-2.png)
+![Screenshot of the Date Math rule 2](assets/datemath-2.png)
 
 
-### Data after {#datemath-uc2-dataafter}
+## Use case 3 {#datemath-uc3}
+
+You want to understand the search time in minutes before a customer within a session places an order.
+
+You define a new `Time Between Search And Order In Minutes` derived field that is the result of two [[!UICONTROL CASE WHEN] functions](#case-when) to define [!UICONTROL Search Time] and [!UICONTROL Order Time] values. 
+Then you use these two values to calculate the difference with a [!UICONTROL DATE MATH] function with [!UICONTROL Scope] set to [!UICONTROL Session], values set to [!UICONTROL Search Time] and [!UICONTROL Order Time] and [!UICONTROL Output granularity] set to [!UICONTROL Minute]. For both values you select [!UICONTROL Return the first] to ensure the first [!UICONTROL Search Time] and [!UICONTROL Order Time] is returned.
+
+![Screenshot of the Date Math rule 3](assets/datemath-3.png)
+
+
 
 <!--
 | Visitor ID | Marketing Channel | Events |
