@@ -6,8 +6,8 @@ hide: yes
 hidefromtoc: yes
 role: User
 badgePremium: label="Beta"
+exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
 ---
-
 # Real-time reporting overview
 
 Real-time reporting in Customer Journey Analytics displays and updates data and visualizations within one or more panels in Analysis Workspace in real time.
