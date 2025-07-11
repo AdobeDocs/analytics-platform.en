@@ -318,7 +318,9 @@ In a new configuration, you need to define whether you want to use an existing T
 
 #### Existing configuration {#existing-configuration}
 
-For an existing configuration, you cannot edit the Tags property. You can, however, edit the pages and assets to include or exclude.
+For an existing configuration, you cannot edit the Tags property. For updates to a Tags property associated to an existing configuration, use the [Content Analytics Tag extension configuration](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview). 
+
+You can, however, edit the pages and assets to include or exclude.
 
 * To edit which pages should be included or excluded when collecting data for Content Analytics, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** underneath **[!UICONTROL Experience]**. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) that is associated with the Tags property for the current Content Analytics configuration. You can edit the regular expression to include or exclude pages. Ensure you [publish](#publish) your changes.
 
