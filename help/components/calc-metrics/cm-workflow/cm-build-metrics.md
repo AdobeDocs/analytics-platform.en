@@ -1,12 +1,10 @@
 ---
-description: The Calculated Metrics Builder provides a canvas to drag and drop Dimensions, Metrics, Segments, and Functions to create custom metrics based on container hierarchy logic, rules, and operators. This integrated development tool lets you build and save simple calculated metrics or complex advanced calculated metrics.
-title: Build calculated metrics
+description: Learn about the calculated metrics builder that provides a canvas to drag and drop dimensions, metrics, segments, and functions to create custom metrics based on container hierarchy logic, rules, and operators.
+title: Build Metrics
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 ---
 # Build calculated metrics {#build-metrics}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_productcompatibility"
@@ -14,32 +12,16 @@ exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 >abstract="Indicates where in Customer Journey Analytics this calculated metric can be used, such as in Analysis Workspace, Report Builder, and so forth. Some calculated metrics cannot be used with experimentation."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Use calculated metrics in experimentation" 
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_externalid"
 >title="External Id"
 >abstract="Changing the External ID might impact how the calculated metric appears in external sources, such as business intelligence tools"
 
-<!-- markdownlint-enable MD034 -->
-
 Customer Journey Analytics provides a canvas to drag and drop dimensions, metrics, segments, and functions to create custom metrics based on container hierarchy logic, rules, and operators. This integrated development tool lets you build and save simple or complex calculated metrics.
-
-## Begin building a calculated metric
 
 You can use the calculated metric builder to create or edit calculated metrics. When created in this way, calculated metrics are available in the component list and can then be used in projects throughout your organization. Alternatively, you can quickly create a calculated metric that is available only for the project where it was created, as described in [Create calculated metrics for a single project](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) in [Metrics](/help/components/apply-create-metrics.md).
 
-Access the calculated metric builder to begin creating a calculated metric that is available in the component list. 
-
-1. Access the calculated metric builder in any of the follows ways:
-
-   * In Analysis Workspace, open a project, then select **[!UICONTROL Components]** > **[!UICONTROL Create metric]**.
-   * In Analysis Workspace, open a project, then select the **Plus** icon next to the [!UICONTROL **Metrics**] section in the left rail.
-   * In [!DNL Customer Journey Analytics], go to **[!UICONTROL Components]** > **[!UICONTROL Calculated metrics]**, then select **[!UICONTROL + Add]** at the top of the Calculated metrics page.
-
-1. Continue with [Areas of the calculated metric builder](#areas-of-the-calculated-metrics-builder).
+[Create a calculated metric](cm-workflow.md) describes the different options available to create a new calculated metric.
 
 ## Areas of the calculated metrics builder
 
@@ -212,6 +194,5 @@ To delete a container, select ![Close](/help/assets/icons/Close.svg) at the cont
 >[!MORELIKETHIS]
 >
 >[Use functions](cm-using-functions.md)
->[Segments](/help/components/filters/filters-overview.md)
+>[Segments](/help/components/segments/seg-overview.md)
 >
-

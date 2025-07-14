@@ -1,11 +1,11 @@
 ---
 description: Learn how to view forecasts in a table or in a line chart.
-title: How to view forecasts in Analysis Workspace
+title: View Forecasts
 feature: Visualizations
 role: User
 exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
 ---
-# View forecasts in Analysis Workspace
+# View forecasts
 
 You can view forecasts in a freeform table or in a line chart.
 
@@ -22,7 +22,7 @@ Forecasts are shown in the table as follows:
 ![Show forecast in table](assets/show-forecast-table.png)
 
 * The forecast value and percentage for each cell are displayed in **dark grey**.
-* To indicate a forecast value, a forecast symbol <img src="./assets/forecast.svg" alt="Forecast symbol" width=20/> is displayed in the upper-right corner of the cell.
+* To indicate a forecast value, a forecast symbol ![ForecastAnalytics](/help/assets/icons/ForecastAnalytics.svg) is displayed in the upper-right corner of the cell.
 
 
 ## View forecasts in a line chart

@@ -1,5 +1,5 @@
 ---
-description: The Venn visualization lets you drag in up to 3 segments (from Components) and one metric to build a Venn diagram.
+description: Use the Venn visualization to drag up to 3 segments and one metric to build a Venn diagram.
 title: Venn
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57

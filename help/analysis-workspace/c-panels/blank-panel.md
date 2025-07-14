@@ -1,6 +1,6 @@
 ---
-description: How to use the Blank panel in Analysis Workspace.
-title: Blank panel
+description: Learn how to create a blank panel as a starting point for any visualization.
+title: Blank Panel
 feature: Panels
 exl-id: b65d0031-b4c0-4400-8d67-9416f3c993b6
 role: User

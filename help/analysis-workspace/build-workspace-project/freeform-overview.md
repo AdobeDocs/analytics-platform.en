@@ -1,7 +1,7 @@
 ---
-description: Overview of Workspace projects with menu bar and settings
+description: Learn how to work with projects in Analysis Workspace. Use the projects manager to manage (create, delete, move, share, approve, pin, copy, and tag) projects.
 keywords: Analysis Workspace
-title: Projects overview
+title: Projects Overview
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
@@ -49,7 +49,7 @@ The project list ➋ displays all the projects that you own and that have been s
 | **[!UICONTROL Title and description]** | To edit the project, select the title link, which opens the [Workspace project](/help/analysis-workspace/home.md). Projects shared with you are indicated with ![Share](/help/assets/icons/ShareAlt.svg). Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup menu with more details on the project. Select ![More](/help/assets/icons/More.svg) to open a context menu with actions. See [Actions](#actions) for more details. |
 | **[!UICONTROL Type]** | A Workspace project, a ![FolderUser](/help/assets/icons/FolderUser.svg) folder, or a [Mobile Scorecard](/help/mobile-app/home.md). |
 |  **[!UICONTROL Tags]**  | The tags applied to the project. |
-| Scheduled | Whether a project is scheduled o be emailed to recipients. Options are ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL On]** or ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Off]**. See [Send project data to others](/help/analysis-workspace/export/t-schedule-report.md). |
+| **[!UICONTROL Scheduled]** | Whether a project is scheduled o be emailed to recipients. Options are ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL On]** or ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Off]**. See [Send project data to others](/help/analysis-workspace/export/t-schedule-report.md). |
 | **[!UICONTROL Shared link (anyone)]** | Whether a project is shared with anyone, even with people who don't have access to Analysis Workspace. Options are ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Active]** or ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Inactive]**. See [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md) for more information. |
 | **[!UICONTROL Project Role]** | Your role for the project. Options are: Edit, Duplicate, View. See [Project roles](/help/analysis-workspace/curate-share/curate.md) for more information. |
 | **[!UICONTROL Data view]** | The data view that the project is associated with. |

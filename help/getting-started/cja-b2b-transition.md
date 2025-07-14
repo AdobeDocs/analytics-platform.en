@@ -5,13 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
 badgePremium: label="B2B Edition"
-hide: yes
-hidefromtoc: yes
 exl-id: d0e6398b-8080-4e36-b178-0cb91945d0c5
 ---
 # Transition guide
-
-{{draft-b2b}}
 
 This guide discusses how to transition from Customer Journey Analytics to the B2B Edition of Customer Journey Analytics.
 
@@ -19,9 +15,11 @@ The article assumes you already use Customer Journey Analytics to some extent:
 
 * You have [connections](/help/connections/overview.md) that ingest data into Customer Journey Analytics.
 * You have [data views](/help/data-views/data-views.md) that use the data from these connections.
-* You have [projects](/help/analysis-workspace/home.md) with reports and visualization leveraging these data views.
+* You have [projects](/help/analysis-workspace/home.md) with reports and visualizations leveraging these data views.
 
 If you have not used Customer Journey Analytics before, refer to the [B2B Edition quick start guide](cja-b2b-quick-start-guide.md).
+
+If you are an Adobe Analytics user and plan to use Customer Journey Analytics B2B Edition, first refer to the [upgrade from Adobe Analytics to Customer Journey Analytics](cja-upgrade/cja-upgrade-recommendations.md) documentation.
 
 
 ## Existing implementation

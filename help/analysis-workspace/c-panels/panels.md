@@ -1,11 +1,17 @@
 ---
-description: A panel is a collection of tables and visualizations
-title: Panels overview
+description: Understand panels and how to use panels in Analysis Workspace.
+title: Panels Overview
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
 ---
-# Panels overview
+# Panels overview {#panels-overview}
+
+>[!CONTEXTUALHELP]
+>id="workspace_panel_realtime_refresh"
+>title="Real-time refresh"
+>abstract="Enable to refresh data and visualizations in this panel in real-time."
+
 
 A [!UICONTROL panel] is a collection of tables and visualizations. You can access panels from the top-left icon in Workspace or a [blank panel](/help/analysis-workspace/c-panels/blank-panel.md). Panels are helpful when you want to organize your projects according to time periods, data views, or analysis use case.
 
@@ -138,10 +144,10 @@ Drag and drop any segments from the left panel into the panel drop zone to begin
 
 #### Quick segments 
 
-Non-segment components can also be dragged directly into the drop zone to create quick segments, saving you the time and effort of going to the [Segment builder](/help/components/filters/filter-builder.md). Segments created in this way are automatically defined as event-level segments. This definition can be quickly modified by selecting ![Edit](/help/assets/icons/Edit.svg) next to the segment name. 
+Non-segment components can also be dragged directly into the drop zone to create quick segments, saving you the time and effort of going to the [Segment builder](/help/components/segments/seg-builder.md). Segments created in this way are automatically defined as event-level segments. This definition can be quickly modified by selecting ![Edit](/help/assets/icons/Edit.svg) next to the segment name. 
 
 
-For more information, see [Quick segments](/help/components/filters/quick-filters.md).
+For more information, see [Quick segments](/help/components/segments/seg-quick.md).
 
 ![Ad hoc segments that are made public and dropped into the drop zone](assets/adhoc-segment-filter.png)
 

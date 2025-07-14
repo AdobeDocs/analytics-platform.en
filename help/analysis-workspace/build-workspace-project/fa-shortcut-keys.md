@@ -1,12 +1,12 @@
 ---
-description: Learn about keyboard interactions, shortcut keys and point-and-click behaviors available in Analysis Workspace.
+description: Learn how to use keyboard interactions, shortcut keys and point-and-click behaviors available in Analysis Workspace.
 keywords: Analysis Workspace
 feature: Workspace Basics
-title: How to use Workspace hotkeys
+title: Hotkeys
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
 ---
-# Hotkeys (Shortcuts)
+# Hotkeys 
 
 Hotkeys (keyboard shortcuts) are available in Analysis Workspace for seamless navigation, analysis and democratization.
 
@@ -61,6 +61,13 @@ Note that on your keyboard the following symbols might be used:
  | New Line Graph | **[!UICONTROL *opt + 2*]** | **[!UICONTROL *alt + 2*]** | 
  | New Bar Chart | **[!UICONTROL *opt + 3*]** | **[!UICONTROL *alt + 3*]** | 
  | New Combo chart | **[!UICONTROL *opt + 4*]** |  **[!UICONTROL *alt + 4*]** | 
+
+## Move panel actions
+
+|  Action  |  Shortcut Mac  |  Shortcut Windows  | 
+| --- | --- | --- | 
+| Move panel up | **[!UICONTROL *cmd + opt + up*]** |  **[!UICONTROL *alt + ctrl + up*]** | 
+| Move panel down | **[!UICONTROL *cmd + opt + down*]** |  **[!UICONTROL *alt + ctrl + down*]** |   
 
 ## Democratization actions
 

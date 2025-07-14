@@ -1,13 +1,13 @@
 ---
-title: View annotations
-description: How to view annotations in Workspace.
+title: View Annotations
+description: Learn how to view annotations in Analysis Workspace.
 role: User
 feature: Components
 exl-id: c0e4fb37-b20c-463c-b29a-310ca3adb2c7
 ---
 # View annotations
 
-Annotations manifest slightly differently, depending on whether they span a single day or a date range.
+Annotations manifest slightly differently, depending on where they appear and whether they span a single day or a date range. 
 
 ## View annotations in Line charts or Tables
 

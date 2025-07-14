@@ -1,7 +1,7 @@
 ---
-description: Visually represent your data in Analysis Workspace.
+description: Learn how to visually represent your data with visualizations available in Analysis Workspace.
 keywords: Analysis Workspace
-title: Visualizations overview
+title: Visualizations Overview
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
@@ -133,11 +133,11 @@ Use the context menu (available through alternate select, for example, right-cli
 | Option | Description |
 | --- | --- |
 | **[!UICONTROL Insert copied visualization]**| Paste (insert) a copied visualization to another place within the project, or into a completely different project. |
-| **[!UICONTROL Copy data to clipboard]** | Copy data from the visualization onto the clipboard. |
-| **[!UICONTROL Copy selection to clipboard]** | Copy the selection from the visualization onto the clipboard. |
-| **[!UICONTROL Download items as CSV (*dimension name*)]** | Download the dimension items (to a maximum of 50,000) of the visualization to your local device. A maximum of 50,000 dimension items for the selected dimension. |
+| **[!UICONTROL Copy data to clipboard]** | [Copy data](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) from the visualization onto the clipboard. |
+| **[!UICONTROL Copy selection to clipboard]** | [Copy the selection](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) from the visualizaion onto the clipboard. |
+| **[!UICONTROL Download items as CSV (*dimension name*)]** | [Download the dimension items](/help/analysis-workspace/export/download-send.md#download-items-as-csv) (to a maximum of 50,000) of the visualization to your local device. A maximum of 50,000 dimension items for the selected dimension. |
 | **[!UICONTROL Copy visualization]** | Copy the visualization, so that you can insert the visualization to another place within the project, or into a completely different project. |
-| **[!UICONTROL Download data CSV]** | Download the displayed data of the visualization to your local device. |
+| **[!UICONTROL Download data CSV]** | [Download the displayed data](/help/analysis-workspace/export/download-send.md#download-as-csv) of the visualization to your local device. |
 | **[!UICONTROL Export full table]** | Export the full table to a designated cloud locations. See [Exports Customer Journey Analytics reports to the cloud](../export/export-cloud.md) |
 | **[!UICONTROL Duplicate visualization]** | Make an exact duplicate of the visualization. |
 | **[!UICONTROL Edit description]** | Add (or edit) a text description for the visualization. See [Text](text.md). |

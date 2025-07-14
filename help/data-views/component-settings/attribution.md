@@ -49,13 +49,13 @@ To update a component's default attribution model:
 
 1. Go to the data view that contains the component whose default attribution model you want to update.
 
-1. Select the component, then expand the Attribution section on the right side of the screen.
+1. Select the component, then expand the **[!UICONTROL Attribution]** section on the right side of the screen.
 
    ![Data views window highlighting the Set attribution option](../assets/attribution-settings.png)
 
-1. Select [!UICONTROL **Set attribution**], then select the attribution model in the [!UICONTROL **Attribution Model**] drop-down menu.
+1. Select [!UICONTROL **Set attribution**], then select the [attribution model](#attribution-models), [container](#container) and [lookback](#lookback-window) window.
 
-   See [Attribution models](#attribution-models) to learn about each attribution model.
+
 
 1. Select [!UICONTROL **Save and continue**].
 
@@ -80,49 +80,14 @@ To update a component's default attribution model:
 
 {{attribution-models-details}}
 
+## Container 
+
+{{attribution-container}}
 
 ## Lookback window
 
 {{attribution-lookback-window}}
 
+## Example
 
-
-## Attribution example {#attribution-example}
-
-Consider the following example:
-
-1. On September 15, a person arrives to your site through a paid search advertisement, then leaves.
-1. On September 18, the person arrives to your site again through a social media link they got from a friend. They add several items to their cart, but do not purchase anything.
-1. On September 24, your marketing team sends them an email with a coupon for some of the items in their cart. They apply the coupon, but visit several other sites to see if any other coupons are available. They find another through a display ad, then ultimately make a purchase for $50.
-
-Depending on your lookback window and attribution model, channels receive different credit. The following are some examples:
-
-* Using **first touch** and a **session lookback window**, attribution looks at only the third visit. Between email and display, email was first, so email gets 100% credit for the $50 purchase.
-
-* Using **first touch** and a **person lookback window**, attribution looks at all three visits. Paid search was first, so it gets 100% credit for the $50 purchase.
-
-* Using **linear** and a **session lookback window**, credit is divided between email and display. Both of these channels each get $25 credit.
-Using **linear** and a **person lookback window**, credit is divided between paid search, social, email, and display. Each channel gets $12.50 credit for this purchase.
-
-* Using **J-shaped** and a **person lookback window**, credit is divided between paid search, social, email, and display.
-
-  * 60% credit is given to display, for $30.
-  * 20% credit is given to paid search, for $10.
-  * The remaining 20% is divided between social and email, giving $5 to each.
-
-* Using **Time Decay** and a **person lookback window**, credit is divided between paid search, social, email, and display. Using the default 7-day half-life:
-
-  * Gap of zero days between display touch point and conversion. `2^(-0/7) = 1`
-  * Gap of zero days between email touch point and conversion. `2^(-0/7) = 1`
-  * Gap of six days between social touch point and conversion. `2^(-6/7) = 0.552`
-  * Gap of nine days between paid search touch point and conversion. `2^(-9/7) = 0.41`
-  * Normalizing these values results in the following:
-  
-      * Display: 33.8%, getting $16.88
-      * Email: 33.8% getting $16.88
-      * Social: 18.6%, getting $9.32
-      * Paid Search: 13.8%, getting $6.92
-
-Conversion events that typically have whole numbers are divided if credit belongs to more than one channel. For example, if two channels contribute to an order using a Linear attribution model, both channels get 0.5 of that order. These partial metrics are summed across all people then rounded to the nearest integer for reporting.
-
-
+{{attribution-example}}
