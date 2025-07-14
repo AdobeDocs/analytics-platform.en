@@ -285,7 +285,7 @@ To create a segment from the map visualization:
 
 1. Select **[!UICONTROL Create segment from selection]** from the drop-down menu that appears.
 
-1. Use the Segment builder to define the new segment. For more information, see [Segment builder](/help/components/filters/filter-builder.md).
+1. Use the Segment builder to define the new segment. For more information, see [Segment builder](/help/components/segments/seg-builder.md).
 
 ## Create an audience from the map visualization
 
