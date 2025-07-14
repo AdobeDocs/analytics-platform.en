@@ -34,7 +34,7 @@ You want to validate, for example:
   * When your new product page went live, are you collecting customer data from the page?
   * Is your live media event going ok?
 
-Do not consider real-time reporting for operations monitoring use cases. For example, to answer the question: is my site actually working?
+Do not consider real-time reporting for operations monitoring use cases. For example, to answer the question: is a site actually working?
 
 
 ## Definition
