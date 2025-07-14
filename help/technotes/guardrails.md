@@ -47,7 +47,7 @@ Some of the features and their associated value for the limit depend on the Cust
 | Panels per Project | 15 | System-enforced Guardrail  | Maximum number of [panels](../analysis-workspace/home.md#panels) per project. |
 | Visualizations per Panel | 25 | System-enforced Guardrail  |  Maximum number of [visualizations](../analysis-workspace/home.md#visualizations) per panel. |
 | Derived Fields per Freeform Table | 5 | System-enforced Guardrail | Maximum number of different derived fields in a single freeform table. |
-| Comments per project <p>**Note:** The ability to comment on projects is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).</p> | 1,000 | System-enforced Guardrail | Maximum number of comments per project. |
+| Comments per project | 1,000 | System-enforced Guardrail | Maximum number of comments per project. |
 
 {style="table-layout:auto"}
 
