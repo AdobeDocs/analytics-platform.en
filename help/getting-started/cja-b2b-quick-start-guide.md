@@ -10,8 +10,6 @@ exl-id: ff8d419e-5cc6-4e1b-8cf8-9dbaa8054179
 
 # B2B Edition quick start guide
 
-{{draft-b2b}}
-
 To implement Customer Journey Analytics B2B Edition, ensure you first do understand the B2B specific concepts and features. Also, you should be familiar with the traditional workflow to implement Customer Journey Analytics. 
 
 This document focuses on the workflow specific to the implementation of Customer Journey Analytics.

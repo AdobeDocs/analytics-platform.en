@@ -238,8 +238,6 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >title="Optional containers"
 >abstract="Select additional containers.<br/><br/>**[!UICONTROL Global account]**: enables configuration of global accounts in a connection.<br/>**[!UICONTROL Opportunity]**: enables configuration of opportunities in a connection.<br/>**[!UICONTROL Buying group]**: enables configuration of buying groups in a connection."
 
-
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
 >title="Account ID"
@@ -359,6 +357,43 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >id="connection_connectionmap"
 >title="Connection map"
 >abstract="The Connection map visualizes the relationships between event, person, account and relevant lookup datasets (like opportunities, campaign members, and more)."
+
+>[!CONTEXTUALHELP]
+>id="connection_stitching_enable"
+>title="Enable identity stitching"
+>abstract="Enable identity stitching to elevate this event dataset for cross-channel analysis."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
+
+>[!CONTEXTUALHELP]
+>id="connection_stitching_dialog"
+>title="Enable identity stitching"
+>abstract="Enable identity stitching derives a stitched ID from a single or from multiple datasets. This process may include the merge of user data from authenticated and unauthenticated sessions.<br/><br/>You are responsible to comply with applicable laws and regulations. This compliance includes that you obtain the necessary end user permissions before you merge datasets."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
+
+>[!CONTEXTUALHELP]
+>id="connection_persistentid"
+>title="Person ID"
+>abstract="Select a persistent ID from the available identities. A persistent ID is an identifier that is available on all events in the event dataset."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
+
+>[!CONTEXTUALHELP]
+>id="connection_lookbackwindow"
+>title="Lookback window"
+>abstract="Select the appropriate time period for the lookback window to use in replay stitching."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
+
+>[!CONTEXTUALHELP]
+>id="connection_namespace_map"
+>title="Namespace identity map"
+>abstract="Select the namespace to use to pick the identifier from the identity map."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
+
+>[!CONTEXTUALHELP]
+>id="connection_namespace_graph"
+>title="Namespace identity graph"
+>abstract="Select the namespace to use to update the identifier in the identity graph."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
+
 
 ### Add datasets
 
@@ -598,8 +633,6 @@ This preview contains some columns listing the connection configuration. What co
 
 
 ## Connection map
-
-[!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} 
 
 To see a map of the relationships between the datasets that are part of your connection, select ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Connection map]** in the Connection settings dialog.
 

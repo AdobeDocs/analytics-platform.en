@@ -1,6 +1,6 @@
 ---
-title: Media Concurrent Viewers panel
-description: How to use and interpret the Media concurrent viewers panel in Analysis Workspace.
+title: Media Concurrent Viewers Panel
+description: Learn how to use and interpret the Media Concurrent Viewers panel in Analysis Workspace.
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User

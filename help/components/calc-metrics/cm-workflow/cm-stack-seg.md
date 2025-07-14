@@ -1,6 +1,6 @@
 ---
-description: Shows how to stack and replace segments within the Calculated Metric Builder.
-title: Stack and replace segments
+description: Learn how to stack and replace segments within the Calculated metric builder.
+title: Stack And Replace Segments
 feature: Calculated Metrics
 exl-id: a396599c-2033-40a7-90b5-f9c84106c328
 ---

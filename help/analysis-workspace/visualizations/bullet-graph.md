@@ -1,6 +1,6 @@
 ---
-description: Shows how a value you are interested in compares to or measures against other performance ranges (goals).
-title: Bullet graph
+description: Learn how to use the bullet visualization in Analysis Workspace. The bullet visualization allows you to compare to or measures against other performance ranges (goals).
+title: Bullet
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User

@@ -1,11 +1,11 @@
 ---
-description: Learn how to add components to a project in Analysis Workspace
-title: Use components in Analysis Workspace
+description: Learn how to use components in a project in Analysis Workspace
+title: Use Components In A Project
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
 ---
-# Use components in Analysis Workspace
+# Use components in a project
 
 Components make up the actual data of any project in Analysis Workspace. Components consist of dimensions, metrics, segments, and date ranges. You can add components to a project by dragging them into visualizations or panels.
 
@@ -85,7 +85,7 @@ For more information about metrics, see [Metrics](/help/components/apply-create-
 
 ### Add segments to a project
 
-[Segments](/help/components/filters/filters-overview.md) allow you to identify subsets of persons, sessions or events based on characteristics or specific interactions.
+[Segments](/help/components/segments/seg-overview.md) allow you to identify subsets of persons, sessions or events based on characteristics or specific interactions.
 
 You can use segments in Analysis Workspace in any of the following ways:
 
@@ -97,7 +97,7 @@ You can use segments in Analysis Workspace in any of the following ways:
   When you add segments to a column in a freeform table, the segments apply to all content within the table column. You can also add segments as part of a fallout visualization.
 
 * Use segments in components
-  Whe you define components like [calculated metrics](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [annotations](/help/components/annotations/create-annotations.md#annotation-builder), or even [segments](/help/components/filters/filter-builder.md) you can use segments as part of the definition.
+  Whe you define components like [calculated metrics](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md), [annotations](/help/components/annotations/create-annotations.md#annotation-builder), or even [segments](/help/components/segments/seg-builder.md) you can use segments as part of the definition.
 
 
 ### Add date ranges to a project

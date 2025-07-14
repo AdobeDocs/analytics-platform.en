@@ -1,6 +1,6 @@
 ---
-description: Learn how to create a project in Analysis Workspace
-title: Create projects
+description: Learn how to create a project in Analysis Workspace.
+title: Create Projects
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
@@ -34,7 +34,7 @@ Now that you have created a Blank Workspace project, ensure you are familiar wit
   * **[!DNL Store Country]** [dimension](/help/components/dimensions/overview.md) ➍
   * **[!DNL People]** [metric](/help/components/apply-create-metrics.md) ➎ 
   * **[!DNL Avg Order Value]** [calculated metric](/help/components/calc-metrics/calc-metr-overview.md) ➏ 
-  * **[!DNL Mobile App Sessions]** [segment](/help/components/filters/filters-overview.md) ➐
+  * **[!DNL Mobile App Sessions]** [segment](/help/components/segments/seg-overview.md) ➐
   * **[!DNL Last Month]** [date range](/help/components/date-ranges/overview.md) ➑ 
   * **[!DNL Example]** [annotation](/help/components/annotations/overview.md) ➒
 
@@ -75,7 +75,7 @@ Settings include:
 | Show annotations | Specify whether annotations are shown for this project or not. |
 |  [Project color palette](/help/analysis-workspace/build-workspace-project/color-palettes.md)  | You can change the categorical color palette used in Workspace, by choosing from out-of-the-box palettes that have been optimized for color blindness, or by specifying your custom palette. This feature affects many things in Workspace, including most visualizations.  |
 | [View Density](/help/analysis-workspace/build-workspace-project/view-density.md) | Lets you see more data on the screen by reducing the vertical padding of the left panel, freeform tables and cohort tables. |
-| Allow commenting | **Note:** This functionality is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md). <p>When this option is enabled, a comments area is available in the right rail of the project in Analysis Workspace. For more information, see [Add and manage comments in projects](/help/analysis-workspace/build-workspace-project/comment-projects.md).</p>  |
+| Allow commenting | When this option is enabled, a comments area is available in the right rail of the project in Analysis Workspace. For more information, see [Add and manage comments in projects](/help/analysis-workspace/build-workspace-project/comment-projects.md).  |
 
 
 

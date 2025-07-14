@@ -45,7 +45,7 @@ You benefit from cross-channel analysis if you combine one or more of your stitc
 >[!IMPORTANT]
 >
 >
->- Apply any change that you make to the source event dataset schema also to the new stitched dataset schema, otherwise it breaks the stitched dataset.
+>- Apply any change that you make to the source event dataset schema also to the new stitched dataset schema.
 >
 >- If you remove the source dataset, the stitched dataset stops processing and gets removed by the system.
 >
