@@ -315,6 +315,10 @@ To create a trended line chart from the map visualization:
 
    A line visualization is built that includes a trendline. For more information about this visualization, see [Line](/help/analysis-workspace/visualizations/line.md).
 
+<!--
+
+Can you do this?
+
 ## Add a breakdown from the map visualization
 
 You can break down a specific dimension item, metric, segment, or date range for the data within a designated area that you select in the map visualization.
@@ -325,11 +329,19 @@ To add a breakdown from the map visualization:
 
 1. Click the selection tool ![map selection icon](assets/map-selection-icon.png), then drag your mouse to select the desired area.
 
-1. 
+1. Select **[!UICONTROL Add breakdown]**. 
+
+-->
+
+<!--
+
+Can you do this?
 
 ## Export the map visualization as a PDF
 
 To export the map visualization in PDF format:
 
-1. 
+1. how...
+
+-->
 
