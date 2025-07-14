@@ -7,8 +7,6 @@ exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
 ---
 # Add and manage comments in projects {#comment-on-projects}
 
-{{release-limited-testing}}
-
 Comments in Analysis Workspace allow you to share insights and ask questions within the context of an Analysis Workspace project. This can streamline discussions about the data, keeping conversations within the context of the data that is being discussed. 
 
 >[!NOTE]
