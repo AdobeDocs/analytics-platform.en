@@ -1,7 +1,7 @@
 ---
 description: Understand how to use real-time reporting in Analysis Workspace.
 title: Use Real-Time Reporting
-feature: Filters, Segments
+feature: Real-time Reporting
 hide: yes
 hidefromtoc: yes
 role: User
@@ -17,8 +17,10 @@ To use real-time reporting, enable the **[!UICONTROL Real-time refresh]** toggle
 
 
 * [Blank panel](/help/analysis-workspace/c-panels/blank-panel.md)
-* [Freeform panel](/help/analysis-workspace/c-panels/freeform-panel.md)
-* ...
+* [Freeform](/help/analysis-workspace/c-panels/freeform-panel.md)
+* [Attribution](/help/analysis-workspace/c-panels/attribution.md)
+* [Next or previous item](/help/analysis-workspace/c-panels/next-previous.md)
+* [Quick insights](/help/analysis-workspace/c-panels/quickinsight.md)
 
 You see a message with the timestamp of the most recent refresh of the data. For example: [!UICONTROL  *Last refreshed at 07:55 pm*].
 
@@ -30,7 +32,7 @@ Select the real-time period you want to report on from the drop-down menu. Avail
 * [!UICONTROL Last 8 hours]
 * [!UICONTROL Last 24 hours]
 
-All visualizations are now updated every minute for a maximum of 30 minutes while the browser tab with the real-time refresh enabled panel is active.
+All visualizations in the panel are now updated every minute for a maximum of 30 minutes while the browser tab with the real-time refresh enabled panel is active.
 
 ![Real-time refresh](assets/real-time-refresh.gif)
 
