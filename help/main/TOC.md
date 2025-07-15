@@ -390,8 +390,10 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
     + [Edit component entries in the Data Dictionary](../components/data-dictionary/edit-entries-data-dictionary.md)
     + [Monitor Data Dictionary health](../components/data-dictionary/monitor-data-dictionary-health.md)
+  + Real-time reporting {#real-time-reporting}
+    + [Overview](/help/components/real-time/real-time.md)
+    + [Use real-time reporting](/help/components/real-time/use-real-time.md)
   + [Scheduled projects](../components/scheduled-projects-manager.md)
-
 + Report Builder {#cja-reportbuilder}
   + [Overview](../report-builder/rb-overview.md)
   + [Report Builder set up](../report-builder/report-builder-setup.md)
