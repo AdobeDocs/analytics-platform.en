@@ -1,7 +1,7 @@
 ---
 description: Understand real-time reporting capabilities in Customer Journey Analytics.
 title: Real-Time Reporting Overview
-feature: Filters, Segments
+feature: Real-time Reporting
 hide: yes
 hidefromtoc: yes
 role: User
