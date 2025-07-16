@@ -15,6 +15,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | --- | --- |
 | **July 2025** | |
 | Debugger | New article on how to enable, use and disable the project debugger in Analysis Workspace. |
+| Flow visualization performance recommendation | Added information stating that leaving more than 10 nodes expanded in a single flow visualization can affect reporting time. |
 | **June 2025** | |
 | New shortcut actions | New keyboard shortcuts in Analysis Workspace now allow you to [move Workspace panels](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#move-panel-actions) up and down in a project.  | 
 | **May 2025** | |
