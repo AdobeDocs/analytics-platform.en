@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (July 2025)
 
-**Last update**: July 15, 2025
+**Last update**: July 17, 2025
 
 
 These release notes cover the release period of July 11, 2025 to August 15, 2025. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
@@ -20,7 +20,6 @@ These release notes cover the release period of July 11, 2025 to August 15, 2025
 | **Derived fields - Typecast function** | The Typecast derived field function provides the ability to change a field type on the fly and to make the field available for additional transformations within Customer Journey Analytics. |. |  July 30, 2025 |
 | **Derived fields - Date Math function** | The Date Math derived field function provides the ability to return the difference between two Date or Date-time fields. | | July 30, 2025 |
 | **Ares: Derived Fields Depth Function** | The Depth derived field function provides the ability to return the depth of a field, similar to what is possible with the out-of-the-box standard Event Depth dimension. |  | July 30,2025 |
-| **Support for Chrome pre-rendering** | Control how data collection libraries behave when Chrome pre-renders a page. (Documentation link to follow)|  |  July 31, 2025  (previously June 30, 2025) |
 
 ## Fixes in Customer Journey Analytics
 
