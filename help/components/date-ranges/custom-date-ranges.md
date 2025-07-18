@@ -1,16 +1,14 @@
 ---
-description: Example of custom date ranges in Analysis Workspace.
+description: Learn how to define custom date ranges in Analysis Workspace.
 keywords: Analysis Workspace
-title: Example custom date ranges
+title: Example Custom Date Ranges
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
 role: User
 ---
 # Example custom date ranges
 
-This article shows more examples of custom date ranges
-
-
+This article shows more examples of custom date ranges.
 
 ## Last two months ago
 
