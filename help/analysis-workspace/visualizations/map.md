@@ -206,7 +206,9 @@ The map visualization in Customer Journey Analytics differs from the map visuali
         * Show negative numbers. 
         
           For example, if you are plotting a year-over-year metric, the map can show -33% over New York.
+
         * With metrics that are of type *percent*, clustering averages the percentages together.
+
         * A green and red color scheme indicates positive and negative.
 
     * **Additional visualization settings**: Select the Settings icon ![Setting](/help/assets/icons/Setting.svg) in the visualization header to view additional settings for the map visualization. For more information, see [Configure visualization settings](#configure-visualization-settings).
@@ -232,7 +234,7 @@ To configure settings for the map visualization:
    | **[!UICONTROL Styles]** | | |
    | |**[!UICONTROL Color theme]**|Shows the color scheme for the heat map and bubbles. You can choose among Coral, Reds, Greens or Blues. The default is Coral.|
    | |**[!UICONTROL Map style]**|You can choose from Basic, Streets, Bright, Light, Dark, and Satellite.|
-   | | **[!UICONTROL Cluster radius]**|Groups data points together that are within the specified number of pixels. The default is 50.|
+   | | **[!UICONTROL Cluster radius]**|Groups data points together that are within the specified number of pixels. The default is 50.<p>This option is available only when **[!UICONTROL Bubbles]** is selected as the **[!UICONTROL Map type]**.</p>|
    | | **[!UICONTROL Custom max value]**|Lets you alter the threshold for the max value for the map. Adjusting this value adjusts the scale for the bubbles or heatmap values (color and size) relative to the custom max value that you set.|
    | | **[!UICONTROL Show annotations]** | Shows the annotations made for this visualization. |
    | | **[!UICONTROL Hide title]** | Hides the title of the visualization.  |
@@ -257,19 +259,19 @@ If you have custom datasets with deep precision, you can configure the map visua
 
    1. In the **[!UICONTROL Decimal places]** field, change the number of decimals to reflect the desired level of precision: 
 
-      * **0:** Precise to the large region or country level in the map visualization. Shows 0 decimal places in Worspace reports. 
+      * **0:** Precise to the large region or country level in the map visualization. Shows 0 decimal places in Workspace reports. 
 
-      * **1:** Precise to the region or large city level in the map visualization.  Shows 1 decimal place in Worspace reports. 
+      * **1:** Precise to the region or large city level in the map visualization.  Shows 1 decimal place in Workspace reports. 
    
-      * **2:** Precise to the town or zip code level in the map visualization. Shows 2 decimal places in Worspace reports. 
+      * **2:** Precise to the town or zip code level in the map visualization. Shows 2 decimal places in Workspace reports. 
 
         This is the default selection.
 
-      * **3:** Precise to the very small town or neighborhood level in the map visualization. Shows 3 decimal places in Worspace reports. 
+      * **3:** Precise to the very small town or neighborhood level in the map visualization. Shows 3 decimal places in Workspace reports. 
 
-      * **4:** Precise to a specific parcel of land or building level in the map visualization. Shows 4 decimal places in Worspace reports. 
+      * **4:** Precise to a specific parcel of land or building level in the map visualization. Shows 4 decimal places in Workspace reports. 
 
-      * **5:** Precise to a single meter in the map visualization. Shows 5 decimal places in Worspace reports. 
+      * **5:** Precise to a single meter in the map visualization. Shows 5 decimal places in Workspace reports. 
 
 1. Select **[!UICONTROL Save and continue]** > **[!UICONTROL Save and finish]**.
 
