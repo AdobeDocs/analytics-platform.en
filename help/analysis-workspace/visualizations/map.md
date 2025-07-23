@@ -281,11 +281,13 @@ You can create a segment based on a specific area that you select in the map vis
 
 To create a segment from the map visualization:
 
-1. (Optional) Zoom in on the specific area of the map that contains the data that you want to use for the segment. 
+1. Zoom or pan to the area of the map that contains the data that you want to use for your segment. 
 
-1. Click the selection tool ![map selection icon](assets/map-selection-icon.png), then drag your mouse to select the desired area.
+1. Do either of the following:
 
-1. Select **[!UICONTROL Create segment from selection]** from the drop-down menu that appears.
+   * **To create a segment from everything currently shown in the map:** Right-click anywhere on the map, then select **[!UICONTROL Create segment from current view]**.
+
+   * **To create a segment for a more specific area of the map:** Click the selection tool ![map selection icon](assets/map-selection-icon.png), drag your mouse to select the desired area, then select **[!UICONTROL Create segment from selection]**.
 
 1. Use the Segment builder to define the new segment. For more information, see [Segment builder](/help/components/segments/seg-builder.md).
 
@@ -295,11 +297,13 @@ You can create an audience based on a specific area that you select in the map v
 
 To create an audience from the map visualization:
 
-1. (Optional) Zoom in on the specific area of the map that contains the data that you want to use for the audience.
+1. Zoom or pan to the area of the map that contains the data that you want to use for your audience.
 
-1. Click the selection tool ![map selection icon](assets/map-selection-icon.png), then drag your mouse to select the desired area.
+1. Do either of the following:
 
-1. Select **[!UICONTROL Create audience from selection]** from the drop-down menu that appears.
+   * **To create an audience from everything currently shown in the map:** Right-click anywhere on the map, then select **[!UICONTROL Create audience from current view]**.
+
+   * **To create an audience for a more specific area of the map:** Click the selection tool ![map selection icon](assets/map-selection-icon.png), drag your mouse to select the desired area, then select **[!UICONTROL Create audience from selection]**.
 
 1. Use the Audience builder to define the new audience. For more information, see [Audience builder](/help/components/audiences/publish.md#audience-builder) in [Create and publish audiences](/help/components/audiences/publish.md)
 
@@ -309,11 +313,13 @@ You can create a trended line chart visualization for the data within a specific
 
 To create a trended line chart from the map visualization:
 
-1. (Optional) Zoom in on the specific area of the map that contains the data that you want to use for the trended line chart.
+1. Zoom or pan to the area of the map that contains the data that you want to use for the trended line chart. 
 
-1. Click the selection tool ![map selection icon](assets/map-selection-icon.png), then drag your mouse to select the desired area.
+1. Do either of the following:
 
-1. Select **[!UICONTROL Trend]** from the drop-down menu that appears.
+   * **To create a trended line chart from everything currently shown in the map:** Right-click anywhere on the map, then select **[!UICONTROL Trend from current view]**.
+
+   * **To create a trended line chart for a more specific area of the map:** Click the selection tool ![map selection icon](assets/map-selection-icon.png), drag your mouse to select the desired area, then select **[!UICONTROL Trend]**.
 
    A line visualization is built that includes a trendline. For more information about this visualization, see [Line](/help/analysis-workspace/visualizations/line.md).
 
