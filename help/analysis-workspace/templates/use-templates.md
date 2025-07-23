@@ -532,7 +532,7 @@ The following templates are available:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Learn what content and content attributes are performing best."
->abstract="**This can help you** learn how your content is performing at a granular level. You can look at the performance of individual assets, or specific attributes. Content Analytics uses AI to automatically generate attributes and tag your content with them. <a href=\"https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics\" target=\"_blank\">Learn more</a>.<br/>**Based on what you learn, you might** do any number of things, like promote high performing assets on your home page, personalize content for specific segments to include high performing attributes, or rotate out content that has started to get stale."
+>abstract="**This can help you** learn how your content is performing at a granular level. You can look at the performance of individual assets, or specific attributes. Content Analytics uses AI to automatically generate attributes and tag your content with them. <a href="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics" target=&quot;_blank&quot;>Learn more</a>.<br/>**Based on what you learn, you might** do any number of things, like promote high performing assets on your home page, personalize content for specific segments to include high performing attributes, or rotate out content that has started to get stale."
 
 <!-- markdownlint-enable MD034 -->
 
