@@ -6,8 +6,8 @@ feature: Derived Fields
 role: Admin
 hide: yes
 hidefromtoc: yes
+exl-id: cf8ce7ff-9805-449e-b239-977e3c65e4f0
 ---
-
 # Derived fields  (limited testing){#derived-fields}
 
 {{release-limited-testing}}
