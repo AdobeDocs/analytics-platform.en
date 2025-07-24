@@ -133,7 +133,9 @@ To drill down further into the data, you have several options:
 
 * The flow diagram is interactive. Mouse over the diagram to change the details that are shown.
 
-* When you select on a node in the diagram, the details for that node appear. Select the node again to collapse it.
+* When you select a node in the diagram, the details for that node appear. Select the node again to collapse it.
+
+  Leaving multiple nodes expanded in a flow visualization can affect reporting time. As a general guideline, no more than 10 nodes should remain expanded at a given time. 
 
    ![Example interactive flow diagram showing node-details.](assets/node-details.png)
 
@@ -168,7 +170,7 @@ Use a context menu on any node in the flow visualization with the following opti
 | **[!UICONTROL Exclude item]** or **[!UICONTROL Restore excluded items]** | Removes a specific node from the column and automatically creates it as a filter at the top of the column. To restore the excluded item, from the context menu select **[!UICONTROL Restore Excluded Item]**. you can also open the segment at the top of the column and remove the pillbox with the item you just excluded. |
 | **[!UICONTROL Trend]** | Create a trended diagram for the node. |
 | **[!UICONTROL Show next column]** / **[!UICONTROL Show previous column]** | Reveals the next (right) or previous (left) column of the visualization. |
-| **[!UICONTROL Hide colum]**n | Hides the selected column from the visualization. | 
+| **[!UICONTROL Hide column]**n | Hides the selected column from the visualization. | 
 | **[!UICONTROL Expand entire column]** | Expand a column to show all nodes. By default, only the top five nodes display. |
 | **[!UICONTROL Create audience from selection]** | Creates an audience based on the column that is selected. |
 | **[!UICONTROL Collapse entire column]** | Hide all nodes in a column. |
