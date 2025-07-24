@@ -13,27 +13,6 @@ role: Admin
 >title="Derived fields"
 >abstract="A derived field allows you to define data manipulations on the fly, through a customizable rule builder. You can then use that derived field as a component (metric or dimension) in Workspace or even further define as a component in Data view."
 
-<!-- BEGIN
-     Temporarily have these entries at the top; once functions are documented
-     move them to appropriate function section
--->
-
->[!CONTEXTUALHELP]
->id="dataview_derivedfields_datemath"
->title="Date math"
->abstract="This function provides the ability to return the difference between two date or date-time fields."
-
->[!CONTEXTUALHELP]
->id="dataview_derivedfields_typecast"
->title="Typecast"
->abstract="This function provides the ability to change the field type on the fly to make the field available for additional transformations within Customer Journey Analytics."
-
->[!CONTEXTUALHELP]
->id="dataview_derivedfields_depth"
->title="Depth"
->abstract="This function provides the ability to return the depth of any field, similar to the functionality of the event depth standard component."
-
-<!-- END -->
 
 Derived fields are an important aspect of the real-time reporting functionality in Adobe Customer Journey Analytics. A derived field allows you to define (often complex) data manipulations on the fly, through a customizable rule builder. You can then use that derived field as a component (metric or dimension) in [Workspace](../../analysis-workspace/home.md) or even further define the derived field as a component in [Data view](../data-views.md). 
 
@@ -438,14 +417,10 @@ For each supported function, find details below on:
 
 ### Case When {#casewhen}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_casewhen"
 >title="Case When"
 >abstract="This function provides the ability to apply conditionals based on defined criteria from one or more fields. Those criteria are then used to define the values in the new derived field based on the sequence of the conditions."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Applies conditionals, based on defined criteria from one or more fields. These criteria are then used to define the values in a new derived field, based on the sequence of the conditions.
@@ -678,14 +653,10 @@ The following constraints apply and are enforced when *selecting* and *setting* 
 
 ### Classify {#classify}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_classify"
 >title="Classify"
 >abstract="This function provides the ability to define a set of values that are replaced by corresponding values by text entry."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Defines a set of values that are replaced by corresponding values in a new derived field.
@@ -912,10 +883,17 @@ You define an `Origin - Destination` derived field. You use the [!UICONTROL CONC
 
 ### Date Math {#datemath}
 
+>[!CONTEXTUALHELP]
+>id="dataview_derivedfields_datemath"
+>title="Date Math"
+>abstract="This function provides the ability to return the difference between two date or date-time fields."
+
 Returns the difference between two dates or two date-time fields.
 
-+++ Details
+{{release-limited-testing-section}}
 
+
++++ Details
 
 ## Specifications {#datemath-io}
 
@@ -979,14 +957,10 @@ Then you use these two values to calculate the difference with a [!UICONTROL DAT
 
 ### Deduplicate {#dedup}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_deduplicate"
 >title="Deduplicate"
 >abstract="This function provides the ability to configure a field to only count values non-repetitively at either the session or person level. Additionally, a deduplication ID can be used to ensure that based on a given ID (such as a purchase ID), only one value is used (either the first instance or the last instance)."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Prevents counting a value multiple times.
@@ -1074,7 +1048,14 @@ You define a new `Tracking Code (deduplicated)` derived field. You use the [!UIC
 
 ### Depth {#depth}
 
+>[!CONTEXTUALHELP]
+>id="dataview_derivedfields_depth"
+>title="Depth"
+>abstract="This function provides the ability to return the depth of any field, similar to the functionality of the event depth standard component."
+
 Returns the depth of a field, similar to what is possible with the out-of-the-box [standard Event Depth dimension](/help/components/dimensions/overview.md#standard-dimensions).
+
+{{release-limited-testing-section}}
 
 +++ Details
 
@@ -1082,11 +1063,12 @@ Returns the depth of a field, similar to what is possible with the out-of-the-bo
 
 | Input Data Type | Input | Included Operators | Limitations | Output |
 |---|---|---|---|---|
-| Any | Any field| N/A | <p>3 functions per derived field</p> | <p>New derived field</p> |
+| Any | Any field| N/A | 3 functions per derived field | New derived field |
 
 {style="table-layout:auto"}
 
 
+<!--
 ## Example Data {#depth-example}
 
 | event# | page name | search | product view | cart add  | order |
@@ -1097,10 +1079,18 @@ Returns the depth of a field, similar to what is possible with the out-of-the-bo
 | 4 |  cart page        |  0  | 0  | 1  | 0 |
 | 5 |  confirmation     |  0  | 0  | 0  | 1 |
 
+-->
 
-## Use case 1 {#depth-uc1}
+## Use case {#depth-uc1}
 
-You want to understand the search depth (also could be interpreted as the number of searches). And then would want to understand the values of the search term for people's third search (or second or fourth).
+You want to understand the search depth (which you can also interpret as the number of searches). So you can use that search depth later to lookup the search term associated with a specific search depth.
+
+
+### Derived field {#depth-uc1-derivedfield}
+
+You define a new `Search Depth` derived field. You use the [!UICONTROL DEPTH] function to define a rule to retrieve the depth of [!UICONTROL Search] and store that in a new derived field.
+
+![Screenshot of the Depth rule](assets/depth-1.png)
 
 +++
 
@@ -1116,8 +1106,6 @@ You want to understand the search depth (also could be interpreted as the number
 >id="dataview_derivedfields_findandreplace"
 >title="Find and replace"
 >abstract="This function provides the ability to find all values in a selected field and replace those values with a different value in a new derived field."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Finds all values in a selected field and replaces those values with a different value in a new derived field.
@@ -1190,14 +1178,10 @@ You define an `Email Marketing (updated)` derived field. You use the [!UICONTROL
 
 ### Lookup {#lookup}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_lookup"
 >title="Lookup"
 >abstract="This function provides the ability to use fields from a lookup dataset using a matching key between datasets."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Lookup values using a field from a lookup dataset and returns a value in a new derived field or for further rule processing.
@@ -1251,14 +1235,10 @@ You can quickly insert a [!UICONTROL Lookup] function in the rule builder, alrea
 
 ### Lowercase {#lowercase}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_lowercase"
 >title="Lowercase"
 >abstract="This function converts the entire string text to lowercase values."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Converts values from a field to lowercase and stores it into a new derived field.
@@ -1312,14 +1292,10 @@ You define a `Product Names` derived field. You use the [!UICONTROL LOWERCASE] f
 
 ### Math {#math}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_math"
 >title="Math"
 >abstract="This function provides the ability to perform mathematical operations on a field. The function can be used to perform basic arithmetic operations, such as addition, subtraction, multiplication, and division."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Use basic mathematical operators (add, subtract, multiply, divide & raise to a power) on numeric fields.
@@ -1403,14 +1379,10 @@ Use the Math function for hit-level based calculations. Use the [Summarize](#sum
 
 ### Merge Fields {#merge}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_mergefields"
 >title="Merge Fields"
 >abstract="This function provides the ability to take values from two different fields and include their respective values in a single dimension. The rule first checks to see if the first value is set. If not, then it will use the second value and so on."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Merges values from two different fields into a new derived field.
@@ -1479,14 +1451,10 @@ You must select the same type of fields within a Merge Fields rule. For example,
 
 ### Next or Previous {#next-previous}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_nextprevious"
 >title="Next or Previous"
 >abstract="This function provides the ability to look at the next or previous value collected for a given field."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Takes a field as input and resolves the next or previous value for that field within the scope of the session or use. This will only apply to the Visit and Event table fields.
@@ -1561,14 +1529,10 @@ You can only select fields that belong to the Visit or Event table.
 
 ### Regex Replace {#regex-replace}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_regexreplace"
 >title="Regex Replace"
 >abstract="This function provides the ability to extract parts of a string using regular expressions."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Replaces a value from a field using a regular expression into a new derived field.
@@ -1668,14 +1632,10 @@ You can use these sequences in the [!UICONTROL Output format] any number of time
 
 ### Split {#split}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_split"
 >title="Split"
 >abstract="This function provides the ability to split a field into multiple fields based on a delimiter."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Splits a value from a field into a new derived field.
@@ -1770,14 +1730,10 @@ You create a `Second Response` derived field to take the last value  from the [!
 
 ### Summarize {#summarize}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_summarize"
 >title="Summarize"
 >abstract="This function provides the ability to aggregate values at an event, session or person level. Depending on the field type for the select field, different options will be available."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Applies aggregation-type functions to metrics or dimensions at event, session, and user levels.
@@ -1848,14 +1804,10 @@ Use the Summarize function for event, session or person scope based calculations
 
 ### Trim {#trim}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_trim"
 >title="Trim"
 >abstract="This function provides the ability to trim either whitespace or special characters from either the beginning or the end of a string. Also the ability to specify the number of characters to use for the returned value, either from the front or the end of the string."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Trims whitespace, special characters, or number of characters from either the beginning or the end of field values into a new derived field.
@@ -1970,7 +1922,14 @@ You create a  `Store Identifier` derived field. You use the [!UICONTROL TRIM] fu
 
 ### Typecast {#typecast}
 
+>[!CONTEXTUALHELP]
+>id="dataview_derivedfields_typecast"
+>title="Typecast"
+>abstract="This function provides the ability to change the field type on the fly to make the field available for additional transformations within Customer Journey Analytics."
+
 Change the field type of a field to make it available for additional transformations within Customer Journey Analytics.
+
+{{release-limited-testing-section}}
 
 +++ Details
 
@@ -2014,14 +1973,10 @@ You define a  `Revenue (integer)` derived field. You use the [!UICONTROL TYPECAS
 
 ### URL Parse {#urlparse}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_urlparse"
 >title="Url Parse"
 >abstract="This function provides the ability to parse out different parts of a URL including the host, path or query parameters."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Parses out different parts of a URL including protocol, host, path, or query parameters.
