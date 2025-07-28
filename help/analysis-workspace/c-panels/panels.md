@@ -7,12 +7,6 @@ role: User
 ---
 # Panels overview {#panels-overview}
 
->[!CONTEXTUALHELP]
->id="workspace_panel_realtime_refresh"
->title="Real-time refresh"
->abstract="Enable to refresh data and visualizations in this panel in real-time."
-
-
 A [!UICONTROL panel] is a collection of tables and visualizations. You can access panels from the top-left icon in Workspace or a [blank panel](/help/analysis-workspace/c-panels/blank-panel.md). Panels are helpful when you want to organize your projects according to time periods, data views, or analysis use case.
 
 ## Panel types
