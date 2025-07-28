@@ -8,13 +8,16 @@ role: User
 badgePremium: label="Beta"
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
 ---
-# Use real-time reporting
+# Use real-time reporting {#use-real-time-reporting}
+
+>[!CONTEXTUALHELP]
+>id="workspace_panel_realtime_refresh"
+>title="Real-time refresh"
+>abstract="Enable to refresh data and visualizations in this panel in real-time."
 
 {{release-limited-testing}}
 
 To use real-time reporting, enable the **[!UICONTROL Real-time refresh]** toggle on any of the following panels in your Workspace project:
-
-
 
 * [Blank panel](/help/analysis-workspace/c-panels/blank-panel.md)
 * [Freeform](/help/analysis-workspace/c-panels/freeform-panel.md)
@@ -33,6 +36,8 @@ Select the real-time period you want to report on from the drop-down menu. Avail
 * [!UICONTROL Last 24 hours]
 
 All visualizations in the panel are now updated every minute for a maximum of 30 minutes while the browser tab with the real-time refresh enabled panel is active.
+
+As an example, see below a snapshot of a **[!UICONTROL Real-time reporting panel]** that refreshes the **[!UICONTROL Total Revenue / Hour]** bar visualization and **[!UICONTROL Total Revenue / Hour]** freeform table as time moves from **[!UICONTROL *06:26pm*]** to **[!UICONTROL *06:27 pm*]**.
 
 ![Real-time refresh](assets/real-time-refresh.gif)
 
