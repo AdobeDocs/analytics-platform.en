@@ -26,6 +26,8 @@ Example use cases are:
 
 - Define a derived Marketing Channel field that determines the proper marketing channel based on one or more conditions (for example URL parameter, page URL, page name).
 
+Standard components are only supported on event datasets in derived fields. 
+
 ## Derived field interface {#interface}
 
 When you create or edit a derived field, you use the derived field interface.
