@@ -143,7 +143,7 @@ See [Create or edit a data view](/help/data-views/create-dataview.md) for more i
 >
 >When you enable a Journey Optimizer connection for use with Customer Journey Analytics as described in this section, each Row of Data within the connection counts toward your licensed Rows of Data each month for Customer Journey Analytics and appears within the Connections Usage UI. Select the **[!UICONTROL Use in CJA]** option on the connection only if you are comfortable with the additional usage of Rows of Data in Customer Journey Analytics. 
 >
->**If you were entitled to both Customer Journey Analytics and Journey Optimizer between October 2024 and October 2025, see the following document regarding [AJO-Enabled Connections](https://view.adobe.com/viewer/8d0e6090e58cb86b736ad66cc3860b60)**. 
+>**If you were entitled to both Customer Journey Analytics and Journey Optimizer between October 2024 and October 2025, see the following document regarding [AJO-Enabled Connections](https://view.adobe.com/viewer/1ed94fc35c7860b260766c620889e7a0#1)**. 
 
 You can use a Journey Optimizer connection in Customer Journey Analytics to bring the following additional value to your connection:
 
