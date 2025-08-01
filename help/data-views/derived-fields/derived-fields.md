@@ -20,11 +20,19 @@ Derived fields can save a significant amount of time and effort, compared to tra
 
 Derived fields are defined within [Data views](../data-views.md), are based on a set of functions defined as rules, and applied to available standard and/or schema fields.
 
+>[!NOTE]
+>
+>[Standard components](../component-reference.md) are tied to and associated with event datasets. As a result, standard components that are used as part of a derived field only work against data from an event dataset.
+>
+
+
 Example use cases are:
 
 - Define a derived Page Name field that corrects improper collected page name values to correct page name values. 
 
 - Define a derived Marketing Channel field that determines the proper marketing channel based on one or more conditions (for example URL parameter, page URL, page name).
+
+Standard components are only supported on event datasets in derived fields. 
 
 ## Derived field interface {#interface}
 
