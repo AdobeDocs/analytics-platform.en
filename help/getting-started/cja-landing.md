@@ -23,6 +23,12 @@ Customer Journey Analytics B2B Edition helps B2B companies align their marketing
 
 [![image](assets/learn-more-button.svg)](/help/getting-started/cja-b2b-edition.md)
 
+>[!TAB Derived field functions]
+
+New derived field functions: [Data Math](/help/data-views/derived-fields/derived-fields.md#date-math), [Depth](/help/data-views/derived-fields/derived-fields.md#depth), and [Typecast](/help/data-views/derived-fields/derived-fields.md#typecast).
+
+[![image](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
+
 >[!TAB Content Analytics]
 
 Content Analytics allows you to quickly and easily investigate large volumes of content data to uncover trends, spot anomalies, identify content fatigue, and gain insights from content exposure.
