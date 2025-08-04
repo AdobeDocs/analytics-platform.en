@@ -1,6 +1,6 @@
 ---
-description: Segmenting individual metrics allows you to make metric comparisons within the same report.
-title: Segmented metrics
+description: Learn how to segment on individual metrics which allows you to make metric comparisons within the same visualization. 
+title: Segmented Metrics
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
 ---
@@ -10,7 +10,7 @@ In the [Calculated metric builder](cm-build-metrics.md#definition-builder), you 
 
 >[!NOTE]
 >
->Segment definitions are updated through the [Segment builder](/help/components/filters/filter-builder.md). If you make a change to a segment, the segment is automatically updated everywhere it is used, including if the segment is part of a calculated metric definition.
+>Segment definitions are updated through the [Segment builder](/help/components/segments/seg-builder.md). If you make a change to a segment, the segment is automatically updated everywhere it is used, including if the segment is part of a calculated metric definition.
 >
 
 You want to compare metrics for German people interacting with your brand versus people outside of Germany. So, you can answer questions like:
@@ -24,7 +24,7 @@ See the sections below to illustrate how segmented metrics can help you answer t
 ## Popular pages
 
 1. [Create a calculated metric](cm-workflow.md) from a Workspace project, named `German people`.
-1. From within the [Calculated metric builder](cm-build-metrics.md), [create a segment](/help/components/filters/filter-builder.md), titled `Germany`, that is using the CRM Country field from your CRM data to determine where a person is coming from. 
+1. From within the [Calculated metric builder](cm-build-metrics.md), [create a segment](/help/components/segments/seg-builder.md), titled `Germany`, that is using the CRM Country field from your CRM data to determine where a person is coming from. 
 
    >[!TIP]
    >
@@ -60,7 +60,7 @@ Repeat the steps above for the international version of your calculated metric.
 
 ## Totals
 
-1. Create two new segments based on Grand Total. Open each of the segments created earlier, rename the segment, set the **[!UICONTROL Metric type]** for **[!UICONTROL People]** to **[!UICONTROL Grand Total]** and use **[!UICONTROL Save As]** to save the segment using the new name. For example:
+1. Create two new calculated metrics based on Grand Total. Open each of the segments created earlier, rename the segment, set the **[!UICONTROL Metric type]** for **[!UICONTROL People]** to **[!UICONTROL Grand Total]** and use **[!UICONTROL Save As]** to save the segment using the new name. For example:
 
    ![Total metric for Germany](assets/calculated-metric-germany-total.png)
 

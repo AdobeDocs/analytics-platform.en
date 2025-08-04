@@ -1,20 +1,20 @@
 ---
-description: Learn about use case examples for cohort analysis.
+description: Learn about some use case examples for cohort analysis.
 keywords: Analysis Workspace
-title: Cohort analysis use cases
+title: Cohort Analysis Use Xases
 feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
 role: User
 ---
-# [!UICONTROL Cohort analysis] use cases
+# Cohort analysis use cases
 
-This article describes some use case examples for [!UICONTROL Cohort Analysis].
+This article describes some use case examples for cohort analysis.
 
 ## App engagement use case 
 
 Suppose that you want to analyze how users who install your app engage with it over time. Do they install it and never use it? Do they use it for a while, then fall away? Or do they remain engaged over time?
 
-You can create a six-month [!UICONTROL Cohort Analysis]:
+You can create a six-month cohort analysis.
 
 **Granularity**: Monthly, from January 2015 through June 2015.
 

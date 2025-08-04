@@ -1,11 +1,11 @@
 ---
 description: Use the Summary number and Summary change visualizations to display important data points in a project.
-title: Summary Number and Summary Change
+title: Summary Number And Summary Change
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
 ---
-# Summary number and Summary change
+# Summary number and change
 
 >[!BEGINSHADEBOX]
 

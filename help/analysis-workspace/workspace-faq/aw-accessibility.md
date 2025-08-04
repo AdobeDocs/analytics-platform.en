@@ -1,7 +1,7 @@
 ---
-description: Accessibility support features in Analysis Workspace
-title: Accessibility in Analysis Workspace
-feature: FAQ
+description: Learn about the accessibility support features in Analysis Workspace.
+title: Accessibility In Analysis Workspace
+feature: Workspace Basics
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 role: User
 ---
@@ -48,7 +48,7 @@ Navigation in [!UICONTROL Analysis Workspace] works top down, and from left to r
 
 ### Keyboard shortcuts (hotkeys) 
 
-[!UICONTROL Analysis Workspace] offers a rich set of [keyboard shortcuts](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) for a more seamless workflow. 
+[!UICONTROL Analysis Workspace] offers a rich set of [keyboard shortcuts (hotkeys)](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) for a more seamless workflow. 
 
 ## Support for screen readers and screen magnifiers
 

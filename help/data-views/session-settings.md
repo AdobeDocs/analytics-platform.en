@@ -41,11 +41,11 @@ To define the context of a session within a data view:
 
    2. Select a metric from the **[!UICONTROL Drop a metric here]** list underneath **[!UICONTROL Start new session with a metric]**. Alternatively, you can drag and drop a metric from the left pane on the **[!UICONTROL Drop a metric field]**. The selected metric defines the start of a new session. You can define more than one metric.
    
-      You can use any kind of metric to define a new session. As an example, imagine you want to define a new session every time a profile launches your mobile app. In **[!UICONTROL Data view]** > **[!UICONTROL Components]**, you define a component of type metric, named **[!UICONTROL Launches]**, based on an **[!UICONTROL appInteraction]** **[!UICONTROL Name]** schema field. You further specify the **[!UICONTROL Launches]** metric component to only count the value when the value matches `launch`. 
+      You can use any kind of metric to define a new session. As an example, imagine you want to define a new session every time a profile launches your mobile app. In **[!UICONTROL Data view]** > **[!UICONTROL Components]**, you define a component of type metric, named **[!UICONTROL Launch]**, based on an **[!UICONTROL appInteraction]** **[!UICONTROL Name]** schema field. You further specify the **[!UICONTROL Launch]** metric component to only count the value when the value matches `launch`. 
       
       ![App Interaction Metric Component Launches](assets/component-launches.png)
       
-      Then you drag and drop, or select the **[!UICONTROL Launches]** metric as the metric to define a new session.
+      Then you drag and drop, or select the **[!UICONTROL Launch]** metric as the metric to define a new session.
 
       ![Session Settings Launches](assets/session-settings-launches-metric.png)
 

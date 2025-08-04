@@ -8,7 +8,7 @@ exl-id: f093ac54-7d31-449b-a441-a65856a1d535
 ---
 # Customer Journey Analytics Guardrails
 
-This document provides limits for various components of Customer Journey Analytics. For Guardrails, Scoping Parameters, and Entitlements, see the [Product Description for Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html) or the [Product Description for Adobe Analytics Add-on: Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html).
+This document provides limits for various components of Customer Journey Analytics. For Guardrails, Scoping Parameters, and Entitlements, see the [Product Description for Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html), the [Product Description for Adobe Analytics Add-on: Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html), or the [Product Description for Customer Journey Analytics B2B Edition](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics-b2b.html).
 
 ## Limit types
 
@@ -47,10 +47,7 @@ Some of the features and their associated value for the limit depend on the Cust
 | Panels per Project | 15 | System-enforced Guardrail  | Maximum number of [panels](../analysis-workspace/home.md#panels) per project. |
 | Visualizations per Panel | 25 | System-enforced Guardrail  |  Maximum number of [visualizations](../analysis-workspace/home.md#visualizations) per panel. |
 | Derived Fields per Freeform Table | 5 | System-enforced Guardrail | Maximum number of different derived fields in a single freeform table. |
-| Comments per project <p>**Note:** The ability to comment on projects is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).</p> | 1,000 | System-enforced Guardrail | Maximum number of comments per project. |
-| Replies per comment <p>**Note:** The ability to comment on projects is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).</p> | 100 | System-enforced Guardrail | Maximum number of replies per comment. | 
-| Images per comment <p>**Note:** The ability to comment on projects is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).</p> | 5 | System-enforced Guardrail | Maximum number of images per comment. |
-| Image size <p>**Note:** The ability to comment on projects is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).</p> | 2 | System-enforced Guardrail | Maximim upload size per image in MB for comments in projects |
+| Comments per project | 1,000 | System-enforced Guardrail | Maximum number of comments per project. |
 
 {style="table-layout:auto"}
 
@@ -82,7 +79,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 | Name | Value | Limit Type | Description | 
 |---|--:|---|---|
-| Audience segments | 20 | System-enforced Guardrail  | Maximum number of [segments](../components/filters/filters-overview.md) per audience. | 
+| Audience segments | 20 | System-enforced Guardrail  | Maximum number of [segments](../components/segments/seg-overview.md) per audience. | 
 | Number of Audience Identities | 20 million | System-enforced Guardrail  | Maximum number of identities per audience. | 
 | Audience Refresh Frequency | 4 | System-enforced Guardrail  | Maximum frequency in hours an [audience](../components/audiences/audiences-overview.md) may be refreshed. |
 | Audience Refresh Lookback Window | 90 | System-enforced Guardrail  | Maximum number of days for refresh lookback window. | 
@@ -91,7 +88,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
-See also Experience Platform [Real-time Customer Data Platform Guardrails](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html).
+See also Experience Platform [Real-time Customer Data Platform Guardrails](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview).
 
 
 ## Automated dataset expiration
@@ -176,8 +173,8 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 
 | Name |  Value | Limit Type | Description |
 |---|--:|---|---|
-| Stitched Datasets | 10 - 50 | System-enforced Guardrail  | Maximum number of stitched datasets per customer. Value varies depending on the Customer Journey Analytics package (see Product Description). | 
-| Backfill Length | 13 - 25 | System-enforced Guardrail  | Maximum number of months of backfill data. Value varies depending on the Customer Journey Analytics package (see Product Description). |
+| Stitched Datasets | 15 - 50 | System-enforced Guardrail  | Maximum number of stitched datasets per customer. Value varies depending on the Customer Journey Analytics package (see Product Description). | 
+| Backfill Length | 6 - 25 | System-enforced Guardrail  | Maximum number of months of backfill data. Value varies depending on the Customer Journey Analytics package (see Product Description). |
 | Lookback Window / Replay Frequency | 1/1 - 30/7 | System-enforced Guardrail | Maximum lookback window in days / Replay frequency. Value varies depending on the Customer Journey Analytics package (see Product Description). |
 
 
@@ -231,6 +228,25 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 | Schedule Frequency |  1 | System-enforced Guardrail  | Exports can be scheduled once (1) a day or on a longer schedule (for example: once every 2 days, or weekly). |
 
 {style="table-layout:auto"}
+
+
+## Shared metrics and shared dimensions
+
+| Name |  Value | Limit Type | Description | 
+|---|--:|---|---|
+| Shared library | 1 | System-enforced Guardrail | Maximum number of shared libraries for a connection. |
+| Shared metrics | 10,000 | System-enforced Guardrail | Maximum number of shared metrics per shared library. |
+| Shared dimensions | 10,000 | System-enforced Guardrail | Maximum number of shared dimensions per shared library. | 
+
+{style="table-layout:auto"}
+
+
+## Data Insights Agent
+
+| Name |  Value | Limit Type | Description | 
+|---|--:|---|---|
+| Data views | 50 | System-enforced Guardrail | Maximum number of data views that can be enabled for the Data Insights Agent. When more data views are enabled, only the most-used data views are available to the Data Insights Agent. This guardrail does not impact the [guardrails defining the maximum number of data views you can define for a connection or within your organization](#connections-data-views-projects). | 
+
 
 ## Latencies
 

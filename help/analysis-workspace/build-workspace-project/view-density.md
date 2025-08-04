@@ -1,11 +1,11 @@
 ---
-description: Learn how to adjust the view density in Analysis Workspace.
+description: Learn how to adjust the view density of your project in Analysis Workspace.
 title: View Density
 feature: Workspace Basics
 exl-id: b02672e2-0728-472b-97fe-14637ab1c2df
 role: User
 ---
-# View Density
+# View density
 
 Adjusting the view density lets you see more data on the screen by reducing the vertical padding of the left panel, freeform tables and cohort tables. Three options are available:
 
@@ -25,7 +25,7 @@ This is the view you are used to in Workspace.
 
 >[!TAB Expanded]
 
-This is the view you are used to in Workspace.
+This is the version with the mostd expanded view.
 
 ![The Expanded view densities.](assets/view-density-expanded.png)
 

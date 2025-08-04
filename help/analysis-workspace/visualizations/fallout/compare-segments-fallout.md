@@ -1,7 +1,7 @@
 ---
-description: You can create segments from a touchpoint, add segments as touchpoint, and compare key workflows across various segments in Analysis Workspace.
-keywords: fallout and segments;segments in fallout analysis;compare segments in fallout
-title: Apply segments in fallout analysis
+description: Learn how you can create segments from a touchpoint, add segments as touchpoint, and compare key workflows across various segments in a fallout analysis in Analysis Workspace.
+keywords: fallout and segmentation;segments in fallout analysis;compare segments in fallout
+title: Apply Segments In Fallout Analysis
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
@@ -12,21 +12,25 @@ You can create segments from a touchpoint, add segments as touchpoint, and compa
 
 >[!IMPORTANT]
 >
->Segments used as checkpoints in Fallout must use a container that is at a lower level than the overall context of the Fallout visualization. With a person-context Fallout, segments used as checkpoints must be session or event-based segments. With a session-context Fallout, segments used as checkpoint must be event-based segments. If you use an invalid combination, the fallout is 100%. You see a warning to the Fallout visualization when you add an incompatible segment as a touchpoint. Certain invalid segment container combinations lead to invalid Fallout diagrams, such as:
+>Segments used as checkpoints in Fallout must use a container that is at a lower level than the overall context of the Fallout visualization. With a person-context Fallout, segments used as checkpoints must be session or event-based segments. With a session-context Fallout, segments used as checkpoint must be event-based segments. If you use an invalid combination, the fallout is 100%. You see a warning in the Fallout visualization when you add an incompatible segment as a touchpoint. Certain invalid segment container combinations lead to invalid Fallout diagrams, such as:
 >
->* Using a person-based segment as a touchpoint inside a person-context Fallout visualization
->* Using a person-based segment as a touchpoint inside a session-context Fallout visualization
->* Using a session-based segment as a touchpoint inside a session-context Fallout visualization
+>* Using a person-based segment as a touchpoint inside a person-context Fallout visualization.
+>* Using a person-based segment as a touchpoint inside a session-context Fallout visualization.
+>* Using a session-based segment as a touchpoint inside a session-context Fallout visualization.
+
+<!-- Should we add B2B context here?
+* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
+* -->
 
 ## Create a segment from a touchpoint
 
 1. Create a segment from a specific touchpoint that you are especially interested in and that might be useful to apply to other reports. Right-click the touchpoint and select **[!UICONTROL Create segment from touchpoint]**.
 
-   ![The Touchpoint drop-down menu with Create segment from touchpoint highlighted.](assets/fallout-createfilter.png)
+   ![The Touchpoint drop-down menu with Create segment from touchpoint highlighted.](assets/fallout-createsegment.png)
 
    The [!UICONTROL Segment builder] opens, pre-populated with the pre-built sequential segment that matches the touchpoint you selected:
 
-   ![The Segment Builder displays the pre-populated and pre-built sequential segment.](assets/fallout-definefilter.png)
+   ![The Segment Builder displays the pre-populated and pre-built sequential segment.](assets/fallout-definesegment.png)
 
 1. Give the segment a title and description and save it.
 
@@ -48,7 +52,7 @@ You can compare an unlimited number of segments in the Fallout visualization.
 1. You drag the three segments onto the Segment drop zone at the top of the visualization.
 
 
-1. Optional: You can keep *All Visits* as the default container or delete the container.
+1. Optional: You can keep *All Persons* as the default container or delete the container.
 
    ![The Fallout showing All Visits along with the two segments dragged in the previous step.](assets/fallout-multiplefilters.png)
 

@@ -1,11 +1,10 @@
 ---
-description: Shows the top 5 values for non-time dimensions (and 15 for time dimensions).
-title: How to preview dimensions in Customer Journey Analytics Workspace
-feature: Dimensions
+description: Learn how to view details and the top values of a dimension in Analysis Workspace.
+title: Preview Dimensions
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
 role: User
 ---
-# Preview dimensions in Analysis Workspace
+# Preview dimensions
 
 You can use the [component info](/help/components/use-components-in-workspace.md#component-info) for a component to show the top items for a dimension.
 

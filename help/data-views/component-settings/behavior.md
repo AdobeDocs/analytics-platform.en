@@ -13,7 +13,7 @@ role: Admin
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_behavior"
 >title="Behavior"
->abstract="Determine how line items in this dimension are aggregated. Specify whether the string values in the field should be lower cased."
+>abstract="Applicable to dimension and metric components. Determine how line items for this metric are aggregated. Specify whether string values for this dimension should be lower cased."
 
 <!-- markdownlint-enable MD034 -->
 

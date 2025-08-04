@@ -1,6 +1,6 @@
 ---
-title: Media Average Minute Audience panel
-description: How to use and interpret the Media average minute audience panel in Analysis Workspace.
+title: Media Average Minute Audience Panel
+description: Learn how to use and interpret the Media Average Minute Audience panel in Analysis Workspace.
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53

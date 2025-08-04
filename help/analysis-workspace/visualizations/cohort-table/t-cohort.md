@@ -1,12 +1,12 @@
 ---
-description: Create a cohort table and run a cohort analysis in Analysis Workspace.
+description: Learn how to create and configure a cohort tabe and run a cohort analysis report in Analysis Workspace.
 keywords: Analysis Workspace
-title: Configure a Cohort table
+title: Configure a Cohort Table
 feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
 role: User
 ---
-# Configure a Cohort table
+# Configure a cohort table
 
 To create and configure a [!UICONTROL Cohort table]:
 
@@ -34,7 +34,7 @@ To create and configure a [!UICONTROL Cohort table]:
 
    ![Create segment or audience](assets/retention-createfilter.png)
 
-1. In the [Segment builder](/help/components/filters/filter-builder.md), further edit the segment, then click **[!UICONTROL Save]**.
+1. In the [Segment builder](/help/components/segments/seg-builder.md), further edit the segment, then click **[!UICONTROL Save]**.
 
    The saved segment is available for use in the [!UICONTROL Segment] panel in [!UICONTROL Analysis Workspace].
 

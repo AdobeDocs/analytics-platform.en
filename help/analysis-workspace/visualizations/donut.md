@@ -1,5 +1,5 @@
 ---
-description: Donut visualization shows data as parts or segments of a whole.
+description: Learn how to use the donut visualization to show data as parts or segments of a whole.
 title: Donut
 feature: Visualizations
 exl-id: 97b846a6-3a38-48c7-b686-b792bb882fdb

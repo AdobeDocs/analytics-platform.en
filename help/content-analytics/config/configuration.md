@@ -8,7 +8,12 @@ exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 ---
 # Configure Content Analytics
 
-The configuration of Content Analytics consists of the following steps:
+This article documents, on a high level, how to configure Content Analytics. 
+
+Before you configure Content Analytics, you must ensure the [prerequisites](#prerequisites) are met, you do have the required [access control](#access-control), and you are aware of the [limitations](#limitations).
+
+
+High-level steps
 
 ![Configuration of Content Analytics](../assets/aca-configuration.svg){zoomable="yes"}
 
@@ -41,7 +46,7 @@ Before you configure Content Analytics, ensure that the following prerequisites 
   * You have a clear understanding for which (type of) assets you want to capture content engagement analysis and insights.
 
 
-## Access Control
+## Access control
 
 >[!IMPORTANT]
 >
@@ -54,6 +59,13 @@ This access implies:
 
 1. The Content Analytics enabled data view is included as part of the Data View permissions for a specific Customer Journey Analytics product profile.
 1. That specific Customer Journey Analytics product profile is one of the product profiles assigned to the user or group of users.
+
+## Limitations
+
+The schema used for Content Analytics event data is system-owned. A system-owned schema cannot be modified, which implies:
+  
+* You cannot include field groups for the support of functionalities like geolocation, bot detection, or device lookup. 
+* You cannot add a specific identifier to support [field-based stitching](/help/stitching/fbs.md).
 
 >[!MORELIKETHIS]
 >

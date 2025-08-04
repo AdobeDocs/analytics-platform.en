@@ -4,14 +4,10 @@ description: Learn about how to build product value using the Customer Journey A
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-hide: yes
-hidefromtoc: yes
 badgePremium: label="B2B Edition"
 exl-id: 509c68e1-a8cc-48ac-9e9d-50c703356dbc
 ---
 # Build product value
-
-{{draft-b2b}}
 
 You want to deliver B2B product value insights to product managers and CMO or CEOs. For example, through a data driven churn analysis or predications. And make these insights digestible through mobile dashboards.
 

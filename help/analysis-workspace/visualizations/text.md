@@ -1,5 +1,5 @@
 ---
-description: Adds user-defined text to your Workspace.
+description: Learn how to add user-defined text to your Analysis Workspace project.
 title: Text
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43

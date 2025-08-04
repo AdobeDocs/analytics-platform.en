@@ -1,6 +1,6 @@
 ---
-description: In the Calculated Metric Manager, tagging segments allows you to organize them.
-title: Tag calculated metrics
+description: Learn how to tag calculated metrics to organize your calculated metrics.
+title: Tag Calculated Metrics
 feature: Calculated Metrics
 exl-id: 25c9299b-34ae-475f-8e7f-5cc8540dab8a
 ---
