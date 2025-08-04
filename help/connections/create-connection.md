@@ -698,15 +698,6 @@ This calculation is done for every dataset in the connection.
 2. To show all the datasets that exist in Adobe Experience Platform, perform the `Show Tables` query.
 
 
-## Algorithmic pruning of large lookup datasets
-
-When creating a connection, you can add large datasets for lookup purposes. For example, a dataset representing a product catalog so descriptive product information can be looked up when building reports and visualizations. Such a large lookup dataset can exceed the maximum of 10 million unique lookups currently implemented as a guardrail, resulting in additional data being skipped.
-
-You can request an algorithmic pruning of a large lookup dataset. This algorithmic pruning only keeps data in the lookup dataset that matches the keys in your event dataset. This way, you don't need to load the entire unpruned lookup dataset. Old or less frequently used items are removed, which might slightly affect reports but brings significant benefits. The algorithm looks back 90 days and updates weekly.
-
-Contact your Adobe support team for further information and to enable this capability.
-
-
 >[!MORELIKETHIS]
 >
 >Blog: [How to Leverage Event, Lookup, and Profile Datasets in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
