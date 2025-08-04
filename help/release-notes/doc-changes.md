@@ -13,6 +13,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **August 2025** | |
+| New derived field functions | Documentation for the new derived field functions: [Date Math](/help/data-views/derived-fields/derived-fields.md#date-math), [Depth](/help/data-views/derived-fields/derived-fields.md#depth), and [Typecast](/help/data-views/derived-fields/derived-fields.md#typecast). |
 | **July 2025** | |
 | Debugger | New article on how to enable, use and disable the project debugger in Analysis Workspace. |
 | Flow visualization performance recommendation | Added information stating that leaving more than 10 nodes expanded in a single flow visualization can affect reporting time. |
