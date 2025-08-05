@@ -52,4 +52,4 @@ You should be aware of the following limitation for real-time reporting:
 * No heartbeat collected media metrics are available, with the exception of media start and media close metrics. So you can still use real-time reporting to enable a media use case.
 * When you use the [download or export options](/help/analysis-workspace/export/download-send.md) to download  a project or export data from a freeform table, consider the following:
   * A downloaded CSV project or exported CSV file contains the real-time data available at the moment of download or export.
-  * A downloaded PDF project contains non real-time data, similar to the data shown when real-time refesh is disabled.
+  * A downloaded PDF project contains non real-time data, similar to the data that is shown when real-time refresh is disabled.
