@@ -1555,3 +1555,31 @@ The following templates are available:
 | **Journey Optimizer landing pages** | View user behavior, engagement patterns, conversion rates, and other key metrics.<p>**This can help you** better understand the effectiveness of your landing page. </p><p>**Based on what you learn, you might** do any number of things, like optimize your landing page performance.</p> |
 | **Journey Optimizer overview report** | View a thorough summary of traffic and engagement metrics for all campaigns and journeys within your environment.<p>**This can help you** better understand the high-level effectiveness of your campaigns and journeys. </p><p>**Based on what you learn, you might** do any number of things, like adjust your campaigns and journeys based on the engagement levels of your target audience.</p>  |
 | **Journey Optimizer subscriptions** | View profiles' subscriptions and unsubscriptions associated with particular lists.<p>**This can help you** better understand the effectiveness of different subscription campaigns and initiatives in driving engagement and conversions.</p><p>**Based on what you learn, you might** do any number of things, like adjust your subscription campaigns based on the engagement levels of your target audience.</p> |
+
+
+### B2B templates {#b2b-templates}
+
+
+>[!CONTEXTUALHELP]
+>id="b2b-template-account-engagement"
+>title="See how active your accounts are across events, people, and opportunities."
+>abstract="**This can help you** better understand whether engagement at the account level is trending up or down, compare activity across accounts, and decide where to focus retention or acquisition efforts.<br/>**Based on what you learn, you might** do any number of things, like refocus your attention on those accounts that are less engaged but require more attention due to the importance of the account."
+
+>[!CONTEXTUALHELP]
+>id="b2b-template-opportunity-engagement"
+>title="Track engagement at the opportunity level and surface deals gaining or losing traction."
+>abstract="**This can help you** to forecast deal progression more accurately and focus enablement where engagement spikes or stalls.<br/>**Based on what you learn, you might** do any number of things, like put some additional efforts on deals that are almost closed, and research why other deals are losing traction."
+
+>[!CONTEXTUALHELP]
+>id="b2b-template-buying-group-activity"
+>title="Visualize buying-group activity within each account to inform account and buying group-marketing plays."
+>abstract="**This can help you** to visualize which buying groups, and which people within those buying groups, are most engaged, highlighting gaps in group participation.<br/>**Based on what you learn, you might** do any number of things, like trying to engage more with people in buying groups that do not seem to be involved."
+
+The following templates are available:
+
+| Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- | 
+| [!UICONTROL **B2B Account Engagement overview**] | See how active your accounts are across events, people, and opportunities.<p>**This can help you** better understand whether engagement at the account level is trending up or down, compare activity across accounts, and decide where to focus retention or acquisition efforts.</p><p>**Based on what you learn, you might** do any number of things, like refocus your attention on those accounts that are less engaged but require more attention due to the importance of the account.</p> |
+| [!UICONTROL **B2B Opportunity Engagement overview**] | Track engagement at the opportunity level and surface deals gaining or losing traction.<p>**This can help you** to forecast deal progression more accurately and focus enablement where engagement spikes or stalls.</p><p>**Based on what you learn, you might** do any number of things, like put some additional efforts on deals that are almost closed, and research why other deals are losing traction.</p> |
+| [!UICONTROL **B2B Buying Group Engagement overview**] | Visualize buying-group activity within each account to inform account and buying group-marketing plays.<p>**This can help you** to visualize which buying groups, and which people within those buying groups, are most engaged, highlighting gaps in group participation.</p><p>**Based on what you learn, you might** do any number of things, like trying to engage more with people in buying groups that do not seem to be involved.</p> |
+
