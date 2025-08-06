@@ -927,9 +927,13 @@ As a marketing analyst of a brick and mortar shop you want to understand how man
 
 ### Derived field {#datemath-uc2-derivedfield}
 
-You define a new `Days Since Visit To Shop` derived field. You use the [!UICONTROL DATE MATH] function to define a rule to calculate the days between a Custom Date-Time (which you specify in [!UICONTROL Date]) and the [!UICONTROL Local Time] (from your [!UICONTROL placeContext] field group of your event dataset) with a [!UICONTROL Deduplication scope] of [!UICONTROL Person]. You select [!UICONTROL Return the last] to ensure the last person scoped value for [!UICONTROL Local time] is used in the calculation. You select Day as the [!UICONTROL Output granularity].
+You define a new `Days Since Visit To Shop` derived field. You use the [!UICONTROL DATE MATH] function to define a rule to calculate the days between a Custom Date-Time (which you specify in [!UICONTROL Date]) and the [!UICONTROL Local Time] (from your [!UICONTROL placeContext] field group of your event dataset) with a [!UICONTROL Deduplication scope] of [!UICONTROL Person]. You select [!UICONTROL Return the last] to ensure the last person scoped value for [!UICONTROL Local time] is used in the calculation. You select Day as the [!UICONTROL Output granularity]. 
 
 ![Screenshot of the Date Math rule 2](assets/datemath-2.png)
+
+Alternatively, you can use the convenience Dynamic date range value Now to calculate between now and the [!UICONTROL Local Time] (from your [!UICONTROL placeContext] field group of your event dataset)
+
+![Screenshot of the Date Math rule 2a](assets/datemath-2a.png)
 
 
 ## Use case 3 {#datemath-uc3}
@@ -1056,29 +1060,20 @@ Returns the depth of a field, similar to what is possible with the out-of-the-bo
 {style="table-layout:auto"}
 
 
-<!--
-## Example Data {#depth-example}
-
-| event# | page name | search | product view | cart add  | order |
-|:---:|---|:---:|:---:|:---:|:---:|
-| 1 |  home page        |  0  | 0  | 0  | 0 |
-| 2 |  search page      |  1  | 0  | 0  | 0 |
-| 3 |  product page     |  0  | 0  | 0  | 0 |
-| 4 |  cart page        |  0  | 0  | 1  | 0 |
-| 5 |  confirmation     |  0  | 0  | 0  | 1 |
-
--->
-
 ## Use case {#depth-uc1}
 
-You want to understand the search depth (which you can also interpret as the number of searches). So you can use that search depth later to lookup the search term associated with a specific search depth.
+You want to understand the internal search depth (which you can also interpret as the number of searches). So you can use that internal search depth later to break down on the search term associated with a specific search depth.
 
 
 ### Derived field {#depth-uc1-derivedfield}
 
-You define a new `Search Depth` derived field. You use the [!UICONTROL DEPTH] function to define a rule to retrieve the depth of [!UICONTROL Search] and store that in a new derived field.
+You define a new `Internal Search Depth` derived field. You use the [!UICONTROL DEPTH] function to define a rule to retrieve the depth of [!UICONTROL Internal Search Term] and store that in a new derived field.
 
 ![Screenshot of the Depth rule](assets/depth-1.png)
+
+And then use that new derived field in a visualization to break down on what term has been used to search for at the first search.
+
+![Screenshot of the Depth rule](assets/depth-1a.png)
 
 +++
 
