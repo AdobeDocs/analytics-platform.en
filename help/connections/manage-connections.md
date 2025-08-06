@@ -173,7 +173,7 @@ After you have access to Customer Journey Analytics, you must allow the Journey 
 
    The following **[!UICONTROL Use this connection in Customer Journey Analytics]** dialog displays:
 
-   <!-- add screenshot -->
+   ![Use in connection](assets/use-in-connection.png)
 
 1. Enable the toggle, **[!UICONTROL Use connection in CJA]**.
 
@@ -202,7 +202,7 @@ To remove the connection from Customer Journey Analytics:
 
    The following **[!UICONTROL Remove this connection from Customer Journey Analytics]** dialog displays:
 
-   <!-- add screenshot -->
+   ![Use in connection](assets/remove-connection.png)
 
 1. Disable the option, **[!UICONTROL Remove connection from CJA]**.
 
