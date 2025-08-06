@@ -51,6 +51,7 @@ In addition to being added as a Product administrator in the **Customer Journey 
 
   | Category | Permission | Description |
   |---|---|---|
+  | [!UICONTROL Sandboxes] | [!UICONTROL At least one] | Access to relevant sandboxes for CJA connections. |
   | [!UICONTROL Data Modeling] | [!UICONTROL View Schemas] | Read-only access to schemas and related resources. |
   | [!UICONTROL Data Modeling] | [!UICONTROL Manage Schemas] | Access to read, create, edit, and delete schemas and related resources. |
   | [!UICONTROL Data Management] | [!UICONTROL View Datasets] | Read-only access for datasets and schemas. |
