@@ -23,7 +23,6 @@ To use real-time reporting, enable the **[!UICONTROL Real-time refresh]** toggle
 * [Freeform](/help/analysis-workspace/c-panels/freeform-panel.md)
 * [Attribution](/help/analysis-workspace/c-panels/attribution.md)
 * [Next or previous item](/help/analysis-workspace/c-panels/next-previous.md)
-* [Quick insights](/help/analysis-workspace/c-panels/quickinsight.md)
 
 You see a message with the timestamp of the most recent refresh of the data. For example: [!UICONTROL  *Last refreshed at 07:55 pm*].
 

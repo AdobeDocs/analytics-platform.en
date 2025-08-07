@@ -48,8 +48,6 @@ Following is the high-level process for transitioning from exclusively using the
 
 1. Map each Adobe Analytics dimension from your Analytics source connector to the dimension in the Web SDK schema. 
 
-   1. <!-- how do you get here -->
-   
    1. In the **[!UICONTROL Map standard fields]** section, select the **[!UICONTROL Custom]** tab.
 
    1. Select **[!UICONTROL Add new mapping]**. 
@@ -65,7 +63,7 @@ Following is the high-level process for transitioning from exclusively using the
    For more information, see [Add the dataset from your current Analytics source connector to the connection](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
 
 1. (Conditional) If you are using lookup datasets, you must create the lookup dataset and add it to your connection. For more information, see [Create lookup datasets to classify data in Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md).
-   
+
 1. Delete your original Analytics source connector. <!-- need to add steps somewhere about how to do this -->
 
 1. [Create a new Analytics source connector and map fields](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).

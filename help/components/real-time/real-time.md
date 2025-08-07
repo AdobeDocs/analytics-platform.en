@@ -48,5 +48,8 @@ You should be aware of the following limitation for real-time reporting:
 * Real-time reporting only reports on data available on a rolling period of 24 hours. Data that crosses this rolling 24-hour period is not available.
 * Attribution, segmentation, calculated metrics, and more only work on the data available within the rolling period of 24 hours.
 * Real-time reporting works best on event and session level data and you should be cautious using real-time reporting for person-level data. <!--Need to explain this a bit better --> Since only events from the rolling 24-hour period are available for real-time reports, a person's event history is also limited to this window. Consider the preference for event and session level data when you select dimension, (calculated) metrics. And when you use functionalities like breakdowns, next or previous, and more in your real-time refresh enabled panel.
-* You cannot combine stitching with real-time reporting. <!-- Do we need to explain this in more detail, why? --> As mentioned above, real-time reporting is about event and session level data and not so much about person-based data.
+* You cannot combine stitching with real-time reporting. <!-- Do we need to explain this in more detail, why? --> Real-time reporting is about event and session level data and less relevant for person-based data.
 * No heartbeat collected media metrics are available, with the exception of media start and media close metrics. So you can still use real-time reporting to enable a media use case.
+* When you use the [download or export options](/help/analysis-workspace/export/download-send.md) to download  a project or export data from a freeform table, consider the following:
+  * A downloaded CSV project or exported CSV file contains the real-time data available at the moment of download or export.
+  * A downloaded PDF project contains non real-time data, similar to the data that is shown when real-time refresh is disabled.
