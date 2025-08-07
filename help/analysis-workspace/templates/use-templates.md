@@ -1561,17 +1561,17 @@ The following templates are available:
 
 
 >[!CONTEXTUALHELP]
->id="b2b-template-account-engagement"
+>id="cja-template--b2b-account-engagement"
 >title="See how active your accounts are across events, people, and opportunities."
 >abstract="**This can help you** better understand whether engagement at the account level is trending up or down, compare activity across accounts, and decide where to focus retention or acquisition efforts.<br/>**Based on what you learn, you might** do any number of things, like refocus your attention on those accounts that are less engaged but require more attention due to the importance of the account."
 
 >[!CONTEXTUALHELP]
->id="b2b-template-opportunity-engagement"
+>id="cja-template--b2b-opportunity-enagement"
 >title="Track engagement at the opportunity level and surface deals gaining or losing traction."
 >abstract="**This can help you** to forecast deal progression more accurately and focus enablement where engagement spikes or stalls.<br/>**Based on what you learn, you might** do any number of things, like put some additional efforts on deals that are almost closed, and research why other deals are losing traction."
 
 >[!CONTEXTUALHELP]
->id="b2b-template-buying-group-activity"
+>id="cja-template--b2b-buying-group-activity"
 >title="Visualize buying-group activity within each account to inform account and buying group-marketing plays."
 >abstract="**This can help you** to visualize which buying groups, and which people within those buying groups, are most engaged, highlighting gaps in group participation.<br/>**Based on what you learn, you might** do any number of things, like trying to engage more with people in buying groups that do not seem to be involved."
 
@@ -1579,7 +1579,6 @@ The following templates are available:
 
 | Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
-| [!UICONTROL **B2B Account Engagement overview**] | See how active your accounts are across events, people, and opportunities.<p>**This can help you** better understand whether engagement at the account level is trending up or down, compare activity across accounts, and decide where to focus retention or acquisition efforts.</p><p>**Based on what you learn, you might** do any number of things, like refocus your attention on those accounts that are less engaged but require more attention due to the importance of the account.</p> |
-| [!UICONTROL **B2B Opportunity Engagement overview**] | Track engagement at the opportunity level and surface deals gaining or losing traction.<p>**This can help you** to forecast deal progression more accurately and focus enablement where engagement spikes or stalls.</p><p>**Based on what you learn, you might** do any number of things, like put some additional efforts on deals that are almost closed, and research why other deals are losing traction.</p> |
-| [!UICONTROL **B2B Buying Group Engagement overview**] | Visualize buying-group activity within each account to inform account and buying group-marketing plays.<p>**This can help you** to visualize which buying groups, and which people within those buying groups, are most engaged, highlighting gaps in group participation.</p><p>**Based on what you learn, you might** do any number of things, like trying to engage more with people in buying groups that do not seem to be involved.</p> |
-
+| [!UICONTROL **B2B Account Engagement Overview**] | See how active your accounts are across events, people, and opportunities.<p>**This can help you** better understand whether engagement at the account level is trending up or down, compare activity across accounts, and decide where to focus retention or acquisition efforts.</p><p>**Based on what you learn, you might** do any number of things, like refocus your attention on those accounts that are less engaged but require more attention due to the importance of the account.</p> |
+| [!UICONTROL **B2B Opportunity Engagement Overview**] | Track engagement at the opportunity level and surface deals gaining or losing traction.<p>**This can help you** to forecast deal progression more accurately and focus enablement where engagement spikes or stalls.</p><p>**Based on what you learn, you might** do any number of things, like put some additional efforts on deals that are almost closed, and research why other deals are losing traction.</p> |
+| [!UICONTROL **B2B Buying Group Activity**] | Visualize buying-group activity within each account to inform account and buying group-marketing plays.<p>**This can help you** to visualize which buying groups, and which people within those buying groups, are most engaged, highlighting gaps in group participation.</p><p>**Based on what you learn, you might** do any number of things, like trying to engage more with people in buying groups that do not seem to be involved.</p> |
