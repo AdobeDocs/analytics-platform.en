@@ -1065,7 +1065,7 @@ The following templates are available:
 >abstract="**This can help you** better understand whether engagement at the account level is trending up or down, compare activity across accounts, and decide where to focus retention or acquisition efforts.<br/>**Based on what you learn, you might** do any number of things, like refocus your attention on those accounts that are less engaged but require more attention due to the importance of the account."
 
 >[!CONTEXTUALHELP]
->id="cja-template--b2b-opportunity-enagement"
+>id="cja-template--b2b-opportunity-engagement"
 >title="Track engagement at the opportunity level and surface deals gaining or losing traction."
 >abstract="**This can help you** to forecast deal progression more accurately and focus enablement where engagement spikes or stalls.<br/>**Based on what you learn, you might** do any number of things, like put some additional efforts on deals that are almost closed, and research why other deals are losing traction."
 
