@@ -39,7 +39,21 @@ Do not consider real-time reporting for operations monitoring use cases. For exa
 
 ## Definition
 
-The real-time aspect of real-time reporting for Customer Journey Analytics is defined as data and visualizations that are updated within approximately 5 minutes from the moment the underlying data is ingested through the associated connection.
+The real-time aspect of real-time reporting for Customer Journey Analytics is defined as data and visualizations that are updated within approximately 6.5 minutes from the moment the underlying data is ingested through the associated connection.
+
+Various components in the setup of you data collection determine the real-time reporting latency.
+
+![Real-time reporting](assets/real-time-reporting-latencies.svg){zoomable="yes"}
+
+| | Description | Latency |
+|:---:|---|--:|
+| 1 | Collect data through Edge Network SDK / APIs into the Edge Network. | < 500 miliseconds |
+| 2 | Replicate data from Edge Network to Data Collection & Validation Service in Experience Platform Hub | < 5 minutes |
+| 3 | Collect through streaming connectors into Data Collection & Validation Service in Experience Platform Hub | < 15 minutes |
+| 4 | Collect data through Adobe Analytics and forwarded by Analytics Source Connector to Source Connectors in Experience Platform Hub | < 15 minutes |
+| 5 | Collect data through other source connectors into Source Connectors in Eperience Platform Hub | < 24 hours | 
+| 6 | Process data by Real-time Processor for a consolidated dataset for real-time reporting | < 90 seconds |
+
 
 ## Limitations
 
