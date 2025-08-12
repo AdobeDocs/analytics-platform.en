@@ -53,7 +53,7 @@ The ![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL Map]** visualization in
 
 In Customer Journey Analytics data views settings, administrators can add [context labels](/help/data-views/component-settings/overview.md) to a dimension or metric and Customer Journey Analytics services like the [!UICONTROL map] visualization can use these labels for their purposes. 
 
-#### Required context labels for the map visualization
+#### Required context labels for latitude and longitude in the map visualization
 
 Context labels are required for the map visualization to function. Without the following context labels present, the map visualization does not work, because there is no latitude and longitude data to work with.
 
@@ -66,13 +66,27 @@ To add these context labels:
 
 1. On the Data views page, select the data view that contains data that you want to analyze in the map visualization.
 
-1. Select the **[!UICONTROL Components]** tab, then select the dimension that contains the longitude data. 
+1. Select the **[!UICONTROL Components]** tab.
 
-1. In the **[!UICONTROL Component settings]** section in the right rail, in the **[!UICONTROL Context labels]** field, begin typing `Longitude`, then select it from the drop-down menu.
+1. (Conditional) If you are using the Web SDK and you have configured latitude and longitude to be populated in your data stream, or if you are using the Analytics Source Connector to populate event data, then latitude and longitude fields should already be available in your schema and populated with the correct context labels.
 
-   ![Latitude and longitude context labels](assets/map-context-labels-lat-long.png)
+    Locate these **[!UICONTROL Latitude]** and **[!UICONTROL Longitude]** schema fields (in **[!UICONTROL Event datasets]** > **[!UICONTROL placeContext]** > **[!UICONTROL geo]** > **[!UICONTROL _schema]**) and drag them into your data view as dimensions if they aren't already present. 
 
-1. Repeat this process to add the **[!UICONTROL Latitude]** context label to the dimension that contains the latitude data.
+   When these schema fields exist as dimensions in your data view, their context labels are automatically applied, and the map visualization uses them without any additional configuration.
+
+   ![Add latitude and longitude schema fields to data view](assets/dataview-lat-long-default.png)
+
+1. (Conditional) If you have custom dimensions that you want to use for latitude and longitude data, you can configure the context labels on the custom fields:
+
+   1. In the **[!UICONTROL Dimensions]** section, select the dimension that contains the longitude data. 
+
+   1. In the **[!UICONTROL Component settings]** section in the right rail, in the **[!UICONTROL Context labels]** field, begin typing `Longitude`, then select it from the drop-down menu.
+
+      ![Latitude and longitude context labels](assets/map-context-labels-lat-long.png)
+
+   1. Repeat this process to add the **[!UICONTROL Latitude]** context label to the dimension that contains the latitude data.
+
+   1. (Optional) By default, these dimensions are precise to the town or zip code level in the map visualization, and they show 2 decimal places in Workspace reports. You can adjust them to be precise within a single meter in the map visualization and to show 5 decimal places in Workspace reports. For more information about how to adjust the precision level, see [Configure precise locations for dimensions](#configure-precise-locations-for-dimensions).
 
 1. Select **[!UICONTROL Save and continue]** > **[!UICONTROL Save and finish]**.
 
@@ -84,7 +98,7 @@ Following are the templates and the required context label. Without these labels
 
 | Template name | Required context label | 
 |---------|----------|
-| Geo contries | [!UICONTROL Geo: Geo Country] | 
+| Geo countries | [!UICONTROL Geo: Geo Country] | 
 | Geo regions | [!UICONTROL Geo: Geo Region] | 
 | Geo cities | [!UICONTROL Geo: Geo City] | 
 | Geo US states | [!UICONTROL Geo: Geo State] | 
@@ -96,13 +110,25 @@ To add these context labels:
 
 1. On the Data views page, select the data view that contains data that you want to analyze with pre-built templates that use the map visualization. In this data view, you will pick five dimensions, one with the country data, one with the region data, one with the city data, one with the state data, and one with the DMA data. You will then label those dimensions with the corresponding context label.
 
-1. Select the **[!UICONTROL Components]** tab, then select the dimension that contains the country data. 
+1. Select the **[!UICONTROL Components]** tab.
 
-1. In the **[!UICONTROL Component settings]** section in the right rail, in the **[!UICONTROL Context labels]** field, begin typing `Geo Country`, then select it from the drop-down menu.
+1. (Conditional)  If you are using the Web SDK and you have configured geo fields to be populated in your data stream, or if you are using the Analytics Source Connector to populate event data, then geo fields should already be available in your schema and populated with the correct context labels.
 
-   ![Templates context labels](assets/map-context-labels-templates.png)
+   Locate the appropriate schema fields, such as **[!UICONTROL City]**, **[!UICONTROL Postal code]**, **[!UICONTROL State or province]** (in **[!UICONTROL Event datasets]** > **[!UICONTROL placeContext]** > **[!UICONTROL geo]**) and drag them into your data view as dimensions if they aren't already present. 
 
-1. Repeat this process to add the **[!UICONTROL Geo: Geo Region]**, **[!UICONTROL Geo: Geo City]**, **[!UICONTROL Geo: Geo State]**, and **[!UICONTROL Geo: Dma]** context label to each dimension that contains the corresponding data.
+   When these schema fields exist as dimensions in your data view, their context labels are automatically applied, and the geo templates use them without any additional configuration.
+
+   ![Add geo schema fields to data view](assets/dataview-geo-default.png)
+
+1. (Conditional) If you have custom dimensions that you want to use for geo data, you can configure the context labels on the custom fields:
+
+   1. Select the dimension that contains the country data. 
+
+   1. In the **[!UICONTROL Component settings]** section in the right rail, in the **[!UICONTROL Context labels]** field, begin typing `Geo Country`, then select it from the drop-down menu.
+
+      ![Templates context labels](assets/map-context-labels-templates.png)
+
+   1. Repeat this process to add the **[!UICONTROL Geo: Geo Region]**, **[!UICONTROL Geo: Geo City]**, **[!UICONTROL Geo: Geo State]**, and **[!UICONTROL Geo: Dma]** context label to each dimension that contains the corresponding data.
 
 1. Select **[!UICONTROL Save and continue]** > **[!UICONTROL Save and finish]**.
 
@@ -249,7 +275,7 @@ If you have custom datasets with deep precision, you can configure the map visua
 
 1. In the data view, select the **[!UICONTROL Components]** tab.
 
-1. Select the dimension that you want to configure.
+1. Select the dimensions that you are using for latitude and longitude that you want to configure. For more information about which dimensions you're using, see [Required context labels for latitude and longitude in the map visualization](#required-context-labels-for-latitude-and-longitude-in-the-map-visualization).
 
 1. Configure the level of precision for the dimension:
 
