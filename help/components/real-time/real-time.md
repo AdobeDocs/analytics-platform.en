@@ -54,7 +54,6 @@ Various components in the setup of you data collection determine the real-time r
 | 5 | Collect data through other source connectors into Source Connectors in Eperience Platform Hub | < 24 hours | 
 | 6 | Process data by Real-time Processor for a consolidated dataset for real-time reporting | < 90 seconds |
 
-
 ## Limitations
 
 You should be aware of the following limitation for real-time reporting:
