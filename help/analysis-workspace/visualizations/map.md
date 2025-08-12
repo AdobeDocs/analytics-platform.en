@@ -3,8 +3,6 @@ description: Use the map visualization to plot data on a geographic map visualiz
 title: Map
 feature: Visualizations
 role: User, Admin
-hide: yes
-hidefromtoc: yes
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
 ---
 # Map {#map}
