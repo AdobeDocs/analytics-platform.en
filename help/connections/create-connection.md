@@ -593,10 +593,13 @@ The specific settings for a summary dataset are:
 
 The specific settings for an ad-hoc dataset are:
 
-| Setting | Description |
-|---|---|
-| Dataset type | The type of data in the ad-hoc dataset. Possible values are: Event, Profile, Lookup, and Summary. |
-| Person ID (for dataset type Event and Profile) | Select a field from the ad-hoc schema that represent the Person ID. Select from Identity namespace fields or from Non-identity fields. If you select a Non-identity field, you need to specify an Identity namespace. |
+| Setting | Selected datset type | Description |
+|---|---|---|
+| Dataset type | N/A | The type of data in the ad-hoc dataset. Possible values are: Event, Profile, Lookup, and Summary. |
+| Person ID | Event, Profile | Select a field from the ad-hoc schema that represent the Person ID. Select from Identity namespace fields or from Non-identity fields. If you select a Non-identity field, you need to specify an Identity namespace. |
+| Identity namespace | Event, Profile | Select an identity namespace for the selected Person ID. |
+| Key | Lookup | The key to use for a Lookup dataset.<br/><br/>If a record doesn't contain a value for the key you have selected for the lookup dataset, the record is skipped. |
+| Matching key | Lookup | The matching key to join on in one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset. |
 
 
 
