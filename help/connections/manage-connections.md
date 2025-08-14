@@ -165,11 +165,15 @@ After you have access to Customer Journey Analytics, you must allow the Journey 
 
    1. In the **[!UICONTROL Use in CJA]** section, select **[!UICONTROL Off]**.
 
-      This displays all connections that are not currently configured for use in Customer Journey Analytics.
+      This displays all Journey Optimizer connections that are not currently configured for use in Customer Journey Analytics.
 
-   1. Select the Journey Optimizer connection that you want to use in Customer Journey Analytics. 
+      ![Filter to show connections not enabled for AJO](assets/remove-ajo-connection.png)
 
-1. In the Journey Optimizer connection, select **[!UICONTROL Use in CJA]**.
+1. To view the connection, select the name of the Journey Optimizer connection that you want to use in Customer Journey Analytics. 
+
+1. When viewing the Journey Optimizer connection, select **[!UICONTROL Use in CJA]**.
+
+   ![Use in CJA button](assets/connection-use-in-cja.png)
 
    The following **[!UICONTROL Use this connection in Customer Journey Analytics]** dialog displays:
 
@@ -198,8 +202,22 @@ You can remove the Journey Optimizer connection from Customer Journey Analytics 
 
 To remove the connection from Customer Journey Analytics:
 
-1. When editing a Journey Optimizer connection, select **[!UICONTROL Remove from CJA]**.
+1. Locate the Journey Optimizer connection that you want to remove from Customer Journey Analytics. 
 
+   1. Select the Filter icon on the **[!UICONTROL Connections]** tab.
+
+   1. In the **[!UICONTROL Use in CJA]** section, select **[!UICONTROL On]**.
+
+      This displays all Journey Optimizer connections that are currently configured for use in Customer Journey Analytics.
+
+      ![Filter to show connections enabled for AJO](assets/enabled-ajo-connection.png)
+
+1. To view the connection, select the name of the Journey Optimizer connection that you want to remove from Customer Journey Analytics. 
+
+1. When viewing the Journey Optimizer connection, select **[!UICONTROL Remove from CJA]**.
+
+   ![Remove from CJA button](assets/connection-remove-from-cja.png)
+   
    The following **[!UICONTROL Remove this connection from Customer Journey Analytics]** dialog displays:
 
    ![Use in connection](assets/remove-connection.png)
