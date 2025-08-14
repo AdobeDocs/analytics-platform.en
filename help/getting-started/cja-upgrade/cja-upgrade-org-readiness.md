@@ -64,6 +64,14 @@ With the help of your executive sponsor, secure support from other key leaders t
 
 * Individual business units
 
+## Develop an upgrade and communication plan
+
+### Develop an upgrade plan and distribute it to stakeholders
+
+### Create a communiation plan 
+
+Create feedback loops
+
 ## Assess and audit your Adobe Analytics implementation
 
 Perform a thorough assessement and audit of your Adobe Analytics implementation, focusing on the following key areas:
