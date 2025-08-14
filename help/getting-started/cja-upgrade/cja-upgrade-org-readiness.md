@@ -8,17 +8,113 @@ exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
 ---
 # Prepare your organization to upgrade to Customer Journey Analytics
 
-In addition to the implementation steps involved in upgrading from Adobe Analytics to Customer Journey Analytics, a successful upgrade also requires the following operational considerations:
+In addition to the upgrade process described in [Upgrade from Adobe Analytics to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md), a successful upgrade also requires that your organization focus on certain operational considerations:
 
-* Buy-in from key stakeholders
+* Obtain buy-in and alignment from key stakeholders
   
-* Defined goals  
+* Define and document your goals
 
-* Realistic and thoughtful timelines. 
+* Set realistic and thoughtful timelines 
 
-* Clear responsibilities for contributors
+* Define clear responsibilities for contributors
 
 
-## Stakeholder buy-in
+## Stakeholder buy-in and alignment
 
-##
+The key stakeholders and decision-makers in your organization need to align on your upgrade to Customer Journey Analytics. 
+
+The following sections describe ways that you can gain stakeholder alignment.
+
+### Focus on value
+
+Focus on the value that Customer Journey Analytics will bring to your organization, and how it will accelerate reaching your business objectives. 
+
+The following table covers some key features that you might want to highlight.
+
+| Feature | Benefit | Example |
+|---------|----------|---------|
+| **[Accommodation for all kinds of data](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)** | Customer Journey Analytics is combined with Experience Platform's ability to hold all kinds of data schemas and types. | A retail organization could integrate web clickstream transactions, mobile app transaction, in-store transactions, and CRM/loyalty data into a single view, providing visibility to the complete customer journey. |
+| **[Cross-channel analysis](/help/use-cases/cross-channel/cross-channel.md)** | Enables a single consolidated view of customer behavior across various channels by unifying data from various web, mobile, and offline properties. | A retail organization that is gathering data from multiple channels could perform the following kind of analysis:<p>A shopper clicks a paid search ad, browses jeans online, receives a push notification, then purchases in-store two days later. This unified perspective enables accurate cross-channel attribution, showing how digital touchpoints contribute to in-store sales. It also supports more precise segmentation, such as targeting "browsed online, purchased in-store" customers with tailored offers. Furthermore, it delivers clear, all-channel revenue reporting in one dashboard, replacing fragmented, siloed insights with a holistic understanding of customer behavior. |
+| **[Report-time processing](/help/getting-started/aa-to-cja.md#get-comfortable-with-report-time-processing)** | Apply settings that are retroactive and create multiple versions of variable persistence without needing to change how the underlying data is collected. | Because Customer Journey Analytics allows you to create and adjust metrics, dimensions, and attribution models on the fly without reingesting or reprocessing data, a retail organization could see how a recent social campaign influenced both online and in-store sales on the fly, without needing to ask engineering to rebuild datasets. They could instantly change the attribution model from last touch to first touch or custom rules-based attribution.  |
+| **[Content Analytics](/help/content-analytics/content-analytics.md)** | Helps marketers understand how content impacts the key performance indicators that a business has defined. On top of the behavioral data, Content Analytics collects data on how content is consumed and how content drives impact. | By integrating web, app, email, and even in-store data, a retail organization could see exactly how each piece of digital content they create contributes to the customer journey and conversion. <p>The retail organization could see that a "Summer Denim Style Guide" on a popular social media platform drives high engagement among loyalty members, and that those members are 40% more likely to purchase denim in-store within a week.</p>  |
+
+### Appoint an executive sponsor
+
+Find and appoint an executive sponsor within your organization. This executive sponsor needs to understand how Customer Journey Analytics will accelerate reaching your business objectives. 
+
+The executive sponsor is crucial as they:
+
+* Champion Customer Journey Analytics within the organization
+
+* Remove roadblocks
+
+* Approve resources
+
+### Secure support from key leaders throughout your organization
+
+With the help of your executive sponsor, secure support from other key leaders throughout your organization. It's critical that leaders from the following areas of your organization understand the benefits of Customer Journey Analytics and that they are willing to contribute to a successful implementation:
+
+* Analytics
+
+* Marketing
+
+* IT
+
+* Legal and compliance
+
+* Individual business units
+
+## Assess and audit your Adobe Analytics implementation
+
+Perform a thorough assessement and audit of your Adobe Analytics implementation, focusing on the following key areas:
+
+* Current users
+
+* User access
+
+* Projects
+
+* Business processes
+
+* Custom components
+
+See the following resources to help gather this information:
+
+* [Analytics inventory](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/analytics-inventory)
+
+  Provides information on the number of projects, segments, calculated metrics, report suites, and users within your organization.
+
+* [Prepare to migrate components and projects from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration)
+
+  Provides information about how you can prepare to migrate components, projects, and users.
+
+## Identify champions and early adopters
+
+Identify Champions throughout your organization. These champions should be:
+
+* Adobe Analytics power users 
+
+* Capable of quickly gaining proficiency in Customer Journey Analytics
+
+* Available to be a help and coach to others as Customer Journey Analytics is rolled out more broadly
+
+## Train end-users throughout your organization
+
+* Provide hands-on training that focuses on the differences in data models, reporting paradigms, and new features within Customer Journey Analytics.
+
+* Offer both live sessions (workshops or office hours) and on-demand resources (video tutorials, dynamic wiki pages, and internal documentation).
+
+* Direct users to relevant trainings, tutorials, and documentation on Experience League.
+
+  Following are a few helpful links to get started:
+
+  * [Customer Journey Analytics tutorials](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/overview)
+
+  * [What is Customer Journey Analytics?](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
+
+  * [Introduction to Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/understanding-customer-journey-analytics)
+
+  * [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md)
+
+
+
