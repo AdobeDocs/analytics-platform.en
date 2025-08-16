@@ -34,7 +34,7 @@ You want to validate, for example:
   * When your new product page went live, are you collecting customer data from the page?
   * Is your live media event going ok?
 
-Do not consider real-time reporting for operations monitoring use cases. For example, to answer the question: is a site actually working?
+Do not consider real-time reporting for operations monitoring use cases. For example, to answer the question whether a site is actually properly working. Since the [real-time refresh toggle](use-real-time.md) automatically disables after 30 minutes and the real-time report stops refreshing, you should not use a real-time report as a reliable source for these kind of use cases.
 
 
 ## Definition
@@ -47,18 +47,18 @@ Various components in the setup of you data collection determine the real-time r
 
 | | Description | Latency |
 |:---:|---|--:|
-| 1 | Collect data through Edge Network SDK / APIs into the Edge Network. | < 500 miliseconds |
-| 2 | Replicate data from Edge Network to Data Collection & Validation Service in Experience Platform Hub | < 5 minutes |
-| 3 | Collect through streaming connectors into Data Collection & Validation Service in Experience Platform Hub | < 15 minutes |
-| 4 | Collect data through Adobe Analytics and forwarded by Analytics Source Connector to Source Connectors in Experience Platform Hub | < 15 minutes |
-| 5 | Collect data through other source connectors into Source Connectors in Eperience Platform Hub | < 24 hours | 
-| 6 | Process data by Real-time Processor for a consolidated dataset for real-time reporting | < 90 seconds |
+| 1 | Data collected through Edge Network SDK / APIs into the Edge Network. | < 500 miliseconds |
+| 2 | Data replicated from Edge Network to Data Collection & Validation Service in Experience Platform Hub. | < 5 minutes |
+| 3 | Data collected through streaming connectors into Data Collection & Validation Service in Experience Platform Hub. | < 15 minutes |
+| 4 | Data collected through Adobe Analytics and forwarded by Analytics Source Connector to Source Connectors in Experience Platform Hub. | < 15 minutes |
+| 5 | Data collected through other source connectors into Source Connectors in Eperience Platform Hub. | < 24 hours | 
+| 6 | Data processed by Real-time Processor for a consolidated dataset for real-time reporting. | < 90 seconds |
 
 ## Limitations
 
 You should be aware of the following limitation for real-time reporting:
 
-* Real-time reporting only reports on data available on a rolling period of 24 hours. Data that crosses this rolling 24-hour period is not available.
+* Real-time reporting only reports on data available on a rolling period of 24 hours. Data that crosses this rolling 24-hour period is hidden for real-time reporting. Once [real-time refresh](use-real-time.md) for a report is disabled or automatically turned off, all relevant data for a report is available once more.
 * Attribution, segmentation, calculated metrics, and more only work on the data available within the rolling period of 24 hours.
 * Real-time reporting works best on event and session level data and you should be cautious using real-time reporting for person-level data. <!--Need to explain this a bit better --> Since only events from the rolling 24-hour period are available for real-time reports, a person's event history is also limited to this window. Consider the preference for event and session level data when you select dimension, (calculated) metrics. And when you use functionalities like breakdowns, next or previous, and more in your real-time refresh enabled panel.
 * You cannot combine stitching with real-time reporting. <!-- Do we need to explain this in more detail, why? --> Real-time reporting is about event and session level data and less relevant for person-based data.
