@@ -30,26 +30,39 @@ As part of that launch you want to know:
 * Relevant, but less valuable uses cases for real-time reporting are validation use cases. 
 You want to validate, for example:
 
-  * Is the campaign journey you recently launched, actually working?
+  * Is the campaign journey you recently launched actually working?
   * When your new product page went live, are you collecting customer data from the page?
   * Is your live media event going ok?
 
-Do not consider real-time reporting for operations monitoring use cases. For example, to answer the question: is a site actually working?
+Do not consider real-time reporting for operations monitoring use cases. For example, to answer the question whether a site is properly working. Since the [real-time refresh toggle](use-real-time.md) automatically disables after 30 minutes and the real-time report stops refreshing, you should not use a real-time report as a reliable source for these use cases.
 
 
 ## Definition
 
-The real-time aspect of real-time reporting for Customer Journey Analytics is defined as data and visualizations that are updated within approximately 5 minutes from the moment the underlying data is ingested through the associated connection.
+The real-time aspect of real-time reporting for Customer Journey Analytics is defined as data and visualizations that are updated within approximately 6.5 minutes from the moment the underlying data is ingested through the associated connection.
+
+Various components in the setup of your data collection determine the real-time reporting latency.
+
+![Real-time reporting](assets/real-time-reporting-latencies.svg){zoomable="yes"}
+
+| | Description | Latency |
+|:---:|---|--:|
+| 1 | Data collected through Edge Network SDK / APIs into the Edge Network. | < 500 milliseconds |
+| 2 | Data replicated from Edge Network to data collection and validation service in Experience Platform Hub. | < 5 minutes |
+| 3 | Data collected through streaming connectors into data collection and validation service in Experience Platform Hub. | < 15 minutes |
+| 4 | Data collected through Adobe Analytics and forwarded by the Analytics source connector to the source connectors processor in Experience Platform Hub. | < 15 minutes |
+| 5 | Data collected through other source connectors into the source connectors processor in Experience Platform Hub. | < 24 hours | 
+| 6 | Data processed by the real-time processor for a consolidated dataset for real-time reporting. | < 90 seconds |
 
 ## Limitations
 
-You should be aware of the following limitation for real-time reporting:
+Be aware of the following limitation for real-time reporting:
 
-* Real-time reporting only reports on data available on a rolling period of 24 hours. Data that crosses this rolling 24-hour period is not available.
+* Real-time reporting only reports on data available on a rolling period of 24 hours. Data that crosses this rolling 24-hour period is hidden for real-time reporting. Once the [real-time refresh](use-real-time.md) for a report is disabled or automatically turned off, all relevant data for a report is available once more.
 * Attribution, segmentation, calculated metrics, and more only work on the data available within the rolling period of 24 hours.
-* Real-time reporting works best on event and session level data and you should be cautious using real-time reporting for person-level data. <!--Need to explain this a bit better --> Since only events from the rolling 24-hour period are available for real-time reports, a person's event history is also limited to this window. Consider the preference for event and session level data when you select dimension, (calculated) metrics. And when you use functionalities like breakdowns, next or previous, and more in your real-time refresh enabled panel.
-* You cannot combine stitching with real-time reporting. <!-- Do we need to explain this in more detail, why? --> Real-time reporting is about event and session level data and less relevant for person-based data.
-* No heartbeat collected media metrics are available, with the exception of media start and media close metrics. So you can still use real-time reporting to enable a media use case.
+* Real-time reporting works best on event and session level data and you should be cautious using real-time reporting for person-level data. <!--Need to explain this a bit better --> Since only events from the rolling 24-hour period are available for real-time reports, a person's event history is also limited to this window. Consider the preference for event and session level data when you select a dimension and (calculated) metrics. And when you use functionalities like breakdowns, next or previous, and more in your real-time refresh enabled panel.
+* You cannot combine stitching with real-time reporting. <!-- Do we need to explain this in more detail, why? --> Real-time reporting is about event and session level data and is less relevant for person-based data.
+* No heartbeat collected media metrics are available, except media start and media close metrics. So, you can still use real-time reporting to enable a media use case.
 * When you use the [download or export options](/help/analysis-workspace/export/download-send.md) to download  a project or export data from a freeform table, consider the following:
   * A downloaded CSV project or exported CSV file contains the real-time data available at the moment of download or export.
   * A downloaded PDF project contains non real-time data, similar to the data that is shown when real-time refresh is disabled.
