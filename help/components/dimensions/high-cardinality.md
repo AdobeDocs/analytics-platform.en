@@ -1,6 +1,6 @@
 ---
-title: Hig Cardinality Dimensions
-description: Explain how Customer Journey Analytics handles dimensions with many unique values.
+title: High cardinality dimensions
+description: Explains how Customer Journey Analytics handles dimensions with many unique values.
 feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
