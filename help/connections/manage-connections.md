@@ -137,13 +137,7 @@ Alternatively, you can:
 
 See [Create or edit a data view](/help/data-views/create-dataview.md) for more information.
 
-### Use a Journey Optimizer connection in Customer Journey Analytics {#use-connection-in-cja}
-
->[!IMPORTANT]
->
->When you enable a Journey Optimizer connection for use with Customer Journey Analytics as described in this section, each Row of Data within the connection counts toward your licensed Rows of Data each month for Customer Journey Analytics and appears within the Connections Usage UI. Select the **[!UICONTROL Use in CJA]** option on the connection only if you are comfortable with the additional usage of Rows of Data in Customer Journey Analytics. 
->
->**If you were entitled to both Customer Journey Analytics and Journey Optimizer between October 2024 and October 2025, see the following document regarding [AJO-Enabled Connections](https://view.adobe.com/viewer/1ed94fc35c7860b260766c620889e7a0#1)**. 
+### Journey Optimizer connections
 
 You can use a Journey Optimizer connection in Customer Journey Analytics to bring the following additional value to your connection:
 
@@ -155,13 +149,22 @@ You can use a Journey Optimizer connection in Customer Journey Analytics to brin
 
   For more information about editing options, see [Edit a connection](#edit-a-connection).
 
+
+>[!IMPORTANT]
+>
+>When you enable a Journey Optimizer connection for use with Customer Journey Analytics as described in this section, each Row of Data within the connection counts toward your licensed Rows of Data each month for Customer Journey Analytics and appears within the Connections Usage UI. Select the **[!UICONTROL Use in CJA]** option on the connection only if you are comfortable with the additional usage of Rows of Data in Customer Journey Analytics. 
+>
+>**If you were entitled to both Customer Journey Analytics and Journey Optimizer between October 2024 and October 2025, see the following document about [AJO-Enabled Connections](https://view.adobe.com/viewer/1ed94fc35c7860b260766c620889e7a0#1)**. 
+
 To enable this functionality, your organization needs access to Customer Journey Analytics. If you don't have access, contact your Adobe sales representative. 
 
-After you have access to Customer Journey Analytics, you must allow the Journey Optimizer connection to be used in Customer Journey Analytics:
+#### Use a Journey Optimizer connection {#use-connection-in-cja}
+
+To use a Journey Optimizer connection in Customer Journey Analytics:
 
 1. Locate the Journey Optimizer connection that you want to use with Customer Journey Analytics. 
 
-   1. Select the Filter icon on the **[!UICONTROL Connections]** tab.
+   1. Select ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** in the **[!UICONTROL Connections]** tab.
 
    1. In the **[!UICONTROL Use in CJA]** section, select **[!UICONTROL Off]**.
 
@@ -169,31 +172,29 @@ After you have access to Customer Journey Analytics, you must allow the Journey 
 
       ![Filter to show connections not enabled for AJO](assets/remove-ajo-connection.png)
 
-1. To view the connection, select the name of the Journey Optimizer connection that you want to use in Customer Journey Analytics. 
+1. Select the name of the Journey Optimizer connection.
 
-1. When viewing the Journey Optimizer connection, select **[!UICONTROL Use in CJA]**.
+1. Select ![UsersShare](/help/assets/icons/UseInCJA.svg) **[!UICONTROL Use in CJA]**.
 
    ![Use in CJA button](assets/connection-use-in-cja.png)
 
-   The following **[!UICONTROL Use this connection in Customer Journey Analytics]** dialog displays:
-
-   ![Use in connection](assets/use-in-connection.png)
+   The **[!UICONTROL Use this connection in Customer Journey Analytics]** dialog displays.
 
 1. Enable the toggle, **[!UICONTROL Use connection in CJA]**.
 
 1. Select **[!UICONTROL Use connection]**. <!-- double-check these dialog button names -->
 
-#### Remove the connection from Customer Journey Analytics {#remove-connection-in-cja}
+#### Remove a Journey Optimizer connection {#remove-connection-in-cja}
 
-You can remove the Journey Optimizer connection from Customer Journey Analytics at any time. However, removing the connection from Customer Journey Analytics after it is being used results in the following:
+You can remove a Journey Optimizer connection from Customer Journey Analytics at any time. However, removing the connection from Customer Journey Analytics after it is being used results in the following:
 
 * The Journey Optimizer connection and any associated data views are reset to their default state and can no longer be edited 
 
-* Any custom derived fields associated with the connection are deleted
+* Any custom derived fields associated with the connection are deleted.
 
-* You can no longer perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics 
+* You can no longer perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics.
 
-  This means that the **[!UICONTROL Analyze in CJA]** button in Journey Optimizer is disabled
+  This means that the **[!UICONTROL Analyze in CJA]** button in Journey Optimizer is disabled.
 
 >[!IMPORTANT]
 >
@@ -204,7 +205,7 @@ To remove the connection from Customer Journey Analytics:
 
 1. Locate the Journey Optimizer connection that you want to remove from Customer Journey Analytics. 
 
-   1. Select the Filter icon on the **[!UICONTROL Connections]** tab.
+   1. Select ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** in the **[!UICONTROL Connections]** tab.
 
    1. In the **[!UICONTROL Use in CJA]** section, select **[!UICONTROL On]**.
 
@@ -215,12 +216,10 @@ To remove the connection from Customer Journey Analytics:
 1. To view the connection, select the name of the Journey Optimizer connection that you want to remove from Customer Journey Analytics. 
 
 1. When viewing the Journey Optimizer connection, select **[!UICONTROL Remove from CJA]**.
+   
+   The **[!UICONTROL Remove this connection from Customer Journey Analytics]** dialog displays:
 
    ![Remove from CJA button](assets/connection-remove-from-cja.png)
-   
-   The following **[!UICONTROL Remove this connection from Customer Journey Analytics]** dialog displays:
-
-   ![Use in connection](assets/remove-connection.png)
 
 1. Disable the option, **[!UICONTROL Remove connection from CJA]**.
 
@@ -382,13 +381,13 @@ When a dataset row is selected in the datasets table, a panel on the right side 
 >[!CONTEXTUALHELP]
 >id="connections_averagerowsize"
 >title="Average row size"
->abstract="The average size of a data row for the current month with a percentage change compared to the previous month."
+>abstract="The average amount of storage consumed by each row of data ingested and stored in Customer Journey Analytics (in KB) for the current nonth, with a percentage change compared to the previous month."
 
 
 >[!CONTEXTUALHELP]
 >id="connections_coredatavolume"
 >title="Core data volume"
->abstract="The volume of core data for the current month. *Need confirmation on the exact definition!*"
+>abstract="The total amount of data stored on disk that is timestamped for the current month (in GB or TB), with a percentage change compared to the previous month."
 
 
 >[!CONTEXTUALHELP]
