@@ -39,7 +39,7 @@ Do not consider real-time reporting for operations monitoring use cases. For exa
 
 ## Latencies
 
-How you collect data determines the real-time latency of real-time reporting for Customer Journey Analytics . The illustration and table below show approximate latencies for various data collection scenarios when using real-time and standard reporting.
+How you collect data determines the real-time latency of real-time reporting for Customer Journey Analytics. The illustration and table below show approximate latencies for various data collection scenarios when using real-time and standard reporting.
 
 The illustration also emphasizes that real-time reporting uses a consolidated dataset that is completely separate from the [consolidated (combined) dataset](/help/connections/combined-dataset.md) used for standard reporting. You use the [Real-time refresh toggle](use-real-time.md) to switch between: 
 
