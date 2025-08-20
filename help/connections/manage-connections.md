@@ -426,7 +426,6 @@ The Usage interface uses the following metrics:
 >
 
 
-
 The Usage interface consists of two panels:
 
 * The **[!UICONTROL Key usage metrics]** panel: provides core and historical data reportable rows. The panel also tracks percentage changes compared to the previous month for both core and historical data rows.
