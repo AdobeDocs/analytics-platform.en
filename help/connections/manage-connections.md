@@ -387,7 +387,7 @@ When a dataset row is selected in the datasets table, a panel on the right side 
 >[!CONTEXTUALHELP]
 >id="connections_coredatavolume"
 >title="Core data volume"
->abstract="The total amount of data stored on disk that is timestamped for the current month (in GB or TB), with a percentage change compared to the previous month."
+>abstract="The total amount of data stored on disk that is timestamped for the current month (in TB), with a percentage change compared to the previous month."
 
 
 >[!CONTEXTUALHELP]
@@ -424,7 +424,6 @@ The Usage interface uses the following metrics:
 >
 >Data is collected, starting from July 2024 for the core, historical, and total records. Reach out to your account manager for earlier historical data.
 >
-
 
 
 The Usage interface consists of two panels:
