@@ -37,29 +37,30 @@ You want to validate, for example:
 Do not consider real-time reporting for operations monitoring use cases. For example, to answer the question whether a site is properly working. Since the [real-time refresh toggle](use-real-time.md) automatically disables after 30 minutes and the real-time report stops refreshing, you should not use a real-time report as a reliable source for these use cases.
 
 
-## Definition
+## Latencies
 
-The real-time aspect of real-time reporting for Customer Journey Analytics is defined as data and visualizations that are updated within approximately 6.5 minutes from the moment the underlying data is ingested through the associated connection.
+The real-time latency of real-time reporting for Customer Journey Analytics is determined by how you collect data. The illustration and table below show approximate latencies for various data collection scenarios when using real-time and standard reporting.
 
-Various components in the setup of your data collection determine the real-time reporting latency.
+The illustration also emphasizes that real-time reporting uses a consolidated dataset that is completely separate from the [consolidated (combined) dataset](/help/connections/combined-dataset.md) used for standard reporting. You use the [Real-time refesh toggle](use-real-time.md) to switch between: 
+
+* Real-time reporting on a consolidated dataset that contains up to 24 hours of rolling data.
+* Standard reporting on the consolidated dataset that contains up to 13 months of rolling data (or longer in case you have licensed the Extended Data Capacity Add-on).
 
 ![Real-time reporting](assets/real-time-reporting-latencies.svg){zoomable="yes"}
 
-| | Description | Latency |
-|:---:|---|--:|
-| 1 | Data collected through Edge Network SDK / APIs into the Edge Network. | < 500 milliseconds |
-| 2 | Data replicated from Edge Network to data collection and validation service in Experience Platform Hub. | < 5 minutes |
-| 3 | Data collected through streaming connectors into data collection and validation service in Experience Platform Hub. | < 15 minutes |
-| 4 | Data collected through Adobe Analytics and forwarded by the Analytics source connector to the source connectors processor in Experience Platform Hub. | < 15 minutes |
-| 5 | Data collected through other source connectors into the source connectors processor in Experience Platform Hub. | < 24 hours | 
-| 6 | Data processed by the real-time processor for a consolidated dataset for real-time reporting. | < 90 seconds |
+| | Data collection | Real-time reporting latency | Standard reporting latency |
+|:---:|---|--:|--:|
+| 1 | Edge Network SDK / APIs into the Edge Network | &approx; &lt; 00h:06m:30s | &approx; &lt; 01h:35m:00s | 
+| 2 | Streaming connectors | &approx; &lt; 00h:16m:30s | &approx; &lt; 01h:45m:00s |
+| 3 | Adobe Analytics source connector | &approx; &lt; 00h:16m:30s | &approx; &lt; 01h:45m:00s |
+| 4 | Other source connectors into the source connectors (including batch data) | &approx; &lt; 24h:01m:30s | &approx; &lt; 25h:30m:00s |
 
 ## Limitations
 
 Be aware of the following limitation for real-time reporting:
 
-* Real-time reporting only reports on data available on a rolling period of 24 hours. Data that crosses this rolling 24-hour period is hidden for real-time reporting. Once the [real-time refresh](use-real-time.md) for a report is disabled or automatically turned off, all relevant data for a report is available once more.
-* Attribution, segmentation, calculated metrics, and more only work on the data available within the rolling period of 24 hours.
+* Real-time reporting only reports on data available on a rolling period of 24 hours. Data that is more than   24-hour old is not available for real-time reporting. Once the [real-time refresh](use-real-time.md) for a report is disabled or automatically turned off, all relevant data is available once more from the [consolidated dataset](/help/connections/combined-dataset.md) typically used for reporting in Customer Journey Analytics..
+* Attribution, segmentation, calculated metrics, and more only work on the data available within the rolling period of 24 hours. For example, a *Repeat visitors* segment will include very few people in a real-time report because the report will only include people who visited multiple times in the last 24 hours. A similar limitation applies when you create a real-time report on people who previously clicked on a campaign that is no longer active.
 * Real-time reporting works best on event and session level data and you should be cautious using real-time reporting for person-level data. <!--Need to explain this a bit better --> Since only events from the rolling 24-hour period are available for real-time reports, a person's event history is also limited to this window. Consider the preference for event and session level data when you select a dimension and (calculated) metrics. And when you use functionalities like breakdowns, next or previous, and more in your real-time refresh enabled panel.
 * You cannot combine stitching with real-time reporting. <!-- Do we need to explain this in more detail, why? --> Real-time reporting is about event and session level data and is less relevant for person-based data.
 * No heartbeat collected media metrics are available, except media start and media close metrics. So, you can still use real-time reporting to enable a media use case.
