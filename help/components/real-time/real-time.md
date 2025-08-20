@@ -39,9 +39,9 @@ Do not consider real-time reporting for operations monitoring use cases. For exa
 
 ## Latencies
 
-The real-time latency of real-time reporting for Customer Journey Analytics is determined by how you collect data. The illustration and table below show approximate latencies for various data collection scenarios when using real-time and standard reporting.
+How you collect data determines the real-time latency of real-time reporting for Customer Journey Analytics . The illustration and table below show approximate latencies for various data collection scenarios when using real-time and standard reporting.
 
-The illustration also emphasizes that real-time reporting uses a consolidated dataset that is completely separate from the [consolidated (combined) dataset](/help/connections/combined-dataset.md) used for standard reporting. You use the [Real-time refesh toggle](use-real-time.md) to switch between: 
+The illustration also emphasizes that real-time reporting uses a consolidated dataset that is completely separate from the [consolidated (combined) dataset](/help/connections/combined-dataset.md) used for standard reporting. You use the [Real-time refresh toggle](use-real-time.md) to switch between: 
 
 * Real-time reporting on a consolidated dataset that contains up to 24 hours of rolling data.
 * Standard reporting on the consolidated dataset that contains up to 13 months of rolling data (or longer in case you have licensed the Extended Data Capacity Add-on).
@@ -59,8 +59,8 @@ The illustration also emphasizes that real-time reporting uses a consolidated da
 
 Be aware of the following limitation for real-time reporting:
 
-* Real-time reporting only reports on data available on a rolling period of 24 hours. Data that is more than   24-hour old is not available for real-time reporting. Once the [real-time refresh](use-real-time.md) for a report is disabled or automatically turned off, all relevant data is available once more from the [consolidated dataset](/help/connections/combined-dataset.md) typically used for reporting in Customer Journey Analytics..
-* Attribution, segmentation, calculated metrics, and more only work on the data available within the rolling period of 24 hours. For example, a *Repeat visitors* segment will include very few people in a real-time report because the report will only include people who visited multiple times in the last 24 hours. A similar limitation applies when you create a real-time report on people who previously clicked on a campaign that is no longer active.
+* Real-time reporting only reports on data available on a rolling period of 24 hours. Data that is more than   24-hour old is not available for real-time reporting. Once the [real-time refresh](use-real-time.md) for a report is disabled or automatically turned off, all relevant data is available once more from the [consolidated dataset](/help/connections/combined-dataset.md) typically used for reporting in Customer Journey Analytics.
+* Attribution, segmentation, calculated metrics, and more only work on the data available within the rolling period of 24 hours. For example, a *Repeat visitors* segment includes very few people in a real-time report because the report only includes people who visited multiple times in the last 24 hours. A similar limitation applies when you create a real-time report on people who previously clicked on a campaign that is no longer active.
 * Real-time reporting works best on event and session level data and you should be cautious using real-time reporting for person-level data. <!--Need to explain this a bit better --> Since only events from the rolling 24-hour period are available for real-time reports, a person's event history is also limited to this window. Consider the preference for event and session level data when you select a dimension and (calculated) metrics. And when you use functionalities like breakdowns, next or previous, and more in your real-time refresh enabled panel.
 * You cannot combine stitching with real-time reporting. <!-- Do we need to explain this in more detail, why? --> Real-time reporting is about event and session level data and is less relevant for person-based data.
 * No heartbeat collected media metrics are available, except media start and media close metrics. So, you can still use real-time reporting to enable a media use case.
