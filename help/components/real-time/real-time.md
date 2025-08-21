@@ -36,17 +36,18 @@ You want to validate, for example:
 
 Do not consider real-time reporting for operations monitoring use cases. For example, to answer the question whether a site is properly working. Since the [real-time refresh toggle](use-real-time.md) automatically disables after 30 minutes and the real-time report stops refreshing, you should not use a real-time report as a reliable source for these use cases.
 
+## How it works
 
-## Latencies
-
-How you collect data determines the latency of real-time reporting in Customer Journey Analytics. The illustration and table below show approximate latencies for various data collection scenarios when using real-time and (for comparison) standard reporting.
-
-The illustration also emphasizes that real-time reporting uses a consolidated dataset that is completely separate from the [consolidated (combined) dataset](/help/connections/combined-dataset.md) used for standard reporting. You use the [Real-time refresh toggle](use-real-time.md) to switch between: 
+Real-time reporting uses a consolidated dataset that is completely separate from the [consolidated (combined) dataset](/help/connections/combined-dataset.md) used for standard reporting. You use the [Real-time refresh toggle](use-real-time.md) to switch between: 
 
 * Real-time reporting on a consolidated dataset that contains up to 24 hours of rolling data.
 * Standard reporting on the consolidated dataset that contains up to 13 months of rolling data (or longer in case you have licensed the Extended Data Capacity Add-on).
 
 ![Real-time reporting](assets/real-time-reporting-latencies.svg){zoomable="yes"}
+
+### Latencies
+
+How you collect data determines the latency of real-time reporting in Customer Journey Analytics. The illustration above and the table below show approximate latencies for various data collection scenarios when using real-time and (for comparison) standard reporting.
 
 | | Data collection | Real-time reporting latency <br/>(approx. less than) | Standard reporting latency <br/>(approx. less than) |
 |:---:|---|--:|--:|
