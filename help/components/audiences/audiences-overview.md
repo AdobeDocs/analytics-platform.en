@@ -7,7 +7,7 @@ role: User, Admin
 ---
 # Audience publishing overview
 
-You can now create and publish audiences discovered in Customer Journey Analytics to [Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) in Adobe Experience Platform for customer targeting and personalization. 
+You can create and publish audiences discovered in Customer Journey Analytics to [Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) in Adobe Experience Platform for customer targeting and personalization. 
 
 Publishing audiences provides a clear way to activate and to take action on insights found within Customer Journey Analytics. These actions might include:
 

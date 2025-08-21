@@ -5,7 +5,7 @@ exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
 ---
-# Manage audiences
+# Manage published audiences
 
 Audiences can be managed in Customer Journey Analytics using **[!UICONTROL Components]** > **[!UICONTROL Audiences]**.
 
