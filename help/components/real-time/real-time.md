@@ -48,12 +48,12 @@ The illustration also emphasizes that real-time reporting uses a consolidated da
 
 ![Real-time reporting](assets/real-time-reporting-latencies.svg){zoomable="yes"}
 
-| | Data collection | Real-time reporting latency | Standard reporting latency |
+| | Data collection | Real-time reporting latency <br/>(approx. less than) | Standard reporting latency <br/>(approx. less than) |
 |:---:|---|--:|--:|
-| 1 | Edge Network SDK / APIs into the Edge Network | &approx; &lt; 00h:06m:30s | &approx; &lt; 01h:35m:00s | 
-| 2 | Streaming connectors | &approx; &lt; 00h:16m:30s | &approx; &lt; 01h:45m:00s |
-| 3 | Adobe Analytics source connector | &approx; &lt; 00h:16m:30s | &approx; &lt; 01h:45m:00s |
-| 4 | Other source connectors into the source connectors (including batch data) | &approx; &lt; 24h:01m:30s | &approx; &lt; 25h:30m:00s |
+| 1 | Edge Network SDK / APIs into the Edge Network | 7 minutes | 95 minutes | 
+| 2 | Streaming connectors |  17 minutes |  105 minutes |
+| 3 | Adobe Analytics source connector | 17 minutes |  105 minutes |
+| 4 | Other source connectors into the source connectors (including batch data) |  25 hours | 25 hours |
 
 
 ## Limitations
