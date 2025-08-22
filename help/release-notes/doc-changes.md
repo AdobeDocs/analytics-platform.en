@@ -13,8 +13,12 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **August 2025** | |
+| New derived field functions | Documentation for the new derived field functions: [Date Math](/help/data-views/derived-fields/derived-fields.md#date-math), [Depth](/help/data-views/derived-fields/derived-fields.md#depth), and [Typecast](/help/data-views/derived-fields/derived-fields.md#typecast). |
 | **July 2025** | |
 | Debugger | New article on how to enable, use and disable the project debugger in Analysis Workspace. |
+| Flow visualization performance recommendation | Added information stating that leaving more than 10 nodes expanded in a single flow visualization can affect reporting time. |
+| Alternate method for granting the Adobe Azure App access to your key | Added information about granting permissions via authorization consent when [setting up customer-managed keys](/help/privacy/cmk.md#set-up-customer-managed-keys-for-customer-journey-analytics-on-azure) for Customer Journey Analytics on Azure. |
 | **June 2025** | |
 | New shortcut actions | New keyboard shortcuts in Analysis Workspace now allow you to [move Workspace panels](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#move-panel-actions) up and down in a project.  | 
 | **May 2025** | |

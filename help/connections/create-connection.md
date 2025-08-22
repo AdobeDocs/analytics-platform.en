@@ -339,6 +339,11 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >abstract="Select how to join: based on a match by field or match by container.<br/><br/>**[!UICONTROL Match by field]**: Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.<br/>**[!UICONTROL Match by container]**: Select a container to use to join with one of the event datasets."
 
 >[!CONTEXTUALHELP]
+>id="connection_matchingkeytype"
+>title="Matching key type"
+>abstract="Select how to join: based on a match by field or match by container.<br/><br/>**[!UICONTROL Match by field]**: Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.<br/>**[!UICONTROL Match by container]**: Select a container to use to join with one of the event datasets."
+
+>[!CONTEXTUALHELP]
 >id="connection_importnewdata"
 >title="Import new data"
 >abstract="Any new batches that get added in the Experience Platform dataset are added automatically in this connection and made available for analysis."
@@ -372,7 +377,7 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 
 >[!CONTEXTUALHELP]
 >id="connection_persistentid"
->title="Person ID"
+>title="Persistent ID"
 >abstract="Select a persistent ID from the available identities. A persistent ID is an identifier that is available on all events in the event dataset."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
 
@@ -484,8 +489,8 @@ For an event dataset in an account-based connection, you can specify:
 
 | Setting | Description |
 | --- | --- |
-| **[!UICONTROL Account ID]** | Select a Global Account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform. Applicable when you have added Global Account as a container to your connection. <p>If a record doesn't contain a value for the identity you have selected as the Account ID for the event dataset, the record is skipped. |
-| **[!UICONTROL Global Account ID]** | Select an Account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform. Applicable when you have not added Global Account as a container to your connection.|
+| **[!UICONTROL Global Account ID]** | Select a Global Account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform. Applicable when you have added Global Account as a container to your connection. <p>If a record doesn't contain a value for the identity you have selected as the Account ID for the event dataset, the record is skipped. |
+| **[!UICONTROL Account ID]** | Select an Account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform. Applicable when you have not added Global Account as a container to your connection.|
 | **[!UICONTROL Opportunity ID]** | Select an Opportunity ID (the unique identifier for an opportunity) from the available identities defined in the dataset schema in the Experience Platform. |
 | **[!UICONTROL Buying Group ID]** | Select a Buying Group ID (the unique identifier for a buying group) from the available identities defined in the dataset schema in the Experience Platform. |
 | **[!UICONTROL Person ID]** | Select a Person ID from the drop-down menu of available identities. These identities were defined in the dataset schema in the Experience Platform. See [Use Identity Map as a Person ID](#id-map) for information on how to use Identity Map as a Person ID.<p>If there are no Person IDs to choose from, that means one or more Person IDs have not been defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information. <p>The value for the selected Person ID is considered to be case sensitive. For example, `abc123` and `ABC123` are two different values. |
@@ -696,15 +701,6 @@ This calculation is done for every dataset in the connection.
     In this example, "analytics_demo_data" is the name of the dataset.
 
 2. To show all the datasets that exist in Adobe Experience Platform, perform the `Show Tables` query.
-
-
-## Algorithmic pruning of large lookup datasets
-
-When creating a connection, you can add large datasets for lookup purposes. For example, a dataset representing a product catalog so descriptive product information can be looked up when building reports and visualizations. Such a large lookup dataset can exceed the maximum of 10 million unique lookups currently implemented as a guardrail, resulting in additional data being skipped.
-
-You can request an algorithmic pruning of a large lookup dataset. This algorithmic pruning only keeps data in the lookup dataset that matches the keys in your event dataset. This way, you don't need to load the entire unpruned lookup dataset. Old or less frequently used items are removed, which might slightly affect reports but brings significant benefits. The algorithm looks back 90 days and updates weekly.
-
-Contact your Adobe support team for further information and to enable this capability.
 
 
 >[!MORELIKETHIS]

@@ -3,8 +3,6 @@ description: Use the map visualization to plot data on a geographic map visualiz
 title: Map
 feature: Visualizations
 role: User, Admin
-hide: yes
-hidefromtoc: yes
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
 ---
 # Map {#map}
@@ -53,7 +51,7 @@ The ![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL Map]** visualization in
 
 In Customer Journey Analytics data views settings, administrators can add [context labels](/help/data-views/component-settings/overview.md) to a dimension or metric and Customer Journey Analytics services like the [!UICONTROL map] visualization can use these labels for their purposes. 
 
-#### Required context labels for the map visualization
+#### Required context labels for latitude and longitude in the map visualization
 
 Context labels are required for the map visualization to function. Without the following context labels present, the map visualization does not work, because there is no latitude and longitude data to work with.
 
@@ -66,25 +64,39 @@ To add these context labels:
 
 1. On the Data views page, select the data view that contains data that you want to analyze in the map visualization.
 
-1. Select the **[!UICONTROL Components]** tab, then select the dimension that contains the longitude data. 
+1. Select the **[!UICONTROL Components]** tab.
 
-1. In the **[!UICONTROL Component settings]** section in the right rail, in the **[!UICONTROL Context labels]** field, begin typing `Longitude`, then select it from the drop-down menu.
+1. (Conditional) If you are using the Web SDK and you have configured latitude and longitude to be populated in your data stream, or if you are using the Analytics Source Connector to populate event data, then latitude and longitude fields should already be available in your schema and populated with the correct context labels.
 
-   ![Latitude and longitude context labels](assets/map-context-labels-lat-long.png)
+    Locate these **[!UICONTROL Latitude]** and **[!UICONTROL Longitude]** schema fields (in **[!UICONTROL Event datasets]** > **[!UICONTROL placeContext]** > **[!UICONTROL geo]** > **[!UICONTROL _schema]**) and drag them into your data view as dimensions if they aren't already present. 
 
-1. Repeat this process to add the **[!UICONTROL Latitude]** context label to the dimension that contains the latitude data.
+   When these schema fields exist as dimensions in your data view, their context labels are automatically applied, and the map visualization uses them without any additional configuration.
+
+   ![Add latitude and longitude schema fields to data view](assets/dataview-lat-long-default.png)
+
+1. (Conditional) If you have custom dimensions that you want to use for latitude and longitude data, you can configure the context labels on the custom fields:
+
+   1. In the **[!UICONTROL Dimensions]** section, select the dimension that contains the longitude data. 
+
+   1. In the **[!UICONTROL Component settings]** section in the right rail, in the **[!UICONTROL Context labels]** field, begin typing `Longitude`, then select it from the drop-down menu.
+
+      ![Latitude and longitude context labels](assets/map-context-labels-lat-long.png)
+
+   1. Repeat this process to add the **[!UICONTROL Latitude]** context label to the dimension that contains the latitude data.
+
+   1. (Optional) By default, these dimensions are precise to the town or zip code level in the map visualization, and they show 2 decimal places in Workspace reports. You can adjust them to be precise within a single meter in the map visualization and to show 5 decimal places in Workspace reports. For more information about how to adjust the precision level, see [Configure precise locations for dimensions](#configure-precise-locations-for-dimensions).
 
 1. Select **[!UICONTROL Save and continue]** > **[!UICONTROL Save and finish]**.
 
 #### Required context labels for geo templates
 
-Adobe provides several [pre-built templates](/help/analysis-workspace/templates/use-templates.md#web-audience) that use the map visualization. In order to use each template, you must add the corresponding context label to a dimension in your data view.
+Adobe provides several [pre-built templates](/help/analysis-workspace/templates/use-templates.md#web-audience) that use the map visualization. To use each template, you must add the corresponding context label to a dimension in your data view.
 
 Following are the templates and the required context label. Without these labels present, the templates do not work, because there is no geo data to work with.
 
 | Template name | Required context label | 
 |---------|----------|
-| Geo contries | [!UICONTROL Geo: Geo Country] | 
+| Geo countries | [!UICONTROL Geo: Geo Country] | 
 | Geo regions | [!UICONTROL Geo: Geo Region] | 
 | Geo cities | [!UICONTROL Geo: Geo City] | 
 | Geo US states | [!UICONTROL Geo: Geo State] | 
@@ -94,15 +106,27 @@ To add these context labels:
 
 1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Data views]**.
 
-1. On the Data views page, select the data view that contains data that you want to analyze with pre-built templates that use the map visualization. In this data view, you will pick five dimensions, one with the country data, one with the region data, one with the city data, one with the state data, and one with the DMA data. You will then label those dimensions with the corresponding context label.
+1. On the Data views page, select the data view that contains data that you want to analyze with pre-built templates that use the map visualization. In this data view, pick five dimensions: one with the country data, one with the region data, one with the city data, one with the state data, and one with the DMA data. Then, label those dimensions with the corresponding context label.
 
-1. Select the **[!UICONTROL Components]** tab, then select the dimension that contains the country data. 
+1. Select the **[!UICONTROL Components]** tab.
 
-1. In the **[!UICONTROL Component settings]** section in the right rail, in the **[!UICONTROL Context labels]** field, begin typing `Geo Country`, then select it from the drop-down menu.
+1. (Conditional)  If you are using the Web SDK and you have configured geo fields to be populated in your data stream, or if you are using the Analytics Source Connector to populate event data, then geo fields should already be available in your schema and populated with the correct context labels.
 
-   ![Templates context labels](assets/map-context-labels-templates.png)
+   Locate the appropriate schema fields, such as **[!UICONTROL City]**, **[!UICONTROL Postal code]**, **[!UICONTROL State or province]** (in **[!UICONTROL Event datasets]** > **[!UICONTROL placeContext]** > **[!UICONTROL geo]**), then drag them into your data view as dimensions if they aren't already present. 
 
-1. Repeat this process to add the **[!UICONTROL Geo: Geo Region]**, **[!UICONTROL Geo: Geo City]**, **[!UICONTROL Geo: Geo State]**, and **[!UICONTROL Geo: Dma]** context label to each dimension that contains the corresponding data.
+   When these schema fields exist as dimensions in your data view, their context labels are automatically applied, and the geo templates use them without any additional configuration.
+
+   ![Add geo schema fields to data view](assets/dataview-geo-default.png)
+
+1. (Conditional) If you have custom dimensions that you want to use for geo data, you can configure the context labels on the custom fields:
+
+   1. Select the dimension that contains the country data. 
+
+   1. In the **[!UICONTROL Component settings]** section in the right rail, in the **[!UICONTROL Context labels]** field, begin typing `Geo Country`, then select it from the drop-down menu.
+
+      ![Templates context labels](assets/map-context-labels-templates.png)
+
+   1. Repeat this process to add the **[!UICONTROL Geo: Geo Region]**, **[!UICONTROL Geo: Geo City]**, **[!UICONTROL Geo: Geo State]**, and **[!UICONTROL Geo: Dma]** context label to each dimension that contains the corresponding data.
 
 1. Select **[!UICONTROL Save and continue]** > **[!UICONTROL Save and finish]**.
 
@@ -123,7 +147,7 @@ The map visualization in Customer Journey Analytics differs from the map visuali
 | Create a trend from a selection | Create a trended line chart visualization based on a specific area that you select in the map visualization. <p>For more information, see [Create a trended line chart from the map visualization](#create-a-trended-line-chart-from-the-map-visualization). <!-- is this correct? --> | Cannot create a trend from the map visualization. |
 | Add a breakdown from a selection | Break down a specific dimension item, metric, segment, or date range within a specific area that you select in the map visualization. <p>For more information, see [Add a breakdown from the map visualization](#add-a-breakdown-from-the-map-visualization). | Cannot add a breakdown from the map visualization. |
 
-## Begin building a map visualization {#begin-building-map}
+## Build a map visualization {#begin-building-map}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -155,7 +179,7 @@ The map visualization in Customer Journey Analytics differs from the map visuali
 
    * **[!UICONTROL Add segment]**: (Optional) In the segment drop-down list, select a segment. Or drag in a segment from the list of segments.
 
-   You can update this information after the visualization is built by selecting the edit icon ![Edit](/help/assets/icons/Edit.svg) in the visualization header.
+   You can update this information after the visualization is built by selecting the Edit icon ![Edit](/help/assets/icons/Edit.svg) in the visualization header.
 
 1. Select **[!UICONTROL Build]**.
 
@@ -167,7 +191,7 @@ The map visualization in Customer Journey Analytics differs from the map visuali
 
 ## View a map visualization
 
-1. If you haven't already, build a map visualization as described in [Begin building a map visualization](#begin-building-a-map-visualization).
+1. If you haven't already, build a map visualization as described in [Build a map visualization](#begin-building-a-map-visualization).
 
 1. In the map visualization in Analysis Workspace, do any of the following:
 
@@ -191,7 +215,7 @@ The map visualization in Customer Journey Analytics differs from the map visuali
       
       The map zooms accordingly. The required dimension (country > state > city) is automatically updated, based on the zoom level.
 
-    * **Rotate**: You can rotate the map in 2D or 3D by holding the [!UICONTROL Ctrl] key while draggin the map with your mouse.
+    * **Rotate**: You can rotate the map in 2D or 3D by holding the [!UICONTROL Ctrl] key while dragging the map with your mouse.
 
       To reset the map to its original north alignment, select the compass icon ![compass icon](assets/map-compass-icon.png).
 
@@ -206,7 +230,9 @@ The map visualization in Customer Journey Analytics differs from the map visuali
         * Show negative numbers. 
         
           For example, if you are plotting a year-over-year metric, the map can show -33% over New York.
+
         * With metrics that are of type *percent*, clustering averages the percentages together.
+
         * A green and red color scheme indicates positive and negative.
 
     * **Additional visualization settings**: Select the Settings icon ![Setting](/help/assets/icons/Setting.svg) in the visualization header to view additional settings for the map visualization. For more information, see [Configure visualization settings](#configure-visualization-settings).
@@ -218,7 +244,7 @@ The map visualization in Customer Journey Analytics differs from the map visuali
 
 To configure settings for the map visualization:
 
-1. In Analysis Workspace, open an existing map visualization, or [begin building a new one](#begin-building-a-map-visualization).
+1. In Analysis Workspace, open an existing map visualization, or [build a new one](#begin-building-a-map-visualization).
 
 1. Hover over the map visualization, then select the Settings icon ![Setting](/help/assets/icons/Setting.svg) in the visualization header.
 
@@ -232,7 +258,7 @@ To configure settings for the map visualization:
    | **[!UICONTROL Styles]** | | |
    | |**[!UICONTROL Color theme]**|Shows the color scheme for the heat map and bubbles. You can choose among Coral, Reds, Greens or Blues. The default is Coral.|
    | |**[!UICONTROL Map style]**|You can choose from Basic, Streets, Bright, Light, Dark, and Satellite.|
-   | | **[!UICONTROL Cluster radius]**|Groups data points together that are within the specified number of pixels. The default is 50.|
+   | | **[!UICONTROL Cluster radius]**|Groups data points together that are within the specified number of pixels. The default is 50.<p>This option is available only when **[!UICONTROL Bubbles]** is selected as the **[!UICONTROL Map type]**.</p>|
    | | **[!UICONTROL Custom max value]**|Lets you alter the threshold for the max value for the map. Adjusting this value adjusts the scale for the bubbles or heatmap values (color and size) relative to the custom max value that you set.|
    | | **[!UICONTROL Show annotations]** | Shows the annotations made for this visualization. |
    | | **[!UICONTROL Hide title]** | Hides the title of the visualization.  |
@@ -247,7 +273,7 @@ If you have custom datasets with deep precision, you can configure the map visua
 
 1. In the data view, select the **[!UICONTROL Components]** tab.
 
-1. Select the dimension that you want to configure.
+1. Select the dimensions that you are using for latitude and longitude that you want to configure. For more information about which dimensions you're using, see [Required context labels for latitude and longitude in the map visualization](#required-context-labels-for-latitude-and-longitude-in-the-map-visualization).
 
 1. Configure the level of precision for the dimension:
 
@@ -257,19 +283,19 @@ If you have custom datasets with deep precision, you can configure the map visua
 
    1. In the **[!UICONTROL Decimal places]** field, change the number of decimals to reflect the desired level of precision: 
 
-      * **0:** Precise to the large region or country level in the map visualization. Shows 0 decimal places in Worspace reports. 
+      * **0:** Precise to the large region or country level in the map visualization. Shows 0 decimal places in Workspace reports. 
 
-      * **1:** Precise to the region or large city level in the map visualization.  Shows 1 decimal place in Worspace reports. 
+      * **1:** Precise to the region or large city level in the map visualization.  Shows 1 decimal place in Workspace reports. 
    
-      * **2:** Precise to the town or zip code level in the map visualization. Shows 2 decimal places in Worspace reports. 
+      * **2:** Precise to the town or zip code level in the map visualization. Shows 2 decimal places in Workspace reports. 
 
         This is the default selection.
 
-      * **3:** Precise to the very small town or neighborhood level in the map visualization. Shows 3 decimal places in Worspace reports. 
+      * **3:** Precise to the very small town or neighborhood level in the map visualization. Shows 3 decimal places in Workspace reports. 
 
-      * **4:** Precise to a specific parcel of land or building level in the map visualization. Shows 4 decimal places in Worspace reports. 
+      * **4:** Precise to a specific parcel of land or building level in the map visualization. Shows 4 decimal places in Workspace reports. 
 
-      * **5:** Precise to a single meter in the map visualization. Shows 5 decimal places in Worspace reports. 
+      * **5:** Precise to a single meter in the map visualization. Shows 5 decimal places in Workspace reports. 
 
 1. Select **[!UICONTROL Save and continue]** > **[!UICONTROL Save and finish]**.
 
@@ -279,11 +305,13 @@ You can create a segment based on a specific area that you select in the map vis
 
 To create a segment from the map visualization:
 
-1. (Optional) Zoom in on the specific area of the map that contains the data that you want to use for the segment. 
+1. Zoom or pan to the area of the map that contains the data that you want to use for your segment. 
 
-1. Click the selection tool ![map selection icon](assets/map-selection-icon.png), then drag your mouse to select the desired area.
+1. Do either of the following:
 
-1. Select **[!UICONTROL Create segment from selection]** from the drop-down menu that appears.
+   * **To create a segment from everything currently shown in the map:** Right-click anywhere on the map, then select **[!UICONTROL Create segment from current view]**.
+
+   * **To create a segment for a more specific area of the map:** Click the selection tool ![map selection icon](assets/map-selection-icon.png), drag your mouse to select the desired area, then select **[!UICONTROL Create segment from selection]**.
 
 1. Use the Segment builder to define the new segment. For more information, see [Segment builder](/help/components/segments/seg-builder.md).
 
@@ -293,11 +321,13 @@ You can create an audience based on a specific area that you select in the map v
 
 To create an audience from the map visualization:
 
-1. (Optional) Zoom in on the specific area of the map that contains the data that you want to use for the audience.
+1. Zoom or pan to the area of the map that contains the data that you want to use for your audience.
 
-1. Click the selection tool ![map selection icon](assets/map-selection-icon.png), then drag your mouse to select the desired area.
+1. Do either of the following:
 
-1. Select **[!UICONTROL Create audience from selection]** from the drop-down menu that appears.
+   * **To create an audience from everything currently shown in the map:** Right-click anywhere on the map, then select **[!UICONTROL Create audience from current view]**.
+
+   * **To create an audience for a more specific area of the map:** Click the selection tool ![map selection icon](assets/map-selection-icon.png), drag your mouse to select the desired area, then select **[!UICONTROL Create audience from selection]**.
 
 1. Use the Audience builder to define the new audience. For more information, see [Audience builder](/help/components/audiences/publish.md#audience-builder) in [Create and publish audiences](/help/components/audiences/publish.md)
 
@@ -307,11 +337,13 @@ You can create a trended line chart visualization for the data within a specific
 
 To create a trended line chart from the map visualization:
 
-1. (Optional) Zoom in on the specific area of the map that contains the data that you want to use for the trended line chart.
+1. Zoom or pan to the area of the map that contains the data that you want to use for the trended line chart. 
 
-1. Click the selection tool ![map selection icon](assets/map-selection-icon.png), then drag your mouse to select the desired area.
+1. Do either of the following:
 
-1. Select **[!UICONTROL Trend]** from the drop-down menu that appears.
+   * **To create a trended line chart from everything currently shown in the map:** Right-click anywhere on the map, then select **[!UICONTROL Trend from current view]**.
+
+   * **To create a trended line chart for a more specific area of the map:** Click the selection tool ![map selection icon](assets/map-selection-icon.png), drag your mouse to select the desired area, then select **[!UICONTROL Trend]**.
 
    A line visualization is built that includes a trendline. For more information about this visualization, see [Line](/help/analysis-workspace/visualizations/line.md).
 
