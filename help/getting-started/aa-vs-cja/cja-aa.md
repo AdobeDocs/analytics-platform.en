@@ -106,9 +106,10 @@ The following table lists features that are available in Customer Journey Analyt
 | **Processing rules, VISTA rules, Marketing channel processing rules** | Supported using Adobe Experience Platform Data Prep functionality as well as [derived fields](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/derived-fields) for both WebSDK based datasets and data from the Analytics source connector. |
 | **Products variable** | Within the Experience Platform, users can use an array of objects within a dataset schema to satisfy this use case. Within Customer Journey Analytics, customers can use any number of product variables and are not restricted to a single variable as in Adobe Analytics. |
 | **Project sharing** | Project sharing is only supported between users of Customer Journey Analytics - there is not project sharing between Customer Journey Analytics and the traditional Analysis Workspace. |
+| **Real-time reporting** | Real-time reporting in Customer Journey Analytics displays and updates data and visualizations within one or more panels in Analysis Workspace in real time. |
 | **Report Builder** | Supported with a new Office 365 plugin for Microsoft Excel. |
 | **User permissions/Data access controls** | Customer Journey Analytics distinguishes between [Adobe Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-tool-experience-cloud) product admins, product profile admins, and users. Only product admins can create, update, and delete connections, projects, segments, or calculated metrics that  other users have created. Product admins and product profile admins can edit data views. Additional user permissions are available for things like creating calculated metrics, segments, or annotations. |
-| **Visualizations** | All Workspace visualizations are supported except for the Map visualization. |
+| **Visualizations** | All Workspace visualizations are supported. |
 | **Cross-device/cross-channel stitching** | Supported for event datasets containing identity information. See [Stitching](../../stitching/overview.md). |
 
 ## Partial Support {#partial}
@@ -121,7 +122,6 @@ The following table lists features that are available in Customer Journey Analyt
 
 | Feature | Notes |
 | --- | --- |
-| **Real-time reporting** | Support is planned. |
 | **Transaction ID data sources** | Support is planned. |
 
 ## No support, not yet planned {#not-planned}

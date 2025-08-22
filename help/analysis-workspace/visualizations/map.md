@@ -90,7 +90,7 @@ To add these context labels:
 
 #### Required context labels for geo templates
 
-Adobe provides several [pre-built templates](/help/analysis-workspace/templates/use-templates.md#web-audience) that use the map visualization. In order to use each template, you must add the corresponding context label to a dimension in your data view.
+Adobe provides several [pre-built templates](/help/analysis-workspace/templates/use-templates.md#web-audience) that use the map visualization. To use each template, you must add the corresponding context label to a dimension in your data view.
 
 Following are the templates and the required context label. Without these labels present, the templates do not work, because there is no geo data to work with.
 
@@ -106,13 +106,13 @@ To add these context labels:
 
 1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Data views]**.
 
-1. On the Data views page, select the data view that contains data that you want to analyze with pre-built templates that use the map visualization. In this data view, you will pick five dimensions, one with the country data, one with the region data, one with the city data, one with the state data, and one with the DMA data. You will then label those dimensions with the corresponding context label.
+1. On the Data views page, select the data view that contains data that you want to analyze with pre-built templates that use the map visualization. In this data view, pick five dimensions: one with the country data, one with the region data, one with the city data, one with the state data, and one with the DMA data. Then, label those dimensions with the corresponding context label.
 
 1. Select the **[!UICONTROL Components]** tab.
 
 1. (Conditional)  If you are using the Web SDK and you have configured geo fields to be populated in your data stream, or if you are using the Analytics Source Connector to populate event data, then geo fields should already be available in your schema and populated with the correct context labels.
 
-   Locate the appropriate schema fields, such as **[!UICONTROL City]**, **[!UICONTROL Postal code]**, **[!UICONTROL State or province]** (in **[!UICONTROL Event datasets]** > **[!UICONTROL placeContext]** > **[!UICONTROL geo]**) and drag them into your data view as dimensions if they aren't already present. 
+   Locate the appropriate schema fields, such as **[!UICONTROL City]**, **[!UICONTROL Postal code]**, **[!UICONTROL State or province]** (in **[!UICONTROL Event datasets]** > **[!UICONTROL placeContext]** > **[!UICONTROL geo]**), then drag them into your data view as dimensions if they aren't already present. 
 
    When these schema fields exist as dimensions in your data view, their context labels are automatically applied, and the geo templates use them without any additional configuration.
 
@@ -147,7 +147,7 @@ The map visualization in Customer Journey Analytics differs from the map visuali
 | Create a trend from a selection | Create a trended line chart visualization based on a specific area that you select in the map visualization. <p>For more information, see [Create a trended line chart from the map visualization](#create-a-trended-line-chart-from-the-map-visualization). <!-- is this correct? --> | Cannot create a trend from the map visualization. |
 | Add a breakdown from a selection | Break down a specific dimension item, metric, segment, or date range within a specific area that you select in the map visualization. <p>For more information, see [Add a breakdown from the map visualization](#add-a-breakdown-from-the-map-visualization). | Cannot add a breakdown from the map visualization. |
 
-## Begin building a map visualization {#begin-building-map}
+## Build a map visualization {#begin-building-map}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -179,7 +179,7 @@ The map visualization in Customer Journey Analytics differs from the map visuali
 
    * **[!UICONTROL Add segment]**: (Optional) In the segment drop-down list, select a segment. Or drag in a segment from the list of segments.
 
-   You can update this information after the visualization is built by selecting the edit icon ![Edit](/help/assets/icons/Edit.svg) in the visualization header.
+   You can update this information after the visualization is built by selecting the Edit icon ![Edit](/help/assets/icons/Edit.svg) in the visualization header.
 
 1. Select **[!UICONTROL Build]**.
 
@@ -191,7 +191,7 @@ The map visualization in Customer Journey Analytics differs from the map visuali
 
 ## View a map visualization
 
-1. If you haven't already, build a map visualization as described in [Begin building a map visualization](#begin-building-a-map-visualization).
+1. If you haven't already, build a map visualization as described in [Build a map visualization](#begin-building-a-map-visualization).
 
 1. In the map visualization in Analysis Workspace, do any of the following:
 
@@ -215,7 +215,7 @@ The map visualization in Customer Journey Analytics differs from the map visuali
       
       The map zooms accordingly. The required dimension (country > state > city) is automatically updated, based on the zoom level.
 
-    * **Rotate**: You can rotate the map in 2D or 3D by holding the [!UICONTROL Ctrl] key while draggin the map with your mouse.
+    * **Rotate**: You can rotate the map in 2D or 3D by holding the [!UICONTROL Ctrl] key while dragging the map with your mouse.
 
       To reset the map to its original north alignment, select the compass icon ![compass icon](assets/map-compass-icon.png).
 
@@ -244,7 +244,7 @@ The map visualization in Customer Journey Analytics differs from the map visuali
 
 To configure settings for the map visualization:
 
-1. In Analysis Workspace, open an existing map visualization, or [begin building a new one](#begin-building-a-map-visualization).
+1. In Analysis Workspace, open an existing map visualization, or [build a new one](#begin-building-a-map-visualization).
 
 1. Hover over the map visualization, then select the Settings icon ![Setting](/help/assets/icons/Setting.svg) in the visualization header.
 
