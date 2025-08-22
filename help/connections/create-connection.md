@@ -718,4 +718,3 @@ This calculation is done for every dataset in the connection.
 >
 >Blog: [How to Leverage Event, Lookup, and Profile Datasets in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
-![Share](/help/assets/icons/Share.svg)
