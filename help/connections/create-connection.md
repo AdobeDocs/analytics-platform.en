@@ -339,6 +339,11 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >abstract="Select how to join: based on a match by field or match by container.<br/><br/>**[!UICONTROL Match by field]**: Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.<br/>**[!UICONTROL Match by container]**: Select a container to use to join with one of the event datasets."
 
 >[!CONTEXTUALHELP]
+>id="connection_matchingkeytype"
+>title="Matching key type"
+>abstract="Select how to join: based on a match by field or match by container.<br/><br/>**[!UICONTROL Match by field]**: Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.<br/>**[!UICONTROL Match by container]**: Select a container to use to join with one of the event datasets."
+
+>[!CONTEXTUALHELP]
 >id="connection_importnewdata"
 >title="Import new data"
 >abstract="Any new batches that get added in the Experience Platform dataset are added automatically in this connection and made available for analysis."
