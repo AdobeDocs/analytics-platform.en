@@ -130,7 +130,7 @@ Next, you can set a data view's components, which means you can create metrics a
 
    ![Components tab](assets/dataview-components.png)
 
-   You can see the [!UICONTROL Connection] at the top left, which contains the datasets, and its [!UICONTROL Schema fields] below.  The components already included are standard components (system generated) required for all data views (like Events, People, Sessions metrics, and Minute, Quarter, Week dimensions). Adobe also applies the filter **[!UICONTROL Contains data]** and **[!UICONTROL is not deprecated]** by default, so that only Schema fields that contain data and which are not deprecated appear.
+   You can see the [!UICONTROL Connection] at the top left, which contains the datasets, and its [!UICONTROL Schema fields] below.  The components already included are standard components (system generated) required for all data views (like Events, People, Sessions metrics, and Minute, Quarter, Week dimensions). Adobe also applies the filter **[!UICONTROL Contains data]** and **[!UICONTROL is not deprecated]** by default, so that only Schema fields appear that contain data and which are not deprecated.
 
 1. Search for a schema field using ![Search icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Search schema fields]** or find a field by moving into any of the dataset collections, like ![Folder icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Event datasets]**.<br/>Alternatively, you can create a derived field using ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Create derived field** . See [Derived fields](./derived-fields/derived-fields.md) for more information.
 
