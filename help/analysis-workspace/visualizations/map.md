@@ -34,9 +34,6 @@ exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
 
 <!-- markdownlint-enable MD034 -->
 
-
-{{release-limited-testing}}
-
 >[!BEGINSHADEBOX]
 
 _This article documents the Map visualization in_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_See [Map](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) for the_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** version of this article._
