@@ -1047,7 +1047,22 @@ The following templates are available:
 | **Journey Optimizer overview report** | View a thorough summary of traffic and engagement metrics for all campaigns and journeys within your environment.<p>**This can help you** better understand the high-level effectiveness of your campaigns and journeys. </p><p>**Based on what you learn, you might** do any number of things, like adjust your campaigns and journeys based on the engagement levels of your target audience.</p>  |
 | **Journey Optimizer subscriptions** | View profiles' subscriptions and unsubscriptions associated with particular lists.<p>**This can help you** better understand the effectiveness of different subscription campaigns and initiatives in driving engagement and conversions.</p><p>**Based on what you learn, you might** do any number of things, like adjust your subscription campaigns based on the engagement levels of your target audience.</p> |
 
+### Brand Concierge {#brand-concierge-templates}
 
+>[!CONTEXTUALHELP]
+>id="template--bc-b2c"
+>title="Visualize how individual consumers interact with your Brand Concierge agent to discover products and get recommendations."
+>abstract="**This can help you** track sentiment, engagement, and feedback from Brand Concierge conversations, revealing what resonates most with shoppers.<br/>**Based on what you learn, you might** do any number of things, like personalize product offers, improve onboarding flows, or adapt conversational scripts to boost conversion and satisfaction."
+
+>[!CONTEXTUALHELP]
+>id="template--bc-b2b"
+>title="Analyze B2B conversational engagement across accounts, buying groups, and sales opportunities. "
+>abstract="**This can help you** measure engagement, intent signals, and conversion activity from your Brand Concierge agent for each account and stakeholder persona.<br/>**Based on what you learn, you might** do any number of things, like refine your targeting strategy, optimize sales outreach, or update content to accelerate deal cycles."
+
+| Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- | 
+| [!UICONTROL **Brand Concierge overview**] | Visualize how individual consumers interact with your Brand Concierge agent to discover products and get recommendations.<p>**This can help you** track sentiment, engagement, and feedback from Brand Concierge conversations, revealing what resonates most with shoppers.</p><p>**Based on what you learn, you might** do any number of things, like personalize product offers, improve onboarding flows, or adapt conversational scripts to boost conversion and satisfaction.</p>   | 
+| **Brand Concierge B2B Meetings** | Analyze B2B conversational engagement across accounts, buying groups, and sales opportunities.<p>**This can help you** measure engagement, intent signals, and conversion activity from your Brand Concierge agent for each account and stakeholder persona.</p><p>**Based on what you learn, you might** do any number of things, like refine your targeting strategy, optimize sales outreach, or update content to accelerate deal cycles.</p>  |
 
 
 ### B2B templates {#b2b-templates} 
