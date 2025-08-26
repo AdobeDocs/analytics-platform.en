@@ -17,7 +17,7 @@ In graph based stitching, you specify an event dataset as well as the persistent
 
 Graph based stitching supports the use of the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) in the following scenarios:
 
-- Use of the primary identity in `identityMap` namespace to define the persistentID:
+- Use of the primary identity in `identityMap` namespaces to define the persistentID:
   - If multiple primary identities found in different namespaces, the identities in the namespaces are sorted lexigraphically and the first identity is selected.
   - If multiple primary identities are found in a single namespace, the first lexicographical available primary identity is selected.
 
@@ -50,10 +50,10 @@ Graph based stitching supports the use of the [`identityMap` field group](https:
   </table>
 
 - Use of `identityMap` namespace to define the persistentID:
-  - If multiple values for persitentID are found in an `identityMap` namespace, the first lexicographical available identity is used.
+  - If multiple values for persistentID are found in an `identityMap` namespace, the first lexicographical available identity is used.
 
-  In the example below, the namespaces and identities result in a sorted identities list for the selected namespace (ECID), and finally the selected identity.
-
+  In the example below, you have selected ECID as the namespace to use. That selection results in a sorted identities list, and finally the selected identity.
+ 
     <table style="table-layout:auto">
      <tr>
        <th>Namespaces</th>

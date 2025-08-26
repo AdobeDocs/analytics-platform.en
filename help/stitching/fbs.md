@@ -51,10 +51,10 @@ Field based stitching supports the use of the [`identityMap` field group](https:
 
 
 - Use of `identityMap` namespace to define either persistentID or transientID or both:
-  - If multiple values for persitentID or transientID are found in an `identityMap` namespace, the first lexicographical available value is used.
+  - If multiple values for persstentID or transientID are found in an `identityMap` namespace, the first lexicographical available value is used.
   - Namespaces for persistentID and transientID have to be mutually exclusive.
 
-  In the example below, the namespaces and identities result in a sorted identities list for the selected namespace (ECID), and finally the selected identity.
+  In the example below, you have selected ECID as the namespace to use for field-based stitching. That selection results in a sorted identities list, and finally the selected identity.
 
     <table style="table-layout:auto">
      <tr>
