@@ -27,13 +27,17 @@ AI Assistant for Customer Journey Analytics is available to all product tiers.
 
 ## Product knowledge {#knowledge}
 
-The product knowledge retrieval model is trained on Customer Journey Analytics. Other capabilities, such as data analysis, will be rolled out later. 
-
 | Product knowledge | Examples |
 | --- | --- |
 | Pointed learning |<ul><li>What is the difference between Adobe Analytics and Customer Journey Analytics?</li><li>How do I build a calculated metric?</li></ul> |
 | Open discovery | <ul><li>How can I export a Workspace project?</li><li>How can I find duplicate Workspace components?</li></ul>  |
 | Troubleshooting | <ul><li>How long does it take for data to come into CJA?</li><li>How many derived fields can I have in a Customer Journey Analytics connection?</li></ul>|
+
+## Data analysis
+
+Data Insights Agent, accessible from the AI Assistant in Customer Journey Analytics, is a generative AI conversation agent that quickly and efficiently answers questions about your data. It builds relevant visualizations in Analysis Workspace using components from your data view and using your actual data.
+
+For more information about using Data Insights Agent within the AI Assistant, see [Visualize data with Data Insights Agent](/help/data-analysis-ai.md).
 
 ## Feature Access
 

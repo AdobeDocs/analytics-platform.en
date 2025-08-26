@@ -26,7 +26,7 @@ To use real-time reporting, enable the **[!UICONTROL Real-time refresh]** toggle
 
 You see a message with the timestamp of the most recent refresh of the data. For example: [!UICONTROL  *Last refreshed at 07:55 pm*].
 
-Select the real-time period you want to report on from the drop-down menu. Available options are:
+Select the real-time period that you want to report on from the drop-down menu. Available options are:
 
 * [!UICONTROL Last 15 minutes]
 * [!UICONTROL Last 30 minutes]
@@ -40,4 +40,6 @@ As an example, see below a snapshot of a **[!UICONTROL Real-time reporting panel
 
 ![Real-time refresh](assets/real-time-refresh.gif)
 
-After 30 minutes, or as soon as the browser tab becomes inactive, the **[!UICONTROL Real-time refesh]** toggle is disabled automatically and real-time updates are stopped.
+After 30 minutes, or as soon as the browser tab becomes inactive, the **[!UICONTROL Real-time refresh]** toggle is disabled automatically and real-time updates are stopped.
+
+As soon as the Real-time refresh toggle is disabled, the panel (and all visualizations within) return to [use the standard reporting data and features from Customer Journey Analytics](real-time.md#how-it-works).
