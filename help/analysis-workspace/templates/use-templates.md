@@ -1050,19 +1050,19 @@ The following templates are available:
 ### Brand Concierge {#brand-concierge-templates}
 
 >[!CONTEXTUALHELP]
->id="template--bc-b2c"
->title="Visualize how individual consumers interact with your Brand Concierge agent to discover products and get recommendations."
->abstract="**This can help you** track sentiment, engagement, and feedback from Brand Concierge conversations, revealing what resonates most with shoppers.<br/>**Based on what you learn, you might** do any number of things, like personalize product offers, improve onboarding flows, or adapt conversational scripts to boost conversion and satisfaction."
+>id="template--brand-concierge-b2c"
+>title="Analyze user engagement through conversation patterns, user feedback, and the effectiveness of your recommendations."
+>abstract="**This can help you** identify engagement patterns, evaluate conversation quality, track customer satisfaction trends, and measure the effectiveness of link recommendations.<br/>**Based on what you learn, you might** do any number of things, like refine your AI agent's responses, develop targeted content for frequent issues, improve recommendation algorithms, or create specialized pathways for different user segments."
 
 >[!CONTEXTUALHELP]
->id="template--bc-b2b"
->title="Analyze B2B conversational engagement across accounts, buying groups, and sales opportunities. "
->abstract="**This can help you** measure engagement, intent signals, and conversion activity from your Brand Concierge agent for each account and stakeholder persona.<br/>**Based on what you learn, you might** do any number of things, like refine your targeting strategy, optimize sales outreach, or update content to accelerate deal cycles."
+>id="template--brand-concierge-b2b"
+>title="Track the full lifecycle of B2B meeting requests. Monitor conversion rates, consultant performance, and identify your most effective lead generation channels."
+>abstract="**This can help you** track meeting conversion rates, identify high-performing team members, understand seasonal trends in booking behavior, and pinpoint which pages generate the most valuable meeting requests.<br/>**Based on what you learn, you might** do any number of things, like optimize your meeting request process, redistribute resources to high-converting pages, develop targeted training for consultants with lower booking rates, or implement new strategies to reduce missed meetings."
 
 | Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
-| [!UICONTROL **Brand Concierge overview**] | Visualize how individual consumers interact with your Brand Concierge agent to discover products and get recommendations.<p>**This can help you** track sentiment, engagement, and feedback from Brand Concierge conversations, revealing what resonates most with shoppers.</p><p>**Based on what you learn, you might** do any number of things, like personalize product offers, improve onboarding flows, or adapt conversational scripts to boost conversion and satisfaction.</p>   | 
-| **Brand Concierge B2B Meetings** | Analyze B2B conversational engagement across accounts, buying groups, and sales opportunities.<p>**This can help you** measure engagement, intent signals, and conversion activity from your Brand Concierge agent for each account and stakeholder persona.</p><p>**Based on what you learn, you might** do any number of things, like refine your targeting strategy, optimize sales outreach, or update content to accelerate deal cycles.</p>  |
+| [!UICONTROL **Brand Concierge overview**] | Analyze user engagement through conversation patterns, user feedback, and the effectiveness of your recommendations. <p>**This can help you** identify engagement patterns, evaluate conversation quality, track customer satisfaction trends, and measure the effectiveness of link recommendations.</p><p>**Based on what you learn, you might** do any number of things, like refine your AI agent's responses, develop targeted content for frequent issues, improve recommendation algorithms, or create specialized pathways for different user segments.</p>   | 
+| **Brand Concierge B2B Meetings** | Track the full lifecycle of B2B meeting requests. Monitor conversion rates, consultant performance, and identify your most effective lead generation channels. <p>**This can help you** track meeting conversion rates, identify high-performing team members, understand seasonal trends in booking behavior, and pinpoint which pages generate the most valuable meeting requests. </p><p>**Based on what you learn, you might** do any number of things, like optimize your meeting request process, redistribute resources to high-converting pages, develop targeted training for consultants with lower booking rates, or implement new strategies to reduce missed meetings.</p>  |
 
 
 ### B2B templates {#b2b-templates} 
