@@ -399,6 +399,11 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >abstract="Select the namespace to use to update the identifier in the identity graph."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
 
+>[!CONTEXTUALHELP]
+>id="connection_changeto_identitygraph"
+>title="Change to identity graph"
+>abstract="Ensure you have finished the setup of the identity graph before you use the identity graph for stitching."
+
 
 ### Add datasets
 
