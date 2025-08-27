@@ -17,7 +17,7 @@ In field based stitching you specify an event dataset as well as the persistent 
 
 Field based stitching supports the use of the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) in the following scenarios:
 
-- Use of the primary identity in `identityMap` namespace to define the persistentID:
+- Use of the primary identity in `identityMap` namespaces to define the persistentID:
   - If multiple primary identities found in different namespaces, the identities in the namespaces are sorted lexigraphically and the first identity is selected.
   - If multiple primary identities are found in a single namespace, the first lexicographical available primary identity is selected.
   
@@ -51,10 +51,10 @@ Field based stitching supports the use of the [`identityMap` field group](https:
 
 
 - Use of `identityMap` namespace to define either persistentID or transientID or both:
-  - If multiple values for persitentID or transientID are found in an `identityMap` namespace, the first lexicographical available value is used.
+  - If multiple values for persstentID or transientID are found in an `identityMap` namespace, the first lexicographical available value is used.
   - Namespaces for persistentID and transientID have to be mutually exclusive.
 
-  In the example below, the namespaces and identities result in a sorted identities list for the selected namespace (ECID), and finally the selected identity.
+  In the example below, you have selected ECID as the namespace to use. That selection results in a sorted identities list, and finally the selected identity.
 
     <table style="table-layout:auto">
      <tr>
@@ -88,7 +88,7 @@ Stitching makes a minimum of two passes on data in a given dataset.
 
 - **Live stitching**: attempts to stitch each hit (event) as it comes in. Hits from devices that are "new" to the dataset (have never authenticated) are typically not stitched at this level. Hits from devices already recognized are stitched immediately.
 
-- **Replay stitching**: "replays" data based on unique identifiers (transient IDs) it has learned. This stage is where hits from previously unknown devices (persistent IDs) become stitched (to transient IDs). The replay is determined by two parameters: **frequency** and **lookback window**. Adobe offers the following combinations of these parameters:
+- **Replay stitching**: *replays* data based on unique identifiers (transient IDs) it has learned. This stage is where hits from previously unknown devices (persistent IDs) become stitched (to transient IDs). The replay is determined by two parameters: **frequency** and **lookback window**. Adobe offers the following combinations of these parameters:
     - **Daily lookback on a daily frequency**: Data replays every day with a 24-hour lookback window. This option holds an advantage that replays are much more frequent, but unauthenticated visitors must authenticate the same day that they visit your site.
     - **Weekly lookback on a weekly frequency**: Data replays once a week with a weekly lookback window (see [options](#options)). This option holds an advantage that allows unauthenticated sessions a much more lenient time to authenticate. However, unstitched data less than a week old is not reprocessed until the next weekly replay.
     - **Biweekly lookback on a weekly frequency**: Data replays once every week with a biweekly lookback window (see [options](#options)). This option holds an advantage that allows unauthenticated sessions a much more lenient time to authenticate. However, unstitched data less than two weeks old is not reprocessed until the next weekly replay.
