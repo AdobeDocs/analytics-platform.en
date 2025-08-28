@@ -3,6 +3,7 @@ title: Integrate Adobe Advertising with Customer Journey Analytics
 description: Integrate Adobe Advertising with Customer Journey Analytics
 feature: Experience Platform Integration
 role: User
+exl-id: 8d09d6a4-114d-484f-8dd5-cd7236f91acb
 ---
 # Integrate Adobe Advertising with Customer Journey Analytics
 
