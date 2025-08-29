@@ -99,7 +99,7 @@ Context labels may be required in the following situations:
 
   **Note**: The Map visualization is in the Limited Testing phase of release and might not be available yet in your environment.
 
-* When you use [templates provided by Adobe](/help/analysis-workspace/templates/use-templates.md). Ssome templates provided by Adobe might not work because certain components are not in your data view.
+* When you use [templates provided by Adobe](/help/analysis-workspace/templates/use-templates.md). Some templates provided by Adobe might not work because certain components are not in your data view.
   
   For each missing component, a matching context label is available in your data view. You need to either add the matching context label to a component that is already in your data view. Or you need to add a new component to your data view and add the context label to the component (if not already provided automatically).
   
