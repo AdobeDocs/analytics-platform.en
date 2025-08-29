@@ -42,7 +42,7 @@ The following information describes the settings that a data view component uses
 | [!UICONTROL Dataset type] | Required. A non-editable field showing which dataset type (event, lookup, or profile) the component came from. |
 | [!UICONTROL Dataset] | A non-editable field showing which dataset that the component originated from. This field can contain multiple datasets. |
 | [!UICONTROL Schema type] | A non-editable field showing the data type of the component. While you can use any supported schema field type in Platform, not all fields types are supported in Customer Journey Analytics. The following data types are supported: `Integer`, `Int`, `Long`, `Double`, `Float`, `Number`, `Short`, `Byte`, `String`, and `Boolean`. Only the `String` schema data type is allowed in Lookup datasets currently. |
-| [!UICONTROL Component ID] | Required. The [Customer Journey Analytics API](https://adobe.io/cja-apis/docs) uses this field to reference the component. Each component in a data view must be unique. Adobe automatically generates an ID for each component; however, you can click the edit icon and modify the component ID. Changing the component ID breaks all existing Workspace projects that contain this component. While each component needs a unique ID in a single data view, you can use the same component ID in other data views. If you use the same component ID in other data views, you can make Workspace projects compatible across data views. <br/>For profile and lookup based components, the component ID has an ID prefix based on the dataset ID (for example: `642b28fcc1f0ee1c074265a0.person.name.firstName`). When you want to reuse a profile or lookup based component, like `person.name.firstName`, in your Workspace project, and configure this component in different data views, ensure you rename the component ID uniquely (for example: `myUniqueID.person.name.firstName`) across your data views. |
+| [!UICONTROL Component ID] | Required. The [Customer Journey Analytics API](https://www.adobe.io/cja-apis/docs) uses this field to reference the component. Each component in a data view must be unique. Adobe automatically generates an ID for each component; however, you can click the edit icon and modify the component ID. Changing the component ID breaks all existing Workspace projects that contain this component. While each component needs a unique ID in a single data view, you can use the same component ID in other data views. If you use the same component ID in other data views, you can make Workspace projects compatible across data views. <br/>For profile and lookup based components, the component ID has an ID prefix based on the dataset ID (for example: `642b28fcc1f0ee1c074265a0.person.name.firstName`). When you want to reuse a profile or lookup based component, like `person.name.firstName`, in your Workspace project, and configure this component in different data views, ensure you rename the component ID uniquely (for example: `myUniqueID.person.name.firstName`) across your data views. |
 | [!UICONTROL Path] | Required. A non-editable field showing the schema path that the component came from. |
 | [!UICONTROL Data Usage Labels] | Any data usage labels that are assigned to this component in Adobe Experience Platform. [Learn more](/help/data-views/data-governance.md). |
 | [!UICONTROL Hide component in reporting] | Let you curate the component out of the data view for non-admins. Admins can still access it by clicking [!UICONTROL Show All Components] in an Analysis Workspace project. |
@@ -62,13 +62,26 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Component type s
 
 Context labels are system-defined tags applied to components within a data view. When context labels are applied to components (dimension or metrics), Customer Journey Analytics is instructed to use these context-labeled components automatically in certain visualizations or features.
 
-You can only assign a context label to one component in the same data view. You can assign the same context label to different components across data views.
+Context labels allow you to provide semantic context to individual pieces of data.  In general, Customer Journey Analytics does not need to know the semantic meaning of a dimension or metric to perform its analysis.  However, some situations (project templates and a few selected visualizations) require Customer Journey Analytics to understand semantic meaning to perform some type of analysis. Context labels are created for those situations. 
+
+Context labels operate at the component (dimension or metric) level, and allow for great flexibility within the data view for the customer. For example, you can assign a context label to a dimension after you have applied several post-processing transforms to a field. Or even to a dimension that is based on a derived field.  Context labels provide a layer of abstraction on top of components and fields.
+
+For reasons of convenience, smart default context labels are applied automatically to components based on fields with a specific XDM path. For example, the **[!UICONTROL Commerce: Product Category]** context label is applied automatically to a **[!UICONTROL Category name]** dimension that is based on the `productListItems.productCategories.categoryName` schema path. You can, however, move the context label to a different component without any issue. 
+
+To streamline Adobe provided project templates, several integrations (like Journey Optimizer, Content Analytics, and more) set up data views where out of the box components are constructed in a specific way. And appropriate context labels are applied automatically. Again, you can simply move any of those context labels to other components that are created in the data view and your custom component is used instead. 
+
+Context labels are relevant for the disclosure of project templates as well. Project templates quickly realize the reporting foundation for several different purpose-built use cases. However, not every template does make sense for every data view and you don't want to show non-applicable templates. Context labels are used to show templates based on whether the context labels are included in the selected data view.  You can simply add more context labels to your data view (components), and more templates become available. Or remove context labels to hide specific templates.
+
+>[!NOTE]
+>
+>You can apply more than one context label to a component, but you cannot apply one context label to multiple components within one data view.
+>
 
 The benefits of context labels are:
 
 * **Convenience**: You don't have to re-select the same component in every panel or visualization.
-* **Unlocks functionality**: Some visalization (like [Map](/help/analysis-workspace/visualizations/map.md)) require knowing which component is latitude and longitude. Assigning context labels discloses that information to the visualization.
-* **Consistency**: Everyone in your organization that works on one or more projects that are based on a data view that uses context labels get the same behavior.
+* **Unlocks functionality**: Some visualizations (like [Map](/help/analysis-workspace/visualizations/map.md)) require knowledge about which component is latitude and longitude. Assigning context labels discloses that information to the visualization.
+* **Consistency**: Everyone in your organization that works on one or more projects that are based on a data view that uses context labels gets the same behavior.
 * **Visibility of features and templates**: Certain visualizations and features only appear when the proper context label is assigned. For example:
   
   * A [Map](/help/analysis-workspace/visualizations/map.md) visualization does display properly only when Customer Journey Analytics knows which fields represent latitude and longitude. 
@@ -86,9 +99,9 @@ Context labels may be required in the following situations:
 
   **Note**: The Map visualization is in the Limited Testing phase of release and might not be available yet in your environment.
 
-* When using [templates provided by Adobe](/help/analysis-workspace/templates/use-templates.md). By default, some templates provided by Adobe do not work because they contain components that are not in your data view.
+* When you use [templates provided by Adobe](/help/analysis-workspace/templates/use-templates.md). Ssome templates provided by Adobe might not work because certain components are not in your data view.
   
-  For each missing component, a matching context label is available in your data view. You need to either add the matching context label to a component that is already in your data view. Or you need to add a new component to your data view and add the context label to it.
+  For each missing component, a matching context label is available in your data view. You need to either add the matching context label to a component that is already in your data view. Or you need to add a new component to your data view and add the context label to the component (if not already provided automatically).
   
   For more information, see [Add missing components to the data view for a given template](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) in the article [Create and manage templates](/help/analysis-workspace/templates/create-templates.md).
 
@@ -109,7 +122,7 @@ The following groups of context labels are available, each with a list of specif
 | Name | Description |
 |------|-------------|
 | Cart Additions | Cart Additions |
-| Cart Opens | Cart opens. |
+| Cart Opens | The cart opens. |
 | Cart Removals | Cart Removals |
 | Cart Views | Cart Views |
 | Checkouts | Checkouts. |
@@ -127,7 +140,7 @@ The following groups of context labels are available, each with a list of specif
 
 | Name | Description |
 |------|-------------|
-| Experimentation Experiment | An experiment is a set of variations on an experience that were exposed to end users in order to determine which is best to keep in perpetuity. |
+| Experimentation Experiment | An experiment is a set of variations on an experience that were exposed to end users to determine which is best to keep in perpetuity. |
 | Experimentation Variant | Variant is one of two or more alterations in an end user's experience that are being compared for the purpose of identifying the better alternative. |
 
 +++
@@ -240,7 +253,7 @@ The following groups of context labels are available, each with a list of specif
 | Mobile Message Cancels | Mobile message cancels. |
 | Mobile Message Clicks | Mobile message clicks. |
 | Mobile Message Impressions | Mobile message impressions. |
-| Mobile Message Push Opt In | Mobile message push opt in. |
+| Mobile Message Push Opt In | Mobile message push opt-in. |
 | Mobile Push Message Name | Mobile push message name. |
 | Mobile Upgrades | Mobile upgrades. |
 | Time Spent Per Timed Action | Time spent per timed action. |
@@ -268,7 +281,7 @@ The following groups of context labels are available, each with a list of specif
 | Survey Answer | Survey answer. |
 | Survey Completes | Survey completes. |
 | Survey Question | Survey question. |
-| Survey Starts | Survey starts. |
+| Survey Starts | The survey starts. |
 
 +++
 
@@ -346,7 +359,7 @@ The following groups of context labels are available, each with a list of specif
 | Experience Marketing Emotions | Experience Marketing Emotions. |
 | Experience Narratives | Experience Narratives. |
 | Experience Persuasion Strategies | Experience Persuasion Strategies. |
-| Experience Raadability Word Count Per Sentence Count | Experience Eeadability Word Count Per Sentence Count. |
+| Experience Readability Word Count Per Sentence Count | Experience Readability Word Count Per Sentence Count. |
 | Experience Readability Score | Experience Readability Score. |
 | Experience Readability Sentences Count | Experience Readability Sentences Count. |
 | Experience Readability Stop Words Count | Experience Readability Stop Words Count. |
@@ -359,7 +372,7 @@ The following groups of context labels are available, each with a list of specif
 
 +++
 
-+++ Journey Optimzer
++++ Journey Optimizer
 
 | Name | Description |
 |------|-------------|
@@ -368,29 +381,29 @@ The following groups of context labels are available, each with a list of specif
 | Action Label (AJO) | The customer generated display name of the element with which the end-user interacted. |
 | Alternative Exits (AJO) | The count of exits that did not occur due to a profile reaching an end node or failing due to an error. |
 | App Installs (AJO) | Number of app installs. |
-| App Launches (AJO) | Number of times mobile app is launched. |
-| Batch Id (AJO) | GUID created at invocation of each new batch instance for a scheduled Journey or Campaign Action. E.g: If a scheduled Journey or Campaign Action runs at 8.00am and 10.00am, there will be two separate different batchInstanceID's. |
+| App Launches (AJO) | Number of times a mobile app is launched. |
+| Batch Id (AJO) | GUID created at invocation of each new batch instance for a scheduled Journey or Campaign Action. For example: If a scheduled Journey or Campaign Action runs at 8.00am and 10.00am, there will be two separate different batchInstanceID's. |
 | Batch Instance Timestamp (AJO) | The timestamp of the batch instance. |
-| Bounces For Outbound Channels(deprecated) | Total count of messages bounced across outbound channels. |
+| Bounces For Outbound Channels(deprecated) | The total count of messages bounced across outbound channels. |
 | Campaign Action Name (AJO) | The name of the campaign action. |
 | Campaign Id (AJO) | The id of the campaign. |
 | Campaign Name (AJO) | The name of the campaign. |
 | Campaign Version ID (AJO) | The version id of the campaign. |
 | Channel | The channel to which this data should be correlated. |
 | Clicks (AJO) | Total count of clicks across all channels. |
-| Consent Policy Rejections (AJO) | Count of journey actions rejected due to one or more consent policies. |
+| Consent Policy Rejections (AJO) | Count of journey actions that are rejected due to one or more consent policies. |
 | Content Decision Error (AJO) | Error messages generated by content decision nodes of journey. |
 | Content Decision Errors (AJO) | Count of errors generated by content decision nodes of journey. |
 | Content Decision Node Name (AJO) | The content decision node name of the journey. |
 | Correlation Id | Correlation Id.|
 | Count of Offers (AJO) | The number of offer items in the proposition. |
-| Decision Item Binding Key | Composite identifier that combines item ID with Experience Decisioning request ID, enabling data persistence across interactions. |
+| Decision Item Binding Key | A composite identifier that combines item ID with Experience Decisioning request ID, enabling data persistence across interactions. |
 | Decision Provider (AJO) | The provider that was asked to make the decision. This dimension is used when multiple services can make decisions for the same placement or activity. |
 | Decision Provider (Persisted) (AJO) | The decision provider with persistence binding enabled. |
 | Decision Policy Id (AJO) | The id of the decision policy used when deciding which items to include in this proposition. |
 | Dedup Metric (AJO) | Dedup Metric. |
 | Delivered (deprecated) | Total count of messages delivered. |
-| Displays (AJO) | This count displays of AJO messages. This includes email opens, web displays, and inapp displays. Mobile platforms do not report SMS and Push message displays, therefore they are not counted. |
+| Displays (AJO) | This count displays of AJO messages. This count includes email opens, web displays, and in app displays. Mobile platforms do not report SMS and Push message displays, therefore they are not counted. |
 | Dismissed (AJO) | Counts every time the inApp message is closed by the Adobe SDK regardless of which action the end user chooses to close it. |
 | Dry Run Id (AJO) | Unique Identifier for Dry Run. |
 | Email Bot Opens (AJO) | Total count of email opens performed by bots. |
@@ -409,9 +422,9 @@ The following groups of context labels are available, each with a list of specif
 | Inbound Impressions (AJO) | Total count of impressions across inbound channels. |
 | Inbound Sends (AJO) | Total count of sends across inbound channels. |
 | Inbound Triggered (AJO) | Proposition was chosen to be displayed by the Adobe SDK. Other factors may prevent it from actually being displayed. |
-| Is Send-Time Optimized (AJO) | Is message execution SendTimeOptimized. |
-| Is Test Journey | Is the event part of a test journey execution. |
-| Is Test Message (AJO) | Is message sent as test execution. |
+| Is Send-Time Optimized (AJO) | Is message execution SendTimeOptimized? |
+| Is Test Journey | Is the event part of a test journey execution? |
+| Is Test Message (AJO) | Is message sent as a test execution? |
 | Item ID (Persisted) (AJO) | The ID of the item with persistence binding enabled. |
 | Item Id (AJO) | The id of the item. |
 | Item Name (AJO) | The name of the item. |
@@ -423,14 +436,14 @@ The following groups of context labels are available, each with a list of specif
 | Journey Event Node Name | This value is set whenever a segment or external event occurs in a journey. |
 | Journey Exclusion Reason | Reason for journey instance exclusion. |
 | Journey Exclusion Rule Name | Name of the Rule that caused the denial of Journey Entry. |
-| Journey Exclusions (AJO) | Indicates whether the current step event resulted in a journey discard for a profile. This typically occurs due to capping or concurrency rules being applied, preventing further progression in the journey. |
+| Journey Exclusions (AJO) | Indicate whether the current step event resulted in a journey discard for a profile. This typically occurs due to capping or concurrency rules being applied, preventing further progression in the journey. |
 | Journey Exit Type (AJO) | The type of exit that occurred for the journey instance. |
 | Journey Failures | Gives the current state of the step that has finished executing. |
 | Journey Id | The id of the journey. |
 | Journey Name | The name of the journey. |
 | Journey Name and Version | The name and version of the journey. |
 | Journey Version Id | The version id of the journey. |
-| JourneyExits | True if the current step led to ending an instance of the journey, that is the last step in a journey for a given profile was executed successfully. |
+| JourneyExits | True if the current step led to ending an instance of the journey. That is the last step in a journey for a given profile was executed successfully. |
 | Landing Page Conversions (AJO) | Total count of conversions on landing page. |
 | Landing Page Id (AJO) | Unique Identifier for Landing Page. |
 | Landing Page Source (AJO) | The source of the landing page. |
@@ -438,7 +451,7 @@ The following groups of context labels are available, each with a list of specif
 | Landing page clicks (AJO) | Total count of clicks on landing page. |
 | Link URL (AJO) | The URL clicked by the user. |
 | Message Bounce Reason (AJO) | The reason for the message bounce. |
-| Message Error Reason (AJO) | he reason for the message error. |
+| Message Error Reason (AJO) | The reason for the message error. |
 | Message Exclusion Reason (AJO) | Exclusion reason. |
 | Message Failure Category (AJO) | Failure category .|
 | Message Failure Reason (AJO) | Failure reason. |
@@ -447,7 +460,7 @@ The following groups of context labels are available, each with a list of specif
 | Message Language (AJO) | The language of the message. |
 | Message Name (AJO) | The name of the message. |
 | Message Retry (AJO) | Retry count. |
-| Message Status (AJO) | Message status (e.g. sent, bounced, error, etc.) |
+| Message Status (AJO) | Message status (for example, sent, bounced, error, etc.) |
 | Message Type (AJO) | Whether the message is marketing or transactional. |
 | Message Feedback Status (deprecated) | Feedback status. |
 | Node Enters | True if the step event was a node entrance event for a profile. |
@@ -463,29 +476,29 @@ The following groups of context labels are available, each with a list of specif
 | Outbound Clicks (AJO) | Total count of clicks across outbound channels. |
 | Outbound Errors (deprecated) | Total count of messages having errors across outbound channels. |
 | Outbound Exclusions (deprecated) | Total count of exclude events across outbound channels. |
-| Outbound Sends (deprecated) | Total count of messages send across outbound channels. |
+| Outbound Sends (deprecated) | Total count of messages sent across outbound channels. |
 | Point Of Interest | point of interest. |
 | Proposition Id (AJO) | The id of the proposition. |
 | Push Custom Actions (AJO) | Total count of custom actions in push interaction. |
-| Push Interactions (AJO) | Number of times mobile app is launched due to a direct push message interaction. |
-| Push Platform (AJO) | Push provider service, e.g. apns or fcm. |
+| Push Interactions (AJO) | Number of times a mobile app is launched due to a direct push message interaction. |
+| Push Platform (AJO) | Push provider service, for example, APNS or FCM. |
 | Push Title | Push Title, non-personalized. |
 | Ranking Strategy Id (AJO) | The Ranking Strategy Id. |
 | Rejected Consent Policy Name | Name of the corresponding rejected consent policy. |
 | Retry Count (AJO) | Number of times a message send was retried before either success or failure. |
 | Rule Name | Name of the Rule that caused the denial of Journey Entry. |
-| Selection Type (AJO) | This is the type of selection used when item was derived as part of a decision. |
-| Sends (deprecated) | Total count of messages send across all channels. |
-| SMS Inbound Message (AJO) | SMS inbound reply, e.g. stop, start, subscribe, etc. |
+| Selection Type (AJO) | This is the type of selection used when an item is derived as part of a decision. |
+| Sends (deprecated) | Total count of messages sent across all channels. |
+| SMS Inbound Message (AJO) | SMS inbound reply, for example, stop, start, subscribe, etc. |
 | SMS Inbound Messages (AJO) | SMS inbound reply, e.g. stop, start, subscribe, etc. |
-| SMS Message Type (AJO) | SMS provider, e.g. inbound, inboundReply or send. |
-| SMS Provider (AJO) | SMS provider, e.g. sinch or twilio. |
+| SMS Message Type (AJO) | SMS provider, for example, inbound, inboundReply or send. |
+| SMS Provider (AJO) | SMS provider, for example, Sinch or Twilio. |
 | Spam Complaint (AJO) | Total count of spam complaint. |
 | Strategy Name (AJO) | Strategy name. The strategy name of which the item was derived from. |
 | Strategy Name (Persisted) (AJO) | The strategy name with persistence binding enabled. |
-| Subscription List Adds (AJO) | Total count of adds to subscription list. |
+| Subscription List Adds (AJO) | Total count of adds to a subscription list. |
 | Subscription List Id (AJO) | Unique Identifier for Subscription List. |
-| Subscription List Removes (AJO) | Total count of removes from subscription list. |
+| Subscription List Removes (AJO) | Total count of removes from a subscription list. |
 | Surface (AJO) | The channel surface on which the message was displayed. |
 | Targeted (deprecated) | This count of the number of times a proposition was targeted to a person. This is the number of times a proposition was considered for display to a person. |
 | Targeting Rule Name (AJO) | The name of the targeting rule. |
