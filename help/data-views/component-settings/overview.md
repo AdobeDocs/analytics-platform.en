@@ -84,7 +84,7 @@ The benefits of context labels are:
 * **Consistency**: Everyone in your organization that works on one or more projects that are based on a data view that uses context labels gets the same behavior.
 * **Visibility of features and templates**: Certain visualizations and features only appear when the proper context label is assigned. For example:
   
-  * A [Map](/help/analysis-workspace/visualizations/map.md) visualization does display properly only when Customer Journey Analytics knows which fields represent latitude and longitude. 
+  * A [Map](/help/analysis-workspace/visualizations/map.md) visualization does display properly only when Customer Journey Analytics knows which components represent latitude and longitude. 
   * Specific [templates](/help/analysis-workspace/templates/use-templates.md) are visible only when the correct context labels are applied and the associated components become available. 
 
 Context labels may be required in the following situations:
@@ -99,7 +99,7 @@ Context labels may be required in the following situations:
 
   **Note**: The Map visualization is in the Limited Testing phase of release and might not be available yet in your environment.
 
-* When you use [templates provided by Adobe](/help/analysis-workspace/templates/use-templates.md). Some templates provided by Adobe might not work because certain components are not in your data view.
+* To reveal [templates provided by Adobe](/help/analysis-workspace/templates/use-templates.md). Some templates provided by Adobe might not work because certain components are not in your data view.
   
   For each missing component, a matching context label is available in your data view. You need to either add the matching context label to a component that is already in your data view. Or you need to add a new component to your data view and add the context label to the component (if not already provided automatically).
   
