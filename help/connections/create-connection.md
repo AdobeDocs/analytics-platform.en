@@ -270,8 +270,8 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
->title="Matching key type"
->abstract="Select how to join: based on a match by field or match by container.<br/><br/>**[!UICONTROL Match by field]**: Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.<br/>**[!UICONTROL Match by container]**: Select a container to use to join with one of the event datasets."
+>title="Matching key"
+>abstract="Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset."
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_importnewdata"
@@ -335,8 +335,8 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 
 >[!CONTEXTUALHELP]
 >id="connection_matchingkey"
->title="Matching key type"
->abstract="Select how to join: based on a match by field or match by container.<br/><br/>**[!UICONTROL Match by field]**: Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.<br/>**[!UICONTROL Match by container]**: Select a container to use to join with one of the event datasets."
+>title="Matching key"
+>abstract="Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset."
 
 >[!CONTEXTUALHELP]
 >id="connection_matchingkeytype"
