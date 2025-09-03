@@ -93,6 +93,10 @@ role: Admin
 >title="Change Buying Group ID"
 >abstract="A change of the Buying Group ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Buying Group ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
 
+>[!CONTEXTUALHELP]
+>id="connection_change_persistentid"
+>title="Change Persistent ID"
+>abstract="A change of the Persistent ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Persistent ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
 
 The connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with an assistive workflow. It provides detailed dataset selection, configuration, and review experience. And allows you to specify critical information like [dataset type](#dataset-types), size, schema, dataset id, batch status, backfill status, identities, and much more, to reduce the risk of wrong connection configuration. Here is an overview of the capabilities:
 
@@ -266,7 +270,7 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >[!CONTEXTUALHELP]
 >id="cja_connection_personid"
 >title="Person ID"
->abstract="Select an Person ID (the unique identifier for a person) from the available identities that you have defined in the dataset schema in the Experience Platform."
+>abstract="Select a Person ID (the unique identifier for a person) from the available identities that you have defined in the dataset schema in the Experience Platform."
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
