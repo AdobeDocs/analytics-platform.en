@@ -14,7 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **September 2025** | |
-| Usage UI | Added documentation for updated [Usage interface](/help/connections/manage-connections.md#usage) in Connections. | 
+| Usage interface | Added documentation for updated [Usage interface](/help/connections/manage-connections.md#usage) in Connections. | 
 | Stitching Journey Optimizer datasets | Documented [list of automatically generated Journey Optimzer datasets](/help/stitching/overview.md#journey-optimizer-datasets) that can be used in stitching. | 
 | Context labels | Added more background information on the use and purpose of [context labels](/help/data-views/component-settings/overview.md#context-labels) in data view components. | 
 | **August 2025** | |
