@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Adobe Customer Journey Analytics release notes (August 2025)
 
-**Last update**: August 14, 2025
+**Last update**: September 4, 2025
 
 
 These release notes cover the release period of August 13 through September 16, 2025. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
@@ -15,6 +15,7 @@ These release notes cover the release period of August 13 through September 16, 
 
 | Feature | Description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Updates to the Usage interface** | The [Usage interface](/help/connections/manage-connections.md#usage) now adds information about core data volume and average row size. | | September 4, 2025 | 
 | **Map visualization** | The map visualization is a visualization in Analysis Workspace that allows you to build a visual map of any metric (including calculated metrics). It is useful for identifying and comparing metric data across different geographic regions.<p>Previously, the map visualization was available only in Adobe Analytics.</p><p>The map visualization in Customer Journey Analytics contains the following improvements from the map visualization in Adobe Analytics:</p><ul><li>Use any segment from your data view as a data source.</li><li>Accuracy up to a single meter by configuring the dimension in your data view.</li><li>A new selection tool allows you to create a segment, audience, trend, or breakdown from any area you select in the visualization.</li></ul><p>For more information, see [Map](/help/analysis-workspace/visualizations/map.md).</p> | August 13, 2025 | August 25, 2025 |
 | **B2B templates** | If you license the Customer Journey Analytics B2B Edition, the following additional B2B templates are now available from the Adobe templates UI: <ul><li>B2B Account Engagement Overview</li><li>B2B Opportunity Engagement Overview</li><li>B2B Buying Group Activity</li></ul><p>For more information, see [B2B templates](/help/analysis-workspace/templates/use-templates.md#b2b-templates) in [Use templates](/help/analysis-workspace/templates/use-templates.md).</p> |  | August 15, 2025 |
 | **Projects downloaded as PDFs are downloaded to your workstation** | When downloading a project as a PDF, the PDF is downloaded to the downloads folder on your workstation. <p>Previously, downloading a project as a PDF launched the PDF in a new browser tab with a unique URL.</p><p>For more information, see [Download projects and data](/help/analysis-workspace/export/download-send.md).</p> |  | August 25, 2025 |

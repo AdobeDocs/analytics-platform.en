@@ -381,7 +381,7 @@ When a dataset row is selected in the datasets table, a panel on the right side 
 >[!CONTEXTUALHELP]
 >id="connections_averagerowsize"
 >title="Average row size"
->abstract="The average amount of storage consumed by each row of data ingested and stored for the current month (in KB), with a percentage change compared to the previous month."
+>abstract="The average amount of storage consumed by each row of data ingested and stored for the current month (in kB), with a percentage change compared to the previous month."
 
 
 >[!CONTEXTUALHELP]
@@ -436,7 +436,7 @@ The Usage interface consists of two panels:
     * **[!UICONTROL Core data reportable rows]**. The total number of rows available over the past 13 months for the current month, with a percentage change compared to the previous month. For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024.
     * **[!UICONTROL Historical data reportable rows]**. The total number of rows available over a period older than 13 months for the current month, with a percentage change compared to the previous month. For example, on February 1, 2024, the number shows the total rows available with an event timestamp older than January 2023.
     * **[!UICONTROL Core data volume]**. The total amount of data stored on disk that is timestamped for the current month (in TB), with a percentage change compared to the previous month.
-    * **[!UICONTROL Average row size]**. The average amount of storage consumed by each row of data ingested and stored for the current month (in KB), with a percentage change compared to the previous month.
+    * **[!UICONTROL Average row size]**. The average amount of storage consumed by each row of data ingested and stored for the current month (in kB), with a percentage change compared to the previous month.
   
   * A stacked vertical bar visualization that displays the **[!UICONTROL Core and Historical data reportable rows]** for the last 13 months. 
   
