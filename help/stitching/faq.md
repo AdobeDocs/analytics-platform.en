@@ -236,4 +236,37 @@ Not if you follow the steps outlined above. Otherwise, please ask Adobe Consulti
 
 +++
 
+## Enable a dataset for the Identity Service
 
++++ How to enable a dataset for the Identity Service only? 
+
+You must ensure a dataset is enabled for Identity Service to use the dataset in graph-based stitching. 
+
+You do not have to be licensed for Real-Time Customer Data Platform to make use of graph-based stitching. Graph-based stitching is based on an available identity graph and not on real-time customer profiles.
+
+To enable a dataset for the Identity Service only, use a `POST` request to the `/datasets` endpoint that only uses the `unifiedIdentity` tag. For example:
+
+```shell
+curl -X POST \
+  https://platform.adobe.io/data/foundation/catalog/dataSets \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
+  -H 'x-api-key: {API_KEY}' \
+  -H 'x-gw-ims-org-id: {ORG_ID}' \
+  -H 'x-sandbox-name: {SANDBOX_NAME}' \
+  -d '{
+    "schemaRef": {
+        "id": "https://ns.adobe.com/{TENANT_ID}/schemas/31670881463308a46f7d2cb09762715",
+        "contentType": "application/vnd.adobe.xed-full-notext+json; version=1"
+    },
+    "tags": {
+       "unifiedIdentity": ["enabled:true"]
+    }
+  }'
+```
+
+Any use of the `unifiedProfile` tag in the request, while you are not licensed for Real-Time Customer Data Profile, returns an error.
+
+See [Create a dataset enabled for Profile and Identity](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) for more information.
+
++++ 
