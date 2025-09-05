@@ -11,6 +11,12 @@ exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
 
 In graph based stitching, you specify an event dataset as well as the persistent ID (cookie) and the namespace of the transient ID (person ID) for that dataset. Graph-based stitching creates a new column for the stitched ID in the new stitched dataset. And then uses the persistent ID to query the identity graph from the Experience Platform Identity Service, using the namespace specified, to update the stitched ID.
 
+>[!NOTE]
+>
+>You must ensure the dataset is [enabled for the Identity Service](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
+>
+
+
 ![Graph-based-stitching](/help/stitching/assets/gbs.png)
 
 ## IdentityMap
