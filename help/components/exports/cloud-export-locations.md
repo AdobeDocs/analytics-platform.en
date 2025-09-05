@@ -8,6 +8,30 @@ role: User, Admin
 ---
 # Configure cloud export locations
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-prefix"
+>title="Prefix"
+>abstract="The root folder within the container where you want to put the data. Specify a static folder name, then add a slash after the name to create the folder. For example, `folder_name/`"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-file-name"
+>title="File name and path"
+>abstract="Specify a dynamic custom file name to use for automated exports that are sent to this location. You can also precede the file name with a dynamic custom file path.  
+>
+>Use variables in file names and paths to make them dynamic.  
+>
+>For example, if you specify `${yyyy}/${mm}/${dd}/my-report-${instance_id}-${idx}`, an export that is automatically sent to this destination on January 15, 2026 would have the following file path and name: `[prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv` 
+>
+>Click the link below for a list of available variables."
+
+<!-- markdownlint-enable MD034 -->
+
 Before you can export Customer Journey Analytics reports to a cloud destination (either from Analysis Workspace, as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md) or from Report Builder, as described in [Export reports from Report Builder](/help/report-builder/report-builder-export.md)) as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md), you need to add and configure the location where you want the data to be sent. 
 
 This process consists of adding and configuring the account (such as Amazon S3, Google Cloud Platform, and so forth) as described in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md), and then adding and configuring the location within that account (such as a folder within the account) as described in this article.
@@ -70,7 +94,8 @@ For information about how to manage existing locations, including viewing, editi
 
    |Field | Function | 
    |---------|----------|
-   | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a slash after the name to create the folder. For example, `folder_name/` |
+   | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a static folder name, then add a slash after the name to create the folder. For example, `folder_name/` |
+   | [!UICONTROL **File name and path**] | Specify a dynamic custom file name to use for automated exports that are sent to this location. You can also precede the file name with a dynamic custom file path. <p>Use variables in file names and paths to make them dynamic.</p><p>For example, if you specify ${yyyy}/${mm}/${dd}/my-report-${instance_id} -${idx}, an export that is automatically sent to this destination on January 15, 2026 would have the following file path and name: [prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv</p><p>Click the link below for a list of available variables.</p>  |
 
    {style="table-layout:auto"}
 
@@ -108,7 +133,8 @@ For information about how to manage existing locations, including viewing, editi
    |Field | Function | 
    |---------|----------|
    | [!UICONTROL **Bucket**] | The bucket within your Amazon S3 account where you want Customer Journey Analytics data to be sent. <p>Ensure that the User ARN that was provided by Adobe has the `S3:PutObject` permission in order to upload files to this bucket. </p><p>Bucket names must meet specific naming rules. For example, they must be between 3 to 63 characters long, can consist only of lowercase letters, numbers, dots (.), and hyphens (-), and must begin and end with a letter or number. [A complete list of naming rules are available in the AWS documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p>   | 
-   | [!UICONTROL **Prefix**] | The folder within the bucket where you want to put the data. Specify a folder name, then add a slash after the name to create the folder. For example, folder_name/ | 
+   | [!UICONTROL **Prefix**] | The folder within the bucket where you want to put the data. Specify a static folder name, then add a slash after the name to create the folder. For example, folder_name/ | 
+   | [!UICONTROL **File name and path**] | Specify a dynamic custom file name to use for automated exports that are sent to this location. You can also precede the file name with a dynamic custom file path. <p>Use variables in file names and paths to make them dynamic.</p><p>For example, if you specify ${yyyy}/${mm}/${dd}/my-report-${instance_id} -${idx}, an export that is automatically sent to this destination on January 15, 2026 would have the following file path and name: [prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv</p><p>Click the link below for a list of available variables.</p>  |
 
    {style="table-layout:auto"}
 
@@ -129,7 +155,8 @@ For information about how to manage existing locations, including viewing, editi
    |Field | Function | 
    |---------|----------|
    | [!UICONTROL **Bucket**] | The bucket within your GCP account where you want Customer Journey Analytics data to be sent. <p>Ensure that you have granted the `roles/storage.objectCreator` permission to the Principal provided by Adobe. (The Principal is provided when [configuring the Google Cloud Platform account](/help/components/exports/cloud-export-accounts.md).) <p>For information about granting permissions, see [Add a principal to a bucket-level policy](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) in the Google Cloud documentation.</p><p>If your organization is using [Organization policy constraints](https://cloud.google.com/storage/docs/org-policy-constraints) to allow only the Google Cloud Platform account in your allow list, you need the following Adobe-owned Google Cloud Platform organization ID: <ul><li>`DISPLAY_NAME`: `adobe.com`</li><li>`ID`: `178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`: `C02jo8puj`</li></ul> </p> |  
-   | [!UICONTROL **Prefix**] | The folder within the bucket where you want to put the data. Specify a folder name, then add a slash after the name to create the folder. For example, folder_name/ | 
+   | [!UICONTROL **Prefix**] | The folder within the bucket where you want to put the data. Specify a static folder name, then add a slash after the name to create the folder. For example, folder_name/ | 
+   | [!UICONTROL **File name and path**] | Specify a dynamic custom file name to use for automated exports that are sent to this location. You can also precede the file name with a dynamic custom file path. <p>Use variables in file names and paths to make them dynamic.</p><p>For example, if you specify ${yyyy}/${mm}/${dd}/my-report-${instance_id} -${idx}, an export that is automatically sent to this destination on January 15, 2026 would have the following file path and name: [prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv</p><p>Click the link below for a list of available variables.</p>  |
 
    {style="table-layout:auto"}
 
@@ -150,7 +177,8 @@ For information about how to manage existing locations, including viewing, editi
    |Field | Function | 
    |---------|----------|
    | [!UICONTROL **Container name**] | The container within the account you specified where you want Customer Journey Analytics data to be sent. | 
-   | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a slash after the name to create the folder. For example, `folder_name/`<p>Make sure that the SAS token store that you specified in the Key Vault secret name field when configuring the Azure SAS account has the `Write` permission. This allows the SAS token to create files in your Azure container. <p>If you want the SAS token to also overwrite files, make sure that the SAS token store has the `Delete` permission.</p><p>For more information, see [Blob storage resources](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction#blob-storage-resources) in the Azure Blob Storage documentation.</p> | 
+   | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a static folder name, then add a slash after the name to create the folder. For example, `folder_name/`<p>Make sure that the SAS token store that you specified in the Key Vault secret name field when configuring the Azure SAS account has the `Write` permission. This allows the SAS token to create files in your Azure container. <p>If you want the SAS token to also overwrite files, make sure that the SAS token store has the `Delete` permission.</p><p>For more information, see [Blob storage resources](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction#blob-storage-resources) in the Azure Blob Storage documentation.</p> | 
+   | [!UICONTROL **File name and path**] | Specify a dynamic custom file name to use for automated exports that are sent to this location. You can also precede the file name with a dynamic custom file path. <p>Use variables in file names and paths to make them dynamic.</p><p>For example, if you specify ${yyyy}/${mm}/${dd}/my-report-${instance_id} -${idx}, an export that is automatically sent to this destination on January 15, 2026 would have the following file path and name: [prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv</p><p>Click the link below for a list of available variables.</p>  |
 
    {style="table-layout:auto"}
 
@@ -171,7 +199,8 @@ For information about how to manage existing locations, including viewing, editi
    |Field | Function | 
    |---------|----------|
    | [!UICONTROL **Container**] | The container within the account you specified where you want Customer Journey Analytics data to be sent. Ensure that you grant permissions to upload files to the Azure application that you created earlier. | 
-   | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a slash after the name to create the folder. For example, `folder_name/`<p>Make sure the Application ID that you specified when configuring the Azure RBAC account has been granted the `Storage Blob Data Contributor` role in order to access the container (folder).</p> <p>For more information, see [Azure built-in roles](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).</p> |
+   | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a static folder name, then add a slash after the name to create the folder. For example, `folder_name/`<p>Make sure the Application ID that you specified when configuring the Azure RBAC account has been granted the `Storage Blob Data Contributor` role in order to access the container (folder).</p> <p>For more information, see [Azure built-in roles](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).</p> |
+   | [!UICONTROL **File name and path**] | Specify a dynamic custom file name to use for automated exports that are sent to this location. You can also precede the file name with a dynamic custom file path. <p>Use variables in file names and paths to make them dynamic.</p><p>For example, if you specify ${yyyy}/${mm}/${dd}/my-report-${instance_id} -${idx}, an export that is automatically sent to this destination on January 15, 2026 would have the following file path and name: [prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv</p><p>Click the link below for a list of available variables.</p>  |
    | [!UICONTROL **Account**] | The Azure storage account. | 
 
    {style="table-layout:auto"}

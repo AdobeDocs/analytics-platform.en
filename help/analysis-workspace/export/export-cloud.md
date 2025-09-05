@@ -56,6 +56,15 @@ Use the following process when exporting full tables to the cloud:
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-details"
+>title="Details"
+>abstract="Specify a unique name and description "
+
+<!-- markdownlint-enable MD034 -->
+
 >[!NOTE]
 >
 >Before you export data as described in this section, learn more about full table export in the [Understand full table export](#understand-full-table-export) section above.
