@@ -13,7 +13,12 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **September 2025** | |
+| Usage interface | Added documentation for updated [Usage interface](/help/connections/manage-connections.md#usage) in Connections. | 
+| Stitching Journey Optimizer datasets | Documented [list of automatically generated Journey Optimzer datasets](/help/stitching/overview.md#journey-optimizer-datasets) that can be used in stitching. | 
+| Context labels | Added more background information on the use and purpose of [context labels](/help/data-views/component-settings/overview.md#context-labels) in data view components. | 
 | **August 2025** | |
+| New integration with Adobe Advertising | Added information about [integrating with Adobe Advertising](/help/integrations/advertising.md). |
 | New derived field functions | Documentation for the new derived field functions: [Date Math](/help/data-views/derived-fields/derived-fields.md#date-math), [Depth](/help/data-views/derived-fields/derived-fields.md#depth), and [Typecast](/help/data-views/derived-fields/derived-fields.md#typecast). |
 | **July 2025** | |
 | Debugger | New article on how to enable, use and disable the project debugger in Analysis Workspace. |

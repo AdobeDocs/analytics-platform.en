@@ -389,6 +389,36 @@ To use the template, you have to specify the correct parameters for each functio
 
 +++
 
+
+### State Latitude {#state-latitude}
+
+This function template gets the latitude for a US state with a precision of 5 digits.
+
++++ Details
+
+{{select-package}}
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the State Latitude rule builder](assets/function-template-state-latitude.png)
+
++++
+
+
+### State Longitude {#state-longitude}
+
+This function template gets the longitude for a US state with a precision of 5 digits.
+
++++ Details
+
+{{select-package}}
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the State Longitude rule builder](assets/function-template-state-longitude.png)
+
++++
+
 <!--
 
 +++ Data clean up template

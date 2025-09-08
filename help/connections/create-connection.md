@@ -93,6 +93,10 @@ role: Admin
 >title="Change Buying Group ID"
 >abstract="A change of the Buying Group ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Buying Group ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
 
+>[!CONTEXTUALHELP]
+>id="connection_change_persistentid"
+>title="Change Persistent ID"
+>abstract="A change of the Persistent ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Persistent ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
 
 The connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with an assistive workflow. It provides detailed dataset selection, configuration, and review experience. And allows you to specify critical information like [dataset type](#dataset-types), size, schema, dataset id, batch status, backfill status, identities, and much more, to reduce the risk of wrong connection configuration. Here is an overview of the capabilities:
 
@@ -266,12 +270,12 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >[!CONTEXTUALHELP]
 >id="cja_connection_personid"
 >title="Person ID"
->abstract="Select an Person ID (the unique identifier for a person) from the available identities that you have defined in the dataset schema in the Experience Platform."
+>abstract="Select a Person ID (the unique identifier for a person) from the available identities that you have defined in the dataset schema in the Experience Platform."
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
->title="Matching key type"
->abstract="Select how to join: based on a match by field or match by container.<br/><br/>**[!UICONTROL Match by field]**: Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.<br/>**[!UICONTROL Match by container]**: Select a container to use to join with one of the event datasets."
+>title="Matching key"
+>abstract="Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset."
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_importnewdata"
@@ -335,8 +339,8 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 
 >[!CONTEXTUALHELP]
 >id="connection_matchingkey"
->title="Matching key type"
->abstract="Select how to join: based on a match by field or match by container.<br/><br/>**[!UICONTROL Match by field]**: Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.<br/>**[!UICONTROL Match by container]**: Select a container to use to join with one of the event datasets."
+>title="Matching key"
+>abstract="Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset."
 
 >[!CONTEXTUALHELP]
 >id="connection_matchingkeytype"
@@ -398,6 +402,11 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >title="Namespace identity graph"
 >abstract="Select the namespace to use to update the identifier in the identity graph."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
+
+>[!CONTEXTUALHELP]
+>id="connection_changeto_identitygraph"
+>title="Change to identity graph"
+>abstract="Ensure you have finished the setup of the identity graph before you use the identity graph for stitching."
 
 ### Dataset types {#dataset-types}
 

@@ -421,6 +421,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Field based stitching](/help/stitching/fbs.md)
   + [Graph based stitching](/help/stitching/gbs.md)
   + [Use stitching](/help/stitching/use-stitching.md)
+  + [Use stitching](/help/stitching/use-stitching-ui.md)
   + [Create and manage stitched datasets](/help/stitching/stitching-ui.md)
   + [Validate stitching](/help/stitching/validate.md)
   + [Frequently Asked Questions](/help/stitching/faq.md)  
@@ -432,6 +433,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Integrate Journey Optimizer data](/help/integrations/ajo.md)
   + [Integrate Decision Management data](/help/integrations/ajo-od.md)
   + [Integrate Customer AI](/help/integrations/customer-ai.md)
+  + [Integrate Adobe Advertising](/help/integrations/advertising.md)
 
 + Data Governance {#cja-privacy}
   + [Data Governance](../privacy/privacy-overview.md)
