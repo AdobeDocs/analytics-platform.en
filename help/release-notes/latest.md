@@ -26,16 +26,17 @@ These release notes cover the release period of August 13 through September 16, 
 
 ## Fixes in Customer Journey Analytics
 
-**Analysis Workspace**: AN-389683; AN-389534; AN-389207; AN-389066; AN-388687; AN-388478; AN-387089; AN-384865; AN-384560; AN-383486; AN-365768; AN-351639
-**Components**: 
+**Analysis Workspace**: AN-391719, AN-380838, AN-389402, AN-389373, AN-390851, AN-391593, AN-391404, AN-393064, AN-379337
+**Components**: AN-393810
 **Content Analytics**: 
-**Guided Analysis**: AN-384426
-**Platform**: AN-384410
-**Report Builder**: AN-389336; AN-382775
-**Reporting**: 
+**Guided Analysis**: 
+**Platform**: 
+**Report Builder**: AN-387741, AN-386777, AN-388720, AN-389343
+**Reporting**: AN-391439, AN-391228, AN-393620, AN-393640, AN-391334, AN-393304
 **Segmentation**: 
+**Scheduled reports**: AN-391150, AN-390474
 **Shared metrics and dimensions**: 
-**Other**: AN-388222; AN-384898; AN-387169
+**Other**: AN-387858
 
 
 ## Important notices for Customer Journey Analytics Administrators
