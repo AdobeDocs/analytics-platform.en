@@ -197,7 +197,7 @@ The following features are not supported and are automatically removed from full
 
 The following components are not supported, and Analysis Workspace prompts you to remove them from your table when performing a full-table export:
 
-* Some calculated metrics that use functions in the metric definition (see [Unsupported calculated metrics]() for more information)
+* Some calculated metrics that use functions in the metric definition (see [Unsupported calculated metrics](#unsupported-calculated-metrics) for more information)
 * Components that have been restricted by an administrator from being exported (see the *Segment on Data Governance policies in data views* section in [Labels and policies](/help/data-views/data-governance.md) for more information)
 * Any dimension that meets all of the following criteria:
   * Is created from a field that is part of an [array of objects](/help/use-cases/object-arrays.md) (similar to multi-value variables in Adobe Analytics).
