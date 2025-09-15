@@ -211,7 +211,7 @@ Other metrics can be similar in Customer Journey Analytics and Adobe Analytics. 
 
 +++ Can Customer Journey Analytics use Identity Map fields?
 
-No, Customer Journey Analytics cannot currently use Identity Map fields for stitching.
+Tes, Customer Journey Analytics can use Identity Map fields for stitching.
 
 +++
 
