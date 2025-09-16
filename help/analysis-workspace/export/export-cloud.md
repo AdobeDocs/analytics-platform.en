@@ -89,9 +89,7 @@ Use the following process when exporting full tables to the cloud:
 >[!CONTEXTUALHELP]
 >id="cja-export-destination"
 >title="Destination"
->abstract="Select the cloud account and location where you want the data to be sent. You can choose an existing account and location or select 'Add new' to create them.  
->
->Specify users and groups to notify about failed or expiring exports. "
+>abstract="Select the cloud account and location where you want the data to be sent. You can choose an existing account and location or select 'Add new' to create them. Specify users and groups to notify about failed or expiring exports."
 
 <!-- markdownlint-enable MD034 -->
 
