@@ -56,6 +56,45 @@ Use the following process when exporting full tables to the cloud:
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-details"
+>title="Details"
+>abstract="Specify a name for the export. You can also add a description and any tags. This information helps to identify the export in the exports table and in email notifications."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-data-structure"
+>title="Data structure"
+>abstract="This is the Freeform table that you are exporting. You can modify the data structure by dragging components from the left panel to the table. You can apply a filter by dragging a component into the filter area. The table dynamically updates as you add components to the canvas."
+
+<!-- markdownlint-enable MD034 -->ß
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-schedule"
+>title="Schedule"
+>abstract="Select how often the export should occur. Choose Send now (one-time) to initiate the export immediately. Scheduled exports are initiated at the date and time you specify. "
+
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-destination"
+>title="Destination"
+>abstract="Select the cloud account and location where you want the data to be sent. You can choose an existing account and location or select 'Add new' to create them.  
+>
+>Specify users and groups to notify about failed or expiring exports. "
+
+<!-- markdownlint-enable MD034 -->
+
 >[!NOTE]
 >
 >Before you export data as described in this section, learn more about full table export in the [Understand full table export](#understand-full-table-export) section above.
