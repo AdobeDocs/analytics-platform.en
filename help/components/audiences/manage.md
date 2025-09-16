@@ -29,7 +29,7 @@ The Audiences list ➊ shows the existing audiences.
 
 To view the Audience list:
 
-1. In Customer Journey Analytics, select **[!UICONTROL Components]** > **[!UICONTROL Audiences]**.
+1. In Customer Journey Analytics, select **[!UICONTROL Components]** > **[!UICONTROL Published audiences]**.
 
 1. (Optional) Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) to configure which columns to display. 
 
@@ -56,7 +56,7 @@ You can edit the settings of an audience at any time. When you edit an audience 
 
 To edit an audience:
 
-1. In Customer Journey Analytics, select **[!UICONTROL Components]** > **[!UICONTROL Audiences]**.
+1. In Customer Journey Analytics, select **[!UICONTROL Components]** > **[!UICONTROL Published audiences]**.
 
    The Audiences page is displayed.
 
