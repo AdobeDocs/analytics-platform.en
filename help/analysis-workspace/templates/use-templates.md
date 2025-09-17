@@ -587,6 +587,16 @@ The following templates are available:
 <!--Both AA and CJA-->
 
 >[!CONTEXTUALHELP]
+>id="template--audienceOverview"
+>title="View the country from which people visiting the site originated."
+>abstract="**This can help you** better understand what the most popular countries visitors originate from who visit your site.<br/>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these countries, or make sure that your site experience is optimal in countries that have different primary languages.<br/>This template uses the Countries dimension."
+
+>[!CONTEXTUALHELP]
+>id="template--consentPolicyOverview"
+>title="View the country from which people visiting the site originated."
+>abstract="**This can help you** better understand what the most popular countries visitors originate from who visit your site.<br/>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these countries, or make sure that your site experience is optimal in countries that have different primary languages.<br/>This template uses the Countries dimension."
+
+>[!CONTEXTUALHELP]
 >id="template--countryGeoReport"
 >title="View the country from which people visiting the site originated."
 >abstract="**This can help you** better understand what the most popular countries visitors originate from who visit your site.<br/>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these countries, or make sure that your site experience is optimal in countries that have different primary languages.<br/>This template uses the Countries dimension."
