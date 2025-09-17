@@ -485,6 +485,14 @@ To edit a dataset that is already configured for a connection, in the **[!UICONT
 
    ![Edit dataset](assets/edit-dataset.png)
 
+   >[!NOTE]
+   >
+   >You cannot edit the **[!UICONTROL Dataset type]**, **[!UICONTROL Person ID]**, **[!UICONTROL Identity namespace]** and **[!UICONTROL Timestamp]** for an [ad hoc](#adhoc-dataset) or a [model-based](#model-based-dataset) dataset that is part of a saved connection. To change any of these settings:
+   >
+   >1. Delete the existing ad hoc or model-based dataset from the connection.
+   >1. Add the same dataset with updated settings to the connection.
+   >
+
 1. Select **[!UICONTROL Apply]** to apply the dataset settings. Select **[!UICONTROL Cancel]** to cancel.
 
 
@@ -616,7 +624,7 @@ The specific settings for an adhoc dataset are:
 | Setting | Selected datset type | Description |
 |---|---|---|
 | **[!UICONTROL Dataset type]** | N/A | The type of data in the adhoc. Possible values are: **[!UICONTROL Event]**, **[!UICONTROL Profile]**, **[!UICONTROL Lookup]**, and **[!UICONTROL Summary]**.<br/>**Note**: You should avoid to select an Event dataset type for an Adhoc datase. Model-based or generic XDM based datasets are much better suited for event data than an Adhoc dataset. |
-| **[!UICONTROL Person ID]** | Event, Profile | Select a field from the adhoc or model-based schema that represent the Person ID. This field can be any field in the dataset. Select from **[!UICONTROL Identity namespace fields]** or from **[!UICONTROL Non-identity fields]**. <br/>You can only select an identifier from **[!UICONTROL Identity namespace]** if one or more of the fields in the adhoc schema are labeled as an Identity and have an identity namespace. |
+| **[!UICONTROL Person ID]** | Event, Profile | Select a field from the adhoc or model-based schema that represent the Person ID. This field can be any field in the dataset. Select from **[!UICONTROL Identity namespace fields]** or from **[!UICONTROL Non-identity fields]**. <br/>You can only select an identifier from **[!UICONTROL Identity namespace]** if one or more of the fields in the adhoc schema are labeled as an Identity and have an identity namespace.|
 | **[!UICONTROL Identity namespace]** | Event | Select an identity namespace in case you have selected a Person ID from **[!UICONTROL Non-identity]** fields.  |
 | **[!UICONTROL Timestamp]** | Event, Summary | Select a field from the adhoc schema that represents the timestamp field. This field can be any of the available fields of type `DateTime`. |
 | **[!UICONTROL Key]** | Lookup | The key to use for a Lookup dataset.<br/><br/>If a record doesn't contain a value for the key you have selected for the lookup dataset, the record is skipped. |
@@ -634,6 +642,7 @@ The specific settings for a model-based dataset are:
 | **[!UICONTROL Timestamp]** | Event, Summary | The field is that is defined as the timestamp descriptior in the schema. This field is populated automatically. |
 | **[!UICONTROL Key]** | Lookup | The key to use for a Lookup dataset.<br/><br/>If a record doesn't contain a value for the key you have selected for the lookup dataset, the record is skipped. |
 | **[!UICONTROL Matching key]** | Lookup | The matching key to join on in one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset. |
+
 
 #### General dataset settings and details
 
