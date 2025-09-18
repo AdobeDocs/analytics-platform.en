@@ -117,7 +117,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Ad hoc data](/help/data-ingestion/adhoc.md)
     + [Model-based data](/help/data-ingestion/model-based.md)
 
-+ Data mirror (#cja-data-mirror)
++ Data mirror {#cja-data-mirror}
   + [Overview](/help/data-mirror/data-mirror.md)
   + Configure {#configure}
     + [Data warehouse native solutions](/help/data-mirror/datawarehouse.md)

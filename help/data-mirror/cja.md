@@ -8,4 +8,6 @@ hide: yes
 hidefromtoc: yes
 badgePremium: label="Beta"
 ---
+
 # Configure Customer Journey Analytics
+
