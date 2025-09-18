@@ -13,9 +13,17 @@ Customer Journey Analytics lets you control how you connect your online and offl
 
 ## What's new?
 
-Get a glimpse of the newest enhancements in the Customer Journey Analytics product and documentation! For a comprehensive list of features, improvements, and fixes, check out the detailed [Release Notes](../release-notes/latest.md). Visit the [documentation updates page](../release-notes/doc-changes.md) to stay up-to-date with the latest documentation updates.
+Get a glimpse of the newest enhancements in the Customer Journey Analytics product and documentation! For a comprehensive list of features, improvements, and fixes, check out the detailed [release notes](../release-notes/latest.md). Visit the [documentation updates page](../release-notes/doc-changes.md) to stay up-to-date with the latest documentation updates.
 
 >[!BEGINTABS]
+
+>[!TAB Real-time reporting*]
+
+Real-time reporting in Customer Journey Analytics displays and updates data and visualizations within one or more panels in Analysis Workspace in real time.
+
+[![image](assets/learn-more-button.svg)](/help/components/real-time/real-time.md)
+
+*_You must have the Ultimate package for real-time reporting._*
 
 >[!TAB B2B Edition]
 
