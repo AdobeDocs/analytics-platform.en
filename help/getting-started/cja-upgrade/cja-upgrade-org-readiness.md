@@ -68,6 +68,16 @@ With the help of your executive sponsor, secure support from other key leaders t
 
 ### Develop an upgrade plan and distribute it to stakeholders
 
+An upgrade plan might include the following information:
+
+* A clear description about why the upgrade is happening. For example, describe the benefits for users and for the organization or business as a whole. For more information about the benefits, see [Focus on value](#focus-on-value).
+
+* A general timeline, such as when the upgrade is planned to begin, an outline of key milestones, and an estimate on when the upgrade is scheduled to complete.
+
+* An indication of when users can begin taking official trainings to learn how to use Customer Journey Analytics. For more information, see [Train end-users throughout your organization](#train-end-users-throughout-your-organization).
+
+* Information about who is leading the upgrade and how or when people can reach out with questions.
+
 ### Create a communiation plan 
 
 Create feedback loops
@@ -114,7 +124,7 @@ Identify Champions throughout your organization. These champions should be:
 
 * Direct users to relevant trainings, tutorials, and documentation on Experience League.
 
-  Following are a few helpful links to get started:
+  The following resources can help you get started:
 
   * [Customer Journey Analytics tutorials](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/overview)
 
