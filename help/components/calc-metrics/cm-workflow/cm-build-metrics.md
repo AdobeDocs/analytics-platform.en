@@ -61,7 +61,9 @@ The **[!UICONTROL Calculated metric builder]** dialog is used to create new or e
    
    The **[!UICONTROL Product compatibility]** indicates whether the calculated metric can be used in experimentation and full table export. Possible values are:
    * **[!UICONTROL Everywhere in Customer Journey Analytics]**: The calculated metric can be used throughout all of Customer Journey Analytics. 
-   * **[!UICONTROL Not compatible in: Experimentation, Full table export]**: The calculated metric can be used throughout all of Customer Journey Analytics, except in the Experimentation panel and when exporting full tables from Workspace. 
+   * **[!UICONTROL Not compatible in:]**
+     * **[!UICONTROL Experimentation]**: The calculated metric can be used throughout all of Customer Journey Analytics, except in the Experimentation panel. 
+     * **[!UICONTROL Full table export]**: The calculated metric can be used throughout all of Customer Journey Analytics, except when exporting full tables from Workspace. 
 
 1. Select:
    * **[!UICONTROL Save]** to save the calculated metric.
