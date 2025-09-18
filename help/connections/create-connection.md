@@ -414,7 +414,7 @@ For each dataset that you add to this connection, [!UICONTROL Customer Journey A
 
 >[!IMPORTANT]
 >
->Add at least one event or summary dataset (standard or of type adhoc or model-based) to your connection.
+>Add at least one event or summary dataset (standard or of type ad hoc or model-based) to your connection.
 
 There are different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, [!UICONTROL Lookup] data and [!UICONTROL Summary] data, each based on their corresponding XDM-based schema.
 
@@ -425,11 +425,11 @@ There are different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile]
 | **[!UICONTROL Profile]** | Data that is applied to your account, persons, users, or customers in the [!UICONTROL Event] data. For example, allows you to upload CRM data about your customers. | N/A | Any built-in or custom schema that is based on the *XDM Individual Profile* class. | You can pick which Person ID / Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} you want to include. Each dataset (except summary datasets), defined in [!DNL Experience Platform], has its own set of one or more Person IDs or Account IDs [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} defined. For example, Cookie ID, Stitched ID, User ID, Tracking Code, Account ID, and so on.<br>![Person ID](assets/person-id.png)**Note**: If you create a connection that includes datasets with different IDs, the reporting reflects that. To merge datasets, you need to use the same Person ID or Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. |
 | **Summary** | Time-series data that is not associated with an individual Person ID. Summary data represents aggregated data at a different level of aggregation, for example campaigns. You can use this data in Customer Journey Analytics to support various use cases. See [Summary data](/help/data-views/summary-data.md) for more information. | Automatically set to the default timestamp field from event-based Summary Metrics schemas in Experience Platform. Only hourly or daily granularity is supported. | Any built-in or custom schema that is based on the *XDM Summary Metrics* class. | N/A |
 
-Alternatively, the dataset types listed above, can be based on an adhoc or model-based schema instead of a generic XDM-based schema. 
+Alternatively, the dataset types listed above, can be based on an ad hoc or model-based schema instead of a generic XDM-based schema. 
 
 | Dataset type | Description | Timestamp | Schema | Person ID |
 |---|---|---|---|---|
-| **[!UICONTROL Adhoc]** | Adhoc data based on an [adhoc schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/api/ad-hoc) with fields that are namespaced for usage only by a single dataset. | Dependent on the dataset type you select for the adhoc dataset.  |  Any adhoc schema that is based on a class based on the *adhoc* behavior | Dependent on the dataset type you select for the adhoc dataset. |
+| **[!UICONTROL Adhoc]** | Ad hoc data based on an [ad hoc schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/api/ad-hoc) with fields that are namespaced for usage only by a single dataset. | Dependent on the dataset type you select for the ad hoc dataset.  |  Any ad hoc schema that is based on a class based on the *ad hoc* behavior | Dependent on the dataset type you select for the ad hoc dataset. |
 | **[!UICONTROL Model]** | Model-based data based on a model-based schema. | Dependent on the dataset type you select for the model-based dataset. | Any model-based schema. | Dependent on the dataset type you select for the model-based dataset. |
 
 
@@ -449,7 +449,7 @@ You can add one or more Experience Platform datasets when you create or edit a c
    | Column | Description |
    |---|---|
    | **[!UICONTROL Dataset]** | Name of the dataset. Select the name to direct you to the dataset in Experience Platform. Select ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to display a popup with more details for the dataset. You can select **[!UICONTROL Edit in Platform]** to edit the dataset directly in Experience Platform. |
-   | **[!UICONTROL Dataset type]** | The type of dataset: [Event](#event-dataset), [Profile](#profile-dataset), [Lookup](#lookup-dataset), [Summary](#summary-dataset), [Adhoc](#adhoc-dataset), or [Model](#model-based-dataset). | 
+   | **[!UICONTROL Dataset type]** | The type of dataset: [Event](#event-dataset), [Profile](#profile-dataset), [Lookup](#lookup-dataset), [Summary](#summary-dataset), [Adhoc](#ad-hoc-dataset), or [Model](#model-based-dataset). | 
    | **[!UICONTROL Number of records]** | The total records in the previous month for the dataset in Experience Platform. |
    | **[!UICONTROL Schema]** | The schema for the dataset. Select the name to direct you to the schema in Experience Platform. |
    | **[!UICONTROL Last batch]** | The state of the last batch ingested in Experience Platform. See [Batch states](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) more information. |
@@ -487,7 +487,7 @@ To edit a dataset that is already configured for a connection, in the **[!UICONT
 
    >[!NOTE]
    >
-   >You cannot edit the **[!UICONTROL Dataset type]**, **[!UICONTROL Person ID]**, **[!UICONTROL Identity namespace]** and **[!UICONTROL Timestamp]** for an [ad hoc](#adhoc-dataset) or a [model-based](#model-based-dataset) dataset that is part of a saved connection. To change any of these settings:
+   >You cannot edit the **[!UICONTROL Dataset type]**, **[!UICONTROL Person ID]**, **[!UICONTROL Identity namespace]** and **[!UICONTROL Timestamp]** for an [ad hoc](#ad-hoc-dataset) or a [model-based](#model-based-dataset) dataset that is part of a saved connection. To change any of these settings:
    >
    >1. Delete the existing ad hoc or model-based dataset from the connection.
    >1. Add the same dataset with updated settings to the connection.
@@ -617,18 +617,24 @@ The specific settings for a summary dataset are:
 | **[!UICONTROL Granularity]** | Represents the time frame used to aggregate summary data by, currently either hour or day. Derived from the data in the dataset. | 
 
 
-#### Adhoc dataset
+#### Ad hoc dataset
 
-The specific settings for an adhoc dataset are:
+>[!NOTE]
+>
+>Although possible to configure and select, for performance reasons you should avoid to use an ad hoc dataset for time-series (event, summary) data. Model-based or generic XDM based datasets are much better suited for time-series data than ad hoc datasets.
+
+
+
+The specific settings for an ad hoc dataset are:
 
 | Setting | Selected datset type | Description |
 |---|---|---|
-| **[!UICONTROL Dataset type]** | N/A | The type of data in the adhoc. Possible values are: **[!UICONTROL Event]**, **[!UICONTROL Profile]**, **[!UICONTROL Lookup]**, and **[!UICONTROL Summary]**.<br/>**Note**: You should avoid to select an Event dataset type for an Adhoc datase. Model-based or generic XDM based datasets are much better suited for event data than an Adhoc dataset. |
-| **[!UICONTROL Person ID]** | Event, Profile | Select a field from the adhoc or model-based schema that represent the Person ID. This field can be any field in the dataset. Select from **[!UICONTROL Identity namespace fields]** or from **[!UICONTROL Non-identity fields]**. <br/>You can only select an identifier from **[!UICONTROL Identity namespace]** if one or more of the fields in the adhoc schema are labeled as an Identity and have an identity namespace.|
+| **[!UICONTROL Dataset type]** | N/A | The type of data in the ad hoc dataset. Possible values are: **[!UICONTROL Event]**, **[!UICONTROL Profile]**, **[!UICONTROL Lookup]**, and **[!UICONTROL Summary]**. |
+| **[!UICONTROL Person ID]** | Event, Profile | Select a field from the ad hoc or model-based schema that represent the Person ID. This field can be any field in the dataset. Select from **[!UICONTROL Identity namespace fields]** or from **[!UICONTROL Non-identity fields]**. <br/>You can only select an identifier from **[!UICONTROL Identity namespace]** if one or more of the fields in the ad hoc schema are labeled as an Identity and have an identity namespace.|
 | **[!UICONTROL Identity namespace]** | Event | Select an identity namespace in case you have selected a Person ID from **[!UICONTROL Non-identity]** fields.  |
-| **[!UICONTROL Timestamp]** | Event, Summary | Select a field from the adhoc schema that represents the timestamp field. This field can be any of the available fields of type `DateTime`. |
+| **[!UICONTROL Timestamp]** | Event, Summary | Select a field from the ad hoc schema that represents the timestamp field. This field can be any of the available fields of type `DateTime`. |
 | **[!UICONTROL Key]** | Lookup | The key to use for a Lookup dataset.<br/><br/>If a record doesn't contain a value for the key you have selected for the lookup dataset, the record is skipped. |
-| **[!UICONTROL Matching key]** | Lookup | The matching key to join on in one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset. |
+| **[!UICONTROL Matching key]** | Lookup | The matching key to join on in one of the event or lookup datasets. If this list is empty, you probably haven't added or configured an event or lookup dataset. |
 
 
 #### Model-based dataset
@@ -653,9 +659,9 @@ Each (type of dataset) has the following common settings:
 
 ### Re-ingest data
 
-You sometimes require to re-ingest data from one or more datasets into a connection. To do so:
+You sometimes require to re-ingest data from one or more datasets into a connection. For ad hoc or model-based dataset you need to [delete and then add the dataset once again](#edit-a-dataset). For other datasets you can update settings. To do so:
 
-1. For each dataset you want to re-ingest data for:
+1. For the dataset you want to re-ingest data for:
 
    1. Change any of the following:
 
@@ -666,8 +672,9 @@ You sometimes require to re-ingest data from one or more datasets into a connect
 
    1. **[!UICONTROL Apply]** the changes for the dataset.
 
-1. **[!UICONTROL Save]** the connection. Data is re-ingested for the specific datasets.
+   
 
+1. **[!UICONTROL Save]** the connection. Data is re-ingested for the specific datasets.
 
 
 ### Delete a dataset
@@ -757,5 +764,6 @@ This calculation is done for every dataset in the connection.
 
 >[!MORELIKETHIS]
 >
->Blog: [How to Leverage Event, Lookup, and Profile Datasets in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
+>* [Data ingestion overview](/help/data-ingestion/data-ingestion.md)
+>* Blog: [How to Leverage Event, Lookup, and Profile Datasets in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
