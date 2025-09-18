@@ -47,8 +47,8 @@ For more information, read the [[!DNL Azure Databricks] guide on enabling change
 
 Read the following documentation for steps on how to enable change data capture for your [!DNL Azure Databricks] source connection:
 
-* [Create a [!DNL Azure Databricks] base connection](../api/create/databases/databricks.md).
-* [Create a source connection for a database](../api/collect/database-nosql.md#create-a-source-connection).
+* [Create a [!DNL Azure Databricks] base connection](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
+* [Create a source connection for a database](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Google BigQuery]
 
@@ -58,8 +58,8 @@ For more information, read the guide on [data definition language statements in 
 
 Read the following documentation for steps on how to enable change data capture for your [!DNL Google BigQuery] source connection:
 
-* [Create a [!DNL Google BigQuery] base connection](../api/create/databases/bigquery.md).
-* [Create a source connection for a database](../api/collect/database-nosql.md#create-a-source-connection).
+* [Create a [!DNL Google BigQuery] base connection](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
+* [Create a source connection for a database](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Snowflake]
 
@@ -75,5 +75,5 @@ For more information, read the [[!DNL Snowflake] guide on using the changes clau
 
 Read the following documentation for steps on how to enable change data capture for your [!DNL Snowflake] source connection:
 
-* [Create a [!DNL Snowflake] base connection](../api/create/databases/snowflake.md).
-* [Create a source connection for a database](../api/collect/database-nosql.md#create-a-source-connection).
+* [Create a [!DNL Snowflake] base connection](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
+* [Create a source connection for a database](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
