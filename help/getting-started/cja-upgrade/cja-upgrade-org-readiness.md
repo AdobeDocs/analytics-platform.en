@@ -80,7 +80,15 @@ An upgrade plan might include the following information:
 
 ### Create a communiation plan 
 
-Create feedback loops
+A communication plan might include the following considerations:
+
+* A defined cadence on when communications will be sent to stakeholders and users
+
+* An outline of the type of information that will be sent
+
+* A plan for who will send communications
+
+* Defined feedback loops to allow stakeholders and users to ask questions or provide feedback
 
 ## Assess and audit your Adobe Analytics implementation
 
