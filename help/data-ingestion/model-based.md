@@ -29,12 +29,14 @@ Model-based data is used in Experience Platform to support two specific use case
 - Campaign orchestration for Journey Optimizer.
 - Data mirror for Customer Journey Analytics.
 
-You should not consider model-based data, datasets, and schemas for any other use case.
+You should not consider model-based data, datasets, and schemas for any other use case. 
+
+See [Model-based schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based) in the Experience Platform documentation for more detailed information.
 
 
 >[!NOTE]
 >
->This quick start guide is a simplified guide on how to ingest ad hoc data using into Adobe Experience Platform and use it in Customer Journey Analytics. It is highly recommended to study the additional information when referred to.
+>This quick start guide is a simplified guide on how to ingest model-based data using into Adobe Experience Platform and use it in Customer Journey Analytics. It is highly recommended to study the additional information when referred to.
 
 ## Set up a schema and dataset
 
