@@ -36,7 +36,7 @@ Using Data Insights Agent to answer data-centric questions in Analysis Workspace
 >[!CONTEXTUALHELP]
 >id="cja-enable-data-insights-data-view"
 >title="Enable for Data Insights Agent"
->abstract="This option enables this data view for usage with Data Insights Agent. Data Insights Agent is a generative AI conversation agent that is accessible from the AI Assistant in Customer Journey Analytics. It helps you quickly analyze your data with text questions (for example, "Show revenue by product category last month"). It builds relevant visualizations in Analysis Workspace using components from your data view and using your actual data."
+>abstract="This option enables this data view for usage with Data Insights Agent. Data Insights Agent is a generative AI conversation agent that is accessible from the AI Assistant in Customer Journey Analytics. It helps you quickly analyze your data with text prompts. It builds relevant visualizations in Analysis Workspace using components from your data view and using your actual data."
 
 <!-- markdownlint-enable MD034 -->
 
