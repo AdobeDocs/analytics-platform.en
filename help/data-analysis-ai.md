@@ -29,7 +29,7 @@ Using Data Insights Agent to answer data-centric questions in Analysis Workspace
 | **Feedback mechanisms** | <ul><li>Thumbs up</li><li>Thumbs down</li><li>Flag</li></ul> |  |
  
 
-## Manage access to Data Insights Agent
+## Manage access to Data Insights Agent {#manage-access}
 
 <!-- markdownlint-disable MD034 -->
 
