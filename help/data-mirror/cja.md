@@ -11,3 +11,7 @@ badgePremium: label="Beta"
 
 # Configure Customer Journey Analytics
 
+To use the Experience Platform Data Mirror feture for Customer Journey Analytics, you have to create or update a connection, data views and workspace projects to use the model-based and change data capture enabled data.
+
+## Connection
+
