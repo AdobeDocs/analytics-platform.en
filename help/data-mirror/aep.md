@@ -16,7 +16,7 @@ The Experience Platform Data Mirror capability for Customer Journey Analytics re
 * dataset
 * source connector
 
-Find below details that you should consider when configuring each of these components. See the [Mirror and use model-based data quick start guide](/help/data).
+Find below details that you should consider when configuring each of these components.
 
 ## Schema
 
