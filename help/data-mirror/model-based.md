@@ -176,7 +176,7 @@ Define a schema that models this data. To set up your schema:
 
      ![Person descriptor](assets/platform-schema-personid.png)
 
-   * The **[!UICONTROL timestamp]** field is configured, together with **[!UICONTROL personid]** field as the **[!UICONTROL Primary ke]**y. The **[!UICONTROL timestamp]** field is also configured as **[!UICONTROL Timestamp descriptor]**. You only need to define a field as **[!UICONTROL Timestamp descriptor]** for time series model-based data.
+   * The **[!UICONTROL timestamp]** field is configured, together with **[!UICONTROL personid]** field as the **[!UICONTROL Primary key]**. The **[!UICONTROL timestamp]** field is also configured as **[!UICONTROL Timestamp descriptor]**. You only need to define a field as **[!UICONTROL Timestamp descriptor]** for time series model-based data.
 
      ![Timestamp descriptor](assets/platform-schema-timestamp.png)
 

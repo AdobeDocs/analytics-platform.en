@@ -39,7 +39,7 @@ See also the Experience Platform documentation on Data Mirror.
 
 >[!NOTE]
 >
->The Experience Platform Data Mirror capability for Customer Journey Analytics is available in a **public beta** until March 25, 2026. During the beta period, change data capture (CDC) updates are limited to 0.5% of your organization's monthly rows of data. The monthly rows of data are based on your year entitlement for rows of data divided by 12. Adobe reserves the right to terminate beta access to the Experience Platform Data Mirror for Customer Journey Analytics capability should your organization exceed this limit.
+>The Experience Platform Data Mirror capability for Customer Journey Analytics is available in a **public beta** until March 25, 2026. During the beta period, change data capture (CDC) updates are limited to a 10 million daily change rows entitlement for Customer Journey Analytics. Adobe reserves the right to terminate beta access to Experience Platform Data Mirror functionality should your organization exceed this limit. For additional information about the feature, including billing implications, please see this section of the Experience League documentation.
 >
 
 The Experience Platform Data Mirror for Customer Journey Analytics capability is available for selected data warehouse native solutions ([!DNL Azure Databricks], [!DNL Google BigQuery], and [!DNL Snowflake]). The Customer Journey Analytics version of the Data Mirror capability requires a proper setup and configuration of several components:
