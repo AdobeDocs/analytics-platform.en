@@ -267,4 +267,11 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 | Audience Publishing to Real-time Customer Profile, including automatic creation of the streaming segment, and allowing the segment to be ready to receive the data. | ≈ 60 minutes |
 | Refresh Frequency for Audiences | One-time refresh: latency of less than 5 minutes.<br/>Refresh every 4 hours, daily, weekly, monthly (latency goes hand in hand with the refresh rate). |
 
+| Real-time reporting latencies | Expected latency |
+|---|---|
+| Edge Network SDK / API's into the Edge Network | &lt; 7 minutes |
+| Streaming connectors | &lt; 17 minutes |
+| Adobe Analytics source connector | &lt; 17 minutes |
+| Other source connectors (including batch data) | &lt; 25 hours |
+
 {style="table-layout:auto"}

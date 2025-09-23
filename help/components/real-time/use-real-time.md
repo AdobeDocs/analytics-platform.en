@@ -2,10 +2,7 @@
 description: Understand how to use real-time reporting in Analysis Workspace.
 title: Use Real-Time Reporting
 feature: Real-time Reporting
-hide: yes
-hidefromtoc: yes
 role: User
-badgePremium: label="Beta"
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
 ---
 # Use real-time reporting {#use-real-time-reporting}

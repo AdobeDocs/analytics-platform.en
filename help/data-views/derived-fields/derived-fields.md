@@ -924,7 +924,7 @@ You define an `Origin - Destination` derived field. You use the [!UICONTROL CONC
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_datemath"
 >title="Date Math"
->abstract="This function provides the ability to return the difference between two date or date-time fields."
+>abstract="This function provides the ability to return the difference between two date or date-time fields. Person-based fields (from profile datasets) do not have options for **[!UICONTROL Return the first]** and **[!UICONTROL Return the last.]**."
 
 Returns the difference between two dates or two date-time fields.
 
@@ -975,6 +975,10 @@ Then you use these two values to calculate the difference with a [!UICONTROL DAT
 
 ![Screenshot of the Date Math rule 3](assets/datemath-3.png)
 
+
+## More information {#datemath-more-info}
+
+The options for [!UICONTROL Return the first] or [!UICONTROL Return the last] are not available when you select a person-based (from a profile dataset) field. A person-based field can have only one value for a Date or Date-time field for a person.
 +++
 
 <!-- DEDUPLICATE -->

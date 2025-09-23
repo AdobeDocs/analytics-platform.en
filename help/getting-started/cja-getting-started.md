@@ -1,5 +1,5 @@
 ---
-title: Customer Journey Analytics quiuck start guide
+title: Customer Journey Analytics quick start guide
 description: Understand the prerequisites and workflow required to implement Customer Journey Analytics.
 exl-id: cab218c0-009c-4669-9dfb-f8872a7f066b
 solution: Customer Journey Analytics
