@@ -1,6 +1,6 @@
 ---
 title: Configure Data warehouse native solutions
-description: Understand how to confgure data warehouse native solutions for Experience Platform Data Mirror for Customer Journey Analytics
+description: Understand how to configure data warehouse native solutions for Experience Platform Data Mirror for Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
@@ -15,7 +15,7 @@ To support Experience Platform Data Mirror for Customer Journey Analytics, the d
 
 ## [!DNL Azure Databricks]
 
-You must enable **change data feed** in your [!DNL Azure Databricks] tables to use change data capture in your source connection.
+Enable **change data feed** in your [!DNL Azure Databricks] tables to use change data capture in your source connection.
 
 Use the following commands to enable change data feed on your tables:
 
@@ -63,7 +63,7 @@ Read the following documentation for steps on how to enable change data capture 
 
 ## [!DNL Snowflake]
 
-You must enable **change tracking** in your [!DNL Snowflake] tables to use change data capture in your source connections.
+Enable **change tracking** in your [!DNL Snowflake] tables to use change data capture in your source connections.
 
 In [!DNL Snowflake], enable change tracking by using the `ALTER TABLE` and setting `CHANGE_TRACKING` to `TRUE`.
 

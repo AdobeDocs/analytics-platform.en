@@ -212,7 +212,7 @@ In the **[!UICONTROL Connections]** > **[!UICONTROL *Name of the connection*]** 
     | **[!UICONTROL Last updated]** | For event datasets only, this setting is automatically set to the default timestamp field from event-based schemas in Experience Platform. "N/A" means that this dataset contains no data. |
     | **[!UICONTROL Number of records]** | The total records in the previous month for the dataset in Experience Platform. |
     | **[!UICONTROL Schema]** | The [schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) based on which the dataset was created in Adobe Experience Platform. |
-    | **[!UICONTROL Dataset type]** | For each dataset that you added to this connection, Customer Journey Analytics automatically sets the [dataset type](#dataset-types) based on the data coming in. There are 3 different dataset types: Event data, Profile data, and Lookup data. See the table below for an explanation of dataset types. |
+    | **[!UICONTROL Dataset type]** | For each dataset that you added to this connection, Customer Journey Analytics automatically sets the [dataset type](#dataset-types) based on the data coming in. |
     | **[!UICONTROL Granularity]** | The granularity of the data in the dataset; only applicable for summary datasets. | 
     | **[!UICONTROL Data source type]** | The data source type of the dataset. Not applicable for summary datasets. |
     | **[!UICONTROL Account ID]** | (only displayed for account-based connections) The Account ID that is used to support account-based reporting for the dataset. |
@@ -602,7 +602,7 @@ For a lookup dataset in an account-based connection, you can specify:
 | **[!UICONTROL Key]** | The key to use for a Lookup dataset. <p>If a record doesn't contain a value for the key you have selected for the lookup dataset, the record is skipped. |
 |  **[!UICONTROL Matching key type]** | Select how to join the datasets: based on a **[!UICONTROL Match by field]** or **[!UICONTROL Match by container]**. See [Match by container of field](/help/getting-started/cja-b2b-concepts-features.md#match-by-container-or-field) for more information.|
 | **[!UICONTROL Matching key]** | The matching key to join on in one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset. <br/><br/>Based on your selected **[!UICONTROL Matching key type]**, select the appropriate value:<ul><li>**[!UICONTROL Match by field]**: ![Match by field](assets/match-by-field.png)<br/>Select a field from the **[!UICONTROL Matching key]** drop-down menu to join with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.</li><li>**[!UICONTROL Match by container]**: ![Match by container](assets/match-by-container.png)<br/>Select a container from the **[!UICONTROL Matching key]** drop-down menu to use to join with one of the event datasets. The containers you included as part of setting up the connection determine the available containers to select.</li></ul>  |
-| **[!UICONTROL Global Account field]** | The global Account ID to use for account-based reporting. | 
+| **[!UICONTROL Global Account field]** | The Global Account ID to use for account-based reporting. | 
 
 
 
@@ -621,33 +621,36 @@ The specific settings for a summary dataset are:
 
 >[!NOTE]
 >
->Although possible to configure and select, for performance reasons you should avoid to use an ad hoc dataset for time-series (event, summary) data. Model-based or generic XDM based datasets are much better suited for time-series data than ad hoc datasets.
-
-
+>Although possible to configure and select, for performance reasons you should avoid to using an ad hoc dataset for time-series (event, summary) data. Model-based or generic XDM based datasets are much better suited for time-series data than ad hoc datasets.
 
 The specific settings for an ad hoc dataset are:
 
-| Setting | Selected datset type | Description |
+| Setting | Selected dataset type | Description |
 |---|---|---|
 | **[!UICONTROL Dataset type]** | N/A | The type of data in the ad hoc dataset. Possible values are: **[!UICONTROL Event]**, **[!UICONTROL Profile]**, **[!UICONTROL Lookup]**, and **[!UICONTROL Summary]**. |
-| **[!UICONTROL Person ID]** | Event, Profile | Select a field from the ad hoc or model-based schema that represent the Person ID. This field can be any field in the dataset. Select from **[!UICONTROL Identity namespace fields]** or from **[!UICONTROL Non-identity fields]**. <br/>You can only select an identifier from **[!UICONTROL Identity namespace]** if one or more of the fields in the ad hoc schema are labeled as an Identity and have an identity namespace.|
+| **[!UICONTROL Person ID]** | Event, Profile | Select a field from the ad hoc or model-based schema that represent the Person ID. This field can be any field in the dataset. Select from **[!UICONTROL Identity namespace fields]** or from **[!UICONTROL Non-identity fields]**. <br/>You can only select an identifier from **[!UICONTROL Identity namespace]** if one or more of the fields in the ad hoc schema are labeled as an identity and have an identity namespace.|
 | **[!UICONTROL Identity namespace]** | Event | Select an identity namespace in case you have selected a Person ID from **[!UICONTROL Non-identity]** fields.  |
 | **[!UICONTROL Timestamp]** | Event, Summary | Select a field from the ad hoc schema that represents the timestamp field. This field can be any of the available fields of type `DateTime`. |
-| **[!UICONTROL Key]** | Lookup | The key to use for a Lookup dataset.<br/><br/>If a record doesn't contain a value for the key you have selected for the lookup dataset, the record is skipped. |
+| **[!UICONTROL Key]** | Lookup | The key to use for a Lookup dataset.<br/>If a record doesn't contain a value for the key you have selected for the lookup dataset, the record is skipped. |
 | **[!UICONTROL Matching key]** | Lookup | The matching key to join on in one of the event or lookup datasets. If this list is empty, you probably haven't added or configured an event or lookup dataset. |
 
 
 #### Model-based dataset
 
+>[!NOTE]
+>
+>Model-based datasets are predominantly used to support the upcoming Experience Platform Data Mirror for Customer Journey Analytics capability.
+>
+
 The specific settings for a model-based dataset are:
 
-| Setting | Selected datset type | Description |
+| Setting | Selected dataset type | Description |
 |---|---|---|
 | **[!UICONTROL Dataset type]** | N/A | The type of data in the model-based dataset.<br/>If the dataset contains time-series data, the possible values are: **[!UICONTROL Event]** and **[!UICONTROL Summary]**. <br/>If the dataset contains record data, the possible values are: **[!UICONTROL Profile]** and **[!UICONTROL Lookup]**. |
-| **[!UICONTROL Person ID]** | Event, Profile | Select a field from the model-based schema that represent the Person ID. The selection is limited to the list of fields in the model-based schema that are marked as Identity and do have an identity namespace. |
-| **[!UICONTROL Timestamp]** | Event, Summary | The field is that is defined as the timestamp descriptior in the schema. This field is populated automatically. |
-| **[!UICONTROL Key]** | Lookup | The key to use for a Lookup dataset.<br/><br/>If a record doesn't contain a value for the key you have selected for the lookup dataset, the record is skipped. |
-| **[!UICONTROL Matching key]** | Lookup | The matching key to join on in one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset. |
+| **[!UICONTROL Person ID]** | Event, Profile | Select a field from the model-based schema that represents the Person ID. The selection is limited to the list of fields in the model-based schema that are marked as Identity and do have an identity namespace. |
+| **[!UICONTROL Timestamp]** | Event, Summary | The field that is defined as the timestamp descriptor in the schema. This field is populated automatically. |
+| **[!UICONTROL Key]** | Lookup | The key to use for a Lookup dataset.<br/>If a record doesn't contain a value for the key you have selected for the lookup dataset, the record is skipped. |
+| **[!UICONTROL Matching key]** | Lookup | The matching key to join on in one of the event datasets. If this list is empty, you probably haven't added or configured an event or lookup dataset. |
 
 
 #### General dataset settings and details
@@ -659,7 +662,7 @@ Each (type of dataset) has the following common settings:
 
 ### Re-ingest data
 
-You sometimes require to re-ingest data from one or more datasets into a connection. For ad hoc or model-based dataset you need to [delete and then add the dataset once again](#edit-a-dataset). For other datasets you can update settings. To do so:
+You sometimes require to re-ingest data from one or more datasets into a connection. For ad hoc or model-based dataset you need to [delete and then add the dataset once again](#edit-a-dataset). For other datasets, you can update settings. To do so:
 
 1. For the dataset you want to re-ingest data for:
 
@@ -702,7 +705,7 @@ To see a map of the relationships between the datasets that are part of your con
 
 ![Connection map](assets/connectionmap.png)
 
-This map helps you to get a better understanding of how you have defined your connection and set up the relationship between your event, profile, lookup, and summary datasets using containers and identifiers.
+This map helps you to get a better understanding of how you have defined your connection and set up the relationship between your event, profile, lookup, and summary datasets, using containers and identifiers.
 
 
 ## Use numeric fields as lookup keys and lookup values {#numeric}

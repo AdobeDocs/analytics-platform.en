@@ -13,7 +13,7 @@ badgePremium: label="Beta"
 
 This quick start guide explains how to use the [Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md) capability to mirror model-based data from a data warehouse native solution in Adobe Experience Platform. And then use that data in Customer Journey Analytics.
 
-To accomplish this, you need to:
+To accomplish this use case, you need to:
 
 * **Use a data warehouse native solution** to store data that you want to mirror in Experience Platform. And then use that data in Customer Journey Analytics to report on and to analyze.
   
@@ -27,7 +27,7 @@ To accomplish this, you need to:
 
 * **Set up a project** in Customer Journey Analytics to build your reports and visualizations.
 
-Experience Platform Data Mirror for Customer Journey Analytics requires [model-based schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based). 
+Experience Platform Data Mirror for Customer Journey Analytics requires model-based schemas. 
 
 
 
@@ -69,11 +69,11 @@ Within [!DNL Google BigQuery], the following example data is stored and updated 
 
 +++
 
-The data is stored in a database table with associated schema. To inspect the database table:
+The data is stored in a database table with an associated schema. To inspect the database table:
 
 1. Log in to Google BigQuery.
 1. Select **[!UICONTROL BigQuery]** > **[!UICONTROL Studio]**.
-1. Select your project, dataset and table. In the **[!UICONTROL Schema]** tab you see an overview of the schema for the event data.
+1. Select your project, dataset and table. In the **[!UICONTROL Schema]** tab, you see an overview of the schema for the event data.
 
    ![Google BigQuery - Schema](assets/googlebg-schema.png)
 
@@ -131,7 +131,7 @@ Define a schema that models this data. To set up your schema:
 1. In the **[!UICONTROL Schemas]** > **[!UICONTROL Create model-based schema]** interface:
    1. Enter a **[!UICONTROL Schema display name]**. For example: `Sample Event Feed Schema`.
    1. Enter a **[!UICONTROL Description]**. For example: `Sample event feed schema for a model-based schema`.
-   1. Select **[!UICONTROL  Time series]** as the **[!UICONTROL Schema behavior]**. You select **[!UICONTROL Time series]** for time-series based data and **[!UICONTROL Record]** for record based data. The behavior defines the structure of the schema and the properties that are included. 
+   1. Select **[!UICONTROL Time series]** as the **[!UICONTROL Schema behavior]**. You select **[!UICONTROL Time series]** for time-series based data and **[!UICONTROL Record]** for record based data. The behavior defines the structure of the schema and the properties that are included. 
    
       The Experience Platform Data Mirror for Customer Journey Analytics capability is mostly used for time series data (for example, event data).
 
@@ -139,11 +139,11 @@ Define a schema that models this data. To set up your schema:
 
    1. Select **[!UICONTROL Finish]**.
 
-1. In the **[!UICONTROL Schemas]** > **[!UICONTROL Sample Event Feed Schema]** interface you see a warning that model-based schemas support ingestion as change rows. 
+1. In the **[!UICONTROL Schemas]** > **[!UICONTROL Sample Event Feed Schema]** interface, you see a warning that model-based schemas support ingestion as change rows. 
 
    ![Schema configuration](assets/model-based-create-schema-empty.png)
    
-   Ingestion as change rows is also known as change cata capture (CDC). To support change data capture, the schema requires:
+   Ingestion as change rows is also known as change data capture (CDC). To support change data capture, the schema requires:
 
    * Primary key.
    * Version descriptor.
@@ -208,7 +208,7 @@ In the **[!UICONTROL Authentication]** step, select:
       
       ![Google BigQuery - Authentication](assets/googlebg-authentication.png)
 
-      You connection is verified. A ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) **[!UICONTROL Connected]** indicated a successful connection.
+      Your connection is verified. A ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) **[!UICONTROL Connected]** indicated a successful connection.
    
    1. Select **[!UICONTROL Next]**.
 
@@ -219,7 +219,7 @@ In the **[!UICONTROL Authentication]** step, select:
 
 In the **[!UICONTROL Select data]** step:
 
-1. Select the table from the list of tables. For example **[!UICONTROL eventdata]**.
+1. Select the table from the list of tables. For example: **[!UICONTROL eventdata]**.
 
    ![Experience Platform - Source Connector - Select data](assets/platform-sources-selectdata-event.png)
 
@@ -233,9 +233,9 @@ In the **[!UICONTROL Select data]** step:
 In the **[!UICONTROL Dataflow detail]** step:
 
 1. Select **[!UICONTROL Enable change data capture]**. A **[!UICONTROL Change data capture requirement]** information box displays with more information.
-1. Select **[!UICONTROL New dataset]** for **[!UICONTROL Target dataset]** to create a new dataset that will contain the mirrored data.
+1. Select **[!UICONTROL New dataset]** for **[!UICONTROL Target dataset]** to create a new dataset that contains the mirrored data.
 1. Enter an **[!UICONTROL Output dataset name]**. For example: `event-data-mirror`.
-1. Select the model-based schema you created earlier from the **[!UICONTROL Schema]** drop-down menu. For example: **[!UICONTROL Sample Event Feed Schema]**.
+1. Select the model-based schema that you created earlier from the **[!UICONTROL Schema]** drop-down menu. For example: **[!UICONTROL Sample Event Feed Schema]**.
 
    ![Experience Platform - Source Connector - Dataflow details](assets/platform-sources-dataflowdetail-event.png)
 
@@ -247,7 +247,7 @@ In the **[!UICONTROL Dataflow detail]** step:
 
 In the **[!UICONTROL Mapping]** step:
 
-1. Map the fields from the schema for the table in Google BigQuery (Source data) to the fields in the schema you have defined in Experience Platform (Target fields).
+1. Map the fields. From the schema in Google BigQuery (**[!UICONTROL Source data]**) to the fields in the schema that you have defined in Experience Platform (**[!UICONTROL Target fields]**).
 
    ![Experience Platform - Source Connector - Mapping](assets/platform-sources-mapping.png)
 
@@ -281,18 +281,18 @@ In the **[!UICONTROL Review]** step.
 
 ## Set up a connection
 
-In this quick start guide you create a new connection to use the mirrored data from Experience Platform. Alternatively you can add the relevant data to an existing connection.
+In this quick start guide, you create a new connection to use the mirrored data from Experience Platform. Alternatively you can add the mirrored data to an existing connection.
 
 In the Customer Journey Analytics interface:
 
 1. Select **[!UICONTROL Connections]** from the **[!UICONTROL Data Management]** menu.
 1. Select **[!UICONTROL Create new connection]**.
-1. Specify required **[!UICONTROL Connection name]**, **[!UICONTROL Sandbox]**, **[!UICONTROL Average number of daily evens]**, and other optional parameters.
+1. Specify the required **[!UICONTROL Connection name]**, **[!UICONTROL Sandbox]**, **[!UICONTROL Average number of daily evens]**, and other optional parameters.
 1. Select **[!UICONTROL Add datasets]**.
 
    1. In the **[!UICONTROL Select datasets]** step of **[!UICONTROL Add datasets]**:
  
-      1. Select the dataset that contains the mirrored data. For example **[!UICONTROL event-data-mirror]**. The dataset has **[!UICONTROL Model]** as the **[!UICONTROL Dataset type]**.
+      1. Select the dataset that contains the mirrored data. For example: **[!UICONTROL event-data-mirror]**. The dataset has **[!UICONTROL Model]** as the **[!UICONTROL Dataset type]**.
    
          ![CJA - Connectons - Add dataset](assets/cja-add-dataset.png)
 
@@ -317,7 +317,7 @@ In the Customer Journey Analytics interface:
    1. Select **[!UICONTROL Add datasets]**.
 1. Select **[!UICONTROL Save]**.
 
-After you create a [connection](/help/connections/overview.md), you can perform various management tasks, such as [selecting and combining datasets](/help/connections/combined-dataset.md), [checking the status of a connection's datasets and the status of data ingestion](/help/connections/manage-connections.md), and more.
+After you create a [connection](/help/connections/overview.md), you can perform various management tasks. Such as [selecting and combining datasets](/help/connections/combined-dataset.md), [checking the status of a connection's datasets and the status of data ingestion](/help/connections/manage-connections.md), and more.
 
 
 ## Set up a data view
@@ -363,12 +363,12 @@ To create your data view:
 
    Leave the settings as they are and select **[!UICONTROL Save and finish]**.
 
-See [Data views overview](../data-views/data-views.md) for more information on how to create and edit a data view, what components are available for you to use in your data view and how to use segment and sessions settings.
+See [Data views overview](../data-views/data-views.md) for more information on how to create and edit a data view. And what components are available for you to use in your data view and how to use segment and sessions settings.
 
 
 ## Set up a project 
 
-Analysis Workspace is a flexible browser tool that allows you to quickly build analyses and share insights based on your data. You use Workspace projects to combine data components, tables, and visualizations to craft your analysis and share with anyone in your organization.
+Analysis Workspace is a flexible browser tool that allows you to build analyses quickly and share insights based on your data. You use Workspace projects to combine data components, tables, and visualizations to craft your analysis and share with anyone in your organization.
 
 To create your project:
 
@@ -384,7 +384,7 @@ To create your project:
    1. Select **[!UICONTROL Create]**.
 
 
-4. In the **[!UICONTROL New project]** workspace, ensure your [data view](#set-up-a-data-view) is selected. That data view links to the [connection](#set-up-a-connection) that contains the mirrored data.
+4. In the **[!UICONTROL New project]** workspace, ensure that your [data view](#set-up-a-data-view) is selected. That data view links to the [connection](#set-up-a-connection) that contains the mirrored data.
 
 5. To create your first report, drag and drop dimensions and metrics on the **[!UICONTROL Freeform table]** in the **[!UICONTROL Freeform]** panel. For example, drag **[!UICONTROL Revenue Amount (Numeric)]** onto **[!UICONTROL _Drag a metric here_]**. And drag **[!UICONTROL PersonId]** and drop the field on the first column header. Make some other adjustments as you see fit.
 
@@ -396,4 +396,4 @@ See [Analysis Workspace overview](../analysis-workspace/home.md) for more inform
 
 >[!SUCCESS]
 >
->You have completed all the steps. Starting by defining what mirrored data you want to collect (schema) from a data warehouse native solution and where to store that data (dataset) in Adobe Experience Platform, you configured the appropriate source connector to provide you with the mirrored data. You defined a connection in Customer Journey Analytics to use the mirrored event data and (optionally) other data. Your data view definition allowed you to specify which dimension and metrics to use from the mirrored data and finally you created your first project visualizing and analyzing your mirrored data.
+>You have completed all the steps. You started by defining what mirrored data you wanted to collect (schema) from a data warehouse native solution. And where to store that data (dataset) in Experience Platform. You configured the appropriate source connector to provide you with the mirrored data in Experience Platform. You defined a connection in Customer Journey Analytics to use the mirrored event data and (optionally) other data. Your data view definition allowed you to specify which dimension and metrics to use from the mirrored data. And finally you created your first project visualizing and analyzing your mirrored data.
