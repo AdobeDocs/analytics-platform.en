@@ -159,9 +159,9 @@ Finally, let's look at the revenue by product category.
 
 ## Access Data Insights Agent across Experience Cloud applications
 
-Adobe Experience Platform Agent Orchestrator allows you to access the functionality of Data Insights Agent in any Adobe Experience Cloud application. 
+Adobe Experience Platform Agent Orchestrator allows you to access the functionality of Data Insights Agent in multiple Adobe Experience Cloud applications, such as Adobe Journey Optimizer and Real-Time CDP. 
 
-Agent Orchestrator interprets your request, determines which specialized agents are needed, and orchestrates them to deliver the right response. It keeps track of context across multi-turn interactions, so you can build on prior queries naturally, and it synthesizes the outputs of multiple agents into a single clear response. 
+Agent Orchestrator interprets your request, determines which specialized agents are needed, and orchestrates them to deliver the right response. It keeps track of context across multi-turn interactions, so you can build on prior queries naturally. 
 
 For more information, see [Adobe Experience Platform Agent Orchestrator](http://www.adobe.com/go/agent-orchestrator-home).
 
