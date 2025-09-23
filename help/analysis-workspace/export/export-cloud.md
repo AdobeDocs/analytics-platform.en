@@ -50,15 +50,6 @@ Use the following process when exporting full tables to the cloud:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="export-manifest"
->title="Manifest file"
->abstract="When enabled, a manifest file is included with any successful export delivery. The manifest file enables you to confirm that all files were delivered successfully."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
 >id="cja-export-details"
 >title="Details"
 >abstract="Specify a name for the export. You can also add a description and any tags. This information helps to identify the export in the exports table and in email notifications."
@@ -72,7 +63,16 @@ Use the following process when exporting full tables to the cloud:
 >title="Data structure"
 >abstract="This is the Freeform table that you are exporting. You can modify the data structure by dragging components from the left panel to the table. You can apply a filter by dragging a component into the filter area. The table dynamically updates as you add components to the canvas."
 
-<!-- markdownlint-enable MD034 -->ß
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="export-manifest"
+>title="Manifest file"
+>abstract="When selected, a manifest file is included with any successful export delivery. The manifest file enables you to confirm that all files were delivered successfully."
+
+<!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
 
@@ -89,7 +89,18 @@ Use the following process when exporting full tables to the cloud:
 >[!CONTEXTUALHELP]
 >id="cja-export-destination"
 >title="Destination"
->abstract="Select the cloud account and location where you want the data to be sent. You can choose an existing account and location or select 'Add new' to create them. Specify users and groups to notify about failed or expiring exports."
+>abstract="Select the cloud account and location where you want the data to be sent. You can choose an existing account and location or select 'Add new' to create them.  
+>
+>Specify users and groups to notify about failed or expiring exports. "
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-file-format"
+>title="File format"
+>abstract="When choosing the Parquet file format, some special characters included in component names are replaced with an underscore (_). See the link below for a complete list of characters that are replaced."
 
 <!-- markdownlint-enable MD034 -->
 
