@@ -11,6 +11,8 @@ exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
 ---
 # Mirror and use model-based data
 
+{{release-limited-testing}}
+
 This quick start guide explains how to use the [Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md) capability to mirror model-based data from a data warehouse native solution in Adobe Experience Platform. And then use that data in Customer Journey Analytics.
 
 To accomplish this use case, you need to:
@@ -174,7 +176,7 @@ Define a schema that models this data. To set up your schema:
 
      ![Person descriptor](assets/platform-schema-personid.png)
 
-   * The **[!UICONTROL timestamp]** field is configured, together with **[!UICONTROL personid]** field as the **[!UICONTROL Primary ke]**y. The **[!UICONTROL timestamp]** field is also configured as **[!UICONTROL Timestamp descriptor]**. You only need to define a field as **[!UICONTROL Timestamp descriptor]** for time series model-based data.
+   * The **[!UICONTROL timestamp]** field is configured, together with **[!UICONTROL personid]** field as the **[!UICONTROL Primary key]**. The **[!UICONTROL timestamp]** field is also configured as **[!UICONTROL Timestamp descriptor]**. You only need to define a field as **[!UICONTROL Timestamp descriptor]** for time series model-based data.
 
      ![Timestamp descriptor](assets/platform-schema-timestamp.png)
 

@@ -11,6 +11,8 @@ exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
 ---
 # Configure Experience Platform
 
+{{release-limited-testing}}
+
 The Experience Platform Data Mirror capability for Customer Journey Analytics requires the proper configuration of several Experience Platform components:
 
 * schema
@@ -84,5 +86,5 @@ Once you finished the setup of the source connector, a dataflow is created. From
 
 >[!MORELIKETHIS]
 >
->[Data Mirror quick start guide: Mirror and use model-based data](data-mirror.md)
+>[Data Mirror quick start guide: Mirror and use model-based data](model-based.md)
 >
