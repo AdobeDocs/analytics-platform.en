@@ -104,7 +104,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
 
 + Data ingestion {#cja-data-ingestion}
-  + [Data ingestion overview](../data-ingestion/data-ingestion.md)
+  + [Overview](../data-ingestion/data-ingestion.md)
   + Ingest and use quick start guides{#ingest-use-guides}
     + [Adobe Analytics](../data-ingestion/analytics.md)
     + Experience Platform Edge Network {#edge-network}
@@ -114,6 +114,15 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Batch data](../data-ingestion/batch.md)
     + [Streaming data](../data-ingestion/streaming.md)
     + [Source connectors](../data-ingestion/sources.md)
+    + [Ad hoc data](/help/data-ingestion/adhoc.md)
+
++ Data mirror {#cja-data-mirror}
+  + [Overview](/help/data-mirror/data-mirror.md)
+  + Configure {#configure}
+    + [Data warehouse native solutions](/help/data-mirror/datawarehouse.md)
+    + [Experience Platform](/help/data-mirror/aep.md)
+    + [Customer Journey Analytics](/help/data-mirror/cja.md)
+  + [Data Mirror quick start guide](/help/data-mirror/model-based.md)
 
 + Connections {#cja-connections}
   + [Connections overview](../connections/overview.md)
