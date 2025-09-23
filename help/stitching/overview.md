@@ -63,6 +63,20 @@ Ensure you do not confuse stitching with:
 
 - The join of two datasets. In Customer Journey Analytics, a join is often used for lookups or classifications in Analysis Workspace. Although stitching uses join functionality, the process itself involves more than joins.
 
+
+## Journey Optimizer datasets
+
+Stitching supports the following automatically generated Journey Optimizer datasets:
+
+- AJO Journey Step Events
+- AJO Inbound Activity Event Dataset
+- AJO Surfaces Dataset
+- AJO Message Feedback Event Dataset* AJO Push Tracking Experience Event Dataset
+- AJO Email Tracking Experience Event Dataset
+- AJO BCC Feedback Event Dataset
+- AJO Live Activities Feedback Event Dataset
+- AJO ExD Decision Event Dataset
+
 >[!MORELIKETHIS]
 >
 >[Field based stitching](fbs.md)

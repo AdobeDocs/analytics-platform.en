@@ -269,7 +269,7 @@ The datasets table displays the following columns for each dataset:
 | **[!UICONTROL Batches added]** | The number of batches that have been added to a connection during the selected date range. |
 | **[!UICONTROL Last added]** | The timestamp of the latest batch that has been added to a connection.  |
 | **[!UICONTROL Data source type]** | The source type. You define the source type when you add a dataset to a connection. |
-| **[!UICONTROL Dataset type]** | The [dataset type](create-connection.md#dataset-types). Type can be [!UICONTROL Event], [!UICONTROL Profile], [!UICONTROL Lookup], or [!UICONTROL Summary]. |
+| **[!UICONTROL Dataset type]** | The [dataset type](create-connection.md#dataset-types). Type can be **[!UICONTROL Event]**, **[!UICONTROL Profile]**, **[!UICONTROL Lookup]**, **[!UICONTROL Summary]**. An adhoc or model-based dataset is identifed by **[!UICONTROL (Adhoc)]** or **[!UICONTROL (Model)]**. For example, **[!UICONTROL Event (Adhoc)]** or **[!UICONTROL Lookup (Model)]**.  |
 | **[!UICONTROL Schema]** | The Experience Platform schema that the dataset is based on.  |
 | **[!UICONTROL Import new data]** | The status of importing new data for the dataset: <p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** if dataset is configured to import new data, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** if dataset is configured not to import new data import. |
 | **[!UICONTROL Transform data]** | The transformation status of applicable B2B lookup datasets. See [Transform datasets for B2B lookups](transform-datasets-b2b-lookups.md) for more information.<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** for applicable datasets enabled for transformation, <p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** for applicable datasets not enabled for transformation, and<p>**[!UICONTROL N/A]** for all other datasets, not applicable for transformation.| 
@@ -325,7 +325,7 @@ When a dataset row is selected in the datasets table, a panel on the right side 
 | **[!UICONTROL Import new data]** | The status of importing new data for the dataset: <p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** if the dataset is configured to import new data, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** if the dataset is configured not to import new data.  |
 | **[!UICONTROL Backfill data]** | The status of backfill data for the dataset.<p>![Status red](assets/status-red.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills,<p>![Status red](assets/status-orange.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of processing backfills,<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of backfills completed, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no backfills are configured.<p>To show a dialog with an overview of the past backfills for the dataset, select <img src="./assets/pastbackfill.svg" alt="Past backfills" width="15"/> **[!UICONTROL Past backfills]**. |
 | **[!UICONTROL Data source type]** | Data source type as defined when the dataset was added to the connection. |
-| **[!UICONTROL Dataset type]** | The [dataset type](create-connection.md#dataset-types). |
+| **[!UICONTROL Dataset type]** | The [dataset type](create-connection.md#dataset-types). Type can be **[!UICONTROL Event]**, **[!UICONTROL Profile]**, **[!UICONTROL Lookup]**, **[!UICONTROL Summary]**. An adhoc or model-based dataset is identifed by **[!UICONTROL (Adhoc)]** or **[!UICONTROL (Model)]**. For example, **[!UICONTROL Event (Adhoc)]** or **[!UICONTROL Lookup (Model)]**. |
 | **[!UICONTROL Schema]** | The Experience Platform schema that this dataset is based on. |
 | **[!UICONTROL Dataset ID]** | The dataset ID, as generated in Experience Platform. |
 
@@ -370,18 +370,18 @@ When a dataset row is selected in the datasets table, a panel on the right side 
 >[!CONTEXTUALHELP]
 >id="connections_corereportablerows"
 >title="Core reportable rows"
->abstract="The total number of rows available for the past 13 months. For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024."
+>abstract="The total number of rows available over the past 13 months for the current month, with a percentage change compared to the previous month.  For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024."
 
 >[!CONTEXTUALHELP]
 >id="connections_historicalreportablerows"
 >title="Historical reportable rows"
->abstract="The total number of rows available for the period older than 13 months. For example, on February 1, 2024, the number shows the total rows available with an event timestamp older than January 2023."
+>abstract="The total number of rows available over a period older than 13 months for the current month, with a percentage change compared to the previous month. For example, on February 1, 2024, the number shows the total rows available with an event timestamp older than January 2023."
 
 
 >[!CONTEXTUALHELP]
 >id="connections_averagerowsize"
 >title="Average row size"
->abstract="The average amount of storage consumed by each row of data ingested and stored in Customer Journey Analytics (in KB) for the current nonth, with a percentage change compared to the previous month."
+>abstract="The average amount of storage consumed by each row of data ingested and stored for the current month (in kB), with a percentage change compared to the previous month."
 
 
 >[!CONTEXTUALHELP]
@@ -414,36 +414,36 @@ The Usage interface uses the following metrics:
 
 | Metric name | Description |
 |---|---|
-| Historical reportable rows | Count of rows for the period older than 13 months. |
-| Core reportable rows | Count of rows over the last 13 months. | 
-| Ingested rows | How many rows are ingested for the specific period. |
-| Reportable rows | How many rows of data do you have as part of the connection for the specific period. |
-| Cumulative rows | How many rows are ingested up until the specific month. |
+| **Historical reportable rows** | Count of rows for the period older than 13 months. |
+| **Core reportable rows** | Count of rows over the last 13 months. | 
+| **Core data volume** | Total amount of data stored on disk. |
+| **Average row size** | Average amount of storage consumed for each row of data ingested and stored. |
+| **Ingested rows** | How many rows are ingested for the specific period. |
+| **Reportable rows** | How many rows of data do you have as part of the connection for the specific period. |
+| **Cumulative rows** | How many rows are ingested up until the specific month. |
 
 >[!NOTE]
 >
 >Data is collected, starting from July 2024 for the core, historical, and total records. Reach out to your account manager for earlier historical data.
 >
 
-
 The Usage interface consists of two panels:
 
-* The **[!UICONTROL Key usage metrics]** panel: provides core and historical data reportable rows. The panel also tracks percentage changes compared to the previous month for both core and historical data rows.
+* The **[!UICONTROL Key usage metrics]** panel that displays:
   
-  The panel displays a visualization that contains: 
+  * Four summary visualizations that display total and percentual changes from the previous month for:
+
+    * **[!UICONTROL Core data reportable rows]**. The total number of rows available over the past 13 months for the current month, with a percentage change compared to the previous month. For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024.
+    * **[!UICONTROL Historical data reportable rows]**. The total number of rows available over a period older than 13 months for the current month, with a percentage change compared to the previous month. For example, on February 1, 2024, the number shows the total rows available with an event timestamp older than January 2023.
+    * **[!UICONTROL Core data volume]**. The total amount of data stored on disk that is timestamped for the current month (in TB), with a percentage change compared to the previous month.
+    * **[!UICONTROL Average row size]**. The average amount of storage consumed by each row of data ingested and stored for the current month (in kB), with a percentage change compared to the previous month.
   
-  * **[!UICONTROL Core data reportable rows]**.
-
-    How many reportable rows do you have over the last 13 months. The summary number is the number of core reportable rows (for example, 741M) for the last month (for example, December 2024).
-    
-  * **[!UICONTROL Historical data reportable rows]**.
-
-    How many reportable rows do you have for the period older than 13 months. The summary number is the number of historical reportable rows (for example, 127M) for the last month (for example, December 2024). 
-    
-  When you hover over any stacked bar in the visualization, a popup shows the number of rows for that specific part of the bar (for example).
+  * A stacked vertical bar visualization that displays the **[!UICONTROL Core and Historical data reportable rows]** for the last 13 months. 
+  
+    When you hover over any stacked bar in the visualization, a popup shows the number of rows for that specific part of the bar. In the example below, the core data reportable rows are shown for the current month (August 2025: 936M (936,347,325)).
 
 
-  ![Key Usage Metrics](assets/usage-key-usage-metrics.png)
+    ![Key Usage Metrics](assets/usage-key-usage-metrics.png)
 
 * A combined panel, showing three subpanels for:
 
