@@ -51,5 +51,5 @@ The Experience Platform Data Mirror for Customer Journey Analytics capability is
 
 >[!MORELIKETHIS]
 >
->[Data Mirror quick start guide: Mirror and use model-based data](data-mirror.md)
+>[Data Mirror quick start guide: Mirror and use model-based data](model-based.md)
 >

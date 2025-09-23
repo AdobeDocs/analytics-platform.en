@@ -11,6 +11,8 @@ exl-id: f7687bba-efbe-4a2c-8ad1-cf216554a1e9
 ---
 # Configure Customer Journey Analytics
 
+{{release-limited-testing}}
+
 To use the Experience Platform Data Mirror feature for Customer Journey Analytics, you have to create or update connections, data views and workspace projects to use model-based data.
 
 ## Connections
@@ -31,5 +33,5 @@ Set up Workspace projects that use metrics and dimensions from your model-based 
 
 >[!MORELIKETHIS]
 >
->[Data Mirror quick start guide: Mirror and use model-based data](data-mirror.md)
+>[Data Mirror quick start guide: Mirror and use model-based data](model-based.md)
 >
