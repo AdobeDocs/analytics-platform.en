@@ -10,7 +10,7 @@ badgePremium: label="Beta"
 ---
 # Configure Data warehouse native solutions
 
-To support Experience Platform Data Mirror for Customer Journey Analytics, the data you want to use from the three supported data warehouse native solutions ([Azure Databricks](#dnl-azure-databricks), [Google BigQuery](#dnl-google-bigquery), [Snowflake](#dnl-snowflake)) needs enablement for change data capture. 
+To support Experience Platform Data Mirror for Customer Journey Analytics, the data you want to use from the three supported data warehouse native solutions ([[!DNL Azure Databricks]](#azure-databricks), [[!DNL Google BigQuery]](#google-bigquery), [[!DNL Snowflake]](#snowflake)) needs enablement for change data capture. 
 
 
 ## [!DNL Azure Databricks]
@@ -77,3 +77,9 @@ Read the following documentation for steps on how to enable change data capture 
 
 * [Create a [!DNL Snowflake] base connection](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
 * [Create a source connection for a database](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+
+
+>[!MORELIKETHIS]
+>
+>[Data Mirror quick start guide: Mirror and use model-based data](data-mirror.md)
+>

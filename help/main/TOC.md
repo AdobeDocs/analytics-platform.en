@@ -115,7 +115,6 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Streaming data](../data-ingestion/streaming.md)
     + [Source connectors](../data-ingestion/sources.md)
     + [Ad hoc data](/help/data-ingestion/adhoc.md)
-    + [Model-based data](/help/data-ingestion/model-based.md)
 
 + Data mirror {#cja-data-mirror}
   + [Overview](/help/data-mirror/data-mirror.md)
@@ -123,6 +122,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Data warehouse native solutions](/help/data-mirror/datawarehouse.md)
     + [Experience Platform](/help/data-mirror/aep.md)
     + [Customer Journey Analytics](/help/data-mirror/cja.md)
+  + [Data Mirror quick start guide](/help/data-mirror/model-based.md)
 
 + Connections {#cja-connections}
   + [Connections overview](../connections/overview.md)
