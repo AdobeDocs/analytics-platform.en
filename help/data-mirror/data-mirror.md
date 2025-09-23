@@ -7,6 +7,7 @@ role: Admin
 hide: yes
 hidefromtoc: yes
 badgePremium: label="Beta"
+exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
 ---
 # Experience Platform Data Mirror overview
 

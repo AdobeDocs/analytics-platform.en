@@ -6,8 +6,8 @@ feature: Basics
 role: Admin
 hide: yes
 hidefromtoc: yes
+exl-id: 17b5842f-dc81-481f-8b21-dc90a133adcf
 ---
-
 # Ingest and use ad hoc data
 
 This quick start guide explains how you can ingest ad hoc data into Adobe Experience Platform and then use that data in Customer Journey Analytics.

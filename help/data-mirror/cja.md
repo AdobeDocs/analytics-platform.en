@@ -7,8 +7,8 @@ role: Admin
 hide: yes
 hidefromtoc: yes
 badgePremium: label="Beta"
+exl-id: f7687bba-efbe-4a2c-8ad1-cf216554a1e9
 ---
-
 # Configure Customer Journey Analytics
 
 To use the Experience Platform Data Mirror feature for Customer Journey Analytics, you have to create or update connections, data views and workspace projects to use model-based data.

@@ -7,6 +7,7 @@ role: Admin
 hide: yes
 hidefromtoc: yes
 badgePremium: label="Beta"
+exl-id: 92cffcc5-d7a7-47f5-869d-1fc665594bf4
 ---
 # Configure Data warehouse native solutions
 
