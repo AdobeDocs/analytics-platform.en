@@ -128,7 +128,7 @@ To export full tables from Analysis Workspace:
    | Report window | Select the reporting time-frame to include in each export file. Options include [!UICONTROL **Today**], **[!UICONTROL Yesterday]**, **[!UICONTROL Last 7 days]**, **[!UICONTROL Last 30 days]**, **[!UICONTROL This week]**, and **[!UICONTROL This month]**. <p>This option is not displayed when the **[!UICONTROL Export frequency]** is set to **[!UICONTROL Send now (one-time)]**. | 
    | One-time date range | Choose the one-time date range to include in the export file. <p>This option displays only when the **[!UICONTROL Export frequency]** is set to **[!UICONTROL Send now (one-time)]**. | 
    | Clear all | Clears the contents of the data table. This allows you to start building a new table directly within the New full table export dialog.  | 
-   | File format | Choose whether the exported data should be in .csv, .json, or Parquet format. <p>When choosing the Parquet file format, any of the following characters included in component names are replaced with an underscore (_): <ul><li>' ' - ASCII space</li><li>',' - ASCII comma</li><li>';' - ASCII colon</li><li>'{' or '}'  - ASCII open/close brace</li><li>'(' or ')' - ASCII open/close parenthesis</li><li>'\n' - ASCII newline</li><li>'\t' - ASCII tab</li><li>'=' - ASCII equals</li></ul></p> |
+   | File format | Choose whether the exported data should be in .csv, .json, or .parquet format. <p>When choosing the Parquet file format, any of the following characters included in component names are replaced with an underscore (_): <ul><li>' ' - ASCII space</li><li>',' - ASCII comma</li><li>';' - ASCII colon</li><li>'{' or '}'  - ASCII open/close brace</li><li>'(' or ')' - ASCII open/close parenthesis</li><li>'\n' - ASCII newline</li><li>'\t' - ASCII tab</li><li>'=' - ASCII equals</li></ul></p> |
    | Include manifest file | When enabled, a manifest file is included with any successful export delivery. The manifest file enables you to confirm that all files were delivered successfully. It includes the following information:<ul><li>A list of all files that were delivered</li><li>The MD5 checksum of each file</li></ul><p>Exported data is available as a compressed file in the cloud destination that you configured, as described in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md) and [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).</p><p>The filename of the compressed file is as follows, depending on whether you chose CSV or JSON as the file format:</p><ul><li>`cja-export-{reportInstanceId}-{idx}.csv.gz`</li><li>`cja-export-{reportInstanceId}-{idx}.json.gz`</li></ul><p>You choose the file format in the **[!UICONTROL *File format**] field above.</p>|
    | Frequency | Set the schedule for how often the export should occur. <p>You can choose [!UICONTROL **Send now (one-time)**] to send the export only once. When you select this option, the export is initiated immediately.<p>Or, you can choose to send the export on a defined schedule. When sending on a schedule, options include **[!UICONTROL Daily]**, **[!UICONTROL Weekly]**, **[!UICONTROL Monthly by day of the week]**, **[!UICONTROL Monthly by day of the month]**, **[!UICONTROL Yearly by day of the month]**, and **[!UICONTROL Yearly by specific date]**. </p><p>When selecting an export frequency, consider the following:</p><ul><li>The options in the **[!UICONTROL Lookback window]** field change depending on what you select here.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>Additional configuration fields display depending on the option that you choose.</li></ul>  | 
    | Starting on  | The day and time that the scheduled export should begin. <p>This option is available only when choosing a scheduled export frequency.</p> | 
@@ -206,7 +206,7 @@ The following features are not supported and are automatically removed from full
 
 The following components are not supported, and Analysis Workspace prompts you to remove them from your table when performing a full-table export:
 
-* Some calculated metrics that use functions in the metric definition (see [Unsupported calculated metrics](#unsupported-calculated-metrics) for more information)
+* Some calculated metrics that use functions in the metric definition (see [Calculated metric support](#calculated-metric-support) for more information)
 * Components that have been restricted by an administrator from being exported (see the *Segment on Data Governance policies in data views* section in [Labels and policies](/help/data-views/data-governance.md) for more information)
 * Any dimension that meets all of the following criteria:
   * Is created from a field that is part of an [array of objects](/help/use-cases/object-arrays.md) (similar to multi-value variables in Adobe Analytics).
@@ -223,9 +223,67 @@ The following components are not supported, and Analysis Workspace prompts you t
   * Date ranges
   * Segments
 
-## Unsupported calculated metrics
+## Calculated metric support
 
+The following sections list which calculated metrics are supported when exporting full tables:
 
+### Supported basic functions:
+
+* Column Sum
+* Square Root
+* Exponent
+* Modulo
+* Row Sum
+* Power Operator
+* Row Count
+* Count
+* Column Maximum
+
+### Unsupported basic functions
+
+* Row Min 
+* Row Max 
+* Variance 
+* Mean 
+* Quartile
+* Percentile
+* Median 
+* Standard Deviation
+
+### Supported advanced functions
+
+Base algebra functions: 
+
+* Log Base 10
+* ln <!--???-->
+* Cube Root
+* Floor
+* Ceiling
+
+Trigonometry functions:
+
+* Pi
+* Tangent
+* Sine
+* Cosine
+* Arc Tangent
+* Arc Site
+* Arc Cosine
+* sinh <!--???-->
+* tanh <!--???-->
+* cosh <!--???-->
+
+Boolean logic functions:
+
+* If
+* Comparison <!--???-->
+* Sample Variance
+* Cumulative
+* Cumulative (Average)
+* Exponential regression: Correlation coefficient
+* Exponential regression: Predicted Y
+* Exponential regression: Intercept
+* Exponential regression: Slope
 
 ## Attribution behavior
 
