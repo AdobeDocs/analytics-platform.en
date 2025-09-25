@@ -15,7 +15,7 @@ exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
 
 Data Mirror is an Experience Platform capability that enables row-level change ingestion from external databases into the data lake using model-based schemas. It preserves data relationships, enforces uniqueness, and supports versioning without requiring upstream extract, transform, load (ETL) processes.
 
-Use Data Mirror to synchronize inserts, updates, and deletes (mutable data) from external data warehouse native solutions such as [!DNL Snowflake], [!DNL Azure Databricks], or [!DNL Google BigQuery] directly into Experience Platform. Data Mirror helps you preserve your existing database model structure and data integrity as you bring data into Experience Platform.
+Use Experience Platform Data Mirror to synchronize inserts, updates, and deletes (mutable data) from external data warehouse native solutions such as [!DNL Snowflake], [!DNL Azure Databricks], or [!DNL Google BigQuery] directly into Experience Platform. Data Mirror helps you preserve your existing database model structure and data integrity as you bring data into Experience Platform.
 
 
 ## Capabilities and benefits
@@ -39,12 +39,12 @@ See also the Experience Platform documentation on Data Mirror.
 
 >[!NOTE]
 >
->The Experience Platform Data Mirror capability for Customer Journey Analytics is available in a **public beta** until March 25, 2026. During the beta period, change data capture (CDC) updates are limited to a 10 million daily change rows entitlement for Customer Journey Analytics. Adobe reserves the right to terminate beta access to Experience Platform Data Mirror functionality should your organization exceed this limit. For additional information about the feature, including billing implications, please see this section of the Experience League documentation.
+>Experience Platform Data Mirror for Customer Journey Analytics is available in a **public beta** until March 25, 2026. During the beta period, change data capture (CDC) updates are limited to a 10 million daily change rows entitlement for Customer Journey Analytics. Adobe reserves the right to terminate beta access to Experience Platform Data Mirror functionality should your organization exceed this limit. For additional information, including billing implications, see this section of the Experience League documentation.
 >
 
-The Experience Platform Data Mirror for Customer Journey Analytics capability is available for selected data warehouse native solutions ([!DNL Azure Databricks], [!DNL Google BigQuery], and [!DNL Snowflake]). The Customer Journey Analytics version of the Data Mirror capability requires a proper setup and configuration of several components:
+Experience Platform Data Mirror for Customer Journey Analytics is available for selected data warehouse native solutions ([!DNL Azure Databricks], [!DNL Google BigQuery], and [!DNL Snowflake]). The Customer Journey Analytics version of Experience Platform Data Mirror requires a proper configuration of the following applications or components:
 
-* [Data warehouse native solution](datawarehouse.md)
+* [Data warehouse native solutions](datawarehouse.md)
 * [Experience Platform](aep.md)
 * [Customer Journey Analytics](cja.md)
 
