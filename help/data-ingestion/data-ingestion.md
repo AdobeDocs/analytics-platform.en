@@ -27,17 +27,17 @@ This architecture illustrates how Custoner Journey Analytics allows you to:
 
 The datasets in the architecture can originate from various sources: 
 
-- batch data, 
+* batch data, 
 
-- streaming data, 
+* streaming data, 
 
-- data from a current Adobe Analytics deployment, 
+* data from a current Adobe Analytics deployment, 
 
-- data from tracking your website / mobile app using the Adobe Experience Platform Web/Mobile SDK,
+* data from tracking your website / mobile app using the Adobe Experience Platform Web/Mobile SDK,
 
-- data from tracking a desktop application, console game, set-top box or IoT device using the Adobe Experience Platform Edge Network Server API, or
+* data from tracking a desktop application, console game, set-top box or IoT device using the Adobe Experience Platform Edge Network Server API, or
 
-- data coming from a third-party data provider for which Adobe provides a source connector. 
+* data coming from a third-party data provider for which Adobe provides a source connector. 
 
 And you can have many of these datasets.
 
@@ -49,11 +49,11 @@ You can ingest your event data in Customer Journey Analytics within 90 minutes (
 
 Note that this capability differs based on the SKU package your company purchased:
 
-- Priority Ingestion Basic: 24-hour-old data within 90-minute SLT processing (available for **CJA Foundation** and **CJA Select**)
+* Priority Ingestion Basic: 24-hour-old data within 90-minute SLT processing (available for **CJA Foundation** and **CJA Select**)
 
-- Priority Ingestion Intermediate: 72-hour-old data within 90-minute SLT processing (available for **CJA Prime**)
+* Priority Ingestion Intermediate: 72-hour-old data within 90-minute SLT processing (available for **CJA Prime**)
 
-- Priority Ingestion Advanced: 1-week-old data within 90-minute SLT processing (available for **CJA Ultimate**)
+* Priority Ingestion Advanced: 1-week-old data within 90-minute SLT processing (available for **CJA Ultimate**)
 
 ## Ingest and use data from traditional Adobe Analytics
 
