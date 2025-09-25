@@ -225,7 +225,7 @@ The following components are not supported, and Analysis Workspace prompts you t
 
 ## Unsupported calculated metric functions
 
-Calculated metrics that use the following basic and advanced functions are not supported when exporting full tables:
+The following functions are not supported, and Analysis Workspace prompts you to remove any calculated metrics that use them from your table when performing a full-table export:
 
 ### Unsupported basic functions
 

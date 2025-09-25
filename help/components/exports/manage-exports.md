@@ -62,7 +62,7 @@ You can edit an export's properties, format, scheduling, and location informatio
 
 ## Renew an export
 
-You can renew an export before or after it expires. The export is renewed for 1 year from the date you renew it.
+You can renew one or more exports before or after they expire. The exports are renewed for 1 year from the date you renew them.
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
@@ -117,6 +117,16 @@ When you apply tags to an export, you can view those tags in the [!UICONTROL Tag
    Any common tags between the selected exports are shown in the tag dialog. <!-- what happens if one export has a tag and another doesn't? Is the tag removed if you don't select it? I'm guessing not, but maybe check -->
 
 1. Select [!UICONTROL **Apply tags**].
+
+## Cancel an export
+
+You can cancel one or more exports that are currently running. <!--anything else to say about this?-->
+
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+
+1. On the [!UICONTROL **Exports**] tab, select the checkbox next to one or more exports that you want to cancel.
+
+1. Select [!UICONTROL **Cancel**].
 
 ## Delete an export
 
