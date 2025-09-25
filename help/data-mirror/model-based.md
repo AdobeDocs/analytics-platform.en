@@ -4,8 +4,6 @@ description: Explain how to mirror and use model-based data in Customer Journey 
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-hide: yes
-hidefromtoc: yes
 badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
 ---

@@ -4,8 +4,6 @@ description: Explain how to ingest and use ad hoc in Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-hide: yes
-hidefromtoc: yes
 exl-id: 17b5842f-dc81-481f-8b21-dc90a133adcf
 ---
 # Ingest and use ad hoc data

@@ -4,8 +4,6 @@ description: Understand how to synchronize data between data warehouse native so
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-hide: yes
-hidefromtoc: yes
 badgePremium: label="Beta"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
 ---
@@ -48,4 +46,4 @@ Experience Platform Data Mirror for Customer Journey Analytics is available for 
 >
 >[Data Mirror quick start guide: Mirror and use model-based data](model-based.md)
 >[Data Mirror (Experience Platform documentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
->
+>[Model-based schemas (Experience Platform documentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)
