@@ -100,6 +100,12 @@ You have data available from a source that is supported by a source connector. S
 
 See [Ingest and use data using source connectors](./sources.md) for more information.
 
+## Ingest and use ad hoc data
+
+You have ad hoc data available that only require a single dataset in Experience Platform and do not require the configuration of an Experience Data Model (XDM) schema. This scenario is referred to as an ad hoc schema. Ad hoc schemas are used in various data ingestion workflows for Experience Platform, including ingesting CSV files and creating certain kinds of source connections.
+
+See [Ingest and use ad hoc data](./adhoc.md)
+
 >[!MORELIKETHIS]
 >
 >Blog: [A Closer Look at Data Processing & Ingestion in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
