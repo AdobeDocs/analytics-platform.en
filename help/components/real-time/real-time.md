@@ -2,10 +2,7 @@
 description: Understand real-time reporting capabilities in Customer Journey Analytics.
 title: Real-Time Reporting Overview
 feature: Real-time Reporting
-hide: yes
-hidefromtoc: yes
 role: User
-badgePremium: label="Beta"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
 ---
 # Real-time reporting overview
