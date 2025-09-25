@@ -23,7 +23,7 @@ Find below details that you should consider when configuring each of these compo
 
 ## Schema
 
-You need to create a model-based schema that models the data warehouse native table you want to mirror. When you construct the model-based schema, ensure that the following requirements are met:
+You need to create a [model-based schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based){target="_blank"} that models the data warehouse native table you want to mirror. When you construct the model-based schema, ensure that the following requirements are met:
 
 * When prompted for the type of model-based schema, ensure you select the manual option.
 * Select the appropriate schema for the type of data. Note that Experience Platform Data Mirror is mostly used for time series data (for example, event data).
@@ -87,4 +87,5 @@ Once you finished the setup of the source connector, a dataflow is created. From
 >[!MORELIKETHIS]
 >
 >[Data Mirror quick start guide: Mirror and use model-based data](model-based.md)
->
+>[Data Mirror (Experience Platform documentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>[Model-based schemas (Experience Platform documentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)
