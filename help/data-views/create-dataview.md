@@ -172,7 +172,6 @@ You can filter ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_1
 
 ### Included components {#included-components}
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_custom"
 >title="Custom labels"
