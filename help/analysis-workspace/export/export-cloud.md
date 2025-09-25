@@ -206,7 +206,7 @@ The following features are not supported and are automatically removed from full
 
 The following components are not supported, and Analysis Workspace prompts you to remove them from your table when performing a full-table export:
 
-* Some calculated metrics that use functions in the metric definition (see [Calculated metric support](#calculated-metric-support) for more information)
+* Calculated metrics that use unsupported functions in the metric definition (see [Unsupported calculated metric functions](#unsupported-calculated-metric-functions) for more information)
 * Components that have been restricted by an administrator from being exported (see the *Segment on Data Governance policies in data views* section in [Labels and policies](/help/data-views/data-governance.md) for more information)
 * Any dimension that meets all of the following criteria:
   * Is created from a field that is part of an [array of objects](/help/use-cases/object-arrays.md) (similar to multi-value variables in Adobe Analytics).
@@ -222,6 +222,29 @@ The following components are not supported, and Analysis Workspace prompts you t
   * Metrics
   * Date ranges
   * Segments
+
+## Unsupported calculated metric functions
+
+Calculated metrics that use the following basic and advanced functions are not supported when exporting full tables:
+
+### Unsupported basic functions
+
+* Row Min 
+* Row Max 
+* Variance 
+* Mean 
+* Quartile
+* Percentile
+* Median 
+* Standard Deviation
+
+All other basic functions used in calculated metrics are supported when exporting full tables. For a complete list of basic functions, see [Basic functions](/help/components/calc-metrics/cm-functions.md).
+
+### Unsupported advanced functions
+
+* ...
+
+All other advanced functions used in calculated metrics are supported when exporting full tables. For a complete list of advanced functions, see [Advanced functions](/help/components/calc-metrics/cm-adv-functions.md).
 
 ## Calculated metric support
 
