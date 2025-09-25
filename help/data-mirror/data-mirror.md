@@ -4,8 +4,6 @@ description: Understand how to synchronize data between data warehouse native so
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-hide: yes
-hidefromtoc: yes
 badgePremium: label="Beta"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
 ---

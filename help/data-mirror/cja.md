@@ -4,8 +4,6 @@ description: Understand how to configure Customer Journey Analytics connections,
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-hide: yes
-hidefromtoc: yes
 badgePremium: label="Beta"
 exl-id: f7687bba-efbe-4a2c-8ad1-cf216554a1e9
 ---
