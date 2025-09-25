@@ -13,7 +13,7 @@ exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
 
 {{release-limited-testing}}
 
-This quick start guide explains how to use the [Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md) capability to mirror model-based data from a data warehouse native solution in Adobe Experience Platform. And then use that data in Customer Journey Analytics.
+This quick start guide explains how to use [Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md) to mirror model-based data from a data warehouse native solution in Adobe Experience Platform. And then use that data in Customer Journey Analytics.
 
 To accomplish this use case, you need to:
 
@@ -111,12 +111,12 @@ For Experience Platform Data Mirror for Customer Journey Analytics, the tables i
    SET OPTIONS (enable_change_history = TRUE);
    ```
 
-The data in the table in your data warehouse native solution is ready for the Experience Platform Data Mirror for Customer Journey Analytics capability.
+The data in the table in your data warehouse native solution is ready for Experience Platform Data Mirror for Customer Journey Analytics.
 
 
 ## Set up a schema
 
-To mirror data in Experience Platform, you first must define the schema for the data. All data that you want to mirror in Experience Platform and that uses the Experience Platform Data Mirror for Customer Journey Analytics capability must conform to a model-based schema.
+To mirror data in Experience Platform, you first must define the schema for the data. All data that you want to mirror in Experience Platform and that uses Experience Platform Data Mirror for Customer Journey Analytics must conform to a model-based schema.
 
 Define a schema that models this data. To set up your schema:
 
@@ -135,7 +135,7 @@ Define a schema that models this data. To set up your schema:
    1. Enter a **[!UICONTROL Description]**. For example: `Sample event feed schema for a model-based schema`.
    1. Select **[!UICONTROL Time series]** as the **[!UICONTROL Schema behavior]**. You select **[!UICONTROL Time series]** for time-series based data and **[!UICONTROL Record]** for record based data. The behavior defines the structure of the schema and the properties that are included. 
    
-      The Experience Platform Data Mirror for Customer Journey Analytics capability is mostly used for time series data (for example, event data).
+      Experience Platform Data Mirror for Customer Journey Analytics is mostly used for time series data (for example, event data).
 
       ![Schema configuration](assets/model-based-create-schema.png)
 
@@ -345,6 +345,8 @@ To create your data view:
       1. Select **[!UICONTROL Event datasets]**.
       1. Select **[!UICONTROL Adhoc & Model-based fields]**.
       1. Drag and drop fields from the model-based schemas onto **[!UICONTROL METRICS]** or **[!UICONTROL DIMENSIONS]**.
+
+         ![Add model-based field as components](assets/cja-add-dataset-folder-dv.png)
 
    1. Define derived fields for fields that do not have the proper type, are not in the proper format, or you want to modify for other reasons. For example,  for **[!UICONTROL Revenue Amount]**.
 
