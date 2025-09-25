@@ -12,7 +12,8 @@ exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
 # Configure Experience Platform
 
 {{release-limited-testing}}
- Experience Platform Data Mirror for Customer Journey Analytics requires the proper configuration of several Experience Platform components:
+
+Experience Platform Data Mirror for Customer Journey Analytics requires the proper configuration of several Experience Platform components:
 
 * schema
 * dataset
