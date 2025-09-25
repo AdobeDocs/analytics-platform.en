@@ -60,6 +60,20 @@ You can edit an export's properties, format, scheduling, and location informatio
 
 1. Update any of the available options. For information about each option, see [Export full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md).
 
+## Renew an export
+
+You can renew an export before or after it expires. The export is renewed for 1 year from the date you renew it.
+
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+
+1. On the [!UICONTROL **Exports**] tab, select the checkbox next to one or more exports that you want to renew.
+
+1. Select [!UICONTROL **Renew**].
+
+   The [!UICONTROL **Export full table**] dialog displays. <!--check process from here. -->
+
+1. Update any of the available options. For information about each option, see [Export full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md).
+
 ## Duplicate an export
 
 You can duplicate an existing export.
