@@ -29,8 +29,6 @@ Data Mirror provides the following essential capabilities for database synchroni
 
 Use Data Mirror to ingest changes directly from your source systems, enforce schema integrity, and make the data available for analytics, journey orchestration, and compliance workflows. Data Mirror eliminates complex upstream ETL processes and accelerates implementation by enabling direct mirroring of existing database models. This elimination can enhance data governance through precise control over deletions and data hygiene operations.
 
-<!-- Add link when AEP docs are ready... -->
-
 See also the Experience Platform documentation on Data Mirror.
 
 ## Data Mirror for Customer Journey Analytics
