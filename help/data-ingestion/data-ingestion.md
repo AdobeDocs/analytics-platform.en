@@ -14,11 +14,18 @@ You have several options when ingesting data into Customer Journey Analytics. So
 >
 >In all scenarios, the data you want to _use_ in Customer Journey Analytics is actually _ingested_ in Adobe Experience Platform.
 
-See the high-level Customer Journey Analytics architecture shown earlier in [Overview](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html):
 
-![Customer Journey Analytics architecture described in this section](./assets/cja-architecture.png)
+The high-level Customer Journey Analytics architecture is shown here:
 
-The dataset in the architecture above can originate from various sources: 
+![Customer Journey Analytics architecture](/help/getting-started/assets/cja-overview.svg)
+
+This architecture illustrates how Custoner Journey Analytics allows you to:
+
+* Combine mutltiple datasets ![Data](/help/assets/icons/Data.svg) in a [connection](/help/connections/overview.md).
+* Define and configure dimensions ![Dimensions](/help/assets/icons/Dimensions.svg) and metrics ![Event](/help/assets/icons/Event.svg) in a [data view](/help/data-views/data-views.md), based on the fields available from the datasets you defined in your connection.
+* Build reports ![ViewTable](/help/assets/icons/ViewTable.svg) and visualizations (like line ![Line](/help/assets/icons/GraphTrend.svg) and area ![Area](/help/assets/icons/GraphAreaStacked.svg)) in [projects](/help/analysis-workspace/home) based on the dimensions and metrics from your data views.
+
+The datasets in the architecture can originate from various sources: 
 
 - batch data, 
 
