@@ -10,10 +10,6 @@ exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 
 >[!AVAILABILITY]
 >
->The functionality described in this article is available to all eligible customers as part of a phased release beginning May 28, 2025, and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
-
->[!AVAILABILITY]
->
 >Data Insights Agent is available to eligible customers for a limited time. Access to Data Insights Agent will end on November 30, 2025. To continue using Data Insights Agent without interruption, please reach out to your Adobe account representative to learn more about licensing Data Insights Agent.
 
 Data Insights Agent, accessible from the [AI Assistant](/help/ai-assistant.md) in Customer Journey Analytics, is a generative AI conversation agent that quickly and efficiently answers questions about your data. It builds relevant visualizations in Analysis Workspace using components from your data view and using your actual data.
@@ -33,7 +29,16 @@ Using Data Insights Agent to answer data-centric questions in Analysis Workspace
 | **Feedback mechanisms** | <ul><li>Thumbs up</li><li>Thumbs down</li><li>Flag</li></ul> |  |
  
 
-## Manage access to Data Insights Agent
+## Manage access to Data Insights Agent {#manage-access}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-enable-data-insights-data-view"
+>title="Enable for Data Insights Agent"
+>abstract="This option enables this data view for usage with Data Insights Agent. Data Insights Agent is a generative AI conversation agent that is accessible from the AI Assistant in Customer Journey Analytics. It helps you quickly analyze your data with text prompts. It builds relevant visualizations in Analysis Workspace using components from your data view and using your actual data."
+
+<!-- markdownlint-enable MD034 -->
 
 The following parameters govern access to Data Insights Agent in Customer Journey Analytics:
 
@@ -151,6 +156,14 @@ Finally, let's look at the revenue by product category.
 **Response:** Again, Data Insights Agent picks the most appropriate visualization, in this case the **[!UICONTROL Donut]** visualization, to answer the question.
 
    ![Donut](/help/assets/ai-asst-result3.png)
+
+## Access Data Insights Agent across Experience Cloud applications
+
+Adobe Experience Platform Agent Orchestrator allows you to access the functionality of Data Insights Agent in multiple Adobe Experience Cloud applications, such as Adobe Journey Optimizer and Real-Time CDP. 
+
+Agent Orchestrator interprets your request, determines which specialized agents are needed, and orchestrates them to deliver the right response. It keeps track of context across multi-turn interactions, so you can build on prior queries naturally. 
+
+For more information, see [Adobe Experience Platform Agent Orchestrator](http://www.adobe.com/go/agent-orchestrator-home).
 
 ## Example data visualization prompts
 

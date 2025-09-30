@@ -30,7 +30,7 @@ The Customer Journey Analytics package you are entitled to determines the availa
    - The column name (identity path and namespace) of the persistent ID for the desired dataset (the identifier that appears on every row).
    - If the dataset supports `identityMap`:
      - For field-based stitching, specify the namespace for both the persistent and transient IDs.
-     - For graph-based stitching, specify the namespace for the persisten ID and the identity namespace to use for querying the identity graph.
+     - For graph-based stitching, specify the namespace for the persistent ID and the identity namespace to use for querying the identity graph.
    - If the dataset does not support `identityMap`:
      - For field-based stitching, the column name of the transient ID for the desired dataset (the person identifier, which also acts as a link between datasets in the context of a connection). 
      - For graph-based stitching, the identity namespace to use for querying the identity graph.

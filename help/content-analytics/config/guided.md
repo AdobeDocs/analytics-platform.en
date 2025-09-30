@@ -307,7 +307,7 @@ In a new configuration, you need to define whether you want to use an existing T
 
 * Indicate which assets should be included or excluded when collecting data for Content Analytics. 
   
-  Specify a Regular expression string for **[!UICONTROL Assets to include / exclude]**. <br/>For example: `^(?!.*(logo\.jpg|\.svg)).*$` to exclude all logo JPEG and SVG images from Content Analytics.
+  Specify a Regular expression string for **[!UICONTROL Assets to include / exclude]**. <br/>For example: `^(?!.*(logo\.jpg)).*$` to exclude all logo JPEG images from Content Analytics.
 
 >[!IMPORTANT]
 >

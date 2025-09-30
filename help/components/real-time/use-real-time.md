@@ -2,10 +2,7 @@
 description: Understand how to use real-time reporting in Analysis Workspace.
 title: Use Real-Time Reporting
 feature: Real-time Reporting
-hide: yes
-hidefromtoc: yes
 role: User
-badgePremium: label="Beta"
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
 ---
 # Use real-time reporting {#use-real-time-reporting}
@@ -41,3 +38,5 @@ As an example, see below a snapshot of a **[!UICONTROL Real-time reporting panel
 ![Real-time refresh](assets/real-time-refresh.gif)
 
 After 30 minutes, or as soon as the browser tab becomes inactive, the **[!UICONTROL Real-time refresh]** toggle is disabled automatically and real-time updates are stopped.
+
+As soon as the Real-time refresh toggle is disabled, the panel (and all visualizations within) return to [use the standard reporting data and features from Customer Journey Analytics](real-time.md#how-it-works).

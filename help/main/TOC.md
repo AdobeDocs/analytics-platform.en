@@ -15,8 +15,8 @@ breadcrumb-title: Customer Journey Analytics Guide
 + [Adobe Customer Journey Analytics Guide](../getting-started/cja-landing.md)
 
 + Release Notes {#releases}
-  + [Latest Customer Journey Analytics release](../release-notes/latest.md)
-  + [Customer Journey Analytics Pre-Release Notes](../release-notes/pre-release-notes.md)
+  + [Latest release](../release-notes/latest.md)
+  + [Pre-release notes](../release-notes/pre-release-notes.md)
   + [2025 releases](../release-notes/2025.md)
   + [2024 releases](../release-notes/2024.md)
   + [2023 releases](../release-notes/2023.md)
@@ -104,7 +104,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
 
 + Data ingestion {#cja-data-ingestion}
-  + [Data ingestion overview](../data-ingestion/data-ingestion.md)
+  + [Overview](../data-ingestion/data-ingestion.md)
   + Ingest and use quick start guides{#ingest-use-guides}
     + [Adobe Analytics](../data-ingestion/analytics.md)
     + Experience Platform Edge Network {#edge-network}
@@ -114,6 +114,15 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Batch data](../data-ingestion/batch.md)
     + [Streaming data](../data-ingestion/streaming.md)
     + [Source connectors](../data-ingestion/sources.md)
+    + [Ad hoc data](/help/data-ingestion/adhoc.md)
+
++ Data mirror {#cja-data-mirror}
+  + [Overview](/help/data-mirror/data-mirror.md)
+  + Configure {#configure}
+    + [Data warehouse native solutions](/help/data-mirror/datawarehouse.md)
+    + [Experience Platform](/help/data-mirror/aep.md)
+    + [Customer Journey Analytics](/help/data-mirror/cja.md)
+  + [Data Mirror quick start guide](/help/data-mirror/model-based.md)
 
 + Connections {#cja-connections}
   + [Connections overview](../connections/overview.md)
@@ -424,6 +433,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Field based stitching](/help/stitching/fbs.md)
   + [Graph based stitching](/help/stitching/gbs.md)
   + [Use stitching](/help/stitching/use-stitching.md)
+  + [Use stitching](/help/stitching/use-stitching-ui.md)
   + [Create and manage stitched datasets](/help/stitching/stitching-ui.md)
   + [Validate stitching](/help/stitching/validate.md)
   + [Frequently Asked Questions](/help/stitching/faq.md)  
@@ -435,6 +445,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Integrate Journey Optimizer data](/help/integrations/ajo.md)
   + [Integrate Decision Management data](/help/integrations/ajo-od.md)
   + [Integrate Customer AI](/help/integrations/customer-ai.md)
+  + [Integrate Adobe Advertising](/help/integrations/advertising.md)
 
 + Data Governance {#cja-privacy}
   + [Data Governance](../privacy/privacy-overview.md)

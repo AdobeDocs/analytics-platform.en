@@ -14,23 +14,30 @@ You have several options when ingesting data into Customer Journey Analytics. So
 >
 >In all scenarios, the data you want to _use_ in Customer Journey Analytics is actually _ingested_ in Adobe Experience Platform.
 
-See the high-level Customer Journey Analytics architecture shown earlier in [Overview](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html):
 
-![Customer Journey Analytics architecture described in this section](./assets/cja-architecture.png)
+The high-level Customer Journey Analytics architecture is shown here:
 
-The dataset in the architecture above can originate from various sources: 
+![Customer Journey Analytics architecture](/help/getting-started/assets/cja-overview.svg)
 
-- batch data, 
+This architecture illustrates how Custoner Journey Analytics allows you to:
 
-- streaming data, 
+* Combine mutltiple datasets ![Data](/help/assets/icons/Data.svg) in a [connection](/help/connections/overview.md).
+* Define and configure dimensions ![Dimensions](/help/assets/icons/Dimensions.svg) and metrics ![Event](/help/assets/icons/Event.svg) in a [data view](/help/data-views/data-views.md), based on the fields available from the datasets you defined in your connection.
+* Build reports ![ViewTable](/help/assets/icons/ViewTable.svg) and visualizations (like line ![Line](/help/assets/icons/GraphTrend.svg) and area ![Area](/help/assets/icons/GraphAreaStacked.svg)) in [projects](/help/analysis-workspace/home.md) based on the dimensions and metrics from your data views.
 
-- data from a current Adobe Analytics deployment, 
+The datasets in the architecture can originate from various sources: 
 
-- data from tracking your website / mobile app using the Adobe Experience Platform Web/Mobile SDK,
+* batch data, 
 
-- data from tracking a desktop application, console game, set-top box or IoT device using the Adobe Experience Platform Edge Network Server API, or
+* streaming data, 
 
-- data coming from a third-party data provider for which Adobe provides a source connector. 
+* data from a current Adobe Analytics deployment, 
+
+* data from tracking your website / mobile app using the Adobe Experience Platform Web/Mobile SDK,
+
+* data from tracking a desktop application, console game, set-top box or IoT device using the Adobe Experience Platform Edge Network Server API, or
+
+* data coming from a third-party data provider for which Adobe provides a source connector. 
 
 And you can have many of these datasets.
 
@@ -42,11 +49,11 @@ You can ingest your event data in Customer Journey Analytics within 90 minutes (
 
 Note that this capability differs based on the SKU package your company purchased:
 
-- Priority Ingestion Basic: 24-hour-old data within 90-minute SLT processing (available for **CJA Foundation** and **CJA Select**)
+* Priority Ingestion Basic: 24-hour-old data within 90-minute SLT processing (available for **CJA Foundation** and **CJA Select**)
 
-- Priority Ingestion Intermediate: 72-hour-old data within 90-minute SLT processing (available for **CJA Prime**)
+* Priority Ingestion Intermediate: 72-hour-old data within 90-minute SLT processing (available for **CJA Prime**)
 
-- Priority Ingestion Advanced: 1-week-old data within 90-minute SLT processing (available for **CJA Ultimate**)
+* Priority Ingestion Advanced: 1-week-old data within 90-minute SLT processing (available for **CJA Ultimate**)
 
 ## Ingest and use data from traditional Adobe Analytics
 
@@ -92,6 +99,12 @@ See [Ingest and use streaming data](./streaming.md) for more information.
 You have data available from a source that is supported by a source connector. Source connectors are configurable configurations that allow you to ingest data from Adobe, first-party and third-party application into Adobe Experience Platform. See [Source connectors overview](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html) for an overview of available source connectors. Using the source connector you can easily ingest data from the source into Adobe Experience Platform and then use, combine and analyze it with data from other channels and data sources in Customer Journey Analytics.
 
 See [Ingest and use data using source connectors](./sources.md) for more information.
+
+## Ingest and use ad hoc data
+
+You have ad hoc data available that only require a single dataset in Experience Platform and do not require the configuration of an Experience Data Model (XDM) schema. This scenario is referred to as an ad hoc schema. Ad hoc schemas are used in various data ingestion workflows for Experience Platform, including ingesting CSV files and creating certain kinds of source connections.
+
+See [Ingest and use ad hoc data](./adhoc.md)
 
 >[!MORELIKETHIS]
 >
