@@ -161,5 +161,3 @@ You want to give users access to data from one day only. Here is how you would l
 Users who have access to a data view can only work with the metrics and dimensions that the administrator has included in this data view. Administrators can use the [Include/Exclude functionality](/help/data-views/component-settings/include-exclude-values.md) or [Value bucketing](../data-views/component-settings/value-bucketing.md) component settings in a data views to exclude or aggregate certain dimension values from a data view.
 
 For example: You create a metric called *Hypertension* in a data view from a component that contains individual patient data from the dataset. You use value bucketing to provide only access to bucketed values, so users of the data do not see the individual patients data.
-
-
