@@ -35,7 +35,6 @@ Product administrators have permissions to complete most tasks within Customer J
 
 Product administrators are granted the necessary permissions to perform the following tasks by default:
 
-* Create, update, and delete data views
 * Update and delete projects, segments, calculated metrics, audiences, annotations, or segments created by other users
 * Share Workspace projects to all users
 * Manage reporting activity in the [Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md)
@@ -45,24 +44,23 @@ Product administrators are granted the necessary permissions to perform the foll
 
 In addition to being added as a Product administrator in the **Customer Journey Analytics Product Profile** in the [Admin Console](https://adminconsole.adobe.com/enterprise/), additional permissions are required to complete the following tasks within Customer Journey Analytics:
 
-* Create, update, and delete data [Connections](/help/connections/overview.md)
+* Create, update, and delete [data views](/help/data-views/data-views.md).
+* Create, update, and delete [connections](/help/connections/overview.md)
   
   To perform this task, users must be part of an **Experience Platform Product Profile** that provides the following permissions:
 
   | Category | Permission | Description |
   |---|---|---|
-  | [!UICONTROL Sandboxes] | [!UICONTROL At least one] | Access to relevant sandboxes for CJA connections. |
+  | [!UICONTROL Sandboxes] | [!UICONTROL At least one] | Access to relevant sandboxes for connections. |
   | [!UICONTROL Data Modeling] | [!UICONTROL View Schemas] | Read-only access to schemas and related resources. |
   | [!UICONTROL Data Modeling] | [!UICONTROL Manage Schemas] | Access to read, create, edit, and delete schemas and related resources. |
   | [!UICONTROL Data Management] | [!UICONTROL View Datasets] | Read-only access for datasets and schemas. |
-  | [!UICONTROL Data Management] | [!UICONTROL Manage Datasets] | Access to read, create, edit, and delete datasets. Read-only access for schemas. |
-  | [!UICONTROL Data Ingestion] | [!UICONTROL Manage Sources] | Access to read, create, edit, and disable sources. |
   | [!UICONTROL Identity Management] | [!UICONTROL View Identity Namespaces] | Read-only access for identity namespaces. |
     
     For more information on Experience Platform permissions, see [Manage permissions for a product profile](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
 
-* If Adobe Journey Optimizer was integrated with CJA where AJO Connections exist, then Journeys permissions must also be added in order to access Connections:
+* If Adobe Journey Optimizeris integrated with Customer Journey Analytics where Journe Optimizer Connections exist, then Journeys permissions must also be added in order to access Connections:
 
   | Category | Permission | Description |
   |---|---|---|
