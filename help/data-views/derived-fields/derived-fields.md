@@ -914,6 +914,7 @@ You define an `Origin - Destination` derived field. You use the [!UICONTROL CONC
 
 {style="table-layout:auto"}
 
+
 +++
 
 
@@ -2091,7 +2092,7 @@ The following limitations apply to the Derived field functionality in general:
 |---|---|
 | <p>Case When</p> | <ul><li>5 Case When functions per derived field</li><li>200 [operators](#operators) per derived field</li></ul> |
 | <p>Classify</p> | <ul><li>5 Classify functions per derived field</li><li>200 [operators](#operators) per derived field</li></ul> |
-| <p>Concatenate</p> | <ul><li>2 Concatenate functions per derived field</li></ul> |
+| <p>Concatenate</p> | <ul><li>2 Concatenate functions per derived field</li><li>3 values per Concatenate function</ul> |
 | <p>Date Math</p> | <ul><li>2 Date Math functions per derived field</li></ul> |
 | <p>Deduplicate</p> | <ul><li>5 Deduplicate functions per derived field</li></ul> |
 | <p>Depth</p> | <ul><li>3 Depth functiond per derived field</li></ul> |

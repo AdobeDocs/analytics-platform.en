@@ -14,6 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **September 2025** | |
+| Dates before 1900 | Added a [note](/help/connections/create-connection.md#datasets) on how dates before 1900 are handled by Customer Journey Analytics. |
 | Real-time reporting | Added documentation about [real-time reporting](/help/components/real-time/real-time.md) in Customer Journey Analytics. |
 | Usage interface | Added documentation for updated [Usage interface](/help/connections/manage-connections.md#usage) in Connections. | 
 | Stitching Journey Optimizer datasets | Documented [list of automatically generated Journey Optimzer datasets](/help/stitching/overview.md#journey-optimizer-datasets) that can be used in stitching. | 

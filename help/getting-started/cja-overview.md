@@ -12,7 +12,13 @@ Customer Journey Analytics is Adobe's next-generation Analytics solution that le
 
 The high-level Customer Journey Analytics architecture is shown here:
 
-![Customer Journey Analytics architecture explained in this section](assets/cja-architecture.png)
+![Customer Journey Analytics architecture](assets/cja-overview.svg)
+
+This architecture illustrates how Custoner Journey Analytics allows you to:
+
+* Combine mutltiple datasets ![Data](/help/assets/icons/Data.svg) in a [connection](/help/connections/overview.md).
+* Define and configure dimensions ![Dimensions](/help/assets/icons/Dimensions.svg) and metrics ![Event](/help/assets/icons/Event.svg) in a [data view](/help/data-views/data-views.md), based on the fields available from the datasets you defined in your connection.
+* Build reports ![ViewTable](/help/assets/icons/ViewTable.svg) and visualizations (like line ![Line](/help/assets/icons/GraphTrend.svg) and area ![Area](/help/assets/icons/GraphAreaStacked.svg)) in [projects](/help/analysis-workspace/home.md) based on the dimensions and metrics from your data views.
 
 
 >[!BEGINSHADEBOX]

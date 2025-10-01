@@ -30,6 +30,8 @@ To increase the transparency and visibility of activities performed in the syste
 
 In a basic sense, an audit log tells **who** performed **what** action, and **when**. Each action recorded in a log contains metadata that indicates the action type, date and time, the email ID of the user who performed the action, and additional attributes relevant to the action type.
 
+Audit logs are retained for 90 days. After that, audit logs are automatically deleted.
+
 This topic covers audit logs in Customer Journey Analytics, including how to view and manage them in the UI.
 
 ## Access to audit logs
