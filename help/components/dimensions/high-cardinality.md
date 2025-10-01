@@ -10,19 +10,21 @@ role: User
 
 When using a dimension that contains many unique values, the resulting report can contain too many unique dimension items to display or calculate. Results are truncated by removing dimension items deemed least important. These optimizations are done to maintain project and product performance.
 
-When you request a report with too many unique values, Analysis Workspace shows an indicator in the dimension header stating that not all dimension items are included. For example, **[!UICONTROL Rows: 1-50 of more than 22,343,156]**. The **[!UICONTROL more than]** keyword indicates that some optimization was applied to the report to return the most important dimension items.
+When you request a report containing a dimension with too many unique values, Analysis Workspace shows an indicator in the dimension header stating that not all dimension items are included. For example, **[!UICONTROL Rows: 1-50 of more than 22,343,156]**. The **[!UICONTROL more than]** keyword indicates that some optimization was applied to the report to return the most important dimension items.
 
 ![Freeform table in Workspace showing the "more than" keyword to show 1-50 of more than 22,343,156](assets/high-cardinality.png)
 
 ## Determining which dimension items to display
 
-Customer Journey Analytics processes reports at the time that they are run, distributing the combined dataset to several servers. Data per processing server is grouped by person ID, meaning that a single processing server contains all data for a given person. Once a server finishes processing, it hands its subset of processed data to an aggregator server. All subsets of processed data are combined and returned in the form of a Workspace report.
+Customer Journey Analytics processes reports at the time that they are run, distributing the combined dataset to several servers. The size of the data request and amount of available Adobe hardware are two of many factors that help determine the number of servers assigned to process a report. Since servers are dynamically assigned and not visible in the interface, there is not a way to see or control the number of servers that process a report.
+
+Data per processing server is grouped by person ID, meaning that a single processing server contains all data for a given person. Once a server finishes processing, it hands its subset of processed data to an aggregator server. All subsets of processed data are combined and returned in the form of a Workspace report.
 
 If any individual server processes data that exceeds a unique threshold, it truncates the results before returning the processed subset of data. Truncated dimension items are determined based on the metric that is used for sorting.
 
 If the sorting metric is a calculated metric, the server uses the metrics within the calculated metric to determine which dimension items to truncate. Since calculated metrics can contain several metrics of varying importance, results can be less accurate. For example, when calculating "Revenue per person", the total amount of revenue and total number of persons are returned and aggregated before doing the division. As a result, each individual processing server chooses which items to remove without knowing how their results affect overall sorting.
 
-Though some individual dimension items might be missing from high cardinality reports, column totals are accurate and not based on truncated data. The 'Count Distinct' function in calculated metrics is also not affected by truncated dimension items.
+Though some individual dimension items might be missing from high cardinality reports, column totals are accurate and not based on truncated data. The [[!UICONTROL Approximate Count Distinct]](/help/components/calc-metrics/cm-adv-functions.md#approximate-count-distinct) calculated metric function is also not affected by truncated dimension items.
 
 ## Best practices for high cardinality dimensions
 
@@ -34,3 +36,4 @@ The best way to accommodate high cardinality dimensions is to limit the number o
 * Use the [Include/exclude](/help/data-views/component-settings/include-exclude-values.md) component setting in the data view manager.
 * Shorten the request's date range. If many unique values accumulate over time, shortening the date range of the Workspace report can limit the number of unique values for servers to process.
 * Consider using [Full Table Export](/help/analysis-workspace/export/export-cloud.md) to return all rows of the table.
+* If the number of unique values is the primary focus, use the [[!UICONTROL Approximate Count Distinct]](/help/components/calc-metrics/cm-adv-functions.md#approximate-count-distinct) calculated metric function.
