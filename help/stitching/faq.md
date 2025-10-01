@@ -211,7 +211,7 @@ Other metrics can be similar in Customer Journey Analytics and Adobe Analytics. 
 
 +++ Can Customer Journey Analytics use Identity Map fields?
 
-No, Customer Journey Analytics cannot currently use Identity Map fields for stitching.
+Yes, Customer Journey Analytics can  use Identity Map fields for both [field based](/help/stitching/fbs.md#identitymap) and [graph based](/help/stitching/gbs.md#identitymap) stitching.
 
 +++
 
@@ -223,7 +223,7 @@ Data does not have to be reingested into Experience Platform, however it will ne
 
 1. Setup the new graph-based stitched dataset. 
 1. Configure the new dataset as part of a new connection in Customer Journey Analytics. 
-1. Switch your existing Data View to use the new connection (and as such the new graph-based stiched dataset
+1. Switch your existing Data View to use the new connection (and as such the new graph-based stiched dataset).
 1. Remove the old connection that was using the field-based stitched dataset.
 
 +++
