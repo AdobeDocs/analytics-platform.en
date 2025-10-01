@@ -76,17 +76,17 @@ Each configuration requires a unique name. For example, `Example Content Analyti
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
 >title="Data view"
->abstract="For the configuration of Content Analytics you need to select an existing data view. So, you can merge your content analytics data with other data."
+>abstract="For the configuration of Content Analytics you need to select an existing data view. So, you can merge your Content Analytics data with other data."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="Data view"
->abstract="Select an existing data view from Customer Journey Analytics that you would like to merge your content analytics data with." 
+>abstract="Select an existing data view from Customer Journey Analytics that you would like to merge your Content Analytics data with." 
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
 >title="Data view"
->abstract="Select an existing data view from Customer Journey Analytics that you would like to merge your content analytics data with.<br/>"
+>abstract="Select an existing data view from Customer Journey Analytics that you would like to merge your Content Analytics data with.<br/>"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
@@ -230,7 +230,7 @@ To edit existing or include new experiences in an implemented configuration:
 
 ### Data collection {#onboarding-data-collection}
 
-In this section, you configure how to collect your content analytics data.
+In this section, you configure how to collect your Content Analytics data.
 
 <!-- markdownlint-disable MD034 -->
 
