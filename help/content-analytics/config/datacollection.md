@@ -50,7 +50,7 @@ Content Analytics events are collected as a sequence of:
 1. [A recorded view or click](#recorded-view-or-click).
 1. [A trigger to send a Content Analytics event](#trigger-to-send-a-content-analytics-event). 
 
-Content Analytics does collect data this way to reflect that sequence, instead of collecting a view or click separately from collecting the event immediately following that view or click. This way of collecting content analytics data also reduces the amount of data collected.
+Content Analytics does collect data this way to reflect that sequence, instead of collecting a view or click separately from collecting the event immediately following that view or click. This way of collecting Content Analytics data also reduces the amount of data collected.
 
 ### Recorded view or click 
 
