@@ -1,11 +1,13 @@
 ---
 description: Learn how to export a full table to a cloud location.
 keywords: Analysis Workspace
-title: Generate PowerPoint presentations from Workspace reports
+title: Generate presentations from Workspace reports
 feature: Curate and Share
 role: User
+hide: yes
+hidefromtoc: yes
 ---
-# Generate PowerPoint presentations from Workspace reports {#generate-powerpoint}
+# Generate presentations from Workspace reports {#generate-powerpoint}
 
 <!-- markdownlint-disable MD034 -->
 
