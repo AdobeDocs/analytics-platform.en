@@ -221,10 +221,11 @@ Yes, Customer Journey Analytics can  use Identity Map fields for both [field bas
 
 Data does not have to be reingested into Experience Platform, however it will need to be reconfigured in Customer Journey Analytics. Please follow these steps:
 
-1. Setup the new graph-based stitched dataset. 
-1. Configure the new dataset as part of a new connection in Customer Journey Analytics. 
-1. Switch your existing Data View to use the new connection (and as such the new graph-based stiched dataset).
-1. Remove the old connection that was using the field-based stitched dataset.
+1. Set up the new graph based stitched dataset using graph based stitching.
+1. Create a new temporary connection with a very small time window of data. 
+1. Configure the new graph based dataset as part of this temporarty connection.
+1. Verify with this new temporary connection whether the graph based stitching works properly.
+1. If graph based stitching works as expected, swap the field based dataset in your original connection with the new graph based dataset.
 
 +++
 
