@@ -36,7 +36,7 @@ This functionality reduces the time and effort required to surface findings from
 
 |Option | Description | 
 |---------|----------|
-| Emphasize components | The exact rules are kind of complicated, so I wonder if it is better to keep it somewhat vague. I think this is the most recent version we have right now:<ul><li>metric: bold and italic when emphasized; italic when not emphasized</li><li>dimensionItem: bold when the corresponding dimension is emphasized; bold+color when the dimension is emphasized AND the dimensionItem is highlighted in the chart; "quotation marks" when not emphasized | 
+| Emphasize components | Choose up to 5 metrics and 5 dimensions from your visualizations that you want to emphasize in the presentation.<p>When no emphasis is applied, metrics and dimensions show in presentations as follows:<ul><li>**Metrics and dimensions:** Italics</li><li>**Dimension items:** Quotation marks</li></ul></p><p>When emphasis is applied, metrics and dimensions show in presentations as follows:</p><ul><li>**Metrics and dimensions:** Italics and bold</li><li>**Dimension items:** Bold when the corresponding dimension is emphasized<p>A color is also applied to the dimension item when the dimension item is highlighted in the chart.</p></li></ul> | 
 | A2 | B2 |
 | A3 | B3 | 
 
