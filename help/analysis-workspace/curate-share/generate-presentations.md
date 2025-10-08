@@ -33,12 +33,28 @@ This functionality reduces the time and effort required to surface findings from
 
 <!-- markdownlint-enable MD034 -->
 
+1. Go to the Workspace project that contains the data that you want to use as the basis of your presentation.
 
-|Option | Description | 
-|---------|----------|
-| Emphasize components | Choose up to 5 metrics and 5 dimensions from your visualizations that you want to emphasize in the presentation.<p>When no emphasis is applied, metrics and dimensions show in presentations as follows:<ul><li>**Metrics and dimensions:** Italics</li><li>**Dimension items:** Quotation marks</li></ul></p><p>When emphasis is applied, metrics and dimensions show in presentations as follows:</p><ul><li>**Metrics and dimensions:** Italics and bold</li><li>**Dimension items:** Bold when the corresponding dimension is emphasized<p>A color is also applied to the dimension item when the dimension item is highlighted in the chart.</p></li></ul> | 
-| A2 | B2 |
-| A3 | B3 | 
+1. Select **[!UICONTROL Generate slides]** in the upper-right corner of the page.
+
+1. Specify the following information:
+
+   |Option | Description | 
+   |---------|----------|
+   | **[!UICONTROL Cover title]** | | 
+   | **[!UICONTROL Include presenter name]** | | 
+   | **[!UICONTROL Panels and visualizations to include]** | | 
+   | **[!UICONTROL Panel and visualization descriptions]** | | 
+   | **[!UICONTROL Annotations]** | | 
+   | **[!UICONTROL Emphasize components]** | Choose up to 5 metrics and 5 dimensions from your visualizations that you want to emphasize in the presentation.<p>When no emphasis is applied, components show in presentations as follows:<ul><li>**Metrics and dimensions:** Italics</li><li>**Dimension items:** Quotation marks</li></ul></p><p>When emphasis is applied, components show in presentations as follows:</p><ul><li>**Metrics and dimensions:** Italics and bold</li><li>**Dimension items:** Bold when the corresponding dimension is emphasized<p>A color is also applied to the dimension item when the dimension item is highlighted in the chart.</p></li></ul> | 
+
+1. Select whether to use a default theme or upload a custom template:
+
+   * **[!UICONTROL Default theme]**: 
+
+   * **[!UICONTROL Upload template]**:
+
+
 
 
 
