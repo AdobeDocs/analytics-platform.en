@@ -226,7 +226,7 @@ Data does not have to be reingested into Experience Platform, however it will ne
 1. Configure the new graph based dataset as part of this temporary connection.
 1. Verify with this new temporary connection whether the graph based stitching works properly.
 1. If graph based stitching works as expected, request any additional backfill for the graph based dataset and then swap the field based dataset in your original connection with the new graph based dataset.
-1. Remove the temporary connection
+1. Remove the temporary connection.
 
 +++
 
