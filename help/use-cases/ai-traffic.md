@@ -42,9 +42,9 @@ LLM & AI agents demonstrate complex and evolving behaviors when interacting with
 * Detection challenges: With partial tracking, detection becomes unreliable as certain touchpoints might be invisible to analytics.
   
 
-## Signatures
+## Detection signatures
 
-As of August 2025, the following specific signals can be identified for each of the detection methods,
+As of August 2025, the following specific signals can be identified for each of the detection methods.
 
 ### User agent identification
 
@@ -160,7 +160,8 @@ As of August 2025, the following specific signals can be identified for each of 
 </tbody>
 </table>
 
-## Referrer analysis
+
+### Referrer analysis
 
 <table>
 <thead>
@@ -235,4 +236,43 @@ As of August 2025, the following specific signals can be identified for each of 
 </tr>
 </tbody>
 </table>
+
+## Derived fields
+
+Based on the detection methods and signals, you define the following derived fields:
+
+### LLM/AI user agent identification
+
+Use the Case When derived field functions to define a derived field that identifies LLM/AI user agents.
+
+![LLM/AI User Agent Identification](assets/aitraffic-useragents.png)
+
+
+### LLM/AI UTM parameter detection
+
+Use the URL Parse and Classify derived field functions to define a derived field that detects UTM parameter detection.
+
+![LLM/AI UTM Parameter Detection](assets/aitraffic-utmparams.png)
+
+
+### LLM/AI referrer classification
+
+Use the URL Parse and Classify derived field functions to define a derived field that classifies referrers.
+
+![LLM/AI Referrer Classification](assets/aitraffic-utmparams.png)
+
+
+## Segments
+
+Use the derived fields you created to define a segment that identifies LLM and AI-generated traffic.
+
+![LLM and AI-generated traffic segment](assets/aitraffic-segment.png)
+
+
+## Workspace
+
+Use the derived fields and segments to report and analyze on LLM and AI-generated traffic. For example see the example project shown below.
+
+
+
 
