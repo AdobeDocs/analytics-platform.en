@@ -19,19 +19,19 @@ To detect LLM and AI-generated traffic, distinguish between:
 
 Three common core detection methods to identify and monitor LLM and AI-generated traffic are:
 
-* User agent detection: When a request is made to your server, the HTTP User-Agent header is extracted and analyzed against known AI crawler and agent patterns. This server-side method requires access to HTTP headers and is most effective when implemented at the data collection layer.
-* Referrer analysis: The HTTP Referrer header contains the URL of the previous webpage that linked to the current request. This header reveals when users click through to your site from web interfaces like ChatGPT or Perplexity.
-* Query parameter tracking: AI services can append URL parameters (particularly UTM parameters) to links. These parameters persist in the URL and can be captured through standard analytics implementations, making these URL parameters valuable indicators even in client-side tracking scenarios.
+* User agent identification: When a request is made to your server, the HTTP User-Agent header is extracted and analyzed against known AI crawler and agent patterns. This server-side method requires access to HTTP headers and is most effective when implemented at the data collection layer.
+* Referrer classification: The HTTP Referrer header contains the URL of the previous webpage that linked to the current request. This header reveals when users click through to your site from web interfaces like ChatGPT or Perplexity.
+* Query parameter detection: AI services can append URL parameters (particularly UTM parameters) to links. These parameters persist in the URL and can be detected through standard analytics implementations, making these URL parameters valuable indicators even in client-side tracking scenarios.
 
 The following table illustrates how the detection methods can be used against different LLM and AI interaction scenarios.
 
-| Scenario | User agent detection | Referrer analysis | Query parameter tracking |
+| Scenario | User agent identification | Referrer classification | Query parameter detection |
 |---|---|---|---|
-| **Training of a Model** | Detectable (GPTBot, ClaudeBot, etc.) when server-side logging is implemented. | Not present. AI crawlers don't generate referrers during training. | Not present. AI crawlers don't typically add parameters during training. |
-| **Agent Browsing** | Detectable (ChatGPT-User, claude-web) when server-side logging captures headers.  | Might appear if the agent navigates from an AI interface with referrer preservation. | Sometimes present if the AI service adds tracking parameters. |
-| **Retrieval-Augmented Generation (RAG) to Answer Query** | Detectable (OAI-SearchBot, PerplexityBot) with server-side logging. | Not typically present as RAG operations often bypass referrer mechanisms. | Rarely present unless specifically implemented by the AI provider. |
-| **User Clicks Through** | Not detectable. AI agent appears as a normal user agent. | Detectable when users click links from AI interfaces (chatgpt.com, claude.ai, and more). | Sometimes AI services might add UTM parameters to outbound links. |
-| **Traffic Visibility Conditions** | Require server-side logging integration with CJA, or server-side tagging. | Depends on AI platform referrer policies and proper HTTP header transmission. | Requires parameter preservation through redirects and proper URL parameter collection. | 
+| **Training of a Model** | Agent  (GPTBot, ClaudeBot, and more) can be identified when server-side logging is implemented. | Not present. AI crawlers don't generate referrers during training. | Not present. AI crawlers don't typically add parameters during training. |
+| **Agent Browsing** | Agent (ChatGPT-User, claude-web) can be identified  when server-side logging captures headers.  | Might appear if the agent navigates from an AI interface with referrer preservation. | Sometimes present if the AI service adds tracking parameters. |
+| **Retrieval-Augmented Generation (RAG) to Answer Query** | Agent  (OAI-SearchBot, PerplexityBot) can be identified with server-side logging. | Not typically present as RAG operations often bypass referrer mechanisms. | Rarely present unless specifically implemented by the AI provider. |
+| **User Clicks Through** | Agent cannot be identified. AI agent appears as a normal user agent. | Detectable when users click links from AI interfaces (chatgpt.com, claude.ai, and more). | Sometimes AI services might add UTM parameters to outbound links. |
+| **Traffic Visibility Conditions** | Require server-side logging integration with Customer Journey Analytics or server-side tagging for agent identification. | Depends on AI platform referrer policies and proper HTTP header transmission. | Requires parameter preservation through redirects and proper URL parameter collection. | 
 
 ### Challenges
 
@@ -161,7 +161,7 @@ As of August 2025, the following specific signals can be identified for each of 
 </table>
 
 
-### Referrer analysis
+### Referrer classification
 
 <table>
 <thead>
@@ -210,7 +210,7 @@ As of August 2025, the following specific signals can be identified for each of 
 </tbody>
 </table>
 
-### Query parameter
+### Query parameter detection
 
 <table>
 <thead>
@@ -272,6 +272,9 @@ Use the derived fields you created to define a segment that identifies LLM and A
 ## Workspace
 
 Use the derived fields and segments to report and analyze on LLM and AI-generated traffic. For example see the example project shown below.
+
+![LLM and AI-generated traffic Workspace project](assets/aitraffic-workspace.png)
+
 
 
 
