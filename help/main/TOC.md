@@ -506,7 +506,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Labs User Guide](../labs/labs.md)
 
 + Troubleshooting {#troubleshooting}
-  + [Compare data](../troubleshooting/compare.md)
+  + [Compare Source Connector data](../troubleshooting/compare.md)
   + [Consistency of metrics and audiences](../troubleshooting/consistency-rcdp-cja.md)
   + [Lack of permissions](../troubleshooting/lack-of-permissions.md)
 

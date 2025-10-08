@@ -1,90 +1,60 @@
 ---
-title: Compare with your Adobe Analytics data
-description: Learn how to compare your Adobe Analytics data to data in Customer Journey Analytics
+title: Compare Analytics Source Connector data to Adobe Analytics
+description: Understand differences in data when viewing similar reports in Adobe Analytics and Customer Journey Analytics.
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: query service;Query service;sql syntax
 ---
-# Compare with your Adobe Analytics data
+# Compare Analytics Source Connector data to Adobe Analytics
 
-As your organization adopts Customer Journey Analytics, you may notice some differences in data between Adobe Analytics and Customer Journey Analytics. This is normal and can occur for several reasons. Customer Journey Analytics is designed to allow you to improve upon some of the limitations on your data in AA. However, unexpected and unintended discrepancies can occur. This article is designed to help you diagnose and solve for those differences so that you and your team can use Customer Journey Analytics unimpeded by concerns about data integrity.
+As your organization adopts Customer Journey Analytics, it is possible to notice some differences in data between Adobe Analytics and Customer Journey Analytics. These differences are normal and can happen for several reasons. Customer Journey Analytics is designed to allow you to improve upon some of the limitations on your data in Adobe Analytics. This flexibility can cause some differences in how Customer Journey Analytics interprets data. Use this article to understand potential differences in how Customer Journey Analytics and Adobe Analytics treats your data.
 
-Let's assume you ingested Adobe Analytics data into Adobe Experience Platform via the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html), and then created a Customer Journey Analytics connection using this dataset. 
+This page assumes that you ingest Adobe Analytics data into Adobe Experience Platform using the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html), then created a [connection](/help/connections/overview.md) and [data view](/help/data-views/data-views.md) in Customer Journey Analytics.
 
 ![The data flow from Adobe Analytics through the data connector to Adobe Experience Platform and to Custoer Journey Analytics using CJA connections.](assets/compare.png)
 
-Next, you created a data view and while subsequently reporting on this data on Customer Journey Analytics, you noticed discrepancies with the reporting results in Adobe Analytics.
+Consider the following possible reasons why data might differ between reporting platforms:
 
-Here are some steps to follow to compare your original Adobe Analytics data with the Adobe Analytics data that is now in Customer Journey Analytics.
+* **Different datasets or report suites**: Make sure that the report suite in Adobe Analytics and the report suite that the Source Connector derives data from are the same.
+* **Calendar settings**: Report suites in Adobe Analytics contain a time zone and other calendar settings that you can configure. Similarly, data views in Customer Journey Analytics have a separate setting that you can control. Make sure that these settings match between products if parity is desired.
+* **Additional datasets**: Customer Journey Analytics provides the capability to include multiple datasets within a single connection. These differences include additional event datasets, profile datasets, or lookup datasets. This capability is a key differentiator between Adobe Analytics and Customer Journey Analytics, allowing insight into cross-channel data.
+* **Stitched datasets**: Adobe provides the ability to analyze person IDs between two datasets, resulting in a new dataset containing stitched IDs. These [stitched datasets](/help/stitching/overview.md) contain additional data beyond what an Adobe Analytics report suite offers.
+* **Data Sources**: Customer Journey Analytics does not include any type of [Data Sources](https://experienceleague.adobe.com/en/docs/analytics/import/data-sources/overview) uploaded to an Adobe Analytics report suite, including summary data sources or transaction ID data sources.
+* **Dimension and metric settings**: Within a data view, every dimension and metric contains its own settings that your organization can alter. These changes apply at the time the report is run, and is therefore applied retroactively. Dimension and metric settings in Adobe Analytics change how data is collected, making those changes apply from that point forward. If you changed component settings in either product, they can create reporting differences. If focusing on a specific dimension, make sure that the persistence and expiration settings match between Adobe Analytics and Customer Journey Analytics.
 
-## Prerequisites
+   >[!TIP]
+   >
+   >Adobe highly recommends that dimensions in Adobe Analytics use an allocation of '[!UICONTROL Most recent (last)]'. This allocation setting allows much more attribution flexibility in Customer Journey Analytics.
 
-* Make sure the Analytics dataset in Adobe Experience Platform contains data for the date range you are investigating.
+* **Visit definition**: In addition to individual dimension and metric settings, the data view itself contains settings that fundamentally change how vistor data is interpreted. For example, you can apply a segment to an entire data view (similar to a [Virtual report suite](https://experienceleague.adobe.com/en/docs/analytics/components/virtual-report-suites/vrs-about) in Adobe Analytics). You can also change the definition of a visit duration, or automatically start a new visit on any desired event. Any of these settings can have a notable impact on reporting differences between Customer Journey Analytics and Adobe Analytics.
 
-* Make sure the report suite that you selected in Analytics matches the report suite that was ingested into Adobe Experience Platform.
+## Checking record count between products
 
-## Step 1: Run the Occurrences metric in Adobe Analytics
+If all of the above settings appear similar and you want to at least validate the number of records between products, you can use the following steps:
 
-The [Occurrences](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html) metric shows the number of hits where a given dimension was set or persisted.
+1. In Adobe Experience Platform [Query Services](https://experienceleague.adobe.com/en/docs/experience-platform/query/home), run the following Total Records by timestamps query:
 
-1. In Analytics > [!UICONTROL Workspace], drag the date range you want to report on as a dimension into a [!UICONTROL Freeform] table.
+   ```sql
+   SELECT
+     Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) AS Day,
+     Count(_id) AS Records
+   FROM  {dataset}
+   WHERE   timestamp >= from_utc_timestamp('{fromDate}','UTC')
+     AND timestamp < from_utc_timestamp('{toDate}','UTC')
+     AND timestamp IS NOT NULL
+     AND enduserids._experience.aaid.id IS NOT NULL
+   GROUP BY Day
+   ORDER BY Day;
+   ```
 
-1. The [!UICONTROL Occurrences] metric is automatically applied to that date range.
+1. In Adobe Analytics [Data feeds](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview), generate feed files for the desired date range. Count the number of rows within each file, identifying and excluding the following rows:
 
-1. Save this project so that you can use it in the comparison.
+   * `exclude_hit` is not `0`
+   * `hit_source` is `0`, `3`, `5`, `7`, `8`, `9`, or `10`
+   * `page_event` is `53` or `63`
 
-## Step 2: Compare the results to [!UICONTROL Total records by timestamps] in Customer Journey Analytics
+   Rows matching any of the above criteria is excluded from the Analytics Source Connector ingestion workflow, and therefore should also be excluded when counting data feed rows.
 
-Now compare the [!UICONTROL Occurrences] in Analytics to the Total records by timestamps in Customer Journey Analytics.
-
-Total Records by timestamps should match with Occurrences, provided that no records were dropped by the Analytics Source connector - see the section below. 
-
->[!NOTE]
->
->This works for regular mid values datasets only, not stitched dataset (via [Stitching](/help/stitching/overview.md)). Please note that accounting for the Person ID being used in Customer Journey Analytics is critical for making the comparison work. That may not always be easy to replicate in Adobe Analytics, especially if Stitching has been turned on. 
-
-1. In Adobe Experience Platform [Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html), run the following [!UICONTROL Total Records by timestamps] query:
-
-    ```sql
-    SELECT
-        Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) AS Day,
-        Count(_id) AS Records 
-    FROM  {dataset}
-    WHERE   timestamp >= from_utc_timestamp('{fromDate}','UTC')
-        AND timestamp < from_utc_timestamp('{toDate}','UTC')
-        AND timestamp IS NOT NULL
-        AND enduserids._experience.aaid.id IS NOT NULL
-    GROUP BY Day
-    ORDER BY Day; 
-    ```
-
-1. In [Analytics Data Feeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html), identify from the raw data whether some rows might have been filtered out by the Analytics Source connector. 
-
-   The [Analytics Source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) might filter certain rows during the transformation to XDM schema. There can be multiple reasons for the whole row to be unfit for transformation. If any of the following Analytics fields have these values, the whole row will be filtered out. 
-
-   | Analytics field | Values that cause a row to be dropped |
-   | --- | --- |
-   | Opt_out | y, Y |
-   | In_data_only | Not 0 |
-   | Exclude_hit | Not 0 |
-   | Bot_id | Not 0 |
-   | Hit_source | 0, 3, 5, 7, 8, 9, 10 |
-   | Page_event | 53, 63 |
-   
-   For more information about hit\_source see: [Data column reference](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html). For more information about page\_event see: [Page Event Lookup](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html).
-   
-1. If the connector filtered rows, subtract those rows from the [!UICONTROL Occurrences] metric. The resulting number should match the number of events in the Adobe Experience Platform datasets.
-
-## Why records might be filtered or skipped during ingestion from Adobe Experience Platform
-
-Customer Journey Analytics [Connections](/help/connections/create-connection.md) allow you to bring and join multiple datasets together based on a common Person ID across the datasets. On the backend, we apply deduplication: full outer join or union on event datasets based on timestamps, and then inner join on profile and lookup dataset, based on the Person ID. 
-
-Here are some of the reasons why records might be skipped while ingesting data from Adobe Experience Platform. 
-
-* **Missing Timestamps** – If timestamps are missing from event datasets, those records will be totally ignored or skipped during ingestion. 
- 
-* **Missing Person IDs** – Missing Person IDs (from the events dataset and/or from profile/lookup dataset) cause those records to be ignored or skipped. The reason is that there are no common IDs or matching keys to join the records. 
- 
-* **Invalid or Large Person IDs** – With invalid IDs, the system cannot find a valid common ID among the datasets to join. In some cases, the person ID column has invalid Person IDs such as "undefined", or "00000000". A Person ID (with any combination of numbers and letters) that appears in an event more than 1 million times per month cannot be attributed to any specific user or person. It will be categorized as invalid. Those records cannot be ingested into the system and result in error-prone ingestion and reporting. 
+1. The total records in Query Services should match the number of rows in a data feed for the same time period.
