@@ -51,10 +51,10 @@ If all of the above settings appear similar and you want to at least validate th
 
 1. In Adobe Analytics [Data feeds](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview), generate feed files for the desired date range. Count the number of rows within each file, identifying and excluding the following rows:
 
-   * `exclude_hit` is not `0`
-   * `hit_source` is `0`, `3`, `5`, `7`, `8`, `9`, or `10`
-   * `page_event` is `53` or `63`
+   * `exclude_hit` is not `0` (Data excluded from Analysis Workspace in both products)
+   * `hit_source` is `0`, `3`, `5`, `7`, `8`, `9`, or `10` (Data Sources and other non-hit data)
+   * `page_event` is `53` or `63` (Streaming Media keep-alive hits)
 
-   Rows matching any of the above criteria is excluded from the Analytics Source Connector ingestion workflow, and therefore should also be excluded when counting data feed rows.
+   Rows matching any of the above criteria are excluded from the Analytics Source Connector ingestion workflow, and therefore should also be excluded when counting data feed rows.
 
 1. The total records in Query Services should match the number of rows in a data feed for the same time period.
