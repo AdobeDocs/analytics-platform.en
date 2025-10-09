@@ -179,7 +179,7 @@ As of August 2025, the following specific signals can be identified for each of 
 <td>chatgpt.com</td>
 <td>Direct traffic from ChatGPT interface</td>
 </tr>
-<tr">
+<tr>
 <td>Claude</td>
 <td>claude.ai</td>
 <td>Traffic from Anthropic's Claude interface</td>
