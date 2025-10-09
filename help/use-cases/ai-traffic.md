@@ -16,8 +16,8 @@ This use case article explores how to use the Customer Journey Analytics derived
 
 To detect LLM and AI-generated traffic, distinguish between:
 
-* **LLM crawlers**: collect data for training and retrieval augmented generation (RAG).
-* **AI agents**: function as interfaces that perform task on behalf of humans. AI agents prefer to interact via APIs, which bypasses web analytics tracking methods. Nonetheless, you can still analyze a significant portion of AI-generated traffic through websites.
+* **LLM crawlers**: Collect data for training and retrieval augmented generation (RAG).
+* **AI agents**: Function as interfaces that perform task on behalf of humans. AI agents prefer to interact via APIs, which bypasses web analytics tracking methods. Nonetheless, you can still analyze a significant portion of AI-generated traffic through websites.
 
 Three common core detection methods to identify and monitor LLM and AI-generated traffic are:
 
@@ -29,11 +29,11 @@ The following table illustrates how the detection methods can be used against di
 
 | Scenario | User agent identification | Referrer classification | Query parameter detection |
 |---|---|---|---|
-| **Training of a Model** | Agent  (`GPTBot`, `ClaudeBot`, and more) can be identified when server-side logging is implemented. | No classification is possible. AI crawlers don't generate referrers during training. | Detection is impossible. AI crawlers do not add parameters during training. |
-| **Agent Browsing** | Agent (`ChatGPT-User`, `claude-web`) can be identified  when server-side logging captures headers.  | Classification is possible if the agent navigates from an AI interface with referrer preservation. | Detection is sometimes possible if the AI service adds tracking parameters. |
-| **Retrieval-Augmented Generation (RAG) to Answer Query** | Agent  (`OAI-SearchBot`, `PerplexityBot`) can be identified with server-side logging. | No classification is typically possible as RAG operations often bypass referrer mechanisms. | Detection is rarely possible unless specifically implemented by the AI provider. |
-| **User Clicks Through** | The agent cannot be identified. AI agent appears as a normal user agent. | Classification is possible  when users click links from AI interfaces ([chatgpt.com](https://chatgpt.com), [claude.ai](https://claude.ai), and more). | Detection is possible when AI services add UTM parameters to outbound links. |
-| **Traffic Visibility Conditions** | Require server-side logging integration with Customer Journey Analytics or server-side tagging for agent identification. | Classification depends on AI platform referrer policies and proper HTTP header transmission. | Detection requires parameter preservation through redirects and proper URL parameter collection. | 
+| **Training of a model** | Agent  (`GPTBot`, `ClaudeBot`, and more) can be identified when server-side logging is implemented. | No classification is possible. AI crawlers don't generate referrers during training. | Detection is impossible. AI crawlers do not add parameters during training. |
+| **Agent browsing** | Agent (`ChatGPT-User`, `claude-web`) can be identified  when server-side logging captures headers.  | Classification is possible if the agent navigates from an AI interface with referrer preservation. | Detection is sometimes possible if the AI service adds tracking parameters. |
+| **Retrieval augmented generation (RAG) to answer query** | Agent  (`OAI-SearchBot`, `PerplexityBot`) can be identified with server-side logging. | No classification is typically possible as RAG operations often bypass referrer mechanisms. | Detection is rarely possible unless specifically implemented by the AI provider. |
+| **User clicks through** | The agent cannot be identified. AI agent appears as a normal user agent. | Classification is possible  when users click links from AI interfaces ([chatgpt.com](https://chatgpt.com), [claude.ai](https://claude.ai), and more). | Detection is possible when AI services add UTM parameters to outbound links. |
+| **Traffic visibility conditions** | Require server-side logging integration with Customer Journey Analytics or server-side tagging for agent identification. | Classification depends on AI platform referrer policies and proper HTTP header transmission. | Detection requires parameter preservation through redirects and proper URL parameter collection. | 
 
 ### Challenges
 
@@ -287,6 +287,6 @@ Use the derived fields and segments to report and analyze on LLM and AI-generate
 
 >[!MORELIKETHIS]
 >
->This use case article is based on the blog article from Brian Au: [Tracking and Analyzing LLM and AI-Generated Traffic in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967)
+>This use case article is based on the blog article [Tracking and Analyzing LLM and AI-Generated Traffic in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967).
 >
 >
