@@ -1,45 +1,47 @@
 ---
-title: Use derived fields to report on AI traffic
-description: Understand how you can use derived fields to report on AI traffic in Workspace.
+title: Use derived fields to report on LLM and AI-generated traffic
+description: Understand how you can use derived fields as a foundation to report on LLM and AI-generated traffic in Workspace.
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
+hide: yes
+hidefromtoc: yes
 ---
 
 # Report on LLM and AI-generated traffic
 
-This article explores how to use the Customer Journey Analytics derived fields capability to report on LLM (Large Language Model) and AI-generated traffic.
+This use case article explores how to use the Customer Journey Analytics derived fields capability as a foundation to report on LLM (Large Language Model) and AI-generated traffic.
 
 ## Detection methods
 
 To detect LLM and AI-generated traffic, distinguish between:
 
-* LLM crawlers: collect data for training and retrieval augmented generation (RAG).
-* AI agents: function as interfaces that perform task on behalf of humans. AI agents prefer to interact via APIs, which bypasses web analytics tracking methods. Nonetheless, you can still analyze a significant portion of AI-generated traffic through websites.
+* **LLM crawlers**: collect data for training and retrieval augmented generation (RAG).
+* **AI agents**: function as interfaces that perform task on behalf of humans. AI agents prefer to interact via APIs, which bypasses web analytics tracking methods. Nonetheless, you can still analyze a significant portion of AI-generated traffic through websites.
 
 Three common core detection methods to identify and monitor LLM and AI-generated traffic are:
 
-* User agent identification: When a request is made to your server, the HTTP User-Agent header is extracted and analyzed against known AI crawler and agent patterns. This server-side method requires access to HTTP headers and is most effective when implemented at the data collection layer.
-* Referrer classification: The HTTP Referrer header contains the URL of the previous webpage that linked to the current request. This header reveals when users click through to your site from web interfaces like ChatGPT or Perplexity.
-* Query parameter detection: AI services can append URL parameters (particularly UTM parameters) to links. These parameters persist in the URL and can be detected through standard analytics implementations, making these URL parameters valuable indicators even in client-side tracking scenarios.
+* **User agent identification**: When a request is made to your server, the HTTP User-Agent header is extracted and analyzed against known AI crawler and agent patterns. This server-side method requires access to HTTP headers and is most effective when implemented at the data collection layer.
+* **Referrer classification**: The HTTP Referrer header contains the URL of the previous webpage that linked to the current request. This header reveals when users click through to your site from web interfaces like ChatGPT or Perplexity.
+* **Query parameter detection**: AI services can append URL parameters (particularly UTM parameters) to links. These parameters persist in the URL and can be detected through standard analytics implementations, making these URL parameters valuable indicators even in client-side tracking scenarios.
 
 The following table illustrates how the detection methods can be used against different LLM and AI interaction scenarios.
 
 | Scenario | User agent identification | Referrer classification | Query parameter detection |
 |---|---|---|---|
-| **Training of a Model** | Agent  (GPTBot, ClaudeBot, and more) can be identified when server-side logging is implemented. | Not present. AI crawlers don't generate referrers during training. | Not present. AI crawlers don't typically add parameters during training. |
-| **Agent Browsing** | Agent (ChatGPT-User, claude-web) can be identified  when server-side logging captures headers.  | Might appear if the agent navigates from an AI interface with referrer preservation. | Sometimes present if the AI service adds tracking parameters. |
-| **Retrieval-Augmented Generation (RAG) to Answer Query** | Agent  (OAI-SearchBot, PerplexityBot) can be identified with server-side logging. | Not typically present as RAG operations often bypass referrer mechanisms. | Rarely present unless specifically implemented by the AI provider. |
-| **User Clicks Through** | Agent cannot be identified. AI agent appears as a normal user agent. | Detectable when users click links from AI interfaces (chatgpt.com, claude.ai, and more). | Sometimes AI services might add UTM parameters to outbound links. |
-| **Traffic Visibility Conditions** | Require server-side logging integration with Customer Journey Analytics or server-side tagging for agent identification. | Depends on AI platform referrer policies and proper HTTP header transmission. | Requires parameter preservation through redirects and proper URL parameter collection. | 
+| **Training of a Model** | Agent  (`GPTBot`, `ClaudeBot`, and more) can be identified when server-side logging is implemented. | No classification is possible. AI crawlers don't generate referrers during training. | Detection is impossible. AI crawlers do not add parameters during training. |
+| **Agent Browsing** | Agent (`ChatGPT-User`, `claude-web`) can be identified  when server-side logging captures headers.  | Classification is possible if the agent navigates from an AI interface with referrer preservation. | Detection is sometimes possible if the AI service adds tracking parameters. |
+| **Retrieval-Augmented Generation (RAG) to Answer Query** | Agent  (`OAI-SearchBot`, `PerplexityBot`) can be identified with server-side logging. | No classification is typically possible as RAG operations often bypass referrer mechanisms. | Detection is rarely possible unless specifically implemented by the AI provider. |
+| **User Clicks Through** | The agent cannot be identified. AI agent appears as a normal user agent. | Classification is possible  when users click links from AI interfaces ([chatgpt.com](https://chatgpt.com), [claude.ai](https://claude.ai), and more). | Detection is possible when AI services add UTM parameters to outbound links. |
+| **Traffic Visibility Conditions** | Require server-side logging integration with Customer Journey Analytics or server-side tagging for agent identification. | Classification depends on AI platform referrer policies and proper HTTP header transmission. | Detection requires parameter preservation through redirects and proper URL parameter collection. | 
 
 ### Challenges
 
 LLM & AI agents demonstrate complex and evolving behaviors when interacting with digital properties. These technologies operate inconsistently across platforms and versions. This inconsistency creates unique challenges for data professionals. The behavioral patterns vary significantly and depend on the specific AI platform, version, and interaction mode used. This operational diversity complicates efforts to track and categorize LLM and AI-generated traffic within standard analytics frameworks. The complex nature of these interactions, combined with their rapid evolution, requires nuanced detection and classification methods to maintain data integrity:
 
-* Partial data collection: Some newer AI agents execute limited JavaScript, resulting in incomplete analytics data for client-side implementations. As a result, some interactions are tracked while other interactions are missed.
-* Inconsistent session data: AI agents might execute JavaScript differently across sessions or page types. This execution difference creates fragmented user journeys in Customer Journey Analytics for client-side implementations.
-* Detection challenges: With partial tracking, detection becomes unreliable as certain touchpoints might be invisible to analytics.
+* **Partial data collection**: Some newer AI agents execute limited JavaScript, resulting in incomplete analytics data for client-side implementations. As a result, some interactions are tracked while other interactions are missed.
+* **Inconsistent session data**: AI agents might execute JavaScript differently across sessions or page types. This execution difference creates fragmented user journeys in Customer Journey Analytics for client-side implementations.
+* **Detection challenges**: With partial tracking, detection becomes unreliable as certain touchpoints might be invisible to analytics.
   
 
 ## Detection signatures
@@ -226,7 +228,7 @@ As of August 2025, the following specific signals can be identified for each of 
 <td>ChatGPT</td>
 <td ><a href="https://www.yoursite.com/product?utm_source=chatgpt.com" target="_blank" rel="noopener nofollow noreferrer">https://www.yoursite.com/product?utm_source=chatgpt.com</a></td>
 <td>utm_source</td>
-<td><a href="https://openai.com/chatgpt/search-product-discovery/" target="_blank" rel="noopener nofollow noreferrer">chatgpt.com</a></td>
+<td>chatgpt.com</td>
 </tr>
 <tr>
 <td>Perplexity</td>
@@ -237,45 +239,54 @@ As of August 2025, the following specific signals can be identified for each of 
 </tbody>
 </table>
 
-## Derived fields
 
-Based on the detection methods and signals, you define the following derived fields:
+## Implementation
 
-### LLM/AI user agent identification
-
-Use the Case When derived field functions to define a derived field that identifies LLM/AI user agents.
-
-![LLM/AI User Agent Identification](assets/aitraffic-useragents.png)
+You can report on LLM and AI-generated traffic within a typical Customer Journey Analytics setup (connection, data view, workspace project) through the specific setup and configuration of [derived fields](#derived-fields), [segments](#segments), and [workspace projects](#workspace-project).
 
 
-### LLM/AI UTM parameter detection
+### Derived fields
 
-Use the URL Parse and Classify derived field functions to define a derived field that detects UTM parameter detection.
+To configure detection methods and detection signals use derived fields as the foundation. For example, define derived fields for user agent identification, query parameter detection, and referrer classification.
 
-![LLM/AI UTM Parameter Detection](assets/aitraffic-utmparams.png)
+#### LLM/AI user agent identification
+
+Use the [Case When](/help/data-views/derived-fields/derived-fields.md#case-when) derived field functions to define a derived field that identifies LLM/AI user agents.
+
+![LLM/AI User Agent Identification](assets/aitraffic-useragents.png){zoomable="yes"}
 
 
-### LLM/AI referrer classification
+#### LLM/AI query parameter detection
+
+Use the [URL Parse](/help/data-views/derived-fields/derived-fields.md#url-parse) and [Classify](/help/data-views/derived-fields/derived-fields.md#classify) derived field functions to define a derived field that detects UTM parameter detection.
+
+![LLM/AI UTM Parameter Detection](assets/aitraffic-utmparams.png){zoomable="yes"}
+
+
+#### LLM/AI referrer classification
 
 Use the URL Parse and Classify derived field functions to define a derived field that classifies referrers.
 
-![LLM/AI Referrer Classification](assets/aitraffic-utmparams.png)
+![LLM/AI Referrer Classification](assets/aitraffic-utmparams.png){zoomable="yes"}
 
 
-## Segments
+### Segments
 
-Use the derived fields you created to define a segment that identifies LLM and AI-generated traffic.
+Set up dedicated segments that help you to identify events, sessions or people related to LLM and AI-generated traffic. For example, use the derived fields that you created earlier to define a segment that identifies LLM and AI-generated traffic.
 
-![LLM and AI-generated traffic segment](assets/aitraffic-segment.png)
-
-
-## Workspace
-
-Use the derived fields and segments to report and analyze on LLM and AI-generated traffic. For example see the example project shown below.
-
-![LLM and AI-generated traffic Workspace project](assets/aitraffic-workspace.png)
+![LLM and AI-generated traffic segment](assets/aitraffic-segment.png){zoomable="yes"}
 
 
+### Workspace project
+
+Use the derived fields and segments to report and analyze on LLM and AI-generated traffic. For example, see the annotated project below.
+
+![LLM and AI-generated traffic Workspace project](assets/aitraffic-workspace.png){zoomable="yes"}
 
 
 
+>[!MORELIKETHIS]
+>
+>This use case article is based on the blog article from Brian Au: [Tracking and Analyzing LLM and AI-Generated Traffic in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967)
+>
+>
