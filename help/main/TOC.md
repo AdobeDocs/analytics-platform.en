@@ -483,6 +483,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Use summary data](/help/use-cases/data-views/summary-data.md)
     + [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md)
   + Derived fields {#derived-fields}
+    + [Report on LLM and AI-generated traffic](/help/use-cases/ai-traffic.md)
     + [Report on goals](../use-cases/goals-using-derived-fields.md)
   + Product analysis {#product-analysis}
     + [Product analysis](/help/use-cases/product-analysis.md)
