@@ -267,7 +267,7 @@ Use the [URL Parse](/help/data-views/derived-fields/derived-fields.md#url-parse)
 
 Use the URL Parse and Classify derived field functions to define a derived field that classifies referrers.
 
-![LLM/AI Referrer Classification](assets/aitraffic-utmparams.png){zoomable="yes"}
+![LLM/AI Referrer Classification](assets/aitraffic-referrers.png){zoomable="yes"}
 
 
 ### Segments
