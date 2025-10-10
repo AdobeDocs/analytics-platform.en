@@ -1,6 +1,6 @@
 ---
-title: Ingest Adobe Experience Platform audiences into Customer Journey Analytics
-description: Explains how to ingest Adobe Experience Platform audiences into Customer Journey Analytics for further analysis.
+title: Ingest Experience Platform audiences
+description: Explains how to ingest Experience Platform audiences into Customer Journey Analytics for further analysis.
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
@@ -8,7 +8,7 @@ role: Admin
 ---
 # Ingest Adobe Experience Platform audiences into Adobe Customer Journey Analytics
 
-This use case explores an interim, manual way of bringing Adobe Experience Platform (Adobe Experience Platform) audiences into Customer Journey Analytics. These audiences might have been created in the Adobe Experience Platform Segment Builder, or Adobe Audience Manager, or other tools, and are stored in Real-time Customer Profile (RTCP). The audiences consist of a set of Profile IDs, along with any applicable attributes/events/etc. and we want to bring them into Customer Journey Analytics Workspace for analysis.
+This use case explores an interim solution to ingested Experience Platform audiences into Customer Journey Analytics. These audiences might have been created in the Experience Platform Segment Builder, or Adobe Audience Manager, or other tools, and are stored in Real-time Customer Profile . The audiences consist of a set of Profile IDs, along with any applicable attributes, events, and more. And you want to bring that audience data into Customer Journey Analytics Workspace for further analysis analysis.
 
 ## Prerequisites
 
@@ -18,15 +18,31 @@ This use case explores an interim, manual way of bringing Adobe Experience Platf
 * Access to Customer Journey Analytics. You need to be a Customer Journey Analytics product admin in order to create/modify Customer Journey Analytics connections and data views.
 * Ability to use the Adobe APIs (Segmentation, optionally others)
 
-## Step 1: Choose audience(s) in Real-time Customer Profile {#audience}
+## Steps
 
-Adobe Experience Platform [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) (RTCP) lets you see a holistic view of each individual customer by combining data from multiple channels, including online, offline, CRM, and third party. 
+The interim solution involves the following steps:
 
-You likely already have audiences in RTCP that may have come from various sources. Pick one or more audiences to ingest into Customer Journey Analytics.
+1. Select audiences in Real-time Customer Profile. 
+1. Create a profile-enabled dataset for export.
+1. Eport the audience through the use of an API call.
+1. Transform the export.
+1. Add the dataset to an connection.
+1. Update the data view.
+1. Report on the ingested audiences in a project.
+
+
+## Step 1: Select audiences in Real-time Customer Profile {#audience}
+
+Experience Platform [Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) lets you see a holistic view of each individual customer by combining data from multiple channels, including online, offline, CRM, and third party. 
+
+You likely already have audiences in RTCP that may have come from various sources. Select one or more audiences to ingest into Customer Journey Analytics. For example, WKND Fly Platinum and Gold Fly Club Members.
+
+
+
 
 ## Step 2: Create a Profile Union dataset for the export
 
-In order to export the audience to a dataset that can eventually be added to a connection in Customer Journey Analytics, you need to create a dataset whose schema is a Profile [Union schema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html#understanding-union-schemas).
+In order to export the audience to a dataset that you can ingest in Customer Journey Analytics as profiles, create a dataset whose schema is a Profile [Union schema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html#understanding-union-schemas).
 
 Union schemas are composed of multiple schemas that share the same class and have been enabled for Profile. The union schema enables you to see an amalgamation of all of the fields contained within schemas sharing the same class. Real-time Customer Profile uses the union schema to create a holistic view of each individual customer.
 
