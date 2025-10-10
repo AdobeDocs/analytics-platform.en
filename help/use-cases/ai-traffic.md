@@ -4,13 +4,16 @@ description: Understand how you can use derived fields as a foundation to report
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-hide: yes
-hidefromtoc: yes
 ---
 
 # Report on LLM and AI-generated traffic
 
 This use case article explores how to use the Customer Journey Analytics derived fields capability as a foundation to report on LLM (Large Language Model) and AI-generated traffic.
+
+>[!NOTE]
+>
+>The effectiveness of the [detection methods](#detection-methods), [detection signatures](#detection-signatures) and [implementation strategies](#implementation) depends on your specific data collection method, Experience Platform dataset coverage, and Customer Journey Analytics implementation. Results may vary based on your technical environment, data governance policies, and implementation approach. When using Experience Edge, you'll need to choose between recording the raw User Agent string or collecting device information.
+>
 
 ## Detection methods
 
@@ -24,6 +27,7 @@ Three common core detection methods to identify and monitor LLM and AI-generated
 * **User agent identification**: When a request is made to your server, the HTTP User-Agent header is extracted and analyzed against known AI crawler and agent patterns. This server-side method requires access to HTTP headers and is most effective when implemented at the data collection layer.
 * **Referrer classification**: The HTTP Referrer header contains the URL of the previous webpage that linked to the current request. This header reveals when users click through to your site from web interfaces like ChatGPT or Perplexity.
 * **Query parameter detection**: AI services can append URL parameters (particularly UTM parameters) to links. These parameters persist in the URL and can be detected through standard analytics implementations, making these URL parameters valuable indicators even in client-side tracking scenarios.
+
 
 The following table illustrates how the detection methods can be used against different LLM and AI interaction scenarios.
 
@@ -242,12 +246,12 @@ As of August 2025, the following specific signals can be identified for each of 
 
 ## Implementation
 
-You can report on LLM and AI-generated traffic within a typical Customer Journey Analytics setup (connection, data view, workspace project) through the specific setup and configuration of [derived fields](#derived-fields), [segments](#segments), and [workspace projects](#workspace-project).
+You can report on LLM and AI-generated traffic within a typical Customer Journey Analytics setup ([connection](/help/connections/overview.md), [data views](/help/data-views/data-views.md), and [workspace projects](/help/analysis-workspace/home.md)) through the specific setup and configuration of [derived fields](#derived-fields), [segments](#segments), and [workspace projects](#workspace-project).
 
 
 ### Derived fields
 
-To configure detection methods and detection signals use derived fields as the foundation. For example, define derived fields for user agent identification, query parameter detection, and referrer classification.
+To configure detection methods and detection signals use derived fields as the foundation. For example, define derived fields for [user agent identification](#user-agent-identification), [query parameter detection](#query-parameter-detection), and [referrer classification](#referrer-classification).
 
 #### LLM/AI user agent identification
 
@@ -258,16 +262,412 @@ Use the [Case When](/help/data-views/derived-fields/derived-fields.md#case-when)
 
 #### LLM/AI query parameter detection
 
-Use the [URL Parse](/help/data-views/derived-fields/derived-fields.md#url-parse) and [Classify](/help/data-views/derived-fields/derived-fields.md#classify) derived field functions to define a derived field that detects UTM parameter detection.
+Use the [URL Parse](/help/data-views/derived-fields/derived-fields.md#url-parse) and [Classify](/help/data-views/derived-fields/derived-fields.md#classify) derived field functions to define a derived field that detects query parameters.
 
 ![LLM/AI UTM Parameter Detection](assets/aitraffic-utmparams.png){zoomable="yes"}
 
 
 #### LLM/AI referrer classification
 
-Use the URL Parse and Classify derived field functions to define a derived field that classifies referrers.
+Use the [URL Parse](/help/data-views/derived-fields/derived-fields.md#url-parse) and [Classify](/help/data-views/derived-fields/derived-fields.md#classify) derived field functions to define a derived field that classifies referrers.
 
-![LLM/AI Referrer Classification](assets/aitraffic-referrers.png){zoomable="yes"}
+![LLM/AI Referrer Classification](assets/aitraffic-referrers.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+){zoomable="yes"}
 
 
 ### Segments
