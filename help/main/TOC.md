@@ -252,6 +252,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Share projects](../analysis-workspace/curate-share/share-projects.md)
     + [Create shareable links](../analysis-workspace/curate-share/shareable-links.md)
     + [Read-only projects](../analysis-workspace/curate-share/view-only-projects.md)
+    + [Generate presentations](/help/analysis-workspace/curate-share/generate-presentations.md)
   + Export {#export}
     + [Overview](../analysis-workspace/export/export-project-overview.md)
     + [Download](../analysis-workspace/export/download-send.md)
@@ -482,6 +483,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Use summary data](/help/use-cases/data-views/summary-data.md)
     + [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md)
   + Derived fields {#derived-fields}
+    + [Report on LLM and AI-generated traffic](/help/use-cases/ai-traffic.md)
     + [Report on goals](../use-cases/goals-using-derived-fields.md)
   + Product analysis {#product-analysis}
     + [Product analysis](/help/use-cases/product-analysis.md)
@@ -505,7 +507,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Labs User Guide](../labs/labs.md)
 
 + Troubleshooting {#troubleshooting}
-  + [Compare data](../troubleshooting/compare.md)
+  + [Compare Source Connector data](../troubleshooting/compare.md)
   + [Consistency of metrics and audiences](../troubleshooting/consistency-rcdp-cja.md)
   + [Lack of permissions](../troubleshooting/lack-of-permissions.md)
 
