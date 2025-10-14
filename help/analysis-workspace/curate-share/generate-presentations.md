@@ -63,15 +63,15 @@ This functionality reduces the time and effort required to surface findings from
 
 ## Download a generated .pptx presentation
 
+## Unsupported features
 
-
-## Unsupported panels
+### Unsupported panels
 
 Most panels can be included in slides that are generated from a Workspace project. However, the following panel cannot be included, and shows as dimmed when the configuration options are displayed:
 
 * Attribution panel
 
-## Unsupported visualizations
+### Unsupported visualizations
 
 Most visualizations can be included in slides that are generated from a Workspace project. However, the following visualizations cannot be included, and show as dimmed when the configuration options are displayed:
 
@@ -86,3 +86,7 @@ Most visualizations can be included in slides that are generated from a Workspac
 * Scatter
 
 * Treemap
+
+### Guided analysis
+
+### Breakdowns
