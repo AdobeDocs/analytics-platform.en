@@ -28,7 +28,7 @@ Sparklines always include:
 
 ## Use line visualizations to view trended data
 
-[Line](/help/analyze/analysis-workspace/visualizations/line.md) visualizations display the data of the freeform table they are connected to.
+[Line](/help/analysis-workspace/visualizations/line.md) visualizations display the data of the freeform table they are connected to.
 
 ### Connect a line visualization to a freeform table
 
