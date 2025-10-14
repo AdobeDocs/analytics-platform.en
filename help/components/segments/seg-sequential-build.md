@@ -1,6 +1,6 @@
 ---
 description: Learn about sequential segments that use the THEN operator to define a sequence of segment conditions.
-title: SequentialSsegments
+title: Sequential segments
 feature: Filters, Segments
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
 ---
