@@ -7,7 +7,7 @@ role: User
 hide: yes
 hidefromtoc: yes
 ---
-# Generate presentations from Workspace reports {#generate-powerpoint}
+# Data storytelling: Generate slide presentations from Workspace reports {#generate-powerpoint}
 
 You can automatically generate .pptx presentations from Analysis Workspace projects. When generating presentations, Customer Journey Analytics automatically identifies key insights and converts them into stakeholder-ready slides. 
 
