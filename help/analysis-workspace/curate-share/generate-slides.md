@@ -9,7 +9,7 @@ hidefromtoc: yes
 ---
 # Data storytelling: Generate slide presentations from Workspace reports {#generate-powerpoint}
 
-You can automatically generate .pptx presentations from Analysis Workspace projects. When generating presentations, Customer Journey Analytics automatically identifies key insights and converts them into stakeholder-ready slides. 
+You can automatically generate .pptx presentations from Analysis Workspace projects. When generating slide presentations, Customer Journey Analytics automatically identifies key insights and converts them into stakeholder-ready slides. 
 
 This functionality reduces the time and effort required to surface findings from your Workspace projects, and it allows you to quickly build executive narratives and communicate business impact.
 
@@ -37,6 +37,10 @@ This functionality reduces the time and effort required to surface findings from
 
 1. Select **[!UICONTROL Generate slides]** in the upper-right corner of the page.
 
+   The Generate slides dialog displays.
+
+   ![Generate slides dialog](assets/generate-slides.png)
+
 1. Specify the following information:
 
    |Option | Description | 
@@ -48,22 +52,41 @@ This functionality reduces the time and effort required to surface findings from
    | **[!UICONTROL Annotations]** | | 
    | **[!UICONTROL Emphasize components]** | Choose up to 5 metrics and 5 dimensions from your visualizations that you want to emphasize in the presentation.<p>When no emphasis is applied, components show in presentations as follows:<ul><li>**Metrics and dimensions:** Italics</li><li>**Dimension items:** Quotation marks</li></ul></p><p>When emphasis is applied, components show in presentations as follows:</p><ul><li>**Metrics and dimensions:** Italics and bold</li><li>**Dimension items:** Bold when the corresponding dimension is emphasized<p>A color is also applied to the dimension item when the dimension item is highlighted in the chart.</p></li></ul> | 
 
-(Conditional) Select **[!UICONTROL Default theme]** if you want your slides to be generated with the default theme.
+1. (Conditional) Select **[!UICONTROL Default theme]** if you want to quickly generate slides in fewer steps, and if a corporate theme is not required for your slide presentation. 
 
-1. Select whether to use a default theme or upload a custom template:
+   Simply choose the color theme of your presentation by selecting the desired color.
 
-   * **[!UICONTROL Default theme]**: 
+   ![Generate slides with the default theme](assets/generate-slides-default-theme.png)
 
-   * **[!UICONTROL Upload template]**:
+1. (Conditional) Select **[!UICONTROL Upload template]** if your slide presentation needs to match a corporate theme. This option requires more steps and that you upload a custom template. 
 
+   ![Generate slides with a custom template](assets/generate-slides-upload-template.png)
 
+   To use a custom template, we recommend that you:
 
+   1. Download this blank template
+
+   1. Apply your custom styles
+
+   1. Re-upload the template without changing any master layout names
+
+   Alternatively, you can upload a custom template directly. If you do, make sure that the uploaded file has master layouts with the following names: "Title_Slide", "Section_Divider", "Title_Text", "Title_Chart", "Title_Two_Content_Mixed", "Title_Three_Content_Mixed"
+
+   .pptx and .potx files up to 25MB in size are supported.
+
+1. Select **[!UICONTROL Export PPT]**.
 
 
 ## Edit slides from a previously generated presentation
 
 
 ## Download a generated .pptx presentation
+
+
+
+## Permission requirements to generate slides
+
+
 
 ## Unsupported project elements and features {#unsupported}
 
