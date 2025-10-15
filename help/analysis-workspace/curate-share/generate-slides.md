@@ -41,12 +41,14 @@ This functionality reduces the time and effort required to surface findings from
 
    |Option | Description | 
    |---------|----------|
-   | **[!UICONTROL Cover title]** | Specify a title for the presentation.  | 
-   | **[!UICONTROL Include presenter name]** | | 
-   | **[!UICONTROL Panels and visualizations to include]** | Choose the panels and visualization you want to include in the presentation. You can include up to 50 visualizations. | 
+   | **[!UICONTROL Cover title]** | Specify a title for the presentation. This title appears on the title slide of the presentation.  | 
+   | **[!UICONTROL Include presenter name]** | Specify the name of the presenter. This name appears on the title slide of the presentation, below the cover title. | 
+   | **[!UICONTROL Panels and visualizations to include]** | Choose the panels and visualization you want to include in the presentation. You can include up to 50 visualizations.<p>Most panels and visualizations are supported. For information about unsupported panels and visualization, see [Unsupported project elements and features](#unsupported-project-elements-and-features).</p> | 
    | **[!UICONTROL Panel and visualization descriptions]** | | 
    | **[!UICONTROL Annotations]** | | 
    | **[!UICONTROL Emphasize components]** | Choose up to 5 metrics and 5 dimensions from your visualizations that you want to emphasize in the presentation.<p>When no emphasis is applied, components show in presentations as follows:<ul><li>**Metrics and dimensions:** Italics</li><li>**Dimension items:** Quotation marks</li></ul></p><p>When emphasis is applied, components show in presentations as follows:</p><ul><li>**Metrics and dimensions:** Italics and bold</li><li>**Dimension items:** Bold when the corresponding dimension is emphasized<p>A color is also applied to the dimension item when the dimension item is highlighted in the chart.</p></li></ul> | 
+
+(Conditional) Select **[!UICONTROL Default theme]** if you want your slides to be generated with the default theme.
 
 1. Select whether to use a default theme or upload a custom template:
 
@@ -58,35 +60,39 @@ This functionality reduces the time and effort required to surface findings from
 
 
 
-## Edit slides from a presentation that you previously generated
+## Edit slides from a previously generated presentation
 
 
 ## Download a generated .pptx presentation
 
-## Unsupported features
+## Unsupported project elements and features {#unsupported}
 
-### Unsupported panels
-
-Most panels can be included in slides that are generated from a Workspace project. However, the following panel cannot be included, and shows as dimmed when the configuration options are displayed:
+The following Analysis Workspace elements and features used in a project aren't supported when generating slides:
 
 * Attribution panel
 
-### Unsupported visualizations
+  This panel shows as dimmed when the configuration options are displayed.
+  
+  All other panels can be included in slides that are generated from a Workspace project.
 
-Most visualizations can be included in slides that are generated from a Workspace project. However, the following visualizations cannot be included, and show as dimmed when the configuration options are displayed:
+* Some visualizations
 
-* Cohort table
+  Most visualizations can be included in slides that are generated from a Workspace project. However, the following visualizations cannot be included, and show as dimmed when the configuration options are displayed:
 
-* Journey canvas
+  * Cohort table
 
-* Bullet
+  * Journey canvas
 
-* Combo
+  * Bullet
 
-* Scatter
+  * Combo
 
-* Treemap
+  * Scatter
 
-### Guided analysis
+  * Treemap
 
-### Breakdowns
+* Breakdowns
+
+* Guided analyses
+
+
