@@ -9,7 +9,7 @@ hidefromtoc: yes
 ---
 # Data storytelling: Generate slide presentations from Workspace reports {#generate-powerpoint}
 
-You can automatically generate .pptx presentations from Analysis Workspace projects. When generating slide presentations, Customer Journey Analytics automatically identifies key insights and converts them into stakeholder-ready slides. 
+Users with [the necessary permissions](#permission-requirements-to-generate-slides) can automatically generate .pptx presentations from Analysis Workspace projects. When generating slide presentations, Customer Journey Analytics automatically identifies key insights and converts them into stakeholder-ready slides. 
 
 This functionality reduces the time and effort required to surface findings from your Workspace projects, and it allows you to quickly build executive narratives and communicate business impact.
 
@@ -86,7 +86,26 @@ This functionality reduces the time and effort required to surface findings from
 
 ## Permission requirements to generate slides
 
+>[!AVAILABILITY]
+>
+>If your organization does not have access to this capability, please contact your Adobe account representative to learn more about licensing.
+>
+>This capability is enabled by default for all users in organizations who have the required licensing. 
 
+Product profile administrators whose organizations have licensing to generate slides can disable access if needed.
+
+In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Data storytelling]** permission determines access to this capability. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console]:
+   1. Navigate to **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
+   1. Select the title of the product profile for which you want to provide access to [!UICONTROL Data storytelling].
+   1. In the specific product profile, select **[!UICONTROL Permissions]**.
+   1. Select ![Edit](/help/assets/icons/Edit.svg) to edit **[!UICONTROL Reporting Tools]**.
+   1. Select ![AddCircle](/help/assets/icons/RemoveCircle.svg) to remove **Data storytelling** from the **[!UICONTROL Included permission items]**.
+   
+      <!--add screenshot of permission in the admin console-->
+
+   1. Select **[!UICONTROL Save]** to save the permissions.
+
+For more information, see [User-level access](/help/technotes/access-control.md#user-level-access) in  [Access control](/help/technotes/access-control.md#access-control) for more information.
 
 ## Unsupported project elements and features {#unsupported}
 
