@@ -6,9 +6,9 @@ feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 role: Admin
 ---
-# Ingest Adobe Experience Platform audiences into Adobe Customer Journey Analytics
+# Ingest Experience Platform audiences
 
-This use case explores an interim solution to ingested Experience Platform audiences into Customer Journey Analytics. These audiences might have been created in the Experience Platform Segment Builder, or Adobe Audience Manager, or other tools, and are stored in Real-time Customer Profile . The audiences consist of a set of Profile IDs, along with any applicable attributes, events, and more. And you want to bring that audience data into Customer Journey Analytics Workspace for further analysis analysis.
+This use case explores an interim solution to ingest Experience Platform audiences into Customer Journey Analytics. These audiences might have been created in the Experience Platform Segment Builder, or Adobe Audience Manager, or other tools, and are stored in Real-time Customer Profile. The audiences consist of a set of Profile IDs, along with any applicable attributes, events, and more. And you want to bring that audience data into Customer Journey Analytics Workspace for further analysis analysis.
 
 ## Prerequisites
 
@@ -22,13 +22,14 @@ This use case explores an interim solution to ingested Experience Platform audie
 
 The interim solution involves the following steps:
 
-1. Select audiences in Real-time Customer Profile. 
-1. Create a profile-enabled dataset for export.
-1. Eport the audience through the use of an API call.
-1. Transform the export.
-1. Add the dataset to an connection.
-1. Update the data view.
-1. Report on the ingested audiences in a project.
+1. Select audiences (Experience Platform UI).
+1. Create a profile-enabled dataset (Experience Platform API).
+1. Export audiences (Experience Platform API).
+1. Transform the export (Experience Platform UI and more).
+1. Create a schema and dataset (Experience Platform UI).
+1. Add the new dataset (Customer Journey Analytics UI)
+1. Update the data view (Customer Journey Analytics UI).
+1. Report on the audiences (Customer Journey Analytics UI).
 
 
 ## Step 1: Select audiences in Real-time Customer Profile {#audience}
