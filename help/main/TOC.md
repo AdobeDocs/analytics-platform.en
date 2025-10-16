@@ -196,12 +196,13 @@ breadcrumb-title: Customer Journey Analytics Guide
     + Freeform table {#freeform-table}
       + [Overview](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
       + [Create hyperlinks](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
+      + [View trended data](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md)
+      + [Filter and sort](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
+      + [Totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Column and row settings {#column-row-settings}
         + [Column settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
         + [Row settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
         + [Dynamic and static items](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-      + [Filter and sort](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-      + [Totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
     + Cohort table {#cohort-table}
       + [Overview](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
       + [Configure](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
@@ -252,7 +253,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Share projects](../analysis-workspace/curate-share/share-projects.md)
     + [Create shareable links](../analysis-workspace/curate-share/shareable-links.md)
     + [Read-only projects](../analysis-workspace/curate-share/view-only-projects.md)
-    + [Generate presentations](/help/analysis-workspace/curate-share/generate-presentations.md)
+    + [Generate slide presentations](/help/analysis-workspace/curate-share/generate-slides.md)
   + Export {#export}
     + [Overview](../analysis-workspace/export/export-project-overview.md)
     + [Download](../analysis-workspace/export/download-send.md)
