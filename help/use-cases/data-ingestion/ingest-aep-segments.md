@@ -238,6 +238,7 @@ WHERE value.status = 'realized' AND (key = '{AUDIENCE_ID_1}' OR key = 'AUDIENCE_
 Where:
 
 * `IDENTITY_TO_USE_AS_PERSON_ID` is one of the fields you defined as part of the export job. For example: `_demoemea.identification.core.email`.
+* `DATASET_TABLE_NAME` is the table name of the dataset.
 * `AUDIENCE_ID_x` are the audiences you defined as part of the export job. You need to specify these audiences once more as the specification in the export job is a row-level filter. That row-level filter returns profiles for the specified segments with all the segment memberships for each of the profiles.
 
 
@@ -344,7 +345,7 @@ Create a dataset and use that dataset to ingest the transformed JSON data.
 
 In the Experience Platform UI:
 
-1. Select **[!UICONTROL Data Management]** > ![Schema](/help/assets/icons2/Schema.svg) **[!UICONTROL Datasets]**.
+1. Select **[!UICONTROL Data Management]** > ![Data](/help/assets/icons2/Data.svg) **[!UICONTROL Datasets]**.
 1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create dataset]**.
 1. Select **[!UICONTROL Create dataset from schema]**.
 1. In the **[!UICONTROL Create dataset from schema]** wizard, in the **[!UICONTROL Select schema]** step:
