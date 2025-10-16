@@ -1,12 +1,12 @@
 ---
-title: Ingest Experience Platform audiences
-description: Explains how to ingest Experience Platform audiences into Customer Journey Analytics for further analysis.
+title: Ingest and use Experience Platform audiences
+description: Explains how to ingest and use Experience Platform audiences into Customer Journey Analytics for further analysis.
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 role: Admin
 ---
-# Ingest Experience Platform audiences
+# Ingest and use Experience Platform audiences
 
 This use case explores an interim solution to ingest Experience Platform audiences into Customer Journey Analytics. These audiences might have been created in the Experience Platform Segment Builder, or Adobe Audience Manager, or other tools, and are stored in Real-time Customer Profile. The audiences consist of a set of Profile IDs, along with any applicable attributes, events, and more. You want to bring that audience data into Customer Journey Analytics for further analysis.
 
@@ -15,7 +15,7 @@ This use case explores an interim solution to ingest Experience Platform audienc
 * Access to [Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home), specifically Real-time Customer Profile.
 * Access to create and manage Experience Platform [schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) and [datasets](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview).
 * Access to [Experience Platform Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) (and the ability to write SQL).
-* Access to an editor that can perform some transformations of data.
+* Access to a tool that can perform some transformations of data.
 * Access to Customer Journey Analytics. You need to be a [Customer Journey Analytics product admin](/help/technotes/access-control.md) to create and modify Customer Journey Analytics connections and data views.
 * [Authenticate and access to Experience Platform APIs (Catalog Service API and Segmentation Service API)](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication). You need to create a project in the Developer console of the organization and sandbox and ensure you have the information that is required to successfully submit API calls.
 
@@ -43,6 +43,8 @@ In the Experience Platform UI:
 
 1. Select **[!UICONTROL Customer]** > ![SegmentAudience](/help/assets/icons2/SegmentAudience.svg) **[!UICONTROL Audiences]**.
 1. Select **[!UICONTROL Browse]** and search for the audiences that you want to ingest and use in Customer Journey Analytics. Note the **[!UICONTROL Audience Id]** for each of the audiences for later use.
+
+   ![Audiences](assets/audiences.png)
 
 +++
 
@@ -83,18 +85,18 @@ Where:
 #### Response
 
 ```json
-["@/dataSets/{DATASET_ID}"] // 
+["@/dataSets/{DATASET_ID}"]
 ```
 
 Where:
 
-* DATASET_ID is the dataset identifier for the created dataset.
+* `DATASET_ID` is the dataset identifier for the created dataset.
 
 +++
 
 ### Export audiences
 
-Export the selected audiences into the dataset you just create. Use the [Segmentation Service API to create an export job](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/export-jobs#create) that sends the audiences into the dataset.
+Export the selected audiences into the dataset you just created. Use the [Segmentation Service API to create an export job](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/export-jobs#create) that sends the audiences into the dataset.
 
 +++ Export job request
 
@@ -141,7 +143,7 @@ curl -X POST https://platform.adobe.io/data/core/ups/export/jobs \
 Where
 
 * `COMMA_SEPARATED_LIST_OF_FULLY_QUALIFIED_FIELD_NAMES` could be something like `_demoemea.identification.core.ecid, _demoemea.identification.core.email, _demoemea.identification.core.phoneNumber, person.gender, person.name.firstName, person.name.lastName`. Ensure you include at least the relevant fields (like the personID (email)) that you want to use in your Customer Journey Analysis.
-* `AUDIENCE_ID_x` is the audience identifier of the audience that you want to export.
+* `AUDIENCE_ID_x` are the audience identifiers of the audiences that you want to export.
 * `DATASET_ID` is the dataset that you created.
 
 
@@ -213,14 +215,14 @@ The data in the dataset is not in the correct format for Customer Journey Analyt
 
 +++ SQL to fetch exported audience data
 
-Use a PSQL client that connects to Experience Platform Query Service. To retrieve the credentials
+Use a PSQL client that connects to Experience Platform Query Service. 
 
-In the Experience Platform UI.
+In the Experience Platform UI:
 
 1. Select **[!UICONTROL Data Management]** > ![DataSearch](/help/assets/icons2/DataSearch.svg) **[!UICONTROL Queries]**.
 1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Credentials]**.
 
-Use the credentials to connect your PSQL client to Customer Journey Analytics Query Service.
+Use the credentials to configure your PSQL client to connect to Customer Journey Analytics Query Service.
 
 #### Query
 
@@ -261,8 +263,8 @@ The result of the query, in JSON format, should look like:
 
 Where:
 
-* `PERSON_ID_x`,  PERSON_ID_y are the identifier values for the identifier you want to use as the person ID. For example, `john.doe@gmail.com` when you use email. 
-* `AUDIENCE_ID_x`, `AUDIENCE_ID_y` are the audience identifiers.
+* `PERSON_ID_x` are the identifier values for the identifier you want to use as the person ID. For example, `john.doe@gmail.com` when you use email. 
+* `AUDIENCE_ID_x` are the audience identifiers.
   
 +++
 
@@ -302,7 +304,7 @@ Where:
 * `AUDIENCE_ID_x` are the audience identifiers.
 * `AUDIENCE_FRIENDLY_NAME_x` are friendly audience names for the audience ids. For example: `Luma - Blue+ Members`.
   
-Use your favorite editor to transform the original JSON to this format.
+Use your favorite tool to transform the original JSON to this format.
 
 +++
 
