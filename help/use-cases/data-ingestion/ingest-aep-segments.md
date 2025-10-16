@@ -396,9 +396,10 @@ Configure a data view for the connection you just created or edited.
 
 +++
 
-### Report and analyze.
+### Report and analyze
 
-Finally, use Analysis Workspace to report on Experience Platform audience data in one or more panels that use the data view with the audience membership components.
+Finally, use Analysis Workspace to report on Experience Platform audience data in one or more panels that use the data view with the audience membership components like `audienceMembershipId`, `audienceMembershipIdName`, and `personID`.
+
 
 
 <!--
@@ -466,13 +467,14 @@ Add `audienceMembershipId`, `audienceMembershipIdName` and `personID` to the dat
 
 You can now report on `audienceMembershipId`, `audienceMembershipIdName` and `personID` in Workspace.
 
+-->
+
+
 ## Additional notes
 
 * You should  perform this process on a regular cadence, so that audience data is constantly refreshed within Customer Journey Analytics.
 * You can import multiple audiences within a single Customer Journey Analytics connection. This adds additional complexity to the process, but it is possible. For this to work, you need to make a few modifications to the above process:
    1. Perform this process for each desired audience in your audience collection within RTCP.
-   1. Customer Journey Analytics supports arrays/object arrays in profile datasets. Using an [array of objects](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html) for the audienceMembershipId or audienceMembershipIdName is the best option. 
+   1. Customer Journey Analytics supports arrays/object arrays in profile datasets. Using an [array of objects](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html) for the `audienceMembershipId` or `audienceMembershipIdName` is the best option. 
    1. In your data view, create a new dimension using the Substring transformation on the `audienceMembershipId` field to convert the comma-separated values string to an array. NOTE: there is currently a limit of 10 values in the array.
    1. You can now report on this new dimension `audienceMembershipIds` within Customer Journey Analytics Workspace.
-
--->
