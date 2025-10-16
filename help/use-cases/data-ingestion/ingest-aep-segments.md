@@ -238,7 +238,7 @@ WHERE value.status = 'realized' AND (key = '{AUDIENCE_ID_1}' OR key = 'AUDIENCE_
 Where:
 
 * `IDENTITY_TO_USE_AS_PERSON_ID` is one of the fields you defined as part of the export job. For example: `_demoemea.identification.core.email`.
-* `AUDIENCE_ID_x` are the audiences you defined as part of the export job. You need to specify these audiences once more as the specification in the export job is a row-level filter. That row-level return profiles for the specified segments but also all segment memberships for each of the profiles.
+* `AUDIENCE_ID_x` are the audiences you defined as part of the export job. You need to specify these audiences once more as the specification in the export job is a row-level filter. That row-level filter returns profiles for the specified segments with all the segment memberships for each of the profiles.
 
 
 #### Results
@@ -268,7 +268,7 @@ Where:
   
 +++
 
-You need to transform this JSON data to add the tenant name of the environment and to provide a more user-friendly name to the audience.
+You need to transform this JSON data to add the tenant name of the environment and to provide a more user-friendly name for the audience.
 
 +++ Transform JSON
 
@@ -311,7 +311,7 @@ Use your favorite tool to transform the original JSON to this format.
 
 ### Create a schema and dataset
 
-To use the transformed JSON as exported audience in Customer Journey Analytics, you need to create a dedicated schema.
+To use the transformed JSON as exported audience data in Customer Journey Analytics, you need to create a dedicated schema.
 
 +++ Create schema
 
