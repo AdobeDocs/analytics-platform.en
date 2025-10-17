@@ -226,6 +226,8 @@ Use the credentials to configure your PSQL client to connect to Customer Journey
 
 #### Query
 
+Execute this query to retrieve the audience data from the dataset:
+
 ```sql
 SELECT ROW_NUMBER() OVER (ORDER BY key)::text as _id, personID, key as audienceMembershipId
 FROM (
