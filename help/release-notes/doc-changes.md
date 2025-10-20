@@ -14,6 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **October 2025** | |
+| Ingest and use Experience Platform audiences | Updated use case article on how to [ingest and use Experience Platform audiences](/help/use-cases/data-ingestion/ingest-aep-segments.md). |
 | Report on LLM and AI-generated traffic | Added [use case article](/help/use-cases/ai-traffic.md) on how to report on LLM and AI-generated traffic using derived fields as the foundation. The article is based on the blog article [Tracking and Analyzing LLM and AI-Generated Traffic in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967). |
 | **September 2025** | |
 | Dates before 1900 | Added a [note](/help/connections/create-connection.md#datasets) on how dates before 1900 are handled by Customer Journey Analytics. |
