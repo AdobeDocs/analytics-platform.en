@@ -33,7 +33,7 @@ This functionality reduces the time and effort required to surface findings from
 
 <!-- markdownlint-enable MD034 -->
 
-1. Go to the Workspace project that contains the data that you want to use as the basis of your presentation.
+1. Go to the Workspace project that contains the data that you want to use as the basis of your slide presentation.
 
 1. Select **[!UICONTROL Generate slides]** in the upper-right corner of the page.
 
@@ -58,21 +58,31 @@ This functionality reduces the time and effort required to surface findings from
 
    ![Generate slides with the default theme](assets/generate-slides-default-theme.png)
 
-1. (Conditional) Select **[!UICONTROL Upload template]** if your slide presentation needs to match a corporate theme. This option requires more steps and that you upload a custom template. 
+1. (Conditional) Select **[!UICONTROL Upload template]** if your slide presentation needs to match a corporate theme. This option requires that you upload a custom template and apply your custom styles. 
 
    ![Generate slides with a custom template](assets/generate-slides-upload-template.png)
 
-   To use a custom template, we recommend that you:
+   To upload a custom template, do either of the following:
+   
+   * (Recommended) Download a blank template and modify it. 
 
-   1. Download this blank template
+     1. Download this blank template. <!--add link-->
 
-   1. Apply your custom styles
+     1. Apply your custom styles to the blank template.
 
-   1. Re-upload the template without changing any master layout names
+     1. Re-upload the template without changing any master layout names.
 
-   Alternatively, you can upload a custom template directly. If you do, make sure that the uploaded file has master layouts with the following names: "Title_Slide", "Section_Divider", "Title_Text", "Title_Chart", "Title_Two_Content_Mixed", "Title_Three_Content_Mixed"
+   * Upload a custom template directly. 
+   
+     1. From your file system, drag your custom template to the drop area.
+     
+        Or
+        
+        Select **[!UICONTROL Browse]**, then browse to and select your custom template from the file system. 
+        
+        Make sure that the uploaded file has master layouts with the following names: "Title_Slide", "Section_Divider", "Title_Text", "Title_Chart", "Title_Two_Content_Mixed", "Title_Three_Content_Mixed"
 
-   .pptx and .potx files up to 25MB in size are supported.
+        .pptx and .potx files up to 25MB in size are supported.
 
 1. Select **[!UICONTROL Export PPT]**.
 
