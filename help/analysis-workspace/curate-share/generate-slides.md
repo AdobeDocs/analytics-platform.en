@@ -98,13 +98,13 @@ This functionality reduces the time and effort required to surface findings from
 
 >[!AVAILABILITY]
 >
->If your organization does not have access to this capability, please contact your Adobe account representative to learn more about licensing.
+>If your organization does not have access to generate slide presentations from a Workspace project, please contact your Adobe account representative to learn more about licensing.
 >
->This capability is enabled by default for all users in organizations who have the required licensing. 
+>This capability is enabled by default for all users in organizations that have the required licensing. 
 
 Product profile administrators whose organizations have licensing to generate slides can disable access if needed.
 
-In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Data storytelling]** permission determines access to this capability. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console]:
+In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Data storytelling]** permission determines access to this capability. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console] if they want to disable access:
    1. Navigate to **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
    1. Select the title of the product profile for which you want to provide access to [!UICONTROL Data storytelling].
    1. In the specific product profile, select **[!UICONTROL Permissions]**.
