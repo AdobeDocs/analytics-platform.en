@@ -9,9 +9,53 @@ hidefromtoc: yes
 ---
 # Data storytelling: Generate slide presentations from Workspace reports {#generate-powerpoint}
 
-You can automatically generate .pptx presentations from Analysis Workspace projects. When generating presentations, Customer Journey Analytics automatically identifies key insights and converts them into stakeholder-ready slides. 
+Users with [the necessary permissions](#permission-requirements-to-generate-slides) can automatically generate .pptx presentations from Analysis Workspace projects. When generating these slide presentations, Customer Journey Analytics automatically creates a story from your data by identifying key insights and converting them into stakeholder-ready slides. 
 
-This functionality reduces the time and effort required to surface findings from your Workspace projects, and it allows you to quickly build executive narratives and communicate business impact.
+This functionality reduces the time and effort required to surface findings from your Workspace projects, and it allows you to quickly build executive narratives and communicate business impact to stakeholders.
+
+This automatically generated data story allows analysts to focus on data exploration, while Customer Journey Analytics curates and formats the analyst's findings for stakeholder consumption.
+
+## Understand data stories in slide presentations
+
+Analysis Workspace uses generative AI to create data stories within slide presentations. These data stories supplement an analysis for a given Workspace project by providing additional context, surfacing important highlights, and giving ideas for next steps. call out hidden trends, anomalies, contributing factors, key drivers
+
+### Additional value provided by data stories
+
+Data stories supplement an analysis for a given Workspace project by:
+
+* Providing additional context
+
+* Highlighting important insights
+
+* Calling out hidden trends, anomalies, and other contributing factors
+
+* Identifying key drivers
+
+* Giving ideas for next steps
+
+### Project elements that shape data stories
+
+Analysis Workspace creates data stories by considering the following project elements:
+
+* Inter-dimension and inter-metric relationships
+
+* The individual elements that form the basis of the analysis: dimensions, metrics, filters, freeform table structure, visualizations and panels 
+
+* The names given to the panels, tables and visualizations
+
+* The ordering of metrics in a freeform table (to determine priority)
+
+* Summary numbers and summary texts (to determine metrics that need to be highlighted in the data story)
+
+### Presentation elements of a data story
+
+Data stories consist of an executive summary slide, detail slides, and section dividers.
+
+**Executive summary:** Prioritizes the highest-value insights and crafts an overarching story between 1 and 5 sentences in length.
+
+**Detail slides:** Generates insights related to any tables, panels, or visualizations in a Workspace project. Insights consist of trends, seasonalities, anomalies, and correlations.
+
+**Section dividers:** Divides insights with appropriately placed and named section dividers.
 
 ## Generate a .pptx presentation based on a Workspace project
 
@@ -33,9 +77,13 @@ This functionality reduces the time and effort required to surface findings from
 
 <!-- markdownlint-enable MD034 -->
 
-1. Go to the Workspace project that contains the data that you want to use as the basis of your presentation.
+1. Go to the Workspace project that contains the data that you want to use as the basis of your slide presentation.
 
 1. Select **[!UICONTROL Generate slides]** in the upper-right corner of the page.
+
+   The Generate slides dialog displays.
+
+   ![Generate slides dialog](assets/generate-slides.png)
 
 1. Specify the following information:
 
@@ -48,22 +96,71 @@ This functionality reduces the time and effort required to surface findings from
    | **[!UICONTROL Annotations]** | | 
    | **[!UICONTROL Emphasize components]** | Choose up to 5 metrics and 5 dimensions from your visualizations that you want to emphasize in the presentation.<p>When no emphasis is applied, components show in presentations as follows:<ul><li>**Metrics and dimensions:** Italics</li><li>**Dimension items:** Quotation marks</li></ul></p><p>When emphasis is applied, components show in presentations as follows:</p><ul><li>**Metrics and dimensions:** Italics and bold</li><li>**Dimension items:** Bold when the corresponding dimension is emphasized<p>A color is also applied to the dimension item when the dimension item is highlighted in the chart.</p></li></ul> | 
 
-(Conditional) Select **[!UICONTROL Default theme]** if you want your slides to be generated with the default theme.
+1. (Conditional) Select **[!UICONTROL Default theme]** if you want to quickly generate slides in fewer steps, and if a corporate theme is not required for your slide presentation. 
 
-1. Select whether to use a default theme or upload a custom template:
+   Simply choose the color theme of your presentation by selecting the desired color.
 
-   * **[!UICONTROL Default theme]**: 
+   ![Generate slides with the default theme](assets/generate-slides-default-theme.png)
 
-   * **[!UICONTROL Upload template]**:
+1. (Conditional) Select **[!UICONTROL Upload template]** if your slide presentation needs to match a corporate theme. This option requires that you upload a custom template and apply your custom styles. 
 
+   ![Generate slides with a custom template](assets/generate-slides-upload-template.png)
 
+   To upload a custom template, do either of the following:
+   
+   * (Recommended) Download a blank template and modify it. 
 
+     1. Download this blank template. <!--add link-->
 
+     1. Apply your custom styles to the blank template.
+
+     1. Re-upload the template without changing any master layout names.
+
+   * Upload a custom template directly. 
+   
+     1. From your file system, drag your custom template to the drop area.
+     
+        Or
+        
+        Select **[!UICONTROL Browse]**, then browse to and select your custom template from the file system. 
+        
+        Make sure that the uploaded file has master layouts with the following names: "Title_Slide", "Section_Divider", "Title_Text", "Title_Chart", "Title_Two_Content_Mixed", "Title_Three_Content_Mixed"
+
+        .pptx and .potx files up to 25MB in size are supported.
+
+1. Select **[!UICONTROL Export PPT]**.
+
+1. (Recommended) Review and edit the .ppt presentation and make any needed changes, as described in the following section, [Edit slides from a previously generated presentation](#edit-slides-from-a-previously-generated-presentation).
 
 ## Edit slides from a previously generated presentation
 
 
 ## Download a generated .pptx presentation
+
+
+
+## Permission requirements to generate slides
+
+>[!AVAILABILITY]
+>
+>If your organization does not have access to generate slide presentations from a Workspace project, please contact your Adobe account representative to learn more about licensing.
+>
+>This capability is enabled by default for all users in organizations that have the required licensing. 
+
+Product profile administrators whose organizations have licensing to generate slides can disable access if needed.
+
+In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Data storytelling]** permission determines access to this capability. A [product profile admin](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) needs to follow these steps in the [!UICONTROL Admin Console] if they want to disable access:
+   1. Navigate to **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
+   1. Select the title of the product profile for which you want to provide access to [!UICONTROL Data storytelling].
+   1. In the specific product profile, select **[!UICONTROL Permissions]**.
+   1. Select ![Edit](/help/assets/icons/Edit.svg) to edit **[!UICONTROL Reporting Tools]**.
+   1. Select ![AddCircle](/help/assets/icons/RemoveCircle.svg) to remove **Data storytelling** from the **[!UICONTROL Included permission items]**.
+   
+      <!--add screenshot of permission in the admin console-->
+
+   1. Select **[!UICONTROL Save]** to save the permissions.
+
+For more information, see [User-level access](/help/technotes/access-control.md#user-level-access) in  [Access control](/help/technotes/access-control.md#access-control) for more information.
 
 ## Unsupported project elements and features {#unsupported}
 

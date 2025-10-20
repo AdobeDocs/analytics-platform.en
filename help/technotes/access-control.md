@@ -132,6 +132,8 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in the [Adm
 
 {style="table-layout:auto"}
 
+<!-- add this:  [!UICONTROL Reporting Tools] -[!UICONTROL Data storytelling] - Let users [generate slide presentations based on Workspace projects.](/help/analysis-workspace/curate-share/generate-slides.md) -  -->
+
 ## Workspace project curation
 
 Another level of access control can be used at the Workspace reporting level. You can limit access to specific components for certain users. For more information on how to limit components (dimensions, metrics, segments, date ranges) at the Workspace project level, and how curation is tied to data views, see [Curate projects](/help/analysis-workspace/curate-share/curate.md).
