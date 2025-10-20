@@ -9,9 +9,53 @@ hidefromtoc: yes
 ---
 # Data storytelling: Generate slide presentations from Workspace reports {#generate-powerpoint}
 
-Users with [the necessary permissions](#permission-requirements-to-generate-slides) can automatically generate .pptx presentations from Analysis Workspace projects. When generating slide presentations, Customer Journey Analytics automatically identifies key insights and converts them into stakeholder-ready slides. 
+Users with [the necessary permissions](#permission-requirements-to-generate-slides) can automatically generate .pptx presentations from Analysis Workspace projects. When generating these slide presentations, Customer Journey Analytics automatically creates a story from your data by identifying key insights and converting them into stakeholder-ready slides. 
 
-This functionality reduces the time and effort required to surface findings from your Workspace projects, and it allows you to quickly build executive narratives and communicate business impact.
+This functionality reduces the time and effort required to surface findings from your Workspace projects, and it allows you to quickly build executive narratives and communicate business impact to stakeholders.
+
+This automatically generated data story allows analysts to focus on data exploration, while Customer Journey Analytics curates and formats the analyst's findings for stakeholder consumption.
+
+## Understand data stories in slide presentations
+
+Analysis Workspace uses generative AI to create data stories within slide presentations. These data stories supplement an analysis for a given Workspace project by providing additional context, surfacing important highlights, and giving ideas for next steps. call out hidden trends, anomalies, contributing factors, key drivers
+
+### Additional value provided by data stories
+
+Data stories supplement an analysis for a given Workspace project by:
+
+* Providing additional context
+
+* Highlighting important insights
+
+* Calling out hidden trends, anomalies, and other contributing factors
+
+* Identifying key drivers
+
+* Giving ideas for next steps
+
+### Project elements that shape data stories
+
+Analysis Workspace creates data stories by considering the following project elements:
+
+* Inter-dimension and inter-metric relationships
+
+* The individual elements that form the basis of the analysis: dimensions, metrics, filters, freeform table structure, visualizations and panels 
+
+* The names given to the panels, tables and visualizations
+
+* The ordering of metrics in a freeform table (to determine priority)
+
+* Summary numbers and summary texts (to determine metrics that need to be highlighted in the data story)
+
+### Presentation elements of a data story
+
+Data stories consist of an executive summary slide, detail slides, and section dividers.
+
+**Executive summary:** Prioritizes the highest-value insights and crafts an overarching story between 1 and 5 sentences in length.
+
+**Detail slides:** Generates insights related to any tables, panels, or visualizations in a Workspace project. Insights consist of trends, seasonalities, anomalies, and correlations.
+
+**Section dividers:** Divides insights with appropriately placed and named section dividers.
 
 ## Generate a .pptx presentation based on a Workspace project
 
@@ -86,6 +130,7 @@ This functionality reduces the time and effort required to surface findings from
 
 1. Select **[!UICONTROL Export PPT]**.
 
+1. (Recommended) Review and edit the .ppt presentation and make any needed changes, as described in the following section, [Edit slides from a previously generated presentation](#edit-slides-from-a-previously-generated-presentation).
 
 ## Edit slides from a previously generated presentation
 
