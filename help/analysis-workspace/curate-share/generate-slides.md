@@ -35,8 +35,6 @@ Data stories supplement an analysis for a given Workspace project by:
 
 * Calling out hidden trends, anomalies, and other contributing factors
 
-* Identifying key drivers
-
 * Giving ideas for next steps
 
 ### Project elements that shape data stories
@@ -57,7 +55,13 @@ Analysis Workspace creates data stories by considering the following project ele
 
 Data stories consist of an executive summary slide, detail slides, and section dividers.
 
+Customer Journey Analytics identifies important themes within the panels and visualizations that you choose to include in your presentation. These themes comprise the overarching narrative, or data story, that is created.  
+
+To create the theme and narrative, Customer Journey Analytics generates insights, then uses a subset of those insights after a deduplication and scoring process. 
+
 **Executive summary:** Prioritizes the highest-value insights and crafts an overarching story between 1 and 5 sentences in length.
+
+**Title slide:** Shows the title that you specify. Information is shown in the speaker notes area describing how 
 
 **Detail slides:** Generates insights related to any tables, panels, or visualizations in a Workspace project. Insights consist of trends, seasonalities, anomalies, and correlations.
 
@@ -100,7 +104,7 @@ Data stories consist of an executive summary slide, detail slides, and section d
    | **[!UICONTROL Panels and visualizations to include]** | Choose the panels and visualization you want to include in the presentation. You can include up to 50 visualizations.<p>Most panels and visualizations are supported. For information about unsupported panels and visualization, see [Unsupported project elements and features](#unsupported-project-elements-and-features).</p> | 
    | **[!UICONTROL Panel and visualization descriptions]** | | 
    | **[!UICONTROL Annotations]** | | 
-   | **[!UICONTROL Emphasize components]** | Choose up to 5 metrics and 5 dimensions from your visualizations that you want to emphasize in the presentation.<p>When no emphasis is applied, components show in presentations as follows:<ul><li>**Metrics and dimensions:** Italics</li><li>**Dimension items:** Quotation marks</li></ul></p><p>When emphasis is applied, components show in presentations as follows:</p><ul><li>**Metrics and dimensions:** Italics and bold</li><li>**Dimension items:** Bold when the corresponding dimension is emphasized<p>A color is also applied to the dimension item when the dimension item is highlighted in the chart.</p></li></ul> | 
+   | **[!UICONTROL Emphasize components]** | Choose up to 5 metrics and 5 dimensions from your visualizations that you want to emphasize in the presentation. The components you choose are ranked higher and given more weight when the themes and overarching narrative of the data story is created. <p>When no emphasis is applied, components show in presentations as follows:<ul><li>**Metrics and dimensions:** Italics</li><li>**Dimension items:** Quotation marks</li></ul></p><p>When emphasis is applied, components show in presentations as follows:</p><ul><li>**Metrics and dimensions:** Italics and bold</li><li>**Dimension items:** Bold when the corresponding dimension is emphasized<p>A color is also applied to the dimension item when the dimension item is highlighted in the chart.</p></li></ul> | 
 
 1. (Conditional) Select **[!UICONTROL Default theme]** if you want to quickly generate slides in fewer steps, and if a corporate theme is not required for your slide presentation. 
 
