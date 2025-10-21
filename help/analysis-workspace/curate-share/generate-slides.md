@@ -11,21 +11,27 @@ hidefromtoc: yes
 
 Users with [the necessary permissions](#permission-requirements-to-generate-slides) can automatically generate .pptx presentations from Analysis Workspace projects. When generating these slide presentations, Customer Journey Analytics automatically creates a story from your data by identifying key insights and converting them into stakeholder-ready slides. 
 
-This functionality reduces the time and effort required to surface findings from your Workspace projects, and it allows you to quickly build executive narratives and communicate business impact to stakeholders.
-
-This automatically generated data story allows analysts to focus on data exploration, while Customer Journey Analytics curates and formats the analyst's findings for stakeholder consumption.
+This automatically generated data story reduces the time, effort, and expertise required to surface findings from a Workspace project. Analysts can focus more on data exploration, while allowing Customer Journey Analytics to build and format the executive narrative and communicate the business impact to stakeholders.
 
 ## Understand data stories in slide presentations
 
-Analysis Workspace uses generative AI to create data stories within slide presentations. These data stories supplement an analysis for a given Workspace project by providing additional context, surfacing important highlights, and giving ideas for next steps. call out hidden trends, anomalies, contributing factors, key drivers
+Analysis Workspace uses generative AI to create a narrative that is based on your Workspace data, in a slide presentation format. 
+
+The following sections describe the additional value that data stories provide, the necessary elements of a project that help shape the narrative, and key elements that are included in each presentation output. 
 
 ### Additional value provided by data stories
+
+Data stories provide value and insights to a Workspace project by making data accessible to users who are less experienced in data analysis. 
 
 Data stories supplement an analysis for a given Workspace project by:
 
 * Providing additional context
 
 * Highlighting important insights
+
+* Offering guidance on whether data is good or bad in a given context
+
+* Assessing whether certain variables are being under-valued or over-valued. 
 
 * Calling out hidden trends, anomalies, and other contributing factors
 
