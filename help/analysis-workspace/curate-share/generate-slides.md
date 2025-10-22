@@ -9,15 +9,15 @@ hidefromtoc: yes
 ---
 # Data storytelling: Generate slide presentations from Workspace reports {#generate-powerpoint}
 
-Users with [the necessary permissions](#permission-requirements-to-generate-slides) can automatically generate .pptx presentations from Analysis Workspace projects. When generating these slide presentations, Customer Journey Analytics automatically creates a story from your data by identifying key insights and converting them into stakeholder-ready slides. 
+Users with [the necessary permissions](#permission-requirements-to-generate-slides) can automatically generate .pptx presentations based on Analysis Workspace projects. When generating these slide presentations, Customer Journey Analytics automatically creates a story from your data by identifying key insights and converting them into stakeholder-ready slides. 
 
-This automatically generated data story reduces the time, effort, and expertise required to surface findings from a Workspace project. Analysts can focus more on data exploration, while allowing Customer Journey Analytics to build and format the executive narrative and communicate the business impact to stakeholders.
+This generated data story reduces the time, effort, and expertise required to surface findings from a Workspace project. Analysts can focus more on data exploration, while allowing Customer Journey Analytics to build and format the executive narrative and communicate the business impact to stakeholders.
 
 ## Understand data stories in slide presentations
 
-Analysis Workspace uses generative AI to create a narrative that is based on your Workspace data, in a slide presentation format. 
+A **data story** is the narrative that Customer Journey Analytics creates based on your Workspace data. Using generative AI, Customer Journey Analytics identifies important themes within the panels and visualizations that you choose to include in your slide presentation. It generates insights, then goes through a deduplication and scoring process to identify a subset of insights to use to create the data story. 
 
-The following sections describe the additional value that data stories provide, the necessary elements of a project that help shape the narrative, and key elements that are included in each presentation output. 
+The following sections describe the additional value that data stories provide, the necessary elements of a project that help shape the narrative, and key elements that are included in the .pptx presentation output. 
 
 ### Additional value provided by data stories
 
@@ -31,11 +31,9 @@ Data stories supplement an analysis for a given Workspace project by:
 
 * Offering guidance on whether data is good or bad in a given context
 
-* Assessing whether certain variables are being under-valued or over-valued. 
+* Assessing whether certain variables are being under-valued or over-valued 
 
 * Calling out hidden trends, anomalies, and other contributing factors
-
-* Identifying key drivers
 
 * Giving ideas for next steps
 
@@ -45,7 +43,7 @@ Analysis Workspace creates data stories by considering the following project ele
 
 * Inter-dimension and inter-metric relationships
 
-* The individual elements that form the basis of the analysis: dimensions, metrics, filters, freeform table structure, visualizations and panels 
+* The individual elements that form the basis of the analysis (dimensions, metrics, filters, freeform table structure, visualizations, and panels) 
 
 * The names given to the panels, tables and visualizations
 
@@ -55,9 +53,11 @@ Analysis Workspace creates data stories by considering the following project ele
 
 ### Presentation elements of a data story
 
-Data stories consist of an executive summary slide, detail slides, and section dividers.
+Data stories consist of a title slide, executive summary slide, detail slides, and section dividers.
 
-**Executive summary:** Prioritizes the highest-value insights and crafts an overarching story between 1 and 5 sentences in length.
+**Title slide:** Shows the title and presenter name that you specify. Information shows in the speaker notes that describes the process of how the theme and narrative were created, how many insights were generated and used, and which panels were used.
+
+**Executive summary:** Prioritizes the highest-value insights and crafts an overarching story that is between 1 and 5 sentences in length.
 
 **Detail slides:** Generates insights related to any tables, panels, or visualizations in a Workspace project. Insights consist of trends, seasonalities, anomalies, and correlations.
 
@@ -97,12 +97,12 @@ Data stories consist of an executive summary slide, detail slides, and section d
    |---------|----------|
    | **[!UICONTROL Cover title]** | Specify a title for the presentation. This title appears on the title slide of the presentation.  | 
    | **[!UICONTROL Include presenter name]** | Specify the name of the presenter. This name appears on the title slide of the presentation, below the cover title. | 
-   | **[!UICONTROL Panels and visualizations to include]** | Choose the panels and visualization you want to include in the presentation. You can include up to 50 visualizations.<p>Most panels and visualizations are supported. For information about unsupported panels and visualization, see [Unsupported project elements and features](#unsupported-project-elements-and-features).</p> | 
-   | **[!UICONTROL Panel and visualization descriptions]** | | 
-   | **[!UICONTROL Annotations]** | | 
-   | **[!UICONTROL Emphasize components]** | Choose up to 5 metrics and 5 dimensions from your visualizations that you want to emphasize in the presentation.<p>When no emphasis is applied, components show in presentations as follows:<ul><li>**Metrics and dimensions:** Italics</li><li>**Dimension items:** Quotation marks</li></ul></p><p>When emphasis is applied, components show in presentations as follows:</p><ul><li>**Metrics and dimensions:** Italics and bold</li><li>**Dimension items:** Bold when the corresponding dimension is emphasized<p>A color is also applied to the dimension item when the dimension item is highlighted in the chart.</p></li></ul> | 
+   | **[!UICONTROL Panels and visualizations to include]** | Choose the panels and visualization that you want to include in the presentation. You can include up to 50 visualizations.<p>Most panels and visualizations are supported. For information about unsupported panels and visualization, see [Unsupported project elements and features](#unsupported-project-elements-and-features).</p> | 
+   | **[!UICONTROL Panel and visualization descriptions]** | Choose whether to include panel and visualization descriptions in your generated slide presentation. | 
+   | **[!UICONTROL Annotations]** | Choose whether annotations are visible in your generated slide presentation. For more information about annotations, see [Annotations overview](/help/components/annotations/overview.md).  | 
+   | **[!UICONTROL Emphasize components]** | Choose up to 5 metrics and 5 dimensions from your visualizations that you want to emphasize in the presentation. The components you choose are ranked higher and given more weight when the themes and overarching narrative of the data story is created. <p>When no emphasis is applied, components show in presentations as follows:<ul><li>**Metrics and dimensions:** Italics</li><li>**Dimension items:** Quotation marks</li></ul></p><p>When emphasis is applied, components show in presentations as follows:</p><ul><li>**Metrics and dimensions:** Italics and bold</li><li>**Dimension items:** Bold when the corresponding dimension is emphasized<p>A color is also applied to the dimension item when the dimension item is highlighted in the chart.</p></li></ul> | 
 
-1. (Conditional) Select **[!UICONTROL Default theme]** if you want to quickly generate slides in fewer steps, and if a corporate theme is not required for your slide presentation. 
+1. (Conditional) Select **[!UICONTROL Default theme]** if you want to generate slides in fewer steps, and if a corporate theme is not required for your slide presentation. 
 
    Simply choose the color theme of your presentation by selecting the desired color.
 
@@ -116,11 +116,25 @@ Data stories consist of an executive summary slide, detail slides, and section d
    
    * (Recommended) Download a blank template and modify it. 
 
-     1. Download this blank template. <!--add link-->
+     1. Download [this blank template](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?).
 
      1. Apply your custom styles to the blank template.
 
-     1. Re-upload the template without changing any master layout names.
+     1. Re-upload the template without changing any master layout names:
+
+        From your file system, drag your blank template that has your custom styles applied to the drop area.
+     
+        Or
+        
+        Select **[!UICONTROL Browse]**, then browse to and select your blank template that has your custom styles applied from the file system. 
+
+     1. In the **[!UICONTROL Layout mapping]** section, each slide layout that is used in generated presentations is automatically mapped to a slide from your uploaded theme. Review the selections to make sure they are correct.
+
+        ![Layout mapping](assets/generate-slides-layout-mapping.png)
+     
+     1. (Conditional) If a slide layout is mapped incorrectly, select **[!UICONTROL Change selection]** above the slide that was chosen from your uploaded presentation, then choose the slide that matches the layout. 
+
+        Repeat this process for each slide that was incorrectly mapped.
 
    * Upload a custom template directly. 
    
@@ -130,20 +144,23 @@ Data stories consist of an executive summary slide, detail slides, and section d
         
         Select **[!UICONTROL Browse]**, then browse to and select your custom template from the file system. 
         
-        Make sure that the uploaded file has master layouts with the following names: "Title_Slide", "Section_Divider", "Title_Text", "Title_Chart", "Title_Two_Content_Mixed", "Title_Three_Content_Mixed"
+        Make sure that the uploaded file has master layouts with the following names: "Title_Slide," "Section_Divider," "Title_Text," "Title_Chart," "Title_Two_Content_Mixed," "Title_Three_Content_Mixed."
 
         .pptx and .potx files up to 25MB in size are supported.
 
+     1. In the **[!UICONTROL Layout mapping]** section, each slide layout that is used in generated presentations is automatically mapped to a slide from your uploaded theme. Review the selections to make sure they are correct.
+
+        ![Layout mapping custom template](assets/generate-slides-layout-mapping-custom-template.png)
+     
+     1. (Conditional) If a slide layout is mapped incorrectly, select **[!UICONTROL Change selection]** above the slide that was chosen from your uploaded presentation, then choose the slide that matches the layout. 
+
+        Repeat this process for each slide that was incorrectly mapped.
+
 1. Select **[!UICONTROL Export PPT]**.
 
-1. (Recommended) Review and edit the .ppt presentation and make any needed changes, as described in the following section, [Edit slides from a previously generated presentation](#edit-slides-from-a-previously-generated-presentation).
+   The .pptx presentation is automatically downloaded to your workstation. 
 
-## Edit slides from a previously generated presentation
-
-
-## Download a generated .pptx presentation
-
-
+1. (Recommended) Open the .pptx presentation and review it. Make any needed changes.
 
 ## Permission requirements to generate slides
 
