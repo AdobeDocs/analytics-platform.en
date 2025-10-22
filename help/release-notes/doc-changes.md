@@ -13,7 +13,17 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **October 2025** | |
+| Ingest and use Experience Platform audiences | Updated use case article on how to [ingest and use Experience Platform audiences](/help/use-cases/data-ingestion/ingest-aep-segments.md). |
+| Report on LLM and AI-generated traffic | Added [use case article](/help/use-cases/ai-traffic.md) on how to report on LLM and AI-generated traffic using derived fields as the foundation. The article is based on the blog article [Tracking and Analyzing LLM and AI-Generated Traffic in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967). |
+| **September 2025** | |
+| Dates before 1900 | Added a [note](/help/connections/create-connection.md#datasets) on how dates before 1900 are handled by Customer Journey Analytics. |
+| Real-time reporting | Added documentation about [real-time reporting](/help/components/real-time/real-time.md) in Customer Journey Analytics. |
+| Usage interface | Added documentation for updated [Usage interface](/help/connections/manage-connections.md#usage) in Connections. | 
+| Stitching Journey Optimizer datasets | Documented [list of automatically generated Journey Optimzer datasets](/help/stitching/overview.md#journey-optimizer-datasets) that can be used in stitching. | 
+| Context labels | Added more background information on the use and purpose of [context labels](/help/data-views/component-settings/overview.md#context-labels) in data view components. | 
 | **August 2025** | |
+| New integration with Adobe Advertising | Added information about [integrating with Adobe Advertising](/help/integrations/advertising.md). |
 | New derived field functions | Documentation for the new derived field functions: [Date Math](/help/data-views/derived-fields/derived-fields.md#date-math), [Depth](/help/data-views/derived-fields/derived-fields.md#depth), and [Typecast](/help/data-views/derived-fields/derived-fields.md#typecast). |
 | **July 2025** | |
 | Debugger | New article on how to enable, use and disable the project debugger in Analysis Workspace. |

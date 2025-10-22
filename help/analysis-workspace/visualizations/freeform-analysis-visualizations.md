@@ -62,6 +62,22 @@ The following visualization types are available in Analysis Workspace:
 
    * From the context menu in a Freeform table, select **[!UICONTROL Visualize]**. Then select the visualization from the submenu. Based on the current selection in the table, Workspace determines which visualization to offer and interprets the data to build the requested visualization.
 
+When you add a simple visualization, for example a [Line](line.md) of [Bar](bar.md) visualization, the visualization uses the closest freeform table as the data source. You can always modify the [data source](#data-source) of a your visualizations.
+
+
+## Manage visualizations
+
+You can manage a visualization when you hover over the visualization or select the visualization.
+
+![Manage visualization](assets/manage-visualization.png)
+
+* To collapse a visualization, select ![ChevronDown](/help/assets/icons/ChevronDown.svg).
+* To reveal a collapsed visualization, select ![ChevronLeft](/help/assets/icons/ChevronLeft.svg).
+* To delete a visualization, select ![CrossSize400](/help/assets/icons/CrossSize400.svg). To undo, select **[!UICONTROL Edit]** > **[!UICONTROL Undo]** (**[!UICONTROL *cmd+z*]** | **[!UICONTROL *ctrl+z*]**).
+* To return a visualization to the default height, select ![ImageResize](/help/assets/icons/Resize.svg).
+* To move a visualization within a panel, drag and drop the visualization whenever a ![Move](/help/assets/icons/Move.svg) is visible (ususally when you hover over the header).
+
+
 
 ## Legend
 

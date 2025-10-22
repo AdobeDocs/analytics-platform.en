@@ -40,7 +40,7 @@ Furthermore, you need to add two stitching metrics that are based on the presenc
 
 1. Use the field that contains the Person ID from the stitched dataset to configure a metric that defines whether a Person ID is set. Add this Person ID even if you are using graph-based stitching as the Person ID helps to establish a baseline. In case the Person ID is not contained within the dataset, your baseline is 0%. 
    
-   In the example below, `personalEmail.address` serves as the identity and is used to create the **[!UICONTROL  _Email set]** metric.
+   In the example below, `personalEmail.address` serves as the identity and is used to create the **[!UICONTROL _Email set]** metric.
    ![Email set metric](assets/emailset-metric.png)
 
 1. Use `stitchedID.namespae.code` field to create an **[!UICONTROL Email stitched namespace]** dimension. Ensure you specify [Include Exclude values component settings](/help/data-views/component-settings/include-exclude-values.md),  so you only consider values of the namespace you are trying to elevate rows of data to. 
