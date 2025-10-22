@@ -4,8 +4,6 @@ keywords: Analysis Workspace
 title: Generate presentations from Workspace reports
 feature: Curate and Share
 role: User
-hide: yes
-hidefromtoc: yes
 ---
 # Data storytelling: Generate slide presentations from Workspace reports {#generate-powerpoint}
 
@@ -29,8 +27,6 @@ Data stories supplement an analysis for a given Workspace project by:
 
 * Highlighting important insights
 
-* Offering guidance on whether data is good or bad in a given context
-
 * Assessing whether certain variables are being under-valued or over-valued 
 
 * Calling out hidden trends, anomalies, and other contributing factors
@@ -48,6 +44,8 @@ Analysis Workspace creates data stories by considering the following project ele
 * The names given to the panels, tables and visualizations
 
 * The ordering of metrics in a freeform table (to determine priority)
+
+* The ordering of visualizations in a panel (to determine priority)
 
 * Summary numbers and summary texts (to determine metrics that need to be highlighted in the data story)
 
@@ -100,7 +98,7 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
    | **[!UICONTROL Panels and visualizations to include]** | Choose the panels and visualization that you want to include in the presentation. You can include up to 50 visualizations.<p>Most panels and visualizations are supported. For information about unsupported panels and visualization, see [Unsupported project elements and features](#unsupported-project-elements-and-features).</p> | 
    | **[!UICONTROL Panel and visualization descriptions]** | Choose whether to include panel and visualization descriptions in your generated slide presentation. | 
    | **[!UICONTROL Annotations]** | Choose whether annotations are visible in your generated slide presentation. For more information about annotations, see [Annotations overview](/help/components/annotations/overview.md).  | 
-   | **[!UICONTROL Emphasize components]** | Choose up to 5 metrics and 5 dimensions from your visualizations that you want to emphasize in the presentation. The components you choose are ranked higher and given more weight when the themes and overarching narrative of the data story is created. <p>When no emphasis is applied, components show in presentations as follows:<ul><li>**Metrics and dimensions:** Italics</li><li>**Dimension items:** Quotation marks</li></ul></p><p>When emphasis is applied, components show in presentations as follows:</p><ul><li>**Metrics and dimensions:** Italics and bold</li><li>**Dimension items:** Bold when the corresponding dimension is emphasized<p>A color is also applied to the dimension item when the dimension item is highlighted in the chart.</p></li></ul> | 
+   | **[!UICONTROL Emphasize components]** | Choose the metrics and dimensions from your visualizations that you want to emphasize in the presentation. The components you choose are ranked higher and given more weight when the themes and overarching narrative of the data story is created. <p>When no emphasis is applied, components show in presentations as follows:<ul><li>**Metrics and dimensions:** Italics</li><li>**Dimension items:** Quotation marks</li></ul></p><p>When emphasis is applied, components show in presentations as follows:</p><ul><li>**Metrics and dimensions:** Italics and bold</li><li>**Dimension items:** Bold when the corresponding dimension is emphasized<p>A color is also applied to the dimension item when the dimension item is highlighted in the chart.</p></li></ul> | 
 
 1. (Conditional) Select **[!UICONTROL Default theme]** if you want to generate slides in fewer steps, and if a corporate theme is not required for your slide presentation. 
 
@@ -109,6 +107,8 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
    ![Generate slides with the default theme](assets/generate-slides-default-theme.png)
 
 1. (Conditional) Select **[!UICONTROL Upload template]** if your slide presentation needs to match a corporate theme. This option requires that you upload a custom template and apply your custom styles. 
+
+   The most recent custom template you upload is stored locally in your browser cache, and is available when generating future slide presentations.
 
    ![Generate slides with a custom template](assets/generate-slides-upload-template.png)
 
@@ -167,8 +167,8 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
 >[!AVAILABILITY]
 >
 >If your organization does not have access to generate slide presentations from a Workspace project, please contact your Adobe account representative to learn more about licensing.
->
->This capability is enabled by default for all users in organizations that have the required licensing. 
+
+The ability to generate slides is enabled by default for all users in organizations that have the required licensing. 
 
 Product profile administrators whose organizations have licensing to generate slides can disable access if needed.
 
@@ -199,19 +199,27 @@ The following Analysis Workspace elements and features used in a project aren't 
 
   Most visualizations can be included in slides that are generated from a Workspace project. However, the following visualizations cannot be included, and show as dimmed when the configuration options are displayed:
 
-  * Cohort table
-
-  * Journey canvas
-
+  * Area
+  
   * Bullet
 
+  * Cohort table
+
   * Combo
+
+  * Fallout
+
+  * Flow
+
+  * Journey canvas
 
   * Scatter
 
   * Treemap
 
-* Breakdowns
+* Breakdowns 
+
+  The data for breakdowns is included in generated presentations, but it shows at the same level as dimension items.
 
 * Guided analyses
 
