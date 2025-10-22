@@ -4,7 +4,6 @@ description: Learn about the recommended steps when upgrading from Adobe Analyti
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
 ---
 # Prepare your organization to upgrade to Customer Journey Analytics
 
