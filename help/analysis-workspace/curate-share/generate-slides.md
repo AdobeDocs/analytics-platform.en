@@ -120,11 +120,25 @@ To create the theme and narrative, Customer Journey Analytics generates insights
    
    * (Recommended) Download a blank template and modify it. 
 
-     1. Download this blank template. <!--add link-->
+     1. Download [this blank template](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?).
 
      1. Apply your custom styles to the blank template.
 
-     1. Re-upload the template without changing any master layout names.
+     1. Re-upload the template without changing any master layout names:
+
+        From your file system, drag your blank template that has your custom styles applied to the drop area.
+     
+        Or
+        
+        Select **[!UICONTROL Browse]**, then browse to and select your blank template that has your custom styles applied from the file system. 
+
+     1. In the **[!UICONTROL Layout mapping]** section, each slide layout that is used in generated presentations is automatically mapped to a slide from your uploaded theme. Review the selections to make sure they are correct.
+
+        ![Layout mapping](assets/generate-slides-layout-mapping.png)
+     
+     1. (Conditional) If a slide layout is mapped incorrectly, select **[!UICONTROL Change selection]** above the slide that was chosen from your uploaded presentation, then choose the slide that matches the layout. 
+
+        Repeat this process for each slide that was incorrectly mapped.
 
    * Upload a custom template directly. 
    
