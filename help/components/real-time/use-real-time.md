@@ -12,8 +12,6 @@ exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
 >title="Real-time refresh"
 >abstract="Enable to refresh data and visualizations in this panel in real-time."
 
-{{release-limited-testing}}
-
 To use real-time reporting, enable the **[!UICONTROL Real-time refresh]** toggle on any of the following panels in your Workspace project:
 
 * [Blank panel](/help/analysis-workspace/c-panels/blank-panel.md)
