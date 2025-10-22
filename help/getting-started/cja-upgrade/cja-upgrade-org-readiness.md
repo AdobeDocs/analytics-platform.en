@@ -8,7 +8,7 @@ exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
 ---
 # Prepare your organization to upgrade to Customer Journey Analytics
 
-In addition to the upgrade process described in [Upgrade from Adobe Analytics to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md), a successful upgrade also requires that your organization focus on certain operational considerations:
+Part of a successful upgrade (as described in [Upgrade from Adobe Analytics to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)) is to prepare your organization by focusing on certain operational considerations. To prepare your organization, it's recommended that you:
 
 * Obtain buy-in and alignment from key stakeholders
   
@@ -17,7 +17,6 @@ In addition to the upgrade process described in [Upgrade from Adobe Analytics to
 * Set realistic and thoughtful timelines 
 
 * Define clear responsibilities for contributors
-
 
 ## Stakeholder buy-in and alignment
 
@@ -33,9 +32,9 @@ The following table covers some key features that you might want to highlight.
 
 | Feature | Benefit | Example |
 |---------|----------|---------|
-| **[Accommodation for all kinds of data](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)** | Customer Journey Analytics is combined with Experience Platform's ability to hold all kinds of data schemas and types. | A retail organization could integrate web clickstream transactions, mobile app transaction, in-store transactions, and CRM/loyalty data into a single view, providing visibility to the complete customer journey. |
+| **[Accommodation for all kinds of data](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)** | Customer Journey Analytics is combined with Experience Platform's ability to hold all kinds of data schemas and types. | A retail organization could provide visibility to the complete customer journey by integrating the following kinds of data into a single view: <ul><li>Web clickstream transactions</li><li>Mobile app transactions</li><li>In-store transactions</li><li>CRM and loyalty data</li></ul> |
 | **[Cross-channel analysis](/help/use-cases/cross-channel/cross-channel.md)** | Enables a single consolidated view of customer behavior across various channels by unifying data from various web, mobile, and offline properties. | A retail organization that is gathering data from multiple channels could perform the following kind of analysis:<p>A shopper clicks a paid search ad, browses jeans online, receives a push notification, then purchases in-store two days later. This unified perspective enables accurate cross-channel attribution, showing how digital touchpoints contribute to in-store sales. It also supports more precise segmentation, such as targeting "browsed online, purchased in-store" customers with tailored offers. Furthermore, it delivers clear, all-channel revenue reporting in one dashboard, replacing fragmented, siloed insights with a holistic understanding of customer behavior. |
-| **[Report-time processing](/help/getting-started/aa-to-cja.md#get-comfortable-with-report-time-processing)** | Apply settings that are retroactive and create multiple versions of variable persistence without needing to change how the underlying data is collected. | Because Customer Journey Analytics allows you to create and adjust metrics, dimensions, and attribution models on the fly without reingesting or reprocessing data, a retail organization could see how a recent social campaign influenced both online and in-store sales on the fly, without needing to ask engineering to rebuild datasets. They could instantly change the attribution model from last touch to first touch or custom rules-based attribution.  |
+| **[Report-time processing](/help/getting-started/aa-to-cja.md#get-comfortable-with-report-time-processing)** | Apply settings that are retroactive and create multiple versions of variable persistence without needing to change how the underlying data is collected. | Because Customer Journey Analytics allows you to create and adjust metrics, dimensions, and attribution models on the fly without reingesting or reprocessing data, a retail organization could see how a recent social campaign influenced both online and in-store sales without needing to ask engineering to rebuild datasets. They could instantly change the attribution model from last touch to first touch or custom rules-based attribution.  |
 | **[Content Analytics](/help/content-analytics/content-analytics.md)** | Helps marketers understand how content impacts the key performance indicators that a business has defined. On top of the behavioral data, Content Analytics collects data on how content is consumed and how content drives impact. | By integrating web, app, email, and even in-store data, a retail organization could see exactly how each piece of digital content they create contributes to the customer journey and conversion. <p>The retail organization could see that a "Summer Denim Style Guide" on a popular social media platform drives high engagement among loyalty members, and that those members are 40% more likely to purchase denim in-store within a week.</p>  |
 
 ### Appoint an executive sponsor
@@ -78,7 +77,7 @@ An upgrade plan might include the following information:
 
 * Information about who is leading the upgrade and how or when people can reach out with questions.
 
-### Create a communiation plan 
+### Create a communication plan 
 
 A communication plan might include the following considerations:
 
@@ -92,7 +91,7 @@ A communication plan might include the following considerations:
 
 ## Assess and audit your Adobe Analytics implementation
 
-Perform a thorough assessement and audit of your Adobe Analytics implementation, focusing on the following key areas:
+Perform a thorough assessment and audit of your Adobe Analytics implementation, focusing on the following key areas:
 
 * Current users
 
@@ -142,5 +141,7 @@ Identify Champions throughout your organization. These champions should be:
 
   * [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md)
 
+## Follow the recommended upgrade steps
 
+When you're ready to begin the upgrade process, follow the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the dynamically generated upgrade steps in the Customer Journey Analytics Upgrade Guide. To access the guide from Customer Journey Analytics, select the **[!UICONTROL Workspace]** tab, then select **[!UICONTROL Upgrade to Customer Journey Analytics]** in the left panel. Follow the on-screen instructions.
 
