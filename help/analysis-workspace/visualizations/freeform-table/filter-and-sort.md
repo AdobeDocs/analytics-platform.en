@@ -126,7 +126,7 @@ See [Segmentation overview](/help/components/segments/seg-overview.md) for more 
 
 ## Sort tables
 
-You can sort the data of a Freeform table by any column in Analysis Workspace that is either a dimension or a metric. 
+You can sort the data of a Freeform table by any columns in Analysis Workspace that are either a dimension or a metric. 
 
 ### Sort tables by a single column
 
