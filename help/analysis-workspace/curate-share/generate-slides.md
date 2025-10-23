@@ -100,9 +100,10 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
    | **[!UICONTROL Cover title]** | Specify a title for the presentation. This title appears on the title slide of the presentation.  | 
    | **[!UICONTROL Include presenter name]** | Specify the name of the presenter. This name appears on the title slide of the presentation, below the cover title. | 
    | **[!UICONTROL Panels and visualizations to include]** | Choose the panels and visualization that you want to include in the presentation. You can include up to 50 visualizations.<p>Most panels and visualizations are supported. For information about unsupported panels and visualization, see [Unsupported project elements and features](#unsupported-project-elements-and-features).</p> | 
-   | **[!UICONTROL Panel and visualization descriptions]** | Choose whether to include panel and visualization descriptions in your generated slide presentation. | 
-   | **[!UICONTROL Annotations]** | Choose whether annotations are visible in your generated slide presentation. For more information about annotations, see [Annotations overview](/help/components/annotations/overview.md).  | 
    | **[!UICONTROL Emphasize components]** | Choose the metrics and dimensions from your visualizations that you want to emphasize in the presentation. The components you choose are ranked higher and given more weight when the themes and overarching narrative of the data story is created. <p>When no emphasis is applied, components show in presentations as follows:<ul><li>**Metrics and dimensions:** Italics</li><li>**Dimension items:** Quotation marks</li></ul></p><p>When emphasis is applied, components show in presentations as follows:</p><ul><li>**Metrics and dimensions:** Italics and bold</li><li>**Dimension items:** Bold when the corresponding dimension is emphasized<p>A color is also applied to the dimension item when the dimension item is highlighted in the chart.</p></li></ul> | 
+
+   <!-- add this later: - **[!UICONTROL Panel and visualization descriptions]** - Choose whether to include panel and visualization descriptions in your generated slide presentation. - 
+   - **[!UICONTROL Annotations]** - Choose whether annotations are visible in your generated slide presentation. For more information about annotations, see [Annotations overview](/help/components/annotations/overview.md).  -  -->
 
 1. (Conditional) Select **[!UICONTROL Default theme]** if you want to generate slides in fewer steps, and if a corporate theme is not required for your slide presentation. 
 
