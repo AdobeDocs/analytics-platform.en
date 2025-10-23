@@ -1,20 +1,20 @@
 ---
-description: Learn about use case examples for cohort analysis.
+description: Learn about some use case examples for cohort analysis.
 keywords: Analysis Workspace
-title: Cohort analysis use cases
+title: Cohort Analysis Use Xases
 feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
 role: User
 ---
-# [!UICONTROL Cohort analysis] use cases
+# Cohort analysis use cases
 
-This article describes some use case examples for [!UICONTROL Cohort Analysis].
+This article describes some use case examples for cohort analysis.
 
 ## App engagement use case 
 
 Suppose that you want to analyze how users who install your app engage with it over time. Do they install it and never use it? Do they use it for a while, then fall away? Or do they remain engaged over time?
 
-You can create a six-month [!UICONTROL Cohort Analysis]:
+You can create a six-month cohort analysis.
 
 **Granularity**: Monthly, from January 2015 through June 2015.
 
@@ -40,9 +40,9 @@ You do not want to lose potential customers in month three. So, you set up an em
 
 Check back with your cohort analysis reports a few months later. For cohorts formed after the launch of the campaign, conversion to paid Creative Cloud subscriptions in month three has risen from 4-5% to 13-14%. This rise in conversion results in hundreds of thousands of dollars per cohort, for every monthly cohort that hits month three from that point forward.
 
-## Complex Cohort filters use case
+## Complex Cohort segments use case
 
-A major hotel chain targets multiple customer groups for promotions and tracks against performance. To identify the best groups of user cohorts to target, they want to create very specific cohort groups. Using the augmented [!UICONTROL Inclusion] and [!UICONTROL Return] Criteria within [!UICONTROL Cohort] Tables, the hotel chain is able to define just the right cohort groupings with multiple metrics and filters. So, the hotel chain can identify underperforming customer groups to target customers with promotions and deals to increase bookings.
+A major hotel chain targets multiple customer groups for promotions and tracks against performance. To identify the best groups of user cohorts to target, they want to create very specific cohort groups. Using the augmented [!UICONTROL Inclusion] and [!UICONTROL Return] Criteria within [!UICONTROL Cohort] Tables, the hotel chain is able to define just the right cohort groupings with multiple metrics and segments. So, the hotel chain can identify underperforming customer groups to target customers with promotions and deals to increase bookings.
 
 ## App Version Adoption use case
 
@@ -54,8 +54,8 @@ A multinational media company uses targeted campaigns to drive users to their va
 
 ## Product Launch use case
 
-A large apparel retailer has many specific customer filters that drive large portions of revenue for their business. Each filter has specific products designed and created with the filter in mind. With each product launch, they want to know how the new product has boosted sales to various cohorts over time. Using the new [!UICONTROL Latency Table] setting in [!UICONTROL Cohort Analysis], they are able to analyze a given customer filter's pre-launch and post-launch behavior and revenue. Using this information, they can identify which products are driving new revenue and which are not gaining traction with customers.
+A large apparel retailer has many specific customer segments that drive large portions of revenue for their business. Each segment has specific products designed and created with the segment in mind. With each product launch, they want to know how the new product has boosted sales to various cohorts over time. Using the new [!UICONTROL Latency Table] setting in [!UICONTROL Cohort Analysis], they are able to analyze a given customer segment's pre-launch and post-launch behavior and revenue. Using this information, they can identify which products are driving new revenue and which are not gaining traction with customers.
 
 ## Individual Stickiness - Most Loyal Users use case
 
-A major airline derives the majority of their success and revenue from repeat and loyal customers. In many cases, their loyal travelers comprise the majority of their revenue and retaining those customers is critical to their long-term success. Identifying their most loyal and consistent customers can often be difficult. However, using the new [!UICONTROL Rolling Calculation] setting in [!UICONTROL Cohort Analysis], the airline is able to analyze loyal customer filters and find out which travelers were repeat purchasers month-over-month. The airline is also able to target these travelers with rewards and perks for their loyalty. Additionally, by switching the Cohort type from retention to churn, the airline is able to identify which customers are not repeat purchasers month-over-month and target those customers with promotions. So, the airline can re-engage with these customers and ensure they remain loyal customers in the future.
+A major airline derives the majority of their success and revenue from repeat and loyal customers. In many cases, their loyal travelers comprise the majority of their revenue and retaining those customers is critical to their long-term success. Identifying their most loyal and consistent customers can often be difficult. However, using the new [!UICONTROL Rolling Calculation] setting in [!UICONTROL Cohort Analysis], the airline is able to analyze loyal customer segments and find out which travelers were repeat purchasers month-over-month. The airline is also able to target these travelers with rewards and perks for their loyalty. Additionally, by switching the Cohort type from retention to churn, the airline is able to identify which customers are not repeat purchasers month-over-month and target those customers with promotions. So, the airline can re-engage with these customers and ensure they remain loyal customers in the future.

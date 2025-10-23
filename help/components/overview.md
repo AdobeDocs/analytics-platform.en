@@ -1,6 +1,6 @@
 ---
-title: What are components in Customer Journey Analytics?
-description: Learn what components Customer Journey Analytics offers, and how you can use them in reporting.
+title: Components Overview
+description: Learn what components Adobe Analytics offers, and how you can use component in Analysis Workspace.
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
@@ -17,7 +17,7 @@ To manage components from the main Customer Journey Analytics interface:
 
 You can manage the following components:  
 
-* [Filters](filters/filters-overview.md): Build, manage, share, and apply powerful, focused audience filters to your reports. Filters let you identify subsets of persons based on characteristics or interactions.
+* [Segments](segments/seg-overview.md): Build, manage, share, and apply powerful, focused audience segments to your reports. Segments let you identify subsets of persons based on characteristics or interactions.
 * [Calculated metrics](calc-metrics/calc-metr-overview.md): Use metrics and formulas as new components for use in reporting
 * [Date ranges](date-ranges/create.md): Customize and refine the date ranges Analysis Workspace offers.
 * [Annotations](/help/components/annotations/overview.md): Communicate contextual data nuances and insights to your organization.
@@ -30,7 +30,7 @@ You can manage the following components:
 
 ## Analysis Workspace components
 
-Components in Analysis Workspace consist of metrics, dimensions, filters, and date ranges that you can drag-and-drop onto panels and visualizations in your Workspace project. Custom components that you create are added to these panels, such as a calculated metric, or a custom date range.
+Components in Analysis Workspace consist of metrics, dimensions, segments, and date ranges that you can drag-and-drop onto panels and visualizations in your Workspace project. Custom components that you create are added to these panels, such as a calculated metric, or a custom date range.
 
 To access the Components panel, select ![Curate](/help/assets/icons/Curate.svg) **[!UICONTROL Components]** in the button panel. 
 
@@ -63,10 +63,10 @@ You can manage components (individually or by selecting more than one).
    | ![Star](/help/assets/icons/Star.svg) [!UICONTROL **Favorite**] | Add the component to your list of favorites. Like tags, you can search by Favorites in the left panel and filter by them in the component managers. |
    | ![StarOutline](/help/assets/icons/StarOutline.svg) **[!UICONTROL Un-favorite]** | Remove the component from your list of favorites. |
    | ![Checkmark](/help/assets/icons/Checkmark.svg) [!UICONTROL **Approve**] | Mark components as Approved to signal to your users that the component is organization-approved. Like tags, you can search and filter by Approved in the left panel. A ![Checkmark](/help/assets/icons/Checkmark.svg) identifies approved components. |
-   | ![Share](/help/assets/icons/ShareAlt.svg) [!UICONTROL **Share**] | Share components to users in your organization. This option is available for custom components only, such as filters or calculated metrics. |
-   | ![Delete](/help/assets/icons/Delete.svg) [!UICONTROL **Delete**] | Delete components that you no longer need. This option is available for custom components only, such as filters or calculated metrics. |
+   | ![Share](/help/assets/icons/ShareAlt.svg) [!UICONTROL **Share**] | Share components to users in your organization. This option is available for custom components only, such as segments or calculated metrics. |
+   | ![Delete](/help/assets/icons/Delete.svg) [!UICONTROL **Delete**] | Delete components that you no longer need. This option is available for custom components only, such as segments or calculated metrics. |
 
-Custom components can also be managed through their respective Component managers. For example, see [Manage filters](/help/components/filters/manage-filters.md).
+Custom components can also be managed through their respective Component managers. For example, see [Manage segments](/help/components/segments/seg-manage.md).
 
 ## Manage the component list
 
@@ -78,9 +78,9 @@ You can search, filter, and sort the component list in the left panel of Analysi
 
 2. In the search field, begin typing the name of the component you want to use in your project.
 
-   A color and icon identify the type of component. **Dimensions** ![Dimension icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) are orange, **Filters** ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) are blue, **Date ranges** ![Date range icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) are purple, and **Metrics** ![Metric icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) are green.<br/>The Adobe icon ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) indicates either a calculated metric template or a filter template. The calculator icon ![Calculator icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indicates a calculated metric that an administrator in your organization has created. 
+   A color and icon identify the type of component. **Dimensions** ![Dimension icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) are orange, **Segments** ![Segment icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) are blue, **Date ranges** ![Date range icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) are purple, and **Metrics** ![Metric icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) are green.<br/>The Adobe icon ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) indicates either a calculated metric template or a segment template. The calculator icon ![Calculator icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indicates a calculated metric that an administrator in your organization has created. 
 
-3. Select the component from the drop-down list.
+3. Select the component from the drop-down menu.
 
 ### Filter
 
@@ -96,7 +96,7 @@ You can search, filter, and sort the component list in the left panel of Analysi
    | ![Star](/help/assets/icons/Star.svg) | **[!UICONTROL Favorites]**| Show only components that are in your list of Favorites. <br/>For information about adding components to your list of favorites, see [Manage components](#manage-components). |
    | ![Dimensions](/help/assets/icons/Dimensions.svg) | **[!UICONTROL Dimensions]** | Show only components that are Dimensions. |
    | ![Event](/help/assets/icons/Event.svg) | **[!UICONTROL Metrics]** | Show only components that are Metrics. |
-   | ![Segmentation](/help/assets/icons/Segmentation.svg)| **[!UICONTROL Filters]** | Show only components that are Filters. |
+   | ![Segmentation](/help/assets/icons/Segmentation.svg)| **[!UICONTROL Segments]** | Show only components that are segments. |
    | ![Calendar](/help/assets/icons/Calendar.svg) | **[!UICONTROL Date ranges]** | Show only components that are Date ranges. |
    | ![Label](/help/assets/icons/Label.svg) | **[!UICONTROL *Tag name*]** | Show only components with the specific selected tags. A dedicated tag is available for Adobe Template which are the [default calculated metrics](/help/components/calc-metrics/default-calcmetrics.md) from Adobe. |
 

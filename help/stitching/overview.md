@@ -44,9 +44,8 @@ You benefit from cross-channel analysis if you combine one or more of your stitc
 
 >[!IMPORTANT]
 >
->- No support for using `identityMap` as the persistent ID. You have to define a specific identifier in the dataset (for example, `ECID`) as the persistent ID.
 >
->- Apply any change that you make to the source event dataset schema also to the new stitched dataset schema, otherwise it breaks the stitched dataset.
+>- Apply any change that you make to the source event dataset schema also to the new stitched dataset schema.
 >
 >- If you remove the source dataset, the stitched dataset stops processing and gets removed by the system.
 >
@@ -64,10 +63,25 @@ Ensure you do not confuse stitching with:
 
 - The join of two datasets. In Customer Journey Analytics, a join is often used for lookups or classifications in Analysis Workspace. Although stitching uses join functionality, the process itself involves more than joins.
 
+
+## Journey Optimizer datasets
+
+Stitching supports the following automatically generated Journey Optimizer datasets:
+
+- AJO Journey Step Events
+- AJO Inbound Activity Event Dataset
+- AJO Surfaces Dataset
+- AJO Message Feedback Event Dataset* AJO Push Tracking Experience Event Dataset
+- AJO Email Tracking Experience Event Dataset
+- AJO BCC Feedback Event Dataset
+- AJO Live Activities Feedback Event Dataset
+- AJO ExD Decision Event Dataset
+
 >[!MORELIKETHIS]
 >
 >[Field based stitching](fbs.md)
 >[Graph based stitching](gbs.md)
 >[Use stitching](use-stitching.md)
+>[Validate stitching](validate.md)
 >[FAQ on stitching](faq.md)
 

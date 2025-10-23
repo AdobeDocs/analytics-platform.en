@@ -1,11 +1,11 @@
 ---
 description: How to change the visualization color palette or specify your own custom color palette.
-title: Visualization color palette
+title: Visualization Color Palettes
 feature: Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
 role: User
 ---
-# Visualization color palette {#visualization-color-palette}
+# Visualization color palettes {#visualization-color-palettes}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -33,6 +33,6 @@ Keep in mind:
 ## Change your color palette:
 
 1. Navigate to **[!UICONTROL Workspace]** > **[!UICONTROL Project]** > **[!UICONTROL Project info & settings]**.
-1. From the **[!UICONTROL Project color palette]** drop-down list, you can pick one of the pre-set color schemes.
+1. From the **[!UICONTROL Project color palette]** drop-down menu, you can pick one of the pre-set color schemes.
 1. To specify your own palette, select **[!UICONTROL Custom palette]** below the pre-set options.
 1. Specify up to 16 comma-delimited hex values (for example, `#00a4e4`) to create your own color palette. If you specify for example only four values, colors are repeated automatically in visualizations that contain more colors.

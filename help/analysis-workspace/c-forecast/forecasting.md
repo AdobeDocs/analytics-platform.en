@@ -1,6 +1,6 @@
 ---
 description: Learn about forecasting in Analysis Workspace.
-title: Forecasting overview
+title: Forecasting Overview
 feature: Visualizations
 role: User
 exl-id: 9ec920c4-3273-4497-83a4-6a2e2fc92e2f

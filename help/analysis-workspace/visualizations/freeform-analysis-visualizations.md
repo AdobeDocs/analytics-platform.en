@@ -1,7 +1,7 @@
 ---
-description: Visually represent your data in Analysis Workspace.
+description: Learn how to visually represent your data with visualizations available in Analysis Workspace.
 keywords: Analysis Workspace
-title: Visualizations overview
+title: Visualizations Overview
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
@@ -22,7 +22,7 @@ The following visualization types are available in Analysis Workspace:
 | ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p>| [Bullet](/help/analysis-workspace/visualizations/bullet-graph.md)  | A bullet graph visualization, which shows how a value you are interested in compares to or measures against other performance ranges (goals). |
 | ![TextNumbered](/help/assets/icons/TextNumbered.svg)| [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | A cohort visualization is a group of people sharing common characteristics over a specified period. A cohort table is useful for retention, churn or latency analysis. |
 | ![Combo](/help/assets/icons/ComboChart.svg) | [Combo](combo-charts.md) | A combo chart enables you to build quickly a comparison visualization without having to build a table first.  | 
-| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Donut](/help/analysis-workspace/visualizations/donut.md)  | Similar to a pie chart, a donut visualization shows data as parts or filters of a whole. |
+| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Donut](/help/analysis-workspace/visualizations/donut.md)  | Similar to a pie chart, a donut visualization shows data as parts or segments of a whole. |
 | ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) |  [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | A fallout visualization shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages. |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) | A flow visualization shows exact customer paths through your websites and apps. | 
 | ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | A freeform table visualization is an interactive visualization. The freeform table visualization is the foundation for data analysis in Workspace.|
@@ -38,7 +38,7 @@ The following visualization types are available in Analysis Workspace:
 | ![123](/help/assets/icons/123.svg)</p> |[Summary number](/help/analysis-workspace/visualizations/summary-number-change.md) | A summary number visualization shows the selected cell as one large number. |
 | ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) | A text visualization lets you add user-defined text to your Workspace. Helpful for adding additional context to your analysis and insights, in addition to leveraging panel/visualization descriptions |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Treemap](/help/analysis-workspace/visualizations/treemap.md)<p> | A treemap visualization displays hierarchical (tree-structured) data as a set of nested rectangles. |
-| ![Type](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | A venn visualization uses circles to depict the metric overlap of up to 3 filters. |
+| ![Type](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | A venn visualization uses circles to depict the metric overlap of up to 3 segments. |
 
 <!-- Add beneath Horizontal bar in the table above: | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Similar to Fallout, Journey canvas shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages. <p>Unlike Fallout, Journey canvas supports not only linear journeys, but any number of entry points and paths. Furthermore, journeys can be created in Adobe Journey Optimizer and then analyzed in Journey canvas.</p> | -->
 
@@ -61,6 +61,22 @@ The following visualization types are available in Analysis Workspace:
    * Use the Workspace **[!UICONTROL Insert]** menu to insert a visualization.
 
    * From the context menu in a Freeform table, select **[!UICONTROL Visualize]**. Then select the visualization from the submenu. Based on the current selection in the table, Workspace determines which visualization to offer and interprets the data to build the requested visualization.
+
+When you add a simple visualization, for example a [Line](line.md) of [Bar](bar.md) visualization, the visualization uses the closest freeform table as the data source. You can always modify the [data source](#data-source) of a your visualizations.
+
+
+## Manage visualizations
+
+You can manage a visualization when you hover over the visualization or select the visualization.
+
+![Manage visualization](assets/manage-visualization.png)
+
+* To collapse a visualization, select ![ChevronDown](/help/assets/icons/ChevronDown.svg).
+* To reveal a collapsed visualization, select ![ChevronLeft](/help/assets/icons/ChevronLeft.svg).
+* To delete a visualization, select ![CrossSize400](/help/assets/icons/CrossSize400.svg). To undo, select **[!UICONTROL Edit]** > **[!UICONTROL Undo]** (**[!UICONTROL *cmd+z*]** | **[!UICONTROL *ctrl+z*]**).
+* To return a visualization to the default height, select ![ImageResize](/help/assets/icons/Resize.svg).
+* To move a visualization within a panel, drag and drop the visualization whenever a ![Move](/help/assets/icons/Move.svg) is visible (ususally when you hover over the header).
+
 
 
 ## Legend
@@ -119,7 +135,7 @@ Which visualization settings are available depends on the visualization. The tab
 | **[!UICONTROL Show forecast]** | Enhance line graphs and freeform tables by displaying forecast values. |
 | **[!UICONTROL Show min]** | Show the minimal value in the visualization. |
 | **[!UICONTROL Show max]** | Show the maximal value in the visualization. |
-| **[!UICONTROL Show trendline]** | Show a trendline in the visualization. When selected, you can select the type of trendline from the dropdown menu. | 
+| **[!UICONTROL Show trendline]** | Show a trendline in the visualization. When selected, you can select the type of trendline from the drop-down menu. | 
 
 You can customize the settings for all visualizations that you create. For more information, see [User preferences](/help/analysis-workspace/user-preferences.md).
 
@@ -133,11 +149,11 @@ Use the context menu (available through alternate select, for example, right-cli
 | Option | Description |
 | --- | --- |
 | **[!UICONTROL Insert copied visualization]**| Paste (insert) a copied visualization to another place within the project, or into a completely different project. |
-| **[!UICONTROL Copy data to clipboard]** | Copy data from the visualization onto the clipboard. |
-| **[!UICONTROL Copy selection to clipboard]** | Copy the selection from the visualization onto the clipboard. |
-| **[!UICONTROL Download items as CSV (*dimension name*)]** | Download the dimension items (to a maximum of 50,000) of the visualization to your local device. A maximum of 50,000 dimension items for the selected dimension. |
+| **[!UICONTROL Copy data to clipboard]** | [Copy data](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) from the visualization onto the clipboard. |
+| **[!UICONTROL Copy selection to clipboard]** | [Copy the selection](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) from the visualizaion onto the clipboard. |
+| **[!UICONTROL Download items as CSV (*dimension name*)]** | [Download the dimension items](/help/analysis-workspace/export/download-send.md#download-items-as-csv) (to a maximum of 50,000) of the visualization to your local device. A maximum of 50,000 dimension items for the selected dimension. |
 | **[!UICONTROL Copy visualization]** | Copy the visualization, so that you can insert the visualization to another place within the project, or into a completely different project. |
-| **[!UICONTROL Download data CSV]** | Download the displayed data of the visualization to your local device. |
+| **[!UICONTROL Download data CSV]** | [Download the displayed data](/help/analysis-workspace/export/download-send.md#download-as-csv) of the visualization to your local device. |
 | **[!UICONTROL Export full table]** | Export the full table to a designated cloud locations. See [Exports Customer Journey Analytics reports to the cloud](../export/export-cloud.md) |
 | **[!UICONTROL Duplicate visualization]** | Make an exact duplicate of the visualization. |
 | **[!UICONTROL Edit description]** | Add (or edit) a text description for the visualization. See [Text](text.md). |
@@ -152,6 +168,6 @@ Some visualizations (like Cohort table, Fallout, Flow, and others) have a config
 
 ## Visualize
 
-If you are not sure which visualization to pick, select ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL Visualize]** in any freeform table row (available on hover). This selection is the fastest way to add a visualization. Analysis Workspace takes an educated guess at which visualization would best fit your data. For example, if you have one row selected, it creates a trended [line graph](line.md). If you have three filter rows selected, it creates a [venn](venn.md) diagram. 
+If you are not sure which visualization to pick, select ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) **[!UICONTROL Visualize]** in any freeform table row (available on hover). This selection is the fastest way to add a visualization. Analysis Workspace takes an educated guess at which visualization would best fit your data. For example, if you have one row selected, it creates a trended [line graph](line.md). If you have three segment rows selected, it creates a [venn](venn.md) diagram. 
 
 ![Quick visualization](assets/quick-viz.png)

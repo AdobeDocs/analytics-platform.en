@@ -1,12 +1,12 @@
 ---
-title: Dimensions overview
-description: Learn what dimensions are and how they are used in Customer Journey Analytics
+title: Dimensions Overview
+description: Learn what dimensions are and how they are used in Customer Journey Analytics.
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
 ---
 # Dimensions overview
 
-Dimensions are a component type in Customer Journey Analytics that are used to analyze data. For example, you use dimensions when building reports in [Analysis Workspace](/help/analysis-workspace/home.md) or in [Report Builder](/help/report-builder/report-buider-overview.md).
+Dimensions are a component type in Customer Journey Analytics that are used to analyze data. For example, you use dimensions when building reports in [Analysis Workspace](/help/analysis-workspace/home.md) or in [Report Builder](/help/report-builder/rb-overview.md).
 
 Customer Journey Analytics dimensions are of unlimited type; values can be numeric, text, objects, lists, or mixtures of all. 
 
@@ -29,29 +29,19 @@ Each dimension represents a different part or facet of your site. You can combin
 
 Customer Journey Analytics administrators can [create dimensions within a data view](/help/data-views/create-dataview.md#components).
 
-## Default dimensions
+## Standard dimensions
 
-When you create a dataview, the following time-based components are added by default as dimensions to your data view:
+When you create a data view, the following components are added by default as dimensions to your data view:
 
-- 15 Minute
-- 30 Minute
-- 5 Minute
-- Day
-- Day of Month
-- Day of Week
-- Day of Year
-- Hour
-- Hour of Day
-- Minute
-- Minute of Hour
-- Month
-- Month of Year
-- Quarter
-- Quarter of Year
-- Second
-- Week of Year
-- Year
+{{standard-dimensions}}
+  
 
 ## Add dimension descriptions
 
 Customer Journey Analytics administrators can add descriptions for dimensions and other components either within the data view or directly within Analysis Workspace. For information about how to add descriptions to dimensions, see [Add component descriptions](/help/components/add-component-descriptions.md).
+
+>[!MORELIKETHIS]
+>
+>[Discover Deeper Customer Insights with the Event Depth Feature](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947#M576)
+>
+

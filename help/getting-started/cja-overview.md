@@ -8,11 +8,17 @@ role: User, Admin
 ---
 # Customer Journey Analytics overview
 
-Customer Journey Analytics is Adobe's next-generation Analytics solution that lets you use the power of Analysis Workspace with data from Adobe Experience Platform. It can break down, filter, query, and visualize years' worth of data, and is combined with Platform's ability to hold all kinds of data schemas and types. Using the **Experience Data Model (XDM)**, data can be uniformly represented and organized, ready for combination and exploration. **Adobe Experience Platform Query Service** allows you to use SQL-compatible tools and frameworks to query and manipulate all your data.
+Customer Journey Analytics is Adobe's next-generation Analytics solution that lets you use the power of Analysis Workspace with data from Adobe Experience Platform. It can break down, segment, query, and visualize years' worth of data, and is combined with Platform's ability to hold all kinds of data schemas and types. Using the **Experience Data Model (XDM)**, data can be uniformly represented and organized, ready for combination and exploration. **Adobe Experience Platform Query Service** allows you to use SQL-compatible tools and frameworks to query and manipulate all your data.
 
 The high-level Customer Journey Analytics architecture is shown here:
 
-![Customer Journey Analytics architecture explained in this section](assets/cja-architecture.png)
+![Customer Journey Analytics architecture](assets/cja-overview.svg)
+
+This architecture illustrates how Custoner Journey Analytics allows you to:
+
+* Combine mutltiple datasets ![Data](/help/assets/icons/Data.svg) in a [connection](/help/connections/overview.md).
+* Define and configure dimensions ![Dimensions](/help/assets/icons/Dimensions.svg) and metrics ![Event](/help/assets/icons/Event.svg) in a [data view](/help/data-views/data-views.md), based on the fields available from the datasets you defined in your connection.
+* Build reports ![ViewTable](/help/assets/icons/ViewTable.svg) and visualizations (like line ![Line](/help/assets/icons/GraphTrend.svg) and area ![Area](/help/assets/icons/GraphAreaStacked.svg)) in [projects](/help/analysis-workspace/home.md) based on the dimensions and metrics from your data views.
 
 
 >[!BEGINSHADEBOX]
@@ -64,7 +70,6 @@ See [Access Control](/help/technotes/access-control.md).
 
 Several features in Customer Journey Analytics have been renamed, when compared to traditional Adobe Analytics, to align with industry standards. Some updated terminology includes:
 
-* Segments are now known as 'Filters'.
 * Virtual report suites are now known as 'Data views'.
 * Classifications are now known as 'Lookup datasets'.
 * Customer attributes are now known as 'Profile datasets'.

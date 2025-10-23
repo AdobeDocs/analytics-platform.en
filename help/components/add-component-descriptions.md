@@ -1,5 +1,5 @@
 ---
-description: Administrators can add descriptions for components using the data view.
+description: Learn how administrators can add desciptions to components using a data view or the data dictionary.
 title: Add component descriptions
 feature: Components
 role: Admin
@@ -9,13 +9,13 @@ exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
 
 Descriptions help users know how to use the various components when building projects in Analysis Workspace or when viewing reports. 
 
-Customer Journey Analytics administrators can add descriptions for components (dimensions, metrics, filters, and date Ranges) within a data view or using the Data Dictionary. 
+Customer Journey Analytics administrators can add descriptions for components (dimensions, metrics, segments, and date Ranges) within a data view or using the Data Dictionary. 
 
-## Add descriptions in a Data view
+## Data view
 
 You can add a description to a component you have added to your data view. See [Component settings](/help/data-views/component-settings/overview.md).
 
-## Add descriptions using the Data Dictionary
+## Data Dictionary
 
 The Data Dictionary in Analysis Workspace helps both users and administrators keep track of and better understand the components in their Customer Journey Analytics environment. The Data Dictionary includes the ability, for administrators, to add component descriptions directly within Analysis Workspace. 
 

@@ -1,6 +1,6 @@
 ---
-description: Quick Insights is a tool for new Workspace users that guides them in building data tables and visualizations
-title: Quick Insights panel
+description: Understand how to use the Quick insights panel to guide you in building freeform tables and visualizations in Analysis Workspace.
+title: Quick Insights Panel
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
@@ -31,10 +31,10 @@ When you first start using this [!UICONTROL Analysis Workspace], you might wonde
 * what visualizations would be most useful, 
 * which dimensions and metrics might facilitate insights, 
 * where to drag and drop items, 
-* where to create a filter, 
+* where to create a segment, 
 * and more. 
 
-To help with these questions,[!UICONTROL Quick insights] leverages an algorithm that presents you with the most popular dimensions, metrics, filters, and date ranges your company uses. This algorithm is based on your own company's usage of data components in [!UICONTROL Analysis Workspace]. In fact, you see dimensions, metrics, and filter tagged with [!UICONTROL POPULAR] in the drop-down list, as shown here:
+To help with these questions, [!UICONTROL Quick insights] leverages an algorithm that presents you with the most popular dimensions, metrics, segments, and date ranges your company uses. This algorithm is based on your own company's usage of data components in [!UICONTROL Analysis Workspace]. In fact, you see dimensions, metrics, and segment tagged with [!UICONTROL POPULAR] in the drop-down menu, as shown here:
 
 ![The Quick Insights panel.](assets/popular-tag.png)
 
@@ -42,7 +42,7 @@ To help with these questions,[!UICONTROL Quick insights] leverages an algorithm 
 
 * Properly build a data table and an accompanying visualization in [!UICONTROL Analysis Workspace].
 * Learn the terminology and vocabulary for basic components and pieces of [!UICONTROL Analysis Workspace].
-* Do simple breakdowns of dimensions, add multiple metrics, or compare filters easily within a [!UICONTROL Freeform table].
+* Do simple breakdowns of dimensions, add multiple metrics, or compare segments easily within a [!UICONTROL Freeform table].
 * Change or try out various visualization types to find the find tool for your analysis quickly and intuitively.
 
 ## Basic key terminology
@@ -56,7 +56,7 @@ The following are some of the basic terms that you need to be familiar with. Eac
 |[!UICONTROL Metric]|Metrics are quantitative information about person activity, such as views, click-throughs, reloads, average time spent, units, orders, revenue, and so on.|
 |**[!UICONTROL Visualization]**|Workspace offers [a number of visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) to build visual representations of your data. Such as bar charts, donut charts, histograms, line charts, maps, scatterplots, and others.|
 |**[!UICONTROL Dimension Breakdown]**|A dimension breakdown is a way to break down a dimension by other dimensions. For example, you could break down the US States by Mobile Devices to get the mobile device visits per state. Or you could break Mobile Devices down by Mobile Device types, by Regions, by Internal Campaigns, and more.|
-|**[!UICONTROL Filter]**| Filters let you identify subsets of persons based on characteristics or website interactions. For example, you can build [!UICONTROL People] filters based on <li>attributes: browser type, device, number of visits, country, gender, or</li><li>interactions: campaigns, keyword search, search engine, or</li><li>exits and entries: persons from Facebook, a defined landing page, referring domain, or</li><li> custom variables: form field, defined categories, customer ID.  |
+|**[!UICONTROL Segment]**| Segments let you identify subsets of persons based on characteristics or website interactions. For example, you can build [!UICONTROL People] segments based on <li>attributes: browser type, device, number of visits, country, gender, or</li><li>interactions: campaigns, keyword search, search engine, or</li><li>exits and entries: persons from Facebook, a defined landing page, referring domain, or</li><li> custom variables: form field, defined categories, customer ID.  |
 
 ## Use
 
@@ -77,7 +77,7 @@ Select your building blocks:
 
 * **[!UICONTROL Analyze]** - specify a dimension (orange)
 * **[!UICONTROL by]** - specify a metric (green)
-* **[!UICONTROL filter by]** - specify a filter (blue)
+* **[!UICONTROL segment by]** - specify a segment (blue)
 * **[!UICONTROL on]** - specify a date range (purple).
 
 You have to select at least one dimension and one metric for the visualization to function properly.
@@ -88,7 +88,7 @@ You can specify the building blocks in three ways:
 
 * Drag and drop components from the left panel.
 * Start typing in one of the building block fields. When input is found, the building block field auto populates with possible values.
-* Specify a building block drop-down (for example `Country` in **[!UICONTROL Analyze]**) and search the list of possible value (using ![ChevronRight](/help/assets/icons/ChevronRight.svg)) for the value you want to use (for example, **[!UICONTROL Country code]**).
+* Specify a building block drop-down menu (for example Country in **[!UICONTROL Analyze]**) and **[!UICONTROL search]** the list of possible value (using ![ChevronRight](/help/assets/icons/ChevronRight.svg)) for the value you want to use (for example, **[!UICONTROL Country code]**).
 
 Select **[!UICONTROL Clear]** to clear all input fields.
 
@@ -99,7 +99,7 @@ Select **[!UICONTROL Clear]** to clear all input fields.
    
    ![The Freeform table showing the dimension vertically and the metric horizontally.](assets/quick-insights-output.png)
 
-    * A Freeform table with the dimension (Country code) and metric (Sessions), filtered by Web sessions for the Last 12 months.
+    * A Freeform table with the dimension (Country code) and metric (Sessions), segmented by Web sessions for the Last 12 months.
 
     * An accompanying visualization, in this case a [bar chart](/help/analysis-workspace/visualizations/bar.md). The visualization that is generated is based on the type of data you added to the table. Any time-based data (such as [!UICONTROL Sessions] per Day/Month) defaults to a [!UICONTROL Line] chart. Any non-time-based data (such as [!UICONTROL Sessions] per [!UICONTROL Device]) defaults to a [!UICONTROL Bar] chart. You can change the type of visualization by clicking on the drop-down arrow next to the visualization type.
 
@@ -115,7 +115,7 @@ Other useful hints pop up in the [!UICONTROL Quick Insights Builder], some of th
 
     ![The Quick Insights Panel notification displayed after you select the Help icon.](assets/qibuilder4.png)
 
-* You can analyze multiple dimensions and metrics, combine or compare filters, and specify a date range:
+* You can analyze multiple dimensions and metrics, combine or compare segments, and specify a date range:
 
   ![Quick Insights Builder Result](assets/qibuilder-result.png)
 
@@ -123,7 +123,7 @@ Other useful hints pop up in the [!UICONTROL Quick Insights Builder], some of th
 
   * Add more metrics **[!UICONTROL by]**: You can add up to 2 more metrics. See ➍ and ➎.
 
-  * **[!UICONTROL filter by]**: You can add up to 2 more filters. For example, add Bookings as a filter and combine that filter with Frequent Bookers and First Time Fliers filters you compare. See ➏, ➐, and ➑.
+  * **[!UICONTROL segment by]**: You can add up to 2 more segments. For example, add Bookings as a segment and combine that segment with Frequent Bookers and First Time Fliers segments you compare. See ➏, ➐, and ➑.
 
   * on: You can specify the date range. See ➒.
 

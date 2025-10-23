@@ -18,7 +18,7 @@ Much of what you are familiar with on the reporting side has not changed.
 
 * You can still use the power of [Analysis Workspace](/help/analysis-workspace/home.md) to analyze your data. Workspace operates the same as it does in traditional Adobe Analytics.
 * The same version of [Adobe Analytics dashboards](/help/mobile-app/home.md) is available, and works similarly between Customer Journey Analytics and Adobe Analytics.
-* [Report Builder](/help/report-builder/report-buider-overview.md) has a new interface and runs on MS Windows, MacOS, and the web version of Excel. (Before this version of Report Builder, you couldn't use in on Mac unless you ran it on VMware.) This version doesn't support traditional AA data request yet.
+* [Report Builder](/help/report-builder/rb-overview.md) has a new interface and runs on MS Windows, MacOS, and the web version of Excel. (Before this version of Report Builder, you couldn't use in on Mac unless you ran it on VMware.) This version doesn't support traditional AA data request yet.
 
 ## Changes to reporting
 
@@ -72,7 +72,7 @@ With this flexibility, you may run into situations in which a single schema fiel
 
 While segments are not technically migrated from Adobe Analytics to Customer Journey Analytics, you can use the component migration tool to re-create your Adobe Analytics segments in Customer Journey Analytics. Segments are re-created in Customer Journey Analytics based on the dimensions and metrics that are mapped. For more information, see [Prepare to migrate components and projects from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html).
 
-While you cannot yet share or publish [!UICONTROL filters] ([!UICONTROL segments]) from [!DNL Customer Journey Analytics] to Experience Platform Unified Profile, this functionality is under development.
+While you cannot yet share or publish [!UICONTROL segments] ([!UICONTROL segments]) from [!DNL Customer Journey Analytics] to Experience Platform Unified Profile, this functionality is under development.
 
 In addition to the concept of segments changing, segment containers are also updated.
 

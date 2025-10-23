@@ -65,7 +65,7 @@ Live stitching is available approximately one week after Adobe enables stitching
 
 +++
 
-## Cross device analytics versus cross-channel analysis
+## Cross-device analytics versus cross-channel analysis
 
 +++ What is the difference between cross-device analytics (a feature in traditional Analytics) and cross-channel analysis?
 
@@ -211,7 +211,7 @@ Other metrics can be similar in Customer Journey Analytics and Adobe Analytics. 
 
 +++ Can Customer Journey Analytics use Identity Map fields?
 
-No, Customer Journey Analytics cannot currently use Identity Map fields for stitching.
+Yes, Customer Journey Analytics can  use Identity Map fields for both [field based](/help/stitching/fbs.md#identitymap) and [graph based](/help/stitching/gbs.md#identitymap) stitching.
 
 +++
 
@@ -221,10 +221,12 @@ No, Customer Journey Analytics cannot currently use Identity Map fields for stit
 
 Data does not have to be reingested into Experience Platform, however it will need to be reconfigured in Customer Journey Analytics. Please follow these steps:
 
-1. Setup the new graph-based stitched dataset. 
-1. Configure the new dataset as part of a new connection in Customer Journey Analytics. 
-1. Switch your existing Data View to use the new connection (and as such the new graph-based stiched dataset
-1. Remove the old connection that was using the field-based stitched dataset.
+1. Set up the new graph based stitched dataset using graph based stitching.
+1. Create a new temporary connection with a very small time window of data. 
+1. Configure the new graph based dataset as part of this temporary connection.
+1. Verify with this new temporary connection whether the graph based stitching works properly.
+1. If graph based stitching works as expected, request any additional backfill for the graph based dataset and then swap the field based dataset in your original connection with the new graph based dataset.
+1. Remove the temporary connection.
 
 +++
 
@@ -236,4 +238,37 @@ Not if you follow the steps outlined above. Otherwise, please ask Adobe Consulti
 
 +++
 
+## Enable a dataset for the Identity Service
 
++++ How to enable a dataset for the Identity Service only? 
+
+You must ensure a dataset is enabled for Identity Service to use the dataset in graph-based stitching. 
+
+You do not have to be licensed for Real-Time Customer Data Platform to make use of graph-based stitching. Graph-based stitching is based on an available identity graph and not on real-time customer profiles.
+
+To enable a dataset for the Identity Service only, use a `POST` request to the `/datasets` endpoint that only uses the `unifiedIdentity` tag. For example:
+
+```shell
+curl -X POST \
+  https://platform.adobe.io/data/foundation/catalog/dataSets \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
+  -H 'x-api-key: {API_KEY}' \
+  -H 'x-gw-ims-org-id: {ORG_ID}' \
+  -H 'x-sandbox-name: {SANDBOX_NAME}' \
+  -d '{
+    "schemaRef": {
+        "id": "https://ns.adobe.com/{TENANT_ID}/schemas/31670881463308a46f7d2cb09762715",
+        "contentType": "application/vnd.adobe.xed-full-notext+json; version=1"
+    },
+    "tags": {
+       "unifiedIdentity": ["enabled:true"]
+    }
+  }'
+```
+
+Any use of the `unifiedProfile` tag in the request, while you are not licensed for Real-Time Customer Data Profile, returns an error.
+
+See [Create a dataset enabled for Profile and Identity](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) for more information.
+
++++ 

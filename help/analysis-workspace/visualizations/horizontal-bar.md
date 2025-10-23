@@ -1,6 +1,6 @@
 ---
-description: This visualization shows horizontal bars representing various values across one or more metrics.
-title: Horizontal Bar and Horizontal Bar Stacked
+description: Learn how to use horizontal bars to represent various values across one or more metrics.
+title: Horizontal Bar And Horizontal Bar Stacked
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User

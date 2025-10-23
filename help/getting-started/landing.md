@@ -47,7 +47,7 @@ The **[!UICONTROL Learning]** tab contains hands-on video tours, tutorials, and 
 
 >[!NOTE]
 >
->Several of the following settings persist during the session and across sessions. For example, the tab you selected, the selected filters, selected columns, and the column sort direction. Search results are not persistent.
+>Several of the following settings persist during the session and across sessions. For example, the tab you selected, the selected segments, selected columns, and the column sort direction. Search results are not persistent.
 
 See [Projects](/help/analysis-workspace/build-workspace-project/freeform-overview.md) for more information.
 

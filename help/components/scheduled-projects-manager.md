@@ -1,6 +1,6 @@
 ---
-description: There are two ways to use metrics in Analysis Workspace.
-title: Metrics
+description: Learn how to manage scheduled projects.
+title: Scheduled Projects
 feature: Components
 exl-id: fa7c5a0f-4983-40ee-b9c1-3e10aab3fc28
 role: User
@@ -38,7 +38,7 @@ You can use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) to configure 
 
 Search for a scheduled project using ![Search](/help/assets/icons/Search.svg). You can also see if any filters are applied from the Filters panel. To remove a filter, select ![CrossSize75](/help/assets/icons/CrossSize75.svg) for a filter. To remove all filters, select **[!UICONTROL Clear all]**.
 
-To edit a scheduled project, select the title of the scheduled project. Use the **[!UICONTROL Edit scheduled project]** dialog to update the schedule details.
+To edit a scheduled project, select the title of the scheduled project. Use the **[!UICONTROL Edit scheduled project]** dialog to update the schedule details. See [Send files to other](../analysis-workspace/export/t-schedule-report.md) for more details.
 
 ![Edit scheduled project](assets/edit-scheduled-project.png)
 
@@ -54,7 +54,7 @@ The following are common actions in the Scheduled Projects manager. You can sele
 | Icon | Action | Description |
 |:---:|---|---|
 | ![Close](/help/assets/icons/Close.svg) | **[!UICONTROL *x* selected]** | Select to unselect your selected scheduled projects. |
-| ![Delete](/help/assets/icons/Delete.svg) | **[!UICONTROL Delete]** | Delete the selected scheduled projects for the project; the projects are not deleted.|
+| ![Delete](/help/assets/icons/Delete.svg) | **[!UICONTROL Delete]** | Delete the selected scheduled projects for the project; the projects are not deleted.  <p>For information about deleting a project, see [Projects overview](/help/analysis-workspace/build-workspace-project/freeform-overview.md).</p>|
 | ![Labels](/help/assets/icons/Labels.svg)| **[!UICONTROL Tag]** | Tag the selected scheduled projects. In the **[!UICONTROL Tag Scheduled projects]** select tags and select **[!UICONTROL Save]** to save. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Approve]** | Approve the selected scheduled projects. |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Export to CSV]** | Export the selected scheduled projects to a file named `Export Scheduled Projects List.csv`. |

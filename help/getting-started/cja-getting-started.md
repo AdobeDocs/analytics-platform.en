@@ -1,12 +1,12 @@
 ---
-title: Customer Journey Analytics Getting Started
+title: Customer Journey Analytics quick start guide
 description: Understand the prerequisites and workflow required to implement Customer Journey Analytics.
 exl-id: cab218c0-009c-4669-9dfb-f8872a7f066b
 solution: Customer Journey Analytics
 feature: Basics
 role: User
 ---
-# Customer Journey Analytics Getting Started
+# Quick start guide
 
 To implement Customer Journey Analytics, you need to follow this workflow. Some initial tasks are performed in Adobe Experience Platform, and some in Customer Journey Analytics.
 

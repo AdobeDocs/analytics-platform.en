@@ -1,6 +1,6 @@
 ---
-description: Fallout in Analysis Workspace lets you mix and match dimensions and metrics as touchpoints in funnels and workflows. Fallouts gives you more flexibility in defining the user steps you want to investigate.
-title: Inter-dimensional fallout
+description: Learn how the fallout visualization in Analysis Workspace lets you mix and match dimensions and metrics as touchpoints in funnels and workflows. Understand how this provides more flexibility in defining the user steps you want to investigate.
+title: Inter-Dimensional Fallout
 feature: Visualizations
 exl-id: 7975324c-4efc-4c36-bc83-dcde85d2febc
 role: User

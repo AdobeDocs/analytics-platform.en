@@ -67,7 +67,7 @@ When you enable Product usage, the following dimensions are available. If you wa
 * **[!UICONTROL Component Type]**: The type of component that was added, removed, or modified. Dimension items include:
   * [!UICONTROL Dimension]
   * [!UICONTROL Metric]
-  * [!UICONTROL Filter]
+  * [!UICONTROL Segment]
   * [!UICONTROL Calculated metric]
   * [!UICONTROL Date range]
   * [!UICONTROL Annotation]
@@ -120,3 +120,11 @@ When you enable Product usage, the following dimensions are available. If you wa
   * [!UICONTROL Venn]
 
 Product usage does not track individual project components when a project is merely opened or viewed. The user action of opening a project is tracked, however.
+
+## Available template
+
+An [Adobe template](/help/analysis-workspace/templates/use-templates.md) is available that uses the components automatically generated from this feature.
+
+**[!UICONTROL Adobe templates]** > **[!UICONTROL Other]** > **[!UICONTROL Product usage overview]**
+
+Select the data view that Product usage automatically created in the data view selector, then select the **[!UICONTROL Product usage overview]** template. Select **[!UICONTROL Preview]** to see which panels the template uses and learn about ideal use cases, or select **[!UICONTROL Use template]** to open it in Analysis Workspace.

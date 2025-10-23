@@ -1,13 +1,11 @@
 ---
-description: A panel that shows the next or previous dimension items for a specific dimension.
-title: Next or previous item panel
+description: Understand how to use the Next or previous item panel that shows the next or previous items for a specific dimension.
+title: Next Or Previous Item Panel
 feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
 ---
 # Next or previous item panel {#next-or-previous-item-panel}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_button"
@@ -19,9 +17,6 @@ exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
 >title="Next or previous item"
 >abstract="Analyze what are the most common places visitors previously came from or go to next. Specify dimension, dimension item, the direction, and the container to use for the visualization."
 
-
-
-<!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
@@ -57,7 +52,7 @@ You can configure the [!UICONTROL Next or previous item] panel using these input
 | **[!UICONTROL Dimension]** | Select the dimension for which you want to explore next or previous items. |
 | **[!UICONTROL Dimension item]** | Select the specific dimension item at the center of your next / previous inquiry. |
 | **[!UICONTROL Direction]** | Specify whether you are looking for the [!UICONTROL Next] or the [!UICONTROL Previous] dimension item. |
-| **[!UICONTROL Container]** | Select the container, [!UICONTROL Session] or [!UICONTROL Person] (default), to determine the scope of your inquiry. |
+| **[!UICONTROL Container]** | Select the container, **[!UICONTROL Global Account]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Account]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Buying Group]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Session]** or **[!UICONTROL Person]**, to determine the scope of your inquiry. |
 
 {style="table-layout:auto"}
 

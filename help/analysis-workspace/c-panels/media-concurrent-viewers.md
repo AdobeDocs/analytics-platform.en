@@ -1,6 +1,6 @@
 ---
-title: Media Concurrent Viewers panel
-description: How to use and interpret the Media concurrent viewers panel in Analysis Workspace.
+title: Media Concurrent Viewers Panel
+description: Learn how to use and interpret the Media Concurrent Viewers panel in Analysis Workspace.
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
@@ -21,7 +21,7 @@ role: User
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_panel"
 >title="Media concurrent viewers"
->abstract="Analyze concurrent viewers over time, view peak concurrency, and optionally break down and compare using filters, dimensions, dimension items, or date ranges."
+>abstract="Analyze concurrent viewers over time, view peak concurrency, and optionally break down and compare using segments, dimensions, dimension items, or date ranges."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -76,7 +76,7 @@ You can configure the Media concurrent viewers panel using these input settings:
 |**[!UICONTROL Panel date range]**|The panel date range default is Today.  You may edit it to view a single day or many months at a time. <br> <br>This visualization is limited to 1440 rows of data (for example, 24-hours at minute-level granularity).  If a date range and granularity combination results in more than 1440 rows, the granularity is automatically updated to accommodate the full date range.|
 |**[!UICONTROL Granularity]**|The granularity default is Minute.<br>This visualization is limited to 1440 rows of data (for example, 24-hours at minute-level granularity).  If a date range and granularity combination results in more than 1440 rows, the granularity is automatically updated to accommodate the full date range.|
 |**[!UICONTROL Panel summary numbers]**| To see date or time details for concurrent viewers, a summary number is available. The Maximum shows details for peak concurrency. **[!UICONTROL Minimum]** shows details for the trough.  The panel default shows Maximum only, but you can change it to show Minimum or both Maximum and Minimum.<br><br>If you are using breakdowns, a summary number is displayed for each.|
-|**[!UICONTROL Series breakdown]**| Optionally, you can break down your visualization by filters, dimensions, dimension items, or date ranges.<br>You may view up to 10 lines at a time. Breakdowns are limited to a single level.<br>When dragging a dimension, the top dimension items are selected automatically based on the selected panel date range.<br>To compare date ranges, drag 2 or more date ranges into the series breakdown filter.|
+|**[!UICONTROL Series breakdown]**| Optionally, you can break down your visualization by segments, dimensions, dimension items, or date ranges.<br>You may view up to 10 lines at a time. Breakdowns are limited to a single level.<br>When dragging a dimension, the top dimension items are selected automatically based on the selected panel date range.<br>To compare date ranges, drag 2 or more date ranges into the series breakdown segment.|
 
 Here is an example of the panel configured for **[!UICONTROL Minute]** granularity, with **[!UICONTROL Maximum only]** summary numbers. And broken down by **[!UICONTROL Other]**, **[!UICONTROL Table]**, **[!UICONTROL Mobile Phone]**, **[!UICONTROL Gaming Console]**, **[!UICONTROL Media Player]**, **[!UICONTROL Set-top Box]**, **[!UICONTROL Television]**.
 
@@ -110,7 +110,7 @@ A Freeform table is not available in this view.  To view the data source, you ca
 |---|---|
 |Where is the Freeform table? How can I see the data source?| The Freeform table is not available in this view.  You can download the data source from the line chart context menu and select **[!UICONTROL Download data as CSV]**.|
 |Why did my granularity change?|This visualization is limited to 1440 rows of data (for example, 24-hours at minute-level granularity).  If a date range and granularity combination results in more than 1440 rows, the granularity is automatically updated to accommodate the full date range.<br><br>When changing from a larger date range to a smaller one, the granularity is updated to the lowest detail allowable once the date range is changed. To view a higher granularity, edit the panel and rebuild.|
-|How do I compare video names, filters, content types, and others?|To compare these items in a single visualization, drag filters, dimensions, or specific dimension items in the series breakdown filter.<br><br>The view is limited to 10 breakdowns.  To view more than 10, you must use multiple panels.|
+|How do I compare video names, segments, content types, and others?|To compare these items in a single visualization, drag segments, dimensions, or specific dimension items in the series breakdown segment.<br><br>The view is limited to 10 breakdowns.  To view more than 10, you must use multiple panels.|
 |How do I compare date ranges?|To compare date ranges in a single visualization, use the series breakdowns by dragging 2 or more date ranges.  The date ranges override the panel date range.|
 |How do I change the visualization type?|This panel only allows for the line visualization for the time series.|
 |Can I run anomaly detection?|No.  Anomaly detection is not available for this panel.|

@@ -8,7 +8,7 @@ exl-id: f093ac54-7d31-449b-a441-a65856a1d535
 ---
 # Customer Journey Analytics Guardrails
 
-This document provides limits for various components of Customer Journey Analytics. For Guardrails, Scoping Parameters, and Entitlements, see the [Product Description for Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html) or the [Product Description for Adobe Analytics Add-on: Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html).
+This document provides limits for various components of Customer Journey Analytics. For Guardrails, Scoping Parameters, and Entitlements, see the [Product Description for Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html), the [Product Description for Adobe Analytics Add-on: Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html), or the [Product Description for Customer Journey Analytics B2B Edition](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics-b2b.html).
 
 ## Limit types
 
@@ -47,10 +47,24 @@ Some of the features and their associated value for the limit depend on the Cust
 | Panels per Project | 15 | System-enforced Guardrail  | Maximum number of [panels](../analysis-workspace/home.md#panels) per project. |
 | Visualizations per Panel | 25 | System-enforced Guardrail  |  Maximum number of [visualizations](../analysis-workspace/home.md#visualizations) per panel. |
 | Derived Fields per Freeform Table | 5 | System-enforced Guardrail | Maximum number of different derived fields in a single freeform table. |
+| Comments per project | 1,000 | System-enforced Guardrail | Maximum number of comments per project. |
 
 {style="table-layout:auto"}
 
+
 <!--
+
+Add this to the table above, change - for pipe : (End of April, 2025 when project commenting is GA)
+
+Comments per project - 1,000 - System-enforced Guardrail - Maximum number of comments per project. 
+Replies per comment - 100 - System-enforced Guardrail - Maximum number of replies per comment. 
+Images per comment - 5 - System-enforced Guardrail - Maximum number of images per comment. 
+Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB 
+
+-->
+
+<!--
+
 ## Attribution AI
 
 | Name |  Value | Description | PD? |
@@ -59,14 +73,13 @@ Some of the features and their associated value for the limit depend on the Cust
 | Region based iterations | 10 | Maximum number of region-based iterations of each Attribution AI model. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  | 
 | Export Insights batches | 12 | Maximum number of export batches times the number of authorized Attribution AI Insights per year. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) | 
 
-{style="table-layout:auto"}
 -->
 
 ## Audiences
 
 | Name | Value | Limit Type | Description | 
 |---|--:|---|---|
-| Audience Filters | 20 | System-enforced Guardrail  | Maximum number of [filters](../components/filters/filters-overview.md) per audience. | 
+| Audience segments | 20 | System-enforced Guardrail  | Maximum number of [segments](../components/segments/seg-overview.md) per audience. | 
 | Number of Audience Identities | 20 million | System-enforced Guardrail  | Maximum number of identities per audience. | 
 | Audience Refresh Frequency | 4 | System-enforced Guardrail  | Maximum frequency in hours an [audience](../components/audiences/audiences-overview.md) may be refreshed. |
 | Audience Refresh Lookback Window | 90 | System-enforced Guardrail  | Maximum number of days for refresh lookback window. | 
@@ -75,7 +88,7 @@ Some of the features and their associated value for the limit depend on the Cust
 
 {style="table-layout:auto"}
 
-See also Experience Platform [Real-time Customer Data Platform Guardrails](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html).
+See also Experience Platform [Real-time Customer Data Platform Guardrails](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview).
 
 
 ## Automated dataset expiration
@@ -160,23 +173,23 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 
 | Name |  Value | Limit Type | Description |
 |---|--:|---|---|
-| Stitched Datasets | 10 - 50 | System-enforced Guardrail  | Maximum number of stitched datasets per customer. Value varies depending on the Customer Journey Analytics package (see Product Description). | 
-| Backfill Length | 13 - 25 | System-enforced Guardrail  | Maximum number of months of backfill data. Value varies depending on the Customer Journey Analytics package (see Product Description). |
+| Stitched Datasets | 15 - 50 | System-enforced Guardrail  | Maximum number of stitched datasets per customer. Value varies depending on the Customer Journey Analytics package (see Product Description). | 
+| Backfill Length | 6 - 25 | System-enforced Guardrail  | Maximum number of months of backfill data. Value varies depending on the Customer Journey Analytics package (see Product Description). |
 | Lookback Window / Replay Frequency | 1/1 - 30/7 | System-enforced Guardrail | Maximum lookback window in days / Replay frequency. Value varies depending on the Customer Journey Analytics package (see Product Description). |
 
 
-## Filters and calculated metrics 
+## Segments and calculated metrics 
 
 | Name |  Value | Limit Type | Description | 
 |---|--:|---|---|
-| Containers per Filter | 50 | System-enforced Guardrail  | Maximum number of containers per filter. | 
+| Containers per Segment | 50 | System-enforced Guardrail  | Maximum number of containers per segment. | 
 | Metrics per Calculated Metric | 25 | System-enforced Guardrail  | Maximum number of metrics per calculated metric. |
-| Metrics and Dimensions per Filter | 25 |System-enforced Guardrail  |  Maximum number of unique metrics and dimensions per filter. | 
-| Nested Containers per Filter | 10 | System-enforced Guardrail  | Maximum number of nested containers per filter. |
-| Rules per filter| 100 | System-enforced Guardrail  | Maximum number of rules per filter. |
-| String Compares per Dimension per Filter | 100 |  System-enforced Guardrail  | Maximum number of strings comparisons per dimension per filter. | 
+| Metrics and Dimensions per Segment | 25 |System-enforced Guardrail  |  Maximum number of unique metrics and dimensions per segment. | 
+| Nested Containers per Segment | 10 | System-enforced Guardrail  | Maximum number of nested containers per segment. |
+| Rules per segment| 100 | System-enforced Guardrail  | Maximum number of rules per segment. |
+| String Compares per Dimension per Segment | 100 |  System-enforced Guardrail  | Maximum number of strings comparisons per dimension per segment. | 
 | Calculated Metrics | 6,000 | System-enforced Guardrail  |  Maximum number of calculated metrics for an organization. |
-| Filters | 50,000 | System-enforced Guardrail | Maximum number of filters you can define for an organization. |
+| Segments | 50,000 | System-enforced Guardrail | Maximum number of segments you can define for an organization. |
 | API Calls | 120 | System-enforced Guardrail | API requests per minute (12 requests every 6 seconds). |
 
 {style="table-layout:auto"}
@@ -187,7 +200,7 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 | Name |  Value | Limit Type | Description |
 |---|--:|---|---|
 | Tiles | 16 | System-enforced Guardrail  | Maximum number of tiles per scorecard. |
-| Filters | 10 | System-enforced Guardrail  | Maximum number of filters per scorecard. | 
+| Segments | 10 | System-enforced Guardrail  | Maximum number of segments per scorecard. | 
 | Dimensions | 10 | System-enforced Guardrail  | Maximum number of dimensions per scorecard. |
 
 {style="table-layout:auto"}
@@ -216,6 +229,25 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 
 {style="table-layout:auto"}
 
+
+## Shared metrics and shared dimensions
+
+| Name |  Value | Limit Type | Description | 
+|---|--:|---|---|
+| Shared library | 1 | System-enforced Guardrail | Maximum number of shared libraries for a connection. |
+| Shared metrics | 10,000 | System-enforced Guardrail | Maximum number of shared metrics per shared library. |
+| Shared dimensions | 10,000 | System-enforced Guardrail | Maximum number of shared dimensions per shared library. | 
+
+{style="table-layout:auto"}
+
+
+## Data Insights Agent
+
+| Name |  Value | Limit Type | Description | 
+|---|--:|---|---|
+| Data views | 50 | System-enforced Guardrail | Maximum number of data views that can be enabled for the Data Insights Agent. When more data views are enabled, only the most-used data views are available to the Data Insights Agent. This guardrail does not impact the [guardrails defining the maximum number of data views you can define for a connection or within your organization](#connections-data-views-projects). | 
+
+
 ## Latencies
 
 >[!NOTE]
@@ -234,5 +266,12 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 | Adobe Analytics Source Connector Backfill of less than 10 billion events (maximum of 13 months of historical data) | < 4 weeks |
 | Audience Publishing to Real-time Customer Profile, including automatic creation of the streaming segment, and allowing the segment to be ready to receive the data. | ≈ 60 minutes |
 | Refresh Frequency for Audiences | One-time refresh: latency of less than 5 minutes.<br/>Refresh every 4 hours, daily, weekly, monthly (latency goes hand in hand with the refresh rate). |
+
+| Real-time reporting latencies | Expected latency |
+|---|---|
+| Edge Network SDK / API's into the Edge Network | &lt; 7 minutes |
+| Streaming connectors | &lt; 17 minutes |
+| Adobe Analytics source connector | &lt; 17 minutes |
+| Other source connectors (including batch data) | &lt; 25 hours |
 
 {style="table-layout:auto"}

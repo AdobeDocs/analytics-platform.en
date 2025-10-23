@@ -8,14 +8,10 @@ role: Admin
 ---
 # Derived fields {#derived-fields}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields"
 >title="Derived fields"
 >abstract="A derived field allows you to define data manipulations on the fly, through a customizable rule builder. You can then use that derived field as a component (metric or dimension) in Workspace or even further define as a component in Data view."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Derived fields are an important aspect of the real-time reporting functionality in Adobe Customer Journey Analytics. A derived field allows you to define (often complex) data manipulations on the fly, through a customizable rule builder. You can then use that derived field as a component (metric or dimension) in [Workspace](../../analysis-workspace/home.md) or even further define the derived field as a component in [Data view](../data-views.md). 
@@ -24,11 +20,19 @@ Derived fields can save a significant amount of time and effort, compared to tra
 
 Derived fields are defined within [Data views](../data-views.md), are based on a set of functions defined as rules, and applied to available standard and/or schema fields.
 
+>[!NOTE]
+>
+>[Standard components](../component-reference.md) are tied to and associated with event datasets. As a result, standard components that are used as part of a derived field only work against data from an event dataset.
+>
+
+
 Example use cases are:
 
 - Define a derived Page Name field that corrects improper collected page name values to correct page name values. 
 
 - Define a derived Marketing Channel field that determines the proper marketing channel based on one or more conditions (for example URL parameter, page URL, page name).
+
+Standard components are only supported on event datasets in derived fields. 
 
 ## Derived field interface {#interface}
 
@@ -67,7 +71,7 @@ When you define a rule in the rule builder, you use the rule interface.
 | A | **Rule Name** | By default the rule name is **Rule X** (X referring to a sequence number). To edit the name of a rule, select its name and type in the new name, for example `Query Parameter`. |
 | B | **Function Name** | The selected function name for the rule, for example [!UICONTROL URL PARSE]. When the function is the last in the sequence of functions and determines the final output values, the function name is followed by [!UICONTROL - FINAL OUTPUT], for example [!UICONTROL URL PARSE - FINAL OUTPUT]. <br/>To show a popup with more information on the function, select ![Help icon](assets/Smock_HelpOutline_18_N.svg). |
 | C | **Rule Description** | You can optionally add a description to a rule.<br/>Select ![More icon](assets/More.svg), then select **[!UICONTROL **Add Description**]** to add a description or **[!UICONTROL **Edit Description**]** to edit an existing description.<br/>Use the editor to enter a description. You can use the toolbar to format the text (using style selector, bold, italic, underline, right, left, centered, color, number list, bullet list) and adding links to external information. <br/>To finish editing the description, click outside of the editor. |
-| D | **Function Area** | Defines the logic of the function. The interface depends on the type of function. The dropdown for [!UICONTROL Field] or [!UICONTROL Value] shows all categories of fields (rules, standard fields, fields) available, based on the type of input the function expects. Alternatively, you can drag and drop a field from the Schema and Standard fields selector on to a Field or Value. When that dragged field is originating from a Lookup dataset, a Lookup function is automatically inserted before the function you define. <br/>See [Function reference](#function-reference) on detailed information for each of the functions supported. |
+| D | **Function Area** | Defines the logic of the function. The interface depends on the type of function. The drop-down menufor [!UICONTROL Field] or [!UICONTROL Value] shows all categories of fields (rules, standard fields, fields) available, based on the type of input the function expects. Alternatively, you can drag and drop a field from the Schema and Standard fields selector on to a Field or Value. When that dragged field is originating from a Lookup dataset, a Lookup function is automatically inserted before the function you define. <br/>See [Function reference](#function-reference) on detailed information for each of the functions supported. |
 
 {style="table-layout:auto"}
 
@@ -385,6 +389,36 @@ To use the template, you have to specify the correct parameters for each functio
 
 +++
 
+
+### State Latitude {#state-latitude}
+
+This function template gets the latitude for a US state with a precision of 5 digits.
+
++++ Details
+
+{{select-package}}
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the State Latitude rule builder](assets/function-template-state-latitude.png)
+
++++
+
+
+### State Longitude {#state-longitude}
+
+This function template gets the longitude for a US state with a precision of 5 digits.
+
++++ Details
+
+{{select-package}}
+
+To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the State Longitude rule builder](assets/function-template-state-longitude.png)
+
++++
+
 <!--
 
 +++ Data clean up template
@@ -421,14 +455,10 @@ For each supported function, find details below on:
 
 ### Case When {#casewhen}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_casewhen"
 >title="Case When"
 >abstract="This function provides the ability to apply conditionals based on defined criteria from one or more fields. Those criteria are then used to define the values in the new derived field based on the sequence of the conditions."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Applies conditionals, based on defined criteria from one or more fields. These criteria are then used to define the values in a new derived field, based on the sequence of the conditions.
@@ -637,7 +667,7 @@ You define a `Trip Duration (bucketed)` derived field. You create the following 
 
 ## More information {#casewhen-more-info}
 
-Customer Journey Analytics uses a nested container structure, modeled after Adobe Experience Platform's [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) (Experience Data Model). See [Containers](../create-dataview.md#containers) and [Filter containers](../../components/filters/filters-overview.md#filter-containers) for more background information. This container model, albeit flexible by nature, imposes some constraints when using the rule builder. 
+Customer Journey Analytics uses a nested container structure, modeled after Adobe Experience Platform's [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) (Experience Data Model). See [Containers](../create-dataview.md#containers) and [Segment containers](/help/components/segments/seg-overview.md#containers) for more background information. This container model, albeit flexible by nature, imposes some constraints when using the rule builder. 
 
 Customer Journey Analytics uses the following default container model:
 
@@ -661,14 +691,10 @@ The following constraints apply and are enforced when *selecting* and *setting* 
 
 ### Classify {#classify}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_classify"
 >title="Classify"
 >abstract="This function provides the ability to define a set of values that are replaced by corresponding values by text entry."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Defines a set of values that are replaced by corresponding values in a new derived field.
@@ -888,19 +914,82 @@ You define an `Origin - Destination` derived field. You use the [!UICONTROL CONC
 
 {style="table-layout:auto"}
 
+
 +++
 
 
-### Deduplicate {#dedup}
+<!-- DATE MATH -->
 
-<!-- markdownlint-disable MD034 -->
+### Date Math {#datemath}
+
+>[!CONTEXTUALHELP]
+>id="dataview_derivedfields_datemath"
+>title="Date Math"
+>abstract="This function provides the ability to return the difference between two date or date-time fields. Person-based fields (from profile datasets) do not have options for **[!UICONTROL Return the first]** and **[!UICONTROL Return the last.]**."
+
+Returns the difference between two dates or two date-time fields.
+
++++ Details
+
+## Specifications {#datemath-io}
+
+| Input Data Type | Input | Included Operators | Limitations | Output |
+|---|---|---|---|---|
+| <ul><li>Date</li><li>Date-time</li></ul> | <ul><li>[!UICONTROL Scope]<ul><li>Event</li><li>Session</li><li>Person</li></ul></li><li>[!UICONTROL Value]:<ul><li>Date</li><li>Date-Time</li><li>Static Date (user entered)</li><li>Static Date-time (user entered)</li><li>Dynamic Date<ul><li>Today</li></ul></li><li>Dynamic Date-time<ul><li>Now</li></ul></li></ul></li><li>[!UICONTROL Granularity]:<ul><li>Seconds</li><li>Minutes</li><li>Hours</li><li>Days</li><li>Weeks</li><li>Months</li><li>Quarters</li><li>Years</li></ul></li><li>For each Date or Date-time return:<ul><li>First (within session or person)</li><li>Last (within session or person)</li></ul></li></ul> | <p>N/A</p>| <p>2 functions per derived field</p> | <p>New derived field</p> |
+
+{style="table-layout:auto"}
+
+
+## Use case 1 {#datemath-uc1}
+
+ As the marketing analyst of an hotel company you would like to understand the difference of the number of days between customers check-in dates and booking dates over the last week.
+
+
+### Derived field {#datemath-uc1-derivedfield}
+
+You define a `Days between booking and check-in` derived field. You use the [!UICONTROL DATE MATH] function to define a rule to calculate the days for [!UICONTROL Scope] [!DNL Person] between the [!UICONTROL Booking Date] and [!UICONTROL Check-in Date]. You select [!UICONTROL Day] as [!UICONTROL Output granularity]. And you select [!UICONTROL Return the last] for both [!UICONTROL Booking Date] and [!UICONTROL Check-in Date] to ensure the last person scoped value is used in the calculation.
+
+![Screenshot of the Date Math rule](assets/datemath-1.png)
+
+
+## Use case 2 {#datemath-uc2}
+
+As a marketing analyst of a brick and mortar shop you want to understand how many days ago was the last visit of a customer to the store. You use geolocation functionality within a mobile app and beacons in the shop to capture physical visits of customers.
+
+### Derived field {#datemath-uc2-derivedfield}
+
+You define a new `Days Since Visit To Shop` derived field. You use the [!UICONTROL DATE MATH] function to define a rule to calculate the days between a Custom Date-Time (which you specify in [!UICONTROL Date]) and the [!UICONTROL Local Time] (from your [!UICONTROL placeContext] field group of your event dataset) with a [!UICONTROL Deduplication scope] of [!UICONTROL Person]. You select [!UICONTROL Return the last] to ensure the last person scoped value for [!UICONTROL Local time] is used in the calculation. You select Day as the [!UICONTROL Output granularity]. 
+
+![Screenshot of the Date Math rule 2](assets/datemath-2.png)
+
+Alternatively, you can use the convenience Dynamic date range value Now to calculate between now and the [!UICONTROL Local Time] (from your [!UICONTROL placeContext] field group of your event dataset)
+
+![Screenshot of the Date Math rule 2a](assets/datemath-2a.png)
+
+
+## Use case 3 {#datemath-uc3}
+
+You want to understand the search time in minutes before a customer within a session places an order.
+
+You define a new `Time Between Search And Order In Minutes` derived field that is the result of two [[!UICONTROL CASE WHEN] functions](#case-when) to define [!UICONTROL Search Time] and [!UICONTROL Order Time] values. 
+Then you use these two values to calculate the difference with a [!UICONTROL DATE MATH] function with [!UICONTROL Scope] set to [!UICONTROL Session], values set to [!UICONTROL Search Time] and [!UICONTROL Order Time] and [!UICONTROL Output granularity] set to [!UICONTROL Minute]. For both values you select [!UICONTROL Return the first] to ensure the first [!UICONTROL Search Time] and [!UICONTROL Order Time] is returned.
+
+![Screenshot of the Date Math rule 3](assets/datemath-3.png)
+
+
+## More information {#datemath-more-info}
+
+The options for [!UICONTROL Return the first] or [!UICONTROL Return the last] are not available when you select a person-based (from a profile dataset) field. A person-based field can have only one value for a Date or Date-time field for a person.
++++
+
+<!-- DEDUPLICATE -->
+
+### Deduplicate {#dedup}
 
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_deduplicate"
 >title="Deduplicate"
 >abstract="This function provides the ability to configure a field to only count values non-repetitively at either the session or person level. Additionally, a deduplication ID can be used to ensure that based on a given ID (such as a purchase ID), only one value is used (either the first instance or the last instance)."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Prevents counting a value multiple times.
@@ -984,6 +1073,48 @@ You define a new `Tracking Code (deduplicated)` derived field. You use the [!UIC
 +++
 
 
+<!-- DEPTH -->
+
+### Depth {#depth}
+
+>[!CONTEXTUALHELP]
+>id="dataview_derivedfields_depth"
+>title="Depth"
+>abstract="This function provides the ability to return the depth of any field, similar to the functionality of the event depth standard component."
+
+Returns the depth of a field, similar to what is possible with the out-of-the-box [standard Event Depth dimension](/help/components/dimensions/overview.md#standard-dimensions).
+
++++ Details
+
+## Specifications {#depth-io}
+
+| Input Data Type | Input | Included Operators | Limitations | Output |
+|---|---|---|---|---|
+| Any | Any field| N/A | 3 functions per derived field | New derived field |
+
+{style="table-layout:auto"}
+
+
+## Use case {#depth-uc1}
+
+You want to understand the internal search depth (which you can also interpret as the number of searches). So you can use that internal search depth later to break down on the search term associated with a specific search depth.
+
+
+### Derived field {#depth-uc1-derivedfield}
+
+You define a new `Internal Search Depth` derived field. You use the [!UICONTROL DEPTH] function to define a rule to retrieve the depth of [!UICONTROL Internal Search Term] and store that in a new derived field.
+
+![Screenshot of the Depth rule](assets/depth-1.png)
+
+And then use that new derived field in a visualization to break down on what term has been used to search for at the first search.
+
+![Screenshot of the Depth rule](assets/depth-1a.png)
+
++++
+
+
+
+
 <!-- FIND AND REPLACE -->
 
 ### Find and Replace {#find-and-replace}
@@ -994,8 +1125,6 @@ You define a new `Tracking Code (deduplicated)` derived field. You use the [!UIC
 >id="dataview_derivedfields_findandreplace"
 >title="Find and replace"
 >abstract="This function provides the ability to find all values in a selected field and replace those values with a different value in a new derived field."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Finds all values in a selected field and replaces those values with a different value in a new derived field.
@@ -1068,14 +1197,10 @@ You define an `Email Marketing (updated)` derived field. You use the [!UICONTROL
 
 ### Lookup {#lookup}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_lookup"
 >title="Lookup"
 >abstract="This function provides the ability to use fields from a lookup dataset using a matching key between datasets."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Lookup values using a field from a lookup dataset and returns a value in a new derived field or for further rule processing.
@@ -1129,14 +1254,10 @@ You can quickly insert a [!UICONTROL Lookup] function in the rule builder, alrea
 
 ### Lowercase {#lowercase}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_lowercase"
 >title="Lowercase"
 >abstract="This function converts the entire string text to lowercase values."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Converts values from a field to lowercase and stores it into a new derived field.
@@ -1190,14 +1311,10 @@ You define a `Product Names` derived field. You use the [!UICONTROL LOWERCASE] f
 
 ### Math {#math}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_math"
 >title="Math"
 >abstract="This function provides the ability to perform mathematical operations on a field. The function can be used to perform basic arithmetic operations, such as addition, subtraction, multiplication, and division."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Use basic mathematical operators (add, subtract, multiply, divide & raise to a power) on numeric fields.
@@ -1281,14 +1398,10 @@ Use the Math function for hit-level based calculations. Use the [Summarize](#sum
 
 ### Merge Fields {#merge}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_mergefields"
 >title="Merge Fields"
 >abstract="This function provides the ability to take values from two different fields and include their respective values in a single dimension. The rule first checks to see if the first value is set. If not, then it will use the second value and so on."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Merges values from two different fields into a new derived field.
@@ -1357,14 +1470,10 @@ You must select the same type of fields within a Merge Fields rule. For example,
 
 ### Next or Previous {#next-previous}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_nextprevious"
 >title="Next or Previous"
 >abstract="This function provides the ability to look at the next or previous value collected for a given field."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Takes a field as input and resolves the next or previous value for that field within the scope of the session or use. This will only apply to the Visit and Event table fields.
@@ -1439,14 +1548,10 @@ You can only select fields that belong to the Visit or Event table.
 
 ### Regex Replace {#regex-replace}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_regexreplace"
 >title="Regex Replace"
 >abstract="This function provides the ability to extract parts of a string using regular expressions."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Replaces a value from a field using a regular expression into a new derived field.
@@ -1546,14 +1651,10 @@ You can use these sequences in the [!UICONTROL Output format] any number of time
 
 ### Split {#split}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_split"
 >title="Split"
 >abstract="This function provides the ability to split a field into multiple fields based on a delimiter."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Splits a value from a field into a new derived field.
@@ -1648,14 +1749,10 @@ You create a `Second Response` derived field to take the last value  from the [!
 
 ### Summarize {#summarize}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_summarize"
 >title="Summarize"
 >abstract="This function provides the ability to aggregate values at an event, session or person level. Depending on the field type for the select field, different options will be available."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Applies aggregation-type functions to metrics or dimensions at event, session, and user levels.
@@ -1726,14 +1823,10 @@ Use the Summarize function for event, session or person scope based calculations
 
 ### Trim {#trim}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_trim"
 >title="Trim"
 >abstract="This function provides the ability to trim either whitespace or special characters from either the beginning or the end of a string. Also the ability to specify the number of characters to use for the returned value, either from the front or the end of the string."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Trims whitespace, special characters, or number of characters from either the beginning or the end of field values into a new derived field.
@@ -1841,6 +1934,58 @@ You create a  `Store Identifier` derived field. You use the [!UICONTROL TRIM] fu
 | NV | 1 |
 
 {style="table-layout:auto"}
+
++++
+
+
+
+<!-- TYPECASE -->
+
+### Typecast {#typecast}
+
+>[!CONTEXTUALHELP]
+>id="dataview_derivedfields_typecast"
+>title="Typecast"
+>abstract="This function provides the ability to change the field type on the fly to make the field available for additional transformations within Customer Journey Analytics."
+
+Changes the field type of a field to make it available for additional transformations within Customer Journey Analytics.
+
++++ Details
+
+## Specifications {#typecast-io}
+
+| Input Data Type | Input | Included Operators | Limit | Output |
+|---|---|---|---|---|
+| <ul><li>Numeric</li><li>Date</li><li>Date-time</li><li>String</li></ul> | <ul><li>[!UICONTROL Field] | <p><ul><li>Integer<ul><li>To String</li></ul></li><li>Double<ul><li>To String<ul><li>Include # of decimal places to inherit (max 5?)</li></ul></li><li>To Integer</li></ul></li><li>Byte<ul><li>To String</li></ul></li><li>Long<ul><li>To String</li></ul></li><li>Date<ul><li>To String<ul><li>Provide the ability to define the output format</li></ul></li><li>Examples<ul><li>Date (Example of January 7, 2025)<ul><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM-DD-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01/07/25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YYYY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">YY/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MMM DD, YYYY<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. January 07, 2025</li></ul></li></ul></li></ul></li></ul></li><li>Date-time<ul><li>To String<ul><li>Provide the ability to define the output format</li></ul></li><li>Examples<ul><li data-stringify-indent="0" data-stringify-border="0">Date-Time (Example of January 7, 2025 at 1:30pm, 52 seconds)<ul><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-DD-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YYYY/MM/DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">YY/MM/DD hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM DD, YYYY hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. January 07, 2025 13:30:52</li></ul></li></ul></li></ul></li><li>String<ul><li>To Numeric<ul><li>If we have values that are not numeric in nature, they will return null.</li><li>We will need the user to input the precision and the locale to use.&nbsp;</li></ul></li></ul></li></ul></li></ul></p> | <p>3 functions per derived field</p> | <p>New derived field</p> |
+
+{style="table-layout:auto"}
+
+
+## Use case 1 {#typecast-uc1}
+
+You have an integer field, screen height (for example device.screenHeight from your event dataset), that you would like to use as a string based dimension.
+
+
+### Derived field {#typecast-uc1-derivedfield}
+
+You define a  `Screen Height` derived field. You use the [!UICONTROL TYPECAST] function to define a rule to [!UICONTROL Typecast to] [!UICONTROL String] the [!UICONTROL Screen height] field and store that in the new derived field.
+
+![Screenshot of the Typecast rule 1](assets/typecast-1.png)
+
+
+
+## Use case 2 {#typecast-uc2}
+
+You want to use Revenue in a Cohort table (which only supports integers), but the Revenue field has a Double type.
+
+![Screenshot of the Typecast rule 2](assets/typecast-2.png)
+
+
+### Derived field {#typecast-uc2-derivedfield}
+
+You define a  `Revenue (integer)` derived field. You use the [!UICONTROL TYPECAST] function to define a rule to [!UICONTROL Typecast to] [!UICONTROL Integer] the [!UICONTROL Revenue] field and store that in the new derived field.
+
+
 +++
 
 
@@ -1848,14 +1993,10 @@ You create a  `Store Identifier` derived field. You use the [!UICONTROL TRIM] fu
 
 ### URL Parse {#urlparse}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_urlparse"
 >title="Url Parse"
 >abstract="This function provides the ability to parse out different parts of a URL including the host, path or query parameters."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Parses out different parts of a URL including protocol, host, path, or query parameters.
@@ -1942,7 +2083,7 @@ The following limitations apply to the Derived field functionality in general:
 
 - You can use a maximum of ten different schema fields (not including standard fields) when defining rules for a derived field. 
   - From this maximum of ten different schema fields, only a maximum of three lookup schema or profile schema fields are allowed.
-- You can have a maximum of 100 derived fields per Customer Journey Analytics connection.
+- You can have a maximum number of derived fields per Customer Journey Analytics connection depending on the package you license. See [Product Description](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html){target="_blank"} for more information.
 
 
 ### Summary of function limitations
@@ -1951,8 +2092,10 @@ The following limitations apply to the Derived field functionality in general:
 |---|---|
 | <p>Case When</p> | <ul><li>5 Case When functions per derived field</li><li>200 [operators](#operators) per derived field</li></ul> |
 | <p>Classify</p> | <ul><li>5 Classify functions per derived field</li><li>200 [operators](#operators) per derived field</li></ul> |
-| <p>Concatenate</p> | <ul><li>2 Concatenate functions per derived field</li></ul> |
+| <p>Concatenate</p> | <ul><li>2 Concatenate functions per derived field</li><li>3 values per Concatenate function</ul> |
+| <p>Date Math</p> | <ul><li>2 Date Math functions per derived field</li></ul> |
 | <p>Deduplicate</p> | <ul><li>5 Deduplicate functions per derived field</li></ul> |
+| <p>Depth</p> | <ul><li>3 Depth functiond per derived field</li></ul> |
 | <p>Find &amp; Replace</p> | <ul><li>2 Find &amp; Replace functions per derived field</li></ul> |
 | <p>Lookup</p> | <ul><li>5 Lookup functions per derived field</li></ul> |
 | <p>Lowercase</p> | <ul><li>2 Lowercase functions per derived field</li></ul> |
@@ -1963,6 +2106,7 @@ The following limitations apply to the Derived field functionality in general:
 | <p>Split</p> | <ul><li>2 Split functions per derived field</li></ul> |
 | <p>Summarize</p> | <ul><li>3 Summarize functions per derived field</li></ul> |
 | <p>Trim</p> | <ul><li>1 Trim function per derived field</li></ul> |
+| <p>Typecast</p> | <ul><li>3 Typecast functions per derived field</li></ul> |
 | <p>URL Parse</p> | <ul><li>5 URL Parse functions per derived field</li></ul> |
 
 {style="table-layout:auto"}

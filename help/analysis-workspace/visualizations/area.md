@@ -1,6 +1,6 @@
 ---
-description: The Area visualization is like a line graph, but with a colored area below the line.
-title: Area and area stacked
+description: Learn about the Area and the Area stacked visualization.
+title: Area (Stacked)
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User

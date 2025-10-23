@@ -66,8 +66,8 @@ Read this [overview](/help/components/audiences/audiences-overview.md) to famili
    | Creation method | Details |
    | --- | --- |
    | From within the **[!UICONTROL Audiences]** interface | Select **[!UICONTROL Components]** > **[!UICONTROL Audiences]** from the main Customer Journey Analytics menu. The Audiences interface displays. Select **[!UICONTROL Create audience]** and the [!UICONTROL Audience builder] opens. |
-   | From a visualization in Analysis Workspace | Many visualizations in Analysis Workspace allow you to create an audience using the context menu. For example, you can select **[!UICONTROL Create audience]** from the context menu of an item in a [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) or a node in [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>Using this method pre-populates the filter in the Audience builder with the dimension or dimension item that you selected.</p><p>The following visualizations allow you to create an audience using the right-click menu:</p><ul><li>[Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Flow](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Note:** Audiences cannot include calculated metrics. If you try to create an audience that contains a calculated metric, the calculated metric is not included in the audience definition.</p> |
-   | From the filter creation/editing UI | Check the box that says **[!UICONTROL Create an audience from this filter]**. Using this method pre-populates the filter. See [Create filters](/help/components/filters/create-filters.md) for more information. |
+   | From a visualization in Analysis Workspace | Many visualizations in Analysis Workspace allow you to create an audience using the context menu. For example, you can select **[!UICONTROL Create audience]** from the context menu of an item in a [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) or a node in [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>Using this method pre-populates the segment in the Audience builder with the dimension or dimension item that you selected.</p><p>The following visualizations allow you to create an audience using the right-click menu:</p><ul><li>[Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Flow](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Map](/help/analysis-workspace/visualizations/map.md#create-an-audience-from-the-map-visualization)<br/>**Note:** This visualization is in the Limited Testing phase of release and might not be available yet in your environment.</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Note:** Audiences cannot include calculated metrics. If you try to create an audience that contains a calculated metric, the calculated metric is not included in the audience definition.</p> |
+   | From the segment creation/editing UI | Check the box that says **[!UICONTROL Create an audience from this segment]**. Using this method pre-populates the segment. See [Create segments](/help/components/segments/seg-create.md) for more information. |
 
    {style="table-layout:auto"}
 
@@ -95,7 +95,7 @@ Configure these settings to define or update your audience.
 | **[!UICONTROL Tags]** | Any tags that you want to assign to the audience for organizational purposes. You can select one or more pre-existing tags or enter a new one.|
 | **[!UICONTROL Description]** | A description of the audience, to differentiate it from others. For example, `Build an audience of really interested potential car buyers` |
 | **[!UICONTROL Refresh frequency]** | The frequency at which you want to refresh the audience.<p/>You can choose between <ul><li>**[!UICONTROL One time]** audience: an audience (default) that needs no refreshing. For example, this option could be helpful for specific, one-time campaigns.<br/>You have to specify a **[!UICONTROL One time date range]**. You can use ![Calendar](/help/assets/icons/Calendar.svg) to enter a date range.</li><li>A refreshing audience. You can select from the following options:<ul><li>**[!UICONTROL Every 4 hour]**s: an audience that refreshes every 4 hours.</li><li>**[!UICONTROL Daily]**: an audience that refreshes daily</li><li>**[!UICONTROL Weekly]**: an audience that refreshes weekly.</li><li>**[!UICONTROL Monthly]**: an audience that refreshes monthly</li></ul></li>For refreshing audiences, you have to specify:<ul><li>**[!UICONTROL Refresh lookback window]**. Define the number of lookback days from today that an audience is evaluated. You can select from options or define a Custom time. The maximum is 90 days.</li><li>**[!UICONTROL Expiration date]**: Define when the audience stops refreshing. You can use ![Calendar](/help/assets/icons/Calendar.svg) to select a date. The default is 1 year from the creation date. Expiring audiences are treated similarly to expiring scheduled reports. The admin gets an email a month before the audience expires.</li></ul> Note that there is a limit of 75 to 150 audience refreshes, depending on your Customer Journey Analytics entitlement.</li></ul> |
-| **[!UICONTROL Filter]** | Filters are the main input to the audience. Drag and drop one or more filters from the left ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filter]** panel on to the Filter area. You can use the ![Search](/help/assets/icons/Search.svg) [!UICONTROL *Search filters*] to search for filters. You can add up to 20 filters. Filters can be joined with **[!UICONTROL And]** or **[!UICONTROL Or]** operators.<p>When creating an audience from a visualization in Analysis Workspace (such as a freeform table or Journey canvas), any filters applied to the panel or to the column are preserved. You can remove any filters that are automatically applied.</p> |
+| **[!UICONTROL Filter]** | Filters are the main input to the audience. Drag and drop one or more segments from the left ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** panel on to the Segment area. You can use the ![Search](/help/assets/icons/Search.svg) [!UICONTROL *Search segments*] to search for segments. You can add up to 20 segments. Segments can be joined with **[!UICONTROL And]** or **[!UICONTROL Or]** operators.<p>When creating an audience from a visualization in Analysis Workspace (such as a freeform table or Journey canvas), any segments applied to the panel or to the column are preserved. You can remove any segments that are automatically applied.</p> |
 | **[!UICONTROL Data preview]** | Select ![Info](/help/assets/icons/Info.svg) to show or hide the [Data preview](#data-preview) for the selected date range. |
 
 ## Data preview
@@ -116,9 +116,13 @@ The Data preview panel provides the following information.
 
 ## What happens after an audience is created and published? {#after-audience-created} 
 
-After you create and publish an audience in Customer Journey Analytics, the audience is available in Experience Platform. An Adobe Experience Platform streaming segment is created only if your organization is set up for streaming segmentation.
+After you create and publish an audience in Customer Journey Analytics, the audience is available in Experience Platform and can be viewed in the [Audience portal](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal). With the audience available in Experience Platform, it can be used in other Experience Platform applications, such as Adobe Journey Optimizer. 
 
-* The audience in Platform shares the same name and description as the Customer Journey Analytics audience. The name is appended with the Customer Journey Analytics audience ID to ensure that the audience is unique.
+An Adobe Experience Platform streaming segment is created only if your organization is set up for streaming segmentation.
+
+Consider the following when working with audiences that are published from Customer Journey Analytics to Experience Platform:
+
+* The audience in Experience Platform shares the same name and description as the Customer Journey Analytics audience. The name is appended with the Customer Journey Analytics audience ID to ensure that the audience is unique.
 * Any changes made to the name or description of the audience in Customer Journey Analytics are reflected in Experience Platform.
 * If an audience is deleted in Customer Journey Analytics, the audience continues to be available in Experience Platform until the profile membership of the audience expires. The profile membership expires after 420 days for one-time audiences and after 16 days for recurring audiences.
 
@@ -163,6 +167,40 @@ To view Customer Journey Analytics audiences in Platform:
 
 For more information about using Audiences in Platform, see the [Audiences](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) section in the [Segment Builder UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) in the Experience Platform documentation.
    
+### Understand discrepancies in audience counts
+
+Discrepancies in audience counts may occur between Customer Journey Analytics and Real-Time Customer Data Platform. 
+
+<!--
+![Infographic on audience differences between Customer Journey Analytics and Real-Time CDP.](/help/components/audiences/assets/infographic-cja-rtcdp.png)
+-->
+
+#### Estimated versus deterministic counts
+
+The methodology by which audience membership numbers are being calculated differs between the two apps, as described below.
+
+* **Customer Journey Analytics**: The **[!UICONTROL Total People]** metric in Customer Journey Analytics is an estimated value. This means that the count is an estimate based on the rules of the audience and it can change between refresh intervals.
+* **Real-Time Customer Data Platform**: The count in Real-Time Customer Data Platform is deterministic, based on daily evaluation jobs, and fixed at the time the audience finishes publishing into the audience portal. 
+
+#### Publishing interval and rate
+
+Audiences publish to Real-Time Customer Data Platform at a rate of 1500 records per second (RPS). For example, an audience of 20 million members will take approximately 3.7 hours to fully publish (20M / 1500 RPS / 3600 seconds per hour). During this time, differences in audience membership between the two apps are likely.
+
+#### Profile fragmentation
+
+If profiles imported from Customer Journey Analytics already exist in Real-Time Customer Data Platform, they are not counted as new profiles. This can lead to lower-than-expected profile counts in Real-Time Customer Data Platform.
+
+#### Batch versus streaming audiences
+
+Customer Journey Analytics audiences are not included in the daily batch evaluation job and remain fixed until the next publish interval. In contrast, other batch audiences in Real-Time Customer Data Platform are re-evaluated every 24 hours.
+
+### Key takeaways to remember
+
+* **Estimated counts in Customer Journey Analytics**: Understand that the **[!UICONTROL Total People]** count in Customer Journey Analytics is an estimate and can vary due to streaming data and identity behaviors.
+* **Deterministic counts in Real-Time Customer Data Platform**: The count in Real-Time Customer Data Platform is fixed and does not change until the next publish interval.
+* **Profile Fragmentation**: Be aware that existing profiles in Real-Time Customer Data Platform may not contribute to new profile counts when importing from Customer Journey Analytics.
+
+By clearly differentiating these aspects, you can better understand and manage your audience data across Customer Journey Analytics and Real-Time Customer Data Platform.--->
 
 ## FAQs {#faq}
 

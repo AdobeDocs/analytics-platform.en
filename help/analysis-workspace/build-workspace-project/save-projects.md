@@ -1,6 +1,6 @@
 ---
-description: Learn about the different save options, including autosave, save as, save as template, and open previous versions.
-title: Save projects
+description: Learn about the different options to save your projects in Analysis Workspace.
+title: Save Projects
 feature: Workspace Basics
 role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
@@ -36,7 +36,7 @@ To save a project manually, with your project open in Analysis Workspace, select
      * **[!UICONTROL Name]** (required). name of your project.
      * **[!UICONTROL Description]**. A description of your project.
      * **[!UICONTROL Tags]**. Search for tags in the [!UICONTROL *Search tags*] field or add new tags using **[!UICONTROL ENTER]**. 
-     * **[!UICONTROL Folder]**. Select a folder from the [!UICONTROL *Select a folder*] dropdown menu. If you do not specify a folder, the project is saved in the current folder from which you created a new project.
+     * **[!UICONTROL Folder]**. Select a folder from the [!UICONTROL *Select a folder*] drop-down menu. If you do not specify a folder, the project is saved in the current folder from which you created a new project.
      * **[!UICONTROL Version notes]**. Add version notes in the *Add notes* text area. 
 
   1. Select **[!UICONTROL Save]** to save your project.
@@ -73,7 +73,7 @@ To save a project manually, with your project open in Analysis Workspace, select
      * **[!UICONTROL Name]** (required). name of your project.
      * **[!UICONTROL Description]**. A description of your project.
      * **[!UICONTROL Tags]**. Search for tags in the [!UICONTROL *Search tags*] field or add new tags using **[!UICONTROL ENTER]**. 
-     * **[!UICONTROL Folder]**. Select a folder from the [!UICONTROL *Select a folder*] dropdown menu. If you do not specify a folder, the project is saved in the current folder from which you created a new project.
+     * **[!UICONTROL Folder]**. Select a folder from the [!UICONTROL *Select a folder*] drop-down menu. If you do not specify a folder, the project is saved in the current folder from which you created a new project.
      * **[!UICONTROL Version notes]**. Add version notes in the *Add notes* text area. 
 
   1. Select **[!UICONTROL Save]** to save your project.

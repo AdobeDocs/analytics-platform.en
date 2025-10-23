@@ -197,7 +197,7 @@ Breakdowns refine your analysis by breaking down metrics by dimension items such
 
 ![Breakdown_view](assets/break_view.png)
 
-Each dimension added to the tile will show up in a drop-down list in the detailed view of the app. The executive user can then choose among the options listed in the drop-down list.
+Each dimension added to the tile will show up in a drop-down menu in the detailed view of the app. The executive user can then choose among the options listed in the drop-down menu.
 
 ## Customize detail slides {#customize-detail-slide}
 

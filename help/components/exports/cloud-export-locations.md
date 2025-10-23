@@ -6,9 +6,27 @@ feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
 ---
-# Configure cloud export locations
+# Configure cloud export locations {#configure-cloud-export-locations}
 
-Before you can export Customer Journey Analytics reports to a cloud destination as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md), you need to add and configure the location where you want the data to be sent. 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-prefix"
+>title="Prefix"
+>abstract="The root folder within the container where you want to put the data. Specify a static folder name, then add a slash after the name to create the folder. For example, `folder_name/`"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-file-name"
+>title="File name and path"
+>abstract="Specify a dynamic custom file name to use for automated exports that are sent to this location. You can also precede the file name with a dynamic custom file path. <br\>Use variables in the file name and path to make them dynamic. <br\>For example, if you specify `${yyyy}/${mm}/${dd}/my-report-${instance_id}-${idx}`, an export that is automatically sent to this destination on January 15, 2026 would have the following file path and name: `[prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv` <br\>Click the link below for a list of available variables."
+
+<!-- markdownlint-enable MD034 -->
+
+Before you can export Customer Journey Analytics reports to a cloud destination (either from Analysis Workspace, as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md) or from Report Builder, as described in [Export reports from Report Builder](/help/report-builder/report-builder-export.md)) as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md), you need to add and configure the location where you want the data to be sent. 
 
 This process consists of adding and configuring the account (such as Amazon S3, Google Cloud Platform, and so forth) as described in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md), and then adding and configuring the location within that account (such as a folder within the account) as described in this article.
 
