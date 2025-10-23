@@ -126,6 +126,18 @@ See [Segmentation overview](/help/components/segments/seg-overview.md) for more 
 
 ## Sort tables
 
-You can sort the data of a Freeform table by any column in Analysis Workspace that is either a dimension or a metric. An arrow indicates how the data is sorted (**↓** for descending, or **↑** for ascending).
+You can sort the data of a Freeform table by any column in Analysis Workspace that is either a dimension or a metric. 
 
-![Sorting](assets/sorting.gif)
+### Sort tables by a single column
+
+To sort data in ascending or descending order by a single column:
+
+1. Select the **Sort** icon ![Sort](/help/assets/icons/SortOrderDown.svg) in the column header.
+
+   An arrow indicates how the data is sorted (![Sort](/help/assets/icons/SortOrderUp.svg) for ascending or ![Sort](/help/assets/icons/SortOrderDown.svg) for descending).
+
+### Sort tables by multiple columns (Advanced sorting)
+
+
+
+
