@@ -248,6 +248,15 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 | Data views | 50 | System-enforced Guardrail | Maximum number of data views that can be enabled for the Data Insights Agent. When more data views are enabled, only the most-used data views are available to the Data Insights Agent. This guardrail does not impact the [guardrails defining the maximum number of data views you can define for a connection or within your organization](#connections-data-views-projects). | 
 
 
+## Customer Journey Analytics B2B Edition
+
+| Name |  Value | Limit Type | Description | 
+|---|--:|---|---|
+| Reportable Businessperson Profiles | 1 million | System-enforced Guardrail | Average reportable rows per 1000 reportable businessperson profiles. |
+
+
+
+
 ## Latencies
 
 >[!NOTE]
