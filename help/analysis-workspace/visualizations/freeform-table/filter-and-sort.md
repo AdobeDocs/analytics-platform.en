@@ -124,20 +124,38 @@ Column totals might not be exact in the following scenarios:
 
 See [Segmentation overview](/help/components/segments/seg-overview.md) for more details.
 
-## Sort tables
+## Sort tables {#sort-tables}
 
 You can sort the data of a Freeform table by any columns in Analysis Workspace that are either a dimension or a metric. 
 
-### Sort tables by a single column
+By default, dimensions are sorted in ascending order and metrics are sorted in descending order.
 
-To sort data in ascending or descending order by a single column:
+### Sort tables by a single column 
 
-1. Select the **Sort** icon ![Sort](/help/assets/icons/SortOrderDown.svg) in the column header.
+When you sort data for a single column as described in this section, any [advanced sorting](#sort-tables-by-multiple-columns-advanced-sorting) that is applied to the table is removed.
+
+To sort data in tables by a single column:
+
+1. Select the **Sort** icon ![Sort](/help/assets/icons/SortOrderDown.svg) in the header of the column you want to sort.
+
+   <!-- Add screenshot of sort drop-down -->
+
+1. Select **[!UICONTROL Ascending]** or **[!UICONTROL Descending]**. 
 
    An arrow indicates how the data is sorted (![Sort](/help/assets/icons/SortOrderUp.svg) for ascending or ![Sort](/help/assets/icons/SortOrderDown.svg) for descending).
 
 ### Sort tables by multiple columns (Advanced sorting)
 
+To sort data in tables by multiple columns:
 
+1. Select the **Sort** icon ![Sort](/help/assets/icons/SortOrderDown.svg) in the header of any column that you want to sort.
+
+   <!-- Add screenshot of sort drop-down -->
+
+1. Select **[!UICONTROL Advanced sorting]**. 
+
+   
+
+Sort icon displays only if there is a sort on the column. Otherwise, it displays on hover. 
 
 
