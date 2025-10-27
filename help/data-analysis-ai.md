@@ -84,6 +84,14 @@ The following parameters govern access to Data Insights Agent in Customer Journe
 
       ![Enable data views for Data Insights Agent](assets/data-view-enable-dia.png)   
 
+  To view the number of data views that are enabled for Data Insights Agent in your IMS organization:
+
+   1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Data views]**.
+
+   1. Select the info icon at the top of the **[!UICONTROL Data Insights Agent]** column.
+
+      ![Data Insights Agent info icon](assets/data-insights-agent-tooltip.png)
+
 ## Access Data Insights Agent in the AI Assistant
 
 1. Go to [experience.adobe.com](https://experience.adobe.com/) and login with your Adobe ID.
