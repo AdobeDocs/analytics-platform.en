@@ -14,6 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 | --- | --- |
 | **October 2025** | |
+| Manage access to the Data Insights Agent | The [permission requirements and process for enabling data views](/help/data-analysis-ai.md#manage-access-to-data-insights-agent) has been updated. |
 | Attribution configuration | Additional updates to reflect the new attribution configuration options for model, container and lookback window. |
 | Ingest and use Experience Platform audiences | Updated use case article on how to [ingest and use Experience Platform audiences](/help/use-cases/data-ingestion/ingest-aep-segments.md). |
 | Prepare your organization to upgrade to Customer Journey Analytics | Added information about how to [prepare an organization to upgrade to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md). |
