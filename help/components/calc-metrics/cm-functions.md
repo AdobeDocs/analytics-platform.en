@@ -257,8 +257,8 @@ MODULO(MODULO(x,y)+y,y)
 
 | Argument | Description |
 |---|---|
-| metric | The percentile value in the range 0 to 100, inclusive. |
-| k | The metric column that defines relative standing. |
+| metric | The metric column that defines relative standing. |
+| k | The percentile value in the range 0 to 100, inclusive. |
 | include_zeros | Whether or not to include zero values in the calculations. |
 
 
