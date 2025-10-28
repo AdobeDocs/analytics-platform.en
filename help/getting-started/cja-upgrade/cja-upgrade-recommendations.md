@@ -63,6 +63,8 @@ The following steps outline the recommended process for upgrading from Adobe Ana
 
 Each step provides a high-level explanation of a more detailed process. Follow the link for each step and complete its associated tasks, then return to this page and continue to the next step in the process. 
 
+1. [Prepare your organization to upgrade to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md).
+
 1. [Plan your XDM schema architecture](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md){target="_blank"}.
 
 1. [Create your desired custom schema in Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md){target="_blank"}.

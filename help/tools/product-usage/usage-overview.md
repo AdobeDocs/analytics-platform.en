@@ -51,6 +51,7 @@ When you enable Product usage, the following dimensions are available. If you wa
   * [!UICONTROL Send file on schedule]
   * [!UICONTROL Share project with anyone]
   * [!UICONTROL Share project with Workspace users]
+  * [!UICONTROL Switch data view]
 * **[!UICONTROL Attribution Model Used]**: The type of attribution model that the component uses. Dimension items include:
   * [!UICONTROL Last touch]
   * [!UICONTROL First touch]
@@ -63,7 +64,8 @@ When you enable Product usage, the following dimensions are available. If you wa
   * [!UICONTROL Time decay]
   * [!UICONTROL Custom]
   * [!UICONTROL Algorithmic]
-* **[!UICONTROL Component Name]**: The name of the component that was added, removed, or modified.
+* **[!UICONTROL Component ID]**: The ID of the component that was added, removed, or modified.
+* **[!UICONTROL Component Name]**: The friendly name of the component that was added, removed, or modified.
 * **[!UICONTROL Component Type]**: The type of component that was added, removed, or modified. Dimension items include:
   * [!UICONTROL Dimension]
   * [!UICONTROL Metric]
@@ -72,8 +74,10 @@ When you enable Product usage, the following dimensions are available. If you wa
   * [!UICONTROL Date range]
   * [!UICONTROL Annotation]
   * [!UICONTROL Alert]
+* **[!UICONTROL Data View ID]**: The ID of the data view.
+* **[!UICONTROL Data View Name]**: The friendly name of the data view.
 * **[!UICONTROL Login User]**: The user that took the action.
-* **[!UICONTROL Panel Used]**: The panel where the component was added, removed, or modified. Dimension items include:
+* **[!UICONTROL Panel Used]**: The panel that was added, removed, or modified. Dimension items include:
   * [!UICONTROL Attribution]
   * [!UICONTROL Blank panel]
   * [!UICONTROL Experimentation]
@@ -87,6 +91,7 @@ When you enable Product usage, the following dimensions are available. If you wa
   * [!UICONTROL User stream]
   * [!UICONTROL Retention]
   * [!UICONTROL Feature matrix]
+* **[!UICONTROL Project ID]**: The ID of the project.
 * **[!UICONTROL Project Name]**: The friendly name of the project.
 * **[!UICONTROL Project Type]**: The project type. Dimension items include:
   * `workspace-projects`

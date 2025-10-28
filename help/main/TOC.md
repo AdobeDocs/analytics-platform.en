@@ -48,6 +48,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Send data to Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
     + [Retain historical data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
     + [Recommended upgrade process](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+    + [Prepare your organization](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md)
     + Architect and create a schema {#schema}
       + [Architect your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [Create your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
