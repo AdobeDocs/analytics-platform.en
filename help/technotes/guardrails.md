@@ -48,20 +48,12 @@ Some of the features and their associated value for the limit depend on the Cust
 | Visualizations per Panel | 25 | System-enforced Guardrail  |  Maximum number of [visualizations](../analysis-workspace/home.md#visualizations) per panel. |
 | Derived Fields per Freeform Table | 5 | System-enforced Guardrail | Maximum number of different derived fields in a single freeform table. |
 | Comments per project | 1,000 | System-enforced Guardrail | Maximum number of comments per project. |
+Comments per project | 1,000 | System-enforced Guardrail | Maximum number of comments per project. |
+Replies per comment | 100 | System-enforced Guardrail | Maximum number of replies per comment. |
+Images per comment | 5 | System-enforced Guardrail | Maximum number of images per comment. |
+Image size | 2 | System-enforced Guardrail | Maximim upload size per image in MB. |
 
 {style="table-layout:auto"}
-
-
-<!--
-
-Add this to the table above, change - for pipe : (End of April, 2025 when project commenting is GA)
-
-Comments per project - 1,000 - System-enforced Guardrail - Maximum number of comments per project. 
-Replies per comment - 100 - System-enforced Guardrail - Maximum number of replies per comment. 
-Images per comment - 5 - System-enforced Guardrail - Maximum number of images per comment. 
-Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB 
-
--->
 
 <!--
 
@@ -127,7 +119,7 @@ See also Experience Platform [Real-time Customer Data Platform Guardrails](https
 | Name |  Value | Limit Type | Description | 
 |---|--:|---|---|
 | Fields | 10,000 | System-enforced Guardrail  | Maximum number of properties or fields per row in a dataset. | 
-| Unique Strings | 10 million | System-enforced Guardrail  | Maximum number of unique keys per lookup dataset. | 
+| Unique Strings | 10 million - 1 billion | System-enforced Guardrail  | Maximum number of unique keys per lookup dataset. Depends on Customer Journey Analytics package.<ul><li>Foundation: 10 million.</li><li>Select: 100 million.</li><li>Prime: 500 million.</li><li>Ultimate: 1 billion</li><ul> | 
 | Rows | 1 million | System-enforced Guardrail  | Maximum number of rows per unique person ID in a given month within a connection. | 
 | Row Size | 2 | Performance Guardrail / System-enforced Guardrail | Average size in kilobytes per row of data ingested into Customer Journey Analytics (soft limit). A static limit for row size is determined by Guardrails for data ingestion in Experience Platform. | 
 
