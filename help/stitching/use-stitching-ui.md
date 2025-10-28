@@ -28,6 +28,64 @@ To enable stitching on an event dataset within the Connections UI:
 
 * The event dataset must be [enabled for the Identity service](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) in case you want to use the Identity Graph and graph-based stitching.
 
+
+## Preflight checks
+
+If you meet the prerequisites, you might want to perform some preflight checks on the data in the event dataset before you enable identity stitching:
+
+* Ensure identities are marked properly in the schema for the event dataset. [See Identity namespace overview](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
+* Verify identity coverage for both persistent ID and person ID:
+  * Persistent ID: Query 7 days of data where your persistent ID field is not null and divide by a query of 7 days of data for all events in your dataset. This percentage should be above 95%.
+
+    Example of a query you could use for verification:
+
+    ```sql
+    SELECT
+      COUNT(*) AS total_events,
+      COUNT({PERSISTENT_ID_FIELD}) AS events_with_persistentid,
+      ROUND(COUNT({PERSISTENT_ID_FIELD}) / COUNT(*), 2) AS percent_with_persistentid_not_null
+    FROM 
+      {DATASET_TABLE_NAME}
+    WHERE
+      TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
+      AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
+    ```
+
+    Where:
+
+    * `{PERSISTENT_ID_FIELD}` is the field for the persisten ID. For example: `identityMap.ecid[0]`.
+    * `{DATASET_TABLE_NAME}` is the table name for the event dataset.
+    * `{FORMAT_STRING}` is the format string for the timestamp field. For example: `MM/DD/YY HH12:MI AM`.
+    * `{START_DATE} `is the start date. For example: `2024-01-01 00:00:00`.
+    * `{END_DATE}` is the end date in standard format. For example: `2024-01-08 00:00:00`.
+  
+
+  * Person ID - Query 7 days of data where your person ID field is not null and divide by a query of 7 days of data for all events in your dataset. This percetange should be above 5%.
+
+     Example of a query you could use for verification:
+
+    ```sql
+    SELECT
+      COUNT(*) AS total_events,
+      COUNT({PERSON_ID_FIELD}) AS events_with_personid,
+      ROUND(COUNT({PERSON_ID_FIELD}) / COUNT(*), 2) AS percent_with_personid_not_null
+    FROM 
+      {DATASET_TABLE_NAME}
+    WHERE
+      TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
+      AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
+    ```
+
+    Where:
+
+    * `{PERSON_ID_FIELD}` is the field for the person ID. For example: `identityMap.crmId[0]`.
+    * `{DATASET_TABLE_NAME}` is the table name for the event dataset.
+    * `{FORMAT_STRING}` is the format string for the timestamp field. For example: `MM/DD/YY HH12:MI AM`.
+    * `{START_DATE}` is the start date. For example: `2024-01-01 00:00:00`.
+    * `{END_DATE}` is the end date in standard format. For example: `2024-01-08 00:00:00`.
+  
+
+
 ## Enable identity stitching
 
 >[!NOTE]
