@@ -1,5 +1,5 @@
 ---
-description: The Data Dictionary in Analysis Workspace allows users to catalogue and keep track of the various components in Analysis Workspace, including their intended use, which are approved, which are duplicates, and so forth.
+description: The Data Dictionary in Analysis Workspace allows users to catalog and keep track of the various components in Analysis Workspace, including their intended use, which is approved, which are duplicates, and so forth.
 title: Data Dictionary overview
 feature: Components
 role: User, Admin
@@ -12,7 +12,7 @@ exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
 >title="Data dictionary"
->abstract="The Data Dictionary helps both users and and administrators keep track of and better understand the components in their Analytics environment. <br/>Analytics administrators are responsible for curating information about each component the Data Dictionary to users."
+>abstract="The Data Dictionary helps both users and administrators to keep track of and better understand the components in their Customer Journey Analytics environment. <br/>Customer Journey Analytics administrators are responsible for curating information about each component in the Data Dictionary."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -24,7 +24,7 @@ Analytics administrators are responsible for curating information about each com
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Data dictionary for Analyis Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Data dictionary for Analysis Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} for a demo video.
 
 {{videoaa}}
 
@@ -52,7 +52,7 @@ For information about how to access the Data Dictionary and for details about th
 
 The Data Dictionary helps system administrators keep track of and curate the components in their Analytics environment. 
 
-Following are some of the ways Analytics administrators can use the Data Dictionary: 
+Analytics administrators can use the Data Dictionary for these purposes: 
 
 * Identify duplicate components that need to be consolidated.
 
@@ -97,10 +97,10 @@ You can manipulate the Data Dictionary window in any of the following ways:
 
   If you close and re-open Analysis Workspace, the Data Dictionary window remains in the location where you last moved it. <!--True?-->
 
-* Minimize it
+* Minimize the window.
 
   When minimized, the Data Dictionary appears as a blue tab in the lower-right corner of Analysis Workspace.
 
   When you select the blue tab, the Data Dictionary opens to the component you were most recently viewing. 
 
-* Close it
+* Close the window.

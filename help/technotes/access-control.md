@@ -35,8 +35,7 @@ Product administrators have permissions to complete most tasks within Customer J
 
 Product administrators are granted the necessary permissions to perform the following tasks by default:
 
-* Create, update, and delete data views
-* Update and delete projects, filters, calculated metrics, audiences, annotations, or filters created by other users
+* Update and delete projects, segments, calculated metrics, audiences, annotations, or segments created by other users
 * Share Workspace projects to all users
 * Manage reporting activity in the [Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-overview.md)
 * [Export full tables](/help/analysis-workspace/export/export-cloud.md) from Analysis Workspace
@@ -45,23 +44,23 @@ Product administrators are granted the necessary permissions to perform the foll
 
 In addition to being added as a Product administrator in the **Customer Journey Analytics Product Profile** in the [Admin Console](https://adminconsole.adobe.com/enterprise/), additional permissions are required to complete the following tasks within Customer Journey Analytics:
 
-* Create, update, and delete data [Connections](/help/connections/overview.md)
+* Create, update, and delete [data views](/help/data-views/data-views.md).
+* Create, update, and delete [connections](/help/connections/overview.md)
   
   To perform this task, users must be part of an **Experience Platform Product Profile** that provides the following permissions:
 
   | Category | Permission | Description |
   |---|---|---|
+  | [!UICONTROL Sandboxes] | [!UICONTROL At least one] | Access to relevant sandboxes for connections. |
   | [!UICONTROL Data Modeling] | [!UICONTROL View Schemas] | Read-only access to schemas and related resources. |
   | [!UICONTROL Data Modeling] | [!UICONTROL Manage Schemas] | Access to read, create, edit, and delete schemas and related resources. |
   | [!UICONTROL Data Management] | [!UICONTROL View Datasets] | Read-only access for datasets and schemas. |
-  | [!UICONTROL Data Management] | [!UICONTROL Manage Datasets] | Access to read, create, edit, and delete datasets. Read-only access for schemas. |
-  | [!UICONTROL Data Ingestion] | [!UICONTROL Manage Sources] | Access to read, create, edit, and disable sources. |
   | [!UICONTROL Identity Management] | [!UICONTROL View Identity Namespaces] | Read-only access for identity namespaces. |
     
     For more information on Experience Platform permissions, see [Manage permissions for a product profile](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
 
-* If Adobe Journey Optimizer was integrated with CJA where AJO Connections exist, then Journeys permissions must also be added in order to access Connections:
+* If Journey Optimizer is integrated with Customer Journey Analytics where Journey Optimizer Connections exist, then Journeys permissions must also be added to access Connections:
 
   | Category | Permission | Description |
   |---|---|---|
@@ -117,12 +116,13 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in the [Adm
 | [!UICONTROL Data Views] | *data view name* | If you toggle **[!UICONTROL Auto-Include]** to **[!UICONTROL On]**, users that are part of this product profile can view all existing and newly created data views. If this setting is set to **[!UICONTROL Off]**, you can select specific data views that users have access to.  |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Analysis Workspace Access] |  Let users access [Analysis Workspace](/help/analysis-workspace/home.md). |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Guided Analysis Access] | Let users access [Guided Analysis](/help/guided-analysis/overview.md).  |
-| [!UICONTROL Reporting Tools] | [!UICONTROL Calculated Metrics Creation] | Let users create [calculated metrics](/help/components/calc-metrics/calc-metr-overview.md). Users can tag, share, delete, rename, approve, unapprove only the calculated metrics they create or the calculate metrics shared with them.  |
-| [!UICONTROL Reporting Tools] | [!UICONTROL Filter Creation] | Let users create [filters](/help/components/filters/filters-overview.md). Users can tag, share, delete, rename, approve, unapprove only the filters they create or the filters shared with them. |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Calculated Metrics Creation] | Let users create [calculated metrics](/help/components/calc-metrics/calc-metr-overview.md). Users can tag, share, delete, rename, approve, unapprove only the calculated metrics they create or the calculated metrics shared with them.  |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Segment Creation] | Let users create [segments](/help/components/segments/seg-overview.md). Users can tag, share, delete, rename, approve, unapprove only the segments they create or the segments shared with them. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Labs Access] | Let users access the [Labs](/help/labs/labs.md) tab in Customer Journey Analytics. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Annotation Creation] | Let users create [annotations](/help/components/annotations/overview.md). Users can tag, share, delete, and rename only the annotations they create or annotations shared with them. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Audience View] | Let users view [audiences](/help/components/audiences/audiences-overview.md). |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Audience Creation] | Let users create [audiences](/help/components/audiences/audiences-overview.md). |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Data storytelling] | Let users [generate slide presentations based on Workspace projects.](/help/analysis-workspace/curate-share/generate-slides.md)<p>Data storytelling is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).</p> |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Audit Logs Access] |  Enforce the permission check on the [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) and the audit logs UI. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Share Project Links With Anyone] | Let users [share projects with anyone.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects)  |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Forecasting] | Let users access the [Forecasting](../analysis-workspace/c-forecast/forecasting.md) feature in Analysis Workspace  |
@@ -135,7 +135,7 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in the [Adm
 
 ## Workspace project curation
 
-Another level of access control can be used at the Workspace reporting level. You can limit access to specific components for certain users. For more information on how to limit components (dimensions, metrics, filters, date ranges) at the Workspace project level, and how curation is tied to data views, see [Curate projects](/help/analysis-workspace/curate-share/curate.md).
+Another level of access control can be used at the Workspace reporting level. You can limit access to specific components for certain users. For more information on how to limit components (dimensions, metrics, segments, date ranges) at the Workspace project level, and how curation is tied to data views, see [Curate projects](/help/analysis-workspace/curate-share/curate.md).
 
 ## Grant access to individual metrics or dimensions
 
@@ -153,8 +153,8 @@ You can provide Product profile administration access to a team lead of a third 
 
 You want to give users access to data from one day only. Here is how you would limit access to those specific rows:
 
-1. Create a filter in [!UICONTROL Settings] of a specific data view, where [!UICONTROL Day] equals the date you want them to have data access to. See [Create data view](/help/data-views/create-dataview.md#settings-filters) for more information.
-1. Save the data view, which applies the filter to the data part of the datasets in the underlying connection. Any rows that don't fit the filter definition are automatically excluded from the data view and not available to Analysis Workspace when using this data view.
+1. Create a segment in [!UICONTROL Settings] of a specific data view, where [!UICONTROL Day] equals the date you want them to have data access to. See [Create data view](/help/data-views/create-dataview.md#settings-filters) for more information.
+1. Save the data view, which applies the segment to the data part of the datasets in the underlying connection. Any rows that don't fit the segment definition are automatically excluded from the data view and not available to Analysis Workspace when using this data view.
 1. Create a new [Product profile](#product-profile-admin-role) in the Admin Console, add users to the product profile, and include only this specific data view to the product profile.
 
 ### Value-level access control
@@ -162,5 +162,3 @@ You want to give users access to data from one day only. Here is how you would l
 Users who have access to a data view can only work with the metrics and dimensions that the administrator has included in this data view. Administrators can use the [Include/Exclude functionality](/help/data-views/component-settings/include-exclude-values.md) or [Value bucketing](../data-views/component-settings/value-bucketing.md) component settings in a data views to exclude or aggregate certain dimension values from a data view.
 
 For example: You create a metric called *Hypertension* in a data view from a component that contains individual patient data from the dataset. You use value bucketing to provide only access to bucketed values, so users of the data do not see the individual patients data.
-
-

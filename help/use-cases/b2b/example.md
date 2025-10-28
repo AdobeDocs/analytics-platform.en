@@ -6,15 +6,17 @@ feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
 ---
-# An example B2B project
+# An example person-based B2B project
 
-This article illustrates a use case where you want to properly report in Customer Journey Analytics on person data within the context of a typical B2B configuration. Such a configuration is part of the [Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  The use case explains how to set up, configure and report on profile (person) level based B2B data in Customer Journey Analytics.
+This article illustrates a use case where you want to properly report in Customer Journey Analytics on person data within the context of a typical person-based B2B setup. Such a configuration is facilitated by the [Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  The use case explains how to set up, configure and report on profile (person) level based B2B data in Customer Journey Analytics.
+
+[!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} A separate section for account-based reporting use cases is published with the release of [Customer Journey Analytics B2B Edition](/help/getting-started/cja-b2b-edition.md).
 
 ## Connection
 
 Define your connection to include all relevant B2B datasets from Experience Platform. Datasets you can consider to add to your connection:
 
-| Dataset | Schema | Schema type | Base class | Description |
+| Dataset (optional) | Schema | Schema type | Base class | Description |
 |---|---|---|---|---|
 | B2B Activity Dataset | B2B Activity Schema | Event | XDM ExperienceEvent | An ExperienceEvent is a fact record of what occurred, including the point in time and identity of the individual involved. ExperienceEvents can be either explicit (directly observable human actions) or implicit (raised without a direct human action) and are recorded without aggregation or interpretation. Experience events are critical for time-domain analytics as they allow for observation and analysis of changes that occur in a given window of time and the comparison between multiple windows of time to track trends. |
 | B2B Person Dataset | B2B Person Schema | Profile | XDM Individual Profile | An XDM Individual Profile forms a singular representation of the attributes and interests of both identified and partially identified individuals. Less-identified profiles may contain only anonymous behavioral signals, such as browser cookies, while highly identified profiles may contain detailed personal information such as name, date of birth, location, and email address. As a profile grows, it becomes a robust repository of personal information, identification information, contact details, and communication preferences for an individual. |
@@ -48,9 +50,15 @@ To ensure a proper setup of a connection that supports person-based lookups of y
 
    ![Key - Matching key](assets/key-matchingkey.png)
 
-   The table below provides an example overview of the [!UICONTROL Person ID], [!UICONTROL Key], and [!UICONTROL Matching key] values for each of the datasets.
+   The table below provides an example overview of the [!UICONTROL Person ID], [!UICONTROL Key], and [!UICONTROL Matching key] example values for each of the datasets.
 
-   | Dataset | Person ID | Key | Matching key<br/>(in event dataset) |
+   >[!IMPORTANT]
+   >
+   >The values for **Person ID**, **Key**, and **Matching Key** in the table below are **example values**, and can be different in your specific environment.
+   >
+
+
+   | Dataset (optional) | Person ID| Key<br/>| Matching key<br/>(in event dataset)<br/> |
    |---|---|---|---| 
    | B2B Activity Dataset | SourceKey<br/>**personKey.sourceKey** | | |
    | B2B Person Dataset | SourceKey<br/>**b2b.personKey.sourceKey** | | |
@@ -76,6 +84,11 @@ You can, for example, add the following components to your data view to ensure y
 
 +++Metrics 
 
+>[!IMPORTANT]
+>
+>The metrics and their values (**Component name**, **Dataset**, **Dataset type**, and **[!UICONTROL Schema path])** in the table below are **examples**. Define relevant B2B metrics (Component name, Dataset, Data type, and Schema path) for your specific situation.
+>
+
 | Component name | Dataset | Data type | Schema path |
 |---|---|---|---|
 | Annual Account Revenue | B2B Account Dataset |Double | accountOrganization.annualRevenue.amount |
@@ -89,6 +102,11 @@ You can, for example, add the following components to your data view to ensure y
 +++
 
 +++Dimensions
+
+>[!IMPORTANT]
+>
+>The dimensions and their values (**Component name**, **Dataset**, **Dataset type**, and **[!UICONTROL Schema path])** in the table below are **examples**. Define relevant B2B dimensions (Component name, Dataset, Data type, and Schema path) for your specific situation.
+>
 
 | Component name | Dataset | Data type | Schema path |
 |---|---|---|---|

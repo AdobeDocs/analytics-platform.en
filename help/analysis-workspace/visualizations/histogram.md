@@ -1,5 +1,5 @@
 ---
-description: A histogram is similar to a bar chart, but it groups numbers into ranges (buckets).
+description: Learn how tuse a histogram, which is similar to a bar chart, but groups numbers into ranges (buckets).
 title: Histogram
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
@@ -7,14 +7,10 @@ role: User
 ---
 # Histogram {#histogram}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_histogram_button"
 >title="Histogram"
 >abstract="Create a histogram visualization to represent the distribution of numerical data in groups of ranges."
-
-<!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
@@ -31,7 +27,7 @@ The ![Histogram](/help/assets/icons/Histogram.svg) **[!UICONTROL Histogram]** vi
 To create a histogram:
 
 1. Add a ![Histogram](/help/assets/icons/Histogram.svg) **[!UICONTROL Histogram]** visualization. See [Add a visualization to a panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
-1. Drag a metric from the **[!UICONTROL Metrics]** component list, or select a metric from the [!UICONTROL *Add a metric*] dropdown menu.
+1. Drag a metric from the **[!UICONTROL Metrics]** component list, or select a metric from the [!UICONTROL *Add a metric*] drop-down menu.
 1. (optional) Select **[!UICONTROL Show advanced settings]**. See [Advanced settings](#advanced-settings).
 1. Select **[!UICONTROL Build]**.
 

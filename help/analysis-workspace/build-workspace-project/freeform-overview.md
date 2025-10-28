@@ -1,7 +1,7 @@
 ---
-description: Overview of Workspace projects with menu bar and settings
+description: Learn how to work with projects in Analysis Workspace. Use the projects manager to manage (create, delete, move, share, approve, pin, copy, and tag) projects.
 keywords: Analysis Workspace
-title: Projects overview
+title: Projects Overview
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
@@ -49,7 +49,7 @@ The project list ➋ displays all the projects that you own and that have been s
 | **[!UICONTROL Title and description]** | To edit the project, select the title link, which opens the [Workspace project](/help/analysis-workspace/home.md). Projects shared with you are indicated with ![Share](/help/assets/icons/ShareAlt.svg). Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup menu with more details on the project. Select ![More](/help/assets/icons/More.svg) to open a context menu with actions. See [Actions](#actions) for more details. |
 | **[!UICONTROL Type]** | A Workspace project, a ![FolderUser](/help/assets/icons/FolderUser.svg) folder, or a [Mobile Scorecard](/help/mobile-app/home.md). |
 |  **[!UICONTROL Tags]**  | The tags applied to the project. |
-| Scheduled | Whether a project is scheduled o be emailed to recipients. Options are ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL On]** or ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Off]**. See [Send project data to others](/help/analysis-workspace/export/t-schedule-report.md). |
+| **[!UICONTROL Scheduled]** | Whether a project is scheduled o be emailed to recipients. Options are ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL On]** or ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Off]**. See [Send project data to others](/help/analysis-workspace/export/t-schedule-report.md). |
 | **[!UICONTROL Shared link (anyone)]** | Whether a project is shared with anyone, even with people who don't have access to Analysis Workspace. Options are ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Active]** or ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Inactive]**. See [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md) for more information. |
 | **[!UICONTROL Project Role]** | Your role for the project. Options are: Edit, Duplicate, View. See [Project roles](/help/analysis-workspace/curate-share/curate.md) for more information. |
 | **[!UICONTROL Data view]** | The data view that the project is associated with. |
@@ -75,7 +75,7 @@ You can take actions on one or more projects using the context menu ![More](/hel
 | Icon |Action  | Description |
 |:---:| ---|---|
 | ![CrossSize75](/help/assets/icons/Close.svg)| **[!UICONTROL *x* selected]** | Unselect your selected projects and folders and remove the blue action bar. |
-| ![Delete](/help/assets/icons/Delete.svg) |**[!UICONTROL Delete]** | Delete one or more projects or folders. You are prompted for a confirmation. |
+| ![Delete](/help/assets/icons/Delete.svg) |**[!UICONTROL Delete]** | Delete one or more projects or folders. You are prompted for a confirmation.<p>Projects that you delete:</p><ul><li>Cannot be recovered</li><li>Are removed from the project list</li><li>Can no longer be accessed with their URL</li><li>Are no longer included in scheduled deliveries (in cases where they were previously configured for scheduled deliveries)<br/>For information about scheduled deliveries, see [Scheduled projects](/help/components/scheduled-projects-manager.md).  </p> |
 | ![Share](/help/assets/icons/ShareAlt.svg) |**[!UICONTROL Share]** | Share a project. See [Share a project](/help/analysis-workspace/curate-share/share-projects.md) for more information. |
 | ![Edit](/help/assets/icons/Edit.svg)| **[!UICONTROL Rename]** | Rename a project. Opens a **[!UICONTROL Rename: *project name dialog*]**. Enter a new name and select **[!UICONTROL Save]**. |
 | ![Copy](/help/assets/icons/Copy.svg)| **[!UICONTROL Copy]** | Copy one or more projects. Project do get the same name and suffix `(Copy)`. |
@@ -147,7 +147,7 @@ The Search area also shows the filters applied from the Filter panel.
 * To remove a filter, select ![CrossSize75](/help/assets/icons/CrossSize75.svg) in the filter.
 * To remove all filters, select Clear all.
 
-If space is limited to display the individual filters, you see **[!UICONTROL Filtering by *x* filters]**. 
+If space is limited to display the individual filters, you see **[!UICONTROL Segmenting by *x* filters]**. 
 
 * To remove a filter:
   
@@ -198,7 +198,7 @@ Within a project, the menu provides options for managing your project, adding co
 |  Project  | Includes common actions for project management, including New, Open, Save, and Save As. You can also refresh the entire project to retrieve the most recent data and definitions by clicking Refresh Project. [Download project data](/help/analysis-workspace/export/download-send.md) options enable you to export data from Workspace. **Project Info & Settings** (see below) offers many options for managing your project.  |
 |  Edit  | Undo or redo your last action. Clear All will reset your project to a blank starting point. |
 |  Insert  | Insert new panels or visualizations from this menu. You can also insert new panels and visualizations from the left panel.  |
-|  [Components](/help/components/overview.md)  | Create new filters, calculated metric, date range, or alert components from your project. You can also create new components from the left panel. If your component definitions have recently changed, Refresh Components will retrieve the latest definitions. |
+|  [Components](/help/components/overview.md)  | Create new segments, calculated metric, date range, or alert components from your project. You can also create new components from the left panel. If your component definitions have recently changed, Refresh Components will retrieve the latest definitions. |
 |  [Share](/help/analysis-workspace/curate-share/send-schedule-files.md)  | Curate, share and schedule PDF/CSV projects to recipients in your organization.  |
 |  Help  | Access help documentation, videos, and the Analytics [Experience League community](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community). Manage the visibility of Workspace tips as well as the [debugger](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/apis/using-analysis-workspace-to-build-api-2-requests). Find details about Workspace and factors that impact project [performance](/help/technotes/optimizing-performance.md).  |
 |  Share button or Owner  | If you are in an Own or Edit for the project, the Share button in the top-right gives you one-click access to manage your project recipients. If you are in a Duplicate or View role for the project, you will see the project owner's name. |
@@ -236,7 +236,7 @@ Within a project, various icons are available in the left panel, and each repres
 
 * [Table of contents](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) ![toc icon](assets/toc-icon.png)
 
-Components (Dimensions, Metrics, Filters, Date Ranges) in the left panel relate to the active panel data view. The active panel is identified by the blue border that surrounds it, and the active data view is listed at the top of the component panel.
+Components (Dimensions, Metrics, Segments, Date Ranges) in the left panel relate to the active panel data view. The active panel is identified by the blue border that surrounds it, and the active data view is listed at the top of the component panel.
 
 ![The components relating to the active panel data view for Cross-Industry Demo Data data view.](assets/left-rail.png)
 

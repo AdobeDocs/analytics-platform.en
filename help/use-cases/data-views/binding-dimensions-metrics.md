@@ -10,7 +10,7 @@ role: User
 
 Customer Journey Analytics offers several ways to persist dimension values beyond the hit that they are set on. One of the persistence methods that Adobe offers is known as Binding. In previous versions of Adobe Analytics, this concept was known as merchandising.
 
-While you can use binding dimensions with top-level event data, this concept is best used when working with [Arrays of objects](/help/use-cases/object-arrays.md). You can attribute a dimension to one part of an object array without applying the dimensoon to all attributes in a given event. For example, you can attribute a search term to one product in your shopping cart object array without binding that search term to the entire event.
+While you can use binding dimensions with top-level event data, this concept is best used when working with [Arrays of objects](/help/use-cases/object-arrays.md). You can attribute a dimension to one part of an object array without applying the dimension to all attributes in a given event. For example, you can attribute a search term to one product in your shopping cart object array without binding that search term to the entire event.
 
 ## Example 1: Use binding dimensions to attribute additional product attributes to a purchase
 

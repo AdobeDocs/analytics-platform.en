@@ -1,7 +1,7 @@
 ---
-description: Visually represent your data in Analysis Workspace.
+description: Learn how to visually represent your data with visualizations available in Analysis Workspace.
 keywords: Analysis Workspace
-title: Visualizations overview
+title: Visualizations Overview
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
@@ -62,6 +62,22 @@ The following visualization types are available in Analysis Workspace:
 
    * From the context menu in a Freeform table, select **[!UICONTROL Visualize]**. Then select the visualization from the submenu. Based on the current selection in the table, Workspace determines which visualization to offer and interprets the data to build the requested visualization.
 
+When you add a simple visualization, for example a [Line](line.md) of [Bar](bar.md) visualization, the visualization uses the closest freeform table as the data source. You can always modify the [data source](#data-source) of a your visualizations.
+
+
+## Manage visualizations
+
+You can manage a visualization when you hover over the visualization or select the visualization.
+
+![Manage visualization](assets/manage-visualization.png)
+
+* To collapse a visualization, select ![ChevronDown](/help/assets/icons/ChevronDown.svg).
+* To reveal a collapsed visualization, select ![ChevronLeft](/help/assets/icons/ChevronLeft.svg).
+* To delete a visualization, select ![CrossSize400](/help/assets/icons/CrossSize400.svg). To undo, select **[!UICONTROL Edit]** > **[!UICONTROL Undo]** (**[!UICONTROL *cmd+z*]** | **[!UICONTROL *ctrl+z*]**).
+* To return a visualization to the default height, select ![ImageResize](/help/assets/icons/Resize.svg).
+* To move a visualization within a panel, drag and drop the visualization whenever a ![Move](/help/assets/icons/Move.svg) is visible (ususally when you hover over the header).
+
+
 
 ## Legend
 
@@ -119,7 +135,7 @@ Which visualization settings are available depends on the visualization. The tab
 | **[!UICONTROL Show forecast]** | Enhance line graphs and freeform tables by displaying forecast values. |
 | **[!UICONTROL Show min]** | Show the minimal value in the visualization. |
 | **[!UICONTROL Show max]** | Show the maximal value in the visualization. |
-| **[!UICONTROL Show trendline]** | Show a trendline in the visualization. When selected, you can select the type of trendline from the dropdown menu. | 
+| **[!UICONTROL Show trendline]** | Show a trendline in the visualization. When selected, you can select the type of trendline from the drop-down menu. | 
 
 You can customize the settings for all visualizations that you create. For more information, see [User preferences](/help/analysis-workspace/user-preferences.md).
 
@@ -133,11 +149,11 @@ Use the context menu (available through alternate select, for example, right-cli
 | Option | Description |
 | --- | --- |
 | **[!UICONTROL Insert copied visualization]**| Paste (insert) a copied visualization to another place within the project, or into a completely different project. |
-| **[!UICONTROL Copy data to clipboard]** | Copy data from the visualization onto the clipboard. |
-| **[!UICONTROL Copy selection to clipboard]** | Copy the selection from the visualization onto the clipboard. |
-| **[!UICONTROL Download items as CSV (*dimension name*)]** | Download the dimension items (to a maximum of 50,000) of the visualization to your local device. A maximum of 50,000 dimension items for the selected dimension. |
+| **[!UICONTROL Copy data to clipboard]** | [Copy data](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) from the visualization onto the clipboard. |
+| **[!UICONTROL Copy selection to clipboard]** | [Copy the selection](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) from the visualizaion onto the clipboard. |
+| **[!UICONTROL Download items as CSV (*dimension name*)]** | [Download the dimension items](/help/analysis-workspace/export/download-send.md#download-items-as-csv) (to a maximum of 50,000) of the visualization to your local device. A maximum of 50,000 dimension items for the selected dimension. |
 | **[!UICONTROL Copy visualization]** | Copy the visualization, so that you can insert the visualization to another place within the project, or into a completely different project. |
-| **[!UICONTROL Download data CSV]** | Download the displayed data of the visualization to your local device. |
+| **[!UICONTROL Download data CSV]** | [Download the displayed data](/help/analysis-workspace/export/download-send.md#download-as-csv) of the visualization to your local device. |
 | **[!UICONTROL Export full table]** | Export the full table to a designated cloud locations. See [Exports Customer Journey Analytics reports to the cloud](../export/export-cloud.md) |
 | **[!UICONTROL Duplicate visualization]** | Make an exact duplicate of the visualization. |
 | **[!UICONTROL Edit description]** | Add (or edit) a text description for the visualization. See [Text](text.md). |

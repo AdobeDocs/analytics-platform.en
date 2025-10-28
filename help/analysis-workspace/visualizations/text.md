@@ -1,5 +1,5 @@
 ---
-description: Adds user-defined text to your Workspace.
+description: Learn how to add user-defined text to your Analysis Workspace project.
 title: Text
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
@@ -52,6 +52,10 @@ To add a hyperlink, highlight the text and select ![Link](/help/assets/icons/Lin
 
 ## Add images {#images}
 
-To add an image to your project, select ![Image](/help/assets/icons/Image.svg) in the menu and insert a public image URL. The image URL must be publicly accessible, begin with `https`, and be of format `.png`, `.jpeg`, `.jpg`, or `.gif`. Static and animated images are supported.
+To add an image to your project, select ![Image](/help/assets/icons/Image.svg) in the menu and specify an image URL in **[!UICONTROL Image URL]** (for example `https://www.adobe.com/uploads/2018/06/Adobe.png`) and select **[!UICONTROL Save]**. 
+
+The image URL must be publicly accessible, begin with `https`, and be of format `.png`, `.jpeg`, `.jpg`, or `.gif`. Static and animated images are supported. 
+
+Be aware that drag and drop insertion of an image is not supported.
 
 ![Text options with the image icon selected.](assets/image.png)

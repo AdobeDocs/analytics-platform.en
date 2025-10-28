@@ -1,6 +1,6 @@
 ---
-title: Basic functions
-description: The Calculated Metrics Builder lets you apply statistical and mathematical functions to build Advanced Calculated Metrics.
+title: Basic Functions
+description: Learn about basic calculated metrics functions.
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
@@ -257,8 +257,8 @@ MODULO(MODULO(x,y)+y,y)
 
 | Argument | Description |
 |---|---|
-| metric | The percentile value in the range 0 to 100, inclusive. |
-| k | The metric column that defines relative standing. |
+| metric | The metric column that defines relative standing. |
+| k | The percentile value in the range 0 to 100, inclusive. |
 | include_zeros | Whether or not to include zero values in the calculations. |
 
 

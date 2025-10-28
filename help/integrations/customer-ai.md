@@ -67,7 +67,7 @@ Here is an example of an XDM schema that Customer Journey Analytics would bring 
 
 In Customer Journey Analytics, you can now proceed to [create data views](/help/data-views/create-dataview.md) with the dimensions (such as score, score date, probability, and so on) and metrics that were brought in as part of the connection you established. 
 
-![Create dataview window](assets/create-dataview.png)
+![Create data view window](assets/create-dataview.png)
 
 ## Step 4: Report on CAI scores in Workspace
 

@@ -1,6 +1,6 @@
 ---
-description: The Bar visualization shows vertical bars representing various values across one or more metrics.
-title: Bar and bar stacked
+description: Learn how to use the bar and bar stacked visualization in Analysis Workspace.
+title: Bar And Bar Stacked
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User

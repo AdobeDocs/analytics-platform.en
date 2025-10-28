@@ -1,5 +1,5 @@
 ---
-description: There are two ways to use metrics in Analysis Workspace.
+description: Understand what metrics are and how to use metrics in Analysis workspace.
 title: Metrics
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
@@ -29,19 +29,20 @@ Adobe offers several types of metrics for use in Analysis Workspace:
   * **Sessions**: The Sessions metric in Customer Journey Analytics is what you define as part of the configuration of the Sessions settings in your data view. See [Session settings](/help/data-views/session-settings.md).
   * **Events**: The Events metric in Customer Journey Analytics are comprised of the events that are part of any event dataset you have configured as part of your connection.
 
+  See [Standard metrics](#standard-metrics) for the full list of standard metrics.
+
 * **Calculated metrics** ![Calculator](/help/assets/icons/Calculator.svg): User-defined metrics that are based on standard metrics, static numbers, or algorithmic functions.
 
 * **Calculated metric templates**  ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : Adobe-defined metrics that behave similarly to calculated metrics. You can use them as-is in Workspace projects, or save a copy to customize the logic. See [Default calculated metrics](calc-metrics/cm-workflow/../default-calcmetrics.md).
 
 You can see whether a metric is approved ![Approved icon](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  or not. If you want more details on a metric, hover over the metric, and select ![Info icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg). See [Component info](use-components-in-workspace.md#component-info) for more information.
 
-## Compare metrics with different attribution models
 
-To quickly compare one attribution model to another for a metric, select **[!UICONTROL Compare attribution models]** from the context menu for a metric.
+## Standard metrics
 
-![Workspace panel highlighting Compare attribution models](assets/compare-attribution.png)
+The full list of standard metrics in Customer Journey Analytics:
+{{standard-metrics}}
 
-This shortcut lets you compare one attribution model to another without dragging in a metric and configuring it twice.
 
 ## Create calculated metrics
 
@@ -51,9 +52,7 @@ There are several ways to create calculated metrics. The method you choose deter
 
 ### Create calculated metrics for all projects
 
-You can use the calculated metric builder to create calculated metrics. When created in this way, calculated metrics are available in the component list and can then be used in projects throughout your organization. 
-
-For information about how to access the calculated metrics builder, see [Create calculated metrics](/help/components/calc-metrics/cm-workflow/cm-workflow.md).
+You can use the [calculated metric builder](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) to [create calculated metrics](/help/components/calc-metrics/cm-workflow/cm-workflow.md). When created in this way, calculated metrics are available in the component list and can then be used in projects throughout your organization. 
 
 ### Create calculated metrics for a single project
 
@@ -99,6 +98,13 @@ To create a calculated metric for a single project:
 
    * [!UICONTROL **Percent change**]: Creates a new column that shows the percent change between the two selected columns.
 
-[Calculated Metrics: Implementation-less metrics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
+
+## Compare metrics with different attribution models
+
+To quickly compare one attribution model to another for a metric, select **[!UICONTROL Compare attribution models]** from the context menu for a metric.
+
+![Workspace panel highlighting Compare attribution models](assets/compare-attribution.png)
+
+This shortcut lets you compare one attribution model to another without dragging in a metric and configuring it twice.
 
 

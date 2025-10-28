@@ -8,8 +8,6 @@ exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 ---
 # Content Analytics overview
 
-{{release-limited-testing}}
-
 Content Analytics helps marketers to understand how content impacts the key performance indicators that a business has defined. On top of the behavioral data, Content Analytics collects data on how content is consumed and how content drives impact. For example, do customers respond better to a specific tone of voice, a specific color palette, or specific themes? This information, together with specifically designed reporting workflows and templates, can help you to perform even better analysis and gain deeper insights on customer journey data in Customer Journey Analytics. 
 
 Content Analytics uses an AI and machine learning based **featurization service** to break content down into components and attributes. By creating a structured metadata profile on all your content, you can analyze what content and what attributes of that content drives business results. 
@@ -41,11 +39,11 @@ Content Analytics uses web image view data collected in event datasets in Experi
 
 ![Content Analytics - How it works](assets/aca-overview.gif)
 
-
 1. When a user visits a site, [configured for Content Analytics](config/configuration.md), the Experience Platform Web SDK records impressions and interactions with content.
 1. The identity and featurization service process these interactions. That process consists of a retrieval service that revisits the public-facing versions of the configured URLs that define the interactions. For all of these retrieved URLs, the identity service uniquely identifies the experiences and assets. And the featurization service applies AI/ML services to discover experiences and assets metadata and attributes.
-1. The results of these services ([components, attributes, and identities](/help/content-analytics/report/components.md)) are used to update the relevant specific content analytics datasets in Experience Platform.
-1. The content analytics data, together with behavioral data and other lookup data, you can use in a Customer Journey Analytics setup ([Connection](/help/connections/overview.md), [Data view](/help/data-views/data-views.md) and [Workspace](/help/analysis-workspace/home.md)). That setup provides the foundation to the unique macro-level insights on your content. <br/>You can jump start your Content Analytics reports and analysis using the [Content Analytics template](/help/content-analytics/report/report.md#template).
+1. The results of these services ([components, attributes, and identities](/help/content-analytics/report/components.md)) are used to update the relevant specific Content Analytics datasets in Experience Platform.
+1. The Content Analytics data, together with behavioral data and other lookup data, you can use in a Customer Journey Analytics setup ([Connection](/help/connections/overview.md), [Data view](/help/data-views/data-views.md) and [Workspace](/help/analysis-workspace/home.md)). That setup provides the foundation to the unique macro-level insights on your content. <br/>You can jump start your Content Analytics reports and analysis using the [Content Analytics template](/help/content-analytics/report/report.md#template).
+
 
 >[!NOTE]
 >
@@ -56,7 +54,7 @@ Content Analytics uses web image view data collected in event datasets in Experi
 
 >[!NOTE]
 >
->If you have licensed the Privacy and Security Shield add-on, be aware that (any data generated from) experiences and assets, subject to Content Analytics, are not covered by DULE labeling or Customer Managed Keys.
+>If you have licensed the Privacy and Security Shield add-on, be aware that (any data generated from) experiences and assets, subject to Content Analytics, are not covered by DULE labeling or Customer Managed Keys. Also, Content Analytics is not a HIPAA-Ready service.
 >
 
 
@@ -64,5 +62,6 @@ Content Analytics uses web image view data collected in event datasets in Experi
 >
 >[Content Analytics reporting](report/report.md)
 >[Configure Content Analytics](config/configuration.md)
+>[Calculating bounces and bounce rate in Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 

@@ -1,6 +1,6 @@
 ---
-title: Create date ranges
-description: Create a date range for use in reporting.
+title: Create Date Ranges
+description: Understand how to create a date range that you can use in Analysis Workspace.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
@@ -19,7 +19,7 @@ Anyone can create a custom date range. You create a date range in the following 
 * **E** - In a Workspace project, from the Components left panel, select ![Add](/help/assets/icons/Add.svg) at ![Calendar](/help/assets/icons/Calendar.svg) **Date ranges**.
 * **F** - In a supported visualization, like a line visualization, from the context menu on a data point, select **[!UICONTROL Annotate Selection]**.
 
-To define the annotation, you use the [[!UICONTROL Date range builder]](#annotation-builder):
+To define the annotation, you use the [[!UICONTROL Date range builder]](#annotation-builder).
 
 <!-- Should we really mention API here. If so, we can do it all over the place in the docs...
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |
@@ -47,9 +47,9 @@ The **[!UICONTROL New date range]** or **[!UICONTROL Edit date range]** dialog i
 
 1. Specify a **[!UICONTROL Title]** for the date range. For example, **[!UICONTROL Quarterly]**.
 1. Optionally, specify a **[!UICONTROL Description]**.
-1. Organize the filter by creating or applying one or more **[!UICONTROL Tags]**. Start typing to find existing tags you can select. Or press **[!UICONTROL ENTER]** to add a new tag. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a tag. |
+1. Organize the segment by creating or applying one or more **[!UICONTROL Tags]**. Start typing to find existing tags you can select. Or press **[!UICONTROL ENTER]** to add a new tag. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove a tag. |
 1. Select a **[!UICONTROL Date Range]** by selecting first the start date and then the end date. 
-   Alternatively, you can select a **[!UICONTROL Preset]** from the [!UICONTROL *Select a preset*] dropdown menu.
+   Alternatively, you can select a **[!UICONTROL Preset]** from the [!UICONTROL *Select a preset*] drop-down menu.
 
 1. Optionally, select **[!UICONTROL Show advanced settings]** to:
 

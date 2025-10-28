@@ -16,6 +16,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Release Notes {#releases}
   + [Latest release](../release-notes/latest.md)
+  + [Pre-release notes](../release-notes/pre-release-notes.md)
   + [2025 releases](../release-notes/2025.md)
   + [2024 releases](../release-notes/2024.md)
   + [2023 releases](../release-notes/2023.md)
@@ -38,14 +39,16 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Overview](/help/getting-started/cja-b2b-edition.md)
     + [B2B concepts and features](/help/getting-started/cja-b2b-concepts-features.md)
     + [Quick start guide](/help/getting-started/cja-b2b-quick-start-guide.md)
+    + [Transition guide](/help/getting-started/cja-b2b-transition.md)
 
-+ Customer Journey Analytics and Adobe Analytics {#compare-aa-cja}
++ Upgrade and compare {#compare-aa-cja}
   + Upgrade to Customer Journey Analytics {#upgrade-to-cja}
     + [Get started](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
     + [Choose your upgrade path](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
     + [Send data to Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
     + [Retain historical data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
     + [Recommended upgrade process](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+    + [Prepare your organization](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md)
     + Architect and create a schema {#schema}
       + [Architect your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [Create your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
@@ -89,7 +92,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Web SDK implementation options](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md)
       + [Configuring Adobe Analytics Web SDK for Platform](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md)
       + [Use personalization with Adobe Journey Optimizer](/help/getting-started/cja-upgrade/cja-upgrade-personalization-journeyoptimizer.md)
-  + Comparison with Adobe Analytics {#cja-aa-comparison}
+  + Compare with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)
     + [Feature support](../getting-started/aa-vs-cja/cja-aa.md)
@@ -102,7 +105,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
 
 + Data ingestion {#cja-data-ingestion}
-  + [Data ingestion overview](../data-ingestion/data-ingestion.md)
+  + [Overview](../data-ingestion/data-ingestion.md)
   + Ingest and use quick start guides{#ingest-use-guides}
     + [Adobe Analytics](../data-ingestion/analytics.md)
     + Experience Platform Edge Network {#edge-network}
@@ -112,6 +115,15 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Batch data](../data-ingestion/batch.md)
     + [Streaming data](../data-ingestion/streaming.md)
     + [Source connectors](../data-ingestion/sources.md)
+    + [Ad hoc data](/help/data-ingestion/adhoc.md)
+
++ Data mirror {#cja-data-mirror}
+  + [Overview](/help/data-mirror/data-mirror.md)
+  + Configure {#configure}
+    + [Data warehouse native solutions](/help/data-mirror/datawarehouse.md)
+    + [Experience Platform](/help/data-mirror/aep.md)
+    + [Customer Journey Analytics](/help/data-mirror/cja.md)
+  + [Data Mirror quick start guide](/help/data-mirror/model-based.md)
 
 + Connections {#cja-connections}
   + [Connections overview](../connections/overview.md)
@@ -142,6 +154,9 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Derived fields](../data-views/derived-fields/derived-fields.md)
   + [Summary data](../data-views/summary-data.md)
   + [Labels and policies](../data-views/data-governance.md)
+  + Shared metrics & dimensions{#shared-metrics-dimensions}
+    + [Overview](/help/data-views/shared-metrics-dimensions/smd-overview.md)
+    + [Editor](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
 
 + Tools {#tools}
   + Asset Transfer {#asset-transfer}
@@ -157,17 +172,21 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Perform advanced analysis](../analysis-workspace/perform-adv-analysis.md)
   + Projects {#build-workspace-project}
     + [Overview](../analysis-workspace/build-workspace-project/freeform-overview.md)
+    + [Quickly start projects](/help/analysis-workspace/build-workspace-project/starter-projects.md)
     + [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md)
     + [Open projects](/help/analysis-workspace/build-workspace-project/open-projects.md)
+    + [Comment on projects](/help/analysis-workspace/build-workspace-project/comment-projects.md)
     + [Save projects](../analysis-workspace/build-workspace-project/save-projects.md)
+    + [Table of contents](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
     + Folders in Workspace {#workspace-folders}
-      + [About folders](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
-      + [Create folders and subfolders](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+      + [Overview](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+      + [Create folders](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
       + [Manage folders](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
-      + [Add or move projects to folders](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
-    + [Hotkeys (Shortcuts)](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
+      + [Add or move projects](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
+    + [Hotkeys](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
     + [Color palettes](../analysis-workspace/build-workspace-project/color-palettes.md)
     + [View density](../analysis-workspace/build-workspace-project/view-density.md)
+    + [Debugger](../analysis-workspace/build-workspace-project/debugger.md)
   + Templates {#templates}
     + [Use templates](../analysis-workspace/templates/use-templates.md)
     + [Create and manage templates](../analysis-workspace/templates/create-templates.md)
@@ -178,12 +197,13 @@ breadcrumb-title: Customer Journey Analytics Guide
     + Freeform table {#freeform-table}
       + [Overview](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
       + [Create hyperlinks](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
+      + [View trended data](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md)
+      + [Filter and sort](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
+      + [Totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Column and row settings {#column-row-settings}
         + [Column settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
         + [Row settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
         + [Dynamic and static items](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-      + [Filter and sort tables](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-      + [Workspace totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
     + Cohort table {#cohort-table}
       + [Overview](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
       + [Configure](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
@@ -192,7 +212,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Overview](../analysis-workspace/visualizations/fallout/fallout-flow.md)
       + [Configure](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
       + [Inter-dimensional fallout](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
-      + [Apply filters](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+      + [Apply segments](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
     + Flow {#flow}
       + [Overview](../analysis-workspace/visualizations/c-flow/flow.md)
       + [Configure](../analysis-workspace/visualizations/c-flow/create-flow.md)
@@ -215,7 +235,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Section header](/help/analysis-workspace/visualizations/section-header.md)
     + [Summary number and change](../analysis-workspace/visualizations/summary-number-change.md)
     + [Text](../analysis-workspace/visualizations/text.md)
-    + [Tree map](../analysis-workspace/visualizations/treemap.md)
+    + [Treemap](../analysis-workspace/visualizations/treemap.md)
     + [Venn](../analysis-workspace/visualizations/venn.md)
   + Panels {#panels}
     + [Overview](../analysis-workspace/c-panels/panels.md)
@@ -228,17 +248,24 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Media playback time spent](../analysis-workspace/c-panels/media-playback-time-spent.md)
     + [Next or previous item](../analysis-workspace/c-panels/next-previous.md)
     + [Quick insights](../analysis-workspace/c-panels/quickinsight.md)
-  + Curate, share and schedule projects {#curate-share}
+  + Curate and share {#curate-share}
     + [Overview](../analysis-workspace/curate-share/send-schedule-files.md)
     + [Curate projects](../analysis-workspace/curate-share/curate.md)
     + [Share projects](../analysis-workspace/curate-share/share-projects.md)
     + [Create shareable links](../analysis-workspace/curate-share/shareable-links.md)
-    + [View-only projects](../analysis-workspace/curate-share/view-only-projects.md)
+    + [Read-only projects](../analysis-workspace/curate-share/view-only-projects.md)
+    + [Generate slide presentations](/help/analysis-workspace/curate-share/generate-slides.md)
   + Export {#export}
     + [Overview](../analysis-workspace/export/export-project-overview.md)
     + [Download](../analysis-workspace/export/download-send.md)
-    + [Send to others](../analysis-workspace/export/t-schedule-report.md)
+    + [Send and schedule](../analysis-workspace/export/t-schedule-report.md)
     + [Export to the cloud](../analysis-workspace/export/export-cloud.md)
+  + Attribution {#attribution}
+    + [Attribution overview](../analysis-workspace/attribution/overview.md)
+    + [Model, container and lookback window](../analysis-workspace/attribution/models.md)
+    + [Algorithmic attribution](../analysis-workspace/attribution/algorithmic.md)
+    + [Best practices](../analysis-workspace/attribution/best-practices.md)
+    + [Frequently asked questions](../analysis-workspace/attribution/faq.md)
   + Anomaly Detection {#anomaly-detection}
     + [Overview](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
     + [View anomalies](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
@@ -247,13 +274,13 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Overview](../analysis-workspace/c-forecast/forecasting.md)
     + [View forecasts](../analysis-workspace/c-forecast/view-forecasts.md)
     + [Statistical techniques](../analysis-workspace/c-forecast/statistics-forecasting.md)
-  + [Table of contents](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
   + [User preferences](../analysis-workspace/user-preferences.md)
   + Workspace FAQs and more {#workspace-faq}
     + [Frequently asked questions](../analysis-workspace/workspace-faq/faq.md)
-    + [Error messages](../analysis-workspace/workspace-faq/error-messages.md)
+    + [Optimize performance](../analysis-workspace/workspace-faq/optimizing-performance.md)
+    + [Error and troubleshooting](../analysis-workspace/workspace-faq/error-messages.md)
     + [Limitations](../analysis-workspace/workspace-faq/aw-limitations.md)
-    + [Administration requirements](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
+    + [Requirements](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
     + [Accessibility](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
 + Content Analytics {#content-analytics}
@@ -293,52 +320,54 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Components {#cja-components}
   + [Overview](../components/overview.md)
-  + [Use components in Analysis Workspace](../components/use-components-in-workspace.md)
+  + [Use components](../components/use-components-in-workspace.md)
   + [Add component descriptions](../components/add-component-descriptions.md)
   + Annotations {#annotations}
-    + [Annotations overview](../components/annotations/overview.md)
+    + [Overview](../components/annotations/overview.md)
     + [Create annotations](../components/annotations/create-annotations.md)
     + [Manage annotations](../components/annotations/manage-annotations.md)
     + [View annotations](../components/annotations/view-annotations.md)
-    + [Mobile annotations](../components/annotations/mobile-annotations.md)
-  + [Scheduled projects](../components/scheduled-projects-manager.md)
+    + [Mobile scorecard annotations](../components/annotations/mobile-annotations.md)
   + Audiences {#audiences}
     + [Audiences overview](../components/audiences/audiences-overview.md)
     + [Create and publish audiences](../components/audiences/publish.md)
     + [Manage audiences](../components/audiences/manage.md)
   + Dimensions {#dimensions}
-    + [Dimensions overview](../components/dimensions/overview.md)
+    + [Overview](../components/dimensions/overview.md)
     + [Preview dimensions](../components/dimensions/view-dimensions.md)
     + [Break down dimensions](../components/dimensions/t-breakdown-fa.md)
     + [Time-parting dimensions](../components/dimensions/time-parting-dimensions.md)
     + [High cardinality dimensions](../components/dimensions/high-cardinality.md)
   + [Metrics](../components/apply-create-metrics.md)
-  + Filters {#cja-filters}
-    + [Overview](../components/filters/filters-overview.md)
-    + [Create filters](../components/filters/create-filters.md)
-    + [Build filters](../components/filters/filter-builder.md)
-    + [Quick filters](../components/filters/quick-filters.md)
-    + [Sequential filters](../components/filters/seg-sequential-build.md)
-    + [Share filters](../components/filters/filters-share.md)
-    + [Tag filters](../components/filters/filters-tag.md)
-    + [Filter the list of filters](../components/filters/filters-filter.md)
-    + [Mark filters as favorites](../components/filters/filters-favorite.md)
-    + [Approve filters](../components/filters/filters-approve.md)
-    + [Copy filters](../components/filters/filters-copy.md)
-    + [Manage filters](../components/filters/manage-filters.md)
-    + [Operators](../components/filters/operators.md)
+  + Segments {#segments}
+    + [Overview](/help/components/segments/seg-overview.md)
+    + [Create segments](/help/components/segments/seg-create.md)
+    + [Build segments](/help/components/segments/seg-builder.md)
+    + [Quick segments](/help/components/segments/seg-quick.md)
+    + [Sequential segments](/help/components/segments/seg-sequential-build.md)
+    + [Share segments](/help/components/segments/seg-share.md)
+    + [Tag segments](/help/components/segments/seg-tag.md)
+    + [Filter the list of segments](/help/components/segments/seg-filter.md)
+    + [Mark segments as favorite](/help/components/segments/seg-favorite.md)
+    + [Approve segments](/help/components/segments/seg-approve.md)
+    + [Copy segments](/help/components/segments/seg-copy.md)
+    + [Manage segments](/help/components/segments/seg-manage.md)
+    + [Operators](/help/components/segments/seg-operators.md)
+    + [Use segments](/help/components/segments/seg-use.md)
   + Calculated metrics {#cja-calcmetrics}
     + [Overview](../components/calc-metrics/calc-metr-overview.md)
-    + Calculated metrics workflow {#cm-workflow}
+    + Workflow {#cm-workflow}
       + [Create calculated metrics](../components/calc-metrics/cm-workflow/cm-workflow.md)
-      + [Build calculated metrics](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
       + [Find metrics](../components/calc-metrics/cm-workflow/cm-finding.md)
+      + [Build calculated metrics](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
+      + [A simple example](../components/calc-metrics/cm-workflow/cm-pvv.md)
+      + [A more complex example](../components/calc-metrics/cm-workflow/cm-orders-participation.md)
       + [Metric type and attribution](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-      + [Build a participation metric](../components/calc-metrics/cm-workflow/participation-metric.md)
-      + [Filtered metrics](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
-      + [Stack and replace filters](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
+      + [Participation metrics](../components/calc-metrics/cm-workflow/participation-metric.md)
+      + [Segmented metrics](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
+      + [Stack and replace segments](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
       + [Filter calculated metrics](../components/calc-metrics/cm-workflow/cm-filter.md)
-      + [Mark calculated metrics as favorites](../components/calc-metrics/cm-workflow/cm-favorite.md)
+      + [Mark calculated metrics as favorite](../components/calc-metrics/cm-workflow/cm-favorite.md)
       + [Copy calculated metrics](../components/calc-metrics/cm-workflow/cm-copy.md)
       + [Use functions](../components/calc-metrics/cm-workflow/cm-using-functions.md)
       + [Tag calculated metrics](../components/calc-metrics/cm-workflow/cm-tagging.md)
@@ -373,20 +402,26 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
     + [Edit component entries in the Data Dictionary](../components/data-dictionary/edit-entries-data-dictionary.md)
     + [Monitor Data Dictionary health](../components/data-dictionary/monitor-data-dictionary-health.md)
-
+  + Real-time reporting {#real-time-reporting}
+    + [Overview](/help/components/real-time/real-time.md)
+    + [Use real-time reporting](/help/components/real-time/use-real-time.md)
+  + [Scheduled projects](../components/scheduled-projects-manager.md)
 + Report Builder {#cja-reportbuilder}
-  + [Overview](../report-builder/report-buider-overview.md)
-  + [Report Builder Set Up](../report-builder/report-builder-setup.md)
-  + [Create a Data Block](../report-builder/create-a-data-block.md)
-  + [Report Builder Hub](../report-builder/report-builder-hub.md)
-  + [Select a Data View](../report-builder/select-data-view.md)
-  + [Select a Date Range](../report-builder/select-date-range.md)
-  + [Work with Segments](../report-builder/work-with-filters.md)
-  + [Filter Dimensions](../report-builder/filter-dimensions.md)
-  + [Manage Data Blocks](../report-builder/manage-reportbuilder.md)
-  + [Schedule Workbooks](../report-builder/schedule-reportbuilder.md)
-  + [Restricted Labels](../report-builder/restricted-labels.md)
-  + [Report Builder Settings](../report-builder/report-builder-settings.md)
+  + [Overview](../report-builder/rb-overview.md)
+  + [Report Builder set up](../report-builder/report-builder-setup.md)
+  + [Create a data block](../report-builder/create-a-data-block.md)
+  + [Report Builder hub](../report-builder/report-builder-hub.md)
+  + [Select a data view](../report-builder/select-data-view.md)
+  + [Select a date range](../report-builder/select-date-range.md)
+  + [Work with segments](../report-builder/work-with-filters.md)
+  + [Filter dimensions](../report-builder/filter-dimensions.md)
+  + [Manage data blocks](../report-builder/manage-reportbuilder.md)
+  + [Schedule workbooks for email](../report-builder/schedule-reportbuilder.md)
+  + [Schedule workbooks for cloud exports](../report-builder/report-builder-export.md)
+  + [Manage workbook schedules](/help/report-builder/manage-schedules-reportbuilder.md)
+  + [Restricted labels](../report-builder/restricted-labels.md)
+  + [Report Builder settings](../report-builder/report-builder-settings.md)
+  
 
 + Reporting Activity Manager {#reporting-activity-manager}
   + [Overview](../reporting-activity-manager/reporting-activity-overview.md)
@@ -398,7 +433,9 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Field based stitching](/help/stitching/fbs.md)
   + [Graph based stitching](/help/stitching/gbs.md)
   + [Use stitching](/help/stitching/use-stitching.md)
+  + [Use stitching](/help/stitching/use-stitching-ui.md)
   + [Create and manage stitched datasets](/help/stitching/stitching-ui.md)
+  + [Validate stitching](/help/stitching/validate.md)
   + [Frequently Asked Questions](/help/stitching/faq.md)  
 
 + Adobe integrations {#integrations}
@@ -408,6 +445,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Integrate Journey Optimizer data](/help/integrations/ajo.md)
   + [Integrate Decision Management data](/help/integrations/ajo-od.md)
   + [Integrate Customer AI](/help/integrations/customer-ai.md)
+  + [Integrate Adobe Advertising](/help/integrations/advertising.md)
 
 + Data Governance {#cja-privacy}
   + [Data Governance](../privacy/privacy-overview.md)
@@ -416,6 +454,43 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Use cases {#cja-usecases}
   + [Customer Journey Analytics use cases](../use-cases/cja-usecases.md)
+  + Adobe Analytics data {#aa-data}
+    + [Use Marketing channel dimensions](../use-cases/aa-data/marketing-channels.md)
+    + [Combine report suites with different schemas](../use-cases/aa-data/combine-report-suites.md)
+  + B2B {#b2b}
+    + [An example person-based B2B project](../use-cases/b2b/example.md)
+    + B2B Edition {#b2b-edition}
+      + [Use cases overview](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
+      + [Setup](/help/use-cases/b2b/b2b-edition/setup.md)
+      + [Optimize account marketing](/help/use-cases/b2b/b2b-edition/optimize-account-marketing.md)
+      + [Grow key accounts](/help/use-cases/b2b/b2b-edition/grow-key-accounts.md)
+      + [Build product value](/help/use-cases/b2b/b2b-edition/build-product-value.md)
+  + Complex data {#complex-data}
+    + [Use arrays of objects](../use-cases/object-arrays.md)
+  + Cross-channel data {#cross-channel}
+    + [Analyze data across channels](../use-cases/cross-channel/cross-channel.md)
+    + [Import call center and web data](../use-cases/cross-channel/call-center.md)
+  + Data export {#data-export}
+    + [Overview](../use-cases/data-export/overview.md)
+    + [BI extension](../use-cases/data-export/bi-extension.md)
+    + [Export datasets](../use-cases/data-export/export-datasets.md)
+    + [Export full table](../use-cases/data-export/export-full-table.md)
+    + [Query Service and Export datasets](../use-cases/data-export/queryservice-export-datasets.md)
+  + Data ingestion {#data-ingestion}
+    + [Ingest and use Marketo Engage data](../use-cases/data-ingestion/marketo.md)
+    + [Ingest and use Experience Platform audiences](../use-cases/data-ingestion/ingest-aep-segments.md)
+  + Data views {#data-views}
+    + [Data views use cases](/help/use-cases/data-views/data-views-usecases.md)
+    + [Use binding dimensions and metrics](/help/use-cases/data-views/binding-dimensions-metrics.md)
+    + [Use summary data](/help/use-cases/data-views/summary-data.md)
+    + [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md)
+  + Derived fields {#derived-fields}
+    + [Report on LLM and AI-generated traffic](/help/use-cases/ai-traffic.md)
+    + [Report on goals](../use-cases/goals-using-derived-fields.md)
+  + Product analysis {#product-analysis}
+    + [Product analysis](/help/use-cases/product-analysis.md)
+  + Stitching {#stitching}
+    + [Shared devices](/help/use-cases/stitching/shared-devices.md)
   + Third-party data {#third-party}
     + [Overview](/help/use-cases/third-party/overview.md)
     + Google Analytics {#ga}
@@ -425,45 +500,16 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Report on Google Analytics data](/help/use-cases/third-party/ga/report.md)
     + Quantum Metric {#qm}
       + [Overview](/help/use-cases/third-party/quantum-metric/qm-overview.md)
-      + [Collect session ID](/help/use-cases/third-party/quantum-metric/collect-session-id.md)
       + [Tie session replays](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
       + [Use heatmaps](/help/use-cases/third-party/quantum-metric/heatmap.md)
       + [Add friction events](/help/use-cases/third-party/quantum-metric/friction-events.md)
       + [Source connector](/help/use-cases/third-party/quantum-metric/source-connector.md)
-  + Data ingestion {#data-ingestion}
-    + [Ingest and use Marketo Engage data](../use-cases/data-ingestion/marketo.md)
-    + [Ingest and use Experience Platform audiences ](../use-cases/data-ingestion/ingest-aep-segments.md)
-  + Data views {#data-views}
-    + [Data views use cases](/help/use-cases/data-views/data-views-usecases.md)
-    + [Use binding dimensions and metrics](/help/use-cases/data-views/binding-dimensions-metrics.md)
-    + [Use summary data](/help/use-cases/data-views/summary-data.md)
-    + [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md)
-  + Data export {#data-export}
-    + [Overview](../use-cases/data-export/overview.md)
-    + [BI extension](../use-cases/data-export/bi-extension.md)
-    + [Export datasets](../use-cases/data-export/export-datasets.md)
-    + [Export full table](../use-cases/data-export/export-full-table.md)
-    + [Query Service and Export datasets](../use-cases/data-export/queryservice-export-datasets.md)
-  + B2B {#b2b}
-    + [An example B2B project](../use-cases/b2b/example.md)
-  + Cross-channel data {#cross-channel}
-    + [Analyze data across channels](../use-cases/cross-channel/cross-channel.md)
-    + [Import call center and web data](../use-cases/cross-channel/call-center.md)
-  + Adobe Analytics data {#aa-data}
-    + [Use Marketing channel dimensions](../use-cases/aa-data/marketing-channels.md)
-    + [Combine report suites with different schemas](../use-cases/aa-data/combine-report-suites.md)
-  + Complex data {#complex-data}
-    + [Use arrays of objects](../use-cases/object-arrays.md)
-  + Stitching {#stitching}
-    + [Shared devices](/help/use-cases/stitching/shared-devices.md)
-  + Derived fields {#derived-fields}
-    + [Report on goals](../use-cases/goals-using-derived-fields.md)
 
 + Labs {#labs}
   + [Labs User Guide](../labs/labs.md)
 
 + Troubleshooting {#troubleshooting}
-  + [Compare data](../troubleshooting/compare.md)
+  + [Compare Source Connector data](../troubleshooting/compare.md)
   + [Consistency of metrics and audiences](../troubleshooting/consistency-rcdp-cja.md)
   + [Lack of permissions](../troubleshooting/lack-of-permissions.md)
 
@@ -476,6 +522,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Guardrails](../technotes/guardrails.md)
   + [IP addresses](../technotes/ip-addresses.md)
   + [Optimize performance](../technotes/optimizing-performance.md)
-  + [View and manage usage](../technotes/estimate-usage.md)
+  + [Manage usage](../technotes/estimate-usage.md)
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)

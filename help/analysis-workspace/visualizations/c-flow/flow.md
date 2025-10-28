@@ -1,11 +1,11 @@
 ---
-description: Learn about the Flow feature showing customer paths through your websites and apps.
-title: Flow overview
+description: Learn how to use the flow visualization in Analysis Workspace.
+title: Flow Overview
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
 ---
-# Flow {#flow}
+# Flow overview {#flow}
 
 <!-- markdownlint-disable MD034 -->
 

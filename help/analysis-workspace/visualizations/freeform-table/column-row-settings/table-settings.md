@@ -1,6 +1,6 @@
 ---
-description: Row settings vary depending on which component you have dragged into the table.
-title: Row settings
+description: Learn how to use row settings and how row settings vary depending on which component you have dragged into a freeform table in Analysis Workspace.
+title: Row Settings
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
@@ -14,7 +14,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Row and column s
 
 >[!ENDSHADEBOX]
 
-Row settings vary depending on which component you have dragged into the table. To access table row settings, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** next to a dimension, filter, metric, time period, or a breakdown within each of these objects.
+Row settings vary depending on which component you have dragged into the table. To access table row settings, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** next to a dimension, segment, metric, time period, or a breakdown within each of these objects.
 
 ![Freeform Table highilighting the Settings icon for Metrics](assets/row-settings.png)
 
@@ -30,9 +30,9 @@ To change the number of rows that are displayed:
 
 1. Click the number next to **[!UICONTROL Rows]** at the top of the first column of the table.
 
-   ![Freeform table showing the drop-down list of for the number of rows displayed. 400 rows is selected.](assets/change-row-count.gif)
+   ![Freeform table showing the drop-down menu of for the number of rows displayed. 400 rows is selected.](assets/change-row-count.gif)
 
-1. From the drop-down list, select the number of rows you would like the table to display.
+1. From the drop-down menu, select the number of rows you would like the table to display.
 
 
 ## Context-menu
@@ -60,12 +60,12 @@ The following additional context menu options are available when selecting one o
 | **[!UICONTROL Create hyperlink]** | Create a hyperlink for the item. See [Hyperlinks for dimensions in a freeform table](../freeform-table-hyperlinks.md) |
 | **[!UICONTROL Edit hyperlink]** | Edit a hyperlink for the item. See [Hyperlinks for dimensions in a freeform table](../freeform-table-hyperlinks.md) |
 | **[!UICONTROL Remove hyperlink]** | Remove a hyperlink for the item. See [Hyperlinks for dimensions in a freeform table](../freeform-table-hyperlinks.md) |
-| **[!UICONTROL Breakdown]** | Break down the dimension item. Select from the list of **[!UICONTROL Dimensions]**, **[!UICONTROL Metrics]**, **[!UICONTROL Filters]** or **[!UICONTROL Date ranges]**. Alternative search for a component, using *Search*. |
+| **[!UICONTROL Breakdown]** | Break down the dimension item. Select from the list of **[!UICONTROL Dimensions]**, **[!UICONTROL Metrics]**, **[!UICONTROL Segments]** or **[!UICONTROL Date ranges]**. Alternative search for a component, using *Search*. |
 | **[!UICONTROL Delete selected]** | Delete the selected rows (items). |
 | **[!UICONTROL Trend selection]** | Create a trended line chart visualization for the selection. | 
 | **[!UICONTROL Display only selected rows]** | Display only the selected rows in the visualization. |
 | **[!UICONTROL Display all rows]** | Display all rows in the visualization. |
-| **[!UICONTROL Create filter from selection]** | Open up the **[!UICONTROL Filter builder]** to build a filter from the selection. |
+| **[!UICONTROL Create segment from selection]** | Open up the **[!UICONTROL Segment builder]** to build a segment from the selection. |
 | **[!UICONTROL Create audience from selection]** | Open up the **[!UICONTROL Create audience]** dialog to build an audience from the selection. | 
 
 The following additional context menu options are available when selecting a metric column header.
@@ -79,9 +79,9 @@ The following additional context menu options are available when selecting a met
 | **[!UICONTROL Compare attribution model]** | Specify a new attibution model and compare it to the attribution model for the selected column. A new column is added with the new attribution model metrics. Also, a Percent change column is added for comparison. |
 | **[!UICONTROL Reset column widths]** | Reset the column widths to the default width. |
 | **[!UICONTROL Create annotation from selection]** | Open up the **[!UICONTROL Annotation details]** to add an annotation. | 
-| **[!UICONTROL Create filter from selection]** | Open up the **[!UICONTROL Filter builder]** to build a filter from the selection. |
+| **[!UICONTROL Create segment from selection]** | Open up the **[!UICONTROL Segment builder]** to build a segment from the selection. |
 | **[!UICONTROL Create audience from selection]** | Open up the **[!UICONTROL Create audience]** dialog to build an audience from the selection. | 
 
 ## Change row height
 
-You can set the view density of a project to **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]**, and **[!UICONTROL Expanded]**. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density).
+You can set the [view density](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) of a project to **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]**, and **[!UICONTROL Expanded]**. .

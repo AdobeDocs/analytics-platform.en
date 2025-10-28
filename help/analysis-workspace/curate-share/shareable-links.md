@@ -1,7 +1,7 @@
 ---
-description: Learn how to create shareable links to projects or visualizations
+description: Learn how to create shareable links to projects or visualizations.
 keywords: Analysis Workspace sharing
-title: Create shareable links
+title: Create Shareable Links
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
@@ -20,7 +20,7 @@ If the recipient of the link has not been assigned a [project role](/help/analys
 
 You can share a read-only link to Analysis Workspace projects with people who don't have access to Customer Journey Analytics.
 
-For more information, see "Share a project with anyone (no login required)" in the article [Share projects](/help/analysis-workspace/curate-share/share-projects.md).
+For more information, see [Share with anyone](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required).
 
 ## Get a panel or visualization link {#panel-link} 
 
@@ -31,9 +31,9 @@ You can also share a link to a specific part of a project, such as a panel or in
 
 [Watch the video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) on how to create links and use them to drive recipients to specific parts of your project. 
 
-![The drop-down menu after you right-click the header with the Get visualization link highlighted.](assets/get-viz-link.png)
+![The drop-down menu after you right-click the header with the Get visualization link highlighted.](assets/get-visualization-link.png)
 
-## Use links in a Table of contents {#TOC} 
+## Use links in a table of contents {#TOC} 
 
 One tip for leveraging the various link options is to always include a table of contents at the top of your Workspace project. In the table of contents, you can link to other relevant projects, specific panels and specific visualizations. This helps the recipient of the project to navigate more easily.  
 

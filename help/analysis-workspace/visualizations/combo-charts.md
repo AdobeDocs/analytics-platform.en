@@ -1,6 +1,6 @@
 ---
-description: Easily visualize comparison data in Analysis Workspace, such as building comparisons to last month, last year, and so on.
-title: Combo charts visualization
+description: Learn how to visualize comparison data in Analysis Workspace, such as building comparisons to last month, last year, and so on.
+title: Combo
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
@@ -46,7 +46,7 @@ Keep in mind that:
 
 1. Add a ![Comment](/help/assets/icons/ComboChart.svg) [!UICONTROL Combo] visualization. See [Add a visualization to a panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 
-1. From the drop-down lists, select a dimension for the X-axis and a metric for the Y-axis.
+1. From the drop-down menus, select a dimension for the X-axis and a metric for the Y-axis.
 
 1. Select the type of [!UICONTROL Line comparison] that you want to use.
 

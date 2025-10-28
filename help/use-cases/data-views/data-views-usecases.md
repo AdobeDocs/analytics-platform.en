@@ -1,6 +1,6 @@
 ---
-title: Use cases for data views in Customer Journey Analytics
-description: Multiple use cases that show the flexibility and power of data views in Customer Journey Analytics
+title: Data Views Use Cases
+description: Learn about multiple use cases that show the flexibility and power of data views in Customer Journey Analytics
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
@@ -33,7 +33,7 @@ For example, when creating a data view, you could create an [!UICONTROL Orders] 
 1. Open the **[!UICONTROL Include/Exclude Values]** section and specify the following:
    1. Enable **[!UICONTROL Set include exclude values]**.
    1. Select **[!UICONTROL If all criteria are met]** from **[!UICONTROL Match]**.
-   1. Specify `confirmation`. This text for the page_title indicates that this page is related to placing an order. After reviewing all the page titles where those criteria are met, a `1` will be counted for each instance. The result is a new metric (not a calculated metric.) A metric that has included/excluded values can be used everywhere any other metric can be used. It works with Attribution IQ, filters, and everywhere else you can use standard metrics.
+   1. Specify `confirmation`. The text for the **[!UICONTROL page_title]** indicates that this page is related to placing an order. After reviewing all the page titles where those criteria are met, a `1` will be counted for each instance. The result is a new metric (not a calculated metric.) A metric that has included/excluded values can be used everywhere any other metric can be used. These metrics work with attribution, segments, and everywhere else you can use standard metrics.
 
    ![Dimension to metric](../assets/string-to-metric.gif){width=100%}
 1. You can further specify an attribution model for this metric, such as [!UICONTROL Last Touch], with a [!UICONTROL Lookback window] of [!UICONTROL Session].
@@ -63,7 +63,7 @@ You can use a numeric dimension to get metrics into your [!UICONTROL  Flow] visu
 
 ## Do sub-event filtering {#sub-event}
 
-This capability is specifically applicable to array-based fields. The include/exclude functionality lets you filter at the sub-event level, whereas filters (segments) built in the filter builder only give you filtering at the event level. So, you can do sub-event filtering by using include/exclude in Data views, and then reference that new metric/dimension in a filter at the event level.
+This capability is specifically applicable to array-based fields. The include/exclude functionality lets you filter at the sub-event level, whereas segments built in the Segment builder only give you segmentation at the event level. You can do sub-event filtering by using include/exclude in Data views, and then reference that new metric/dimension in a segment at the event level.
 
 For example, use the include/exclude functionality in Data views to focus only on products that generated sales of more than $50. So, if you have an order that includes a $50 product purchase and a $25 product purchase, the include/exclude functionality removes the $25 product purchase, not the entire order.
 
@@ -80,7 +80,7 @@ These new settings allow you to view only high-value revenue and filter out anyt
 
 ## Use the [!UICONTROL No value options] setting {#no-value}
 
-Your company may have spent time training your users to expect "Unspecified" for dimensions in reports. The default for dimensions in Data views is "No value". However, you can specify per dimension how No value should be reported. See the No value options for a dimension component.
+Your company may have spent time training your users to expect "Unspecified" for dimensions in reports. The default for dimensions in Data views is *No value*. However, you can specify per dimension how No value should be reported. See the **[!UICONTROL No value]** options for a dimension component.
 
 ![No value options](../assets/no-value-options.gif){width=100%}
 
@@ -121,8 +121,7 @@ To access the components:
 New sessions are reported accurately almost always. The only exceptions are:
 
 * When a first session occurred before the 13-month lookback window. <br/>This session is ignored.
-
-* When a session spans both the lookback window and the reporting window. <br/>For example, you run a report from June 1 to June 15, 2022. The lookback window would span from May 1, 2021 to May 31, 2022. If a session starts on May 30, 2022 and ends on June 1, 2022, the session is included in the lookback window. And all sessions in the reporting window are counted as return sessions. 
+* When a session spans both the lookback window and the reporting window.<br/>For example, you run a report from June 1, 2022 to June 15, 2022. The lookback window would span from May 1, 2021 to May 31, 2022. If a session starts on May 30, 2022 and ends on June 1, 2022, the session is included in the lookback window. And all sessions in the reporting window are counted as return sessions. 
 
 ## Use the Date and Date-Time functionality {#date}
 

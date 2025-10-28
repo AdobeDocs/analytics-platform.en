@@ -4,14 +4,11 @@ description: Quick start guide for the B2B Edition of Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-hide: yes
-hidefromtoc: yes
 badgePremium: label="B2B Edition"
 exl-id: ff8d419e-5cc6-4e1b-8cf8-9dbaa8054179
 ---
-# B2B Edition quick start guide
 
-{{draft-b2b}}
+# B2B Edition quick start guide
 
 To implement Customer Journey Analytics B2B Edition, ensure you first do understand the B2B specific concepts and features. Also, you should be familiar with the traditional workflow to implement Customer Journey Analytics. 
 

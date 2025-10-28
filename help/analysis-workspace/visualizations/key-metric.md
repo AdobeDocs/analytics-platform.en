@@ -1,20 +1,16 @@
 ---
 description: Use the key metric summary visualization to compare metric performance across two timelines.
-title: Key metric summary
+title: Key Metric Summary
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
 ---
 # Key metric summary {#key-metric-summary}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_keymetricsummary_button"
 >title="Key metric summary"
 >abstract="Create a visualization that is a combination of the line, summary change, and summary number charts. Use this visualization to compare how important metrics are trending between two periods of time."
-
-<!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
@@ -46,7 +42,7 @@ This visualization addresses various common use cases, including:
 
 1. Add a ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Key metric summary]** visualization. See [Add a visualization to a panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
-1. Configure the visualization by selecting a **[!UICONTROL Metric]**, a **[!UICONTROL Primary date range]**, a **[!UICONTROL Comparison date range]** (optional) and a **[!UICONTROL Filter]** (optional):
+1. Configure the visualization by selecting a **[!UICONTROL Metric]**, a **[!UICONTROL Primary date range]**, a **[!UICONTROL Comparison date range]** (optional) and a **[!UICONTROL Segment]** (optional):
 
    ![Key metric configuration showing the options for metric, primary date range, comparison date range, and segment.](assets/key-metrics-config.png)
 
@@ -55,7 +51,7 @@ This visualization addresses various common use cases, including:
    | **[!UICONTROL Metric]** | Select the metric you want to examine. All metrics are supported. |
    | **[!UICONTROL Primary date range]** | The current date range for the freeform table.<p>Choose from any available date ranges in your data view.</p> <p>Choose [!UICONTROL **Panel date range**] if you want to use the same date range that is being used on the panel where the visualization is located.</p>  |
    | **[!UICONTROL Comparison date range]** | The date range that you want to compare with the primary date range. |
-   | **[!UICONTROL Filter (optional)]** | Any segment that you are interested in for this summary.  |
+   | **[!UICONTROL Segment (optional)]** | Any segment that you are interested in for this summary.  |
 
    {style="table-layout:auto"}
 
@@ -139,13 +135,11 @@ As part of the visualization settings, specific key metric summary settings are 
 
 ## Edit visualization
 
-After building the visualization, you can still edit the original configuration. 
+After you build the visualization, you can edit the original configuration. 
 
-1. Click the pencil icon in the top-right corner of the visualization (next to the settings gear icon).
+1. Select ![Edit](/help/assets/icons/Edit.svg) in the top-right corner of the visualization.
 
-   ![Visualization edit icon](assets/edit-icon.png)
-
-   You are now taken back to the original configuration view. 
+   You are now taken back to the original [configuration view](#configure). 
 
 1. Change the metric, primary date range, comparison date range, or segment as preferred.
 

@@ -1,16 +1,16 @@
 ---
-description: Learn about Folders in Workspace
+description: Learn how to organize your projects in folders in Analysis Workspace.
 keywords: Analysis Workspace
-title: Folders overview
+title: Folders Overview
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
 ---
-# About folders in Analysis Workspace
-
-Folders in Customer Journey Analytics are available on the Workspace landing page when you have selected to [Show Folders & Projects](../freeform-overview.md#show-selector).
+# Folders overview
 
 Folders in Workspace help you to organize and categorize your projects. With the folders functionality, you can create folders and sub-folders to manage your projects. 
+
+Folders in Customer Journey Analytics are available on the Workspace landing page when you have selected to [Show Folders & Projects](../freeform-overview.md#show-selector).
 
 There are two types of folders in Workspace: the Company folder and personal folders. A shared Company folder allows administrators to create and share content with all Workspace users. 
 

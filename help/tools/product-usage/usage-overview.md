@@ -51,6 +51,7 @@ When you enable Product usage, the following dimensions are available. If you wa
   * [!UICONTROL Send file on schedule]
   * [!UICONTROL Share project with anyone]
   * [!UICONTROL Share project with Workspace users]
+  * [!UICONTROL Switch data view]
 * **[!UICONTROL Attribution Model Used]**: The type of attribution model that the component uses. Dimension items include:
   * [!UICONTROL Last touch]
   * [!UICONTROL First touch]
@@ -63,17 +64,20 @@ When you enable Product usage, the following dimensions are available. If you wa
   * [!UICONTROL Time decay]
   * [!UICONTROL Custom]
   * [!UICONTROL Algorithmic]
-* **[!UICONTROL Component Name]**: The name of the component that was added, removed, or modified.
+* **[!UICONTROL Component ID]**: The ID of the component that was added, removed, or modified.
+* **[!UICONTROL Component Name]**: The friendly name of the component that was added, removed, or modified.
 * **[!UICONTROL Component Type]**: The type of component that was added, removed, or modified. Dimension items include:
   * [!UICONTROL Dimension]
   * [!UICONTROL Metric]
-  * [!UICONTROL Filter]
+  * [!UICONTROL Segment]
   * [!UICONTROL Calculated metric]
   * [!UICONTROL Date range]
   * [!UICONTROL Annotation]
   * [!UICONTROL Alert]
+* **[!UICONTROL Data View ID]**: The ID of the data view.
+* **[!UICONTROL Data View Name]**: The friendly name of the data view.
 * **[!UICONTROL Login User]**: The user that took the action.
-* **[!UICONTROL Panel Used]**: The panel where the component was added, removed, or modified. Dimension items include:
+* **[!UICONTROL Panel Used]**: The panel that was added, removed, or modified. Dimension items include:
   * [!UICONTROL Attribution]
   * [!UICONTROL Blank panel]
   * [!UICONTROL Experimentation]
@@ -87,6 +91,7 @@ When you enable Product usage, the following dimensions are available. If you wa
   * [!UICONTROL User stream]
   * [!UICONTROL Retention]
   * [!UICONTROL Feature matrix]
+* **[!UICONTROL Project ID]**: The ID of the project.
 * **[!UICONTROL Project Name]**: The friendly name of the project.
 * **[!UICONTROL Project Type]**: The project type. Dimension items include:
   * `workspace-projects`
@@ -120,3 +125,11 @@ When you enable Product usage, the following dimensions are available. If you wa
   * [!UICONTROL Venn]
 
 Product usage does not track individual project components when a project is merely opened or viewed. The user action of opening a project is tracked, however.
+
+## Available template
+
+An [Adobe template](/help/analysis-workspace/templates/use-templates.md) is available that uses the components automatically generated from this feature.
+
+**[!UICONTROL Adobe templates]** > **[!UICONTROL Other]** > **[!UICONTROL Product usage overview]**
+
+Select the data view that Product usage automatically created in the data view selector, then select the **[!UICONTROL Product usage overview]** template. Select **[!UICONTROL Preview]** to see which panels the template uses and learn about ideal use cases, or select **[!UICONTROL Use template]** to open it in Analysis Workspace.

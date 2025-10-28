@@ -50,13 +50,7 @@ Available time comparison options include the previous period, 13 weeks prior, 5
 
 ## Video demonstration Adobe Analytics {#videoaa}
 
-*This video demonstrates the functionality using Adobe Analytics. However, the functionality is similarly available in Customer Journey Analytics. Be aware of the differences in terminology between Adobe Analytics and Customer Journey Analytics (for example "visits" versus "sessions").*
-
-
-## Filters panel {#filterspanel}
-
-1. Select ![Filter](/help/assets/icons/Filter.svg) to open the Filters panel. If you need more space for the Filters list, you can select ![Filter](/help/assets/icons/Filter.svg) once more to close the panel.
-1. Select filters from any of the available filter sections. 
+This video demonstrates the functionality using Adobe Analytics. However, the functionality is similarly available in Customer Journey Analytics. Be aware of the differences in terminology between Adobe Analytics and Customer Journey Analytics (for example *visits* versus *sessions*).
 
 
 ## Tag filter section {#tagfiltersection}
@@ -123,21 +117,27 @@ An attribution model determines which dimension items get credit for a metric wh
 
 {style="table-layout:auto"}
 
+## Attribution container {#attribution-container}
+
+An attribution container defines the desired scope for the attribution. Possible options are: 
+
+* **Session**: Looks back up to the beginning of the session where a conversion happened. Session lookback windows respect the modified [Session timeout](/help/data-views/create-dataview.md#session-settings) in a data view. When **[!UICONTROL Session]** is selected, the [Attribution lookback window](#atribution-lookback-window) is automatically set to **[!UICONTROL Reporting window]** and cannot be changed.
+* **Person**: Looks at conversions from the scope of the person container.
+* **Global Account** [!BADGE B2B Edition]{type=Informative}: Looks at conversions from the scope of the global accounts container.
+* **Accounts** [!BADGE B2B Edition]{type=Informative}: Looks at conversions from the scope of the person container .
+* **Opportunity** [!BADGE B2B Edition]{type=Informative}: Looks at conversions from the scope of the opportunity container .
+* **Buying group** [!BADGE B2B Edition]{type=Informative}: Looks at conversions from the scope of the buying group container.
+
 ## Atribution lookback window {#attribution-lookback-window}
 
-A lookback window is the amount of time a conversion should look back to include touch points. If a dimension item is set outside of the lookback window, the value is not included in any attribution calculations.
+A attribution lookback window is the amount of time a conversion should look back to include touch points. If a dimension item is set outside of the lookback window, the value is not included in any attribution calculations.
 
+* **[!UICONTROL Reporting window]**: Looks back up to the start of the reporting window from when the conversion happened.
 * **14 Days**: Looks back up to 14 days from when the conversion happened.
 * **30 Days**: Looks back up to 30 days from when the conversion happened.
 * **60 Days**: Looks back up to 60 days from when the conversion happened.
 * **90 Days**: Looks back up to 90 days from when the conversion happened.
 * **13 Months** [!BADGE B2B Edition]{type=Informative}: Looks back up to 13 months from when the conversion happened. 
-* **Session**: Looks back up to the beginning of the session where a conversion happened. Session lookback windows respect the modified [Session timeout](/help/data-views/create-dataview.md#session-settings) in a data view.
-* **Person (Reporting Window)**: Looks at all visits back up to the first of the month of the current date range. For example, if the report date range is September 15 - September 30, the person lookback date range includes September 1 - September 30. If you use this lookback window, you can occasionally see that dimension items are attributed to dates outside of your reporting window.
-* **Global Account (Reporting Window)** [!BADGE B2B Edition]{type=Informative}: Looks at all global accounts back up to the first of the month of the current date range. For example, if the report date range is September 15 - September 30, the global account lookback date range includes September 1 - September 30. If you use this lookback window, you can occasionally see that dimension items are attributed to dates outside of your reporting window.
-* **Accounts (Reporting Window)** [!BADGE B2B Edition]{type=Informative}: Looks at all accounts back up to the first of the month of the current date range. For example, if the report date range is September 15 - September 30, the account lookback date range includes September 1 - September 30. If you use this lookback window, you can occasionally see that dimension items are attributed to dates outside of your reporting window.
-* **Opportunity (Reporting Window)** [!BADGE B2B Edition]{type=Informative}: Looks at all opportunities back up to the first of the month of the current date range. For example, if the report date range is September 15 - September 30, the opportunity lookback date range includes September 1 - September 30. If you use this lookback window, you can occasionally see that dimension items are attributed to dates outside of your reporting window.
-* **Buying group (Reporting Window)** [!BADGE B2B Edition]{type=Informative}: Looks at all buying groups back up to the first of the month of the current date range. For example, if the report date range is September 15 - September 30, the buying group lookback date range includes September 1 - September 30. If you use this lookback window, you can occasionally see that dimension items are attributed to dates outside of your reporting window.
 * **Custom Time:** Allows you to set a custom lookback window from when a conversion happened. You can specify the number of minutes, hours, days, weeks, months, or quarters. For example, if a conversion happened on February 20, a lookback window of five days would evaluate all dimension touchpoints from February 15 to February 20 in the attribution model.
 
 ## Attribution example {#attribution-example}
@@ -148,35 +148,20 @@ Consider the following example:
 1. On September 18, the person arrives to your site again through a social media link they got from a friend. They add several items to their cart, but do not purchase anything.
 1. On September 24, your marketing team sends them an email with a coupon for some of the items in their cart. They apply the coupon, but visit several other sites to see if any other coupons are available. They find another through a display ad, then ultimately make a purchase for $50.
 
-Depending on your lookback window and attribution model, channels receive different credit. The following are some examples:
+Depending on your reporting window (for example September 10 - September 24), attribution model, container and channels receive different credit. See table below for examples:
 
-* Using **first touch** and a **session lookback window**, attribution looks at only the third visit. Between email and display, email was first, so email gets 100% credit for the $50 purchase.
-
-* Using **first touch** and a **person lookback window**, attribution looks at all three visits. Paid search was first, so it gets 100% credit for the $50 purchase.
-
-* Using **linear** and a **session lookback window**, credit is divided between email and display. Both of these channels each get $25 credit.
-Using **linear** and a **person lookback window**, credit is divided between paid search, social, email, and display. Each channel gets $12.50 credit for this purchase.
-
-* Using **J-shaped** and a **person lookback window**, credit is divided between paid search, social, email, and display.
-
-  * 60% credit is given to display, for $30.
-  * 20% credit is given to paid search, for $10.
-  * The remaining 20% is divided between social and email, giving $5 to each.
-
-* Using **Time Decay** and a **person lookback window**, credit is divided between paid search, social, email, and display. Using the default 7-day half-life:
-
-  * Gap of zero days between display touch point and conversion. `2^(-0/7) = 1`
-  * Gap of zero days between email touch point and conversion. `2^(-0/7) = 1`
-  * Gap of six days between social touch point and conversion. `2^(-6/7) = 0.552`
-  * Gap of nine days between paid search touch point and conversion. `2^(-9/7) = 0.41`
-  * Normalizing these values results in the following:
-  
-      * Display: 33.8%, getting $16.88
-      * Email: 33.8% getting $16.88
-      * Social: 18.6%, getting $9.32
-      * Paid Search: 13.8%, getting $6.92
+| Model | Container | Lookback window | Explanation |
+|---|---|---|---|
+| First touch | Session | Reporting window | Attribution looks at only the third visit. Between email and display, email was first, so email gets 100% credit for the $50 purchase. | 
+| First touch | Person | 30 Days | Attribution looks at all three visits. Paid search was first, so it gets 100% credit for the $50 purchase. |
+| Linear | Session | Reporting window | Credit is divided between email and display. Both of these channels each get $25 credit. |
+| Linear | Person | 30 Days | Credit is divided between paid search, social, email, and display. Each channel gets $12.50 credit for this purchase. |
+| J-shaped | Person | 30 Days | Credit is divided between paid search, social, email, and display.<ul><li>60% credit is given to display, for $30.</li><li>20% credit is given to paid search, for $10.</li><li>The remaining 20% is divided between social and email, giving $5 to each.</li></ul> |
+| Time Decay | Person | 30 Days | <ul><li>Gap of zero days between display touch point and conversion. `2^(-0/7) = 1`</li><li>Gap of zero days between email touch point and conversion. `2^(-0/7) = 1`</li><li>Gap of six days between social touch point and conversion. `2^(-6/7) = 0.552`</li><li>Gap of nine days between paid search touch point and conversion. `2^(-9/7) = 0.41`</li>Normalizing these values results in the following:<ul><li>Display: 33.8%, getting $16.88</li><li>Email: 33.8% getting $16.88</li><li>Social: 18.6%, getting $9.32</li><li>Paid Search: 13.8%, getting $6.92</li></ul></li></ul> |
 
 Conversion events that typically have whole numbers are divided if credit belongs to more than one channel. For example, if two channels contribute to an order using a Linear attribution model, both channels get 0.5 of that order. These partial metrics are summed across all people then rounded to the nearest integer for reporting.
+
+[!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Use specific B2B containers, like Accounts, or Opportunities, and more appropriate lookback windows (up to 13 months) to apply above attribution models in typical B2B scenarios.
 
 ## Journey visualization comparisons {#journey-visualization-comparisons}
 
@@ -193,8 +178,8 @@ Use the following information to choose the visualization that best meets your n
 | **Non-linear journeys with multiple entry points and paths** | Yes | No | Yes |
 | **Primary metric** | Any metric, including calculated metrics. | Only Session or Person | Only Occurrences (Path views) |
 | **Secondary metric** | Yes<p>Any metric, including calculated metrics.</p> | No | No  |
-| **Component support in nodes or touchpoints** | Metrics, dimension items, filters, and date ranges.| Metrics, dimension items, filters, and date ranges. | Only dimension items (except for the starting and ending touchpoint)  |
-| **Compare filters** | No | Yes<p>Perform side-by-side comparisons of two different filters in the same report.</p> | No |
+| **Component support in nodes or touchpoints** | Metrics, dimension items, segments, and date ranges.| Metrics, dimension items, segments, and date ranges. | Only dimension items (except for the starting and ending touchpoint)  |
+| **Compare segments** | No | Yes<p>Perform side-by-side comparisons of two different segments in the same report.</p> | No |
 | **Drag-and-drop component interaction** | Yes | Yes | No |
 | **Adobe Journey Optimizer journeys** | Yes</br>Open journeys from Journey Optimizer for deeper analysis and customization. | No |  No |
 
@@ -229,7 +214,7 @@ Use the following information to choose the visualization that best meets your n
 
 >[!AVAILABILITY]
 >
->The functionality described in this article, and any other article or functionality badged with [!BADGE B2B Edition]{type=Informative}.  is in the Limited Testing phase of release and might not be available yet in your environment. <br/>Also, [!BADGE B2B Edition]{type=Informative} functionalities and documentation of [!BADGE B2B Edition]{type=Informative} functionalities are subject to change and no legal obligations can be derived from it.<br/>This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md). 
+>The functionality described in this article, and any other article or functionality badged with [!BADGE B2B Edition]{type=Informative}, is in the Limited Testing phase of release and might not be available yet in your environment. <br/>Also, [!BADGE B2B Edition]{type=Informative} functionalities and documentation of [!BADGE B2B Edition]{type=Informative} functionalities are subject to change and no legal obligations can be derived from it.<br/>This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md). 
 >
 
 
@@ -238,3 +223,59 @@ Use the following information to choose the visualization that best meets your n
 >[!INFO]
 >
 >In this documentation, specific B2B articles or functionalities, only available with the Customer Journey Analytics B2B Edition, are marked with [!BADGE B2B Edition]{type=Informative}.
+
+
+## Common dataset settings {#common-dataset-settings}
+
+| Setting | Description |
+|---|---|
+| **[!UICONTROL Import new data]** | Enable this option if you want to establish an ongoing connection. With an ongoing connection new data batches that are added to the datasets are available automatically in Workspace. |
+| **[!UICONTROL Dataset backfill]** | Enable **[!UICONTROL Backfill all existing data]** to ensure that all existing data is backfilled.<br/><br/>Select **[!UICONTROL Request backfill]** to backfill historical data for a specific period. You can define up to 10 dataset backfill periods.<ol><li>Define the period by entering start and end data or selecting dates using ![Calendar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).</li><li>Select **[!UICONTROL Queue backfill]** to add the backfill to the list, or **[!UICONTROL Cancel]** to cancel.</li></ol>For each entry, select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) to edit the period, or select ![Delete](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) to delete the entry.<br/><br/>On backfills:<ul><li>You can backfill each dataset individually.</li><li>You prioritize new data added to a dataset in the connection, so this new data has the lowest latency.</li><li>Any backfill (historical) data is imported at a slower rate. The amount of historical data influences the latency.</li><li>The Analytics source connector imports up to 13 months of data (irrespective of size) for production sandboxes. The backfill in non-production sandboxes is limited to 3 months.</li><li>For production sandboxes, if you have licensed the additional SKU that entitles you to import more than 13 months of historical backfill data, contact Adobe to request the extended backfill.</li></ul> |
+| **[!UICONTROL Batch status]** | Possible status indicators are:<ul><li>Success</li><li>X backfill(s) processing</li><li>Off</li></ul> |
+| **[!UICONTROL Dataset ID]** | This ID is automatically generated. |
+| **[!UICONTROL Description]** | The description given to this dataset when the dataset was created. |
+| **[!UICONTROL Number of records]** | The dataset's size. |
+| **[!UICONTROL Schema]** | The schema based on which the dataset was created in Adobe Experience Platform. |
+| **[!UICONTROL Dataset]** | The name of the dataset. |
+| **[!UICONTROL Preview: *dataset name*]** | Previews the dataset for first 10 rows and first 10 columns. |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]** | You can [delete a dataset](/help/connections/create-connection.md#delete-a-dataset) without deleting the whole connection. The deletion of a dataset from a connection reduces the costs involved in data ingestion and the cumbersome process of recreating the whole connection and associated data views. |
+
+## Standard dimensions {#standard-dimensions}
+
+| Component Name | Notes |
+|---|---|
+| 15 Minute | Each 15 minutes that a given event happened (rounded down). The first dimension item is the first 15 minutes in the date range, and the last dimension item is the last 15 minutes in the date range. |
+| 30 Minute | Each 30 minutes that a given event happened (rounded down). The first dimension item is the first 30 minutes in the date range, and the last dimension item is the last 30 minutes in the date range. |
+| 5 Minute | Each 5 minutes that a given event happened (rounded down). The first dimension item is the first 15 minutes in the date range, and the last dimension item is the last 5 minutes in the date range. |
+| [!UICONTROL Day] |  The day that a given event happened. The first dimension item is the first day in the date range, and the last dimension item is the last day in the date range. |
+| [!UICONTROL Day of Week] |  The day of the week that a given event happened. The first dimension item is the first day of the week in the date range, and the last dimension item is the last day of the week in the date range. |
+| [!UICONTROL Day of Month] |  The day of the month that a given event happened. The first dimension item is the first day of the month in the date range, and the last dimension item is the last day of the month in the date range. |
+| Event Depth |  Assigns sequential numerical values (1, 2, 3, etc.) to each event interaction within a session. With this dimension you can enable  detailed tracking and analysis of where specific events occur in the sequential flow of user interactions within the [bounded experience session you have defined for your data view](/help/data-views/session-settings.md#session-settings). You can track the progression of events from start to finish within a bounded session. As an example: A visitor lands on your homepage (event 1, session start), uses the search function (event 2), views a product details page (event 3), adds to cart (event 4), proceeds to checkout (event 5), and completes a purchase (event 6, session end). You can use [!UICONTROL Event depth] now in a segment definition to segment data based on interaction depth. |
+| [!UICONTROL Hour] |  The hour that a given event happened (rounded down). The first dimension item is the first hour in the date range, and the last dimension item is the last hour in the date range. |
+| [!UICONTROL Hour of Day] |  The hour of the day that a given event happened (rounded down). The first dimension item is the first hour of the day in the date range, and the last dimension item is the last hour of the day in the date range. |
+| [!UICONTROL Minute] |  The minute that a given event happened (rounded down). The first dimension item is the first minute in the date range, and the last dimension item is the last minute in the date range. |
+| [!UICONTROL Minute of Hour] |  The minute of the hour that a given event happened (rounded down). The first dimension item is the first minute of the hour in the date range, and the last dimension item is the last minute of the hour in the date range. |
+| [!UICONTROL Month] |  The month that a given event happened. The first dimension item is the first month in the date range, and the last dimension item is the last month in the date range. |
+| [!UICONTROL Month of Year] |  The month of the year that a given event happened. The first dimension item is the first month of the year in the date range, and the last dimension item is the last month of the year in the date range. |
+| [!UICONTROL Quarter] |  The quarter that a given event happened. The first dimension item is the first quarter in the date range, and the last dimension item is the last quarter in the date range. |
+| [!UICONTROL Quarter of Year] |  The quarter of the year that a given event happened. The first dimension item is the first quarterof the year in the date range, and the last dimension item is the last quarter of the year in the date range. |
+| [!UICONTROL Second] |  The second that a given event happened (rounded down). The first dimension item is the first second in the date range, and the last dimension item is the last second in the date range. |
+| [!UICONTROL Week] |  The week that a given event happened. The first dimension item is the first week in the date range, and the last dimension item is the last week in the date range.|
+| [!UICONTROL Week of year] |  The week of year that a given event happened. The first dimension item is the first week of year in the date range, and the last dimension item is the last week of year in the date range.|
+| [!UICONTROL Year] |  The year that a given event happened. The first dimension item is the first year in the date range, and the last dimension item is the most recent year in the date range. |
+
+
+## Standard metrics {#standard-metrics}
+
+| Component Name | Notes |
+| --- | --- |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL Accounts] |  Based on the Account ID specified in a [!UICONTROL Connection]. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL Buying Group] |  The buying groups, based on the Buying group ID specified in the [!UICONTROL Connection]. | 
+| [!UICONTROL Events] |  The number of rows from all event datasets in a [!UICONTROL Connection]. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL Global Accounts] |  Based on the Global Accounts ID specified in the [!UICONTROL Connection]. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL Opportunities] |  The opportunities, based on the Opportunity ID specified in the [!UICONTROL Connection]. |
+| [!UICONTROL People] | Based on the person ID specified in a [!UICONTROL Connection]. |
+| [!UICONTROL Session Ends] |  The number of events that were the last event of a session. Similar to [!UICONTROL Session Starts], it can also be used in a segment definition to segment things down to the last event of every session.<p>This component must be included in your data view for the following [calculated metric](/help/components/calc-metrics/default-calcmetrics.md) to be available in Workspace: <ul><li>Session End Rate</li></p> |
+| [!UICONTROL Session Starts] |  The number of events that were the first event of a session. When used in a segment definition (for example, '[!UICONTROL Session Starts] exists'), it segments down to just the first event of every session.<p>This component must be included in your data view for the following [calculated metric](/help/components/calc-metrics/default-calcmetrics.md) to be available in Workspace: <ul><li>Session Start Rate</li></p> |
+| [!UICONTROL Sessions] |  Based on the data view's session settings. |
+| [!UICONTROL Time Spent (seconds)] |  Sums the time between two different values for a dimension.<p>This component must be included in your data view for the following [calculated metrics](/help/components/calc-metrics/default-calcmetrics.md) to be available in Workspace: <ul><li>Time Spent Per Person</li><li>Time Spent Per Session</li></p> |

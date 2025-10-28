@@ -8,9 +8,6 @@ exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
 ---
 # Content Analytics manual configuration
 
-{{release-limited-testing}}
-
-
 This article details the manual actions that are required to start or stop the data collection of a Content Analytics configuration, or to edit your Content Analytics implementation.
 
 The following manual configuration actions are available:
@@ -50,9 +47,9 @@ You use the [Adobe Content Analytics extension](https://experienceleague.adobe.c
 
   You can enable or disable experiences and edit the combinations of regular expression and query parameters to determine how content is rendered on your website.
 
-* [Event filtering](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering){target="_blank"}
+* [Event segmenting](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
-  You can edit regular expressions to modify how you filter pages and assets.
+  You can edit regular expressions to modify how you segment pages and assets.
 
 
 After you make changes in the Adobe Content Analytics extension, ensure your use [publishing flow](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} to start the collection of data based on the changes made. 
@@ -68,7 +65,9 @@ After you make changes in the Adobe Content Analytics extension, ensure your use
 
 ## Versioning
 
-If you require versioning of your Content Analytics experiences, you must add a global `adobe.getContentExperienceVersion` function on the pages that you consider experiences that you want to analyze.
+If you want to collect Content Analytics experiences, you should consider implementing versioning to ensure new experiences (changes to your web page) are properly collected. 
+
+To implement versioning, you add a global `adobe.getContentExperienceVersion` function on the pages that you consider experiences that you want to analyze.
 
 The `adobe.getContentExperienceVersion` function should return a string as value, which can be anything you choose, to identify the version. The version is appended to the [Experience ID URL](/help/content-analytics/report/components.md#experience-metadata). 
 
@@ -82,3 +81,45 @@ window.adobe.getContentExperienceVersion = () => {
   return "1.0";
 };
 ```
+
+## Identities
+
+Content Analytics handle identities in the following way:
+
+* ECID is automatically populated in the `identityMap` portion of the Content Analytics schema.
+* If you require other identity values in the `identityMap`, you need to set these values in the `onBeforeEventSend` callback within the Web SDK extension.
+* Field-based stitching is not supported because the schema is system-owned. So, you cannot add another field to the schema to support field-based stitching
+
+
+To ensure Content Analytics identity data and Adobe Experience Platform Web SDK data identity data are stitched correctly at the field level, you need to make modifications to the Web SDK [on before event send](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} callback.
+
+1. Navigate to your **[!UICONTROL Tags]** property that contains the Adobe Experience Platform Web SDK extension and Adobe Content Analytics extension.
+1. Select ![Plug](/help/assets/icons/Plug.svg) **[!UICONTROL Extensions]**.
+1. Select the **[!UICONTROL Adobe Experience Platform Web SDK]** extension.
+1. Select **[!UICONTROL Configure]**.
+1. In the **[!UICONTROL SDK instances]** section, scroll down to **[!UICONTROL Data collection]** - **[!UICONTROL On before event send callback]**.
+
+   ![On before event send callback](/help/content-analytics/assets/onbeforeeventsendcallback.png)
+
+1. Select **[!UICONTROL </> Provide on before event send callback code]**.
+1. Add the following code:
+
+   ```javascript
+   window.adobeContentAnalytics?.forwardEvent(content);
+
+   content.xdm.identityMap = _satellite.getVar('identityMap');
+   if ((content.xdm.eventType === "content.contentEngagement") && (_satellite.getVar('identityMap') != null)) {
+      return true;
+   }
+   ```
+
+   ![On before event send callback](/help/content-analytics/assets/onbeforeeventsendcallbackcode.png)
+
+1. Select **[!UICONTROL Save]** to save the code.
+1. Select **[!UICONTROL Save]** to save the extension.
+1. [Publish](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) the updates for your Tags property.
+
+
+
+   
+  

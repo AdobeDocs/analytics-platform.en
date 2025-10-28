@@ -8,8 +8,6 @@ exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
 ---
 # Content Analytics components
 
-{{release-limited-testing}}
-
 Content Analytics adds the following categories of components (dimensions, (calculated) metrics, derived fields) to the already available components in Customer Journey Analytics:
 
 * [Experience metadata](#experience-metadata)

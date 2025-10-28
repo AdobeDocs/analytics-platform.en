@@ -1,6 +1,6 @@
 ---
-description: Learn how to specify the touchpoints to create a multi-dimensional fallout sequence.
-title: Configure a fallout visualization
+description: Lean how to configure and specify the touchpoints to create a multi-dimensional fallout sequence.
+title: Configure A Fallout Visualization
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
@@ -10,16 +10,16 @@ role: User
 
 You can specify the touchpoints to create a multi-dimensional fallout sequence. Commonly, a touchpoint is a page on your site. However, touchpoints are not limited to pages. For example, you can add events, such as units, as well as unique persons and return visits. You can also add dimensions, such as a category, browser type, or internal search term.
 
-You can even add filters within a touchpoint. For example, you might want to compare filters, such as iOS and Android&trade; users. Drag the desired filters to the top of the fallout and information about those filters is added to the fallout report. If you want to show only those filters, you can remove the All Visits baseline.
+You can even add segments within a touchpoint. For example, you might want to compare segments, such as iOS and Android&trade; users. Drag the desired segments to the top of the fallout and information about those segments is added to the fallout report. If you want to show only those segments, you can remove the All Visits baseline.
 
 There is no limitation on the number of steps that you can add or the number of dimensions used.
 
-You can do pathing on dimensions, metrics, and filters. For example, suppose that someone is looking at shoes, shirt on one page, and on the next page they're looking at shirt, socks. The next product flow report from shoes will be shirt and socks, NOT shirt.
+You can do pathing on dimensions, metrics, and segments. For example, suppose that someone is looking at shoes, shirt on one page, and on the next page they're looking at shirt, socks. The next product flow report from shoes will be shirt and socks, NOT shirt.
 
 ## Use
 
 1. Add a ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fallout]** visualization. See [Add a visualization to a panel](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
-1. Drag a page, for example home, from the Page dimension onto the *Add touchpoint* dropdown menu.
+1. Drag a page, for example home, from the Page dimension onto the *Add touchpoint* drop-down menu.
 
    ![The home page from the Home page dimension dragged to the Add Touchpoint field.](assets/fallout-drag.png)
 
@@ -35,7 +35,7 @@ You can do pathing on dimensions, metrics, and filters. For example, suppose tha
 
    >[!NOTE]
    >
-   >Multiple filters are joined with AND, but multiple items such as dimension items and metrics are joined with OR.
+   >Multiple segments are joined with AND, but multiple items such as dimension items and metrics are joined with OR.
 
    ![The Page:CamerRoll or Page: Camera touchpoints highlighted.](assets/fallout-or.png)
 
@@ -74,9 +74,9 @@ As part of the visualization, specific context menu options are available.
 |**[!UICONTROL Trend touchpoint]**|See trend data for a touchpoint in a line graph, with some pre-built anomaly detection data.|
 |**[!UICONTROL Trend touchpoint (%)]**|Trends the total fallout percentage.|
 |**[!UICONTROL Trend all touchpoints (%)]**|Trends all the touchpoint percentages in the fallout (except **[!UICONTROL All People]**, if it's included), on the same chart.|
-|**[!UICONTROL Break down fallthrough at this touchpoint]**|View what persons did between two touchpoints (this touchpoint and the next touchpoint) if they continued to the next touchpoint. This creates a freeform table showing your dimensions. You can replace dimensions and other elements of the table.|
-|**[!UICONTROL Break down fallout at this touchpoint]**|View what people who did not make it through the funnel did immediately after the selected step.|
-|**[!UICONTROL Create filter from touchpoint]**|Create a new filter from the selected touchpoint.|
+|**[!UICONTROL Break down fallthrough at this touchpoint]**|View what persons did between two touchpoints (this touchpoint and the next touchpoint) if they continued to the next touchpoint. This creates a freeform table showing your dimensions. You can replace dimensions and other elements of the table. For example, a table that is labeled **[!UICONTROL Fallthrough: All People > Page equals any of home]** and contains **[!UICONTROL Page]** as the dimension and **[!UICONTROL People]** segmented by the [project-only quick segment](/help/components/segments/seg-quick.md) **[!UICONTROL Fallthrough: All People > Page equals any of home]** as the metric. Inspect the segment to understand how the fallthrough segment is determined.|
+|**[!UICONTROL Break down fallout at this touchpoint]**| View what people who did not make it through the funnel did immediately after the selected step. This creates a freeform table showing your dimensions. You can replace dimensions and other elements of the table. For example, a table that is labeled **[!UICONTROL Fallout: People > Page equals any of home]** and contains **[!UICONTROL Page]** as the dimension and **[!UICONTROL People]** segmented by the [project-only quick segment](/help/components/segments/seg-quick.md) **[!UICONTROL Fallthrough: All Visitors > Page equals any of home]** segment as the metric. Inspect the segment to understand how the fallout segment is determined.|
+|**[!UICONTROL Create segment from touchpoint]**|Create a new segment from the selected touchpoint.|
 
 >[!MORELIKETHIS]
 >

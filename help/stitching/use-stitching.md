@@ -8,7 +8,7 @@ exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
 ---
 # Use stitching
 
-Once your organization meets all [prerequisites](#prerequisites) and understands common [limitations](#limitations) and stitching method specific ([field-based](#limitations-1) and [graph-based](#limitations-2)) limitations, you can follow these steps to start using stitching in Customer Journey Analytics.
+Once your organization meets all [prerequisites](overview.md#prerequisites) and understands common [limitations](overview.md#limitations) and stitching method specific ([field-based](fbs.md#limitations) and [graph-based](gbs.md#limitations)) limitations, you can follow these steps to start using stitching in Customer Journey Analytics.
 
 ## Select options
 
@@ -28,7 +28,12 @@ The Customer Journey Analytics package you are entitled to determines the availa
    - A request to enable stitching.
    - The dataset ID for the dataset that you want to rekey.
    - The column name (identity path and namespace) of the persistent ID for the desired dataset (the identifier that appears on every row).
-   - For field-based stitching, the column name of the transient ID for the desired dataset (the person identifier, which also acts as a link between datasets in the context of a connection). For graph-based stitching, the identity namespace to use for querying the identity graph.
+   - If the dataset supports `identityMap`:
+     - For field-based stitching, specify the namespace for both the persistent and transient IDs.
+     - For graph-based stitching, specify the namespace for the persistent ID and the identity namespace to use for querying the identity graph.
+   - If the dataset does not support `identityMap`:
+     - For field-based stitching, the column name of the transient ID for the desired dataset (the person identifier, which also acts as a link between datasets in the context of a connection). 
+     - For graph-based stitching, the identity namespace to use for querying the identity graph.
    - Your preference of lookback window and replay frequency. See your Customer Journey Analytics package for the [options](#options) available.
    - Sandbox name.
 

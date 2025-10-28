@@ -1,16 +1,14 @@
 ---
-description: Example of custom date ranges in Analysis Workspace.
+description: Learn how to define custom date ranges in Analysis Workspace.
 keywords: Analysis Workspace
-title: Example custom date ranges
+title: Example Custom Date Ranges
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
 role: User
 ---
 # Example custom date ranges
 
-This article shows more examples of custom date ranges
-
-
+This article shows more examples of custom date ranges.
 
 ## Last two months ago
 
@@ -27,7 +25,7 @@ You want to define a custom date range that defines two months ago. You use one 
 
 +++ Details
 
-You want to define a date range that defines the period between the current day a week ago until the end of that same last week. For example, if today is Wednesday September 11, 2024. You want a date range from Wednesday September 4, 2024 until Saturday September 7, 2024. September 
+You want to define a date range that defines the period between the current day a week ago until the end of that same last week. For example, if today is Wednesday September 11, 2024. You want a date range from Wednesday September 4, 2024 until Saturday September 7, 2024. 
 
 ![Date range example](assets/date-range-example.png)
 

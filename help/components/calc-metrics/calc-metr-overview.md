@@ -1,6 +1,7 @@
 ---
-title: Calculated metrics overview
-description: Learn about filtered metrics that are derived at report run time.
+description: Learn about calculated metrics that you can create from existing metrics.
+keywords: Calculated Metrics
+title: Calculated Metrics Overview
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 role: User
@@ -21,7 +22,7 @@ A typical workflow for calculated metrics consists of these tasks
 
 | Task | Description |
 | --- | --- |
-| Plan | Especially, for metrics that are going to be officially approved ![Checkmark](/help/assets/icons/Checkmark.svg), carefully plan and structure the calculated metrics you anticipate being used often.  |
+| Plan | Especially, for metrics that are going to be officially approved ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg), carefully plan and structure the calculated metrics you anticipate being used often.  |
 | [Build](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) | Build, modify, and save calculated metrics. |
 | [Apply](/help/components/use-components-in-workspace.md) | Apply calculated metrics directly within your Workspace projects. |
 | [Manage](/help/components/calc-metrics/cm-workflow/cm-manager.md) | Manage calculated metrics. You can [tag](/help/components/calc-metrics/cm-workflow/cm-tagging.md), [approve](/help/components/calc-metrics/cm-workflow/cm-approving.md), [unapprove](/help/components/calc-metrics/cm-workflow/cm-approving.md), [filter](/help/components/calc-metrics/cm-workflow/cm-filter.md), [favor](/help/components/calc-metrics/cm-workflow/cm-favorite.md) or [unfavor](/help/components/calc-metrics/cm-workflow/cm-favorite.md), [share](/help/components/calc-metrics/cm-workflow/cm-sharing.md), or [copy](/help/components/calc-metrics/cm-workflow/cm-copy.md) one or more calculated metrics. |
