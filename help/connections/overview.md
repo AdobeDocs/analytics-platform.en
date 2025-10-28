@@ -8,7 +8,7 @@ role: Admin
 ---
 # Connections overview
 
-Connections allow Customer Journey Analytics product administrators to define what [!DNL  Experience Platform] data sources, such as event, lookup, profile, and summary datasets, are ingested. Connections are the foundation of Customer Journey Analytics and determine the availability of fields that you can define in a data view as dimension or metrics. 
+Connections allow Customer Journey Analytics product administrators to define what [!DNL  Experience Platform] data sources, such as event, lookup, profile, and summary datasets, are ingested. Connections are the foundation of Customer Journey Analytics and determine the availability of data (fields) that you can define in a [data view](/help/data-views/data-views.md) as dimension or metrics. 
 
 >[!IMPORTANT]
 >
