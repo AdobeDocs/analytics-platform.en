@@ -37,7 +37,7 @@ Content Analytics uses the following key terms:
 
 ## How it works
 
-Content Analytics uses web image view data collected in event datasets in Experience Platform. This content experience event requires the data to be collected with the Experience Platform Edge Network (Web SDK, Server API).  Behavioral data can be collected with Web SDK or the Analytics Source Connector.
+Content Analytics uses web image view data collected in event datasets in Experience Platform. These content experience events requires the data to be collected with the Experience Platform Edge Network (Web SDK, Server API). Behavioral data can be collected with Web SDK or the Analytics Source Connector.
 
 ![Content Analytics - How it works](assets/aca-overview.gif)
 
