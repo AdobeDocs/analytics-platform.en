@@ -15,8 +15,8 @@ breadcrumb-title: Customer Journey Analytics Guide
 + [Adobe Customer Journey Analytics Guide](../getting-started/cja-landing.md)
 
 + Release Notes {#releases}
-  + [Latest Customer Journey Analytics release](../release-notes/latest.md)
-  + [Customer Journey Analytics Pre-Release Notes](../release-notes/pre-release-notes.md)
+  + [Latest release](../release-notes/latest.md)
+  + [Pre-release notes](../release-notes/pre-release-notes.md)
   + [2025 releases](../release-notes/2025.md)
   + [2024 releases](../release-notes/2024.md)
   + [2023 releases](../release-notes/2023.md)
@@ -48,6 +48,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Send data to Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
     + [Retain historical data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
     + [Recommended upgrade process](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+    + [Prepare your organization](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md)
     + Architect and create a schema {#schema}
       + [Architect your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [Create your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
@@ -104,7 +105,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
 
 + Data ingestion {#cja-data-ingestion}
-  + [Data ingestion overview](../data-ingestion/data-ingestion.md)
+  + [Overview](../data-ingestion/data-ingestion.md)
   + Ingest and use quick start guides{#ingest-use-guides}
     + [Adobe Analytics](../data-ingestion/analytics.md)
     + Experience Platform Edge Network {#edge-network}
@@ -114,6 +115,15 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Batch data](../data-ingestion/batch.md)
     + [Streaming data](../data-ingestion/streaming.md)
     + [Source connectors](../data-ingestion/sources.md)
+    + [Ad hoc data](/help/data-ingestion/adhoc.md)
+
++ Data mirror {#cja-data-mirror}
+  + [Overview](/help/data-mirror/data-mirror.md)
+  + Configure {#configure}
+    + [Data warehouse native solutions](/help/data-mirror/datawarehouse.md)
+    + [Experience Platform](/help/data-mirror/aep.md)
+    + [Customer Journey Analytics](/help/data-mirror/cja.md)
+  + [Data Mirror quick start guide](/help/data-mirror/model-based.md)
 
 + Connections {#cja-connections}
   + [Connections overview](../connections/overview.md)
@@ -187,12 +197,13 @@ breadcrumb-title: Customer Journey Analytics Guide
     + Freeform table {#freeform-table}
       + [Overview](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
       + [Create hyperlinks](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
+      + [View trended data](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md)
+      + [Filter and sort](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
+      + [Totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Column and row settings {#column-row-settings}
         + [Column settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
         + [Row settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
         + [Dynamic and static items](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-      + [Filter and sort](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-      + [Totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
     + Cohort table {#cohort-table}
       + [Overview](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
       + [Configure](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
@@ -243,6 +254,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Share projects](../analysis-workspace/curate-share/share-projects.md)
     + [Create shareable links](../analysis-workspace/curate-share/shareable-links.md)
     + [Read-only projects](../analysis-workspace/curate-share/view-only-projects.md)
+    + [Generate slide presentations](/help/analysis-workspace/curate-share/generate-slides.md)
   + Export {#export}
     + [Overview](../analysis-workspace/export/export-project-overview.md)
     + [Download](../analysis-workspace/export/download-send.md)
@@ -418,9 +430,9 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Stitching {#stitching}
   + [Overview](/help/stitching/overview.md)
-  + [Field based stitching](/help/stitching/fbs.md)
-  + [Graph based stitching](/help/stitching/gbs.md)
-  + [Use stitching](/help/stitching/use-stitching.md)
+  + [Field-based stitching](/help/stitching/fbs.md)
+  + [Graph-based stitching](/help/stitching/gbs.md)
+  + [Request stitching](/help/stitching/use-stitching.md)
   + [Use stitching](/help/stitching/use-stitching-ui.md)
   + [Create and manage stitched datasets](/help/stitching/stitching-ui.md)
   + [Validate stitching](/help/stitching/validate.md)
@@ -466,13 +478,14 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Query Service and Export datasets](../use-cases/data-export/queryservice-export-datasets.md)
   + Data ingestion {#data-ingestion}
     + [Ingest and use Marketo Engage data](../use-cases/data-ingestion/marketo.md)
-    + [Ingest and use Experience Platform audiences ](../use-cases/data-ingestion/ingest-aep-segments.md)
+    + [Ingest and use Experience Platform audiences](../use-cases/data-ingestion/ingest-aep-segments.md)
   + Data views {#data-views}
     + [Data views use cases](/help/use-cases/data-views/data-views-usecases.md)
     + [Use binding dimensions and metrics](/help/use-cases/data-views/binding-dimensions-metrics.md)
     + [Use summary data](/help/use-cases/data-views/summary-data.md)
     + [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md)
   + Derived fields {#derived-fields}
+    + [Report on LLM and AI-generated traffic](/help/use-cases/ai-traffic.md)
     + [Report on goals](../use-cases/goals-using-derived-fields.md)
   + Product analysis {#product-analysis}
     + [Product analysis](/help/use-cases/product-analysis.md)
@@ -496,7 +509,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Labs User Guide](../labs/labs.md)
 
 + Troubleshooting {#troubleshooting}
-  + [Compare data](../troubleshooting/compare.md)
+  + [Compare Source Connector data](../troubleshooting/compare.md)
   + [Consistency of metrics and audiences](../troubleshooting/consistency-rcdp-cja.md)
   + [Lack of permissions](../troubleshooting/lack-of-permissions.md)
 

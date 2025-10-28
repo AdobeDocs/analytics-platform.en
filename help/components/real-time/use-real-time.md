@@ -2,10 +2,7 @@
 description: Understand how to use real-time reporting in Analysis Workspace.
 title: Use Real-Time Reporting
 feature: Real-time Reporting
-hide: yes
-hidefromtoc: yes
 role: User
-badgePremium: label="Beta"
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
 ---
 # Use real-time reporting {#use-real-time-reporting}
@@ -14,8 +11,6 @@ exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
 >id="workspace_panel_realtime_refresh"
 >title="Real-time refresh"
 >abstract="Enable to refresh data and visualizations in this panel in real-time."
-
-{{release-limited-testing}}
 
 To use real-time reporting, enable the **[!UICONTROL Real-time refresh]** toggle on any of the following panels in your Workspace project:
 

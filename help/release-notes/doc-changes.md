@@ -13,7 +13,15 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **October 2025** | |
+| Manage access to the Data Insights Agent | The [permission requirements and process for enabling data views](/help/data-analysis-ai.md#manage-access-to-data-insights-agent) has been updated. |
+| Attribution configuration | Additional updates to reflect the new attribution configuration options for model, container and lookback window. |
+| Ingest and use Experience Platform audiences | Updated use case article on how to [ingest and use Experience Platform audiences](/help/use-cases/data-ingestion/ingest-aep-segments.md). |
+| Prepare your organization to upgrade to Customer Journey Analytics | Added information about how to [prepare an organization to upgrade to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md). |
+| Report on LLM and AI-generated traffic | Added [use case article](/help/use-cases/ai-traffic.md) on how to report on LLM and AI-generated traffic using derived fields as the foundation. The article is based on the blog article [Tracking and Analyzing LLM and AI-Generated Traffic in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967). |
 | **September 2025** | |
+| Dates before 1900 | Added a [note](/help/connections/create-connection.md#datasets) on how dates before 1900 are handled by Customer Journey Analytics. |
+| Real-time reporting | Added documentation about [real-time reporting](/help/components/real-time/real-time.md) in Customer Journey Analytics. |
 | Usage interface | Added documentation for updated [Usage interface](/help/connections/manage-connections.md#usage) in Connections. | 
 | Stitching Journey Optimizer datasets | Documented [list of automatically generated Journey Optimzer datasets](/help/stitching/overview.md#journey-optimizer-datasets) that can be used in stitching. | 
 | Context labels | Added more background information on the use and purpose of [context labels](/help/data-views/component-settings/overview.md#context-labels) in data view components. | 

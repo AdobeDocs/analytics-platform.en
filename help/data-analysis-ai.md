@@ -10,7 +10,7 @@ exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 
 >[!AVAILABILITY]
 >
->Data Insights Agent is available to eligible customers for a limited time. Access to Data Insights Agent will end on November 30, 2025. To continue using Data Insights Agent without interruption, please reach out to your Adobe account representative to learn more about licensing Data Insights Agent.
+>Data Insights Agent is available to eligible customers for a limited time. Access to Data Insights Agent will end on November 30, 2025. To continue using Data Insights Agent without interruption, please contact your Adobe account representative to learn more about licensing Data Insights Agent.
 
 Data Insights Agent, accessible from the [AI Assistant](/help/ai-assistant.md) in Customer Journey Analytics, is a generative AI conversation agent that quickly and efficiently answers questions about your data. It builds relevant visualizations in Analysis Workspace using components from your data view and using your actual data.
 
@@ -29,7 +29,16 @@ Using Data Insights Agent to answer data-centric questions in Analysis Workspace
 | **Feedback mechanisms** | <ul><li>Thumbs up</li><li>Thumbs down</li><li>Flag</li></ul> |  |
  
 
-## Manage access to Data Insights Agent
+## Manage access to Data Insights Agent {#manage-access}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-enable-data-insights-data-view"
+>title="Enable for Data Insights Agent"
+>abstract="This option enables this data view for usage with Data Insights Agent. Data Insights Agent is a generative AI conversation agent that is accessible from the AI Assistant in Customer Journey Analytics. It helps you quickly analyze your data with text prompts. It builds relevant visualizations in Analysis Workspace using components from your data view and using your actual data."
+
+<!-- markdownlint-enable MD034 -->
 
 The following parameters govern access to Data Insights Agent in Customer Journey Analytics:
 
@@ -49,34 +58,39 @@ The following parameters govern access to Data Insights Agent in Customer Journe
 
    1. In the **[!UICONTROL Reporting Tools]** row in the provided table, select the edit icon ![Edit](/help/assets/icons/Edit.svg).
    1. Scroll to or search for **[!UICONTROL AI Assistant: Product Knowledge]**, then select the plus icon ![AddCircle](/help/assets/icons/AddCircle.svg) next to this permission. 
+   1. Scroll to or search for **[!UICONTROL Data Insights Agent]**, then select the plus icon ![AddCircle](/help/assets/icons/AddCircle.svg) next to this permission. 
    
-      The **[!UICONTROL AI Assistant: Product Knowledge]** permission is added to the **[!UICONTROL Included permission items]** column.
+      The **[!UICONTROL AI Assistant: Product Knowledge]** permission and the **[!UICONTROL Data Insights Agent]** permission are added to the **[!UICONTROL Included permission items]** column.
    
       ![Add permission](assets/ai-assistant-permissions.png).
-
-   1. Select the **[!UICONTROL Data View Tools]** tab, then select the plus icon ![AddCircle](/help/assets/icons/AddCircle.svg) next to the **[!UICONTROL Data Insights Agent]** permission.
-
-      The **[!UICONTROL Data Insights Agent]** permission is added to the **[!UICONTROL Included permission items]** column.
-   
-      ![Add permission](assets/ai-assistant-permissions-dataviewtools.png).
-
-   1. Select the **[!UICONTROL Data Views]** tab to choose the data views that you want to enable for Data Insights Agent.
-
-      >[!IMPORTANT]
-      >
-      >Consider the following when enabling data views:
-      >* You can enable a maximum of 50 data views per IMS organization. If you enable more than 50 data views across all product profiles for a given organization, the Data Insights Agent will use the 50 most-used data views. 
-      >* The Data Insights Agent can reference the included data views sometime during the same day that you enable them in the Admin Console. 
-   
-   1. Search for or scroll to the data views that you want to enable, then select the plus icon ![AddCircle](/help/assets/icons/AddCircle.svg) next to the name of each data view.
-
-      Each data view you add is visible in the **[!UICONTROL Included permission items]** column.
-   
-      ![Add permission](assets/ai-assistant-permissions-dataviews.png).  
 
    1. Select **[!UICONTROL Save]** to save the permissions.
 
    For additional information about access control, see [Access control](/help/technotes/access-control.md#access-control).
+
+* **Data view access**: Data views must be enabled for Data Insights Agent.
+
+  >[!IMPORTANT]
+  >
+  >Consider the following when enabling data views:
+  >* You can enable a maximum of 50 data views per IMS organization. If you enable more than 50 data views across all product profiles for a given organization, the Data Insights Agent will use the 50 most-used data views. 
+  >* The Data Insights Agent can reference the included data views sometime during the same day that you enable them. 
+
+  To enable data views for Data Insights Agent:
+   
+   1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Data views]**.
+
+   1. Select one or more data views that you want to enable for Data Insights Agent, then select **[!UICONTROL Enable for Data Insights Agent]**.
+
+      ![Enable data views for Data Insights Agent](assets/data-view-enable-dia.png)   
+
+  To view the number of data views that are enabled for Data Insights Agent in your IMS organization:
+
+   1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Data views]**.
+
+   1. Select the info icon at the top of the **[!UICONTROL Data Insights Agent]** column.
+
+      ![Data Insights Agent info icon](assets/data-insights-agent-tooltip.png)
 
 ## Access Data Insights Agent in the AI Assistant
 
@@ -147,6 +161,14 @@ Finally, let's look at the revenue by product category.
 **Response:** Again, Data Insights Agent picks the most appropriate visualization, in this case the **[!UICONTROL Donut]** visualization, to answer the question.
 
    ![Donut](/help/assets/ai-asst-result3.png)
+
+## Access Data Insights Agent across Experience Cloud applications
+
+Adobe Experience Platform Agent Orchestrator allows you to access the functionality of Data Insights Agent in multiple Adobe Experience Cloud applications, such as Adobe Journey Optimizer and Real-Time CDP. 
+
+Agent Orchestrator interprets your request, determines which specialized agents are needed, and orchestrates them to deliver the right response. It keeps track of context across multi-turn interactions, so you can build on prior queries naturally. 
+
+For more information, see [Adobe Experience Platform Agent Orchestrator](http://www.adobe.com/go/agent-orchestrator-home).
 
 ## Example data visualization prompts
 
