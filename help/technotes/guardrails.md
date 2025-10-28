@@ -252,7 +252,7 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 
 | Name |  Value | Limit Type | Description | 
 |---|--:|---|---|
-| Reportable Businessperson Profiles | 1 million | System-enforced Guardrail | Average reportable rows per 1000 reportable businessperson profiles. |
+| Reportable Businessperson Profile (BPP) Reportable Rows | 1 million | Performance Guardrail | Average reportable rows per 1000 reportable businessperson profiles. |
 
 
 
