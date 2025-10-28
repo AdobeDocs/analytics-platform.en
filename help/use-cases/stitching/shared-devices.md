@@ -43,7 +43,7 @@ Stitching can attribute shared device data using either last-auth attribution or
 
 ### Last-auth attribution
 
-Last-auth attributes all unknown activity from a shared device to the user who last authenticated. The Experience Platform Identity Service builds the graph based on the last-auth attribution and, as such, is used in graph-based stitching. See [Identity graph linking rules](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) for more information.
+Last-auth attributes all unknown activity from a shared device to the user who last authenticated. The Experience Platform Identity Service builds the graph-based on the last-auth attribution and, as such, is used in graph-based stitching. See [Identity graph linking rules](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) for more information.
 
 When last-auth attribution is used in stitching, Stitched IDs resolve as shown in the table below. 
 
