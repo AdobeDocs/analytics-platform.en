@@ -7,13 +7,19 @@ role: User
 ---
 # Date comparison
 
-Date comparison in Analysis Workspace lets you take any column containing a date range and create a common date comparison, such as: year-over-year, quarter-over-quarter, month-over-month, etc.
+Date comparison in Analysis Workspace lets you take any column containing a date range and create a common date comparison, such as: year-over-year, quarter-over-quarter, month-over-month, and so forth.
 
 ## Compare time periods
 
 Analysis requires context, and often that context is provided by a previous time period. For example, the question *How much better or worse are you doing now compared to this time last year?* is fundamental to understanding your business. Date comparison includes a *difference* column automatically, which shows the percentage change compared to a specified time period.
 
 1. Create a [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), with any dimensions and metrics you want to compare over a time period.
+1. Set the time period on the panel or column to determine the comparison time frame, and whether it is a rolling or fixed time comparison. 
+
+   To create a rolling time comparison, set the panel or column date range to a rolling date range (such as **[!UICONTROL Last 7 days]**, **[!UICONTROL Last 30 days]**, and so forth). 
+
+   To create a fixed time comparison, set the panel or column date range to a custom date range. 
+
 1. Open the context menu for a table row and select **[!UICONTROL Compare time periods]**.
 
    ![Table row with Compare Time Periods selected](assets/compare-time.png)
