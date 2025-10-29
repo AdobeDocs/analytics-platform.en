@@ -5,7 +5,7 @@ feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
 ---
-# Filter and sort
+# Filter and sort tables
 
 Freeform tables in Analysis Workspace are the foundation for interactive data analysis. As such, they can contain thousands of rows of information. Filtering and sorting the data can be a critical part of efficiently surfacing the most important information. 
 
@@ -41,7 +41,7 @@ To exclude specific rows from a freeform table:
 
 1. Hover over the row that you want to exclude, then select ![Close](/help/assets/icons/Close.svg). 
 
-   Hold the ***shift*** to select a range of rows, or hold the ***cmd*** key (on Mac) or the ***ctrl*** key (on Windows) to select multiple rows.
+   Hold the ***Shift*** key to select a range of rows, or hold the ***Command*** key (on Mac) or the ***Ctrl*** key (on Windows) to select multiple rows.
 
 <!--### Right-click > Delete selected rows
 
@@ -138,7 +138,7 @@ To sort data in tables by a single column:
 
 1. Mouse over the header of the column you want to sort, then select the **Sort** icon ![Sort](/help/assets/icons/SortOrderDown.svg) when it appears.
 
-   <!-- Add screenshot of sort drop-down -->
+   ![Sort drop-down menu](assets/sort-dropdown-menu.png)
 
 1. Select **[!UICONTROL Ascending]** or **[!UICONTROL Descending]**. 
 
@@ -152,9 +152,11 @@ To sort data in tables by multiple columns:
 
 1. Mouse over the header of any column that you want to sort, then select the **Sort** icon ![Sort](/help/assets/icons/SortOrderDown.svg) when it appears.
 
-   <!-- Add screenshot of sort drop-down -->
+   ![Sort drop-down menu](assets/sort-dropdown-menu.png)
 
 1. Select **[!UICONTROL Advanced sorting]**. 
+
+   ![Advanced sorting dialog](assets/sort-advanced-dialog.png)
 
 1. In the Advanced sorting dialog, do any of the following:
 
@@ -174,6 +176,8 @@ To sort data in tables by multiple columns:
 
 The sort icon remains visible when sorting is applied to a column. An arrow indicates how the data is sorted (![Sort](/help/assets/icons/SortOrderUp.svg) for ascending or ![Sort](/help/assets/icons/SortOrderDown.svg) for descending). 
 
+![multi-sort example](assets/dimensions-multiple-sort.png)
+
 #### Sort priority
 
 When you sort data for multiple columns, data is sorted according to the priority you assign to each column. 
@@ -182,25 +186,20 @@ The column with the primary priority decides the main order, the column with the
 
 For example, consider a table with the following columns:
 
-* Page URL (dimension)
+* Day of Month (dimension)
 
-* Organization name (dimension)
+* Hour of Day (dimension)
 
-* Month (dimension)
-
-* Event (metric)
+* Events (metric)
 
 You can assign a sort priority to each column, as follows:
 
 | Column (component) name | Component type | Sort priority |
 |---------|----------|---------|
-| Page URL | Dimension | 1 |
-| Organization name | Dimension | 2 |
-| Month | Dimension | 3 |
-| Event | Metric | 4 |
+| Day of Month | Dimension | 1 |
+| Hour of Day | Dimension | 2 |
+| Events | Metric | 3 |
 
-By assigning a sort priority to each column, you can control exactly how data is displayed in the table. In this example, information is sorted first by Page URL, then by organization, then my month, and finally by Event. 
+By assigning a sort priority to each column, you can control exactly how data is displayed in the table. In this example, information is sorted first by Day of Month, then by Hour of Day, and finally by Events. 
 
-<!--update screenshot-->
-
-![multi-sort example](assets/freeform-sort-advanced.png)
+![multi-sort example](assets/dimensions-multiple-sort.png)

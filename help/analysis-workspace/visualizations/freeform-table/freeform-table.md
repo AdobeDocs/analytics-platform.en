@@ -91,7 +91,7 @@ The following [context menu](../freeform-analysis-visualizations.md#context-menu
 
 | Option | Description |
 | --- | --- |
-| **[!UICONTROL Insert copied visualization]**n| Paste (insert) a copied visualization to another place within the project, or into a completely different project. |
+| **[!UICONTROL Insert copied visualization]**| Paste (insert) a copied visualization to another place within the project, or into a completely different project. |
 | **[!UICONTROL Copy data to clipboard]** | Copy data from the visualization onto the clipboard. |
 | **[!UICONTROL Copy selection to clipboard]** | Copy the selection from the visualization onto the clipboard. |
 | **[!UICONTROL Download items as CSV (*dimension name*)]** | Immediately download the dimension items (to a maximum of 50,000) of the visualization to your local device. A maximum of 50,000 dimension items for the selected dimension. |
