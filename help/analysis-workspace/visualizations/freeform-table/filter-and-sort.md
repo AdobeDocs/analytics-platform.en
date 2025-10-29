@@ -146,37 +146,6 @@ To sort data in tables by a single column:
 
 ### Sort tables by multiple columns (Advanced sorting)
 
-You can sort data for multiple columns. When you do, data is sorted according to the priority you assign to each column. 
-
-#### Sort priority
-
-When sorting multiple columns, the column with the primary priority decides the main order, the column with the secondary priority decides the order when rows have the same value in the primary column, the column with the tertiary priority decides the order when rows have the same value in the primary and secondary columns, and so forth.  
-
-For example, consider a table with the following columns:
-
-* Page URL (dimension)
-
-* Organization name (dimension)
-
-* Month (dimension)
-
-* Event (metric)
-
-You can assign a sort priority to each column, as follows:
-
-| Column (component) name | Component type | Sort priority |
-|---------|----------|---------|
-| Page URL | Dimension | 1 |
-| Organization name | Dimension | 2 |
-| Month | Dimension | 3 |
-| Event | Metric | 4 |
-
-By assigning a sort priority to each column, you can control exactly how data is displayed in the table. In this example, information is sorted first by Page URL, then by organization, then my month, and finally by Event. 
-
-<!--update screenshot-->
-
-![multi-sort example](assets/freeform-sort-advanced.png)
-
 #### Apply sorting to multiple columns
 
 To sort data in tables by multiple columns:
@@ -205,4 +174,33 @@ To sort data in tables by multiple columns:
 
 The sort icon remains visible when sorting is applied to a column. An arrow indicates how the data is sorted (![Sort](/help/assets/icons/SortOrderUp.svg) for ascending or ![Sort](/help/assets/icons/SortOrderDown.svg) for descending). 
 
+#### Sort priority
 
+When you sort data for multiple columns, data is sorted according to the priority you assign to each column. 
+
+The column with the primary priority decides the main order, the column with the secondary priority decides the order when rows have the same value in the primary column, the column with the tertiary priority decides the order when rows have the same value in the primary and secondary columns, and so forth.  
+
+For example, consider a table with the following columns:
+
+* Page URL (dimension)
+
+* Organization name (dimension)
+
+* Month (dimension)
+
+* Event (metric)
+
+You can assign a sort priority to each column, as follows:
+
+| Column (component) name | Component type | Sort priority |
+|---------|----------|---------|
+| Page URL | Dimension | 1 |
+| Organization name | Dimension | 2 |
+| Month | Dimension | 3 |
+| Event | Metric | 4 |
+
+By assigning a sort priority to each column, you can control exactly how data is displayed in the table. In this example, information is sorted first by Page URL, then by organization, then my month, and finally by Event. 
+
+<!--update screenshot-->
+
+![multi-sort example](assets/freeform-sort-advanced.png)

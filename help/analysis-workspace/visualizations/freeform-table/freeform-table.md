@@ -50,7 +50,7 @@ You can interact with and customize a freeform table in a variety of ways:
 
 ### Filter and sort
 
-* You can [segment and sort](filter-and-sort.md) the data in a table.
+* You can [filter and sort](filter-and-sort.md) the data in a table.
 
 ### Rows
 
