@@ -48,6 +48,7 @@ Some of the features and their associated value for the limit depend on the Cust
 | Visualizations per Panel | 25 | System-enforced Guardrail  |  Maximum number of [visualizations](../analysis-workspace/home.md#visualizations) per panel. |
 | Derived Fields per Freeform Table | 5 | System-enforced Guardrail | Maximum number of different derived fields in a single freeform table. |
 | Comments per project | 1,000 | System-enforced Guardrail | Maximum number of comments per project. |
+| Dimension columns per freeform table | 5 | System-enforced Guardrail | Maximum number of dimensions per freeform table. |
 
 {style="table-layout:auto"}
 

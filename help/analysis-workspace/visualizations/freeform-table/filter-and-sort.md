@@ -53,7 +53,7 @@ Note: this option does not seem to work. AN-338422
    This action will remove the rows from the table and apply a table filter.-->
 
 
-### Apply a simple or advanced filter to a table
+### Apply simple or advanced filtering to a table
  
  To filter data in freeform tables:
  
@@ -69,7 +69,7 @@ Note: this option does not seem to work. AN-338422
 
     |Option | Function | 
     |---------|----------|
-    | [!UICONTROL **Include "No value"**] | Select this option to show a **[!UICONTROL No value]** row in the table for data that has no value for the selected dimension. Unselect this option to hide the **[!UICONTROL No value]** row. |
+    | [!UICONTROL **Include "No value"**] | Select this option to show a **[!UICONTROL No value]** row in the table for data that has no value for the selected dimension. Deselect this option to hide the **[!UICONTROL No value]** rows.<p>When tables include multiple dimension columns, you can deselect this option to show data only when it applies to each dimension column in the table.</p> |
     | [!UICONTROL **Search word or phrase**] | Specify a word or phrase that you want to filter by. Only rows that contain the word or exact phrase specified are shown. |
     
 
@@ -146,6 +146,8 @@ To sort data in tables by a single column:
 
 ### Sort tables by multiple columns (Advanced sorting)
 
+{{release-limited-testing-section}}
+
 #### Apply sorting to multiple columns
 
 To sort data in tables by multiple columns:
@@ -180,7 +182,7 @@ The sort icon remains visible when sorting is applied to a column. An arrow indi
 
 #### Sort priority
 
-When you sort data for multiple columns, data is sorted according to the priority you assign to each column. 
+When you sort data for multiple columns, data is sorted according to the priority you assign to each column. Priority numbering is displayed next to the sort icon ![sort priority icon](assets/sort-priority-icon.png).
 
 The column with the primary priority decides the main order, the column with the secondary priority decides the order when rows have the same value in the primary column, the column with the tertiary priority decides the order when rows have the same value in the primary and secondary columns, and so forth.  
 
