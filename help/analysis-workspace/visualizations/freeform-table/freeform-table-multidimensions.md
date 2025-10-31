@@ -50,17 +50,17 @@ You can add dimension columns one at a time or in bulk.
 
    For more information, see [Add visualizations to a panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel) in [Visualizations overview](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 
-1. Add dimensions to the freeform table. You can add multiple dimensions at once or you can add dimensions one at a time. 
+1. Add dimensions to the freeform table. You can add dimensions one at a time or you can add multiple dimensions at once. 
+
+   * Drag dimensions one at a time into the freeform table. Place additional dimension columns to the left or right of existing dimension columns in the table. A blue vertical **[!UICONTROL Add]** line displays where the new column will be created. 
+
+     ![Drag individual dimensions](assets/dimensions-add-individually.png)
 
    * Select up to 5 dimensions in the component menu and drag them into the freeform table. Dimensions are added to the table from left to right in the order you select them.
 
      To select multiple dimensions, hold the ***Command*** key (on Mac) or the ***Ctrl*** key (on Windows).
 
      ![Drag multiple dimensions](assets/dimensions-add-multiple.png)
-
-   * Drag dimensions one at a time into the freeform table. Place additional dimension columns to the left or right of existing dimension columns in the table. A blue vertical **[!UICONTROL Add]** line displays where the new column will be created. 
-
-     ![Drag individual dimensions](assets/dimensions-add-individually.png)
 
 ## Filter tables
 
