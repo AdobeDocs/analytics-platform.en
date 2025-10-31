@@ -58,34 +58,39 @@ The following parameters govern access to Data Insights Agent in Customer Journe
 
    1. In the **[!UICONTROL Reporting Tools]** row in the provided table, select the edit icon ![Edit](/help/assets/icons/Edit.svg).
    1. Scroll to or search for **[!UICONTROL AI Assistant: Product Knowledge]**, then select the plus icon ![AddCircle](/help/assets/icons/AddCircle.svg) next to this permission. 
+   1. Scroll to or search for **[!UICONTROL Data Insights Agent]**, then select the plus icon ![AddCircle](/help/assets/icons/AddCircle.svg) next to this permission. 
    
-      The **[!UICONTROL AI Assistant: Product Knowledge]** permission is added to the **[!UICONTROL Included permission items]** column.
+      The **[!UICONTROL AI Assistant: Product Knowledge]** permission and the **[!UICONTROL Data Insights Agent]** permission are added to the **[!UICONTROL Included permission items]** column.
    
       ![Add permission](assets/ai-assistant-permissions.png).
-
-   1. Select the **[!UICONTROL Data View Tools]** tab, then select the plus icon ![AddCircle](/help/assets/icons/AddCircle.svg) next to the **[!UICONTROL Data Insights Agent]** permission.
-
-      The **[!UICONTROL Data Insights Agent]** permission is added to the **[!UICONTROL Included permission items]** column.
-   
-      ![Add permission](assets/ai-assistant-permissions-dataviewtools.png).
-
-   1. Select the **[!UICONTROL Data Views]** tab to choose the data views that you want to enable for Data Insights Agent.
-
-      >[!IMPORTANT]
-      >
-      >Consider the following when enabling data views:
-      >* You can enable a maximum of 50 data views per IMS organization. If you enable more than 50 data views across all product profiles for a given organization, the Data Insights Agent will use the 50 most-used data views. 
-      >* The Data Insights Agent can reference the included data views sometime during the same day that you enable them in the Admin Console. 
-   
-   1. Search for or scroll to the data views that you want to enable, then select the plus icon ![AddCircle](/help/assets/icons/AddCircle.svg) next to the name of each data view.
-
-      Each data view you add is visible in the **[!UICONTROL Included permission items]** column.
-   
-      ![Add permission](assets/ai-assistant-permissions-dataviews.png).  
 
    1. Select **[!UICONTROL Save]** to save the permissions.
 
    For additional information about access control, see [Access control](/help/technotes/access-control.md#access-control).
+
+* **Data view access**: Data views must be enabled for Data Insights Agent.
+
+  >[!IMPORTANT]
+  >
+  >Consider the following when enabling data views:
+  >* You can enable a maximum of 50 data views per IMS organization. If you enable more than 50 data views across all product profiles for a given organization, the Data Insights Agent will use the 50 most-used data views. 
+  >* The Data Insights Agent can reference the included data views sometime during the same day that you enable them. 
+
+  To enable data views for Data Insights Agent:
+   
+   1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Data views]**.
+
+   1. Select one or more data views that you want to enable for Data Insights Agent, then select **[!UICONTROL Enable for Data Insights Agent]**.
+
+      ![Enable data views for Data Insights Agent](assets/data-view-enable-dia.png)   
+
+  To view the number of data views that are enabled for Data Insights Agent in your IMS organization:
+
+   1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Data views]**.
+
+   1. Select the info icon at the top of the **[!UICONTROL Data Insights Agent]** column.
+
+      ![Data Insights Agent info icon](assets/data-insights-agent-tooltip.png)
 
 ## Access Data Insights Agent in the AI Assistant
 

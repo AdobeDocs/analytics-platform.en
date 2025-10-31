@@ -121,7 +121,7 @@ An attribution model determines which dimension items get credit for a metric wh
 
 An attribution container defines the desired scope for the attribution. Possible options are: 
 
-* **Session**: Looks back up to the beginning of the session where a conversion happened. Session lookback windows respect the modified [Session timeout](/help/data-views/create-dataview.md#session-settings) in a data view.
+* **Session**: Looks back up to the beginning of the session where a conversion happened. Session lookback windows respect the modified [Session timeout](/help/data-views/create-dataview.md#session-settings) in a data view. When **[!UICONTROL Session]** is selected, the [Attribution lookback window](#atribution-lookback-window) is automatically set to **[!UICONTROL Reporting window]** and cannot be changed.
 * **Person**: Looks at conversions from the scope of the person container.
 * **Global Account** [!BADGE B2B Edition]{type=Informative}: Looks at conversions from the scope of the global accounts container.
 * **Accounts** [!BADGE B2B Edition]{type=Informative}: Looks at conversions from the scope of the person container .
@@ -132,6 +132,7 @@ An attribution container defines the desired scope for the attribution. Possible
 
 A attribution lookback window is the amount of time a conversion should look back to include touch points. If a dimension item is set outside of the lookback window, the value is not included in any attribution calculations.
 
+* **[!UICONTROL Reporting window]**: Looks back up to the start of the reporting window from when the conversion happened.
 * **14 Days**: Looks back up to 14 days from when the conversion happened.
 * **30 Days**: Looks back up to 30 days from when the conversion happened.
 * **60 Days**: Looks back up to 60 days from when the conversion happened.
@@ -147,13 +148,13 @@ Consider the following example:
 1. On September 18, the person arrives to your site again through a social media link they got from a friend. They add several items to their cart, but do not purchase anything.
 1. On September 24, your marketing team sends them an email with a coupon for some of the items in their cart. They apply the coupon, but visit several other sites to see if any other coupons are available. They find another through a display ad, then ultimately make a purchase for $50.
 
-Depending on your attribution model, container and channels receive different credit. See table below for examples:
+Depending on your reporting window (for example September 10 - September 24), attribution model, container and channels receive different credit. See table below for examples:
 
 | Model | Container | Lookback window | Explanation |
 |---|---|---|---|
-| First touch | Session | 30 Days | Attribution looks at only the third visit. Between email and display, email was first, so email gets 100% credit for the $50 purchase. | 
+| First touch | Session | Reporting window | Attribution looks at only the third visit. Between email and display, email was first, so email gets 100% credit for the $50 purchase. | 
 | First touch | Person | 30 Days | Attribution looks at all three visits. Paid search was first, so it gets 100% credit for the $50 purchase. |
-| Linear | Session | 30 Days | Credit is divided between email and display. Both of these channels each get $25 credit. |
+| Linear | Session | Reporting window | Credit is divided between email and display. Both of these channels each get $25 credit. |
 | Linear | Person | 30 Days | Credit is divided between paid search, social, email, and display. Each channel gets $12.50 credit for this purchase. |
 | J-shaped | Person | 30 Days | Credit is divided between paid search, social, email, and display.<ul><li>60% credit is given to display, for $30.</li><li>20% credit is given to paid search, for $10.</li><li>The remaining 20% is divided between social and email, giving $5 to each.</li></ul> |
 | Time Decay | Person | 30 Days | <ul><li>Gap of zero days between display touch point and conversion. `2^(-0/7) = 1`</li><li>Gap of zero days between email touch point and conversion. `2^(-0/7) = 1`</li><li>Gap of six days between social touch point and conversion. `2^(-6/7) = 0.552`</li><li>Gap of nine days between paid search touch point and conversion. `2^(-9/7) = 0.41`</li>Normalizing these values results in the following:<ul><li>Display: 33.8%, getting $16.88</li><li>Email: 33.8% getting $16.88</li><li>Social: 18.6%, getting $9.32</li><li>Paid Search: 13.8%, getting $6.92</li></ul></li></ul> |

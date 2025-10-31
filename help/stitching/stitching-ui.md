@@ -14,7 +14,7 @@ role: Admin
 
 Stitching allows administrators to stitch identities on datasets available in Customer Journey Analytics. Stitching datasets increases the accuracy of a profile's representation resulting ultimately in better analysis and reporting.
 
-The stitching process allows you to define an existing **persistent ID** in a dataset. Then stitch that persistent identifier for a specified replay window (daily, weekly) with the most accurate **transient ID** (person or authenticated identifier) available for that dataset. Examples of transient identifiers are email, phone number, CRM id, or other identities stored in the graph. See [Overview](overview.md) for more information on stitching.
+The stitching process allows you to define an existing **persistent ID** in a dataset. Then stitch that persistent identifier for a specified replay window (daily, weekly) with the most accurate **person ID** (person or authenticated identifier) available for that dataset. Examples of person identifiers are email, phone number, CRM id, or other identities stored in the graph. See [Overview](overview.md) for more information on stitching.
 
 ## Create
 
@@ -50,7 +50,7 @@ To initiate stitching, you create one or more stitched datasets. To create a sti
 
    4. Select a persistent identifier from the **[!UICONTROL **Persistent ID**]** list.
 
-   5. Select a transient identifier from the **[!UICONTROL **Transient ID**]** list.
+   5. Select a person identifier from the **[!UICONTROL **Transient ID**]** list.
 
       You notice that a preview panel appears to calculate the saturation rates (number of times there is a value for each of the specified identifiers over the number of events) for the last seven days. When finished calculating, the panel visualizes with colors whether the minimal conditions for stitching are met (green) or not met (red).
 
@@ -60,7 +60,7 @@ To initiate stitching, you create one or more stitched datasets. To create a sti
 
       - persistent identifier saturation: rate >= 95%
         
-      - transient identifier saturation: rate >= 5%
+      - person identifier saturation: rate >= 5%
 
         If the minimal conditions are met, you can experiment with sample values.
 

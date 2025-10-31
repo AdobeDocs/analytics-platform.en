@@ -458,7 +458,7 @@ For each supported function, find details below on:
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_casewhen"
 >title="Case When"
->abstract="This function provides the ability to apply conditionals based on defined criteria from one or more fields. Those criteria are then used to define the values in the new derived field based on the sequence of the conditions."
+>abstract="This function provides the ability to apply conditionals based on defined criteria from one or more fields. Those criteria are then used to define the values in the new derived field, based on the sequence of the conditions."
 
 
 Applies conditionals, based on defined criteria from one or more fields. These criteria are then used to define the values in a new derived field, based on the sequence of the conditions.

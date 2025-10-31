@@ -20,8 +20,6 @@ role: Admin
 
 Attribution lets you customize how dimension items get credit for success events. 
 
-![Data views window highlighting the Set attribution option](../assets/attribution-settings.png)
-
 For example:
 
 1. A person on your site clicks a paid search link to one of your product pages. They add the product to their cart, but do not purchase it.
