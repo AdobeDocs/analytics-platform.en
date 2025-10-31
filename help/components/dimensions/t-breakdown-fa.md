@@ -29,8 +29,6 @@ By default, breakdowns are fixed to static row items. For example, imagine you b
 
 In contrast, **Breakdown by position**,  always breaks down the top 3 items, regardless of what thse items are. Referring back to the example, when you re-open your project, the Marketing Channel breakdowns are tied to the top 3 pages in the table. And not to Homepage, Search Results and Checkout, which are now in rows 4-6. See [Row settings](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md) how to configure this setting.
 
-
-
 ## Apply attribution models to breakdowns
 
 Any breakdown within a table can also have any attribution model applied to it. This attribution model can be the same or different from the parent column. For example, you can analyze linear Orders on your Marketing Channels dimension but apply U-Shaped Orders to the specific tracking codes within a Channel. To edit the attribution model applied to a breakdown, hover over the breakdown model and select **[!UICONTROL Edit]**.

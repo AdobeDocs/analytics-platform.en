@@ -48,20 +48,16 @@ Some of the features and their associated value for the limit depend on the Cust
 | Visualizations per Panel | 25 | System-enforced Guardrail  |  Maximum number of [visualizations](../analysis-workspace/home.md#visualizations) per panel. |
 | Derived Fields per Freeform Table | 5 | System-enforced Guardrail | Maximum number of different derived fields in a single freeform table. |
 | Comments per project | 1,000 | System-enforced Guardrail | Maximum number of comments per project. |
+| Replies per comment | 100 | System-enforced Guardrail | Maximum number of replies per comment. | 
+| Images per comment | 5 | System-enforced Guardrail | Maximum number of images per comment. |
+| Image size | 2 | System-enforced Guardrail | Maximim upload size per image in MB |
 
 {style="table-layout:auto"}
 
 
-<!--
+<!-- at flatview GA, add: - Dimension columns per freeform table - 5 - System-enforced Guardrail - Maximum number of dimensions per freeform table. -->
 
-Add this to the table above, change - for pipe : (End of April, 2025 when project commenting is GA)
 
-Comments per project - 1,000 - System-enforced Guardrail - Maximum number of comments per project. 
-Replies per comment - 100 - System-enforced Guardrail - Maximum number of replies per comment. 
-Images per comment - 5 - System-enforced Guardrail - Maximum number of images per comment. 
-Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB 
-
--->
 
 <!--
 
