@@ -68,7 +68,7 @@ For information about filtering tables, see [Filter tables](/help/analysis-works
 
 ## Sort tables {#sort-tables}
 
-<!--At GA, move this section into the "Filter and sort tables" article and replace the current "Sort tables" section. Change the "Filter tables" section above to "Filter and sort tables" and link to the other article -->
+<!--At GA, move this section into the "Filter and sort tables" article and replace the current "Sort tables" section. Change the "Filter tables" section above to "Filter and sort tables" and link to the other article. Also add row to Guardrails article. -->
 
 You can sort the data of a freeform table by any columns in Analysis Workspace that are either a dimension or a metric. 
 
