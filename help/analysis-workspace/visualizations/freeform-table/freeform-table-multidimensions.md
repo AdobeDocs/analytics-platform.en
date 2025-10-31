@@ -6,45 +6,17 @@ role: User
 hide: yes
 hidefromtoc: yes
 ---
-# Include multiple dimensions in a freeform table
+# Include multiple dimension columns in a freeform table
 
 {{release-limited-testing}}
 
-You can include up to 5 dimension columns in a freeform table, allowing you to view multiple dimension items side by side. Each row of dimension items act as a single concatenated item. 
+You can include up to 5 dimension columns in a freeform table, allowing you to view multiple dimension items side by side. Each row of dimension items acts as a single concatenated item. 
 
-You can sort dimension columns (together with metric columns) for a more complete and custom analysis. 
+You can apply filters, sorting, breakdowns, and more to freeform tables with multiple dimension columns to create a more complete and custom analysis.
 
-## Multiple dimension columns and breakdowns
+## Add multiple dimension columns
 
-Analysis Workspace provides the following ways to add multiple dimensions within a freeform table: 
-
-* Include multiple dimension columns (as described in this article)
-
-* [Add breakdowns](/help/components/dimensions/t-breakdown-fa.md)
-
-Both of these methods allow you to analyze dimensions against other dimensions. However, there are important differences, and both methods can be used in the same table for an even deeper analysis.
-
-Multiple dimension columns allow you to:
-
-* Correlate rows of data across multiple dimensions and metrics.
-
-* Show data only when it applies to each dimension column in the table. To accomplish this, use the column filter to deselect the **[!UICONTROL Include "No value"]** setting on each dimension column. 
-
-  For more information, see [Filter and sort tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). 
-
-* Sort data by multiple dimension and metric columns.
-
-  For more information, see [Filter and sort tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). 
-
-Breakdowns allow you to:
-
-* Show dimension items for only one 
-
-* Show the top dimension items for a single
-
-## Add dimension columns
-
-You can add dimension columns one at a time or in bulk.
+You can add multiple dimension columns one at a time or in bulk.
 
 1. In Analysis Workspace, create a freeform table. 
 
@@ -56,7 +28,7 @@ You can add dimension columns one at a time or in bulk.
 
      ![Drag individual dimensions](assets/dimensions-add-individually.png)
 
-   * Select up to 5 dimensions in the component menu and drag them into the freeform table. Dimensions are added to the table from left to right in the order you select them.
+   * Select up to 5 dimensions in the component menu and drag them into the freeform table. Dimensions are added to the table from left to right in the order that you select them.
 
      To select multiple dimensions, hold the ***Command*** key (on Mac) or the ***Ctrl*** key (on Windows).
 
@@ -64,13 +36,15 @@ You can add dimension columns one at a time or in bulk.
 
 ## Filter tables
 
+You can apply filters to one or more dimension columns in a freeform table. 
+
 For information about filtering tables, see [Filter tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables) in [Filter and sort tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 ## Sort tables {#sort-tables}
 
-<!--At GA, move this section into the "Filter and sort tables" article and replace the current "Sort tables" section. Change the "Filter tables" section above to "Filter and sort tables" and link to the other article. Also add row to Guardrails article. -->
+<!--At GA, move this section into the "Filter and sort tables" article and replace the current "Sort tables" section. Change the "Filter tables" section above to "Filter and sort tables" and link to the other article. Also add row to Guardrails -->
 
-You can sort the data of a freeform table by any columns in Analysis Workspace that are either a dimension or a metric. 
+You can sort the data of a freeform table by any columns in Analysis Workspace, whether they are dimensions or metrics. 
 
 By default, dimensions are sorted in ascending order and metrics are sorted in descending order.
 
@@ -128,7 +102,7 @@ The sort icon remains visible when sorting is applied to a column. An arrow indi
 
 When you sort data for multiple columns, data is sorted according to the priority you assign to each column. Priority numbering is displayed next to the sort icon ![sort priority icon](assets/sort-priority-icon.png).
 
-The column with the primary priority decides the main order, the column with the secondary priority decides the order when rows have the same value in the primary column, the column with the tertiary priority decides the order when rows have the same value in the primary and secondary columns, and so forth.  
+The column with the primary priority decides the main order; the column with the secondary priority decides the order when rows have the same value in the primary column; the column with the tertiary priority decides the order when rows have the same value in the primary and secondary columns; and so forth.  
 
 For example, consider a table with the following columns:
 
@@ -150,9 +124,37 @@ By assigning a sort priority to each column, you can control exactly how data is
 
 ![multi-sort example](assets/dimensions-multiple-sort.png)
 
-## Add breakdowns to a table with multiple dimension columns
+## Multiple dimension columns and breakdowns
 
-When you add a breakdown to a table that has multiple dimension columns, the breakdown spans all dimension items on the row where it's added. 
+Analysis Workspace provides the following ways to add multiple dimensions within a freeform table: 
+
+* Include multiple dimension columns (as described in this article)
+
+* [Add breakdowns](/help/components/dimensions/t-breakdown-fa.md)
+
+Both of these methods allow you to analyze dimensions against other dimensions. However, there are important differences, and both methods can be used in the same table for an even deeper analysis.
+
+### Differences between dimension columns and breakdowns
+
+Multiple dimension columns allow you to:
+
+* Concatenate dimension items into distinct rows of data across multiple dimensions.
+
+* Include dimension items in concatenated rows only when dimension items apply to each dimension column in the table. To accomplish this, use the column filter to deselect the **[!UICONTROL Include "No value"]** setting on each dimension column. 
+
+  For more information, see [Sort tables by multiple columns (Advanced sorting)](#sort-tables-by-multiple-columns-advanced-sorting). 
+
+* Sort data by multiple dimension and metric columns to see more customized data.
+
+  For more information, see [Sort tables by multiple columns (Advanced sorting)](#sort-tables-by-multiple-columns-advanced-sorting)
+
+Breakdowns allow you to:
+
+* Break down a dimension item in the freeform table by a secondary dimension. You can show up to 200 dimension items for the secondary dimension.
+
+### Add breakdowns to a table with multiple dimension columns
+
+When you add a breakdown to a table that has multiple dimension columns, the breakdown spans all dimension items on the row where you add it. 
 
 You can add a breakdown as described in [Break down dimensions](/help/components/dimensions/t-breakdown-fa.md).
 
