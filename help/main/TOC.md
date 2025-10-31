@@ -198,6 +198,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Overview](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
       + [Create hyperlinks](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
       + [View trended data](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md)
+      + [Include multiple dimensions](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)
       + [Filter and sort](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
       + [Totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Column and row settings {#column-row-settings}
