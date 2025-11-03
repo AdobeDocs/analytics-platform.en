@@ -52,8 +52,14 @@ Some of the features and their associated value for the limit depend on the Cust
 | Replies per comment | 100 | System-enforced Guardrail | Maximum number of replies per comment. |
 | Images per comment | 5 | System-enforced Guardrail | Maximum number of images per comment. |
 | Image size | 2 | System-enforced Guardrail | Maximim upload size per image in MB. |
+| Replies per comment | 100 | System-enforced Guardrail | Maximum number of replies per comment. | 
+| Images per comment | 5 | System-enforced Guardrail | Maximum number of images per comment. |
+| Image size | 2 | System-enforced Guardrail | Maximim upload size per image in MB |
 
 {style="table-layout:auto"}
+
+
+<!-- at flatview GA, add: - Dimension columns per freeform table - 5 - System-enforced Guardrail - Maximum number of dimensions per freeform table. -->
 
 <!--
 

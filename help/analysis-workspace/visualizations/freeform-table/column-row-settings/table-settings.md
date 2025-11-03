@@ -53,7 +53,7 @@ The following context menu options are available when selecting the dimension he
 | **[!UICONTROL Create annotation from selection]** | Open up the **[!UICONTROL Annotation details]** to add an annotation. | 
 
 
-The following additional context menu options are available when selecting one or more dimension items (first column) or one or more individual cells in the freeform table..
+The following additional context menu options are available when selecting one or more dimension items (first column) or one or more individual cells in the freeform table.
 
 | Option | Description |
 | --- | --- |
@@ -84,4 +84,4 @@ The following additional context menu options are available when selecting a met
 
 ## Change row height
 
-You can set the [view density](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) of a project to **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]**, and **[!UICONTROL Expanded]**. .
+You can set the [view density](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) of a project to **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]**, and **[!UICONTROL Expanded]**.
