@@ -48,6 +48,10 @@ Some of the features and their associated value for the limit depend on the Cust
 | Visualizations per Panel | 25 | System-enforced Guardrail  |  Maximum number of [visualizations](../analysis-workspace/home.md#visualizations) per panel. |
 | Derived Fields per Freeform Table | 5 | System-enforced Guardrail | Maximum number of different derived fields in a single freeform table. |
 | Comments per project | 1,000 | System-enforced Guardrail | Maximum number of comments per project. |
+| Comments per project | 1,000 | System-enforced Guardrail | Maximum number of comments per project. |
+| Replies per comment | 100 | System-enforced Guardrail | Maximum number of replies per comment. |
+| Images per comment | 5 | System-enforced Guardrail | Maximum number of images per comment. |
+| Image size | 2 | System-enforced Guardrail | Maximim upload size per image in MB. |
 | Replies per comment | 100 | System-enforced Guardrail | Maximum number of replies per comment. | 
 | Images per comment | 5 | System-enforced Guardrail | Maximum number of images per comment. |
 | Image size | 2 | System-enforced Guardrail | Maximim upload size per image in MB |
@@ -56,8 +60,6 @@ Some of the features and their associated value for the limit depend on the Cust
 
 
 <!-- at flatview GA, add: - Dimension columns per freeform table - 5 - System-enforced Guardrail - Maximum number of dimensions per freeform table. -->
-
-
 
 <!--
 
@@ -242,6 +244,15 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 | Name |  Value | Limit Type | Description | 
 |---|--:|---|---|
 | Data views | 50 | System-enforced Guardrail | Maximum number of data views that can be enabled for the Data Insights Agent. When more data views are enabled, only the most-used data views are available to the Data Insights Agent. This guardrail does not impact the [guardrails defining the maximum number of data views you can define for a connection or within your organization](#connections-data-views-projects). | 
+
+
+## Customer Journey Analytics B2B Edition
+
+| Name |  Value | Limit Type | Description | 
+|---|--:|---|---|
+| Reportable Businessperson Profile (BPP) Reportable Rows | 1 million | Performance Guardrail | Average reportable rows per 1000 reportable businessperson profiles. |
+
+
 
 
 ## Latencies
