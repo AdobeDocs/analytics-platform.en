@@ -12,13 +12,13 @@ hidefromtoc: yes
 
 You can include up to 5 dimension columns in a freeform table, allowing you to view multiple dimension items side by side. Each row of dimension items behaves like a single concatenated dimension item. 
 
-You can apply filters, sorting, breakdowns, and more to freeform tables with multiple dimension columns to create a deeper and custom analysis.
+You can apply filters, sorting, breakdowns, and more to freeform tables with multiple dimension columns to create a deeper and more custom analysis.
 
 ## Concatenated dimension items
 
-When you add multiple dimension columns to a freeform table, each row of dimension items behaves like a single concatenated dimension item. This functionality allows you to see metric data for specific combinations of dimensions. 
+When you [add multiple dimension columns to a freeform table](#add-multiple-dimension-columns), each row of dimension items behaves like a single concatenated dimension item. This functionality allows you to see metric data for specific combinations of dimensions. 
 
-For example, consider a freeform table where the dimensions are _City_, _Device Type_, and _Day of Month_ and the metric is _Events_. The 3 dimension items in the first row of this table become a single concatenated dimension item showing that there were 2,056 events that took place in Mumbai from mobile phones on the 30th day of the month. 
+For example, consider a freeform table where the dimension columns are _City_, _Device Type_, and _Day of Month_ and the metric is _Events_. The 3 dimension items in the first row of this table become a single concatenated dimension item showing that there were 2,056 events that took place in Mumbai from mobile phones on the 30th day of the month. 
 
 | Dimension: City | Dimension: Device Type | Dimension: Day of Month | Metric: Events |
 |---------|----------|---------|---------|
@@ -51,13 +51,13 @@ You can add multiple dimension columns one at a time or in bulk.
 
      ![Drag multiple dimensions](assets/dimensions-add-multiple.png)
 
-1. View each row of the table as a single dimension item. For more information, see [View concatenated dimension items](#view-concatenated-dimension-items).
+1. View each row of the table as a single dimension item. For more information, see [Concatenated dimension items](#view-concatenated-dimension-items).
 
 ## Filter tables
 
 You can apply filters to one or more dimension columns in a freeform table. 
 
-For information about filtering tables, see [Filter tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables) in [Filter and sort tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
+For information about filtering tables, see [Filter tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables) in [Filter and sort freeform tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 ## Sort tables {#sort-tables}
 
