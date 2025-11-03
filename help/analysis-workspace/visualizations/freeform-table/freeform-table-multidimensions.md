@@ -10,9 +10,26 @@ hidefromtoc: yes
 
 {{release-limited-testing}}
 
-You can include up to 5 dimension columns in a freeform table, allowing you to view multiple dimension items side by side. Each row of dimension items acts as a single concatenated item. 
+You can include up to 5 dimension columns in a freeform table, allowing you to view multiple dimension items side by side. Each row of dimension items behaves like a single concatenated dimension item. 
 
-You can apply filters, sorting, breakdowns, and more to freeform tables with multiple dimension columns to create a more complete and custom analysis.
+You can apply filters, sorting, breakdowns, and more to freeform tables with multiple dimension columns to create a deeper and custom analysis.
+
+## Concatenated dimension items
+
+When you add multiple dimension columns to a freeform table, each row of dimension items behaves like a single concatenated dimension item. This functionality allows you to see metric data for specific combinations of dimensions. 
+
+For example, consider a freeform table where the dimensions are _City_, _Device Type_, and _Day of Month_ and the metric is _Events_. The 3 dimension items in the first row of this table become a single concatenated dimension item showing that there were 2,056 events that took place in Mumbai from mobile phones on the 30th day of the month. 
+
+| Dimension: City | Dimension: Device Type | Dimension: Day of Month | Metric: Events |
+|---------|----------|---------|---------|
+| Mumbai | Mobile Phone | 30 | 2,056 |
+| New York | Tablet | 31 | 1,761 |
+| Bangalore | Desktop | 1 | 1,666 |
+| Delhi | Mobile Phone | 14 | 1,396 |
+
+Following is how this table appears in Analysis Workspace:
+
+![Multi dimension example](assets/multi-dim-example.png)
 
 ## Add multiple dimension columns
 
@@ -33,6 +50,8 @@ You can add multiple dimension columns one at a time or in bulk.
      To select multiple dimensions, hold the ***Command*** key (on Mac) or the ***Ctrl*** key (on Windows).
 
      ![Drag multiple dimensions](assets/dimensions-add-multiple.png)
+
+1. View each row of the table as a single dimension item. For more information, see [View concatenated dimension items](#view-concatenated-dimension-items).
 
 ## Filter tables
 
@@ -154,9 +173,21 @@ Breakdowns allow you to:
 
 ### Add breakdowns to a table with multiple dimension columns
 
-When you add a breakdown to a table that has multiple dimension columns, the breakdown spans all dimension items on the row where you add it. 
+When you add a breakdown to a table that has multiple dimension columns, the breakdown applies to the concatenated dimension item (across all dimension columns) on the row where you add it.
 
-You can add a breakdown as described in [Break down dimensions](/help/components/dimensions/t-breakdown-fa.md).
+Furthermore, you can add multiple dimension columns within a breakdown. Each row of dimension items within the breakdown also behaves like a single concatenated dimension item.
+
+<!-- update screenshot to show the breakdown, and include this introductory sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows... " -->
+
+![multi-sort example](assets/dimensions-multiple-sort.png)
+
+For more information about how to add a breakdown, see [Break down dimensions](/help/components/dimensions/t-breakdown-fa.md).
+
+## Create a segment based on a dimension item that spans multiple dimension columns
+
+When you create a segment based on a dimension item that spans multiple dimension columns, each dimension item is included in the segment definition, with And operators joining them. 
+
+For information about creating a segment, see [Create segments](/help/components/segments/seg-create.md).
 
 ## Unsupported dimensions {#unsupported}
 
