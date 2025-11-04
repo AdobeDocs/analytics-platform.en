@@ -83,7 +83,7 @@ To sort data in tables by a single column:
 
 ### Sort tables by multiple columns (Advanced sorting)
 
-{{release-limited-testing-section}}
+<!-- add this back in when move this section back to the filter and sort article: {{release-limited-testing-section}} -->
 
 #### Apply sorting to multiple columns
 
@@ -169,7 +169,7 @@ Multiple dimension columns allow you to:
 
 Breakdowns allow you to:
 
-* Break down a dimension item in the freeform table by a secondary dimension. You can show up to 200 dimension items for the secondary dimension.
+* Break down a dimension item in the freeform table by a secondary dimension. You can show up to 400 dimension items for the secondary dimension.
 
 ### Add breakdowns to a table with multiple dimension columns
 

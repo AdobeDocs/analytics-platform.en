@@ -21,7 +21,7 @@ You can break down metrics by dimension items or audience segments across select
 
    >[!NOTE]
    >
-   >The number of breakdowns to show in the table is limited to 200. This limit increases for exporting breakdowns.
+   >The number of breakdowns to show in the table is limited to 400. This limit increases for exporting breakdowns.
 
 ## Breakdown by position
 
