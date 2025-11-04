@@ -230,4 +230,8 @@ The following Analysis Workspace elements and features used in a project aren't 
 
 * Guided analyses
 
+* Components that are restricted from being exported by a data governance policy
+ 
+  For more information, see [Troubleshoot failed exports](/help/components/exports/troubleshoot-exports.md).
+
 
