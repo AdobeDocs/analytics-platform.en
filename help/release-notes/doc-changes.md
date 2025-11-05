@@ -13,6 +13,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **November 2025** | |
+| Guardrail for rows per day in a connection | Added [guardrail information for data transfer limits](/help/technotes/guardrails.md) about the maximum average number of rows per day in a connection. |
 | **October 2025** | |
 | Manage access to the Data Insights Agent | The [permission requirements and process for enabling data views](/help/data-analysis-ai.md#manage-access-to-data-insights-agent) has been updated. |
 | Attribution configuration | Additional updates to reflect the new attribution configuration options for model, container and lookback window. |
