@@ -13,7 +13,11 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **November 2025** | |
+| Guardrail for rows per day in a connection | Added [guardrail information for data transfer limits](/help/technotes/guardrails.md) about the maximum average number of rows per day in a connection. |
 | **October 2025** | |
+| Manage access to the Data Insights Agent | The [permission requirements and process for enabling data views](/help/data-analysis-ai.md#manage-access-to-data-insights-agent) has been updated. |
+| Attribution configuration | Additional updates to reflect the new attribution configuration options for model, container and lookback window. |
 | Ingest and use Experience Platform audiences | Updated use case article on how to [ingest and use Experience Platform audiences](/help/use-cases/data-ingestion/ingest-aep-segments.md). |
 | Prepare your organization to upgrade to Customer Journey Analytics | Added information about how to [prepare an organization to upgrade to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md). |
 | Report on LLM and AI-generated traffic | Added [use case article](/help/use-cases/ai-traffic.md) on how to report on LLM and AI-generated traffic using derived fields as the foundation. The article is based on the blog article [Tracking and Analyzing LLM and AI-Generated Traffic in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967). |

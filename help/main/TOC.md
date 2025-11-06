@@ -201,6 +201,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Overview](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
       + [Create hyperlinks](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
       + [View trended data](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md)
+      + [Include multiple dimensions](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)
       + [Filter and sort](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
       + [Totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Column and row settings {#column-row-settings}
@@ -433,9 +434,9 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Stitching {#stitching}
   + [Overview](/help/stitching/overview.md)
-  + [Field based stitching](/help/stitching/fbs.md)
-  + [Graph based stitching](/help/stitching/gbs.md)
-  + [Use stitching](/help/stitching/use-stitching.md)
+  + [Field-based stitching](/help/stitching/fbs.md)
+  + [Graph-based stitching](/help/stitching/gbs.md)
+  + [Request stitching](/help/stitching/use-stitching.md)
   + [Use stitching](/help/stitching/use-stitching-ui.md)
   + [Create and manage stitched datasets](/help/stitching/stitching-ui.md)
   + [Validate stitching](/help/stitching/validate.md)
