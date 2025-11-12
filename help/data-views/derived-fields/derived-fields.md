@@ -458,7 +458,7 @@ For each supported function, find details below on:
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_casewhen"
 >title="Case When"
->abstract="This function provides the ability to apply conditionals based on defined criteria from one or more fields. Those criteria are then used to define the values in the new derived field based on the sequence of the conditions."
+>abstract="This function provides the ability to apply conditionals based on defined criteria from one or more fields. Those criteria are then used to define the values in the new derived field, based on the sequence of the conditions."
 
 
 Applies conditionals, based on defined criteria from one or more fields. These criteria are then used to define the values in a new derived field, based on the sequence of the conditions.
@@ -913,6 +913,7 @@ You define an `Origin - Destination` derived field. You use the [!UICONTROL CONC
 | SLC-MCO |
 
 {style="table-layout:auto"}
+
 
 +++
 
@@ -2091,7 +2092,7 @@ The following limitations apply to the Derived field functionality in general:
 |---|---|
 | <p>Case When</p> | <ul><li>5 Case When functions per derived field</li><li>200 [operators](#operators) per derived field</li></ul> |
 | <p>Classify</p> | <ul><li>5 Classify functions per derived field</li><li>200 [operators](#operators) per derived field</li></ul> |
-| <p>Concatenate</p> | <ul><li>2 Concatenate functions per derived field</li></ul> |
+| <p>Concatenate</p> | <ul><li>2 Concatenate functions per derived field</li><li>3 values per Concatenate function</ul> |
 | <p>Date Math</p> | <ul><li>2 Date Math functions per derived field</li></ul> |
 | <p>Deduplicate</p> | <ul><li>5 Deduplicate functions per derived field</li></ul> |
 | <p>Depth</p> | <ul><li>3 Depth functiond per derived field</li></ul> |

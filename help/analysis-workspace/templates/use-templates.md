@@ -398,7 +398,7 @@ The following templates are available:
 | **Entry pages** | View the top pages that people access upon first visiting your site. <p>**This can help you** better understand which pages are driving the most traffic to your site or understand more about the first impressions visitors have on your site.</p><p>**Based on what you learn, you might** do any number of things, like optimize the initial experience people get on the site, or ensure that the pages people first see upon entering your site are welcoming and provide the necessary links to other areas of your site.</p><p>This template uses the Sessions metric. It also uses the Bar visualization and the Freeform table visualization.</p> | 
 | **Exit pages** | View the top pages that people access immediately before leaving your site.<p>**This can help you** better understand which pages are leading people away from the site. </p><p>**Based on what you learn, you might** do any number of things, like update common exit pages to optimize the experience people get before they leave, or include content or links to encourage people to stay on your site.</p><p>This template uses the Sessions metric. It also uses the Bar visualization and the Freeform table visualization.</p> | 
 | **Product usage overview** | View how the Customer Journey Analytics product is used within your organization. <p>**This can help you** better understand how many people use Customer Journey Analytics, how often they use it, and usage trends over time. You can also see the number of projects being created and details about those projects (such as which components, visualizations, and panels are most commonly used), and many other usage statistics.</p><p>**Based on what you learn, you might** do any number of things, like delete unused projects or components, or provide user training for popular features.</p> |
-| **Content analytics** | Learn what content and content attributes are performing best.<p>**This can help you** learn how your content is performing at a granular level. You can look at the performance of individual assets, or specific attributes. Content Analytics uses AI to automatically generate attributes and tag your content with them. See [Content Analytics](/help/content-analytics/content-analytics.md){target="_blank"} for more information.</p><p>**Based on what you learn, you might** do any number of things, like promote high performing assets on your home page, personalize content for specific segments to include high performing attributes, or rotate out content that has started to get stale.</p> |
+| **Content Analytics** | Learn what content and content attributes are performing best.<p>**This can help you** learn how your content is performing at a granular level. You can look at the performance of individual assets, or specific attributes. Content Analytics uses AI to automatically generate attributes and tag your content with them. See [Content Analytics](/help/content-analytics/content-analytics.md){target="_blank"} for more information.</p><p>**Based on what you learn, you might** do any number of things, like promote high performing assets on your home page, personalize content for specific segments to include high performing attributes, or rotate out content that has started to get stale.</p> |
 
 ### Web: Conversion {#web-conversion}
 
@@ -585,6 +585,16 @@ The following templates are available:
 
 
 <!--Both AA and CJA-->
+
+>[!CONTEXTUALHELP]
+>id="template--audienceOverview"
+>title="View the country from which people visiting the site originated."
+>abstract="**This can help you** better understand what the most popular countries visitors originate from who visit your site.<br/>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these countries, or make sure that your site experience is optimal in countries that have different primary languages.<br/>This template uses the Countries dimension."
+
+>[!CONTEXTUALHELP]
+>id="template--consentPolicyOverview"
+>title="View the country from which people visiting the site originated."
+>abstract="**This can help you** better understand what the most popular countries visitors originate from who visit your site.<br/>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these countries, or make sure that your site experience is optimal in countries that have different primary languages.<br/>This template uses the Countries dimension."
 
 >[!CONTEXTUALHELP]
 >id="template--countryGeoReport"

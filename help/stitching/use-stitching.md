@@ -1,14 +1,14 @@
 ---
-title: Use stitching
-description: How to use stitching
+title: Request stitching
+description: How to request stitching
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
 ---
-# Use stitching
+# Request stitching
 
-Once your organization meets all [prerequisites](overview.md#prerequisites) and understands common [limitations](overview.md#limitations) and stitching method specific ([field-based](fbs.md#limitations) and [graph-based](gbs.md#limitations)) limitations, you can follow these steps to start using stitching in Customer Journey Analytics.
+Once your organization meets all [prerequisites](overview.md#prerequisites) and understands common [limitations](overview.md#limitations) and stitching method specific ([field-based](fbs.md#limitations) and [graph-based](gbs.md#limitations)) limitations, you can follow these steps to request and start using stitching in Customer Journey Analytics.
 
 ## Select options
 
@@ -29,20 +29,19 @@ The Customer Journey Analytics package you are entitled to determines the availa
    - The dataset ID for the dataset that you want to rekey.
    - The column name (identity path and namespace) of the persistent ID for the desired dataset (the identifier that appears on every row).
    - If the dataset supports `identityMap`:
-     - For field-based stitching, specify the namespace for both the persistent and transient IDs.
+     - For field-based stitching, specify the namespace for both the persistent and person IDs.
      - For graph-based stitching, specify the namespace for the persistent ID and the identity namespace to use for querying the identity graph.
    - If the dataset does not support `identityMap`:
-     - For field-based stitching, the column name of the transient ID for the desired dataset (the person identifier, which also acts as a link between datasets in the context of a connection). 
+     - For field-based stitching, the column name of the person ID for the desired dataset (the person identifier, which also acts as a link between datasets in the context of a connection). 
      - For graph-based stitching, the identity namespace to use for querying the identity graph.
    - Your preference of lookback window and replay frequency. See your Customer Journey Analytics package for the [options](#options) available.
    - Sandbox name.
 
 
-2. The Adobe Customer Support works with Adobe engineering to enable stitching upon receiving your request. Once enabled, a new rekeyed dataset that contains a new stitched ID column appears in Adobe Experience Platform. Adobe Customer Support can provide the new dataset's ID.
-   
+2. The Adobe Customer Support works with Adobe engineering to enable stitching upon receiving your request. Once enabled, a rekeyed dataset that contains a stitched ID column appears in Adobe Experience Platform. Adobe Customer Support can provide the new dataset's ID.   
 3. When first turned on, Adobe provides a backfill of stitched data. See your Customer Journey Analytics package for the [option](#options) available.
    
-4. If you want to use the new stitched dataset in a cross-channel analysis, you need to add the new stitched dataset to a [connection](../connections/overview.md) in Customer Journey Analytics. Then add any other datasets required for cross-channel analysis, and select the correct person ID for each dataset.
+4. If you want to use the stitched dataset in a cross-channel analysis, you need to add the stitched dataset to a [connection](../connections/overview.md) in Customer Journey Analytics. Then add any other datasets required for cross-channel analysis, and select the correct person ID for each dataset.
    
 5. [Create a data view](/help/data-views/create-dataview.md) based on the connection.
 

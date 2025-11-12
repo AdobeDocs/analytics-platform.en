@@ -48,20 +48,18 @@ Some of the features and their associated value for the limit depend on the Cust
 | Visualizations per Panel | 25 | System-enforced Guardrail  |  Maximum number of [visualizations](../analysis-workspace/home.md#visualizations) per panel. |
 | Derived Fields per Freeform Table | 5 | System-enforced Guardrail | Maximum number of different derived fields in a single freeform table. |
 | Comments per project | 1,000 | System-enforced Guardrail | Maximum number of comments per project. |
+| Comments per project | 1,000 | System-enforced Guardrail | Maximum number of comments per project. |
+| Replies per comment | 100 | System-enforced Guardrail | Maximum number of replies per comment. |
+| Images per comment | 5 | System-enforced Guardrail | Maximum number of images per comment. |
+| Image size | 2 | System-enforced Guardrail | Maximim upload size per image in MB. |
+| Replies per comment | 100 | System-enforced Guardrail | Maximum number of replies per comment. | 
+| Images per comment | 5 | System-enforced Guardrail | Maximum number of images per comment. |
+| Image size | 2 | System-enforced Guardrail | Maximim upload size per image in MB |
 
 {style="table-layout:auto"}
 
 
-<!--
-
-Add this to the table above, change - for pipe : (End of April, 2025 when project commenting is GA)
-
-Comments per project - 1,000 - System-enforced Guardrail - Maximum number of comments per project. 
-Replies per comment - 100 - System-enforced Guardrail - Maximum number of replies per comment. 
-Images per comment - 5 - System-enforced Guardrail - Maximum number of images per comment. 
-Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB 
-
--->
+<!-- at flatview GA, add: - Dimension columns per freeform table - 5 - System-enforced Guardrail - Maximum number of dimensions per freeform table. -->
 
 <!--
 
@@ -127,8 +125,9 @@ See also Experience Platform [Real-time Customer Data Platform Guardrails](https
 | Name |  Value | Limit Type | Description | 
 |---|--:|---|---|
 | Fields | 10,000 | System-enforced Guardrail  | Maximum number of properties or fields per row in a dataset. | 
-| Unique Strings | 10 million | System-enforced Guardrail  | Maximum number of unique keys per lookup dataset. | 
-| Rows | 1 million | System-enforced Guardrail  | Maximum number of rows per unique person ID in a given month within a connection. | 
+| Unique Strings | 10 million - 1 billion | System-enforced Guardrail  | Maximum number of unique keys per lookup dataset. Depends on Customer Journey Analytics package (see Product Description).<ul><li>Foundation: 10 million.</li><li>Select: 100 million.</li><li>Prime: 500 million.</li><li>Ultimate: 1 billion</li><ul> | 
+| Rows per person | 1 million | System-enforced Guardrail  | Maximum number of rows per unique person ID in a given month within a connection. | 
+| Rows per day | 2.5 billion | Performance Guardrail  | Maximum average number of rows per day in a connection. | 
 | Row Size | 2 | Performance Guardrail / System-enforced Guardrail | Average size in kilobytes per row of data ingested into Customer Journey Analytics (soft limit). A static limit for row size is determined by Guardrails for data ingestion in Experience Platform. | 
 
 {style="table-layout:auto"}
@@ -248,6 +247,15 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 | Data views | 50 | System-enforced Guardrail | Maximum number of data views that can be enabled for the Data Insights Agent. When more data views are enabled, only the most-used data views are available to the Data Insights Agent. This guardrail does not impact the [guardrails defining the maximum number of data views you can define for a connection or within your organization](#connections-data-views-projects). | 
 
 
+## Customer Journey Analytics B2B Edition
+
+| Name |  Value | Limit Type | Description | 
+|---|--:|---|---|
+| Reportable Businessperson Profile (BPP) Reportable Rows | 1 million | Performance Guardrail | Average reportable rows per 1000 reportable businessperson profiles. |
+
+
+
+
 ## Latencies
 
 >[!NOTE]
@@ -266,5 +274,12 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 | Adobe Analytics Source Connector Backfill of less than 10 billion events (maximum of 13 months of historical data) | < 4 weeks |
 | Audience Publishing to Real-time Customer Profile, including automatic creation of the streaming segment, and allowing the segment to be ready to receive the data. | ≈ 60 minutes |
 | Refresh Frequency for Audiences | One-time refresh: latency of less than 5 minutes.<br/>Refresh every 4 hours, daily, weekly, monthly (latency goes hand in hand with the refresh rate). |
+
+| Real-time reporting latencies | Expected latency |
+|---|---|
+| Edge Network SDK / API's into the Edge Network | &lt; 7 minutes |
+| Streaming connectors | &lt; 17 minutes |
+| Adobe Analytics source connector | &lt; 17 minutes |
+| Other source connectors (including batch data) | &lt; 25 hours |
 
 {style="table-layout:auto"}
