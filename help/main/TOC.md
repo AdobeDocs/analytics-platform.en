@@ -133,9 +133,8 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Standard lookups](../connections/standard-lookups.md)
   + [B2B lookups](../connections/transform-datasets-b2b-lookups.md)
   + Audience analysis {#audience-analysis}
-    + [Overview]()
-    + [Analyze audiences from RTCDP]()
-
+    + [Overview](/help/connections/audience-analysis/audience-analysis-overview.md)
+    + [Analyze audiences from RTCDP](/help/connections/audience-analysis/analyze-audiences.md)
 + Data Views {#cja-dataviews}
   + [Data views overview](../data-views/data-views.md)
   + [Create or edit a data view](../data-views/create-dataview.md)
