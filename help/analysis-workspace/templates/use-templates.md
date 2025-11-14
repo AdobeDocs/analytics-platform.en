@@ -1057,7 +1057,22 @@ The following templates are available:
 | **Journey Optimizer overview report** | View a thorough summary of traffic and engagement metrics for all campaigns and journeys within your environment.<p>**This can help you** better understand the high-level effectiveness of your campaigns and journeys. </p><p>**Based on what you learn, you might** do any number of things, like adjust your campaigns and journeys based on the engagement levels of your target audience.</p>  |
 | **Journey Optimizer subscriptions** | View profiles' subscriptions and unsubscriptions associated with particular lists.<p>**This can help you** better understand the effectiveness of different subscription campaigns and initiatives in driving engagement and conversions.</p><p>**Based on what you learn, you might** do any number of things, like adjust your subscription campaigns based on the engagement levels of your target audience.</p> |
 
+### Brand Concierge {#brand-concierge-templates}
 
+>[!CONTEXTUALHELP]
+>id="template--brand-concierge-b2c"
+>title="Analyze user engagement through conversation patterns, user feedback, and the effectiveness of your recommendations."
+>abstract="**This can help you** identify engagement patterns, evaluate conversation quality, track customer satisfaction trends, and measure the effectiveness of link recommendations.<br/>**Based on what you learn, you might** do any number of things, like refine your AI agent's responses, develop targeted content for frequent issues, improve recommendation algorithms, or create specialized pathways for different user segments."
+
+>[!CONTEXTUALHELP]
+>id="template--brand-concierge--concierge"
+>title="Track the full lifecycle of B2B meeting requests. Monitor conversion rates, consultant performance, and identify your most effective lead generation channels."
+>abstract="**This can help you** track meeting conversion rates, identify high-performing team members, understand seasonal trends in booking behavior, and pinpoint which pages generate the most valuable meeting requests.<br/>**Based on what you learn, you might** do any number of things, like optimize your meeting request process, redistribute resources to high-converting pages, develop targeted training for consultants with lower booking rates, or implement new strategies to reduce missed meetings."
+
+| Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- | 
+| [!UICONTROL **Brand Concierge overview**] | Analyze user engagement through conversation patterns, user feedback, and the effectiveness of your recommendations. <p>**This can help you** identify engagement patterns, evaluate conversation quality, track customer satisfaction trends, and measure the effectiveness of link recommendations.</p><p>**Based on what you learn, you might** do any number of things, like refine your AI agent's responses, develop targeted content for frequent issues, improve recommendation algorithms, or create specialized pathways for different user segments.</p>   | 
+| **Brand Concierge B2B Meetings** | Track the complete lifecycle of B2B meeting requests. Monitor conversion rates, evaluate consultant booking performance, and identify your most effective lead generation channels. <p>**This can help you** track meeting conversion rates, identify high-performing team members, understand seasonal trends in booking behavior, and pinpoint which pages URLs generate the most valuable meeting requests. </p><p>**Based on what you learn, you might** do any number of things, like optimize your meeting request process, redistribute resources to high-converting page URLs, develop targeted training for consultants with lower booking rates, or implement new strategies to reduce missed meetings.</p>  |
 
 
 ### B2B templates {#b2b-templates} 
