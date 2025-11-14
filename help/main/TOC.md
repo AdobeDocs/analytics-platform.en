@@ -132,7 +132,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Combined event datasets](../connections/combined-dataset.md)
   + [Standard lookups](../connections/standard-lookups.md)
   + [B2B lookups](../connections/transform-datasets-b2b-lookups.md)
-
 + Data Views {#cja-dataviews}
   + [Data views overview](../data-views/data-views.md)
   + [Create or edit a data view](../data-views/create-dataview.md)
@@ -157,7 +156,9 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Shared metrics & dimensions{#shared-metrics-dimensions}
     + [Overview](/help/data-views/shared-metrics-dimensions/smd-overview.md)
     + [Editor](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
-
+  + Audience Analysis {#audience-analysis}
+    + [Overview](/help/connections/audience-analysis/audience-analysis-overview.md)
+    + [Analyze audiences from RTCDP](/help/connections/audience-analysis/analyze-audiences.md)
 + Tools {#tools}
   + Asset Transfer {#asset-transfer}
     + [Transfer assets](../tools/asset-transfer/transfer-assets.md) 
@@ -329,10 +330,10 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Manage annotations](../components/annotations/manage-annotations.md)
     + [View annotations](../components/annotations/view-annotations.md)
     + [Mobile scorecard annotations](../components/annotations/mobile-annotations.md)
-  + Audiences {#audiences}
-    + [Audiences overview](../components/audiences/audiences-overview.md)
+  + Audience publishing {#audiences}
+    + [Audience publishing overview](../components/audiences/audiences-overview.md)
     + [Create and publish audiences](../components/audiences/publish.md)
-    + [Manage audiences](../components/audiences/manage.md)
+    + [Manage published audiences](../components/audiences/manage.md)
   + Dimensions {#dimensions}
     + [Overview](../components/dimensions/overview.md)
     + [Preview dimensions](../components/dimensions/view-dimensions.md)

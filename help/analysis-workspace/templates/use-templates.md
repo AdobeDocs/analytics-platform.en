@@ -587,6 +587,11 @@ The following templates are available:
 <!--Both AA and CJA-->
 
 >[!CONTEXTUALHELP]
+>id="template--audienceOverview"
+>title="View which audiences are represented among the people visiting your site."
+>abstract="**This can help you** better understand general information about the audiences, where the audiences originated (RTCDP, Customer Journey Analytics, and so forth), audience overlap, and more.<br/>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts for these specific audiences, or create tailored experiences for customers who span multiple audiences.<br/>This template uses the Audience Name, Audience Origin, Exited Audience Name, and Exited Audience Origin dimensions."
+
+>[!CONTEXTUALHELP]
 >id="template--consentPolicyOverview"
 >title="View the country from which people visiting the site originated."
 >abstract="**This can help you** better understand what the most popular countries visitors originate from who visit your site.<br/>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these countries, or make sure that your site experience is optimal in countries that have different primary languages.<br/>This template uses the Countries dimension."
