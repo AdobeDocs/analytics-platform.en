@@ -4,9 +4,12 @@ description: Learn about analyzing audiences from RTCDP in Customer Journey Anal
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
+hide: yes
+hidefromtoc: yes
 ---
-
 # Audience analysis overview
+
+<!-- add hidden text in this article when this feature releases: /help/components/audiences/audiences-overview.md -->
 
 You can ingest audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection. (For information about creating and publishing audiences discovered in Customer Journey Analytics to Adobe Experience Platform for customer targeting and personalization, see [Audience publishing overview](/help/components/audiences/audiences-overview.md))
 

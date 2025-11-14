@@ -4,8 +4,9 @@ description: Learn how to analyze audiences from RTCDP in Customer Journey Analy
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
+hide: yes
+hidefromtoc: yes
 ---
-
 # Analyze audiences from RTCDP
 
 
