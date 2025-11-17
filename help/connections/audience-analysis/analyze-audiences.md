@@ -27,3 +27,28 @@ hidefromtoc: yes
 >abstract="Merge policies are Experience Platform rules that determines which data is prioritized and what data is combined to create a unified view of a person. You should enable this option if you have a merge policy defined on a dataset in your sandbox."
 
 <!-- markdownlint-enable MD034 -->
+
+To create an audience analysis configuration:
+
+1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Audience analysis configuration]**.
+
+   ![Audience analysis main page](assets/audience-analysis-empty.png)
+
+1. Select **[!UICONTROL Create configuration]**.
+
+   ![Create audience analysis configuration](assets/audience-analysis-create.png)
+
+1. In the **[!UICONTROL Details]** section, in the **[!UICONTROL Name]** field, specify a name for the configuration.
+
+1. In the **[!UICONTROL Sandbox]** dropdown menu, select the sandbox
+   
+   | Option | Description | 
+   |---------|----------|
+   | **[!UICONTROL Name]** | B1 | 
+   | **[!UICONTROL Sandbox]** | B2 | 
+
+
+   
+
+ 
+
