@@ -23,7 +23,7 @@ hidefromtoc: yes
 >[!CONTEXTUALHELP]
 >id="cja-audience-analysis-merge-policy"
 >title="Merge policy"
->abstract="Merge policies are Experience Platform rules that determines which data is prioritized and what data is combined to create a unified view of a person. You should enable this option if you have a merge policy defined on a dataset in your sandbox."
+>abstract="Merge policies are Experience Platform rules that determine which data is prioritized and which data is combined to create a unified view of a person. You should enable this option if you have a merge policy defined on a dataset in your sandbox."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -68,6 +68,24 @@ To create an audience analysis configuration:
 1. In the **[!UICONTROL Sandbox]** dropdown menu, select the sandbox that contains the profile dataset that you want to add to your connection. 
 
    Adobe Experience Platform provides [sandboxes](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain datasets. Sandboxes are used to control access to datasets.
+
+1. In the **[!UICONTROL Profile dataset]** section, in the **[!UICONTROL Merge policy]** field, select the merge policy that corresponds to the profile dataset that you want to use for audience analysis. 
+
+   Merge Policies determine how Adobe Experience Platform combines profile data from multiple datasets into unified customer profiles used for audience creation. The merge policy you select affects which profile's attributes are included in your audiences. Each day, a snapshot of this data is generated in Experience Platform. This snapshot provides a static view of the data at a specific point in time and does not include any event data.
+   
+   Select the **[!UICONTROL Default Timebased]** merge policy if you see multiple merge policies and you are unsure which one to choose. You can also consult your data team to better understand which audiences are associated with each merge policy. 
+
+   After you choose a merge policy, the profile snapshot export is shown. For example: `Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`.   
+
+   For more inofrmation, see [Profile attribute datasets](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/query#profile-attribute-datasets) in the Experience Platform Dashboards Guide.
+
+1. In the Connection section, select Choose a connection (or something similar?)
+
+1. After you choose a connection, in the **[!UICONTROL Person ID]** field, choose which Person ID you want to use. Each dataset in the connection has its own set of one or more Person IDs defined. Choose the Person ID that is common among the datasets that contain the audience data that you want to report on. 
+
+1. Choose whether to enable the option, **[!UICONTROL Use Primary Identity Namespace]**. This option instructs Customer Journey Analytics to find the identity in the Identity Map that is marked with a primary=true attribute and use that identity as the Person ID for that row. This identity is the primary key that is used in Experience Platform for partitioning. And this identity is also the prime candidate for usage as Customer Journey Analytics Person ID (depending on how the dataset is configured in a Customer Journey Analytics connection).
+
+1. **[!UICONTROL Identity Namespace]**: (This option is disabled if you use the Primary ID Namespace.) Identity namespaces are a component of the [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces). Namespaces serve as indicators of the context to which an identity relates. If you specify a namespace, Customer Journey Analytics searches each row's Identity Map for this namespace key and use the identity under that namespace as the Person ID for that row. Since Customer Journey Analytics cannot do a full dataset scan of all rows to determine which namespaces are present, all possible namespaces are displayed in the drop-down menu. Know which namespaces are specified in the data; these namespaces are not auto-detected.
 
 
    
