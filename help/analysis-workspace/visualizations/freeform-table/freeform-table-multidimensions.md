@@ -51,7 +51,7 @@ You can add multiple dimension columns one at a time or in bulk.
 
      ![Drag multiple dimensions](assets/dimensions-add-multiple.png)
 
-1. View each row of the table as a single dimension item. For more information, see [Concatenated dimension items](#view-concatenated-dimension-items).
+1. View each row of the table as a single dimension item. For more information, see [Concatenated dimension items](#concatenated-dimension-items).
 
 ## Filter tables
 
@@ -175,11 +175,11 @@ Breakdowns allow you to:
 
 When you add a breakdown to a table that has multiple dimension columns, the breakdown applies to the concatenated dimension item (across all dimension columns) on the row where you add it.
 
+![multi-sort breakdown example](assets/dimensions-multiple-sort-breakdown.png)
+
 Furthermore, you can add multiple dimension columns within a breakdown. Each row of dimension items within the breakdown also behaves like a single concatenated dimension item.
 
-<!-- update screenshot to show the breakdown, and include this introductory sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows... " -->
-
-![multi-sort example](assets/dimensions-multiple-sort.png)
+<!-- Add a screenshot of a breakdown with multiple cllumns, then add this sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows..." -->
 
 For more information about how to add a breakdown, see [Break down dimensions](/help/components/dimensions/t-breakdown-fa.md).
 
