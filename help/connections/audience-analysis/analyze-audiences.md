@@ -12,18 +12,9 @@ hidefromtoc: yes
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-audience-analysis-consent"
->title="Import profile consent policy data from Experience Platform"
->abstract="Consent policies are Experience Platform rules that define which marketing actions you can perform on data. You should enable this option if you have a consent policy defined on a dataset in your sandbox."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
 >id="cja-audience-analysis-merge-policy"
 >title="Merge policy"
->abstract="Merge policies are Experience Platform rules that determine which data is prioritized and which data is combined to create a unified view of a person. You should enable this option if you have a merge policy defined on a dataset in your sandbox."
+>abstract="Merge policies combine profile data from multiple datasets into unified customer profiles used for audience creation. Select the Default Timebased merge policy if you see multiple merge policies and you are unsure which to choose. You can also consult your data team to better understand which audiences are associated with each merge policy."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -81,7 +72,15 @@ To create an audience analysis configuration:
 
 1. In the Connection section, select Choose a connection (or something similar?)
 
-1. After you choose a connection, in the **[!UICONTROL Person ID]** field, choose which Person ID you want to use. Each dataset in the connection has its own set of one or more Person IDs defined. Choose the Person ID that is common among the datasets that contain the audience data that you want to report on. 
+1. After you choose a connection, in the **[!UICONTROL Person ID]** field, select a field from the model-based schema that represents the Person ID. The selection is limited to the list of fields in the model-based schema that are marked as Identity and do have an identity namespace. 
+
+   If you select Identity Map for the person ID, you have to select a namespace. You have two options:
+
+   * Enable **[!UICONTROL Use primary identity namespace]** to use the primary identity namespace.
+
+   * Select a namespace from the **[!UICONTROL Identity namespace]** drop-down menu.
+
+   If there are no Person IDs to choose from, that means one or more Person IDs have not been defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information.
 
 1. Choose whether to enable the option, **[!UICONTROL Use Primary Identity Namespace]**. This option instructs Customer Journey Analytics to find the identity in the Identity Map that is marked with a primary=true attribute and use that identity as the Person ID for that row. This identity is the primary key that is used in Experience Platform for partitioning. And this identity is also the prime candidate for usage as Customer Journey Analytics Person ID (depending on how the dataset is configured in a Customer Journey Analytics connection).
 
