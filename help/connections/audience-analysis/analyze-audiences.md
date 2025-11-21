@@ -9,73 +9,45 @@ hidefromtoc: yes
 ---
 # Analyze Experience Platform audiences in Customer Journey Analytics {#analyze-audiences-RTCDP}
 
-Audience analysis allows you to ingest audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection. Audiences become available as new dimensions for use in Analysis Workspace.
+You can begin analyzing Experience Platform audiences in Customer Journey Analytics after you [create an audience analysis configuration](/help/connections/audience-analysis/audience-analysis-configure.md), when audience data is available as new dimensions in Analysis Workspace.
 
-You make the following selections when creating an audience analysis configuration:
+An Audience overview template is available in Customer Journey Analytics. 
 
-* **The sandbox** that contains the profile dataset that you want to add to your connection
+For information about how to access the Audience overview template, see [Access and run a template](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) in [Use templates](/help/analysis-workspace/templates/use-templates.md).
 
-* **The profile dataset** that includes the Experience Platform audience data that you want to analyze
+The Audience overview template contains the following panels:
 
-* **The connection** where you want to add the profile dataset that you select
+## Usage overview panel
 
-* **Any data views** associated with your connection that you want to use when analyzing Experience Platform audience data within Analysis Workspace
+Shows data for all audiences with usage events that are associated with the selected data view. Audience membership data is updated daily from Experience Platform. Data is always shown for yesterday, so changing the panel date range results in inaccurate data. 
 
-  These data views are automatically configured with Experience Platform audience data for reporting. 
+Use the table in ths panel to better understand audience behavior. Drag the Audience Description dimension from the selected data view and add it as a breakdown. Or use any other interaction dimension (such as Page, Action, and so forth) as the breakdown.
 
-The following are automatically created:
+## Top audience origins panel
 
-* **New audience dimensions**<!--and metrics?--> that represent the Experience Platform audiences that are included in the profile dataset you selected, and are available for reporting in Analysis Workspace.
+Shows where the audience was created, whether in RTCDP, Customer Journey Analytics, and so forth.
 
-* **New lookup dataset** that provides friendly names for the new audience dimensions. The lookup dataset is also added to the connection, along with the profile dataset you select.
+Use the table in this panel to better understand how the audience origin might affect other factors. Drag the Audience Name dimension from the selected data view and add it as a breakdown. Or use any other interaction dimension (such as Page, Action, and so forth) as the breakdown.
 
- 
+## Audience overlap panel
 
-Select the sandbox and merge policy associated with the Experience Platform audiences that you want to analyze. Customer Journey Analytics creates a new lookup dataset, then automatically adds the lookup dataset and the profile dataset to the connection you choose. 
+Shows data for all audiences with usage events that are associated with the selected data view. Data is always shown for yesterday, so changing the panel date range results in inaccurate data. 
 
-To create an audience analysis configuration:
+Select up to three audiences in the table in this panel to see how they overlap in the corresponding Venn diagram.
 
-1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Audience analysis configuration]**.
+## Exited audience usage
 
-   ![Audience analysis main page](assets/audience-analysis-empty.png)
+Shows data for all exited audiences with usage events that are associated with the selected data view. Data is always shown for yesterday, so changing the panel date range results in inaccurate data. "Exited audiences" are audiences in which people with usage events left or exited yesterday. 
 
-1. Select **[!UICONTROL Create configuration]**.
+Use the table in this panel to better understand audience behavior. Drag the Existed Audience Description dimension from the selected data view and add it as a breakdown. Or use any other interaction dimension or metric (such as Page, Action, and so forth) as the breakdown.
 
-   ![Create audience analysis configuration](assets/audience-analysis-create.png)
+## Top exited audience origins panel
 
-1. In the **[!UICONTROL Details]** section, in the **[!UICONTROL Name]** field, specify a name for the configuration.
+Shows where each audience that exited was originally created, whether in RTCDP, Customer Journey Analytics, and so forth. 
 
-1. In the **[!UICONTROL Sandbox]** dropdown menu, select the sandbox that contains the profile dataset that you want to add to your connection. 
+Use the table in this panel to better understand how the audience origin might affect other factors. Drag the Exited Audience Name dimension from the selected data view and add it as a breakdown. Or use any other interaction dimension or metric (such as Page, Action, and so forth) as the breakdown.
 
-   Adobe Experience Platform provides [sandboxes](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain datasets. Sandboxes are used to control access to datasets.
 
-1. In the **[!UICONTROL Profile dataset]** section, in the **[!UICONTROL Merge policy]** field, select the merge policy that corresponds to the profile dataset that you want to use for audience analysis. 
-
-   Merge Policies determine how Adobe Experience Platform combines profile data from multiple datasets into unified customer profiles used for audience creation. The merge policy you select affects which profile's attributes are included in your audiences. Each day, a snapshot of this data is generated in Experience Platform. This snapshot provides a static view of the data at a specific point in time and does not include any event data.
-   
-   Select the **[!UICONTROL Default Timebased]** merge policy if you see multiple merge policies and you are unsure which one to choose. You can also consult your data team to better understand which audiences are associated with each merge policy. 
-
-   After you choose a merge policy, the profile snapshot export is shown. For example: `Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`.   
-
-   For more inofrmation, see [Profile attribute datasets](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/query#profile-attribute-datasets) in the Experience Platform Dashboards Guide.
-
-1. In the Connection section, select Choose a connection (or something similar?)
-
-1. After you choose a connection, in the **[!UICONTROL Person ID]** field, select a field from the model-based schema that represents the Person ID. The selection is limited to the list of fields in the model-based schema that are marked as Identity and do have an identity namespace. 
-
-   If you select Identity Map for the person ID, you have to select a namespace. You have two options:
-
-   * Enable **[!UICONTROL Use primary identity namespace]** to use the primary identity namespace.
-
-   * Select a namespace from the **[!UICONTROL Identity namespace]** drop-down menu.
-
-   If there are no Person IDs to choose from, that means one or more Person IDs have not been defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information.
-
-1. Choose whether to enable the option, **[!UICONTROL Use Primary Identity Namespace]**. This option instructs Customer Journey Analytics to find the identity in the Identity Map that is marked with a primary=true attribute and use that identity as the Person ID for that row. This identity is the primary key that is used in Experience Platform for partitioning. And this identity is also the prime candidate for usage as Customer Journey Analytics Person ID (depending on how the dataset is configured in a Customer Journey Analytics connection).
-
-1. **[!UICONTROL Identity Namespace]**: (This option is disabled if you use the Primary ID Namespace.) Identity namespaces are a component of the [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces). Namespaces serve as indicators of the context to which an identity relates. If you specify a namespace, Customer Journey Analytics searches each row's Identity Map for this namespace key and use the identity under that namespace as the Person ID for that row. Since Customer Journey Analytics cannot do a full dataset scan of all rows to determine which namespaces are present, all possible namespaces are displayed in the drop-down menu. Know which namespaces are specified in the data; these namespaces are not auto-detected.
-
-1. Data views: The audiences that come in become dimensions. There are 4 that we create (via derived fields).  
 
 
    

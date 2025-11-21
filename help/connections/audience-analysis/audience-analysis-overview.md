@@ -21,7 +21,6 @@ The following diagram and associated table show a high-level representation of h
 
 ![Audience analysis overview](assets/audience-analysis-overview.png)
 
-
 | Number | Feature | Function |
 |---------|----------|---------|
 | 1 | Audience analysis configuration | Configuration interface in Customer Journey Analytics used for configuring audience analysis. |

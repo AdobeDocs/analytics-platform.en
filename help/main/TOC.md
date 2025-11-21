@@ -158,7 +158,8 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Editor](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
   + Audience Analysis {#audience-analysis}
     + [Overview](/help/connections/audience-analysis/audience-analysis-overview.md)
-    + [Analyze audiences from RTCDP](/help/connections/audience-analysis/analyze-audiences.md)
+    + [Configure](/help/connections/audience-analysis/audience-analysis-configure.md)
+    + [Analyze](/help/connections/audience-analysis/analyze-audiences.md)
 + Tools {#tools}
   + Asset Transfer {#asset-transfer}
     + [Transfer assets](../tools/asset-transfer/transfer-assets.md) 
