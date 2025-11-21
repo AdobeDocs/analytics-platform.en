@@ -9,7 +9,7 @@ hidefromtoc: yes
 ---
 # Audience analysis overview
 
-<!-- add hidden text in this article when this feature releases: /help/components/audiences/audiences-overview.md -->
+<!-- add hidden text in this article when this feature releases: /help/components/audiences/audiences-overview.md and this article: /help/analysis-workspace/templates/use-templates.md-->
 
 >[!NOTE]
 >
@@ -17,7 +17,7 @@ hidefromtoc: yes
 
 Audience analysis allows you to ingest audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection. Audiences become available as new dimensions for use in Analysis Workspace.
 
-The following diagram and associated table show a high-level representation of how an audience analysis configuration in Customer Journey Analytics makes audience data from Experience Platform available in Analysis Workspace:
+The following diagram and associated table show a high-level representation of how an audience analysis configuration in Customer Journey Analytics makes Experience Platform audience data available in Analysis Workspace:
 
 ![Audience analysis overview](assets/audience-analysis-overview.png)
 

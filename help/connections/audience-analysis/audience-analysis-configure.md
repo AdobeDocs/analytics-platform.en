@@ -18,6 +18,33 @@ hidefromtoc: yes
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-audience-analysis-sandbox"
+>title="Sandbox"
+>abstract="Select the sandbox that contains the correct Experience Platform profile datasets. These datasets need to contain the audience data that you want to report on in Analysis Workspace. "
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-audience-person-id"
+>title="Person ID"
+>abstract="Select a field from the model-based schema that represents the Person ID. The selection is limited to the list of fields in the model-based schema that are marked as Identity and do have an identity namespace."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-audience-person-id"
+>title="Use primary identity namespace"
+>abstract="Enable this option if you want Customer Journey Analytics to find the identity in the Identity Map that is marked with a primary=true attribute and use that identity as the Person ID for that row. This identity is the primary key that is used in Experience Platform for partitioning. <br/>If you leave this option disabled, select a namespace from the Identity namespace field below. Customer Journey Analytics searches each row's Identity Map for this namespace key and uses the identity under that namespace as the Person ID for that row."
+
+<!-- markdownlint-enable MD034 -->
+
 Audience analysis allows you to ingest audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection. Audiences become available as new dimensions for use in Analysis Workspace. For more detailed overview information about audience analysis, see [Audience analysis overview](/help/connections/audience-analysis/audience-analysis-overview.md).
 
 When creating an audience analysis configuration, you select the sandbox and merge policy associated with the Experience Platform audiences that you want to analyze. Customer Journey Analytics creates a new lookup dataset, then automatically adds the lookup dataset and the profile dataset to the connection you choose. 
@@ -56,7 +83,7 @@ To create an audience analysis configuration:
    |---------|----------|
    | **[!UICONTROL Person ID]** | Select a field from the model-based schema that represents the Person ID. The selection is limited to the list of fields in the model-based schema that are marked as Identity and do have an identity namespace.<p>If there are no Person IDs to choose from, it means one or more Person IDs have not been defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information.</p>  | 
    | **[!UICONTROL Use primary identity namespace]** | This option shows if you select **[!UICONTROL Identity Map]** for the person ID.<p>Enable this option if you want Customer Journey Analytics to find the identity in the Identity Map that is marked with a primary=true attribute and use that identity as the Person ID for that row. This identity is the primary key that is used in Experience Platform for partitioning. And this identity is also the prime candidate for usage as Customer Journey Analytics Person ID (depending on how the dataset is configured in a Customer Journey Analytics connection).</p> |
-   | **[!UICONTROL Identity namespace]** | This option shows if you select **[!UICONTROL Identity Map]** for the person ID. This option is disabled if you use the Primary ID Namespace. <p>Identity namespaces are a component of the [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces). Namespaces serve as indicators of the context to which an identity relates. If you specify a namespace, Customer Journey Analytics searches each row's Identity Map for this namespace key and use the identity under that namespace as the Person ID for that row. Since Customer Journey Analytics cannot do a full dataset scan of all rows to determine which namespaces are present, all possible namespaces are displayed in the drop-down menu. Know which namespaces are specified in the data; these namespaces are not auto-detected.</p> |
+   | **[!UICONTROL Identity namespace]** | This option shows if you select **[!UICONTROL Identity Map]** for the person ID. This option is disabled if you use the Primary ID Namespace. <p>Identity namespaces are a component of the [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces). Namespaces serve as indicators of the context to which an identity relates. If you specify a namespace, Customer Journey Analytics searches each row's Identity Map for this namespace key and uses the identity under that namespace as the Person ID for that row. Since Customer Journey Analytics cannot do a full dataset scan of all rows to determine which namespaces are present, all possible namespaces are displayed in the drop-down menu. Know which namespaces are specified in the data; these namespaces are not auto-detected.</p> |
 
 1. In the **[!UICONTROL Data views]** section, click **[!UICONTROL Select data views]**.
 
