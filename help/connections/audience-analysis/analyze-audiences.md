@@ -1,22 +1,13 @@
 ---
-title: Analyze audiences from RTCDP
-description: Learn how to analyze audiences from RTCDP in Customer Journey Analytics.
+title: Analyze Experience Platform audiences in Customer Journey Analytics
+description: Learn how to analyze Experience Platform audiences in Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
 hide: yes
 hidefromtoc: yes
 ---
-# Analyze audiences from RTCDP {#analyze-audiences-RTCDP}
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-audience-analysis-merge-policy"
->title="Merge policy"
->abstract="Merge policies combine profile data from multiple datasets into unified customer profiles used for audience creation. Select the Default Timebased merge policy if you see multiple merge policies and you are unsure which to choose. You can also consult your data team to better understand which audiences are associated with each merge policy."
-
-<!-- markdownlint-enable MD034 -->
+# Analyze Experience Platform audiences in Customer Journey Analytics {#analyze-audiences-RTCDP}
 
 Audience analysis allows you to ingest audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection. Audiences become available as new dimensions for use in Analysis Workspace.
 
@@ -38,11 +29,9 @@ The following are automatically created:
 
 * **New lookup dataset** that provides friendly names for the new audience dimensions. The lookup dataset is also added to the connection, along with the profile dataset you select.
 
-Something above Details that says, "We're just configuring data views for reporting, and we have to configure them at the connection level, and so we're having you choose some things ... We're going to be creating brand new lookup datasets to provide friendly names for audiences." 
+ 
 
-"Here's what we're going to do: add this profile dataset to the connection you select, create a new lookup dataset, and add that to the connection as well, and then create new dimensions and metrics within the selected data views." 
-
-We're creating, automatically populating, and keeping them up to date. That is the value that this is providing. And automatically creating the dimension and metrics in their data views. The audiences that come in become dimensions. There are 4 that we create (via derived fields).  
+Select the sandbox and merge policy associated with the Experience Platform audiences that you want to analyze. Customer Journey Analytics creates a new lookup dataset, then automatically adds the lookup dataset and the profile dataset to the connection you choose. 
 
 To create an audience analysis configuration:
 
@@ -85,6 +74,8 @@ To create an audience analysis configuration:
 1. Choose whether to enable the option, **[!UICONTROL Use Primary Identity Namespace]**. This option instructs Customer Journey Analytics to find the identity in the Identity Map that is marked with a primary=true attribute and use that identity as the Person ID for that row. This identity is the primary key that is used in Experience Platform for partitioning. And this identity is also the prime candidate for usage as Customer Journey Analytics Person ID (depending on how the dataset is configured in a Customer Journey Analytics connection).
 
 1. **[!UICONTROL Identity Namespace]**: (This option is disabled if you use the Primary ID Namespace.) Identity namespaces are a component of the [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces). Namespaces serve as indicators of the context to which an identity relates. If you specify a namespace, Customer Journey Analytics searches each row's Identity Map for this namespace key and use the identity under that namespace as the Person ID for that row. Since Customer Journey Analytics cannot do a full dataset scan of all rows to determine which namespaces are present, all possible namespaces are displayed in the drop-down menu. Know which namespaces are specified in the data; these namespaces are not auto-detected.
+
+1. Data views: The audiences that come in become dimensions. There are 4 that we create (via derived fields).  
 
 
    
