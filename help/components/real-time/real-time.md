@@ -11,6 +11,11 @@ Real-time reporting in Customer Journey Analytics displays and updates data and 
 
 {{ultimate-package}}
 
+>[!TIP]
+>
+>If you are entitled to the Ultimate package but do not see the [Real-time refresh toggle](use-real-time.md), create a customer care ticket to request to enable real-time reporting for your organization.
+
+
 ## Use cases
 
 This section provides an overview of typical valuable and less valuable use cases. And also information when not to consider real-time reporting.
