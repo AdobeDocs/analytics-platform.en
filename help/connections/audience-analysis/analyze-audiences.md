@@ -13,6 +13,10 @@ You can begin analyzing Experience Platform audiences in Customer Journey Analyt
 
 An Audience overview template is available in Customer Journey Analytics. 
 
+<!-- Can you also use the new audience dimensions in any project, regardless of whether it's a template? I assume so -->
+
+<!-- What are the names of the new dimensions? Are they customized to whatever your audience names are in AEP, or are they always the same? -->
+
 For information about how to access the Audience overview template, see [Access and run a template](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) in [Use templates](/help/analysis-workspace/templates/use-templates.md).
 
 The Audience overview template contains the following panels:
@@ -35,7 +39,7 @@ Shows data for all audiences with usage events that are associated with the sele
 
 Select up to three audiences in the table in this panel to see how they overlap in the corresponding Venn diagram.
 
-## Exited audience usage
+## Exited audience usage panel
 
 Shows data for all exited audiences with usage events that are associated with the selected data view. Data is always shown for yesterday, so changing the panel date range results in inaccurate data. "Exited audiences" are audiences in which people with usage events left or exited yesterday. 
 
