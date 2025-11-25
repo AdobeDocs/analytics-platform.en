@@ -236,6 +236,9 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >Values earlier than the year 1900 for Date and Date-time fields in a row in any type of dataset are replaced with the value `null` before the row is ingested.<br/>Rows in an event or summary dataset with a timestamp value before the year 1900 are dropped from ingestion.
 
 
+{{relational-model-based}}
+
+
 >[!CONTEXTUALHELP]
 >id="cja_connection_primaryid"
 >title="Primary ID"

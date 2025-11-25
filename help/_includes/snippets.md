@@ -279,3 +279,11 @@ Use the following information to choose the visualization that best meets your n
 | [!UICONTROL Session Starts] |  The number of events that were the first event of a session. When used in a segment definition (for example, '[!UICONTROL Session Starts] exists'), it segments down to just the first event of every session.<p>This component must be included in your data view for the following [calculated metric](/help/components/calc-metrics/default-calcmetrics.md) to be available in Workspace: <ul><li>Session Start Rate</li></p> |
 | [!UICONTROL Sessions] |  Based on the data view's session settings. |
 | [!UICONTROL Time Spent (seconds)] |  Sums the time between two different values for a dimension.<p>This component must be included in your data view for the following [calculated metrics](/help/components/calc-metrics/default-calcmetrics.md) to be available in Workspace: <ul><li>Time Spent Per Person</li><li>Time Spent Per Session</li></p> |
+
+
+## Relational model-based {#relational-model-based}
+
+>[!INFO]
+>
+>In the Customer Journey Analytics interface, **[!UICONTROL Relational]** datasets might be labeled as **[!UICONTROL Model-based]**.
+>

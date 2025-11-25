@@ -21,7 +21,7 @@ Find below details that you should consider when configuring each of these compo
 
 ## Schema
 
-You need to create a [relational schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational){target="_blank"} that models the data warehouse native table you want to mirror. When you construct the relational schema, ensure that the following requirements are met:
+You need to create a [relational schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational){target="_blank"} that s the data warehouse native table you want to mirror. When you construct the relational schema, ensure that the following requirements are met:
 
 * When prompted for the type of relational schema, ensure you select the manual option.
 * Select the appropriate schema for the type of data. Note that Experience Platform Data Mirror is mostly used for time series data (for example, event data).
@@ -86,4 +86,4 @@ Once you finished the setup of the source connector, a dataflow is created. From
 >
 >[Data Mirror quick start guide: Mirror and use relational data](relational.md)
 >[Data Mirror (Experience Platform documentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
->[Model-based schemas (Experience Platform documentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational)
+>[Relational schemas (Experience Platform documentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational)
