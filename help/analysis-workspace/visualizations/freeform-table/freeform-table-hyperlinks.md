@@ -5,7 +5,7 @@ feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
 ---
-# Create hyperlinks
+# Create hyperlinks in freeform tables
 
 You can create hyperlinks for dimension items to make them clickable within a freeform table in Analysis Workspace. 
 

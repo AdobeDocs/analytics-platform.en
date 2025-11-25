@@ -1,15 +1,15 @@
 ---
-title: Graph based stitching
-description: Explanation of graph based stitching
+title: Graph-based stitching
+description: Explains the concept and working of graph-based stitching
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
 ---
-# Graph based stitching
+# Graph-based stitching
 
 
-In graph based stitching, you specify an event dataset as well as the persistent ID (cookie) and the namespace of the transient ID (person ID) for that dataset. Graph-based stitching creates a new column for the stitched ID in the new stitched dataset. And then uses the persistent ID to query the identity graph from the Experience Platform Identity Service, using the namespace specified, to update the stitched ID.
+In graph-based stitching, you specify an event dataset as well as the persistent ID (cookie) and the namespace of the person ID for that dataset. Graph-based stitching adds a new column for the stitched ID to the event dataset. And then uses the persistent ID to query the identity graph from the Experience Platform Identity Service, using the namespace specified, to update the stitched ID.
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ In graph based stitching, you specify an event dataset as well as the persistent
 
 ## IdentityMap
 
-Graph based stitching supports the use of the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) in the following scenarios:
+Graph-based stitching supports the use of the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) in the following scenarios:
 
 - Use of the primary identity in `identityMap` namespaces to define the persistentID:
   - If multiple primary identities found in different namespaces, the identities in the namespaces are sorted lexigraphically and the first identity is selected.
@@ -91,10 +91,10 @@ Graph based stitching supports the use of the [`identityMap` field group](https:
 
 Stitching makes a minimum of two passes on data in a given dataset.
 
-- **Live stitching**: attempts to stitch each hit (event) as it comes in, using the persistent ID to look up the transient id for the selected namespace by querying the identity graph. If the transient id is available from the lookup, this transient id is immediately stitched.
+- **Live stitching**: attempts to stitch each hit (event) as it comes in, using the persistent ID to look up the person ID for the selected namespace by querying the identity graph. If the person ID is available from the lookup, this person ID is immediately stitched.
 
 - **Replay stitching**: *replays* data based on updated identities from the identity graph. This stage is where hits from previously unknown devices (persistent IDs) become stitched as the identity graph has resolved the identity for a namespace. The replay is determined by two parameters: **frequency** and **lookback window**. Adobe offers the following combinations of these parameters:
-    - **Daily lookback on a daily frequency**: Data replays every day with a 24-hour lookback window. This option holds an advantage that replays are much more frequent, but unauthenticated visitors must authenticate the same day that they visit your site.
+    - **Daily lookback on a daily frequency**: Data replays every day with a 24-hour lookback window. This option holds an advantage that replays are much more frequent, but unauthenticated profiles must authenticate the same day that they visit your site.
     - **Weekly lookback on a weekly frequency**: Data replays once a week with a weekly lookback window (see [options](#options)). This option holds an advantage that allows unauthenticated sessions a much more lenient time to authenticate. However, unstitched data less than a week old is not reprocessed until the next weekly replay.
     - **Biweekly lookback on a weekly frequency**: Data replays once every week with a biweekly lookback window (see [options](#options)). This option holds an advantage that allows unauthenticated sessions a much more lenient time to authenticate. However, unstitched data less than two weeks old is not reprocessed until the next weekly replay.
     - **Monthly lookback on a weekly frequency**: Data replays every week with a monthly lookback window (see [options](#options)). This option holds an advantage that allows unauthenticated sessions a much more lenient time to authenticate. However, unstitched data less than a month old is not reprocessed until the next weekly replay.
@@ -106,7 +106,7 @@ Stitching makes a minimum of two passes on data in a given dataset.
   >The unstitching process, as part of privacy requests, changes at the start of 2025. The current unstitching process restitches events using the latest version of known identities. This reassignment of events to another identity might have undesirable legal consequences. To remedy these concerns, from 2025 on, the new unstitching process updates events that are subject of the privacy request with the persistent ID.
   > 
 
-Data beyond the lookback window is not replayed. A visitor must authenticate within a given lookback window for an unauthenticated visit and an authenticated visit to be identified together. Once a device is recognized, it is live stitched from that point forward.
+Data beyond the lookback window is not replayed. A profile must authenticate within a given lookback window for an unauthenticated visit and an authenticated visit to be identified together. Once a device is recognized, it is live stitched from that point forward.
 
 Consider the following two identity graphs for persistent id `246` and `3579`, how these identity graphs are updated over time, and how these updates impact the steps in graph-based stitching.
 
@@ -201,9 +201,9 @@ The following table represents the same data as above, but shows the effect that
 
 The following prerequisites apply specifically to graph-based stitching:
 
-- The event dataset in Adobe Experience Platform, to which you want to apply stitching, must have one column that identifies a visitor on every row, the **persistent ID**. For example, a visitor ID generated by an Adobe Analytics AppMeasurement library or an ECID generated by the Experience Platform Identity Service. 
+- The event dataset in Adobe Experience Platform, to which you want to apply stitching, must have one column that identifies a profile on every row, the **persistent ID**. For example, a visitor ID generated by an Adobe Analytics AppMeasurement library or an ECID generated by the Experience Platform Identity Service. 
 - The persistent ID must also be [defined as an identity](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) in the schema.
-- The identity graph from Experience Platform Identity Service must have a namespace (for example `Email`, or `Phone`) you want to use during stitching to resolve the **transient ID**. See [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) for more information.
+- The identity graph from Experience Platform Identity Service must have a namespace (for example `Email`, or `Phone`) you want to use during stitching to resolve the **person ID**. See [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) for more information.
 
 >[!NOTE]
 >
@@ -214,7 +214,7 @@ The following prerequisites apply specifically to graph-based stitching:
 
 The following limitations apply specifically to graph-based stitching:
 
-- Timestamps are not taken into account when querying for the transient id using the specified namespace. So, it is possible that a persistent ID is stitched with a transient ID from a record that has an earlier timestamp.
+- Timestamps are not taken into account when querying for the person ID using the specified namespace. So, it is possible that a persistent ID is stitched with a person ID from a record that has an earlier timestamp.
 - In shared device scenarios, where the namespace in the graph contains multiple identities, the first lexicographic identity is used. If namespace limits and priorities are configured as part of the release of graph-linking rules, the last authenticated user's identity is used. See [Shared devices](/help/use-cases/stitching/shared-devices.md) for more information.
 - There is a hard limit of three months of backfilling identities into the identity graph. You would use backfilling identities in case you are not using an Experience Platform application, like Real-time Customer Data Platform, to populate the identity graph.
 - The [Identity Service guardrails](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) apply. See, for example, the following [static limits](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):

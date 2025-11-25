@@ -12,13 +12,13 @@ role: Admin
 >
 >You must have the **Select** package or higher (for [field-based stitching](fbs.md)) or **Prime** package or higher (for [graph-based stitching](gbs.md)) to use the functionality described in this section. Contact your administrator if you're unsure which Customer Journey Analytics package you have.
 
-Identity stitching (or simply, stitching) is a powerful feature that elevates an event dataset's suitability for cross-channel analysis. Cross-channel analysis is a main use case that Customer Journey Analytics can handle, allowing you to combine and run reports seamlessly on multiple datasets from different channels, based on a common identifier (person ID).
+Identity stitching (or simply, stitching) is a powerful feature that elevates an event dataset's suitability for cross-channel analysis. Cross-channel analysis is a main use case for Customer Journey Analytics. The feature allows you to combine and run reports seamlessly on multiple datasets from different channels, based on a common identifier (person ID).
 
-When you combine datasets with similar person IDs, attribution is carried over across devices and channels. For example, a user first visits your site through an advertisement on their desktop computer. That user encounters an issue with their order, then gives your customer service team a call to help resolve it. With cross-channel analysis, you can attribute call center events to the ad that they originally clicked.
+When you combine datasets with similar person IDs, attribution is carried over across devices and channels. For example, a user visits your site through an advertisement on their desktop computer. The users buys a prpduct but then the user encounters an issue with the order order. The user then gives your customer service team a call to help resolve the issue. With cross-channel analysis, you can attribute call center events to the ad that the user originally clicked.
 
-Unfortunately, not all event-based datasets that are part of your connection in Customer Journey Analytics are sufficiently populated with data to support this attribution out of the box. Especially, web-based or mobile-based experience datasets often don't have an actual person ID information available on all events.
+Unfortunately, not all event-based datasets that are part of your connection in Customer Journey Analytics are sufficiently populated with data to support this attribution out of the box. Especially, web-based or mobile-based experience datasets often don't have actual person ID information available on all events.
 
-Stitching allows rekeying identities within one dataset's rows, making sure the person ID (stitched ID) is available on each event. Stitching looks at user data from both authenticated and unauthenticated sessions to determine the common transient ID (person ID) value that can be used as stitched ID. This rekeying allows for resolving disparate records to a single stitched ID for analysis at the person level, rather than at the device or cookie level.
+Stitching allows to rekey identities within one dataset's rows to ensure the person ID (stitched ID) is available on each event. Stitching looks at user data from both authenticated and unauthenticated sessions to determine the common person ID value that can be used as stitched ID. This rekeying allows for the resolution of disparate records to a single stitched ID for analysis at the person level, rather than at the device or cookie level.
 
 Customer Journey Analytics supports two types of stitching: [field-based stitching](fbs.md) and [graph-based stitching](gbs.md).
 
@@ -39,6 +39,12 @@ Before using stitching, make sure that your organization is prepared with the fo
 
 You benefit from cross-channel analysis if you combine one or more of your stitched datasets with other datasets, such as call center data, as part of defining your Customer Journey Analytics connection. This connection configuration assumes that those other datasets already contain a person ID on every row, similar to the stitched ID.
 
+## Enable stitching
+
+You can enable stitching in two ways:
+
+- [Request to enable stitching](/help/stitching/use-stitching.md)
+- [Enable stitching in the Connections interface](/help/stitching/use-stitching-ui.md) [!BADGE Beta]{type=Informative}
 
 ## Limitations
 
@@ -79,8 +85,8 @@ Stitching supports the following automatically generated Journey Optimizer datas
 
 >[!MORELIKETHIS]
 >
->[Field based stitching](fbs.md)
->[Graph based stitching](gbs.md)
+>[Field-based stitching](fbs.md)
+>[Graph-based stitching](gbs.md)
 >[Use stitching](use-stitching.md)
 >[Validate stitching](validate.md)
 >[FAQ on stitching](faq.md)

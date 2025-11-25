@@ -1,0 +1,56 @@
+---
+title: Analyze Experience Platform audiences in Customer Journey Analytics
+description: Learn how to analyze Experience Platform audiences in Customer Journey Analytics.
+solution: Customer Journey Analytics
+feature: Audiences
+role: Admin
+hide: yes
+hidefromtoc: yes
+---
+# Analyze Experience Platform audiences in Customer Journey Analytics {#analyze-audiences-RTCDP}
+
+You can begin analyzing Experience Platform audiences in Customer Journey Analytics after you [create an audience analysis configuration](/help/connections/audience-analysis/audience-analysis-configure.md), when audience data is available as new dimensions in Analysis Workspace.
+
+An Audience overview template is available in Customer Journey Analytics. 
+
+For information about how to access the Audience overview template, see [Access and run a template](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) in [Use templates](/help/analysis-workspace/templates/use-templates.md).
+
+The Audience overview template contains the following panels:
+
+## Usage overview panel
+
+Shows data for all audiences with usage events that are associated with the selected data view. Audience membership data is updated daily from Experience Platform. Data is always shown for yesterday, so changing the panel date range results in inaccurate data. 
+
+Use the table in ths panel to better understand audience behavior. Drag the Audience Description dimension from the selected data view and add it as a breakdown. Or use any other interaction dimension (such as Page, Action, and so forth) as the breakdown.
+
+## Top audience origins panel
+
+Shows where the audience was created, whether in RTCDP, Customer Journey Analytics, and so forth.
+
+Use the table in this panel to better understand how the audience origin might affect other factors. Drag the Audience Name dimension from the selected data view and add it as a breakdown. Or use any other interaction dimension (such as Page, Action, and so forth) as the breakdown.
+
+## Audience overlap panel
+
+Shows data for all audiences with usage events that are associated with the selected data view. Data is always shown for yesterday, so changing the panel date range results in inaccurate data. 
+
+Select up to three audiences in the table in this panel to see how they overlap in the corresponding Venn diagram.
+
+## Exited audience usage
+
+Shows data for all exited audiences with usage events that are associated with the selected data view. Data is always shown for yesterday, so changing the panel date range results in inaccurate data. "Exited audiences" are audiences in which people with usage events left or exited yesterday. 
+
+Use the table in this panel to better understand audience behavior. Drag the Existed Audience Description dimension from the selected data view and add it as a breakdown. Or use any other interaction dimension or metric (such as Page, Action, and so forth) as the breakdown.
+
+## Top exited audience origins panel
+
+Shows where each audience that exited was originally created, whether in RTCDP, Customer Journey Analytics, and so forth. 
+
+Use the table in this panel to better understand how the audience origin might affect other factors. Drag the Exited Audience Name dimension from the selected data view and add it as a breakdown. Or use any other interaction dimension or metric (such as Page, Action, and so forth) as the breakdown.
+
+
+
+
+   
+
+ 
+

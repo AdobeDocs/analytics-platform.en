@@ -5,7 +5,7 @@ feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
 ---
-# Filter and sort
+# Filter and sort freeform tables
 
 Freeform tables in Analysis Workspace are the foundation for interactive data analysis. As such, they can contain thousands of rows of information. Filtering and sorting the data can be a critical part of efficiently surfacing the most important information. 
 
@@ -27,7 +27,7 @@ You can use several methods to filter rows from a freeform table.
 * Apply filters to a table 
 * Use audience segments
 
-Be sure to read how each method impacts [Freeform table totals](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
+Be sure to read how each method impacts [freeform table totals](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
 
 ### Exclude specific rows from a table
 
@@ -37,11 +37,11 @@ You can quickly exclude specific rows from the table without the need to use ![F
 >
 >When you exclude rows as described in this section, an [!UICONTROL Always exclude items] rule is added automatically in the [!UICONTROL Advanced] filter dialog. You can view the applied rule by selecting the ![Filter](/help/assets/icons/Filter.svg) Filter icon, then [**[!UICONTROL Show advanced]**](#apply-a-simple-or-advanced-filter-to-a-table).
 
-To exclude specific rows from a Freeform table:
+To exclude specific rows from a freeform table:
 
 1. Hover over the row that you want to exclude, then select ![Close](/help/assets/icons/Close.svg). 
 
-   Hold the ***shift*** to select a range of rows, or hold the ***cmd*** key (on Mac) or the ***ctrl*** key (on Windows) to select multiple rows.
+   Hold the ***Shift*** key to select a range of rows, or hold the ***Command*** key (on Mac) or the ***Ctrl*** key (on Windows) to select multiple rows.
 
 <!--### Right-click > Delete selected rows
 
@@ -53,9 +53,9 @@ Note: this option does not seem to work. AN-338422
    This action will remove the rows from the table and apply a table filter.-->
 
 
-### Apply a simple or advanced filter to a table
+### Apply simple or advanced filtering to a table
  
- To filter data in Freeform tables:
+ To filter data in freeform tables:
  
  1. Hover over the column that contains the data you want to filter. <!--only some types of columns show the filter... Which? Just Dimensions?-->
  
@@ -69,7 +69,7 @@ Note: this option does not seem to work. AN-338422
 
     |Option | Function | 
     |---------|----------|
-    | [!UICONTROL **Include "No value"**] | Select this option to show a **[!UICONTROL No value]** row in the table for data that has no value for the selected dimension. Unselect this option to hide the **[!UICONTROL No value]** row. |
+    | [!UICONTROL **Include "No value"**] | Select this option to show a **[!UICONTROL No value]** row in the table for data that has no value for the selected dimension. Deselect this option to hide the **[!UICONTROL No value]** rows.<!-- Add at multi dim GA: When tables include multiple dimension columns, you can deselect this option to show data only when it applies to each dimension column in the table.--> |
     | [!UICONTROL **Search word or phrase**] | Specify a word or phrase that you want to filter by. Only rows that contain the word or exact phrase specified are shown. |
     
 
@@ -81,7 +81,7 @@ Note: this option does not seem to work. AN-338422
 
     |Option | Function | 
     |---------|----------|
-    | [!UICONTROL **Include "No value"**] | Select this option to show a **[!UICONTROL No value]** row in the table for data that has no value for the selected dimension. Unselect this option to hide the **[!UICONTROL No value]** row. |
+    | [!UICONTROL **Include "No value"**] | Select this option to show a **[!UICONTROL No value]** row in the table for data that has no value for the selected dimension. Deselect this option to hide the **[!UICONTROL No value]** row. |
     | [!UICONTROL **Match**] | Choose [!UICONTROL **If all criteria are met**] to show only data that meets all the criteria that you specify. This option typically results in more refined data.<br/><br/>Choose [!UICONTROL **If any criteria are met**] to show data that meets any one of the filter criteria that you specify. This option typically results in less refined data.  |
     | [!UICONTROL **Criteria**] | Select from the following filter options:<br/><ul><li>[!UICONTROL **Contains the phrase**] (default): Only data that contain the exact phrase that you specify are included in the filtered results. Words must be in the order specified in the [!UICONTROL **Search word or phrase field**].</li><li>[!UICONTROL **Contains any term**]: Only data that contain one or more words from the phrase that you specify are included in the filtered results. </li><li>[!UICONTROL **Contains all terms**]: Only data that contain all words from the phrase that you specify are included in the filtered results. Words do not have to be in the order specified in the [!UICONTROL **Search word or phrase field**].</li><li>[!UICONTROL **Does not contain any term**]: Only data that contain none of the words from the phrase that you specify are included in the filtered results. </li><li>[!UICONTROL **Does not contain the phrase**]: Only data that does not contain the exact phrase that you specify are included in the filtered results. Words must be in the order specified in the [!UICONTROL **Search word or phrase field**].</li><li>[!UICONTROL **Equals**]: Only data that exactly matches the phrase that you specify is included in the filtered results. </li><li>[!UICONTROL **Does not equal**]: Only data that does not exactly match the phrase that you specify are included in the filtered results. </li><li>[!UICONTROL **Starts with**]: Only data that starts with the word or exact phrase that you specify are included in the filtered results. </li><li>[!UICONTROL **Ends with**]: Only data that ends with the word or exact phrase that you specify are included in the filtered results. </li></ul>Select ![Add](/help/assets/icons/Add.svg) [!UICONTROL **Add row**] to add multiple filter criteria. The option you select for [!UICONTROL **Match**] determines **[!UICONTROL If all criteria are met]** or **[!UICONTROL If any criteria are met]**. | 
     | [!UICONTROL **Always exclude items**] | Specify the name of any items that you want to exclude from the filtered data. |
