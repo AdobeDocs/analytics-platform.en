@@ -143,7 +143,11 @@ The [**[!UICONTROL Enable rolling data window]** setting](https://experienceleag
 
 The main benefit is that you store or report only on data that is applicable and useful and delete older data that is no longer useful. It helps you stay under your contract limits and reduces the risk of overage cost. 
 
-## 6. Implications of deleting data components {#deletion}
+## 6. Implications of deleting objects or components {#deletion}
+
+See [Deletion and reset implications](/help/technotes/deletion.md) for an overview of the implications when you delete or reset Customer Journey Analytics or Experience Platform objects or components.
+
+<!-- Refer to deletion guide 
 
 For data deletion, you should be concerned about six types of components: sandbox, schema, dataset, connection, data view, and Workspace project. Here are some possible scenarios around deleting any of these components:
 
@@ -157,6 +161,8 @@ For data deletion, you should be concerned about six types of components: sandbo
 | Delete a batch **while it is being ingested** into [!UICONTROL Customer Journey Analytics] | If there is only one batch in the dataset, no data or partial data from that batch appears in [!UICONTROL Customer Journey Analytics]. The ingestion is rolled back. For example, if there are five batches in the dataset and three of them have already been ingested when the dataset was deleted, data from those 3 batches appears in [!UICONTROL Customer Journey Analytics]. |
 | Delete a connection in [!UICONTROL Customer Journey Analytics] | An error message indicates that:<ul><li>Any data views created for the deleted connection will no longer work.</li><li> Similarly, any Workspace projects that depend on data views in the deleted connection stops working.</li></ul> |
 | Delete a data view in [!UICONTROL Customer Journey Analytics] | An error message indicates that any Workspace projects that depend on this deleted data view will stop working. |
+
+-->
 
 ## 7. Considerations when merging report suites in Customer Journey Analytics {#merge-reportsuite}
 
