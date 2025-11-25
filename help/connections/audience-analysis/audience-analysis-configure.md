@@ -39,7 +39,7 @@ hidefromtoc: yes
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja-audience-person-id"
+>id="cja-audience-namespace"
 >title="Use primary identity namespace"
 >abstract="Enable this option if you want Customer Journey Analytics to find the identity in the Identity Map that is marked with a primary=true attribute and use that identity as the Person ID for that row. This identity is the primary key that is used in Experience Platform for partitioning. <br/>If you leave this option disabled, select a namespace from the Identity namespace field below. Customer Journey Analytics searches each row's Identity Map for this namespace key and uses the identity under that namespace as the Person ID for that row."
 
