@@ -24,8 +24,7 @@ To enable stitching on an event dataset within the Connections UI:
   * multiple fields that are configured as an identity, and which allows you to select different values for a persistent ID and a person ID.
   * at least one field that is marked as primary identity with an associated namespace in case you want to use Identity Map and the primary identity namespace for persistent ID or person ID.
 
-* The event dataset must be [enabled for the Identity service](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) in case you want to use the Identity Graph and graph-based stitching.
-
+* If you want to use graph-based stitching and you anticipate the event dataset to contribute to the Identity Graph (as the dataset contains relevant person IDs next to persistent IDs), you should [enable the dataset for the Identity service](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
 
 ## Preflight checks
 
