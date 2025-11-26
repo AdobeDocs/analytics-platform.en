@@ -50,7 +50,7 @@ To create an Adobe Analytics source connector:
 
     ![Adobe Experience Platform window with Sources selected along with Adobe applications and Add data highlighted.](./assets/sources-overview.png)
 
-4. Select **[!UICONTROL Report suite]**. From the list of report suites, select the one you want to use. 
+4. Select **[!UICONTROL Report suite]**. From the list of report suites, select the one you want to use.<br/> Alternatively, you can use ![Search](/help/assets/icons/Search.svg) **[!UICONTROL _Search_]** to search for a report suite.
 
     ![Adobe Experience Platform window showing the Report suites list](./assets/report-suites.png)
 
