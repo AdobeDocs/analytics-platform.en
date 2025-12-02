@@ -29,12 +29,12 @@ The alerts list ➊ displays all the alerts that you own, the alerts that have b
 |---|---|
 | ![StarOutline](/help/assets/icons/StarOutline.svg)  | Select to favor ![Star](/help/assets/icons/Star.svg) or un-favor ![StarOutline](/help/assets/icons/StarOutline.svg) an alert. |
 | **[!UICONTROL Title and description]** | To edit the alert, select the title link, which opens the [Alerts builder](alert-builder.md#alert-builder).|
-| **[!UICONTROL Type]** | Shows whether the  alert is a Customer Journey Analytics data alert or a Server call usage alert. | 
-| **[!UICONTROL Enabled]** | Indicates whether the alert is enabled or disabled. | 
-| **[!UICONTROL Data view]** | The data views that this alert applies to.  | 
+| **[!UICONTROL Type]** | Shows whether the  alert is a Customer Journey Analytics data alert or a Server call usage alert. |
+| **[!UICONTROL Enabled]** | Indicates whether the alert is enabled or disabled. |
+| **[!UICONTROL Data view]** | The data views that this alert applies to.  |
 | **[!UICONTROL Owner]** | The owner of the alert. As a non-administrator, you only see alerts you own or those that are shared with you. |
 | **[!UICONTROL Tags]** | The tags for this alert. |
-| **[!UICONTROL Expiration Date]** | The date and time when the alert is set to expire. | 
+| **[!UICONTROL Expiration Date]** | The date and time when the alert is set to expire. |
 | **[!UICONTROL Date modified]** | The date and time that the alert was last modified. |
 
 <!-- When "Last used" column is added, add this information as the description: Shows the date when the alert was last used. <p>This information can help you determine whether a component is valuable to users in your organization, where it is used, and if it needs to be deleted or modified.</p><p>Consider the following when viewing this column:</p><ul><li>This information does not include usage from the API, Report Builder, or Data Warehouse.</li><li>For some components, this column might not contain data if the component was last used prior to September 2023.</li></ul> -->
@@ -52,7 +52,7 @@ You can action on alerts using the action bar ➋. The action bar contains the f
 | ![Label](/help/assets/icons/Label.svg)| **[!UICONTROL Tag]** | Tag the selected alerts. In the **[!UICONTROL Tag Alert]** dialog, select or de-select the tags for the selected alerts. Select **[!UICONTROL Save]** to save the tags for the selected alerts.|
 | ![Delete](/help/assets/icons/Delete.svg)| **[!UICONTROL Delete]** | Delete the selected alerts. You are prompted for a confirmation. |
 | ![Edit](/help/assets/icons/Edit.svg)| **[!UICONTROL Rename]** | Rename a single selected alert. When selected, you can rename the alert inline. |
-| ![Copy](/help/assets/icons/Copy.svg) | **[!UICONTROL Copy]** | Copy the selected alert. New alerts are created with the same name and suffix `(Copy)`. | 
+| ![Copy](/help/assets/icons/Copy.svg) | **[!UICONTROL Copy]** | Copy the selected alert. New alerts are created with the same name and suffix `(Copy)`. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)| **[!UICONTROL Enable]** or **[!UICONTROL Disable]** | Enable or disable the selected alerts. |
 |![Refresh](/help/assets/icons/Refresh.svg)| **[!UICONTROL Renew]** | Renews the alert expiration date. The  expiration date extends 1 year from the day you select this option, regardless of the original expiration date. |
 | ![FileCSV](/help/assets/icons/FileCSV.svg)| **[!UICONTROL Export to CSV]** | Export the alerts to an `Alerts List.csv` file. |
