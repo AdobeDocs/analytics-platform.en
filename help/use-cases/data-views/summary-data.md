@@ -452,7 +452,7 @@ To ensure you can report on the correct data in Workspace, you want to create a 
 
          | Component name | Dataset | Schema data type | Schema path |
          |---|---|---|---|
-         | Cost | Example Summary Data Dataset | Double | *_tenant*.cost | 
+         | Cost | Example Summary Data Dataset | Double | *_tenant*.cost |
          | Impressions | Example Summary Data Dataset | Integer | *_tenant*.impression |
          | Orders | Example Event Data Dataset | Integer | *_tenant*.orders |
          | Revenue | Example Event Data Dataset | Double | *_tenant*.revenue_amount |
