@@ -106,7 +106,7 @@ You can view the status of stitching in the [!UICONTROL Stitched datasets] list.
   | **[!UICONTROL **Queued**]** | The request is received and processes soon. |
   | **[!UICONTROL **Creation**]** in progress | Resources and newly stitched dataset is under creation. |
   | **[!UICONTROL **Stitching in progress**]** | Resources and stitched dataset exist and stitching is in progress |
-  | **[!UICONTROL **Error**]** | There is an issue with stitching. Maybe a schema changed between source dataset and stitched dataset, the daily volume is too large, or... (_**need more information here...**_) | 
+  | **[!UICONTROL **Error**]** | There is an issue with stitching. Maybe a schema changed between source dataset and stitched dataset, the daily volume is too large, or... (_**need more information here...**_) |
 
   >[!INFO]
   >

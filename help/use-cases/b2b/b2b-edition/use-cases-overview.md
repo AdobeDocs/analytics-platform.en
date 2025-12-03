@@ -18,10 +18,10 @@ The key personas that benefit from the analysis that Customer Journey Analytics 
 
 | Persona | Requirements for B2B analytics |
 |---|---|
-| Marketing manager | Campaign performance, channel performance and lifecycle, marketing ROI, lead generation, customer retention, and brand performance | 
-| Business analyst | Granular data, fast reporting times, flexibility to support many stakeholders, easy delivery of insights. | 
-| Account executive | Revenue growth, opportunity progression, customer satisfaction, client acquisition, fast access to key insights, mobile reports. |  
-| Product manager | Customer satisfaction, product usage trends, performance trends, revenue growth | 
+| Marketing manager | Campaign performance, channel performance and lifecycle, marketing ROI, lead generation, customer retention, and brand performance |
+| Business analyst | Granular data, fast reporting times, flexibility to support many stakeholders, easy delivery of insights. |
+| Account executive | Revenue growth, opportunity progression, customer satisfaction, client acquisition, fast access to key insights, mobile reports. |
+| Product manager | Customer satisfaction, product usage trends, performance trends, revenue growth |
 | CMO or CEO | Revenue growth, brand performance, customer engagement, market expansion |
 | Marketing operations manager | Efficiency, data accuracy, campaign performance, technology integration |
 | Sales operation manager | Efficiency, data accuracy, sales performance, opportunity progression, technology integration |
