@@ -234,8 +234,8 @@ The following Analysis Workspace elements and features used in a project aren't 
 
 * Breakdowns
 
-  Each breakdown within a freeform table is included in the presentation independently as a separate insight. 
+  As part of the deduplication and scoring process when generating relevant insights, each breakdown within a freeform table is analyzed independently, and only the first 5 breakdowns within a single freeform table are analyzed.
   
-  The first 5 breakdowns within a single freeform table are included in the presentation.
-
   Only the first level of a breakdown is supported. A breakdown of a breakdown is not included in the presentation.
+
+  
