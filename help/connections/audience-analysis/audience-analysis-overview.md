@@ -43,6 +43,12 @@ When you configure audience analysis, you select the sandbox and merge policy as
 
 For more information, see [Configure audience analysis](/help/connections/audience-analysis/audience-analysis-configure.md).
 
+## Manage audience analysis configurations
+
+You can manage audience analysis configurations after they are created. For example, you can edit configurations or delete them. 
+
+For information about managing your existing audience analysis configurations, see [Manage audience analysis configurations](/help/connections/audience-analysis/audience-analysis-manage.md).
+
 ## Analyze audience data in Customer Journey Analytics
 
 With audience data available in Customer Journey Analytics, you can gain actionable insights into how audience members behave across various channels. 

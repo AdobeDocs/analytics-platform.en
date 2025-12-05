@@ -66,7 +66,7 @@ To create an audience analysis configuration:
    | Field | Description | 
    |---------|----------|
    | **[!UICONTROL Name]** | Specify a name for the configuration. | 
-   | **[!UICONTROL Sandbox]** | Select the sandbox that contains the profile dataset that you want to add to your connection. <p>Adobe Experience Platform provides [sandboxes](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain datasets. Sandboxes are used to control access to datasets.</p> |
+   | **[!UICONTROL Sandbox]** | Select the Experience Platform sandbox that contains the profile dataset that you want to add to your connection. <p>Adobe Experience Platform provides [sandboxes](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain datasets. Sandboxes are used to control access to datasets.</p> |
 
 1. In the **[!UICONTROL Profile dataset]** section, specify the following information:
 
@@ -78,6 +78,8 @@ To create an audience analysis configuration:
 1. In the **[!UICONTROL Connection]** section, click **[!UICONTROL Select a connection]**.
 
 1. In the Connections dialog, select the checkbox next to the connection where you want to add the profile dataset, then select **[!UICONTROL Use connection]**.
+
+   A connection can be associated with only one audience analysis configuration.
 
 1. Specify the following information to configure the connection:
 
