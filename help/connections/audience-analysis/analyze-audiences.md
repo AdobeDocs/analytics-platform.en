@@ -9,9 +9,7 @@ hidefromtoc: yes
 ---
 # Analyze Experience Platform audiences in Customer Journey Analytics {#analyze-audiences-RTCDP}
 
-You can begin analyzing Experience Platform audiences in Customer Journey Analytics. 
-
-After you [create an audience analysis configuration](/help/connections/audience-analysis/audience-analysis-configure.md), audience data becomes available as new dimensions in the data views where you configure them to be created. You can use the new audience dimensions anywhere in Analysis Workspace. 
+After you [create an audience analysis configuration](/help/connections/audience-analysis/audience-analysis-configure.md), audience data becomes available as new dimensions in the data views where you configure them to be created. You can use the new audience dimensions anywhere in Analysis Workspace if you have access to a data view where the audience analysis dimensions were added.
 
 ## Use the Audience overview template
 

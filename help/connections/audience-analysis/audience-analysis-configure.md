@@ -51,6 +51,8 @@ Audience analysis allows you to ingest audience membership data from Experience 
 
 When creating an audience analysis configuration, you select the sandbox and merge policy associated with the Experience Platform audiences that you want to analyze. Customer Journey Analytics creates a new lookup dataset, then automatically adds the lookup dataset and the profile dataset to the connection you choose. 
 
+Only system administrators can create audience analysis configurations.
+
 To create an audience analysis configuration:
 
 1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Audience analysis configuration]**.
@@ -105,6 +107,10 @@ To create an audience analysis configuration:
 
 After you [create an audience analysis configuration](#create-an-audience-analysis-configuration), you can verify that audience dimensions were added to the data views that you selected during the configuration.
 
+To view audience dimensions in the data view, you must be a product profile administrator for the product profile that the data view is assigned to. For more information, see [Access control](/help/technotes/access-control.md).
+
+To view the audience analysis dimensions in the data view:
+
 1. In Customer Journey Analytics, select **[!UICONTROL Data Mangement]** > **[!UICONTROL Data views]**.
 
 1. In the **[!UICONTROL Dimensions]** section, the following dimensions should now be available:
@@ -120,5 +126,9 @@ After you [create an audience analysis configuration](#create-an-audience-analys
    Note that each of these dimensions was added to the profile dataset that is associated with the merge policy that you selected during the audience analysis configuration, and each was added to the new lookup dataset that was created.
 
    ![Audience dimensions available in the data view](assets/audience-analysis-dataview-dataset.png)
+
+1. Use the audience analysis dimensions in Analysis Workspace. 
+
+   Users who have access to use the data view in Analysis Workspace can see the new dimensions and use them in their analyses. For information about how to use the audience analysis dimensions in Analysis Workspace, see [Analyze Experience Platform audiences in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
 
 

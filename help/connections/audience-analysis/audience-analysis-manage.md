@@ -11,6 +11,10 @@ hidefromtoc: yes
 
 After you [create audience analysis configurations](/help/connections/audience-analysis/audience-analysis-configure.md), you can view, edit, or delete them. 
 
+Only system administrators can manage audience analysis configurations.
+
+For information about audience analysis, see [Audience analysis overview](/help/connections/audience-analysis/audience-analysis-overview.md).
+
 ## View and filter existing configurations
 
 To view your existing audience analysis configurations:
@@ -19,7 +23,7 @@ To view your existing audience analysis configurations:
 
    ![Audience analysis main page](assets/audience-analysis-manage-configurations.png)
 
-   The following information is available about each configuration:
+   The following columns of information are available about each configuration:
 
    * **[!UICONTROL Created by]**: The user who created the configuration.
 
@@ -32,6 +36,8 @@ To view your existing audience analysis configurations:
    * **[!UICONTROL Last modified]**: The date the configuration was last modified.
 
    * **[!UICONTROL Status]**: The status of the configuration. Possible statuses are Complete, In Progress, or Failed. <!--true?-->
+
+   You can hide any columns by selecting the Column icon ![Column icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg), deselcting any columns that you want to hide, then selecting **[!UICONTROL Apply]**.
 
 1. (Optional) To filter the list of configurations, select the **Filter** ![Audience analysis Filter icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), then filter by any of the following criteria:
 

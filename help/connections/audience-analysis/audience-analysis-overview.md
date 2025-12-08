@@ -45,9 +45,9 @@ For more information, see [Configure audience analysis](/help/connections/audien
 
 ## Manage audience analysis configurations
 
-You can manage audience analysis configurations after they are created. For example, you can edit configurations or delete them. 
+You can manage audience analysis configurations after they are created. You can view, edit, and delete configurations. 
 
-For information about managing your existing audience analysis configurations, see [Manage audience analysis configurations](/help/connections/audience-analysis/audience-analysis-manage.md).
+For information about managing existing audience analysis configurations, see [Manage audience analysis configurations](/help/connections/audience-analysis/audience-analysis-manage.md).
 
 ## Analyze audience data in Customer Journey Analytics
 
@@ -60,6 +60,16 @@ For example, you can track the behavior of individual customers who were include
 * Audience members who eventually made an in-store purchase 
 
 For more information, see [Analyze Experience Platform audiences in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+
+## Audience analysis role and permission requirements
+
+The following Customer Journey Analytics roles and Experience Platform permissions are required for audience analysis:
+
+| Capability | Customer Journey Analytics role or permission requirements | Experience Platform permission requirements |
+|---------|----------|----------|
+| [Create audience analysis configurations](/help/connections/audience-analysis/audience-analysis-configure.md) | System administrator | <ul><li>Datasets: Read permissions</li><li>Schemas: Read, Write</li><li>and Identity namespaces: Read</li></ul>  |
+| [View audience analysis dimensions in the data view](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | Product profile administrator for the product profile that the data view is assigned to <p>For more information, see [Access control](/help/technotes/access-control.md).</p> | N/A |
+| Use audience analysis dimensions in Analysis Workspace | Access to a data view where the audience analysis dimensions were added | N/A |
 
 
  
