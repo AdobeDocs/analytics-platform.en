@@ -155,7 +155,7 @@ Define a schema that models this data. To set up your schema:
    | Field name | Display name | Type | Additional attributes |
    |---|---|---|---|
    | `id` | `Id` | **[!UICONTROL Integer]** | ![SelectBox](/help/assets/icons/SelectBox.svg) Version descriptor|
-   | `orders` | `Orders` | **[!UICONTROL Integer]** | | 
+   | `orders` | `Orders` | **[!UICONTROL Integer]** | |
    | `pagename` | `Page Name` | **[!UICONTROL String]** | |
    | `personid` | `Person Id` | **[!UICONTROL String]** | ![SelectBox](/help/assets/icons/SelectBox.svg) Primary key<br/>![SelectBox](/help/assets/icons/SelectBox.svg)  Identity<br/>Select CRMID for Identity namespace. |
    | `revenueamount` | `Revenue Amount` | **[!UICONTROL Double]** | |

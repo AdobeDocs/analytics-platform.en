@@ -68,7 +68,7 @@ You can:
   | ![Histogram](/help/assets/icons/Histogram.svg) | [Histogram](/help/analysis-workspace/visualizations/histogram.md) |
   | ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [Scatter](/help/analysis-workspace/visualizations/scatterplot.md) |
   | ![Type](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) |
-  | ![GraphTree](/help/assets/icons/GraphTree.svg) | [Treemap](/help/analysis-workspace/visualizations/treemap.md) | 
+  | ![GraphTree](/help/assets/icons/GraphTree.svg) | [Treemap](/help/analysis-workspace/visualizations/treemap.md) |
 
 * Select ![AddCircle](/help/assets/icons/AddCircle.svg) **outside** a panel to add another blank panel.
 

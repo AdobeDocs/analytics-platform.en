@@ -21,21 +21,21 @@ When you have enabled Customer Journey Analytics reporting for Journey Optimizer
 
 The connection has the name **[!UICONTROL AJO Enabled Connection (*sandbox name*)]** and has the following out of the box values for configuration and datasets:
 
-| **Connection settings** | Value| 
-|---|---| 
-| [!UICONTROL Connection name] | `AJO Enabled Connection (`_`sandbox name`_`)` | 
+| **Connection settings** | Value|
+|---|---|
+| [!UICONTROL Connection name] | `AJO Enabled Connection (`_`sandbox name`_`)` |
 | [!UICONTROL Connection description] | [!UICONTROL *Describe your connection here*] |
 | [!UICONTROL Tags] | [!UICONTROL *Select tags*] |
 
 
-| **Data settings** | Value | 
-|---|---| 
+| **Data settings** | Value |
+|---|---|
 | [!UICONTROL Enable rolling data window] | Enabled. [!UICONTROL Selected number of months] `13`. |
 | [!UICONTROL Sandbox] | [!UICONTROL *name of sandbox*] (disabled; you cannot modify this setting). |
 | [!UICONTROL Average number of daily events] | less than 1 million (disabled; you cannot modify this setting). |
 
 
-| Dataset name | Schema | Dataset type | Data source type | Person Id | Key | Matching Key | Import new data | Backfill data | 
+| Dataset name | Schema | Dataset type | Data source type | Person Id | Key | Matching Key | Import new data | Backfill data |
 |---|---|---|---|---|---|---|---|---|
 | [!UICONTROL AJO Entity Dataset] | [!UICONTROL AJO Entity Record Schema] | [!UICONTROL Lookup] | [!UICONTROL Other] | - |` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status Green](assets/../../connections/assets/status-green.svg) On | ![Status Gray](assets/../../connections/assets/status-gray.svg) Off |
 | [!UICONTROL Journey Step Events] | [!UICONTROL Journey Step Event schema for Journey Orchestration] | [!UICONTROL Event] | [!UICONTROL Other] |[!UICONTROL  IdentityMap(\<primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) On | ![Status Gray](assets/../../connections/assets/status-gray.svg) Off |

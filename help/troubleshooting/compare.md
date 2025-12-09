@@ -1,7 +1,7 @@
 ---
 title: Compare Analytics Source Connector data to Adobe Analytics
 description: Understand differences in data when viewing similar reports in Adobe Analytics and Customer Journey Analytics.
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting

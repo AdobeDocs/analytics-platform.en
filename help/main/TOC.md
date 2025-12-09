@@ -296,6 +296,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Overview](/help/content-analytics/config/configuration.md)
     + [Guided configuration](/help/content-analytics/config/guided.md)
     + [Manual configuration](/help/content-analytics/config/manual.md)
+    + [Standalone configuration](/help/content-analytics/config/standalone.md)
     + [Data collection](/help/content-analytics/config/datacollection.md)
 
 + Analytics dashboards {#cja-dashboards}
