@@ -159,6 +159,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Audience Analysis {#audience-analysis}
     + [Overview](/help/connections/audience-analysis/audience-analysis-overview.md)
     + [Configure](/help/connections/audience-analysis/audience-analysis-configure.md)
+    + [Manage](/help/connections/audience-analysis/audience-analysis-manage.md)
     + [Analyze](/help/connections/audience-analysis/analyze-audiences.md)
 + Tools {#tools}
   + Asset Transfer {#asset-transfer}

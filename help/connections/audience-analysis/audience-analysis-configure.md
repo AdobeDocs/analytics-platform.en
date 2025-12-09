@@ -47,7 +47,11 @@ hidefromtoc: yes
 
 Audience analysis allows you to ingest audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection. Audiences become available as new dimensions for use in Analysis Workspace. For more detailed overview information about audience analysis, see [Audience analysis overview](/help/connections/audience-analysis/audience-analysis-overview.md).
 
+## Create an audience analysis configuration
+
 When creating an audience analysis configuration, you select the sandbox and merge policy associated with the Experience Platform audiences that you want to analyze. Customer Journey Analytics creates a new lookup dataset, then automatically adds the lookup dataset and the profile dataset to the connection you choose. 
+
+Only system administrators can create audience analysis configurations.
 
 To create an audience analysis configuration:
 
@@ -63,8 +67,8 @@ To create an audience analysis configuration:
 
    | Field | Description |
    |---------|----------|
-   | **[!UICONTROL Name]** | Specify a name for the configuration. |
-   | **[!UICONTROL Sandbox]** | Select the sandbox that contains the profile dataset that you want to add to your connection. <p>Adobe Experience Platform provides [sandboxes](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain datasets. Sandboxes are used to control access to datasets.</p> |
+   | **[!UICONTROL Name]** | Specify a name for the configuration. | 
+   | **[!UICONTROL Sandbox]** | Select the Experience Platform sandbox that contains the profile dataset that you want to add to your connection. <p>Adobe Experience Platform provides [sandboxes](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain datasets. Sandboxes are used to control access to datasets.</p> |
 
 1. In the **[!UICONTROL Profile dataset]** section, specify the following information:
 
@@ -76,6 +80,8 @@ To create an audience analysis configuration:
 1. In the **[!UICONTROL Connection]** section, click **[!UICONTROL Select a connection]**.
 
 1. In the Connections dialog, select the checkbox next to the connection where you want to add the profile dataset, then select **[!UICONTROL Use connection]**.
+
+   A connection can be associated with only one audience analysis configuration.
 
 1. Specify the following information to configure the connection:
 
@@ -94,5 +100,35 @@ To create an audience analysis configuration:
 1. Select **[!UICONTROL Create]** to create the configuration.
 
    Because the profile dataset is updated once per day, audiences are available in Customer Journey Analytics data views on the day after you create the audience analysis configuration.
+
+1. After 24 hours, [view audience dimensions in the data view](#view-audience-dimensions-in-the-data-view) to verify that the audience dimensions are available in the data views that you selected. 
  
+## View audience dimensions in the data view
+
+After you [create an audience analysis configuration](#create-an-audience-analysis-configuration), you can verify that audience dimensions were added to the data views that you selected during the configuration.
+
+To view audience dimensions in the data view, you must be a product profile administrator for the product profile that the data view is assigned to. For more information, see [Access control](/help/technotes/access-control.md).
+
+To view the audience analysis dimensions in the data view:
+
+1. In Customer Journey Analytics, select **[!UICONTROL Data Mangement]** > **[!UICONTROL Data views]**.
+
+1. In the **[!UICONTROL Dimensions]** section, the following dimensions should now be available:
+
+   * **[!UICONTROL Audience Name]**
+
+   * **[!UICONTROL Audience Origin]**
+
+   * **[!UICONTROL Exited Audience Origin]**
+
+   * **[!UICONTROL Exited Audience Name]**
+
+   Note that each of these dimensions was added to the profile dataset that is associated with the merge policy that you selected during the audience analysis configuration, and each was added to the new lookup dataset that was created.
+
+   ![Audience dimensions available in the data view](assets/audience-analysis-dataview-dataset.png)
+
+1. Use the audience analysis dimensions in Analysis Workspace. 
+
+   Users who have access to use the data view in Analysis Workspace can see the new dimensions and use them in their analyses. For information about how to use the audience analysis dimensions in Analysis Workspace, see [Analyze Experience Platform audiences in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+
 
