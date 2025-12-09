@@ -35,7 +35,7 @@
 | Option | Function |
 |---------|----------|
 | **[!UICONTROL Recommended]** | Sort components for each type (dimension, metric, segment and date range) based on their recommendation. Components that are used most frequently and most recently by you or by others in your organization are shown higher in each list. |
-| **[!UICONTROL Last modified]** | Sort components for each type (dimension, metric, segment and date range) based on their last modified date. Components that are modified most recently are shown highter in each list. | 
+| **[!UICONTROL Last modified]** | Sort components for each type (dimension, metric, segment and date range) based on their last modified date. Components that are modified most recently are shown highter in each list. |
 | **[!UICONTROL Alphabetical]** | Sort components for each type (dimension, metric, segment and date range) in ascending alphabetic order. |
 | **[!UICONTROL Categorical]** | Sort components for each type (dimension, metric, segment and date range) based on their category. For example Curated versus Non-curated data view components. |
 
@@ -152,7 +152,7 @@ Depending on your reporting window (for example September 10 - September 24), at
 
 | Model | Container | Lookback window | Explanation |
 |---|---|---|---|
-| First touch | Session | Reporting window | Attribution looks at only the third visit. Between email and display, email was first, so email gets 100% credit for the $50 purchase. | 
+| First touch | Session | Reporting window | Attribution looks at only the third visit. Between email and display, email was first, so email gets 100% credit for the $50 purchase. |
 | First touch | Person | 30 Days | Attribution looks at all three visits. Paid search was first, so it gets 100% credit for the $50 purchase. |
 | Linear | Session | Reporting window | Credit is divided between email and display. Both of these channels each get $25 credit. |
 | Linear | Person | 30 Days | Credit is divided between paid search, social, email, and display. Each channel gets $12.50 credit for this purchase. |
@@ -270,7 +270,7 @@ Use the following information to choose the visualization that best meets your n
 | Component Name | Notes |
 | --- | --- |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL Accounts] |  Based on the Account ID specified in a [!UICONTROL Connection]. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL Buying Group] |  The buying groups, based on the Buying group ID specified in the [!UICONTROL Connection]. | 
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL Buying Group] |  The buying groups, based on the Buying group ID specified in the [!UICONTROL Connection]. |
 | [!UICONTROL Events] |  The number of rows from all event datasets in a [!UICONTROL Connection]. |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL Global Accounts] |  Based on the Global Accounts ID specified in the [!UICONTROL Connection]. |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL Opportunities] |  The opportunities, based on the Opportunity ID specified in the [!UICONTROL Connection]. |

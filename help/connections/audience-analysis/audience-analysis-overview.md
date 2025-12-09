@@ -13,7 +13,10 @@ hidefromtoc: yes
 
 >[!NOTE]
 >
->Audience analysis is different from audience publishing, which allows you to create and publish audiences discovered in Customer Journey Analytics to Adobe Experience Platform for customer targeting and personalization. For information about audience publishing,  see [Audience publishing overview](/help/components/audiences/audiences-overview.md).
+>Understand the difference between audience analysis and audience publishing:
+>
+>* **Audience analysis**: Allows you to ingest audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection.
+>* **Audience publishing**: Allows you to create and publish audiences discovered in Customer Journey Analytics to Adobe Experience Platform for customer targeting and personalization. For information about audience publishing, see [Audience publishing overview](/help/components/audiences/audiences-overview.md).
 
 Audience analysis allows you to ingest audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection. Audiences become available as new dimensions for use in Analysis Workspace.
 
@@ -40,6 +43,12 @@ When you configure audience analysis, you select the sandbox and merge policy as
 
 For more information, see [Configure audience analysis](/help/connections/audience-analysis/audience-analysis-configure.md).
 
+## Manage audience analysis configurations
+
+You can manage audience analysis configurations after they are created. You can view, edit, and delete configurations. 
+
+For information about managing existing audience analysis configurations, see [Manage audience analysis configurations](/help/connections/audience-analysis/audience-analysis-manage.md).
+
 ## Analyze audience data in Customer Journey Analytics
 
 With audience data available in Customer Journey Analytics, you can gain actionable insights into how audience members behave across various channels. 
@@ -51,6 +60,16 @@ For example, you can track the behavior of individual customers who were include
 * Audience members who eventually made an in-store purchase 
 
 For more information, see [Analyze Experience Platform audiences in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+
+## Audience analysis role and permission requirements
+
+The following Customer Journey Analytics roles and Experience Platform permissions are required for audience analysis:
+
+| Capability | Customer Journey Analytics role or permission requirements | Experience Platform permission requirements |
+|---------|----------|----------|
+| [Create audience analysis configurations](/help/connections/audience-analysis/audience-analysis-configure.md) | System administrator | <ul><li>Datasets: Read permissions</li><li>Schemas: Read, Write</li><li>and Identity namespaces: Read</li></ul>  |
+| [View audience analysis dimensions in the data view](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | Product profile administrator for the product profile that the data view is assigned to <p>For more information, see [Access control](/help/technotes/access-control.md).</p> | N/A |
+| Use audience analysis dimensions in Analysis Workspace | Access to a data view where the audience analysis dimensions were added | N/A |
 
 
  

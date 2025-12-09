@@ -87,7 +87,7 @@ In addition to being added as a Product administrator in the **Customer Journey 
   * must ensure the Experience Platform permissions for the user include a role that has the Query Service resource with the Manage Queries and Manage Query Service Integration options. For more information on Experience Platform permissions, see [Manage permissions for a product profile](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions). 
 
       | Category | Permission | Description |
-      |---|---|---| 
+      |---|---|---|
       | [!UICONTROL Query Service] | [!UICONTROL Manage Queries] | Access to read, create, edit, and delete structured SQL queries for Platform data. |
       | [!UICONTROL Query Service] | [!UICONTROL Manage Query Service Integration] | Access to create, update, and delete non-expiring credentials for Query Service access. |
 

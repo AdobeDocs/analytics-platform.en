@@ -117,4 +117,4 @@ The filter panel consists of the following sections.
 
 | Tags   | Description |
 |---|---|
-| ![Tags](/help/components/audiences/assets/audiences-filter-tags.png){width="300"} | The **[!UICONTROL Tags]** section lets you filter on tags. <ul><li>You use ![Search](/help/assets/icons/Search.svg) to search for tags you want to use to filter.  | 
+| ![Tags](/help/components/audiences/assets/audiences-filter-tags.png){width="300"} | The **[!UICONTROL Tags]** section lets you filter on tags. <ul><li>You use ![Search](/help/assets/icons/Search.svg) to search for tags you want to use to filter.  |

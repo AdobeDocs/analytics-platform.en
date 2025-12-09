@@ -43,7 +43,7 @@ These release notes cover the release period of October through early November, 
 
 | Notice | Notice added or updated | Description |
 | --- | --- | --- |
-| N/A | | | 
+| N/A | | |
 
 ## Related resources
 

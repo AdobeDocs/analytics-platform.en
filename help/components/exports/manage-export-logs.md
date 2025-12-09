@@ -51,8 +51,8 @@ To find information you need, you can either filter the list of logs or search f
    |Filter | Description |
    |---------|----------|
    | [!UICONTROL **Export ID**] | Specify the export ID of the export log you want to view. |
-   | [!UICONTROL **Account type**] | The account type that the log is associated with. The following account types are available: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. | 
-   | [!UICONTROL **Status**] | The status of the export. The following statuses are available: <ul><li>[!UICONTROL **Pending**]: A specific instance of an export has been started but is not yet complete.<p>Re-running an export that has a status of Pending will delay the export process.</p></li><li>[!UICONTROL **Completed**]: A specific instance of an export has finished processing and is available in the export account.</li><li>[!UICONTROL **Failed**]<p>Various situations can result in a failed export. Hover over the Failed status to see details about the failure.<p>For more information about possible reasons for a failure, see [Troubleshoot failed exports](/help/components/exports/troubleshoot-exports.md).</p>  | 
+   | [!UICONTROL **Account type**] | The account type that the log is associated with. The following account types are available: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
+   | [!UICONTROL **Status**] | The status of the export. The following statuses are available: <ul><li>[!UICONTROL **Pending**]: A specific instance of an export has been started but is not yet complete.<p>Re-running an export that has a status of Pending will delay the export process.</p></li><li>[!UICONTROL **Completed**]: A specific instance of an export has finished processing and is available in the export account.</li><li>[!UICONTROL **Failed**]<p>Various situations can result in a failed export. Hover over the Failed status to see details about the failure.<p>For more information about possible reasons for a failure, see [Troubleshoot failed exports](/help/components/exports/troubleshoot-exports.md).</p>  |
 
    {style="table-layout:auto"}
 
@@ -112,8 +112,8 @@ To configure columns on the [!UICONTROL Logs] tab:
 
    |Available column | Description |
    |---------|----------|
-   | Export name | The name of the export. Users give exports a name when they create them, as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md). | 
-   | Export ID | The ID automatically assigned to the export when it is created. <!-- True? --> | 
+   | Export name | The name of the export. Users give exports a name when they create them, as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md). |
+   | Export ID | The ID automatically assigned to the export when it is created. <!-- True? --> |
    | Instance ID | The ID of the Customer Journey Analytics instance. <!-- True? --> |
    | Data view name | The name of the data view associated with the export. Users can select the data view when they create the export, as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md). |
    | Number of files | The number of files included in the export. |

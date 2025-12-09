@@ -44,9 +44,9 @@ When you create or edit a derived field, you use the derived field interface.
 
 |  | Name | Description |
 |---------|----------|--------|
-| 1 | **Selector** | You use the selector area to select and drag and drop your function, function template, schema field, or standard field on to the rule builder. <br/>Use the drop-down to select between: <br/>![Function](assets/Smock_Function_18_N.svg) [!UICONTROL Functions] - lists available [functions](#function-reference), </br>![Function template icon](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Function templates] - lists available [function templates](#function-templates), <br/>![Schema field icon](assets/Smock_Folder_18_N.svg)  [!UICONTROL Schema fields] - lists fields available from dataset categories (event, profile, lookup) and previously defined derived fields, and <br/>![Standard field icon](assets/Smock_DragHandle_18_N.svg) [!UICONTROL Standard fields] - standard available fields (like Platform Dataset ID). Only string and numeric standard fields are displayed in the selector. If the function supports other data types, standard fields with these other data types can be selected for values or fields within the rule interface.<br/>You can search for function, function templates, schema, and standard fields using the ![Search  icon](assets/Smock_Search_18_N.svg) Search box. <br/>You can filter the selected object list by selecting ![Filter icon](assets/Smock_Filter_18_N.svg) Filter and specify filters in the [!UICONTROL Filter fields by] dialog. You can easily remove filters using ![Close icon](assets/CrossSize75.svg) for each filter. | 
+| 1 | **Selector** | You use the selector area to select and drag and drop your function, function template, schema field, or standard field on to the rule builder. <br/>Use the drop-down to select between: <br/>![Function](assets/Smock_Function_18_N.svg) [!UICONTROL Functions] - lists available [functions](#function-reference), </br>![Function template icon](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Function templates] - lists available [function templates](#function-templates), <br/>![Schema field icon](assets/Smock_Folder_18_N.svg)  [!UICONTROL Schema fields] - lists fields available from dataset categories (event, profile, lookup) and previously defined derived fields, and <br/>![Standard field icon](assets/Smock_DragHandle_18_N.svg) [!UICONTROL Standard fields] - standard available fields (like Platform Dataset ID). Only string and numeric standard fields are displayed in the selector. If the function supports other data types, standard fields with these other data types can be selected for values or fields within the rule interface.<br/>You can search for function, function templates, schema, and standard fields using the ![Search  icon](assets/Smock_Search_18_N.svg) Search box. <br/>You can filter the selected object list by selecting ![Filter icon](assets/Smock_Filter_18_N.svg) Filter and specify filters in the [!UICONTROL Filter fields by] dialog. You can easily remove filters using ![Close icon](assets/CrossSize75.svg) for each filter. |
 | 2 | **Rule builder** | You build your derived field sequentially using one or more rules. A rule is a specific implementation of a function and is therefore always associated with only one function. You create a rule by dragging and dropping a function into the rule builder. The function type determines the interface of the rule.<br/>See the [Rule interface](#rule-interface) for more information. <br/>You can insert a function at the start, end, or in between rules already available in the rule builder. The last rule in the rule builder determines the final output of the derived field. |
-| 3 | **[!UICONTROL **Field Settings**]** | You can name and describe your derived field and inspect its field type. | 
+| 3 | **[!UICONTROL **Field Settings**]** | You can name and describe your derived field and inspect its field type. |
 | 4 | **[!UICONTROL **Final Output**]** | This area shows an on-the-fly updated preview of output values, based on data over the last 30 days and the changes you make to the derived field in the rule builder. |
 
 {style="table-layout:auto"}
@@ -555,14 +555,14 @@ Your site collects the following values for your [!DNL Product Finding Methods] 
 
 | [!DNL Product Finding Methods] |
 |----|
-| [!DNL search p13_no] | 
-| [!DNL search p13_yes] | 
-| [!DNL browse] | 
-| [!DNL search refine p13_no] | 
-| [!DNL search refine p13_yes] | 
-| [!DNL browse] | 
-| [!DNL search redirect p13_yes] | 
-| [!DNL search-redirect] | 
+| [!DNL search p13_no] |
+| [!DNL search p13_yes] |
+| [!DNL browse] |
+| [!DNL search refine p13_no] |
+| [!DNL search refine p13_yes] |
+| [!DNL browse] |
+| [!DNL search redirect p13_yes] |
+| [!DNL search-redirect] |
 | [!DNL browse] |
 
 {style="table-layout:auto"}
@@ -627,18 +627,18 @@ Your desired report should look like:
 
 | [!DNL Trip Duration] |
 |---:|
-| 1 | 
+| 1 |
 | 12 |
-| 3 | 
-| 6 | 
-| 4 | 
-| 8 | 
-| 6 | 
-| 2 | 
-| 1 | 
-| 2 | 
-| 21 | 
-| 8 | 
+| 3 |
+| 6 |
+| 4 |
+| 8 |
+| 6 |
+| 2 |
+| 1 |
+| 2 |
+| 21 |
+| 8 |
 
 ### Derived field {#casewhen-uc3-derivedfield}
 
@@ -752,10 +752,10 @@ You are collecting [!DNL Hotel ID] in a dimension but would like to create a [!D
 
 | [!DNL Hotel ID] |
 |----|
-| [!DNL SLC123] | 
-| [!DNL LAX342] | 
+| [!DNL SLC123] |
+| [!DNL LAX342] |
 | [!DNL SFO456] |
-| [!DNL AMS789] | 
+| [!DNL AMS789] |
 
 {style="table-layout:auto"}
 
@@ -787,12 +787,12 @@ You have collected URLs instead of the friendly page name for several pages. Thi
 
 | [!DNL Page Name] |
 |---|
-| [!DNL Home Page] | 
-| [!DNL Flight Search] | 
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
 | `http://www.adobetravel.ca/Hotel-Search` |
 | `https://www.adobetravel.com/Package-Search` |
 | [!DNL Deals & Offers] |
-| `http://www.adobetravel.ca/user/reviews` | 
+| `http://www.adobetravel.ca/user/reviews` |
 | `https://www.adobetravel.com.br/Generate-Quote/preview` |
 
 {style="table-layout:auto"}
@@ -1164,10 +1164,10 @@ You have received some malformed values for your external marketing channels rep
 
 | [!DNL External Marketing] |
 |----|
-| [!DNL email marketing] | 
+| [!DNL email marketing] |
 | [!DNL email%20marketing] |
-| [!DNL email marketing] | 
-| [!DNL email marketing] | 
+| [!DNL email marketing] |
+| [!DNL email marketing] |
 | [!DNL email%20marketing] |
 
 {style="table-layout:auto"}
@@ -1763,7 +1763,7 @@ Applies aggregation-type functions to metrics or dimensions at event, session, a
 
 | Input Data Type | Input | Included Operators | Limit | Output |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>Value<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>Summarize methods</li><li>Scope<ul><li>Event</li><li>Session</li><li>Person</li></ul></li></ul> | <ul><li>Numeric<ul><li>MAX - return largest value from a set of values</li><li>MIN - returns smallest value from a set of values</li><li>MEDIAN - returns median for a set of values</li><li>MEAN - returns average for a set of values</li><li>SUM - returns the sum for a set of values</li><li>COUNT - returns the number of values received</li><li>DISTINCT - returns set of distinct values</li></ul></li><li>Strings<ul><li>DISTINCT - returns set of distinct values</li><li>COUNT DISTINCT - returns the number of distinct values</li><li>MOST COMMON - returns the string value most often received</li><li>LEAST COMMON - returns the string value least often received</li><li>FIRST - The first value received; only applicable for the session &amp; event tables</li><li>LAST- The last value received; only applicable for the session &amp; event tables</li></ul></li><li>Dates<ul><li>DISTINCT - returns set of distinct values</li><li>COUNT DISTINCT - returns the number of distinct values</li><li>MOST COMMON - returns the string value most often received</li><li>LEAST COMMON - returns the string value least often received</li><li>FIRST - The first value received; only applicable for the session &amp; event tables</li><li>LAST- The last value received; only applicable for the session &amp; event tables</li><li>EARLIEST - The earliest value received (determined by time); only applicable for the session &amp; event tables</li><li>LATEST - The latest value received (determined by time); only applicable for the session &amp; event tables</li></ul></li></ul> | 3 function per derived field | New derived field | 
+| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>Value<ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul></li><li>Summarize methods</li><li>Scope<ul><li>Event</li><li>Session</li><li>Person</li></ul></li></ul> | <ul><li>Numeric<ul><li>MAX - return largest value from a set of values</li><li>MIN - returns smallest value from a set of values</li><li>MEDIAN - returns median for a set of values</li><li>MEAN - returns average for a set of values</li><li>SUM - returns the sum for a set of values</li><li>COUNT - returns the number of values received</li><li>DISTINCT - returns set of distinct values</li></ul></li><li>Strings<ul><li>DISTINCT - returns set of distinct values</li><li>COUNT DISTINCT - returns the number of distinct values</li><li>MOST COMMON - returns the string value most often received</li><li>LEAST COMMON - returns the string value least often received</li><li>FIRST - The first value received; only applicable for the session &amp; event tables</li><li>LAST- The last value received; only applicable for the session &amp; event tables</li></ul></li><li>Dates<ul><li>DISTINCT - returns set of distinct values</li><li>COUNT DISTINCT - returns the number of distinct values</li><li>MOST COMMON - returns the string value most often received</li><li>LEAST COMMON - returns the string value least often received</li><li>FIRST - The first value received; only applicable for the session &amp; event tables</li><li>LAST- The last value received; only applicable for the session &amp; event tables</li><li>EARLIEST - The earliest value received (determined by time); only applicable for the session &amp; event tables</li><li>LATEST - The latest value received (determined by time); only applicable for the session &amp; event tables</li></ul></li></ul> | 3 function per derived field | New derived field |
 
 {style="table-layout:auto"}
 
@@ -1850,7 +1850,7 @@ You collect product data, however that data contains hidden whitespace character
 |---|--:|
 | `"prod12356 "` | 1 |
 | `"prod12356"` | 1 |
-| `" prod12356"` | 1 | 
+| `" prod12356"` | 1 |
 
 {style="table-layout:auto"}
 
@@ -2021,9 +2021,9 @@ You only want use the referring domain from the referring URL as part of a marke
 | [!DNL Referring URL] |
 |----|
 | `https://www.google.com/` |
-| `https://duckduckgo.com/` | 
+| `https://duckduckgo.com/` |
 | `https://t.co/` |
-| `https://l.facebook.com/`| 
+| `https://l.facebook.com/`|
 
 {style="table-layout:auto"}
 
@@ -2054,8 +2054,8 @@ You want to use the value of the `cid` parameter of a query string in a [!DNL Pa
 | [!DNL Page URL] |
 |----|
 | `https://www.adobe.com/?cid=abc123` |
-| `https://www.adobe.com/?em=email1234&cid=def123` | 
-| `https://www.adobe.com/landingpage?querystring1=test&test2=1234&cid=xyz123` | 
+| `https://www.adobe.com/?em=email1234&cid=def123` |
+| `https://www.adobe.com/landingpage?querystring1=test&test2=1234&cid=xyz123` |
 
 {style="table-layout:auto"}
 
@@ -2099,7 +2099,7 @@ The following limitations apply to the Derived field functionality in general:
 | <p>Find &amp; Replace</p> | <ul><li>2 Find &amp; Replace functions per derived field</li></ul> |
 | <p>Lookup</p> | <ul><li>5 Lookup functions per derived field</li></ul> |
 | <p>Lowercase</p> | <ul><li>2 Lowercase functions per derived field</li></ul> |
-| <p>Math</p> | <ul><li>25 operations per derived field</li><li>5 Math functions per derived field</li></ul> | 
+| <p>Math</p> | <ul><li>25 operations per derived field</li><li>5 Math functions per derived field</li></ul> |
 | <p>Merge Fields</p> | <ul><li>2 Merge Fields functions per derived field</li></ul> |
 | <p>Next or Previous</p> | <ul><li>3 Next or Previous functions per derived field</li></ul> |
 | <p>Regex Replace</p> | <ul><li>1 Regex Replace function per derived field</li></ul> |
