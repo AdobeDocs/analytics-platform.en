@@ -224,14 +224,18 @@ The following Analysis Workspace elements and features used in a project aren't 
 
   * Treemap
 
-* Breakdowns 
-
-  The data for breakdowns is included in generated presentations, but it shows at the same level as dimension items.
-
 * Guided analyses
 
 * Components that are restricted from being exported by a data governance policy
  
   For more information, see [Troubleshoot failed exports](/help/components/exports/troubleshoot-exports.md).
 
+## Project elements and features with limited support
 
+* Breakdowns
+
+  As part of the deduplication and scoring process when generating relevant insights, each breakdown within a freeform table is analyzed independently, and only the first 5 breakdowns within a single freeform table are analyzed.
+  
+  Only the first level of a breakdown is supported. A breakdown of a breakdown is not included in the presentation.
+
+  
