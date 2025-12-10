@@ -39,7 +39,7 @@ Experience Platform Data Mirror for Customer Journey Analytics requires relation
 
 ## Use a data warehouse native solution
 
-This quicks start guide uses [[!DNL Google BigQuery]](datawarehouse.md#google-bigquery) as the data warehouse native solution. Other [supported solutions](datawarehouse.md) are [[!DNL Snowflake]](datawarehouse.md#snowflake) and [[!DNL Azure Databricks]](datawarehouse.md#azure-databricks).
+This quick start guide uses [[!DNL Google BigQuery]](datawarehouse.md#google-bigquery) as the data warehouse native solution. Other [supported solutions](datawarehouse.md) are [[!DNL Snowflake]](datawarehouse.md#snowflake) and [[!DNL Azure Databricks]](datawarehouse.md#azure-databricks).
 
 Within [!DNL Google BigQuery], the following example data is stored and updated regularly in a table named **[!UICONTROL eventdata]**.
 
