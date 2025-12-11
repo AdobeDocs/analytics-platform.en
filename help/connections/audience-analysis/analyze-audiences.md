@@ -27,7 +27,7 @@ The Audience overview template contains the following panels:
 
 Shows data for all audiences with usage events that are associated with the selected data view. Audience membership data is updated daily from Experience Platform. Data is always shown for yesterday, so changing the panel date range results in inaccurate data. 
 
-Use the table in ths panel to better understand audience behavior. Drag the Audience Description dimension from the selected data view and add it as a breakdown. Or use any other interaction dimension (such as Page, Action, and so forth) as the breakdown.
+Use the table in this panel to better understand audience behavior. Drag the Audience Description dimension from the selected data view and add it as a breakdown. Or use any other interaction dimension (such as Page, Action, and so forth) as the breakdown.
 
 ## Top audience origins panel
 
