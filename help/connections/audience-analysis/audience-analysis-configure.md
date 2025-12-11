@@ -41,7 +41,7 @@ hidefromtoc: yes
 >[!CONTEXTUALHELP]
 >id="cja-audience-namespace"
 >title="Use primary identity namespace"
->abstract="Enable this option if you want Customer Journey Analytics to find the identity in the Identity Map that is marked with a primary=true attribute and use that identity as the Person ID for that row. This identity is the primary key that is used in Experience Platform for partitioning. <br/>If you leave this option disabled, select a namespace from the Identity namespace field below. Customer Journey Analytics searches each row's Identity Map for this namespace key and uses the identity under that namespace as the Person ID for that row."
+>abstract="Enable this option if you want Customer Journey Analytics to find the identity in the Identity Map that is marked with a primary=true attribute, and then use that identity as the Person ID for that row. This identity is the primary key that is used in Experience Platform for partitioning. <br/>If you leave this option disabled, select a namespace from the Identity namespace field below. Customer Journey Analytics searches each row's Identity Map for this namespace key and uses the identity under that namespace as the Person ID for that row."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -75,7 +75,7 @@ To create an audience analysis configuration:
    | Field | Description |
    |---------|----------|
    | **[!UICONTROL Merge policy]** | Select the merge policy that corresponds to the profile dataset that you want to use for audience analysis. <p>Merge Policies determine how Adobe Experience Platform combines profile data from multiple datasets into unified customer profiles used for audience creation. The merge policy you select affects which profile's attributes are included in your audiences. Each day, a snapshot of this data is generated in Experience Platform. This snapshot provides a static view of the data at a specific point in time and does not include any event data.</p><p>Select the **[!UICONTROL Default Timebased]** merge policy if you see multiple merge policies and you are unsure which one to choose. You can also consult your data team to better understand which audiences are associated with each merge policy.</p> |
-   | **[!UICONTROL Profile dataset]** | The profile dataset that is associated with the merge policy you selected. This profile dataset includes the Experience Platform audience data that you want to analyze. This profile dataset is added to the connection that you select.<p>After you choose a merge policy, the profile snapshot export is shown. For example: `Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`.</p><p>For more inofrmation, see [Profile attribute datasets](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/query#profile-attribute-datasets) in the Experience Platform Dashboards Guide.</p> |
+   | **[!UICONTROL Profile dataset]** | The profile dataset that is associated with the merge policy you selected. This profile dataset includes the Experience Platform audience data that you want to analyze. This profile dataset is added to the connection that you select.<p>After you choose a merge policy, the profile snapshot export is shown. For example: `Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`.</p><p>For more information, see [Profile attribute datasets](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/query#profile-attribute-datasets) in the Experience Platform Dashboards Guide.</p> |
 
 1. In the **[!UICONTROL Connection]** section, click **[!UICONTROL Select a connection]**.
 
@@ -88,8 +88,8 @@ To create an audience analysis configuration:
    | Field | Description |
    |---------|----------|
    | **[!UICONTROL Person ID]** | Select a field from the schema that represents the Person ID. The selection is limited to the list of fields in the schema that are marked as Identity and do have an identity namespace.<p>If there are no Person IDs to choose from, it means one or more Person IDs have not been defined in the schema. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information.</p>  |
-   | **[!UICONTROL Use primary identity namespace]** | This option shows if you select **[!UICONTROL Identity Map]** for the person ID.<p>Enable this option if you want Customer Journey Analytics to find the identity in the Identity Map that is marked with a primary=true attribute and use that identity as the Person ID for that row. This identity is the primary key that is used in Experience Platform for partitioning. And this identity is also the prime candidate for usage as Customer Journey Analytics Person ID (depending on how the dataset is configured in a Customer Journey Analytics connection).</p> |
-   | **[!UICONTROL Identity namespace]** | This option shows if you select **[!UICONTROL Identity Map]** for the person ID. This option is disabled if you use the Primary ID Namespace. <p>Identity namespaces are a component of the [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces). Namespaces serve as indicators of the context to which an identity relates. If you specify a namespace, Customer Journey Analytics searches each row's Identity Map for this namespace key and uses the identity under that namespace as the Person ID for that row. Since Customer Journey Analytics cannot do a full dataset scan of all rows to determine which namespaces are present, all possible namespaces are displayed in the drop-down menu. Know which namespaces are specified in the data; these namespaces are not auto-detected.</p> |
+   | **[!UICONTROL Use primary identity namespace]** | This option shows if you select **[!UICONTROL Identity Map]** for the Person ID.<p>Enable this option if you want Customer Journey Analytics to find the identity in the Identity Map that is marked with a primary=true attribute, and then use that identity as the Person ID for that row. This identity is the primary key that is used in Experience Platform for partitioning. And this identity is also the prime candidate for usage as Customer Journey Analytics Person ID (depending on how the dataset is configured in a Customer Journey Analytics connection).</p> |
+   | **[!UICONTROL Identity namespace]** | This option shows if you select **[!UICONTROL Identity Map]** for the Person ID. This option is disabled if you use the Primary ID Namespace. <p>Identity namespaces are a component of the [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces). Namespaces serve as indicators of the context to which an identity relates. If you specify a namespace, Customer Journey Analytics searches each row's Identity Map for this namespace key and uses the identity under that namespace as the Person ID for that row. Because Customer Journey Analytics cannot do a full dataset scan of all rows to determine which namespaces are present, all possible namespaces are displayed in the drop-down menu. You must know which namespaces are specified in the data; these namespaces are not auto-detected.</p> |
 
 1. In the **[!UICONTROL Data views]** section, click **[!UICONTROL Select data views]**.
 
@@ -111,7 +111,7 @@ To view audience dimensions in the data view, you must be a product profile admi
 
 To view the audience analysis dimensions in the data view:
 
-1. In Customer Journey Analytics, select **[!UICONTROL Data Mangement]** > **[!UICONTROL Data views]**.
+1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Data views]**.
 
 1. In the **[!UICONTROL Dimensions]** section, the following dimensions should now be available:
 
@@ -129,6 +129,6 @@ To view the audience analysis dimensions in the data view:
 
 1. Use the audience analysis dimensions in Analysis Workspace. 
 
-   Users who have access to use the data view in Analysis Workspace can see the new dimensions and use them in their analyses. For information about how to use the audience analysis dimensions in Analysis Workspace, see [Analyze Experience Platform audiences in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+   Users who have access to use the data view in Analysis Workspace can now see the new dimensions and use them in their analyses. For information about how to use the audience analysis dimensions in Analysis Workspace, see [Analyze Experience Platform audiences in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
 
 

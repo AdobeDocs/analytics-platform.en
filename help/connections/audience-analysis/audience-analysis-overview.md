@@ -26,12 +26,12 @@ The following diagram and associated table show a high-level representation of h
 
 | Number | Feature | Function |
 |---------|----------|---------|
-| 1 | Audience analysis configuration | Configuration interface in Customer Journey Analytics used for configuring audience analysis. |
+| 1 | Audience analysis configuration | The configuration interface in Customer Journey Analytics used for configuring audience analysis. |
 | 2 | Sandbox | Must contain the profile dataset that you want to add to your connection. |
 | 3 | Profile dataset | Must include the Experience Platform audience data that you want to analyze. This profile dataset is added to the connection that you select. |
 | 4 | Merge policy | The merge policy associated with the Experience Platform audiences that you want to analyze. |
 | 5 | Profile data | The profile data associated with the merge policy that you select. This data is available within Experience Platform datasets. |
-| 6 | New lookup dataset | Provides friendly names for the new audience dimensions that are created. The lookup dataset is automatically created and added to the connection, along with the profile dataset you select. |
+| 6 | New lookup dataset | Provides friendly names for the new audience dimensions that are created. <p>The lookup dataset is automatically created and added to the connection, along with the profile dataset you select.</p> |
 | 7 | Connection | The connection where you want to add the profile dataset that you select. |
 | 8 | New audience dimensions | New audience dimensions<!--and metrics?--> that represent the Experience Platform audiences that are included in the profile dataset you selected, and are available for reporting in Analysis Workspace. These dimensions are automatically created. |
 | 9 | Data views | The data views you select that are associated with your connection. These are the data views that you want to use when analyzing Experience Platform audience data within Analysis Workspace. These data views are automatically configured with Experience Platform audience data for reporting. |
@@ -67,7 +67,7 @@ The following Customer Journey Analytics roles and Experience Platform permissio
 
 | Capability | Customer Journey Analytics role or permission requirements | Experience Platform permission requirements |
 |---------|----------|----------|
-| [Create audience analysis configurations](/help/connections/audience-analysis/audience-analysis-configure.md) | System administrator | <ul><li>Datasets: Read permissions</li><li>Schemas: Read, Write</li><li>and Identity namespaces: Read</li></ul>  |
+| [Create audience analysis configurations](/help/connections/audience-analysis/audience-analysis-configure.md) | System administrator | <ul><li>Datasets: Read permissions</li><li>Schemas: Read, Write</li><li>Identity namespaces: Read</li></ul>  |
 | [View audience analysis dimensions in the data view](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | Product profile administrator for the product profile that the data view is assigned to <p>For more information, see [Access control](/help/technotes/access-control.md).</p> | N/A |
 | Use audience analysis dimensions in Analysis Workspace | Access to a data view where the audience analysis dimensions were added | N/A |
 

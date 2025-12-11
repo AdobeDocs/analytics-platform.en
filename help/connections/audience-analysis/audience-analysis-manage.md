@@ -37,7 +37,7 @@ To view your existing audience analysis configurations:
 
    * **[!UICONTROL Status]**: The status of the configuration. Possible statuses are Complete, In Progress, or Failed. <!--true?-->
 
-   You can hide any columns by selecting the Column icon ![Column icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg), deselcting any columns that you want to hide, then selecting **[!UICONTROL Apply]**.
+   You can hide any columns by selecting the Column icon ![Column icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg), deselecting any columns that you want to hide, then selecting **[!UICONTROL Apply]**.
 
 1. (Optional) To filter the list of configurations, select the **Filter** ![Audience analysis Filter icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), then filter by any of the following criteria:
 
