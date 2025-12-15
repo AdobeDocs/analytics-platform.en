@@ -153,7 +153,7 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
         
         Make sure that the uploaded file has master layouts with the following names: "Title_Slide," "Section_Divider," "Title_Text," "Title_Chart," "Title_Two_Content_Mixed," "Title_Three_Content_Mixed."
 
-        Up to 15 master layouts are supported.
+        Up to 25 master layouts are supported.
 
         .pptx and .potx files up to 25MB in size are supported.
 
