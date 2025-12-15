@@ -119,7 +119,7 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
 
    To upload a custom template, do either of the following:
    
-   +++(Recommended) Download a blank template and modify it. 
+   +++(Recommended) Download a blank template and modify it
 
      1. Download [this blank template](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?).
 
@@ -143,7 +143,7 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
    
    +++
 
-   +++Upload a custom template directly. 
+   +++Upload a custom template directly 
    
      1. From your file system, drag your custom template to the drop area.
      
