@@ -119,7 +119,7 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
 
    To upload a custom template, do either of the following:
    
-   * (Recommended) Download a blank template and modify it. 
+   +++(Recommended) Download a blank template and modify it
 
      1. Download [this blank template](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?).
 
@@ -140,8 +140,10 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
      1. (Conditional) If a slide layout is mapped incorrectly, select **[!UICONTROL Change selection]** above the slide that was chosen from your uploaded presentation, then choose the slide that matches the layout. 
 
         Repeat this process for each slide that was incorrectly mapped.
+   
+   +++
 
-   * Upload a custom template directly. 
+   +++Upload a custom template directly 
    
      1. From your file system, drag your custom template to the drop area.
      
@@ -162,6 +164,8 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
      1. (Conditional) If a slide layout is mapped incorrectly, select **[!UICONTROL Change selection]** above the slide that was chosen from your uploaded presentation, then choose the slide that matches the layout. 
 
         Repeat this process for each slide that was incorrectly mapped.
+
+   +++
 
 1. Select **[!UICONTROL Export PPT]**.
 
