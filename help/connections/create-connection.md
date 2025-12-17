@@ -99,15 +99,20 @@ role: Admin
 >abstract="A change of the Persistent ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Persistent ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
 
 
+<!-- Start of contextual help entries for CJA connection dialogs -->
+
 >[!CONTEXTUALHELP]
 >id="connections_useincja_ajo"
 >title="Use this connection in Customer Journey Analytics"
->abstract="This option allows you to leverage the advanced reporting capabilities of Customer Journey Analytics with your Journey Optimizer connection. These capabilities allow you to:<ul><li>Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics.</li><li>Edit the Journey Optimizer connection and associated data views.</li></ul>**When this option is enabled, each row of data within the connection counts towards your license rows of data each month for Customer Journey Analytics and appears within the Connections Usage UI.**<br>Explore this option only if you are comfortable with the additional usage of rows of data in Customer Journey Analytics. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)."
+>abstract="This option allows you to leverage the advanced reporting capabilities of Customer Journey Analytics with your Journey Optimizer connection. These capabilities allow you to:<ul><li>Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics.</li><li>Edit the Journey Optimizer connection and associated data views.</li></ul>**When this option is enabled, each row of data within the connection counts towards your license rows of data each month for Customer Journey Analytics and appears within the Connections Usage UI.**<br><br/>Explore this option only if you are comfortable with the additional usage of rows of data in Customer Journey Analytics. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)."
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_ajo"
 >title="Remove this connection from Customer Journey Analytics"
->abstract="This Journey Optimizer connection is currently used in Customer Journey Analyics. The connections allows you to:<ul><li>Perform in-depth analysis of Journey Analytics data within Customer Journey Analytics.</li><li>Edit the Journey Optimizer connection and associated data views.</li></ul>If you emove the connection, in-depth analysis in Customer Journey Analytics is no longer possible. The connection and any associated data views are reset to their default state and can no longer be edited.<br/><br/>[Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo).<br/><br/>[Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo). [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)." 
+>abstract="This Journey Optimizer connection is currently used in Customer Journey Analyics. The connections allows you to:<ul><li>Perform in-depth analysis of Journey Analytics data within Customer Journey Analytics.</li><li>Edit the Journey Optimizer connection and associated data views.</li></ul>**If you remove the connection, in-depth analysis in Customer Journey Analytics is no longer possible. The connection and any associated data views are reset to their default state and can no longer be edited.**<br/><br/>**Billing for this connection in Customer Journey Analytics includes the full month during which the connection is removed.**<br/><br/>The connection remains enabled in Journey Optimizer. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)." 
+
+<!-- End of contextual help entries for CJA connection dialogs -->
+
 
 The connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with an assistive workflow. It provides detailed dataset selection, configuration, and review experience. And allows you to specify critical information like [dataset type](#dataset-types), size, schema, dataset id, batch status, backfill status, identities, and much more, to reduce the risk of wrong connection configuration. Here is an overview of the capabilities:
 
