@@ -75,7 +75,7 @@ The default for Page is `1` and for Rows is `10`. These defaults imply that each
 
 The table below lists examples of page and row values and the resulting output.
 
-| Page | Row    | Output               | 
+| Page | Row    | Output               |
 |------|--------|----------------------|
 | 1    | 10     | Top 10 items         |
 | 2    | 10     | Items 11-20          |

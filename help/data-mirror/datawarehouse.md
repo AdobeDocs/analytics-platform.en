@@ -82,5 +82,5 @@ Read the following documentation for steps on how to enable change data capture 
 
 >[!MORELIKETHIS]
 >
->[Data Mirror quick start guide: Mirror and use model-based data](model-based.md)
+>[Data Mirror quick start guide: Mirror and use relational data](relational.md)
 >

@@ -91,13 +91,13 @@ Adobe provides several [pre-built templates](/help/analysis-workspace/templates/
 
 Following are the templates and the required context label. Without these labels present, the templates do not work, because there is no geo data to work with.
 
-| Template name | Required context label | 
+| Template name | Required context label |
 |---------|----------|
-| Geo countries | [!UICONTROL Geo: Geo Country] | 
-| Geo regions | [!UICONTROL Geo: Geo Region] | 
-| Geo cities | [!UICONTROL Geo: Geo City] | 
-| Geo US states | [!UICONTROL Geo: Geo State] | 
-| Geo US DMA | [!UICONTROL Geo: Geo Dma] | 
+| Geo countries | [!UICONTROL Geo: Geo Country] |
+| Geo regions | [!UICONTROL Geo: Geo Region] |
+| Geo cities | [!UICONTROL Geo: Geo City] |
+| Geo US states | [!UICONTROL Geo: Geo State] |
+| Geo US DMA | [!UICONTROL Geo: Geo Dma] |
 
 To add these context labels:
 

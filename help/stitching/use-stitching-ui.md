@@ -130,7 +130,7 @@ To enable stitching, in the event dataset section of the **[!UICONTROL Add datas
 
 1. Select a lookback window from the **[!UICONTROL Lookback window]** drop-down menu. The available options are  dependent on the Customer Journey Analytics package that you are entitled to.
 
-Once you save a connection that contains datasets that are enabled for identity stitching, the stitching process for each dataset begins when the ingestion of data for that dataset starts.
+Once you save a connection, the stitching process for datasets that are enabled for stitching kicks when the ingestion of data for these datasets starts
 
 ## Limitations
 

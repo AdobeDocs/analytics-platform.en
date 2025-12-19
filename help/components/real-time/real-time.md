@@ -51,7 +51,7 @@ How you collect data determines the latency of real-time reporting in Customer J
 
 | | Data collection | Real-time reporting latency <br/>(approx. less than) | Standard reporting latency <br/>(approx. less than) |
 |:---:|---|--:|--:|
-| 1 | Edge Network SDK / APIs into the Edge Network | 7 minutes | 95 minutes | 
+| 1 | Edge Network SDK / APIs into the Edge Network | 7 minutes | 95 minutes |
 | 2 | Streaming connectors |  17 minutes |  105 minutes |
 | 3 | Adobe Analytics source connector | 17 minutes |  105 minutes |
 | 4 | Other source connectors into the source connectors (including batch data) |  25 hours | 25 hours |

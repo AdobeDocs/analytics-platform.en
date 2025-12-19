@@ -1,17 +1,17 @@
 ---
-title: Mirror and use model-based data
-description: Explain how to mirror and use model-based data in Customer Journey Analytics
+title: Mirror and use relational data
+description: Explain how to mirror and use relational data in Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
 ---
-# Mirror and use model-based data
+# Mirror and use relational data
 
 {{release-limited-testing}}
 
-This quick start guide explains how to use [Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md) to mirror model-based data from a data warehouse native solution in Adobe Experience Platform. And then use that data in Customer Journey Analytics.
+This quick start guide explains how to use [Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md) to mirror relational data from a data warehouse native solution in Adobe Experience Platform. And then use that data in Customer Journey Analytics.
 
 To accomplish this use case, you need to:
 
@@ -21,24 +21,25 @@ To accomplish this use case, you need to:
 
 * **Use a source connector** in Experience Platform to get your mirrored data into a dataset.
 
-* **Set up a connection** in Customer Journey Analytics. This connection should (at least) include your Experience Platform model-based dataset.
+* **Set up a connection** in Customer Journey Analytics. This connection should (at least) include your Experience Platform relational dataset.
 
 * **Set up a data view** in Customer Journey Analytics to define metrics and dimension that you want to use in Analysis Workspace.
 
 * **Set up a project** in Customer Journey Analytics to build your reports and visualizations.
 
-Experience Platform Data Mirror for Customer Journey Analytics requires model-based schemas. 
+Experience Platform Data Mirror for Customer Journey Analytics requires relational schemas. 
 
 
 
 >[!NOTE]
 >
->This quick start guide is a simplified guide on how to mirror model-based data in Adobe Experience Platform and use that data in Customer Journey Analytics. It is highly recommended to study the additional information when referred to.
+>This quick start guide is a simplified guide on how to mirror relational data in Adobe Experience Platform and use that data in Customer Journey Analytics. It is highly recommended to study the additional information when referred to.
 
+{{relational-model-based}}
 
 ## Use a data warehouse native solution
 
-This quicks tart guide uses [[!DNL Google BigQuery]](datawarehouse.md#google-bigquery) as the data warehouse native solution. Other [supported solutions](datawarehouse.md) are [[!DNL Snowflake]](datawarehouse.md#snowflake) and [[!DNL Azure Databricks]](datawarehouse.md#azure-databricks).
+This quick start guide uses [[!DNL Google BigQuery]](datawarehouse.md#google-bigquery) as the data warehouse native solution. Other [supported solutions](datawarehouse.md) are [[!DNL Snowflake]](datawarehouse.md#snowflake) and [[!DNL Azure Databricks]](datawarehouse.md#azure-databricks).
 
 Within [!DNL Google BigQuery], the following example data is stored and updated regularly in a table named **[!UICONTROL eventdata]**.
 
@@ -114,32 +115,32 @@ The data in the table in your data warehouse native solution is ready for Experi
 
 ## Set up a schema
 
-To mirror data in Experience Platform, you first must define the schema for the data. All data that you want to mirror in Experience Platform and that uses Experience Platform Data Mirror for Customer Journey Analytics must conform to a model-based schema.
+To mirror data in Experience Platform, you first must define the schema for the data. All data that you want to mirror in Experience Platform and that uses Experience Platform Data Mirror for Customer Journey Analytics must conform to a relational schema.
 
 Define a schema that models this data. To set up your schema:
 
 1. In the Adobe Experience Platform UI, in the left rail, select **[!UICONTROL Schemas]** within **[!UICONTROL Data Management]**.
 
 1. Select **[!UICONTROL Create schema]**. 
-1. From the drop-down menu, select **[!UICONTROL Model-based]**.
+1. From the drop-down menu, select **[!UICONTROL Relational]**.
 1. If you see a popup with the option to select between **[!UICONTROL Create manually]** or **[!UICONTROL Upload a DDL file]**:
    1. Select **[!UICONTROL select Create manually]**.
 
       ![Schema configuration - Create manually](assets/model-based-manual.png)
 
    1. Select **[!UICONTROL Next]**.
-1. In the **[!UICONTROL Schemas]** > **[!UICONTROL Create model-based schema]** interface:
+1. In the **[!UICONTROL Schemas]** > **[!UICONTROL Create relational schema]** interface:
    1. Enter a **[!UICONTROL Schema display name]**. For example: `Sample Event Feed Schema`.
-   1. Enter a **[!UICONTROL Description]**. For example: `Sample event feed schema for a model-based schema`.
+   1. Enter a **[!UICONTROL Description]**. For example: `Sample event feed schema for a relational schema`.
    1. Select **[!UICONTROL Time series]** as the **[!UICONTROL Schema behavior]**. You select **[!UICONTROL Time series]** for time-series based data and **[!UICONTROL Record]** for record based data. The behavior defines the structure of the schema and the properties that are included. 
    
       Experience Platform Data Mirror for Customer Journey Analytics is mostly used for time series data (for example, event data).
 
-      ![Schema configuration](assets/model-based-create-schema.png)
+      ![Schema configuration](assets/relational-create-schema.png)
 
    1. Select **[!UICONTROL Finish]**.
 
-1. In the **[!UICONTROL Schemas]** > **[!UICONTROL Sample Event Feed Schema]** interface, you see a warning that model-based schemas support ingestion as change rows. 
+1. In the **[!UICONTROL Schemas]** > **[!UICONTROL Sample Event Feed Schema]** interface, you see a warning that relational schemas support ingestion as change rows. 
 
    ![Schema configuration](assets/model-based-create-schema-empty.png)
    
@@ -154,7 +155,7 @@ Define a schema that models this data. To set up your schema:
    | Field name | Display name | Type | Additional attributes |
    |---|---|---|---|
    | `id` | `Id` | **[!UICONTROL Integer]** | ![SelectBox](/help/assets/icons/SelectBox.svg) Version descriptor|
-   | `orders` | `Orders` | **[!UICONTROL Integer]** | | 
+   | `orders` | `Orders` | **[!UICONTROL Integer]** | |
    | `pagename` | `Page Name` | **[!UICONTROL String]** | |
    | `personid` | `Person Id` | **[!UICONTROL String]** | ![SelectBox](/help/assets/icons/SelectBox.svg) Primary key<br/>![SelectBox](/help/assets/icons/SelectBox.svg)  Identity<br/>Select CRMID for Identity namespace. |
    | `revenueamount` | `Revenue Amount` | **[!UICONTROL Double]** | |
@@ -174,7 +175,7 @@ Define a schema that models this data. To set up your schema:
 
      ![Person descriptor](assets/platform-schema-personid.png)
 
-   * The **[!UICONTROL timestamp]** field is configured, together with **[!UICONTROL personid]** field as the **[!UICONTROL Primary key]**. The **[!UICONTROL timestamp]** field is also configured as **[!UICONTROL Timestamp descriptor]**. You only need to define a field as **[!UICONTROL Timestamp descriptor]** for time series model-based data.
+   * The **[!UICONTROL timestamp]** field is configured, together with **[!UICONTROL personid]** field as the **[!UICONTROL Primary key]**. The **[!UICONTROL timestamp]** field is also configured as **[!UICONTROL Timestamp descriptor]**. You only need to define a field as **[!UICONTROL Timestamp descriptor]** for time series relational data.
 
      ![Timestamp descriptor](assets/platform-schema-timestamp.png)
 
@@ -235,7 +236,7 @@ In the **[!UICONTROL Dataflow detail]** step:
 1. Select **[!UICONTROL Enable change data capture]**. A **[!UICONTROL Change data capture requirement]** information box displays with more information.
 1. Select **[!UICONTROL New dataset]** for **[!UICONTROL Target dataset]** to create a new dataset that contains the mirrored data.
 1. Enter an **[!UICONTROL Output dataset name]**. For example: `event-data-mirror`.
-1. Select the model-based schema that you created earlier from the **[!UICONTROL Schema]** drop-down menu. For example: **[!UICONTROL Sample Event Feed Schema]**.
+1. Select the relational schema that you created earlier from the **[!UICONTROL Schema]** drop-down menu. For example: **[!UICONTROL Sample Event Feed Schema]**.
 
    ![Experience Platform - Source Connector - Dataflow details](assets/platform-sources-dataflowdetail-event.png)
 
@@ -292,7 +293,7 @@ In the Customer Journey Analytics interface:
 
    1. In the **[!UICONTROL Select datasets]** step of **[!UICONTROL Add datasets]**:
  
-      1. Select the dataset that contains the mirrored data. For example: **[!UICONTROL event-data-mirror]**. The dataset has **[!UICONTROL Model]** as the **[!UICONTROL Dataset type]**.
+      1. Select the dataset that contains the mirrored data. For example: **[!UICONTROL event-data-mirror]**. The dataset has **[!UICONTROL Relational]** as the **[!UICONTROL Dataset type]**.
    
          ![CJA - Connectons - Add dataset](assets/cja-add-dataset.png)
 
@@ -301,7 +302,7 @@ In the Customer Journey Analytics interface:
 
    1. In the **[!UICONTROL Dataset settings]** step of **[!UICONTROL Add datasets]**:
 
-      For the **[!UICONTROL event-data-mirror]** model-based dataset
+      For the **[!UICONTROL event-data-mirror]** relational dataset
 
       1. Select **[!UICONTROL Event]** as the **[!UICONTROL Dataset type]**.
       1. Select the **[!UICONTROL PersonId]** field as the **[!UICONTROL Person ID]**.
@@ -341,10 +342,10 @@ To create your data view:
    1. Add any schema field and/or standard component that you want to include to the **[!UICONTROL METRICS]** or **[!UICONTROL DIMENSIONS]** component boxes. Ensure you add relevant fields from the dataset that contains the mirrored data. To access those fields:
 
       1. Select **[!UICONTROL Event datasets]**.
-      1. Select **[!UICONTROL Adhoc & Model-based fields]**.
-      1. Drag and drop fields from the model-based schemas onto **[!UICONTROL METRICS]** or **[!UICONTROL DIMENSIONS]**.
+      1. Select **[!UICONTROL Adhoc & Relational fields]**.
+      1. Drag and drop fields from the relational schemas onto **[!UICONTROL METRICS]** or **[!UICONTROL DIMENSIONS]**.
 
-         ![Add model-based field as components](assets/cja-add-dataset-folder-dv.png)
+         ![Add relational fields as components](assets/cja-add-dataset-folder-dv.png)
 
    1. Define derived fields for fields that do not have the proper type, are not in the proper format, or you want to modify for other reasons. For example,  for **[!UICONTROL Revenue Amount]**.
 
@@ -357,7 +358,7 @@ To create your data view:
          1. Select **[!UICONTROL Save]**.
       1. Drag the new **[!UICONTROL Revenue Amount (Numeric)]** derived field and drop the field in **[!UICONTROL METRICS]**.
 
-         ![CJA - Data view - Model-based fields](assets/cja-add-dataset-folder-dv.png)
+         ![CJA - Data view - Relational fields](assets/cja-add-dataset-folder-dv.png)
 
    1. Select **[!UICONTROL Save and continue]**.
 
