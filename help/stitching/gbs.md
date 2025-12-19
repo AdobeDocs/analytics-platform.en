@@ -108,10 +108,9 @@ Stitching makes a minimum of two passes on data in a given dataset.
 
 Data beyond the lookback window is not replayed. A profile must authenticate within a given lookback window for an unauthenticated visit and an authenticated visit to be identified together. Once a device is recognized, it is live stitched from that point forward.
 
-Consider the following two identity graphs for persistent id `246` and `3579`, how these identity graphs are updated over time, and how these updates impact the steps in graph-based stitching.
+Consider the following two identity graph updates over time for visitor A (with persistent ID `246`) and visitor B (with persistent ID `3579`), and how these updates impact the steps in graph-based stitching.
 
-![Identity Graph 246](assets/identity-graph-246.svg)
-![Identity Graph 3579](assets/identity-graph-3579.svg)
+![Identity Graph 3579](assets/identity-graphs.svg)
 
 You can view an identity graph over time for a specific profile using the [Identity Graph Viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer). See also [Identity Service linking logic](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) to get a better understanding of the logic used when linking identities.
 
