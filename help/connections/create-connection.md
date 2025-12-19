@@ -102,12 +102,12 @@ role: Admin
 <!-- Start of contextual help entries for CJA connection dialogs -->
 
 >[!CONTEXTUALHELP]
->id="connections_useincja_ajo"
+>id="connections_useincja_exl_ajo"
 >title="Use this connection in Customer Journey Analytics"
 >abstract="This option allows you to leverage the advanced reporting capabilities of Customer Journey Analytics with your Journey Optimizer connection. These capabilities allow you to:<ul><li>Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics.</li><li>Edit the Journey Optimizer connection and associated data views.</li><li>Analyze journey events, conversation paths, and campaign performance.</li></ul>**When this option is enabled, each row of data within the connection counts towards your license rows of data each month for Customer Journey Analytics and appears within the Connections Usage UI.**<br><br/>Explore this option only if you are comfortable with the additional usage of rows of data in Customer Journey Analytics. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)."
 
 >[!CONTEXTUALHELP]
->id="connections_disableuseincja_ajo"
+>id="connections_disableuseincja_exl_ajo"
 >title="Remove this connection from Customer Journey Analytics"
 >abstract="This Journey Optimizer connection is currently used in Customer Journey Analyics. The connections allows you to:<ul><li>Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics.</li><li>Edit the Journey Optimizer connection and associated data views.</li><li>Analyze journey events, conversation paths, and campaign performance.</li></ul>**If you remove the connection, in-depth analysis in Customer Journey Analytics is no longer possible. The connection and any associated data views are reset to their default state and can no longer be edited.**<br/><br/>**Billing for this connection in Customer Journey Analytics includes the full month during which the connection is removed.**<br/><br/>The connection remains enabled in Journey Optimizer. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)." 
 
@@ -134,7 +134,23 @@ role: Admin
 >[!CONTEXTUALHELP]
 >id="connections_useincja_legal_section_section"
 >title="Legal implications"
->abstract="Customer Journey Analytics usage may result in additional chages based on integration data volumes. See [details on Customer Journey Analytics billing and usage](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/manage-connections#connections-usage)"
+>abstract="Customer Journey Analytics usage may result in additional charges based on integration data volumes. See [details on Customer Journey Analytics billing and usage](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/manage-connections#connections-usage)"
+
+
+>[!CONTEXTUALHELP]
+>id="connections_useincja_exl_ajo_learn_more"
+>title="Learn more"
+>abstract="[Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/manage-connections#connections-usage)."
+
+>[!CONTEXTUALHELP]
+>id="connections_useincja_exl_brand_concierge_learn_more"
+>title="Learn more"
+>abstract="[Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)."
+
+>[!CONTEXTUALHELP]
+>id="connections_useincja_exl_product_usage_learn_more"
+>title="Learn more"
+>abstract="[Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview)."
 
 <!-- End of contextual help entries for CJA connection dialogs -->
 

@@ -13,6 +13,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **December 2025** | |
+| Implications of sandbox changes | Added the implications of a sandbox deletion or reset to the [Deletion and reset implications](/help/technotes/deletion.md) article. |
 | **November 2025** | |
 | Guardrail for rows per day in a connection | Added [guardrail information for data transfer limits](/help/technotes/guardrails.md) about the maximum average number of rows per day in a connection. |
 | **October 2025** | |
