@@ -128,6 +128,7 @@ See also Experience Platform [Real-time Customer Data Platform Guardrails](https
 | Unique Strings | 10 million - 1 billion | System-enforced Guardrail  | Maximum number of unique keys per lookup dataset. Depends on Customer Journey Analytics package (see Product Description).<ul><li>Foundation: 10 million.</li><li>Select: 100 million.</li><li>Prime: 250 million.</li><li>Ultimate: 1 billion</li><ul> |
 | Rows per person | 1 million | System-enforced Guardrail  | Maximum number of rows per unique person ID in a given month within a connection. |
 | Rows per day | 2.5 billion | Performance Guardrail  | Maximum average number of rows per day in a connection. |
+| Rows per connection per year | Approximately 500 billion (about 42 billion per month) | Performance Guardrail  | The recommended row limit per year in a connection. Exceeding this limit can lead to performance degredation. If performance degredation occurs, contact your Adobe account team to discuss alternative configurations. <p>This guardrail is approximate, and will increase over time in order to allow more rows per connection.</p>  |
 | Row Size | 2 | Performance Guardrail / System-enforced Guardrail | Average size in kilobytes per row of data ingested into Customer Journey Analytics (soft limit). A static limit for row size is determined by Guardrails for data ingestion in Experience Platform. |
 
 {style="table-layout:auto"}
