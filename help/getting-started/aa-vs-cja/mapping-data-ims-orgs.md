@@ -4,6 +4,8 @@ description: Learn how you can request to map data from report suites from multi
 role: Admin
 solution: Customer Journey Analytics
 feature: Advanced
+hide: yes
+hidefromtoc: yes
 ---
 # Map Analytics data from multiple IMS organizations
 
