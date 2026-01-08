@@ -44,7 +44,7 @@ To configure and enable the *map Analytics data from multiple IMS organizations*
 
 Once the account manager receives the email with the request to map Analytics data from multiple orgs, the request is reviewed within Adobe. The account manager contacts you for any additional questions, optional training, and other information. 
 
-Once approved, the requested mapping is created and you are notified. In the list of the Analytics source connectors that you have defined in Experience Platform, the destination IMS organization is listed with the source IMS organizations appended to the name.
+Once approved, the requested mapping is created and you are notified. The source IMS organization name is appended to the name of the report suite in the [list of the Analytics report suites](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) in Experience Platform.
 
 ## Limitations and risks
 
