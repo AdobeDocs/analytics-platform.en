@@ -6,13 +6,13 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: db5506e0-6159-4d4b-8149-e4966dab9807
 ---
-# Use Adobe Analytics report suite data in Customer Journey Analytics
+# Use Adobe Analytics report suite data
 
-Adobe Analytics customers can easily leverage their report suites in the Adobe Experience Platform and Customer Journey Analytics using the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). The following discussion explains how to do so.
+Adobe Analytics customers can easily leverage their report suites in Experience Platform and Customer Journey Analytics using the [Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). The following discussion explains how to do so.
 
 >[!IMPORTANT]
 >
->You must have the **Select** package in order to perform data analysis across more than one report suite. Contact your administrator if you're unsure what Customer Journey Analytics package you have.​ 
+>You must have the **Select** package in order to perform data analysis across more than one report suite. Contact your administrator if you're unsure what Customer Journey Analytics package you have.
 
 ## Preparation
 
