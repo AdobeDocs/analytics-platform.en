@@ -3,7 +3,7 @@ title: Map Analytics data from multiple IMS organizations
 description: Learn how you can request to map data from report suites from multiple source IMS organizations to a destination IMS organization.
 role: Admin
 solution: Customer Journey Analytics
-feature: Advanced
+feature: Adobe Analytics Integration,Administration
 hide: yes
 hidefromtoc: yes
 ---
