@@ -99,7 +99,10 @@ To create an audience analysis configuration:
 
 1. Select **[!UICONTROL Create]** to create the configuration.
 
-   Because the profile dataset is updated once per day, audiences are available in Customer Journey Analytics data views on the day after you create the audience analysis configuration.
+   >[!IMPORTANT]
+   >
+   >Because the profile dataset is updated once per day, audiences are available in Customer Journey Analytics data views on the day after you create the audience analysis configuration.
+
 
 1. After 24 hours, [view audience dimensions in the data view](#view-audience-dimensions-in-the-data-view) to verify that the audience dimensions are available in the data views that you selected. 
  

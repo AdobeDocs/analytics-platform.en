@@ -35,11 +35,14 @@ The following diagram and associated table show a high-level representation of h
 | 7 | Connection | The connection where you want to add the profile dataset that you select. |
 | 8 | New audience dimensions | New audience dimensions<!--and metrics?--> that represent the Experience Platform audiences that are included in the profile dataset you selected, and are available for reporting in Analysis Workspace. These dimensions are automatically created. |
 | 9 | Data views | The data views you select that are associated with your connection. These are the data views that you want to use when analyzing Experience Platform audience data within Analysis Workspace. These data views are automatically configured with Experience Platform audience data for reporting. |
-| 10 | Analysis Workspace | The area within Customer Journey Analytics where you create reports that include the Experience Platform audiences that are ingested. |
 
 ## Configure audience analysis
 
 When you configure audience analysis, you select the sandbox and merge policy associated with the Experience Platform audiences that you want to analyze. Customer Journey Analytics creates a new lookup dataset, then automatically adds the lookup dataset and the profile dataset to the connection you choose. 
+
+>[!NOTE]
+>
+>Audiences are available in Customer Journey Analytics data views on the day after you create the audience analysis configuration.
 
 For more information, see [Configure audience analysis](/help/connections/audience-analysis/audience-analysis-configure.md).
 
