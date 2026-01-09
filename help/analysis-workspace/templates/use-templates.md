@@ -1064,12 +1064,12 @@ The following templates are available:
 ### Brand Concierge {#brand-concierge-templates}
 
 >[!CONTEXTUALHELP]
->id="template--brand-concierge-b2c"
+>id="template--brand-concierge--concierge"
 >title="Analyze user engagement through conversation patterns, user feedback, and the effectiveness of your recommendations."
 >abstract="**This can help you** identify engagement patterns, evaluate conversation quality, track customer satisfaction trends, and measure the effectiveness of link recommendations.<br/>**Based on what you learn, you might** do any number of things, like refine your AI agent's responses, develop targeted content for frequent issues, improve recommendation algorithms, or create specialized pathways for different user segments."
 
 >[!CONTEXTUALHELP]
->id="template--brand-concierge--concierge"
+>id="template--brand-concierge--meeting"
 >title="Track the full lifecycle of B2B meeting requests. Monitor conversion rates, consultant performance, and identify your most effective lead generation channels."
 >abstract="**This can help you** track meeting conversion rates, identify high-performing team members, understand seasonal trends in booking behavior, and pinpoint which pages generate the most valuable meeting requests.<br/>**Based on what you learn, you might** do any number of things, like optimize your meeting request process, redistribute resources to high-converting pages, develop targeted training for consultants with lower booking rates, or implement new strategies to reduce missed meetings."
 

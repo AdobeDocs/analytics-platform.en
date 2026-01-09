@@ -7,9 +7,13 @@ role: User
 ---
 # Data storytelling: Generate slide presentations from Workspace reports {#generate-powerpoint}
 
-{{release-limited-testing}}
+>[!AVAILABILITY]
+>
+>Data Storytelling is a skill under the [Data Insights Agent](/help/data-analysis-ai.md). This functionality is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
 
 <!-- also remove lmited testing note from: /help/technotes/access-control.md -->
+
+<!--at GA in January, replace Limited Testing note with this: Data Storytelling is a skill under Data Insights Agent and is available to eligible customers for a limited time. Access to Data Insights Agent will end on 28th February 2026. To continue using Data Insights Agent or other Adobe Experience Platform Agents without interruption, please contact your Adobe account representative to learn more about licensing Adobe Experience Platform Agent Orchestrator. -->
 
 Users with [the necessary permissions](#permission-requirements-to-generate-slides) can automatically generate .pptx presentations based on Analysis Workspace projects. When generating these slide presentations, Customer Journey Analytics automatically creates a story from your data by identifying key insights and converting them into stakeholder-ready slides. 
 
@@ -119,7 +123,7 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
 
    To upload a custom template, do either of the following:
    
-   * (Recommended) Download a blank template and modify it. 
+   +++(Recommended) Download a blank template and modify it
 
      1. Download [this blank template](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?).
 
@@ -140,8 +144,10 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
      1. (Conditional) If a slide layout is mapped incorrectly, select **[!UICONTROL Change selection]** above the slide that was chosen from your uploaded presentation, then choose the slide that matches the layout. 
 
         Repeat this process for each slide that was incorrectly mapped.
+   
+   +++
 
-   * Upload a custom template directly. 
+   +++Upload a custom template directly 
    
      1. From your file system, drag your custom template to the drop area.
      
@@ -151,7 +157,7 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
         
         Make sure that the uploaded file has master layouts with the following names: "Title_Slide," "Section_Divider," "Title_Text," "Title_Chart," "Title_Two_Content_Mixed," "Title_Three_Content_Mixed."
 
-        Up to 15 master layouts are supported.
+        Up to 25 master layouts are supported.
 
         .pptx and .potx files up to 25MB in size are supported.
 
@@ -162,6 +168,8 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
      1. (Conditional) If a slide layout is mapped incorrectly, select **[!UICONTROL Change selection]** above the slide that was chosen from your uploaded presentation, then choose the slide that matches the layout. 
 
         Repeat this process for each slide that was incorrectly mapped.
+
+   +++
 
 1. Select **[!UICONTROL Export PPT]**.
 

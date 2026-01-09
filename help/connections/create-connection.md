@@ -98,6 +98,63 @@ role: Admin
 >title="Change Persistent ID"
 >abstract="A change of the Persistent ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Persistent ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
 
+
+<!-- Start of contextual help entries for CJA connection dialogs -->
+
+>[!CONTEXTUALHELP]
+>id="connections_useincja_exl_ajo"
+>title="Use this connection in Customer Journey Analytics"
+>abstract="This option allows you to leverage the advanced reporting capabilities of Customer Journey Analytics with your Journey Optimizer connection. These capabilities allow you to:<ul><li>Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics.</li><li>Edit the Journey Optimizer connection and associated data views.</li><li>Analyze journey events, conversation paths, and campaign performance.</li></ul>**When this option is enabled, each row of data within the connection counts towards your license rows of data each month for Customer Journey Analytics and appears within the Connections Usage UI.**<br><br/>Explore this option only if you are comfortable with the additional usage of rows of data in Customer Journey Analytics. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)."
+
+>[!CONTEXTUALHELP]
+>id="connections_disableuseincja_exl_ajo"
+>title="Remove this connection from Customer Journey Analytics"
+>abstract="This Journey Optimizer connection is currently used in Customer Journey Analyics. The connections allows you to:<ul><li>Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics.</li><li>Edit the Journey Optimizer connection and associated data views.</li><li>Analyze journey events, conversation paths, and campaign performance.</li></ul>**If you remove the connection, in-depth analysis in Customer Journey Analytics is no longer possible. The connection and any associated data views are reset to their default state and can no longer be edited.**<br/><br/>**Billing for this connection in Customer Journey Analytics includes the full month during which the connection is removed.**<br/><br/>The connection remains enabled in Journey Optimizer. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)." 
+
+>[!CONTEXTUALHELP]
+>id="connections_useincja_exl_brand_concierge"
+>title="Use this connection in Customer Journey Analytics"
+>abstract="This option allows you to leverage the advanced reporting capabilities of Customer Journey Analytics with your Brand Concierge connection. These capabilities allow you to:<ul><li>Perform in-depth analysis of Brand Concierge data within Customer Journey Analytics.</li><li>Edit the Brand Concierge connection and associated data views.</li><li>Analyze conversational engagement, sentiment, and conversion metrics.</li></ul>**When this option is enabled, each row of data within the connection counts towards your license rows of data each month for Customer Journey Analytics and appears within the Connections Usage UI.**<br><br/>Explore this option only if you are comfortable with the additional usage of rows of data in Customer Journey Analytics. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)."
+
+>[!CONTEXTUALHELP]
+>id="connections_disableuseincja_exl_brand_concierge"
+>title="Remove this connection from Customer Journey Analytics"
+>abstract="This Brand Concierge connection is currently used in Customer Journey Analyics. The connections allows you to:<ul><li>Perform in-depth analysis of Brand Concierge data within Customer Journey Analytics.</li><li>Edit the Brand Concierge connection and associated data views.</li><li>Analyze conversational engagement, sentiment, and conversion metrics.</li></ul>**If you remove the connection, in-depth analysis in Customer Journey Analytics is no longer possible. The connection and any associated data views are reset to their default state and can no longer be edited.**<br/><br/>**Billing for this connection in Customer Journey Analytics includes the full month during which the connection is removed.**<br/><br/>The connection remains enabled in Brand Concierge. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)." 
+
+>[!CONTEXTUALHELP]
+>id="connections_useincja_exl_product_usage"
+>title="Use this connection in Customer Journey Analytics"
+>abstract="This option allows you to leverage the advanced reporting capabilities of Customer Journey Analytics with your product usage connection. These capabilities allow you to:<ul><li>Perform in-depth analysis of product usage data within Customer Journey Analytics.</li><li>Edit the product usage connection and associated data views.</li></ul>**When this option is enabled, each row of data within the connection counts towards your license rows of data each month for Customer Journey Analytics and appears within the Connections Usage UI.**<br><br/>Explore this option only if you are comfortable with the additional usage of rows of data in Customer Journey Analytics. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview)."
+
+>[!CONTEXTUALHELP]
+>id="connections_disableuseincja_exl_product_usage"
+>title="Remove this connection from Customer Journey Analytics"
+>abstract="This product usage connection is currently used in Customer Journey Analyics. The connections allows you to:<ul><li>Perform in-depth analysis of product usage data within Customer Journey Analytics.</li><li>Edit the product usage connection and associated data views.</li></ul>**If you remove the connection, in-depth analysis in Customer Journey Analytics is no longer possible. The connection and any associated data views are reset to their default state and can no longer be edited.**<br/><br/>**Billing for this connection in Customer Journey Analytics includes the full month during which the connection is removed.**<br/><br/>The connection remains enabled for product usage. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview)." 
+
+>[!CONTEXTUALHELP]
+>id="connections_useincja_legal_section_section"
+>title="Legal implications"
+>abstract="Customer Journey Analytics usage may result in additional charges based on integration data volumes. See [details on Customer Journey Analytics billing and usage](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/manage-connections#connections-usage)"
+
+
+>[!CONTEXTUALHELP]
+>id="connections_useincja_exl_ajo_learn_more"
+>title="Learn more"
+>abstract="[Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/manage-connections#connections-usage)."
+
+>[!CONTEXTUALHELP]
+>id="connections_useincja_exl_brand_concierge_learn_more"
+>title="Learn more"
+>abstract="[Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)."
+
+>[!CONTEXTUALHELP]
+>id="connections_useincja_exl_product_usage_learn_more"
+>title="Learn more"
+>abstract="[Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview)."
+
+<!-- End of contextual help entries for CJA connection dialogs -->
+
+
 The connection creation and edit workflow experience brings all the dataset and connection configuration settings to the center of the screen with an assistive workflow. It provides detailed dataset selection, configuration, and review experience. And allows you to specify critical information like [dataset type](#dataset-types), size, schema, dataset id, batch status, backfill status, identities, and much more, to reduce the risk of wrong connection configuration. Here is an overview of the capabilities:
 
 * You can enable a rolling data retention window when you create the connection.
@@ -428,7 +485,7 @@ There are different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile]
 |Dataset type|Description|Timestamp|Schema|Person ID <br/> Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}  |
 |---|---|---|---|---|
 | **[!UICONTROL Event]** | Data that represents events in time. For example, web visits, interactions, transactions, POS data, survey data, ad impression data, and so on. This data could be typical clickstream data, with a customer ID or a Cookie ID, and a timestamp. With event data, you have flexibility as to which ID is used as the Person ID. |  Set to the default timestamp field from event-based schemas in [!UICONTROL Experience Platform]. | Any built-in or custom schema that is based on an XDM class with the *Time Series* behavior. Examples include *XDM Experience Event* or *XDM Decision Event*. | You can pick which Person ID or Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} you want to include. Each dataset schema defined in the Experience Platform can have its own set of one or more identities defined and associated with an Identity Namespace. Any of these identities can be used as the Person ID or Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. Examples include Cookie ID, Stitched ID, User ID, Tracking Code, Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, and so on. |
-| **[!UICONTROL Lookup]** | You can add datasets as lookups of fields within all dataset types: Profile, Lookup, and Event datasets (the latter was always supported). This additional capability expands the capability of Customer Journey Analytics to support complex data models, including B2B. This data is used to look up values or keys found in your Event, Profile, or Lookup data. You can add up to two levels of lookups. (Note that [Derived Fields](/help/data-views/derived-fields/derived-fields.md) cannot be used as matching keys for lookups within Connections.) For example, you might upload lookup data that maps numeric IDs in your event data to product names. See the [B2B example](/help/use-cases/b2b/example.md) for an example. | N/A | Any built-in or custom schema that is based on an XDM class with the *Record* behavior, except for the *XDM Individual Profile* class. | N/A |
+| **[!UICONTROL Lookup]** | You can add datasets as lookups of fields within all dataset types: Profile, Lookup, and Event datasets (the latter was always supported). This additional capability expands the capability of Customer Journey Analytics to support complex data models, including B2B. This data is used to look up values or keys found in your Event, Profile, or Lookup data. You can add up to three levels of lookups. (Note that [Derived Fields](/help/data-views/derived-fields/derived-fields.md) cannot be used as matching keys for lookups within Connections.) For example, you might upload lookup data that maps numeric IDs in your event data to product names. See the [B2B example](/help/use-cases/b2b/example.md) for an example. | N/A | Any built-in or custom schema that is based on an XDM class with the *Record* behavior, except for the *XDM Individual Profile* class. | N/A |
 | **[!UICONTROL Profile]** | Data that is applied to your account, persons, users, or customers in the [!UICONTROL Event] data. For example, allows you to upload CRM data about your customers. | N/A | Any built-in or custom schema that is based on the *XDM Individual Profile* class. | You can pick which Person ID / Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} you want to include. Each dataset (except summary datasets), defined in [!DNL Experience Platform], has its own set of one or more Person IDs or Account IDs [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} defined. For example, Cookie ID, Stitched ID, User ID, Tracking Code, Account ID, and so on.<br>![Person ID](assets/person-id.png)**Note**: If you create a connection that includes datasets with different IDs, the reporting reflects that. To merge datasets, you need to use the same Person ID or Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. |
 | **Summary** | Time-series data that is not associated with an individual Person ID. Summary data represents aggregated data at a different level of aggregation, for example campaigns. You can use this data in Customer Journey Analytics to support various use cases. See [Summary data](/help/data-views/summary-data.md) for more information. | Automatically set to the default timestamp field from event-based Summary Metrics schemas in Experience Platform. Only hourly or daily granularity is supported. | Any built-in or custom schema that is based on the *XDM Summary Metrics* class. | N/A |
 
