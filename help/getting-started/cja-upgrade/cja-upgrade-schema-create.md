@@ -15,18 +15,10 @@ exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 >title="Create the desired custom schema in Adobe Experience Platform"
 >abstract="Use the Adobe Experience Platform UI to create a schema so that Adobe knows the correct format to store your data.<br><br>This step involves the actual creation of the schema agreed upon by your organization. The estimated time to create your schema in the Adobe Experience Platform interface is approximately one week, depending on the number of dimensions and metrics that need to be created."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create-default-aa"
 >title="Create a schema using the Adobe Analytics ExperienceEvent field group"
 >abstract="Use the 'Adobe Analytics ExperienceEvent' field group to create a schema in Adobe Experience Platform containing all fields used by Adobe Analytics.<br><br>Creating a schema based on the Adobe Analytics ExperienceEvent field group is simple, taking only a few minutes to complete."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
