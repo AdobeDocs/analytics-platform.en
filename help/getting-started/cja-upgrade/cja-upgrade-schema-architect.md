@@ -19,7 +19,7 @@ exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
 
 {{upgrade-note-step}}
 
-Adobe recommends creating a custom [Experience Data Model](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) (XDM) schema for Customer Journey Analytics when implementing [Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/en/docs/experience-platform/collection/home). Creating this schema is typically done before any implementation changes or code is touched. A custom schema lets you design a concise, organization-specific data contract without inheriting constraints from Adobe Analytics or managing thousands of unused fields. See [Choose your schema for Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) to learn more about the types of schemas available to your organization.
+Adobe recommends creating a custom [Experience Data Model](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) (XDM) schema for Customer Journey Analytics when implementing [Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/en/docs/experience-platform/collection/home). Creating this schema is typically done before any implementation changes or code is touched. A custom schema lets you design a concise, organization-specific data contract without inheriting constraints from Adobe Analytics. See [Choose your schema for Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) to learn more about the types of schemas available to your organization.
 
 Schemas are intended to be polished versions of how you want your data to be structured long-term. Changes to schemas are expensive because they impact data collection, validation, and downstream services. You can add to schemas over time as business requirements allow; however, schema fields cannot be removed once data starts flowing into them.
 
@@ -42,7 +42,7 @@ The Experience Data Model that Customer Journey Analytics uses enables significa
 | Encoding persistence/allocation/expiration into the data model | Capture durable facts in the schema; apply attribution and persistence behavior at the data view level |
 | Duplicating the same value in multiple variables to achieve reporting behaviors | Store the value once and create multiple components (dimensions/metrics) from it in data views |
 | Creating a unique "metric field" for every count that you might want | Capture the right facts once (often as enums/booleans/strings), then define metrics as filtered counts in data views |
-| Designing variables to "pre-solve" reporting | Design your schema to reliably capture facts and use data views to solve reporting semantics |
+| Designing variables to "pre-solve" reporting | Design your schema to capture facts and use data views to solve reporting semantics |
 
 ## Establish a schema using common attributes
 
@@ -60,7 +60,7 @@ A practical way to support multiple channels while keeping a single schema strat
 * **Core:** fields that apply broadly across channels and teams
 * **Extensions:** channel- or domain-specific field groups that apply only where needed (web interaction, commerce, mobile lifecycle, server-side specifics)
 
-This pattern supports a single organizational schema strategy without forcing every team to populate fields that do not apply to their channel.
+This pattern supports a single organizational schema strategy without forcing teams to populate unnecessary fields.
 
 ## Prefer standard field groups where they fit
 
@@ -122,7 +122,7 @@ Define a clear owner for schema changes. A stable schema with disciplined change
 Schema design should reflect privacy and governance expectations, according to your organization's privacy policies. Consider the following points as you architect your schema:
 
 * Collect only what you need to support defined use cases.
-* Ensure consent and data usage requirements are reflected in your collection strategy. See [Use the Web SDK to process customer consent data](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/sdk) for more information.
+* Ensure that consent and data usage requirements are reflected in your collection strategy. See [Use the Web SDK to process customer consent data](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/sdk) for more information.
 * Consider how sensitive fields are labeled and controlled within Adobe Experience Platform governance tools. See [Adobe Customer Journey Analytics and Data Governance](/help/privacy/privacy-overview.md) for more information.
 
 ## Next steps

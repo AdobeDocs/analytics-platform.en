@@ -11,7 +11,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 ## 2026
 
-| Feature | Description
+| Feature | Description |
 |---|---|
 | **January 2026** | |
 | Architect a schema | Added substantial information and context to [Architect your schema for use with Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md). |
