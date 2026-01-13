@@ -21,22 +21,22 @@ exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
 
 Adobe recommends creating a custom [Experience Data Model](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) (XDM) schema for Customer Journey Analytics when implementing [Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/en/docs/experience-platform/collection/home). Creating this schema is typically done before any implementation changes or code is touched. A custom schema lets you design a concise, organization-specific data contract without inheriting constraints from Adobe Analytics or managing thousands of unused fields. See [Choose your schema for Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) to learn more about the types of schemas available to your organization.
 
-Schemas are intended to be polished versions of how you want your data to be structured long-term. Changes to schemas are expensive because they impact data collection, validation, and downstream services. You can add to schemas over time as business requirements allow; however, schemas fields cannot be removed once data starts flowing into them.
+Schemas are intended to be polished versions of how you want your data to be structured long-term. Changes to schemas are expensive because they impact data collection, validation, and downstream services. You can add to schemas over time as business requirements allow; however, schema fields cannot be removed once data starts flowing into them.
 
 ## Compare schemas to data views
 
 The data pipeline for Customer Journey Analytics contains separate areas for data collection and data interpretation. When upgrading from Adobe Analytics, a common misstep is trying to recreate props and eVars with their behaviors in XDM. Instead, use the Web SDK to collect the data and use [Data views](/help/data-views/data-views.md) to determine how that data is interpreted in reports.
 
-| Layer | Primary purpose | What belongs | What does not belong |
+| Layer | Primary purpose | Flexibility | What belongs | What does not belong |
 |---|---|---|---|
-| **XDM schema** | Define the durable structure and meaning of collected data | Event and entity shape, field meaning, relationships, allowed values, reuse across channels | Numbered "slots" (eVar1/prop1), attribution/persistence logic, reporting-specific workarounds |
-| **Data views** | Define how collected data behaves in analysis | Component settings, attribution and persistence behavior, derived fields, filtered metrics, calculated metrics | Fundamental meaning of fields; that meaning should be stable in the schema |
+| **XDM schema** | Define the durable structure and meaning of collected data | Rigid; considered immutable data points | Event and entity shape, field meaning, relationships, allowed values, reuse across channels | Numbered "slots" (eVar1/prop1), attribution/persistence logic, reporting-specific workarounds |
+| **Data views** | Define how collected data behaves in analysis | Flexible; can be freely modified and can retroactively re-interpret data | Component settings, attribution and persistence behavior, derived fields, filtered metrics, calculated metrics | Fundamental meaning of fields; that meaning should be stable in the schema |
 
 ## Compare schemas to Adobe Analytics data collection
 
 The Experience Data Model that Customer Journey Analytics uses enables significantly more flexibility than most other Analytics solutions (including Adobe Analytics). Establishing a solid schema is your organization's opportunity to avoid carrying forward constraints that exist in other Analytics products.
 
-| Common Adobe Analytics habit | Better approach in XDM + CJA |
+| Common Adobe Analytics habit | Better approach in XDM + Customer Journey Analytics |
 |---|---|
 | Designing around numbered slots (`eVar1`–`eVar250`, `prop1`–`prop75`) | Create fields with stable meaning (for example, `search.term`, `content.category`, `user.membershipTier`) and reuse them consistently |
 | Encoding persistence/allocation/expiration into the data model | Capture durable facts in the schema; apply attribution and persistence behavior at the data view level |
@@ -44,7 +44,7 @@ The Experience Data Model that Customer Journey Analytics uses enables significa
 | Creating a unique "metric field" for every count that you might want | Capture the right facts once (often as enums/booleans/strings), then define metrics as filtered counts in data views |
 | Designing variables to "pre-solve" reporting | Design your schema to reliably capture facts and use data views to solve reporting semantics |
 
-## Establishing a schema using common attributes
+## Establish a schema using common attributes
 
 A unified schema across channels becomes possible when you standardize a set of reusable attributes that appear across many events. Some examples include:
 
@@ -78,9 +78,9 @@ Custom fields are appropriate when:
 * You need additional attributes to meet reporting, governance, or activation requirements
 * You want to represent a business-specific taxonomy (for example, internal content categories)
 
-## Decide where "metric meaning" lives
+## Determine how metrics are counted
 
-In Adobe Analytics, many teams treat the `events` variable as where metrics go. In Customer Journey Analytics, you can model metrics in multiple ways depending on what you need to count and how you want to interpret it.
+In Adobe Analytics, many teams treat the `events` variable as the only means to track metrics. In Customer Journey Analytics, you can track metrics in multiple ways depending on what you need to count and how you want to interpret it.
 
 When architecting a schema, stick to facts. For example, `error.type = "validation"`, `user.isLoggedIn = true`, `checkout.step = "shipping"`. Define metrics in the data view as counts and filtered counts over those facts. For example:
 
@@ -96,9 +96,9 @@ When architecting a schema, stick to facts. For example, `error.type = "validati
 
 >[!TIP]
 >
->When deciding whether something should be a dedicated field vs. a derived field later, prefer capturing the durable fact in schema if it is broadly useful and stable. You can use derived fields to correct or reshape data after collection.
+>When deciding whether something should be a dedicated field in the schema vs. a derived field later, prefer capturing the durable fact in the schema if it is broadly useful and stable. You can use derived fields to correct or reshape data after collection.
 
-## Maintaining parity with Adobe Analytics during transition without schema baggage
+## Maintain parity with Adobe Analytics during transition without schema baggage
 
 Some organizations need to continue Adobe Analytics reporting while upgrading to Customer Journey Analytics. You can maintain parity without introducing Analytics-specific artifacts into your long-term schema design using the following approach:
 
