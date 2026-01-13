@@ -222,9 +222,7 @@ The following Analysis Workspace elements and features used in a project aren't 
 
   * Combo
 
-  * Fallout
-
-  * Flow
+  * Freeform tables with multiple dimension columns (tables with a single dimension column are supported)
 
   * Journey canvas
 
