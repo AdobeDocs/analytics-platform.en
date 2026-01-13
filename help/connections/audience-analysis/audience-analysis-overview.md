@@ -74,7 +74,13 @@ The following Customer Journey Analytics roles and Experience Platform permissio
 | [View audience analysis dimensions in the data view](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | Product profile administrator for the product profile that the data view is assigned to <p>For more information, see [Access control](/help/technotes/access-control.md).</p> | N/A |
 | Use audience analysis dimensions in Analysis Workspace | Access to a data view where the audience analysis dimensions were added | N/A |
 
+## Audience analysis limits
 
+ Consider the following limits when [configuring audience analysis](/help/connections/audience-analysis/audience-analysis-configure.md):
+ 
+ * A single sandbox can support up to 100 audience analysis configurations.
+
+ * A connection can be associated with only one audience analysis configuration.
  
 
 
