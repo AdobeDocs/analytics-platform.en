@@ -24,14 +24,16 @@ Find below details that you should consider when configuring each of these compo
 You need to create a [relational schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational){target="_blank"} that s the data warehouse native table you want to mirror. When you construct the relational schema, ensure that the following requirements are met:
 
 * When prompted for the type of relational schema, ensure you select the manual option.
-* Select the appropriate schema for the type of data. Note that Experience Platform Data Mirror is mostly used for time series data (for example, event data).
+* Select the appropriate schema for the type of data. Note that Experience Platform Data Mirror is mostly used for time series data (for example, event data) but can also be used for record-based (lookup and profile) data.
   
 * Define the fields in your schema and their attributes
 * Configure the required attributes for fields in a relational schema: 
  
-  * primary key 
-  * version identifier 
-  * timestamp identifier (for time series data).
+  * **Primary key**. 
+  * **Version descriptor**, which must be configured as a sequential number (Integer field type) or as a DateTime field type. When you use a DateTime field type, the version descriptor defines the timestamp of a modification of the data, for example to contain a last modified timestamp.
+  * **Timestamp descriptor** (for time series data), which defines the immutable timestamp at the moment that an event is captured. The timestamp descriptor is not required for a record-based relational schema.
+  
+
 
 ## Dataset
 

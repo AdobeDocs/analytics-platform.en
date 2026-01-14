@@ -68,7 +68,7 @@ To create an audience analysis configuration:
    | Field | Description |
    |---------|----------|
    | **[!UICONTROL Name]** | Specify a name for the configuration. | 
-   | **[!UICONTROL Sandbox]** | Select the Experience Platform sandbox that contains the profile dataset that you want to add to your connection. <p>Adobe Experience Platform provides [sandboxes](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain datasets. Sandboxes are used to control access to datasets.</p> |
+   | **[!UICONTROL Sandbox]** | Select the Experience Platform sandbox that contains the profile dataset that you want to add to your connection. A single sandbox can support up to 100 audience analysis configurations. <p>Adobe Experience Platform provides [sandboxes](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain datasets. Sandboxes are used to control access to datasets.</p> |
 
 1. In the **[!UICONTROL Profile dataset]** section, specify the following information:
 
@@ -99,7 +99,10 @@ To create an audience analysis configuration:
 
 1. Select **[!UICONTROL Create]** to create the configuration.
 
-   Because the profile dataset is updated once per day, audiences are available in Customer Journey Analytics data views on the day after you create the audience analysis configuration.
+   >[!IMPORTANT]
+   >
+   >Because the profile dataset is updated once per day, audiences are available in Customer Journey Analytics data views on the day after you create the audience analysis configuration.
+
 
 1. After 24 hours, [view audience dimensions in the data view](#view-audience-dimensions-in-the-data-view) to verify that the audience dimensions are available in the data views that you selected. 
  
