@@ -28,7 +28,7 @@ Schemas are intended to be polished versions of how you want your data to be str
 The data pipeline for Customer Journey Analytics contains separate areas for data collection and data interpretation. When upgrading from Adobe Analytics, a common misstep is trying to recreate props and eVars with their behaviors in XDM. Instead, use the Web SDK to collect the data and use [Data views](/help/data-views/data-views.md) to determine how that data is interpreted in reports.
 
 | Layer | Primary purpose | Flexibility | What belongs | What does not belong |
-|---|---|---|---|
+|---|---|---|---|---|
 | **XDM schema** | Define the durable structure and meaning of collected data | Rigid; considered immutable data points | Event and entity shape, field meaning, relationships, allowed values, reuse across channels | Numbered "slots" (eVar1/prop1), attribution/persistence logic, reporting-specific workarounds |
 | **Data views** | Define how collected data behaves in analysis | Flexible; can be freely modified and can retroactively re-interpret data | Component settings, attribution and persistence behavior, derived fields, filtered metrics, calculated metrics | Fundamental meaning of fields; that meaning should be stable in the schema |
 
