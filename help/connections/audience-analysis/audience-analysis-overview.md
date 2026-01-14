@@ -40,9 +40,11 @@ The following diagram and associated table show a high-level representation of h
 
 When you configure audience analysis, you select the sandbox and merge policy associated with the Experience Platform audiences that you want to analyze. Customer Journey Analytics creates a new lookup dataset, then automatically adds the lookup dataset and the profile dataset to the connection you choose. 
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Audiences are available in Customer Journey Analytics data views on the day after you create the audience analysis configuration.
+>Audience data is reprocessed and generated each night, making audience data accurate for analysis only for the previous day ("yesterday"). 
+>
+>Audiences are available in Customer Journey Analytics data views on the day after you create the audience analysis configuration. 
 
 For more information, see [Configure audience analysis](/help/connections/audience-analysis/audience-analysis-configure.md).
 
