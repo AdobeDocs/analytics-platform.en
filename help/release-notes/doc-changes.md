@@ -13,6 +13,14 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 | --- | --- |
+| **January 2026** | |
+| Guardrail for rows per year in a connection | Added [guardrail information for data transfer limits](/help/technotes/guardrails.md) about the maximum average number of rows per year in a connection. |
+| View the data center where your data is stored | Added [information about the data centers where data is stored](/help/technotes/data-centers.md#view-the-data-center-where-your-data-is-stored). |
+
+## 2025
+
+| Feature | Description |
+| --- | --- |
 | **December 2025** | |
 | Implications of sandbox changes | Added the implications of a sandbox deletion or reset to the [Deletion and reset implications](/help/technotes/deletion.md) article. |
 | **November 2025** | |
