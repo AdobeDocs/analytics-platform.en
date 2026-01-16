@@ -141,10 +141,8 @@ On top of the [field-based stitching limitations](/help/stitching/fbs.md#limitat
 
 ## Migration
 
-Stitching for a specific dataset within the Connections interface does not create a stitched dataset in the data lake of Experience Platform. However, you might still have a stitched dataset in the data lake for that same dataset as a result of an earlier stitching request procedure. And this scenario is valid for one or more datasets for which you have requested stitching in the past.
+Stitching enabled in the Connections interface can coexist without any issues with request based stitching. 
 
-When you migrate to the new stitching in the Connections interface functionality, the existing stitched datasets can continue to persist in the Experience Platform data lake. 
+For example, you have web-based stitched datasets in the data lake as a result of earlier or current stitching requests. You can add stitched data from a call-center dataset using the Connections interface to combine that data with the web-based data. 
 
-You can:
-
-* (build out the various scenarios including do's and don'ts...)
+Eventually, Adobe will automatically migrate your request based stitched datasets to the new stitching in connections experience.
