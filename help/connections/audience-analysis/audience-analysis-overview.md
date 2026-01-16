@@ -80,9 +80,9 @@ The following Customer Journey Analytics roles and Experience Platform permissio
 
  Consider the following limits when [configuring audience analysis](/help/connections/audience-analysis/audience-analysis-configure.md):
  
- * A single sandbox can support up to 100 audience analysis configurations.
+* A single sandbox can support up to 100 audience analysis configurations.
 
- * A connection can be associated with only one audience analysis configuration.
+* A connection can be associated with only one audience analysis configuration.
  
 
 
