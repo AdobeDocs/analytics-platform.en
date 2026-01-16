@@ -138,3 +138,13 @@ On top of the [field-based stitching limitations](/help/stitching/fbs.md#limitat
 
 * You can only stitch an event dataset once as part of a single connection. You cannot define the same event dataset more than once and use a separate stitching configuration for each instance. If you want to apply different stitching configurations on the same dataset, use a separate connection for each configuration.
 
+
+## Migration
+
+Stitching for a specific dataset within the Connections interface does not create a stitched dataset in the data lake of Experience Platform. However, you might still have a stitched dataset in the data lake for that same dataset as a result of an earlier stitching request procedure. And this scenario is valid for one or more datasets for which you have requested stitching in the past.
+
+When you migrate to the new stitching in the Connections interface functionality, the existing stitched datasets can continue to persist in the Experience Platform data lake. 
+
+You can:
+
+* (build out the various scenarios including do's and don'ts...)
