@@ -250,7 +250,16 @@ All other advanced functions used in calculated metrics are supported when expor
 
 The following sections list which calculated metrics are supported when exporting full tables:
 
-### Supported basic functions:
+### Basic function support
+
+
+| Basic function | Supported | 
+|---------|----------|
+| Absolute Value | Yes ![StatusGreen](/help/assets/icons/StatusGreen.svg)![Yes checkmark](/help/assets/icons/CheckmarkCircleGreen.svg) |
+| A2 | B2 | 
+| A3 | No ![StatusRed](/help/assets/icons/StatusRed.svg) | 
+
+### Supported basic functions
 
 * Column Sum
 * Square Root
@@ -258,20 +267,24 @@ The following sections list which calculated metrics are supported when exportin
 * Modulo
 * Row Sum
 * Power Operator
+* Absolute Value
+* Round
+* Row Min
 * Row Count
+* Row Max
 * Count
 * Column Maximum
+* Column Minimum
+* Mean
 
 ### Unsupported basic functions
-
-* Row Min 
-* Row Max 
-* Variance 
-* Mean 
+ 
 * Quartile
 * Percentile
 * Median 
 * Standard Deviation
+
+<!-- planned for future:  Variance -->
 
 ### Supported advanced functions
 
@@ -307,6 +320,10 @@ Boolean logic functions:
 * Exponential regression: Predicted Y
 * Exponential regression: Intercept
 * Exponential regression: Slope
+
+### Unsupported advanced functions
+
+
 
 ## Attribution behavior
 
