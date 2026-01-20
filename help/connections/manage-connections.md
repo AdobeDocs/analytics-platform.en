@@ -50,7 +50,7 @@ You can quickly search for a connection using the Search ![Search](https://spect
 
 To apply a filter to the list of connections, select the filter icon, then select from the following filter options:
 
-| Filter option | Description | 
+| Filter option | Description |
 |---------|----------|
 | **[!UICONTROL Datasets]** | Only connections that are associated with the datasets you select are displayed. |
 | **[!UICONTROL Owner]** | Only connections owned by the people you select are displayed. |
@@ -269,10 +269,10 @@ The datasets table displays the following columns for each dataset:
 | **[!UICONTROL Batches added]** | The number of batches that have been added to a connection during the selected date range. |
 | **[!UICONTROL Last added]** | The timestamp of the latest batch that has been added to a connection.  |
 | **[!UICONTROL Data source type]** | The source type. You define the source type when you add a dataset to a connection. |
-| **[!UICONTROL Dataset type]** | The [dataset type](create-connection.md#dataset-types). Type can be **[!UICONTROL Event]**, **[!UICONTROL Profile]**, **[!UICONTROL Lookup]**, **[!UICONTROL Summary]**. An adhoc or model-based dataset is identifed by **[!UICONTROL (Adhoc)]** or **[!UICONTROL (Model)]**. For example, **[!UICONTROL Event (Adhoc)]** or **[!UICONTROL Lookup (Model)]**.  |
+| **[!UICONTROL Dataset type]** | The [dataset type](create-connection.md#dataset-types). Type can be **[!UICONTROL Event]**, **[!UICONTROL Profile]**, **[!UICONTROL Lookup]**, **[!UICONTROL Summary]**. An adhoc or relational dataset is identifed by **[!UICONTROL (Adhoc)]** or **[!UICONTROL (Relational)]**. For example, **[!UICONTROL Event (Adhoc)]** or **[!UICONTROL Lookup (Relational)]**.  |
 | **[!UICONTROL Schema]** | The Experience Platform schema that the dataset is based on.  |
 | **[!UICONTROL Import new data]** | The status of importing new data for the dataset: <p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** if dataset is configured to import new data, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** if dataset is configured not to import new data import. |
-| **[!UICONTROL Transform data]** | The transformation status of applicable B2B lookup datasets. See [Transform datasets for B2B lookups](transform-datasets-b2b-lookups.md) for more information.<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** for applicable datasets enabled for transformation, <p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** for applicable datasets not enabled for transformation, and<p>**[!UICONTROL N/A]** for all other datasets, not applicable for transformation.| 
+| **[!UICONTROL Transform data]** | The transformation status of applicable B2B lookup datasets. See [Transform datasets for B2B lookups](transform-datasets-b2b-lookups.md) for more information.<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** for applicable datasets enabled for transformation, <p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** for applicable datasets not enabled for transformation, and<p>**[!UICONTROL N/A]** for all other datasets, not applicable for transformation.|
 | **[!UICONTROL Backfill data]** | The status of backfill data for the dataset.<p>![Status red](assets/status-red.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills,<p>![Status red](assets/status-orange.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of processing backfills,<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of backfills completed, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case backfills are not configured. |
 
 >[!IMPORTANT]
@@ -299,7 +299,7 @@ When no individual dataset is selected in the datasets table, the right panel sh
 | **[!UICONTROL Data views using connection]** | The data views that use this connection. |
 | **[!UICONTROL Import new data]** | The status of importing new data for datasets: <p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** for how many datasets are configured to import new data, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** for how many datasets new data import is turned off. |
 | **[!UICONTROL Backfill data]** | The status of backfill data for datasets.<p>![Status red](assets/status-red.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills across datasets,<p>![Status red](assets/status-orange.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of processing backfills across datasets,<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of completed backfills for datasets, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no backfills are defined for the datasets in the connection. |
-| **[!UICONTROL Transform data]** | The transformation status of applicable B2B lookup datasets. See [Transform datasets for B2B lookups](transform-datasets-b2b-lookups.md) for more information.<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** for number of datasets enabled for transformation.| 
+| **[!UICONTROL Transform data]** | The transformation status of applicable B2B lookup datasets. See [Transform datasets for B2B lookups](transform-datasets-b2b-lookups.md) for more information.<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** for number of datasets enabled for transformation.|
 | **[!UICONTROL Created by]** | The name of the person who created the connection. |
 | **[!UICONTROL Last modified]** | The timestamp of the last change to the connection. |
 | **[!UICONTROL Last modified by]** | The name of the person who last modified the connection. |
@@ -325,7 +325,7 @@ When a dataset row is selected in the datasets table, a panel on the right side 
 | **[!UICONTROL Import new data]** | The status of importing new data for the dataset: <p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ On]** if the dataset is configured to import new data, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x Off_]** if the dataset is configured not to import new data.  |
 | **[!UICONTROL Backfill data]** | The status of backfill data for the dataset.<p>![Status red](assets/status-red.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills failed]** for number of failed backfills,<p>![Status red](assets/status-orange.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills processing]** for number of processing backfills,<p>![Status green](assets/status-green.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _x_ backfills completed]** for number of backfills completed, and<p>![Status gray](assets/status-gray.svg)&nbsp;&nbsp;&nbsp;**[!UICONTROL _Off_]** in case no backfills are configured.<p>To show a dialog with an overview of the past backfills for the dataset, select <img src="./assets/pastbackfill.svg" alt="Past backfills" width="15"/> **[!UICONTROL Past backfills]**. |
 | **[!UICONTROL Data source type]** | Data source type as defined when the dataset was added to the connection. |
-| **[!UICONTROL Dataset type]** | The [dataset type](create-connection.md#dataset-types). Type can be **[!UICONTROL Event]**, **[!UICONTROL Profile]**, **[!UICONTROL Lookup]**, **[!UICONTROL Summary]**. An adhoc or model-based dataset is identifed by **[!UICONTROL (Adhoc)]** or **[!UICONTROL (Model)]**. For example, **[!UICONTROL Event (Adhoc)]** or **[!UICONTROL Lookup (Model)]**. |
+| **[!UICONTROL Dataset type]** | The [dataset type](create-connection.md#dataset-types). Type can be **[!UICONTROL Event]**, **[!UICONTROL Profile]**, **[!UICONTROL Lookup]**, **[!UICONTROL Summary]**. An adhoc or relational dataset is identifed by **[!UICONTROL (Adhoc)]** or **[!UICONTROL (Relational)]**. For example, **[!UICONTROL Event (Adhoc)]** or **[!UICONTROL Lookup (Relational)]**. |
 | **[!UICONTROL Schema]** | The Experience Platform schema that this dataset is based on. |
 | **[!UICONTROL Dataset ID]** | The dataset ID, as generated in Experience Platform. |
 
@@ -415,7 +415,7 @@ The Usage interface uses the following metrics:
 | Metric name | Description |
 |---|---|
 | **Historical reportable rows** | Count of rows for the period older than 13 months. |
-| **Core reportable rows** | Count of rows over the last 13 months. | 
+| **Core reportable rows** | Count of rows over the last 13 months. |
 | **Core data volume** | Total amount of data stored on disk. |
 | **Average row size** | Average amount of storage consumed for each row of data ingested and stored. |
 | **Ingested rows** | How many rows are ingested for the specific period. |
@@ -482,8 +482,8 @@ The Usage interface consists of two panels:
     |---|---|
     | **[!UICONTROL Connection]** | **[!UICONTROL -]** and **[!UICONTROL Dataset]** |
     | **[!UICONTROL Dataset]** | **[!UICONTROL -]** |
-    | **[!UICONTROL Sandbox]** | **[!UICONTROL Connection]** | 
-    | **[!UICONTROL Tag]** | **[!UICONTROL Connection]** | 
+    | **[!UICONTROL Sandbox]** | **[!UICONTROL Connection]** |
+    | **[!UICONTROL Tag]** | **[!UICONTROL Connection]** |
 
   ![Detail breakdown](assets/usage-detail-breakdown.png)
 

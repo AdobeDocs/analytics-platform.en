@@ -95,6 +95,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Compare with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+    + [Map Adobe Analytics data](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
     + [Feature support](../getting-started/aa-vs-cja/cja-aa.md)
     + [Compare terminology](../getting-started/aa-vs-cja/terminology.md)
     + [Compare data processing](../getting-started/aa-vs-cja/data-processing-comparisons.md)
@@ -123,7 +124,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Data warehouse native solutions](/help/data-mirror/datawarehouse.md)
     + [Experience Platform](/help/data-mirror/aep.md)
     + [Customer Journey Analytics](/help/data-mirror/cja.md)
-  + [Data Mirror quick start guide](/help/data-mirror/model-based.md)
+  + [Data Mirror quick start guide](/help/data-mirror/relational.md)
 
 + Connections {#cja-connections}
   + [Connections overview](../connections/overview.md)
@@ -159,6 +160,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Audience Analysis {#audience-analysis}
     + [Overview](/help/connections/audience-analysis/audience-analysis-overview.md)
     + [Configure](/help/connections/audience-analysis/audience-analysis-configure.md)
+    + [Manage](/help/connections/audience-analysis/audience-analysis-manage.md)
     + [Analyze](/help/connections/audience-analysis/analyze-audiences.md)
 + Tools {#tools}
   + Asset Transfer {#asset-transfer}
@@ -295,6 +297,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Overview](/help/content-analytics/config/configuration.md)
     + [Guided configuration](/help/content-analytics/config/guided.md)
     + [Manual configuration](/help/content-analytics/config/manual.md)
+    + [Standalone configuration](/help/content-analytics/config/standalone.md)
     + [Data collection](/help/content-analytics/config/datacollection.md)
 
 + Analytics dashboards {#cja-dashboards}
@@ -437,7 +440,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Graph-based stitching](/help/stitching/gbs.md)
   + [Request stitching](/help/stitching/use-stitching.md)
   + [Use stitching](/help/stitching/use-stitching-ui.md)
-  + [Create and manage stitched datasets](/help/stitching/stitching-ui.md)
   + [Validate stitching](/help/stitching/validate.md)
   + [Frequently Asked Questions](/help/stitching/faq.md)  
 

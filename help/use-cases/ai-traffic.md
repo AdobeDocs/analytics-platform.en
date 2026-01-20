@@ -37,7 +37,7 @@ The following table illustrates how the detection methods can be used against di
 | **Agent browsing** | Agent (`ChatGPT-User`, `claude-web`) can be identified  when server-side logging captures headers.  | Classification is possible if the agent navigates from an AI interface with referrer preservation. | Detection is sometimes possible if the AI service adds tracking parameters. |
 | **Retrieval augmented generation (RAG) to answer query** | Agent  (`OAI-SearchBot`, `PerplexityBot`) can be identified with server-side logging. | No classification is typically possible as RAG operations often bypass referrer mechanisms. | Detection is rarely possible unless specifically implemented by the AI provider. |
 | **User clicks through** | The agent cannot be identified. AI agent appears as a normal user agent. | Classification is possible  when users click links from AI interfaces ([chatgpt.com](https://chatgpt.com), [claude.ai](https://claude.ai), and more). | Detection is possible when AI services add UTM parameters to outbound links. |
-| **Traffic visibility conditions** | Require server-side logging integration with Customer Journey Analytics or server-side tagging for agent identification. | Classification depends on AI platform referrer policies and proper HTTP header transmission. | Detection requires parameter preservation through redirects and proper URL parameter collection. | 
+| **Traffic visibility conditions** | Require server-side logging integration with Customer Journey Analytics or server-side tagging for agent identification. | Classification depends on AI platform referrer policies and proper HTTP header transmission. | Detection requires parameter preservation through redirects and proper URL parameter collection. |
 
 ### Challenges
 

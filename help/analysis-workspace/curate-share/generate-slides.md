@@ -7,9 +7,13 @@ role: User
 ---
 # Data storytelling: Generate slide presentations from Workspace reports {#generate-powerpoint}
 
-{{release-limited-testing}}
+>[!AVAILABILITY]
+>
+>Data Storytelling is a skill under the [Data Insights Agent](/help/data-analysis-ai.md). This functionality is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
 
 <!-- also remove lmited testing note from: /help/technotes/access-control.md -->
+
+<!--at GA in January, replace Limited Testing note with this: Data Storytelling is a skill under Data Insights Agent and is available to eligible customers for a limited time. Access to Data Insights Agent will end on 28th February 2026. To continue using Data Insights Agent or other Adobe Experience Platform Agents without interruption, please contact your Adobe account representative to learn more about licensing Adobe Experience Platform Agent Orchestrator. -->
 
 Users with [the necessary permissions](#permission-requirements-to-generate-slides) can automatically generate .pptx presentations based on Analysis Workspace projects. When generating these slide presentations, Customer Journey Analytics automatically creates a story from your data by identifying key insights and converting them into stakeholder-ready slides. 
 
@@ -95,12 +99,12 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
 
 1. Specify the following information:
 
-   |Option | Description | 
+   |Option | Description |
    |---------|----------|
-   | **[!UICONTROL Cover title]** | Specify a title for the presentation. This title appears on the title slide of the presentation.  | 
-   | **[!UICONTROL Include presenter name]** | Specify the name of the presenter. This name appears on the title slide of the presentation, below the cover title. | 
-   | **[!UICONTROL Panels and visualizations to include]** | Choose the panels and visualization that you want to include in the presentation. You can include up to 50 visualizations.<p>If a visualization is dimmed, it is either followed by the text **[!UICONTROL (unsupported)]** or **[!UICONTROL (restricted data)]**.</p><ul><li>**Unsupported**: Most panels and visualizations are supported. For information about unsupported panels and visualization, see [Unsupported project elements and features](#unsupported-project-elements-and-features).</li><li>**Restricted data**: The visualization contains a component that is restricted from being exported by a data governance policy enforced by your organization. Contact your system administrator to see which components are restricted from being exported, then remove the restricted components before generating slides.</li></ul> | 
-   | **[!UICONTROL Emphasize components]** | Choose the metrics and dimensions from your visualizations that you want to emphasize in the presentation. The components you choose are ranked higher and given more weight when the themes and overarching narrative of the data story is created. <p>When no emphasis is applied, components show in presentations as follows:<ul><li>**Metrics and dimensions:** Italics</li><li>**Dimension items:** Quotation marks</li></ul></p><p>When emphasis is applied, components show in presentations as follows:</p><ul><li>**Metrics and dimensions:** Italics and bold</li><li>**Dimension items:** Bold when the corresponding dimension is emphasized<p>A color is also applied to the dimension item when the dimension item is highlighted in the chart.</p></li></ul> | 
+   | **[!UICONTROL Cover title]** | Specify a title for the presentation. This title appears on the title slide of the presentation.  |
+   | **[!UICONTROL Include presenter name]** | Specify the name of the presenter. This name appears on the title slide of the presentation, below the cover title. |
+   | **[!UICONTROL Panels and visualizations to include]** | Choose the panels and visualization that you want to include in the presentation. You can include up to 50 visualizations.<p>If a visualization is dimmed, it is either followed by the text **[!UICONTROL (unsupported)]** or **[!UICONTROL (restricted data)]**.</p><ul><li>**Unsupported**: Most panels and visualizations are supported. For information about unsupported panels and visualization, see [Unsupported project elements and features](#unsupported-project-elements-and-features).</li><li>**Restricted data**: The visualization contains a component that is restricted from being exported by a data governance policy enforced by your organization. Contact your system administrator to see which components are restricted from being exported, then remove the restricted components before generating slides.</li></ul> |
+   | **[!UICONTROL Emphasize components]** | Choose the metrics and dimensions from your visualizations that you want to emphasize in the presentation. The components you choose are ranked higher and given more weight when the themes and overarching narrative of the data story is created. <p>When no emphasis is applied, components show in presentations as follows:<ul><li>**Metrics and dimensions:** Italics</li><li>**Dimension items:** Quotation marks</li></ul></p><p>When emphasis is applied, components show in presentations as follows:</p><ul><li>**Metrics and dimensions:** Italics and bold</li><li>**Dimension items:** Bold when the corresponding dimension is emphasized<p>A color is also applied to the dimension item when the dimension item is highlighted in the chart.</p></li></ul> |
 
    <!-- add this later: - **[!UICONTROL Panel and visualization descriptions]** - Choose whether to include panel and visualization descriptions in your generated slide presentation. - 
    - **[!UICONTROL Annotations]** - Choose whether annotations are visible in your generated slide presentation. For more information about annotations, see [Annotations overview](/help/components/annotations/overview.md).  -  -->
@@ -119,7 +123,7 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
 
    To upload a custom template, do either of the following:
    
-   * (Recommended) Download a blank template and modify it. 
+   +++(Recommended) Download a blank template and modify it
 
      1. Download [this blank template](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?).
 
@@ -140,8 +144,10 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
      1. (Conditional) If a slide layout is mapped incorrectly, select **[!UICONTROL Change selection]** above the slide that was chosen from your uploaded presentation, then choose the slide that matches the layout. 
 
         Repeat this process for each slide that was incorrectly mapped.
+   
+   +++
 
-   * Upload a custom template directly. 
+   +++Upload a custom template directly 
    
      1. From your file system, drag your custom template to the drop area.
      
@@ -151,7 +157,7 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
         
         Make sure that the uploaded file has master layouts with the following names: "Title_Slide," "Section_Divider," "Title_Text," "Title_Chart," "Title_Two_Content_Mixed," "Title_Three_Content_Mixed."
 
-        Up to 15 master layouts are supported.
+        Up to 25 master layouts are supported.
 
         .pptx and .potx files up to 25MB in size are supported.
 
@@ -162,6 +168,8 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
      1. (Conditional) If a slide layout is mapped incorrectly, select **[!UICONTROL Change selection]** above the slide that was chosen from your uploaded presentation, then choose the slide that matches the layout. 
 
         Repeat this process for each slide that was incorrectly mapped.
+
+   +++
 
 1. Select **[!UICONTROL Export PPT]**.
 
@@ -214,9 +222,7 @@ The following Analysis Workspace elements and features used in a project aren't 
 
   * Combo
 
-  * Fallout
-
-  * Flow
+  * Freeform tables with multiple dimension columns (tables with a single dimension column are supported)
 
   * Journey canvas
 
@@ -224,14 +230,18 @@ The following Analysis Workspace elements and features used in a project aren't 
 
   * Treemap
 
-* Breakdowns 
-
-  The data for breakdowns is included in generated presentations, but it shows at the same level as dimension items.
-
 * Guided analyses
 
 * Components that are restricted from being exported by a data governance policy
  
   For more information, see [Troubleshoot failed exports](/help/components/exports/troubleshoot-exports.md).
 
+## Project elements and features with limited support
 
+* Breakdowns
+
+  As part of the deduplication and scoring process when generating relevant insights, each breakdown within a freeform table is analyzed independently, and only the first 5 breakdowns within a single freeform table are analyzed.
+  
+  Only the first level of a breakdown is supported. A breakdown of a breakdown is not included in the presentation.
+
+  

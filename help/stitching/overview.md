@@ -14,7 +14,7 @@ role: Admin
 
 Identity stitching (or simply, stitching) is a powerful feature that elevates an event dataset's suitability for cross-channel analysis. Cross-channel analysis is a main use case for Customer Journey Analytics. The feature allows you to combine and run reports seamlessly on multiple datasets from different channels, based on a common identifier (person ID).
 
-When you combine datasets with similar person IDs, attribution is carried over across devices and channels. For example, a user visits your site through an advertisement on their desktop computer. The users buys a prpduct but then the user encounters an issue with the order order. The user then gives your customer service team a call to help resolve the issue. With cross-channel analysis, you can attribute call center events to the ad that the user originally clicked.
+When you combine datasets with similar person IDs, attribution is carried over across devices and channels. For example, a user visits your site through an advertisement on their desktop computer. The users buys a product but then the user encounters an issue with the order order. The user then gives your customer service team a call to help resolve the issue. With cross-channel analysis, you can attribute call center events to the ad that the user originally clicked.
 
 Unfortunately, not all event-based datasets that are part of your connection in Customer Journey Analytics are sufficiently populated with data to support this attribution out of the box. Especially, web-based or mobile-based experience datasets often don't have actual person ID information available on all events.
 
@@ -43,8 +43,8 @@ You benefit from cross-channel analysis if you combine one or more of your stitc
 
 You can enable stitching in two ways:
 
-- [Request to enable stitching](/help/stitching/use-stitching.md)
-- [Enable stitching in the Connections interface](/help/stitching/use-stitching-ui.md) [!BADGE Beta]{type=Informative}
+- [Request to enable stitching](/help/stitching/use-stitching.md). Once approved, a duplicate dataset is created for the dataset for which you have requested stitching. This duplicate dataset contains an additional column with the stitched identifier. You have to create a new or edit an existing connection that includes the stitched dataset to use the stitched data in Customer Journey Analytics.
+- [Enable stitching in the Connections interface](/help/stitching/use-stitching-ui.md) [!BADGE Beta]{type=Informative}. When you configure stitching for a dataset in the Connections interface, the stiching occurs 'on the fly', during the ingestion of data from that dataset in Customer Journey Analytics.
 
 ## Limitations
 

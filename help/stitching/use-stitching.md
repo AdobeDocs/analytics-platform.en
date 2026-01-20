@@ -16,10 +16,10 @@ The Customer Journey Analytics package you are entitled to determines the availa
 
 | | Customer Journey Analytics<br/>Select | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
-| Available stitching methods | <li>Field-based stitching</li> | <li>Field-based stitching</li><li>Graph-based stitching</li> | <li>Field-based stitching</li><li>Graph-based stitching</li> | 
-| One-time stitching backfill duration | 13 months | 13 months | 25 months | 
-| Lookback window and replay frequency |<li>1 day, every day</li><li>up to 7 days, weekly</li> | <li>1 day, every day</li><li>up to 14 days, weekly</li>| <li>1 day, every day</li><li>up to 30 days, weekly</li> | 
-| Maximum number of datasets permitted for stitching | 5 | 15 | 50 | 
+| Available stitching methods | Field-based stitching | Field-based stitching<br/>Graph-based stitching | Field-based stitching<br>Graph-based stitching</li> |
+| One-time stitching backfill duration | 13 months | 13 months | 25 months |
+| Lookback window and replay frequency | 1 day, every day<br/>up to 7 days, weekly | 1 day, every day<br/>up to 14 days, weekly| 1 day, every day<br/>up to 30 days, weekly |
+| Maximum number of datasets permitted for stitching | 5 | 15 | 50 |
 
 ## Request support 
 

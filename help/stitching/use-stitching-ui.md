@@ -24,8 +24,7 @@ To enable stitching on an event dataset within the Connections UI:
   * multiple fields that are configured as an identity, and which allows you to select different values for a persistent ID and a person ID.
   * at least one field that is marked as primary identity with an associated namespace in case you want to use Identity Map and the primary identity namespace for persistent ID or person ID.
 
-* The event dataset must be [enabled for the Identity service](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) in case you want to use the Identity Graph and graph-based stitching.
-
+* If you want to use graph-based stitching and you anticipate the event dataset to contribute to the Identity Graph (as the dataset contains relevant person IDs next to persistent IDs), you should [enable the dataset for the Identity service](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
 
 ## Preflight checks
 
@@ -131,7 +130,7 @@ To enable stitching, in the event dataset section of the **[!UICONTROL Add datas
 
 1. Select a lookback window from the **[!UICONTROL Lookback window]** drop-down menu. The available options are  dependent on the Customer Journey Analytics package that you are entitled to.
 
-Once you save a connection that contains datasets that are enabled for identity stitching, the stitching process for each dataset begins when the ingestion of data for that dataset starts.
+Once you save a connection, the stitching process for datasets that are enabled for stitching kicks when the ingestion of data for these datasets starts
 
 ## Limitations
 
@@ -139,3 +138,11 @@ On top of the [field-based stitching limitations](/help/stitching/fbs.md#limitat
 
 * You can only stitch an event dataset once as part of a single connection. You cannot define the same event dataset more than once and use a separate stitching configuration for each instance. If you want to apply different stitching configurations on the same dataset, use a separate connection for each configuration.
 
+
+## Migration
+
+Stitching enabled in the Connections interface can coexist without any issues with request based stitching. 
+
+For example, you have web-based stitched datasets in the data lake as a result of earlier or current stitching requests. You can add stitched data from a call-center dataset using the Connections interface to combine that data with the web-based data. 
+
+Eventually, Adobe will automatically migrate your request based stitched datasets to the new stitching in connections experience.
