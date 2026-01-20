@@ -253,40 +253,101 @@ The following sections list which calculated metrics are supported when exportin
 ### Basic function support
 
 
-| Basic function | Supported | 
+| Basic function | Support status | 
 |---------|----------|
-| Absolute Value | Yes ![StatusGreen](/help/assets/icons/StatusGreen.svg)![Yes checkmark](/help/assets/icons/CheckmarkCircleGreen.svg) |
-| A2 | B2 | 
-| A3 | No ![StatusRed](/help/assets/icons/StatusRed.svg) | 
-
-### Supported basic functions
-
-* Column Sum
-* Square Root
-* Exponent
-* Modulo
-* Row Sum
-* Power Operator
-* Absolute Value
-* Round
-* Row Min
-* Row Count
-* Row Max
-* Count
-* Column Maximum
-* Column Minimum
-* Mean
-
-### Unsupported basic functions
- 
-* Quartile
-* Percentile
-* Median 
-* Standard Deviation
-
-<!-- planned for future:  Variance -->
+| Absolute Value | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Column Maximum | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported |
+| Column Minimum | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported | 
+| Column Sum | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported |
+| Count | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported |  
+| Exponent | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported | 
+| Mean | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported | 
+| Median | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported |
+| Modulo | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported | 
+| Percentile | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Power Operator | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported |
+| Quartile | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  | 
+| Row Count | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported | 
+| Row Max | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported | 
+| Row Min | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported | 
+| Row Sum | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported | 
+| Round | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported | 
+| Square Root | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported | 
+| Standard Deviation | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported | 
+| Variance | ![StatusBlue](/help/assets/icons/StatusBlue.svg) Planned |
 
 ### Supported advanced functions
+
+| Advanced function | Support status | 
+|---------|----------|
+| Log Base 10 (Exponential Algebra) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Cube Root (Exponential Algebra) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported   |
+| Natural Log (Exponential Algebra) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  | 
+| Floor (Numeric Adjustment Algebra) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Ceiling (Numeric Adjustment Algebra) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| If (Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Not (Boolean Operator Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Or (Boolean Operator Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| And (Boolean Operator Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Less Than (Comparison Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Less Than or Equal (Comparison Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Equal (Comparison Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Greater Than or Equal (Comparison Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Greater Than (Comparison Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Not Equal (Comparison Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Pi | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Sine (Standard) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Cosine (Standard) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Tangent (Standard) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Arc Sine (Standard) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Arc Cosine (Standard) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Arc Tangent (Standard) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Hyperbolic Cosine | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Hyperbolic Sine | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Hyperbolic Tangent | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+| Confidence (WASKR) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Confidence (Lower) (WASKR) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Confidence (Upper) (WASKR) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| T-Score (Student T-Distribution) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| T-Test (Student T-Distribution) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| CDF-T (Student T-Distribution) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Z-Score (Normal Distribution) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Z-Test (Normal Distribution) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| CDF-Z (Normal Distribution) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Correlation Coefficient (Exponential Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Intercept (Exponential Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Predicted Y (Exponential Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Slope (Exponential Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Correlation Coefficient (Linear Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Intercept (Linear Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Predicted Y (Linear Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Slope (Linear Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Correlation Coefficient (Log Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Intercept (Log Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Predicted Y (Log Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Slope (Log Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Correlation Coefficient (Power Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Intercept (Power Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Predicted Y (Power Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Slope (Power Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Correlation Coefficient (Quadratic Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Intercept (Quadratic Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Predicted Y (Quadratic Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Slope (Quadratic Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Correlation Coefficient (Reciprocal Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Intercept (Reciprocal Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Predicted Y (Reciprocal Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Slope (Reciprocal Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+| Approximate Count Distinct | ![StatusBlue](/help/assets/icons/StatusBlue.svg) Planned |
+| Cumulative | ![StatusBlue](/help/assets/icons/StatusBlue.svg) Planned |
+| Cumulative Average | ![StatusBlue](/help/assets/icons/StatusBlue.svg) Planned |
+| Lift | ![StatusBlue](/help/assets/icons/StatusBlue.svg) Planned |
+| Sample Variance | ![StatusBlue](/help/assets/icons/StatusBlue.svg) Planned |
+
+
+
+
+
 
 Base algebra functions: 
 
@@ -323,6 +384,7 @@ Boolean logic functions:
 
 ### Unsupported advanced functions
 
+Cube root is not supported
 
 
 ## Attribution behavior
