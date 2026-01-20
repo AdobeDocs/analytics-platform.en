@@ -9,6 +9,13 @@ feature: Release Notes
 
 The following updates were made to the Customer Journey Analytics documentation since its inception.
 
+## 2026
+
+| Feature | Description |
+| --- | --- |
+| **January 2026** | |
+| User preferences: number format | You can no longer define the number format in the **[!UICONTROL Project & Analyses]** > **[!UICONTROL Data]** section of **[!UICONTROL User preferences]**. The number format is automatically determined by the [default language that is configured](https://experienceleague.adobe.com/en/docs/core-services/interface/features/browser-language) for the logged in user. |
+
 ## 2025
 
 | Feature | Description |
