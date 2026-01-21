@@ -138,3 +138,11 @@ On top of the [field-based stitching limitations](/help/stitching/fbs.md#limitat
 
 * You can only stitch an event dataset once as part of a single connection. You cannot define the same event dataset more than once and use a separate stitching configuration for each instance. If you want to apply different stitching configurations on the same dataset, use a separate connection for each configuration.
 
+
+## Migration
+
+Stitching enabled in the Connections interface can coexist without any issues with request based stitching. 
+
+For example, you have web-based stitched datasets in the data lake as a result of earlier or current stitching requests. You can add stitched data from a call-center dataset using the Connections interface to combine that data with the web-based data. 
+
+Eventually, Adobe will automatically migrate your request based stitched datasets to the new stitching in connections experience.
