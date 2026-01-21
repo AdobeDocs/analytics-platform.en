@@ -276,7 +276,7 @@ The following basic and advanced sections list which calculated metrics are supp
 | Standard Deviation | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported | 
 | Variance | ![StatusBlue](/help/assets/icons/StatusBlue.svg) Planned |
 
-### Supported advanced functions
+### Advanced function support
 
 | Advanced function | Support status | 
 |---------|----------|
