@@ -223,30 +223,7 @@ The following components are not supported, and Analysis Workspace prompts you t
   * Date ranges
   * Segments
 
-## Unsupported calculated metric functions
-
-The following functions are not supported, and Analysis Workspace prompts you to remove any calculated metrics that use them from your table when performing a full-table export:
-
-### Unsupported basic functions
-
-* Row Min 
-* Row Max 
-* Variance 
-* Mean 
-* Quartile
-* Percentile
-* Median 
-* Standard Deviation
-
-All other basic functions used in calculated metrics are supported when exporting full tables. For a complete list of basic functions, see [Basic functions](/help/components/calc-metrics/cm-functions.md).
-
-### Unsupported advanced functions
-
-* ...
-
-All other advanced functions used in calculated metrics are supported when exporting full tables. For a complete list of advanced functions, see [Advanced functions](/help/components/calc-metrics/cm-adv-functions.md).
-
-## Calculated metric support
+## Calculated metric functions support
 
 The following basic and advanced sections list which calculated metrics are supported when exporting full tables:
 
@@ -278,23 +255,45 @@ The following basic and advanced sections list which calculated metrics are supp
 
 ### Advanced function support
 
+#### Algebra functions
+
 | Advanced function | Support status | 
 |---------|----------|
 | Log Base 10 (Exponential Algebra) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
 | Cube Root (Exponential Algebra) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported    |
 | Natural Log (Exponential Algebra) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  | 
 | Floor (Numeric Adjustment Algebra) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
-| Ceiling (Numeric Adjustment Algebra) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+
+#### Logic functions
+
+| Advanced function | Support status | 
+|---------|----------|
 | If (Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+
+#### Boolean functions
+
+| Advanced function | Support status | 
+|---------|----------|
 | Not (Boolean Operator Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
 | Or (Boolean Operator Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
 | And (Boolean Operator Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+
+#### Comparison functions
+
+| Advanced function | Support status | 
+|---------|----------|
 | Less Than (Comparison Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
 | Less Than or Equal (Comparison Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
 | Equal (Comparison Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
 | Greater Than or Equal (Comparison Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
 | Greater Than (Comparison Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
 | Not Equal (Comparison Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+
+
+#### Trigonometry functions
+
+| Advanced function | Support status | 
+|---------|----------|
 | Pi | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
 | Sine (Standard) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
 | Cosine (Standard) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
@@ -302,18 +301,38 @@ The following basic and advanced sections list which calculated metrics are supp
 | Arc Sine (Standard) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
 | Arc Cosine (Standard) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
 | Arc Tangent (Standard) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+
+#### Hyperbolic functions
+
+| Advanced function | Support status | 
+|---------|----------|
 | Hyperbolic Cosine | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
 | Hyperbolic Sine | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
 | Hyperbolic Tangent | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
+
+#### WASKR functions
+
+| Advanced function | Support status | 
+|---------|----------|
 | Confidence (WASKR) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
 | Confidence (Lower) (WASKR) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
 | Confidence (Upper) (WASKR) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+
+#### Distribution functions
+
+| Advanced function | Support status | 
+|---------|----------|
 | T-Score (Student T-Distribution) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
 | T-Test (Student T-Distribution) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
 | CDF-T (Student T-Distribution) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
 | Z-Score (Normal Distribution) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
 | Z-Test (Normal Distribution) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
 | CDF-Z (Normal Distribution) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+
+#### Regression functions
+
+| Advanced function | Support status | 
+|---------|----------|
 | Correlation Coefficient (Exponential Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
 | Intercept (Exponential Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
 | Predicted Y (Exponential Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
@@ -338,54 +357,16 @@ The following basic and advanced sections list which calculated metrics are supp
 | Intercept (Reciprocal Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
 | Predicted Y (Reciprocal Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
 | Slope (Reciprocal Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported  |
+
+#### Other advanced functions
+
+| Advanced function | Support status | 
+|---------|----------|
 | Approximate Count Distinct | ![StatusBlue](/help/assets/icons/StatusBlue.svg) Planned |
 | Cumulative | ![StatusBlue](/help/assets/icons/StatusBlue.svg) Planned |
 | Cumulative Average | ![StatusBlue](/help/assets/icons/StatusBlue.svg) Planned |
 | Lift | ![StatusBlue](/help/assets/icons/StatusBlue.svg) Planned |
 | Sample Variance | ![StatusBlue](/help/assets/icons/StatusBlue.svg) Planned |
-
-
-
-
-
-
-Base algebra functions: 
-
-* Log Base 10
-* ln <!--???-->
-* Cube Root
-* Floor
-* Ceiling
-
-Trigonometry functions:
-
-* Pi
-* Tangent
-* Sine
-* Cosine
-* Arc Tangent
-* Arc Site
-* Arc Cosine
-* sinh <!--???-->
-* tanh <!--???-->
-* cosh <!--???-->
-
-Boolean logic functions:
-
-* If
-* Comparison <!--???-->
-* Sample Variance
-* Cumulative
-* Cumulative (Average)
-* Exponential regression: Correlation coefficient
-* Exponential regression: Predicted Y
-* Exponential regression: Intercept
-* Exponential regression: Slope
-
-### Unsupported advanced functions
-
-Cube root is not supported
-
 
 ## Attribution behavior
 
@@ -408,7 +389,6 @@ If a non-default attribution model is being used in a report, the allocation mod
 ## Comparison to Data Warehouse
 
 If you previously used Data Warehouse to export Adobe Analytics data, the following table can help you understand the differences between exporting full tables in Customer Journey Analytics versus exporting data with Data Warehouse in Adobe Analytics.
-
 
 |Feature | Full Table Export in Customer Journey Analytics | Data Warehouse in Adobe Analytics |
 |---------|----------|---------|
