@@ -248,7 +248,7 @@ All other advanced functions used in calculated metrics are supported when expor
 
 ## Calculated metric support
 
-The following sections list which calculated metrics are supported when exporting full tables:
+The following basic and advanced sections list which calculated metrics are supported when exporting full tables:
 
 ### Basic function support
 
@@ -281,7 +281,7 @@ The following sections list which calculated metrics are supported when exportin
 | Advanced function | Support status | 
 |---------|----------|
 | Log Base 10 (Exponential Algebra) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
-| Cube Root (Exponential Algebra) | ![StatusRed](/help/assets/icons/StatusRed.svg) Not supported   |
+| Cube Root (Exponential Algebra) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported    |
 | Natural Log (Exponential Algebra) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  | 
 | Floor (Numeric Adjustment Algebra) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
 | Ceiling (Numeric Adjustment Algebra) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) Supported  |
