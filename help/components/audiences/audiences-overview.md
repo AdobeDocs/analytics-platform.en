@@ -7,13 +7,13 @@ role: User, Admin
 ---
 # Audience publishing overview
 
-<!-- Add this when Audience Analysis releases:
+<!--
 
 >[!NOTE]
 >
 >Understand the difference between audience analysis and audience publishing:
 >
->* **Audience analysis**: Allows you to ingest audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection. For information about audience analysis, see [Audience analysis overview](/help/connections/audience-analysis/audience-analysis-overview.md)
+>* **Audience analysis**: Allows you to ingest audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection. For information about audience analysis, see [Audience analysis overview](/help/connections/audience-analysis/audience-analysis-overview.md).
 >* **Audience publishing**: Allows you to create and publish audiences discovered in Customer Journey Analytics to Adobe Experience Platform for customer targeting and personalization. 
 
 -->
