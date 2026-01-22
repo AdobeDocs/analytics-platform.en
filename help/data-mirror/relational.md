@@ -163,9 +163,11 @@ Define a schema that models this data. To set up your schema:
    | `trackingcode` | `Tracking Code` | **[!UICONTROL String]** | |
 
 
-   * The **[!UICONTROL id]** field is configured as **[!UICONTROL Version descriptor]**.
+   * The **[!UICONTROL id]** field is configured as the **[!UICONTROL Version descriptor]**.
 
      ![Version descriptor](assets/platform-schema-id.png)
+
+     In a real life scenario, you might want to use a more appropriate field as the [version descriptor](aep.md#schema). For example, a field that keeps track of a last modified time.
 
    * The **[!UICONTROL personid]** field is configured, together with **[!UICONTROL timestamp]** as the **[!UICONTROL Primary key]**. Select ![Add](/help/assets/icons/Add.svg) **[!UICONTROL Create composite primary key]** to create a composite key.
 
@@ -175,6 +177,8 @@ Define a schema that models this data. To set up your schema:
 
      ![Person descriptor](assets/platform-schema-personid.png)
 
+     The **[!UICONTROL personid]** field does not have to be the **[!UICONTROL Primary key]**. In a real life scenario, you most likely have a different field to track the primary key, separate from the **[!UICONTROL personid]**.
+
    * The **[!UICONTROL timestamp]** field is configured, together with **[!UICONTROL personid]** field as the **[!UICONTROL Primary key]**. The **[!UICONTROL timestamp]** field is also configured as **[!UICONTROL Timestamp descriptor]**. You only need to define a field as **[!UICONTROL Timestamp descriptor]** for time series relational data.
 
      ![Timestamp descriptor](assets/platform-schema-timestamp.png)
@@ -183,6 +187,8 @@ Define a schema that models this data. To set up your schema:
    If you have defined **[!UICONTROL Primary key]**, **[!UICONTROL Version descriptor]** and **[!UICONTROL Timestamp descriptor]** correctly, the warning on top of the schema definition disappears.
 
 1. Select **[!UICONTROL Save]** to save your schema.
+
+In a similar way, you can set up a record-based relational [schema](aep.md#schema). For example, to contain profile and lookup data. 
 
 
 ## Use a source connector
@@ -248,7 +254,7 @@ In the **[!UICONTROL Dataflow detail]** step:
 
 In the **[!UICONTROL Mapping]** step:
 
-1. Map the fields. From the schema in Google BigQuery (**[!UICONTROL Source data]**) to the fields in the schema that you have defined in Experience Platform (**[!UICONTROL Target fields]**).
+1. Map the fields in the schema in Google BigQuery (**[!UICONTROL Source data]**) to the fields in the schema that you have defined in Experience Platform (**[!UICONTROL Target fields]**).
 
    ![Experience Platform - Source Connector - Mapping](assets/platform-sources-mapping.png)
 
