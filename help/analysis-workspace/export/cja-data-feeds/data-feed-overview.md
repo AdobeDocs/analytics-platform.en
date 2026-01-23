@@ -23,26 +23,24 @@ Make sure that you meet all the following requirements before using data feeds.
 Data feeds in both Customer Journey Analytics and Adobe Analytics allow you to export raw data to third-party platforms. If you previously used data feeds in Adobe Analytics, use the following table to understand important functionality differences when using data feeds in Customer Journey Analytics:
 
 
-| **Data feed functionality** | **Customer Journey Analytics** | **Adobe Analytics** |
+| **Functionality** | **Customer Journey Analytics data feeds** | **Adobe Analytics data feeds** | 
 |--------|--------|--------|
-| Data input | Cross-channel data input, such as web data, call center data, point-of-sale data, and more  | Web and mobile data input only |
-| Data processing |  |
-| Ability to change historical data | Each of the following features can affect historical data: stitching, derived fields, data prep, segmentation, and the reporting window | Historical data cannot be changed (unaffected by processing rules and VISTA rules) |
-| Segmentation | Segmets can be applied in data feed output | Segments cannot be applied in data feed output |
+| Data input | Supports cross-channel data input, including web data, call center data, point-of-sale data, and more  | Supports web and mobile data input only |
+| Data processing | Data is processed at report time, and therefore many reporting features in Customer Journey Analytics can be used to change historical data, such as stitching, derived fields, data prep, segmentation, and the reporting window  | Data is processed at collection time, and therefore reporting features such as processing rules, VISTA rules, stitching, and segmentation do not affect historical data  |
+| Segmentation | Segmets can be applied | Segments cannot be applied|
 | Stitching | Stitching across multiple datasets (to support cross-channel analysis) | Stitching is not supported |
-| Schema | Uses structured, hierarchical fields, potentially containing multiple dimensions and metrics within a single column (arrays, arrays within arrays) | Uses a product list, with a long string of proprietary semicolon-delimited fields.|
-| Lookups | Not used, because browser dimensions are included in the Data View | Used to match a number from a data feed column and match it to an actual value |
+| Schema | Uses structured, hierarchical fields, potentially containing multiple dimensions and metrics within a single column (arrays, arrays within arrays) | Uses a product list, with a long string of proprietary, semicolon-delimited fields.|
+| Lookups | Not used<p>Browser dimensions are included in the Data View</p> | Used to match a number from a data feed column to an actual value |
 | Output file format | Parquet (supports structured fields and is accepted by modern data warehouses) | C3 |
 | Delivery destinations | <ul><li>Cloud destinations (Amazon S3, Azure RBAC, Azure SAS, and Google Cloud Platform)</li></ul> | <ul><li>Cloud destinations (Amazon S3, Azure RBAC, Azure SAS, and Google Cloud Platform)</li><li>SFTP</li></ul>|
-| Delivery frequency | Hourly and daily feeds | Hourly, daily, and 15-minute feeds. |
-| Definition of a "Feed Window" | Delivers data received in the last hour (may include older hits within the reporting window). Late-arriving hits are always enabled. | Delivers hits belonging to the hour/day, optionally including late-arriving hits if explicitly enabled. |
-| Late-Arriving Hits | Always supported; controlled via configurable "reporting window." No option to disable. | Optional; only available in new UI; requires explicit configuration. |
-| Reporting Window | Required for sessions, persistence, and segments. Controls lookback needed to calculate them. | Not used for DF; persistence & sessionization baked into raw data. |
-| Session Definition | Defined in Data View → affects DF. | Defined at collection time; DF only uses raw sessionization. |
-| Segment Containers (Person, Session, Hit) | Person containers use entire reporting window; can expand DF hit output based on segment logic. | No segment application to DF. |
-| Dimension Allocation & Expiration | Controlled per dimension (independent from reporting window). | Pre-calculated; fixed in collected data. |
+| Delivery frequency | Hourly and daily feeds<p>Late-arriving hits that occur within the **[!UICONTROL Reporting window]** are always included</p> | Hourly, daily, and 15-minute feeds<p>Late-arriving hits are configurable</p> |
+| Late-arriving hits | Always included <p>The lookback window for these hits is controlled through the **[!UICONTROL Reporting window]** configuration option</p><p>Hits are automatically reordered based on timestamps; persists original values (no change feed)</p> | A **[!UICONTROL Late-arriving hits]** configuration option exists to include or exclude<p>The lookback window for these hits is configured through the **[!UICONTROL Lookback window]** configuration option that is available for this specific purpose</p> |
+| Reporting window (Customer Journey Analytics only) | The cutoff for late or out-of-order hits that are delivered outside of the **[!UICONTROL Delivery frequency]** that is selected (**[!UICONTROL Hour]** or **[!UICONTROL Day]**) <p>Required for sessions, persistence, and segments</p><p>Not used for dimensions (dimensions are controlled per dimension based on the dimension's allocation and expiration).</p> | N/A<p>See "Lookback window"</p> |
+| Lookback window (Adobe Analytics only) | N/A<p>See "Reporting window"</p> |  The cutoff for late or out-of-order hits that are delivered outside of the **[!UICONTROL Delivery frequency]** that is selected (**[!UICONTROL Hour]**, **[!UICONTROL Day]**, or **[!UICONTROL 15 minutes]**) <p>Not used for persistence, sessions, or dimensions (these are included in the raw data that is collected)</p> |
+| Out-of-order hits | Automatically reorders hits based on timestamps<p>Persists original values (no change feed)</p> | Maintains the order of when the hit was received, regardless of the actual timestamp of the hit |
+| Session definition | Defined in the data view | Defined at collection time <p>Uses only raw sessionization</p> |
+| Segment containers |  (Person, Session, Event) Person containers use the entire reporting window; can expand DF hit output based on segment logic. | Not used |
 | Coverage of Reporting Window in DF Output | DF outputs only part of the reporting window (only current window), even though session/segment logic may examine the broader window. | Entire DF output is limited to the fixed window (hour/day/15-min). |
-| Handling Out-of-Order Hits | Automatically reorders based on timestamps; persists original values (no change feed). | No support; relies on ingest-time ordering. |
 | Persistence Model | Flexible; based on reporting window evaluation. | Only "Last Touch" (Most Recent) and "First Touch" (Original). |
 
 
