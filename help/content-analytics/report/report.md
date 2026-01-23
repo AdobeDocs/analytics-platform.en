@@ -19,16 +19,32 @@ To start reporting on Content Analytics from scratch:
 
 ## Thumbnails
 
-Based on the Content Analytics specific dimensions that you use in your project, thumbnails are displayed for assets and dimensions.
+Based on the Content Analytics specific dimensions that you use in your project, thumbnails are displayed in the following visualizations:
+
+### Freeform tables
 
 ![Content Analytics thumbnails](../assets/aca-thumbnails.png)
 
-By default, thumbnails are shown for relevant Content Analytics dimensions. To configure the display of thumbnails for a Content Analytics dimension:
+By default, thumbnails are shown in a [freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md). To configure the display of thumbnails for a Content Analytics dimension:
 
 * Hover over a header row for a Content Analytics dimension. For example, **[!UICONTROL Asset IDs]** or **[!UICONTROL Experience IDs]**.
 * Select ![Setting](/help/assets/icons/Setting.svg).
 * In the **[!UICONTROL Row setting]** popup, underneath **[!UICONTROL Settings]**, check or uncheck **[!UICONTROL Show Thumbnails]**.
 
+
+### Bar charts
+
+![Content Analytics thumbnails for bar chart](/help/content-analytics/assets/aca-bar-thumbnail.png)
+
+
+Thumnbails are displayed as part of the legend on the vertical or horizontal axist. Thumbnails are also displayed when you hover over a bar in a [bar (stacked)](/help/analysis-workspace/visualizations/bar.md) and [horizontal bar (stacked)](/help/analysis-workspace/visualizations/horizontal-bar.md).
+
+
+### Scatter
+
+![Content Analytics thumbnails for scatter](/help/content-analytics/assets/aca-scatter-thumbnail.png)
+
+Thumbnails are displayed when you hover over a data point in a [scatter](/help/analysis-workspace/visualizations/scatterplot.md).
 
 ## Previews
 
