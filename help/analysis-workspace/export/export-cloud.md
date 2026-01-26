@@ -225,7 +225,7 @@ The following components are not supported, and Analysis Workspace prompts you t
 
 ## Calculated metric functions support
 
-The following basic and advanced sections list which calculated metrics are supported when exporting full tables:
+The following basic and advanced sections list which calculated metric functions are supported when exporting full tables:
 
 ### Basic function support
 
