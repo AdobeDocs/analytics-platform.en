@@ -3,8 +3,6 @@ title: Include multiple dimensions in a freeform table
 description: Learn how to include multiple dimensions in a freeform table
 feature: Visualizations
 role: User
-hide: yes
-hidefromtoc: yes
 ---
 # Include multiple dimension columns in a freeform table
 
@@ -53,95 +51,11 @@ You can add multiple dimension columns one at a time or in bulk.
 
 1. View each row of the table as a single dimension item. For more information, see [Concatenated dimension items](#concatenated-dimension-items).
 
-## Filter tables
+## Filter and sort tables
 
-You can apply filters to one or more dimension columns in a freeform table. 
+You can apply filtering and sorting to columns in a freeform table. You can sort the data of a freeform table by any columns, whether they are dimensions or metrics. You can even sort by multiple columns at the same time.
 
-For information about filtering tables, see [Filter tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables) in [Filter and sort freeform tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
-
-## Sort tables {#sort-tables}
-
-<!--At GA, move this section into the "Filter and sort tables" article and replace the current "Sort tables" section. Change the "Filter tables" section above to "Filter and sort tables" and link to the other article. Also add row to Guardrails -->
-
-You can sort the data of a freeform table by any columns in Analysis Workspace, whether they are dimensions or metrics. 
-
-By default, dimensions are sorted in ascending order and metrics are sorted in descending order.
-
-### Sort tables by a single column 
-
-When you sort data for a single column as described in this section, any [advanced sorting](#sort-tables-by-multiple-columns-advanced-sorting) that is applied to the table is removed.
-
-To sort data in tables by a single column:
-
-1. Mouse over the header of the column you want to sort, then select the **Sort** icon ![Sort](/help/assets/icons/SortOrderDown.svg) when it appears.
-
-   ![Sort drop-down menu](assets/sort-dropdown-menu.png)
-
-1. Select **[!UICONTROL Ascending]** or **[!UICONTROL Descending]**. 
-
-   The sort icon remains visible when sorting is applied to the column. An arrow indicates how the data is sorted (![Sort](/help/assets/icons/SortOrderUp.svg) for ascending or ![Sort](/help/assets/icons/SortOrderDown.svg) for descending).
-
-### Sort tables by multiple columns (Advanced sorting)
-
-<!-- add this back in when move this section back to the filter and sort article: {{release-limited-testing-section}} -->
-
-#### Apply sorting to multiple columns
-
-To sort data in tables by multiple columns:
-
-1. Mouse over the header of any column that you want to sort, then select the **Sort** icon ![Sort](/help/assets/icons/SortOrderDown.svg) when it appears.
-
-   ![Sort drop-down menu](assets/sort-dropdown-menu.png)
-
-1. Select **[!UICONTROL Advanced sorting]**. 
-
-   ![Advanced sorting dialog](assets/sort-advanced-dialog.png)
-
-1. In the Advanced sorting dialog, do any of the following:
-
-   * Add columns that aren't yet being sorted by selecting the **[!UICONTROL Add sort column]** button.
-
-   * Remove columns that you no longer want to sort by selecting the **Remove** icon ![Remove](/help/assets/icons/Close.svg).  
-
-   * Drag columns higher or lower in the list to adjust the sort priority. 
-   
-     For more information, see [Sort priority](#sort-priority).
-   
-   * Change the sort value by selecting **[!UICONTROL Ascending]** or **[!UICONTROL Descending]** in the drop-down menu. 
-
-   * Select a different column by selecting the column name drop-down menu. 
-
-1. Select **[!UICONTROL Apply]**.
-
-The sort icon remains visible when sorting is applied to a column. An arrow indicates how the data is sorted (![Sort](/help/assets/icons/SortOrderUp.svg) for ascending or ![Sort](/help/assets/icons/SortOrderDown.svg) for descending). 
-
-![multi-sort example](assets/dimensions-multiple-sort.png)
-
-#### Sort priority
-
-When you sort data for multiple columns, data is sorted according to the priority you assign to each column. Priority numbering is displayed next to the sort icon ![sort priority icon](assets/sort-priority-icon.png).
-
-The column with the primary priority decides the main order; the column with the secondary priority decides the order when rows have the same value in the primary column; the column with the tertiary priority decides the order when rows have the same value in the primary and secondary columns; and so forth.  
-
-For example, consider a table with the following columns:
-
-* Day of Month (dimension)
-
-* Hour of Day (dimension)
-
-* Events (metric)
-
-You can assign a sort priority to each column, as follows:
-
-| Column (component) name | Component type | Sort priority |
-|---------|----------|---------|
-| Day of Month | Dimension | 1 |
-| Hour of Day | Dimension | 2 |
-| Events | Metric | 3 |
-
-By assigning a sort priority to each column, you can control exactly how data is displayed in the table. In this example, information is sorted first by Day of Month, then by Hour of Day, and finally by Events. 
-
-![multi-sort example](assets/dimensions-multiple-sort.png)
+For information, see [Filter and sort freeform tables](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 ## Multiple dimension columns and breakdowns
 
