@@ -70,6 +70,8 @@ Lookback window
 Out-of-order hits
 
 
+
+
 ## Next steps
 
 The following resources help you understand the basic workflow of obtaining data feeds. After you understand the basic workflow, you can work with teams within your organization to store or ingest raw data into a database.
