@@ -54,7 +54,7 @@ The following limitations do apply for the *map Analytics data from multiple IMS
 * You can connect a report suite only once across organizations.
 * You have to delete all connections for an IMS organization that is defined as the destination IMS organization in a  mapping before you can request to delete the mapping.
 * ECIDs are not compatible between mapped source IMS organizations and not compatible with the destination IMS organization.
-* 
+
 
 ## Considerations
 
