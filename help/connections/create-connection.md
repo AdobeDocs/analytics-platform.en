@@ -71,7 +71,7 @@ role: Admin
 >[!CONTEXTUALHELP]
 >id="connection_change_personid"
 >title="Change Person ID"
->abstract="A change of the Person ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Person ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
+>abstract="A change of the Person ID deletes all existing data in the connection. You have to re-ingest data from the dataset based on the new Person ID.<br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the deletion process is completed."
 
 >[!CONTEXTUALHELP]
 >id="connection_change_accountid"

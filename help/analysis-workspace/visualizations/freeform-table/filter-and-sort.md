@@ -182,7 +182,7 @@ The sort icon remains visible when sorting is applied to a column. An arrow indi
 
 #### Sort priority
 
-When you sort data for multiple columns, data is sorted according to the priority you assign to each column. Priority numbering is displayed next to the sort icon ![sort priority icon](assets/sort-priority-icon.png).
+When you sort data for multiple columns, data is sorted according to the priority you assign to each column. Priority numbering is displayed next to the sort icon ![SortOrderDown](/help/assets/icons/SortOrderDown.svg)<sup>➊</sup>.
 
 The column with the primary priority decides the main order; the column with the secondary priority decides the order when rows have the same value in the primary column; the column with the tertiary priority decides the order when rows have the same value in the primary and secondary columns; and so forth.  
 
