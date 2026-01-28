@@ -130,7 +130,13 @@ To enable stitching, in the event dataset section of the **[!UICONTROL Add datas
 
 1. Select a lookback window from the **[!UICONTROL Lookback window]** drop-down menu. The available options are  dependent on the Customer Journey Analytics package that you are entitled to.
 
-Once you save a connection, the stitching process for datasets that are enabled for stitching kicks when the ingestion of data for these datasets starts
+Once you save a connection, the stitching process for datasets that are enabled for stitching kicks when the ingestion of data for these datasets starts.
+
+>[!CAUTION]
+>
+>For datasets that are enabled for stitching in the Connections interface, the backfill status is immediately and incorrectly reported as ![Status green](/help/assets/icons/StatusGreen.svg)&nbsp;**[!UICONTROL _x_ backfills completed]** for the number of backfills completed. Use other ways to verify whether data from the stitched dataset is backfilled.
+>
+
 
 ## Limitations
 
