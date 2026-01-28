@@ -110,3 +110,4 @@ The following dimension combinations are not supported, and Analysis Workspace e
 * Multiple dimensions that are from fields referencing different [arrays of objects](/help/use-cases/object-arrays.md) that are used together in the same freeform table. 
   
   Multiple dimensions are allowed together in the same freeform table if they reference the same array of objects.
+  
