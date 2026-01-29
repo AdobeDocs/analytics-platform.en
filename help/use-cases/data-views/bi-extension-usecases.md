@@ -19,26 +19,26 @@ This article documents how to accomplish a number of use cases (15) using the Cu
 The following use cases are documented:
 
 * **Connect**
-  * [Connect and list data views](#connect-and-validate)
+  * [Connect and list data views](bi-extension/connect-and-validate.md)
 
 * **Report and analyze**
-  * [Daily trend](#daily-trend)
-  * [Hourly trend](#hourly-trend)
-  * [Monthly trend](#monthly-trend)
-  * [Single dimension ranked](#single-dimension-ranked)
-  * [Multiple dimension ranked](#multiple-dimension-ranked)
-  * [Count distinct dimension values](#count-distinct-dimension-values)
-  * [Use date range names to filter](#use-date-range-names-to-filter)
-  * [Use segment names to segment](#use-segment-names-to-segment)
-  * [Use dimension values to segment](#use-dimension-values-to-segment)
-  * [Sort](#sort)
-  * [Limits](#limits)
+  * [Daily trend](bi-extension/daily-trend.md)
+  * [Hourly trend](bi-extension/hourly-trend)
+  * [Monthly trend](bi-extension/monthly-trend)
+  * [Single dimension ranked](bi-extension/single-dimension-ranked)
+  * [Multiple dimension ranked](bi-extension/multiple-dimension-ranked)
+  * [Count distinct dimension values](bi-extension/count-distinct-dimension-values)
+  * [Use date range names to filter](bi-extension/use-date-range-names-to-filter)
+  * [Use segment names to segment](bi-extension/use-segment-names-to-segment)
+  * [Use dimension values to segment](bi-extension/use-dimension-values-to-segment)
+  * [Sort](bi-extension/sort)
+  * [Limits](bi-extension/limits)
 
 * **Understand**
 
-  * [Transformations](#transformations)
-  * [Visualizations](#visualizations)
-  * [Caveats](#caveats)
+  * [Transformations](bi-extension/transformations)
+  * [Visualizations](bi-extension/visualizations)
+  * [Caveats](bi-extension/caveats)
 
 The **connect** use case focuses on how to connect BI tools using the Customer Journey Analytics BI extension. 
 
@@ -50,6 +50,7 @@ The **understand** use cases provide more details on:
 * Visualization similarities and differences between Customer Journey Analytics and BI tools.
 * Caveats of each of the BI tools you should be aware of.
 
+<!-- Now documented in separate articles
 
 ## Connect and validate
 
@@ -3130,3 +3131,5 @@ Each of the supported BI tools has some caveats in working with the Customer Jou
 >[!ENDTABS]
 
 +++
+
+-->
