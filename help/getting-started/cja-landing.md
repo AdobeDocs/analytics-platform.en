@@ -17,7 +17,23 @@ Get a glimpse of the newest enhancements in the Customer Journey Analytics produ
 
 >[!BEGINTABS]
 
->[!TAB Real-time reporting*]
+>[!TAB Stitching in Connections]
+
+You can now configure and enable stitching on event datasets directly within the Customer Journey Analytics Connections UI. 
+
+[![image](assets/learn-more-button.svg)](/help/stitching/use-stitching-ui.md)
+
+*_You must have at least the Select package to enable stitching._*
+
+
+>[!TAB Audience Analysis]
+
+Audience analysis allows you to ingest audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection.
+
+[![image](assets/learn-more-button.svg)](/help/connections/audience-analysis/analyze-audiences.md)
+
+
+>[!TAB Real-time reporting]
 
 Real-time reporting in Customer Journey Analytics displays and updates data and visualizations within one or more panels in Analysis Workspace in real time.
 
@@ -25,95 +41,19 @@ Real-time reporting in Customer Journey Analytics displays and updates data and 
 
 *_You must have the Ultimate package for real-time reporting._*
 
+
 >[!TAB B2B Edition]
 
 Customer Journey Analytics B2B Edition helps B2B companies align their marketing, sales, and product teams by providing actionable account insights that drive revenue growth. With the account placed at the center of the data model, all analysis focuses on the account journey.
 
 [![image](assets/learn-more-button.svg)](/help/getting-started/cja-b2b-edition.md)
 
->[!TAB Derived field functions]
-
-New derived field functions: [Data Math](/help/data-views/derived-fields/derived-fields.md#date-math), [Depth](/help/data-views/derived-fields/derived-fields.md#depth), and [Typecast](/help/data-views/derived-fields/derived-fields.md#typecast).
-
-[![image](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
 >[!TAB Content Analytics]
 
 Content Analytics allows you to quickly and easily investigate large volumes of content data to uncover trends, spot anomalies, identify content fatigue, and gain insights from content exposure.
 
 [![image](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
-
->[!TAB Event Depth]
-
-Event Depth is a new standard dimension and provides new ways to measure and better understand how events are positioned within customer sessions. The Event Depth dimension enables detailed tracking and analysis of where specific events occur in the sequential flow of user interactions within a session.
-
-[![image](assets/learn-more-button.svg)](/help/components/dimensions/overview.md#standard-dimensions)
-
-
->[!TAB Shared metrics and dimensions]
-
-Shared metrics and dimensions provide a central location to manage dimensions and metrics that can be used across any number of data views. These components are especially valuable to organizations that use multiple data views, especially if those data views share common component settings.
-
-[![image](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
-
-
-<!--
->[!TAB AI Assistant] 
-
-AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace - whether its understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
-
-[![image](assets/learn-more-button.svg)](/help/ai-assistant.md)
-
-
->[!TAB Guided Analysis] 
-
-Guided Analysis is now available directly from within Analysis Workspace, enabling users to create dashboards with comprehensive insights from panels, visualizations, and guided analyses.
-
-[![image](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
-
-
-
->[!TAB Intelligent captions v2] 
-
-Intelligent captions are now supported, with additional interface improvements, for [Line](/help/analysis-workspace/visualizations/line.md) (including multi-line), [Bar](/help/analysis-workspace/visualizations/bar.md), [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md), [Area](/help/analysis-workspace/visualizations/area.md) (including multiple Area lines), [Donut](/help/analysis-workspace/visualizations/donut.md), [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), and [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) visualizations.
-
-[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
-
-
->[!TAB Alerts] 
-
-Alerts allow you to be notified based on changed percentages or specific data points. You can preview how often an alert will trigger, send alerts by email or SMS, create stacked alerts, and more.
-
-[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
-
-
->[!TAB Summary data] 
-
-Allows you to bring in time-series data that does not have a person ID. This time-series data can be used to support various use cases, such as 
-
-- Presenting high-level performance indicators as part of or next to event-level data. 
-- Uploading targets or goals at an hourly or daily basis, then positioning these targets or goals against event-level metrics. 
-
-[![image](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
-
--->
-
->[!TAB Graph-based stitching*] 
-
-Through Graph-based stitching, you can use the identity graph from the Experience Platform Identity Service to get a better view of the customer journey by: <ul><li>Joining datasets with different identifiers without having to extract, transform and load additional data to reflect a single identifier.</li> <li>Improving coverage of preferred or golden identity for a single dataset by sharing identities across datasets,</li><li>Aligning profiles created in Real-Time Customer Data Platform and Journey Optimizer with people in Customer Journey Analytics.</li></ul>
-
-[![image](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
-
-*_You must have the Prime package for graph-based stitching._*
-
->[!TAB BI extension*] 
-
-The BI extension enables SQL access to the data views that you have defined in Customer Journey Analytics. You can now use your favorite BI tool (Power BI Desktop, Tableau Desktop, Looker, Juyter Notebook, and RStudio) to create reporting and dashboards based on the same data views that Customer Journey Analytics users use with their Analysis Workspace projects. [Use cases](/help/use-cases/data-views/bi-extension-usecases.md) are provided.
-
-[![image](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
-
-*_You must have the Select package or higher to use the BI extension._*
-
 
 >[!ENDTABS]
 

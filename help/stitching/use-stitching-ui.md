@@ -11,8 +11,6 @@ badgePremium: label="Beta" type="Informative"
 
 You can enable stitching on one or more event datasets you have configured as part of your connection. The Customer Journey Analytics package that you have licensed determines the number of event datasets you can enable for stitching .
 
-{{release-limited-testing}}
-
 You can enable stitching as part of the [dataset settings](/help/connections/create-connection.md#dataset-settings) for an event dataset when you [create a connection](/help/connections/create-connection.md) or when you [edit a connection](/help/connections/manage-connections.md#edit-a-connection).
 
 ## Prerequisites
