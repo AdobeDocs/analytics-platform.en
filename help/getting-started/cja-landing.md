@@ -17,7 +17,7 @@ Get a glimpse of the newest enhancements in the Customer Journey Analytics produ
 
 >[!BEGINTABS]
 
->[!Stitching in Connections]
+>[!TAB Stitching in Connections]
 
 You can now configure and enable stitching on event datasets directly within the Customer Journey Analytics Connections UI. 
 
