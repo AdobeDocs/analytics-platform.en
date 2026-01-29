@@ -23,22 +23,22 @@ The following use cases are documented:
 
 * **Report and analyze**
   * [Daily trend](bi-extension/daily-trend.md)
-  * [Hourly trend](bi-extension/hourly-trend)
-  * [Monthly trend](bi-extension/monthly-trend)
-  * [Single dimension ranked](bi-extension/single-dimension-ranked)
-  * [Multiple dimension ranked](bi-extension/multiple-dimension-ranked)
-  * [Count distinct dimension values](bi-extension/count-distinct-dimension-values)
-  * [Use date range names to filter](bi-extension/use-date-range-names-to-filter)
-  * [Use segment names to segment](bi-extension/use-segment-names-to-segment)
-  * [Use dimension values to segment](bi-extension/use-dimension-values-to-segment)
-  * [Sort](bi-extension/sort)
-  * [Limits](bi-extension/limits)
+  * [Hourly trend](bi-extension/hourly-trend.md)
+  * [Monthly trend](bi-extension/monthly-trend.md)
+  * [Single dimension ranked](bi-extension/single-dimension-ranked.md)
+  * [Multiple dimension ranked](bi-extension/multiple-dimension-ranked.md)
+  * [Count distinct dimension values](bi-extension/count-distinct-dimension-values.md)
+  * [Use date range names to filter](bi-extension/use-date-range-names-to-filter.md)
+  * [Use segment names to segment](bi-extension/use-segment-names-to-segment.md)
+  * [Use dimension values to segment](bi-extension/use-dimension-values-to-segment.md)
+  * [Sort](bi-extension/sort.md)
+  * [Limits](bi-extension/limits.md)
 
 * **Understand**
 
-  * [Transformations](bi-extension/transformations)
-  * [Visualizations](bi-extension/visualizations)
-  * [Caveats](bi-extension/caveats)
+  * [Transformations](bi-extension/transformations.md)
+  * [Visualizations](bi-extension/visualizations.md)
+  * [Caveats](bi-extension/caveats.md)
 
 The **connect** use case focuses on how to connect BI tools using the Customer Journey Analytics BI extension. 
 

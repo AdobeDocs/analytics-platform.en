@@ -21,7 +21,7 @@ You use components like [Filters](/help/components/segments/seg-overview.md), [C
 
 >[!PREREQUISITES]
 >
->Ensure you have validated [a successful connection, can list data views, and use a data view](connect-and-validate) for the BI tool for which you want to try out this use case. 
+>Ensure you have validated [a successful connection, can list data views, and use a data view](connect-and-validate.md) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]

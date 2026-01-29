@@ -22,7 +22,7 @@ An example **[!UICONTROL Daily Trend]** panel for the use case:
 
 >[!PREREQUISITES]
 >
->Ensure you have validated a [successful connection and can list and use data views](connect-and-validate) for the BI tool for which you want to try out this use case. 
+>Ensure you have validated a [successful connection and can list and use data views](connect-and-validate.md) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]

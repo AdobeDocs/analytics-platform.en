@@ -24,7 +24,7 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
 
 >[!PREREQUISITES]
 >
->Ensure you have validated [a successful connection, can list data views, and use a data view](connect-and-validate) for the BI tool for which you want to try out this use case. 
+>Ensure you have validated [a successful connection, can list data views, and use a data view](connect-and-validate.md) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
