@@ -498,7 +498,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Multiple dimension ranked](/help/use-cases/data-views/bi-extension/multiple-dimension-ranked.md)
       + [Count distinct dimension values](/help/use-cases/data-views/bi-extension/count-distinct-dimension-values.md)
       + [Use date range names to filter](/help/use-cases/data-views/bi-extension/use-date-range-names-to-filter.md)
-      + [Use segment names to segment](/help/use-cases/data-views/bi-extension/use-segment-names-to-segment)
+      + [Use segment names to segment](/help/use-cases/data-views/bi-extension/use-segment-names-to-segment.md)
       + [Use dimension values to segment](/help/use-cases/data-views/bi-extension/use-dimension-values-to-segment.md)
       + [Sort](/help/use-cases/data-views/bi-extension/sort.md)
       + [Limits](/help/use-cases/data-views/bi-extension/limits.md)

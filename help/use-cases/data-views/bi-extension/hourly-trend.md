@@ -16,7 +16,7 @@ In this use case, you want to display a table and simple line visualization that
 
 An example **[!UICONTROL Hourly Trend]** panel for the use case:
 
-![Customer Journey Analytics Hourly Trend visualizations](assets/cja_hourly_trend.png)
+![Customer Journey Analytics Hourly Trend visualizations](../assets/cja_hourly_trend.png)
 
 +++
 
@@ -40,7 +40,7 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
    1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
    1. In the **[!UICONTROL Filter \[Daterange\]]** dialog, select **[!UICONTROL Range of dates]** and specify a period of `01/01/2023` - `02/01/2023`.
 
-      ![Tableau Desktop Filter](assets/uc3-tableau-filter.png)
+      ![Tableau Desktop Filter](../assets/uc3-tableau-filter.png)
 
    1. Drag and drop **[!UICONTROL Daterangehour]** from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Columns]**.
       * Select **[!UICONTROL More]** > **[!UICONTROL Hours]** from the **[!UICONTROL Daterangeday]** drop-down menu, so that the value is updated to **[!UICONTROL HOUR(Daterangeday)]**.
@@ -49,7 +49,7 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
 
       Your Tableau Desktop should look like below.
 
-      ![Tableau Desktop Graph](assets/uc3-tableau-graph.png)
+      ![Tableau Desktop Graph](../assets/uc3-tableau-graph.png)
 
 1. Select **[!UICONTROL Duplicate]** from the **[!UICONTROL Sheet 1]** tab context menu to create a second sheet.
 1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1]** tab context menu to rename the sheet to `Graph`.
@@ -61,7 +61,7 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
 
       Your Tableau Desktop should look like below.
 
-      ![Tableau Desktop Data](assets/uc3-tableau-data.png)
+      ![Tableau Desktop Data](../assets/uc3-tableau-data.png)
 
 1. Select **[!UICONTROL New Dashboard]** tab button (at the bottom) to create a new **[!UICONTROL Dashboard 1]** view. In the **[!UICONTROL Dashboard 1]** view:
    1. Drag and drop the **[!UICONTROL Graph]** sheet from the **[!UICONTROL Sheets]** shelf onto the **[!UICONTROL Dashboard 1]** view that reads *Drop sheets here*.
@@ -70,7 +70,7 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
 
       Your **[!UICONTROL Dashboard 1]** view should look like below.
 
-      ![Tableau Desktop Dashboard 1](assets/uc3-tableau-dashboard.png)
+      ![Tableau Desktop Dashboard 1](../assets/uc3-tableau-dashboard.png)
 
 
 >[!TAB Looker]
@@ -81,7 +81,7 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
 1. In the **[!UICONTROL Add Filter]** dialog:
    1. Select **[!UICONTROL ‣ Cc Data View]**
    1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
-      ![Looker filter](assets/uc2-looker-filter.png)
+      ![Looker filter](../assets/uc2-looker-filter.png)
 1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/01/02]**.
 1. From the **[!UICONTROL Cc Data View]** section in the left rail, 
    1. Select **[!UICONTROL ‣ Daterangehour Date]**, then **[!UICONTROL Time]** from the list of **[!UICONTROL DIMENSIONS]**.
@@ -91,7 +91,7 @@ An example **[!UICONTROL Hourly Trend]** panel for the use case:
 
 You should see a visualization and table similar as shown below.
 
-![Looker result daily trend](assets/uc3-looker-result.png)
+![Looker result daily trend](../assets/uc3-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]
@@ -116,7 +116,7 @@ You should see a visualization and table similar as shown below.
 
 1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Jupyter Notebook Results](assets/uc3-jupyter-results.png)
+   ![Jupyter Notebook Results](../assets/uc3-jupyter-results.png)
 
 
 >[!TAB RStudio]
@@ -139,7 +139,7 @@ You should see a visualization and table similar as shown below.
 
 1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RStudio Results](assets/uc3-rstudio-results.png)
+   ![RStudio Results](../assets/uc3-rstudio-results.png)
 
 >[!ENDTABS]
 
