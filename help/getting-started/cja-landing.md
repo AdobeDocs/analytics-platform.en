@@ -26,14 +26,14 @@ You can now configure and enable stitching on event datasets directly within the
 *_You must have at least the Select package to enable stitching._*
 
 
->[!TAB Audience Analysis*]
+>[!TAB Audience Analysis]
 
 Audience analysis allows you to ingest audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection.
 
 [![image](assets/learn-more-button.svg)](/help/connections/audience-analysis/analyze-audiences.md)
 
 
->[!TAB Real-time reporting*]
+>[!TAB Real-time reporting]
 
 Real-time reporting in Customer Journey Analytics displays and updates data and visualizations within one or more panels in Analysis Workspace in real time.
 
