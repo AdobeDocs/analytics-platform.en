@@ -1,6 +1,6 @@
 ---
-title: Export reports from Report Builder
-description: Describes how to export data from Report Builder to secure destinations
+title: Export Reports From Report Builder
+description: Learn how to export data from Report Builder to secure destinations.
 role: User, Admin
 feature: Report Builder
 type: Documentation
@@ -43,17 +43,15 @@ To export reports from Report Builder:
 
 1. Select [!UICONTROL **Schedule**].
 
-  <!-- add screenshot -->
-
 1. On the **[!UICONTROL Workbooks]** tab, select the plus icon to create a new schedule
-
-   ![Report builder schedules tab](assets/report-builder-schedule-cloud.png)
 
    Or
    
    To export the workbook on a schedule that you already created, select the schedule from the list of schedules, then select **[!UICONTROL Send on schedule]**. 
 
 1. In the [!UICONTROL **Adobe Report Builder**] right panel, specify the following information to continue creating a new schedule:
+
+   ![Report builder schedules tab](assets/report-builder-schedule-cloud.png)
 
    |Field name | Function |
    |---------|----------|
@@ -105,8 +103,6 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
 * Export data blocks that include multiple dimensions.
 
 ## Export requirements {#export-requirements}
-
-### Minimum requirements
 
 Make sure that your data blocks, your environment, and your permissions meet the following requirements:
 

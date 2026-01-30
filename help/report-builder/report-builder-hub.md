@@ -1,6 +1,6 @@
 ---
-title: What is the Report Builder Hub in Customer Journey Analytics
-description: Describes the Report Builder Hub components
+title: Report Builder Hub
+description: Learn about the Report Builder hub.
 role: User
 feature: Report Builder
 type: Documentation
