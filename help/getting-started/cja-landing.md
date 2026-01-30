@@ -23,7 +23,7 @@ You can now configure and enable stitching on event datasets directly within the
 
 [![image](assets/learn-more-button.svg)](/help/stitching/use-stitching-ui.md)
 
-*_You must have at least the Select package to enable stitching._*
+*You must have at least the Select package to enable stitching.*
 
 
 >[!TAB Audience Analysis]
@@ -39,7 +39,7 @@ Real-time reporting in Customer Journey Analytics displays and updates data and 
 
 [![image](assets/learn-more-button.svg)](/help/components/real-time/real-time.md)
 
-*_You must have the Ultimate package for real-time reporting._*
+*You must have the Ultimate package for real-time reporting.*
 
 
 >[!TAB B2B Edition]
