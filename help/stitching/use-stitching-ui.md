@@ -5,7 +5,6 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-badgePremium: label="Beta" type="Informative"
 ---
 # Use stitching
 
