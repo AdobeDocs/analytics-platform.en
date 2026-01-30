@@ -61,6 +61,7 @@ Content Analytics allows you to quickly and easily investigate large volumes of 
 
 Start by reading the material in the links below to familiarize yourself with Customer Journey Analytics capabilities and functionalities.
 
+
 <table style="table-layout:fixed">
   <tr style="border: 0;">
     <td>
@@ -69,16 +70,20 @@ Start by reading the material in the links below to familiarize yourself with Cu
     </td>
     <td>
     <a href="/help/data-ingestion/data-ingestion.md"><img src="./assets/data-ingestion.png"></a>
-    <div><strong>Ingest and use data</strong><br/>Learn about the options that you have to ingest data into Experience Platform and use it for analysis and reporting in Customer Journey Analytics.</div>
+    <div><strong>Ingest and use data</strong><br/>Learn about the options that you have to ingest data into Experience Platform and use it for analysis and reporting.</div>
     </td>
     <td>
     <a href="/help/guided-analysis/overview.md"><img src="./assets/product-analytics.png"></a>
-    <div><strong>Guided Analysis</strong><br/>Learn how to use workflows to gain data and insights about your customer's product experience. Product Analytics through guided analysis…
+    <div><strong>Guided Analysis</strong><br/>Learn how to use workflows to gain data and insights about your customer's product experience. Product Analytics through guided analysis.
     </div>
     </td>
     <td>
     <a href="/help/analysis-workspace/home.md"><img src="./assets/workspace.png"></a>
     <div><strong>Analysis Workspace</strong><br/>Use Analysis Workspace to perform basic and advanced analysis, like attribution, flow and fallout diagrams, dimension breakdowns.</div>
+    </td>
+    <td>
+    <a href="/help/content-analytics/content-analytics.md"><img src="./assets/content-analytics.png"></a>
+    <div><strong>Content Analytics</strong><br/>Understand how content, next to behavior, impacts key performance indicators. Gain deeper insights on customer journey data.</div>
     </td>
   </tr>
   <tr style="border: 0;">
@@ -86,6 +91,7 @@ Start by reading the material in the links below to familiarize yourself with Cu
     <td align="center"><a href="/help/data-ingestion/data-ingestion.md"><img src="./assets/learn-more-button.svg"></a></td>
     <td align="center"><a href="/help/guided-analysis/overview.md"><img src="./assets/learn-more-button.svg"></a></td>
     <td align="center"><a href="/help/analysis-workspace/home.md"><img src="./assets/learn-more-button.svg"></a></td>
+    <td align="center"><a href="/help/content-analytics/content-analytics.md"><img src="./assets/learn-more-button.svg"></a></td>
     </tr>
 </table>
 
@@ -98,7 +104,7 @@ Understand how Customer Journey Analytics compares to Adobe Analytics. And how t
   <tr style="border: 0;">
     <td>
       <img src="./assets/analytics.svg" width="35px"><br/>
-      <strong>Compare to Adobe Analytics</strong><br/><a href="/help/getting-started/aa-vs-cja/overview.md">Overview</a> - <a href="/help/getting-started/aa-to-cja.md">Evolution</a> - <a href="/help/getting-started/aa-vs-cja/aa-data-in-cja.md">Use Adobe Analytics data</a> - <a href="/help/getting-started/aa-vs-cja/cja-aa.md">Feature support</a> - <a href="/help/getting-started/aa-vs-cja/terminology.md">Terminology</a> - <a href="/help/getting-started/aa-vs-cja/data-processing-comparisons.md">Data processing</a> - <a href="/help/getting-started/cja-b2b-edition.md">Customer Journey Analytics B2B Edition</a>
+      <strong>Compare to Adobe Analytics</strong><br/><a href="/help/getting-started/aa-vs-cja/overview.md">Overview</a> - <a href="/help/getting-started/aa-to-cja.md">Evolution</a> - <a href="/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md">Upgrade</a> - <a href="/help/getting-started/aa-vs-cja/aa-data-in-cja.md">Use Adobe Analytics data</a> - <a href="/help/getting-started/aa-vs-cja/cja-aa.md">Feature support</a> - <a href="/help/getting-started/aa-vs-cja/terminology.md">Terminology</a> - <a href="/help/getting-started/aa-vs-cja/data-processing-comparisons.md">Data processing</a>
     </td>
     <td>
       <img src="./assets/connections.svg" width="35px"><br/>
@@ -115,13 +121,13 @@ Understand how Customer Journey Analytics compares to Adobe Analytics. And how t
       <img src="./assets/workspace.svg" width="35px"><br/>
       <strong>Workspace Projects</strong><br/><a href="/help/analysis-workspace/home.md">Analysis Workspace</a> - <a href="/help/analysis-workspace/perform-basic-analysis.md">Basic</a> & <a href="/help/analysis-workspace/perform-adv-analysis.md">Advanced analysis</a> - <a href="/help/analysis-workspace/build-workspace-project/freeform-overview.md">Projects</a> - <a href="/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md">Visualizations</a> - <a href="/help/analysis-workspace/c-panels/freeform-panel.md">Panels</a>
     </td>
-    <td>
-      <img src="./assets/guided-analysis.svg" width="35px"><br/>
-      <strong>Guided Analysis</strong><br/><a href="/help/guided-analysis/overview.md">Overview</a> - <a href="/help/guided-analysis/types/active-growth.md">User Growth</a> - <a href="/help/guided-analysis/types/trends.md">Trends</a> - <a href="/help/guided-analysis/types/funnel.md">Funnel</a> - <a href="/help/guided-analysis/types/release-impact.md">Impact</a> - <a href="/help/guided-analysis/industry-use-cases.md">Industry use cases</a>
-    </td>
-    <td>
+        <td>
       <img src="./assets/share.svg" width="35px"><br/>
       <strong>Share, export, integrate</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">Projects</a> - <a href="/help/mobile-app/home.md">Analytics Dashboards</a> - <a href="/help/report-builder/rb-overview.md">Report Builder</a>  - <a href="/help/components/exports/manage-exports.md">Cloud export</a> - <a href="/help/integrations/overview.md">Integrations</a>
+    </td>
+    <td>
+      <img src="./assets/guided-analysis.svg" width="35px"><br/>
+      <strong>And more…</strong><br/><a href="/help/guided-analysis/overview.md">Guided Analysis</a> - <a href="/help/content-analytics/content-analytics.md">Content Analytics</a> - <a href="/help/getting-started/cja-b2b-edition.md">B2B Edition</a> 
     </td>
   </tr>
 </table> 
