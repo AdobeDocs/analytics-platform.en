@@ -21,7 +21,7 @@ You need to check and meet the prerequisites for the stitching method you specif
 
 If you meet the prerequisites, you might want to perform some preflight checks on the data in the event dataset before you enable identity stitching:
 
-* f you are going to use XDM schema fields for persistent ID /person ID, ensure that identities are marked properly in the schema for the event dataset. [See Identity namespace overview](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
+* If you are going to use XDM schema fields for persistent ID or person ID, ensure that identities are marked properly in the schema for the event dataset. [See Identity namespace overview](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
 * Verify identity coverage for both persistent ID and person ID:
   
   * **Persistent ID**
