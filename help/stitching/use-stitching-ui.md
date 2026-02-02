@@ -14,22 +14,19 @@ You can enable stitching as part of the [dataset settings](/help/connections/cre
 
 ## Prerequisites
 
-To enable stitching on an event dataset within the Connections UI: 
+You need to check and meet the prerequisites for the stitching method you specify: [field-based stitching](fbs.md#prerequisites) or [graph-based stitching](gbs.md#prerequisites).
 
-* The schema on which the dataset is based should have:
-
-  * multiple fields that are configured as an identity, and which allows you to select different values for a persistent ID and a person ID.
-  * at least one field that is marked as primary identity with an associated namespace in case you want to use Identity Map and the primary identity namespace for persistent ID or person ID.
-
-* If you want to use graph-based stitching and you anticipate the event dataset to contribute to the Identity Graph (as the dataset contains relevant person IDs next to persistent IDs), you should [enable the dataset for the Identity service](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
 
 ## Preflight checks
 
 If you meet the prerequisites, you might want to perform some preflight checks on the data in the event dataset before you enable identity stitching:
 
-* Ensure that identities are marked properly in the schema for the event dataset. [See Identity namespace overview](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
+* f you are going to use XDM schema fields for persistent ID /person ID, ensure that identities are marked properly in the schema for the event dataset. [See Identity namespace overview](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
 * Verify identity coverage for both persistent ID and person ID:
-  * Persistent ID: Query 7 days of data where your persistent ID field is not null and divide by a query of 7 days of data for all events in your dataset. This percentage should be above 95%.
+  
+  * **Persistent ID**
+  
+    Query 7 days of data where your persistent ID field is not null and divide by a query of 7 days of data for all events in your dataset. This percentage should be above 95%.
 
     Example of a query you could use for verification:
 
@@ -54,39 +51,35 @@ If you meet the prerequisites, you might want to perform some preflight checks o
     * `{END_DATE}` is the end date in standard format. For example: `2024-01-08 00:00:00`.
   
 
-  * Person ID - Query 7 days of data where your person ID field is not null and divide by a query of 7 days of data for all events in your dataset. This percentage should be above 5%.
+  * **Person ID**
+    * For graph-based stitching, ensure the identity graph contains fragments that link ID values from your chosen persistent ID namespace and person ID namespace. You could run a test by going to the [Experience Platform Identity graph viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} and query the graph by some test persistent ID values. Verify to see if these persistent ID values are linked to Person ID values in the graph.
+    * For field-based stitching, query 7 days of data where your person ID field is not null and divide by a query of 7 days of data for all events in your dataset. This percentage should ideally above 5%.
 
-     Example of a query you could use for verification:
+      Example of a query you could use for verification:
 
-    ```sql
-    SELECT
-      COUNT(*) AS total_events,
-      COUNT({PERSON_ID_FIELD}) AS events_with_personid,
-      ROUND(COUNT({PERSON_ID_FIELD}) / COUNT(*), 2) AS percent_with_personid_not_null
-    FROM 
-      {DATASET_TABLE_NAME}
-    WHERE
-      TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
-      AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
-    ```
+      ```sql
+      SELECT
+        COUNT(*) AS total_events,
+        COUNT({PERSON_ID_FIELD}) AS events_with_personid,
+        ROUND(COUNT({PERSON_ID_FIELD}) / COUNT(*), 2) AS percent_with_personid_not_null
+      FROM 
+        {DATASET_TABLE_NAME}
+      WHERE
+        TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
+        AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
+      ```
 
-    Where:
+      Where:
 
-    * `{PERSON_ID_FIELD}` is the field for the person ID. For example: `identityMap.crmId[0]`.
-    * `{DATASET_TABLE_NAME}` is the table name for the event dataset.
-    * `{FORMAT_STRING}` is the format string for the timestamp field. For example: `MM/DD/YY HH12:MI AM`.
-    * `{START_DATE}` is the start date. For example: `2024-01-01 00:00:00`.
-    * `{END_DATE}` is the end date in standard format. For example: `2024-01-08 00:00:00`.
+      * `{PERSON_ID_FIELD}` is the field for the person ID. For example: `identityMap.crmId[0]`.
+      * `{DATASET_TABLE_NAME}` is the table name for the event dataset.
+      * `{FORMAT_STRING}` is the format string for the timestamp field. For example: `MM/DD/YY HH12:MI AM`.
+      * `{START_DATE}` is the start date. For example: `2024-01-01 00:00:00`.
+      * `{END_DATE}` is the end date in standard format. For example: `2024-01-08 00:00:00`.
   
 
 
 ## Enable identity stitching
-
->[!NOTE]
->
->If **[!UICONTROL Enable identity stitching]** is not available in the Connections interface, use the [request procedure to enable stitching](/help/stitching/use-stitching.md) on a dataset.
-
-
 
 To enable stitching, in the event dataset section of the **[!UICONTROL Add datasets]** or **[!UICONTROL Edit dataset]** dialog: 
 
@@ -94,7 +87,7 @@ To enable stitching, in the event dataset section of the **[!UICONTROL Add datas
 
 1. Select **[!UICONTROL Enable identity stitching]**.
    
-   If you enable stitching for an existing event dataset, the **[!UICONTROL Change Person ID]** dialog displays the implications of a change of the person ID due to the use of stitching. Select **[!UICONTROL Continue]** to continue.
+   If you enable or disable stitching for a saved event dataset in the connection, the **[!UICONTROL Change Person ID]** dialog displays the implications of a change of the person ID. Select **[!UICONTROL Continue]** to continue.
 
    The **[!UICONTROL Enable identity stitching]** dialog summarizes the consequences of stitching identities. Select **[!UICONTROL Continue]** to continue.
 
@@ -120,12 +113,12 @@ To enable stitching, in the event dataset section of the **[!UICONTROL Add datas
    >Ensure that you are entitled to use the identity graph.
    >
 
-   Before that, a **[!UICONTROL Change to identity graph]** dialog is displayed to ensure you have [finished the setup of the identity graph for the dataset](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) before you use the identity graph for stitching. Select **[!UICONTROL Continue]** to continue.
+   Before that, a **[!UICONTROL Change to identity graph]** dialog is displayed to ensure you have finished the setup of the identity graph for the dataset as part of the [graph-based prerequisites](/help/stitching/gbs.md#prerequisites) before you use the identity graph for stitching. Select **[!UICONTROL Continue]** to continue.
 
    * Select a namespace from the **[!UICONTROL Namespace]** drop-down menu.
 
 
-1. Select a lookback window from the **[!UICONTROL Lookback window]** drop-down menu. The available options are  dependent on the Customer Journey Analytics package that you are entitled to.
+1. Select a replay window from the **[!UICONTROL Replay window]** drop-down menu. The available options are  dependent on the Customer Journey Analytics package that you are entitled to.
 
 Once you save a connection, the stitching process for datasets that are enabled for stitching kicks when the ingestion of data for these datasets starts.
 

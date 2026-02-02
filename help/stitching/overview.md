@@ -10,11 +10,11 @@ role: Admin
 
 >[!NOTE]
 >
->You must have the **Select** package or higher (for [field-based stitching](fbs.md)) or **Prime** package or higher (for [graph-based stitching](gbs.md)) to use the functionality described in this section. Contact your administrator if you're unsure which Customer Journey Analytics package you have.
+>You must have the Customer Journey Analytics **Select** package or higher (for [field-based stitching](fbs.md)) or the Customer Journey Analytics **Prime** package or higher (for [graph-based stitching](gbs.md)) to use the functionality described in this section. Contact your administrator if you're unsure which Customer Journey Analytics package you have.
 
 Identity stitching (or simply, stitching) is a powerful feature that elevates an event dataset's suitability for cross-channel analysis. Cross-channel analysis is a main use case for Customer Journey Analytics. The feature allows you to combine and run reports seamlessly on multiple datasets from different channels, based on a common identifier (person ID).
 
-When you combine datasets with similar person IDs, attribution is carried over across devices and channels. For example, a user visits your site through an advertisement on their desktop computer. The users buys a product but then the user encounters an issue with the order order. The user then gives your customer service team a call to help resolve the issue. With cross-channel analysis, you can attribute call center events to the ad that the user originally clicked.
+When you combine datasets with similar person IDs, attribution is carried over across devices and channels. For example, a user visits your site through an advertisement on their desktop computer. The user buys a product but then the user encounters an issue with the order. The user then gives your customer service team a call to help resolve the issue. With cross-channel analysis, you can attribute call center events to the ad that the user originally clicked.
 
 Unfortunately, not all event-based datasets that are part of your connection in Customer Journey Analytics are sufficiently populated with data to support this attribution out of the box. Especially, web-based or mobile-based experience datasets often don't have actual person ID information available on all events.
 
@@ -30,7 +30,7 @@ Customer Journey Analytics supports two types of stitching: [field-based stitchi
 
 Before using stitching, make sure that your organization is prepared with the following:
 
-- Stitching includes merging authenticated and unauthenticated user data. Ensure that you comply with applicable laws and regulations, including obtaining necessary end-user permissions, before activating stitching on an event dataset. See [Define identity fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) for more information.
+- Stitching includes merging authenticated and unauthenticated user data. Ensure that you comply with applicable laws and regulations, including obtaining necessary end-user permissions, before activating stitching on an event dataset.
 
 - Import the desired data into Adobe Experience Platform:
   
@@ -47,15 +47,6 @@ You can enable stitching in two ways:
 - [Enable stitching in the Connections interface](/help/stitching/use-stitching-ui.md). When you configure stitching for a dataset in the Connections interface, the stiching occurs 'on the fly', during the ingestion of data from that dataset in Customer Journey Analytics.
 
 ## Limitations
-
->[!IMPORTANT]
->
->
->- Apply any change that you make to the source event dataset schema also to the new stitched dataset schema.
->
->- If you remove the source dataset, the stitched dataset stops processing and gets removed by the system.
->
->- Data usage labels are not automatically propagated to the stitched dataset schema. If you have data usage labels applied to the source dataset schema, you need to apply these data usage labels manually to the stitched dataset schema. See [Managing data usage labels in Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) for more information.
 
 Stitching is a groundbreaking and robust feature, but has limitations on how it can be used. 
 

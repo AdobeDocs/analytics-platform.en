@@ -14,9 +14,7 @@ exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
 >Request stitching through Adobe is no longer required and this method is deprecated. [Enable stitching in the Connections UI](use-stitching-ui.md).
 >
 
-
-
-Once your organization meets all [prerequisites](overview.md#prerequisites) and understands common [limitations](overview.md#limitations) and stitching method specific ([field-based](fbs.md#limitations) and [graph-based](gbs.md#limitations)) limitations, you can follow these steps to request and start using stitching in Customer Journey Analytics.
+Once your organization meets generic [prerequisites](overview.md#prerequisites), understands common [limitations](overview.md#limitations), and also stitching method specific ([field-based](fbs.md) and [graph-based](gbs.md)) prerequisites and limitations, you can follow these steps to request and start using stitching in Customer Journey Analytics.
 
 ## Select options
 
@@ -56,3 +54,11 @@ The Customer Journey Analytics package you are entitled to determines the availa
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
 Once the data view is set up, you can run your Customer Journey Analytics reporting analysis across channels and devices.
+
+## Limitations
+
+- Apply any change that you make to the source event dataset schema also to the new stitched dataset schema.
+
+- If you remove the source dataset, the stitched dataset stops processing and gets removed by the system.
+
+- Data usage labels are not automatically propagated to the stitched dataset schema. If you have data usage labels applied to the source dataset schema, you need to apply these data usage labels manually to the stitched dataset schema. See [Managing data usage labels in Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) for more information.

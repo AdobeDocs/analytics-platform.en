@@ -246,29 +246,31 @@ You must ensure a dataset is enabled for Identity Service to use the dataset in 
 
 You do not have to be licensed for Real-Time Customer Data Platform to make use of graph-based stitching. Graph-based stitching is based on an available identity graph and not on real-time customer profiles.
 
-To enable a dataset for the Identity Service only, use a `POST` request to the `/datasets` endpoint that only uses the `unifiedIdentity` tag. For example:
+To check an existing dataset and enable the dataset for the Identity Service only, use a `PATCH` request to the `/datasets` endpoint that only uses the `unifiedIdentity` tag. For example:
 
 ```shell
-curl -X POST \
-  https://platform.adobe.io/data/foundation/catalog/dataSets \
-  -H 'Content-Type: application/json' \
+curl -X PATCH \
+  https://platform.adobe.io/data/foundation/catalog/dataSets/{DATASET_ID} \
+  -H 'Content-Type:application/json-patch+json' \
   -H 'Authorization: Bearer {ACCESS_TOKEN}' \
   -H 'x-api-key: {API_KEY}' \
   -H 'x-gw-ims-org-id: {ORG_ID}' \
   -H 'x-sandbox-name: {SANDBOX_NAME}' \
-  -d '{
-    "schemaRef": {
-        "id": "https://ns.adobe.com/{TENANT_ID}/schemas/31670881463308a46f7d2cb09762715",
-        "contentType": "application/vnd.adobe.xed-full-notext+json; version=1"
-    },
-    "tags": {
-       "unifiedIdentity": ["enabled:true"]
-    }
-  }'
+  -d '[
+        { "op": "add", "path": "/tags/unifiedProfile", "value": ["enabled:true"] }
+      ]'
 ```
 
 Any use of the `unifiedProfile` tag in the request, while you are not licensed for Real-Time Customer Data Profile, returns an error.
 
-See [Create a dataset enabled for Profile and Identity](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) for more information.
+See [Create a dataset enabled for Profile and Identity](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset) for more information.
 
 +++ 
+
+
+## Stitched namespace values
+
++++ Why do stiched namespace values not always match the identity namespace value you might use within another dataset within the CJA connection?
+
+By default stitched namespace values are lowercase. So, `custEmail` becomes `custemail`. If you do have another dataset with an identity namespace value of `custEmail`, the two values do not match. To work around this behavior in reporting, you could use the [lowercase()](/help/data-views/derived-fields/derived-fields.md#lowercase) derived field function to match the identity namespace values.
+
