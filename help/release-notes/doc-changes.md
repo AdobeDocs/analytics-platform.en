@@ -13,7 +13,11 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 |---|---|
+| **February 2026** | |
+| Header overrides | Documentation for the Content Analytics [header overrides configuration](/help/content-analytics/config/guided.md#header-overrides). |
 | **January 2026** | |
+| Audience analyis | Added [documentation](/help/connections/audience-analysis/audience-analysis-overview.md) for the Audience Analysis feature. | 
+| Stitching | Updated the [stitching documentation](/help/stitching/overview.md) for the release of the enablement of stitching through the Connections UI. | 
 | Architect a schema | Added substantial information and context to [Architect your schema for use with Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md). |
 
 ## 2025
