@@ -52,7 +52,7 @@ If you meet the prerequisites, you might want to perform some preflight checks o
   
 
   * **Person ID**
-    * For graph-based stitching, ensure the identity graph contains fragments that link ID values from your chosen persistent ID namespace and person ID namespace. You could run a test by going to the [Experience Platform Identity graph viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} and query the graph by some test persistent ID values. Verify to see if these persistent ID values are linked to Person ID values in the graph.
+    * For graph-based stitching, ensure that the identity graph contains fragments that link ID values from your chosen persistent ID namespace and person ID namespace. You could run a test by going to the [Experience Platform Identity graph viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} and query the graph by some test persistent ID values. Verify to see if these persistent ID values are linked to person ID values in the graph.
     * For field-based stitching, query 7 days of data where your person ID field is not null and divide by a query of 7 days of data for all events in your dataset. This percentage should ideally above 5%.
 
       Example of a query you could use for verification:
@@ -141,4 +141,4 @@ Stitching enabled in the Connections interface can coexist without any issues wi
 
 For example, you have web-based stitched datasets in the data lake as a result of earlier or current stitching requests. You can add stitched data from a call-center dataset using the Connections interface to combine that data with the web-based data. 
 
-Eventually, Adobe will automatically migrate your request based stitched datasets to the new stitching in connections experience.
+Eventually, Adobe will migrate your request based stitched datasets to the new stitching in connections experience.

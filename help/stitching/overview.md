@@ -18,7 +18,7 @@ When you combine datasets with similar person IDs, attribution is carried over a
 
 Unfortunately, not all event-based datasets that are part of your connection in Customer Journey Analytics are sufficiently populated with data to support this attribution out of the box. Especially, web-based or mobile-based experience datasets often don't have actual person ID information available on all events.
 
-Stitching allows to rekey identities within one dataset's rows to ensure the person ID (stitched ID) is available on each event. Stitching looks at user data from both authenticated and unauthenticated sessions to determine the common person ID value that can be used as stitched ID. This rekeying allows for the resolution of disparate records to a single stitched ID for analysis at the person level, rather than at the device or cookie level.
+Stitching rekeys identities within one dataset's rows to ensure the person ID (stitched ID) is available on each event. Stitching looks at user data from both authenticated and unauthenticated sessions to determine the common person ID value that can be used as stitched ID. This rekeying resolves disparate records to a single stitched ID for analysis at the person level, rather than at the device or cookie level.
 
 Customer Journey Analytics supports two types of stitching: [field-based stitching](fbs.md) and [graph-based stitching](gbs.md).
 
@@ -44,7 +44,7 @@ You benefit from cross-channel analysis if you combine one or more of your stitc
 You can enable stitching in two ways:
 
 - [Request to enable stitching](/help/stitching/use-stitching.md) (deprecated). Once approved, a duplicate dataset is created for the dataset for which you have requested stitching. This duplicate dataset contains an additional column with the stitched identifier. You have to create a new or edit an existing connection that includes the stitched dataset to use the stitched data in Customer Journey Analytics.
-- [Enable stitching in the Connections interface](/help/stitching/use-stitching-ui.md). When you configure stitching for a dataset in the Connections interface, the stiching occurs 'on the fly', during the ingestion of data from that dataset in Customer Journey Analytics.
+- [Enable stitching in the Connections interface](/help/stitching/use-stitching-ui.md). When you configure stitching for a dataset in the Connections interface, the stitching occurs on the fly, during the ingestion of data from that dataset in Customer Journey Analytics.
 
 ## Limitations
 
@@ -52,7 +52,7 @@ Stitching is a groundbreaking and robust feature, but has limitations on how it 
 
 - Only event datasets are supported. Other datasets, such as lookup datasets, are not supported.
 - Stitching does not transform the field used for stitching in any manner. Stitching uses the value in the specified field as it exists in the unstitched dataset within the data lake. 
-- The stitching process is case-sensitive. For example, if sometimes the word 'Bob' appears in the field, and sometimes the word 'BOB' appears, these ids are treated as two separate people.
+- The stitching process is case-sensitive. For example, identity values `Bob` and `BOB` are treated as two separate people.
 
 Ensure you do not confuse stitching with:
 

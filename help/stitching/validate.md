@@ -49,7 +49,7 @@ Furthermore, you need to add two stitching metrics that are based on the presenc
    In the example below, `personalEmail.address` serves as the identity and is used to create the **[!UICONTROL _Email set]** metric.
    ![Email set metric](assets/emailset-metric.png)
 
-1. Use `stitchedID.namespae.code` field to create an **[!UICONTROL Email stitched namespace]** dimension. Ensure you specify [Include Exclude values component settings](/help/data-views/component-settings/include-exclude-values.md),  so you only consider values of the namespace you are trying to elevate rows of data to. 
+1. Use `stitchedID.namespae.code` field to create an **[!UICONTROL Email stitched namespace]** dimension. Ensure you specify [Include Exclude values in component settings](/help/data-views/component-settings/include-exclude-values.md), so you only consider values of the namespace you are trying to elevate rows of data to. 
    1. Select **[!UICONTROL Set include/exclude values]**.
    1. Select **[!UICONTROL If all criteria are met]** as the **[!UICONTROL Match]**.
    1. Specify **[!UICONTROL Equals]** `email` as the **[!UICONTROL Criteria]** to select events that have been elevated to the Email namespace.

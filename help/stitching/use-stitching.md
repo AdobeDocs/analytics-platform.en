@@ -18,7 +18,7 @@ Once your organization meets generic [prerequisites](overview.md#prerequisites),
 
 ## Select options
 
-The Customer Journey Analytics package you are entitled to determines the available stitching methods, options for the initial backfill duration, lookback window, replay frequency, and maximum number of datasets permitted for stitching. See the [Customer Journey Analytics product description](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html) for more details. Decide on the available options before requesting support.
+The Customer Journey Analytics package that you are entitled to determines the available stitching methods, options for the initial backfill duration, lookback window, replay frequency, and maximum number of datasets permitted for stitching. See the [Customer Journey Analytics product description](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html) for more details. Decide on the available options before requesting support.
 
 | | Customer Journey Analytics<br/>Select | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
@@ -39,7 +39,7 @@ The Customer Journey Analytics package you are entitled to determines the availa
      - For graph-based stitching, specify the namespace for the persistent ID and the identity namespace to use for querying the identity graph.
    - If the dataset does not support `identityMap`:
      - For field-based stitching, the column name of the person ID for the desired dataset (the person identifier, which also acts as a link between datasets in the context of a connection). 
-     - For graph-based stitching, the identity namespace to use for querying the identity graph.
+     - For graph-based stitching, the identity namespace that you want to use for querying the identity graph.
    - Your preference of lookback window and replay frequency. See your Customer Journey Analytics package for the [options](#options) available.
    - Sandbox name.
 
