@@ -1,6 +1,6 @@
 ---
-title: Field-based stitching
-description: Explanation of the concept and working of field-based stitching
+title: Field-based Stitching
+description: Explains of the concept and working of field-based stitching.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
@@ -8,7 +8,7 @@ exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
 ---
 # Field-based stitching
 
-In field-based stitching you specify an event dataset as well as the persistent ID (cookie) and person ID for that dataset. Field-based stitching adds a new stitched ID column to the event dataset and updates this stitched ID based on rows that have a person ID for that specific persistent ID. <br/>You can use field-based stitching when using Customer Journey Analytics as a standalone solution (not having access to the Experience Platform Identity Service and associated identity graph). Or, when you do not want to use the available identity graph.
+In field-based stitching, you specify an event dataset as well as the persistent ID (cookie) and person ID for that dataset. Field-based stitching adds a new stitched ID column to the event dataset and updates this stitched ID based on rows that have a person ID for that specific persistent ID. <br/>You can use field-based stitching when using Customer Journey Analytics as a standalone solution (not having access to the Experience Platform Identity Service and associated identity graph). Or, when you do not want to use the available identity graph.
 
 ![Field-based stitching](/help/stitching/assets/fbs.png)
 
@@ -18,7 +18,7 @@ In field-based stitching you specify an event dataset as well as the persistent 
 Field-based stitching supports the use of the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) in the following scenarios:
 
 - Use of the primary identity in `identityMap` namespaces to define the persistentID:
-  - If multiple primary identities found in different namespaces, the identities in the namespaces are sorted lexigraphically and the first identity is selected.
+  - If multiple primary identities are found in different namespaces, the identities in the namespaces are sorted lexicographically, and the first identity is selected.
   - If multiple primary identities are found in a single namespace, the first lexicographical available primary identity is selected.
   
   In the example below, the namespaces and identities result in a sorted primary identities list, and finally the selected identity.
@@ -88,7 +88,7 @@ Stitching makes a minimum of two passes on data in a given dataset.
 
 - **Live stitching**: attempts to stitch each hit (event) as it comes in. Hits from devices that are *new* to the dataset (have never authenticated) are typically not stitched at this level. Hits from devices already recognized are stitched immediately.
 
-- **Replay stitching**: *replays* data based on unique identifiers (person IDs). This stage is where hits from previously unknown devices (persistent IDs) become stitched (to person IDs). The replay is determined by two parameters: **frequency** and **lookback window**. Adobe offers the following combinations of these parameters:
+- **Replay stitching**: *replays* data based on unique identifiers (person IDs). This stage is where hits from previously unknown devices (persistent IDs) become stitched (to person IDs). Two parameters determine the replay: **frequency** and **lookback window**. Adobe offers the following combinations of these parameters:
     - **Daily lookback on a daily frequency**: Data replays every day with a 24-hour lookback window. This option holds an advantage that replays are much more frequent, but unauthenticated profiles must authenticate the same day that they visit your site.
     - **Weekly lookback on a weekly frequency**: Data replays once a week with a weekly lookback window (see [options](#options)). This option holds an advantage that allows unauthenticated sessions a much more lenient time to authenticate. However, unstitched data less than a week old is not reprocessed until the next weekly replay.
     - **Biweekly lookback on a weekly frequency**: Data replays once every week with a biweekly lookback window (see [options](#options)). This option holds an advantage that allows unauthenticated sessions a much more lenient time to authenticate. However, unstitched data less than two weeks old is not reprocessed until the next weekly replay.
@@ -102,7 +102,7 @@ Stitching makes a minimum of two passes on data in a given dataset.
   > 
 
 
-Data beyond the lookback window is not replayed. A profile must authenticate within a given lookback window for an unauthenticated visit and an authenticated visit to be identified together. Once a device is recognized, that device is live stitched from that point forward.
+Data beyond the lookback window is not replayed. A profile must be authenticated within a given lookback window for an unauthenticated visit and an authenticated visit to be identified together. Once a device is recognized, that device is live stitched from that point forward.
 
 ### Step 1: Live stitching
 
@@ -217,11 +217,11 @@ The following prerequisites apply specifically to field-based stitching:
 The following limitations apply specifically to field-based stitching:
 
 - Current rekeying capabilities are limited to one step (persistent ID to person ID). Multiple-step rekeying (for example, persistent ID to a person ID, then to another person ID) is not supported.
-- If a device is shared by multiple people and the total number of transitions between users exceeds 50,000, Customer Journey Analytics stops stitching data for that device.
+- If multiple people share a device and the total number of transitions between users exceeds 50,000, Customer Journey Analytics stops stitching data for that device.
 - Custom ID maps used in your organization are not supported.
 - Stitching is case-sensitive. For datasets generated through the Analytics source connector, Adobe recommends reviewing any VISTA rules or processing rules that apply to the person ID field. This review ensures that none of these rules are introducing new forms of the same ID. For example, you should ensure that no VISTA or processing rules are introducing lowercasing to the person ID field on only a portion of the events.
 - Stitching does not combine or concatenate fields. 
 - The person ID field should contain a single type of ID (IDs from a single namespace). For instance, the person ID field should not contain a combination of login IDs and email IDs.
 - If multiple events occur with the same timestamp for the same persistent ID, but with different values in the person ID field, stitching selects the ID based on alphabetical order. So, if persistent ID A has two events with the same timestamp and one of the events specifies Bob and the other specifies Ann, stitching selects Ann.
 - Be cautious of scenarios where the person IDs contain placeholder values, for example `Undefined`. See the [FAQ](faq.md) for more information.
-- You can not use the same namespace both persistent ID and person ID, the namespaces need to be mutually exclusive.
+- You cannot use the same namespace for both persistent ID and person ID, the namespaces need to be mutually exclusive.

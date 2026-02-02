@@ -4,12 +4,8 @@ description: Learn about analyzing audiences from RTCDP in Customer Journey Anal
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
-hide: yes
-hidefromtoc: yes
 ---
 # Audience analysis overview
-
-<!-- add hidden text in this article when this feature releases: /help/components/audiences/audiences-overview.md and this article: /help/analysis-workspace/templates/use-templates.md-->
 
 >[!NOTE]
 >

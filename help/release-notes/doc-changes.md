@@ -16,7 +16,6 @@ The following updates were made to the Customer Journey Analytics documentation 
 | **January 2026** | |
 | Guardrail for rows per year in a connection | Added [guardrail information for data transfer limits](/help/technotes/guardrails.md) about the maximum average number of rows per year in a connection. |
 | View the data center where your data is stored | Added [information about the data centers where data is stored](/help/technotes/data-centers.md#view-the-data-center-where-your-data-is-stored). |
-| User preferences: number format | You can no longer define the number format in the **[!UICONTROL Project & Analyses]** > **[!UICONTROL Data]** section of **[!UICONTROL User preferences]**. The number format is automatically determined by the [default language that is configured](https://experienceleague.adobe.com/en/docs/core-services/interface/features/browser-language) for the logged in user. |
 | Architect a schema | Added substantial information and context to [Architect your schema for use with Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md). |
 
 

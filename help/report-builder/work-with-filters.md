@@ -1,6 +1,6 @@
 ---
-title: How to use segments in Report Builder in Customer Journey Analytics
-description: Describes how to use segments in Report Builder for Customer Journey Analytics
+title: Work With Segments In Report Builder
+description: Lean how to use segments in Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
