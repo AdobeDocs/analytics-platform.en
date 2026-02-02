@@ -1,6 +1,6 @@
 ---
-title: How to manage data blocks using Report Builder in Customer Journey Analytics
-description: Describes how to use the manage feature in Report Builder
+title: Manage Data Blocks In Report Builder
+description: Learn how to manage data blocks in Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
@@ -37,7 +37,7 @@ Use the ![Search](/help/assets/icons/Search.svg) **[!UICONTROL _Search_]** field
 
 ## Edit data blocks
 
-You can edit data views and date ranges data blocks. Or the segments applied to data blocks.
+You can edit data views and date ranges for data blocks. Or the segments applied to data blocks.
 
 For example, you can replace an existing segment with a new segment in one or more data blocks.
 

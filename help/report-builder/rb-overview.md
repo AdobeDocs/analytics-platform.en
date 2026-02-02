@@ -1,6 +1,6 @@
 ---
-title: What is Report Builder in Customer Journey Analytics
-description: Describes Report Builder for Customer Journey Analytics
+title: Report Builder Overview
+description: Learn about the Report Builder functionality.
 role: User
 feature: Report Builder
 type: Documentation

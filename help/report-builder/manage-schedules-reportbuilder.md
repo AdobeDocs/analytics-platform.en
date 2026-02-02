@@ -1,6 +1,6 @@
 ---
-title: How to manage scheduled workbooks in Report Builder in Adobe Analytics
-description: Learn how to manage scheduled workbooks in Report Builder to secure destinations
+title: Mmanage Scheduled Workbooks In Report Builder
+description: Learn how to manage scheduled workbooks in Report Builder.
 role: User, Admin
 feature: Report Builder
 type: Documentation
