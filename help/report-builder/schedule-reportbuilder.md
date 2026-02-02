@@ -1,6 +1,6 @@
 ---
-title: How to schedule workbooks using Report Builder in Customer Journey Analytics
-description: Learn how to use the schedule feature in Report Builder
+title: Schedule Workbooks Using Report Builder
+description: Learn how to use the schedule feature in Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
