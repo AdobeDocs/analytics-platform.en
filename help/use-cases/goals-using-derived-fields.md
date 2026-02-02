@@ -61,7 +61,9 @@ To use goals in your Workspace project, you use the calculated metric functional
 
 You can use these calculated metrics to report on progress in freeform tables and visualizations. For example:
 
-![Freeform table showing marketing revenue goals](assets/freeform-table-product-order-goals.png)
+![Freeform table showing marketing revenue goals](assets/freeform-table-marketing-channel-revenue-goals.png)
+
+
 
 
 ### Marketing channel revenue goals
@@ -76,4 +78,4 @@ You can use these calculated metrics to report on progress in freeform tables an
 
 You can use these calculated metrics to report on progress in freeform tables and visualizations. For example:
 
-![Freeform table showing marketing revenue goals](assets/freeform-table-marketing-channel-revenue-goals.png)
+![Freeform table showing marketing revenue goals](assets/freeform-table-product-order-goals.png)
