@@ -1,6 +1,6 @@
 ---
-title: Graph-based stitching
-description: Explains the concept and working of graph-based stitching
+title: Graph-based Stitching
+description: Explains the concept and working of graph-based stitching.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin

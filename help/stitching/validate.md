@@ -1,6 +1,6 @@
 ---
-title: Validate stitching
-description: How to validate stitching
+title: Validate Stitching
+description: Learn how to validate stitching.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin

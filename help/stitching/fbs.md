@@ -1,6 +1,6 @@
 ---
-title: Field-based stitching
-description: Explanation of the concept and working of field-based stitching
+title: Field-based Stitching
+description: Explains of the concept and working of field-based stitching.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin

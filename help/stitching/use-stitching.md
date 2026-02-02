@@ -1,6 +1,6 @@
 ---
-title: Request stitching
-description: How to request stitching
+title: Request Stitching
+description: Learn how to request stitching.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
