@@ -12,10 +12,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 ## 2026
 
 | Feature | Description |
-| --- | --- |
+|---|---|
 | **January 2026** | |
-| Guardrail for rows per year in a connection | Added [guardrail information for data transfer limits](/help/technotes/guardrails.md) about the maximum average number of rows per year in a connection. |
-| View the data center where your data is stored | Added [information about the data centers where data is stored](/help/technotes/data-centers.md#view-the-data-center-where-your-data-is-stored). |
 | Architect a schema | Added substantial information and context to [Architect your schema for use with Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md). |
 
 

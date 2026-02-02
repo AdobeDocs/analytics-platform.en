@@ -326,6 +326,18 @@ You can, however, edit the pages and assets to include or exclude.
 
 * To edit which assets should be included or excluded when collecting data for Content Analytics, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** underneath **[!UICONTROL Asset]**. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) that is associated with the Tags property for the current Content Analytics configuration. You can edit the regular expression to include or exclude assets. Ensure you [publish](#publish) your changes.
 
+
+### Header overrides
+
+Optionally, you can specify in the **[!UICONTROL Header overrides]** section a header name and secret header value.  This header overrides configuration ensures that Content Analytics sends custom HTTP headers to bypass any bot detection or gate traffic technologies you have implemented.
+
+![Header overrides section](/help/content-analytics/assets/aca-configuration-header-overrides.png)
+
+1. Enable **[!UICONTROL Configure header overrides]**.
+1. Enter the **[!UICONTROL Header name]**. For example, `x-asset-service`.
+1. Enter the **[!UICONTROL Header value]**. Whatever you specify is secret  and not visible in the user interface (unless you expicitly select to disclose ![Visibility](/help/assets/icons/Visibility.svg) the value during input).
+
+
 ### Summary {#summary}
 
 Once you have provided all necessary details, a summary provides details on the artifacts that are created or modified.

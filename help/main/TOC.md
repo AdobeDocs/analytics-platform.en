@@ -439,7 +439,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Field-based stitching](/help/stitching/fbs.md)
   + [Graph-based stitching](/help/stitching/gbs.md)
   + [Request stitching](/help/stitching/use-stitching.md)
-  + [Use stitching](/help/stitching/use-stitching-ui.md)
+  + [Enable stitching](/help/stitching/use-stitching-ui.md)
   + [Validate stitching](/help/stitching/validate.md)
   + [Frequently Asked Questions](/help/stitching/faq.md)  
 
