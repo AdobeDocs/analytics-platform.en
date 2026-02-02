@@ -8,6 +8,14 @@ exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
 ---
 # Request stitching
 
+
+>[!IMPORTANT]
+>
+>Request stitching through Adobe is no longer required and this method is deprecated. [Enable stitching in the Connections UI](use-stitching-ui.md).
+>
+
+
+
 Once your organization meets all [prerequisites](overview.md#prerequisites) and understands common [limitations](overview.md#limitations) and stitching method specific ([field-based](fbs.md#limitations) and [graph-based](gbs.md#limitations)) limitations, you can follow these steps to request and start using stitching in Customer Journey Analytics.
 
 ## Select options
@@ -16,9 +24,9 @@ The Customer Journey Analytics package you are entitled to determines the availa
 
 | | Customer Journey Analytics<br/>Select | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
-| Available stitching methods | <li>Field-based stitching</li> | <li>Field-based stitching</li><li>Graph-based stitching</li> | <li>Field-based stitching</li><li>Graph-based stitching</li> |
+| Available stitching methods | Field-based stitching | Field-based stitching<br/>Graph-based stitching | Field-based stitching<br>Graph-based stitching</li> |
 | One-time stitching backfill duration | 13 months | 13 months | 25 months |
-| Lookback window and replay frequency |<li>1 day, every day</li><li>up to 7 days, weekly</li> | <li>1 day, every day</li><li>up to 14 days, weekly</li>| <li>1 day, every day</li><li>up to 30 days, weekly</li> |
+| Lookback window and replay frequency | 1 day, every day<br/>up to 7 days, weekly | 1 day, every day<br/>up to 14 days, weekly| 1 day, every day<br/>up to 30 days, weekly |
 | Maximum number of datasets permitted for stitching | 5 | 15 | 50 |
 
 ## Request support 
@@ -48,25 +56,3 @@ The Customer Journey Analytics package you are entitled to determines the availa
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
 Once the data view is set up, you can run your Customer Journey Analytics reporting analysis across channels and devices.
-
-<!-- Uncomment once stitching UI is available (for limited testing)..
-
-### Do It Yourself
-
-|Positive|[!BADGE New Feature]{type=Positive before-title="false"}|
-
-{{release-limited-testing-section}}
-
-Alternatively, you can set up and use stitching through the Customer Journey Analytics user interface:
-
-1. Go to the [Create and manage stitched datasets](stitching-ui.md) and follow steps to rekey your dataset.
-
-2. [Create a connection](/help/connections/create-connection.md) in Customer Journey Analytics using the newly generated dataset and any other datasets that you want to include. Choose the correct person ID for each dataset.
-
-3. [Create a connection](/help/connections/create-connection.md) in Customer Journey Analytics using the newly generated dataset and any other datasets that you want to include. Choose the correct person ID for each dataset.
-   
-4. [Create a data view](/help/data-views/create-dataview.md) based on the connection.
-
-Once the data view is set up, the cross-channel analysis in Customer Journey Analytics is just like any other analysis in Customer Journey Analytics, except now the data operates across channels and devices.
-
--->

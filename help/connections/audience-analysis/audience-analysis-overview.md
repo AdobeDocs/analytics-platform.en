@@ -4,12 +4,8 @@ description: Learn about analyzing audiences from RTCDP in Customer Journey Anal
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
-hide: yes
-hidefromtoc: yes
 ---
 # Audience analysis overview
-
-<!-- add hidden text in this article when this feature releases: /help/components/audiences/audiences-overview.md and this article: /help/analysis-workspace/templates/use-templates.md-->
 
 >[!NOTE]
 >
@@ -80,9 +76,9 @@ The following Customer Journey Analytics roles and Experience Platform permissio
 
  Consider the following limits when [configuring audience analysis](/help/connections/audience-analysis/audience-analysis-configure.md):
  
- * A single sandbox can support up to 100 audience analysis configurations.
+* A single sandbox can support up to 100 audience analysis configurations.
 
- * A connection can be associated with only one audience analysis configuration.
+* A connection can be associated with only one audience analysis configuration.
  
 
 

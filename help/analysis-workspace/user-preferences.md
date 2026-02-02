@@ -44,14 +44,11 @@ General preferences apply to your Customer Journey Analytics experience in the b
 >title="Require Experience Cloud authentication"
 >abstract="When enabled, people who are given access to a project from the **[!UICONTROL Share with anyone]** option in Analysis Workspace must authenticate using their Experience Cloud credentials."
 
-<!-- markdownlint-enable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_projectcommenting"
 >title="Allow commenting on projects"
 >abstract="When enabled, a comments area is available in the right rail of each project in Analysis Workspace."
 
-<!-- markdownlint-enable MD034 -->
 
 You can update company preferences that apply to all users and projects within your organization. For information about how to access these preferences, see [Update preferences](#update-preferences). 
 
@@ -87,6 +84,12 @@ You can customize these preferences for all new Analysis Workspace projects, new
 
 Some of these same preferences can also be customized for individual projects in Analysis Workspace, as described in [Project overview](/help/analysis-workspace/build-workspace-project/freeform-overview.md). 
 
+>[!IMPORTANT]
+>
+>You can no longer define the number format in the **[!UICONTROL Project & Analyses]** > **[!UICONTROL Data]** section of **[!UICONTROL User preferences]**. The number format is automatically determined by the [default language that is configured](https://experienceleague.adobe.com/en/docs/core-services/interface/features/browser-language) for the logged in user.
+>
+
+
 | Section | Preference | Options |
 | --- | --- | --- |
 | **Display** | | |
@@ -97,7 +100,6 @@ Some of these same preferences can also be customized for individual projects in
 |  | [Calendar](/help/analysis-workspace/c-panels/panels.md#calendar) | Select from a list of: <ul><li>Adobe-provided ranges (default is This Month)</li><li>You can enable [!UICONTROL Make date range components relative to panel calendar by default].</li></ul> |
 |  | [Panel Type](/help/analysis-workspace/c-panels/panels.md#panel-types) | <ul><li>Freeform (default)</li><li>Blank</li><li>Quick Insights</li></ul> |
 |  | Instance counting  | Enable [!UICONTROL Count repeat instances] to specifies whether repeat instances are counted in reports. For example, when enabled, multiple consecutive page views to the same page are treated as multiple page views. When disabled, multiple consecutive page views to the same page count as a single page view. <p>**Note:** This setting affects only certain metrics (such as Sessions) and it does not apply to Flow or Fallout visualizations.</p> |
-|  | Number format | <ul><li>1,000.00 (default)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | CSV separator character | <ul><li>Comma (default)</li><li>Semicolon</li><li>Colon</li><li>Pipe</li><li>Period</li><li>Space</li><li>Tab</li></ul> |
 |  | Show annotations | Choose whether annotations are visible in your projects. For more information about annotations, see [Annotations overview](/help/components/annotations/overview.md). |
 

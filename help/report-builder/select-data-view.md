@@ -1,6 +1,6 @@
 ---
-title: How to select a data view in Report Builder
-description: Describes how to select data views in Adobe Report Builder
+title: Select A Data View In Report Builder
+description: Learn how to select a data view in Report Builder.
 role: User
 feature: Report Builder
 type: Documentation

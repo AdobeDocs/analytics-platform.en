@@ -5,13 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-badgePremium: label="Beta" type="Informative"
 ---
 # Use stitching
 
 You can enable stitching on one or more event datasets you have configured as part of your connection. The Customer Journey Analytics package that you have licensed determines the number of event datasets you can enable for stitching .
-
-{{release-limited-testing}}
 
 You can enable stitching as part of the [dataset settings](/help/connections/create-connection.md#dataset-settings) for an event dataset when you [create a connection](/help/connections/create-connection.md) or when you [edit a connection](/help/connections/manage-connections.md#edit-a-connection).
 
@@ -130,7 +127,13 @@ To enable stitching, in the event dataset section of the **[!UICONTROL Add datas
 
 1. Select a lookback window from the **[!UICONTROL Lookback window]** drop-down menu. The available options are  dependent on the Customer Journey Analytics package that you are entitled to.
 
-Once you save a connection, the stitching process for datasets that are enabled for stitching kicks when the ingestion of data for these datasets starts
+Once you save a connection, the stitching process for datasets that are enabled for stitching kicks when the ingestion of data for these datasets starts.
+
+>[!CAUTION]
+>
+>For datasets that are enabled for stitching in the Connections interface, the backfill status is immediately and incorrectly reported as ![Status green](/help/assets/icons/StatusGreen.svg)&nbsp;**[!UICONTROL _x_ backfills completed]** for the number of backfills completed. Use other ways to verify whether data from the stitched dataset is backfilled.
+>
+
 
 ## Limitations
 
@@ -138,3 +141,11 @@ On top of the [field-based stitching limitations](/help/stitching/fbs.md#limitat
 
 * You can only stitch an event dataset once as part of a single connection. You cannot define the same event dataset more than once and use a separate stitching configuration for each instance. If you want to apply different stitching configurations on the same dataset, use a separate connection for each configuration.
 
+
+## Migration
+
+Stitching enabled in the Connections interface can coexist without any issues with request based stitching. 
+
+For example, you have web-based stitched datasets in the data lake as a result of earlier or current stitching requests. You can add stitched data from a call-center dataset using the Connections interface to combine that data with the web-based data. 
+
+Eventually, Adobe will automatically migrate your request based stitched datasets to the new stitching in connections experience.

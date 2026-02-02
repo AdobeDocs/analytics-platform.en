@@ -4,8 +4,6 @@ description: Learn how to analyze Experience Platform audiences in Customer Jour
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
-hide: yes
-hidefromtoc: yes
 ---
 # Analyze Experience Platform audiences in Customer Journey Analytics {#analyze-audiences-RTCDP}
 

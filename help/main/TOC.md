@@ -440,7 +440,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Graph-based stitching](/help/stitching/gbs.md)
   + [Request stitching](/help/stitching/use-stitching.md)
   + [Use stitching](/help/stitching/use-stitching-ui.md)
-  + [Create and manage stitched datasets](/help/stitching/stitching-ui.md)
   + [Validate stitching](/help/stitching/validate.md)
   + [Frequently Asked Questions](/help/stitching/faq.md)  
 
@@ -489,7 +488,24 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Data views use cases](/help/use-cases/data-views/data-views-usecases.md)
     + [Use binding dimensions and metrics](/help/use-cases/data-views/binding-dimensions-metrics.md)
     + [Use summary data](/help/use-cases/data-views/summary-data.md)
-    + [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md)
+    + BI extension {#bi-extension}
+      + [Use cases](/help/use-cases/data-views/bi-extension-usecases.md)
+      + [Connect and list data views](/help/use-cases/data-views/bi-extension/connect-and-validate.md)
+      + [Daily trend](/help/use-cases/data-views/bi-extension/daily-trend.md)
+      + [Hourly trend](/help/use-cases/data-views/bi-extension/hourly-trend.md)
+      + [Monthly trend](/help/use-cases/data-views/bi-extension/monthly-trend.md)
+      + [Single dimension ranked](/help/use-cases/data-views/bi-extension/single-dimension-ranked.md)
+      + [Multiple dimension ranked](/help/use-cases/data-views/bi-extension/multiple-dimension-ranked.md)
+      + [Count distinct dimension values](/help/use-cases/data-views/bi-extension/count-distinct-dimension-values.md)
+      + [Use date range names to filter](/help/use-cases/data-views/bi-extension/use-date-range-names-to-filter.md)
+      + [Use segment names to segment](/help/use-cases/data-views/bi-extension/use-segment-names-to-segment.md)
+      + [Use dimension values to segment](/help/use-cases/data-views/bi-extension/use-dimension-values-to-segment.md)
+      + [Sort](/help/use-cases/data-views/bi-extension/sort.md)
+      + [Limits](/help/use-cases/data-views/bi-extension/limits.md)
+      + [Transformations](/help/use-cases/data-views/bi-extension/transformations.md)
+      + [Visualizations](/help/use-cases/data-views/bi-extension/visualizations.md)
+      + [Caveats](/help/use-cases/data-views/bi-extension/caveats.md)
+  
   + Derived fields {#derived-fields}
     + [Report on LLM and AI-generated traffic](/help/use-cases/ai-traffic.md)
     + [Report on goals](../use-cases/goals-using-derived-fields.md)

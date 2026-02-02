@@ -43,8 +43,8 @@ You benefit from cross-channel analysis if you combine one or more of your stitc
 
 You can enable stitching in two ways:
 
-- [Request to enable stitching](/help/stitching/use-stitching.md)
-- [Enable stitching in the Connections interface](/help/stitching/use-stitching-ui.md) [!BADGE Beta]{type=Informative}
+- [Request to enable stitching](/help/stitching/use-stitching.md) (deprecated). Once approved, a duplicate dataset is created for the dataset for which you have requested stitching. This duplicate dataset contains an additional column with the stitched identifier. You have to create a new or edit an existing connection that includes the stitched dataset to use the stitched data in Customer Journey Analytics.
+- [Enable stitching in the Connections interface](/help/stitching/use-stitching-ui.md). When you configure stitching for a dataset in the Connections interface, the stiching occurs 'on the fly', during the ingestion of data from that dataset in Customer Journey Analytics.
 
 ## Limitations
 

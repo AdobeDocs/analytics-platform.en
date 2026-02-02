@@ -4,8 +4,6 @@ description: Learn how to manage audience analysis configurations
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
-hide: yes
-hidefromtoc: yes
 ---
 # Manage audience analysis configurations{#manage-audience-analysis}
 
