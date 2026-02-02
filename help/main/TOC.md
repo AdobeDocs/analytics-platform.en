@@ -133,6 +133,11 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Combined event datasets](../connections/combined-dataset.md)
   + [Standard lookups](../connections/standard-lookups.md)
   + [B2B lookups](../connections/transform-datasets-b2b-lookups.md)
+  + Audience Analysis {#audience-analysis}
+    + [Overview](/help/connections/audience-analysis/audience-analysis-overview.md)
+    + [Configure](/help/connections/audience-analysis/audience-analysis-configure.md)
+    + [Manage](/help/connections/audience-analysis/audience-analysis-manage.md)
+    + [Analyze](/help/connections/audience-analysis/analyze-audiences.md)
 + Data Views {#cja-dataviews}
   + [Data views overview](../data-views/data-views.md)
   + [Create or edit a data view](../data-views/create-dataview.md)
@@ -157,11 +162,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Shared metrics & dimensions{#shared-metrics-dimensions}
     + [Overview](/help/data-views/shared-metrics-dimensions/smd-overview.md)
     + [Editor](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
-  + Audience Analysis {#audience-analysis}
-    + [Overview](/help/connections/audience-analysis/audience-analysis-overview.md)
-    + [Configure](/help/connections/audience-analysis/audience-analysis-configure.md)
-    + [Manage](/help/connections/audience-analysis/audience-analysis-manage.md)
-    + [Analyze](/help/connections/audience-analysis/analyze-audiences.md)
 + Tools {#tools}
   + Asset Transfer {#asset-transfer}
     + [Transfer assets](../tools/asset-transfer/transfer-assets.md) 
