@@ -10,7 +10,7 @@ role: User
 
 After you export a full table as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md), the exports are available on the [!UICONTROL Exports] tab on the [!UICONTROL Exports] page. 
 
-You can see only the exports that you create.
+You can see only the exports that you create. Administrators can view all exports by enabling the option **[!UICONTROL View exports for all users]**.
 
 ## Filter and search for exports
 
