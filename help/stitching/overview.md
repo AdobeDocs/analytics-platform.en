@@ -39,12 +39,8 @@ Before using stitching, make sure that your organization is prepared with the fo
 
 You benefit from cross-channel analysis if you combine one or more of your stitched datasets with other datasets, such as call center data, as part of defining your Customer Journey Analytics connection. This connection configuration assumes that those other datasets already contain a person ID on every row, similar to the stitched ID.
 
-## Enable stitching
+Once your organization meets generic [prerequisites](overview.md#prerequisites), understands common [limitations](overview.md#limitations), and also stitching method specific ([field-based](fbs.md) and [graph-based](gbs.md)) prerequisites and limitations, you can follow these steps to request and start using stitching in Customer Journey Analytics.
 
-You can enable stitching in two ways:
-
-- [Request to enable stitching](/help/stitching/use-stitching.md) (deprecated). Once approved, a duplicate dataset is created for the dataset for which you have requested stitching. This duplicate dataset contains an additional column with the stitched identifier. You have to create a new or edit an existing connection that includes the stitched dataset to use the stitched data in Customer Journey Analytics.
-- [Enable stitching in the Connections interface](/help/stitching/use-stitching-ui.md). When you configure stitching for a dataset in the Connections interface, the stitching occurs on the fly, during the ingestion of data from that dataset in Customer Journey Analytics.
 
 ## Limitations
 
@@ -59,6 +55,25 @@ Ensure you do not confuse stitching with:
 - The merge of two or more datasets. Stitching applies to one dataset only. Merging of datasets occurs as a result of setting up a Customer Journey Analytics connection and selecting the same person ID across the selected datasets in the connection.
 
 - The join of two datasets. In Customer Journey Analytics, a join is often used for lookups or classifications in Analysis Workspace. Although stitching uses join functionality, the process itself involves more than joins.
+- 
+
+## Options
+
+The Customer Journey Analytics package that you are entitled to determines the available stitching methods, options for the initial backfill duration, lookback window, replay frequency, and maximum number of datasets permitted for stitching. See the [Customer Journey Analytics product description](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html) for more details. Decide on the available options before you enable stitching.
+
+| | Customer Journey Analytics<br/>Select | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
+|---|---|---|---|
+| Available stitching methods | Field-based stitching | Field-based stitching<br/>Graph-based stitching | Field-based stitching<br>Graph-based stitching</li> |
+| One-time stitching backfill duration | 13 months | 13 months | 25 months |
+| Lookback window and replay frequency | 1 day, every day<br/>up to 7 days, weekly | 1 day, every day<br/>up to 14 days, weekly| 1 day, every day<br/>up to 30 days, weekly |
+| Maximum number of datasets permitted for stitching | 5 | 15 | 50 |
+
+## Enable stitching
+
+You can enable stitching in two ways:
+
+- [Request to enable stitching](/help/stitching/use-stitching.md) (deprecated). Once approved, a duplicate dataset is created for the dataset for which you have requested stitching. This duplicate dataset contains an additional column with the stitched identifier. You have to create a new or edit an existing connection that includes the stitched dataset to use the stitched data in Customer Journey Analytics.
+- [Enable stitching in the Connections interface](/help/stitching/use-stitching-ui.md). When you configure stitching for a dataset in the Connections interface, the stitching occurs on the fly, during the ingestion of data from that dataset in Customer Journey Analytics.
 
 
 ## Journey Optimizer datasets

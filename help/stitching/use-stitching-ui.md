@@ -79,7 +79,13 @@ If you meet the prerequisites, you might want to perform some preflight checks o
   
 
 
-## Enable identity stitching
+## Enable identity stitching {#enable-identity-stitching}
+
+>[!CONTEXTUALHELP]
+>id="connection_changeto_identitygraph"
+>title="Change to identity graph"
+>abstract="Ensure you have finished the setup of the identity graph before you use the identity graph for stitching."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Graph-based stitching"
 
 To enable stitching, in the event dataset section of the **[!UICONTROL Add datasets]** or **[!UICONTROL Edit dataset]** dialog: 
 
