@@ -87,11 +87,11 @@ The nodes in this journey contain the following statistics when the **[!UICONTRO
 
 ![Journey with nodes with a higher percentage than previous node](assets/journey-canvas-higher-percentage.png)
 
-|Node | Statistics | 
+|Node | Statistics |
 |---------|----------|
-| Node 1 - "Visit site" | In this journey, there were 354,147 events on the site within the reporting date range, as shown in the journey's start node, "Visit site."  | 
-| Node 2 - "View Product A" | Of the total number of events shown in the start node, 14% (48,394) of them matched the criteria of the journey's second node, "View Product A."  | 
-| Node 3 - "Check out" | Of the total number of events shown in the start node, 32% (113,782) of them matched the criteria of the journey's third node, "Check out."  | 
+| Node 1 - "Visit site" | In this journey, there were 354,147 events on the site within the reporting date range, as shown in the journey's start node, "Visit site."  |
+| Node 2 - "View Product A" | Of the total number of events shown in the start node, 14% (48,394) of them matched the criteria of the journey's second node, "View Product A."  |
+| Node 3 - "Check out" | Of the total number of events shown in the start node, 32% (113,782) of them matched the criteria of the journey's third node, "Check out."  |
 
 +++
 
@@ -101,11 +101,11 @@ The nodes in this journey contain the following statistics when the **[!UICONTRO
 
 ![Journey with nodes with a higher percentage than previous node](assets/journey-canvas-percentage-previous.png)
 
-|Node | Statistics | 
+|Node | Statistics |
 |---------|----------|
-| Node 1 - "Visit site" | In this journey, there were 354,147 events on the site within the reporting date range, as shown in the journey's start node, "Visit site."  | 
-| Node 2 - "View Product A" | Of the total number of events shown in the previous node, 14% (48,394) of them matched the criteria of the journey's second node, "View Product A."  | 
-| Node 3 - "Check out" | Of the total number of events shown in the previous node, greater than 100% (113,782) of them matched the criteria of the journey's third node, "Check out."  | 
+| Node 1 - "Visit site" | In this journey, there were 354,147 events on the site within the reporting date range, as shown in the journey's start node, "Visit site."  |
+| Node 2 - "View Product A" | Of the total number of events shown in the previous node, 14% (48,394) of them matched the criteria of the journey's second node, "View Product A."  |
+| Node 3 - "Check out" | Of the total number of events shown in the previous node, greater than 100% (113,782) of them matched the criteria of the journey's third node, "Check out."  |
 
 +++
 
@@ -115,11 +115,11 @@ The nodes in this journey contain the following statistics when the **[!UICONTRO
 
 ![Journey with nodes with a higher percentage than previous node](assets/journey-canvas-percentage-total.png)
 
-|Node | Statistics | 
+|Node | Statistics |
 |---------|----------|
-| Node 1 - "Visit site" | In this journey, there were 354,147 events on the site within the reporting date range, as shown in the journey's start node, "Visit site."  | 
-| Node 2 - "View Product A" | Of the total number of events, less than 1% (48,394) of them matched the criteria of the journey's second node, "View Product A."  | 
-| Node 3 - "Check out" | Of the total number of events, 1% (113,782) of them matched the criteria of the journey's third node, "Check out."  | 
+| Node 1 - "Visit site" | In this journey, there were 354,147 events on the site within the reporting date range, as shown in the journey's start node, "Visit site."  |
+| Node 2 - "View Product A" | Of the total number of events, less than 1% (48,394) of them matched the criteria of the journey's second node, "View Product A."  |
+| Node 3 - "Check out" | Of the total number of events, 1% (113,782) of them matched the criteria of the journey's third node, "Check out."  |
 
 +++
 

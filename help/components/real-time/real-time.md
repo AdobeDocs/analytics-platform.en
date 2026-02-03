@@ -9,9 +9,12 @@ exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
 
 Real-time reporting in Customer Journey Analytics displays and updates data and visualizations within one or more panels in Analysis Workspace in real time.
 
-{{release-limited-testing}}
-
 {{ultimate-package}}
+
+>[!TIP]
+>
+>If you are entitled to the Ultimate package but do not see the [Real-time refresh toggle](use-real-time.md), create a customer care ticket to request to enable real-time reporting for your organization.
+
 
 ## Use cases
 
@@ -48,11 +51,12 @@ How you collect data determines the latency of real-time reporting in Customer J
 
 | | Data collection | Real-time reporting latency <br/>(approx. less than) | Standard reporting latency <br/>(approx. less than) |
 |:---:|---|--:|--:|
-| 1 | Edge Network SDK / APIs into the Edge Network | 7 minutes | 95 minutes | 
+| 1 | Edge Network SDK / APIs into the Edge Network | 7 minutes | 95 minutes |
 | 2 | Streaming connectors |  17 minutes |  105 minutes |
 | 3 | Adobe Analytics source connector | 17 minutes |  105 minutes |
 | 4 | Other source connectors into the source connectors (including batch data) |  25 hours | 25 hours |
 
+If a disruption of services occurs for more than half an hour, real-time data does not backfill with data when the issues are resolved. Instead, real-time reporting picks up real-time data from the moment the services starts working again. No data is lost during this period and still available using the standard reporting features outside of real-time reporting.
 
 ## Limitations
 

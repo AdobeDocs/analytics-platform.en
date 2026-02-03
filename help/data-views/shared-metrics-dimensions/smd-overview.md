@@ -74,7 +74,7 @@ All shared dimensions and metrics are displayed below the four overview cards.
   * **[!UICONTROL Summary data group]**: The component's [Summary data group](/help/data-views/component-settings/summary-data-group.md) settings.
   * **[!UICONTROL Date created]**: The date that the component was created or imported.
   * **[!UICONTROL Last modified]**: If the component has been modified after it was created, the date that it was last modified.
-* **[!UICONTROL Job history]**: Select the ![History icon](/help/assets/icons/History.svg) icon to open a modal window that shows all instances of importing dimensions and metrics from individual data views.
+* **[!UICONTROL Job history]**: If you import or share a large number of components, a job is automatically created. Select the ![History icon](/help/assets/icons/History.svg) icon to open a modal window that shows all instances of importing dimensions and metrics from individual data views. If none of your import or sharing actions are large enough to trigger a job, then this button does not appear.
 
 ## Edit components or share components to data views
 

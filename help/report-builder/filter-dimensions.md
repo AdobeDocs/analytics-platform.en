@@ -1,6 +1,6 @@
 ---
-title: Filter dimensions in Report Builder
-description: Describes how to use filter dimensions in Report Builder for Customer Journey Analytics
+title: Filter Dimensions In Report Builder
+description: Learn how to filter dimensions in Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
@@ -75,7 +75,7 @@ The default for Page is `1` and for Rows is `10`. These defaults imply that each
 
 The table below lists examples of page and row values and the resulting output.
 
-| Page | Row    | Output               | 
+| Page | Row    | Output               |
 |------|--------|----------------------|
 | 1    | 10     | Top 10 items         |
 | 2    | 10     | Items 11-20          |

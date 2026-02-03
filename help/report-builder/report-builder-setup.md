@@ -1,6 +1,6 @@
 ---
-title: How to set up Report Builder in Customer Journey Analytics
-description: Describes how to set up Report Builder in Customer Journey Analytics
+title: Set Up Report Builder
+description: Describes how to set up Report Builder in Customer Journey Analytics.
 role: User
 feature: Report Builder
 type: Documentation

@@ -21,22 +21,24 @@ Find below details that you should consider when configuring each of these compo
 
 ## Schema
 
-You need to create a [model-based schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based){target="_blank"} that models the data warehouse native table you want to mirror. When you construct the model-based schema, ensure that the following requirements are met:
+You need to create a [relational schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational){target="_blank"} that s the data warehouse native table you want to mirror. When you construct the relational schema, ensure that the following requirements are met:
 
-* When prompted for the type of model-based schema, ensure you select the manual option.
-* Select the appropriate schema for the type of data. Note that Experience Platform Data Mirror is mostly used for time series data (for example, event data).
+* When prompted for the type of relational schema, ensure you select the manual option.
+* Select the appropriate schema for the type of data. Note that Experience Platform Data Mirror is mostly used for time series data (for example, event data) but can also be used for record-based (lookup and profile) data.
   
 * Define the fields in your schema and their attributes
-* Configure the required attributes for fields in a model-based schema: 
+* Configure the required attributes for fields in a relational schema: 
  
-  * primary key 
-  * version identifier 
-  * timestamp identifier (for time series data).
+  * **Primary key**. 
+  * **Version descriptor**, which must be configured as a sequential number (Integer field type) or as a DateTime field type. When you use a DateTime field type, the version descriptor defines the timestamp of a modification of the data, for example to contain a last modified timestamp.
+  * **Timestamp descriptor** (for time series data), which defines the immutable timestamp at the moment that an event is captured. The timestamp descriptor is not required for a record-based relational schema.
+  
+
 
 ## Dataset
 
 You can set up a dataset for your schema in advance, or create a dataset when you set up your source connector. 
-When you create a dataset in advance or select a dataset, ensure you the data uses a model-based [schema](#schema) you created earlier.
+When you create a dataset in advance or select a dataset, ensure you the data uses a relational [schema](#schema) you created earlier.
 
 
 ## Source connector
@@ -61,12 +63,12 @@ Once successfully connected to your data warehouse native solution, select the t
 
 Ensure you enable change data capture. You see an information panel, explaining the requirements for change data capture.
 
-Specify a new or existing dataset that is based on the model-based schema you created earlier. Specify and select other options in the Dataflow detail interface.
+Specify a new or existing dataset that is based on the relational schema you created earlier. Specify and select other options in the Dataflow detail interface.
 
 
 ### Mapping
 
-Map the fields of the table in the data warehouse native solution to the fields that you have specified for the model-based schema.
+Map the fields of the table in the data warehouse native solution to the fields that you have specified for the relational schema.
 
 
 ### Scheduling
@@ -84,6 +86,6 @@ Once you finished the setup of the source connector, a dataflow is created. From
 
 >[!MORELIKETHIS]
 >
->[Data Mirror quick start guide: Mirror and use model-based data](model-based.md)
+>[Data Mirror quick start guide: Mirror and use relational data](relational.md)
 >[Data Mirror (Experience Platform documentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
->[Model-based schemas (Experience Platform documentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)
+>[Relational schemas (Experience Platform documentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational)

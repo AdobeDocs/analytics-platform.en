@@ -30,7 +30,7 @@ The following image and accompanying table explain the main elements in the Anal
 | A | Contains the name of the project, a menu structure to access functionality, a button ![Back button](/help/assets/icons/ChevronLeft.svg) to return back to your Project list, and a **[!UICONTROL Share]** button to [share your Workspace project](/help/analysis-workspace/curate-share/share-projects.md). <br/>Select the name of your project (for example: New project) at any time to change the name. <br/>Select ![Unfavor](/help/assets/icons/StarOutline.svg) to mark your project as a favorite project ![Favor](/help/assets/icons/Star.svg). |
 | B | **Button panel:** Contains buttons to access the key [features](#features) of Analysis Workspace:<ul><li>![WebPage](/help/assets/icons/WebPage.svg) [[!UICONTROL Panels]](/help/analysis-workspace/c-panels/panels.md)</li><li>![Guided Analysis](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL Guided Analysis]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL Visualizations]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![Curate](/help/assets/icons/Curate.svg) [[!UICONTROL Components]](/help/components/overview.md)</li><li>![ViewList](/help/assets/icons/ViewList.svg) [[!UICONTROL Table of contents]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![Bookmark](/help/assets/icons/Bookmark.svg) [[!UICONTROL Data Dictionary]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
 | C | **Left panel:** This area contains individual panels, visualizations, components, or lists. The content depends on the button selected in the button panel.  |
-| D | **Canvas:** The main area where you drag content from the left panel to build your project. The project dynamically updates as you add panels, add visualizations to panels, and add components to visualizations. You can create multiple panels, and within each panel you can create multiple visualizations.<br/>Each panel is based on a selected data view. The selected data view determines available components like metrics and dimensions. See [Panels - Data view](/help/analysis-workspace/c-panels/panels.md#data-view) for more information. | 
+| D | **Canvas:** The main area where you drag content from the left panel to build your project. The project dynamically updates as you add panels, add visualizations to panels, and add components to visualizations. You can create multiple panels, and within each panel you can create multiple visualizations.<br/>Each panel is based on a selected data view. The selected data view determines available components like metrics and dimensions. See [Panels - Data view](/help/analysis-workspace/c-panels/panels.md#data-view) for more information. |
 
 ## Features
 
@@ -82,14 +82,14 @@ See the tables below for an overview of the available menus.
 |---|---|---|---|
 | **[!UICONTROL Undo]** | **[!UICONTROL *cmd+z*]** | **[!UICONTROL *ctrl+z*]** | Undo the previous action. |
 | **[!UICONTROL Redo]** | **[!UICONTROL *cmd+shift+z*]** | **[!UICONTROL *ctrl+shift+z*]** | Redo the previous action. |
-| **[!UICONTROL Clear all]** | **[!UICONTROL *opt+w*]** | **[!UICONTROL *alt+w*]** | Clear all panels in the current project. | 
+| **[!UICONTROL Clear all]** | **[!UICONTROL *opt+w*]** | **[!UICONTROL *alt+w*]** | Clear all panels in the current project. |
 
 | **[!UICONTROL Insert]** | Shortcut Mac | Shortcut Windows | Description |
 |---|---|---|---|
 | **[!UICONTROL Blank panel]** | **[!UICONTROL *opt+b*]** | **[!UICONTROL *alt+b*]** |  Insert a [Blank panel](/help/analysis-workspace/c-panels/blank-panel.md). |
 | **[!UICONTROL Media concurrent viewers]** | **[!UICONTROL *opt+h*]** | **[!UICONTROL *alt-h*]** |  Insert a [Media concurrent viewers](/help/analysis-workspace/c-panels/media-concurrent-viewers.md) panel. |
 | **[!UICONTROL Media playback time spent]** | **[!UICONTROL *opt+i*]** | **[!UICONTROL *alt+i*]** |  Insert a [Media playback time spent](/help/analysis-workspace/c-panels/media-playback-time-spent.md) panel. |
-| **[!UICONTROL Media average minute audience]** | **[!UICONTROL *opt+m*]** | **[!UICONTROL *alt+m*]** |  Insert a [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. | 
+| **[!UICONTROL Media average minute audience]** | **[!UICONTROL *opt+m*]** | **[!UICONTROL *alt+m*]** |  Insert a [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. |
 | **[!UICONTROL Attribution]** | **[!UICONTROL *opt+e*]** | **[!UICONTROL *alt+e*]** |  Insert an [Attribution](/help/analysis-workspace/c-panels/attribution.md) panel. |
 | **[!UICONTROL Freeform]** | **[!UICONTROL *opt+a*]** | **[!UICONTROL *alt+a*]** |  Insert a [Freeform](/help/analysis-workspace/c-panels/freeform-panel.md) panel. |
 | **[!UICONTROL Quick insights]** | **[!UICONTROL *opt+j*]** | **[!UICONTROL *alt+j*]** |  Insert a [Quick insights](/help/analysis-workspace/c-panels/quickinsight.md) panel. |
@@ -97,7 +97,7 @@ See the tables below for an overview of the available menus.
 | **[!UICONTROL Freeform table]** | **[!UICONTROL *opt+1*]** | **[!UICONTROL *alt+1*]**|  Insert a [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) visualization. |
 | **[!UICONTROL Line]** | **[!UICONTROL *opt+2*]** | **[!UICONTROL *alt+2*]** |  Insert a [Line](/help/analysis-workspace/visualizations/line.md) visualization. |
 | **[!UICONTROL Bar]** | **[!UICONTROL *opt+3*]** | **[!UICONTROL *alt+3*]** |  Insert a [Bar](/help/analysis-workspace/visualizations/bar.md) visualization. |
-| **[!UICONTROL Combo]** | **[!UICONTROL *opt+4*]**| **[!UICONTROL *alt+4*]** |  Insert a [Combo](/help/analysis-workspace/visualizations/combo-charts.md) visualization. | 
+| **[!UICONTROL Combo]** | **[!UICONTROL *opt+4*]**| **[!UICONTROL *alt+4*]** |  Insert a [Combo](/help/analysis-workspace/visualizations/combo-charts.md) visualization. |
 
 
 | **[!UICONTROL Components]** | Shortcut Mac | Shortcut Windows | Description |
@@ -114,7 +114,7 @@ See the tables below for an overview of the available menus.
 | **[!UICONTROL Share with Workspace users]** | **[!UICONTROL *cmd+h*]** | **[!UICONTROL *ctrl+h*]** | [Share the project with other Workspace users](/help/analysis-workspace/curate-share/share-projects.md#share-with-customer-journey-analytics-users-and-groups-in-your-organization). |
 | **[!UICONTROL Share with anyone]** | **[!UICONTROL *opt+l*]** | **[!UICONTROL *alt+l*]**| [Share a read-only version of the project with anyone](/help/analysis-workspace/curate-share/share-projects.md#share-a-link-to-a-project). |
 | **[!UICONTROL Send file]** | **[!UICONTROL opt+s]** | **[!UICONTROL *alt+s*]** | [Send the project as a CSV or PDF file to other recipients](/help/analysis-workspace/curate-share/send-schedule-files.md). |
-| **[!UICONTROL Schedule file export]** | **[!UICONTROL *shift+opt+s*]** | **[!UICONTROL *shift+alt+s*]** | [Send the project on a schedule as a CSV or PDF file to other recipients](/help/analysis-workspace/curate-share/send-schedule-files.md). | 
+| **[!UICONTROL Schedule file export]** | **[!UICONTROL *shift+opt+s*]** | **[!UICONTROL *shift+alt+s*]** | [Send the project on a schedule as a CSV or PDF file to other recipients](/help/analysis-workspace/curate-share/send-schedule-files.md). |
 | **[!UICONTROL Curate project data]** | **[!UICONTROL *shift+cmd+g*]** | **[!UICONTROL *shift+ctrl+g*]** | [Curate the project data](/help/analysis-workspace/curate-share/curate.md). |
 
 | Help |  Description |
@@ -123,7 +123,7 @@ See the tables below for an overview of the available menus.
 | **[!UICONTROL Help documentation]** | Open the documentation (you are actually reading just now...) in a new browser tab. |
 | **[!UICONTROL Help forum]** |  Open the Adobe Analytics Experience League communities forum in a new browser tab. |
 | **[!UICONTROL Hotkeys]** |  Show an overview of the hotkeys (shortcuts) you can use in Workspace. |
-| **[!UICONTROL Enable debugger]** |   Enable the debugger. Your project will reload. | 
+| **[!UICONTROL Enable debugger]** |   Enable the debugger. Your project will reload. |
 | **[!UICONTROL Disable debugger]** | Disable the debugger. Your project will reload. |
 | **[!UICONTROL Performance]** |  Show a dialog displaying metrics on the **[!UICONTROL Analysis Workspace performance]**. Use **[!UICONTROL Download as CSV]** to download a CSV file of the performance metrics. |
 | **[!UICONTROL About Workspace]** |  Show an **[!UICONTROL About Analysis Workspace]** dialog with version information, feature access levels and active feature flags. |

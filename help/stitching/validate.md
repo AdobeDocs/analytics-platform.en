@@ -1,6 +1,6 @@
 ---
-title: Validate stitching
-description: How to validate stitching
+title: Validate Stitching
+description: Learn how to validate stitching.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
@@ -25,6 +25,12 @@ While these analysis methods can be used for both field-based stitching and grap
 >The (validation of) stitching of one or more datasets contributes ultimately to better analysis and insights. However, this article does not discuss the overall value of a Customer Journey Analytics configuration that has all datasets in Experience Platform aligned to the same identity namespace. And that all these datasets are nicely joined together to perform analysis across an entire customer journey. 
 
 
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Stitching enablement and validation](https://video.tv.adobe.com/v/3478120?quality=12&learn=on){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
 ## Data view prerequisites
 
 For the stitching validation measurement plan, you need to ensure you have all the required dimensions and metrics from your stitched dataset defined in a data view. You need to verify that both `stitchedID.id` and `stitchedId.namespace.code` fields are added as dimensions. While the stitched dataset is an exact copy of the original dataset, the stitching process adds these two new columns to the dataset:
@@ -38,12 +44,12 @@ For the stitching validation measurement plan, you need to ensure you have all t
 
 Furthermore, you need to add two stitching metrics that are based on the presence of values in a dimension.
 
-1. Use the field that contains the Person ID from the stitched dataset to configure a metric that defines whether a Person ID is set. Add this Person ID even if you are using graph-based stitching as the Person ID helps to establish a baseline. In case the Person ID is not contained within the dataset, your baseline is 0%. 
+1. Use the field that contains the person ID from the stitched dataset to configure a metric that defines whether a person ID is set. Add this person ID even if you are using graph-based stitching as the person ID helps to establish a baseline. In case the person ID is not contained within the dataset, your baseline is 0%. 
    
    In the example below, `personalEmail.address` serves as the identity and is used to create the **[!UICONTROL _Email set]** metric.
    ![Email set metric](assets/emailset-metric.png)
 
-1. Use `stitchedID.namespae.code` field to create an **[!UICONTROL Email stitched namespace]** dimension. Ensure you specify [Include Exclude values component settings](/help/data-views/component-settings/include-exclude-values.md),  so you only consider values of the namespace you are trying to elevate rows of data to. 
+1. Use `stitchedID.namespae.code` field to create an **[!UICONTROL Email stitched namespace]** dimension. Ensure you specify [Include Exclude values in component settings](/help/data-views/component-settings/include-exclude-values.md), so you only consider values of the namespace you are trying to elevate rows of data to. 
    1. Select **[!UICONTROL Set include/exclude values]**.
    1. Select **[!UICONTROL If all criteria are met]** as the **[!UICONTROL Match]**.
    1. Specify **[!UICONTROL Equals]** `email` as the **[!UICONTROL Criteria]** to select events that have been elevated to the Email namespace.
@@ -56,14 +62,14 @@ With both of these dimensions added to the data view, use [Freeform tables](/hel
  
 In the **[!UICONTROL Stitched Namespace dimension**] table, you typically see two rows for each dataset. One row that represents when the stitching process had to use the fallback method (ECID). The other row shows events associated with the desired identity namespace (email).
 
-For the **[!UICONTROL Stitched ID dimension**] table, you see the raw values that are coming from the events. In this table, you see that values oscillate between the persistent id and the desired Person ID.
+For the **[!UICONTROL Stitched ID dimension**] table, you see the raw values that are coming from the events. In this table, you see that values oscillate between the persistent id and the desired person ID.
 
 ![Check stiched dimensions](assets/check-data-on-stitching.png)
 
 
 ## Device-centric or Person-centric reporting
 
-When you create a connection, you have to define what field or identity is used for the Person ID. For instance, on a web dataset, if you choose a device id as the Person ID, then you create device centric reports and lose the ability to join this data with other offline channels. If you select a cross-channel field or identity, for example email, you lose out on any unauthenticated events. To understand this impact, you need to figure out how much of the traffic is unauthenticated and how much of the traffic is authenticated.
+When you create a connection, you have to define what field or identity is used for the person ID. For instance, on a web dataset, if you choose a device id as the person ID, then you create device centric reports and lose the ability to join this data with other offline channels. If you select a cross-channel field or identity, for example email, you lose out on any unauthenticated events. To understand this impact, you need to figure out how much of the traffic is unauthenticated and how much of the traffic is authenticated.
 
 1. Create a calculated metric **[!UICONTROL Unauthenticated events over total]**. Define the rule in the rule builder like below:
    ![Unauthenticated events over total](assets/calcmetric-unauthenticatedeventsovertotal.png)
@@ -95,8 +101,8 @@ You want to measure the identification performance before and after stitching. T
 
 If you combine all data in an Analysis Workspace Freeform table you can start to see the impact and value that stitching provides, inclusive of:
 
-* Current authentication rate: The baseline of the number of events that already had the correct Person ID over the total number of events.
-* Stitched authentication rate: The new number of events that have the correct Person ID over the total number of events.
+* Current authentication rate: The baseline of the number of events that already had the correct person ID over the total number of events.
+* Stitched authentication rate: The new number of events that have the correct person ID over the total number of events.
 * Percent increase: The raw percentage increase from the stitched authentication rate minus the baseline current authentication rate.
 * Lift: The percent change over the baseline current authentication rate.
 

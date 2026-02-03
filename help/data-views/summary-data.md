@@ -51,7 +51,7 @@ Your on-site clickstream data contains the following events.
 
 As explained in [Combined event dataset](/help/connections/combined-dataset.md), when defining a connection, Customer Journey Analytics creates an overall combined event dataset. When you configure your data view for dimensions originating from a summary dataset, options are available to group and hide dimensions as a preparation for reporting in Workspace. Specifically for summary data, the summary data is combined with event data, based on the [summary data group component](component-settings/summary-data-group.md) configuration.
 
-| Tracking Code | Campaign Code | Impressions | Cost | Click-throughs | Revenue | 
+| Tracking Code | Campaign Code | Impressions | Cost | Click-throughs | Revenue |
 |---|---|--:|--:|--:|--:|
 | abc123 | abc123 | 1,250 | $1,500 | 1,250 | $7,200 |
 | def456 | def123 |775 | $650 | 775 | $1,250 |
@@ -103,9 +103,9 @@ The timezone of your summary data is defined at the summary schema level in Expe
   | Timestamp <br/>source data | Timezone<br/>schema |  Timestamp<br/>Experience<br/>Platform | Timezone<br/> data<br/>view | Timestamp<br/>Customer<br/>Journey<br>Analytics |
   |---|---|---|:---|---|
   | 2024-07-29T01:00:00 | *default GMT* | 2024-07-29T01:00:00 | GMT | 2024-07-29T01:00:00 |
-  | 2024-07-29T01:00:00 | *default GMT* | 2024-07-29T01:00:00 | PST | 2024-07-28T18:00:00 | 
-  | 2024-07-30T01:00:00-05:00 | *default GMT* | 2024-07-30T06:00:00 | GMT | 2024-07-30T06:00:00 | 
-  | 2024-07-30T01:00:00-05:00 | *default GMT* |2024-07-30T06:00:00 | PST | 2024-07-29T23:00:00 | 
+  | 2024-07-29T01:00:00 | *default GMT* | 2024-07-29T01:00:00 | PST | 2024-07-28T18:00:00 |
+  | 2024-07-30T01:00:00-05:00 | *default GMT* | 2024-07-30T06:00:00 | GMT | 2024-07-30T06:00:00 |
+  | 2024-07-30T01:00:00-05:00 | *default GMT* |2024-07-30T06:00:00 | PST | 2024-07-29T23:00:00 |
   | 2024-08-02 | *default GMT* | 2024-08-02T00:00:00 | IST | 2024-08-02T05:00:00 |
   | 2024-07-29T01:00:00 | `America/`<br/>`Los_Angeles`| 2024-07-28T18:00:00 | PST | 2024-07-28T18:00:00 |
   | 2024-07-30T01:00:00-05:00 | `Australia/`<br/>`Sydney` |2024-07-30T17:00:00 | CET | 2024-07-30T08:00:00 |

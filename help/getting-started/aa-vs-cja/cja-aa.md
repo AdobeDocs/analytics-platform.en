@@ -53,7 +53,7 @@ The following table lists features that are available in Customer Journey Analyt
 | **Calendar events** | Full support. Calendar events have been implemented as [Annotations](/help/components/annotations/overview.md) in Workspace. |
 | **CSV download** | Full support |
 | **Custom calendars** | Full support |
-| **Date comparisons** | Full support | 
+| **Date comparisons** | Full support |
 | **Date ranges** | All date range functionality is supported. |
 | **Dimensions**| Full support. Customer Journey Analytics uses XDM and supports unlimited dimensions. Customer Journey Analytics is not tied to the custom eVars or props of traditional Adobe Analytics. |
 | **GDPR deletion** | Full support; note that GDPR is now handled in coordination with [!UICONTROL Adobe Experience Platform]. Customer Journey Analytics inherits whatever data changes [!UICONTROL Experience Platform] makes to underlying datasets. |

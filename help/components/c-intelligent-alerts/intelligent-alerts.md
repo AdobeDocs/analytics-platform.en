@@ -9,16 +9,21 @@ exl-id: 029be0c8-ec78-4bb7-a6cd-bb303b5ac82a
 
 Alerts in Customer Journey Analytics allow you to be notified based on changed percentages or specific data points. 
 
-Depending on your Customer Journey Analytics package, you can also use alerts to be triggered based on anomaly thresholds. These alerts (also known as "Intelligent Alerts"), provide granular controls that integrate with [Anomaly Detection](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md), triggering when you need them most.
+Depending on your Customer Journey Analytics package, you can also use alerts to be triggered based on anomaly thresholds. These alerts (also known as *Intelligent Alerts*), provide granular controls that integrate with [Anomaly Detection](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md), triggering when you need them most.
 
-Alerts let you:
+* Preview how often an alert triggers.
+* Send alerts by e-mail or SMS with links to auto-generated Analysis Workspace projects.
+* Create *stacked* alerts that capture multiple metrics in a single alert.
+* Build alerts based on:
+  * Anomalies in metrics that exist, are above, or below expected threshold values. 
+   
+    [Anomaly detection](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) builds an expected value plus an upper and lower bound using historical data. If the actual metric value goes above the upper bound or below the lower bound defined as the threshold value, that event is considered an anomaly at the threshold confidence level and does trigger the alert. A higher threshold (for example: 99% or 99.9%) implies a wider band, which results in fewer alerts that are caused by more extreme anomalies. A lower threshold (for example:  90%) implies a narrower band, which results in more alerts that are caused by less extreme anomalies.
+  * Changes in metrics by a specific percentage. 
+  * Metrics that are above, below, or equal to a specific value. (available only to Adobe Analytics customers with a Select, Prime, or Ultimate package)
 
-* Preview how often an alert will trigger
-* Send alerts by e-mail or SMS with links to auto-generated Analysis Workspace projects
-* Create "stacked" alerts that capture multiple metrics in a single alert
-* Build alerts based on anomalies (90%, 95%, 99%, 99.75%, and 99.9% thresholds; % change; above/below) (Available only to Customer Journey Analytics customers with a Select, Prime, or Ultimate package)
+This [video tutorial](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/data-science/intelligent-alerts) provides a basic overview of alerts.
 
-The following video tutorial provides a basic overview of alerts: [Alerts](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html) (5:34)
+
 
 ## Understand how alerts differ
 

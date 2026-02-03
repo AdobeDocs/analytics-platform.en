@@ -179,7 +179,7 @@ To create your data view:
    1. Add any schema field and/or standard component that you want to include to the **[!UICONTROL METRICS]** or **[!UICONTROL DIMENSIONS]** component boxes. Ensure you add relevant fields from the dataset that contains the ad hoc data. To access those fields:
 
       1. Select **[!UICONTROL Event datasets]**.
-      1. Select **[!UICONTROL Adhoc & Model-based fields]**.
+      1. Select **[!UICONTROL Adhoc & Relational fields]**.
 
          ![Data view - adhoc components](assets/cja-dataview-components-adhoc.png)
 

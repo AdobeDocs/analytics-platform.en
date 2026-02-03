@@ -64,7 +64,7 @@ You can create the following metrics in a data view to achieve approximate parit
 
 | Metric | Description | Schema element | Component settings |
 | --- | --- | --- | --- |
-| Event Type (rename to refer to a specific event, for example `Feedback` for `message.feedback`) [1] | Amount of a specific type of event | `eventType` | Component type: Metric<br/>**[!UICONTROL Set Include Exclude Values]**: On<br/>**[!UICONTROL Match]**: [!UICONTROL If all criteria are met]<br/>**[!UICONTROL Criteria]**: **[!UICONTROL Equals]** `message.feedback` | 
+| Event Type (rename to refer to a specific event, for example `Feedback` for `message.feedback`) [1] | Amount of a specific type of event | `eventType` | Component type: Metric<br/>**[!UICONTROL Set Include Exclude Values]**: On<br/>**[!UICONTROL Match]**: [!UICONTROL If all criteria are met]<br/>**[!UICONTROL Criteria]**: **[!UICONTROL Equals]** `message.feedback` |
 | Decision Option Score | Calculated value for a decision option in the context of a single scope. | `_experience.decisioning.`<br/>`propositionDetails.selections.score` | Component type: Metric |
 | Fallback Decision Option Score | Calculated value for a fallback decision option in the context of a single scope. | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | Component type: Metric |
 | Offers Dismiss | The number of offers dismissed or rejected without any other direct interaction. | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Component type: Metric |

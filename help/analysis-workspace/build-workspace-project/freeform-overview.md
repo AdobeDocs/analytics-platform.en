@@ -24,7 +24,7 @@ From within title area ➊ you can create a project, create a folder, edit your 
 * To show tiles for a [**[!UICONTROL Blank project]**](create-projects.md), [**[!UICONTROL Blank mobile scorecard]**](/help/mobile-app/create-scorecard.md), [**[!UICONTROL Guided analysis]**](/help/guided-analysis/overview.md), **[!UICONTROL Open the documentation]** and **[!UICONTROL Open release notes]**, select ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Show more]**. To hide the area with tiles, select ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Show less]**.
 * Based on what you select to show, using the [Show selector](#show-selector), you can edit preferences and perform actions on the current folder visible in **[!UICONTROL Projects]**:
   
-  | Action | Description | 
+  | Action | Description |
   |---|---|
   | **[!UICONTROL Create project]** | Select to [create a new project](create-projects.md). |
   |  **[!UICONTROL Create folder]** | Select to [create a new folder](workspace-folders/create-folders.md). |
@@ -43,8 +43,8 @@ From within title area ➊ you can create a project, create a folder, edit your 
 The project list ➋ displays all the projects that you own and that have been shared with you. The list has the following columns:
 
 | Column | Description |
-| --- | --- | 
-| ![SelectBox](/help/assets/icons/SelectBox.svg) | When one or more projects are selected, a blue action bar appears at the bottom of the Project interface. See [Actions](#actions) for more details. | 
+| --- | --- |
+| ![SelectBox](/help/assets/icons/SelectBox.svg) | When one or more projects are selected, a blue action bar appears at the bottom of the Project interface. See [Actions](#actions) for more details. |
 | ![StarOutline](/help/assets/icons/StarOutline.svg)  | Select to favor ![Star](/help/assets/icons/Star.svg) or un-favor ![StarOutline](/help/assets/icons/StarOutline.svg) a project. |
 | **[!UICONTROL Title and description]** | To edit the project, select the title link, which opens the [Workspace project](/help/analysis-workspace/home.md). Projects shared with you are indicated with ![Share](/help/assets/icons/ShareAlt.svg). Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup menu with more details on the project. Select ![More](/help/assets/icons/More.svg) to open a context menu with actions. See [Actions](#actions) for more details. |
 | **[!UICONTROL Type]** | A Workspace project, a ![FolderUser](/help/assets/icons/FolderUser.svg) folder, or a [Mobile Scorecard](/help/mobile-app/home.md). |
@@ -85,7 +85,7 @@ You can take actions on one or more projects using the context menu ![More](/hel
 | ![Label](/help/assets/icons/Label.svg)| **[!UICONTROL Tag]** | Tag one or more projects or folders. The **[!UICONTROL Tag Components]** dialog displays to select one or more tags. Select **[!UICONTROL Save]** to save the tags for the selected projects or folders. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)| **[!UICONTROL Approve]** or **[!UICONTROL Unapprove]** | Approve or unapprove a project. Only administrators can approve projects. |
 |  ![FileCSV](/help/assets/icons/FileCSV.svg)| **[!UICONTROL Export CSV]** | Export the selected projects to a CSV file with name `Project List.csv`. |
-|  ![ProjectAdd](/help/assets/icons/ProjectAdd.svg)| **[!UICONTROL Add Projects]** | Add one or more projects to a selected folder. In **[!UICONTROL Add Projects]** you can select one or more projects. Select **[!UICONTROL Add]** to add the projects to the folder. See [Add projects to folders](workspace-folders/add-projects.md#from-inside-a-folder) for more information. | 
+|  ![ProjectAdd](/help/assets/icons/ProjectAdd.svg)| **[!UICONTROL Add Projects]** | Add one or more projects to a selected folder. In **[!UICONTROL Add Projects]** you can select one or more projects. Select **[!UICONTROL Add]** to add the projects to the folder. See [Add projects to folders](workspace-folders/add-projects.md#from-inside-a-folder) for more information. |
 | ![FolderAddTo](/help/assets/icons/FolderAddTo.svg)| **[!UICONTROL Move to]** | Move one or more selected projects to a folder. In the **[!UICONTROL Select Folder]**, select the folder to move the selected project to and select **[!UICONTROL Move]**. See [Add projects to folders](workspace-folders/add-projects.md#from-the-project-list) for more information. |
 
 

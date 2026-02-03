@@ -8,7 +8,7 @@ exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
 ---
 # Transform datasets for B2B lookups
 
-To support person-based lookups on B2B data (including accounts, opportunities, marketing lists and campaigns), transformation of B2B lookup datasets is required.
+To support person-based lookups on B2B data (including accounts, opportunities, marketing lists and campaigns), transformation of B2B lookup datasets can improve data accuracy.
 
 This transformation is only available for datasets with data for B2B lookup schemas, based on the following classes:
 

@@ -15,10 +15,6 @@ exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
 >title="Use a custom schema"
 >abstract="(Recommended) Customizing your schema allows your organization to track only what you need and avoid the overhead tied to messy and unneeded fields. This option includes field groups added by the Web SDK and field groups custom to your organization."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-default"
 >title="Use the default schema"

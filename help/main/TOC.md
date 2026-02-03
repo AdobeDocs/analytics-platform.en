@@ -48,6 +48,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Send data to Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
     + [Retain historical data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
     + [Recommended upgrade process](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+    + [Prepare your organization](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md)
     + Architect and create a schema {#schema}
       + [Architect your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [Create your schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
@@ -94,6 +95,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Compare with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+    + [Map Adobe Analytics data](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
     + [Feature support](../getting-started/aa-vs-cja/cja-aa.md)
     + [Compare terminology](../getting-started/aa-vs-cja/terminology.md)
     + [Compare data processing](../getting-started/aa-vs-cja/data-processing-comparisons.md)
@@ -122,7 +124,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Data warehouse native solutions](/help/data-mirror/datawarehouse.md)
     + [Experience Platform](/help/data-mirror/aep.md)
     + [Customer Journey Analytics](/help/data-mirror/cja.md)
-  + [Data Mirror quick start guide](/help/data-mirror/model-based.md)
+  + [Data Mirror quick start guide](/help/data-mirror/relational.md)
 
 + Connections {#cja-connections}
   + [Connections overview](../connections/overview.md)
@@ -131,7 +133,11 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Combined event datasets](../connections/combined-dataset.md)
   + [Standard lookups](../connections/standard-lookups.md)
   + [B2B lookups](../connections/transform-datasets-b2b-lookups.md)
-
+  + Audience Analysis {#audience-analysis}
+    + [Overview](/help/connections/audience-analysis/audience-analysis-overview.md)
+    + [Configure](/help/connections/audience-analysis/audience-analysis-configure.md)
+    + [Manage](/help/connections/audience-analysis/audience-analysis-manage.md)
+    + [Analyze](/help/connections/audience-analysis/analyze-audiences.md)
 + Data Views {#cja-dataviews}
   + [Data views overview](../data-views/data-views.md)
   + [Create or edit a data view](../data-views/create-dataview.md)
@@ -156,7 +162,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Shared metrics & dimensions{#shared-metrics-dimensions}
     + [Overview](/help/data-views/shared-metrics-dimensions/smd-overview.md)
     + [Editor](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
-
 + Tools {#tools}
   + Asset Transfer {#asset-transfer}
     + [Transfer assets](../tools/asset-transfer/transfer-assets.md) 
@@ -196,12 +201,14 @@ breadcrumb-title: Customer Journey Analytics Guide
     + Freeform table {#freeform-table}
       + [Overview](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
       + [Create hyperlinks](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
+      + [View trended data](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md)
+      + [Include multiple dimensions](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)
+      + [Filter and sort](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
+      + [Totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Column and row settings {#column-row-settings}
         + [Column settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
         + [Row settings](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
         + [Dynamic and static items](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-      + [Filter and sort](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-      + [Totals](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
     + Cohort table {#cohort-table}
       + [Overview](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
       + [Configure](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
@@ -252,6 +259,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Share projects](../analysis-workspace/curate-share/share-projects.md)
     + [Create shareable links](../analysis-workspace/curate-share/shareable-links.md)
     + [Read-only projects](../analysis-workspace/curate-share/view-only-projects.md)
+    + [Generate slide presentations](/help/analysis-workspace/curate-share/generate-slides.md)
   + Export {#export}
     + [Overview](../analysis-workspace/export/export-project-overview.md)
     + [Download](../analysis-workspace/export/download-send.md)
@@ -289,6 +297,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Overview](/help/content-analytics/config/configuration.md)
     + [Guided configuration](/help/content-analytics/config/guided.md)
     + [Manual configuration](/help/content-analytics/config/manual.md)
+    + [Standalone configuration](/help/content-analytics/config/standalone.md)
     + [Data collection](/help/content-analytics/config/datacollection.md)
 
 + Analytics dashboards {#cja-dashboards}
@@ -325,10 +334,10 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Manage annotations](../components/annotations/manage-annotations.md)
     + [View annotations](../components/annotations/view-annotations.md)
     + [Mobile scorecard annotations](../components/annotations/mobile-annotations.md)
-  + Audiences {#audiences}
-    + [Audiences overview](../components/audiences/audiences-overview.md)
+  + Audience publishing {#audiences}
+    + [Audience publishing overview](../components/audiences/audiences-overview.md)
     + [Create and publish audiences](../components/audiences/publish.md)
-    + [Manage audiences](../components/audiences/manage.md)
+    + [Manage published audiences](../components/audiences/manage.md)
   + Dimensions {#dimensions}
     + [Overview](../components/dimensions/overview.md)
     + [Preview dimensions](../components/dimensions/view-dimensions.md)
@@ -427,11 +436,10 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Stitching {#stitching}
   + [Overview](/help/stitching/overview.md)
-  + [Field based stitching](/help/stitching/fbs.md)
-  + [Graph based stitching](/help/stitching/gbs.md)
-  + [Use stitching](/help/stitching/use-stitching.md)
-  + [Use stitching](/help/stitching/use-stitching-ui.md)
-  + [Create and manage stitched datasets](/help/stitching/stitching-ui.md)
+  + [Field-based stitching](/help/stitching/fbs.md)
+  + [Graph-based stitching](/help/stitching/gbs.md)
+  + [Request stitching](/help/stitching/use-stitching.md)
+  + [Enable stitching](/help/stitching/use-stitching-ui.md)
   + [Validate stitching](/help/stitching/validate.md)
   + [Frequently Asked Questions](/help/stitching/faq.md)  
 
@@ -475,13 +483,31 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Query Service and Export datasets](../use-cases/data-export/queryservice-export-datasets.md)
   + Data ingestion {#data-ingestion}
     + [Ingest and use Marketo Engage data](../use-cases/data-ingestion/marketo.md)
-    + [Ingest and use Experience Platform audiences ](../use-cases/data-ingestion/ingest-aep-segments.md)
+    + [Ingest and use Experience Platform audiences](../use-cases/data-ingestion/ingest-aep-segments.md)
   + Data views {#data-views}
     + [Data views use cases](/help/use-cases/data-views/data-views-usecases.md)
     + [Use binding dimensions and metrics](/help/use-cases/data-views/binding-dimensions-metrics.md)
     + [Use summary data](/help/use-cases/data-views/summary-data.md)
-    + [BI extension use cases](/help/use-cases/data-views/bi-extension-usecases.md)
+    + BI extension {#bi-extension}
+      + [Use cases](/help/use-cases/data-views/bi-extension-usecases.md)
+      + [Connect and list data views](/help/use-cases/data-views/bi-extension/connect-and-validate.md)
+      + [Daily trend](/help/use-cases/data-views/bi-extension/daily-trend.md)
+      + [Hourly trend](/help/use-cases/data-views/bi-extension/hourly-trend.md)
+      + [Monthly trend](/help/use-cases/data-views/bi-extension/monthly-trend.md)
+      + [Single dimension ranked](/help/use-cases/data-views/bi-extension/single-dimension-ranked.md)
+      + [Multiple dimension ranked](/help/use-cases/data-views/bi-extension/multiple-dimension-ranked.md)
+      + [Count distinct dimension values](/help/use-cases/data-views/bi-extension/count-distinct-dimension-values.md)
+      + [Use date range names to filter](/help/use-cases/data-views/bi-extension/use-date-range-names-to-filter.md)
+      + [Use segment names to segment](/help/use-cases/data-views/bi-extension/use-segment-names-to-segment.md)
+      + [Use dimension values to segment](/help/use-cases/data-views/bi-extension/use-dimension-values-to-segment.md)
+      + [Sort](/help/use-cases/data-views/bi-extension/sort.md)
+      + [Limits](/help/use-cases/data-views/bi-extension/limits.md)
+      + [Transformations](/help/use-cases/data-views/bi-extension/transformations.md)
+      + [Visualizations](/help/use-cases/data-views/bi-extension/visualizations.md)
+      + [Caveats](/help/use-cases/data-views/bi-extension/caveats.md)
+  
   + Derived fields {#derived-fields}
+    + [Report on LLM and AI-generated traffic](/help/use-cases/ai-traffic.md)
     + [Report on goals](../use-cases/goals-using-derived-fields.md)
   + Product analysis {#product-analysis}
     + [Product analysis](/help/use-cases/product-analysis.md)
@@ -505,7 +531,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Labs User Guide](../labs/labs.md)
 
 + Troubleshooting {#troubleshooting}
-  + [Compare data](../troubleshooting/compare.md)
+  + [Compare Source Connector data](../troubleshooting/compare.md)
   + [Consistency of metrics and audiences](../troubleshooting/consistency-rcdp-cja.md)
   + [Lack of permissions](../troubleshooting/lack-of-permissions.md)
 

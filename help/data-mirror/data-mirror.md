@@ -11,7 +11,7 @@ exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
 
 {{release-limited-testing}}
 
-Data Mirror is an Experience Platform capability that enables row-level change ingestion from external databases into the data lake using model-based schemas. It preserves data relationships, enforces uniqueness, and supports versioning without requiring upstream extract, transform, and load (ETL) processes.
+Data Mirror is an Experience Platform capability that enables row-level change ingestion from external databases into the data lake using relational schemas. It preserves data relationships, enforces uniqueness, and supports versioning without requiring upstream extract, transform, and load (ETL) processes.
 
 Use Experience Platform Data Mirror to synchronize inserts, updates, and deletes (mutable data) from external data warehouse native solutions ([!DNL Snowflake], [!DNL Azure Databricks], or [!DNL Google BigQuery]) directly with data in Experience Platform. Data Mirror helps you preserve your existing database model structure and data integrity as you bring data into Experience Platform.
 
@@ -44,6 +44,6 @@ Experience Platform Data Mirror for Customer Journey Analytics is available for 
 
 >[!MORELIKETHIS]
 >
->[Data Mirror quick start guide: Mirror and use model-based data](model-based.md)
+>[Data Mirror quick start guide: Mirror and use relational data](relational.md)
 >[Data Mirror (Experience Platform documentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
->[Model-based schemas (Experience Platform documentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)
+>[Relational schemas (Experience Platform documentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational)

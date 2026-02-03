@@ -73,46 +73,46 @@ An example solution design reference could look like:
 
 | Metric name | Event type |
 |---|---|
-| Account Creation: Complete | Counter | 
-| Account Creation: Start | Counter | 
-| Call Cost | Currency | 
-| Call Length | Counter | 
-| Call Satisfaction Score |  Numeric | 
-| Call Surveys Completed |  Counter | 
-| Calls | Counter | 
-| Closed-Lost | Counter | 
-| Closed-Won | Counter | 
-| Content Views | Counter | 
-| Deal Size Currency Display Click-throughs | Counter | 
-| Display Impressions | Counter | 
-| Email Bounced | Counter | 
-| Email Clicked | Counter | 
-| Email Delivered | Counter | 
-| Email Opened | Counter | 
-| Email Sent | Counter | 
-| Event Attendance | Counter | 
-| Event Registration: Complete | Counter | 
-| Event Registration: Step 1 | Counter | 
-| Event Registration: Step 2 | Counter | 
-| Event Registration: Step 3 | Counter | 
-| Global Satisfaction Score Numeric Inbound Call | Counter | 
-| Lead Form: Complete | Counter | 
-| Lead Form: Step 1 | Counter | 
-| Lead Form: Step 2 | Counter | 
-| Lead Generated | Counter | 
-| Lead Qualification | Counter | 
-| Meetings | Counter | 
-| MQL Disqualified | Counter | 
-| MQL Qualified | Counter | 
-| Needs Assessment | Counter | 
-| Negotiation | Counter | 
-| Objection Handling | Counter | 
-| Opportunities | Counter | 
-| Opportunity Creation | Counter | 
-| Orders | Counter | 
-| Outbound Call | Counter | 
-| Post-Sales Follow-Up | Counter | 
-| Proposal Submission | Counter | 
+| Account Creation: Complete | Counter |
+| Account Creation: Start | Counter |
+| Call Cost | Currency |
+| Call Length | Counter |
+| Call Satisfaction Score |  Numeric |
+| Call Surveys Completed |  Counter |
+| Calls | Counter |
+| Closed-Lost | Counter |
+| Closed-Won | Counter |
+| Content Views | Counter |
+| Deal Size Currency Display Click-throughs | Counter |
+| Display Impressions | Counter |
+| Email Bounced | Counter |
+| Email Clicked | Counter |
+| Email Delivered | Counter |
+| Email Opened | Counter |
+| Email Sent | Counter |
+| Event Attendance | Counter |
+| Event Registration: Complete | Counter |
+| Event Registration: Step 1 | Counter |
+| Event Registration: Step 2 | Counter |
+| Event Registration: Step 3 | Counter |
+| Global Satisfaction Score Numeric Inbound Call | Counter |
+| Lead Form: Complete | Counter |
+| Lead Form: Step 1 | Counter |
+| Lead Form: Step 2 | Counter |
+| Lead Generated | Counter |
+| Lead Qualification | Counter |
+| Meetings | Counter |
+| MQL Disqualified | Counter |
+| MQL Qualified | Counter |
+| Needs Assessment | Counter |
+| Negotiation | Counter |
+| Objection Handling | Counter |
+| Opportunities | Counter |
+| Opportunity Creation | Counter |
+| Orders | Counter |
+| Outbound Call | Counter |
+| Post-Sales Follow-Up | Counter |
+| Proposal Submission | Counter |
 | Revenue Closed-Lost | Currency |
 | Revenue Closed-Won | Currency |
 | Sales Contact Calls | Counter |
@@ -135,31 +135,31 @@ An example solution design reference could look like:
 
 | Data view field name | Field type |
 |---|---|
-| Age | Metric | 
-| Age Group | Dimension | 
-| Category 1 Affinity Level | Dimension | 
-| Category 1 Affinity Score | Metric | 
-| Category 2 Affinity Level | Dimension | 
-| Category 2 Affinity Score | Metric | 
-| Category 3 Affinity Level | Dimension | 
-| Category 3 Affinity Score | Metric | 
-| Category 4 Affinity Level | Dimension | 
-| Category 4 Affinity Score | Metric | 
-| Category 5 Affinity Level | Dimension | 
-| Category 5 Affinity Score | Metric | 
-| Consent Advertising | Dimension | 
-| Consent All Communications | Dimension | 
-| Consent Direct Mail | Dimension | 
-| Consent Email | Dimension | 
-| Consent Mobile Phone | Dimension | 
-| Consent Personalization | Dimension | 
-| Consent Share Data | Dimension | 
-| Consent SMS | Dimension | 
-| Email | Dimension | 
-| First Name | Dimension | 
-| Gender | Dimension | 
-| Individual City | Dimension | 
-| Individual CLTV Level | Dimension | 
+| Age | Metric |
+| Age Group | Dimension |
+| Category 1 Affinity Level | Dimension |
+| Category 1 Affinity Score | Metric |
+| Category 2 Affinity Level | Dimension |
+| Category 2 Affinity Score | Metric |
+| Category 3 Affinity Level | Dimension |
+| Category 3 Affinity Score | Metric |
+| Category 4 Affinity Level | Dimension |
+| Category 4 Affinity Score | Metric |
+| Category 5 Affinity Level | Dimension |
+| Category 5 Affinity Score | Metric |
+| Consent Advertising | Dimension |
+| Consent All Communications | Dimension |
+| Consent Direct Mail | Dimension |
+| Consent Email | Dimension |
+| Consent Mobile Phone | Dimension |
+| Consent Personalization | Dimension |
+| Consent Share Data | Dimension |
+| Consent SMS | Dimension |
+| Email | Dimension |
+| First Name | Dimension |
+| Gender | Dimension |
+| Individual City | Dimension |
+| Individual CLTV Level | Dimension |
 | Individual CLTV Score | Metric |
 | Individual Country |  Dimension |
 | Individual Phone | Dimension |
@@ -184,30 +184,30 @@ An example solution design reference could look like:
 
 | Data view field name | Field type |
 |---|---|
-| Annual Revenue | Metric | 
-| Company City | Dimension | 
-| Company CLTV Level | Dimension | 
-| Company CLTV Score | Metric | 
-| Company Country | Dimension | 
-| Company Name | Dimension | 
+| Annual Revenue | Metric |
+| Company City | Dimension |
+| Company CLTV Level | Dimension |
+| Company CLTV Score | Metric |
+| Company Country | Dimension |
+| Company Name | Dimension |
 | Company Phone | Dimension |
 | Company Postal Code | Dimension |
-| Company Propensity to Buy Level | Dimension | 
-| Company Propensity to Buy Score | Metric | 
-| Company Propensity to Churn Level | Dimension | 
-| Company Propensity to Churn Score | Metric | 
-| Company Propensity to Upgrade Level | Dimension | 
-| Company Propensity to Upgrade Score | Metric | 
-| Company Size | Dimension | 
-| Company State | Dimension | 
-| Company Street Address | Dimension | 
-| Industry | Dimension | 
-| Number of Employees | Metric | 
-| Partner Audience - Hardware Shoppers | Dimension | 
-| Partner Audience - Rapid Growth | Dimension | 
-| Partner Audience - Services Needed | Dimension | 
-| Partner Audience - Software Shoppers | Dimension | 
-| Revenue Range | Dimension | 
+| Company Propensity to Buy Level | Dimension |
+| Company Propensity to Buy Score | Metric |
+| Company Propensity to Churn Level | Dimension |
+| Company Propensity to Churn Score | Metric |
+| Company Propensity to Upgrade Level | Dimension |
+| Company Propensity to Upgrade Score | Metric |
+| Company Size | Dimension |
+| Company State | Dimension |
+| Company Street Address | Dimension |
+| Industry | Dimension |
+| Number of Employees | Metric |
+| Partner Audience - Hardware Shoppers | Dimension |
+| Partner Audience - Rapid Growth | Dimension |
+| Partner Audience - Services Needed | Dimension |
+| Partner Audience - Software Shoppers | Dimension |
+| Revenue Range | Dimension |
 | Website | Dimension |
 
 +++

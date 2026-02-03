@@ -9,9 +9,13 @@ role: User
 ---
 # Send and schedule projects
 
-You can send Customer Journey Analytics projects as files to selected users by email. You can send files ad hoc, or you can configure projects to be sent on a schedule. Projects can be sent in CSV or PDF format.
+You can send Customer Journey Analytics projects as files to selected users by email. You can send files ad hoc, or you can configure projects to be sent on a schedule.
 
-Any tags applied to the project are automatically applied to the export.
+Consider the following when sending files:
+
+* Files can be sent in CSV or PDF format.
+
+* Any tags applied to the project are automatically applied to the export.
 
 Other methods of exporting Customer Journey Analytics data are also available, as described in [Export overview](/help/analysis-workspace/export/export-project-overview.md).
 
@@ -34,7 +38,7 @@ To send a file to recipients by email:
 
 ## Schedule file export {#schedule}
 
-To send a file on a schedule to recipients by email
+To send a file on a schedule to recipients by email:
 
 1. Select **[!UICONTROL Share] > [!UICONTROL Schedule file export]**.
 1. Specify the file type:

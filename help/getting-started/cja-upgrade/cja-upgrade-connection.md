@@ -44,7 +44,7 @@ The following information explains how to create and configure a connection, as 
     | **[!UICONTROL Number of records]** | The total records in the previous month for the dataset in Experience Platform. |
     | **[!UICONTROL Schema]** | The [schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) based on which the dataset was created in Adobe Experience Platform. |
     | **[!UICONTROL Dataset type]** | For each dataset that you added to this connection, Customer Journey Analytics automatically sets the dataset type based on the data coming in. There are 3 different dataset types: Event data, Profile data, and Lookup data. See the table below for an explanation of dataset types. |
-    | **[!UICONTROL Granularity]** | The granularity of the data in the dataset; only applicable for summary datasets. | 
+    | **[!UICONTROL Granularity]** | The granularity of the data in the dataset; only applicable for summary datasets. |
     | **[!UICONTROL Data source type]** | The data source type of the dataset. Not applicable for summary datasets. |
     | **[!UICONTROL Person ID]** | Select a Person ID from the drop-down menu of available identities. These identities were defined in the dataset schema in the Experience Platform. See below for information on how to use Identity Map as a Person ID.<p>IMPORTANT: If there are no Person IDs to choose from, that means one or more Person IDs have not been defined in the schema. View [this video](https://www.youtube.com/watch?v=G_ttmGl_LRU) on how to define an identity in Experience Platform. |
     | **[!UICONTROL Key]** | For lookup datasets only (such as _id). |
@@ -70,12 +70,12 @@ You can add an Experience Platform dataset when you create a connection.
    | Column | Description |
    |---|---|
    | Dataset | Name of the dataset. Select the name to direct you to the dataset in Experience Platform. Select ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to display a popup with more details for the dataset. You can select **[!UICONTROL Edit in Platform]** to edit the dataset directly in Experience Platform. |
-   | Dataset type | The type of dataset: Event, Profile, Lookup, or Summary. | 
+   | Dataset type | The type of dataset: Event, Profile, Lookup, or Summary. |
    | Number of records | The total records in the previous month for the dataset in Experience Platform. |
    | Schema | The schema for the dataset. Select the name to direct you to the schema in Experience Platform. |
    | Last batch | The state of the last batch ingested in Experience Platform. See [Batch states](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) more information. |
-   | Dataset ID | The id of the dataset. | 
-   | Last updated | The last updated timestamp of the dataset. | 
+   | Dataset ID | The id of the dataset. |
+   | Last updated | The last updated timestamp of the dataset. |
 
    
 1. Select one or more datasets and select **[!UICONTROL Next]**. At least one event dataset must be part of the connection.
