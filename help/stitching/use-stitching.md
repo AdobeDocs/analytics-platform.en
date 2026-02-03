@@ -14,19 +14,6 @@ exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
 >Request stitching through Adobe is no longer required and this method is deprecated. [Enable stitching in the Connections UI](use-stitching-ui.md).
 >
 
-Once your organization meets generic [prerequisites](overview.md#prerequisites), understands common [limitations](overview.md#limitations), and also stitching method specific ([field-based](fbs.md) and [graph-based](gbs.md)) prerequisites and limitations, you can follow these steps to request and start using stitching in Customer Journey Analytics.
-
-## Select options
-
-The Customer Journey Analytics package that you are entitled to determines the available stitching methods, options for the initial backfill duration, lookback window, replay frequency, and maximum number of datasets permitted for stitching. See the [Customer Journey Analytics product description](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html) for more details. Decide on the available options before requesting support.
-
-| | Customer Journey Analytics<br/>Select | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
-|---|---|---|---|
-| Available stitching methods | Field-based stitching | Field-based stitching<br/>Graph-based stitching | Field-based stitching<br>Graph-based stitching</li> |
-| One-time stitching backfill duration | 13 months | 13 months | 25 months |
-| Lookback window and replay frequency | 1 day, every day<br/>up to 7 days, weekly | 1 day, every day<br/>up to 14 days, weekly| 1 day, every day<br/>up to 30 days, weekly |
-| Maximum number of datasets permitted for stitching | 5 | 15 | 50 |
-
 ## Request support 
 
 1. Contact Adobe Customer Support with the following information:

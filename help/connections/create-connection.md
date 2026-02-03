@@ -71,7 +71,7 @@ role: Admin
 >[!CONTEXTUALHELP]
 >id="connection_change_personid"
 >title="Change Person ID"
->abstract="A change of the Person ID deletes all existing data in the connection. You have to re-ingest data from the dataset based on the new Person ID.<br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the deletion process is completed."
+>abstract="Modifying the identity stitching setting on a dataset will affect the Person ID setting once you apply the changes. A change of the Person ID deletes all existing data in the connection. You have to re-ingest data from the dataset based on the new Person ID.<br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the deletion process is completed."
 
 >[!CONTEXTUALHELP]
 >id="connection_change_accountid"
@@ -441,7 +441,7 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >[!CONTEXTUALHELP]
 >id="connection_stitching_dialog"
 >title="Enable identity stitching"
->abstract="Enable identity stitching derives a stitched ID from a single or from multiple datasets. This process may include the merge of user data from authenticated and unauthenticated sessions.<br/><br/>You are responsible to comply with applicable laws and regulations. This compliance includes that you obtain the necessary end user permissions before you merge datasets."
+>abstract="Enable identity stitching derives a stitched ID from a dataset or from identity graph. This process may include the merge of user data from authenticated and unauthenticated sessions.<br/><br/>You are responsible to comply with applicable laws and regulations. This compliance includes that you obtain the necessary end user permissions before you merge datasets."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
 
 >[!CONTEXTUALHELP]
@@ -465,13 +465,9 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >[!CONTEXTUALHELP]
 >id="connection_namespace_graph"
 >title="Namespace identity graph"
->abstract="Select the namespace to use to update the identifier in the identity graph."
+>abstract="Select the namespace to use to pick the identifier from the identity map."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
 
->[!CONTEXTUALHELP]
->id="connection_changeto_identitygraph"
->title="Change to identity graph"
->abstract="Ensure you have finished the setup of the identity graph before you use the identity graph for stitching."
 
 ### Dataset types {#dataset-types}
 
