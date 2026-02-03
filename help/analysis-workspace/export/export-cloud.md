@@ -112,7 +112,7 @@ To export full tables from Analysis Workspace:
 
 1. If you haven't already, configure an export account and location, as described in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md).
 
-1. In Analysis Workspace, select [!UICONTROL **Export full table**] from the context menu of a freeform table.
+1. In Analysis Workspace, right-click the heading of a freeform table to reveal the context menu, then select [!UICONTROL **Export full table**].
 
    ![The Freeform table drop-down menue with Export full table highlighted.](assets/export-full-table.png)
 

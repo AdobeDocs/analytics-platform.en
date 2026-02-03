@@ -171,3 +171,17 @@ Select a column header to sort the exports by that column. By default, exports a
    {style="table-layout:auto"}
 
 1. Ensure that any columns you want to display are selected. Selected columns appear on the Exports page and display the relevant information.
+
+## Create an export from the Exports page
+
+You can create an export either from Analysis Workspace, as described in [Export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md), or from the Exports page, as described in this section.
+
+To begin creating an export from the Exports page:
+
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+
+1. On the [!UICONTROL **Exports**] tab, select **[!UICONTROL Add export]**.
+
+1. Complete the available fields to create your export. For information about each field, as well as information about components, calculated metric functions, and other features that are supported, see [Export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md).
+
+

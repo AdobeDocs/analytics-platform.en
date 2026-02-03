@@ -24,11 +24,13 @@ For scheduled exports, logs reflect the export settings as they were when the lo
 
 1. Do any of the following:
 
+   * System administrators can enable the option to **[!UICONTROL View logs for all users]**. When this option is enabled, all logs are shown, regardless of which user created the export.
+   
    * [Customize the columns](#configure-columns) that are displayed.
 
    * Select the **Information icon** ![Information icon](assets/information-icon.png) next to the log name to view the export that is associated with the log.
 
-   * Select the **Edit export icon** ![Information icon](assets/edit-export-icon.png) next to the log name to edit the export that is associated with the log. 
+   * Select the **Edit export icon** ![Edit export icon](/help/assets/icons/Edit.svg) next to the log name to edit the export that is associated with the log. 
 
      For more information about editing an export, see [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md).
 
@@ -88,11 +90,19 @@ This option is not available when selecting multiple logs.
 
 1. Locate the log that is associated with the export you want to edit.
 
-1. Select the **Edit export** icon ![export log icon](assets/export-icon.png) next to the log name.
+1. Select the **Edit export** icon ![Edit export log icon](/help/assets/icons/Edit.svg) next to the log name.
 
    Or
 
    Select the checkbox next to the log, then select [!UICONTROL **Edit export**].
+
+## Rerun a completed or failed export
+
+You can rerun one or more exports associated with specific export logs. Only exports that have a status of Complete or Failed can be rerun.  
+
+1. Select the checkbox next to one or more export jobs that you want to rerun.
+
+1. Select **[!UICONTROL Rerun]**.
 
 ## Configure columns
 
@@ -122,6 +132,7 @@ To configure columns on the [!UICONTROL Logs] tab:
    | Account | The account where the data was exported. |
    | Status | The status of the export. Available statuses are [!UICONTROL Pending], [!UICONTROL Delivered], and [!UICONTROL Failed]. |
    | Date delivered | The date when the export took place. |
+   | Date started | The date when the export started. |
    | Account type | The type of cloud account where the data was exported. Available account types are [!UICONTROL Amazon S3 Role ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake], and [!UICONTROL Adobe Experience Platform]. |
    | Number of rows | The number of rows included in the exported table. |
 
