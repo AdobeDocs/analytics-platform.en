@@ -98,7 +98,7 @@ This option is not available when selecting multiple logs.
 
 ## Rerun a completed or failed export
 
-You can rerun one or more exports associated with specific export logs. Only exports that have a status of Complete or Failed can be rerun.  
+You can rerun one or more exports associated with specific export logs. To rerun an export, the export log must have a status of Complete or Failed and be no more than 7 days old.
 
 1. Select the checkbox next to one or more export jobs that you want to rerun.
 
