@@ -24,19 +24,19 @@ These release notes cover the February 2026 release period. Adobe Customer Journ
 
 ## Fixes in Customer Journey Analytics
 
-**Analysis Workspace**: AN-423389, AN-423316, AN-422636, AN-422482, AN-422121, AN-422116, AN-422027, AN-421134, AN-420187, AN-406271, AN-406188, AN-405997, AN-405983, AN-405796, AN-405033, AN-404893, AN-404871, AN-404842, AN-404713, AN-404502, AN-404353, AN-404352, AN-404048, AN-403241, AN-402523, AN-400795, AN-396149, AN-390990, AN-390646, AN-383484, AN-376980, AN-371729, AN-347570, AN-404835
+**Analysis Workspace**: AN-421930, AN-424997, AN-424194, AN-425515, AN-425254, AN-423174, AN-428834, AN-306540, AN-426014, AN-427801
 **Components**: 
 **Content Analytics**:
-**Guided analysis**: AN-421274
-**Exports**: 
-**Data views**: AN-421891, AN-404627
+**Guided analysis**: 
+**Exports**: AN-422041, AN-421599, AN-422112
+**Data views**: 
 **Implementation**: 
-**Report Builder**: AN-422120, AN-421937, AN-406296, AN-402951, AN-399748
-**Reporting**: 
-**Segmentation**: 
-**Scheduled reports**: AN-423087, AN-422686
+**Report Builder**: AN-391415, AN-425125
+**Reporting**: AN-425817, AN-424362, AN-425752, AN-425278, AN-422249, AN-403446, AN-424727, AN-426791, AN-427985
+**Segmentation**: AN-428905, AN-428232
+**Scheduled reports**: AN-425484, AN-425137
 **Shared metrics and dimensions**: 
-**Other**: AN-422946, AN-422775, AN-422273, AN-422100, AN-420045, AN-404891, AN-390912
+**Other**: AN-428833, AN-425074
 
 
 ## Important notices for Customer Journey Analytics Administrators
