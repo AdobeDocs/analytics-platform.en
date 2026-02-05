@@ -452,8 +452,8 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 
 >[!CONTEXTUALHELP]
 >id="connection_lookbackwindow"
->title="Lookback window"
->abstract="Select the appropriate time period for the lookback window to use in replay stitching."
+>title="Replay window"
+>abstract="Select the appropriate time period for the replay window to use in stitching."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
 
 >[!CONTEXTUALHELP]
