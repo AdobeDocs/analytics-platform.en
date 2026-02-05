@@ -21,7 +21,7 @@ To start reporting on Content Analytics from scratch:
 
 Based on the Content Analytics specific dimensions that you use in your project, thumbnails are displayed in the following visualizations:
 
-### Freeform tables
+### Freeform table
 
 ![Content Analytics thumbnails](../assets/aca-thumbnails.png)
 
@@ -32,12 +32,12 @@ By default, thumbnails are shown in a [freeform table](/help/analysis-workspace/
 * In the **[!UICONTROL Row setting]** popup, underneath **[!UICONTROL Settings]**, check or uncheck **[!UICONTROL Show Thumbnails]**.
 
 
-### Bar and Horizontal bar charts
+### Bar and Horizontal bar
 
 ![Content Analytics thumbnails for bar chart](/help/content-analytics/assets/aca-bar-thumbnail.png)
 
 
-Thumnbails are displayed as part of the legend on the vertical or horizontal axist. Thumbnails are also displayed when you hover over a bar in a [bar (stacked)](/help/analysis-workspace/visualizations/bar.md) and [horizontal bar (stacked)](/help/analysis-workspace/visualizations/horizontal-bar.md).
+Thumnbails are displayed as part of the legend on the vertical or horizontal axis. Thumbnails are also displayed when you hover over a bar in a [bar (stacked)](/help/analysis-workspace/visualizations/bar.md) and [horizontal bar (stacked)](/help/analysis-workspace/visualizations/horizontal-bar.md).
 
 
 ### Scatter
@@ -50,8 +50,8 @@ Thumbnails are displayed when you hover over a data point in a [scatter](/help/a
 
 You can open a preview popup window. To do so:
 
-* Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) in a freeform table.
-* Select the thumbnail in a bar, horizontal bar, or scatter visualization.
+* Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) in a [freeform table](#freeform-table).
+* Select the thumbnail in a [bar](#bar-and-horizontal-bar), [horizontal bar](#bar-and-horizontal-bar), or [scatter](#scatter) visualization.
 
 You see the following details.
   
