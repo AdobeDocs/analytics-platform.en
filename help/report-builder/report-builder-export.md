@@ -1,6 +1,6 @@
 ---
-title: Export reports from Report Builder
-description: Describes how to export data from Report Builder to secure destinations
+title: Export Reports From Report Builder
+description: Learn how to export data from Report Builder to secure destinations.
 role: User, Admin
 feature: Report Builder
 type: Documentation
@@ -43,17 +43,15 @@ To export reports from Report Builder:
 
 1. Select [!UICONTROL **Schedule**].
 
-  <!-- add screenshot -->
-
 1. On the **[!UICONTROL Workbooks]** tab, select the plus icon to create a new schedule
-
-   ![Report builder schedules tab](assets/report-builder-schedule-cloud.png)
 
    Or
    
    To export the workbook on a schedule that you already created, select the schedule from the list of schedules, then select **[!UICONTROL Send on schedule]**. 
 
 1. In the [!UICONTROL **Adobe Report Builder**] right panel, specify the following information to continue creating a new schedule:
+
+   ![Report builder schedules tab](assets/report-builder-schedule-cloud.png)
 
    |Field name | Function |
    |---------|----------|
@@ -65,7 +63,7 @@ To export reports from Report Builder:
    | **[!UICONTROL Password protect the workbook]** | Specify a password to protect the exported file so only people with the password can access it. <p>Passwords must be at least 8 characters and contain at least 1 number and 1 special character (such as `!`,`@`,`#`, and `$`).</p> |
    | **[!UICONTROL Email]** | Select this option to send the file to a specific email address. For more information, see [Schedule workbooks by sharing through email](/help/report-builder/schedule-reportbuilder.md). |
    | **[!UICONTROL Other deliveries]** | Select this option to send the file to a cloud account, then use the **[!UICONTROL Account]** and **[!UICONTROL Location]** drop-down menus that are described below to select the account and location. |
-   | **[!UICONTROL Account]** | Select the cloud export account where you want the data to be sent. <p>Or, if you haven't already configured a cloud account that you want to use, you can configure a new account:<ol><li>Select [!UICONTROL **Add account**], then specify the following information:<ul><li>[!UICONTROL **Location account name**]: Specify a name for the location account. This name appears when creating a location </li><li>[!UICONTROL **Location account description**]: Provide a short description of the account to help differentiate it from other accounts of the same account type.</li><li>**[!UICONTROL Make account available to all users in your organization]**: Select this option to allow other users in your organization to use the account. Consider the following when sharing accounts:<ul><li>Accounts that you share cannot be unshared.</li><li>Shared accounts can be edited only by the owner of the account.</li><li>Anyone can create a location for the shared account.</li></ul></li><li>[!UICONTROL **Account type**]: Select the type of cloud account that you are exporting to. Available account types are Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, and Azure RBAC.</li></ul><li>To finish configuring your account, continue with the link below that corresponds to the [!UICONTROL **Account type**] you selected:<ul><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li></ul></ol> |
+   | **[!UICONTROL Account]** | Select the cloud export account where you want the data to be sent to. <p>Or, if you haven't already configured a cloud account that you want to use, you can configure a new account:<ol><li>Select [!UICONTROL **Add account**], then specify the following information:<ul><li>[!UICONTROL **Location account name**]: Specify a name for the location account. This name appears when creating a location </li><li>[!UICONTROL **Location account description**]: Provide a short description of the account to help differentiate it from other accounts of the same account type.</li><li>**[!UICONTROL Make account available to all users in your organization]**: Select this option to allow other users in your organization to use the account. Consider the following when sharing accounts:<ul><li>Accounts that you share cannot be unshared.</li><li>Shared accounts can be edited only by the owner of the account.</li><li>Anyone can create a location for the shared account.</li></ul></li><li>[!UICONTROL **Account type**]: Select the type of cloud account that you are exporting to. Available account types are Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, and Azure RBAC.</li></ul><li>To finish configuring your account, continue with the link below that corresponds to the [!UICONTROL **Account type**] you selected:<ul><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li></ul></ol> |
    | **[!UICONTROL Location]** | Select the location on the account where you want the export data to be sent.<p>Or, if you haven't already configured the location that you want to use on the account that you selected, you can configure a new location:<ol><li>Select [!UICONTROL **Add location**], then specify the following information: <ul><li>[!UICONTROL **Name**]: The name of the location.</li><li>[!UICONTROL **Description**]: Provide a short description of the location to help differentiate it from other locations on the account.</li><li>**[!UICONTROL Make location available to all users in your organization]**: Select this option to allow other users in your organization to use the location. Consider the following when sharing accounts:<ul><li>Locations that you share cannot be unshared.</li><li>Shared locations can be edited only by the owner of the account.</li><li>Locations can be shared only if the account that the location is associated with is also shared.</li></ul></li><li>[!UICONTROL **Location account**]: Select the account where you want to create the location.</li></ul><li>To finish configuring your location, continue with the link below that corresponds to the account type that you selected in the [!UICONTROL **Location account**] field:<ul><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li></ul> |
    | **[!UICONTROL Show scheduling options]**  | Select this option to view additional options for scheduling the export. Leave this option unselected if you want to send the export only once. When this option is unselected, the export is initiated immediately. |
    | **[!UICONTROL Starting on]**  | The day and time that the scheduled export should begin. <p>This option is available only when choosing a scheduled export frequency.</p> |
@@ -105,8 +103,6 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
 * Export data blocks that include multiple dimensions.
 
 ## Export requirements {#export-requirements}
-
-### Minimum requirements
 
 Make sure that your data blocks, your environment, and your permissions meet the following requirements:
 

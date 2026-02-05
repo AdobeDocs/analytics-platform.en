@@ -646,10 +646,9 @@ The following templates are available:
 
 The following templates are available:
 
-<!--need to add audience overview: - **[!UICONTROL Audience overview]** - View which audiences are represented among the people visiting your site.<p>**This can help you** better understand general information about the audiences, where the audiences originated (RTCDP, Customer Journey Analytics, and so forth), audience overlap, and more.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts for these specific audiences, or create tailored experiences for customers who span multiple audiences.</p><p>This template uses the Audience Name, Audience Origin, Exited Audience Name, and Exited Audience Origin dimensions.</p><p>For more information, see [Analyze Experience Platform audiences in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> - -->
-
 | Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
+| **[!UICONTROL Audience overview]** | View which audiences are represented among the people visiting your site.<p>**This can help you** better understand general information about the audiences, where the audiences originated (RTCDP, Customer Journey Analytics, and so forth), audience overlap, and more.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts for these specific audiences, or create tailored experiences for customers who span multiple audiences.</p><p>This template uses the Audience Name, Audience Origin, Exited Audience Name, and Exited Audience Origin dimensions.</p><p>For more information, see [Analyze Experience Platform audiences in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> |
 | [!UICONTROL **First vs repeat visitors**] | View a comparison of first-time visitors to repeat visitors. <p>**This can help you** better understand your site's effectiveness in retaining customer loyalty, or the rate at which you are acquiring new customers.</p><p>**Based on what you learn, you might** do any number of things, like offer incentives for future purchases to first-time visitors in order to entice them to return.</p><!-- This template uses the --> |
 | **Person ID** | View individual user behavior across various channels.<p>**This can help you** better understand the complete customer journey and interactions across multiple touchpoints.</p><p>**Based on what you learn, you might** do any number of things, like personalize marketing efforts to better target user preferences.</p><!-- This template uses the --> |
 | **Geo countries** | View the country from which people visiting the site originated.<p>**This can help you** better understand what the most popular countries visitors originate from who visit your site.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these countries, or make sure that your site experience is optimal in countries that have different primary languages.</p><p>This template uses the Countries dimension. </p> |
@@ -1108,3 +1107,15 @@ The following templates are available:
 | [!UICONTROL **B2B Account Engagement Overview**] | See how active your accounts are across events, people, and opportunities.<p>**This can help you** better understand whether engagement at the account level is trending up or down, compare activity across accounts, and decide where to focus retention or acquisition efforts.</p><p>**Based on what you learn, you might** do any number of things, like refocus your attention on those accounts that are less engaged but require more attention due to the importance of the account.</p> |
 | [!UICONTROL **B2B Opportunity Engagement Overview**] | Track engagement at the opportunity level and surface deals gaining or losing traction.<p>**This can help you** to forecast deal progression more accurately and focus enablement where engagement spikes or stalls.</p><p>**Based on what you learn, you might** do any number of things, like put some additional efforts on deals that are almost closed, and research why other deals are losing traction.</p> |
 | [!UICONTROL **B2B Buying Group Activity**] | Visualize buying-group activity within each account to inform account and buying group-marketing plays.<p>**This can help you** to visualize which buying groups, and which people within those buying groups, are most engaged, highlighting gaps in group participation.</p><p>**Based on what you learn, you might** do any number of things, like trying to engage more with people in buying groups that do not seem to be involved.</p> |
+
+
+### Mix Modeler templates {#mix-modeler-templates}
+
+<!-- CJA only -->
+
+>[!CONTEXTUALHELP]
+>id="template--mixModelerReport"
+>title="View insights from selected models generated by Mix Modeler."
+>abstract="**This can help you** to better understand the incremental insights from models generated in Mix Modeler. <br/>**Based on these insights** you will be able to:<ul><li>Visualize and quantify the impact of your organization's marketing activities.</li><li>Identify which channels are high-performing.</li><li>Identify which channels might need optimization.</li></ul>"
+
+

@@ -31,7 +31,7 @@ Some of the features and their associated value for the limit depend on the Cust
 
 | Name | Value | Limit Type | Description |
 |---|--:|---|---|
-| Try Again Timeout | 90 | System-enforced Guardrail  | Maximum number of seconds before reporting engine responds back that the request takes too long to return results (possibly due to other simultaneous other requests); it is possible to request again. |
+| Try Again Timeout | 90 | System-enforced Guardrail  | Maximum number of seconds before the reporting engine responds back that the request takes too long to return results (possibly due to other simultaneous other requests); it is possible to request again. |
 | Don't Try Again Timeout | 600 | System-enforced Guardrail  | Maximum number of seconds before Ad Hoc SQL queries time-out. Otherwise stated, the maximum number of seconds before reporting engines reports back that the request has taken too long to return results, and should not be tried again. The request most likely never returns results due to issues in the background process. |
 | Metrics | 150 |System-enforced Guardrail  |  Maximum number of metrics in a request. |
 | Interactive Query Output Rows | 50,000 | System-enforced Guardrail  | Default number of rows returned unless specified otherwise. |
@@ -125,9 +125,10 @@ See also Experience Platform [Real-time Customer Data Platform Guardrails](https
 | Name |  Value | Limit Type | Description |
 |---|--:|---|---|
 | Fields | 10,000 | System-enforced Guardrail  | Maximum number of properties or fields per row in a dataset. |
-| Unique Strings | 10 million - 1 billion | System-enforced Guardrail  | Maximum number of unique keys per lookup dataset. Depends on Customer Journey Analytics package (see Product Description).<ul><li>Foundation: 10 million.</li><li>Select: 100 million.</li><li>Prime: 250 million.</li><li>Ultimate: 1 billion</li><ul> |
+| Unique Strings | 10 million - 1 billion | System-enforced Guardrail  | Maximum number of unique keys per lookup dataset. Depends on the Customer Journey Analytics package (see Product Description).<ul><li>Foundation: 10 million.</li><li>Select: 100 million.</li><li>Prime: 250 million.</li><li>Ultimate: 1 billion</li><ul> |
 | Rows per person | 1 million | System-enforced Guardrail  | Maximum number of rows per unique person ID in a given month within a connection. |
 | Rows per day | 2.5 billion | Performance Guardrail  | Maximum average number of rows per day in a connection. |
+| Rows per connection per year | Varies by assigned data center (See description for more information) | Performance Guardrail  | The recommended row limit per year in a connection. The limits listed below are approximate as of January 2026, and will increase over time to allow more rows per connection. If you expect to exceed these limits, contact your Adobe account team to discuss alternative configurations. <p>The row limit varies depending your assigned data center, as follows:</p><ul><li>**U.S. Azure (default for U.S. customers)**: Approximately 500 billion (about 42 billion per month)</li><li>**U.S. AWS (available by request for U.S. customers)**: Approximately 30 billion (about 2.5 billion per month)</li><li>**Amsterdam**: Approximately 200 billion (about 16.5 billion per month)</li><li>**All other data centers**: 25 billion (about 2 billion per month)</li></ul></p><p>Organizations choose their Experience Platform data center when they initially purchase Experience Platform. This decision is typically based on data sovereignty and residency requirements. All AEP+Apps use cases (not just row volumes in Customer Journey Analytics) should be considered when choosing a data center.</p><p>For information about how to view which data center you are assigned to, see [Customer Journey Analytics hosting locations](/help/technotes/data-centers.md)</p>   |
 | Row Size | 2 | Performance Guardrail / System-enforced Guardrail | Average size in kilobytes per row of data ingested into Customer Journey Analytics (soft limit). A static limit for row size is determined by Guardrails for data ingestion in Experience Platform. |
 
 {style="table-layout:auto"}
@@ -277,7 +278,7 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 
 | Real-time reporting latencies | Expected latency |
 |---|---|
-| Edge Network SDK / API's into the Edge Network | &lt; 7 minutes |
+| Edge Network SDK / APIs into the Edge Network | &lt; 7 minutes |
 | Streaming connectors | &lt; 17 minutes |
 | Adobe Analytics source connector | &lt; 17 minutes |
 | Other source connectors (including batch data) | &lt; 25 hours |
