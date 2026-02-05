@@ -104,6 +104,15 @@ Use the following process when exporting full tables to the cloud:
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-notifications"
+>title="Details"
+>abstract="Add users and groups who you want to receive notifications when this export fails or is about to expire."
+
+<!-- markdownlint-enable MD034 -->
+
 >[!NOTE]
 >
 >Before you export data as described in this section, learn more about full table export in the [Understand full table export](#understand-full-table-export) section above.
@@ -135,7 +144,7 @@ To export full tables from Analysis Workspace:
    | View destinations for all users | System administrators can select this option to view all accounts and locations, regardless of who created them. |
    | Account | Select the cloud export account where you want the data to be sent. <p>Or, if you haven't already configured a cloud account that you want to use, you can configure a new account:<ol><li>In the **[!UICONTROL Account]** drop-down manu, select **[!UICONTROL Add account]**, then specify the following information:<ul><li>**[!UICONTROL Location account name]**: Specify a name for the location account. This name appears when creating a location </li><li>**[!UICONTROL Location account description]**: Provide a short description of the account to help differentiate it from other accounts of the same account type.</li><li>**Make account available to all users in your organization**: Select this option if you want to allow other users in your organization to use the account.</li><li>**[!UICONTROL Account type]**: Select the type of cloud account you are exporting to. Available account types are Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake, and AEP Data Landing Zone.</li></ul><li>To finish configuring your account, continue with the link below that corresponds to the **[!UICONTROL Account type]** you selected:<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
    | Location | Select the location on the account where you want the export data to be sent.<p>Or, if you haven't already configured a cloud account that you want to use, you can configure a new account:<ol><li>In the **[!UICONTROL Location]** drop-down manu, select **[!UICONTROL Add account]**, then specify the following information:<ul><li>**[!UICONTROL Name]**: The name of the location.</li><li>**[!UICONTROL Description]**: Provide a short description of the location to help differentiate it from other locations on the account.</li><li>**Make location available to all users in your organization**: Select this option if you want to allow other users in your organization to use the location.</li><li>**[!UICONTROL Location account]**: Select the account where you want to create the location.</li></ul><li>To finish configuring your location, continue with the link below that corresponds to the account type that you selected in the **[!UICONTROL Location account]**field:<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone).</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
-   | Notifications | Add users and groups who you want to receive notifications when this export successfully completes, fails, or is about to expire. Begin typing the name or email address of a user, or begin typing the name of a group, then select it when it appears in the drop-down list. |
+   | Notifications | Add users and groups who you want to receive notifications when this export fails or is about to expire. Begin typing the name or email address of a user, or begin typing the name of a group, then select it when it appears in the drop-down list. |
 
    {style="table-layout:auto"}
 
