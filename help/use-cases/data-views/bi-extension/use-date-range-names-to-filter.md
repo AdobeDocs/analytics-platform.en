@@ -4,6 +4,7 @@ description: Use date range names to filter use case for the BI extension in var
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
+exl-id: a10818ec-a25c-4e4e-a551-14ff501750fa
 ---
 # Use date range names to filter
 
@@ -155,4 +156,3 @@ You should see a visualization and table similar as shown below.
 >[!ENDTABS]
 
 +++
-

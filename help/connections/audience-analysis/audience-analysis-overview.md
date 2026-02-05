@@ -4,6 +4,7 @@ description: Learn about analyzing audiences from RTCDP in Customer Journey Anal
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
+exl-id: 1e962f52-6b56-4671-afea-d58dae67e8a8
 ---
 # Audience analysis overview
 
@@ -79,11 +80,3 @@ The following Customer Journey Analytics roles and Experience Platform permissio
 * A single sandbox can support up to 100 audience analysis configurations.
 
 * A connection can be associated with only one audience analysis configuration.
- 
-
-
-
-
-
-
-

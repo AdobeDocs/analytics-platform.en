@@ -4,6 +4,7 @@ keywords: Analysis Workspace
 title: Generate presentations from Workspace reports
 feature: Curate and Share
 role: User
+exl-id: a3f6db1e-0444-4804-98bf-c5c10ba2e7ea
 ---
 # Data storytelling: Generate slide presentations from Workspace reports {#generate-powerpoint}
 
@@ -240,5 +241,3 @@ The following Analysis Workspace elements and features used in a project aren't 
   As part of the deduplication and scoring process when generating relevant insights, each breakdown within a freeform table is analyzed independently, and only the first 5 breakdowns within a single freeform table are analyzed.
   
   Only the first level of a breakdown is supported. A breakdown of a breakdown is not included in the presentation.
-
-  

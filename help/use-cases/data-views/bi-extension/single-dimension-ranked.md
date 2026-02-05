@@ -4,6 +4,7 @@ description: Single dimension ranked use case for the BI extension in various BI
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
+exl-id: e66ad7c4-0d49-41fe-a9fc-661fd31e8c68
 ---
 # Single dimension ranked
 
@@ -234,4 +235,3 @@ You should see a visualization and table similar as shown below.
 >[!ENDTABS]
 
 +++
-

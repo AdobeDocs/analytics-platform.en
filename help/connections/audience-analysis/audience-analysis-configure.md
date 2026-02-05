@@ -4,6 +4,7 @@ description: Learn how to configure audience analysis
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
+exl-id: 0db3f6f7-9d7e-41bf-8eb5-02e439bab10a
 ---
 # Configure audience analysis {#configure-audience-analysis}
 
@@ -139,5 +140,3 @@ To view the audience analysis dimensions in the data view:
 1. Use the audience analysis dimensions in Analysis Workspace. 
 
    Users who have access to use the data view in Analysis Workspace can now see the new dimensions and use them in their analyses. For information about how to use the audience analysis dimensions in Analysis Workspace, see [Analyze Experience Platform audiences in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
-
-

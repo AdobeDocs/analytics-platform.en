@@ -6,8 +6,8 @@ feature: Content Analytics
 role: Admin
 hide: yes
 hidefromtoc: yes
+exl-id: 35d63b7d-f35a-4a88-ae14-96724d32a931
 ---
-
 # Standalone configuration
 
 >[!IMPORTANT]
@@ -302,4 +302,3 @@ To implement Content Analytics for your website, you need to publish the Content
 ### Set up a project
 
 Set up a project in Customer Journey Analytics to build your [Content Analytics reports and visualizations](/help/content-analytics/report/report.md). Alternatively, you can use a [Content Analytics template](/help/content-analytics/report/report.md#template) to get started.
-

@@ -6,6 +6,7 @@ solution: Customer Journey Analytics
 feature: Adobe Analytics Integration,Administration
 hide: yes
 hidefromtoc: yes
+exl-id: c109742b-c1c5-45b3-971f-f8dcf814ec37
 ---
 # Map Analytics data from multiple IMS organizations
 

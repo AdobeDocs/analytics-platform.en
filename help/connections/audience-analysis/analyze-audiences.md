@@ -4,6 +4,7 @@ description: Learn how to analyze Experience Platform audiences in Customer Jour
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
+exl-id: 095cae34-1337-464a-9682-3c899295c0a8
 ---
 # Analyze Experience Platform audiences in Customer Journey Analytics {#analyze-audiences-RTCDP}
 
@@ -50,11 +51,3 @@ Use the table in this panel to better understand audience behavior. Drag the Exi
 Shows where each audience that exited was originally created, whether in RTCDP, Customer Journey Analytics, and so forth. 
 
 Use the table in this panel to better understand how the audience origin might affect other factors. Drag the Exited Audience Name dimension from the selected data view and add it as a breakdown. Or use any other interaction dimension or metric (such as Page, Action, and so forth) as the breakdown.
-
-
-
-
-   
-
- 
-
