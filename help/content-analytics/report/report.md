@@ -16,6 +16,7 @@ To start reporting on Content Analytics from scratch:
 1. Ensure you [select a data view](/help/analysis-workspace/c-panels/panels.md#data-view) for Content Analytics reporting. Content Analytics reporting is only available for data views that are [configured](/help/content-analytics/config/configuration.md) for Content Analytics. 
 1. Drag a ![Table](/help/assets/icons/Table.svg) [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) visualization on the canvas.
 1. Use [specific Content Analytics components](components.md) and other generic [components](/help/components/overview.md) (like segments, date ranges, annotations) to build your Content Analytics insights.
+1. Use other [visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) to enhance your project.
 
 ## Thumbnails
 
