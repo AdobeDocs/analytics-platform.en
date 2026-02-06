@@ -14,7 +14,7 @@ If the person ID info cannot be retrieved for an event, the persistent ID is use
 
 You can use field-based stitching when using Customer Journey Analytics as a standalone solution (not having access to the Experience Platform Identity Service and associated identity graph). Or, when you do not want to use the available identity graph.
 
-![Field-based stitching](/help/stitching/assets/fbs.png)
+![Field-based stitching](/help/stitching/assets/fbs.svg)
 
 
 ## IdentityMap
