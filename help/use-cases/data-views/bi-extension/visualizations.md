@@ -210,3 +210,5 @@ Comparing the visualization capabilities of **matplotlib.pyplot**, the state-bas
 Comparing the visualization capabilities of **ggplot2**, the data visualization package in R, is beyond the purpose of this article. See examples above for inspiration and the [ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2.html) documentation.
 
 >[!ENDTABS]
+
++++

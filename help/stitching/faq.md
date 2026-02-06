@@ -274,3 +274,4 @@ See [Create a dataset enabled for Profile and Identity](https://experienceleague
 
 By default stitched namespace values are lowercase. So, `custEmail` becomes `custemail`. If you do have another dataset with an identity namespace value of `custEmail`, the two values do not match. To work around this behavior in reporting, you could use the [lowercase()](/help/data-views/derived-fields/derived-fields.md#lowercase) derived field function to match the identity namespace values.
 
++++
