@@ -8,7 +8,11 @@ exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
 ---
 # Field-based stitching
 
-In field-based stitching, you specify an event dataset as well as the persistent ID (cookie) and person ID for that dataset. Field-based stitching adds a new stitched ID column to the event dataset and updates this stitched ID based on rows that have a person ID for that specific persistent ID. <br/>You can use field-based stitching when using Customer Journey Analytics as a standalone solution (not having access to the Experience Platform Identity Service and associated identity graph). Or, when you do not want to use the available identity graph.
+In field-based stitching, you specify an event dataset as well as the persistent ID (cookie) and person ID for that dataset. Field-based stitching attempts to make the person ID info available for Customer Journey Analytics data analysis, on any anonymous events coming with a specific persistent ID.  That info is retrieved from the rows that have a person ID for that specific persistent ID.
+
+If the person ID info cannot be retrieved for an event, the persistent ID is used instead for that *unstitched* event. As a result, in a [data view](/help/data-views/data-views.md) that is associated with a [connection](/help/connections/overview.md) that contains the dataset enabled for stitching, the person ID component contains either the person ID value or persistent ID value at the event level.
+
+You can use field-based stitching when using Customer Journey Analytics as a standalone solution (not having access to the Experience Platform Identity Service and associated identity graph). Or, when you do not want to use the available identity graph.
 
 ![Field-based stitching](/help/stitching/assets/fbs.png)
 
@@ -114,7 +118,7 @@ Consider the following example, where Bob records different events as part of an
 
 *Data as it appeared the day it is collected:*
 
-| Event | Timestamp | Persistent ID (Cookie ID) | Person ID | Stitched ID (after live stitch) |
+| Event | Timestamp | Persistent ID (Cookie ID) | Person ID | Resulting ID (after live stitch) |
 |---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`246`** |
 | 2 | 2023-05-12 12:02 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` |
@@ -132,7 +136,7 @@ Consider the following example, where Bob records different events as part of an
 
 Both unauthenticated and authenticated events on new devices are counted as separate people (temporarily). Unauthenticated events on recognized devices are live stitched.
 
-Attribution works when the identifying custom variable is tied to a device. In the example above, all events except events 1, 8, 9 and 10 are live stitched (they all use the `Bob` identifier). Live stitching 'resolves' the stitched ID for event 4, 6 and 12.
+Attribution works when the identifying custom variable is tied to a device. In the example above, all events except events 1, 8, 9 and 10 are live stitched (they all use the `Bob` identifier). Live stitching 'resolves' the resulting ID for event 4, 6 and 12.
 
 Delayed data (data with a timestamp over 24 hours old) is handled on a 'best effort' basis, while prioritizing the stitching of current data for the highest quality.
 
@@ -148,7 +152,7 @@ The following table represents the same data as above, but shows different numbe
 
 *The same data after replay:*
 
-| Event | Timestamp | Persistent ID (Cookie ID) | Person ID | Stitched ID (after live stitch) | Stitched ID (after replay) |
+| Event | Timestamp | Persistent ID (Cookie ID) | Person ID | Resulting ID (after live stitch) | Resulting ID (after replay) |
 |---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** |
 | 2 | 2023-05-12 12:02 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![ArrowUp](/help/assets/icons/ArrowUp.svg) |
@@ -172,7 +176,7 @@ Attribution works when the identifying custom variable is tied to a device. In t
 
 ### Step 3: Privacy Request
 
-When you receive a privacy request, the stitched id is deleted in all records for the user subject of the privacy request. 
+When you receive a privacy request, any identifier info set by stitching process to person ID value is updated in all records to persistent ID value, for the user subject of the privacy request.
 
 +++ Details
 
@@ -180,7 +184,7 @@ The following table represents the same data as above, but shows the effect that
 
 *The same data after a privacy request for Bob:*
 
-| Event | Timestamp | Persistent ID (Cookie ID) | Person ID | Stitched ID (after live stitch) | Stitched ID (after replay) | Person ID | Stitched ID (after privacy request) |
+| Event | Timestamp | Persistent ID (Cookie ID) | Person ID | Resulting ID (after live stitch) | Resulting ID (after replay) | Person ID | Resulting ID (after privacy request) |
 |---|---|---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** | - | `246` |
 | 2 | 2023-05-12 12:02 | `246` | Bob ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![Arrow Up](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |

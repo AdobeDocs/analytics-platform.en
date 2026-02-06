@@ -31,6 +31,12 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Stitching enable
 
 >[!ENDSHADEBOX]
 
+>[!IMPORTANT]
+>
+>This article describes how to validata stitching that is [requested through Adobe](/help/stitching/use-stitching.md) and is implemented using a stitched identity column added to a duplicate stitched dataset. The article is planned to be updated soon with details on how to validate stitching that is [enabled through the Connections UI](/help/stitching/use-stitching-ui.md).
+
+
+
 ## Data view prerequisites
 
 For the stitching validation measurement plan, you need to ensure you have all the required dimensions and metrics from your stitched dataset defined in a data view. You need to verify that both `stitchedID.id` and `stitchedId.namespace.code` fields are added as dimensions. While the stitched dataset is an exact copy of the original dataset, the stitching process adds these two new columns to the dataset:
