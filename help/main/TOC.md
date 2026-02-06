@@ -17,6 +17,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Release Notes {#releases}
   + [Latest release](../release-notes/latest.md)
   + [Pre-release notes](../release-notes/pre-release-notes.md)
+  + [2026 releases](../release-notes/2026.md)
   + [2025 releases](../release-notes/2025.md)
   + [2024 releases](../release-notes/2024.md)
   + [2023 releases](../release-notes/2023.md)
