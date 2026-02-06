@@ -13,7 +13,7 @@ In graph-based stitching, you specify an event dataset, the persistent ID (cooki
 If the person ID info cannot be retrieved for an event, the persistent ID is used instead for that *unstitched* event. As a result, in a [data view](/help/data-views/data-views.md) that is associated with a [connection](/help/connections/overview.md) that contains the dataset enabled for stitching, the person ID data view component contains either the person ID value or persistent ID value at the event level.
 
 
-![Graph-based-stitching](/help/stitching/assets/gbs.png)
+![Graph-based-stitching](/help/stitching/assets/gbs.svg)
 
 ## IdentityMap
 
