@@ -38,7 +38,7 @@ By default, thumbnails are shown in a [freeform table](/help/analysis-workspace/
 ![Content Analytics thumbnails for bar chart](/help/content-analytics/assets/aca-bar-thumbnail.png)
 
 
-Thumnbails are displayed as part of the legend on the vertical or horizontal axis. Thumbnails are also displayed when you hover over a bar in a [bar (stacked)](/help/analysis-workspace/visualizations/bar.md) and [horizontal bar (stacked)](/help/analysis-workspace/visualizations/horizontal-bar.md).
+Thumbnails are displayed as part of the legend on the vertical or horizontal axis. Thumbnails are also displayed when you hover over a bar in a [bar (stacked)](/help/analysis-workspace/visualizations/bar.md) and [horizontal bar (stacked)](/help/analysis-workspace/visualizations/horizontal-bar.md).
 
 
 ### Scatter
