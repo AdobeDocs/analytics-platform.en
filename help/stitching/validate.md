@@ -33,7 +33,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Stitching enable
 
 >[!IMPORTANT]
 >
->This article describes how to validata stitching that is [requested through Adobe](/help/stitching/use-stitching.md) and is implemented using a stitched identity column added to a duplicate stitched dataset. The article is planned to be updated soon with details on how to validate stitching that is [enabled through the Connections UI](/help/stitching/use-stitching-ui.md).
+>This article describes how to validate stitching that is [requested through Adobe](/help/stitching/use-stitching.md) and is implemented using a stitched identity column added to a duplicate stitched dataset. The article is planned to be updated soon with details on how to validate stitching that is [enabled through the Connections UI](/help/stitching/use-stitching-ui.md).
 
 
 
