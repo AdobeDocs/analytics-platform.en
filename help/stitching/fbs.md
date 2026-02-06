@@ -176,7 +176,7 @@ Attribution works when the identifying custom variable is tied to a device. In t
 
 ### Step 3: Privacy Request
 
-When you receive a privacy request, any identifier info set by stitching process to person ID value is updated in all records to persistent ID value, for the user subject of the privacy request.
+When you receive a privacy request, any identifier info set by the stitching process to person ID value is updated in all records to a persistent ID value for the user subject of the privacy request.
 
 +++ Details
 
