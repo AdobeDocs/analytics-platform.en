@@ -8,7 +8,9 @@ exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
 ---
 # Graph-based stitching
 
-In graph-based stitching, you specify an event dataset. And for that event dataset you specify the persistent ID (cookie) and the desired stitching namespace from the identity graph holding person ID values. Graph-based stitching adds a new column for the stitched ID to the event dataset. The persistent ID is used to query the identity graph from the Experience Platform Identity Service, using the stitching namespace specified, to update the stitched ID.
+In graph-based stitching, you specify an event dataset, the persistent ID (cookie) for that dataset and the desired person ID namespace from the identity graph. Graph-based stitching attempts to make the person ID info available for Customer Journey Analytics data analysis on any event. The persistent ID is used to query the identity graph from the Experience Platform Identity Service to obtain the person ID from the specified namespace.
+
+If the person ID info cannot be retrieved for an event, the persistent ID is used instead for that *unstitched* event. As a result, in a [data view](/help/data-views/data-views.md) that is associated with a [connection](/help/connections/overview.md) that contains the dataset enabled for stitching, the person ID data view component contains either the person ID value or persistent ID value at the event level.
 
 
 ![Graph-based-stitching](/help/stitching/assets/gbs.png)
@@ -114,7 +116,7 @@ Live stitching attempts to stitch each event, upon collection, to known informat
 
 +++ Details
 
-| | Time | Persistent ID<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | Stitched ID (after live stitch) |
+| | Time | Persistent ID<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | Resulting ID (after live stitch) |
 |--:|---|---|---|---|
 | 1 | 2023-05-12 11:00   | `246` |  `246` ![Branch1](/help/assets/icons/Branch1.svg) *undefined* | `246` |
 | 2 | 2023-05-12 14:00  | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
@@ -126,8 +128,8 @@ Live stitching attempts to stitch each event, upon collection, to known informat
 
 {style="table-layout:auto"}
 
-You can see how for each event the stitched id is resolved. Based on the time, the persistent id, and the lookup of the identity graph for the specified namespace (at that same time). 
-When the lookup resolves to more than one stitched id (like for event 7), the lexicographic first id returned by the identity graph is selected (`a.b@yahoo.co.uk` in the example).
+You can see how for each event the resulting ID is resolved. Based on the time, the persistent ID, and the lookup of the identity graph for the specified person ID namespace.
+When the lookup resolves to more than one resulting ID (like for event 7), the lexicographic first id returned by the identity graph is selected (`a.b@yahoo.co.uk` in the example).
 
 +++
 
@@ -139,7 +141,7 @@ At regular intervals (depending on the chosen lookback window), replay stitching
 
 With a replay stitching happening at 2023-05-13 16:30, with a 24-hour lookback window configuration, some events from the sample are re-stitched (indicated by ![Replay](/help/assets/icons/Replay.svg)).
 
-| | Time | Persistent ID<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | Stitched ID<br/>(after live stitch) | Stitched ID<br/>(after replay 24 hours) |
+| | Time | Persistent ID<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | Resulting ID<br/>(after live stitch) | Resulting ID<br/>(after replay 24 hours) |
 |---|---|---|---|---|---|
 | 2 | 2023-05-12 14:00  | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` |  `bob.a@gmail.com` | `bob.a@gmail.com` |
 | 3 | 2023-05-12 15:00  | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` |  `bob.a@gmail.com` | `bob.a@gmail.com` |
@@ -154,7 +156,7 @@ With a replay stitching happening at 2023-05-13 16:30, with a 24-hour lookback w
 With replay stitching happening at 2023-05-13 16:30, with a 7-day lookback window configuration, all events from the sample are re-stitched.
 
 
-| | Time | Persistent ID<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | Stitched ID<br/>(after live stitch) | Stitched ID<br/>(after replay 7 days) |
+| | Time | Persistent ID<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | Resulting ID<br/>(after live stitch) | Resulting ID<br/>(after replay 7 days) |
 |---|---|---|---|---|---|
 | ![Replay](/help/assets/icons/Replay.svg) 1 | 2023-05-12 11:00   | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) *undefined* | `246` | `a.b@yahoo.co.uk` |
 |  ![Replay](/help/assets/icons/Replay.svg) 2 | 2023-05-12 14:00  | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` |  `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
@@ -170,13 +172,13 @@ With replay stitching happening at 2023-05-13 16:30, with a 7-day lookback windo
 
 ### Step 3: Privacy Request
 
-When you receive a privacy request, the stitched id is deleted in all records for the user subject of the privacy request.
+When you receive a privacy request, the resulting ID is deleted in all records for the user subject of the privacy request.
 
 +++ Details
 
 The following table represents the same data as above, but shows the effect that a privacy request (for example at 2023-05-13 18:00) has for the sample events.
 
-| | Time | Persistent ID<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | Stitched ID (after privacy request) |
+| | Time | Persistent ID<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | Resulting ID (after privacy request) |
 |--:|---|---|---|---|
 | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 1 | 2023-05-12 11:00   | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
 | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 2 | 2023-05-12 14:00  | `246` | `246`![Branch1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
