@@ -106,7 +106,7 @@ Designates the name of containers for the data view. Container names are frequen
 
 ### AI Settings
 
-Select **[!UICONTROL Enable for Data Insights Agent]** to enable the data view for the [Data Insights Agent](/help/d). The Data Insights Agent is a generative AI conversation agent that is accessible from the AI Assistant in Customer Journey Analytics. It helps you quickly analyze your data with text prompts. The agent builds relevant visualizations in Analysis Workspace using components from your data view and using your actual data.
+Select **[!UICONTROL Enable for Data Insights Agent]** to enable the data view for the [Data Insights Agent](/help/data-analysis-ai.md). The Data Insights Agent is a generative AI conversation agent that is accessible from the AI Assistant in Customer Journey Analytics. It helps you quickly analyze your data with text prompts. The agent builds relevant visualizations in Analysis Workspace using components from your data view and using your actual data.
    
 
 ### Calendar
