@@ -55,7 +55,7 @@ Data views let you spontaneously change schema element settings, without having 
 
 * You can rename your containers in a data view and have those renamed containers surface in any Workspace project that is based on that data view.
 
-* You can enable the Data Insights Agent for a data view. 
+* You can enable or disable the Data Insights Agent for a data view. 
 
 ## Data views prerequisites {#prerequisites}
 
@@ -80,9 +80,10 @@ Some data view settings can be overridden in Analysis Workspace at the project l
 
 ## Delete data views {#delete}
 
-If you delete a data view in [!UICONTROL Customer Journey Analytics], an error message indicates that any [!UICONTROL Workspace] projects that depend on this deleted data view no longer works.
+If you [delete a data view](/help/data-views/manage-dataviews.md#delete-data-views) in [!UICONTROL Customer Journey Analytics], an error message indicates that any [!UICONTROL Workspace] projects that depend on this deleted data view no longer works.
 
 ## Next steps
 
 * [Create data views](/help/data-views/create-dataview.md)
+* [Manage data views](/help/data-views/manage-dataviews.md)
 * [Data views use cases](/help/use-cases/data-views/data-views-usecases.md)
