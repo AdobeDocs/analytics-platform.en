@@ -104,6 +104,11 @@ Designates the name of containers for the data view. Container names are frequen
 
 {style="table-layout:auto"}
 
+### AI Settings
+
+Select **[!UICONTROL Enable for Data Insights Agent]** to enable the data view for the [Data Insights Agent](/help/data-analysis-ai.md). The Data Insights Agent is a generative AI conversation agent that is accessible from the AI Assistant in Customer Journey Analytics. It helps you quickly analyze your data with text prompts. The agent builds relevant visualizations in Analysis Workspace using components from your data view and using your actual data.
+   
+
 ### Calendar
 
 Indicates the calendar format that you want the data view to follow. You can have multiple data views based on the same [Connection](/help/connections/create-connection.md) and give them different calendar types or time zones. These data views can allow teams that use different calendar types to accommodate their respective needs with the same underlying data.
