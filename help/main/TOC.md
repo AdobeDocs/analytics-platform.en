@@ -95,7 +95,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Compare with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)
-    + [Map Adobe Analytics data](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
+    + [Cross-IMS data mapping](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
     + [Feature support](../getting-started/aa-vs-cja/cja-aa.md)
     + [Compare terminology](../getting-started/aa-vs-cja/terminology.md)
     + [Compare data processing](../getting-started/aa-vs-cja/data-processing-comparisons.md)
