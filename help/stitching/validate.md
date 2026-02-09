@@ -124,3 +124,29 @@ The key takeaway from this article is that this type of stitching validation and
 
 These metrics together give stakeholders a complete picture of how Customer Journey Analytics stitching affects authentication success rates and overall person identification performance.
 
+
+
+## Connection recommendations
+
+To validate stitching that you enabled in the Connections UI, select a short and representative period for Dataset backfill. For example, one week.
+
+In the example below, you want to stitch the event dataset Luma - Store Interaction. You have setup a test connection in which you configure a Luma - Store interaction event dataset. For that dataset, you define the ECID namespace as the persistent ID and the Email namespace as the person ID. To validate this stitching, you define a backfill of data for a small time window (January 25th, 2026 - January 31, 2026). You use that small window to validate whether stitching does work as intendend.
+
+## Data view prerequisites
+
+For the stitching validation, you need to ensure you have all the required dimensions and metrics from your stitched dataset defined in a data view. To do this, create a data view based on the connection you defined earlier. In the Components step of 
+
+* Add **[!UICONTROL Identity Namespace]** from **[!UICONTROL Metrics & Dimensions]** as a dimension to the **[!UICONTROL Dimensions]** list. 
+
+  ![Identity Namespace](assets/identity-namespace.png)
+
+
+* Add the email **[!UICONTROL Identifier]** you have defined for you events from **[!UICONTROL Schema fields]**, both as a dimension to the **[!UICONTROL Dimensions]** list and as a metric to the **[!UICONTROL Metrics]** list. Modify the name for the metric to `Has email set.`
+
+  ![Email identifier](assets/email-identifier.png)
+
+
+Ensure you save the data view.
+
+## Workspace
+
