@@ -78,7 +78,7 @@ The following columns or icons are available in the table.
 | **[!UICONTROL Integrations]** | Shows any Experience Platform applications that are enabled with the connection.  |
 | **[!UICONTROL Use in CJA]** | Shows whether the connection has been enabled for use with Customer Journey Analytics. |
 
-To configure which columns to display in the table, select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). In the Customize table dialog, select the columns to show.
+To configure which columns to display in the table, select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). In the **[!UICONTROL Customize table]** dialog, select the columns to show. Then select **[!UICONTROL Apply]**.
 
 ### Edit a connection
 

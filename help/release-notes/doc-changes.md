@@ -14,6 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 |---|---|
 | **February 2026** | |
+| Manage data views | Added detailed information on how to [manage data views](/help/data-views/manage-dataviews.md). |
 | Stitching | Updated the stitching documentation to reflect the changes that are the result of the [stitching in Connections UI](/help/stitching/use-stitching-ui.md) functionality. |
 | **January 2026** | |
 | Architect a schema | Added substantial information and context to [Architect your schema for use with Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md). |
