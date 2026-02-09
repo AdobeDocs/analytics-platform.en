@@ -76,21 +76,10 @@ The following parameters govern access to Data Insights Agent in Customer Journe
   >* You can enable a maximum of 50 data views per IMS organization. If you enable more than 50 data views across all product profiles for a given organization, the Data Insights Agent will use the 50 most-used data views. 
   >* The Data Insights Agent can reference the included data views sometime during the same day that you enable them. 
 
-  To enable data views for Data Insights Agent:
-   
-   1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Data views]**.
+  To enable data views for Data Insights Agent, see the [AI Settings for a data view](/help/data-views/create-dataview.md#ai-settings).
 
-   1. Select one or more data views that you want to enable for Data Insights Agent, then select **[!UICONTROL Enable for Data Insights Agent]**.
+  You can use the [info on the Data Insights Agent column in Data views](/help/data-views/manage-dataviews.md#manage-data-views) to view the number of data views that are enabled for Data Insights Agent in your IMS organization.
 
-      ![Enable data views for Data Insights Agent](assets/data-view-enable-dia.png)   
-
-  To view the number of data views that are enabled for Data Insights Agent in your IMS organization:
-
-   1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Data views]**.
-
-   1. Select the info icon at the top of the **[!UICONTROL Data Insights Agent]** column.
-
-      ![Data Insights Agent info icon](assets/data-insights-agent-tooltip.png)
 
 ## Access Data Insights Agent in the AI Assistant
 
