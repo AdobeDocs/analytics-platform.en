@@ -4,8 +4,8 @@ description: Learn how to manage data views.
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
+exl-id: c5cf15ab-3eb1-4e6b-93a3-3d89694ca0ea
 ---
-
 # Manage data views
 
 
@@ -146,4 +146,3 @@ Alternatively, you can:
 
 1. Select one or more data view rows that are either disabled or enabled for the Data Insights Agent.
 1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Enable for Data Insights Agent]** or ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Disable for Data Insights Agent]** from the blue action bar.
-
