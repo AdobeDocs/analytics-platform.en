@@ -8,7 +8,7 @@ role: User, Admin
 ---
 # Manage cloud export locations and accounts
 
-You can view, edit, and delete cloud export locations.
+You can view, edit, and delete cloud export locations and accounts.
 
 For information about how to create a new location, see [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).
 
@@ -24,7 +24,7 @@ To find information you need, you can either filter on the list of locations or 
 
 1. Select the **Filter** icon.
 
-   <!-- add screenshot -->
+   ![Filter icon on locations page](assets/locations-filter-icon.png)
 
    You can filter by the following criteria:
 
@@ -42,6 +42,8 @@ To find information you need, you can either filter on the list of locations or 
 
 1. Select the [!UICONTROL **Locations**] tab.
 
+   ![Locations page](assets/locations-manager.png)
+
 1. (Conditional) If you are a system administrator, you can enable the [!UICONTROL **View locations for all users**] option to view locations created by all users in your organization.
 
 1. In the search field, begin typing any information associated with the location you're searching for. You can search for data from any column available in the table.
@@ -56,13 +58,13 @@ To edit a location:
 
 1. Select the [!UICONTROL **Locations**] tab.
 
+   ![Exports window showing Locations tab and list of locations.](assets/locations-manager.png)
+
 1. (Conditional) If you are a system administrator, you can enable the [!UICONTROL **View locations for all users**] option to view locations created by all users in your organization.
 
 1. Select the location you want to edit.
 
-   ![Exports window showing Locations tab and list of locations.](assets/locations-edit.png)
-
-1. Select [!UICONTROL **Edit**].
+1. Select [!UICONTROL **Edit**] at the bottom of the screen.
 
 1. Make any desired changes, then select [!UICONTROL **Save**].
 
@@ -76,13 +78,13 @@ To delete a location:
 
 1. Select the [!UICONTROL **Locations**] tab.
 
+   ![Exports window showing Locations tab and list of locations.](assets/locations-manager.png)
+
 1. (Conditional) If you are a system administrator, you can enable the [!UICONTROL **View locations for all users**] option to view locations created by all users in your organization.
 
 1. Select one or more locations that you want to delete.
 
-   ![Exports window showing Locations tab and list of locations](assets/locations-edit.png)
-
-1. Select [!UICONTROL **Delete**].
+1. Select [!UICONTROL **Delete**] at the bottom of the screen.
 
    The Delete Location dialog box displays.
 
@@ -104,9 +106,9 @@ To edit an account:
 
    ![Exports window showing Location accounts tab](assets/account-add.png)
 
-1. (Conditional) If you are a system administrator, you can enable the [!UICONTROL **View accounts for all users**] option to view locations created by all users in your organization.
+1. (Conditional) If you are a system administrator, you can enable the [!UICONTROL **View accounts for all users**] option to view accounts created by all users in your organization.
 
-1. Select [!UICONTROL **View details**] on the account that you want to edit.
+1. Select [!UICONTROL **Edit details**] on the account that you want to edit.
 
 1. Make any desired changes, then select [!UICONTROL **Save**].
 
@@ -122,9 +124,9 @@ To view keys associated with an export account:
 
    ![Exports window showing Location accounts tab](assets/account-add.png)
 
-1. (Conditional) If you are a system administrator, you can enable the [!UICONTROL **View accounts for all users**] option to view locations created by all users in your organization.
+1. (Conditional) If you are a system administrator, you can enable the [!UICONTROL **View accounts for all users**] option to view accounts created by all users in your organization.
 
-1. Select the 3-dot icon on the account that you want to edit, then select [!UICONTROL **Account keys**]. 
+1. Select the 3-dot icon on the account that you want to edit, then select [!UICONTROL **Show keys**]. 
 
 ## Delete accounts
 
@@ -134,9 +136,9 @@ To view keys associated with an export account:
 
    ![Exports window showing Location accounts tab](assets/account-add.png)
 
-1. (Conditional) If you are a system administrator, you can enable the [!UICONTROL **View accounts for all users**] option to view locations created by all users in your organization.
+1. (Conditional) If you are a system administrator, you can enable the [!UICONTROL **View accounts for all users**] option to view accounts created by all users in your organization.
 
-1. Select the 3-dot icon on the account that you want to edit, then select [!UICONTROL **Delete account**]. 
+1. Select the 3-dot icon on the account that you want to delete, then select [!UICONTROL **Delete account**]. 
 
 1. Select [!UICONTROL **Delete**] again on the confirmation dialog.
 
@@ -150,35 +152,35 @@ System administrators can restrict users from creating accounts and locations, o
 
 By default, all users in the organization can create accounts and edit accounts they create in your Customer Journey Analytics environment, as described in [configure cloud export accounts](/help/components/exports/cloud-export-accounts.md).
 
-You can restrict users from creating accounts. When you do, users can still use any accounts they have already created, but they can no longer edit them. You can delete accounts that users have created, as described in [Delete an account](#delete-an-account).
+You can restrict users from creating accounts. When you do, users can still use any accounts they have already created, but they can no longer edit them. You can delete accounts that users have created, as described in [Delete an account](#delete-accounts).
 
 To restrict all users from creating and editing accounts:
 
 1. In Customer Journey Analytics, select **[!UICONTROL Components]** > **[!UICONTROL Exports]**, then select the [!UICONTROL **Admin settings**] tab.
 
-1. In the [!UICONTROL **Locations accounts**] section, deselect the option, [!UICONTROL **Allow users to create and manage location accounts**].
+1. In the [!UICONTROL **Location accounts**] section, deselect the option, [!UICONTROL **Allow users to create and manage location accounts**].
 
 1. Select [!UICONTROL **Save**].
 
-1. (Optional) Delete any accounts that users have created that you no longer want them to use, as described in [Delete an account](#delete-an-account).
+1. (Optional) Delete any accounts that users have created that you no longer want them to use, as described in [Delete an account](#delete-accounts).
 
 ### Configure whether users can create and edit locations
 
 By default, all users in the organization can create locations and edit locations they create in your Customer Journey Analytics environment, as described in [configure cloud export locations](/help/components/exports/cloud-export-locations.md).
 
-You can restrict users from creating locations. When you do, users can still use any locations they have already created, but they can no longer edit them. You can delete locations that users have created, as described in [Delete locations](#delete-a-location).
+You can restrict users from creating locations. When you do, users can still use any locations they have already created, but they can no longer edit them. You can delete locations that users have created, as described in [Delete locations](#delete-locations).
 
 To restrict all users from creating and editing locations:
 
-1. In Customer Journey Analytics, select **[!UICONTROL Components]** > **[!UICONTROL Eports]**, then select the [!UICONTROL **Admin settings**] tab.
+1. In Customer Journey Analytics, select **[!UICONTROL Components]** > **[!UICONTROL Exports]**, then select the [!UICONTROL **Admin settings**] tab.
 
 1. In the [!UICONTROL **Locations**] section, deselect the option, [!UICONTROL **Allow users to create and manage locations**].
 
 1. Select [!UICONTROL **Save**].
 
-1. (Optional) Delete any locations that users have created that you no longer want them to use, as described in [Delete a location](#delete-a-location).
+1. (Optional) Delete any locations that users have created that you no longer want them to use, as described in [Delete a location](#delete-locations).
 
-### Limit which accounts types users can create and use
+### Limit which account types users can create and use
 
 You can limit the account types users see in the following circumstances:
 
@@ -201,7 +203,7 @@ To delete accounts:
 
 1. Locate the accounts of the account type you plan to limit, which are being used for scheduled exports. 
 
-1. Delete the accounts, as described in [Delete an account](#delete-an-account).
+1. Delete the accounts, as described in [Delete an account](#delete-accounts).
 
 1. Continue with the following section, [Limit the account types that are available to users](#limit-the-account-types-that-are-available-to-users).
 
