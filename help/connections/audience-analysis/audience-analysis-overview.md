@@ -1,5 +1,5 @@
 ---
-title: Audience analysis overview
+title: Audience Analysis Overview
 description: Learn about analyzing audiences from RTCDP in Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Audiences

@@ -1,6 +1,6 @@
 ---
-title: Create or edit a connection
-description: Describes how to create or edit a connection to an Experience Platform dataset in Customer Journey Analytics.
+title: Create Or Edit A Connection
+description: Learn how to create or edit a connection to an Experience Platform dataset in Customer Journey Analytics.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
