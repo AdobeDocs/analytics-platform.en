@@ -22,16 +22,17 @@ To find information you need, you can either filter the list of exports or searc
 
 1. Select the [!UICONTROL **Exports**] tab.
 
-1. Select the **Filter** icon.
+   ![Manage exports page](assets/exports-manage.png)
 
-   <!--add screenshot -->
+1. Select the **Filter** icon ![Filter icon](/help/assets/icons/Filter.svg).
 
    You can filter by the following criteria:
 
    |Filter | Description |
    |---------|----------|
    | [!UICONTROL **Account type**] | The account type that the export is associated with. The following account types are available: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
-   | [!UICONTROL **Status**] | The status of the export. The following statuses are available: <ul><li>[!UICONTROL **Active**]: Indicates that a scheduled export has not yet expired, or that a one-time export has not yet completed. </li><li>[!UICONTROL **Completed**]: Indicates that an export has successfully exported. For scheduled exports, this indicates that the schedule has expired.</li><li>[!UICONTROL **Failed**]<p>The following situations can result in a failed export. Hover over the [!UICONTROL **Failed**] status to see details about the failure. <ul><li>Scheduled export expiration</li><li>Row limit reached for scheduled export </li></ul> </p></li></ul> |
+   | [!UICONTROL **Status**] | The status of the export. The following statuses are available: <ul><li>[!UICONTROL **Active**]: Indicates that a scheduled export has not yet expired, or that a one-time export has not yet completed. </li><li>[!UICONTROL **Completed**]: Indicates that an export has successfully exported. For scheduled exports, this indicates that the schedule has expired.</li><li>[!UICONTROL **Failed**]<p>The following situations can result in a failed export. Hover over the [!UICONTROL **Failed**] status to see details about the failure. <ul><li>Scheduled export expiration</li><li>Row limit reached for scheduled export </li></ul><li>[!UICONTROL **Expired**]: Indicates that the export has expired.</li></ul> |
+   | [!UICONTROL **Created by**] | The user who created the export.<p>This option is available only to administrators when the **[!UICONTROL View exports for all users]** option is enabled. |
    | [!UICONTROL **Frequency**] | How often the export occurs. The following frequencies are available: <ul><li>[!UICONTROL **One time**]</li><li>[!UICONTROL **Daily**]</li><li>[!UICONTROL **Weekly**]</li><li>[!UICONTROL **Monthly**]</li><li>[!UICONTROL **Yearly**]</li></ul>|
 
    {style="table-layout:auto"}
@@ -41,6 +42,8 @@ To find information you need, you can either filter the list of exports or searc
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
 1. Select the [!UICONTROL **Exports**] tab.
+
+   ![Manage exports page](assets/exports-manage.png)
 
 1. In the search field, begin typing any information associated with the export you're searching for. You can search for data from any column available in the table. 
 
@@ -58,7 +61,7 @@ You can edit an export's properties, format, scheduling, and location informatio
 
    The [!UICONTROL **Export full table**] dialog displays.
 
-1. Update any of the available options. For information about each option, see [Export full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md).
+1. Update any of the available options. For information about each option, see [Export full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables) in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md).
 
 ## Renew an export
 
@@ -72,7 +75,7 @@ You can renew one or more exports before or after they expire. The exports are r
 
    The [!UICONTROL **Export full table**] dialog displays. <!--check process from here. -->
 
-1. Update any of the available options. For information about each option, see [Export full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md).
+1. Update any of the available options. For information about each option, see [Export full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables) in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md).
 
 ## Duplicate an export
 
@@ -104,7 +107,7 @@ You can manually initiate an export, either for a scheduled export or a one-time
 
 ## Tag an export
 
-When you apply tags to an export, you can view those tags in the [!UICONTROL Tags] column on the [!UICONTROL Exports] page. See [Configure columns](#configure-columns) for more information.
+When you apply tags to an export, you can view those tags in the [!UICONTROL Tags] column on the [!UICONTROL Exports] page. See [Configure columns](#configure-columns-on-the-exports-page) for more information.
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
@@ -114,13 +117,13 @@ When you apply tags to an export, you can view those tags in the [!UICONTROL Tag
 
 1. In the [!UICONTROL **Tag export**] dialog, type the name of a tag to create a new tag, or choose an existing tag from the drop-down menu.
 
-   Any common tags between the selected exports are shown in the tag dialog. <!-- what happens if one export has a tag and another doesn't? Is the tag removed if you don't select it? I'm guessing not, but maybe check -->
+   Any common tags between the selected exports are shown in the tag dialog.
 
 1. Select [!UICONTROL **Apply tags**].
 
 ## Cancel an export
 
-You can cancel one or more exports that are currently running. <!--anything else to say about this?-->
+You can cancel one or more exports that are currently running. 
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
@@ -162,11 +165,11 @@ Select a column header to sort the exports by that column. By default, exports a
    | Created | The date and time the export was created. <!-- true? --> |
    | Location | The location on the account where the data was exported. |
    | Account | The account where the data was exported. |
-   | Frequency | The frequency in which the export is sent. Available options are [!UICONTROL One time], [!UICONTROL Daily], [!UICONTROL Weekly], [!UICONTROL Monthly by day of the week], [!UICONTROL Monthly by day of the month], [!UICONTROL Yearly by day of the month], and [!UICONTROL Yearly by specific date]. |
+   | Frequency | The frequency with which the export is sent. Available options are [!UICONTROL One time], [!UICONTROL Daily], [!UICONTROL Weekly], [!UICONTROL Monthly by day of the week], [!UICONTROL Monthly by day of the month], [!UICONTROL Yearly by day of the month], and [!UICONTROL Yearly by specific date]. |
    | Time sent | The time the export was sent. |
    | Last sent | The last time the export was sent. |
    | Last modified | The last time the export was modified. Items on the Exports page are sorted by this column by default. |
-   | Account type | The type of cloud account where the data was exported. Available account types are [!UICONTROL Amazon S3 Role ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake], and [!UICONTROL Adobe Experience Platform].  |
+   | Account type | The type of cloud account where the data was exported. Available account types are [!UICONTROL Amazon S3 Role ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake], and [!UICONTROL AEP Data Landing Zone].  |
 
    {style="table-layout:auto"}
 
