@@ -65,7 +65,7 @@ You can edit an export's properties, format, scheduling, and location informatio
 
 ## Renew an export
 
-You can renew one or more exports before or after they expire. The exports are renewed for 1 year from the date you renew them.
+You can renew one or more scheduled exports before or after they expire. The exports are renewed for 1 year from the date you renew them.
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
