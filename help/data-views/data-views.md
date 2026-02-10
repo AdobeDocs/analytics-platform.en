@@ -87,4 +87,3 @@ If you [delete a data view](/help/data-views/manage-dataviews.md#delete-data-vie
 * [Create data views](/help/data-views/create-dataview.md)
 * [Manage data views](/help/data-views/manage-dataviews.md)
 * [Data views use cases](/help/use-cases/data-views/data-views-usecases.md)
-
