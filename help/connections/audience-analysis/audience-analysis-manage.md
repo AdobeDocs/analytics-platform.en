@@ -1,5 +1,5 @@
 ---
-title: Manage audience analysis configurations
+title: Manage Audience Analysis Configurations
 description: Learn how to manage audience analysis configurations
 solution: Customer Journey Analytics
 feature: Audiences

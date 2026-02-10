@@ -1,6 +1,6 @@
 ---
-title: Data views overview
-description: A data view specifies how you want to interpret elements of the data in the Customer Journey Analytics connection, such as metrics, dimensions, sessions, etc.
+title: Data Views Overview
+description: Learn how a data view specifies how you want to interpret elements of the data in the Customer Journey Analytics connection, such as metrics, dimensions, sessions, etc.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views

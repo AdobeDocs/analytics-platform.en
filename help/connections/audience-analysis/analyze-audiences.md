@@ -1,5 +1,5 @@
 ---
-title: Analyze Experience Platform audiences in Customer Journey Analytics
+title: Analyze Experience Platform Audiences In Customer Journey Analytics
 description: Learn how to analyze Experience Platform audiences in Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Audiences
