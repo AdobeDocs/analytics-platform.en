@@ -38,26 +38,9 @@ Once you have [created or edited one or more connections](/help/connections/crea
 
 The **[!UICONTROL List]** interface is the default interface for Connections. If not selected, select the **[!UICONTROL List]** tab to access the interface.
 
+The **[!UICONTROL List]** interface shows a table of all connections available. 
+
 ![list view](assets/list-view.png)
-
-The [!UICONTROL List] interface shows a table of all connections available. 
-
-### Search for a connection
-
-You can quickly search for a connection using the Search ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) box.
-
-### Apply a filter to the list of connections
-
-To apply a filter to the list of connections, select the filter icon, then select from the following filter options:
-
-| Filter option | Description |
-|---------|----------|
-| **[!UICONTROL Datasets]** | Only connections that are associated with the datasets you select are displayed. |
-| **[!UICONTROL Owner]** | Only connections owned by the people you select are displayed. |
-| **[!UICONTROL Sandbox]** | Only connections available in the sandboxes you select are displayed. |
-| **[!UICONTROL Use in CJA]** | Select **[!UICONTROL On]** to show only connections that are enabled for use with Customer Journey Analytics. Select **[!UICONTROL Off]** to show only connections that are not yet enabled for use with Customer Journey Analytics. |
-
-### Available columns
 
 The following columns or icons are available in the table.
 
@@ -79,6 +62,25 @@ The following columns or icons are available in the table.
 | **[!UICONTROL Use in CJA]** | Shows whether the connection has been enabled for use with Customer Journey Analytics. |
 
 To configure which columns to display in the table, select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). In the **[!UICONTROL Customize table]** dialog, select the columns to show. Then select **[!UICONTROL Apply]**.
+
+### Search connections
+
+You can quickly search connections using the ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) box.
+
+### Filter connections
+
+To apply a filter to the list of connections, select ![Filter](/help/assets/icons/Filter.svg). Then select from the following filter options:
+
+| Filter option | Description |
+|---------|----------|
+| **[!UICONTROL Datasets]** | Only connections that are associated with the datasets you select are displayed. |
+| **[!UICONTROL Owner]** | Only connections owned by the people you select are displayed. |
+| **[!UICONTROL Sandbox]** | Only connections available in the sandboxes you select are displayed. |
+| **[!UICONTROL Connection Type]** | Filter on **[!UICONTROL person]**-based or **[!UICONTROL account]**-based [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} connections. |
+| **[!UICONTROL Use in CJA]** | Select **[!UICONTROL On]** to show only connections that are enabled for use with Customer Journey Analytics. Select **[!UICONTROL Off]** to show only connections that are not yet enabled for use with Customer Journey Analytics. |
+| **[!UICONTROL Integrations]** | Only connections with selected integrations are displayed. |
+
+Select ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Hide filters]** to hide the filter pane.
 
 ### Edit a connection
 
