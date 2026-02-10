@@ -23,7 +23,7 @@ The following columns and icons are available in the table:
 | --- | --- |
 | **[!UICONTROL Name]** | The name of the data view. |
 | ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | To view information about the data view, select ![InfoOutline](/help/assets/icons/InfoOutline.svg) next to the data view name.<br/>A pop-up window displays details about the data view. |
-| ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Select ![More](/help/assets/icons/More.svg) to open a context menu. You can select:<br/>![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** to [edit](#edit-data-views) a data view.<br/>![Copy](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]** to [copy a data view](#copy-data-views).<br/>![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** to [delete](#delete-data-views) a data view.<br/>![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** to [export the details of the data view to a CSV file](#export-data-views-to-csv).<br/>![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Create project]** to [create a new Workspace project](#create-project-from-data-views) for the data view. |
+| ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Select ![More](/help/assets/icons/More.svg) to open a context menu. You can select:<br/>![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** to [edit](#edit-data-views) a data view.<br/>![Copy](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]** to [copy a data view](#copy-data-views).<br/>![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** to [delete](#delete-data-views) a data view.<br/>![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** to [export the details of the data view to a CSV file](#export-data-views-to-csv).<br/>![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Create project]** to [create a new Workspace project](#create-project-from-data-views) for the data view.<br/>![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Enable for Data Insights Agent]** to enable a data view for the Data Insights Agent.<br/>![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Disable for Data Insights Agent]** to disable a data view for the Data Insights Agent. |
 | **[!UICONTROL Connection]** | The name of the connection that is associated with the data view. |
 | **[!UICONTROL Sandbox]** | The name of the sandbox that is associated with the data view. |
 | **[!UICONTROL Owner]** | The owner of the data view. |
@@ -38,7 +38,7 @@ To configure which columns to display in the table, select ![ColumnSetting](/hel
 
 ## Search data views
 
-You can quickly search for a data view using the Search ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) box.
+You can quickly search for a data view using the ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) box.
 
 ## Filter data views
 
@@ -52,6 +52,8 @@ To apply a filter to the list of data views, select the ![Filter](/help/assets/i
 | **[!UICONTROL Integrations]** | Only data views with selected integrations are displayed. |
 | **[!UICONTROL Use in CJA]** | Select **[!UICONTROL On]** to show only data views that are enabled for use with Customer Journey Analytics. Select **[!UICONTROL Off]** to show only data views that are not yet enabled for use with Customer Journey Analytics. |
 
+
+Select ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Hide filters]** to hide the filter pane.
 
 ## Create a data view
 
