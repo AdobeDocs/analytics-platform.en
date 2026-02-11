@@ -1,15 +1,16 @@
 ---
-title: Map Analytics data from multiple IMS organizations
+title: Cross-IMS Data Mappaing
 description: Learn how you can request to map data from report suites from multiple source IMS organizations to a destination IMS organization.
 role: Admin
 solution: Customer Journey Analytics
 feature: Adobe Analytics Integration,Administration
 hide: yes
 hidefromtoc: yes
+exl-id: c109742b-c1c5-45b3-971f-f8dcf814ec37
 ---
-# Map Analytics data from multiple IMS organizations
+# Cross-IMS data mapping
 
-The Analytics source connector can only ingest data from Adobe Analytics report suites that belong to the same organization for which you are entitled to use Customer Journey Analytics. The feature to map Analytics data from multiple IMS organizations provides a solution for this limitation. The process to enable this feature is outlined in this article.
+The Analytics source connector can only ingest data from Adobe Analytics report suites that belong to the same organization for which you are entitled to use Customer Journey Analytics. The *Cross-IMS data mapping* feature is a feature to map Analytics data from multiple IMS organizations and provides a solution for this limitation. The process to enable this feature is outlined in this article.
 
 
 ## Scenario
@@ -22,7 +23,7 @@ You are provisioned with multiple IMS organizations and do have Analytics data i
 
 Out of the box, you are not able to report on the combination of data from multiple report suites across multiple IMS organizations in Customer Journey Analytics. The reason for this limitation is that data ingestion from Adobe Analytics into Experience Platform through the Analytics source connector supports only the ingestion of data owned by a single IMS organization. The IMS organization for which you are provisioned and which you use to log in to Adobe Analytics, Experience Platform and Customer Journey Analytics.
 
-With the *map Analytics data from multiple IMS organizations* feature, you can request Adobe to map data. The feature uses the Analytics source connector to map data from report suites that reside across multiple *source* IMS organizations to datasets that are part of one *destination* IMS organization. For example:
+With the *Cross-IMS data mapping* feature, you can request Adobe to map data. The feature uses the Analytics source connector to map data from report suites that reside across multiple *source* IMS organizations to report suites (and ultimate datasets) that are part of one *destination* IMS organization. For example:
 
 | Illustration | Explanation  |
 |---|---|
@@ -32,7 +33,7 @@ With the *map Analytics data from multiple IMS organizations* feature, you can r
 
 ## How to use
 
-To configure and enable the *map Analytics data from multiple IMS organizations* feature, you have to request the mapping through your Adobe account manager. To do so:
+To configure and enable the *Cross-IMS data mapping* feature, you have to request the mapping through your Adobe account manager. To do so:
 
 1. As destination IMS organization administrator, request approval emails from all source IMS organization administrator for which you want to map report suites. You can use the following text as a template for the email to request approval from the source IMS organization administrators.
    
@@ -49,7 +50,7 @@ Once approved, the requested mapping is created and you are notified. The source
 
 ## Limitations
 
-The following limitations do apply for the *map Analytics data from multiple IMS organizations* feature:
+The following limitations do apply for the *Cross-IMS data mapping* feature:
 
 * You can connect a report suite only once across organizations.
 * You have to delete all connections for an IMS organization that is defined as the destination IMS organization in a  mapping before you can request to delete the mapping.
@@ -58,18 +59,18 @@ The following limitations do apply for the *map Analytics data from multiple IMS
 
 ## Considerations
 
-You might want to consider the following topics before you request the *map Analytics data from multiple IMS organizations* feature:
+You might want to consider the following topics before you request the *Cross-IMS data mapping* feature:
 
 ### Profiles
 
-Once the *map Analytics data from multiple IMS organizations* feature is approved, you can add data to Experience Platform for one or more of the report suites in the destination IMS organization. You do this through the configuration of the [Analytics source connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). Target datasets are then created in Experience Platform. As part of this configuration and process, you have the option to send profile data from one or more report suites to the Profile service.
+Once the *Cross-IMS data mapping* feature is approved, you can add data to Experience Platform for one or more of the report suites in the destination IMS organization. You do this through the configuration of the [Analytics source connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). Target datasets are then created in Experience Platform. As part of this configuration and process, you have the option to send profile data from one or more report suites to the Profile service.
    
 Estimate the total number of profiles that are the result from the configuration and process, as outlined above. Ensure that total number is within the number of profiles you are contractually entitled to for the destination organization. Apply [filtering rules and conditions](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} to include or exclude data selectively from ingestion to the Profile service. Or disable the option to send profile data to the Profile service for relevant report suites.
 
 
 ### Stitching
 
-Once the *map Analytics data from multiple IMS organizations* feature is approved, you can add data to Experience Platform for one or more of the report suites in the destination IMS organization. You do this through the configuration of the [Analytics source connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). Target datasets for the report suites you configured in the Analytics source connector are then created in Experience Platform. As part of this configuration and process, you have the option to send profile data from one or more report suites to the Profile service.
+Once the *Cross-IMS data mapping* feature is approved, you can add data to Experience Platform for one or more of the report suites in the destination IMS organization. You do this through the configuration of the [Analytics source connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). Target datasets for the report suites you configured in the Analytics source connector are then created in Experience Platform. As part of this configuration and process, you have the option to send profile data from one or more report suites to the Profile service.
 
 You can use both [field-based](/help/stitching/fbs.md) and [graph-based](/help/stitching/gbs.md) stitching on the target datasets. When you use graph-based stitching on one or more of these target datasets, ensure you stay within your contractual entitlements for the number of profiles, as outlined in the [Profiles](#profiles) section. 
 
@@ -82,4 +83,4 @@ A user with sufficient permissions to configure the Analytics source connector i
 
 ### Report on data
 
-The *map Analytics data from multiple IMS organizations* feature is only a first step to ensure you can use the data as part of a Customer Journey Analytics [connection](/help/connections/overview.md), one or more [data views](/help/data-views/data-views.md) and [workspace projects](/help/analysis-workspace/home.md). You carefully need to inspect the data you have now available in one IMS organization. And consider features like data prep, derived fields, additional lookup tables, and more before you are able to properly report on this data.
+The *Cross-IMS data mapping* feature is only a first step to ensure you can use the data as part of a Customer Journey Analytics [connection](/help/connections/overview.md), one or more [data views](/help/data-views/data-views.md) and [workspace projects](/help/analysis-workspace/home.md). You carefully need to inspect the data you have now available in one IMS organization. And consider features like data prep, derived fields, additional lookup tables, and more before you are able to properly report on this data.

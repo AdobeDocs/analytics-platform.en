@@ -4,6 +4,7 @@ description: Visualizations use case for the BI extension in various BI tools in
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
+exl-id: a357facb-d536-4c81-847c-a6f0d3f041e7
 ---
 # Visualizations
 
@@ -210,3 +211,4 @@ Comparing the visualization capabilities of **ggplot2**, the data visualization 
 
 >[!ENDTABS]
 
++++

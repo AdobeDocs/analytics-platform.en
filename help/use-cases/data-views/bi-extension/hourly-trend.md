@@ -4,6 +4,7 @@ description: Hourly trend use case for the BI extension in various BI tools in C
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
+exl-id: facce2d4-b729-46c0-a049-8f730220d8d2
 ---
 # Hourly trend
 

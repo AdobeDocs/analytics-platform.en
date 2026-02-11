@@ -1,9 +1,10 @@
 ---
-title: Configure audience analysis
+title: Configure Audience Analysis
 description: Learn how to configure audience analysis
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
+exl-id: 0db3f6f7-9d7e-41bf-8eb5-02e439bab10a
 ---
 # Configure audience analysis {#configure-audience-analysis}
 
@@ -71,7 +72,7 @@ To create an audience analysis configuration:
 
    | Field | Description |
    |---------|----------|
-   | **[!UICONTROL Name]** | Specify a name for the configuration. | 
+   | **[!UICONTROL Name]** | Specify a name for the configuration. |
    | **[!UICONTROL Sandbox]** | Select the Experience Platform sandbox that contains the profile dataset that you want to add to your connection. A single sandbox can support up to 100 audience analysis configurations. <p>Adobe Experience Platform provides [sandboxes](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) which partition a single Platform instance into separate virtual environments to help develop and evolve digital experience applications. You can think of sandboxes as "data silos" that contain datasets. Sandboxes are used to control access to datasets.</p> |
 
 1. In the **[!UICONTROL Profile dataset]** section, specify the following information:
@@ -139,5 +140,3 @@ To view the audience analysis dimensions in the data view:
 1. Use the audience analysis dimensions in Analysis Workspace. 
 
    Users who have access to use the data view in Analysis Workspace can now see the new dimensions and use them in their analyses. For information about how to use the audience analysis dimensions in Analysis Workspace, see [Analyze Experience Platform audiences in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
-
-

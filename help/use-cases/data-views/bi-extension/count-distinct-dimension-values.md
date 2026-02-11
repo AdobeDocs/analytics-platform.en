@@ -4,6 +4,7 @@ description: Count distinct values dimensions use case for the BI extension in v
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
+exl-id: 6a05bce1-542c-40d3-bbb0-4a8e561438c9
 ---
 # Count distinct values dimensions
 
@@ -171,4 +172,3 @@ You should see a visualization and table similar as shown below.
 >[!ENDTABS]
 
 +++
-
