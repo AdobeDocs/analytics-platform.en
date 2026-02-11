@@ -134,7 +134,7 @@ For the **[!UICONTROL Stitched ID value]** dimension table, you see the raw valu
 ![Check stitched dimensions](/help/stitching/assets/check-data-on-stitching.png)
 
 
-### Device-centric or Person-centric reporting
+### Device-centric or person-centric reporting
 
 When you create a connection, you have to define what field or identity is used for the person ID. For instance, on a web dataset, if you choose a device ID as the person ID, then you create device-centric reports and lose the ability to join this data with other offline channels. If you select a cross-channel field or identity, for example email, you lose out on any unauthenticated events. To understand this impact, you need to figure out how much of the traffic is unauthenticated and how much of the traffic is authenticated.
 
@@ -178,7 +178,7 @@ If you combine all data in an Analysis Workspace Freeform table, you can start t
 
 ## Key takeaways
 
-The key takeaways from this article is stitching validation and analysis helps you:
+The key takeaways from this article are that stitching validation and analysis helps you:
 
 * Provide a comprehensive custom view of authentication effectiveness by comparing current versus stitched rates.
 * Enable clear measurement of the improvement through percentage increases and lift metrics.
