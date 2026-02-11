@@ -9,9 +9,9 @@ exl-id: c5cf15ab-3eb1-4e6b-93a3-3d89694ca0ea
 # Manage data views
 
 
-Once you have [created or edited one or more data views](/help/data-views/create-dataview.md), you can manage them in **[!UICONTROL Data views]**. 
+Once you have [created or edited one or more data views](/help/data-views/create-dataview.md), you can manage them in **[!UICONTROL Data views]**.
 
-Select **[!UICONTROL Data Management]** > **[!UICONTROL Data views]** from the main menubar in Customer Journey Analytics.
+Select **[!UICONTROL Data Management]** > **[!UICONTROL Data views]** from the main menu bar in Customer Journey Analytics.
 
 The **[!UICONTROL Data views]** interface shows a table of all data views available.
 
@@ -29,9 +29,9 @@ The following columns and icons are available in the table:
 | **[!UICONTROL Owner]** | The owner of the data view. |
 | **[!UICONTROL Data Insights Agent]** ![InfoOutline](/help/assets/icons/InfoOutline.svg) | Indicates whether the [Data Insights Agent](/help/data-analysis-ai.md) is **[!UICONTROL Enabled]** or **[!UICONTROL Disabled]** for the data view. <br/>Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to show a pop-up with **[!UICONTROL Data Insights Agent Status]** across your data views. <br/>![Data Insights Agent usage](/help/data-views/assets/data-views-dia-status.png) |
 | **[!UICONTROL Integrations]** | List integrations with other solutions. For example: Adobe Audience Analysis, Content Analytics, Brand Concierge, Journey Optimizer, GenStudio, and Usage Analytics. |
-| **[!UICONTROL Use in CJA]** | Indicate whether the data view is used in Customer Journey Analytics. This value is only **[!UICONTROL Off]** for data views that are automatically generated as part of the Adobe Journey Optimizer integration. |
+| **[!UICONTROL Use in CJA]** | Indicates whether the data view is used in Customer Journey Analytics. This value is only **[!UICONTROL Off]** for data views that are automatically generated as part of the Adobe Journey Optimizer integration. |
 | **[!UICONTROL Date created]** | The timestamp when the data view was created. |
-| **[!UICONTROL Last modified]** | The timestamp when the data view was most recently modified. | 
+| **[!UICONTROL Last modified]** | The timestamp when the data view was most recently modified. |
 
 To configure which columns to display in the table, select ![ColumnSetting](/help/assets/icons/ColumnSetting.svg). In the **[!UICONTROL Customize table]** dialog, select the columns to show. Then select **[!UICONTROL Apply]**.
 
@@ -75,7 +75,7 @@ Alternatively, you can:
 
 ## Copy data views
 
-If you want to copy a data view: 
+If you want to copy a data view:
 
 1. Select ![More](/help/assets/icons/More.svg) next to the data view name.
 1. Select ![Copy](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]** from the context menu.
@@ -121,12 +121,12 @@ Alternatively, you can:
 1. Select one or more data view rows.
 1. Select ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** from the blue action bar.
 
-Details of the selected data views are exported to a CSV file named `Data views List (x).csv` in the Downloads folder of your browser.
+Details of the selected data views are exported to a CSV file named `Data views List (x).csv` in your browser's Downloads folder.
 
 
 ## Create project from data views
 
-You can create a Workspace project directly from the Data views interface. 
+You can create a Workspace project directly from the Data views interface.
 
 1. Select ![More](/help/assets/icons/More.svg) next to the data view name.
 1. Select ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Create project]** from the context menu.
