@@ -1,6 +1,6 @@
 ---
-title: Content Analytics reporting
-description: How to report on Content Analytics
+title: Content Analytics Reporting
+description: Learn how to report on Content Analytics using visualizations like freeform table, bar, and scatter.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
@@ -8,15 +8,16 @@ exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 ---
 # Content Analytics reporting overview
 
-You report, perform analysis and gain insights on Content Analytics within [Analysis Workspace](/help/analysis-workspace/home.md). A specific Workspace [template](#template) is available, so you can immediately access a pre-populated Workspace project with relevant content insights.
+You report, perform analysis and gain insights on [!DNL Content Analytics] within [Analysis Workspace](/help/analysis-workspace/home.md). A specific Workspace [template](#template) is available, so you can immediately access a pre-populated Workspace project with relevant content insights.
 
-To start reporting on Content Analytics from scratch:
+To create your own Content Analytics report from scratch, follow these steps:
 
 1. [Create a new](/help/analysis-workspace/build-workspace-project/create-projects.md) or [open an existing](/help/analysis-workspace/build-workspace-project/open-projects.md) project in Workspace.
 1. Ensure you [select a data view](/help/analysis-workspace/c-panels/panels.md#data-view) for Content Analytics reporting. Content Analytics reporting is only available for data views that are [configured](/help/content-analytics/config/configuration.md) for Content Analytics. 
 1. Drag a ![Table](/help/assets/icons/Table.svg) [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) visualization on the canvas.
 1. Use [specific Content Analytics components](components.md) and other generic [components](/help/components/overview.md) (like segments, date ranges, annotations) to build your Content Analytics insights.
 1. Use other [visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) to enhance your project.
+
 
 ## Thumbnails
 
@@ -63,13 +64,13 @@ You see the following details.
 | **[!UICONTROL Impressions (all time)]**: Number of impressions for the experience. | **[!UICONTROL Impressions (all times)]**: Number of impressions for the asset. |
 | **[!UICONTROL Assets]**: Number of assets this experience contains. <br/>Select ![Breakdown](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** to inspect the assets. |**[!UICONTROL Experiences]**: Number of experiences where this asset is shown in. <br/>Select ![Breakdown](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** to inspect the assets. |
 | **[!UICONTROL First impression]**: Date of first impression of the experience. | **[!UICONTROL First impression]**: Date of first impression of the asset. |
-|**[!UICONTROL  Most recent impression]**: Date of most recent impression of the experience. | **[!UICONTROL Most recent impression]**: Date of most recent impression of the asset. |
+|**[!UICONTROL Most recent impression]**: Date of most recent impression of the experience. | **[!UICONTROL Most recent impression]**: Date of most recent impression of the asset. |
 | **[!UICONTROL Experience attributes]**: The [attributes](/help/content-analytics/report/components.md#experience-attributes) of the experience. | **[!UICONTROL Asset attributes]**: The [attributes](/help/content-analytics/report/components.md#asset-attributes) of the asset. |
 
 
 ## Template
 
-A Content Analytics [template](/help/analysis-workspace/templates/use-templates.md) is available to help you to learn what content and content attributes are performing best. The template is part of the [Web channel and Engagement use case](/help/analysis-workspace/templates/use-templates.md#web-engagement) and details how your content performs at a granular level. You can look at the performance of individual assets, or specific attributes. 
+A Content Analytics [template](/help/analysis-workspace/templates/use-templates.md) is available to help you learn what content and content attributes are performing best. The template is part of the [Web channel and Engagement use case](/help/analysis-workspace/templates/use-templates.md#web-engagement) and details how your content performs at a granular level. You can look at the performance of individual assets, or specific attributes. 
 
 Based on what you learn, you might do a number of things. Like promote high performing assets on your home page, personalize content for specific segments to include high performing attributes, or rotate out content that has started to get stale.
 
@@ -93,12 +94,12 @@ A **[!UICONTROL Content Analytics Overview]** project opens in [Analysis Workspa
    
     >[!NOTE]
     >
-    >These visualizations only show when you have [included experiences](/help/content-analytics/config/guided.md#experience-capture-and-definition) in your Content Analytics configuration.
+    >These visualizations only show up in your template when you have configured to [include experiences](/help/content-analytics/config/guided.md#experience-capture-and-definition) in your Content Analytics configuration.
     > 
 
-    * **Experience CTR**: a [summary change](/help/analysis-workspace/visualizations/summary-number-change.md) visualization, showing Experience CTR.
+    * **Experience CTR**: a [summary change](/help/analysis-workspace/visualizations/summary-number-change.md) visualization that shows Experience CTR.
     * **Top converting experiences**: A [horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md) visualization showing top converting experiences based on the selected conversion metric.
-    * **Top performing experiences**: A [freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)(including [thumbnails](#thumbnails) and [previews](#previews)) for the top performing experiences.
+    * **Top performing experiences**: A [freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (including [thumbnails](#thumbnails) and [previews](#previews)) for the top performing experiences.
 
   * **Assets**
 
@@ -112,7 +113,7 @@ A **[!UICONTROL Content Analytics Overview]** project opens in [Analysis Workspa
       A [scatterplot](/help/analysis-workspace/visualizations/scatterplot.md) visualization that shows a scatter plot of asset views versus assets conversions. 
 
 * **Which asset attributes contribute to conversions?** 
-  Content Analytics uses AI and GenAI to assign every asset metadata automatically, like subjects, scenes, foreground colors, etc. An attribute is an AI assigned metadata tag describing what is in an asset or experience. For example: <code>foreground color: red</code> is an automatically assigned attribute. The visualizations help you identify which attributes of your assets contribute most to conversion.
+  Content Analytics uses AI and GenAI to assign every asset [metadata](/help/content-analytics/report/components.md#asset-metadata) and [attributes](/help/content-analytics/report/components.md#asset-attributes) automatically, like subjects, scenes, foreground colors, and more. An attribute is an AI assigned metadata tag describing what is in an asset or experience. For example: <code>foreground color: red</code> is an automatically assigned attribute. The visualizations help you identify which attributes of your assets contribute most to conversion.
 
   The panel consists of the following visualizations:
 
@@ -150,7 +151,7 @@ A **[!UICONTROL Content Analytics Overview]** project opens in [Analysis Workspa
     A [freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) showing the top experience keywords based on the selected conversion metric.
 
 * **Where do assets appear on my site?** 
-  A panel that consists of one freeform table that details where the most viewed assets appear on your site.
+  A panel that consists of one freeform table that details where the most viewed assets appear on your site. This analysis helps you to understand which pages or sections benefit most from your top-performing assets and where to optimize placement.
 
   The panel consists of one visualization:
 
