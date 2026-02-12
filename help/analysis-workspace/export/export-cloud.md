@@ -176,7 +176,7 @@ Exporting Customer Journey Analytics data to the cloud allows you to:
 
 * Export one-time or on a schedule. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
 
-* Export files in CSV or JSON format. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
+* Export files in CSV, JSON, or Parquet format. (Also available with [other export options](/help/analysis-workspace/export/export-project-overview.md).)
 
 * Export tables that include multiple dimensions.
 

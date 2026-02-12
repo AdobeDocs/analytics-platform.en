@@ -121,19 +121,10 @@ When you apply tags to an export, you can view those tags in the [!UICONTROL Tag
 
 1. Select [!UICONTROL **Apply tags**].
 
-## Cancel an export
-
-You can cancel one or more exports that are currently running. 
-
-1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
-
-1. On the [!UICONTROL **Exports**] tab, select the checkbox next to one or more exports that you want to cancel.
-
-1. Select [!UICONTROL **Cancel**].
 
 ## Delete an export
 
-You can delete exports from the Exports page. Scheduled exports that are deleted will no longer be sent. 
+You can delete exports from the Exports page. Deleting an export removes it from the exports page. Scheduled exports that are deleted are canceled and no longer be sent. 
 
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
