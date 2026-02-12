@@ -70,8 +70,8 @@ role: Admin
 
 >[!CONTEXTUALHELP]
 >id="connection_change_personid"
->title="Change Person ID"
->abstract="Modifying the identity stitching setting on a dataset will affect the Person ID setting once you apply the changes. A change of the Person ID deletes all existing data in the connection. You have to re-ingest data from the dataset based on the new Person ID.<br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the deletion process is completed."
+>title="Change identity settings "
+>abstract="A change of identity setting deletes connection data for this dataset, once you save the modifications in the Connections interface. You will have to re-ingest data from the dataset based on the new settings.<br/><br/>A delay in reporting is possible until the deletion process is completed."
 
 >[!CONTEXTUALHELP]
 >id="connection_change_accountid"
