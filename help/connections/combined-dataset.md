@@ -1,5 +1,5 @@
 ---
-title: Combined event datasets
+title: Combined Event Datasets
 description: Learn how Customer Journey Analytics creates a connection by combining datasets.
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics

@@ -4,6 +4,7 @@ description: Sort use case for the BI extension in various BI tools in Customer 
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
+exl-id: bac873a8-9003-400d-9f52-fcf734c2f56b
 ---
 # Sort
 

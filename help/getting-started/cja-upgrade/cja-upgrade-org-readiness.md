@@ -4,6 +4,7 @@ description: Learn about the recommended steps when upgrading from Adobe Analyti
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
+exl-id: bd19250e-91c0-49f6-b6dc-3abd641344aa
 ---
 # Prepare your organization to upgrade to Customer Journey Analytics
 
@@ -143,4 +144,3 @@ Identify Champions throughout your organization. These champions should be:
 ## Follow the recommended upgrade steps
 
 When you're ready to begin the upgrade process, follow the [recommended upgrade steps](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) or the dynamically generated upgrade steps in the Customer Journey Analytics Upgrade Guide. To access the guide from Customer Journey Analytics, select the **[!UICONTROL Workspace]** tab, then select **[!UICONTROL Upgrade to Customer Journey Analytics]** in the left panel. Follow the on-screen instructions.
-

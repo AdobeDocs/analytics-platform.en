@@ -87,6 +87,11 @@ If you meet the prerequisites, you might want to perform some preflight checks o
 >abstract="Ensure you have finished the setup of the identity graph before you use the identity graph for stitching."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Graph-based stitching"
 
+>[!CONTEXTUALHELP]
+>id="connection_stitching_personid"
+>title="Person ID"
+>abstract="Select a person ID (the unique identifier for a person) from the available identities. In case you want to use graph-based stitching, select **[!UICONTROL Identity Graph]**."
+
 To enable stitching, in the event dataset section of the **[!UICONTROL Add datasets]** or **[!UICONTROL Edit dataset]** dialog: 
 
 ![Identity stitching options when you enable identity stitching](assets/identity-stitching-ui.png)

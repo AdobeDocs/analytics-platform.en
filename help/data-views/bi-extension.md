@@ -1,5 +1,5 @@
 ---
-title: Customer Journey Analytics BI extension
+title: Customer Journey Analytics BI Extension
 description: Learn how you can use Power BI or Tableau Desktop to access data views using the Customer Journey Analytics BI extension.
 solution: Customer Journey Analytics
 feature: BI Extension

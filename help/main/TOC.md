@@ -17,6 +17,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Release Notes {#releases}
   + [Latest release](../release-notes/latest.md)
   + [Pre-release notes](../release-notes/pre-release-notes.md)
+  + [2026 releases](../release-notes/2026.md)
   + [2025 releases](../release-notes/2025.md)
   + [2024 releases](../release-notes/2024.md)
   + [2023 releases](../release-notes/2023.md)
@@ -95,7 +96,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Compare with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)
-    + [Map Adobe Analytics data](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
+    + [Cross-IMS data mapping](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
     + [Feature support](../getting-started/aa-vs-cja/cja-aa.md)
     + [Compare terminology](../getting-started/aa-vs-cja/terminology.md)
     + [Compare data processing](../getting-started/aa-vs-cja/data-processing-comparisons.md)
@@ -141,6 +142,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Data Views {#cja-dataviews}
   + [Data views overview](../data-views/data-views.md)
   + [Create or edit a data view](../data-views/create-dataview.md)
+  + [Manage data views](/help/data-views/manage-dataviews.md)
   + [Session settings](../data-views/session-settings.md)
   + Component settings {#component-settings}
     + [Component settings overview](../data-views/component-settings/overview.md)

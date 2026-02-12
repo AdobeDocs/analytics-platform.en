@@ -4,6 +4,7 @@ description: Limits use case for the BI extension in various BI tools in Custome
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
+exl-id: 55666295-6161-4fbc-b326-231cb5780d4f
 ---
 # Limits
 

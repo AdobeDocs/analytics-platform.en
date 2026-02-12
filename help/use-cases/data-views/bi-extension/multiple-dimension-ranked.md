@@ -4,6 +4,7 @@ description: Multiple dimension ranked use case for the BI extension in various 
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
+exl-id: 7c8d01ac-47a3-4348-83ef-fea66695fbb2
 ---
 # Multiple dimension ranked
 

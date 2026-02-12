@@ -18,7 +18,7 @@ When you combine datasets with similar person IDs, attribution is carried over a
 
 Unfortunately, not all event-based datasets that are part of your connection in Customer Journey Analytics are sufficiently populated with data to support this attribution out of the box. Especially, web-based or mobile-based experience datasets often don't have actual person ID information available on all events.
 
-Stitching rekeys identities within one dataset's rows to ensure the person ID (stitched ID) is available on each event. Stitching looks at user data from both authenticated and unauthenticated sessions to determine the common person ID value that can be used as stitched ID. This rekeying resolves disparate records to a single stitched ID for analysis at the person level, rather than at the device or cookie level.
+Stitching rekeys identities within one dataset's rows to ensure the desired person ID info is available on as many events possible. Stitching looks at user data from both authenticated and unauthenticated sessions to determine the common person ID value that can be used. This rekeying resolves disparate records to a single person ID for analysis at the person level, rather than at the device or cookie level. However, if a common person ID value cannot be determined, the persistent ID value is used instead.
 
 Customer Journey Analytics supports two types of stitching: [field-based stitching](fbs.md) and [graph-based stitching](gbs.md).
 
@@ -37,10 +37,9 @@ Before using stitching, make sure that your organization is prepared with the fo
   - For Adobe Analytics data, see [Utilizing Adobe Analytics report suite data in Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md). 
   - For other types of data, see [Create a schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui) and [Ingest data](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) in the Adobe Experience Platform documentation.
 
-You benefit from cross-channel analysis if you combine one or more of your stitched datasets with other datasets, such as call center data, as part of defining your Customer Journey Analytics connection. This connection configuration assumes that those other datasets already contain a person ID on every row, similar to the stitched ID.
+You benefit from cross-channel analysis if you combine one or more of your stitched datasets with other datasets, such as call center data, as part of defining your Customer Journey Analytics connection. This connection configuration assumes that those other datasets already contain a person ID from the same namespace on as many rows possible.
 
 Once your organization meets generic [prerequisites](overview.md#prerequisites), understands common [limitations](overview.md#limitations), and also stitching method specific ([field-based](fbs.md) and [graph-based](gbs.md)) prerequisites and limitations, you can follow these steps to request and start using stitching in Customer Journey Analytics.
-
 
 ## Limitations
 

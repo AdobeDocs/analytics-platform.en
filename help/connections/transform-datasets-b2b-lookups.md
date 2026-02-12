@@ -1,5 +1,5 @@
 ---
-title: Transform datasets for B2B lookups
+title: Transform Datasets For B2B Lookups
 description: Describes how to transform data in datasets of specific B2B lookup schemas
 solution: Customer Journey Analytics
 feature: Connections
