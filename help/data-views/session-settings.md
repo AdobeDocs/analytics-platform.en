@@ -1,6 +1,6 @@
 ---
-title: Session settings
-description: Settings in a Data view you can use to define length of a session and the trigger to initiate a new session
+title: Session Settings
+description: Learn about the settings in a data view you can use to define length of a session and the trigger to initiate a new session
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c

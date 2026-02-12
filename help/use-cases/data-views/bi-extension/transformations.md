@@ -4,6 +4,7 @@ description: Transformations use case for the BI extension in various BI tools i
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
+exl-id: 2022a841-fc2a-4a76-8d91-8227e7a2130a
 ---
 # Transformations
 
@@ -264,4 +265,3 @@ LIMIT 1000
 >[!ENDTABS]
 
 +++
-

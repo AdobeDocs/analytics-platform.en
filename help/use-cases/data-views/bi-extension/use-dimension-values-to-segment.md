@@ -4,6 +4,7 @@ description: Use dimension values to segment use case for the BI extension in va
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
+exl-id: 8557b424-4a5e-4996-8e2f-cf1bcafe64c5
 ---
 # Use dimension values to segment
 
@@ -167,4 +168,3 @@ You then can use that segment in an example **[!UICONTROL Using Dimension Values
 >[!ENDTABS]
 
 +++
-

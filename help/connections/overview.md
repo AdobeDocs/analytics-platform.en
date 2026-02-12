@@ -1,5 +1,5 @@
 ---
-title: Customer Journey Analytics Connections overview
+title: Customer Journey Analytics Connections Overview
 description: Learn about connections in Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Connections

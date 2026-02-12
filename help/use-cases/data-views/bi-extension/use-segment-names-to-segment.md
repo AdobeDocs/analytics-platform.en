@@ -4,6 +4,7 @@ description: Use segment names to segment use case for the BI extension in vario
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
+exl-id: bd0ff42b-7136-41b8-9dcd-75ab3ac8a523
 ---
 # Use segment names to segment
 

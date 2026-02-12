@@ -6,8 +6,8 @@ feature: Content Analytics
 role: Admin
 hide: yes
 hidefromtoc: yes
+exl-id: 35d63b7d-f35a-4a88-ae14-96724d32a931
 ---
-
 # Standalone configuration
 
 >[!IMPORTANT]
@@ -31,13 +31,13 @@ This guide uses several technical terms, from Experience Platform and Customer J
 | **Schema** | A [schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) is a set of rules that represent and validate the structure and format of data. At a high level, schemas provide an abstract definition of a real-world object, such as an event that happens on a website, like a click. And outline what data should be included in each instance of that object. |
 | **Dataset** | A [dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). A dataset is like a database table where each row is an event from your website.  |
 | **Datastream** | A [datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) represents the server-side configuration that routes data from your website to the correct dataset in Adobe Experience Platform. A datastream acts as a data highway connecting your site to your storage. |
-| **Tags** | [Tags](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home) in Experience Platform are the next generation of tag management capabilities from Adobe. Tags give customers a simple way to deploy and manage analytics, marketing, and advertising tags necessary to power relevant customer experiences. In Content Analytics, Adobe's tag management system lets you deploy tracking code on your website without you having to edit every page similarly. The Tags functionality is similar to functionality that you might know from Google Tag Manager. | 
+| **Tags** | [Tags](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home) in Experience Platform are the next generation of tag management capabilities from Adobe. Tags give customers a simple way to deploy and manage analytics, marketing, and advertising tags necessary to power relevant customer experiences. In Content Analytics, Adobe's tag management system lets you deploy tracking code on your website without you having to edit every page similarly. The Tags functionality is similar to functionality that you might know from Google Tag Manager. |
 | **Sandbox** | Experience Platform provides [sandboxes](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) which partition a single Experience Platform instance into separate virtual environments to help develop and evolve digital experience applications. Content Analytics typically uses the *Production* sandbox. |
 | **Connection** | [Connections](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/overview) define what Experience Platform datasets are ingested. A connection defines the link between your dataset (where data is stored in AEP) and Customer Journey Analytics (where you analyze it). A connection makes your collected data available for reporting. |
 | **Data View** | A [data view](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views) is a container that lets you determine how to interpret data from a connection. A data view specifies all dimensions and metrics that are available for you to report on. A data view is like a configuration that determines the rows and columns available for you to use in your analysis. |
-| **Analysis Workspace** | [Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home) is a drag-and-drop browser interface that you use to build your Content Analytics reports and analyses. | 
+| **Analysis Workspace** | [Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home) is a drag-and-drop browser interface that you use to build your Content Analytics reports and analyses. |
 | **Experience** | In Content Analytics, an [experience](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology) refers to all the text content on a web page that can be captured and analyzed based on the page URL. |
-| **Asset**| In Content Analytics, an [asset](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology) is an individual and unique piece of content, like an image. | 
+| **Asset**| In Content Analytics, an [asset](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology) is an individual and unique piece of content, like an image. |
 
 
 ## Setup overview
@@ -302,4 +302,3 @@ To implement Content Analytics for your website, you need to publish the Content
 ### Set up a project
 
 Set up a project in Customer Journey Analytics to build your [Content Analytics reports and visualizations](/help/content-analytics/report/report.md). Alternatively, you can use a [Content Analytics template](/help/content-analytics/report/report.md#template) to get started.
-

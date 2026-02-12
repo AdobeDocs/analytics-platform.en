@@ -4,6 +4,7 @@ description: Connect and validate use case for the BI extension in various BI to
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
+exl-id: d122a415-fb22-48f7-9377-8349dba274e5
 ---
 # Connect and validate
 

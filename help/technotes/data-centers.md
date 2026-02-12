@@ -32,16 +32,16 @@ To view which data center your data is stored in:
 
 1. Use the following table to understand what geographical area your region code is associated with:
 
-   | Adobe region code | Cloud provider | Geographic region | 
+   | Adobe region code | Cloud provider | Geographic region |
    |-------------------|-------|-------------------------------------------|
-   | VA7               | Azure | U.S. (default)  | 
-   | VA6               | AWS   | U.S. (by request) | 
+   | VA7               | Azure | U.S. (default)  |
+   | VA6               | AWS   | U.S. (by request) |
    | NLD2              | Azure | Netherlands, Amsterdam |
-   | CAN2              | Azure | Canada Central, Toronto | 
-   | AUS5              | Azure | Australia, Sydney | 
+   | CAN2              | Azure | Canada Central, Toronto |
+   | AUS5              | Azure | Australia, Sydney |
    | GBR9              | Azure | U.K., London    |
-   | IND2              | Azure | India    | 
-   | CHE2              | Azure | Switzerland   | 
+   | IND2              | Azure | India    |
+   | CHE2              | Azure | Switzerland   |
 
 
 
