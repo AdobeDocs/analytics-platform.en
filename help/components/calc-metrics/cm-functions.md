@@ -193,15 +193,15 @@ Adds all numeric values for a metric within a column (across the elements of a d
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
-[!BADGE Row]{type="Neutral"} Returns e raised to the power of a given number. The constant e equals 2.71828182845904, the base of the natural logarithm. EXPONENT is the inverse of LN, the natural logarithm of a number.
+[!BADGE Row]{type="Neutral"} Returns *e* raised to the power of a given number. The constant *e* equals 2.71828182845904, the base of the natural logarithm. EXPONENT is the inverse of LN, the natural logarithm of a number.
 
 | Argument | Description |
 |---|---|
-| metric | The exponent applied to the base e.|
+| metric | The exponent applied to the base *e*.|
 
-**Use case**: Raise a number or metric to a specified power, such as squaring a value or applying an exponential growth factor. This is useful when modeling growth trends or scaling a metric exponentially.
+**Use case**: Raises *e* to the power of a given number or metric. This is useful when modeling growth trends or scaling a metric exponentially.
 
-**In the Calculated Metric Builder**: Use **Exponent** with a metric. For example: **Exponent**(*Sessions*) raises to the power of the *Sessions* metric.
+**In the Calculated Metric Builder**: Use **Exponent** with a metric. For example: **Exponent**(*Sessions*) raises *e* to the power of the *Sessions* metric.
 
 >[!TIP]
 >
