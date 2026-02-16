@@ -7,15 +7,10 @@ role: User
 ---
 # Scatter {#scatter}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_scatter_button"
 >title="Scatter"
 >abstract="Create a scatter visualization that shows the relationship between dimension items and up to three metrics."
-
-<!-- markdownlint-enable MD034 -->
-
 
 >[!BEGINSHADEBOX]
 
@@ -40,6 +35,10 @@ The ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTROL Scatter]*
 See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Scatterplot visualization](https://video.tv.adobe.com/v/334459/?quality=12&learn=on){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
+
+>[!NOTE]
+>
+>When you [configure the legend to be visible](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings) in the scatter, the legend is only shown when the data source contains a limited number of (selected) items.
 
 
 >[!MORELIKETHIS]
