@@ -201,7 +201,7 @@ Adds all numeric values for a metric within a column (across the elements of a d
 
 **Use case**: Raise a number or metric to a specified power, such as squaring a value or applying an exponential growth factor. This is useful when modeling growth trends or scaling a metric exponentially.
 
-**In the Calculated Metric Builder**: Use **Exponent** with a metric and a power value. For example: **Exponent**(*Visits*, 2) squares the *Visits* metric.
+**In the Calculated Metric Builder**: Use **Exponent** with a metric. For example: **Exponent**(*Visits*) raises to the power of the *Visits* metric.
 
 >[!TIP]
 >
