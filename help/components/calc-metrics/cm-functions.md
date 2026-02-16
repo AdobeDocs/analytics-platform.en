@@ -12,7 +12,7 @@ The [Calculated metrics builder](cm-workflow/cm-build-metrics.md) lets you apply
 
 >[!NOTE]
 >
->Where [!DNL metric] is identified as an argument in a function, other expressions of metrics are also allowed. For example, [COLUMN MAXIMUM(metrics)](#column-maximum) also allows for [COLUMN MAXIMUM(PageViews + Visits)](#column-maximum).
+>Where [!DNL metric] is identified as an argument in a function, other expressions of metrics are also allowed. For example, [COLUMN MAXIMUM(metrics)](#column-maximum) also allows for [COLUMN MAXIMUM(PageViews + Sessions)](#column-maximum).
 
 
 
@@ -83,7 +83,7 @@ Returns the largest value in a set of dimension elements for a metric column. MA
 
 **Use case**: Identify the highest value within a breakdown, such as the day with the most visits or the product with the highest revenue. This helps highlight peak performance across categories.
 
-**In the Calculated Metric Builder**: Apply **Column Maximum** to a metric like *Revenue* or *Visits* when breaking down by *Day* or *Product*. The function returns the largest value in that column for each row.
+**In the Calculated Metric Builder**: Apply **Column Maximum** to a metric like *Revenue* or *Sessions* when breaking down by *Day* or *Product*. The function returns the largest value in that column for each row.
 
 >[!TIP]
 >
@@ -143,7 +143,7 @@ Adds all numeric values for a metric within a column (across the elements of a d
 
 **Use case**: Calculate the total of all values within a breakdown, such as total revenue across all products or total visits across all days. This helps when you need an overall total to compare against individual row values.
 
-**In the Calculated Metric Builder**: Apply **Column Sum** to a metric like *Revenue* or *Visits* while breaking down by *Product* or *Day*. The function returns the total of all values in that column for each row.
+**In the Calculated Metric Builder**: Apply **Column Sum** to a metric like *Revenue* or *Sessions* while breaking down by *Product* or *Day*. The function returns the total of all values in that column for each row.
 
 >[!TIP]
 >
@@ -173,7 +173,7 @@ Adds all numeric values for a metric within a column (across the elements of a d
 
 **Use case**: Count the number of data points included in a calculation, such as the number of days in a date range or the number of products in a breakdown. This helps when you need to know how many items contribute to an aggregated value.
 
-**In the Calculated Metric Builder**: Apply **Count** to a metric like *Visits* or *Revenue* to return the total number of rows (or data points) included in the current breakdown or date range.
+**In the Calculated Metric Builder**: Apply **Count** to a metric like *Sessions* or *Revenue* to return the total number of rows (or data points) included in the current breakdown or date range.
 
 >[!TIP]
 >
@@ -193,15 +193,15 @@ Adds all numeric values for a metric within a column (across the elements of a d
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
-[!BADGE Row]{type="Neutral"} Returns e raised to the power of a given number. The constant e equals 2.71828182845904, the base of the natural logarithm. EXPONENT is the inverse of LN, the natural logarithm of a number.
+[!BADGE Row]{type="Neutral"} Returns *e* raised to the power of a given number. The constant *e* equals 2.71828182845904, the base of the natural logarithm. EXPONENT is the inverse of LN, the natural logarithm of a number.
 
 | Argument | Description |
 |---|---|
-| metric | The exponent applied to the base e.|
+| metric | The exponent applied to the base *e*.|
 
-**Use case**: Raise a number or metric to a specified power, such as squaring a value or applying an exponential growth factor. This is useful when modeling growth trends or scaling a metric exponentially.
+**Use case**: Raises *e* to the power of a given number or metric. This is useful when modeling growth trends or scaling a metric exponentially.
 
-**In the Calculated Metric Builder**: Use **Exponent** with a metric and a power value. For example: **Exponent**(*Visits*, 2) squares the *Visits* metric.
+**In the Calculated Metric Builder**: Use **Exponent** with a metric. For example: **Exponent**(*Sessions*) raises *e* to the power of the *Sessions* metric.
 
 >[!TIP]
 >
@@ -232,7 +232,7 @@ Adds all numeric values for a metric within a column (across the elements of a d
 
 **Use case**: Calculate the arithmetic average of a set of values, such as the average daily revenue or the average number of visits per campaign. This helps establish a baseline for comparing individual values within a dataset.
 
-**In the Calculated Metric Builder**: Apply **Mean** to a metric like *Revenue* or *Visits* to return the average value across all data points in the selected breakdown or date range.
+**In the Calculated Metric Builder**: Apply **Mean** to a metric like *Revenue* or *Sessions* to return the average value across all data points in the selected breakdown or date range.
 
 >[!TIP]
 >
@@ -340,7 +340,7 @@ MODULO(MODULO(x,y)+y,y)
 
 **Use case**: Identify the value below which a given percentage of data points fall, such as the 90th percentile of daily revenue or page views. This helps measure distribution and detect high-performing outliers.
 
-**In the Calculated Metric Builder**: Apply **Percentile** to a metric like *Revenue* or *Visits*, and specify the desired percentile value (for example, **Percentile**(*Revenue*, 90)). The result shows the threshold that 90% of data points fall below.
+**In the Calculated Metric Builder**: Apply **Percentile** to a metric like *Revenue* or *Sessions*, and specify the desired percentile value (for example, **Percentile**(*Revenue*, 90)). The result shows the threshold that 90% of data points fall below.
 
 >[!TIP]
 >
@@ -400,7 +400,7 @@ Returns x raised to the y power.
 
 **Use case**: Divide a dataset into four equal parts to understand how values are distributed, such as identifying the top 25% of days by revenue or visits. This helps segment performance into ranked groups for deeper comparison.
 
-**In the Calculated Metric Builder**: Apply **Quartile** to a metric like *Revenue* or *Visits*, and specify which quartile to return (for example, **Quartile**(*Revenue*, 3) to find the threshold for the third quartile, or top 25%).
+**In the Calculated Metric Builder**: Apply **Quartile** to a metric like *Revenue* or *Sessions*, and specify which quartile to return (for example, **Quartile**(*Revenue*, 3) to find the threshold for the third quartile, or top 25%).
 
 >[!TIP]
 >
@@ -489,9 +489,9 @@ Maximum of the columns of each row.
 | metric | Requires at least one metric but can take any number of metrics as parameters. |
 | include_zeros | Whether or not to include zero values in the calculations. |
 
-**Use case**: Identify the highest value across all metrics in a single row, such as determining which metric (for example, *Revenue*, *Orders*, or *Visits*) has the greatest value for a specific day or segment. This helps highlight which metric leads within each row of data.
+**Use case**: Identify the highest value across all metrics in a single row, such as determining which metric (for example, *Revenue*, *Orders*, or *Sessions*) has the greatest value for a specific day or segment. This helps highlight which metric leads within each row of data.
 
-**In the Calculated Metric Builder**: Apply **Row Maximum** when multiple metrics are included in a calculated metric. For example: **Row Maximum**(*Revenue*, *Orders*, *Visits*) returns the largest value among those metrics for each row.
+**In the Calculated Metric Builder**: Apply **Row Maximum** when multiple metrics are included in a calculated metric. For example: **Row Maximum**(*Revenue*, *Orders*, *Sessions*) returns the largest value among those metrics for each row.
 
 >[!TIP]
 >
@@ -518,9 +518,9 @@ Minimum of the columns of each row.
 | metric | Requires at least one metric but can take any number of metrics as parameters. |
 | include_zeros | Whether or not to include zero values in the calculations. |
 
-**Use case**: Identify the lowest value across all metrics in a single row, such as finding which metric (for example, *Revenue*, *Orders*, or *Visits*) has the smallest value for a particular day or segment. This helps spot the weakest-performing metric within each row of data.
+**Use case**: Identify the lowest value across all metrics in a single row, such as finding which metric (for example, *Revenue*, *Orders*, or *Sessions*) has the smallest value for a particular day or segment. This helps spot the weakest-performing metric within each row of data.
 
-**In the Calculated Metric Builder**: Apply **Row Minimum** when comparing multiple metrics. For example: **Row Minimum**(*Revenue*, *Orders*, *Visits*) returns the smallest value among those metrics for each row.
+**In the Calculated Metric Builder**: Apply **Row Minimum** when comparing multiple metrics. For example: **Row Minimum**(*Revenue*, *Orders*, *Sessions*) returns the smallest value among those metrics for each row.
 
 >[!TIP]
 >
@@ -546,7 +546,7 @@ Sum of the columns of each row.
 |---|---|
 | metric | Requires at least one metric but can take any number of metrics as parameters. |
 
-**Use case**: Add together the values of multiple metrics within a single row, such as summing *Revenue* and *Tax* to calculate total transaction value, or combining *Visits* from different sources. This helps consolidate related metrics into one total.
+**Use case**: Add together the values of multiple metrics within a single row, such as summing *Revenue* and *Tax* to calculate total transaction value, or combining *Sessions* from different sources. This helps consolidate related metrics into one total.
 
 **In the Calculated Metric Builder**: Apply **Row Sum** to combine multiple metrics. For example: **Row Sum**(*Revenue*, *Tax*) adds those two metrics for each row in your breakdown.
 
@@ -606,7 +606,7 @@ Sum of the columns of each row.
 
 **Use case**: Measure how much values vary from the average, such as evaluating how consistent daily revenue or visits are over time. This helps identify volatility, stability, or unusual fluctuations in performance.
 
-**In the Calculated Metric Builder**: Apply **Standard Deviation** to a metric like *Revenue* or *Visits* to calculate the spread of values within the selected breakdown or date range. For example: **Standard Deviation**(*Revenue*) shows how much daily revenue deviates from the mean.
+**In the Calculated Metric Builder**: Apply **Standard Deviation** to a metric like *Revenue* or *Sessions* to calculate the spread of values within the selected breakdown or date range. For example: **Standard Deviation**(*Revenue*) shows how much daily revenue deviates from the mean.
 
 >[!TIP]
 >
