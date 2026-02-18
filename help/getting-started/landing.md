@@ -40,7 +40,7 @@ The **[!UICONTROL Learning]** tab contains hands-on video tours, tutorials, and 
 
 ## Projects
 
-[!UICONTROL Projects] serves as the [!UICONTROL Workspace] home page. The **[!UICONTROL Projects]** tab displays the Company folder, any personal folders you created, your Workspace projects, and Mobile scorecards. Use this page to view, create, and modify folders, projects, and mobile scorecards. See [Projects](/help/analysis-workspace/build-workspace-project/freeform-overview.md) for more information.
+The **[!UICONTROL Projects]** tab serves as the home page for the  [!UICONTROL **Workspace**] tab. It displays the Company folder, any personal folders you created, your Workspace projects, and Mobile scorecards. Use this page to view, create, and modify folders, projects, and mobile scorecards. See [Projects](/help/analysis-workspace/build-workspace-project/freeform-overview.md) for more information.
 
 
 **[!UICONTROL Projects]** are customized designs that combine data components, tables, and visualizations that you built or that someone else built and shared with you. [!UICONTROL Projects] also refers to blank projects and blank mobile scorecards.
@@ -50,6 +50,16 @@ The **[!UICONTROL Learning]** tab contains hands-on video tours, tutorials, and 
 >Several of the following settings persist during the session and across sessions. For example, the tab you selected, the selected segments, selected columns, and the column sort direction. Search results are not persistent.
 
 See [Projects](/help/analysis-workspace/build-workspace-project/freeform-overview.md) for more information.
+
+## Templates
+
+To access Templates tab in Customer Journey Analytics:
+
+1. Select the [!UICONTROL **Workspace**] tab.
+
+1. In the [!UICONTROL **Templates**] section in the left rail, you can select either Adobe templates or company templates. 
+
+For more information, see [Use templates](/help/analysis-workspace/templates/use-templates.md).
 
 <!--
 
@@ -105,20 +115,20 @@ The available columns are:
 
 ## Learning
 
-The Learning page contains hands-on video tours, tutorials, and links to documentation.
+The **[!UICONTROL Learning]** section on the [!UICONTROL **Workspace**] tab provides information about beginner, intermediate, or advanced features and use-cases in Customer Journey Analytics. It also provides information about how to transition from Adobe Analytics to Customer Journey Analytics.
 
-Use the Learning page in Customer Journey Analytics to learn:
+### Learning paths
 
-* Beginner, intermediate, or advanced features and use-cases in Customer Journey Analytics
-* How to transition more seamlessly from Adobe Analytics to Customer Journey Analytics
+To access information about learning paths in Customer Journey Analytics:
 
-To access the learning content:
+1. Select the [!UICONTROL **Workspace**] tab.
 
-* In Customer Journey Analytics, select [!UICONTROL **Workspace**] from the top menu and select [!UICONTROL **Learning**] from the left panel.
+1. In the [!UICONTROL **Learning**] section in the left rail, select [!UICONTROL **Learning paths**].
 
-### Features
+   This page contains hands-on video tours, tutorials, and links to documentation. 
 
-The learning page offers the following features
+
+The [!UICONTROL **Learning paths**] page offers the following features
 
 * **Filter content:** Use ![Filter](/help/assets/icons/Filter.svg) to filter learning content by **[!UICONTROL Type]** (**[!UICONTROL Document]**, **[!UICONTROL Video]**, and **[!UICONTROL Tours & tutorials]**) and **[!UICONTROL Experience Level]** (**[!UICONTROL Beginner]**, **[!UICONTROL Intermediate]**, or **[!UICONTROL Advanced]**).
 * **Track progress:** After you select a piece of content, a ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Viewed]** tag appears. This tag helps you track your progress through the learning content. You can select the ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Viewed]** tag to remove it from a piece of content.
@@ -126,6 +136,18 @@ The learning page offers the following features
   * **[!UICONTROL Visit YouTube]:** View the full Analysis Workspace YouTube playlist.
   * [!UICONTROL **Visit Experience League**]: View the full suite of Customer Journey Analytics documentation on Experience League. 
 * **Fundamentals for new users:** The [!UICONTROL Learning Workspace Fundamentals] tour is recommended for new users. This tour takes you directly to Workspace and walks you through the most common actions. This tour can also be relaunched any time in Workspace via the tooltip from the [Freeform panel](/help/analysis-workspace/c-panels/freeform-panel.md) or [Blank panel](/help/analysis-workspace/c-panels/blank-panel.md) header.
+
+### Upgrade to Customer Journey Analytics
+
+To access information about upgrading to Customer Journey Analytics:
+
+1. Select the [!UICONTROL **Workspace**] tab.
+
+1. In the [!UICONTROL **Learning**] section in the left rail, select [!UICONTROL **Upgrade to Customer Journey Analytics**].
+
+  This page is intended for customers who have not yet fully upgraded from Adobe Analytics to Customer Journey Analytics. It provides a questionnaire that results in dynamically generated upgrade steps for your organization's unique circumstances. 
+   
+  For more information, see [Dynamically generate upgrade steps for your organization](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#dynamically-generate-upgrade-steps-for-your-organization) in [Upgrade from Adobe Analytics to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).
 
 ## Preferred landing page
 
