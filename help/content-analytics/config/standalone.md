@@ -4,8 +4,6 @@ description: Step-by-step guide to configure Adobe Content Analytics as a standa
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-hide: yes
-hidefromtoc: yes
 ---
 # Standalone configuration
 
