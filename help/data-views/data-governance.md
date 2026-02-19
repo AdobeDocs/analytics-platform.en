@@ -1,5 +1,5 @@
 ---
-title: Labels and policies
+title: Labels And Policies
 description: Learn how data labels and policies defined in Adobe Experience Platform affect data views and reporting in Customer Journey Analytics.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance

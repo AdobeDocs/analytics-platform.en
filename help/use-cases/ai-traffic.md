@@ -4,8 +4,8 @@ description: Understand how you can use derived fields as a foundation to report
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
+exl-id: 29857457-3fbb-441c-8761-91712b9df20f
 ---
-
 # Report on LLM and AI-generated traffic
 
 This use case article explores how to use the Customer Journey Analytics derived fields capability as a foundation to report on LLM (Large Language Model) and AI-generated traffic.

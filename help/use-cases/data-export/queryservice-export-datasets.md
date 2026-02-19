@@ -184,8 +184,7 @@ Below is an example to properly apply attribution across sessions and that illus
 - apply window functions like sessionization and / or attribution, and 
 - restrict the output based on the `ingest_time`.
 
-  +++
-  Details
+  +++ Details
   
   To do this, you have to...
 

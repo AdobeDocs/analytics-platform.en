@@ -3,6 +3,7 @@ title: Include multiple dimensions in a freeform table
 description: Learn how to include multiple dimensions in a freeform table
 feature: Visualizations
 role: User
+exl-id: 66ebb4fc-feb2-4fa7-a107-37508cca4748
 ---
 # Include multiple dimension columns in a freeform table
 
@@ -103,11 +104,12 @@ When you create a segment based on a dimension item that spans multiple dimensio
 
 For information about creating a segment, see [Create segments](/help/components/segments/seg-create.md).
 
-## Unsupported dimensions {#unsupported}
+## Unsupported dimensions and features {#unsupported}
 
-The following dimension combinations are not supported, and Analysis Workspace either prohibits them being added or shows an error message after they are added:
+The following dimension combinations and features are not supported when using multiple dimension columns, and Analysis Workspace either prohibits their use or shows an error message:
 
 * Multiple dimensions that are from fields referencing different [arrays of objects](/help/use-cases/object-arrays.md) that are used together in the same freeform table. 
   
   Multiple dimensions are allowed together in the same freeform table if they reference the same array of objects.
-  
+
+* [Static dimension items](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md#static-dimension-items).

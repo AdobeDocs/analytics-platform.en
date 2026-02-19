@@ -1,6 +1,6 @@
 ---
-title: Data views overview
-description: A data view specifies how you want to interpret elements of the data in the Customer Journey Analytics connection, such as metrics, dimensions, sessions, etc.
+title: Data Views Overview
+description: Learn how a data view specifies how you want to interpret elements of the data in the Customer Journey Analytics connection, such as metrics, dimensions, sessions, etc.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
@@ -55,6 +55,8 @@ Data views let you spontaneously change schema element settings, without having 
 
 * You can rename your containers in a data view and have those renamed containers surface in any Workspace project that is based on that data view.
 
+* You can enable or disable the Data Insights Agent for a data view. 
+
 ## Data views prerequisites {#prerequisites}
 
 * Before you can create data views, you need to [set up one or more connections to Experience Platform datasets](/help/connections/create-connection.md).
@@ -78,9 +80,10 @@ Some data view settings can be overridden in Analysis Workspace at the project l
 
 ## Delete data views {#delete}
 
-If you delete a data view in [!UICONTROL Customer Journey Analytics], an error message indicates that any [!UICONTROL Workspace] projects that depend on this deleted data view no longer works.
+If you [delete a data view](/help/data-views/manage-dataviews.md#delete-data-views) in [!UICONTROL Customer Journey Analytics], an error message indicates that any [!UICONTROL Workspace] projects that depend on this deleted data view no longer works.
 
 ## Next steps
 
 * [Create data views](/help/data-views/create-dataview.md)
+* [Manage data views](/help/data-views/manage-dataviews.md)
 * [Data views use cases](/help/use-cases/data-views/data-views-usecases.md)

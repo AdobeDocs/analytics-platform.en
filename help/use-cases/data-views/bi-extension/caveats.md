@@ -4,6 +4,7 @@ description: Caveats for the BI extension in various BI tools in Customer Journe
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
+exl-id: b6e8ebd9-4fda-41d1-ac37-ca869f5ee57c
 ---
 # Caveats
 
