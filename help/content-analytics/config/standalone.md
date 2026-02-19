@@ -1,12 +1,9 @@
 ---
-title: Configure Content Analytics (standalone)
-description: Guides you through the steps required to configure Content Analytics (standalone)
+title: Configure Content Analytics (Standalone)
+description: Step-by-step guide to configure Adobe Content Analytics as a standalone solution. Learn how to set up schemas, datasets, datastreams, and reporting for comprehensive content performance insights without a full Customer Journey Analytics implementation.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-hide: yes
-hidefromtoc: yes
-exl-id: 35d63b7d-f35a-4a88-ae14-96724d32a931
 ---
 # Standalone configuration
 
