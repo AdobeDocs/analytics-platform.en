@@ -4,6 +4,7 @@ description: Step-by-step guide to configure Adobe Content Analytics as a standa
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
+exl-id: 35d63b7d-f35a-4a88-ae14-96724d32a931
 ---
 # Standalone configuration
 
