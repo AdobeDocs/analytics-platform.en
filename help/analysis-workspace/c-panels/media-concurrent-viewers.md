@@ -49,7 +49,7 @@ In Analysis Workspace, the Concurrent viewers metric is the number of unique per
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Media concurrent viewers panel]([/26990/?quality=12&learn=on](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace)){target="_blank"} for a demo video. 
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Media concurrent viewers panel](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace){target="_blank"} for a demo video. 
 
 {{videoaa}}
 
