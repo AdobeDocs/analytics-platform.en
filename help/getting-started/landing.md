@@ -7,7 +7,15 @@ exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
 ---
 # Customer Journey Analytics landing page
 
-The landing page for Customer Journey Analytics highlights [!DNL Analysis Workspace] and features a project manager home page and a learning section to help you manage customer journey data more effectively.
+The Customer Journey Analytics landing page includes the following subtabs:
+
+**[!UICONTROL Projects]**: Customized designs that combine data components, tables, and visualizations that you built or that someone else built and shared with you. [!UICONTROL Projects] also refers to blank projects and blank mobile scorecards.
+
+**[!UICONTROL Templates]**: Includes templates provided by Adobe and any templates specific to your organization.
+
+**[!UICONTROL Learning]**: Contains hands-on video tours, tutorials, and links to documentation. It also contains information about upgrading from Adobe Analytics to Customer Journey Analytics, along with a tool to dynamically generate upgrade steps specific to your organization.
+
+![CJA landing page left rail](assets/cja-landing-page-left-rail.png)
 
 
 >[!BEGINSHADEBOX]
@@ -19,47 +27,39 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Landing page in 
 >[!ENDSHADEBOX]
 
 
-The Customer Journey Analytics landing page is comprised of the following subtabs: Projects and Learning.
-
-**[!UICONTROL Projects]** are customized designs that combine data components, tables, and visualizations that you built or that someone else built and shared with you. [!UICONTROL Projects] also refers to blank projects and blank mobile scorecards.
-
-The **[!UICONTROL Learning]** tab contains hands-on video tours, tutorials, and links to documentation.
-
->[!BEGINTABS]
-
->[!TAB Projects] 
-
-![Projects landing page](assets/landing-projects.png)
-
->[!TAB Learning]
-
-![Learning landing page](assets/landing-learning.png)
-
-
->[!ENDTABS]
-
 ## Projects
 
-The **[!UICONTROL Projects]** tab serves as the home page for the  [!UICONTROL **Workspace**] tab. It displays the Company folder, any personal folders you created, your Workspace projects, and Mobile scorecards. Use this page to view, create, and modify folders, projects, and mobile scorecards. See [Projects](/help/analysis-workspace/build-workspace-project/freeform-overview.md) for more information.
+The **[!UICONTROL Projects]** section in the left rail serves as the home page for the [!UICONTROL **Workspace**] tab.
 
+To access projects in Customer Journey Analytics:
+
+1. Select the [!UICONTROL **Workspace**] tab.
+
+1. Select [!UICONTROL **Projects**] in the left rail.
+
+The Projects section displays the Company folder, any personal folders you created, your Workspace projects, and Mobile scorecards. Use this page to view, create, and modify folders, projects, and mobile scorecards. See [Projects](/help/analysis-workspace/build-workspace-project/freeform-overview.md) for more information.
 
 **[!UICONTROL Projects]** are customized designs that combine data components, tables, and visualizations that you built or that someone else built and shared with you. [!UICONTROL Projects] also refers to blank projects and blank mobile scorecards.
 
 >[!NOTE]
 >
->Several of the following settings persist during the session and across sessions. For example, the tab you selected, the selected segments, selected columns, and the column sort direction. Search results are not persistent.
+>Several of the following settings persist across sessions. For example, the tab you selected, the selected segments, selected columns, and the column sort direction. Search results do not persist.
 
 See [Projects](/help/analysis-workspace/build-workspace-project/freeform-overview.md) for more information.
 
 ## Templates
 
-To access Templates tab in Customer Journey Analytics:
+To access templates in Customer Journey Analytics:
 
 1. Select the [!UICONTROL **Workspace**] tab.
 
 1. In the [!UICONTROL **Templates**] section in the left rail, you can select either Adobe templates or company templates. 
 
-For more information, see [Use templates](/help/analysis-workspace/templates/use-templates.md).
+For information about using templates, see the following resources:
+
+* [Use templates](/help/analysis-workspace/templates/use-templates.md)
+
+* [Create and manage templates](/help/analysis-workspace/templates/create-templates.md)
 
 <!--
 
@@ -115,7 +115,7 @@ The available columns are:
 
 ## Learning
 
-The **[!UICONTROL Learning]** section on the [!UICONTROL **Workspace**] tab provides information about beginner, intermediate, or advanced features and use-cases in Customer Journey Analytics. It also provides information about how to transition from Adobe Analytics to Customer Journey Analytics.
+The **[!UICONTROL Learning]** section on the [!UICONTROL **Workspace**] tab provides information about beginner, intermediate, or advanced features and use cases in Customer Journey Analytics. It also provides information about how to upgrade from Adobe Analytics to Customer Journey Analytics.
 
 ### Learning paths
 
@@ -128,7 +128,7 @@ To access information about learning paths in Customer Journey Analytics:
    This page contains hands-on video tours, tutorials, and links to documentation. 
 
 
-The [!UICONTROL **Learning paths**] page offers the following features
+The [!UICONTROL **Learning paths**] page offers the following features:
 
 * **Filter content:** Use ![Filter](/help/assets/icons/Filter.svg) to filter learning content by **[!UICONTROL Type]** (**[!UICONTROL Document]**, **[!UICONTROL Video]**, and **[!UICONTROL Tours & tutorials]**) and **[!UICONTROL Experience Level]** (**[!UICONTROL Beginner]**, **[!UICONTROL Intermediate]**, or **[!UICONTROL Advanced]**).
 * **Track progress:** After you select a piece of content, a ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Viewed]** tag appears. This tag helps you track your progress through the learning content. You can select the ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Viewed]** tag to remove it from a piece of content.
