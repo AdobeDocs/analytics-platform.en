@@ -161,7 +161,7 @@ For more information, see [Quick segments](/help/components/segments/seg-quick.m
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Drop down segments](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Drop down segments](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} for a demo video.
 
 {{videoaa}}
 

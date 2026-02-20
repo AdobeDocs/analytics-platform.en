@@ -19,15 +19,11 @@ Connections allow Customer Journey Analytics product administrators to define wh
 
 ![Connections workflow](assets/connection-workflow.png)
 
-<!-- Outdated interface 
-
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configuring connections](https://video.tv.adobe.com/v/35111/?quality=12&learn=on){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Connect to data sources](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
-
--->
 
 On a high-level, the Connections workflow allows you to:
 

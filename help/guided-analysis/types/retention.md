@@ -24,7 +24,7 @@ The ![Retention](/help/assets/icons/Retention.svg) **[!UICONTROL Retention]** an
 
 In this analysis, the chart's x-axis represents the time since a user's initial start event and the y-axis represents the percentage of users who engage with one or more return events. You can view both retention and churn across durations, and the durations shown can be customized through the query settings. Below the chart, a table provides aggregated data with the option to show individual cohorts, which are a group of people who did the starting event on the same date. 
 
->[!VIDEO](https://video.tv.adobe.com/v/3430503/?quality=12&learn=on)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/retention)
 
 
 ## Use cases

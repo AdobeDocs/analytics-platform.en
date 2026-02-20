@@ -14,7 +14,7 @@ Calculated metric are custom metrics that you can create from existing metrics. 
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Introduction to calculated metrics](https://video.tv.adobe.com/v/31787/?quality=12&learn=on){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Introduction to calculated metrics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/introduction-to-calculated-metrics-in-customer-journey-analytics){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 

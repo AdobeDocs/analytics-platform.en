@@ -13,7 +13,7 @@ The following information provides executive users with information on best prac
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Assist executives to access mobile scorecards](https://video.tv.adobe.com/v/343460/){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Assist executives to access mobile scorecards](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 

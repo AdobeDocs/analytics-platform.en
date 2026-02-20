@@ -166,7 +166,7 @@ The connection creation and edit workflow experience brings all the dataset and 
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create and edit a connection](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Connect to data sources](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 

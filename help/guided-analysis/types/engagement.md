@@ -27,8 +27,11 @@ Features that plot toward the top of this visualization indicate that they are f
 * Features in the bottom-left of the matrix are your **low impact** features; they are not widely adopted or frequently used.
 * Features in the bottom-right of the matrix are your **one-time** features; they are widely adopted, but not frequently used.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
+>[!BEGINSHADEBOX]
 
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Engagement analysis](https://video.tv.adobe.com/v/3429489/&learn=on){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
 
 ## Use cases
 

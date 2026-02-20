@@ -23,7 +23,7 @@ This architecture illustrates how Custoner Journey Analytics allows you to:
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analysis: Analytics for the Experience Business](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"} for a introduction video to Customer Journey Analytics.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Customer Journey Analysis: Analytics for the Experience Business](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics){target="_blank"} for a introduction video to Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 
@@ -93,13 +93,13 @@ From Data Ingestion to direct SQL access, several components of the Experience P
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Work with data in Customer Journey Analytics](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"} for a introduction video omn how to work with data in Customer Journey Analytics.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Work with data in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-prep/working-with-data-in-cja){target="_blank"} for a introduction video omn how to work with data in Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Architecture and integration](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"} for a introduction video on the architecture and integration of Customer Journey Analytics..
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Architecture and integration](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/architecture/architecture-and-integrations-of-cja){target="_blank"} for a introduction video on the architecture and integration of Customer Journey Analytics..
 
 >[!ENDSHADEBOX]
 
