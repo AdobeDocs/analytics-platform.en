@@ -27,7 +27,7 @@ While these analysis methods can be used for both field-based stitching and grap
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Stitching enablement and validation](https://video.tv.adobe.com/v/3478120?quality=12&learn=on){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Stitching enablement and validation](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 

@@ -13,7 +13,7 @@ Creating a data view involves either creating metrics and dimensions from schema
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create or edit a data view](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create or edit a data view](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/overview-of-configuring-data-views-for-cja){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 

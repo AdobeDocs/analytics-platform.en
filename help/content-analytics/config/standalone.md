@@ -77,7 +77,7 @@ You need either a system administrator or a product administrator to add you as 
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Manage users for a product profile](https://video.tv.adobe.com/v/333860/?quality=12&learn=on){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Manage users for a product profile](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users){target="_blank"} for a demo video.
 
 
 >[!ENDSHADEBOX]

@@ -11,17 +11,6 @@ In a Workspace project, you typically use the [calendar in a panel](/help/analys
 
 Date range components enable you to define and override the calendar settings for the panel.
 
-<!-- Very old video, should we show it?
-
-+++ View a video illustrating use of calendar and date ranges
-
->[!VIDEO](https://video.tv.adobe.com/v/24136?format=jpeg)
-
-{{videoaa}}
-+++
-
--->
-
 ## Use date ranges
 
 You can use a date range component to redefine the calendar for the panel.

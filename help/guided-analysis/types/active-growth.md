@@ -25,7 +25,7 @@ The ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Active grow
 All active users (new + repeat + return) appear as a shade of teal above the horizontal axis, while all dormant users appear in orange below the horizontal axis.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3421667/?quality=12&learn=on)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/active-growth)
 
 ## Use cases
 
