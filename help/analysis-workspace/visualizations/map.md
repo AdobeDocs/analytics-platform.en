@@ -42,6 +42,12 @@ _This article documents the Map visualization in_ ![CustomerJourneyAnalytics](/h
 
 The ![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL Map]** visualization in Analysis Workspace allows you to build a visual map of any metric (including calculated metrics). It is useful for identifying and comparing metric data across different geographic regions.
 
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Map visualization](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/configure-and-use-the-map-visualization){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
 ## Prerequisites
 
 ### Add context labels in data views

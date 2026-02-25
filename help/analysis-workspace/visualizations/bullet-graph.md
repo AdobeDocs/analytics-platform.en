@@ -39,9 +39,7 @@ The bullet graph features a single, primary measure (for example, current year-t
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bullet graph visualization](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/visualizations/bullet-graph-visualization){target="_blank"} for a demo video.
-
-{{videoaa}}
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bullet graph visualization](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bullet-graph-visualizations){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 

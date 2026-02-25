@@ -45,18 +45,24 @@ Attribution comprises the following features:
 ## Videos
 
 
+<!--  Attribution IQ
+
 >[!BEGINSHADEBOX]
 
 See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution in Freeform tables](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/using-attribution-iq-in-freeform-tables){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 
+-->
 
+<!-- Attribution IQ 
 >[!BEGINSHADEBOX]
 
 See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution in calculated metrics](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/attribution-iq-in-calculated-metrics){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
+
+-->
 
 
 >[!BEGINSHADEBOX]
@@ -66,9 +72,13 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Using the Attrib
 >[!ENDSHADEBOX]
 
 
+<!-- Attribution IQ
+
 >[!BEGINSHADEBOX]
 
 See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adding side-by-side comparisons of Attribution models](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/adding-side-by-side-comparisons-of-attribution-iq-models){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
+
+-->
 

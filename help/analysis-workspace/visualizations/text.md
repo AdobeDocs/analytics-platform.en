@@ -26,6 +26,12 @@ _This article documents the Text visualization in_ ![CustomerJourneyAnalytics](/
 
 To add user-defined rich text to your Workspace project, you can use a ![Text](/help/assets/icons/Text.svg) **[!UICONTROL Text]** visualization or use descriptions for a visualization and panel. 
 
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Text visualization](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-text-visualizations){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
 ## Use
 
 You can use the Text visualization in the following ways:
