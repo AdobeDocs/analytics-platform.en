@@ -440,7 +440,7 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_dialog"
->title="Enable identity stitching"
+>title="Identity stitching"
 >abstract="Enable identity stitching derives user identity information from a dataset or from the identity graph. This process may include the merge of user data from authenticated and unauthenticated sessions.<br/><br/>You are responsible to comply with applicable laws and regulations. This compliance includes that you obtain the necessary end user permissions before you activate stitching on a dataset."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
 
