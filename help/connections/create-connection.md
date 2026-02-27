@@ -99,6 +99,13 @@ role: Admin
 >abstract="A change of the Persistent ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Persistent ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
 
 
+>[!CONTEXTUALHELP]
+>id="connection_use_primary_identity_namespace"
+>title="Use primary identity namespace"
+>abstract="Automatically detect and use an identityMap namespace defined as **[!UICONTROL primary]**, at each event level."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces" text="Identity namespace overview" 
+
+
 <!-- Start of contextual help entries for CJA connection dialogs -->
 
 >[!CONTEXTUALHELP]

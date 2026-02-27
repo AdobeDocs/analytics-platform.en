@@ -30,8 +30,8 @@ exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-customer-care"
->title="Contact Adobe Customer Care to generate a stitched dataset"
->abstract="If you have a field that contains an identifier that exists in multiple datasets but is not the primary identifier, you can use that to generate a new dataset with a consistent identifier."
+>title="Enable stitching for one or more datasets"
+>abstract="If you have a field that contains an identifier that exists in multiple datasets but is not the primary identifier, you can use stitching to elevate the data into one or more of these datasets."
 
 <!-- markdownlint-enable MD034 -->
 
