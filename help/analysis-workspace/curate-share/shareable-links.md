@@ -29,14 +29,15 @@ You can also share a link to a specific part of a project, such as a panel or in
 * From the context menu of a panel header, select **[!UICONTROL Get panel link]** 
 * From the context menu of a visualization header, select **[!UICONTROL Get visualization link]** 
 
-[Watch the video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) on how to create links and use them to drive recipients to specific parts of your project. 
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Link inside or outside of your prokect](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
 
 ![The drop-down menu after you right-click the header with the Get visualization link highlighted.](assets/get-visualization-link.png)
 
 ## Use links in a table of contents {#TOC} 
 
-One tip for leveraging the various link options is to always include a table of contents at the top of your Workspace project. In the table of contents, you can link to other relevant projects, specific panels and specific visualizations. This helps the recipient of the project to navigate more easily.  
+One tip for leveraging the various link options is to always include a [table of contents](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) at the top of your Workspace project. In the table of contents, you can link to other relevant projects, specific panels and specific visualizations. This helps the recipient of the project to navigate more easily.  
 
-[Watch the video](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html) on how to construct a Table of contents using links and Workspace's rich text editor. 
-
-![A project Table of contents.](assets/toc.png)

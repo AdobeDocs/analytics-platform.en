@@ -9,9 +9,6 @@ role: User
 
 Freeform tables in Analysis Workspace are the foundation for interactive data analysis. As such, they can contain thousands of rows of information. Filtering and sorting the data can be a critical part of efficiently surfacing the most important information. 
 
-<!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
-
->[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## Filter tables
 
