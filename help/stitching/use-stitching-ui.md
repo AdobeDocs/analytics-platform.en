@@ -92,6 +92,35 @@ If you meet the prerequisites, you might want to perform some preflight checks o
 >title="Person ID"
 >abstract="Select a person ID (the unique identifier for a person) from the available identities. In case you want to use graph-based stitching, select **[!UICONTROL Identity Graph]**."
 
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics"
+>title="Stitching metrics"
+>abstract="Stitching metrics are being calculated using a sample set of data from last 7 days (not including today's data)."
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics_gbs_personidcoverage"
+>title="Person ID coverage"
+>abstract="The coverage of the selected person ID that is used for identification during the stitching process (live and replay).<br/>For best stitching results, a (persistent ID, person ID) relation should be present in the identity graph for each persistent ID."
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics_fbs_personidcoverage"
+>title="Person ID coverage"
+>abstract="The coverage of the selected person ID that is used for identification during the stitching process (live and replay).<br/>For best stitching results, person ID (user info) should be sent on at least one event for each persistent ID (device info)."
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics_persistentidcoverage"
+>title="Persistent ID coverage"
+>abstract="This value is used for identification during the stitching process (live and replay), in case a person ID value cannot be detected. <br/>Events with no persistent ID and no person ID are dropped from the data. For best stitching results, a persistent ID should be present on all events."
+
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics_badids"
+>title="Bad IDs"
+>abstract="Bad IDs are ID values that severely affect reporting data."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Bad IDs"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Stitching and Bad IDs"
+
+
 To enable stitching, in the event dataset section of the **[!UICONTROL Add datasets]** or **[!UICONTROL Edit dataset]** dialog: 
 
 ![Identity stitching options when you enable identity stitching](assets/identity-stitching-ui.png)
