@@ -472,7 +472,7 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >[!CONTEXTUALHELP]
 >id="connection_namespace_graph"
 >title="Namespace identity graph"
->abstract="Select the namespace to use to pick the identifier from the identity map."
+>abstract="Select the namespace to use to pick the identifier from the identity graph."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
 
 
