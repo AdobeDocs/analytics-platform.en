@@ -28,7 +28,7 @@ The ![Timeline](/help/assets/icons/Timeline.svg) **[!UICONTROL Timeline]** analy
 >* **Admins**: *The PersonID property is required for this analysis. Please add Person ID to the data view.*
 >* **Non-admins**: *The PersonID property is required for this analysis. Please work with your Customer Journey Analytics administrator to add Person ID to the data view.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3427810/?quality=12&learn=on)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/timeline)
 
 
 
