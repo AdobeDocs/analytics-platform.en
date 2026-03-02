@@ -52,6 +52,13 @@ All regression model trendlines are fit using ordinary least squares:
 | **[!UICONTROL Quadratic]** | Finds the best-fit for a dataset shaped like a parabola (concave up or down). Equation: `y = a + b * x + c * x^2` |
 | **[!UICONTROL Moving average]** | Create a smooth trendline based on a set of averages. Also known as a rolling average, a moving average uses a specific number of data points (determined by your [!UICONTROL Granularity] selection), averages them, and uses the average as a point in the line. Examples include a seven day moving average or a four week moving average.|
 
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Line](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/line-visualization){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
 >[!MORELIKETHIS]
 >
 >[Add a visualization to a panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)

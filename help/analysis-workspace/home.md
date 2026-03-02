@@ -15,8 +15,6 @@ Analysis Workspace allows you to build analyses quickly to gather insights and t
 
 See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Analysis workspace overview](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview){target="_blank"} for a demo video.
 
-{{videoaa}}
-
 >[!ENDSHADEBOX]
 
 ## Interface

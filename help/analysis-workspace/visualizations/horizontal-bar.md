@@ -51,6 +51,11 @@ Use the **[!UICONTROL 100% stacked]** option in ![Setting](/help/assets/icons/Se
 
 ![Horizontal bar stacked 100%](assets/horizontal-bar-stacked100.png)
 
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Area visualization](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
 
 >[!MORELIKETHIS]
 >

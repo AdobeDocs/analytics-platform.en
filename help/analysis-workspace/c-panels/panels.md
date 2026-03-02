@@ -220,6 +220,12 @@ Note that Dynamic drop-down segments are not available for metrics, segments, or
 
 A dynamic drop-down segment provides the same context menu options as static drop-down segments.
 
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dynamic drop down segments](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
 
 ## Context menu
 

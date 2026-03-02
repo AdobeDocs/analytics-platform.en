@@ -55,6 +55,12 @@ Use the **[!UICONTROL 100% stacked]** option in ![Setting](/help/assets/icons/Se
 
 ![A 100% stacked bar chart.](assets/bar-stacked100.png)
 
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Area visualization](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
 >[!MORELIKETHIS]
 >
 >[Add a visualization to a panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)

@@ -7,13 +7,6 @@ role: User
 ---
 # Row settings
 
-
->[!BEGINSHADEBOX]
-
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Row and column settings in a Freeform table](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} for a demo video.
-
->[!ENDSHADEBOX]
-
 Row settings vary depending on which component you have dragged into the table. To access table row settings, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** next to a dimension, segment, metric, time period, or a breakdown within each of these objects.
 
 ![Freeform Table highilighting the Settings icon for Metrics](assets/row-settings.png)
@@ -23,6 +16,14 @@ Row settings vary depending on which component you have dragged into the table. 
 | **[!UICONTROL Breakdown by position]** | By default, this setting is disabled and breakdowns are fixed to static row items. For example, imagine you breakdown the top 3 Page dimension items (Homepage, Search Results, Checkout) by Marketing Channel. Then, you leave the project and return two weeks later. Upon opening the project again, the top 3 pages have changed, and now Homepage, Search Results and Checkout are the top 4-6 pages instead. By default, your Marketing Channel breakdowns still appear under Homepage, Search Results and Checkout, even though they are now in rows 4-6. <br> In contrast, **Breakdown by position** always breaks down the top 3 items, regardless of what they are. Referring back to the example, when you re-open your project, the Marketing Channel breakdowns are tied to the top 3 pages in the table. And not to Homepage, Search Results and Checkout, which are now in rows 4-6. |
 | **[!UICONTROL Percentages]** | **Calculate percentages by column** (default): the percentages visible in a cells are calculated based on the column total. <br>**Calculate percentages by row**: the percentages in cells are calculated across the row, as opposed to down the column, with Grand total as the denominator. This calculation is useful for trending percentages. |
 | **[!UICONTROL Column totals]** | These settings are available only for [static rows](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md). <br> **Show as sum of current rows** shows a client-side sum of the rows in the table, which means the total does *not* de-duplicate metrics like visits or persons. <br> **Show grand total** shows a server-side sum, which means the total of de-duplicated metrics. |
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Row and column settings in a Freeform table](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} for a demo video.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
 
 ## Change row count
 

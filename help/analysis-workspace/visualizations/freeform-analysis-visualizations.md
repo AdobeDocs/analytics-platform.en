@@ -44,6 +44,12 @@ The following visualization types are available in Analysis Workspace:
 
 ## Add visualizations to a panel
 
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Add visualizations to the freeform panel](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/panels/add-components-to-the-freeform-panel){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
 1. Open the Workspace project where you want to add a visualization.
 
 1. Use any of the following methods to add the visualization:
