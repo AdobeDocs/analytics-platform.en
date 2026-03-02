@@ -116,9 +116,9 @@ If you meet the prerequisites, you might want to perform some preflight checks o
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_badids"
 >title="Bad IDs"
->abstract="Bad IDs are ID values that severely affect reporting data.
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="Bad IDs"
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/stitching/bad-ids" tet="Stitching and Bad IDs"
+>abstract="Bad IDs are ID values that severely affect reporting data."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Bad IDs"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Stitching and Bad IDs"
 
 
 To enable stitching, in the event dataset section of the **[!UICONTROL Add datasets]** or **[!UICONTROL Edit dataset]** dialog: 
