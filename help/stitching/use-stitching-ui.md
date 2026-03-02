@@ -106,14 +106,14 @@ To enable stitching, in the event dataset section of the **[!UICONTROL Add datas
 
    If you select **[!UICONTROL Identity Map]** for the persistent ID, you have to select a namespace . You have two options:
 
-   * Enable **[!UICONTROL Use primary identity namespace]** to use the primary identity namespace.
+   * Select **[!UICONTROL Use primary identity namespace]** to use the primary identity namespace.
    * Select a namespace from the **[!UICONTROL Namespace]** drop-down menu.
 
 1. Select a person ID from the **[!UICONTROL Person ID]** drop-down menu.
 
    If you select **[!UICONTROL Identity Map]** for the person ID, you have to select a namespace. You have two options:
 
-   * Enable **[!UICONTROL Use primary identity namespace]** to use the primary identity namespace.
+   * Select **[!UICONTROL Use primary identity namespace]** to use the primary identity namespace.
    * Select a namespace from the **[!UICONTROL Namespace]** drop-down menu.
  
 

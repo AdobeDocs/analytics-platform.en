@@ -99,6 +99,13 @@ role: Admin
 >abstract="A change of the Persistent ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Persistent ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
 
 
+>[!CONTEXTUALHELP]
+>id="connection_use_primary_identity_namespace"
+>title="Use primary identity namespace"
+>abstract="Automatically detect and use an identityMap namespace defined as **[!UICONTROL primary]**, at each event level."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces" text="Identity namespace overview" 
+
+
 <!-- Start of contextual help entries for CJA connection dialogs -->
 
 >[!CONTEXTUALHELP]
@@ -440,8 +447,8 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_dialog"
->title="Enable identity stitching"
->abstract="Enable identity stitching derives user identity information from a dataset or from the identity graph. This process may include the merge of user data from authenticated and unauthenticated sessions.<br/><br/>You are responsible to comply with applicable laws and regulations. This compliance includes that you obtain the necessary end user permissions before you activate stitching on a dataset."
+>title="Identity stitching"
+>abstract="Identity stitching derives user identity information from a dataset or from the identity graph. This process may include the merge of user data from authenticated and unauthenticated sessions.<br/><br/>You are responsible to comply with applicable laws and regulations. This compliance includes that you obtain the necessary end user permissions before you activate stitching on a dataset."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
 
 >[!CONTEXTUALHELP]
