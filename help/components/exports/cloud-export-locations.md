@@ -162,7 +162,7 @@ For information about how to manage existing locations, including viewing, editi
 
    * From the Exports page as described above, in [Begin creating a cloud export location](#begin-creating-a-cloud-export-location)
    
-   * When [exporting full tables from Analysis Workspace](//help/analysis-workspace/export/export-cloud.md#export-full-tables)
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. In the [!UICONTROL **Location properties**] section of the [!UICONTROL **Add location**] dialog box, specify the following information to configure an Azure SAS location:
 
