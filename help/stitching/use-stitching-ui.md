@@ -95,7 +95,7 @@ If you meet the prerequisites, you might want to perform some preflight checks o
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
 >title="Stitching metrics"
->abstract="Stitching metrics are being calculated using a sample set of data from last 7 days (not including today's data)."
+>abstract="Stitching metrics are being calculated using a sample set of data, from any data ingested in the last 7 days.<br>This normally differs from the sample data."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
@@ -118,7 +118,6 @@ If you meet the prerequisites, you might want to perform some preflight checks o
 >title="Bad IDs"
 >abstract="Bad IDs are ID values that severely affect reporting data."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Bad IDs"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Stitching and Bad IDs"
 
 
 To enable stitching, in the event dataset section of the **[!UICONTROL Add datasets]** or **[!UICONTROL Edit dataset]** dialog: 
