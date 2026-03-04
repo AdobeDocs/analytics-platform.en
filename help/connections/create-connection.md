@@ -505,6 +505,7 @@ Alternatively, the dataset types listed above, can be based on an ad hoc or rela
 
 You can add one or more Experience Platform datasets when you create or edit a connection. 
 
+#### For person-based connections
 
 1. In **[!UICONTROL Connection]** > **[!UICONTROL _Name of the connection_]** interface, select ![DataAdd](/help/assets/icons/DataAdd.svg) **[!UICONTROL Add datasets]**.
 
@@ -533,25 +534,49 @@ You can add one or more Experience Platform datasets when you create or edit a c
    
 1. Select one or more datasets and select **[!UICONTROL Next]**. At least one event or summary dataset must be part of the connection.
 
-1. Configure the [settings for each of the selected datasets](#dataset-settings), one by one, in the ➋ **[!UICONTROL Datasets settings]** step of the **[!UICONTROL Add datasets]** dialog.
+1. Configure the [settings for each of the selected datasets](#dataset-settings), one by one, in the ➋ **[!UICONTROL Datasets settings]** step of the **[!UICONTROL Add datasets]** dialog. 
 
-    ![Add datasets](assets/add-dataset.png)
+   ![Add datasets](assets/add-dataset.png)
 
-1. Select **[!UICONTROL Add datasets]** to add the configured datasets to the connection. You are notified when you have not provided all required settings for each of the datasets you want to add. 
+   * To remove a dataset from the conection, select ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]**.
+   * To take a step back, select **[!UICONTROL Back]**.
+   * To cancel adding datasets to a connection, select **[!UICONTROL Cancel]**.
+
+1. You need to specify all required settings for the selectd datasets before you can continue. If required input is missing, you see a red number that indicates how many datasets of a specific type are missing that required input. Required fields that do not have input or a selected value are identified by a ![AlertRed](/help/assets/icons/AlertRed.svg) and an explanation. Once you have configured all required settings for all datasets, select **[!UICONTROL Next]**.
+1. In ❸ **[!UICONTROL Datasets preview]** you see a preview for each dataset that is based on a simple set of data from recently ingested data.
+
+   ![Preview of a dataset while adding datasets as part of a connection](/help/connections/assets/add-dataset-preview.png)
    
-   Alternatively, you can select **[!UICONTROL Cancel]** to cancel the addition of datasets to the connection. Or select **[!UICONTROL Back]** to step back to the ➊ **[!UICONTROL Select datasets]** step.
+   * To show namespaces for each of the columns in the table, enable **[!UICONTROL Show column namespace]**.
+   * To search in the sample data, use ![Search](/help/assets/icons/Search.svg).
+   * To configure what columns to show, select ![ColumnSetting](/help/assets/icons/ColumnSetting.svg). <br/>In the **[!UICONTROL Customize table]** dialog:
+     1. Select the columns you want to show in the table.
+     1. Select **[!UICONTROL Apply]** to apply the selection, or **[!UICONTROL Cancel]** to cancel the selection.
+   * To display the data for columns that contain array or object data, select **[!UICONTROL Values]**.
 
+   The **[!UICONTROL Dataset info]** pane shows details about the dataset. Select the value for **[!UICONTROL Schema]** or **[!UICONTROL Dataset]** to open the relevant interface in Experience Platform in a new browser tab.  
+
+   * To remove a dataset from the conection, select ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]**.
+   * To take a step back, select **[!UICONTROL Back]**.
+   * To cancel adding datasets to a connection, select **[!UICONTROL Cancel]**.
+
+   
+1. Select **[!UICONTROL Add datasets]** to add the configured datasets to the connection.
+   
 
 ### Edit a dataset
 
 To edit a dataset that is already configured for a connection, in the **[!UICONTROL Connections]** > **[!UICONTROL _Name of the connection_]** interface:
 
+1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit connection]**.
 1. Select ![More](/help/assets/icons/More.svg) for the dataset listed in the dataset table that you want to edit 
 1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit dataset]**.
 
-1. Configure the [dataset settings](#dataset-settings) in the **[!UICONTROL Edit dataset: _Dataset name_]** dialog.
+1. In ❶ **[!UICONTROL Dataset settings]**, configure the [dataset settings](#dataset-settings) in the **[!UICONTROL Edit dataset: _Dataset name_]** dialog.
 
    ![Edit dataset](assets/edit-dataset.png)
+
+   If you make changes, ensure you specify all required settings for the dataset before you continue. If required input is missing, you cannot continue. Required fields that do not have input or a selected value are identified by a ![AlertRed](/help/assets/icons/AlertRed.svg) and an explanation. 
 
    >[!NOTE]
    >
@@ -560,6 +585,27 @@ To edit a dataset that is already configured for a connection, in the **[!UICONT
    >1. Delete the existing ad hoc or relational dataset from the connection.
    >1. Add the same dataset with updated settings to the connection.
    >
+
+   To remove the dataset from the connection, select ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]**.
+   
+   Once you have configured all required settings for the dataset, select **[!UICONTROL Next]**.
+
+1. In ❷ **[!UICONTROL Datasets preview]** you see a preview for each dataset that is based on a simple set of data from recently ingested data.
+
+   ![Preview of a dataset while adding datasets as part of a connection](/help/connections/assets/add-dataset-preview.png)
+   
+   * To show namespaces for each of the columns in the table, enable **[!UICONTROL Show column namespace]**.
+   * To search in the sample data, use ![Search](/help/assets/icons/Search.svg).
+   * To configure what columns to show, select ![ColumnSetting](/help/assets/icons/ColumnSetting.svg). <br/>In the **[!UICONTROL Customize table]** dialog:
+     1. Select the columns you want to show in the table.
+     1. Select **[!UICONTROL Apply]** to apply the selection, or **[!UICONTROL Cancel]** to cancel the selection.
+   * To display the data for columns that contain array or object data, select **[!UICONTROL Values]**.
+
+   The **[!UICONTROL Dataset info]** pane shows details about the dataset. Select the value for **[!UICONTROL Schema]** or **[!UICONTROL Dataset]** to open the relevant interface in Experience Platform in a new browser tab.  
+
+   * To remove a dataset from the conection, select ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]**.
+   * To take a step back, select **[!UICONTROL Back]**.
+   * To cancel adding datasets to a connection, select **[!UICONTROL Cancel]**.
 
 1. Select **[!UICONTROL Apply]** to apply the dataset settings. Select **[!UICONTROL Cancel]** to cancel.
 
