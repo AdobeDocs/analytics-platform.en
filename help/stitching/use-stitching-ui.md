@@ -120,7 +120,9 @@ If you meet the prerequisites, you might want to perform some preflight checks o
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Bad IDs"
 
 
-To enable stitching, in the event dataset section of the **[!UICONTROL Add datasets]** or **[!UICONTROL Edit dataset]** dialog: 
+### Dataset settings
+
+To enable stitching, in the event dataset **[!UICONTROL Datasets settings]** section of the **[!UICONTROL Add datasets]** or **[!UICONTROL Edit dataset]** dialog: 
 
 ![Identity stitching options when you enable identity stitching](assets/identity-stitching-ui.png)
 
@@ -156,10 +158,45 @@ To enable stitching, in the event dataset section of the **[!UICONTROL Add datas
 
    * Select a namespace from the **[!UICONTROL Namespace]** drop-down menu.
 
-
 1. Select a replay window from the **[!UICONTROL Replay window]** drop-down menu. The available options are  dependent on the Customer Journey Analytics package that you are entitled to.
 
-Once you save a connection, the stitching process for datasets that are enabled for stitching kicks when the ingestion of data for these datasets starts.
+1. Select **[!UICONTROL Next]** to see a preview of the event dataset subject to stitching.
+
+
+### Datasets preview
+
+On top of the standard **[!UICONTROL Datasets preview]** interface, when [adding](/help/connections/create-connection.md#add-datasets) or [editing](/help/connections/create-connection.md#edit-a-dataset) datasets in a person-based connection, two additional information panels are available.
+
+![Identity stitching options when you enable identity stitching](assets/identity-stitching-ui-preview.png)
+
+#### Stitching metrics
+
+  **[!UICONTROL Stitching metrics]** are being calculated using a sample set of data, from any data ingested in the last 7 days. This normally differs from the sample data used in the **[!UICONTROL Preview]** table. The Stitching metrics provides details for:
+
+  * **[!UICONTROL Person ID coverage]**: The coverage of the selected person ID that is used for identification during the stitching process (live and replay). For best stitching results, person ID (user info) should be sent on at least one event for each persistent ID (device info).
+
+    Person ID coverage is shown as a percentage and compared to what is recommended. Based on that, the status reflects whether coverage is good enough for using this person ID for stitching. If not, select another person ID with better coverage.
+
+  * **[!UICONTROL Persistent ID coverage]**: value is used for identification during the stitching process (live and replay), in case a person ID value cannot be detected. Events with no persistent ID and no person ID are dropped from the data. For best stitching results, a persistent ID should be present on all events.
+    
+    Persistent ID coverage is shown as a percentage and compared to what is recommended. Based on that, the status reflects whether coverage is good enough for using this persistent ID for stitching. If not, select another persistent ID with better coverage.
+
+
+#### Bad IDs
+
+When you have custom or placeholder values in the person ID field (for example, `undefined`), these  values can affect [stitching and reporting data quality](/help/stitching/faq.md#undefined-person-id-values).
+
+A Bad ID is a certain ID value (originating from either persistent ID or person ID field in a stitching-enabled datasets) that is on more than one million events in the connection data, within a month. Bad IDs are also referred to as BAVIDs in the Customer Journey Analytics interface. When an ID value is marked as a Bad ID, any future events that contain that ID value are discarded from the connection data and will not show up in the reporting.
+
+
+>[!NOTE]
+>The stitching metrics, including Bad IDs, are calculated based on a limited set of data. To better validate your stitching setup for a specific dataset against Bad IDs presence, please refer to this [tech note](/help/technotes/badids.md).
+>
+
+
+## Save
+
+Once you save a connection, the stitching process for datasets that are enabled for stitching kicks in when the ingestion of data for these datasets starts.
 
 >[!CAUTION]
 >

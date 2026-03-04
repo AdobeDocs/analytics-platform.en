@@ -562,19 +562,63 @@ You can add one or more Experience Platform datasets when you create or edit a c
 
    
 1. Select **[!UICONTROL Add datasets]** to add the configured datasets to the connection.
+
+
+#### For account-based connections
+
+You can add one or more Experience Platform datasets when you create or edit a connection. 
+
+
+1. In **[!UICONTROL Connection]** > **[!UICONTROL _Name of the connection_]** interface, select ![DataAdd](/help/assets/icons/DataAdd.svg) **[!UICONTROL Add datasets]**.
+
+1. In the ➊ **[!UICONTROL Select datasets]** step, you see a list of the Experience Platform datasets. 
+
+   ![Select datasets](assets/select-datasets.png)
+
+   For each dataset, the list shows:
+   
+   | Column | Description |
+   |---|---|
+   | **[!UICONTROL Dataset]** | Name of the dataset. Select the name to direct you to the dataset in Experience Platform. Select ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to display a popup with more details for the dataset. You can select **[!UICONTROL Edit in Platform]** to edit the dataset directly in Experience Platform. |
+   | **[!UICONTROL Dataset type]** | The type of dataset: [Event](#event-dataset), [Profile](#profile-dataset), [Lookup](#lookup-dataset), [Summary](#summary-dataset), [Adhoc](#ad-hoc-dataset), or [Relational](#relational-dataset). |
+   | **[!UICONTROL Number of records]** | The total records in the previous month for the dataset in Experience Platform. |
+   | **[!UICONTROL Schema]** | The schema for the dataset. Select the name to direct you to the schema in Experience Platform. |
+   | **[!UICONTROL Last batch]** | The state of the last batch ingested in Experience Platform. See [Batch states](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) more information. |
+   | **[!UICONTROL Dataset ID]** | The id of the dataset. |
+   | **[!UICONTROL Last updated]** | The last updated timestamp of the dataset. |
+
+   * To change the columns displayed for the list of datasets, select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) and select the columns to be displayed in the [!UICONTROL Customize table] dialog.
+   * To search for a specific dataset, use the ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) search field.
+   * To toggle between showing or hiding the selected datasets, select ![Select](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL Hide selected]** or **[!UICONTROL Show selected]**.
+   * To remove a dataset from the list of selected datasets, use ![Close](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). To remove all selected datasets, select **[!UICONTROL Clear all]**.
+   * To display details of a dataset, select ![InfoOutline](/help/assets/icons/InfoOutline.svg).
+
+   
+1. Select one or more datasets and select **[!UICONTROL Next]**. At least one event or summary dataset must be part of the connection.
+
+1. Configure the [settings for each of the selected datasets](#dataset-settings), one by one, in the ➋ **[!UICONTROL Datasets settings]** step of the **[!UICONTROL Add datasets]** dialog.
+
+    ![Add datasets](assets/add-dataset-b2b.png)
+
+1. Select **[!UICONTROL Add datasets]** to add the configured datasets to the connection. You are notified when you have not provided all required settings for each of the datasets you want to add. 
+   
+   Alternatively, you can select **[!UICONTROL Cancel]** to cancel the addition of datasets to the connection. Or select **[!UICONTROL Back]** to step back to the ➊ **[!UICONTROL Select datasets]** step.
    
 
 ### Edit a dataset
 
 To edit a dataset that is already configured for a connection, in the **[!UICONTROL Connections]** > **[!UICONTROL _Name of the connection_]** interface:
 
+
+#### For person-based connections
+
 1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit connection]**.
-1. Select ![More](/help/assets/icons/More.svg) for the dataset listed in the dataset table that you want to edit 
+1. Select ![More](/help/assets/icons/More.svg) for the dataset listed in the dataset table that you want to edit. 
 1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit dataset]**.
 
 1. In ❶ **[!UICONTROL Dataset settings]**, configure the [dataset settings](#dataset-settings) in the **[!UICONTROL Edit dataset: _Dataset name_]** dialog.
 
-   ![Edit dataset](assets/edit-dataset.png)
+   ![Edit dataset](assets/edit-dataset-b2c.png)
 
    If you make changes, ensure you specify all required settings for the dataset before you continue. If required input is missing, you cannot continue. Required fields that do not have input or a selected value are identified by a ![AlertRed](/help/assets/icons/AlertRed.svg) and an explanation. 
 
@@ -609,6 +653,26 @@ To edit a dataset that is already configured for a connection, in the **[!UICONT
 
 1. Select **[!UICONTROL Apply]** to apply the dataset settings. Select **[!UICONTROL Cancel]** to cancel.
 
+
+#### For account-based connections
+
+1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit connection]**.
+1. Select ![More](/help/assets/icons/More.svg) for the dataset listed in the dataset table that you want to edit. 
+1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit dataset]**.
+
+1. Configure the [dataset settings](#dataset-settings) in the **[!UICONTROL Edit dataset: _Dataset name_]** dialog.
+
+   ![Edit dataset](assets/edit-dataset-b2b.png)
+
+   >[!NOTE]
+   >
+   >You cannot edit the **[!UICONTROL Dataset type]**, **[!UICONTROL Person ID]**, **[!UICONTROL Identity namespace]** and **[!UICONTROL Timestamp]** for an [ad hoc](#ad-hoc-dataset) or a [relational](#relational-dataset) dataset that is part of a saved connection. To change any of these settings:
+   >
+   >1. Delete the existing ad hoc or relational dataset from the connection.
+   >1. Add the same dataset with updated settings to the connection.
+   >
+
+1. Select **[!UICONTROL Apply]** to apply the dataset settings. Select **[!UICONTROL Cancel]** to cancel.
 
 ### Dataset settings
 
