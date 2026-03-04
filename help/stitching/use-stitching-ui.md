@@ -173,15 +173,15 @@ On top of the standard **[!UICONTROL Datasets preview]** interface, when [adding
 
 #### Stitching metrics
 
-  **[!UICONTROL Stitching metrics]** are being calculated using a sample set of data, from any data ingested in the last 7 days. This sample set of data usually differs from the sample data used in the **[!UICONTROL Preview]** table. Stitching metrics provide details for:
+**[!UICONTROL Stitching metrics]** are being calculated using a sample set of data, from any data ingested in the last 7 days. This sample set of data usually differs from the sample data used in the **[!UICONTROL Preview]** table. Stitching metrics provide details for:
 
-  * **[!UICONTROL Person ID coverage]**: The coverage of the selected person ID used for identification during the stitching process (live and replay). For best stitching results, person ID (user info) should be sent on at least one event for each persistent ID (device info).
+* **[!UICONTROL Person ID coverage]**: The coverage of the selected person ID used for identification during the stitching process (live and replay). For best stitching results, person ID (user info) should be sent on at least one event for each persistent ID (device info).
 
-    Person ID coverage is shown as a percentage and compared to what is recommended. The status reflects whether coverage is good enough for using this person ID for stitching. If not, select another person ID with better coverage.
+  Person ID coverage is shown as a percentage and compared to what is recommended. The status reflects whether coverage is good enough for using this person ID for stitching. If not, select another person ID with better coverage.
 
-  * **[!UICONTROL Persistent ID coverage]**: This value is used for identification during the stitching process (live and replay), in case a person ID value cannot be detected. Events with no persistent ID and no person ID are dropped from the data. For best stitching results, a persistent ID should be present on all events.
+* **[!UICONTROL Persistent ID coverage]**: This value is used for identification during the stitching process (live and replay), in case a person ID value cannot be detected. Events with no persistent ID and no person ID are dropped from the data. For best stitching results, a persistent ID should be present on all events.
     
-    Persistent ID coverage is shown as a percentage and compared to what is recommended. The status reflects whether coverage is good enough for using this persistent ID for stitching. If not, select another persistent ID with better coverage.
+  Persistent ID coverage is shown as a percentage and compared to what is recommended. The status reflects whether coverage is good enough for using this persistent ID for stitching. If not, select another persistent ID with better coverage.
 
 
 #### Bad IDs
