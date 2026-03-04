@@ -1,6 +1,6 @@
 ---
 title: Enable Stitching
-description: Learn how to enable stitching in the Connections UI.
+description: Enable identity stitching for event datasets in Customer Journey Analytics. Learn how to configure persistent IDs, person IDs, and replay windows in the Connections UI to stitch data.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
@@ -52,7 +52,7 @@ If you meet the prerequisites, you might want to perform some preflight checks o
   
 
   * **Person ID**
-    * For graph-based stitching, ensure that the identity graph contains fragments that link ID values from your chosen persistent ID namespace and person ID namespace. You could run a test by going to the [Experience Platform Identity graph viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} and query the graph by some test persistent ID values. Verify to see if these persistent ID values are linked to person ID values in the graph.
+    * For graph-based stitching, ensure that the identity graph contains fragments that link ID values from your chosen persistent ID namespace and person ID namespace. You could run a test by going to the [Experience Platform Identity graph viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} and query the graph by some sample persistent ID values. Verify to see if these persistent ID values are linked to person ID values in the graph.
     * For field-based stitching, query 7 days of data where your person ID field is not null and divide by a query of 7 days of data for all events in your dataset. This percentage should ideally above 5%.
 
       Example of a query you could use for verification:
@@ -81,6 +81,8 @@ If you meet the prerequisites, you might want to perform some preflight checks o
 
 ## Enable identity stitching {#enable-identity-stitching}
 
+You can enable identity stitching when you [add](/help/connections/create-connection.md#add-datasets) or [edit](/help/connections/create-connection.md#edit-a-dataset) an event dataset in a person-based connection. Identity stitching is not available for account-based connections.
+
 >[!CONTEXTUALHELP]
 >id="connection_changeto_identitygraph"
 >title="Change to identity graph"
@@ -95,7 +97,7 @@ If you meet the prerequisites, you might want to perform some preflight checks o
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
 >title="Stitching metrics"
->abstract="Stitching metrics are being calculated using a sample set of data, from any data ingested in the last 7 days.<br>This normally differs from the sample data used in the **[!UICONTROL Preview]** table."
+>abstract="Stitching metrics are being calculated using a sample set of data, from any data ingested in the last 7 days.<br>This sample set of data usually differs from the sample data used in the **[!UICONTROL Preview]** table."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
@@ -154,7 +156,7 @@ To enable stitching, in the event dataset **[!UICONTROL Datasets settings]** sec
    >Ensure that you are entitled to use the identity graph.
    >
 
-   Before that, a **[!UICONTROL Change to identity graph]** dialog is displayed to ensure you have finished the setup of the identity graph for the dataset as part of the [graph-based prerequisites](/help/stitching/gbs.md#prerequisites) before you use the identity graph for stitching. Select **[!UICONTROL Continue]** to continue.
+   Before that, a **[!UICONTROL Change to identity graph]** dialog is displayed to ensure you have finished the setup of the identity graph for the dataset. This setup is part of the [graph-based prerequisites](/help/stitching/gbs.md#prerequisites) before you can use the identity graph for stitching. Select **[!UICONTROL Continue]** to continue.
 
    * Select a namespace from the **[!UICONTROL Namespace]** drop-down menu.
 
@@ -171,32 +173,42 @@ On top of the standard **[!UICONTROL Datasets preview]** interface, when [adding
 
 #### Stitching metrics
 
-  **[!UICONTROL Stitching metrics]** are being calculated using a sample set of data, from any data ingested in the last 7 days. This normally differs from the sample data used in the **[!UICONTROL Preview]** table. The Stitching metrics provides details for:
+  **[!UICONTROL Stitching metrics]** are being calculated using a sample set of data, from any data ingested in the last 7 days. This sample set of data usually differs from the sample data used in the **[!UICONTROL Preview]** table. Stitching metrics provide details for:
 
-  * **[!UICONTROL Person ID coverage]**: The coverage of the selected person ID that is used for identification during the stitching process (live and replay). For best stitching results, person ID (user info) should be sent on at least one event for each persistent ID (device info).
+  * **[!UICONTROL Person ID coverage]**: The coverage of the selected person ID used for identification during the stitching process (live and replay). For best stitching results, person ID (user info) should be sent on at least one event for each persistent ID (device info).
 
-    Person ID coverage is shown as a percentage and compared to what is recommended. Based on that, the status reflects whether coverage is good enough for using this person ID for stitching. If not, select another person ID with better coverage.
+    Person ID coverage is shown as a percentage and compared to what is recommended. The status reflects whether coverage is good enough for using this person ID for stitching. If not, select another person ID with better coverage.
 
-  * **[!UICONTROL Persistent ID coverage]**: value is used for identification during the stitching process (live and replay), in case a person ID value cannot be detected. Events with no persistent ID and no person ID are dropped from the data. For best stitching results, a persistent ID should be present on all events.
+  * **[!UICONTROL Persistent ID coverage]**: This value is used for identification during the stitching process (live and replay), in case a person ID value cannot be detected. Events with no persistent ID and no person ID are dropped from the data. For best stitching results, a persistent ID should be present on all events.
     
-    Persistent ID coverage is shown as a percentage and compared to what is recommended. Based on that, the status reflects whether coverage is good enough for using this persistent ID for stitching. If not, select another persistent ID with better coverage.
+    Persistent ID coverage is shown as a percentage and compared to what is recommended. The status reflects whether coverage is good enough for using this persistent ID for stitching. If not, select another persistent ID with better coverage.
 
 
 #### Bad IDs
 
+>[!INFO]
+>
+>Bad IDs are also referred to as BAVIDs in the Customer Journey Analytics interface.
+> 
+
 When you have custom or placeholder values in the person ID field (for example, `undefined`), these  values can affect [stitching and reporting data quality](/help/stitching/faq.md#undefined-person-id-values).
 
-A Bad ID is a certain ID value (originating from either persistent ID or person ID field in a stitching-enabled datasets) that is on more than one million events in the connection data, within a month. Bad IDs are also referred to as BAVIDs in the Customer Journey Analytics interface. When an ID value is marked as a Bad ID, any future events that contain that ID value are discarded from the connection data and will not show up in the reporting.
+A Bad ID is an identifier:
+
+* with a specific ID value that originates from either a persistent ID or a person ID field in a stitching-enabled datasets, **and**
+* is on more than one million (1,000,000) events in the connection data, within a month. 
+
+When an ID value is marked as a Bad ID, any future events that contain that ID value are discarded from the connection data and does not show up in the reporting.
 
 
 >[!NOTE]
->The stitching metrics, including Bad IDs, are calculated based on a limited set of data. To better validate your stitching setup for a specific dataset against Bad IDs presence, please refer to this [tech note](/help/technotes/badids.md).
+>The **[!UICONTROL Stitching metrics]**, including **[!UICONTROL Bad IDs]**, are calculated based on a limited set of data. To identify Bad IDs presence for a dataset you plan to use for stitching, refer to the [Bad IDs](/help/technotes/badids.md).
 >
 
 
-## Save
+### Save
 
-Once you save a connection, the stitching process for datasets that are enabled for stitching kicks in when the ingestion of data for these datasets starts.
+Once you save a connection, the stitching process for stitching enabled datasets is started as soon as the ingestion of data for these datasets starts.
 
 >[!CAUTION]
 >
