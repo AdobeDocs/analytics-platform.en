@@ -6,6 +6,7 @@ feature: Audiences
 role: Admin
 hide: yes
 hidefromtoc: yes
+exl-id: 4f465e71-f1b5-4f38-a1db-645550856849
 ---
 # Audience Analysis use cases {#analyze-audiences-use-cases}
 
@@ -135,5 +136,4 @@ Understand the behavior of customers who recently left a key audience and what t
 
 | Use case  | Core business question  | Identity resolution consideration | High‑auth / single‑namespace orgs (events already under 1 person ID, e.g. login /CRM) | Fragmented / multi‑namespace orgs (events under ECID + CRM + others) |
 |---------|----------|---------|---------|---------|
-| Exited audiences - churn analysis  | _"Who just left a key audience?"_ <p>_"What did they do around exit?"_</p>  | Audience exit is tracked at the same person ID used for the connection and audience configuration. | Exits measured on a stable login/CRM ID tend to reflect true behavioral change. <p>When someone leaves an audience on this ID, it usually means a real change (churn, downgrade, inactivity).</p><p>You can analyze their recent behavior to fine‑tune journeys and win‑back offers with confidence.</p>  | Exits are only visible where profiles and events share the configured ID and thus will require careful interpretation.<p>Use exited cohorts as a strong hint or signal, but it is recommended that you cross‑check with other data points before critical decisions.</p>  | 
-
+| Exited audiences - churn analysis  | _"Who just left a key audience?"_ <p>_"What did they do around exit?"_</p>  | Audience exit is tracked at the same person ID used for the connection and audience configuration. | Exits measured on a stable login/CRM ID tend to reflect true behavioral change. <p>When someone leaves an audience on this ID, it usually means a real change (churn, downgrade, inactivity).</p><p>You can analyze their recent behavior to fine‑tune journeys and win‑back offers with confidence.</p>  | Exits are only visible where profiles and events share the configured ID and thus will require careful interpretation.<p>Use exited cohorts as a strong hint or signal, but it is recommended that you cross‑check with other data points before critical decisions.</p>  |
