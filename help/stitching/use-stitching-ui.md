@@ -95,7 +95,7 @@ If you meet the prerequisites, you might want to perform some preflight checks o
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
 >title="Stitching metrics"
->abstract="Stitching metrics are being calculated using a sample set of data, from any data ingested in the last 7 days.<br>This normally differs from the sample data."
+>abstract="Stitching metrics are being calculated using a sample set of data, from any data ingested in the last 7 days.<br>This normally differs from the sample data used in the **[!UICONTROL Preview]** table."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
