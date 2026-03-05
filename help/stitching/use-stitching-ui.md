@@ -175,7 +175,9 @@ On top of the standard **[!UICONTROL Datasets preview]** interface, when [adding
 
 **[!UICONTROL Stitching metrics]** are being calculated using a sample set of data, from any data ingested in the last 7 days. This sample set of data usually differs from the sample data used in the **[!UICONTROL Preview]** table. Stitching metrics provide details for:
 
-* **[!UICONTROL Person ID coverage]**: The coverage of the selected person ID used for identification during the stitching process (live and replay). For best stitching results, person ID (user info) should be sent on at least one event for each persistent ID (device info).
+* **[!UICONTROL Person ID coverage]**: The coverage of the selected person ID used for identification during the stitching process (live and replay). 
+  * For the best field-based stitching results, a person ID (user info) should be sent on at least one event for each persistent ID (device info). 
+  * For the best graph-based stitching results, a (persistent ID, person ID) relation should be present in the identity graph for each persistent ID.
 
   Person ID coverage is shown as a percentage and compared to what is recommended on a stable development or on a production setup. The higher this coverage value is, the better stitching results are obtained with the selected person ID.
 
