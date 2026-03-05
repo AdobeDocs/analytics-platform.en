@@ -34,7 +34,9 @@ By default, thumbnails are shown in a [freeform table](/help/analysis-workspace/
 * In the **[!UICONTROL Row setting]** popup, underneath **[!UICONTROL Settings]**, check or uncheck **[!UICONTROL Show Thumbnails]**.
 
 
-### Bar and Horizontal bar
+### Bar (stacked) and Horizontal bar (stacked)
+
+{{release-limited-testing-section}}
 
 ![Content Analytics thumbnails for bar chart](/help/content-analytics/assets/aca-bar-thumbnail.png)
 
@@ -44,16 +46,24 @@ Thumbnails are displayed as part of the legend on the vertical or horizontal axi
 
 ### Scatter
 
+{{release-limited-testing-section}}
+
 ![Content Analytics thumbnails for scatter](/help/content-analytics/assets/aca-scatter-thumbnail.png)
 
 Thumbnails are displayed when you hover over a data point in a [scatter](/help/analysis-workspace/visualizations/scatterplot.md).
 
 ## Previews
 
+>[!AVAILABILITY]
+>
+>The functionality for bar and scatter visualizations described in this section is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
+>
+
 You can open a preview popup window. To do so:
 
 * Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) in a [freeform table](#freeform-table).
 * Select a specific bar in a [bar](#bar-and-horizontal-bar) or [horizontal bar](#bar-and-horizontal-bar) visualization, or a data point in [scatter](#scatter) visualization.
+  
 
 You see the following details.
   
