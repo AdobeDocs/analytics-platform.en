@@ -1,6 +1,6 @@
 ---
 title: Customer Journey Analytics Bad IDs
-description: Learn about Bad IDs or BAVIDs in Customer Journey Analytics and how to identify Bad IDs in your data.
+description: Understand Bad IDs (BAVIDs) in Customer Journey Analytics. Learn how to identify Bad IDs in your data, why they affect reporting, and how to investigate and resolve Bad ID exposure in your connections.
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
@@ -20,7 +20,11 @@ This article provides context on Bad IDs and how to detect their presence or ris
 
 In Customer Journey Analytics, as part of all data defined in a connection, a Bad ID is an identifier:
 
-* with a specific ID value that originates from a person ID field (non-stitched datasets), or from either a persistent ID or a person ID field (stitching-enabled datasets), **and**
+* with a specific ID value that originates  
+  * from a person ID field (non-stitched datasets), **or** 
+  * from a persistent ID or a person ID field (stitching-enabled datasets), 
+  
+  **and**
 * is on more than one million (1,000,000) events in the connection data (counted for all datasets within the connection), within a month. 
   
 When an ID value is marked as a Bad ID, any future events that contain that ID value are discarded from the connection data and does not show up in the reporting.
@@ -46,6 +50,8 @@ To investigate Bad IDs exposure for a certain dataset field, consider performing
 
 
 ### Identify (risk of) Bad IDs within a field
+
+You can use Experience Platform Query to service to identify the potential risk of Bad IDs within a field. 
    
 The query below returns the first 20 ID values from a field. In descending order by count of total events. And where each value is detected within a certain interval (for example within the last 30 days).
 
