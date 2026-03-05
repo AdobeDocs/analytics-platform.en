@@ -53,7 +53,7 @@ Thumbnails are displayed when you hover over a data point in a [scatter](/help/a
 You can open a preview popup window. To do so:
 
 * Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) in a [freeform table](#freeform-table).
-* Select the thumbnail in a [bar](#bar-and-horizontal-bar), [horizontal bar](#bar-and-horizontal-bar), or [scatter](#scatter) visualization.
+* Select a specific bar in a [bar](#bar-and-horizontal-bar) or [horizontal bar](#bar-and-horizontal-bar) visualization, or a data point in [scatter](#scatter) visualization.
 
 You see the following details.
   
