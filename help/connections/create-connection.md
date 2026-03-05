@@ -563,6 +563,12 @@ You can add one or more Experience Platform datasets when you create or edit a c
    
 1. Select **[!UICONTROL Add datasets]** to add the configured datasets to the connection.
 
+>[!NOTE]
+>For customers that have Customer Journey Analytics deployed on AWS, there is no separate ❸ Datasets preview step. The preview is part of the ❷ Dataset settings.
+>
+
+
+
 
 #### For account-based connections
 

@@ -173,6 +173,10 @@ On top of the standard **[!UICONTROL Datasets preview]** interface, when [adding
 
 #### Stitching metrics
 
+>[!NOTE]
+>For customers that have Customer Journey Analytics deployed on AWS, this functionality is pending release.
+>
+
 **[!UICONTROL Stitching metrics]** are being calculated using a sample set of data, from any data ingested in the last 7 days. This sample set of data usually differs from the sample data used in the **[!UICONTROL Preview]** table. Stitching metrics provide details for:
 
 * **[!UICONTROL Person ID coverage]**: The coverage of the selected person ID used for identification during the stitching process (live and replay). 
@@ -187,6 +191,10 @@ On top of the standard **[!UICONTROL Datasets preview]** interface, when [adding
 
 
 #### Bad IDs
+
+>[!NOTE]
+>For customers that have Customer Journey Analytics deployed on AWS, this functionality is pending release.
+>
 
 >[!INFO]
 >
