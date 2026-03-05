@@ -71,7 +71,7 @@ role: Admin
 >[!CONTEXTUALHELP]
 >id="connection_change_personid"
 >title="Change identity settings "
->abstract="A change of identity setting deletes connection data for this dataset once you save the modifications in the Connections interface. You have to re-ingest data from the dataset based on the new settings.<br/><br/>A delay in reporting is possible until the deletion process is completed."
+>abstract="A change of identity setting deletes connection data for this dataset, once you save the modifications in the Connections interface. You will have to manually start a data backfill for the dataset, based on the new settings.<br/><br/>A delay in reporting is possible until the deletion process is completed." 
 
 >[!CONTEXTUALHELP]
 >id="connection_change_accountid"
