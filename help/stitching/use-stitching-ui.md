@@ -177,11 +177,11 @@ On top of the standard **[!UICONTROL Datasets preview]** interface, when [adding
 
 * **[!UICONTROL Person ID coverage]**: The coverage of the selected person ID used for identification during the stitching process (live and replay). For best stitching results, person ID (user info) should be sent on at least one event for each persistent ID (device info).
 
-  Person ID coverage is shown as a percentage and compared to what is recommended on a stable production setup. The higher this coverage value is, the better stitching results are obtained with the selected person ID.
+  Person ID coverage is shown as a percentage and compared to what is recommended on a stable development or on a production setup. The higher this coverage value is, the better stitching results are obtained with the selected person ID.
 
 * **[!UICONTROL Persistent ID coverage]**: This value is used for identification during the stitching process (live and replay), in case a person ID value cannot be detected. Events with no persistent ID and no person ID are dropped from the data. For best stitching results, a persistent ID should be present on all events.
     
-  Persistent ID coverage is shown as a percentage and compared to what is the minimum recommended on a stable production setup.
+  Persistent ID coverage is shown as a percentage and compared to what is the minimum recommended on a stable development or on a production setup.
 
 
 #### Bad IDs
