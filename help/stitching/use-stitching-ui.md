@@ -169,13 +169,15 @@ To enable stitching, in the event dataset **[!UICONTROL Datasets settings]** sec
 
 On top of the standard **[!UICONTROL Datasets preview]** interface, when [adding](/help/connections/create-connection.md#add-datasets) or [editing](/help/connections/create-connection.md#edit-a-dataset) datasets in a person-based connection, two additional information panels are available.
 
+>[!NOTE]
+>For customers that have Customer Journey Analytics deployed on AWS, this functionality is pending release.
+>
+
 ![Identity stitching options when you enable identity stitching](assets/identity-stitching-ui-preview.png)
 
 #### Stitching metrics
 
->[!NOTE]
->For customers that have Customer Journey Analytics deployed on AWS, this functionality is pending release.
->
+
 
 **[!UICONTROL Stitching metrics]** are being calculated using a sample set of data, from any data ingested in the last 7 days. This sample set of data usually differs from the sample data used in the **[!UICONTROL Preview]** table. Stitching metrics provide details for:
 
@@ -191,10 +193,6 @@ On top of the standard **[!UICONTROL Datasets preview]** interface, when [adding
 
 
 #### Bad IDs
-
->[!NOTE]
->For customers that have Customer Journey Analytics deployed on AWS, this functionality is pending release.
->
 
 >[!INFO]
 >
