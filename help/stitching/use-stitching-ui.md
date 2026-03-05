@@ -177,11 +177,11 @@ On top of the standard **[!UICONTROL Datasets preview]** interface, when [adding
 
 * **[!UICONTROL Person ID coverage]**: The coverage of the selected person ID used for identification during the stitching process (live and replay). For best stitching results, person ID (user info) should be sent on at least one event for each persistent ID (device info).
 
-  Person ID coverage is shown as a percentage and compared to what is recommended. The status reflects whether coverage is good enough for using this person ID for stitching. If not, select another person ID with better coverage.
+  Person ID coverage is shown as a percentage and compared to what is recommended on a stable production setup. The higher this coverage value is, the better stitching results are obtained with the selected person ID.
 
 * **[!UICONTROL Persistent ID coverage]**: This value is used for identification during the stitching process (live and replay), in case a person ID value cannot be detected. Events with no persistent ID and no person ID are dropped from the data. For best stitching results, a persistent ID should be present on all events.
     
-  Persistent ID coverage is shown as a percentage and compared to what is recommended. The status reflects whether coverage is good enough for using this persistent ID for stitching. If not, select another persistent ID with better coverage.
+  Persistent ID coverage is shown as a percentage and compared to what is the minimum recommended on a stable production setup.
 
 
 #### Bad IDs
@@ -191,18 +191,21 @@ On top of the standard **[!UICONTROL Datasets preview]** interface, when [adding
 >Bad IDs are also referred to as BAVIDs in the Customer Journey Analytics interface.
 > 
 
-When you have custom or placeholder values in the person ID field (for example, `undefined`), these  values can affect [stitching and reporting data quality](/help/stitching/faq.md#undefined-person-id-values).
+In Customer Journey Analytics, a Bad ID is an identifier:
 
-A Bad ID is an identifier:
-
-* with a specific ID value that originates from either a persistent ID or a person ID field in a stitching-enabled datasets, **and**
+* with a specific ID value that originates from either a persistent ID or a person ID field in stitching-enabled datasets, **and**
 * is on more than one million (1,000,000) events in the connection data, within a month. 
 
 When an ID value is marked as a Bad ID, any future events that contain that ID value are discarded from the connection data and does not show up in the reporting.
 
+Examples of Bad IDs use cases:
+
+* You have custom or placeholder values in the person ID field (for example, `undefined`). Such values can also affect [stitching and reporting data quality](/help/stitching/faq.md#undefined-person-id-values).
+* In a field-based stitching configuration, if multiple people share a device and the total number of transitions between users exceeds 50,000. In this scenario, the stitching process stops to use the person ID info for that device, and only uses persistent ID info instead. Consequently, all dataset events from that device are sent into connection data with the persistent ID identity, with a high chance of causing a Bad IDs situation.
+
 
 >[!NOTE]
->The **[!UICONTROL Stitching metrics]**, including **[!UICONTROL Bad IDs]**, are calculated based on a limited set of data. To identify Bad IDs presence for a dataset you plan to use for stitching, refer to the [Bad IDs](/help/technotes/badids.md).
+>The **[!UICONTROL Stitching metrics]**, including **[!UICONTROL Bad IDs]**, are calculated based on a limited set of data. To identify Bad IDs presence for a dataset you plan to use for stitching, refer to the [Bad IDs technote](/help/technotes/badids.md).
 >
 
 
