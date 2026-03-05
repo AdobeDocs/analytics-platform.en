@@ -82,3 +82,4 @@ A user with sufficient permissions to configure the Analytics source connector i
 ### Report on data
 
 The *Cross-IMS data mapping* feature is only a first step to ensure you can use the data as part of a Customer Journey Analytics [connection](/help/connections/overview.md), one or more [data views](/help/data-views/data-views.md) and [workspace projects](/help/analysis-workspace/home.md). You carefully need to inspect the data you have now available in one IMS organization. And consider features like data prep, derived fields, additional lookup tables, and more before you are able to properly report on this data.
+

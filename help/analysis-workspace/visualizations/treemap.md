@@ -35,7 +35,7 @@ With a treemap, you can see patterns that would be difficult to spot in other wa
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Treemap visualization](https://video.tv.adobe.com/v/334458/?quality=12&learn=on){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Treemap visualization](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-treemap-visualizations){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 

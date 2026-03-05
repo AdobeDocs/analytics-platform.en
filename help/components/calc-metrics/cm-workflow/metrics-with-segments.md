@@ -84,7 +84,7 @@ Repeat the steps above for the international version of your calculated metric.
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Use a segmented calculated metric as an implementationless metric](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Use a segmented calculated metric as an implementationless metric](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-segmented-metrics){target="_blank"} for a demo video.
 
 {{videoaa}}
 

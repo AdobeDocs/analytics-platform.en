@@ -70,8 +70,8 @@ role: Admin
 
 >[!CONTEXTUALHELP]
 >id="connection_change_personid"
->title="Change Person ID"
->abstract="Modifying the identity stitching setting on a dataset will affect the Person ID setting once you apply the changes. A change of the Person ID deletes all existing data in the connection. You have to re-ingest data from the dataset based on the new Person ID.<br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the deletion process is completed."
+>title="Change identity settings "
+>abstract="A change of identity setting deletes connection data for this dataset, once you save the modifications in the Connections interface. You will have to re-ingest data from the dataset based on the new settings.<br/><br/>A delay in reporting is possible until the deletion process is completed."
 
 >[!CONTEXTUALHELP]
 >id="connection_change_accountid"
@@ -97,6 +97,13 @@ role: Admin
 >id="connection_change_persistentid"
 >title="Change Persistent ID"
 >abstract="A change of the Persistent ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Persistent ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
+
+
+>[!CONTEXTUALHELP]
+>id="connection_use_primary_identity_namespace"
+>title="Use primary identity namespace"
+>abstract="Automatically detect and use an identityMap namespace defined as **[!UICONTROL primary]**, at each event level."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces" text="Identity namespace overview" 
 
 
 <!-- Start of contextual help entries for CJA connection dialogs -->
@@ -166,7 +173,7 @@ The connection creation and edit workflow experience brings all the dataset and 
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create and edit a connection](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Connect to data sources](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 
@@ -440,8 +447,8 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_dialog"
->title="Enable identity stitching"
->abstract="Enable identity stitching derives a stitched ID from a dataset or from identity graph. This process may include the merge of user data from authenticated and unauthenticated sessions.<br/><br/>You are responsible to comply with applicable laws and regulations. This compliance includes that you obtain the necessary end user permissions before you activate stitching on a dataset."
+>title="Identity stitching"
+>abstract="Identity stitching derives user identity information from a dataset or from the identity graph. This process may include the merge of user data from authenticated and unauthenticated sessions.<br/><br/>You are responsible to comply with applicable laws and regulations. This compliance includes that you obtain the necessary end user permissions before you activate stitching on a dataset."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
 
 >[!CONTEXTUALHELP]
@@ -465,7 +472,7 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >[!CONTEXTUALHELP]
 >id="connection_namespace_graph"
 >title="Namespace identity graph"
->abstract="Select the namespace to use to pick the identifier from the identity map."
+>abstract="Select the namespace to use to pick the identifier from the identity graph."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
 
 

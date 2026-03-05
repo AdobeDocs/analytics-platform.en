@@ -9,13 +9,15 @@ exl-id: dd2b2a5b-9c36-4534-999f-f96604f29eab
 
 The Algorithmic [attribution model](models.md) in Analysis Workspace differs from other models in that it uses statistical techniques to allocate credit across the dimension items in your report or freeform table. Like all other attribution models in Analysis Workspace, algorithmic attribution can be used on any dimension or metric. Algorithmic attribution supports unlimited segmentation and breakdowns, and distributes 100% of conversions to one or more dimensions in the table (also known as "fractional" attribution).
 
+<!-- 
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Algorithmic attribution](https://video.tv.adobe.com/v/36205?quality=12&learn=on){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Algorithmic attribution](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/algorithmic-model-in-attribution-iq){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 
+-->
 
 The algorithm used for attribution is based on the Harsanyi Dividend from cooperative game theory. The Harsanyi dividend is a generalization of the Shapley value solution (named after Lloyd Shapley, a Nobel Laureate economist) to distribute credit among players in a game with unequal contributions to the outcome.
 
