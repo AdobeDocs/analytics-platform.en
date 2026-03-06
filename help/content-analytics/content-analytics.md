@@ -18,7 +18,7 @@ In addition to the creation of this structured metadata profile, Content Analyti
 
 Content Analytics does provide value at an increasing level:
 
-1. Content **usage**: With Content Analytics you get insights on which assets are receiving impressions and where assets are receiving impressions. These insights help you to see whether assets are underused or overused on your web properties.
+1. Content **usage**: With Content Analytics you get insights on which assets are receiving impressions and where assets are receiving impressions. These insights help you to see whether assets are underused or overused on your web and mobile properties.
 1. Content **engagements**: Content Analytics can provide engagement insights like the average click through rate for assets with certain attributes. These insights help you to determine whether specific types of experiences are still effective.
 1. Content **journeys**: Furthermore, when combined with all other data available in Experience Platform, you can gain additional insights on your content journeys. For example, whether specific content leads to conversions, on top of engagement. And with that knowledge you can determine the ROI on types of content.
 1. Content **personalization**: Ultimately Content Analytics allows you to act upon your insights and use these insights to determine how to spend money on content. For example, should I send specific types of content to specific audiences? What content provides me with high-personalization opportunities?
@@ -29,17 +29,17 @@ Content Analytics uses the following key terms:
 
 ![Assets and experiences](/help/content-analytics/assets/content-analytics-experience-asset.png)
 
-* **Experience**: An experience is all text on a web page that is reproducible using the URL that is used by the initial user who visited the web page. Each experience gets a unique identifier. Changes to the page resulting in changes to the HTML of the page results in a new experience.
+* **Experience**: An experience is all text on a web page or mobile app screen that is reproducible using the URL that is used by the initial user who visited the web page. Each experience gets a unique identifier. Changes to the page resulting in changes to the HTML of the page results in a new experience.
 * **Asset**: An asset is an individual and unique piece of content, like an image. Each asset also gets a unique identifier and a perceptual ID. A perceptual ID is an identifier that is shared with assets that are visually identical. Perceptual IDs help to deduplicate assets that may have a different asset URL and therefor a different asset ID, but are perceptually identical.
 * **Attribute**: An attribute is a descriptive metadata element associated with an experience or asset. Examples of an attribute are: style of photography, readability, persuasion strategy, object color, background color.
 
 ## How it works
 
-Content Analytics uses web image view data in event datasets in Experience Platform to [collect content event data](config/datacollection.md). These content experience events requires the data to be collected with the Experience Platform Edge Network (Web SDK, Server API). Behavioral data can be collected with Web SDK or the Analytics Source Connector.
+Content Analytics uses web and mobile image view data in event datasets in Experience Platform to [collect content event data](config/datacollection.md). These content experience events requires the data to be collected with the Experience Platform Edge Network (Web SDK, Mobile SDK, Server API). Behavioral data can be collected with the Web SDK, Mobile SDK or the Analytics Source Connector.
 
-![Content Analytics - How it works](assets/aca-overview.gif)
+![Content Analytics - How it works](assets/aca-overview-new.gif)
 
-1. When a user visits a site, [configured for Content Analytics](config/configuration.md), the Experience Platform Web SDK records impressions and interactions with content.
+1. When a user visits a site or app, [configured for Content Analytics](config/configuration.md), the Experience Platform Web or Mobile SDK records impressions and interactions with content.
 1. The identity and featurization service process these interactions. That process consists of a retrieval service that revisits the public-facing versions of the configured URLs that define the interactions. For all of these retrieved URLs, the identity service uniquely identifies the experiences and assets. And the featurization service applies AI/ML services to discover experiences and assets metadata and attributes.
 1. The results of these services ([components, attributes, and identities](/help/content-analytics/report/components.md)) are used to update the relevant specific Content Analytics datasets in Experience Platform.
 1. The Content Analytics data, together with behavioral data and other lookup data, you can use in a Customer Journey Analytics setup ([Connection](/help/connections/overview.md), [Data view](/help/data-views/data-views.md) and [Workspace](/help/analysis-workspace/home.md)). That setup provides the foundation to the unique macro-level insights on your content. <br/>You can jump start your Content Analytics reports and analysis using the [Content Analytics template](/help/content-analytics/report/report.md#template).

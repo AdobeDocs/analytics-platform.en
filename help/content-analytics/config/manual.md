@@ -16,10 +16,12 @@ The following manual configuration actions are available:
 
 To start the data collection for an implemented Content Analytics configuration:
 
-1. Follow the [publishing flow](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. Successfully publish the library for the Tags property that contains your Content Analytics configuration.
+1. Follow the [publishing flow](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. Successfully publish the library for the Tags properties that contains your Content Analytics configuration.
 
-1. [Install](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) the embedded code in the `<head>` element of the pages on your development, staging or publishing environment, subject to Content Analytics.
+1. Based on the channels you have configured:
 
+   1. [Install](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) the embedded code in the `<head>` element of the pages on your development, staging or publishing environment, subject to Content Analytics.
+   1. Consult the solution specific [Adobe Content Analytics extension guide](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) in the [Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/home/) on how to configure, instrument your mobile application for Content Analytics.
 
 ## Stop data collection
 
