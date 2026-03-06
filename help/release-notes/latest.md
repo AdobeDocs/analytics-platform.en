@@ -6,14 +6,15 @@ feature: Release Notes
 ---
 # Current Customer Journey Analytics release notes (February 2026)
 
-**Last update**: February 12, 2026
+**Last update**: March 5 , 2026
 
 These release notes cover the February 2026 release period. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
 ## New or updated features 
 
 | Feature and description | [Rollout starts](releases.md) | [General Availability](releases.md) |
-| ----------- | ------- | ---- |
+| ----------- | -------: | ----:|
+| **Additional Content Analytics thumbnails and previews**<p>Content Analytics thumbnails and previews are now supported in bar (stacked), horizontal bar (stacked), and scatter visualizations. | March 5, 2026 | TBD |
 | **Header overrides** <p>You can specify a header name and secret header value in Content Analytics. This [header overrides configuration](/help/content-analytics/config/guided.md#header-overrides) ensures that Content Analytics sends custom HTTP headers to bypass any bot detection or gate traffic technologies you have implemented.</p> |  | February 2, 2026 |
 | **Combine report suites from multiple IMS orgs**<p>You can use the Analytics Source Connector to combine report suites from multiple IMS orgs. This [cross-IMS data mapping](/help/getting-started/aa-vs-cja/mapping-data-ims-orgs.md) feature allows organzations to have a combined view of their customer data, even when that customer data is spread across multiple IMS organizations. <p>**Note:** This configuration is available only by submitting a request to Adobe Customer Care.</p> |  | February 12, 2026 |
 | **Include multiple dimension columns in a freeform table**<p>You can now include up to 5 dimension columns in a freeform table, allowing you to view multiple dimension items side by side. Each row of dimension items behaves like a single concatenated dimension item.</p><p>You can apply filters, sorting, breakdowns, and more to freeform tables with multiple dimension columns to create a deeper and more custom analysis.</p><p>Previously, you could include only 1 dimension column in a freeform table.</p><p>For more information, see [Include multiple dimension columns in a freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md).</p> | January 28, 2026 | March 4, 2026 <p>(Originally planned for February 18, 2026)</p> |
