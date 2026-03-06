@@ -204,7 +204,7 @@ In Customer Journey Analytics, a Bad ID is an identifier:
 * with a specific ID value that originates from either a persistent ID or a person ID field in stitching-enabled datasets, **and**
 * is on more than one million (1,000,000) events in the connection data, within a month. 
 
-When an ID value is marked as a Bad ID, any future events that contain that ID value are discarded from the connection data and does not show up in the reporting.
+When an ID value is marked as a Bad ID, any future events that contain that ID value are discarded from the connection data and do not show up in the reporting.
 
 Examples of Bad IDs use cases:
 

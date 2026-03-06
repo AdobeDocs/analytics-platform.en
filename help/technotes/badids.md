@@ -27,7 +27,7 @@ In Customer Journey Analytics, as part of all data defined in a connection, a Ba
   **and**
 * is on more than one million (1,000,000) events in the connection data (counted for all datasets within the connection), within a month. 
   
-When an ID value is marked as a Bad ID, any future events that contain that ID value are discarded from the connection data and does not show up in the reporting.
+When an ID value is marked as a Bad ID, any future events that contain that ID value are discarded from the connection data and do not show up in the reporting.
 
 ### Example
 
