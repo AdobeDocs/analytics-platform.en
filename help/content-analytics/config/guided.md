@@ -150,7 +150,7 @@ Each configuration requires a unique name. For example, `Example Content Analyti
 >abstract="Enable and configure one or more channels for the configuration."
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_channels_button"
+>id="aca_onboarding_channels_header"
 >title="Channels"
 >abstract="Enable and configure one or more channels for the configuration. All data views that are part of the configuration inherit the enabled channels."
 
