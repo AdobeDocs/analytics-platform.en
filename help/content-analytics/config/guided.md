@@ -50,8 +50,6 @@ The guided configuration wizard consists of four sections ([Details](#details), 
 
 ### Details {#onboarding-details}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_button"
 >title="Details"
@@ -62,16 +60,12 @@ The guided configuration wizard consists of four sections ([Details](#details), 
 >title="Details"
 >abstract="This guide sets up the requirements needed to configure Content Analytics. Please provide a name for this configuration"    
 
-<!-- markdownlint-enable MD034 -->
-
 Each configuration requires a unique name. For example, `Example Content Analytics configuration`. The name is required to save or implement a configuration.
 
 ![Content Analytics configuration details](../assets/aca-configuration-details.png)
 
 
 ### Data view {#onboarding-data-view}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
@@ -107,8 +101,6 @@ Each configuration requires a unique name. For example, `Example Content Analyti
 >id="aca_onboarding_dataview_new_dialog"
 >title="New data view"
 >abstract="You have selected a new data view for this configuration. The new data view will be updated to include Content Analytics metrics and dimensions. Similar metrics and dimensions will be removed from the existing data view.<br/>If a different connection is associated with the new data view then the connection will be updated to include Content Analytics datasets. Note that Content Analytics datasets are not removed from the existing configuration."
-
-<!-- markdownlint-enable MD034 -->
 
 Your configuration requires the selection of a [Data view](/help/data-views/data-views.md). 
 
@@ -146,8 +138,6 @@ In Customer Journey Analytics, a [data view](/help/data-views/data-views.md) is 
 
 ### Experience capture and definition {#onboarding-experiences} 
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_button"
 >title="Experience capture and definition"
@@ -178,7 +168,6 @@ In Customer Journey Analytics, a [data view](/help/data-views/data-views.md) is 
 >title="Experience capture and definition"
 >abstract="You must edit the settings for experience data collection in the Adobe Content Analytics extension."
 
-<!-- markdownlint-enable MD034 -->
 
 In this section, you can select to include experiences in the data you collect with Content Analytics.  An experience is all text on a web page that is reproducible using the URL used by the initial user visiting that web page. 
 
@@ -232,8 +221,6 @@ To edit existing or include new experiences in an implemented configuration:
 
 In this section, you configure how to collect your Content Analytics data.
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="Data collection"
@@ -279,7 +266,6 @@ In this section, you configure how to collect your Content Analytics data.
 >title="Tags property disabled"
 >abstract="Content Analytics extension is already active."
 
-<!-- markdownlint-enable MD034 -->
 
 #### New configuration {#new-configuration}
 
@@ -313,7 +299,6 @@ In a new configuration, you need to define whether you want to use an existing T
 >
 >Manually remove the automatic included Web SDK extension from the newly created Tags property in case you have an existing Web SDK implementation that uses the [JavaScript library](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library) instead of the [Tags extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 >
-
 
 
 #### Existing configuration {#existing-configuration}
@@ -350,14 +335,10 @@ Once you have provided all necessary details, a summary provides details on the 
 
 ### Actions {#actions}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning_dialog"
 >title="Confirmation of implementation"
 >abstract="If you select **[!UICONTROL Implement]**, you will configure Content Analytics based on the input you have provided in this workflow. Several settings are chosen by default based on what is generally useful for Content Analytics, but you (as the data controller) must review the settings of each artifact to confirm the settings are implemented in accordance with your privacy policy, contractual rights and obligations, and consent requirements under applicable law.<br/><br/>Note that no data will be collected until the Tags library associated with this configuration is published manually.<br/><br/>In order to derive attributes of images and text, Adobe retrieves the attributes using:<ol><li>The URL of the page, captured at the time of the user's site visit, per the data collection settings you have configured, and</li><li>The URL where the image is hosted.</li></ol>You must not tag images that are hosted on third-party sites."
-
-<!-- markdownlint-enable MD034 -->
 
 When you create or edit a configuration you have these options:
 
