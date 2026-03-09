@@ -108,7 +108,52 @@ Each configuration requires a unique name. For example, `Example Content Analyti
 >title="New data view"
 >abstract="You have selected a new data view for this configuration. The new data view will be updated to include Content Analytics metrics and dimensions. Similar metrics and dimensions will be removed from the existing data view.<br/>If a different connection is associated with the new data view then the connection will be updated to include Content Analytics datasets. Note that Content Analytics datasets are not removed from the existing configuration."
 
-<!-- markdownlint-enable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="ac_onboarding_dataviews_button"
+>title="Data view"
+>abstract="For the configuration of Content Analytics you need to select one or more data views. So, you can merge your Content Analytics data with other data."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviewsheader"
+>title="Data views"
+>abstract="Select one or more existing data views from Customer Journey Analytics that you would like to merge your Content Analytics data with." 
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviews_header_alt"
+>title="Data view"
+>abstract="Select one or more existing data views from Customer Journey Analytics that you would like to merge your Content Analytics data with.<br/>"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviews_new_dialog"
+>title="Selected data views"
+>abstract="You have modified the selected data views for this configuration. The selected data views will be updated to include Content Analytics metrics and dimensions. These metrics and dimensions will be removed from previous selected data views that are no longer selected.<br/><br/>If a different connection is associated with the selected data views then the connection will be updated to include Content Analytics datasets. The Content Analytics datasets are not removed from the originally selected connection.<br/><br/>All selected data views inherit the channels that are part of this configuration."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviews_change_dialog"
+>title="Selected data views"
+>abstract="You have modified the selected data views for this configuration. The selected data views will be updated to include Content Analytics metrics and dimensions. These metrics and dimensions will be removed from previous selected data views that are no longer selected.<br/><br/>If a different connection is associated with the selected data views then the connection will be updated to include Content Analytics datasets. The Content Analytics datasets are not removed from the originally selected connection.<br/><br/>All selected data views inherit the channels that are part of this configuration."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviews_current_cleanup_labels_dialog"
+>title="Selected data views"
+>abstract="You have modified the selected data views for this configuration. The selected data views will be updated to include Content Analytics metrics and dimensions. These metrics and dimensions will be removed from previously selected data views that are no longer selected.<br/><br/>If a different connection is associated with the selected data views then the connection will be updated to include Content Analytics datasets. The Content Analytics datasets are not removed from the originally selected connection.<br/><br/>All selected data views inherit the channels that are part of this configuration."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataviews_prev_cleanup_labels_dialog"
+>title="Selected data views"
+>abstract="You have modified the selected data views for this configuration. The selected data views will be updated to include Content Analytics metrics and dimensions. These metrics and dimensions will be removed from previously selected data views that are no longer selected.<br/><br/>If a different connection is associated with the selected data views then the connection will be updated to include Content Analytics datasets. The Content Analytics datasets are not removed from the originally selected connection.<br/><br/>All selected data views inherit the channels that are part of this configuration."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_channels_button"
+>title="Channels"
+>abstract="Enable and configure one or more channels for the configuration."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_channels_button"
+>title="Channels"
+>abstract="Enable and configure one or more channels for the configuration. All data views that are part of the configuration inherit the enabled channels."
+
 
 Your configuration requires the selection of a [Data view](/help/data-views/data-views.md). 
 
