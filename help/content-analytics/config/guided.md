@@ -302,9 +302,9 @@ Only consider to include experiences when the following is applicable:
 
 To include experiences in a new or not implemented configuration, enable **[!UICONTROL Include experiences]**. The toggle to enable experiences affects the following:
 
-   * Data collection in the Content Analytics extension 
-   * The process that generates experience attributes from Content Analytics event data 
-   * The reporting template in Customer Journey Analytics. 
+ * Data collection in the Content Analytics extension 
+ * The process that generates experience attributes from Content Analytics event data 
+ * The reporting template in Customer Journey Analytics. 
    
 <!--
 1. Specify the parameters for how content is rendered on your website. The parameters are zero or more combinations of a **[!UICONTROL Domain regular expression]** and **[!UICONTROL Query parameters]**. The query parameters indicate what parameters affect the content on your page. This input allows Content Analytics to ignore any parameters that don't affect content on the page, when defining a unique experience.
