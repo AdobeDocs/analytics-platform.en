@@ -114,10 +114,9 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in the [Adm
 | Category | Permission | Description |
 | --- | --- | ---|
 | [!UICONTROL Data Views] | *data view name* | If you toggle **[!UICONTROL Auto-Include]** to **[!UICONTROL On]**, users that are part of this product profile can view all existing and newly created data views. If this setting is set to **[!UICONTROL Off]**, you can select specific data views that users have access to.  |
-| [!UICONTROL Reporting Tools] | [!UICONTROL Analysis Workspace Access] |  Let users access [Analysis Workspace](/help/analysis-workspace/home.md). |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Guided Analysis Access] | Let users access [Guided Analysis](/help/guided-analysis/overview.md).  |
-| [!UICONTROL Reporting Tools] | [!UICONTROL Calculated Metrics Creation] | Let users create [calculated metrics](/help/components/calc-metrics/calc-metr-overview.md). Users can tag, share, delete, rename, approve, unapprove only the calculated metrics they create or the calculated metrics shared with them.  |
-| [!UICONTROL Reporting Tools] | [!UICONTROL Segment Creation] | Let users create [segments](/help/components/segments/seg-overview.md). Users can tag, share, delete, rename, approve, unapprove only the segments they create or the segments shared with them. |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Calculated Metrics Creation] | Let users create [calculated metrics](/help/components/calc-metrics/calc-metr-overview.md). Users can tag, share, delete, rename only the calculated metrics they create or the calculated metrics shared with them.  |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Segment Creation] | Let users create [segments](/help/components/segments/seg-overview.md). Users can tag, share, delete, rename only the segments they create or the segments shared with them. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Labs Access] | Let users access the [Labs](/help/labs/labs.md) tab in Customer Journey Analytics. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Annotation Creation] | Let users create [annotations](/help/components/annotations/overview.md). Users can tag, share, delete, and rename only the annotations they create or annotations shared with them. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Audience View] | Let users view [audiences](/help/components/audiences/audiences-overview.md). |
@@ -127,6 +126,7 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in the [Adm
 | [!UICONTROL Reporting Tools] | [!UICONTROL Share Project Links With Anyone] | Let users [share projects with anyone.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects)  |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Forecasting] | Let users access the [Forecasting](../analysis-workspace/c-forecast/forecasting.md) feature in Analysis Workspace  |
 | [!UICONTROL Reporting Tools] | [!UICONTROL AI Assistant: Product Knowledge]  | Let users access the [AI Assistant](../ai-assistant.md) for product knowledge. |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Data Insights Agent]  | Let users access the [Data Insights Agent](../data-analysis-ai.md) for AI driven data insights. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Intelligent Captions] | Let users access [Intelligent captions](/help/analysis-workspace/visualizations/intelligent-captions.md). |
 | [!UICONTROL Data View Tools] | [!UICONTROL Full Table Export] | Let users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md).  |
 | [!UICONTROL Data View Tools] | [!UICONTROL CJA BI Extension] | Let users use the [BI extension](../data-views/bi-extension.md). |

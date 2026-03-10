@@ -92,7 +92,7 @@ You can enable identity stitching when you [add](/help/connections/create-connec
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
 >title="Person ID"
->abstract="Select a person ID (the unique identifier for a person) from the available identities. In case you want to use graph-based stitching, select **[!UICONTROL Identity Graph]**."
+>abstract="Select a person ID (the unique identifier for a person) from the available identities. In case your license includes graph-based stitching and you want to use that stitching method, select **[!UICONTROL Identity Graph]**."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
@@ -166,6 +166,11 @@ To enable stitching, in the event dataset **[!UICONTROL Datasets settings]** sec
 
 
 ### Datasets preview
+
+>[!AVAILABILITY]
+>
+>The enhanced **[!UICONTROL Dataset preview]** interface (including **[!UICONTROL Stitching metrics]** and **[!UICONTROL Bad IDs]**) described in this section is in the Limited Testing phase of release and might not be available yet in your environment. If not available, you see the dataset preview as part of the **[!UICONTROL Dataset settings]** interface. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
+>
 
 On top of the standard **[!UICONTROL Datasets preview]** interface, when [adding](/help/connections/create-connection.md#add-datasets) or [editing](/help/connections/create-connection.md#edit-a-dataset) datasets in a person-based connection, two additional information panels are available.
 

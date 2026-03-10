@@ -19,7 +19,9 @@ By adding the Target Classification lookup dataset (that is available by default
 
 ## Notes and Considerations
 
-Once the Target Classification Event Dataset has been added to a CJA Connection, there are a few minor adjustments to be made within the CJA Data View once these components have been added as dimensions, including:
+Your Target activity must [use Customer Journey Analytics as the reporting source](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja).
+
+Once the Target Classification Event Dataset has been added to a connection, there are a few minor adjustments to be made within the data view once these components have been added as dimensions, including:
 
 * Setting persistence to be similar to how it is tracked in Target (check with a Target consultant or the customer to ensure proper settings).
 

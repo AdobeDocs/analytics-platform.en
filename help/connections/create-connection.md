@@ -507,6 +507,11 @@ You can add one or more Experience Platform datasets when you create or edit a c
 
 #### For person-based connections
 
+>[!AVAILABILITY]
+>
+>The enhanced **[!UICONTROL Dataset preview]** interface described in this section is in the Limited Testing phase of release and might not be available yet in your environment. If not available, you see the dataset preview as part of the **[!UICONTROL Dataset settings]** interface. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
+>
+
 1. In **[!UICONTROL Connection]** > **[!UICONTROL _Name of the connection_]** interface, select ![DataAdd](/help/assets/icons/DataAdd.svg) **[!UICONTROL Add datasets]**.
 
 1. In the ➊ **[!UICONTROL Select datasets]** step, you see a list of the Experience Platform datasets. 
@@ -563,11 +568,6 @@ You can add one or more Experience Platform datasets when you create or edit a c
    
 1. Select **[!UICONTROL Add datasets]** to add the configured datasets to the connection.
 
->[!NOTE]
->For customers that have Customer Journey Analytics deployed on AWS, there is no separate ❸ Datasets preview step. The preview is part of the ❷ Dataset settings.
->
-
-
 
 
 #### For account-based connections
@@ -617,6 +617,11 @@ To edit a dataset that is already configured for a connection, in the **[!UICONT
 
 
 #### For person-based connections
+
+>[!AVAILABILITY]
+>
+>The enhanced **[!UICONTROL Dataset preview]** interface described in this section is in the Limited Testing phase of release and might not be available yet in your environment. If not available, you see the dataset preview as part of the **[!UICONTROL Dataset settings]** interface. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
+>
 
 1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit connection]**.
 1. Select ![More](/help/assets/icons/More.svg) for the dataset listed in the dataset table that you want to edit. 

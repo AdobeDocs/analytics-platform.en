@@ -56,7 +56,7 @@ Understand how a specific audience behaves in a given channel (e.g., web or app)
 
    * Compare audience vs. non‑audience (or against another audience) on metrics like sessions, conversion rate, revenue per person. 
 
-1. Feed your insights into channel optimization strategies (e.g., targeting rules, content or offer tuning). 
+1. Use the generated insights to fine-tune channel optimization strategies (e.g., targeting rules, content or offer tuning). 
 
 #### Identity resolution considerations
 
