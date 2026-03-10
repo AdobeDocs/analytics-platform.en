@@ -115,13 +115,13 @@ Each configuration requires a unique name. For example, `Example Content Analyti
 >abstract="For the configuration of Content Analytics you need to select one or more data views. So, you can merge your Content Analytics data with other data."
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_dataviewsheader"
+>id="aca_onboarding_dataviews_header"
 >title="Data views"
 >abstract="Select one or more existing data views from Customer Journey Analytics that you would like to merge your Content Analytics data with." 
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_header_alt"
->title="Data view"
+>title="Data views"
 >abstract="Select one or more existing data views from Customer Journey Analytics that you would like to merge your Content Analytics data with.<br/>"
 
 >[!CONTEXTUALHELP]
@@ -324,7 +324,59 @@ In this section, you configure how to collect your Content Analytics data.
 >title="Tags property disabled"
 >abstract="Content Analytics extension is already active."
 
-<!-- markdownlint-enable MD034 -->
+
+<!-- For updated ACA -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_web_pages_boldheader"
+>title="Web pages data collection"
+>abstract="**Pages to include / exclude**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_web_pages_header"
+>title="Web pages data collection"
+>abstract="Indicate which pages should be **included** or **excluded** when collecting data for Content Analytics."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_web_assets_boldheader"
+>title="Web assets data collection"
+>abstract="**Assets to include / exclude**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_web_assets_header"
+>title="Web assets data collection"
+>abstract="Indicate which assets should be **included** or **excluded** when collecting data for Content Analytics."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"
+>title="Mobile experience locations data collection"
+>abstract="**Experience locations to include / exclude**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_experience_locations_header"
+>title="Mobile experience locations data collection"
+>abstract="Indicate which experience locations should be **included** or **excluded** when collecting data for Content Analytics."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
+>title="Mobile asset locations data collection"
+>abstract="**Asset locations to include / exclude**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_locations_header"
+>title="Mobile asset locations data collection"
+>abstract="Indicate which asset locations should be **included** or **excluded** when collecting data for Content Analytics."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
+>title="Mobile asset URLs data collection"
+>abstract="**Asset URLs to include / exclude**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_urls_header"
+>title="Mobile asset URLs data collection"
+>abstract="Indicate which asset URLs should be **included** or **excluded** when collecting data for Content Analytics."
+
 
 #### New configuration {#new-configuration}
 
