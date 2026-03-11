@@ -426,6 +426,16 @@ You can, however, edit the pages and assets to include or exclude.
 
 ### Header overrides
 
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_header_overrides_boldheader"
+>title="Header overrides"
+>abstract="**Header overrides**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_header_overrides_header"
+>title="Header overrides"
+>abstract="Advanced feature to bypass bot detection or gate traffic. Content Analytics includes your custom HTTP headers when calling your endpoints."
+
 Optionally, you can specify in the **[!UICONTROL Header overrides]** section a header name and secret header value.  This header overrides configuration ensures that Content Analytics sends custom HTTP headers to bypass any bot detection or gate traffic technologies you have implemented.
 
 ![Header overrides section](/help/content-analytics/assets/aca-configuration-header-overrides.png)
