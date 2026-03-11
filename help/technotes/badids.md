@@ -4,8 +4,8 @@ description: Understand Bad IDs (BAVIDs) in Customer Journey Analytics. Learn ho
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
+exl-id: 4f71fbf2-290b-4076-b2ad-b086c2b854d9
 ---
-
 # Bad IDs
 
 This article provides context on Bad IDs and how to detect their presence or risk of occurrence in your data, using Query Service. 
