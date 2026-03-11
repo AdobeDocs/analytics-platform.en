@@ -3,6 +3,7 @@ title: Browser And Language Support
 description: Learn which browsers and languages are supported in Customer Journey Analytics
 solution: Customer Journey Analytics
 role: User
+exl-id: c94c0202-4115-48b2-8b42-eeec04271f19
 ---
 # Browser and language support
 
