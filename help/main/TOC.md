@@ -541,6 +541,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Tech notes {#technotes}
   + [Access Control](../technotes/access-control.md)
   + [Bad IDs](/help/technotes/badids.md)
+  + [Browser and language](/help/technotes/browser-language.md)
   + [Data centers](../technotes/data-centers.md)
   + [Deletion implications](../technotes/deletion.md)
   + [Domains](../technotes/domains.md)
