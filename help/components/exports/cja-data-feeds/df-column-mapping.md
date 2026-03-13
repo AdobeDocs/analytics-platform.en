@@ -6,17 +6,17 @@ feature: Data Feeds
 ---
 # Compare and map data feed columns from Adobe Analytics to Customer Journey Analytics
 
+Mapping data feed columns from Adobe Analytics to Customer Journey Analytics is not typically a one-to-one mapping exercise. This is due to various fundamental differences in how data is collected into Adobe Experience Platform (and then made available in Customer Journey Analytics.) 
+
 Before you begin mapping Adobe Analytics data feed columns to Customer Journey Analytics data feed columns, you first need to understand important differences that affect mappings.
 
 <!-- There are going to be fields in AA data feeds that don't exist in CJA. E.g. Visit num. (We will have a session ID, but we won't have a session number.) There are others. Need to get a full list. -->
 
 ## Differences in Customer Journey Analytics that affect mappings
 
-Mapping data feed columns from Adobe Analytics to Customer Journey Analytics is not typically a one-to-one mapping exercise. This is due to various fundamental differences in how data is collected into Adobe Experience Platform (and then made available in Customer Journey Analytics.) 
+Your organization's schema architecture, implementation type, and the way data is processed all affect data feed mapping.
 
-Your organization's schema, implementation type, and the way data is processed all affect data feed mapping.
-
-### Schema 
+### Schema architecture
 
 When transitioning from Adobe Analytics data feeds to Customer Journey Analytics data feeds, it's natural to want to map every Adobe Analytics data feed column to a data feed column in Customer Journey Analytics. However, the Experience Data Model (XDM) schema used in Customer Journey Analytics provides significantly more flexibility than Adobe Analytics. As such, your organization's XDM schema likely does not contain fields that translate to one-to-one data feed column mappings. 
 
@@ -33,9 +33,9 @@ Moreover, the Customer Journey Analytics XDM schema supports cross-channel data 
 
 The number of fields that are available to map to in your Customer Journey Analytics XDM schema can differ depending on how data is collected for your Customer Journey Analytics implementation, as follows:
 
-* **New WebSDK implementations**: Many columns that exist in Adobe Analytics data feeds do not exist in Customer Journey Analytics. Likewise, customer journey analytics may contain fields that don't exist in Adobe Analytics data feeds
+* **New WebSDK implementations**: If your Customer Journey Analytics implementation uses a custom schema, many columns that exist in Adobe Analytics data feeds likely do not exist in Customer Journey Analytics. Likewise, customer journey analytics may contain fields that don't exist in Adobe Analytics data feeds. 
 
-* **Analytics Source Connector implementations**: One-to-one field mappings exist by default for many data feed columns because the Analytics Source Connector uses the Analytics Experience Event field group. For information about which Adobe Analytics fields map to fields in this field group, see [Add link to existing mapping page]().<!--add link to existing mapping page-->
+* **Analytics Source Connector implementations**: One-to-one field mappings exist by default for many data feed columns because the Analytics Source Connector uses the Analytics Experience Event field group in the XDM schema. For information about which Adobe Analytics fields map to fields in this field group, see [Add link to existing ADC mapping page]().<!--add link to existing mapping page-->
 
 * **Data layer**: 
 
@@ -51,9 +51,9 @@ Because Adobe Analytics exports data for a given field in two separate columns (
 
 ### Step 1 - Map the default columns included in Customer Journey Analytics
 
-There are roughly 20 default fields included in all WebSDK implementations. dimensions included in Customer Journey Analytics. 
+There are roughly 20 default fields included in all WebSDK implementations. 
 
-Before you can map these default dimensions, make sure that your Customer Journey Analytics environment meets the following prerequisites:
+Before you can map these default columns, make sure that your Customer Journey Analytics environment meets the following prerequisites:
 
 * It uses a WebSDK implementation.
 
