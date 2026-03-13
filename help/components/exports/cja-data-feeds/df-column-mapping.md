@@ -4,19 +4,31 @@ keywords: clickstream;data feed;datafeed;Data Feed
 title: Compare and Map Data Feed Columns
 feature: Data Feeds
 ---
-# Compare and map data feed columns
+# Compare and map data feed columns from Adobe Analytics to Customer Journey Analytics
 
 <!-- There are going to be fields in AA data feeds that don't exist in CJA. E.g. Visit num. (We will have a session ID, but we won't have a session number.) There are others. Need to get a full list. -->
 
+## Differences in Customer Journey Analytics that affect mappings
+
+Customer Journey Analytics is 
+
+### Schema 
+
+When transitioning from Adobe Analytics data feeds to Customer Journey Analytics data feeds, it's natural to want to map every Adobe Analytics data feed column to a data feed column in Customer Journey Analytics. However, the Experience Data Model (XDM) schema used in Customer Journey Analytics provides significantly more flexibility than Adobe Analytics. As such, your organization's XDM schema likely does not contain fields that translate to one-to-one data feed column mappings. This does not mean that your Customer Journey Analytics data feed columns are insufficient. Rather, it means that you first need to determine which Adobe Analytics data feed columns need to be retained before you create mappings to Customer Journey Analytics data feeds.
+
+Moreover, the Customer Journey Analytics XDM schema supports cross-channel data (such as call center data), which is not available in Adobe Analytics. These cross-channel fields are examples of new columns that can be included in Customer Journey Analytics data feeds that aren't supported in Adobe Analytics.
+
+### Implementation 
+
 The number of fields you can map and the mapping process differs depending on how you collect data for your Customer Journey Analytics implementation.
 
-The 
+
 
 For implementations using the Adobe Source Connector, one-to-one field mappings exist for data feed columns. <!--add link to existing mapping page-->
 
 For other types of implementations, such as WebSDK, many columns that exist in Adobe Analytics do not exist in Customer Journey Analytics. 
 
-## Understand data processing differences
+### Data processing
 
 Each data feed field in Customer Journey Analytics is available only as a single column that has data view processing applied. <!-- If you have persistence applied, it will be included.--> (In Adobe Analytics, most data feed fields are available in two separate columns: one containing pre-processed data and another containing post-processed data, which includes server-side logic, processing rules, and VISTA rules.) <!--You can imitate it by having 2 dimensions by having one have persistence -->
 
