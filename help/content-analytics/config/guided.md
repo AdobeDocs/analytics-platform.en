@@ -70,7 +70,7 @@ The guided configuration wizard consists of four sections ([Details](#details), 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_header"
 >title="Connection"
->abstract="Select an existing connection from Customer Journey Analytics that you would like to merge your Content Analytics data wit."    
+>abstract="Select an existing connection from Customer Journey Analytics that you would like to merge your Content Analytics data with."    
 
 Each configuration requires a unique name. For example, `Example Content Analytics configuration`. The name is required to save or implement a configuration.
 
