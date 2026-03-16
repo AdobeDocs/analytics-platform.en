@@ -97,7 +97,7 @@ You can enable identity stitching when you [add](/help/connections/create-connec
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
 >title="Stitching metrics"
->abstract="Stitching metrics are being calculated using a sample set of data that have a timestamp of events within the last 7 days.<br>This sample set of data usually differs from the sample data used in the **[!UICONTROL Preview]** table."
+>abstract="Stitching metrics are calculated using a sample set of data with event timestamps from the last 7 days.<br>This sample set of data usually differs from the sample data used in the **[!UICONTROL Preview]** table."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
@@ -182,7 +182,7 @@ On top of the standard **[!UICONTROL Datasets preview]** interface, when [adding
 
 #### Stitching metrics
 
-**[!UICONTROL Stitching metrics]** are being calculated using a sample set of data that have a timestamp of events within the last 7 days.. This sample set of data usually differs from the sample data used in the **[!UICONTROL Preview]** table. Stitching metrics provide details for:
+**[!UICONTROL Stitching metrics]** are calculated using a sample set of data with event timestamps from the last 7 days. This sample set of data usually differs from the sample data used in the **[!UICONTROL Preview]** table. Stitching metrics provide details for:
 
 * **[!UICONTROL Person ID coverage]**: The coverage of the selected person ID used for identification during the stitching process (live and replay). 
   * For the best field-based stitching results, a person ID (user info) should be sent on at least one event for each persistent ID (device info). 
