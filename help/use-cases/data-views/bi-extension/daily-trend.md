@@ -4,6 +4,7 @@ description: Daily trend use case for the BI extension in various BI tools in Cu
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
+exl-id: 09810072-1be4-4c78-8c84-b33db1872dbc
 ---
 # Daily trend
 

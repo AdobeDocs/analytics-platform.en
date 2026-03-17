@@ -59,9 +59,11 @@ The **[!UICONTROL Calculated metric builder]** dialog is used to create new or e
 
 1. To verify whether your calculated metric definition is correct, use the constantly updated **[!UICONTROL Preview]** of the results of the calculated metric. The **[!UICONTROL Preview]** covers the last 90 days and evaluates the definition of your calculated metric continuously.
    
-   The **[!UICONTROL Product compatibility]** indicates whether the calculated metric can be used in experimentation. Possible values are:
+   The **[!UICONTROL Product compatibility]** indicates whether the calculated metric can be used in experimentation and full table export. Possible values are:
    * **[!UICONTROL Everywhere in Customer Journey Analytics]**: The calculated metric can be used throughout all of Customer Journey Analytics. 
-   * **[!UICONTROL Everywhere in Customer Journey Analytics (excluding experimentation)]**: The calculated metric can be used throughout all of Customer Journey Analytics, except in the Experimentation panel. 
+   * **[!UICONTROL Not compatible in:]**
+     * **[!UICONTROL Experimentation]**: The calculated metric can be used throughout all of Customer Journey Analytics, except in the Experimentation panel. 
+     * **[!UICONTROL Full table export]**: The calculated metric can be used throughout all of Customer Journey Analytics, except when exporting full tables from Workspace. Not all functions are supported when exporting full tables. If you need the calculated metric to be included when exporting full tables, use a supported function. For more information, see [Unsupported calculated metric functions](/help/analysis-workspace/export/export-cloud.md#unsupported-calculated-metric-functions) in [Export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md).
 
 1. Select:
    * **[!UICONTROL Save]** to save the calculated metric.

@@ -1,5 +1,5 @@
 ---
-title: Customer Journey Analytics BI extension
+title: Customer Journey Analytics BI Extension
 description: Learn how you can use Power BI or Tableau Desktop to access data views using the Customer Journey Analytics BI extension.
 solution: Customer Journey Analytics
 feature: BI Extension
@@ -42,8 +42,31 @@ Or you can:
 
 To use non-expiring credentials: 
 
-* Create [non-expiring credentials in Experience Platform](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/bi-extension#non-expiring-credentials).
-* Grant access to the non-expiring credentials by following the steps mentioned in [Expiring credentials](#Expiring-credentials).
+1. Create [non-expiring credentials in Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#non-expiring-credentials). If you want to use already existing non-expiring credentials, ensure these credentials are [migrated to OAuth](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials#migrate-credentials).
+
+1. Ensure the non-expiring credential is available for the Customer Journey Analytics product and product profiles. You need to be system administrator for the organization to execute the following steps.
+   1. Select **[!UICONTROL Admin Console]** from ![App](/help/assets/icons/Apps.svg).
+   1. Verify that the non-expiring credential is added to the list of API credentials.
+      1. Select **[!UICONTROL Users]** from the top menu.
+      1. Select **[!UICONTROL API credentials]** from the left rail.
+      1. The new or migrated non-expiring credentials should be listed and start with **[!UICONTROL EQS-...]**.
+
+      1. Ensure the non-expiring API credential has access to the Customer Journey Analytics product and profiles. 
+
+         1. Select ![ProductDetails](/help/assets/icons/ProductDetails.svg) for the **[!UICONTROL EQS-...]** non-expiring API credential.
+         1. From the **[!UICONTROL EQS-...]** product details pane, select ![More](/help/assets/icons/More.svg) and select **[!UICONTROL Edit API credentials]**.
+         1. In the **[!UICONTROL Edit API credentials]** dialog, validate the **[!UICONTROL Assigned profiles]**. If no Customer Journey Analytics product is listed:
+            1. Select ![Add](/help/assets/icons/Add.svg) and select **[!UICONTROL Customer Journey Analytics]**.
+            1. Select one or more product profiles that contain the users that you want to provide access to for Query Service and the BI extension. 
+            1. Select **[!UICONTROL Apply]**.
+
+1. Validate that you see the non-expiring API credential in Experience Platform Query Service.
+
+   1. Select **[!UICONTROL Experience Platform]** from ![App](/help/assets/icons/Apps.svg).
+   1. Select **[!UICONTROL Queries]** from the left rail.
+   1. Select **[!UICONTROL Credentials]** from the top menu.
+   1. You should see your non-expiring API credential, using the name you provided in step 1, in the **[!UICONTROL Non-expiring credentials]** list.
+
 
 See [Customer Journey Access Control](../technotes/access-control.md) for more information, specifically the [Product Admin additional permissions](../technotes/access-control.md#product-admin-additional-permissions) and [Customer Journey Analytics Permissions in the Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
 

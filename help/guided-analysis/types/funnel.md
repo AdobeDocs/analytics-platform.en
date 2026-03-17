@@ -19,7 +19,12 @@ role: User
 
 The ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Funnel]** analysis provides a visual representation of a critical user journey in your product. The horizontal axis represents each step that a user must pass through. The vertical axis represents the percentage of users or sessions at each step. All steps must be done in eventual order, but can happen at any time within the reporting window.
 
->[!VIDEO](https://video.tv.adobe.com/v/3421663/?quality=12&learn=on){width="90%"}
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funnel friction analysis](https://video.tv.adobe.com/v/3421663/?quality=12&learn=onn){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
 
 ## Use cases
 

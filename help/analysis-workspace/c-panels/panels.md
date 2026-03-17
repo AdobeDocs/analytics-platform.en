@@ -161,7 +161,7 @@ For more information, see [Quick segments](/help/components/segments/seg-quick.m
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Drop down segments](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Drop down segments](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} for a demo video.
 
 {{videoaa}}
 
@@ -219,6 +219,12 @@ To create a dynamic drop-down segment:
 Note that Dynamic drop-down segments are not available for metrics, segments, or date ranges.
 
 A dynamic drop-down segment provides the same context menu options as static drop-down segments.
+
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dynamic drop down segments](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
 
 
 ## Context menu

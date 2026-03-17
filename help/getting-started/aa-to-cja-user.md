@@ -87,7 +87,7 @@ Calculated metrics are similarly named between Adobe Analytics and Customer Jour
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Moving calculated metrics from Adobe Analytics to Customer Journey Analytics](https://video.tv.adobe.com/v/31788?quality=12&learn=on){target="_blank"} for a demo video on how to move calculated metrics.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Moving calculated metrics from Adobe Analytics to Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics){target="_blank"} for a demo video on how to move calculated metrics.
 
 >[!ENDSHADEBOX]
 
@@ -114,7 +114,7 @@ Customer Journey Analytics expands the concepts of identities beyond ECIDs to in
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Using identity in Customer Journey Analytics](https://video.tv.adobe.com/v/30750/?quality=12&learn=on){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Using identity in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/visitor-id/understanding-how-customer-journey-analytics-uses-identity){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 

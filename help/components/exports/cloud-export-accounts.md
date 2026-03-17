@@ -20,7 +20,7 @@ For information about how to manage existing accounts, including viewing, editin
 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 1. On the [!UICONTROL Exports] page, select the [!UICONTROL **Location accounts**] tab.
 
-   ![Exports page options showing Add another account](assets/account-add.png)
+   ![Exports page options showing Add account](assets/account-add.png)
 
 1. Select [!UICONTROL **Add account**]. 
    
@@ -63,14 +63,14 @@ For information about how to manage existing accounts, including viewing, editin
 >Consider the following when using AEP Data Landing Zone for your export account:
 >
 > * When exporting Customer Journey Analytics reports to Adobe Experience Platform Data Landing Zone, make sure that you download the data within 7 days, then delete it from AEP Data Landing Zone. After 7 days, the data is automatically deleted from AEP Data Landing Zone.
-> * AEP Data Landing Zone uses either Azure or AWS storage. If your organization is using a login company configured to use Azure, then AEP Data Landing Zone uses Azure. If the login company is configured to use AWS, then AEP Data Landing Zone uses AWS. 
+> * AEP Data Landing Zone uses either Azure or AWS storage. If your organization is using an IMS org configured to use Azure, then AEP Data Landing Zone uses Azure. If the login company is configured to use AWS, then AEP Data Landing Zone uses AWS. 
 >
 
 1. Begin creating a cloud export account in either of the following ways:
 
    * From the Exports page as described above, in [Begin creating a cloud export account](#begin-creating-a-cloud-export-account)
    
-   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. After you select **[!UICONTROL AEP Data Landing Zone]** in the **[!UICONTROL Account type]** field, select [!UICONTROL **Save**].
 
@@ -94,7 +94,7 @@ For information about how to manage existing accounts, including viewing, editin
 
 1. (Conditional) If you are using Azure storage:
 
-   1. Copy the contents of the [!UICONTROL **SAS URI**] field to your clipboard. You will use this SAS URI to access the data that is exported from Analysis Workspace from the AEP Data Landing Zone.
+   1. Copy the contents of the [!UICONTROL **SAS URI**] field to your clipboard. You will use this SAS URI to access the exported Analysis Workspace data from AEP Data Landing Zone.
 
       If this field is empty, you need to be granted permission to access Adobe Experience Platform.
 
@@ -110,7 +110,7 @@ For information about how to manage existing accounts, including viewing, editin
 
          You can skip the tasks described in the sections [Retrieve the credentials for your Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#retrieve-dlz-credentials) and [Update Data Landing Zone credentials](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#update-dlz-credentials), because the URI that you copied contains these credentials.
 
-      1. When following the Adobe Experience Platform documentation and you come to the [!UICONTROL **Blob container SAS URL**] field, paste the SAS URI that you copied in Step 3.
+      1. When following the Adobe Experience Platform documentation and you come to the [!UICONTROL **Blob container SAS URL**] field, paste the SAS URI that you copied in an earlier step.
 
          >[!NOTE]
          >
@@ -150,7 +150,7 @@ For information about how to manage existing accounts, including viewing, editin
 
    * From the Exports page as described above, in [Begin creating a cloud export account](#begin-creating-a-cloud-export-account)
    
-   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) 
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables) 
 
 1. In the [!UICONTROL **Account properties**] section of the [!UICONTROL **Add account**] dialog box, specify the following information:
 
@@ -178,7 +178,7 @@ For information about how to manage existing accounts, including viewing, editin
 
    * From the Exports page as described above, in [Begin creating a cloud export account](#begin-creating-a-cloud-export-account)
    
-   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) 
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables) 
 
 1. In the [!UICONTROL **Account properties**] section of the [!UICONTROL **Add account**] dialog box, specify the following information:
 
@@ -206,7 +206,7 @@ For information about how to manage existing accounts, including viewing, editin
 
    * From the Exports page as described above, in [Begin creating a cloud export account](#begin-creating-a-cloud-export-account)
    
-   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) 
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables) 
 
 1. In the [!UICONTROL **Account properties**] section of the [!UICONTROL **Add account**] dialog box, specify the following information:
 
@@ -214,7 +214,7 @@ For information about how to manage existing accounts, including viewing, editin
       |---------|----------|
       | [!UICONTROL **Application ID**] | Copy this ID from the Azure application that you created. In Microsoft Azure, this information is located on the **Overview** tab within your application. For more information, see the [Microsoft Azure documentation about how to register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
       | [!UICONTROL **Tenant ID**] | Copy this ID from the Azure application that you created. In Microsoft Azure, this information is located on the **Overview** tab within your application. For more information, see the [Microsoft Azure documentation about how to register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
-      | [!UICONTROL **Key vault URI**] | <p>The path to the SAS URI in Azure Key Vault.  To configure Azure SAS, you need to store an SAS URI as a secret using Azure Key Vault. For information, see the [Microsoft Azure documentation about how to set and retrieve a secret from Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations).</p><p>After the key vault URI is created:<ul><li>Add an access policy on the Key Vault in order to grant permission to the Azure application that you created.<p><p>For information, see the [Microsoft Azure documentation about how to assign a Key Vault access policy](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal).</p>Or</p><p>If you want to grant an access role directly without creating an access policy, see the [Microsoft Azure documentation about how to assign Azure roles using Azure portal](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal). This adds the role assignment for the application ID to access the key vault URI. </p></li><li>Make sure the Application ID has been granted the `Key Vault Certificate User` built-in role in order to access the key vault URI.</br><p>For more information, see [Azure built-in roles](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).</p></li></ul> |
+      | [!UICONTROL **Key vault URI**] | <p>The path to the SAS URI in Azure Key Vault.  To configure Azure SAS, you need to store an SAS URI as a secret using Azure Key Vault. For information, see the [Microsoft Azure documentation about how to set and retrieve a secret from Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations).</p><p>After the key vault URI is created:<ul><li>Add an access policy on the Key Vault in order to grant permission to the Azure application that you created.<p>For information, see the [Microsoft Azure documentation about how to assign a Key Vault access policy](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal).</p><p>Or</p><p>If you want to grant an access role directly without creating an access policy, see the [Microsoft Azure documentation about how to assign Azure roles using Azure portal](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal). This adds the role assignment for the application ID to access the key vault URI. </p></li><li>Make sure the Application ID has been granted the `Key Vault Certificate User` built-in role in order to access the key vault URI.<p>For more information, see [Azure built-in roles](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).</p></li></ul> |
       | [!UICONTROL **Key vault secret name**] | The secret name you created when adding the secret to Azure Key Vault. In Microsoft Azure, this information is located in the Key Vault you created, on the **Key Vault** settings pages. For information, see the [Microsoft Azure documentation about how to set and retrieve a secret from Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations). |
       | [!UICONTROL **Location account secret**] | Copy the secret from the Azure application that you created. In Microsoft Azure, this information is located on the **Certificates & secrets** tab within your application. For more information, see the [Microsoft Azure documentation about how to register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). <!-- need to grant permission to the bucket. Jun will send info on where that is documented) --> |
 
@@ -238,7 +238,7 @@ For information about how to manage existing accounts, including viewing, editin
 
    * From the Exports page as described above, in [Begin creating a cloud export account](#begin-creating-a-cloud-export-account)
    
-   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. In the [!UICONTROL **Account properties**] section of the [!UICONTROL **Add account**] dialog box, specify the following information:
 
@@ -256,7 +256,7 @@ For information about how to manage existing accounts, including viewing, editin
 
    ![Export account created dialog](assets/export-account-azure.png)
 
-1. If you haven't already, ensure that you grant permissions to the bucket in Azure RBAC. <!-- add link to Google Cloud docs on how to do this --> 
+1. If you haven't already, ensure that you grant permissions to the container in Azure RBAC.
 
 1. Select [!UICONTROL **OK**].
 
@@ -268,7 +268,7 @@ For information about how to manage existing accounts, including viewing, editin
 
    * From the Exports page as described above, in [Begin creating a cloud export account](#begin-creating-a-cloud-export-account)
    
-   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace) 
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables) 
 
 1. In the [!UICONTROL **Account properties**] section of the [!UICONTROL **Add account**] dialog box, specify the following information:
 

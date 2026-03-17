@@ -4,6 +4,7 @@ description: Monthly trend use case for the BI extension in various BI tools in 
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
+exl-id: 9be5180e-6926-431e-aa70-61cb98130ef6
 ---
 # Monthly trend
 

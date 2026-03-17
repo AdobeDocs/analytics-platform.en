@@ -17,6 +17,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 + Release Notes {#releases}
   + [Latest release](../release-notes/latest.md)
   + [Pre-release notes](../release-notes/pre-release-notes.md)
+  + [2026 releases](../release-notes/2026.md)
   + [2025 releases](../release-notes/2025.md)
   + [2024 releases](../release-notes/2024.md)
   + [2023 releases](../release-notes/2023.md)
@@ -95,7 +96,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Compare with Adobe Analytics {#cja-aa-comparison}
     + [Overview](../getting-started/aa-vs-cja/overview.md)
     + [Use Adobe Analytics data](../getting-started/aa-vs-cja/aa-data-in-cja.md)
-    + [Map Adobe Analytics data](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
+    + [Cross-IMS data mapping](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
     + [Feature support](../getting-started/aa-vs-cja/cja-aa.md)
     + [Compare terminology](../getting-started/aa-vs-cja/terminology.md)
     + [Compare data processing](../getting-started/aa-vs-cja/data-processing-comparisons.md)
@@ -138,9 +139,11 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Configure](/help/connections/audience-analysis/audience-analysis-configure.md)
     + [Manage](/help/connections/audience-analysis/audience-analysis-manage.md)
     + [Analyze](/help/connections/audience-analysis/analyze-audiences.md)
+    + [Use cases](/help/connections/audience-analysis/audience-analysis-use-cases.md)
 + Data Views {#cja-dataviews}
   + [Data views overview](../data-views/data-views.md)
   + [Create or edit a data view](../data-views/create-dataview.md)
+  + [Manage data views](/help/data-views/manage-dataviews.md)
   + [Session settings](../data-views/session-settings.md)
   + Component settings {#component-settings}
     + [Component settings overview](../data-views/component-settings/overview.md)
@@ -439,7 +442,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Field-based stitching](/help/stitching/fbs.md)
   + [Graph-based stitching](/help/stitching/gbs.md)
   + [Request stitching](/help/stitching/use-stitching.md)
-  + [Use stitching](/help/stitching/use-stitching-ui.md)
+  + [Enable stitching](/help/stitching/use-stitching-ui.md)
   + [Validate stitching](/help/stitching/validate.md)
   + [Frequently Asked Questions](/help/stitching/faq.md)  
 
@@ -537,6 +540,8 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Tech notes {#technotes}
   + [Access Control](../technotes/access-control.md)
+  + [Bad IDs](/help/technotes/badids.md)
+  + [Browser and language](/help/technotes/browser-language.md)
   + [Data centers](../technotes/data-centers.md)
   + [Deletion implications](../technotes/deletion.md)
   + [Domains](../technotes/domains.md)

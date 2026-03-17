@@ -1,9 +1,10 @@
 ---
-title: Manage audience analysis configurations
+title: Manage Audience Analysis Configurations
 description: Learn how to manage audience analysis configurations
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
+exl-id: 0d38a779-a29f-41c9-81b4-f5523eeae93f
 ---
 # Manage audience analysis configurations{#manage-audience-analysis}
 
@@ -72,7 +73,3 @@ To delete an existing audience analysis configuration:
    ![Audience analysis main page](assets/audience-analysis-manage-configurations.png)
 
 1. Select the checkbox next to the configuration that you want to delete, then select **[!UICONTROL Delete]**.
-
-
-
-

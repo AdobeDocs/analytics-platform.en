@@ -1,6 +1,6 @@
 ---
-title: Create or edit a connection
-description: Describes how to create or edit a connection to an Experience Platform dataset in Customer Journey Analytics.
+title: Create Or Edit A Connection
+description: Learn how to create or edit a connection to an Experience Platform dataset in Customer Journey Analytics.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
@@ -70,8 +70,8 @@ role: Admin
 
 >[!CONTEXTUALHELP]
 >id="connection_change_personid"
->title="Change Person ID"
->abstract="A change of the Person ID deletes all existing data in the connection. You have to re-ingest data from the dataset based on the new Person ID.<br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the deletion process is completed."
+>title="Change identity settings "
+>abstract="A change of identity setting deletes connection data for this dataset, once you save the modifications in the Connections interface. You will have to manually start a data backfill for the dataset, based on the new settings.<br/><br/>A delay in reporting is possible until the deletion process is completed." 
 
 >[!CONTEXTUALHELP]
 >id="connection_change_accountid"
@@ -99,37 +99,44 @@ role: Admin
 >abstract="A change of the Persistent ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Persistent ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
 
 
+>[!CONTEXTUALHELP]
+>id="connection_use_primary_identity_namespace"
+>title="Use primary identity namespace"
+>abstract="Automatically detect and use an identityMap namespace defined as **[!UICONTROL primary]**, at each event level."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces" text="Identity namespace overview" 
+
+
 <!-- Start of contextual help entries for CJA connection dialogs -->
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_ajo"
 >title="Use this connection in Customer Journey Analytics"
->abstract="This option allows you to leverage the advanced reporting capabilities of Customer Journey Analytics with your Journey Optimizer connection. These capabilities allow you to:<ul><li>Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics.</li><li>Edit the Journey Optimizer connection and associated data views.</li><li>Analyze journey events, conversation paths, and campaign performance.</li></ul>**When this option is enabled, each row of data within the connection counts towards your license rows of data each month for Customer Journey Analytics and appears within the Connections Usage UI.**<br><br/>Explore this option only if you are comfortable with the additional usage of rows of data in Customer Journey Analytics. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)."
+>abstract="This option allows you to leverage the advanced reporting capabilities of Customer Journey Analytics with your Journey Optimizer connection. These capabilities allow you to:<ul><li>Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics.</li><li>Edit the Journey Optimizer connection and associated data views.</li><li>Analyze journey events, conversation paths, and campaign performance.</li></ul>**When this option is enabled, each row of data within the connection counts towards your license rows of data each month for Customer Journey Analytics. And appears within the Connections Usage UI.**<br><br/>Explore this option only if you are comfortable with the additional usage of rows of data in Customer Journey Analytics. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo){target="_blank"}."
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_ajo"
 >title="Remove this connection from Customer Journey Analytics"
->abstract="This Journey Optimizer connection is currently used in Customer Journey Analyics. The connections allows you to:<ul><li>Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics.</li><li>Edit the Journey Optimizer connection and associated data views.</li><li>Analyze journey events, conversation paths, and campaign performance.</li></ul>**If you remove the connection, in-depth analysis in Customer Journey Analytics is no longer possible. The connection and any associated data views are reset to their default state and can no longer be edited.**<br/><br/>**Billing for this connection in Customer Journey Analytics includes the full month during which the connection is removed.**<br/><br/>The connection remains enabled in Journey Optimizer. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)." 
+>abstract="This Journey Optimizer connection is currently used in Customer Journey Analytics. The connection allows you to:<ul><li>Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics.</li><li>Edit the Journey Optimizer connection and associated data views.</li><li>Analyze journey events, conversation paths, and campaign performance.</li></ul>**If you remove the connection, in-depth analysis in Customer Journey Analytics is no longer possible. The connection and any associated data views are reset to their default state and can no longer be edited.**<br/><br/>**Billing for this connection in Customer Journey Analytics includes the full month during which the connection is removed.**<br/><br/>The connection remains enabled in Journey Optimizer. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo){target="_blank"}." 
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_brand_concierge"
 >title="Use this connection in Customer Journey Analytics"
->abstract="This option allows you to leverage the advanced reporting capabilities of Customer Journey Analytics with your Brand Concierge connection. These capabilities allow you to:<ul><li>Perform in-depth analysis of Brand Concierge data within Customer Journey Analytics.</li><li>Edit the Brand Concierge connection and associated data views.</li><li>Analyze conversational engagement, sentiment, and conversion metrics.</li></ul>**When this option is enabled, each row of data within the connection counts towards your license rows of data each month for Customer Journey Analytics and appears within the Connections Usage UI.**<br><br/>Explore this option only if you are comfortable with the additional usage of rows of data in Customer Journey Analytics. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)."
+>abstract="This option allows you to leverage the advanced reporting capabilities of Customer Journey Analytics with your Brand Concierge connection. These capabilities allow you to:<ul><li>Perform an in-depth analysis of Brand Concierge data within Customer Journey Analytics.</li><li>Edit the Brand Concierge connection and associated data views.</li><li>Analyze conversational engagement, sentiment, and conversion metrics.</li></ul>**When this option is enabled, each row of data within the connection counts towards your license rows of data each month for Customer Journey Analytics. And appears within the Connections Usage UI.**<br><br/>Explore this option only if you are comfortable with the additional usage of rows of data in Customer Journey Analytics. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}."
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_brand_concierge"
 >title="Remove this connection from Customer Journey Analytics"
->abstract="This Brand Concierge connection is currently used in Customer Journey Analyics. The connections allows you to:<ul><li>Perform in-depth analysis of Brand Concierge data within Customer Journey Analytics.</li><li>Edit the Brand Concierge connection and associated data views.</li><li>Analyze conversational engagement, sentiment, and conversion metrics.</li></ul>**If you remove the connection, in-depth analysis in Customer Journey Analytics is no longer possible. The connection and any associated data views are reset to their default state and can no longer be edited.**<br/><br/>**Billing for this connection in Customer Journey Analytics includes the full month during which the connection is removed.**<br/><br/>The connection remains enabled in Brand Concierge. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)." 
+>abstract="This Brand Concierge connection is currently used in Customer Journey Analytics. The connection allows you to:<ul><li>Perform an in-depth analysis of Brand Concierge data within Customer Journey Analytics.</li><li>Edit the Brand Concierge connection and associated data views.</li><li>Analyze conversational engagement, sentiment, and conversion metrics.</li></ul>**If you remove the connection, in-depth analysis in Customer Journey Analytics is no longer possible. The connection and any associated data views are reset to their default state and can no longer be edited.**<br/><br/>**Billing for this connection in Customer Journey Analytics includes the full month during which the connection is removed.**<br/><br/>The connection remains enabled in Brand Concierge. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}." 
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_product_usage"
 >title="Use this connection in Customer Journey Analytics"
->abstract="This option allows you to leverage the advanced reporting capabilities of Customer Journey Analytics with your product usage connection. These capabilities allow you to:<ul><li>Perform in-depth analysis of product usage data within Customer Journey Analytics.</li><li>Edit the product usage connection and associated data views.</li></ul>**When this option is enabled, each row of data within the connection counts towards your license rows of data each month for Customer Journey Analytics and appears within the Connections Usage UI.**<br><br/>Explore this option only if you are comfortable with the additional usage of rows of data in Customer Journey Analytics. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview)."
+>abstract="This option allows you to leverage the advanced reporting capabilities of Customer Journey Analytics with your product usage connection. These capabilities allow you to:<ul><li>Perform in-depth analysis of product usage data within Customer Journey Analytics.</li><li>Edit the product usage connection and associated data views.</li></ul>**When this option is enabled, each row of data within the connection counts towards your license rows of data each month for Customer Journey Analytics. And appears within the Connections Usage UI.**<br><br/>Explore this option only if you are comfortable with the additional usage of rows of data in Customer Journey Analytics. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}."
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_product_usage"
 >title="Remove this connection from Customer Journey Analytics"
->abstract="This product usage connection is currently used in Customer Journey Analyics. The connections allows you to:<ul><li>Perform in-depth analysis of product usage data within Customer Journey Analytics.</li><li>Edit the product usage connection and associated data views.</li></ul>**If you remove the connection, in-depth analysis in Customer Journey Analytics is no longer possible. The connection and any associated data views are reset to their default state and can no longer be edited.**<br/><br/>**Billing for this connection in Customer Journey Analytics includes the full month during which the connection is removed.**<br/><br/>The connection remains enabled for product usage. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview)." 
+>abstract="This product usage connection is currently used in Customer Journey Analytics. The connection allows you to:<ul><li>Perform in-depth analysis of product usage data within Customer Journey Analytics.</li><li>Edit the product usage connection and associated data views.</li></ul>**If you remove the connection, in-depth analysis in Customer Journey Analytics is no longer possible. The connection and any associated data views are reset to their default state and can no longer be edited.**<br/><br/>**Billing for this connection in Customer Journey Analytics includes the full month during which the connection is removed.**<br/><br/>The connection remains enabled for product usage. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}." 
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_legal_section_section"
@@ -166,7 +173,7 @@ The connection creation and edit workflow experience brings all the dataset and 
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create and edit a connection](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Connect to data sources](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 
@@ -228,7 +235,7 @@ In the **[!UICONTROL Connections]** > **[!UICONTROL *Name of the connection*]** 
     | **[!UICONTROL Number of records]** | The total records in the previous month for the dataset in Experience Platform. |
     | **[!UICONTROL Schema]** | The [schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) based on which the dataset was created in Adobe Experience Platform. |
     | **[!UICONTROL Dataset type]** | For each dataset that you added to this connection, Customer Journey Analytics automatically sets the [dataset type](#dataset-types) based on the data coming in. There are 3 different dataset types: Event data, Profile data, and Lookup data. See the table below for an explanation of dataset types. |
-    | **[!UICONTROL Stitched]** | If a dataset is [enabled for stitching in the Connection UI](/help/stitching/use-stitching-ui.md), the value is **[!UICONTROL true]**. Otherwise the value is **[!UICONTROL false]**. Stitched datasets that are the result of the [request to stitch procedure](/help/stitching//use-stitching.md) are not identified as stitched in this table, and by default have a value of **[!UICONTROL false]**. |
+    | **[!UICONTROL Stitched]** | If a dataset is [enabled for stitching in the Connection UI](/help/stitching/use-stitching-ui.md), the value is **[!UICONTROL true]**. Otherwise, the value is **[!UICONTROL false]**. Stitched datasets that are the result of the [request to stitch procedure](/help/stitching//use-stitching.md) are not identified as stitched in this table, and by default have a value of **[!UICONTROL false]**. |
     | **[!UICONTROL Granularity]** | The granularity of the data in the dataset; only applicable for summary datasets. |
     | **[!UICONTROL Data source type]** | The data source type of the dataset. Not applicable for summary datasets. |
     | **[!UICONTROL Person ID]** | The Person ID that is used to support person-based reporting for the dataset. |
@@ -440,8 +447,8 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_dialog"
->title="Enable identity stitching"
->abstract="Enable identity stitching derives a stitched ID from a single or from multiple datasets. This process may include the merge of user data from authenticated and unauthenticated sessions.<br/><br/>You are responsible to comply with applicable laws and regulations. This compliance includes that you obtain the necessary end user permissions before you merge datasets."
+>title="Identity stitching"
+>abstract="Identity stitching derives user identity information from a dataset or from the identity graph. This process may include the merge of user data from authenticated and unauthenticated sessions.<br/><br/>You are responsible to comply with applicable laws and regulations. This compliance includes that you obtain the necessary end user permissions before you activate stitching on a dataset."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
 
 >[!CONTEXTUALHELP]
@@ -452,8 +459,8 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 
 >[!CONTEXTUALHELP]
 >id="connection_lookbackwindow"
->title="Lookback window"
->abstract="Select the appropriate time period for the lookback window to use in replay stitching."
+>title="Replay window"
+>abstract="Select the appropriate time period for the replay window to use in stitching."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
 
 >[!CONTEXTUALHELP]
@@ -465,13 +472,9 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >[!CONTEXTUALHELP]
 >id="connection_namespace_graph"
 >title="Namespace identity graph"
->abstract="Select the namespace to use to update the identifier in the identity graph."
+>abstract="Select the namespace to use to pick the identifier from the identity graph."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
 
->[!CONTEXTUALHELP]
->id="connection_changeto_identitygraph"
->title="Change to identity graph"
->abstract="Ensure you have finished the setup of the identity graph before you use the identity graph for stitching."
 
 ### Dataset types {#dataset-types}
 
@@ -485,7 +488,7 @@ There are different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile]
 
 |Dataset type|Description|Timestamp|Schema|Person ID <br/> Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}  |
 |---|---|---|---|---|
-| **[!UICONTROL Event]** | Data that represents events in time. For example, web visits, interactions, transactions, POS data, survey data, ad impression data, and so on. This data could be typical clickstream data, with a customer ID or a Cookie ID, and a timestamp. With event data, you have flexibility as to which ID is used as the Person ID. |  Set to the default timestamp field from event-based schemas in [!UICONTROL Experience Platform]. | Any built-in or custom schema that is based on an XDM class with the *Time Series* behavior. Examples include *XDM Experience Event* or *XDM Decision Event*. | You can pick which Person ID or Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} you want to include. Each dataset schema defined in the Experience Platform can have its own set of one or more identities defined and associated with an Identity Namespace. Any of these identities can be used as the Person ID or Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. Examples include Cookie ID, Stitched ID, User ID, Tracking Code, Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, and so on. |
+| **[!UICONTROL Event]** | Data that represents events in time. For example, web visits, interactions, transactions, POS data, survey data, ad impression data, and so on. This data could be typical clickstream data, with a customer ID or a Cookie ID, and a timestamp. With event data, you have flexibility which ID is used as the Person ID. |  Set to the default timestamp field from event-based schemas in [!UICONTROL Experience Platform]. | Any built-in or custom schema that is based on an XDM class with the *Time Series* behavior. Examples include *XDM Experience Event* or *XDM Decision Event*. | You can pick which Person ID or Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} you want to include. Each dataset schema defined in the Experience Platform can have its own set of one or more identities defined and associated with an identity namespace. Any of these identities can be used as the Person ID or Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. Examples include Cookie ID, Stitched ID, User ID, Tracking Code, Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, and so on. |
 | **[!UICONTROL Lookup]** | You can add datasets as lookups of fields within all dataset types: Profile, Lookup, and Event datasets (the latter was always supported). This additional capability expands the capability of Customer Journey Analytics to support complex data models, including B2B. This data is used to look up values or keys found in your Event, Profile, or Lookup data. You can add up to three levels of lookups. (Note that [Derived Fields](/help/data-views/derived-fields/derived-fields.md) cannot be used as matching keys for lookups within Connections.) For example, you might upload lookup data that maps numeric IDs in your event data to product names. See the [B2B example](/help/use-cases/b2b/example.md) for an example. | N/A | Any built-in or custom schema that is based on an XDM class with the *Record* behavior, except for the *XDM Individual Profile* class. | N/A |
 | **[!UICONTROL Profile]** | Data that is applied to your account, persons, users, or customers in the [!UICONTROL Event] data. For example, allows you to upload CRM data about your customers. | N/A | Any built-in or custom schema that is based on the *XDM Individual Profile* class. | You can pick which Person ID / Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} you want to include. Each dataset (except summary datasets), defined in [!DNL Experience Platform], has its own set of one or more Person IDs or Account IDs [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} defined. For example, Cookie ID, Stitched ID, User ID, Tracking Code, Account ID, and so on.<br>![Person ID](assets/person-id.png)**Note**: If you create a connection that includes datasets with different IDs, the reporting reflects that. To merge datasets, you need to use the same Person ID or Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. |
 | **Summary** | Time-series data that is not associated with an individual Person ID. Summary data represents aggregated data at a different level of aggregation, for example campaigns. You can use this data in Customer Journey Analytics to support various use cases. See [Summary data](/help/data-views/summary-data.md) for more information. | Automatically set to the default timestamp field from event-based Summary Metrics schemas in Experience Platform. Only hourly or daily granularity is supported. | Any built-in or custom schema that is based on the *XDM Summary Metrics* class. | N/A |
@@ -499,6 +502,75 @@ Alternatively, the dataset types listed above, can be based on an ad hoc or rela
 
 
 ### Add datasets
+
+You can add one or more Experience Platform datasets when you create or edit a connection. 
+
+#### For person-based connections
+
+>[!AVAILABILITY]
+>
+>The enhanced **[!UICONTROL Dataset preview]** interface described in this section is in the Limited Testing phase of release and might not be available yet in your environment. If not available, you see the dataset preview as part of the **[!UICONTROL Dataset settings]** interface. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
+>
+
+1. In **[!UICONTROL Connection]** > **[!UICONTROL _Name of the connection_]** interface, select ![DataAdd](/help/assets/icons/DataAdd.svg) **[!UICONTROL Add datasets]**.
+
+1. In the ➊ **[!UICONTROL Select datasets]** step, you see a list of the Experience Platform datasets. 
+
+   ![Select datasets](assets/select-datasets.png)
+
+   For each dataset, the list shows:
+   
+   | Column | Description |
+   |---|---|
+   | **[!UICONTROL Dataset]** | Name of the dataset. Select the name to direct you to the dataset in Experience Platform. Select ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to display a popup with more details for the dataset. You can select **[!UICONTROL Edit in Platform]** to edit the dataset directly in Experience Platform. |
+   | **[!UICONTROL Dataset type]** | The type of dataset: [Event](#event-dataset), [Profile](#profile-dataset), [Lookup](#lookup-dataset), [Summary](#summary-dataset), [Adhoc](#ad-hoc-dataset), or [Relational](#relational-dataset). |
+   | **[!UICONTROL Number of records]** | The total records in the previous month for the dataset in Experience Platform. |
+   | **[!UICONTROL Schema]** | The schema for the dataset. Select the name to direct you to the schema in Experience Platform. |
+   | **[!UICONTROL Last batch]** | The state of the last batch ingested in Experience Platform. See [Batch states](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) more information. |
+   | **[!UICONTROL Dataset ID]** | The id of the dataset. |
+   | **[!UICONTROL Last updated]** | The last updated timestamp of the dataset. |
+
+   * To change the columns displayed for the list of datasets, select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) and select the columns to be displayed in the [!UICONTROL Customize table] dialog.
+   * To search for a specific dataset, use the ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) search field.
+   * To toggle between showing or hiding the selected datasets, select ![Select](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL Hide selected]** or **[!UICONTROL Show selected]**.
+   * To remove a dataset from the list of selected datasets, use ![Close](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). To remove all selected datasets, select **[!UICONTROL Clear all]**.
+   * To display details of a dataset, select ![InfoOutline](/help/assets/icons/InfoOutline.svg).
+
+   
+1. Select one or more datasets and select **[!UICONTROL Next]**. At least one event or summary dataset must be part of the connection.
+
+1. Configure the [settings for each of the selected datasets](#dataset-settings), one by one, in the ➋ **[!UICONTROL Datasets settings]** step of the **[!UICONTROL Add datasets]** dialog. 
+
+   ![Add datasets](assets/add-dataset.png)
+
+   * To remove a dataset from the connection, select ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]**.
+   * To take a step back, select **[!UICONTROL Back]**.
+   * To cancel adding datasets to a connection, select **[!UICONTROL Cancel]**.
+
+1. You need to specify all the required settings for the selected datasets before you can continue. If required input is missing, you see a red number that indicates how many datasets of a specific type are missing that required input. A ![AlertRed](/help/assets/icons/AlertRed.svg) and an explanation in red identify required fields that do not have input or a selected value. Once you have configured all required settings for all datasets, select **[!UICONTROL Next]**.
+1. In ❸ **[!UICONTROL Datasets preview]** you see a preview for each dataset that is based on a simple set of data from recently ingested data.
+
+   ![Preview of a dataset while adding datasets as part of a connection](/help/connections/assets/add-dataset-preview.png)
+   
+   * To show namespaces for each of the columns in the table, enable **[!UICONTROL Show column namespace]**.
+   * To search in the sample data, use ![Search](/help/assets/icons/Search.svg).
+   * To configure what columns to show, select ![ColumnSetting](/help/assets/icons/ColumnSetting.svg). <br/>In the **[!UICONTROL Customize table]** dialog:
+     1. Select the columns that you want to show in the table.
+     1. Select **[!UICONTROL Apply]** to apply the selection, or **[!UICONTROL Cancel]** to cancel the selection.
+   * To display the data for columns that contain array or object data, select **[!UICONTROL Values]**.
+
+   The **[!UICONTROL Dataset info]** pane shows details about the dataset. Select the value for **[!UICONTROL Schema]** or **[!UICONTROL Dataset]** to open the relevant interface in Experience Platform in a new browser tab.  
+
+   * To remove a dataset from the connection, select ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]**.
+   * To take a step back, select **[!UICONTROL Back]**.
+   * To cancel adding datasets to a connection, select **[!UICONTROL Cancel]**.
+
+   
+1. Select **[!UICONTROL Add datasets]** to add the configured datasets to the connection.
+
+
+
+#### For account-based connections
 
 You can add one or more Experience Platform datasets when you create or edit a connection. 
 
@@ -532,23 +604,76 @@ You can add one or more Experience Platform datasets when you create or edit a c
 
 1. Configure the [settings for each of the selected datasets](#dataset-settings), one by one, in the ➋ **[!UICONTROL Datasets settings]** step of the **[!UICONTROL Add datasets]** dialog.
 
-    ![Add datasets](assets/add-dataset.png)
+    ![Add datasets](assets/add-dataset-b2b.png)
 
 1. Select **[!UICONTROL Add datasets]** to add the configured datasets to the connection. You are notified when you have not provided all required settings for each of the datasets you want to add. 
    
    Alternatively, you can select **[!UICONTROL Cancel]** to cancel the addition of datasets to the connection. Or select **[!UICONTROL Back]** to step back to the ➊ **[!UICONTROL Select datasets]** step.
-
+   
 
 ### Edit a dataset
 
 To edit a dataset that is already configured for a connection, in the **[!UICONTROL Connections]** > **[!UICONTROL _Name of the connection_]** interface:
 
-1. Select ![More](/help/assets/icons/More.svg) for the dataset listed in the dataset table that you want to edit 
+
+#### For person-based connections
+
+>[!AVAILABILITY]
+>
+>The enhanced **[!UICONTROL Dataset preview]** interface described in this section is in the Limited Testing phase of release and might not be available yet in your environment. If not available, you see the dataset preview as part of the **[!UICONTROL Dataset settings]** interface. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
+>
+
+1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit connection]**.
+1. Select ![More](/help/assets/icons/More.svg) for the dataset listed in the dataset table that you want to edit. 
+1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit dataset]**.
+
+1. In ❶ **[!UICONTROL Dataset settings]**, configure the [dataset settings](#dataset-settings) in the **[!UICONTROL Edit dataset: _Dataset name_]** dialog.
+
+   ![Edit dataset](assets/edit-dataset-b2c.png)
+
+   If you make changes, ensure you specify all required settings for the dataset before you continue. If the required input is missing, you cannot continue. A ![AlertRed](/help/assets/icons/AlertRed.svg) and an explanation in red identify required fields that do not have input or a selected value. 
+
+   >[!NOTE]
+   >
+   >You cannot edit the **[!UICONTROL Dataset type]**, **[!UICONTROL Person ID]**, **[!UICONTROL Identity namespace]** and **[!UICONTROL Timestamp]** for an [ad hoc](#ad-hoc-dataset) or a [relational](#relational-dataset) dataset that is part of a saved connection. To change any of these settings:
+   >
+   >1. Delete the existing ad hoc or relational dataset from the connection.
+   >1. Add the same dataset with updated settings to the connection.
+   >
+
+   To remove the dataset from the connection, select ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]**.
+   
+   Once you have configured all the required settings for the dataset, select **[!UICONTROL Next]**.
+
+1. In ❷ **[!UICONTROL Datasets preview]** you see a preview for each dataset that is based on a simple set of data from recently ingested data.
+
+   ![Preview of a dataset while adding datasets as part of a connection](/help/connections/assets/add-dataset-preview.png)
+   
+   * To show namespaces for each of the columns in the table, enable **[!UICONTROL Show column namespace]**.
+   * To search in the sample data, use ![Search](/help/assets/icons/Search.svg).
+   * To configure what columns to show, select ![ColumnSetting](/help/assets/icons/ColumnSetting.svg). <br/>In the **[!UICONTROL Customize table]** dialog:
+     1. Select the columns that you want to show in the table.
+     1. Select **[!UICONTROL Apply]** to apply the selection, or **[!UICONTROL Cancel]** to cancel the selection.
+   * To display the data for columns that contain array or object data, select **[!UICONTROL Values]**.
+
+   The **[!UICONTROL Dataset info]** pane shows details about the dataset. Select the value for **[!UICONTROL Schema]** or **[!UICONTROL Dataset]** to open the relevant interface in Experience Platform in a new browser tab.  
+
+   * To remove a dataset from the connection, select ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]**.
+   * To take a step back, select **[!UICONTROL Back]**.
+   * To cancel adding datasets to a connection, select **[!UICONTROL Cancel]**.
+
+1. Select **[!UICONTROL Apply]** to apply the dataset settings. Select **[!UICONTROL Cancel]** to cancel.
+
+
+#### For account-based connections
+
+1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit connection]**.
+1. Select ![More](/help/assets/icons/More.svg) for the dataset listed in the dataset table that you want to edit. 
 1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit dataset]**.
 
 1. Configure the [dataset settings](#dataset-settings) in the **[!UICONTROL Edit dataset: _Dataset name_]** dialog.
 
-   ![Edit dataset](assets/edit-dataset.png)
+   ![Edit dataset](assets/edit-dataset-b2b.png)
 
    >[!NOTE]
    >
@@ -559,7 +684,6 @@ To edit a dataset that is already configured for a connection, in the **[!UICONT
    >
 
 1. Select **[!UICONTROL Apply]** to apply the dataset settings. Select **[!UICONTROL Cancel]** to cancel.
-
 
 ### Dataset settings
 
@@ -771,7 +895,7 @@ To see a map of the relationships between the datasets that are part of your con
 
 ![Connection map](assets/connectionmap.png)
 
-This map helps you to get a better understanding of how you have defined your connection and set up the relationship between your event, profile, lookup, and summary datasets, using containers and identifiers.
+This map helps you to get a better understanding of how you have defined your connection. And how you have set up the relationship between your event, profile, lookup, and summary datasets, using containers and identifiers.
 
 
 ## Use numeric fields as lookup keys and lookup values {#numeric}
@@ -834,5 +958,5 @@ This calculation is done for every dataset in the connection.
 >[!MORELIKETHIS]
 >
 >* [Data ingestion overview](/help/data-ingestion/data-ingestion.md)
->* Blog: [How to Leverage Event, Lookup, and Profile Datasets in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
+>* Blog: [How to Leverage Event, Lookup, and Profile Datasets in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/how-to-leverage-event-lookup-and-profile-datasets-in-adobe-customer-journey-analytics-12699)
 

@@ -1,6 +1,6 @@
 ---
-title: Create or edit a data view
-description: All settings that you can adjust to create or edit a data view.
+title: Create Or Edit A Data View
+description: Learn about all settings that you can configure when you create or edit a data view.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
@@ -13,7 +13,7 @@ Creating a data view involves either creating metrics and dimensions from schema
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create or edit a data view](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Create or edit a data view](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/overview-of-configuring-data-views-for-cja){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 
@@ -103,6 +103,11 @@ Designates the name of containers for the data view. Container names are frequen
 | **[!UICONTROL Event container name]** | `Event` (default). The [!UICONTROL Event] container defines individual events in a dataset. If your organization uses a different term (for example, "Hits" or "Page Views"), you can rename the container here. |
 
 {style="table-layout:auto"}
+
+### AI Settings
+
+Select **[!UICONTROL Enable for Data Insights Agent]** to enable the data view for the [Data Insights Agent](/help/data-analysis-ai.md). The Data Insights Agent is a generative AI conversation agent that is accessible from the AI Assistant in Customer Journey Analytics. It helps you quickly analyze your data with text prompts. The agent builds relevant visualizations in Analysis Workspace using components from your data view and using your actual data.
+   
 
 ### Calendar
 

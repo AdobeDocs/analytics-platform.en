@@ -4,12 +4,13 @@ keywords: Analysis Workspace
 title: Generate presentations from Workspace reports
 feature: Curate and Share
 role: User
+exl-id: a3f6db1e-0444-4804-98bf-c5c10ba2e7ea
 ---
 # Data storytelling: Generate slide presentations from Workspace reports {#generate-powerpoint}
 
 >[!NOTE]
 >
->Data Storytelling is a skill under Data Insights Agent and is available to eligible customers for a limited time. Access to Data Insights Agent will end on 28th February 2026. To continue using Data Insights Agent or other Adobe Experience Platform Agents without interruption, please contact your Adobe account representative to learn more about licensing Adobe Experience Platform Agent Orchestrator.
+>Data Storytelling is a skill under Data Insights Agent and is available to eligible customers for a limited time. Access to Data Insights Agent will end on March 31, 2026. To continue using Data Insights Agent or other Adobe Experience Platform Agents without interruption, please contact your Adobe account representative to learn more about licensing Adobe Experience Platform Agent Orchestrator.
 
 
 Users with [the necessary permissions](#permission-requirements-to-generate-slides) can automatically generate .pptx presentations based on Analysis Workspace projects. When generating these slide presentations, Customer Journey Analytics automatically creates a story from your data by identifying key insights and converting them into stakeholder-ready slides. 
@@ -100,7 +101,7 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
    |---------|----------|
    | **[!UICONTROL Cover title]** | Specify a title for the presentation. This title appears on the title slide of the presentation.  |
    | **[!UICONTROL Include presenter name]** | Specify the name of the presenter. This name appears on the title slide of the presentation, below the cover title. |
-   | **[!UICONTROL Panels and visualizations to include]** | Choose the panels and visualization that you want to include in the presentation. You can include up to 50 visualizations.<p>If a visualization is dimmed, it is either followed by the text **[!UICONTROL (unsupported)]** or **[!UICONTROL (restricted data)]**.</p><ul><li>**Unsupported**: Most panels and visualizations are supported. For information about unsupported panels and visualization, see [Unsupported project elements and features](#unsupported-project-elements-and-features).</li><li>**Restricted data**: The visualization contains a component that is restricted from being exported by a data governance policy enforced by your organization. Contact your system administrator to see which components are restricted from being exported, then remove the restricted components before generating slides.</li></ul> |
+   | **[!UICONTROL Included panels and visualizations]** | Choose the panels and visualization that you want to include in the presentation. You can include up to 50 visualizations.<p>If a visualization is dimmed, it is either followed by the text **[!UICONTROL (unsupported)]** or **[!UICONTROL (restricted data)]**.</p><ul><li>**Unsupported**: Most panels and visualizations are supported. For information about unsupported panels and visualization, see [Unsupported project elements and features](#unsupported-project-elements-and-features).</li><li>**Restricted data**: The visualization contains a component that is restricted from being exported by a data governance policy enforced by your organization. Contact your system administrator to see which components are restricted from being exported, then remove the restricted components before generating slides.</li></ul> |
    | **[!UICONTROL Emphasize components]** | Choose the metrics and dimensions from your visualizations that you want to emphasize in the presentation. The components you choose are ranked higher and given more weight when the themes and overarching narrative of the data story is created. <p>When no emphasis is applied, components show in presentations as follows:<ul><li>**Metrics and dimensions:** Italics</li><li>**Dimension items:** Quotation marks</li></ul></p><p>When emphasis is applied, components show in presentations as follows:</p><ul><li>**Metrics and dimensions:** Italics and bold</li><li>**Dimension items:** Bold when the corresponding dimension is emphasized<p>A color is also applied to the dimension item when the dimension item is highlighted in the chart.</p></li></ul> |
 
    <!-- add this later: - **[!UICONTROL Panel and visualization descriptions]** - Choose whether to include panel and visualization descriptions in your generated slide presentation. - 
@@ -240,5 +241,3 @@ The following Analysis Workspace elements and features used in a project aren't 
   As part of the deduplication and scoring process when generating relevant insights, each breakdown within a freeform table is analyzed independently, and only the first 5 breakdowns within a single freeform table are analyzed.
   
   Only the first level of a breakdown is supported. A breakdown of a breakdown is not included in the presentation.
-
-  
