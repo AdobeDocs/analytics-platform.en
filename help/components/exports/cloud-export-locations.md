@@ -22,13 +22,15 @@ role: User, Admin
 >[!CONTEXTUALHELP]
 >id="cja-export-file-name"
 >title="File name and path"
->abstract="Specify a dynamic custom file name to use for automated exports that are sent to this location. You can also precede the file name with a dynamic custom file path. <br\>Use variables in the file name and path to make them dynamic. <br\>For example, if you specify `${yyyy}/${mm}/${dd}/my-report-${instance_id}-${idx}`, an export that is automatically sent to this destination on January 15, 2026 would have the following file path and name: `[prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv` <br\>Click the link below for a list of available variables."
+>abstract="Specify a dynamic custom file name to use for automated exports that are sent to this location. You can also precede the file name with a dynamic custom file path. <br/>Use variables in the file name and path to make them dynamic. <br/>For example, if you specify `${yyyy}/${MM}/${dd}/my-report-${instance_id}-${idx}`, an export that is automatically sent to this destination on January 15, 2026 would have the following file path and name: `[prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv` <br/>Click the link below for a list of available variables."
 
 <!-- markdownlint-enable MD034 -->
 
-Before you can export Customer Journey Analytics reports to a cloud destination (either from Analysis Workspace, as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md) or from Report Builder, as described in [Export reports from Report Builder](/help/report-builder/report-builder-export.md)) as described in [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md), you need to add and configure the location where you want the data to be sent. 
+Before you can export Customer Journey Analytics reports to a cloud destination (either from [Analysis Workspace](/help/analysis-workspace/export/export-cloud.md) or from [Report Builder](/help/report-builder/report-builder-export.md)), you need to add and configure the location where you want the data to be sent. This process consists of:
 
-This process consists of adding and configuring the account (such as Amazon S3, Google Cloud Platform, and so forth) as described in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md), and then adding and configuring the location within that account (such as a folder within the account) as described in this article.
+1. Adding and configuring the account (such as Amazon S3, Google Cloud Platform, and so forth) as described in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md)
+
+1. Adding and configuring the location within that account (such as a folder within the account) as described in this article.
 
 For information about how to manage existing locations, including viewing, editing, and deleting locations, see [Manage cloud export locations and accounts](/help/components/exports/manage-export-locations.md).
 
@@ -46,7 +48,7 @@ For information about how to manage existing locations, including viewing, editi
 
    Select the [!UICONTROL **Location accounts**] tab, select the 3-dot icon on an existing account where you want to add a location, then select [!UICONTROL **Add location**].
 
-   ![GCP account and elipsis drop-down menu showing Add location selected](assets/add-location-existing-account.png)
+   ![GCP account and ellipsis drop-down menu showing Add location selected](assets/add-location-existing-account.png)
 
    The Location dialog displays.
 
@@ -80,15 +82,14 @@ For information about how to manage existing locations, including viewing, editi
 
    * From the Exports page as described above, in [Begin creating a cloud export location](#begin-creating-a-cloud-export-location)
    
-   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. In the [!UICONTROL **Location properties**] section of the [!UICONTROL **Add location**] dialog box, specify the following information to configure an Adobe Experience Platform Data Landing Zone location:
 
-   <!-- still need to update; can't create AEP account -->
-
    |Field | Function |
    |---------|----------|
-   | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a slash after the name to create the folder. For example, `folder_name/` |
+   | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a static folder name, then add a slash after the name to create the folder. For example, `folder_name/` |
+   | [!UICONTROL **File name and path**] | Specify a dynamic custom file name to use for automated exports that are sent to this location. You can also precede the file name with a dynamic custom file path. <p>This option allows you to automate file name creation and folder placement, so file names are predictable and organized into folders in a logical way. For example, file names can be named according to the day they were delivered, then placed into folders that correspond with each month.</p><p>Use any of the following variables in the file name and path to make them dynamic:</p><ul><li>**{yyyy}**: 4-digit calendar year (Case sensitive)</li><li>**{yy}**: 2-digit calendar year (Case sensitive)</li><li>**{MM}**: 2-digit month (Case sensitive)</li><li>**{dd}**: 2-digit day (Case sensitive)</li><li>**{HH}**: 2-digit hour (Case sensitive)</li><li>**{mm}**: 2-digit minutes (Case sensitive)</li><li>**{ss}**: 2-digit seconds (Case sensitive)</li><li>**{fff}**: 3-digit nanoseconds (Case sensitive)</li><li>**{instance_id}**: Request (instance) UUID</li><li>**{export_id}**: Export (schedule) UUID</li><li>**{idx}**: Index start from 0 (incremented for each file)</li><li>**{total}**: Total file number for whole transfer job</li><li>**{completion_millis}**: Time of transfer in milliseconds</li></ul></p><p>For example, if you specify `${yyyy}/${MM}/${dd}/my-report-${instance_id} -${idx}`, an export that is automatically sent to this destination on January 15, 2026 would have the following file path and name: [prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv</p>  |
 
    {style="table-layout:auto"}
 
@@ -96,7 +97,7 @@ For information about how to manage existing locations, including viewing, editi
 
 1. You can now export data from Analysis Workspace to the account and location that you configured. For information about how to export data to the cloud, see [Export project data to the cloud](/help/analysis-workspace/export/export-cloud.md).
 
-1. The easiest way to access your data in AEP Data Landing Zone is to use the Microsoft Azure Storage Explorer. This is the same tool that is used in the instructions to configure the [AEP Data Landing Zone account](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone).
+1. The easiest way to access your data in AEP Data Landing Zone is to use the Microsoft Azure Storage Explorer. The Storage Explorer is the same tool that is used in the instructions to configure the [AEP Data Landing Zone account](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone).
 
    1. Open the [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
 
@@ -117,16 +118,15 @@ For information about how to manage existing locations, including viewing, editi
 
    * From the Exports page as described above, in [Begin creating a cloud export location](#begin-creating-a-cloud-export-location)
    
-   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. In the [!UICONTROL **Location properties**] section of the [!UICONTROL **Add location**] dialog box, specify the following information to configure an Amazon S3 Role ARN location:
 
-    <!-- still need to update; can't create S3 role ARN account -->
-
    |Field | Function |
    |---------|----------|
-   | [!UICONTROL **Bucket**] | The bucket within your Amazon S3 account where you want Customer Journey Analytics data to be sent. <p>Ensure that the User ARN that was provided by Adobe has the `S3:PutObject` permission in order to upload files to this bucket. </p><p>Bucket names must meet specific naming rules. For example, they must be between 3 to 63 characters long, can consist only of lowercase letters, numbers, dots (.), and hyphens (-), and must begin and end with a letter or number. [A complete list of naming rules are available in the AWS documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p>   |
-   | [!UICONTROL **Prefix**] | The folder within the bucket where you want to put the data. Specify a folder name, then add a slash after the name to create the folder. For example, folder_name/ |
+   | [!UICONTROL **Bucket**] | The bucket within your Amazon S3 account where you want Customer Journey Analytics data to be sent. <p>Ensure that the User ARN that was provided by Adobe has the `S3:PutObject` permission in order to upload files to this bucket. </p><p>Bucket names must meet specific naming rules. For example, they must be between 3 to 63 characters long, can consist only of lowercase letters, numbers, dots (.), and hyphens (-), and must begin and end with a letter or number. [A complete list of naming rules is available in the AWS documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p>   | 
+   | [!UICONTROL **Prefix**] | The folder within the bucket where you want to put the data. Specify a static folder name, then add a slash after the name to create the folder. For example, folder_name/ | 
+   | [!UICONTROL **File name and path**] |  Specify a dynamic custom file name to use for automated exports that are sent to this location. You can also precede the file name with a dynamic custom file path. <p>This option allows you to automate file name creation and folder placement, so file names are predictable and organized into folders in a logical way. For example, file names can be named according to the day they were delivered, then placed into folders that correspond with each month.</p><p>Use any of the following variables in the file name and path to make them dynamic:</p><ul><li>**{yyyy}**: 4-digit calendar year (Case sensitive)</li><li>**{yy}**: 2-digit calendar year (Case sensitive)</li><li>**{MM}**: 2-digit month (Case sensitive)</li><li>**{dd}**: 2-digit day (Case sensitive)</li><li>**{HH}**: 2-digit hour (Case sensitive)</li><li>**{mm}**: 2-digit minutes (Case sensitive)</li><li>**{ss}**: 2-digit seconds (Case sensitive)</li><li>**{fff}**: 3-digit nanoseconds (Case sensitive)</li><li>**{instance_id}**: Request (instance) UUID</li><li>**{export_id}**: Export (schedule) UUID</li><li>**{idx}**: Index start from 0 (incremented for each file)</li><li>**{total}**: Total file number for whole transfer job</li><li>**{completion_millis}**: Time of transfer in milliseconds</li></ul></p><p>For example, if you specify `${yyyy}/${MM}/${dd}/my-report-${instance_id} -${idx}`, an export that is automatically sent to this destination on January 15, 2026 would have the following file path and name: [prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv</p>  |
 
    {style="table-layout:auto"}
 
@@ -140,14 +140,15 @@ For information about how to manage existing locations, including viewing, editi
 
    * From the Exports page as described above, in [Begin creating a cloud export location](#begin-creating-a-cloud-export-location)
    
-   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. In the [!UICONTROL **Location properties**] section of the [!UICONTROL **Add location**] dialog box, specify the following information to configure a Google Cloud Platform location:
 
    |Field | Function |
    |---------|----------|
-   | [!UICONTROL **Bucket**] | The bucket within your GCP account where you want Customer Journey Analytics data to be sent. <p>Ensure that you have granted the `roles/storage.objectCreator` permission to the Principal provided by Adobe. (The Principal is provided when [configuring the Google Cloud Platform account](/help/components/exports/cloud-export-accounts.md).) <p>For information about granting permissions, see [Add a principal to a bucket-level policy](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) in the Google Cloud documentation.</p><p>If your organization is using [Organization policy constraints](https://cloud.google.com/storage/docs/org-policy-constraints) to allow only the Google Cloud Platform account in your allow list, you need the following Adobe-owned Google Cloud Platform organization ID: <ul><li>`DISPLAY_NAME`: `adobe.com`</li><li>`ID`: `178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`: `C02jo8puj`</li></ul> </p> |
-   | [!UICONTROL **Prefix**] | The folder within the bucket where you want to put the data. Specify a folder name, then add a slash after the name to create the folder. For example, folder_name/ |
+   | [!UICONTROL **Bucket**] | The bucket within your GCP account where you want Customer Journey Analytics data to be sent. <p>Ensure that you have granted the `roles/storage.objectCreator` permission to the Principal provided by Adobe. (The Principal is provided when [configuring the Google Cloud Platform account](/help/components/exports/cloud-export-accounts.md).) <p>For information about granting permissions, see [Add a principal to a bucket-level policy](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) in the Google Cloud documentation.</p><p>If your organization is using [Organization policy constraints](https://cloud.google.com/storage/docs/org-policy-constraints) to allow only the Google Cloud Platform account in your allow list, you need the following Adobe-owned Google Cloud Platform organization ID: <ul><li>`DISPLAY_NAME`: `adobe.com`</li><li>`ID`: `178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`: `C02jo8puj`</li></ul> </p> |  
+   | [!UICONTROL **Prefix**] | The folder within the bucket where you want to put the data. Specify a static folder name, then add a slash after the name to create the folder. For example, folder_name/ | 
+   | [!UICONTROL **File name and path**] |  Specify a dynamic custom file name to use for automated exports that are sent to this location. You can also precede the file name with a dynamic custom file path. <p>This option allows you to automate file name creation and folder placement, so file names are predictable and organized into folders in a logical way. For example, file names can be named according to the day they were delivered, then placed into folders that correspond with each month.</p><p>Use any of the following variables in the file name and path to make them dynamic:</p><ul><li>**{yyyy}**: 4-digit calendar year (Case sensitive)</li><li>**{yy}**: 2-digit calendar year (Case sensitive)</li><li>**{MM}**: 2-digit month (Case sensitive)</li><li>**{dd}**: 2-digit day (Case sensitive)</li><li>**{HH}**: 2-digit hour (Case sensitive)</li><li>**{mm}**: 2-digit minutes (Case sensitive)</li><li>**{ss}**: 2-digit seconds (Case sensitive)</li><li>**{fff}**: 3-digit nanoseconds (Case sensitive)</li><li>**{instance_id}**: Request (instance) UUID</li><li>**{export_id}**: Export (schedule) UUID</li><li>**{idx}**: Index start from 0 (incremented for each file)</li><li>**{total}**: Total file number for whole transfer job</li><li>**{completion_millis}**: Time of transfer in milliseconds</li></ul></p><p>For example, if you specify `${yyyy}/${MM}/${dd}/my-report-${instance_id} -${idx}`, an export that is automatically sent to this destination on January 15, 2026 would have the following file path and name: [prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv</p>  |
 
    {style="table-layout:auto"}
 
@@ -161,14 +162,15 @@ For information about how to manage existing locations, including viewing, editi
 
    * From the Exports page as described above, in [Begin creating a cloud export location](#begin-creating-a-cloud-export-location)
    
-   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. In the [!UICONTROL **Location properties**] section of the [!UICONTROL **Add location**] dialog box, specify the following information to configure an Azure SAS location:
 
    |Field | Function |
    |---------|----------|
-   | [!UICONTROL **Container name**] | The container within the account you specified where you want Customer Journey Analytics data to be sent. |
-   | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a slash after the name to create the folder. For example, `folder_name/`<p>Make sure that the SAS token store that you specified in the Key Vault secret name field when configuring the Azure SAS account has the `Write` permission. This allows the SAS token to create files in your Azure container. <p>If you want the SAS token to also overwrite files, make sure that the SAS token store has the `Delete` permission.</p><p>For more information, see [Blob storage resources](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction#blob-storage-resources) in the Azure Blob Storage documentation.</p> |
+   | [!UICONTROL **Container name**] | The container within the account you specified where you want Customer Journey Analytics data to be sent. | 
+   | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a static folder name, then add a slash after the name to create the folder. For example, `folder_name/`<p>Make sure that the SAS token store that you specified in the Key Vault secret name field when configuring the Azure SAS account has the `Write` permission. This allows the SAS token to create files in your Azure container. <p>If you want the SAS token to also overwrite files, make sure that the SAS token store has the `Delete` permission.</p><p>For more information, see [Blob storage resources](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction#blob-storage-resources) in the Azure Blob Storage documentation.</p> | 
+   | [!UICONTROL **File name and path**] | Specify a dynamic custom file name to use for automated exports that are sent to this location. You can also precede the file name with a dynamic custom file path. <p>This option allows you to automate file name creation and folder placement, so file names are predictable and organized into folders in a logical way. For example, file names can be named according to the day they were delivered, then placed into folders that correspond with each month.</p><p>Use any of the following variables in the file name and path to make them dynamic:</p><ul><li>**{yyyy}**: 4-digit calendar year (Case sensitive)</li><li>**{yy}**: 2-digit calendar year (Case sensitive)</li><li>**{MM}**: 2-digit month (Case sensitive)</li><li>**{dd}**: 2-digit day (Case sensitive)</li><li>**{HH}**: 2-digit hour (Case sensitive)</li><li>**{mm}**: 2-digit minutes (Case sensitive)</li><li>**{ss}**: 2-digit seconds (Case sensitive)</li><li>**{fff}**: 3-digit nanoseconds (Case sensitive)</li><li>**{instance_id}**: Request (instance) UUID</li><li>**{export_id}**: Export (schedule) UUID</li><li>**{idx}**: Index start from 0 (incremented for each file)</li><li>**{total}**: Total file number for whole transfer job</li><li>**{completion_millis}**: Time of transfer in milliseconds</li></ul></p><p>For example, if you specify `${yyyy}/${MM}/${dd}/my-report-${instance_id} -${idx}`, an export that is automatically sent to this destination on January 15, 2026 would have the following file path and name: [prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv</p>  |
 
    {style="table-layout:auto"}
 
@@ -182,15 +184,16 @@ For information about how to manage existing locations, including viewing, editi
 
    * From the Exports page as described above, in [Begin creating a cloud export location](#begin-creating-a-cloud-export-location)
    
-   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. In the [!UICONTROL **Location properties**] section of the [!UICONTROL **Add location**] dialog box, specify the following information to configure an Azure RBAC location:
 
    |Field | Function |
    |---------|----------|
-   | [!UICONTROL **Container**] | The container within the account you specified where you want Customer Journey Analytics data to be sent. Ensure that you grant permissions to upload files to the Azure application that you created earlier. |
-   | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a folder name, then add a slash after the name to create the folder. For example, `folder_name/`<p>Make sure the Application ID that you specified when configuring the Azure RBAC account has been granted the `Storage Blob Data Contributor` role in order to access the container (folder).</p> <p>For more information, see [Azure built-in roles](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).</p> |
-   | [!UICONTROL **Account**] | The Azure storage account. |
+   | [!UICONTROL **Container**] | The container within the account you specified where you want Customer Journey Analytics data to be sent. Ensure that you grant permissions to upload files to the Azure application that you created earlier. | 
+   | [!UICONTROL **Prefix**] | The folder within the container where you want to put the data. Specify a static folder name, then add a slash after the name to create the folder. For example, `folder_name/`<p>Make sure the Application ID that you specified when configuring the Azure RBAC account has been granted the `Storage Blob Data Contributor` role in order to access the container (folder).</p> <p>For more information, see [Azure built-in roles](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).</p> |
+   | [!UICONTROL **File name and path**] |  Specify a dynamic custom file name to use for automated exports that are sent to this location. You can also precede the file name with a dynamic custom file path. <p>This option allows you to automate file name creation and folder placement, so file names are predictable and organized into folders in a logical way. For example, file names can be named according to the day they were delivered, then placed into folders that correspond with each month.</p> <p>Use any of the following variables in the file name and path to make them dynamic:</p><ul><li>**{yyyy}**: 4-digit calendar year (Case sensitive)</li><li>**{yy}**: 2-digit calendar year (Case sensitive)</li><li>**{MM}**: 2-digit month (Case sensitive)</li><li>**{dd}**: 2-digit day (Case sensitive)</li><li>**{HH}**: 2-digit hour (Case sensitive)</li><li>**{mm}**: 2-digit minutes (Case sensitive)</li><li>**{ss}**: 2-digit seconds (Case sensitive)</li><li>**{fff}**: 3-digit nanoseconds (Case sensitive)</li><li>**{instance_id}**: Request (instance) UUID</li><li>**{export_id}**: Export (schedule) UUID</li><li>**{idx}**: Index start from 0 (incremented for each file)</li><li>**{total}**: Total file number for whole transfer job</li><li>**{completion_millis}**: Time of transfer in milliseconds</li></ul></p><p>For example, if you specify `${yyyy}/${MM}/${dd}/my-report-${instance_id} -${idx}`, an export that is automatically sent to this destination on January 15, 2026 would have the following file path and name: [prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv</p>  |
+   | [!UICONTROL **Account**] | The Azure storage account. | 
 
    {style="table-layout:auto"}
 
@@ -204,16 +207,17 @@ For information about how to manage existing locations, including viewing, editi
 
    * From the Exports page as described above, in [Begin creating a cloud export location](#begin-creating-a-cloud-export-location)
    
-   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * When [exporting full tables from Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. In the [!UICONTROL **Location properties**] section of the [!UICONTROL **Add location**] dialog box, specify the following information to configure a Snowflake location:
 
    |Field | Function |
    |---------|----------|
    | [!UICONTROL **DB**] | The specified database should be an existing database. The role you created needs to have privileges to access this database.<p>This is the database associated with the stage name.</p><p>You can grant this role privileges to the database in Snowflake using the following command: `GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>For more information, see the [Database, Schema, and Share Commands page in the Snowflake documentation](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
-   | [!UICONTROL **Schema**] | The specified schema should be an existing schema. The role you created needs to have privileges to access this schema.<p>This is the schema associated with the stage name.<p>You can grant the role that you created privileges to the schema in Snowflake using the following command: `GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>For more information, see the [Database, Schema, and Share Commands page in the Snowflake documentation](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
-   | [!UICONTROL **Stage name**] | The name of the internal stage where data files are stored in Snowflake.<p>Make sure that the role you specified on the account has Read and Write access to this stage name. (Because you are granting Read and Write access, we recommend using a stage that is used only by Adobe.)<p>You can grant Read and Write access to the stage name in Snowflake using the following command: `GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>For information about granting privileges to a role, see [Grant privileges in the Snowflake documentation](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>For more information about the stage name, see the [Choosing an Internal Stage for Local Files page in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
+   | [!UICONTROL **Schema**] | The specified schema should be an existing schema. The role you created needs to have privileges to access this schema.<p>This is the schema associated with the stage name.</p><p>You can grant the role that you created privileges to the schema in Snowflake using the following command: `GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>For more information, see the [Database, Schema, and Share Commands page in the Snowflake documentation](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **Stage name**] | The name of the internal stage where data files are stored in Snowflake.<p>Make sure that the role you specified on the account has Read and Write access to this stage name. (Because you are granting Read and Write access, we recommend using a stage that is used only by Adobe.)</p><p>You can grant Read and Write access to the stage name in Snowflake using the following command: `GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>For information about granting privileges to a role, see [Grant privileges in the Snowflake documentation](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege).</p> <p>For more information about the stage name, see the [Choosing an Internal Stage for Local Files page in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
    | [!UICONTROL **Stage path**] | The path to the location where data files are stored in Snowflake. <p>For more information, see the [Choosing an Internal Stage for Local Files page in the Snowflake documentation](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
+   | [!UICONTROL **File name and path**] | Specify a dynamic custom file name to use for automated exports that are sent to this location. You can also precede the file name with a dynamic custom file path. <p>This option allows you to automate file name creation and folder placement, so file names are predictable and organized into folders in a logical way. For example, file names can be named according to the day they were delivered, then placed into folders that correspond with each month.</p><p>Use any of the following variables in the file name and path to make them dynamic:</p><ul><li>**{yyyy}**: 4-digit calendar year (Case sensitive)</li><li>**{yy}**: 2-digit calendar year (Case sensitive)</li><li>**{MM}**: 2-digit month (Case sensitive)</li><li>**{dd}**: 2-digit day (Case sensitive)</li><li>**{HH}**: 2-digit hour (Case sensitive)</li><li>**{mm}**: 2-digit minutes (Case sensitive)</li><li>**{ss}**: 2-digit seconds (Case sensitive)</li><li>**{fff}**: 3-digit nanoseconds (Case sensitive)</li><li>**{instance_id}**: Request (instance) UUID</li><li>**{export_id}**: Export (schedule) UUID</li><li>**{idx}**: Index start from 0 (incremented for each file)</li><li>**{total}**: Total file number for whole transfer job</li><li>**{completion_millis}**: Time of transfer in milliseconds</li></ul></p><p>For example, if you specify `${yyyy}/${MM}/${dd}/my-report-${instance_id} -${idx}`, an export that is automatically sent to this destination on January 15, 2026 would have the following file path and name: [prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv</p>  |
 
    {style="table-layout:auto"}
 

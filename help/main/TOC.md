@@ -139,6 +139,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Configure](/help/connections/audience-analysis/audience-analysis-configure.md)
     + [Manage](/help/connections/audience-analysis/audience-analysis-manage.md)
     + [Analyze](/help/connections/audience-analysis/analyze-audiences.md)
+    + [Use cases](/help/connections/audience-analysis/audience-analysis-use-cases.md)
 + Data Views {#cja-dataviews}
   + [Data views overview](../data-views/data-views.md)
   + [Create or edit a data view](../data-views/create-dataview.md)
@@ -539,6 +540,8 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Tech notes {#technotes}
   + [Access Control](../technotes/access-control.md)
+  + [Bad IDs](/help/technotes/badids.md)
+  + [Browser and language](/help/technotes/browser-language.md)
   + [Data centers](../technotes/data-centers.md)
   + [Deletion implications](../technotes/deletion.md)
   + [Domains](../technotes/domains.md)

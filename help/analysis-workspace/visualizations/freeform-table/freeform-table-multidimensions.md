@@ -7,8 +7,6 @@ exl-id: 66ebb4fc-feb2-4fa7-a107-37508cca4748
 ---
 # Include multiple dimension columns in a freeform table
 
-{{release-limited-testing}}
-
 You can include up to 5 dimension columns in a freeform table, allowing you to view multiple dimension items side by side. Each row of dimension items behaves like a single concatenated dimension item. 
 
 You can apply filters, sorting, breakdowns, and more to freeform tables with multiple dimension columns to create a deeper and more custom analysis.

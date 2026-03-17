@@ -188,7 +188,7 @@ See also Experience Platform [Dataset Export Guardrails](https://experienceleagu
 | Nested Containers per Segment | 10 | System-enforced Guardrail  | Maximum number of nested containers per segment. |
 | Rules per segment| 100 | System-enforced Guardrail  | Maximum number of rules per segment. |
 | String Compares per Dimension per Segment | 100 |  System-enforced Guardrail  | Maximum number of strings comparisons per dimension per segment. |
-| Calculated Metrics | 6,000 | System-enforced Guardrail  |  Maximum number of calculated metrics for an organization. |
+| Calculated Metrics | 50,000 | System-enforced Guardrail  |  Maximum number of calculated metrics for an organization. |
 | Segments | 50,000 | System-enforced Guardrail | Maximum number of segments you can define for an organization. |
 | API Calls | 120 | System-enforced Guardrail | API requests per minute (12 requests every 6 seconds). |
 

@@ -26,6 +26,8 @@ To share one or more segments:
 
    1. Select **[!UICONTROL Save]** to share the segments. Select **[!UICONTROL Cancel]** to cancel.
 
+If you do have access to shared segments, you can can use these in projects, or as part of the [settings of a data view](/help/data-views/session-settings.md).
+
 ## Best practices
 
 Below are some best practices when you should share segments and with whom you should share segments.

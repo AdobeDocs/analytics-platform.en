@@ -1,6 +1,6 @@
 ---
 title: Enable Stitching
-description: Learn how to enable stitching in the Connections UI.
+description: Enable identity stitching for event datasets in Customer Journey Analytics. Learn how to configure persistent IDs, person IDs, and replay windows in the Connections UI to stitch data.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
@@ -52,7 +52,7 @@ If you meet the prerequisites, you might want to perform some preflight checks o
   
 
   * **Person ID**
-    * For graph-based stitching, ensure that the identity graph contains fragments that link ID values from your chosen persistent ID namespace and person ID namespace. You could run a test by going to the [Experience Platform Identity graph viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} and query the graph by some test persistent ID values. Verify to see if these persistent ID values are linked to person ID values in the graph.
+    * For graph-based stitching, ensure that the identity graph contains fragments that link ID values from your chosen persistent ID namespace and person ID namespace. You could run a test by going to the [Experience Platform Identity graph viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} and query the graph by some sample persistent ID values. Verify to see if these persistent ID values are linked to person ID values in the graph.
     * For field-based stitching, query 7 days of data where your person ID field is not null and divide by a query of 7 days of data for all events in your dataset. This percentage should ideally above 5%.
 
       Example of a query you could use for verification:
@@ -81,6 +81,8 @@ If you meet the prerequisites, you might want to perform some preflight checks o
 
 ## Enable identity stitching {#enable-identity-stitching}
 
+You can enable identity stitching when you [add](/help/connections/create-connection.md#add-datasets) or [edit](/help/connections/create-connection.md#edit-a-dataset) an event dataset in a person-based connection. Identity stitching is not available for account-based connections.
+
 >[!CONTEXTUALHELP]
 >id="connection_changeto_identitygraph"
 >title="Change to identity graph"
@@ -90,9 +92,39 @@ If you meet the prerequisites, you might want to perform some preflight checks o
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
 >title="Person ID"
->abstract="Select a person ID (the unique identifier for a person) from the available identities. In case you want to use graph-based stitching, select **[!UICONTROL Identity Graph]**."
+>abstract="Select a person ID (the unique identifier for a person) from the available identities. In case your license includes graph-based stitching and you want to use that stitching method, select **[!UICONTROL Identity Graph]**."
 
-To enable stitching, in the event dataset section of the **[!UICONTROL Add datasets]** or **[!UICONTROL Edit dataset]** dialog: 
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics"
+>title="Stitching metrics"
+>abstract="Stitching metrics are calculated using a sample set of data with event timestamps from the last 7 days.<br>This sample set of data usually differs from the sample data used in the **[!UICONTROL Preview]** table."
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics_gbs_personidcoverage"
+>title="Person ID coverage"
+>abstract="The coverage of the selected person ID that is used for identification during the stitching process (live and replay).<br/>For best stitching results, a (persistent ID, person ID) relation should be present in the identity graph for each persistent ID."
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics_fbs_personidcoverage"
+>title="Person ID coverage"
+>abstract="The coverage of the selected person ID that is used for identification during the stitching process (live and replay).<br/>For best stitching results, person ID (user info) should be sent on at least one event for each persistent ID (device info)."
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics_persistentidcoverage"
+>title="Persistent ID coverage"
+>abstract="This value is used for identification during the stitching process (live and replay), in case a person ID value cannot be detected. <br/>Events with no persistent ID and no person ID are dropped from the data. For best stitching results, a persistent ID should be present on all events."
+
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics_badids"
+>title="Bad IDs"
+>abstract="Bad IDs are ID values that severely affect reporting data."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="Bad IDs"
+
+
+### Dataset settings
+
+To enable stitching, in the event dataset **[!UICONTROL Datasets settings]** section of the **[!UICONTROL Add datasets]** or **[!UICONTROL Edit dataset]** dialog: 
 
 ![Identity stitching options when you enable identity stitching](assets/identity-stitching-ui.png)
 
@@ -106,14 +138,14 @@ To enable stitching, in the event dataset section of the **[!UICONTROL Add datas
 
    If you select **[!UICONTROL Identity Map]** for the persistent ID, you have to select a namespace . You have two options:
 
-   * Enable **[!UICONTROL Use primary identity namespace]** to use the primary identity namespace.
+   * Select **[!UICONTROL Use primary identity namespace]** to use the primary identity namespace.
    * Select a namespace from the **[!UICONTROL Namespace]** drop-down menu.
 
 1. Select a person ID from the **[!UICONTROL Person ID]** drop-down menu.
 
    If you select **[!UICONTROL Identity Map]** for the person ID, you have to select a namespace. You have two options:
 
-   * Enable **[!UICONTROL Use primary identity namespace]** to use the primary identity namespace.
+   * Select **[!UICONTROL Use primary identity namespace]** to use the primary identity namespace.
    * Select a namespace from the **[!UICONTROL Namespace]** drop-down menu.
  
 
@@ -124,14 +156,73 @@ To enable stitching, in the event dataset section of the **[!UICONTROL Add datas
    >Ensure that you are entitled to use the identity graph.
    >
 
-   Before that, a **[!UICONTROL Change to identity graph]** dialog is displayed to ensure you have finished the setup of the identity graph for the dataset as part of the [graph-based prerequisites](/help/stitching/gbs.md#prerequisites) before you use the identity graph for stitching. Select **[!UICONTROL Continue]** to continue.
+   Before that, a **[!UICONTROL Change to identity graph]** dialog is displayed to ensure you have finished the setup of the identity graph for the dataset. This setup is part of the [graph-based prerequisites](/help/stitching/gbs.md#prerequisites) before you can use the identity graph for stitching. Select **[!UICONTROL Continue]** to continue.
 
    * Select a namespace from the **[!UICONTROL Namespace]** drop-down menu.
 
-
 1. Select a replay window from the **[!UICONTROL Replay window]** drop-down menu. The available options are  dependent on the Customer Journey Analytics package that you are entitled to.
 
-Once you save a connection, the stitching process for datasets that are enabled for stitching kicks when the ingestion of data for these datasets starts.
+1. Select **[!UICONTROL Next]** to see a preview of the event dataset subject to stitching.
+
+
+### Datasets preview
+
+>[!AVAILABILITY]
+>
+>The enhanced **[!UICONTROL Dataset preview]** interface (including **[!UICONTROL Stitching metrics]** and **[!UICONTROL Bad IDs]**) described in this section is in the Limited Testing phase of release and might not be available yet in your environment. If not available, you see the dataset preview as part of the **[!UICONTROL Dataset settings]** interface. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
+>
+
+On top of the standard **[!UICONTROL Datasets preview]** interface, when [adding](/help/connections/create-connection.md#add-datasets) or [editing](/help/connections/create-connection.md#edit-a-dataset) datasets in a person-based connection, two additional information panels are available.
+
+>[!NOTE]
+>For customers that have Customer Journey Analytics deployed on AWS, this functionality is pending release.
+>
+
+![Identity stitching options when you enable identity stitching](assets/identity-stitching-ui-preview.png)
+
+#### Stitching metrics
+
+**[!UICONTROL Stitching metrics]** are calculated using a sample set of data with event timestamps from the last 7 days. This sample set of data usually differs from the sample data used in the **[!UICONTROL Preview]** table. Stitching metrics provide details for:
+
+* **[!UICONTROL Person ID coverage]**: The coverage of the selected person ID used for identification during the stitching process (live and replay). 
+  * For the best field-based stitching results, a person ID (user info) should be sent on at least one event for each persistent ID (device info). 
+  * For the best graph-based stitching results, a (persistent ID, person ID) relation should be present in the identity graph for each persistent ID.
+
+  Person ID coverage is shown as a percentage and compared to what is recommended on a stable development or on a production setup. The higher this coverage value is, the better stitching results are obtained with the selected person ID.
+
+* **[!UICONTROL Persistent ID coverage]**: This value is used for identification during the stitching process (live and replay), in case a person ID value cannot be detected. Events with no persistent ID and no person ID are dropped from the data. For best stitching results, a persistent ID should be present on all events.
+    
+  Persistent ID coverage is shown as a percentage and compared to what is the minimum recommended on a stable development or on a production setup.
+
+
+#### Bad IDs
+
+>[!INFO]
+>
+>Bad IDs are also referred to as BAVIDs in the Customer Journey Analytics interface.
+> 
+
+In Customer Journey Analytics, a Bad ID is an identifier:
+
+* with a specific ID value that originates from either a persistent ID or a person ID field in stitching-enabled datasets, **and**
+* is on more than one million (1,000,000) events in the connection data, within a month. 
+
+When an ID value is marked as a Bad ID, any future events that contain that ID value are discarded from the connection data and do not show up in the reporting.
+
+Examples of Bad IDs use cases:
+
+* You have custom or placeholder values in the person ID field (for example, `undefined`). Such values can also affect [stitching and reporting data quality](/help/stitching/faq.md#undefined-person-id-values).
+* In a field-based stitching configuration, if multiple people share a device and the total number of transitions between users exceeds 50,000. In this scenario, the stitching process stops to use the person ID info for that device, and only uses persistent ID info instead. Consequently, all dataset events from that device are sent into connection data with the persistent ID identity, with a high chance of causing a Bad IDs situation.
+
+
+>[!NOTE]
+>The **[!UICONTROL Stitching metrics]**, including **[!UICONTROL Bad IDs]**, are calculated based on a limited set of data. To identify Bad IDs presence for a dataset you plan to use for stitching, refer to the [Bad IDs technote](/help/technotes/badids.md).
+>
+
+
+### Save
+
+Once you save a connection, the stitching process for stitching enabled datasets is started as soon as the ingestion of data for these datasets starts.
 
 >[!CAUTION]
 >
