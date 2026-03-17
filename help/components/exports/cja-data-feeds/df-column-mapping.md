@@ -154,10 +154,11 @@ Use this section to learn what data is contained in each column. Most implementa
 >
 >For any given column (for instance, one that is defined as 255 characters), a data feed can send additional characters due to the addition of characters escaping values in a string. Keep these potential extra characters in mind if your implementation regularly sends values that exceed character limits.
 
-| Adobe Analytics column name | Column description | Data type |
+| Adobe Analytics column name | Column description | CJA data vew settings |
 | --- | --- | --- |
-| **`accept_language`** | Lists all accepted languages, as indicated in the Accept-Language HTTP header in an image request. | char(20) |
-| **`adload`** | Media ad loads | varchar(255) |
+| **`accept_language`** | Lists all accepted languages, as indicated in the Accept-Language HTTP header in an image request. |  |
+| **`post_accept_language`** | Lists all accepted languages, as indicated in the Accept-Language HTTP header in an image request. |  |
+| **`adload`** | Media ad loads | Re-create the marketing channel processing rules, as described in [derived fields](/). |
 | **`aemassetid`** | A multi-value variable corresponding to Asset IDs (GUIDs) of a set of Adobe Experience Manager Assets. Increments Impression Events. | text |
 | **`aemassetsource`** | Identifies the source of the asset event. Used in Adobe Experience Manager.| varchar(255) |
 | **`aemclickedassetid`** | Asset ID of an Adobe Experience Manager asset. Increments Click Events.| varchar(255) |
