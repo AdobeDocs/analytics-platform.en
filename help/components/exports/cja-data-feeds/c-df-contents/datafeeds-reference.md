@@ -4,7 +4,8 @@ keywords: Data Feed;columns
 subtopic: data feeds
 title: Data column reference
 feature: Data Feeds
-exl-id: e1492147-6e7f-4921-b509-898e7efda596
+hide: yes
+hidefromtoc: yes
 ---
 # Data column reference
 

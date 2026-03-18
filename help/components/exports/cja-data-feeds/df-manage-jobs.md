@@ -2,7 +2,8 @@
 title: Manage Data Feed Jobs
 description: Learn how to manage individual jobs in data feeds. Navigate the interface, use filters and search, and find column definitions.
 feature: Data Feeds
-exl-id: b17e333e-290f-42e4-b304-1e34282237a7
+hide: yes
+hidefromtoc: yes
 ---
 # Manage data feed jobs
 

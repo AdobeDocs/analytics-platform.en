@@ -2,7 +2,8 @@
 title: Troubleshoot Data Feeds
 description: Learn about reasons why a data feed job might fail to process or deliver data. Resolve potential issues with data feeds.
 feature: Data Feeds
-exl-id: c082bc95-cdae-448b-86b5-695660fb2352
+hide: yes
+hidefromtoc: yes
 ---
 # Troubleshoot data feeds
 

@@ -2,7 +2,8 @@
 title: Create a Data Feed
 description: Learn how to create a data feed and about the file information to provide to Adobe.
 feature: Data Feeds
-exl-id: 36c8a40e-6137-4836-9d4b-bebf17b932bc
+hide: yes
+hidefromtoc: yes
 ---
 # Create a data feed
 

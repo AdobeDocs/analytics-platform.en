@@ -3,7 +3,8 @@ description: Learn about best practices for data feed processing and delivery in
 keywords: Data Feed;best practices;traffic spike;hourly;ftp
 title: Best Practices and General Information
 feature: Data Feeds
-exl-id: 5f6fbc13-b176-4f69-8f2d-7accc6e6ac2d
+hide: yes
+hidefromtoc: yes
 ---
 # Data feeds best practices
 

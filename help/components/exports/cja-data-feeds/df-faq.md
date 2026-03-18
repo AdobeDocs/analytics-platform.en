@@ -3,7 +3,8 @@ description: Get answers to frequently asked questions about data feeds in Adobe
 keywords: Data Feed;job;pre column;post column;case sensitivity
 title: Data Feeds FAQ
 feature: Data Feeds
-exl-id: 1bbf62d5-1c6e-4087-9ed9-8f760cad5420
+hide: yes
+hidefromtoc: yes
 ---
 # Data feeds FAQ
 
