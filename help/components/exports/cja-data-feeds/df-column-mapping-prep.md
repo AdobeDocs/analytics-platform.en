@@ -10,7 +10,7 @@ hidefromtoc: yes
 
 When transitioning from Adobe Analytics data feeds to Customer Journey Analytics data feeds, it's natural to want to map every Adobe Analytics data feed column to a data feed column in Customer Journey Analytics.
 
-However, mapping data feed columns from Adobe Analytics to Customer Journey Analytics is rarely a one-to-one mapping exercise. This is due to the following differences:
+However, mapping data feed columns from Adobe Analytics to Customer Journey Analytics is rarely a one-to-one mapping exercise. This is due to the following factors:
 
 * **[Schema architecture](#schema-architecture)**: Adobe Analytics variables differ from XDM schema fields in Customer Journey Analytics.
 
@@ -18,7 +18,11 @@ However, mapping data feed columns from Adobe Analytics to Customer Journey Anal
 
 * **[Data processing](#data-processing)**: Fundamental data processing differences exist between Adobe Analytics and Customer Journey Analytics. 
 
-Before you begin mapping Adobe Analytics data feed columns to Customer Journey Analytics data feed columns, review the sections below to understand the key factors that affect mapping.
+* **[Unnecessary fields](#unnecessary-fields)**: Adobe Analytics contains more than 1,100 data feed fields. Many of these fields are probably not being used throughout your organization. Determine which fields actually need to be mapped.
+
+Before you begin mapping Adobe Analytics data feed columns to Customer Journey Analytics data feed columns, review the sections below to better understand these key factors that affect mapping.
+
+After you review this information, follow the mapping instructions for each Adobe Analytics data feed field that you want to map, as described in [Data column reference](/help/components/exports/cja-data-feeds/c-df-contents/datafeeds-reference.md).
 
 ## Schema architecture
 
@@ -58,22 +62,30 @@ Data processing differs between Adobe Analytics and Customer Journey Analytics, 
 
 Because Adobe Analytics exports data for some fields in two separate columns (one for pre-processed data and one for post-processed data), Adobe Analytics contains more data feed columns than Customer Journey Analytics. Keep this in mind when mapping fields.
 
-**Customer Journey Analytics**: Fields are available for data feeds after they are created in the data view. Typically, fields in Customer Journey Analytics data views only include post-processed data. However, you can usually mimic the Adobe Analytics pre-processed version of a field by creating multiple versions of fields within the Customer Journey Analytics data view.
+**Customer Journey Analytics**: Fields are available for data feeds after they are created in the data view. Typically, fields in Customer Journey Analytics data views only include post-processed data. However, you can usually mimic the Adobe Analytics pre-processed version of a field by creating a second version of the field within the Customer Journey Analytics data view and configuring it to expire on hit.
+
+## Unnecessary fields
+
+There are over 1,100 data feed columns available to be exported in Adobe Analytics. While not all Adobe Analytics customers export all of the available columns, many customers export more than they actually use. 
+
+Before you begin mapping data feed columns, identify which fields are actually being used throughout your organization. To gather this information, contact the teams or individuals who consume data feed content for Adobe Analytics.
 
 
+<!--
 
-<!-- this is what it did say: Most columns contain a similar column with a prefix of `post_`. Post columns contain values after server-side logic, processing rules, and VISTA rules. Adobe recommends using post columns in most cases. See [Data feeds FAQ](../df-faq.md) for more information. -->
+1. View the data views throughout your organization to make sure that corresponding dimensions are available. If a corresponding dimension does not exist in the data view, create it.
 
+   These are the dimensions that are being used for reporting in Analysis Workspace. Any Adobe Analytics data feed column needs to be mapped to a corresponding dimension that exists within a Customer Journey Analytics data view.
 
+   
 
+1. For each Adobe Analytics data feed field that is being used, ensure that a similar field exists in the XDM schema.
 
+1. Verify that and that corresponding dimensions are available in the data view. If not, you need to create them. 
 
+1. View the data views throughout your organization to see which dimensions are available. 
 
-
-
-
-
-
+   These are the dimensions that are being used for reporting in Analysis Workspace. Any Adobe Analytics data feed column needs to be mapped to a corresponding dimension that exists within a Customer Journey Analytics data view. 
 
 ## Map data feed columns from Adobe Analytics to Customer Journey Analytics
 
@@ -85,7 +97,7 @@ Before you can map these default columns, make sure that your Customer Journey A
 
 * It uses a WebSDK implementation.
 
-* The appropriate field groups that contain the default WebSDK fields are added to your XDM schema.<!--what are the field groups?--> If the field is not added to your schema, it is included in the payload, but ultimately dropped.
+* The appropriate field groups that contain the default WebSDK fields are added to your XDM schema.If the field is not added to your schema, it is included in the payload, but ultimately dropped.
 
 * Each default field must be curated as a component in a Customer Journey Analytics data view.
 
@@ -170,11 +182,9 @@ The number of AA columns that they can map is not going to be that big (maybe 10
 
 ### Adobe Analytics data feed columns that don't apply to Customer Journey Analytics
 
-<!-- Make a table of columns that don't apply to CJA, so they know not to worry about them. This would be hundreds of columns. (throw out all of the pre-processed columns). -->
-
-
 
 ### Columns, descriptions, and data types
 
 Use this section to learn what data is contained in each column. Most implementations don't use every column, so this section can be referenced when determining which columns to include in a data feed export.
 
+-->
