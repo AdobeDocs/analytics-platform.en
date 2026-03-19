@@ -410,8 +410,8 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Data feed overview](/help/components/exports/cja-data-feeds/data-feed-overview.md)
       + [Create a data feed](/help/components/exports/cja-data-feeds/create-feed.md)
       + [Prepare to map columns](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
-      + Migrate from Adobe Analytics {#migrate-data-feeds}
-        + [Compare]
+      + [Map columns](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
+      + [Compare data feeds](/help/components/exports/cja-data-feeds/df-comparison.md)
   + Data Dictionary {#data-dictionary}
     + [Overview](../components/data-dictionary/data-dictionary-overview.md)
     + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
