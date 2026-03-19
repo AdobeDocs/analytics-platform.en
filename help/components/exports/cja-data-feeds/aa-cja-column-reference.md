@@ -4,7 +4,7 @@ description: Determine how to take a given Adobe Analytics data feed column and 
 ---
 # Map Adobe Analytics data feed columns to Customer Journey Analytics
 
-Since Adobe Analytics and Customer Journey Analytics operate fundamental differently, a 1:1 column mapping is not possible. These differences are further exacerbated by the fact that every Adobe Analytics and Customer Journey Analytics implementation wildy differs.
+Since Adobe Analytics and Customer Journey Analytics operate fundamentally different, a 1:1 column mapping is not possible. These differences are further exacerbated by the fact that every Adobe Analytics and Customer Journey Analytics implementation wildy differs.
 
 This reference is designed to help data engineers adjust their Adobe Analytics-focused data feed workflows column-by-column to a workflow based on Customer Journey Analytics data feeds.
 
@@ -22,11 +22,15 @@ Lists all accepted languages, as indicated in the Accept-Language HTTP header in
 
 Media ad loads
 
+{{#cja-df-post}}
+
 +++
 
 +++**`aemassetid`**
 
 A multi-value variable corresponding to Asset IDs (GUIDs) of a set of Adobe Experience Manager Assets. Increments Impression Events.
+
+{{#cja-df-post}}
 
 +++
 
@@ -34,23 +38,30 @@ A multi-value variable corresponding to Asset IDs (GUIDs) of a set of Adobe Expe
 
 Identifies the source of the asset event. Used in Adobe Experience Manager.
 
+{{#cja-df-post}}
 +++
 
 +++**`aemclickedassetid`**
 
 Asset ID of an Adobe Experience Manager asset. Increments Click Events.
 
+{{#cja-df-post}}
+
 +++
 
 +++**`amo_cid`**
 
-The [AMO ID](/help/components/dimensions/amo-id.md) dimension, used in Adobe Advertising integrations.
+The AMO ID dimension, used in Adobe Advertising integrations.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`amo_ef_id`**
 
-The [AMO EF ID](/help/components/dimensions/amo-ef-id.md) dimension, used in Adobe Advertising integrations.
+The AMO EF ID dimension, used in Adobe Advertising integrations.
+
+{{#cja-df-post}}
 
 +++
 
@@ -62,31 +73,39 @@ A numeric ID that represents the browser. References the `browser.tsv` lookup ta
 
 +++**`browser_height`**
 
-The [Browser Height](/help/components/dimensions/browser-height.md) dimension.
+The Browser Height dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`browser_width`**
 
-The [Browser Width](/help/components/dimensions/browser-width.md)
+The Browser Width
+
+{{#cja-df-post}}
 
 +++
 
 +++**`campaign`**
 
-The [Tracking Code](/help/components/dimensions/tracking-code.md) dimension.
+The Tracking Code dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`carrier`**
 
-Adobe Advertising integration variable. Specifies the mobile carrier. The key value for `carrier.tsv` [Dynamic lookup](dynamic-lookups.md).
+Adobe Advertising integration variable. Specifies the mobile carrier. The key value for `carrier.tsv` Dynamic lookup.
 
 +++
 
 +++**`channel`**
 
-The [Site sections](/help/components/dimensions/site-section.md) dimension.
+The Site sections dimension.
+
+{{#cja-df-post}}
 
 +++
 
@@ -104,25 +123,33 @@ Client hints collected through the User-Agent Client Hints JavaScript API.
 
 +++**`clickmaplink`**
 
-The [Activity Map link](/help/components/dimensions/activity-map-link.md) dimension.
+The Activity Map link dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`clickmaplinkbyregion`**
 
-The [Activity Map link by region](/help/components/dimensions/activity-map-link-by-region.md) dimension.
+The Activity Map link by region dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`clickmappage`**
 
-The [Activity Map page](/help/components/dimensions/activity-map-page.md) dimension.
+The Activity Map page dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`clickmapregion`**
 
-The [Activity Map region](/help/components/dimensions/activity-map-region.md) dimension.
+The Activity Map region dimension.
+
+{{#cja-df-post}}
 
 +++
 
@@ -140,13 +167,15 @@ Color depth ID based on the value of the `c_color` column. References the `color
 
 +++**`connection_type`**
 
-Numeric ID representing the [Connection type](/help/components/dimensions/connection-type.md) dimension. References the `connection_type.tsv` lookup table.
+Numeric ID representing the Connection type dimension. References the `connection_type.tsv` lookup table.
 
 +++
 
 +++**`cookies`**
 
-The [Cookie support](/help/components/dimensions/cookie-support.md) dimension.<br>Y: Enabled<br>N: Disabled<br>U: Unknown
+The Cookie support dimension.<br>Y: Enabled<br>N: Disabled<br>U: Unknown
+
+{{#cja-df-post}}
 
 +++
 
@@ -158,7 +187,11 @@ A numeric ID that represents the country of the visitor. References the `country
 
 +++**`currency`**
 
-The currency code that was used during the transaction. Set using [`currencyCode`](/help/implement/vars/config-vars/currencycode.md).
+The currency code that was used during the transaction. Set using `currencyCode`.
+
+`xdm.commerce.order.currencyCode`
+
+{{#cja-df-post}}
 
 +++
 
@@ -182,7 +215,9 @@ The exchange rate when the transaction occurred. Adobe partners with XE to deter
 
 +++**`customer_perspective`**
 
-Determines if the hit is a mobile background hit. See [Context-aware sessions](/help/components/vrs/vrs-mobile-visit-processing.md) for more information.
+Determines if the hit is a mobile background hit.
+
+{{#cja-df-post}}
 
 +++
 
@@ -190,17 +225,21 @@ Determines if the hit is a mobile background hit. See [Context-aware sessions](/
 
 Timestamp-enabled report suites only. The timestamp sent with the hit, based in UNIX&reg; time.
 
+{{#cja-df-post}}
+
 +++
 
 +++**`cust_visid`**
 
-The custom visitor ID, if set using [`visitorID`](/help/implement/vars/config-vars/visitorid.md).
+The custom visitor ID, if set using `visitorID`.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`c_color`**
 
-Bit depth of the color palette. Used as part of calculating the [Color depth](/help/components/dimensions/color-depth.md) dimension. AppMeasurement uses the JavaScript function `screen.colorDepth()`.
+Bit depth of the color palette. Used as part of calculating the Color depth dimension. AppMeasurement uses the JavaScript function `screen.colorDepth()`.
 
 +++
 
@@ -212,13 +251,13 @@ A flag that determines if the hit is a new daily visitor.
 
 +++**`dataprivacyconsentoptin`**
 
-The [Consent management opt-in](/help/components/dimensions/cm-opt-in.md) dimension. Multiple values can be present per hit, separated by a pipe (`\|`). Valid values include `DMP` and `SELL`.
+The Consent management opt-in dimension. Multiple values can be present per hit, separated by a pipe (`\|`). Valid values include `DMP` and `SELL`.
 
 +++
 
 +++**`dataprivacyconsentoptout`**
 
-The [Consent management opt-out](/help/components/dimensions/cm-opt-out.md) dimension. Multiple values can be present per hit, separated by a pipe (`\|`). Valid values include `SSF`, `DMP`, and `SELL`.
+The Consent management opt-out dimension. Multiple values can be present per hit, separated by a pipe (`\|`). Valid values include `SSF`, `DMP`, and `SELL`.
 
 +++
 
@@ -230,7 +269,7 @@ The time of the hit in readable format, based on the report suite's time zone.
 
 +++**`domain`**
 
-The [Domain](/help/components/dimensions/domain.md) dimension. Based on the visitor's Internet access point.
+The Domain dimension. Based on the visitor's Internet access point.
 
 +++
 
@@ -256,17 +295,30 @@ A flag that determines if the purchase event for this hit is ignored because it 
 
 The EF ID, used in Adobe Advertising integrations.
 
+{{#cja-df-post}}
+
 +++
 
 +++**`evar1 - evar250`**
 
-Custom variables 1-250. Used in [eVar](/help/components/dimensions/evar.md) dimensions. Each organization uses eVars differently. The best place for more information on how your organization populates respective eVars would be a [solution design document](/help/implement/prepare/solution-design.md) specific to your organization.
+Custom variables 1-250. Used in eVar dimensions. Each organization uses eVars differently. The best place for more information on how your organization populates respective eVars would be a solution design document specific to your organization.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`event_list`**
 
-Comma-separated list of numeric IDs that represent events triggered on the hit. Includes both commerce events and [custom events 1-1000](/help/components/metrics/custom-events.md). Uses `event.tsv` lookup.
+Comma-separated list of numeric IDs that represent events triggered on the hit. Includes both commerce events and custom events 1-1000. Uses `event.tsv` lookup.
+
+This column likely maps to dozens of separate metrics, depending on your implementation. Adobe recommends the following process to map each respective metric in Customer Journey Analytics to its numeric value represented in this Analytics data feed column:
+
+1. Use the `event.tsv` lookup to map each numeric value to its metric name.
+1. Use your solution design document to map each Analytics event name to its corresponding metric name in Customer Journey Analytics.
+1. Select the mapped component in the Data Views UI and note its component ID. If the component ID is too unwieldy, you can populate the data feed alias ID field and use that instead.
+1. Repeat for every metric that your organization uses.
+
+{{#cja-df-post}}
 
 +++
 
@@ -278,7 +330,7 @@ A flag that determines if the hit is excluded from reporting. The `visit_num` co
 
 +++**`first_hit_pagename`**
 
-The [Entry page original](/help/components/dimensions/entry-dimensions.md) dimension. The original entry page name of the visitor.
+The Entry page original dimension. The original entry page name of the visitor.
 
 +++
 
@@ -296,7 +348,7 @@ The very first referring URL of the visitor.
 
 +++**`first_hit_ref_domain`**
 
-The [Original referring domain](/help/components/dimensions/original-referring-domain.md) dimension. Based on `first_hit_referrer`. The very first referring domain of the visitor.
+The Original referring domain dimension. Based on `first_hit_referrer`. The very first referring domain of the visitor.
 
 +++
 
@@ -314,31 +366,31 @@ Timestamp of the very first hit of the visitor in UNIX&reg; time.
 
 +++**`geo_city`**
 
-The name of the city that the hit came from, based on IP. Used in the [Cities](/help/components/dimensions/cities.md) dimension.
+The name of the city that the hit came from, based on IP. Used in the Cities dimension.
 
 +++
 
 +++**`geo_country`**
 
-The abbreviation of the country that the hit came from, based on IP. Used in the [Countries](/help/components/dimensions/countries.md) dimension.
+The abbreviation of the country that the hit came from, based on IP. Used in the Countries dimension.
 
 +++
 
 +++**`geo_dma`**
 
-A numeric ID of the demographic area that the hit came from, based on IP. Used in the [US DMA](/help/components/dimensions/us-dma.md) dimension.
+A numeric ID of the demographic area that the hit came from, based on IP. Used in the US DMA dimension.
 
 +++
 
 +++**`geo_region`**
 
-The name of the state or region that the hit came from, based on IP. Used in the [Regions](/help/components/dimensions/regions.md) dimension.
+The name of the state or region that the hit came from, based on IP. Used in the Regions dimension.
 
 +++
 
 +++**`geo_zip`**
 
-The zip code that the hit came from, based on IP. Helps populate the [Zip code](/help/components/dimensions/zip-code.md) dimension. See also `zip`.
+The zip code that the hit came from, based on IP. Helps populate the Zip code dimension. See also `zip`.
 
 +++
 
@@ -392,7 +444,9 @@ A lookup ID of JavaScript version, based on `j_jscript`. References the `javascr
 
 +++**`java_enabled`**
 
-The [[!UICONTROL Java enabled]](/help/components/dimensions/java-enabled.md). <br>Y: Enabled <br>N: Disabled <br>U: Unknown
+The Java enabled dimension. <br>Y: Enabled <br>N: Disabled <br>U: Unknown
+
+{{#cja-df-post}}
 
 +++
 
@@ -410,19 +464,19 @@ A numeric ID that represents the visitor's language. References the `languages.t
 
 +++**`last_hit_time_gmt`**
 
-Timestamp (in UNIX&reg; time) of the prior hit. Used to calculate the [[!UICONTROL Days since last visit]](/help/components/dimensions/days-since-last-visit.md) dimension.
+Timestamp (in UNIX&reg; time) of the prior hit. Used to calculate the Days since last visit dimension.
 
 +++
 
 +++**`last_purchase_num`**
 
-The [Customer loyalty](/help/components/dimensions/customer-loyalty.md) dimension. The number of previous purchases the visitor has made. <br>0: No prior purchases (not a customer) <br>1: 1 prior purchase (new customer) <br>2: 2 prior purchases (return customer) <br>3: 3 or more prior purchases (loyal customer)
+The Customer loyalty dimension. The number of previous purchases the visitor has made. <br>0: No prior purchases (not a customer) <br>1: 1 prior purchase (new customer) <br>2: 2 prior purchases (return customer) <br>3: 3 or more prior purchases (loyal customer)
 
 +++
 
 +++**`last_purchase_time_gmt`**
 
-Used in the [[!UICONTROL Days since last purchase]](/help/components/dimensions/days-since-last-purchase.md) dimension. Timestamp (in UNIX&reg; time) of the last purchase made. For first-time purchases and visitors that have not made a purchase before, this value is `0`.
+Used in the Days since last purchase dimension. Timestamp (in UNIX&reg; time) of the last purchase made. For first-time purchases and visitors that have not made a purchase before, this value is `0`.
 
 +++
 
@@ -454,17 +508,25 @@ Experience Cloud Visitor ID. 128-bit number consisting of two concatenated 64-bi
 
 List of Audience Manager segment IDs that the visitor belongs to. The `post_mc_audiences` column changes the delimiter to `--**--`.
 
+{{#cja-df-post}}
+
 +++
 
 +++**`mobileaction`**
 
 Mobile action. Automatically collected when `trackAction` is called in mobile implementations. Allows for automatic action pathing in the app.
 
+{{#cja-df-post}}
+
 +++
 
 +++**`mobileappid`**
 
 Mobile app ID. Stores the application name and version in the following format: `[AppName] [BundleVersion]`
+
+`xdm.application.name` + `xdm.application.version`
+
+{{#cja-df-post}}
 
 +++
 
@@ -514,11 +576,15 @@ Mobile Services beacon UUID
 
 The name or ID of the content that displayed the link. Populated by Mobile App Acquisition.
 
+{{#cja-df-post}}
+
 +++
 
 +++**`mobilecampaignmedium`**
 
 Marketing medium, such as banner or email. Populated by Mobile App Acquisition.
+
+{{#cja-df-post}}
 
 +++
 
@@ -526,11 +592,15 @@ Marketing medium, such as banner or email. Populated by Mobile App Acquisition.
 
 The name of the campaign, also stored in the campaign variable. Populated by Mobile App Acquisition.
 
+{{#cja-df-post}}
+
 +++
 
 +++**`mobilecampaignsource`**
 
 Original referrer, such as newsletter or social media network. Populated by Mobile App Acquisition.
+
+{{#cja-df-post}}
 
 +++
 
@@ -538,11 +608,15 @@ Original referrer, such as newsletter or social media network. Populated by Mobi
 
 Paid keywords or other terms you want to track with this acquisition. Populated by Mobile App Acquisition.
 
+{{#cja-df-post}}
+
 +++
 
 +++**`mobiledayofweek`**
 
 Number of the weekday that the app was launched on.
+
+{{#cja-df-post}}
 
 +++
 
@@ -550,11 +624,15 @@ Number of the weekday that the app was launched on.
 
 Number of days since the app was run for the first time.
 
+{{#cja-df-post}}
+
 +++
 
 +++**`mobiledayssincelastuse`**
 
 Number of days since the app was last run.
+
+{{#cja-df-post}}
 
 +++
 
@@ -568,11 +646,15 @@ Collected from the context data variable `a.deeplink.id`. Used in acquisition re
 
 Mobile device name. On iOS, it is stored as a comma-separated 2-digit string. The first number represents the device generation, and the second number represents the device family.
 
+{{#cja-df-post}}
+
 +++
 
 +++**`mobilehourofday`**
 
 Defines the hour of the day that the app was launched. Follows 24-hour numerical format.
+
+{{#cja-df-post}}
 
 +++
 
@@ -580,11 +662,19 @@ Defines the hour of the day that the app was launched. Follows 24-hour numerical
 
 Mobile install date. Provides the date of the first time that a user opens the mobile app.
 
+{{#cja-df-lookback}}
+
+{{#cja-df-post}}
+
 +++
 
 +++**`mobilelaunchnumber`**
 
 Increments by one each time the mobile app is launched.
+
+{{#cja-df-lookback}}
+
+{{#cja-df-post}}
 
 +++
 
@@ -592,11 +682,15 @@ Increments by one each time the mobile app is launched.
 
 Collected from the context data variable `a.message.button.id`. Used for in-app messaging to identify the button that closed the message.
 
+{{#cja-df-post}}
+
 +++
 
 +++**`mobilemessageid`**
 
 In-app Message ID
+
+{{#cja-df-post}}
 
 +++
 
@@ -604,11 +698,15 @@ In-app Message ID
 
 In-app Message Online
 
+{{#cja-df-post}}
+
 +++
 
 +++**`mobilemessagepushoptin`**
 
 Collected from the context data variable `a.push.optin`. Set to "true" when the user opts in to push messaging; otherwise the value is "false".
+
+{{#cja-df-post}}
 
 +++
 
@@ -616,11 +714,15 @@ Collected from the context data variable `a.push.optin`. Set to "true" when the 
 
 Collected from the context data variable `a.push.payloadid`. Used in push messaging as the payload identifier.
 
+{{#cja-df-post}}
+
 +++
 
 +++**`mobileosversion`**
 
 Mobile Services operating system version
+
+{{#cja-df-post}}
 
 +++
 
@@ -646,11 +748,15 @@ Collected from the context data variable `a.loc.id`. Identifier for a given poin
 
 Mobile Services Push opt-in
 
+{{#cja-df-post}}
+
 +++
 
 +++**`mobilepushpayloadid`**
 
 Mobile Services Push payload ID
+
+{{#cja-df-post}}
 
 +++
 
@@ -688,10 +794,12 @@ Collected from the context data variable `a.launch.campaign.trackingcode`. Used 
 
 Resolution of the mobile device. `[Width] x [Height]` in pixels.
 
+{{#cja-df-post}}
+
 +++
 
 +++**`mobile_id`**
-If the user is using a mobile device, the numeric ID of the device. The key value for `mobile_attributes.tsv` [Dynamic lookup](dynamic-lookups.md).
+If the user is using a mobile device, the numeric ID of the device. The key value for `mobile_attributes.tsv` Dynamic lookup.
 
 +++
 
@@ -703,13 +811,17 @@ A flag that determines if the visitor is unique to the current month.
 
 +++**`mvvar1`** - **`mvvar3`**
 
-[List variable](/help/implement/vars/page-vars/list.md) values. Contains a delimited list of custom values depending on implementation. The `post_mvvar1` - `post_mvvar3` columns replace the original delimiter with `--**--`.
+List variable values. Contains a delimited list of custom values depending on implementation. The `post_mvvar1` - `post_mvvar3` columns replace the original delimiter with `--**--`.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`mvvar1_instances`** - **`mvvar3_instances`**
 
 The list variable values that were set on the current hit. Replaces the original delimiter with `--**--`. The `post` columns typically do not contain data.
+
+{{#cja-df-post}}
 
 +++
 
@@ -721,13 +833,15 @@ A flag that determines if the current hit is a new visit. Set by Adobe after 30 
 
 +++**`os`**
 
-A numeric ID that represents the operating system of the visitor. Based on the `user_agent` column. The key value for `operating_system.tsv` standard lookup and `operating_system_type.tsv` [Dynamic lookup](dynamic-lookups.md).
+A numeric ID that represents the operating system of the visitor. Based on the `user_agent` column. The key value for `operating_system.tsv` standard lookup and `operating_system_type.tsv` Dynamic lookup.
 
 +++
 
 +++**`pagename`**
 
-The [Page](/help/components/dimensions/page.md) dimension. If the [`pagename`](/help/implement/vars/page-vars/pagename.md) variable is empty, Analytics uses `page_url` instead.
+The Page dimension. If the `pagename` variable is empty, Analytics uses `page_url` instead.
+
+{{#cja-df-post}}
 
 +++
 
@@ -735,11 +849,15 @@ The [Page](/help/components/dimensions/page.md) dimension. If the [`pagename`](/
 
 Similar to `pagename`, except it does not fall back to `page_url`. Only the `post` column is available.
 
+{{#cja-df-post}}
+
 +++
 
 +++**`page_event`**
 
-The type of hit that is sent in the image request (standard hit, download link, custom link, exit link). See [Page event lookup](datafeeds-page-event.md).
+The type of hit that is sent in the image request (standard hit, download link, custom link, exit link). See Page event lookup.
+
+{{#cja-df-post}}
 
 +++
 
@@ -747,23 +865,31 @@ The type of hit that is sent in the image request (standard hit, download link, 
 
 Only used in link tracking image requests. The URL of the download link, exit link, or custom link clicked.
 
+{{#cja-df-post}}
+
 +++
 
 +++**`page_event_var2`**
 
-Only used in link tracking image requests. The custom name (if specified) of the link. Sets the [Custom link](/help/components/dimensions/custom-link.md), [Download link](/help/components/dimensions/download-link.md), or [Exit link](/help/components/dimensions/exit-link.md) depending on the value in `page_event`.
+Only used in link tracking image requests. The custom name (if specified) of the link. Sets the Custom link, Download link, or Exit link depending on the value in `page_event`.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`page_type`**
 
-The [Pages not found](/help/components/dimensions/pages-not-found.md) dimension, which is typically used for 404 pages.
+The Pages not found dimension, which is typically used for 404 pages.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`page_url`**
 
-**`page_url`**: The URL of the hit. Uses a data type of text.<br>**`post_page_url`**: Stripped for link tracking image requests ([`tl()`](/help/implement/vars/functions/tl-method.md)). Uses a data type of varchar(255).
+**`page_url`**: The URL of the hit. Uses a data type of text.<br>**`post_page_url`**: Stripped for link tracking image requests (`tl()`).
+
+{{#cja-df-post}}
 
 +++
 
@@ -775,7 +901,9 @@ A flag that determines if the hit matches paid search detection.
 
 +++**`persistent_cookie`**
 
-Used in the [Persistent cookie support](/help/components/dimensions/persistent-cookie-support.md) dimension. Indicates if the visitor supports cookies that are not discarded after each hit.
+Used in the Persistent cookie support dimension. Indicates if the visitor supports cookies that are not discarded after each hit.
+
+{{#cja-df-post}}
 
 +++
 
@@ -783,29 +911,41 @@ Used in the [Persistent cookie support](/help/components/dimensions/persistent-c
 
 Mobile Services point of interest name
 
+{{#cja-df-post}}
+
 +++
 
 +++**`pointofinterestdistance`**
 
 Mobile Services distance to point of interest center
 
+{{#cja-df-post}}
+
 +++
 
 +++**`product_list`**
 
-The [`products`](/help/implement/vars/page-vars/products.md) page variable. Helps populate several dimensions and metrics, including [Category](/help/components/dimensions/category.md), [Product](/help/components/dimensions/product.md), [Units](/help/components/metrics/units.md), and [Revenue](/help/components/metrics/revenue.md).
+The `products` page variable. Helps populate several dimensions and metrics, including Category, Product, Units, and Revenue.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`prop1`** - **`prop75`**
 
-Custom traffic variables 1-75. Used in [Prop](/help/components/dimensions/prop.md) dimensions.
+Custom traffic variables 1-75. Used in Prop dimensions.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`purchaseid`**
 
-Unique identifier for a purchase, as set using the [`purchaseID`](/help/implement/vars/page-vars/purchaseid.md) variable. Used by the `duplicate_purchase` column.
+Unique identifier for a purchase, as set using the `purchaseID` variable. Used by the `duplicate_purchase` column.
+
+`xdm.commerce.order.purchaseID`
+
+{{#cja-df-post}}
 
 +++
 
@@ -817,38 +957,42 @@ A flag that determines if the hit is a new quarterly visitor.
 
 +++**`referrer`**
 
-The [Referrer](/help/components/dimensions/referrer.md) dimension. Note that while `referrer` uses a data type of varchar(255), `post_referrer` uses a data type of varchar(244).
+The Referrer dimension. Note that while `referrer` uses a data type of varchar(255), `post_referrer` uses a data type of varchar(244).
+
+{{#cja-df-post}}
 
 +++
 
 +++**`ref_domain`**
 
-The [Referring domain](/help/components/dimensions/referring-domain.md) dimension. Based on the `referrer` column.
+The Referring domain dimension. Based on the `referrer` column.
 
 +++
 
 +++**`ref_type`**
 
 
-A numeric ID that represents the type of referral for the hit. Used in the [Referrer type](/help/components/dimensions/referrer-type.md) dimension.<br>1: Inside your site<br>2: Other web sites<br>3: Search engines<br>4: Hard drive<br>5: USENET<br>6: Typed/Bookmarked (no referrer)<br>7: Email<br>8: No JavaScript<br>9: Social Networks<br>10: Conversational AI tools
+A numeric ID that represents the type of referral for the hit. Used in the Referrer type dimension.<br>1: Inside your site<br>2: Other web sites<br>3: Search engines<br>4: Hard drive<br>5: USENET<br>6: Typed/Bookmarked (no referrer)<br>7: Email<br>8: No JavaScript<br>9: Social Networks<br>10: Conversational AI tools
 
 +++
 
 +++**`resolution`**
 
-A numeric ID that represents the resolution of the monitor. Used in the [Monitor resolution](/help/components/dimensions/monitor-resolution.md) dimension. Uses `resolution.tsv` lookup table.
+A numeric ID that represents the resolution of the monitor. Used in the Monitor resolution dimension. Uses `resolution.tsv` lookup table.
 
 +++
 
 +++**`search_engine`**
 
-A numeric ID that represents the search engine that referred the visitor to your site. Used in [Search Engine](/help/components/dimensions/search-engine.md) dimensions. References the `search_engines.tsv` lookup table.
+A numeric ID that represents the search engine that referred the visitor to your site. Used in Search Engine dimensions. References the `search_engines.tsv` lookup table.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`search_page_num`**
 
-Used by the [All Search Page Rank](/help/components/dimensions/all-search-page-rank.md) dimension. Indicates which page of search results that your site appeared on before the user clicked through to your site.
+Used by the All Search Page Rank dimension. Indicates which page of search results that your site appeared on before the user clicked through to your site.
 
 +++
 
@@ -874,6 +1018,8 @@ Not of use. Adobe internal server that processed the hit.
 
 Keyword ID used in Adobe Advertising integrations.
 
+{{#cja-df-post}}
+
 +++
 
 +++**`s_resolution`**
@@ -886,11 +1032,15 @@ Raw screen resolution value. Gathered using the JavaScript function `screen.widt
 
 Used in Adobe Target integrations. Represents all tests currently qualified for. Format is: `TargetCampaignID:TargetRecipeID:TargetType\|Event/Action`.
 
+{{#cja-df-post}}
+
 +++
 
 +++**`tnt_action`**
 
 Used in Adobe Target integrations. Represents all tests the hit qualified for.
+
+{{#cja-df-post}}
 
 +++
 
@@ -902,7 +1052,11 @@ Used in Adobe Target integrations. Target instances variable.
 
 +++**`transactionid`**
 
-A unique identifier where various data points can be uploaded later through data sources. Collected using the [`transactionID`](/help/implement/vars/page-vars/transactionid.md) variable.
+A unique identifier where various data points can be uploaded later through data sources. Collected using the `transactionID` variable.
+
+`xdm.commerce.order.payments[0].transactionID`
+
+{{#cja-df-post}}
 
 +++
 
@@ -915,6 +1069,8 @@ A flag indicating that the image request was truncated (a partial hit was receiv
 +++**`t_time_info`**
 
 Local time for the visitor. Format is: `M/D/YYYY HH:MM:SS Month (0-11, 0=January) Timezone offset (in minutes)`
+
+{{#cja-df-post}}
 
 +++
 
@@ -944,301 +1100,373 @@ Not of use. Hash on the report suite ID. Use `username` instead.
 
 +++**`user_server`**
 
-Used in the [Server](/help/components/dimensions/server.md) dimension.
+Used in the Server dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`va_closer_detail`**
 
-The [Last touch detail](/help/components/dimensions/last-touch-detail.md) dimension.
+The Last touch detail dimension.
 
 +++
 
 +++**`va_closer_id`**
 
-A numeric ID that identifies the [Last touch channel](/help/components/dimensions/last-touch-channel.md) dimension. The lookup for this ID can be found in the Marketing Channel Manager.
+A numeric ID that identifies the Last touch channel dimension. The lookup for this ID can be found in the Marketing Channel Manager.
 
 +++
 
 +++**`va_finder_detail`**
 
-The [First touch detail](/help/components/dimensions/first-touch-detail.md) dimension.
+The First touch detail dimension.
 
 +++
 
 +++**`va_finder_id`**
 
-A numeric ID that identifies the [First touch channel](/help/components/dimensions/first-touch-channel.md) dimension. The lookup for this ID can be found in the Marketing Channel Manager.
+A numeric ID that identifies the First touch channel dimension. The lookup for this ID can be found in the Marketing Channel Manager.
 
 +++
 
 +++**`va_instance_event`**
 
-A flag that identifies Marketing Channel [Instances](/help/components/metrics/instances.md).
+A flag that identifies Marketing Channel Instances.
 
 +++
 
 +++**`va_new_engagement`**
 
-A flag that identifies Marketing Channel [New engagements](/help/components/metrics/new-engagements.md).
+A flag that identifies Marketing Channel New engagements.
 
 +++
 
 +++**`video`**
 
-The [Content](/help/components/dimensions/sm-core.md) streaming media services dimension.
+The Content streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoad`**
 
-The [Ad](/help/components/dimensions/sm-ads.md) streaming media services dimension.
+The Ad streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoadinpod`**
 
-The [Ad in pod position](/help/components/dimensions/sm-ads.md) streaming media services dimension.
+The Ad in pod position streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoadlength`**
 
-The [Ad length (variable)](/help/components/dimensions/sm-ads.md) streaming media services dimension.
+The Ad length (variable) streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoadname`**
 
-The [Ad name (variable)](/help/components/dimensions/sm-ads.md) streaming media services dimension.
+The Ad name (variable) streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoadplayername`**
 
-The [Ad player name](/help/components/dimensions/sm-ads.md) streaming media services dimension.
+The Ad player name streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoadpod`**
 
-The [Ad pod](/help/components/dimensions/sm-ads.md) streaming media services dimension.
+The Ad pod streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoadvertiser`**
 
-The [Advertiser](/help/components/dimensions/sm-ads.md) streaming media services dimension.
+The Advertiser streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoaudioalbum`**
 
-The [Album](/help/components/dimensions/sm-audio-metadata.md) streaming media services dimension.
+The Album streaming media services dimension.
 
 +++
 
 +++**`videoaudioartist`**
 
-The [Artist](/help/components/dimensions/sm-audio-metadata.md) streaming media services dimension.
+The Artist streaming media services dimension.
 
 +++
 
 +++**`videoaudioauthor`**
 
-The [Author](/help/components/dimensions/sm-audio-metadata.md) streaming media services dimension.
+The Author streaming media services dimension.
 
 +++
 
 +++**`videoaudiolabel`**
 
-The [Label](/help/components/dimensions/sm-audio-metadata.md) streaming media services dimension.
+The Label streaming media services dimension.
 
 +++
 
 +++**`videoaudiopublisher`**
 
-The [Publisher](/help/components/dimensions/sm-audio-metadata.md) streaming media services dimension.
+The Publisher streaming media services dimension.
 
 +++
 
 +++**`videoaudiostation`**
 
-The [Station](/help/components/dimensions/sm-audio-metadata.md) streaming media services dimension.
+The Station streaming media services dimension.
 
 +++
 
 +++**`videocampaign`**
 
-The [Campaign ID](/help/components/dimensions/sm-ads.md) streaming media services dimension.
+The Campaign ID streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videochannel`**
 
-The [Content channel](/help/components/dimensions/sm-core.md) streaming media services dimension.
+The Content channel streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videochapter`**
 
-The [Chapter](/help/components/dimensions/sm-chapters.md) streaming media services dimension.
+The Chapter streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videocontenttype`**
 
-The [Content type](/help/components/dimensions/sm-core.md) streaming media services dimension.
+The Content type streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videodaypart`**
 
-The [Day part](/help/components/dimensions/sm-video-metadata.md) streaming media services dimension.
+The Day part streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoepisode`**
 
-The [Episode](/help/components/dimensions/sm-video-metadata.md) streaming media services dimension.
+The Episode streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videofeedtype`**
 
-The [Media feed type](/help/components/dimensions/sm-video-metadata.md) streaming media services dimension.
+The Media feed type streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videogenre`**
 
-The [Genre](/help/components/dimensions/sm-video-metadata.md) streaming media services dimension. This dimension allows multiple values in the same hit, delimited by a comma.
+The Genre streaming media services dimension. This dimension allows multiple values in the same hit, delimited by a comma.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videolength`**
 
-The [Content length (variable)](/help/components/dimensions/sm-core.md) streaming media services dimension.
+The Content length (variable) streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videomvpd`**
 
-The [MVPD](/help/components/dimensions/sm-video-metadata.md) streaming media services dimension.
+The MVPD streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoname`**
 
-The [Content name (variable)](/help/components/dimensions/sm-core.md) streaming media services dimension.
+The Content name (variable) streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videonetwork`**
 
-The [Network](/help/components/dimensions/sm-video-metadata.md) streaming media services dimension.
+The Network streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videopath`**
 
-The [Media path](/help/components/dimensions/sm-core.md) streaming media services dimension.
+The Media path streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoplayername`**
 
-The [Content player name](/help/components/dimensions/sm-core.md) streaming media services dimension.
+The Content player name streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoqoebitrateaverageevar`**
 
-The [Average bitrate](/help/components/dimensions/sm-quality.md) streaming media services dimension.
+The Average bitrate streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoqoebitratechangecountevar`**
 
-The [Bitrate changes](/help/components/dimensions/sm-quality.md) streaming media services dimension.
+The Bitrate changes streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoqoebuffercountevar`**
 
-The [Buffer events](/help/components/dimensions/sm-quality.md) streaming media services dimension.
+The Buffer events streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoqoebuffertimeevar`**
 
-The [Total buffer duration](/help/components/dimensions/sm-quality.md) streaming media services dimension.
+The Total buffer duration streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoqoedroppedframecountevar`**
 
-The [Dropped frames](/help/components/dimensions/sm-quality.md) streaming media services dimension.
+The Dropped frames streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoqoeerrorcountevar`**
 
-The [Errors](/help/components/dimensions/sm-quality.md) streaming media services dimension.
+The Errors streaming media services dimension.
 
 +++
+{{#cja-df-post}}
+
 
 +++**`videoqoeextneralerrors`**
 
-The [External error IDs](/help/components/dimensions/sm-quality.md) streaming media services dimension. This dimension allows multiple values in the same hit.
+The External error IDs streaming media services dimension. This dimension allows multiple values in the same hit.
 
 +++
 
 +++**`videoqoeplayersdkerrors`**
 
-The [Player SDK error IDs](/help/components/dimensions/sm-quality.md) streaming media services dimension. This dimension allows multiple values in the same hit.
+The Player SDK error IDs streaming media services dimension. This dimension allows multiple values in the same hit.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoqoetimetostartevar`**
 
-The [Time to start](/help/components/dimensions/sm-quality.md) streaming media services dimension.
+The Time to start streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoseason`**
 
-The [Season](/help/components/dimensions/sm-video-metadata.md) streaming media services dimension.
+The Season streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videosegment`**
 
-The [Content segment](/help/components/dimensions/sm-core.md) streaming media services imension.
+The Content segment streaming media services imension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videosessionid`**
 
-The [Media session ID](/help/components/dimensions/sm-core.md) streaming media services dimension.
+The Media session ID streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoshow`**
 
-The [Show](/help/components/dimensions/sm-video-metadata.md) streaming media services dimension.
+The Show streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videoshowtype`**
 
-The [Show type](/help/components/dimensions/sm-video-metadata.md) streaming media services dimension.
+The Show type streaming media services dimension.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`videostreamtype`**
 
-The [Stream type](/help/components/dimensions/sm-core.md) streaming media services dimension.
+The Stream type streaming media services dimension.
 
 +++
 
@@ -1246,11 +1474,15 @@ The [Stream type](/help/components/dimensions/sm-core.md) streaming media servic
 
 Used with `visid_low` to uniquely identify a visitor.
 
+{{#cja-df-post}}
+
 +++
 
 +++**`visid_low`**
 
 Used with `visid_high` to uniquely identify a visitor.
+
+{{#cja-df-post}}
 
 +++
 
@@ -1270,23 +1502,27 @@ If a visitor ID is newly generated, provides the timestamp in UNIX&reg; time of 
 
 Not for external use; internally used by Adobe for processing optimizations. A numeric ID that represents the method used to identify the visitor.<br>`0`: Custom visitor ID or Unknown/not applicable<br>`1`: IP and user agent fallback <br>`2`: HTTP Mobile Subscriber Header <br>`3`: Legacy cookie value (`s_vi`) <br>`4`: Fallback cookie value (`s_fid`) <br>`5`: Identity Service
 
+{{#cja-df-post}}
+
 +++
 
 +++**`visit_keywords`**
 
-The [Search keyword](/help/components/dimensions/search-keyword.md) dimension. This column uses a non-standard character limit of varchar(244) to accommodate back-end logic used by Adobe. The post-processed column is `**post_keywords**`, not `**post_visit_keywords**`.
+The Search keyword dimension. This column uses a non-standard character limit of varchar(244) to accommodate back-end logic used by Adobe. The post-processed column is `**post_keywords**`, not `**post_visit_keywords**`.
+
+{{#cja-df-post}}
 
 +++
 
 +++**`visit_num`**
 
-The [Visit number](/help/components/dimensions/visit-number.md) dimension. Starts at 1, and increments each time a new visit starts per visitor.
+The Visit number dimension. Starts at 1, and increments each time a new visit starts per visitor.
 
 +++
 
 +++**`visit_page_num`**
 
-The [Hit depth](/help/components/dimensions/hit-depth.md) dimension. Increases by 1 for each hit that the visitor generates. Resets each visit.
+The Hit depth dimension. Increases by 1 for each hit that the visitor generates. Resets each visit.
 
 +++
 
@@ -1316,7 +1552,7 @@ A numeric ID that represents the first search engine of the visit. References th
 
 +++**`visit_start_pagename`**
 
-[Page](/help/components/dimensions/page.md) of the first hit of the visit.
+Page of the first hit of the visit.
 
 +++
 
@@ -1346,6 +1582,8 @@ A flag that determines if the hit is a new yearly visitor.
 
 +++**`zip`**
 
-Helps populate the [Zip code](/help/components/dimensions/zip-code.md) dimension. See also `geo_zip`.
+Helps populate the Zip code dimension. See also `geo_zip`.
+
+{{#cja-df-post}}
 
 +++

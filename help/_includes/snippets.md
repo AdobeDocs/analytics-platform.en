@@ -287,3 +287,25 @@ Use the following information to choose the visualization that best meets your n
 >
 >In the Customer Journey Analytics interface, **[!UICONTROL Relational]** datasets might be labeled as **[!UICONTROL Model-based]**.
 >
+
+## CJA data feed lookback window {#cja-df-lookback}
+
+Since Customer Journey Analytics uses report-time attribution for every component, it does not have a concept of persistence beyond its lookback window. This Analytics data feed column references visitor-level behavior that extends to the visitor's entire history. The longer the lookback window is for this component in Customer Journey Analytics, the closer it can match to Adobe Analytics functionality.
+
+## CJA data feed post columns {#cja-df-post}
+
+This Analytics data feed column contains both a pre-processed version and a post-processed version (a prefix of `post_`). Columns with a prefix of `post_` contain the value that is ultimately used in reporting. The following table compares the properties of these columns:
+
+| Pre-processed column value | Post-processed column value |
+| --- | --- |
+| As it was collected | Used in reporting |
+| Before processing rules | After processing rules |
+| Before VISTA rules | After VISTA rules |
+| No allocation applied | Allocation applies |
+
+Most organizations solely use `post_` columns when they are available.
+
+Since Customer Journey Analytics does not have a concept of pre-processing and post-processing, recreating both columns in CJA data feeds is difficult. If you would like approximations of these columns, you can use the same column with separate attribution settings applied:
+
+* **Pre-processed column**: No attribution
+* **Post-processed column**: Apply the same allocation and expiration settings as its Analytics variable in data view settings. Most components would use an allocation of "Last" and an expiration of "Visit".
