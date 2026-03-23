@@ -315,3 +315,7 @@ This Analytics data feed column uses a lookup table to identify the desired valu
 ## CJA data feed not applicable columns {#cja-df-na}
 
 This Analytics data feed column contains data that cannot be translated to a Customer Journey Analytics equivalent because of data architecture differences.
+
+## CJA data feed user agent {#cja-df-ua}
+
+You cannot collect both user agent information and device lookup information simultaneously; population of these dimensions are mutually exclusive. You must choose if you want to collect user agent directly or device lookup information (based on user agent) when [Configuring a datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup).

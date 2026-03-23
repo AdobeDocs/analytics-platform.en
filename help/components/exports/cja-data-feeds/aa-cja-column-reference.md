@@ -103,9 +103,11 @@ The Tracking Code dimension.
 
 +++**`carrier`**
 
-Adobe Advertising integration variable. Specifies the mobile carrier.
+Specifies the mobile carrier.
 
 {{cja-df-lookup}}
+
+{{cja-df-ua}}
 
 +++
 
@@ -121,11 +123,31 @@ The Site sections dimension.
 
 Client hints collected through the HTTP request header.
 
+In Adobe Analytics, client hints were included as a concatenated string in this column. It is considered a more modern approach than the `user_agent` column.
+
+{{cja-df-ua}}
+
 +++
 
 +++**`ch_js`**
 
 Client hints collected through the User-Agent Client Hints JavaScript API.
+
+In Adobe Analytics, client hints were included as a concatenated string in this column. It is considered a more modern approach than the `user_agent` column.
+
+You can collect this data using the [`highEntropyUserAgentHints`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/context) context string when configuring the Web SDK. Multiple XDM fields are populated instead of one long concatenated string:
+
+* **Operating system version**: `xdm.environment.browserDetails.userAgentClientHints.platformVersion`
+* **Architecture**: `xdm.environment.browserDetails.userAgentClientHints.architecture`
+* **Device model**: `xdm.environment.browserDetails.userAgentClientHints.model`
+* **Bitness**: `xdm.environment.browserDetails.userAgentClientHints.bitness`
+* **Browser vendor**: `xdm.environment.browserDetails.userAgentClientHints.vendor`
+* **Browser name**: `xdm.environment.browserDetails.userAgentClientHints.brand`
+* **Browser version**: `xdm.environment.browserDetails.userAgentClientHints.version`
+
+See [User agent client hints](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints) for more information.
+
+{{cja-df-ua}}
 
 +++
 
@@ -249,11 +271,17 @@ Determines if the hit is a mobile background hit.
 
 {{cja-df-post}}
 
+{{cja-df-na}}
+
+Customer Journey Analytics does not have a native concept of event type where it automatically includes or excludes hits based on the context of the hit. You can use `xdm.eventType` to help determine which events should be included and excluded in most reports.
+
 +++
 
 +++**`cust_hit_time_gmt`**
 
 Timestamp-enabled report suites only. The timestamp sent with the hit, based in UNIX&reg; time.
+
+Customer Journey Analytics does not have a concept of timestamp vs. non-timestamp report suites. Use `xdm.timestamp` instead, and adjust component settings as desired.
 
 {{cja-df-post}}
 
@@ -262,6 +290,8 @@ Timestamp-enabled report suites only. The timestamp sent with the hit, based in 
 +++**`cust_visid`**
 
 The custom visitor ID, if set using `visitorID`.
+
+Customer Journey Analytics supports any number of identities using [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap). If your organization uses custom identities, it is likely within the identity map.
 
 {{cja-df-post}}
 
@@ -283,9 +313,7 @@ A flag that determines if the hit is a new daily visitor.
 
 The Consent management opt-in dimension. Multiple values can be present per hit, separated by a pipe (`\|`). Valid values include `DMP` and `SELL`.
 
-{{cja-df-na}}
-
-This column does not apply because Customer Journey Analytics does not ???.
+If your organization has a data management platform, it likely populates the desired XDM fields for this dimension.
 
 +++
 
@@ -293,11 +321,15 @@ This column does not apply because Customer Journey Analytics does not ???.
 
 The Consent management opt-out dimension. Multiple values can be present per hit, separated by a pipe (`\|`). Valid values include `SSF`, `DMP`, and `SELL`.
 
+If your organization has a data management platform, it likely populates the desired XDM fields for this dimension.
+
 +++
 
 +++**`date_time`**
 
 The time of the hit in readable format, based on the report suite's time zone.
+
+You can use `xdm.timestamp` and apply the **[!UICONTROL Date]** or **[!UICONTROL Date-time]** [Format](/help/data-views/component-settings/format.md) component setting.
 
 +++
 
@@ -305,11 +337,17 @@ The time of the hit in readable format, based on the report suite's time zone.
 
 The Domain dimension. Based on the visitor's Internet access point.
 
+Enable **[!UICONTROL Network lookup]** when [Configuring a datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure). The XDM field is `xdm.environment.domain` if it is included in your schema.
+
 +++
 
 +++**`duplicated_from`**
 
 Only used in report suites containing hit copy VISTA rules. Indicates which report suite that the hit was copied from.
+
+{{cja-df-na}}
+
+This column does not apply because Customer Journey Analytics does not have a concept of VISTA rules.
 
 +++
 
@@ -317,11 +355,19 @@ Only used in report suites containing hit copy VISTA rules. Indicates which repo
 
 Lists each event that was counted as a duplicate.
 
+{{cja-df-na}}
+
+Customer Journey Analytics does not have a singular field that acts as a deduplicate flag for all metrics. Instead, each metric contains its own [Metric deduplication component settings](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication). As such, there is no equivalent field in Customer Journey Analytics for this Adobe Analytics data feed column.
+
 +++
 
 +++**`duplicate_purchase`**
 
 A flag that determines if the purchase event for this hit is ignored because it is a duplicate.
+
+While there isn't a direct translation to this Analytics data feed column, its functionality of acting to deduplicate purchases still exists. If using the [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) field group, you can set [Metric deduplication component settings](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication) where the **[!UICONTROL Deduplication ID]** is `xdm.commerce.purchases.id`.
+
+If a direct translation is required where you want a flag for duplicate purchases, you can use a [Derived field](/help/data-views/derived-fields/derived-fields.md) using the **Deduplicate** function in the ruleset.
 
 +++
 
@@ -375,13 +421,23 @@ Some metrics might use event serialization, which is how Adobe Analytics allows 
   * **Cart removals**: `xdm.commerce.productListRemovals.id`
   * **Cart views**: `xdm.commerce.productListViews.id`
   * **Product views**: `xdm.commerce.productViews.id`
-  * **Orders**: `xdm.commerce.purchases.id`
+
+If you're looking to deduplicate the Orders metric, see `duplicate_purchase`.
 
 +++
 
 +++**`exclude_hit`**
 
-A flag that determines if the hit is excluded from reporting. The `visit_num` column is not incremented for excluded hits.<br>1: Not used. Part of a scrapped feature.<br>2: Not used. Part of a scrapped feature.<br>3: No longer used. User agent exclusion<br>4: Exclusion based on IP address<br>5: Vital hit info missing, such as `page_url`, `pagename`, `page_event`, or `event_list`<br>6: JavaScript did not correctly process hit<br>7: Account-specific exclusion, such as in a VISTA rules<br>8: Not used. Alternate account-specific exclusion.<br>9: Not used. Part of a scrapped feature.<br>10: Invalid currency code<br>11: Hit missing a timestamp on a timestamp-only report suite, or a hit contained a timestamp on a non-timestamp report suite<br>12: Not used. Part of a scrapped feature.<br>13: Not used. Part of a scrapped feature.<br>14: Target hit that did not match up with an Analytics hit<br>15: Not currently used.<br>16: Advertising Cloud hit that did not match up to an Analytics hit
+A flag that determines if the hit is excluded from reporting. The `visit_num` column is not incremented for excluded hits.
+
+Customer Journey Analytics does not honor "excluded hits" out of the box. However, you can recreate this functionality if you have an XDM field that flags certain hits to be excluded:
+
+1. Ensure that the XDM field that flags excluded hits is included as a component (dimension or metric, depending on how you have this flag set up). Selecting [Hide component in reporting](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview) is likely beneficial for this field.
+1. In [Data view settings](/help/data-views/session-settings.md), select the **[!UICONTROL Add segment]** drop-down menu and select **[!UICONTROL Create segment]**.
+1. Create a segment that excludes all events where your exclude hit component exists or contains values that you want to exclude.
+1. Select **[!UICONTROL Save]** on both the segment and the data view.
+
+Excluded hits now do not exist in Customer Journey Analytics reporting, but are still available in data feed exports.
 
 +++
 
@@ -901,6 +957,14 @@ A flag that determines if the current hit is a new visit. Set by Adobe after 30 
 A numeric ID that represents the operating system of the visitor. Based on the `user_agent` column.
 
 {{cja-df-lookup}}
+
+When [configuring a datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure), you can enable **[!UICONTROL Device lookup]**. If enabled, check the **[!UICONTROL Operating system]** checkbox. Doing so automatically populates the following XDM fields if you have included these fields in your schema:
+
+* **OS vendor**: `xdm.environment.operatingSystemVendor`
+* **OS name**: `xdm.environment.operatingSystem`
+* **OS version**: `xdm.environment.operatingSystemVersion`
+
+{{cja-df-ua}}
 
 +++
 
