@@ -294,7 +294,7 @@ Since Customer Journey Analytics uses report-time attribution for every componen
 
 ## CJA data feed post columns {#cja-df-post}
 
-This Analytics data feed column contains both a pre-processed version and a post-processed version (a prefix of `post_`). Columns with a prefix of `post_` contain the value that is ultimately used in reporting. The following table compares the properties of these columns:
+This Analytics data feed column contains both a pre-processed version and a post-processed version (a prefix of `post_`). Columns with a prefix of `post_` contain the value that is ultimately used in reporting. Most organizations solely use `post_` columns when they are available. The following table compares the properties of these columns:
 
 | Pre-processed column value | Post-processed column value |
 | --- | --- |
@@ -303,9 +303,15 @@ This Analytics data feed column contains both a pre-processed version and a post
 | Before VISTA rules | After VISTA rules |
 | No allocation applied | Allocation applies |
 
-Most organizations solely use `post_` columns when they are available.
-
-Since Customer Journey Analytics does not have a concept of pre-processing and post-processing, recreating both columns in CJA data feeds is difficult. If you would like approximations of these columns, you can use the same column with separate attribution settings applied:
+Since Customer Journey Analytics does not have a concept of pre-processing and post-processing, recreating both columns in CJA data feeds is difficult. If you would like approximations of these columns, you can drag the same XDM field multiple times into the dimensions column to create multiple components with different attribution settings:
 
 * **Pre-processed column**: No attribution
 * **Post-processed column**: Apply the same allocation and expiration settings as its Analytics variable in data view settings. Most components would use an allocation of "Last" and an expiration of "Visit".
+
+## CJA data feed lookup columns {#cja-df-lookup}
+
+This Analytics data feed column uses a lookup table to identify the desired value. In Customer Journey Analytics, the value is provided directly without any lookup tables. Ensure that your workflow accommodates the final value instead of an intermediate lookup value.
+
+## CJA data feed not applicable columns {#cja-df-na}
+
+This Analytics data feed column contains data that cannot be translated to a Customer Journey Analytics equivalent because of data architecture differences.

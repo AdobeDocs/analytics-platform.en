@@ -8,9 +8,9 @@ exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
 ---
 # Map Adobe Analytics data feed columns to Customer Journey Analytics
 
-Since Adobe Analytics and Customer Journey Analytics operate fundamentally different, a 1:1 column mapping is not possible. These differences are further exacerbated by the fact that every Adobe Analytics and Customer Journey Analytics implementation wildy differs.
+A true 1:1 mapping between Adobe Analytics and Customer Journey Analytics data feed columns is not possible. The two products differ fundamentally, and each organization's implementation can vary significantly.
 
-This reference is designed to help data engineers adjust their Adobe Analytics-focused data feed workflows column-by-column to a workflow based on Customer Journey Analytics data feeds.
+This reference helps data engineers evaluate Adobe Analytics data feed columns and identify the closest Customer Journey Analytics equivalents for their workflows.
 
 >[!NOTE]
 >
@@ -71,7 +71,9 @@ The AMO EF ID dimension, used in Adobe Advertising integrations.
 
 +++**`browser`**
 
-A numeric ID that represents the browser. References the `browser.tsv` lookup table.
+A numeric ID that represents the browser.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -101,7 +103,9 @@ The Tracking Code dimension.
 
 +++**`carrier`**
 
-Adobe Advertising integration variable. Specifies the mobile carrier. The key value for `carrier.tsv` Dynamic lookup.
+Adobe Advertising integration variable. Specifies the mobile carrier.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -131,6 +135,10 @@ The Activity Map link dimension.
 
 {{cja-df-post}}
 
+{{cja-df-na}}
+
+This column does not apply because Customer Journey Analytics does not yet support Activity Map.
+
 +++
 
 +++**`clickmaplinkbyregion`**
@@ -138,6 +146,10 @@ The Activity Map link dimension.
 The Activity Map link by region dimension.
 
 {{cja-df-post}}
+
+{{cja-df-na}}
+
+This column does not apply because Customer Journey Analytics does not yet support Activity Map.
 
 +++
 
@@ -147,6 +159,10 @@ The Activity Map page dimension.
 
 {{cja-df-post}}
 
+{{cja-df-na}}
+
+This column does not apply because Customer Journey Analytics does not yet support Activity Map.
+
 +++
 
 +++**`clickmapregion`**
@@ -154,6 +170,10 @@ The Activity Map page dimension.
 The Activity Map region dimension.
 
 {{cja-df-post}}
+
+{{cja-df-na}}
+
+This column does not apply because Customer Journey Analytics does not yet support Activity Map.
 
 +++
 
@@ -165,13 +185,17 @@ API or client SDK version used to compile and send the image request.
 
 +++**`color`**
 
-Color depth ID based on the value of the `c_color` column. References the `color_depth.tsv` lookup table.
+Color depth ID based on the value of the `c_color` column.
+
+{{cja-df-lookup}}
 
 +++
 
 +++**`connection_type`**
 
-Numeric ID representing the Connection type dimension. References the `connection_type.tsv` lookup table.
+Numeric ID representing the Connection type dimension.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -186,6 +210,8 @@ The Cookie support dimension.<br>Y: Enabled<br>N: Disabled<br>U: Unknown
 +++**`country`**
 
 A numeric ID that represents the country of the visitor. References the `country.tsv` lookup table.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -257,6 +283,10 @@ A flag that determines if the hit is a new daily visitor.
 
 The Consent management opt-in dimension. Multiple values can be present per hit, separated by a pipe (`\|`). Valid values include `DMP` and `SELL`.
 
+{{cja-df-na}}
+
+This column does not apply because Customer Journey Analytics does not ???.
+
 +++
 
 +++**`dataprivacyconsentoptout`**
@@ -324,6 +354,29 @@ This column likely maps to dozens of separate metrics, depending on your impleme
 
 {{cja-df-post}}
 
+If your schema uses the [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) field group, some metrics might directly map to the following XDM fields:
+
+* **Checkouts**: `xdm.commerce.checkouts.value`
+* **Cart adds**: `xdm.commerce.productListAdds.value`
+* **Cart opens**: `xdm.commerce.productListOpens.value`
+* **Cart removals**: `xdm.commerce.productListRemovals.value`
+* **Cart views**: `xdm.commerce.productListViews.value`
+* **Product views**: `xdm.commerce.productViews.value`
+* **Orders**: `xdm.commerce.purchases.value`
+
+Some metrics might use event serialization, which is how Adobe Analytics allows full control over deduplication. You can use the [Metric deduplication](/help/data-views/component-settings/metric-deduplication.md) component setting to achieve deduplication parity.
+
+* If your metric deduplicates by visit in Adobe Analytics, you can set the deduplication scope to session in that metric's component settings.
+* If your metric deduplicates by event ID in Adobe Analytics, it is likely that the XDM object for that metric contains both a `value` and `id` field. If your schema uses the [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) field group, those metrics likely reside in these XDM fields, which you can set the **[!UICONTROL Deduplication ID]** field in the metric's component settings:
+
+  * **Checkouts**: `xdm.commerce.checkouts.id`
+  * **Cart adds**: `xdm.commerce.productListAdds.id`
+  * **Cart opens**: `xdm.commerce.productListOpens.id`
+  * **Cart removals**: `xdm.commerce.productListRemovals.id`
+  * **Cart views**: `xdm.commerce.productListViews.id`
+  * **Product views**: `xdm.commerce.productViews.id`
+  * **Orders**: `xdm.commerce.purchases.id`
+
 +++
 
 +++**`exclude_hit`**
@@ -358,7 +411,9 @@ The Original referring domain dimension. Based on `first_hit_referrer`. The very
 
 +++**`first_hit_ref_type`**
 
-A numeric ID that represents the referrer type of the very first referrer of the visitor. References the `referrer_type.tsv` lookup table.
+A numeric ID that represents the referrer type of the very first referrer of the visitor.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -442,7 +497,9 @@ The compressed IPv6 address, if available. Mutually exclusive to `ip`; if this c
 
 +++**`javascript`**
 
-A lookup ID of JavaScript version, based on `j_jscript`. References the `javascript_version` lookup table.
+A lookup ID of JavaScript version, based on `j_jscript`.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -462,7 +519,9 @@ Version of JavaScript supported by the browser.
 
 +++**`language`**
 
-A numeric ID that represents the visitor's language. References the `languages.tsv` lookup table.
+A numeric ID that represents the visitor's language.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -803,7 +862,9 @@ Resolution of the mobile device. `[Width] x [Height]` in pixels.
 +++
 
 +++**`mobile_id`**
-If the user is using a mobile device, the numeric ID of the device. The key value for `mobile_attributes.tsv` Dynamic lookup.
+If the user is using a mobile device, the numeric ID of the device.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -837,7 +898,9 @@ A flag that determines if the current hit is a new visit. Set by Adobe after 30 
 
 +++**`os`**
 
-A numeric ID that represents the operating system of the visitor. Based on the `user_agent` column. The key value for `operating_system.tsv` standard lookup and `operating_system_type.tsv` Dynamic lookup.
+A numeric ID that represents the operating system of the visitor. Based on the `user_agent` column.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -859,9 +922,11 @@ Similar to `pagename`, except it does not fall back to `page_url`. Only the `pos
 
 +++**`page_event`**
 
-The type of hit that is sent in the image request (standard hit, download link, custom link, exit link). See Page event lookup.
+The type of hit that is sent in the image request (standard hit, download link, custom link, exit link).
 
 {{cja-df-post}}
+
+{{cja-df-lookup}}
 
 +++
 
@@ -982,15 +1047,19 @@ A numeric ID that represents the type of referral for the hit. Used in the Refer
 
 +++**`resolution`**
 
-A numeric ID that represents the resolution of the monitor. Used in the Monitor resolution dimension. Uses `resolution.tsv` lookup table.
+A numeric ID that represents the resolution of the monitor. Used in the Monitor resolution dimension.
+
+{{cja-df-lookup}}
 
 +++
 
 +++**`search_engine`**
 
-A numeric ID that represents the search engine that referred the visitor to your site. Used in Search Engine dimensions. References the `search_engines.tsv` lookup table.
+A numeric ID that represents the search engine that referred the visitor to your site. Used in Search Engine dimensions.
 
 {{cja-df-post}}
+
+{{cja-df-lookup}}
 
 +++
 
@@ -1118,7 +1187,9 @@ The Last touch detail dimension.
 
 +++**`va_closer_id`**
 
-A numeric ID that identifies the Last touch channel dimension. The lookup for this ID can be found in the Marketing Channel Manager.
+A numeric ID that identifies the Last touch channel dimension.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -1130,7 +1201,9 @@ The First touch detail dimension.
 
 +++**`va_finder_id`**
 
-A numeric ID that identifies the First touch channel dimension. The lookup for this ID can be found in the Marketing Channel Manager.
+A numeric ID that identifies the First touch channel dimension.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -1544,13 +1617,17 @@ Based on the `visit_referrer` column. The first referring domain of the visit.
 
 +++**`visit_ref_type`**
 
-A numeric ID that represents the referrer type of the first referrer of the visit. References the `referrer_type.tsv` lookup table.
+A numeric ID that represents the referrer type of the first referrer of the visit.
+
+{{cja-df-lookup}}
 
 +++
 
 +++**`visit_search_engine`**
 
-A numeric ID that represents the first search engine of the visit. References the `search_engines.tsv` lookup table.
+A numeric ID that represents the first search engine of the visit.
+
+{{cja-df-lookup}}
 
 +++
 
