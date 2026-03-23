@@ -14,25 +14,25 @@ Data feeds are a powerful way to get raw data out of Customer Journey Analytics.
 
 Make sure that you meet all the following requirements before using data feeds.
 
-* A working implementation with data being ingested into Adobe Customer Journey Analytics. For more information, see [Data ingestion overview](/help/implement/launch/validate-publish-prod.md).
+* A working implementation with data being ingested into Adobe Customer Journey Analytics. <!-- For more information, see Data ingestion overview - add link -->
 * Your account is an Analytics product admin, or your account belongs to a product profile with access to data feeds. <!--???-->
 * A bucket configured on Amazon S3, Google Cloud Platform, Azure RBAC, or Azure SAS.<!--Which cloud providers do we support??-->
 * (Legacy: Required only for legacy FTP and SFTP destination types) Have an FTP site and credentials handy (FTP credentials provided by your organization.)<!--Delete???-->
 
 ## Compare data feeds in Customer Journey Analytics and Adobe Analytics
 
-Data feed functionality in Customer Journey Analytics differs from Adobe Analytics. For more information, see [Compare data feeds in Customer Journey Analytics and Adobe Analytics](/help/components/exports/cja-data-feeds/data-feed-comparison.md).
+Data feed functionality in Customer Journey Analytics differs from Adobe Analytics. For more information, see [Compare data feeds in Customer Journey Analytics and Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md).
 
 
 ## Next steps
 
 The following resources help you understand the basic workflow of obtaining data feeds. After you understand the basic workflow, you can work with teams within your organization to store or ingest raw data into a database.
 
-* [Data feed best practices](/help/export/analytics-data-feed/data-feeds-best-practices.md): Best practices for creating and managing data feeds.
-* [Create a data feed](create-feed.md): Technical details for creating a data feed, explaining individual fields in more detail
-* [Manage data feeds](df-manage-feeds.md): Learn more about navigating the data feed interface
-* [Data feed contents](c-df-contents/datafeeds-contents.md): Understand what is inside the compressed file <!-- Is this still the output users can download from the destination? I aske Jun. -->
-* [Data column definitions](c-df-contents/datafeeds-reference.md): A comprehensive list of all available columns.
+* Data feed best practices<!--add link-->: Best practices for creating and managing data feeds.
+* Create a data feed<!--add link-->: Technical details for creating a data feed, explaining individual fields in more detail
+* Manage data feeds<!--add link-->: Learn more about navigating the data feed interface
+* Data feed contents <!--add link-->: Understand what is inside the compressed file <!-- Is this still the output users can download from the destination? I aske Jun. -->
+* Data column definitions <!--add link-->: A comprehensive list of all available columns.
 
 >[!BEGINSHADEBOX]
 
