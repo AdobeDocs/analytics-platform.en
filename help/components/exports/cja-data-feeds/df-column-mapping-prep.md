@@ -52,7 +52,7 @@ The number of fields that are available to map to in your Customer Journey Analy
 
 * **Analytics Source Connector implementations**: One-to-one field mappings exist by default for many data feed columns because the Analytics Source Connector uses the Analytics Experience Event field group in the XDM schema. For information about which Adobe Analytics fields map to fields in this field group, see [Add link to existing ADC mapping page]().<!--add link to existing mapping page-->
 
-* **Data layer**: 
+<!-- **Data layer**: ??? -->
 
 ## Data processing
 

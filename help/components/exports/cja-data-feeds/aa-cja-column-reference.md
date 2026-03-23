@@ -22,7 +22,7 @@ Lists all accepted languages, as indicated in the Accept-Language HTTP header in
 
 Media ad loads
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -30,7 +30,7 @@ Media ad loads
 
 A multi-value variable corresponding to Asset IDs (GUIDs) of a set of Adobe Experience Manager Assets. Increments Impression Events.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -38,14 +38,14 @@ A multi-value variable corresponding to Asset IDs (GUIDs) of a set of Adobe Expe
 
 Identifies the source of the asset event. Used in Adobe Experience Manager.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 +++
 
 +++**`aemclickedassetid`**
 
 Asset ID of an Adobe Experience Manager asset. Increments Click Events.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -53,7 +53,7 @@ Asset ID of an Adobe Experience Manager asset. Increments Click Events.
 
 The AMO ID dimension, used in Adobe Advertising integrations.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -61,7 +61,7 @@ The AMO ID dimension, used in Adobe Advertising integrations.
 
 The AMO EF ID dimension, used in Adobe Advertising integrations.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -75,7 +75,7 @@ A numeric ID that represents the browser. References the `browser.tsv` lookup ta
 
 The Browser Height dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -83,7 +83,7 @@ The Browser Height dimension.
 
 The Browser Width
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -91,7 +91,7 @@ The Browser Width
 
 The Tracking Code dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -105,7 +105,7 @@ Adobe Advertising integration variable. Specifies the mobile carrier. The key va
 
 The Site sections dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -125,7 +125,7 @@ Client hints collected through the User-Agent Client Hints JavaScript API.
 
 The Activity Map link dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -133,7 +133,7 @@ The Activity Map link dimension.
 
 The Activity Map link by region dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -141,7 +141,7 @@ The Activity Map link by region dimension.
 
 The Activity Map page dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -149,7 +149,7 @@ The Activity Map page dimension.
 
 The Activity Map region dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -175,7 +175,7 @@ Numeric ID representing the Connection type dimension. References the `connectio
 
 The Cookie support dimension.<br>Y: Enabled<br>N: Disabled<br>U: Unknown
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -191,7 +191,7 @@ The currency code that was used during the transaction. Set using `currencyCode`
 
 `xdm.commerce.order.currencyCode`
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -217,7 +217,7 @@ The exchange rate when the transaction occurred. Adobe partners with XE to deter
 
 Determines if the hit is a mobile background hit.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -225,7 +225,7 @@ Determines if the hit is a mobile background hit.
 
 Timestamp-enabled report suites only. The timestamp sent with the hit, based in UNIX&reg; time.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -233,7 +233,7 @@ Timestamp-enabled report suites only. The timestamp sent with the hit, based in 
 
 The custom visitor ID, if set using `visitorID`.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -295,7 +295,7 @@ A flag that determines if the purchase event for this hit is ignored because it 
 
 The EF ID, used in Adobe Advertising integrations.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -303,7 +303,7 @@ The EF ID, used in Adobe Advertising integrations.
 
 Custom variables 1-250. Used in eVar dimensions. Each organization uses eVars differently. The best place for more information on how your organization populates respective eVars would be a solution design document specific to your organization.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -318,7 +318,7 @@ This column likely maps to dozens of separate metrics, depending on your impleme
 1. Select the mapped component in the Data Views UI and note its component ID. If the component ID is too unwieldy, you can populate the data feed alias ID field and use that instead.
 1. Repeat for every metric that your organization uses.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -446,7 +446,7 @@ A lookup ID of JavaScript version, based on `j_jscript`. References the `javascr
 
 The Java enabled dimension. <br>Y: Enabled <br>N: Disabled <br>U: Unknown
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -508,7 +508,7 @@ Experience Cloud Visitor ID. 128-bit number consisting of two concatenated 64-bi
 
 List of Audience Manager segment IDs that the visitor belongs to. The `post_mc_audiences` column changes the delimiter to `--**--`.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -516,7 +516,7 @@ List of Audience Manager segment IDs that the visitor belongs to. The `post_mc_a
 
 Mobile action. Automatically collected when `trackAction` is called in mobile implementations. Allows for automatic action pathing in the app.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -526,7 +526,7 @@ Mobile app ID. Stores the application name and version in the following format: 
 
 `xdm.application.name` + `xdm.application.version`
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -576,7 +576,7 @@ Mobile Services beacon UUID
 
 The name or ID of the content that displayed the link. Populated by Mobile App Acquisition.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -584,7 +584,7 @@ The name or ID of the content that displayed the link. Populated by Mobile App A
 
 Marketing medium, such as banner or email. Populated by Mobile App Acquisition.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -592,7 +592,7 @@ Marketing medium, such as banner or email. Populated by Mobile App Acquisition.
 
 The name of the campaign, also stored in the campaign variable. Populated by Mobile App Acquisition.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -600,7 +600,7 @@ The name of the campaign, also stored in the campaign variable. Populated by Mob
 
 Original referrer, such as newsletter or social media network. Populated by Mobile App Acquisition.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -608,7 +608,7 @@ Original referrer, such as newsletter or social media network. Populated by Mobi
 
 Paid keywords or other terms you want to track with this acquisition. Populated by Mobile App Acquisition.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -616,7 +616,7 @@ Paid keywords or other terms you want to track with this acquisition. Populated 
 
 Number of the weekday that the app was launched on.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -624,7 +624,7 @@ Number of the weekday that the app was launched on.
 
 Number of days since the app was run for the first time.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -632,7 +632,7 @@ Number of days since the app was run for the first time.
 
 Number of days since the app was last run.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -646,7 +646,7 @@ Collected from the context data variable `a.deeplink.id`. Used in acquisition re
 
 Mobile device name. On iOS, it is stored as a comma-separated 2-digit string. The first number represents the device generation, and the second number represents the device family.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -654,7 +654,7 @@ Mobile device name. On iOS, it is stored as a comma-separated 2-digit string. Th
 
 Defines the hour of the day that the app was launched. Follows 24-hour numerical format.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -662,9 +662,9 @@ Defines the hour of the day that the app was launched. Follows 24-hour numerical
 
 Mobile install date. Provides the date of the first time that a user opens the mobile app.
 
-{{#cja-df-lookback}}
+{{cja-df-lookback}}
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -672,9 +672,9 @@ Mobile install date. Provides the date of the first time that a user opens the m
 
 Increments by one each time the mobile app is launched.
 
-{{#cja-df-lookback}}
+{{cja-df-lookback}}
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -682,7 +682,7 @@ Increments by one each time the mobile app is launched.
 
 Collected from the context data variable `a.message.button.id`. Used for in-app messaging to identify the button that closed the message.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -690,7 +690,7 @@ Collected from the context data variable `a.message.button.id`. Used for in-app 
 
 In-app Message ID
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -698,7 +698,7 @@ In-app Message ID
 
 In-app Message Online
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -706,7 +706,7 @@ In-app Message Online
 
 Collected from the context data variable `a.push.optin`. Set to "true" when the user opts in to push messaging; otherwise the value is "false".
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -714,7 +714,7 @@ Collected from the context data variable `a.push.optin`. Set to "true" when the 
 
 Collected from the context data variable `a.push.payloadid`. Used in push messaging as the payload identifier.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -722,7 +722,7 @@ Collected from the context data variable `a.push.payloadid`. Used in push messag
 
 Mobile Services operating system version
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -748,7 +748,7 @@ Collected from the context data variable `a.loc.id`. Identifier for a given poin
 
 Mobile Services Push opt-in
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -756,7 +756,7 @@ Mobile Services Push opt-in
 
 Mobile Services Push payload ID
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -794,7 +794,7 @@ Collected from the context data variable `a.launch.campaign.trackingcode`. Used 
 
 Resolution of the mobile device. `[Width] x [Height]` in pixels.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -813,7 +813,7 @@ A flag that determines if the visitor is unique to the current month.
 
 List variable values. Contains a delimited list of custom values depending on implementation. The `post_mvvar1` - `post_mvvar3` columns replace the original delimiter with `--**--`.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -821,7 +821,7 @@ List variable values. Contains a delimited list of custom values depending on im
 
 The list variable values that were set on the current hit. Replaces the original delimiter with `--**--`. The `post` columns typically do not contain data.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -841,7 +841,7 @@ A numeric ID that represents the operating system of the visitor. Based on the `
 
 The Page dimension. If the `pagename` variable is empty, Analytics uses `page_url` instead.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -849,7 +849,7 @@ The Page dimension. If the `pagename` variable is empty, Analytics uses `page_ur
 
 Similar to `pagename`, except it does not fall back to `page_url`. Only the `post` column is available.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -857,7 +857,7 @@ Similar to `pagename`, except it does not fall back to `page_url`. Only the `pos
 
 The type of hit that is sent in the image request (standard hit, download link, custom link, exit link). See Page event lookup.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -865,7 +865,7 @@ The type of hit that is sent in the image request (standard hit, download link, 
 
 Only used in link tracking image requests. The URL of the download link, exit link, or custom link clicked.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -873,7 +873,7 @@ Only used in link tracking image requests. The URL of the download link, exit li
 
 Only used in link tracking image requests. The custom name (if specified) of the link. Sets the Custom link, Download link, or Exit link depending on the value in `page_event`.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -881,7 +881,7 @@ Only used in link tracking image requests. The custom name (if specified) of the
 
 The Pages not found dimension, which is typically used for 404 pages.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -889,7 +889,7 @@ The Pages not found dimension, which is typically used for 404 pages.
 
 **`page_url`**: The URL of the hit. Uses a data type of text.<br>**`post_page_url`**: Stripped for link tracking image requests (`tl()`).
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -903,7 +903,7 @@ A flag that determines if the hit matches paid search detection.
 
 Used in the Persistent cookie support dimension. Indicates if the visitor supports cookies that are not discarded after each hit.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -911,7 +911,7 @@ Used in the Persistent cookie support dimension. Indicates if the visitor suppor
 
 Mobile Services point of interest name
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -919,7 +919,7 @@ Mobile Services point of interest name
 
 Mobile Services distance to point of interest center
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -927,7 +927,7 @@ Mobile Services distance to point of interest center
 
 The `products` page variable. Helps populate several dimensions and metrics, including Category, Product, Units, and Revenue.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -935,7 +935,7 @@ The `products` page variable. Helps populate several dimensions and metrics, inc
 
 Custom traffic variables 1-75. Used in Prop dimensions.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -945,7 +945,7 @@ Unique identifier for a purchase, as set using the `purchaseID` variable. Used b
 
 `xdm.commerce.order.purchaseID`
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -959,7 +959,7 @@ A flag that determines if the hit is a new quarterly visitor.
 
 The Referrer dimension. Note that while `referrer` uses a data type of varchar(255), `post_referrer` uses a data type of varchar(244).
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -986,7 +986,7 @@ A numeric ID that represents the resolution of the monitor. Used in the Monitor 
 
 A numeric ID that represents the search engine that referred the visitor to your site. Used in Search Engine dimensions. References the `search_engines.tsv` lookup table.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1018,7 +1018,7 @@ Not of use. Adobe internal server that processed the hit.
 
 Keyword ID used in Adobe Advertising integrations.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1032,7 +1032,7 @@ Raw screen resolution value. Gathered using the JavaScript function `screen.widt
 
 Used in Adobe Target integrations. Represents all tests currently qualified for. Format is: `TargetCampaignID:TargetRecipeID:TargetType\|Event/Action`.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1040,7 +1040,7 @@ Used in Adobe Target integrations. Represents all tests currently qualified for.
 
 Used in Adobe Target integrations. Represents all tests the hit qualified for.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1056,7 +1056,7 @@ A unique identifier where various data points can be uploaded later through data
 
 `xdm.commerce.order.payments[0].transactionID`
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1070,7 +1070,7 @@ A flag indicating that the image request was truncated (a partial hit was receiv
 
 Local time for the visitor. Format is: `M/D/YYYY HH:MM:SS Month (0-11, 0=January) Timezone offset (in minutes)`
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1102,7 +1102,7 @@ Not of use. Hash on the report suite ID. Use `username` instead.
 
 Used in the Server dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1146,7 +1146,7 @@ A flag that identifies Marketing Channel New engagements.
 
 The Content streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1154,7 +1154,7 @@ The Content streaming media services dimension.
 
 The Ad streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1162,7 +1162,7 @@ The Ad streaming media services dimension.
 
 The Ad in pod position streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1170,7 +1170,7 @@ The Ad in pod position streaming media services dimension.
 
 The Ad length (variable) streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1178,7 +1178,7 @@ The Ad length (variable) streaming media services dimension.
 
 The Ad name (variable) streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1186,7 +1186,7 @@ The Ad name (variable) streaming media services dimension.
 
 The Ad player name streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1194,7 +1194,7 @@ The Ad player name streaming media services dimension.
 
 The Ad pod streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1202,7 +1202,7 @@ The Ad pod streaming media services dimension.
 
 The Advertiser streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1246,7 +1246,7 @@ The Station streaming media services dimension.
 
 The Campaign ID streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1254,7 +1254,7 @@ The Campaign ID streaming media services dimension.
 
 The Content channel streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1262,7 +1262,7 @@ The Content channel streaming media services dimension.
 
 The Chapter streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1270,7 +1270,7 @@ The Chapter streaming media services dimension.
 
 The Content type streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1278,7 +1278,7 @@ The Content type streaming media services dimension.
 
 The Day part streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1286,7 +1286,7 @@ The Day part streaming media services dimension.
 
 The Episode streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1294,7 +1294,7 @@ The Episode streaming media services dimension.
 
 The Media feed type streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1302,7 +1302,7 @@ The Media feed type streaming media services dimension.
 
 The Genre streaming media services dimension. This dimension allows multiple values in the same hit, delimited by a comma.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1310,7 +1310,7 @@ The Genre streaming media services dimension. This dimension allows multiple val
 
 The Content length (variable) streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1318,7 +1318,7 @@ The Content length (variable) streaming media services dimension.
 
 The MVPD streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1326,7 +1326,7 @@ The MVPD streaming media services dimension.
 
 The Content name (variable) streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1334,7 +1334,7 @@ The Content name (variable) streaming media services dimension.
 
 The Network streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1342,7 +1342,7 @@ The Network streaming media services dimension.
 
 The Media path streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1350,7 +1350,7 @@ The Media path streaming media services dimension.
 
 The Content player name streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1358,7 +1358,7 @@ The Content player name streaming media services dimension.
 
 The Average bitrate streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1366,7 +1366,7 @@ The Average bitrate streaming media services dimension.
 
 The Bitrate changes streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1374,7 +1374,7 @@ The Bitrate changes streaming media services dimension.
 
 The Buffer events streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1382,7 +1382,7 @@ The Buffer events streaming media services dimension.
 
 The Total buffer duration streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1390,7 +1390,7 @@ The Total buffer duration streaming media services dimension.
 
 The Dropped frames streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1399,7 +1399,7 @@ The Dropped frames streaming media services dimension.
 The Errors streaming media services dimension.
 
 +++
-{{#cja-df-post}}
+{{cja-df-post}}
 
 
 +++**`videoqoeextneralerrors`**
@@ -1412,7 +1412,7 @@ The External error IDs streaming media services dimension. This dimension allows
 
 The Player SDK error IDs streaming media services dimension. This dimension allows multiple values in the same hit.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1420,7 +1420,7 @@ The Player SDK error IDs streaming media services dimension. This dimension allo
 
 The Time to start streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1428,7 +1428,7 @@ The Time to start streaming media services dimension.
 
 The Season streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1436,7 +1436,7 @@ The Season streaming media services dimension.
 
 The Content segment streaming media services imension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1444,7 +1444,7 @@ The Content segment streaming media services imension.
 
 The Media session ID streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1452,7 +1452,7 @@ The Media session ID streaming media services dimension.
 
 The Show streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1460,7 +1460,7 @@ The Show streaming media services dimension.
 
 The Show type streaming media services dimension.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1474,7 +1474,7 @@ The Stream type streaming media services dimension.
 
 Used with `visid_low` to uniquely identify a visitor.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1482,7 +1482,7 @@ Used with `visid_low` to uniquely identify a visitor.
 
 Used with `visid_high` to uniquely identify a visitor.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1502,7 +1502,7 @@ If a visitor ID is newly generated, provides the timestamp in UNIX&reg; time of 
 
 Not for external use; internally used by Adobe for processing optimizations. A numeric ID that represents the method used to identify the visitor.<br>`0`: Custom visitor ID or Unknown/not applicable<br>`1`: IP and user agent fallback <br>`2`: HTTP Mobile Subscriber Header <br>`3`: Legacy cookie value (`s_vi`) <br>`4`: Fallback cookie value (`s_fid`) <br>`5`: Identity Service
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1510,7 +1510,7 @@ Not for external use; internally used by Adobe for processing optimizations. A n
 
 The Search keyword dimension. This column uses a non-standard character limit of varchar(244) to accommodate back-end logic used by Adobe. The post-processed column is `**post_keywords**`, not `**post_visit_keywords**`.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
 
@@ -1584,6 +1584,6 @@ A flag that determines if the hit is a new yearly visitor.
 
 Helps populate the Zip code dimension. See also `geo_zip`.
 
-{{#cja-df-post}}
+{{cja-df-post}}
 
 +++
