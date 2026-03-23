@@ -419,6 +419,21 @@ To use the template, you have to specify the correct parameters for each functio
 
 +++
 
+
+### UTM Parameters Parse
+
+This function template extracts the value of specified UTM query parameters (e.g., `utm_source`, `utm_campaign`) from the selected URL field. Use this function to label and group events by campaign attribution for marketing reporting.
+
++++ Details
+
+{{select-package}}
+
+To use the template, you have to specify the parameters for each function listed as part of the rules in the template. Remove functions (for example [Parse URL](#url-parse)) or parameters in functions (for example for [Concatenate](#concatenate) and [Case When](#case-when)) for the UTM query parameters you do not use. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the UTM Parameters Parse rule builder](assets/function-template-utm-parameters-parse.png)
+
++++
+
 <!--
 
 +++ Data clean up template

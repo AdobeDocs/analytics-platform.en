@@ -60,7 +60,17 @@ The guided configuration wizard consists of four sections ([Details](#details), 
 >title="Details"
 >abstract="This guide sets up the requirements needed to configure Content Analytics. Please provide a name for this configuration"    
 
-The details section requires the following input:
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_connection_boldheader"
+>title="Connection"
+>abstract="**Connection**"    
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_connection_header"
+>title="Connection"
+>abstract="Select an existing connection from Customer Journey Analytics that you would like to merge your Content Analytics data with."    
+
+Each configuration requires a unique name. For example, `Example Content Analytics configuration`. The name is required to save or implement a configuration.
 
 ![Content Analytics configuration details](../assets/aca-configuration-details.png)
 
@@ -404,32 +414,32 @@ In this section, you configure how to collect your Content Analytics data.
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"
 >title="Mobile experience locations data collection"
->abstract="**Experience locations to include / exclude**"
+>abstract="**Experience locations to exclude**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_header"
 >title="Mobile experience locations data collection"
->abstract="Indicate which experience locations should be **included** or **excluded** when collecting data for Content Analytics."
+>abstract="Indicate which experience locations should be **excluded** when collecting data for Content Analytics."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
 >title="Mobile asset locations data collection"
->abstract="**Asset locations to include / exclude**"
+>abstract="**Asset locations to exclude**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_header"
 >title="Mobile asset locations data collection"
->abstract="Indicate which asset locations should be **included** or **excluded** when collecting data for Content Analytics."
+>abstract="Indicate which asset locations should be **excluded** when collecting data for Content Analytics."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
 >title="Mobile asset URLs data collection"
->abstract="**Asset URLs to include / exclude**"
+>abstract="**Asset URLs to exclude**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_header"
 >title="Mobile asset URLs data collection"
->abstract="Indicate which asset URLs should be **included** or **excluded** when collecting data for Content Analytics."
+>abstract="Indicate which asset URLs should be **excluded** when collecting data for Content Analytics."
 
 * Use an existing Tags property or create a new Tags property.
 

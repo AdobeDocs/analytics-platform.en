@@ -24,7 +24,7 @@ You can configure the following preferences:
 
 ### General preferences
 
-General preferences apply to your Customer Journey Analytics experience in the browser. For information about how to access these preferences, see [Update preferences](#update-preferences). 
+General preferences apply to your Customer Journey Analytics experience in the browser. For information about how to access these preferences, see [Edit preferences](#edit-preferences). 
 
 | Preference | Options |
 | --- | --- |
@@ -50,7 +50,7 @@ General preferences apply to your Customer Journey Analytics experience in the b
 >abstract="When enabled, a comments area is available in the right rail of each project in Analysis Workspace."
 
 
-You can update company preferences that apply to all users and projects within your organization. For information about how to access these preferences, see [Update preferences](#update-preferences). 
+You can update company preferences that apply to all users and projects within your organization. For information about how to access these preferences, see [Edit preferences](#edit-preferences). 
 
 | Section | Preference | Options |
 | --- | --- | --- |
@@ -80,7 +80,7 @@ You can update company preferences that apply to all users and projects within y
 >title="Sequential palette"
 >abstract="Applied to the Frequency trends (stacked bar) guided analysis. This palette holds a numeric meaning from light to dark."
 
-You can customize these preferences for all new Analysis Workspace projects, new Analysis Workspace panels, and new guided analyses. For information about how to access these preferences, see [Update preferences](#update-preferences). 
+You can customize these preferences for all new Analysis Workspace projects, new Analysis Workspace panels, and new guided analyses. For information about how to access these preferences, see [Edit preferences](#edit-preferences). 
 
 Some of these same preferences can also be customized for individual projects in Analysis Workspace, as described in [Project overview](/help/analysis-workspace/build-workspace-project/freeform-overview.md). 
 
@@ -126,7 +126,7 @@ Some of these same preferences can also be customized for individual projects in
 >abstract="Select the default metric to use for freeform tables. If the selected data view does not contain the selected default metric, the table automatically switches to another primary metric."
 
 
-You can customize freeform table preferences for all new projects that you create in Analysis Workspace. For information about how to access these preferences, see [Update preferences](#update-preferences). 
+You can customize freeform table preferences for all new projects that you create in Analysis Workspace. For information about how to access these preferences, see [Edit preferences](#edit-preferences). 
 
 Some of these same preferences can also be customized for individual tables.
 
@@ -179,7 +179,7 @@ Select the linked section titles for more information and context about the avai
 >abstract="Select the default container to use for [!UICONTROL Journey canvas] visualizations. If the selected data view does not contain the selected default container, the [!UICONTROL Journey canvas] visualization automatically switches to another primary container."
 
 
-You can update visualization preferences for all new prjects that you create in Analysis Workspace. For information about how to access these preferences, see [Update preferences](#update-preferences). 
+You can update visualization preferences for all new prjects that you create in Analysis Workspace. For information about how to access these preferences, see [Edit preferences](#edit-preferences). 
 
 Some of these same preferences can also be customized for individual visualizations. 
 
