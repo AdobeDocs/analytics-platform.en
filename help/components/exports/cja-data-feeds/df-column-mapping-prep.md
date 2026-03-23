@@ -18,7 +18,7 @@ However, mapping data feed columns from Adobe Analytics to Customer Journey Anal
 
 * **[Data processing](#data-processing)**: Fundamental data processing differences exist between Adobe Analytics and Customer Journey Analytics.
 
-* **[Unused fields](#unused-fields)**: Adobe Analytics contains more than 1,100 data feed fields. Identify which of these fields your organization uses so you can plan to map only the needed fields.
+* **[Unused columns](#unused-columns)**: Adobe Analytics contains more than 1,100 data feed columns. Identify which of these columns your organization uses so you can plan to map only the needed columns.
 
 Before you begin mapping Adobe Analytics data feed columns to Customer Journey Analytics data feed columns, review the sections below to better understand these key factors that affect mapping.
 
@@ -64,7 +64,7 @@ Because Adobe Analytics exports data for some fields in two separate columns (on
 
 **Customer Journey Analytics**: Fields are available for data feeds after they are created in the data view. Typically, fields in Customer Journey Analytics data views only include post-processed data. However, you can usually approximate the Adobe Analytics pre-processed version of a field by creating a second version of the field within the Customer Journey Analytics data view and configuring it to expire on hit.
 
-## Unused fields
+## Unused columns
 
 There are over 1,100 data feed columns available to be exported in Adobe Analytics. Of those columns, not all will be used in your Customer Journey Analytics data feeds.
 
