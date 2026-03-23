@@ -22,7 +22,7 @@ However, mapping data feed columns from Adobe Analytics to Customer Journey Anal
 
 Before you begin mapping Adobe Analytics data feed columns to Customer Journey Analytics data feed columns, review the sections below to better understand these key factors that affect mapping.
 
-After you review this information, follow the mapping instructions for each Adobe Analytics data feed column that you plan to keep in Customer Journey Analytics, as described in [Data column reference](/help/components/exports/cja-data-feeds/c-df-contents/datafeeds-reference.md).
+After you review this information, follow the mapping instructions for each Adobe Analytics data feed column that you plan to keep in Customer Journey Analytics, as described in [Data column reference](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md).
 
 ## Schema architecture
 
@@ -36,7 +36,7 @@ Consider the following points about schema architecture:
 
 * Fields are eligible for inclusion in a Customer Journey Analytics data feed only after they are included in the XDM schema in Experience Platform, then curated for use within the data view in Customer Journey Analytics. 
 
-  For detailed information about this process for each potential Adobe Analytics data feed column, see [Data column reference](/help/components/exports/cja-data-feeds/c-df-contents/datafeeds-reference.md).
+  For detailed information about this process for each potential Adobe Analytics data feed column, see [Data column reference](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md).
 
 >[!TIP]
 >
