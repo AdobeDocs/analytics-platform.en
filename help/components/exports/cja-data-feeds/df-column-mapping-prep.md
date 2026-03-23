@@ -50,7 +50,7 @@ The number of fields that are available to map to in your Customer Journey Analy
 
 * **New Web SDK implementations**: If your Customer Journey Analytics implementation uses a custom schema, many columns that exist in Adobe Analytics data feeds likely do not exist in Customer Journey Analytics. Likewise, Customer Journey Analytics may contain fields that don't exist in Adobe Analytics data feeds. 
 
-* **Analytics Source Connector implementations**: One-to-one field mappings exist by default for many data feed columns because the Analytics Source Connector uses the Analytics Experience Event field group in the XDM schema. For information about which Adobe Analytics fields map to fields in this field group, see [Add link to existing ADC mapping page]().<!--add link to existing mapping page-->
+* **Analytics Source Connector implementations**: One-to-one field mappings exist by default for many data feed columns because the Analytics Source Connector uses the Analytics Experience Event field group in the XDM schema. For information about which Adobe Analytics fields map to fields in this field group, see [Analytics field mappings](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics) in the Exprience Platform documentation.
 
 <!-- **Data layer**: ??? -->
 
