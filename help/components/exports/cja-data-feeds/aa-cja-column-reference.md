@@ -1,6 +1,7 @@
 ---
 title: Map Adobe Analytics data feed columns to Customer Journey Analytics
 description: Determine how to take a given Adobe Analytics data feed column and determine its rough equivalent in your Customer Journey Analytics implementation.
+feature: Components
 hide: yes
 hidefromtoc: yes
 ---

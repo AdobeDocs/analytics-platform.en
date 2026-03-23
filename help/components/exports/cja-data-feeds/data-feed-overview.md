@@ -2,7 +2,7 @@
 description: Learn how to use data feeds to get raw data out of Customer Journey Analytics. Find out the prerequisites for using data feeds what to do next.
 keywords: clickstream;data feed;datafeed;Data Feed
 title: Analytics Data Feed Overview
-feature: Data Feeds
+feature: Components
 hide: yes
 hidefromtoc: yes
 ---

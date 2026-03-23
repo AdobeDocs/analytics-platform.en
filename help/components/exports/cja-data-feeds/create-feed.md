@@ -1,7 +1,7 @@
 ---
 title: Create a Data Feed
 description: Learn how to create a data feed and about the file information to provide to Adobe.
-feature: Data Feeds
+feature: Components
 hide: yes
 hidefromtoc: yes
 ---

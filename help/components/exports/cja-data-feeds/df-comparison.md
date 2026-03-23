@@ -2,7 +2,7 @@
 description: Learn how to Compare data feeds functionality in Customer Journey Analytics and Adobe Analytics
 keywords: clickstream;data feed;datafeed;Data Feed
 title: Compare Data Feeds Functionality in Customer Journey Analytics and Adobe Analytics
-feature: Data Feeds
+feature: Components
 hide: yes
 hidefromtoc: yes
 ---
