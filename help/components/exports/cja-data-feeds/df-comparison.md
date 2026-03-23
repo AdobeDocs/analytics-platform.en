@@ -5,6 +5,7 @@ title: Compare Data Feeds Functionality in Customer Journey Analytics and Adobe 
 feature: Components
 hide: yes
 hidefromtoc: yes
+exl-id: 32b71016-7c53-409f-9ce4-521a40e2eb96
 ---
 # Compare data feeds in Customer Journey Analytics and Adobe Analytics
 
@@ -37,5 +38,4 @@ Data feeds in both Customer Journey Analytics and Adobe Analytics allow you to e
 
 ![Data feed data processing](assets/data-feeds-data-processing.png)
 
-Diagram on the AA side needs to show that it needs to be received in order per visitor. 
-
+Diagram on the AA side needs to show that it needs to be received in order per visitor.

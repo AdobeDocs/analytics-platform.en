@@ -4,6 +4,7 @@ description: Determine how to take a given Adobe Analytics data feed column and 
 feature: Components
 hide: yes
 hidefromtoc: yes
+exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
 ---
 # Map Adobe Analytics data feed columns to Customer Journey Analytics
 
