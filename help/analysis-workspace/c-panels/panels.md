@@ -233,7 +233,7 @@ For any *dimension* component that you drop **while you hold** ⇧, a segment dr
 
 #### Segments versus breakdowns
 
-Consider to break down a panel instead of filter a panel (using segments) in the following scenarios:
+Consider to break down a panel instead of to filter a panel (using segments) in the following scenarios:
 
 * If you are using attribution-enabled metrics within your panel, segments often clear out your attribution-enabled metrics. Breakdowns are applied at a different point within the query that is executed to retrieve the data for your panel. As a result, breakdowns do not clear out these attribute-enabled metrics.
 
