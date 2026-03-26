@@ -140,53 +140,147 @@ The panel calendar controls the reporting date range for tables and visualizatio
 
 ## Drop zone {#dropzone}
 
-The panel drop zone enables you to apply segments and drop-down segments to all tables and visualizations within a panel. You can apply one or many segments to a panel. 
+The panel drop zone, labeled **[!UICONTROL _Drop a component to filter or break down the data_]**,  enables you to filter or break down the data and all associated freeform tables and visualizations within the panel. 
 
-### Segments
+Segments and breakdowns allow you to interact with the data in a controlled way. For example, you can add a segment drop-down menu for Mobile Device Types so that you can filter the panel by selecting Tablet, Mobile Phone, or Desktop.
 
-Drag and drop any segments from the left panel into the panel drop zone to begin segmenting your panel. Repeat this process to add additional segments to the panel. Segments appear side by side at the top of the panel.
+Segments can also be used to consolidate many projects into one. For example, if you have different versions of the same project with each a different Country segments applied, you can consolidate all versions into a single project and add a Country segment drop-down menu.
 
-![The left panel shows available Metrics and the Mobile Customer metric dragged to the panel drop zone.](assets/segment-filter.png)
+The illustration below shows the different variations of (quick) segments or breakdowns that result when you add components to the drop zone.
 
-#### Quick segments 
+![Drop zone for a panel](assets/panel-drop-zone.png)
 
-Non-segment components can also be dragged directly into the drop zone to create quick segments, saving you the time and effort of going to the [Segment builder](/help/components/segments/seg-builder.md). Segments created in this way are automatically defined as event-level segments. This definition can be quickly modified by selecting ![Edit](/help/assets/icons/Edit.svg) next to the segment name. 
+### Add or replace
+
+To add or replace (quick) segments or breakdowns:
+
+1. Select one or more components from the Components rail. Use ⇧+![Select](/help/assets/icons/Select.svg) or ^+![Select](/help/assets/icons/Select.svg) to select more than one component.
+1. Drag the selection to the drop zone, labeled **[!UICONTROL _Drop a component to filter or break down the data_]** ❶, or over an existing component already placed nearby the drop zone.
+1. You have two options when you see ![Add](/help/assets/icons/Add.svg) **[!UICONTROL Add (press "shift" to create dropdown)]** or ![Switch](/help/assets/icons/Switch.svg) **[!UICONTROL Replace (press "shift" to add to dropdown)]**:
+
+   ![Add or replace to drop zone](assets/add-or-replace-to-drop-zone.png)
+
+   * Drop the selection. This will create the following components:
+      * [Segment](#segment) for any segment component that you drop ❷.
+      * [Quick segment](#quick-segment) for any non-segment component (date range, metric, dimension, dimension item) that you drop ❸. 
+   * Drop the selection **while you hold** ⇧ (shift). This will create the following components:
+     * Static [segment drop-down menu](#segment-or-breakdown-drop-down-menu) with items to filter on for any segments that you drop ❹.
+     * Static [segment drop-down menu](#segment-or-breakdown-drop-down-menu) with items to filter on for any selected date ranges that you drop ❺.
+     * Static [segment drop-down menu](#segment-or-breakdown-drop-down-menu) with items to filter on for any selected metrics that you drop ❻.
+     * Static [segment or breakdown drop-down menu](#segment-or-breakdown-drop-down-menu) with items to filter or break down on for any selected dimension *items* that you drop ❼.
+     * Dynamic [segment or breakdown drop-down menu](#segment-or-breakdown-drop-down-menu) with items to filter or break down on for any selected dimension that you drop ❽.
 
 
-For more information, see [Quick segments](/help/components/segments/seg-quick.md).
 
-![Ad hoc segments that are made public and dropped into the drop zone](assets/adhoc-segment-filter.png)
 
-### Drop-down segments
+### Segment
+
+Any segment component that you drop is used to segment the panel. Use segments to quicky gain segmented insights into the data and visualizations of your panel.
+
+### Quick segment
+
+Any non-segment component (dimension, dimension item, metric, date range) that you drop defines a [quick segment](#quick-segment) to segment the panel. Use any non-segment component to create a quick segment without using the [Segment builder](/help/components/segments/seg-builder.md). A segment that is created in this way is automatically defined as an event-level segment and labeled **[!UICONTROL Quick segment]** by default.
+
+Alternatively, you can use ![FilterAdd](/help/assets/icons/FilterAdd.svg) to create a quick segment.
+
+See [Quick segments](/help/components/segments/seg-quick.md) how to create and manage quick segments 
+
+
+### Drop-down menu
+
+A drop-down menu that is created while you hold ⇧ can:
+
+* contain a [static](#static) or [dynamic](#dynamic) list of items.
+* behave to [filter a panel]((#filter)) or to [breakdown a panel]((#breakdown).
+
+
+#### Static
+
+Static drop-down menus are created for selected dimension *items*, metrics, segments, and date ranges. The items in a static drop-down menu are based on the selected components you drop and the items do not change when you add or replace components.
+
+
+#### Dynamic
+
+Dynamic drop-down menus are created only when you drop dimensions components. Dynamic drop-down menus are indicated with ![FilterRefresh](/help/assets/icons/FilterRefresh.svg) as part of the label.
+
+The available items in a dynamic drop-down menu are based on the data available within the panel's reporting range and selected items in other drop-down menus, segments and quick segments within the panel drop zone. For example, you can add two dynamic drop-down menu using a countries dimension and a cities dimension. When you select a country from the **[!UICONTROL Countries]** drop-down menu, the **[!UICONTROL Cities]** drop-down menu dynamically adjusts to show only cities within the selected country. When you have additional static drop-down menus, items selected in those drop-down menus also affect the available items in the dynamic drop-down menus. Items that are selected in dynamic drop-down menus do not affect available items in static drop-down menus.
+
+
+#### Filter a panel
+
+For any metric, segment, or date range component that your drop **while you hold** ⇧, a segment drop-down menu is created. That drop-down menu allows you to filter the panel based on items available for the dropped component. 
+
+For any *dimension* component that you drop **while you hold** ⇧, a segment drop-down menu is created. That drop-down menu allows you to filter the panel based on the items available for the dropped dimension items ([static](#static) segment drop-down menu) or dimension component ([dynamic](#dynamic) segment drop-down menu). To explicitly configure the drop-down menu to filter using segments:
+
+* Select ![Breakdown](/help/assets/icons/Breakdown.svg) and select ![Filter](/help/assets/icons/Filter.svg) from the context menu for the component ❾. 
+
+
+#### Breakdown a panel
+
+For any dimension component that you drop **while you hold** ⇧, a drop-down menu is created. That drop-down menu allows you to break down the panel based on the items available for that component. To break down on the dimension:
+
+* Select ![Filter](/help/assets/icons/Filter.svg) and select the ![Breakdown](/help/assets/icons/Breakdown.svg) from the context menu for the component ❾. 
+
+>[!IMPORTANT]
+>
+>Breakdowns are only available for dimensions and dimension items, not for segments, date ranges, or metrics.
+>
+
+
+
+#### Segments versus breakdowns
+
+Consider to break down a panel instead of filter a panel (using segments) in the following scenarios:
+
+* If you are using attribution-enabled metrics within your panel, segments often clear out your attribution-enabled metrics. Breakdowns are applied at a different point within the query that is executed to retrieve the data for your panel. As a result, breakdowns do not clear out these attribute-enabled metrics.
+
+  As an example, see the difference between the attribute based **[!UICONTROL Online Revenue]** metric when using a **[!UICONTROL Luma: Product Category]** ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Women]** segment versus a **[!UICONTROL Luma: Product Category]** ![Breakdown](/help/assets/icons/Breakdown.svg) **[!UICONTROL Women]** breakdown.
+
+  ![Attribute based metrics: filter versus breakdown](assets/attribute-filter-breakdown.png)
+
+* If you are using a dimension within the panel drop zone that is at the sub-event level (is in an array or object array), breakdowns execute at the sub-event level instead of at the event level. 
+  
+  As an example, see the difference between the **[!UICONTROL Online Revenue]** metric when using a **[!UICONTROL Luma: Product Subcategory]** ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Tops]** segment versus a **[!UICONTROL Luma: Product Subcategory]** ![Breakdown](/help/assets/icons/Breakdown.svg) **[!UICONTROL Tops]** breakdown. The breakdown executes the query explicitly at the sub-event level, while the segment executes the query at the event level.
+
+  ![Sub-event based metrics: filter versus breakdown](assets/sub-event-filter-breakdown.png)
+
+### Manage
+
+You can manage the components in the drop zone as follows:
+
+| What to do in the panel drop zone... | How to do... |
+|---|---|
+| To remove a segment or quick segment. | Select ![CrossSize300](/help/assets/icons/CrossSize300.svg) within the component. |
+| To remove a selected item from a drop-down menu. | Select ![CrossSize100](/help/assets/icons/CrossSize100.svg) within the item. |
+| To remove all selected items from a drop-down menu. | Select ![CrossSize200](/help/assets/icons/CrossSize200.svg) within the drop-down menu. |
+| To edit the label of any component. | Hover over the label for the component and select ![Edit](/help/assets/icons/Edit.svg). |
+| To delete the label of any component. | Hover over the label for the component and select **[!UICONTROL Delete label]** from the context menu for the component. |
+| To delete the component from the drop zone. | Select **[!UICONTROL Delete drop-down]** from the context menu for the component. |
+| To get info on a segment or quick segment. | Hover inside the component and select ![Info](/help/assets/icons/Info.svg) to open the Data Dictionary with info on the component. |
+| To get info on the drop-down menu. | Hover inside the drop-down menu and select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to open the Data Dictionary with info on the component. |
+| To edit a quick segment. | Hover inside the quick segment and select ![Edit](/help/assets/icons/Edit.svg). See [Quick segments](/help/components/segments/seg-quick.md) for more details. |
+| To require a selection for a drop-down menu. | Select **[!UICONTROL Require selection]** from the context menu forf the component. |
+| To allow no filter for a drop-down menu. | Select **[!UICONTROL Allow no filter]** from the context menu for the component. |
+| To reset all components and clear all selections for drop-down menus. | Select **[!UICONTROL Reset all]**. |
+
+
 
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Drop down segments](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Using filters in Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} for a demo video.
 
 {{videoaa}}
 
 >[!ENDSHADEBOX]
 
+>[!BEGINSHADEBOX]
 
-#### Static drop-down segments
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dynamic drop down filters](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} for a demo video.
 
-Static drop-down segments enable you to interact with the data in a controlled way. For example, you can add a drop-down segment for Mobile Device Types so that you can segment the panel by Tablet, Mobile Phone, or Desktop.
+>[!ENDSHADEBOX]
 
-Static drop-down segments can also be used to consolidate many projects into one. For example, if you have many versions of the same project with different Country segments applied, you can consolidate all versions into a single project and add a Country drop-down segment.
 
-![Static drop-down segments showing the Market Channel "Direct" segment highlighted. ](assets/dropdown-filter-intro.png)
-
-##### Create static drop-down segments
-
-* For drop-down segments using dimension items, select a single dimension from the left panel and drop the dimension into the panel drop zone while holding ⇧ (*shift*). This action creates a drop-down segment with all the dimension items that are associated with that dimension. 
-
-  Or, if you want the drop-down segment to include only specific dimension items that are associated with a dimension, select the right arrow icon next to the desired dimension in the left panel. This action exposes all available dimension items. Select multiple dimension items from this list using ⇧+![Select](/help/assets/icons/Select.svg) (*shift* + *select*) or ^+![Select](/help/assets/icons/Select.svg) (*control* + *select*), then drop them into the panel drop zone **while holding** ⇧.
-
-* For drop-down segments using a single component type (for example, only dimensions, or only segments, or only metrics), select multiple items of the same type in the left panel using ⇧+![Select](/help/assets/icons/Select.svg) or ^+![Select](/help/assets/icons/Select.svg). Then drop the items into the panel drop zone **while holding** ⇧.
-
-  A single drop-down segment is created with components that you selected.
-
-* For drop-down segments using a mix of component types (such as 2 metrics and 3 segments), select multiple components using ⇧+![Select](/help/assets/icons/Select.svg) or ^+![Select](/help/assets/icons/Select.svg). Drop the selection into the panel drop zone **while holding** ⇧. In this context, all component types are treated as separate drop-down segments. For example, if you include both metrics and dimension items in your selection, two separate drop-down segments are created: one drop-down segment includes dimension items, and the other includes metrics.
+### Context menu
 
 A drop-down segment provides the following context menu options:
 
@@ -194,38 +288,6 @@ A drop-down segment provides the following context menu options:
 * **[!UICONTROL Delete label]**: Remove the text displayed above a drop-down segment. To modify the label, hover over the label and select ![Edit label of drop-down segment](/help/assets/icons/Edit.svg).
 * **[!UICONTROL Add label]**: When you add a drop-down segment to a project, a label is automatically set to the component name. If you delete the label, you can add it again with this option.
 * **[!UICONTROL Require selection]**: Requires that a segment is set on the panel. 
-
-##### Use static drop-down segments
-
-Users can use the drop-down segment menu in any of the following ways to segment the panel:
-     
-* Apply a single segment to the panel by selecting the segment from the drop-down segment.
-
-* Apply multiple segments to the panel by selecting more than one segment from the drop-down segment. The panel is segmented to include any of the selected segments. 
-
-
-#### Dynamic drop-down segments
-
-Dynamic drop-down segments allow you to determine available values based on data within the panel's reporting range and values in other drop-down segments. For example, you can create two dynamic drop-downs using a Countries dimension and a Cities dimension. When you select a country from the **[!UICONTROL Countries]** drop-down menu, the **[!UICONTROL Cities]** drop-down menu dynamically adjusts to show only cities within that country.
-
-This same concept applies to all dimensions; only dimension items that appear within the panel's date range and selected segments are visible. Dimension items selected in static drop-down segments affect available values in dynamic drop-down segments. However, the inverse is not true; Dimension items selected in dynamic drop-down segments do not affect available values in static drop-down segments.
-
-Manual selection of dimension items is available if you anticipate a certain dimension item to be collected in the future. You can also clear a dynamic drop-down segment so that it does not contain a value, allowing other dynamic drop-down segments to contain more values. Select **[!UICONTROL Reset all]** to clear the selection from all drop-down segments for that panel.
-
-To create a dynamic drop-down segment:
-
-* Drag and drop a single dimension into the panel drop zone **while holding** ⇧.
-
-Note that Dynamic drop-down segments are not available for metrics, segments, or date ranges.
-
-A dynamic drop-down segment provides the same context menu options as static drop-down segments.
-
->[!BEGINSHADEBOX]
-
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dynamic drop down segments](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} for a demo video.
-
->[!ENDSHADEBOX]
-
 
 ## Context menu
 
