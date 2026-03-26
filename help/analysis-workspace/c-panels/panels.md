@@ -1,6 +1,6 @@
 ---
-description: Understand panels and how to use panels in Analysis Workspace.
-title: Panels Overview
+description: Learn how to use panels in Analysis Workspace to organize your reports, including the use of drop zones to filter or break down data, and the use of calendars to define the range of data.
+title: Overview Of Panels In Analysis Workspace
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
@@ -21,7 +21,7 @@ The following panel types are available in Analysis Workspace for [!UICONTROL Cu
 | [Freeform](freeform-panel.md) | Perform unlimited comparisons and breakdowns, then add visualizations to tell a rich data story. |
 | [Media average minute audience](average-minute-audience-panel.md) | Analyze the average minute audience for a specific piece of content, or over a customized time period. |
 | [Media concurrent viewers](media-concurrent-viewers.md) | Analyze concurrent viewers over time, with details on peak concurrency and the ability to break down and compare. |
-| [Media playback time spent](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analyze playback time spent to understand where peak concurrencies occur or where drop-oﬀs happen. |
+| [Media playback time spent](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analyze playback time spent to understand where peak concurrency occur or where drop-oﬀs happen. |
 | [Next or previous item](next-previous.md) | Show the next or previous pages people go to. |
 | [Quick insights](quickinsight.md) | Quickly build a freeform table and an accompanying visualization to analyze and uncover insights faster. |
 
@@ -164,13 +164,11 @@ To add or replace (quick) segments or breakdowns:
       * [Segment](#segment) for any segment component that you drop ❷.
       * [Quick segment](#quick-segment) for any non-segment component (date range, metric, dimension, dimension item) that you drop ❸. 
    * Drop the selection **while you hold** ⇧ (shift) to create the following components:
-     * Static [segment drop-down menu](#segment-or-breakdown-drop-down-menu) with items to filter on for any segments that you drop ❹.
-     * Static [segment drop-down menu](#segment-or-breakdown-drop-down-menu) with items to filter on for any selected date ranges that you drop ❺.
-     * Static [segment drop-down menu](#segment-or-breakdown-drop-down-menu) with items to filter on for any selected metrics that you drop ❻.
-     * Static [segment or breakdown drop-down menu](#segment-or-breakdown-drop-down-menu) with items to filter or break down on for any selected dimension *items* that you drop ❼.
-     * Dynamic [segment or breakdown drop-down menu](#segment-or-breakdown-drop-down-menu) with items to filter or break down on for any selected dimension that you drop ❽.
-
-
+     * Static [segment drop-down menu](#drop-down-menu) with items to filter on for any segments that you drop ❹.
+     * Static [segment drop-down menu](#drop-down-menu) with items to filter on for any selected date ranges that you drop ❺.
+     * Static [segment drop-down menu](#drop-down-menu) with items to filter on for any selected metrics that you drop ❻.
+     * Static [segment or breakdown drop-down menu](#drop-down-menu) with items to filter or break down on for any selected dimension *items* that you drop ❼.
+     * Dynamic [segment or breakdown drop-down menu](#drop-down-menu) with items to filter or break down on for any selected dimension that you drop ❽.
 
 
 ### Segment
@@ -183,7 +181,7 @@ Any non-segment component (dimension, dimension item, metric, date range) that i
 
 Alternatively, you can use ![FilterAdd](/help/assets/icons/FilterAdd.svg) to create a quick segment.
 
-See [Quick segments](/help/components/segments/seg-quick.md) how to create and manage quick segments 
+See [Quick segments](/help/components/segments/seg-quick.md) for how to create and manage quick segments 
 
 
 ### Drop-down menu
@@ -213,7 +211,7 @@ For example, you can add two dynamic drop-down menu using a countries dimension 
 
 #### Filter a panel
 
-For any metric, segment, or date range component that your drop **while you hold** ⇧, a segment drop-down menu is created. That drop-down menu allows you to filter the panel based on items available for the dropped component. 
+For any metric, segment, or date range component that you drop **while you hold** ⇧, a segment drop-down menu is created. That drop-down menu allows you to filter the panel based on items available for the dropped component. 
 
 For any *dimension* component that you drop **while you hold** ⇧, a segment drop-down menu is created. That drop-down menu allows you to filter the panel based on the items available for the dropped dimension items ([static](#static) segment drop-down menu) or dimension component ([dynamic](#dynamic) segment drop-down menu). To configure the drop-down menu explicitly to filter using segments:
 
@@ -284,15 +282,6 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dynamic drop dow
 
 >[!ENDSHADEBOX]
 
-
-### Context menu
-
-A drop-down segment provides the following context menu options:
-
-* **[!UICONTROL Delete drop-down]**: Removes the drop-down segment from the panel. 
-* **[!UICONTROL Delete label]**: Remove the text displayed above a drop-down segment. To modify the label, hover over the label and select ![Edit label of drop-down segment](/help/assets/icons/Edit.svg).
-* **[!UICONTROL Add label]**: When you add a drop-down segment to a project, a label is automatically set to the component name. If you delete the label, you can add it again with this option.
-* **[!UICONTROL Require selection]**: Requires that a segment is set on the panel. 
 
 ## Context menu
 
