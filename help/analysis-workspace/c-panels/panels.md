@@ -191,7 +191,7 @@ See [Quick segments](/help/components/segments/seg-quick.md) how to create and m
 A drop-down menu that is created while you hold ⇧ can:
 
 * contain a [static](#static) or [dynamic](#dynamic) list of items.
-* behave to [filter a panel]((#filter)) or to [break down a panel]((#breakdown).
+* behave to [filter a panel](#filter) or to [break down a panel](#breakdown).
 
 
 #### Static
