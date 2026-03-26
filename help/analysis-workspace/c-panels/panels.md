@@ -164,11 +164,11 @@ To add or replace (quick) segments or breakdowns:
       * [Segment](#segment) for any segment component that you drop ❷.
       * [Quick segment](#quick-segment) for any non-segment component (date range, metric, dimension, dimension item) that you drop ❸. 
    * Drop the selection **while you hold** ⇧ (shift) to create the following components:
-     * Static [segment drop-down menu](#drop-down-menu) with items to filter on for any segments that you drop ❹.
-     * Static [segment drop-down menu](#drop-down-menu) with items to filter on for any selected date ranges that you drop ❺.
-     * Static [segment drop-down menu](#drop-down-menu) with items to filter on for any selected metrics that you drop ❻.
-     * Static [segment or breakdown drop-down menu](#drop-down-menu) with items to filter or break down on for any selected dimension *items* that you drop ❼.
-     * Dynamic [segment or breakdown drop-down menu](#drop-down-menu) with items to filter or break down on for any selected dimension that you drop ❽.
+     * Static segment [drop-down menu](#drop-down-menu) with items to filter on for any segments that you drop ❹.
+     * Static segment [drop-down menu](#drop-down-menu) with items to filter on for any selected date ranges that you drop ❺.
+     * Static segment [drop-down menu](#drop-down-menu) with items to filter on for any selected metrics that you drop ❻.
+     * Static segment [drop-down menu](#drop-down-menu) or breakdown [drop-down menu](#drop-down-menu) with items to filter on or break down on for any selected dimension *items* that you drop ❼.
+     * Dynamic segment [drop-down menu](#drop-down-menu) or breakdown [drop-down menu](#drop-down-menu) with items to filter on or break down on for any selected dimension that you drop ❽.
 
 
 ### Segment
