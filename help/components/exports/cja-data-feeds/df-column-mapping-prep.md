@@ -9,11 +9,11 @@ exl-id: d0a9e697-1e48-4cfb-8613-2f932bf5015b
 ---
 # Prepare to map data feed columns from Adobe Analytics to Customer Journey Analytics
 
-Customer Journey Analytics provides a more flexible architecture than Adobe Analytics for determining the columns that are available to include in a data feed. Most organizations should expect to export different data feed columns from Customer Journey Analytics than they exported from Adobe Analytics. This is due to the following factors:
+Customer Journey Analytics provides a more flexible architecture than Adobe Analytics for determining the columns that are available to include in a data feed. Most organizations should expect to export different data feed columns from Customer Journey Analytics than they exported from Adobe Analytics. These differences are due to the following factors:
 
 * **[Schema architecture](#schema-architecture)**: Adobe Analytics data feed columns are derived from Analytics variables, while Customer Journey Analytics data feed columns are derived from the data view schema.
 
-* **[Data processing](#data-processing)**: Fundamental data processing differences exist between Adobe Analytics and Customer Journey Analytics, especially the existence of pre- and post-processed columns for many Adobe Analytics columns.
+* **[Data processing](#data-processing)**: Fundamental data processing differences exist between Adobe Analytics and Customer Journey Analytics, especially the existence of both pre- and post-processed columns for many Adobe Analytics columns.
 
 * **[Unused columns](#unused-columns)**: Adobe Analytics contains more than 1,100 data feed columns. Most organizations do not use the data from all columns that are being exported. 
 
@@ -46,7 +46,7 @@ Components are included in the data view schema in either of the ways described 
 
 ## Data processing
 
-Data processing differs between Adobe Analytics and Customer Journey Analytics, as follows:
+Data processing differences between Adobe Analytics and Customer Journey Analytics affects which data feed columns are available to export, as follows:
 
 * **Adobe Analytics**: Many data feed fields are exported as two separate columns: one containing pre-processed data and another containing post-processed data. (Post-processed data includes server-side logic, processing rules, VISTA rules, dimension persistence rules, and so forth.)
 
@@ -58,13 +58,13 @@ Data processing differs between Adobe Analytics and Customer Journey Analytics, 
 
 There are over 1,100 data feed columns available to be exported in Adobe Analytics. Of those columns, not all will be used in your Customer Journey Analytics data feeds. This discrepancy is not an indication that your Customer Journey Analytics data feed columns are insufficient. 
 
-Identify which of these columns your organization uses in Adobe Analytics data feeds. Doing so will inform which columns are needed in Customer Journey Analytics data feeds. To determine which columns to use:
+Identify which of the Adobe Analytics data feed columns your organization uses. Doing so will inform which columns are needed in your Customer Journey Analytics data feeds. To determine which columns to use:
 
 * **Identify fields that apply only to Adobe Analytics**: Certain columns in Adobe Analytics data feeds are specific to the data processing engine for Adobe Analytics, and therefore don't apply to Customer Journey Analytics. Examples of such columns are `exclude_hit` and `hit_source`. 
 
 * **Identify fields that apply to your organization**: While not all Adobe Analytics customers export all of the available columns, many customers export more than they actually use. 
 
-  Before you begin exporting data feeds from Customer Journey Analytics, you should first determine which Adobe Analytics data feed columns your organization currently uses, then ensure those components exist in your Customer Journey Analytics data view schema. To gather this information, contact the teams or individuals who consume data feed content for Adobe Analytics.
+  Before you begin exporting data feeds from Customer Journey Analytics, you should first determine which Adobe Analytics data feed columns your organization currently uses, then ensure those components exist in your Customer Journey Analytics data view schema. To gather this information, contact the teams or individuals throughout your organization who consume data feed content for Adobe Analytics.
 
 ## Cross-channel columns
 
