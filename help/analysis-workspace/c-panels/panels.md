@@ -144,7 +144,7 @@ The panel drop zone, labeled **[!UICONTROL _Drop a component to filter or break 
 
 Segments and breakdowns allow you to interact with the data in a controlled way. For example, you can add a segment drop-down menu for Mobile Device Types so that you can filter the panel by selecting Tablet, Mobile Phone, or Desktop.
 
-Segments can also be used to consolidate many projects into one. For example, if you have different versions of the same project with each a different Country segments applied, you can consolidate all versions into a single project and add a Country segment drop-down menu.
+Segments can also be used to consolidate many projects into one. For example, if you have different versions of the same project with each a different country segment applied, you can consolidate all versions into a single project and add a Country segment drop-down menu.
 
 The illustration below shows the different variations of (quick) segments or breakdowns that result when you add components to the drop zone.
 
@@ -161,14 +161,14 @@ To add or replace (quick) segments or breakdowns:
    ![Add or replace to drop zone](assets/add-or-replace-to-drop-zone.png)
 
    * Drop the selection to create the following components:
-      * [Segment](#segment) for any segment component that you drop ❷.
-      * [Quick segment](#quick-segment) for any non-segment component (date range, metric, dimension, dimension item) that you drop ❸. 
+      * [Segment](#segment) for any segment components that you drop ❷.
+      * [Quick segment](#quick-segment) for any non-segment components (date ranges, metrics, dimensions, dimension items) that you drop ❸. 
    * Drop the selection **while you hold** ⇧ (shift) to create the following components:
-     * Static segment [drop-down menu](#drop-down-menu) with items to filter on for any segments that you drop ❹.
-     * Static segment [drop-down menu](#drop-down-menu) with items to filter on for any selected date ranges that you drop ❺.
-     * Static segment [drop-down menu](#drop-down-menu) with items to filter on for any selected metrics that you drop ❻.
-     * Static segment [drop-down menu](#drop-down-menu) or breakdown [drop-down menu](#drop-down-menu) with items to filter on or break down on for any selected dimension *items* that you drop ❼.
-     * Dynamic segment [drop-down menu](#drop-down-menu) or breakdown [drop-down menu](#drop-down-menu) with items to filter on or break down on for any selected dimension that you drop ❽.
+     * Static segment [drop-down menu](#drop-down-menu) with items to filter on for the selected segments that you drop ❹.
+     * Static segment [drop-down menu](#drop-down-menu) with items to filter on for the selected date ranges that you drop ❺.
+     * Static segment [drop-down menu](#drop-down-menu) with items to filter on for the selected metrics that you drop ❻.
+     * Static segment [drop-down menu](#drop-down-menu) or breakdown [drop-down menu](#drop-down-menu) with items to filter on or break down on for the selected dimension *items* that you drop ❼.
+     * Dynamic segment [drop-down menu](#drop-down-menu) or breakdown [drop-down menu](#drop-down-menu) with items to filter on or break down on for the selected dimensions that you drop ❽.
 
 
 ### Segment
@@ -206,7 +206,7 @@ The available items in a dynamic drop-down menu are based on:
 * the data resulting from selected items in other drop-down menus, segments and quick segments within the panel's drop zone, and
 * the data available within the panel's reporting range.
  
-For example, you can add two dynamic drop-down menu using a countries dimension and a cities dimension. When you select a country from the **[!UICONTROL Countries]** drop-down menu, the **[!UICONTROL Cities]** drop-down menu dynamically adjusts to show only cities within the selected country. When you have additional static drop-down menus, items selected in those drop-down menus also affect the available items in the dynamic drop-down menus. Items that are selected in dynamic drop-down menus do not affect available items in static drop-down menus.
+For example, you can add two dynamic drop-down menus using a countries dimension and a cities dimension. When you select a country from the **[!UICONTROL Countries]** drop-down menu, the **[!UICONTROL Cities]** drop-down menu dynamically adjusts to show only cities within the selected country. When you have additional static drop-down menus, items selected in those drop-down menus also affect the available items in the dynamic drop-down menus. Items that are selected in dynamic drop-down menus do not affect available items in static drop-down menus.
 
 
 #### Filter a panel
