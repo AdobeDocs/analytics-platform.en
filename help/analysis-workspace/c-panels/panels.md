@@ -181,7 +181,7 @@ Any non-segment component (dimension, dimension item, metric, date range) that i
 
 Alternatively, you can use ![FilterAdd](/help/assets/icons/FilterAdd.svg) to create a quick segment.
 
-See [Quick segments](/help/components/segments/seg-quick.md) for how to create and manage quick segments 
+See [Quick segments](/help/components/segments/seg-quick.md) for how to create and manage quick segments.
 
 
 ### Drop-down menu
