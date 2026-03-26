@@ -47,7 +47,7 @@ You can:
 
   ![Popup showing possible visualizations](assets/blank-panel.png)
 
-  | Select.. | To create a...  |
+  | Select... | To create a... |
   |---|---|
   | ![Table](/help/assets/icons/Table.svg) | [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) |
   | ![Line](/help/assets/icons/GraphTrend.svg) | [Line](/help/analysis-workspace/visualizations/line.md) |
@@ -78,12 +78,12 @@ You can manage a panel in the following ways:
 * To collapse a panel, select ![ChevronDown](/help/assets/icons/ChevronDown.svg).
 * To reveal a collapsed panel, select ![ChevronLeft](/help/assets/icons/ChevronLeft.svg).
 * To delete a panel, select ![CrossSize400](/help/assets/icons/CrossSize200.svg). To undo, select **[!UICONTROL Edit]** > **[!UICONTROL Undo]** (**[!UICONTROL *cmd+z*]** | **[!UICONTROL *ctrl+z*]**).
-* To move a panel, drag and drop the panel whenever a ![Move](/help/assets/icons/Move.svg) is visible (ususally when you hover over the header).
+* To move a panel, drag and drop the panel whenever a ![Move](/help/assets/icons/Move.svg) is visible (usually when you hover over the header).
 
 
 ## Data view 
 
-Each panel is associated with a [data view](/help/data-views/data-views.md), identified by ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *name of data view*]** in the drop-down menu at the top right of the panel.
+Each panel is associated with a [data view](/help/data-views/data-views.md). You can identify the ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *name of data view*]** in the drop-down menu at the top right of the panel.
 
 When you create a Blank Workspace project, the default data view for the initial panel is the data view you last worked on in Customer Journey Analytics.
 
@@ -118,19 +118,19 @@ The panel calendar controls the reporting date range for tables and visualizatio
 1. Optionally, select **[!UICONTROL Show advanced settings]** to:
 
    * Specify **[!UICONTROL Start time]** and **[!UICONTROL End time]** other than the default `12:00 AM` (`0:00`) and `11:59 PM` (`23:59`). End times always include 59 seconds. For a date range that spans many days, the start time applies to the first day of the date range and the end time applies to the last day in your date range. Use **[!UICONTROL (Reset time values)]** to reset start and end time to their defaults.
-   * **[!UICONTROL Make date range components relative to panel calendar]**. If disabled, date range components used in the panel are relative to the current time. If enabled, date range components used in the panel are relatve to the panel calendar.
-   * **[!UICONTROL Use rolling dates]**. If enabled, preset date ranges like **[!UICONTROL Last 7 full days]** dynamically update as current date and time progress. If disabled, such presets are not updated once applied.
+   * **[!UICONTROL Make date range components relative to panel calendar]**. If disabled, date range components that are used in the panel are relative to the current time. If enabled, date range components that are used in the panel are relative to the panel calendar.
+   * **[!UICONTROL Use rolling dates]**. If enabled, preset date ranges like **[!UICONTROL Last 7 full days]** dynamically update as the current date and time progress. If disabled, such presets are not updated once applied.
      
      ![Rolling dates](assets/calendar-rolling.png)
 
-     You can select the text in brackets (for exampe **[!UICONTROL fixed start - rolling daily]**) to extend the panel and specify details for **[!UICONTROL Start]** and **[!UICONTROL End]**.
+     You can select the text in brackets (for example **[!UICONTROL fixed start - rolling daily]**) to extend the panel and specify details for **[!UICONTROL Start]** and **[!UICONTROL End]**.
 
        1. Select **[!UICONTROL Start of]**, **[!UICONTROL End of]**, or **[!UICONTROL Fixed day]**.
        1. When you have selected **[!UICONTROL Start of]** or **[!UICONTROL End of]**, you can build a full expression. For example: **[!UICONTROL End of]** **[!UICONTROL current year]** **[!UICONTROL plus]** `1` **[!UICONTROL day]**. Pick the appropriate value for each individual part of the expression.
-          * Select a value for current. For example **[!UICONTROL current year]**.
+          * Select a value for current. For example, **[!UICONTROL current year]**.
           * Select a value for additional calculation. For example, **[!UICONTROL plus]**.
-          * When you have specified additional calculation, specify a value. For example `1`.
-          * When you have specified additional calculation, select the time period to use for the calculation. For example **[!UICONTROL day]**.
+          * When you have specified an additional calculation, specify a value. For example, `1`.
+          * When you have specified an additional calculation, select the time period to use for the calculation. For example, **[!UICONTROL day]**.
      
      Select **[!UICONTROL Hide details]** to hide the details for rolling dates calculation.
 
@@ -140,7 +140,7 @@ The panel calendar controls the reporting date range for tables and visualizatio
 
 ## Drop zone {#dropzone}
 
-The panel drop zone, labeled **[!UICONTROL _Drop a component to filter or break down the data_]**,  enables you to filter or break down the data and all associated freeform tables and visualizations within the panel. 
+The panel drop zone, labeled **[!UICONTROL _Drop a component to filter or break down the data_]**,  enables you to filter or break down the data for the panel. The segments or breakdowns you use to filter or break down the data applies to all freeform tables and visualizations within the panel. 
 
 Segments and breakdowns allow you to interact with the data in a controlled way. For example, you can add a segment drop-down menu for Mobile Device Types so that you can filter the panel by selecting Tablet, Mobile Phone, or Desktop.
 
@@ -160,10 +160,10 @@ To add or replace (quick) segments or breakdowns:
 
    ![Add or replace to drop zone](assets/add-or-replace-to-drop-zone.png)
 
-   * Drop the selection. This will create the following components:
+   * Drop the selection to create the following components:
       * [Segment](#segment) for any segment component that you drop ❷.
       * [Quick segment](#quick-segment) for any non-segment component (date range, metric, dimension, dimension item) that you drop ❸. 
-   * Drop the selection **while you hold** ⇧ (shift). This will create the following components:
+   * Drop the selection **while you hold** ⇧ (shift) to create the following components:
      * Static [segment drop-down menu](#segment-or-breakdown-drop-down-menu) with items to filter on for any segments that you drop ❹.
      * Static [segment drop-down menu](#segment-or-breakdown-drop-down-menu) with items to filter on for any selected date ranges that you drop ❺.
      * Static [segment drop-down menu](#segment-or-breakdown-drop-down-menu) with items to filter on for any selected metrics that you drop ❻.
@@ -175,11 +175,11 @@ To add or replace (quick) segments or breakdowns:
 
 ### Segment
 
-Any segment component that you drop is used to segment the panel. Use segments to quicky gain segmented insights into the data and visualizations of your panel.
+Any segment component that you drop is used to segment the panel. Use segments to gain segmented insights into the data and visualizations of your panel.
 
 ### Quick segment
 
-Any non-segment component (dimension, dimension item, metric, date range) that you drop defines a [quick segment](#quick-segment) to segment the panel. Use any non-segment component to create a quick segment without using the [Segment builder](/help/components/segments/seg-builder.md). A segment that is created in this way is automatically defined as an event-level segment and labeled **[!UICONTROL Quick segment]** by default.
+Any non-segment component (dimension, dimension item, metric, date range) that is dropped defines a [quick segment](#quick-segment) to segment the panel. Use any non-segment component to create a quick segment without using the [Segment builder](/help/components/segments/seg-builder.md). A segment that is created in this way is automatically defined as an event-level segment and labeled **[!UICONTROL Quick segment]** by default.
 
 Alternatively, you can use ![FilterAdd](/help/assets/icons/FilterAdd.svg) to create a quick segment.
 
@@ -191,7 +191,7 @@ See [Quick segments](/help/components/segments/seg-quick.md) how to create and m
 A drop-down menu that is created while you hold ⇧ can:
 
 * contain a [static](#static) or [dynamic](#dynamic) list of items.
-* behave to [filter a panel]((#filter)) or to [breakdown a panel]((#breakdown).
+* behave to [filter a panel]((#filter)) or to [break down a panel]((#breakdown).
 
 
 #### Static
@@ -203,21 +203,26 @@ Static drop-down menus are created for selected dimension *items*, metrics, segm
 
 Dynamic drop-down menus are created only when you drop dimensions components. Dynamic drop-down menus are indicated with ![FilterRefresh](/help/assets/icons/FilterRefresh.svg) as part of the label.
 
-The available items in a dynamic drop-down menu are based on the data available within the panel's reporting range and selected items in other drop-down menus, segments and quick segments within the panel drop zone. For example, you can add two dynamic drop-down menu using a countries dimension and a cities dimension. When you select a country from the **[!UICONTROL Countries]** drop-down menu, the **[!UICONTROL Cities]** drop-down menu dynamically adjusts to show only cities within the selected country. When you have additional static drop-down menus, items selected in those drop-down menus also affect the available items in the dynamic drop-down menus. Items that are selected in dynamic drop-down menus do not affect available items in static drop-down menus.
+The available items in a dynamic drop-down menu are based on:
+
+* the data resulting from selected items in other drop-down menus, segments and quick segments within the panel's drop zone, and
+* the data available within the panel's reporting range.
+ 
+For example, you can add two dynamic drop-down menu using a countries dimension and a cities dimension. When you select a country from the **[!UICONTROL Countries]** drop-down menu, the **[!UICONTROL Cities]** drop-down menu dynamically adjusts to show only cities within the selected country. When you have additional static drop-down menus, items selected in those drop-down menus also affect the available items in the dynamic drop-down menus. Items that are selected in dynamic drop-down menus do not affect available items in static drop-down menus.
 
 
 #### Filter a panel
 
 For any metric, segment, or date range component that your drop **while you hold** ⇧, a segment drop-down menu is created. That drop-down menu allows you to filter the panel based on items available for the dropped component. 
 
-For any *dimension* component that you drop **while you hold** ⇧, a segment drop-down menu is created. That drop-down menu allows you to filter the panel based on the items available for the dropped dimension items ([static](#static) segment drop-down menu) or dimension component ([dynamic](#dynamic) segment drop-down menu). To explicitly configure the drop-down menu to filter using segments:
+For any *dimension* component that you drop **while you hold** ⇧, a segment drop-down menu is created. That drop-down menu allows you to filter the panel based on the items available for the dropped dimension items ([static](#static) segment drop-down menu) or dimension component ([dynamic](#dynamic) segment drop-down menu). To configure the drop-down menu explicitly to filter using segments:
 
 * Select ![Breakdown](/help/assets/icons/Breakdown.svg) and select ![Filter](/help/assets/icons/Filter.svg) from the context menu for the component ❾. 
 
 
-#### Breakdown a panel
+#### Break down a panel
 
-For any dimension component that you drop **while you hold** ⇧, a drop-down menu is created. That drop-down menu allows you to break down the panel based on the items available for that component. To break down on the dimension:
+For any *dimension* component that you drop **while you hold** ⇧, a segment drop-down menu is created. You can configure the drop-down menu to break down instead. To configure the drop-down menu explicitly to break down using breakdowns:
 
 * Select ![Filter](/help/assets/icons/Filter.svg) and select the ![Breakdown](/help/assets/icons/Breakdown.svg) from the context menu for the component ❾. 
 
@@ -238,7 +243,7 @@ Consider to break down a panel instead of filter a panel (using segments) in the
 
   ![Attribute based metrics: filter versus breakdown](assets/attribute-filter-breakdown.png)
 
-* If you are using a dimension within the panel drop zone that is at the sub-event level (is in an array or object array), breakdowns execute at the sub-event level instead of at the event level. 
+* If you are using a sub-event level dimension within a breakdown drop-down menu, the breakdowns execute at that sub-event level. Instead, segments within a segments drop-down menu execute at the event level. 
   
   As an example, see the difference between the **[!UICONTROL Online Revenue]** metric when using a **[!UICONTROL Luma: Product Subcategory]** ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Tops]** segment versus a **[!UICONTROL Luma: Product Subcategory]** ![Breakdown](/help/assets/icons/Breakdown.svg) **[!UICONTROL Tops]** breakdown. The breakdown executes the query explicitly at the sub-event level, while the segment executes the query at the event level.
 
@@ -257,9 +262,9 @@ You can manage the components in the drop zone as follows:
 | To delete the label of any component. | Hover over the label for the component and select **[!UICONTROL Delete label]** from the context menu for the component. |
 | To delete the component from the drop zone. | Select **[!UICONTROL Delete drop-down]** from the context menu for the component. |
 | To get info on a segment or quick segment. | Hover inside the component and select ![Info](/help/assets/icons/Info.svg) to open the Data Dictionary with info on the component. |
-| To get info on the drop-down menu. | Hover inside the drop-down menu and select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to open the Data Dictionary with info on the component. |
+| To get info on the component that defines a drop-down menu. | Hover inside the drop-down menu and select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to open the Data Dictionary with info on the component. |
 | To edit a quick segment. | Hover inside the quick segment and select ![Edit](/help/assets/icons/Edit.svg). See [Quick segments](/help/components/segments/seg-quick.md) for more details. |
-| To require a selection for a drop-down menu. | Select **[!UICONTROL Require selection]** from the context menu forf the component. |
+| To require a selection for a drop-down menu. | Select **[!UICONTROL Require selection]** from the context menu for the component. |
 | To allow no filter for a drop-down menu. | Select **[!UICONTROL Allow no filter]** from the context menu for the component. |
 | To reset all components and clear all selections for drop-down menus. | Select **[!UICONTROL Reset all]**. |
 
