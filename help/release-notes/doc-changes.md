@@ -15,12 +15,12 @@ The following updates were made to the Customer Journey Analytics documentation 
 |---|---|
 | **March 2026** | |
 | Technote on Bad IDs (BAVIDs) | New [technote on Bad IDs](/help/technotes/badids.md). The technote  explains the definition of a Bad ID, where in the Customer Journey Analytics interface Bad IDs are used, and how to investigate data in your connection for Bad IDs. |
-| Datasets preview redesign in Connections | Updated documentation for an improved data preview experience when you [add](/help/connections/create-connection.md#add-datasets) or [edit](/help/connections/create-connection.md#edit-a-dataset) datasets in a person-based connections, including documentation on additional [stitching preview information](/help/stitching/use-stitching-ui.md#datasets-preview) for stitching-enabled datasets. | 
+| Datasets preview redesign in Connections | Updated documentation for an improved data preview experience when you [add](/help/connections/create-connection.md#add-datasets) or [edit](/help/connections/create-connection.md#edit-a-dataset) datasets in a person-based connections, including documentation on additional [stitching preview information](/help/stitching/use-stitching-ui.md#datasets-preview) for stitching-enabled datasets. |
 | Content Analytics thumbnails and previews | Documentation on [thumbnails](/help/content-analytics/report/report.md#thumbnails) and [previews](/help/content-analytics/report/report.md#previews) for additional visualizations in Content Analytics. |
 | **February 2026** | |
-| Header overrides | Documentation on the additional [header overrides configuration](/help/content-analytics/config/guided.md#header-overrides) for Content Analytics. | 
+| Header overrides | Documentation on the additional [header overrides configuration](/help/content-analytics/config/guided.md#header-overrides) for Content Analytics. |
 | Calculated metrics guardrail | Updated the [guardral for the maximum number of calculated metrics for an organization](/help/technotes/guardrails.md#segments-and-calculated-metrics). The maximum is now 50,000. |
-| Standalone Content Analytics | Added documentation for a [standalone configuration of Content Analytics](/help/content-analytics/config/standalone.md). | 
+| Standalone Content Analytics | Added documentation for a [standalone configuration of Content Analytics](/help/content-analytics/config/standalone.md). |
 | **January 2026** | |
 | Architect a schema | Added substantial information and context to [Architect your schema for use with Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md). |
 
