@@ -45,7 +45,8 @@ Attribution comprises the following features:
 ## Videos
 
 
-<!--  Attribution IQ
+<!--  
+Attribution IQ
 
 >[!BEGINSHADEBOX]
 
@@ -55,7 +56,8 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution in F
 
 -->
 
-<!-- Attribution IQ 
+<!-- 
+Attribution IQ 
 >[!BEGINSHADEBOX]
 
 See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution in calculated metrics](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/attribution-iq-in-calculated-metrics){target="_blank"} for a demo video.
@@ -72,7 +74,8 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Using the Attrib
 >[!ENDSHADEBOX]
 
 
-<!-- Attribution IQ
+<!-- 
+Attribution IQ
 
 >[!BEGINSHADEBOX]
 
