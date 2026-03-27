@@ -234,9 +234,11 @@ The data that supports the solution design reference is structured using the fol
 
 The event dimensions and metrics are supported through a time-series (event) based schema and one or more datasets that contain event data. 
 
-<!--For example: the Account ID field is mapped to **[!UICONTROL Account ID]**. See below for a preview of the data typically available in such a dataset.
+<!--
+For example: the Account ID field is mapped to **[!UICONTROL Account ID]**. See below for a preview of the data typically available in such a dataset.
 
-![B2B event schema and datasets](assets/b2b-event-schema-datasets.png)-->
+![B2B event schema and datasets](assets/b2b-event-schema-datasets.png)
+-->
 
 
 ### Person data

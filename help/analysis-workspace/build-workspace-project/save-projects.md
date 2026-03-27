@@ -81,7 +81,8 @@ To save a project manually, with your project open in Analysis Workspace, select
   You can save the project to a different folder. The original project is not affected.
 
   
-<!-- Cannot find this option in CJA 
+<!-- 
+Cannot find this option in CJA 
 | **[!UICONTROL Save as template]** | Save your project as a [custom template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) that becomes available to your organization under **[!UICONTROL Project > New]** |
 -->
 
@@ -151,7 +152,8 @@ If your browser crashes or if your session times out, then the next time you acc
 For **new** projects that have never been saved, unsaved changes are not recoverable.
 
 
-<!-- Shouldn't this belong to another page?  Moved it to a new open projects page
+<!--
+Shouldn't this belong to another page?  Moved it to a new open projects page
 
 
 ## Open previously saved version
