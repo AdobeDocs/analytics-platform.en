@@ -147,7 +147,8 @@ The main benefit is that you store or report only on data that is applicable and
 
 See [Deletion and reset implications](/help/technotes/deletion.md) for an overview of the implications when you delete or reset Customer Journey Analytics or Experience Platform objects or components.
 
-<!-- Refer to deletion guide 
+<!-- 
+Refer to deletion guide 
 
 For data deletion, you should be concerned about six types of components: sandbox, schema, dataset, connection, data view, and Workspace project. Here are some possible scenarios around deleting any of these components:
 

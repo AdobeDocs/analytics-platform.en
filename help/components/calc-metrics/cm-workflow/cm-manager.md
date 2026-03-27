@@ -68,7 +68,8 @@ You can filter the list of calculated metric using the ![Filter](/help/assets/ic
 See [Filter the list of calculated metrics](cm-filter.md) for more information.
 
 
-<!-- OLD CONTENT 
+<!-- 
+OLD CONTENT 
 
 The Calculated metric manager shows you all the filters you own and that have been shared with you. Admin-level users can see all custom metrics in the organization. This overview presents the user interface and the capabilities of the Calculated metric manager.
 
