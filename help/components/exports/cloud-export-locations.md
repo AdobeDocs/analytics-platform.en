@@ -22,7 +22,7 @@ role: User, Admin
 >[!CONTEXTUALHELP]
 >id="cja-export-file-name"
 >title="File name and path"
->abstract="Specify a dynamic custom file name to use for automated exports that are sent to this location. You can also precede the file name with a dynamic custom file path. <br/>Use variables in the file name and path to make them dynamic. <br/>For example, if you specify `${yyyy}/${MM}/${dd}/my-report-${instance_id}-${idx}`, an export that is automatically sent to this destination on January 15, 2026 would have the following file path and name: `[prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv` <br/>Click the link below for a list of available variables."
+>abstract="Specify a dynamic custom file name to use for automated exports that are sent to this location. You can also precede the file name with a dynamic custom file path. <br/>Use variables in the file name and path to make them dynamic. <br/>For example, if you specify `${yyyy}-${MM}-${dd}-my-report-${instance_id}-${idx}`, an export that is automatically sent to this destination on January 15, 2026 would have the following file path and name: `[prefix_folder_name]-2026-01-15-my-report-[UUID]-1.csv` <br/>Click the link below for a list of available variables."
 
 <!-- markdownlint-enable MD034 -->
 
