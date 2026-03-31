@@ -10,7 +10,8 @@ role: User
 
 See [Save projects](../save-projects.md#save) for more information.
 
-<!-- Is this article still needed; removed from TOC
+<!-- 
+Is this article still needed; removed from TOC
 
 
 To save a new project to a specific folder, select the folder name in the Save project dialogue window.

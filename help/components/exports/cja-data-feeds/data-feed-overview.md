@@ -32,8 +32,10 @@ The following resources help you understand the basic workflow of obtaining data
 * Data feed best practices<!--add link-->: Best practices for creating and managing data feeds.
 * Create a data feed<!--add link-->: Technical details for creating a data feed, explaining individual fields in more detail
 * Manage data feeds<!--add link-->: Learn more about navigating the data feed interface
-* Data feed contents <!--add link-->: Understand what is inside the compressed file <!-- Is this still the output users can download from the destination? I aske Jun. -->
+* Data feed contents <!--add link-->: Understand what is inside the compressed file 
 * Data column definitions <!--add link-->: A comprehensive list of all available columns.
+
+<!-- Is this still the output users can download from the destination? I aske Jun. -->
 
 >[!BEGINSHADEBOX]
 

@@ -50,7 +50,8 @@ The **understand** use cases provide more details on:
 * Visualization similarities and differences between Customer Journey Analytics and BI tools.
 * Caveats of each of the BI tools you should be aware of.
 
-<!-- Now documented in separate articles
+<!-- 
+Now documented in separate articles
 
 ## Connect and validate
 

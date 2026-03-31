@@ -19,7 +19,8 @@ For a list of all functions, refer to [Basic functions](/help/components/calc-me
 
 
 
-<!-- This video is way too outdated and too much AA oriented to comfortably show as part of CJA functionality 
+<!-- 
+This video is way too outdated and too much AA oriented to comfortably show as part of CJA functionality 
 
 Watch this [video](https://youtu.be/SSyWvomnewI) to understand the use of functions.
 

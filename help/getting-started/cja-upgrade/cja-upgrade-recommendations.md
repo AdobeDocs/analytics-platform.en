@@ -256,7 +256,8 @@ Generic upgrade steps are also available.
    
    * View the data collected with your original Adobe Analytics implementation (either AppMeasurement, the Analytics Extension, or the Web SDK Extension) within Customer Journey Analytics. You can compare this data side-by-side with that of your new Web SDK implementation. 
    
-     You can keep the Analytics source connector running until you are familiar and comfortable with the differences. <!--elaborate on what those differences are? -->
+     You can keep the Analytics source connector running until you are familiar and comfortable with the differences. <!--elaborate on what those differences are? 
+-->
 
 <!--
 
