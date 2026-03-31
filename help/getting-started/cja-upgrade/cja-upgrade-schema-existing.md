@@ -49,7 +49,8 @@ The option to use your existing Adobe Analytics schema with Customer Journey Ana
 
 
 
-<!-- Not sure about any of this: 
+<!-- 
+Not sure about any of this: 
 
 If you plan to use your Adobe Analytics schema, the following steps are required:
 

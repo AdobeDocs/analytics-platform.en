@@ -1,5 +1,5 @@
 ---
-description: The Data Dictionary in Analysis Workspace allows users to catalogue and keep track of the various components in Analysis Workspace, including their intended use, which are approved, which are duplicates, and so forth.
+description: The Data Dictionary in Analysis Workspace allows users to catalog and keep track of the various components in Analysis Workspace, including their intended use, which are approved, which are duplicates, and so forth.
 title: View component information
 feature: Components
 role: User, Admin
@@ -7,13 +7,13 @@ exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
 ---
 # View component information
 
-The Data Dictionary allows you to view information about a component, including the component description, similar components, other components a component is frequently used with, and more.
+The Data Dictionary allows you to view information about a component, including its description, similar components, other components a component is frequently used with, and more.
 
 To view information about a component in the Data Dictionary:
 
 1. Go to the Analysis Workspace project that contains the component that you want to view.
 
-1. Select the [!UICONTROL **Data Dictionary**] icon in the left panel of Analysis Workspace. (Alternate ways of accessing the Data Dictionary are described in "Access the Data Dictionary" in [Data Dictionary overview](/help/components/data-dictionary/data-dictionary-overview.md).)
+1. Select the [!UICONTROL **Data Dictionary**] icon in the left panel of Analysis Workspace. (Alternate ways of accessing the Data Dictionary are described in [Access the Data Dictionary](/help/components/data-dictionary/data-dictionary-overview.md#access-the-data-dictionary) in [Data Dictionary overview](/help/components/data-dictionary/data-dictionary-overview.md).)
 
    The Data Dictionary window displays.
 
@@ -25,9 +25,21 @@ To view information about a component in the Data Dictionary:
 
 1. (Optional) In the search field, begin typing the name of the component you want to view.
 
-   The type of component can be identified by both color and icon. **Dimensions** ![Dimension icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) are orange, **Segments** ![Segment icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) are blue, **Date ranges** ![Date range icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) are purple, and **Metrics** ![Metric icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) are green. The Adobe icon ![Adobe icon](assets/default-calc-metric-icon.png) indicates either a calculated metric template or a segment template, and the calculator icon ![Calculator icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indicated a calculated metric that was created by an Analytics administrator in your organization. 
+   The type of component can be identified by both color and icon. 
+   
+   * **Dimensions** ![Dimension icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) are orange
+   
+   * **Segments** ![Segment icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) are blue
+   
+   * **Date ranges** ![Date range icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) are purple
+   
+   * **Metrics** ![Metric icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) are green
+   
+   * **Adobe icon** ![Adobe icon](assets/default-calc-metric-icon.png) indicates either a calculated metric template or a segment template
+   
+   * **Calculator icon** ![Calculator icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indicates a calculated metric that was created by an Analytics administrator in your organization
 
-1. (Optional) Select the **Filter** icon ![Data Dictionary Filter icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), then select any of the following segment options to filter the list of components:
+1. (Optional) Select the **Filter** icon ![Data Dictionary Filter icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), then select any of the following filter options to filter the list of components:
 
    |Option | Function |
    |---------|----------|
@@ -36,7 +48,7 @@ To view information about a component in the Data Dictionary:
    | [!UICONTROL **Dimensions**] | Show only components that are Dimensions. (This option is also available in the [!UICONTROL **Quick segments**] tab when you first access the Data Dictionary.) |
    | [!UICONTROL **Metrics**] | Show only components that are Metrics. (This option is also available in the [!UICONTROL **Quick segments**] tab when you first access the Data Dictionary.) |
    | [!UICONTROL **Segments**] | Show only components that are Segments. (This option is also available in the [!UICONTROL **Quick segments**] tab when you first access the Data Dictionary.) |
-   | [!UICONTROL **Date ranges**] | Show only components that are Date Ranges. (This option is also available in the [!UICONTROL **Quick segments**] tab when you first access the Data Dictionary.) |
+   | [!UICONTROL **Date Ranges**] | Show only components that are Date Ranges. (This option is also available in the [!UICONTROL **Quick segments**] tab when you first access the Data Dictionary.) |
    | [!UICONTROL **Show all**] | Show all components. This option is available only for administrators. |
    | [!UICONTROL **Unapproved**] | Show only components that are not yet marked as Approved by an administrator. As an administrator, this is helpful when identifying components that require your review and approval. This option is available only for administrators. |
    | [!UICONTROL **Missing Description**] | Show only components that do not yet have a description in the Description field. This option is available only for administrators. |
@@ -46,15 +58,22 @@ To view information about a component in the Data Dictionary:
 
    {style="table-layout:auto"}
 
-1. (Optional) Select the **Sort** icon ![Sort components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg), then select any of the following segment options to sort the list of components:
+1. (Optional) Select the **Sort** icon ![Sort components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg), then select any of the following filter options to sort the list of components:
    
-   {{components-sort-options}}
+   | Option | Function |
+   |---------|----------|
+   | **[!UICONTROL Recommended]** | Sort components for each type (dimension, metric, segment and date range) based on their recommendation. Components that are used most frequently and most recently by you or by others in your organization are shown higher in each list. |
+   | **[!UICONTROL Last modified]** | Sort components for each type (dimension, metric, segment and date range) based on their last modified date. Components that are modified most recently are shown higher in each list. |
+   | **[!UICONTROL Alphabetical]** | Sort components for each type (dimension, metric, segment and date range) in ascending alphabetic order. |
+   | **[!UICONTROL Categorical]** | Sort components for each type (dimension, metric, segment and date range) based on their category. For example, Curated versus Non-curated data view components. |
+
+   {style="table-layout:auto"}
 
 1. From the list of components, select the component you want to view.
 
    The following information about the component is displayed:
 
-   |Option | Function |
+   | Option | Function |
    |---------|----------|
    | [!UICONTROL **Approved**] | <p>Indicates that the component has been reviewed and approved by the administrator.</p><p>Administrators see an option to [!UICONTROL **Unapprove**]. Selecting this option marks the component as "Not approved" to users.</p> |
    | [!UICONTROL **Not approved**] | <p>Indicates that the component has not yet been reviewed and approved by the administrator.</p><p>Administrators see an option to [!UICONTROL **Approve**]. Selecting this option marks the component as "Approved" to users.</p> |

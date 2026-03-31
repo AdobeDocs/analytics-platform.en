@@ -287,3 +287,35 @@ Use the following information to choose the visualization that best meets your n
 >
 >In the Customer Journey Analytics interface, **[!UICONTROL Relational]** datasets might be labeled as **[!UICONTROL Model-based]**.
 >
+
+## CJA data feed lookback window {#cja-df-lookback}
+
+Since Customer Journey Analytics uses report-time attribution for every component, it does not have a concept of persistence beyond its lookback window. This Analytics data feed column references visitor-level behavior that extends to the visitor's entire history. The longer the lookback window is for this component in Customer Journey Analytics, the closer it can match to Adobe Analytics functionality.
+
+## CJA data feed post columns {#cja-df-post}
+
+This Analytics data feed column contains both a pre-processed version and a post-processed version (a prefix of `post_`). Columns with a prefix of `post_` contain the value that is ultimately used in reporting. Most organizations solely use `post_` columns when they are available. The following table compares the properties of these columns:
+
+| Pre-processed column value | Post-processed column value |
+| --- | --- |
+| As it was collected | Used in reporting |
+| Before processing rules | After processing rules |
+| Before VISTA rules | After VISTA rules |
+| No allocation applied | Allocation applies |
+
+Since Customer Journey Analytics does not have a concept of pre-processing and post-processing, recreating both columns in CJA data feeds is difficult. If you would like approximations of these columns, you can drag the same XDM field multiple times into the dimensions column to create multiple components with different attribution settings:
+
+* **Pre-processed column**: No attribution
+* **Post-processed column**: Apply the same allocation and expiration settings as its Analytics variable in data view settings. Most components would use an allocation of "Last" and an expiration of "Visit".
+
+## CJA data feed lookup columns {#cja-df-lookup}
+
+This Analytics data feed column uses a lookup table to identify the desired value. In Customer Journey Analytics, the value is provided directly without any lookup tables. Ensure that your workflow accommodates the final value instead of an intermediate lookup value.
+
+## CJA data feed not applicable columns {#cja-df-na}
+
+This Analytics data feed column contains data that cannot be translated to a Customer Journey Analytics equivalent because of data architecture differences.
+
+## CJA data feed user agent {#cja-df-ua}
+
+You cannot collect both user agent information and device lookup information simultaneously; population of these dimensions are mutually exclusive. You must choose if you want to collect user agent directly or device lookup information (based on user agent) when [Configuring a datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup).

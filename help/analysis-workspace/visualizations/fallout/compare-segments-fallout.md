@@ -18,9 +18,11 @@ You can create segments from a touchpoint, add segments as touchpoint, and compa
 >* Using a person-based segment as a touchpoint inside a session-context Fallout visualization.
 >* Using a session-based segment as a touchpoint inside a session-context Fallout visualization.
 
-<!-- Should we add B2B context here?
+<!-- 
+Should we add B2B context here?
 * [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
-* -->
+* 
+-->
 
 ## Create a segment from a touchpoint
 

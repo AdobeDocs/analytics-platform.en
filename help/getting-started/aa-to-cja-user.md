@@ -37,7 +37,8 @@ Your Customer Journey Analytics Admin establishes [connections](/help/connection
 A connection lets your Analytics Admin integrate datasets from Adobe Experience Platform into Customer Journey Analytics.
 
 
-<!-- Outdated UI
+<!--
+Outdated UI
 
 >[!BEGINSHADEBOX]
 
