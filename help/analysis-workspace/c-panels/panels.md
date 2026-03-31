@@ -1,5 +1,5 @@
 ---
-description: Learn how to use panels in Analysis Workspace to organize your reports, including the use of drop zones to filter or break down data, and the use of calendars to define the range of data.
+description: Learn how to use panels in Analysis Workspace to organize your reports, to filter or break down data, and to define the range of data.
 title: Overview Of Panels In Analysis Workspace
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
