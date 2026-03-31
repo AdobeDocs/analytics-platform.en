@@ -14,6 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 |---|---|
 | **March 2026** | |
+| Break down a panel | Restructured the documentation around the [drop zone for a panel](/help/analysis-workspace/c-panels/panels.md#drop-zone) to support the new [break down](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) functionality. |
 | Technote on Bad IDs (BAVIDs) | New [technote on Bad IDs](/help/technotes/badids.md). The technote  explains the definition of a Bad ID, where in the Customer Journey Analytics interface Bad IDs are used, and how to investigate data in your connection for Bad IDs. |
 | Datasets preview redesign in Connections | Updated documentation for an improved data preview experience when you [add](/help/connections/create-connection.md#add-datasets) or [edit](/help/connections/create-connection.md#edit-a-dataset) datasets in a person-based connections, including documentation on additional [stitching preview information](/help/stitching/use-stitching-ui.md#datasets-preview) for stitching-enabled datasets. | 
 | Content Analytics thumbnails and previews | Documentation on [thumbnails](/help/content-analytics/report/report.md#thumbnails) and [previews](/help/content-analytics/report/report.md#previews) for additional visualizations in Content Analytics. |
