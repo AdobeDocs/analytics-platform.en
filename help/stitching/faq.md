@@ -36,7 +36,7 @@ The lookback window for rekeying depends on your desired frequency of data repla
 +++ When does the replay process run exactly?
 
 * The **weekly** replay starts on each **Saturday** night (customer time zone) and data gets updated in Customer Journey Analytics reporting by Monday morning. 
-* The daily replay runs around 3 A.M. (customer time zone), so data gets updated in Customer Journey Analytics reporting by morning. 
+* The **daily** replay runs around **3 A.M.** (customer time zone) and data gets updated in Customer Journey Analytics reporting by morning. 
 
 >[!IMPORTANT]
 >
