@@ -46,7 +46,7 @@ To edit an existing configuration:
 
 ## Guided configuration wizard
 
-The guided configuration wizard consists of four sections ([Details](#details), [Data view](#data-view), [Experience capture & definition](#experience-capture-and-definition), and [Data collection](#data-collection)), each prompting you for details that are required to set up and configure Content Analytics properly. Complete each section before moving to the next section, as some settings in a section might depend on configuration values in earlier sections.
+The guided configuration wizard consists of four sections ([Details](#details), [Connection](#connection), [Data view](#data-view), and [Channels](#channels), each prompting you for details that are required to set up and configure Content Analytics properly. Complete each section before moving to the next section, as some settings in a section might depend on configuration values in earlier sections.
 
 ### Details {#onboarding-details}
 
@@ -86,15 +86,15 @@ You need to select a connection to which you want to add Content Analytics data 
 
 If you have not selected a connection for your configuration:
 
-1. Use ![Data](/help/assets/icons/Data.svg) Select a connection to open the Select a connection dialog that lists all connection that are available on the sandbox.
-1. In the Select a connection dialog, select the connection that you want to use.
-1. Select Use connection.
+1. Use ![Data](/help/assets/icons/Data.svg) **[!UICONTROL Select a connection]** to open the **[!UICONTROL Select a connection]** dialog that lists all connections that are available on the sandbox.
+1. In the **[!UICONTROL Select a connection]** dialog, select ![SelectBox](/help/assets/icons/SelectBox.svg) a connection that you want to use. You can only select one connection.
+1. Select **[!UICONTROL Use connection]**.
 
 If you already have selected a connection, but you want to change that:
 
-1. Select ![Edit](/help/assets/icons/Edit.svg) Edit.
-1. In the Select a connection dialog, select the connection that you want to use.
-1. Select Use connection.
+1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]**.
+1. In the **[!UICONTROL Select a connection]** dialog, modify the connection that you want to use.
+1. Select **[!UICONTROL Use connection]**.
 
 
 ### Data view {#onboarding-data-view}
@@ -185,15 +185,15 @@ Your configuration requires the selection of one or more [Data views](/help/data
 
 If you have not selected data views for your configuration:
 
-1. Use ![Data](/help/assets/icons/Data.svg) Select data view to open the Data view dialog that lists all data views available for the connection that you have configured for Content Analytics.
-1. In the Data view dialog, select ![SelectBox](/help/assets/icons/SelectBox.svg) one or more data views that you want to use.
-1. Select Save.
+1. Use ![Data](/help/assets/icons/Data.svg) **[!UICONTROL Select data view]** to open the **[!UICONTROL Data view]** dialog that lists all data views available for the connection that you have configured for Content Analytics.
+1. In the **[!UICONTROL Data view]** dialog, select ![SelectBox](/help/assets/icons/SelectBox.svg) one or more data views that you want to use.
+1. Select **[!UICONTROL Save]**.
 
 If you already have selected one or more data views, but you want to change that:
 
-1. Select ![Edit](/help/assets/icons/Edit.svg) Edit data view selection.
-1. In the Data view dialog, modify the selection ![SelectBox](/help/assets/icons/SelectBox.svg) of the data views that you want to use.
-1. Select Save.
+1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit data view selection]**.
+1. In the **[!UICONTROL Data view]** dialog, modify the selection ![SelectBox](/help/assets/icons/SelectBox.svg) of the data views that you want to use.
+1. Select **[!UICONTROL Save]**.
 
 The following actions are available within the Data view dialog:
 
@@ -201,25 +201,28 @@ The following actions are available within the Data view dialog:
 * To filter the list of available data views, select ![Show filter](/help/assets/icons/Filter.svg). You can filter the list on [!UICONTROL Connection], [!UICONTROL Owner] and [!UICONTROL Sandbox].<br/>Use ![Hide](/help/assets/icons/Filter.svg) **[!UICONTROL Hide segments]** to hide the segment pane.
 * To define which columns to show in the table, select ![Column Settings](/help/assets/icons/ColumnSetting.svg). Select which columns to display in the **[!UICONTROL Customize table]** dialog and select **[!UICONTROL Apply]** to apply the changes.
 
-### Channel
+### Channels
 
-In the Channels section you select the channels you want to enable for Content Analytics. You can select between Mobile and Web.
+In the **[!UICONTROL Channels]** section you select the channels you want to enable for Content Analytics. You can select between **[!UICONTROL Mobile]** and **[!UICONTROL Web]**.
 
-To select a channel, select Enable. Once you have enabled a channel, select Edit configuration to configure the channel.
+* To select a channel you have not yet configured, select **[!UICONTROL Enable]**. 
+* To select a channel that is already configured but for which you want to change the configuration, select **[!UICONTROL Edit configuration]**.
 
-#### Mobile
+You can then configure the channel in more detail. That configuration is different depending on whether you enable and configure or edit a configuration for the [mobile](#mobile) or [web](#web) channel.
 
-For the mobile channel, you can configure:
+#### Mobile {#mobile}
 
-##### Experience capture and definition
+For the mobile channel, you can configure experience capture and definition, data collection, and header overrides.
+
+##### Experience capture and definition {#mobile-experience-capture-and-definition}
 
 In this section, you can select to include experiences in the mobile data you collect with Content Analytics.  For the mobile channel, an experience is what you have registered as an experience using the Adobe Experience Platform SDK for Content Analytics. 
 
-By default, **[!UICONTROL Include experiences]** is turned off. 
+By default, **[!UICONTROL Include experiences]** is disabled. 
 
 Only consider to include experiences when you have instrumented your mobile app to register experiences and to track experience views and experience clicks.
 
-##### Data collection
+##### Data collection {#mobile-data-collection}
 
 * Use an existing mobile Tags property or create a new mobile Tags property.
 
@@ -235,20 +238,20 @@ Only consider to include experiences when you have instrumented your mobile app 
     1. Specify a **[!UICONTROL Tags name]**, for example `ACA Test for Documentation`.
     1. Specify **[!UICONTROL Domains]**, for example, `example.com`.
 
-* Indicate which experience locations should be included or excluded when collecting data for Content Analytics. 
+* Indicate which experience locations should be excluded when collecting data for Content Analytics. 
   
-  Specify a Regular expression string for **[!UICONTROL Experience locations to include / exclude]**. <br/>For example: `^(?!.*documentation).*` to exclude all documentation pages from Content Analytics.
+  Specify a Regular expression string for **[!UICONTROL Experience locations to exclude]**. <br/>For example: `^(?!.*documentation).*` to exclude all documentation experience locations from Content Analytics.
 
-* Indicate which assets locations should be included or excluded when collecting data for Content Analytics. 
+* Indicate which assets locations should be excluded when collecting data for Content Analytics. 
   
-  Specify a Regular expression string for **[!UICONTROL Asset locations to include / exclude]**. <br/>For example: `^(?!.*(logo\.jpg)).*$` to exclude all logo JPEG images from Content Analytics.
+  Specify a Regular expression string for **[!UICONTROL Asset locations to exclude]**. <br/>For example: `^(?!.*(logo\.jpg)).*$` to exclude all asset locations with logo JPEG image  from Content Analytics.
 
-* Indicate which assets URLs should be included or excluded when collecting data for Content Analytics. 
+* Indicate which assets URLs should be excluded when collecting data for Content Analytics. 
 
-  Specify a Regular expression string for **[!UICONTROL Asset URLs to include / exclude]**. <br/>For example: `^(?!.*(logo\.jpg)).*$` to exclude all logo JPEG images from Content Analytics.
+  Specify a Regular expression string for **[!UICONTROL Asset URLs to exclude]**. <br/>For example: `^(?!.*(logo\.jpg)).*$` to exclude all assets URLs referring to logo JPEG images from Content Analytics.
 
 
-##### Header overrides
+##### Header overrides {#mobile-header-overrides}
 
 <!-- needs modification for mobile channel -->
 
@@ -260,12 +263,14 @@ Optionally, you can specify in the **[!UICONTROL Header overrides]** section a h
 1. Enter the **[!UICONTROL Header name]**. For example, `x-asset-service`.
 1. Enter the **[!UICONTROL Header value]**. Whatever you specify is secret  and not visible in the user interface (unless you expicitly select to disclose ![Visibility](/help/assets/icons/Visibility.svg) the value during input).
 
+##### Save {#mobile-save}
 
-#### Web
+Once you have configured the mobile channel, select **[!UICONTROL Save]** to save the configuration. Select **[!UICONTROL Cancel]** to cancel the configuration.
 
-For the web channel, you can configure: 
 
-##### Experience capture and definition {#onboarding-experiences} 
+#### Web {#web}
+
+For the web channel, you can configure experience capture and definition, data collection, and header overrides.
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_button"
@@ -296,52 +301,6 @@ For the web channel, you can configure:
 >id="aca_onboarding_experiencecapture_edit_button"
 >title="Experience capture and definition"
 >abstract="You must edit the settings for experience data collection in the Adobe Content Analytics extension."
-
-In this section, you can select to include experiences in the data you collect with Content Analytics.  An experience is all text on a web page that is reproducible using the URL used by the initial user visiting that web page. 
-
-By default, **[!UICONTROL Include experiences]** is turned off. 
-
-Only consider to include experiences when the following is applicable:
-
-* The pages on the site must be reproducible using the page URL. 
-* The text content seen by any given user can be reproduced using the page URL and does not depend on cookies or other personalization mechanisms.
-
->[!IMPORTANT]
->
->Implement [Content Analytics versioning](manual.md#versioning) to collect changes that you make to the experiences (pages) subject to Content Analytics. 
-
-To include experiences in a new or not implemented configuration, enable **[!UICONTROL Include experiences]**. The toggle to enable experiences affects the following:
-
-* Data collection in the Content Analytics extension 
-* The process that generates experience attributes from Content Analytics event data 
-* The reporting template in Customer Journey Analytics. 
-   
-<!--
-1. Specify the parameters for how content is rendered on your website. The parameters are zero or more combinations of a **[!UICONTROL Domain regular expression]** and **[!UICONTROL Query parameters]**. The query parameters indicate what parameters affect the content on your page. This input allows Content Analytics to ignore any parameters that don't affect content on the page, when defining a unique experience.
-   1. Enter a **[!UICONTROL Domain regular expression]**, for example `/^(?!.*\b(store|help|admin)\b)/`. Ensure you escape regular expressions, using `/`. The domain regular expression indicates which URLs these parameters apply to. For example, you may have multiple sites, and for each site different parameters drive the content. If the query parameters apply to all of your pages, then you can use `.*` to indicate all pages.
-   1. Specify a comma separated list of **[!UICONTROL Query parameters,]** for example `outdoors, patio, kitchen`.
-1. Select **[!UICONTROL Remove]** if you want to remove a combination of domain regular expression and query parameters.
-1. Select **[!UICONTROL Add Regex]** if you want to add another combination of a regular expression and query parameters.
-
-
-#### Implemented configuration {#implemented-experiences-configuration}
-
-To edit existing or include new experiences in an implemented configuration:
-
-![Content Analytics configuration experience capture and definition](../assets/aca-configuration-experience-edit.png)
-
-* Toggle **[!UICONTROL Include experiences]** to enable or disable:
-
-   * The process that generates experience attributes from Content Analytics event data 
-   * The reporting template in Customer Journey Analytics. 
-   
-* Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** to edit further the configuration of data collection for experiences in Content Analytics. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) in the Tags property that is associated with the current configuration.
--->
-
-
-##### Data collection {#onboarding-data-collection}
-
-In this section, you configure how to collect your Content Analytics data.
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
@@ -441,57 +400,43 @@ In this section, you configure how to collect your Content Analytics data.
 >title="Mobile asset URLs data collection"
 >abstract="Indicate which asset URLs should be **excluded** when collecting data for Content Analytics."
 
-* Use an existing Tags property or create a new Tags property.
 
-  * To use an existing Tags property:
+##### Experience capture and definition {#web-experience-capture-and-definition}
+
+In this section, you can select to include experiences in the web data you collect with Content Analytics.  For the mobile channel, an experience is what you have registered as an experience using the Adobe Experience Platform SDK for Content Analytics. 
+
+By default, **[!UICONTROL Include experiences]** is disabled. 
+
+Only consider to include experiences when you have instrumented your mobile app to register experiences and to track experience views and experience clicks.
+
+##### Data collection {#web-data-collection}
+
+* Use an existing web Tags property or create a new web Tags property.
+
+  * To use an existing web Tags property:
 
     1. Select **[!UICONTROL Choose existing]**.
     2. Select an existing property from the **[!UICONTROL Tags property]** drop-down menu. You can start typing to search for and limit the available options. You cannot select a Tags property that already is used by another implemented Content Analytics configuration.
 
 
-  * To create a new Tags property:
+  * To create a new mobile Tags property:
 
     1. Select **[!UICONTROL Create new]**.
     1. Specify a **[!UICONTROL Tags name]**, for example `ACA Test for Documentation`.
     1. Specify **[!UICONTROL Domains]**, for example, `example.com`.
 
-* Indicate which pages should be included or excluded when collecting data for Content Analytics. 
+* Indicate which experience locations should be included or excluded when collecting data for Content Analytics. 
   
   Specify a Regular expression string for **[!UICONTROL Pages to include / exclude]**. <br/>For example: `^(?!.*documentation).*` to exclude all documentation pages from Content Analytics.
 
 * Indicate which assets should be included or excluded when collecting data for Content Analytics. 
   
-  Specify a Regular expression string for **[!UICONTROL Assets to include / exclude]**. <br/>For example: `^(?!.*(logo\.jpg)).*$` to exclude all logo JPEG images from Content Analytics.
+  Specify a Regular expression string for **[!UICONTROL Asset to include / exclude]**. <br/>For example: `^(?!.*(logo\.jpg)).*$` to exclude all logo JPEG images from Content Analytics.
 
->[!IMPORTANT]
->
->Manually remove the automatic included Web SDK extension from the newly created Tags property in case you have an existing Web SDK implementation that uses the [JavaScript library](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library) instead of the [Tags extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
->
 
-<!--
+##### Header overrides {#web-header-overrides}
 
-#### Existing configuration {#existing-configuration}
-
-For an existing configuration, you cannot edit the Tags property. For updates to a Tags property associated to an existing configuration, use the [Content Analytics Tag extension configuration](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview). 
-
-You can, however, edit the pages and assets to include or exclude.
-
-* To edit which pages should be included or excluded when collecting data for Content Analytics, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** underneath **[!UICONTROL Experience]**. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) that is associated with the Tags property for the current Content Analytics configuration. You can edit the regular expression to include or exclude pages. Ensure you [publish](#publish) your changes.
-
-* To edit which assets should be included or excluded when collecting data for Content Analytics, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** underneath **[!UICONTROL Asset]**. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) that is associated with the Tags property for the current Content Analytics configuration. You can edit the regular expression to include or exclude assets. Ensure you [publish](#publish) your changes.
--->
-
-##### Header overrides
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_header_overrides_boldheader"
->title="Header overrides"
->abstract="**Header overrides**"
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_header_overrides_header"
->title="Header overrides"
->abstract="Advanced feature to bypass bot detection or gate traffic. Content Analytics includes your custom HTTP headers when calling your endpoints."
+<!-- needs modification for mobile channel -->
 
 Optionally, you can specify in the **[!UICONTROL Header overrides]** section a header name and secret header value.  This header overrides configuration ensures that Content Analytics sends custom HTTP headers to bypass any bot detection or gate traffic technologies you have implemented.
 
@@ -501,9 +446,9 @@ Optionally, you can specify in the **[!UICONTROL Header overrides]** section a h
 1. Enter the **[!UICONTROL Header name]**. For example, `x-asset-service`.
 1. Enter the **[!UICONTROL Header value]**. Whatever you specify is secret  and not visible in the user interface (unless you expicitly select to disclose ![Visibility](/help/assets/icons/Visibility.svg) the value during input).
 
-#### Save
+#### Save {#web-save}
 
-After you have specified the details for the web channel, select Save to save the configuration. Select Cancel to cancel the configuration.
+After you have specified the details for the web channel, select **[!UICONTROL Save]** to save the configuration. Select **[!UICONTROL Cancel]** to cancel the configuration.
 
 
 ### Summary {#summary}
