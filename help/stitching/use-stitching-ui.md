@@ -167,11 +167,6 @@ To enable stitching, in the event dataset **[!UICONTROL Datasets settings]** sec
 
 ### Datasets preview
 
->[!AVAILABILITY]
->
->The enhanced **[!UICONTROL Dataset preview]** interface (including **[!UICONTROL Stitching metrics]** and **[!UICONTROL Bad IDs]**) described in this section is in the Limited Testing phase of release and might not be available yet in your environment. If not available, you see the dataset preview as part of the **[!UICONTROL Dataset settings]** interface. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
->
-
 On top of the standard **[!UICONTROL Datasets preview]** interface, when [adding](/help/connections/create-connection.md#add-datasets) or [editing](/help/connections/create-connection.md#edit-a-dataset) datasets in a person-based connection, two additional information panels are available.
 
 >[!NOTE]
