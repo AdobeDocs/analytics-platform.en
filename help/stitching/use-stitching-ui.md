@@ -1,6 +1,6 @@
 ---
 title: Enable Stitching
-description: Enable identity stitching for event datasets in Customer Journey Analytics. Learn how to configure persistent IDs, person IDs, and replay windows in the Connections UI to stitch data.
+description: Enable stitching for event datasets in Customer Journey Analytics. Configure persistent IDs, person IDs, and replay windows in the Connections UI.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
@@ -8,7 +8,7 @@ exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 ---
 # Enable stitching
 
-You can enable stitching on one or more event datasets you have configured as part of your connection. The Customer Journey Analytics package that you have licensed determines the number of event datasets you can enable for stitching .
+You can enable stitching on one or more event datasets you have configured as part of your connection. The Customer Journey Analytics package that you have licensed determines the number of event datasets you can enable for stitching.
 
 You enable stitching as part of the [dataset settings](/help/connections/create-connection.md#dataset-settings) for an event dataset when you [create a connection](/help/connections/create-connection.md) or when you [edit a connection](/help/connections/manage-connections.md#edit-a-connection).
 
@@ -16,15 +16,14 @@ You enable stitching as part of the [dataset settings](/help/connections/create-
 
 You need to check and meet the prerequisites for the stitching method you specify: [field-based stitching](fbs.md#prerequisites) or [graph-based stitching](gbs.md#prerequisites).
 
-
 ## Preflight checks
 
 If you meet the prerequisites, you might want to perform some preflight checks on the data in the event dataset before you enable identity stitching:
 
-* If you are going to use XDM schema fields for persistent ID or person ID, ensure that identities are marked properly in the schema for the event dataset. [See Identity namespace overview](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
+* If you are going to use [Experience Data Model (XDM) schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) fields for persistent ID or person ID, ensure that identities are marked properly in the schema for the event dataset. [See Identity namespace overview](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
 * Verify identity coverage for both persistent ID and person ID:
   
-  * **Persistent ID**
+  * **[!UICONTROL Persistent ID]**
   
     Query 7 days of data where your persistent ID field is not null and divide by a query of 7 days of data for all events in your dataset. This percentage should be above 95%.
 
@@ -47,11 +46,11 @@ If you meet the prerequisites, you might want to perform some preflight checks o
     * `{PERSISTENT_ID_FIELD}` is the field for the persistent ID. For example: `identityMap.ecid[0]`.
     * `{DATASET_TABLE_NAME}` is the table name for the event dataset.
     * `{FORMAT_STRING}` is the format string for the timestamp field. For example: `MM/DD/YY HH12:MI AM`.
-    * `{START_DATE} `is the start date. For example: `2024-01-01 00:00:00`.
+    * `{START_DATE}`is the start date. For example: `2024-01-01 00:00:00`.
     * `{END_DATE}` is the end date in standard format. For example: `2024-01-08 00:00:00`.
   
 
-  * **Person ID**
+  * **[!UICONTROL Person ID]**
     * For graph-based stitching, ensure that the identity graph contains fragments that link ID values from your chosen persistent ID namespace and person ID namespace. You could run a test by going to the [Experience Platform Identity graph viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} and query the graph by some sample persistent ID values. Verify to see if these persistent ID values are linked to person ID values in the graph.
     * For field-based stitching, query 7 days of data where your person ID field is not null and divide by a query of 7 days of data for all events in your dataset. This percentage should ideally above 5%.
 
@@ -124,9 +123,9 @@ You can enable identity stitching when you [add](/help/connections/create-connec
 
 ### Dataset settings
 
-To enable stitching, in the event dataset **[!UICONTROL Datasets settings]** section of the **[!UICONTROL Add datasets]** or **[!UICONTROL Edit dataset]** dialog: 
+To enable stitching, in the event dataset **[!UICONTROL Datasets settings]** section of the **[!UICONTROL Add datasets]** or **[!UICONTROL Edit dataset]** dialog.
 
-![Identity stitching options when you enable identity stitching](assets/identity-stitching-ui.png)
+![Identity stitching options when you enable the feature](assets/identity-stitching-ui.png)
 
 1. Select **[!UICONTROL Enable identity stitching]**.
    
@@ -136,14 +135,14 @@ To enable stitching, in the event dataset **[!UICONTROL Datasets settings]** sec
 
 1. Select a persistent ID from the **[!UICONTROL Persistent ID]** drop-down menu.
 
-   If you select **[!UICONTROL Identity Map]** for the persistent ID, you have to select a namespace . You have two options:
+   If you select **[!UICONTROL Identity Map]** for the persistent ID, select a namespace. You have two options:
 
    * Select **[!UICONTROL Use primary identity namespace]** to use the primary identity namespace.
    * Select a namespace from the **[!UICONTROL Namespace]** drop-down menu.
 
 1. Select a person ID from the **[!UICONTROL Person ID]** drop-down menu.
 
-   If you select **[!UICONTROL Identity Map]** for the person ID, you have to select a namespace. You have two options:
+   If you select **[!UICONTROL Identity Map]** for the person ID, select a namespace. You have two options:
 
    * Select **[!UICONTROL Use primary identity namespace]** to use the primary identity namespace.
    * Select a namespace from the **[!UICONTROL Namespace]** drop-down menu.
@@ -160,7 +159,7 @@ To enable stitching, in the event dataset **[!UICONTROL Datasets settings]** sec
 
    * Select a namespace from the **[!UICONTROL Namespace]** drop-down menu.
 
-1. Select a replay window from the **[!UICONTROL Replay window]** drop-down menu. The available options are  dependent on the Customer Journey Analytics package that you are entitled to.
+1. Select a replay window from the **[!UICONTROL Replay window]** drop-down menu. The available options are dependent on the Customer Journey Analytics package that you are entitled to.
 
 1. Select **[!UICONTROL Next]** to see a preview of the event dataset subject to stitching.
 
@@ -169,9 +168,14 @@ To enable stitching, in the event dataset **[!UICONTROL Datasets settings]** sec
 
 On top of the standard **[!UICONTROL Datasets preview]** interface, when [adding](/help/connections/create-connection.md#add-datasets) or [editing](/help/connections/create-connection.md#edit-a-dataset) datasets in a person-based connection, two additional information panels are available.
 
-![Identity stitching options when you enable identity stitching](assets/identity-stitching-ui-preview.png)
+![Identity stitching options when you enable the feature](assets/identity-stitching-ui-preview.png)
 
 #### Stitching metrics
+
+>[!AVAILABILITY]
+>
+>Stitching metrics are not available for graph-based stitching.
+>
 
 **[!UICONTROL Stitching metrics]** are calculated using a sample set of data with event timestamps from the last 7 days. This sample set of data usually differs from the sample data used in the **[!UICONTROL Preview]** table. Stitching metrics provide details for:
 
@@ -185,8 +189,12 @@ On top of the standard **[!UICONTROL Datasets preview]** interface, when [adding
     
   Persistent ID coverage is shown as a percentage and compared to what is the minimum recommended on a stable development or on a production setup.
 
-
 #### Bad IDs
+
+>[!AVAILABILITY]
+>
+>Bad IDs are not available for graph-based stitching.
+>
 
 >[!INFO]
 >
@@ -230,8 +238,8 @@ On top of the [field-based stitching limitations](/help/stitching/fbs.md#limitat
 
 ## Migration
 
-Stitching enabled in the Connections interface can coexist without any issues with request based stitching. 
+Stitching enabled in the Connections interface can coexist without any issues with request-based stitching. 
 
 For example, you have web-based stitched datasets in the data lake as a result of earlier or current stitching requests. You can add stitched data from a call-center dataset using the Connections interface to combine that data with the web-based data. 
 
-Eventually, Adobe will migrate your request based stitched datasets to the new stitching in connections experience.
+Eventually, Adobe will migrate your request-based stitched datasets to the new stitching in connections experience.
