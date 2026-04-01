@@ -17,6 +17,18 @@ Get a glimpse of the newest enhancements in the Customer Journey Analytics produ
 
 >[!BEGINTABS]
 
+>[!TAB Break down panels]
+
+You can now break down a panel in Analysis Workspace. There are scenarios where a breakdown of data and visualizations in a panel is preferred above applying segments to a panel. 
+
+[![image](assets/learn-more-button.svg)](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)
+
+>[!TAB Multiple dimension columns]
+
+You can include up to 5 dimension columns in a freeform table, allowing you to view multiple dimension items side by side. Each row of dimension items behaves like a single concatenated dimension item.
+
+[![image](assets/learn-more-button.svg)](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)
+
 >[!TAB Stitching in Connections]
 
 You can now configure and enable stitching on event datasets directly within the Customer Journey Analytics Connections UI. 
