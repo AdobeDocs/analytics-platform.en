@@ -169,10 +169,6 @@ To enable stitching, in the event dataset **[!UICONTROL Datasets settings]** sec
 
 On top of the standard **[!UICONTROL Datasets preview]** interface, when [adding](/help/connections/create-connection.md#add-datasets) or [editing](/help/connections/create-connection.md#edit-a-dataset) datasets in a person-based connection, two additional information panels are available.
 
->[!NOTE]
->For customers that have Customer Journey Analytics deployed on AWS, this functionality is pending release.
->
-
 ![Identity stitching options when you enable identity stitching](assets/identity-stitching-ui-preview.png)
 
 #### Stitching metrics
