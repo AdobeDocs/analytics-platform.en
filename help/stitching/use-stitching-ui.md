@@ -147,7 +147,6 @@ To enable stitching, in the event dataset **[!UICONTROL Datasets settings]** sec
    * Select **[!UICONTROL Use primary identity namespace]** to use the primary identity namespace.
    * Select a namespace from the **[!UICONTROL Namespace]** drop-down menu.
  
-
    If you select **[!UICONTROL Identity Graph]** for the person ID (to use [graph-based stitching](/help/stitching/gbs.md)), you have to select a namespace. 
    
    >[!NOTE]
