@@ -57,6 +57,11 @@ Content Analytics uses web image view data in event datasets in Experience Platf
 >If you have licensed the Privacy and Security Shield add-on, be aware that (any data generated from) experiences and assets, subject to Content Analytics, are not covered by DULE labeling or Customer Managed Keys. Also, Content Analytics is not a HIPAA-Ready service.
 >
 
+>[!IMPORTANT]
+>
+>Content Analytics supports featurization in English only.
+>
+
 
 >[!MORELIKETHIS]
 >
