@@ -5,7 +5,6 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: yes
-hidefromtoc: yes
 exl-id: 1d17151b-3a12-468e-9a4f-9e5994599570
 ---
 # Step 4: Retain historical data when upgrading

@@ -4,7 +4,6 @@ description: Send data to Adobe Experience Platform when migrating to Customer J
 solution: Customer Journey Analytics
 feature: Basics
 hide: yes
-hidefromtoc: yes
 exl-id: d9d7f186-9077-4372-94ad-8dd5b97779ca
 ---
 # Step 3: Send data to Adobe Experience Platform when upgrading

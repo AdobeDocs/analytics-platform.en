@@ -5,7 +5,6 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: yes
-hidefromtoc: yes
 exl-id: fd3b36ab-72c1-469a-b2c7-419813c82425
 ---
 # Step 1: Get started with the upgrade to Customer Journey Analytics
