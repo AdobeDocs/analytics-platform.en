@@ -148,7 +148,7 @@ You should see a visualization and table similar as shown below.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk. Ensure you use the appropriate filter name. For example, `Fishing Products`.
+1. Enter the following code block in a new chunk. Ensure you use the appropriate filter name. For example, `Fishing Products`.
 
    ```R
    ## Dimension filtered by name

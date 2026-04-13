@@ -600,7 +600,7 @@ You should see a visualization and table similar as shown below.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    ## Daily Events
@@ -738,7 +738,7 @@ You should see a visualization and table similar as shown below.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    ## Hourly Events
@@ -905,7 +905,7 @@ You should see a visualization and table similar as shown below.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    ## Hourly Events
@@ -1132,7 +1132,7 @@ You should see a visualization and table similar as shown below.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    library(tidyr)
@@ -1392,7 +1392,7 @@ You should see a visualization and table similar as shown below.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    ## Multiple dimensions ranked
@@ -1561,7 +1561,7 @@ You should see a visualization and table similar as shown below.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    ## Count Distinct
@@ -1708,7 +1708,7 @@ You should see a visualization and table similar as shown below.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk. Ensure you use the appropriate date range name. For example, `Last Year 2023`.
+1. Enter the following code block in a new chunk. Ensure you use the appropriate date range name. For example, `Last Year 2023`.
 
    ```R
    ## Monthly Events for Last Year
@@ -1876,7 +1876,7 @@ You should see a visualization and table similar as shown below.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk. Ensure you use the appropriate filter name. For example, `Fishing Products`.
+1. Enter the following code block in a new chunk. Ensure you use the appropriate filter name. For example, `Fishing Products`.
 
    ```R
    ## Dimension filtered by name
@@ -2041,7 +2041,7 @@ You then can use that segment in an example **[!UICONTROL Using Dimension Values
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk. Ensure you use an appropriate category. For examplee, `Hunting`.
+1. Enter the following code block in a new chunk. Ensure you use an appropriate category. For examplee, `Hunting`.
 
    ```R
    ## Dimension 1 Filtered by Dimension 2 value
@@ -2297,7 +2297,7 @@ The query is excuted by the BI extension as defined in Jupyter Notebook.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    ## Dimension 1 Sorted
@@ -2582,7 +2582,7 @@ The query is excuted by the BI extension as defined in Jupyter Notebook.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    ## Dimension 1 Limited
@@ -2842,7 +2842,7 @@ The Customer Journey Analytics components (dimensions, metrics, filters, calcula
 
 **Custom transformations**
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    df <- dv %>%

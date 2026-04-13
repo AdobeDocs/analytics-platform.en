@@ -255,7 +255,7 @@ The query is excuted by the BI extension as defined in Jupyter Notebook.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    ## Dimension 1 Limited

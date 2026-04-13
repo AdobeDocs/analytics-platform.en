@@ -147,7 +147,7 @@ You should see a visualization and table similar as shown below.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    ## Daily Events
