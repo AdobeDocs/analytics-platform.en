@@ -126,7 +126,7 @@ This section discusses the wrong use of derived fields. Especially, where altern
 
 * Trim / Lowercase: use the [Substring](/help/data-views/component-settings/substring.md) and [Behavior](/help/data-views/component-settings/behavior.md) component settings unless you need combined multi-step transformations.
 * Value exclusion: use [Include exclude values](/help/data-views/component-settings/include-exclude-values.md) for metrics or dimension values at the data view component level, not in a derived field.
-* Attribution and persistence: Avoid simulating dimensions in a derived field with [Next or Previous](./derived-fields.md#next-or-previous) or other sequential logic. Use the data view [Attribution](/help/data-views/component-settings/attribution.md) and [Persistence](/help/data-views/component-settings/persistence.md) settings for dimensions. 
+* Attribution and persistence: Use the data view [Persistence](/help/data-views/component-settings/persistence.md) settings (**[!UICONTROL Allocation model]** and **[!UICONTROL Expiration]**) for dimensions instead of simulating them in a derived field with [Next or Previous](./derived-fields.md#next-or-previous) or other sequential logic. 
 * Numeric bucketing: keep the derived field numeric and let the data view create a bucketed dimension on top, rather than hard-coding range labels in a [Case When](./derived-fields.md#case-when) chain.
 * Conditional logic: convert simple 0 or 1 flag logic to either:
   * the original metric with include or exclude values filter logic as applied in Analysis Workspace. 
@@ -155,7 +155,7 @@ Customer Journey Analytics allows coercing numeric fields to dimensions and stri
   * Set the component type to **[!UICONTROL Metric]** in the data view.
   * If the component represents a subset metric (for example, **[!UICONTROL Checkout Page Views]**), use a filtered metric within the data view rather than a derived string plus a calculated metric on top.
 * If the output is a label:
-  * Set the component type to **[!UICONTROL Dimension]** and configure [attribution](/help/data-views/component-settings/attribution.md) and [persistence](/help/data-views/component-settings/persistence.md) settings accordingly.
+  * Set the component type to **[!UICONTROL Dimension]** and configure the [Persistence](/help/data-views/component-settings/persistence.md) settings (**[!UICONTROL Allocation model]** and **[!UICONTROL Expiration]**) accordingly.
 
 ## Marketing channel and campaign logic pitfalls
 
@@ -278,12 +278,12 @@ This section discusses the over-usage of [Next or Previous](./derived-fields.md#
 ### Risk diagnosis: data quality, high maintenance
 
 * Complexity and fragility: heavy sequential logic is harder to reason about and may break if sessionization rules or ordering change.
-* Redundancy with attribution or persistence: some use cases (for example, last touch channel attribution on a session) are better covered by data view attribution settings.
+* Redundancy with dimension persistence: some use cases (for example, Last touch channel on a session) are better covered by the data view [Persistence](/help/data-views/component-settings/persistence.md) settings (**[!UICONTROL Allocation model]**) on the dimension.
 
 ### Recommendations
 
-* For patterns that resemble standard attribution, use dimension [attribution](/help/data-views/component-settings/attribution.md) and [persistence](/help/data-views/component-settings/persistence.md) settings in the data view instead of simulating them with [Next or Previous](./derived-fields.md#next-or-previous).
-* Reserve [Next or Previous](./derived-fields.md#next-or-previous) for advanced multi-step path or funnel labeling that attribution alone cannot achieve (for example: channel sequence concatenation).
+* For patterns that resemble standard persistence (for example, carrying a value forward across a session or person), use the dimension's [Persistence](/help/data-views/component-settings/persistence.md) settings (**[!UICONTROL Allocation model]** and **[!UICONTROL Expiration]**) in the data view instead of simulating these patterns with [Next or Previous](./derived-fields.md#next-or-previous).
+* Reserve [Next or Previous](./derived-fields.md#next-or-previous) for advanced multi-step path or funnel labeling that dimension persistence alone cannot achieve (for examle: channel sequence concatenation).
 
 ## Ignoring session and person-level context
 
@@ -344,13 +344,15 @@ Also check the data view configuration for each derived component.
 ### Patterns
 
 * A derived dimension has default attribution (for example: Last touch with session expiration) but the derived field name implies a different semantic (for example: `First Campaign of Visit`, `Original Source`).
+* A derived dimension has default [Persistence](/help/data-views/component-settings/persistence.md) settings (for example: **[!UICONTROL Most Recent]** allocation with **[!UICONTROL Session]** expiration) but the name of the derived dimension implies a different semantic (e.g., `First Campaign of Visit` or `Original Source`).
 
 
 ### Risk diagnosis: data quality
 
-* Semantic mismatch: the dimension's label suggests a different [attribution](/help/data-views/component-settings/attribution.md) or [expiration](/help/data-views/component-settings/persistence.md) behavior (for example: first-touch or original-source) than what is actually configured.
-* This mismatch increases the risk that analysts misinterpret reports or compare components that appear similar by name but use different attribution models.
+* Semantic mismatch: the dimension's label suggests a different allocation or expiration behavior (for example, Original allocation or Person-level expiration) than what is actually configured.
+* This mismatch increases the risk that analysts misinterpret reports or compare components that appear similar by name but use different allocation models.
 
 ### Recommendations
 
 * Adjust the [allocation model and expiration](/help/data-views/component-settings/persistence.md) on that dimension to align name and behavior. For example, a derived field dimension named `Original Source` should use First touch attribution with expiration set to Person.
+* Adjust the **[!UICONTROL Allocation model]** and **[!UICONTROL Expiration]** in the dimension's [Persistence](/help/data-views/component-settings/persistence.md) settings to align name and behavior. For example, `Original Source` should set the **[!UICONTROL Allocation model]** to  **[!UICONTROL Original]**  with **[!UICONTROL Expiration]** set to **[!UICONTROL Person]**.
