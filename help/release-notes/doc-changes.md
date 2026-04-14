@@ -13,6 +13,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 |---|---|
+| **April 2026** | |
+| Updated cohort analysis use cases | Based on feedback added Analyis Workspace examples to the cohort analysis use cases. | 
 | **March 2026** | |
 | Break down a panel | Restructured the documentation around the [drop zone for a panel](/help/analysis-workspace/c-panels/panels.md#drop-zone) to support the new [break down](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) functionality. |
 | Technote on Bad IDs (BAVIDs) | New [technote on Bad IDs](/help/technotes/badids.md). The technote  explains the definition of a Bad ID, where in the Customer Journey Analytics interface Bad IDs are used, and how to investigate data in your connection for Bad IDs. |
