@@ -356,3 +356,4 @@ Also check the data view configuration for each derived component.
 
 * Adjust the [allocation model and expiration](/help/data-views/component-settings/persistence.md) on that dimension to align name and behavior. For example, a derived field dimension named `Original Source` should use First touch attribution with expiration set to Person.
 * Adjust the **[!UICONTROL Allocation model]** and **[!UICONTROL Expiration]** in the dimension's [Persistence](/help/data-views/component-settings/persistence.md) settings to align name and behavior. For example, `Original Source` should set the **[!UICONTROL Allocation model]** to  **[!UICONTROL Original]**  with **[!UICONTROL Expiration]** set to **[!UICONTROL Person]**.
+
