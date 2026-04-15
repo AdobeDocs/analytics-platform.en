@@ -127,8 +127,8 @@ Select and configure the following datasets:
 | AJO Push Tracking Experience Event Dataset | Event | Person ID: `IdentityMap` | Contains push tracking events such as '[!UICONTROL App Launches]'. |
 | Journey Step Events | Event | Person ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contains events showing which profiles participated in each node of the journey. |
 | AJO Entity Dataset | Lookup | Key: `_id`<br>Matching Key: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contains classifications that associate Journey and Campaign metadata to all Journey Optimizer event data. |
-| AJO Message Feedback Event Dataset – Non Profile | Event | Person ID: `IdentityMap` | Contains non-profile message delivery feedback events. Available only when the High Throughput Add-on is enabled. |
-| AJO Email Tracking Experience Event Dataset – Non Profile | Event | Person ID: `IdentityMap` | Contains non-profile email tracking experience events. Available only when the High Throughput Add-on is enabled. |
+| AJO Message Feedback Event Dataset – Non Profile | Event | Person ID: `IdentityMap` | Contains non-profile message delivery feedback events. Available only when the [High Throughput transactional messaging add-on](#high-throughput-add-on-datasets) is enabled. |
+| AJO Email Tracking Experience Event Dataset – Non Profile | Event | Person ID: `IdentityMap` | Contains non-profile email tracking experience events. Available only when the [High Throughput transactional messaging add-on](#high-throughput-add-on-datasets) is enabled. |
 
 {style="table-layout:auto"}
 
