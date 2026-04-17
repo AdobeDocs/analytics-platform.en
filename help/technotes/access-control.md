@@ -128,6 +128,7 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in the [Adm
 | [!UICONTROL Reporting Tools] | [!UICONTROL AI Assistant: Product Knowledge]  | Let users access the [AI Assistant](../ai-assistant.md) for product knowledge. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Data Insights Agent]  | Let users access the [Data Insights Agent](../data-analysis-ai.md) for AI driven data insights. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Intelligent Captions] | Let users access [Intelligent captions](/help/analysis-workspace/visualizations/intelligent-captions.md). |
+| [!UICONTROL Reporting Tools] | [!UICONTROL MCP Access] | Let users access the [Customer Journey Analytics MCP server](https://developer.adobe.com/analytics-mcp/docs/cja/).
 | [!UICONTROL Data View Tools] | [!UICONTROL Full Table Export] | Let users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md).  |
 | [!UICONTROL Data View Tools] | [!UICONTROL CJA BI Extension] | Let users use the [BI extension](../data-views/bi-extension.md). |
 
