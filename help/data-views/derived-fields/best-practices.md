@@ -224,7 +224,7 @@ This section discusses the misuse or overreach of the regex functionality for de
 
 **Patterns**
 
-* [Regex Replace or regex-based conditions use broad patterns; simpler [Case When](./derived-fields.md#case-when) functions with **[!UICONTROL Contains]** or **[!UICONTROL Starts with]** are better alternatives.
+* [Regex Replace](./derived-fields.md#regex-replace) or regex-based conditions use broad patterns; simpler [Case When](./derived-fields.md#case-when) functions with **[!UICONTROL Contains]** or **[!UICONTROL Starts with]** are better alternatives.
 
   +++ Example
 
