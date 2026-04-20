@@ -58,3 +58,4 @@ If you don't yet have an attribution model that provides satisfactory answers to
 * You might need to use the services of a data scientist instead of relying on Analysis Workspace alone.
 * You can rely on raw data, as in Adobe data feeds.
 * Consider using [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview), for example, if you want to consider your impressions data.
+

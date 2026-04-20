@@ -19,7 +19,7 @@ When you have enabled Customer Journey Analytics reporting for Journey Optimizer
 
 ### Connection
 
-The connection has the name **[!UICONTROL AJO Enabled Connection (*sandbox name*)]** and has the following out of the box values for configuration and datasets:
+The connection has the name **[!UICONTROL AJO Enabled Connection (*sandbox name*)]** and has the following out-of-the-box values for configuration and datasets:
 
 | **Connection settings** | Value|
 |---|---|
@@ -42,13 +42,29 @@ The connection has the name **[!UICONTROL AJO Enabled Connection (*sandbox name*
 | [!UICONTROL AJO Email Tracking Experience Event Dataset] | [!UICONTROL AJO Email Tracking Experience Event Schema] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL IdentityMap(\<primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) On | ![Status Gray](assets/../../connections/assets/status-gray.svg) Off |
 | [!UICONTROL AJO Message Feedback Event Dataset] | [!UICONTROL AJO Message Feedback Event Schema] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL IdentityMap(\<primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) On | ![Status Gray](assets/../../connections/assets/status-gray.svg) Off |
 | [!UICONTROL AJO Push Tracking Experience Event Dataset] | [!UICONTROL AJO Push Tracking Experience Event Schema] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL IdentityMap(\<primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) On | ![Status Gray](assets/../../connections/assets/status-gray.svg) Off |
+| [!UICONTROL AJO Message Feedback Event Dataset – Non Profile] <br/>(See the [High Throughput add-on datasets](#high-throughput-add-on-datasets) section below) | [!UICONTROL AJO Message Feedback Event Schema] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL IdentityMap(\<primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) On | ![Status Gray](assets/../../connections/assets/status-gray.svg) Off |
+| [!UICONTROL AJO Email Tracking Experience Event Dataset – Non Profile] <br/>(See the [High Throughput add-on datasets](#high-throughput-add-on-datasets) section below) | [!UICONTROL AJO Email Tracking Experience Event Schema] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL IdentityMap(\<primary\>)] | - | - | ![Status Green](assets/../../connections/assets/status-green.svg) On | ![Status Gray](assets/../../connections/assets/status-gray.svg) Off |
 
+#### High Throughput add-on datasets
+
+When the High Throughput transactional messaging add-on is enabled for your IMS Org, two additional non-profile, system-generated datasets are included in the connection:
+
+* AJO Message Feedback Event Dataset – Non Profile
+
+* AJO Email Tracking Experience Event Dataset – Non Profile
+
+When the High Throughput transactional messaging add-on is enabled, two new widgets become available in Journey Optimizer reporting at the global (sandbox) level (they are not available at the per-campaign level):
+
+* **[!UICONTROL Rolling 7 Day P95 Latency Widget]**: Shows P95 latency as a single value, including percentage change from the previous week.
+* **[!UICONTROL Rolling 7 Day P95 Throughput Widget]**: Shows P95 throughput as a single value, including percentage change from the previous week.
+
+For more information about these datasets and the High Throughput transactional messaging add-on, see [Activate High throughput mode for API triggered campaigns](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput) in the Adobe Journey Optimizer documentation.
 
 ### Data view
 
 The data view has the name **AJO Enable Data View (*sandbox name*)**.
 
-- In the **[!UICONTROL Configure]** tab, the following values are configured out of the box.
+* In the **[!UICONTROL Configure]** tab, the following values are configured out of the box.
 
     | Settings | Value |
     |---|---|
@@ -77,13 +93,13 @@ The data view has the name **AJO Enable Data View (*sandbox name*)**.
     | [!UICONTROL First day of the week]  | Sunday |
 
 
-- In the **Components** tab:
-  - All metrics and dimensions that have [!UICONTROL (AJO)] appended to their name are added automatically as part of this automatic configuration. 
-  - Some of the metrics or dimensions that have been added automatically are based on derived fields. These derived fields are specifically created for this integration. For example, the metric [!UICONTROL Landing Page Clicks (AJO)] is based on the [!UICONTROL Landing Page Clicks] derived field.
-  - Some of the metrics or dimensions have additional configuration. For example, [!UICONTROL Spam Complaint (AJO)] does have [!UICONTROL Format] and [!UICONTROL Include Exclude Values] settings applied.
-  - All automatically added metrics and dimensions do have a context label named `:`*`name_of_metric_or_dimension`*. For example, the [!UICONTROL Landing Page Clicks (AJO)] metric has the context label `:Landing page clicks (AJO)`.
+* In the **Components** tab:
+  * All metrics and dimensions that have [!UICONTROL (AJO)] appended to their name are added automatically as part of this automatic configuration. 
+  * Some of the metrics or dimensions that have been added automatically are based on derived fields. These derived fields are specifically created for this integration. For example, the metric [!UICONTROL Landing Page Clicks (AJO)] is based on the [!UICONTROL Landing Page Clicks] derived field.
+  * Some of the metrics or dimensions have additional configuration. For example, [!UICONTROL Spam Complaint (AJO)] does have [!UICONTROL Format] and [!UICONTROL Include Exclude Values] settings applied.
+  * All automatically added metrics and dimensions do have a context label named `:`*`name_of_metric_or_dimension`*. For example, the [!UICONTROL Landing Page Clicks (AJO)] metric has the context label `:Landing page clicks (AJO)`.
 
-- In the **[!UICONTROL Settings]** tab, no specific configuration values are applied
+* In the **[!UICONTROL Settings]** tab, no specific configuration values are applied
 
 >[!IMPORTANT]
 >
@@ -111,6 +127,8 @@ Select and configure the following datasets:
 | AJO Push Tracking Experience Event Dataset | Event | Person ID: `IdentityMap` | Contains push tracking events such as '[!UICONTROL App Launches]'. |
 | Journey Step Events | Event | Person ID: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contains events showing which profiles participated in each node of the journey. |
 | AJO Entity Dataset | Lookup | Key: `_id`<br>Matching Key: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contains classifications that associate Journey and Campaign metadata to all Journey Optimizer event data. |
+| AJO Message Feedback Event Dataset – Non Profile | Event | Person ID: `IdentityMap` | Contains non-profile message delivery feedback events. Available only when the [High Throughput transactional messaging add-on](#high-throughput-add-on-datasets) is enabled. |
+| AJO Email Tracking Experience Event Dataset – Non Profile | Event | Person ID: `IdentityMap` | Contains non-profile email tracking experience events. Available only when the [High Throughput transactional messaging add-on](#high-throughput-add-on-datasets) is enabled. |
 
 {style="table-layout:auto"}
 
