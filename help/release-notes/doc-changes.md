@@ -14,6 +14,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 |---|---|
 | **April 2026** | |
+| Derived fields guidelines | Added article with [guidelines](/help/use-cases/data-views/derived-fields/guidelines.md) (best practices, guardrails, and common pitfalls) for working with derived fields. | 
 | Added missing documentation for two datasets that can be included when integrating Journey Optimizer | [Two additional non-profile, system-generated datasets](/help/integrations/ajo.md#high-throughput-add-on-datasets) are included in the connection when the High Throughput transactional messaging add-on is enabled for your IMS Org. |
 | Updated cohort analysis use cases | Based on feedback added Analyis Workspace examples to the cohort analysis use cases. |
 | **March 2026** | |

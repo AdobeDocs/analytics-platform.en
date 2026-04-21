@@ -508,9 +508,10 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Visualizations](/help/use-cases/data-views/bi-extension/visualizations.md)
       + [Caveats](/help/use-cases/data-views/bi-extension/caveats.md)
   
-  + Derived fields {#derived-fields}
-    + [Report on LLM and AI-generated traffic](/help/use-cases/ai-traffic.md)
-    + [Report on goals](../use-cases/goals-using-derived-fields.md)
+    + Derived fields {#derived-fields}
+      + [Derived fields guidelines](/help/use-cases/data-views/derived-fields/guidelines.md)
+      + [Report on LLM and AI-generated traffic](/help/use-cases/ai-traffic.md)
+      + [Report on goals](../use-cases/goals-using-derived-fields.md)
   + Product analysis {#product-analysis}
     + [Product analysis](/help/use-cases/product-analysis.md)
   + Stitching {#stitching}
