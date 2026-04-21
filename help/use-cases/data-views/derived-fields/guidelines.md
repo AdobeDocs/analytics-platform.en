@@ -72,7 +72,7 @@ This section discusses data view default segments that reference high-cardinalit
 
 This section discusses over-complex chains of [Case When](/help/data-views/derived-fields/derived-fields.md#case-when) rules. 
 
-Customer Journey Analytics enforces explicit [function and operator limits](derived-fields.md#limitations) per derived field (for example,  maximum number of operators, maximum number of function per type). Over-complex functions and chains within functions are harder to maintain and more error-prone.
+Customer Journey Analytics enforces explicit [function and operator limits](/help/data-views/derived-fields/derived-fields.md#limitations) per derived field (for example,  maximum number of operators, maximum number of function per type). Over-complex functions and chains within functions are harder to maintain and more error-prone.
 
 **Patterns**
 
