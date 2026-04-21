@@ -10,13 +10,13 @@ hide: yes
 
 # Derived fields guidelines
 
-Customer Journey Analytics [derived fields](./derived-fields.md) let you transform, classify, and enrich data at query time without modifying source datasets. That flexibility can introduce complexity, performance problems, and maintenance overhead if applied without discipline.
+Customer Journey Analytics [derived fields](/help/data-views/derived-fields/derived-fields.md) let you transform, classify, and enrich data at query time without modifying source datasets. That flexibility can introduce complexity, performance problems, and maintenance overhead if applied without discipline.
 
 This article provides guidelines (best practices, guardrails, and common pitfalls) for working with derived fields. The intended audience is data architects, product administrators, and analysts who need to:
 
 * **Optimize performance**: Identify patterns that slow down the execution of queries or hit system limits, to select the right tool for the job: 
 
-  * [Derived fields](./derived-fields.md)
+  * [Derived fields](/help/data-views/derived-fields/derived-fields.md)
   * [Data view settings](/help/data-views/component-settings/overview.md)
   * [Data Prep](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/home)
   * [Calculated metrics](/help/components/calc-metrics/calc-metr-overview.md)
@@ -56,7 +56,7 @@ This section discusses data view default segments that reference high-cardinalit
 **Patterns**
 
 * Data view default segments that reference a derived field that is built on a high-cardinality dimension (approximately one million or more distinct values). For example: full page URL.
-* Simple operations like [Lowercase](./derived-fields.md#lowercase), [Trim](./derived-fields.md#trim), or [Case When](./derived-fields.md#case-when) checks on page URL are often more expensive than the same logic on low-cardinality fields.
+* Simple operations like [Lowercase](/help/data-views/derived-fields/derived-fields.md#lowercase), [Trim](/help/data-views/derived-fields/derived-fields.md#trim), or [Case When](/help/data-views/derived-fields/derived-fields.md#case-when) checks on page URL are often more expensive than the same logic on low-cardinality fields.
 
 **Risk diagnosis: performance**
 
@@ -64,20 +64,20 @@ This section discusses data view default segments that reference high-cardinalit
 
 **Recommendations**
 
-* Avoid referencing full page URLs or similarly high-cardinality components directly in data view default segments. Push heavy URL logic (complex [Case When](./derived-fields.md#case-when), [Regex Replace](./derived-fields.md#regex-replace), multiple string functions) upstream to [Data Prep](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/home) or [lookup datasets](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) so the resulting classifications land on simpler, lower-cardinality dimensions.
+* Avoid referencing full page URLs or similarly high-cardinality components directly in data view default segments. Push heavy URL logic (complex [Case When](/help/data-views/derived-fields/derived-fields.md#case-when), [Regex Replace](/help/data-views/derived-fields/derived-fields.md#regex-replace), multiple string functions) upstream to [Data Prep](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/home) or [lookup datasets](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) so the resulting classifications land on simpler, lower-cardinality dimensions.
 * Prefer lower-cardinality keys such as normalized page name, site section, or pre-classified URL groups.
 * Periodically audit existing data view default segments and derived fields for references to high-cardinality dimensions (page URL, campaign IDs, raw query strings) and refactor to normalized or grouped keys.
 
 ## Over-complex Case When rule chains
 
-This section discusses over-complex chains of [Case When](./derived-fields.md#case-when) rules. 
+This section discusses over-complex chains of [Case When](/help/data-views/derived-fields/derived-fields.md#case-when) rules. 
 
 Customer Journey Analytics enforces explicit [function and operator limits](derived-fields.md#limitations) per derived field (for example,  maximum number of operators, maximum number of function per type). Over-complex functions and chains within functions are harder to maintain and more error-prone.
 
 **Patterns**
 
-* Very large [Case When](./derived-fields.md#case-when) functions with complex **[!UICONTROL If]** and **[!UICONTROL Else If]** chains:
-  * Many conditions (for example: more than 20 operators) or deep nesting (more than 3 or 4 levels of nested [Case When](./derived-fields.md#case-when) **[!UICONTROL If]** and **[!UICONTROL Else If]** logic).
+* Very large [Case When](/help/data-views/derived-fields/derived-fields.md#case-when) functions with complex **[!UICONTROL If]** and **[!UICONTROL Else If]** chains:
+  * Many conditions (for example: more than 20 operators) or deep nesting (more than 3 or 4 levels of nested [Case When](/help/data-views/derived-fields/derived-fields.md#case-when) **[!UICONTROL If]** and **[!UICONTROL Else If]** logic).
   * Repeated conditions on the same field with different values.
 * Repeated constant string matching.
 
@@ -91,12 +91,12 @@ Customer Journey Analytics enforces explicit [function and operator limits](deri
 **Risk diagnosis: performance, data quality, high maintenance**
 
 * Maintainability and error risk: logic encoded as a monolithic rule block is hard to debug and update.
-* Potential performance and limit risk: you may hit or approach [operator or function limits](./derived-fields.md#limitations), especially with classify-like patterns.
+* Potential performance and limit risk: you may hit or approach [operator or function limits](/help/data-views/derived-fields/derived-fields.md#limitations), especially with classify-like patterns.
 
 **Recommendations**
 
 * Split into multiple derived fields. For example, separate *campaign normalization* (mapping inconsistent campaign identifiers to a canonical value) from channel bucketing instead of combining everything in one giant rule.
-* Use lookup datasets. Many **[!UICONTROL If Value _value_ Criterion _criterion_ Then set _value_ to value]** conditions are better implemented as a [lookup dataset](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) combined with the [Lookup](./derived-fields.md#lookup) function instead of using long [Case When](./derived-fields.md#case-when) chains.
+* Use lookup datasets. Many **[!UICONTROL If Value _value_ Criterion _criterion_ Then set _value_ to value]** conditions are better implemented as a [lookup dataset](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) combined with the [Lookup](/help/data-views/derived-fields/derived-fields.md#lookup) function instead of using long [Case When](/help/data-views/derived-fields/derived-fields.md#case-when) chains.
 * Use data view component filters. If part of the logic simply filters out bad values, use [include exclude](/help/data-views/component-settings/include-exclude-values.md) at the data view component level instead of embedding that logic in a derived field.
 
 ## Wrong usage
@@ -120,7 +120,7 @@ This section discusses the wrong use of derived fields. Especially, where altern
     +++
 
     Instead, use [value bucketing](/help/data-views/component-settings/value-bucketing.md) on a dimension in your Data view.
-  * Persistence or attribution logic coded with [Next or Previous](./derived-fields.md#next-or-previous) or manual sequence logic where Data view [attribution](/help/data-views/component-settings/attribution.md) and [expiration](/help/data-views/component-settings/persistence.md) settings would suffice.
+  * Persistence or attribution logic coded with [Next or Previous](/help/data-views/derived-fields/derived-fields.md#next-or-previous) or manual sequence logic where Data view [attribution](/help/data-views/component-settings/attribution.md) and [expiration](/help/data-views/component-settings/persistence.md) settings would suffice.
   * A derived metric that simply counts an existing metric under a condition.
   
     +++ Example
@@ -141,8 +141,8 @@ This section discusses the wrong use of derived fields. Especially, where altern
 
 * Trim / Lowercase: use the [Substring](/help/data-views/component-settings/substring.md) and [Behavior](/help/data-views/component-settings/behavior.md) component settings unless you need combined multi-step transformations.
 * Value exclusion: use [Include exclude values](/help/data-views/component-settings/include-exclude-values.md) for metrics or dimension values at the data view component level, not in a derived field.
-* Attribution and persistence: Use the data view [Persistence](/help/data-views/component-settings/persistence.md) settings (**[!UICONTROL Allocation model]** and **[!UICONTROL Expiration]**) for dimensions instead of simulating them in a derived field with [Next or Previous](./derived-fields.md#next-or-previous) or other sequential logic. 
-* Numeric bucketing: keep the derived field numeric and let the data view create a bucketed dimension on top, rather than hard-coding range labels in a [Case When](./derived-fields.md#case-when) chain.
+* Attribution and persistence: Use the data view [Persistence](/help/data-views/component-settings/persistence.md) settings (**[!UICONTROL Allocation model]** and **[!UICONTROL Expiration]**) for dimensions instead of simulating them in a derived field with [Next or Previous](/help/data-views/derived-fields/derived-fields.md#next-or-previous) or other sequential logic. 
+* Numeric bucketing: keep the derived field numeric and let the data view create a bucketed dimension on top, rather than hard-coding range labels in a [Case When](/help/data-views/derived-fields/derived-fields.md#case-when) chain.
 * Conditional logic: convert simple 0 or 1 flag logic to either:
   * the original metric with include or exclude values filter logic as applied in Analysis Workspace. 
   * a filtered metric using data view component settings configuration.
@@ -178,7 +178,7 @@ This section discusses marketing channel and campaign logic pitfalls.
 
 >[!NOTE]
 >
->Consider upstream simplification: use [Data Prep](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/home), [lookup datasets](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md), or derived field functions like [Classify](./derived-fields.md#classify) to consolidate similar marketing channel rules and reduce the number of operators in your [Case When](./derived-fields.md#case-when) logic. Also, limit the number of high-cardinality fields referenced in channel classification logic (for example: many distinct query parameter keys), as these fields increase both cardinality and query cost.
+>Consider upstream simplification: use [Data Prep](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/home), [lookup datasets](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md), or derived field functions like [Classify](/help/data-views/derived-fields/derived-fields.md#classify) to consolidate similar marketing channel rules and reduce the number of operators in your [Case When](/help/data-views/derived-fields/derived-fields.md#case-when) logic. Also, limit the number of high-cardinality fields referenced in channel classification logic (for example: many distinct query parameter keys), as these fields increase both cardinality and query cost.
 
 **Patterns**
 
@@ -205,8 +205,8 @@ This section discusses the use of non-normalized string keys in lookups.
 
 **Patterns**
 
-* A [Lookup](./derived-fields.md#lookup) function over an event or profile field that feeds a lookup dataset.
-* No preceding [Lowercase](./derived-fields.md#lowercase), [Trim](./derived-fields.md#trim), or [Regex Replace](./derived-fields.md#regex-replace) standardizes the key.
+* A [Lookup](/help/data-views/derived-fields/derived-fields.md#lookup) function over an event or profile field that feeds a lookup dataset.
+* No preceding [Lowercase](/help/data-views/derived-fields/derived-fields.md#lowercase), [Trim](/help/data-views/derived-fields/derived-fields.md#trim), or [Regex Replace](/help/data-views/derived-fields/derived-fields.md#regex-replace) standardizes the key.
 * Common candidates: URL, campaign ID, email, account ID.
 
 **Risk diagnosis: Data Quality, High Maintenance**
@@ -215,7 +215,7 @@ This section discusses the use of non-normalized string keys in lookups.
 
 **Recommendations**
 
-* Add the [Lowercase](./derived-fields.md#lowercase) and [Trim](./derived-fields.md#trim) functions before the [Lookup](./derived-fields.md#lookup) function unless there is a documented reason to preserve upper- or lowercase.
+* Add the [Lowercase](/help/data-views/derived-fields/derived-fields.md#lowercase) and [Trim](/help/data-views/derived-fields/derived-fields.md#trim) functions before the [Lookup](/help/data-views/derived-fields/derived-fields.md#lookup) function unless there is a documented reason to preserve upper- or lowercase.
 * If multiple transformations are already chained, verify their order: normalize first, then look up.
 
 ## Regex misuse or overreach
@@ -224,7 +224,7 @@ This section discusses the misuse or overreach of the regex functionality for de
 
 **Patterns**
 
-* [Regex Replace](./derived-fields.md#regex-replace) or regex-based conditions use broad patterns; simpler [Case When](./derived-fields.md#case-when) functions with **[!UICONTROL Contains]** or **[!UICONTROL Starts with]** are better alternatives.
+* [Regex Replace](/help/data-views/derived-fields/derived-fields.md#regex-replace) or regex-based conditions use broad patterns; simpler [Case When](/help/data-views/derived-fields/derived-fields.md#case-when) functions with **[!UICONTROL Contains]** or **[!UICONTROL Starts with]** are better alternatives.
 
   +++ Example
 
@@ -235,7 +235,7 @@ This section discusses the misuse or overreach of the regex functionality for de
   +++
 
 * Multiple regex conditions overlap or conflict.
-* Heavy regex usage to parse URLs instead of using the [URL Parse](./derived-fields.md#url-parse) function.
+* Heavy regex usage to parse URLs instead of using the [URL Parse](/help/data-views/derived-fields/derived-fields.md#url-parse) function.
 
 **Risk diagnosis: Performance, Data Quality, High Maintenance**
 
@@ -244,8 +244,8 @@ This section discusses the misuse or overreach of the regex functionality for de
 
 **Recommendations**
 
-* Prefer [URL Parse](./derived-fields.md#url-parse) for standard URL elements (domain, path, query parameters) rather than [Regex Replace](./derived-fields.md#regex-replace).
-* For simple pattern checks, use [Case When](./derived-fields.md#case-when) with **[!UICONTROL Contains]**, **[!UICONTROL Starts with]**, or **[!UICONTROL Ends with]** logic instead of regular expressions with [Regex Replace](./derived-fields.md#regex-replace).
+* Prefer [URL Parse](/help/data-views/derived-fields/derived-fields.md#url-parse) for standard URL elements (domain, path, query parameters) rather than [Regex Replace](/help/data-views/derived-fields/derived-fields.md#regex-replace).
+* For simple pattern checks, use [Case When](/help/data-views/derived-fields/derived-fields.md#case-when) with **[!UICONTROL Contains]**, **[!UICONTROL Starts with]**, or **[!UICONTROL Ends with]** logic instead of regular expressions with [Regex Replace](/help/data-views/derived-fields/derived-fields.md#regex-replace).
 * Flag regular expressions that use multiple nested groups or alternations for simple patterns. Or regular expressions that you can replace using derived field string functions.
 
 ## Calculated metric style logic in derived fields
@@ -283,12 +283,12 @@ This section discusses the use of calculated style logic in a derived field.
 
 ## Over-usage of Next or Previous or sequential functions
 
-This section discusses the over-usage of [Next or Previous](./derived-fields.md#next-or-previous) or sequential functions.
+This section discusses the over-usage of [Next or Previous](/help/data-views/derived-fields/derived-fields.md#next-or-previous) or sequential functions.
 
 **Patterns**
 
-* A derived field uses [Next or Previous](./derived-fields.md#next-or-previous) functions multiple times (close to the documented per-field limit).
-* [Next or Previous](./derived-fields.md#next-or-previous) is used to implement persistence-like logic (for example: carrying a campaign forward) instead of using data view persistence.
+* A derived field uses [Next or Previous](/help/data-views/derived-fields/derived-fields.md#next-or-previous) functions multiple times (close to the documented per-field limit).
+* [Next or Previous](/help/data-views/derived-fields/derived-fields.md#next-or-previous) is used to implement persistence-like logic (for example: carrying a campaign forward) instead of using data view persistence.
  
 **Risk diagnosis: data quality, high maintenance**
 
@@ -297,8 +297,8 @@ This section discusses the over-usage of [Next or Previous](./derived-fields.md#
 
 **Recommendations**
 
-* For patterns that resemble standard persistence (for example, carrying a value forward across a session or person), use the dimension's [Persistence](/help/data-views/component-settings/persistence.md) settings (**[!UICONTROL Allocation model]** and **[!UICONTROL Expiration]**) in the data view instead of simulating these patterns with [Next or Previous](./derived-fields.md#next-or-previous).
-* Reserve [Next or Previous](./derived-fields.md#next-or-previous) for advanced multi-step path or funnel labeling that dimension persistence alone cannot achieve (for example: channel sequence concatenation).
+* For patterns that resemble standard persistence (for example, carrying a value forward across a session or person), use the dimension's [Persistence](/help/data-views/component-settings/persistence.md) settings (**[!UICONTROL Allocation model]** and **[!UICONTROL Expiration]**) in the data view instead of simulating these patterns with [Next or Previous](/help/data-views/derived-fields/derived-fields.md#next-or-previous).
+* Reserve [Next or Previous](/help/data-views/derived-fields/derived-fields.md#next-or-previous) for advanced multi-step path or funnel labeling that dimension persistence alone cannot achieve (for example: channel sequence concatenation).
 
 ## Ignoring session and person-level context
 
@@ -331,12 +331,12 @@ This section discusses the implications of hitting or nearing the documented der
 
 >[!NOTE]
 >
->Reduce reliance on high-cardinality fields within complex derived fields where possible (for example: use normalized keys or grouped classifications) to limit query cost and the likelihood of hitting [operator or function limits](./derived-fields.md#limitations).
+>Reduce reliance on high-cardinality fields within complex derived fields where possible (for example: use normalized keys or grouped classifications) to limit query cost and the likelihood of hitting [operator or function limits](/help/data-views/derived-fields/derived-fields.md#limitations).
 
-CustoCustomer Journey Analytics [documents](./derived-fields.md#limitations) maximum functions and operators per derived field, including limits per function type.atterns**
+CustoCustomer Journey Analytics [documents](/help/data-views/derived-fields/derived-fields.md#limitations) maximum functions and operators per derived field, including limits per function type.atterns**
 
-* A derived field uses many [Lookup](./derived-fields.md#lookup), [Math](./derived-fields.md#math) operations, [Split](./derived-fields.md#split) or other functions.
-* The number of operators is near the [documented limits](./derived-fields.md#limitations) (for example: more than 70% - 80% of allowed counts).
+* A derived field uses many [Lookup](/help/data-views/derived-fields/derived-fields.md#lookup), [Math](/help/data-views/derived-fields/derived-fields.md#math) operations, [Split](/help/data-views/derived-fields/derived-fields.md#split) or other functions.
+* The number of operators is near the [documented limits](/help/data-views/derived-fields/derived-fields.md#limitations) (for example: more than 70% - 80% of allowed counts).
 
 **Risk diagnosis: performance, high maintenance**
 
