@@ -153,7 +153,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Standard component reference](../data-views/component-reference.md)
   + [BI extension](../data-views/bi-extension.md)
   + [Derived fields](../data-views/derived-fields/derived-fields.md)
-  + {hide-from-toc} [Best practices - hidden](/help/data-views/derived-fields/best-practices.md)
   + [Summary data](../data-views/summary-data.md)
   + [Labels and policies](../data-views/data-governance.md)
   + Shared metrics & dimensions{#shared-metrics-dimensions}
@@ -510,8 +509,8 @@ breadcrumb-title: Customer Journey Analytics Guide
   
     + Derived fields {#derived-fields}
       + [Derived fields guidelines](/help/use-cases/data-views/derived-fields/guidelines.md)
-      + [Report on LLM and AI-generated traffic](/help/use-cases/ai-traffic.md)
-      + [Report on goals](../use-cases/goals-using-derived-fields.md)
+      + [Report on LLM and AI-generated traffic](/help/use-cases/data-views/derived-fields/ai-traffic.md)
+      + [Report on goals](/help/use-cases/data-views/derived-fields/goals-using-derived-fields.md)
   + Product analysis {#product-analysis}
     + [Product analysis](/help/use-cases/product-analysis.md)
   + Stitching {#stitching}
