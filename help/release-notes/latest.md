@@ -6,7 +6,7 @@ feature: Release Notes
 ---
 # Current Customer Journey Analytics release notes (April 2026)
 
-**Last update**: April 9 , 2026
+**Last update**: April 22 , 2026
 
 These release notes cover the April 2026 release period. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
@@ -14,6 +14,7 @@ These release notes cover the April 2026 release period. Adobe Customer Journey 
 
 | Feature and description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | -----------|-----------|-----------|
+| **Content Analytics support for native mobile app experiences**<br/>Organizations can extend their content performance analysis to iOS and Android apps, capturing image assets and granular experience elements to understand which in-app content drives user engagement and business outcomes.<p>Insights are available for all Adobe Content Analytics customers.</p> | April 30, 2026 | TBD |
 | **Italian language support**<br/>The Italian locale (it-IT) is now supported in Analysis Workspace in Customer Journey Analytics. <p>Customer Journey Analytics supports all languages that are supported in the Experience Platform UI, as described in [Browser and language support for the Experience Platform UI](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/browser-language-support#language-support).</p><p>You can [change your default language](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/browser-language-support#change-default-language) in Experience Platform.</p> | | April 8, 2026 |
 | **Data validation in the Adobe Engineering Agent** <br/>New data validation skills are available within the Data Engineering Agent. These skills help teams quickly assess data quality directly in Adobe Experience Platform, before the data is analyzed in Customer Journey Analytics. <p>Data validation skills enable on‑demand, field‑level, and dataset‑level validation, combining statistical summaries with intelligent detection of invalid or anomalous values. </p><p>Using data validation skills reduces manual QA effort and accelerates trusted data onboarding and transformations across data engineering workflows.</p><p>(Documentation link to follow.)<!--For more information, see [Data Engineering Agent]() (will be in this repo: https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/cja-data-insights-agent).--></p> | | End of April, 2026 <p>(Originally planned to release on March 31, 2026)</p> |
 | **MCP servers for Customer Journey Analytics** <br/>You can now tie Customer Journey Analytics into your existing agentic workflows using MCP (Model Context Protocol). You can request reports and insights using natural language.<p>(Documentation link to follow.)</p> | | End of April 2026 |
