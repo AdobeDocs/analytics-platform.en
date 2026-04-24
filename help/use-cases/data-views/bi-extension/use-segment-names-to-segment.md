@@ -5,6 +5,16 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: bd0ff42b-7136-41b8-9dcd-75ab3ac8a523
+TQID: https://experienceleague.adobe.com/l6RaOa6j-OaN1CkcEb0UFrHjnC8gtK9X6Lo-VuaA4qU
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Use segment names to segment
 

@@ -4,6 +4,16 @@ description: Learn how to create hyperlinks for dimension items in a freeform ta
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
+TQID: https://experienceleague.adobe.com/akEkdZOwfsCVoSm3XTx7bM4DlR6i9uh7LiEycWIDtvQ
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Create hyperlinks in freeform tables
 

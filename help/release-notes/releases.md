@@ -3,6 +3,18 @@ description: Explains the continuous feature release strategy for Customer Journ
 title: Customer Journey Analytics feature release strategy
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
 feature: Release Notes
+TQID: https://experienceleague.adobe.com/KTMrEfZBHkdpRHlEGj8s4hfAtlPPjAqQrh6mtS-yAWM
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Customer Journey Analytics feature release strategy
 
