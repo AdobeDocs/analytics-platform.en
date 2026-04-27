@@ -3,7 +3,7 @@ description: Overview of Spectrum icons.
 title: Overview of Spectrum icons
 role: User, Admin
 feature: Basics
-hide: yes
+hide: true
 hide-from-toc: yes
 ---
 

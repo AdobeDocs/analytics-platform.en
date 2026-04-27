@@ -104,7 +104,7 @@ When you enable Product usage, the following dimensions are available. If you wa
   * [!UICONTROL Cohort table]
   * [!UICONTROL Fallout]
   * [!UICONTROL Flow]
-  * [!UICONTROL Journey Canvas reportlet]
+  * [!UICONTROL Journey canvas reportlet]
   * [!UICONTROL Area]
   * [!UICONTROL Area stacked]
   * [!UICONTROL Bar]
