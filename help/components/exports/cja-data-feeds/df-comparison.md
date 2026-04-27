@@ -3,7 +3,7 @@ description: Learn how to Compare data feeds functionality in Customer Journey A
 keywords: clickstream;data feed;datafeed;Data Feed
 title: Compare Data Feeds Functionality in Customer Journey Analytics and Adobe Analytics
 feature: Components
-hide: yes
+hide: true
 exl-id: 32b71016-7c53-409f-9ce4-521a40e2eb96
 ---
 # Compare data feeds in Customer Journey Analytics and Adobe Analytics
