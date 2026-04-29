@@ -22,13 +22,15 @@ High-level steps
 1. Only when you [manually publish](manual.md) the Tags property, your Content Analytics configuration is effectively deployed and data collection is started.
 
 1. You can only make some minor changes to an implemented configuration using the [guided configuration](guided.md) wizard. For example, change the [data view](/help/data-views/data-views.md).
-1. You can make other changes to an implemented configuration using the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) in the associated Tags property.
+1. You can make other changes to an implemented configuration using the Adobe Content Analytics extension in the associated Tags property for [web](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) or [mobile](https://developer.adobe.com/client-sdks/solution/adobe-analytics/).
 1. Only when you [manually re-publish](manual.md) the Tags property, the configuration modifications are effectively deployed and data collection, based on your changes, is started.
 
 
 ## Prerequisites
 
 Before you configure Content Analytics, ensure that the following prerequisites are met:
+
+### Web
 
 * You have allow-listed the User Agent and IP address for the featurization service that is used in Content Analytics. The User Agent string to configure is: <code>AdobeFeaturization/1.0</code>.
 * If you have implemented the [Web SDK using JavaScript](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library){target="_blank"} for regular behavioral data collection, ensure you are using the default name <code>alloy</code> for the JavaScript library.
@@ -44,6 +46,8 @@ Before you configure Content Analytics, ensure that the following prerequisites 
      * The text content seen by any given user can be reproduced using the page URL and does not depend on cookies or other personalization mechanisms.
   * You have a clear understanding for which pages you want to capture content engagement analysis and insights.
   * You have a clear understanding for which (type of) assets you want to capture content engagement analysis and insights.
+
+### Mobile
 
 
 ## Access control

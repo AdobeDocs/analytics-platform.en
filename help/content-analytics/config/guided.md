@@ -46,7 +46,12 @@ To edit an existing configuration:
 
 ## Guided configuration wizard
 
-The guided configuration wizard consists of four sections ([Details](#details), [Connection](#connection), [Data view](#data-view), and [Channels](#channels), each prompting you for details that are required to set up and configure Content Analytics properly. Complete each section before moving to the next section, as some settings in a section might depend on configuration values in earlier sections.
+The guided configuration wizard consists of four sections ([Details](#details), [Connection](#connection), [Data view](#data-view), and [Channels](#channels)), each prompting you for details that are required to set up and configure Content Analytics properly. Complete each section before moving to the next section, as some settings in a section might depend on configuration values in earlier sections.
+
+>[!IMPORTANT]
+>
+>The configuration wizard supports multiple channels and is different from the earlier version that only supported the web channel. Configurations for **[!UICONTROL Experience capture]**, **[!UICONTROL Data collection]** and **[!UICONTROL Header overrides]** are channel dependent and are part of each of the channels you configure in the [Channels](#channels) section.
+
 
 ### Details {#onboarding-details}
 
@@ -403,7 +408,7 @@ For the web channel, you can configure experience capture and definition, data c
 
 ##### Experience capture and definition {#web-experience-capture-and-definition}
 
-In this section, you can select to include experiences in the web data you collect with Content Analytics.  For the mobile channel, an experience is what you have registered as an experience using the Adobe Experience Platform SDK for Content Analytics. 
+In this section, you can select to include experiences in the web data you collect with Content Analytics.  For the web channel, an experience is what you have registered as an experience using the Adobe Experience Web SDK for Content Analytics. 
 
 By default, **[!UICONTROL Include experiences]** is disabled. 
 

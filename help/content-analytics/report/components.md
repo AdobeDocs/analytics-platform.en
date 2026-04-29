@@ -24,8 +24,12 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/
 
 | Title | Description | Type |
 |---|---|---|
-| Experience Channel | Channel for the experience. | Dimension |
-| Experience ID | Unique id for the experience. | Dimension |
+| ID Source | For Content Analytics, the value is `ContentAnalytics`. | Dimension |
+| Channel | Channel for the experience. Value is either `Web` or `Mobile`. | Dimension |
+| Content Experience ID | Unique id for the experience. <br>For **web**: URL of the web page. <br/>For **granular web**: a hash calcuated client side based on the content payload (texts, images, ctas) with prefix `web-`. <br/>For **mobile**: a hash calcuated client side based on the content payload (texts, images, ctas) with prefix `mobile-`.| Dimension |
+| Content Experience Source | For **web**: the URL of the web page.<br/>For **mobile**: the screen name, passed in through the AEP Mobile SDK.  | Dimension |
+| Experience Channel (deprecated) | Channel for the experience. Value is either `Web` or `Mobile`. | Dimension |
+| Experience Extras | Any other additional data you want to track. Like external ID or placement. | Dimension |
 | Experience Thumbnail URL | URL for the thumbnail of the experience. | Dimension |
 | Experience Horizontal Percentage Depth | Quantifiable value of the horizontal percentage depth of the experience. | Dimension<br/>Derived Field |
 | Experience Vertical Percentage Depth | Quantifiable value of the vertical percentage depth of the experience. | Dimension<br/>Derived Field |
@@ -134,7 +138,7 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/
 | Title | Description | Type |
 |---|---|---|
 | Asset Click-Trough Rate | Asset Clicks / Asset Views | Calculated metric |
-| experience Click-Through Rate | Experience Clicks / Experience Views | Calculated metric |
+| Experience Click-Through Rate | Experience Clicks / Experience Views | Calculated metric |
 
 {style="table-layout:fixed"}
 
