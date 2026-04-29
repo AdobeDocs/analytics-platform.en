@@ -217,7 +217,39 @@ You can then configure the channel in more detail. That configuration is differe
 
 #### Mobile {#mobile}
 
-For the mobile channel, you can configure experience capture and definition, data collection, and header overrides.
+<!-- For updated ACA -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"
+>title="Mobile experience locations data collection"
+>abstract="**Experience locations to exclude**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_experience_locations_header"
+>title="Mobile experience locations data collection"
+>abstract="Indicate which experience locations should be **excluded** when collecting data for Content Analytics."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
+>title="Mobile asset locations data collection"
+>abstract="**Asset locations to exclude**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_locations_header"
+>title="Mobile asset locations data collection"
+>abstract="Indicate which asset locations should be **excluded** when collecting data for Content Analytics."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
+>title="Mobile asset URLs data collection"
+>abstract="**Asset URLs to exclude**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_mobile_asset_urls_header"
+>title="Mobile asset URLs data collection"
+>abstract="Indicate which asset URLs should be **excluded** when collecting data for Content Analytics."
+
+For the mobile channel, you can configure [experience capture and definition](#experience-capture-and-definition), [data collection](#data-collection), and [header overrides](#header-overrides).
 
 ##### Experience capture and definition {#mobile-experience-capture-and-definition}
 
@@ -260,7 +292,7 @@ Only consider to include experiences when you have instrumented your mobile app 
 
 <!-- needs modification for mobile channel -->
 
-Optionally, you can specify in the **[!UICONTROL Header overrides]** section a header name and secret header value.  This header overrides configuration ensures that Content Analytics sends custom HTTP headers to bypass any bot detection or gate traffic technologies you have implemented.
+Optionally, you can specify in the **[!UICONTROL Header overrides]** section a header name and secret header value.  This header overrides configuration ensures that Content Analytics sends custom HTTP header to retrieve assets within your mobile app to bypass any bot detection or gate traffic technologies you have implemented.
 
 ![Header overrides section](/help/content-analytics/assets/aca-configuration-header-overrides.png)
 
@@ -275,7 +307,7 @@ Once you have configured the mobile channel, select **[!UICONTROL Save]** to sav
 
 #### Web {#web}
 
-For the web channel, you can configure experience capture and definition, data collection, and header overrides.
+For the web channel, you can configure [experience capture and definition](#experience-capture-and-definition-1), [data collection](#data-collection-1), and [header overrides](#header-overrides-1).
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_button"
@@ -375,44 +407,55 @@ For the web channel, you can configure experience capture and definition, data c
 >title="Web assets data collection"
 >abstract="Indicate which assets should be **included** or **excluded** when collecting data for Content Analytics."
 
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"
->title="Mobile experience locations data collection"
->abstract="**Experience locations to exclude**"
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_mobile_experience_locations_header"
->title="Mobile experience locations data collection"
->abstract="Indicate which experience locations should be **excluded** when collecting data for Content Analytics."
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
->title="Mobile asset locations data collection"
->abstract="**Asset locations to exclude**"
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_mobile_asset_locations_header"
->title="Mobile asset locations data collection"
->abstract="Indicate which asset locations should be **excluded** when collecting data for Content Analytics."
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
->title="Mobile asset URLs data collection"
->abstract="**Asset URLs to exclude**"
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_datacollection_mobile_asset_urls_header"
->title="Mobile asset URLs data collection"
->abstract="Indicate which asset URLs should be **excluded** when collecting data for Content Analytics."
-
 
 ##### Experience capture and definition {#web-experience-capture-and-definition}
 
-In this section, you can select to include experiences in the web data you collect with Content Analytics.  For the web channel, an experience is what you have registered as an experience using the Adobe Experience Web SDK for Content Analytics. 
+In this section, you can select to include experiences in the web data you collect with Content Analytics.  An experience is all text on a web page that is reproducible using the URL used by the initial user visiting that web page. 
 
-By default, **[!UICONTROL Include experiences]** is disabled. 
+By default, **[!UICONTROL Include experiences]** is turned off. When selected, you have to define for which URLs you want to include experiences.
 
-Only consider to include experiences when you have instrumented your mobile app to register experiences and to track experience views and experience clicks.
+Only consider to include experiences when the following is applicable:
+
+* The pages on the site must be reproducible using the page URL. 
+* The text content seen by any given user can be reproduced using the page URL and does not depend on cookies or other personalization mechanisms.
+
+>[!IMPORTANT]
+>
+>Implement [Content Analytics versioning](manual.md#versioning) to collect changes that you make to the experiences (pages) subject to Content Analytics. 
+
+
+
+###### New configuration {#new-experiences-configuration}
+
+To include experiences in a new or not implemented configuration:
+
+![Content Analytics configuration Experience capture and definition](../assets/aca-configuration-experience.png)
+
+1. Enable **[!UICONTROL Include experiences]**. The toggle to enable experiences affects the following:
+
+   * Data collection in the Content Analytics extension 
+   * The process that generates experience attributes from Content Analytics event data 
+   * The reporting template in Customer Journey Analytics. 
+   
+1. Specify the parameters for how content is rendered on your website. The parameters are zero or more combinations of a **[!UICONTROL Domain regular expression]** and **[!UICONTROL Query parameters]**. The query parameters indicate what parameters affect the content on your page. This input allows Content Analytics to ignore any parameters that don't affect content on the page, when defining a unique experience.
+   1. Enter a **[!UICONTROL Domain regular expression]**, for example `/^(?!.*\b(store|help|admin)\b)/`. Ensure you escape regular expressions, using `/`. The domain regular expression indicates which URLs these parameters apply to. For example, you may have multiple sites, and for each site different parameters drive the content. If the query parameters apply to all of your pages, then you can use `.*` to indicate all pages.
+   1. Specify a comma separated list of **[!UICONTROL Query parameters,]** for example `outdoors, patio, kitchen`.
+1. Select **[!UICONTROL Remove]** if you want to remove a combination of domain regular expression and query parameters.
+1. Select **[!UICONTROL Add Regex]** if you want to add another combination of a regular expression and query parameters.
+
+
+###### Implemented configuration {#implemented-experiences-configuration}
+
+To edit existing or include new experiences in an implemented configuration:
+
+![Content Analytics configuration experience capture and definition](../assets/aca-configuration-experience-edit.png)
+
+* Toggle **[!UICONTROL Include experiences]** to enable or disable:
+
+   * The process that generates experience attributes from Content Analytics event data 
+   * The reporting template in Customer Journey Analytics. 
+   
+* Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** to edit further the configuration of data collection for experiences in Content Analytics. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) in the Tags property that is associated with the current configuration.
 
 ##### Data collection {#web-data-collection}
 
