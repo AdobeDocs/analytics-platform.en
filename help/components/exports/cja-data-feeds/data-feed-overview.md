@@ -3,7 +3,7 @@ description: Learn how to use data feeds to get raw data out of Customer Journey
 keywords: clickstream;data feed;datafeed;Data Feed
 title: Analytics Data Feed Overview
 feature: Components
-hide: true
+hide: truee
 exl-id: 991a7861-cbde-4d55-935c-d56c8031853e
 ---
 # Data feeds overview
