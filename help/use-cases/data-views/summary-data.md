@@ -462,10 +462,10 @@ To ensure you can report on the correct data in Workspace, you want to create a 
          | Component name | Dataset | Schema data type | Schema path |
          |---|---|---|---|
          | Ad Group (Lookup) | Example Lookup Data Dataset | String | *_tenant*.ad_group |
-         | Ad Group (Summary) | Example Summary Data Dataset | String | *_tenant*.ad_group |
+         | Ad Group | Example Summary Data Dataset | String | *_tenant*.ad_group |
          | Campaign Id | Example Summary Data Dataset | String | *_tenant*.campaign_id |
          | Campaign Name (Lookup) | Example Lookup Data Dataset | String | *_tenant*.campaign_name |
-         | Campaign Name (Summary) | Example Summary Data Dataset | String | *_tenant*.campaign_name |
+         | Campaign Name | Example Summary Data Dataset | String | *_tenant*.campaign_name |
          | Network | Example Summary Data Dataset | String | *_tenant*.network |
          | Page Name | Example Event Data Dataset | String | *_tenant*.page_name |
          | Person Id | Example Event Data Dataset | String | *_tenant*.person_id |
@@ -548,8 +548,8 @@ You see an empty canvas with a [!UICONTROL Freeform] panel, consisting of an emp
 1. Drag **[!UICONTROL Tracking Code (Event)]** from **[!UICONTROL Dimensions]** and drop the dimension onto the empty Freeform table.
 1. Drag **[!UICONTROL Orders]** from **[!UICONTROL Metrics]**, and drop the metric onto the **[!UICONTROL Events]** column to replace that column in the Freeform table.
 1. Drag **[!UICONTROL Revenue]** from **[!UICONTROL Metrics]**, and drop the metric to add as an additional column to the Freeform table.
-1. Drag **[!UICONTROL Impressions (Summary)]** from **[!UICONTROL Metrics]**, and drop the metric to add as an additional column to the Freeform table.
-1. Drag **[!UICONTROL Cost (Summary)]** from **[!UICONTROL Metrics]**, and drop the metric to add as an additional column to the Freeform table.
+1. Drag **[!UICONTROL Impressions]** from **[!UICONTROL Metrics]**, and drop the metric to add as an additional column to the Freeform table.
+1. Drag **[!UICONTROL Cost]** from **[!UICONTROL Metrics]**, and drop the metric to add as an additional column to the Freeform table.
 1. To save your project, select **[!UICONTROL Project]** > **[!UICONTROL Save]**, and provide a name for your project. For example, `Example Project Using Summary Data`.
 
 You want to use the power of reporting on summary data and report on cost per impression and return on ad spend (ROAS). To report on these metrics, you have to create two calculated metrics.
@@ -559,13 +559,13 @@ You want to use the power of reporting on summary data and report on cost per im
    1. Specify `Cost per Impression` for the **[!UICONTROL Name]**.
    1. Select **[!UICONTROL Currency]** for **[!UICONTROL Format]**.
    1. Specify `4` for **[!UICONTROL Decimal places]**.
-   1. Use ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Cost (Summary)]** **[!UICONTROL ÷]** **[!UICONTROL Impressions (Summary)]** as **[!UICONTROL Definition]**.
+   1. Use ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Cost]** **[!UICONTROL ÷]** **[!UICONTROL Impressions]** as **[!UICONTROL Definition]**.
    1. Select **[!UICONTROL Save]**.
 1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** to add another new calculated metric.
    1. Specify `Return on Ad Spend` for the **[!UICONTROL Name]**.
    1. Select **[!UICONTROL Currency]** for **[!UICONTROL Format]**.
    1. Select `2` for **[!UICONTROL Decimal places]**.
-   1. Use ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Revenue (Last Touch | 30 Days)]** **[!UICONTROL −]** ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Cost (Summary)]** as **[!UICONTROL Definition]**.
+   1. Use ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Revenue (Last Touch | 30 Days)]** **[!UICONTROL −]** ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Cost]** as **[!UICONTROL Definition]**.
    1. Select **[!UICONTROL Save]**.
 
 Add your calculated metrics to your report.

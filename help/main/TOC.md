@@ -1,11 +1,4 @@
 ---
-git-repo: https://github.com/adobedocs/analytics-platform.en
-cloud: Experience Cloud
-product: adobe analytics
-sub-product: customer journey
-solution: Customer Journey Analytics
-type: Documentation
-index: yes
 user-guide-title: Customer Journey Analytics Guide
 user-guide-description: Learn about Adobe Customer Journey Analytics and how to use Analysis Workspace with data from Experience Platform.
 breadcrumb-title: Customer Journey Analytics Guide
@@ -16,7 +9,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Release Notes {#releases}
   + [Latest release](../release-notes/latest.md)
-  + [Pre-release notes](../release-notes/pre-release-notes.md)
+  + {hide-from-toc} [Pre-release notes](../release-notes/pre-release-notes.md)
   + [2026 releases](../release-notes/2026.md)
   + [2025 releases](../release-notes/2025.md)
   + [2024 releases](../release-notes/2024.md)
@@ -44,10 +37,10 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Upgrade and compare {#compare-aa-cja}
   + Upgrade to Customer Journey Analytics {#upgrade-to-cja}
-    + [Get started](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
-    + [Choose your upgrade path](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
-    + [Send data to Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
-    + [Retain historical data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
+    + {hide-from-toc} [Get started](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)
+    + {hide-from-toc} [Choose your upgrade path](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
+    + {hide-from-toc} [Send data to Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
+    + {hide-from-toc} [Retain historical data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
     + [Recommended upgrade process](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
     + [Prepare your organization](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md)
     + Architect and create a schema {#schema}
@@ -407,10 +400,10 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Manage export logs](/help/components/exports/manage-export-logs.md)
     + [Troubleshoot exports](/help/components/exports/troubleshoot-exports.md)
     + Data feeds {#cja-data-feeds}
-      + [Data feed overview](/help/components/exports/cja-data-feeds/data-feed-overview.md)
-      + [Compare Adobe Analytics data feeds](/help/components/exports/cja-data-feeds/df-comparison.md)
-      + [Prepare to map columns](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
-      + [Map columns](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
+      + {hide-from-toc} [Data feed overview](/help/components/exports/cja-data-feeds/data-feed-overview.md)
+      + {hide-from-toc} [Compare Adobe Analytics data feeds](/help/components/exports/cja-data-feeds/df-comparison.md)
+      + {hide-from-toc} [Prepare to map columns](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
+      + {hide-from-toc} [Map columns](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
   + Data Dictionary {#data-dictionary}
     + [Overview](../components/data-dictionary/data-dictionary-overview.md)
     + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
@@ -514,9 +507,10 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Visualizations](/help/use-cases/data-views/bi-extension/visualizations.md)
       + [Caveats](/help/use-cases/data-views/bi-extension/caveats.md)
   
-  + Derived fields {#derived-fields}
-    + [Report on LLM and AI-generated traffic](/help/use-cases/ai-traffic.md)
-    + [Report on goals](../use-cases/goals-using-derived-fields.md)
+    + Derived fields {#derived-fields}
+      + [Derived fields guidelines](/help/use-cases/data-views/derived-fields/guidelines.md)
+      + [Report on LLM and AI-generated traffic](/help/use-cases/data-views/derived-fields/ai-traffic.md)
+      + [Report on goals](/help/use-cases/data-views/derived-fields/goals-using-derived-fields.md)
   + Product analysis {#product-analysis}
     + [Product analysis](/help/use-cases/product-analysis.md)
   + Stitching {#stitching}
@@ -533,7 +527,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Tie session replays](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
       + [Use heatmaps](/help/use-cases/third-party/quantum-metric/heatmap.md)
       + [Add friction events](/help/use-cases/third-party/quantum-metric/friction-events.md)
-      + [Source connector](/help/use-cases/third-party/quantum-metric/source-connector.md)
+      + {hide-from-toc} [Source connector](/help/use-cases/third-party/quantum-metric/source-connector.md)
 
 + Labs {#labs}
   + [Labs User Guide](../labs/labs.md)
@@ -557,3 +551,4 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Manage usage](../technotes/estimate-usage.md)
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
++ [Customer Journey Analytics MCP server](https://developer.adobe.com/analytics-mcp/docs/cja/)

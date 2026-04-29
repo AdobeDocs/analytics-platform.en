@@ -3,7 +3,6 @@ title: Customer Journey Analytics pre-release notes
 description: View the latest Customer Journey Analytics pre-release notes
 feature: Release Notes
 hide: true
-hidefromtoc: true
 exl-id: 61982e38-b43a-41b5-85e0-59ed374463a9
 ---
 # Adobe Customer Journey Analytics pre-release notes

@@ -232,7 +232,7 @@ The Customer Journey Analytics components (dimensions, metrics, filters, calcula
 
 **Custom transformations**
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    df <- dv %>%

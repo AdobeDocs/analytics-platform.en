@@ -4,8 +4,6 @@ description: Learn use cases for Audience Analysis.
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
-hide: yes
-hidefromtoc: yes
 exl-id: 4f465e71-f1b5-4f38-a1db-645550856849
 ---
 # Audience Analysis use cases {#analyze-audiences-use-cases}

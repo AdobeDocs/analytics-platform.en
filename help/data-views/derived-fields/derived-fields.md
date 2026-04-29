@@ -34,6 +34,11 @@ Example use cases are:
 
 Standard components are only supported on event datasets in derived fields. 
 
+>[!TIP]
+>
+>See [guidelines](/help/use-cases/data-views/derived-fields/guidelines.md) for best practices, guardrails, and common pitfalls when working with derived fields.
+>
+
 ## Derived field interface {#interface}
 
 When you create or edit a derived field, you use the derived field interface.

@@ -4,8 +4,7 @@ description: Plan your upgrade from Adobe Analytics to Customer Journey Analytic
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
-hidefromtoc: yes
+hide: true
 exl-id: fd3b36ab-72c1-469a-b2c7-419813c82425
 ---
 # Step 1: Get started with the upgrade to Customer Journey Analytics

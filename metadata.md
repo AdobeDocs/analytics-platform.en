@@ -1,9 +1,14 @@
 ---
 cloud: Experience Cloud
+solution: Customer Journey Analytics
+type: Documentation
 git-repo: https://github.com/AdobeDocs/analytics-platform.en
 description: This file includes repo-level metadata that passes through to user guide TOC.md files in the repo.
 feature-set: Customer Journey Analytics
+landing-page-name: customer-journey-analytics
+landing-page-breadcrumb-title: Customer Journey Analytics
 role: User, Admin
+index: true
 ---
 
 # Metadata for internal use

@@ -213,20 +213,20 @@ For example, you can add two dynamic drop-down menus using a countries dimension
 
 For any metric, segment, or date range component that you drop **while you hold** ⇧, a segment drop-down menu is created. That drop-down menu allows you to filter the panel based on items available for the dropped component. 
 
-For any *dimension* component that you drop **while you hold** ⇧, a segment drop-down menu is created. That drop-down menu allows you to filter the panel based on the items available for the dropped dimension items ([static](#static) segment drop-down menu) or dimension component ([dynamic](#dynamic) segment drop-down menu). To configure the drop-down menu explicitly to filter using segments:
+For any *dimension* component that you drop **while you hold** ⇧, segment drop-down menu is created. That drop-down menu allows you to filter the panel based on the items available for the dropped dimension items ([static](#static) segment drop-down menu) or dimension component ([dynamic](#dynamic) segment drop-down menu). To configure the drop-down menu explicitly to filter a panel using segments:
 
-* Select ![Breakdown](/help/assets/icons/Breakdown.svg) and select ![Filter](/help/assets/icons/Filter.svg) from the context menu for the component ❾. 
+* Select ![Breakdown](/help/assets/icons/Breakdown.svg) and select ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Segment]** | **[!UICONTROL Filters the data in the panel]** from the context menu for the component ❾. 
 
 
 #### Break down a panel
 
-For any *dimension* component that you drop **while you hold** ⇧, a segment drop-down menu is created. You can configure the drop-down menu to break down instead. To configure the drop-down menu explicitly to break down using breakdowns:
+For any *dimension* component that you drop **while you hold** ⇧, a segment drop-down menu is created. You can configure that drop-down menu to break down the panel based on the items available for the dropped dimension items ([static](#static) breakdown drop-down menu) or dimension component ([dynamic](#dynamic) breakdown drop-down menu). To configure the drop-down menu explicitly to break down a panel using breakdowns:
 
-* Select ![Filter](/help/assets/icons/Filter.svg) and select the ![Breakdown](/help/assets/icons/Breakdown.svg) from the context menu for the component ❾. 
+* Select ![Filter](/help/assets/icons/Filter.svg) and select ![Breakdown](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** | **[!UICONTROL Breaks down the data in the panel]** from the context menu for the component ❾. 
 
 >[!IMPORTANT]
 >
->Breakdowns are only available for dimensions and dimension items, not for segments, date ranges, or metrics.
+>Breakdown is only available for dimensions and dimension items that you use in the drop zone.
 >
 
 
