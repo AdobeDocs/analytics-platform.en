@@ -5,7 +5,7 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
-hide: truea8795fe-f5aa-458f-9e01-53ff1ffe6372
+exl-id: a8795fe-f5aa-458f-9e01-53ff1ffe6372
 ---
 # Add Quantum Metric data to Customer Journey Analytics
 
