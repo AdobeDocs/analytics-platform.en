@@ -14,6 +14,10 @@ The guided configuration helps you to configure Content Analytics quickly and ea
 >
 >You can only have one Content Analytics configuration per sandbox in your organization.
 
+>[!NOTE]
+>
+>The configuration wizard supports multiple multiple dataviews and channels and is different from the earlier version that only supported one data view and only the web channel. You have to select a sandbox and connection before you can select one or more data views in the [Data views](#data-views) section. The configurations for **[!UICONTROL Experience capture]**, **[!UICONTROL Data collection]** and **[!UICONTROL Header overrides]** are channel dependent and are part of each of the channels you configure in the [Channels](#channels) section.
+
 To access the Content Analytics configuration
 
 * Select **[!UICONTROL Data Management]** > **[!UICONTROL Content Analytics Configuration]** from the main menu in Customer Journey Analytics.
@@ -47,11 +51,6 @@ To edit an existing configuration:
 ## Guided configuration wizard
 
 The guided configuration wizard consists of four sections ([Details](#details), [Connection](#connection), [Data view](#data-view), and [Channels](#channels)), each prompting you for details that are required to set up and configure Content Analytics properly. Complete each section before moving to the next section, as some settings in a section might depend on configuration values in earlier sections.
-
->[!IMPORTANT]
->
->The configuration wizard supports multiple channels and is different from the earlier version that only supported the web channel. Configurations for **[!UICONTROL Experience capture]**, **[!UICONTROL Data collection]** and **[!UICONTROL Header overrides]** are channel dependent and are part of each of the channels you configure in the [Channels](#channels) section.
-
 
 ### Details {#onboarding-details}
 
@@ -102,7 +101,7 @@ If you already have selected a connection, but you want to change that:
 1. Select **[!UICONTROL Use connection]**.
 
 
-### Data view {#onboarding-data-view}
+### Data views {#onboarding-data-view}
 
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
@@ -227,7 +226,7 @@ You can then configure the channel in more detail. That configuration is differe
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_header"
 >title="Mobile experience locations data collection"
->abstract="Indicate which experience locations should be **excluded** when collecting data for Content Analytics."
+>abstract="Indicate which experience locations should be **excluded** when collecting data for Content Analytics. Ensure you exclude person identifiable experience locations."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
@@ -237,7 +236,7 @@ You can then configure the channel in more detail. That configuration is differe
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_header"
 >title="Mobile asset locations data collection"
->abstract="Indicate which asset locations should be **excluded** when collecting data for Content Analytics."
+>abstract="Indicate which asset locations should be **excluded** when collecting data for Content Analytics. Ensure you exclude personal identifiable asset locations."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
@@ -247,7 +246,7 @@ You can then configure the channel in more detail. That configuration is differe
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_header"
 >title="Mobile asset URLs data collection"
->abstract="Indicate which asset URLs should be **excluded** when collecting data for Content Analytics."
+>abstract="Indicate which asset URLs should be **excluded** when collecting data for Content Analytics. Ensure you exclude personal identifiable asset URLs."
 
 For the mobile channel, you can configure [experience capture and definition](#experience-capture-and-definition), [data collection](#data-collection), and [header overrides](#header-overrides).
 
@@ -260,6 +259,10 @@ By default, **[!UICONTROL Include experiences]** is disabled.
 Only consider to include experiences when you have instrumented your mobile app to register experiences and to track experience views and experience clicks.
 
 ##### Data collection {#mobile-data-collection}
+
+The data collection settings allow you to define what data (experience locations, asset locations, asset URLs) you want to collect for Content Analytics. You must ensure you do not collect any personal identifiable information as part of that data collection.
+
+To configure data collection:
 
 * Use an existing mobile Tags property or create a new mobile Tags property.
 
@@ -275,17 +278,17 @@ Only consider to include experiences when you have instrumented your mobile app 
     1. Specify a **[!UICONTROL Tags name]**, for example `ACA Test for Documentation`.
     1. Specify **[!UICONTROL Domains]**, for example, `example.com`.
 
-* Indicate which experience locations should be excluded when collecting data for Content Analytics. 
+* Indicate which experience locations should be excluded when collecting data for Content Analytics. Ensure you exclude personal identifiable experience locations.
   
   Specify a Regular expression string for **[!UICONTROL Experience locations to exclude]**. <br/>For example: `^(?!.*documentation).*` to exclude all documentation experience locations from Content Analytics.
 
-* Indicate which assets locations should be excluded when collecting data for Content Analytics. 
+* Indicate which asset locations should be excluded when collecting data for Content Analytics. Ensure you exclude personal identifiable asset locations.
   
   Specify a Regular expression string for **[!UICONTROL Asset locations to exclude]**. <br/>For example: `^(?!.*(logo\.jpg)).*$` to exclude all asset locations with logo JPEG image  from Content Analytics.
 
-* Indicate which assets URLs should be excluded when collecting data for Content Analytics. 
+* Indicate which asset URLs should be excluded when collecting data for Content Analytics. Ensure you exclude personal identifiable asset URLs.
 
-  Specify a Regular expression string for **[!UICONTROL Asset URLs to exclude]**. <br/>For example: `^(?!.*(logo\.jpg)).*$` to exclude all assets URLs referring to logo JPEG images from Content Analytics.
+  Specify a Regular expression string for **[!UICONTROL Asset URLs to exclude]**. <br/>For example: `^(?!.*(logo\.jpg)).*$` to exclude all asset URLs referring to logo JPEG images from Content Analytics.
 
 
 ##### Header overrides {#mobile-header-overrides}
@@ -357,7 +360,7 @@ For the web channel, you can configure [experience capture and definition](#expe
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_header"
 >title="Data collection"
->abstract="Indicate which pages should be **included** or **excluded** when collecting data for Content Analytics"
+>abstract="Indicate which pages should be **included** or **excluded** when collecting data for Content Analytics. Ensure you exclude personal identifiable pages."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_boldheader"
@@ -367,7 +370,7 @@ For the web channel, you can configure [experience capture and definition](#expe
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_header"
 >title="Data collection"
->abstract="Indicate which assets should be **included** or **excluded** when collecting data for Content Analytics"
+>abstract="Indicate which assets should be **included** or **excluded** when collecting data for Content Analytics. Ensure you exclude personal identifiable assets."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
@@ -405,7 +408,7 @@ For the web channel, you can configure [experience capture and definition](#expe
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_assets_header"
 >title="Web assets data collection"
->abstract="Indicate which assets should be **included** or **excluded** when collecting data for Content Analytics."
+>abstract="Indicate which assets should be **included** or **excluded** when collecting data for Content Analytics. Ensure you exclude personal identifiable assets."
 
 
 ##### Experience capture and definition {#web-experience-capture-and-definition}
@@ -459,6 +462,10 @@ To edit existing or include new experiences in an implemented configuration:
 
 ##### Data collection {#web-data-collection}
 
+The data collection settings allow you to define what data (pages, assets) you want to collect for Content Analytics. You must ensure you do not collect any personal identifiable information as part of that data collection.
+
+To configure data collection:
+
 * Use an existing web Tags property or create a new web Tags property.
 
   * To use an existing web Tags property:
@@ -467,17 +474,17 @@ To edit existing or include new experiences in an implemented configuration:
     2. Select an existing property from the **[!UICONTROL Tags property]** drop-down menu. You can start typing to search for and limit the available options. You cannot select a Tags property that already is used by another implemented Content Analytics configuration.
 
 
-  * To create a new mobile Tags property:
+  * To create a new web Tags property:
 
     1. Select **[!UICONTROL Create new]**.
     1. Specify a **[!UICONTROL Tags name]**, for example `ACA Test for Documentation`.
     1. Specify **[!UICONTROL Domains]**, for example, `example.com`.
 
-* Indicate which experience locations should be included or excluded when collecting data for Content Analytics. 
+* Indicate which pages should be included or excluded when collecting data for Content Analytics. Ensure you exclude personal identifiable pages. 
   
   Specify a Regular expression string for **[!UICONTROL Pages to include / exclude]**. <br/>For example: `^(?!.*documentation).*` to exclude all documentation pages from Content Analytics.
 
-* Indicate which assets should be included or excluded when collecting data for Content Analytics. 
+* Indicate which assets should be included or excluded when collecting data for Content Analytics. Ensure you exclude personal identifiable assets.
   
   Specify a Regular expression string for **[!UICONTROL Asset to include / exclude]**. <br/>For example: `^(?!.*(logo\.jpg)).*$` to exclude all logo JPEG images from Content Analytics.
 
