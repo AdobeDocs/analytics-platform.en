@@ -3,7 +3,7 @@ description: Learn how to prepare to map data feed columns from Adobe Analytics 
 keywords: clickstream;data feed;datafeed;Data Feed
 title: Prepare to Map Data Feed Columns from Adobe Analytics to Customer Journey Analytics
 feature: Components
-hide: truee
+hide: true
 exl-id: d0a9e697-1e48-4cfb-8613-2f932bf5015b
 ---
 # Prepare to map data feed columns from Adobe Analytics to Customer Journey Analytics
