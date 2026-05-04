@@ -16,7 +16,7 @@ The guided configuration helps you to configure Content Analytics quickly and ea
 
 >[!NOTE]
 >
->The configuration wizard supports multiple multiple dataviews and channels and is different from the earlier version that only supported one data view and only the web channel. You have to select a sandbox and connection before you can select one or more data views in the [Data views](#data-views) section. The configurations for **[!UICONTROL Experience capture]**, **[!UICONTROL Data collection]** and **[!UICONTROL Header overrides]** are channel dependent and are part of each of the channels you configure in the [Channels](#channels) section.
+>The configuration wizard supports multiple dataviews and channels and is different from the earlier version that only supported one data view and only the web channel. You have to select a sandbox and connection before you can select one or more data views in the [Data views](#data-views) section. The configurations for **[!UICONTROL Experience capture]**, **[!UICONTROL Data collection]** and **[!UICONTROL Header overrides]** are channel dependent and are part of each of the channels you configure in the [Channels](#channels) section.
 
 To access the Content Analytics configuration
 
