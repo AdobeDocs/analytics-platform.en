@@ -45,6 +45,15 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aa_datafeed_lookback_date_range"
+>title="Lookback date range"
+>abstract="Controls how far back Customer Journey Analytics looks when processing the data feed delivery.<br/>This setting does not alter the frequency window (hour or day). However, the lookback date range can influence the data that is delivered. Segment qualification, session calculation, and dimension persistence are all impacted by the lookback date range."
+
+<!-- markdownlint-enable MD034 -->
+
 <!-- added help for Dynamic lookups to this page: help/export/analytics-data-feed/c-df-contents/dynamic-lookups.md -->
 
 1. Log in to [experiencecloud.adobe.com](https://experiencecloud.adobe.com) using your Adobe ID credentials.
