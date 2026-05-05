@@ -12,9 +12,9 @@ You report, perform analysis and gain insights on [!DNL Content Analytics] withi
 
 To create your own Content Analytics report from scratch, follow these steps:
 
-1. [Create a new](/help/analysis-workspace/build-workspace-project/create-projects.md) or [open an existing](/help/analysis-workspace/build-workspace-project/open-projects.md) project in Workspace.
+1. Create a [new project](/help/analysis-workspace/build-workspace-project/create-projects.md) or open an [existing project](/help/analysis-workspace/build-workspace-project/open-projects.md) in Workspace.
 1. Ensure you [select a data view](/help/analysis-workspace/c-panels/panels.md#data-view) for Content Analytics reporting. Content Analytics reporting is only available for data views that are [configured](/help/content-analytics/config/configuration.md) for Content Analytics. 
-1. Drag a ![Table](/help/assets/icons/Table.svg) [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) visualization on the canvas.
+1. Drag a ![Table](/help/assets/icons/Table.svg) [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) visualization onto the canvas.
 1. Use [specific Content Analytics components](components.md) and other generic [components](/help/components/overview.md) (like segments, date ranges, annotations) to build your Content Analytics insights.
 1. Use other [visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) to enhance your project.
 
@@ -56,7 +56,7 @@ Thumbnails are displayed when you hover over a data point in a [scatter](/help/a
 
 >[!AVAILABILITY]
 >
->The functionality for bar and scatter visualizations described in this section is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
+>Bar and scatter visualizations described in this section are in Limited Testing and might be unavailable in your environment. This note is removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
 >
 
 You can open a preview popup window. To do so:
@@ -93,18 +93,18 @@ To use the template:
 1. In the **[!UICONTROL Set up your template]** dialog, select a metric from the **[!UICONTROL Select a conversion metric]** dialog. For example, **[!UICONTROL Asset CTR]**.
 1. Select **[!UICONTROL Continue]**.
 
-A **[!UICONTROL Content Analytics Overview]** project opens in [Analysis Workspace](/help/analysis-workspace/home.md). The project consists of four [panels](/help/analysis-workspace/c-panels/panels.md), where each panel provides [freeform tables](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) and [visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) to answer a specific question:
+A **[!UICONTROL Content Analytics Overview]** project opens in [Analysis Workspace](/help/analysis-workspace/home.md). The project consists of four [panels](/help/analysis-workspace/c-panels/panels.md), where each panel provides [freeform tables](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) and [visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) to answer a specific question. You can use the **[!UICONTROL Content Channel]** breakdown to [break down](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) the panel for the content channel you are interested in: **[!UICONTROL web]** or **[!UICONTROL mobile]**.
+
+The four panels are:
 
 * **What content performs the best?** 
-  This panel helps you to understand which experiences and which assets in those experiences are driving engagement and conversion. Experiences are a full webpage, captured at a specific time. An experience can contain both text and multiple individual image assets. An asset is an individual image. 
-
-  The panel consists of the following visualizations:
+  This panel identifies which experiences and assets drive engagement and conversion. Experiences are full webpages captured at a specific time, or a combination of text, assets, and calls to action defined within a mobile app.
 
   * **Experiences**. 
    
     >[!NOTE]
     >
-    >These visualizations only show up in your template when you have configured to [include experiences](/help/content-analytics/config/guided.md#experience-capture-and-definition) in your Content Analytics configuration.
+    >These visualizations only show up in your template when you have configured the system to [include experiences](/help/content-analytics/config/guided.md#experience-capture-and-definition) in your Content Analytics configuration.
     > 
 
     * **Experience CTR**: a [summary change](/help/analysis-workspace/visualizations/summary-number-change.md) visualization that shows Experience CTR.
@@ -119,22 +119,20 @@ A **[!UICONTROL Content Analytics Overview]** project opens in [Analysis Workspa
       A [horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md) visualization that shows top converting assets based on the selected conversion metric.
     * **Top performing assets**
       A [freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (including [thumbnails](#thumbnails) and [previews](#previews)) for the top performing assets.
-    * **Assets - views vs. conversion.**
+Assets - views compared to conversion.
       A [scatterplot](/help/analysis-workspace/visualizations/scatterplot.md) visualization that shows a scatter plot of asset views versus assets conversions. 
 
 * **Which asset attributes contribute to conversions?** 
-  Content Analytics uses AI and GenAI to assign every asset [metadata](/help/content-analytics/report/components.md#asset-metadata) and [attributes](/help/content-analytics/report/components.md#asset-attributes) automatically, like subjects, scenes, foreground colors, and more. An attribute is an AI assigned metadata tag describing what is in an asset or experience. For example: <code>foreground color: red</code> is an automatically assigned attribute. The visualizations help you identify which attributes of your assets contribute most to conversion.
-
-  The panel consists of the following visualizations:
+  Content Analytics uses AI and GenAI to automatically assign metadata and attributes, such as subjects, scenes, and foreground colors, to every asset.
 
   * **Top converting asset attributes** 
     A [horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md) that shows the top converting asset attributes based on the selected conversion metric.
-  * **Top converting assets attributes vs prior 30 days**
+  * **Top converting asset attributes vs prior 30 days**
     A [horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md) visualization that shows the top converting asset attributes, compared to the prior 30 days, based on the selected conversion metric.
   * **Top converting assets attribute data**
     A [freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) that shows the top converting attributes based on the selected conversion metric. Select a row in the table to update the Attribute trend visualization.
   * **Attribute trend**
-    A [line](/help/analysis-workspace/visualizations/line.md) visualization showing the attribute trend for the selected top converting assets attribute.
+    A [line](/help/analysis-workspace/visualizations/line.md) visualization showing the attribute trend for the selected top converting asset attribute.
   * **Asset foreground color**
     An example [freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) that compares the performance of items from a single asset attribute category: Foreground Colors. You can replace this asset attribute with other asset attribute category dimensions. 
 
@@ -151,7 +149,7 @@ A **[!UICONTROL Content Analytics Overview]** project opens in [Analysis Workspa
 
   * **Top converting experience attributes** 
     A [horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md) visualization that shows the top converting experience attributes based on the selected conversion metric.
-  * **Top converting experience attributes vs prior 30 days** 
+Top converting experience attributes compared to the prior 30 days
     A [horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md) visualization that shows the top converting experience attributes, compared to the prior 30 days, based on the selected conversion metric.
   * **Top converting experience attribute data** 
     A [freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) that shows the top converting experiences based on the selected conversion metric. Select a row in the table to update the Line visualization.
@@ -161,16 +159,14 @@ A **[!UICONTROL Content Analytics Overview]** project opens in [Analysis Workspa
     A [freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) showing the top experience keywords based on the selected conversion metric.
 
 * **Where do assets appear on my site?** 
-  A panel that consists of one freeform table that details where the most viewed assets appear on your site. This analysis helps you to understand which pages or sections benefit most from your top-performing assets and where to optimize placement.
-
-  The panel consists of one visualization:
+  This freeform table details where your most viewed assets appear. Use this analysis to identify high-performing pages and optimize asset placement.
 
   * **Where do the most viewed assets appear?**
     You can break down any asset by dimensions to help you better understand where that image appears. 
     
     In the example [freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (including [thumbnails](#thumbnails) and [previews](#previews)), **[!UICONTROL Asset Perception ID]** is used instead of [!UICONTROL Asset Id]. Sometimes, the exact same image can get duplicated on your site with a different image URL. The [!UICONTROL Asset Perception ID] attribute helps to group these duplicates under a single ID. 
     
-    Because assets can change on a page, each asset is broken down by **[!UICONTROL Experience Id]**, to identify which version of that page the asset appeared on. You can replace [!UICONTROL Experience Id] with other dimensions that help you understand the location of an asset on your site. For example, [!UICONTROL Page name], [!UICONTROL Page URL], or [!UICONTROL Site section]. 
+    Because assets can change on a page, the system breaks down each asset by **[!UICONTROL Experience Id]** to identify the version of the page where the asset appeared. You can replace [!UICONTROL Experience Id] with other dimensions that help you understand the location of an asset on your site. For example, [!UICONTROL Page name], [!UICONTROL Page URL], or [!UICONTROL Site section]. 
     
     You can also swap out [!UICONTROL Asset Perception ID] with [!UICONTROL Asset Id] to get a record of where specific image URLs are being referenced. 
 

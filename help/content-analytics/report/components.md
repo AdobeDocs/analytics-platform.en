@@ -15,7 +15,7 @@ Content Analytics adds the following categories of components (dimensions, (calc
 * [Experience events](#experience-events)
 * [Asset metadata](#asset-metadata)
 * [Asset attributes](#asset-attributes)
-* [Assets events](#asset-events)
+* [Asset events](#asset-events)
 * [Calculated metrics](#calculated-metrics)
 
 In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/ML generated attribute / value pair. 
@@ -27,7 +27,7 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/
 | ID Source | For Content Analytics, the value is `ContentAnalytics`. | Dimension |
 | Channel | Channel for the experience. Value is either `Web` or `Mobile`. | Dimension |
 | Content Experience ID | Unique id for the experience. <br>For **web**: URL of the web page. <br/>For **granular web**: a hash calcuated client side based on the content payload (texts, images, ctas) with prefix `web-`. <br/>For **mobile**: a hash calcuated client side based on the content payload (texts, images, ctas) with prefix `mobile-`.| Dimension |
-| Content Experience Source | For **web**: the URL of the web page.<br/>For **mobile**: the screen name, passed in through the AEP Mobile SDK.  | Dimension |
+| Content Experience Source | For **web**: the URL of the web page.<br/>For **mobile**: the screen name, passed in through the Experience Platform Mobile SDK.  | Dimension |
 | Experience Channel (deprecated) | Channel for the experience. Value is either `Web` or `Mobile`. | Dimension |
 | Experience Extras | Any other additional data you want to track. Like external ID or placement. | Dimension |
 | Experience Thumbnail URL | URL for the thumbnail of the experience. | Dimension |
@@ -75,12 +75,14 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/
 | Title | Description | Type |
 |---|---|---|
 | Asset ID | Unique identifier of the asset. The asset binary determines the uniqueness. If the asset binary changes, the id does change. The unique id can be the URL but can also be a hash created. | Dimension |
+| Asset Source | | Dimension |
 | Asset HTML Path | Concatenated HTML path for the asset. | Dimension |
 | Asset Link URL | Nearest page anchor for the asset. | Dimension |
 | Asset Display Width | Content asset display width. | Dimension |
 | Asset Display Height | Content asset display height. | Dimension |
 | Asset Absolute Left | Content asset absolute left. | Dimension |
 | Asset Absolute Top | Content asset absolute top. | Dimension |
+| Asset Extras | Any other additional data you want to track. Like external ID or placement. | Dimension |
 
 {style="table-layout:fixed"}
 

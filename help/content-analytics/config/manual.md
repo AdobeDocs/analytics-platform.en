@@ -20,23 +20,34 @@ To start the data collection for an implemented Content Analytics configuration:
 
 1. Based on the channels you have configured:
 
-   1. [Install](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) the embedded code in the `<head>` element of the pages on your development, staging or publishing environment, subject to Content Analytics.
-   1. Consult the solution specific [Adobe Content Analytics extension guide](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) in the [Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/home/) on how to configure, instrument your mobile application for Content Analytics.
+   * For **web**: [Install](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) the embedded code in the `<head>` element of the pages on your development, staging or publishing environment, subject to Content Analytics.
+   * For **mobile**: Consult the solution specific [Adobe Content Analytics extension guide](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) in the [Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/home/) on how to configure and instrument your mobile application for Content Analytics.
 
 ## Stop data collection
 
-To stop the data collection for an implemented Content Analytics configuration:
+To stop the data collection for an implemented Content Analytics configuration, based on the channels you have configured:
 
-1. Remove the [embedded code](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments) in the `<head>` element of the pages on your development, staging or production environment, subject to Content Analytics.
-1. [Delete](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) the associated Tags property for your Content Analytics configuration.
+* For **web**: 
 
+  1. Remove the [embedded code](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments) in the `<head>` element of the pages on your development, staging or production environment, subject to Content Analytics.
+  1. Delete the associated web Tags property for your Content Analytics configuration.
+
+* For **mobile**: 
+
+  1. Remove the [Content Analytics extension](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) from your app.
+  1. Delete the associated mobile Tags property for your Content Analytics configuration.
+
+Follow the [publishing flow](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} to apply the changes.
 
 
 ## Modify data collection
 
 You can make some minor changes to an implemented configuration using the [guided configuration wizard](guided.md). For example, change the data view, or enable or disable experiences. 
 
-You use the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) in the Tags property associated with your Content Analytics configuration to make changes to the following artifacts:
+
+### Web
+
+You use the [Adobe Content Analytics web extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) in the Tags property associated with your Content Analytics configuration to make changes to the following artifacts:
 
 * [Sandbox and datastream](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}. 
 
@@ -54,15 +65,12 @@ You use the [Adobe Content Analytics extension](https://experienceleague.adobe.c
   You can edit regular expressions to modify how you segment pages and assets.
 
 
-After you make changes in the Adobe Content Analytics extension, ensure your use [publishing flow](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} to start the collection of data based on the changes made. 
+After you make changes in the Adobe Content Analytics web extension, use the [publishing flow](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} to start collecting data. 
 
 
+### Mobile
 
->[!MORELIKETHIS]
->
->[Guided configuration](guided.md)
->[Data collection Tags publishing overview](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)
->
+You use the [Adobe Content Analytics mobile extension](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) in the Tags property associated with your Content Analytics configuration to make additional changes.
 
 
 ## Versioning
@@ -86,14 +94,14 @@ window.adobe.getContentExperienceVersion = () => {
 
 ## Identities
 
-Content Analytics handle identities in the following way:
+Content Analytics handles identities for the web channel in the following way:
 
 * ECID is automatically populated in the `identityMap` portion of the Content Analytics schema.
 * If you require other identity values in the `identityMap`, you need to set these values in the `onBeforeEventSend` callback within the Web SDK extension.
 * Field-based stitching is not supported because the schema is system-owned. So, you cannot add another field to the schema to support field-based stitching
 
 
-To ensure Content Analytics identity data and Adobe Experience Platform Web SDK data identity data are stitched correctly at the field level, you need to make modifications to the Web SDK [on before event send](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} callback.
+To ensure Content Analytics identity data and Web SDK data identity data are stitched correctly at the field level, modify the Web SDK [on before event send](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"} callback.
 
 1. Navigate to your **[!UICONTROL Tags]** property that contains the Adobe Experience Platform Web SDK extension and Adobe Content Analytics extension.
 1. Select ![Plug](/help/assets/icons/Plug.svg) **[!UICONTROL Extensions]**.
@@ -106,7 +114,7 @@ To ensure Content Analytics identity data and Adobe Experience Platform Web SDK 
 1. Select **[!UICONTROL </> Provide on before event send callback code]**.
 1. Add the following code:
 
-   ```javascript
+   ```JavaScript
    window.adobeContentAnalytics?.forwardEvent(content);
 
    content.xdm.identityMap = _satellite.getVar('identityMap');
@@ -120,8 +128,9 @@ To ensure Content Analytics identity data and Adobe Experience Platform Web SDK 
 1. Select **[!UICONTROL Save]** to save the code.
 1. Select **[!UICONTROL Save]** to save the extension.
 1. [Publish](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) the updates for your Tags property.
-
-
-
    
-  
+>[!MORELIKETHIS]
+>
+>[Guided configuration](guided.md)
+>[Data collection Tags publishing overview](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)
+>
