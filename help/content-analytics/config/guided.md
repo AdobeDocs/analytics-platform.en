@@ -562,3 +562,4 @@ To start collecting data for your Content Analytics configuration, you need to [
 >
 >[Manual configuration](manual.md)
 >
+
