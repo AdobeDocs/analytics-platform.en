@@ -118,7 +118,8 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Data warehouse native solutions](/help/data-mirror/datawarehouse.md)
     + [Experience Platform](/help/data-mirror/aep.md)
     + [Customer Journey Analytics](/help/data-mirror/cja.md)
-  + [Data Mirror quick start guide](/help/data-mirror/relational.md)
+  + [Quick start guide](/help/data-mirror/relational.md)
+  + {hide-from-toc} [Considerations](/help/data-mirror/considerations.md)
 
 + Connections {#cja-connections}
   + [Connections overview](../connections/overview.md)
