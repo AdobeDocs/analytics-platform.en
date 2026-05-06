@@ -50,7 +50,7 @@ Therefore, privacy requests should not be limited to the mirrored dataset, but s
 
 Hygiene service operates on *primary identities*, but tables in the external database that are mirrored have *primary keys*, not primary identities.
 
-The consequences of the difference between primary identities and primary keys are that hygiene deletes cannot be executed directly against thee relational tables. As a result, you must:
+The consequences of the difference between primary identities and primary keys are that hygiene deletes cannot be executed directly against these relational tables. As a result, you must:
 
   * Delete data in their own source tables within the data warehouse solution and ensure that the delete operations flow through CDC (or the manual change column).
   * Submit hygiene and privacy requests into Adobe for any downstream XDM-based datasets with identity information (for example:  Customer Journey Analytics views, Real-Time Customer Data Platform datasets, Adobe Journey Optimizer specific datasets, and more).
