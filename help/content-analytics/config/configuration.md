@@ -22,7 +22,7 @@ High-level steps
 1. Only when you [manually publish](manual.md) the Tags property is your Content Analytics configuration effectively deployed and data collection started.
 
 1. You can only make some minor changes to an implemented configuration using the [guided configuration](guided.md) wizard. For example, change the [data view](/help/data-views/data-views.md).
-1. You can make other changes to an implemented configuration using the Adobe Content Analytics extension in the associated Tags property for [web](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) or [mobile](https://developer.adobe.com/client-sdks/solution/adobe-analytics/).
+1. You can make other changes to an implemented configuration using the Adobe Content Analytics extension in the associated Tags property for [web](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) or [mobile](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/).
 1. Configuration modifications are effectively deployed and data collection starts only when you manually re-publish the Tags property.
 
 

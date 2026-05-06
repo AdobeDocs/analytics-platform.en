@@ -72,8 +72,15 @@ After you make changes in the Adobe Content Analytics web extension, use the [pu
 
 You use the [Adobe Content Analytics mobile extension](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) in the Tags property associated with your Content Analytics configuration to make additional changes.
 
+After you make changes in the Adobe Content Analytics web extension, use the [publishing flow](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} to start collecting data.
+
 
 ## Versioning
+
+>[!NOTE]
+>
+>This section only applies to Content Analytics for the web channel.
+
 
 If you want to collect Content Analytics experiences, you should consider implementing versioning to ensure new experiences (changes to your web page) are properly collected. 
 
@@ -93,6 +100,10 @@ window.adobe.getContentExperienceVersion = () => {
 ```
 
 ## Identities
+
+This sections explains how Content Analytics handles identities.
+
+### Web
 
 Content Analytics handles identities for the web channel in the following way:
 
@@ -129,6 +140,11 @@ To ensure Content Analytics identity data and Web SDK data identity data are sti
 1. Select **[!UICONTROL Save]** to save the extension.
 1. [Publish](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) the updates for your Tags property.
    
+
+### Mobile
+
+See the [Identity for Experience Cloud ID Service extension](https://developer.adobe.com/client-sdks/home/base/mobile-core/identity/) and the [Identity for Edge Network mobile extension](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/) for more information on how to work with identities in your mobile app.
+
 >[!MORELIKETHIS]
 >
 >[Guided configuration](guided.md)
