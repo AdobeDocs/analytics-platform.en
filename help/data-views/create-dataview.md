@@ -50,7 +50,6 @@ To configure a new or existing data view:
 
 ### Settings {#configure-settings}
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_externalid"
 >title="External ID"
