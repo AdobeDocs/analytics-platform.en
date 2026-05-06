@@ -42,14 +42,11 @@ To configure a new or existing data view:
 
 
 1. Select the **[!UICONTROL Configure]** tab (if not already active).
-
-   
 1. Specify [!UICONTROL Settings], [!UICONTROL Container], and [!UICONTROL Calendar] details (see below). 
 1. Select **[!UICONTROL Save and continue]** to continue configuring your new or existing data view. Select **[!UICONTROL Save]** to save the configuration for your existing data view.
    
 
 ### Settings {#configure-settings}
-
 
 >[!CONTEXTUALHELP]
 >id="dataview_externalid"
