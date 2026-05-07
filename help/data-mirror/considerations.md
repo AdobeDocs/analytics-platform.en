@@ -22,7 +22,21 @@ The recommended strategy for columns in the source table:
 
 * Ensure all relevant columns are defined initially.
 * Map every column you might think you need initially.
-* If a new column is identified as necessary, remove the current dataset and configure the connector again with the updated column. This ensures the data is backfilled more efficiently and timely.
+
+If you want to add a new column, there are two options, depending on whether retroactive backfill is required:
+  
+* Retroactive backfill:
+ 
+  * Remove the current dataset.
+  * Configure the connector again with the updated column. 
+  
+  This ensures the data is backfilled more efficiently and timely.
+  
+* No retroactive backfill:
+  
+  * Add the column in the source table.
+  * Add the column in the target dataset schema.
+  * Update the mapping to include the new field (column) from the source table to the target dataset.
 
 This strategy: 
 
@@ -30,14 +44,6 @@ This strategy:
 * Keeps change volume more predictable than when columns are added or modified later.
 * Helps to limit potential compute costs on the external database side as the data warehouse might interpret the new column as an update to all rows..
 
-To handle new columns in external data warehouse tables, follow these steps:
-
-1. Create a new schema with the added column.
-1. Configure a new source connector that brings the data in.
-1. Load the backfill appropriately.
-1. Use CDC changes going forward. 
- 
-This approach minimizes the impact on both sides.
 
 ## Privacy Service
 
