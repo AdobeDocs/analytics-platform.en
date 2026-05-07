@@ -21,15 +21,6 @@ Before you create a data feed, it's important to have a basic understanding of d
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_datafeed_os_strings"
->title="Replace operating system strings"
->abstract="This option cleans up the data output by detecting the following string sequences embedded in customer data and replacing them with a space: <br/>Windows: CRLF, CR, or TAB<br/>Mac and Linux: \n, \r, or \t"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
 >id="cja_datafeed_export_file"
 >title="Manifest"
 >abstract="Choose whether to include a manifest file with each data feed delivery. Manifest files contain information for each file included in the data feed. When sending data feed data in a single package, you can also choose to include a finish file, but manifest files are recommended. "
