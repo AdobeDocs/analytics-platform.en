@@ -4,7 +4,7 @@ description: Learn how to configure Content Analytics without using Experience P
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-hide: yes
+hide: true
 ---
 # Content Analytics Tags agnostic configuration
 
