@@ -99,52 +99,6 @@ window.adobe.getContentExperienceVersion = () => {
 };
 ```
 
-## Identities
-
-This sections explains how Content Analytics handles identities.
-
-### Web
-
-Content Analytics handles identities for the web channel in the following way:
-
-* ECID is automatically populated in the `identityMap` portion of the Content Analytics schema.
-* If you require other identity values in the `identityMap`, you need to set these values in the `onBeforeEventSend` callback within the Web SDK extension.
-* Field-based stitching is not supported because the schema is system-owned. So, you cannot add another field to the schema to support field-based stitching
-
-
-To ensure Content Analytics identity data and Web SDK data identity data are stitched correctly at the field level, modify the Web SDK [on before event send](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"} callback.
-
-1. Navigate to your **[!UICONTROL Tags]** property that contains the Adobe Experience Platform Web SDK extension and Adobe Content Analytics extension.
-1. Select ![Plug](/help/assets/icons/Plug.svg) **[!UICONTROL Extensions]**.
-1. Select the **[!UICONTROL Adobe Experience Platform Web SDK]** extension.
-1. Select **[!UICONTROL Configure]**.
-1. In the **[!UICONTROL SDK instances]** section, scroll down to **[!UICONTROL Data collection]** - **[!UICONTROL On before event send callback]**.
-
-   ![On before event send callback](/help/content-analytics/assets/onbeforeeventsendcallback.png)
-
-1. Select **[!UICONTROL </> Provide on before event send callback code]**.
-1. Add the following code:
-
-   ```JavaScript
-   window.adobeContentAnalytics?.forwardEvent(content);
-
-   content.xdm.identityMap = _satellite.getVar('identityMap');
-   if ((content.xdm.eventType === "content.contentEngagement") && (_satellite.getVar('identityMap') != null)) {
-      return true;
-   }
-   ```
-
-   ![On before event send callback](/help/content-analytics/assets/onbeforeeventsendcallbackcode.png)
-
-1. Select **[!UICONTROL Save]** to save the code.
-1. Select **[!UICONTROL Save]** to save the extension.
-1. [Publish](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) the updates for your Tags property.
-   
-
-### Mobile
-
-See the [Identity for Experience Cloud ID Service extension](https://developer.adobe.com/client-sdks/home/base/mobile-core/identity/) and the [Identity for Edge Network mobile extension](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/) for more information on how to work with identities in your mobile app.
-
 >[!MORELIKETHIS]
 >
 >[Guided configuration](guided.md)
