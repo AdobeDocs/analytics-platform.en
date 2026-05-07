@@ -5,6 +5,7 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 ---
+
 # Customer Journey Analytics - documentation updates
 
 The following updates were made to the Customer Journey Analytics documentation since its inception.
