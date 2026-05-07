@@ -11,6 +11,11 @@ hide: true
 
 The Adobe Content Analytics JavaScript library enables tracking of content-related events on websites by sending content data to Adobe Experience Platform via the Experience Platform Edge Network. Use this library when you want to implement Content Analytics without Adobe Experience Platform tags (Launch).
 
+>[!NOTE]
+>
+>This article applies to Content Analytics for the web channel.
+
+
 >[!PREREQUISITES]
 >
 >Adobe Experience Platform Web SDK (Alloy) must be initialized on the page before calling `initializeContentLibrary`.
