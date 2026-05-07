@@ -1,11 +1,12 @@
 ---
-title: Content Analytics Tags agnositc configuration
-description: Learn how to configure Content Analytics without using Experience Platform Data Collection Tags
+title: Content Analytics Tags Agnositc Configuration
+description: Learn how to configure Content Analytics without using Experience Platform Data Collection Tags.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 hide: true
 ---
+
 # Content Analytics Tags agnostic configuration
 
 The Adobe Content Analytics JavaScript library enables tracking of content-related events on websites by sending content data to Adobe Experience Platform via the Experience Platform Edge Network. Use this library when you want to implement Content Analytics without Adobe Experience Platform tags (Launch).

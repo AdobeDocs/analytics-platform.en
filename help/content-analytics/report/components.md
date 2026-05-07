@@ -1,11 +1,12 @@
 ---
-title: Content Analytics components
-description: Details on the specific Content Analytics components, like dimensions, (calculated) metrics and derived fields
+title: Content Analytics Components
+description: Learn about the details of the specific Content Analytics components, like dimensions, (calculated) metrics and derived fields
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
 ---
+
 # Content Analytics components
 
 Content Analytics adds the following categories of components (dimensions, (calculated) metrics, derived fields) to the already available components in Customer Journey Analytics:

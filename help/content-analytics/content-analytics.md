@@ -1,11 +1,12 @@
 ---
-title: Content Analytics overview
-description: An overview of Content Analytics
+title: Content Analytics Overview
+description: Learn about the Content Analytics value and terminlogy and learn how Content Analytics works.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 ---
+
 # Content Analytics overview
 
 Content Analytics helps marketers to understand how content impacts the key performance indicators that a business has defined. In addition to the behavioral data, Content Analytics collects data on how content is consumed and how content drives impact. For example, do customers respond better to a specific tone of voice, a specific color palette, or specific themes? This information, together with specifically designed reporting workflows and templates, can help you to perform even better analysis and gain deeper insights on customer journey data in Customer Journey Analytics. 
