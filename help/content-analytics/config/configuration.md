@@ -6,6 +6,7 @@ feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 ---
+
 # Configure Content Analytics
 
 This article documents, on a high level, how to configure Content Analytics. 
