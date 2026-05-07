@@ -1,6 +1,6 @@
 ---
-title: Content Analytics overview
-description: An overview of Content Analytics
+title: Content Analytics Overview
+description: Learn about the Content Analytics value and terminlogy and learn how Content Analytics works.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User

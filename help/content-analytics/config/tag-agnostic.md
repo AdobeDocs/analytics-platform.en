@@ -1,6 +1,6 @@
 ---
-title: Content Analytics Tags agnositc configuration
-description: Learn how to configure Content Analytics without using Experience Platform Data Collection Tags
+title: Content Analytics Tags Agnositc Configuration
+description: Learn how to configure Content Analytics without using Experience Platform Data Collection Tags.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin

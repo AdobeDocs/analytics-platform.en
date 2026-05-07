@@ -1,6 +1,6 @@
 ---
-title: Content Analytics manual configuration
-description: How to configure Content Analytics manually
+title: Content Analytics Manual Configuration
+description: Learn how to configure Content Analytics manually.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin

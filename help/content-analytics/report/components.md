@@ -1,6 +1,6 @@
 ---
-title: Content Analytics components
-description: Details on the specific Content Analytics components, like dimensions, (calculated) metrics and derived fields
+title: Content Analytics Components
+description: Learn about the details of the specific Content Analytics components, like dimensions, (calculated) metrics and derived fields
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User

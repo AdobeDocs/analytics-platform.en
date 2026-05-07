@@ -1,6 +1,6 @@
 ---
 title: Configure Content Analytics
-description: An overview of how to configure Content Analytics
+description: Understand how to configure Content Analytics for the web and the mobile channel.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin

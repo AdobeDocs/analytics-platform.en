@@ -1,6 +1,6 @@
 ---
-title: Content Analytics data collection
-description: An overview of how data is collected in Content Analytics
+title: Content Analytics Data Collection
+description: Learn how data is collected in Content Analytics.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin

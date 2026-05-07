@@ -1,6 +1,6 @@
 ---
-title: Content Analytics guided configuration
-description: How to configure Content Analytics using an onboarding guided configuration
+title: Content Analytics Guided Configuration
+description: Learn how to configure Content Analytics using an onboarding guided configuration.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
