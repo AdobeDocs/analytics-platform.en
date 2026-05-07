@@ -21,7 +21,7 @@ Before you create a data feed, it's important to have a basic understanding of d
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="aa_datafeed_os_strings"
+>id="cja_datafeed_os_strings"
 >title="Replace operating system strings"
 >abstract="This option cleans up the data output by detecting the following string sequences embedded in customer data and replacing them with a space: <br/>Windows: CRLF, CR, or TAB<br/>Mac and Linux: \n, \r, or \t"
 
@@ -30,7 +30,7 @@ Before you create a data feed, it's important to have a basic understanding of d
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="aa_datafeed_export_file"
+>id="cja_datafeed_export_file"
 >title="Manifest"
 >abstract="Choose whether to include a manifest file with each data feed delivery. Manifest files contain information for each file included in the data feed. When sending data feed data in a single package, you can also choose to include a finish file, but manifest files are recommended. "
 
@@ -39,7 +39,7 @@ Before you create a data feed, it's important to have a basic understanding of d
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="aa_datafeed_notify"
+>id="cja_datafeed_notify"
 >title="Notify when complete"
 >abstract="Specify one or more email addresses where a notification should be delivered after the data feed is sent. Multiple email addresses must be separated with a comma."
 
@@ -48,7 +48,7 @@ Before you create a data feed, it's important to have a basic understanding of d
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="aa_datafeed_lookback_date_range"
+>id="cja_datafeed_lookback_date_range"
 >title="Lookback date range"
 >abstract="Controls how far back Customer Journey Analytics looks when processing the data feed delivery.<br/>This setting does not alter the frequency window (hour or day). However, the lookback date range can influence the data that is delivered. Segment qualification, session calculation, and dimension persistence are all impacted by the lookback date range."
 
