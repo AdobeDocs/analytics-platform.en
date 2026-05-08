@@ -4,7 +4,7 @@ description: Plan your upgrade from Adobe Analytics to Customer Journey Analytic
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
+hide: true
 exl-id: fd3b36ab-72c1-469a-b2c7-419813c82425
 TQID: https://experienceleague.adobe.com/ECZ-XLyYYVP8DHy6zhlielpnYwtvixFxWiUaqjh8Nag
 product_v2:

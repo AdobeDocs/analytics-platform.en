@@ -3,7 +3,7 @@ title: Send data to Adobe Experience Platform when migrating to Customer Journey
 description: Send data to Adobe Experience Platform when migrating to Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
+hide: true
 exl-id: d9d7f186-9077-4372-94ad-8dd5b97779ca
 TQID: https://experienceleague.adobe.com/OQzCu-gf3Br-rXU0AnWCVzMTxdEq28M7aEAKmZN6b7c
 product_v2:

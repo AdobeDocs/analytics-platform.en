@@ -4,7 +4,7 @@ description: Learn how to retain historical data when upgrading to Customer Jour
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
+hide: true
 exl-id: 1d17151b-3a12-468e-9a4f-9e5994599570
 TQID: https://experienceleague.adobe.com/8AM-LX5GllmfDt-OpG6CAZt6qMH4DfMj9x8kgDBrD7I
 product_v2:

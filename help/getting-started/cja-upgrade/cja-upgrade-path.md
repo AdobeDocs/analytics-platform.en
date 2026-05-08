@@ -4,7 +4,7 @@ description: Learn the advantages and disadvantages of the possible upgrade path
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: yes
+hide: true
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
 TQID: https://experienceleague.adobe.com/iMB4RMf919vA1uyw8Hx-VOyXbL8M7UagPzBiWZG11Uc
 product_v2:

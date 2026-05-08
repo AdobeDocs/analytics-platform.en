@@ -51,7 +51,7 @@ Content Analytics is licensed as a standalone product, but the configuration hap
 
 Before you begin the setup of standalone Content Analytics, you should:
 
-* Have a basic understanding of web analytics concepts, familiarity with tag management systems, and basic JavaScript knowledge.
+* Have a basic understanding of web and mobile analytics concepts, familiarity with tag management systems, and basic JavaScript knowledge. For Content Analytics for the mobile channel, you should have mobile app development skills.
 * Plan 4-6 hours for the initial setup, plus additional time to test and validate the setup.
 
 ## Terminology
@@ -74,14 +74,14 @@ This guide uses several technical terms, from Experience Platform and Customer J
 
 ## Setup overview
 
-This configuration guides you in the setup of all applications that are required to have a working **standalone** Content Analytics implementation. You can divide the setup in three phases, where each phase builds upon the previous one:
+This configuration guides you in the setup of all applications that are required to have a working **standalone** Content Analytics implementation. You can divide the setup into three phases, where each phase builds upon the previous one:
 
-**Phase 1** - [Prepare your environment](#prepare-your-environment). In this phase, you set up user permissions and verify your data infrastructure. Without these proper permissions and data structure, you are not able to complete the remaining steps. The steps involved are:
+**Phase 1** - [Prepare your environment](#prepare-your-environment). In this phase, you set up user permissions and verify your data infrastructure. With these proper permissions and data structure, you can complete the remaining steps. The steps involved are:
 
 1. **Configure access control and permissions** to support the Content Analytics configuration and implementation.
 1. **Set up a schema and dataset** to define the model (schema) of the data you want to collect content analytics insights from and where to collect that data (dataset).
 
-**Phase 2** - [Configure data collection](#configure-data-collection). In this phase, you create the pipeline that captures content data from your website. So, Content Analytics knows what content visitors engage with your content.
+**Phase 2** - [Configure data collection](#configure-data-collection). In this phase, you create the pipeline that captures content data from your website. So, Content Analytics knows which content visitors engage with.
 
 1. **Set up a datastream** to configure how your collected data is routed to the dataset.
 1. **Use website tags** to configure rules and data elements against the data in your data layer on your website and to ensure that data is sent to the configured datastream. 
@@ -101,7 +101,7 @@ In this phase, you set up user permissions and verify your data infrastructure.
 
 ### Configure access control and permissions
 
-This section documents what access you require to product, product profiles and which permissions are required to configure and set up standalone Content Analytics. Although you are only interested in the functionality of Content Analytics, for that functionality to work properly, you still require access and permissions for other Experience Platform products.
+This section documents what access you require to products, product profiles and which permissions are required to configure and set up standalone Content Analytics. Although you are only interested in the functionality of Content Analytics, for that functionality to work properly, you still require access and permissions for other Experience Platform products.
 
 #### Access control
 
@@ -155,11 +155,11 @@ You define product profile administrator access through the Admin Console:
 
 Permissions define what you can do within a product once you do have access to the product.
 
-You define permissions for Experience Platform in the [!UICONTROL Permissions] interface and you use attribute based access control. For Customer Journey Analytics, you define permissions through the [!UICONTROL Admin Console].
+You define permissions for Experience Platform in the [!UICONTROL Permissions] interface and you use attribute-based access control. For Customer Journey Analytics, you define permissions through the [!UICONTROL Admin Console].
 
 ##### Experience Platform
 
-The [!UICONTROL Permissions] interface in Experience Platform is based on the definition of a role. A role is a collection of resource based permissions. In a new provisioned environment, two default roles are available: **[!UICONTROL Default Production All Access]** and **[!UICONTROL Sandbox Administrators]**.
+The [!UICONTROL Permissions] interface in Experience Platform is based on the definition of a role. A role is a collection of resource-based permissions. In a new provisioned environment, two default roles are available: **[!UICONTROL Default Production All Access]** and **[!UICONTROL Sandbox Administrators]**.
 
 For Content Analytics, you need to verify whether the following resources and associated permissions are added to these roles:
 
@@ -192,7 +192,7 @@ For Content Analytics, you need to verify whether the following resources and as
     * View Sandbox
 
 
-Within the Permissions interface you can verify both roles and associated permissions. And which users belong to the role.
+Within the Permissions interface you can verify both roles and associated permissions. The interface also shows which users belong to the role.
 
 1. Access Experience Platform for your organization.
 1. In the welcome screen, in **[!UICONTROL Quick access]**, select **[!UICONTROL View all]**.
@@ -220,7 +220,7 @@ Within the Permissions interface you can verify both roles and associated permis
 
 ##### Customer Journey Analytics
 
-Customer Journey Analytics does not support attribute based access control. To specify permissions, you use the Admin Console.
+Customer Journey Analytics does not support attribute-based access control. To specify permissions, you use the Admin Console.
 
 For Content Analytics, you need to verify whether the following Customer Journey Analytics product profile permissions are included:
 
@@ -228,24 +228,18 @@ For Content Analytics, you need to verify whether the following Customer Journey
   * All available data views.
 
 * Reporting Tools
-  * Guided Analysis Access?
   * Calculated Metrics Creation
   * Segment Creation
-  * Labs Access?
   * Annotation Creation
-  * Audience Creation?
-  * Audience View?
   * Audit Logs Access
   * Share Project Links With Anyone
   * Forecasting
   * AI Assistant: Product Knowledge
   * Data Insights Agent
   * Intelligent Captions
-  * Data Storytelling?
 
 * Data View Tools
-  * Full Table Export?
-  * CJA BI Extension?
+  * Full Table Export
 
 To verify and update these permissions for Customer Journey Analytics:
 
@@ -268,7 +262,7 @@ To verify and update these permissions for Customer Journey Analytics:
 
 ### Set up schema and dataset
 
-To collect data from your website, subject to Content Analytics insights, you first need to define what kind of data you want to collect. And also how that data is stored. Both concepts are explained in [Setup a schema and dataset](/help/data-ingestion/aepwebsdk.md#set-up-a-schema-and-dataset) in the [Ingest data via the Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) quick start guide.
+To collect data from your website for Content Analytics insights, you first need to define what kind of data you want to collect. You also need to define how that data is stored. Both concepts are explained in [Set up a schema and dataset](/help/data-ingestion/aepwebsdk.md#set-up-a-schema-and-dataset) in the [Ingest data via the Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) and [Ingest data via the Adobe Experience Platform Mobile SDK](/help/data-ingestion/aepmobilesdk.md) quick start guide.
 
 
 ## Configure data collection
@@ -282,14 +276,14 @@ You have defined what data to collect and how to store that data. The next step 
 
 ### Use Tags
 
-You have defined what data to collect (schema), how to store that data (dataset) and how collected data from your website is routed to the dataset (datastream). As a next step, you need to tag your website to configure rules and data elements against the data in your data layer on your website. Tagging your website ensures that data is sent to the configured datastream. The tagging of your website with the help of Tags is explained in [Use Tags](/help/data-ingestion/aepwebsdk.md#use-tags) in the [Ingest data via the Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) quick start guide.
+You have defined what data to collect (schema), how to store that data (dataset) and how collected data from your website is routed to the dataset (datastream). As a next step, you need to tag your website to configure rules and data elements against the data in your data layer on your website. Tagging your website ensures that data is sent to the configured datastream. Tagging your website using Tags is explained in Use Tags in the [Web SDK](/help/data-ingestion/aepwebsdk.md#use-tags) and [Mobile SDK](/help/data-ingestion/aepmobilesdk.md#use-tags) quick start guides.
 
 
 ### Deploy and validate
 
 You can now deploy the code on the development version of your website inside the `<head>` tag. When deployed, your website starts collecting data into Adobe Experience Platform. That data is then subject to Content Analytics.
 
-Validate your implementation, correct it where necessary, and once correct, deploy it to your staging and production environment using the publishing workflow feature of Tags
+Validate your implementation, correct it where necessary, and once correct, deploy it to your staging and production environment using the publishing workflow feature of Tags.
 
 
 ## Set up reporting
@@ -298,12 +292,12 @@ In this phase you make the collected data available for analysis in reports.
 
 ### Set up a connection to your dataset
 
-To report on the collected data and to configure that data for Content Analytics, you need to set up a connection in Customer Journey Analytics. The connection connects to the dataset that contains the collected data. How to set up a connection is explained in [Set up a connection](../../data-ingestion/aepwebsdk.md#set-up-a-connection) in the [Ingest data via the Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) quick start guide.
+To report on the collected data and to configure that data for Content Analytics, you need to set up a connection in Customer Journey Analytics. The connection connects to the dataset that contains the collected data. See [Set up a connection](../../data-ingestion/aepwebsdk.md#set-up-a-connection) in the [Web SDK](/help/data-ingestion/aepwebsdk.md) and [Mobile SDK](/help/data-ingestion/aepmobilesdk.md#set-up-a-connection) quick start guides.
 
 
 ### Set up a data view
 
-The final step before you can configure Content Analytics, is to define a data view. A data view is a container specific to Customer Journey Analytics that lets you determine how to interpret data from a connection. A data view allows you to define metrics and dimensions from the data from one or more datasets to which Customer Journey Analytics is connected. How to set up a data view is explained in [Set up a data view](/help/data-ingestion/aepwebsdk.md#set-up-a-data-view) in the [Ingest data via the Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) quick start guide.
+The final step before you can configure Content Analytics is to define a data view. A data view is a container specific to Customer Journey Analytics that lets you determine how to interpret data from a connection. A data view allows you to define metrics and dimensions from the data from one or more datasets to which Customer Journey Analytics is connected. See [Set up a data view](/help/data-ingestion/aepwebsdk.md#set-up-a-data-view) in the [Web SDK](/help/data-ingestion/aepwebsdk.md) and [Mobile SDK](/help/data-ingestion/aepmobilesdk.md#set-up-a-data-view) quick start guides.
 
 
 ### Configure Content Analytics
@@ -312,7 +306,7 @@ You now have everything in place to configure Content Analytics.
 
 #### Guided configuration
 
-Use the [guided configuration wizard](guided.md) and select the data view you created as part of the [Setup a data view](#set-up-a-data-view) step. That selection ensures that Content Analytics is configured and implemented on top of the data you collect from your website.
+Use the [guided configuration wizard](guided.md) and select the data view you created as part of the [Setup a data view](#set-up-a-data-view) step. That selection ensures that Content Analytics is configured and implemented on top of the data you collect from your website and mobile application.
 
 Be aware that the guided configuration wizard configures the following additional specific Content Analytics objects: 
 
@@ -324,7 +318,6 @@ Be aware that the guided configuration wizard configures the following additiona
   >
   >Ensure you select the option to create a New Tags property as part of the [Data collection](guided.md#new-configuration-1) step in the wizard.
   >
-
 
 #### Manual configuration
 

@@ -33,7 +33,6 @@ role_v2:
 >title="Show table"
 >abstract="Select **[!UICONTROL Show table]** to generate a new data source for your current visualization, separate from the original data source."
 
-
 Synchronizing visualizations lets you control which freeform table or data source corresponds to a visualization.
 
 >[!TIP]

@@ -1,5 +1,5 @@
 ---
-description: Learn how to troubleshoot when configuring a journey canvas visualization.
+description: Learn how to use the Journey canvas visualization in Analysis Workspace to analyze user journeys, fallout, and multi-path conversions.
 title: Journey Canvas Troubleshooting
 feature: Visualizations
 role: User
@@ -42,7 +42,7 @@ This can occur in the following scenarios:
 
 * When multiple paths converge into a single node
 
-### The journey uses a primary metric other than People or Session
+### The journey uses a primary metric other than People or Sessions
 
 Because Journey canvas allows you to use any metric as the primary metric, this can result in nodes that come later in the journey to show a higher percentage or number count than nodes that come earlier in the journey.
 
@@ -62,7 +62,7 @@ Now, suppose that User A visits the site again in a later session. Because User 
 
 In this example, the journey's container setting of "Person" plays a critical role in determining that the event on the third node ("Check out") is counted in the subsequent session. 
 
-Alternatively, if the container setting had been set to "Session," then the event that took place only on the third node in the subsequent visit would not have counted in the journey, because the statistics shown in the journey would be constrained to a single defined session for a given person. To learn more about the container setting, see [Begin building a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization) in the article [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
+Alternatively, if the container setting had been set to "Session," then the event that took place only on the third node in the subsequent visit would not have counted in the journey, because the statistics shown in the journey would be constrained to a single defined session for a given person. To learn more about the container setting, see [Begin building a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization) in the article [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 <!-- The time allotted for users to move along the path is determined by the container setting. Because "Person" is selected as the container setting in this example, people who followed the journey's path in one session (moving from Node 1 to Node 2 and to Node 3) met the criteria of the journey. On any subsequent visits to the site, any event they have that matches any node on the journey is counted on that node. -->
 
@@ -70,7 +70,7 @@ Alternatively, if the container setting had been set to "Session," then the even
 
 Suppose that User B visits the site and does not complete the journey (visits the site, views Product B, and then checks out). In this case, an event is counted for the journey's start node, "Visit site," but an event is not counted for the remaining nodes, and User B falls out of the journey. Even though User B checked out, an event is not counted on the third node ("Check out") because User B did not complete the journey by viewing Product A prior to checking out. 
 
-This is because events are counted for each node only when people follow the journey's "eventual path." This means that events are counted only if the person eventually moved from one node to the other, regardless of any events occurring between the 2 nodes. 
+This is because events are counted for each node only when people follow the journey's "eventual path." This means that events are counted only if the person eventually moved from one node to the other, regardless of any events occurring between the two nodes. 
 
 ### The journey has multiple paths converging into a single node
 

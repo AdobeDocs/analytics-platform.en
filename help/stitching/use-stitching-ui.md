@@ -252,3 +252,4 @@ Stitching enabled in the Connections interface can coexist without any issues wi
 For example, you have web-based stitched datasets in the data lake as a result of earlier or current stitching requests. You can add stitched data from a call-center dataset using the Connections interface to combine that data with the web-based data. 
 
 Eventually, Adobe will migrate your request-based stitched datasets to the new stitching in connections experience.
+

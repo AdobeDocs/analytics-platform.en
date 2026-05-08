@@ -118,7 +118,8 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Data warehouse native solutions](/help/data-mirror/datawarehouse.md)
     + [Experience Platform](/help/data-mirror/aep.md)
     + [Customer Journey Analytics](/help/data-mirror/cja.md)
-  + [Data Mirror quick start guide](/help/data-mirror/relational.md)
+  + [Quick start guide](/help/data-mirror/relational.md)
+  + {hide-from-toc} [Considerations](/help/data-mirror/considerations.md)
 
 + Connections {#cja-connections}
   + [Connections overview](../connections/overview.md)
@@ -294,6 +295,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Guided configuration](/help/content-analytics/config/guided.md)
     + [Manual configuration](/help/content-analytics/config/manual.md)
     + [Standalone configuration](/help/content-analytics/config/standalone.md)
+    + {hide-from-toc} [Tags agnostic configuration](/help/content-analytics/config/tag-agnostic.md)
     + [Data collection](/help/content-analytics/config/datacollection.md)
 
 + Analytics dashboards {#cja-dashboards}
@@ -404,6 +406,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + {hide-from-toc} [Compare Adobe Analytics data feeds](/help/components/exports/cja-data-feeds/df-comparison.md)
       + {hide-from-toc} [Prepare to map columns](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc} [Map columns](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
+      + {hide-from-toc} [Create a data feed](/help/components/exports/cja-data-feeds/create-feed.md)
   + Data Dictionary {#data-dictionary}
     + [Overview](../components/data-dictionary/data-dictionary-overview.md)
     + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
