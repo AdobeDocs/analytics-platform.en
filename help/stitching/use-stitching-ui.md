@@ -82,36 +82,43 @@ If you meet the prerequisites, you might want to perform some preflight checks o
 
 You can enable identity stitching when you [add](/help/connections/create-connection.md#add-datasets) or [edit](/help/connections/create-connection.md#edit-a-dataset) an event dataset in a person-based connection. Identity stitching is not available for account-based connections.
 
+
 >[!CONTEXTUALHELP]
 >id="connection_changeto_identitygraph"
 >title="Change to identity graph"
 >abstract="Ensure you have finished the setup of the identity graph before you use the identity graph for stitching."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Graph-based stitching"
 
+
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
 >title="Person ID"
 >abstract="Select a person ID (the unique identifier for a person) from the available identities. In case your license includes graph-based stitching and you want to use that stitching method, select **[!UICONTROL Identity Graph]**."
+
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
 >title="Stitching metrics"
 >abstract="Stitching metrics are calculated using a sample set of data with event timestamps from the last 7 days.<br>This sample set of data usually differs from the sample data used in the **[!UICONTROL Preview]** table."
 
+
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
 >title="Person ID coverage"
 >abstract="The coverage of the selected person ID that is used for identification during the stitching process (live and replay).<br/>For best stitching results, a (persistent ID, person ID) relation should be present in the identity graph for each persistent ID."
+
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_fbs_personidcoverage"
 >title="Person ID coverage"
 >abstract="The coverage of the selected person ID that is used for identification during the stitching process (live and replay).<br/>For best stitching results, person ID (user info) should be sent on at least one event for each persistent ID (device info)."
 
+
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_persistentidcoverage"
 >title="Persistent ID coverage"
 >abstract="This value is used for identification during the stitching process (live and replay), in case a person ID value cannot be detected. <br/>Events with no persistent ID and no person ID are dropped from the data. For best stitching results, a persistent ID should be present on all events."
+
 
 
 >[!CONTEXTUALHELP]

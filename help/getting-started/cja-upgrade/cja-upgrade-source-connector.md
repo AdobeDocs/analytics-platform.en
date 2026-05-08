@@ -10,6 +10,7 @@ exl-id: f96565a2-f556-4b45-b88e-984613614d2e
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-create"
 >title="Create the Analytics source connector"
@@ -18,6 +19,7 @@ exl-id: f96565a2-f556-4b45-b88e-984613614d2e
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
+
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-map-fields"

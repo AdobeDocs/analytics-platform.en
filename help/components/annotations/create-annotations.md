@@ -33,6 +33,7 @@ Should we really mention API here. If so, we can do it all over the place in the
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="components_annotations_details"
 >title="Annotation details"
@@ -41,6 +42,7 @@ Should we really mention API here. If so, we can do it all over the place in the
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
+
 
 >[!CONTEXTUALHELP]
 >id="components_annotations_scope"

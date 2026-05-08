@@ -20,6 +20,7 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_export_file"
 >title="Manifest"
@@ -29,6 +30,7 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_notify"
 >title="Notify when complete"
@@ -37,6 +39,7 @@ Before you create a data feed, it's important to have a basic understanding of d
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
+
 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_lookback_date_range"

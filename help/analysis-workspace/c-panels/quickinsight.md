@@ -9,6 +9,7 @@ role: User
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_quickinsights_button"
 >title="Quick insights"

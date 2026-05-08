@@ -34,15 +34,18 @@ General preferences apply to your Customer Journey Analytics experience in the b
 
 ### IMS Organization preferences {#ims-organization-preferences}
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_shareonlyworkspace"
 >title="Allow sharing only with Workspace users"
 >abstract="When enabled, the **[!UICONTROL Share with anyone]** option is no longer available to users when sharing an Analysis Workspace project. People who previously received access to a project through this share option can no longer access the project."
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_requireexperiencecloudauth"
 >title="Require Experience Cloud authentication"
 >abstract="When enabled, people who are given access to a project from the **[!UICONTROL Share with anyone]** option in Analysis Workspace must authenticate using their Experience Cloud credentials."
+
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_projectcommenting"
@@ -65,15 +68,18 @@ You can update company preferences that apply to all users and projects within y
 
 ### Projects & Analyses preferences {#project-and-analysis-preferences}
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_categoricalpalette"
 >title="Categorical palette"
 >abstract="Applied to many visualizations in Analysis Workspace and Guided analysis. Each color represents a distinct categorical value."
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_divergingpalette"
 >title="Diverging palette"
 >abstract="Applied to the Cohort table in Analysis Workspace and User growth guided analysis. This palette holds a numeric meaning with two extremes and a baseline in the middle."
+
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_sequentialpalette"
@@ -109,15 +115,18 @@ Some of these same preferences can also be customized for individual projects in
 
 ### Freeform table preferences {#freeform-table-preferences}
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_showanomalies"
 >title="Show anomalies"
 >abstract="Selecting **[!UICONTROL Show anomalies]** will automatically run anomaly detection on the first metric column added to a time series Freeform table visualization."
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_showforecast"
 >title="Show forecast"
 >abstract="Selecting **[!UICONTROL Show forecast]** will automatically forecast the first metric column added to a time series Freeform table visualization."
+
 
 
 >[!CONTEXTUALHELP]
@@ -158,20 +167,24 @@ Select the linked section titles for more information and context about the avai
 
 ### Visualizations preferences {#visalization-preferences}
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultflowcontainer"
 >title="Default container"
 >abstract="Select the default container to use for [!UICONTROL Flow] visualizations. If the selected data view does not contain the selected default container, the [!UICONTROL Flow] visualization automatically switches to another primary container."
+
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultfalloutcontainer"
 >title="Default container"
 >abstract="Select the default container to use for [!UICONTROL Fallout] visualizations. If the selected data view does not contain the selected default container, the [!UICONTROL Fallout] visualization automatically switches to another primary container."
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulthistogramcountingmethod"
 >title="Default counting method"
 >abstract="Select the default counting method to use for [!UICONTROL Histogram] visualizations. If the selected data view does not contain the selected default counting method, the [!UICONTROL Histogram] visualization automatically switches to another primary counting method."
+
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultjourneycanvascontainer"

@@ -9,6 +9,7 @@ role: User
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_blankpanel_button"
 >title="Blank panel"

@@ -70,6 +70,7 @@ To send a file on a schedule to recipients by email:
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_sendfile_password"
 >title="Password encryption"

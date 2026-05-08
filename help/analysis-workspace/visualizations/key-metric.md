@@ -7,6 +7,7 @@ role: User
 ---
 # Key metric summary {#key-metric-summary}
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_keymetricsummary_button"
 >title="Key metric summary"

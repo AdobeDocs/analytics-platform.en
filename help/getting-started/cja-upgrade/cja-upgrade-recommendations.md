@@ -24,6 +24,7 @@ After you have enough historical data using the Experience Platform Web SDK and 
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-historical-data"
 >title="Historical data from Adobe Analytics"

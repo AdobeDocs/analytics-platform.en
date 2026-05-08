@@ -10,6 +10,7 @@ role: User
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_guidedanalysis_releaseimpact_button"
 >title="Release impact"

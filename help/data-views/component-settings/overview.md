@@ -10,6 +10,7 @@ role: Admin
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="Component settings"
@@ -18,6 +19,7 @@ role: Admin
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
+
 
 >[!CONTEXTUALHELP]
 >id="dataview_component_contextlabels"

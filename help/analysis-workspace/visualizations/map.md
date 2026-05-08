@@ -9,6 +9,7 @@ exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_map_button"
 >title="Map"
@@ -18,6 +19,7 @@ exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_map_bubbles"
 >title="Bubbles"
@@ -26,6 +28,7 @@ exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
+
 
 >[!CONTEXTUALHELP]
 >id="workspace_map_heatmap"
@@ -153,6 +156,7 @@ The map visualization in Customer Journey Analytics differs from the map visuali
 ## Build a map visualization {#begin-building-map}
 
 <!-- markdownlint-disable MD034 -->
+
 
 >[!CONTEXTUALHELP]
 >id="workspace_map_panel"

@@ -7,10 +7,12 @@ role: User
 ---
 # Experimentation panel {#experimentation-panel}
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_button"
 >title="Experimentation"
 >abstract="Create a panel to compare different user experiences, marketing, or messaging variations. And to determine which variation is best at driving a specific outcome."
+
 
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_panel"

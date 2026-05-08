@@ -7,6 +7,7 @@ role: User
 ---
 # Intelligent captions {#intelligent-captions}
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions"
 >title="Intelligent captions"

@@ -9,6 +9,7 @@ role: User
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_mediaplaybacktimespent_button"
 >title="Media playback time spent"
@@ -17,6 +18,7 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
+
 
 >[!CONTEXTUALHELP]
 >id="workspace_mediaplaybacktimespent_panel"
