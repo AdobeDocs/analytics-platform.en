@@ -15,6 +15,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 |---|---|
 | **May 2026** | |
+| Data Mirror consideratons | [Documentation](/help/data-mirror/considerations.md) that describes factors you should consider when you set up [Data Mirror datasets](/help/data-mirror/data-mirror.md). |
 | Content Analytics mobile channel | Updates to [Content Analytics documentation](/help/content-analytics/content-analytics.md) to describe the capabilities and configuration of the Content Analytics mobile channel. |
 | **April 2026** | |
 | Derived fields guidelines | Added article with [guidelines](/help/use-cases/data-views/derived-fields/guidelines.md) (best practices, guardrails, and common pitfalls) for working with derived fields. |

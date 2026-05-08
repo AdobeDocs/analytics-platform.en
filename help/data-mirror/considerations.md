@@ -5,7 +5,6 @@ solution: Customer Journey Analytics
 feature: Basics
 role: Admin
 badgePremium: label="Beta"
-hide: true
 ---
 # Experience Platform Data Mirror considerations
 
