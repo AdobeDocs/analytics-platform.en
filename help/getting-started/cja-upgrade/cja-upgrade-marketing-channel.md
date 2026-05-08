@@ -10,7 +10,6 @@ exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-marketing-channel"
 >title="Create a marketin channel derived field"

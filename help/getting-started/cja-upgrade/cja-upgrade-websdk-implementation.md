@@ -10,7 +10,6 @@ exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-js"
 >title="Web SDK JavaScript library (alloy.js)"
@@ -19,7 +18,6 @@ exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-tags"
@@ -30,7 +28,6 @@ exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-api"
 >title="NPM package"
@@ -40,7 +37,6 @@ exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-no-selection"
 >title="Implement the Web SDK for your given property"
@@ -49,7 +45,6 @@ exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-third-party"

@@ -57,7 +57,6 @@ You can do pathing on dimensions, metrics, and segments. For example, suppose th
 
 ## Settings {#settings}
 
-
 >[!CONTEXTUALHELP]
 >id="workspace_fallout_container"
 >title="Fallout container"

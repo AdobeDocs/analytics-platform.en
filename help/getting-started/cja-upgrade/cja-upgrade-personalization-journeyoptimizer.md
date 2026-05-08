@@ -10,7 +10,6 @@ exl-id: 5086ac6e-5bee-4f0f-b7e5-a3d9bd8a1332
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-personalization"
 >title="Use the personalization object for Adobe Journey Optimizer"

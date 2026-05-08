@@ -9,7 +9,6 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_button"
 >title="Journey canvas"
@@ -18,7 +17,6 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
@@ -29,7 +27,6 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="journeycanvas_button"
 >title="Journey canvas"
@@ -38,7 +35,6 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"

@@ -7,7 +7,6 @@ role: User
 ---
 # Scatter {#scatter}
 
-
 >[!CONTEXTUALHELP]
 >id="workspace_scatter_button"
 >title="Scatter"

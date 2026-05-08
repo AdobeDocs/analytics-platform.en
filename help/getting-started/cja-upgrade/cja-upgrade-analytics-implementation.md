@@ -10,7 +10,6 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement"
 >title="AppMeasurement (Manual JS file)"
@@ -19,7 +18,6 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-analyticsextension"
@@ -30,7 +28,6 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk"
 >title="Web SDK (alloy.js)"
@@ -39,7 +36,6 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdkextension"
@@ -50,7 +46,6 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-api"
 >title="Data Insertion API"
@@ -59,7 +54,6 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-mobilesdk"
@@ -70,7 +64,6 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-third-party"
 >title="AppMeasurement using a third-party tag management tool"
@@ -80,7 +73,6 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-unknown"
 >title="Unknown implementation"
@@ -89,7 +81,6 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-determine-implementation"

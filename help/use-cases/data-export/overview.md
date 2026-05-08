@@ -12,7 +12,6 @@ exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-feeds-step"
 >title="Use export features similar to Data Feeds"

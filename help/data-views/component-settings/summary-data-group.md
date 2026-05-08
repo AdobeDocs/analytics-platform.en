@@ -10,7 +10,6 @@ exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_summarydatagroup"
 >title="Summary data group"
@@ -19,7 +18,6 @@ exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_summarydatagroup_hideinreporting"

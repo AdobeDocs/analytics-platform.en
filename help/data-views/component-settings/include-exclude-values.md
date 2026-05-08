@@ -10,7 +10,6 @@ role: Admin
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_component_metric_includeexcludevalues"
 >title="Include exclude values"
@@ -19,7 +18,6 @@ role: Admin
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_includeexcludevalues"

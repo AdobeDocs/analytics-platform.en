@@ -10,7 +10,6 @@ exl-id: d686dcdd-08d5-4e8f-8f0d-76c8c7b0427f
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataset-create"
 >title="Create a dataset in Adobe Experience Platform"

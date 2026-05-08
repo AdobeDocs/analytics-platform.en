@@ -10,7 +10,6 @@ exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-appmeasurement"
 >title="Disable AppMeasurement data collection"

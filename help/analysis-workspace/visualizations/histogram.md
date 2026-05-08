@@ -7,7 +7,6 @@ role: User
 ---
 # Histogram {#histogram}
 
-
 >[!CONTEXTUALHELP]
 >id="workspace_histogram_button"
 >title="Histogram"

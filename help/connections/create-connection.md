@@ -8,114 +8,95 @@ role: Admin
 ---
 # Create or edit a connection {#create-or-edit-a-connection}
 
-
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsadded"
 >title="Records added"
 >abstract="The number of records (rows) added to a Connection during the selected time interval for the selected datasets."
-
 
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsskipped"
 >title="Records skipped"
 >abstract="The number of records (rows) skipped during data transfer for a Connection during the selected time interval for the selected datasets."
 
-
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsdeleted"
 >title="Records deleted"
 >abstract="The number of records (rows) removed from a Connection during the selected time interval for the selected datasets."
-
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_lastadded"
 >title="Last added"
 >abstract="The timestamp of the latest batch from any dataset transferred to a Connection."
 
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_enablerollingdatawindow"
 >title="Enable rolling data window"
 >abstract="Define data retention as a rolling window in months at a connection level."
-
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_averagenumberofdailyuses"
 >title="Average number of daily uses"
 >abstract="Select a range for the number of expected daily events for the entire connection."
 
-
 >[!CONTEXTUALHELP]
 >id="connections_recordsadded"
 >title="Records added"
 >abstract="The number of records (rows) added to a Connection during the selected time interval for the selected datasets."
-
 
 >[!CONTEXTUALHELP]
 >id="connections_recordsskipped"
 >title="Records skipped"
 >abstract="The number of records (rows) skipped during data transfer for a Connection during the selected time interval for the selected datasets."
 
-
 >[!CONTEXTUALHELP]
 >id="connections_recordsdeleted"
 >title="Records deleted"
 >abstract="The number of records (rows) removed from a Connection during the selected time interval for the selected datasets"
-
 
 >[!CONTEXTUALHELP]
 >id="connection_lastadded"
 >title="Last added"
 >abstract="The timestamp of the latest batch from any dataset transferred to a Connection."
 
-
 >[!CONTEXTUALHELP]
 >id="connection_enablerollingdatawindow"
 >title="Enable rolling data window"
 >abstract="Define data retention as a rolling window in months at a connection level."
-
 
 >[!CONTEXTUALHELP]
 >id="connection_averagenumberofdailyuses"
 >title="Average number of daily uses"
 >abstract="Select a range for the number of expected daily events for the entire connection."
 
-
 >[!CONTEXTUALHELP]
 >id="connection_change_personid"
 >title="Change identity settings "
 >abstract="A change of identity setting deletes connection data for this dataset, once you save the modifications in the Connections interface. You will have to manually start a data backfill for the dataset, based on the new settings.<br/><br/>A delay in reporting is possible until the deletion process is completed." 
-
 
 >[!CONTEXTUALHELP]
 >id="connection_change_accountid"
 >title="Change Account ID"
 >abstract="A change of the Account ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Account ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
 
-
 >[!CONTEXTUALHELP]
 >id="connection_change_globalaccountid"
 >title="Change Global Account ID"
 >abstract="A change of the Global Account ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Global Account ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
-
 
 >[!CONTEXTUALHELP]
 >id="connection_change_opportunityid"
 >title="Change Opportunity ID"
 >abstract="A change of the Opportunity ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Opportunity ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
 
-
 >[!CONTEXTUALHELP]
 >id="connection_change_buyinggroupid"
 >title="Change Buying Group ID"
 >abstract="A change of the Buying Group ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Buying Group ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
 
-
 >[!CONTEXTUALHELP]
 >id="connection_change_persistentid"
 >title="Change Persistent ID"
 >abstract="A change of the Persistent ID deletes all existing data in the connection and re-ingests all data from the dataset based on the new Persistent ID. This action can have cost implications. <br/><br/>When you select **[!UICONTROL Continue]**, a delay in reporting is possible until the process completes."
-
 
 
 >[!CONTEXTUALHELP]
@@ -127,42 +108,35 @@ role: Admin
 
 <!-- Start of contextual help entries for CJA connection dialogs -->
 
-
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_ajo"
 >title="Use this connection in Customer Journey Analytics"
 >abstract="This option allows you to leverage the advanced reporting capabilities of Customer Journey Analytics with your Journey Optimizer connection. These capabilities allow you to:<ul><li>Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics.</li><li>Edit the Journey Optimizer connection and associated data views.</li><li>Analyze journey events, conversation paths, and campaign performance.</li></ul>**When this option is enabled, each row of data within the connection counts towards your license rows of data each month for Customer Journey Analytics. And appears within the Connections Usage UI.**<br><br/>Explore this option only if you are comfortable with the additional usage of rows of data in Customer Journey Analytics. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo){target="_blank"}."
-
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_ajo"
 >title="Remove this connection from Customer Journey Analytics"
 >abstract="This Journey Optimizer connection is currently used in Customer Journey Analytics. The connection allows you to:<ul><li>Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics.</li><li>Edit the Journey Optimizer connection and associated data views.</li><li>Analyze journey events, conversation paths, and campaign performance.</li></ul>**If you remove the connection, in-depth analysis in Customer Journey Analytics is no longer possible. The connection and any associated data views are reset to their default state and can no longer be edited.**<br/><br/>**Billing for this connection in Customer Journey Analytics includes the full month during which the connection is removed.**<br/><br/>The connection remains enabled in Journey Optimizer. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo){target="_blank"}." 
 
-
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_brand_concierge"
 >title="Use this connection in Customer Journey Analytics"
 >abstract="This option allows you to leverage the advanced reporting capabilities of Customer Journey Analytics with your Brand Concierge connection. These capabilities allow you to:<ul><li>Perform an in-depth analysis of Brand Concierge data within Customer Journey Analytics.</li><li>Edit the Brand Concierge connection and associated data views.</li><li>Analyze conversational engagement, sentiment, and conversion metrics.</li></ul>**When this option is enabled, each row of data within the connection counts towards your license rows of data each month for Customer Journey Analytics. And appears within the Connections Usage UI.**<br><br/>Explore this option only if you are comfortable with the additional usage of rows of data in Customer Journey Analytics. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}."
-
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_brand_concierge"
 >title="Remove this connection from Customer Journey Analytics"
 >abstract="This Brand Concierge connection is currently used in Customer Journey Analytics. The connection allows you to:<ul><li>Perform an in-depth analysis of Brand Concierge data within Customer Journey Analytics.</li><li>Edit the Brand Concierge connection and associated data views.</li><li>Analyze conversational engagement, sentiment, and conversion metrics.</li></ul>**If you remove the connection, in-depth analysis in Customer Journey Analytics is no longer possible. The connection and any associated data views are reset to their default state and can no longer be edited.**<br/><br/>**Billing for this connection in Customer Journey Analytics includes the full month during which the connection is removed.**<br/><br/>The connection remains enabled in Brand Concierge. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates){target="_blank"}." 
 
-
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_product_usage"
 >title="Use this connection in Customer Journey Analytics"
 >abstract="This option allows you to leverage the advanced reporting capabilities of Customer Journey Analytics with your product usage connection. These capabilities allow you to:<ul><li>Perform in-depth analysis of product usage data within Customer Journey Analytics.</li><li>Edit the product usage connection and associated data views.</li></ul>**When this option is enabled, each row of data within the connection counts towards your license rows of data each month for Customer Journey Analytics. And appears within the Connections Usage UI.**<br><br/>Explore this option only if you are comfortable with the additional usage of rows of data in Customer Journey Analytics. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}."
 
-
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_product_usage"
 >title="Remove this connection from Customer Journey Analytics"
 >abstract="This product usage connection is currently used in Customer Journey Analytics. The connection allows you to:<ul><li>Perform in-depth analysis of product usage data within Customer Journey Analytics.</li><li>Edit the product usage connection and associated data views.</li></ul>**If you remove the connection, in-depth analysis in Customer Journey Analytics is no longer possible. The connection and any associated data views are reset to their default state and can no longer be edited.**<br/><br/>**Billing for this connection in Customer Journey Analytics includes the full month during which the connection is removed.**<br/><br/>The connection remains enabled for product usage. [Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview){target="_blank"}." 
-
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_legal_section_section"
@@ -170,18 +144,15 @@ role: Admin
 >abstract="Customer Journey Analytics usage may result in additional charges based on integration data volumes. See [details on Customer Journey Analytics billing and usage](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/manage-connections#connections-usage)"
 
 
-
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_ajo_learn_more"
 >title="Learn more"
 >abstract="[Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/manage-connections#connections-usage)."
 
-
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_brand_concierge_learn_more"
 >title="Learn more"
 >abstract="[Learn more](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)."
-
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_product_usage_learn_more"
@@ -333,168 +304,140 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 {{relational-model-based}}
 
 
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_primaryid"
 >title="Primary ID"
 >abstract="Select the proper primary ID for your connection: Person for a B2C scenario. Account for a B2B scenario."
-
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_optionalcontainers"
 >title="Optional containers"
 >abstract="Select additional containers.<br/><br/>**[!UICONTROL Global account]**: enables configuration of global accounts in a connection.<br/>**[!UICONTROL Opportunity]**: enables configuration of opportunities in a connection.<br/>**[!UICONTROL Buying group]**: enables configuration of buying groups in a connection."
 
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
 >title="Account ID"
 >abstract="Select an account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform."
-
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountfield"
 >title="Account field"
 >abstract="Select a field that represents the account ID (the unique identifier for an account)."
 
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_globalaccountid"
 >title="Global account ID"
 >abstract="Select a Global Account ID (the unique identifier for a global account) from the available identities that you have defined in the dataset schema in the Experience Platform."
-
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_opportunityid"
 >title="Opportunity ID"
 >abstract="Select an Opportunity ID (the unique identifier for an opportunity) from the available identities that you have defined in the dataset schema in the Experience Platform."
 
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_buyinggroupid"
 >title="Buying group ID"
 >abstract="Select a Buying Group ID (the unique identifier for a buying group) from the available identities that you have defined in the dataset schema in the Experience Platform."
-
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_personid"
 >title="Person ID"
 >abstract="Select a Person ID (the unique identifier for a person) from the available identities that you have defined in the dataset schema in the Experience Platform."
 
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
 >title="Matching key"
 >abstract="Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset."
-
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_importnewdata"
 >title="Import new data"
 >abstract="Any new batches that get added in the Experience Platform dataset are automatically added in this connection and made available for analysis."
 
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_datasetbackfill"
 >title="Dataset backfill"
 >abstract="This option backfills the existing (historical) data from Experience Platform for this dataset in the connection."
-
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_transformdataset"
 >title="Transform dataset"
 >abstract="This option transforms the dataset so it can be used for person-based lookups in B2B scenarios. Once turned on, the transformation of the dataset is irreversible."
 
-
 >[!CONTEXTUALHELP]
 >id="cja_connection_connectionmap"
 >title="Connection map"
 >abstract="The Connection map visualizes the relationships between event, person, account and relevant lookup datasets (like opportunities, campaign members, and more)."
-
 
 >[!CONTEXTUALHELP]
 >id="connection_primaryid"
 >title="Primary ID"
 >abstract="Select the proper primary ID for your connection: Person for a B2C scenario. Account for a B2B scenario."
 
-
 >[!CONTEXTUALHELP]
 >id="connection_optionalcontainers"
 >title="Optional containers"
 >abstract="Select additional containers.<br/><br/>**[!UICONTROL Global account]**: enables configuration of global accounts in a connection.<br/>**[!UICONTROL Opportunity]**: enables configuration of opportunities in a connection.<br/>**[!UICONTROL Buying group]**: enables configuration of buying groups in a connection."
-
 
 >[!CONTEXTUALHELP]
 >id="connection_personid"
 >title="Person ID"
 >abstract="Select a person ID from the available identities defined in the dataset schema in the Experience Platform."
 
-
 >[!CONTEXTUALHELP]
 >id="connection_accountid"
 >title="Account ID"
 >abstract="Select an account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform."
-
 
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"
 >title="Account field"
 >abstract="Select a field that represents the account ID (the unique identifier for an account)."
 
-
 >[!CONTEXTUALHELP]
 >id="connection_globalaccountid"
 >title="Global account ID"
 >abstract="Select a Global Account ID (the unique identifier for a global account) from the available identities that you have defined in the dataset schema in the Experience Platform."
-
 
 >[!CONTEXTUALHELP]
 >id="connection_opportunityid"
 >title="Opportunity ID"
 >abstract="Select an Opportunity ID (the unique identifier for an opportunity) from the available identities that you have defined in the dataset schema in the Experience Platform."
 
-
 >[!CONTEXTUALHELP]
 >id="connection_buyinggroupid"
 >title="Buying group ID"
 >abstract="Select a Buying Group ID (the unique identifier for a buying group) from the available identities that you have defined in the dataset schema in the Experience Platform."
-
 
 >[!CONTEXTUALHELP]
 >id="connection_matchingkey"
 >title="Matching key"
 >abstract="Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset."
 
-
 >[!CONTEXTUALHELP]
 >id="connection_matchingkeytype"
 >title="Matching key type"
 >abstract="Select how to join: based on a match by field or match by container.<br/><br/>**[!UICONTROL Match by field]**: Select a field to join on with one of the event datasets. If this list is empty, you probably haven't added or configured an event dataset.<br/>**[!UICONTROL Match by container]**: Select a container to use to join with one of the event datasets."
-
 
 >[!CONTEXTUALHELP]
 >id="connection_importnewdata"
 >title="Import new data"
 >abstract="Any new batches that get added in the Experience Platform dataset are added automatically in this connection and made available for analysis."
 
-
 >[!CONTEXTUALHELP]
 >id="connection_datasetbackfill"
 >title="Dataset backfill"
 >abstract="This option backfills the existing (historical) data from Experience Platform for this dataset in the connection."
-
 
 >[!CONTEXTUALHELP]
 >id="connection_transformdataset"
 >title="Transform dataset"
 >abstract="This option transforms the dataset so it can be used for person-based lookups in B2B scenarios. Once turned on, the transformation of the dataset is irreversible."
 
-
 >[!CONTEXTUALHELP]
 >id="connection_connectionmap"
 >title="Connection map"
 >abstract="The Connection map visualizes the relationships between event, person, account and relevant lookup datasets (like opportunities, campaign members, and more)."
-
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_enable"
@@ -502,13 +445,11 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >abstract="Enable identity stitching to elevate this event dataset for cross-channel analysis."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
 
-
 >[!CONTEXTUALHELP]
 >id="connection_stitching_dialog"
 >title="Identity stitching"
 >abstract="Identity stitching derives user identity information from a dataset or from the identity graph. This process may include the merge of user data from authenticated and unauthenticated sessions.<br/><br/>You are responsible to comply with applicable laws and regulations. This compliance includes that you obtain the necessary end user permissions before you activate stitching on a dataset."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
-
 
 >[!CONTEXTUALHELP]
 >id="connection_persistentid"
@@ -516,20 +457,17 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >abstract="Select a persistent ID from the available identities. A persistent ID is an identifier that is available on all events in the event dataset."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
 
-
 >[!CONTEXTUALHELP]
 >id="connection_lookbackwindow"
 >title="Replay window"
 >abstract="Select the appropriate time period for the replay window to use in stitching."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
 
-
 >[!CONTEXTUALHELP]
 >id="connection_namespace_map"
 >title="Namespace identity map"
 >abstract="Select the namespace to use to pick the identifier from the identity map."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview" text="Stitching overview"
-
 
 >[!CONTEXTUALHELP]
 >id="connection_namespace_graph"

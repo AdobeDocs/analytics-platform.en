@@ -16,7 +16,6 @@ For more information about Reporting Activity manager, including key benefits an
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja_tools_reportingactivitymanager_connections"
 >title="Connections"
@@ -25,7 +24,6 @@ For more information about Reporting Activity manager, including key benefits an
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="tools_reportingactivitymanager_connections"

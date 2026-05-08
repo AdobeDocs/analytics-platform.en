@@ -10,7 +10,6 @@ role: User, Admin
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-export-prefix"
 >title="Prefix"
@@ -19,7 +18,6 @@ role: User, Admin
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="cja-export-file-name"

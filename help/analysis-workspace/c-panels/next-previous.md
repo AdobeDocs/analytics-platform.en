@@ -7,12 +7,10 @@ exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
 ---
 # Next or previous item panel {#next-or-previous-item-panel}
 
-
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_button"
 >title="Next or previous item"
 >abstract="Create a panel to understand the previous dimensions people come from or next dimension people go to."
-
 
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_panel"
@@ -29,7 +27,6 @@ _This article documents the Next or previous item panel in_ ![CustomerJourneyAna
 The **[!UICONTROL Next or previous item]** panel contains a number of tables and visualizations to identify the next or previous dimension item for a specific dimension. For example, you might want to explore which pages customers went to most often after they visited the Home page.
 
 ## Use {#use}
-
 
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_container"

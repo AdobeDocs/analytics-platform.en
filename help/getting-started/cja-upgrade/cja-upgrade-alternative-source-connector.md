@@ -10,7 +10,6 @@ exl-id: 34e5f97b-c936-4de6-acc9-5774bc908655
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-exclusively"
 >title="Solely use the Analytics source connector"

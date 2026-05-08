@@ -10,7 +10,6 @@ exl-id: f76d098d-d223-40e4-be81-d28e7581396b
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-datastream-create"
 >title="Create a datastream in Adobe Experience Platform"

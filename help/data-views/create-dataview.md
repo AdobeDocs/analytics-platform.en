@@ -48,7 +48,6 @@ To configure a new or existing data view:
 
 ### Settings {#configure-settings}
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_externalid"
 >title="External ID"
@@ -67,7 +66,6 @@ Provides overarching settings for the data view.
 {style="table-layout:auto"}
 
 ### Compatibility {#compatibility}
-
 
 
 >[!CONTEXTUALHELP]
@@ -176,13 +174,11 @@ You can filter ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_1
 
 ### Included components {#included-components}
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_custom"
 >title="Custom labels"
 >abstract="In addition to the labels provided by Adobe, you can also define your own custom labels for your organization."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
-
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_contract"
@@ -190,13 +186,11 @@ You can filter ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_1
 >abstract="Contract (C) labels are used to categorize data that has contractual obligations or is related to your organization's data governance policies."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_identity"
 >title="Identity labels"
 >abstract="Identity (I) labels are used to categorize data that can identify or contact a specific person."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
-
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_sensitive"
@@ -205,20 +199,17 @@ You can filter ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_1
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
 
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_partnerecosystem"
 >title="Partner ecosystem"
 >abstract="Partner Ecosystem (P) labels are used to categorize data that is shared with third-party partners."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_policies"
 >title="Policies"
 >abstract="In order for data usage labels to effectively support data compliance, data usage policies must be implemented. Data usage policies are rules that describe the kinds of marketing actions that you are allowed to, or restricted from, performing on data within Experience Platform. The Policies filters apply the enabled policy to the Data View."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
-
 
 
 >[!CONTEXTUALHELP]
