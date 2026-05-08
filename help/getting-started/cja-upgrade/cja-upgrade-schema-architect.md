@@ -10,7 +10,6 @@ exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-architect"
 >title="Architect a schema"

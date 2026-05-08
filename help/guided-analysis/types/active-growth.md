@@ -8,7 +8,6 @@ role: User
 ---
 # [!UICONTROL Active growth] analysis {#active-growth}
 
-
 >[!CONTEXTUALHELP]
 >id="workspace_guidedanalysis_activegrowth_button"
 >title="Active growth"

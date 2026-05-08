@@ -10,7 +10,6 @@ exl-id: b807099d-a61d-48f9-9fec-94ecc6b76213
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-media-edge"
 >title="Set up and implement Media Edge"

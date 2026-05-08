@@ -16,12 +16,10 @@ The following settings are available on this page:
 
 Adobe uses a combination of client-side and server-side tracking to collect product usage data for your organization. When a user is initially opted out, that user might still see client-side tracking data in their debugger until they log out and back in to Customer Journey Analytics. Adobe's server-side validation ensures that client-side tracking data is discarded for opted out users. 
 
-
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_opt_out_settings"
 >title="Opt out users"
 >abstract="Exclude users from product usage tracking."
-
 
 >[!CONTEXTUALHELP]
 >id="product_usage_opt_out_settings"

@@ -10,7 +10,6 @@ exl-id: 22d3e7b8-4a4d-48a8-a98d-5172a9876286
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-connection"
 >title="Create a connection in Customer Journey Analytics"

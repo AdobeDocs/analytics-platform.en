@@ -15,7 +15,6 @@ People in the login company can use these company templates as described in [Use
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="use-case-ajo-template"
 >title="Use template in Journey Optimizer"

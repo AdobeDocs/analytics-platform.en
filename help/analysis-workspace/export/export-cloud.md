@@ -10,7 +10,6 @@ role: User
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-full-table-export"
 >title="Create full table exports similar to Data Warehouse"
@@ -50,7 +49,6 @@ Use the following process when exporting full tables to the cloud:
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-export-details"
 >title="Details"
@@ -59,7 +57,6 @@ Use the following process when exporting full tables to the cloud:
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="cja-export-data-structure"
@@ -70,7 +67,6 @@ Use the following process when exporting full tables to the cloud:
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="export-manifest"
 >title="Include manifest file"
@@ -79,7 +75,6 @@ Use the following process when exporting full tables to the cloud:
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="cja-export-schedule"
@@ -91,7 +86,6 @@ Use the following process when exporting full tables to the cloud:
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-export-destination"
 >title="Destination"
@@ -101,7 +95,6 @@ Use the following process when exporting full tables to the cloud:
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-export-file-format"
 >title="File format"
@@ -110,7 +103,6 @@ Use the following process when exporting full tables to the cloud:
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="cja-export-notifications"

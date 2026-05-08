@@ -10,7 +10,6 @@ exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector"
 >title="Analytics source connector implementation"
@@ -19,7 +18,6 @@ exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-delete"

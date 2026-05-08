@@ -10,7 +10,6 @@ role: User
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="workspace_guidedanalysis_netgrowth_button"
 >title="Net growth"

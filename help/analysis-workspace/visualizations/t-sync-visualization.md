@@ -8,18 +8,15 @@ role: User
 ---
 # Manage data sources {#manage-data-sources}
 
-
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_lockselection"
 >title="Lock selection"
 >abstract="Enable this setting to lock the visualization to the selected positions or the selected items in the data source."
 
-
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_lockselection_showtable"
 >title="Show table"
 >abstract="Selecting **[!UICONTROL Show table]** will generate a new datasource for your current visualization, separate from the original data source."
-
 
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_showtable"

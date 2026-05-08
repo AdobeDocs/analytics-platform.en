@@ -10,7 +10,6 @@ role: User
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-additional-datasets"
 >title="Add additional datasets to your connection"

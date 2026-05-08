@@ -10,7 +10,6 @@ exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataview"
 >title="Create a data view in Customer Journey Analytics"

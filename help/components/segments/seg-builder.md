@@ -7,12 +7,10 @@ exl-id: 160021f1-6942-4682-9114-d375307d9912
 ---
 # Build segments {#build-segments}
 
-
 >[!CONTEXTUALHELP]
 >id="components_filters_createaudience"
 >title="Create Audience"
 >abstract="Audiences can be created from a segment and shared with the Adobe Experience Platform for activation."
-
 
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
@@ -141,19 +139,16 @@ Or, you could define 52 segments: 50 segments for the US states, one for mobile 
 
 ## Attribution {#attribution}
 
-
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_repeating"
 >title="Repeating"
 >abstract="Includes instances and persisted values for the dimension."
 
 
-
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_instance"
 >title="Instance"
 >abstract="Includes instances for the dimension."
-
 
 
 >[!CONTEXTUALHELP]

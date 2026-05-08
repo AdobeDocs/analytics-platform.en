@@ -10,7 +10,6 @@ exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-logic"
 >title="Use AppMeasurement logic with the Web SDK"
@@ -19,7 +18,6 @@ exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-logic-step"

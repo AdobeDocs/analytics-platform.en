@@ -10,7 +10,6 @@ exl-id: 382d2b00-939a-4fff-be02-7a98d457a455
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-extension"
 >title="Add the Platform Web SDK extension to your tag property"

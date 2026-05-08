@@ -9,7 +9,6 @@ role: User
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_button"
 >title="Freeform table"

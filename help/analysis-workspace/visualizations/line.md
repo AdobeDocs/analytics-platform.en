@@ -9,7 +9,6 @@ role: User
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="workspace_line_button"
 >title="Line"

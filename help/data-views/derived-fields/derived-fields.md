@@ -8,7 +8,6 @@ role: Admin
 ---
 # Derived fields {#derived-fields}
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields"
 >title="Derived fields"
@@ -476,7 +475,6 @@ For each supported function, find details below on:
 
 ### Case When {#casewhen}
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_casewhen"
 >title="Case When"
@@ -713,7 +711,6 @@ The following constraints apply and are enforced when *selecting* and *setting* 
 
 ### Classify {#classify}
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_classify"
 >title="Classify"
@@ -857,7 +854,6 @@ The following additional functionality is available in the Classify rule interfa
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_concatenate"
 >title="Concatenate"
@@ -946,7 +942,6 @@ You define an `Origin - Destination` derived field. You use the [!UICONTROL CONC
 
 ### Date Math {#datemath}
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_datemath"
 >title="Date Math"
@@ -1010,7 +1005,6 @@ The options for [!UICONTROL Return the first] or [!UICONTROL Return the last] ar
 <!-- DEDUPLICATE -->
 
 ### Deduplicate {#dedup}
-
 
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_deduplicate"
@@ -1103,7 +1097,6 @@ You define a new `Tracking Code (deduplicated)` derived field. You use the [!UIC
 
 ### Depth {#depth}
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_depth"
 >title="Depth"
@@ -1147,7 +1140,6 @@ And then use that new derived field in a visualization to break down on what ter
 ### Find and Replace {#find-and-replace}
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_findandreplace"
@@ -1225,7 +1217,6 @@ You define an `Email Marketing (updated)` derived field. You use the [!UICONTROL
 
 ### Lookup {#lookup}
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_lookup"
 >title="Lookup"
@@ -1283,7 +1274,6 @@ You can quickly insert a [!UICONTROL Lookup] function in the rule builder, alrea
 
 ### Lowercase {#lowercase}
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_lowercase"
 >title="Lowercase"
@@ -1340,7 +1330,6 @@ You define a `Product Names` derived field. You use the [!UICONTROL LOWERCASE] f
 <!-- MATH -->
 
 ### Math {#math}
-
 
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_math"
@@ -1429,7 +1418,6 @@ Use the Math function for hit-level based calculations. Use the [Summarize](#sum
 
 ### Merge Fields {#merge}
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_mergefields"
 >title="Merge Fields"
@@ -1501,7 +1489,6 @@ You must select the same type of fields within a Merge Fields rule. For example,
 <!-- NEXT OR PREVIOUS -->
 
 ### Next or Previous {#next-previous}
-
 
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_nextprevious"
@@ -1580,7 +1567,6 @@ You can only select fields that belong to the Visit or Event table.
 <!-- REGEX REPLACE -->
 
 ### Regex Replace {#regex-replace}
-
 
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_regexreplace"
@@ -1685,7 +1671,6 @@ You can use these sequences in the [!UICONTROL Output format] any number of time
 
 ### Split {#split}
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_split"
 >title="Split"
@@ -1784,7 +1769,6 @@ You create a `Second Response` derived field to take the last value  from the [!
 
 ### Summarize {#summarize}
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_summarize"
 >title="Summarize"
@@ -1858,7 +1842,6 @@ Use the Summarize function for event, session or person scope based calculations
 <!-- TRIM -->
 
 ### Trim {#trim}
-
 
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_trim"
@@ -1980,7 +1963,6 @@ You create a  `Store Identifier` derived field. You use the [!UICONTROL TRIM] fu
 
 ### Typecast {#typecast}
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_typecast"
 >title="Typecast"
@@ -2030,7 +2012,6 @@ You define a  `Revenue (integer)` derived field. You use the [!UICONTROL TYPECAS
 <!-- URL PARSE -->
 
 ### URL Parse {#urlparse}
-
 
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_urlparse"

@@ -10,7 +10,6 @@ role: User
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="workspace_guidedanalysis_trends_button"
 >title="Trends"

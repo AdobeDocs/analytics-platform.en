@@ -7,7 +7,6 @@ role: User
 ---
 # Totals {#workspace-totals}
 
-
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_grandtotal"
 >title="Grand Total"

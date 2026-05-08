@@ -9,7 +9,6 @@ role: User
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_button"
 >title="Media concurrent viewers"
@@ -18,7 +17,6 @@ role: User
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_panel"

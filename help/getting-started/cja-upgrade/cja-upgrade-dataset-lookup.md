@@ -10,7 +10,6 @@ exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-lookup-dataset-create"
 >title="Create a lookup dataset for each dimension containing classification data"

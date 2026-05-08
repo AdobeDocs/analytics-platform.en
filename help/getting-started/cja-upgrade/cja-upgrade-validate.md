@@ -10,7 +10,6 @@ exl-id: c0513e4c-51fb-4b4c-8450-8e6bf7dda4e7
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-validate"
 >title="Validate that data is flowing"

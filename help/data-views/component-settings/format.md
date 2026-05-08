@@ -10,7 +10,6 @@ role: Admin
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_component_metric_format"
 >title="Format"
@@ -52,7 +51,6 @@ You can determine how a given component is displayed by adjusting its format set
 ## Use currency conversion {#use-currency-conversion}
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="dataview_component_metric_format_currencyconversion"

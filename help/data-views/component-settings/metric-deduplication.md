@@ -10,7 +10,6 @@ role: Admin
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="dataview_component_metric_deduplication"
 >title="Metric deduplication"

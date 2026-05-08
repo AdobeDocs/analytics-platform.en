@@ -10,7 +10,6 @@ exl-id: 0e508ce7-8f3b-41f1-808c-1348942c2716
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-manual-implementation"
 >title="Add alloy.js to your site"
@@ -19,7 +18,6 @@ exl-id: 0e508ce7-8f3b-41f1-808c-1348942c2716
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
-
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-manual-populate-xdm"

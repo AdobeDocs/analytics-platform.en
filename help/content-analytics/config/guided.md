@@ -55,24 +55,20 @@ The guided configuration wizard consists of four sections ([Details](#details), 
 
 ### Details {#onboarding-details}
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_button"
 >title="Details"
 >abstract="Provide a name for the connection. In the **[!UICONTROL Data view]**, **[!UICONTROL Experience capture and definition]**, and **[!UICONTROL Data collection]** sections you provide more details to ensure that Content Analytics can be configured correctly."
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="Details"
 >abstract="This guide sets up the requirements needed to configure Content Analytics. Please provide a name for this configuration"    
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_boldheader"
 >title="Connection"
 >abstract="**Connection**"    
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_header"
@@ -110,42 +106,35 @@ If you already have selected a connection, but you want to change that connectio
 
 ### Data views {#onboarding-data-view}
 
-
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
 >title="Data view"
 >abstract="For the configuration of Content Analytics you need to select an existing data view. So, you can merge your Content Analytics data with other data."
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="Data view"
 >abstract="Select an existing data view from Customer Journey Analytics that you would like to merge your Content Analytics data with." 
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
 >title="Data view"
 >abstract="Select an existing data view from Customer Journey Analytics that you would like to merge your Content Analytics data with.<br/>"
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
 >title="New data view"
 >abstract="You have selected a new data view for this configuration. The new data view will be updated to include Content Analytics metrics and dimensions. These metrics and dimensions will be removed from the originally selected data view.<br/><br/>If a different connection is associated with the new data view then the connection will be updated to include Content Analytics datasets. The Content Analytics datasets are not removed from the originally selected connection."
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_current_cleanup_labels_dialog"
 >title="Cleanup selected data view"
 >abstract="You have selected a data view that is already provisioned for Content Analytics. That existing Content Analytics configuration is removed and the data view is provisioned with your new configuration."
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_prev_cleanup_labels_dialog"
 >title="Cleanup previous data view"
 >abstract="You have selected a new data view. The Content Analytics configuration for the previously selected data view is removed."
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_new_dialog"
@@ -153,54 +142,45 @@ If you already have selected a connection, but you want to change that connectio
 >abstract="You have selected a new data view for this configuration. The new data view will be updated to include Content Analytics metrics and dimensions. Similar metrics and dimensions will be removed from the existing data view.<br/>If a different connection is associated with the new data view then the connection will be updated to include Content Analytics datasets. Note that Content Analytics datasets are not removed from the existing configuration."
 
 
-
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataviews_button"
 >title="Data view"
 >abstract="For the configuration of Content Analytics you need to select one or more data views. So, you can merge your Content Analytics data with other data."
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_header"
 >title="Data views"
 >abstract="Select one or more existing data views from Customer Journey Analytics that you would like to merge your Content Analytics data with." 
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_header_alt"
 >title="Data views"
 >abstract="Select one or more existing data views from Customer Journey Analytics that you would like to merge your Content Analytics data with.<br/>"
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_new_dialog"
 >title="Selected data views"
 >abstract="You have modified the selected data views for this configuration. The selected data views will be updated to include Content Analytics metrics and dimensions. These metrics and dimensions will be removed from previous selected data views that are no longer selected.<br/><br/>If a different connection is associated with the selected data views, then the connection will be updated to include Content Analytics datasets. The Content Analytics datasets are not removed from the originally selected connection.<br/><br/>All selected data views inherit the channels that are part of this configuration."
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_change_dialog"
 >title="Selected data views"
 >abstract="You have modified the selected data views for this configuration. The selected data views will be updated to include Content Analytics metrics and dimensions. These metrics and dimensions will be removed from previous selected data views that are no longer selected.<br/><br/>If a different connection is associated with the selected data views then the connection will be updated to include Content Analytics datasets. The Content Analytics datasets are not removed from the originally selected connection.<br/><br/>All selected data views inherit the channels that are part of this configuration."
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_current_cleanup_labels_dialog"
 >title="Selected data views"
 >abstract="You have modified the selected data views for this configuration. The selected data views will be updated to include Content Analytics metrics and dimensions. These metrics and dimensions will be removed from previously selected data views that are no longer selected.<br/><br/>If a different connection is associated with the selected data views then the connection will be updated to include Content Analytics datasets. The Content Analytics datasets are not removed from the originally selected connection.<br/><br/>All selected data views inherit the channels that are part of this configuration."
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_prev_cleanup_labels_dialog"
 >title="Selected data views"
 >abstract="You have modified the selected data views for this configuration. The selected data views will be updated to include Content Analytics metrics and dimensions. These metrics and dimensions will be removed from previously selected data views that are no longer selected.<br/><br/>If a different connection is associated with the selected data views then the connection will be updated to include Content Analytics datasets. The Content Analytics datasets are not removed from the originally selected connection.<br/><br/>All selected data views inherit the channels that are part of this configuration."
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_channels_button"
 >title="Channels"
 >abstract="Enable and configure one or more channels for the configuration."
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_channels_header"
@@ -243,36 +223,30 @@ You can then configure the channel in more detail. That configuration is differe
 
 <!-- For updated ACA -->
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"
 >title="Mobile experience locations data collection"
 >abstract="**Experience locations to exclude**"
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_header"
 >title="Mobile experience locations data collection"
 >abstract="Indicate which experience locations should be **excluded** when collecting data for Content Analytics. Ensure you exclude personally identifiable experience locations."
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
 >title="Mobile asset locations data collection"
 >abstract="**Asset locations to exclude**"
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_header"
 >title="Mobile asset locations data collection"
 >abstract="Indicate which asset locations should be **excluded** when collecting data for Content Analytics. Ensure you exclude personally identifiable asset locations."
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
 >title="Mobile asset URLs data collection"
 >abstract="**Asset URLs to exclude**"
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_header"
@@ -343,90 +317,75 @@ Once you have configured the mobile channel, select **[!UICONTROL Save]** to sav
 
 For the web channel, you can configure [experience capture and definition](#experience-capture-and-definition-1), [data collection](#data-collection-1), and [header overrides](#header-overrides-1).
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_button"
 >title="Experience capture and definition"
 >abstract="You can select to include experiences in the data you collect with Content Analytics. When selected, you have to define one or more combinations of a regex and query parameters to define for which URLs you want to include experiences."
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_header"
 >title="Experience capture and definition"
 >abstract="Collect experiences in Content Analytics"
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_parameters_header"
 >title="Experience capture and definition"
 >abstract="Specify the parameters that determine how content is rendered on your website."
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_new_include_experiences"
 >title="Experience capture and definition"
 >abstract="When enabled, experience data is collected, experience attributes are generated, and experience reporting is available."
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_include_experiences"
 >title="Experience capture and definition"
 >abstract="When enabled, experience data is collected, experience attributes are generated, and experience reporting is available. <br><br/>Use ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** to modify the data collection configuration for experiences in the Tags property that is associated with the current configuration."
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
 >title="Experience capture and definition"
 >abstract="You must edit the settings for experience data collection in the Adobe Content Analytics extension."
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="Data collection"
 >abstract="Define which Tags property you want to use, or create a new one. And define the pages and assets that you want to include or exclude, using regular expressions."
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
 >title="Data collection"
 >abstract="**Provide a Tags property**"
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_boldheader"
 >title="Data collection"
 >abstract="**Pages to include / exclude**"
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_header"
 >title="Data collection"
 >abstract="Indicate which pages should be **included** or **excluded** when collecting data for Content Analytics. Ensure you exclude personally identifiable pages."
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_boldheader"
 >title="Data collection"
 >abstract="**Assets to include / exclude**"
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_header"
 >title="Data collection"
 >abstract="Indicate which assets should be **included** or **excluded** when collecting data for Content Analytics. Ensure you exclude personally identifiable assets."
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
 >title="Data collection"
 >abstract="You can edit the settings for pages in the Adobe Content Analytics extension in the Tags property that is associated with the current configuration."
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
 >title="Data collection"
 >abstract="You can edit the settings for assets in the Adobe Content Analytics extension in the Tags property that is associated with the current configuration."
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tags_disabled_description "
@@ -436,24 +395,20 @@ For the web channel, you can configure [experience capture and definition](#expe
 
 <!-- For updated ACA -->
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_pages_boldheader"
 >title="Web pages data collection"
 >abstract="**Pages to include / exclude**"
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_pages_header"
 >title="Web pages data collection"
 >abstract="Indicate which pages should be **included** or **excluded** when collecting data for Content Analytics."
 
-
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_assets_boldheader"
 >title="Web assets data collection"
 >abstract="**Assets to include / exclude**"
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_assets_header"
@@ -568,7 +523,6 @@ Once you have provided all necessary details, a summary provides details on the 
 ![Content Analytics Configuration Summary](../assets/aca-configuration-summary.png)
 
 ### Actions {#actions}
-
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning_dialog"

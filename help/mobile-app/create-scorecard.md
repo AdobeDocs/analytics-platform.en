@@ -10,7 +10,6 @@ solution: Customer Journey Analytics
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="mobilescorecard_annotations"
 >title="Annotations"

@@ -10,7 +10,6 @@ exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
 
 <!-- markdownlint-disable MD034 -->
 
-
 >[!CONTEXTUALHELP]
 >id="workspace_guidedanalysis_timeline_button"
 >title="Timeline"
