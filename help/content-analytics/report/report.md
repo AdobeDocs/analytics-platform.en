@@ -94,7 +94,11 @@ To use the template:
 1. In the **[!UICONTROL Set up your template]** dialog, select a metric from the **[!UICONTROL Select a conversion metric]** dialog. For example, **[!UICONTROL Asset CTR]**.
 1. Select **[!UICONTROL Continue]**.
 
-A **[!UICONTROL Content Analytics Overview]** project opens in [Analysis Workspace](/help/analysis-workspace/home.md). The project consists of four [panels](/help/analysis-workspace/c-panels/panels.md), where each panel provides [freeform tables](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) and [visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) to answer a specific question. You can use the **[!UICONTROL Content Channel]** breakdown to [break down](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) the panel for the content channel you are interested in: **[!UICONTROL web]** or **[!UICONTROL mobile]**.
+A **[!UICONTROL Content Analytics Overview]** project opens in [Analysis Workspace](/help/analysis-workspace/home.md). The project consists of four [panels](/help/analysis-workspace/c-panels/panels.md), where each panel provides [freeform tables](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) and [visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) to answer a specific question. 
+
+You can use the **[!UICONTROL Content Channel]** breakdown to [break down](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) the panel for the content channel you are interested in: **[!UICONTROL web]** or **[!UICONTROL mobile]**.
+
+![Breakdown on content channel in panel in Analysis Workspace](/help/content-analytics/assets/aca-content-channel-selector.png)
 
 The four panels are:
 
