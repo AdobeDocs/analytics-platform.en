@@ -9,10 +9,12 @@ role: Admin
 ---
 # Manage connections {#manage-connections}
 
+
 >[!CONTEXTUALHELP]
 >id="connections_use_ajo"
 >title="Use Journey Optimizer connection"
 >abstract="Leverages the advanced Customer Journey Analytics reporting capabilities with Journey Optimizer."
+
 
 >[!CONTEXTUALHELP]
 >id="connections_cancel_ajo"
@@ -335,50 +337,60 @@ When a dataset row is selected in the datasets table, a panel on the right side 
 
 ## Usage {#connections-usage}
 
+
 >[!CONTEXTUALHELP]
 >id="connections_usage_keyusagemetrics"
 >title="Key usage metrics" 
 >abstract="Provide monthly and total data for core and historical reportable rows."
+
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_monthlyingestedrows"
 >title="Monthly ingested rows"
 >abstract="Measures the total number of records added to the system each month to provide insights into data growth and ingestion rates."
 
+
 >[!CONTEXTUALHELP]
 >id="connections_usage_monthlyreportablerows"
 >title="Monthly reportable rows"
 >abstract="Tracks the number of rows available for reporting. Reportable rows are the ingested rows minus the rows that are skipped and deleted during ingestion. Reportable rows serve as a key metric for billing and data usage."
+
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_detailbreakdown"
 >title="Detail breakdown."
 >abstract="You can view detailed metrics by connection, dataset, sandbox, and tags, with the option to download a CSV file of the data."
 
+
 >[!CONTEXTUALHELP]
 >id="connections_usage_otherdatasets"
 >title="Other datasets"
 >abstract="For the months before September 2024, data was collected at the dataset level and is displayed as *Other datasets* for clarity. Starting from September 2024, data is gathered at a granular dataset level, and *Other datasets* no longer appears."
+
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_unknowndatasetsorconnections"
 >title="Unknown datasets or connections"
 >abstract="Unknown datasets or connections are displayed using their IDs."
 
+
 >[!CONTEXTUALHELP]
 >id="connections_usage_datanotavailable"
 >title="Data not available"
 >abstract="Historical data prior to September 2024 is not available due to system limitations. Metrics are collected and displayed starting from September 2024 onwards. The chart shows the last 18 months on the timeline, and future data appear as the data becomes available."
+
 
 >[!CONTEXTUALHELP]
 >id="connections_corereportablerows"
 >title="Core reportable rows"
 >abstract="The total number of rows available over the past 13 months for the current month, with a percentage change compared to the previous month.  For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024."
 
+
 >[!CONTEXTUALHELP]
 >id="connections_historicalreportablerows"
 >title="Historical reportable rows"
 >abstract="The total number of rows available over a period older than 13 months for the current month, with a percentage change compared to the previous month. For example, on February 1, 2024, the number shows the total rows available with an event timestamp older than January 2023."
+
 
 
 >[!CONTEXTUALHELP]
@@ -387,10 +399,12 @@ When a dataset row is selected in the datasets table, a panel on the right side 
 >abstract="The average amount of storage consumed by each row of data ingested and stored for the current month (in kB), with a percentage change compared to the previous month."
 
 
+
 >[!CONTEXTUALHELP]
 >id="connections_coredatavolume"
 >title="Core data volume"
 >abstract="The total amount of data stored on disk that is timestamped for the current month (in TB), with a percentage change compared to the previous month."
+
 
 
 >[!CONTEXTUALHELP]
@@ -398,10 +412,12 @@ When a dataset row is selected in the datasets table, a panel on the right side 
 >title="Core reportable rows"
 >abstract="Core reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. If a customer selects January - March, the values reflect the snapshot from March."
 
+
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_historicalreportablerows"
 >title="Historical reportable rows"
 >abstract="Historical reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. If a customer selects January - March, the values reflect the snapshot from March."
+
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_cumulativereportablerows"

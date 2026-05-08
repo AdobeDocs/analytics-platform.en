@@ -9,10 +9,12 @@ role: User
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_flow_button"
 >title="Flow"
 >abstract="Create a visualization to view the flow of people from one checkpoint to the next."
+
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_panel"

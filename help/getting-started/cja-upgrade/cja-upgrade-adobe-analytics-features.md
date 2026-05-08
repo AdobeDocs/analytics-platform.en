@@ -10,6 +10,7 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-migrate-projects"
 >title="Components and projects"
@@ -18,6 +19,7 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
+
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-activity-map"
@@ -28,6 +30,7 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-activity-map-support"
 >title="Activity map overlay support is not yet available"
@@ -36,6 +39,7 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
+
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-classification"
@@ -46,6 +50,7 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-marketing-channels"
 >title="Marketing channels"
@@ -54,6 +59,7 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
+
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-feeds"
@@ -64,6 +70,7 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-warehouse"
 >title="Data Warehouse"
@@ -73,6 +80,7 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-streaming-media"
 >title="Streaming Media data"
@@ -81,6 +89,7 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
+
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-component-migration"

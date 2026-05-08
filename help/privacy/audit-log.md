@@ -9,6 +9,7 @@ role: Admin
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="tools_auditlog_userid"
 >title="User ID"
@@ -17,6 +18,7 @@ role: Admin
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
+
 
 >[!CONTEXTUALHELP]
 >id="tools_auditlog_componentid"

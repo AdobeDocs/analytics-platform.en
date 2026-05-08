@@ -9,6 +9,7 @@ role: User
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_project_colorpalette"
 >title="Project color palette"

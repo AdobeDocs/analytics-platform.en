@@ -71,6 +71,7 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="cja-powerpoint-include-visualizations"
 >title="Included panels and visualizations"
@@ -79,6 +80,7 @@ Data stories consist of a title slide, executive summary slide, detail slides, a
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
+
 
 >[!CONTEXTUALHELP]
 >id="cja-presentation-emphasized-components"

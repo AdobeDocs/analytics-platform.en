@@ -10,6 +10,7 @@ exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-fully-move"
 >title="Fully move to Customer Journey Analytics"
@@ -19,6 +20,7 @@ exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-keep-aa"
 >title="Keep both analytics products"
@@ -27,6 +29,7 @@ exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
+
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-source-connector"
@@ -55,6 +58,7 @@ When deciding if and when your organization should disable Adobe Analytics, cons
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-appmeasurement-third-pary"
 >title="Disable a third-party tag management system"
@@ -64,6 +68,7 @@ When deciding if and when your organization should disable Adobe Analytics, cons
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-analytics-tags"
 >title="Disable the Analytics extension in tags"
@@ -72,6 +77,7 @@ When deciding if and when your organization should disable Adobe Analytics, cons
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
+
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-analytics-api"

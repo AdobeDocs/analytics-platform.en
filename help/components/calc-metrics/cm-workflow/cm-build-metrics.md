@@ -6,11 +6,13 @@ exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 ---
 # Build calculated metrics {#build-metrics}
 
+
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_productcompatibility"
 >title="Product Compatibility"
 >abstract="Indicates where in Customer Journey Analytics this calculated metric can be used, such as in Analysis Workspace, Report Builder, and so forth. Some calculated metrics cannot be used with experimentation."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Use calculated metrics in experimentation" 
+
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_externalid"

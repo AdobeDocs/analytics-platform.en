@@ -10,6 +10,7 @@ exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tie-data"
 >title="Tie together data of varying sources"
@@ -18,6 +19,7 @@ exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
+
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-datasets"
@@ -28,6 +30,7 @@ exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-customer-care"
 >title="Enable stitching for relevant datasets"
@@ -36,6 +39,7 @@ exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
+
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-rtcdp"
@@ -46,6 +50,7 @@ exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-target"
 >title="Temporarily integrate with Adobe Target"
@@ -55,6 +60,7 @@ exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-ajo"
 >title="Integrate with Journey Optimizer"
@@ -63,6 +69,7 @@ exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
+
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-aam"

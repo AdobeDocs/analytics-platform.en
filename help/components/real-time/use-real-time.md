@@ -7,6 +7,7 @@ exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
 ---
 # Use real-time reporting {#use-real-time-reporting}
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_panel_realtime_refresh"
 >title="Real-time refresh"

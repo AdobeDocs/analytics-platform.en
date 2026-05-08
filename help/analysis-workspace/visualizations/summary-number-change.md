@@ -23,6 +23,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Summary number a
 
 <!-- markdownlint-disable MD034 -->
 
+
 >[!CONTEXTUALHELP]
 >id="workspace_summarynumber_button"
 >title="Summary number"
@@ -49,6 +50,7 @@ As part of the visualization settings, specific Summary number options are avail
 ## Summary change {#summary-change}
 
 <!-- markdownlint-disable MD034 -->
+
 
 >[!CONTEXTUALHELP]
 >id="workspace_summarychange_button"
