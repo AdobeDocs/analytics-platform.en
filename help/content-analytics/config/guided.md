@@ -497,6 +497,16 @@ To configure data collection:
 
 ##### Header overrides {#web-header-overrides}
 
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_header_overrides_boldheader"
+>title="Header overrides"
+>abstract="**Header overrides**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_header_overrides_header"
+>title="Header overrides"
+>abstract="Advanced feature to bypass bot detection or gate traffic. Content Analytics includes your custom HTTP headers when calling your endpoints."
+
 <!-- needs modification for mobile channel -->
 
 Optionally, you can specify in the **[!UICONTROL Header overrides]** section a header name and secret header value.  This header override configuration ensures that Content Analytics sends custom HTTP headers to bypass any bot detection or traffic-gating technologies you have implemented.
