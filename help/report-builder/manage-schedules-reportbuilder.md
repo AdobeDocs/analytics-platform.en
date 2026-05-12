@@ -6,6 +6,18 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 0a0427d9-223e-410b-a8ef-8601390d88aa
+TQID: https://experienceleague.adobe.com/HcKyD-v3I1hsxWwiDZJwgvO9pH9ifBVOjBapARdYQVQ
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Manage scheduled workbooks
 

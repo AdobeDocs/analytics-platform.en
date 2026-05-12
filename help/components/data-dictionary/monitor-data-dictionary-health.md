@@ -4,6 +4,21 @@ title: Monitor Data Dictionary health
 feature: Components
 role: Admin
 exl-id: 8bc89ac7-078d-469d-8627-3905823d4100
+TQID: https://experienceleague.adobe.com/RKh01bcmVkoZ2wkHDvBM-oX9rRagVaOqK4fn2A-IpaI
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: df28738e-9c71-4aa8-929e-edde22340cc6
+    internal-label: Data Dictionary
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Monitor Data Dictionary health
 

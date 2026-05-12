@@ -4,6 +4,28 @@ title: Download Projects And Data
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
+TQID: https://experienceleague.adobe.com/GZEoPBNO5ELAQTN-44YR9A7zCWy-0hgVB98wNDsvXzE
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
 ---
 # Download projects and data
 

@@ -6,6 +6,34 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 99c3c66e-928e-4363-a6a9-bbcab792337a
+TQID: https://experienceleague.adobe.com/MeHO7A9KWAjG8TyiOn9taPbtPhD47JGl88KSCoQwdMI
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
+subfeature_v2:
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: f2ef16dc-055a-4bb7-baa5-7039653f3966
+    internal-label: Report Builder
+  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Restricted labels in Report Builder
 

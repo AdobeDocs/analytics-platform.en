@@ -4,6 +4,19 @@ description: Find out about CJA data center locations around the world.
 solution: Customer Journey Analytics
 role: Admin
 exl-id: a41686bb-1a7b-4d27-8415-f4a1880b7de5
+TQID: https://experienceleague.adobe.com/vpd1rWg883z793Tgmcm0XxplsaG5q5PGa9eT0pPllp8
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 ---
 # Customer Journey Analytics hosting locations
 
