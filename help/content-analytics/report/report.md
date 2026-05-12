@@ -65,21 +65,25 @@ By default, thumbnails are shown in a [freeform table](/help/analysis-workspace/
 
 ### Bar (stacked) and Horizontal bar (stacked)
 
-{{release-limited-testing-section}}
-
 ![Content Analytics thumbnails for bar chart](/help/content-analytics/assets/aca-bar-thumbnail.png)
-
 
 Thumbnails are displayed as part of the legend on the vertical or horizontal axis. Thumbnails are also displayed when you hover over a bar in a [bar (stacked)](/help/analysis-workspace/visualizations/bar.md) and [horizontal bar (stacked)](/help/analysis-workspace/visualizations/horizontal-bar.md).
 
 
 ### Scatter
 
-{{release-limited-testing-section}}
-
 ![Content Analytics thumbnails for scatter](/help/content-analytics/assets/aca-scatter-thumbnail.png)
 
 Thumbnails are displayed when you hover over a data point in a [scatter](/help/analysis-workspace/visualizations/scatterplot.md).
+
+
+### Line
+
+{{release-limited-testing-section}}
+
+![Content Analytics thumbnails for line](/help/content-analytics/assets/aca-line-thumbnail.png)
+
+Thumbnails are displayed when you hover over a data point in a [line](/help/analysis-workspace/visualizations/line.md).
 
 ## Previews
 
