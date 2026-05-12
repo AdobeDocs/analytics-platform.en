@@ -151,4 +151,4 @@ This page includes ip addresses you need to add to your allowlist in order for o
 >
 >[Domains used by Customer Journey Analytics](domains.md)
 >
->[IP addresses used by the Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)
+>[IP addresses used by the Adobe CX Enterprise](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)

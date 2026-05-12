@@ -24,7 +24,7 @@ Adobe Customer Journey Analytics is hosted in enterprise-class data centers from
 
 Upon provisioning, customers designate the region in which their Adobe Experience Platform data will reside. The data ingested into Customer Journey Analytics from the Adobe Experience Platform data lake will be stored in the same region.
 
-See [Regional data collection](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) in the Adobe Experience Cloud documentation for more information.
+See [Regional data collection](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) in the Adobe CX Enterprise documentation for more information.
 
 
 ## View the data center where your data is stored
@@ -35,7 +35,7 @@ See [Regional data collection](https://experienceleague.adobe.com/en/docs/core-s
 
 To view which data center your data is stored in:
 
-1. Log in to [Adobe Experience Cloud](https://experience.adobe.com).
+1. Log in to [Adobe CX Enterprise](https://experience.adobe.com).
 
 1. Select **[!UICONTROL Experience Platform]** from the app switcher ![App](/help/assets/icons/Apps.svg) at the top-right of the interface.
 

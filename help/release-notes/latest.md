@@ -86,5 +86,5 @@ These release notes cover the April 2026 release period. Adobe Customer Journey 
 * [Previous Customer Journey Analytics release notes for 2025](/help/release-notes/2025.md)
 * [Adobe Analytics release notes](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
 * [Streaming Media Collection release notes](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html)
-* [Adobe Experience Cloud release notes](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
+* [Adobe CX Enterprise release notes](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
 * [Customer Journey Analytics documentation updates](/help/release-notes/doc-changes.md)

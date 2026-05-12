@@ -23,9 +23,9 @@ This workflow utilizes the Analytics source connector and varies depending on wh
 
 ## Ingest data via the Adobe Experience Platform Web SDK and the Edge Network
 
-[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) is a client-side JavaScript library that allows customers of Adobe Experience Cloud to interact with the various services in the Experience Cloud through the Adobe Experience Platform Edge Network. 
+[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) is a client-side JavaScript library that allows customers of Adobe CX Enterprise to interact with the various services in the CX Enterprise through the Adobe Experience Platform Edge Network. 
 
-1. [Configure the Adobe Experience Platform Web SDK extension in tags](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html) to send data to the Adobe Experience Cloud from web properties, through the Adobe Experience Platform Edge Network.
+1. [Configure the Adobe Experience Platform Web SDK extension in tags](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html) to send data to the Adobe CX Enterprise from web properties, through the Adobe Experience Platform Edge Network.
 1. Use [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) to create one or more [connections](/help/connections/create-connection.md) and [data views](/help/data-views/data-views.md) that will inform your cross-channel reporting.
 
 ## Ingest data with batch ingestion and streaming ingestion
