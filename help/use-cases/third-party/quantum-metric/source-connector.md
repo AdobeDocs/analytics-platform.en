@@ -4,7 +4,7 @@ description: Use Quantum Metric for data collection of user journeys and behavio
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hide: 'yes'
+hide: true
 exl-id: ea8795fe-f5aa-458f-9e01-53ff1ffe6372
 TQID: https://experienceleague.adobe.com/LLrYpPlbagFAIeuD9TMgA3E8lrcUrMxMSWLC-8SiiIY
 product_v2:
