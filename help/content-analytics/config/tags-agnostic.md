@@ -4,7 +4,6 @@ description: Learn how to configure Content Analytics without using Experience P
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-hide: true
 ---
 
 # Content Analytics Tags agnostic configuration
@@ -18,7 +17,10 @@ The Adobe Content Analytics JavaScript library enables tracking of content-relat
 
 >[!PREREQUISITES]
 >
->Adobe Experience Platform Web SDK (Alloy) must be initialized on the page before calling `initializeContentLibrary`.
+>* Adobe Experience Platform Web SDK (Alloy) must be initialized on the page before calling `initializeContentLibrary`.
+>* Complete the Content Analytics guided configuration wizard to guide you through all steps required to set up the prerequisites for a configuration of Content Analytics.
+>* After the guided configuration is finished, the JavaScript settings, specific to your configuration, are available in that configuration view.
+
 
 ## Installation
 
@@ -148,8 +150,3 @@ initializeContentLibrary({
   ],
 });
 ```
-
->[!NOTE]
->
->After a Content Analytics configuration has been set up in the [guided configuration](/help/content-analytics/config/guided.md) interface, the JavaScript settings specific to your configuration are available in that configuration view.
-
