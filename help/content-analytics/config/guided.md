@@ -507,6 +507,8 @@ To configure data collection:
     1. Specify a **[!UICONTROL Tags name]**, for example `ACA Test for Documentation`.
     1. Specify **[!UICONTROL Domains]**, for example, `example.com`.
 
+    Use a new Tags property if you want to create a Tags [agnostic implementation](/help/content-analytics/config/tags-agnostic.md) of Content Analytics for the web channel. The Tags property is created, but you will not use the property in the agnostic implementation. However, the agnostic implementation requires that you have run the guided configuration wizard at least once.
+
 * Indicate which pages should be included or excluded when collecting data for Content Analytics. Ensure you exclude personally identifiable pages. 
   
   Specify a **[!UICONTROL Regular expression string]** for **[!UICONTROL Pages to include / exclude]**. <br/>For example: `^(?!.*documentation).*` to exclude all documentation pages from Content Analytics.
