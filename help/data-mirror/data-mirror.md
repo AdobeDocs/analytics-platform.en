@@ -6,6 +6,25 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
+TQID: https://experienceleague.adobe.com/DQPOxMBENhGi4lgQyyBeu4lla2LDw1Ag2vvwp5befaU
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
 ---
 # Experience Platform Data Mirror overview
 
@@ -33,7 +52,7 @@ See also the [Experience Platform documentation on Data Mirror](https://experien
 
 >[!NOTE]
 >
->The Experience Platform Data Mirror capability for Customer Journey Analytics is available in a **public beta** until March 25, 2026. Customers may ingest up to 2 million change rows per day into Adobe Experience Platform Data Lake via source connectors. Adobe reserves the right to terminate beta access to Experience Platform Data Mirror functionality should your organization exceed these limits. <br/>To request access to this capability, please contact your Adobe account team.
+>Data Mirror is a feature currently in beta that supports the synchronization of data from select data warehouses using change data capture (CDC) for analysis in Customer Journey Analytics.<br/>This feature will be generally available for Customer Journey Analytics on June 18, 2026. Refer to the applicable Product Description to understand how it could impact annual ingestion limit consumption going forward. Please note that your organization will continue to have access to the feature when Data Mirror transitions from beta to general availability.
 >
 
 Experience Platform Data Mirror for Customer Journey Analytics is available for selected data warehouse native solutions ([!DNL Azure Databricks], [!DNL Google BigQuery], and [!DNL Snowflake]). The Customer Journey Analytics version of Experience Platform Data Mirror requires proper configuration of the following applications or components:

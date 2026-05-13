@@ -5,6 +5,19 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
+TQID: https://experienceleague.adobe.com/5pch-WBkmIHb4YfE-FBrnjucM1MBy-QNqwVynTeQYYI
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 # Create a custom schema for the Analytics source connector {#create-custom-schema}
 

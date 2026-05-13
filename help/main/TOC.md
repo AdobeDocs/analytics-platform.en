@@ -119,7 +119,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Experience Platform](/help/data-mirror/aep.md)
     + [Customer Journey Analytics](/help/data-mirror/cja.md)
   + [Quick start guide](/help/data-mirror/relational.md)
-  + {hide-from-toc} [Considerations](/help/data-mirror/considerations.md)
+  + [Considerations](/help/data-mirror/considerations.md)
 
 + Connections {#cja-connections}
   + [Connections overview](../connections/overview.md)
@@ -295,6 +295,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Guided configuration](/help/content-analytics/config/guided.md)
     + [Manual configuration](/help/content-analytics/config/manual.md)
     + [Standalone configuration](/help/content-analytics/config/standalone.md)
+    + {hide-from-toc} [Tags agnostic configuration](/help/content-analytics/config/tag-agnostic.md)
     + [Data collection](/help/content-analytics/config/datacollection.md)
 
 + Analytics dashboards {#cja-dashboards}

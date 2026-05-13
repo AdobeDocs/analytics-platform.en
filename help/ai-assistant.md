@@ -5,8 +5,28 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
+TQID: https://experienceleague.adobe.com/ALTfdJVKpXNRGSHFkLiP7-NonJ-q9GmG6X72AF8ij24
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
-
 # AI Assistant for Adobe Customer Journey Analytics
 
 AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace. Whether the task is to understand concepts, troubleshoot problems, or search through information. AI Assistant also allows non-experts to perform expert tasks and increases the overall quality of work.

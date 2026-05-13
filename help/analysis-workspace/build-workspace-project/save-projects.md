@@ -4,6 +4,19 @@ title: Save Projects
 feature: Workspace Basics
 role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
+TQID: https://experienceleague.adobe.com/21Rc7-uX7Ie2qj5FHzjb89CTmvi79Ne-FR92okGF5uo
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Save projects {#save-projects}
 

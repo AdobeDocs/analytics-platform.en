@@ -1,11 +1,36 @@
 ---
-title: Content Analytics components
-description: Details on the specific Content Analytics components, like dimensions, (calculated) metrics and derived fields
+title: Content Analytics Components
+description: Learn about the details of the specific Content Analytics components, like dimensions, (calculated) metrics and derived fields
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
+TQID: https://experienceleague.adobe.com/grwbNht938ivCsnzlFBzP8Ga8h1udmQLcZngxY6s0-4
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+    internal-label: Content Analytics
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
 ---
+
 # Content Analytics components
 
 Content Analytics adds the following categories of components (dimensions, (calculated) metrics, derived fields) to the already available components in Customer Journey Analytics:
@@ -15,7 +40,7 @@ Content Analytics adds the following categories of components (dimensions, (calc
 * [Experience events](#experience-events)
 * [Asset metadata](#asset-metadata)
 * [Asset attributes](#asset-attributes)
-* [Assets events](#asset-events)
+* [Asset events](#asset-events)
 * [Calculated metrics](#calculated-metrics)
 
 In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/ML generated attribute / value pair. 
@@ -24,8 +49,12 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/
 
 | Title | Description | Type |
 |---|---|---|
-| Experience Channel | Channel for the experience. | Dimension |
-| Experience ID | Unique id for the experience. | Dimension |
+| ID Source | For Content Analytics, the value is `ContentAnalytics`. | Dimension |
+| Channel | Channel for the experience. Value is either `Web` or `Mobile`. | Dimension |
+| Content Experience ID | Unique id for the experience. <br>For **web**: URL of the web page. <br/>For **granular web**: a hash calcuated client side based on the content payload (texts, images, ctas) with prefix `web-`. <br/>For **mobile**: a hash calcuated client side based on the content payload (texts, images, ctas) with prefix `mobile-`.| Dimension |
+| Content Experience Source | For **web**: the URL of the web page.<br/>For **mobile**: the screen name, passed in through the Experience Platform Mobile SDK.  | Dimension |
+| Experience Channel (deprecated) | Channel for the experience. Value is either `Web` or `Mobile`. | Dimension |
+| Experience Extras | Any other additional data you want to track. Like external ID or placement. | Dimension |
 | Experience Thumbnail URL | URL for the thumbnail of the experience. | Dimension |
 | Experience Horizontal Percentage Depth | Quantifiable value of the horizontal percentage depth of the experience. | Dimension<br/>Derived Field |
 | Experience Vertical Percentage Depth | Quantifiable value of the vertical percentage depth of the experience. | Dimension<br/>Derived Field |
@@ -71,12 +100,14 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/
 | Title | Description | Type |
 |---|---|---|
 | Asset ID | Unique identifier of the asset. The asset binary determines the uniqueness. If the asset binary changes, the id does change. The unique id can be the URL but can also be a hash created. | Dimension |
+| Asset Source | | Dimension |
 | Asset HTML Path | Concatenated HTML path for the asset. | Dimension |
 | Asset Link URL | Nearest page anchor for the asset. | Dimension |
 | Asset Display Width | Content asset display width. | Dimension |
 | Asset Display Height | Content asset display height. | Dimension |
 | Asset Absolute Left | Content asset absolute left. | Dimension |
 | Asset Absolute Top | Content asset absolute top. | Dimension |
+| Asset Extras | Any other additional data you want to track. Like external ID or placement. | Dimension |
 
 {style="table-layout:fixed"}
 
@@ -134,7 +165,7 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/
 | Title | Description | Type |
 |---|---|---|
 | Asset Click-Trough Rate | Asset Clicks / Asset Views | Calculated metric |
-| experience Click-Through Rate | Experience Clicks / Experience Views | Calculated metric |
+| Experience Click-Through Rate | Experience Clicks / Experience Views | Calculated metric |
 
 {style="table-layout:fixed"}
 

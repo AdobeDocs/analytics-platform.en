@@ -6,6 +6,16 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: 92cffcc5-d7a7-47f5-869d-1fc665594bf4
+TQID: https://experienceleague.adobe.com/KPEJwV-EbvG-4ju53nsl1CfbZT6cVLQdEjOiF-EEbLQ
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Configure Data warehouse native solutions
 

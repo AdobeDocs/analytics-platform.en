@@ -5,8 +5,20 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
+TQID: https://experienceleague.adobe.com/Hj-CQ5QGPLu-Q-e45tYfVVv-56DT5he6ExinxVVog-0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 ---
-
 # Combined event datasets
 
 When you create a connection, Customer Journey Analytics combines all event datasets into a single dataset. This combined event dataset is what Customer Journey Analytics uses for reporting (together with profile and lookup datasets). When you include multiple event datasets in a connection:
