@@ -70,21 +70,104 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 1. In the [!UICONTROL **Data structure**] section, make sure the correct data view is selected in the **[!UICONTROL Data view]** field. <p>Consider the following when selecting a data view:</p> <ul><li>If multiple data feeds are created for the same data view, each data feed must have different column definitions.</li><li>The list of available columns depends on the login company that the selected data view belongs to. If you change the data view, the list of available columns can change. </li></ul>
 
-1. Use either or both of the following methods to determine which data columns to include in the feed:
+1. Add columns to the data feed configuration. In the **[!UICONTROL Available]** section on the left, select any columns that you want to include, then select **[!UICONTROL Include]**. All data columns in Adobe Analytics are available. You can select multiple columns by holding **[!UICONTROL Shift]**, or by holding **[!UICONTROL Command]** (on macOS) or **[!UICONTROL Ctrl]** (on Windows). Click **[!UICONTROL Add all]** to include all columns in a data feed.
 
-   * **Add columns individually:** In the **[!UICONTROL Available]** section on the left, select any columns that you want to include, then select **[!UICONTROL Include]**. All data columns in Adobe Analytics are available. You can select multiple columns by holding **[!UICONTROL Shift]**, or by holding **[!UICONTROL Command]** (on macOS) or **[!UICONTROL Ctrl]** (on Windows). Click **[!UICONTROL Add all]** to include all columns in a data feed.
+   Columns you add appear in the **[!UICONTROL Included]** section on the right.
 
-     Columns you add appear in the **[!UICONTROL Included]** section on the right.
+   Use the following information to understand dimensions that are always included, dimensions that cannot be included, and metrics that must be substituted:
 
-   * **Add a column template:** In the **[!UICONTROL Column templates]** field, select a column template to add. A column template is a predefined group of columns, and Adobe provides several by default. 
-  
-     All columns included in the template appear in the **[!UICONTROL Included]** section on the right.
+   +++ Dimensions that are always included in data feeds
 
-1. (Optional) To create a column template that is based on the data feed that you are currently creating, select **[!UICONTROL Save as template]**, specify a name for the template, then select **[!UICONTROL Save]**. This option is useful if you plan to create additional data feeds that include the same columns.
+   The following components must be included in every data feed:
 
-    ![Create column template while creating a data feed](assets/data-feed-template-create2.png)
+   | Component name | Notes | Data feeds | Other reporting |
+   |---|---|---|---|
+   | Timestamp | Timestamp of the event period. Millisecond granularity. Represented in UTC. | Mandatory | Not available |
+   | Row ID | Unique row identifier | Mandatory | Not available |
+   | Session ID | Unique identifier for each session | Mandatory | Not available |
+   | Person ID | The person identifier for the data view and connection | Mandatory | Optional standard |
+   | Account ID (B2B) | Account ID when using the Account container | Mandatory (B2B only) | Optional standard (B2B only) |
+   
+   +++
 
-1. (Optional) To download a list of included columns in .csv format, select **[!UICONTROL Download columns]**. This option can be useful for data feeds that have a large number of columns. 
+   +++ Dimensions that cannot be included in data feeds
+
+   Customer Journey Analytics standard dimensions cannot be included in data feeds. The following table lists these dimensions:
+
+   | Component name | Notes | Data feeds |
+   |---|---|---|
+   | 5 Minute | Five-minute intervals when events occurred (rounded down) | Not available |
+   | 15 Minute | Fifteen-minute intervals when events occurred (rounded down) | Not available |
+   | 30 Minute | Thirty-minute intervals when events occurred (rounded down) | Not available |
+   | Day | Day an event occurred | Not available |
+   | Day of Week | Day of the week an event occurred | Not available |
+   | Day of Month | Day of the month an event occurred | Not available |
+   | Event Depth | Sequential numerical value (1, 2, 3, etc.) assigned to each event interaction within a session | Not available |
+   | Hour | Hour an event occurred (rounded down) | Not available |
+   | Hour of Day | Hour of the day an event occurred (rounded down) | Not available |
+   | Minute | Minute an event occurred (rounded down) | Not available |
+   | Minute of Hour | Minute of the hour an event occurred (rounded down) | Not available |
+   | Month | Month an event occurred | Not available |
+   | Month of Year | Month of the year an event occurred | Not available |
+   | Quarter | Quarter an event occurred | Not available |
+   | Quarter of Year | Quarter of the year an event occurred | Not available |
+   | Second | Second an event occurred (rounded down) | Not available |
+   | Week | Week an event occurred | Not available |
+   | Week of Year | Week of the year an event occurred | Not available |
+   | Year | Year an event occurred | Not available |
+
+   +++
+
+   +++ Metrics that must be substituted in data feeds
+
+   The following Customer Journey Analytics metrics must be substituted:
+
+   | Component name | Notes | Data feeds |
+   |---|---|---|
+   | Accounts | [B2B Edition] Based on Account ID specified in the connection | Not available. Use count distinct of Account ID. |
+   | Buying Group | [B2B Edition] Buying groups based on Buying Group ID in the connection | Not available. Use count distinct of Buying Group ID. |
+   | Events | Number of rows from all event datasets in a connection | Not available. Use count distinct of Row ID. |
+   | Global Accounts | [B2B Edition] Based on Global Accounts ID in the connection | Not available. Use count distinct of Global Accounts ID. |
+   | Opportunities | [B2B Edition] Opportunities based on Opportunity ID in the connection | Not available. Use count distinct of Opportunity ID. |
+   | People | Based on Person ID specified in a connection | Not available. Use count distinct of Person ID. |
+   | Conversations | Number of conversations | Not available. Use count distinct of Conversation ID. |
+   | Session Ends | Number of events that were the last event of a session | Not available |
+   | Session Starts | Number of events that were the first event of a session | Not available |
+   | Sessions | Based on the data view's session settings | Not available. Use count distinct of Session ID. |
+   | Time Spent (seconds) | Sums the time between two different dimension values | Not available |
+
+   +++
+
+   +++ Optional standard components
+
+   | Component name | Type | Notes | Data feeds |
+   |---|---|---|---|
+   | AM/PM | Time-parting dimension | AM or PM | Not available |
+   | Batch ID | Dimension | Identifier for an Experience Platform batch | Available |
+   | Dataset ID | Dimension | Identifier for an Experience Platform dataset | Available |
+   | Day of Month | Time-parting dimension | 1–31 | Not available |
+   | Day of Week | Time-parting dimension | Monday through Sunday | Not available |
+   | Day of Year | Time-parting dimension | 1–366 | Not available |
+   | Hour of Day | Time-parting dimension | 0–23 | Not available |
+   | Month of Year | Time-parting dimension | January–December | Not available |
+   | First-time Sessions | Metric | A person's first defined session within the reporting window | Not available |
+   | Return Sessions | Metric | Sessions that were not a person's first-time session | Not available |
+   | Person ID | Dimension | The person identifier for the data view and connection | **Mandatory** |
+   | Person ID namespace | Dimension | Type of ID the Person ID consists of (for example, email or cookie ID) | Available |
+   | Global Account ID | [B2B Edition] Dimension | Global Account ID when using the Global Account container | Available |
+   | Account ID | [B2B Edition] Dimension | Account ID when using the Account container | **Mandatory** (B2B only) |
+   | Opportunity ID | [B2B Edition] Dimension | Opportunity ID when using the Opportunity container | Available |
+   | Buying Group ID | [B2B Edition] Dimension | Buying Group ID when using the Buying Group container | Available |
+   | Quarter of Year | Time-parting dimension | Q1, Q2, Q3, Q4 | Not available |
+   | Repeat Session | Metric | Sessions that were not a person's first-ever session | Not available |
+   | Session Type | Dimension | Two values: First-Time or Returning | Not available |
+   | Time Spent per Event | Dimension | Buckets the Time Spent metric into event buckets | Not available |
+   | Time Spent per Session | Dimension | Buckets the Time Spent metric into session buckets | Not available |
+   | Time Spent per Person | Dimension | Buckets the Time Spent metric into person buckets | Not available |
+   | Weekend/Weekday | Time-parting dimension | Weekend or Weekday | Not available |
+
+   +++
+
 
 1. In the [!UICONTROL **Delivery**] section, specify the following information:
    
