@@ -89,9 +89,9 @@ You can share a specific role with users or groups, or you can share a link.
 
 When sharing a specific project role with users and groups in your organization, consider the following:
 
-* Project roles (**[!UICONTROL Edit original]**, **[!UICONTROL Edit copy]**, and **[!UICONTROL Read only]**) are tied to the user and specific project ID. Project roles are independent of user permissions managed in the [Adobe CX Enterprise Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started).
+* Project roles (**[!UICONTROL Edit original]**, **[!UICONTROL Edit copy]**, and **[!UICONTROL Read only]**) are tied to the user and specific project ID. Project roles are independent of user permissions managed in the [CX Enterprise Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started).
    
-* In Customer Journey Analytics, groups are defined by product profiles in the [Adobe CX Enterprise Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started). Admins can share to any group, including *All*. Non-admins can share to any group they are a member of, except for *All*.
+* In Customer Journey Analytics, groups are defined by product profiles in the [CX Enterprise Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started). Admins can share to any group, including *All*. Non-admins can share to any group they are a member of, except for *All*.
 
 * A user who is placed in multiple roles always get the highest experience. This scenario might occur if a user is added both as an individual and as part of a group. For example, if a user is given the **[!UICONTROL Edit original]** role as an individual and the **[!UICONTROL Read only]** role as a member of a group, the user receives a **[!UICONTROL Edit original]** project experience.
 
@@ -162,7 +162,7 @@ To share the project link with users in your organization:
 >[!CONTEXTUALHELP]
 >id="workspace_share_with_anyone_require_aec_authentication"
 >title="Require CX Enterprise authentication"
->abstract="Your organization requires that users log in to the CX Enterprise in order to use this link."
+>abstract="Your organization requires that users log in to CX Enterprise in order to use this link."
 
 
 You can grant [read-only access](/help/analysis-workspace/curate-share/view-only-projects.md) to Analysis Workspace projects to people who don't have access to Customer Journey Analytics. This granted access can include:
@@ -214,7 +214,7 @@ To share an Analysis Workspace project with anyone:
 
    * **[!UICONTROL Require CX Enterprise authentication]:** 
    
-     When this option is enabled, the only users who can access the project are those who can log in to the Adobe CX Enterprise organization where the project that you are sharing was created. However, users you share with do not need to have access to Customer Journey Analytics.
+     When this option is enabled, the only users who can access the project are those who can log in to the CX Enterprise organization where the project that you are sharing was created. However, users you share with do not need to have access to Customer Journey Analytics.
 
      Customer Journey Analytics administrators can configure this preference for the company, as described in [Preferences](/help/analysis-workspace/user-preferences.md). You might encounter the following scenarios, depending on how the administrator configured this option:
      

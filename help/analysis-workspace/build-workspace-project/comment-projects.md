@@ -123,7 +123,7 @@ The comment feature in Analysis Workspace makes it easier to collaborate with ot
 
 Consider the following when using the @ symbol to include people in a comment: 
    
-* People you include receive notifications based on their Adobe CX Enterprise notification settings.
+* People you include receive notifications based on their CX Enterprise notification settings.
 
   For more information, see [Receive notifications about comments](#receive-notifications-about-comments).
 
@@ -159,7 +159,7 @@ To include another person in your comment:
 
 ## Receive notifications about comments
 
-Project owners and [specific people you mention](#include-others-in-a-comment) receive notifications based on their Adobe CX Enterprise notification settings. By default, they receive an in-app notification, visible from the [CX Enterprise notification](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) icon ![CX Enterprise notification icon](assets/experience-cloud-notification.svg) in Customer Journey Analytics. 
+Project owners and [specific people you mention](#include-others-in-a-comment) receive notifications based on their CX Enterprise notification settings. By default, they receive an in-app notification, visible from the [CX Enterprise notification](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) icon ![CX Enterprise notification icon](assets/experience-cloud-notification.svg) in Customer Journey Analytics. 
 
 Additionally, people can configure their CX Enterprise notification settings to receive email notifications and Slack notifications by [subscribing to email notifications](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) and [subscribing to Slack notifications](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
 
