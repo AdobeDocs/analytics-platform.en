@@ -14,7 +14,7 @@ When creating a data feed, you provide Adobe with:
 
 * The frequency of how often the data feed should be sent (including the lookback window if you choose to include late-arriving hits)
 
-Before you create a data feed, it's important to have a basic understanding of data feeds and to ensure that you meet all prerequisites. For more information, see [Data feeds overview](data-feed-overview.md).
+Before you create a data feed, it's important to have a basic understanding of data feeds and to ensure that you meet all prerequisites. For more information, see [Data feeds overview](data-feed-overview.md). 
 
 ## Create and configure a data feed {#create-and-configure-data-feed}
 
