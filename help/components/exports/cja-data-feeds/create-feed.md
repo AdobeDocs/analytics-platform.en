@@ -70,23 +70,21 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 1. In the [!UICONTROL **Data structure**] section, make sure the correct data view is selected in the **[!UICONTROL Data view]** field. <p>Consider the following when selecting a data view:</p> <ul><li>If multiple data feeds are created for the same data view, each data feed must have different column definitions.</li><li>The list of available columns depends on the login company that the selected data view belongs to. If you change the data view, the list of available columns can change. </li></ul>
 
-1. Add columns to the data feed configuration. In the **[!UICONTROL Available]** section on the left, select any columns that you want to include, then select **[!UICONTROL Include]**. All data columns in Adobe Analytics are available. You can select multiple columns by holding **[!UICONTROL Shift]**, or by holding **[!UICONTROL Command]** (on macOS) or **[!UICONTROL Ctrl]** (on Windows). Click **[!UICONTROL Add all]** to include all columns in a data feed.
-
-   Columns you add appear in the **[!UICONTROL Included]** section on the right.
+1. Add columns to the data feed configuration. In the component rail section on the left, locate any columns that you want to include, then drag them to the canvas to build your data structure. You can select multiple columns by holding **[!UICONTROL Shift]**, or by holding **[!UICONTROL Command]** (on macOS) or **[!UICONTROL Ctrl]** (on Windows).
 
    Use the following information to understand dimensions that are always included, dimensions that cannot be included, and metrics that must be substituted:
 
    +++ Dimensions that are always included in data feeds
 
-   The following components must be included in every data feed:
+   The following dimensions are included by default in every data feed and cannot be removed:
 
-   | Component name | Notes | Data feeds | Other reporting |
+   | Dimension name | Notes | Data feeds | Other reporting |
    |---|---|---|---|
    | Timestamp | Timestamp of the event period. Millisecond granularity. Represented in UTC. | Mandatory | Not available |
    | Row ID | Unique row identifier | Mandatory | Not available |
    | Session ID | Unique identifier for each session | Mandatory | Not available |
    | Person ID | The person identifier for the data view and connection | Mandatory | Optional standard |
-   | Account ID (B2B) | Account ID when using the Account container | Mandatory (B2B only) | Optional standard (B2B only) |
+   | Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Account ID when using the Account container | Mandatory | Optional standard |
    
    +++
 
@@ -94,7 +92,7 @@ Before you create a data feed, it's important to have a basic understanding of d
 
    Customer Journey Analytics standard dimensions cannot be included in data feeds. The following table lists these dimensions:
 
-   | Component name | Notes | Data feeds |
+   | Dimension name | Notes | Data feeds |
    |---|---|---|
    | 5 Minute | Five-minute intervals when events occurred (rounded down) | Not available |
    | 15 Minute | Fifteen-minute intervals when events occurred (rounded down) | Not available |
@@ -122,13 +120,13 @@ Before you create a data feed, it's important to have a basic understanding of d
 
    The following Customer Journey Analytics metrics must be substituted:
 
-   | Component name | Notes | Data feeds |
+   | Metric name | Notes | Data feeds |
    |---|---|---|
-   | Accounts | [B2B Edition] Based on Account ID specified in the connection | Not available. Use count distinct of Account ID. |
-   | Buying Group | [B2B Edition] Buying groups based on Buying Group ID in the connection | Not available. Use count distinct of Buying Group ID. |
+   | Accounts [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Based on Account ID specified in the connection | Not available. Use count distinct of Account ID. |
+   | Buying Group [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Buying groups based on Buying Group ID in the connection | Not available. Use count distinct of Buying Group ID. |
    | Events | Number of rows from all event datasets in a connection | Not available. Use count distinct of Row ID. |
-   | Global Accounts | [B2B Edition] Based on Global Accounts ID in the connection | Not available. Use count distinct of Global Accounts ID. |
-   | Opportunities | [B2B Edition] Opportunities based on Opportunity ID in the connection | Not available. Use count distinct of Opportunity ID. |
+   | Global Accounts [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Based on Global Accounts ID in the connection | Not available. Use count distinct of Global Accounts ID. |
+   | Opportunities [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Opportunities based on Opportunity ID in the connection | Not available. Use count distinct of Opportunity ID. |
    | People | Based on Person ID specified in a connection | Not available. Use count distinct of Person ID. |
    | Conversations | Number of conversations | Not available. Use count distinct of Conversation ID. |
    | Session Ends | Number of events that were the last event of a session | Not available |
@@ -154,10 +152,10 @@ Before you create a data feed, it's important to have a basic understanding of d
    | Return Sessions | Metric | Sessions that were not a person's first-time session | Not available |
    | Person ID | Dimension | The person identifier for the data view and connection | **Mandatory** |
    | Person ID namespace | Dimension | Type of ID the Person ID consists of (for example, email or cookie ID) | Available |
-   | Global Account ID | [B2B Edition] Dimension | Global Account ID when using the Global Account container | Available |
-   | Account ID | [B2B Edition] Dimension | Account ID when using the Account container | **Mandatory** (B2B only) |
-   | Opportunity ID | [B2B Edition] Dimension | Opportunity ID when using the Opportunity container | Available |
-   | Buying Group ID | [B2B Edition] Dimension | Buying Group ID when using the Buying Group container | Available |
+   | Global Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Global Account ID when using the Global Account container | Available |
+   | Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Account ID when using the Account container | **Mandatory** |
+   | Opportunity ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Opportunity ID when using the Opportunity container | Available |
+   | Buying Group ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Buying Group ID when using the Buying Group container | Available |
    | Quarter of Year | Time-parting dimension | Q1, Q2, Q3, Q4 | Not available |
    | Repeat Session | Metric | Sessions that were not a person's first-ever session | Not available |
    | Session Type | Dimension | Two values: First-Time or Returning | Not available |
