@@ -45,8 +45,6 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 <!-- markdownlint-enable MD034 -->
 
-<!-- added help for Dynamic lookups to this page: help/export/analytics-data-feed/c-df-contents/dynamic-lookups.md -->
-
 1. Log in to [experiencecloud.adobe.com](https://experiencecloud.adobe.com) using your Adobe ID credentials.
 
 1. Select [!UICONTROL **Customer Journey Analytics**] from the app switcher ![App](/help/assets/icons/Apps.svg) at the top right of the interface.
