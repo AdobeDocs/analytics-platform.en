@@ -5,6 +5,34 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
+TQID: https://experienceleague.adobe.com/IM7-a-jp-lLfuGKj-CM2McnFXcus2-x-ffLC8UUKAmY
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+    internal-label: Content Analytics
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
+  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 
 # Content Analytics reporting overview
@@ -37,21 +65,25 @@ By default, thumbnails are shown in a [freeform table](/help/analysis-workspace/
 
 ### Bar (stacked) and Horizontal bar (stacked)
 
-{{release-limited-testing-section}}
-
 ![Content Analytics thumbnails for bar chart](/help/content-analytics/assets/aca-bar-thumbnail.png)
-
 
 Thumbnails are displayed as part of the legend on the vertical or horizontal axis. Thumbnails are also displayed when you hover over a bar in a [bar (stacked)](/help/analysis-workspace/visualizations/bar.md) and [horizontal bar (stacked)](/help/analysis-workspace/visualizations/horizontal-bar.md).
 
 
 ### Scatter
 
-{{release-limited-testing-section}}
-
 ![Content Analytics thumbnails for scatter](/help/content-analytics/assets/aca-scatter-thumbnail.png)
 
 Thumbnails are displayed when you hover over a data point in a [scatter](/help/analysis-workspace/visualizations/scatterplot.md).
+
+
+### Line
+
+{{release-limited-testing-section}}
+
+![Content Analytics thumbnails for line](/help/content-analytics/assets/aca-line-thumbnail.png)
+
+Thumbnails are displayed when you hover over a data point in a [line](/help/analysis-workspace/visualizations/line.md).
 
 ## Previews
 

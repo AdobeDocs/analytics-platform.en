@@ -4,6 +4,19 @@ title: Forecasting Overview
 feature: Visualizations
 role: User
 exl-id: 9ec920c4-3273-4497-83a4-6a2e2fc92e2f
+TQID: https://experienceleague.adobe.com/jH55Cg37nwIX6iYgQe1JCBvpgzw2jgW-zx1id2ZW6PU
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: d13dba12-733d-4914-8d92-d643658bbe5d
+    internal-label: Forecasting
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Forecasting overview
 

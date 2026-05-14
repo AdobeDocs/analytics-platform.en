@@ -295,7 +295,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Guided configuration](/help/content-analytics/config/guided.md)
     + [Manual configuration](/help/content-analytics/config/manual.md)
     + [Standalone configuration](/help/content-analytics/config/standalone.md)
-    + {hide-from-toc} [Tags agnostic configuration](/help/content-analytics/config/tag-agnostic.md)
+    + [Tags agnostic configuration](/help/content-analytics/config/tags-agnostic.md)
     + [Data collection](/help/content-analytics/config/datacollection.md)
 
 + Analytics dashboards {#cja-dashboards}

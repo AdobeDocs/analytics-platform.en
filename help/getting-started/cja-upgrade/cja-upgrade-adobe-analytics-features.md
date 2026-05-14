@@ -5,6 +5,18 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 92053109-f80d-47ab-b011-c28a5411149c
+TQID: https://experienceleague.adobe.com/kf7UPa9-PL3f37GeRsKZm8shxIe8r8wRS5TuX7wly1I
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Understand Adobe Analytics feature support when upgrading to Customer Journey Analytics {#feature-support-upgrade}
 

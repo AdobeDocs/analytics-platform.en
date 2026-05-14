@@ -5,6 +5,23 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5086ac6e-5bee-4f0f-b7e5-a3d9bd8a1332
+TQID: https://experienceleague.adobe.com/-ht-3zNB13RudwZs65FBWIo2Laf7cV4Ad4D5D2lgab4
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
 ---
 # Use the personalization object for use with Adobe Journey Optimizer {#upgrade-personalization}
 

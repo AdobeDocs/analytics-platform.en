@@ -4,6 +4,19 @@ description: Learn how the Analytics source connector deals with Adobe Analytics
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
 feature: Basics
 role: User
+TQID: https://experienceleague.adobe.com/-iYJfzP-kQDCkA5OIvPeQ6rtSB7DNjvfNibcPBycBik
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 # AAID, ECID, AACUSTOMID and the Analytics source connector
 
