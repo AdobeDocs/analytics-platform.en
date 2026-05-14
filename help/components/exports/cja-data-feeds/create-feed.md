@@ -41,7 +41,7 @@ Before you create a data feed, it's important to have a basic understanding of d
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_lookback_date_range"
 >title="Lookback date range"
->abstract="Controls how far back Customer Journey Analytics looks when processing the data feed delivery.<br/>This setting does not alter the frequency window (hour or day). However, the lookback date range can influence the data that is delivered. Segment qualification, session calculation, and dimension persistence are all impacted by the lookback date range."
+>abstract="Controls how far back Customer Journey Analytics looks when processing the data feed delivery.<br/>This setting does not alter the frequency window (hour or day). However, the lookback date range can influence the data that is delivered. Segment qualification, session calculation, some derived field transformations, and dimension persistence are all impacted by the lookback date range."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -68,36 +68,106 @@ Before you create a data feed, it's important to have a basic understanding of d
    | [!UICONTROL **Description**] | Specify a description for the data feed. The description you add is visible when editing the data feed. |
    | [!UICONTROL **Data view**] | Select the data view that contains the data that you want to export. |
 
-1. In the [!UICONTROL **Data formatting**] section, specify the following information:
-   
-   | Field | Function |
-   |---------|----------|
-   | [!UICONTROL **Compression format**] | The type of compression used. **Gzip** outputs files in `.tar.gz` format. **Zip** outputs files in `.zip` format. |
-   | [!UICONTROL **Packaging type**] | Select [!UICONTROL **Multiple files**] for most data feeds. This option paginates your data into uncompressed 2GB chunks. (If the [!UICONTROL **Multiple files**] option is selected and uncompressed data for the reporting window is less than 2GB, one file is sent.) Selecting **Single file** outputs the `hit_data.tsv` file in a single, potentially massive file.  |
-   | [!UICONTROL **Manifest**] | Choose whether to include a manifest file with each data feed delivery. <p>You can choose from the following options:</p><ul><li>**[!UICONTROL Manifest file]**: Contains information for each file included in the data feed.</li><li>**[!UICONTROL Finish file (Legacy)]**: Indicates that the data feed completed successfully. No other information is included. This option is suitable for existing feeds that originally used this option that need to be reprocessed. It is available only when sending data feed data in a single package. </li><li>**[!UICONTROL None]**: No file is included</li></ul> |
-   | [!UICONTROL **Send manifest even when no data**] | Determines whether Adobe should deliver a manifest file <!--[manifest file](/help/export/analytics-data-feed/c-df-contents/datafeeds-contents.md#feed-manifest)--> to the destination when no data is collected for a feed interval. If you select **Manifest file**, you receive a manifest file similar to the following when no data is collected:<p>`text`</p><p>`Datafeed-Manifest-Version: 1.0`</p><p>`Lookup-Files: 0`</p><p>`Data-Files: 0`</p><p> `Total-Records: 0`</p>  |
-   | [!UICONTROL **Replace operating system strings**] | When collecting data, some characters (such as new lines) can cause issues. Select this option to have these characters removed from feed files.<p>This option detects the following string sequences embedded in customer data and replaces them with a space:</p> <ul><li>**Windows:** CRLF, CR, or TAB</li><li>**Mac and Linux:** \n, \r, or \t</li></ul>  |
-   | [!UICONTROL **Enable dynamic lookups**] | Dynamic lookups allow you to receive additional lookup files in your data feed that is otherwise not available. This setting enables the following lookup tables to be sent with each data feed file:<ul><li> **Carrier name**</li><li>**Mobile attributes**</li><li>**Operating system type**</li></ul><!--<p>For more information, see [Dynamic lookups](/help/export/analytics-data-feed/c-df-contents/dynamic-lookups.md).</p>--> |
-   | **Allow late-arriving hits** | Historical data can arrive after a data feed job finishes processing for a given hour or day, such as through timestamped hits or data sources.<p>Select this option to include data that arrived after the data feed job finished processing data within the set reporting frequency (usually daily or hourly). With this option enabled, every time a data feed processes data, it looks at any late hits that arrived and batches them in with the next data feed file that is sent.</p><!--<p>For more information, see [Late-arriving hits](/help/export/analytics-data-feed/c-df-contents/late-arriving-hits.md).</p>-->  |
-   | **Lookback window** (for late-arriving hits) | This option displays when the option **[!UICONTROL Allow late-arriving hits]** is enabled. Select the lookback window to limit the time frame of late hits that are included. Select **[!UICONTROL Unlimited]** if you want to allow all late arriving hits, regardless of how late. You can choose a preset interval, such as **[!UICONTROL 1 hour]**, **[!UICONTROL 2 hours]**, **[!UICONTROL 1 week]**, **[!UICONTROL 2 weeks]**, and so forth. Or, select **[!UICONTROL Custom lookback window]**, then in the **[!UICONTROL Custom Lookback]** field specify a lookback window up to 26,280 hours.  |
-
 1. In the [!UICONTROL **Data structure**] section, make sure the correct data view is selected in the **[!UICONTROL Data view]** field. <p>Consider the following when selecting a data view:</p> <ul><li>If multiple data feeds are created for the same data view, each data feed must have different column definitions.</li><li>The list of available columns depends on the login company that the selected data view belongs to. If you change the data view, the list of available columns can change. </li></ul>
 
-1. Use either or both of the following methods to determine which data columns to include in the feed:
+1. Add columns to the data feed configuration. In the **[!UICONTROL Available]** section on the left, select any columns that you want to include, then select **[!UICONTROL Include]**. All data columns in Adobe Analytics are available. You can select multiple columns by holding **[!UICONTROL Shift]**, or by holding **[!UICONTROL Command]** (on macOS) or **[!UICONTROL Ctrl]** (on Windows). Click **[!UICONTROL Add all]** to include all columns in a data feed.
 
-   * **Add columns individually:** In the **[!UICONTROL Available]** section on the left, select any columns that you want to include, then select **[!UICONTROL Include]**. All data columns in Adobe Analytics are available. You can select multiple columns by holding **[!UICONTROL Shift]**, or by holding **[!UICONTROL Command]** (on macOS) or **[!UICONTROL Ctrl]** (on Windows). Click **[!UICONTROL Add all]** to include all columns in a data feed.
+   Columns you add appear in the **[!UICONTROL Included]** section on the right.
 
-     Columns you add appear in the **[!UICONTROL Included]** section on the right.
+   Use the following information to understand dimensions that are always included, dimensions that cannot be included, and metrics that must be substituted:
 
-   * **Add a column template:** In the **[!UICONTROL Column templates]** field, select a column template to add. A column template is a predefined group of columns, and Adobe provides several by default. 
-  
-     All columns included in the template appear in the **[!UICONTROL Included]** section on the right.
+   +++ Dimensions that are always included in data feeds
 
-1. (Optional) To create a column template that is based on the data feed that you are currently creating, select **[!UICONTROL Save as template]**, specify a name for the template, then select **[!UICONTROL Save]**. This option is useful if you plan to create additional data feeds that include the same columns.
+   The following components must be included in every data feed:
 
-    ![Create column template while creating a data feed](assets/data-feed-template-create2.png)
+   | Component name | Notes | Data feeds | Other reporting |
+   |---|---|---|---|
+   | Timestamp | Timestamp of the event period. Millisecond granularity. Represented in UTC. | Mandatory | Not available |
+   | Row ID | Unique row identifier | Mandatory | Not available |
+   | Session ID | Unique identifier for each session | Mandatory | Not available |
+   | Person ID | The person identifier for the data view and connection | Mandatory | Optional standard |
+   | Account ID (B2B) | Account ID when using the Account container | Mandatory (B2B only) | Optional standard (B2B only) |
+   
+   +++
 
-1. (Optional) To download a list of included columns in .csv format, select **[!UICONTROL Download columns]**. This option can be useful for data feeds that have a large number of columns. 
+   +++ Dimensions that cannot be included in data feeds
+
+   Customer Journey Analytics standard dimensions cannot be included in data feeds. The following table lists these dimensions:
+
+   | Component name | Notes | Data feeds |
+   |---|---|---|
+   | 5 Minute | Five-minute intervals when events occurred (rounded down) | Not available |
+   | 15 Minute | Fifteen-minute intervals when events occurred (rounded down) | Not available |
+   | 30 Minute | Thirty-minute intervals when events occurred (rounded down) | Not available |
+   | Day | Day an event occurred | Not available |
+   | Day of Week | Day of the week an event occurred | Not available |
+   | Day of Month | Day of the month an event occurred | Not available |
+   | Event Depth | Sequential numerical value (1, 2, 3, etc.) assigned to each event interaction within a session | Not available |
+   | Hour | Hour an event occurred (rounded down) | Not available |
+   | Hour of Day | Hour of the day an event occurred (rounded down) | Not available |
+   | Minute | Minute an event occurred (rounded down) | Not available |
+   | Minute of Hour | Minute of the hour an event occurred (rounded down) | Not available |
+   | Month | Month an event occurred | Not available |
+   | Month of Year | Month of the year an event occurred | Not available |
+   | Quarter | Quarter an event occurred | Not available |
+   | Quarter of Year | Quarter of the year an event occurred | Not available |
+   | Second | Second an event occurred (rounded down) | Not available |
+   | Week | Week an event occurred | Not available |
+   | Week of Year | Week of the year an event occurred | Not available |
+   | Year | Year an event occurred | Not available |
+
+   +++
+
+   +++ Metrics that must be substituted in data feeds
+
+   The following Customer Journey Analytics metrics must be substituted:
+
+   | Component name | Notes | Data feeds |
+   |---|---|---|
+   | Accounts | [B2B Edition] Based on Account ID specified in the connection | Not available. Use count distinct of Account ID. |
+   | Buying Group | [B2B Edition] Buying groups based on Buying Group ID in the connection | Not available. Use count distinct of Buying Group ID. |
+   | Events | Number of rows from all event datasets in a connection | Not available. Use count distinct of Row ID. |
+   | Global Accounts | [B2B Edition] Based on Global Accounts ID in the connection | Not available. Use count distinct of Global Accounts ID. |
+   | Opportunities | [B2B Edition] Opportunities based on Opportunity ID in the connection | Not available. Use count distinct of Opportunity ID. |
+   | People | Based on Person ID specified in a connection | Not available. Use count distinct of Person ID. |
+   | Conversations | Number of conversations | Not available. Use count distinct of Conversation ID. |
+   | Session Ends | Number of events that were the last event of a session | Not available |
+   | Session Starts | Number of events that were the first event of a session | Not available |
+   | Sessions | Based on the data view's session settings | Not available. Use count distinct of Session ID. |
+   | Time Spent (seconds) | Sums the time between two different dimension values | Not available |
+
+   +++
+
+   +++ Optional standard components
+
+   | Component name | Type | Notes | Data feeds |
+   |---|---|---|---|
+   | AM/PM | Time-parting dimension | AM or PM | Not available |
+   | Batch ID | Dimension | Identifier for an Experience Platform batch | Available |
+   | Dataset ID | Dimension | Identifier for an Experience Platform dataset | Available |
+   | Day of Month | Time-parting dimension | 1–31 | Not available |
+   | Day of Week | Time-parting dimension | Monday through Sunday | Not available |
+   | Day of Year | Time-parting dimension | 1–366 | Not available |
+   | Hour of Day | Time-parting dimension | 0–23 | Not available |
+   | Month of Year | Time-parting dimension | January–December | Not available |
+   | First-time Sessions | Metric | A person's first defined session within the reporting window | Not available |
+   | Return Sessions | Metric | Sessions that were not a person's first-time session | Not available |
+   | Person ID | Dimension | The person identifier for the data view and connection | **Mandatory** |
+   | Person ID namespace | Dimension | Type of ID the Person ID consists of (for example, email or cookie ID) | Available |
+   | Global Account ID | [B2B Edition] Dimension | Global Account ID when using the Global Account container | Available |
+   | Account ID | [B2B Edition] Dimension | Account ID when using the Account container | **Mandatory** (B2B only) |
+   | Opportunity ID | [B2B Edition] Dimension | Opportunity ID when using the Opportunity container | Available |
+   | Buying Group ID | [B2B Edition] Dimension | Buying Group ID when using the Buying Group container | Available |
+   | Quarter of Year | Time-parting dimension | Q1, Q2, Q3, Q4 | Not available |
+   | Repeat Session | Metric | Sessions that were not a person's first-ever session | Not available |
+   | Session Type | Dimension | Two values: First-Time or Returning | Not available |
+   | Time Spent per Event | Dimension | Buckets the Time Spent metric into event buckets | Not available |
+   | Time Spent per Session | Dimension | Buckets the Time Spent metric into session buckets | Not available |
+   | Time Spent per Person | Dimension | Buckets the Time Spent metric into person buckets | Not available |
+   | Weekend/Weekday | Time-parting dimension | Weekend or Weekday | Not available |
+
+   +++
+
 
 1. In the [!UICONTROL **Delivery**] section, specify the following information:
    
@@ -107,8 +177,8 @@ Before you create a data feed, it's important to have a basic understanding of d
    | [!UICONTROL **Start date**] | Specify the date when you want the data feed to begin. To immediately begin processing data feeds for historical data, ensure that [!UICONTROL **Backfill feed**] is selected, then set this date to any date in the past when data is being collected. The start date is based on the data view's time zone. |
    | [!UICONTROL **End date**] | Specify the date when you want the data feed to end. The end date is based on the data view's time zone. |
    | [!UICONTROL **Frequency**] | Select how often the data feed should be sent. Events with timestamps that fall within the frequency window are included in the data feed delivery. The [!UICONTROL **Lookback date range**] and [!UICONTROL **Processing delay**] fields can also affect which events are included in the data for the delivery frequency that you choose.<p>Select to include either one hour's worth of data or one day's worth of data:</p><ul><li>**Daily**: Feeds contain a full day's worth of data, from midnight to midnight in the data view's time zone. Use this option for backfill feeds or for live feeds.</li><li>**Hourly**: Feeds contain a single hour's worth of data. Use this option for live feeds.</li></ul>  |
-   | [!UICONTROL **Lookback date range**] | Controls how far back Customer Journey Analytics looks when processing the data feed delivery. <p>This setting does not alter the frequency window (hour or day), which defines the time frame of the events to include in the data feed output. However, the lookback date range can influence the data that is delivered, in the following ways: </p><ul><li>**Segment qualification**: When a segment is applied to your data feed definition, any events within the lookback date range determine whether a person qualifies. The segment's container setting determines the scope. (Possible containers are: Person, Session, or Event. B2B has the following additional containers: Global account, Account, Opportunity, Buying group.)  <p>For example, if a Person container is used and the person qualifies during the lookback date range, then all of that person's events during the frequency window also qualify.</p></li><li>**Session calculation**: Session boundaries are calculated using data within the lookback date range.</li><li>**Dimension persistence**: If you choose to set persistence on an individual dimension, you also choose an expiration to determine how long a dimension item persists beyond the event it is set on. <p>The lookback date range affects dimension persistence when the expiration is set to either of the following options in the data view:</p><ul><li>For each dimension in the data feed definition that uses [!UICONTROL **Reporting Window**] as its expiration, the lookback date range becomes the new reporting window.</li><li>For each dimension in the data feed definition that uses [!UICONTROL **Custom Time**] as its expiration, and if the custom time that is selected extends beyond the lookback date range, the custom time is ignored, and the lookback date range is used for dimension expiration.<p>For more information about setting persistence on dimensions within the data view, see [Persistence component settings](/help/data-views/component-settings/persistence.md).</p></li></ul>|
-   | [!UICONTROL **Processing delay**] | Choose whether to wait a given amount of time before processing a data feed file. A delay can be useful to give mobile implementations an opportunity for offline devices to come online and send data. It can also be used to accommodate your organization's server-side processes in managing previously processed files. In most cases, no delay is needed. You can delay a feed by up to 8 hours (480 minutes), or even longer if you select a custom amount of time (9,999 minutes of delay, or about 1 week).<p>If no delay is set, only those events that fall within the frequency window (the last day or hour) are included in the feed. |
+   | [!UICONTROL **Lookback date range**] | Controls how far back Customer Journey Analytics looks when processing the data feed delivery. <p>This setting does not alter the frequency window (hour or day), which defines the time frame of the events to include in the data feed output. However, the lookback date range can influence the data that is delivered, in the following ways: </p><ul><li>**Segment qualification**: When a segment is applied to your data feed definition, any events within the lookback date range determine whether a person qualifies. The segment's container setting determines the scope. (Possible containers are: Person, Session, or Event. B2B has the following additional containers: Global account, Account, Opportunity, Buying group.)  <p>For example, if a Person container is used and the person qualifies during the lookback date range, then all of that person's events during the frequency window also qualify.</p></li><li>**Session calculation**: Session boundaries are calculated using data within the lookback date range.</li><li>**Derived field transformations**: Any derived field functions that reference containers (such as the Summarize, Deduplicate, and Depth functions) use the lookback date range in data feed exports.</li><li>**Dimension persistence**: If you choose to set persistence on an individual dimension, you also choose an expiration to determine how long a dimension item persists beyond the event it is set on. <p>The lookback date range affects dimension persistence when the expiration is set to either of the following options in the data view:</p><ul><li>For each dimension in the data feed definition that uses [!UICONTROL **Reporting Window**] as its expiration, the lookback date range becomes the new reporting window.</li><li>For each dimension in the data feed definition that uses [!UICONTROL **Custom Time**] as its expiration, and if the custom time that is selected extends beyond the lookback date range, the custom time is ignored, and the lookback date range is used for dimension expiration.<p>For more information about setting persistence on dimensions within the data view, see [Persistence component settings](/help/data-views/component-settings/persistence.md).</p></li></ul>|
+   | [!UICONTROL **Processing delay**] | Choose whether to wait a given amount of time before processing a data feed file. Any late-arriving hits that come in during the processing delay are included in the data feed.<p>A delay can be useful to give mobile implementations an opportunity for offline devices to come online and send data. It can also be used to accommodate your organization's server-side processes in managing previously processed files. In most cases, no delay is needed. You can delay a feed by up to 8 hours (480 minutes), or even longer if you select a custom amount of time (9,999 minutes of delay, or about 1 week).<p>If no delay is set, only those events that fall within the frequency window (the last day or hour) are included in the feed.</p> <p>Visits must start after this cutoff in order to be included; visits that start before the cutoff and end within the processing delay are not included.</p> <p>Required for sessions, persistence, and segments.</p><p>Not used for dimensions. Dimensions are controlled per dimension based on the dimension's allocation and expiration. Dimension lookbacks cannot exceed the processing delay.</p>|
 
 1. In the [!UICONTROL **Destination**] section, configure the destination where you want the data to be sent.  
 
@@ -130,7 +200,7 @@ Before you create a data feed, it's important to have a basic understanding of d
    | [!UICONTROL **Account**] | Do either of the following:<ul><li>**Use an existing account:** Select the drop-down menu next to the **[!UICONTROL Account]** field. Or, begin typing the account name, then select it from the drop-down menu. <p>Accounts are available to you only if you configured them or if they are shared with an organization you are a part of.</p></li><li>**Create a new account:** Select **[!UICONTROL Add new]** beneath the **[!UICONTROL Account]** field. For information about how to configure the account, see [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md).</li></ul> |
    | [!UICONTROL **Location**] | Do either of the following:<ul><li>**Use an existing location:** Select the drop-down menu next to the **[!UICONTROL Location]** field. Or, begin typing the location name, then select it from the drop-down menu.</li><li>**Create a new location:** Select **[!UICONTROL Add new]** beneath the **[!UICONTROL Location]** field. For information about how to configure the location, see [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).</li></ul> |
    | [!UICONTROL **Notify when complete**] | Specify one or more email addresses where a notification should be delivered after the data feed is successfully sent or fails to send. Multiple email addresses must be separated with a comma.  |
-   | [!UICONTROL **Enable manifest**] | Choose whether to include a manifest file with each data feed delivery. <p>You can choose from the following options:</p><ul><li>**[!UICONTROL Manifest file]**: Contains information for each file included in the data feed.</li><li>**[!UICONTROL Finish file (Legacy)]**: Indicates that the data feed completed successfully. No other information is included. This option is suitable for existing feeds that originally used this option that need to be reprocessed. It is available only when sending data feed data in a single package. </li><li>**[!UICONTROL None]**: No file is included</li></ul> |
+   | [!UICONTROL **Enable manifest**] | Choose whether to include a manifest file with each data feed delivery. The manifest file contains information for each file included in the data feed. |
        
 1. Select **[!UICONTROL Save]**.    
 
