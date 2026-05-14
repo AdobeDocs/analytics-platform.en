@@ -8,44 +8,22 @@ exl-id: 991a7861-cbde-4d55-935c-d56c8031853e
 ---
 # Data feeds overview
 
-Data feeds are a powerful way to get raw data out of Customer Journey Analytics. This raw data can be used in other platforms outside of Adobe to use at your organization's discretion. Data is delivered in hourly batches at the conclusion of each hour, or in daily batches at the conclusion of each day.
+Data feeds are a powerful way to get raw data out of Customer Journey Analytics. You can use this raw data in other platforms outside of Adobe at your organization's discretion. Data is delivered in hourly batches at the conclusion of each hour, or in daily batches at the conclusion of each day.
 
 ## Prerequisites
 
-Make sure that you meet all the following requirements before using data feeds.
+Make sure that you meet all the following requirements before using data feeds:
 
-* A working implementation with data being ingested into Adobe Customer Journey Analytics. <!-- For more information, see Data ingestion overview - add link -->
-* Your account is an Analytics product admin, or your account belongs to a product profile with access to data feeds. <!--???-->
-* A bucket configured on Amazon S3, Google Cloud Platform, Azure RBAC, or Azure SAS.<!--Which cloud providers do we support??-->
-* (Legacy: Required only for legacy FTP and SFTP destination types) Have an FTP site and credentials handy (FTP credentials provided by your organization.)<!--Delete???-->
+* A working implementation with data being ingested into Adobe Customer Journey Analytics <!-- For more information, see Data ingestion overview - add link -->
+* Your account is an Analytics product admin, or your account belongs to a product profile with access to data feeds <!--???-->
+* A bucket configured on {DNL Amazon S3}, {DNL Google Cloud Platform}, {DNL Azure RBAC}, or {DNL Azure SAS}
 
-## Compare data feeds in Customer Journey Analytics and Adobe Analytics
+## Get started
 
-Data feed functionality in Customer Journey Analytics differs from Adobe Analytics. For more information, see [Compare data feeds in Customer Journey Analytics and Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md).
+To get started using data feeds in Customer Journey Analytics, first understand how data feeds in Customer Journey Analytics differ from data feeds in Adobe Analytics. After you understand the differences, you can map Adobe Analytics data feeds to Customer Journey Analytics, then begin creating a data feed.
 
+1. [Understand the differences between data feeds in Customer Journey Analytics and Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md).
 
-## Next steps
+1. [Map Adobe Analytics data feed columns to Customer Journey Analytics](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md).
 
-The following resources help you understand the basic workflow of obtaining data feeds. After you understand the basic workflow, you can work with teams within your organization to store or ingest raw data into a database.
-
-* Data feed best practices<!--add link-->: Best practices for creating and managing data feeds.
-* Create a data feed<!--add link-->: Technical details for creating a data feed, explaining individual fields in more detail
-* Manage data feeds<!--add link-->: Learn more about navigating the data feed interface
-* Data feed contents <!--add link-->: Understand what is inside the compressed file 
-* Data column definitions <!--add link-->: A comprehensive list of all available columns.
-
-<!-- Is this still the output users can download from the destination? I aske Jun. -->
-
->[!BEGINSHADEBOX]
-
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navigate the data feed interface](https://video.tv.adobe.com/v/25452?quality=12&learn=on){target="_blank"} for a demo video.
-
->[!ENDSHADEBOX]
-
-
-
->[!BEGINSHADEBOX]
-
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Find your data feed id](https://video.tv.adobe.com/v/335747?quality=12&learn=on){target="_blank"} for a demo video.
-
->[!ENDSHADEBOX]
+1. [Create a data feed](/help/components/exports/cja-data-feeds/create-feed.md).

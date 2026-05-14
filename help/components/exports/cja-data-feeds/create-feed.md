@@ -12,7 +12,7 @@ When creating a data feed, you provide Adobe with:
 
 * The data you want to include in each file
 
-* The frequency of how often the data feed should be sent (including the lookback window if you choose to include late-arriving hits)
+* The frequency of how often the data feed should be sent (including the processing delay to capture late-arriving hits)
 
 Before you create a data feed, it's important to have a basic understanding of data feeds and to ensure that you meet all prerequisites. For more information, see [Data feeds overview](data-feed-overview.md). 
 
@@ -49,7 +49,7 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 1. Log in to [experiencecloud.adobe.com](https://experiencecloud.adobe.com) using your Adobe ID credentials.
 
-1. Select the 9-square icon in the upper-right, then select [!UICONTROL **Customer Journey Analytics**].
+1. Select [!UICONTROL **Customer Journey Analytics**] from the app switcher ![App](/help/assets/icons/Apps.svg) at the top right of the interface.
 
 1. In the top navigation bar, go to [!UICONTROL **Admin**] > [!UICONTROL **Data feeds**].
 
@@ -63,30 +63,28 @@ Before you create a data feed, it's important to have a basic understanding of d
    
    | Field | Function |
    |---------|----------|
-   | [!UICONTROL **Name**] | The name of the data feed. Names must be unique within the selected report suite, and can be up to 255 characters in length. <!--[Learn more](/help/export/analytics-data-feed/df-faq.md#must-feed-names-be-unique)--> |
+   | [!UICONTROL **Name**] | The name of the data feed. Names must be unique within the selected data view, and can be up to 255 characters in length. <!--[Learn more](/help/export/analytics-data-feed/df-faq.md#must-feed-names-be-unique)--> |
    | [!UICONTROL **Tags**] | Apply any tags to the data feed for easier categorization. <!--You can filter on tags as described in [Filter and search the list of data feeds](/help/export/analytics-data-feed/df-manage-feeds.md#filter-and-search-the-list-of-data-feeds) in [Manage data feeds](/help/export/analytics-data-feed/df-manage-feeds.md).-->  |
    | [!UICONTROL **Description**] | Specify a description for the data feed. The description you add is visible when editing the data feed. |
    | [!UICONTROL **Data view**] | Select the data view that contains the data that you want to export. |
 
 1. In the [!UICONTROL **Data structure**] section, make sure the correct data view is selected in the **[!UICONTROL Data view]** field. <p>Consider the following when selecting a data view:</p> <ul><li>If multiple data feeds are created for the same data view, each data feed must have different column definitions.</li><li>The list of available columns depends on the login company that the selected data view belongs to. If you change the data view, the list of available columns can change. </li></ul>
 
-1. Add columns to the data feed configuration. In the **[!UICONTROL Available]** section on the left, select any columns that you want to include, then select **[!UICONTROL Include]**. All data columns in Adobe Analytics are available. You can select multiple columns by holding **[!UICONTROL Shift]**, or by holding **[!UICONTROL Command]** (on macOS) or **[!UICONTROL Ctrl]** (on Windows). Click **[!UICONTROL Add all]** to include all columns in a data feed.
-
-   Columns you add appear in the **[!UICONTROL Included]** section on the right.
+1. Add columns to the data feed configuration. In the component rail section on the left, locate any columns that you want to include, then drag them to the canvas to build your data structure. You can select multiple columns by holding **[!UICONTROL Shift]**, or by holding **[!UICONTROL Command]** (on macOS) or **[!UICONTROL Ctrl]** (on Windows).
 
    Use the following information to understand dimensions that are always included, dimensions that cannot be included, and metrics that must be substituted:
 
    +++ Dimensions that are always included in data feeds
 
-   The following components must be included in every data feed:
+   The following dimensions are included by default in every data feed and cannot be removed:
 
-   | Component name | Notes | Data feeds | Other reporting |
+   | Dimension name | Notes | Data feeds | Other reporting |
    |---|---|---|---|
-   | Timestamp | Timestamp of the event period. Millisecond granularity. Represented in UTC. | Mandatory | Not available |
+   | Timestamp | Timestamp of the event period. Microsecond granularity. Represented in UTC. | Mandatory | Not available |
    | Row ID | Unique row identifier | Mandatory | Not available |
    | Session ID | Unique identifier for each session | Mandatory | Not available |
    | Person ID | The person identifier for the data view and connection | Mandatory | Optional standard |
-   | Account ID (B2B) | Account ID when using the Account container | Mandatory (B2B only) | Optional standard (B2B only) |
+   | Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Account ID when using the Account container | Mandatory | Optional standard |
    
    +++
 
@@ -94,7 +92,7 @@ Before you create a data feed, it's important to have a basic understanding of d
 
    Customer Journey Analytics standard dimensions cannot be included in data feeds. The following table lists these dimensions:
 
-   | Component name | Notes | Data feeds |
+   | Dimension name | Notes | Data feeds |
    |---|---|---|
    | 5 Minute | Five-minute intervals when events occurred (rounded down) | Not available |
    | 15 Minute | Fifteen-minute intervals when events occurred (rounded down) | Not available |
@@ -122,13 +120,13 @@ Before you create a data feed, it's important to have a basic understanding of d
 
    The following Customer Journey Analytics metrics must be substituted:
 
-   | Component name | Notes | Data feeds |
+   | Metric name | Notes | Data feeds |
    |---|---|---|
-   | Accounts | [B2B Edition] Based on Account ID specified in the connection | Not available. Use count distinct of Account ID. |
-   | Buying Group | [B2B Edition] Buying groups based on Buying Group ID in the connection | Not available. Use count distinct of Buying Group ID. |
+   | Accounts [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Based on Account ID specified in the connection | Not available. Use count distinct of Account ID. |
+   | Buying Group [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Buying groups based on Buying Group ID in the connection | Not available. Use count distinct of Buying Group ID. |
    | Events | Number of rows from all event datasets in a connection | Not available. Use count distinct of Row ID. |
-   | Global Accounts | [B2B Edition] Based on Global Accounts ID in the connection | Not available. Use count distinct of Global Accounts ID. |
-   | Opportunities | [B2B Edition] Opportunities based on Opportunity ID in the connection | Not available. Use count distinct of Opportunity ID. |
+   | Global Accounts [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Based on Global Accounts ID in the connection | Not available. Use count distinct of Global Accounts ID. |
+   | Opportunities [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Opportunities based on Opportunity ID in the connection | Not available. Use count distinct of Opportunity ID. |
    | People | Based on Person ID specified in a connection | Not available. Use count distinct of Person ID. |
    | Conversations | Number of conversations | Not available. Use count distinct of Conversation ID. |
    | Session Ends | Number of events that were the last event of a session | Not available |
@@ -152,12 +150,10 @@ Before you create a data feed, it's important to have a basic understanding of d
    | Month of Year | Time-parting dimension | January–December | Not available |
    | First-time Sessions | Metric | A person's first defined session within the reporting window | Not available |
    | Return Sessions | Metric | Sessions that were not a person's first-time session | Not available |
-   | Person ID | Dimension | The person identifier for the data view and connection | **Mandatory** |
    | Person ID namespace | Dimension | Type of ID the Person ID consists of (for example, email or cookie ID) | Available |
-   | Global Account ID | [B2B Edition] Dimension | Global Account ID when using the Global Account container | Available |
-   | Account ID | [B2B Edition] Dimension | Account ID when using the Account container | **Mandatory** (B2B only) |
-   | Opportunity ID | [B2B Edition] Dimension | Opportunity ID when using the Opportunity container | Available |
-   | Buying Group ID | [B2B Edition] Dimension | Buying Group ID when using the Buying Group container | Available |
+   | Global Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Global Account ID when using the Global Account container | Available |
+   | Opportunity ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Opportunity ID when using the Opportunity container | Available |
+   | Buying Group ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Buying Group ID when using the Buying Group container | Available |
    | Quarter of Year | Time-parting dimension | Q1, Q2, Q3, Q4 | Not available |
    | Repeat Session | Metric | Sessions that were not a person's first-ever session | Not available |
    | Session Type | Dimension | Two values: First-Time or Returning | Not available |
@@ -176,9 +172,9 @@ Before you create a data feed, it's important to have a basic understanding of d
    | [!UICONTROL **Feed type**] | Select the type of feed you want to create:<ul><li>[!UICONTROL **Live feed**]: Exports current and future data.</li><li>[!UICONTROL **Backfill feed**]: Exports historical data between two past dates.</li></ul>|
    | [!UICONTROL **Start date**] | Specify the date when you want the data feed to begin. To immediately begin processing data feeds for historical data, ensure that [!UICONTROL **Backfill feed**] is selected, then set this date to any date in the past when data is being collected. The start date is based on the data view's time zone. |
    | [!UICONTROL **End date**] | Specify the date when you want the data feed to end. The end date is based on the data view's time zone. |
-   | [!UICONTROL **Frequency**] | Select how often the data feed should be sent. Events with timestamps that fall within the frequency window are included in the data feed delivery. The [!UICONTROL **Lookback date range**] and [!UICONTROL **Processing delay**] fields can also affect which events are included in the data for the delivery frequency that you choose.<p>Select to include either one hour's worth of data or one day's worth of data:</p><ul><li>**Daily**: Feeds contain a full day's worth of data, from midnight to midnight in the data view's time zone. Use this option for backfill feeds or for live feeds.</li><li>**Hourly**: Feeds contain a single hour's worth of data. Use this option for live feeds.</li></ul>  |
+   | [!UICONTROL **Frequency**] | Select how often the data feed should be sent. Events with timestamps that fall within the frequency window are included in the data feed delivery. The [!UICONTROL **Lookback date range**] and [!UICONTROL **Processing delay**] fields can also affect which events are included in the data for the delivery frequency that you choose.<p>For live feeds, select to include either one hour's worth of data or one day's worth of data. Backfill feeds must be daily.</p><ul><li>**Daily**: Feeds contain a full day's worth of data, from midnight to midnight in the data view's time zone. Use this option for backfill feeds or for live feeds.</li><li>**Hourly**: Feeds contain a single hour's worth of data. Use this option for live feeds.</li></ul>  |
    | [!UICONTROL **Lookback date range**] | Controls how far back Customer Journey Analytics looks when processing the data feed delivery. <p>This setting does not alter the frequency window (hour or day), which defines the time frame of the events to include in the data feed output. However, the lookback date range can influence the data that is delivered, in the following ways: </p><ul><li>**Segment qualification**: When a segment is applied to your data feed definition, any events within the lookback date range determine whether a person qualifies. The segment's container setting determines the scope. (Possible containers are: Person, Session, or Event. B2B has the following additional containers: Global account, Account, Opportunity, Buying group.)  <p>For example, if a Person container is used and the person qualifies during the lookback date range, then all of that person's events during the frequency window also qualify.</p></li><li>**Session calculation**: Session boundaries are calculated using data within the lookback date range.</li><li>**Derived field transformations**: Any derived field functions that reference containers (such as the Summarize, Deduplicate, and Depth functions) use the lookback date range in data feed exports.</li><li>**Dimension persistence**: If you choose to set persistence on an individual dimension, you also choose an expiration to determine how long a dimension item persists beyond the event it is set on. <p>The lookback date range affects dimension persistence when the expiration is set to either of the following options in the data view:</p><ul><li>For each dimension in the data feed definition that uses [!UICONTROL **Reporting Window**] as its expiration, the lookback date range becomes the new reporting window.</li><li>For each dimension in the data feed definition that uses [!UICONTROL **Custom Time**] as its expiration, and if the custom time that is selected extends beyond the lookback date range, the custom time is ignored, and the lookback date range is used for dimension expiration.<p>For more information about setting persistence on dimensions within the data view, see [Persistence component settings](/help/data-views/component-settings/persistence.md).</p></li></ul>|
-   | [!UICONTROL **Processing delay**] | Choose whether to wait a given amount of time before processing a data feed file. Any late-arriving hits that come in during the processing delay are included in the data feed.<p>A delay can be useful to give mobile implementations an opportunity for offline devices to come online and send data. It can also be used to accommodate your organization's server-side processes in managing previously processed files. In most cases, no delay is needed. You can delay a feed by up to 8 hours (480 minutes), or even longer if you select a custom amount of time (9,999 minutes of delay, or about 1 week).<p>If no delay is set, only those events that fall within the frequency window (the last day or hour) are included in the feed.</p> <p>Visits must start after this cutoff in order to be included; visits that start before the cutoff and end within the processing delay are not included.</p> <p>Required for sessions, persistence, and segments.</p><p>Not used for dimensions. Dimensions are controlled per dimension based on the dimension's allocation and expiration. Dimension lookbacks cannot exceed the processing delay.</p>|
+   | [!UICONTROL **Processing delay**] | Choose the amount of time to wait before processing a data feed file. Any late-arriving hits that come in during the processing delay are included in the data feed. <p>A delay can be useful to give mobile implementations an opportunity for offline devices to come online and send data. It can also be used to accommodate your organization's server-side processes in managing previously processed files. </p><p>You can delay a feed by 2, 3, 4, or 8 hours.<p>Sessions must start after the processing delay cutoff in order to be included; sessions that start before the cutoff and end within the processing delay are not included.</p>|
 
 1. In the [!UICONTROL **Destination**] section, configure the destination where you want the data to be sent.  
 
@@ -204,59 +200,7 @@ Before you create a data feed, it's important to have a basic understanding of d
        
 1. Select **[!UICONTROL Save]**.    
 
-## Manage column templates
 
-Templates allow you to reuse the same columns for future data feeds that you create. 
-
-When managing templates, you can create new templates, use templates that are already created, copy templates, edit templates, and delete templates.
-
-**[!UICONTROL Admin]** > **[!UICONTROL Data feeds]** > **[!UICONTROL Manage templates]**
-
-![Manage column templates](assets/data-feed-template-manage.png)
-
-### Create a column template
-
-When creating multiple data feeds that use the same columns, Adobe recommends that you create column templates. Any column templates that you create are available to use by anyone in your organization. 
-
-To create a column template:
-
-1. In Adobe Analytics, go to [!UICONTROL **Admin**] > [!UICONTROL **Data feeds**] > **[!UICONTROL Manage templates]**.
-
-1. Select **[!UICONTROL Create new template]** to create a new column template. 
-
-   ![Create column template](assets/data-feed-template-create.png)
-
-1. In the **[!UICONTROL Template name]** field, specify a name for the template. 
-
-1. In the **[!UICONTROL Available]** section on the left, select any columns that you want to include, then select **[!UICONTROL Include]**. All available data columns in Adobe Analytics are available. You can select multiple columns by holding **[!UICONTROL Shift]**, or by holding **[!UICONTROL Command]** (on macOS) or **[!UICONTROL Ctrl]** (on Windows). Click **[!UICONTROL Add all]** to include all columns in a data feed.
-
-     Columns you add appear in the **[!UICONTROL Included]** section on the right.
-
-1. Select **[!UICONTROL Save]**.
-
-### Edit a column template
-
-1. In Adobe Analytics, go to [!UICONTROL **Admin**] > [!UICONTROL **Data feeds**] > **[!UICONTROL Manage templates]**. 
-
-1. Select the template that you want to edit, then select **[!UICONTROL Edit]**.
-
-1. Make any edits, then select **[!UICONTROL Save]**.
-
-### Copy a column template
-
-1. In Adobe Analytics, go to [!UICONTROL **Admin**] > [!UICONTROL **Data feeds**] > **[!UICONTROL Manage templates]**.
-
-1. Select the template that you want to copy, then select **[!UICONTROL Copy]**.
-
-1. In the **[!UICONTROL Template name]** field, specify a name for the template. 
-
-1. Make any additional changes, then select **[!UICONTROL Save]**.
-
-### Delete column templates
-
-1. In Adobe Analytics, go to [!UICONTROL **Admin**] > [!UICONTROL **Data feeds**] > **[!UICONTROL Manage templates]**.
-
-1. Select one or more templates that you want to delete, then select **[!UICONTROL Delete]**.
 
 
 <!-- why would you want to do this? -->
