@@ -618,7 +618,7 @@ To delete nodes in Journey canvas:
 
 ### Exclude nodes
 
-When you exclude a node from a journey, the journey data is updated to exclude journey that went through that node. The segment definition for the journey is also updated to exclude journeys that went through that node.
+When you exclude a node from a journey, the journey data is updated to exclude journeys that went through that node. The segment definition for the journey is also updated to exclude journeys that went through that node.
 
 To exclude a node from a journey:
 
