@@ -472,7 +472,7 @@ Consider the following when applying a breakdown:
 
 * Breakdown data is updated if changes are made at an earlier point in the journey.
 
-#### Apply a breakdown to one or more nodes or arrows
+#### Apply a breakdown to nodes, arrows, or fallout data
 
 1. In a Journey canvas visualization, do any of the following:
 
@@ -578,7 +578,7 @@ To view trend data:
 
 1. Select [!UICONTROL **Trend**].
 
-### Create a segment based on a node or arrow
+### Create a segment based on a node, arrow, or fallout data
 
 The option to create a segment is available for the following objects on the canvas:
 
