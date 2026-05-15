@@ -15,7 +15,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 |---|---|
 | **May 2026** | |
-| Tags agnostic configuration for Content Analytics | [Documentation](/help/content-analytics/config/tags-agnostic.md) on how to implement Content Analytics for the web channel without requiring Experience Platform Data Collection Tags. |
+| Javascript library for Content Analytics | Documentation on how to implement Content Analytics for the web channel using the [Content Analytics Javascript library](/help/content-analytics/config/tags-agnostic.md) without requiring Experience Platform Data Collection Tags. |
 | Data Mirror consideratons | [Documentation](/help/data-mirror/considerations.md) that describes factors you should consider when you set up [Data Mirror datasets](/help/data-mirror/data-mirror.md). |
 | Content Analytics mobile channel | Updates to [Content Analytics documentation](/help/content-analytics/content-analytics.md) to describe the capabilities and configuration of the Content Analytics mobile channel. |
 | **April 2026** | |
