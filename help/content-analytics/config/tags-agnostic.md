@@ -1,5 +1,5 @@
 ---
-title: Content Analytics JavaScript Kibrary
+title: Content Analytics JavaScript Library
 description: Learn how to configure Content Analytics without using Experience Platform Data Collection Tags and use the Content Analytics JavaScript library instead.
 solution: Customer Journey Analytics
 feature: Content Analytics
