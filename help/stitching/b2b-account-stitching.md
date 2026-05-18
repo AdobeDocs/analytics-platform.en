@@ -91,28 +91,28 @@ After configuring B2B stitching at the connection level, you must enable B2B acc
 
 1. For the specific event dataset for which you want to configure B2B account stitching, switch **[!UICONTROL Enable Person to Account stitching]** on.
 
-   >[!BEGINTABS]
+>[!BEGINTABS]
 
-   >[!TAB On]
+>[!TAB On]
 
-   When **[!UICONTROL Enable Person to Account stitching]** is **on**, you have configured B2B account stitching for the dataset.
-   
-   * The configuration of a person ID is required. That person ID is used to lookup the account ID based on the [Person-to-Account dataset](#prerequisites).
-   * The configuration of an account ID is optional.
+When **[!UICONTROL Enable Person to Account stitching]** is **on**, you have configured B2B account stitching for the dataset.
 
-   ![B2B account stitching on event dataset on](assets/b2b-event-dataset-stitching-on.png)
+* The configuration of a person ID is required. That person ID is used to lookup the account ID based on the [Person-to-Account dataset](#prerequisites).
+* The configuration of an account ID is optional.
 
-   >[!TAB Off]
+![B2B account stitching on event dataset on](assets/b2b-event-dataset-stitching-on.png)
 
-   When **[!UICONTROL Enable Person to Account stitching]** is **off**, you have *not* configured B2B account stitching for the dataset.
+>[!TAB Off]
 
-   * The configuration of an account ID is required. 
-   * The configuration of a person ID is optional.
+When **[!UICONTROL Enable Person to Account stitching]** is **off**, you have *not* configured B2B account stitching for the dataset.
 
-   ![B2B account stitching on event dataset off](assets/b2b-event-dataset-stitching-off.png)
+* The configuration of an account ID is required. 
+* The configuration of a person ID is optional.
+
+![B2B account stitching on event dataset off](assets/b2b-event-dataset-stitching-off.png)
 
 
-   >[!ENDTABS]
+>[!ENDTABS]
 
 
 
