@@ -371,7 +371,9 @@ For the web channel, you can configure [experience capture and definition](#expe
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="Data collection"
->abstract="Define which Tags property you want to use, or create a new one. And define the pages and assets that you want to include or exclude, using regular expressions."
+>abstract="Define which Tags property you want to use, or create a new one. And define the pages and assets that you want to include or exclude, using regular expressions.<br/>For a tags-agnostic implementation, select **[!UICONTROL Create new]**.  A Tags property is created but you are not required to use it."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Content Analytics JavaScript library"
+
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
