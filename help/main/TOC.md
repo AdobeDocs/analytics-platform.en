@@ -295,7 +295,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Guided configuration](/help/content-analytics/config/guided.md)
     + [Manual configuration](/help/content-analytics/config/manual.md)
     + [Standalone configuration](/help/content-analytics/config/standalone.md)
-    + {hide-from-toc} [Tags agnostic configuration](/help/content-analytics/config/tag-agnostic.md)
+    + [JavaScript library](/help/content-analytics/config/tags-agnostic.md)
     + [Data collection](/help/content-analytics/config/datacollection.md)
 
 + Analytics dashboards {#cja-dashboards}
@@ -442,6 +442,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Overview](/help/stitching/overview.md)
   + [Field-based stitching](/help/stitching/fbs.md)
   + [Graph-based stitching](/help/stitching/gbs.md)
+  + {hide-from-toc}  [B2B account stitching](/help/stitching/b2b-account-stitching.md)
   + [Request stitching](/help/stitching/use-stitching.md)
   + [Enable stitching](/help/stitching/use-stitching-ui.md)
   + [Validate stitching](/help/stitching/validate.md)

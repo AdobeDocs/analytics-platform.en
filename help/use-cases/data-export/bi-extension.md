@@ -29,7 +29,7 @@ This article outlines how the [!DNL Customer Journey Analytics BI extension] can
 
 Exporting data using the [!DNL Customer Journey Analytics BI extension] allows you to export data from your Customer Journey Analytics data views.
 
-![BI extension](../assets/bi-extension.svg)
+![BI extension](../assets/bi-extension.png)
 
 ## More information
 

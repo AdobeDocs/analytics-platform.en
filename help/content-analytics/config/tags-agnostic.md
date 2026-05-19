@@ -1,15 +1,14 @@
 ---
-title: Content Analytics Tags Agnositc Configuration
-description: Learn how to configure Content Analytics without using Experience Platform Data Collection Tags.
+title: Content Analytics JavaScript Library
+description: Learn how to configure Content Analytics without using Experience Platform Data Collection Tags and use the Content Analytics JavaScript library instead.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-hide: true
 ---
 
-# Content Analytics Tags agnostic configuration
+# Content Analytics JavaScript library
 
-The Adobe Content Analytics JavaScript library enables tracking of content-related events on websites by sending content data to Adobe Experience Platform via the Experience Platform Edge Network. Use this library when you want to implement Content Analytics without Adobe Experience Platform tags (Launch).
+The Adobe Content Analytics JavaScript library enables tracking of content-related events on websites by sending content data to Adobe Experience Platform via the Experience Platform Edge Network. Use this library when you want to implement Content Analytics without Adobe Experience Platform Tags.
 
 >[!NOTE]
 >
@@ -18,7 +17,10 @@ The Adobe Content Analytics JavaScript library enables tracking of content-relat
 
 >[!PREREQUISITES]
 >
->Adobe Experience Platform Web SDK (Alloy) must be initialized on the page before calling `initializeContentLibrary`.
+>* Adobe Experience Platform Web SDK (Alloy) must be initialized on the page before calling `initializeContentLibrary`.
+>* Complete the Content Analytics guided configuration wizard to guide you through all steps required to set up the prerequisites for a configuration of Content Analytics.
+>* After the guided configuration is finished, the JavaScript settings are available to use.
+
 
 ## Installation
 
@@ -72,7 +74,7 @@ Load the library directly from the CDN.
 2. The standalone build exposes `window.contentAnalytics` as the initialization function.
 
 
-## Datastream Configuration
+## Datastream configuration
 
 The `datastreamId` option is required and must reference a datastream that has the Experience Platform service configured with an enabled Content Analytics experience event dataset. Ensure the sandbox associated with the datastream is not already associated with another Content Analytics setup.
 
@@ -86,7 +88,7 @@ initializeContentLibrary({
 });
 ```
 
-## Experience Capture & Definition
+## Experience capture and definition
 
 Enable experience tracking and control how experiences are identified on your website. Experiences are defined by combining a **domain regular expression** with optional **query parameters** that distinguish one experience from another within matching pages.
 
@@ -123,7 +125,7 @@ initializeContentLibrary({
 });
 ```
 
-## Event Filtering
+## Event filtering
 
 Control which page URLs and asset URLs are included in data collection using regular expressions. Use the pattern examples below as a starting point and validate the patterns with a regex tester before deployment.
 
@@ -148,8 +150,3 @@ initializeContentLibrary({
   ],
 });
 ```
-
->[!NOTE]
->
->After a Content Analytics configuration has been set up in the [guided configuration](/help/content-analytics/config/guided.md) interface, the JavaScript settings specific to your configuration are available in that configuration view.
-

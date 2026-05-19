@@ -371,7 +371,9 @@ For the web channel, you can configure [experience capture and definition](#expe
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="Data collection"
->abstract="Define which Tags property you want to use, or create a new one. And define the pages and assets that you want to include or exclude, using regular expressions."
+>abstract="Define which Tags property you want to use, or create a new one. And define the pages and assets that you want to include or exclude, using regular expressions.<br/>For a tags-agnostic implementation, select **[!UICONTROL Create new]**.  A Tags property is created but you are not required to use it."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Content Analytics JavaScript library"
+
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
@@ -506,6 +508,8 @@ To configure data collection:
     1. Select **[!UICONTROL Create new]**.
     1. Specify a **[!UICONTROL Tags name]**, for example `ACA Test for Documentation`.
     1. Specify **[!UICONTROL Domains]**, for example, `example.com`.
+
+    Use a new Tags property if you want to create a Tags agnostic implementation for the web channel, using the [Content Analytics Javascript library](/help/content-analytics/config/tags-agnostic.md). The Tags property is created, but you will not use the property in the agnostic implementation. However, the agnostic implementation requires that you have run the guided configuration wizard at least once.
 
 * Indicate which pages should be included or excluded when collecting data for Content Analytics. Ensure you exclude personally identifiable pages. 
   

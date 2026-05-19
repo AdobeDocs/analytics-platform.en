@@ -28,7 +28,7 @@ In graph-based stitching, you specify an event dataset, the persistent ID (cooki
 If the person ID info cannot be retrieved for an event, the persistent ID is used instead for that *unstitched* event. As a result, in a [data view](/help/data-views/data-views.md) that is associated with a [connection](/help/connections/overview.md) that contains the dataset enabled for stitching, the person ID data view component contains either the person ID value or persistent ID value at the event level.
 
 
-![Graph-based-stitching](/help/stitching/assets/gbs.svg)
+![Graph-based-stitching](/help/stitching/assets/gbs.png)
 
 ## IdentityMap
 
@@ -121,7 +121,7 @@ Data beyond the lookback window is not replayed. A profile must be authenticated
 
 Consider the following two identity graph updates over time for visitor A (with persistent ID `246`) and visitor B (with persistent ID `3579`), and how these updates impact the steps in graph-based stitching.
 
-![Identity Graph 3579](assets/identity-graphs.svg)
+![Identity Graph 3579](assets/identity-graphs.png)
 
 You can view an identity graph over time for a specific profile using the [Identity Graph Viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer). See also [Identity Service linking logic](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) to get a better understanding of the logic used when linking identities.
 
