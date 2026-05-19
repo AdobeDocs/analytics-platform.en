@@ -128,10 +128,10 @@ The following capabilities in Customer Journey Analytics help you track retentio
 
 Insights deliver value only when they drive action. Convert analytics findings into actions that improve the user experience and support long-term product growth.
 
-The following capabilities within Experience Cloud enable you to act on insights effectively:
+The following capabilities within CX Enterprise enable you to act on insights effectively:
 
 * [Create and publish audiences](/help/components/audiences/publish.md)​ for activation from Customer Journey Analytics
-* Activate audiences through Experience Cloud products:
+* Activate audiences through CX Enterprise products:
   * [Run experiments](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) in AJO and Adobe Target, and measure the impact of variations in Customer Journey Analytics using the [Experimentation panel](/help/analysis-workspace/c-panels/experimentation.md)
   * [Deliver in-app engagements](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app) to users in AJO
 * [Activate audiences](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview) to external destinations with Adobe Real-time CDP​

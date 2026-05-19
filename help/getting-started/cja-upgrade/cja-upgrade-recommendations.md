@@ -73,7 +73,7 @@ After you have enough historical data using the Experience Platform Web SDK and 
 
    * Highly performant reporting and data availability because Adobe Experience Platform is built to power real-time personalization use cases
 
-   * Consolidate implementation for Adobe Experience Cloud data collection between other Experience Cloud products (AJO, RTCDP, and so forth)
+   * Consolidate implementation for Adobe CX Enterprise data collection between other CX Enterprise products (AJO, RTCDP, and so forth)
 
    * Not reliant on Adobe Analytics nomenclature (prop, eVar, event, and so forth)
 
@@ -276,7 +276,7 @@ Generic upgrade steps are also available.
 
    * Highly performant reporting and data availability because Adobe Experience Platform is built to power real-time personalization use cases
 
-   * Consolidate implementation for Adobe Experience Cloud data collection between other Experience Cloud products (AJO, RTCDP, and so forth)
+   * Consolidate implementation for Adobe CX Enterprise data collection between other CX Enterprise products (AJO, RTCDP, and so forth)
 
    * Not reliant on Adobe Analytics nomenclature (prop, eVar, event, and so forth)
 

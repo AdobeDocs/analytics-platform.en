@@ -132,7 +132,7 @@ The following parameters govern access to Data Insights Agent in Customer Journe
 
 1. Go to [experience.adobe.com](https://experience.adobe.com/) and log in with your Adobe ID.
 
-2. Select **Customer Journey Analytics** from Experience Cloud Home.
+2. Select **Customer Journey Analytics** from Adobe CX Enterprise Home.
 
 3. Select **[!UICONTROL Blank project]** in the banner at the top of the projects page to open a new blank project.
 
@@ -198,9 +198,9 @@ Finally, let's look at the revenue by product category.
 
    ![Donut](/help/assets/ai-asst-result3.png)
 
-## Access Data Insights Agent across Experience Cloud applications
+## Access Data Insights Agent across CX Enterprise applications
 
-Adobe Experience Platform Agent Orchestrator allows you to access the functionality of Data Insights Agent in multiple Adobe Experience Cloud applications, such as Adobe Journey Optimizer and Real-Time CDP. 
+Adobe Experience Platform Agent Orchestrator allows you to access the functionality of Data Insights Agent in multiple CX Enterprise applications, such as Adobe Journey Optimizer and Real-Time CDP. 
 
 Agent Orchestrator interprets your request, determines which specialized agents are needed, and orchestrates them to deliver the right response. It keeps track of context across multi-turn interactions, so you can build on prior queries naturally. 
 

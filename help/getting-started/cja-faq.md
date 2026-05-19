@@ -214,7 +214,7 @@ If you plan to ingest Adobe Analytics data through the [Adobe Analytics source c
 
 ## 8. [!UICONTROL Adobe Analytics] components
 
-+++**Can I share/publish [!UICONTROL audiences] from [!DNL Customer Journey Analytics] to Experience Platform Real-Time CDP, or other Experience Cloud applications?**
++++**Can I share/publish [!UICONTROL audiences] from [!DNL Customer Journey Analytics] to Experience Platform Real-Time CDP, or other CX Enterprise applications?**
 
 You can [create and publish audiences](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish) identified in Customer Journey Analytics to Real-time Customer Profile in Adobe Experience Platform for customer targeting and personalization.
 
@@ -275,7 +275,7 @@ Read more about the [implications of dataset and connection deletion](https://ex
 
 ## 12. Regional data collection
 
-The Adobe Experience Cloud uses Regional Data Collection (RDC) so that interactions between your visitors and Adobe and non-Adbobe solutions occur as close to your visitors as possible. Once data is collected regionally at a Data Collection Center (DCC, also known as Edge site, part of the Platform Edge Network), it is forwarded over a secure connection to the relevant solutions based on the configuration of your datastream and/or event forwarding.
+The Adobe CX Enterprise uses Regional Data Collection (RDC) so that interactions between your visitors and Adobe and non-Adbobe solutions occur as close to your visitors as possible. Once data is collected regionally at a Data Collection Center (DCC, also known as Edge site, part of the Platform Edge Network), it is forwarded over a secure connection to the relevant solutions based on the configuration of your datastream and/or event forwarding.
 
 ![Data flow using Edge Networks](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
 

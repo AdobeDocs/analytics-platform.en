@@ -33,12 +33,12 @@ Some firewall configurations block domains that Customer Journey Analytics rely 
 
 {style="table-layout:auto"}
 
-## Adobe Experience Cloud domains
+## CX Enterprise domains
 
-In addition to the above domains, the Adobe Experience Cloud relies on several domains for data collection and exporting reports. See [Domains used by the Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains) for this list of domains.
+In addition to the above domains, CX Enterprise relies on several domains for data collection and exporting reports. See [Domains used by CX Enterprise](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains) for this list of domains.
 
 >[!MORELIKETHIS]
 >
 >[IP addresses used by Customer Journey Analytics](ip-addresses.md)
 >
->[Domains used by the Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)
+>[Domains used by CX Enterprise](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)
