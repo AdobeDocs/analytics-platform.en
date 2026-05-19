@@ -28,8 +28,6 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-    internal-label: Privacy
 ---
 # B2B account stitching
 
@@ -39,7 +37,7 @@ Without account stitching, any event that does not contain an account ID is drop
 
 >[!NOTE]
 >
->B2B account stitching requires that the functionality is available in your environment before you can configure the functionality.
+>B2B account stitching requires that you are entitled to the [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md) in your environment before you can configure the functionality.
 
 Account stitching performs the following operations on your datasets:
 
