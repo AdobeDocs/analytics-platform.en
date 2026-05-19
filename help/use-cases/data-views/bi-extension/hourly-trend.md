@@ -5,16 +5,25 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: facce2d4-b729-46c0-a049-8f730220d8d2
-TQID: https://experienceleague.adobe.com/Am5R7LS2hVIIWe5zeqSlcsCk9-M1k9MDqmLEwj7F0QQ
+autotag-review: '2026-05-19T09:44:47.922Z'
+TQID: 'https://experienceleague.adobe.com/hTM-x-QidEW5q-tZwsVM7TF6l1JJJWKCf9cToYaCxj8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
     internal-label: Analysis Workspace
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+subfeature_v2:
+  - id: f24857a4-4b64-4b25-b237-d43026362144
+    internal-label: BI extension
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
 ---
 # Hourly trend
 

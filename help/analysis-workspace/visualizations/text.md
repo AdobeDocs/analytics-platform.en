@@ -4,16 +4,23 @@ title: Text
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-TQID: https://experienceleague.adobe.com/CfAN0nQ5YJJhIv5jg6L2cMteeyBCfMuHe6M2xAgZgu8
+autotag-review: '2026-05-19T08:27:12.586Z'
+TQID: 'https://experienceleague.adobe.com/Fvc9q9PfWlv92WFWVq9LG7B2eahHJaxCLPikqjqn9Y4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
     internal-label: Analysis Workspace
+subfeature_v2:
+  - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
 ---
 # Text {#text-visualization}
 

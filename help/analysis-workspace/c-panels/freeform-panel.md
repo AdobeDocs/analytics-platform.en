@@ -4,7 +4,8 @@ title: Freeform Panel
 feature: Panels
 exl-id: 4e1d5d72-da59-419a-835e-a3c90f1362b4
 role: User
-TQID: https://experienceleague.adobe.com/RzE8ggrOGtidJ8OWUnkL8aOcKQRtQ-4gnYaTJKSdQWY
+autotag-review: '2026-05-19T08:23:38.570Z'
+TQID: 'https://experienceleague.adobe.com/cZsswEIick62SyA-ZKmthmAg9LIc5kLl0lH6lCUG8EM'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -13,9 +14,15 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
     internal-label: Components
+subfeature_v2:
+  - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
 ---
 # Freeform panel
 

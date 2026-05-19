@@ -4,13 +4,17 @@ description: Learn how to view and manage Customer Journey Analytics audit logs.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-TQID: https://experienceleague.adobe.com/3oW5GW8jG-YJSoHP7zeBaenJXWG9yC8GZI-VEed93b0
+autotag-review: '2026-05-19T07:58:20.300Z'
+TQID: 'https://experienceleague.adobe.com/eI0cv42QWTm0NqS-4FTuudTDefQ-MZBUMFsyy5-VLaM'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
 feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-    internal-label: Analysis Workspace
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
+subfeature_v2:
+  - id: c1cf8502-455a-452a-9f49-d22dfdff8033
+    internal-label: Audit logs
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -21,6 +25,8 @@ topic_v2:
     internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
 ---

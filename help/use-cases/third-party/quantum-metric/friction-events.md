@@ -5,13 +5,19 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-TQID: https://experienceleague.adobe.com/mJkJFAjgA0UNGgzwLLfIPrs1Z-GGByvS8f3B16CANeg
+autotag-review: '2026-05-19T09:50:19.249Z'
+TQID: 'https://experienceleague.adobe.com/ez4GO2CJ0g-nOGI4GlYrZQhuGKxQRvWoXPe4vcHGznU'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
     internal-label: Analysis Workspace
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+subfeature_v2:
+  - id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
+    internal-label: Analytics integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -22,6 +28,8 @@ topic_v2:
     internal-label: Implementation
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
     internal-label: Behavioral data
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2

@@ -5,16 +5,27 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: a357facb-d536-4c81-847c-a6f0d3f041e7
-TQID: https://experienceleague.adobe.com/0UmFc0QhasumJEU9QZNFErDDgOmG--9Y2ZDUbS7suUQ
+autotag-review: '2026-05-19T09:42:01.927Z'
+TQID: 'https://experienceleague.adobe.com/ENlUXhLFg20Jrf28iUbb82Ux2WHJw7uh-t4J3zlmaqE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
     internal-label: Analysis Workspace
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+subfeature_v2:
+  - id: f24857a4-4b64-4b25-b237-d43026362144
+    internal-label: BI extension
+  - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
 ---
 # Visualizations
 
