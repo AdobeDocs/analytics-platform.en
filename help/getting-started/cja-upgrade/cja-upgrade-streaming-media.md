@@ -5,19 +5,27 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: b807099d-a61d-48f9-9fec-94ecc6b76213
-TQID: https://experienceleague.adobe.com/CmL9Bz88xTynv-W-wfo3PhTjPga572pSw6URbThcQRY
+autotag-review: '2026-05-19T08:18:34.978Z'
+TQID: 'https://experienceleague.adobe.com/5fnNWKEYtxXNNwnWpsUcoAMUqyF8Izk2gItoL1GCQSQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
     internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
 ---
 # Set up Streaming Media Collection for Customer Journey Analytics {#streaming-media-setup}
 

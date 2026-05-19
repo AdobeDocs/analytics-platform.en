@@ -5,13 +5,19 @@ feature: Guided Analysis
 keywords: product analytics
 exl-id: 2e004894-dc1b-42a7-a060-240f0151b2f2
 role: User
-TQID: https://experienceleague.adobe.com/x0u5VmSvmXUIkXfkXUzfRHWxb592YcNmkehEgHhjp6I
+autotag-review: '2026-05-19T09:14:30.932Z'
+TQID: 'https://experienceleague.adobe.com/HHtmhZ33F9iyQFlATLTiT8kTII25n11Xxfla6LRQMCE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
     internal-label: Analysis Workspace
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+subfeature_v2:
+  - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+    internal-label: Guided analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
