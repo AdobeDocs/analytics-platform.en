@@ -618,7 +618,7 @@ Location (down to 1 m)
 
 +++**`mcvisid`**
 
-CX Enterprise Visitor ID. 128-bit number consisting of two concatenated 64-bit numbers padded to 19 digits.
+Experience Cloud Visitor ID. 128-bit number consisting of two concatenated 64-bit numbers padded to 19 digits.
 
 +++
 
