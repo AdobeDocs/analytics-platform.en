@@ -42,7 +42,7 @@ With the *Cross-IMS data mapping* feature, you can request Adobe to map data. Th
 
 | Illustration | Explanation  |
 |---|---|
-| ![Map data across multiple IMS organizations](/help/getting-started/assets/map-data-across-ims-orgs.svg) | This mapping allows you to report on report suites that exist in IMS organization 1, IMS organization 2, and IMS organization 3 from one connection in Customer Journey Analytics that is provisioned within IMS organization 3. |
+| ![Map data across multiple IMS organizations](/help/getting-started/assets/map-data-across-ims-orgs.png) | This mapping allows you to report on report suites that exist in IMS organization 1, IMS organization 2, and IMS organization 3 from one connection in Customer Journey Analytics that is provisioned within IMS organization 3. |
 
 {style="table-layout:fixed"}
 

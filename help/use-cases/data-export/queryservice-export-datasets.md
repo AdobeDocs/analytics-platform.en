@@ -48,7 +48,7 @@ Exporting data using Query Service (Data Distiller) and Dataset export consists 
 - defining a **scheduled query** that generates the data for your data feed as an output dataset ![output dataset](../assets/output-dataset.svg), using **Query Service**.
 - defining a **scheduled dataset export** that exports the output dataset to a cloud storage destination, using **Dataset export**.
 
-![Data feed](../assets/queryservice-export-datasets.svg)
+![Data feed](../assets/queryservice-export-datasets.png)
 
 
 ## Prerequisites
