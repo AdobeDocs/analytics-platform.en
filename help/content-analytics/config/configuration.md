@@ -36,10 +36,9 @@ This article documents, on a high level, how to configure Content Analytics.
 
 Before you configure Content Analytics, you must ensure the [prerequisites](#prerequisites) are met, you do have the required [access control](#access-control), and you are aware of the [limitations](#limitations).
 
+The steps to configure Content Analytics are:
 
-High-level steps
-
-![Configuration of Content Analytics](../assets/aca-configuration.svg){zoomable="yes"}
+![Configuration of Content Analytics](../assets/aca-configuration.png){zoomable="yes"}
 
 1. Use the Content Analytics [guided configuration](guided.md) wizard to guide you through all steps required to set up the prerequisites for a configuration of Content Analytics. You can save your configurations at any time and return later.
 1. Once you are comfortable with the configuration values, you can implement the configuration. This implementation creates all the required artifacts, based on what you have configured in the wizard. 

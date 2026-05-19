@@ -158,7 +158,7 @@ Consider the following when working with audiences that are published from Custo
 
 At several points prior to, during, and after audience publishing, latencies can occur. Here is an overview of possible latencies.
 
-![Latencies in audience publishing as described in this section.](assets/latency-diagram.svg)
+![Latencies in audience publishing as described in this section.](assets/latency-diagram.png)
 
 |  | Latency point | Latency duration |
 | --- | --- | --- |

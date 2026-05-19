@@ -26,7 +26,7 @@ This article outlines how the [!DNL Customer Journey Analytics Export datasets] 
 
 Exporting data using [!DNL Experience Platform Export datasets] allows you to export data from your Customer Journey Analytics data views to any cloud storage destination.
 
-![BI extension](../assets/export-datasets.svg)
+![BI extension](../assets/export-datasets.png)
 
 ## More information
 

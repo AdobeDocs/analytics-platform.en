@@ -60,7 +60,7 @@ The relationship between the B2B lookup schemas, profile schema, and event schem
 
 To ensure a proper setup of a connection that supports person-based lookups of your B2B data, use the following illustration for an overview and follow these steps:
 
-![B2B schemas annotated](assets/b2b-schemas-annotated.svg)
+![B2B schemas annotated](assets/b2b-schemas-annotated.png)
 
 1. Add datasets from the table above to your connection.
 1. For each lookup dataset that you add to your connection, you must explicitly define the relationship to an event dataset using the **[!UICONTROL Key]** and the **[!UICONTROL Matching key]** in the **[!UICONTROL Edit dataset]** dialog. 

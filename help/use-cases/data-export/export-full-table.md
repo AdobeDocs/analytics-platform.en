@@ -27,7 +27,7 @@ This article outlines how the [!DNL Customer Journey Analytics BI extension] can
 
 Exporting data using [!DNL Customer Journey Analytics Full Table Export] allows you to export data from your freeform tables in Customer Journey Analytics Analysis Workspace.
 
-![BI extension](../assets/export-full-table.svg)
+![BI extension](../assets/export-full-table.png)
 
 ## More information
 

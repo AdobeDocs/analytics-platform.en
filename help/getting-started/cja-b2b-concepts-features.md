@@ -60,7 +60,7 @@ Customer Journey Analytics is built around the concept of three containers: Pers
 
 You can redefine how these containers are named when you configure a data view but the hierarchy and relationships between the containers is predetermined. The Session container is generated based on how you define a session in the [Session settings](/help/data-views/session-settings.md) in your data view.
 
-![B2C](assets/b2c-containers.svg){zoomable="yes"}
+![B2C](assets/b2c-containers.png){zoomable="yes"}
 
 
 ### B2B containers
@@ -69,7 +69,7 @@ In Customer Journey Analytics B2B Edition, an Account container is added to the 
 
 The hierarchy and relationships between the containers is predetermined. Opportunity, Buying Group and Person are all sibling containers of the Account container. In that hierarchy the Session container between the Person container and Event container is generated based on how you define a session in the [Session settings](/help/data-views/session-settings.md) in your data view. Additional session containers, for example between the Account container and Event container, are currently not generated and supported. See the table below for a description and basic usage of the B2B containers.
 
-![B2B](assets/b2b-containers.svg){zoomable="yes"}
+![B2B](assets/b2b-containers.png){zoomable="yes"}
 
 | B2B container | Description<br/>Basic use case |
 |---|---|
@@ -114,7 +114,7 @@ The Customer Journey Analytics B2B distinguishes between the following data type
 
 An example account-based connection in the Customer Journey Analytics B2B Edition:
 
-![Example account-based connection](assets/b2b-datasets.svg)
+![Example account-based connection](assets/b2b-datasets.png)
 
 Customer Journey Analytics B2B Edition offers the [Connection map](/help/connections/create-connection.md#connection-map) interface to provide you with an overview of the relationships between datasets in your connection.
 

@@ -75,4 +75,4 @@ Non-transformed datasets, for schemas based on the four schema classes mentioned
 
 The transformation modifies the dataset of each of the four schema classes (orange in the illustration below) so that for each person identifier an (object) array is created for the relevant data (accounts, opportunities, marketing lists or campaigns) in the lookup datasets (pink in the illustration below). This transformation allows for a correct working of person id based lookups.
 
-![B2B schemas](./assets/b2b-schemas.svg)
+![B2B schemas](./assets/b2b-schemas.png)

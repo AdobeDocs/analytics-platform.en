@@ -30,7 +30,7 @@ You have several options when ingesting data into Customer Journey Analytics. So
 
 The high-level Customer Journey Analytics architecture is shown here:
 
-![Customer Journey Analytics architecture](/help/getting-started/assets/cja-overview.svg)
+![Customer Journey Analytics architecture](/help/getting-started/assets/cja-overview.png)
 
 This architecture illustrates how Custoner Journey Analytics allows you to:
 
