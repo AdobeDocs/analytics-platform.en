@@ -41,8 +41,7 @@ topic_v2:
 
 The ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Trends]** analysis provides valuable insight around the performance of your product or the behavior of your users over time. The horizontal axis of this report is a time interval, while the vertical axis measures your desired events.
 
-
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/trends)
+>[!VIDEO](https://video.tv.adobe.com/v/3421666/?quality=12&learn=on)
 
 ## Use cases
 

@@ -57,8 +57,7 @@ Similar to the [Active](active-growth.md) analysis, users are defined as the fol
 >
 >Repeat users are not factored into this calculation, as they do not represent any gain or loss of users.
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/net-growth)
-
+>[!VIDEO](https://video.tv.adobe.com/v/3421664/?quality=12&learn=on)
 
 ## Use cases
 
