@@ -33,7 +33,7 @@ topic_v2:
 
 B2B account stitching enriches your event datasets with account information and enables complete analysis across the full customer journey in Customer Journey Analytics. When events lack an account ID, which Customer Journey Analytics B2B edition requires for ingestion, account stitching derives and adds that information automatically using a [person-to-account mapping dataset](#prerequisites) you provide.
 
-Without account stitching, any event that does not contain an account ID is dropped during ingestion. ccount stitching eliminates this barrier by looking up the account associated with the person on each event, adding the account ID both as the event is ingested and retroactively.
+Without account stitching, any event that does not contain an account ID is dropped during ingestion. Account stitching eliminates this barrier by looking up the account associated with the person on each event, adding the account ID both as the event is ingested and retroactively.
 
 >[!NOTE]
 >
