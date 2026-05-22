@@ -57,6 +57,7 @@ Consider the following implications before you delete datasets or batches, or wh
 
 | Action | Implications |
 | --- | --- |
+| Delete one or more records from a dataset in [!UICONTROL Experience Platform] | The records are deleted from the  Customer Journey Analytics connections that have the dataset defined as part of the connection configuration. |
 | Delete a dataset in [!UICONTROL Experience Platform] | The data flow from that dataset in Experience Platform stops to any connections that include that dataset. Any data from that dataset is automatically deleted from the associated Customer Journey Analytics connections. |
 | Delete a batch from a dataset in [!UICONTROL Experience Platform] | If a batch is deleted from an [!UICONTROL Adobe Experience Platform] dataset, the same batch is removed from any [!UICONTROL Customer Journey Analytics] connections that contain that specific batch. [!UICONTROL Customer Journey Analytics] is notified of batches that were deleted in [!UICONTROL Adobe Experience Platform]. |
 | Delete a batch from [!UICONTROL Experience Platform] **while it is being ingested** into [!UICONTROL Customer Journey Analytics] | If there is only one batch in the dataset, no data or partial data from that batch appears in [!UICONTROL Customer Journey Analytics]. The ingestion is rolled back. If, for example, there are 5 batches in the dataset and 3 of them have already been ingested when the fourth batch was deleted, data from those 3 batches appears in [!UICONTROL Customer Journey Analytics]. |
