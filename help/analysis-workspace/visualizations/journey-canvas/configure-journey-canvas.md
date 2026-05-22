@@ -94,6 +94,15 @@ See [Journey canvas overview](/help/analysis-workspace/visualizations/journey-ca
 
 ## Configure visualization settings
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_percentage_value"
+>title="Choose how percentages are calculated"
+>abstract="The percentages shown on each node are based on the primary and secondary metrics you configure. You can choose whether the percentages relate to the start node, the previous node, or all data in the report suite."
+
+<!-- markdownlint-enable MD034 -->
+
 Various configuration options are available in the Journey canvas header. 
 
 To configure settings for the Journey canvas visualization:
