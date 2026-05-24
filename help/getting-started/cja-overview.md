@@ -42,7 +42,7 @@ Customer Journey Analytics is Adobe's next-generation Analytics solution that le
 
 The high-level Customer Journey Analytics architecture is shown here:
 
-![Customer Journey Analytics architecture](assets/cja-overview.svg)
+![Customer Journey Analytics architecture](assets/cja-overview.png)
 
 This architecture illustrates how Custoner Journey Analytics allows you to:
 

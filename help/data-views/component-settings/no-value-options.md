@@ -5,19 +5,25 @@ exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-TQID: https://experienceleague.adobe.com/FGxkqIQn7EmtZIT4LFiCelgSpkRY67KnkNKlrn6gxVU
+autotag-review: '2026-05-19T09:10:31.309Z'
+TQID: 'https://experienceleague.adobe.com/aE7qKzO2RI0sR28mTHUG5dCwO1AsAHFZlzdX-SjZeG4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
 feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-    internal-label: Analysis Workspace
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+subfeature_v2:
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
 ---
 # No Value Options component settings {#no-value-options-component-settings}
 

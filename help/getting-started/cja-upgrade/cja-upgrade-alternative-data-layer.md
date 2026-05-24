@@ -5,13 +5,19 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 3a0d03d1-def0-45e6-8eb2-115b88497e6d
-TQID: https://experienceleague.adobe.com/86uAMXhpBXaVnjA8Zh2G7Ail-XKR2HjrYNyge5BRMRc
+autotag-review: '2026-05-19T08:09:26.880Z'
+TQID: 'https://experienceleague.adobe.com/IsYrCVRcY1cd2xSYV7A-iJ2jx8Ku-oZ-BtHu8If-55Y'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
     internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -20,8 +26,12 @@ topic_v2:
     internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
     internal-label: Measurement
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
@@ -70,7 +80,7 @@ Following are the advantages and disadvantages of using this upgrade alternative
 
 | Advantages | Disadvantages |
 |----------|---------|
-| <ul><li>**Provides all the advantages of hosting data in Experience Edge Network**: <p>These advantages include:</p><ul><li>Highly performant reporting and data availability because Adobe Experience Platform is built to power [real-time personalization use cases](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>Consolidate implementation for Adobe Experience Cloud data collection between other Experience Cloud products (AJO, RTCDP, and so forth)</li><li>Not reliant on Adobe Analytics nomenclature (prop, eVar, event, and so forth)</li></ul><li>**Uses your current data layer logic**: This method uses your current data layer logic in place of a conventional Web SDK implementation. While this approach requires some configuration, it does not require a completely new implementation from scratch and it requires no populating of data elements or tag rules. It allows you to map data from your data layer to XDM, rather than populating an XDM object from scratch.</li></ul> | <ul><li>**Requires mapping to send data to Platform**: When your organization is ready to use Customer Journey Analytics, you must send data to a data set in Adobe Experience Platform. <p>Because this option allows you to put your entire client-side data layer into the data object and send it to Adobe, this results in a significant amount of data that Adobe can't readily interpret. To allow Adobe to interpret the data, you must use datastream mapping to map every individual field to the desired XDM field.</p></li><li>**Rigid implementation**: The implementation is constrained to what the data layer provides at the time the hit is sent. This might be acceptible for organizations with basic data needs, but most organizations should avoid this type of rigid implementation in favor of a more flexible implementation that allows for the populating of data elements.</li><li>**Future changes are more difficult to implement**: Any field you add to your data later in the future must be mapped to XDM in the datastream.</li></ul> |
+| <ul><li>**Provides all the advantages of hosting data in Experience Edge Network**: <p>These advantages include:</p><ul><li>Highly performant reporting and data availability because Adobe Experience Platform is built to power [real-time personalization use cases](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>Consolidate implementation for Adobe CX Enterprise data collection between other CX Enterprise products (AJO, RTCDP, and so forth)</li><li>Not reliant on Adobe Analytics nomenclature (prop, eVar, event, and so forth)</li></ul><li>**Uses your current data layer logic**: This method uses your current data layer logic in place of a conventional Web SDK implementation. While this approach requires some configuration, it does not require a completely new implementation from scratch and it requires no populating of data elements or tag rules. It allows you to map data from your data layer to XDM, rather than populating an XDM object from scratch.</li></ul> | <ul><li>**Requires mapping to send data to Platform**: When your organization is ready to use Customer Journey Analytics, you must send data to a data set in Adobe Experience Platform. <p>Because this option allows you to put your entire client-side data layer into the data object and send it to Adobe, this results in a significant amount of data that Adobe can't readily interpret. To allow Adobe to interpret the data, you must use datastream mapping to map every individual field to the desired XDM field.</p></li><li>**Rigid implementation**: The implementation is constrained to what the data layer provides at the time the hit is sent. This might be acceptible for organizations with basic data needs, but most organizations should avoid this type of rigid implementation in favor of a more flexible implementation that allows for the populating of data elements.</li><li>**Future changes are more difficult to implement**: Any field you add to your data later in the future must be mapped to XDM in the datastream.</li></ul> |
 
 {style="table-layout:auto"}
 

@@ -6,13 +6,19 @@ feature: Use Cases
 role: User, Admin
 badgePremium: label="B2B Edition"
 exl-id: 7c16cc62-5032-44a2-92e4-4a1c320f17aa
-TQID: https://experienceleague.adobe.com/vhurU1no4Ab6xH0XoOrSwXPsKHiN6ufF-ZX-zMkVa90
+autotag-review: '2026-05-19T09:36:35.145Z'
+TQID: 'https://experienceleague.adobe.com/VwF3LYuHBjTf9L1OvwAO3Xk-kExVwiCJL2BbbiOoaQU'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
+  - id: d3f42e9e-bb51-4077-a732-358b801d8b29
+    internal-label: Customer Journey Analytics B2B
 feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases, Use cases (CJA)
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -23,6 +29,8 @@ topic_v2:
     internal-label: Reporting
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
     internal-label: Customer engagement
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
 ---

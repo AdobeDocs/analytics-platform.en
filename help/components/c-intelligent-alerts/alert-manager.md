@@ -49,7 +49,9 @@ The Alerts manager has the following interface elements:
 
 ### Alerts list
 
-The alerts list ➊ displays all the alerts that you own, the alerts that have been scoped to all your projects, and the alerts that have been shared with you. The list has the following columns:
+The alerts list ➊ displays the alerts that you have created. If you are an administrator, you see all alerts. 
+
+The list has the following columns:
 
 | Column | Description |
 |---|---|
@@ -58,7 +60,7 @@ The alerts list ➊ displays all the alerts that you own, the alerts that have b
 | **[!UICONTROL Type]** | Shows whether the  alert is a Customer Journey Analytics data alert or a Server call usage alert. |
 | **[!UICONTROL Enabled]** | Indicates whether the alert is enabled or disabled. |
 | **[!UICONTROL Data view]** | The data views that this alert applies to.  |
-| **[!UICONTROL Owner]** | The owner of the alert. As a non-administrator, you only see alerts you own or those that are shared with you. |
+| **[!UICONTROL Owner]** | The owner of the alert. As a non-administrator, you only see alerts that you own. An administrator can see all alerts. |
 | **[!UICONTROL Tags]** | The tags for this alert. |
 | **[!UICONTROL Expiration Date]** | The date and time when the alert is set to expire. |
 | **[!UICONTROL Date modified]** | The date and time that the alert was last modified. |

@@ -65,7 +65,7 @@ Real-time reporting uses a consolidated dataset that is completely separate from
 * Real-time reporting on a consolidated dataset that contains up to 24 hours of rolling data.
 * Standard reporting on the consolidated dataset that contains up to 13 months of rolling data (or longer in case you have licensed the Extended Data Capacity Add-on).
 
-![Real-time reporting](assets/real-time-reporting-latencies.svg){zoomable="yes"}
+![Real-time reporting](assets/real-time-reporting-latencies.png){zoomable="yes"}
 
 ### Latencies
 

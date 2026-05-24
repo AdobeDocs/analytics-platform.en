@@ -2,18 +2,27 @@
 title: Product usage opt-out settings
 description: Manage opt-out settings for individual users within your organization.
 exl-id: 0ea24582-bab8-4a76-ac00-7c265423e8bb
-TQID: https://experienceleague.adobe.com/Z0CR6bB6k0-bR3q2OPs11FcHHDy948UuYIqbX-kwdcg
+autotag-review: '2026-05-19T09:31:49.294Z'
+TQID: 'https://experienceleague.adobe.com/O67EiLS9ltB20iQ3d4mxlDcrwR06-r9SmbXZJ37slJs'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
 feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: a67cb189-a535-41f6-afa2-448f39c4759f
+    internal-label: Access control
+  - id: cc5596a7-18f9-4e6c-87eb-ce3d0a9efb66
+    internal-label: User management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
 ---
 # Product usage opt-out settings {#product-usage-opt-out-settings}
 
