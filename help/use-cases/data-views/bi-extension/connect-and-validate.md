@@ -355,7 +355,7 @@ Jupyter Notebook supports the following scenarios for the `FLATTEN` parameter. S
 
 1. Start RStudio.
 1. Create a new R Markdown file, or download [this example R markdown file](../assets/BI-Extension.Rmd.zip).
-1. In your first chunk, enter the following statements between ` ```{r} ` and ` ``` `. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the values required for the various parameters, like `host`, `dbname`, and `user`. For example:
+1. In your first chunk, enter the following statements. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the values required for the various parameters, like `host`, `dbname`, and `user`. For example:
    
    ```R
    library(rstudioapi)
@@ -376,7 +376,7 @@ Jupyter Notebook supports the following scenarios for the `FLATTEN` parameter. S
 
    ![RStudio config step 1](../assets/rstudio-config-step1.png)
 
-1. Create a new chunk and enter the following statements between ` ``` {r} ` and ` ``` `.
+1. Create a new chunk and enter the following statements.
 
    ```R
    con <- dbConnect(
@@ -393,7 +393,7 @@ Jupyter Notebook supports the following scenarios for the `FLATTEN` parameter. S
 1. Run the chunk. You should see no output if the connection is successful.
 
 
-1. Create a new chunk and enter the following statements between ` ``` {r} ` and ` ``` `.
+1. Create a new chunk and enter the following statements.
 
    ```R
    views <- dbListTables(con)
@@ -403,7 +403,7 @@ Jupyter Notebook supports the following scenarios for the `FLATTEN` parameter. S
 1. Run the chunk. You should see `character(0)` as the only output.
 
 
-1. Create a new chunk and enter the following statements between ` ``` {r} ` and ` ``` `.
+1. Create a new chunk and enter the following statements.
 
    ```R
    glimpse(dv)
