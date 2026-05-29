@@ -92,7 +92,7 @@ Graph-based stitching is a viable solution to link Marketo and Customer Journey 
 * Graph-based stitching deterministically bridges ECID to Munchkin ID, email or any other ID available in the Marketo data.
 * Graph based stitching uses the explicitly configured Identity Graph linking rules and namespaces. 
 
-To verify this ID strategy, you should run a controlled graph-based pilot.
+To verify this ID strategy, you should run a controlled graph-based stitching pilot.
 
 1. Add ECID as a custom field in Marketo and add the custom field to the munckin.js client-side JavaScript code for Marketo Engage data collection.
 1. Set up a temporary Customer Journey connection that includes both at least a Marketo dataset and a web event dataset.
