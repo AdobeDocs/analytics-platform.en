@@ -448,6 +448,10 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Validate stitching](/help/stitching/validate.md)
   + [Frequently Asked Questions](/help/stitching/faq.md)  
 
++ Total population reporting {#tpr}
+  + {hide-from-toc} [Overview](/help/tpr/tpr.md)
+
+
 + Adobe integrations {#integrations}
   + [Overview](/help/integrations/overview.md)
   + [Integrate Adobe Analytics](/help/integrations/aa.md)
