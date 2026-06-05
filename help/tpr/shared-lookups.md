@@ -6,7 +6,6 @@ feature: Connections
 role: Admin
 hide: true
 ---
-
 # Shared lookups
 
 In Customer Journey Analytics, a lookup dataset enriches your event data with additional context. For example, a product catalog dataset that adds product names, categories, and prices to your purchase events. Or a campaign metadata dataset that adds campaign details to your marketing events.

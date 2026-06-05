@@ -4,8 +4,8 @@ description: Use total population reporting in Customer Journey Analytics to ana
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
+hide: true
 ---
-
 # Total population reporting
 
 Total population reporting introduces the ability to analyze and report on entities defined in profile and lookup datasets and beyond time-based series of events from event datasets. This ability enables new classes of queries, metrics, and audience definitions that reflect the full scope of a business's customer base.
