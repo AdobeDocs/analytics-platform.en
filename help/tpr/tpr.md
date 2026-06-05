@@ -36,9 +36,10 @@ Total population reporting enables Customer Journey Analytics to report on all e
 * **Profile-based queries**: Analyze attributes (irrespective of events) of profiles (all people, accounts, opportunities, and buying groups).
 * **Profile minus event queries**: Identify profiles (all people, accounts, opportunities, and buying groups) that did not perform a specific action or experience during the reporting window.
 * **Shared lookups**: Support reuse of lookup datasets across multiple entities to reduce ingest costs and improve performance.
+
 <!--
 * **Classification-based queries**: (future enhancement) Analyze lookup datasets such as product catalogs, including items not tied to events.
-* -->
+-->
 
 
 

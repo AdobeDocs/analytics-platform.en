@@ -321,9 +321,9 @@ Instead of match by container, you can also opt to match by field. You then dire
 
 | Opportunity ID | Name | Account ID ![Link](/help/assets/icons/Link.svg) | Global Account ID | Status | Value |
 |---|---|---|---|---|---:|
-| O-432 | Acme Express | **A-123** | A-123 | Open | **$2M** | 
+| O-432 | Acme Express | **A-123** | A-123 | Open | **$2M** |
 | O-543 | Acme CC | **A-123** | A-123 | Closed | **$1M** |
-| O-765 | Acme DX | **A-123** | A-123 | Open | **$8M** | 
+| O-765 | Acme DX | **A-123** | A-123 | Open | **$8M** |
 | O-876 | BigCo CC |**A-456** | A-789 | Open | **$7M** |
 | O-987 | BigCo DX | **A-456** | A-789 | Open | **$16M** |
 | O-888 | Giant DX | **A-789** | A-789 | Open | **$13M** |
