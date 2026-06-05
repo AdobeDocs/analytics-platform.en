@@ -114,3 +114,7 @@ The following considerations apply to system keys and fields:
 
 * The primary key, version descriptor, and timestamp descriptor need to be root level fields in the relational XDM schema. Use [field mapping](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) during ingestion to support this requirement.
 * You can omit appropriate source fields during the [mapping phase](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema).
+
+## Batch size of mirrored data
+
+For any mirrored dataset that is configured as part of a connection, you must ensure that each of the   batches to ingest data for the mirrorred dataset do not exceed 100GB. See the [Guardrails for batch ingestion](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"} for more details.

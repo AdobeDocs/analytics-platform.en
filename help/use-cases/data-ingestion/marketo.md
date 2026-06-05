@@ -61,34 +61,72 @@ See [reporting comparison](#reporting-comparison) for more details.
 >
 
 
-To report on Marketo Engage data in Customer Journey Analytics:
+To report on Marketo Engage data in Customer Journey Analytics, follow these steps:
 
-+++ 1. Map Marketo source data fields to their XDM targets
++++Select ID strategy
+
+If you want to ingest Marketo activity data into Customer Journey Analytics you need to select an appropriate ID strategy to ensure Marketo data can be linked to Customer Journey Analytics data.
+
+Marketo data does not natively contain an ECID, but the ECID field can be added as a custom field that is collected with the `munchkin.js` library. This addition does create a shared identifier between Marketo and existing Customer Journey Anaytics web data.
+
+To link Marketo and Customer Journey Analytics data, use [graph-based stitching](/help/stitching/gbs.md) on the relevant datasets. You can use several available IDs, based on your implementation:
+
+* ECID, provided by the Eperience Platform Identity Service
+* Email
+* Munchkin ID, provided by Marketo Engage
+* Reseller ID
+* Dunn & Bradstreet Duns\#
+* Demandbase ID
+* (potentially others)
+
+Graph-based stitching helps in the following ways:
+
+* Keeps a persistend ID on web events.
+* Uses the identity graph to resolve known identities (like email) when possible.
+* If no deterministic match exists, graph-based stitching falls back to the persistent ID, instead of dropping the event.
+
+Graph-based stitching is a viable solution to link Marketo and Customer Journey Analytics data because:
+
+* Web event data has a persistent ID on every row (for example, ECID).
+* Marketo data has reliable IDs in the data with Munckin ID, ECID, and email.
+* Graph-based stitching deterministically bridges ECID to Munchkin ID, email or any other ID available in the Marketo data.
+* Graph based stitching uses the explicitly configured Identity Graph linking rules and namespaces. 
+
+To verify this ID strategy, you should run a controlled graph-based stitching pilot.
+
+1. Add ECID as a custom field in Marketo and add the custom field to the munckin.js client-side JavaScript code for Marketo Engage data collection.
+1. Set up a temporary Customer Journey connection that includes both at least a Marketo dataset and a web event dataset.
+1. Define a narrow data range to bring in a limited but representable amount of data.
+1. Verify the stitching through the setup of a data view and reports in Workspace. See steps below for more information.
+
++++
+
++++Map Marketo source data fields to their XDM targets
 
 Map the [Persons](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) and [Activities](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) objects to their respective XDM schema target fields.
 
 +++
 
-+++ 2. Ingest Marketo data into Adobe Experience Platform
++++Ingest Marketo data into Adobe Experience Platform
 
-Use the [Marketo Engage connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) to bring data from Marketo to Experience Platform and keep this data up to date using Platform-connected applications.
+Use the [Marketo Engage connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) to bring data from Marketo to Experience Platform and keep this data up to date using Experience Patform applications.
 
 +++
 
-+++ 3. Set up a connection to this dataset in Customer Journey Analytics
++++ Set up a connection to this dataset in Customer Journey Analytics
 
 To report on Experience Platform datasets, you first have to establish a connection between datasets in Experience Platform and Customer Journey Analytics. See [Create or edit a connection](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection).
 
 +++
 
 
-+++ 4. Create one or more data views
++++Create one or more data views
 
 A [data view](/help/data-views/data-views.md) is a container specific to Customer Journey Analytics that lets you determine how to interpret data from a connection. It specifies all dimensions and metrics available in Analysis Workspace - in this case, metrics and dimensions specific to Marketo. It also specifies which columns those dimensions and metrics obtain their data from. Data views are defined in preparation for reporting in Analysis Workspace. 
 
 +++ 
 
-+++ 5. Report in Analysis Workspace
++++Report in Analysis Workspace
 
 One use case you might explore is: How many web page visits by leads did you have in April-June 2020?
 
