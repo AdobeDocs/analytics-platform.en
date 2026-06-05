@@ -450,7 +450,7 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + Total population reporting {#tpr}
   + {hide-from-toc} [Overview](/help/tpr/tpr.md)
-
+  + {hide-from-toc} [Shared lookups](/help/tpr/shared-lookups.md)
 
 + Adobe integrations {#integrations}
   + [Overview](/help/integrations/overview.md)
