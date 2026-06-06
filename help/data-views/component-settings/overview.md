@@ -179,19 +179,19 @@ The following groups of context labels are available, each with a list of specif
 
 | Name | Description |
 |------|-------------|
-| Content ID | Content ID. |
-| Content Time Spent | Content Time Spent. |
-| Episode | Episode. |
-| Event Type | Event Type. |
-| Media Time Spent | Media Time Spent. |
-| Season | Season. |
-| Seconds Since Last Call | Seconds Since Last Call. |
-| Show | Show. |
-| Time to Start | Time to Start. |
-| Total Buffer Duration | Total Buffer Duration. |
-| Total Pause Duration | Total Pause Duration. |
-| Video Length | Video Length. |
-| Video Name | Video Name. |
+| [Content ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content) | The unique identifier for the content being played. Enables the **[!UICONTROL Content ID]** radio button in the [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. |
+| [Content Time Spent](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/content-time-spent) | Time spent viewing content, excluding ads. Powers the **[!UICONTROL Content Time Spent]** advanced setting in the [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. |
+| [Episode](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/episode) | Episode number within a series. Enables filtering by episode in the [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. |
+| Event Type | The media event type, such as `media.play` or `media.ping`. Required for Customer Journey Analytics to compute the [Media concurrent viewers](/help/analysis-workspace/c-panels/media-concurrent-viewers.md) derived metric. |
+| [Media Time Spent](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/media-time-spent) | Total time including content, ads, buffering, and pausing. Powers the [Media playback time spent](/help/analysis-workspace/c-panels/media-playback-time-spent.md) panel and the **[!UICONTROL Media Time Spent]** advanced setting in the [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. |
+| [Season](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/season) | Season number within a series. Enables filtering by season in the [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. |
+| Seconds Since Last Call | Time in seconds since the previous heartbeat ping. Required for Customer Journey Analytics to compute the [Media concurrent viewers](/help/analysis-workspace/c-panels/media-concurrent-viewers.md) derived metric, which identifies when a session is still active. |
+| [Show](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/show) | The program or series name. Enables filtering by show in the [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. |
+| [Time to Start](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/time-to-start) | Time from content selection to when playback begins. Included in the [Media playback time spent](/help/analysis-workspace/c-panels/media-playback-time-spent.md) calculation. |
+| [Total Buffer Duration](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/total-buffer-duration) | Total time spent buffering during a session. Included in the [Media playback time spent](/help/analysis-workspace/c-panels/media-playback-time-spent.md) calculation. |
+| [Total Pause Duration](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/total-pause-duration) | Total time spent paused during a session. Included in the [Media playback time spent](/help/analysis-workspace/c-panels/media-playback-time-spent.md) calculation. |
+| [Video Length](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content-length) | Duration of the content in seconds. Required for the **[!UICONTROL Specific content]** mode in the [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. |
+| [Video Name](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content-name) | The display name of the content. Enables the **[!UICONTROL Video Name]** radio button in the [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. |
 
 +++
 
