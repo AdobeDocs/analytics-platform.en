@@ -327,7 +327,7 @@ Instead of match by container, you can also opt to match by field. You then dire
 | O-987 | BigCo DX | **A-456** | A-789 | Open | **$16M** |
 | O-888 | Giant DX | **A-789** | A-789 | Open | **$13M** |
 
-* 3 opportunities for account A-123 (Acme) with a total of **$13M**.
+* 3 opportunities for account A-123 (Acme) with a total of **$11M**.
 * 2 opportunities for account A-456 (BigCo) with a total of **$23M**.
 * 1 opportunity for account A-789 (Giant) with a total of **$13M**.
 
