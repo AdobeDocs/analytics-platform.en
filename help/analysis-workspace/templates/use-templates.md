@@ -188,7 +188,7 @@ To access all available pre-built templates:
 <!--AA only-->
 
 >[!CONTEXTUALHELP]
->id="aa-template--unitsOvertimeReport"
+>id="aa-template--unitsovertimereport"
 >title="View the total number of units purchased within all orders. Data is shown over a period of time and compared with prior periods."
 >abstract="**This can help you** better understand how unit sales are increasing or decreasing over time. You could apply a segment to learn which customers or geographies are purchasing the most units and how those unit sales are trending over time.<br/>**Based on what you learn, you might** do any number of things, like assess the effectiveness of a recently launched marketing campaign by comparing unit sales before and after the campaign launched. Or you might compare year-over-year unit sales during the holidays.<br/>This template uses the Day dimension and the Units metric."
 
@@ -201,32 +201,32 @@ To access all available pre-built templates:
 >abstract="Learn common Analysis Workspace terminology and steps for building your first analysis."
 
 >[!CONTEXTUALHELP]
->id="template--pagesRankedReport"
+>id="template--pagesrankedreport"
 >title="Identify the most popular and least popular pages."
 >abstract="**This can help you** better understand your audience and the kind of information they're most interested in.<br/>**Based on what you learn, you might** do any number of things, like adjust page metadata in order to increase visibility on lesser-viewed pages, or spend time improving the content of your most-viewed pages.<br/>This template uses the Page dimension and the Page Views metric."
 
 >[!CONTEXTUALHELP]
->id="template--pageViewsOvertimeReport"
+>id="template--pageviewsovertimereport"
 >title="View the total number of page views. Data is shown over a period of time and compared with prior periods. "
 >abstract="**This can help you** better understand how traffic on your site might be increasing or decreasing over time.<br/>**Based on what you learn, you might** do any number of things, like assess the effectiveness of a recently launched marketing campaign by comparing site traffic before and after the campaign launched. Or you might compare year-over-year holiday traffic.<br/>This template uses the Day dimension and the Page Views metric."
 
 >[!CONTEXTUALHELP]
->id="template--visitsOvertimeReport"
+>id="template--visitsovertimereport"
 >title="View the total number of visits. Data is shown over a period of time and compared with prior periods."
 >abstract="**This can help you** better understand how traffic on your site might be increasing or decreasing over time.<br/>**Based on what you learn, you might** do any number of things, like assess the effectiveness of a recently launched marketing campaign by comparing site traffic before and after the campaign launched. Or you might compare year-over-year holiday traffic.<br/>This template uses the Day dimension and the Visits metric."
 
 >[!CONTEXTUALHELP]
->id="template--visitorsOvertimeReport"
+>id="template--visitorsovertimereport"
 >title="View the total number of unique visitors. Data is shown over a period of time and compared with prior periods. "
 >abstract="**This can help you** better understand how the reach and audience size of your site is increasing or decreasing over time or compared with a prior period.<br/>**Based on what you learn, you might** do any number of things, like assess whether a recently launched marketing campaign was successful at attracting new people to the site by comparing unique visitors before and after the campaign launched. Or you might compare the number of people to visit the site during the holidays year-over-year.<br/>This template uses the Day dimension and the Unique Visitors metric. "
 
 >[!CONTEXTUALHELP]
->id="template--keyMetricsReport"
+>id="template--keymetricsreport"
 >title="View a report that shows the page views, visits, and unique visitors metrics side by side. Data is shown over a period of time and compared with prior periods."
 >abstract="**This can help you** compare these important metrics to gain a more complete picture of the number of unique people visiting the site, the number of times pages were visited, and the number of sessions.<br/>**Based on what you learn, you might** do any number of things, like assess the average number of pages each person viewed when visiting the site in a given week or month, and how that changed during certain times of the year or before and after marketing campaigns were run. <br/>This template uses the Day dimension, Page Views metric, Visits metric, and the Unique Visitors metric."
 
 >[!CONTEXTUALHELP]
->id="template--siteSectionRankedReport"
+>id="template--sitesectionrankedreport"
 >title="View the most popular or highest performing sections of your site."
 >abstract="**This can help you** better understand which sections of your site are the most visited.<br>**Based on what you learn, you might** do any number of things, like assess which products or services that you provide generate the most interest.<br/>This template uses the Site Section dimension and the Visits metric."
 
@@ -241,32 +241,32 @@ To access all available pre-built templates:
 >abstract="**This can help you** better understand which pages direct the most traffic to a certain page.<br/>**Based on what you learn, you might** do any number of things, like assess whether pages that aren't appearing as previous pages need more prominent links to the current page."
 
 >[!CONTEXTUALHELP]
->id="template--campaignRankedReport"
+>id="template--campaignrankedreport"
 >title="View the links that were most successful in driving traffic to your site."
 >abstract="**This can help you** better understand which tracking codes (and the links they are associated with) were the most used in accessing your site.<br/>**Based on what you learn, you might** do any number of things, like adjust your strategy for where you add links to your site.<br/>This template uses the Tracking Code dimension and the Visits metric."
 
 >[!CONTEXTUALHELP]
->id="template--productsRankedReport"
+>id="template--productsrankedreport"
 >title="View the number of orders by product. Data is shown over a period of time."
 >abstract="**This can help you** understand which products are in the highest or lowest demand.<br/>**Based on what you learn, you might** do any number of things, like adjust your marketing strategies to promote high-performing products or to improve or discontinue under-performing products. You could also adjust your product inventory based on your analysis of the data.<br/>This template uses the Product dimension and the Orders metric."
 
 >[!CONTEXTUALHELP]
->id="template--lastTouchChannelRankedReport"
+>id="template--lasttouchchannelrankedreport"
 >title="View the most recent marketing channels visitors match with during their engagement period (30 days by default)."
 >abstract="**This can help you** understand which marketing channels were most effective at bringing people to your site that result in conversions.<br/>**Based on what you learn, you might** do any number of things, like allocate more resources to high-performing channels, or allocate fewer resources to under-performing channels.<br/>This template uses the Last Touch Channel dimension and the Unique Visitors metric."
 
 >[!CONTEXTUALHELP]
->id="template--lastTouchChannelDetailRankedReport"
+>id="template--lasttouchchanneldetailrankedreport"
 >title="View details about the most recent marketing channels visitors match with during their engagement period (30 days by default)."
 >abstract="**This can help you** understand not only which marketing channels were most effective at bringing people to your site that result in conversions, but details about those marketing channels. For example, if a visitor arrived to your site and matched with the 'Paid search' Marketing channel, you could use the channel detail to see which search engine was used, or which keyword they searched for.<br/>**Based on what you learn, you might** do any number of things, like allocate more resources to high-performing channels, or allocate fewer resources to under-performing channels.<br/>This template uses the Last Touch Channel Detail dimension and the Unique Visitors metric. "
 
 >[!CONTEXTUALHELP]
->id="template--revenueOvertimeReport"
+>id="template--revenueovertimereport"
 >title="View the monetary number of products purchased within all orders. Data is shown over a period of time and compared with prior periods."
 >abstract="**This can help you** understand how revenue is increasing or decreasing over time. You can combine this metric with any dimension to learn which dimension items contributed to revenue.<br/>**Based on what you learn, you might** do any number of things, like project future revenue based on previous trends. You could also add another dimension, like the Tracking code dimension, to learn which campaigns are generating the most revenue.<br/>This template uses the Day dimension and the Revenue metric."
 
 >[!CONTEXTUALHELP]
->id="template--ordersOvertimeReport"
+>id="template--ordersovertimereport"
 >title="View the total number of purchase events. Data is shown over a period of time and compared with prior periods."
 >abstract="**This can help you** better understand how interest in your products and services is increasing or decreasing over time. You could apply a segment to learn which customers or geographies are placing the most orders and how those orders are trending over time.<br/>**Based on what you learn, you might** do any number of things, like assess the effectiveness of a recently launched marketing campaign by comparing orders before and after the campaign launched. Or you might compare year-over-year holiday orders.<br/>This template uses the Day dimension and the Orders metric."
 
@@ -301,17 +301,17 @@ The following templates are available:
 >abstract="**This can help you** better understand what is trending on your site.<br/>**Based on what you learn, you might** do any number of things, like respond to and actively manage the performance of your current marketing content and campaigns."
 
 >[!CONTEXTUALHELP]
->id="aa-template--timeSpentVisitOvertimeReport"
+>id="aa-template--timespentvisitovertimereport"
 >title="View the average time visitors spend on your site during each visit. Data is shown over a period of time and compared with prior periods."
 >abstract="**This can help you** better understand visitor engagement levels and how much time visitors are spending on the site.<br/>**Based on what you learn, you might** do any number of things, like assess whether changes to your site result in visitors spending more time on the site.<br/>This template uses the Day dimension and the Time Spent per Visit (seconds) metric."
 
 >[!CONTEXTUALHELP]
->id="aa-template--timePriorRankedReport"
+>id="aa-template--timepriorrankedreport"
 >title="View the average time users spend prior to a success event."
 >abstract="**This can help you** better understand how much time it takes visitors to perform a desired action, such as making a purchase.<br/>**Based on what you learn, you might** do any number of things, like assess whether changes to your site improve visitors' ability to quickly reach a success event.<br/>This template uses the Time Prior to Event dimension and the Unique Visitors metric."
 
 >[!CONTEXTUALHELP]
->id="aa-template--falloutReport"
+>id="aa-template--falloutreport"
 >title="View where people leave or continue through a predefined sequence of pages."
 >abstract="**This can help you** better understand where people are falling out of the user journey.<br/>**Based on what you learn, you might** do any number of things, like analyze conversion rates through specific processes on your site (such as a purchase or registration process), or analyze correlations between events on your site. (For example, what percentage of people who looked at your privacy policy went on to purchase a product.) You can also use this template to perform side-by-side comparisons of two different segments in the same report.<br/>This template uses the Fallout visualization."
 
@@ -336,32 +336,32 @@ The following templates are available:
 >abstract="**This can help you** better understand the number of times the average person visits your site, the frequency with which people return to the site, and the number of days between return visits.<br/>**Based on what you learn, you might** do any number of things, like analyze what content is most effective at bringing people back to the site.<br/>This template uses the Visits metric and the Unique visitors metric."
 
 >[!CONTEXTUALHELP]
->id="aa-template--reloadsRankedReport"
+>id="aa-template--reloadsrankedreport"
 >title="View the number of times a dimension item was present during a reload. A visitor refreshing their browser is the most common way to trigger a reload."
 >abstract="**This can help you** identify when issues might be occurring on a certain page that would prompt a visitor to reload the page.<br/>**Based on what you learn, you might** do any number of things, like assess which pages have issues that need to be addressed.<br/>This template uses the Reloads metric."
 
 >[!CONTEXTUALHELP]
->id="aa-template--timeSpentPageRankedReport"
+>id="aa-template--timespentpagerankedreport"
 >title="View the average time visitors spend on your site during each visit. Data is shown over a period of time and compared with prior periods."
 >abstract="**This can help you** better understand visitor engagement levels and how much time visitors are spending on the site.<br/>**Based on what you learn, you might** do any number of things, like assess whether changes to your site result in visitors spending more time on the site.<br/>This template uses the Day dimension and the Time Spent per Visit (seconds) metric."
 
 >[!CONTEXTUALHELP]
->id="aa-template--entryPageOriginalRankedReport"
+>id="aa-template--entrypageoriginalrankedreport"
 >title="View the top pages that people access upon first visiting your site over a visitor's lifetime."
 >abstract="**This can help you** better understand which pages are driving the most traffic to your site or understand more about the first impressions visitors have on your site.<br/>**Based on what you learn, you might** do any number of things, like optimize the initial experience people get on the site, or ensure that the pages people first see upon entering your site are welcoming and provide the necessary links to other areas of your site.<br/>This template uses the Sessions metric. It also uses the Bar visualization and the Freeform table visualization."
 
 >[!CONTEXTUALHELP]
->id="aa-template--singlePageVisitsRankedReport"
+>id="aa-template--singlepagevisitsrankedreport"
 >title="View the number of visits that consisted of a single unique page."
 >abstract="**This can help you** better understand visitor engagement levels and how much time visitors are spending on the site.<br/>**Based on what you learn, you might** do any number of things, like assess whether changes to your site result in visitors spending more time on the site.<br/>This template uses the Single page visits dimension."
 
 >[!CONTEXTUALHELP]
->id="aa-template--sitePerformanceOverview"
+>id="aa-template--siteperformanceoverview"
 >title="View performance data for your Adobe Experience Manager site."
 >abstract="**This can help you** better understand value realization from Adobe Experience Manager.<br/>**Based on what you learn, you might** do any number of things, like optimize your Experience Manager settings."
 
 >[!CONTEXTUALHELP]
->id="aa-template--formsPerformanceOverview"
+>id="aa-template--formsperformanceoverview"
 >title="View performance data for your Adobe Experience Manager Forms."
 >abstract="**This can help you** better understand value realization from Adobe Experience Manager.<br/>**Based on what you learn, you might** do any number of things, like optimize your Experience Manager settings."
 
@@ -399,17 +399,17 @@ The following templates are available:
 >abstract="**This can help you** better understand how people interact with a given page.<br/>**Based on what you learn, you might** do any number of things, like analyze the page's performance over a period of time or better understand what drives traffic to the page.<br/>This template uses the Page Views metric. It also uses the Line visualization and Flow visualization."
 
 >[!CONTEXTUALHELP]
->id="template--entryPageRankedReport"
+>id="template--entrypagerankedreport"
 >title="View the top pages that people access upon first visiting your site."
 >abstract="**This can help you** better understand which pages are driving the most traffic to your site or understand more about the first impressions visitors have on your site.<br/>**Based on what you learn, you might** do any number of things, like optimize the initial experience people get on the site, or ensure that the pages people first see upon entering your site are welcoming and provide the necessary links to other areas of your site.<br/>This template uses the Sessions metric. It also uses the Bar visualization and the Freeform table visualization."
 
 >[!CONTEXTUALHELP]
->id="template--exitPageRankedReport"
+>id="template--exitpagerankedreport"
 >title="View the top pages that people access immediately before leaving your site."
 >abstract="**This can help you** better understand which pages are leading people away from the site. <br/>**Based on what you learn, you might** do any number of things, like update common exit pages to optimize the experience people get before they leave, or include content or links to encourage people to stay on your site.<br/>This template uses the Sessions metric. It also uses the Bar visualization and the Freeform table visualization."
 
 >[!CONTEXTUALHELP]
->id="template--productUsageOverviewReport"
+>id="template--productusageoverviewreport"
 >title="View how the Customer Journey Analytics product is used within your organization."
 >abstract="**This can help you** better understand how many people use Customer Journey Analytics, how often they use it, and usage trends over time. You can also see the number of projects being created and details about those projects (such as which components, visualizations, and panels are most commonly used), and many other usage statistics.<br/>**Based on what you learn, you might** do any number of things, like delete unused projects or components, or provide user training for popular features."
 
@@ -444,7 +444,7 @@ The following templates are available:
 <!--AA only-->
 
 >[!CONTEXTUALHELP]
->id="aa-template--categoryRankedReport"
+>id="aa-template--categoryrankedreport"
 >title="View the number of visits associated with each product category on your site. This is useful for implementations that use the products variable and want to see metrics about product category. The dimension that populates this template can intentionally be blank if you don't have any products on your site."
 >abstract="**This can help you** better understand top-selling or most-viewed products. </br/>**Based on what you learn, you might** do any number of things, like measure the effectiveness of a marketing campaign for a given product.<br/>This template uses the Category dimension and the Visits metric. "
 
@@ -457,7 +457,7 @@ The following templates are available:
 <!--Both AA and CJA-->
 
 >[!CONTEXTUALHELP]
->id="template--productConversionReport"
+>id="template--productconversionreport"
 >title="View product conversion in a funnel visualization that shows carts, checkouts, and orders. You can also see conversion percentages, revenue averages, unit averages, and order averages."
 >abstract="**This can help you** better understand how people progress through and drop off during the conversion process.<br/>**Based on what you learn, you might** do any number of things, like improve your website to facilitate a smoother checkout process."
 
@@ -467,32 +467,32 @@ The following templates are available:
 >abstract="**This can help you** better understand which products are most successful.<br/>**Based on what you learn, you might** do any number of things, like increase funding to successful products and decrease funding to less successful products.<br/>This template uses the Product Views, Cart Additions, Orders, Revenue, and Units metrics. It also uses the Product dimension."
 
 >[!CONTEXTUALHELP]
->id="template--cartConversionReport"
+>id="template--cartconversionreport"
 >title="View the number of times people performed key checkout events, such as adding items to their cart, viewing their cart, removing items from their cart, and checking out."
 >abstract="**This can help you** better understand which parts of the checkout process funnel that lead to conversion and which are more prone to cart abandonment.<br/>**Based on what you learn, you might** do any number of things, like reduce friction at certain steps of the checkout process.<br/>This template uses the"
 
 >[!CONTEXTUALHELP]
->id="template--cartsOvertimeReport"
+>id="template--cartsovertimereport"
 >title="View the number of people who added a product to their cart."
 >abstract="**This can help you** better understand the number of people who add a product to their cart, as opposed to the overall number of products that are added to a cart.<br/>**Based on what you learn, you might** do any number of things, like measure the effectiveness of your product pages.<br/>This template uses the Carts metric."
 
 >[!CONTEXTUALHELP]
->id="template--cartViewsOvertimeReport"
+>id="template--cartviewsovertimereport"
 >title="View the number of times people viewed their shopping cart."
 >abstract="**This can help you** better understand the checkout experience in an effort to reduce cart abandonment rates, or analyze the time between cart additions and checkouts among different products.<br/>**Based on what you learn, you might** do any number of things, like offer promotions for products that stay in carts the longest and are at the greatest risk for abandonment.<br/>This template uses the Cart Views metric."
 
 >[!CONTEXTUALHELP]
->id="template--cartAdditionsOvertimeReport"
+>id="template--cartadditionsovertimereport"
 >title="View the number of times people added something to their cart."
 >abstract="**This can help you** better understand the part of the conversion funnel where customer interest in a product is high enough that they add it to their cart.<br/>**Based on what you learn, you might** do any number of things, like improve product recommendations for all customers. This can be done by analyzing which products are frequently added to the same carts, and by suggesting related products based on items already in the cart."
 
 >[!CONTEXTUALHELP]
->id="template--cartRemovalsOvertimeReport"
+>id="template--cartremovalsovertimereport"
 >title="View the number of times people removed something from their cart."
 >abstract="**This can help you** better understand the part of the conversion funnel where customers are no longer interested in a product, or it can help you understand where problems might exist in the checkout process.<br/>**Based on what you learn, you might** do any number of things, like remove any potential barriers that might exist in the checkout process, such as a complicated user experience.<br/>This template uses the Cart Removals metric."
 
 >[!CONTEXTUALHELP]
->id="template--purchaseConversionReport"
+>id="template--purchaseconversionreport"
 >title="View purchase conversion in a funnel visualization that shows sessions, carts, and orders. You can also see conversion percentages, revenue averages, unit averages, and order averages."
 >abstract="**This can help you** better understand how people progress through and drop off during the conversion process.<br/>**Based on what you learn, you might** do any number of things, like improve your website to facilitate a smoother checkout process."
 
@@ -518,7 +518,7 @@ The following templates are available:
 <!--CJA only-->
 
 >[!CONTEXTUALHELP]
->id="template--audienceOverview"
+>id="template--audienceoverview"
 >title="View which audiences are represented among the people visiting your site."
 >abstract="**This can help you** better understand general information about the audiences, where the audiences originated (RTCDP, Customer Journey Analytics, and so forth), audience overlap, and more.<br/>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts for these specific audiences, or create tailored experiences for customers who span multiple audiences.<br/>This template uses the Audience Name, Audience Origin, Exited Audience Name, and Exited Audience Origin dimensions."
 
@@ -545,7 +545,7 @@ The following templates are available:
 >abstract="**This can help you** better understand the complete customer journey and interactions across multiple touchpoints.<br/>**Based on what you learn, you might** do any number of things, like personalize marketing efforts to better target user preferences."
 
 >[!CONTEXTUALHELP]
->id="aa-template--timeZoneRankedReport"
+>id="aa-template--timezonerankedreport"
 >title="View the top time zones of visitors accessing your site."
 >abstract="**This can help you** better understand in which time zones your visitors live.<br/>**Based on what you learn, you might** do any number of things, like adjust site maintenance at times that affect the fewest number of people."
 
@@ -555,77 +555,77 @@ The following templates are available:
 >abstract="**This can help you** better understand where visitors are located who are visiting your site. <br/>**Based on what you learn, you might** do any number of things, like focus marketing resources in the locations where you see the most interest and opportunity."
 
 >[!CONTEXTUALHELP]
->id="aa-template--domainRankedReport"
+>id="aa-template--domainrankedreport"
 >title="View the top domains of visitors accessing your site."
 >abstract="**This can help you** better understand which organizations your visitors are coming from.<br/>**Based on what you learn, you might** do any number of things, like target your content at your biggest customers."
 
 >[!CONTEXTUALHELP]
->id="aa-template--topLevelDomainRankedReport"
+>id="aa-template--topleveldomainrankedreport"
 >title="View the top domains of visitors accessing your site."
 >abstract="**This can help you** better understand which organizations your visitors are coming from.<br/>**Based on what you learn, you might** do any number of things, like target your content at your biggest customers."
 
 >[!CONTEXTUALHELP]
->id="aa-template--browserWidthRankedReport"
+>id="aa-template--browserwidthrankedreport"
 >title="View top browser widths that people use to access your site."
 >abstract="**This can help you** better understand how content displays to visitors.<br/>**Based on what you learn, you might** do any number of things, like improve site quality by testing new versions of your site using the most common browser widths. Doing so can maximize quality control efforts.<br/>This template uses the Browser dimension."
 
 >[!CONTEXTUALHELP]
->id="aa-template--browserHeightRankedReport"
+>id="aa-template--browserheightrankedreport"
 >title="View top browser heights that people use to access your site."
 >abstract="**This can help you** better understand how content displays to visitors.<br/>**Based on what you learn, you might** do any number of things, like improve site quality by testing new versions of your site using the most common browser heights. Doing so can maximize quality control efforts.<br/>This template uses the Browser dimension. "
 
 >[!CONTEXTUALHELP]
->id="aa-template--operatingSystemRankedReport"
+>id="aa-template--operatingsystemrankedreport"
 >title="View the name of the operating systems and version that people use to access your site."
 >abstract="**This can help you** better understand the most common operating systems and versions that visitors use.<br/>**Based on what you learn, you might** do any number of things, like improve site quality by testing new versions of your site using the top operating systems and version. Doing so can maximize quality control efforts."
 
 >[!CONTEXTUALHELP]
->id="aa-template--operatingSystemTypeRankedReport"
+>id="aa-template--operatingsystemtyperankedreport"
 >title="View the name of the operating systems that people use to access your site."
 >abstract="**This can help you** better understand the most common operating systems that visitors use.<br/>**Based on what you learn, you might** do any number of things, like improve site quality by testing new versions of your site using the top operating systems. Doing so can maximize quality control efforts."
 
 >[!CONTEXTUALHELP]
->id="aa-template--returnFrequencyRankedReport"
+>id="aa-template--returnfrequencyrankedreport"
 >title="View the telecommunications company that provides cellular network connectivity to the mobile devices.that people use to access your site."
 >abstract="**This can help you** better understand which mobile carriers are most popular among your user base.<br/>**Based on what you learn, you might** do any number of things, like tailor your content delivery based on the network capabilities of different carriers to ensure a smooth user experience.<br/>This template uses the Mobile Carrier dimension."
 
 >[!CONTEXTUALHELP]
->id="aa-template--returnVisitorsOvertimeReport"
+>id="aa-template--returnvisitorsovertimereport"
 >title="View the telecommunications company that provides cellular network connectivity to the mobile devices.that people use to access your site."
 >abstract="**This can help you** better understand which mobile carriers are most popular among your user base.<br/>**Based on what you learn, you might** do any number of things, like tailor your content delivery based on the network capabilities of different carriers to ensure a smooth user experience.<br/>This template uses the Mobile Carrier dimension."
 
 >[!CONTEXTUALHELP]
->id="aa-template--visitNumberRankedReport"
+>id="aa-template--visitnumberrankedreport"
 >title="View how many times a visitor has visited the site."
 >abstract="**This can help you** better understand how engaged visitors are when returning to your site. This applies to the lifetime of the visitor, regardless of project date range.<br/>**Based on what you learn, you might** do any number of things, like adjust marketing efforts for frequent visitors.<br/>This template uses the Visit number dimension."
 
 >[!CONTEXTUALHELP]
->id="aa-template--customerLoyaltyRankedReport"
+>id="aa-template--customerloyaltyrankedreport"
 >title="View the number of visitors to your site that have made 0 prior purchases, 1 prior purchase, 2 prior purchases, or 3+ prior purchases."
 >abstract="**This can help you** better understand how your site affects purchasing behavior.<br/>**Based on what you learn, you might** do any number of things, like focus on visitors that return to make a purchase, so that you can encourage similar behavior for new visitors.<br/>This template uses the Customer loyalty dimension."
 
 >[!CONTEXTUALHELP]
->id="aa-template--daysBeforeFirstPurchaseRankedReport"
+>id="aa-template--daysbeforefirstpurchaserankedreport"
 >title="View the number of days that pass between the first time a visitor reaches your site and when they make a purchase. For example, if a visitor makes a purchase one day after first visiting, then any subsequent visit or event belongs to the 1 Day dimension item."
 >abstract="**This can help you** better understand how long it takes visitors to make a purchase.<br/>**Based on what you learn, you might** do any number of things, like update your site to encourage faster acquisition.<br/>This template uses the Days before first purchase dimension."
 
 >[!CONTEXTUALHELP]
->id="aa-template--daysSinceLastPurchaseRankedReport"
+>id="aa-template--dayssincelastpurchaserankedreport"
 >title="View the amount of time passed between the current hit of the visitor and their most recent purchase at that time."
 >abstract="**This can help you** better understand visitor behavior after purchasing something on your site.<br/>**Based on what you learn, you might** do any number of things, like update your site to encourage follow-up purchases.<br/>This template uses the Days since last purchase dimension."
 
 >[!CONTEXTUALHELP]
->id="aa-template--mobileScreenSizeRankedReport"
+>id="aa-template--mobilescreensizerankedreport"
 >title="View the top mobile screen sizes that people use to access your site."
 >abstract="**This can help you** better understand how content displays to visitors.<br/>**Based on what you learn, you might** do any number of things, like improve site quality by testing new versions of your site using the most common mobile screen sizes. Doing so can maximize quality control efforts."
 
 >[!CONTEXTUALHELP]
->id="aa-template--mobileScreenHeightRankedReport"
+>id="aa-template--mobilescreenheightrankedreport"
 >title="View top mobile screen heights that people use to access your site."
 >abstract="**This can help you** better understand how content displays to visitors.<br/>**Based on what you learn, you might** do any number of things, like improve site quality by testing new versions of your site using the most common mobile screen heights. Doing so can maximize quality control efforts."
 
 >[!CONTEXTUALHELP]
->id="aa-template--mobileScreenWidthRankedReport"
+>id="aa-template--mobilescreenwidthrankedreport"
 >title="View top mobile screen widths that people use to access your site."
 >abstract="**This can help you** better understand how content displays to visitors.<br/>**Based on what you learn, you might** do any number of things, like improve site quality by testing new versions of your site using the most common mobile screen widths. Doing so can maximize quality control efforts."
 
@@ -633,37 +633,37 @@ The following templates are available:
 <!--Both AA and CJA-->
 
 >[!CONTEXTUALHELP]
->id="template--consentPolicyOverview"
+>id="template--consentpolicyoverview"
 >title="View the country from which people visiting the site originated."
 >abstract="**This can help you** better understand what the most popular countries visitors originate from who visit your site.<br/>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these countries, or make sure that your site experience is optimal in countries that have different primary languages.<br/>This template uses the Countries dimension."
 
 >[!CONTEXTUALHELP]
->id="template--countryGeoReport"
+>id="template--countrygeoreport"
 >title="View the country from which people visiting the site originated."
 >abstract="**This can help you** better understand what the most popular countries visitors originate from who visit your site.<br/>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these countries, or make sure that your site experience is optimal in countries that have different primary languages.<br/>This template uses the Countries dimension."
 
 >[!CONTEXTUALHELP]
->id="template--stateGeoReport"
+>id="template--stategeoreport"
 >title="View the state (in the United States) from which people visiting the site originated. This is similar to the Geo Regions template, except that it is specific to the United States."
 >abstract="**This can help you** better understand the most popular U.S. states visitors originate from who visit your site.<br/>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these states.<br/>This template uses the US States dimension."
 
 >[!CONTEXTUALHELP]
->id="template--regionGeoReport"
+>id="template--regiongeoreport"
 >title="View the geographic region from which people visiting the site originated. A region is a geographic area that is smaller than a country but larger than a city. In some countries, a region is a state, province, or prefecture. In other areas, it is a constituent country, department, or metropolitan region. "
 >abstract="**This can help you** better understand the most popular regions visitors originate from who visit your site.<br/>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these regions, or make sure that your site experience is optimal in regions that have different primary languages. <br/>This template uses the ID(variables/geocountry) and Regions dimensions. "
 
 >[!CONTEXTUALHELP]
->id="template--cityGeoReport"
+>id="template--citygeoreport"
 >title="View the city from which people visiting the site originated."
 >abstract="**This can help you** better understand the most popular cities visitors originate from who visit your site.<br/>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these cities. <br/>This template uses the Cities dimension"
 
 >[!CONTEXTUALHELP]
->id="template--dmaGeoReport"
+>id="template--dmageoreport"
 >title="View the designated marketing areas (DMAs) within the United States from which people visiting the site originated."
 >abstract="**This can help you** better understand the most popular regions visitors originate from who visit your site.<br/>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in the most successful regions. "
 
 >[!CONTEXTUALHELP]
->id="template--languageRankedReport"
+>id="template--languagerankedreport"
 >title="View the top languages that visitors prefer to see content in."
 >abstract="**This can help you** better understand the most frequently preferred languages of visitors.<br/>**Based on what you learn, you might** do any number of things, like focus localization efforts or marketing efforts for the most popular languages.<br/>This template uses the Language dimension."
 
@@ -673,12 +673,12 @@ The following templates are available:
 >abstract="**This can help you** better understand which technologies are most often used when accessing your site.<br/>**Based on what you learn, you might** do any number of things, like optimize your site for the technologies that are used."
 
 >[!CONTEXTUALHELP]
->id="template--browserRankedReport"
+>id="template--browserrankedreport"
 >title="View the name and version of the top browsers people use to access your site."
 >abstract="**This can help you** better understand the most common browsers that visitors use.<br/>**Based on what you learn, you might** do any number of things, like improve site quality by testing new versions of your site using the top browsers. Doing so can maximize quality control efforts.<br/>This template uses the Browser dimension."
 
 >[!CONTEXTUALHELP]
->id="template--browserTypeRankedReport"
+>id="template--browsertyperankedreport"
 >title="View the names of the organizations who made the top browsers that people use to access your site. This differs from the Browser template in that it does not list different versions of the same browser as separate dimension items."
 >abstract="**This can help you** better understand the most common browsers that visitors use<br/>**Based on what you learn, you might** do any number of things, like improve site quality by testing new versions of your site using the top browsers. Doing so can maximize quality control efforts. <br/>This template uses the Browser type dimension. "
 
@@ -710,12 +710,12 @@ The following templates are available:
 >abstract="**This can help you** better understand more about the various factors that lead to acquisition, such as search keywords, referring domain, and so forth.<br/>**Based on what you learn, you might** do any number of things, like focus marketing efforts into the most effective channels.<br/>This template uses the Bounce Rate metric and the Bounces metric. It also uses the Search Engine dimension, Search Keyword dimension, Entry Page dimension, Referring Domain dimension, Tracking Code dimension, and Referrer dimension."
 
 >[!CONTEXTUALHELP]
->id="aa-template--advertisingAnalyticsPaidSearch"
+>id="aa-template--advertisinganalyticspaidsearch"
 >title="View all your Google and Bing Paid Search data side by side."
 >abstract="**This can help you** better understand the amount of traffic being sent to your site and whether customers are converting.<br/>**Based on what you learn, you might** do any number of things, like estimate the cost effectiveness of an ad campaign."
 
 >[!CONTEXTUALHELP]
->id="aa-template--searchEngineRankRankedReport"
+>id="aa-template--searchenginerankrankedreport"
 >title="View which page of search results a visitor clicked through to your site. For example, if your site appears on the second page of a search engine's search results, the dimension item for this variable is Search Page 2."
 >abstract="**This can help you** better understand how high your pages are ranking in search results.<br/>**Based on what you learn, you might** do any number of things, like improve your SEO strategy to ensure that your content shows up on the first page of search results."
 
@@ -728,17 +728,17 @@ The following templates are available:
 >abstract="**This can help you** better understand which of your marketing channels are most effective.<br/>**Based on what you learn, you might** do any number of things, like invest more heavily in effective marketing channels and divest from less effecting marketing channels.<br/>This template uses the ID(variables/marketingchannel) dimension and the Revenue metric."
 
 >[!CONTEXTUALHELP]
->id="template--firstouchChannelRankedReport"
+>id="template--firstouchchannelrankedreport"
 >title="View the first marketing channel that a visitor matches with during that visitor's engagement period (30 days by default)."
 >abstract="**This can help you** better understand which marketing channels drive initial traffic to your site.<br/>**Based on what you learn, you might** do any number of things, like focus marketing efforts in areas that are most effective.<br/>This template uses the First Touch Channel dimension."
 
 >[!CONTEXTUALHELP]
->id="template--firstouchChannelDetailRankedReport"
+>id="template--firstouchchanneldetailrankedreport"
 >title="View details about the first marketing channel a visitor matches with during that visitor's engagement period (30 days by default)."
 >abstract="**This can help you** better understand what contributed to the hit matching a marketing channel. For example, if a visitor arrived to your site and matched with the 'Paid search' Marketing channel, you could use the channel detail to see which search engine was used, or which keyword they searched for.<br/>**Based on what you learn, you might** do any number of things, like focus marketing efforts in areas that are most effective.<br/>This template uses the First Touch Channel Detail dimension."
 
 >[!CONTEXTUALHELP]
->id="template--campaignConversionReport"
+>id="template--campaignconversionreport"
 >title="View the number of clickthroughs and checkouts for your campaigns."
 >abstract="**This can help you** better understand how marketing campaigns are driving conversion.<br/>**Based on what you learn, you might** do any number of things, like determine which marketing campaigns are generating the most ROI."
 
@@ -753,52 +753,52 @@ The following templates are available:
 >abstract="**This can help you** better understand more about the various factors that lead to acquisition, such as search keywords, referring domain, and so forth.<br/>**Based on what you learn, you might** do any number of things, like focus marketing efforts into the most effective channels.<br/>This template uses the Bounce Rate metric and the Bounces metric. It also uses the Search Engine dimension, Search Keyword dimension, Entry Page dimension, Referring Domain dimension, Tracking Code dimension, and Referrer dimension."
 
 >[!CONTEXTUALHELP]
->id="template--searchKeywordRankedReport"
+>id="template--searchkeywordrankedreport"
 >title="View the search keywords that visitors use to reach your site, regardless whether it is paid or natural."
 >abstract="**This can help you** better understand the keywords people use in searches that result in site traffic. <br/>**Based on what you learn, you might** do any number of things, like identify and fill SEO gaps between keywords used and those that drive site traffic.<br/>This template uses the Search Keyword dimension."
 
 >[!CONTEXTUALHELP]
->id="template--searchPaidKeywordRankedReport"
+>id="template--searchpaidkeywordrankedreport"
 >title="View the search keywords that visitors use to reach your site, which matched paid search detection."
 >abstract="**This can help you** better understand the keywords people use in searches that result in site traffic.<br/>**Based on what you learn, you might** do any number of things, like identify and fill SEO gaps between keywords used and those that drive site traffic. <br/>This template uses the Search Keyword - Paid dimension. "
 
 >[!CONTEXTUALHELP]
->id="template--searchNaturalKeywordRankedReport"
+>id="template--searchnaturalkeywordrankedreport"
 >title="View the search keywords that visitors use to reach your site, which did not match paid search detection."
 >abstract="**This can help you** better understand the keywords people use in searches that result in site traffic.<br/>**Based on what you learn, you might** do any number of things, like identify and fill SEO gaps between keywords used and those that drive site traffic.<br/>This template uses the Search Keyword - Natural dimension. "
 
 >[!CONTEXTUALHELP]
->id="template--searchRankedReport"
+>id="template--searchrankedreport"
 >title="View the search engines that visitors use to reach your site, regardless whether it is paid or natural."
 >abstract="**This can help you** better understand the search engines people use that result in site traffic. <br/>**Based on what you learn, you might** do any number of things, like focus your SEO efforts on the search engines that drive the most traffic to the site.<br/>This template uses the Search Engine dimension. "
 
 >[!CONTEXTUALHELP]
->id="template--searchPaidRankedReport"
+>id="template--searchpaidrankedreport"
 >title="View the search engines that visitors use to reach your site, which matched paid search detection."
 >abstract="**This can help you** better understand the search engines people use that result in site traffic.<br/>**Based on what you learn, you might** do any number of things, like focus your SEO efforts on the search engines that drive the most traffic to the site. <br/>This template uses the Search Engine - Paid dimension."
 
 >[!CONTEXTUALHELP]
->id="template--searchNaturalRankedReport"
+>id="template--searchnaturalrankedreport"
 >title="View the search keywords that visitors use to reach your site, which did not match paid search detection."
 >abstract="**This can help you** better understand the search engines people use that result in site traffic.<br/>**Based on what you learn, you might** do any number of things, like focus your SEO efforts on the search engines that drive the most traffic to the site.<br/>This template uses the Search Engine - Natural dimension."
 
 >[!CONTEXTUALHELP]
->id="template--referringDomainRankedReport"
+>id="template--referringdomainrankedreport"
 >title="View which domains people click through to reach your site."
 >abstract="**This can help you** better understand which third-party sites drive the most traffic to yours. (A link must exist on the external site and a visitor must click it for the dimension item to show up.)<br/>**Based on what you learn, you might** do any number of things, like create or adjust content to align more closely with the interests of visitors coming from top referring domains. <br/>This template uses the Referring Domain dimension."
 
 >[!CONTEXTUALHELP]
->id="template--referringDomainOriginalRankedReport"
+>id="template--referringdomainoriginalrankedreport"
 >title="View the first referring domain that people clicked through to reach your site. (Once it is set, it contains the same value for the entire lifetime of that visitor ID.)"
 >abstract="**This can help you** better understand which third-party sites originally drive traffic to your site.<br/>**Based on what you learn, you might** do any number of things, like create or adjust content to better align with the interests of visitors coming from top original referring domains. <br/>This template uses the Original Referring Domain dimension."
 
 >[!CONTEXTUALHELP]
->id="template--referrerRankedReport"
+>id="template--referrerrankedreport"
 >title="View which URLs visitors were on when clicking through to reach your site. (A link must exist on the external URL and a visitor must click it for the dimension item to show up.)"
 >abstract="**This can help you** better understand which specific URLs drive the most traffic to your site.<br/>**Based on what you learn, you might** do any number of things, like create or adjust content to better align with the interests of visitors coming from top URLs. <br/>This template uses the Referring Domain dimension.</p>"
 
 >[!CONTEXTUALHELP]
->id="template--referrerTypeRankedReport"
+>id="template--referrertyperankedreport"
 >title="View which generic channels visitors clicked through to arrive at your site. Adobe maintains the rules for each channel. Possible channels include search engines, social networks, other web sites, hard drive, or email."
 >abstract="**This can help you** better understand which type of referrers drive the most traffic to your site.<br/>**Based on what you learn, you might** do any number of things, like create or adjust content to better align with the interests of visitors coming from a certain channel.<br/>This template uses the Referrer Type dimension."
 
@@ -889,22 +889,22 @@ The following templates are available:
 ### Mobile: Mobile Device Information {#mobile-devices}
 
 >[!CONTEXTUALHELP]
->id="template--mobileCarrierRankedReport"
+>id="template--mobilecarrierrankedreport"
 >title="View the telecommunications company that provides cellular network connectivity to the mobile devices.that people use to access your site."
 >abstract="**This can help you** better understand which mobile carriers are most popular among your user base.<br/>**Based on what you learn, you might** do any number of things, like tailor your content delivery based on the network capabilities of different carriers to ensure a smooth user experience.<br/>This template uses the Mobile Carrier dimension."
 
 >[!CONTEXTUALHELP]
->id="template--mobileDeviceNameRankedReport"
+>id="template--mobiledevicenamerankedreport"
 >title="View the make and model of mobile devices that people use to access your site."
 >abstract="**This can help you** better understand which mobile devices are most popular among your user base.<br/>**Based on what you learn, you might** do any number of things, like optimize the rendering of your site for the most common mobile devices.<br/>This template uses the Mobile Device Name dimension."
 
 >[!CONTEXTUALHELP]
->id="template--mobileDeviceTypeRankedReport"
+>id="template--mobiledevicetyperankedreport"
 >title="View the mobile device types that people use to access your site, such as phones and tablets."
 >abstract="**This can help you** better understand the various kinds of mobile devices that are used to access your site.<br/>**Based on what you learn, you might** do any number of things, like optimize your site for the types of mobile devices that are used the most.<br/>This template uses the Mobile Device Type dimension."
 
 >[!CONTEXTUALHELP]
->id="template--mobileManufacturerRankedReport"
+>id="template--mobilemanufacturerrankedreport"
 >title="View which manufacturers produce the mobile devices that people use to access your site, such as Apple and Samsung."
 >abstract="**This can help you** better understand which manufacturers are most popular among your user base.<br/>**Based on what you learn, you might** do any number of things, like tailor your content delivery based on the abilities of different manufacturers to ensure a smooth user experience.<br/>This template uses the Mobile Manufacturer dimension."
 
@@ -923,12 +923,12 @@ The following templates are available:
 <!--CJA only-->
 
 >[!CONTEXTUALHELP]
->id="cja-template--minuteOfHour"
+>id="cja-template--minuteofhour"
 >title="View the number of events, sessions, and people on your site, broken down by minute. For example, if you have a report with a reporting timeframe of a single day, the first minute of each hour in the day is grouped into the same dimension item."
 >abstract="**This can help you** better understand trends at a granular level.<br/>**Based on what you learn, you might** do any number of things, like optimize resources for peak times, down to the minute.<br/>This template uses the Minute of Hour dimension."
 
 >[!CONTEXTUALHELP]
->id="cja-template--hourOfDay"
+>id="cja-template--hourofday"
 >title="View events, sessions, and people on your site, broken down by hour of the day. For example, if you have a report spanning January 1 - January 7, the first hour of each day is grouped into the same dimension item."
 >abstract="**This can help you** better understand the time of day when your site is most frequently and least frequently visited.<br/>**Based on what you learn, you might** do any number of things, like assign more computing resources to your site during high-traffic hours.<br/>This template uses the Hour of Day dimension."
 
@@ -938,37 +938,37 @@ The following templates are available:
 >abstract="***This can help you** better understand the time of day when your site is most frequently and least frequently visited.<br/>**Based on what you learn, you might** do any number of things, like assign more computing resources to your site during high-traffic hours.<br/>This template uses the AM/PM dimension."
 
 >[!CONTEXTUALHELP]
->id="cja-template--dayOfWeek"
+>id="cja-template--dayofweek"
 >title="View events, sessions, and people on your site, broken down by day of the week. For example, if you have a report spanning the month of January, each day of the week is grouped into the same dimension item."
 >abstract="**This can help you** better understand which days of the week your site is most frequently and least frequently visited.<br/>**Based on what you learn, you might** do any number of things, like staff your call center more appropriately for high-traffic days.<br/>This template uses the Day of Week dimension."
 
 >[!CONTEXTUALHELP]
->id="cja-template--dayOfMonth"
+>id="cja-template--dayofmonth"
 >title="View events, sessions, and people on your site, broken down by day of month. For example, if you have a report spanning a full year, each day of the month is grouped into the same dimension item."
 >abstract="**This can help you** better understand which days of each month your site is most frequently and least frequently visited.<br/>**Based on what you learn, you might** do any number of things, like staff your call center more appropriately for high-traffic days.<br/>This template uses the Day of Month dimension."
 
 >[!CONTEXTUALHELP]
->id="cja-template--dayOfYear"
+>id="cja-template--dayofyear"
 >title="View events, sessions, and people on your site, broken down by day of year. For example, if you have a report spanning multiple years, each day of the year is grouped into the same dimension item."
 >abstract="**This can help you** better understand which days of each year your site is most frequently and least frequently visited.<br/>**Based on what you learn, you might** do any number of things, like staff your call center more appropriately for high-traffic days.<br/>This template uses the Day of Year dimension."
 
 >[!CONTEXTUALHELP]
->id="cja-template--weekdayWeekend"
+>id="cja-template--weekdayweekend"
 >title="View events, sessions, and people on your site, broken down by weekdays and weekends. For example, if you have a report spanning the month of January, weekdays and weekends are grouped into separate dimension items."
 >abstract="**This can help you** better understand the differences in site traffic for weekdays versus weekends.<br/>**Based on what you learn, you might** do any number of things, like staff your call center more heavily on the weekends, if the report indicates that weekends are busier than weekdays.<br/>This template uses the Weekday/Weekend dimension."
 
 >[!CONTEXTUALHELP]
->id="cja-template--weekOfYear"
+>id="cja-template--weekofyear"
 >title="View events, sessions, and people on your site, broken down by week of year. For example, if you have a report spanning multiple years, each week is grouped into the same dimension item."
 >abstract="**This can help you** better understand which weeks of the year your site is most frequently and least frequently visited.<br/>**Based on what you learn, you might** do any number of things, like staff your call center more appropriately for high-traffic weeks, such as during the holidays.<br/>This template uses the Week of Year dimension."
 
 >[!CONTEXTUALHELP]
->id="cja-template--monthOfYear"
+>id="cja-template--monthofyear"
 >title="View events, sessions, and people on your site, broken down by month of year. For example, if you have a report spanning multiple years, each month is grouped into the same dimension item."
 >abstract="**This can help you** better understand which months your site is most frequently and least frequently visited.<br/>**Based on what you learn, you might** do any number of things, like staff your call center more appropriately for high-traffic months, such as during the holidays.<br/>This template uses the Month of Year dimension."
 
 >[!CONTEXTUALHELP]
->id="cja-template--quarterOfYear"
+>id="cja-template--quarterofyear"
 >title="View events, sessions, and people on your site, broken down by quarter of the year. For example, if you have a report spanning multiple years, each quarter is grouped into the same dimension item."
 >abstract="**This can help you** better understand which quarters your site is most frequently and least frequently visited.<br/>**Based on what you learn, you might** do any number of things, like time the launch of products in order to boost historically low-traffic quarters.<br/>This template uses the Quarter of Year dimension."
 
@@ -993,22 +993,22 @@ The following templates are available:
 <!--CJA only-->
 
 >[!CONTEXTUALHELP]
->id="cja-template--multiChannelOverview"
+>id="cja-template--multichanneloverview"
 >title="View the distribution of traffic across multiple channels."
 >abstract="**This can help you** better understand which channels are more successfully driving traffic and engagement. <br/>**Based on what you learn, you might** do any number of things, like focus marketing efforts on the channels that are achieving the highest return on investment.<br/>This template uses the user, session, and event metrics."
 
 >[!CONTEXTUALHELP]
->id="cja-template--callCenterDeflection"
+>id="cja-template--callcenterdeflection"
 >title="View how web traffic affects call center traffic."
 >abstract="**This can help you** better understand how successfully the self-service content on your website is deflecting traffic to your call center.<br/>**Based on what you learn, you might** do any number of things, like enhance self-service content in order to decrease traffic to your call center, or measure the ROI of your self-service content by calculating the amount saved through fewer support calls.<br/>This template uses the Web Sessions, Mobile App Sessions, and Web+App Cross-Channel Sessions metrics."
 
 >[!CONTEXTUALHELP]
->id="cja-template--webAppTemplate"
+>id="cja-template--webapptemplate"
 >title="View web traffic and mobile traffic together."
 >abstract="**This can help you** better understand the distribution of web and mobile traffic to your site.<br/>**Based on what you learn, you might** do any number of things, like dedicate more resources to your mobile app experience when it reaches a certain level of traffic.<br/>This template uses the Web Sessions, Mobile App Sessions, and Web+App Cross-Channel Sessions metrics."
 
 >[!CONTEXTUALHELP]
->id="cja-template--onlineOffline"
+>id="cja-template--onlineoffline"
 >title="View online and offline traffic together."
 >abstract="**This can help you** better understand the distribution of online and offline traffic to your site.<br/>**Based on what you learn, you might** do any number of things, like dedicate more resources to your online experience when it reaches a certain level of traffic."
 
@@ -1030,7 +1030,7 @@ The following templates are available:
 >abstract="**This can help you** better understand where customers are experiencing problems and where call center resources are being spent.<br/>**Based on what you learn, you might** do any number of things, like address product issues that are driving higher call center traffic, ultimately improving product profitability."
 
 >[!CONTEXTUALHELP]
->id="cja-template--pointOfSale"
+>id="cja-template--pointofsale"
 >title="View point-of-sale (POS) transaction data, including revenue earned, orders made, and units sold. This template also includes visualizations that display information about top stores, top products, and top product categories, as well as online vs. offline sales."
 >abstract="**This can help you** better understand which are your top-selling products across store locations and online.<br/>**Based on what you learn, you might** do any number of things, like assign more marketing resources to your highest-performing products and channels."
 
