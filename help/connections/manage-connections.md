@@ -68,7 +68,7 @@ Once you have [created or edited one or more connections](/help/connections/crea
 The **[!UICONTROL List]** interface is the default interface for Connections. If not selected, select the **[!UICONTROL List]** tab to access the interface.
 
 The **[!UICONTROL List]** interface shows a table of all connections available. 
-
+△
 ![list view](assets/list-view.png)
 
 The following columns or icons are available in the table.
@@ -439,7 +439,7 @@ When a dataset row is selected in the datasets table, a panel on the right side 
 
 
 >[!CONTEXTUALHELP]
->id="connections_extendeddatacapacitiyrows"
+>id="connections_extendeddatacapacityrows"
 >title="Extended data capacity rows"
 >abstract="The total number of rows available over a period older than 13 months for the current month, with a percentage change compared to the previous month. For example, on February 1, 2024, the number shows the total rows available with an event timestamp older than January 2023."
 
@@ -465,7 +465,7 @@ When a dataset row is selected in the datasets table, a panel on the right side 
 
 
 >[!CONTEXTUALHELP]
->id="connections_b2b_correportablebpp"
+>id="connections_b2b_coreportablebpp"
 >title="Core businessperson profile reportable rows"
 >abstract="The total number of business profile reportable rows available over the past 13 months for the current month, with a percentage change compared to the previous month.  For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024."
 
