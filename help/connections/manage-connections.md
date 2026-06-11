@@ -490,7 +490,7 @@ When a dataset row is selected in the datasets table, a panel on the right side 
 >abstract="The total number of monthly media starts available over the past 13 months for the current month, with a percentage change compared to the previous month.  For example, on February 1, 2024, the number shows the total media starts available with an event timestamp from January 2023 to January 2024."
 
 >[!CONTEXTUALHELP]
->id="△△ "
+>id="connections_breakdown_monthlymediastarts"
 >title="Monthly media starts"
 >abstract="Monhtly media starts are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. If a customer selects January - March, the values reflect the snapshot from March."
 
