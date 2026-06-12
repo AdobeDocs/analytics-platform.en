@@ -425,17 +425,17 @@ When a dataset row is selected in the datasets table, a panel on the right side 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_corereportablerows"
 >title="Core reportable rows"
->abstract="Core reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. If a customer selects January - March, the values reflect the snapshot from March."
+>abstract="Core reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_historicalreportablerows"
 >title="Historical reportable rows"
->abstract="Historical reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. If a customer selects January - March, the values reflect the snapshot from March."
+>abstract="Historical reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_cumulativereportablerows"
 >title="Cumulative reportable rows"
->abstract="Cumulative reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. If a customer selects January - March, the values reflect the snapshot from March."
+>abstract="Cumulative reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
 
 
 >[!CONTEXTUALHELP]
@@ -446,7 +446,7 @@ When a dataset row is selected in the datasets table, a panel on the right side 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_extendeddatacapacityrows"
 >title="Extended data capacity rows"
->abstract="Extende data capacity rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. If a customer selects January - March, the values reflect the snapshot from March."
+>abstract="Extended data capacity rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
 
 >[!CONTEXTUALHELP]
 >id="connections_aca_corereportablerows"
@@ -461,7 +461,7 @@ When a dataset row is selected in the datasets table, a panel on the right side 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_aca_corereportablerows"
 >title="Content Analytics core reportable rows"
->abstract="Content Analytics core reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. If a customer selects January - March, the values reflect the snapshot from March."
+>abstract="Content Analytics core reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
 
 
 >[!CONTEXTUALHELP]
@@ -477,12 +477,12 @@ When a dataset row is selected in the datasets table, a panel on the right side 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_b2b_corereportablebpp"
 >title="Core business profile reportable rows"
->abstract="Core business profile reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. If a customer selects January - March, the values reflect the snapshot from March."
+>abstract="Core business profile reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_b2b_historicalreportablebpp"
 >title="Historical  business profile reportable rows"
->abstract="Historical business profile reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. If a customer selects January - March, the values reflect the snapshot from March."
+>abstract="Historical business profile reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
 
 >[!CONTEXTUALHELP]
 >id="connections_monthlymediastarts"
@@ -492,7 +492,7 @@ When a dataset row is selected in the datasets table, a panel on the right side 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_monthlymediastarts"
 >title="Monthly media starts"
->abstract="Monhtly media starts are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. If a customer selects January - March, the values reflect the snapshot from March."
+>abstract="Monhtly media starts are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
 
 
 The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows across all connections. If not selected, select the **[!UICONTROL Usage]** tab to access the interface.
