@@ -14,7 +14,10 @@ feature_v2:
 
 AI has become a primary discovery channel. LLM agent activity through tools like ChatGPT, Claude, Copilot, and Perplexity crawls and references brand content. 
 
-You must have an LLM Optimizer paid offering provisioned and connected to your Experience Platform configuration through the 
+>[!PREREQUISITES]
+>
+>You must have an LLM Optimizer paid offering provisioned and connected to your Experience Platform configuration through the managed connector.
+
 
 >[!IMPORTANT]
 >
