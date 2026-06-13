@@ -33,7 +33,7 @@ topic_v2:
 ---
 # Report on Google Analytics data
 
-Once you have data available in Customer Journey Analytics, the following examples provide useful scenarios for reporting on that data.
+Once you have data available in Customer Journey Analytics, the following examples provide useful scenarios for reporting on that data. For a comprehensive lookup of GA4 report equivalents in Customer Journey Analytics, see [GA4 reports in Customer Journey Analytics](/help/getting-started/ga-to-cja/reports.md).
 
 ## Visualize web data and app data as combined datasets
 

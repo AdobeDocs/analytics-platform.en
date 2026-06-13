@@ -27,6 +27,12 @@ topic_v2:
 ---
 # Migrate data from Google Analytics
 
+>[!BEGINSHADEBOX]
+
+This guide covers data migration for administrators. If you are an analyst looking to find your GA4 reports in Customer Journey Analytics, see [Transitioning from Google Analytics 4 to Customer Journey Analytics](/help/getting-started/ga-to-cja/home.md) and [GA4 reports in Customer Journey Analytics](/help/getting-started/ga-to-cja/reports.md).
+
+>[!ENDSHADEBOX]
+
 If you are new to Customer Journey Analytics, it is possible that your organization has existing data on another Analytics platform, such as Google Analytics. You can follow these overarching steps to move that data into Adobe Experience Platform, allowing you to view reports in Customer Journey Analytics.
 
 Workflows are provided for both historical data and current data collection. You can follow one or both of these workflows, depending on your organization's data needs.
