@@ -98,6 +98,11 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Analytics Identities](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
   + [Evolution from Adobe Analytics ](../getting-started/aa-to-cja.md)
   + [User Guide for Adobe Analytics users](../getting-started/aa-to-cja-user.md)
+  + Transition from Google Analytics 4 {#ga-to-cja}
+    + [Overview](/help/getting-started/ga-to-cja/home.md)
+    + [Data model](/help/getting-started/ga-to-cja/data-model.md)
+    + [Report equivalents](/help/getting-started/ga-to-cja/reports.md)
+    + [Data differences](/help/getting-started/ga-to-cja/compare-data.md)
 
 + Data ingestion {#cja-data-ingestion}
   + [Overview](../data-ingestion/data-ingestion.md)
