@@ -1,5 +1,5 @@
 ---
-title: Data model comparison between GA4 and Customer Journey Analytics
+title: How the GA4 data model maps to Customer Journey Analytics
 description: Understand how GA4's event-based data model translates to XDM schemas and datasets in Customer Journey Analytics.
 role: User
 solution: Customer Journey Analytics
@@ -26,7 +26,7 @@ topic_v2:
     internal-label: Data collection
 ---
 
-# Data model comparison between GA4 and Customer Journey Analytics
+# How the GA4 data model maps to Customer Journey Analytics
 
 GA4 and Customer Journey Analytics are both event-based platforms, which makes the data model translation between them more direct than it was from Universal Analytics. Understanding how GA4's events and parameters correspond to Customer Journey Analytics's XDM fields and datasets makes it easier to interpret reports and collaborate with your implementation team.
 

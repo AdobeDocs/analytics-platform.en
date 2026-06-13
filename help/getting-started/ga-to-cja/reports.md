@@ -374,7 +374,7 @@ In Customer Journey Analytics, the equivalent metric is **[!UICONTROL Events]** 
 
 +++Sessions &rarr; Sessions
 
-GA4's **Sessions** and Customer Journey Analytics's **[!UICONTROL Sessions]** both measure the number of sessions in a date range. Counts can differ due to different session definition rules. See [Data comparison between GA4 and Customer Journey Analytics](compare-data.md#sessions) for details.
+GA4's **Sessions** and Customer Journey Analytics's **[!UICONTROL Sessions]** both measure the number of sessions in a date range. Counts can differ due to different session definition rules. See [Why GA4 and Customer Journey Analytics data differs](compare-data.md#sessions) for details.
 
 +++
 
@@ -398,7 +398,7 @@ Customer Journey Analytics's **[!UICONTROL Bounce Rate]** metric uses a differen
 
 To approximate GA4's bounce rate in Customer Journey Analytics, build an Engagement Rate metric and invert it with a second calculated metric defined as `1 - Engagement Rate`. See [Engaged sessions](compare-data.md#engagement-rate) for the step-by-step build.
 
-See [Data comparison between GA4 and Customer Journey Analytics](compare-data.md#bounce-rate) for a detailed explanation of the definitional difference.
+See [Why GA4 and Customer Journey Analytics data differs](compare-data.md#bounce-rate) for a detailed explanation of the definitional difference.
 
 +++
 

@@ -1,5 +1,5 @@
 ---
-title: Data comparison between GA4 and Customer Journey Analytics
+title: Why GA4 and Customer Journey Analytics data differs
 description: Understand why data between GA4 and Customer Journey Analytics can differ, and how to audit discrepancies.
 role: User
 solution: Customer Journey Analytics
@@ -19,7 +19,7 @@ topic_v2:
     internal-label: Reporting
 ---
 
-# Data comparison between GA4 and Customer Journey Analytics
+# Why GA4 and Customer Journey Analytics data differs
 
 It is normal for GA4 and Customer Journey Analytics to report different numbers for the same time period and the same apparent metric. Different data collection methods, metric definitions, identity models, and session rules all contribute to discrepancies. This page explains the most common sources of difference and provides guidance for auditing unexplained gaps.
 
