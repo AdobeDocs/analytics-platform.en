@@ -495,6 +495,13 @@ When a dataset row is selected in the datasets table, a panel on the right side 
 >abstract="Monhtly media starts are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
 
 
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_aca_monthlyreportablerows"
+>title="Monthly Content Analytics rows"
+>abstract="Monthly Content Analytics rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
+
+
+
 The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows across all connections. If not selected, select the **[!UICONTROL Usage]** tab to access the interface.
 
 This interface supports you to determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon. In addition to monitoring purposes, you can use the Usage interface to plan your Customer Journey Analytics license renewal.
