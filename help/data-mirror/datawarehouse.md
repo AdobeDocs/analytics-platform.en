@@ -4,7 +4,6 @@ description: Understand how to configure data warehouse native solutions for Exp
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-badgePremium: label="Beta"
 exl-id: 92cffcc5-d7a7-47f5-869d-1fc665594bf4
 autotag-review: '2026-05-19T08:56:46.637Z'
 TQID: 'https://experienceleague.adobe.com/A3GkkNVAO9qpbOqCrZnf6PNJfRuwMaodJVOOuSRg0w8'
@@ -33,8 +32,6 @@ topic_v2:
     internal-label: Customer journeys
 ---
 # Configure Data warehouse native solutions
-
-{{release-limited-testing}}
 
 To support Experience Platform Data Mirror for Customer Journey Analytics, the data you want to use from the three supported data warehouse native solutions ([[!DNL Azure Databricks]](#azure-databricks), [[!DNL Google BigQuery]](#google-bigquery), [[!DNL Snowflake]](#snowflake)) needs enablement for change data capture. 
 

@@ -4,7 +4,6 @@ description: Understand how to configure schemas and datasets for Experience Pla
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-badgePremium: label="Beta"
 exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
 autotag-review: '2026-05-19T07:18:47.007Z'
 TQID: 'https://experienceleague.adobe.com/nAfDMtaQvsVRAEm31fRwleirW8LaS-yS0tGTdReux0Y'
@@ -31,8 +30,6 @@ topic_v2:
     internal-label: Customer journeys
 ---
 # Configure Experience Platform
-
-{{release-limited-testing}}
 
 Experience Platform Data Mirror for Customer Journey Analytics requires the proper configuration of several Experience Platform components:
 
