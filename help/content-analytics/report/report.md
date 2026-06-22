@@ -79,18 +79,11 @@ Thumbnails are displayed when you hover over a data point in a [scatter](/help/a
 
 ### Line
 
-{{release-limited-testing-section}}
-
 ![Content Analytics thumbnails for line](/help/content-analytics/assets/aca-line-thumbnail.png)
 
 Thumbnails are displayed when you hover over a data point in a [line](/help/analysis-workspace/visualizations/line.md).
 
 ## Previews
-
->[!AVAILABILITY]
->
->Bar and scatter visualizations described in this section are in Limited Testing and might be unavailable in your environment. This note is removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
->
 
 You can open a preview popup window. To do so:
 
