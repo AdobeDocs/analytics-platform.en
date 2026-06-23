@@ -20,7 +20,7 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
 ---
-# Monitor Data Dictionary health
+# Monitor Data Dictionary health {#monitor-data-dictionary}
 
 <!-- markdownlint-disable MD034 -->
 
