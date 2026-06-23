@@ -354,7 +354,7 @@ To use the template, you have to specify the correct parameters for each functio
 
 ### Get Query String Parameter {#querystring}
 
-This function template extracts query string values.
+This function template extracts query string values for the specified query parameter. The query parameter is case sensitive. Insert a [Lowercase](#lowercase) function to ensure all upper and lower case variations of the query parameter are considered.
 
 +++ Details
 
