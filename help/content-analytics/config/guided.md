@@ -561,7 +561,7 @@ Optionally, you can specify in the **[!UICONTROL Header overrides]** section a h
 >abstract="Paid media requires Experience Platform source connectors for your ad publishers. No Google Ads or Meta Ads connectors are available in this sandbox. Configure one or more of these connectors in the **[!UICONTROL Experience Platform]** > **[!UICONTROL Sources]** interface and return to this step to continue the configuration of Content Analytics paid media."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/ads" text="Google Ads source"
 
-#### Save {#web-save}
+##### Save {#web-save}
 
 After you have specified the details for the web channel, select **[!UICONTROL Save]** to save the configuration. Select **[!UICONTROL Cancel]** to cancel the configuration.
 
