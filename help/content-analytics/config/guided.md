@@ -245,12 +245,12 @@ The following actions are available within the **[!UICONTROL Data view]** dialog
 
 ### Channels
 
-In the **[!UICONTROL Channels]** section, you select the channels you want to enable for Content Analytics. You can select between **[!UICONTROL Mobile]** and **[!UICONTROL Web]**.
+In the **[!UICONTROL Channels]** section, you select the channels you want to enable for Content Analytics. You can select between **[!UICONTROL Mobile]**, **[!UICONTROL Web]**, and **[!UICONTROL Paid media]**.
 
 * To select a channel you have not yet configured, select **[!UICONTROL Enable]**. 
 * To select a channel that is already configured but for which you want to change the configuration, select **[!UICONTROL Edit configuration]**.
 
-You can then configure the channel in more detail. That configuration is different depending on whether you enable and configure or edit a configuration for the [mobile](#mobile) or [web](#web) channel.
+You can then configure the channel in more detail. That configuration is different depending on whether you enable and configure or edit a configuration for the [mobile](#mobile), [web](#web) or [paid media](#paid-media) channel.
 
 #### Mobile {#mobile}
 
@@ -568,7 +568,13 @@ After you have specified the details for the web channel, select **[!UICONTROL S
 
 #### Paid media {#paid-media}
 
+For the paid media channel, you can configure [experience capture and definition](#experience-capture-and-definition), [data collection](#data-collection), and [header overrides](#header-overrides).
 
+##### Ad platforms {#paidmedia-adplatforms}
+
+##### Data behavior {#paidmedia-databehavior}
+
+##### Save {#paidmedia-save}
 
 ### Summary {#summary}
 
