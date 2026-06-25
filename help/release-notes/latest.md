@@ -77,6 +77,12 @@ These release notes cover the June 2026 release period. Adobe Customer Journey A
 **Audience Analysis**: AN-449656, AN-450400
 **Other**: 
 
+## Postponed features
+
+| Feature and description | [Rollout starts](releases.md) | [General Availability](releases.md) |
+| -----------|-----------|-----------|
+| **Streaming media services: Support schedule data** <br/>You can now upload scheduled data of past live Streaming Media content to more easily and accurately track viewership.<p>The following are examples of live content that are supported with schedule data upload:</p><ul><li>FAST (Free Ad Supported TV) platforms</li><li>Local streams</li><li>Live sports</li></ul><p>Uploading schedule data allows you to track viewership data for individual programs that ran during the time you designate in the upload file. You can even gather viewership data for specific topics or program segments.</p><p>These capabilities are available regardless of how you implemented Streaming Media Collection.</p><p>Previously, it was difficult to accurately tie a given session to specific programs when analyzing live content, and it wasn't possible to tie a given session to individual topics or program segments.</p><p>For more information, see [Upload schedule data to track live content](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-use-cases/track-schedule-data) | October 29, 2025 | TBD<p>(Originally planned for October 29, 2025)</p> |
+
 >[!MORELIKETHIS]
 >
 >* [Previous Customer Journey Analytics release notes for 2026](/help/release-notes/2026.md)
