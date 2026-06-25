@@ -37,7 +37,7 @@ Make sure that you meet all the following requirements before using data feeds:
 
 * A working implementation with data being ingested into Adobe Customer Journey Analytics <!-- For more information, see Data ingestion overview - add link -->
 * Your account is an Analytics product admin, or your account belongs to a product profile with access to data feeds <!--???-->
-* A bucket configured on {DNL Amazon S3}, {DNL Google Cloud Platform}, {DNL Azure RBAC}, or {DNL Azure SAS}
+* A bucket configured on [!DNL Amazon S3], [!DNL Google Cloud Platform], [!DNL Azure RBAC], or [!DNL Azure SAS]
 
 ## Get started
 

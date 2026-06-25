@@ -45,7 +45,7 @@ Data feeds in both Customer Journey Analytics and Adobe Analytics allow you to e
 | **Calculated metrics**<br/>   | Not available | Not available |
 | **Persistence model** | Flexible. Persistence settings from the data view (allocation and expiration) are applied at report time when the feed is generated. Supports all allocation settings available in a data view: **Original**, **Most Recent**, **All**, **First Known**, and **Last Known**. | Only **most recent (last touch)** and **original value (first touch)** attribution models are represented. Linear allocation is handled the same as last touch. |
 | **Output file format** | Parquet<p>Natively supports complex nested and structured data. Product lists are represented as structured arrays/nested objects. </p><p>Requires a Parquet-aware tool to read, such as BigQuery, Snowflake, or Apache Spark.</p> | TSV<p>Flat, human-readable rows. Does not natively support structured data; complex fields such as product lists must be encoded as proprietary delimited strings requiring custom parsing logic.</p> |
-| **Delivery destinations** | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform, Snowflake. | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform. Also supports **SFTP**. |
+| **Delivery destinations** | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform. | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform. Also supports **SFTP**. |
 
 {style="table-layout:auto"}
 
