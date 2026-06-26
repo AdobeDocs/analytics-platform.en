@@ -1,6 +1,6 @@
 ---
 title: Sub-Event Analysis in Customer Journey Analytics
-description: Learn how to analyze data below the event level in Customer Journey Analytics using sub-event containers to segment and filter individual items within event arrays.
+description: Learn how to analyze data below the event level in Customer Journey Analytics using sub-event containers to segment individual items within event arrays.
 feature: Filters, Segments
 role: User, Admin
 product_v2:
@@ -27,7 +27,7 @@ Sub-event analysis lets you segment and analyze data at a level below the indivi
 
 **Example:** A customer purchases three items in a single order. Without sub-event analysis, a segment for *red shoes* would match the entire event, pulling in all three products. With sub-event analysis, the segment evaluates each item in the product list individually, returning only the red shoes row.
 
-Sub-event analysis is built on *sub-event containers* — containers that an administrator configures in the data view. Once configured, these containers are available for use in the Segment Builder and in certain visualizations.
+Sub-event analysis is built on *sub-event containers* — containers that an administrator configures in the data view. Once configured, these containers are available for use in the Segment builder and in certain visualizations.
 
 ## Configure sub-event containers (administrators)
 
@@ -46,7 +46,7 @@ The **[!UICONTROL Container type]** column shows whether each custom container i
 
 ### Curate a container
 
-Custom containers must be curated before they are available in the Segment Builder. Curating a container is an explicit opt-in: only curated containers are valid for use in segments.
+Custom containers must be curated before they are available in the Segment builder. Curating a container is an explicit opt-in: only curated containers are valid for use in segments.
 
 To curate a custom container, select the container in the **[!UICONTROL Custom]** table and enable it for segmentation.
 
@@ -60,11 +60,11 @@ The container's internal name is immutable after creation. Only the display name
 
 ## Use sub-event containers in segments
 
-Once an administrator has curated at least one sub-event container, it is available in the Segment Builder as a new container option alongside Person, Session, and Event.
+Once an administrator has curated at least one sub-event container, it is available in the Segment builder as a new container option alongside Person, Session, and Event.
 
 ### Container auto-inference
 
-When you drag a dimension that belongs to a sub-event container (for example, `productID`) into the Segment Builder canvas, the builder automatically selects the most granular applicable sub-event container rather than defaulting to the Event container. This means the segment evaluates at the sub-event level without any additional configuration.
+When you drag a dimension that belongs to a sub-event container (for example, `productID`) into the Segment builder canvas, the builder automatically selects the most granular applicable sub-event container rather than defaulting to the Event container. This means the segment evaluates at the sub-event level without any additional configuration.
 
 >[!NOTE]
 >
@@ -82,9 +82,9 @@ This behavior is intentional but counterintuitive. Use explicit **[!UICONTROL In
 
 ### Filter by container in the left rail
 
-The Segment Builder left rail includes a new option to filter the component list by container. Selecting a container shows only the dimensions and metrics that belong to that container, making it easier to build focused sub-event segment conditions.
+The Segment builder left rail includes a new option to filter the component list by container. Selecting a container shows only the dimensions and metrics that belong to that container, making it easier to build focused sub-event segment conditions.
 
-This container filter is available in the Segment Builder only. It is not currently available in other left rail panels.
+This container filter is available in the Segment builder only. It is not currently available in other left rail panels.
 
 ## Auto-generated occurrence metrics
 
