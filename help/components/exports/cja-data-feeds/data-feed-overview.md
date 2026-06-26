@@ -29,7 +29,7 @@ topic_v2:
 ---
 # Data feeds overview
 
-Data feeds are a powerful way to get raw data out of Customer Journey Analytics. You can use this raw data in other platforms outside of Adobe at your organization's discretion. Data is delivered in hourly batches at the conclusion of each hour, or in daily batches at the conclusion of each day.
+Data feeds are a powerful way to get raw data out of Customer Journey Analytics. You can use this raw data in other platforms outside of Adobe at your organization's discretion. Data is delivered in hourly batches at the conclusion of each hour, or in daily batches at the conclusion of each day. 
 
 ## Prerequisites
 
