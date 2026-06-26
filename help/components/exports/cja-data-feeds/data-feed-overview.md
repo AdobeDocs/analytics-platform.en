@@ -48,3 +48,4 @@ To get started using data feeds in Customer Journey Analytics, first understand 
 1. [Map Adobe Analytics data feed columns to Customer Journey Analytics](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md).
 
 1. [Create a data feed](/help/components/exports/cja-data-feeds/create-feed.md).
+
