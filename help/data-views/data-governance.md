@@ -34,23 +34,20 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
 ---
-# Labels and policies
+# Labels, policies, and marketing actions
 
 When you create a dataset in Experience Platform, you can create [data usage labels](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/reference) for some or all elements in the dataset. You can view these labels and policies in Customer Journey Analytics. 
 
-The following labels are of special interest to Customer Journey Analytics:
+The following labels and marketing actions are of special interest to Customer Journey Analytics:
 
-* The `C1` label - **[!UICONTROL No individual export]**. This label signifies that data can only be exported in an aggregated form, without individual or device identifiers.
 
-* The `C2` label - **[!UICONTROL No third-party export]**. This label signifies that data cannot be exported to a third party.
-
-* The `C3` label - **[!UICONTROL No directly identifiable combination]**. This label signifies that data cannot be combined or otherwise used with directly identifiable information.
-
-* The `C8` label - **[!UICONTROL No measurement]**. This label signifies that data cannot be used for analytics on your organization's websites or apps.
-
-* The `C9` label - **[!UICONTROL No data science]**. This label signifies that data cannot be used in data science workflows.
-
-* The `C12` label - **[!UICONTROL No general data export]**. Schema fields labeled this way cannot be exported or downloaded from Customer Journey Analytics (via reporting, export, API, etc.)
+| Label | Marketing action | Definition |
+|---------|----------|---------|
+| `C2` | [!UICONTROL Export to third parties] | The label and associated marketing action signify that data cannot be exported to a third party, if the corresponding DULE policy is enabled. |
+| `C3` | [!UICONTROL Combine with directly identifiable data] | The label and associated marketing action signify that data cannot be combined or otherwise used with directly identifiable information, if the corresponding DULE policy is enabled. |
+| `C8` | [!UICONTROL Analytics] | The label and associated marketing action signify that data cannot be used for analytics on your organization's websites or apps, if the corresponding DULE policy is enabled. |
+| `C9` | [!UICONTROL Data Science] | The label and associated marketing action signify that data cannot be used in data science workflows, if the corresponding DULE policy is enabled. |
+| `C12` | [!UICONTROL Data Export] | The label and associated marketing action signify that schema fields labeled this way cannot be exported or downloaded from Customer Journey Analytics (via reporting, export, API, and so forth), if the corresponding DULE policy is enabled. |
 
 >[!NOTE]
 >
@@ -58,14 +55,16 @@ The following labels are of special interest to Customer Journey Analytics:
 
 Labeling in itself does not mean that these data usage labels are enforced. That's what policies are used for. You can create your policies using the [Experience Platform UI](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/policies/user-guide) or via the [Policy Service API](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/api/overview) in Experience Platform.
 
-Six Adobe-defined policies are available in Experience Platform that can surface in Customer Journey Analytics and affect reporting and data export:
+Five Adobe-defined policies are available in Experience Platform that can surface in Customer Journey Analytics and affect reporting and data export:
 
-* **[!UICONTROL Restrict aggregate data export]** policy, using the `C1` label,
-* **[!UICONTROL Restrict third-party data export]** policy, using the `C2` label,
-* **[!UICONTROL Restrict directly identifiable data combination]** policy, using the `C3` label,
-* **[!UICONTROL Restrict usage analytics and user based measurement]** policy, using the `C8` label,
-* **[!UICONTROL Restrict data science]** policy, using the `C9` label, and
-* **[!UICONTROL Restrict data export]** policy, using the `C12` label.
+
+| Policy | Label | 
+|---------|----------|
+| [!UICONTROL Restrict third-party data export] | `C2` |
+| [!UICONTROL Restrict directly identifiable data combination] | `C3` |
+| [!UICONTROL Restrict usage analytics and user based measurement] | `C8` |
+| [!UICONTROL Restrict data science] | `C9` |
+| [!UICONTROL Restrict data export] | `C12` |
 
 
 ## View data labels in Customer Journey Analytics data views
