@@ -38,9 +38,7 @@ role_v2:
 >[!CONTEXTUALHELP]
 >id="datadictionary_share_primary"
 >title="Share primary component"
->abstract="When this option is selected, the primary component is shared with everyone who has access to the duplicate components (both the owners and anyone the components are shared with). Those users can then select the primary component from the component list for future projects. However, they are not able to edit the component, even if they were the owner of a duplicate component that was consolidated. <br/>This option is available only when the primary component is a segment, calculated metric, or a date range. Metrics and dimensions are always available to all users.  
->
->When this option is deselected, the primary component still replaces duplicates in existing projects and segments, but users who didn't previously have access to it can't access it from the component list for future projects. "
+>abstract="When this option is selected, the primary component is shared with everyone who has access to the duplicate components (both the owners and anyone the components are shared with). Those users can then select the primary component from the component list for future projects. However, they are not able to edit the component, even if they were the owner of a duplicate component that was consolidated."
 
 <!-- markdownlint-disable MD034 -->
 
