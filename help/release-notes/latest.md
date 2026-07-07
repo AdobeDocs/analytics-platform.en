@@ -3,6 +3,7 @@ title: Current Customer Journey Analytics release notes
 description: View the latest Customer Journey Analytics release notes
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
+hold: true
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -46,18 +47,21 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
 ---
-# Current Customer Journey Analytics release notes (June 2026)
+# Current Customer Journey Analytics release notes (July 2026)
 
-**Last update**: June 25, 2026 
+**Last update**: July 8, 2026 
 
-These release notes cover the June 2026 release period. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly. 
+These release notes cover the July 2026 release period. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly. 
 
 ## New or updated features 
 
 | Feature and description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | -----------|-----------|-----------|
-| **Data Mirror** <br/>[Data Mirror](/help/data-mirror/data-mirror.md) is an Experience Platform capability that enables row-level change ingestion (change data capture) from external data warehouse solutions ([!DNL Snowflake], [!DNL Azure Databricks], and [!DNL Google BigQuery]) into Customer Journey Analytics using relational schemas. It preserves data relationships, enforces uniqueness, and supports versioning without requiring upstream extract, transform, and load (ETL) processes. | March 25, 2026 | June 17, 2026 |
-| **Validate your data in AI Assistant** <br/>You can use AI Assistant to [validate the data quality of your Adobe Experience Platform datasets](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/data-validation). Powered by Agent Orchestrator, the data validation capability can perform statistical and semantic validations on datasets, analyze dataset fields, identify data quality issues, and return natural language summaries with actionable insights. | | June 22, 2026 |
+| **Sub-event analysis** <br/>Sub-event analysis lets you analyze data at a level more granular than the event level. Instead of filtering on entire events, you can segment on individual containers within an event. <p>For example, you can segment on a specific product category without including all other products purchased in the same order. You can also define objects or arrays that are part of your event data as separate containers within a data view.</p> | July 8 | End of July, 2026 |
+| **CJA B2B: Support for ad hoc and relational datasets** <br/>Ad-hoc and relational datasets are now also supported in CJA B2B account-based connections.<p>(Documentation link to follow.)</p>  | | July 20, 2026 |
+| **Paid media data** <br/>Paid media is added as a third channel for Content Analytics.<p>(Documentation link to follow.)</p> | | July 31, 2026 |
+| **Connections Usage UI update** <br/>You can see usage details for each individual module, such as Customer Journey Analytics, Customer Journey Analytics B2B Edition. Additionally, you can breakdown usage reporting for each of the modules by month.<p>(Documentation link to follow.)</p> | | July 31, 2026 |
+| **CX Enterprise Coworker: Validate your data when migrating from Adobe Analytics to Customer Journey Analytics** <br/>A new skill in CX Enterprise Coworker allows you to validate the data from your Customer Journey Analytics implementation against the data from your existing Adobe Analytics implementation. <p>This skill automatically compares each dimension, metric, and trend, then generates AI-driven insights and recommendations that you can implement to facilitate your migration to Customer Journey Analytics.</p><p>(Documentation link to follow.)</p> | | End of July, 2026 |
 
 ### Fixes in Customer Journey Analytics
 
