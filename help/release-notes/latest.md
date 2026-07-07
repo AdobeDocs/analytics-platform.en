@@ -56,8 +56,14 @@ These release notes cover the June 2026 release period. Adobe Customer Journey A
 
 | Feature and description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | -----------|-----------|-----------|
-| **Data Mirror** <br/>[Data Mirror](/help/data-mirror/data-mirror.md) is an Experience Platform capability that enables row-level change ingestion (change data capture) from external data warehouse solutions ([!DNL Snowflake], [!DNL Azure Databricks], and [!DNL Google BigQuery]) into Customer Journey Analytics using relational schemas. It preserves data relationships, enforces uniqueness, and supports versioning without requiring upstream extract, transform, and load (ETL) processes. | March 25, 2026 | June 17, 2026 |
-| **Validate your data in AI Assistant** <br/>You can use AI Assistant to [validate the data quality of your Adobe Experience Platform datasets](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/data-validation). Powered by Agent Orchestrator, the data validation capability can perform statistical and semantic validations on datasets, analyze dataset fields, identify data quality issues, and return natural language summaries with actionable insights. | | June 22, 2026 |
+| **CJA B2B: Support for ad hoc and relational datasets** <br/>Ad-hoc and relational datasets are now also supported in CJA B2B account-based connections. | | July 20 |
+| **Sub-event analysis** <br/>Sub-event analysis lets you analyze data at a level more granular than the event level. Instead of filtering on entire events, you can segment on individual container within an event. For example, segmenting on a specific product category without including all other products purchased in the same order. You can define objects or arrays that are part of your event data as separate containers within a data view. | July 8 | End of July |
+| **Paid media data** <br/>Paid media is added as a third channel for Content Analytics. | | July 31 |
+| **Connections Usage UI update** <br/>You can see usage details for each individual module, such as Customer Journey Analytics, Customer Journey Analytics B2B Edition. Additionally, you can breakdown usage reporting for each of the modules by month. | | July 31 |
+| **Data validation when migrating from Adobe Analytics to Customer Journey Analytics** <br/><!--Checking with Stelian to see if this needs to be messaged, as we messaged something similar last month--> | | End of July |
+| **AA 2.0 API search features guide** <br/>Use search features to [return a subset of dimension items in reports](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/reports/search-filters). | | July 1, 2026 |
+| **Automating recurring reports with AA APIs** <br/>Set up automatic, recurring Analytics reports for your data pipeline with fresh metrics on a schedule with the [Report API](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/reports/recurring). | | July 1, 2026 |
+| **New expansion parameters for AA** <br/>Use new Dimension API expansion parameters to retrieve eVar configuration fields for allocation types, expirations, data types, and merchandising. This information has been added to both the API Reference (https://developer.adobe.com/analytics-...) | | July 1, 2026 |
 
 ### Fixes in Customer Journey Analytics
 
