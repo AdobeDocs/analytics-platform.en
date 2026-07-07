@@ -112,8 +112,9 @@ Before you create a data feed, it's important to have a basic understanding of d
    | Dimension name | Notes | Data feeds | Other reporting |
    |---|---|---|---|
    | Timestamp | Timestamp of the event period. Microsecond granularity. Represented in UTC. | Mandatory | Not available |
-   | Row ID | Unique row identifier | Mandatory | Not available |
-   | Session ID | Unique identifier for each session | Mandatory | Not available |
+   | Row ID | The unique identifier for each row of the data feed. | Mandatory | Not available |
+   | Session ID | The unique identifier for each session included in the data feed. | Mandatory | Not available |
+   | Sub-second | The sub-second (millisecond) in which an event occured. Represented in UTC. | | |
    | Person ID | The person identifier for the data view and connection | Mandatory | Optional standard |
    | Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Account ID when using the Account container | Mandatory | Optional standard |
    
