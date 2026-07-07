@@ -33,6 +33,8 @@ topic_v2:
 ---
 # Prepare to map data feed columns from Adobe Analytics to Customer Journey Analytics
 
+{{release-limited-testing}}
+
 Customer Journey Analytics provides a more flexible architecture than Adobe Analytics for determining the columns that are available to include in a data feed. Most organizations should expect to export different data feed columns from Customer Journey Analytics than they exported from Adobe Analytics. These differences are due to the following factors:
 
 * **[Data feed schema architecture](#schema-architecture)**: Adobe Analytics data feed columns are derived from Analytics variables, while Customer Journey Analytics data feed columns are derived from the data view configuration.
