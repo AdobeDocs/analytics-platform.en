@@ -46,24 +46,21 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
 ---
-# Current Customer Journey Analytics release notes (June 2026)
+# Current Customer Journey Analytics release notes (July 2026)
 
-**Last update**: June 25, 2026 
+**Last update**: July 8, 2026 
 
-These release notes cover the June 2026 release period. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly. 
+These release notes cover the July 2026 release period. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly. 
 
 ## New or updated features 
 
 | Feature and description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | -----------|-----------|-----------|
-| **CJA B2B: Support for ad hoc and relational datasets** <br/>Ad-hoc and relational datasets are now also supported in CJA B2B account-based connections. | | July 20 |
-| **Sub-event analysis** <br/>Sub-event analysis lets you analyze data at a level more granular than the event level. Instead of filtering on entire events, you can segment on individual container within an event. For example, segmenting on a specific product category without including all other products purchased in the same order. You can define objects or arrays that are part of your event data as separate containers within a data view. | July 8 | End of July |
-| **Paid media data** <br/>Paid media is added as a third channel for Content Analytics. | | July 31 |
-| **Connections Usage UI update** <br/>You can see usage details for each individual module, such as Customer Journey Analytics, Customer Journey Analytics B2B Edition. Additionally, you can breakdown usage reporting for each of the modules by month. | | July 31 |
-| **Data validation when migrating from Adobe Analytics to Customer Journey Analytics** <br/><!--Checking with Stelian to see if this needs to be messaged, as we messaged something similar last month--> | | End of July |
-| **AA 2.0 API search features guide** <br/>Use search features to [return a subset of dimension items in reports](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/reports/search-filters). | | July 1, 2026 |
-| **Automating recurring reports with AA APIs** <br/>Set up automatic, recurring Analytics reports for your data pipeline with fresh metrics on a schedule with the [Report API](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/reports/recurring). | | July 1, 2026 |
-| **New expansion parameters for AA** <br/>Use new Dimension API expansion parameters to retrieve eVar configuration fields for allocation types, expirations, data types, and merchandising. This information has been added to both the API Reference (https://developer.adobe.com/analytics-...) | | July 1, 2026 |
+| **CJA B2B: Support for ad hoc and relational datasets** <br/>Ad-hoc and relational datasets are now also supported in CJA B2B account-based connections. | | July 20, 2026 |
+| **Sub-event analysis** <br/>Sub-event analysis lets you analyze data at a level more granular than the event level. Instead of filtering on entire events, you can segment on individual container within an event. For example, segmenting on a specific product category without including all other products purchased in the same order. You can define objects or arrays that are part of your event data as separate containers within a data view. | July 8 | End of July, 2026 |
+| **Paid media data** <br/>Paid media is added as a third channel for Content Analytics. | | July 31, 2026 |
+| **Connections Usage UI update** <br/>You can see usage details for each individual module, such as Customer Journey Analytics, Customer Journey Analytics B2B Edition. Additionally, you can breakdown usage reporting for each of the modules by month. | | July 31, 2026 |
+| **CX Enterprise Coworker: Validate your data when migrating from Adobe Analytics to Customer Journey Analytics** <br/>A new skill in CX Enterprise Coworker allows you to validate the data from your Customer Journey Analytics implementation against the data from your existing Adobe Analytics implementation. <p>This skill automatically compares each dimension, metric, and trend, then generates AI-driven insights and recommendations that you can implement to facilitate your migration to Customer Journey Analytics.</p> | | End of July, 2026 |
 
 ### Fixes in Customer Journey Analytics
 
