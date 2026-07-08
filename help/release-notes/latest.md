@@ -3,7 +3,6 @@ title: Current Customer Journey Analytics release notes
 description: View the latest Customer Journey Analytics release notes
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-hold: true
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -58,28 +57,29 @@ These release notes cover the July 2026 release period. Adobe Customer Journey A
 | Feature and description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | -----------|-----------|-----------|
 | **Sub-event analysis** <br/>Sub-event analysis lets you analyze data at a level more granular than the event level. Instead of filtering on entire events, you can segment on individual containers within an event. <p>For example, you can segment on a specific product category without including all other products purchased in the same order. You can also define objects or arrays that are part of your event data as separate containers within a data view.</p> | July 15, 2026 | End of July, 2026 |
-| **CJA B2B: Support for ad hoc and relational datasets** <br/>Ad-hoc and relational datasets are now also supported in CJA B2B account-based connections.<p>(Documentation link to follow.)</p>  | | July 20, 2026 |
-| **Paid media data** <br/>Paid media is added as a third channel for Content Analytics.<p>(Documentation link to follow.)</p> | | July 31, 2026 |
-| **Connections Usage UI update** <br/>You can see usage details for each individual module, such as Customer Journey Analytics, Customer Journey Analytics B2B Edition. Additionally, you can breakdown usage reporting for each of the modules by month.<p>(Documentation link to follow.)</p> | | July 31, 2026 |
-| **CX Enterprise Coworker: Validate your data when migrating from Adobe Analytics to Customer Journey Analytics** <br/>A new skill in CX Enterprise Coworker allows you to validate the data from your Customer Journey Analytics implementation against the data from your existing Adobe Analytics implementation. <p>This skill automatically compares each dimension, metric, and trend, then generates AI-driven insights and recommendations that you can implement to facilitate your migration to Customer Journey Analytics.</p><p>(Documentation link to follow.)</p> | | End of July, 2026 |
+| **B2B Edition: Support for ad hoc and relational datasets** <br/>Ad hoc and relational datasets are now also supported in account-based connections in Customer Journey Analytics B2B Edition.<p>(Documentation link to follow.)</p> | | July 20, 2026 |
+| **Content Analytics: Paid media data** <br/>Paid media is now available as a third channel for Content Analytics.<p>(Documentation link to follow.)</p> | | July 31, 2026 |
+| **Connections Usage UI update** <br/>You can now see usage details for each individual module, such as Customer Journey Analytics or Customer Journey Analytics B2B Edition. Additionally, you can now break down usage reporting for each of the modules by month.<p>(Documentation link to follow.)</p> | | July 31, 2026 |
+| **CX Enterprise Coworker: Validate your data when migrating from Adobe Analytics to Customer Journey Analytics** <br/>A new skill in CX Enterprise Coworker allows you to validate the data from your Customer Journey Analytics implementation against the data from your existing Adobe Analytics implementation. <p>This skill automatically compares each dimension, metric, and trend individually as needed. It can also compare all Adobe Analytics report suites against all Customer Journey Analytics data views. The skill then generates AI-driven insights and recommendations that you can implement to facilitate your migration to Customer Journey Analytics.</p><p>(Documentation link to follow.)</p> | | End of July, 2026 |
 
 ### Fixes in Customer Journey Analytics
 
-**Analysis Workspace**: AN-456858, AN-455865, AN-455706, AN-455592, AN-455484, AN-455180, AN-454999, AN-454170, AN-454145, AN-453793, AN-452921, AN-452009, AN-451958, AN-451643, AN-451600, AN-451525, AN-451477, AN-451262, AN-451161, AN-450772, AN-443594, AN-434416
+**Analysis Workspace**: AN-457527, AN-451161, AN-459034, AN-458071, AN-458398
 **Components**: 
-**Connections**: AN-457065, AN-453705
-**Content Analytics**: AN-451203, AN-447596
+**Connections**: AN-457065
+**Content Analytics**: 
 **Guided analysis**: 
-**Exports**: AN-452006, AN-451989, AN-440567
-**Data views**: AN-451198
+**Exports**: 
+**Data views**: AN-453201
+**Data ingestion**: 
 **Implementation**: 
-**Report Builder**: AN-440912, AN-457586, AN-457533, AN-455713, AN-455623, AN-455063, AN-454512, AN-454053, AN-453977, AN-453781, AN-453683, AN-451974, AN-451735, AN-451731, AN-451190, AN-449813, AN-447173, AN-447139, AN-446184, AN-445794, AN-445354, AN-442819
-**Reporting**: AN-454589, AN-454517, AN-453982, AN-451822, AN-451497, AN-451463, AN-451259, AN-451215, AN-450661, AN-447699, AN-448375, AN-447692
+**Report Builder**: AN-457533, AN-453683
+**Reporting**: AN-457607, AN-447692, AN-451259, AN-455713
 **Segmentation**: 
-**Scheduled reports**: AN-451980, AN-451882, AN-450715
+**Scheduled reports**: AN-450715
 **Shared metrics and dimensions**:
-**Audience Analysis**: AN-449656, AN-450400
-**Other**: AN-457063, AN-454140, AN-453937, AN-453825, AN-452959, AN-452934, AN-452296, AN-451781, AN-450974
+**Audience Analysis**: 
+**Other**: AN-457063,
 
 ## Postponed features
 
