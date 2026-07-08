@@ -1,5 +1,5 @@
 ---
-title: Current Customer Journey Analytics release notes
+title: Current Customer Journey Analytics Release Notes
 description: View the latest Customer Journey Analytics release notes
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
@@ -48,18 +48,18 @@ topic_v2:
 ---
 # Current Customer Journey Analytics release notes (July 2026)
 
-**Last update**: July 8, 2026 
+**Last update**: July 8, 2026
 
-These release notes cover the July 2026 release period. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly. 
+These release notes cover the July 2026 release period. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
-## New or updated features 
+## New or updated features
 
 | Feature and description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | -----------|-----------|-----------|
-| **Sub-event analysis** <br/>Sub-event analysis lets you analyze data at a level more granular than the event level. Instead of filtering on entire events, you can segment on individual containers within an event. <p>For example, you can segment on a specific product category without including all other products purchased in the same order. You can also define objects or arrays that are part of your event data as separate containers within a data view.</p> | July 15, 2026 | End of July, 2026 |
+| **Sub-event analysis** <br/>Sub-event analysis lets you analyze data at a level more granular than the event level. Instead of filtering on entire events, you can segment on individual containers within an event. <p>For example, you can segment on a specific product category without including all other products purchased in the same order. You can also define objects or arrays that are part of your event data as separate containers within a data view.</p><p>(Documentation link to follow.)</p> | July 15, 2026 | End of July, 2026 |
 | **B2B Edition: Support for ad hoc and relational datasets** <br/>Ad hoc and relational datasets are now also supported in account-based connections in Customer Journey Analytics B2B Edition.<p>(Documentation link to follow.)</p> | | July 20, 2026 |
 | **Content Analytics: Paid media data** <br/>Paid media is now available as a third channel for Content Analytics.<p>(Documentation link to follow.)</p> | | July 31, 2026 |
-| **Connections Usage UI update** <br/>You can now see usage details for each individual module, such as Customer Journey Analytics or Customer Journey Analytics B2B Edition. Additionally, you can now break down usage reporting for each of the modules by month.<p>(Documentation link to follow.)</p> | | July 31, 2026 |
+| **Connections Usage interface update** <br/>In the Usage interface when managing connections, you can now see usage details for each individual module, such as Customer Journey Analytics or Customer Journey Analytics B2B Edition. <p>Additionally, you can now break down usage reporting for each of the modules by month.</p><p>(Documentation link to follow.)</p> | | July 31, 2026 |
 | **CX Enterprise Coworker: Validate your data when migrating from Adobe Analytics to Customer Journey Analytics** <br/>A new skill in CX Enterprise Coworker allows you to validate the data from your Customer Journey Analytics implementation against the data from your existing Adobe Analytics implementation. <p>This skill automatically compares each dimension, metric, and trend individually as needed. It can also compare all Adobe Analytics report suites against all Customer Journey Analytics data views. The skill then generates AI-driven insights and recommendations that you can implement to facilitate your migration to Customer Journey Analytics.</p><p>(Documentation link to follow.)</p> | | End of July, 2026 |
 
 ### Fixes in Customer Journey Analytics
@@ -79,13 +79,13 @@ These release notes cover the July 2026 release period. Adobe Customer Journey A
 **Scheduled reports**: AN-450715
 **Shared metrics and dimensions**:
 **Audience Analysis**: 
-**Other**: AN-457063,
+**Other**: AN-457063
 
 ## Postponed features
 
 | Feature and description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | -----------|-----------|-----------|
-| **Streaming media services: Support schedule data** <br/>You can now upload scheduled data of past live Streaming Media content to more easily and accurately track viewership.<p>The following are examples of live content that are supported with schedule data upload:</p><ul><li>FAST (Free Ad Supported TV) platforms</li><li>Local streams</li><li>Live sports</li></ul><p>Uploading schedule data allows you to track viewership data for individual programs that ran during the time you designate in the upload file. You can even gather viewership data for specific topics or program segments.</p><p>These capabilities are available regardless of how you implemented Streaming Media Collection.</p><p>Previously, it was difficult to accurately tie a given session to specific programs when analyzing live content, and it wasn't possible to tie a given session to individual topics or program segments.</p><p>For more information, see [Upload schedule data to track live content](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-use-cases/track-schedule-data) | October 29, 2025 | TBD<p>(Originally planned for October 29, 2025)</p> |
+| **Streaming media services: Support schedule data** <br/>You can now upload scheduled data of past live Streaming Media content to more easily and accurately track viewership.<p>The following are examples of live content that are supported with schedule data upload:</p><ul><li>FAST (Free Ad Supported TV) platforms</li><li>Local streams</li><li>Live sports</li></ul><p>Uploading schedule data allows you to track viewership data for individual programs that ran during the time you designate in the upload file. You can even gather viewership data for specific topics or program segments.</p><p>These capabilities are available regardless of how you implemented Streaming Media Collection.</p><p>Previously, it was difficult to accurately tie a given session to specific programs when analyzing live content, and it wasn't possible to tie a given session to individual topics or program segments.</p><p>For more information, see [Upload schedule data to track live content](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-use-cases/track-schedule-data). | October 29, 2025 | TBD<p>(Originally planned for October 29, 2025)</p> |
 
 >[!MORELIKETHIS]
 >
