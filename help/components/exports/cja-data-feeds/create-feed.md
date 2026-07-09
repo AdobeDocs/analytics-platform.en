@@ -111,7 +111,7 @@ Before you create a data feed, it's important to have a basic understanding of d
 
    | Dimension name | Notes | Data feeds | Other reporting |
    |---|---|---|---|
-   | Timestamp UTC | The date and time the event occurred, represented in UTC time zone. Supports sub-second (millisecond) granularity. | Mandatory | Not available |
+   | Timestamp UTC | The date and time the event occurred, represented in UTC time zone. Supports sub-second (micro-second) granularity. | Mandatory | Not available |
    | Row ID | The unique identifier for each row included in the data feed. | Mandatory | Not available |
    | Session ID | The unique identifier for each session included in the data feed. | Mandatory | Not available |
    | Person ID | The person identifier for the data view and connection | Mandatory | Optional standard |
