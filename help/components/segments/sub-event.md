@@ -1,4 +1,60 @@
 ---
+title: Sub-Event Analysis
+description: Learn how sub-event analysis lets you filter individual products or other containers within an event in Csutomer Journey Analytics, eliminating attribution bleed in product reports.
+feature: Segmentation
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: a544b409-2610-410d-a842-474ac1d0d54e
+    internal-label: Segment Builder
+---
+# Sub-event analysis
+
+{{release-limited-testing}}
+
+Sub-event analysis lets you analyze event data at a level more granular than the event level. Instead of filtering on entire event, you can segment on individual containers within events. For example:
+
+- Segmenting on a specific product category without including all other products purchased in the same order
+- Segmenting on a specific assets category within content analytics data?
+- Segmenting on a spefific media channel within media analytics data.
+
+
+In Customer Journey Analytics, you define containers within a data view for which you want to use sub-event analysis. Without sub-event analysis, segmenting on a container item attribute returns all events where any item within an event matches the container item attribute. The result is incorrect attribution and inflated revenue metrics. Sub-event analysis scopes the filter to individual item rows within a event and solves these issues.
+
+In sub-event analysis exclude logic behaves differently from standard event-level exclusion against the container. When you exclude item attributes within the container, the segment returns events that **have items** within the container but don't match your exclusion criteria. The segment does not return event with no items at all. 
+
+
+>[!WARNING]
+>
+>The following sections are going to be moved to their relevant articles (on Segment builder, Quick segment, Histogram, and more) when this feature releases. And these articles will then refer to this article for reference on what sub-hit analysis is. This action is currently not done so as not to confuse customers while the feature is unavailable.
+
+## Container auto-inference
+
+When you drag a product dimension or metric into the Segment Builder or Quick segment panel, the system automatically selects the **[!UICONTROL Products]** container and does not use the default **[!UICONTROL Hit]** container. This behavior keeps the segment scoped to individual products rather than to the entire hit.
+
+## Mixed container behavior
+
+If you drag both product-level and hit-level components into a single segment rule, the system uses the **[!UICONTROL Hit]** container, which is the highest (least granular) shared container. If all components that are part of a segment rule are product-level, the **[!UICONTROL Products]** container is used.
+
+## Product filters in the left rail
+
+The Segment Builder includes a new filter option in the left rail to display only product dimensions and metrics. This makes it easier to find product-level components when building sub-hit segments.
+
+>[!NOTE]
+>
+>This filter option is available in the Segment Builder only. It is not available in other left rails such as Analysis Workspace panels or visualizations.
+
+## Histogram visualization
+
+The Histogram visualization includes a new sub-hit container drop-down menu. This lets you bucket metric values at the product level. For example, counting product occurrences per order rather than per hit.
+
+The Histogram is the only visualization that requires a sub-hit container selection. All other panels and visualizations work with sub-hit analysis data without additional configuration.
+
+
+<!-- AI generated content
+
+---
 <<<<<<< Updated upstream
 title: Sub-Event Analysis in Customer Journey Analytics
 description: Learn how to analyze data below the event level in Customer Journey Analytics using sub-event containers to segment individual items within event arrays.
@@ -102,57 +158,5 @@ These auto-generated metrics behave like the standard Person, Session, and Event
 The Histogram is the only visualization that requires you to select a sub-event container explicitly. A container drop-down menu appears in the Histogram panel when sub-event containers are available in the data view, allowing you to scope the distribution to a specific container level.
 
 No other panels or visualizations require changes to support sub-event containers.
-=======
-title: Sub-Event Analysis
-description: Learn how sub-event analysis lets you filter individual products or other containers within an event in Csutomer Journey Analytics, eliminating attribution bleed in product reports.
-feature: Segmentation
-feature_v2:
-  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
-    internal-label: Analysis Workspace
-subfeature_v2:
-  - id: a544b409-2610-410d-a842-474ac1d0d54e
-    internal-label: Segment Builder
----
-# Sub-event analysis
 
-{{release-limited-testing}}
-
-Sub-event analysis lets you analyze event data at a level more granular than the event level. Instead of filtering on entire event, you can segment on individual containers within events. For example:
-
-- Segmenting on a specific product category without including all other products purchased in the same order
-- Segmenting on a specific assets category within content analytics data?
-- Segmenting on a spefific media channel within media analytics data.
-
-
-In Customer Journey Analytics, you define containers within a data view for which you want to use sub-event analysis. Without sub-event analysis, segmenting on a container item attribute returns all events where any item within an event matches the container item attribute. The result is incorrect attribution and inflated revenue metrics. Sub-event analysis scopes the filter to individual item rows within a event and solves these issues.
-
-In sub-event analysis exclude logic behaves differently from standard event-level exclusion against the container. When you exclude item attributes within the container, the segment returns events that **have items** within the container but don't match your exclusion criteria. The segment does not return event with no items at all. 
-
-
->[!WARNING]
->
->The following sections are going to be moved to their relevant articles (on Segment builder, Quick segment, Histogram, and more) when this feature releases. And these articles will then refer to this article for reference on what sub-hit analysis is. This action is currently not done so as not to confuse customers while the feature is unavailable.
-
-## Container auto-inference
-
-When you drag a product dimension or metric into the Segment Builder or Quick segment panel, the system automatically selects the **[!UICONTROL Products]** container and does not use the default **[!UICONTROL Hit]** container. This behavior keeps the segment scoped to individual products rather than to the entire hit.
-
-## Mixed container behavior
-
-If you drag both product-level and hit-level components into a single segment rule, the system uses the **[!UICONTROL Hit]** container, which is the highest (least granular) shared container. If all components that are part of a segment rule are product-level, the **[!UICONTROL Products]** container is used.
-
-## Product filters in the left rail
-
-The Segment Builder includes a new filter option in the left rail to display only product dimensions and metrics. This makes it easier to find product-level components when building sub-hit segments.
-
->[!NOTE]
->
->This filter option is available in the Segment Builder only. It is not available in other left rails such as Analysis Workspace panels or visualizations.
-
-## Histogram visualization
-
-The Histogram visualization includes a new sub-hit container drop-down menu. This lets you bucket metric values at the product level. For example, counting product occurrences per order rather than per hit.
-
-The Histogram is the only visualization that requires a sub-hit container selection. All other panels and visualizations work with sub-hit analysis data without additional configuration.
-
->>>>>>> Stashed changes
+-->
