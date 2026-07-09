@@ -70,11 +70,16 @@ To configure a new or existing data view:
 
 ![Configure data view B2B](assets/dataview-configure-b2b.png)
 
+>[!TAB Separate containers tab]
+
+![Configure data view with separate containers tab](assets/data-view-configure-containers.png)
+
+
 >[!ENDTABS]
 
 
 1. Select the **[!UICONTROL Configure]** tab (if not already active).
-1. Specify [!UICONTROL Settings], [!UICONTROL Container], and [!UICONTROL Calendar] details (see below). 
+1. Specify **[!UICONTROL Settings]**, **[!UICONTROL Container]**, and **[!UICONTROL Calendar]** details (see below). 
 1. Select **[!UICONTROL Save and continue]** to continue configuring your new or existing data view. Select **[!UICONTROL Save]** to save the configuration for your existing data view.
    
 
@@ -133,6 +138,9 @@ Designates the name of containers for the data view. Container names are frequen
 
 {style="table-layout:auto"}
 
+When you see **[!UICONTROL Containers have moved. Containers are now available on the dedicated Containers tab]**, you can define containers in a separate [Containers](#containers-1) tab.
+
+
 ### AI Settings
 
 Select **[!UICONTROL Enable for Data Insights Agent]** to enable the data view for the [Data Insights Agent](/help/data-analysis-ai.md). The Data Insights Agent is a generative AI conversation agent that is accessible from the AI Assistant in Customer Journey Analytics. It helps you quickly analyze your data with text prompts. The agent builds relevant visualizations in Analysis Workspace using components from your data view and using your actual data.
@@ -152,6 +160,79 @@ Indicates the calendar format that you want the data view to follow. You can hav
 
 {style="table-layout:auto"}
 
+## Containers
+
+{{release-limited-testing-section}}
+
+
+>[!BEGINTABS]
+
+>[!TAB Standard] 
+
+![Configure data view](assets/data-view-containers-b2c.png)
+
+>[!TAB B2B Edition]
+
+![Configure data view B2B](assets/data-view-containers-b2b.png)
+
+>[!ENDTABS]
+
+In the **[!UICONTROL Containers]** tab you can rename system containers and add custom containers. 
+
+You add custom containers to your data view so you can use these containers for [sub-event analysis](/help/components/segments/sub-event.md). Custom containers can be defined from:
+
+* objects or arrays available within the datasets that are part of the connection. For example, **[!UICONTROL productListItems]** or **[!UICONTROL placeContext.activePOIs]**.
+* derived fields that return an array through the use of the [Split](/help/data-views/derived-fields/derived-fields.md#split) function.
+* data view components that are configured to return an array using the [Substring](/help/data-views/component-settings/substring.md) component settings with the [Delimiter](/help/data-views/component-settings/substring.md#delimiter) option.
+
+### System containers
+
+To rename system containers:
+
+1. Select ![Edit](/help/assets/icons/Edit.svg) to edit the **[!UICONTROL Display name]** of the container.
+1. Define a new name for the container.
+1. Select **[!UICONTROL Save]**.
+
+
+### Custom containers
+
+To add a custom container:
+
+1. Select **[!UICONTROL Add custom container]**.
+1. In the **[!UICONTROL Add container]** dialog:
+   1. Select a container from the **[!UICONTROL Container]** drop-down menu. For example: **[!UICONTROL productListItems.productCategories]**.
+
+      Upon selection, you see updated values for **[!UICONTROL Schema path]** and **[!UICONTROL Schema type]**.
+
+   1. Enter a **[!UICONTROL Display name]** for the container. For example: `Product Categories`.
+   1. Select **[!UICONTROL Save]**.
+
+To edit a custom container:
+
+1. Select ![More](/help/assets/icons/More.svg) for the custom container in the **[!UICONTROL Display name]** column.
+1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** from the context menu.
+1. In the **[!UICONTROL Edit container]** dialog:
+   1. Modify **[!UICONTROL Container]** or **[!UICONTROL Display name]** or both.
+   1. Select **[!UICONTROL Save]**.
+   
+To delete a custom container:
+
+1. Select ![More](/help/assets/icons/More.svg) for the custom container in the Display name column.
+1. Select ![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** from the context menu. 
+
+   >[!NOTE]
+   >
+   >The custom container is deleted without confirmation.
+   >
+
+To change the list of custom containers:
+
+1. Select ![ColumnSetting](/help/assets/icons/ColumnSetting.svg).
+1. In **[!UICONTROL Customize table]**:
+   1. Select the columns to show.
+   1. Select **[!UICONTROL Save]**.
+
+
 ## Components
 
 Next, you can set a data view's components, which means you can create metrics and dimensions from schema elements. You can also use standard components.
@@ -164,7 +245,7 @@ Next, you can set a data view's components, which means you can create metrics a
 
    ![Components tab](assets/dataview-components.png)
 
-   You can see the [!UICONTROL Connection] at the top left, which contains the datasets, and its [!UICONTROL Schema fields] below.  The components already included are standard components (system generated) required for all data views (like Events, People, Sessions metrics, and Minute, Quarter, Week dimensions). Adobe also applies the filter **[!UICONTROL Contains data]** and **[!UICONTROL is not deprecated]** by default, so that only Schema fields appear that contain data and which are not deprecated.
+   You can see the [!UICONTROL Connection] at the top left, which contains the datasets, and its [!UICONTROL Schema fields] below.  The components already included are standard components (system generated) required for all data views (like Events, People, Sessions metrics, and Minute, Quarter, Week dimensions).<ul><li>When you have defined custom containers, metrics for these containers are automatically added and identified using ![ShowAllLayer](/help/assets/icons/ShowAllLayer.svg) **[!UICONTROL _custom container name_ Occurrences]**.</li><li>The filter **[!UICONTROL is not deprecated]** is applied by default, so that only Schema fields appear which are not deprecated.</li></ul>
 
 1. Search for a schema field using ![Search icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Search schema fields]** or find a field by moving into any of the dataset collections, like ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL Event datasets]** or ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL Lookup datasets]**. For event datasets, separate collections for ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL XDM fields]** and ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL Adhoc and relational fields]** are available.<br/>Alternatively, you can create a derived field using ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Create derived field** . See [Derived fields](./derived-fields/derived-fields.md) for more information.
 
