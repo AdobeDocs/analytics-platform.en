@@ -120,7 +120,7 @@ You can set the [view density](https://experienceleague.adobe.com/en/docs/analyt
 
 ## Inline classifications example
 
-This example illustrated how to use the **[!UICONTROL Rename selected row]**, **[!UICONTROL Combine selected rows]**, and **[!UICONTROL Create as derived field]** context menu options. And how to reset the modified freeform table.
+This example illustrates how to use the **[!UICONTROL Rename selected row]**, **[!UICONTROL Combine selected rows]**, and **[!UICONTROL Create as derived field]** context menu options. And how to reset the modified freeform table.
 
 * Rename **[!UICONTROL No value]** row to **[!UICONTROL Other]**.
 
