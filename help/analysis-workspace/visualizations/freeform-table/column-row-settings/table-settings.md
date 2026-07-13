@@ -165,4 +165,3 @@ This example illustrates how to use the **[!UICONTROL Rename selected row]**, **
   1. Select **[!UICONTROL Reset renamed rows]** from the **[!UICONTROL Rows renamed]** popup.
 
      ![Reset freeform table](assets/popup-reset.png)
-
