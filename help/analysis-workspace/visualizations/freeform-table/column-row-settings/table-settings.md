@@ -78,7 +78,7 @@ The following additional context menu options are available when selecting one o
 
 | Option | Description |
 | --- | --- |
-| **[!UICONTROL Copy selection to clipboard]** | Copy the information in the selected cells of the freeform table. | 
+| **[!UICONTROL Copy selection to clipboard]** | Copy the information in the selected cells of the freeform table. |
 | **[!UICONTROL Download items as CSV (*dimension name*)]** | Immediately download the dimension items (to a maximum of 50,000) of the visualization to your local device. A maximum of 50,000 dimension items for the selected dimension. |
 | **[!UICONTROL Create hyperlink]** | Create a hyperlink for the item. See [Hyperlinks for dimensions in a freeform table](../freeform-table-hyperlinks.md) |
 | **[!UICONTROL Edit hyperlink]** | Edit a hyperlink for the item. See [Hyperlinks for dimensions in a freeform table](../freeform-table-hyperlinks.md) |
@@ -94,7 +94,7 @@ The following additional context menu options are available when selecting one o
 | **[!UICONTROL Rename selected row]** | Rename the selected row. Enter a **[!UICONTROL Name]** in the **[!UICONTROL Rename selected row]** dialog. Select **[!UICONTROL OK]** to confirm or **[!UICONTROL Cancel]** to cancel. Once a row in a freeform table is renamed, the dimension name in the header column is appended with **[!UICONTROL (modified)]** and a ![Gear](/help/assets/icons/Gear.svg) icon is available to reset renamed rows in the dimension header column. See [Inline classification example](#inline-classifications-example). |
 | **[!UICONTROL Combine selected rows]** | Combine the selected rows. Enter a **[!UICONTROL Name]** in the **[!UICONTROL Combine selected rows]** dialog. Select **[!UICONTROL OK]** to confirm or **[!UICONTROL Cancel]** to cancel. Once rows in a freeform table are combined, the dimension namein the header column is appended with **[!UICONTROL (modified)]** and a ![Gear](/help/assets/icons/Gear.svg) icon is available to reset renamed rows in the dimension header column. See [Inline classification example](#inline-classifications-example). |
 | **[!UICONTROL Create as derived field]** | *You must be a Customer Journey Analytics product administrator to see this context menu option.*<br/>Available on any selected row of a freeform table which is modified as the result of renaming or combining rows. When selected, the [Derived field interface](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field) opens with the modifications you have made to the freeform table already prefilled. See [Inline classification example](#inline-classifications-example). |
-| **[!UICONTROL Create annotation from selection]** | Open up the [Annotation builder](/help/components/annotations/create-annotations.md#annotation-builder) to build an annotation for the selection. | 
+| **[!UICONTROL Create annotation from selection]** | Open up the [Annotation builder](/help/components/annotations/create-annotations.md#annotation-builder) to build an annotation for the selection. |
 | **[!UICONTROL Create segment from selection]** | Open up the [Segment builder](/help/components/segments/seg-builder.md) to build a segment from the selection. |
 | **[!UICONTROL Create audience from selection]** | Open up the [Audience builder](/help/components/audiences/publish.md#audience-builder) to build an audience from the selection. |
 
