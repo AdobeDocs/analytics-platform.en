@@ -29,7 +29,9 @@ topic_v2:
 ---
 # Data feeds overview
 
-Data feeds are a powerful way to get raw data out of Customer Journey Analytics. You can use this raw data in other platforms outside of Adobe at your organization's discretion. Data is delivered in hourly batches at the conclusion of each hour, or in daily batches at the conclusion of each day.
+{{release-limited-testing}}
+
+Data feeds are a powerful way to get raw data out of Customer Journey Analytics. You can use this raw data in other platforms outside of Adobe at your organization's discretion. Data is delivered in hourly batches at the conclusion of each hour, or in daily batches at the conclusion of each day. 
 
 ## Prerequisites
 
@@ -37,7 +39,7 @@ Make sure that you meet all the following requirements before using data feeds:
 
 * A working implementation with data being ingested into Adobe Customer Journey Analytics <!-- For more information, see Data ingestion overview - add link -->
 * Your account is an Analytics product admin, or your account belongs to a product profile with access to data feeds <!--???-->
-* A bucket configured on {DNL Amazon S3}, {DNL Google Cloud Platform}, {DNL Azure RBAC}, or {DNL Azure SAS}
+* A bucket configured on [!DNL Amazon S3], [!DNL Google Cloud Platform], [!DNL Azure RBAC], or [!DNL Azure SAS]
 
 ## Get started
 
@@ -48,3 +50,4 @@ To get started using data feeds in Customer Journey Analytics, first understand 
 1. [Map Adobe Analytics data feed columns to Customer Journey Analytics](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md).
 
 1. [Create a data feed](/help/components/exports/cja-data-feeds/create-feed.md).
+
