@@ -369,6 +369,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Manage segments](/help/components/segments/seg-manage.md)
     + [Operators](/help/components/segments/seg-operators.md)
     + [Use segments](/help/components/segments/seg-use.md)
+    + {hide-from-toc} [Sub-event analysis](/help/components/segments/sub-event.md)
   + Calculated metrics {#cja-calcmetrics}
     + [Overview](../components/calc-metrics/calc-metr-overview.md)
     + Workflow {#cm-workflow}

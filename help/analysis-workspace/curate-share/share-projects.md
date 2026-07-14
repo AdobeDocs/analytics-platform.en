@@ -212,9 +212,9 @@ To share an Analysis Workspace project with anyone:
 
 1. Choose whether to enable the following security option (this option can be controlled by your Customer Journey Analytics administrator): 
 
-   * **[!UICONTROL Require CX Enterprise authentication]:** 
+   * **[!UICONTROL Require Experience Cloud authentication]:** 
    
-     When this option is enabled, the only users who can access the project are those who can log in to the CX Enterprise organization where the project that you are sharing was created. However, users you share with do not need to have access to Customer Journey Analytics.
+     When this option is enabled, the only users who can access the project are those who can log in to the CX Enterprise (Experience Cloud) organization where the project that you are sharing was created. However, users you share with do not need to have access to Customer Journey Analytics.
 
      Customer Journey Analytics administrators can configure this preference for the company, as described in [Preferences](/help/analysis-workspace/user-preferences.md). You might encounter the following scenarios, depending on how the administrator configured this option:
      

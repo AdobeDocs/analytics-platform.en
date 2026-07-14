@@ -27,6 +27,8 @@ topic_v2:
 ---
 # Compare data feeds in Customer Journey Analytics and Adobe Analytics
 
+{{release-limited-testing}}
+
 Data feeds in both Customer Journey Analytics and Adobe Analytics allow you to export raw data to third-party platforms. If you previously used data feeds in Adobe Analytics, use the following information to understand differences in available features and concepts:  
 
 | **Concepts and configuration options** | **Customer Journey Analytics** | **Adobe Analytics** |
