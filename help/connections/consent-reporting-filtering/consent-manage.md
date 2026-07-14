@@ -4,7 +4,7 @@ description: Learn how to view, edit, and delete consent reporting and filtering
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
+hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -53,6 +53,18 @@ To view your existing configurations:
 
    * **[!UICONTROL Status]**: The status of the configuration.
 
+   You can hide any columns by selecting the Column icon ![Column icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg), deselecting any columns that you want to hide, then selecting **[!UICONTROL Apply]**.
+
+1. (Optional) To filter the list of configurations, select the **Filter** ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), then filter by any of the following criteria:
+
+   * **[!UICONTROL Connection]**
+
+   * **[!UICONTROL Created by]**
+
+   * **[!UICONTROL Sandbox]**
+
+   * **[!UICONTROL Status]**
+
 ## Edit a configuration
 
 >[!IMPORTANT]
@@ -64,6 +76,10 @@ To edit an existing configuration:
 1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Consent reporting and filtering]**.
 
 1. Select the name of the configuration that you want to edit.
+
+   Or
+
+   Select the checkbox next to the configuration that you want to edit, then select **[!UICONTROL Edit]**.
 
 1. Make your changes, then select **[!UICONTROL Save]**.
 

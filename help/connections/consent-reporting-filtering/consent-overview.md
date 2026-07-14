@@ -4,7 +4,7 @@ description: Learn how to report on visitor consent policy membership and filter
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
+hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -37,11 +37,9 @@ The following diagram and associated table show a high-level representation of h
 
 ![Consent reporting and filtering overview](assets/consent-overview.png)
 
-<!-- TODO: Add the customer-facing service-flow diagram. Do not expose internal service names (for example, Omnivore, CPES, Audience Service, DULE) in the published image or table. -->
-
 | Number | Feature | Function |
 |---------|----------|---------|
-| 1 | Provisioning wizard | The configuration interface in Customer Journey Analytics used to enable consent reporting and, optionally, consent filtering. |
+| 1 | Consent reporting and filtering configuration | The configuration interface in Customer Journey Analytics used to enable consent reporting and, optionally, consent filtering. |
 | 2 | Sandbox | Must contain the Profile dataset that includes the consent policy membership data you want to report on. |
 | 3 | Profile dataset | Includes the consent policy membership data for each visitor. Consent policy membership is stored in the `consentPoliciesIDMap` field of a Profile dataset. This Profile dataset is added to the connection that you select. <p>Each visitor's profile lists the consent policies that the visitor matches. Customer Journey Analytics reads this field to make consent policies available for reporting and to evaluate which visitors to include during ingestion.</p> |
 | 4 | Consent policy lookup dataset | Provides friendly policy names and descriptions for reporting. The lookup dataset is created automatically and kept in sync with Experience Platform. A maximum of one consent policy lookup dataset exists per sandbox. |
@@ -55,7 +53,7 @@ Consent reporting and filtering are two separate capabilities. You can enable co
 
 ### Consent reporting
 
-When you enable consent reporting, Customer Journey Analytics adds a set of consent policy components to the data views under the configured connection. These components let you use Analysis Workspace to report on which visitors match the various consent policies, using the consent policy membership data in your Experience Platform Profile datasets. 
+When you enable consent reporting, Customer Journey Analytics adds a set of consent policy components to the data views under the configured connection. These components let you use Analysis Workspace to report on which visitors match the various consent policies, using the consent policy membership data in your Experience Platform Profile datasets.
 
 To keep reporting readable, Customer Journey Analytics syncs policy names and descriptions from Experience Platform into a consent policy lookup dataset. When a policy is created, updated, renamed, or deleted in Experience Platform, the lookup dataset is updated automatically.
 
@@ -77,10 +75,28 @@ Consider the following when using consent filtering:
 
   | Marketing action | Description |
   |---------|----------|
-  | **Analytics** | Standard Customer Journey Analytics reporting in Analysis Workspace. |
-  | **Data science** | Advanced analytics, machine learning, and data science use cases. |
+  | **[!UICONTROL Analytics]** | Standard Customer Journey Analytics reporting in Analysis Workspace. |
+  | **[!UICONTROL Data science]** | Advanced analytics, machine learning, and data science use cases. |
 
 * A visitor's data is ingested only if the visitor matches **all** applicable consent policies. If a visitor is missing any applicable policy, that visitor's data is excluded.
+
+## Configure consent reporting and filtering
+
+When you configure consent reporting and filtering, you select the sandbox and Profile dataset that contain your consent policy membership data, choose the connection or connections to configure, and choose whether to filter data for each marketing action. Customer Journey Analytics then creates the consent policy lookup dataset and the consent policy components automatically.
+
+For more information, see [Configure consent reporting and filtering](/help/connections/consent-reporting-filtering/consent-configure.md).
+
+## Manage consent reporting and filtering configurations
+
+You can manage consent reporting and filtering configurations after they are created. You can view, edit, and delete configurations.
+
+For information about managing existing configurations, see [Manage consent reporting and filtering configurations](/help/connections/consent-reporting-filtering/consent-manage.md).
+
+## Analyze consent policy data
+
+With consent policy data available in Customer Journey Analytics, you can report on which visitors match which consent policies and use that insight to understand consenting audiences across your reports.
+
+For more information, see [Analyze consent policy data](/help/connections/consent-reporting-filtering/consent-analyze.md).
 
 ## Consent reporting and filtering role and permission requirements
 
@@ -92,9 +108,14 @@ The following Customer Journey Analytics roles and Experience Platform permissio
 | View consent policy components in the data view | Product profile administrator for the product profile that the data view is assigned to <p>For more information, see [Access control](/help/technotes/access-control.md).</p> | N/A |
 | Use consent policy components in Analysis Workspace | Access to a data view where the consent policy components were added | N/A |
 
-## Next steps
+## Consent reporting and filtering use cases
 
-* [Configure consent reporting and filtering](/help/connections/consent-reporting-filtering/consent-configure.md)
-* [Manage consent reporting and filtering configurations](/help/connections/consent-reporting-filtering/consent-manage.md)
-* [Analyze consent policy data](/help/connections/consent-reporting-filtering/consent-analyze.md)
-* [Consent reporting and filtering use cases](/help/connections/consent-reporting-filtering/consent-use-cases.md)
+For example use cases that highlight the value that consent reporting and filtering provides, see [Consent reporting and filtering use cases](/help/connections/consent-reporting-filtering/consent-use-cases.md).
+
+## Consent reporting and filtering limits
+
+Consider the following limits when [configuring consent reporting and filtering](/help/connections/consent-reporting-filtering/consent-configure.md):
+
+* A single sandbox can have only one consent policy lookup dataset. Multiple configurations in the same sandbox share that lookup dataset.
+
+* A connection can be associated with only one consent reporting and filtering configuration.

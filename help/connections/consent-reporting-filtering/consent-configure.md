@@ -4,7 +4,7 @@ description: Learn how to use the provisioning wizard to enable consent reportin
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
+hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -81,13 +81,45 @@ To create a consent reporting and filtering configuration:
 
 1. Select **[!UICONTROL Create]** to create the configuration.
 
-## What the configuration creates
+   Customer Journey Analytics automatically:
 
-When you create a configuration, Customer Journey Analytics automatically:
+   * Adds the selected Profile dataset to the connection.
+   * Creates a consent policy lookup dataset for the sandbox (if one does not already exist) and syncs policy names and descriptions from Experience Platform.
+   * Adds the consent policy components (dimensions, metrics, and a derived field) to the data views within the configured connection.
+   * Applies the **consent** internal label to the new components so that you can filter for them in the data view. For more information about internal labels, see [Labels and policies](/help/data-views/data-governance.md).
 
-* Adds the selected Profile dataset to the connection.
-* Creates a consent policy lookup dataset for the sandbox (if one does not already exist) and syncs policy names and descriptions from Experience Platform.
-* Adds the consent policy components (dimensions, metrics, and a derived field) to the data views within the configured connection.
-* Applies the **consent** internal label to the new components so that you can filter for them in the data view. For more information about internal labels, see [Labels and policies](/help/data-views/data-governance.md).
+1. After the configuration completes, [view the consent policy components in the data view](#view-consent-policy-components-in-the-data-view) to verify that they are available.
 
-After the configuration completes, verify that the consent policy components are available in your data views. For more information, see [Analyze consent policy data](/help/connections/consent-reporting-filtering/consent-analyze.md).
+## View consent policy components in the data view
+
+After you [create a configuration](#create-a-configuration), you can verify that the consent policy components were added to the data views under the configured connection.
+
+To view the consent policy components in the data view, you must be a product profile administrator for the product profile that the data view is assigned to. For more information, see [Access control](/help/technotes/access-control.md).
+
+To view the consent policy components in the data view:
+
+1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Data views]**.
+
+1. Open a data view that is associated with the configured connection.
+
+1. In the **[!UICONTROL Dimensions]** section, the following dimensions should now be available:
+
+   * **[!UICONTROL Consent Policy ID]**
+
+   * **[!UICONTROL Policy Name]**
+
+   * **[!UICONTROL Policy Description]**
+
+1. In the **[!UICONTROL Metrics]** section, the following metrics should now be available:
+
+   * **[!UICONTROL Visitors with Consent]**
+
+   * **[!UICONTROL Events with Consent]**
+
+   * **[!UICONTROL Unique Consent Policies]**
+
+   <!-- TODO: Add a screenshot of the consent policy components in the data view (assets/consent-components-dataview.png). -->
+
+1. Use the consent policy components in Analysis Workspace.
+
+   Users who have access to the data view in Analysis Workspace can now see the new components and use them in their analyses. For information about how to use the consent policy components in Analysis Workspace, see [Analyze consent policy data](/help/connections/consent-reporting-filtering/consent-analyze.md).
