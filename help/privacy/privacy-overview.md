@@ -4,6 +4,7 @@ description: Describes how data governance works in Customer Journey Analytics.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
 role: Admin
+hold: true
 autotag-review: '2026-05-19T09:18:17.400Z'
 TQID: 'https://experienceleague.adobe.com/oDdNRwjtEU2vmeDvQ3DcM8w6XKQTBoTaXAIhmgjSoBk'
 product_v2:
@@ -43,6 +44,12 @@ In addition, when data is exported from Customer Journey Analytics (via reportin
 This integration allows you to manage compliance more easily. Data stewards in your organization can set policies to restrict usage. As a result, your Customer Journey Analytics users can more confidently use data, knowing that it complies with policies defined by data stewards. 
 
 [Learn more](/help/data-views/data-governance.md)
+
+## Consent Reporting and Filtering
+
+Customer Journey Analytics can use the consent policy membership data in your Experience Platform Profile datasets to report on visitor consent and, optionally, exclude non-consenting visitors before their data is ingested. Consent reporting makes consent policies available as components in Analysis Workspace, and consent filtering excludes non-consenting visitors at ingest time based on the marketing actions that you configure.
+
+[Learn more](/help/connections/consent-reporting-filtering/consent-overview.md)
 
 ## Privacy Requests
 
