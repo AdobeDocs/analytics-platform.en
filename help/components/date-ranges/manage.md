@@ -105,15 +105,8 @@ You edit a date range in two ways:
 
 * In the [[!UICONTROL Date ranges] list](#date-ranges-list), select the title of the date range.
 
-You use the [Date range builder](/help/components/date-ranges/create.md#date-range-builder) to edit the date range.
-
-
-
-
-Use the date range manager to share, rename, or delete date ranges. To reach the date manager:
-
-1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
-1. Navigate to [!UICONTROL Components] > [!UICONTROL Date Ranges].
+Use the [Date range builder](/help/components/date-ranges/create.md#date-range-builder) to edit the date range. 
+Use the [date range manager](/help/components/date-ranges/manage.md) to share, rename, or delete date ranges.
 
 
 <!--

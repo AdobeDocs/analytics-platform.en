@@ -3,6 +3,7 @@ description: Understand how the segment builder provides a canvas to drag and dr
 title: Build Segments
 feature: Filters, Segments
 role: User
+hold: true
 exl-id: 160021f1-6942-4682-9114-d375307d9912
 TQID: https://experienceleague.adobe.com/MFqcgWkCqZbtbI58nF8boBZU3YzfcuAAsJxXbjBcT5E
 product_v2:
@@ -93,7 +94,9 @@ A vital part of the construction of your segment definition is using dimensions,
 
 To add a component:
 
-1. Drag and drop a component from the components panel onto **[!UICONTROL Drag and drop Metric(s), Segment(s), and/or Dimensions here]**. You can use the ![Search](/help/assets/icons/Search.svg) in the components bar to search for specific components.
+1. Drag and drop a component from the components panel onto **[!UICONTROL Drag and drop Metric(s), Segment(s), and/or Dimensions here]**. 
+   * You can use the ![Search](/help/assets/icons/Search.svg) in the components bar to search for specific components.
+   * You can use ![Filter](/help/assets/icons/Filter.svg) in the components bar to filter on ![Checkmark](/help/assets/icons/Checkmark.svg) **[!UICONTROL Approved]**, ![Star](/help/assets/icons/Star.svg) **[!UICONTROL Favorites]**, ![DataDimension](/help/assets/icons2/DataDimension.svg) **[!UICONTROL Dimensions]**, ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Metrics]**, ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]**, ![Calendar](/help/assets/icons/Calendar.svg) **[!UICONTROL Date ranges]**, and ![Layer](/help/assets/icons/Layer.svg) **[!UICONTROL *container*]** components (like Products, Content Assets). You can also filter on ![Label](/help/assets/icons/Label.svg)  tags.
 1. Specify details for the component. For example, select a value from **[!UICONTROL Select value]**. Or enter a value. What and how you can specify one or more values depends on the component and the operator.
 1. Optionally modify the default operator. For example, from **[!UICONTROL equals]** to **[!UICONTROL equals any of]**. See [Operators](seg-operators.md) for a detailed overview of the available operators.
 
@@ -118,7 +121,7 @@ You can group multiple components in one or more containers and define logic wit
 * To add another component to the container, drag and drop a component from the component panel into the container. Use the blue insertion line as a guide.
 * To add another component outside of the container, drag and drop a component from the component panel outside of the container, but inside the main definition container. User the blue insertion line as a guide.
 * To modify the logic between components in a container, between containers or between a container and a component, select the appropriate **[!UICONTROL And]**, **[!UICONTROL Or]**, **[!UICONTROL Then]**. When you select Then, you turn the segment into a sequential segment. See [Create sequential segment](seg-sequential-build.md) for more information.
-* To switch the container level, select ![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL Global Account]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![Account](/help/assets/icons/Account.svg) **[!UICONTROL Account]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![Opportunity](/help/assets/icons/Opportunity.svg) **[!UICONTROL Opportunity]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![BuyingGroup](/help/assets/icons/BuyingGroup.svg) **[!UICONTROL Buying Group]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Event]**, ![Visit](/help/assets/icons/Visit.svg) **[!UICONTROL Session]** or ![User](/help/assets/icons/User.svg) **[!UICONTROL Person]**.
+* To switch the container level, select ![Globe](/help/assets/icons/Globe.svg) **[!UICONTROL Global Account]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![Account](/help/assets/icons/Account.svg) **[!UICONTROL Account]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![Opportunity](/help/assets/icons/Opportunity.svg) **[!UICONTROL Opportunity]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![BuyingGroup](/help/assets/icons/BuyingGroup.svg) **[!UICONTROL Buying Group]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Event]**, ![Visit](/help/assets/icons/Visit.svg) **[!UICONTROL Session]**, ![User](/help/assets/icons/User.svg) **[!UICONTROL Person]** or ![Layer](/help/assets/icons/Layer.svg) **[!UICONTROL Object]**. When you select ![Layer](/help/assets/icons/Layer.svg) **[!UICONTROL Object]**, select the [custom container](/help/data-views/create-dataview.md#containers-1) to use. For example, Products or Content Assets.
 
 You can use ![Setting](/help/assets/icons/Setting.svg) in a container for the following actions:
 
@@ -130,6 +133,9 @@ You can use ![Setting](/help/assets/icons/Setting.svg) in a container for the fo
 | **[!UICONTROL Name container]** | Rename the container from its default description. Type a name in the text field. If you provide no input, the default description is used. |
 | **[!UICONTROL Delete container]** | Delete the container from the definition. |
 
+When you drag a dimension or metric that you have defined as a [container](/help/data-views/create-dataview.md#containers-1) into the Segment Builder or Quick segment panel, the system automatically selects the proper container and does not use the default **[!UICONTROL Event]** container. This behavior keeps the segment scoped to the individual container rather than to the entire event.
+
+When you drag both [container](/help/data-views/create-dataview.md#containers-1)-level and event-level components into a single segment rule, the system uses the **[!UICONTROL Event]** container, which is the highest (least granular) shared container. If all components that are part of a segment rule are at the same container level, that container is used.
 
 ## Date ranges
 

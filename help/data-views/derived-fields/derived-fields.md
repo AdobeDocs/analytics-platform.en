@@ -5,6 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
+hold: true
 TQID: https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -307,6 +308,8 @@ This function template converts a limited list to an array.
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
 ![Screenshot of the Get All Values in Delimited list rule builder](assets/function-template-get-all-values-in-delimited-list.png)
+
+The derived field becomes available as a [custom container](/help/data-views/create-dataview.md#containers-1) you can select in your data view and use for [sub-event analysis](/help/components/segments/sub-event.md) in a workspace project.
 
 +++
 
