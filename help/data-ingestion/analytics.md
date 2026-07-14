@@ -36,18 +36,16 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
 ---
-# Ingest and use data from  Adobe Analytics
+# Ingest and use data from Adobe Analytics
 
 This quick start guide explains how you can use the data collected by Adobe Analytics in Customer Journey Analytics.
 
 >[!PREREQUISITES]
 >
->You do have Adobe Analytics licensed and deployed on one or more of your websites, using any of the documented implementation methods:
+>You have Adobe Analytics licensed and deployed on one or more of your websites, using any of the documented implementation methods:
 >
 >- [Implement Analytics using Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html)
->
 >- [Implement Analytics using Adobe Analytics extension](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html)
->
 >- [Implement Analytics using JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)
 
 To accomplish this, you need to:
@@ -108,7 +106,6 @@ Once the connection is created, the dataflow is automatically created to populat
 When the initial ingestion completes, your Adobe Analytics report suite data is ready to be used by Customer Journey Analytics.
 
 See [Create an Adobe Analytics source connection in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) for a much more comprehensive tutorial.
-
 
 ## Set up a connection
 
