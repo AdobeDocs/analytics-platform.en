@@ -5,6 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 role: Admin
+hold: true
 autotag-review: '2026-05-19T09:11:52.108Z'
 TQID: 'https://experienceleague.adobe.com/zvIcmaZiq3dtL-6b8fal6l2pWVLUbfVcOGWgyuqMqjE'
 product_v2:
@@ -61,7 +62,7 @@ Use this method for fields that use a delimiter to separate multiple string valu
 * **[!UICONTROL Criterion]**: How you want to treat the delimited list of values.
   * **[!UICONTROL From the Left]**: Start from the beginning of the delimited list and count forward.
   * **[!UICONTROL From the Right]**: Start from the end of the delimited list and count backward.
-  * **[!UICONTROL Convert to array]**: Treat this dimension as if it is an object array schema element.
+  * **[!UICONTROL Convert to array]**: Treat this dimension as if it is an object array schema element. The dimension becomes becomes available as a [custom container](/help/data-views/create-dataview.md#containers-1) you can select in your data view and use for [sub-event analysis](/help/components/segments/sub-event.md) in a workspace project.
 * **[!UICONTROL Delimiter]**: The delimiter that the field uses.
 * **[!UICONTROL Index]**: Only present if the criterion is From the Left/Right. The element number as if it was in an array. For example, if the string input is `"Fox,Turtle,Rabbit,Wolf"` with an index of 3, the output is `"Rabbit"`. If the index is higher than the number of delimited elements, [No value options](no-value-options.md) apply.
 

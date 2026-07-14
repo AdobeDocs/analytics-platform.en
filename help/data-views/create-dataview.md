@@ -5,6 +5,7 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
+hold: true
 TQID: https://experienceleague.adobe.com/EXiKrWVfmMRgZ4GF0OR410Mr2-P5IEjPy3Hf0FmRDJ8
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -181,7 +182,7 @@ In the **[!UICONTROL Containers]** tab you can rename system containers and add 
 
 You add custom containers to your data view so you can use these containers for [sub-event analysis](/help/components/segments/sub-event.md). Custom containers can be defined from:
 
-* objects or arrays available within the datasets that are part of the connection. For example, **[!UICONTROL productListItems]** or **[!UICONTROL placeContext.activePOIs]**.
+* objects or arrays available within the datasets that are part of the connection. For example, **[!UICONTROL productListItems]**, **[!UICONTROL content_assets]**, or **[!UICONTROL placeContext.activePOIs]**.
 * derived fields that return an array through the use of the [Split](/help/data-views/derived-fields/derived-fields.md#split) function.
 * data view components that are configured to return an array using the [Substring](/help/data-views/component-settings/substring.md) component settings with the [Delimiter](/help/data-views/component-settings/substring.md#delimiter) option.
 
@@ -200,9 +201,7 @@ To add a custom container:
 
 1. Select **[!UICONTROL Add custom container]**.
 1. In the **[!UICONTROL Add container]** dialog:
-   1. Select a container from the **[!UICONTROL Container]** drop-down menu. For example: **[!UICONTROL productListItems.productCategories]**.
-
-      Upon selection, you see updated values for **[!UICONTROL Schema path]** and **[!UICONTROL Schema type]**.
+   1. Select a container from the **[!UICONTROL Container]** drop-down menu. For example: **[!UICONTROL productListItems.productCategories]**. Upon selection, you see updated values for **[!UICONTROL Schema path]** and **[!UICONTROL Schema type]**.
 
    1. Enter a **[!UICONTROL Display name]** for the container. For example: `Product Categories`.
    1. Select **[!UICONTROL Save]**.
@@ -245,7 +244,7 @@ Next, you can set a data view's components, which means you can create metrics a
 
    ![Components tab](assets/dataview-components.png)
 
-   You can see the [!UICONTROL Connection] at the top left, which contains the datasets, and its [!UICONTROL Schema fields] below.  The components already included are standard components (system generated) required for all data views (like Events, People, Sessions metrics, and Minute, Quarter, Week dimensions).<ul><li>When you have defined custom containers, metrics for these containers are automatically added and identified using ![ShowAllLayer](/help/assets/icons/ShowAllLayer.svg) **[!UICONTROL _custom container name_ Occurrences]**.</li><li>The filter **[!UICONTROL is not deprecated]** is applied by default, so that only Schema fields appear which are not deprecated.</li></ul>
+   You can see the [!UICONTROL Connection] at the top left, which contains the datasets, and its [!UICONTROL Schema fields] below.  The components already included are standard components (system generated) required for all data views (like Events, People, Sessions metrics, and Minute, Quarter, Week dimensions).<ul><li>When you have defined c[ustom containers](#containers-1), metrics for these containers are automatically added and identified using ![ShowAllLayer](/help/assets/icons/ShowAllLayer.svg) **[!UICONTROL _custom container name_ Occurrences]**.</li><li>The filter **[!UICONTROL is not deprecated]** is applied by default, so that only Schema fields appear which are not deprecated.</li></ul>
 
 1. Search for a schema field using ![Search icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Search schema fields]** or find a field by moving into any of the dataset collections, like ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL Event datasets]** or ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL Lookup datasets]**. For event datasets, separate collections for ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL XDM fields]** and ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL Adhoc and relational fields]** are available.<br/>Alternatively, you can create a derived field using ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Create derived field** . See [Derived fields](./derived-fields/derived-fields.md) for more information.
 

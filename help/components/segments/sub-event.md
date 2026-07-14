@@ -2,6 +2,7 @@
 title: Sub-Event Analysis
 description: Learn how sub-event analysis lets you filter individual products or other containers within an event in Csutomer Journey Analytics, eliminating attribution bleed in product reports.
 feature: Segmentation
+hold: true
 feature_v2:
   - id: c153fd90-23e1-4614-81d3-3cc7571227f7
     internal-label: Analysis Workspace
@@ -25,31 +26,41 @@ In Customer Journey Analytics, you define containers within a data view for whic
 In sub-event analysis exclude logic behaves differently from standard event-level exclusion against the container. When you exclude item attributes within the container, the segment returns events that **have items** within the container but don't match your exclusion criteria. The segment does not return event with no items at all. 
 
 
->[!WARNING]
->
->The following sections are going to be moved to their relevant articles (on Segment builder, Quick segment, Histogram, and more) when this feature releases. And these articles will then refer to this article for reference on what sub-hit analysis is. This action is currently not done so as not to confuse customers while the feature is unavailable.
+## Example
 
-## Container auto-inference
+You want to measure revenue from the professional suites category only. Without sub-event analysis, applying a segment for professional suits includes revenue from every product on any order (event) that contains at least one product with the professional suits category. With sub-event analysis, you scope the filter to the product level and return only revenue for products of the professional suits category.
 
-When you drag a product dimension or metric into the Segment Builder or Quick segment panel, the system automatically selects the **[!UICONTROL Products]** container and does not use the default **[!UICONTROL Hit]** container. This behavior keeps the segment scoped to individual products rather than to the entire hit.
+You also want to measure online revenue from all other categories except the Men category.
 
-## Mixed container behavior
+>[!BEGINTABS]
 
-If you drag both product-level and hit-level components into a single segment rule, the system uses the **[!UICONTROL Hit]** container, which is the highest (least granular) shared container. If all components that are part of a segment rule are product-level, the **[!UICONTROL Products]** container is used.
+>[!TAB Event analysis]
 
-## Product filters in the left rail
+In the segmentation builder or as part of a **[!UICONTROL Quick segment]**, you specify to **[!UICONTROL Include]** the **[!UICONTROL Dimension]** **[!UICONTROL product_category]** **[!UICONTROL equals]** **[!UICONTROL Professional Suits]** on the **[!UICONTROL Events]** container. 
 
-The Segment Builder includes a new filter option in the left rail to display only product dimensions and metrics. This makes it easier to find product-level components when building sub-hit segments.
+![Panel showing segementation on event level for product category professional suits](./assets/product-category-segmentation-events.png)
 
->[!NOTE]
->
->This filter option is available in the Segment Builder only. It is not available in other left rails such as Analysis Workspace panels or visualizations.
+As a result, all orders containing at least one **[!UICONTROL Professional Suits]** **[!UICONTROL product_category]** are considered, and revenue from other products in those orders is included in the **[!UICONTROL Revenue]** metric.
+When you report on categories, all other values for **[!UICONTROL product_category]** are reported that were part of an order that included a product with the **[!UICONTROL Professional Suits]** **[!UICONTROL product_category]**.
 
-## Histogram visualization
+>[!TAB Sub-event analysis]
 
-The Histogram visualization includes a new sub-hit container drop-down menu. This lets you bucket metric values at the product level. For example, counting product occurrences per order rather than per hit.
+In the segmentation builder or as part of a **[!UICONTROL Quick segment]**, you specify to **[!UICONTROL Include]** the **[!UICONTROL Dimension]** **[!UICONTROL product_category]** **[!UICONTROL equals]** **[!UICONTROL Professional Suites]** on the **[!UICONTROL Products]** container. 
 
-The Histogram is the only visualization that requires a sub-hit container selection. All other panels and visualizations work with sub-hit analysis data without additional configuration.
+![Panel showing segementation on sub-event level for product category professional suits](./assets/product-category-segmentation-subevents.png)
+
+As a result, all orders containing at least a **[!UICONTROL Professional Suits]** **[!UICONTROL product_category]** are considered, and only the revenue of products belonging to the **[!UICONTROL Professional Suits]** **[!UICONTROL product_categorey]** are included for the **[!UICONTROL Revenue]** metric.
+When you report on categories, only the **[!UICONTROL Professional Suits]** **[!UICONTROL Rproduct_category]** is reported.
+
+>[!TAB Sub-event analysis (exclude)]
+
+In the segmentation builder or as part of a **[!UICONTROL Quick segment]**, you specify to **[!UICONTROL Exclude]** the **[!UICONTROL Dimension]** **[!UICONTROL product_category]** **[!UICONTROL equals]** **[!UICONTROL Professional Suits]** on the **[!UICONTROL Products]** container. 
+
+![Panel showing segementation on sub-hit level to exclude product category Men](./assets/product-category-segmentation-subevents-exclude.png)
+
+To exclude at the product level, events that contain at least one product are included, then the exclusion on sub-event level is applied within that scope. This exclusion differs from event-level exclusion, which excludes the entire event.
+
+>[!ENDTABS]
 
 
 <!-- AI generated content
