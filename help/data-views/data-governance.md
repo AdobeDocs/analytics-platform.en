@@ -59,7 +59,7 @@ Labeling in itself does not mean that these data usage labels are enforced. That
 Five Adobe-defined policies are available in Experience Platform that can surface in Customer Journey Analytics and affect reporting and data export:
 
 
-| Policy | Label | 
+| Policy | Label |
 |---------|----------|
 | [!UICONTROL Restrict third-party data export] | `C2` |
 | [!UICONTROL Restrict directly identifiable data combination] | `C3` |
