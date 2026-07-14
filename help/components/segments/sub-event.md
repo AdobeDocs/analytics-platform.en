@@ -46,7 +46,7 @@ When you report on categories, all other values for **[!UICONTROL product_catego
 
 >[!TAB Sub-event analysis]
 
-In the segmentation builder or as part of a **[!UICONTROL Quick segment]**, you specify to **[!UICONTROL Include]** the **[!UICONTROL Dimension]** **[!UICONTROL product_category]** **[!UICONTROL equals]** **[!UICONTROL Professional Suites]** on the **[!UICONTROL Products]** container. 
+In the segmentation builder or as part of a **[!UICONTROL Quick segment]**, you specify to **[!UICONTROL Include]** the **[!UICONTROL Dimension]** **[!UICONTROL product_category]** **[!UICONTROL equals]** **[!UICONTROL Professional Suits]** on the **[!UICONTROL Products]** container. 
 
 ![Panel showing segementation on sub-event level for product category professional suits](./assets/product-category-segmentation-subevents.png)
 
