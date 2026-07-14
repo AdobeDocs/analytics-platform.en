@@ -24,11 +24,11 @@ topic_v2:
 ---
 # Manage consent reporting and filtering configurations
 
-After you [create a consent reporting and filtering configuration](/help/connections/consent-reporting-filtering/crf-configure.md), you can view, edit, or delete it.
+After you [create a consent reporting and filtering configuration](/help/connections/consent-reporting-filtering/consent-configure.md), you can view, edit, or delete it.
 
 Only system administrators can manage consent reporting and filtering configurations.
 
-For overview information, see [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/crf-overview.md).
+For overview information, see [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/consent-overview.md).
 
 ## View existing configurations
 

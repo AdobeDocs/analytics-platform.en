@@ -40,7 +40,7 @@ You configure consent reporting and filtering through a guided wizard. You selec
 
 The following diagram and associated table show a high-level representation of how consent reporting and filtering makes consent policy data available in Analysis Workspace and filters visitor data at ingest time:
 
-![Consent reporting and filtering overview](assets/crf-overview.png)
+![Consent reporting and filtering overview](assets/consent-overview.png)
 
 <!-- TODO: Add the customer-facing service-flow diagram. Do not expose internal service names (for example, Omnivore, CPES, Audience Service, DULE) in the published image or table. -->
 
@@ -70,7 +70,7 @@ When you enable consent reporting, Customer Journey Analytics adds a set of cons
 
 To keep reporting readable, Customer Journey Analytics syncs policy names and descriptions from Experience Platform into a consent policy lookup dataset. When a policy is created, updated, renamed, or deleted in Experience Platform, the lookup dataset is updated automatically.
 
-For information about the components that consent reporting creates, see [Analyze consent policy data](/help/connections/consent-reporting-filtering/crf-analyze.md).
+For information about the components that consent reporting creates, see [Analyze consent policy data](/help/connections/consent-reporting-filtering/consent-analyze.md).
 
 ### Consent filtering
 
@@ -97,9 +97,19 @@ A marketing action represents a category of data use. Customer Journey Analytics
 
 Because each marketing action has its own toggle, you can filter data for one marketing action while leaving the other unfiltered.
 
+## Consent reporting and filtering role and permission requirements
+
+The following Customer Journey Analytics roles and Experience Platform permissions are required for consent reporting and filtering:
+
+| Capability | Customer Journey Analytics role or permission requirements | Experience Platform permission requirements |
+|---------|----------|----------|
+| [Create consent reporting and filtering configurations](/help/connections/consent-reporting-filtering/consent-configure.md) | System administrator | <ul><li>Datasets: Read, Write</li><li>Schemas: Read, Write</li></ul> <p>Read access is required for the Profile dataset that contains the consent policy membership data. Write access is required because a consent policy lookup dataset is created and kept in sync.</p> |
+| View consent policy components in the data view | Product profile administrator for the product profile that the data view is assigned to <p>For more information, see [Access control](/help/technotes/access-control.md).</p> | N/A |
+| Use consent policy components in Analysis Workspace | Access to a data view where the consent policy components were added | N/A |
+
 ## Next steps
 
-* [Configure consent reporting and filtering](/help/connections/consent-reporting-filtering/crf-configure.md)
-* [Manage consent reporting and filtering configurations](/help/connections/consent-reporting-filtering/crf-manage.md)
-* [Analyze consent policy data](/help/connections/consent-reporting-filtering/crf-analyze.md)
-* [Consent reporting and filtering use cases](/help/connections/consent-reporting-filtering/crf-use-cases.md)
+* [Configure consent reporting and filtering](/help/connections/consent-reporting-filtering/consent-configure.md)
+* [Manage consent reporting and filtering configurations](/help/connections/consent-reporting-filtering/consent-manage.md)
+* [Analyze consent policy data](/help/connections/consent-reporting-filtering/consent-analyze.md)
+* [Consent reporting and filtering use cases](/help/connections/consent-reporting-filtering/consent-use-cases.md)

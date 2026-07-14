@@ -28,7 +28,7 @@ topic_v2:
 
 You can ingest consent policy data from Experience Platform Profile datasets into a Customer Journey Analyticcs connection. 
 
-After you [create a consent reporting and filtering configuration](/help/connections/consent-reporting-filtering/crf-configure.md), consent policy data becomes available as new components in the data views under the configured connection. You can use these components anywhere in Analysis Workspace if you have access to a data view where they exist.
+After you [create a consent reporting and filtering configuration](/help/connections/consent-reporting-filtering/consent-configure.md), consent policy data becomes available as new components in the data views under the configured connection. You can use these components anywhere in Analysis Workspace if you have access to a data view where they exist.
 
 ## Consent policy components
 

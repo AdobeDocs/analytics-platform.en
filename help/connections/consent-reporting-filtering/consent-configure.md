@@ -28,7 +28,7 @@ topic_v2:
 ---
 # Configure consent reporting and filtering
 
-System administrators can enable consent reporting and, optionally, consent filtering for one or more connections. For overview information, see [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/crf-overview.md).
+System administrators can enable consent reporting and, optionally, consent filtering for one or more connections. For overview information, see [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/consent-overview.md).
 
 >[!IMPORTANT]
 >
@@ -71,7 +71,7 @@ To create a consent reporting and filtering configuration:
    >
    >Leave both toggles unselected to enable consent reporting without filtering.
    >
-   >When filtering for a marketing action is enabled, Customer Journey Analytics ingests a visitor's data only if the visitor matches **all** consent policies that apply to that marketing action. For more information, see [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/crf-overview.md#consent-filtering).
+   >When filtering for a marketing action is enabled, Customer Journey Analytics ingests a visitor's data only if the visitor matches **all** consent policies that apply to that marketing action. For more information, see [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering).
 
    | Marketing action | Description |
    |---------|----------|
@@ -89,4 +89,4 @@ When you create a configuration, Customer Journey Analytics automatically:
 * Adds the consent policy components (dimensions, metrics, and a derived field) to the data views within the configured connection.
 * Applies the **consent** internal label to the new components so that you can filter for them in the data view. For more information about internal labels, see [Labels and policies](/help/data-views/data-governance.md).
 
-After the configuration completes, verify that the consent policy components are available in your data views. For more information, see [Analyze consent policy data](/help/connections/consent-reporting-filtering/crf-analyze.md).
+After the configuration completes, verify that the consent policy components are available in your data views. For more information, see [Analyze consent policy data](/help/connections/consent-reporting-filtering/consent-analyze.md).

@@ -27,7 +27,7 @@ topic_v2:
 ---
 # Consent reporting and filtering use cases
 
-Consent reporting and filtering helps you report on visitor consent policy membership and, optionally, exclude non-consenting visitors before their data enters Customer Journey Analytics. For overview information, see [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/crf-overview.md).
+Consent reporting and filtering helps you report on visitor consent policy membership and, optionally, exclude non-consenting visitors before their data enters Customer Journey Analytics. For overview information, see [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/consent-overview.md).
 
 This article describes example use cases. Before you review them, become familiar with the considerations below, because they affect the results you see in your reports.
 

@@ -48,7 +48,7 @@ This integration allows you to manage compliance more easily. Data stewards in y
 
 Customer Journey Analytics can use the consent policy membership data in your Experience Platform Profile datasets to report on visitor consent and, optionally, exclude non-consenting visitors before their data is ingested. Consent reporting makes consent policies available as components in Analysis Workspace, and consent filtering excludes non-consenting visitors at ingest time based on the marketing actions that you configure.
 
-[Learn more](/help/connections/consent-reporting-filtering/crf-overview.md)
+[Learn more](/help/connections/consent-reporting-filtering/consent-overview.md)
 
 ## Privacy Requests
 

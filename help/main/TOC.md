@@ -140,11 +140,11 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Analyze](/help/connections/audience-analysis/analyze-audiences.md)
     + [Use cases](/help/connections/audience-analysis/audience-analysis-use-cases.md)
   + Consent reporting and filtering {#consent-reporting-filtering}
-    + [Overview](/help/connections/consent-reporting-filtering/crf-overview.md)
-    + [Configure](/help/connections/consent-reporting-filtering/crf-configure.md)
-    + [Manage](/help/connections/consent-reporting-filtering/crf-manage.md)
-    + [Analyze](/help/connections/consent-reporting-filtering/crf-analyze.md)
-    + [Use cases](/help/connections/consent-reporting-filtering/crf-use-cases.md)
+    + [Overview](/help/connections/consent-reporting-filtering/consent-overview.md)
+    + [Configure](/help/connections/consent-reporting-filtering/consent-configure.md)
+    + [Manage](/help/connections/consent-reporting-filtering/consent-manage.md)
+    + [Analyze](/help/connections/consent-reporting-filtering/consent-analyze.md)
+    + [Use cases](/help/connections/consent-reporting-filtering/consent-use-cases.md)
 + Data Views {#cja-dataviews}
   + [Data views overview](../data-views/data-views.md)
   + [Create or edit a data view](../data-views/create-dataview.md)
