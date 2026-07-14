@@ -70,6 +70,15 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_datafeed_user-agent"
+>title=""
+>abstract="User agent data and device lookup data cannot exist in the same data feed configuration."
+
+<!-- markdownlint-enable MD034 -->
+
 1. Log in to [experiencecloud.adobe.com](https://experiencecloud.adobe.com) using your Adobe ID credentials.
 
 1. Select [!UICONTROL **Customer Journey Analytics**] from the app switcher ![App](/help/assets/icons/Apps.svg) at the top right of the interface.
@@ -102,6 +111,11 @@ Before you create a data feed, it's important to have a basic understanding of d
    When you apply multiple segments, they are joined together with an AND operator. (To join segments with an OR operator, you must first create a new segment in the segment builder, then apply the new segment to the data feed.)
 
 1. Add components to the data feed configuration. In the left rail, locate any components that you want to include, then drag them to the canvas to build your data structure. You can select multiple components by holding **[!UICONTROL Shift]**, or by holding **[!UICONTROL Command]** (on macOS) or **[!UICONTROL Ctrl]** (on Windows).
+
+   >[!NOTE]
+   >
+   >User agent data and device lookup data cannot exist in the same data feed configuration. An error displays if you attempt to add conflicting components. For more information, see [Configure device lookup](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Create and configure datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) in the Data Collection guide.
+
 
    Use the following information to understand dimensions that are always included, dimensions that cannot be included, and metrics that must be substituted:
 
