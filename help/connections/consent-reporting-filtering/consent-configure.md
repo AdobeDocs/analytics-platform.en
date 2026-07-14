@@ -4,6 +4,7 @@ description: Learn how to use the provisioning wizard to enable consent reportin
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
+hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -71,7 +72,7 @@ To create a consent reporting and filtering configuration:
    >
    >Leave both toggles unselected to enable consent reporting without filtering.
    >
-   >When filtering for a marketing action is enabled, Customer Journey Analytics ingests a visitor's data only if the visitor matches **all** consent policies that apply to that marketing action. For more information, see [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering).
+   >When filtering for a marketing action is enabled, Customer Journey Analytics ingests a visitor's data only if the visitor matches **all** consent policies that apply to that marketing action. For more information, see [Consent filtering](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering) in [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/consent-overview.md).
 
    | Marketing action | Description |
    |---------|----------|

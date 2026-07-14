@@ -4,6 +4,7 @@ description: Learn how to use consent policy dimensions, metrics, and templates 
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin, User
+hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
