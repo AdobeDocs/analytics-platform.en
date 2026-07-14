@@ -29,9 +29,9 @@ In sub-event analysis exclude logic behaves differently from standard event-leve
 
 ## Example
 
-You want to measure revenue from the professional suites category only. Without sub-event analysis, applying a segment for professional suits includes revenue from every product on any order (event) that contains at least one product with the professional suits category. With sub-event analysis, you scope the filter to the product level and return only revenue for products of the professional suits category.
+You want to measure revenue from the professional suits category only. Without sub-event analysis, applying a segment for professional suits includes revenue from every product on any order (event) that contains at least one product with the professional suits category. With sub-event analysis, you scope the filter to the product level and return only revenue for products of the professional suits category.
 
-You also want to measure online revenue from all other categories except the Men category.
+You also want to measure online revenue from all other categories except the professional suits category.
 
 >[!BEGINTABS]
 
