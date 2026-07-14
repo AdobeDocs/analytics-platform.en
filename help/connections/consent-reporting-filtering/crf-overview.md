@@ -1,0 +1,105 @@
+---
+title: Consent Reporting and Filtering Overview
+description: Learn how to report on visitor consent policy membership and filter non-consenting visitors at ingest time in Customer Journey Analytics.
+solution: Customer Journey Analytics
+feature: Privacy
+role: Admin
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+subfeature_v2:
+  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
+  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
+---
+# Consent reporting and filtering overview
+
+Consent reporting and filtering uses the consent policy membership data stored in your Adobe Experience Platform Profile datasets to help you report on visitor consent and, optionally, exclude non-consenting visitors before their data is ingested into Customer Journey Analytics.
+
+Consent policy membership is stored in the `consentPoliciesIDMap` field of a Profile dataset. Each visitor's profile lists the consent policies that the visitor matches. Customer Journey Analytics reads this field to make consent policies available for reporting and to evaluate which visitors to include during ingestion.
+
+## How consent reporting and filtering works
+
+You configure consent reporting and filtering through a guided wizard. You select a sandbox and Profile dataset, choose the connection or connections to configure, and optionally enable filtering for one or more marketing actions. Configuration is applied at the connection level, so all data views under a configured connection inherit the same behavior.
+
+The following diagram and associated table show a high-level representation of how consent reporting and filtering makes consent policy data available in Analysis Workspace and filters visitor data at ingest time:
+
+![Consent reporting and filtering overview](assets/crf-overview.png)
+
+<!-- TODO: Add the customer-facing service-flow diagram. Do not expose internal service names (for example, Omnivore, CPES, Audience Service, DULE) in the published image or table. -->
+
+| Number | Feature | Function |
+|---------|----------|---------|
+| 1 | Provisioning wizard | The configuration interface in Customer Journey Analytics used to enable consent reporting and, optionally, consent filtering. |
+| 2 | Sandbox | Must contain the Profile dataset that includes the consent policy membership data you want to report on. |
+| 3 | Profile dataset | Includes the consent policy membership data (the `consentPoliciesIDMap` field) for each visitor. This Profile dataset is added to the connection that you select. |
+| 4 | Consent policy lookup dataset | Provides friendly policy names and descriptions for reporting. The lookup dataset is created automatically and kept in sync with Experience Platform. A maximum of one consent policy lookup dataset exists per sandbox. |
+| 5 | Connection | The connection where consent reporting and filtering is applied. All data views under the connection inherit the configuration. |
+| 6 | Consent policy components | New dimensions, metrics, and a derived field that represent consent policy membership. These components are created automatically and are available for reporting in Analysis Workspace. |
+| 7 | Ingest-time filtering | When filtering is enabled, non-consenting visitors are excluded during ingestion, based on the marketing actions that you configure. |
+
+## Consent reporting vs. filtering
+
+Consent reporting and filtering are two separate capabilities:
+
+* **Consent reporting**: Report on which visitors match which consent policies, using the consent policy membership data in your Experience Platform Profile datasets.
+
+* **Consent filtering**: Exclude non-consenting visitors at ingest time, so that their data never enters Customer Journey Analytics.
+
+You can enable consent reporting on its own, or enable both reporting and filtering together.
+
+### Consent reporting
+
+When you enable consent reporting, Customer Journey Analytics adds a set of consent policy components to the data views under the configured connection. These components let you report on visitor consent policy membership in Analysis Workspace.
+
+To keep reporting readable, Customer Journey Analytics syncs policy names and descriptions from Experience Platform into a consent policy lookup dataset. When a policy is created, updated, renamed, or deleted in Experience Platform, the lookup dataset is updated automatically.
+
+For information about the components that consent reporting creates, see [Analyze consent policy data](/help/connections/consent-reporting-filtering/crf-analyze.md).
+
+### Consent filtering
+
+When you enable consent filtering, Customer Journey Analytics excludes non-consenting visitors during ingestion. Because filtering happens upstream at ingest time, no reporting-time changes are required and excluded data never enters Customer Journey Analytics.
+
+Filtering uses inclusion logic:
+
+* Customer Journey Analytics determines the consent policies that apply to the marketing actions you configured.
+* A visitor's data is ingested only if the visitor matches **all** applicable consent policies.
+* If a visitor is missing any applicable policy, that visitor's data is excluded.
+
+>[!IMPORTANT]
+>
+>Consent filtering permanently excludes non-consenting visitor data at ingest time. Excluded data is not stored in Customer Journey Analytics and cannot be recovered for past dates by changing your configuration later.
+
+## Marketing actions
+
+A marketing action represents a category of data use. Customer Journey Analytics determines which consent policies apply to each marketing action, and you enable filtering for each marketing action independently in the provisioning wizard.
+
+| Marketing action | Description |
+|---------|----------|
+| **Analytics** | Standard Customer Journey Analytics reporting in Analysis Workspace. |
+| **Data science** | Advanced analytics, machine learning, and data science use cases. |
+
+Because each marketing action has its own toggle, you can filter data for one marketing action while leaving the other unfiltered.
+
+## Next steps
+
+* [Configure consent reporting and filtering](/help/connections/consent-reporting-filtering/crf-configure.md)
+* [Manage consent reporting and filtering configurations](/help/connections/consent-reporting-filtering/crf-manage.md)
+* [Analyze consent policy data](/help/connections/consent-reporting-filtering/crf-analyze.md)
+* [Consent reporting and filtering use cases](/help/connections/consent-reporting-filtering/crf-use-cases.md)

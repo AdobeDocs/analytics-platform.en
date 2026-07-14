@@ -44,6 +44,12 @@ This integration allows you to manage compliance more easily. Data stewards in y
 
 [Learn more](/help/data-views/data-governance.md)
 
+## Consent Reporting and Filtering
+
+Customer Journey Analytics can use the consent policy membership data in your Experience Platform Profile datasets to report on visitor consent and, optionally, exclude non-consenting visitors before their data is ingested. Consent reporting makes consent policies available as components in Analysis Workspace, and consent filtering excludes non-consenting visitors at ingest time based on the marketing actions that you configure.
+
+[Learn more](/help/connections/consent-reporting-filtering/crf-overview.md)
+
 ## Privacy Requests
 
 Adobe handles privacy requests in accordance with applicable local and international laws. 
