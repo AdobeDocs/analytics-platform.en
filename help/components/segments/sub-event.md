@@ -63,7 +63,9 @@ To exclude at the product level, events that contain at least one product are in
 >[!ENDTABS]
 
 
-<!-- AI generated content
+<!-- 
+
+AI generated content
 
 title: Sub-Event Analysis in Customer Journey Analytics
 description: Learn how to analyze data below the event level in Customer Journey Analytics using sub-event containers to segment individual items within event arrays.
