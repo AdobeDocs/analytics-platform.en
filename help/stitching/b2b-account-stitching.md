@@ -33,7 +33,7 @@ topic_v2:
 
 B2B account stitching enriches your event datasets with account information and enables complete analysis across the full customer journey in Customer Journey Analytics. When events lack an account ID, which Customer Journey Analytics B2B edition requires for ingestion, account stitching derives and adds that information automatically using a [person-to-account mapping dataset](#prerequisites) you provide.
 
-Without account stitching, any event that does not contain an account ID is dropped during ingestion. Account stitching eliminates this barrier by looking up the account associated with the person on each event, adding the account ID both as the event is ingested and retroactively.
+Without account stitching, any event that does not contain an account ID is dropped during ingestion. Account stitching resolves this limitation by looking up the account associated with the person on each event, adding the account ID both as the event is ingested and retroactively.
 
 >[!NOTE]
 >
@@ -70,12 +70,12 @@ You enable and configure B2B account stitching at the connection level, and then
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
 >title="Person identifier namespace"
->abstract="Select a person identifier namespace, for example Email, to which you want any person ID elevated."
+>abstract="Select the most relevant person identity namespace for your reporting. For example, Email."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_to_account_dataset"
 >title="Person to account dataset"
->abstract="Select the lookup datasaet that maps person IDs to account IDs."
+>abstract="Select the field in the dataset that contains person IDs. This field's namespace can either differ from or be the same as the selected Person Identifier Namespace (B2B stitching configuration). If the two namespaces differ, link the namespaces in the Identity Graph."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person"
@@ -85,7 +85,7 @@ You enable and configure B2B account stitching at the connection level, and then
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_account"
 >title="Account"
->abstract="Select the field in the dataset that contains the account ID. That field cannot be the same as the **[!UICONTROL Person]** field or **[!UICONTROL Start time]** field."
+>abstract="Select the field in the dataset that contains the unique account identifier values. The account ID info will be made available on the rows of any event datasets with stitching enabled."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_start_time"
@@ -156,7 +156,7 @@ After configuring B2B stitching at the connection level, you must enable B2B acc
 
 When **[!UICONTROL Enable Person to Account stitching]** is **on**, you have configured B2B account stitching for the dataset.
 
-* The configuration of a person ID is required. That person ID is used to lookup the account ID based on the [person-to-account dataset](#prerequisites).
+* The configuration of a person ID is required. That person ID is used to look up the account ID based on the [person-to-account dataset](#prerequisites).
 * The configuration of an account ID is optional.
 
 ![B2B account stitching on event dataset on](assets/b2b-event-dataset-stitching-on.png)
@@ -182,7 +182,7 @@ After you have configured the B2B stitching configuration and have finished addi
 
 >[!IMPORTANT]
 >
->Once a connection is saved, the B2B stitching configuration becomes immutable. To view your settings after saving, select **Open B2B stitching configuration**. All fields will be shown in a read-only state. Additionally, if the dataset that is used for [person-to-account mapping](#prerequisites) is deleted in Experience Platform, this connection will be deleted.
+>Once a connection is saved, the B2B stitching configuration becomes immutable. To view your settings after saving, select **Open B2B stitching configuration**. All fields appear in a read-only state. Additionally, if the dataset used for [person-to-account mapping](#prerequisites) is deleted in Experience Platform, this connection is deleted.
 
 ## Data update schedule
 
@@ -197,7 +197,7 @@ Account stitching derives the identity map from your [person-to-account dataset]
 
 Account stitching honors standard privacy and hygiene requests for person identities, consistent with B2C stitching behavior. If a person ID is later removed through a Privacy or Hygiene request, the associated stitching performed using the identity graph is reversed.
 
-B2B entities such as accounts, account IDs and global account IDs that are added to events through stitching are not removed as part of privacy or hygiene requests. These values do not contain personally identifiable information, so no legal obligation exists to remove these values.
+B2B entities like accounts, account IDs, and global account IDs added to events through stitching are not removed during privacy or hygiene requests. These values do not contain personally identifiable information, so no legal obligation exists to remove these values.
 
 >[!MORELIKETHIS]
 >
