@@ -179,7 +179,7 @@ You create nodes in the following ways: by dragging Workspace components from th
 
 ### Show the top nodes based on existing nodes
 
-You can automatically show the top immediate nodes based on the nodes that are already on the canvas. You can add the top nodes to Journey canvas or view them in a freeform table.
+You can automatically show the top immediate or eventual nodes based on the nodes that are already on the canvas. You can add the top nodes to Journey canvas or view them in a freeform table.
 
 Journey canvas uses the primary metric when determining which nodes to show.
 
@@ -191,13 +191,19 @@ This option is available for the following objects on the canvas:
 
 #### Show top nodes after an existing node
 
-You can select a node and show the top dimension items that come immediately after it in the journey. You can add the top 3 dimension items to Journey canvas as separate nodes, or you can view all top dimension items in a freeform table.
+You can select a node and show the top immediate or eventual dimension items that come after it in the journey. You can add the top 3 dimension items to Journey canvas as separate nodes, or you can view all top dimension items in a freeform table.
 
 1. Right-click the node where you want to show the top dimension items that come after it in the journey.
 
    The node cannot have any existing nodes going out of it in the journey.
 
 1. Select [!UICONTROL **Show top nodes after this node**].
+
+1. Select whether to show the dimension items that come immediately or eventually after the selected node:
+
+   * [!UICONTROL **Immediately after**]: Shows the top dimension items that come directly after the selected node in the journey.
+
+   * [!UICONTROL **Eventually after**]: Shows the top dimension items that eventually come after the selected node in the journey. Use this option when the step immediately after the selected node has no data for the primary metric that Journey canvas uses to determine the top dimension items.
 
 1. Select where you want to show the dimension items: 
 
@@ -211,13 +217,19 @@ You can select a node and show the top dimension items that come immediately aft
 
 #### Show top nodes before an existing node
 
-You can select a node and show the top dimension items that come immediately before it in the journey. You can add the top 3 dimension items to Journey canvas as separate nodes, or you can view all top dimension items in a freeform table.
+You can select a node and show the top immediate or eventual dimension items that come before it in the journey. You can add the top 3 dimension items to Journey canvas as separate nodes, or you can view all top dimension items in a freeform table.
 
 1. Right-click the node where you want to show the top dimension items that come before it in the journey.
 
    This node cannot have any existing nodes coming into it in the journey.
 
 1. Select [!UICONTROL **Show top nodes before this node**].
+
+1. Select whether to show dimension items that come immediately or eventually before the selected node:
+
+   * [!UICONTROL **Immediately before**]: Shows the top dimension items that come directly before the selected node in the journey.
+
+   * [!UICONTROL **Eventually before**]: Shows the top dimension items that eventually come before the selected node in the journey. Use this option when the step immediately before the selected node has no data for the primary metric that Journey canvas uses to determine the top nodes.
 
 1. Select where you want to show the dimension items: 
 
