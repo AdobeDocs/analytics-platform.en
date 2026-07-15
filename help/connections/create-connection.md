@@ -343,7 +343,7 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
 >title="Account ID"
->abstract="Select an account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform."
+>abstract="Select an account ID from the available non-identity or non-person identity fields defined in the dataset schema in Experience Platform. The contained values are used as unique account identifiers at row level, whenever the related account ID info is not available in the Person to Account dataset."
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountfield"
@@ -408,7 +408,7 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >[!CONTEXTUALHELP]
 >id="connection_personid"
 >title="Person ID"
->abstract="Select a person ID from the available identities defined in the dataset schema in the Experience Platform."
+>abstract="Select an identity or identityMap type field, with great coverage on events. The contained values are elevated to the ones from previously configured Person Identifier Namespace (in B2B stitching configuration)."
 
 >[!CONTEXTUALHELP]
 >id="connection_accountid"
@@ -736,7 +736,7 @@ For an event dataset in an account-based connection, you can specify:
 
 | Setting | Description |
 | --- | --- |
-| **[!UICONTROL Global Account ID]** | Select a Global Account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform. Applicable when you have added Global Account as a container to your connection. <p>If a record doesn't contain a value for the identity you have selected as the Account ID for the event dataset, the record is skipped. |
+| **[!UICONTROL Global Account ID]** | Applicable when you have added Global Account as a container to your connection.<br/>Select a Global Account ID (the unique identifier for an account) from the available non-identity or non-person identity fields defined in the dataset schema in Experience Platform. The contained values are used as unique account identifiers at row level, whenever the related account ID info is not available in the Person to Account dataset.  <p>If a record doesn't contain a value for the identity you have selected as the Account ID for the event dataset, the record is skipped. |
 | **[!UICONTROL Account ID]** | Select an Account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform. Applicable when you have not added Global Account as a container to your connection.|
 | **[!UICONTROL Opportunity ID]** | Select an Opportunity ID (the unique identifier for an opportunity) from the available identities defined in the dataset schema in the Experience Platform. |
 | **[!UICONTROL Buying Group ID]** | Select a Buying Group ID (the unique identifier for a buying group) from the available identities defined in the dataset schema in the Experience Platform. |
