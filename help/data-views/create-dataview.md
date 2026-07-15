@@ -5,7 +5,6 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-hold: true
 TQID: https://experienceleague.adobe.com/EXiKrWVfmMRgZ4GF0OR410Mr2-P5IEjPy3Hf0FmRDJ8
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -61,26 +60,12 @@ To create or edit a data view:
 
 To configure a new or existing data view:
 
->[!BEGINTABS]
-
->[!TAB Standard] 
-
-![Configure data view](assets/dataview-configure.png)
-
->[!TAB B2B Edition]
-
-![Configure data view B2B](assets/dataview-configure-b2b.png)
-
->[!TAB Separate containers tab]
-
 ![Configure data view with separate containers tab](assets/data-view-configure-containers.png)
 
 
->[!ENDTABS]
-
 
 1. Select the **[!UICONTROL Configure]** tab (if not already active).
-1. Specify **[!UICONTROL Settings]**, **[!UICONTROL Container]**, and **[!UICONTROL Calendar]** details (see below). 
+1. Specify **[!UICONTROL Settings]**, **[!UICONTROL Compatibility]**, **[!UICONTROL AI Settings]**, and **[!UICONTROL Calendar]** details (see below). 
 1. Select **[!UICONTROL Save and continue]** to continue configuring your new or existing data view. Select **[!UICONTROL Save]** to save the configuration for your existing data view.
    
 
@@ -89,7 +74,7 @@ To configure a new or existing data view:
 >[!CONTEXTUALHELP]
 >id="dataview_externalid"
 >title="External ID"
->abstract="Changing the External ID may impact how the data view name appears in external sources, such as business intelligence tools."
+>abstract="Changing the External ID impacts how the data view name appears in external sources, such as business intelligence tools."
 
 
 Provides overarching settings for the data view.
@@ -109,7 +94,7 @@ Provides overarching settings for the data view.
 >[!CONTEXTUALHELP]
 >id="dataview_dataviewsinadobejourneyoptimizer"
 >title="Data views in Journey Optimizer"
->abstract="Customer Journey Analytics needs to use a connection and data view that are compatible with Adobe Journey Optimizer. By default, a connection and data view are automatically created for this purpose.<br/>Alternatively, you can enable this option to make this the default data view that is used in Adobe Journey Optimizer reporting. When enabled, all the necessary components required for Journey Optimizer are added to this data view, and all the necessary Journey Optimizer datasets are added to the connection associated with this data view."
+>abstract="Customer Journey Analytics requires a connection and data view compatible with Adobe Journey Optimizer. The system creates a connection and data view by default. Alternatively, enable this option to set this as the default data view for Adobe Journey Optimizer reporting, which adds necessary components to the data view and datasets to the connection."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="Which components and datasets are added." 
 
 
@@ -122,24 +107,6 @@ This section is visible only for administrators who are provisioned with Journey
 | [!UICONTROL **Set as default data view in Adobe Journey Optimizer**] | This configuration option standardizes reporting across Journey Optimizer and Customer Journey Analytics. It also allows you to perform advanced analysis of your Adobe Journey Optimizer data in Customer Journey Analytics (by selecting ![Open](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) [!UICONTROL **Analyze in CJA**] while in Journey Optimizer).<p>To perform this type of analysis, Journey Optimizer needs access to a Customer Journey Analytics data view.<p>Enable this option to make this the default data view that is used in Journey Optimizer reporting for your sandbox.</p><p>This configuration option automatically:</p><ul><li>Configures all the required Journey Optimizer datasets in the associated connection in Customer Journey Analytics for use with Journey Optimizer.</li><li>Creates a set of Journey Optimizer metrics and dimension in the data view (including derived fields and calculated metrics). Context labels are automatically set on all of these metrics and dimensions.</li><li>Automatically enables the **[!UICONTROL Use in CJA]** option in the connection that is associated with this data view. (To learn more about this option, see [Use a Journey Optimizer connection in Customer Journey Analytics](/help/connections/manage-connections.md).)<p>If you manually disable this setting after it is enabled, the connection and any associated data views are reset to their default state. This can result in data changes in your reports.</p></li></ul><p><p>Consider the following when enabling this option: <ul><li>You can change the default data view at a later time, but doing so could alter your Journey Optimizer reporting data. If you choose to disable this option after it is enabled, you will be prompted to select a new default data view.</li><li>If you already made manual customizations to the the datasets, dimensions, or metrics in the Customer Journey Analytics data view, your manual customizations remain intact when enabling this configuration option. This option makes additional customizations that further standardize reporting across Journey Optimizer and Customer Journey Analytics. You can also make manual customizations after enabling this option.</li><li>When this option is selected, the connection associated with the data view cannot be deleted.</li></ul>See [Integrate Adobe Journey Optimizer with Adobe Customer Journey Analytics](/help/integrations/ajo.md) for more information. |
 
 {style="table-layout:auto"}
-
-### Containers
-
-Designates the name of containers for the data view. Container names are frequently used in [segments](/help/components/segments/seg-overview.md#containers).
-
-| Setting | Description |
-| --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Global Account container name]** | `Global Account` (default). The [!UICONTROL Global Account] container includes every session and event for globa accounts within the specified time frame. If your organization uses a different term, you can rename the container here. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Account container name]** | `Account` (default). The [!UICONTROL Account] container includes every session and event for accounts within the specified time frame. If your organization uses a different term, you can rename the container here. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Opportunity container name]** | `Opportunity` (default). The [!UICONTROL Opportunity] container includes every session and event for opportunities within the specified time frame. If your organization uses a different term, you can rename the container here. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Buying group container name]** | `Buying Group` (default). The [!UICONTROL Buying group] container includes every session and event for buying groups within the specified time frame. If your organization uses a different term, you can rename the container here. |
-| **[!UICONTROL Person container name]** | `Person` (default). The [!UICONTROL Person] container includes every session and event for persons within the specified time frame. If your organization uses a different term (for example, "Visitor" or "User"), you can rename the container here. |
-| **[!UICONTROL Session container name]** | `Session` (default). The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session. You can rename this container to 'Visit' or any other term your organization prefers. |
-| **[!UICONTROL Event container name]** | `Event` (default). The [!UICONTROL Event] container defines individual events in a dataset. If your organization uses a different term (for example, "Hits" or "Page Views"), you can rename the container here. |
-
-{style="table-layout:auto"}
-
-When you see **[!UICONTROL Containers have moved. Containers are now available on the dedicated Containers tab]**, you can define containers in a separate [Containers](#containers-1) tab.
 
 
 ### AI Settings
@@ -180,13 +147,19 @@ Indicates the calendar format that you want the data view to follow. You can hav
 
 In the **[!UICONTROL Containers]** tab you can rename system containers and add custom containers. 
 
-You add custom containers to your data view so you can use these containers for [sub-event analysis](/help/components/segments/sub-event.md). Custom containers can be defined from:
-
-* objects or arrays available within the datasets that are part of the connection. For example, **[!UICONTROL productListItems]**, **[!UICONTROL content_assets]**, or **[!UICONTROL placeContext.activePOIs]**.
-* derived fields that return an array through the use of the [Split](/help/data-views/derived-fields/derived-fields.md#split) function.
-* data view components that are configured to return an array using the [Substring](/help/data-views/component-settings/substring.md) component settings with the [Delimiter](/help/data-views/component-settings/substring.md#delimiter) option.
-
 ### System containers
+
+Designates the name of containers for the data view. Container names are frequently used in [segments](/help/components/segments/seg-overview.md#containers).
+
+| Container name | Display name (default) | Description |
+| --- | --- | --- |
+| globalAccount | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Global Account]** | The [!UICONTROL Global Account] container includes every session and event for globa accounts within the specified time frame. If your organization uses a different term, you can rename the container here. |
+| person | **[!UICONTROL Person]** | The [!UICONTROL Person] container includes every session and event for persons within the specified time frame. If your organization uses a different term (for example, "Visitor" or "User"), you can rename the container here. |
+| session | **[!UICONTROL Session]** | The [!UICONTROL Session] container lets you identify page interactions, campaigns, or conversions for a specific session. You can rename this container to 'Visit' or any other term your organization prefers. |
+| opportunity| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Opportunity]** |  The [!UICONTROL Opportunity] container includes every session and event for opportunities within the specified time frame. If your organization uses a different term, you can rename the container here. |
+| buyingGroup | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Buying group]** | The [!UICONTROL Buying group] container includes every session and event for buying groups within the specified time frame. If your organization uses a different term, you can rename the container here. |
+| event | **[!UICONTROL Event]** | The [!UICONTROL Event] container defines individual events in a dataset. If your organization uses a different term (for example, "Hits" or "Page Views"), you can rename the container here. |
+| account | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Account]** | The [!UICONTROL Account] container includes every session and event for accounts within the specified time frame. If your organization uses a different term, you can rename the container here. |
 
 To rename system containers:
 
@@ -196,6 +169,12 @@ To rename system containers:
 
 
 ### Custom containers
+
+You add custom containers to your data view so you can use these containers for [sub-event analysis](/help/components/segments/sub-event.md). Custom containers can be defined from:
+
+* objects or arrays available within the datasets that are part of the connection. For example, **[!UICONTROL productListItems]**, **[!UICONTROL content_assets]**, or **[!UICONTROL placeContext.activePOIs]**.
+* derived fields that return an array through the use of the [Split](/help/data-views/derived-fields/derived-fields.md#split) function.
+* data view components that are configured to return an array using the [Substring](/help/data-views/component-settings/substring.md) component settings with the [Delimiter](/help/data-views/component-settings/substring.md#delimiter) option.
 
 To add a custom container:
 
@@ -244,12 +223,12 @@ Next, you can set a data view's components, which means you can create metrics a
 
    ![Components tab](assets/dataview-components.png)
 
-   You can see the [!UICONTROL Connection] at the top left, which contains the datasets, and its [!UICONTROL Schema fields] below.  The components already included are standard components (system generated) required for all data views (like Events, People, Sessions metrics, and Minute, Quarter, Week dimensions).<ul><li>When you have defined c[ustom containers](#containers-1), metrics for these containers are automatically added and identified using ![ShowAllLayer](/help/assets/icons/ShowAllLayer.svg) **[!UICONTROL _custom container name_ Occurrences]**.</li><li>The filter **[!UICONTROL is not deprecated]** is applied by default, so that only Schema fields appear which are not deprecated.</li></ul>
+   You can see the [!UICONTROL Connection] at the top left, which contains the datasets, and its [!UICONTROL Schema fields] below.  All data views include standard components like Events, People, Session metrics, and time dimensions.<ul><li>When you define [custom containers](#containers-1), metrics are automatically added as ![ShowAllLayer](/help/assets/icons/ShowAllLayer.svg) **[!UICONTROL _custom container name_ Occurrences]**.</li><li>The system applies the **[!UICONTROL is not deprecated]** filter by default, so that only non-deprecated Schema fields appear.</li></ul>
 
-1. Search for a schema field using ![Search icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Search schema fields]** or find a field by moving into any of the dataset collections, like ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL Event datasets]** or ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL Lookup datasets]**. For event datasets, separate collections for ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL XDM fields]** and ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL Adhoc and relational fields]** are available.<br/>Alternatively, you can create a derived field using ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Create derived field** . See [Derived fields](./derived-fields/derived-fields.md) for more information.
+1. Search for a schema field using ![Search icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Search schema fields]** or find a field by moving into any of the dataset collections, like ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL Event datasets]** or ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL Lookup datasets]**. For event datasets, separate collections for ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL XDM fields]** and ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL Adhoc and relational fields]** are available.<br/>Alternatively, you can create a derived field using ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Create derived field**. See [Derived fields](./derived-fields/derived-fields.md) for more information.
 
-1. When you found your specific schema field or defined your derived field, drag that field, such as ![Handle icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Page Name]**, from the left rail into the **[!UICONTROL Metrics]** or **[!UICONTROL Dimensions]** section underneath **[!UICONTROL Included components]**.
-   You can drag the same schema field into the dimensions or metrics sections multiple times and configure the same dimension or metric in different ways. For example, from the  pageName field, you can create a dimension titled `Product Pages`, and another one titled `Error pages`, by using different [Component settings](component-settings/overview.md) on the right.
+1. When you have found your specific schema field or defined your derived field, drag that field, such as ![Handle icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Page Name]**, from the left rail into the **[!UICONTROL Metrics]** or **[!UICONTROL Dimensions]** section underneath **[!UICONTROL Included components]**.
+   You can drag the same schema field into the dimensions or metrics sections multiple times and configure the same dimension or metric in different ways. For example, from the pageName field, create `Product Pages` and `Error pages` dimensions using different [Component settings](component-settings/overview.md) on the right.
    If you drag a schema field folder from the left rail, the fields in the folder are automatically sorted into the appropriate section. String fields end up in the [!UICONTROL Dimensions] section and numeric schema types end up in the [!UICONTROL Metrics] section. You can also click **[!UICONTROL Add all]** and all schema fields are added to their respective section.
 
 1. Once you select a component, settings appear on the right.
@@ -271,7 +250,7 @@ Next, you can set a data view's components, which means you can create metrics a
 
 ### Duplicate metrics or dimensions
 
-Duplicating metrics or dimensions and then modifying specific settings is an easy way to create multiple metrics or dimensions from a single schema field. Select the [!UICONTROL Duplicate] setting underneath the metric's or dimensions's name at the top right. Modify the new dimension or metric and save it under a more descriptive name.
+Duplicating metrics or dimensions and then modifying specific settings is an efficient way to create multiple metrics or dimensions from a single schema field. Select the [!UICONTROL Duplicate] setting underneath the metric's or dimension's name at the top right. Modify the new dimension or metric and save it under a more descriptive name.
 
 ### Filter schema fields or datasets
 
@@ -281,7 +260,7 @@ You can filter ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_1
 
 >[!TIP]
 >
->If the components do not load properly in your data view and you see an error message instead, please refer to [Lack of permissions](../troubleshooting/lack-of-permissions.md) for a resolution.
+>If the components do not load properly in your data view and you see an error message, refer to [Lack of permissions](../troubleshooting/lack-of-permissions.md) for a resolution.
 
 
 ### Included components {#included-components}
@@ -320,7 +299,7 @@ You can filter ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_1
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_policies"
 >title="Policies"
->abstract="In order for data usage labels to effectively support data compliance, data usage policies must be implemented. Data usage policies are rules that describe the kinds of marketing actions that you are allowed to, or restricted from, performing on data within Experience Platform. The Policies filters apply the enabled policy to the Data View."
+>abstract="To support data compliance, implement data usage policies. These policies describe allowed or restricted marketing actions on data within Experience Platform. The Policies filters apply the enabled policy to the Data View."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
 
 
@@ -331,7 +310,7 @@ You can filter ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_1
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Data usage labels overview"
 
 
-The **[!UICONTROL Included components]** contains the list of **[!UICONTROL Metrics]** and **[!UICONTROL Dimensions]** you configure for the data view. 
+The **[!UICONTROL Included components]** section contains the list of **[!UICONTROL Metrics]** and **[!UICONTROL Dimensions]** you configure for the data view. 
 
 * To search for components, use ![Search](/help/assets/icons/Search.svg) **[!UICONTROL _Search components_]**.
 * To filter the listed included components, select ![Filter](/help/assets/icons/Filter.svg).
@@ -342,7 +321,7 @@ The **[!UICONTROL Included components]** contains the list of **[!UICONTROL Metr
 
   * **[!UICONTROL Data type]** - You can select one or more of the following data types: [!UICONTROL String], [!UICONTROL Integer], [!UICONTROL Short], [!UICONTROL Boolean], [!UICONTROL Double], [!UICONTROL Byte], [!UICONTROL Long], [!UICONTROL Date], or [!UICONTROL Date-time].
   * **[!UICONTROL Datasets]** - Select one or more datasets.
-  * **[!UICONTROL Data governance]**: Select one or more labels from the [!UICONTROL Custom labels], [!UICONTROL Contract labels], [!UICONTROL Identity labels], [!UICONTROL Sensitivity labels], P[!UICONTROL artner ecosystem] or [!UICONTROL Policies] subcategories.
+  * **[!UICONTROL Data governance]**: Select one or more labels from the [!UICONTROL Custom labels], [!UICONTROL Contract labels], [!UICONTROL Identity labels], [!UICONTROL Sensitivity labels], [!UICONTROL Partner ecosystem], or [!UICONTROL Policies] subcategories.
   * **[!UICONTROL Other]** - Select one or more of the options [!UICONTROL Contains data], [!UICONTROL Is identity], or [!UICONTROL Is not deprecated].
 
   Select **[!UICONTROL Apply]** to apply the filters.
@@ -366,12 +345,12 @@ You can add segments that apply to an entire data view. This segment is applied 
 
 ### Session settings
 
-Determine the time period of inactivity between events before a session expires and a new one is started. A time period is required. You can optionally also force a new session to start when an event contains a certain metric. See [Session settings](session-settings.md) for more details.
+Determine the time period of inactivity between events before a session expires and a new one is started. A time period is required. You can optionally force a new session to start when an event contains a certain metric. See [Session settings](session-settings.md) for more details.
 
 ### Data preview
 
 The data preview compares (for the various containers) the data of this data view with data of the connection. The preview percentage is based on the total number in the connection from the last 90 days.
 
-If the preview is not loading, your connection could still be backfilling.
+If the preview is not loading, your connection is still backfilling.
 
 Once all desired settings are specified, click **[!UICONTROL Save and finish]**.

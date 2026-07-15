@@ -3,7 +3,6 @@ description: Understand how the segment builder provides a canvas to drag and dr
 title: Build Segments
 feature: Filters, Segments
 role: User
-hold: true
 exl-id: 160021f1-6942-4682-9114-d375307d9912
 TQID: https://experienceleague.adobe.com/MFqcgWkCqZbtbI58nF8boBZU3YzfcuAAsJxXbjBcT5E
 product_v2:
