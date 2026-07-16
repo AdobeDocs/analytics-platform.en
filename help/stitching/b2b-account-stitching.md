@@ -139,10 +139,7 @@ You enable and configure B2B account stitching at the connection level, and then
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="Enable person to account stitching"
->abstract="If enabled, this dataset uses B2B account stitching. Select a required **[!UICONTROL Person ID]** to lookup the account ID based on the person-to-account dataset.<br/>If disabled, this dataset does *not* use B2B account stitching and you have to select a required **[!UICONTROL Account ID]** instead."
->additional-url="url"
->additional-url="url"
-
+>abstract="If enabled, this dataset uses B2B Person to Account stitching. The **[!UICONTROL Person ID]** values will be elevated to the ones from the configured Person Identifier Namespace, then used to lookup the account ID based on the Person to Account dataset (B2B stitching configuration interface). The Account ID field is optional for the current dataset, and to be used as secondary source of data. If disabled, this dataset does not use B2B Person to Account stitching and you have to select a required Account ID instead."
 
 After configuring B2B stitching at the connection level, you must enable B2B account stitching individually for each event dataset that you want stitched.
 
