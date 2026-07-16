@@ -201,9 +201,9 @@ You can select a node and show the top immediate or eventual dimension items tha
 
 1. Select whether to show the dimension items that come immediately or eventually after the selected node:
 
-   * [!UICONTROL **Immediately after**]: Shows the top dimension items that come directly after the selected node in the journey.
+   * [!UICONTROL **Immediately after**]: Shows the top dimension items that come directly after the selected node. Use this when you want to know what occurred immediately after a given step in the journey. For example, you can see which page people visit immediately after visiting a given product page.
 
-   * [!UICONTROL **Eventually after**]: Shows the top dimension items that eventually come after the selected node in the journey. Use this option when the step immediately after the selected node has no data for the primary metric that Journey canvas uses to determine the top dimension items.
+   * [!UICONTROL **Eventually after**]: Shows the top dimension items that come after the selected node at any point in the journey, not necessarily the very next step. Use this when the selected node is the key event in your analysis and you want to see what people do at any point afterward. For example, after a purchase, you can see the top pages people eventually tend to visit at any later point in the journey.
 
 1. Select where you want to show the dimension items: 
 
@@ -227,9 +227,9 @@ You can select a node and show the top immediate or eventual dimension items tha
 
 1. Select whether to show dimension items that come immediately or eventually before the selected node:
 
-   * [!UICONTROL **Immediately before**]: Shows the top dimension items that come directly before the selected node in the journey.
+   * [!UICONTROL **Immediately before**]: Shows the top dimension items that come directly before the selected node. Use this when you want to know what occurred immediately before a given step in the journey. For example, you can see which page people visit immediately before visiting a given product page.
 
-   * [!UICONTROL **Eventually before**]: Shows the top dimension items that eventually come before the selected node in the journey. Use this option when the step immediately before the selected node has no data for the primary metric that Journey canvas uses to determine the top nodes.
+   * [!UICONTROL **Eventually before**]: Shows the top dimension items that come before the selected node at any point in the journey, not necessarily the very previous step. Use this when the selected node is the key event in your analysis and you want to see what people did at any point leading up to it. For example, before a purchase, you can see the top pages people had visited at any earlier point in the journey.
 
 1. Select where you want to show the dimension items: 
 
