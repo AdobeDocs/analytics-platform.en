@@ -91,8 +91,6 @@ You enable and configure B2B account stitching at the connection level, and then
 >id="connection_b2b_stitching_start_time"
 >title="Start time"
 >abstract="Select a timestamp field that indicates when the person-to-account relationship became active."
->additional-url="url"
->additional-url="url"
 
 
 1. In Customer Journey Analytics, navigate to **[!UICONTROL Connections]** and [create a new connection](/help/connections/create-connection.md#create-a-connection) or [edit an existing connection](/help/connections/create-connection.md#edit-a-connection).
@@ -140,8 +138,6 @@ You enable and configure B2B account stitching at the connection level, and then
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="Enable person to account stitching"
 >abstract="If enabled, this dataset uses B2B account stitching. Select a required **[!UICONTROL Person ID]** to lookup the account ID based on the person-to-account dataset.<br/>If disabled, this dataset does *not* use B2B account stitching and you have to select a required **[!UICONTROL Account ID]** instead."
->additional-url="url"
->additional-url="url"
 
 
 After configuring B2B stitching at the connection level, you must enable B2B account stitching individually for each event dataset that you want stitched.
