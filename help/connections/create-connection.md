@@ -418,7 +418,7 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >[!CONTEXTUALHELP]
 >id="connection_b2bstitching_personid"
 >title="Person ID"
->abstract="Select an identity or identityMap type field, with great coverage on events. The contained values will be elevated to the ones from previously configured Person identifier namespace."
+>abstract="Select an identity or identityMap type field, with great coverage on events. The contained values will be elevated to the ones from previously configured person identifier namespace."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2bstitching_accountid"
