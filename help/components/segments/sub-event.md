@@ -16,10 +16,9 @@ subfeature_v2:
 
 Sub-event analysis lets you analyze event data at a level more granular than the event level. Instead of filtering on entire events, you can segment on individual containers within events. For example:
 
-- Segmenting on a specific product category without including all other products purchased in the same order
-- Segmenting on a specific assets category within content analytics data?
-- Segmenting on a specific media channel within media analytics data.
-
+* Segmenting on a specific product category without including all other products purchased in the same order.
+* Segmenting on a specific assets category within content analytics data.
+* Segmenting on a specific media channel within media analytics data.
 
 In Customer Journey Analytics, you define containers within a data view for which you want to use sub-event analysis. Without sub-event analysis, segmenting on a container item attribute returns all events, sessions, people, (global) accounts [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, buying groups [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, opportunities [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, or other [containers](/help/data-views/create-dataview.md#containers-1) you have defined. The result is incorrect attribution and inflated revenue metrics. Sub-event analysis scopes the filter to individual container rows within an event and solves these issues.
 
