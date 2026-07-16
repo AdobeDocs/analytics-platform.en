@@ -408,12 +408,22 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >[!CONTEXTUALHELP]
 >id="connection_personid"
 >title="Person ID"
->abstract="Select an identity or identityMap type field, with great coverage on events. The contained values are elevated to the ones from previously configured Person Identifier Namespace (in B2B stitching configuration)."
+>abstract="Select a person ID from the available identities defined in the dataset schema in the Experience Platform."
 
 >[!CONTEXTUALHELP]
 >id="connection_accountid"
 >title="Account ID"
 >abstract="Select an account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform."
+
+>[!CONTEXTUALHELP]
+>id="connection_b2bstitching_personid"
+>title="Person ID"
+>abstract="Select an identity or identityMap type field, with great coverage on events. The contained values will be elevated to the ones from previously configured Person identifier namespace."
+
+>[!CONTEXTUALHELP]
+>id="connection_b2bstitching_accountid"
+>title="Account ID"
+>abstract="Optionally, select an account ID from the available non-identity or non-person identity fields defined in the dataset schema. The contained values will be used as unique account identifier at row level, whenever the related account ID info is not available in the person-to-account dataset."
 
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"
