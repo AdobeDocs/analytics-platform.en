@@ -112,15 +112,7 @@ Before you create a data feed, it's important to have a basic understanding of d
 
    When you apply multiple segments, they are joined together with an AND operator. (To join segments with an OR operator, you must first create a new segment in the segment builder, then apply the new segment to the data feed.)
 
-1. Add components to the data feed configuration. The left rail shows only components that are valid for data feeds. Use any of the following methods to add components to the canvas:
-
-   * **Drag-and-drop**: Drag components from the left rail to the canvas. Hold **[!UICONTROL Shift]**, or hold **[!UICONTROL Command]** (macOS) or **[!UICONTROL Ctrl]** (Windows) to select and drag multiple components at once.
-   * **Plus button**: Select the Plus ![Add](/help/assets/icons/Add.svg) icon next to any component in the left rail to add it to the canvas.
-   * **[!UICONTROL Show all]**: Select **[!UICONTROL Show all]** at the bottom of the component list to open a dialog showing all available components. Select the checkbox next to each component you want to add, then select **[!UICONTROL Add selected]**. When a search term or filter tag is active in the left rail, an **[!UICONTROL Add all]** button also appears, letting you add all filtered results at once.
-
-   When you add a component that belongs to an XDM array field (for example, an Adobe Journey Optimizer proposition field), it appears on the canvas as a collapsible nested group rather than a flat item. The group reflects the underlying data structure and outputs as a nested array in the exported file.
-
-   <!--add screenshot-->
+1. Add components to the data feed configuration. The left rail shows only components that are valid for data feeds. 
 
    >[!IMPORTANT]
    >
@@ -131,14 +123,21 @@ Before you create a data feed, it's important to have a basic understanding of d
    >* 
    >*
    >
-   >If you are using the Web SDK, this restriction is enforced in datastreams before data arrives in an Experience Platform dataset. For more information, see [Configure device lookup](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Create and configure datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) in the Data Collection guide.
+   >If you use the Web SDK, this restriction is enforced in datastreams before data arrives in an Experience Platform dataset. For more information, see [Configure device lookup](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Create and configure datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) in the Data Collection guide.
+   >
+   >User agent data and device lookup data cannot exist in the same data feed configuration. An error displays if you attempt to add conflicting components
+   >mobile_device_name, mobile_os
+   >Use the following information to understand dimensions that are always included, dimensions that cannot be included, and metrics that must be substituted:
+   >
+   >Use any of the following methods to add components to the canvas:
 
-   User agent data and device lookup data cannot exist in the same data feed configuration. An error displays if you attempt to add conflicting components
+   * **Drag-and-drop**: Drag components from the left rail to the canvas. Hold **[!UICONTROL Shift]**, or hold **[!UICONTROL Command]** (macOS) or **[!UICONTROL Ctrl]** (Windows) to select and drag multiple components at once.
+   * **Plus button**: Select the Plus ![Add](/help/assets/icons/Add.svg) icon next to any component in the left rail to add it to the canvas.
+   * **[!UICONTROL Show all]**: Select **[!UICONTROL Show all]** at the bottom of the component list to open a dialog showing all available components. Select the checkbox next to each component you want to add, then select **[!UICONTROL Add selected]**. When a search term or filter tag is active in the left rail, an **[!UICONTROL Add all]** button also appears, letting you add all filtered results at once.
 
-   mobile_device_name, mobile_os
+   When you add a component that belongs to an XDM array field (for example, an Adobe Journey Optimizer proposition field), it appears on the canvas as a collapsible nested group rather than a flat item. The group reflects the underlying data structure and outputs as a nested array in the exported file.
 
-
-   Use the following information to understand dimensions that are always included, dimensions that cannot be included, and metrics that must be substituted:
+   <!--add screenshot-->
 
    +++ Dimensions that are always included in data feeds
 
@@ -238,11 +237,11 @@ Before you create a data feed, it's important to have a basic understanding of d
    * The **[!UICONTROL Schema preview]** shows a JSON representation of the data feed schema that updates as you add or reorder components. 
    * The **[!UICONTROL Example rows]** button opens a dialog that shows example output rows so you can verify that the structure looks correct. This dialog shows example data only and does not reflect your actual data.
 
-   ![Example rows dialog](assets/data-feed-example-rows.png)
+   <!--add screenshot-->
 
 1. On the [!UICONTROL **Delivery**] tab, in the [!UICONTROL **Schedule**] section, choose the type of feed you want to create (live or backfill), then specify the reporting window, frequency, and other configuration options:
 
-   ![Delivery tab showing Schedule and Destination sections for a live feed](assets/data-feed-delivery-live.png)
+   <!--add screenshot-->
 
    | Field | Function |
    |---------|----------|
