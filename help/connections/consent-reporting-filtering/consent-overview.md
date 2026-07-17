@@ -33,6 +33,15 @@ topic_v2:
 
 Consent reporting and filtering uses the consent policy membership data stored in your Adobe Experience Platform Profile datasets to help you report on visitor consent and, optionally, exclude non-consenting visitors before their data is ingested into Customer Journey Analytics.
 
+## Prerequisites
+
+Before you configure consent reporting and filtering, make sure that:
+
+* Your organization has licensed Adobe Healthcare Shield or Privacy & Security Shield.
+* You have system administrator permissions in Customer Journey Analytics.
+* The sandbox that you want to use contains a Profile dataset with consent policy membership data in the `consentPoliciesIDMap` field.
+* The connection that you want to configure already exists. For more information, see [Create or edit a connection](/help/connections/create-connection.md).
+
 The following diagram and associated table show a high-level representation of how consent reporting and filtering makes consent policy data available in Analysis Workspace and filters visitor data at ingest time:
 
 ![Consent reporting and filtering overview](assets/consent-overview.png)
