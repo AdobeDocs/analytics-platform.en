@@ -118,10 +118,34 @@ Before you create a data feed, it's important to have a basic understanding of d
    >
    >Certain dimensions cannot be used together in Experience Platform datasets, and therefore cannot be included in the same data feed. 
    >
-   >If you choose to include either the User Agent dimension or any user device lookup data (using dimensions such as Mobile Device Name, Mobile OS, and so forth), the following dimensions cannot be added to a data feed:
+   >If you choose to include either the User Agent Mobile ID, the following dimensions cannot be added to a data feed:
    >
-   >* 
-   >*
+   >* Browser Type
+   >* Browser
+   >* Mobile Manufacturer
+   >* Mobile Device Type
+   >* Mobile Audio Support
+   >* Mobile DRM
+   >* Mobile Java VM
+   >* Mobile Information Services
+   >* Mobile Image Support
+   >* Mobile Color Depth
+   >* Mobile Net Protocols
+   >* Mobile Device Number
+   >* Mobile Max Email Length
+   >* Mobile Mail Decoration
+   >* Mobile Push To Talk
+   >* Mobile Screen Width
+   >* Mobile Max Browser URL Length
+   >* Mobile Operating System (deprecated)
+   >* Mobile Screen Height
+   >* Mobile Video Support
+   >* Mobile Cookie Support
+   >* Mobile Max Bookmark Length
+   >* Mobile Screen Size
+   >* Mobile Device Name
+   >* Operating System Types
+   >* Operating Systems 
    >
    >If you use the Web SDK, this restriction is enforced in datastreams before data arrives in an Experience Platform dataset. For more information, see [Configure device lookup](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Create and configure datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) in the Data Collection guide.
    >
