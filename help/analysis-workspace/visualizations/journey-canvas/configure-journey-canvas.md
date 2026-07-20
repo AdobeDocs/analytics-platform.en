@@ -98,8 +98,44 @@ See [Journey canvas overview](/help/analysis-workspace/visualizations/journey-ca
 
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_percentage_value"
->title="Choose how percentages are calculated"
+>title="Percentage value"
 >abstract="The percentages shown on each node are based on the primary and secondary metrics you configure. You can choose whether the percentages relate to the start node, the previous node, or all data in the report suite."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_arrow_settings"
+>title="Arrow settings"
+>abstract="Choose whether to show or hide labels on the canvas. Labels are custom names created within Journey canvas."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_arrow_settings_ajo"
+>title="Arrow settings"
+>abstract="Choose whether to show or hide labels and values on the canvas. Labels can be custom names created within Journey canvas, or they can be labels or conditions that were created in Journey Optimizer. Values are numbers and percentages that indicate the people or sessions that moved from one node to the next on the journey. "
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_show_fallout"
+>title="Show fallout"
+>abstract="Fallout data shows the percentage and number of people or sessions on each node of the journey who never arrived at the next node of the journey. They might have performed other actions on the site, but they never met the criteria defined by the next node in the journey.<br/>Fallout data shows either people or sessions (regardless of the primary metric you chose), and it is based on the Journey canvas container setting."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_compare"
+>title="Compare to"
+>abstract="The date range used to compare current journey data against a prior period. When you select a comparison date range, each node in the journey shows the percent change between the current date range and the selected comparison date range, based on the primary metric. "
 
 <!-- markdownlint-enable MD034 -->
 
