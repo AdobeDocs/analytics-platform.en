@@ -107,9 +107,9 @@ The following additional context menu options are available when selecting a met
 | **[!UICONTROL Modify attribution models]** | Modify the attribution model for the column. |
 | **[!UICONTROL Compare attribution model]** | Specify a new attibution model and compare it to the attribution model for the selected column. A new column is added with the new attribution model metrics. Also, a Percent change column is added for comparison. |
 | **[!UICONTROL Reset column widths]** | Reset the column widths to the default width. |
-| **[!UICONTROL Create annotation from selection]** | Open up the **[!UICONTROL Annotation details]** to add an annotation. |
-| **[!UICONTROL Create segment from selection]** | Open up the **[!UICONTROL Segment builder]** to build a segment from the selection. |
-| **[!UICONTROL Create audience from selection]** | Open up the **[!UICONTROL Create audience]** dialog to build an audience from the selection. |
+| **[!UICONTROL Create annotation from selection]** | Open up the [Annotation builder](/help/components/annotations/create-annotations.md#annotation-builder) to build an annotation for the selection. |
+| **[!UICONTROL Create segment from selection]** | Open up the [Segment builder](/help/components/segments/seg-builder.md) to build a segment from the selection. |
+| **[!UICONTROL Create audience from selection]** | Open up the [Audience builder](/help/components/audiences/publish.md#audience-builder) to build an audience from the selection. |
 
 
 ## Change row height
@@ -117,7 +117,9 @@ The following additional context menu options are available when selecting a met
 You can set the [view density](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) of a project to **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]**, and **[!UICONTROL Expanded]**.
 
 
-## Inline classifications
+## Inline classifications {#inline-classifications-example}
+
+{{release-limited-testing-section}}
 
 Inline classifications enable you to rename or combine rows in a freeform table. And to create a derived field from the modified rows in a table.
 
@@ -163,6 +165,6 @@ The example below illustrates how to use the **[!UICONTROL Rename selected row]*
 * Reset the freeform table to the state before modifications.
 
   1. Select ![Gear](/help/assets/icons/Gear.svg) next to **[!UICONTROL _dimension name_ (modified)]**.
-  1. Select **[!UICONTROL Reset modified rows]** from the **[!UICONTROL Rows renamed]** popup.
+  1. Select **[!UICONTROL Reset modified rows]** from the **[!UICONTROL Rows modified]** popup.
 
      ![Reset freeform table](assets/popup-reset.png)
