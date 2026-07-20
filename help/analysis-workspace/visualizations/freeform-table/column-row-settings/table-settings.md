@@ -121,7 +121,7 @@ You can set the [view density](https://experienceleague.adobe.com/en/docs/analyt
 
 Inline classifications enable you to rename or combine rows in a freeform table. And to create a derived field from the modified rows in a table.
 
-The example below illustrates how to use the **[!UICONTROL Rename selected row]**, **[!UICONTROL Combine selected rows]**, and **[!UICONTROL Create as derived field]** context menu options. And how to reset the modified freeform table.
+The example below illustrates how to use the **[!UICONTROL Rename selected row]**, **[!UICONTROL Combine selected rows]**, and **[!UICONTROL Create modified rows as derived field]** context menu options. And how to reset the modified freeform table.
 
 * Rename **[!UICONTROL No value]** row to **[!UICONTROL Other]**.
 
