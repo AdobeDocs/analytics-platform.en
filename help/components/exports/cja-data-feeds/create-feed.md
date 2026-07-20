@@ -114,14 +114,6 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 1. Add components to the data feed configuration. The left rail shows only components that are valid for data feeds. 
 
-   >[!IMPORTANT]
-   >
-   >Certain dimensions cannot be used together in Experience Platform datasets, and therefore cannot be included in the same data feed. 
-   >
-   >If you choose to include either the User Agent or Mobile ID dimensions, various dimensions cannot be used.
-   >
-   >For more information, expand the section below, **Dimensions that cannot be used together in data feeds**.
-
    * **Drag-and-drop**: Drag components from the left rail to the canvas. Hold **[!UICONTROL Shift]**, or hold **[!UICONTROL Command]** (macOS) or **[!UICONTROL Ctrl]** (Windows) to select and drag multiple components at once.
    * **Plus button**: Select the Plus ![Add](/help/assets/icons/Add.svg) icon next to any component in the left rail to add it to the canvas.
    * **[!UICONTROL Show all]**: Select **[!UICONTROL Show all]** at the bottom of the component list to open a dialog showing all available components. Select the checkbox next to each component you want to add, then select **[!UICONTROL Add selected]**. When a search term or filter tag is active in the left rail, an **[!UICONTROL Add all]** button also appears, letting you add all filtered results at once.
@@ -173,9 +165,15 @@ Before you create a data feed, it's important to have a basic understanding of d
 
    +++ Dimensions that cannot be used together in data feeds
 
-   Certain dimensions cannot be used together in Experience Platform datasets, and therefore cannot be included in the same data feed. 
-   
-   If you choose to include either the User Agent Mobile ID, the following dimensions cannot be added to a data feed:
+   >[!IMPORTANT]
+   >
+   >Certain dimensions cannot be used together in Experience Platform datasets, and therefore cannot be included in the same data feed. 
+   >
+   >If you choose to include either the **User Agent** or **Mobile ID** dimensions in your data feed, the dimensions listed below cannot be added to the data feed.
+   >
+   >If you use the Web SDK, this restriction is enforced in datastreams before data arrives in an Experience Platform dataset. For more information, see [Configure device lookup](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Create and configure datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) in the Data Collection guide.
+
+   The following dimensions cannot be used together with the **User Agent** or **Mobile ID** dimensions:
    
    * Browser Type
    * Browser
@@ -203,31 +201,6 @@ Before you create a data feed, it's important to have a basic understanding of d
    * Mobile Device Name
    * Operating System Types
    * Operating Systems 
-   
-   If you use the Web SDK, this restriction is enforced in datastreams before data arrives in an Experience Platform dataset. For more information, see [Configure device lookup](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Create and configure datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) in the Data Collection guide.
-   
-   Customer Journey Analytics standard dimensions cannot be included in data feeds. The following table lists these dimensions:
-
-   | Dimension name | Notes | Data feeds |
-   |---|---|---|
-   | 5 Minute | Five-minute intervals when events occurred (rounded down) | Not available |
-   | 15 Minute | Fifteen-minute intervals when events occurred (rounded down) | Not available |
-   | 30 Minute | Thirty-minute intervals when events occurred (rounded down) | Not available |
-   | Day | Day an event occurred | Not available |
-   | Day of Week | Day of the week an event occurred | Not available |
-   | Day of Month | Day of the month an event occurred | Not available |
-   | Hour | Hour an event occurred (rounded down) | Not available |
-   | Hour of Day | Hour of the day an event occurred (rounded down) | Not available |
-   | Minute | Minute an event occurred (rounded down) | Not available |
-   | Minute of Hour | Minute of the hour an event occurred (rounded down) | Not available |
-   | Month | Month an event occurred | Not available |
-   | Month of Year | Month of the year an event occurred | Not available |
-   | Quarter | Quarter an event occurred | Not available |
-   | Quarter of Year | Quarter of the year an event occurred | Not available |
-   | Second | Second an event occurred (rounded down) | Not available |
-   | Week | Week an event occurred | Not available |
-   | Week of Year | Week of the year an event occurred | Not available |
-   | Year | Year an event occurred | Not available |
 
    +++
 
