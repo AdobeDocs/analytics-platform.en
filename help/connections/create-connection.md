@@ -423,7 +423,7 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >[!CONTEXTUALHELP]
 >id="connection_b2bstitching_accountid"
 >title="Account ID"
->abstract="Optionally, select an account ID from the available non-identity or non-person identity fields defined in the dataset schema. The contained values will be used as unique account identifier at row level, whenever the related account ID info is not available in the person-to-account dataset."
+>abstract="Optionally, select an account ID from the available non-identity or non-people identity fields defined in the XDM schema. The contained values will be used as unique account identifier at row level, whenever the related account ID info is not available in the person-to-account dataset."
 
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"
