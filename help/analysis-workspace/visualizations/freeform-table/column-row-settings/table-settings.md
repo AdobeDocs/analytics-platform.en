@@ -90,9 +90,9 @@ The following additional context menu options are available when selecting one o
 | **[!UICONTROL Trend selection]** | Create a trended line chart visualization for the selection. |
 | **[!UICONTROL Display only selected rows]** | Display only the selected rows in the visualization. |
 | **[!UICONTROL Display all rows]** | Display all rows in the visualization. |
-| **[!UICONTROL Rename selected row]** | *Limited Testing Availability*<br/>Rename the selected row. Enter a **[!UICONTROL Name]** in the **[!UICONTROL Rename selected row]** dialog. Select **[!UICONTROL OK]** to confirm or **[!UICONTROL Cancel]** to cancel. Once a row in a freeform table is renamed, the dimension name in the header column is appended with **[!UICONTROL (modified)]** and a ![Gear](/help/assets/icons/Gear.svg) icon is available to reset renamed rows in the dimension header column. See [Inline classification example](#inline-classifications-example). |
-| **[!UICONTROL Combine selected rows]** | *Limited Testing Availability*<br/>Combine the selected rows. Enter a **[!UICONTROL Name]** in the **[!UICONTROL Combine selected rows]** dialog. Select **[!UICONTROL OK]** to confirm or **[!UICONTROL Cancel]** to cancel. Once rows in a freeform table are combined, the dimension namein the header column is appended with **[!UICONTROL (modified)]** and a ![Gear](/help/assets/icons/Gear.svg) icon is available to reset renamed rows in the dimension header column. See [Inline classification example](#inline-classifications-example). |
-| **[!UICONTROL Create as derived field]** | *Limited Testing Availability*<br/>*You must be a Customer Journey Analytics product administrator to see this context menu option.*<br/>Available on any selected row of a freeform table which is modified as the result of renaming or combining rows. When selected, the [Derived field interface](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field) opens with the modifications you have made to the freeform table already prefilled. See [Inline classification example](#inline-classifications-example). |
+| **[!UICONTROL Rename selected row]** | Rename the selected row. Enter a **[!UICONTROL Name]** in the **[!UICONTROL Rename selected row]** dialog. Select **[!UICONTROL OK]** to confirm or **[!UICONTROL Cancel]** to cancel. Once a row in a freeform table is renamed, the dimension name in the header column is appended with **[!UICONTROL (modified)]** and a ![Gear](/help/assets/icons/Gear.svg) icon is available to reset modified rows in the dimension header column. See [Inline classifications](#inline-classifications). |
+| **[!UICONTROL Combine selected rows]** | Combine the selected rows. Enter a **[!UICONTROL Name]** in the **[!UICONTROL Combine selected rows]** dialog. Select **[!UICONTROL OK]** to confirm or **[!UICONTROL Cancel]** to cancel. Once rows in a freeform table are combined, the dimension name in the header column is appended with **[!UICONTROL (modified)]** and a ![Gear](/help/assets/icons/Gear.svg) icon is available to reset modified rows in the dimension header column. See [Inline classifications](#inline-classifications). |
+| **[!UICONTROL Create modified rows as derived field]** | *You must be a Customer Journey Analytics product administrator to see this context menu option.*<br/>Available on any selected row of a freeform table which is modified as the result of renaming or combining rows. When selected, the [Derived field interface](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field) opens with the modifications you have made to the freeform table already prefilled. See [Inline classifications](#inline-classifications). |
 | **[!UICONTROL Create annotation from selection]** | Open up the [Annotation builder](/help/components/annotations/create-annotations.md#annotation-builder) to build an annotation for the selection. |
 | **[!UICONTROL Create segment from selection]** | Open up the [Segment builder](/help/components/segments/seg-builder.md) to build a segment from the selection. |
 | **[!UICONTROL Create audience from selection]** | Open up the [Audience builder](/help/components/audiences/publish.md#audience-builder) to build an audience from the selection. |
@@ -117,11 +117,11 @@ The following additional context menu options are available when selecting a met
 You can set the [view density](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) of a project to **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]**, and **[!UICONTROL Expanded]**.
 
 
-## Inline classifications example
+## Inline classifications
 
-{{release-limited-testing-section}}
+Inline classifications enable you to rename or combine rows in a freeform table. And to create a derived field from the modified rows in a table.
 
-This example illustrates how to use the **[!UICONTROL Rename selected row]**, **[!UICONTROL Combine selected rows]**, and **[!UICONTROL Create as derived field]** context menu options. And how to reset the modified freeform table.
+The example below illustrates how to use the **[!UICONTROL Rename selected row]**, **[!UICONTROL Combine selected rows]**, and **[!UICONTROL Create as derived field]** context menu options. And how to reset the modified freeform table.
 
 * Rename **[!UICONTROL No value]** row to **[!UICONTROL Other]**.
 
@@ -152,9 +152,9 @@ This example illustrates how to use the **[!UICONTROL Rename selected row]**, **
 
 * Create a derived field from the modifications in the freeform table.
 
-  1. Select **[!UICONTROL Create as derived field]** from the context menu for any selected row in the modified table.
+  1. Select **[!UICONTROL Create modified rows as derived field]** from the context menu for any selected row in the modified table.
 
-     ![Select Create as derived field menu option](assets/context-derived.png)
+     ![Select Create modified rows as derived field menu option](assets/context-derived.png)
 
   1. Inspect, optionally modify, and save the definition of the derived field based on all modifications made in the table.
 
@@ -163,6 +163,6 @@ This example illustrates how to use the **[!UICONTROL Rename selected row]**, **
 * Reset the freeform table to the state before modifications.
 
   1. Select ![Gear](/help/assets/icons/Gear.svg) next to **[!UICONTROL _dimension name_ (modified)]**.
-  1. Select **[!UICONTROL Reset renamed rows]** from the **[!UICONTROL Rows renamed]** popup.
+  1. Select **[!UICONTROL Reset modified rows]** from the **[!UICONTROL Rows renamed]** popup.
 
      ![Reset freeform table](assets/popup-reset.png)
