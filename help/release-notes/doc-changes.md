@@ -66,7 +66,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 |---|---|
 | **July 2026** | |
-| Inline classifications | Documenttion for [inline classifications](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications). |
+| Sub-event analysis | Documentation for [sub-event analysis](/help/components/segments/sub-event.md) and [custom containers](/help/data-views/create-dataview.md#custom-containers).  | 
+| Inline classifications | Documentation for [inline classifications](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications). |
 | **June 2026** | |
 | New GA4 guide | Added [Transitioning from Google Analytics 4 to Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home). |
 | **May 2026** | |
