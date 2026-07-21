@@ -443,7 +443,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Manage workbook schedules](/help/report-builder/manage-schedules-reportbuilder.md)
   + [Restricted labels](../report-builder/restricted-labels.md)
   + [Report Builder settings](../report-builder/report-builder-settings.md)
-  
 
 + Reporting Activity Manager {#reporting-activity-manager}
   + [Overview](../reporting-activity-manager/reporting-activity-overview.md)
