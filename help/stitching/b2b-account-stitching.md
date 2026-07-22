@@ -79,12 +79,12 @@ You enable and configure B2B account stitching at the connection level, and then
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person"
->title="Person"
+>title="Person ID"
 >abstract="Select the field in the dataset that contains person IDs. This field's namespace can either differ from or be the same as the selected person identifier namespace. If they differ, the two namespaces need to be linked in the identity graph."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_account"
->title="Account"
+>title="Account ID"
 >abstract="Select the field in the dataset that contains the unique account identifier values. The account ID info will be made available on the rows of any event datasets with **[!UICONTROL Person to Account stitching]** enabled."
 
 >[!CONTEXTUALHELP]
@@ -118,8 +118,8 @@ You enable and configure B2B account stitching at the connection level, and then
       | Field | Required | Description |
       |---|:---:|---|
       | **[!UICONTROL Person to Account dataset]** | ![Required](/help/assets/icons/Required.svg) | Select the lookup (record or non-time series dataset) that maps persons to accounts. |
-      | **[!UICONTROL Person]** | ![Required](/help/assets/icons/Required.svg) | Select the field in the dataset that contains the person ID. That field must be marked as an identity and cannot be the same as the **[!UICONTROL Account]** field or **[!UICONTROL Start time]** field. |
-      | **[!UICONTROL Account]** | ![Required](/help/assets/icons/Required.svg) | Select the field in the dataset that contains the account ID. That field cannot be the same as the **[!UICONTROL Person]** field or **[!UICONTROL Start time]** field. |
+      | **[!UICONTROL Person ID]** | ![Required](/help/assets/icons/Required.svg) | Select the field in the dataset that contains the person ID. That field must be marked as an identity and cannot be the same as the **[!UICONTROL Account ID]** field or **[!UICONTROL Start time]** field. |
+      | **[!UICONTROL Account ID]** | ![Required](/help/assets/icons/Required.svg) | Select the field in the dataset that contains the account ID. That field cannot be the same as the **[!UICONTROL Person ID]** field or **[!UICONTROL Start time]** field. |
       | **Start time** | | Select a timestamp field that indicates when the person-to-account relationship became active. |
 
       >[!NOTE]
