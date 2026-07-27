@@ -692,6 +692,38 @@ To re-include an excluded node in the journey:
 
 1. Select [!UICONTROL **Remove journey exclusion**].
 
+### Change the shape and style of arrows between nodes
+
+You can change the curvature and style of arrows between nodes in a journey.
+
+#### Change the curvature of an arrow
+
+To change the curvature of an arrow in Journey canvas:
+
+1. In a Journey canvas visualization, drag an arrow between two nodes.
+
+To reset an arrow back to its default position:
+
+1. Right-click the arrow you want to reset.
+
+1. Select [!UICONTROL **Reset arrow position**].
+
+   If multiple arrows exist between the same two nodes, all arrows between those nodes reset to their default positions.
+
+#### Change the style of an arrow
+
+To change the style of an arrow in Journey canvas:
+
+1. In a Journey canvas visualization, right-click the arrow between the two nodes whose style you want to change.
+
+1. Select [!UICONTROL **Change arrow style**], then select one of the following styles:
+
+   * [!UICONTROL **Solid**]
+   * [!UICONTROL **Dashed**]
+   * [!UICONTROL **Dotted**]
+   * [!UICONTROL **Dash-dot**]
+   * [!UICONTROL **Animated**]
+
 ### Delete arrows between nodes
 
 You can delete one or more arrows at a time within a journey. When you delete an arrow between 2 nodes, the nodes are no longer connected. If the arrow was part of a longer path, the path is disconnected.
