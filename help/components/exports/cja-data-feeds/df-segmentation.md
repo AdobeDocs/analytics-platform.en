@@ -1,5 +1,5 @@
 ---
-title: Segmentation in Customer Journey Analytics Data Feeds
+title: Segmentation in data feeds
 description: Learn how to apply segments to Customer Journey Analytics data feeds and understand how date range segments interact with the feed's reporting window.
 keywords: clickstream;data feed;datafeed;segmentation;segments;date range
 feature: Components
@@ -36,38 +36,15 @@ Data feeds in Customer Journey Analytics support segmentation, letting you filte
 You can apply segments to a data feed in two places:
 
 - **Data view**: A segment configured in the data view that applies to all feeds using that data view.
-- **Data Feed**: A segment applied directly to an individual feed, in addition to any data view segment.
+- **Data feed**: A segment applied directly to an individual feed, in addition to any data view segment.
 
 When both are configured, Customer Journey Analytics combines them — only rows that satisfy both segments are included in the feed output.
 
-## Date range segments
+## Segments that include a date range
 
-Segments that reference date ranges are supported in data feeds. However, the behavior differs from Analysis Workspace in an important way: **date range conditions in a segment do not override the reporting date range of the feed.**
+You can use segments that include date ranges within a data feed. However, the reporting window is always defined by the feed's scheduled delivery (hourly or daily). If a segment contains a date range, it filters rows within the data feed window without shifting or expanding the window itself.
 
-In Analysis Workspace, applying a date range segment changes the active reporting window to match the segment's date range. In data feeds, the reporting window is always defined by the feed's scheduled delivery (hourly or daily). A segment with a date range condition filters rows within that window — it does not shift or expand the window itself.
-
-This design is intentional. Allowing date range segments to override the reporting window could cause an hourly feed to deliver a much larger window of data than expected, leading to data duplication or excessive output volume.
-
-### Examples
-
-**Example 1 — Segment that includes events from a specific date**
-
-Suppose you apply a segment that returns only events from July 1 and run the feed for July 22:
-
-- The feed delivery window remains July 22.
-- The segment filters out all rows, because no events within the July 22 window match the July 1 criteria. The feed runs but delivers no rows.
-- If you run a backfill for July 1, the segment behaves as expected — only events matching the July 1 criteria are included.
-
-**Example 2 — Segment that excludes events from a specific date**
-
-Suppose you apply a segment that excludes all events with an order on July 1 and run the feed for July 22:
-
-- The segment applies to the July 22 data. Because there are no July 1 events in the July 22 window, nothing is excluded and all rows are delivered.
-- If you run a backfill for July 1, the segment excludes the relevant rows as expected.
-
-## Segments with multiple conditions
-
-For segments that combine date range conditions with other criteria, Customer Journey Analytics evaluates the date range portion as a row filter only — not as a reporting window override. All conditions in the segment are honored within the feed's delivery window.
+This is different from Analysis Workspace, where applying a segment that includes a date range changes the active reporting window to match the segment's date range. 
 
 ## Segment qualification and the lookback date range
 
@@ -79,13 +56,3 @@ For segments that use a Person or Session container, qualification is determined
 
 For more information about the lookback date range and how it affects segment qualification, see [Create a data feed](/help/components/exports/cja-data-feeds/create-feed.md).
 
-## Comparison to Analysis Workspace
-
-| Behavior | Analysis Workspace | Data feeds |
-|---|---|---|
-| Date range segment overrides reporting window | Yes | No |
-| Segment filters rows within the reporting window | Yes | Yes |
-| Data view segment applies | Yes | Yes |
-| Additional segment applied directly to the delivery | No | Yes |
-
-{style="table-layout:auto"}
