@@ -59,3 +59,5 @@ Use the following process when moving to Customer Journey Analytics from a third
 
 Contact your Adobe representative if you need more specific advice, guidance, or support.
 
+If you are coming from Google Analytics 4 specifically, see [Transitioning from Google Analytics 4 to Customer Journey Analytics](../ga-to-cja/home.md) for analyst-focused guidance on report equivalents, data model differences, and metric comparisons.
+

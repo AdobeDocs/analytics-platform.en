@@ -71,7 +71,7 @@ All existing connections are considered [person-based connections](cja-b2b-conce
 
 To implement B2B features in your existing implementation, you need to follow these steps:
 
-1. Model your B2B data. Customer Journey Analytics B2B Edition assumes at least account-based time-series event data, and benefits from additional profile or lookup record data. Such as account data, buying group data, opportunity data, marketing list member data, and more.
+1. Model your B2B data. You can use the [Adobe Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) to standardize B2B data and define schemas for your B2B data.<br/>You can base your schemas on the [standard classes that are provided in Real-time CDP B2B Edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) or you can use your own custom classes and schemas. The [use cases](/help/use-cases/b2b/b2b-edition/use-cases-overview.md) articles use Real-time CDP B2B Edition classes and schemas, however, a Real-time CDP B2B Edition license is not required to utilize the standard classes and schemas. <br/>Customer Journey Analytics B2B Edition assumes at least account-based time-series event data, and benefits from additional profile or lookup record data. Such as account data, buying group data, opportunity data, marketing list member data, and more.
 
    * Define which identifier you want to use as the primary account identifier (Account ID). Often an existing CRM or other tool (for example: Demandbase) helps you to determine that identifier.
    * Identify additional identifiers for the other B2B data you plan to use: global account identifier, opportunity identifier, buying group identifier, and person identifier.

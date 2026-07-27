@@ -4,7 +4,6 @@ description: Explain how to mirror and use relational data in Customer Journey A
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
 TQID: https://experienceleague.adobe.com/DhV4VNrG4WR1iQP9VqjvV16iEpfShbBir7N1JfeRbCM
 product_v2:
@@ -32,8 +31,6 @@ topic_v2:
     internal-label: Data management
 ---
 # Mirror and use relational data
-
-{{release-limited-testing}}
 
 This quick start guide explains how to use [Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md) to mirror relational data from a data warehouse native solution in Adobe Experience Platform. And then use that data in Customer Journey Analytics.
 

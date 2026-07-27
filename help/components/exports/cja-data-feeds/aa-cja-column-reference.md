@@ -48,6 +48,8 @@ topic_v2:
 ---
 # Map Adobe Analytics data feed columns to Customer Journey Analytics
 
+{{release-limited-testing}}
+
 A true 1:1 mapping between Adobe Analytics and Customer Journey Analytics data feed columns is not possible. The two products differ fundamentally, and each organization's implementation can vary significantly.
 
 This reference helps data engineers evaluate Adobe Analytics data feed columns and identify the closest Customer Journey Analytics equivalents for their workflows.

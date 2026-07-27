@@ -4,7 +4,6 @@ description: Understand how to configure Customer Journey Analytics connections,
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-badgePremium: label="Beta"
 exl-id: f7687bba-efbe-4a2c-8ad1-cf216554a1e9
 TQID: https://experienceleague.adobe.com/1LArX1cyRWpEY8O9xMwTcgwc0aUTjMrniFiDXtpkCNY
 product_v2:
@@ -23,8 +22,6 @@ role_v2:
     internal-label: Admin
 ---
 # Configure Customer Journey Analytics
-
-{{release-limited-testing}}
 
 {{relational-model-based}}
 
