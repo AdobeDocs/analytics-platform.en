@@ -30,7 +30,7 @@ AI has become a primary discovery channel. LLM agents, such as ChatGPT, Claude, 
 
 You can benefit from the integration between Customer Journey Analytics and LLM Optimizer in two ways:
 
-* **Inbound integration**: Use LLM Optimizer data in Customer Journey Analytics to measure LLM-driven traffic (bot crawlers, RAG requests, agent activity) alongside existing web, mobile, and other type of data. For example to address the following use cases:
+* **Inbound integration**: Use LLM Optimizer data in Customer Journey Analytics to measure LLM-driven traffic (bot crawlers, RAG requests, agent activity) alongside existing web, mobile, and other types of data. For example, to address the following use cases:
   
   * Measure LLM-driven traffic by agent source alongside traditional channels.
   
@@ -51,29 +51,32 @@ You can benefit from the integration between Customer Journey Analytics and LLM 
 To ingest LLM Optimizer data into Customer Journey Analytics, use the LLM Optimizer datasets available in Experience Platform. The ingestion method:
 
 * Uses [summary datasets](/help/data-views/summary-data.md) that are based on the XDM Summary Schema class.
-* Buckets data by URL/host, time, and LLM Optimizer session characteristics.
+* Buckets data by URL/host, time, and request characteristics such as bot type, CDN provider, and status.
 
 >[!NOTE]
 >
->The LLM Optimizer dataset contains aggregated data that does not contain any PII data like user identifier, prompts or responses.
+>The LLM Optimizer dataset contains aggregated data that does not contain any PII, such as user identifiers, prompts, or responses.
 >
 
-You use the LLM Optimizer dataset in a connection. In the connection you treat the LLM Optimizer dataset as a lookup dataset where you join the LLM Optimizer dataset on the URL/host key available within an event dataset.
+You use the LLM Optimizer dataset in a connection. Because the dataset is a summary dataset, you can use the dataset as a lookup dataset and potentially join to an event dataset on a full-URL key.
+
+LLM Optimizer provides this key for you in the **CDN URL** dimension. The key combines the host and the requested path into a single normalized full URL, similar to how Customer Journey Analytics stores web data. This join-key field facilitates the join. The outcome depends on your Customer Journey Analytics implementation and whether your event dataset has a page URL field that matches the URL representation LLM Optimizer provides. When both sides resolve to the same full URL, the LLM Optimizer record matches the corresponding page in your web data.
 
 ### About the dataset
 
-LLM Optimizer reads CDN access logs on the server side and extracts records where the requesting party is a bot or automated agent. Because the data comes from the CDN layer, LLM Optimizer captures requests from bots that do not fire any JavaScript tag. Standard web analytics tools miss this traffic entirely.
+LLM Optimizer reads CDN access logs on the server side and extracts records where the requesting party is a bot or automated agent. Because the data comes from the CDN layer, LLM Optimizer captures requests from bots that do not execute any JavaScript tag. Standard web analytics tools miss this traffic entirely.
 
-Each record describes one combination of host, URL, bot type, CDN provider, status code, referrer, forwarded host, and time to first byte for one hour. When the same combination appears more than once in the same hour, Customer Journey Analytics combines those records into one row and increases the request count. Use the **CDN Request Count** metric to measure volume. Do not use row count.
+Each record describes one combination of host, URL path, bot type, CDN provider, status code, referrer, forwarded host, and time to first byte for one hour. When the same combination appears multiple times hourly, Customer Journey Analytics combines those records into one row and increases the request count. Use the **CDN Request Count** metric to measure volume. Do not use row count.
 
 ### Dimensions
 
-The following dimensions are available to use as components in a data view once you have set up a connection that includes a LLM Optimizer dataset.
+The following dimensions are available to use as components in a data view once you have set up a connection that includes an LLM Optimizer dataset.
 
 | Dimension | Description |
 |-----------|-------------|
-| CDN URL | The URL path and query string that the agent requested. Does not include the scheme or host. |
-| CDN Host | The hostname that received the request, for example, www.example.com. A dataset can contain multiple hosts when an organization has multiple subdomains on the same CDN account. |
+| CDN URL | The normalized full URL for the request, intended as the join key. LLM Optimizer combines the host and the requested path into a single URL and normalizes it to match the full-URL form that Customer Journey Analytics stores for web data. Use this dimension to join the LLM Optimizer lookup dataset to an event dataset that has an equivalent full-URL field. It includes the host and path, but not the scheme. |
+| CDN URL Path | The raw URL path and query string that the agent requested, as delivered by the CDN. Does not include the scheme or host. Use this when you need the exact requested path rather than the normalized join key. |
+| CDN Host | The hostname that received the request, for example, www.example.com. This host is also part of the CDN URL join key. A dataset can contain multiple hosts when an organization has multiple subdomains on the same CDN account. |
 | CDN Bot Type | LLM Optimizer's classification of the requesting agent. Values cover classic search crawlers, AI index crawlers, and AI live-fetch agents. See the [Bot agent categories](#bot-agent-categories) below for the full taxonomy. |
 | CDN User Agent | The raw user-agent string from the CDN log. Useful for distinguishing sub-types within a bot classification, or for validating the classification assigned by LLM Optimizer. |
 | CDN HTTP Status | The HTTP response status code. Indicates whether the bot received the content it requested. See the [Status codes](#status-codes) below for interpretation guidance specific to AI traffic. |
@@ -138,7 +141,7 @@ HTTP status codes in this dataset indicate whether the AI agent received the con
 
 ### Metrics
 
-The following metrics are available to use as components in a data view once you have set up a connection that includes a LLM Optimizer dataset.
+The following metrics are available to use as components in a data view once you have set up a connection that includes an LLM Optimizer dataset.
 
 | Metric | Description |
 |--------|-------------|
@@ -157,6 +160,6 @@ This dataset captures only bot traffic from CDN access logs. It does not contain
 * **Page content or rendered HTML.** This dataset records the fact of the fetch and its outcome, not what the AI read from the page.
 * **Conversion data.** Whether an AI answer led a user to visit the site or convert is not in this dataset. That analysis requires joining to human session data in CJA.
 
-### Outbound integration
+## Outbound integration
 
 To be determined.
