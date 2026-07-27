@@ -33,16 +33,15 @@ Use this page to compare Customer Journey Analytics reporting and export tools o
 |---|---|---|---|---|---|---|
 | **Access method** | Browser | Microsoft Excel | Browser | Setup through browser | RESTful API tools | MCP-compatible tools |
 | **Data granularity** | Aggregated | Aggregated | Aggregated | Event | Aggregated | Aggregated |
-| **Experience Cloud ID (ECID) available** | No | No | Yes | Yes | No | No |
+| **Experience Cloud ID (ECID) available** | No | No | No | Yes | No | No |
 | **Timestamp available** | No | No | No | Yes | No | No |
 | **Level of processing** | Fully-processed | Fully-processed | Fully-processed | Fully-processed | Fully-processed | Fully-processed |
 | **Bot filter data included** | No | No | No | No | No | No |
-| **Low traffic (Uniques exceeded) appears** <br> [Learn more](/help/components/dimensions/high-cardinality.md) | Yes | Yes | No | No | Yes | Yes |
-| **Visible row limit (before pagination)** | 400 | 50,000 | Unlimited | Unlimited | 50,000 | 50,000 |
-| **Multiple data views** | Yes | Yes | No | No | Yes | Yes |
+| **Visible row limit (before pagination)** | 400 | 50,000 | Limit of 3 million, 30 million, 150 million, or 300 million, depending on tier  | Limit of 3 million, 30 million, 150 million, or 300 million, depending on tier | 50,000 | 50,000 |
+| **Multiple data views** | Yes, a project can contain data from multiple data views | Yes, a project can contain data from multiple data views | No, an export can contain data from only one data view | No, an export can contain data from only one data view | Yes | Yes |
 | **Number of breakdowns** | Unlimited | Up to 2 | Unlimited | Unlimited | Unlimited, run across multiple queries | Unlimited |
 | **Segmentation** <br> [Learn more](/help/components/segments/seg-overview.md) | Yes | Yes | Yes | Yes, with [limitations](/help/components/exports/cja-data-feeds/df-segmentation.md) | Yes | Yes |
-| **Calculated metrics** <br> [Learn more](/help/components/calc-metrics/calc-metr-overview.md) | Yes, with [Attribution](/help/analysis-workspace/attribution/overview.md) | Yes, with Attribution | No | No | Yes, with Attribution | Yes, with Attribution |
+| **Calculated metrics** <br> [Learn more](/help/components/calc-metrics/calc-metr-overview.md) | Yes | Yes | Yes, with [limitations](/help/analysis-workspace/export/export-cloud.md#calculated-metric-functions-support) | No | Yes | Yes |
 | **Derived fields** <br> [Learn more](/help/data-views/derived-fields/derived-fields.md) | Yes | Yes | Yes | Yes | Yes | Yes |
 | **Cohort analysis** | [Yes](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | No | No | No | No | No |
 | **Attribution** <br> [Learn more](/help/analysis-workspace/attribution/overview.md) | Yes | Limited | No | No | Yes | Yes |
