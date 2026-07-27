@@ -99,25 +99,28 @@ Before you create a data feed, it's important to have a basic understanding of d
    |---------|----------|
    | [!UICONTROL **Name**] | The name of the data feed. Names must be unique within the selected data view, and can be up to 255 characters in length. <!--[Learn more](/help/export/analytics-data-feed/df-faq.md#must-feed-names-be-unique)--> |
    | [!UICONTROL **Tags**] | Apply any tags to the data feed for easier categorization. <!--You can filter on tags as described in [Filter and search the list of data feeds](/help/export/analytics-data-feed/df-manage-feeds.md#filter-and-search-the-list-of-data-feeds) in [Manage data feeds](/help/export/analytics-data-feed/df-manage-feeds.md).-->  |
-   | [!UICONTROL **Description**] | Specify a description for the data feed. The description you add is visible when editing the data feed. |
+   | [!UICONTROL **Description**] | Specify a description for the data feed (up to 500 characters). The description you add is visible when editing the data feed. |
    | [!UICONTROL **Data view**] | Select the data view that contains the data that you want to export.<p>Consider the following when selecting a data view:</p> <ul><li>If multiple data feeds are created for the same data view, each data feed must have different column definitions.</li><li>The list of available columns depends on the login company where the selected data view belongs. If you change the data view, the list of available columns can change. </li></ul> |
 
 1. Select [!UICONTROL **Next**].
 
 1. On the [!UICONTROL **Data structure**] tab, make sure the correct data view is selected in the **[!UICONTROL Data view]** field. 
 
+   <!--add screenshot-->
+
 1. In the [!UICONTROL **Segments**] drop-down menu, search for and select any segments to filter the data included in your feed. 
 
    When you apply multiple segments, they are joined together with an AND operator. (To join segments with an OR operator, you must first create a new segment in the segment builder, then apply the new segment to the data feed.)
 
-1. Add components to the data feed configuration. In the left rail, locate any components that you want to include, then drag them to the canvas to build your data structure. You can select multiple components by holding **[!UICONTROL Shift]**, or by holding **[!UICONTROL Command]** (on macOS) or **[!UICONTROL Ctrl]** (on Windows).
+1. Add components to the data feed configuration. The left rail shows only components that are valid for data feeds. 
 
-   >[!NOTE]
-   >
-   >User agent data and device lookup data cannot exist in the same data feed configuration. An error displays if you attempt to add conflicting components. For more information, see [Configure device lookup](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Create and configure datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) in the Data Collection guide.
+   * **Drag-and-drop**: Drag components from the left rail to the canvas. Hold **[!UICONTROL Shift]**, or hold **[!UICONTROL Command]** (macOS) or **[!UICONTROL Ctrl]** (Windows) to select and drag multiple components at once.
+   * **Plus button**: Select the Plus ![Add](/help/assets/icons/Add.svg) icon next to any component in the left rail to add it to the canvas.
+   * **[!UICONTROL Show all]**: Select **[!UICONTROL Show all]** at the bottom of the component list to open a dialog showing all available components. Select the checkbox next to each component you want to add, then select **[!UICONTROL Add selected]**. When a search term or filter tag is active in the left rail, an **[!UICONTROL Add all]** button also appears, letting you add all filtered results at once.
 
+   When you add a component that belongs to an XDM array field (for example, an Adobe Journey Optimizer proposition field), it appears on the canvas as a collapsible nested group rather than a flat item. The group reflects the underlying data structure and outputs as a nested array in the exported file.
 
-   Use the following information to understand dimensions that are always included, dimensions that cannot be included, and metrics that must be substituted:
+   <!--add screenshot-->
 
    +++ Dimensions that are always included in data feeds
 
@@ -157,6 +160,47 @@ Before you create a data feed, it's important to have a basic understanding of d
    | Week | Week an event occurred | Not available |
    | Week of Year | Week of the year an event occurred | Not available |
    | Year | Year an event occurred | Not available |
+
+   +++
+
+   +++ Dimensions that cannot be used together in data feeds
+
+   >[!IMPORTANT]
+   >
+   >Certain dimensions cannot be used together in Experience Platform datasets, and therefore cannot be included in the same data feed. 
+   >
+   >If you choose to include either the **User Agent** or **Mobile ID** dimensions in your data feed, the dimensions listed below cannot be added to the data feed.
+   >
+   >If you use the Web SDK, this restriction is enforced in datastreams before data arrives in an Experience Platform dataset. For more information, see [Configure device lookup](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Create and configure datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) in the Data Collection guide.
+
+   The following dimensions cannot be used together with the **User Agent** or **Mobile ID** dimensions:
+   
+   * Browser Type
+   * Browser
+   * Mobile Manufacturer
+   * Mobile Device Type
+   * Mobile Audio Support
+   * Mobile DRM
+   * Mobile Java VM
+   * Mobile Information Services
+   * Mobile Image Support
+   * Mobile Color Depth
+   * Mobile Net Protocols
+   * Mobile Device Number
+   * Mobile Max Email Length
+   * Mobile Mail Decoration
+   * Mobile Push To Talk
+   * Mobile Screen Width
+   * Mobile Max Browser URL Length
+   * Mobile Operating System (deprecated)
+   * Mobile Screen Height
+   * Mobile Video Support
+   * Mobile Cookie Support
+   * Mobile Max Bookmark Length
+   * Mobile Screen Size
+   * Mobile Device Name
+   * Operating System Types
+   * Operating Systems 
 
    +++
 
@@ -209,17 +253,29 @@ Before you create a data feed, it's important to have a basic understanding of d
 
    +++
 
+1. (Optional) Reorder components on the canvas by dragging them. The order you define is preserved as the column order in the exported data feed file.
 
-1. On the [!UICONTROL **Delivery**] tab, specify the following information:
-   
+1. (Optional) Use the **[!UICONTROL Feed summary]** and **[!UICONTROL Schema preview]** panels on the right side of the page to review your data structure before proceeding:
+
+   * The **[!UICONTROL Feed summary]** shows a live count of the total components, columns, dimensions, and metrics that you added.
+   * The **[!UICONTROL Schema preview]** shows a JSON representation of the data feed schema that updates as you add or reorder components. 
+   * The **[!UICONTROL Example rows]** button opens a dialog that shows example output rows so you can verify that the structure looks correct. This dialog shows example data only and does not reflect your actual data.
+
+   <!--add screenshot-->
+
+1. On the [!UICONTROL **Delivery**] tab, in the [!UICONTROL **Schedule**] section, choose the type of feed you want to create (live or backfill), then specify the reporting window, frequency, and other configuration options:
+
+   <!--add screenshot-->
+
    | Field | Function |
    |---------|----------|
-   | [!UICONTROL **Feed type**] | Select the type of feed you want to create:<ul><li>[!UICONTROL **Live feed**]: Exports current and future data.</li><li>[!UICONTROL **Backfill feed**]: Exports historical data between two past dates.</li></ul>|
-   | [!UICONTROL **Start date**] | Specify the date when you want the data feed to begin. To immediately begin processing data feeds for historical data, ensure that [!UICONTROL **Backfill feed**] is selected, then set this date to any date in the past when data is being collected. The start date is based on the data view's time zone. |
-   | [!UICONTROL **End date**] | Specify the date when you want the data feed to end. The end date is based on the data view's time zone. |
-   | [!UICONTROL **Frequency**] | Select how often the data feed should be sent. Events with timestamps that fall within the frequency window are included in the data feed delivery. The [!UICONTROL **Lookback date range**] and [!UICONTROL **Processing delay**] fields can also affect which events are included in the data for the delivery frequency that you choose.<p>For live feeds, select to include either one hour's worth of data or one day's worth of data. Backfill feeds must be daily.</p><ul><li>**Daily**: Feeds contain a full day's worth of data, from midnight to midnight in the data view's time zone. Use this option for backfill feeds or for live feeds.</li><li>**Hourly**: Feeds contain a single hour's worth of data. Use this option for live feeds.</li></ul>  |
-   | [!UICONTROL **Lookback date range**] | Controls how far back Customer Journey Analytics looks when processing the data feed delivery. <p>This setting does not alter the frequency window (hour or day), which defines the time frame of the events to include in the data feed output. However, the lookback date range can influence the data that is delivered, in the following ways: </p><ul><li>**Segment qualification**: When a segment is applied to your data feed definition, any events within the lookback date range determine whether a person qualifies. The segment's container setting determines the scope. (Possible containers are: Person, Session, or Event. B2B has the following additional containers: Global account, Account, Opportunity, Buying group.)  <p>For example, if a Person container is used and the person qualifies during the lookback date range, then all of that person's events during the frequency window also qualify.</p></li><li>**Session calculation**: Session boundaries are calculated using data within the lookback date range.</li><li>**Derived field transformations**: Any derived field functions that reference containers use the lookback date range in data feed exports.</li><li>**Dimension persistence**: If you choose to set persistence on an individual dimension, you also choose an expiration to determine how long a dimension item persists beyond the event it is set on. <p>The lookback date range affects dimension persistence when the expiration is set to either of the following options in the data view:</p><ul><li>For each dimension in the data feed definition that uses [!UICONTROL **Reporting Window**] as its expiration, the lookback date range becomes the new reporting window.</li><li>For each dimension in the data feed definition that uses [!UICONTROL **Custom Time**] as its expiration, and if the custom time that is selected extends beyond the lookback date range, the custom time is ignored, and the lookback date range is used for dimension expiration.<p>For more information about setting persistence on dimensions within the data view, see [Persistence component settings](/help/data-views/component-settings/persistence.md).</p></li></ul>|
-   | [!UICONTROL **Processing delay**] | Choose the amount of time to wait before processing a data feed file. Any late-arriving hits that come in during the processing delay are included in the data feed. <p>Processing delays are useful for various reasons, such as to give mobile implementations an opportunity for offline devices to come online and send data, or to accommodate your organization's server-side processes in managing previously processed files. </p><p>You can delay a feed by 2, 3, 4, or 8 hours.<p>Sessions must start after the processing delay cutoff in order to be included; sessions that start before the cutoff and end within the processing delay are not included.</p>|
+   | [!UICONTROL **Feed type**] | Select the type of feed you want to create:<ul><li>[!UICONTROL **Live feed**]: Exports current and future data.</li><li>[!UICONTROL **Backfill feed**]: Exports historical data. </li></ul> |
+   | [!UICONTROL **Start date**] | The date when the data feed begins. For live feeds, this must be today or a future date. For backfill feeds, this must be a past date within the data view's data retention window. The start date is based on the data view's time zone. |
+   | [!UICONTROL **Expiration date**] <br/>Available only for live feeds| The date when the data feed expires and no longer runs. The date is based on the data view's time zone. |
+   | [!UICONTROL **End date**]<br/>Available only for backfill feeds | The date when the data feed ends. The end date cannot be in the future. The date is based on the data view's time zone. |
+   | [!UICONTROL **Frequency**] | Select how often the data feed should be sent. Events with timestamps that fall within the frequency window are included in the data feed delivery. The [!UICONTROL **Lookback date range**] and [!UICONTROL **Processing delay**] fields can also affect which events are included in the data for the delivery frequency that you choose.<p>For live feeds, select to include either one hour's worth of data or one day's worth of data. For backfill feeds, this field is locked to **Daily** and cannot be changed.</p><ul><li>**Daily**: Feeds contain a full day's worth of data, from midnight to midnight in the data view's time zone. <p>This option is required for backfill feeds and optional for live feeds.</p></li><li>**Hourly**: Feeds contain a single hour's worth of data. <p>This option is available only for live feeds only.</p></li></ul> |
+   | [!UICONTROL **Lookback date range**] | Controls how far back Customer Journey Analytics looks when processing the data feed delivery. The default is 30 days. <p>This setting does not alter the frequency window (hour or day), which defines the time frame of the events to include in the data feed output. However, the lookback date range can influence the data that is delivered, in the following ways: </p><ul><li>**Segment qualification**: When a segment is applied to your data feed definition, any events within the lookback date range determine whether a person qualifies. The segment's container setting determines the scope. (Possible containers are: Person, Session, or Event. B2B has the following additional containers: Global account, Account, Opportunity, Buying group.)  <p>For example, if a Person container is used and the person qualifies during the lookback date range, then all of that person's events during the frequency window also qualify.</p></li><li>**Session calculation**: Session boundaries are calculated using data within the lookback date range.</li><li>**Derived field transformations**: Any derived field functions that reference containers use the lookback date range in data feed exports.</li><li>**Dimension persistence**: If you choose to set persistence on an individual dimension, you also choose an expiration to determine how long a dimension item persists beyond the event it is set on. <p>The lookback date range affects dimension persistence when the expiration is set to either of the following options in the data view:</p><ul><li>For each dimension in the data feed definition that uses [!UICONTROL **Reporting Window**] as its expiration, the lookback date range becomes the new reporting window.</li><li>For each dimension in the data feed definition that uses [!UICONTROL **Custom Time**] as its expiration, and if the custom time that is selected extends beyond the lookback date range, the custom time is ignored, and the lookback date range is used for dimension expiration.<p>For more information about setting persistence on dimensions within the data view, see [Persistence component settings](/help/data-views/component-settings/persistence.md).</p></li></ul> |
+   | [!UICONTROL **Processing delay**] | Choose the amount of time to wait before processing a data feed file. The default is 2 hours. Any late-arriving hits that come in during the processing delay are included in the data feed. <p>Processing delays are useful for various reasons, such as to give mobile implementations an opportunity for offline devices to come online and send data, or to accommodate your organization's server-side processes in managing previously processed files. </p><p>You can delay a feed by 2, 3, 4, or 8 hours.</p><p>Sessions must start after the processing delay cutoff in order to be included; sessions that start before the cutoff and end within the processing delay are not included.</p> |
    | [!UICONTROL **Compression format**] | Select the compression format for the Parquet output files delivered to your cloud destination. Choose from the following formats:<ul><li>[!UICONTROL **Snappy**]: Fast compression and decompression with moderate file sizes. Widely supported by modern data platforms such as BigQuery, Snowflake, and Apache Spark.</li><li>[!UICONTROL **GZip**]: Broadly compatible, including with tools that do not natively support Snappy. Recommended if your downstream pipeline requires a widely recognized compression standard.</li><li>[!UICONTROL **Z Standard (Zstd)**]: High compression efficiency with fast decompression. Suitable if minimizing file size is a priority and your tools support Zstd.</li></ul> |
 
 1. On the [!UICONTROL **Delivery**] tab, in the [!UICONTROL **Destination**] section, configure the destination where you want the data to be sent.  
