@@ -141,11 +141,11 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Analyze](/help/connections/audience-analysis/analyze-audiences.md)
     + [Use cases](/help/connections/audience-analysis/audience-analysis-use-cases.md)
   + Consent reporting and filtering {#consent-reporting-filtering}
-    + [Overview](/help/connections/consent-reporting-filtering/consent-overview.md)
-    + [Configure](/help/connections/consent-reporting-filtering/consent-configure.md)
-    + [Manage](/help/connections/consent-reporting-filtering/consent-manage.md)
-    + [Analyze](/help/connections/consent-reporting-filtering/consent-analyze.md)
-    + [Use cases](/help/connections/consent-reporting-filtering/consent-use-cases.md)
+    + {hide-from-toc} [Overview](/help/connections/consent-reporting-filtering/consent-overview.md)
+    + {hide-from-toc} [Configure](/help/connections/consent-reporting-filtering/consent-configure.md)
+    + {hide-from-toc} [Manage](/help/connections/consent-reporting-filtering/consent-manage.md)
+    + {hide-from-toc} [Analyze](/help/connections/consent-reporting-filtering/consent-analyze.md)
+    + {hide-from-toc} [Use cases](/help/connections/consent-reporting-filtering/consent-use-cases.md)
 + Data Views {#cja-dataviews}
   + [Data views overview](../data-views/data-views.md)
   + [Create or edit a data view](../data-views/create-dataview.md)
@@ -370,7 +370,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Manage segments](/help/components/segments/seg-manage.md)
     + [Operators](/help/components/segments/seg-operators.md)
     + [Use segments](/help/components/segments/seg-use.md)
-    + {hide-from-toc} [Sub-event analysis](/help/components/segments/sub-event.md)
+    + [Sub-event analysis](/help/components/segments/sub-event.md)
   + Calculated metrics {#cja-calcmetrics}
     + [Overview](../components/calc-metrics/calc-metr-overview.md)
     + Workflow {#cm-workflow}
@@ -445,7 +445,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Manage workbook schedules](/help/report-builder/manage-schedules-reportbuilder.md)
   + [Restricted labels](../report-builder/restricted-labels.md)
   + [Report Builder settings](../report-builder/report-builder-settings.md)
-  
 
 + Reporting Activity Manager {#reporting-activity-manager}
   + [Overview](../reporting-activity-manager/reporting-activity-overview.md)

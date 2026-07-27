@@ -35,14 +35,6 @@ System administrators can enable consent reporting and, optionally, consent filt
 >
 >Consent filtering excludes non-consenting visitor data at ingest time. Data that is excluded by filtering is not stored in Customer Journey Analytics and cannot be recovered for past dates. Review your marketing action selections carefully before you enable filtering.
 
-## Prerequisites
-
-Before you configure consent reporting and filtering, make sure that:
-
-* You have system administrator permissions in Customer Journey Analytics.
-* The sandbox that you want to use contains a Profile dataset with consent policy membership data in the `consentPoliciesIDMap` field.
-* The connection that you want to configure already exists. For more information, see [Create or edit a connection](/help/connections/create-connection.md).
-
 ## Create a configuration
 
 When you create a configuration for consent reporting and filtering, you select the sandbox and Profile dataset that contain your consent policy membership data, choose the connection or connections to configure, and choose whether to filter data for each marketing action. Customer Journey Analytics then creates the consent policy lookup dataset and the consent policy components automatically.
@@ -60,17 +52,21 @@ To create a consent reporting and filtering configuration:
    | **[!UICONTROL Name]** | Specify a name for the configuration. |
    | **[!UICONTROL Sandbox]** | Select the Experience Platform sandbox that contains the Profile dataset with your consent policy membership data. <p>A maximum of one consent policy lookup dataset exists per sandbox. Multiple configurations in the same sandbox share the same lookup dataset.</p> |
 
-1. In the **[!UICONTROL Profile dataset]** section, select the Profile dataset that contains the consent policy membership data (the `consentPoliciesIDMap` field) that you want to report on. This Profile dataset is added to the connection that you select.
+1. In the **[!UICONTROL Profile dataset]** section, select the Profile dataset that contains the consent policy membership data (the `consentPoliciesIDMap` field) that you want to report on. When you enable consent reporting, this Profile dataset is added to the connection that you select if it is not already part of it.
 
 1. In the **[!UICONTROL Connection]** section, select **[!UICONTROL Select a connection]**, select the checkbox next to one or more connections to configure, then select **[!UICONTROL Use connection]**.
 
    Consent reporting and filtering is applied at the connection level. All data views under a configured connection inherit the same behavior.
 
+1. In the **[!UICONTROL Data views]** section, click **[!UICONTROL Select data views]**.
+
+1. In the Data views dialog, select the checkbox next to one or more data views that you want to use for consent reporting. These data views are automatically configured with Experience Platform consent data for reporting.
+
+1. Select **[!UICONTROL Use data views]**.
+
 1. (Optional) In the **[!UICONTROL Filtering]** section, you can enable filtering for the following marketing actions:
 
    >[!NOTE]
-   >
-   >Leave both toggles unselected to enable consent reporting without filtering.
    >
    >When filtering for a marketing action is enabled, Customer Journey Analytics ingests a visitor's data only if the visitor matches **all** consent policies that apply to that marketing action. For more information, see [Consent filtering](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering) in [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/consent-overview.md).
 
@@ -81,12 +77,11 @@ To create a consent reporting and filtering configuration:
 
 1. Select **[!UICONTROL Create]** to create the configuration.
 
-   Customer Journey Analytics automatically:
+   If you enabled reporting, Customer Journey Analytics automatically:
 
    * Adds the selected Profile dataset to the connection.
    * Creates a consent policy lookup dataset for the sandbox (if one does not already exist) and syncs policy names and descriptions from Experience Platform.
    * Adds the consent policy components (dimensions, metrics, and a derived field) to the data views within the configured connection.
-   * Applies the **consent** internal label to the new components so that you can filter for them in the data view. For more information about internal labels, see [Labels and policies](/help/data-views/data-governance.md).
 
 1. After the configuration completes, [view the consent policy components in the data view](#view-consent-policy-components-in-the-data-view) to verify that they are available.
 
