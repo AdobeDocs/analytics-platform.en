@@ -27,6 +27,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Landing page](../getting-started/landing.md)
     + [Frequently asked questions](../getting-started/cja-faq.md)
     + [Compare to BI solutions](../getting-started/cja-vs-bi.md)
+    + {hide-from-toc} [Analytics product comparison](/help/getting-started/analytics-product-comparison.md)
     + [AI Assistant](../ai-assistant.md)
     + [Data Insights Agent](../data-analysis-ai.md)
   + Customer Journey Analytics B2B Edition {#cja-b2b}
@@ -419,6 +420,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + {hide-from-toc} [Prepare to map columns](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc} [Map columns](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc} [Create a data feed](/help/components/exports/cja-data-feeds/create-feed.md)
+      + {hide-from-toc} [Segmentation in data feeds](/help/components/exports/cja-data-feeds/df-segmentation.md)
   + Data Dictionary {#data-dictionary}
     + [Overview](../components/data-dictionary/data-dictionary-overview.md)
     + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
