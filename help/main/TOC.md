@@ -470,6 +470,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Integrate Journey Optimizer data](/help/integrations/ajo.md)
   + [Integrate Decision Management data](/help/integrations/ajo-od.md)
   + [Integrate Customer AI](/help/integrations/customer-ai.md)
+  + [Integrate LLM Optimizer](/help/integrations/llmo.md)
   + [Integrate Adobe Advertising](/help/integrations/advertising.md)
 
 + Data Governance {#cja-privacy}
