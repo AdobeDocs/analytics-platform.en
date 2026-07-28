@@ -45,7 +45,7 @@ Use this page to compare Customer Journey Analytics reporting and export tools o
 | **Derived fields** <br> [Learn more](/help/data-views/derived-fields/derived-fields.md) | Yes | Yes | Yes | Yes | Yes | Yes |
 | **Cohort analysis** | [Yes](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | No | No | No | No | No |
 | **Attribution** <br> [Learn more](/help/analysis-workspace/attribution/overview.md) | Yes | Limited | No | No | Yes | Yes |
-| **Curation** <br> [Learn more](/help/analysis-workspace/curate-share/curate.md) | Yes, with in projects and data views | No | No | Yes, within the data view | Yes, within the data view | Yes, within the data view |
+| **Curation** <br> [Learn more](/help/analysis-workspace/curate-share/curate.md) | Yes, within projects and data views | No | No | Yes, within the data view | Yes, within the data view | Yes, within the data view |
 | **Project sharing** <br> [Learn more](/help/analysis-workspace/curate-share/share-projects.md) | Yes, with project roles | No | No | No | No | No |
 | **Scheduled delivery** | Yes | Yes | Yes | Yes | No | No |
 | **Delivery destinations** | Email | Email | Amazon S3, Azure RBAC, Azure SAS, GCP | Amazon S3, Azure RBAC, Azure SAS, GCP | — | — |
