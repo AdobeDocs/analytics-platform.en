@@ -36,10 +36,10 @@ Use this page to compare Customer Journey Analytics reporting and export tools o
 | **Experience Cloud ID (ECID) available** | No | No | No | Yes | No | No |
 | **Timestamp available** | No | No | No | Yes | No | No |
 | **Level of processing** | Fully-processed | Fully-processed | Fully-processed | Fully-processed | Fully-processed | Fully-processed |
-| **Bot filter data included** | No | No | No | No | No | No |
+| **Bot filter data included** | No | No | No | Some, with [derived fields](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection) | No | No |
 | **Visible row limit (before pagination)** | 400 | 50,000 | Limit of 3 million, 30 million, 150 million, or 300 million, depending on tier  | Limit of 3 million, 30 million, 150 million, or 300 million, depending on tier | 50,000 | 50,000 |
 | **Multiple data views** | Yes, a project can contain data from multiple data views | Yes, a project can contain data from multiple data views | No, an export can contain data from only one data view | No, an export can contain data from only one data view | Yes | Yes |
-| **Number of breakdowns** | Unlimited | Up to 2 | Unlimited | Unlimited | Unlimited, run across multiple queries | Unlimited |
+| **Number of breakdowns** | Unlimited | Up to 2 | Up to [5 breakdowns per table](/help/technotes/guardrails.md#full-table-export) | Unlimited | Unlimited, run across multiple queries | Unlimited |
 | **Segmentation** <br> [Learn more](/help/components/segments/seg-overview.md) | Yes | Yes | Yes | Yes, with [limitations](/help/components/exports/cja-data-feeds/df-segmentation.md) | Yes | Yes |
 | **Calculated metrics** <br> [Learn more](/help/components/calc-metrics/calc-metr-overview.md) | Yes | Yes | Yes, with [limitations](/help/analysis-workspace/export/export-cloud.md#calculated-metric-functions-support) | No | Yes | Yes |
 | **Derived fields** <br> [Learn more](/help/data-views/derived-fields/derived-fields.md) | Yes | Yes | Yes | Yes | Yes | Yes |
