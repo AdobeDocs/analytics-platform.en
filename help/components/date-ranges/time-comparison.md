@@ -109,3 +109,4 @@ Consider the following when using this option:
 
 * This setting applies to the entire table. For example, if you change this setting for a breakdown within the table, the setting is applied to the entire table.
 
+* When this setting is enabled, small date labels appear in the upper right corner of all column cells to annotate the cell with the appropriate date (and time, when relevant).
