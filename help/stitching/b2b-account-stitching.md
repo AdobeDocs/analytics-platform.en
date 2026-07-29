@@ -70,7 +70,7 @@ You enable and configure B2B account stitching at the connection level, and then
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
 >title="Person identifier namespace"
->abstract="Select the most relevant person identity namespace for your reporting. For example, Email. Any event datasets with **[!UICONTROL Person to Account stitching]** enabled will have the person ID elevated to this person identifier namespace."
+>abstract="Select the most relevant person identity namespace for your reporting. For example, Email. Any event datasets with **[!UICONTROL Person to Account stitching]** enabled have the person ID elevated to this person identifier namespace."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_to_account_dataset"
@@ -91,6 +91,12 @@ You enable and configure B2B account stitching at the connection level, and then
 >id="connection_b2b_stitching_start_time"
 >title="Start time"
 >abstract="Select a timestamp field that indicates when the person-to-account relationship became active."
+
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_mapping_creation_time"
+>title="Mapping creation time"
+>abstract="Optionally, select the field that represents the date and time when person to account mapping got created. Useful for scenarios when a person switches multiple accounts over time."
 
 
 1. In Customer Journey Analytics, navigate to **[!UICONTROL Connections]** and [create a new connection](/help/connections/create-connection.md#create-a-connection) or [edit an existing connection](/help/connections/create-connection.md#edit-a-connection).
@@ -120,7 +126,7 @@ You enable and configure B2B account stitching at the connection level, and then
       | **[!UICONTROL Person to Account dataset]** | ![Required](/help/assets/icons/Required.svg) | Select the lookup (record or non-time series dataset) that maps persons to accounts. |
       | **[!UICONTROL Person ID]** | ![Required](/help/assets/icons/Required.svg) | Select the field in the dataset that contains the person ID. That field must be marked as an identity and cannot be the same as the **[!UICONTROL Account ID]** field or **[!UICONTROL Start time]** field. |
       | **[!UICONTROL Account ID]** | ![Required](/help/assets/icons/Required.svg) | Select the field in the dataset that contains the account ID. That field cannot be the same as the **[!UICONTROL Person ID]** field or **[!UICONTROL Start time]** field. |
-      | **Start time** | | Select a timestamp field that indicates when the person-to-account relationship became active. |
+      | **Mapping creation time** | |Optionally, select the field that represents the date and time when person to account mapping got created. Useful for scenarios when a person switches multiple accounts over time.<br/><br/>**Example** (when **update_date** field is selected):<table><thead><tr><th>update_date</th><th>person</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>For all events with a timestamp in the **[!UICONTROL update_date]** field before May 1st, 2026: a@b.com is mapped to Apple.</li><li>For all events with a timestamp in the **[!UICONTROL update_date]** field on or after May 1st, 2026: a@b.com is mapped to Adobe.</li><ul> |
 
       >[!NOTE]
       >
@@ -129,7 +135,6 @@ You enable and configure B2B account stitching at the connection level, and then
    1. Select **[!UICONTROL Save]** to close the **[!UICONTROL B2B stitching configuration]** dialog and return to the connection settings.
 
    1. The **[!UICONTROL _Unsaved changes_]** indicator appears next to the **Open B2B stitching configuration** button until you [save](#save) the connection.
-
 
 ### Enable B2B stitching on event datasets
 
