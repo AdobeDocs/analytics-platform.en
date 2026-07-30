@@ -51,7 +51,7 @@ topic_v2:
 
 Once you have [created or edited one or more connections](/help/connections/create-connection.md), you can manage them in **[!UICONTROL Connections]**. The [!UICONTROL Connections] interface lets you:
 
-* View all your connections at a glance, including the owner, the sandbox, and when the connections were created and modified.
+* View all your connections, including the owner, the sandbox, and when the connections were created and modified.
 * Edit a connection.
 * Delete a connection.
 * Create a data view from a connection.
@@ -605,15 +605,15 @@ The **[!UICONTROL Content Analytics Usage]** interface consists of two panels:
   * Two summary visualizations that display total and percentual changes from the previous month for:
 
     * **[!UICONTROL Core Analytics Core Reportable Rows]**. The total number of Content Analytics specific rows available over the past 13 months for the current month, with a percentage change compared to the previous month.  For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024.
-    * **Monthly Content Analytics rows** | Tracks the number of Content Analytics rows available for reporting. Reportable rows are the ingested rows minus the rows that are skipped and deleted during ingestion. Reportable rows serve as a key metric for billing and data usage.
+    * **Monthly Content Analytics rows**. Tracks the number of Content Analytics rows available for reporting. Reportable rows are the ingested rows minus the rows that are skipped and deleted during ingestion. Reportable rows serve as a key metric for billing and data usage.
   
   * A stacked vertical bar visualization that displays the **[!UICONTROL Content Analytics Core Reportable Rows]** for the last 13 months. 
   
-    When you hover over any stacked bar in the visualization, a popup shows the number of rows for that specific part of the bar. In the example below, the core data reportable rows are shown for the current month (August 2025: 936M (936,347,325)).
+    When you hover over any stacked bar in the visualization, a popup shows the number of rows for that specific part of the bar.
 
 * A combined panel, showing two subpanels for:
 
-  +++ Monthly Content Analytics rows.
+  +++ Monthly Content Analytics rows
 
   The **[!UICONTROL Monthly Content Analytics rows]** subpanel measures the total number of monthly Content Analytics records added to the system each month, providing insight into data growth and ingestion rates. The subpanel provides a summary of this month's total ingested rows and the change from the previous month.
 
@@ -625,7 +625,7 @@ The **[!UICONTROL Content Analytics Usage]** interface consists of two panels:
 
   You can use the **[!UICONTROL Detail breakdown]** table to view detailed metrics by connection, dataset, sandbox, and tags. Datasets are reported using ids instead of names, as dataset names can be modified during a reporting period. Unknown datasets or connections are reported using ids.
 
-  For the months before September 2024, data was collected at the dataset level and is displayed as [!UICONTROL Other datasets] for clarity. Starting from September 2024, data is gathered at a granular dataset level, and [!UICONTROL Other datasets] do no longer appear.
+  For the months before September 2024, data was collected at the dataset level and is displayed as [!UICONTROL Other datasets] for clarity. Starting from September 2024, data is gathered at a granular dataset level, and [!UICONTROL Other datasets] no longer appear.
 
   * To change the breakdown, select a combination for **[!UICONTROL View by]** and **[!UICONTROL Breakdown by]**.
 
@@ -643,13 +643,12 @@ The **[!UICONTROL Content Analytics Usage]** interface consists of two panels:
 
 ### CJA B2B Edition Usage
 
-
 The **[!UICONTROL CJA B2B Edition Usage]** interface uses the following metrics:
 
 | Metric name | Description |
 |---|---|
-| **Core Reportable BPP** | The total number of business profile reportable rows available over the past 13 months for the current month, with a percentage change compared to the previous month.  For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024.|
-| **Historical Reportable BPP** | The total number of business profile reportable rows available over a period older than 13 months for the current month, with a percentage change compared to the previous month. For example, on February 1, 2024, the number shows the total rows available with an event timestamp older than January 2023. |
+| **Core Reportable BPP** | The total number of businessperson profile reportable rows available over the past 13 months for the current month, with a percentage change compared to the previous month.  For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024.|
+| **Historical Reportable BPP** | The total number of businessperson profile reportable rows available over a period older than 13 months for the current month, with a percentage change compared to the previous month. For example, on February 1, 2024, the number shows the total rows available with an event timestamp older than January 2023. |
 
 >[!NOTE]
 >
@@ -660,7 +659,7 @@ The **[!UICONTROL CJA B2B Edition Usage]** interface consists of one panel that 
 
 +++ Core Reportable BPP.
 
-The **[!UICONTROL Core Reportable BPP]** subpanel measures the total number of monthly core reportable BPP records added to the system each month, providing insight into data growth and ingestion rates. The subpanel provides a summary of this month's total ingested rows and the change from the previous month.
+The **[!UICONTROL Core Reportable BPP]** subpanel measures the total number of monthly core reportable businessperson profile records added to the system each month, providing insight into data growth and ingestion rates. The subpanel provides a summary of this month's total ingested rows and the change from the previous month.
 
 You can hover over data points in the visualization to display a popup with more details that applies to both **[!UICONTROL Core Reportable BPP]** and **[!UICONTROL Historical Reportable BPP]**. Use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range. 
 
@@ -668,9 +667,9 @@ You can hover over data points in the visualization to display a popup with more
 
 +++ Historical Reportable BPP.
 
-The **[!UICONTROL Historical Reportable BPP]** subpanel measures the total number of monthly historical reportable BPP records added to the system each month, providing insight into data growth and ingestion rates. The subpanel provides a summary of this month's total ingested rows and the change from the previous month.
+The **[!UICONTROL Historical Reportable BPP]** subpanel measures the total number of monthly historical reportable businessperson profile records added to the system each month, providing insight into data growth and ingestion rates. The subpanel provides a summary of this month's total ingested rows and the change from the previous month.
 
-You can hover over data points in the visualization to display a popup with more details. that applies to both **[!UICONTROL Core Reportable BPP]** and **[!UICONTROL Historical Reportable BPP]**. Use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range.
+You can hover over data points in the visualization to display a popup with more details that applies to both **[!UICONTROL Core Reportable BPP]** and **[!UICONTROL Historical Reportable BPP]**. Use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range.
 
 +++
 
@@ -695,7 +694,6 @@ You can select a month for which you want the breakdown. Select a month from **[
 
 
 ### Streaming Media Usage
-
 
 The **[!UICONTROL Streaming Media Usage]** interface uses the following metrics:
 
