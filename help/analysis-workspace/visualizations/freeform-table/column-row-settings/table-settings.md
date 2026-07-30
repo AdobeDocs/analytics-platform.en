@@ -52,7 +52,7 @@ To change the number of rows that are displayed:
 
    ![Freeform table showing the drop-down menu of for the number of rows displayed. 400 rows is selected.](assets/change-row-count.gif)
 
-1. From the drop-down menu, select the number of rows you would like the table to display.
+1. From the drop-down menu, select the number of rows for the table to display.
 
 
 ## Context-menu
@@ -119,8 +119,6 @@ You can set the [view density](https://experienceleague.adobe.com/en/docs/analyt
 
 ## Inline classifications {#inline-classifications-example}
 
-{{release-limited-testing-section}}
-
 Inline classifications enable you to rename or combine rows in a freeform table. And to create a derived field from the modified rows in a table.
 
 The example below illustrates how to use the **[!UICONTROL Rename selected row]**, **[!UICONTROL Combine selected rows]**, and **[!UICONTROL Create modified rows as derived field]** context menu options. And how to reset the modified freeform table.
@@ -140,7 +138,7 @@ The example below illustrates how to use the **[!UICONTROL Rename selected row]*
 
 * Combine **[!UICONTROL Men]** and **[!UICONTROL Women]** rows to one **[!UICONTROL Adults]** row.
 
-  1. Select **[!UICONTROL Men]** and **[!UICONTROL Women]** row.
+  1. Select **[!UICONTROL Men]** and **[!UICONTROL Women]** rows.
   1. Select **[!UICONTROL Combine selected rows]** from the context menu from any of the selected rows.
 
      ![Select Combine selected rows menu option](assets/context-combine.png)
@@ -153,6 +151,11 @@ The example below illustrates how to use the **[!UICONTROL Rename selected row]*
      1. Select **[!UICONTROL OK]**.
 
 * Create a derived field from the modifications in the freeform table.
+
+  >[!NOTE]
+  >
+  >  You can only create a derived field from modifications in the freeform table when you are a Customer Journey Analytics product administrator.
+
 
   1. Select **[!UICONTROL Create modified rows as derived field]** from the context menu for any selected row in the modified table.
 

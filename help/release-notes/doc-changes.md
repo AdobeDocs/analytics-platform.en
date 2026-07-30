@@ -66,6 +66,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 |---|---|
 | **July 2026** | |
+| Usage interface | Updates to the [Usage interface](/help/connections/manage-connections.md#usage) documentation for Connections. |
 | Sub-event analysis | Documentation for [sub-event analysis](/help/components/segments/sub-event.md) and [custom containers](/help/data-views/create-dataview.md#custom-containers). |
 | Inline classifications | Documentation for [inline classifications](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications). |
 | **June 2026** | |
