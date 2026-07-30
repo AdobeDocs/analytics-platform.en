@@ -259,8 +259,8 @@ See also Experience Platform [Dataset Export guardrails](https://experienceleagu
 | Name |  Value | Limit Type | Description |
 |---|--:|---|---|
 | Rows per Report |  3 million - 300 million | System-enforced guardrail  | Maximum number of reporting rows per report. Value varies depending on the Customer Journey Analytics package (see Product Description). |
-| Breakdowns per Table |  5 | System-enforced guardrail  | Maximum number of breakdowns per table. |
-| Metrics per Table |  5 | System-enforced guardrail  | Maximum number of metrics per table. |
+| Dimensions per Table |  10 | System-enforced guardrail  | Maximum number of dimensions per table. |
+| Metrics per Table |  10 | System-enforced guardrail  | Maximum number of metrics per table. |
 | Schedule Frequency |  1 | System-enforced guardrail  | Exports can be scheduled once (1) a day or on a longer schedule (for example: once every 2 days, or weekly). |
 
 {style="table-layout:auto"}
