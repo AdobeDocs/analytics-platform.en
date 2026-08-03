@@ -3,10 +3,6 @@ title: Brand Visibility Integration
 description: Integrate Brand Visibility with Customer Journey Analytics
 feature: Experience Platform Integration
 role: User
-feature_v2:
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-    internal-label: Integrations
-
 ---
 
 # Adobe Brand Visibility integration
