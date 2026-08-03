@@ -9,7 +9,7 @@ role: User
 
 [Adobe Brand Visibility](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/home){target="_blank"} is a generative AI-first application for Generative Engine Optimization, designed to help brands enhance their visibility, accuracy, and influence in AI-driven search environments. Brand Visibility provides insights into brand presence in AI-generated answers, offers prescriptive content recommendations, and automates optimization fixes.
 
-AI has become a primary discovery channel. LLM agents, such as ChatGPT, Claude, Copilot, and Perplexity, crawl brand content. 
+AI has become a primary discovery channel. Large language model (LLM) agents, such as ChatGPT, Claude, Copilot, and Perplexity, crawl brand content. 
 
 >[!PREREQUISITES]
 >
