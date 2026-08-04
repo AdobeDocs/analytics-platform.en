@@ -68,22 +68,22 @@ These release notes cover the August 2026 release period. Adobe Customer Journey
 
 ### Fixes in Customer Journey Analytics
 
-**Analysis Workspace**: 
+**Analysis Workspace**: AN-466867, AN-465995, AN-465315, AN-465313, AN-464375, AN-463634, AN-463248, AN-463175, AN-463049, AN-462347, AN-462124, AN-461922, AN-458398, AN-457849, AN-455002, AN-453357, AN-456863, AN-459816, AN-459034, AN-460774, AN-460671, AN-457760, AN-443594
 **Components**: 
-**Connections**:
+**Connections**: AN-464934, AN-460768
 **Content Analytics**: 
 **Guided analysis**: 
-**Exports**: 
-**Data views**: 
-**Data ingestion**: 
+**Exports**: AN-451819, AN-448419, AN-456001
+**Data views**: AN-453201, AN-441965, AN-460967
+**Data ingestion**: AN-462123, AN-451836, AN-453790, AN-459000, AN-456057, AN-461271, AN-459016, AN-460935
 **Implementation**: 
-**Report Builder**:
-**Reporting**: 
-**Segmentation**: 
-**Scheduled reports**: 
-**Shared metrics and dimensions**:
-**Audience Analysis**: 
-**Other**: 
+**Report Builder**: AN-465346, AN-464768, AN-464580, AN-464301, AN-463048, AN-462800, AN-457042, AN-461033, AN-459042, AN-454250, AN-451735, AN-450776, AN-450200, AN-451665
+**Reporting**: AN-463576, AN-462400, AN-456394, AN-455619, AN-459530, AN-454103, AN-452866, AN-461181
+**Segmentation**: AN-459002, AN-457730, AN-457146
+**Scheduled reports**: AN-455009, AN-460037, AN-462093
+**Shared metrics and dimensions**: 
+**Audience Analysis**: AN-458292
+**Other**: AN-466935, AN-462116, AN-454493, AN-457666, AN-457557, AN-456742, AN-437975, AN-460959
 
 ## Postponed features
 
