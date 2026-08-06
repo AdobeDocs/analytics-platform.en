@@ -340,7 +340,7 @@ You can do any of the following to combine nodes in Journey canvas:
 
 * From the left rail, drag multiple components simultaneously onto a blank area of the canvas while holding the Shift key.
 
-* On the canvas, select the nodes that you want to combine, right-click one of the selected nodes, then select [!UICONTROL **Combine**].
+* On the canvas, select the nodes that you want to combine, right-click one of the selected nodes, then select [!UICONTROL **Combine nodes**].
 
   To select multiple nodes, hold Command (on Mac) or Ctrl (on Windows).
 
@@ -363,11 +363,11 @@ The logic that is applied to nodes when they are combined differs depending on w
 | Date range + Metric, Segment, or Dimension | Joined with AND |
 | Segment + Metric, Date range, or Dimension | Joined with AND |
 
-#### Split combined nodes
+#### Split components from combined nodes
 
-You can split nodes that were previously combined:
+You can split the components that are included in a combined node into their own separate nodes:
 
-1. Right-click the node that you want to split, then select [!UICONTROL **Split node**].
+1. Right-click the node that you want to split, then select [!UICONTROL **Separate components**].
 
 ### Connect nodes
 
