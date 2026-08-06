@@ -1,8 +1,9 @@
 ---
-title: Current Customer Journey Analytics release notes
+title: Current Customer Journey Analytics Release Notes
 description: View the latest Customer Journey Analytics release notes
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
+hold: true
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -46,36 +47,48 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
 ---
-# Current Customer Journey Analytics release notes (June 2026)
+# Current Customer Journey Analytics release notes (August 2026)
 
-**Last update**: June 23, 2026
+**Last update**: August 4, 2026
 
-These release notes cover the June 2026 release period. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly. 
+These release notes cover the August 2026 release period. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
-## New or updated features 
+## New or updated features
 
 | Feature and description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | -----------|-----------|-----------|
-| **Data Mirror** <br/>[Data Mirror](/help/data-mirror/data-mirror.md) is an Experience Platform capability that enables row-level change ingestion (change data capture) from external data warehouse solutions ([!DNL Snowflake], [!DNL Azure Databricks], and [!DNL Google BigQuery]) into Customer Journey Analytics using relational schemas. It preserves data relationships, enforces uniqueness, and supports versioning without requiring upstream extract, transform, and load (ETL) processes. | March 25, 2026 | June 17, 2026 |
-| **Validate your data in AI Assistant** <br/>You can use AI Assistant to [validate the data quality of your Adobe Experience Platform datasets](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/data-validation). Powered by Agent Orchestrator, the data validation capability can perform statistical and semantic validations on datasets, analyze dataset fields, identify data quality issues, and return natural language summaries with actionable insights. | | June 22, 2026 |
+| **Journey canvas enhancements**<br>The following Journey canvas enhancements are now available:<ul><li>Compare the journey to a prior time frame. Compare the current journey to the journey 4 weeks prior, 2 quarters prior, 1 year prior, or to a custom date range.</li><li>For a selected node, show the top dimension items that come after the selected node at any point in the journey. Use this when the selected node is the key event in your analysis and you want to see what people do at any point afterward.<p>Previously, only the top immediate nodes could be shown before or after the selected node. </p></li><li>Change the shape and style of arrows between nodes. Drag arrows between nodes to change the shape (curviture) of the arrow, and right-click an arrow to change its style to any of the following: solid, dashed, dotted, dashed-dot, or animated.</li></ul><p></p>For more information, see [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md). |  | August 18, 2026 |
+| **Support for additional data usage labels**<br>Customer Journey Analytics now supports the following additional data usage labels for elements within a dataset:<ul><li>C2 – Restrict third-party data export (available now)</li><li>C3 – Restrict directly identifiable data combination (available now)</li><li>C9 – Restrict data science (planned to release in August)</li></ul><p>For more information, see [Labels, policies, and marketing actions](/help/data-views/data-governance.md).</p> | | August 2026|
+| **Consent policy filtering and reporting**<br>You can now report on which visitors match your Adobe Experience Platform consent policies. (Consent policy dimensions and metrics are added to the data views in your connection.)<p>Additionally, you can exclude non-consenting visitors before their data is ingested into Customer Journey Analytics.</p><p>For more information, see Consent reporting and filtering overview.</p> | | August 2026 |
+| **Migration Planner: Adobe Analytics to Customer Journey Analytics**<br>The Migration Planner provides a migration wizard that automates some of the most complex and time-consuming tasks associated with an upgrade from Adobe Analytics to Customer Journey Analytics, including XDM schema creation and migration from AppMeasurement or the Analytics extension (tags) to the Experience Platform Web SDK. <p>(Documentation link to follow.)</p> | | End of August or September 2026 |
+| **B2B: Person-to-account stitching**<br>You can now use identity stitching to stitch account information to every event in the dataset. Because account is the highest reporting container in Customer Journey Analytics B2B Edition, events that don't include an Account ID are dropped during ingestion.</li></ul><p>(Documentation link to follow.)</p> | | End of August or September 2026 |
+| **CJA Report API first calls guide**<br>The Adobe Customer Journey Analytics API first calls guide provides instructions and examples for configuring basic report requests. | | August 10, 2026 |
+| **CJA Report API date trended guide**<br>The Adobe Customer Journey Analytics API date trended guide provides instructions and examples for configuring basic report requests. | | August 17, 2026 |
 
 ### Fixes in Customer Journey Analytics
 
-**Analysis Workspace**:
+**Analysis Workspace**: 
 **Components**: 
 **Connections**:
-**Content Analytics**: AN-451203, AN-447596
+**Content Analytics**: 
 **Guided analysis**: 
-**Exports**:
-**Data views**:
+**Exports**: 
+**Data views**: 
+**Data ingestion**: 
 **Implementation**: 
-**Report Builder**: AN-440912
-**Reporting**:
+**Report Builder**:
+**Reporting**: 
 **Segmentation**: 
 **Scheduled reports**: 
 **Shared metrics and dimensions**:
-**Audience Analysis**: AN-449656, AN-450400
+**Audience Analysis**: 
 **Other**: 
+
+## Postponed features
+
+| Feature and description | [Rollout starts](releases.md) | [General Availability](releases.md) |
+| -----------|-----------|-----------|
+| **Streaming media services: Support schedule data** <br/>You can now upload scheduled data of past live Streaming Media content to more easily and accurately track viewership.<p>The following are examples of live content that are supported with schedule data upload:</p><ul><li>FAST (Free Ad Supported TV) platforms</li><li>Local streams</li><li>Live sports</li></ul><p>Uploading schedule data allows you to track viewership data for individual programs that ran during the time you designate in the upload file. You can even gather viewership data for specific topics or program segments.</p><p>These capabilities are available regardless of how you implemented Streaming Media Collection.</p><p>Previously, it was difficult to accurately tie a given session to specific programs when analyzing live content, and it wasn't possible to tie a given session to individual topics or program segments.</p><p>For more information, see [Upload schedule data to track live content](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-use-cases/track-schedule-data). | October 29, 2025 | TBD<p>(Originally planned for October 29, 2025)</p> |
 
 >[!MORELIKETHIS]
 >
@@ -84,3 +97,4 @@ These release notes cover the June 2026 release period. Adobe Customer Journey A
 >* [Streaming Media Collection release notes](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html)
 >* [CX Enterprise release notes](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
 >* [Customer Journey Analytics documentation updates](/help/release-notes/doc-changes.md)
+

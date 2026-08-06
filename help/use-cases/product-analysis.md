@@ -65,15 +65,15 @@ Accurate product data is the cornerstone of effective product analysis. Data ing
 The following capabilities within Adobe Experience Platform and Customer Journey Analytics empower you to ingest and manage your product data at scale:
 
 * Adobe Experience Platform
-  * [Datasets​](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)
-  * [Data prep​](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/home)
-  * [Data Distiller​](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
+  * [Datasets](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)
+  * [Data prep](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/home)
+  * [Data Distiller](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
-  * [Connections​](/help/connections/overview.md)
+  * [Connections](/help/connections/overview.md)
   * [Data views](/help/data-views/data-views.md), including [derived fields​](/help/data-views/derived-fields/derived-fields.md)
-  * [Segments​](/help/components/segments/seg-overview.md)
+  * [Segments](/help/components/segments/seg-overview.md)
   * [Calculated metrics](/help/components/calc-metrics/calc-metr-overview.md)
-  * [Guided analysis​: Timeline​](/help/guided-analysis/types/timeline.md)
+  * [Guided analysis: Timeline](/help/guided-analysis/types/timeline.md)
 
 ## Measure acquisition and activation
 
@@ -86,11 +86,11 @@ Product growth hinges on actionable top-of-funnel insights that attract new user
 
 The following capabilities in Customer Journey Analytics enable you to measure both acquisition and activation effectively:
 
-* [Guided analysis​: Active growth](/help/guided-analysis/types/active-growth.md)
+* [Guided analysis: Active growth](/help/guided-analysis/types/active-growth.md)
 * [Guided analysis: Net growth](/help/guided-analysis/types/net-growth.md)
 * [Guided analysis: Trends](/help/guided-analysis//types/trends.md)
-* [Attribution panel​](/help/analysis-workspace/c-panels/attribution.md)
-* [Freeform table](/help/analysis-workspace/c-panels/freeform-panel.md) that includes the marketing channel dimension (creating using a [derived field](/help/data-views/derived-fields/derived-fields.md))
+* [Attribution panel](/help/analysis-workspace/c-panels/attribution.md)
+* [Freeform table](/help/analysis-workspace/c-panels/freeform-panel.md) that includes the marketing channel dimension (creating using a [derived field](/help/data-views/derived-fields/derived-fields.md))
 
 ## Measure engagement and adoption
 
@@ -106,23 +106,23 @@ The following capabilities in Customer Journey Analytics help you track product 
 * [Guided analysis: Funnel](/help/guided-analysis/types/funnel.md)
 * [Guided analysis: Conversion trends](/help/guided-analysis/types/conversion-trends.md)
 * [Guided analysis: Release impact](/help/guided-analysis/types/release-impact.md)
-* [Guided analysis: First use impact​](/help/guided-analysis/types/first-use-impact.md)
+* [Guided analysis: First use impact](/help/guided-analysis/types/first-use-impact.md)
 * [Guided analysis: Timeline](/help/guided-analysis/types/timeline.md)
-* [Freeform tables​](/help/analysis-workspace/c-panels/freeform-panel.md)
+* [Freeform tables](/help/analysis-workspace/c-panels/freeform-panel.md)
 * [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md)
 
 ## Measure retention and churn
 
-Retention measures how many users continue to engage with the product after initial acquisition and activation. High-performing products maintain a stable, loyal user base by maximizing interaction with the features that most strongly correlate with continued use. A retained user returns and interacts with the product over time, while a churned user does not. Product teams track retention to pinpoint the features that drive ongoing engagement, and design interventions that shift churned users toward retained user behavior.
+Retention measures how many users continue to engage with the product after initial acquisition and activation. High-performing products maintain a stable, loyal user base by maximizing interaction with the features that most strongly correlate with continued use. A retained user returns and interacts with the product over time, while a churned user does not. Product teams track retention to pinpoint the features that drive ongoing engagement, and design interventions that shift churned users toward retained user behavior.
 
 ![Retention analysis](/help/guided-analysis/assets/retention.png)
 
 The following capabilities in Customer Journey Analytics help you track retention and churn effectively:
 
-* [Guided analysis: Retention](/help/guided-analysis/types/retention.md)​
+* [Guided analysis: Retention](/help/guided-analysis/types/retention.md)
 * [Guided analysis: Active growth](/help/guided-analysis/types/active-growth.md)
 * [Guided analysis: Net growth](/help/guided-analysis/types/net-growth.md)
-* [Cohort table​](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
+* [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
 
 ## Actionable product insights
 
@@ -130,13 +130,13 @@ Insights deliver value only when they drive action. Convert analytics findings i
 
 The following capabilities within CX Enterprise enable you to act on insights effectively:
 
-* [Create and publish audiences](/help/components/audiences/publish.md)​ for activation from Customer Journey Analytics
+* [Create and publish audiences](/help/components/audiences/publish.md) for activation from Customer Journey Analytics
 * Activate audiences through CX Enterprise products:
   * [Run experiments](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) in AJO and Adobe Target, and measure the impact of variations in Customer Journey Analytics using the [Experimentation panel](/help/analysis-workspace/c-panels/experimentation.md)
-  * [Deliver in-app engagements](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app) to users in AJO
-* [Activate audiences](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview) to external destinations with Adobe Real-time CDP​
+  * [Deliver in-app engagements](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app) to users in AJO.
+* [Activate audiences](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview) to external destinations with Adobe Real-time CDP.
 
-## Share insights to the organization​
+## Share insights to the organization
 
 Communicate key findings across teams to align efforts, foster collaboration, and ensure everyone works toward shared product and business goals.
 

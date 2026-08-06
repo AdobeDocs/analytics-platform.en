@@ -33,7 +33,7 @@ topic_v2:
 
 B2B account stitching enriches your event datasets with account information and enables complete analysis across the full customer journey in Customer Journey Analytics. When events lack an account ID, which Customer Journey Analytics B2B edition requires for ingestion, account stitching derives and adds that information automatically using a [person-to-account mapping dataset](#prerequisites) you provide.
 
-Without account stitching, any event that does not contain an account ID is dropped during ingestion. Account stitching eliminates this barrier by looking up the account associated with the person on each event, adding the account ID both as the event is ingested and retroactively.
+Without account stitching, any event that does not contain an account ID is dropped during ingestion. Account stitching resolves this limitation by looking up the account associated with the person on each event, adding the account ID both as the event is ingested and retroactively.
 
 >[!NOTE]
 >
@@ -70,29 +70,33 @@ You enable and configure B2B account stitching at the connection level, and then
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
 >title="Person identifier namespace"
->abstract="Select a person identifier namespace, for example Email, to which you want any person ID elevated."
+>abstract="Select the most relevant person identity namespace for your reporting. For example, Email. Any event datasets with **[!UICONTROL Person to Account stitching]** enabled have the person ID elevated to this person identifier namespace."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_to_account_dataset"
 >title="Person to account dataset"
->abstract="Select the lookup datasaet that maps person IDs to account IDs."
+>abstract="Select the lookup dataset that maps person IDs to account IDs."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person"
->title="Person"
->abstract="Select the field in the dataset that contains the person ID. That field must be marked as an identity and cannot be the same as the **[!UICONTROL Account]** field or **[!UICONTROL Start time]** field."
+>title="Person ID"
+>abstract="Select the field in the dataset that contains person IDs. This field's namespace can either differ from or be the same as the selected person identifier namespace. If they differ, the two namespaces need to be linked in the identity graph."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_account"
->title="Account"
->abstract="Select the field in the dataset that contains the account ID. That field cannot be the same as the **[!UICONTROL Person]** field or **[!UICONTROL Start time]** field."
+>title="Account ID"
+>abstract="Select the field in the dataset that contains the unique account identifier values. The account ID info will be made available on the rows of any event datasets with **[!UICONTROL Person to Account stitching]** enabled."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_start_time"
 >title="Start time"
 >abstract="Select a timestamp field that indicates when the person-to-account relationship became active."
->additional-url="url"
->additional-url="url"
+
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_mapping_creation_time"
+>title="Mapping creation time"
+>abstract="Optionally, select the field that represents the date and time when person to account mapping got created. Useful for scenarios when a person switches multiple accounts over time."
 
 
 1. In Customer Journey Analytics, navigate to **[!UICONTROL Connections]** and [create a new connection](/help/connections/create-connection.md#create-a-connection) or [edit an existing connection](/help/connections/create-connection.md#edit-a-connection).
@@ -120,9 +124,9 @@ You enable and configure B2B account stitching at the connection level, and then
       | Field | Required | Description |
       |---|:---:|---|
       | **[!UICONTROL Person to Account dataset]** | ![Required](/help/assets/icons/Required.svg) | Select the lookup (record or non-time series dataset) that maps persons to accounts. |
-      | **[!UICONTROL Person]** | ![Required](/help/assets/icons/Required.svg) | Select the field in the dataset that contains the person ID. That field must be marked as an identity and cannot be the same as the **[!UICONTROL Account]** field or **[!UICONTROL Start time]** field. |
-      | **[!UICONTROL Account]** | ![Required](/help/assets/icons/Required.svg) | Select the field in the dataset that contains the account ID. That field cannot be the same as the **[!UICONTROL Person]** field or **[!UICONTROL Start time]** field. |
-      | **Start time** | | Select a timestamp field that indicates when the person-to-account relationship became active. |
+      | **[!UICONTROL Person ID]** | ![Required](/help/assets/icons/Required.svg) | Select the field in the dataset that contains the person ID. That field must be marked as an identity and cannot be the same as the **[!UICONTROL Account ID]** field or **[!UICONTROL Start time]** field. |
+      | **[!UICONTROL Account ID]** | ![Required](/help/assets/icons/Required.svg) | Select the field in the dataset that contains the account ID. That field cannot be the same as the **[!UICONTROL Person ID]** field or **[!UICONTROL Start time]** field. |
+      | **Mapping creation time** | |Optionally, select the field that represents the date and time when person to account mapping got created. Useful for scenarios when a person switches multiple accounts over time.<br/><br/>**Example** (when **update_date** field is selected):<table><thead><tr><th>update_date</th><th>person</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>For all events with a timestamp in the **[!UICONTROL update_date]** field before May 1st, 2026: a@b.com is mapped to Apple.</li><li>For all events with a timestamp in the **[!UICONTROL update_date]** field on or after May 1st, 2026: a@b.com is mapped to Adobe.</li><ul> |
 
       >[!NOTE]
       >
@@ -132,17 +136,14 @@ You enable and configure B2B account stitching at the connection level, and then
 
    1. The **[!UICONTROL _Unsaved changes_]** indicator appears next to the **Open B2B stitching configuration** button until you [save](#save) the connection.
 
-
 ### Enable B2B stitching on event datasets
 
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="Enable person to account stitching"
->abstract="If enabled, this dataset uses B2B account stitching. Select a required **[!UICONTROL Person ID]** to lookup the account ID based on the person-to-account dataset.<br/>If disabled, this dataset does *not* use B2B account stitching and you have to select a required **[!UICONTROL Account ID]** instead."
->additional-url="url"
->additional-url="url"
-
+>abstract="If enabled, this dataset uses B2B Person to Account stitching. The **[!UICONTROL Person ID]** values will be elevated to the ones from configured **[!UICONTROL Person identifier namespace]**, then used to lookup the account ID based on the person-to-account dataset.<br/>If disabled, this dataset does not use B2B Person to Account stitching and you have to select a required **[!UICONTROL Account ID]** instead."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/b2b-account-stitching#configure-b2b-stitching-settings" text="Configure B2B stitching settings"
 
 After configuring B2B stitching at the connection level, you must enable B2B account stitching individually for each event dataset that you want stitched.
 
@@ -156,7 +157,7 @@ After configuring B2B stitching at the connection level, you must enable B2B acc
 
 When **[!UICONTROL Enable Person to Account stitching]** is **on**, you have configured B2B account stitching for the dataset.
 
-* The configuration of a person ID is required. That person ID is used to lookup the account ID based on the [person-to-account dataset](#prerequisites).
+* The configuration of a person ID is required. That person ID is used to look up the account ID based on the [person-to-account dataset](#prerequisites).
 * The configuration of an account ID is optional.
 
 ![B2B account stitching on event dataset on](assets/b2b-event-dataset-stitching-on.png)
@@ -182,7 +183,7 @@ After you have configured the B2B stitching configuration and have finished addi
 
 >[!IMPORTANT]
 >
->Once a connection is saved, the B2B stitching configuration becomes immutable. To view your settings after saving, select **Open B2B stitching configuration**. All fields will be shown in a read-only state. Additionally, if the dataset that is used for [person-to-account mapping](#prerequisites) is deleted in Experience Platform, this connection will be deleted.
+>Once a connection is saved, the B2B stitching configuration becomes immutable. To view your settings after saving, select **Open B2B stitching configuration**. All fields appear in a read-only state. Additionally, if the dataset used for [person-to-account mapping](#prerequisites) is deleted in Experience Platform, this connection is deleted.
 
 ## Data update schedule
 
@@ -197,7 +198,7 @@ Account stitching derives the identity map from your [person-to-account dataset]
 
 Account stitching honors standard privacy and hygiene requests for person identities, consistent with B2C stitching behavior. If a person ID is later removed through a Privacy or Hygiene request, the associated stitching performed using the identity graph is reversed.
 
-B2B entities such as accounts, account IDs and global account IDs that are added to events through stitching are not removed as part of privacy or hygiene requests. These values do not contain personally identifiable information, so no legal obligation exists to remove these values.
+B2B entities like accounts, account IDs, and global account IDs added to events through stitching are not removed during privacy or hygiene requests. These values do not contain personally identifiable information, so no legal obligation exists to remove these values.
 
 >[!MORELIKETHIS]
 >
