@@ -68,6 +68,19 @@ Before you create a data feed, it's important to have a basic understanding of d
 >title="Lookback date range"
 >abstract="Controls how far back Customer Journey Analytics looks when processing the data feed delivery.<br/>This setting does not alter the frequency window (hour or day). However, the lookback date range can influence the data that is delivered. Segment qualification, session calculation, some derived field transformations, and dimension persistence are all impacted by the lookback date range."
 
+Controls how far back Customer Journey Analytics looks when processing the data feed delivery. This setting determines the date range that is used for including events; it does not alter the frequency window (hour or day).
+
+Sets the date range that controls how far back Customer Journey Analytics looks when including events in the data feed delivery.
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_datafeed_processing_delay"
+>title="Processing delay"
+>abstract=""
+
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
