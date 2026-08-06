@@ -363,11 +363,11 @@ The logic that is applied to nodes when they are combined differs depending on w
 | Date range + Metric, Segment, or Dimension | Joined with AND |
 | Segment + Metric, Date range, or Dimension | Joined with AND |
 
-#### Split components from combined nodes
+#### Separate components from combined nodes
 
 You can split the components that are included in a combined node into their own separate nodes:
 
-1. Right-click the node that you want to split, then select [!UICONTROL **Separate components**].
+1. Right-click the node that you want to split, then select [!UICONTROL **Separate components into nodes**].
 
 ### Connect nodes
 
