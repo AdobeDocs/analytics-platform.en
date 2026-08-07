@@ -31,7 +31,10 @@ topic_v2:
 ---
 # Graph-based stitching
 
-In graph-based stitching, you specify an event dataset, the persistent ID (cookie) for that dataset and the desired person ID namespace from the identity graph. Graph-based stitching attempts to make the person ID info available for Customer Journey Analytics data analysis on any event. The persistent ID is used to query the identity graph from the Experience Platform Identity Service to obtain the person ID from the specified namespace.
+In graph-based stitching, you specify an event dataset, the persistent ID (cookie) for that dataset and the desired person ID namespace from the identity graph. Graph-based stitching attempts to make the person ID info available for Customer Journey Analytics data analysis on any event. The persistent ID is used to query the identity graph from the Experience Platform Identity Service to obtain the person ID from the specified namespace. This is the same Identity Service that is used by other Experience Platform applications such as Real-Time Customer Data Platform, as shown in the illustration below.
+
+![Identity Service](assets/uis-gbs.png){zoomable="yes"}
+
 
 >[!NOTE]
 >
