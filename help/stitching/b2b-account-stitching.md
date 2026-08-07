@@ -46,9 +46,7 @@ Account stitching performs the following operations on your datasets:
 
 ## How B2B account stitching works
 
-
-
-In the following example, without B2B account stitching, the events that do not contain an account ID are not ingested in Customer Journey Analytics.
+To illustrate how B2B account stitching works, the dataset shown below is used as the starting point.
 
 ### Base event dataset
 
