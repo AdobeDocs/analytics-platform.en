@@ -31,7 +31,7 @@ topic_v2:
 ---
 # B2B account stitching
 
-B2B account stitching enriches your event datasets with account information and enables complete analysis across the full customer journey in Customer Journey Analytics. When events lack an account ID, which Customer Journey Analytics B2B edition requires for ingestion, account stitching derives and adds that information automatically using a [person-to-account mapping dataset](#prerequisites) you provide.
+B2B account stitching enriches your event datasets with account identities and enables complete analysis across the full customer journey in Customer Journey Analytics. When events lack an account ID, which Customer Journey Analytics B2B edition requires for ingestion, account stitching derives and adds that information automatically using a [person-to-account mapping dataset](#prerequisites) you provide.
 
 Without account stitching, any event that does not contain an account ID is dropped during ingestion. Account stitching resolves this limitation by looking up the account associated with the person on each event, adding the account ID both as the event is ingested and retroactively.
 
@@ -42,7 +42,86 @@ Without account stitching, any event that does not contain an account ID is drop
 Account stitching performs the following operations on your datasets:
 
 * **Elevate person identity**: The person ID on each event is elevated to the configured identity namespace using the identity graph.
-* **Add missing account information**: For events that contain a person ID, the [person-to-account mapping](#prerequisites) is used to derive and add the account information. Any account information on the event itself is used as a fallback method.
+* **Add missing account identities**: For events that contain a person ID, the [person-to-account mapping](#prerequisites) is used to derive and add the account identity. Any account identity on the event itself is used as a fallback method.
+
+## How B2B account stitching works
+
+
+
+In the following example, without B2B account stitching, the events that do not contain an account ID are not ingested in Customer Journey Analytics.
+
+### Base event dataset
+
+In Customer Journey Analytics B2B Edition, events with no account ID in this non-stitched example event dataset are ignored and not ingested (![DeleteOutline](/help/assets/icons/DeleteOutline.svg)).
+   
+| Action | Timestamp | Persistent ID | Account ID | Person ID | Event type |
+|:---:|--|---|---|---|---|
+| ![DataAdd](/help/assets/icons/DataAdd.svg)  | 1/3/25 | 12hsd123 | Adobe | matt@adobe.com | Page view |
+| ![FilterDelete](/help/assets/icons/DeleteOutline.svg) | 1/3/25 | f82jsd32 | |  |  |
+| ![DataAdd](/help/assets/icons/DataAdd.svg)  | 3/4/25 | hg2023m2 | Sky | cory@sky.com |  |
+| ![DataAdd](/help/assets/icons/DataAdd.svg)  | 3/7/25 | f82jsd32 | Sky | emily@sky.com | Call Center | 
+| ![FilterDelete](/help/assets/icons/DeleteOutline.svg)  | 5/5/25 | b978bbw9 | | carmen@adobe.com |  |
+| ![DataAdd](/help/assets/icons/DataAdd.svg)| 6/1/25 | fd9112gf | Ubiquity | cassidy@ubiquity.com | |
+| ![DataAdd](/help/assets/icons/DataAdd.svg) |6/2/25 | vc4512hk | ESPN | rob@gmail.com | |
+
+### Elevate person identity
+
++++ Details
+
+The event dataset is stitched using email as the namespace to elevate the person IDs. For example: **emily@sky.com**.
+   
+| Timestamp | Persistent ID | Account ID | Person ID | Event type |
+|---|---|---|---|---|
+| 1/3/25 | 12hsd123 | Adobe | matt@adobe.com | Page view |
+| 1/3/25 | f82jsd32 | | **emily@sky.com** |  |
+| 3/4/25 | hg2023m2 | Sky | cory@sky.com |  |
+| 3/7/25 | f82jsd32 | Sky | emily@sky.com | Call Center | 
+| 5/5/25 | b978bbw9 | | carmen@adobe.com |  |
+| 6/1/25 | fd9112gf | Ubiquity | cassidy@ubiquity.com | |
+| 6/2/25 | vc4512hk | ESPN | rob@gmail.com | |
+
++++
+
+### Add missing account identities
+
+To add missing account identities, you need to create a person to account mapping dataset. This mapping dataset is used to elevate the event data with account IDs.
+
+#### Map persons to accounts
+
++++ Details 
+
+A person to account dataset is provided as mapping dataset. In the example, email is used but you can use any identity for the mapping. 
+
+| Person ID | Account ID |
+|---|---|
+| matt@adobe.com | Adobe |
+| emily@sky.com | Sky |
+| cory@sky.com | Sky |
+| carmen@sky.com | Adobe |
+| cassidy@ubiquity.com | Ubiquity |
+| rob@gmail.com | ESPN |
+| ... | .... |
+
++++
+
+#### Stitch to account IDs
+
++++ Details
+
+The event dataset is stitched using email as the namespace to elevate the account IDs For example: **Sky** for emily@sky.com and **Adobe** for carmen@adobe.com.
+
+| Timestamp | Persistent ID | Account ID | Person ID | Event type |
+|---|---|---|---|---|
+| 1/3/25 | 12hsd123 | Adobe | matt@adobe.com | Page view |
+| 1/3/25 | f82jsd32 | **Sky** | emily@sky.com |  |
+| 3/4/25 | hg2023m2 | Sky | cory@sky.com |  |
+| 3/7/25 | f82jsd32 | Sky | emily@sky.com | Call Center | 
+| 5/5/25 | b978bbw9 | **Adobe** | carmen@adobe.com |  |
+| 6/1/25 | fd9112gf | Ubiquity | cassidy@ubiquity.com | |
+| 6/2/25 | vc4512hk | ESPN | rob@gmail.com | |
+
++++
+
 
 ## Prerequisites
 
@@ -58,7 +137,7 @@ Before you enable B2B account stitching, prepare the following datasets in Adobe
 
 ## Enable account stitching {#enable-account-stitching}
 
-You enable and configure B2B account stitching at the connection level, and then activate account stitching on individual event datasets within that connection.
+You first enable and configure B2B account stitching at the connection level. When B2B account stitching is configured for a connection, you can then activate account stitching on individual event datasets within that connection.
 
 ### Configure B2B stitching settings {#configure-b2b-stitching-settings}
 
@@ -103,6 +182,8 @@ You enable and configure B2B account stitching at the connection level, and then
 
 1. In **[!UICONTROL Connection settings]**, set the **[!UICONTROL Primary ID]** to ![Building](/help/assets/icons/Building.svg) **[!UICONTROL Account]**.
 
+1. Ensure you select the **[!UICONTROL Optional containers]** you want to use in your B2B connection. You cannot modify the selection of these containers once you have saved a B2B stitching configuration.
+
 1. Select **[!UICONTROL Open B2B stitching configuration]**.
 
    ![B2B saccount titching configuration](assets/b2b-account-stitching-configuration.png)
@@ -126,7 +207,7 @@ You enable and configure B2B account stitching at the connection level, and then
       | **[!UICONTROL Person to Account dataset]** | ![Required](/help/assets/icons/Required.svg) | Select the lookup (record or non-time series dataset) that maps persons to accounts. |
       | **[!UICONTROL Person ID]** | ![Required](/help/assets/icons/Required.svg) | Select the field in the dataset that contains the person ID. That field must be marked as an identity and cannot be the same as the **[!UICONTROL Account ID]** field or **[!UICONTROL Start time]** field. |
       | **[!UICONTROL Account ID]** | ![Required](/help/assets/icons/Required.svg) | Select the field in the dataset that contains the account ID. That field cannot be the same as the **[!UICONTROL Person ID]** field or **[!UICONTROL Start time]** field. |
-      | **Mapping creation time** | |Optionally, select the field that represents the date and time when person to account mapping got created. Useful for scenarios when a person switches multiple accounts over time.<br/><br/>**Example** (when **update_date** field is selected):<table><thead><tr><th>update_date</th><th>person</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>For all events with a timestamp in the **[!UICONTROL update_date]** field before May 1st, 2026: a@b.com is mapped to Apple.</li><li>For all events with a timestamp in the **[!UICONTROL update_date]** field on or after May 1st, 2026: a@b.com is mapped to Adobe.</li><ul> |
+      | **Mapping creation time** | |Optionally, select the field that represents the date and time when person to account mapping got created. Useful for scenarios when a person switches multiple accounts over time.<br/><br/>**Example** (when **update_date** field is selected):<table><thead><tr><th>update_date</th><th>person</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>For all events with a timestamp in the **[!UICONTROL update_date]** field before May 1st, 2026: a@b.com is mapped to Apple.</li><li>For all events with a timestamp in the **[!UICONTROL update_date]** field on or after May 1st, 2026: a@b.com is mapped to Adobe.</li></ul>When no mapping time is specified, the lexicographic first account is used for to map to. This same algorithm is also used when two different account names have the exact same **[!UICONTROL update_date]** value and a mapping creation time is specified. |
 
       >[!NOTE]
       >
@@ -187,7 +268,7 @@ After you have configured the B2B stitching configuration and have finished addi
 
 ## Data update schedule
 
-Account stitching derives the identity map from your [person-to-account dataset](#prerequisites) daily and uses this information to update datasets enabled for stitching on the following schedule:
+Account stitching derives the identity map from your [person-to-account dataset](#prerequisites) daily and uses this information to update datasets enabled for stitching both short- and long-term on the following schedule:
 
 | Replay | Frequency | Data window |
 |---|---|---|
