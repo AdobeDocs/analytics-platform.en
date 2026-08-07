@@ -252,7 +252,9 @@ In the **[!UICONTROL Channels]** section, you select the channels you want to en
 
 You can then configure the channel in more detail. That configuration is different depending on whether you enable and configure or edit a configuration for the [mobile](#mobile), [web](#web) or [paid media](#paid-media) channel.
 
-#### Mobile {#mobile}
+#### Mobile 
+
++++ Details
 
 <!-- For updated ACA -->
 
@@ -288,7 +290,7 @@ You can then configure the channel in more detail. That configuration is differe
 
 For the mobile channel, you can configure [experience capture and definition](#experience-capture-and-definition), [data collection](#data-collection), and [header overrides](#header-overrides).
 
-##### Experience capture and definition {#mobile-experience-capture-and-definition}
+### Experience capture and definition {#mobile-experience-capture-and-definition}
 
 In this section, you can select to include experiences in the mobile data you collect with Content Analytics.  For the mobile channel, an experience is what you have registered as an experience using the Adobe Experience Platform SDK for Content Analytics. 
 
@@ -296,7 +298,7 @@ By default, **[!UICONTROL Include experiences]** is disabled.
 
 Only consider to include experiences when you have instrumented your mobile app to register experiences and to track experience views and experience clicks.
 
-##### Data collection {#mobile-data-collection}
+### Data collection {#mobile-data-collection}
 
 The data collection settings allow you to define what data (experience locations, asset locations, asset URLs) you want to collect for Content Analytics. Ensure you do not collect any personally identifiable information as part of that data collection.
 
@@ -329,7 +331,7 @@ To configure data collection:
   Specify a **[!UICONTROL Regular expression string]** for **[!UICONTROL Asset URLs to exclude]**. <br/>For example: `^(?!.*(logo\.jpg)).*$` to exclude all asset URLs referring to logo JPEG images from Content Analytics.
 
 
-##### Header overrides {#mobile-header-overrides}
+### Header overrides {#mobile-header-overrides}
 
 <!-- needs modification for mobile channel -->
 
@@ -341,12 +343,15 @@ Optionally, you can specify in the **[!UICONTROL Header overrides]** section a h
 1. Enter the **[!UICONTROL Header name]**. For example, `x-asset-service`.
 1. Enter the **[!UICONTROL Header value]**. Whatever you specify is secret and not visible in the user interface (unless you explicitly select to disclose ![Visibility](/help/assets/icons/Visibility.svg) the value during input).
 
-##### Save {#mobile-save}
+### Save {#mobile-save}
 
 Once you have configured the mobile channel, select **[!UICONTROL Save]** to save the configuration. Select **[!UICONTROL Cancel]** to cancel the configuration.
 
++++
 
 #### Web {#web}
+
++++ Details
 
 For the web channel, you can configure [experience capture and definition](#experience-capture-and-definition-1), [data collection](#data-collection-1), and [header overrides](#header-overrides-1).
 
@@ -451,7 +456,7 @@ For the web channel, you can configure [experience capture and definition](#expe
 >abstract="Indicate which assets should be **included** or **excluded** when collecting data for Content Analytics. Ensure you exclude personally identifiable assets."
 
 
-##### Experience capture and definition {#web-experience-capture-and-definition}
+### Experience capture and definition {#web-experience-capture-and-definition}
 
 In this section, you can select to include experiences in the web data you collect with Content Analytics.  An experience consists of all text on a web page that is reproducible using the URL from the initial user visit. 
 
@@ -466,7 +471,7 @@ Only consider to include experiences when the following is applicable:
 >
 >Implement [Content Analytics versioning](manual.md#versioning) to collect changes that you make to the experiences (pages) subject to Content Analytics. 
 
-###### New configuration {#new-experiences-configuration}
+#### New configuration {#new-experiences-configuration}
 
 To include experiences in a new or not implemented configuration:
 
@@ -486,7 +491,7 @@ To include experiences in a new or not implemented configuration:
 1. Select **[!UICONTROL Add Regex]** if you want to add another combination of a regular expression and query parameters.
 
 
-###### Implemented configuration {#implemented-experiences-configuration}
+#### Implemented configuration {#implemented-experiences-configuration}
 
 To edit existing or include new experiences in an implemented configuration:
 
@@ -499,7 +504,7 @@ To edit existing or include new experiences in an implemented configuration:
    
 * Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** to edit the configuration of data collection for experiences in Content Analytics further. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) in the Tags property that is associated with the current configuration.
 
-##### Data collection {#web-data-collection}
+### Data collection {#web-data-collection}
 
 The data collection settings allow you to define what data (pages, assets) you want to collect for Content Analytics. Do not collect any personally identifiable information as part of that data collection.
 
@@ -530,7 +535,7 @@ To configure data collection:
   Specify a **[!UICONTROL Regular expression string]** for **[!UICONTROL Asset to include / exclude]**. <br/>For example: `^(?!.*(logo\.jpg)).*$` to exclude all logo JPEG images from Content Analytics.
 
 
-##### Header overrides {#web-header-overrides}
+### Header overrides {#web-header-overrides}
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_header_overrides_boldheader"
@@ -559,20 +564,25 @@ Optionally, you can specify in the **[!UICONTROL Header overrides]** section a h
 >abstract="Paid media requires Experience Platform source connectors for your ad publishers. No Google Ads or Meta Ads connectors are available in this sandbox. Configure one or more of these connectors in the **[!UICONTROL Experience Platform]** > **[!UICONTROL Sources]** interface and return to this step to continue the configuration of Content Analytics paid media."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/ads" text="Google Ads source"
 
-##### Save {#web-save}
+### Save {#web-save}
 
 After you have specified the details for the web channel, select **[!UICONTROL Save]** to save the configuration. Select **[!UICONTROL Cancel]** to cancel the configuration.
 
++++
 
 #### Paid media {#paid-media}
 
++++ Details
+
 For the paid media channel, you can configure [experience capture and definition](#experience-capture-and-definition), [data collection](#data-collection), and [header overrides](#header-overrides).
 
-##### Ad platforms {#paidmedia-adplatforms}
+### Ad platforms {#paidmedia-adplatforms}
 
-##### Data behavior {#paidmedia-databehavior}
+### Data behavior {#paidmedia-databehavior}
 
-##### Save {#paidmedia-save}
+### Save {#paidmedia-save}
+
++++
 
 ### Summary {#summary}
 
