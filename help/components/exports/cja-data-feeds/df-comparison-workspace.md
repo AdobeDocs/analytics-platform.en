@@ -9,7 +9,7 @@ hide: true
 
 {{release-limited-testing}}
 
-Data feed exports don't always match exactly that is exported from Customer Journey Analytics through a data feed will not usually match exactly with data displayed in Analysis Workspace. Use the following information to understand why:
+The data in a data feed export doesn't always match exactly with what you see in Analysis Workspace. Use the following information to understand why:
 
 | **Reason for difference** | **Data feeds** | **Analysis Workspace** |
 | --------- | ---------- | --------- |
