@@ -84,8 +84,8 @@ Consider the following when using consent filtering:
 
   | Marketing action | Description |
   |---------|----------|
-  | **[!UICONTROL Analytics]** | Standard Customer Journey Analytics reporting in Analysis Workspace. |
-  | **[!UICONTROL Data science]** | Advanced analytics, machine learning, and data science use cases. |
+  | **[!UICONTROL Analytics data]** | Standard Customer Journey Analytics reporting in Analysis Workspace. |
+  | **[!UICONTROL Data science data]** | Advanced analytics, machine learning, and data science use cases. |
 
 * A visitor's data is ingested only if the visitor matches **all** applicable consent policies. If a visitor is missing any applicable policy, that visitor's data is excluded.
 
