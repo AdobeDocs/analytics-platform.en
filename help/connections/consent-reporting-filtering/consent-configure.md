@@ -64,7 +64,11 @@ To create a consent reporting and filtering configuration:
 
 1. Select **[!UICONTROL Use data views]**.
 
-1. (Optional) In the **[!UICONTROL Filtering]** section, you can enable filtering for the following marketing actions:
+1. (Optional) In the **[!UICONTROL Filtering]** section, select [!UICONTROL **Enable filtering**] to filter consent data.
+
+   When filtering is enabled, Customer Journey Analytics ingests a visitor's data only if the visitor matches any consent policies that are enabled. For more information, see [Consent filtering](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering) in [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/consent-overview.md).
+
+1. (Optional) Enable filtering for the following marketing actions:
 
    >[!NOTE]
    >
@@ -72,8 +76,8 @@ To create a consent reporting and filtering configuration:
 
    | Marketing action | Description |
    |---------|----------|
-   | **[!UICONTROL Analytics]** | Filter data used for standard Customer Journey Analytics reporting in Analysis Workspace. |
-   | **[!UICONTROL Data science]** | Filter data used for advanced analytics, machine learning, and data science use cases. |
+   | **[!UICONTROL Analytics data]** | Filter data used for standard Customer Journey Analytics reporting in Analysis Workspace. |
+   | **[!UICONTROL Data science data]** | Filter data used for advanced analytics, machine learning, and data science use cases. |
 
 1. Select **[!UICONTROL Create]** to create the configuration.
 
