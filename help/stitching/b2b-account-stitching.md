@@ -97,10 +97,10 @@ Graph-based stitching is also used to elevate the person IDs in the experience e
 |  Timestamp | Persistent ID | Original Account ID | Original Person ID | Elevated Person ID |
 |--|--|---|---|---|
 | 1/3/25 | 1234 | Adobe | matt@adobe.com | matt@adobe.com |
-| 1/3/25 | 5678 |  | | **emily@adobe.com** | 
+| 1/3/25 | 5678 |  | | **emily@adobe.com** |
 | 3/4/25 | 9012 | Ubiquity | cory@sky.com | cory@sky.com |
 | 3/7/25 | 4321 | Sky | emily@sky.com | emily@sky.com |
-| 5/5/25 | 6106 | | carmen@adobe.com | carmen@adobe.com | 
+| 5/5/25 | 6106 | | carmen@adobe.com | carmen@adobe.com |
 | 6/1/25 | 8989 | Ubiquity | cassidy@ubiquity.com | cassidy@ubiquity.com |
 | 6/2/25 | 1111 |  | 111 | 111 |
 
