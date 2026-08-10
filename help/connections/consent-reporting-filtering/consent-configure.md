@@ -27,7 +27,43 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
 ---
-# Configure consent reporting and filtering
+# Configure consent reporting and filtering {#configure-consent-reporting}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-merge-policy"
+>title="Merge policy"
+>abstract="Merge policies combine profile data from multiple datasets into unified customer profiles used for audience creation. Select 'Default Timebased' if you see multiple merge policies and you are unsure which to choose. Or consult your data team to learn which audiences are associated with each merge policy."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-sandbox"
+>title="Sandbox"
+>abstract="Select the sandbox that contains the correct Experience Platform profile datasets. These datasets need to contain the consent data that you want to report on in Analysis Workspace."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-person-id"
+>title="Person ID"
+>abstract="Select a field from the model-based schema that represents the Person ID. The selection is limited to the list of fields in the schema that are marked as 'Identity' and do have an identity namespace."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-identity-namespace"
+>title="Use primary identity namespace"
+>abstract="Enable this option if you want Customer Journey Analytics to find the identity in the Identity Map that is marked with a primary=true attribute and uses that identity as the Person ID for that row. This identity is the primary key that is used in Experience Platform for partitioning. <br/>If you leave this option disabled, select a namespace from the Identity namespace field below. Customer Journey Analytics searches each row's Identity Map for this namespace key and uses the identity under that namespace as the Person ID for that row."
+
+<!-- markdownlint-enable MD034 -->
 
 System administrators can enable consent reporting and, optionally, consent filtering for one or more connections. For overview information, see [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/consent-overview.md).
 
