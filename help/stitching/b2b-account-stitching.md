@@ -94,7 +94,7 @@ That person-to-account mapping dataset is elevated using graph-based stitching. 
 
 Graph-based stitching is also used to elevate the person IDs in the experience event dataset. For example, see the updated value for **emily@adobe.com**.
 
-|  Timestamp | Persistent ID | Account ID | Person ID |
+|  Timestamp | Persistent ID | Account ID | Elevated Person ID |
 |--|--|---|---|
 | 1/3/25 | 1234 | Adobe | matt@adobe.com |
 | 1/3/25 | 5678 |  | **emily@adobe.com** | 
@@ -102,7 +102,7 @@ Graph-based stitching is also used to elevate the person IDs in the experience e
 | 3/7/25 | 4321 | Sky | emily@sky.com |
 | 5/5/25 | 6106 | | carmen@adobe.com | 
 | 6/1/25 | 8989 | Ubiquity | cassidy@ubiquity.com |
-| 6/2/25 | 1111 |  | |
+| 6/2/25 | 1111 |  | 111 |
 
 
 +++
