@@ -53,72 +53,78 @@ To illustrate how B2B account stitching works, the dataset shown below is used a
 In Customer Journey Analytics B2B Edition, events with no account ID in this non-stitched example event dataset are ignored and not ingested (![DeleteOutline](/help/assets/icons/DeleteOutline.svg)).
    
 | Action | Timestamp | Persistent ID | Account ID | Person ID | Event type |
-|:---:|--|---|---|---|---|
-| ![DataAdd](/help/assets/icons/DataAdd.svg)  | 1/3/25 | 12hsd123 | Adobe | matt@adobe.com | Page view |
-| ![FilterDelete](/help/assets/icons/DeleteOutline.svg) | 1/3/25 | f82jsd32 | |  |  |
-| ![DataAdd](/help/assets/icons/DataAdd.svg)  | 3/4/25 | hg2023m2 | Sky | cory@sky.com |  |
-| ![DataAdd](/help/assets/icons/DataAdd.svg)  | 3/7/25 | f82jsd32 | Sky | emily@sky.com | Call Center | 
-| ![FilterDelete](/help/assets/icons/DeleteOutline.svg)  | 5/5/25 | b978bbw9 | | carmen@adobe.com |  |
-| ![DataAdd](/help/assets/icons/DataAdd.svg)| 6/1/25 | fd9112gf | Ubiquity | cassidy@ubiquity.com | |
-| ![DataAdd](/help/assets/icons/DataAdd.svg) |6/2/25 | vc4512hk | ESPN | rob@gmail.com | |
+|:---:|--|--|---|---|---|
+| ![DataAdd](/help/assets/icons/DataAdd.svg)  | 1/3/25 | 1234 | Adobe | matt@adobe.com | Page view |
+| ![FilterDelete](/help/assets/icons/DeleteOutline.svg) | 1/3/25 | 5678 |  |  |
+| ![DataAdd](/help/assets/icons/DataAdd.svg)  | 3/4/25 |  9012 | Ubiquity | cory@sky.com |  |
+| ![DataAdd](/help/assets/icons/DataAdd.svg)  | 3/7/25 | 4321 | Sky | emily@sky.com | Call Center | 
+| ![FilterDelete](/help/assets/icons/DeleteOutline.svg)  | 5/5/25 | 6106 | | carmen@adobe.com |  |
+| ![DataAdd](/help/assets/icons/DataAdd.svg)| 6/1/25 | 8989 | Ubiquity | cassidy@ubiquity.com | |
+| ![FilterDelete](/help/assets/icons/DeleteOutline.svg)  | 6/2/25 | 1111 |  | | |
 
-### Elevate person identity
+B2B account stitching prevent the events from being ignored and not ingested using the following operations:
+
+* Elevate person identies.
+* Add missing account identies.
+
+
+### Elevate person identities
 
 +++ Details
 
-The event dataset is stitched using email as the namespace to elevate the person IDs. For example: **emily@sky.com**.
-   
-| Timestamp | Persistent ID | Account ID | Person ID | Event type |
-|---|---|---|---|---|
-| 1/3/25 | 12hsd123 | Adobe | matt@adobe.com | Page view |
-| 1/3/25 | f82jsd32 | | **emily@sky.com** |  |
-| 3/4/25 | hg2023m2 | Sky | cory@sky.com |  |
-| 3/7/25 | f82jsd32 | Sky | emily@sky.com | Call Center | 
-| 5/5/25 | b978bbw9 | | carmen@adobe.com |  |
-| 6/1/25 | fd9112gf | Ubiquity | cassidy@ubiquity.com | |
-| 6/2/25 | vc4512hk | ESPN | rob@gmail.com | |
+To support B2B account stitching, you provide a person-to-account mapping dataset. For example:
 
-+++
-
-### Add missing account identities
-
-To add missing account identities, you need to create a person to account mapping dataset. This mapping dataset is used to elevate the event data with account IDs.
-
-#### Map persons to accounts
-
-+++ Details 
-
-A person to account dataset is provided as mapping dataset. In the example, email is used but you can use any identity for the mapping. 
-
-| Person ID | Account ID |
+| CRM ID | Account ID |
 |---|---|
-| matt@adobe.com | Adobe |
-| emily@sky.com | Sky |
-| cory@sky.com | Sky |
-| carmen@sky.com | Adobe |
-| cassidy@ubiquity.com | Ubiquity |
-| rob@gmail.com | ESPN |
-| ... | .... |
+| 12hsd123 | Adobe |
+| f82jsd32 | Sky |
+| hg2023m2 | Sky |
+| b978bbw9 | Ubiquity |
+| fs453ghi | Adobe |
+
+That person-to-account mapping dataset is elevated using graph-based stitching. For example, you provide email as the namespace to use. The result is an updated person-to-account mapping dataset with elevated person IDs.
+
+| CRM ID | Elevated Person ID | Account ID |
+|---|---|---|
+| 12hsd123 | matt@adobe.com | Adobe |
+| f82jsd32 | emily@sky.com | Sky |
+| hg2023m2 | cory@sky.com | Sky |
+| b978bbw9 | cassidy@ubiquity.com | Ubiquity |
+| fs453ghi | carmen@adobe.com | Adobe |
+
+Graph-based stitching is also used to elevate the person IDs in the experience event dataset. For example, see the updated value for **emily@adobe.com**.
+
+|  Timestamp | Persistent ID | Account ID | Person ID |
+|--|--|---|---|
+| 1/3/25 | 1234 | Adobe | matt@adobe.com |
+| 1/3/25 | 5678 |  | **emily@adobe.com** | 
+| 3/4/25 | 9012 | Ubiquity | cory@sky.com |
+| 3/7/25 | 4321 | Sky | emily@sky.com |
+| 5/5/25 | 6106 | | carmen@adobe.com | 
+| 6/1/25 | 8989 | Ubiquity | cassidy@ubiquity.com |
+| 6/2/25 | 1111 |  | |
+
 
 +++
 
-#### Stitch to account IDs
+### Add missing account identitiers
 
 +++ Details
 
-The event dataset is stitched using email as the namespace to elevate the account IDs For example: **Sky** for emily@sky.com and **Adobe** for carmen@adobe.com.
-
-| Timestamp | Persistent ID | Account ID | Person ID | Event type |
-|---|---|---|---|---|
-| 1/3/25 | 12hsd123 | Adobe | matt@adobe.com | Page view |
-| 1/3/25 | f82jsd32 | **Sky** | emily@sky.com |  |
-| 3/4/25 | hg2023m2 | Sky | cory@sky.com |  |
-| 3/7/25 | f82jsd32 | Sky | emily@sky.com | Call Center | 
-| 5/5/25 | b978bbw9 | **Adobe** | carmen@adobe.com |  |
-| 6/1/25 | fd9112gf | Ubiquity | cassidy@ubiquity.com | |
-| 6/2/25 | vc4512hk | ESPN | rob@gmail.com | |
+The person-to-account dataset is once more used to elevate the account IDs in the experience event dataset. For example, see the added value **Sky** for emily@sky.com and **Adobe** for carmen@adobe.com. And the updated value **Sky** (from Ubiquity) for cory@sky.com.
+   
+| Timestamp | Persistent ID | Elevated Account ID | Elevated Person ID |
+|---|---|---|---|
+| 1/3/25 | 1234 | Adobe | matt@adobe.com |
+| 1/3/25 | 5678 | **Sky** | emily@sky.com |
+| 3/4/25 | 9012 | **Sky** | cory@sky.com |
+| 3/7/25 | 4321 | Sky | emily@sky.com |
+| 5/5/25 | 6106 | **Adobe** | carmen@adobe.com |
+| 6/1/25 | 8989 | Ubiquity | cassidy@ubiquity.com |
+| 6/2/25 | 1111 |  | 1111 |
 
 +++
+
 
 
 ## Prerequisites
