@@ -55,9 +55,9 @@ In Customer Journey Analytics B2B Edition, events with no account ID in this non
 | Action | Timestamp | Persistent ID | Account ID | Person ID | Event type |
 |:---:|--|--|---|---|---|
 | ![DataAdd](/help/assets/icons/DataAdd.svg)  | 1/3/25 | 1234 | Adobe | matt@adobe.com | Page view |
-| ![FilterDelete](/help/assets/icons/DeleteOutline.svg) | 1/3/25 | 5678 |  |  |
+| ![FilterDelete](/help/assets/icons/DeleteOutline.svg) | 1/3/25 | 5678 |  | | |
 | ![DataAdd](/help/assets/icons/DataAdd.svg)  | 3/4/25 |  9012 | Ubiquity | cory@sky.com |  |
-| ![DataAdd](/help/assets/icons/DataAdd.svg)  | 3/7/25 | 4321 | Sky | emily@sky.com | Call Center | 
+| ![DataAdd](/help/assets/icons/DataAdd.svg)  | 3/7/25 | 4321 | Sky | emily@sky.com | Call Center |
 | ![FilterDelete](/help/assets/icons/DeleteOutline.svg)  | 5/5/25 | 6106 | | carmen@adobe.com |  |
 | ![DataAdd](/help/assets/icons/DataAdd.svg)| 6/1/25 | 8989 | Ubiquity | cassidy@ubiquity.com | |
 | ![FilterDelete](/help/assets/icons/DeleteOutline.svg)  | 6/2/25 | 1111 |  | | |
