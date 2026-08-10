@@ -94,15 +94,15 @@ That person-to-account mapping dataset is elevated using graph-based stitching. 
 
 Graph-based stitching is also used to elevate the person IDs in the experience event dataset. For example, see the updated value for **emily@adobe.com**.
 
-|  Timestamp | Persistent ID | Account ID | Elevated Person ID |
-|--|--|---|---|
-| 1/3/25 | 1234 | Adobe | matt@adobe.com |
-| 1/3/25 | 5678 |  | **emily@adobe.com** | 
-| 3/4/25 | 9012 | Ubiquity | cory@sky.com |
-| 3/7/25 | 4321 | Sky | emily@sky.com |
-| 5/5/25 | 6106 | | carmen@adobe.com | 
-| 6/1/25 | 8989 | Ubiquity | cassidy@ubiquity.com |
-| 6/2/25 | 1111 |  | 111 |
+|  Timestamp | Persistent ID | Original Account ID | Original Person ID | Elevated Person ID |
+|--|--|---|---|---|
+| 1/3/25 | 1234 | Adobe | matt@adobe.com | matt@adobe.com |
+| 1/3/25 | 5678 |  | | **emily@adobe.com** | 
+| 3/4/25 | 9012 | Ubiquity | cory@sky.com | cory@sky.com |
+| 3/7/25 | 4321 | Sky | emily@sky.com | emily@sky.com |
+| 5/5/25 | 6106 | | carmen@adobe.com | carmen@adobe.com | 
+| 6/1/25 | 8989 | Ubiquity | cassidy@ubiquity.com | cassidy@ubiquity.com |
+| 6/2/25 | 1111 |  | 111 | 111 |
 
 
 +++
@@ -113,18 +113,21 @@ Graph-based stitching is also used to elevate the person IDs in the experience e
 
 The person-to-account dataset is once more used to elevate the account IDs in the experience event dataset. For example, see the added value **Sky** for emily@sky.com and **Adobe** for carmen@adobe.com. And the updated value **Sky** (from Ubiquity) for cory@sky.com.
    
-| Timestamp | Persistent ID | Elevated Account ID | Elevated Person ID |
-|---|---|---|---|
-| 1/3/25 | 1234 | Adobe | matt@adobe.com |
-| 1/3/25 | 5678 | **Sky** | emily@sky.com |
-| 3/4/25 | 9012 | **Sky** | cory@sky.com |
-| 3/7/25 | 4321 | Sky | emily@sky.com |
-| 5/5/25 | 6106 | **Adobe** | carmen@adobe.com |
-| 6/1/25 | 8989 | Ubiquity | cassidy@ubiquity.com |
-| 6/2/25 | 1111 |  | 1111 |
+| Timestamp | Persistent ID | Original Account ID |  Original Person ID | Elevated Account ID | Elevated Person ID |
+|---|---|---|---|---|---|
+| 1/3/25 | 1234 |  Adobe | matt@adobe.com | Adobe | matt@adobe.com |
+| 1/3/25 | 5678 | | | **Sky** | **emily@sky.com** |
+| 3/4/25 | 9012 | Ubiquity |  cory@sky.com | **Sky** | cory@sky.com |
+| 3/7/25 | 4321 | Sky | emily@sky.com | Sky |  emily@sky.com |
+| 5/5/25 | 6106 | | carmen@adobe.com | **Adobe** |  carmen@adobe.com |
+| 6/1/25 | 8989 | Ubiquity | cassidy@ubiquity.com | Ubiquity |  cassidy@ubiquity.com |
+| 6/2/25 | 1111 |  | 1111 |  | 1111 |
 
 +++
 
+### Result
+
+This example shows how B2B account stitching updates your experience event data with missing person identifiers and missing and incorrect account identifiers, based on the person-to-account mapping dataset provided as input.
 
 
 ## Prerequisites
