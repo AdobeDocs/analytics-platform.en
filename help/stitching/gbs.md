@@ -35,12 +35,10 @@ In graph-based stitching, you specify an event dataset, the persistent ID (cooki
 
 ![Identity Service](assets/uis-gbs.png){zoomable="yes"}
 
-
 >[!NOTE]
 >
 >The [Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) is a core Experience Platform service that does not require additional licensing. See [Understanding the role of Identity Service within the Experience Platform infrastructure](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure) for more information.
 >
-
 
 If the person ID info cannot be retrieved for an event, the persistent ID is used instead for that *unstitched* event. As a result, in a [data view](/help/data-views/data-views.md) that is associated with a [connection](/help/connections/overview.md) that contains the dataset enabled for stitching, the person ID data view component contains either the person ID value or persistent ID value at the event level.
 
