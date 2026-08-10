@@ -64,8 +64,8 @@ In Customer Journey Analytics B2B Edition, events with no account ID in this non
 
 B2B account stitching prevent the events from being ignored and not ingested using the following operations:
 
-* Elevate person identies.
-* Add missing account identies.
+* [Elevate person identities](#elevate-person-identities).
+* [Add missing account identities](#add-missing-account-identitiers).
 
 
 ### Elevate person identities
@@ -127,7 +127,7 @@ The person-to-account dataset is once more used to elevate the account IDs in th
 
 ### Result
 
-This example shows how B2B account stitching updates your experience event data with missing person identifiers and missing and incorrect account identifiers, based on the person-to-account mapping dataset provided as input.
+This example shows how B2B account stitching updates your experience event data with missing person identifiers and missing and incorrect account identifiers, based on the person-to-account mapping dataset you have provided as input.
 
 
 ## Prerequisites
