@@ -179,7 +179,7 @@ Each step provides a high-level explanation of a more detailed process. Follow t
    
    Use [the marketing channels function template](/help/data-views/derived-fields/derived-fields.md#marketing-channels){target="_blank"} in derived fields to quickly create a derived field for marketing channels.
 
-1. Compare data in Adobe Analytics from your old implementation to data in Customer Journey Analytics from your new implementation and make sure you understand any differences and why they exist. <!-- Expound on this. Link to somewhere? There will be a lot of differences. -->
+1. [Compare data in Adobe Analytics from your old implementation to data in Customer Journey Analytics from your new implementation](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/coworker/data-validation-aa-cja) and make sure you understand any differences and why they exist. 
 
 1. Bring historical data from Adobe Analytics using the Analytics source connector: 
 
