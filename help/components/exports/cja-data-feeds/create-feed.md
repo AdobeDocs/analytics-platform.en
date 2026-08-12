@@ -92,7 +92,9 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 1. Select [!UICONTROL **Customer Journey Analytics**] from the app switcher ![App](/help/assets/icons/Apps.svg) at the top right of the interface.
 
-1. In the top navigation bar, go to [!UICONTROL **Components**] > [!UICONTROL **Data feeds**].
+1. In the top navigation bar, go to [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+
+1. Select the [!UICONTROL **Data feeds**] tab.
 
 1. Select [!UICONTROL **Create**] in the upper-right corner of the screen.
 
@@ -119,7 +121,7 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 1. In the [!UICONTROL **Segments**] drop-down menu, search for and select any segments to filter the data included in your feed. 
 
-   When you apply multiple segments, they are joined together with an AND operator. (To join segments with an OR operator, you must first create a new segment in the segment builder, then apply the new segment to the data feed.)
+   When you apply multiple segments, they are joined together with an AND operator. To join segments with an OR operator, you must first create a new segment in the segment builder, then apply the new segment to the data feed.
 
 1. Add components to the data feed configuration. The left rail shows only components that are valid for data feeds. 
 
