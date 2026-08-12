@@ -558,11 +558,7 @@ Optionally, you can specify in the **[!UICONTROL Header overrides]** section a h
 1. Enter the **[!UICONTROL Header value]**. Whatever you specify is secret and not visible in the user interface (unless you explicitly select to disclose ![Visibility](/help/assets/icons/Visibility.svg) the value during input).
 
 
->[!CONTEXTUALHELP]
->id="aca_onboarding_paidmedia_adplatforms_nosourceconnectors"
->title="No source connectors"
->abstract="Paid media requires Experience Platform source connectors for your ad publishers. No Google Ads or Meta Ads connectors are available in this sandbox. Configure one or more of these connectors in the **[!UICONTROL Experience Platform]** > **[!UICONTROL Sources]** interface and return to this step to continue the configuration of Content Analytics paid media."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/ads" text="Google Ads source"
+
 
 ### Save {#web-save}
 
@@ -572,11 +568,21 @@ After you have specified the details for the web channel, select **[!UICONTROL S
 
 #### Paid media {#paid-media}
 
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_paidmedia_adplatforms_nosourceconnectors"
+>title="No source connectors"
+>abstract="Paid media requires Experience Platform source connectors for your ad publishers. No Google Ads or Meta Ads connectors are available in this sandbox. Configure one or more of these connectors in the **[!UICONTROL Experience Platform]** > **[!UICONTROL Sources]** interface and return to this step to continue the configuration of Content Analytics paid media."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/ads" text="Google Ads source"
+
 +++ Details
 
-For the paid media channel, you can configure [experience capture and definition](#experience-capture-and-definition), [data collection](#data-collection), and [header overrides](#header-overrides).
+For the paid media channel, you can configure [Ad platforms](#paidmedia-databehavior)
 
 ### Ad platforms {#paidmedia-adplatforms}
+
+Paid media requires Experience Platform source connectors for your ad publishers. All the supported ad platforms that are connected in this sandbox are automatically included and shown. If you do not see any ad platform, use ![Refresh](/help/assets/icons/Refresh.svg) **[!UICONTROL Refresh]** to update the list or select **[!UICONTROL Go to AEP Sources]** to Sources in Experience Platform and 
+ No Google Ads or Meta Ads connectors are available in this sandbox. Configure one or more of these connectors in the Experience Platform > Sources interface and return to this step to continue the configuration of Content Analytics paid media.
+
 
 ### Data behavior {#paidmedia-databehavior}
 
