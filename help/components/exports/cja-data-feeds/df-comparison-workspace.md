@@ -5,7 +5,7 @@ title: Compare Data Feeds Functionality in Customer Journey Analytics and Adobe 
 feature: Components
 hide: true
 ---
-# Understand data descrepancies between data feeds and Analysis Workspace
+# Understand data discrepancies between data feeds and Analysis Workspace
 
 {{release-limited-testing}}
 
@@ -24,9 +24,9 @@ The lookback date range in data feeds determines how far back Customer Journey A
 
 **Example**
 
-The example below illustrates how differences between the reporting date range and lookback date range can result in data descrepancies between Workspace reports and data feed deliveries. 
+The example below illustrates how differences between the reporting date range and lookback date range can result in data discrepancies between Workspace reports and data feed deliveries. 
 
-Event A occurred 85 days ago and sits on a dimension with a 90-day persistence setting (e.g. a campaign-click attribution window). The event is included in the Analysis Workspace report and not in the data feed delivery.
+Event A occurred 85 days ago and sits on a dimension with a 90-day persistence setting (for example, a campaign-click attribution window). The event is included in the Analysis Workspace report and not in the data feed delivery.
 
 ![Data differences between workspace and data feeds](assets/data-feed-data-differences.png)
 
@@ -57,11 +57,11 @@ Data feeds and Analysis Workspace function differently regarding past events, as
 
 ## Data batching
 
-Data that is submitted in a batch that spans an extended time period.
+Sometimes data is submitted in a batch that spans an extended time period.
 
-| **Reason for difference** | **Data feeds** | **Analysis Workspace** |
-| --------- | ---------- | --------- |
-| **Stitching replays**<br/>Each time a stitching replay runs, historical identity data is retroactively updated. | Reflects stitched identity at the time of export only. Replay results are not applied retroactively to exported files. | Displays the most current stitched data, updated retroactively each time a replay runs. Historical data changes after each replay, so Workspace always reflects the latest identity resolution. |
-| **Late-arriving events**<br/>Events that arrive after the data feed export window closes. | Exports data within a fixed time window based on when events are received. <p>Events that arrive after the window closes might not be included in the export. This is influenced by the lookback window you choose.</p> | Processes data at report time, so events are included in reports regardless of when they were received. |
-| **Data batching**<br/>Data that is submitted in a batch that spans an extended time period. | Distributes batched data across each day or hour based on the original timestamps. For example, a batch containing 30 days of data is spread over 30 days of exports, so only a small slice appears in any single export. | Displays all data in a batch as soon as it is fully processed, regardless of the time range included in the batch. |
+Data feeds and Analysis Workspace function differently regarding batched data, as follows:
+
+* **Data feeds**: Distributes batched data across each day or hour based on the original timestamps. For example, a batch containing 30 days of data is spread over 30 days of exports, so only a small slice appears in any single export.
+
+* **Analysis Workspace**: Displays all data in a batch as soon as it is fully processed, regardless of the time range included in the batch.
 
