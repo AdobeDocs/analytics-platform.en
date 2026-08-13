@@ -97,7 +97,16 @@ To add a component:
    * You can use the ![Search](/help/assets/icons/Search.svg) in the components bar to search for specific components.
    * You can use ![Filter](/help/assets/icons/Filter.svg) in the components bar to filter on ![Checkmark](/help/assets/icons/Checkmark.svg) **[!UICONTROL Approved]**, ![Star](/help/assets/icons/Star.svg) **[!UICONTROL Favorites]**, ![DataDimension](/help/assets/icons2/DataDimension.svg) **[!UICONTROL Dimensions]**, ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Metrics]**, ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]**, ![Calendar](/help/assets/icons/Calendar.svg) **[!UICONTROL Date ranges]**, and ![Layer](/help/assets/icons/Layer.svg) **[!UICONTROL *container*]** components (like Products, Content Assets). You can also filter on ![Label](/help/assets/icons/Label.svg)  tags.
 1. Specify details for the component. For example, select a value from **[!UICONTROL Select value]**. Or enter a value. What and how you can specify one or more values depends on the component and the operator.
-1. Optionally modify the default operator. For example, from **[!UICONTROL equals]** to **[!UICONTROL equals any of]**. See [Operators](seg-operators.md) for a detailed overview of the available operators.
+
+1. (Conditional) When building a segment, if you select [!UICONTROL **Person**] as the scope (container), the option is available to [!UICONTROL **Limit results to the reporting date range**]. 
+
+   Data in a Workspace report can extend beyond the reporting window when a segment includes date range components. 
+
+   This option allows you to limit results to the reporting window regardless of any date components included in the segment. This option is available when creating or modifying a segment whose top-level container is Person. 
+
+1. (Optional) Modify the default operator. 
+
+   For example, from **[!UICONTROL equals]** to **[!UICONTROL equals any of]**. See [Operators](seg-operators.md) for a detailed overview of the available operators.
 
 To edit a component:
 
