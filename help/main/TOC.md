@@ -417,6 +417,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + Data feeds {#cja-data-feeds}
       + {hide-from-toc} [Data feed overview](/help/components/exports/cja-data-feeds/data-feed-overview.md)
       + {hide-from-toc} [Compare Adobe Analytics data feeds](/help/components/exports/cja-data-feeds/df-comparison.md)
+      + {hide-from-toc} [Compare Workspace and data feeds](/help/components/exports/cja-data-feeds/df-comparison-workspace.md)
       + {hide-from-toc} [Prepare to map columns](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc} [Map columns](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc} [Create a data feed](/help/components/exports/cja-data-feeds/create-feed.md)
