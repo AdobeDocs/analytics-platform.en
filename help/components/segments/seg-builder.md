@@ -96,13 +96,18 @@ To add a component:
 1. Drag and drop a component from the components panel onto **[!UICONTROL Drag and drop Metric(s), Segment(s), and/or Dimensions here]**. 
    * You can use the ![Search](/help/assets/icons/Search.svg) in the components bar to search for specific components.
    * You can use ![Filter](/help/assets/icons/Filter.svg) in the components bar to filter on ![Checkmark](/help/assets/icons/Checkmark.svg) **[!UICONTROL Approved]**, ![Star](/help/assets/icons/Star.svg) **[!UICONTROL Favorites]**, ![DataDimension](/help/assets/icons2/DataDimension.svg) **[!UICONTROL Dimensions]**, ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Metrics]**, ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segments]**, ![Calendar](/help/assets/icons/Calendar.svg) **[!UICONTROL Date ranges]**, and ![Layer](/help/assets/icons/Layer.svg) **[!UICONTROL *container*]** components (like Products, Content Assets). You can also filter on ![Label](/help/assets/icons/Label.svg)  tags.
+
 1. Specify details for the component. For example, select a value from **[!UICONTROL Select value]**. Or enter a value. What and how you can specify one or more values depends on the component and the operator.
 
-1. (Conditional) When building a segment, if you select [!UICONTROL **Person**] as the scope (container), the option is available to [!UICONTROL **Limit results to the reporting date range**]. 
+1. (Optional) Enable the option to [!UICONTROL **Limit results to the reporting date range**].
 
-   Data in a Workspace report can extend beyond the reporting window when a segment includes date range components. 
+   Data in a Workspace report can extend beyond the reporting date range if your segment includes date range components. 
+   
+   Enable this option to limit results to the reporting date range regardless of any date components included in the segment.
+   
+   This option displays only when [!UICONTROL **Person**] is selected as the scope (container) of your definition from the **[!UICONTROL Include]** or **[!UICONTROL Exclude]** drop-down menu.
 
-   This option allows you to limit results to the reporting window regardless of any date components included in the segment. This option is available when creating or modifying a segment whose top-level container is Person. 
+   **NOTE**: This functionality is in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
 
 1. (Optional) Modify the default operator. 
 
