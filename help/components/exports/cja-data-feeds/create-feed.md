@@ -56,7 +56,7 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_notify"
->title="Notify when complete"
+>title="Notify by email when complete"
 >abstract="Specify one or more email addresses where a notification should be delivered after the data feed is sent. Multiple email addresses must be separated with a comma."
 
 <!-- markdownlint-enable MD034 -->
@@ -326,7 +326,7 @@ Before you create a data feed, it's important to have a basic understanding of d
    | [!UICONTROL **View destinations for all users**] | If you are a system administrator, you can enable this option to view destinations created by all users in your organization. When this option is disabled, only destinations you created are displayed. |
    | [!UICONTROL **Account**] | Do either of the following:<ul><li>**Use an existing account:** Select the drop-down menu next to the **[!UICONTROL Account]** field. Or, begin typing the account name, then select it from the drop-down menu. <p>Accounts are available to you only if you configured them or if they are shared with an organization you are a part of.</p></li><li>**Create a new account:** Select **[!UICONTROL Add account]** within the **[!UICONTROL Account]** drop-down menu. For information about how to configure the account, see [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md).</li></ul> |
    | [!UICONTROL **Location**] | Do either of the following:<ul><li>**Use an existing location:** Select the drop-down menu next to the **[!UICONTROL Location]** field. Or, begin typing the location name, then select it from the drop-down menu.</li><li>**Create a new location:** Select **[!UICONTROL Add location]** within the **[!UICONTROL Location]** drop-down menu. For information about how to configure the location, see [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).</li></ul> |
-   | [!UICONTROL **Notify when complete**] | Specify one or more email addresses where a notification should be delivered after the data feed is successfully sent or fails to send. Multiple email addresses must be separated with a comma.  |
+   | [!UICONTROL **Notify by email when complete**] | Specify one or more email addresses where a notification should be delivered after the data feed is successfully sent or fails to send. Multiple email addresses must be separated with a comma.  |
    | [!UICONTROL **Enable manifest**] | Choose whether to include a manifest file with each data feed delivery. The manifest file contains information for each file included in the data feed. |
        
 1. Select **[!UICONTROL Save]**.    
