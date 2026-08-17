@@ -56,8 +56,8 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_notify"
->title="Notify by email when complete"
->abstract="Specify one or more email addresses where a notification should be delivered after the data feed is sent. Multiple email addresses must be separated with a comma."
+>title="Notify of issues, when complete, and when expiring"
+>abstract="Specify one or more email addresses where a notification should be delivered after the data feed is complete. Separate multiple email addresses with a comma. Notifications are also sent when data feeds are expiring or if they encounter issues."
 
 <!-- markdownlint-enable MD034 -->
 
