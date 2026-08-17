@@ -634,8 +634,8 @@ The following templates are available:
 
 >[!CONTEXTUALHELP]
 >id="template--consentpolicyoverview"
->title="View the country from which people visiting the site originated."
->abstract="**This can help you** better understand what the most popular countries visitors originate from who visit your site.<br/>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts in these countries, or make sure that your site experience is optimal in countries that have different primary languages.<br/>This template uses the Countries dimension."
+>title="View visitors based on consent policy membership data from Adobe Experience Platform."
+>abstract="**This can help you** as a starting point for reporting on visitor consent policy membership. When a data view is configured for consent reporting, Customer Journey Analytics automatically makes a consent policy analysis template available in Analysis Workspace. <br/>**Based on what you learn, you might** do any number of things, like exclude non-consenting visitors from analytics reporting."
 
 >[!CONTEXTUALHELP]
 >id="template--countrygeoreport"
