@@ -280,7 +280,7 @@ Account stitching derives the identity map from your [person-to-account dataset]
 | Replay | Frequency | Data window |
 |---|---|---|
 | Short-term  | Weekly | Last 7 days |
-| Long-term  | Monthly | Last 3 months |
+| Long-term  | Monthly | Last 3 months (Prime package)<br/>Last 6 months (Ultimate package) |
 
 ## Privacy and data hygiene
 
