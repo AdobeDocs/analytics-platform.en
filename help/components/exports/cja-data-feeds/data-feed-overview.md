@@ -47,6 +47,8 @@ To get started using data feeds in Customer Journey Analytics, first understand 
 
 1. [Understand the differences between data feeds in Customer Journey Analytics and Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md).
 
+1. [Understand data discrepancies between data feeds and Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md).
+
 1. [Map Adobe Analytics data feed columns to Customer Journey Analytics](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md).
 
 1. [Create a data feed](/help/components/exports/cja-data-feeds/create-feed.md).
