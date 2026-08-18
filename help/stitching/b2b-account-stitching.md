@@ -53,7 +53,7 @@ To illustrate how B2B account stitching works, the dataset shown below is used a
 In Customer Journey Analytics B2B Edition, events with no account ID in this non-stitched example event dataset are ignored and not ingested (![DeleteOutline](/help/assets/icons/DeleteOutline.svg)).
    
 | Action | Timestamp | Persistent ID | Account ID | Person ID | Event type |
-|:---:|--|--|---|---|---|
+|:---:|--:|--|---|---|---|
 | ![DataAdd](/help/assets/icons/DataAdd.svg)  | 1/3/25 | 1234 | Adobe | matt@adobe.com | Page view |
 | ![FilterDelete](/help/assets/icons/DeleteOutline.svg) | 1/3/25 | 5678 |  | | |
 | ![DataAdd](/help/assets/icons/DataAdd.svg)  | 3/4/25 |  9012 | Ubiquity | cory@sky.com |  |
