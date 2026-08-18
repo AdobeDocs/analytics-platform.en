@@ -13,7 +13,9 @@ The data in a data feed export doesn't always match exactly with the data you se
 
 ## Lookback date range (Data feeds) vs. Reporting date range (Analysis Workspace)
 
-The lookback date range in data feeds determines how far back Customer Journey Analytics looks when finding events that qualify for a data feed delivery. In that sense, the lookback date range is similar to the reporting date range in Analysis Workspace. However, there are key differences.
+The lookback date range in data feeds determines how far back Customer Journey Analytics looks when finding events that qualify for a data feed delivery. For details about the lookback date range, including examples, see [Understand the lookback date range](/help/components/exports/cja-data-feeds/create-feed.md#understand-the-lookback-date-range).
+
+In that sense, the lookback date range is similar to the reporting date range in Analysis Workspace. However, there are key differences.
 
 | Key differences | Reporting date range (Analysis Workspace) | Lookback date range (Data feeds) |
 |---------|---------|----------|
