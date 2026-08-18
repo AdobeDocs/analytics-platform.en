@@ -65,8 +65,13 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 |---|---|
+| **August 2026** | |
+| Clarified information about refreshing audiences | When [publishing audiences](/help/components/audiences/publish.md#audience-builder), clarified that the number of audiences that can be scheduled to refresh depends on your Customer Journey Analytics entitlement, and is between 75 and 150. |
 | **July 2026** | |
-| Inline classifications | Documenttion for [inline classifications](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications). |
+| Brand Visibility inbound integration | Documentation for the [Brand Visibility inbound integration](/help/integrations/bv.md#inbound-integration). |
+| Usage interface | Updates to the [Usage interface](/help/connections/manage-connections.md#usage) documentation for Connections. |
+| Sub-event analysis | Documentation for [sub-event analysis](/help/components/segments/sub-event.md) and [custom containers](/help/data-views/create-dataview.md#custom-containers). |
+| Inline classifications | Documentation for [inline classifications](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications). |
 | **June 2026** | |
 | New GA4 guide | Added [Transitioning from Google Analytics 4 to Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home). |
 | **May 2026** | |

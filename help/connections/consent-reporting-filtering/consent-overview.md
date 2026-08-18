@@ -4,7 +4,7 @@ description: Learn how to report on visitor consent policy membership and filter
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hold: true
+hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -84,8 +84,8 @@ Consider the following when using consent filtering:
 
   | Marketing action | Description |
   |---------|----------|
-  | **[!UICONTROL Analytics]** | Standard Customer Journey Analytics reporting in Analysis Workspace. |
-  | **[!UICONTROL Data science]** | Advanced analytics, machine learning, and data science use cases. |
+  | **[!UICONTROL Analytics data]** | Standard Customer Journey Analytics reporting in Analysis Workspace. |
+  | **[!UICONTROL Data science data]** | Advanced analytics, machine learning, and data science use cases. |
 
 * A visitor's data is ingested only if the visitor matches **all** applicable consent policies. If a visitor is missing any applicable policy, that visitor's data is excluded.
 

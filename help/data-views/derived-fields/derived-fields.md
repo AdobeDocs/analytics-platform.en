@@ -1792,6 +1792,10 @@ You create a `Second Response` derived field to take the last value  from the [!
 
 {style="table-layout:auto"}
 
+## Custom container
+
+The derived field becomes available as a [custom container](/help/data-views/create-dataview.md#containers-1) you can select in your data view and use for [sub-event analysis](/help/components/segments/sub-event.md) in a workspace project.
+
 +++
 
 <!-- SUMMARIZE -->
