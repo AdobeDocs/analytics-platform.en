@@ -34,6 +34,6 @@ hide: true
 
 >[!CONTEXTUALHELP]
 >id="conversation-insights_config_dataview"
->title="Connection"
+>title="Data view
 >abstract="Select the data view associated with your connection that you want to use for Conversation Insights analysis. Conversation Insights metrics and dimensions will be added to the data view you select."
 
