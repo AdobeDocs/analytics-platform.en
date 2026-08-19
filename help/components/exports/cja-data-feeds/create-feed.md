@@ -340,53 +340,18 @@ Before you create a data feed, it's important to have a basic understanding of d
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_lookback_date_range"
 >title="Lookback date range"
->abstract="Controls how far back Customer Journey Analytics looks when processing the data feed delivery. This setting is similar to the Analysis Workspace reporting date range, but with important differences:<ul><li>Events are included in the data feed if they have timestamps that fall within the frequency window, not within the lookback date range. (In Analysis Workspace, events are included in a report if they have timestamps that fall within the reporting date range.)</li><li>Events with timestamps that fall within the lookback date range (but outside the frequency window) can still influence what data appears in the feed through segment qualification, session calculation, derived field transformations, and dimension persistence.</li><p>A longer lookback date range typically results in more accurate events; a shorter range results in better delivery performance.</p>"
+>abstract="Controls how far back Customer Journey Analytics looks when processing each delivery.<p>The frequency window (hour or day) determines which events are included in the data feed, while the **lookback date range** provides the needed historical context to correctly classify those events.</p><p>Segment qualification, dimension persistence, session calculation, and derived field transformations can all affect the events that are included.</p><p>A longer lookback improves accuracy; a shorter lookback improves performance.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
-<!-- markdownlint-disable MD034 -->
+The lookback date range controls how far back Customer Journey Analytics looks when processing the data feed delivery. 
 
->[!CONTEXTUALHELP]
->id="cja_datafeed_lookback_date_range"
->title="Lookback date range"
->abstract="Controls how far back Customer Journey Analytics looks when processing the data feed delivery. This setting is similar to the Analysis Workspace reporting date range, but with important differences.<ul><li>Events are included in the data feed if they have timestamps that fall within the frequency window, not within the lookback date range. (In Analysis Workspace, events are included in a report if they have timestamps that fall within the reporting date range.)</li><li>Events with timestamps that fall within the lookback date range (but outside the frequency window) can still influence what data appears in the feed through segment qualification, session calculation, derived field transformations, and dimension persistence.</li><p>A longer lookback date range typically results in more accurate events; a shorter range results in better delivery performance.</p>"
-
-<!-- markdownlint-enable MD034 -->
-
-Controls how far back Customer Journey Analytics looks when processing each delivery. 
-
-The frequency window (hour or day) determines which events are included in the data feed, while the lookback date range provides the needed historical context to correctly classify those events. 
-
-Segment qualification, dimension persistence, session calculation, and derived field transformations can all affect the events that are included. 
-
-A longer lookback improves accuracy; a shorter lookback improves performance.
-
-
-
-
-
-
-Controls how far back Customer Journey Analytics looks when processing the data feed delivery. 
-
-Events with timestamps that fall within the lookback date range can influence what data appears in the feed because segment qualification, session calculation, derived field transformations, and dimension persistence are all taken into account when determining which events are included.
-
-* Events are included in the data feed if they have timestamps that fall within the frequency window. The lookback date range influences what data is processed by acting as a cutoff for individual component settings. (In Analysis Workspace, events are included in a report if they have timestamps that fall within the reporting date range, and there is no cutoff for individual component settings.)
-
-* Events with timestamps that fall within the lookback date range (but outside the frequency window) can influence what data appears in the feed through segment qualification, session calculation, derived field transformations, and dimension persistence.
-
-  A longer lookback date range typically results in more accurate events; a shorter range results in better delivery performance.</p><p>the farthest back in time we're going to look for processing.</p>"
-
-This setting is similar to the Analysis Workspace reporting date range, but with important differences. 
-
-
-
-
-The lookback date range controls how far back Customer Journey Analytics looks when processing the data feed delivery. The default is 30 days.
+The lookback that you configure is used to provide the needed historical context to correctly classify any events with timestamps that fall within the frequency window (the hour or day of the data feed).
 
 When configuring this option, consider the following important concepts:
 
 * A longer lookback date range typically results in more accurate data; a shorter range results in better delivery performance.
-* The lookback date range in data feeds is similar to the reporting date range in Analysis Workspace, but there are [key differences](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences). These differences can result in data descrepancies between Workspace reports and data feed deliveries.
+* The lookback date range, together with the frequency window, function similarly to the Analysis Workspace reporting date range. However, there are [key differences](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences). These differences can result in data descrepancies between Workspace reports and data feed deliveries.
 * The lookback date range does not alter the frequency window (hour or day), which defines the time frame of the events to include in the data feed output.
 * Data that falls within the lookback date range can influence what is included in the data feed (frequency window), depending on the factors described in the sections below.
 
@@ -449,6 +414,50 @@ In this case, the original campaign is shown in the data feed output only if use
   If the user qualified for the original campaign 9 days ago, the original campaign **would be included** in the data feed if the lookback date range were set to 30 days, but the original campaign **would not be included** in the data feed if the lookback date range were set to 7 days.
 
 >[!ENDSHADEBOX]
+
+
+
+
+
+
+
+
+
+Segment qualification, dimension persistence, session calculation, and derived field transformations can all affect the events that are included in the data feed. 
+
+A longer lookback improves accuracy; a shorter lookback improves performance.
+
+
+
+
+This setting, together with the frequency window, function similarly to the Analysis Workspace reporting date range:
+
+Frequency window: Events are included in the data feed if they have timestamps that fall within the frequency window.
+
+Lookback date range: Provides the needed historical context to correctly classify the events with timestamps that fall within the frequency window
+
+not within the lookback date range. (In Analysis Workspace, events are included in a report if they have timestamps that fall within the reporting date range.)</li><li>Events with timestamps that fall within the lookback date range (but outside the frequency window) can still influence what data appears in the feed through segment qualification, session calculation, derived field transformations, and dimension persistence.</li><p>A longer lookback date range typically results in more accurate events; a shorter range results in better delivery performance.</p>
+
+
+
+Controls how far back Customer Journey Analytics looks when processing the data feed delivery. 
+
+Events with timestamps that fall within the lookback date range can influence what data appears in the feed because segment qualification, session calculation, derived field transformations, and dimension persistence are all taken into account when determining which events are included.
+
+* Events are included in the data feed if they have timestamps that fall within the frequency window. The lookback date range influences what data is processed by acting as a cutoff for individual component settings. (In Analysis Workspace, events are included in a report if they have timestamps that fall within the reporting date range, and there is no cutoff for individual component settings.)
+
+* Events with timestamps that fall within the lookback date range (but outside the frequency window) can influence what data appears in the feed through segment qualification, session calculation, derived field transformations, and dimension persistence.
+
+  A longer lookback date range typically results in more accurate events; a shorter range results in better delivery performance.</p><p>the farthest back in time we're going to look for processing.</p>"
+
+This setting is similar to the Analysis Workspace reporting date range, but with important differences. 
+
+
+
+
+The lookback date range controls how far back Customer Journey Analytics looks when processing the data feed delivery. The default is 30 days.
+
+
 
 
 
