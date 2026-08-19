@@ -340,20 +340,20 @@ Before you create a data feed, it's important to have a basic understanding of d
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_lookback_date_range"
 >title="Lookback date range"
->abstract="Controls how far back Customer Journey Analytics looks when processing each delivery.<p>The frequency window (hour or day) determines which events are included in the data feed, while the **lookback date range** provides the needed historical context to correctly classify those events.</p><p>Segment qualification, dimension persistence, session calculation, and derived field transformations can all affect the events that are included.</p><p>A longer lookback improves accuracy; a shorter lookback improves performance.</p>"
+>abstract="Controls how far back Customer Journey Analytics looks when processing each delivery.<p>The frequency window (hour or day) determines which events are included in the data feed, while the **lookback date range** provides the needed historical context to classify those events correctly.</p><p>Segment qualification, dimension persistence, session calculation, and derived field transformations can all affect the events that are included.</p><p>A longer lookback improves accuracy; a shorter lookback improves performance.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
 The lookback date range controls how far back Customer Journey Analytics looks when processing each data feed delivery. 
 
-Events must still have timestamps that fall within the frequency window (hour or day) to be included in the delivery, but the data that falls within the **lookback date range** provides the needed historical context to correctly classify those events. 
+Events must still have timestamps that fall within the frequency window (hour or day) to be included in the delivery, but the data that falls within the **lookback date range** provides the needed historical context to classify those events correctly. 
 
 When configuring this option, consider the following important concepts:
 
 * A longer lookback date range typically results in more accurate data; a shorter range results in better delivery performance.
-* The lookback date range, together with the frequency window, function similarly to the Analysis Workspace reporting date range. However, there are [key differences](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences). These differences can result in data descrepancies between Workspace reports and data feed deliveries.
+* The lookback date range, together with the frequency window, function similarly to the Analysis Workspace reporting date range. However, there are [key differences](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences). These differences can result in data discrepancies between Workspace reports and data feed deliveries.
 
-Segment qualificatoin, session calculation, dimension persistence, and derived field transformations are each considered when processing data within the lookback date range:
+Segment qualification, session calculation, dimension persistence, and derived field transformations are each considered when processing data within the lookback date range:
 
 ### Segment qualification
 
@@ -372,13 +372,13 @@ In this case, users are included in the data feed only if they meet **both** of 
 * The user had an event with a timestamp that is within the data feed frequency window (the given hour or day of the data feed).
 * The user qualified for the _Campaign B_ segment **sometime within the lookback date range**.
 
-  For a qualifying event that ocurred 9 days ago, this means the user **would be included** in the data feed if the lookback date range were set to 30 days, but the user **would not be included** in the data feed if the lookback date range were set to 7 days.
+  For a qualifying event that occurred 9 days ago, this means the user **would be included** in the data feed if the lookback date range were set to 30 days, but the user **would not be included** in the data feed if the lookback date range were set to 7 days.
 
 >[!ENDSHADEBOX]
 
 ### Session calculation
 
-Session boundaries are calculated using data within the lookback date range. Maybe this matters more regarding what the session ID is? Could it impact the Session ID? Could impact a lot of things, like session-based persistence.
+Session boundaries are calculated using data within the lookback date range. <!--Maybe this matters more regarding what the session ID is? Could it impact the Session ID? This could impact several factors, such as session-based persistence.-->
 
 ### Dimension persistence
 
@@ -387,7 +387,7 @@ When you set persistence on an individual dimension, you also set an expiration 
 The lookback date range affects dimension persistence when the expiration is set to either of the following options in the data view: 
 
 * [!UICONTROL **Person Reporting Window**]: The lookback date range becomes the new reporting window for each dimension in the data feed definition that uses [!UICONTROL **Person Reporting Window**] as its expiration.
-* [!UICONTROL **Custom Time**]: If the custom time that is selected extends beyond the lookback date range, the custom time is ignored, and the lookback date range is used for dimension expiration for each dimension in the data feed definition that uses [!UICONTROL **Custom Time**] as its expiration. Values that ocurred before the lookback date range are not considered. 
+* [!UICONTROL **Custom Time**]: If the custom time that is selected extends beyond the lookback date range, the custom time is ignored, and the lookback date range is used for dimension expiration for each dimension in the data feed definition that uses [!UICONTROL **Custom Time**] as its expiration. Values that occurred before the lookback date range are not considered. 
 
   For more information about setting persistence on dimensions within the data view, see [Persistence component settings](/help/data-views/component-settings/persistence.md).
 
@@ -407,13 +407,13 @@ In this case, the original campaign is shown in the data feed output only if use
 
 * The user qualified for the original campaign **sometime within the lookback date range**.
 
-  If the user qualified for the original campaign 9 days ago, the original campaign **would be included** in the data feed if the lookback date range were set to 30 days, but the original campaign **would not be included** in the data feed if the lookback date range were set to 7 days.
+  If the user qualified for the original campaign 9 days ago, the original campaign **is included** in the data feed if the lookback date range is set to 30 days, but the original campaign **is not included** in the data feed if the lookback date range is set to 7 days.
 
 >[!ENDSHADEBOX]
 
 ### Derived field transformations
 
-Any derived field functions that reference containers use the lookback date range in data feed exports. What date capabilities exist in derived fields? Not sure how this applies.
+Any derived field functions that reference containers use the lookback date range in data feed exports. What date capabilities exist in derived fields? <!--Not sure how this applies.-->
 
 
 
