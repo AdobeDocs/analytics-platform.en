@@ -31,6 +31,43 @@ topic_v2:
 
 Data feeds in both Customer Journey Analytics and Adobe Analytics allow you to export raw data to third-party platforms. If you previously used data feeds in Adobe Analytics, use the following information to understand differences in available features and concepts:  
 
+## Functionality available only in Customer Journey Analytics data feeds
+
+* Derived fields
+
+  Include derived field components in data feeds.
+
+* Stitching
+
+  Enables cross-device identity resolution, linking events across devices to a single person.
+
+* Structured view of data
+
+  Uses structured data both when building data feeds in delivered files. Adobe Analytics data feeds use a string.
+
+* Component rail with dimensions and metrics that matches Analysis Workspace
+
+  Uses dimensions and metrics that are available in your data view. In Adobe Analytics, a pre-defined list of fields and columns are used.
+
+* Any segments applied to your data view are automatically inherited in the data feed
+
+* Segments can be applied directly to the data feed (in addition to any segments already applied on the data view)
+
+* Feeds match the data view time zone <!-- how did it work in AA? -->
+
+* Parquet delivery
+
+  Outputs a modern Parquet file, which natively supports complex nested and structured data. Product lists are represented as structured arrays/nested objects.
+
+* Hive-style paths
+
+* Changes made to components in the data view propogate to data feeds 
+
+<!-- * Web MCP when it's added -->
+
+
+## Functionality comparison
+
 | **Concepts and configuration options** | **Customer Journey Analytics** | **Adobe Analytics** |
 |---------|----------|---------|
 | **Data input**<br/>The type of data that can be collected and included in data feeds. | Supports cross-channel data input, including web data, call center data, point-of-sale data, and more. | Primarily supports web and mobile data input. Other data types (such as call center or point-of-sale data) can be ingested via data sources, but with very limited processing capabilities. |
@@ -39,8 +76,6 @@ Data feeds in both Customer Journey Analytics and Adobe Analytics allow you to e
 | **Late-arriving hits**<br/>Hits whose timestamps belong to a previous delivery frequency window but arrive after that window already elapsed. <p>For example, late-arriving hits could come from a mobile app that buffers events while offline and sends them when it reconnects.</p> | The **Processing delay** setting controls how long the system waits after the frequency window closes before triggering the export, allotting extra time for delayed data to arrive. | Late-arriving hits can be **included or excluded** via the **Late-arriving hits** configuration option. <p>The **Lookback window** setting controls how far back the system reaches to include delayed data.</p> |
 | **Out-of-order hits**<br/>Hits whose timestamps don't match the order in which they were received. | Because Customer Journey Analytics accepts both streaming and batch data, there is no guarantee that events for a given person will arrive in timestamp order. Although Customer Journey Analytics reorders by timestamp per person, it can only export the data that has arrived. This means that late arriving hits might be exported after hits with a later timestamp.<p>The **Processing delay** setting helps reduce out-of-order events in data feed output by giving more time for batch data to arrive before the export. Event ordering in the delivery is not guaranteed.</p><p>**Important**: The ultimate consumer of your data feed data must be able to handle timestamps that are out of order, per person, because hit ordering in the data feed delivery is not guaranteed.</p> | Adobe Analytics requires that data arrive in order per visitor at collection time, but hit ordering in the data feed delivery is not guaranteed.</p> |
 | **Backfill window**<br/>Exports historical data between two past dates. | Limited to the connection's rolling data window. | Limited to the report suite data retention limit: **25 months** by default. |
-| **Segmentation** | Segments can be applied to data feeds via the data view segment, a feed-specific segment, or both. | Segments cannot be applied. |
-| **Stitching** | Supported. Enables cross-device identity resolution, linking events across devices to a single person. | Not supported. Stitched data cannot be exported via Adobe Analytics data feeds. |
 | **Schema**<br/>The data feed schema determines which columns are available to include in a data feed. | The data feed schema is based on the data view configuration.  The components that are available to include in the data feed schema are a subset of the components available in the data view configuration.</p> | A pre-defined, static list of ~1,100+ variables. Many columns are exported as **pre- and post-processed pairs** (e.g., `eVar1` / `post_eVar1`), which accounts for much of the column count. |
 | **Lookups**<br/> Dynamic lookups allow you to receive additional lookup files in your data feed otherwise not available. | Not needed, because lookups and classifications are both available as dimensions curated directly in the data view. When you curate a lookup or classification as a dimension in the data view, the resolved values appear as regular columns in the Parquet output, inline with the event data, not as separate reference files. | Used to match a number from a data feed column to an actual value. Specific to a certain set of things (Browser, OS, Mobile device, and they're applied as a separate file that comes with the data feed.)|
 | **Session definition**<br/> <!--(could be included in the data processing section instead)--> | Defined in the data view .| Defined at collection time. |
