@@ -161,11 +161,6 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/
 {style="table-layout:fixed"}
 -->
 
-<!-- PAID MEDIA (generated) — The "Paid Media" section below (and the `Paid Media` value added to the
-     Channel dimension above) are generated and kept in sync by the `paid-media-doc-sync` skill
-     (repo: github.com/dbunker_adobe/xdm-paid-media) from the AEP Paid Media source connectors, the
-     XDM paid-media schema, and the ares_aca_config provisioning templates. Do not hand-edit the Paid
-     Media rows — edits are overwritten on the next sync. To change them, run the skill and open a new PR. -->
 ## Paid Media
 
 These components are added to a data view when the **Paid Media** channel is enabled through an [Adobe Experience Platform Paid Media source connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home) (for example, Meta Ads or Google Ads). They let you report on paid media entities and spend alongside your web and mobile content.
