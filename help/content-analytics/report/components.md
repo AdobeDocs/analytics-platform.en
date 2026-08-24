@@ -163,22 +163,110 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/
 
 ## Paid Media
 
-These components are added to a data view when the **Paid Media** channel is enabled through an [Adobe Experience Platform Paid Media source connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home) (for example, Meta Ads or Google Ads). They let you report on paid media entities and spend alongside your web and mobile content.
+These components are added to a data view when the **Paid Media** channel is enabled through an [Adobe Experience Platform Paid Media source connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home) (for example, Meta Ads or Google Ads). They let you report on paid media entities, creative, and spend alongside your web and mobile content.
 
 The AI-generated **Asset attributes** and **Experience attributes** described above are also available for paid media creatives — the same featurization runs across the Web, Mobile, and Paid Media channels.
 
+### Paid Media dimensions
+
 | Title | Description | Type |
 |---|---|---|
-| Ad Network | The advertising network the paid media data was ingested from (for example, `Meta` or `Google Ads`). | Dimension |
+| Ad Network | The advertising platform the paid media data was ingested from. | Dimension |
 | Account Name | Name of the ad account. | Dimension |
 | Campaign Name | Name of the paid media campaign. | Dimension |
 | Ad Group Name | Name of the ad group (Meta ad set / Google ad group). | Dimension |
 | Ad Name | Name of the individual ad. | Dimension |
-| Experience Name | Name of the ad experience (creative composition) associated with the paid media entity. | Dimension |
-| Asset Name | Name of the creative asset associated with the paid media entity. | Dimension |
-| Impressions | Number of times the paid media ad was shown. | Metric |
-| Clicks | Number of clicks on the paid media ad. | Metric |
-| Spend | Amount spent on the paid media ad, in the ad account currency. | Metric |
+| Experience Name | Name of the ad experience (creative composition). | Dimension |
+| Asset Name | Name of the creative asset. | Dimension |
+| Campaign Status | Status of the campaign. | Dimension |
+| Ad Group Status | Status of the ad group. | Dimension |
+| Ad Status | Status of the ad. | Dimension |
+| Serving Status | Detailed serving status indicating whether the entity is currently delivering. | Dimension |
+| Account Currency | Currency of the ad account. | Dimension |
+| Account Timezone | Time zone of the ad account. | Dimension |
+| Account Type | Type of the ad account. | Dimension |
+| Account Business Name | Business name associated with the ad account. | Dimension |
+| Campaign Type | Primary channel type of the campaign. | Dimension |
+| Campaign Objective | Objective or goal of the campaign. | Dimension |
+| Campaign Bid Strategy | Bidding strategy for the campaign. | Dimension |
+| Campaign Budget Type | Type of budget allocation for the campaign. | Dimension |
+| Campaign Daily Budget | Daily budget amount, in the ad account currency. | Dimension |
+| Campaign Lifetime Budget | Lifetime budget amount, in the ad account currency. | Dimension |
+| Campaign Start Time | When the campaign started. | Dimension |
+| Campaign End Time | When the campaign ended. | Dimension |
+| Ad Group Type | Type of the ad group. | Dimension |
+| Ad Group Bid Strategy | Bidding strategy for the ad group. | Dimension |
+| Ad Group Optimization Goal | Optimization goal for the ad group. | Dimension |
+| Ad Group Start Time | When the ad group started. | Dimension |
+| Ad Group End Time | When the ad group ended. | Dimension |
+| Ad Type | Type/format of the ad. | Dimension |
+| Ad Review Status | Review/approval status of the ad. | Dimension |
+| Ad Creative Type | Type of creative used by the ad. | Dimension |
+| Ad Title | Headline/title of the ad creative. | Dimension |
+| Ad Call to Action | Call-to-action of the ad creative. | Dimension |
+| Ad Destination URL | Landing/destination URL of the ad. | Dimension |
+| Ad Display URL | Display URL shown on the ad. | Dimension |
+| Experience Type | Type/format of the ad experience. | Dimension |
+| Experience Landing Page URL | Landing page URL for the experience. | Dimension |
+| Experience Call to Action | Call-to-action of the experience. | Dimension |
+| Asset Type | Type of the creative asset (for example, image or video). | Dimension |
+| Asset Width | Width of the asset, in pixels. | Dimension |
+| Asset Height | Height of the asset, in pixels. | Dimension |
+| Asset Aspect Ratio | Aspect ratio of the asset. | Dimension |
+| Asset Orientation | Orientation of the asset. | Dimension |
+| Device Type | Device type breakdown for the reported metrics. | Dimension |
+| Placement | Placement breakdown for the reported metrics. | Dimension |
+| Platform | Platform breakdown for the reported metrics. | Dimension |
+| Country | Country breakdown for the reported metrics. | Dimension |
+| Region | Region breakdown for the reported metrics. | Dimension |
+
+{style="table-layout:fixed"}
+
+### Paid Media metrics
+
+| Title | Description | Type |
+|---|---|---|
+| Impressions | Number of times the ad was shown. | Metric |
+| Clicks | Number of clicks on the ad. | Metric |
+| Spend | Amount spent, in the ad account currency. | Metric |
+| Conversions | Total number of conversions. | Metric |
+| Conversion Value | Total value of conversions. | Metric |
+| Reach | Number of unique people who saw the ad. | Metric |
+| Engagements | Number of engagements with the ad. | Metric |
+| Video Views | Number of video views. | Metric |
+| Video Completions | Number of videos watched to completion. | Metric |
+| Video Plays | Number of video plays. | Metric |
+| Purchases | Number of purchase conversions. | Metric |
+| Add to Cart | Number of add-to-cart conversions. | Metric |
+| Leads | Number of lead conversions. | Metric |
+| Registrations | Number of registration conversions. | Metric |
+| Downloads | Number of download conversions. | Metric |
+| Subscriptions | Number of subscription conversions. | Metric |
+| Landing Page Views | Number of landing page views. | Metric |
+| Post-Click Conversions | Conversions attributed to a click. | Metric |
+| Post-View Conversions | Conversions attributed to a view. | Metric |
+| Total Order Value | Total value of orders. | Metric |
+| Link Clicks | Number of link clicks. | Metric |
+| Outbound Clicks | Number of outbound clicks. | Metric |
+| App Installs | Number of app installs. | Metric |
+| Lead Submissions | Number of lead form submissions. | Metric |
+
+{style="table-layout:fixed"}
+
+### Paid Media calculated metrics
+
+| Title | Description | Type |
+|---|---|---|
+| Click-Through Rate | Clicks divided by impressions. | Calculated metric |
+| Cost Per Click | Spend divided by clicks. | Calculated metric |
+| Cost Per Mille | Cost per thousand impressions. | Calculated metric |
+| Cost Per Conversion | Spend divided by conversions. | Calculated metric |
+| Return on Ad Spend | Conversion value divided by spend. | Calculated metric |
+| Frequency | Impressions divided by reach. | Calculated metric |
+| Engagement Rate | Engagements divided by impressions. | Calculated metric |
+| Video Completion Rate | Video completions divided by video plays. | Calculated metric |
+| Conversion Rate | Conversions divided by clicks. | Calculated metric |
+| Average Order Value | Total order value divided by purchases. | Calculated metric |
 
 {style="table-layout:fixed"}
 
