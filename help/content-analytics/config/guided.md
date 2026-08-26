@@ -91,12 +91,12 @@ The guided configuration wizard consists of four sections ([Details](#details), 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_button"
 >title="Details"
->abstract="Provide a name for the connection. In the **[!UICONTROL Data view]**, **[!UICONTROL Experience capture and definition]**, and **[!UICONTROL Data collection]** sections you provide more details to ensure that Content Analytics can be configured correctly."
+>abstract="Provide a name for the connection. Provide a name for the configuration and choose the sandbox that contains the content analytics data you want to analyze."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="Details"
->abstract="This guide sets up the requirements needed to configure Content Analytics. Please provide a name for this configuration"    
+>abstract="This guide sets up the requirements needed to configure Content Analytics. Please provide a name for this configuration and select the sandbox that contains the content analytics data you want to analyze."    
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_boldheader"
@@ -554,7 +554,14 @@ Optionally, you can specify in the **[!UICONTROL Header overrides]** section a h
 1. Enter the **[!UICONTROL Header name]**. For example, `x-asset-service`.
 1. Enter the **[!UICONTROL Header value]**. Whatever you specify is secret and not visible in the user interface (unless you explicitly select to disclose ![Visibility](/help/assets/icons/Visibility.svg) the value during input).
 
-#### Save {#web-save}
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_paidmedia_adplatforms_nosourceconnectors"
+>title="No source connectors"
+>abstract="Paid media requires Experience Platform source connectors for your ad publishers. No Google Ads or Meta Ads connectors are available in this sandbox. Configure one or more of these connectors in the **[!UICONTROL Experience Platform]** > **[!UICONTROL Sources]** interface and return to this step to continue the configuration of Content Analytics paid media."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/ads" text="Google Ads source"
+
+##### Save {#web-save}
 
 After you have specified the details for the web channel, select **[!UICONTROL Save]** to save the configuration. Select **[!UICONTROL Cancel]** to cancel the configuration.
 

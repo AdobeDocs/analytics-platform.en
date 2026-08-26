@@ -4,7 +4,6 @@ description: Understand how to synchronize data between data warehouse native so
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-badgePremium: label="Beta"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
 autotag-review: '2026-05-19T08:55:53.979Z'
 TQID: 'https://experienceleague.adobe.com/10YCh2cnMTVriKKVOyYfzFfngvGQ2VVHOxzedE5NpWA'
@@ -42,8 +41,6 @@ topic_v2:
 ---
 # Experience Platform Data Mirror overview
 
-{{release-limited-testing}}
-
 Data Mirror is an Experience Platform capability that enables row-level change ingestion from external databases into the data lake using relational schemas. It preserves data relationships, enforces uniqueness, and supports versioning without requiring upstream extract, transform, and load (ETL) processes.
 
 Use Experience Platform Data Mirror to synchronize inserts, updates, and deletes (mutable data) from external data warehouse native solutions ([!DNL Snowflake], [!DNL Azure Databricks], or [!DNL Google BigQuery]) directly with data in Experience Platform. Data Mirror helps you preserve your existing database model structure and data integrity as you bring data into Experience Platform.
@@ -66,7 +63,7 @@ See also the [Experience Platform documentation on Data Mirror](https://experien
 
 >[!NOTE]
 >
->Data Mirror is a feature currently in beta that supports the synchronization of data from select data warehouses using change data capture (CDC) for analysis in Customer Journey Analytics.<br/>This feature will be generally available for Customer Journey Analytics on June 18, 2026. Refer to the applicable Product Description to understand how it could impact annual ingestion limit consumption going forward. Please note that your organization will continue to have access to the feature when Data Mirror transitions from beta to general availability.
+>Data Mirror is a feature that supports the synchronization of data from select data warehouses using change data capture (CDC) for analysis in Customer Journey Analytics.<br/>Refer to the applicable Product Description to understand how the feature can impact annual ingestion limit consumption.
 >
 
 >[!IMPORTANT]

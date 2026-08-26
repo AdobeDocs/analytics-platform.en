@@ -48,9 +48,9 @@ Data elements are the building blocks for your data dictionary (or data map). Us
 
 The following sections describe suggested data elements and other common data elements that you can configure. 
 
-There are various types of data elements. Two common data elements that you might want to configure are: one that captures the page name that persons are viewing on your site, and another that captures the Experience Cloud ID of each person who visits your site. 
+There are various types of data elements. A common data element that you might want to configure is one that captures the page name that persons are viewing on your site.
 
-After you configure these two data elements, you can configure additional data elements for the specific data you want to capture.
+After you configure the page name data element, you can configure additional data elements for the specific data you want to capture.
 
 Finally, after you define all your desired data elements, you need to assign the data elements to the [schema you created](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) earlier. To do this, you define an XDM data element, which provides a representation of your XDM schema.
 
@@ -94,55 +94,11 @@ To create a page name data element:
 
 1. Select **[!UICONTROL Save]**.
 
-   You now want to set up a data element referencing the Experience Cloud ID that is automatically provided by the Adobe Experience Platform Web SDK and available through the Experience Cloud ID Service extension.
-
-1. Continue with [ECID data element](#ecid-data-element).
-
-#### ECID data element
-
-A common data element that applies to most organizations is a data element that captures the Experience Cloud ID of each person who visits your site.
-
-To create an ECID data element:
-
-1. Log in to experience.adobe.com using your Adobe ID credentials.
-
-1. In Adobe Experience Platform, go to **[!UICONTROL Data Collection]** > **[!UICONTROL Tags]**.
-
-1. Select your newly created tag from the list of [!UICONTROL Tag Properties] to open it.
-
-1. (Conditional) Install the Experience Cloud ID Service extension if it is not already installed:
-
-   1. Select **[!UICONTROL Extensions]** in the left rail.
-
-   1. The **[!UICONTROL Installed]** tab is selected by default. If the **[!UICONTROL Experience Cloud ID Service]** tile is listed, skip to Step 5.
-   
-   1. If the **[!UICONTROL Experience Cloud ID Service]** tile is not listed, select the **[!UICONTROL Catalog]** tab.
-
-   1. In the search field, search for **[!UICONTROL Experience Cloud ID Service]**, then select the tile when it appears
-   
-   1. Select **[!UICONTROL Install]** > **[!UICONTROL Save]**.
-
-1. Select **[!UICONTROL Data Elements]** in the left rail.
-
-1. Select **[!UICONTROL Add Data Element]**.
-
-1. In the **[!UICONTROL Create Data Element]** dialog, specify the following information:
-
-   * **[!UICONTROL Name]**: The name of your data element. For example `ECID`.
-
-   * **[!UICONTROL Extension]**: Select **[!UICONTROL Experience Cloud ID Service]** from the list.
-
-   * **[!UICONTROL Data Element Type]**: Select **[!UICONTROL ECID]** from the list.
-
-     ![ECID Data Element](assets/ecid-dataelement.png)
-
-1. Select **[!UICONTROL Save]**.
-
 1. Continue with [Create additional data elements](#create-additional-data-elements).
 
 ### Create additional data elements 
 
-Create a data element for each type of data that you want to collect. Use the same process described in [Page name data element](#page-name-data-element) and [ECID data element](#ecid-data-element) to create each additional data element.
+Create a data element for each type of data that you want to collect. Use the same process described in [Page name data element](#page-name-data-element) to create each additional data element.
 
 The data elements that you create should have a correlating field in your schema. 
 
@@ -201,12 +157,6 @@ To define an XDM object data element:
    * **[!UICONTROL Sandbox]**: Select your sandbox from the list.
 
    * **[!UICONTROL Schema]**: Select your schema from the list.
-
-1. Map the `identification > core > ecid` attribute, defined in your schema, to the ECID data element. Select the cylinder icon to easily pick the ECID data element from your list of data elements.
-
-   ![Pick ECID Data Element](assets/pick-ecid-dataelement.png)
-
-   ![Map ECID Data Element](assets/map-ecid.png)
 
 1. Map the `web > webPageDetails > name` attribute, defined in your schema, to the Page Name data element.
 

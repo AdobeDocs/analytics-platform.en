@@ -100,6 +100,9 @@ You can also set the default container for these visualizations in the [user pre
 
 Segments, attribution, and visualizations together with the B2B containers support you in deep B2B analysis and insights. 
 
+## Schemas
+
+The Customer Journey Analytics B2B Editior uses the [Adobe Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) to standardize B2B data and define schemas for your B2B data. You can base your schemas on the [standard classes that are provided in Real-time CDP B2B Edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) or you can use your own custom classes and schemas. The [use cases](/help/use-cases/b2b/b2b-edition/use-cases-overview.md) articles use Real-time CDP B2B Edition classes and schemas, however, a Real-time CDP B2B Edition license is not required to utilize the standard classes and schemas.
 
 ## Datasets
 

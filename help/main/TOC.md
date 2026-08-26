@@ -27,6 +27,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Landing page](../getting-started/landing.md)
     + [Frequently asked questions](../getting-started/cja-faq.md)
     + [Compare to BI solutions](../getting-started/cja-vs-bi.md)
+    + {hide-from-toc} [Analytics product comparison](/help/getting-started/analytics-product-comparison.md)
     + [AI Assistant](../ai-assistant.md)
     + [Data Insights Agent](../data-analysis-ai.md)
   + Customer Journey Analytics B2B Edition {#cja-b2b}
@@ -139,6 +140,12 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Manage](/help/connections/audience-analysis/audience-analysis-manage.md)
     + [Analyze](/help/connections/audience-analysis/analyze-audiences.md)
     + [Use cases](/help/connections/audience-analysis/audience-analysis-use-cases.md)
+  + Consent reporting and filtering {#consent-reporting-filtering}
+    + {hide-from-toc} [Overview](/help/connections/consent-reporting-filtering/consent-overview.md)
+    + {hide-from-toc} [Configure](/help/connections/consent-reporting-filtering/consent-configure.md)
+    + {hide-from-toc} [Manage](/help/connections/consent-reporting-filtering/consent-manage.md)
+    + {hide-from-toc} [Analyze](/help/connections/consent-reporting-filtering/consent-analyze.md)
+    + {hide-from-toc} [Use cases](/help/connections/consent-reporting-filtering/consent-use-cases.md)
 + Data Views {#cja-dataviews}
   + [Data views overview](../data-views/data-views.md)
   + [Create or edit a data view](../data-views/create-dataview.md)
@@ -328,6 +335,10 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Industry use cases](../guided-analysis/industry-use-cases.md)
     + [FAQ](../guided-analysis/faq.md)
 
++ Conversation insights {#conversation-insights}
+  + {hide-from-toc} [Overview](/help/conversatiion-insights/conversation-insights.md)
+  + {hide-from-toc} [Configuration](/help/conversatiion-insights/config/guided.md) 
+
 + Components {#cja-components}
   + [Overview](../components/overview.md)
   + [Use components](../components/use-components-in-workspace.md)
@@ -364,6 +375,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Manage segments](/help/components/segments/seg-manage.md)
     + [Operators](/help/components/segments/seg-operators.md)
     + [Use segments](/help/components/segments/seg-use.md)
+    + [Sub-event analysis](/help/components/segments/sub-event.md)
   + Calculated metrics {#cja-calcmetrics}
     + [Overview](../components/calc-metrics/calc-metr-overview.md)
     + Workflow {#cm-workflow}
@@ -410,9 +422,11 @@ breadcrumb-title: Customer Journey Analytics Guide
     + Data feeds {#cja-data-feeds}
       + {hide-from-toc} [Data feed overview](/help/components/exports/cja-data-feeds/data-feed-overview.md)
       + {hide-from-toc} [Compare Adobe Analytics data feeds](/help/components/exports/cja-data-feeds/df-comparison.md)
+      + {hide-from-toc} [Compare Workspace and data feeds](/help/components/exports/cja-data-feeds/df-comparison-workspace.md)
       + {hide-from-toc} [Prepare to map columns](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc} [Map columns](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc} [Create a data feed](/help/components/exports/cja-data-feeds/create-feed.md)
+      + {hide-from-toc} [Segmentation in data feeds](/help/components/exports/cja-data-feeds/df-segmentation.md)
   + Data Dictionary {#data-dictionary}
     + [Overview](../components/data-dictionary/data-dictionary-overview.md)
     + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
@@ -437,7 +451,6 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Manage workbook schedules](/help/report-builder/manage-schedules-reportbuilder.md)
   + [Restricted labels](../report-builder/restricted-labels.md)
   + [Report Builder settings](../report-builder/report-builder-settings.md)
-  
 
 + Reporting Activity Manager {#reporting-activity-manager}
   + [Overview](../reporting-activity-manager/reporting-activity-overview.md)
@@ -465,6 +478,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Integrate Journey Optimizer data](/help/integrations/ajo.md)
   + [Integrate Decision Management data](/help/integrations/ajo-od.md)
   + [Integrate Customer AI](/help/integrations/customer-ai.md)
+  + [Integrate Brand Visibility](/help/integrations/bv.md)
   + [Integrate Adobe Advertising](/help/integrations/advertising.md)
 
 + Data Governance {#cja-privacy}

@@ -1,5 +1,5 @@
 ---
-title: Current Customer Journey Analytics release notes
+title: Current Customer Journey Analytics Release Notes
 description: View the latest Customer Journey Analytics release notes
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
@@ -46,48 +46,55 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
 ---
-# Current Customer Journey Analytics release notes (May 2026)
+# Current Customer Journey Analytics release notes (August 2026)
 
-**Last update**: May 13 , 2026
+**Last update**: August 5, 2026
 
-These release notes cover the May 2026 release period. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly. 
+These release notes cover the August 2026 release period. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
-## New or updated features 
+## New or updated features
 
 | Feature and description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | -----------|-----------|-----------|
-| **CJA API Postman Collections** <br/>A downloadable Postman collection is available for calling CJA API endpoints.<p>For more information, see the [analytics-cja-postman-collections Github repository](https://github.com/AdobeDocs/analytics-cja-postman-collections).  </p> | | May 1, 2026 |
-| **MCP servers for Customer Journey Analytics** <br/>The Analytics MCP (Model Context Protocol) servers allow you to connect a supported MCP client to Adobe Customer Journey Analytics. Once connected, your MCP client can invoke product-specific tools to retrieve data, run queries, or perform supported operations as part of an LLM or agentic workflow. For more information, see [Analytics MCP servers](https://developer.adobe.com/analytics-mcp/docs/).<p>If you used these MCP servers during the beta period, please note that there are different URLs between beta and production endpoints. Ensure that any agentic workflows created during the beta period are updated to use the production endpoints before May 31.</p> | | May 5, 2026 |
-| **Content Analytics support for native mobile app experiences**<br/>Organizations can extend their content performance analysis to iOS and Android apps, capturing image assets and granular experience elements to understand which in-app content drives user engagement and business outcomes.<p> [Documentation](/help/content-analytics/content-analytics.md) is updated to describe the mobile channel capabilities and configuration. Information about the [Content Analytics Mobile SDK extension](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) is available on [Adobe Developer](https://developer.adobe.com/).</p><p>Insights are available for all Adobe Content Analytics customers.</p> | | May 6, 2026 |
-| **Journey canvas enhancements** <br/> The following enhancements are available in Journey canvas visualizations: <ul><li>[Exclude nodes](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#exclude-nodes) from a journey.</li><li>Use a node's fallout data to [create segments](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#create-a-segment-based-on-a-node-or-arrow), [trends](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#view-trend-data), [audiences](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#create-an-audience), and [breakdowns](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#apply-a-breakdown).</li></ul> | | May 18, 2026 |
-| **Data validation in the Adobe Engineering Agent** <br/>New data validation skills are available within the Data Engineering Agent. These skills help teams quickly assess data quality directly in Adobe Experience Platform, before the data is analyzed in Customer Journey Analytics. <p>Data validation skills enable on‑demand, field‑level, and dataset‑level validation, combining statistical summaries with intelligent detection of invalid or anomalous values. </p><p>Using data validation skills reduces manual QA effort and accelerates trusted data onboarding and transformations across data engineering workflows.</p><p>(Documentation link to follow.)<!--For more information, see [Data Engineering Agent]() (will be in this repo: https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/cja-data-insights-agent).--></p> | | May 19, 2026 <p>(Originally planned to release on March 31, 2026)</p> |
-| **Content Analytics: Line visualization thumbnails and previews** <br/>[Thumbnails and previews](/help/content-analytics/report/report.md) are now available for assets and experiences in line visualizations for Content Analytics. |  | May 20, 2026 |
-| **Streaming media services: Support schedule data** <br/>You can now upload schedule data of past live Streaming Media content to more easily and accurately track viewership.<p>The following are examples of live content that are supported with schedule data upload:</p><ul><li>FAST (Free Ad Supported TV) platforms</li><li>Local streams</li><li>Live sports</li></ul><p>Uploading schedule data allows you to track viewership data for individual programs that ran during the time you designate in the upload file. You can even gather viewership data for specific topics or program segments.</p><p>These capabilities are available regardless of how you implemented Streaming Media Collection.</p><p>Previously, it was difficult to accurately tie a given session to specific programs when analyzing live content, and it wasn't possible to tie a given session to individual topics or program segments.</p><p>For more information, see [Upload schedule data to track live content](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-use-cases/track-schedule-data)</p>| October 29, 2025 | First half of 2026<p>(Originally planned to release on October 29, 2025)</p> |
+| **Journey canvas enhancements**<br>The following Journey canvas enhancements are now available:<ul><li>Compare the journey to a prior time frame. Compare the current journey to the journey 4 weeks prior, 2 quarters prior, 1 year prior, or to a custom date range.</li><li>For a selected node, show the top dimension items that come after the selected node at any point in the journey. Use this when the selected node is the key event in your analysis and you want to see what people do at any point afterward.<p>Previously, only the top immediate nodes could be shown before or after the selected node. </p></li><li>Change the shape and style of arrows between nodes. Drag arrows between nodes to change the shape (curvature) of the arrow, and right-click an arrow to change its style to any of the following: solid, dashed, dotted, dashed-dot, or animated.</li></ul><p></p>For more information, see [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md). |  | August 18, 2026 |
+| **Support for additional data usage labels**<br>Customer Journey Analytics now supports the following additional data usage labels for elements within a dataset:<ul><li>C2 – Restrict third-party data export (available now)</li><li>C3 – Restrict directly identifiable data combination (available now)</li><li>C9 – Restrict data science (planned to release in August or September)</li></ul><p>For more information, see [Labels, policies, and marketing actions](/help/data-views/data-governance.md).</p> | | August or September 2026|
+| **Content Analytics: Paid media data** <br/>Paid media is now available as a third channel for Content Analytics.<p>(Documentation link to follow.)</p> | | August 31, 2026 |
+| **B2B: Person-to-account stitching**<br>B2B account stitching enriches your event datasets with account information and enables complete analysis across the full customer journey in Customer Journey Analytics. <p>When events lack an account ID, which Customer Journey Analytics B2B edition requires for ingestion, account stitching derives and adds that information automatically using the person-to-account mapping dataset that you provide.</p><p>(Documentation link to follow.)</p> | | End of August or September 2026 |
+| **CJA Report API first calls guide**<br>The Adobe Customer Journey Analytics API first calls guide provides instructions and examples for configuring basic report requests. | | August 10, 2026 |
+| **CJA Report API date trended guide**<br>The Adobe Customer Journey Analytics API date trended guide provides instructions and examples for configuring basic report requests. | | August 17, 2026 |
+| **Limit segments to the reporting date range**<br/>Data in a Workspace report can extend beyond the reporting date range when a segment includes date range components.<p>A new option is now available that allows you to limit results to the reporting date range regardless of any date components included in the segment. <p>This option is available when creating or modifying a segment whose top-level container is Person.</p><p>For more information, see [Build segments](/help/components/segments/seg-builder.md#components).</p> | August 26, 2026 | September 9, 2026 |
+| **Consent policy filtering and reporting**<br>You can now report on which visitors match your Adobe Experience Platform consent policies. (Consent policy dimensions and metrics are added to the data views in your connection.)<p>Additionally, you can exclude non-consenting visitors before their data is ingested into Customer Journey Analytics.</p><p>(Documentation link to follow.)<!--For more information, see Consent reporting and filtering overview.--></p> | | September 2026 |
 
-{style="table-layout:auto"}
+### Fixes in Customer Journey Analytics
 
-
-## Fixes in Customer Journey Analytics
-
-**Analysis Workspace**: AN-446522, AN-445779, AN-445759, AN-444676, AN-442813, AN-441943, AN-441717, AN-441538, AN-441123, AN-440976, AN-440952, AN-440919, AN-439797, AN-434855, AN-429777, AN-429048, AN-428892, AN-428189, AN-425215
+**Analysis Workspace**: AN-466867, AN-465995, AN-465315, AN-465313, AN-464375, AN-463634, AN-463248, AN-463175, AN-463049, AN-462347, AN-462124, AN-461922, AN-458398, AN-457849, AN-455002, AN-453357, AN-456863, AN-459816, AN-459034, AN-460774, AN-460671, AN-457760, AN-443594
 **Components**: 
-**Connections**: AN-449652, AN-444560, AN-442824, AN-440937, AN-440092, AN-439823, AN-429781
-**Content Analytics**:
+**Connections**: AN-464934, AN-460768
+**Content Analytics**: 
 **Guided analysis**: 
-**Exports**: AN-438953, AN-437115
-**Data views**: AN-442809
+**Exports**: AN-451819, AN-448419, AN-456001
+**Data views**: AN-453201, AN-441965, AN-460967
+**Data ingestion**: AN-462123, AN-451836, AN-453790, AN-459000, AN-456057, AN-461271, AN-459016, AN-460935
 **Implementation**: 
-**Report Builder**: AN-448697, AN-447128, AN-441148, AN-441136, AN-438147, AN-425150
-**Reporting**: AN-445123, AN-442231, AN-442169, AN-441811, AN-441733, AN-440505, AN-440300, AN-434824, AN-434210, AN-424000, AN-423359, AN-406242
-**Segmentation**: 
-**Scheduled reports**: 
+**Report Builder**: AN-465346, AN-464768, AN-464580, AN-464301, AN-463048, AN-462800, AN-457042, AN-461033, AN-459042, AN-454250, AN-451735, AN-450776, AN-450200, AN-451665
+**Reporting**: AN-463576, AN-462400, AN-456394, AN-455619, AN-459530, AN-454103, AN-452866, AN-461181
+**Segmentation**: AN-459002, AN-457730, AN-457146
+**Scheduled reports**: AN-455009, AN-460037, AN-462093
 **Shared metrics and dimensions**: 
-**Other**: AN-449159, AN-444661, AN-443900, AN-397985
+**Audience Analysis**: AN-458292
+**Other**: AN-466935, AN-462116, AN-454493, AN-457666, AN-457557, AN-456742, AN-437975, AN-460959
 
-## Related resources
+## Postponed features
 
-* [Previous Customer Journey Analytics release notes for 2025](/help/release-notes/2025.md)
-* [Adobe Analytics release notes](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
-* [Streaming Media Collection release notes](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html)
-* [CX Enterprise release notes](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
-* [Customer Journey Analytics documentation updates](/help/release-notes/doc-changes.md)
+| Feature and description | [Rollout starts](releases.md) | [General Availability](releases.md) |
+| -----------|-----------|-----------|
+| **Streaming media services: Support schedule data** <br/>You can now upload scheduled data of past live Streaming Media content to more easily and accurately track viewership.<p>The following are examples of live content that are supported with schedule data upload:</p><ul><li>FAST (Free Ad Supported TV) platforms</li><li>Local streams</li><li>Live sports</li></ul><p>Uploading schedule data allows you to track viewership data for individual programs that ran during the time you designate in the upload file. You can even gather viewership data for specific topics or program segments.</p><p>These capabilities are available regardless of how you implemented Streaming Media Collection.</p><p>Previously, it was difficult to accurately tie a given session to specific programs when analyzing live content, and it wasn't possible to tie a given session to individual topics or program segments.</p><p>For more information, see [Upload schedule data to track live content](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-use-cases/track-schedule-data). | October 29, 2025 | TBD<p>(Originally planned for October 29, 2025)</p> |
+
+>[!MORELIKETHIS]
+>
+>* [Previous Customer Journey Analytics release notes for 2026](/help/release-notes/2026.md)
+>* [Adobe Analytics release notes](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
+>* [Streaming Media Collection release notes](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html)
+>* [CX Enterprise release notes](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
+>* [Customer Journey Analytics documentation updates](/help/release-notes/doc-changes.md)
+

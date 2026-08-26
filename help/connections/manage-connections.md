@@ -49,9 +49,9 @@ topic_v2:
 >abstract="Cancels the advanced Customer Journey Analytics reporting capabilities with Journey Optimizer."
 
 
-Once you have [created or edited one or more connections](/help/connections/create-connection.md), you can manage them in **[!UICONTROL Connections]**. The [!UICONTROL Connections] interface let you:
+Once you have [created or edited one or more connections](/help/connections/create-connection.md), you can manage them in **[!UICONTROL Connections]**. The [!UICONTROL Connections] interface lets you:
 
-* View all your connections at a glance, including the owner, the sandbox, and when the connections were created and modified.
+* View all your connections, including the owner, the sandbox, and when the connections were created and modified.
 * Edit a connection.
 * Delete a connection.
 * Create a data view from a connection.
@@ -170,11 +170,11 @@ See [Create or edit a data view](/help/data-views/create-dataview.md) for more i
 
 ### Journey Optimizer connections
 
-You can use a Journey Optimizer connection in Customer Journey Analytics to bring the following additional value to your connection:
+You can use a Journey Optimizer connection in Customer Journey Analytics to provide the following additional value to your connection:
 
 * Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics (by using the **[!UICONTROL Analyze in CJA]** button within Journey Optimizer).
 
-  For more information, see [Analyze in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template) in the Journey Optimizer documentation. 
+  For more information, see [Analyze in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template). 
 
 * Edit the Journey Optimizer connection and associated data views.
 
@@ -183,7 +183,7 @@ You can use a Journey Optimizer connection in Customer Journey Analytics to brin
 
 >[!IMPORTANT]
 >
->When you enable a Journey Optimizer connection for use with Customer Journey Analytics as described in this section, each Row of Data within the connection counts toward your licensed Rows of Data each month for Customer Journey Analytics and appears within the Connections Usage UI. Select the **[!UICONTROL Use in CJA]** option on the connection only if you are comfortable with the additional usage of Rows of Data in Customer Journey Analytics. 
+>When you enable a Journey Optimizer connection for Customer Journey Analytics, each row counts toward your monthly licensed rows and appears in the Connections Usage UI. Select the **[!UICONTROL Use in CJA]** option on the connection only if you are comfortable with the additional usage of Rows of Data in Customer Journey Analytics. 
 >
 >**If you were entitled to both Customer Journey Analytics and Journey Optimizer between October 2024 and October 2025, see the following document about [AJO-Enabled Connections](https://view.adobe.com/viewer/1ed94fc35c7860b260766c620889e7a0#1)**. 
 
@@ -495,11 +495,22 @@ When a dataset row is selected in the datasets table, a panel on the right side 
 >abstract="Monhtly media starts are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
 
 
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_aca_monthlyreportablerows"
+>title="Monthly Content Analytics rows"
+>abstract="Monthly Content Analytics rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
+
+
+
 The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows across all connections. If not selected, select the **[!UICONTROL Usage]** tab to access the interface.
 
-This interface supports you to determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon. In addition to monitoring purposes, you can use the Usage interface to plan your Customer Journey Analytics license renewal.
+This interface supports you in determining whether your Customer Journey Analytics usage complies with what is contractually agreed upon. In addition to monitoring purposes, you can use the Usage interface to plan your Customer Journey Analytics license renewal.
 
-The Usage interface uses the following metrics:
+For each module you are entitled to, a collapsible section is available with usage details.
+
+### CJA Usage
+
+The **[!UICONTROL CJA Usage]** interface uses the following metrics:
 
 | Metric name | Description |
 |---|---|
@@ -516,23 +527,21 @@ The Usage interface uses the following metrics:
 >Data is collected, starting from July 2024 for the core, historical, and total records. Reach out to your account manager for earlier historical data.
 >
 
-The Usage interface consists of two panels:
+The **[!UICONTROL CJA Usage]** interface consists of two panels:
 
 * The **[!UICONTROL Key usage metrics]** panel that displays:
   
   * Four summary visualizations that display total and percentual changes from the previous month for:
 
     * **[!UICONTROL Core data reportable rows]**. The total number of rows available over the past 13 months for the current month, with a percentage change compared to the previous month. For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024.
-    * **[!UICONTROL Historical data reportable rows]**. The total number of rows available over a period older than 13 months for the current month, with a percentage change compared to the previous month. For example, on February 1, 2024, the number shows the total rows available with an event timestamp older than January 2023.
+    * **[!UICONTROL Extended Data Capacity rows]**. The total number of rows available over a period older than 13 months for the current month, with a percentage change compared to the previous month. For example, on February 1, 2024, the number shows the total rows available with an event timestamp older than January 2023.
+    * **[!UICONTROL Monthly ingested rows]**. The rows ingested during the billing month, with a percentage change compared to the previous month
     * **[!UICONTROL Core data volume]**. The total amount of data stored on disk that is timestamped for the current month (in TB), with a percentage change compared to the previous month.
-    * **[!UICONTROL Average row size]**. The average amount of storage consumed by each row of data ingested and stored for the current month (in kB), with a percentage change compared to the previous month.
+    * **[!UICONTROL Average row size]**. The average storage consumed by each ingested row for the current month (in kB), with the percentage change from the previous month.
   
-  * A stacked vertical bar visualization that displays the **[!UICONTROL Core and Historical data reportable rows]** for the last 13 months. 
+  * Two vertical bar visualization that display the **[!UICONTROL Core data reportable rows]** and **[!UICONTROL Extended Data Capacity rows]** for the last 13 months. 
   
-    When you hover over any stacked bar in the visualization, a popup shows the number of rows for that specific part of the bar. In the example below, the core data reportable rows are shown for the current month (August 2025: 936M (936,347,325)).
-
-
-    ![Key Usage Metrics](assets/usage-key-usage-metrics.png)
+    When you hover over any stacked bar in the visualization, a popup shows the number of rows for that specific part of the bar.
 
 * A combined panel, showing three subpanels for:
 
@@ -540,9 +549,7 @@ The Usage interface consists of two panels:
 
   The **[!UICONTROL Ingested rows]** subpanel measures the total number of records added to the system each month, providing insight into data growth and ingestion rates. The subpanel provides a summary of this month's total ingested rows and the change from the previous month.
 
-  ![Ingested rows](assets/usage-ingested-rows.png)
-
-  You can hover over data points in the visualization to display a popup with more details.
+  You can hover over data points in the visualizations to display a popup with more details. You can select a **[!UICONTROL Time range]** that applies to both **[!UICONTROL Ingested rows]** and **[!UICONTROL Reportable rows]**. Use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range. 
 
   +++
 
@@ -550,12 +557,175 @@ The Usage interface consists of two panels:
 
   The **[!UICONTROL Reportable rows]** visualization tracks the number of rows available for reporting by subtracting skipped and deleted rows from ingested rows, serving as a key metric for billing and data usage. The subpanel provides two summaries:
   
-  * **[!UICONTROL Last month total]**: A summary of total reportable rows up until this month.
-  * **[!UICONTROL This month]**: A summary of this month's total reportable rows and the change from the previous month.
+  * **[!UICONTROL Total reportable rows]**: A summary of total reportable rows up until this month.
+  * **[!UICONTROL Monthly reportable month]**: A summary of this month's total reportable rows and the change from the previous month.
 
-  ![Reportable rows](assets/usage-reportable-rows.png)
+  You can hover over data points in the visualizations to display a popup with more details. You can select a **[!UICONTROL Time range]** that applies to both **[!UICONTROL Ingested rows]** and **[!UICONTROL Reportable rows]**. Use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range. 
 
-  You can hover over data points in the visualizations to display a popup with more details.
+  +++
+
+  +++ Detail breakdown
+
+  You can use the **[!UICONTROL Detail breakdown]** table to view detailed metrics by connection, dataset, sandbox, and tags. Datasets are reported using ids instead of names, as dataset names can be modified during a reporting period. Unknown datasets or connections are reported using ids.
+
+  For the months before September 2024, data was collected at the dataset level and is displayed as [!UICONTROL Other datasets] for clarity. Starting from September 2024, data is gathered at a granular dataset level, and [!UICONTROL Other datasets] no longer appear.
+
+  * To change the breakdown, select a combination for **[!UICONTROL View by]** and **[!UICONTROL Breakdown by]**.
+
+    | **[!UICONTROL View by]** options | **[!UICONTROL Breakdown by]** options |
+    |---|---|
+    | **[!UICONTROL Connection]** | **[!UICONTROL -]** and **[!UICONTROL Dataset]** |
+    | **[!UICONTROL Dataset]** | **[!UICONTROL -]** |
+    | **[!UICONTROL Sandbox]** | **[!UICONTROL Connection]** |
+    | **[!UICONTROL Tag]** | **[!UICONTROL Connection]** |
+
+  You can select a month for which you want the breakdown. Select a month from **[!UICONTROL Breakdown month]**.
+
+
+  +++
+
+### Content Analytics Usage
+
+The **[!UICONTROL Content Analytics Usage]** interface uses the following metrics:
+
+| Metric name | Description |
+|---|---|
+| **Content Analytics Core Reportable Rows** | The total number of Content Analytics specific rows available over the past 13 months for the current month, with a percentage change compared to the previous month.  For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024.|
+| **Monthly Content Analytics rows** | Tracks the number of Content Analytics rows available for reporting. Reportable rows are the ingested rows minus the rows that are skipped and deleted during ingestion. Reportable rows serve as a key metric for billing and data usage. |
+
+>[!NOTE]
+>
+>Data is collected, starting from July 2024 for the core, historical, and total records. Reach out to your account manager for earlier historical data.
+>
+
+The **[!UICONTROL Content Analytics Usage]** interface consists of two panels:
+
+* The **[!UICONTROL Key usage metrics]** panel that displays:
+  
+  * Two summary visualizations that display total and percentual changes from the previous month for:
+
+    * **[!UICONTROL Core Analytics Core Reportable Rows]**. The total number of Content Analytics specific rows available over the past 13 months for the current month, with a percentage change compared to the previous month.  For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024.
+    * **Monthly Content Analytics rows**. Tracks the number of Content Analytics rows available for reporting. Reportable rows are the ingested rows minus the rows that are skipped and deleted during ingestion. Reportable rows serve as a key metric for billing and data usage.
+  
+  * A stacked vertical bar visualization that displays the **[!UICONTROL Content Analytics Core Reportable Rows]** for the last 13 months. 
+  
+    When you hover over any stacked bar in the visualization, a popup shows the number of rows for that specific part of the bar.
+
+* A combined panel, showing two subpanels for:
+
+  +++ Monthly Content Analytics rows
+
+  The **[!UICONTROL Monthly Content Analytics rows]** subpanel measures the total number of monthly Content Analytics records added to the system each month, providing insight into data growth and ingestion rates. The subpanel provides a summary of this month's total ingested rows and the change from the previous month.
+
+  You can hover over data points in the visualization to display a popup with more details. You can select a **[!UICONTROL Time range]** or use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range. 
+
+  +++
+
+  +++ Detail breakdown
+
+  You can use the **[!UICONTROL Detail breakdown]** table to view detailed metrics by connection, dataset, sandbox, and tags. Datasets are reported using ids instead of names, as dataset names can be modified during a reporting period. Unknown datasets or connections are reported using ids.
+
+  For the months before September 2024, data was collected at the dataset level and is displayed as [!UICONTROL Other datasets] for clarity. Starting from September 2024, data is gathered at a granular dataset level, and [!UICONTROL Other datasets] no longer appear.
+
+  * To change the breakdown, select a combination for **[!UICONTROL View by]** and **[!UICONTROL Breakdown by]**.
+
+    | **[!UICONTROL View by]** options | **[!UICONTROL Breakdown by]** options |
+    |---|---|
+    | **[!UICONTROL Connection]** | **[!UICONTROL -]** and **[!UICONTROL Dataset]** |
+    | **[!UICONTROL Dataset]** | **[!UICONTROL -]** |
+    | **[!UICONTROL Sandbox]** | **[!UICONTROL Connection]** |
+    | **[!UICONTROL Tag]** | **[!UICONTROL Connection]** |
+
+  You can select a month for which you want the breakdown. Select a month from **[!UICONTROL Breakdown month]**.
+
+  +++
+
+
+### CJA B2B Edition Usage
+
+The **[!UICONTROL CJA B2B Edition Usage]** interface uses the following metrics:
+
+| Metric name | Description |
+|---|---|
+| **Core Reportable BPP** | The total number of businessperson profile reportable rows available over the past 13 months for the current month, with a percentage change compared to the previous month.  For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024.|
+| **Historical Reportable BPP** | The total number of businessperson profile reportable rows available over a period older than 13 months for the current month, with a percentage change compared to the previous month. For example, on February 1, 2024, the number shows the total rows available with an event timestamp older than January 2023. |
+
+>[!NOTE]
+>
+>Data is collected, starting from July 2024 for the core, historical, and total records. Reach out to your account manager for earlier historical data.
+>
+
+The **[!UICONTROL CJA B2B Edition Usage]** interface consists of one panel that shows subpanels for:
+
++++ Core Reportable BPP.
+
+The **[!UICONTROL Core Reportable BPP]** subpanel measures the total number of monthly core reportable businessperson profile records added to the system each month, providing insight into data growth and ingestion rates. The subpanel provides a summary of this month's total ingested rows and the change from the previous month.
+
+You can hover over data points in the visualization to display a popup with more details that applies to both **[!UICONTROL Core Reportable BPP]** and **[!UICONTROL Historical Reportable BPP]**. Use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range. 
+
++++
+
++++ Historical Reportable BPP.
+
+The **[!UICONTROL Historical Reportable BPP]** subpanel measures the total number of monthly historical reportable businessperson profile records added to the system each month, providing insight into data growth and ingestion rates. The subpanel provides a summary of this month's total ingested rows and the change from the previous month.
+
+You can hover over data points in the visualization to display a popup with more details that applies to both **[!UICONTROL Core Reportable BPP]** and **[!UICONTROL Historical Reportable BPP]**. Use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range.
+
++++
+
++++ Detail breakdown
+
+You can use the **[!UICONTROL Detail breakdown]** table to view detailed metrics by connection, dataset, sandbox, and tags. Datasets are reported using ids instead of names, as dataset names can be modified during a reporting period. Unknown datasets or connections are reported using ids.
+
+For the months before September 2024, data was collected at the dataset level and is displayed as [!UICONTROL Other datasets] for clarity. Starting from September 2024, data is gathered at a granular dataset level, and [!UICONTROL Other datasets] do no longer appear.
+
+* To change the breakdown, select a combination for **[!UICONTROL View by]** and **[!UICONTROL Breakdown by]**.
+
+  | **[!UICONTROL View by]** options | **[!UICONTROL Breakdown by]** options |
+  |---|---|
+  | **[!UICONTROL Connection]** | **[!UICONTROL -]** and **[!UICONTROL Dataset]** |
+  | **[!UICONTROL Dataset]** | **[!UICONTROL -]** |
+  | **[!UICONTROL Sandbox]** | **[!UICONTROL Connection]** |
+  | **[!UICONTROL Tag]** | **[!UICONTROL Connection]** |
+
+You can select a month for which you want the breakdown. Select a month from **[!UICONTROL Breakdown month]**.
+
++++
+
+
+### Streaming Media Usage
+
+The **[!UICONTROL Streaming Media Usage]** interface uses the following metrics:
+
+| Metric name | Description |
+|---|---|
+| **Monthly Media Starts** | The total number of monthly media starts available over the past 13 months for the current month, with a percentage change compared to the previous month.  For example, on February 1, 2024, the number shows the total media starts available with an event timestamp from January 2023 to January 2024.|
+
+>[!NOTE]
+>
+>Data is collected, starting from July 2024 for the core, historical, and total records. Reach out to your account manager for earlier historical data.
+>
+
+
+The **[!UICONTROL Streaming Media Usage]** interface consists of two panels:
+
+* The **[!UICONTROL Key usage metrics]** panel that displays:
+  
+  * A summary visualization that displays total and percentual changes from the previous month for **[!UICONTROL Monthly Media Starts]**. 
+   
+    The total number of monthly media starts available over the past 13 months for the current month, with a percentage change compared to the previous month.  For example, on February 1, 2024, the number shows the total media starts available with an event timestamp from January 2023 to January 2024.
+  
+  * A stacked vertical bar visualization that displays the **[!UICONTROL Monthly Media Starts]** for the last 13 months. 
+  
+    When you hover over any stacked bar in the visualization, a popup shows the number of rows for that specific part of the bar.
+
+* A combined panel, showing two subpanels for:
+
+  +++ Monthly Media Starts
+
+  The **[!UICONTROL Monthly Media Starts]** subpanel measures the total number of monthly media starts records added to the system each month, providing insight into data growth and ingestion rates. The subpanel provides a summary of this month's total ingested rows and the change from the previous month.
+
+  You can hover over data points in the visualization to display a popup with more details. You can select a **[!UICONTROL Time range]** or use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range. 
 
   +++
 
@@ -574,11 +744,10 @@ The Usage interface consists of two panels:
     | **[!UICONTROL Sandbox]** | **[!UICONTROL Connection]** |
     | **[!UICONTROL Tag]** | **[!UICONTROL Connection]** |
 
-  ![Detail breakdown](assets/usage-detail-breakdown.png)
+  You can select a month for which you want the breakdown. Select a month from **[!UICONTROL Breakdown month]**.
 
   +++
 
-  You can define a **[!UICONTROL Time range]** in months to report on. Use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range. 
 
 >[!MORELIKETHIS]
 >
