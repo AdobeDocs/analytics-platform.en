@@ -118,7 +118,7 @@ Some of the features and their associated value for the limit depend on the Cust
 | Audience Refresh Frequency | 4 | System-enforced guardrail  | Maximum frequency in hours an [audience](../components/audiences/audiences-overview.md) may be refreshed. |
 | Audience Refresh Lookback Window | 90 | System-enforced guardrail  | Maximum number of days for refresh lookback window. |
 | Refreshing Audience Expiration Date | 13 | System-enforced guardrail  | Maximum number of months audience ceases to refresh from the date of creation. Customers can extend this for an additional 13 months. |
-| Number of Refreshing Audiences | 75, 150 | System-enforced guardrail  | Maximum number of refreshing audiences. Value varies depending on the Customer Journey Analytics package (see Product Description). |
+| Number of Refreshing Audiences | 75 - 150 | System-enforced guardrail  | Maximum number of [audiences that are configured to refresh](/help/components/audiences/publish.md#audience-builder) on a scheduled frequency (one-time refreshes do not count toward this limit). Value varies depending on the Customer Journey Analytics package (see Product Description). |
 
 {style="table-layout:auto"}
 
@@ -310,7 +310,7 @@ See also Experience Platform [Dataset Export guardrails](https://experienceleagu
 | Stitching (optional feature; see [Stitching overview](../stitching/overview.md) for more information) | < 4 hours |
 | Adobe Analytics Source Connector Backfill of less than 10 billion events (maximum of 13 months of historical data) | < 4 weeks |
 | Audience Publishing to Real-time Customer Profile, including automatic creation of the streaming segment, and allowing the segment to be ready to receive the data. | ≈ 60 minutes |
-| Refresh Frequency for Audiences | One-time refresh: latency of less than 5 minutes.<br/>Refresh every 4 hours, daily, weekly, monthly (latency goes hand in hand with the refresh rate). |
+| Refresh Frequency for Audiences | Refresh every 4 hours, daily, weekly, monthly. |
 
 | Real-time reporting latencies | Expected latency |
 |---|---|

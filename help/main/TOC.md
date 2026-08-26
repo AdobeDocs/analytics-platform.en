@@ -160,6 +160,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Metric deduplication](../data-views/component-settings/metric-deduplication.md)
     + [No value options](../data-views/component-settings/no-value-options.md)
     + [Persistence](../data-views/component-settings/persistence.md)
+    + {hide-from-toc} [Scope](/help/data-views/component-settings/scope.md)
     + [Substring](../data-views/component-settings/substring.md)
     + [Summary data group](../data-views/component-settings/summary-data-group.md)
     + [Value bucketing](../data-views/component-settings/value-bucketing.md)
@@ -333,6 +334,10 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Trends](../guided-analysis/types/trends.md)
     + [Industry use cases](../guided-analysis/industry-use-cases.md)
     + [FAQ](../guided-analysis/faq.md)
+
++ Conversation insights {#conversation-insights}
+  + {hide-from-toc} [Overview](/help/conversatiion-insights/conversation-insights.md)
+  + {hide-from-toc} [Configuration](/help/conversatiion-insights/config/guided.md) 
 
 + Components {#cja-components}
   + [Overview](../components/overview.md)

@@ -1,5 +1,5 @@
 ---
-title: Format component settings
+title: Format Component Settings
 description: Configure how a metric is formatted.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics

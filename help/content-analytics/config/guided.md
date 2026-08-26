@@ -91,12 +91,12 @@ The guided configuration wizard consists of four sections ([Details](#details), 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_button"
 >title="Details"
->abstract="Provide a name for the connection. In the **[!UICONTROL Data view]**, **[!UICONTROL Experience capture and definition]**, and **[!UICONTROL Data collection]** sections you provide more details to ensure that Content Analytics can be configured correctly."
+>abstract="Provide a name for the connection. Provide a name for the configuration and choose the sandbox that contains the content analytics data you want to analyze."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="Details"
->abstract="This guide sets up the requirements needed to configure Content Analytics. Please provide a name for this configuration"    
+>abstract="This guide sets up the requirements needed to configure Content Analytics. Please provide a name for this configuration and select the sandbox that contains the content analytics data you want to analyze."    
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_boldheader"

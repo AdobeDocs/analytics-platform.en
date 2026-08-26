@@ -100,7 +100,9 @@ Click **[!UICONTROL Apply]** to see which policies are enabled.
 
 ## How enabled policies affect data views
 
-If one or more policies are turned on with C1, C2, C3, C8, C9, or C12 labels, those schema components that have certain data labels applied cannot be added to data views. 
+If one or more policies are turned on with C3 or C8, those schema components that have certain data labels applied cannot be added to data views. 
+
+If one or more policies are turned on with C9, any schema components labelled with C9 will be unavailable for use with [Analytics MCP servers](https://developer.adobe.com/analytics-mcp/docs/).
 
 These components are grayed out in the left rail [!UICONTROL Schema fields] list:
 
