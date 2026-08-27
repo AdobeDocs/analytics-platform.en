@@ -41,9 +41,7 @@ The following capabilities are available in Customer Journey Analytics data feed
 
 * **Stitching**: Cross-device identity resolution that links events across devices to a single person.
 
-* **Structured data model**: Feeds are built and delivered using structured data rather than flat strings.
-
-* **Analysis Workspace component rail**: Select dimensions and metrics using the same component rail as Analysis Workspace, rather than a static list of variable names.
+* **Structured data model**: Feeds are built and delivered using structured data rather than flat strings such as post_product_list.
 
 * **Segmentation**: Segments applied to the data view are automatically inherited, and additional segments can be applied directly to the feed.
 
@@ -54,6 +52,10 @@ The following capabilities are available in Customer Journey Analytics data feed
 * **Hive-style partition paths**: Output files use Hive-style paths for efficient querying in data lake environments.
 
 * **Component update propagation**: Changes to components in the data view automatically propagate to the feed.
+
+* **Lookups**: Dynamic lookups allow you to receive additional lookup files in your data feed otherwise not available.
+
+* **Interface that is familiar to Analysis Workspace users**: Select dimensions and metrics using the same component rail as Analysis Workspace, rather than a static list of variable names.
 
 <!-- * Web MCP when it's added -->
 
