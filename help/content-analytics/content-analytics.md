@@ -76,26 +76,16 @@ Content Analytics uses web and mobile image view data and from Experience Platfo
 
 For paid media, experience data is reconstructed from the paid media event data sources through the use of advertisers network API's. Paid media data is collected in Experience Platform through paid media source connectors available.
 
-![Content Analytics - How it works](assets/aca-overview-new.gif)
+![Content Analytics - How it works](assets/aca-overview-new-paid-media.gif)
 
 
-### Web and mobile channels
+1. When a user visits a site or app, [configured for Content Analytics](config/configuration.md), the Experience Platform Web or Mobile SDK records impressions and interactions with the content. 
+   Paid media data is collected into datasets daily from source connectors (to Google and Meta for example). Content Analytics  monitors the [configured paid media datasets](config/configuration.md) for new, unfeaturized assets and experiences and uses ad dataset metadata to compose experience HTML. That experience HTML is combined with the asset details as a paid media experience.
 
-1. When a user visits a site or app, [configured for Content Analytics](config/configuration.md), the Experience Platform Web or Mobile SDK records impressions and interactions with the content.
-1. The identity and featurization service processes these interactions. That process consists of a retrieval service that revisits the public-facing versions of the configured URLs that define the interactions. For all of these retrieved URLs, the identity service uniquely identifies the experiences and assets. And the featurization service applies AI/ML services to discover experience and asset metadata and attributes.
-1. The results of these services ([components, attributes, and identities](/help/content-analytics/report/components.md)) are used to update the relevant specific Content Analytics datasets in Experience Platform.
-1. You can use the Content Analytics data, together with behavioral data and other lookup data, in a Customer Journey Analytics setup ([Connection](/help/connections/overview.md), [Data view](/help/data-views/data-views.md) and [Workspace](/help/analysis-workspace/home.md)). That setup provides the foundation for the unique macro-level insights on your content. <br/>You can quickly begin your Content Analytics reports and analysis using the [Content Analytics template](/help/content-analytics/report/report.md#template).
-
-### Paid media channel
-
-1. Paid media event data is collected through the configuration of appropriate source connectors in Experience Platform.
-1. Content Analytics reconstructs experience HTML associated with these paid media events from the available metadata using the paid media network API's. For example, the ad header, ad title, ad body text. The metadata is combined with the ad's assets to represent the experience in HTML. The featurization service applies AI/ML services to the reconstructed experience HTML to discover experience and assets metadata and attributes. For all of these reconstructed experience HTMLs, the identity service uniquely identifies the experiences and assets. And the featurization service applies AI/ML services to discover experience and asset metadata and attributes.
-
-### All channels
-
-For all channels configured:
+1. The identity and featurization service processes these interactions (from web and mobile) and experiences (from paid media). That process consists of a retrieval service that revisits the public-facing versions of the configured URLs that define the interactions and the HTML that defines the experience. For all of these retrieved URLs and HTML, the identity service uniquely identifies the experiences and assets. And the featurization service applies AI/ML services to discover experience and asset metadata and attributes.
 
 1. The results of the identity and featurization services ([components, attributes, and identities](/help/content-analytics/report/components.md)) are used to update the relevant specific Content Analytics datasets in Experience Platform.
+
 1. You can use the Content Analytics data, together with behavioral data and other lookup data, in a Customer Journey Analytics setup ([Connection](/help/connections/overview.md), [Data view](/help/data-views/data-views.md) and [Workspace](/help/analysis-workspace/home.md)). That setup provides the foundation for the unique macro-level insights on your content. <br/>You can quickly begin your Content Analytics reports and analysis using the [Content Analytics template](/help/content-analytics/report/report.md#template).
 
 
