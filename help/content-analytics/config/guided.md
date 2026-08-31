@@ -576,17 +576,36 @@ After you have specified the details for the web channel, select **[!UICONTROL S
 
 +++ Details
 
-For the paid media channel, you can configure [Ad platforms](#paidmedia-databehavior)
+For the paid media channel, all the supported [ad platforms](#paidmedia-adplatforms) that are connected in this sandbox are automatically included in Content Analytics.
 
 ### Ad platforms {#paidmedia-adplatforms}
 
-Paid media requires Experience Platform source connectors for your ad publishers. All the supported ad platforms that are connected in this sandbox are automatically included and shown. If you do not see any ad platform, use ![Refresh](/help/assets/icons/Refresh.svg) **[!UICONTROL Refresh]** to update the list or select **[!UICONTROL Go to AEP Sources]** to Sources in Experience Platform and 
- No Google Ads or Meta Ads connectors are available in this sandbox. Configure one or more of these connectors in the Experience Platform > Sources interface and return to this step to continue the configuration of Content Analytics paid media.
+Paid media requires the configuration of  Experience Platform source connectors to your ad publishers. All the supported ad platforms that are connected in the configured sandbox are automatically included and shown. 
+
+If you do see **[!UICONTROL No supported source connector found]**, you have not configured any source connector for the available ad platform in your configured sandbox.
+
+![No source connectors configured](/help/content-analytics/assets/aca-paid-media-no-source-connectors.png)
+
+To configure source connectors for your ad platforms, select **[!UICONTROL Go to AEP Sources]**. You are redirected to the **[!UICONTROL Sources]** interface in Experience Platform.
+
+After you have configured source connectors in Experience Platform, select ![Refresh](/help/assets/icons/Refresh.svg) **[!UICONTROL Refresh]** to update the list of source connectors.
+
+You see the list of available ad platforms and which of these platforms are ![StatusGreen](/help/assets/icons/StatusGreen.svg) **Connected** and which are ![StatusGray](/help/assets/icons/StatusGray.svg) **Not configured**.
+
+![Google connector configured](/help/content-analytics/assets/aca-paid-media-google-source-connectors.png)
 
 
 ### Data behavior {#paidmedia-databehavior}
 
+When you select **[!UICONTROL Save]**, Content Analytics automatically:
+
+* Updates the Customer Journey Analytics connection to include paid media datasets from all connected source connectors in this sandbox.
+* Enables paid media dimensions and metrics in all selected data views.
+* Surfaces paid media channels as a filterable dimension in Workspace reports.
+
 ### Save {#paidmedia-save}
+
+Select **[!UICONTROL Save]** to save the **[!UICONTROL Paid media]** configuration.
 
 +++
 
