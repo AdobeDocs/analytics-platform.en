@@ -6,7 +6,7 @@ feature: Content Analytics
 role: Admin, User
 hide: true
 ---
-# Conversation insights
+# Conversation Insights
 
 Conversation Insights enables you to analyze conversations (from large language models (LLM) or humans) at scale and given those conversations context within the full customer journey. Through Conversation Insights you are able to understand the impact of agents on actual user outcomes.
 
