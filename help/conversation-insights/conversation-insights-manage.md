@@ -8,11 +8,11 @@ hide: true
 ---
 # Manage Conversation Insights Configurations
 
-After you [create Conversation Insights configurations](/help/conversatiion-insights/conversation-insights-configure.md), you can view, edit, or delete these configurations. 
+After you [create Conversation Insights configurations](/help/conversation-insights/conversation-insights-configure.md), you can view, edit, or delete these configurations. 
 
 Only system administrators can manage Conversation Insights configurations.
 
-For information about Conversation Insights, see [Conversation Insights overview](/help/conversatiion-insights/conversation-insights-overview.md).
+For information about Conversation Insights, see [Conversation Insights overview](/help/conversation-insights/conversation-insights-overview.md).
 
 ## View and filter existing configurations
 
@@ -57,7 +57,7 @@ To edit an existing Conversation Insights configuration:
    * Select the checkbox next to the configuration that you want to edit, then select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** from the blue action bar.
    * Select ![More](/help/assets/icons/More.svg) for the configuration you want to edit. From the context menu select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]**. 
 
-1. Make any desired [changes to the configuration](conversation-insights-create.md). Then, select **[!UICONTROL Save]** to save the changes, or **[!UICONTROL Exit]** to exit the configuration without applying any change.
+1. Make any desired [changes to the configuration](conversation-insights-configure.md). Then, select **[!UICONTROL Save]** to save the changes, or **[!UICONTROL Exit]** to exit the configuration without applying any change.
 
 ## Delete a configuration
 

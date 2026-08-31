@@ -65,6 +65,8 @@ To create an Conversation Insights configuration:
 
 1. In the **[!UICONTROL Data views]** section, click **[!UICONTROL Select data views]**.
 
+<!-- Continue here...
+
 1. In the Data views dialog, select the checkbox next to one or more data views that you want to use when analyzing Experience Platform audience data within Analysis Workspace. These data views are automatically configured with Experience Platform audience data for reporting.
 
 1. Select **[!UICONTROL Use data views]**.
@@ -77,6 +79,8 @@ To create an Conversation Insights configuration:
 
 
 1. After 24 hours, [view audience dimensions in the data view](#view-audience-dimensions-in-the-data-view) to verify that the audience dimensions are available in the data views that you selected. 
+
+
  
 ## View audience dimensions in the data view
 
@@ -105,3 +109,5 @@ To view the audience analysis dimensions in the data view:
 1. Use the audience analysis dimensions in Analysis Workspace. 
 
    Users who have access to use the data view in Analysis Workspace can now see the new dimensions and use them in their analyses. For information about how to use the audience analysis dimensions in Analysis Workspace, see [Analyze Experience Platform audiences in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+
+-->
