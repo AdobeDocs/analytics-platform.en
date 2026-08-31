@@ -56,33 +56,30 @@ These release notes cover the August 2026 release period. Adobe Customer Journey
 
 | Feature and description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | -----------|-----------|-----------|
-| **Journey canvas enhancements**<br>The following Journey canvas enhancements are now available:<ul><li>Compare the journey to a prior time frame. Compare the current journey to the journey 4 weeks prior, 2 quarters prior, 1 year prior, or to a custom date range.</li><li>For a selected node, show the top dimension items that come after the selected node at any point in the journey. Use this when the selected node is the key event in your analysis and you want to see what people do at any point afterward.<p>Previously, only the top immediate nodes could be shown before or after the selected node. </p></li><li>Change the shape and style of arrows between nodes. Drag arrows between nodes to change the shape (curvature) of the arrow, and right-click an arrow to change its style to any of the following: solid, dashed, dotted, dashed-dot, or animated.</li></ul><p></p>For more information, see [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md). |  | August 18, 2026 |
-| **Support for additional data usage labels**<br>Customer Journey Analytics now supports the following additional data usage labels for elements within a dataset:<ul><li>C2 – Restrict third-party data export (available now)</li><li>C3 – Restrict directly identifiable data combination (available now)</li><li>C9 – Restrict data science (planned to release in August or September)</li></ul><p>For more information, see [Labels, policies, and marketing actions](/help/data-views/data-governance.md).</p> | | August or September 2026|
+| **Limit segments to the reporting date range**<br/>Data in a Workspace report can extend beyond the reporting date range when a segment includes date range components.<p>A new option is now available that allows you to limit results to the reporting date range regardless of any date components included in the segment. <p>This option is available when creating or modifying a segment whose top-level container is Person.</p><p>For more information, see [Build segments](/help/components/segments/seg-builder.md#components).</p> | August 26, 2026 | September 9, 2026 |
+| **Support for additional data usage labels**<br>Customer Journey Analytics now supports the following additional data usage labels for elements within a dataset:<ul><li>C2 – Restrict third-party data export (available now)</li><li>C3 – Restrict directly identifiable data combination (available now)</li><li>C9 – Restrict data science (planned to release in August or September)</li></ul><p>For more information, see [Labels, policies, and marketing actions](/help/data-views/data-governance.md).</p> | | September 2026|
+| **Consent policy filtering and reporting**<br>You can now report on which visitors match your Adobe Experience Platform consent policies. (Consent policy dimensions and metrics are added to the data views in your connection.)<p>Additionally, you can exclude non-consenting visitors before their data is ingested into Customer Journey Analytics.</p><p>(Documentation link to follow.)<!--For more information, see Consent reporting and filtering overview.--></p> | | September 2026 |
 | **Content Analytics: Paid media data** <br/>Paid media is now available as a third channel for Content Analytics.<p>(Documentation link to follow.)</p> | | August 31, 2026 |
 | **B2B: Person-to-account stitching**<br>B2B account stitching enriches your event datasets with account information and enables complete analysis across the full customer journey in Customer Journey Analytics. <p>When events lack an account ID, which Customer Journey Analytics B2B edition requires for ingestion, account stitching derives and adds that information automatically using the person-to-account mapping dataset that you provide.</p><p>For more information, see [B2B account stitching](/help/stitching/b2b-account-stitching.md).</p> | | August 31, 2026 |
-| **CJA Report API first calls guide**<br>The Adobe Customer Journey Analytics API first calls guide provides instructions and examples for configuring basic report requests. | | August 10, 2026 |
-| **CJA Report API date trended guide**<br>The Adobe Customer Journey Analytics API date trended guide provides instructions and examples for configuring basic report requests. | | August 17, 2026 |
-| **Limit segments to the reporting date range**<br/>Data in a Workspace report can extend beyond the reporting date range when a segment includes date range components.<p>A new option is now available that allows you to limit results to the reporting date range regardless of any date components included in the segment. <p>This option is available when creating or modifying a segment whose top-level container is Person.</p><p>For more information, see [Build segments](/help/components/segments/seg-builder.md#components).</p> | August 26, 2026 | September 9, 2026 |
-| **Consent policy filtering and reporting**<br>You can now report on which visitors match your Adobe Experience Platform consent policies. (Consent policy dimensions and metrics are added to the data views in your connection.)<p>Additionally, you can exclude non-consenting visitors before their data is ingested into Customer Journey Analytics.</p><p>(Documentation link to follow.)<!--For more information, see Consent reporting and filtering overview.--></p> | | September 2026 |
 
 ### Fixes in Customer Journey Analytics
 
-**Analysis Workspace**: AN-466867, AN-465995, AN-465315, AN-465313, AN-464375, AN-463634, AN-463248, AN-463175, AN-463049, AN-462347, AN-462124, AN-461922, AN-458398, AN-457849, AN-455002, AN-453357, AN-456863, AN-459816, AN-459034, AN-460774, AN-460671, AN-457760, AN-443594
+**Analysis Workspace**: AN-487374, AN-487119, AN-468907, AN-468810, AN-468363, AN-468096, AN-467414, AN-466986, AN-466982, AN-465073, AN-463571, AN-462373
 **Components**: 
-**Connections**: AN-464934, AN-460768
+**Connections**: AN-451458
 **Content Analytics**: 
-**Guided analysis**: 
-**Exports**: AN-451819, AN-448419, AN-456001
-**Data views**: AN-453201, AN-441965, AN-460967
-**Data ingestion**: AN-462123, AN-451836, AN-453790, AN-459000, AN-456057, AN-461271, AN-459016, AN-460935
+**Guided analysis**: AN-485600
+**Exports**: AN-489161, AN-467131, AN-464746
+**Data views**: AN-478732, AN-468836, AN-467851
+**Data ingestion**: AN-489829, AN-489722, AN-469451, AN-467436, AN-467049, AN-466087, AN-465049, AN-463524, AN-457433
 **Implementation**: 
-**Report Builder**: AN-465346, AN-464768, AN-464580, AN-464301, AN-463048, AN-462800, AN-457042, AN-461033, AN-459042, AN-454250, AN-451735, AN-450776, AN-450200, AN-451665
-**Reporting**: AN-463576, AN-462400, AN-456394, AN-455619, AN-459530, AN-454103, AN-452866, AN-461181
-**Segmentation**: AN-459002, AN-457730, AN-457146
-**Scheduled reports**: AN-455009, AN-460037, AN-462093
+**Report Builder**: AN-487486, AN-478944, AN-470036, AN-468589, AN-468436, AN-456747, AN-456700, AN-442695
+**Reporting**: AN-479145, AN-469095, AN-468070, AN-467786, AN-456684
+**Segmentation**: AN-486561
+**Scheduled reports**: 
 **Shared metrics and dimensions**: 
-**Audience Analysis**: AN-458292
-**Other**: AN-466935, AN-462116, AN-454493, AN-457666, AN-457557, AN-456742, AN-437975, AN-460959
+**Audience Analysis**: AN-468237, AN-462553
+**Other**:
 
 ## Postponed features
 
