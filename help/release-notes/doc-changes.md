@@ -65,6 +65,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 |---|---|
+| **August 2026** | |
+| Clarified information about refreshing audiences | When [publishing audiences](/help/components/audiences/publish.md#audience-builder), clarified that the number of audiences that can be scheduled to refresh depends on your Customer Journey Analytics entitlement, and is between 75 and 150. |
 | **July 2026** | |
 | Brand Visibility inbound integration | Documentation for the [Brand Visibility inbound integration](/help/integrations/bv.md#inbound-integration). |
 | Usage interface | Updates to the [Usage interface](/help/connections/manage-connections.md#usage) documentation for Connections. |

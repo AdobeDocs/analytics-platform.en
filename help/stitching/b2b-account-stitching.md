@@ -53,7 +53,7 @@ To illustrate how B2B account stitching works, the dataset shown below is used a
 In Customer Journey Analytics B2B Edition, events with no account ID in this non-stitched example event dataset are ignored and not ingested (![DeleteOutline](/help/assets/icons/DeleteOutline.svg)).
    
 | Action | Timestamp | Persistent ID | Account ID | Person ID | Event type |
-|:---:|--|--|---|---|---|
+|:---:|--:|--|---|---|---|
 | ![DataAdd](/help/assets/icons/DataAdd.svg)  | 1/3/25 | 1234 | Adobe | matt@adobe.com | Page view |
 | ![FilterDelete](/help/assets/icons/DeleteOutline.svg) | 1/3/25 | 5678 |  | | |
 | ![DataAdd](/help/assets/icons/DataAdd.svg)  | 3/4/25 |  9012 | Ubiquity | cory@sky.com |  |
@@ -214,7 +214,7 @@ You first enable and configure B2B account stitching at the connection level. Wh
       | **[!UICONTROL Person to Account dataset]** | ![Required](/help/assets/icons/Required.svg) | Select the lookup (record or non-time series dataset) that maps persons to accounts. |
       | **[!UICONTROL Person ID]** | ![Required](/help/assets/icons/Required.svg) | Select the field in the dataset that contains the person ID. That field must be marked as an identity and cannot be the same as the **[!UICONTROL Account ID]** field or **[!UICONTROL Start time]** field. |
       | **[!UICONTROL Account ID]** | ![Required](/help/assets/icons/Required.svg) | Select the field in the dataset that contains the account ID. That field cannot be the same as the **[!UICONTROL Person ID]** field or **[!UICONTROL Start time]** field. |
-      | **Mapping creation time** | |Optionally, select the field that represents the date and time when person to account mapping got created. Useful for scenarios when a person switches multiple accounts over time.<br/><br/>**Example** (when **update_date** field is selected):<table><thead><tr><th>update_date</th><th>person</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>For all events with a timestamp in the **[!UICONTROL update_date]** field before May 1st, 2026: a@b.com is mapped to Apple.</li><li>For all events with a timestamp in the **[!UICONTROL update_date]** field on or after May 1st, 2026: a@b.com is mapped to Adobe.</li></ul>When no mapping time is specified, the lexicographic first account is used for to map to. This same algorithm is also used when two different account names have the exact same **[!UICONTROL update_date]** value and a mapping creation time is specified. |
+      | **Mapping creation time** | |Optionally, select the field that represents the date and time when person to account mapping got created. Useful for scenarios when a person switches multiple accounts over time.<br/><br/>**Example** (when **update_date** field is selected):<table><thead><tr><th>update_date</th><th>person</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>For all events with a timestamp in the **[!UICONTROL update_date]** field before May 1st, 2026: a@b.com is mapped to Apple.</li><li>For all events with a timestamp in the **[!UICONTROL update_date]** field on or after May 1st, 2026: a@b.com is mapped to Adobe.</li></ul>When no mapping time is specified, the lexicographic first account is used. This same algorithm is also used when two different account names have the exact same **[!UICONTROL update_date]** value and a mapping creation time is specified. |
 
       >[!NOTE]
       >
@@ -280,7 +280,7 @@ Account stitching derives the identity map from your [person-to-account dataset]
 | Replay | Frequency | Data window |
 |---|---|---|
 | Short-term  | Weekly | Last 7 days |
-| Long-term  | Monthly | Last 3 months |
+| Long-term  | Monthly | Last 3 months (Prime package)<br/>Last 6 months (Ultimate package) |
 
 ## Privacy and data hygiene
 

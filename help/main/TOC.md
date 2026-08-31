@@ -160,6 +160,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Metric deduplication](../data-views/component-settings/metric-deduplication.md)
     + [No value options](../data-views/component-settings/no-value-options.md)
     + [Persistence](../data-views/component-settings/persistence.md)
+    + {hide-from-toc} [Scope](/help/data-views/component-settings/scope.md)
     + [Substring](../data-views/component-settings/substring.md)
     + [Summary data group](../data-views/component-settings/summary-data-group.md)
     + [Value bucketing](../data-views/component-settings/value-bucketing.md)
@@ -334,6 +335,10 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Industry use cases](../guided-analysis/industry-use-cases.md)
     + [FAQ](../guided-analysis/faq.md)
 
++ Conversation insights {#conversation-insights}
+  + {hide-from-toc} [Overview](/help/conversatiion-insights/conversation-insights.md)
+  + {hide-from-toc} [Configuration](/help/conversatiion-insights/config/guided.md) 
+
 + Components {#cja-components}
   + [Overview](../components/overview.md)
   + [Use components](../components/use-components-in-workspace.md)
@@ -417,6 +422,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + Data feeds {#cja-data-feeds}
       + {hide-from-toc} [Data feed overview](/help/components/exports/cja-data-feeds/data-feed-overview.md)
       + {hide-from-toc} [Compare Adobe Analytics data feeds](/help/components/exports/cja-data-feeds/df-comparison.md)
+      + {hide-from-toc} [Compare Workspace and data feeds](/help/components/exports/cja-data-feeds/df-comparison-workspace.md)
       + {hide-from-toc} [Prepare to map columns](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc} [Map columns](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc} [Create a data feed](/help/components/exports/cja-data-feeds/create-feed.md)

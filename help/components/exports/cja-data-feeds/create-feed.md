@@ -37,7 +37,7 @@ When creating a data feed, you provide Adobe with:
 
 * The data you want to include in each file
 
-* The frequency with which data is sent (including the processing delay to capture late-arriving hits)
+* The frequency with which data is sent (including the processing delay to capture late-arriving events)
 
 Before you create a data feed, it's important to have a basic understanding of data feeds and to ensure that you meet all prerequisites. For more information, see [Data feeds overview](data-feed-overview.md). 
 
@@ -56,17 +56,17 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_notify"
->title="Notify when complete"
->abstract="Specify one or more email addresses where a notification should be delivered after the data feed is sent. Multiple email addresses must be separated with a comma."
+>title="Notify of issues, when complete, and when expiring"
+>abstract="Specify one or more email addresses where a notification should be delivered when the data feed completes, is expiring, or encounters issues. Separate multiple email addresses with a comma."
 
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_datafeed_lookback_date_range"
->title="Lookback date range"
->abstract="Controls how far back Customer Journey Analytics looks when processing the data feed delivery.<br/>This setting does not alter the frequency window (hour or day). However, the lookback date range can influence the data that is delivered. Segment qualification, session calculation, some derived field transformations, and dimension persistence are all impacted by the lookback date range."
+>id="cja_datafeed_processing_delay"
+>title="Processing delay"
+>abstract="The amount of time to wait for late-arriving events before processing a data feed file. Any late-arriving hits that come in during the processing delay time period are included in the data feed. <p>Processing delays are useful for various reasons, such as to give mobile implementations an opportunity for offline devices to come online and send data, or to accommodate your organization's server-side processes in managing previously processed files.</p><p>Sessions must start after the processing delay cutoff in order to be included; sessions that start before the cutoff and end within the processing delay are not included.</p><p>Customer Journey Analytics dynamically determines the optimal delay based on how long late-arriving events typically take for your feed, but you can manually set it to delay for 2, 3, 4, or 8 hours.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -83,7 +83,9 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 1. Select [!UICONTROL **Customer Journey Analytics**] from the app switcher ![App](/help/assets/icons/Apps.svg) at the top right of the interface.
 
-1. In the top navigation bar, go to [!UICONTROL **Components**] > [!UICONTROL **Data feeds**].
+1. In the top navigation bar, go to [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+
+1. Select the [!UICONTROL **Data feeds**] tab.
 
 1. Select [!UICONTROL **Create**] in the upper-right corner of the screen.
 
@@ -110,7 +112,17 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 1. In the [!UICONTROL **Segments**] drop-down menu, search for and select any segments to filter the data included in your feed. 
 
-   When you apply multiple segments, they are joined together with an AND operator. (To join segments with an OR operator, you must first create a new segment in the segment builder, then apply the new segment to the data feed.)
+   When you apply multiple segments, they are joined together with an AND operator. To join segments with an OR operator, you must first create a new segment in the segment builder, then apply the new segment to the data feed.
+
+   Segments you apply here are in addition to any segments that might already be applied in your data view.
+
+1. (Optional) In the left rail, use the **search** field to locate specific components or select the **Sort** icon ![Sort components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) to apply any of the following sort options:
+
+   |Option | Function |
+   |---------|----------|
+   | [!UICONTROL **Recommended**] | Sorts components with those that are recommended at the top of the list. Components that are used most frequently and most recently by you or by others in your organization are shown higher in the list. |
+   | [!UICONTROL **Alphabetical**] | Sorts components alphabetically. |
+   | [!UICONTROL **Categorical**] | Sorts components according to component type (dimension, metric, segment, date range). |
 
 1. Add components to the data feed configuration. The left rail shows only components that are valid for data feeds. 
 
@@ -160,6 +172,26 @@ Before you create a data feed, it's important to have a basic understanding of d
    | Week | Week an event occurred | Not available |
    | Week of Year | Week of the year an event occurred | Not available |
    | Year | Year an event occurred | Not available |
+
+   +++
+
+   +++ Metrics that cannot be included in data feeds
+
+   The following Customer Journey Analytics standard metrics cannot be included in data feeds:
+
+   | Metric name | Notes | Data feeds |
+   |---|---|---|
+   | Adobe Visitors Profile | | Not available |
+   | Adobe Opportunities Union | | Not available |
+   | Adobe Opportunities Profile | | Not available |
+   | Adobe Accounts Union | | Not available |
+   | Adobe Accounts Profile | | Not available |
+   | Adobe Buying Groups Union | | Not available |
+   | Adobe Buying Groups Profile | | Not available |
+   | Adobe Global Accounts Union | | Not available |
+   | Adobe Global Accounts Profile | | Not available |
+   | Adobe Persons Union | | Not available |
+   | Adobe Persons Profile | | Not available |
 
    +++
 
@@ -255,6 +287,14 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 1. (Optional) Reorder components on the canvas by dragging them. The order you define is preserved as the column order in the exported data feed file.
 
+1. (Optional) Change the component ID that is displayed in the data feed output.
+
+   1. Hover over a component on the canvas, then select the information icon.
+
+   1. In the Component ID field, specify a new component ID.
+
+      <!--add screenshot-->
+
 1. (Optional) Use the **[!UICONTROL Feed summary]** and **[!UICONTROL Schema preview]** panels on the right side of the page to review your data structure before proceeding:
 
    * The **[!UICONTROL Feed summary]** shows a live count of the total components, columns, dimensions, and metrics that you added.
@@ -273,9 +313,9 @@ Before you create a data feed, it's important to have a basic understanding of d
    | [!UICONTROL **Start date**] | The date when the data feed begins. For live feeds, this must be today or a future date. For backfill feeds, this must be a past date within the data view's data retention window. The start date is based on the data view's time zone. |
    | [!UICONTROL **Expiration date**] <br/>Available only for live feeds| The date when the data feed expires and no longer runs. The date is based on the data view's time zone. |
    | [!UICONTROL **End date**]<br/>Available only for backfill feeds | The date when the data feed ends. The end date cannot be in the future. The date is based on the data view's time zone. |
-   | [!UICONTROL **Frequency**] | Select how often the data feed should be sent. Events with timestamps that fall within the frequency window are included in the data feed delivery. The [!UICONTROL **Lookback date range**] and [!UICONTROL **Processing delay**] fields can also affect which events are included in the data for the delivery frequency that you choose.<p>For live feeds, select to include either one hour's worth of data or one day's worth of data. For backfill feeds, this field is locked to **Daily** and cannot be changed.</p><ul><li>**Daily**: Feeds contain a full day's worth of data, from midnight to midnight in the data view's time zone. <p>This option is required for backfill feeds and optional for live feeds.</p></li><li>**Hourly**: Feeds contain a single hour's worth of data. <p>This option is available only for live feeds only.</p></li></ul> |
-   | [!UICONTROL **Lookback date range**] | Controls how far back Customer Journey Analytics looks when processing the data feed delivery. The default is 30 days. <p>This setting does not alter the frequency window (hour or day), which defines the time frame of the events to include in the data feed output. However, the lookback date range can influence the data that is delivered, in the following ways: </p><ul><li>**Segment qualification**: When a segment is applied to your data feed definition, any events within the lookback date range determine whether a person qualifies. The segment's container setting determines the scope. (Possible containers are: Person, Session, or Event. B2B has the following additional containers: Global account, Account, Opportunity, Buying group.)  <p>For example, if a Person container is used and the person qualifies during the lookback date range, then all of that person's events during the frequency window also qualify.</p></li><li>**Session calculation**: Session boundaries are calculated using data within the lookback date range.</li><li>**Derived field transformations**: Any derived field functions that reference containers use the lookback date range in data feed exports.</li><li>**Dimension persistence**: If you choose to set persistence on an individual dimension, you also choose an expiration to determine how long a dimension item persists beyond the event it is set on. <p>The lookback date range affects dimension persistence when the expiration is set to either of the following options in the data view:</p><ul><li>For each dimension in the data feed definition that uses [!UICONTROL **Reporting Window**] as its expiration, the lookback date range becomes the new reporting window.</li><li>For each dimension in the data feed definition that uses [!UICONTROL **Custom Time**] as its expiration, and if the custom time that is selected extends beyond the lookback date range, the custom time is ignored, and the lookback date range is used for dimension expiration.<p>For more information about setting persistence on dimensions within the data view, see [Persistence component settings](/help/data-views/component-settings/persistence.md).</p></li></ul> |
-   | [!UICONTROL **Processing delay**] | Choose the amount of time to wait before processing a data feed file. The default is 2 hours. Any late-arriving hits that come in during the processing delay are included in the data feed. <p>Processing delays are useful for various reasons, such as to give mobile implementations an opportunity for offline devices to come online and send data, or to accommodate your organization's server-side processes in managing previously processed files. </p><p>You can delay a feed by 2, 3, 4, or 8 hours.</p><p>Sessions must start after the processing delay cutoff in order to be included; sessions that start before the cutoff and end within the processing delay are not included.</p> |
+   | [!UICONTROL **Frequency**] | Select how often the data feed should be sent. Events with timestamps that fall within the frequency window are included in the data feed delivery. The [!UICONTROL **Lookback date range**] and [!UICONTROL **Processing delay**] fields can also affect which events are included in the data for the delivery frequency that you choose.<p>For live feeds, select to include either one hour's worth of data or one day's worth of data. For backfill feeds, this field is locked to **Daily**, meaning that data is grouped into daily chunks.</p><ul><li>**Daily**: Feeds contain a full day's worth of data, from midnight to midnight in the data view's time zone. <p>This option is required for backfill feeds and is optional for live feeds.</p></li><li>**Hourly**: Feeds contain a single hour's worth of data. <p>This option is available for live feeds only.</p></li></ul> |
+   | [!UICONTROL **Lookback date range**] | Controls how far back Customer Journey Analytics looks when processing the data feed delivery. The default is 30 days.<p>The frequency window (hour or day) determines which events are included in the data feed, while the **lookback date range** provides the needed historical context to classify those events correctly.</p><p>Segment qualification, dimension persistence, session calculation, and derived field transformations can all affect the events that are included.</p> <p>Before configuring this option, see the details and examples described in the section below, [Understand the lookback date range](#understand-the-lookback-date-range).</p> |
+   | [!UICONTROL **Processing delay**] | Choose the amount of time to wait before processing a data feed file. The default is 2 hours. Any late-arriving events that come in during the processing delay are included in the data feed. <p>Processing delays are useful for various reasons, such as to give mobile implementations an opportunity for offline devices to come online and send data, or to accommodate your organization's server-side processes in managing previously processed files. </p><p>Sessions must start after the processing delay cutoff in order to be included; sessions that start before the cutoff and end within the processing delay are not included.</p><p>Customer Journey Analytics dynamically determines the optimal delay based on how long late-arriving events typically take for your feed, but you can manually set it to delay for 2, 3, 4, or 8 hours.</p> |
    | [!UICONTROL **Compression format**] | Select the compression format for the Parquet output files delivered to your cloud destination. Choose from the following formats:<ul><li>[!UICONTROL **Snappy**]: Fast compression and decompression with moderate file sizes. Widely supported by modern data platforms such as BigQuery, Snowflake, and Apache Spark.</li><li>[!UICONTROL **GZip**]: Broadly compatible, including with tools that do not natively support Snappy. Recommended if your downstream pipeline requires a widely recognized compression standard.</li><li>[!UICONTROL **Z Standard (Zstd)**]: High compression efficiency with fast decompression. Suitable if minimizing file size is a priority and your tools support Zstd.</li></ul> |
 
 1. On the [!UICONTROL **Delivery**] tab, in the [!UICONTROL **Destination**] section, configure the destination where you want the data to be sent.  
@@ -298,9 +338,92 @@ Before you create a data feed, it's important to have a basic understanding of d
    | [!UICONTROL **View destinations for all users**] | If you are a system administrator, you can enable this option to view destinations created by all users in your organization. When this option is disabled, only destinations you created are displayed. |
    | [!UICONTROL **Account**] | Do either of the following:<ul><li>**Use an existing account:** Select the drop-down menu next to the **[!UICONTROL Account]** field. Or, begin typing the account name, then select it from the drop-down menu. <p>Accounts are available to you only if you configured them or if they are shared with an organization you are a part of.</p></li><li>**Create a new account:** Select **[!UICONTROL Add account]** within the **[!UICONTROL Account]** drop-down menu. For information about how to configure the account, see [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md).</li></ul> |
    | [!UICONTROL **Location**] | Do either of the following:<ul><li>**Use an existing location:** Select the drop-down menu next to the **[!UICONTROL Location]** field. Or, begin typing the location name, then select it from the drop-down menu.</li><li>**Create a new location:** Select **[!UICONTROL Add location]** within the **[!UICONTROL Location]** drop-down menu. For information about how to configure the location, see [Configure cloud export locations](/help/components/exports/cloud-export-locations.md).</li></ul> |
-   | [!UICONTROL **Notify when complete**] | Specify one or more email addresses where a notification should be delivered after the data feed is successfully sent or fails to send. Multiple email addresses must be separated with a comma.  |
+   | [!UICONTROL **Notify by email when complete**] | Specify one or more email addresses where a notification should be delivered after the data feed is successfully sent or fails to send. Multiple email addresses must be separated with a comma.  |
    | [!UICONTROL **Enable manifest**] | Choose whether to include a manifest file with each data feed delivery. The manifest file contains information for each file included in the data feed. |
        
 1. Select **[!UICONTROL Save]**.    
+
+## Understand the lookback date range {#data-feed-lookback-date-range}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_datafeed_lookback_date_range"
+>title="Lookback date range"
+>abstract="Controls how far back Customer Journey Analytics looks when processing each delivery.<p>The frequency window (hour or day) determines which events are included in the data feed, while the **lookback date range** provides the needed historical context to classify those events correctly.</p><p>Segment qualification, dimension persistence, session calculation, and derived field transformations can all affect the events that are included.</p><p>A longer lookback improves accuracy; a shorter lookback improves performance.</p>"
+
+<!-- markdownlint-enable MD034 -->
+
+The lookback date range controls how far back Customer Journey Analytics looks when processing each data feed delivery. 
+
+Events must still have timestamps that fall within the frequency window (hour or day) to be included in the delivery, but the data that falls within the **lookback date range** provides the needed historical context to classify those events correctly. 
+
+When configuring this option, consider the following important concepts:
+
+* A longer lookback date range typically results in more accurate data; a shorter range results in better delivery performance.
+* The lookback date range, together with the frequency window, function similarly to the Analysis Workspace reporting date range. However, there are [key differences](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences). These differences can result in data discrepancies between Workspace reports and data feed deliveries.
+
+Segment qualification, session calculation, dimension persistence, and derived field transformations are each considered when processing data within the lookback date range:
+
+### Segment qualification
+
+When a segment is applied to your data feed definition, data within the lookback date range determines which events, sessions or people qualify for the segment. The segment's container setting determines the scope. (Possible containers are: Person, Session, or Event. B2B includes the following additional containers: Global account, Account, Opportunity, Buying group.)
+
+>[!BEGINSHADEBOX]
+
+**Example:**
+
+Suppose you want to create a data feed to understand the behavior of users who are part of a specific marketing campaign, Campaign B. 
+
+To accomplish this, you apply a segment to the data feed called _Users in Campaign B_, indicating that only those events tied to users in this segment should be included in the data feed.
+
+In this case, users are included in the data feed only if they meet **both** of the following conditions:
+
+* The user had an event with a timestamp that is within the data feed frequency window (the given hour or day of the data feed).
+* The user qualified for the _Campaign B_ segment **sometime within the lookback date range**.
+
+  For a qualifying event that occurred 9 days ago, this means the user **would be included** in the data feed if the lookback date range were set to 30 days, but the user **would not be included** in the data feed if the lookback date range were set to 7 days.
+
+>[!ENDSHADEBOX]
+
+### Session calculation
+
+Session boundaries are calculated using data within the lookback date range. <!--Maybe this matters more regarding what the session ID is? Could it impact the Session ID? This could impact several factors, such as session-based persistence.-->
+
+### Dimension persistence
+
+When you set persistence on an individual dimension, you also set an expiration to determine how long the dimension item persists beyond the event it is set on. 
+
+The lookback date range affects dimension persistence when the expiration is set to either of the following options in the data view: 
+
+* [!UICONTROL **Person Reporting Window**]: The lookback date range becomes the new reporting window for each dimension in the data feed definition that uses [!UICONTROL **Person Reporting Window**] as its expiration.
+* [!UICONTROL **Custom Time**]: If the custom time that is selected extends beyond the lookback date range, the custom time is ignored, and the lookback date range is used for dimension expiration for each dimension in the data feed definition that uses [!UICONTROL **Custom Time**] as its expiration. Values that occurred before the lookback date range are not considered. 
+
+  For more information about setting persistence on dimensions within the data view, see [Persistence component settings](/help/data-views/component-settings/persistence.md).
+
+To get the most accurate data, consider setting the lookback date range to a value equal to or greater than the persistence set on dimensions in your data. However, keep in mind that a shorter lookback date range results in better performance for data feed deliveries. 
+
+>[!BEGINSHADEBOX]
+
+**Example:**
+
+Suppose that in your data feed you want to know which marketing campaign users originally saw before coming to your site.
+
+To accomplish this, you set persistence on the Campaigns dimension with Original as the allocation model. 
+
+In this case, the original campaign is shown in the data feed output only if users meet **both** of the following conditions:
+
+* The user had an event with a timestamp that is within the data feed frequency window (the given hour or day of the data feed).
+
+* The user qualified for the original campaign **sometime within the lookback date range**.
+
+  If the user qualified for the original campaign 9 days ago, the original campaign **is included** in the data feed if the lookback date range is set to 30 days, but the original campaign **is not included** in the data feed if the lookback date range is set to 7 days.
+
+>[!ENDSHADEBOX]
+
+### Derived field transformations
+
+Any derived field functions that reference containers use the lookback date range in data feed exports. What date capabilities exist in derived fields? <!--Not sure how this applies.-->
+
 
 
