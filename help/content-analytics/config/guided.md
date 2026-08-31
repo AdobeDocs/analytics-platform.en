@@ -576,11 +576,11 @@ After you have specified the details for the web channel, select **[!UICONTROL S
 
 +++ Details
 
-For the paid media channel, all the supported [ad platforms](#paidmedia-adplatforms) that are connected in this sandbox are automatically included in Content Analytics.
+For the paid media channel, all the supported [ad platforms](#paidmedia-adplatforms) that are connected in the configured sandbox are automatically included in Content Analytics.
 
 ### Ad platforms {#paidmedia-adplatforms}
 
-Paid media requires the configuration of  Experience Platform source connectors to your ad publishers. All the supported ad platforms that are connected in the configured sandbox are automatically included and shown. 
+Paid media requires the configuration of  Experience Platform source connectors to your ad publishers. 
 
 If you do see **[!UICONTROL No supported source connector found]**, you have not configured any source connector for the available ad platform in your configured sandbox.
 
