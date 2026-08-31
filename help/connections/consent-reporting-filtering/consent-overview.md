@@ -58,7 +58,13 @@ The following diagram and associated table show a high-level representation of h
 
 ## Consent reporting vs. filtering
 
-Consent reporting and filtering are two separate capabilities. You can enable consent reporting on its own, or enable both reporting and filtering together.
+Consent reporting and filtering are two separate capabilities. You can enable either consent reporting or filtering individually, or use both together. The following information describes reasons for using each configuration:
+
+* **Using consent data for reporting (without filtering)**: This configuration is useful when you want to analyze consent policy membership in Analysis Workspace, and you don't need to exclude any visitor data from ingestion.
+
+* **Filtering consent data (without reporting)**: This configuration is useful when your organization requires you to exclude non-consenting visitor data at ingest time, but you don't need to report on that membership data. For example, your organization's compliance requirements might mandate that you filter data based on consent, without requiring you to create and maintain the consent policy lookup dataset that reporting uses.
+
+* **Using both consent data for reporting and filtering consent data**: This configuration is useful when you want to exclude non-consenting visitor data at ingest time and analyze consent policy membership for the visitor data that remains.
 
 ### Consent reporting
 

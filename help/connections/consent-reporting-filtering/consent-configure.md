@@ -94,7 +94,9 @@ To create a consent reporting and filtering configuration:
 
    Consent reporting and filtering is applied at the connection level. All data views under a configured connection inherit the same behavior.
 
-1. (Optional) Choose whether to enable reporting for the consent data. <!--explanation of why you would or wouldn't want to -->
+1. (Optional) Choose whether to enable reporting for the consent data. 
+
+   For information about when to enable reporting and filtering, see [Consent reporting vs. filtering](/help/connections/consent-reporting-filtering/consent-overview.md#consent-reporting-vs-filtering).
 
    To enable and configure reporting:
 
@@ -109,6 +111,8 @@ To create a consent reporting and filtering configuration:
 1. (Optional) In the **[!UICONTROL Filtering]** section, select [!UICONTROL **Enable filtering**] to filter consent data.
 
    When filtering is enabled, Customer Journey Analytics ingests a visitor's data only if the visitor matches any consent policies that are enabled. For more information, see [Consent filtering](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering) in [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/consent-overview.md).
+
+   For information about when to enable reporting and filtering, see [Consent reporting vs. filtering](/help/connections/consent-reporting-filtering/consent-overview.md#consent-reporting-vs-filtering).
 
 1. (Optional) Enable filtering for the following marketing actions:
 
