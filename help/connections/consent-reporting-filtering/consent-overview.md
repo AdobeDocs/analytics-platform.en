@@ -31,7 +31,7 @@ topic_v2:
 ---
 # Consent reporting and filtering overview
 
-Consent reporting and filtering uses the consent policy membership data stored in your Adobe Experience Platform Profile datasets to help you report on visitor consent and, optionally, exclude non-consenting visitors before their data is ingested into Customer Journey Analytics.
+Consent reporting and filtering uses the consent policy membership data stored in your Adobe Experience Platform Profile datasets to help you report on visitor consent. Additionally, you can choose to exclude non-consenting visitors before their data is ingested into Customer Journey Analytics.
 
 ## Prerequisites
 

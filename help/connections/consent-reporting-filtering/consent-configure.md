@@ -34,7 +34,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="cja-consent-merge-policy"
 >title="Merge policy"
->abstract="Merge policies combine profile data from multiple datasets into unified customer profiles used for audience creation. Select 'Default Timebased' if you see multiple merge policies and you are unsure which to choose. Or consult your data team to learn which audiences are associated with each merge policy."
+>abstract="Merge policies combine profile data from multiple datasets into unified customer profiles used for audience creation. select merge policy the Profile dataset that contains the consent policy membership data (the `consentPoliciesIDMap` field) that you want to report on. Or consult your data team to learn which audiences are associated with each merge policy."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -73,7 +73,7 @@ System administrators can enable consent reporting and, optionally, consent filt
 
 ## Create a configuration
 
-When you create a configuration for consent reporting and filtering, you select the sandbox and Profile dataset that contain your consent policy membership data, choose the connection or connections to configure, and choose whether to filter data for each marketing action. Customer Journey Analytics then creates the consent policy lookup dataset and the consent policy components automatically.
+When you create a configuration for consent reporting and filtering, you select the sandbox and merge policy dataset that contain your consent policy membership data, choose the connection or connections to configure, and choose whether to filter data for each marketing action. Customer Journey Analytics then creates the consent policy lookup dataset and the consent policy components automatically.
 
 To create a consent reporting and filtering configuration:
 
@@ -88,17 +88,23 @@ To create a consent reporting and filtering configuration:
    | **[!UICONTROL Name]** | Specify a name for the configuration. |
    | **[!UICONTROL Sandbox]** | Select the Experience Platform sandbox that contains the Profile dataset with your consent policy membership data. <p>A maximum of one consent policy lookup dataset exists per sandbox. Multiple configurations in the same sandbox share the same lookup dataset.</p> |
 
-1. In the **[!UICONTROL Profile dataset]** section, select the Profile dataset that contains the consent policy membership data (the `consentPoliciesIDMap` field) that you want to report on. When you enable consent reporting, this Profile dataset is added to the connection that you select if it is not already part of it.
+1. In the **[!UICONTROL Profile dataset]** section, in the [!UICONTROL **Merge policy**] field, select the merge policy that corresponds to the Profile dataset that contains the consent policy membership data (the `consentPoliciesIDMap` field) that you want to report on. When you enable consent reporting, this Profile dataset is added to the connection that you select if it is not already part of it.<p>Merge Policies determine how Adobe Experience Platform combines profile data from multiple datasets into unified customer profiles used for consent policy membership data. Each day, a snapshot of this data is generated in Experience Platform. This snapshot provides a static view of the data at a specific point in time and does not include any event data.</p><p>Select the **[!UICONTROL Default Timebased]** merge policy if you see multiple merge policies and you are unsure which one to choose. You can also consult your data team to better understand which consent data is associated with each merge policy.</p>
 
-1. In the **[!UICONTROL Connection]** section, select **[!UICONTROL Select a connection]**, select the checkbox next to one or more connections to configure, then select **[!UICONTROL Use connection]**.
+1. In the **[!UICONTROL Connection]** section, select **[!UICONTROL Select a connection]**, select the checkbox next to the connection to configure, then select **[!UICONTROL Use connection]**.
 
    Consent reporting and filtering is applied at the connection level. All data views under a configured connection inherit the same behavior.
 
-1. In the **[!UICONTROL Data views]** section, click **[!UICONTROL Select data views]**.
+1. (Optional) Choose whether to enable reporting for the consent data. <!--explanation of why you would or wouldn't want to -->
 
-1. In the Data views dialog, select the checkbox next to one or more data views that you want to use for consent reporting. These data views are automatically configured with Experience Platform consent data for reporting.
+   To enable and configure reporting:
 
-1. Select **[!UICONTROL Use data views]**.
+   1. In the [!UICONTROL **Reporting**] section, select [!UICONTROL **Enable reporting**].
+
+   1. Select any data views associated with your connection that you want to use when analyzing Platform consent data within Analysis Workspace. In the **[!UICONTROL Data views]** section, click **[!UICONTROL Select data views]**.
+
+   1. In the Data views dialog, select the checkbox next to one or more data views that you want to use for consent reporting. These data views are automatically configured with Experience Platform consent data for reporting.
+
+   1. Select **[!UICONTROL Use data views]**.
 
 1. (Optional) In the **[!UICONTROL Filtering]** section, select [!UICONTROL **Enable filtering**] to filter consent data.
 
