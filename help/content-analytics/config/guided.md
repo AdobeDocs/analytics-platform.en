@@ -588,6 +588,76 @@ If you do see **[!UICONTROL No supported source connector found]**, you have not
 
 To configure source connectors for your ad platforms, select **[!UICONTROL Go to AEP Sources]**. You are redirected to the **[!UICONTROL Sources]** interface in Experience Platform.
 
+See below for examples on how to configure the source connectors for Google and Meta.
+
+>[!BEGINTABS]
+
+>[!TAB Google]
+
+1. In Experience Platform > **[!UICONTROL Sources]**, select **[!UICONTROL Setup]** in the **[!UICONTROL Google Ads]** card to start the setup wizard.
+
+1. In the ➊ **[!UICONTROL Authentication]** step of the wizard, select **[!UICONTROL New account]**, and enter an **[!UICONTROL Account name]**.
+
+   ![Google Ads source connector authentication step 1](../assets/paid-media-google-authentication-1.png)
+
+1. In the **[!UICONTROL Sign in with Google]** dialog, choose an account that holds the Google Ads Manager account and Google Ads accounts.
+
+   ![Google Ads source connector authentication step 2](../assets/paid-media-google-authentication-2.png)
+
+1. Verify your credentials using a passkey or other authentication mechanism.
+   
+   ![Google Ads source connector authentication step 3](../assets/paid-media-google-authentication-3.png)
+
+1. Select **[!UICONTROL Continue]** in the dialog **[!UICONTROL Adobe Experience Platform wants access to your Google account]**.
+
+   ![Google Ads source connector authentication step 4](../assets/paid-media-google-authentication-4.png)
+
+1. Upon successful authentication, you see ![CheckmarkCircle](/help/assets/icons2/CheckmarkCircle.svg) **[!UICONTROL Connected]** in the ➊ **[!UICONTROL Authentication]** step of the wizard.
+
+   ![Google Ads source connector authentication step 5](../assets/paid-media-google-authentication-5.png)
+
+   Select **[!UICONTROL Next]**.
+
+1. In the ➋ **[!UICONTROL Dataflow details]** step of the wizard, enter a **[!UICONTROL Dataflow]** name. You can also check options to subscribe to alerts
+   
+   ![Google Ads source connector dataflow details](../assets/paid-media-google-dataflow-1.png)
+
+   Select **[!UICONTROL Next]**.
+
+1. In ➌ **[!UICONTROL Review]** step of the wizard, review the source connector details.
+
+   ![Google Ads source connector review](../assets/paid-media-google-review-1.png)
+
+   Select **[!UICONTROL Finish]**.
+
+1. You finally see the details of a successful configured Google source connector.
+
+   ![Google Ads source connector final](../assets/paid-media-google-final.png)
+
+
+>[!TAB Meta]
+
+1. In Experience Platform > **[!UICONTROL Sources]**, select **[!UICONTROL Setup]** in the **[!UICONTROL Meta Ads]** card to start the setup wizard.
+
+1. In the ➊ **[!UICONTROL Authentication]** step of the wizard, select **[!UICONTROL New account]**, and enter an **[!UICONTROL Account name]**.
+   
+   ![Meta Ads source connector authentication step 1](../assets/paid-media-meta-authentication-1.png)
+
+1. Login to your Facebook account that holds a Meta Ads 
+
+![Meta Ads source connector authentication step 2](../assets/paid-media-meta-authentication-2.png)
+
+![Meta Ads source connector authentication step 3](../assets/paid-media-meta-authentication-3.png)
+
+![Meta Ads source connector dataflow](../assets/paid-media-meta-dataflow-1.png)
+
+![Meta Ads source connector review](../assets/paid-media-meta-review-1.png)
+
+![Meta Ads source connector final](../assets/paid-media-meta-final.png)
+
+>[!ENDTABS]
+
+
 After you have configured source connectors in Experience Platform, select ![Refresh](/help/assets/icons/Refresh.svg) **[!UICONTROL Refresh]** to update the list of source connectors.
 
 You see the list of available ad platforms and which of these platforms are ![StatusGreen](/help/assets/icons/StatusGreen.svg) **Connected** and which are ![StatusGray](/help/assets/icons/StatusGray.svg) **Not configured**.
@@ -606,6 +676,7 @@ When you select **[!UICONTROL Save]**, Content Analytics automatically:
 ### Save {#paidmedia-save}
 
 Select **[!UICONTROL Save]** to save the **[!UICONTROL Paid media]** configuration.
+
 
 +++
 
