@@ -84,7 +84,7 @@ To edit an existing configuration:
 
 ## Guided configuration wizard
 
-The guided configuration wizard consists of four sections ([Details](#details), [Connection](#connection), [Data view](#data-view), and [Channels](#channels)), each prompting you for details that are required to set up and configure Content Analytics properly. Complete each section before moving to the next section, as some settings in a section might depend on configuration values in earlier sections.
+The guided configuration wizard includes four sections: [Details](#details), [Connection](#connection), [Data view](#data-view), and [Channels](#channels). Each section prompts for details required to configure Content Analytics. Complete each section before moving to the next, as some settings depend on configuration values in earlier sections.
 
 ### Details {#onboarding-details}
 
@@ -96,7 +96,7 @@ The guided configuration wizard consists of four sections ([Details](#details), 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="Details"
->abstract="This guide sets up the requirements needed to configure Content Analytics. Please provide a name for this configuration and select the sandbox that contains the content analytics data you want to analyze."    
+>abstract="This guide sets up the requirements to configure Content Analytics. Provide a name for this configuration and select the sandbox that contains the content analytics data you want to analyze."    
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_boldheader"
@@ -106,7 +106,7 @@ The guided configuration wizard consists of four sections ([Details](#details), 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_header"
 >title="Connection"
->abstract="Select an existing connection from Customer Journey Analytics that you would like to merge your Content Analytics data with."    
+>abstract="Select an existing connection from Customer Journey Analytics to merge your Content Analytics data with."    
 
 Each configuration requires a unique name. For example, `Example Content Analytics configuration`. The name is required to save or implement a configuration.
 
@@ -147,7 +147,7 @@ If you already have selected a connection, but you want to change that connectio
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="Data view"
->abstract="Select an existing data view from Customer Journey Analytics that you would like to merge your Content Analytics data with." 
+>abstract="Select an existing data view from Customer Journey Analytics to merge your Content Analytics data with." 
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
@@ -485,7 +485,7 @@ To include experiences in a new or not implemented configuration:
    
 1. Select **[!UICONTROL Add Regex]** to add a combination of a domain regular expression and query parameters.
 1. Specify how content renders on your website by defining combinations of a **[!UICONTROL Domain regular expression]** and **[!UICONTROL Query parameters]** that affect page content.
-   1. Enter a **[!UICONTROL Domain regular expression]**, for example `/^(?!.*\b(store|help|admin)\b)/`. Ensure you escape regular expressions, using `/`. The domain regular expression indicates which URLs these parameters apply to. For example, you may have multiple sites, and for each site different parameters drive the content. If the query parameters apply to all of your pages, then you can use `.*` to indicate all pages.
+   1. Enter a **[!UICONTROL Domain regular expression]**, for example `/^(?!.*\b(store|help|admin)\b)/`. Ensure you escape regular expressions, using `/`. The domain regular expression indicates which URLs these parameters apply to. For example, you have multiple sites, and different parameters drive the content for each site. If the query parameters apply to all of your pages, then you can use `.*` to indicate all pages.
    1. Specify a comma separated list of **[!UICONTROL Query parameters]**, for example `outdoors, patio, kitchen`.
 1. Select **[!UICONTROL Remove]** if you want to remove a combination of domain regular expression and query parameters.
 1. Select **[!UICONTROL Add Regex]** if you want to add another combination of a regular expression and query parameters.
@@ -524,7 +524,7 @@ To configure data collection:
     1. Specify a **[!UICONTROL Tags name]**, for example `ACA Test for Documentation`.
     1. Specify **[!UICONTROL Domains]**, for example, `example.com`.
 
-    Use a new Tags property if you want to create a Tags agnostic implementation for the web channel, using the [Content Analytics Javascript library](/help/content-analytics/config/tags-agnostic.md). The Tags property is created, but you will not use the property in the agnostic implementation. However, the agnostic implementation requires that you have run the guided configuration wizard at least once.
+    Use a new Tags property if you want to create a Tags agnostic implementation for the web channel, using the [Content Analytics JavaScript library](/help/content-analytics/config/tags-agnostic.md). The Tags property is created, but you do not use the property in the agnostic implementation. However, the agnostic implementation requires that you have run the guided configuration wizard at least once.
 
 * Indicate which pages should be included or excluded when collecting data for Content Analytics. Ensure you exclude personally identifiable pages. 
   
@@ -576,6 +576,11 @@ After you have specified the details for the web channel, select **[!UICONTROL S
 
 +++ Details
 
+>[!NOTE]
+>
+>The paid media channel is not available for Customer Journey Analytics and  Experience Platform deployments on AWS.
+
+
 For the paid media channel, all the supported [ad platforms](#paidmedia-adplatforms) that are connected in the configured sandbox are automatically included in Content Analytics.
 
 ### Ad platforms {#paidmedia-adplatforms}
@@ -588,13 +593,18 @@ If you do see **[!UICONTROL No supported source connector found]**, you have not
 
 To configure source connectors for your ad platforms, select **[!UICONTROL Go to AEP Sources]**. You are redirected to the **[!UICONTROL Sources]** interface in Experience Platform.
 
-See below for examples on how to configure the source connectors for Google and Meta.
+See below for examples on how to configure the Google Ads and Meta Ads source connector.
 
 >[!BEGINTABS]
 
->[!TAB Google]
+>[!TAB Google Ads]
 
 1. In Experience Platform > **[!UICONTROL Sources]**, select **[!UICONTROL Setup]** in the **[!UICONTROL Google Ads]** card to start the setup wizard.
+
+   >[!WARNING]
+   >
+   >Do not use **[!UICONTROL Setup]** in the **Google Ads (beta)** card.
+
 
 1. In the ➊ **[!UICONTROL Authentication]** step of the wizard, select **[!UICONTROL New account]**, and enter an **[!UICONTROL Account name]**.
 
@@ -618,7 +628,7 @@ See below for examples on how to configure the source connectors for Google and 
 
    Select **[!UICONTROL Next]**.
 
-1. In the ➋ **[!UICONTROL Dataflow details]** step of the wizard, enter a **[!UICONTROL Dataflow]** name. You can also check options to subscribe to alerts
+1. In the ➋ **[!UICONTROL Dataflow details]** step of the wizard, enter a **[!UICONTROL Dataflow]** name. You can also check options to subscribe to alerts.
    
    ![Google Ads source connector dataflow details](../assets/paid-media-google-dataflow-1.png)
 
@@ -630,12 +640,12 @@ See below for examples on how to configure the source connectors for Google and 
 
    Select **[!UICONTROL Finish]**.
 
-1. You finally see the details of a successful configured Google source connector.
+1. You finally see the details of a successfully configured Google source connector.
 
    ![Google Ads source connector final](../assets/paid-media-google-final.png)
 
 
->[!TAB Meta]
+>[!TAB Meta Ads]
 
 1. In Experience Platform > **[!UICONTROL Sources]**, select **[!UICONTROL Setup]** in the **[!UICONTROL Meta Ads]** card to start the setup wizard.
 
@@ -643,20 +653,39 @@ See below for examples on how to configure the source connectors for Google and 
    
    ![Meta Ads source connector authentication step 1](../assets/paid-media-meta-authentication-1.png)
 
-1. Login to your Facebook account that holds a Meta Ads 
+1. Login to your Facebook account for which you have configured Ads Manager. If you are already logged in, a dialog appears to continue as the logged in user.
 
-![Meta Ads source connector authentication step 2](../assets/paid-media-meta-authentication-2.png)
+   ![Meta Ads source connector authentication step 2](../assets/paid-media-meta-authentication-2.png)
 
-![Meta Ads source connector authentication step 3](../assets/paid-media-meta-authentication-3.png)
+1. Upon successful authentication, you see ![CheckmarkCircle](/help/assets/icons2/CheckmarkCircle.svg) **[!UICONTROL Connected]** in the ➊ **[!UICONTROL Authentication]** step of the wizard.
+   
+   ![Meta Ads source connector authentication step 3](../assets/paid-media-meta-authentication-3.png)
 
-![Meta Ads source connector dataflow](../assets/paid-media-meta-dataflow-1.png)
+   Select **[!UICONTROL Next]**.
 
-![Meta Ads source connector review](../assets/paid-media-meta-review-1.png)
+1. In the ➋ **[!UICONTROL Select accounts]** step of the wizard, select the accounts you want to configure.
+   
+   ![Meta Ads source connector select accounts](paid-media-meta-select-account.png)
 
-![Meta Ads source connector final](../assets/paid-media-meta-final.png)
+   Select **[!UICONTROL Next]**.
+
+1. In the ➌ **[!UICONTROL Dataflow details]** step of the wizard, enter a **[!UICONTROL Dataflow]** name. You can also check options to subscribe to alerts.
+
+   ![Meta Ads source connector dataflow](../assets/paid-media-meta-dataflow-1.png)
+
+   Select **[!UICONTROL Next]**.
+
+1. In ➍ **[!UICONTROL Review]** step of the wizard, review the source connector details.
+
+   ![Meta Ads source connector review](../assets/paid-media-meta-review-1.png)
+
+1. You finally see the details of a successful configured Google source connector.
+ 
+   ![Meta Ads source connector final](../assets/paid-media-meta-final.png)
 
 >[!ENDTABS]
 
+See [Source connectors overview](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home) for more information on the supported source connectors for the paid media channel.
 
 After you have configured source connectors in Experience Platform, select ![Refresh](/help/assets/icons/Refresh.svg) **[!UICONTROL Refresh]** to update the list of source connectors.
 
@@ -684,7 +713,7 @@ Select **[!UICONTROL Save]** to save the **[!UICONTROL Paid media]** configurati
 
 Once you have provided all necessary details, a summary provides details on the artifacts that are created or modified.
 
-* You see a **[!UICONTROL You're almost ready to implement _configuration name_ for Content Analytics]** summary when you implement a new configuration. 
+* You see a **[!UICONTROL You are ready to implement _configuration name_ for Content Analytics]** summary when you implement a new configuration. 
 
 * For existing implemented configurations, you see a **[!UICONTROL You have implemented _configuration name_ for Content Analytics]** summary.
 
@@ -700,7 +729,7 @@ Once you have provided all necessary details, a summary provides details on the 
 When you create or edit a configuration you have these options:
 
 * **[!UICONTROL Discard]**: All changes made as part of configuration are discarded.
-* **[!UICONTROL Save for later]**: Changes made to a configuration are saved. You can revisit the configuration at a later stage to make further changes, or implement the configuration. Only a value for [!UICONTROL Name] is required to save a configuration.
+* **[!UICONTROL Save for later]**: Changes made to a configuration are saved. To make further changes or implement the configuration, revisit it at a later stage. Only a value for [!UICONTROL Name] is required to save a configuration.
 * **[!UICONTROL Implement]**: Settings for or changes made to a configuration are saved and implemented. All fields marked as ![Required](/help/assets/icons/Required.svg) need to have proper values. The implementation consists of:
   
   * **[!UICONTROL Customer Journey Analytics]** configuration:
