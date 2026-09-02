@@ -163,17 +163,17 @@ To access all available pre-built templates:
    
    * **[[!UICONTROL Most popular]](#most-popular)**
 
-   * **[[!UICONTROL Web]** > **[!UICONTROL Engagement]](#engagement)**
+   * **[!UICONTROL Web]** > **[[!UICONTROL Engagement]](#web-engagement)**
 
-   * **[[!UICONTROL Web]** > **[!UICONTROL Conversion]](#web-conversion)**
+   * **[!UICONTROL Web]** > **[[!UICONTROL Conversion]](#web-conversion)**
 
-   * **[[!UICONTROL Web]** > **[!UICONTROL Audience]](#web-audience)**
+   * **[!UICONTROL Web]** > **[[!UICONTROL Audience]](#web-audience)**
 
-   * **[[!UICONTROL Web]** > **[!UICONTROL Acquisition]](#web-acquisition)**
+   * **[!UICONTROL Web]** > **[[!UICONTROL Acquisition]](#web-acquisition)**
 
-   * **[[!UICONTROL Mobile]** > **[!UICONTROL Mobile App]](#mobile-mobile-app)**
+   * **[!UICONTROL Mobile]** > **[[!UICONTROL Mobile App]](#mobile-mobile-app)**
 
-   * **[[!UICONTROL Mobile]** > **[!UICONTROL Mobile Device Information]](#mobile-mobile-device-information)**
+   * **[!UICONTROL Mobile]** > **[[!UICONTROL Mobile Device Information]](#mobile-mobile-device-information)**
 
    * **[[!UICONTROL Time Parting]](#time-parting)**
    
@@ -181,7 +181,13 @@ To access all available pre-built templates:
 
    * **[[!UICONTROL Other Channels]](#other-channels)**
 
-   * **[[!UICONTROL AJO]](#ajo)**
+   * **[[!UICONTROL Journey Optimizer]](#ajo-templates)**
+
+   * **[[!UICONTROL Brand Concierge]](#brand-concierge)**
+
+   * **[[!UICONTROL Mix Modeler]](#mix-modeler)**
+
+
 
 ### Most popular {#most-popular}
 
@@ -419,6 +425,12 @@ The following templates are available:
 >abstract="**This can help you** learn how your content is performing at a granular level. You can look at the performance of individual assets, or specific attributes. Content Analytics uses AI to automatically generate attributes and tag your content with them. [More information](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics).<br/>**Based on what you learn, you might** do any number of things, like promote high performing assets on your home page, personalize content for specific segments to include high performing attributes, or rotate out content that has started to get stale."
 
 
+
+>[!CONTEXTUALHELP]
+>id="template--content-analytics-paid-media"
+>title="Learn what paid media content and content attributes are performing best."
+>abstract="**This can help you** learn how your paid media content is performing at a granular level. You can review paid media reach, engagement, spend, and efficiency across networks, accounts, campaigns, experiences, and assets. The metrics and dimensions in this panel intentionally stay in the paid media asset-summary grain. Do not combine summary datasets with event data.  [More information](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics).<br/>**Based on what you learn, you might** do any number of things, like refocus on how you spend money on your paid media channels, spend more money on low performing campaigns, or spend more money on campaigns with high performing assets."
+
 The following templates are available:
 
 | Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
@@ -437,7 +449,8 @@ The following templates are available:
 | **Entry pages** | View the top pages that people access upon first visiting your site. <p>**This can help you** better understand which pages are driving the most traffic to your site or understand more about the first impressions visitors have on your site.</p><p>**Based on what you learn, you might** do any number of things, like optimize the initial experience people get on the site, or ensure that the pages people first see upon entering your site are welcoming and provide the necessary links to other areas of your site.</p><p>This template uses the Sessions metric. It also uses the Bar visualization and the Freeform table visualization.</p> |
 | **Exit pages** | View the top pages that people access immediately before leaving your site.<p>**This can help you** better understand which pages are leading people away from the site. </p><p>**Based on what you learn, you might** do any number of things, like update common exit pages to optimize the experience people get before they leave, or include content or links to encourage people to stay on your site.</p><p>This template uses the Sessions metric. It also uses the Bar visualization and the Freeform table visualization.</p> |
 | **Product usage overview** | View how the Customer Journey Analytics product is used within your organization. <p>**This can help you** better understand how many people use Customer Journey Analytics, how often they use it, and usage trends over time. You can also see the number of projects being created and details about those projects (such as which components, visualizations, and panels are most commonly used), and many other usage statistics.</p><p>**Based on what you learn, you might** do any number of things, like delete unused projects or components, or provide user training for popular features.</p> |
-| **Content Analytics** | Learn what content and content attributes are performing best.<p>**This can help you** learn how your content is performing at a granular level. You can look at the performance of individual assets, or specific attributes. Content Analytics uses AI to automatically generate attributes and tag your content with them. See [Content Analytics](/help/content-analytics/content-analytics.md){target="_blank"} for more information.</p><p>**Based on what you learn, you might** do any number of things, like promote high performing assets on your home page, personalize content for specific segments to include high performing attributes, or rotate out content that has started to get stale.</p> |
+| **Content Analytics** | Learn what content and content attributes are performing best.<p>**This can help you** learn how your content is performing at a granular level. You can look at the performance of individual assets, or specific attributes. Content Analytics uses AI to automatically generate attributes and tag your content with them. See [Content Analytics](/help/content-analytics/content-analytics.md) for more information.</p><p>**Based on what you learn, you might** do any number of things, like promote high performing assets on your home page, personalize content for specific segments to include high performing attributes, or rotate out content that has started to get stale.</p> |
+| **Paid media Content Analytics** | Learn what paid media content and content attributes are performing best.<p>**This can help you** learn how your paid media content is performing at a granular level. You can review paid media reach, engagement, spend, and efficiency across networks, accounts, campaigns, experiences, and assets. The metrics and dimensions in this panel intentionally stay in the paid media asset-summary grain. Do not combine summary datasets with event data. See [Content Analytics](/help/content-analytics/content-analytics.md) for more information.<p/><p>**Based on what you learn, you might** do any number of things, like refocus on how you spend money on your paid media channels, spend more money on low performing campaigns, or spend more money on campaigns with high performing assets.</p> |
 
 ### Web: Conversion {#web-conversion}
 
@@ -1061,7 +1074,7 @@ The following templates are available:
 | **Survey** | View user engagement for your surveys. View the number of starts and completions, the top questions and answers, and the number of first vs. repeat participants.<p>**This can help you** better understand the engagement levels and success rate of your surveys.</p><p>**Based on what you learn, you might** do any number of things, like adjust future surveys to yield better participation.</p><p>This template uses the Users, Events, Survey starts, Survey completes, and Survey completion rate metrics.</p>  |
 | **Product usage overview** | View how your organization uses Customer Journey Analytics.<p>**This can help you** better understand how many people in your organization use Customer Journey Analytics, how often they use it, and trend that data over time. You can also see the number of projects created and details about those projects. See which components, visualizations, and panels are most commonly used, among other usage statistics. [Learn more](/help/tools/product-usage/usage-overview.md)</p><p>**Based on what you learn, you might** do any number of things, like delete unused projects or components, or provide user training for popular features.</p> |
 
-### Journey Optimizer {#AJO-templates}
+### Journey Optimizer {#ajo-templates}
 
 <!--CJA only-->
 
@@ -1149,13 +1162,7 @@ The following templates are available:
 | [!UICONTROL **B2B Buying Group Activity**] | Visualize buying-group activity within each account to inform account and buying group-marketing plays.<p>**This can help you** to visualize which buying groups, and which people within those buying groups, are most engaged, highlighting gaps in group participation.</p><p>**Based on what you learn, you might** do any number of things, like trying to engage more with people in buying groups that do not seem to be involved.</p> |
 
 
-### Mix Modeler templates {#mix-modeler-templates}
-
-The following templates are available:
-
-| Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
-| --- | --- |
-| [!UICONTROL **Mix Modeler incremental model insights**] | View insights from selected models generated by Mix Modeler.<p>**This can help you** to better understand the incremental insights from models generated in Mix Modeler. <p>**Based on these insights** you will be able to:<ul><li>Visualize and quantify the impact of your organization's marketing activities.</li><li>Identify which channels are high-performing.</li><li>Identify which channels might need optimization.</li></ul></p> |
+### Mix Modeler {#mix-modeler-templates}
 
 <!-- CJA only -->
 
@@ -1163,3 +1170,13 @@ The following templates are available:
 >id="template--mixmodeler-incremental-models-insights"
 >title="View insights from selected models generated by Mix Modeler."
 >abstract="**This can help you** to better understand the incremental insights from models generated in Mix Modeler. <br/>**Based on these insights** you will be able to:<ul><li>Visualize and quantify the impact of your organization's marketing activities.</li><li>Identify which channels are high-performing.</li><li>Identify which channels might need optimization.</li></ul>"
+
+The following templates are available:
+
+| Template name | Why use this template <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- |
+| [!UICONTROL **Mix Modeler incremental model insights**] | View insights from selected models generated by Mix Modeler.<p>**This can help you** to better understand the incremental insights from models generated in Mix Modeler. <p>**Based on these insights** you will be able to:<ul><li>Visualize and quantify the impact of your organization's marketing activities.</li><li>Identify which channels are high-performing.</li><li>Identify which channels might need optimization.</li></ul></p> |
+
+
+
+
