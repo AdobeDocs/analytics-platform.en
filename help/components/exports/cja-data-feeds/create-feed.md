@@ -79,6 +79,15 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_datafeed_required_dimensions"
+>title="Required dimensions"
+>abstract="Every data feed must include certain dimensions, identified by a **Required** label next to the dimension name. These dimensions provide the minimum structure needed for event-level analysis."
+
+<!-- markdownlint-enable MD034 -->
+
 1. Log in to [experiencecloud.adobe.com](https://experiencecloud.adobe.com) using your Adobe ID credentials.
 
 1. Select [!UICONTROL **Customer Journey Analytics**] from the app switcher ![App](/help/assets/icons/Apps.svg) at the top right of the interface.
@@ -140,11 +149,11 @@ Before you create a data feed, it's important to have a basic understanding of d
 
    | Dimension name | Notes | Data feeds | Other reporting |
    |---|---|---|---|
-   | Timestamp UTC | The date and time the event occurred, represented in UTC time zone. Supports sub-second (micro-second) granularity. | Mandatory | Not available |
-   | Row ID | The unique identifier for each row included in the data feed. | Mandatory | Not available |
-   | Session ID | The unique identifier for each session included in the data feed. | Mandatory | Not available |
-   | Person ID | The person identifier for the data view and connection | Mandatory | Optional standard |
-   | Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Account ID when using the Account container | Mandatory | Optional standard |
+   | Timestamp UTC | The date and time the event occurred, represented in UTC time zone. Supports sub-second (micro-second) granularity. | Required | Not available |
+   | Row ID | The unique identifier for each row included in the data feed. | Required | Not available |
+   | Session ID | The unique identifier for each session included in the data feed. | Required | Not available |
+   | Person ID | The person identifier for the data view and connection | Required | Optional standard |
+   | Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Account ID when using the Account container | Required | Optional standard |
    
    +++
 
