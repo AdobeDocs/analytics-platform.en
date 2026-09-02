@@ -1,6 +1,6 @@
 ---
-title: B2B Account Stitching
-description: Learn how B2B account stitching in Customer Journey Analytics enriches event datasets with account information and enables complete journey analysis across your B2B data.
+title: B2B Person-To-Account Stitching
+description: Learn how B2B person to ccount stitching in Customer Journey Analytics enriches event datasets with account information and enables complete journey analysis across your B2B data.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 hide: true
@@ -29,22 +29,22 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
 ---
-# B2B account stitching
+# B2B person to account stitching
 
-B2B account stitching enriches your event datasets with account identities and enables complete analysis across the full customer journey in Customer Journey Analytics. When events lack an account ID, which Customer Journey Analytics B2B edition requires for ingestion, account stitching derives and adds that information automatically using a [person-to-account mapping dataset](#prerequisites) you provide.
+B2B person to account stitching enriches your event datasets with account identities and enables complete analysis across the full customer journey in Customer Journey Analytics. When events lack an account ID, which Customer Journey Analytics B2B edition requires for ingestion, person-to-account stitching derives and adds that information automatically using a [person-to-account mapping dataset](#prerequisites) you provide.
 
-Without account stitching, any event that does not contain an account ID is dropped during ingestion. Account stitching resolves this limitation by looking up the account associated with the person on each event, adding the account ID both as the event is ingested and retroactively.
+Without person to account stitching, any event that does not contain an account ID is dropped during ingestion. Person-to account stitching resolves this limitation by looking up the account associated with the person on each event, adding the account ID both as the event is ingested and retroactively.
 
 >[!NOTE]
 >
->B2B account stitching requires that you are entitled to the [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md) in your environment before you can configure the functionality.
+>B2B person to account stitching requires that you are entitled to the [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md) in your environment before you can configure the functionality.
 
-Account stitching performs the following operations on your datasets:
+Person to account stitching performs the following operations on your datasets:
 
-* **Elevate person identity**: The persistent person ID on each event is elevated to person ID from the configured identity namespace, using the identity graph.
+* **Elevate person identity**: Similar to the [B2C stitching approach](/help/stitching/overview.md), you will configure a field holding persistent person IDs. Using the identity graph, the persistent person ID on each event is elevated to a person ID from the configured person identifier namespace. 
 * **Add missing account identities**: After obtaining the person ID information for an event, the [person-to-account mapping](#prerequisites) is used to derive and add the account identity information. Any account identity available on the event itself is used as a fallback method.".
 
-## How B2B account stitching works
+## How B2B person to account stitching works
 
 To illustrate how B2B account stitching works, the dataset shown below is used as the starting point.
 
@@ -62,7 +62,7 @@ In Customer Journey Analytics B2B Edition, events with no account ID in this non
 | ![DataAdd](/help/assets/icons/DataAdd.svg)| 6/1/25 | 8989 | Ubiquity | cassidy@ubiquity.com | |
 | ![FilterDelete](/help/assets/icons/DeleteOutline.svg)  | 6/2/25 | 1111 |  | | |
 
-B2B account stitching prevent the events from being ignored and not ingested using the following operations:
+B2B person to account stitching prevents the events from being ignored and not ingested using the following operations:
 
 * [Elevate person identities](#elevate-person-identities).
 * [Add missing account identities](#add-missing-account-identitiers).
@@ -72,7 +72,7 @@ B2B account stitching prevent the events from being ignored and not ingested usi
 
 +++ Details
 
-To support B2B account stitching, you provide a person-to-account mapping dataset. For example:
+To support B2B person to account stitching, you provide a person-to-account mapping dataset. For example:
 
 | CRM ID | Account ID |
 |---|---|
@@ -144,11 +144,11 @@ Before you enable B2B account stitching, prepare the following datasets in Adobe
 >
 >The person ID field in your **[!UICONTROL person-to-account]** dataset must be marked as an identity in your schema.
 
-## Enable account stitching {#enable-account-stitching}
+## Enable person to account stitching {#enable-account-stitching}
 
 You first enable and configure B2B account stitching at the connection level. When B2B account stitching is configured for a connection, you can then activate account stitching on individual event datasets within that connection.
 
-### Configure B2B stitching settings {#configure-b2b-stitching-settings}
+### Configure B2B person to account stitching settings {#configure-b2b-stitching-settings}
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_open_configuration"
@@ -191,19 +191,19 @@ You first enable and configure B2B account stitching at the connection level. Wh
 
 1. In **[!UICONTROL Connection settings]**, set the **[!UICONTROL Primary ID]** to ![Building](/help/assets/icons/Building.svg) **[!UICONTROL Account]**.
 
-1. Ensure you select the **[!UICONTROL Optional containers]** you want to use in your B2B connection. You cannot modify the selection of these containers once you have saved a B2B stitching configuration.
+1. Ensure you select the **[!UICONTROL Optional containers]** you want to use in your B2B connection. You cannot modify the selection of these containers once you have saved a B2B person to account stitching configuration.
 
 1. Select **[!UICONTROL Open B2B stitching configuration]**.
 
-   ![B2B saccount titching configuration](assets/b2b-account-stitching-configuration.png)
+   ![B2B saccount titching configuration](../assets/b2b-account-stitching-configuration.png)
 
    >[!NOTE]
    >
-   >A previously configured B2B stitching configuration for an unsaved connection is indicated with **[!UICONTROL _Unsaved changes_]**. You cannot modify **[!UICONTROL Optional containers]** for a previously configured B2B stitching configuration.
+   >A previously configured B2B person to account stitching configuration for an unsaved connection is indicated with **[!UICONTROL _Unsaved changes_]**. You cannot modify **[!UICONTROL Optional containers]** for a previously configured B2B person to account stitching configuration.
 
 1. In the **[!UICONTROL B2B stitching configuration]** dialog:
 
-   ![B2B stitching configuration](assets/b2b-stitching-configuration.png)
+   ![B2B person to account stitching configuration](../assets/b2b-stitching-configuration.png)
 
    1. Configure the **[!UICONTROL Person]** section:
       
@@ -226,16 +226,16 @@ You first enable and configure B2B account stitching at the connection level. Wh
 
    1. The **[!UICONTROL _Unsaved changes_]** indicator appears next to the **Open B2B stitching configuration** button until you [save](#save) the connection.
 
-### Enable B2B stitching on event datasets
+### Enable B2B person to account stitching on event datasets
 
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="Enable person to account stitching"
 >abstract="If enabled, this dataset uses B2B Person to Account stitching. The **[!UICONTROL Persistent Person ID]** values will be elevated to the ones from configured **[!UICONTROL Person identifier namespace]**, then used to lookup the account ID based on the person-to-account dataset.<br/>If disabled, this dataset does not use B2B Person to Account stitching and you have to select a required **[!UICONTROL Account ID]** instead."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/b2b-account-stitching#configure-b2b-stitching-settings" text="Configure B2B stitching settings"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/b2b-account-stitching#configure-b2b-stitching-settings" text="Configure B2B person to account stitching settings"
 
-After configuring B2B stitching at the connection level, you must enable B2B account stitching individually for each event dataset that you want stitched.
+After configuring B2B person to account stitching at the connection level, you must enable B2B person to account account stitching individually for each event dataset that you want stitched.
 
 1. In Connection settings, select **[!UICONTROL Add datasets]** or open the settings for an existing event dataset.<br/>See [Add datasets](/help/connections/create-connection.md#add-datasets) or [Edit a dataset](/help/connections/create-connection.md#edit-a-dataset) for more information.
 
@@ -266,11 +266,11 @@ When **[!UICONTROL Enable Person to Account stitching]** is **off**, you have *n
 
 ### Save
 
-After you have configured the B2B stitching configuration and have finished adding or editing datasets, select **[!UICONTROL Save]** to save the connection.
+After you have configured the B2B person to account stitching configuration and have finished adding or editing datasets, select **[!UICONTROL Save]** to save the connection.
 
 >[!IMPORTANT]
 >
->Once a connection is saved, the B2B stitching configuration becomes immutable. To view your settings after saving, select **Open B2B stitching configuration**. All fields appear in a read-only state. Additionally, if the dataset used for [person-to-account mapping](#prerequisites) is deleted in Experience Platform, the stitching configuration is deleted and the connection goes into an invalid state, signaled with a warning message in the user interface.
+>Once a connection is saved, the B2B person to account stitching configuration becomes immutable. To view your settings after saving, select **Open B2B stitching configuration**. All fields appear in a read-only state. Additionally, if the dataset used for [person-to-account mapping](#prerequisites) is deleted in Experience Platform, the stitching configuration is deleted and the connection goes into an invalid state, signaled with a warning message in the user interface.
 
 ## Data update schedule
 
