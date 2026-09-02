@@ -31,7 +31,7 @@ topic_v2:
 ---
 # Consent reporting and filtering overview
 
-Consent reporting and filtering uses the consent policy membership data stored in your Adobe Experience Platform Profile datasets to help you report on visitor consent and, optionally, exclude non-consenting visitors before their data is ingested into Customer Journey Analytics.
+Consent reporting and filtering uses the consent policy membership data stored in your Adobe Experience Platform Profile datasets to help you report on visitor consent. Additionally, you can choose to exclude non-consenting visitors before their data is ingested into Customer Journey Analytics.
 
 ## Prerequisites
 
@@ -58,7 +58,23 @@ The following diagram and associated table show a high-level representation of h
 
 ## Consent reporting vs. filtering
 
-Consent reporting and filtering are two separate capabilities. You can enable consent reporting on its own, or enable both reporting and filtering together.
+Consent reporting and filtering are two separate capabilities. **Consent reporting** allows you to use Analysis Workspace to report on which visitors match the various consent policies that are configured in your Experience Platform Profile datasets. **Consent filtering** tells Customer Journey Analytics to exclude non-consenting visitors at ingest time. 
+
+You can enable either consent reporting or filtering individually, or use both together. Enabling consent reporting alone is sufficient for many business use cases. 
+
+The following information describes reasons for using each configuration:
+
+* **Most common:**
+
+  **Use consent data for reporting (without filtering)**: This configuration is useful when you want to analyze consent policy membership in Analysis Workspace, and you don't need to exclude any visitor data from ingestion.
+
+* **Less common:** 
+
+  **Use both consent data for reporting and filter consent data**: This configuration is useful when you want to analyze consent policy membership data in Analysis Workspace, and when your organization also requires you to exclude non-consenting visitor data at ingest time. 
+
+* **Uncommon:**
+
+  **Filter consent data (without reporting)**: This configuration is uncommon, but could be useful when your organization requires you to exclude non-consenting visitor data at ingest time, but you don't need to report on other consent choices that are not part of the filtered data. For example, your organization's compliance requirements might mandate that you filter data based on consent, without requiring you to create and maintain the consent policy lookup dataset that reporting uses.
 
 ### Consent reporting
 
@@ -82,10 +98,12 @@ Consider the following when using consent filtering:
 
   A marketing action represents a category of data use. Customer Journey Analytics determines which consent policies apply to each marketing action, and you enable filtering for each marketing action independently when [creating your configuration](/help/connections/consent-reporting-filtering/consent-configure.md#create-a-configuration).
 
+  Marketing actions are tied to the data usage labels and policies that you configure in Experience Platform. For more information, see [Labels, policies, and marketing actions](/help/data-views/data-governance.md).
+
   | Marketing action | Description |
-  |---------|----------|
-  | **[!UICONTROL Analytics data]** | Standard Customer Journey Analytics reporting in Analysis Workspace. |
-  | **[!UICONTROL Data science data]** | Advanced analytics, machine learning, and data science use cases. |
+  | --------- | ---------- |
+  | **[!UICONTROL Analytics data]** | Filter data used for standard Customer Journey Analytics reporting in Analysis Workspace. |
+  | **[!UICONTROL Data science data]** | Filter data used for advanced analytics, machine learning, and data science use cases. |
 
 * A visitor's data is ingested only if the visitor matches **all** applicable consent policies. If a visitor is missing any applicable policy, that visitor's data is excluded.
 
