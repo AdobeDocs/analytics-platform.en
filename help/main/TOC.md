@@ -466,7 +466,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Validate stitching](/help/stitching/validate.md)
   + [Frequently Asked Questions](/help/stitching/faq.md)  
   + B2B {#b2b}
-    + {hide-from-toc} [Person to account stitching](/help/stitching/b2b/b2b-person-to-account-stitching.md)
+    + [Person to account stitching](/help/stitching/b2b/b2b-person-to-account-stitching.md)
 
 + Total population reporting {#tpr}
   + {hide-from-toc} [Overview](/help/tpr/tpr.md)

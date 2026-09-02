@@ -3,7 +3,6 @@ title: B2B Person-To-Account Stitching
 description: Learn how B2B person to ccount stitching in Customer Journey Analytics enriches event datasets with account information and enables complete journey analysis across your B2B data.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-hide: true
 role: Admin
 autotag-review: '2026-05-19T11:01:07.331Z'
 TQID: 'https://experienceleague.adobe.com/-7rHOhYVCp-nSMqdE7YlAlCJ0zRQYvPOViMHSCNuKV8'
