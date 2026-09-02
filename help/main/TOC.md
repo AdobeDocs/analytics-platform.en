@@ -581,3 +581,4 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
 + [Customer Journey Analytics MCP server](https://developer.adobe.com/analytics-mcp/docs/cja/)
+
