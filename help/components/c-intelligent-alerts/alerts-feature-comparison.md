@@ -1,6 +1,6 @@
 ---
 description: Learn how alerts differ in Customer Journey Analytics from Adobe Analytics
-title: Alerts feature comparison Customer Journey Analytics and Adobe Analytics
+title: Alerts feature comparison between Customer Journey Analytics and Adobe Analytics
 feature: Workspace Basics
 role: User, Admin
 exl-id: 04e819c4-9fb5-4459-9f8b-40d78385ed90
@@ -27,15 +27,15 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
 ---
-# Alerts feature comparison
+# Alerts feature comparison between Customer Journey Analytics and Adobe Analytics
 
 The process of using alerts in Customer Journey Analytics is nearly identical to using alerts in Adobe Analytics. However, there are important differences. The following sections describe the key differences.
 
-## Hourly alerts are not available
+## Hourly alerts can be impractical for certain types of data
 
-Hourly alerts are **not** available in Customer Journey Analytics while hourly alerts are available in Adobe Analytics. In Customer Journey Analytics, alerts can be configured for daily, weekly, or monthly. 
+Because you can ingest various types of data into Adobe Experience Platform, not all data that can be included in an alert is practical for an hourly alert. Certain types of data cannot be reliably ingested and available within the constraints of an hour. 
 
-You can ingest data into Adobe Experience Platform in various ways. As a result, data completeness and availability cannot be reliably achieved within the constraints of an hour.  The flexibility of data ingesting implies that hourly alerts are impractical due to the high potential for incomplete data. For more information, see [Data ingestion times vary](#data-ingestion-times-vary-in-customer-journey-analytics).
+For more information, see [Data ingestion times vary](#data-ingestion-times-vary-in-customer-journey-analytics).
 
 ## Data ingestion times vary
 
@@ -61,7 +61,7 @@ For more information about how to adjust the delay, and the factors you should c
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. --> 
 
-## Create an alert
+## Fewer ways to create alerts
 
 In Analysis Workspace in Adobe Analytics, you can [create alerts from Analysis Workspace in multiple ways](https://experienceleague.adobe.com/en/docs/analytics/components/alerts/alert-builder). In Customer Journey Analytics, you can only [create an alert](alert-builder.md) in Analysis Workspace from a selection in a freeform table.
 
