@@ -146,7 +146,7 @@ Before you enable B2B account stitching, prepare the following datasets in Adobe
 
 ## Enable person to account stitching {#enable-account-stitching}
 
-You first enable and configure B2B account stitching at the connection level. When B2B account stitching is configured for a connection, you can then activate account stitching on individual event datasets within that connection.
+You first enable and configure B2B stitching at the connection level. When B2B stitching is configured for a connection, you can then activate person to account stitching on individual event datasets within that connection.
 
 ### Configure B2B person to account stitching settings {#configure-b2b-stitching-settings}
 
@@ -250,7 +250,7 @@ When **[!UICONTROL Enable Person to Account stitching]** is **on**, you have con
 * The configuration of a person ID is required. That person ID is used to look up the account ID based on the [person-to-account dataset](#prerequisites).
 * The configuration of an account ID is optional.
 
-![B2B account stitching on event dataset on](assets/b2b-event-dataset-stitching-on.png)
+![B2B account stitching on event dataset on](../assets/b2b-event-dataset-stitching-on.png)
 
 >[!TAB Off]
 
@@ -259,7 +259,7 @@ When **[!UICONTROL Enable Person to Account stitching]** is **off**, you have *n
 * The configuration of an account ID is required. 
 * The configuration of a person ID is optional.
 
-![B2B account stitching on event dataset off](assets/b2b-event-dataset-stitching-off.png)
+![B2B account stitching on event dataset off](../assets/b2b-event-dataset-stitching-off.png)
 
 >[!ENDTABS]
 
@@ -289,7 +289,7 @@ B2B entities like accounts, account IDs, and global account IDs added to events 
 
 >[!MORELIKETHIS]
 >
->* [Stitching overview](overview.md)
->* [Configure a connection for B2B](../connections/create-connection.md)
->* [Frequently asked questions about stitching](faq.md)
+>* [Stitching overview](../overview.md)
+>* [Configure a connection for B2B](/help/connections/create-connection.md)
+>* [Frequently asked questions about stitching](../faq.md)
 
