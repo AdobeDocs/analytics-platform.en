@@ -78,7 +78,7 @@ Specify the following details in the Alerts builder for an alert:
 
 | Element | Description |
 |---------|----------|
-| **[!UICONTROL Title]**  | Specify a name for the alert. The alert name might contain the name of the report or the metrics threshold. |
+| **[!UICONTROL Title]** | Specify a name for the alert. The alert name might contain the name of the report or the metrics threshold. |
 | **[!UICONTROL Description (optional)]** | Specify a description for the alert. |
 | **[!UICONTROL Time granularity]** | Select how often you want the metric to be checked:<ul><li>**[!UICONTROL Hourly]**<p>Customer Journey Analytics supports various types of data, and not all data that can be included in an alert is practical for an hourly alert. For more information, see [Hourly alerts can be impractical for certain types of data](/help/components/c-intelligent-alerts/alerts-feature-comparison.md#hourly-alerts-can-be-impractical-for-certain-types-of-data).</p></li><li>**[!UICONTROL Daily]**</li><li>**[!UICONTROL Weekly]**</li><li>**[!UICONTROL Monthly]**<p>Monthly granularity is not supported for data views with a [custom calendar](/help/data-views/create-dataview.md#calendar).<!--true?--></p></li></ul> |
 | **[!UICONTROL Recipients]** | Specify where the alert can be sent. An alert can be sent to an Analytics user, an Analytics group, a raw email address, or to a phone number.<p><b>Important</b>: The phone number must be preceded by a `+` and a [country code](https://countrycode.org/).</p><p>The email that a user receives after an alert:</p><p>![Alert email](assets/alerts-email.PNG)</p> |
