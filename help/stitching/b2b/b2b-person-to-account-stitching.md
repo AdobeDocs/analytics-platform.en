@@ -234,7 +234,7 @@ You first enable and configure B2B stitching at the connection level. When B2B s
 >abstract="If enabled, this dataset uses B2B Person to Account stitching. The **[!UICONTROL Persistent Person ID]** values will be elevated to the ones from configured **[!UICONTROL Person identifier namespace]**, then used to lookup the account ID based on the person-to-account dataset.<br/>If disabled, this dataset does not use B2B Person to Account stitching and you have to select a required **[!UICONTROL Account ID]** instead."
 >additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="Configure B2B person to account stitching settings"
 
-After configuring B2B person to account stitching at the connection level, you must enable B2B person to account account stitching individually for each event dataset that you want stitched.
+After configuring B2B stitching at the connection level, you must enable B2B person to account stitching individually for each event dataset that you want stitched.
 
 1. In Connection settings, select **[!UICONTROL Add datasets]** or open the settings for an existing event dataset.<br/>See [Add datasets](/help/connections/create-connection.md#add-datasets) or [Edit a dataset](/help/connections/create-connection.md#edit-a-dataset) for more information.
 
