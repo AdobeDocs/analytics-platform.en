@@ -65,7 +65,7 @@ To create an Conversation Insights configuration:
 
 1. In the **[!UICONTROL Data views]** section, click **[!UICONTROL Select data views]**.
 
-<!-- Continue here...
+<!--
 
 1. In the Data views dialog, select the checkbox next to one or more data views that you want to use when analyzing Experience Platform audience data within Analysis Workspace. These data views are automatically configured with Experience Platform audience data for reporting.
 
