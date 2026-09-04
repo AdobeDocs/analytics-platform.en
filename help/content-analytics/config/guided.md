@@ -4,7 +4,6 @@ description: Learn how to configure Content Analytics using an onboarding guided
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-hold: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 autotag-review: '2026-05-19T08:54:42.845Z'
 TQID: 'https://experienceleague.adobe.com/kEqjocKd5pNypjQlF70HeF1bKuoG9Qi-AT6nJiIwuV0'
