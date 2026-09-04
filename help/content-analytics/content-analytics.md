@@ -4,6 +4,7 @@ description: Learn about the Content Analytics value and terminlogy and learn ho
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
+hold: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 TQID: https://experienceleague.adobe.com/x5FpRmZ-Wv6pPxYBEAyDzRqUSUpmwHFwbi55FwVKT5A
 product_v2:

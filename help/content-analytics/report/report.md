@@ -4,6 +4,7 @@ description: Learn how to report on Content Analytics using visualizations like 
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
+hold: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 TQID: https://experienceleague.adobe.com/IM7-a-jp-lLfuGKj-CM2McnFXcus2-x-ffLC8UUKAmY
 product_v2:
