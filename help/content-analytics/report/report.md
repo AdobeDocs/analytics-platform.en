@@ -4,6 +4,7 @@ description: Learn how to report on Content Analytics using visualizations like 
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
+hold: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 TQID: https://experienceleague.adobe.com/IM7-a-jp-lLfuGKj-CM2McnFXcus2-x-ffLC8UUKAmY
 product_v2:
@@ -104,7 +105,11 @@ You see the following details.
 | **[!UICONTROL Experience attributes]**: The [attributes](/help/content-analytics/report/components.md#experience-attributes) of the experience. | **[!UICONTROL Asset attributes]**: The [attributes](/help/content-analytics/report/components.md#asset-attributes) of the asset. |
 
 
-## Template
+## Templates
+
+Content Analytics offers two Project templates in Workspace to quicly create a project.
+
+### Content Analytics template
 
 A Content Analytics [template](/help/analysis-workspace/templates/use-templates.md) is available to help you learn what content and content attributes are performing best. The template is part of the [Web channel and Engagement use case](/help/analysis-workspace/templates/use-templates.md#web-engagement) and details how your content performs at a granular level. You can look at the performance of individual assets, or specific attributes. 
 
@@ -200,6 +205,21 @@ Top converting experience attributes compared to the prior 30 days
     
     You can also swap out [!UICONTROL Asset Perception ID] with [!UICONTROL Asset Id] to get a record of where specific image URLs are being referenced. 
 
+
+### Paid mediaContent Analytics template
+
+A Paid media Content Analytics [template](/help/analysis-workspace/templates/use-templates.md) is available to help you learn what paid media content and content attributes are performing best. The template is part of the [Web channel and Engagement use case](/help/analysis-workspace/templates/use-templates.md#web-engagement) and helps you to understand how your paid media content is performing at a granular level. You can review paid media reach, engagement, spend, and efficiency across networks, accounts, campaigns, experiences, and assets. The metrics and dimensions in this panel intentionally stay in the paid media asset-summary grain. Do not combine summary datasets of the panels in this template with event data.  
+
+Based on what you learn, you might do any number of things, like refocus on how you spend money on your paid media channels, spend more money on low performing campaigns, or spend more money on campaigns with high performing assets.
+
+To use the template:
+
+1. Select **[!UICONTROL Workspace]** from the main menu.
+1. Ensure you have selected a Data view that is configured for Content Analytics.
+1. Search for, or use segments (**[!UICONTROL Web]** for **[!UICONTROL Channel]** and **[!UICONTROL Engagement]** for **[!UICONTROL Use Case]**s) to find and select the **[!UICONTROL Paid media Content Analytics]** template.
+1. Select **[!UICONTROL Use template]**.
+
+A **[!UICONTROL Content Analytics - Paid Media Summary Data]** project opens in [Analysis Workspace](/help/analysis-workspace/home.md). The project consists of the **[!UICONTROL Paid Media Performance]** [panel](/help/analysis-workspace/c-panels/panels.md), with  [freeform tables](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) and [visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). Use the panel to review paid media reach, engagement, spend, and efficiency across networks, accounts, campaigns, experiences, and assets. The metrics and dimensions in the panel intentionally stay in the paid media asset-summary grain; do not combine summary datasets with event data.  
 
 >[!MORELIKETHIS]
 >

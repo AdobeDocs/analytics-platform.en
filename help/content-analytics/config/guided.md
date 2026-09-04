@@ -4,6 +4,7 @@ description: Learn how to configure Content Analytics using an onboarding guided
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
+hold: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 autotag-review: '2026-05-19T08:54:42.845Z'
 TQID: 'https://experienceleague.adobe.com/kEqjocKd5pNypjQlF70HeF1bKuoG9Qi-AT6nJiIwuV0'
@@ -84,7 +85,7 @@ To edit an existing configuration:
 
 ## Guided configuration wizard
 
-The guided configuration wizard consists of four sections ([Details](#details), [Connection](#connection), [Data view](#data-view), and [Channels](#channels)), each prompting you for details that are required to set up and configure Content Analytics properly. Complete each section before moving to the next section, as some settings in a section might depend on configuration values in earlier sections.
+The guided configuration wizard includes four sections: [Details](#details), [Connection](#connection), [Data view](#data-view), and [Channels](#channels). Each section prompts for details required to configure Content Analytics. Complete each section before moving to the next, as some settings depend on configuration values in earlier sections.
 
 ### Details {#onboarding-details}
 
@@ -96,7 +97,7 @@ The guided configuration wizard consists of four sections ([Details](#details), 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="Details"
->abstract="This guide sets up the requirements needed to configure Content Analytics. Please provide a name for this configuration and select the sandbox that contains the content analytics data you want to analyze."    
+>abstract="This guide sets up the requirements to configure Content Analytics. Provide a name for this configuration and select the sandbox that contains the content analytics data you want to analyze."    
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_boldheader"
@@ -106,7 +107,7 @@ The guided configuration wizard consists of four sections ([Details](#details), 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_header"
 >title="Connection"
->abstract="Select an existing connection from Customer Journey Analytics that you would like to merge your Content Analytics data with."    
+>abstract="Select an existing connection from Customer Journey Analytics to merge your Content Analytics data with."    
 
 Each configuration requires a unique name. For example, `Example Content Analytics configuration`. The name is required to save or implement a configuration.
 
@@ -147,7 +148,7 @@ If you already have selected a connection, but you want to change that connectio
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="Data view"
->abstract="Select an existing data view from Customer Journey Analytics that you would like to merge your Content Analytics data with." 
+>abstract="Select an existing data view from Customer Journey Analytics to merge your Content Analytics data with." 
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
@@ -245,14 +246,16 @@ The following actions are available within the **[!UICONTROL Data view]** dialog
 
 ### Channels
 
-In the **[!UICONTROL Channels]** section, you select the channels you want to enable for Content Analytics. You can select between **[!UICONTROL Mobile]** and **[!UICONTROL Web]**.
+In the **[!UICONTROL Channels]** section, you select the channels you want to enable for Content Analytics. You can select between **[!UICONTROL Mobile]**, **[!UICONTROL Web]**, and **[!UICONTROL Paid media]**.
 
 * To select a channel you have not yet configured, select **[!UICONTROL Enable]**. 
 * To select a channel that is already configured but for which you want to change the configuration, select **[!UICONTROL Edit configuration]**.
 
-You can then configure the channel in more detail. That configuration is different depending on whether you enable and configure or edit a configuration for the [mobile](#mobile) or [web](#web) channel.
+You can then configure the channel in more detail. That configuration is different depending on whether you enable and configure or edit a configuration for the [mobile](#mobile), [web](#web) or [paid media](#paid-media) channel.
 
-#### Mobile {#mobile}
+#### Mobile 
+
++++ Details
 
 <!-- For updated ACA -->
 
@@ -288,7 +291,7 @@ You can then configure the channel in more detail. That configuration is differe
 
 For the mobile channel, you can configure [experience capture and definition](#experience-capture-and-definition), [data collection](#data-collection), and [header overrides](#header-overrides).
 
-##### Experience capture and definition {#mobile-experience-capture-and-definition}
+### Experience capture and definition {#mobile-experience-capture-and-definition}
 
 In this section, you can select to include experiences in the mobile data you collect with Content Analytics.  For the mobile channel, an experience is what you have registered as an experience using the Adobe Experience Platform SDK for Content Analytics. 
 
@@ -296,7 +299,7 @@ By default, **[!UICONTROL Include experiences]** is disabled.
 
 Only consider to include experiences when you have instrumented your mobile app to register experiences and to track experience views and experience clicks.
 
-##### Data collection {#mobile-data-collection}
+### Data collection {#mobile-data-collection}
 
 The data collection settings allow you to define what data (experience locations, asset locations, asset URLs) you want to collect for Content Analytics. Ensure you do not collect any personally identifiable information as part of that data collection.
 
@@ -329,7 +332,7 @@ To configure data collection:
   Specify a **[!UICONTROL Regular expression string]** for **[!UICONTROL Asset URLs to exclude]**. <br/>For example: `^(?!.*(logo\.jpg)).*$` to exclude all asset URLs referring to logo JPEG images from Content Analytics.
 
 
-##### Header overrides {#mobile-header-overrides}
+### Header overrides {#mobile-header-overrides}
 
 <!-- needs modification for mobile channel -->
 
@@ -341,12 +344,15 @@ Optionally, you can specify in the **[!UICONTROL Header overrides]** section a h
 1. Enter the **[!UICONTROL Header name]**. For example, `x-asset-service`.
 1. Enter the **[!UICONTROL Header value]**. Whatever you specify is secret and not visible in the user interface (unless you explicitly select to disclose ![Visibility](/help/assets/icons/Visibility.svg) the value during input).
 
-##### Save {#mobile-save}
+### Save {#mobile-save}
 
 Once you have configured the mobile channel, select **[!UICONTROL Save]** to save the configuration. Select **[!UICONTROL Cancel]** to cancel the configuration.
 
++++
 
 #### Web {#web}
+
++++ Details
 
 For the web channel, you can configure [experience capture and definition](#experience-capture-and-definition-1), [data collection](#data-collection-1), and [header overrides](#header-overrides-1).
 
@@ -451,7 +457,7 @@ For the web channel, you can configure [experience capture and definition](#expe
 >abstract="Indicate which assets should be **included** or **excluded** when collecting data for Content Analytics. Ensure you exclude personally identifiable assets."
 
 
-##### Experience capture and definition {#web-experience-capture-and-definition}
+### Experience capture and definition {#web-experience-capture-and-definition}
 
 In this section, you can select to include experiences in the web data you collect with Content Analytics.  An experience consists of all text on a web page that is reproducible using the URL from the initial user visit. 
 
@@ -466,9 +472,7 @@ Only consider to include experiences when the following is applicable:
 >
 >Implement [Content Analytics versioning](manual.md#versioning) to collect changes that you make to the experiences (pages) subject to Content Analytics. 
 
-
-
-###### New configuration {#new-experiences-configuration}
+#### New configuration {#new-experiences-configuration}
 
 To include experiences in a new or not implemented configuration:
 
@@ -482,13 +486,13 @@ To include experiences in a new or not implemented configuration:
    
 1. Select **[!UICONTROL Add Regex]** to add a combination of a domain regular expression and query parameters.
 1. Specify how content renders on your website by defining combinations of a **[!UICONTROL Domain regular expression]** and **[!UICONTROL Query parameters]** that affect page content.
-   1. Enter a **[!UICONTROL Domain regular expression]**, for example `/^(?!.*\b(store|help|admin)\b)/`. Ensure you escape regular expressions, using `/`. The domain regular expression indicates which URLs these parameters apply to. For example, you may have multiple sites, and for each site different parameters drive the content. If the query parameters apply to all of your pages, then you can use `.*` to indicate all pages.
+   1. Enter a **[!UICONTROL Domain regular expression]**, for example `/^(?!.*\b(store|help|admin)\b)/`. Ensure you escape regular expressions, using `/`. The domain regular expression indicates which URLs these parameters apply to. For example, you have multiple sites, and different parameters drive the content for each site. If the query parameters apply to all of your pages, then you can use `.*` to indicate all pages.
    1. Specify a comma separated list of **[!UICONTROL Query parameters]**, for example `outdoors, patio, kitchen`.
 1. Select **[!UICONTROL Remove]** if you want to remove a combination of domain regular expression and query parameters.
 1. Select **[!UICONTROL Add Regex]** if you want to add another combination of a regular expression and query parameters.
 
 
-###### Implemented configuration {#implemented-experiences-configuration}
+#### Implemented configuration {#implemented-experiences-configuration}
 
 To edit existing or include new experiences in an implemented configuration:
 
@@ -501,7 +505,7 @@ To edit existing or include new experiences in an implemented configuration:
    
 * Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** to edit the configuration of data collection for experiences in Content Analytics further. You are redirected to the [Adobe Content Analytics extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) in the Tags property that is associated with the current configuration.
 
-##### Data collection {#web-data-collection}
+### Data collection {#web-data-collection}
 
 The data collection settings allow you to define what data (pages, assets) you want to collect for Content Analytics. Do not collect any personally identifiable information as part of that data collection.
 
@@ -521,7 +525,7 @@ To configure data collection:
     1. Specify a **[!UICONTROL Tags name]**, for example `ACA Test for Documentation`.
     1. Specify **[!UICONTROL Domains]**, for example, `example.com`.
 
-    Use a new Tags property if you want to create a Tags agnostic implementation for the web channel, using the [Content Analytics Javascript library](/help/content-analytics/config/tags-agnostic.md). The Tags property is created, but you will not use the property in the agnostic implementation. However, the agnostic implementation requires that you have run the guided configuration wizard at least once.
+    Use a new Tags property if you want to create a Tags agnostic implementation for the web channel, using the [Content Analytics JavaScript library](/help/content-analytics/config/tags-agnostic.md). The Tags property is created, but you do not use the property in the agnostic implementation. However, the agnostic implementation requires that you have run the guided configuration wizard at least once.
 
 * Indicate which pages should be included or excluded when collecting data for Content Analytics. Ensure you exclude personally identifiable pages. 
   
@@ -532,7 +536,7 @@ To configure data collection:
   Specify a **[!UICONTROL Regular expression string]** for **[!UICONTROL Asset to include / exclude]**. <br/>For example: `^(?!.*(logo\.jpg)).*$` to exclude all logo JPEG images from Content Analytics.
 
 
-##### Header overrides {#web-header-overrides}
+### Header overrides {#web-header-overrides}
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_header_overrides_boldheader"
@@ -555,22 +559,162 @@ Optionally, you can specify in the **[!UICONTROL Header overrides]** section a h
 1. Enter the **[!UICONTROL Header value]**. Whatever you specify is secret and not visible in the user interface (unless you explicitly select to disclose ![Visibility](/help/assets/icons/Visibility.svg) the value during input).
 
 
+
+
+### Save {#web-save}
+
+After you have specified the details for the web channel, select **[!UICONTROL Save]** to save the configuration. Select **[!UICONTROL Cancel]** to cancel the configuration.
+
++++
+
+#### Paid media {#paid-media}
+
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_paidmedia_adplatforms_nosourceconnectors"
 >title="No source connectors"
 >abstract="Paid media requires Experience Platform source connectors for your ad publishers. No Google Ads or Meta Ads connectors are available in this sandbox. Configure one or more of these connectors in the **[!UICONTROL Experience Platform]** > **[!UICONTROL Sources]** interface and return to this step to continue the configuration of Content Analytics paid media."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/ads" text="Google Ads source"
 
-##### Save {#web-save}
++++ Details
 
-After you have specified the details for the web channel, select **[!UICONTROL Save]** to save the configuration. Select **[!UICONTROL Cancel]** to cancel the configuration.
+>[!NOTE]
+>
+>The paid media channel is not available for Customer Journey Analytics and  Experience Platform deployments on AWS.
 
+
+For the paid media channel, all the supported [ad platforms](#paidmedia-adplatforms) that are connected in the configured sandbox are automatically included in Content Analytics.
+
+### Ad platforms {#paidmedia-adplatforms}
+
+Paid media requires the configuration of  Experience Platform source connectors to your ad publishers. 
+
+If you do see **[!UICONTROL No supported source connector found]**, you have not configured any source connector for the available ad platform in your configured sandbox.
+
+![No source connectors configured](/help/content-analytics/assets/aca-paid-media-no-source-connectors.png)
+
+To configure source connectors for your ad platforms, select **[!UICONTROL Go to AEP Sources]**. You are redirected to the **[!UICONTROL Sources]** interface in Experience Platform.
+
+See below for examples on how to configure the Google Ads and Meta Ads source connector.
+
+>[!BEGINTABS]
+
+>[!TAB Google Ads]
+
+1. In Experience Platform > **[!UICONTROL Sources]**, select **[!UICONTROL Setup]** in the **[!UICONTROL Google Ads]** card to start the setup wizard.
+
+   >[!WARNING]
+   >
+   >Do not use **[!UICONTROL Setup]** in the **Google Ads (beta)** card.
+
+
+1. In the ➊ **[!UICONTROL Authentication]** step of the wizard, select **[!UICONTROL New account]**, and enter an **[!UICONTROL Account name]**.
+
+   ![Google Ads source connector authentication step 1](../assets/paid-media-google-authentication-1.png)
+
+1. In the **[!UICONTROL Sign in with Google]** dialog, choose an account that holds the Google Ads Manager account and Google Ads accounts.
+
+   ![Google Ads source connector authentication step 2](../assets/paid-media-google-authentication-2.png)
+
+1. Verify your credentials using a passkey or other authentication mechanism.
+   
+   ![Google Ads source connector authentication step 3](../assets/paid-media-google-authentication-3.png)
+
+1. Select **[!UICONTROL Continue]** in the dialog **[!UICONTROL Adobe Experience Platform wants access to your Google account]**.
+
+   ![Google Ads source connector authentication step 4](../assets/paid-media-google-authentication-4.png)
+
+1. Upon successful authentication, you see ![CheckmarkCircle](/help/assets/icons2/CheckmarkCircle.svg) **[!UICONTROL Connected]** in the ➊ **[!UICONTROL Authentication]** step of the wizard.
+
+   ![Google Ads source connector authentication step 5](../assets/paid-media-google-authentication-5.png)
+
+   Select **[!UICONTROL Next]**.
+
+1. In the ➋ **[!UICONTROL Dataflow details]** step of the wizard, enter a **[!UICONTROL Dataflow]** name. You can also check options to subscribe to alerts.
+   
+   ![Google Ads source connector dataflow details](../assets/paid-media-google-dataflow-1.png)
+
+   Select **[!UICONTROL Next]**.
+
+1. In ➌ **[!UICONTROL Review]** step of the wizard, review the source connector details.
+
+   ![Google Ads source connector review](../assets/paid-media-google-review-1.png)
+
+   Select **[!UICONTROL Finish]**.
+
+1. You finally see the details of a successfully configured Google source connector.
+
+   ![Google Ads source connector final](../assets/paid-media-google-final.png)
+
+
+>[!TAB Meta Ads]
+
+1. In Experience Platform > **[!UICONTROL Sources]**, select **[!UICONTROL Setup]** in the **[!UICONTROL Meta Ads]** card to start the setup wizard.
+
+1. In the ➊ **[!UICONTROL Authentication]** step of the wizard, select **[!UICONTROL New account]**, and enter an **[!UICONTROL Account name]**.
+   
+   ![Meta Ads source connector authentication step 1](../assets/paid-media-meta-authentication-1.png)
+
+1. Login to your Facebook account for which you have configured Ads Manager. If you are already logged in, a dialog appears to continue as the logged in user.
+
+   ![Meta Ads source connector authentication step 2](../assets/paid-media-meta-authentication-2.png)
+
+1. Upon successful authentication, you see ![CheckmarkCircle](/help/assets/icons2/CheckmarkCircle.svg) **[!UICONTROL Connected]** in the ➊ **[!UICONTROL Authentication]** step of the wizard.
+   
+   ![Meta Ads source connector authentication step 3](../assets/paid-media-meta-authentication-3.png)
+
+   Select **[!UICONTROL Next]**.
+
+1. In the ➋ **[!UICONTROL Select accounts]** step of the wizard, select the accounts you want to configure.
+   
+   ![Meta Ads source connector select accounts](paid-media-meta-select-account.png)
+
+   Select **[!UICONTROL Next]**.
+
+1. In the ➌ **[!UICONTROL Dataflow details]** step of the wizard, enter a **[!UICONTROL Dataflow]** name. You can also check options to subscribe to alerts.
+
+   ![Meta Ads source connector dataflow](../assets/paid-media-meta-dataflow-1.png)
+
+   Select **[!UICONTROL Next]**.
+
+1. In ➍ **[!UICONTROL Review]** step of the wizard, review the source connector details.
+
+   ![Meta Ads source connector review](../assets/paid-media-meta-review-1.png)
+
+1. You finally see the details of a successful configured Google source connector.
+ 
+   ![Meta Ads source connector final](../assets/paid-media-meta-final.png)
+
+>[!ENDTABS]
+
+See [Source connectors overview](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home) for more information on the supported source connectors for the paid media channel.
+
+After you have configured source connectors in Experience Platform, select ![Refresh](/help/assets/icons/Refresh.svg) **[!UICONTROL Refresh]** to update the list of source connectors.
+
+You see the list of available ad platforms and which of these platforms are ![StatusGreen](/help/assets/icons/StatusGreen.svg) **Connected** and which are ![StatusGray](/help/assets/icons/StatusGray.svg) **Not configured**.
+
+![Google connector configured](/help/content-analytics/assets/aca-paid-media-google-source-connectors.png)
+
+
+### Data behavior {#paidmedia-databehavior}
+
+When you select **[!UICONTROL Save]**, Content Analytics automatically:
+
+* Updates the Customer Journey Analytics connection to include paid media datasets from all connected source connectors in this sandbox.
+* Enables paid media dimensions and metrics in all selected data views.
+* Surfaces paid media channels as a filterable dimension in Workspace reports.
+
+### Save {#paidmedia-save}
+
+Select **[!UICONTROL Save]** to save the **[!UICONTROL Paid media]** configuration.
+
+
++++
 
 ### Summary {#summary}
 
 Once you have provided all necessary details, a summary provides details on the artifacts that are created or modified.
 
-* You see a **[!UICONTROL You're almost ready to implement _configuration name_ for Content Analytics]** summary when you implement a new configuration. 
+* You see a **[!UICONTROL You are ready to implement _configuration name_ for Content Analytics]** summary when you implement a new configuration. 
 
 * For existing implemented configurations, you see a **[!UICONTROL You have implemented _configuration name_ for Content Analytics]** summary.
 
@@ -586,7 +730,7 @@ Once you have provided all necessary details, a summary provides details on the 
 When you create or edit a configuration you have these options:
 
 * **[!UICONTROL Discard]**: All changes made as part of configuration are discarded.
-* **[!UICONTROL Save for later]**: Changes made to a configuration are saved. You can revisit the configuration at a later stage to make further changes, or implement the configuration. Only a value for [!UICONTROL Name] is required to save a configuration.
+* **[!UICONTROL Save for later]**: Changes made to a configuration are saved. To make further changes or implement the configuration, revisit it at a later stage. Only a value for [!UICONTROL Name] is required to save a configuration.
 * **[!UICONTROL Implement]**: Settings for or changes made to a configuration are saved and implemented. All fields marked as ![Required](/help/assets/icons/Required.svg) need to have proper values. The implementation consists of:
   
   * **[!UICONTROL Customer Journey Analytics]** configuration:

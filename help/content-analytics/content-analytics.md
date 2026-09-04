@@ -4,6 +4,7 @@ description: Learn about the Content Analytics value and terminlogy and learn ho
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
+hold: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 TQID: https://experienceleague.adobe.com/x5FpRmZ-Wv6pPxYBEAyDzRqUSUpmwHFwbi55FwVKT5A
 product_v2:
@@ -72,13 +73,21 @@ Content Analytics uses the following key terms:
 
 ## How it works
 
-Content Analytics uses web and mobile image view data from Experience Platform event datasets to [collect content event data](config/datacollection.md). These content experience events require the data to be collected with the Experience Platform Edge Network (Web SDK, Mobile SDK, Server API). Behavioral data can be collected with the Web SDK, Mobile SDK or the Analytics Source Connector.
+Content Analytics uses web and mobile image view data and paid media data from Experience Platform event datasets to [collect content event data](config/datacollection.md). These content experience events require the data to be collected with the Experience Platform Edge Network (Web SDK, Mobile SDK, Server API) or through Experience Platform source connectors. 
 
-![Content Analytics - How it works](assets/aca-overview-new.gif)
+* Behavioral data can be collected with the Web SDK, Mobile SDK or the Analytics Source Connector.
+* For paid media, experience data is reconstructed from the paid media event data sources collected in Experience Platform through paid media source connectors available.
 
-1. When a user visits a site or app, [configured for Content Analytics](config/configuration.md), the Experience Platform Web or Mobile SDK records impressions and interactions with content.
-1. The identity and featurization service processes these interactions. That process consists of a retrieval service that revisits the public-facing versions of the configured URLs that define the interactions. For all of these retrieved URLs, the identity service uniquely identifies the experiences and assets. And the featurization service applies AI/ML services to discover experience and asset metadata and attributes.
-1. The results of these services ([components, attributes, and identities](/help/content-analytics/report/components.md)) are used to update the relevant specific Content Analytics datasets in Experience Platform.
+![Content Analytics - How it works](assets/aca-overview-new-paid-media.gif)
+
+
+1. When a user visits a site or app, [configured for Content Analytics](config/configuration.md), the Experience Platform Web or Mobile SDK records impressions and interactions with the content. 
+   Paid media data is collected into datasets daily from source connectors (to Google and Meta, for example). Content Analytics  monitors the [configured paid media datasets](config/configuration.md) for new, unfeaturized assets and experiences and uses ad dataset metadata to compose experience HTML. That experience HTML is combined with the asset details as a paid media experience.
+
+1. The identity and featurization service processes these interactions (from web and mobile) and experiences (from paid media). That process consists of a retrieval service that revisits the public-facing versions of the configured URLs that define the interactions and the HTML that defines the experience. For all of these retrieved URLs and HTML, the identity service uniquely identifies the experiences and assets. And the featurization service applies AI/ML services to discover experience and asset metadata and attributes.
+
+1. The results of the identity and featurization services ([components, attributes, and identities](/help/content-analytics/report/components.md)) are used to update the relevant specific Content Analytics datasets in Experience Platform.
+
 1. You can use the Content Analytics data, together with behavioral data and other lookup data, in a Customer Journey Analytics setup ([Connection](/help/connections/overview.md), [Data view](/help/data-views/data-views.md) and [Workspace](/help/analysis-workspace/home.md)). That setup provides the foundation for the unique macro-level insights on your content. <br/>You can quickly begin your Content Analytics reports and analysis using the [Content Analytics template](/help/content-analytics/report/report.md#template).
 
 
