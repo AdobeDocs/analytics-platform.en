@@ -4,7 +4,6 @@ description: Learn how to report on Content Analytics using visualizations like 
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
-hold: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 TQID: https://experienceleague.adobe.com/IM7-a-jp-lLfuGKj-CM2McnFXcus2-x-ffLC8UUKAmY
 product_v2:
@@ -206,7 +205,7 @@ Top converting experience attributes compared to the prior 30 days
     You can also swap out [!UICONTROL Asset Perception ID] with [!UICONTROL Asset Id] to get a record of where specific image URLs are being referenced. 
 
 
-### Paid mediaContent Analytics template
+### Paid media Content Analytics template
 
 A Paid media Content Analytics [template](/help/analysis-workspace/templates/use-templates.md) is available to help you learn what paid media content and content attributes are performing best. The template is part of the [Web channel and Engagement use case](/help/analysis-workspace/templates/use-templates.md#web-engagement) and helps you to understand how your paid media content is performing at a granular level. You can review paid media reach, engagement, spend, and efficiency across networks, accounts, campaigns, experiences, and assets. The metrics and dimensions in this panel intentionally stay in the paid media asset-summary grain. Do not combine summary datasets of the panels in this template with event data.  
 

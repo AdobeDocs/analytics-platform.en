@@ -93,7 +93,7 @@ That person-to-account mapping dataset is elevated using graph-based stitching. 
 
 Graph-based stitching is also used to elevate the person IDs in the experience event dataset. For example, see the updated value for **emily@adobe.com**.
 
-Graph-based stitching is also used to elevate the person IDs in the experience event dataset. For example, you configure the persistent ID (ECID) field to be used as persistent person ID when you [enable stitching on the dataset](#enable-b2b-stitching-on-event-datasets). Based on `5678` as the ECID value and  `emily@adobe.com` as the Email value, `emily@adobe.com` is set as elevated person ID on the related event.
+Graph-based stitching is also used to elevate the person IDs in the experience event dataset. For example, you configure the persistent ID (ECID) field to be used as persistent person ID when you [enable stitching on the dataset](#enable-b2b-person-to-account-stitching-on-event-datasets). Based on `5678` as the ECID value and  `emily@adobe.com` as the Email value, `emily@adobe.com` is set as elevated person ID on the related event.
 
 |  Timestamp | Persistent ID | Original Account ID | Original Person ID | Elevated Person ID |
 |--|--|---|---|---|

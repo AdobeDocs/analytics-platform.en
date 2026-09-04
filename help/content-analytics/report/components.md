@@ -4,7 +4,6 @@ description: Learn about the details of the specific Content Analytics component
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
-hold: true
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
 TQID: https://experienceleague.adobe.com/grwbNht938ivCsnzlFBzP8Ga8h1udmQLcZngxY6s0-4
 product_v2:

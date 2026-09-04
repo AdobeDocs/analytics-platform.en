@@ -4,7 +4,6 @@ description: Learn about the Content Analytics value and terminlogy and learn ho
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
-hold: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
 TQID: https://experienceleague.adobe.com/x5FpRmZ-Wv6pPxYBEAyDzRqUSUpmwHFwbi55FwVKT5A
 product_v2:
@@ -58,7 +57,7 @@ Content Analytics does provide value at an increasing level:
 
 1. Content **usage**: With Content Analytics you get insights on which assets are receiving impressions and where assets are receiving impressions. These insights help you to see whether assets are underused or overused on your web and mobile properties.
 1. Content **engagements**: Content Analytics can provide engagement insights like the average click through rate for assets with certain attributes. These insights help you to determine whether specific types of experiences are still effective.
-1. Content journeys: Furthermore, when combined with all other data available in Experience Platform, you can gain additional insights on your content journeys; for example, whether specific content leads to conversions, in addition to engagement. For example, whether specific content leads to conversions, in addition to engagement. And with that knowledge you can determine the ROI on types of content.
+1. Content **journeys**: Furthermore, when combined with all other data available in Experience Platform, you can gain additional insights on your content journeys; for example, whether specific content leads to conversions, in addition to engagement. For example, whether specific content leads to conversions, in addition to engagement. And with that knowledge you can determine the ROI on types of content.
 1. Content **personalization**: Ultimately Content Analytics allows you to act upon your insights and use these insights to determine how to spend money on content. For example, should I send specific types of content to specific audiences? What content provides me with high-personalization opportunities?
 
 ## Terminology
