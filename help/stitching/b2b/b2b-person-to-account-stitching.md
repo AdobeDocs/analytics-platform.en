@@ -95,7 +95,7 @@ In our example, using identity graph links between CRM ID and Email namespaces, 
 | b978bbw9 | cassidy@ubiquity.com | Ubiquity |
 | fs453ghi | carmen@adobe.com | Adobe |
 
-Graph-based stitching is also used to elevate the person IDs in the experience event dataset. For example, you configure the persistent ID (ECID) field to be used as persistent person ID when you [enable stitching on the dataset](#enable-b2b-person-to-account-stitching-on-event-datasets). Based on the elevated person to account mapping dataset `emily@adobe.com` is set as elevated person ID on the related event.
+Graph-based stitching is also used to elevate the person IDs in the experience event dataset. For example, you configure the persistent ID (ECID) field to be used as persistent person ID when you [enable stitching on the dataset](#enable-b2b-person-to-account-stitching-on-event-datasets). Assuming `5678` (persistent ID) is linked to `emily@adobe.com` (person ID) in the identity graph, `emily@adobe.com` is set as elevated person ID on the related event.
 
 |  Timestamp | Persistent ID | Original Account ID | Original Person ID | Elevated Person ID |
 |--|--|---|---|---|
@@ -114,7 +114,7 @@ Graph-based stitching is also used to elevate the person IDs in the experience e
 
 +++ Details
 
-The person to account dataset is once more used to elevate the account IDs in the experience event dataset. For example, see the added value **Sky** for emily@sky.com and **Adobe** for carmen@adobe.com and emily@adobe.com. And the updated value **Sky** (from Ubiquity) for cory@sky.com.
+The person to account dataset is once more used to elevate the account IDs in the experience event dataset. For example, see the added value **Adobe** for carmen@adobe.com and emily@adobe.com. And the updated value **Sky** (from Ubiquity) for cory@sky.com.
    
 | Timestamp | Persistent ID | Original Account ID |  Original Person ID | Elevated Account ID | Elevated Person ID |
 |---|---|---|---|---|---|
