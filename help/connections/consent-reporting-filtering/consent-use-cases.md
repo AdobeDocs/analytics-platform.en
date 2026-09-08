@@ -54,7 +54,7 @@ Understand how many visitors match each consent policy before you decide whether
 
 1. Create a configuration and select the sandbox, Profile dataset, and connection that contain your consent policy membership data.
 
-1. Leave both the **[!UICONTROL Analytics]** and **[!UICONTROL Data science]** filtering toggles off.
+1. Leave both the **[!UICONTROL Analytics data]** and **[!UICONTROL Data science data]** filtering toggles off.
 
 1. In Analysis Workspace, build a freeform table with the **[!UICONTROL Policy Name]** dimension and the **[!UICONTROL Visitors with Consent]** metric to see coverage per policy.
 
@@ -71,7 +71,7 @@ Make sure that standard reporting includes only visitors who have consented to a
 
 1. Create or edit a configuration for the connection that powers your analytics reporting.
 
-1. Enable the **[!UICONTROL Analytics]** filtering toggle.
+1. Enable the **[!UICONTROL Analytics data]** filtering toggle.
 
 1. Confirm the configuration. From this point forward, Customer Journey Analytics ingests a visitor's data only if the visitor matches all consent policies that apply to the analytics marketing action.
 
@@ -87,7 +87,7 @@ Apply different consent requirements to standard reporting and to data science u
 
 1. Create or edit a configuration for the relevant connection.
 
-1. Enable the **[!UICONTROL Analytics]** toggle, the **[!UICONTROL Data science]** toggle, or both, depending on the consent requirements for each use case.
+1. Enable the **[!UICONTROL Analytics data]** toggle, the **[!UICONTROL Data science data]** toggle, or both, depending on the consent requirements for each use case.
 
 1. Confirm the configuration. Customer Journey Analytics evaluates the consent policies that apply to each enabled marketing action independently.
 

@@ -461,11 +461,12 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Overview](/help/stitching/overview.md)
   + [Field-based stitching](/help/stitching/fbs.md)
   + [Graph-based stitching](/help/stitching/gbs.md)
-  + {hide-from-toc}  [B2B account stitching](/help/stitching/b2b-account-stitching.md)
   + [Request stitching](/help/stitching/use-stitching.md)
   + [Enable stitching](/help/stitching/use-stitching-ui.md)
   + [Validate stitching](/help/stitching/validate.md)
   + [Frequently Asked Questions](/help/stitching/faq.md)  
+  + B2B {#b2b}
+    + [Person to account stitching](/help/stitching/b2b/b2b-person-to-account-stitching.md)
 
 + Total population reporting {#tpr}
   + {hide-from-toc} [Overview](/help/tpr/tpr.md)
@@ -580,3 +581,4 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
 + [Customer Journey Analytics MCP server](https://developer.adobe.com/analytics-mcp/docs/cja/)
+
