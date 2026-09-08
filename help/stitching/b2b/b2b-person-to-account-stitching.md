@@ -71,7 +71,7 @@ B2B person to account stitching prevents the events from being ignored and not i
 
 +++ Details
 
-To support B2B person to account stitching, when you [configure B2B stitching settings](#configure-b2b-person-to-account-stitching-settings), you provide a main person identifier namespace (for example Email) and a person to account mapping dataset.
+To support B2B person to account stitching, when you [configure B2B stitching settings](#configure-b2b-stitching-settings), you provide a main person identifier namespace (for example Email) and a person to account mapping dataset.
 The person ID namespace from the person to account dataset can be the same as the main one (Email), or it can differ. In the example below, it is set as CRM ID (which will need to be linked to Email in the identity graph).
 
 | CRM ID | Account ID |
@@ -114,7 +114,7 @@ Graph-based stitching is also used to elevate the person IDs in the experience e
 
 +++ Details
 
-The person to account dataset is once more used to elevate the account IDs in the experience event dataset. For example, see the added value **Adobe** for carmen@adobe.com and emily@adobe.com. And the updated value **Sky** (from Ubiquity) for cory@sky.com.
+The person to account dataset is used to elevate the account IDs in the experience event dataset. For example, see the added value **Adobe** for carmen@adobe.com and emily@adobe.com. And the updated value **Sky** (from Ubiquity) for cory@sky.com.
    
 | Timestamp | Persistent ID | Original Account ID |  Original Person ID | Elevated Account ID | Elevated Person ID |
 |---|---|---|---|---|---|
@@ -249,7 +249,7 @@ After configuring B2B stitching at the connection level, you must enable B2B per
 When **[!UICONTROL Enable Person to Account stitching]** is **on**, you have configured B2B person to account stitching for the dataset.
 
 * The configuration of a persistent person ID is required. That persistent person ID is elevated to the person ID from the previously configured person identifier namespace, then used to look up the account ID based on the [person to account dataset](#prerequisites).
-* The configuration of an account ID is optional. This configuration is used as a fallback method, whenever the related account ID info is not available in the person-to-account dataset.
+* The configuration of an account ID is optional. This configuration is used as a fallback method, whenever the related account ID info is not available in the person to account dataset.
 
 ![B2B person to account stitching on event dataset on](../assets/b2b-event-dataset-stitching-on.png)
 
