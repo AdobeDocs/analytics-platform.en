@@ -130,7 +130,7 @@ The person to account dataset is once more used to elevate the account IDs in th
 
 ### Result
 
-This example shows how B2B person to account stitching updates your experience event data with missing person identifiers or missing and incorrect account identifiers, based on the person to account mapping dataset you have provided as input.
+This example shows how B2B person to account stitching updates your experience event data with missing person identifiers and missing or incorrect account identifiers, based on identity graph data and the person to account mapping dataset you have provided as input.
 
 
 ## Prerequisites
@@ -248,8 +248,8 @@ After configuring B2B stitching at the connection level, you must enable B2B per
 
 When **[!UICONTROL Enable Person to Account stitching]** is **on**, you have configured B2B person to account stitching for the dataset.
 
-* The configuration of a person ID is required. That person ID is used to look up the account ID based on the [person to account dataset](#prerequisites).
-* The configuration of an account ID is optional.
+* The configuration of a persistent person ID is required. That persistent person ID is elevated to the person ID from the previously configured person identifier namespace, then used to look up the account ID based on the [person to account dataset](#prerequisites).
+* The configuration of an account ID is optional. This configuration is used as a fallback method, whenever the related account ID info is not available in the person-to-account dataset.
 
 ![B2B person to account stitching on event dataset on](../assets/b2b-event-dataset-stitching-on.png)
 
