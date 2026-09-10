@@ -95,7 +95,7 @@ When you create a configuration for consent reporting and filtering, you select 
 
 To create a consent reporting and filtering configuration:
 
-1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Consent reporting and filtering]**.
+1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Consent Reporting & Filtering]**.
 
 1. Select **[!UICONTROL Create configuration]**.
 
