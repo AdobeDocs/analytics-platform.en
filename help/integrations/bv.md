@@ -172,4 +172,4 @@ This dataset captures only bot traffic from CDN access logs. It does not contain
 
 ## Outbound integration
 
-To be determined.
+For information on the outbound integration, refer to [Customer Journey Analytics Integration](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} in the Adobe Brand Visisbility dovumentation.
