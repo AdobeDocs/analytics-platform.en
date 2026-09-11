@@ -427,6 +427,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + {hide-from-toc} [Map columns](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc} [Create a data feed](/help/components/exports/cja-data-feeds/create-feed.md)
       + {hide-from-toc} [Segmentation in data feeds](/help/components/exports/cja-data-feeds/df-segmentation.md)
+      + {hide-from-toc} [Use derived fields in data feeds](/help/components/exports/cja-data-feeds/df-derived-fields.md)
   + Data Dictionary {#data-dictionary}
     + [Overview](../components/data-dictionary/data-dictionary-overview.md)
     + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
