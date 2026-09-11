@@ -111,11 +111,6 @@ As of August 2025, the following specific signals can be identified for each of 
 <td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">Used when ChatGPT browses websites on behalf of users (legacy)</a></td>
 </tr>
 <tr>
-<td><strong>ChatGPT-User v2</strong></td>
-<td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/2.0; +<a href="https://openai.com/bot" target="_blank" rel="noopener nofollow noreferrer">https://openai.com/bot</a></code></td>
-<td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">ChatGPT's updated version for on-demand fetching and in-response lookups</a></td>
-</tr>
-<tr>
 <td><strong>OAI-SearchBot</strong></td>
 <td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +<a href="https://openai.com/searchbot" target="_blank" rel="noopener nofollow noreferrer">https://openai.com/searchbot</a></code></td>
 <td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">ChatGPT's search-focused crawler for discovering content</a></td>
