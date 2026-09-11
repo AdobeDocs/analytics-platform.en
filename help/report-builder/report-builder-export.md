@@ -59,10 +59,6 @@ Use the following process when exporting workbooks from Report Builder to the cl
 
 ## Export a report from Report Builder
 
->[!NOTE]
->
->Before you export data as described in this section, learn more about [the export process](#understand-the-export-process) in the section above.
-
 To export reports from Report Builder:
 
 1. If you haven't already, configure an export account and location, as described in [Configure cloud export accounts](/help/components/exports/cloud-export-accounts.md).
@@ -105,6 +101,10 @@ To export reports from Report Builder:
    Data is sent to the cloud account that you specified at the frequency that you specified.
 
 1. (Optional) After you create the export, whether you chose to send it now or on a defined schedule, you can view and manage it on the [Exports page](/help/components/exports/manage-exports.md) and view it in the [Export logs](/help/components/exports/manage-export-logs.md).</p>
+
+>[!NOTE]
+>
+>A schedule exports the version of the workbook that existed when you created the schedule. If you later change and save the workbook, the existing schedule does not pick up those changes and continues to export the original version. To export an updated workbook, create a new schedule after you save your changes.
 
 ## Manage exports
 

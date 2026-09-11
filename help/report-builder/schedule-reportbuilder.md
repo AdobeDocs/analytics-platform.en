@@ -28,8 +28,11 @@ After you saved your workbook and completed your analysis, you can share your wo
 
 You can create multiple schedules for a single workbook. For example, you create two schedules to send a workbook to your team daily and to your manager once a week.
 
-The schedule feature also allows you to set up password protection for a workbook and edit previously scheduled workbooks.
+The schedule feature also allows you to set up password protection for a workbook and edit the schedule for previously scheduled workbooks.
 
+>[!NOTE]
+>
+>A schedule sends the version of the workbook that existed when you created the schedule. If you later change and save the workbook, the existing schedule does not pick up those changes and continues to send the original version. To distribute an updated workbook, create a new schedule after you save your changes.
 
 >[!BEGINSHADEBOX]
 

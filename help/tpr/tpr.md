@@ -8,7 +8,7 @@ hide: true
 ---
 # Total population reporting
 
-Total population reporting introduces the ability to analyze and report on entities defined in profile and lookup datasets and beyond time-based series of events from event datasets. This ability enables new classes of queries, metrics, and audience definitions that reflect the full scope of a business's customer base.
+Total population reporting introduces the ability to analyze and report on entities defined in profile and lookup datasets that exist in a Customer Journey Analytics connection. That analysis and reporting is beyond time-based series of events from event datasets. The ability enables new classes of queries, metrics, and audience definitions that reflect the full scope of a business's customer base.
 
 Customer Journey Analytics is built around events. Every metric, every visualization, every panel, every report is anchored to a date time range and events occurring during that date time range. You ask the solutions questions like:
 
@@ -23,7 +23,7 @@ But not every question your business needs to answer is about something that hap
 
 | Question | Event | Date time range |
 |---|---|---|
-|How many active customers do we have right now? | N/A | N/A |
+| How many active customers do we have right now? | N/A | N/A |
 | How many accounts are in our database? | N/A | N/A |
 | How many of our members haven't made a purchase in the last 30 days? | N/A | last 30 days |
 

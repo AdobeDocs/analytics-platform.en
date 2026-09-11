@@ -160,6 +160,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Metric deduplication](../data-views/component-settings/metric-deduplication.md)
     + [No value options](../data-views/component-settings/no-value-options.md)
     + [Persistence](../data-views/component-settings/persistence.md)
+    + {hide-from-toc} [Scope](/help/data-views/component-settings/scope.md)
     + [Substring](../data-views/component-settings/substring.md)
     + [Summary data group](../data-views/component-settings/summary-data-group.md)
     + [Value bucketing](../data-views/component-settings/value-bucketing.md)
@@ -429,6 +430,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + {hide-from-toc} [Map columns](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc} [Create a data feed](/help/components/exports/cja-data-feeds/create-feed.md)
       + {hide-from-toc} [Segmentation in data feeds](/help/components/exports/cja-data-feeds/df-segmentation.md)
+      + {hide-from-toc} [Use derived fields in data feeds](/help/components/exports/cja-data-feeds/df-derived-fields.md)
   + Data Dictionary {#data-dictionary}
     + [Overview](../components/data-dictionary/data-dictionary-overview.md)
     + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
@@ -463,11 +465,12 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Overview](/help/stitching/overview.md)
   + [Field-based stitching](/help/stitching/fbs.md)
   + [Graph-based stitching](/help/stitching/gbs.md)
-  + {hide-from-toc}  [B2B account stitching](/help/stitching/b2b-account-stitching.md)
   + [Request stitching](/help/stitching/use-stitching.md)
   + [Enable stitching](/help/stitching/use-stitching-ui.md)
   + [Validate stitching](/help/stitching/validate.md)
   + [Frequently Asked Questions](/help/stitching/faq.md)  
+  + B2B {#b2b}
+    + [Person to account stitching](/help/stitching/b2b/b2b-person-to-account-stitching.md)
 
 + Total population reporting {#tpr}
   + {hide-from-toc} [Overview](/help/tpr/tpr.md)
@@ -582,3 +585,4 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
 + [Customer Journey Analytics MCP server](https://developer.adobe.com/analytics-mcp/docs/cja/)
+
