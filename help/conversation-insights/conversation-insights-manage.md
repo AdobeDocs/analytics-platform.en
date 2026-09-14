@@ -6,7 +6,7 @@ feature: Content Analytics
 role: Admin, User
 hold: true
 ---
-# Manage Conversation Insights Configurations
+# Manage configurations
 
 After you [create Conversation Insights configurations](/help/conversation-insights/conversation-insights-configure.md), you can view, edit, or delete these configurations. 
 
