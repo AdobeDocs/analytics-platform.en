@@ -4,7 +4,6 @@ description: Learn how to report on visitor consent policy membership and filter
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -30,6 +29,8 @@ topic_v2:
     internal-label: Privacy
 ---
 # Consent reporting and filtering overview
+
+{{release-limited-testing}}
 
 Consent reporting and filtering uses the consent policy membership data stored in your Adobe Experience Platform Profile datasets to help you report on visitor consent. Additionally, you can choose to exclude non-consenting visitors before their data is ingested into Customer Journey Analytics.
 
@@ -133,7 +134,7 @@ The following Customer Journey Analytics roles and Experience Platform permissio
 |---------|----------|----------|
 | [Create consent reporting and filtering configurations](/help/connections/consent-reporting-filtering/consent-configure.md) | System administrator | <ul><li>Datasets: Read, Write</li><li>Schemas: Read, Write</li></ul> <p>Read access is required for the Profile dataset that contains the consent policy membership data. Write access is required because a consent policy lookup dataset is created and kept in sync.</p> |
 | View consent policy components in the data view | Product profile administrator for the product profile that the data view is assigned to <p>For more information, see [Access control](/help/technotes/access-control.md).</p> | N/A |
-| Use consent policy components in Analysis Workspace | Access to a data view where the consent policy components were added | N/A |
+| [Use consent policy components in Analysis Workspace](/help/connections/consent-reporting-filtering/consent-analyze.md#use-consent-policy-components-in-analysis-workspace) | Access to a data view where the consent policy components were added | N/A |
 
 ## Consent reporting and filtering use cases
 

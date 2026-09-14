@@ -4,7 +4,6 @@ description: Learn how to create a configuration to enable consent reporting and
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -83,6 +82,8 @@ topic_v2:
 
 <!-- markdownlint-enable MD034 -->
 
+{{release-limited-testing}}
+
 System administrators can enable consent reporting and, optionally, consent filtering for one or more connections. For overview information, see [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/consent-overview.md).
 
 >[!IMPORTANT]
@@ -95,7 +96,7 @@ When you create a configuration for consent reporting and filtering, you select 
 
 To create a consent reporting and filtering configuration:
 
-1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Consent reporting and filtering]**.
+1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Consent Reporting & Filtering]**.
 
 1. Select **[!UICONTROL Create configuration]**.
 
