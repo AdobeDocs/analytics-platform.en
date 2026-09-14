@@ -1,18 +1,17 @@
 ---
-title: Configure Conversation Insights Configuration
+title: Create Or Edit A Conversation Insights Configuration
 description: Learn how to configure Conversation Insights configurations.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 hold: true
 ---
-# Configure Conversation Insights configurations
+# Create or edit a configurations
 
 
 Conversation Insights enables you to analyze conversations (from large language models (LLM) or humans) at scale and give those conversations context within the full customer journey. Through Conversation Insights you are able to understand the impact of representatives on actual user outcomes.
 
-
-## Create or edit configuration
+Through the Conversation Insights configuration interface you can quickly create or edit a configuration and the associated artifacts (connection, data views, and more).
 
 When you create or edit a Conversation Insights configuration, you specify the sandbox and the event datasets that contain prompts, responses and feedback data. You also select the Customer Journey Analytics connection to which you want to add these datasets. And the data view to which you want to add the Conversation Insights metrics and dimensions.
 
@@ -20,12 +19,12 @@ Only system administrators can create or edit Conversation Insights configuratio
 
 You create or edit configurations from the [Conversation Insights Configurations interface](./conversation-insights-manage.md).
 
-### Restore missing blended dataset
+## Restore missing blended dataset
 
 If you edit a configuration and the blended dataset that has been generated for the configuration no longer exists, select **[!UICONTROL Restore]** to regenerate the blended dataset.
 
 
-### Configuration steps
+## Configuration steps
 
 For each configuration:
 

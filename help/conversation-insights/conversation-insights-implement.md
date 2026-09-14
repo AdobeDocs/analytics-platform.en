@@ -14,8 +14,9 @@ This article documents the required implementation steps.
 
 >[!PREREQUISITES]
 >
->You must have an Experience Platform environment (organization and sandbox) available to collect the data.
-Your Adobe organization must be enabled for the experimental agentic and conversation field groups.
+>* You must have an Experience Platform environment (organization and sandbox) available to collect the data.
+>* Your Adobe organization must be enabled for the experimental agentic and conversation field groups.
+>
 
 ## Schema and datasets
 
@@ -300,6 +301,10 @@ A signal has the following fields.
 | `metadata[]` |   Optional producer-defined key/value metadata. |
 
 
+The signal extraction service populates the `signals` object for the signals dataset. 
+
+The previous `signals[].attributes.{subjects,intents,tones,sentiment}` container is deprecated.
+
 #### Conversation
 
 See below for the full details of a conversation object.
@@ -352,9 +357,6 @@ See below for the full details of a conversation object.
 +++
 
 
-The signal extraction service populates the `signals` object for the signals dataset. 
-
-The previous `signals[].attributes.{subjects,intents,tones,sentiment}` container is deprecated.
 
 
 ### Additional field groups
