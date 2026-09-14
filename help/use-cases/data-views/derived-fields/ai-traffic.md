@@ -29,7 +29,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-topic_v2:
+  
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
@@ -111,6 +111,9 @@ As of August 2025, the following specific signals can be identified for each of 
 <td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">Used when ChatGPT browses websites on behalf of users (legacy)</a></td>
 </tr>
 <tr>
+<td><strong>OAI-AdsBot</strong></td>
+<td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-AdsBot/1.0; +<a href="https://openai.com/adsbot" target="_blank" rel="noopener nofoloow noreferrer">https://openai.com/adsbot</a></code></td>
+</tr>
 <td><strong>OAI-SearchBot</strong></td>
 <td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +<a href="https://openai.com/searchbot" target="_blank" rel="noopener nofollow noreferrer">https://openai.com/searchbot</a></code></td>
 <td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">ChatGPT's search-focused crawler for discovering content</a></td>
