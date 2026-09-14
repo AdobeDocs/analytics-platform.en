@@ -46,7 +46,7 @@ The following table describes each derived field function, whether it is best su
 | [**Summarize**](/help/data-views/derived-fields/derived-fields.md#summarize)<br/>Applies aggregation functions (such as sum, count, or most common) to a field, with a Scope of Event, Session, or Person. | Difficult | Derived field | This function depends on a Scope setting. For more information, see [How Scope settings in functions affect data feeds](#scope-settings). |
 | [**Trim**](/help/data-views/derived-fields/derived-fields.md#trim)<br/>Trims whitespace, special characters, or a set number of characters from the beginning or end of a field's values. | Easy to moderate | Either | Reproducible in SQL, but using a derived field keeps the same logic applied consistently in both Analysis Workspace and the data feed output. |
 | [**Typecast**](/help/data-views/derived-fields/derived-fields.md#typecast)<br/>Changes a field's data type to make it available for additional transformations. | Easy to moderate | Either | Reproducible in SQL, but using a derived field keeps the same logic applied consistently in both Analysis Workspace and the data feed output. |
-| [**URL Parse**](/help/data-views/derived-fields/derived-fields.md#urlparse)<br/>Parses out parts of a URL, including the protocol, host, path, query string parameter, or hash value. | Difficult | Derived field | SQL requires custom string parsing to extract the same components. |
+| [**URL Parse**](/help/data-views/derived-fields/derived-fields.md#urlparse)<br/>Parses out parts of a URL, including the protocol, host, path, query string parameter, or hash value. | Difficult | Derived field | Difficult for a different reason than the Scope-dependent functions above: it has no Scope setting and no lookback-window risk. SQL requires custom string parsing to extract the same components. |
 
 {style="table-layout:auto"}
 
@@ -55,7 +55,7 @@ The following table describes each derived field function, whether it is best su
 [!UICONTROL **Date Math**], [!UICONTROL **Deduplicate**], [!UICONTROL **Next or Previous**], and [!UICONTROL **Summarize**] each depend on a [!UICONTROL **Scope**] setting of Event, Session, or Person (the available options vary by function). [!UICONTROL **Depth**] has no configurable Scope field, but is inherently tied to the session, similar to the standard Event Depth dimension. Any field with a scope writes the same value to every row within that scope, and that value depends on the data within the lookback date range.
 <!-- Open question as of 2026-09-09: is the lookback date range boundary anchored to a fixed point (e.g., midnight), or does it float with the feed run time, and is this configurable? Pending confirmation from Ron Fulkerson. -->
 
-Because the lookback date range slides forward with each data feed delivery, the same field can return a different value on a later delivery, even for events that already occurred.
+Because the [lookback date range](/help/components/exports/cja-data-feeds/create-feed.md#data-feed-lookback-date-range) slides forward with each data feed delivery, the same field can return a different value on a later delivery, even for events that already occurred.
 
 Risk increases with scope size: Person scope carries more risk than Session scope, because a person's history has no natural time boundary within a feed run.
 
