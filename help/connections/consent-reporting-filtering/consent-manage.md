@@ -4,7 +4,6 @@ description: Learn how to view, edit, and delete consent reporting and filtering
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -24,6 +23,8 @@ topic_v2:
     internal-label: Privacy
 ---
 # Manage consent reporting and filtering configurations
+
+{{release-limited-testing}}
 
 After you [create a consent reporting and filtering configuration](/help/connections/consent-reporting-filtering/consent-configure.md), you can view, edit, or delete it.
 

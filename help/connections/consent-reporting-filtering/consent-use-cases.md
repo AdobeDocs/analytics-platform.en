@@ -4,7 +4,6 @@ description: Explore use cases for reporting on visitor consent policy membershi
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -26,6 +25,8 @@ topic_v2:
     internal-label: Privacy
 ---
 # Consent reporting and filtering use cases
+
+{{release-limited-testing}}
 
 Consent reporting and filtering helps you report on visitor consent policy membership and, optionally, exclude non-consenting visitors before their data enters Customer Journey Analytics. For overview information, see [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/consent-overview.md).
 

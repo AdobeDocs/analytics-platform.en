@@ -4,7 +4,6 @@ description: Learn how to create a configuration to enable consent reporting and
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -82,6 +81,8 @@ topic_v2:
 >abstract="Enable this option to exclude non-consenting visitor data from being ingested into Customer Journey Analytics. When enabled, a visitor's data is ingested only if the visitor matches all consent policies that are enabled below. <br>This option is intended for organizations with requirements to exclude non-consenting visitor data at ingest time."
 
 <!-- markdownlint-enable MD034 -->
+
+{{release-limited-testing}}
 
 System administrators can enable consent reporting and, optionally, consent filtering for one or more connections. For overview information, see [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/consent-overview.md).
 

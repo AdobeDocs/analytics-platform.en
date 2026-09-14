@@ -4,7 +4,6 @@ description: Learn how to report on visitor consent policy membership and filter
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -30,6 +29,8 @@ topic_v2:
     internal-label: Privacy
 ---
 # Consent reporting and filtering overview
+
+{{release-limited-testing}}
 
 Consent reporting and filtering uses the consent policy membership data stored in your Adobe Experience Platform Profile datasets to help you report on visitor consent. Additionally, you can choose to exclude non-consenting visitors before their data is ingested into Customer Journey Analytics.
 
