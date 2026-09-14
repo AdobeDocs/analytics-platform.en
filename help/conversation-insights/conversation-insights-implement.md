@@ -1,14 +1,14 @@
 ---
 title: Implement Conversation Insights
-description: Learn how to instrument your agent experience applications for Conversation Insights.
+description: Learn how to instrument your agent application or service for Conversation Insights.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
-hide: true
+hold: true
 ---
 # Implement Conversation Insights
 
-To use Conversation Insights you must instrument your agent experience application or service to produce conversation data as XDM Experience Events and ensure that these conversation experience events end up in Adobe Experience Platform as datasets.
+To produce conversation data as XDM Experience Events and ensure that these conversation experience events end up in Adobe Experience Platform as datasets, instrument your agent application or service to use Conversation Insights.
 
 This article documents the required implementation steps.
 
@@ -19,14 +19,14 @@ Your Adobe organization must be enabled for the experimental agentic and convers
 
 ## Schema and datasets
 
-You should configure datasets for the primary conversation events: prompt, response, feedback. These datasets can based on the same schema (for example, a generic Conversation Insights schema) or based on indivudual schemas. 
+Configure datasets for the primary conversation events: prompt, response, feedback. These datasets can be based on the same schema (for example, a generic Conversation Insights schema) or based on individual schemas. 
 You can define separate datasets for prompts, responses, and feedback or combine data into datasets. For example, use one dataset for prompts and responses and another dataset for feedback. Or use a single dataset for all conversation events. 
 
 The schema used for the prompt, response, and feedback datasets must extend the XDM Experience Event base schema with required field groups. And can extend the XDM Experience Event base schema with additional field groups.
 
 ### Agentic Information field group
 
-The **[!UICONTROL Agentic Information]** field group is a required field group and uses the the `agenticExperience` object.
+The **[!UICONTROL Agentic Information]** field group is a required field group and uses the `agenticExperience` object.
 
 +++ Details
 
@@ -70,21 +70,21 @@ The **[!UICONTROL Agentic Information]** field group is a required field group a
 
 +++
 
-To implement events propagating the Agent Information field group with data, you should ensure:
+To implement events propagating the Agentic Information field group with data, you should ensure:
 
 * Agent configuration
   
-  * Each agent does have a unique agentID, name, and version combination.
+  * Each agent has a unique agentID, name, and version combination.
   * Agent scores are normalized between `0.0` and `1.0`.
-  * Agents are references by skill invocation using the `agentID`.
+  * Use the `agentID` to reference agents by skill invocation.
 
 * Skills invocation
 
-  * To only emit one entry per skill call, across all agents, instead of nesting skills under each agent.
-  * To populate skillInvocationID so downstream blending can de-duplicate redelivered events
-  * To order consumers properly. Group by `agentID`, then sort by `sequenceNumber`, falling back to `timestamp`. Ordering matters because subagents can execute in parallel
-  * To Use `invocationSource` and `executionContext` to distinguish main-loop versus subagent skills and inline versus forked execution.
-  * To avoid using the deprecated `agents[].skills[]` array. If you have used the array in the past, treat the array as a read-only object.
+  * Emit only one entry per skill call, across all agents, instead of nesting skills under each agent.
+  * Populate skillInvocationID so downstream blending can remove duplicate redelivered events.
+  * Order consumers properly. Group by `agentID`, then sort by `sequenceNumber`, falling back to `timestamp`. Ordering is required because subagents can execute in parallel
+  * Use `invocationSource` and `executionContext` to distinguish primary versus subagent skills and inline versus forked execution.
+  * Avoid using the deprecated `agents[].skills[]` array. If you have used the array in the past, treat the array as a read-only object.
 
 * Skill Parameters
 
@@ -192,7 +192,117 @@ To implement events propagating the Agent Information field group with data, you
 
 ### Conversation Event field group
 
-The **[!UICONTROL Conversation Event]** field group is a required field group and uses the the `conversation` object.
+The **[!UICONTROL Conversation Event]** field group is a required field group and uses  the `conversation` object.
+
+The conversation object captures data for:
+
+#### Conversation
+
+A unique `conversationID` identifies a conversation. For example: `conversationID = "conv-001"`. The schema also supports `conversationName`. A human-readable name that describes the overall context of the conversation, such as: `France Geography Q&A`.
+
+The `conversationID` allows all related turns events to be grouped into the same conversational experience.
+
+#### Turn
+
+A turn is one interaction cycle within a conversation.
+
+`turnID` A unique `turnID` identifies a turn. For example:
+
+`conversationID = "conv-001"`
+`turnID = "turn-001"`
+
+The same `conversationID` and `turnID` are used to correlate the prompt, response, and feedback associated with that turn. That correlation works across records that are delivered separately or end up in different datasets.
+
+
+#### Prompt
+
+A prompt is the input submitted to the agent. In most customer scenarios, this input is the user's question, request, instruction, or message.
+
+The prompt uses the following representation: `conversation.prompt`
+
+Important prompt fields include:
+
+|Field |   Meaning |
+|---|---|
+|`prompt.source`  |  Who or what produced the prompt, commonly end-user. |
+| `prompt.raw[]` | One or more raw content segments. |
+| `prompt.raw[].text`  |  The actual prompt text or content. |
+| `prompt.raw[].purpose` | The purpose of the content, such as User Input or link. |
+
+A prompt can contain multiple raw segments. For example, a user enters text and includes a URL. 
+
+* `Prompt`
+  * `"What is the capital of France"`
+  * `"https://example.com/france"`
+
+
+#### Response
+
+A response is the content returned by the agent or another responding party.
+
+`conversation.response` A unique `responseID` represents the response. 
+
+Important response fields include:
+
+| Field | Meaning |
+|---|---|
+| `response.source` | Who or what produced the response. |
+| `response.raw[]` | One or more response-content segments |
+| `response.raw[].text` | The response text or content. |
+| `response.raw[].purpose` | The purpose of the content segment. |
+
+The documented source types include:
+
+| Source |  Meaning |
+|---|----|
+| `bot`  | Automated agent response. |
+| `canned` |   Predefined or templated response. |
+| `concierge` | Human agent response. |
+| `end-user` | Human user-generated content where applicable. |
+
+#### Feedback
+
+Feedback is the user's explicit evaluation or reaction to the interaction.
+
+The feedback structure includes: `conversation.feedback`.
+
+Examples:
+
+* `feedback.raw[].text: "Great help"`
+* feedback.rating.score: 1
+* feedback.rating.classification: "Thumbs Up"
+* `feedback.rating.reasons[]: ["Accurate", "Quick response"]`
+
+The documented rating score range is from `-1.0` to `1.0`.
+
+A feedback event can be represented as a feedback-only event using: `eventType = "conversation.feedback"`.
+
+When feedback applies to a particular turn, preserve the appropriate `conversationID` and `turnID` so that the conversation blender can associate the feedback with the relevant interaction.
+
+
+#### Signal
+
+A signal is a structured analytical observation about conversation content. The signal extraction service extracts signals.
+
+A signal has the following fields.
+
+| Field |   Meaning|
+|---|----|
+| `scope` |   The input range used to derive the signal, such as turn or conversation-to-date. |
+| `name`  |  The signal identifier, such as subjects, intents, tones, or sentiment. Poducer-defined signal names are also supported. |
+| `type` |   The value type: string, number, or boolean. |
+| `values[]`  |  One or more values associated with the signal. |
+| `stringValue`  |  A string signal value, such as an intent, tone, or subject. |
+| `numberValue`  |  A numeric signal value, such as a sentiment score. |
+| `booleanValue`  |  A true/false signal value. |
+| `confidence`  |  Optional producer confidence in the signal value, normally between 0 and 1. |
+| `qualifiers[]` |   Optional descriptors that add context to a signal value. |
+| `metadata[]` |   Optional producer-defined key/value metadata. |
+
+
+#### Conversation
+
+See below for the full details of a conversation object.
 
 +++ Details 
 
@@ -242,7 +352,7 @@ The **[!UICONTROL Conversation Event]** field group is a required field group an
 +++
 
 
-The `signals` object is populated by the Signal extraction service for the signals dataset. 
+The signal extraction service populates the `signals` object for the signals dataset. 
 
 The previous `signals[].attributes.{subjects,intents,tones,sentiment}` container is deprecated.
 
@@ -252,7 +362,7 @@ The previous `signals[].attributes.{subjects,intents,tones,sentiment}` container
 You can add optional field groups to the schema you use for prompt, response, and feedback datasets. For example:
 
 * **Web Details** field group. To capture details of the web page the conversation was embedded in.
-* C**ommerce Details** field group. To capture the product details of the recommended product mentioned as part of the conversation.
+* **Commerce Details** field group. To capture the product details of the recommended product mentioned as part of the conversation.
   
 
 
@@ -296,7 +406,12 @@ You need to set one of the following values for the `purpose` attribute on any e
 | `image` | Image references |
 | `enum picker` | Structured feedback selection |
 
-+++ Example usage of Conversation Event field group 
+
+### Example
+
+See below for example usage of the Conversation Event field group in various scenarios.
+
++++ Details 
 
 >[!BEGINTABS]
 
@@ -473,7 +588,7 @@ Use the following data collection strategy for Conversation Insights.
 
 ### Event types
 
-Your agent experience app or service should send an event as soon as possible. Ensure the app or service does not wait for a response before sending the prompt across with the information available at the time of the event.
+Your agent application or service sends an event as soon as possible. Ensure the app or service does not wait for a response before sending the prompt across with the information available at the time of the event.
 
 This recommendation implies that: 
 
@@ -482,7 +597,7 @@ This recommendation implies that:
 
 ### Event correlation
 
-The agent experience application or service must preserve stable identifiers across all related events.
+The agent application or service must preserve stable identifiers across all related events.
 
 | Field path | Description |
 |---|---|
@@ -496,11 +611,11 @@ The agent experience application or service must preserve stable identifiers acr
 
 * The same `turnID` must be used for the prompt, response, and any feedback associated with the same turn. Multiple events with the same `turnID` can exist across the prompt, response, and feedback datasets.
   
-The agent experience application or service should generate IDs that remain stable during retries or redelivery. This allows downstream processing to associate events correctly and avoid unintended duplication.
+The agent application or service generates IDs that remain stable during retries or redelivery. This allows downstream processing to associate events correctly and avoid unintended duplicate events.
 
 ## Signal extraction
 
-Signal extraction takes place after data collection. Your agent experience application or service does not require the populating of additional signal.
+Signal extraction takes place after data collection. Your agent application or service does not populate additional signals.
 
 +++ Example turn event with signals
 
@@ -633,4 +748,4 @@ Signal extraction takes place after data collection. Your agent experience appli
 
 ## Data blending
 
-Events from prompt, response, feedback, and signal events datasets are merged by the Conversation Blender service into a dedicated blended conversation events dataset. That dataset is used in Customer Journey Analytics as part of a connection. The components within that dataset are added to the data views you have specified for a Conversation Insights configuration.
+The conversation blender service merges events from prompt, response, feedback, and signal events datasets into a dedicated blended conversation events dataset. That dataset is used in Customer Journey Analytics as part of a connection. The components within that dataset are added to the data views you have specified for a Conversation Insights configuration.

@@ -4,17 +4,17 @@ description: Learn how to configure Conversation Insights configurations.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
-hide: true
+hold: true
 ---
 # Configure Conversation Insights configurations
 
 
-Conversation Insights enables you to analyze conversations (from large language models (LLM) or humans) at scale and given those conversations context within the full customer journey. Through Conversation Insights you are able to understand the impact of agents on actual user outcomes.
+Conversation Insights enables you to analyze conversations (from large language models (LLM) or humans) at scale and give those conversations context within the full customer journey. Through Conversation Insights you are able to understand the impact of representatives on actual user outcomes.
 
 
 ## Create or edit configuration
 
-When you create or edit a Conversation Insights configuration, you specify the sandbox and the event datasets that contain prompts, responses and feedback data. You also select the Customer Journey Analytics connection to which you want to add these datasets. And the data view to which you want add the Conversation Insights metrics and dimensions.
+When you create or edit a Conversation Insights configuration, you specify the sandbox and the event datasets that contain prompts, responses and feedback data. You also select the Customer Journey Analytics connection to which you want to add these datasets. And the data view to which you want to add the Conversation Insights metrics and dimensions.
 
 Only system administrators can create or edit Conversation Insights configurations.
 
@@ -22,7 +22,7 @@ You create or edit configurations from the [Conversation Insights Configurations
 
 ### Restore missing blended dataset
 
-If you edit a configuration and the blended dataset that has been generated for the configuration no longer exists, select **[!UICONTROL Restore]** to restore the configuration to regenerate the blended dataset.
+If you edit a configuration and the blended dataset that has been generated for the configuration no longer exists, select **[!UICONTROL Restore]** to regenerate the blended dataset.
 
 
 ### Configuration steps
@@ -66,7 +66,7 @@ For each configuration:
    * To search in the list of connections to select from, use the ![Search](/help/assets/icons/Search.svg) field.
    * To configure which columns to display in the table, select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). In the **[!UICONTROL Customize table]** dialog, select the columns to show. Then select **[!UICONTROL Apply]**.
 
-1. In the **[!UICONTROL Data views]** section, if no data views are already congigured, select **[!UICONTROL Select data views]** to select data views.
+1. In the **[!UICONTROL Data views]** section, if no data views are already configured, select **[!UICONTROL Select data views]** to select data views.
 
    If data views are already configured, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit data view selection]** to reconfigure the selection of data views.
 
@@ -83,13 +83,13 @@ For each configuration:
 
 1. To finish the configuration:
 
-   * Select **[!UICONTROL Discard]** for a new configuration that is not actually created.
+   * Select **[!UICONTROL Discard]** for a new configuration that is not created.
 
-   * Select **[!UICONTROL Save for later]** for a new configuration you want to save but you do no want to actually create the artefact for (updates to data views for example). So you can revisit the configuration later and finish the actual creation of the configuration.
+   * Select **[!UICONTROL Save for later]** for a new configuration you want to save but you do not want to create the artifact for (updates to data views for example). So you can revisit the configuration later and finish the actual creation of the configuration.
    
    * Select **[!UICONTROL Create]** to create the new configuration. 
    
-   * Select **[!UICONTROL Save]** to save the modified configured.
+   * Select **[!UICONTROL Save]** to save the modified configuration.
 
    * Select **[!UICONTROL Restore]** to restore the configuration to regenerate a new blended dataset for the configuration.
    
@@ -98,7 +98,7 @@ For each configuration:
 
 ## Data view verification
 
-(Explain the metrics and dimension you would see from the relevant datasets)
+(Explain the metrics and dimensions you see from the relevant datasets)
 
 
 <!--

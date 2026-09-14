@@ -4,7 +4,7 @@ description: Learn how to manage Conversation Insights configurations.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
-hide: true
+hold: true
 ---
 # Manage Conversation Insights Configurations
 
