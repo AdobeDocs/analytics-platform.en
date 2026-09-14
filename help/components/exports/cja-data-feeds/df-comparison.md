@@ -41,6 +41,8 @@ The following capabilities are available in Customer Journey Analytics data feed
 
 * **Derived fields**: Custom components built from rule-based transformations that can be included in your data feed schema. <!-- add benefit -->
 
+* **Component settings**: Data view component settings, such as persistence, metric deduplication, and value bucketing, can transform a component's value directly in your data feed output, without requiring SQL.
+
 * **Stitching**: Cross-device identity resolution that links events across devices to a single person. 
 
 * **Structured data model**: Feeds are built and delivered using structured data rather than flat strings such as post_product_list. Reflects the existing structure from the XDM schema and the data view. 
@@ -80,6 +82,7 @@ The following table compares key concepts and configuration options across Custo
 | **Schema**<br/>The data feed schema determines which columns are available to include in a data feed. | The data feed schema is based on the data view configuration.  The components that are available to include in the data feed schema are a subset of the components available in the data view configuration. | A pre-defined, static list of ~1,100+ variables. Many columns are exported as **pre- and post-processed pairs** (for example, `eVar1` / `post_eVar1`), which accounts for much of the column count. |
 | **Data feed builder**<br/>The interface used to configure which columns are included in a data feed. | Uses a component rail with the same named dimensions and metrics available in the data view, matching the Analysis Workspace experience. | Uses a flat list of raw variable names (such as `eVar1`, `prop5`) selected from a pre-defined set of ~1,100+ columns. Components are not named or described beyond their variable identifier. |
 | **Derived fields**<br/>Custom components defined using rule-based transformations applied at report time. | Supported. Derived field components can be included in the data feed schema alongside standard dimensions and metrics. | Not supported. |
+| **Component settings**<br/>Data view component settings, such as persistence, metric deduplication, and value bucketing, that transform a component's value at report time. | Supported for most settings. These settings apply to data feed output the same way they apply in Analysis Workspace. | Not supported. |
 | **Component updates**<br/>Whether changes to component configuration are reflected in past and future data feed output. | Changes to components in the data view (such as renaming or removing a dimension) propagate to future data feeds and are also reflected in backfills. | Changes to components in the report suite apply only to data that is collected in the future. |
 | **Lookups**<br/>Lookup datasets in Customer Journey Analytics are the equivalent of classifications in Adobe Analytics. | All lookups are embedded directly in the data. | Classifications are not included with Adobe analytics data feeds. |
 | **Session definition**<br/>How a visit or session boundary is defined, which affects how events are grouped and attributed. | Defined in the data view. | Defined at collection time. |
