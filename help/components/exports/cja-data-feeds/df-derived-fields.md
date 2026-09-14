@@ -32,7 +32,7 @@ The following table compares the advantages and disadvantages of each method in 
 
 ## Data transformations
 
-The following table lists specific data transformations, showing which method (or methods) can perform each one, how difficult it would be to replicate in SQL, and which method to use. A few transformations are still being confirmed with the engineering team and are marked as open questions — don't treat those as confirmed to affect data feed output until that's resolved.
+The following table lists specific data transformations, showing which method (or methods) can perform each one, how difficult it would be to replicate in SQL, and which method to use. <!--A few transformations are still being confirmed with the engineering team and are marked as open questions — don't treat those as confirmed to affect data feed output until that's resolved.-->
 
 | Transformation | Component setting | Derived field | Difficulty in SQL | Best fit | Considerations |
 | --- | --- | --- | --- | --- | --- |
