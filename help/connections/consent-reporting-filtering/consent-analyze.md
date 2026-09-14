@@ -4,7 +4,6 @@ description: Learn how to use consent policy dimensions, metrics, and templates 
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin, User
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -26,6 +25,8 @@ topic_v2:
     internal-label: Governance
 ---
 # Analyze consent policy data
+
+{{release-limited-testing}}
 
 You can ingest consent policy data from Experience Platform Profile datasets into a Customer Journey Analytics connection.
 

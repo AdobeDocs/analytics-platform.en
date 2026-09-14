@@ -4,7 +4,6 @@ description: Learn how to view, edit, and delete consent reporting and filtering
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -25,6 +24,8 @@ topic_v2:
 ---
 # Manage consent reporting and filtering configurations
 
+{{release-limited-testing}}
+
 After you [create a consent reporting and filtering configuration](/help/connections/consent-reporting-filtering/consent-configure.md), you can view, edit, or delete it.
 
 Only system administrators can manage consent reporting and filtering configurations.
@@ -35,7 +36,7 @@ For overview information, see [Consent reporting and filtering overview](/help/c
 
 To view your existing configurations:
 
-1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Consent reporting and filtering]**.
+1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Consent Reporting & Filtering]**.
 
    The following columns of information are available about each configuration:
 
@@ -73,7 +74,7 @@ To view your existing configurations:
 
 To edit an existing configuration:
 
-1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Consent reporting and filtering]**.
+1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Consent Reporting & Filtering]**.
 
 1. Select the name of the configuration that you want to edit.
 
@@ -87,7 +88,7 @@ To edit an existing configuration:
 
 To delete an existing configuration:
 
-1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Consent reporting and filtering]**.
+1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Consent Reporting & Filtering]**.
 
 1. Select the checkbox next to the configuration that you want to delete, then select **[!UICONTROL Delete]**.
 
