@@ -65,6 +65,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 |---|---|
+| **September 2026** | |
+| New resize shortcut actions | New keyboard shortcuts in Analysis Workspace now allow you to [resize a panel or visualization](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#resize-panel-or-visualization) wider, narrower, taller, or shorter. |
 | **August 2026** | |
 | Clarified information about refreshing audiences | When [publishing audiences](/help/components/audiences/publish.md#audience-builder), clarified that the number of audiences that can be scheduled to refresh depends on your Customer Journey Analytics entitlement, and is between 75 and 150. |
 | **July 2026** | |
