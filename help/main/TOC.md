@@ -507,7 +507,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Build product value](/help/use-cases/b2b/b2b-edition/build-product-value.md)
   + Complex data {#complex-data}
     + [Use arrays of objects](../use-cases/object-arrays.md)
-    + [Handling No value](../use-cases/no-value.md)
+    + [Handling No value](../use-cases/data-views/no-value.md)
   + Cross-channel data {#cross-channel}
     + [Analyze data across channels](../use-cases/cross-channel/cross-channel.md)
     + [Import call center and web data](../use-cases/cross-channel/call-center.md)
