@@ -146,7 +146,7 @@ The overall process of data collection, signal extraction and conversation blend
 
 ![Conversation Insights How It Works illustration](assets/conversation-insights.png){zoomable="yes"}
 
-| | Description | 
+| | Description |
 |---|---|
 | 1 | You instrument your agent application or service to create events that contain prompts ![CommentText](/help/assets/icons2/CommentText.svg), responses ![CommentReply](/help/assets/icons2/CommentReply.svg), and feedback ![Feedback](/help/assets/icons2/Feedback.svg) datasets.<br/>For details on how to instrument your agent application or service, refer to the [implementation documentation](./conversation-insights-implement.md). |
 | 2 | The signal extraction service extracts signals from the prompts ![CommentText](/help/assets/icons2/CommentText.svg), responses ![CommentReply](/help/assets/icons2/CommentReply.svg), and feedback datasets ![Feedback](/help/assets/icons2/Feedback.svg) as signal events ![OnAir](/help/assets/icons/OnAir.svg) and stores these signal events in a new dataset.<br>This step is implemented as part of the definition a [Conversation Insights configuration](./conversation-insights-configure.md). |

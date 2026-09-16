@@ -82,7 +82,8 @@ A migration moves through three stages: [!UICONTROL **Audit**], [!UICONTROL **Ma
 
 1. In the Migration Planner, on the [!UICONTROL **Migrations**] tab, select [!UICONTROL **New**].
 
-   ![The New migration dialog, where you choose a migration type and enter a migration name.](assets/migration-planner-new-migration.png)
+   <!-- Confirm the exact image: ![The migration overview page with the Audit, Mapping, and Implementation stage cards.](assets/migration-planner-overview.png) -->
+   
 
 1. Specify the following information:
    
@@ -129,13 +130,13 @@ After you create a migration, open it to complete its three stages: [!UICONTROL 
 
    The migration overview page shows the three stages to complete, along with a summary of your migration and its artifacts.
 
-   ![The migration overview page with the Audit, Mapping, and Implementation stage cards.](assets/migration-planner-overview.png)
+   <!-- Confirm the exact image: ![The migration overview page with the Audit, Mapping, and Implementation stage cards.](assets/migration-planner-overview.png) -->
 
 1. Complete the [!UICONTROL **Audit**] stage:
 
    1. In the audit card ([!UICONTROL **Tag extension audit**] or [!UICONTROL **JavaScript audit**], depending on your migration type), select [!UICONTROL **Start audit**] to review the rules and data elements included in the migration.
 
-      ![The audit page, where you select rules and data elements and resolve any findings.](assets/migration-planner-audit.png)
+      <!-- Confirm the exact image: ![The audit page, where you select rules and data elements and resolve any findings.](assets/migration-planner-audit.png) -->
 
    1. On the [!UICONTROL **Rules**] and [!UICONTROL **Data elements**] tabs, select the items to include in the migration.
 
