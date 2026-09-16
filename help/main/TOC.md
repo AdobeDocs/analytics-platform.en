@@ -517,6 +517,9 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Export datasets](../use-cases/data-export/export-datasets.md)
     + [Export full table](../use-cases/data-export/export-full-table.md)
     + [Query Service and Export datasets](../use-cases/data-export/queryservice-export-datasets.md)
+    + [Workspace export](../use-cases/data-export/workspace-export.md)
+    + [Report Builder](../use-cases/data-export/report-builder.md)
+    + [Reporting API](../use-cases/data-export/reporting-api.md)
   + Data ingestion {#data-ingestion}
     + [Ingest and use Marketo Engage data](../use-cases/data-ingestion/marketo.md)
     + [Ingest and use Experience Platform audiences](../use-cases/data-ingestion/ingest-aep-segments.md)
