@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2020 600" width="2020" height="600" role="img" aria-labelledby="options-flow-title options-flow-desc">
+  <title id="options-flow-title">Managing No value options in a data view</title>
+  <desc id="options-flow-desc">Managing No value options branches into three areas. Show options controls whether No value is shown or hidden by default, which impacts visibility. Custom naming lets you rename the No value label or use a custom text field, which impacts naming. Treatment options includes treating No value as a value, which applies only to non-numeric dimensions and impacts both value handling and visibility, and numeric dimension support, which lets you show or hide No value by default for numeric dimensions and impacts visibility.</desc>
+
+  <defs>
+    <marker id="arrow-opt" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#464646"/>
+    </marker>
+  </defs>
+
+  <g font-family="'Adobe Clean', 'Adobe Clean VF', Arial, sans-serif">
+
+    <!-- Title -->
+    <rect x="740" y="20" width="520" height="70" rx="8" fill="#BEE3FF" stroke="#1B1B1B" stroke-width="2"/>
+    <text x="1000" y="63" text-anchor="middle" font-size="24" font-weight="700" fill="#1B1B1B">Managing "No value" options</text>
+
+    <!-- Title to category arrows -->
+    <path d="M1000,90 C 900,130 500,150 250,168" fill="none" stroke="#464646" stroke-width="2" marker-end="url(#arrow-opt)"/>
+    <path d="M1000,90 C 985,125 800,150 760,168" fill="none" stroke="#464646" stroke-width="2" marker-end="url(#arrow-opt)"/>
+    <path d="M1000,90 C 1120,130 1450,150 1530,168" fill="none" stroke="#464646" stroke-width="2" marker-end="url(#arrow-opt)"/>
+
+    <!-- Category boxes -->
+    <rect x="130" y="170" width="240" height="50" rx="8" fill="#FDE8A8" stroke="#1B1B1B" stroke-width="2"/>
+    <text x="250" y="201" text-anchor="middle" font-size="19" font-weight="700" fill="#1B1B1B">Show options</text>
+
+    <rect x="640" y="170" width="240" height="50" rx="8" fill="#FDE8A8" stroke="#1B1B1B" stroke-width="2"/>
+    <text x="760" y="201" text-anchor="middle" font-size="19" font-weight="700" fill="#1B1B1B">Custom naming</text>
+
+    <rect x="1400" y="170" width="260" height="50" rx="8" fill="#FDE8A8" stroke="#1B1B1B" stroke-width="2"/>
+    <text x="1530" y="201" text-anchor="middle" font-size="19" font-weight="700" fill="#1B1B1B">Treatment options</text>
+
+    <!-- Category to item arrows -->
+    <path d="M250,220 C 220,240 165,248 135,258" fill="none" stroke="#464646" stroke-width="2" marker-end="url(#arrow-opt)"/>
+    <path d="M250,220 C 300,240 355,248 385,258" fill="none" stroke="#464646" stroke-width="2" marker-end="url(#arrow-opt)"/>
+    <path d="M760,220 C 730,240 710,248 695,258" fill="none" stroke="#464646" stroke-width="2" marker-end="url(#arrow-opt)"/>
+    <path d="M760,220 C 830,240 915,248 955,258" fill="none" stroke="#464646" stroke-width="2" marker-end="url(#arrow-opt)"/>
+    <path d="M1530,220 C 1440,240 1350,248 1295,258" fill="none" stroke="#464646" stroke-width="2" marker-end="url(#arrow-opt)"/>
+    <path d="M1530,220 C 1620,240 1680,248 1720,258" fill="none" stroke="#464646" stroke-width="2" marker-end="url(#arrow-opt)"/>
+
+    <!-- Group 1 items: Show options -->
+    <rect x="30" y="260" width="210" height="40" rx="8" fill="#FFFFFF" stroke="#2D9D78" stroke-width="2"/>
+    <text x="135" y="285" text-anchor="middle" font-size="15" font-weight="700" fill="#2D9D78">Show by default</text>
+
+    <rect x="270" y="260" width="230" height="40" rx="8" fill="#FFFFFF" stroke="#E34850" stroke-width="2"/>
+    <text x="385" y="285" text-anchor="middle" font-size="15" font-weight="700" fill="#E34850">Don't show by default</text>
+
+    <!-- Group 2 items: Custom naming -->
+    <rect x="560" y="260" width="270" height="40" rx="8" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="2"/>
+    <text x="695" y="285" text-anchor="middle" font-size="15" font-weight="700" fill="#1B1B1B">If shown, call "No value"</text>
+
+    <rect x="860" y="260" width="190" height="40" rx="8" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="2"/>
+    <text x="955" y="285" text-anchor="middle" font-size="15" font-weight="700" fill="#1B1B1B">Custom text field</text>
+
+    <!-- Group 3 item: Treat as a value -->
+    <rect x="1180" y="260" width="230" height="40" rx="8" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="2"/>
+    <text x="1295" y="285" text-anchor="middle" font-size="15" font-weight="700" fill="#1B1B1B">Treat as a value</text>
+
+    <!-- Group 4 item: Numeric dimension support -->
+    <rect x="1590" y="260" width="260" height="40" rx="8" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="2"/>
+    <text x="1720" y="285" text-anchor="middle" font-size="15" font-weight="700" fill="#1B1B1B">Numeric dimension support</text>
+
+    <!-- Group 1 description -->
+    <rect x="20" y="345" width="500" height="90" rx="8" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="1.5"/>
+    <text x="270" y="368" text-anchor="middle" font-size="14" fill="#1B1B1B">
+      <tspan x="270" dy="0">Can be included or excluded via</tspan>
+      <tspan x="270" dy="20">check box selection within</tspan>
+      <tspan x="270" dy="20">freeform table search filter</tspan>
+    </text>
+    <text x="270" y="470" text-anchor="middle" font-size="17" font-weight="700" fill="#9256D9">IMPACTS VISIBILITY</text>
+
+    <!-- Group 2 description -->
+    <rect x="540" y="345" width="545" height="100" rx="8" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="1.5"/>
+    <text x="812" y="368" text-anchor="middle" font-size="14" fill="#1B1B1B">
+      <tspan x="812" dy="0">Affects reporting dimension</tspan>
+      <tspan x="812" dy="20">value display and potentially</tspan>
+      <tspan x="812" dy="20">value consolidation and</tspan>
+      <tspan x="812" dy="20">metric aggregation</tspan>
+    </text>
+    <text x="812" y="480" text-anchor="middle" font-size="17" font-weight="700" fill="#E9730C">IMPACTS NAMING</text>
+
+    <!-- Group 3 description -->
+    <rect x="1105" y="345" width="380" height="110" rx="8" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="1.5"/>
+    <text x="1295" y="368" text-anchor="middle" font-size="14" fill="#1B1B1B">
+      <tspan x="1295" dy="0">Applies only to non-numeric</tspan>
+      <tspan x="1295" dy="20">dimensions. Affects both attribution</tspan>
+      <tspan x="1295" dy="20">and the "Include 'No value'" option</tspan>
+      <tspan x="1295" dy="20">in freeform table search filter</tspan>
+    </text>
+    <text x="1295" y="485" text-anchor="middle" font-size="17" font-weight="700" fill="#0D7377">IMPACTS VALUE HANDLING</text>
+    <text x="1295" y="508" text-anchor="middle" font-size="17" font-weight="700" fill="#0D7377">&amp; VISIBILITY</text>
+
+    <!-- Group 4: second-level pair -->
+    <path d="M1720,300 C 1690,320 1660,335 1640,343" fill="none" stroke="#464646" stroke-width="2" marker-end="url(#arrow-opt)"/>
+    <path d="M1720,300 C 1770,320 1830,335 1870,343" fill="none" stroke="#464646" stroke-width="2" marker-end="url(#arrow-opt)"/>
+
+    <rect x="1540" y="345" width="200" height="40" rx="8" fill="#FFFFFF" stroke="#2D9D78" stroke-width="2"/>
+    <text x="1640" y="370" text-anchor="middle" font-size="15" font-weight="700" fill="#2D9D78">Show by default</text>
+
+    <rect x="1760" y="345" width="220" height="40" rx="8" fill="#FFFFFF" stroke="#E34850" stroke-width="2"/>
+    <text x="1870" y="370" text-anchor="middle" font-size="15" font-weight="700" fill="#E34850">Don't show by default</text>
+
+    <!-- Group 4 description -->
+    <rect x="1520" y="430" width="480" height="80" rx="8" fill="#FFFFFF" stroke="#1B1B1B" stroke-width="1.5"/>
+    <text x="1760" y="453" text-anchor="middle" font-size="14" fill="#1B1B1B">
+      <tspan x="1760" dy="0">Can be included or excluded via</tspan>
+      <tspan x="1760" dy="20">check box selection within</tspan>
+      <tspan x="1760" dy="20">freeform table search filter</tspan>
+    </text>
+    <text x="1760" y="545" text-anchor="middle" font-size="17" font-weight="700" fill="#9256D9">IMPACTS VISIBILITY</text>
+
+    <!-- Group boundaries -->
+    <rect x="15" y="245" width="515" height="250" rx="14" fill="none" stroke="#9256D9" stroke-width="2" stroke-dasharray="8,6"/>
+    <rect x="535" y="245" width="555" height="260" rx="14" fill="none" stroke="#E9730C" stroke-width="2" stroke-dasharray="8,6"/>
+    <rect x="1095" y="245" width="400" height="280" rx="14" fill="none" stroke="#0D7377" stroke-width="2" stroke-dasharray="8,6"/>
+    <rect x="1515" y="245" width="490" height="320" rx="14" fill="none" stroke="#9256D9" stroke-width="2" stroke-dasharray="8,6"/>
+
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1370 140" width="1370" height="140" role="img" aria-labelledby="login-flow-title login-flow-desc">
+  <title id="login-flow-title">User authentication journey from pre-login to identified state</title>
+  <desc id="login-flow-desc">A user visits the site and enters a pre-login state where no user info is available. After a login event, user info becomes populated.</desc>
+
+  <defs>
+    <marker id="arrow-gray-h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#464646"/>
+    </marker>
+    <marker id="arrow-green-h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#268E6C"/>
+    </marker>
+  </defs>
+
+  <g font-family="'Adobe Clean', 'Adobe Clean VF', Arial, sans-serif" font-size="18" font-weight="700">
+
+    <!-- User visits site -->
+    <rect x="30" y="35" width="210" height="70" rx="10" fill="#FFFFFF" stroke="#2C2C2C" stroke-width="2"/>
+    <text x="135" y="77" text-anchor="middle" fill="#2C2C2C">User visits site</text>
+
+    <line x1="240" y1="70" x2="296" y2="70" stroke="#464646" stroke-width="2" marker-end="url(#arrow-gray-h)"/>
+
+    <!-- Pre-login state -->
+    <rect x="300" y="35" width="200" height="70" rx="10" fill="#FFFFFF" stroke="#9256D9" stroke-width="2"/>
+    <text x="400" y="77" text-anchor="middle" fill="#9256D9">Pre-login state</text>
+
+    <line x1="500" y1="70" x2="556" y2="70" stroke="#464646" stroke-width="2" marker-end="url(#arrow-gray-h)"/>
+
+    <!-- No user info available -->
+    <rect x="560" y="35" width="270" height="70" rx="10" fill="#FFFFFF" stroke="#9256D9" stroke-width="2"/>
+    <text x="695" y="77" text-anchor="middle" fill="#9256D9">No user info available</text>
+
+    <line x1="830" y1="70" x2="886" y2="70" stroke="#268E6C" stroke-width="3" marker-end="url(#arrow-green-h)"/>
+
+    <!-- Login event -->
+    <rect x="890" y="35" width="150" height="70" rx="10" fill="#FFFFFF" stroke="#268E6C" stroke-width="2"/>
+    <text x="965" y="77" text-anchor="middle" fill="#268E6C">Login event</text>
+
+    <line x1="1040" y1="70" x2="1096" y2="70" stroke="#268E6C" stroke-width="3" marker-end="url(#arrow-green-h)"/>
+
+    <!-- User info populated -->
+    <rect x="1100" y="35" width="240" height="70" rx="10" fill="#FFFFFF" stroke="#268E6C" stroke-width="2"/>
+    <text x="1220" y="77" text-anchor="middle" fill="#268E6C">User info populated</text>
+
+  </g>
+</svg>
