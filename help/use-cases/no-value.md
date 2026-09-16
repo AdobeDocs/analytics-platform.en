@@ -8,21 +8,21 @@ role: Admin
 
 # How to handle No value
 
-When working with Customer Journey Analytics, encountering **[!UICONTROL No value]** entries in reports and dashboards raises important questions about data quality, collection methods, and reporting accuracy. These instances need careful monitoring as they may reveal hidden gaps in data collection. The main challenge lies in distinguishing between two scenarios: when **[!UICONTROL No value]** entries need investigation by data source providers, and when **[!UICONTROL No value]** entries simply reflect the natural flow of data into CJA. Understanding this distinction is crucial for maintaining efficient analytics operations. This guide will help you make informed decisions about "No Value" appearances in your CJA implementation.
+When working with Customer Journey Analytics, encountering **[!UICONTROL No value]** entries in reports and dashboards raises important questions about data quality, collection methods, and reporting accuracy. These instances need careful monitoring, as they reveal hidden gaps in data collection. The challenge lies in distinguishing between two scenarios: when **[!UICONTROL No value]** entries need investigation by data source providers, and when **[!UICONTROL No value]** entries reflect the natural flow of data into Customer Journey Analytics. Understanding this distinction is crucial for maintaining efficient analytics operations. This guide helps you make informed decisions about **[!UICONTROL No value]** appearances in your Customer Journey Analytics implementation.
 
 ## Understand No value
 
 **[!UICONTROL No value]** appears when a dimension does not have a corresponding value for an event that otherwise contains a metric. Seeing **[!UICONTROL No value]** in a report isn't always a problem. In many cases, it reflects the expected structure of your dataset.
 
-Dimension items generally fall into one of three categories:
+Dimension items fall into one of three categories:
 
 * **Expected [!UICONTROL No value]**: A natural result of how users move through your data, such as visitors who haven't signed in yet, or dimensions that don't apply to every event
-* **Problematic [!UICONTROL No value]**: The result of a failed data collection or an implementation error, where a value should exist but doesn't
+* **Problematic [!UICONTROL No value]**: The result of a failed data collection or an implementation error, where a value exists but is missing
 * **Valid value**: The dimension successfully captured a value
 
 The following diagram shows how Customer Journey Analytics arrives at each of these categories as data moves from your source through Adobe Experience Platform.
 
-The flowchart illustrates how Customer Journey Analytics evaluations should center on incoming data by first checking for value presence, then determining whether missing values are expected or problematic. This clear assessment helps administrators and analysts differentiate between **[!UICONTROL No value]** cases requiring source investigation and those representing normal operations.
+The flowchart illustrates how Customer Journey Analytics evaluations focus on incoming data by first checking for value presence, then determining whether missing values are expected or problematic. This clear assessment helps administrators and analysts differentiate between **[!UICONTROL No value]** cases requiring source investigation and those representing normal operations.
 
 ![Decision flow showing source data moving through Adobe Experience Platform into Customer Journey Analytics, which checks whether a dimension value is present, then whether a missing value is an expected scenario, resulting in a natural No value, a problematic No value, or a valid value](assets/no-value-flow.svg)
 
@@ -36,7 +36,7 @@ The following are common, expected reasons for **[!UICONTROL No value]** to appe
 * A feature or product interaction doesn't apply to a particular user journey
 * A cross-device scenario doesn't carry dimension values across devices
 
-In these cases, **[!UICONTROL No value]** indicates where a user is in their authentication journey, particularly during the transition from an unidentified to an identified state, as illustrated below.
+In these cases, **[!UICONTROL No value]** indicates where a user is in their authentication journey, during the transition from an unidentified to an identified state, as illustrated below.
 
 ![User authentication journey showing a user visiting the site and entering a pre-login state with no user info available, then a login event that populates the user's info](assets/no-value-login-flow.svg)
 
@@ -123,40 +123,40 @@ You can replace `No value` with descriptive terms like `Pre-login User` for auth
 
 ### Don't show No value by default
 
-This setting determines whether to hide **[!UICONTROL No value]** rows by default in reporting. When enabled, these rows will be filtered out initially but can still be shown within a freeform table if needed by check box selection within freeform table search filter. Note that hiding **[!UICONTROL No value]** rows will affect the percentage distribution of the remaining values, as percentages are recalculated based on the visible items only.
+This setting determines whether to hide **[!UICONTROL No value]** rows by default in reporting. When enabled, these rows are filtered out initially but can still be shown within a freeform table if needed by check box selection within the freeform table search filter. Note that hiding **[!UICONTROL No value]** rows affects the percentage distribution of the remaining values, as percentages are recalculated based on the visible items only.
 
 ### Show No value by default
 
-This setting controls whether **[!UICONTROL No value]** appears by default in reports. When enabled, **[!UICONTROL No value]** entries will be visible, though users can exclude them using the checkbox in the freeform table search filter. Including or excluding **[!UICONTROL No value]** rows affects percentage distributions, as percentages are calculated based only on visible items.
+This setting controls whether **[!UICONTROL No value]** appears by default in reports. When enabled, **[!UICONTROL No value]** entries are visible, though users can exclude them using the checkbox in the freeform table search filter. Including or excluding **[!UICONTROL No value]** rows affects percentage distributions, as percentages are calculated based only on visible items.
 
 ### Treat No value as a value
 
-This setting treats **[!UICONTROL No value]** as a string value (except for numeric dimensions), allowing you to customize its representation as a dimension value. This customization affects both attribution and the **[!UICONTROL Include No value]** option in the Freeform table search filter. Keep in mind that when you assign a custom string value, all matching values in your dataset will be consolidated under that same dimension string value.
+This setting treats **[!UICONTROL No value]** as a string value (except for numeric dimensions), allowing you to customize its representation as a dimension value. This customization affects both attribution and the **[!UICONTROL Include No value]** option in the Freeform table search filter. Keep in mind that when you assign a custom string value, all matching values in your dataset are consolidated under that same dimension string value.
 
-The **[!UICONTROL Treat "No value" as a value]** setting serves a fundamentally different purpose than simply showing **[!UICONTROL No value]** by default. While showing by default only controls visibility, treating as a value changes how Customer Journey Analytics logically handles these entries. Here's why this distinction matters:
+The **[!UICONTROL Treat "No value" as a value]** setting serves a different purpose than showing **[!UICONTROL No value]** by default. While showing by default only controls visibility, treating as a value changes how Customer Journey Analytics logically handles these entries. Here's why this distinction matters:
 
 * It enables more granular control in filtering and segmentation, making **[!UICONTROL No value]** a distinct, actionable dimension value.
 * It maintains consistent attribution and representation throughout your analytics by treating **[!UICONTROL No value]** as a legitimate dimension value in both attribution models and visualizations.
 
-You might choose to treat **[!UICONTROL No value]** as a value when:
+You treat **[!UICONTROL No value]** as a value when:
 
 * The absence of data itself is meaningful to your analysis (such as pre-login states or unattributed traffic).
 * You need to create segments or calculated metrics that specifically target or exclude these cases.
 
-In contrast, simply showing **[!UICONTROL No value]** by default is better suited when you need basic visibility of missing data without the complexity of additional logic and attribution that comes with treating it as a value.
+In contrast, showing **[!UICONTROL No value]** by default is better suited when you need basic visibility of missing data without the complexity of additional logic and attribution that comes with treating it as a value.
 
 ### No value support for numeric dimensions
 
-For numeric dimensions, several configuration options are available. In the Data view dimensions settings, you can configure all **[!UICONTROL No value]** options except **[!UICONTROL Treat "No value" as a value]**. You can also manage **[!UICONTROL Include "No value"]** for numeric dimensions by check box selection within freeform table search filter. When creating segments, you can use the **[!UICONTROL exists]** or **[!UICONTROL does not exist]** operators with numeric dimensions.
+For numeric dimensions, several configuration options are available. In the Data view dimensions settings, you can configure all **[!UICONTROL No value]** options except **[!UICONTROL Treat "No value" as a value]**. You can also manage **[!UICONTROL Include "No value"]** for numeric dimensions by check box selection within the freeform table search filter. When creating segments, you can use the **[!UICONTROL exists]** or **[!UICONTROL does not exist]** operators with numeric dimensions.
 
 ## Best practices
 
-Once you've identified problematic **[!UICONTROL No value ]**instances, you'll need to develop and implement a remediation strategy. This can be done in two ways: 
+Once you've identified problematic **[!UICONTROL No value ]** instances, you'll need to develop and implement a remediation strategy. This remediation can be done in two ways: 
 
 * Adjust Data View component **[!UICONTROL No Value]** option settings, or 
 * Fix issues at the data collection source. 
  
-Choose your approach carefully, as each path has different implications for both quick fixes and long-term data quality. Your implementation should follow a methodical process that fixes current issues while preventing future ones. Success depends on planning, systematic execution, and ongoing monitoring. 
+Choose your approach carefully, as each path has different implications for both quick fixes and long-term data quality. Your implementation follows a methodical process that fixes current issues while preventing future ones. Success depends on planning, systematic execution, and ongoing monitoring. 
 
 Here are key strategic considerations for your remediation plan:
 
@@ -169,7 +169,7 @@ Here are key strategic considerations for your remediation plan:
 * Monitor compliance with your data model
 * Log errors during data collection
 * Add automated tests for your implementation
-* Require schema fields where a value should always exist
+* Require schema fields where a value always exists
 
 ### Validate No value in your reports
 
