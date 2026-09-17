@@ -149,6 +149,16 @@ In contrast, showing **[!UICONTROL No value]** by default is better suited when 
 
 For numeric dimensions, several configuration options are available. In the Data view dimensions settings, you can configure all **[!UICONTROL No value]** options except **[!UICONTROL Treat "No value" as a value]**. You can also manage **[!UICONTROL Include "No value"]** for numeric dimensions by check box selection within the freeform table search filter. When creating segments, you can use the **[!UICONTROL exists]** or **[!UICONTROL does not exist]** operators with numeric dimensions.
 
+### No value and item-level dimensions
+
+Some dimensions apply at the item level within an array, rather than at the top level of an event. For example, `productListItems.SKU`, only has a value when a product list item exists for that event. This difference in data grain changes how **[!UICONTROL No value]** behaves.
+
+For a standard top-level dimension, Customer Journey Analytics can place a metric into a **[!UICONTROL No value]** bucket whenever that dimension is missing or has a null value on an event that otherwise carries a metric. An item-level dimension depends on the item existing in the first place. If an event carries a metric but has no product list items at all, there's no item-level row for Customer Journey Analytics to attach that metric to, and so there's no row for it to mark **[!UICONTROL No value]** either.
+
+Customer Journey Analytics doesn't create a placeholder, or *ghost* row for missing or empty arrays. As a result, you can configure your **[!UICONTROL No value]** data view settings correctly and still not see **[!UICONTROL No value]** entries in an item-level report, such as a SKU breakdown. The missing of entries is a data granularity difference and not a configuration issue. **[!UICONTROL No value]** settings govern how existing rows display, and an empty array means no rows exist at that granularity to begin with.
+
+When item-level **[!UICONTROL No value]** counts look lower than expected, check whether missing array data explains the gap before assuming your data view setting needs adjustment.
+
 ## Best practices
 
 Once you've identified problematic **[!UICONTROL No value ]** instances, you'll need to develop and implement a remediation strategy. This remediation can be done in two ways: 
