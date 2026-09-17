@@ -66,6 +66,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 |---|---|
 | **September 2026** | |
+| Incorporated blog posts | Incorporated the following blog posts:<ul><li>[The Complete Playbook for Handling 'No Value' in Adobe CJA](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769#M598)</li><li>[Adobe Experience Platform & Customer Journey Analytics Data Egress Use Cases Deep Dive](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725)</li></ul>in our [Data export](/help/use-cases/data-export/overview.md) use cases and a new [No value](/help/use-cases/data-views/no-value.md) use case article. |
 | New resize shortcut actions | New keyboard shortcuts in Analysis Workspace now allow you to [resize a panel or visualization](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#resize-panel-or-visualization) wider, narrower, taller, or shorter. |
 | **August 2026** | |
 | Clarified information about refreshing audiences | When [publishing audiences](/help/components/audiences/publish.md#audience-builder), clarified that the number of audiences that can be scheduled to refresh depends on your Customer Journey Analytics entitlement, and is between 75 and 150. |

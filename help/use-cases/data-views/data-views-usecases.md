@@ -42,11 +42,15 @@ See the [Use summary data](summary-data.md) use case for more details.
 
 See the [BI extension use cases](bi-extension-usecases.md) on how to accomplish a number of use cases using the Customer Journey Analytics BI extension.
 
+
+## How to handle No value
+
+See the [How to handle No value](./no-value.md) article for details on how to handle various **[!UICONTROL No value]** use case scenarios.
+
+
 ## Create a metric from a string schema field {#string}
 
 For example, when creating a data view, you could create an [!UICONTROL Orders] metric from a [!UICONTROL Page Title] schema field that is a string.
-
-
 
 1. On the **[!UICONTROL Components]** tab, drag the **[!UICONTROL Page Title]** into the **[!UICONTROL Metrics]** section under [!UICONTROL Included components].
 1. Highlight the metric you just dragged in and rename it to `Orders` in the **[!UICONTROL Component Settings]** on
