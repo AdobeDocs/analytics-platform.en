@@ -82,8 +82,6 @@ topic_v2:
 
 <!-- markdownlint-enable MD034 -->
 
-{{release-limited-testing}}
-
 System administrators can enable consent reporting and, optionally, consent filtering for one or more connections. For overview information, see [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/consent-overview.md).
 
 >[!IMPORTANT]
