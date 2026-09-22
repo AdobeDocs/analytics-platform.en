@@ -24,8 +24,6 @@ topic_v2:
 ---
 # Manage consent reporting and filtering configurations
 
-{{release-limited-testing}}
-
 After you [create a consent reporting and filtering configuration](/help/connections/consent-reporting-filtering/consent-configure.md), you can view, edit, or delete it.
 
 Only system administrators can manage consent reporting and filtering configurations.
