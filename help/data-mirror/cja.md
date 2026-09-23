@@ -25,6 +25,8 @@ role_v2:
 
 {{relational-model-based}}
 
+{{relational-dataset-important}}
+
 To use the Experience Platform Data Mirror feature for Customer Journey Analytics, you have to create or update connections, data views and workspace projects to use relational data.
 
 ## Connections
