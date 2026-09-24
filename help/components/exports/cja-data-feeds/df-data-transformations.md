@@ -14,11 +14,9 @@ You can transform your data feed data using any of the following methods:
 
 * [Derived fields](/help/data-views/derived-fields/derived-fields.md)
 
-* SQL 
+* SQL
 
-Each method has advantages and disadvantages. For specific data transformations, one method might be preferable to another, while the method used for other transformations might be a matter of preference. 
-
-The following sections compare the tradeoffs both generally and for specific transformations.
+Each method has advantages and disadvantages. The following sections compare the tradeoffs both generally and for specific transformations.
 
 ## Compare data transformation methods generally
 
@@ -34,9 +32,9 @@ The following table compares the advantages and disadvantages of each method in 
 
 ## Compare data transformation methods by transformation type
 
-The following table lists specific data transformations, showing which method (or methods) can perform each one, how difficult it would be to replicate in SQL, and which method to use. <!--A few transformations are still being confirmed with the engineering team and are marked as open questions — don't treat those as confirmed to affect data feed output until that's resolved.-->
+The following table lists specific data transformations, showing which method (or methods) can perform each one, how difficult it would be to replicate in SQL, and which method is recommended. <!--A few transformations are still being confirmed with the engineering team and are marked as open questions — don't treat those as confirmed to affect data feed output until that's resolved.-->
 
-| Transformation | Component setting | Derived field | Difficulty in SQL | Suggested method | Considerations |
+| Transformation | Component setting | Derived field | Difficulty in SQL | Recommended method | Considerations |
 | --- | --- | --- | --- | --- | --- |
 | **Apply conditional logic or filter values by criteria** | [Include exclude values](/help/data-views/component-settings/include-exclude-values.md) | [Case When](/help/data-views/derived-fields/derived-fields.md#casewhen) | Easy for strings<p>Moderate to difficult for metrics (requires a `CASE` statement combined with a `COUNT`)</p> | Component setting<p>Recommended because it doesn't consume one of your limited derived fields.</p> | |
 | **Attribute credit for a success event** | [Attribution](/help/data-views/component-settings/attribution.md) | Not available | Not applicable | Component setting | Applies only to dimensions in data feeds. For metrics, there's no data feed behavior to replicate. |
@@ -45,7 +43,7 @@ The following table lists specific data transformations, showing which method (o
 | **Combine field values with a delimiter** | Not available | [Concatenate](/help/data-views/derived-fields/derived-fields.md#concatenate) | Easy / Moderate | Derived field<p>Recommended because the same logic applies consistently in both Analysis Workspace and your data feed output.</p> | Mirrors the functionality of adding multiple dimension columns to a freeform table, which is limited to Full Table Export. A derived field makes similar output available in a data feed. |
 | **Convert a field's data type** | Not available | [Typecast](/help/data-views/derived-fields/derived-fields.md#typecast) | Easy / Moderate | Derived fields<p>Recommended because the same logic applies consistently in both Analysis Workspace and your data feed output.</p> | |
 | **Count metric occurrences (values vs. instances)** | [Behavior](/help/data-views/component-settings/behavior.md) | Custom Math-based workaround | Easy / Moderate | Component setting<p>Recommended because:</p><ul><li>The same logic applies consistently in both Analysis Workspace and your data feed output (not possible with SQL)</li><li>It doesn't consume one of your limited derived fields.</li></ul> | |
-| **Deduplicate a value within a scope** | [Metric deduplication](/help/data-views/component-settings/metric-deduplication.md) | [Deduplicate](/help/data-views/derived-fields/derived-fields.md#dedup) | Difficult | Component setting<p>Recommended because it doesn't consume one of your limited derived fields.</p> | Depends on a Scope setting. See [How Scope settings affect data feeds](#scope-settings).  |
+| **Deduplicate a value within a scope** | [Metric deduplication](/help/data-views/component-settings/metric-deduplication.md) | [Deduplicate](/help/data-views/derived-fields/derived-fields.md#dedup) | Difficult | Component setting<p>Recommended because it doesn't consume one of your limited derived fields.</p> | Depends on a Scope setting. See [How Scope settings affect data feeds](#scope-settings). |
 | **Determine a field's depth within a session** | Not available | [Depth](/help/data-views/derived-fields/derived-fields.md#depth) | Difficult | Derived field<p>Recommended for ease of use and because the same logic applies consistently in both Analysis Workspace and your data feed output.</p> | <!-- Open question as of 2026-09-09: does the Depth counter carry over across an hourly/daily feed boundary using lookback-window context, or does it restart? Pending confirmation from engineering (Ron Fulkerson / Nate Purser). How the counter behaves when a session spans a feed-delivery boundary is still being confirmed with engineering. --> <p>Depends on a Scope setting (uses session as the scope, and it is not configurable). See [How Scope settings affect data feeds](#scope-settings).</p> |
 | **Find and replace a literal value** | Not available | [Find and Replace](/help/data-views/derived-fields/derived-fields.md#find-and-replace) | Easy / Moderate | Derived field<p>Recommended for ease of use and because the same logic applies consistently in both Analysis Workspace and your data feed output.</p> | |
 | **Format a value for display** | [Format](/help/data-views/component-settings/format.md) | Not available | Difficult | Component setting<p>Recommended for ease of use and because the same logic applies consistently in both Analysis Workspace and your data feed output.</p> | <!-- Date-time formatting isn't yet reflected in data feed output — feeds currently show the standard timestamp regardless of this setting, though Adobe plans to support this for general availability. Whether numeric formats (decimal, currency, percent) on metrics affect data feed output is still being confirmed with the team.--> |
