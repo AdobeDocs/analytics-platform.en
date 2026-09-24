@@ -319,3 +319,11 @@ This Analytics data feed column contains data that cannot be translated to a Cus
 ## CJA data feed user agent {#cja-df-ua}
 
 You cannot collect both user agent information and device lookup information simultaneously; population of these dimensions are mutually exclusive. You must choose if you want to collect user agent directly or device lookup information (based on user agent) when [Configuring a datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup).
+
+
+## Relational dataset important message {#relational-dataset-important}
+
+>[!IMPORTANT]
+>
+>A relational dataset is based on a relational schema type. The relationship descriptors defined in that relational schema are of no relevance and do not apply to the definition and configuration of a Customer Journey Analytics connection in general or the dataset settings for a relational dataset specifically. <br/><br>For Customer Journey Analytics reporting and analysis, you need to explicitly configure in [dataset settings](/help/connections/create-connection.md#relational-dataset) how data from a relational dataset is joined to other datasets based on a common person ID or account ID.
+>

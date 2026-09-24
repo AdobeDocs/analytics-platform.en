@@ -4,6 +4,7 @@ description: Understand additional consideration to take into account when you w
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
+hold: true
 autotag-review: '2026-05-19T06:55:09.938Z'
 TQID: 'https://experienceleague.adobe.com/uZjXZUKUMeXLxxpTRrkCZrPsGhxseSxOtJ9X0ZjG5wU'
 product_v2:
@@ -98,6 +99,10 @@ The governance difference has the following impact:
 
 * More manual governance and configuration work for you as a customer.
 * You might need explicit guidance, so you do not assume one-time labeling via field groups is sufficient for proper governance.
+
+## Dataset settings
+
+{{relational-dataset-important}}
 
 ## Stitching
 
