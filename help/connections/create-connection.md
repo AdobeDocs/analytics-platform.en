@@ -5,6 +5,7 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
+hold: true
 TQID: https://experienceleague.adobe.com/90JULA8fFxPQSbVLHr3hJ8o5algJAfNz9SjjLFecyJc
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -534,8 +535,9 @@ Alternatively, the dataset types listed above, can be based on an ad hoc or rela
 | Dataset type | Description | Timestamp | Schema | Person ID |
 |---|---|---|---|---|
 | **[!UICONTROL Adhoc]** | Ad hoc data based on an [ad hoc schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/api/ad-hoc) with fields that are namespaced for usage only by a single dataset. | Dependent on the dataset type you select for the ad hoc dataset.  |  Any ad hoc schema that is based on a class based on the *ad hoc* behavior | Dependent on the dataset type you select for the ad hoc dataset. |
-| **[!UICONTROL Model]** | Relational data based on a relational schema. | Dependent on the dataset type you select for the relational dataset. | Any relational schema. | Dependent on the dataset type you select for the relational dataset. |
+| **[!UICONTROL Relational]** | Relational data based on a relational schema. | Dependent on the dataset type you select for the relational dataset. | Any relational schema. | Dependent on the dataset type you select for the relational dataset. |
 
+{{relational-dataset-important}}
 
 ### Add datasets
 
@@ -717,6 +719,8 @@ When you add datasets or edit an existing dataset, you configure the dataset set
 
 All datasets and dataset types have [general settings and details](#general-dataset-settings-and-details), such as whether or not to import new data and request backfills.
 
+
+
 #### Event dataset
 
 The specific settings for an event dataset are dependent on the type of connection.
@@ -857,6 +861,8 @@ The specific settings for an ad hoc dataset are:
 >
 >Relational datasets are predominantly used to support the upcoming Experience Platform Data Mirror for Customer Journey Analytics capability.
 >
+
+{{relational-dataset-important}}
 
 The specific settings for a relational dataset are:
 
