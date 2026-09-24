@@ -100,6 +100,7 @@ Settings include:
 | Show annotations | Specify whether annotations are shown for this project or not. |
 |  [Project color palette](/help/analysis-workspace/build-workspace-project/color-palettes.md)  | You can change the categorical color palette used in Workspace, by choosing from out-of-the-box palettes that have been optimized for color blindness, or by specifying your custom palette. This feature affects many things in Workspace, including most visualizations.  |
 | [View Density](/help/analysis-workspace/build-workspace-project/view-density.md) | Lets you see more data on the screen by reducing the vertical padding of the left panel, freeform tables and cohort tables. |
+| [Reuse recent data for faster loading](/help/analysis-workspace/build-workspace-project/cached-data.md) | When enabled, data loads faster for 12 hours after someone first loads the project. To load the latest data, refresh individual panels or the entire project. |
 | Allow commenting | When this option is enabled, a comments area is available in the right rail of the project in Analysis Workspace. For more information, see [Add and manage comments in projects](/help/analysis-workspace/build-workspace-project/comment-projects.md).  |
 
 
