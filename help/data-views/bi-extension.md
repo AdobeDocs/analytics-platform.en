@@ -332,7 +332,7 @@ Privacy labels and policies that were created on datasets consumed by Experience
 In the standard PostgreSQL CLI, you can list your views using `\dv`
 
 ```sql
-prod:all=> \dv
+prod:cja=> \dv
                        List of relations
  Schema |                    Name                    | Type |  Owner             
 --------+--------------------------------------------+------+----------
