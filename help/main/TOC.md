@@ -424,14 +424,14 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Manage export logs](/help/components/exports/manage-export-logs.md)
     + [Troubleshoot exports](/help/components/exports/troubleshoot-exports.md)
     + Data feeds {#cja-data-feeds}
-      + {hide-from-toc} [Data feed overview](/help/components/exports/cja-data-feeds/data-feed-overview.md)
+      + {hide-from-toc} [Overview](/help/components/exports/cja-data-feeds/data-feed-overview.md)
       + {hide-from-toc} [Compare Adobe Analytics data feeds](/help/components/exports/cja-data-feeds/df-comparison.md)
       + {hide-from-toc} [Compare Workspace and data feeds](/help/components/exports/cja-data-feeds/df-comparison-workspace.md)
       + {hide-from-toc} [Prepare to map columns](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc} [Map columns](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
-      + {hide-from-toc} [Create a data feed](/help/components/exports/cja-data-feeds/create-feed.md)
+      + {hide-from-toc} [Create data feeds](/help/components/exports/cja-data-feeds/create-feed.md)
       + {hide-from-toc} [Segmentation in data feeds](/help/components/exports/cja-data-feeds/df-segmentation.md)
-      + {hide-from-toc} [Use derived fields in data feeds](/help/components/exports/cja-data-feeds/df-derived-fields.md)
+      + {hide-from-toc} [Apply data transformations](/help/components/exports/cja-data-feeds/df-data-transformations.md)
   + Data Dictionary {#data-dictionary}
     + [Overview](../components/data-dictionary/data-dictionary-overview.md)
     + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
