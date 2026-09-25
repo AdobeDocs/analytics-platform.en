@@ -304,7 +304,7 @@ Brand Visibility provides this key for you in the **CDN URL** dimension. It comb
 
 Brand Visibility reads CDN access logs on the server side and extracts records where the requesting party is a bot or automated agent. Because the data comes from the CDN layer, Brand Visibility captures requests from bots that do not fire any JavaScript tag. Standard web analytics tools miss this traffic entirely.
 
-The dataset uses the **CDN Requests Summary** field group. Every field is located under a `cdn` object, so the field names in the tables below take the form `cdn.<name>`, for example `cdn.url` and `cdn.botType`.
+The dataset uses the **CDN Requests Summary** field group. Every field is located under a `cdn` object, so the field names in the tables below take the form <code>cdn._name_</code>, for example `cdn.url` and `cdn.botType`.
 
 Each record describes one combination of host, URL path, bot type, CDN provider, status code, referrer, forwarded host, and time to first byte for one hour. When the same combination appears more than once hourly, Customer Journey Analytics combines those records into one row and increases the request count. Use the **CDN Request Count** metric to measure volume. Do not use row count.
 
