@@ -5,7 +5,6 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-hold: true
 TQID: https://experienceleague.adobe.com/90JULA8fFxPQSbVLHr3hJ8o5algJAfNz9SjjLFecyJc
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
