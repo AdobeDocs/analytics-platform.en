@@ -323,7 +323,10 @@ You cannot collect both user agent information and device lookup information sim
 
 ## Relational dataset important message {#relational-dataset-important}
 
+A relational dataset is based on a relational schema type. The relationship descriptors defined in that relational schema **do not apply** to the definition and configuration of a Customer Journey Analytics connection in general or the dataset settings for a relational dataset specifically. 
+
+Additionally, in Customer Journey Analytics, fields from standard XDM schemas **do not automatically merge** with similar named fields from relational schemas.
 >[!IMPORTANT]
 >
->A relational dataset is based on a relational schema type. The relationship descriptors defined in that relational schema are of no relevance and do not apply to the definition and configuration of a Customer Journey Analytics connection in general or the dataset settings for a relational dataset specifically. Additionally, fields from standard XDM schemas do not automatically merge together with similar named fields from relational schemas.<br/><br>For Customer Journey Analytics reporting and analysis, you need to explicitly configure in [dataset settings](/help/connections/create-connection.md#relational-dataset) how data from a relational dataset is joined to other datasets based on a common person ID or account ID. <br/>To merge non-object array based fields from XDM with similar named relational schemas, consider to use the Derived fields [Merge Fields](/help/data-views/derived-fields/derived-fields.md#merge-fields) function. 
+>For Customer Journey Analytics reporting and analysis, you need to explicitly configure in [dataset settings](/help/connections/create-connection.md#relational-dataset) how data from a relational dataset is joined to other datasets based on a common person ID or account ID. <br/><br/>Consider to use the Derived fields [Merge Fields](/help/data-views/derived-fields/derived-fields.md#merge-fields) function to merge similar named fields (not part of an object array) in XDM schemas and relational schemas. For fields in an object array  no solution currently exists to merge fields between XDM and relatonal schemas.
 >
