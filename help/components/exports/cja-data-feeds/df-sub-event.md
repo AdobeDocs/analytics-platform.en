@@ -8,19 +8,26 @@ feature: Components
 
 {{release-limited-testing}}
 
-## Add sub-event data to a data feed
+In the XDM schema, anything that is an array (string or object) is a sub-event. Sub-events in Customer Journey Analytics are represented in data feed exports with their hierarchy. 
 
+In Adobe Analytics, sub-events are represented as a single column.
 
+Use the following information to understand how to work with sub-events in your Customer Journey Analytics data feeds.
 
+## Sub-events in the XDM schema, Workspace, and data feeds
 
+You define sub-events in the XDM schema, either as string arrays or object arrays.
 
-## How schema hierarchy affects sub-events
+These sub-events are represented differently, depending on whether you view them in Analysis Workspace or data feeds.
 
 | Location | How sub-events are represented |
 | --- | --- |
-| **Schema** | As arrays, with the hierarchy defined in your schema. |
-| **Analysis Workspace** | Completely flattened. Individual objects in an array of objects are flattened. |
-| **Data feeds** | Not completely flattened. Objects in an array of objects are represented as a group. |
+| **Analysis Workspace** | Individual objects in an array of objects are selectable as individual components, separate from any visible hierarchy. |
+| **Data feeds** | Objects in an array of objects are represented as a group, with their hierarchy intact. |
+
+## Add sub-event data to a data feed
+
+When you attempt to add a column that is a sub-event while building a data feed, a dialog displays that allows you to add all of the peer sub-events. All of these events will appear in a single column of the data feed output. 
 
 ## View sub-event data in data feed output
 
@@ -109,25 +116,8 @@ This approach applies to any array field in your XDM schema, not only products.
 
 +++
 
-## When sub-events are included in data feeds
-
-## XDM schema affects data feeds
-
-Arrays
-
-Hierarchy is
-
-## How sub-events display in data feeds
-
-
-## 
-
-Need to explain that sub-events are represented in data feed exports with their hierarchy. In AA, they were represented as a single column. For example, product lists, list vars.
-
-Depends on how you configure your schema. Anything that is an array (string or object) will be sub-event. 
-
-When you are building the data feed, if you try to add a column that is a sub-event, you get a dialog that allows you to add all of the peer sub-events. All of these events will appear in a single column of the data feed output. 
 
 
 
-Even though data feeds doesn't flatten everything, it's completely flattened in Analysis Workspace. If you have an array of objects, individual objects are flattened in Workspace, but in data feeds they're represented as a group. The way it's represented in the schema is different from Workspace which is different from DF. 
+
+

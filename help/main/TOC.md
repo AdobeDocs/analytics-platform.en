@@ -432,6 +432,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + {hide-from-toc} [Create data feeds](/help/components/exports/cja-data-feeds/create-feed.md)
       + {hide-from-toc} [Segmentation in data feeds](/help/components/exports/cja-data-feeds/df-segmentation.md)
       + {hide-from-toc} [Apply data transformations](/help/components/exports/cja-data-feeds/df-data-transformations.md)
+      + {hide-from-toc} [Sub-events in data feeds](/help/components/exports/cja-data-feeds/df-sub-event.md)
   + Data Dictionary {#data-dictionary}
     + [Overview](../components/data-dictionary/data-dictionary-overview.md)
     + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
