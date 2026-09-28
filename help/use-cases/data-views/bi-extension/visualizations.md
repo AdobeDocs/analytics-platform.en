@@ -20,6 +20,8 @@ subfeature_v2:
     internal-label: BI extension
   - id: ddf59f64-0e46-4986-a525-056acc143c70
     internal-label: Workspace visualizations
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

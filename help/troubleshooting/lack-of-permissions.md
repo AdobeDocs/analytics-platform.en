@@ -18,6 +18,8 @@ feature_v2:
 subfeature_v2:
   - id: a67cb189-a535-41f6-afa2-448f39c4759f
     internal-label: Access control
+  - id: cbc7b6aa-4963-4ebf-9bb9-963336957623
+    internal-label: Troubleshooting
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
