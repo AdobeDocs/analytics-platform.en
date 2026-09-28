@@ -1,7 +1,8 @@
 ---
-title: Reuse Recent Data for Faster Loading in Analysis Workspace
-description: Enable a project setting that reuses data from an earlier load for 12 hours, so panels and shared projects load instantly instead of running a new query.
+title: Use Cached Results for Faster Loading in Analysis Workspace
+description: Enable a project setting that caches query results for 12 hours, so panels and shared projects load instantly instead of running a new query.
 feature: Workspace Basics
+hide: true
 exl-id: 6d7b9d34-ec7e-45ec-98cc-0fd4cbfd43d3
 role: User
 product_v2:
@@ -18,42 +19,59 @@ role_v2:
     internal-label: User
 ---
 
-# Reuse recent data
+# Use cached results in Workspace projects
 
 >[!CONTEXTUALHELP]
->id="project_reuse_data"
->title="Reuse recent data for faster loading"
->abstract="When enabled, data loads faster for 12 hours after someone first loads the project. Anyone who opens the project during that window sees the same data. To load the latest data, refresh individual panels or the entire project."
+>id="project_cached_results"
+>title="Use cached results for faster loading"
+>abstract="When enabled, results load faster for 12 hours after a project is first opened or it is first delivered (for scheduled projects). Anyone who opens the project during that time sees the same results, even though data continues to flow in the background. To load the latest results, refresh individual panels or the entire project."
 
-Enabling **[!UICONTROL Reuse recent data for faster loading]** lets a project load instantly by reusing data from an earlier load instead of running a new query every time someone opens it.
-
-## How it works
-
-When you enable **[!UICONTROL Reuse recent data for faster loading]** for a project:
-
-* The first time anyone opens the project, Analysis Workspace runs the query as usual.
-* Anyone who opens the same project again within 12 hours sees that same data load instantly, without waiting for a new query.
-* After 12 hours, the next person to open the project triggers a new query, which starts a new 12-hour window.
-
-This setting is stored at the data view level, so the data is shared. If you share the project with someone else, they see the same data you saw, as long as they open it within the 12-hour window.
+You can configure Analysis Workspace projects to use cached data from an earlier query for a 12-hour window, allowing results to load instantly. When this option is configured, people who use the project don't have to wait for potentially long load times.
 
 >[!NOTE]
 >
->To see the latest data before the 12-hour window ends, refresh individual panels or the entire project, as described below.
+>Only the query results are cached. Underlying event data continues to flow into Customer Journey Analytics as usual. Data can be refreshed manually by people who access the project during the 12-hour window before cached results expire.
 
-## Data-freshness timestamp
+## Enable cached results for a project
 
-When this setting is enabled, a timestamp appears at the top of the project and on each panel, showing the status of the data:
+When you enable this option for a project:
 
-* **[!UICONTROL Showing data from ]***[date]* — All panels in the project are showing data from the date and time shown.
-* **[!UICONTROL Showing some data from ]***[date]* — Some panels are showing data from the date and time shown, while others have been refreshed more recently.
+* The first time the project runs, Analysis Workspace runs the query as usual and caches the results. This happens when someone opens the project or when the project runs for a scheduled delivery.
+* Anyone who opens the same project within 12 hours sees the cached results load instantly, without waiting for a new query.
+* After 12 hours, the next person to open the project triggers a new query, which starts a new 12-hour window.
 
-## Refresh data
+For example, if a project is scheduled for delivery at 6:00 AM, the results are cached until 6:00 PM. The first person to open the project that day sees results load instantly.
 
-Select **[!UICONTROL Refresh]** next to a panel's timestamp to load the latest data for that panel only. Select **[!UICONTROL Refresh]** at the top of the project to load the latest data for all panels and start a new 12-hour window.
+This setting is stored at the data view level, so the cached results are shared. If you share the project with someone else, they see the same results you saw, as long as they open it within the 12-hour window.
 
-## Enable Reuse recent data for faster loading
+>[!NOTE]
+>
+>To see the latest results before the 12-hour window ends, refresh individual panels or the entire project, as described below.
 
-1. In Workspace, navigate to **[!UICONTROL Projects]** > **[!UICONTROL Project info and settings]**.
-1. Select **[!UICONTROL Reuse recent data for faster loading]**.
+In the Workspace project where you want to enabled cached results for faster loading: 
+
+1. Go to **[!UICONTROL Projects]** > **[!UICONTROL Project info and settings]**.
+1. Select **[!UICONTROL Use cached results for faster loading]**.
 1. Select **[!UICONTROL Save]**.
+
+## View data timestamps on cached projects
+
+When a project is configured to use cached results, a timestamp displays at the top of the project and on each panel, showing when the results were cached:
+
+* **[!UICONTROL Showing data from ] [_date_]**: All panels in the project show cached results from the date and time shown.
+* **[!UICONTROL Showing some data from ] [_date_]**: Some panels show cached results from the date and time shown, while others were refreshed more recently.
+
+## Manually refresh results on cached projects
+
+You can manually refresh results any time during the 12-hour window in order to view the latest data.
+
+In the Workspace project where you want to view the latest data, do either of the following:
+
+1. To load the latest results for a single panel only, select **[!UICONTROL Refresh]** next to a panel's timestamp. 
+
+   **Note:** This option is not available during the alpha phase of release.
+
+   Or
+
+   To load the latest results for all panels and start a new 12-hour window, select **[!UICONTROL Refresh]** at the top of the project.
+
