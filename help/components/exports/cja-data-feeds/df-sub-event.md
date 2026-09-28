@@ -8,22 +8,59 @@ feature: Components
 
 {{release-limited-testing}}
 
-In the XDM schema, anything that is an array (string or object) is a sub-event. Sub-events in Customer Journey Analytics are represented in data feed exports with their hierarchy. 
+In the XDM schema, each element of an array (a string array or an object array) is a sub-event.
 
-In Adobe Analytics, sub-events are represented as a single column.
+In Customer Journey Analytics, sub-events are represented in data feed exports with their hierarchy intact. (In Adobe Analytics, sub-events are represented as a single column.)
 
 Use the following information to understand how to work with sub-events in your Customer Journey Analytics data feeds.
 
-## Sub-events in the XDM schema, Workspace, and data feeds
+## Sub-event example: Products in a purchase event
 
-You define sub-events in the XDM schema, either as string arrays or object arrays.
+A customer purchases two products in a single order: one cordless drill and two drill battery packs. Your implementation sends a single purchase event that includes both products in the `productListItems` object array:
 
-These sub-events are represented differently, depending on whether you view them in Analysis Workspace or data feeds.
+```json
+{
+  "eventType": "commerce.purchases",
+  "timestamp": "2026-09-16T14:32:07.512Z",
+  "commerce": {
+    "purchases": { "value": 1 }
+  },
+  "productListItems": [
+    { "SKU": "CD-2000", "name": "Cordless Drill", "quantity": 1, "priceTotal": 129.99 },
+    { "SKU": "BP-2000", "name": "Drill Battery Pack", "quantity": 2, "priceTotal": 39.98 }
+  ]
+}
+```
+
+This event contains two sub-events, one for each object in the `productListItems` array. The following table shows which fields belong to the event and which belong to its sub-events.
+
+| Level | Fields | What the fields describe |
+| --- | --- | --- |
+| **Event** | `eventType`, `timestamp`, `commerce.purchases.value` | The purchase as a whole. Each field has one value for the event. The **Orders** metric counts `1` for this event, regardless of how many products it contains. |
+| **Sub-event** | `SKU`, `name`, `quantity`, `priceTotal` in each `productListItems` object | An individual product in the purchase. Each field has one value per product. For example, `quantity` is `1` for the cordless drill and `2` for the drill battery pack. |
+
+{style="table-layout:auto"}
+
+>[!NOTE]
+>
+>Sub-events include only the data that is sent with the event. Customer Journey Analytics does not reconstruct cart contents from earlier events, such as cart adds or checkouts. For products to appear as sub-events of a purchase event, your implementation must include them in `productListItems` on that purchase event.
+
+## Sub-events in the XDM schema
+
+You define sub-events in the XDM schema by creating either string arrays or object arrays. 
+
+In the following example, Product list items is an object array containing various sub-events.
+
+![XDM schema containing an object array and sub-events](assets/df-sub-event-schema.png)
+
+## Differences between Analysis Workspace and data feeds
+
+Sub-events are represented differently between Analysis Workspace and data feeds.
 
 | Location | How sub-events are represented |
 | --- | --- |
-| **Analysis Workspace** | Individual objects in an array of objects are selectable as individual components, separate from any visible hierarchy. |
-| **Data feeds** | Objects in an array of objects are represented as a group, with their hierarchy intact. |
+| **Analysis Workspace** | Selectable as individual components, separate from any visible hierarchy. |
+| **Data feeds** | Represented as a group, with their hierarchy intact. |
 
 ## Add sub-event data to a data feed
 
@@ -35,14 +72,14 @@ Sub-event data (such as multiple products in a single event) appears differently
 
 | Product | How sub-event data appears in data feeds | Example: Product list |
 | --- | --- | --- |
-| **Adobe Analytics** | Flattened into a delimited string in a single column. | A product list contains multiple products grouped in a single string:<p>`;LG Washing Machine 2000;1;1600,;LG Dryer 2000;1;500` <!--screenshot of what this looks like: product lists, list vars. --></p> |
-| **Customer Journey Analytics** | Sub-events keep the hierarchy defined in your XDM schema. They stay grouped in the same column, together with their parent event and sibling sub-events. | A product list maintains its hierarchy that is defined in the XDM schema as an array:<p>`[{"name":"LG Washing Machine 2000","units":1,"revenue":1600},{"name":"LG Dryer 2000","units":1,"revenue":500}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+| **Adobe Analytics** | Flattened into a delimited string in a single column. | A product list contains multiple products grouped in a single string:<p>`Power Tools;Cordless Drill;1;129.99,Power Tools;Drill Battery Pack;2;39.98` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+| **Customer Journey Analytics** | Sub-events keep the hierarchy defined in your XDM schema. They stay grouped in the same column, together with their parent event and sibling sub-events. | A product list maintains its hierarchy that is defined in the XDM schema as an array:<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
 
 {style="table-layout:auto"}
 
 ## Query sub-event data in data feed output
 
-Because sub-event data [appears differently in Customer Journey Analytics data feeds](#customer-journey-analytics-vs-adobe-analytics), the queries you use for it differ from those you use for Adobe Analytics data feeds.
+Because sub-event data [appears differently in Customer Journey Analytics data feeds](#view-sub-event-data-in-data-feed-output), the queries you use for it differ from those you use for Adobe Analytics data feeds.
 
 The following examples show how to find events that include a specific product. The examples use Google BigQuery syntax. Other data warehouses, such as Snowflake and Databricks, support the same approach with minor syntax differences.
 
