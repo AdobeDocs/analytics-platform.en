@@ -12,6 +12,8 @@ product_v2:
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
     internal-label: Analysis Workspace
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
     internal-label: Workspace visualizations

@@ -19,7 +19,9 @@ subfeature_v2:
   - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
     internal-label: Stitching
   - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
-    internal-label: Use cases, Use cases (CJA)
+    internal-label: Use cases
+  - id: b7fb3355-1f54-4380-bce3-d444b226c0e9
+    internal-label: Cross channel analysis
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

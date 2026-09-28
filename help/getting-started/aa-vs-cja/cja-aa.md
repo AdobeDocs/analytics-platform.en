@@ -5,7 +5,7 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-TQID: https://experienceleague.adobe.com/3TqNaNKkAo2Ug92F5244fVbnv-Po6x5l2sAf3ZHZuCw
+TQID: 'https://experienceleague.adobe.com/3TqNaNKkAo2Ug92F5244fVbnv-Po6x5l2sAf3ZHZuCw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -20,15 +20,15 @@ feature_v2:
     internal-label: Workspace panels
 subfeature_v2:
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-    internal-label: Templates, Templates (CJA)
+    internal-label: Templates
   - id: ad5685a0-8296-4a0c-814c-658c10b4af12
     internal-label: Content Analytics
   - id: aff2ef09-fc60-4018-9197-e2befd623064
-    internal-label: Anomaly detection, Anomaly detection (CJA)
+    internal-label: Anomaly detection
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
     internal-label: Filters
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
@@ -53,6 +53,8 @@ subfeature_v2:
     internal-label: Calculated metrics
   - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
     internal-label: Alerts
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

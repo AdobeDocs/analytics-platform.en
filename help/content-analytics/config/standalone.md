@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 35d63b7d-f35a-4a88-ae14-96724d32a931
-TQID: https://experienceleague.adobe.com/gWxcD93bl5qrSNaMf1CJF4yoIUrAg6qUF8b-4RXLquQ
+TQID: 'https://experienceleague.adobe.com/gWxcD93bl5qrSNaMf1CJF4yoIUrAg6qUF8b-4RXLquQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -14,9 +14,13 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
     internal-label: Administration
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a67cb189-a535-41f6-afa2-448f39c4759f
     internal-label: Access control
+  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+    internal-label: Content Analytics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

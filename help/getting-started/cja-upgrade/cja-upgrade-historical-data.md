@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 exl-id: 1d17151b-3a12-468e-9a4f-9e5994599570
-TQID: https://experienceleague.adobe.com/8AM-LX5GllmfDt-OpG6CAZt6qMH4DfMj9x8kgDBrD7I
+TQID: 'https://experienceleague.adobe.com/8AM-LX5GllmfDt-OpG6CAZt6qMH4DfMj9x8kgDBrD7I'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -15,9 +15,13 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
     internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
     internal-label: Connections
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

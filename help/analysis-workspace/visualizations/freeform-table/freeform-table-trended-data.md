@@ -12,9 +12,13 @@ product_v2:
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
     internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
     internal-label: Workspace visualizations
+  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

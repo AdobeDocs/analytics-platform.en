@@ -4,7 +4,7 @@ description: Learn how to use and interpret the Media Concurrent Viewers panel i
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-TQID: https://experienceleague.adobe.com/IkzScFK8pyrB-ejW-Kjtgwm-A5XfdLSR-5JqrU30EGw
+TQID: 'https://experienceleague.adobe.com/IkzScFK8pyrB-ejW-Kjtgwm-A5XfdLSR-5JqrU30EGw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -13,9 +13,11 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
     internal-label: Components
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
     internal-label: Dimensions
 role_v2:

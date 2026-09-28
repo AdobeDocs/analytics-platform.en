@@ -15,9 +15,13 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
     internal-label: Administration
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
     internal-label: Upgrade
+  - id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
+    internal-label: Analytics integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
