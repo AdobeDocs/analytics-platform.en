@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-TQID: https://experienceleague.adobe.com/RrX-gp2IY-Ny1D1yzR2whV2GuU98mysma8tQmUEubF8
+TQID: 'https://experienceleague.adobe.com/RrX-gp2IY-Ny1D1yzR2whV2GuU98mysma8tQmUEubF8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -14,11 +14,15 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
     internal-label: Data governance
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
     internal-label: Privacy
+  - id: f24857a4-4b64-4b25-b237-d43026362144
+    internal-label: BI extension
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

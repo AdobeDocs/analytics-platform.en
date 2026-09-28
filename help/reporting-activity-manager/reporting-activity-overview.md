@@ -13,9 +13,13 @@ product_v2:
 feature_v2:
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
     internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: d897176a-4262-4425-ba97-0aa9fcc9c1aa
     internal-label: Reporting Activity Manager
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

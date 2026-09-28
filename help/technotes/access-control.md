@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-TQID: https://experienceleague.adobe.com/-Zv1B2pvTFAAgwV1uAV6ik65jtKVRBsF-2rc0tCHuUs
+TQID: 'https://experienceleague.adobe.com/-Zv1B2pvTFAAgwV1uAV6ik65jtKVRBsF-2rc0tCHuUs'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -27,11 +27,11 @@ subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
     internal-label: Filters
   - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
-    internal-label: Use cases, Use cases (CJA)
+    internal-label: Use cases
   - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
     internal-label: Guided analysis
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
@@ -56,6 +56,8 @@ subfeature_v2:
     internal-label: BI extension
   - id: fa6ac035-8403-478b-9ce1-3fe29d211fca
     internal-label: Annotations
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

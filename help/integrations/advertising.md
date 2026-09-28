@@ -19,6 +19,8 @@ feature_v2:
 subfeature_v2:
   - id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
     internal-label: Analytics integration
+  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

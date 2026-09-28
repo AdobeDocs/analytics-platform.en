@@ -11,11 +11,15 @@ product_v2:
 feature_v2:
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
     internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
     internal-label: Dimensions
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

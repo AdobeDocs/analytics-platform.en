@@ -17,6 +17,8 @@ feature_v2:
 subfeature_v2:
   - id: df066828-d385-4da6-af58-80137fb27d7b
     internal-label: Journey Optimizer integration
+  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

@@ -19,6 +19,8 @@ feature_v2:
 subfeature_v2:
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
     internal-label: Connections
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

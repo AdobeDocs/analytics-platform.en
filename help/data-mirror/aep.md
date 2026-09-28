@@ -22,6 +22,8 @@ feature_v2:
 subfeature_v2:
   - id: bfef374d-acfd-4c57-bf74-a2b36053c545
     internal-label: Data ingestion
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

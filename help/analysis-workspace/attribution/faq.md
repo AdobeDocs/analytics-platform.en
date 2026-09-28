@@ -4,7 +4,7 @@ description: Get answers to commonly asked questions about attribution.
 feature: Attribution
 role: User, Admin
 exl-id: 8e05957a-f954-4e61-aeed-cd2bd2fe11f8
-TQID: https://experienceleague.adobe.com/AY9LM5Beia2e9FrGZ5gF3Ao6qVzIe3raOQuB9qP-rOg
+TQID: 'https://experienceleague.adobe.com/AY9LM5Beia2e9FrGZ5gF3Ao6qVzIe3raOQuB9qP-rOg'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -13,9 +13,13 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
     internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
     internal-label: Dimensions
+  - id: c91f8bd2-df97-4c6a-afcd-f1cde8221302
+    internal-label: Attribution
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

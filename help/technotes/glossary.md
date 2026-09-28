@@ -23,7 +23,9 @@ subfeature_v2:
   - id: cf731116-8803-4027-85aa-9c0a126e8321
     internal-label: Dataset configuration
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

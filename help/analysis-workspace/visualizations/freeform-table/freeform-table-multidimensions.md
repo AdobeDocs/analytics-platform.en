@@ -4,7 +4,7 @@ description: Learn how to include multiple dimensions in a freeform table
 feature: Visualizations
 role: User
 exl-id: 66ebb4fc-feb2-4fa7-a107-37508cca4748
-TQID: https://experienceleague.adobe.com/MD72IobkrYpNoI23FwpnLRWfdELY-X90iLF7FzTVMT8
+TQID: 'https://experienceleague.adobe.com/MD72IobkrYpNoI23FwpnLRWfdELY-X90iLF7FzTVMT8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -17,13 +17,15 @@ subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
     internal-label: Filters
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
     internal-label: Freeform tables
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
     internal-label: Dimensions
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

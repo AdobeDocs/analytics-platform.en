@@ -5,7 +5,7 @@ exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-TQID: https://experienceleague.adobe.com/r4-Y3zJ51tsClEQFdjQnBYH-D2XQ8cibGYLkSmi3Ttc
+TQID: 'https://experienceleague.adobe.com/r4-Y3zJ51tsClEQFdjQnBYH-D2XQ8cibGYLkSmi3Ttc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -14,13 +14,17 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
     internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
     internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
     internal-label: Calculated metrics
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
