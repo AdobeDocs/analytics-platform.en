@@ -77,7 +77,7 @@ You can do pathing on dimensions, metrics, and segments. For example, suppose th
 >[!CONTEXTUALHELP]
 >id="workspace_fallout_container"
 >title="Fallout container"
->abstract="Select a container to analyze pathing. This selection helps you to understand engagement and constraints the analysis to the selected container."
+>abstract="Select a container to analyze pathing. This selection helps you to understand engagement and constrains the analysis to the selected container."
 
 As part of the visualization, specific settings are available.
 

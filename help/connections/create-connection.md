@@ -417,8 +417,8 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 
 >[!CONTEXTUALHELP]
 >id="connection_b2bstitching_personid"
->title="Person ID"
->abstract="Select an identity or identityMap type field, with great coverage on events. The contained values will be elevated to the ones from previously configured person identifier namespace."
+>title="Persistent Person ID"
+>abstract="Select an identity or identityMap type field that is available on all events, such as the field containing ECIDs. These identifiers will be elevated to the Person IDs from the previously configured person identifier namespace."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2bstitching_accountid"
@@ -534,8 +534,9 @@ Alternatively, the dataset types listed above, can be based on an ad hoc or rela
 | Dataset type | Description | Timestamp | Schema | Person ID |
 |---|---|---|---|---|
 | **[!UICONTROL Adhoc]** | Ad hoc data based on an [ad hoc schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/api/ad-hoc) with fields that are namespaced for usage only by a single dataset. | Dependent on the dataset type you select for the ad hoc dataset.  |  Any ad hoc schema that is based on a class based on the *ad hoc* behavior | Dependent on the dataset type you select for the ad hoc dataset. |
-| **[!UICONTROL Model]** | Relational data based on a relational schema. | Dependent on the dataset type you select for the relational dataset. | Any relational schema. | Dependent on the dataset type you select for the relational dataset. |
+| **[!UICONTROL Relational]** | Relational data based on a relational schema. | Dependent on the dataset type you select for the relational dataset. | Any relational schema. | Dependent on the dataset type you select for the relational dataset. |
 
+{{relational-dataset-important}}
 
 ### Add datasets
 
@@ -717,6 +718,8 @@ When you add datasets or edit an existing dataset, you configure the dataset set
 
 All datasets and dataset types have [general settings and details](#general-dataset-settings-and-details), such as whether or not to import new data and request backfills.
 
+
+
 #### Event dataset
 
 The specific settings for an event dataset are dependent on the type of connection.
@@ -857,6 +860,8 @@ The specific settings for an ad hoc dataset are:
 >
 >Relational datasets are predominantly used to support the upcoming Experience Platform Data Mirror for Customer Journey Analytics capability.
 >
+
+{{relational-dataset-important}}
 
 The specific settings for a relational dataset are:
 

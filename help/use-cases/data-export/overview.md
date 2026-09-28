@@ -43,7 +43,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-feeds-step"
 >title="Use export features similar to Data Feeds"
->abstract="An exact replacement for Data Feeds is not yet available in Customer Journey Analytics. However, similar functionality can be achieved with capabilities such as full table export, Platform dataset export, BI tool integration, and the reporting API."
+>abstract="While an exact replacement for Data Feeds is not yet available in Customer Journey Analytics, similar functionality is available via full table export, Platform dataset export, BI tool integration, and the reporting API."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -76,9 +76,9 @@ In Customer Journey Analytics, events are not collected in order and a person ID
   * new data is collected or 
   * stitching adds events to a person's history.
 
-The report-time processing impacts the export of data from Customer Journey Analytics. Exports that include persisted values, will not match Customer Journey Analytics reports and values will drift away over time.
+The report-time processing impacts the export of data from Customer Journey Analytics. Exports that include persisted values do not match Customer Journey Analytics reports and values diverge over time.
 
-For metric consistency, use of the new features in Customer Journey Analytics is preferred. In general, Experience Platform and Customer Journey Analytics data export functionality exceeds the data feed functionality of Adobe Analytics. Experience Platform and Customer Journey Analytics do provide:
+For metric consistency, use of the new features in Customer Journey Analytics is preferred. In general, Experience Platform and Customer Journey Analytics data export functionality exceeds the data feed functionality of Adobe Analytics. Experience Platform and Customer Journey Analytics provide:
 
 * new data sources and processing subject to data export
 
@@ -86,14 +86,14 @@ For metric consistency, use of the new features in Customer Journey Analytics is
   * apply custom attribution and sessionization based on business rules, and
   * keep customer journeys updated with stitching.
 
-* realization of tailored data export use cases
+* implementation of tailored data export use cases
 
   * export data to where you need it, including Business Intelligence (BI) tools and cloud destinations,
   * keep data synchronized with Analysis Workspace through BI tools integration,
-  * no need to replicate processing logic in your own systems,
+  * no need to duplicate processing logic in your own systems,
   * new support for calculated metrics, derived fields and segmentation, and
 
-* consideration of security and data governance by design
+* consideration of security and data governance
 
   * monitor all data export by user and destination,
   * set limits on what data is available for export, and
@@ -110,3 +110,15 @@ In general, data export supports a number of use cases. Each use case is differe
 | **Data Validation**<br/>Evaluate clickstream data for data collection accuracy. | **Experience Platform**: [**Query Service (Data Distiller) & Export datasets**](queryservice-export-datasets.md)<br/> Interactive PostgreSQL interface to execute ad-hoc SQL queries using your favorite SQL tool to validate the data in your datasets.<br/><br/>**Customer Journey Analytics**: [**Export full table**](export-full-table.md)<br/>Validate processed data from CJA with attribution and sessionization applied. |
 | **Data Lake, Data Warehouse or BI tools**<br/>Bring digital data into your own BI tools or Data Lake for use with additional datasets. | **Customer Journey Analytics**: [**BI Extension**](bi-extension.md)<br/>Add Customer Journey Analytics processed metrics to data visualization tools such as Power BI and combine with additional data for custom reports<br/><br/>**Experience Platform**: [**Query Service (Data Distiller) & Export datasets**](queryservice-export-datasets.md)<br>Generate customized clickstream data using SQL to be delivered to cloud destinations. |
 | **Readiness for AI / ML**<br/>Enhance Artificial Intelligence / Machine Learning models and tasks with Customer Journey Analytics data. | **Customer Journey Analytics**: [**Export full table**](export-full-table.md)<br/>Export Customer Journey Analytics processed dimensions and metrics to cloud destinations one-time or recurring, including calculated metrics and segmentation.<br/><br/>**Experience Platform**: [**Query Service (Data Distiller) & Export datasets**](queryservice-export-datasets.md)<br/>Generate customized clickstream data using SQL to enrich AI / ML models. |
+| **Ad hoc and recurring reporting**<br/>Give individual users or business teams self-service access to processed Customer Journey Analytics data, without setting up a data pipeline. | **Customer Journey Analytics**: [**Workspace export**](workspace-export.md)<br/>Download or email data directly from an Analysis Workspace project for one-time analysis or sharing.<br/><br/>**Customer Journey Analytics**: [**Report Builder**](report-builder.md)<br/>Pull Customer Journey Analytics data into Excel workbooks for recurring, business-user-friendly reporting. |
+| **Custom application integration**<br/>Power dashboards, internal tools, or automated workflows with Customer Journey Analytics data. | **Customer Journey Analytics**: [**Reporting API**](reporting-api.md)<br/>Retrieve Customer Journey Analytics data programmatically to integrate with your own applications or automation. |
+
+## Choose between functionalities
+
+Several functionalities can implement the same use case. When you choose between them, consider:
+
+* **Data volume**: Ad hoc methods, such as [Workspace export](/help/use-cases/data-export/workspace-export.md) and [Report Builder](/help/use-cases/data-export/report-builder.md), are limited to tens of thousands of rows. [Export full table](/help/use-cases/data-export/export-full-table.md) and [Export datasets](/help/use-cases/data-export/export-datasets.md) support millions of rows.
+* **Raw versus processed data**: [Export datasets](/help/use-cases/data-export/export-datasets.md) and [Query Service (Data Distiller) & Export datasets](/help/use-cases/data-export/queryservice-export-datasets.md) deliver raw, unprocessed data from the data lake. [BI extension](/help/use-cases/data-export/bi-extension.md), [Export full table](/help/use-cases/data-export/export-full-table.md), [Workspace export](/help/use-cases/data-export/workspace-export.md), [Report Builder](/help/use-cases/data-export/report-builder.md), and the [Reporting API](/help/use-cases/data-export/reporting-api.md) deliver data that Customer Journey Analytics has already processed, including attribution, sessionization, and calculated metrics.
+* **Technical expertise**: [Query Service (Data Distiller) & Export datasets](/help/use-cases/data-export/queryservice-export-datasets.md) and the [BI extension](/help/use-cases/data-export/bi-extension.md) require SQL knowledge. [Workspace export](/help/use-cases/data-export/workspace-export.md) and [Report Builder](/help/use-cases/data-export/report-builder.md) use point-and-click interfaces. The [Reporting API](/help/use-cases/data-export/reporting-api.md) requires programming knowledge.
+* **Scheduling needs**: [Export datasets](/help/use-cases/data-export/export-datasets.md), [Export full table](/help/use-cases/data-export/export-full-table.md), and [Report Builder](/help/use-cases/data-export/report-builder.md) support recurring, scheduled delivery. [Workspace export](/help/use-cases/data-export/workspace-export.md) downloads are ad hoc only.
+* **Output format and destination**: Consider whether you need a file in cloud storage, a table in a BI tool, a workbook in Excel, or a response from an API call, then match that to the functionality that delivers it.

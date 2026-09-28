@@ -317,7 +317,7 @@ See [Use cases](/help/use-cases/data-views/bi-extension-usecases.md) on how to a
 
 ## Functionality
 
-By default, your data views have a table-safe name generated from their friendly name. For example, the data view named [!UICONTROL My Web Data View] has the view name `my_web_data_view`. You can define a preferred name to use in your BI tool for your data view. See [Data view settings](create-dataview.md#settings) for more information.
+By default, your data views have a table name generated from the data view  default external id. For example, the data view named **[!UICONTROL My Web Data View]** has the external id `My_web_data_view`. You can define a preferred name to use in your BI tool for your data view. See [Data view settings](create-dataview.md#settings) for more information.
 
 If you want to use the data view IDs as the table names, you can add the optional `CJA_USE_IDS` setting to your database name when connecting. For example, `prod:cja?CJA_USE_IDS` shows your data views with names like `dv_ABC123`.
 
@@ -332,12 +332,12 @@ Privacy labels and policies that were created on datasets consumed by Experience
 In the standard PostgreSQL CLI, you can list your views using `\dv`
 
 ```sql
-prod:all=> \dv
+prod:cja=> \dv
                        List of relations
  Schema |                    Name                    | Type |  Owner             
 --------+--------------------------------------------+------+----------
- public | my_web_data_view                           | view | postgres
- public | my_mobile_data_view                        | view | postgres
+ public | My_web_data_view                           | view | postgres
+ public | My_mobile_data_view                        | view | postgres
 
 ```
 

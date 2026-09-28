@@ -1,10 +1,9 @@
 ---
 title: Configure Consent Reporting and Filtering
-description: Learn how to use the provisioning wizard to enable consent reporting and optional ingest-time filtering for a connection in Customer Journey Analytics.
+description: Learn how to create a configuration to enable consent reporting and optional ingest-time filtering for a connection in Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -27,7 +26,61 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
 ---
-# Configure consent reporting and filtering
+# Configure consent reporting and filtering {#configure-consent-reporting}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-merge-policy"
+>title="Merge policy"
+>abstract="Merge policies combine profile data from multiple datasets into unified customer profiles used for audience creation. Select the merge policy that corresponds to the Profile dataset that contains the consent policy membership data (the `consentPoliciesIDMap` field) that you want to report on. Or consult your data team to learn which audiences are associated with each merge policy."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-sandbox"
+>title="Sandbox"
+>abstract="Select the sandbox that contains the correct Experience Platform profile datasets. These datasets need to contain the consent data that you want to report on in Analysis Workspace."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-person-id"
+>title="Person ID"
+>abstract="Select a field from the model-based schema that represents the Person ID. The selection is limited to the list of fields in the schema that are marked as 'Identity' and do have an identity namespace."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-identity-namespace"
+>title="Use primary identity namespace"
+>abstract="Enable this option if you want Customer Journey Analytics to find the identity in the Identity Map that is marked with a primary=true attribute and uses that identity as the Person ID for that row. This identity is the primary key that is used in Experience Platform for partitioning. <br/>If you leave this option disabled, select a namespace from the Identity namespace field below. Customer Journey Analytics searches each row's Identity Map for this namespace key and uses the identity under that namespace as the Person ID for that row."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-enable-reporting"
+>title="Enable reporting"
+>abstract="Enable this option to use Analysis Workspace to report on the consent data that is available in your connection. Consent policy dimensions and metrics are added to the data views you select."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-enable-filtering"
+>title="Enable filtering"
+>abstract="Enable this option to exclude non-consenting visitor data from being ingested into Customer Journey Analytics. When enabled, a visitor's data is ingested only if the visitor matches all consent policies that are enabled below. <br>This option is intended for organizations with requirements to exclude non-consenting visitor data at ingest time."
+
+<!-- markdownlint-enable MD034 -->
 
 System administrators can enable consent reporting and, optionally, consent filtering for one or more connections. For overview information, see [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/consent-overview.md).
 
@@ -37,13 +90,15 @@ System administrators can enable consent reporting and, optionally, consent filt
 
 ## Create a configuration
 
-When you create a configuration for consent reporting and filtering, you select the sandbox and Profile dataset that contain your consent policy membership data, choose the connection or connections to configure, and choose whether to filter data for each marketing action. Customer Journey Analytics then creates the consent policy lookup dataset and the consent policy components automatically.
+When you create a configuration for consent reporting and filtering, you select the sandbox and merge policy that contain your consent policy membership data, choose the connection or connections to configure, and choose whether to filter data for each marketing action. Customer Journey Analytics then creates the consent policy lookup dataset and the consent policy components automatically.
 
 To create a consent reporting and filtering configuration:
 
-1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Consent reporting and filtering]**.
+1. In Customer Journey Analytics, select **[!UICONTROL Data Management]** > **[!UICONTROL Consent Reporting & Filtering]**.
 
 1. Select **[!UICONTROL Create configuration]**.
+
+   ![consent configuration page](assets/consent-configure.png)
 
 1. In the **[!UICONTROL Details]** section, specify the following information:
 
@@ -52,28 +107,50 @@ To create a consent reporting and filtering configuration:
    | **[!UICONTROL Name]** | Specify a name for the configuration. |
    | **[!UICONTROL Sandbox]** | Select the Experience Platform sandbox that contains the Profile dataset with your consent policy membership data. <p>A maximum of one consent policy lookup dataset exists per sandbox. Multiple configurations in the same sandbox share the same lookup dataset.</p> |
 
-1. In the **[!UICONTROL Profile dataset]** section, select the Profile dataset that contains the consent policy membership data (the `consentPoliciesIDMap` field) that you want to report on. When you enable consent reporting, this Profile dataset is added to the connection that you select if it is not already part of it.
+1. In the **[!UICONTROL Profile dataset]** section, in the **[!UICONTROL Merge policy]** field, select the merge policy that corresponds to the Profile dataset that contains the consent policy membership data (the `consentPoliciesIDMap` field) that you want to report on. When you enable consent reporting, this Profile dataset is added to the connection that you select if it is not already part of it.<p>Merge policies determine how Adobe Experience Platform combines profile data from multiple datasets into unified customer profiles used for consent policy membership data. Each day, a snapshot of this data is generated in Experience Platform. This snapshot provides a static view of the data at a specific point in time and does not include any event data.</p><p>Select the **[!UICONTROL Default Timebased]** merge policy if you see multiple merge policies and you are unsure which one to choose. You can also consult your data team to better understand which consent data is associated with each merge policy.</p>
 
-1. In the **[!UICONTROL Connection]** section, select **[!UICONTROL Select a connection]**, select the checkbox next to one or more connections to configure, then select **[!UICONTROL Use connection]**.
+1. In the **[!UICONTROL Connection]** section, select **[!UICONTROL Select a connection]**, select the checkbox next to the connection to configure, then select **[!UICONTROL Use connection]**.
 
    Consent reporting and filtering is applied at the connection level. All data views under a configured connection inherit the same behavior.
 
-1. In the **[!UICONTROL Data views]** section, click **[!UICONTROL Select data views]**.
+1. In the **[!UICONTROL Person ID]** field, select a field from the model-based schema that represents the Person ID. The selection is limited to the list of fields in the schema that are marked as 'Identity' and do have an identity namespace.
 
-1. In the Data views dialog, select the checkbox next to one or more data views that you want to use for consent reporting. These data views are automatically configured with Experience Platform consent data for reporting.
+1. Choose whether to enable reporting for the consent data. 
 
-1. Select **[!UICONTROL Use data views]**.
+   For information about when to enable reporting, see [Consent reporting vs. filtering](/help/connections/consent-reporting-filtering/consent-overview.md#consent-reporting-vs-filtering).
 
-1. (Optional) In the **[!UICONTROL Filtering]** section, you can enable filtering for the following marketing actions:
+   To enable and configure reporting:
 
-   >[!NOTE]
-   >
-   >When filtering for a marketing action is enabled, Customer Journey Analytics ingests a visitor's data only if the visitor matches **all** consent policies that apply to that marketing action. For more information, see [Consent filtering](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering) in [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/consent-overview.md).
+   1. In the **[!UICONTROL Reporting]** section, select **[!UICONTROL Enable reporting]**.
 
-   | Marketing action | Description |
-   |---------|----------|
-   | **[!UICONTROL Analytics]** | Filter data used for standard Customer Journey Analytics reporting in Analysis Workspace. |
-   | **[!UICONTROL Data science]** | Filter data used for advanced analytics, machine learning, and data science use cases. |
+   1. Select any data views associated with your connection that you want to use when analyzing Platform consent data within Analysis Workspace. In the **[!UICONTROL Data views]** section, click **[!UICONTROL Select data views]**.
+
+   1. In the Data views dialog, select the checkbox next to one or more data views that you want to use for consent reporting. These data views are automatically configured with Experience Platform consent data for reporting.
+
+   1. Select **[!UICONTROL Use data views]**.
+
+1. Choose whether to enable filtering, which excludes non-consenting visitors at ingest time. 
+
+   When filtering is enabled, Customer Journey Analytics ingests a visitor's data only if the visitor matches all consent policies that are enabled.
+
+   For information about when to enable filtering, see [Consent reporting vs. filtering](/help/connections/consent-reporting-filtering/consent-overview.md#consent-reporting-vs-filtering).
+
+   To enable and configure filtering: 
+   
+   1. In the **[!UICONTROL Filtering]** section, select **[!UICONTROL Enable filtering]** to filter consent data.
+
+   1. Enable filtering for one or both of the following marketing actions:
+
+      >[!NOTE]
+      >
+      >When filtering for a marketing action is enabled, Customer Journey Analytics ingests a visitor's data only if the visitor matches **all** consent policies that apply to that marketing action. For more information, see [Consent filtering](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering) in [Consent reporting and filtering overview](/help/connections/consent-reporting-filtering/consent-overview.md).
+
+      Marketing actions are tied to the data usage labels and policies that you configure in Experience Platform. For more information, see [Labels, policies, and marketing actions](/help/data-views/data-governance.md).
+
+      | Marketing action | Description |
+      | --------- | ---------- |
+      | **[!UICONTROL Analytics data]** | Filter data used for standard Customer Journey Analytics reporting in Analysis Workspace. |
+      | **[!UICONTROL Data science data]** | Filter data used for advanced analytics, machine learning, and data science use cases. |
 
 1. Select **[!UICONTROL Create]** to create the configuration.
 

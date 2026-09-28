@@ -11,8 +11,6 @@ subfeature_v2:
 ---
 # Sub-event analysis
 
-{{release-limited-testing}}
-
 Sub-event analysis lets you analyze event data at a level more granular than the event level. Instead of filtering on entire events, you can segment on individual containers within events. For example:
 
 * Segmenting on a specific product category without including all other products purchased in the same order.

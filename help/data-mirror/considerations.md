@@ -32,6 +32,10 @@ topic_v2:
 
 This article describes factors you should consider when you set up Data Mirror datasets.
 
+## Limitations
+
+{{relational-dataset-important}}
+
 ## New column to source table
 
 When a new column is added to a source table in a CDC-enabled data mirrored dataset, that change can trigger updates for all existing rows. These updates are processed as changes through CDC, which:

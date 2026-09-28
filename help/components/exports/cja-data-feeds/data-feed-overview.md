@@ -33,6 +33,8 @@ topic_v2:
 
 Data feeds are a powerful way to get raw data out of Customer Journey Analytics. You can use this raw data in other platforms outside of Adobe at your organization's discretion. Data is delivered in hourly batches at the conclusion of each hour, or in daily batches at the conclusion of each day. 
 
+For a comparison of data feeds against other Customer Journey Analytics export methods, such as Full Table Export, see [Analytics product comparison](/help/getting-started/analytics-product-comparison.md).
+
 ## Prerequisites
 
 Make sure that you meet all the following requirements before using data feeds:
@@ -46,6 +48,8 @@ Make sure that you meet all the following requirements before using data feeds:
 To get started using data feeds in Customer Journey Analytics, first understand how data feeds in Customer Journey Analytics differ from data feeds in Adobe Analytics. After you understand the differences, you can map Adobe Analytics data feeds to Customer Journey Analytics, then begin creating a data feed.
 
 1. [Understand the differences between data feeds in Customer Journey Analytics and Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md).
+
+1. [Understand data discrepancies between data feeds and Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md).
 
 1. [Map Adobe Analytics data feed columns to Customer Journey Analytics](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md).
 

@@ -27,6 +27,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Landing page](../getting-started/landing.md)
     + [Frequently asked questions](../getting-started/cja-faq.md)
     + [Compare to BI solutions](../getting-started/cja-vs-bi.md)
+    + {hide-from-toc} [Analytics product comparison](/help/getting-started/analytics-product-comparison.md)
     + [AI Assistant](../ai-assistant.md)
     + [Data Insights Agent](../data-analysis-ai.md)
   + Customer Journey Analytics B2B Edition {#cja-b2b}
@@ -140,11 +141,11 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Analyze](/help/connections/audience-analysis/analyze-audiences.md)
     + [Use cases](/help/connections/audience-analysis/audience-analysis-use-cases.md)
   + Consent reporting and filtering {#consent-reporting-filtering}
-    + {hide-from-toc} [Overview](/help/connections/consent-reporting-filtering/consent-overview.md)
-    + {hide-from-toc} [Configure](/help/connections/consent-reporting-filtering/consent-configure.md)
-    + {hide-from-toc} [Manage](/help/connections/consent-reporting-filtering/consent-manage.md)
-    + {hide-from-toc} [Analyze](/help/connections/consent-reporting-filtering/consent-analyze.md)
-    + {hide-from-toc} [Use cases](/help/connections/consent-reporting-filtering/consent-use-cases.md)
+    + [Overview](/help/connections/consent-reporting-filtering/consent-overview.md)
+    + [Configure](/help/connections/consent-reporting-filtering/consent-configure.md)
+    + [Manage](/help/connections/consent-reporting-filtering/consent-manage.md)
+    + [Analyze](/help/connections/consent-reporting-filtering/consent-analyze.md)
+    + [Use cases](/help/connections/consent-reporting-filtering/consent-use-cases.md)
 + Data Views {#cja-dataviews}
   + [Data views overview](../data-views/data-views.md)
   + [Create or edit a data view](../data-views/create-dataview.md)
@@ -159,6 +160,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Metric deduplication](../data-views/component-settings/metric-deduplication.md)
     + [No value options](../data-views/component-settings/no-value-options.md)
     + [Persistence](../data-views/component-settings/persistence.md)
+    + {hide-from-toc} [Scope](/help/data-views/component-settings/scope.md)
     + [Substring](../data-views/component-settings/substring.md)
     + [Summary data group](../data-views/component-settings/summary-data-group.md)
     + [Value bucketing](../data-views/component-settings/value-bucketing.md)
@@ -333,6 +335,14 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Industry use cases](../guided-analysis/industry-use-cases.md)
     + [FAQ](../guided-analysis/faq.md)
 
++ Conversation insights {#conversation-insights}
+  + {hide-from-toc} [Overview](/help/conversation-insights/conversation-insights-overview.md)
+  + {hide-from-toc} [Configure](/help/conversation-insights/conversation-insights-configure.md)
+  + {hide-from-toc} [Manage](/help/conversation-insights/conversation-insights-manage.md)
+  + {hide-from-toc} [Implement](/help/conversation-insights/conversation-insights-implement.md)
+  + {hide-from-toc} [Analyze](/help/conversation-insights/conversation-insights-analyze.md)
+
+
 + Components {#cja-components}
   + [Overview](../components/overview.md)
   + [Use components](../components/use-components-in-workspace.md)
@@ -414,11 +424,15 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Manage export logs](/help/components/exports/manage-export-logs.md)
     + [Troubleshoot exports](/help/components/exports/troubleshoot-exports.md)
     + Data feeds {#cja-data-feeds}
-      + {hide-from-toc} [Data feed overview](/help/components/exports/cja-data-feeds/data-feed-overview.md)
+      + {hide-from-toc} [Overview](/help/components/exports/cja-data-feeds/data-feed-overview.md)
       + {hide-from-toc} [Compare Adobe Analytics data feeds](/help/components/exports/cja-data-feeds/df-comparison.md)
+      + {hide-from-toc} [Compare Workspace and data feeds](/help/components/exports/cja-data-feeds/df-comparison-workspace.md)
       + {hide-from-toc} [Prepare to map columns](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc} [Map columns](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
-      + {hide-from-toc} [Create a data feed](/help/components/exports/cja-data-feeds/create-feed.md)
+      + {hide-from-toc} [Create data feeds](/help/components/exports/cja-data-feeds/create-feed.md)
+      + {hide-from-toc} [Segmentation in data feeds](/help/components/exports/cja-data-feeds/df-segmentation.md)
+      + {hide-from-toc} [Apply data transformations](/help/components/exports/cja-data-feeds/df-data-transformations.md)
+      + {hide-from-toc} [Sub-events in data feeds](/help/components/exports/cja-data-feeds/df-sub-event.md)
   + Data Dictionary {#data-dictionary}
     + [Overview](../components/data-dictionary/data-dictionary-overview.md)
     + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
@@ -453,11 +467,12 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Overview](/help/stitching/overview.md)
   + [Field-based stitching](/help/stitching/fbs.md)
   + [Graph-based stitching](/help/stitching/gbs.md)
-  + {hide-from-toc}  [B2B account stitching](/help/stitching/b2b-account-stitching.md)
   + [Request stitching](/help/stitching/use-stitching.md)
   + [Enable stitching](/help/stitching/use-stitching-ui.md)
   + [Validate stitching](/help/stitching/validate.md)
   + [Frequently Asked Questions](/help/stitching/faq.md)  
+  + B2B {#b2b}
+    + [Person to account stitching](/help/stitching/b2b/b2b-person-to-account-stitching.md)
 
 + Total population reporting {#tpr}
   + {hide-from-toc} [Overview](/help/tpr/tpr.md)
@@ -470,6 +485,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Integrate Journey Optimizer data](/help/integrations/ajo.md)
   + [Integrate Decision Management data](/help/integrations/ajo-od.md)
   + [Integrate Customer AI](/help/integrations/customer-ai.md)
+  + [Integrate Brand Visibility](/help/integrations/bv.md)
   + [Integrate Adobe Advertising](/help/integrations/advertising.md)
 
 + Data Governance {#cja-privacy}
@@ -492,6 +508,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Build product value](/help/use-cases/b2b/b2b-edition/build-product-value.md)
   + Complex data {#complex-data}
     + [Use arrays of objects](../use-cases/object-arrays.md)
+    + [Handling No value](../use-cases/data-views/no-value.md)
   + Cross-channel data {#cross-channel}
     + [Analyze data across channels](../use-cases/cross-channel/cross-channel.md)
     + [Import call center and web data](../use-cases/cross-channel/call-center.md)
@@ -501,6 +518,9 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Export datasets](../use-cases/data-export/export-datasets.md)
     + [Export full table](../use-cases/data-export/export-full-table.md)
     + [Query Service and Export datasets](../use-cases/data-export/queryservice-export-datasets.md)
+    + [Workspace export](../use-cases/data-export/workspace-export.md)
+    + [Report Builder](../use-cases/data-export/report-builder.md)
+    + [Reporting API](../use-cases/data-export/reporting-api.md)
   + Data ingestion {#data-ingestion}
     + [Ingest and use Marketo Engage data](../use-cases/data-ingestion/marketo.md)
     + [Ingest and use Experience Platform audiences](../use-cases/data-ingestion/ingest-aep-segments.md)
@@ -571,3 +591,4 @@ breadcrumb-title: Customer Journey Analytics Guide
 
 + [Customer Journey Analytics API](https://developer.adobe.com/cja-apis/docs/)
 + [Customer Journey Analytics MCP server](https://developer.adobe.com/analytics-mcp/docs/cja/)
+
