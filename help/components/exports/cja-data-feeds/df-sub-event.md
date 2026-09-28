@@ -19,13 +19,23 @@ role_v2:
 
 {{release-limited-testing}}
 
-In the XDM schema, each element of an array (a string array or an object array) is a sub-event.
-
-In Customer Journey Analytics, sub-events are represented in data feed exports with their hierarchy intact. (In Adobe Analytics, sub-events are represented as a single column.)
+[Sub-events](/help/components/segments/sub-event.md) in Customer Journey Analytics allow you to analyze event data at a level more granular than the event level.
 
 Use the following information to understand how to work with sub-events in your Customer Journey Analytics data feeds.
 
-## Sub-event example: Products in a purchase event
+## Understand sub-events
+
+### Sub-events in the XDM schema
+
+In the XDM schema, each element of an array (a string array or an object array) is a sub-event.
+
+To view an event with sub-events within the XDM schema in Adobe Exprience Platform, select [!UICONTROL **Schemas**], then expand an event that contains sub-events.
+
+In the following example, `Product list items` is an object array containing various sub-events.
+
+![XDM schema containing an object array and sub-events](assets/df-sub-event-schema.png)
+
+### Sub-event example: Products in a purchase event
 
 A customer purchases two products in a single order: one cordless drill and two drill battery packs. Your implementation sends a single purchase event that includes both products in the `productListItems` object array:
 
@@ -56,35 +66,63 @@ This event contains two sub-events, one for each object in the `productListItems
 >
 >Sub-events include only the data that is sent with the event. Customer Journey Analytics does not reconstruct cart contents from earlier events, such as cart adds or checkouts. For products to appear as sub-events of a purchase event, your implementation must include them in `productListItems` on that purchase event.
 
-## Sub-events in the XDM schema
+## Add sub-event data to a data feed
 
-You define sub-events in the XDM schema by creating either string arrays or object arrays. 
+When you attempt to add a column that is a sub-event while building a data feed, a dialog displays, prompting you to add any of the peer sub-events. In the data feed output, all of these events appear in a single column. 
 
-In the following example, Product list items is an object array containing various sub-events.
+## View sub-event data in data feed output
 
-![XDM schema containing an object array and sub-events](assets/df-sub-event-schema.png)
+### Sub-event differences between Analysis Workspace and data feeds
 
-## Differences between Analysis Workspace and data feeds
+Sub-events are represented differently between Analysis Workspace and data feeds in Customer Journey Analytics.
 
-Sub-events are represented differently between Analysis Workspace and data feeds.
+| Location | How sub-events are represented |
+| --- | --- |
+| **Analysis Workspace (in Customer Journey Analytics)** | Selectable as individual components, separate from any visible hierarchy. |
+| **Data feeds (in Customer Journey Analytics)** | Represented as a group, with their hierarchy intact. |
+
+### Sub-event differences between Adobe Analytics and Customer Journey Analytics
+
+Sub-event data (such as multiple product details in a single purchase event) appears differently in Customer Journey Analytics data feeds than in Adobe Analytics data feeds. The following table compares how each product represents sub-event data.
+
+| Product | How sub-event data appears in data feeds | Example: Product list |
+| --- | --- | --- |
+| **Adobe Analytics** | Flattened into a delimited string in a single column. | A product list contains multiple products grouped in a single string:<p>`Power Tools;Cordless Drill;1;129.99,Power Tools;Drill Battery Pack;2;39.98` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+| **Customer Journey Analytics** | Sub-events retain the hierarchy defined in your XDM schema. While grouped in the same column, they show their relational hierarchy to their parent event and sibling sub-events. | A product list maintains its hierarchy that is defined in the XDM schema as an array:<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+
+{style="table-layout:auto"}
+
+### Differences from Adobe Analytics
+
+### How output differs between Adobe Analytics and Customer Journey Analytics data feeds
+
+Sub-event data (such as multiple product details in a single purchase event) appears differently in Customer Journey Analytics data feeds than in Adobe Analytics data feeds. The following table compares how each product represents sub-event data.
+
+| Product | How sub-event data appears in data feeds | Example: Product list |
+| --- | --- | --- |
+| **Adobe Analytics** | Flattened into a delimited string in a single column. | A product list contains multiple products grouped in a single string:<p>`Power Tools;Cordless Drill;1;129.99,Power Tools;Drill Battery Pack;2;39.98` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+| **Customer Journey Analytics** | Sub-events retain the hierarchy defined in your XDM schema. While grouped in the same column, they show their relational hierarchy to their parent event and sibling sub-events. | A product list maintains its hierarchy that is defined in the XDM schema as an array:<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+
+{style="table-layout:auto"}
+
+## How sub-events differ between Analysis Workspace and data feeds output
+
+Sub-events are represented differently between Analysis Workspace and data feeds in Customer Journey Analytics.
 
 | Location | How sub-events are represented |
 | --- | --- |
 | **Analysis Workspace** | Selectable as individual components, separate from any visible hierarchy. |
 | **Data feeds** | Represented as a group, with their hierarchy intact. |
 
-## Add sub-event data to a data feed
-
-When you attempt to add a column that is a sub-event while building a data feed, a dialog displays that allows you to add all of the peer sub-events. All of these events will appear in a single column of the data feed output. 
 
 ## View sub-event data in data feed output
 
-Sub-event data (such as multiple products in a single event) appears differently in Customer Journey Analytics data feeds than in Adobe Analytics data feeds. The following table compares how each product represents sub-event data.
+Sub-event data (such as multiple product details in a single purchase event) appears differently in Customer Journey Analytics data feeds than in Adobe Analytics data feeds. The following table compares how each product represents sub-event data.
 
 | Product | How sub-event data appears in data feeds | Example: Product list |
 | --- | --- | --- |
 | **Adobe Analytics** | Flattened into a delimited string in a single column. | A product list contains multiple products grouped in a single string:<p>`Power Tools;Cordless Drill;1;129.99,Power Tools;Drill Battery Pack;2;39.98` <!--screenshot of what this looks like: product lists, list vars. --></p> |
-| **Customer Journey Analytics** | Sub-events keep the hierarchy defined in your XDM schema. They stay grouped in the same column, together with their parent event and sibling sub-events. | A product list maintains its hierarchy that is defined in the XDM schema as an array:<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+| **Customer Journey Analytics** | Sub-events retain the hierarchy defined in your XDM schema. While grouped in the same column, they show their relational hierarchy to their parent event and sibling sub-events. | A product list maintains its hierarchy that is defined in the XDM schema as an array:<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
 
 {style="table-layout:auto"}
 
@@ -93,24 +131,6 @@ Sub-event data (such as multiple products in a single event) appears differently
 Because sub-event data [appears differently in Customer Journey Analytics data feeds](#view-sub-event-data-in-data-feed-output), the queries you use for it differ from those you use for Adobe Analytics data feeds.
 
 The following examples show how to find events that include a specific product. The examples use Google BigQuery syntax. Other data warehouses, such as Snowflake and Databricks, support the same approach with minor syntax differences.
-
-+++ Query product data in Adobe Analytics data feeds
-
-In Adobe Analytics data feeds, an event with two products purchased together appears as a single delimited string in the `product_list` column:
-
-```text
-Power Tools;Cordless Drill;1;129.99;event1=1;eVar10=DrillBundle,Power Tools;Drill Battery Pack;2;39.98;event1=1;eVar10=DrillBundle
-```
-
-To find events that include a Cordless Drill, you parse this string with a regular expression:
-
-```sql
-SELECT hitid_high, hitid_low, post_evar10
-FROM aa_hit_data
-WHERE REGEXP_CONTAINS(product_list, r'(^|,)[^;]*;Cordless Drill;')
-```
-
-+++
 
 +++ Query product data in Customer Journey Analytics data feeds
 
@@ -161,6 +181,24 @@ WHERE item.product = 'Cordless Drill';
 An event with more than one matching product appears as multiple rows, and the event's columns, such as `row_id`, repeat on each row. Use this approach only when you need product-level detail. To count events in the results, use `COUNT(DISTINCT row_id)` instead of counting rows.
 
 This approach applies to any array field in your XDM schema, not only products.
+
++++
+
++++ Query product data in Adobe Analytics data feeds
+
+In Adobe Analytics data feeds, an event with two products purchased together appears as a single delimited string in the `product_list` column:
+
+```text
+Power Tools;Cordless Drill;1;129.99;event1=1;eVar10=DrillBundle,Power Tools;Drill Battery Pack;2;39.98;event1=1;eVar10=DrillBundle
+```
+
+To find events that include a Cordless Drill, you parse this string with a regular expression:
+
+```sql
+SELECT hitid_high, hitid_low, post_evar10
+FROM aa_hit_data
+WHERE REGEXP_CONTAINS(product_list, r'(^|,)[^;]*;Cordless Drill;')
+```
 
 +++
 
