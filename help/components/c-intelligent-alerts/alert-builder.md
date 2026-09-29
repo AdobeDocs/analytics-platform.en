@@ -44,6 +44,15 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="components_alerts_timegranularity"
 >title="Time granularity"
+>abstract="Time granularity refers to how often the alert is checked."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="components_alerts_delay"
+>title="Delay"
 >abstract="Alerts trigger at the time granularity you select after this delay. Data from your connections can arrive with different latencies, between 1-24 hours. The default delay triggers 9 hours after each alert window."
 
 <!-- markdownlint-enable MD034 -->
