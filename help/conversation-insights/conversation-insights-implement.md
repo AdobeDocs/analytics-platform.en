@@ -2,7 +2,7 @@
 title: Implement Conversation Insights
 description: Learn how to instrument your agent application or service for Conversation Insights.
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
 hold: true
 product_v2:
@@ -11,9 +11,8 @@ product_v2:
 feature_v2:
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
     internal-label: Components
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-    internal-label: Content Analytics
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -29,19 +28,19 @@ This article documents the required implementation steps.
 >[!PREREQUISITES]
 >
 >* You must have an Experience Platform environment (organization and sandbox) available to collect the data.
->* Your Adobe organization must be enabled for the experimental agentic and conversation field groups.
+>* Your Adobe organization must be enabled for the agentic and conversation field groups.
 >
 
 ## Schema and datasets
 
-Configure datasets for the primary conversation events: prompt, response, feedback. These datasets can be based on the same schema (for example, a generic Conversation Insights schema) or based on individual schemas. 
-You can define separate datasets for prompts, responses, and feedback or combine data into datasets. For example, use one dataset for prompts and responses and another dataset for feedback. Or use a single dataset for all conversation events. 
+Configure datasets for the primary conversation events: prompt, response, feedback. The prompt, response, and feedback datasets must extend the XDM Experience Event base schema with the [Conversation Event field group](#conversation-event-field-group) and can optionally include the [Agentic Information field group](#agentic-information-field-group) and other [additional field groups](#additional-field-groups). 
 
-The schema used for the prompt, response, and feedback datasets must extend the XDM Experience Event base schema with required field groups. And can extend the XDM Experience Event base schema with additional field groups.
+You can define separate datasets for prompts, responses, and feedback or combine data into datasets. For example, use one dataset for prompts and responses and another dataset for feedback. Or use a single dataset for all conversation events. 
+Use the same underlying schema for the datasets.
 
 ### Agentic Information field group
 
-The **[!UICONTROL Agentic Information]** field group is a required field group and uses the `agenticExperience` object.
+The **[!UICONTROL Agentic Information]** field group is an optional field group and uses the `agenticExperience` object. Consider using this field group if you want to track agentic information.
 
 +++ Details
 
@@ -213,7 +212,7 @@ The conversation object captures data for:
 
 #### Conversation
 
-A unique `conversationID` identifies a conversation. For example: `conversationID = "conv-001"`. The schema also supports `conversationName`. A human-readable name that describes the overall context of the conversation, such as: `France Geography Q&A`.
+A unique `conversationID` identifies a conversation. For example: `conversationID = "conv-001"`. The schema also supports `conversationName`. A human-readable name that describes the overall context of the conversation, such as: `France Geography Q&A`. The conversation name is auto generated but you can update the generated name. The conversation name is also populated to `signals[].name`.
 
 The `conversationID` allows all related turns events to be grouped into the same conversational experience.
 
@@ -226,7 +225,7 @@ A turn is one interaction cycle within a conversation.
 `conversationID = "conv-001"`
 `turnID = "turn-001"`
 
-The same `conversationID` and `turnID` are used to correlate the prompt, response, and feedback associated with that turn. That correlation works across records that are delivered separately or end up in different datasets.
+The same `conversationID` and `turnID` are used to correlate the prompt, response, and feedback associated with that turn. That correlation works across records that are delivered separately or end up in different datasets. A `turnId` only needs to be unique within the same conversation but can be reused across conversations. For example you can have both `turn-001` as the `turnID` in conversations with `conversationID` `conv-001` and `conv-002`.
 
 
 #### Prompt
@@ -241,7 +240,7 @@ Important prompt fields include:
 |---|---|
 |`prompt.source`  |  Who or what produced the prompt, commonly end-user. |
 | `prompt.raw[]` | One or more raw content segments. |
-| `prompt.raw[].text`  |  The actual prompt text or content. |
+| `prompt.raw[].text`  |  The actual prompt text or link to content (for example, a screenshot). |
 | `prompt.raw[].purpose` | The purpose of the content, such as User Input or link. |
 
 A prompt can contain multiple raw segments. For example, a user enters text and includes a URL. 
@@ -267,6 +266,8 @@ Important response fields include:
 | `response.raw[].purpose` | The purpose of the content segment. |
 
 The documented source types include:
+
+<!-- randy buck to provide additional details -->
 
 | Source |  Meaning |
 |---|----|
@@ -297,7 +298,9 @@ When feedback applies to a particular turn, preserve the appropriate `conversati
 
 #### Signal
 
-A signal is a structured analytical observation about conversation content. The signal extraction service extracts signals.
+A signal is a structured analytical observation about conversation content. The Signal service provides out of the box signals. No action is required to provide signals, but you can add signals as part of the integration.
+
+<!-- randy buck to provide additional details -->
 
 A signal has the following fields.
 
@@ -370,9 +373,6 @@ See below for the full details of a conversation object.
 
 +++
 
-
-
-
 ### Additional field groups
 
 You can add optional field groups to the schema you use for prompt, response, and feedback datasets. For example:
@@ -392,9 +392,9 @@ You need to set one of the following values for `eventType` (String) for each co
 
 | Value| Explanation |
 |---|---|
-| `conversation turn` |Complete conversation turn with prompt and response |
-| `conversation recommendation` | Conversation-based recommendation |
-| `conversation feedback` | Feedback-only event |
+| `conversation.turn` |Complete conversation turn with prompt and response |
+| `conversation.recommendation` | Conversation-based recommendation |
+| `conversation.feedback` | Feedback-only event |
 
 
 ### Source type
@@ -411,6 +411,8 @@ You need to set one of the following values for `source` for each `prompt`, `res
 ### Purpose type (raw text)
 
 You need to set one of the following values for the `purpose` attribute on any element of the `raw` object in a `prompt`, `response`, or `feedback` object.
+
+<!-- randy buck to provide details -->
 
 | Value | Description |
 |---|---|
