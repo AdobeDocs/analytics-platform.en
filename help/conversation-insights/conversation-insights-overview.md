@@ -2,13 +2,28 @@
 title: Conversation Insights Overview
 description: Learn about the Conversation Insights value and terminlogy and learn how Conversation Insights works.
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
 hold: true
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Conversation Insights
 
-Conversation Insights enables you to analyze conversations from the agent experiences you offer to your customers. Those agent experiences can be based on large language models (LLM) or based on human conversations. Conversation Insights analyzes the conversations at scale and provides context for these conversations  within the full customer journey. Through Conversation Insights you are able to understand the impact of agents on actual user outcomes.
+Conversation Insights enables you to analyze conversations from the agent experiences you offer to your customers. Those agent experiences can be based on large language models (LLM) or based on human conversations. For example, a chatbot interacting with a customer or call center transcripts. 
+
+Conversation Insights analyzes the conversations at scale and provides context for these conversations  within the full customer journey. Through Conversation Insights you are able to understand the impact of agents on actual user outcomes.
 
 Conversation Insights addresses problems you might experience. Such as:
 
@@ -25,7 +40,7 @@ With Conversation Insights you are able to understand:
 * What users are asking from agents.
 * How the conversations impact your KPIs.
 
-You can determine how your agents are performing against the directives, how closely the agents are adhering to brand guidelines, and whether the cost of running agents is justified by the outcomes.
+You can determine how your agents are performing against the directives, how closely the agents are adhering to brand guidelines, and whether the outcomes justify the cost of running agents.
 
 
 ## Concepts
@@ -142,7 +157,7 @@ Conversation Insights is built upon three core functionalities:
 * **Signal extraction and conversation blending**: Transforms the unstructured prompts and responses (also known as turns) into reportable datapoints, like intent and sentiment. So users can report on those datapoints at scale.
 * **Reporting**: To determine an agent's efficacy and ROI, analyze conversations at scale in the context of the customer journey.
 
-The overall process of data collection, signal extraction and conversation blending is shown below.
+The overall process of data collection, signal extraction and conversation blending is described below.
 
 ![Conversation Insights How It Works illustration](assets/conversation-insights.png){zoomable="yes"}
 

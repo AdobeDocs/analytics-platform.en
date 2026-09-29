@@ -296,6 +296,10 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 1. (Optional) Reorder components on the canvas by dragging them. The order you define is preserved as the column order in the exported data feed file.
 
+1. (Optional) Resize columns on the canvas by dragging the column border. 
+
+   Column widths are saved in a cookie and persist the next time you return to this data feed on the same browser.
+
 1. (Optional) Change the component ID that is displayed in the data feed output.
 
    1. Hover over a component on the canvas, then select the information icon.

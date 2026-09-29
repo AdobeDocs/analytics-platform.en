@@ -5,7 +5,7 @@ title: Configure a Cohort Table
 feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
 role: User
-TQID: https://experienceleague.adobe.com/BRZeBxnzNchx5oqu5RVanrwXEP1c8CgJtZuJcGUFg-0
+TQID: 'https://experienceleague.adobe.com/BRZeBxnzNchx5oqu5RVanrwXEP1c8CgJtZuJcGUFg-0'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -16,9 +16,11 @@ feature_v2:
     internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
     internal-label: Dimensions
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

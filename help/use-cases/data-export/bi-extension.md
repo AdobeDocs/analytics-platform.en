@@ -15,9 +15,13 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: b3197353-f189-4932-8378-3f3bc40e6071
     internal-label: Data management
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: f24857a4-4b64-4b25-b237-d43026362144
     internal-label: BI extension
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

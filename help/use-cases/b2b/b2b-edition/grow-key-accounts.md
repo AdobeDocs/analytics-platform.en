@@ -6,7 +6,7 @@ feature: Use Cases
 role: User
 badgePremium: label="B2B Edition"
 exl-id: f5294af8-b8dc-4239-b0f7-5c20d39007ee
-TQID: https://experienceleague.adobe.com/c6Is38i4E54V-ittqMjTdqngZegP7kHf9HUv0KvmTpE
+TQID: 'https://experienceleague.adobe.com/c6Is38i4E54V-ittqMjTdqngZegP7kHf9HUv0KvmTpE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -15,9 +15,13 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
     internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
     internal-label: Alerts
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

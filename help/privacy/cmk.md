@@ -15,6 +15,8 @@ feature_v2:
 subfeature_v2:
   - id: c5ed78d1-99be-42e1-b164-a20a3685241e
     internal-label: Customer managed keys
+  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

@@ -18,6 +18,8 @@ feature_v2:
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
     internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

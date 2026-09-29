@@ -20,6 +20,8 @@ feature_v2:
 subfeature_v2:
   - id: f24857a4-4b64-4b25-b237-d43026362144
     internal-label: BI extension
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

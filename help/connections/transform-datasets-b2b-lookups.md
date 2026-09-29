@@ -17,6 +17,8 @@ feature_v2:
     internal-label: Administration
   - id: b3197353-f189-4932-8378-3f3bc40e6071
     internal-label: Data management
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bfef374d-acfd-4c57-bf74-a2b36053c545
     internal-label: Data ingestion
@@ -24,6 +26,8 @@ subfeature_v2:
     internal-label: Dataset configuration
   - id: e0cfe18a-f68c-495b-bafc-f6bcc0392d6c
     internal-label: Identity
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

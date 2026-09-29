@@ -20,6 +20,8 @@ feature_v2:
 subfeature_v2:
   - id: d3fb138f-79e4-4a81-aedb-76dd93560085
     internal-label: Experience Platform integration
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 role: Admin
-TQID: https://experienceleague.adobe.com/cyNvsdN-bSBY2VqCdxAZvWhyTx8--sOUMifbuYrZKTM
+TQID: 'https://experienceleague.adobe.com/cyNvsdN-bSBY2VqCdxAZvWhyTx8--sOUMifbuYrZKTM'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -14,13 +14,17 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
     internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
     internal-label: Audiences
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
     internal-label: Connections
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

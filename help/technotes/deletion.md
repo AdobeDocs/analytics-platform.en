@@ -5,7 +5,7 @@ exl-id: a89694c9-0909-440e-939c-b245fc4dd6bf
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-TQID: https://experienceleague.adobe.com/95ZvIc4JM3aNY2zO6ypn-KmLrIdZ8DZga4vrOcl9Yzs
+TQID: 'https://experienceleague.adobe.com/95ZvIc4JM3aNY2zO6ypn-KmLrIdZ8DZga4vrOcl9Yzs'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -16,11 +16,13 @@ feature_v2:
     internal-label: Components
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
     internal-label: Integrations
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: ad5685a0-8296-4a0c-814c-658c10b4af12
     internal-label: Content Analytics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
     internal-label: Audiences
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
@@ -31,6 +33,8 @@ subfeature_v2:
     internal-label: Alerts
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
     internal-label: Exports
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

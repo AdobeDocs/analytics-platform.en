@@ -4,7 +4,7 @@ description: Learn how to use freeform tables, which are the foundation for data
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-TQID: https://experienceleague.adobe.com/2eJdFymbKxJE6XjLm0FlWocfVSsCml5ac5n0Y8YAQY8
+TQID: 'https://experienceleague.adobe.com/2eJdFymbKxJE6XjLm0FlWocfVSsCml5ac5n0Y8YAQY8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -15,11 +15,13 @@ feature_v2:
     internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
     internal-label: Dimensions
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
     internal-label: Exports
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

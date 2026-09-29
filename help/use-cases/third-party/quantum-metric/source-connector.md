@@ -6,16 +6,20 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 exl-id: ea8795fe-f5aa-458f-9e01-53ff1ffe6372
-TQID: https://experienceleague.adobe.com/LLrYpPlbagFAIeuD9TMgA3E8lrcUrMxMSWLC-8SiiIY
+TQID: 'https://experienceleague.adobe.com/LLrYpPlbagFAIeuD9TMgA3E8lrcUrMxMSWLC-8SiiIY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
 feature_v2:
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
     internal-label: Integrations
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
     internal-label: Analytics integration
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
