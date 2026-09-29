@@ -2,7 +2,7 @@
 title: Create Or Edit A Conversation Insights Configuration
 description: Learn how to configure Conversation Insights configurations.
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
 hold: true
 product_v2:
@@ -11,19 +11,18 @@ product_v2:
 feature_v2:
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
     internal-label: Components
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-    internal-label: Content Analytics
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 ---
-# Create or edit a configurations
+# Create or edit configurations
 
-
-Conversation Insights enables you to analyze conversations (from large language models (LLM) or humans) at scale and give those conversations context within the full customer journey. Through Conversation Insights you are able to understand the impact of representatives on actual user outcomes.
+Conversation Insights enables you to analyze conversations from the agent experiences you offer to your customers. Those agent experiences can be based on large language models (LLM) or based on human conversations. For example, a chatbot interacting with a customer or call center transcripts. 
+Through Conversation Insights you are able to understand the impact of representatives on actual user outcomes.
 
 Through the Conversation Insights configuration interface you can quickly create or edit a configuration and the associated artifacts (connection, data views, and more).
 
@@ -98,7 +97,7 @@ For each configuration:
 
    * Select **[!UICONTROL Discard]** for a new configuration that is not created.
 
-   * Select **[!UICONTROL Save for later]** for a new configuration you want to save but you do not want to create the artifact for (updates to data views for example). So you can revisit the configuration later and finish the actual creation of the configuration.
+   * Select **[!UICONTROL Save for later]** for a new configuration you want to save but you do not want to create the artifact for (updates to data views for example). You can revisit the configuration later and finish the actual creation of the configuration.
    
    * Select **[!UICONTROL Create]** to create the new configuration. 
    
