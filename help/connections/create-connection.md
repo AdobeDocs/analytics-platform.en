@@ -722,7 +722,14 @@ All datasets and dataset types have [general settings and details](#general-data
 
 
 
-#### Event dataset
+#### Event dataset {#event-dataset-settings}
+
+<!-- RIdM: Lengthy contextual help due to not yey allowed public facing docs. Modify when public facing docs are allowed. -->
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter"
+>title="Enable row filtering"
+>abstract="Row filters determine which events are ingested into Customer Journey Analytics. Only events that match your inclusion rules are ingested. All other events will be permanently excluded and unavailable for reporting, segmentation, or analysis in Customer Journey Analytics.<ul><li>You can create up to 10 filters.</li><li> Changes to filters apply only to new data ingested after the change and do not retroactively affect previously ingested data or trigger a historical backfill.</li><li>Exact string is to match the condition.</li><li>The operator is used to validate the condition.</li><li>Each comma separated value is considered distinct and is included in the condition.</li></ul>"
 
 The specific settings for an event dataset are dependent on the type of connection.
 
