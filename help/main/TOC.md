@@ -200,6 +200,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Hotkeys](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
     + [Color palettes](../analysis-workspace/build-workspace-project/color-palettes.md)
     + [View density](../analysis-workspace/build-workspace-project/view-density.md)
+    + {hide-from-toc} [Use cached results](../analysis-workspace/build-workspace-project/cached-results.md)
     + [Debugger](../analysis-workspace/build-workspace-project/debugger.md)
   + Templates {#templates}
     + [Use templates](../analysis-workspace/templates/use-templates.md)
