@@ -69,6 +69,16 @@ Suppose a Global Campaign Performance project includes segments for different re
 
 >[!ENDSHADEBOX]
 
+### Changes that refresh cached results automatically
+
+Some changes to a project's underlying configuration cause Analysis Workspace to run a new query the next time someone opens the project, even if the 12-hour window hasn't expired:
+
+* Changes to a component in the data view, such as editing a dimension or metric's [component settings](/help/data-views/component-settings/overview.md)
+* Changes to a [derived field](/help/data-views/derived-fields/derived-fields.md)
+* Changes to a segment definition used in the project
+
+The new query loads at normal speed, and its results are then cached, which begins a new 12-hour window.
+
 ### Who sees cached results
 
 Cached results display by default for everyone who:
@@ -81,9 +91,31 @@ Cached results display by default for everyone who:
 
 When viewing cached results, you can see the latest data by [manually refreshing the results](#manually-refresh-results-on-cached-projects).
 
+### When cached results might not work well for a project
+
+You might leave cached results disabled on your project if you need to see current-day data and you expect any of the following kinds of  people using the project need to see any of the following types of information : any of the following are important to you:
+
+* **Seeing data from the current day**
+
+  If a project is cached at 7:00 AM, results don't include data that arrives after 7:00 AM until the cached results expire at 7:00 PM.
+
+* **Seeing late-arriving data right away**
+
+  Late-arriving data has timestamps from an earlier time period but arrives after that period has passed. For example, [batch data](/help/data-ingestion/batch.md) from a call center might be uploaded the next day, or a mobile app might send events that it stored while offline. Cached results don't include this data until they expire.
+
+* **Seeing lookup dataset updates right away**
+
+  [Lookup datasets](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) are applied when a query runs. Cached results continue to show the previous lookup values, such as old product names, until they expire.
+
+If these needs come up only occasionally, you can still enable cached results and [refresh the project](#manually-refresh-results-on-cached-projects) whenever you need the latest data.
+
 ## Enable cached results for a project
 
 Anyone who can update project settings can enable cached results. This includes the project owner and anyone with the **[!UICONTROL Edit original]** role for the project. For more information about project roles, see [Share a specific project role](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).
+
+>[!IMPORTANT]
+>
+>Cached results might not be a good fit if you need to see current-day data, late-arriving data, or lookup dataset updates right away. Before you enable this setting, review [When cached results might not be a good fit](#when-cached-results-might-not-be-a-good-fit).
 
 In the Workspace project where you want to enable cached results for near-instant loading:
 
