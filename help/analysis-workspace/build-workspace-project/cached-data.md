@@ -1,6 +1,6 @@
 ---
 title: Use Cached Results for Faster Loading in Analysis Workspace
-description: Enable a project setting that caches query results for 12 hours, so panels and shared projects load instantly instead of running a new query.
+description: Enable a project setting in Analysis Workspace that caches query results for 12 hours so projects load instantly. Refresh anytime to see the latest data.
 feature: Workspace Basics
 hide: true
 exl-id: 6d7b9d34-ec7e-45ec-98cc-0fd4cbfd43d3
@@ -24,31 +24,58 @@ role_v2:
 >[!CONTEXTUALHELP]
 >id="project_cached_results"
 >title="Use cached results for faster loading"
->abstract="When enabled, results load faster for 12 hours after a project is first opened or it is first delivered (for scheduled projects). Anyone who opens the project during that time sees the same results, even though data continues to flow in the background. To load the latest results, refresh individual panels or the entire project."
+>abstract="When enabled, results load faster for 12 hours after a project is first opened by a user or delivered by a schedule. Anyone who opens the project during that time sees the same results, even though data continues to flow in the background. To load the latest results, refresh individual panels or the entire project."
 
-You can configure Analysis Workspace projects to use cached data from an earlier query for a 12-hour window, allowing results to load instantly. When this option is configured, people who use the project don't have to wait for potentially long load times.
+You can configure Analysis Workspace projects to show cached results for a 12-hour window, allowing results to load instantly for anyone who opens the project after it is initially loaded.
+
+Projects can be initially loaded by a user who opens the project or by a scheduled project delivery.
 
 >[!NOTE]
 >
->Only the query results are cached. Underlying event data continues to flow into Customer Journey Analytics as usual. Data can be refreshed manually by people who access the project during the 12-hour window before cached results expire.
+>Only the query results are cached. Underlying event data continues to flow into Customer Journey Analytics as usual.
+>
+>To see the latest data before cached results expire, you can [manually refresh the results](#manually-refresh-results-on-cached-projects).
+
+## Understand cached results in a project
+
+### When results are cached
+
+The first time the project runs, Analysis Workspace runs the query as usual and caches the results for a 12-hour window. This happens when someone opens the project or when the project runs for a scheduled delivery. For example, if a project is scheduled for delivery at 6:00 AM, the results are cached until 6:00 PM. Everyone who opens the project between 6:00 AM and 6:00 PM sees results load instantly, including the first person to open it.
+
+After 12 hours, the cached results expire. The next query on the project, whether a user opens it or a scheduled delivery runs, loads at normal speed and starts a new 12-hour window.
+
+### Who can see cached results
+
+Cached results are shared with everyone who has access to the project and the data views used in the project.
+
+### What results are cached
+
+Analysis Workspace caches each query that runs, not every possible version of a project. When someone changes the query, such as by selecting an item from a panel drop-down menu or applying a segment, Analysis Workspace runs a new query. The new query loads at normal speed the first time. After that, its results are also cached.
+
+Caching a new query doesn't overwrite or invalidate results that are already cached. The original project view is cached along with other variations that people have run.
+
+>[!BEGINSHADEBOX]
+
+**Example scenario**
+
+Suppose a Global Campaign Performance project includes segments for different regions and is scheduled for delivery at 6:00 AM:
+
+| Time | Action | Load speed |
+|---|---|---|
+| 6:00 AM | Scheduled project delivery | Normal (results are cached for future use) |
+| 7:06 AM | User A opens the project | Fast |
+| 7:06 AM | User A applies the Americas segment | Normal (results are cached for future use) |
+| 8:01 AM | User B opens the project | Fast |
+| 8:01 AM | User B applies the Americas segment | Fast |
+| 8:01 AM | User B applies the EMEA segment | Normal (results are cached for future use) |
+
+>[!ENDSHADEBOX]
 
 ## Enable cached results for a project
 
-When you enable this option for a project:
+Anyone who can update project settings can enable cached results. This includes the project owner and anyone with the **[!UICONTROL Edit original]** role for the project. For more information about project roles, see [Share a specific project role](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).
 
-* The first time the project runs, Analysis Workspace runs the query as usual and caches the results. This happens when someone opens the project or when the project runs for a scheduled delivery.
-* Anyone who opens the same project within 12 hours sees the cached results load instantly, without waiting for a new query.
-* After 12 hours, the next person to open the project triggers a new query, which starts a new 12-hour window.
-
-For example, if a project is scheduled for delivery at 6:00 AM, the results are cached until 6:00 PM. The first person to open the project that day sees results load instantly.
-
-This setting is stored at the data view level, so the cached results are shared. If you share the project with someone else, they see the same results you saw, as long as they open it within the 12-hour window.
-
->[!NOTE]
->
->To see the latest results before the 12-hour window ends, refresh individual panels or the entire project, as described below.
-
-In the Workspace project where you want to enabled cached results for faster loading: 
+In the Workspace project where you want to enable cached results for faster loading:
 
 1. Go to **[!UICONTROL Projects]** > **[!UICONTROL Project info and settings]**.
 1. Select **[!UICONTROL Use cached results for faster loading]**.
@@ -56,22 +83,34 @@ In the Workspace project where you want to enabled cached results for faster loa
 
 ## View data timestamps on cached projects
 
-When a project is configured to use cached results, a timestamp displays at the top of the project and on each panel, showing when the results were cached:
+When a project is configured to use cached results, a timestamp displays at the top of the project, showing when the results were cached:
 
-* **[!UICONTROL Showing data from ] [_date_]**: All panels in the project show cached results from the date and time shown.
-* **[!UICONTROL Showing some data from ] [_date_]**: Some panels show cached results from the date and time shown, while others were refreshed more recently.
+* **[!UICONTROL Showing data from ] [_date and time_]**: All panels in the project show cached results from the date and time shown.
+* **[!UICONTROL Showing some data from ] [_date and time_]**: Some panels show cached results from the date and time shown, while others were refreshed more recently.
+
+Panels also display a timestamp, showing when the results were cached:
+
+* **[!UICONTROL Showing data from ] [_date and time_]**: The panel shows cached results from the date and time shown.
 
 ## Manually refresh results on cached projects
 
-You can manually refresh results any time during the 12-hour window in order to view the latest data.
+You can manually refresh results on a project any time during the 12-hour window in order to view the latest data. When you refresh the entire project, a new 12-hour window begins, and everyone who opens the project during that window sees the refreshed results.
 
-In the Workspace project where you want to view the latest data, do either of the following:
+In the Workspace project where you want to view the latest data, you can refresh results for the entire project or for a single panel.
 
-1. To load the latest results for a single panel only, select **[!UICONTROL Refresh]** next to a panel's timestamp. 
+### Refresh results for the entire project
 
-   **Note:** This option is not available during the alpha phase of release.
+To load the latest results for all panels and start a new 12-hour window:
 
-   Or
+1. Select **[!UICONTROL Refresh]** at the top of the project next to the project's timestamp.
 
-   To load the latest results for all panels and start a new 12-hour window, select **[!UICONTROL Refresh]** at the top of the project.
+### Refresh results for a single panel
+
+>[!NOTE]
+>
+>This option is not available during the alpha phase of release.
+
+To load the latest results for a single panel only:
+
+1. Select **[!UICONTROL Refresh]** next to a panel's timestamp.
 
