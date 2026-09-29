@@ -106,7 +106,7 @@ Settings include:
 
 Add this to the table above (second-to-last-row) when cached results releases: 
 
-- [Use cached results for faster loading](/help/analysis-workspace/build-workspace-project/cached-data.md) - When enabled, results load faster for 12 hours after someone first opens the project. Data continues to flow in the background. To load the latest results, refresh individual panels or the entire project. -
+- [Use cached results for faster loading](/help/analysis-workspace/build-workspace-project/cached-results.md) - When enabled, results load faster for 12 hours after someone first opens the project. Data continues to flow in the background. To load the latest results, refresh individual panels or the entire project. -
 
 -->
 

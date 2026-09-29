@@ -61,7 +61,7 @@ Caching a new query doesn't overwrite or invalidate results that are already cac
 Suppose a Global Campaign Performance project includes segments for different regions and is scheduled for delivery at 6:00 AM:
 
 | Time | Action | Load speed |
-|---|---|---|
+| --- | --- | --- |
 | 6:00 AM | Scheduled project delivery | Normal (results are cached for future use) |
 | 7:06 AM | User A opens the project | Fast |
 | 7:06 AM | User A applies the Americas segment | Normal (results are cached for future use) |
