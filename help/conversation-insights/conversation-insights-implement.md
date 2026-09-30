@@ -180,7 +180,7 @@ You need to set a value for `source` for each `prompt`, `response`, or `feedback
 | Value | Description |
 |---|---|
 | `end-user` | Human user input. |
-| `agent` | Agent input. | 
+| `agent` | Agent input. |
 | `bot` | Automated agent response. |
 | `canned-prompt` | Pre-defined/templated response. |
 | `concierge` | Human agent response. |
