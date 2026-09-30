@@ -200,6 +200,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Hotkeys](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
     + [Color palettes](../analysis-workspace/build-workspace-project/color-palettes.md)
     + [View density](../analysis-workspace/build-workspace-project/view-density.md)
+    + {hide-from-toc} [Use cached results](../analysis-workspace/build-workspace-project/cached-results.md)
     + [Debugger](../analysis-workspace/build-workspace-project/debugger.md)
   + Templates {#templates}
     + [Use templates](../analysis-workspace/templates/use-templates.md)
@@ -524,6 +525,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Data ingestion {#data-ingestion}
     + [Ingest and use Marketo Engage data](../use-cases/data-ingestion/marketo.md)
     + [Ingest and use Experience Platform audiences](../use-cases/data-ingestion/ingest-aep-segments.md)
+    + {hide-from-toc} [Ingest and use paid media data](/help/use-cases/data-ingestion/paid-media.md)
   + Data views {#data-views}
     + [Data views use cases](/help/use-cases/data-views/data-views-usecases.md)
     + [Use binding dimensions and metrics](/help/use-cases/data-views/binding-dimensions-metrics.md)
