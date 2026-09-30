@@ -35,7 +35,7 @@ The process of using alerts in Customer Journey Analytics is nearly identical to
 
 Because you can ingest various types of data into Adobe Experience Platform, not all data that can be included in an alert is practical for an hourly alert. Certain types of data cannot be reliably ingested and available within the constraints of an hour. 
 
-For more information, see [Data ingestion times vary](#data-ingestion-times-vary-in-customer-journey-analytics).
+For more information, see [Data ingestion times vary](#data-ingestion-times-vary).
 
 ## Data ingestion times vary
 
