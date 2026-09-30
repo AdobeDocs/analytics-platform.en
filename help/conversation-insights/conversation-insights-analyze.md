@@ -20,3 +20,27 @@ role_v2:
     internal-label: User
 ---
 # Analyze Conversation Insights
+
+## Simple analysis
+
+To analyze Conversation Insights you create or edit a project in Analysis Workspace and use one of the configured data views as the data view for one or more of the panels in your project.
+
++++ Example project
+
+![Basic sample project for Conversation Insights](assets/conversation-insights-analyze-sample-project-basic.png)
+
++++
+
+## Analyzing conversations at scale and in context
+
+To analyze conversations at scale and provide context for these conversations  within the full customer journey:
+
+* Combine your Conversation Insights events with other event datasets and additional profile and lookup datasets. Add these datasets to the connection that you selected for the Conversation Insights configuration.
+* Add additional components (metrics and dimensions) to the data views that you selected for the Conversation Insights configuration.
+* ...
+
++++ Example project
+
+To be determined.
+
++++ 
