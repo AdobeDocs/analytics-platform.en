@@ -93,21 +93,27 @@ When viewing cached results, you can see the latest data by [manually refreshing
 
 ### When cached results might not work well for a project
 
-You might leave cached results disabled on your project if you need to see current-day data and you expect any of the following kinds of  people using the project need to see any of the following types of information : any of the following are important to you:
+Some projects depend on results that reflect the latest data every time someone opens them. This is common for projects that rely heavily on same-day data or late-arriving data from the previous day.
 
-* **Seeing data from the current day**
+This can also be true for projects that use [lookup datasets](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) that are updated frequently.
+
+Leave cached results disabled on your project if most people who access the project need to see: 
+
+* **Data from the current day**
 
   If a project is cached at 7:00 AM, results don't include data that arrives after 7:00 AM until the cached results expire at 7:00 PM.
 
-* **Seeing late-arriving data right away**
+* **Late-arriving data right away**
 
   Late-arriving data has timestamps from an earlier time period but arrives after that period has passed. For example, [batch data](/help/data-ingestion/batch.md) from a call center might be uploaded the next day, or a mobile app might send events that it stored while offline. Cached results don't include this data until they expire.
 
-* **Seeing lookup dataset updates right away**
+* **Updated lookup values**
 
-  [Lookup datasets](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) are applied when a query runs. Cached results continue to show the previous lookup values, such as old product names, until they expire.
+  Cached results continue to show the previous lookup values (such as old product names) until the cached results expire or someone refreshes the project.
 
-If these needs come up only occasionally, you can still enable cached results and [refresh the project](#manually-refresh-results-on-cached-projects) whenever you need the latest data.
+>[!NOTE]
+>
+>If these needs come up only occasionally, you can still enable cached results and [refresh the project](#manually-refresh-results-on-cached-projects) whenever you need the latest data.
 
 ## Enable cached results for a project
 
@@ -115,7 +121,7 @@ Anyone who can update project settings can enable cached results. This includes 
 
 >[!IMPORTANT]
 >
->Cached results might not be a good fit if you need to see current-day data, late-arriving data, or lookup dataset updates right away. Before you enable this setting, review [When cached results might not be a good fit](#when-cached-results-might-not-be-a-good-fit).
+>Cached results might not be a good fit if you need to see current-day data, late-arriving data, or updated lookup values right away. Before you enable this setting, review [When cached results might not work well for a project](#when-cached-results-might-not-work-well-for-a-project).
 
 In the Workspace project where you want to enable cached results for near-instant loading:
 
