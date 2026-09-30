@@ -22,7 +22,7 @@ role_v2:
 # Create or edit configurations
 
 Conversation Insights enables you to analyze conversations from the agent experiences you offer to your customers. Those agent experiences can be based on large language models (LLM) or based on human conversations. For example, a chatbot interacting with a customer or call center transcripts. 
-Through Conversation Insights you are able to understand the impact of representatives on actual user outcomes.
+Through Conversation Insights you are able to understand the impact of agents on actual user outcomes.
 
 Through the Conversation Insights configuration interface you can quickly create or edit a configuration and the associated artifacts (connection, data views, and more).
 
@@ -110,7 +110,47 @@ For each configuration:
 
 ## Data view verification
 
-(Explain the metrics and dimensions you see from the relevant datasets)
+The data views you have configured in [Configuration steps](#configuration-steps), have **[!UICONTROL Conversation Insights]** as value for **[!UICONTROL Integrations]** in [Data views](/help/data-views/manage-dataviews.md).
+
+For each of the configured data views:
+
+* **Containers**: The [Containers tab](/help/data-views/create-dataview.md#containers) contains a new **[!UICONTROL Container name]**: **[!UICONTROL conversation]** with **[!UICONTROL Display name]**: **[!UICONTROL Container]** as an additional **[!UICONTROL System]** **[!UICONTROL Container type]**.
+* **Components**: You see additional schema field folders. For example: agentExperience and conversation. Additionally the following components are automatically added:
+
+   | Metrics | Schema data type | Schema path |
+   |---|---|---|
+   | Customer Feedbacks | String | eventType |
+   | Positive Sentiments | String | Derived Fields |
+   | Recommendations | String | eventType |
+   | Turns | String | eventType |
+
+   | Dimensions | Schema data type | Schema path |
+   |---|---|---|
+   | Agent ID | String | `agenticExperience.agents.agentID` |
+   | Agent Name | String | `agenticExperience.agents.name` |
+   | Concierge Name | String | `agenticExperience.name` |
+   | Concierge Version | String | `agenticExperience.version` |
+   | Conversation ID | String | `conversation.conversationID` |
+   | Conversation Name | String | `conversation.conversationName` |
+   | Conversation Signal Name | String | `conversation.signals.name` |
+   | Conversation Summary Boolean Value | Boolean | `conversation.signals.values.booleanValue` |
+   | Conversation Summary Confidence | Double | `conversation.signals.values.confidence` |
+   | Conversation Summary Metadata Key | String | `conversation.signals.values.metadata.key` |
+   | Conversation Summary Number Value | Double | `conversation.signals.values.numberValue` |
+   | Conversation Summary Qualifiers | String | `conversation.signals.values.qualifiers` |
+   | Conversation Tone Signals | String | `conversation.signals.attributes.tones.values` |
+   | Environment | String | `agenticExperience.environment` |
+   | Feedback Classification | String | Derived Fields |
+   | Feedback Rating Classification | String | `conversation.feedback.rating.classification` |
+   | Feedback Section Purpose | String | `conversation.feedback.raw.purpose` |
+   | Feedback Source | String | `conversation.feedback.source` |
+   | Phrase | String | `conversation.signals.attributes.subjects.values.phrase` |
+   | Response Raw Text | String | `conversation.response.raw.text` |
+   | Response Source | String | `conversation.response.source` |
+   | Sentiment Classification | String | Derived Fields |
+   | Skill Name | String | `agenticExperience.agents.skills.name` |
+   | Skill Version | String | `agenticExperience.agents.skills.version` |
+   | Value | String | `agenticExperience.agents.skills.parameters.value` |
 
 
 <!--
