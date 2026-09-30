@@ -52,7 +52,7 @@ After 12 hours, the cached results expire. The next time the project loads, whet
 
 Analysis Workspace caches the results of the project as it is originally configured, with its selected data views, applied segments, date ranges, panel drop-down selections, and so forth. Everyone who opens the project sees these cached results.
 
-If someone changes the project configuration, the results are updated, and [a new project variation is cached](#project-variations-are-cached-as-the-project-is-modified).
+If someone changes the project configuration while viewing the cached project, the results load normally (not instantly), and [a new project variation is cached](#project-variations-are-cached-as-the-project-is-modified).
 
 #### Project variations are cached as the project is modified
 
@@ -62,7 +62,7 @@ A new variation loads at normal speed the first time. After that, its results ar
 
 Consider the following:
 
-* Analysis Workspace caches each variation of a project that someone loads. It does not cache every possible variation of a project. 
+* Analysis Workspace caches each variation of a project that someone loads. It doesn't cache every possible variation of a project. 
 
 * Caching a new variation doesn't overwrite or invalidate results that are already cached. The original project is cached along with other variations that people have loaded.
 
@@ -76,19 +76,21 @@ Suppose a Global Campaign Performance project includes segments for different re
 | --- | --- | --- |
 | 6:00 AM | Scheduled project delivery | Normal (results are cached for future use) |
 | 7:06 AM | User A opens the project | Instant |
-| 7:06 AM | User A applies the Americas segment | Normal (results are cached for future use) |
+| 7:07 AM | User A applies the Americas segment | Normal (results are cached for future use) |
 | 8:01 AM | User B opens the project | Instant |
-| 8:01 AM | User B applies the Americas segment | Instant |
-| 8:01 AM | User B applies the EMEA segment | Normal (results are cached for future use) |
+| 8:05 AM | User B applies the Americas segment | Instant |
+| 8:12 AM | User B applies the EMEA segment | Normal (results are cached for future use) |
 
 >[!ENDSHADEBOX]
 
-### Changes that refresh cached results automatically
+### Changes that cause cached results to refresh with the next project load
 
 The following changes to a project's underlying configuration cause Analysis Workspace to refresh results the next time someone opens the project, even if the 12-hour window hasn't expired:
 
 * Changes to a component in the data view, such as editing a dimension or metric's [component settings](/help/data-views/component-settings/overview.md)
+
 * Changes to a [derived field](/help/data-views/derived-fields/derived-fields.md)
+
 * Changes to a segment definition used in the project
 
 Results load at normal speed and are then cached, which begins a new 12-hour window.
@@ -135,24 +137,27 @@ Anyone who can update project settings can enable cached results. This includes 
 >
 >Cached results might not be a good fit if you need to see current-day data, late-arriving data, or updated lookup values right away. Before you enable this setting, review [When to leave cached results disabled on a project](#when-to-leave-cached-results-disabled-on-a-project).
 
-In the Workspace project where you want to enable cached results for near-instant loading:
+In the Workspace project where you want to enable cached results for faster loading:
 
 1. Go to **[!UICONTROL Projects]** > **[!UICONTROL Project info and settings]**.
+
 1. Select **[!UICONTROL Use cached results for faster loading]**.
+
 1. Select **[!UICONTROL Save]**.
 
 ## View when cached results are shown in a project
 
 A timestamp displays at the top of the project when cached results are shown. The timestamp specifies whether all results are cached or only some results:
 
-* **[!UICONTROL Showing results from ] [_date and time_]**: All panels in the project show cached results from the date and time shown.
-* **[!UICONTROL Showing some results from ] [_date and time_]**: Some panels show cached results from the date and time shown, while others were refreshed more recently.
+* **[!UICONTROL Showing results from] [_date and time_]**: All panels in the project show cached results from the date and time shown.
+
+* **[!UICONTROL Showing some results from] [_date and time_]**: Some panels show cached results from the date and time shown, while others were refreshed more recently.
 
 ![Timestamp on cached project](assets/project-cache-timestamp.png)
 
 Panels also display a timestamp, showing when the results were cached:
 
-* **[!UICONTROL Showing results from ] [_date and time_]**: The panel shows cached results from the date and time shown.
+* **[!UICONTROL Showing results from] [_date and time_]**: The panel shows cached results from the date and time shown.
 
   >[!NOTE]
   >
@@ -180,5 +185,5 @@ To load the latest results for all panels and start a new 12-hour window:
 
 To load the latest results for a single panel only:
 
-1. Select **[!UICONTROL Refresh]** ![Refresh](/help/assets/icons/Refresh.svg) icon at the top of the project next to a panel's timestamp.
+1. Select the **[!UICONTROL Refresh]** ![Refresh](/help/assets/icons/Refresh.svg) icon next to a panel's timestamp.
 
