@@ -17,11 +17,15 @@ feature_v2:
     internal-label: Components
   - id: b3197353-f189-4932-8378-3f3bc40e6071
     internal-label: Data management
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
     internal-label: Exports
   - id: f24857a4-4b64-4b25-b237-d43026362144
     internal-label: BI extension
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -31,10 +35,10 @@ topic_v2:
 ---
 # Export full table
 
-This article outlines how the [!DNL Customer Journey Analytics BI extension] can be used to implement the following [data export use case](overview.md):
+This article outlines how the [!DNL Export full table] functionality can be used to implement the following [data export use case](overview.md):
 
-- Data Validation
-- Readiness for AI / ML
+* Data Validation
+* Readiness for AI / ML
 
 ## Introduction
 
@@ -44,6 +48,8 @@ Exporting data using [!DNL Customer Journey Analytics Full Table Export] allows 
 
 ## More information
 
-You can directly export the full content of any freeform table you create in Analysis Workspace to designated cloud destinations using the Export full table functionality. 
+To export the full content of any freeform table you create in Analysis Workspace directly to designated cloud destinations, use the Export full table functionality. 
+
+Export full table supports up to 10 dimensions and 10 metrics per report, and includes calculated metrics and segmentation. Depending on your license tier, you can export 3 million, 30 million, 150 million, or 300 million rows per export, exceeding the 50,000-row limit of other export methods. Supported destinations include Adobe Experience Platform Data Landing Zone, Google Cloud Platform, Microsoft Azure, Amazon S3, and Snowflake. See [Advantages of full table export](/help/analysis-workspace/export/export-cloud.md#advantages) for more information.
 
 For more information, see the detailed documentation on [Export Customer Journey Analytics reports to the cloud](/help/analysis-workspace/export/export-cloud.md).

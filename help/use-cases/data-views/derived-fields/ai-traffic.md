@@ -21,27 +21,32 @@ feature_v2:
     internal-label: Integrations
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
     internal-label: Data governance
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: e1471301-a189-438e-8d48-264a8db508a6
     internal-label: Data views
   - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
     internal-label: Derived fields
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-    internal-label: Implementation
+    internal-label: ''
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
-    internal-label: Artificial intelligence
+    internal-label: ''
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-    internal-label: Governance
+    internal-label: ''
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-    internal-label: Customer journeys
+    internal-label: ''
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-    internal-label: Data collection
+    internal-label: ''
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-    internal-label: Data management
+    internal-label: ''
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Report on LLM and AI-generated traffic
 
@@ -111,11 +116,9 @@ As of August 2025, the following specific signals can be identified for each of 
 <td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">Used when ChatGPT browses websites on behalf of users (legacy)</a></td>
 </tr>
 <tr>
-<td><strong>ChatGPT-User v2</strong></td>
-<td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ChatGPT-User/2.0; +<a href="https://openai.com/bot" target="_blank" rel="noopener nofollow noreferrer">https://openai.com/bot</a></code></td>
-<td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">ChatGPT's updated version for on-demand fetching and in-response lookups</a></td>
+<td><strong>OAI-AdsBot</strong></td>
+<td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-AdsBot/1.0; +<a href="https://openai.com/adsbot" target="_blank" rel="noopener nofoloow noreferrer">https://openai.com/adsbot</a></code></td>
 </tr>
-<tr>
 <td><strong>OAI-SearchBot</strong></td>
 <td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +<a href="https://openai.com/searchbot" target="_blank" rel="noopener nofollow noreferrer">https://openai.com/searchbot</a></code></td>
 <td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">ChatGPT's search-focused crawler for discovering content</a></td>

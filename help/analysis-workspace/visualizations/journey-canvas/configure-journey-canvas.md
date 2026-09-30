@@ -4,7 +4,7 @@ title: Configure A Journey Canvas Visualization
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-TQID: https://experienceleague.adobe.com/pC3wjv6Q7RHRfDfHq75CP2Lqd-HzN-s7iLZ9t4N4ZR0
+TQID: 'https://experienceleague.adobe.com/pC3wjv6Q7RHRfDfHq75CP2Lqd-HzN-s7iLZ9t4N4ZR0'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -15,11 +15,11 @@ feature_v2:
     internal-label: Components
 subfeature_v2:
   - id: aff2ef09-fc60-4018-9197-e2befd623064
-    internal-label: Anomaly detection, Anomaly detection (CJA)
+    internal-label: Anomaly detection
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
     internal-label: Audiences
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
@@ -28,6 +28,8 @@ subfeature_v2:
     internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
     internal-label: Calculated metrics
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -135,7 +137,7 @@ See [Journey canvas overview](/help/analysis-workspace/visualizations/journey-ca
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_compare"
 >title="Compare to"
->abstract="The date range used to compare current journey data against a prior period. When you select a comparison date range, each node in the journey shows the percent change between the current date range and the selected comparison date range, based on the primary metric. "
+>abstract="The date range used to compare current journey data against a prior period. When you select a comparison date range, each node, arrow, and fallout in the journey shows the percent change between the current date range and the selected comparison date range, based on the primary metric."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -155,7 +157,7 @@ To configure settings for the Journey canvas visualization:
    |---------|----------|
    | [!UICONTROL **Percentage value**] | The percentage value shown on each node in the journey.<p>![percentage value](assets/journey-canvas-percentage.png)</p> <p>Consider the following when configuring the percentage values shown on nodes in the journey:</p><ul><li>A percentage is shown on each node for the primary metric. A percentage is also shown for the secondary metric if one is configured. (For more information about the primary and secondary metric settings, see [Begin building a Journey canvas visualization](#begin-building-a-journey-canvas-visualization).)</li><li>Percentages include all people or sessions that are included in the data view within the panel's date range. Whether _people_ or _sessions_ is used depends on the container setting. (For more information about the container setting, see [Begin building a Journey canvas visualization](#begin-building-a-journey-canvas-visualization).)</li></ul> <p>Choose from the following options:</p> <ul><li>[!UICONTROL **Percent of start node**]: Calculates the percentages shown on each node in relation to the start node. Percentages are based on the primary and secondary metric that you selected. <p>A _start node_ is a node that has no connected nodes preceding it.</p><p>A journey can contain multiple start nodes. However, [!UICONTROL **Percent of total**] is used if the journey contains 2 or more start nodes that lead to a common node. If you want to use [!UICONTROL **Percent of start node**], update the journey so that each node in the journey can be traced back to a single start node.</p></li><li>[!UICONTROL **Percent of previous node**]: Calculates the percentages shown on each node in relation to the previous node. Percentages are based on the primary and secondary metric that you selected.</li><li>[!UICONTROL **Percent of total**]: Calculates the percentages shown on each node in relation to all data in the data view. Percentages are based on the primary and secondary metric that you selected.</li></ul> |
    | [!UICONTROL **Arrow settings**] | The arrows that appear between nodes in Journey canvas can be configured to show custom labels and values. <p>![arrow settings](assets/journey-canvas-arrow-settings.png)</p><p>_Labels_ are custom names that appear on arrows. Only a single label is shown on a given arrow. Labels can be any of the following, and are shown in this order of preference:</p><ol><li>A custom name added from Journey canvas (as described in [Add or update a label on an arrow](#add-or-update-a-label-on-an-arrow))</li><li>A Journey Optimizer label</li><li>A Journey Optimizer condition</li></ol><p>_Values_ are the numbers and percentages that appear on arrows, and they indicate the people or sessions who moved from one node to the next node in the journey. (In other words, those who did not fall out of the journey at a given step.) </p><p>The following options are available for journeys that did not originate from Journey Optimizer and for Journey Optimizer journeys that have not been significantly modified in Journey canvas: (Significant modifications include adding or removing nodes, adding or removing arrows, or changing the components of a node.)</p><ul><li>[!UICONTROL **No labels**]: No labels are shown on arrows in the journey. </br> This option is available only if the journey has been modified in </li><li>[!UICONTROL **Labels only**]: Labels are shown on arrows in the journey.</li></ul><p>The following options are available for Journey Optimizer journeys that have been significantly modified in Journey canvas: (Significant modifications include adding or removing nodes, adding or removing arrows, or changing the components of a node.)(**Note**: These options display only when Journey Optimizer data is detected in the same data view that is selected in the Analysis Workspace panel where you are adding the visualization. For information about changing the data view on a panel in Analysis Workspace, see [Analysis Workspace overview](/help/analysis-workspace/home.md).)</p><ul><li>[!UICONTROL **No labels or values**]: No labels or values are shown on arrows in the journey.</li><li>[!UICONTROL **Labels only**]: Only labels are shown on arrows in the journey. Values are not shown.</li><li>[!UICONTROL **Values only**]: Only values are shown on arrows in the journey. Labels are not shown.</li><li>[!UICONTROL **Values and labels**]: Both labels and values are shown on arrows in the journey.</li></ul>  |
-   | [!UICONTROL **Compare to**] | The date range used to compare current journey data against a prior period. You can choose any of the following date ranges for comparison:<ul><li>**[!UICONTROL 4 weeks prior]**</li><li>**[!UICONTROL 2 quarters prior]**</li><li>**[!UICONTROL 1 year prior]**</li><li>**[!UICONTROL Custom date range]**</li></ul><p>When you select a comparison date range, each node in the journey shows the percent change between the current date range and the selected comparison date range, based on the primary metric. This lets you identify whether your journey is performing better or worse compared to a previous time period.</p> |
+   | [!UICONTROL **Compare to**] | The date range used to compare current journey data against a prior period. You can choose any of the following date ranges for comparison:<ul><li>**[!UICONTROL 4 weeks prior]**</li><li>**[!UICONTROL 2 quarters prior]**</li><li>**[!UICONTROL 1 year prior]**</li><li>**[!UICONTROL Custom date range]**</li></ul><p>When you select a comparison date range, each node, arrow, and fallout in the journey shows the percent change between the current date range and the selected comparison date range, based on the primary metric. This lets you identify whether your journey is performing better or worse compared to a previous time period.</p> |
    | [!UICONTROL **Show fallout**] | Fallout data shows a percentage and number falling out of each node of the journey. Fallout data is based on the metric associated with the journey's container settings; it is not based on the primary or secondary metric. <p>![fallout](assets/journey-canvas-fallout.png)</p><p>By default, the container is _Person_, so the metric used for fallout data is _People_. If the container is changed to _Session_, the metric used for fallout data is _Sessions_, and so on.</p><p>For example, with _Person_ as the container setting, fallout shows the percentage and number of people on each node of the journey who never arrived at any of the immediate next nodes. They might have performed other actions on the site, but they did not meet the criteria defined by any of the nodes that immediately follow.</p> <p>For more information about the Journey canvas container setting, see [Begin building a Journey canvas visualization](#begin-building-a-journey-canvas-visualization). |
    | **Controls** | The following controls are available in the upper-right corner of the canvas:<ul><li>**Fit screen** ![fit screen icon](assets/fill-screen-icon.png): Adjusts current zoom and pan settings to fill the screen with the full visualization.</li><li>**Organize** ![organize icon](assets/organize.svg): Rearranges nodes to minimize crossing arrows and to optimize spacing, based on node connections. </li><li>**Zoom in** ![zoom in icon](assets/zoom-in-icon.png): Enlarges specific areas of the visualization.<p>You can also use mouse controls, such as pinching on a trackpad.</li><li>**Zoom out** ![zoom out icon](assets/zoom-out-icon.png): Shrinks the visualization to allow more room on the canvas.<p>You can also use mouse controls, such as pinching on a trackpad.</p></li></ul><p>To pan across the canvas after zooming in or out, click your mouse and drag to the desired location.</p> |
 

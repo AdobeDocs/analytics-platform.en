@@ -15,9 +15,13 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: b3197353-f189-4932-8378-3f3bc40e6071
     internal-label: Data management
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: f24857a4-4b64-4b25-b237-d43026362144
     internal-label: BI extension
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -31,7 +35,7 @@ topic_v2:
 
 This article outlines how the [!DNL Customer Journey Analytics BI extension] can be used to implement the following [data export use case](overview.md):
 
-- Data Lake, Data Warehouse or BI tools
+* Data Lake, Data Warehouse or BI tools
 
 ## Introduction
 
@@ -41,6 +45,8 @@ Exporting data using the [!DNL Customer Journey Analytics BI extension] allows y
 
 ## More information
 
-The [!DNL Customer Journey Analytics BI extension] enables SQL access to the [data views](/help/data-views/data-views.md) that you have defined in Customer Journey Analytics. Your data engineers and analysts might be more familiar with Power BI, Tableau, or other business intelligence and visualization tools (further referred to as BI tools). They can now create reporting and dashboards based on the same data views that Customer Journey Analytics users are using when creating their Analysis Workspace projects.
+The [!DNL Customer Journey Analytics BI extension] enables SQL access to the [data views](/help/data-views/data-views.md) that you have defined in Customer Journey Analytics. Your data engineers and analysts are more familiar with Power BI, Tableau, or other business intelligence and visualization tools (further referred to as BI tools). They can now create reporting and dashboards based on the same data views that Customer Journey Analytics users are using when creating their Analysis Workspace projects.
+
+The BI extension returns aggregated data, not raw event-level rows. By default, each query returns 50 rows for a 30-day date range, but you can override the row limit to a maximum of 50,000 rows and the date range to your own custom range. See [Defaults and limitations](../../data-views/bi-extension.md#defaults-and-limitations) for more information.
 
 For more information, see the detailed documentation on the [BI extension](../../data-views/bi-extension.md).

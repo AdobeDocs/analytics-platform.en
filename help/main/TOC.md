@@ -141,11 +141,11 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Analyze](/help/connections/audience-analysis/analyze-audiences.md)
     + [Use cases](/help/connections/audience-analysis/audience-analysis-use-cases.md)
   + Consent reporting and filtering {#consent-reporting-filtering}
-    + {hide-from-toc} [Overview](/help/connections/consent-reporting-filtering/consent-overview.md)
-    + {hide-from-toc} [Configure](/help/connections/consent-reporting-filtering/consent-configure.md)
-    + {hide-from-toc} [Manage](/help/connections/consent-reporting-filtering/consent-manage.md)
-    + {hide-from-toc} [Analyze](/help/connections/consent-reporting-filtering/consent-analyze.md)
-    + {hide-from-toc} [Use cases](/help/connections/consent-reporting-filtering/consent-use-cases.md)
+    + [Overview](/help/connections/consent-reporting-filtering/consent-overview.md)
+    + [Configure](/help/connections/consent-reporting-filtering/consent-configure.md)
+    + [Manage](/help/connections/consent-reporting-filtering/consent-manage.md)
+    + [Analyze](/help/connections/consent-reporting-filtering/consent-analyze.md)
+    + [Use cases](/help/connections/consent-reporting-filtering/consent-use-cases.md)
 + Data Views {#cja-dataviews}
   + [Data views overview](../data-views/data-views.md)
   + [Create or edit a data view](../data-views/create-dataview.md)
@@ -200,6 +200,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Hotkeys](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
     + [Color palettes](../analysis-workspace/build-workspace-project/color-palettes.md)
     + [View density](../analysis-workspace/build-workspace-project/view-density.md)
+    + {hide-from-toc} [Use cached results](../analysis-workspace/build-workspace-project/cached-results.md)
     + [Debugger](../analysis-workspace/build-workspace-project/debugger.md)
   + Templates {#templates}
     + [Use templates](../analysis-workspace/templates/use-templates.md)
@@ -336,8 +337,12 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [FAQ](../guided-analysis/faq.md)
 
 + Conversation insights {#conversation-insights}
-  + {hide-from-toc} [Overview](/help/conversatiion-insights/conversation-insights.md)
-  + {hide-from-toc} [Configuration](/help/conversatiion-insights/config/guided.md) 
+  + {hide-from-toc} [Overview](/help/conversation-insights/conversation-insights-overview.md)
+  + {hide-from-toc} [Configure](/help/conversation-insights/conversation-insights-configure.md)
+  + {hide-from-toc} [Manage](/help/conversation-insights/conversation-insights-manage.md)
+  + {hide-from-toc} [Implement](/help/conversation-insights/conversation-insights-implement.md)
+  + {hide-from-toc} [Analyze](/help/conversation-insights/conversation-insights-analyze.md)
+
 
 + Components {#cja-components}
   + [Overview](../components/overview.md)
@@ -420,13 +425,15 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Manage export logs](/help/components/exports/manage-export-logs.md)
     + [Troubleshoot exports](/help/components/exports/troubleshoot-exports.md)
     + Data feeds {#cja-data-feeds}
-      + {hide-from-toc} [Data feed overview](/help/components/exports/cja-data-feeds/data-feed-overview.md)
+      + {hide-from-toc} [Overview](/help/components/exports/cja-data-feeds/data-feed-overview.md)
       + {hide-from-toc} [Compare Adobe Analytics data feeds](/help/components/exports/cja-data-feeds/df-comparison.md)
       + {hide-from-toc} [Compare Workspace and data feeds](/help/components/exports/cja-data-feeds/df-comparison-workspace.md)
       + {hide-from-toc} [Prepare to map columns](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc} [Map columns](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
-      + {hide-from-toc} [Create a data feed](/help/components/exports/cja-data-feeds/create-feed.md)
+      + {hide-from-toc} [Create data feeds](/help/components/exports/cja-data-feeds/create-feed.md)
       + {hide-from-toc} [Segmentation in data feeds](/help/components/exports/cja-data-feeds/df-segmentation.md)
+      + {hide-from-toc} [Apply data transformations](/help/components/exports/cja-data-feeds/df-data-transformations.md)
+      + {hide-from-toc} [Sub-events in data feeds](/help/components/exports/cja-data-feeds/df-sub-event.md)
   + Data Dictionary {#data-dictionary}
     + [Overview](../components/data-dictionary/data-dictionary-overview.md)
     + [View component information in the Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
@@ -502,6 +509,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Build product value](/help/use-cases/b2b/b2b-edition/build-product-value.md)
   + Complex data {#complex-data}
     + [Use arrays of objects](../use-cases/object-arrays.md)
+    + [Handling No value](../use-cases/data-views/no-value.md)
   + Cross-channel data {#cross-channel}
     + [Analyze data across channels](../use-cases/cross-channel/cross-channel.md)
     + [Import call center and web data](../use-cases/cross-channel/call-center.md)
@@ -511,9 +519,13 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Export datasets](../use-cases/data-export/export-datasets.md)
     + [Export full table](../use-cases/data-export/export-full-table.md)
     + [Query Service and Export datasets](../use-cases/data-export/queryservice-export-datasets.md)
+    + [Workspace export](../use-cases/data-export/workspace-export.md)
+    + [Report Builder](../use-cases/data-export/report-builder.md)
+    + [Reporting API](../use-cases/data-export/reporting-api.md)
   + Data ingestion {#data-ingestion}
     + [Ingest and use Marketo Engage data](../use-cases/data-ingestion/marketo.md)
     + [Ingest and use Experience Platform audiences](../use-cases/data-ingestion/ingest-aep-segments.md)
+    + {hide-from-toc} [Ingest and use paid media data](/help/use-cases/data-ingestion/paid-media.md)
   + Data views {#data-views}
     + [Data views use cases](/help/use-cases/data-views/data-views-usecases.md)
     + [Use binding dimensions and metrics](/help/use-cases/data-views/binding-dimensions-metrics.md)

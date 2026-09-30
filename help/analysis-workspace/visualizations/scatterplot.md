@@ -4,7 +4,7 @@ description: Learn how to create and interpret scatter visualizations in Analysi
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
 role: User
-TQID: https://experienceleague.adobe.com/qkpKnRbGfAQ2dQSw06QEYlBZ-dycI1NyGtvxC89oidE
+TQID: 'https://experienceleague.adobe.com/qkpKnRbGfAQ2dQSw06QEYlBZ-dycI1NyGtvxC89oidE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -16,6 +16,8 @@ feature_v2:
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

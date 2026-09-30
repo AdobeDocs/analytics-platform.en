@@ -18,6 +18,8 @@ feature_v2:
 subfeature_v2:
   - id: c91f8bd2-df97-4c6a-afcd-f1cde8221302
     internal-label: Attribution
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

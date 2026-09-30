@@ -19,6 +19,8 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
@@ -31,13 +33,17 @@ topic_v2:
 
 Data feeds in both Customer Journey Analytics and Adobe Analytics allow you to export raw data to third-party platforms.
 
-If you previously used data feeds in Adobe Analytics, use the following information to understand differences in available features and concepts:
+If you previously used data feeds in Adobe Analytics, use the following information to understand differences in available features and concepts.
+
+For a comparison of data feeds against other Customer Journey Analytics export methods, such as Full Table Export, see [Analytics product comparison](/help/getting-started/analytics-product-comparison.md).
 
 ## Features available only in Customer Journey Analytics data feeds
 
 The following capabilities are available in Customer Journey Analytics data feeds but are not available in Adobe Analytics data feeds:
 
 * **Derived fields**: Custom components built from rule-based transformations that can be included in your data feed schema. <!-- add benefit -->
+
+* **Component settings**: Data view component settings, such as persistence, metric deduplication, and value bucketing, can transform a component's value directly in your data feed output, without requiring SQL.
 
 * **Stitching**: Cross-device identity resolution that links events across devices to a single person. 
 
@@ -78,12 +84,14 @@ The following table compares key concepts and configuration options across Custo
 | **Schema**<br/>The data feed schema determines which columns are available to include in a data feed. | The data feed schema is based on the data view configuration.  The components that are available to include in the data feed schema are a subset of the components available in the data view configuration. | A pre-defined, static list of ~1,100+ variables. Many columns are exported as **pre- and post-processed pairs** (for example, `eVar1` / `post_eVar1`), which accounts for much of the column count. |
 | **Data feed builder**<br/>The interface used to configure which columns are included in a data feed. | Uses a component rail with the same named dimensions and metrics available in the data view, matching the Analysis Workspace experience. | Uses a flat list of raw variable names (such as `eVar1`, `prop5`) selected from a pre-defined set of ~1,100+ columns. Components are not named or described beyond their variable identifier. |
 | **Derived fields**<br/>Custom components defined using rule-based transformations applied at report time. | Supported. Derived field components can be included in the data feed schema alongside standard dimensions and metrics. | Not supported. |
+| **Component settings**<br/>Data view component settings, such as persistence, metric deduplication, and value bucketing, that transform a component's value at report time. | Supported for most settings. These settings apply to data feed output the same way they apply in Analysis Workspace. | Not supported. |
 | **Component updates**<br/>Whether changes to component configuration are reflected in past and future data feed output. | Changes to components in the data view (such as renaming or removing a dimension) propagate to future data feeds and are also reflected in backfills. | Changes to components in the report suite apply only to data that is collected in the future. |
 | **Lookups**<br/>Lookup datasets in Customer Journey Analytics are the equivalent of classifications in Adobe Analytics. | All lookups are embedded directly in the data. | Classifications are not included with Adobe analytics data feeds. |
 | **Session definition**<br/>How a visit or session boundary is defined, which affects how events are grouped and attributed. | Defined in the data view. | Defined at collection time. |
 | **Segmentation**<br/>The ability to filter data feed output using segments. | Segments applied to the data view are automatically inherited by the data feed. Additional segments can also be applied directly to an individual data feed. For more information, see [Segmentation in data feeds](/help/components/exports/cja-data-feeds/df-segmentation.md). | Not supported. Data feeds export all collected data without segment filtering. |
 | **Calculated metrics**<br/>Custom metrics that you can create from existing metrics. | Not supported | Not supported |
 | **Persistence model**<br/>How or whether dimension values persist from one event to the next. | Flexible. Persistence settings from the data view (allocation and expiration) are applied at report time when the feed is generated. Supports all allocation settings available in a data view: **Original**, **Most Recent**, **All**, **First Known**, and **Last Known**. | Only **most recent (last touch)** and **original value (first touch)** attribution models are represented. Linear allocation is handled the same as last touch. |
+| **Sub-event handling**<br/>How sub-events are represented in data feed output. | Represented in a single row, but the relational hierarchy is preserved. For more information, see [Sub-events in data feeds](/help/components/exports/cja-data-feeds/df-sub-event.md). | Represented in a single row as a flattened, delimited string. Parsing the string requires custom logic. |
 | **Output file format**<br/>The format used for data feed output files delivered to your cloud destination. | Parquet<p>Natively supports complex nested and structured data. Fields such as `post_product_list` are represented as structured arrays/nested objects. </p><p>Requires a Parquet-aware tool to read, such as BigQuery, Snowflake, or Apache Spark.</p><p>The schema structure is embedded within the output file.</p> | TSV<p>Flat, human-readable rows. Does not natively support structured data; complex fields such as product lists must be encoded as proprietary delimited strings requiring custom parsing logic.</p> |
 | **Output file paths**<br/>The directory structure used for delivered output files. | Uses **Hive-style partition paths** (for example, `year=2024/month=01/day=15/`), enabling efficient partition pruning when querying data in data lake environments such as Databricks or Apache Spark. | Uses a flat directory structure. Hive-style paths are not supported. |
 | **Delivery destinations**<br/>The cloud storage locations where data feed output files can be sent. | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform. | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform. <p>Also supports **SFTP**.</p> |

@@ -41,8 +41,8 @@ Content Analytics adds the following categories of components (dimensions, (calc
 * [Asset metadata](#asset-metadata)
 * [Asset attributes](#asset-attributes)
 * [Asset events](#asset-events)
-* [Paid Media](#paid-media)
 * [Calculated metrics](#calculated-metrics)
+* [Paid Media](#paid-media)
 
 In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/ML generated attribute / value pair. 
 
@@ -161,11 +161,23 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/
 {style="table-layout:fixed"}
 -->
 
+
+## Calculated metrics
+
+| Title | Description | Type |
+|---|---|---|
+| Asset Click-Trough Rate | Asset Clicks / Asset Views | Calculated metric |
+| Experience Click-Through Rate | Experience Clicks / Experience Views | Calculated metric |
+
+{style="table-layout:fixed"}
+
+
+
 ## Paid Media
 
 These components are added to a data view when the **Paid Media** channel is enabled through an [Adobe Experience Platform Paid Media source connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home) (for example, Meta Ads or Google Ads). They let you report on paid media entities, creative, and spend alongside your web and mobile content.
 
-The AI-generated **Asset attributes** and **Experience attributes** described above are also available for paid media creatives — the same featurization runs across the Web, Mobile, and Paid Media channels.
+The AI-generated [Asset attributes](#asset-attributes) and [Experience attributes](#experience-attributes) described above are also available for paid media creatives. The same featurization runs across the Web, Mobile, and Paid Media channels.
 
 ### Paid Media dimensions
 
@@ -269,14 +281,3 @@ The AI-generated **Asset attributes** and **Experience attributes** described ab
 | Average Order Value | Total order value divided by purchases. | Calculated metric |
 
 {style="table-layout:fixed"}
-
-
-## Calculated metrics
-
-| Title | Description | Type |
-|---|---|---|
-| Asset Click-Trough Rate | Asset Clicks / Asset Views | Calculated metric |
-| Experience Click-Through Rate | Experience Clicks / Experience Views | Calculated metric |
-
-{style="table-layout:fixed"}
-

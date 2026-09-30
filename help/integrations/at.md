@@ -4,7 +4,7 @@ description: Integrate Adobe Target with Customer Journey Analytics
 feature: Experience Platform Integration
 role: User
 exl-id: 0b52af5b-b65c-4929-9ca3-547a640936f3
-TQID: https://experienceleague.adobe.com/7Q8q-e58PrmANht9DpOXuNFImYC48ELhrXPRhBG6gYQ
+TQID: 'https://experienceleague.adobe.com/7Q8q-e58PrmANht9DpOXuNFImYC48ELhrXPRhBG6gYQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -13,9 +13,13 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
     internal-label: Components
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
     internal-label: Dimensions
+  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -29,9 +33,9 @@ topic_v2:
 ---
 # Target reporting
 
-Target Reporting in Customer Journey Analytics enables you to measure and report on Adobe Target activities directly in Customer Journey Analytics. This functionality is comparable to what is being performed in Adobe Analytics (AA) via Analytics for Target (A4T), but with the connectivity to Adobe Experience Platform (AEP). 
+Target Reporting in Customer Journey Analytics enables you to measure and report on Adobe Target activities directly in Customer Journey Analytics. This functionality is comparable to what is performed in Adobe Analytics (AA) via Analytics for Target (A4T), but with the connectivity to Adobe Experience Platform (AEP). After you create a Target activity that uses Customer Journey Analytics as the reporting source, a lookup dataset named Adobe Target Classification Events is created in the corresponding sandbox. This lookup dataset enriches your reporting by classifying Target activity IDs with their user-friendly attributes (such as Activity Name and Experience Name).
 
-By adding the Target Classification lookup dataset (that is available by default in Experience Platform) into a Customer Journey Analytics Connection, users now have proper exposure to Target reporting tools, Target order attribution, and other features. With only some minor preparation and adjustments made within the Customer Journey Analytics data view, these activities can be made immediately available for any user who wishes to send Target data directly into CJA. 
+By adding this lookup dataset into a Customer Journey Analytics Connection, users now have proper exposure to Target reporting tools, Target order attribution, and other features. With only some minor preparation and adjustments made within the Customer Journey Analytics data view, these activities can be made immediately available for any user who wishes to send Target data directly into Customer Journey Analytics. 
 
 ## Primary benefits
 
@@ -43,7 +47,7 @@ By adding the Target Classification lookup dataset (that is available by default
 
 Your Target activity must [use Customer Journey Analytics as the reporting source](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja).
 
-Once the Target Classification Event Dataset has been added to a connection, there are a few minor adjustments to be made within the data view once these components have been added as dimensions, including:
+After the Adobe Target Classification Events lookup dataset is added to a connection, there are a few minor adjustments to make within the data view after these components are added as dimensions, including:
 
 * Setting persistence to be similar to how it is tracked in Target (check with a Target consultant or the customer to ensure proper settings).
 
