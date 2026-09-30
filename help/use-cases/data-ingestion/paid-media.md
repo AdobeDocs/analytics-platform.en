@@ -167,3 +167,8 @@ Use the following checklist to validate the implementation.
 * Confirm that calculated metrics are defined for the ratios that your organization uses.
 * Confirm that Workspace reporting aligns with the source ad-platform reporting.
 
+
+>[!MORELIKETHIS]
+>
+>[Meta Ads source connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads)
+>
