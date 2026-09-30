@@ -177,11 +177,11 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/
 
 These components are added to a data view when the **Paid Media** channel is enabled through an [Adobe Experience Platform Paid Media source connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home). They let you report on paid media entities, creative, and spend alongside your web and mobile content. Availability and populated values depend on the advertising network and reporting grain.
 
-The AI-generated [Asset attributes](#asset-attributes) and [Experience attributes](#experience-attributes) described above are also available for paid media creatives. The same featurization runs across the Web, Mobile, and Paid Media channels. Paid media identifiers also appear in the shared Asset Id and Experience Id components; the Channel component identifies `Paid Media`.
+The AI-generated [Asset attributes](#asset-attributes) and [Experience attributes](#experience-attributes) described above are also available for paid media creatives. The same featurization runs across the Web, Mobile, and Paid Media channels.
 
 ### Paid Media dimensions
 
-Entity names, statuses, and detail attributes are available as dimensions based on derived fields. Grain-specific members can be grouped under a shared component, such as Asset Orientation.
+The dimensions below include names, statuses, and other details for ad accounts, campaigns, ad groups, ads, experiences, and assets.
 
 | Title | Description | Type |
 |---|---|---|
