@@ -175,7 +175,7 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/
 
 ## Paid Media
 
-These components are added to a data view when the **Paid Media** channel is enabled through an [Adobe Experience Platform Paid Media source connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home). They let you report on paid media entities, creative, and spend alongside your web and mobile content. Availability and populated values depend on the advertising network and reporting grain.
+These components are added to a data view when the **Paid Media** channel is enabled through an [Adobe Experience Platform Paid Media source connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home). They let you report on paid media campaigns, creative, and spend alongside your web and mobile content. Availability and populated values depend on the advertising network and reporting grain.
 
 The AI-generated [Asset attributes](#asset-attributes) and [Experience attributes](#experience-attributes) described above are also available for paid media creatives. The same featurization runs across the Web, Mobile, and Paid Media channels.
 
