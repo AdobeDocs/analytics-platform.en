@@ -52,7 +52,7 @@ After 12 hours, the cached results expire. The next time the project loads, whet
 
 Analysis Workspace caches the results of the project as it is originally configured, with its selected data views, applied segments, date ranges, panel drop-down selections, and so forth. Everyone who opens the project sees these cached results.
 
-If someone changes the project configuration, the results are updated, and [a new project variation is cached](#project-variations-are-cached-as-the-project-is-modified).
+If someone changes the project configuration while viewing the cached project, the results load normally (not instantly), and [a new project variation is cached](#project-variations-are-cached-as-the-project-is-modified).
 
 #### Project variations are cached as the project is modified
 
@@ -76,14 +76,14 @@ Suppose a Global Campaign Performance project includes segments for different re
 | --- | --- | --- |
 | 6:00 AM | Scheduled project delivery | Normal (results are cached for future use) |
 | 7:06 AM | User A opens the project | Instant |
-| 7:06 AM | User A applies the Americas segment | Normal (results are cached for future use) |
+| 7:07 AM | User A applies the Americas segment | Normal (results are cached for future use) |
 | 8:01 AM | User B opens the project | Instant |
-| 8:01 AM | User B applies the Americas segment | Instant |
-| 8:01 AM | User B applies the EMEA segment | Normal (results are cached for future use) |
+| 8:05 AM | User B applies the Americas segment | Instant |
+| 8:012 AM | User B applies the EMEA segment | Normal (results are cached for future use) |
 
 >[!ENDSHADEBOX]
 
-### Changes that refresh cached results automatically
+### Changes that cause cached results to refresh with the next project load
 
 The following changes to a project's underlying configuration cause Analysis Workspace to refresh results the next time someone opens the project, even if the 12-hour window hasn't expired:
 
