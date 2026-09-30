@@ -93,11 +93,9 @@ When viewing cached results, you can see the latest data by [manually refreshing
 
 ### When cached results might not work well for a project
 
-Some projects depend on results that reflect the latest data every time someone opens them. This is common for projects that rely heavily on same-day data or late-arriving data from the previous day.
+Some projects depend on results that reflect the latest data every time someone opens them. This is common for projects that rely heavily on same-day data, late-arriving data, or [lookup datasets](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) that are updated frequently.
 
-This can also be true for projects that use [lookup datasets](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) that are updated frequently.
-
-Leave cached results disabled on your project if most people who access the project need to see: 
+Leave cached results disabled on your project if most people who access the project need to see:
 
 * **Data from the current day**
 
@@ -109,11 +107,11 @@ Leave cached results disabled on your project if most people who access the proj
 
 * **Updated lookup values**
 
-  Cached results continue to show the previous lookup values (such as old product names) until the cached results expire or someone refreshes the project.
+  Cached results continue to show the previous lookup values, such as old product names, until they expire.
 
 >[!NOTE]
 >
->If these needs come up only occasionally, you can still enable cached results and [refresh the project](#manually-refresh-results-on-cached-projects) whenever you need the latest data.
+>If these needs come up only occasionally, enable cached results and [refresh the project manually](#manually-refresh-results-on-cached-projects) when you need the latest data.
 
 ## Enable cached results for a project
 
