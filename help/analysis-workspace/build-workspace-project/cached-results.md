@@ -1,6 +1,6 @@
 ---
 title: Use Cached Results for Faster Loading in Analysis Workspace
-description: Enable a project setting in Analysis Workspace that caches query results for 12 hours so projects load instantly. Refresh anytime to see the latest data.
+description: Enable a project setting in Analysis Workspace that caches results for 12 hours so projects load instantly. Refresh anytime to see the latest data.
 feature: Workspace Basics
 hide: true
 exl-id: 6d7b9d34-ec7e-45ec-98cc-0fd4cbfd43d3
@@ -26,31 +26,45 @@ role_v2:
 >title="Use cached results for faster loading"
 >abstract="When enabled, results load instantly for 12 hours after a project is first opened by a user or delivered by a schedule. Anyone who opens the project during that time sees the same results, even though data continues to flow in the background. To load the latest results, refresh individual panels or the entire project."
 
+{{release-limited-testing}}
+
 You can configure Analysis Workspace projects to show cached results for a 12-hour window, allowing results to load instantly for anyone who opens the project after it is initially loaded.
 
 Projects can be initially loaded by a user who opens the project or by a scheduled project delivery.
-
->[!NOTE]
->
->Only the query results are cached. Underlying event data continues to flow into Customer Journey Analytics as usual.
->
->To see the latest data before cached results expire, you can [manually refresh the results](#manually-refresh-results-on-cached-projects).
 
 ## Understand cached results in a project
 
 ### When results are cached
 
-The first time the project runs, Analysis Workspace runs the query as usual and caches the results for a 12-hour window. This happens when someone opens the project or when the project runs for a scheduled delivery. For example, if a project is scheduled for delivery at 6:00 AM, the results are cached until 6:00 PM. Everyone who opens the project between 6:00 AM and 6:00 PM sees results load instantly, including the first person to open it.
+The first time the project loads, results load at normal speed, and Analysis Workspace caches them for a 12-hour window. This happens when:
 
-After 12 hours, the cached results expire. The next query on the project, whether a user opens it or a scheduled delivery runs, loads at normal speed and starts a new 12-hour window.
+* Someone opens the project
+
+* The project runs for a scheduled delivery 
+
+For example, if a project is scheduled for delivery at 6:00 AM, the results are cached until 6:00 PM. Everyone who opens the project between 6:00 AM and 6:00 PM sees results load instantly, including the first person to open it.
+
+After 12 hours, the cached results expire. The next time the project loads, whether a user opens it or a scheduled delivery runs, results load at normal speed and a new 12-hour window starts.
 
 ### What results are cached
 
-Analysis Workspace caches each query that runs, not every possible version of a project. 
+#### The project is initially cached with its original configuration
 
-When someone changes the query in a project, such as by selecting an item from a panel drop-down menu or applying a segment, Analysis Workspace runs a new query. The new query loads at normal speed the first time. After that, its results are also cached, so people running the same query see results instantly.
+Analysis Workspace caches the results of the project as it is originally configured, with its selected data views, applied segments, date ranges, panel drop-down selections, and so forth. Everyone who opens the project sees these cached results.
 
-Caching a new query doesn't overwrite or invalidate results that are already cached. The original project view is cached along with other variations that people have run.
+If someone changes the project configuration, the results are updated, and [a new project variation is cached](#project-variations-are-cached-as-the-project-is-modified).
+
+#### Project variations are cached as the project is modified
+
+A new variation of the project is created when someone changes its original configuration, such as by selecting an item from a panel drop-down menu, applying a segment, changing a date range, or changing the selected data view. 
+
+A new variation loads at normal speed the first time. After that, its results are also cached, so anyone who loads the same variation sees results instantly.
+
+Consider the following:
+
+* Analysis Workspace caches each variation of a project that someone loads. It does not cache every possible variation of a project. 
+
+* Caching a new variation doesn't overwrite or invalidate results that are already cached. The original project is cached along with other variations that people have loaded.
 
 >[!BEGINSHADEBOX]
 
@@ -71,13 +85,13 @@ Suppose a Global Campaign Performance project includes segments for different re
 
 ### Changes that refresh cached results automatically
 
-Some changes to a project's underlying configuration cause Analysis Workspace to run a new query the next time someone opens the project, even if the 12-hour window hasn't expired:
+The following changes to a project's underlying configuration cause Analysis Workspace to refresh results the next time someone opens the project, even if the 12-hour window hasn't expired:
 
 * Changes to a component in the data view, such as editing a dimension or metric's [component settings](/help/data-views/component-settings/overview.md)
 * Changes to a [derived field](/help/data-views/derived-fields/derived-fields.md)
 * Changes to a segment definition used in the project
 
-The new query loads at normal speed, and its results are then cached, which begins a new 12-hour window.
+Results load at normal speed and are then cached, which begins a new 12-hour window.
 
 ### Who sees cached results
 
@@ -87,13 +101,13 @@ Cached results display by default for everyone who:
 
 * Has access to the data views used in the project
 
-* Is using the same query parameters in the project that have been previously cached (for example, the project they're viewing uses the same segments or panel drop-down selections as a previously cached project)
+* Is loading a variation of the project that's already cached, such as one with the same segments or panel drop-down selections (for more information, see [What results are cached](#what-results-are-cached))
 
 When viewing cached results, you can see the latest data by [manually refreshing the results](#manually-refresh-results-on-cached-projects).
 
-### When cached results might not work well for a project
+### When to leave cached results disabled on a project
 
-Some projects depend on results that reflect the latest data every time someone opens them. This is common for projects that rely heavily on same-day data, late-arriving data, or [lookup datasets](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) that are updated frequently.
+Some projects depend on results to reflect the latest data every time someone opens them. This is common for projects that rely heavily on same-day data, late-arriving data, or [lookup datasets](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) that are updated frequently.
 
 Leave cached results disabled on your project if most people who access the project need to see:
 
@@ -119,7 +133,7 @@ Anyone who can update project settings can enable cached results. This includes 
 
 >[!IMPORTANT]
 >
->Cached results might not be a good fit if you need to see current-day data, late-arriving data, or updated lookup values right away. Before you enable this setting, review [When cached results might not work well for a project](#when-cached-results-might-not-work-well-for-a-project).
+>Cached results might not be a good fit if you need to see current-day data, late-arriving data, or updated lookup values right away. Before you enable this setting, review [When to leave cached results disabled on a project](#when-to-leave-cached-results-disabled-on-a-project).
 
 In the Workspace project where you want to enable cached results for near-instant loading:
 
@@ -146,7 +160,9 @@ Panels also display a timestamp, showing when the results were cached:
 
 ## Manually refresh results on cached projects
 
-You can manually refresh results on a project any time during the 12-hour window in order to view the latest data. When you refresh the entire project, a new 12-hour window begins, and everyone who opens the project during that window sees the refreshed results.
+Only the results shown in the project are cached. Underlying event data continues to flow into Customer Journey Analytics as usual.
+
+To see the latest data before cached results expire, you can manually refresh results on a project any time during the 12-hour window. When you refresh the entire project, a new 12-hour window begins, and everyone who opens the project during that window sees the refreshed results.
 
 In the Workspace project where you want to view the latest data, you can refresh results for the entire project or for a single panel.
 
