@@ -121,6 +121,7 @@ In addition to being added as a Product administrator in the **Customer Journey 
   | [!UICONTROL Data Management] | [!UICONTROL View Datasets] | Read-only access for datasets and schemas. |
   | [!UICONTROL Identity Management] | [!UICONTROL View Identity Namespaces] | Read-only access for identity namespaces. |
 
+  For more information on Experience Platform Roles, see [Access Control Overview](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
 
 * Manage [Shared Metrics & Dimensions](/help/data-views/shared-metrics-dimensions/smd-overview.md) 
 
@@ -132,7 +133,9 @@ In addition to being added as a Product administrator in the **Customer Journey 
   | [!UICONTROL Data Governance] | [!UICONTROL View Data Usage Policies] | Read-only access for data usage policies belonging to your organization. |
   | [!UICONTROL Data Governance] | [!UICONTROL Manage Data Usage Policies] | Access to read, create, edit, and delete data usage policies. |
 
-* If Journey Optimizer is integrated with Customer Journey Analytics where Journey Optimizer Connections exist, then Journeys permissions must also be added to access Connections:
+  For more information on Experience Platform permissions, see [Sandboxes and permissions](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions).
+
+* If Journey Optimizer is integrated with Customer Journey Analytics where Journey Optimizer Connections exist, then [Journeys permissions](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability) must also be added to access Connections:
 
   | Category | Permission | Description |
   |---|---|---|
@@ -143,20 +146,21 @@ In addition to being added as a Product administrator in the **Customer Journey 
 
 * Export datasets to [destinations](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets)
   
-  To perform this task, users must be part of an **Experience Platform Role** that provides the following permissions:
+  To perform this task, users must be part of an **Experience Platform Role** that provides the following [Destinations permissions](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home#access-controls):
   
   | Category | Permission | Description |
   |---|---|---|
   | [!UICONTROL Destinations] | [!UICONTROL Manage Destinations] | Access to read, create, and delete destination connections and destination accounts. |
   | [!UICONTROL Destinations] | [!UICONTROL Activate Destinations] | Allow users to activate segments to existing destinations. Enables the mapping step in the activation workflow. This permission also requires the View Destinations permission to be granted to the user who wants to activate data to destinations. |
     
-    For more information on Experience Platform permissions, see [Access Control Overview](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
+    For more information on Experience Platform permissions, see [Sandboxes and permissions](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions).
+    
 
 * Use the [BI extension](../data-views/bi-extension.md)
   
   For users to use the BI extension, a Product administrator
 
-  * must ensure the Experience Platform permissions for the user include a role that has the Query Service resource with the Manage Queries and Manage Query Service Integration options. For more information on Experience Platform permissions, see [Access Control Overview](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home). 
+  * must ensure that the Experience Platform permissions for the user include a role that has the Query Service resource with the Manage Queries and Manage Query Service Integration options. For more information on Experience Platform permissions, see [Access Control Overview](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home). 
 
       | Category | Permission | Description |
       |---|---|---|

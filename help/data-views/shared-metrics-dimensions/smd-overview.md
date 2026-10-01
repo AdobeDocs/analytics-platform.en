@@ -29,13 +29,12 @@ topic_v2:
 ---
 # Shared metrics & dimensions overview
 
-Shared metrics & dimensions provide a central location to manage dimensions and metrics that can be used across any number of data views. These components are especially valuable to organizations that use multiple data views, especially if those data views share common component settings. Changes made to shared metrics and dimensions apply instantly across every data view that it is shared to. When editing an individual data view, you can identify shared dimensions and metrics by a ![Shared component icon](/help/assets/icons/CCLibrary.svg) icon next to the component name.
+Shared metrics & dimensions provide a central location to manage dimensions and metrics that can be used across any number of data views. These components are especially valuable to organizations that use multiple data views, especially if those data views share common component settings. Changes made to shared metrics and dimensions apply instantly across every data view that they are shared to. When editing an individual data view, you can identify shared dimensions and metrics by a ![Shared component icon](/help/assets/icons/CCLibrary.svg) icon next to the component name.
 
 While shared dimensions and metrics allow common components to be used across many data views, they cannot be shared across connections.
 
 ## Permissions
-* Administrators have access to manage Shared Metrics & Dimensions.
-* Administrators also need the **Manage Data Usage Policies** and **View Data Usage Policies** for all sandboxes in Adobe Experience Platform.
+* [Product administrators](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control#product-administrator-role) also need the **Manage Data Usage Policies** and **View Data Usage Policies** permissions for all sandboxes in [Experience Platform Permissions](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#permissions).
 
 ## Workflow
 
