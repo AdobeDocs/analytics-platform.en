@@ -65,7 +65,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 |---|---|
-| **October 2026** | | 
+| **October 2026** | |
 | Conversation Insights | [Documentation](/help/conversation-insights/overview.md) for Conversation Insights. |
 | **September 2026** | |
 | Journey canvas comparison on arrows and fallout | Updated the '[!UICONTROL Compare to]' setting in [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings) to show that the percent change between date ranges now displays on each node, arrow, and fallout in the journey. |
