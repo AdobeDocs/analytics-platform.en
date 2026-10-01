@@ -20,6 +20,8 @@ role_v2:
 ---
 # Conversation Insights
 
+{{release-limited-testing}}
+
 Conversation Insights enables you to analyze conversations from the agent experiences you offer to your customers. Those agent experiences can be based on large language models (LLM) or based on human conversations. For example, a chatbot interacting with a customer or call center transcripts. 
 
 Conversation Insights analyzes the conversations at scale and provides context for these conversations  within the full customer journey. Through Conversation Insights you are able to understand the impact of agents on actual user outcomes.
