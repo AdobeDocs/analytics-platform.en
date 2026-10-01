@@ -34,6 +34,7 @@ Shared metrics & dimensions provide a central location to manage dimensions and 
 While shared dimensions and metrics allow common components to be used across many data views, they cannot be shared across connections.
 
 ## Permissions
+
 * [Product administrators](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control#product-administrator-role) also need the **Manage Data Usage Policies** and **View Data Usage Policies** permissions for all sandboxes in [Experience Platform Permissions](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#permissions).
 
 ## Workflow
