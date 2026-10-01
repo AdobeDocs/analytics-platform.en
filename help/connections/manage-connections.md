@@ -76,9 +76,9 @@ The following columns or icons are available in the table.
 | Column or Icon | Description |
 | --- | --- |
 | **[!UICONTROL _Name_]** | The connection's friendly name. Select the hyperlinked name to see the [details of the connection](#connection-details). |
-| ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | To view information about [!UICONTROL Datasets included], [!UICONTROL Sandbox], [!UICONTROL Owner], and more, select ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) next to the connection name.<p>A popup window displays details about the dataset. <p>![Connection info popup](assets/connection-info-popup.png) |
-| ![Data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) | To [create a data view](#create-a-data-view) for the connection, select ![Data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg). This icon only shows when no data view is already associated with the connection. |
-| ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) to open a context menu. You can select: <p>![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** to [edit](#edit-a-connection) a connection.<p>![Delete](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Delete]** to [delete](#delete-a-connection) a connection.<p>![Data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Create new data view]** to [create a new data view](#create-a-data-view) for the connection.<p>![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Connection map]** to view a [connection map](#map-a-connection) for the connection. |
+| ![Information](/help/assets/icons/InfoOutline.svg) | To view information about [!UICONTROL Datasets included], [!UICONTROL Sandbox], [!UICONTROL Owner], and more, select ![Information](/help/assets/icons/InfoOutline.svg) next to the connection name.<p>A popup window displays details about the dataset. <p>![Connection info popup](assets/connection-info-popup.png) |
+| ![Data view](/help/assets/icons/DataAdd.svg) | To [create a data view](#create-a-data-view) for the connection, select ![Data view](/help/assets/icons/DataAdd.svg). This icon only shows when no data view is already associated with the connection. |
+| ![More](/help/assets/icons/More.svg) | Select ![More](/help/assets/icons/More.svg) to open a context menu. You can select: <p>![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** to [edit](#edit-a-connection) a connection.<p>![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** to [delete](#delete-a-connection) a connection.<p>![Data view](/help/assets/icons/DataAdd.svg) **[!UICONTROL Create new data view]** to [create a new data view](#create-a-data-view) for the connection.<p>![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Connection map]** to view a [connection map](#map-a-connection) for the connection. |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Connection type]** | The type of connection: **[!UICONTROL Person]**-based or **[!UICONTROL Account]**-based connection. |
 | **[!UICONTROL Datasets]** | One or more links to the datasets that are part of the connection. You can select the dataset hyperlink to view the dataset in the connection. If more datasets are part of the selected connection, select **[!UICONTROL +*x* more]** to show a **[!UICONTROL Datasets included]** panel. This panel shows links to all datasets and an option to ![Search](/help/assets/icons/Search.svg) search for specific datasets that is part of the connection.<p>![Datasets included](assets/datasets-included.png)<p>Select a dataset name to open the dataset in the Experience Platform interface in a new tab. |
 | **[!UICONTROL Sandbox]** | The [Experience Platform sandbox](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) from which this connection draws its datasets. You select this sandbox when you created the connection. You cannot change the sandbox once a connection is saved.|
@@ -90,11 +90,11 @@ The following columns or icons are available in the table.
 | **[!UICONTROL Integrations]** | Shows any Experience Platform applications that are enabled with the connection.  |
 | **[!UICONTROL Use in CJA]** | Shows whether the connection has been enabled for use with Customer Journey Analytics. |
 
-To configure which columns to display in the table, select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). In the **[!UICONTROL Customize table]** dialog, select the columns to show. Then select **[!UICONTROL Apply]**.
+To configure which columns to display in the table, select ![Column settings](/help/assets/icons/ColumnSetting.svg). In the **[!UICONTROL Customize table]** dialog, select the columns to show. Then select **[!UICONTROL Apply]**.
 
 ### Search connections
 
-You can quickly search connections using the ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) box.
+You can quickly search connections using the ![Search](/help/assets/icons/Search.svg) box.
 
 ### Filter connections
 
@@ -115,14 +115,14 @@ Select ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Hide filters]** to
 
 To edit a connection: 
 
-1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the connection name
-1. Select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** from the context menu.
+1. Select ![More](/help/assets/icons/More.svg) next to the connection name
+1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** from the context menu.
 
 Alternatively, you can:
 
 1. Select the connection row.
 
-1. Select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** from the blue action bar.
+1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** from the blue action bar.
 
 See [Create or edit a connection](create-connection.md) for more information.
 
@@ -131,14 +131,14 @@ See [Create or edit a connection](create-connection.md) for more information.
 
 To delete a connection:
 
-1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the connection name.
-1. Select ![Delete](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Delete]**.
+1. Select ![More](/help/assets/icons/More.svg) next to the connection name.
+1. Select ![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]**.
 
 Alternatively, you can:
 
 1. Select the connection row.
 
-1. Select ![Delete](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Delete]** from the blue action bar.
+1. Select ![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** from the blue action bar.
 
 When you delete a connection, a **[!UICONTROL Delete connection]** panel indicates which data views are deleted and which workspace projects are affected.
 
@@ -157,14 +157,14 @@ See [Deletion implications](/help/technotes/deletion.md) for more information ab
 
 To create a data view for a connection:
 
-1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the connection name.
-1. Select ![Add data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Create new data view]**.
+1. Select ![More](/help/assets/icons/More.svg) next to the connection name.
+1. Select ![Add data view](/help/assets/icons/DataAdd.svg) **[!UICONTROL Create new data view]**.
 
 Alternatively, you can:
 
 1. Select the connection row.
 
-1. Select ![Add data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Create data view]** from the blue action bar.
+1. Select ![Add data view](/help/assets/icons/DataAdd.svg) **[!UICONTROL Create data view]** from the blue action bar.
 
 See [Create or edit a data view](/help/data-views/create-dataview.md) for more information.
 
@@ -260,7 +260,7 @@ To remove the connection from Customer Journey Analytics:
 
 To view a [connection map](/help/connections/create-connection.md#connection-map) that details the relationships between the datasets that are part of a connection:
 
-1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the connection name.
+1. Select ![More](/help/assets/icons/More.svg) next to the connection name.
 1. Select ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Connection map]**. 
 
 ### Connection details {#connection-detail}
@@ -277,15 +277,15 @@ The Connections details interface provides a detailed view of the status of a co
 
 | User Interface | Description |
 | --- | --- |
-| ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit Connection]** | To edit the details of a connection, select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit Connection]**. See [Create or edit a connection](create-connection.md) for more information. |
+| ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit Connection]** | To edit the details of a connection, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit Connection]**. See [Create or edit a connection](create-connection.md) for more information. |
 | **[!UICONTROL *Dataset selector*]** | Select one or all datasets to show details for in the connection. You cannot multi-select datasets. Defaults to **[!UICONTROL All datasets]**. |
-| **[!UICONTROL *Date range selector*]** | Select a data range to show details for in the connection. Edit start date, end date, or select ![Calendar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) to open the date range selector. In the date range selector, select a date range by using one of the predefined periods (for example **[!UICONTROL Last 6 months]**) or use the calendar to select start and end date. Select **[!UICONTROL Apply]** to apply the new date range to the connection details.|
+| **[!UICONTROL *Date range selector*]** | Select a data range to show details for in the connection. Edit start date, end date, or select ![Calendar](/help/assets/icons/Calendar.svg) to open the date range selector. In the date range selector, select a date range by using one of the predefined periods (for example **[!UICONTROL Last 6 months]**) or use the calendar to select start and end date. Select **[!UICONTROL Apply]** to apply the new date range to the connection details.|
 | **[!UICONTROL Records of event data available]** | The total number of event dataset rows available for reporting, **for the entire connection**. This count is independent of any date range or dataset selection. |
-| [!UICONTROL **[!UICONTROL Metrics]**] | Summarize the event, lookup, profile and summary dataset records that are added, skipped, and deleted, and the number of batches added. These metrics are based on **the dataset and date range that you have selected**.<p>Select **[!UICONTROL Check detail]** to show the **[!UICONTROL Check skipped detail]** popup. The popup lists the number of skipped records and the reason for all event datasets or selected dataset.<p>![Skipped records](assets/skipped-records.png)<p>Select ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) popup with more information. For some skipped reasons, like [!UICONTROL Empty visitor ID], the popup displays **[!UICONTROL Sample PSQL for EQS]** (Experience Platform for Query Service) you can use in [Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) to query for the skipped records in the dataset. Select ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copy sample PSQL for EQS]** to copy the SQL. |
+| [!UICONTROL **[!UICONTROL Metrics]**] | Summarize the event, lookup, profile and summary dataset records that are added, skipped, and deleted, and the number of batches added. These metrics are based on **the dataset and date range that you have selected**.<p>Select **[!UICONTROL Check detail]** to show the **[!UICONTROL Check skipped detail]** popup. The popup lists the number of skipped records and the reason for all event datasets or selected dataset.<p>![Skipped records](assets/skipped-records.png)<p>Select ![Info](/help/assets/icons/InfoOutline.svg) popup with more information. For some skipped reasons, like [!UICONTROL Empty visitor ID], the popup displays **[!UICONTROL Sample PSQL for EQS]** (Experience Platform for Query Service) you can use in [Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) to query for the skipped records in the dataset. Select ![Copy](/help/assets/icons/Copy.svg) **[!UICONTROL Copy sample PSQL for EQS]** to copy the SQL. |
 | **[!UICONTROL Records added]** | A visualization to indicate how many rows were added in the selected time period, **for the dataset and date range you have selected**. Updates every 10 minutes. |
 | **[!UICONTROL Records skipped]** | A visualization to indicate how many rows were skipped in the selected time period, **for the dataset and date range you have selected**. Reasons for skipping records include: missing timestamps, missing or invalid Person ID or Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, and so forth. Updates every 10 minutes. <p>Invalid IDs (such as `undefined`, or `00000000`, or any combination of numbers and letters in a [!UICONTROL Person ID] that appear in an event more than 1 million times in a given month) are IDs that cannot be attributed to any specific user or person. These rows cannot be ingested into the system and result in error-prone ingestion and reporting. To fix invalid Person IDs or Account IDs [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, you have 3 options:<ul><li>Use [Stitching](/help/stitching/overview.md) to populate the undefined or all-zero user IDs with valid user IDs.</li><li>Blank out user IDs, which are then skipped during ingestion (preferable to invalid or all-zero user IDs).</li><li>Fix any invalid user IDs in your system before ingesting the data.</li></ul> |
 | **[!UICONTROL Records deleted]** | A visualization to indicate how many rows were deleted in the selected time period, **for the dataset and date range you have selected**. Someone might have deleted a dataset in [!DNL Experience Platform], for example. Updates every 10 minutes.<p>In some scenarios, this value can also include records replaced, as with stitching or some lookup dataset updates. Consider this example:</p><ul><li>You upload one record to an XDM Individual Profile dataset, which Customer Journey Analytics is configured to ingest as profile lookup data. In the connection details, this dataset would display 1 record added.</li><li>You upload a duplicate of the original record into the same AEP dataset, which now contains two records. Customer Journey Analytics ingests the additional record from the profile or account [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} lookup dataset. Seeing that a profile or account record is already ingested in the connection for that Person ID or Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, Customer Journey Analytics deletes its earlier version and adds the new profile data. In the connection details, this action would represent 1 record added and 1 record deleted, because Customer Journey Analytics only retains the most recent profile lookup data for any ingested Person ID or Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}.</li><li>In total, the AEP dataset contains two records that happen to be identical. Separately, the Customer Journey Analytics connection details display the status of its ingested data: 2 records added and 1 record deleted for this profile dataset. </li></ul> |
-| ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) | Dataset search field. You can search the datasets table by dataset name or dataset ID. |
+| ![Search](/help/assets/icons/Search.svg) | Dataset search field. You can search the datasets table by dataset name or dataset ID. |
 | [!UICONTROL Datasets table ] | The datasets that are part of the connection. See the table below for further explanation. Select ![SelectBox](/help/assets/icons/SelectBox.svg) a single dataset to show only connection details for the selected dataset. This is equivalent to the selection of a dataset from the **[!UICONTROL _Dataset selector_]**. |
 
 The datasets table displays the following columns for each dataset:
@@ -318,14 +318,14 @@ When no individual dataset is selected in the datasets table, the right panel sh
 
 | Options | Description |
 | --- | --- |
-| ![Refresh](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL Refresh]** | To refresh the connection and allow recently added records to be reflected, select ![Refresh](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL Refresh]**.  |
-| ![Delete](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Delete]** | [Delete](#delete-a-connection) this connection.  |
-| ![Add data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Create data view]** | [Create a data view](#create-a-data-view) based on this connection. See [Data views](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views) for more information.|
+| ![Refresh](/help/assets/icons/Refresh.svg) **[!UICONTROL Refresh]** | To refresh the connection and allow recently added records to be reflected, select ![Refresh](/help/assets/icons/Refresh.svg) **[!UICONTROL Refresh]**.  |
+| ![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | [Delete](#delete-a-connection) this connection.  |
+| ![Add data view](/help/assets/icons/DataAdd.svg) **[!UICONTROL Create data view]** | [Create a data view](#create-a-data-view) based on this connection. See [Data views](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views) for more information.|
 | **[!UICONTROL Use in CJA]** | Use a Journey Optimizer connection in Customer Journey Analytics to bring additional value to your Journey Optimizer connection. For more information, see [Use a Journey Optimizer connection in Customer Journey Analytics](#use-a-journey-optimizer-connection-in-customer-journey-analytics).|
 | **[!UICONTROL Connection name]** | The friendly name of the connection. |
 | **[!UICONTROL Connection description]** | A more detailed description that describes the purpose of this connection. |
 | **[!UICONTROL Sandbox]** | The [Experience Platform sandbox](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) from which this connection draws its datasets. You select this sandbox when you created the connection. You cannot change the sandbox once a connection is saved. |
-| **[!UICONTROL Connection ID]** | A generated identifier for the connection. You can use ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) to copy the value.  |
+| **[!UICONTROL Connection ID]** | A generated identifier for the connection. You can use ![Copy](/help/assets/icons/Copy.svg) to copy the value.  |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Primary ID type]** | The primary ID type for the connection: **[!UICONTROL Person]** for a person-based connection, **[!UICONTROL Account]** for an account-based connection. |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Containers]**  | The configured containers for the connection. |
 | **[!UICONTROL Data views using connection]** | The data views that use this connection. |

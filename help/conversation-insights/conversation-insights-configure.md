@@ -76,7 +76,7 @@ For each configuration:
    1. Select **[!UICONTROL Use connection]**.
 
    * To search in the list of connections to select from, use the ![Search](/help/assets/icons/Search.svg) field.
-   * To configure which columns to display in the table, select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). In the **[!UICONTROL Customize table]** dialog, select the columns to show. Then select **[!UICONTROL Apply]**.
+   * To configure which columns to display in the table, select ![ColumnSetting](/help/assets/icons/ColumnSetting.svg). In the **[!UICONTROL Customize table]** dialog, select the columns to show. Then select **[!UICONTROL Apply]**.
 
 1. In the **[!UICONTROL Data views]** section, if no data views are already configured, select **[!UICONTROL Select data views]** to select data views.
 
@@ -91,7 +91,7 @@ For each configuration:
    1. Select **[!UICONTROL Use data views]** to use the data views. Select Cancel to cancel.
 
    * To search in the list of data views to select from, use the ![Search](/help/assets/icons/Search.svg) field.
-   * To configure which columns to display in the table, select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). In the **[!UICONTROL Customize table]** dialog, select the columns to show. Then select **[!UICONTROL Apply]**.
+   * To configure which columns to display in the table, select ![ColumnSetting](/help/assets/icons/ColumnSetting.svg). In the **[!UICONTROL Customize table]** dialog, select the columns to show. Then select **[!UICONTROL Apply]**.
 
 1. To finish the configuration:
 
