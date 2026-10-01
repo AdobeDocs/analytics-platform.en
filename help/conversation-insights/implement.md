@@ -13,7 +13,6 @@ feature_v2:
     internal-label: Components
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
     internal-label: AI Tools
-role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
@@ -35,7 +34,7 @@ This article documents the required implementation steps.
 
 Configure datasets for the primary conversation events: prompt, response, feedback. The prompt, response, and feedback datasets must extend the XDM Experience Event base schema with the [Conversation Event field group](#conversation-event-field-group) and can optionally include the [Agentic Information field group](#agentic-information-field-group) and other [additional field groups](#additional-field-groups). 
 
-You can define separate datasets for prompts, responses, and feedback or combine data into datasets. For example, use one dataset for prompts and responses and another dataset for feedback. Or use a separate dataset for each type of conversation event as illustrated in [How it works](/help/conversation-insights/conversation-insights-overview.md#how-it-works).
+You can define separate datasets for prompts, responses, and feedback or combine data into datasets. For example, use one dataset for prompts and responses and another dataset for feedback. Or use a separate dataset for each type of conversation event as illustrated in [How it works](/help/conversation-insights/overview.md#how-it-works).
 
 To illustrate, use:
 

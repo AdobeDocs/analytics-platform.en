@@ -37,7 +37,7 @@ To analyze conversations at scale and provide context for these conversations  w
 
 * Combine your Conversation Insights events with other event datasets and additional profile and lookup datasets. Add these datasets to the connection that you selected for the Conversation Insights configuration.
 * Add additional components (metrics and dimensions) to the data views that you selected for the Conversation Insights configuration.
-* ...
+
 
 +++ Example project
 

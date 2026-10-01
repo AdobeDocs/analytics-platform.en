@@ -337,11 +337,11 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [FAQ](../guided-analysis/faq.md)
 
 + Conversation insights {#conversation-insights}
-  + {hide-from-toc} [Overview](/help/conversation-insights/conversation-insights-overview.md)
-  + {hide-from-toc} [Configure](/help/conversation-insights/conversation-insights-configure.md)
-  + {hide-from-toc} [Manage](/help/conversation-insights/conversation-insights-manage.md)
-  + {hide-from-toc} [Implement](/help/conversation-insights/conversation-insights-implement.md)
-  + {hide-from-toc} [Analyze](/help/conversation-insights/conversation-insights-analyze.md)
+  + {hide-from-toc} [Overview](/help/conversation-insights/overview.md)
+  + {hide-from-toc} [Configure](/help/conversation-insights/configure.md)
+  + {hide-from-toc} [Manage](/help/conversation-insights/manage.md)
+  + {hide-from-toc} [Implement](/help/conversation-insights/implement.md)
+  + {hide-from-toc} [Analyze](/help/conversation-insights/analyze.md)
 
 
 + Components {#cja-components}

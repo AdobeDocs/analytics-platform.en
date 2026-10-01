@@ -30,7 +30,7 @@ When you create or edit a Conversation Insights configuration, you specify the s
 
 Only system administrators can create or edit Conversation Insights configurations.
 
-You create or edit configurations from the [Conversation Insights Configurations interface](./conversation-insights-manage.md).
+You create or edit configurations from the [Conversation Insights Configurations interface](./manage.md).
 
 ## Restore missing blended dataset
 
