@@ -620,7 +620,6 @@ See below for example usage of the Conversation Event field group in various sce
 
 Use the following data collection strategy for Conversation Insights.
 
-
 ### Event types
 
 Your agent application or service sends an event as soon as possible. Ensure the app or service does not wait for a response before sending the prompt across with the information available at the time of the event.
