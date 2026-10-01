@@ -148,6 +148,7 @@ If your agent experience application supports the invocation of skills that repr
 
 For implementation details, refer to the [agentic information](./implement.md#agentic-information-field-group) field group in the [Implement Conversation Insights](./implement.md) documentation.
 
+
 ## How it works
 
 Conversation Insights is built upon three core functionalities:
