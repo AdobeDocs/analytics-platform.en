@@ -24,8 +24,8 @@ Paid media data is ingested through Experience Platform source connectors. For e
 Make sure that you have the following access in Experience Platform:
 
 * Permission to view and manage sources.
-* A sandbox to work in.
 * Permission to create schemas, datasets, and dataflows.
+* A sandbox selected to work in. You must choose the sandbox before proceeding with the setup steps.
 
 If you use [!DNL Meta Ads] as the source, make sure that you also have the following prerequisites:
 
@@ -71,23 +71,33 @@ The summary metrics dataset can include the following metric groups:
 * **Social engagement**: likes, comments, and follows.
 * **Attribution and path**: attribution model details, confidence, weights, path metrics, and channel contribution.
 * **Quality and fraud**: quality scores, fraud indicators, invalid traffic rates, and brand safety metrics.
-* **Dimensional breakdowns**: channel, ad network, device type, age group, gender, country, city, language, day of week, audience category, creative format, and breakdown type.
+* **Dimensional breakdowns**: Data can be broken down by channel, ad network, device type, age group, gender, country, city, language, day of week, audience category, creative format, and other dimensions depending on the source platform.
 
 ### Standard datasets
 
-When you connect a paid media source, Adobe provisions 12 standard paid media datasets based on the global paid media schema classes and field groups. These datasets include the six lookup datasets, the summary metrics dataset, and supporting datasets. All 12 datasets must be present so that paid media data resolves correctly downstream.
+When you connect a paid media source, Adobe provisions 12 standard paid media datasets based on the global paid media schema classes and field groups. These datasets include six summary metrics datasets, the six lookup datasets, and supporting datasets. All 12 summary and lookup datasets must be present so that paid media data resolves correctly downstream.
 
-* Paid Media Campaign Lookup
-* Paid Media Asset Lookup
-* Paid Media Experience Lookup
-* Paid Media Ad Lookup
-* Paid Media AdGroup Lookup
+Required datasets:
+
+* Paid Media Account Summary
+* Paid Media Campaign Summary
+* Paid Media Ad Group Summary
+* Paid Media Ad Summary
+* Paid Media Experience Summary
+* Paid Media Asset Summary
 * Paid Media Account Lookup
+* Paid Media Campaign Lookup
+* Paid Media Ad Group Lookup
+* Paid Media Ad Lookup
+* Paid Media Experience Lookup
+* Paid Media Asset Lookup
+
+Supporting datasets, for example:
+
 * Paid Media Ad Demographic Lookup
 * Paid Media Experience Placement Summary
 * Paid Media Ad Geographic Summary
 * Paid Media Ad Summary (summary metrics)
-* Paid Media Asset Summary
 * Paid Media Asset Demographic Summary
 
 ## Ingest paid media data in Adobe Experience Platform
@@ -96,10 +106,11 @@ Use the following process to connect a source and ingest paid media data into Ex
 
 1. Verify that you have the required Experience Platform source permissions and ad-platform access.
 1. In Experience Platform, go to **[!UICONTROL Sources]** > **[!UICONTROL Catalog]** > **[!UICONTROL Advertising]**.
-1. Select the connector that you want to use, such as **[!DNL Meta Ads]**, and then select **[!UICONTROL Set up]**.
+1. 1. Ensure you are in the sandbox that contains the paid media datasets.
+1. Select the connector that you want to use, such as **[!DNL Meta Ads]**. Select **[!UICONTROL Set up]** to create a new connection, or select **[!UICONTROL Add data]** to add more data to an existing connection.
 1. Authenticate with [!DNL OAuth 2.0] by signing in with a user who has the required advertiser-level access.
 1. Select the ad accounts, entities, and insight data that you want to ingest.
-1. Confirm the target mappings to the global paid media schema and verify that the lookup datasets and summary metrics dataset are provisioned correctly.
+1. Verify that the lookup datasets and summary metrics dataset are provisioned correctly.
 1. Enter dataflow settings, confirm the target datasets, and configure the ingestion schedule.
 1. Save the dataflow and monitor the runs in **[!UICONTROL Sources]** > **[!UICONTROL Dataflows]**.
 1. Validate that the standard paid media datasets exist and contain data.
@@ -108,7 +119,7 @@ Before you move to Customer Journey Analytics, validate the ingested data:
 
 * Confirm that entity `GUID` and native ID values are populated consistently across the summary metrics and lookup datasets.
 * Confirm that every summary metrics row includes a timestamp.
-* Confirm that key reporting fields such as campaign, channel, ad network, impressions, clicks, spend, region, and device type contain values.
+* Confirm that key reporting fields such as  dimensions (for example: `channel`, `adNetwork`) and metrics (for example: `impressions`, `clicks`, `spend`) contain values. Note that some fields like `region` may not be populated by all source platforms.
 * Confirm that currency and time zone values are consistent across the relevant accounts.
 
 ## Bring paid media data into Customer Journey Analytics
@@ -120,9 +131,9 @@ Customer Journey Analytics does not report directly on Experience Platform datas
 Use the following process to create or update a connection:
 
 1. In Customer Journey Analytics, [create or edit an existing connection](/help/connections/create-connection.md).
-1. Ensure you select the sandbox that contains the paid media datasets.
-1. Add the summary metrics dataset as summary data.
-1. Add each lookup dataset as a lookup dataset and join the dataset to the summary data by the corresponding entity identifiers for account, campaign, ad group, ad, asset, and experience.
+1. Ensure you select the sandbox that contains the paid media datasets as part of the connection configuration.
+1. Add the summary metrics datasets as summary data. If multiple summary metrics datasets are available, use [search](/help/connections/create-connection.md#add-datasets) to filter by the `Paid Media` classes to identify the correct datasets.
+1. Add each lookup dataset as a lookup dataset. Join the lookup dataset to the summary data using the corresponding entity GUID identifiers (the Adobe-generated global keys) for account, campaign, ad group, ad, asset, and experience. Some source platforms may also support joins on native ID values.
 1. Optionally, add clickstream event data if you want to relate aggregate paid media data to shared metadata such as IDs, tracking codes, or `UTM` parameters.
 1. Review the [dataset-specific settings](/help/connections/create-connection.md#dataset-settings) for each dataset.
 1. Save the connection and confirm that the connection starts to backfill data.
