@@ -4,7 +4,6 @@ description: Learn how to configure Conversation Insights configurations.
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -30,7 +29,7 @@ When you create or edit a Conversation Insights configuration, you specify the s
 
 Only system administrators can create or edit Conversation Insights configurations.
 
-You create or edit configurations from the [Conversation Insights Configurations interface](./conversation-insights-manage.md).
+You create or edit configurations from the [Conversation Insights Configurations interface](./manage.md).
 
 ## Restore missing blended dataset
 
