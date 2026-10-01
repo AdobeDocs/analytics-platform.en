@@ -72,7 +72,7 @@ To share a calculated metric:
 
    ![Calculated metrics manager showing the available icons across the top of the window including Hide Filters, Tag, Share, Delete, and Copy.](assets/cm_task_bar.png)
 
-1. Select the **[!UICONTROL Share]** icon. ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
+1. Select the **[!UICONTROL Share]** icon. ![](/help/assets/icons/Share.svg)
 
    The Share Calculated metric dialog box displays.
 
@@ -96,7 +96,7 @@ To share a calculated metric:
 
 1. Select **[!UICONTROL Share]**.
 
-   The Shared icon appears next to the metric: ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg).
+   The Shared icon appears next to the metric: ![](/help/assets/icons/Share.svg).
 
 1. You can filter on metrics shared with you by going to **[!UICONTROL Filters]** > **[!UICONTROL Other Filters]** > **[!UICONTROL Shared with Me]**.
 

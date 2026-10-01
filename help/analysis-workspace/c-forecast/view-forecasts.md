@@ -28,7 +28,7 @@ You can view forecasts in a freeform table or in a line chart.
 
 You can view forecasts in a time-series freeform table. When [!UICONTROL Show forecast] is enabled for Freeform table in [user preferences](../user-preferences.md), forecasting is automatically shown for the first metric column added to the table. For any additional column:
 
-1. Select the column settings icon ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in the column header, then ensure that **[!UICONTROL Show forecast]** is selected in the list of options. For more information, see [Column settings](../visualizations/freeform-table/column-row-settings/column-settings.md).
+1. Select the column settings icon ![Column settings](/help/assets/icons2/Settings.svg) in the column header, then ensure that **[!UICONTROL Show forecast]** is selected in the list of options. For more information, see [Column settings](../visualizations/freeform-table/column-row-settings/column-settings.md).
 
 1. Click outside the **[!UICONTROL Column settings]** menu to save the setting and view the updated table.
    
@@ -44,7 +44,7 @@ Forecasts are shown in the table as follows:
 
 A line chart is the only visualization that allows you to view forecasts.
 
-1. Select the settings icon ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in the visualization header, then ensure that **[!UICONTROL Show forecast]** is selected in the list of options.
+1. Select the settings icon ![Column settings](/help/assets/icons2/Settings.svg) in the visualization header, then ensure that **[!UICONTROL Show forecast]** is selected in the list of options.
 
 1. (optional) To allow the forecasts to scale the chart properly, select **[!UICONTROL Allow forecast to scale Y-axis]**. This option is not selected by default because it can sometimes render a less legible chart.
 

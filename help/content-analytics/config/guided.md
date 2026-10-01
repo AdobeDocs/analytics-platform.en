@@ -378,7 +378,7 @@ For the web channel, you can configure [experience capture and definition](#expe
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_include_experiences"
 >title="Experience capture and definition"
->abstract="When enabled, experience data is collected, experience attributes are generated, and experience reporting is available. <br><br/>Use ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** to modify the data collection configuration for experiences in the Tags property that is associated with the current configuration."
+>abstract="When enabled, experience data is collected, experience attributes are generated, and experience reporting is available. <br><br/>Use ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** to modify the data collection configuration for experiences in the Tags property that is associated with the current configuration."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"

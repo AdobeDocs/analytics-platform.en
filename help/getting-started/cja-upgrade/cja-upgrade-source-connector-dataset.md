@@ -111,7 +111,7 @@ To add the automatically created dataset to the same connection that you created
 
 1. In the **[!UICONTROL Dataset backfill]** section, select **[!UICONTROL Request backfill]**. 
 
-1. Define the period that you want the connection backfill into Customer Journey Analytics to include by entering the start and end dates or by selecting the the calendar icon ![Calendar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).
+1. Define the period that you want the connection backfill into Customer Journey Analytics to include by entering the start and end dates or by selecting the the calendar icon ![Calendar](/help/assets/icons/Calendar.svg).
 
    Be explicit when specifying the dates you request for backfill. Depending on several factors, you might want to do any of the following:
    
