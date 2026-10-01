@@ -103,9 +103,9 @@ Some of the features and their associated value for the limit depend on the Cust
 
 | Name |  Value | Description | PD? |
 |---|--:|---|:---:|
-| Attribution AI models | 35 | Maximum number of Attribution AI Model per year to analyze the impact of up to an average of 60 independent touchpoints on a specified conversion event.  | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  |
-| Region based iterations | 10 | Maximum number of region-based iterations of each Attribution AI model. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  |
-| Export Insights batches | 12 | Maximum number of export batches times the number of authorized Attribution AI Insights per year. | ![check](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) |
+| Attribution AI models | 35 | Maximum number of Attribution AI Model per year to analyze the impact of up to an average of 60 independent touchpoints on a specified conversion event.  | ![check](/help/assets/icons/Checkmark.svg)  |
+| Region based iterations | 10 | Maximum number of region-based iterations of each Attribution AI model. | ![check](/help/assets/icons/Checkmark.svg)  |
+| Export Insights batches | 12 | Maximum number of export batches times the number of authorized Attribution AI Insights per year. | ![check](/help/assets/icons/Checkmark.svg) |
 
 -->
 

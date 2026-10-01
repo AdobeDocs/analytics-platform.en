@@ -100,18 +100,18 @@ Segments are based on a Person-, Session-, and Event-level hierarchy using a nes
 <table style="table-layout: fixed; border: none;" width="100%">
 
 <tr>
-<td style="background-color: #E5E4E2;" colspan="3" width="200" height="100"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg"/> Person</td>
+<td style="background-color: #E5E4E2;" colspan="3" width="200" height="100"><img src="/help/assets/icons/User.svg"/> Person</td>
 </tr>
 
 <tr>
 <td style="background-color: #E5E4E2;" width="200"></td>
-<td style="background-color: #D3D3D3;" colspan="2" width="200" height="100"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Visit_18_N.svg"/> Session</td>
+<td style="background-color: #D3D3D3;" colspan="2" width="200" height="100"><img src="/help/assets/icons/Visit.svg"/> Session</td>
 </tr>
 
 <tr>
 <td style="background-color: #E5E4E2;" width="200" height="100"></td>
 <td style="background-color: #D3D3D3;" width="200" height="100"></td>
-<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg"/> Event</td>
+<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="/help/assets/icons/Events.svg"/> Event</td>
 </tr>
 </table>
 

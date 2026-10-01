@@ -873,10 +873,10 @@ You define a `Page Name (updated)` derived field. You use the [!UICONTROL CLASSI
 
 The following additional functionality is available in the Classify rule interface:
 
-- To quickly clear all table values, select ![Erase](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Erase_18_N.svg) **[!UICONTROL Clear all table values]**.
-- To upload a CSV file containing original values for When values equal and new values for Replace values with, select ![CSV](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileCSV_18_N.svg) **[!UICONTROL Upload CSV]**.
-- To download a template for creating a CSV file with original and new values to upload, select ![Download](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL Download CSV template]**.
-- To download a CSV file with all original and new values populated in the rule interface, select ![Download](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL Download CSV values]**.
+- To quickly clear all table values, select ![Erase](/help/assets/icons/Erase.svg) **[!UICONTROL Clear all table values]**.
+- To upload a CSV file containing original values for When values equal and new values for Replace values with, select ![CSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Upload CSV]**.
+- To download a template for creating a CSV file with original and new values to upload, select ![Download](/help/assets/icons/Download.svg) **[!UICONTROL Download CSV template]**.
+- To download a CSV file with all original and new values populated in the rule interface, select ![Download](/help/assets/icons/Download.svg) **[!UICONTROL Download CSV values]**.
  
 
 +++
