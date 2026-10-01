@@ -4,7 +4,6 @@ description: Learn how to manage Conversation Insights configurations.
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -13,7 +12,6 @@ feature_v2:
     internal-label: Components
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
     internal-label: AI Tools
-role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
@@ -21,11 +19,12 @@ role_v2:
 ---
 # Manage configurations
 
-After you [create Conversation Insights configurations](/help/conversation-insights/conversation-insights-configure.md), you can view, edit, or delete these configurations. 
+After you [create Conversation Insights configurations](/help/conversation-insights/configure.md), you can view, edit, or delete these configurations. 
 
 Only system administrators can manage Conversation Insights configurations.
 
-For information about Conversation Insights, see [Conversation Insights overview](/help/conversation-insights/conversation-insights-overview.md).
+For information about Conversation Insights, see [Conversation Insights overview](/help/conversation-insights/overview.md).
+
 
 ## View and filter existing configurations
 
@@ -68,7 +67,7 @@ To view your existing Conversation Insights configurations:
 To create a new Conversation Insights configuration:
 
 1. Select **[!UICONTROL Create configuration]**.
-1. Use the [**[!UICONTROL Create configuration]**](./conversation-insights-configure.md) dialog to configure conversation insights.
+1. Use the [**[!UICONTROL Create configuration]**](./configure.md) dialog to configure conversation insights.
 
 ## Edit a configuration
 
@@ -80,7 +79,7 @@ To edit an existing Conversation Insights configuration:
    * Select the checkbox next to the configuration that you want to edit, then select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** from the blue action bar.
    * Select ![More](/help/assets/icons/More.svg) for the configuration you want to edit. From the context menu select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]**. 
 
-1. Use the [**[!UICONTROL Configuration / _name of configuration_]**](./conversation-insights-configure.md) dialog to manage conversation insights.
+1. Use the [**[!UICONTROL Configuration / _name of configuration_]**](./configure.md) dialog to manage conversation insights.
 
 ## Delete a configuration
 

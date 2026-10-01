@@ -376,7 +376,7 @@ To define a rule:
 
      - Select **[!UICONTROL Keep Changes]**.
    
-   - Click ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to [!UICONTROL Mobile Core - Foreground].
+   - Click ![Plus](/help/assets/icons/AddCircle.svg) next to [!UICONTROL Mobile Core - Foreground].
 
      - Select **[!UICONTROL Mobile Core]** from the [!UICONTROL Extension] list.
 
@@ -384,7 +384,7 @@ To define a rule:
 
      - Select **[!UICONTROL Keep Changes]**.
 
-   - Click ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Add underneath [!UICONTROL ACTIONS]. In the [!UICONTROL Action Configuration] dialog:
+   - Click ![Plus](/help/assets/icons/AddCircle.svg) Add underneath [!UICONTROL ACTIONS]. In the [!UICONTROL Action Configuration] dialog:
 
      - Select **[!UICONTROL Adobe Experience Platform Edge Network]** from the [!UICONTROL Extension] list.
 
@@ -443,9 +443,9 @@ To get code instructions that explain how to set up your mobile app and use your
 
 1. Select **[!UICONTROL Environments]** in the left rail.
 
-2. From the list of environments, select the correct install ![Box](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) button.
+2. From the list of environments, select the correct install ![Box](/help/assets/icons/Box.svg) button.
 
-   In the [!UICONTROL Mobile Install Instructions] dialog, select the appropriate platform ([!UICONTROL iOS], [!UICONTROL Android]). Then use the copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) button next to each of the relevant code snippets that you want to use to set up and initialize your mobile app:
+   In the [!UICONTROL Mobile Install Instructions] dialog, select the appropriate platform ([!UICONTROL iOS], [!UICONTROL Android]). Then use the copy ![Copy](/help/assets/icons/Copy.svg) button next to each of the relevant code snippets that you want to use to set up and initialize your mobile app:
     
    ![Environment](./assets/environment-mobile.png)
 

@@ -60,7 +60,7 @@ As an example, after creating a [Connection](../connections/overview.md) and [Da
 
 1. Navigate into the relevant role.
 
-1. Select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** to edit the role.
+1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** to edit the role.
 
 1. Ensure **[!UICONTROL Manage Data Usage Policies]** and **[!UICONTROL View Data Usage Policies]** are added to the **[!UICONTROL Data Governance]** container.
 

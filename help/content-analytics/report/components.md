@@ -175,25 +175,30 @@ In the tables below, ![AI generated](/help/assets/icons/AI.svg) indicates an AI/
 
 ## Paid Media
 
-These components are added to a data view when the **Paid Media** channel is enabled through an [Adobe Experience Platform Paid Media source connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home) (for example, Meta Ads or Google Ads). They let you report on paid media entities, creative, and spend alongside your web and mobile content.
+These components are added to a data view when the **Paid Media** channel is enabled through an [Adobe Experience Platform Paid Media source connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home). They let you report on paid media campaigns, creative, and spend alongside your web and mobile content. Availability and populated values depend on the advertising network and reporting grain.
 
 The AI-generated [Asset attributes](#asset-attributes) and [Experience attributes](#experience-attributes) described above are also available for paid media creatives. The same featurization runs across the Web, Mobile, and Paid Media channels.
 
 ### Paid Media dimensions
 
+The dimensions below include names, statuses, and other details for ad accounts, campaigns, ad groups, ads, experiences, and assets.
+
 | Title | Description | Type |
 |---|---|---|
 | Ad Network | The advertising platform the paid media data was ingested from. | Dimension |
+| Account GUID | Unique identifier for the ad account. | Dimension |
+| Campaign GUID | Unique identifier for the paid media campaign. | Dimension |
+| AdGroup GUID | Unique identifier for the ad group. | Dimension |
+| Ad GUID | Unique identifier for the individual ad. | Dimension |
 | Account Name | Name of the ad account. | Dimension |
 | Campaign Name | Name of the paid media campaign. | Dimension |
-| Ad Group Name | Name of the ad group (Meta ad set / Google ad group). | Dimension |
+| AdGroup Name | Name of the ad group or ad set. | Dimension |
 | Ad Name | Name of the individual ad. | Dimension |
 | Experience Name | Name of the ad experience (creative composition). | Dimension |
-| Asset Name | Name of the creative asset. | Dimension |
+| Asset Name (Paid Media) | Name of the creative asset. | Dimension |
 | Campaign Status | Status of the campaign. | Dimension |
 | Ad Group Status | Status of the ad group. | Dimension |
 | Ad Status | Status of the ad. | Dimension |
-| Serving Status | Detailed serving status indicating whether the entity is currently delivering. | Dimension |
 | Account Currency | Currency of the ad account. | Dimension |
 | Account Timezone | Time zone of the ad account. | Dimension |
 | Account Type | Type of the ad account. | Dimension |
@@ -207,11 +212,12 @@ The AI-generated [Asset attributes](#asset-attributes) and [Experience attribute
 | Campaign Start Time | When the campaign started. | Dimension |
 | Campaign End Time | When the campaign ended. | Dimension |
 | Ad Group Type | Type of the ad group. | Dimension |
-| Ad Group Bid Strategy | Bidding strategy for the ad group. | Dimension |
+| Ad Group Bid Strategy Type | Bidding strategy for the ad group. | Dimension |
 | Ad Group Optimization Goal | Optimization goal for the ad group. | Dimension |
 | Ad Group Start Time | When the ad group started. | Dimension |
 | Ad Group End Time | When the ad group ended. | Dimension |
 | Ad Type | Type/format of the ad. | Dimension |
+| Ad Delivery Status | Delivery status of the ad. | Dimension |
 | Ad Review Status | Review/approval status of the ad. | Dimension |
 | Ad Creative Type | Type of creative used by the ad. | Dimension |
 | Ad Title | Headline/title of the ad creative. | Dimension |
@@ -226,7 +232,6 @@ The AI-generated [Asset attributes](#asset-attributes) and [Experience attribute
 | Asset Height | Height of the asset, in pixels. | Dimension |
 | Asset Aspect Ratio | Aspect ratio of the asset. | Dimension |
 | Asset Orientation | Orientation of the asset. | Dimension |
-| Device Type | Device type breakdown for the reported metrics. | Dimension |
 | Placement | Placement breakdown for the reported metrics. | Dimension |
 | Platform | Platform breakdown for the reported metrics. | Dimension |
 | Country | Country breakdown for the reported metrics. | Dimension |
@@ -240,10 +245,10 @@ The AI-generated [Asset attributes](#asset-attributes) and [Experience attribute
 |---|---|---|
 | Impressions | Number of times the ad was shown. | Metric |
 | Clicks | Number of clicks on the ad. | Metric |
-| Spend | Amount spent, in the ad account currency. | Metric |
+| Spend | Amount spent, as reported by the advertising platform. | Metric |
 | Conversions | Total number of conversions. | Metric |
 | Conversion Value | Total value of conversions. | Metric |
-| Reach | Number of unique people who saw the ad. | Metric |
+| Reach | Audience reach reported by the advertising platform. Aggregating reach across reporting rows does not deduplicate people. | Metric |
 | Engagements | Number of engagements with the ad. | Metric |
 | Video Views | Number of video views. | Metric |
 | Video Completions | Number of videos watched to completion. | Metric |
@@ -266,6 +271,8 @@ The AI-generated [Asset attributes](#asset-attributes) and [Experience attribute
 {style="table-layout:fixed"}
 
 ### Paid Media calculated metrics
+
+These calculated metrics compute ratios from the aggregated base metrics for the reporting grain, rather than summing individual rates.
 
 | Title | Description | Type |
 |---|---|---|

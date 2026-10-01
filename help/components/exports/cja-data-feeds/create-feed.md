@@ -125,7 +125,7 @@ Before you create a data feed, it's important to have a basic understanding of d
 
    Segments you apply here are in addition to any segments that might already be applied in your data view.
 
-1. (Optional) In the left rail, use the **search** field to locate specific components. Or, select the **Sort** icon ![Sort components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) to apply any of the following sort options:
+1. (Optional) In the left rail, use the **search** field to locate specific components. Or, select the **Sort** icon ![Sort components icon](/help/assets/icons/SortOrderDown.svg) to apply any of the following sort options:
 
    | Option | Function |
    | --------- | ---------- |

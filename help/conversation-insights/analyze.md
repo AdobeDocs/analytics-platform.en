@@ -4,7 +4,6 @@ description: Learn how to analyze Conversation Insights.
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -19,6 +18,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 ---
+
 # Analyze Conversation Insights
 
 ## Simple analysis
@@ -37,7 +37,7 @@ To analyze conversations at scale and provide context for these conversations  w
 
 * Combine your Conversation Insights events with other event datasets and additional profile and lookup datasets. Add these datasets to the connection that you selected for the Conversation Insights configuration.
 * Add additional components (metrics and dimensions) to the data views that you selected for the Conversation Insights configuration.
-* ...
+
 
 +++ Example project
 

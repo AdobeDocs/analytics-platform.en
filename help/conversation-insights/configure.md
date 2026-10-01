@@ -4,7 +4,6 @@ description: Learn how to configure Conversation Insights configurations.
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -30,7 +29,7 @@ When you create or edit a Conversation Insights configuration, you specify the s
 
 Only system administrators can create or edit Conversation Insights configurations.
 
-You create or edit configurations from the [Conversation Insights Configurations interface](./conversation-insights-manage.md).
+You create or edit configurations from the [Conversation Insights Configurations interface](./manage.md).
 
 ## Restore missing blended dataset
 
@@ -76,7 +75,7 @@ For each configuration:
    1. Select **[!UICONTROL Use connection]**.
 
    * To search in the list of connections to select from, use the ![Search](/help/assets/icons/Search.svg) field.
-   * To configure which columns to display in the table, select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). In the **[!UICONTROL Customize table]** dialog, select the columns to show. Then select **[!UICONTROL Apply]**.
+   * To configure which columns to display in the table, select ![ColumnSetting](/help/assets/icons/ColumnSetting.svg). In the **[!UICONTROL Customize table]** dialog, select the columns to show. Then select **[!UICONTROL Apply]**.
 
 1. In the **[!UICONTROL Data views]** section, if no data views are already configured, select **[!UICONTROL Select data views]** to select data views.
 
@@ -91,7 +90,7 @@ For each configuration:
    1. Select **[!UICONTROL Use data views]** to use the data views. Select Cancel to cancel.
 
    * To search in the list of data views to select from, use the ![Search](/help/assets/icons/Search.svg) field.
-   * To configure which columns to display in the table, select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). In the **[!UICONTROL Customize table]** dialog, select the columns to show. Then select **[!UICONTROL Apply]**.
+   * To configure which columns to display in the table, select ![ColumnSetting](/help/assets/icons/ColumnSetting.svg). In the **[!UICONTROL Customize table]** dialog, select the columns to show. Then select **[!UICONTROL Apply]**.
 
 1. To finish the configuration:
 
@@ -169,7 +168,6 @@ For each of the configured data views:
 1. After 24 hours, [view audience dimensions in the data view](#view-audience-dimensions-in-the-data-view) to verify that the audience dimensions are available in the data views that you selected. 
 
 
- 
 ## View audience dimensions in the data view
 
 After you [create an audience analysis configuration](#create-an-audience-analysis-configuration), you can verify that audience dimensions were added to the data views that you selected during the configuration.
