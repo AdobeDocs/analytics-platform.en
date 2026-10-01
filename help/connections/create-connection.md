@@ -556,7 +556,7 @@ You can add one or more Experience Platform datasets when you create or edit a c
    
    | Column | Description |
    |---|---|
-   | **[!UICONTROL Dataset]** | Name of the dataset. Select the name to direct you to the dataset in Experience Platform. Select ![Info](/help/assets/icons/InfoOutline.svg) to display a popup with more details for the dataset. You can select **[!UICONTROL Edit in Platform]** to edit the dataset directly in Experience Platform. |
+   | **[!UICONTROL Dataset]** | Name of the dataset. Select the name to direct you to the dataset in Experience Platform. Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup with more details for the dataset. You can select **[!UICONTROL Edit in Platform]** to edit the dataset directly in Experience Platform. |
    | **[!UICONTROL Dataset type]** | The type of dataset: [Event](#event-dataset), [Profile](#profile-dataset), [Lookup](#lookup-dataset), [Summary](#summary-dataset), [Adhoc](#ad-hoc-dataset), or [Relational](#relational-dataset). |
    | **[!UICONTROL Number of records]** | The total records in the previous month for the dataset in Experience Platform. |
    | **[!UICONTROL Schema]** | The schema for the dataset. Select the name to direct you to the schema in Experience Platform. |
@@ -564,10 +564,10 @@ You can add one or more Experience Platform datasets when you create or edit a c
    | **[!UICONTROL Dataset ID]** | The id of the dataset. |
    | **[!UICONTROL Last updated]** | The last updated timestamp of the dataset. |
 
-   * To change the columns displayed for the list of datasets, select ![Column settings](/help/assets/icons/ColumnSetting.svg) and select the columns to be displayed in the [!UICONTROL Customize table] dialog.
+   * To change the columns displayed for the list of datasets, select ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) and select the columns to be displayed in the [!UICONTROL Customize table] dialog.
    * To search for a specific dataset, use the ![Search](/help/assets/icons/Search.svg) search field.
-   * To toggle between showing or hiding the selected datasets, select ![Select](/help/assets/icons/SelectBoxAll.svg) **[!UICONTROL Hide selected]** or **[!UICONTROL Show selected]**.
-   * To remove a dataset from the list of selected datasets, use ![Close](/help/assets/icons/Close.svg). To remove all selected datasets, select **[!UICONTROL Clear all]**.
+   * To toggle between showing or hiding the selected datasets, select ![SelectBoxAll](/help/assets/icons/SelectBoxAll.svg) **[!UICONTROL Hide selected]** or **[!UICONTROL Show selected]**.
+   * To remove a dataset from the list of selected datasets, use ![Close](/help/assets/icons2/Close.svg). To remove all selected datasets, select **[!UICONTROL Clear all]**.
    * To display details of a dataset, select ![InfoOutline](/help/assets/icons/InfoOutline.svg).
 
    
