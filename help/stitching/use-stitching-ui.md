@@ -240,13 +240,17 @@ Examples of Bad IDs use cases:
 
 ### Save
 
-Once you save a connection, the stitching process for stitching enabled datasets begins as soon as the ingestion of data for these datasets starts.
 
-Once you save a connection, the process of enabling stitching on the configured datasets is triggered. Once stitching is set up, the stitching service processes any live-streamed data and starts backfill from the event datasets in Experience Platform and subsequently ingests them into the Customer Journey Analytics connection.
 
-Each part of the process adds certain delays. Processing times below are guardrails, not contractual service level agreements (SLAs) for a valid initial connection setup that is saved and contains a stitching enabled dataset:
+Once you save a connection, the process of enabling stitching on the configured datasets is triggered. Once stitching is set up, the stitching service processes any live-streamed data and starts backfill from the event datasets in Experience Platform and subsequently ingests the data into the Customer Journey Analytics connection.
 
-* Live data initially shows up in Customer Journey Analytics after some hours (less than 17 hours). The live data starts with event timestamp values that match the actual moment when stitching enablement got completed. Enable the **[!UICONTROL Import all new data]** option for the dataset. This ensures live data starts to flow in.
+Each part of the process adds certain delays. Processing times below are guardrails, not contractual service level agreements (SLAs). 
+
+For a valid initial connection setup that is saved and contains a stitching enabled dataset:
+
+* Live data initially shows up in Customer Journey Analytics after some hours (less than 17 hours). The live data starts with event timestamp values that match the actual moment when stitching enablement got completed. 
+
+  To ensure live data starts to flow in, enable the **[!UICONTROL Import all new data]** option for the dataset.
   
   Any new data ingested into the source event dataset in Experience Platform appears in Customer Journey Analytics within four hours.
 
