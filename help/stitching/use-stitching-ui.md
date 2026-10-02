@@ -4,6 +4,7 @@ description: Enable stitching for event datasets in Customer Journey Analytics. 
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
+hold:true
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 TQID: 'https://experienceleague.adobe.com/Nj-IePDbHxBtgiSxEAobJ0DGlJSaiTwpTXIPtCxDTHw'
 product_v2:
