@@ -285,7 +285,7 @@ The **[!UICONTROL Agentic Information]** field group is an optional field group 
 | `agents[].name` | string | `"Chatbot Assistant"` | Agent name |
 | `agents[].version` | string | `"2.1.3"` | Agent version |
 | `agents[].score` | number | `0.92` | Agent confidence score in its the returned values |
-| `agents[].skills[]` | array | See skill object below | **Deprecated** — use the top-level `skills[]` array below instead, which owns the full ordered list of skill calls and links each one to its agent via `agentID` |
+| `agents[].skills[]` | array | See skill object below | **Deprecated**. Use the top-level `skills[]` array below instead, which owns the full ordered list of skill calls and links each one to its agent via `agentID` |
 | `agents[].skills[].name` | string | `"Intent Recognition"` | Skill name (deprecated array) |
 | `agents[].skills[].version` | string | `"1.0.0"` | Skill version (deprecated array) |
 | `agents[].skills[].score` | number | `0.95` | Skill confidence score (0-1) (deprecated array) |
@@ -439,11 +439,7 @@ You can add optional field groups to the schema you use for prompt, response, an
 * **Web Details** field group. To capture details of the web page the conversation was embedded in.
 * **Commerce Details** field group. To capture the product details of the recommended product mentioned as part of the conversation.
   
-
-
-The customer is responsible for producing the source conversation events. Adobe Platform subsequently performs signal extraction and data blending. The customer does not need to implement the signal-extraction or blending services.
-
-This document covers the Conversation Insights MVP input requirements and the current Agentic Schema Update. It does not include Conversation Insights 1.0 capabilities or later-release requirements.
+The customer is responsible for producing the source conversation events. Adobe performs signal extraction and data blending. The customer does not need to implement the signal-extraction or blending services.
 
 ### Event type
 
