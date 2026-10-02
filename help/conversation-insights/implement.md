@@ -13,7 +13,7 @@ feature_v2:
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
     internal-label: AI Tools
   - id: d7a261eb-f9ac-4dd6-bd60-1637efcd3d36
-    internal-label: ''
+    internal-label: Conversation Insights
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
