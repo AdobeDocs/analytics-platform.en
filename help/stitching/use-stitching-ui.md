@@ -241,9 +241,19 @@ Examples of Bad IDs use cases:
 
 Once you save a connection, the stitching process for stitching enabled datasets is started as soon as the ingestion of data for these datasets starts.
 
+Once you save a connection, the process process of enabling stitching on the configured dataset(s) is triggered. Once stitching is set up, any live-streamed data (plus any started backfill) from the event dataset(s) in Experience Platform are processed by the stitching service and subsequently ingested into the Customer Journey Analytics connection.
+
+Each part of the process adds certain delays. Processing times below are guardrails, not contractual service level agreements (SLAs) for a valid initial setup that includes stitching is enabled on a dataset and the connection is saved:
+
+* Live data initially shows up in Customer Journey Analytics after some hours (less than 17 hours). The live data starts with event timestamp values that match the actual moment when stitching enablement got completed. The **[!UICONTROL Import all new data]** option needs to be enabled for the dataset to ensure live data starts to flow in.
+  
+  Any new data ingested into the source event dataset in Experience Platform is reflected in Customer Journey Analytics within few hours (less than 4 hours).
+
+* Backfilled data (if initially requested) shows up in Customer Journey Analytics around the same time with live data, but can take days or weeks (less than 4 weeks) to fully process depending on the volumes involved. The backfilled data starts with the oldest event timestamp values.
+
 >[!CAUTION]
 >
->For datasets that are enabled for stitching in the Connections interface, the backfill status is immediately and incorrectly reported as ![Status green](/help/assets/icons/StatusGreen.svg)&nbsp;**[!UICONTROL _x_ backfills completed]** for the number of backfills completed. Use other ways to verify whether data from the stitched dataset is backfilled.
+>For datasets that are enabled for stitching in the Connections interface, the backfill status cannot be reported currently due to a known limitation. Use other ways to verify whether data from the stitched dataset is backfilled.
 >
 
 
