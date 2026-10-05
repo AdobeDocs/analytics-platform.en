@@ -1,6 +1,7 @@
 ---
 title: Current Customer Journey Analytics Release Notes
 description: View the latest Customer Journey Analytics release notes, including new features, fixed issues, and postponed releases for the current period.
+hold: true
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 TQID: 'https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w'
@@ -61,7 +62,7 @@ These release notes cover the September 2026 release period. Adobe Customer Jour
 | Feature and description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | -----------|-----------|-----------|
 | **Analyze LLM customer experiences in Analysis Workspace with Conversation Insights**<br/>Customer Journey Analytics now brings unstructured chat data into Analysis Workspace, allowing you to report on LLM-powered browsing and buying experiences that occur across your properties.<p>With this capability, you can:</p><ul><li>Collect prompts, responses, and agent metadata from conversational agents (either your organization's custom agents or Adobe Brand Concierge) via Web SDK.</li><li>Analyze intent, tone, and sentiment so you can understand what customers are asking, how your agent responds, and how your customers feel about their interactions.</li><li>Analyze at scale using your existing schema, datasets, and data views, then surface insights in Analysis Workspace.</li><li>Connect conversations to outcomes by tying agent interactions to your broader customer journeys, so you can measure real impact on conversion, engagement, and more.</li></ul><p>Previously, LLM-powered experiences were difficult to measure and nearly impossible to connect to your existing customer journeys.</p><p>For more information, see [Conversation Insights](/help/conversation-insights/overview.md)</p> | | October 8, 2026<p>(Originally planned for September 22, 2026)</p> |
-| **Automatically generate component descriptions in the Data Dictionary**<br/>Analytics administrators can automatically generate descriptions for up to 100 component at a time, either from the Data Dictionary or from the data view. <p>Analysis Workspace users can see component descriptions to know how each component can be used to build the analyses they want.</p> <p>(Documentation link to follow.)</p> | | October 2026</p> |
+| **Automatically generate component descriptions** <br/>You can now automatically generate descriptions for dimensions, metrics, calculated metrics, segments, and date ranges. This allows Workspace users understand which components to use, especially in organizations with large component libraries. <p>You can generate a description for a single component, or generate descriptions for many components at the same time.</p> <p>(Documentation link to follow.)<!--For more information, see [Automatically generate descriptions](/help/components/add-component-descriptions.md#automatically-generate-descriptions).--></p> | | October 28, 2026 |
 | **Adobe Brand Visibility integration**<br/>Connect Adobe Brand Visibility with your organization's Adobe Analytics data so you can measure how AI-driven discovery translates into real website engagement and business outcomes.<p>(Documentation link to follow.)</p> | | October 2026</p> |
 
 
