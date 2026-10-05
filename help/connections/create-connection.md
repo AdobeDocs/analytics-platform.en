@@ -732,17 +732,17 @@ All datasets and dataset types have [general settings and details](#general-data
 >abstract="Row filters determine which events are ingested into Customer Journey Analytics. Only events that match your inclusion rules are ingested. All other events will be permanently excluded and unavailable for reporting, segmentation, or analysis in Customer Journey Analytics.<ul><li>You can create up to 10 filters.</li><li> Changes to filters apply only to new data ingested after the change and do not retroactively affect previously ingested data or trigger a historical backfill.</li></ul>"
 
 >[!CONTEXTUALHELP]
->id="connection_eventdataset_rowfilter_field
+>id="connection_eventdataset_rowfilter_field"
 >title="Field"
 >abstract="Select a field from the event dataset to use for the condition. You can use any field of any type."
 
 >[!CONTEXTUALHELP]
->id="connection_eventdataset_rowfilter_operator
+>id="connection_eventdataset_rowfilter_operator"
 >title="Condition"
 >abstract="Select an operator. The operator is used to validate the selected field against the values."
 
 >[!CONTEXTUALHELP]
->id="connection_eventdataset_rowfilter_values
+>id="connection_eventdataset_rowfilter_values"
 >title="Values"
 >abstract="Enter one or more values. The exact string value is used. Use a comma to separate values. Each comma separated value is considered distinct and is included in the condition."
 
