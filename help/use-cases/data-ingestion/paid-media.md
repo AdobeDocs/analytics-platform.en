@@ -39,7 +39,7 @@ Authentication to the connector uses [!DNL OAuth 2.0]. During setup, you sign in
 
 ## Paid media data model
 
-Paid media data uses a star schema. One [summary metrics dataset](#summary-metrics-dataset) acts as the fact table, and six lookup datasets provide the related dimensions. The lookup datasets join to the summary metrics dataset by entity `GUID` and native ID values for accounts, campaigns, ad groups, ads, assets, and experiences.
+[Summary metrics datasets](#summary-metrics-datasets) act as the fact tables, and lookup datasets provide the related dimensions. The lookup datasets join to the summary metrics datasets by entity `GUID` and native ID values for accounts, campaigns, ad groups, ads, assets, and experiences.
 
 The lookup datasets share two common building blocks:
 
@@ -57,11 +57,11 @@ The following table summarizes the six lookup datasets.
 | Asset Lookup | Asset properties such as dimensions, file details, image properties, media URLs, usage metadata, video metadata, description, subtype, title, and type |
 | Experience Lookup | Experience-level creative groupings such as experience ID, assets, title, description, and call to action |
 
-### Summary metrics dataset
+### Summary metrics datasets
 
-The Paid Media Summary Metrics dataset is the central summary dataset. Each row typically represents one entity for one day and includes a timestamp, an identifier, an event type, entity IDs, and denormalized names for reporting.
+The Paid Media Summary Metrics datasets are the central summary datasets. Each row in a summary dataset typically represents one entity for one day and includes a timestamp, an identifier, an event type, entity IDs, and denormalized names for reporting.
 
-The summary metrics dataset can include the following metric groups:
+Each summary metrics dataset can include the following metric groups:
 
 * **Core performance**: impressions, clicks, click-through rate, engagements, engagement rate, conversions, conversion rate, conversion value, leads, link clicks, downloads, and app installs or opens.
 * **Cost and budget**: daily spend, allocated and remaining budget, pacing, overrun or underrun, average cost metrics, and bid amounts.
@@ -75,9 +75,9 @@ The summary metrics dataset can include the following metric groups:
 
 ### Standard datasets
 
-When you connect a paid media source, Adobe provisions 12 standard paid media datasets based on the global paid media schema classes and field groups. These datasets include six summary metrics datasets, the six lookup datasets, and supporting datasets. All 12 summary and lookup datasets must be present so that paid media data resolves correctly downstream.
+When you connect a paid media source, Adobe provisions 12 standard paid media datasets based on the global paid media schema classes and field groups. These datasets include six summary metrics datasets, six lookup datasets, and supporting datasets. All 12 summary and lookup datasets must be present so that paid media data resolves correctly downstream.
 
-Required datasets:
+#### Required datasets
 
 * Paid Media Account Summary
 * Paid Media Campaign Summary
@@ -92,7 +92,9 @@ Required datasets:
 * Paid Media Experience Lookup
 * Paid Media Asset Lookup
 
-Supporting datasets, for example:
+#### Supporting datasets
+
+For example
 
 * Paid Media Ad Demographic Lookup
 * Paid Media Experience Placement Summary
@@ -106,7 +108,7 @@ Use the following process to connect a source and ingest paid media data into Ex
 
 1. Verify that you have the required Experience Platform source permissions and ad-platform access.
 1. In Experience Platform, go to **[!UICONTROL Sources]** > **[!UICONTROL Catalog]** > **[!UICONTROL Advertising]**.
-1. 1. Ensure you are in the sandbox that contains the paid media datasets.
+1. Ensure you are in the sandbox that contains the paid media datasets.
 1. Select the connector that you want to use, such as **[!DNL Meta Ads]**. Select **[!UICONTROL Set up]** to create a new connection, or select **[!UICONTROL Add data]** to add more data to an existing connection.
 1. Authenticate with [!DNL OAuth 2.0] by signing in with a user who has the required advertiser-level access.
 1. Select the ad accounts, entities, and insight data that you want to ingest.
