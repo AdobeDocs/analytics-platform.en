@@ -39,7 +39,7 @@ Authentication to the connector uses [!DNL OAuth 2.0]. During setup, you sign in
 
 ## Paid media data model
 
-[Summary metrics datasets](#summary-metrics-datasets) act as the fact tables, and six lookup datasets provide the related dimensions. The lookup datasets join to the summary metrics datasets by entity `GUID` and native ID values for accounts, campaigns, ad groups, ads, assets, and experiences.
+[Summary metrics datasets](#summary-metrics-datasets) act as the fact tables, and lookup datasets provide the related dimensions. The lookup datasets join to the summary metrics datasets by entity `GUID` and native ID values for accounts, campaigns, ad groups, ads, assets, and experiences.
 
 The lookup datasets share two common building blocks:
 
@@ -59,9 +59,9 @@ The following table summarizes the six lookup datasets.
 
 ### Summary metrics datasets
 
-The Paid Media Summary Metrics datasets are the central summary dataset. In each dataset, each row typically represents one entity for one day and includes a timestamp, an identifier, an event type, entity IDs, and denormalized names for reporting.
+The Paid Media Summary Metrics datasets are the central summary datasets. Each row in a summary dataset typically represents one entity for one day and includes a timestamp, an identifier, an event type, entity IDs, and denormalized names for reporting.
 
-The summary metrics dataset can include the following metric groups:
+Each summary metrics dataset can include the following metric groups:
 
 * **Core performance**: impressions, clicks, click-through rate, engagements, engagement rate, conversions, conversion rate, conversion value, leads, link clicks, downloads, and app installs or opens.
 * **Cost and budget**: daily spend, allocated and remaining budget, pacing, overrun or underrun, average cost metrics, and bid amounts.
