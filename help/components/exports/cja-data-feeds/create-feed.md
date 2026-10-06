@@ -61,14 +61,6 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 <!-- markdownlint-enable MD034 -->
 
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_datafeed_processing_delay"
->title="Processing delay"
->abstract="The amount of time to wait for late-arriving events before processing a data feed file. Any late-arriving hits that come in during the processing delay time period are included in the data feed. <p>Processing delays are useful for various reasons, such as to give mobile implementations an opportunity for offline devices to come online and send data, or to accommodate your organization's server-side processes in managing previously processed files.</p><p>Sessions must start after the processing delay cutoff in order to be included; sessions that start before the cutoff and end within the processing delay are not included.</p>"
-
-<!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
 
@@ -339,7 +331,7 @@ Before you create a data feed, it's important to have a basic understanding of d
    | [!UICONTROL **Frequency**]<br/>Available only for live feeds | Select how often the data feed should be sent. Events with timestamps that fall within the frequency window are included in the data feed delivery. The [!UICONTROL **Lookback date range**] and [!UICONTROL **Processing delay**] fields can also affect which events are included in the data for the delivery frequency that you choose.<p>Select to include either one hour's worth of data or one day's worth of data.</p><ul><li>**Daily**: Feeds contain a full day's worth of data, from midnight to midnight in the data view's time zone.</li><li>**Hourly**: Feeds contain a single hour's worth of data.</li></ul> |
    | [!UICONTROL **Granularity**]<br/>Available only for backfill feeds | The time interval used to divide historical data into chunks. Each chunk contains a full day's worth of data, from midnight to midnight in the data view's time zone. <p>Granularity determines how the data is grouped, not how often it is delivered. Backfill data is delivered as quickly as possible, not once per day.</p><p>This field is always set to [!UICONTROL **Daily**] and cannot be modified.</p> |
    | [!UICONTROL **Lookback date range**] | Controls how far back Customer Journey Analytics looks when processing the data feed delivery. The default is 30 days.<p>The frequency window (hour or day) determines which events are included in the data feed, while the **lookback date range** provides the needed historical context to classify those events correctly.</p><p>Segment qualification, dimension persistence, session calculation, and derived field transformations can all affect the events that are included.</p> <p>Before configuring this option, see the details and examples described in the section below, [Understand the lookback date range](#understand-the-lookback-date-range).</p> |
-   | [!UICONTROL **Processing delay**] | Choose the amount of time to wait before processing a data feed file. The default is 2 hours. Any late-arriving events that come in during the processing delay are included in the data feed. <p>For example, if an hourly data feed includes data from 1:00 PM to 2:00 PM and the processing delay is 2 hours, processing for that data feed file begins at 4:00 PM.</p><p>Processing delays are useful for various reasons, such as to give mobile implementations an opportunity for offline devices to come online and send data, or to accommodate your organization's server-side processes in managing previously processed files. </p><p>Sessions must start after the processing delay cutoff in order to be included; sessions that start before the cutoff and end within the processing delay are not included.</p><p>Different types of data take different amounts of time to become available in Customer Journey Analytics, so the delay you choose depends on the data in your connection. Data must first arrive in the Experience Platform data lake. Ingestion from the data lake into Customer Journey Analytics can then take up to 90 minutes.</p><p>A connection can combine streaming and batch data from many sources, and each dataset can arrive on its own schedule. Choose a delay that accommodates the slowest data that you want included in the data feed:</p><ul><li>**Event datasets from the Edge Network or streaming ingestion**: Data typically arrives in the data lake within 60 minutes.</li><li>**Analytics source connector datasets**: Data typically arrives in the data lake within 2.25 hours.</li><li>**Datasets from other source connectors**: Latency varies by source connector and by when batches are sent. Upstream processing in Experience Platform, such as Data Prep, can add more time.</li><li>**Stitched datasets**: Stitching can add up to 4 hours. If stitching is enabled for the connection, set the delay to at least 6 hours, and potentially 8 hours. Data that is updated by a stitching replay is generally not included in data feed files that were already processed.</li><li>**Lookup datasets**: Lookup data is typically uploaded as a full copy of a database, in which only a small percentage of records have changed. Small uploads are usually processed within the default delay. Large uploads (for example, a weekly upload of millions of records) are processed at a lower priority and can take several hours longer. Event data is not delayed in this case, but lookup values might not reflect the newest updates. Uploading lookup data in smaller batches shortens processing time.</li><li>**Profile datasets**: Profile data is typically ingested in large batches, such as a daily snapshot of the full profile table. The same considerations as lookup datasets apply.</li></ul><p>For more information, see [Latencies](/help/technotes/guardrails.md#latencies) in [Customer Journey Analytics guardrails](/help/technotes/guardrails.md).</p> |
+   | [!UICONTROL **Processing delay**] | Choose the amount of time to wait before processing a data feed file. Any late-arriving events that come in during the processing delay are included in the data feed. The minimum is 2 hours. <p>The delay you choose depends on the types of data in your connection, such as streaming, batch, stitched, lookup, or profile data.</p><p>Before configuring this option, see the details and examples described in the section below, [Understand the processing delay](#data-feed-processing-delay).</p> |
    | [!UICONTROL **Compression format**] | Select the compression format for the Parquet output files delivered to your cloud destination. Choose from the following formats:<ul><li>[!UICONTROL **Snappy**]: Fast compression and decompression with moderate file sizes. Widely supported by modern data platforms such as BigQuery, Snowflake, and Apache Spark.</li><li>[!UICONTROL **GZip**]: Broadly compatible, including with tools that do not natively support Snappy. Recommended if your downstream pipeline requires a widely recognized compression standard.</li><li>[!UICONTROL **Z Standard (Zstd)**]: High compression efficiency with fast decompression. Suitable if minimizing file size is a priority and your tools support Zstd.</li></ul> |
 
 1. On the [!UICONTROL **Delivery**] tab, in the [!UICONTROL **Destination**] section, configure the destination where you want the data to be sent.  
@@ -448,6 +440,44 @@ In this case, the original campaign is shown in the data feed output only if use
 ### Derived field transformations
 
 Any derived field functions that reference containers use the lookback date range in data feed exports. What date capabilities exist in derived fields? <!--Not sure how this applies.-->
+
+## Understand the processing delay {#data-feed-processing-delay}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_datafeed_processing_delay"
+>title="Processing delay"
+>abstract="The amount of time to wait for late-arriving events before processing a data feed file. Any late-arriving hits that come in during the processing delay time period are included in the data feed. <p>Processing delays are useful for various reasons, such as to give mobile implementations an opportunity for offline devices to come online and send data, or to accommodate your organization's server-side processes in managing previously processed files.</p><p>Sessions must start after the processing delay cutoff in order to be included; sessions that start before the cutoff and end within the processing delay are not included.</p>"
+
+<!-- markdownlint-enable MD034 -->
+
+The processing delay is the amount of time that Customer Journey Analytics waits before processing a data feed file. Any late-arriving events that come in during the processing delay are included in the data feed. The default is 2 hours.
+
+>[!BEGINSHADEBOX]
+
+**Example:**
+
+Suppose an hourly data feed includes data from 1:00 PM to 2:00 PM and the processing delay is 2 hours. Processing for that data feed file begins at 4:00 PM and includes any data that arrived before processing begins.
+
+>[!ENDSHADEBOX]
+
+Processing delays are useful for various reasons, such as to give mobile implementations an opportunity for offline devices to come online and send data, or to accommodate your organization's server-side processes in managing previously processed files.
+
+Sessions must start after the processing delay cutoff in order to be included. Sessions that start before the cutoff and end within the processing delay are not included.
+
+### Choose a processing delay based on your data
+
+Different types of data take varying amounts of time to become available in Customer Journey Analytics, so the delay you choose depends on the data in your connection. Data must first arrive in the Experience Platform data lake. Ingestion from the data lake into Customer Journey Analytics can then take up to 90 minutes (see [Latencies](/help/technotes/guardrails.md#latencies)).
+
+A connection can combine streaming and batch data from many sources, and each dataset can arrive on its own schedule. Choose a delay that accommodates the slowest data that you want included in the data feed:
+
+* **Event datasets from the Edge Network or streaming ingestion**: Data typically arrives in the data lake within 60 minutes (see [Latencies](/help/technotes/guardrails.md#latencies)).
+* **Analytics source connector datasets**: Data typically arrives in the data lake within 2.25 hours (see [Latencies](/help/technotes/guardrails.md#latencies)).
+* **Datasets from other source connectors**: Latency varies by source connector and by when batches are sent. Upstream processing in Experience Platform, such as Data Prep, can add more time.
+* **Stitched datasets**: Stitching can add up to 4 hours (see [Latencies](/help/technotes/guardrails.md#latencies)). If stitching is enabled for the connection, set the delay to at least 6 hours, and potentially 8 hours. Data that is updated by a stitching replay is generally not included in data feed files that were already processed.
+* **Lookup datasets**: Lookup data is typically uploaded as a full copy of a database, in which only a small percentage of records have changed. Small uploads are usually processed within the default delay. Large uploads (for example, a weekly upload of millions of records) are processed at a lower priority and can take several hours longer. Event data is not delayed in this case, but lookup values might not reflect the newest updates. Upload lookup data in smaller batches to shorten processing time.
+* **Profile datasets**: Profile data is typically ingested in large batches, such as a daily snapshot of the full profile table. The same considerations as lookup datasets apply.
 
 
 
