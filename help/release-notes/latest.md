@@ -1,7 +1,6 @@
 ---
 title: Current Customer Journey Analytics Release Notes
 description: View the latest Customer Journey Analytics release notes, including new features, fixed issues, and postponed releases for the current period.
-hold: true
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 TQID: 'https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w'
@@ -68,22 +67,22 @@ These release notes cover the September 2026 release period. Adobe Customer Jour
 
 ### Fixes in Customer Journey Analytics
 
-**Analysis Workspace**: AN-487374, AN-487119, AN-468907, AN-468810, AN-468363, AN-468096, AN-467414, AN-466986, AN-466982, AN-465073, AN-463571, AN-462373, AN-492801, AN-488821, AN-488452, AN-486517, AN-478930, AN-468325
-**Components**:
-**Connections**: AN-451458, AN-365942
-**Content Analytics**:
-**Guided analysis**: AN-485600
-**Exports**: AN-489161, AN-467131, AN-464746, AN-469034, AN-447252, AN-437803, AN-394444
-**Data views**: AN-478732, AN-468836, AN-467851, AN-487651, AN-423592
-**Data ingestion**: AN-489829, AN-489722, AN-469451, AN-467436, AN-467049, AN-466087, AN-465049, AN-463524, AN-457433, AN-490288, AN-487500, AN-390916, AN-342311
-**Implementation**:
-**Report Builder**: AN-487486, AN-478944, AN-470036, AN-468589, AN-468436, AN-456747, AN-456700, AN-442695, AN-492330, AN-490564, AN-468293, AN-460921
-**Reporting**: AN-479145, AN-469095, AN-468070, AN-467786, AN-456684, AN-465257, AN-422685, AN-406114, AN-356706, AN-322733
-**Segmentation**: AN-486561, AN-278260
-**Scheduled reports**: AN-479157
-**Shared metrics and dimensions**:
-**Audience Analysis**: AN-468237, AN-462553
-**Other**: AN-469601, AN-462817, AN-362308, AN-349757, AN-326432, AN-326345, AN-324341, AN-309317
+**Analysis Workspace**: AN-495340, AN-494789, AN-493307, AN-468900
+**Components**: AN-492523
+**Connections**: AN-492236
+**Content Analytics**: 
+**Guided analysis**: AN-495592
+**Exports**: AN-495077, AN-494337, AN-486563, AN-469919, AN-462560, AN-462372
+**Data views**: AN-492093, AN-467770, AN-455367, AN-444467
+**Data ingestion**: AN-496439, AN-495339, AN-493456, AN-491984, AN-490515, AN-490479, AN-470065
+**Implementation**: 
+**Report Builder**: AN-496602, AN-494224, AN-493737, AN-493508, AN-493505, AN-492806, AN-468981, AN-454376
+**Reporting**: AN-495661, AN-493562, AN-487058, AN-478768
+**Segmentation**: 
+**Scheduled reports**: AN-491103, AN-468049
+**Shared metrics and dimensions**: AN-493722
+**Audience Analysis**: AN-469101
+**Other**: AN-493865
 
 ## Postponed features
 
