@@ -234,15 +234,13 @@ Examples of Bad IDs use cases:
 
 
 >[!NOTE]
->The **[!UICONTROL Stitching metrics]**, including **[!UICONTROL Bad IDs]**, are calculated based on a limited set of data. To identify Bad IDs presence for a dataset you plan to use for stitching, refer to the [Bad IDs technote](/help/technotes/badids.md).
+>The **[!UICONTROL Stitching metrics]**, including **[!UICONTROL Bad IDs]**, are calculated based on a limited set of data. To identify the Bad IDs presence for a dataset you plan to use for stitching, refer to the [Bad IDs technote](/help/technotes/badids.md).
 >
 
 
 ### Save
 
-
-
-Once you save a connection, the process of enabling stitching on the configured datasets is triggered. Once stitching is set up, the stitching service processes any live-streamed data and starts backfill from the event datasets in Experience Platform and subsequently ingests the data into the Customer Journey Analytics connection.
+Once you save a connection, the process of enabling stitching on the configured datasets is triggered. Once stitching service is set up, the service processes the live-streamed data and any requested backfill from the event datasets in Experience Platform. Subsequently, data is ingested into the Customer Journey Analytics connection.
 
 Each part of the process adds certain delays. Processing times below are guardrails, not contractual service level agreements (SLAs). 
 
@@ -252,15 +250,16 @@ For a valid initial connection setup that is saved and contains a stitching enab
 
   To ensure live data starts to flow in, enable the **[!UICONTROL Import all new data]** option for the dataset.
   
-  Any new data ingested into the source event dataset in Experience Platform appears in Customer Journey Analytics within four hours.
+  New data ingested into the Experience Platform source event dataset appears in Customer Journey Analytics within four hours.
 
-* Backfilled data (if initially requested) shows up in Customer Journey Analytics around the same time as live data, but takes days or weeks (less than 4 weeks) to process depending on the volumes involved. The backfilled data starts with the oldest event timestamp values.
+* Backfilled data (if initially requested) shows up in Customer Journey Analytics around the same time as live data, but can take days to fully process, depending on the volumes involved. The backfilled data starts with the oldest event timestamp values.
 
->[!CAUTION]
->
->For datasets that are enabled for stitching in the Connections interface, the backfill status cannot be reported currently due to a known limitation. Use other ways to verify whether data from the stitched dataset is backfilled.
->
+  >[!CAUTION]
+  >
+  >For datasets that are enabled for stitching in the Connections interface, the backfill status cannot be reported currently due to a known limitation. 
+  >
 
+  Use alternative ways to verify whether data from the stitched dataset is backfilled. For example, use the [Experience Platform Query Service UI](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview) to extract the events count for the relevant period from the dataset. Compare that events count against the events metric in [Customer Journey Analytics reporting](/help/analysis-workspace/home.md) for the same timeframe. If those numbers match, the backfill is completed.
 
 ## Limitations
 
