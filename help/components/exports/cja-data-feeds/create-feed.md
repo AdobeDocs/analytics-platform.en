@@ -61,26 +61,6 @@ Before you create a data feed, it's important to have a basic understanding of d
 
 <!-- markdownlint-enable MD034 -->
 
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_datafeed_user_agent"
->title=""
->abstract="User agent data and device lookup data cannot exist in the same data feed configuration."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_datafeed_required_dimensions"
->title="Required dimensions"
->abstract="Every data feed must include certain dimensions, identified by a **Required** label next to the dimension name. These dimensions provide the minimum structure needed for event-level analysis."
-
-<!-- markdownlint-enable MD034 -->
-
-
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
@@ -145,156 +125,7 @@ Before you create a data feed, it's important to have a basic understanding of d
 
    <!--add screenshot-->
 
-   +++ Dimensions that are always included in data feeds
-
-   The following dimensions are included by default in every data feed and cannot be removed:
-
-   | Dimension name | Notes | Data feeds | Other reporting |
-   |---|---|---|---|
-   | Timestamp UTC | The date and time the event occurred, represented in UTC time zone. Supports sub-second (micro-second) granularity. | Required | Not available |
-   | Row ID | The unique identifier for each row included in the data feed. | Required | Not available |
-   | Session ID | The unique identifier for each session included in the data feed. | Required | Not available |
-   | Person ID | The person identifier for the data view and connection | Required | Optional standard |
-   | Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Account ID when using the Account container | Required | Optional standard |
-   
-   +++
-
-   +++ Dimensions that cannot be included in data feeds
-
-   Customer Journey Analytics standard dimensions cannot be included in data feeds. The following table lists these dimensions:
-
-   | Dimension name | Notes | Data feeds |
-   |---|---|---|
-   | 5 Minute | Five-minute intervals when events occurred (rounded down) | Not available |
-   | 15 Minute | Fifteen-minute intervals when events occurred (rounded down) | Not available |
-   | 30 Minute | Thirty-minute intervals when events occurred (rounded down) | Not available |
-   | Day | Day an event occurred | Not available |
-   | Day of Week | Day of the week an event occurred | Not available |
-   | Day of Month | Day of the month an event occurred | Not available |
-   | Hour | Hour an event occurred (rounded down) | Not available |
-   | Hour of Day | Hour of the day an event occurred (rounded down) | Not available |
-   | Minute | Minute an event occurred (rounded down) | Not available |
-   | Minute of Hour | Minute of the hour an event occurred (rounded down) | Not available |
-   | Month | Month an event occurred | Not available |
-   | Month of Year | Month of the year an event occurred | Not available |
-   | Quarter | Quarter an event occurred | Not available |
-   | Quarter of Year | Quarter of the year an event occurred | Not available |
-   | Second | Second an event occurred (rounded down) | Not available |
-   | Week | Week an event occurred | Not available |
-   | Week of Year | Week of the year an event occurred | Not available |
-   | Year | Year an event occurred | Not available |
-
-   +++
-
-   +++ Metrics that cannot be included in data feeds
-
-   The following Customer Journey Analytics standard metrics cannot be included in data feeds:
-
-   | Metric name | Notes | Data feeds |
-   |---|---|---|
-   | Adobe Visitors Profile | | Not available |
-   | Adobe Opportunities Union | | Not available |
-   | Adobe Opportunities Profile | | Not available |
-   | Adobe Accounts Union | | Not available |
-   | Adobe Accounts Profile | | Not available |
-   | Adobe Buying Groups Union | | Not available |
-   | Adobe Buying Groups Profile | | Not available |
-   | Adobe Global Accounts Union | | Not available |
-   | Adobe Global Accounts Profile | | Not available |
-   | Adobe Persons Union | | Not available |
-   | Adobe Persons Profile | | Not available |
-
-   +++
-
-   +++ Dimensions that cannot be used together in data feeds
-
-   >[!IMPORTANT]
-   >
-   >Certain dimensions cannot be used together in Experience Platform datasets, and therefore cannot be included in the same data feed. 
-   >
-   >If you choose to include either the **User Agent** or **Mobile ID** dimensions in your data feed, the dimensions listed below cannot be added to the data feed.
-   >
-   >If you use the Web SDK, this restriction is enforced in datastreams before data arrives in an Experience Platform dataset. For more information, see [Configure device lookup](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Create and configure datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) in the Data Collection guide.
-
-   The following dimensions cannot be used together with the **User Agent** or **Mobile ID** dimensions:
-   
-   * Browser Type
-   * Browser
-   * Mobile Manufacturer
-   * Mobile Device Type
-   * Mobile Audio Support
-   * Mobile DRM
-   * Mobile Java VM
-   * Mobile Information Services
-   * Mobile Image Support
-   * Mobile Color Depth
-   * Mobile Net Protocols
-   * Mobile Device Number
-   * Mobile Max Email Length
-   * Mobile Mail Decoration
-   * Mobile Push To Talk
-   * Mobile Screen Width
-   * Mobile Max Browser URL Length
-   * Mobile Operating System (deprecated)
-   * Mobile Screen Height
-   * Mobile Video Support
-   * Mobile Cookie Support
-   * Mobile Max Bookmark Length
-   * Mobile Screen Size
-   * Mobile Device Name
-   * Operating System Types
-   * Operating Systems 
-
-   +++
-
-   +++ Metrics that must be substituted in data feeds
-
-   The following Customer Journey Analytics metrics must be substituted:
-
-   | Metric name | Notes | Data feeds |
-   |---|---|---|
-   | Accounts [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Based on Account ID specified in the connection | Not available. Use count distinct of Account ID. |
-   | Buying Group [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Buying groups based on Buying Group ID in the connection | Not available. Use count distinct of Buying Group ID. |
-   | Events | Number of rows from all event datasets in a connection | Not available. Use count distinct of Row ID. |
-   | Global Accounts [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Based on Global Accounts ID in the connection | Not available. Use count distinct of Global Accounts ID. |
-   | Opportunities [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Opportunities based on Opportunity ID in the connection | Not available. Use count distinct of Opportunity ID. |
-   | People | Based on Person ID specified in a connection | Not available. Use count distinct of Person ID. |
-   | Conversations | Number of conversations | Not available. Use count distinct of Conversation ID. |
-   | Session Ends | Number of events that were the last event of a session | Not available |
-   | Session Starts | Number of events that were the first event of a session | Not available |
-   | Sessions | Based on the data view's session settings | Not available. Use count distinct of Session ID. |
-   | Time Spent (seconds) | Sums the time between two different dimension values | Not available |
-
-   +++
-
-   +++ Optional standard components
-
-   | Component name | Type | Notes | Data feeds |
-   |---|---|---|---|
-   | AM/PM | Time-parting dimension | AM or PM | Not available |
-   | Batch ID | Dimension | Identifier for an Experience Platform batch | Available |
-   | Dataset ID | Dimension | Identifier for an Experience Platform dataset | Available |
-   | Day of Month | Time-parting dimension | 1–31 | Not available |
-   | Day of Week | Time-parting dimension | Monday through Sunday | Not available |
-   | Day of Year | Time-parting dimension | 1–366 | Not available |
-   | Event Depth | Dimension | Sequential numerical value (1, 2, 3, etc.) assigned to each event interaction within a session<p>Resets at the start of each new session</p> | Available |
-   | Hour of Day | Time-parting dimension | 0–23 | Not available |
-   | Month of Year | Time-parting dimension | January–December | Not available |
-   | First-time Sessions | Metric | A person's first defined session within the reporting window | Not available |
-   | Return Sessions | Metric | Sessions that were not a person's first-time session | Not available |
-   | Person ID namespace | Dimension | Type of ID the Person ID consists of (for example, email or cookie ID) | Available |
-   | Global Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Global Account ID when using the Global Account container | Available |
-   | Opportunity ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Opportunity ID when using the Opportunity container | Available |
-   | Buying Group ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimension | Buying Group ID when using the Buying Group container | Available |
-   | Quarter of Year | Time-parting dimension | Q1, Q2, Q3, Q4 | Not available |
-   | Repeat Session | Metric | Sessions that were not a person's first-ever session | Not available |
-   | Session Type | Dimension | Two values: First-Time or Returning | Not available |
-   | Time Spent per Event | Dimension | Buckets the Time Spent metric into event buckets | Not available |
-   | Time Spent per Session | Dimension | Buckets the Time Spent metric into session buckets | Not available |
-   | Time Spent per Person | Dimension | Buckets the Time Spent metric into person buckets | Not available |
-   | Weekend/Weekday | Time-parting dimension | Weekend or Weekday | Not available |
-
-   +++
+   Some components are required, unsupported, or have restrictions in data feeds. For details, see [Component availability in data feeds](/help/components/exports/cja-data-feeds/df-components.md).
 
 1. (Optional) Reorder components on the canvas by dragging them. The order you define is preserved as the column order in the exported data feed file.
 
@@ -330,7 +161,7 @@ Before you create a data feed, it's important to have a basic understanding of d
    | [!UICONTROL **End date**]<br/>Available only for backfill feeds | The date when the data feed ends. The end date cannot be in the future. The date is based on the data view's time zone. |
    | [!UICONTROL **Frequency**]<br/>Available only for live feeds | Select how often the data feed should be sent. Events with timestamps that fall within the frequency window are included in the data feed delivery. The [!UICONTROL **Lookback date range**] and [!UICONTROL **Processing delay**] fields can also affect which events are included in the data for the delivery frequency that you choose.<p>Select to include either one hour's worth of data or one day's worth of data.</p><ul><li>**Daily**: Feeds contain a full day's worth of data, from midnight to midnight in the data view's time zone.</li><li>**Hourly**: Feeds contain a single hour's worth of data.</li></ul> |
    | [!UICONTROL **Granularity**]<br/>Available only for backfill feeds | The time interval used to divide historical data into chunks. Each chunk contains a full day's worth of data, from midnight to midnight in the data view's time zone. <p>Granularity determines how the data is grouped, not how often it is delivered. Backfill data is delivered as quickly as possible, not once per day.</p><p>This field is always set to [!UICONTROL **Daily**] and cannot be modified.</p> |
-   | [!UICONTROL **Lookback date range**] | Controls how far back Customer Journey Analytics looks when processing the data feed delivery. The default is 30 days.<p>The frequency window (hour or day) determines which events are included in the data feed, while the **lookback date range** provides the needed historical context to classify those events correctly.</p><p>Segment qualification, dimension persistence, session calculation, and derived field transformations can all affect the events that are included.</p> <p>Before configuring this option, see the details and examples described in the section below, [Understand the lookback date range](#understand-the-lookback-date-range).</p> |
+   | [!UICONTROL **Lookback date range**] | Controls how far back Customer Journey Analytics looks when processing the data feed delivery. The default is 30 days.<p>The frequency window (hour or day) determines which events are included in the data feed, while the **lookback date range** provides the needed historical context to classify those events correctly.</p><p>Segment qualification, dimension persistence, session calculation, and derived field transformations can all affect the events that are included.</p> <p>Before configuring this option, see the details and examples described in the section below, [Understand the lookback date range](#data-feed-lookback-date-range).</p> |
    | [!UICONTROL **Processing delay**] | Choose the amount of time that Customer Journey Analytics waits before processing a data feed file. Any late-arriving events that come in during the processing delay are included in the data feed. <p>The minimum processing delay is 2 hours, but some types of data require a longer delay. The delay you choose depends on the types of data in your connection, such as streaming, batch, stitched, lookup, or profile data.</p><p>Choose a delay that is long enough for the slowest data in your connection to finish processing. If the delay is too short, data that is still processing is not included in the data feed file.</p><p>Before configuring this option, see the details and examples described in the section below, [Understand the processing delay](#data-feed-processing-delay).</p> |
    | [!UICONTROL **Compression format**] | Select the compression format for the Parquet output files delivered to your cloud destination. Choose from the following formats:<ul><li>[!UICONTROL **Snappy**]: Fast compression and decompression with moderate file sizes. Widely supported by modern data platforms such as BigQuery, Snowflake, and Apache Spark.</li><li>[!UICONTROL **GZip**]: Broadly compatible, including with tools that do not natively support Snappy. Recommended if your downstream pipeline requires a widely recognized compression standard.</li><li>[!UICONTROL **Z Standard (Zstd)**]: High compression efficiency with fast decompression. Suitable if minimizing file size is a priority and your tools support Zstd.</li></ul> |
 
