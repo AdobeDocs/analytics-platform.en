@@ -32,7 +32,7 @@ Which summary datasets are created is determined by the specific ad network. Not
 * Entity
 * Breakdowns 
 * Which datasets are populated ![Checkmark](/help/assets/icons2/Checkmark.svg) for the following networks:
-  * ![MetaMulti](/help/assets/icons2/MetaMulti.svg) Meta
+  * ![MetaSolid](/help/assets/icons2/MetaSolid.svg) Meta
   * ![GoogleAdsMulti](/help/assets/icons2/GoogleAdsMulti.svg) Google
   * ![PinterestMulti](/help/assets/icons2/PinterestMulti.svg) Pinterest
   * ![Snapchat](/help/assets/icons2/Snapchat.svg) Snapchat
@@ -41,17 +41,18 @@ Which summary datasets are created is determined by the specific ad network. Not
     >[!AVAILABILITY]
     >
     >Pinterest, Snapchat, and TikTok are in the Limited Testing phase of release and might not be available yet in your environment. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md)
+    >
 
 
 * what each row in a summary dataset represents. 
 
-| Summary dataset<br/>Event type<br/>Component suffix |  Entity | Breakdown | ![MetaMulti](/help/assets/icons2/MetaMulti.svg)| ![GoogleAdsMulti](/help/assets/icons2/GoogleAdsMulti.svg)| ![PinterestMulti](/help/assets/icons2/PinterestMulti.svg)| ![Snapchat](/help/assets/icons2/Snapchat.svg) | ![TikTok](/help/assets/icons2/TikTok.svg)| Each row represents |
+| Summary dataset<br/>Event type<br/>Component suffix |  Entity | Breakdown | ![MetaMulti](/help/assets/icons2/MetaSolid.svg)| ![GoogleAdsMulti](/help/assets/icons2/GoogleAdsMulti.svg)| ![PinterestMulti](/help/assets/icons2/PinterestMulti.svg)| ![Snapchat](/help/assets/icons2/Snapchat.svg) | ![TikTok](/help/assets/icons2/TikTok.svg)| Each row represents |
 |---|---|---|:---:|:---:|:---:|:---:|:---:|---|
 | `paidmedia_ad_summary` <br/> `ad.summary`<br/>`\| Ad Summary` | Ad | none | ![Checkmark](/help/assets/icons2/Checkmark.svg) | ![Checkmark](/help/assets/icons2/Checkmark.svg) | ![Checkmark](/help/assets/icons2/Checkmark.svg)| ![Checkmark](/help/assets/icons2/Checkmark.svg) | ![Checkmark](/help/assets/icons2/Checkmark.svg) | An ad's daily performance without demographic or geographic breakdowns. |
-| `paidmedia_ad_demographics` <br/> `ad.demographics`<br/>`\| Ad Demo` | Ad | age, gender | ![Checkmark](/help/assets/icons2/Checkmark.svg) | | ![Checkmark](/help/assets/icons2/Checkmark.svg) | ![Checkmark](/help/assets/icons2/Checkmark.svg) | ![Checkmark](/help/assets/icons2/Checkmark.svg) | An ad's daily performance broken down by age and gender. | 
+| `paidmedia_ad_demographics` <br/> `ad.demographics`<br/>`\| Ad Demo` | Ad | age, gender | ![Checkmark](/help/assets/icons2/Checkmark.svg) | | ![Checkmark](/help/assets/icons2/Checkmark.svg) | ![Checkmark](/help/assets/icons2/Checkmark.svg) | ![Checkmark](/help/assets/icons2/Checkmark.svg) | An ad's daily performance broken down by age and gender. |
 | `paidmedia_ad_geography` <br/> `ad.geography`<br/>`\| Ad Geo` | Ad | country, region | ![Checkmark](/help/assets/icons2/Checkmark.svg) | | ![Checkmark](/help/assets/icons2/Checkmark.svg) | ![Checkmark](/help/assets/icons2/Checkmark.svg) | ![Checkmark](/help/assets/icons2/Checkmark.svg) | An ad's daily performance broken down by country and region. |
 | `paidmedia_experience_placement` <br/> `ad.experience.placement`<br>`\| Experience Placement` | Experience | platform, position | ![Checkmark](/help/assets/icons2/Checkmark.svg) | ![Checkmark](/help/assets/icons2/Checkmark.svg) | ![Checkmark](/help/assets/icons2/Checkmark.svg) | ![Checkmark](/help/assets/icons2/Checkmark.svg) | ![Checkmark](/help/assets/icons2/Checkmark.svg) | Daily performance associated with an ad's creative experience, broken down by platform and position. |
-| `paidmedia_asset_summary` <br/>`ad.asset.summary`<br/>`\| Asset Summary` | Asset | none | ![Checkmark](/help/assets/icons2/Checkmark.svg) | ![Checkmark](/help/assets/icons2/Checkmark.svg) | | | ![Checkmark](/help/assets/icons2/Checkmark.svg) | Daily asset-level performance in its ad/campaign context, without demographic or geographic breakdown. | 
+| `paidmedia_asset_summary` <br/>`ad.asset.summary`<br/>`\| Asset Summary` | Asset | none | ![Checkmark](/help/assets/icons2/Checkmark.svg) | ![Checkmark](/help/assets/icons2/Checkmark.svg) | | | ![Checkmark](/help/assets/icons2/Checkmark.svg) | Daily asset-level performance in its ad/campaign context, without demographic or geographic breakdown. |
 | `paidmedia_assets_demographics` <br/> `ad.asset.demographics`<br/>`\| Asset Demo` | Asset | age, gender | ![Checkmark](/help/assets/icons2/Checkmark.svg) | | | | | Daily asset-level performance in its ad/campaign context, broken down by age and gender. |
 
 
