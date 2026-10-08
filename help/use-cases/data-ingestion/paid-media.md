@@ -39,6 +39,12 @@ Authentication to the connector uses [!DNL OAuth 2.0]. During setup, you sign in
 
 ## Paid media data model
 
+
+| Dataset | eventType | Entity | Breakdown | ![MetaMulti](/help/assets/icons2/MetaMulti.svg) | ![GoogleAdsMulti](/help/assets/icons2/GoogleAdsMulti.svg)| ![PinterestMulti](/help/assets/icons2/PinterestMulti.svg)| ![Snapchat](/help/assets/icons2/Snapchat.svg) | ![TikTok](/help/assets/icons2/TikTok.svg)| 
+|---|---|---|---|---|---|---|---|---|
+| `paidmedia_ad_summary` | `ad.summary` | Ad | none | ![CheckmarkCircleFilled](/help/assets/icons2/CheckmarkCircleFilled.svg) | ![CheckmarkCircleFilled](/help/assets/icons2/CheckmarkCircleFilled.svg) | ![CheckmarkCircleFilled](/help/assets/icons2/CheckmarkCircleFilled.svg)| ![CheckmarkCircleFilled](/help/assets/icons2/CheckmarkCircleFilled.svg) | ![CheckmarkCircleFilled](/help/assets/icons2/CheckmarkCircleFilled.svg)
+
+
 [Summary metrics datasets](#summary-metrics-datasets) act as the fact tables, and lookup datasets provide the related dimensions. The lookup datasets join to the summary metrics datasets by entity `GUID` and native ID values for accounts, campaigns, ad groups, ads, assets, and experiences.
 
 The lookup datasets share two common building blocks:
