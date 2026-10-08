@@ -62,7 +62,6 @@ Separate lookup datasets describe Account, Campaign, Ad Group, Ad, Experience, a
 
 Summary data grouping brings equivalent dimensions together; the grouping does not total the six performance metric totals. 
 
-
 ## Components
 
 The Content Analytics Paid media channel, once enabled, also generates a number of data view components. These components are provided with a component suffix to distinct similar named components from each other.
