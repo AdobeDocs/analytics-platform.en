@@ -2,23 +2,34 @@
 title: Implement Conversation Insights
 description: Learn how to instrument your agent application or service for Conversation Insights.
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
-hold: true
+autotag-review: '2026-10-02T07:03:13.165Z'
+TQID: 'https://experienceleague.adobe.com/tjjZwA5Ayvtz35ffQAkcCwhCzBUB6X4puMjFsiJ0HUY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
 feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-    internal-label: Components
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-    internal-label: Content Analytics
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+  - id: d7a261eb-f9ac-4dd6-bd60-1637efcd3d36
+    internal-label: Conversation Insights
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Implement Conversation Insights
 
@@ -29,19 +40,236 @@ This article documents the required implementation steps.
 >[!PREREQUISITES]
 >
 >* You must have an Experience Platform environment (organization and sandbox) available to collect the data.
->* Your Adobe organization must be enabled for the experimental agentic and conversation field groups.
+>* Your Adobe organization must be enabled for the agentic and conversation field groups.
 >
 
 ## Schema and datasets
 
-Configure datasets for the primary conversation events: prompt, response, feedback. These datasets can be based on the same schema (for example, a generic Conversation Insights schema) or based on individual schemas. 
-You can define separate datasets for prompts, responses, and feedback or combine data into datasets. For example, use one dataset for prompts and responses and another dataset for feedback. Or use a single dataset for all conversation events. 
+Configure datasets for the primary conversation events: prompt, response, feedback. The prompt, response, and feedback datasets must extend the XDM Experience Event base schema with the [Conversation Event field group](#conversation-event-field-group) and can optionally include the [Agentic Information field group](#agentic-information-field-group) and other [additional field groups](#additional-field-groups). 
 
-The schema used for the prompt, response, and feedback datasets must extend the XDM Experience Event base schema with required field groups. And can extend the XDM Experience Event base schema with additional field groups.
+You can define separate datasets for prompts, responses, and feedback or combine data into datasets. For example, use one dataset for prompts and responses and another dataset for feedback. Or use a separate dataset for each type of conversation event as illustrated in [How it works](/help/conversation-insights/overview.md#how-it-works).
+
+To illustrate, use:
+
+* **Discrete dataset implementation**. Separate datasets for prompt, response, and feedback events. Follow this implementation approach if you:
+  
+  * Want to maintain less state on your client implementation.
+  * Send prompt data regardless of a delayed or non-existent response.
+  
+* **Combined dataset implementation**. For example, a combined prompt and response events dataset and a separate feedback events dataset.  Follow this implementation approach if you:
+  
+  * Want to reduce calls because your implementation supports complete turns.
+  * Do not care about latency when waiting for responses to arrive.
+
+>[!IMPORTANT]
+>
+>Use the same underlying schema for the datasets.
+>
+
+Dataset layout and the delivery of conversation events into these datasets are separate concerns. Send each conversation event as soon as data is available to ensure stable conversation identifiers and turn identifiers. Stable identifiers facilitate proper correlation by the [Conversation Blender service](#data-blending) across datasets.
+
+
+### Conversation Event field group
+
+The **[!UICONTROL Conversation Event]** field group is a required field group and uses  the `conversation` object.
+
+The conversation object captures data for:
+
+#### Conversation
+
+A unique `conversationID` identifies a conversation. For example: `conversationID = "conv-001"`. The `conversationID` allows all related turns events to be grouped into the same conversational experience.
+
+The schema also supports `conversationName`. A human-readable name that describes the overall context of the conversation, such as: `France Geography Q&A`. The conversation name is auto generated but you can update the generated name. The conversation name is also populated to `signals[].name`. Adobe populates the `conversationName` with the same value as the `signals[].name` = "title" signal. You can set the `conversation.conversationName` on any dataset you populate and overwrite the Adobe provided value.
+
+#### Turn
+
+A turn is one interaction cycle within a conversation.
+
+`turnID` A unique `turnID` identifies a turn. For example:
+
+`conversationID = "conv-001"`
+`turnID = "turn-001"`
+
+The same `conversationID` and `turnID` are used to correlate the prompt, response, and feedback associated with that turn. That correlation works across records that are delivered separately or end up in different datasets. A `turnId` only needs to be unique within the same conversation but can be reused across conversations. For example, you can have both `turn-001` as the `turnID` in conversations with `conversationID` `conv-001` and `conv-002`.
+
+
+#### Prompt
+
+A prompt is the input submitted to the agent. In most customer scenarios, this input is the user's question, request, instruction, or message.
+
+The prompt uses the following representation: `conversation.prompt`
+
+Important prompt fields include:
+
+|Field |   Meaning |
+|---|---|
+|`prompt.source`  |  Who or what produced the prompt, commonly end-user. |
+| `prompt.raw[]` | One or more raw content segments. |
+| `prompt.raw[].text`  |  The actual prompt text or link to content (for example, a screenshot). |
+| `prompt.raw[].purpose` | The purpose of the content, such as User Input or link. |
+
+A prompt can contain multiple raw segments. For example, a user enters text and includes a URL. 
+
+* `Prompt`
+  * `"What is the capital of France"`
+  * `"https://example.com/france"`
+
+
+#### Response
+
+A response is the content returned by the agent or another responding party.
+
+`conversation.response` A unique `responseID` represents the response. 
+
+Important response fields include:
+
+| Field | Meaning |
+|---|---|
+| `response.source` | Who or what produced the response. |
+| `response.raw[]` | One or more response-content segments |
+| `response.raw[].text` | The response text or content. |
+| `response.raw[].purpose` | The purpose of the content segment. |
+
+The documented source types include:
+
+<!-- randy buck to provide additional details -->
+
+| Source |  Meaning |
+|---|----|
+| `bot`  | Automated agent response. |
+| `canned` |   Predefined or templated response. |
+| `concierge` | Human agent response. |
+| `end-user` | Human user-generated content where applicable. |
+
+#### Feedback
+
+Feedback is the user's explicit evaluation or reaction to the interaction.
+
+The feedback structure includes: `conversation.feedback`.
+
+Examples:
+
+* `feedback.raw[].text: "Great help"`
+* `feedback.rating.score:` 1
+* `feedback.rating.classification`: `"Thumbs Up"`
+* `feedback.rating.reasons[]: ["Accurate", "Quick response"]`
+
+The documented rating score range is from `-1.0` to `1.0`.
+
+A feedback event can be represented as a feedback-only event using: `eventType = "conversation.feedback"`.
+
+When feedback applies to a particular turn, preserve the appropriate `conversationID` and `turnID` so that the conversation blender can associate the feedback with the relevant interaction.
+
+
+#### Signal
+
+A signal is a structured analytical observation about conversation content. The [Signal extraction service](#signal-extraction) provides out of the box signals. No action is required to provide signals, but you can add signals as part of the integration.
+
+A signal has the following fields.
+
+| Field |   Meaning|
+|---|----|
+| `scope` |   The input range used to derive the signal, such as turn or conversation-to-date. |
+| `name`  |  The signal identifier, such as subjects, intents, tones, or sentiment. Poducer-defined signal names are also supported. |
+| `type` |   The value type: string, number, or boolean. |
+| `values[]`  |  One or more values associated with the signal. |
+| `stringValue`  |  A string signal value, such as an intent, tone, or subject. |
+| `numberValue`  |  A numeric signal value, such as a sentiment score. |
+| `booleanValue`  |  A true/false signal value. |
+| `confidence`  |  Optional producer confidence in the signal value, normally between 0 and 1. |
+| `qualifiers[]` |   Optional descriptors that add context to a signal value. |
+| `metadata[]` |   Optional producer-defined key/value metadata. |
+
+
+The signal extraction service populates the `signals` object for the signals dataset. 
+
+The previous `signals[].attributes.{subjects,intents,tones,sentiment}` container is deprecated.
+
+#### Source type
+
+You need to set a value for `source` for each `prompt`, `response`, or `feedback` object in an event. Any value is acceptable. Use values that help you to understand where data originates from. For example:
+
+| Value | Description |
+|---|---|
+| `end-user` | Human user input. |
+| `agent` | Agent input. |
+| `bot` | Automated agent response. |
+| `canned-prompt` | Pre-defined/templated response. |
+| `concierge` | Human agent response. |
+
+#### Purpose type (raw text)
+
+You need to set a value for the `purpose` attribute on any element of the `raw` object in a `prompt`, `response`, or `feedback` object. Any string value is acceptable. This field is used to differentiate what is stored in the raw text. Useful values are below, other values are equally valid:
+
+| Value | Description |
+|---|---|
+| `free-form-text` | Free-form text .|
+| `screenshot` | Screenshot details. |
+| `attachment` | Attachment details. |
+| `link` | External links. |
+| `url` | URL. |
+| `image-link` | Link to image. |
+| `citation` | Citation. |
+| `media` | Media. |
+
+
+
+#### Conversation
+
+See below for the full details of a conversation object.
+
++++ Details 
+
+| Field Path (Dot Notation) | Type | Example Value | Notes |
+|---|---|---|---|
+| `conversationID` | string | `"conv-001"` | Groups multiple turns together. |
+| `conversationName` | string | `"France Geography Q&A"` | **New.** Name given to a conversation representing its overall context. |
+| `turnID` | string | `"turn-001"` | Unique ID for this turn. |
+| `prompt.source` | string | `"end-user"` | Source of prompt, other options might include a cached value, canned value, etc. |
+| `prompt.raw[]` | array | See raw object below | Raw prompt data. |
+| `prompt.raw[].text` | string | `"What is the capital of France?"` | Actual text content. |
+| `prompt.raw[].purpose` | string | `"User Input"` | Purpose of this text segment.|
+| `response.source` | string | `"bot"` | Source of response. |
+| `response.raw[]` | array | See raw object below | Raw response data. |
+| `response.raw[].text` | string | `"The capital of France is Paris."` | Response text content. |
+| `response.raw[].purpose` | string | `"main"` | Purpose of response segment, other options might include links, pictures, etc. |
+| `feedback.source` | string | `"end-user"` | Source of feedback. |
+| `feedback.raw[]` | array | See raw object below | Raw feedback data .|
+| `feedback.raw[].text` | string | `"Great help"` | Feedback text. |
+| `feedback.raw[].purpose` | string | `"free-form text"` | Purpose of feedback segment, other options might include screen-shots, media, etc. |
+| `feedback.rating.score` | number | `1` | Numerical rating score from `-1.0` to `1.0`. |
+| `feedback.rating.classification` | string | `"Thumbs Up"` | Rating classification.|
+| `feedback.rating.reasons[]` | array | `["Accurate", "Quick response"]` | Array of rating reasons. |
+| `signals[]` | array | See signal object below | Derived signals based on this event and the conversation to date. Each entry is a single named signal with its own scope. |
+| `signals[].scope` | string | `"turn"` | Scope of inputs from which this set of signals is derived (turn, conversation-to-date, last-N-turns, feedback). |
+| `signals[].attributes` | object | See attributes below | **Deprecated.** Container for signal attributes. Each attribute is an object with value or values in it. This is to accommodate the anticipated need to support population of ML/agent information used to generate the signal. |
+| `signals[].attributes.subjects` | object | See subjects below | **Deprecated.** Subjects container. |
+| `signals[].attributes.subjects.values[]` | array | See subject values below | **Deprecated.** Array of subject values. |
+| `signals[].attributes.subjects.values[].phrase` | string | `"product pricing"` | **Deprecated.** A phrase or keyword extracted from the scoped input. |
+| `signals[].attributes.subjects.values[].qualifiers[]` | array | `["important", "urgent"]` | **Deprecated.** List of qualifiers for the phrase |
+| `signals[].attributes.intents` | object | See intents below | **Deprecated.** Intents container. |
+| `signals[].attributes.intents.values[]` | array | `["make a purchase", "learn more"]` | **Deprecated.** Intents derived from the scoped input. |
+| `signals[].attributes.tones` | object | See tones below | **Deprecated.** Tones container. |
+| `signals[].attributes.tones.values[]` | array | `["thrilled", "contemplative"]` | **Deprecated.** Tones derived from the scoped input. |
+| `signals[].attributes.sentiment` | object | See sentiment below | **Deprecated.** Sentiment container. |
+| `signals[].attributes.sentiment.value` | number | `0.71` | **Deprecated.** Score from `-1` (negative) to `1` (positive) indicating sentiment. |
+| `signals[].name` | string | `"sentiment"` | **New** (replaces the deprecated `attributes` container). Identifier for this signal, e.g. "subjects", "intents", "tones", "sentiment", or any producer-defined name. Producers can add new signal types without a schema change. |
+| `signals[].type` | string | `"number"` | **New.** Data type of this signal's values (`string`, `number`, or `boolean`). Tells consumers which typed value field is populated on each entry of `values[]`. |
+| `signals[].values[]` | array | See values object below | One or more values for this signal. |
+| `signals[].values[].stringValue` | string | `"curious"` | Populated when `type` is string. A categorical value such as an intent, tone, or extracted phrase/ |
+| `signals[].values[].numberValue` | number | `0.71` | Populated when `type` is number. For example a sentiment score from `-1` to `1`, or an intensity/ |
+| `signals[].values[].booleanValue` | boolean | `true` | Populated when `type` is boolean. A `true` / `false` flag |
+| `signals[].values[].confidence` | number | `0.9` | **New.** Confidence the producer assigns to this value, from `0` to `1`. |
+| `signals[].values[].qualifiers[]` | array | `["important", "urgent"]` | Additional descriptors for this value, similar to keywords but more meaningful/ |
+| `signals[].values[].metadata[]` | array | See parameters below | **New.** Producer-defined metadata for this value as key/value pairs, e.g. context about the ML/agent that generated the signal/ |
+
++++
+
+
 
 ### Agentic Information field group
 
-The **[!UICONTROL Agentic Information]** field group is a required field group and uses the `agenticExperience` object.
+The **[!UICONTROL Agentic Information]** field group is an optional field group and uses the `agenticExperience` object. Consider using this field group if you want to track agentic information.
 
 +++ Details
 
@@ -57,7 +285,7 @@ The **[!UICONTROL Agentic Information]** field group is a required field group a
 | `agents[].name` | string | `"Chatbot Assistant"` | Agent name |
 | `agents[].version` | string | `"2.1.3"` | Agent version |
 | `agents[].score` | number | `0.92` | Agent confidence score in its the returned values |
-| `agents[].skills[]` | array | See skill object below | **Deprecated** — use the top-level `skills[]` array below instead, which owns the full ordered list of skill calls and links each one to its agent via `agentID` |
+| `agents[].skills[]` | array | See skill object below | **Deprecated**. Use the top-level `skills[]` array below instead, which owns the full ordered list of skill calls and links each one to its agent via `agentID` |
 | `agents[].skills[].name` | string | `"Intent Recognition"` | Skill name (deprecated array) |
 | `agents[].skills[].version` | string | `"1.0.0"` | Skill version (deprecated array) |
 | `agents[].skills[].score` | number | `0.95` | Skill confidence score (0-1) (deprecated array) |
@@ -74,7 +302,7 @@ The **[!UICONTROL Agentic Information]** field group is a required field group a
 | `skills[].score` | number | `0.95` | Score resulting from matching the skill |
 | `skills[].failed` | boolean | `false` | Flag stating that the skill execution failed |
 | `skills[].errorReason` | string | `"timeout"` | Reason the skill failed, when `failed` is true |
-| `skills[].sequenceNumber` | integer | `1` | Monotonically increasing index of this skill call within a single agent execution — not turn-global, since subagents run in parallel. Consumers order by `agentID`, then `sequenceNumber`, then `timestamp` as tiebreaker. Optional |
+| `skills[].sequenceNumber` | integer | `1` | Monotonically increasing index of this skill call within a single agent execution. This index is not turn-global, since subagents run in parallel. Consumers order by `agentID`, then `sequenceNumber`, then `timestamp` as tiebreaker. Optional |
 | `skills[].timestamp` | string (date-time) | `"2026-09-11T00:03:15Z"` | Time the skill was invoked, ISO 8601 UTC. Ordering key used after `sequenceNumber`. Producers should always populate this |
 | `skills[].skillSource` | string | `"inline"` | How the skill definition was delivered to the runtime: `inline` (loaded inline into context) or `deferred` (loaded on demand) |
 | `skills[].executionContext` | string | `"inline"` | Where the skill executes relative to the calling agent: `inline` or `forked` (runs in a forked sub-agent context) |
@@ -204,175 +432,6 @@ To implement events propagating the Agentic Information field group with data, y
 
 +++
 
-
-### Conversation Event field group
-
-The **[!UICONTROL Conversation Event]** field group is a required field group and uses  the `conversation` object.
-
-The conversation object captures data for:
-
-#### Conversation
-
-A unique `conversationID` identifies a conversation. For example: `conversationID = "conv-001"`. The schema also supports `conversationName`. A human-readable name that describes the overall context of the conversation, such as: `France Geography Q&A`.
-
-The `conversationID` allows all related turns events to be grouped into the same conversational experience.
-
-#### Turn
-
-A turn is one interaction cycle within a conversation.
-
-`turnID` A unique `turnID` identifies a turn. For example:
-
-`conversationID = "conv-001"`
-`turnID = "turn-001"`
-
-The same `conversationID` and `turnID` are used to correlate the prompt, response, and feedback associated with that turn. That correlation works across records that are delivered separately or end up in different datasets.
-
-
-#### Prompt
-
-A prompt is the input submitted to the agent. In most customer scenarios, this input is the user's question, request, instruction, or message.
-
-The prompt uses the following representation: `conversation.prompt`
-
-Important prompt fields include:
-
-|Field |   Meaning |
-|---|---|
-|`prompt.source`  |  Who or what produced the prompt, commonly end-user. |
-| `prompt.raw[]` | One or more raw content segments. |
-| `prompt.raw[].text`  |  The actual prompt text or content. |
-| `prompt.raw[].purpose` | The purpose of the content, such as User Input or link. |
-
-A prompt can contain multiple raw segments. For example, a user enters text and includes a URL. 
-
-* `Prompt`
-  * `"What is the capital of France"`
-  * `"https://example.com/france"`
-
-
-#### Response
-
-A response is the content returned by the agent or another responding party.
-
-`conversation.response` A unique `responseID` represents the response. 
-
-Important response fields include:
-
-| Field | Meaning |
-|---|---|
-| `response.source` | Who or what produced the response. |
-| `response.raw[]` | One or more response-content segments |
-| `response.raw[].text` | The response text or content. |
-| `response.raw[].purpose` | The purpose of the content segment. |
-
-The documented source types include:
-
-| Source |  Meaning |
-|---|----|
-| `bot`  | Automated agent response. |
-| `canned` |   Predefined or templated response. |
-| `concierge` | Human agent response. |
-| `end-user` | Human user-generated content where applicable. |
-
-#### Feedback
-
-Feedback is the user's explicit evaluation or reaction to the interaction.
-
-The feedback structure includes: `conversation.feedback`.
-
-Examples:
-
-* `feedback.raw[].text: "Great help"`
-* feedback.rating.score: 1
-* feedback.rating.classification: "Thumbs Up"
-* `feedback.rating.reasons[]: ["Accurate", "Quick response"]`
-
-The documented rating score range is from `-1.0` to `1.0`.
-
-A feedback event can be represented as a feedback-only event using: `eventType = "conversation.feedback"`.
-
-When feedback applies to a particular turn, preserve the appropriate `conversationID` and `turnID` so that the conversation blender can associate the feedback with the relevant interaction.
-
-
-#### Signal
-
-A signal is a structured analytical observation about conversation content. The signal extraction service extracts signals.
-
-A signal has the following fields.
-
-| Field |   Meaning|
-|---|----|
-| `scope` |   The input range used to derive the signal, such as turn or conversation-to-date. |
-| `name`  |  The signal identifier, such as subjects, intents, tones, or sentiment. Poducer-defined signal names are also supported. |
-| `type` |   The value type: string, number, or boolean. |
-| `values[]`  |  One or more values associated with the signal. |
-| `stringValue`  |  A string signal value, such as an intent, tone, or subject. |
-| `numberValue`  |  A numeric signal value, such as a sentiment score. |
-| `booleanValue`  |  A true/false signal value. |
-| `confidence`  |  Optional producer confidence in the signal value, normally between 0 and 1. |
-| `qualifiers[]` |   Optional descriptors that add context to a signal value. |
-| `metadata[]` |   Optional producer-defined key/value metadata. |
-
-
-The signal extraction service populates the `signals` object for the signals dataset. 
-
-The previous `signals[].attributes.{subjects,intents,tones,sentiment}` container is deprecated.
-
-#### Conversation
-
-See below for the full details of a conversation object.
-
-+++ Details 
-
-| Field Path (Dot Notation) | Type | Example Value | Notes |
-|---|---|---|---|
-| `conversationID` | string | `"conv-001"` | Groups multiple turns together |
-| `conversationName` | string | `"France Geography Q&A"` | **New.** Name given to a conversation representing its overall context |
-| `turnID` | string | `"turn-001"` | Unique ID for this turn |
-| `prompt.source` | string | `"end-user"` | Source of prompt, other options might include a cached value, canned value, etc. |
-| `prompt.raw[]` | array | See raw object below | Raw prompt data |
-| `prompt.raw[].text` | string | `"What is the capital of France?"` | Actual text content |
-| `prompt.raw[].purpose` | string | `"User Input"` | Purpose of this text segment |
-| `response.source` | string | `"bot"` | Source of response |
-| `response.raw[]` | array | See raw object below | Raw response data |
-| `response.raw[].text` | string | `"The capital of France is Paris."` | Response text content |
-| `response.raw[].purpose` | string | `"main"` | Purpose of response segment, other options might include links, pictures, etc. |
-| `feedback.source` | string | `"end-user"` | Source of feedback |
-| `feedback.raw[]` | array | See raw object below | Raw feedback data |
-| `feedback.raw[].text` | string | `"Great help"` | Feedback text |
-| `feedback.raw[].purpose` | string | `"free-form text"` | Purpose of feedback segment, other options might include screen-shots, media, etc. |
-| `feedback.rating.score` | number | `1` | Numerical rating score from -1.0 to 1.0 |
-| `feedback.rating.classification` | string | `"Thumbs Up"` | Rating classification |
-| `feedback.rating.reasons[]` | array | `["Accurate", "Quick response"]` | Array of rating reasons |
-| `signals[]` | array | See signal object below | Derived signals based on this event and the conversation to date. Each entry is a single named signal with its own scope |
-| `signals[].scope` | string | `"turn"` | Scope of inputs from which this set of signals is derived (turn, conversation-to-date, last-N-turns, feedback) |
-| `signals[].attributes` | object | See attributes below | **Deprecated.** Container for signal attributes. Each attribute is an object with value or values in it. This is to accommodate the anticipated need to support population of ML/agent information used to generate the signal. |
-| `signals[].attributes.subjects` | object | See subjects below | **Deprecated.** Subjects container |
-| `signals[].attributes.subjects.values[]` | array | See subject values below | **Deprecated.** Array of subject values |
-| `signals[].attributes.subjects.values[].phrase` | string | `"product pricing"` | **Deprecated.** A phrase or keyword extracted from the scoped input |
-| `signals[].attributes.subjects.values[].qualifiers[]` | array | `["important", "urgent"]` | **Deprecated.** List of qualifiers for the phrase |
-| `signals[].attributes.intents` | object | See intents below | **Deprecated.** Intents container |
-| `signals[].attributes.intents.values[]` | array | `["make a purchase", "learn more"]` | **Deprecated.** Intents derived from the scoped input |
-| `signals[].attributes.tones` | object | See tones below | **Deprecated.** Tones container |
-| `signals[].attributes.tones.values[]` | array | `["thrilled", "contemplative"]` | **Deprecated.** Tones derived from the scoped input |
-| `signals[].attributes.sentiment` | object | See sentiment below | **Deprecated.** Sentiment container |
-| `signals[].attributes.sentiment.value` | number | `0.71` | **Deprecated.** Score from -1 (negative) to 1 (positive) indicating sentiment |
-| `signals[].name` | string | `"sentiment"` | **New** (replaces the deprecated `attributes` container). Identifier for this signal, e.g. "subjects", "intents", "tones", "sentiment", or any producer-defined name — producers can add new signal types without a schema change |
-| `signals[].type` | string | `"number"` | **New.** Data type of this signal's values (`string`, `number`, or `boolean`) — tells consumers which typed value field is populated on each entry of `values[]` |
-| `signals[].values[]` | array | See values object below | One or more values for this signal |
-| `signals[].values[].stringValue` | string | `"curious"` | Populated when `type` is "string" — a categorical value such as an intent, tone, or extracted phrase |
-| `signals[].values[].numberValue` | number | `0.71` | Populated when `type` is "number" — for example a sentiment score from -1 to 1, or an intensity |
-| `signals[].values[].booleanValue` | boolean | `true` | Populated when `type` is "boolean" — a true/false flag |
-| `signals[].values[].confidence` | number | `0.9` | **New.** Confidence the producer assigns to this value, from 0 to 1 |
-| `signals[].values[].qualifiers[]` | array | `["important", "urgent"]` | Additional descriptors for this value, similar to keywords but more meaningful |
-| `signals[].values[].metadata[]` | array | See parameters below | **New.** Producer-defined metadata for this value as key/value pairs, e.g. context about the ML/agent that generated the signal |
-
-+++
-
-
-
-
 ### Additional field groups
 
 You can add optional field groups to the schema you use for prompt, response, and feedback datasets. For example:
@@ -380,11 +439,7 @@ You can add optional field groups to the schema you use for prompt, response, an
 * **Web Details** field group. To capture details of the web page the conversation was embedded in.
 * **Commerce Details** field group. To capture the product details of the recommended product mentioned as part of the conversation.
   
-
-
-The customer is responsible for producing the source conversation events. Adobe Platform subsequently performs signal extraction and data blending. The customer does not need to implement the signal-extraction or blending services.
-
-This document covers the Conversation Insights MVP input requirements and the current Agentic Schema Update. It does not include Conversation Insights 1.0 capabilities or later-release requirements.
+The customer is responsible for producing the source conversation events. Adobe performs signal extraction and data blending. The customer does not need to implement the signal-extraction or blending services.
 
 ### Event type
 
@@ -392,35 +447,9 @@ You need to set one of the following values for `eventType` (String) for each co
 
 | Value| Explanation |
 |---|---|
-| `conversation turn` |Complete conversation turn with prompt and response |
-| `conversation recommendation` | Conversation-based recommendation |
-| `conversation feedback` | Feedback-only event |
-
-
-### Source type
-
-You need to set one of the following values for `source` for each `prompt`, `response`, or `feedback` object in an event:
-
-| Value | Description |
-|---|---|
-| `end-user` |Human user input |
-| `bot` | Automated agent response |
-| `canned` | Pre-defined/templated response |
-| `concierge` | Human agent response |
-
-### Purpose type (raw text)
-
-You need to set one of the following values for the `purpose` attribute on any element of the `raw` object in a `prompt`, `response`, or `feedback` object.
-
-| Value | Description |
-|---|---|
-| `User Input` | Primary user input |
-| `main` | Main response content |
-| `advertisement` | Promotional content |
-| `citation` | Reference/source links |
-| `link` | External links |
-| `image` | Image references |
-| `enum picker` | Structured feedback selection |
+| `conversation.turn` | Complete conversation turn with prompt and response. |
+| `conversation.recommendation` | Conversation-based recommendation. |
+| `conversation.feedback` | Conversation feedback-only event. |
 
 
 ### Example
@@ -601,7 +630,6 @@ See below for example usage of the Conversation Event field group in various sce
 
 Use the following data collection strategy for Conversation Insights.
 
-
 ### Event types
 
 Your agent application or service sends an event as soon as possible. Ensure the app or service does not wait for a response before sending the prompt across with the information available at the time of the event.
@@ -631,7 +659,25 @@ The agent application or service generates IDs that remain stable during retries
 
 ## Signal extraction
 
-Signal extraction takes place after data collection. Your agent application or service does not populate additional signals.
+Signal extraction takes place after data collection. Your agent application or service can populate additional signals.
+
+### Signal name
+
+You need to set a value for `signals[].name`. Any string value is acceptable; however, Adobe populates the following names during the signal extraction process. Avoid using these values for `name` for any signals you send in because these values will be overwritten.
+
+* `intents`
+* `sentiment`
+* `tones`
+* `topics`
+* `keywords`
+* `title`
+
+### Signal scope
+
+Any string value is acceptable; however, Adobe populates the following scopes during the signal extraction process. Avoid using these values for `scope` for any signals you send in because these values will be overwritten.
+
+* `turn`
+* `feedback`
 
 +++ Example turn event with signals
 

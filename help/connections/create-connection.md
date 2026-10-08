@@ -556,7 +556,7 @@ You can add one or more Experience Platform datasets when you create or edit a c
    
    | Column | Description |
    |---|---|
-   | **[!UICONTROL Dataset]** | Name of the dataset. Select the name to direct you to the dataset in Experience Platform. Select ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to display a popup with more details for the dataset. You can select **[!UICONTROL Edit in Platform]** to edit the dataset directly in Experience Platform. |
+   | **[!UICONTROL Dataset]** | Name of the dataset. Select the name to direct you to the dataset in Experience Platform. Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup with more details for the dataset. You can select **[!UICONTROL Edit in Platform]** to edit the dataset directly in Experience Platform. |
    | **[!UICONTROL Dataset type]** | The type of dataset: [Event](#event-dataset), [Profile](#profile-dataset), [Lookup](#lookup-dataset), [Summary](#summary-dataset), [Adhoc](#ad-hoc-dataset), or [Relational](#relational-dataset). |
    | **[!UICONTROL Number of records]** | The total records in the previous month for the dataset in Experience Platform. |
    | **[!UICONTROL Schema]** | The schema for the dataset. Select the name to direct you to the schema in Experience Platform. |
@@ -564,10 +564,10 @@ You can add one or more Experience Platform datasets when you create or edit a c
    | **[!UICONTROL Dataset ID]** | The id of the dataset. |
    | **[!UICONTROL Last updated]** | The last updated timestamp of the dataset. |
 
-   * To change the columns displayed for the list of datasets, select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) and select the columns to be displayed in the [!UICONTROL Customize table] dialog.
-   * To search for a specific dataset, use the ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) search field.
-   * To toggle between showing or hiding the selected datasets, select ![Select](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL Hide selected]** or **[!UICONTROL Show selected]**.
-   * To remove a dataset from the list of selected datasets, use ![Close](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). To remove all selected datasets, select **[!UICONTROL Clear all]**.
+   * To change the columns displayed for the list of datasets, select ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) and select the columns to be displayed in the [!UICONTROL Customize table] dialog.
+   * To search for a specific dataset, use the ![Search](/help/assets/icons/Search.svg) search field.
+   * To toggle between showing or hiding the selected datasets, select ![SelectBoxAll](/help/assets/icons/SelectBoxAll.svg) **[!UICONTROL Hide selected]** or **[!UICONTROL Show selected]**.
+   * To remove a dataset from the list of selected datasets, use ![Close](/help/assets/icons2/Close.svg). To remove all selected datasets, select **[!UICONTROL Clear all]**.
    * To display details of a dataset, select ![InfoOutline](/help/assets/icons/InfoOutline.svg).
 
    
@@ -619,7 +619,7 @@ You can add one or more Experience Platform datasets when you create or edit a c
    
    | Column | Description |
    |---|---|
-   | **[!UICONTROL Dataset]** | Name of the dataset. Select the name to direct you to the dataset in Experience Platform. Select ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to display a popup with more details for the dataset. You can select **[!UICONTROL Edit in Platform]** to edit the dataset directly in Experience Platform. |
+   | **[!UICONTROL Dataset]** | Name of the dataset. Select the name to direct you to the dataset in Experience Platform. Select ![Info](/help/assets/icons/InfoOutline.svg) to display a popup with more details for the dataset. You can select **[!UICONTROL Edit in Platform]** to edit the dataset directly in Experience Platform. |
    | **[!UICONTROL Dataset type]** | The type of dataset: [Event](#event-dataset), [Profile](#profile-dataset), [Lookup](#lookup-dataset), [Summary](#summary-dataset), [Adhoc](#ad-hoc-dataset), or [Relational](#relational-dataset). |
    | **[!UICONTROL Number of records]** | The total records in the previous month for the dataset in Experience Platform. |
    | **[!UICONTROL Schema]** | The schema for the dataset. Select the name to direct you to the schema in Experience Platform. |
@@ -627,10 +627,10 @@ You can add one or more Experience Platform datasets when you create or edit a c
    | **[!UICONTROL Dataset ID]** | The id of the dataset. |
    | **[!UICONTROL Last updated]** | The last updated timestamp of the dataset. |
 
-   * To change the columns displayed for the list of datasets, select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) and select the columns to be displayed in the [!UICONTROL Customize table] dialog.
-   * To search for a specific dataset, use the ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) search field.
-   * To toggle between showing or hiding the selected datasets, select ![Select](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL Hide selected]** or **[!UICONTROL Show selected]**.
-   * To remove a dataset from the list of selected datasets, use ![Close](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). To remove all selected datasets, select **[!UICONTROL Clear all]**.
+   * To change the columns displayed for the list of datasets, select ![Column settings](/help/assets/icons/ColumnSetting.svg) and select the columns to be displayed in the [!UICONTROL Customize table] dialog.
+   * To search for a specific dataset, use the ![Search](/help/assets/icons/Search.svg) search field.
+   * To toggle between showing or hiding the selected datasets, select ![Select](/help/assets/icons/SelectBoxAll.svg) **[!UICONTROL Hide selected]** or **[!UICONTROL Show selected]**.
+   * To remove a dataset from the list of selected datasets, use ![Close](/help/assets/icons/Close.svg). To remove all selected datasets, select **[!UICONTROL Clear all]**.
    * To display details of a dataset, select ![InfoOutline](/help/assets/icons/InfoOutline.svg).
 
    
@@ -722,7 +722,29 @@ All datasets and dataset types have [general settings and details](#general-data
 
 
 
-#### Event dataset
+#### Event dataset {#event-dataset-settings}
+
+<!-- RIdM: Lengthy contextual help due to not yey allowed public facing docs. Modify when public facing docs are allowed. -->
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter"
+>title="Enable row filtering"
+>abstract="Row filters determine which events are ingested into Customer Journey Analytics. Only events that match your inclusion rules are ingested. All other events will be permanently excluded and unavailable for reporting, segmentation, or analysis in Customer Journey Analytics.<ul><li>You can create up to 10 filters.</li><li> Changes to filters apply only to new data ingested after the change and do not retroactively affect previously ingested data or trigger a historical backfill.</li></ul>"
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter_field"
+>title="Field"
+>abstract="Select a field from the event dataset to use for the condition. You can use any field of any type."
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter_operator"
+>title="Condition"
+>abstract="Select an operator. The operator is used to validate the selected field against the values."
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter_values"
+>title="Values"
+>abstract="Enter one or more values. The exact string value is used. Use a comma to separate values. Each comma separated value is considered distinct and is included in the condition."
 
 The specific settings for an event dataset are dependent on the type of connection.
 

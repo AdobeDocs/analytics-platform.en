@@ -228,7 +228,7 @@ To share an Analysis Workspace project with anyone:
    
    Any person you share the link with can view the Analysis Workspace project.
 
-1. (Optional) You can select ![Generate new link icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) to remove access from users who previously received a link to the project. A new link is generated that you can share with users who you want to access the project.
+1. (Optional) You can select ![Generate new link icon](/help/assets/icons/Refresh.svg) to remove access from users who previously received a link to the project. A new link is generated that you can share with users who you want to access the project.
 
 1. Select **[!UICONTROL Close]** to close the share dialog box. Your changes are automatically saved. 
 

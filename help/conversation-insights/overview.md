@@ -2,27 +2,42 @@
 title: Conversation Insights Overview
 description: Learn about the Conversation Insights value and terminlogy and learn how Conversation Insights works.
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
-hold: true
+autotag-review: '2026-10-02T07:02:10.598Z'
+TQID: 'https://experienceleague.adobe.com/5PahkoK4v7-PemV3onXn-CWL66hqVGuNauDBDlAeoeo'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
 feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-    internal-label: Components
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-    internal-label: Content Analytics
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+  - id: d7a261eb-f9ac-4dd6-bd60-1637efcd3d36
+    internal-label: Conversation Insights
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Conversation Insights
 
-Conversation Insights enables you to analyze conversations from the agent experiences you offer to your customers. Those agent experiences can be based on large language models (LLM) or based on human conversations. Conversation Insights analyzes the conversations at scale and provides context for these conversations  within the full customer journey. Through Conversation Insights you are able to understand the impact of agents on actual user outcomes.
+{{release-limited-testing}}
+
+Conversation Insights enables you to analyze conversations from the agent experiences you offer to your customers. Those agent experiences can be based on large language models (LLM) or based on human conversations. For example, a chatbot interacting with a customer or call center transcripts. 
+
+Conversation Insights analyzes the conversations at scale and provides context for these conversations  within the full customer journey. Through Conversation Insights you are able to understand the impact of agents on actual user outcomes.
 
 Conversation Insights addresses problems you might experience. Such as:
 
@@ -39,7 +54,7 @@ With Conversation Insights you are able to understand:
 * What users are asking from agents.
 * How the conversations impact your KPIs.
 
-You can determine how your agents are performing against the directives, how closely the agents are adhering to brand guidelines, and whether the cost of running agents is justified by the outcomes.
+You can determine how your agents are performing against the directives, how closely the agents are adhering to brand guidelines, and whether the outcomes justify the cost of running agents.
 
 
 ## Concepts
@@ -64,7 +79,7 @@ A conversation is the container or grouping level. That container is useful for 
 * How did sentiment change across a conversation?
 * Which conversations eventually led to a conversion?
 
-For implementation details, refer to the [conversation](./conversation-insights-implement.md#conversation) object in the [Implement Conversation Insights](./conversation-insights-implement.md) documentation.
+For implementation details, refer to the [conversation](./implement.md#conversation) object in the [Implement Conversation Insights](./implement.md) documentation.
 
 ### Turn
 
@@ -78,7 +93,7 @@ A typical turn consists of
 
 The turn is the primary analytical object for reporting purposes. The conversation blender service combines the available prompt, response, feedback, and signal information into turn-level records.
 
-For implementation details, refer to the [turn](./conversation-insights-implement.md#turn) object in the [Implement Conversation Insights](./conversation-insights-implement.md) documentation.
+For implementation details, refer to the [turn](./implement.md#turn) object in the [Implement Conversation Insights](./implement.md) documentation.
 
 ### Prompt
 
@@ -98,7 +113,7 @@ The prompt is the primary input from which Conversation Insights can derive anal
 * The user's sentiment
 * Other supported signals
 
-For implementation details, refer to the [prompt](./conversation-insights-implement.md#prompt) object in the [Implement Conversation Insights](./conversation-insights-implement.md) documentation.
+For implementation details, refer to the [prompt](./implement.md#prompt) object in the [Implement Conversation Insights](./implement.md) documentation.
 
 ### Response
 
@@ -114,7 +129,7 @@ A response often contains different types of content. For example:
 
 This distinction is useful because the analysis needs to separate the main answer from supporting links, citations, advertisements, or other response components.
 
-For implementation details, refer to the [response](./conversation-insights-implement.md#response) object in the [Implement Conversation Insights](./conversation-insights-implement.md) documentation.
+For implementation details, refer to the [response](./implement.md#response) object in the [Implement Conversation Insights](./implement.md) documentation.
 
 ### Feedback
 
@@ -129,13 +144,13 @@ The feedback can contain:
 
 Feedback is not necessarily available at the same time as the prompt or response. You can send the feedback at a later time from the agent application or service, after the user has evaluated the answer.
 
-For implementation details, refer to the [feedback](./conversation-insights-implement.md#feedback) object in the [Implement Conversation Insights](./conversation-insights-implement.md) documentation.
+For implementation details, refer to the [feedback](./implement.md#feedback) object in the [Implement Conversation Insights](./implement.md) documentation.
 
 ### Signal
 
 A signal is a structured analytical observation about conversation content. The signal extraction service extracts signals.
 
-For implementation details, refer to the [signal](./conversation-insights-implement.md#signal) object in the [Implement Conversation Insights](./conversation-insights-implement.md) documentation.
+For implementation details, refer to the [signal](./implement.md#signal) object in the [Implement Conversation Insights](./implement.md) documentation.
 
 
 ### Agent
@@ -146,7 +161,8 @@ To identify the agent application or service, for each Conversation Insights eve
 
 If your agent experience application supports the invocation of skills that represent capabilities invoked during processing, you can add these skill invocations as part of the agent information field group. 
 
-For implementation details, refer to the [agentic information](./conversation-insights-implement.md#agentic-information-field-group) field group in the [Implement Conversation Insights](./conversation-insights-implement.md) documentation.
+For implementation details, refer to the [agentic information](./implement.md#agentic-information-field-group) field group in the [Implement Conversation Insights](./implement.md) documentation.
+
 
 ## How it works
 
@@ -156,14 +172,14 @@ Conversation Insights is built upon three core functionalities:
 * **Signal extraction and conversation blending**: Transforms the unstructured prompts and responses (also known as turns) into reportable datapoints, like intent and sentiment. So users can report on those datapoints at scale.
 * **Reporting**: To determine an agent's efficacy and ROI, analyze conversations at scale in the context of the customer journey.
 
-The overall process of data collection, signal extraction and conversation blending is shown below.
+The overall process of data collection, signal extraction and conversation blending is described below.
 
 ![Conversation Insights How It Works illustration](assets/conversation-insights.png){zoomable="yes"}
 
 | | Description |
 |---|---|
-| 1 | You instrument your agent application or service to create events that contain prompts ![CommentText](/help/assets/icons2/CommentText.svg), responses ![CommentReply](/help/assets/icons2/CommentReply.svg), and feedback ![Feedback](/help/assets/icons2/Feedback.svg) datasets.<br/>For details on how to instrument your agent application or service, refer to the [implementation documentation](./conversation-insights-implement.md). |
-| 2 | The signal extraction service extracts signals from the prompts ![CommentText](/help/assets/icons2/CommentText.svg), responses ![CommentReply](/help/assets/icons2/CommentReply.svg), and feedback datasets ![Feedback](/help/assets/icons2/Feedback.svg) as signal events ![OnAir](/help/assets/icons/OnAir.svg) and stores these signal events in a new dataset.<br>This step is implemented as part of the definition a [Conversation Insights configuration](./conversation-insights-configure.md). |
-| 3 | The conversation blender service blends the events from the prompts ![CommentText](/help/assets/icons2/CommentText.svg), responses ![CommentReply](/help/assets/icons2/CommentReply.svg), feedback ![Feedback](/help/assets/icons2/Feedback.svg), and signals ![OnAir](/help/assets/icons/OnAir.svg) event datasets and outputs the blended ![Merge](/help/assets/icons/Merge.svg)events into a new dataset.<br>This step is implemented as part of the definition a [Conversation Insights configuration](./conversation-insights-configure.md). |
-| 4 | The blended ![Merge](/help/assets/icons/Merge.svg) dataset becomes part of the connection and the components defined in the schema used for the blended dataset become part of the dataview.<br>This step is implemented as part of the definition a [Conversation Insights configuration](./conversation-insights-configure.md). |
+| 1 | You instrument your agent application or service to create events that contain prompts ![CommentText](/help/assets/icons2/CommentText.svg), responses ![CommentReply](/help/assets/icons2/CommentReply.svg), and feedback ![Feedback](/help/assets/icons2/Feedback.svg) datasets.<br/>For details on how to instrument your agent application or service, refer to the [implementation documentation](./implement.md). |
+| 2 | The signal extraction service extracts signals from the prompts ![CommentText](/help/assets/icons2/CommentText.svg), responses ![CommentReply](/help/assets/icons2/CommentReply.svg), and feedback datasets ![Feedback](/help/assets/icons2/Feedback.svg) as signal events ![OnAir](/help/assets/icons/OnAir.svg) and stores these signal events in a new dataset.<br>This step is implemented as part of the definition of a [Conversation Insights configuration](./configure.md). |
+| 3 | The conversation blender service blends the events from the prompts ![CommentText](/help/assets/icons2/CommentText.svg), responses ![CommentReply](/help/assets/icons2/CommentReply.svg), feedback ![Feedback](/help/assets/icons2/Feedback.svg), and signals ![OnAir](/help/assets/icons/OnAir.svg) event datasets and outputs the blended ![Merge](/help/assets/icons/Merge.svg)events into a new dataset.<br>This step is implemented as part of the definition of a [Conversation Insights configuration](./configure.md). |
+| 4 | The blended ![Merge](/help/assets/icons/Merge.svg) dataset becomes part of the connection and the components defined in the schema used for the blended dataset become part of the dataview.<br>This step is implemented as part of the definition of a [Conversation Insights configuration](./configure.md). |
 

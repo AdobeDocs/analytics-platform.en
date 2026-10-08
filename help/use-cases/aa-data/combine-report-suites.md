@@ -112,9 +112,9 @@ The Experience Platform Data Prep functionality is integrated with the Analytics
 
 You have now mapped eVar1 and eVar2 from the source report suites to three new fields. Note that another advantage of using Data Prep mappings is that the destination fields are now based on semantically meaningful names (Search term, Business Unit, Customer category) instead of the less meaningful eVar names (eVar1, eVar2.)
 
-   >[!NOTE]
-   >
-   >The Unified Fields custom field group, and associated field mappings can be added to existing Analytics source connector dataflows and datasets at any time. However, this impacts going-forward data only.
+>[!NOTE]
+>
+>The Unified Fields custom field group, and associated field mappings can be added to existing Analytics source connector dataflows and datasets at any time. However, this impacts going-forward data only.
 
 ## More than just report suites
 

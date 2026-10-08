@@ -108,10 +108,10 @@ Product administrators are granted the necessary permissions to perform the foll
 
 In addition to being added as a Product administrator in the **Customer Journey Analytics Product Profile** in the [Admin Console](https://adminconsole.adobe.com/enterprise/), additional permissions are required to complete the following tasks within Customer Journey Analytics:
 
-* Create, update, and delete [data views](/help/data-views/data-views.md).
+* Create, update, and delete [data views](/help/data-views/data-views.md)
 * Create, update, and delete [connections](/help/connections/overview.md)
   
-  To perform this task, users must be part of an **Experience Platform Product Profile** that provides the following permissions:
+  To perform this task, users must be part of an **Experience Platform Role** that provides the following permissions:
 
   | Category | Permission | Description |
   |---|---|---|
@@ -120,11 +120,22 @@ In addition to being added as a Product administrator in the **Customer Journey 
   | [!UICONTROL Data Modeling] | [!UICONTROL Manage Schemas] | Access to read, create, edit, and delete schemas and related resources. |
   | [!UICONTROL Data Management] | [!UICONTROL View Datasets] | Read-only access for datasets and schemas. |
   | [!UICONTROL Identity Management] | [!UICONTROL View Identity Namespaces] | Read-only access for identity namespaces. |
-    
-    For more information on Experience Platform permissions, see [Manage permissions for a product profile](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
+  For more information on Experience Platform Roles, see [Access Control Overview](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
 
-* If Journey Optimizer is integrated with Customer Journey Analytics where Journey Optimizer Connections exist, then Journeys permissions must also be added to access Connections:
+* Manage [Shared Metrics & Dimensions](/help/data-views/shared-metrics-dimensions/smd-overview.md) 
+
+  To access the **Shared Metrics & Dimensions** manager, users must be part of an **Experience Platform Role** that provides the following permissions:
+
+  | Category | Permission | Description |
+  |---|---|---|
+  | [!UICONTROL Sandboxes] | [!UICONTROL All] | Access to all sandboxes. |
+  | [!UICONTROL Data Governance] | [!UICONTROL View Data Usage Policies] | Read-only access for data usage policies belonging to your organization. |
+  | [!UICONTROL Data Governance] | [!UICONTROL Manage Data Usage Policies] | Access to read, create, edit, and delete data usage policies. |
+
+  For more information on Experience Platform permissions, see [Sandboxes and permissions](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions).
+
+* If Journey Optimizer is integrated with Customer Journey Analytics where Journey Optimizer Connections exist, then [Journeys permissions](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability) must also be added to access Connections:
 
   | Category | Permission | Description |
   |---|---|---|
@@ -135,20 +146,21 @@ In addition to being added as a Product administrator in the **Customer Journey 
 
 * Export datasets to [destinations](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets)
   
-  To perform this task, users must be part of an **Experience Platform Product Profile** that provides the following permissions:
+  To perform this task, users must be part of an **Experience Platform Role** that provides the following [Destinations permissions](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home#access-controls):
   
   | Category | Permission | Description |
   |---|---|---|
   | [!UICONTROL Destinations] | [!UICONTROL Manage Destinations] | Access to read, create, and delete destination connections and destination accounts. |
   | [!UICONTROL Destinations] | [!UICONTROL Activate Destinations] | Allow users to activate segments to existing destinations. Enables the mapping step in the activation workflow. This permission also requires the View Destinations permission to be granted to the user who wants to activate data to destinations. |
     
-    For more information on Experience Platform permissions, see [Manage permissions for a product profile](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
+    For more information on Experience Platform permissions, see [Sandboxes and permissions](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions).
+    
 
 * Use the [BI extension](../data-views/bi-extension.md)
   
   For users to use the BI extension, a Product administrator
 
-  * must ensure the Experience Platform permissions for the user include a role that has the Query Service resource with the Manage Queries and Manage Query Service Integration options. For more information on Experience Platform permissions, see [Manage permissions for a product profile](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions). 
+  * must ensure that the Experience Platform permissions for the user include a role that has the Query Service resource with the Manage Queries and Manage Query Service Integration options. For more information on Experience Platform permissions, see [Access Control Overview](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home). 
 
       | Category | Permission | Description |
       |---|---|---|
@@ -156,20 +168,20 @@ In addition to being added as a Product administrator in the **Customer Journey 
       | [!UICONTROL Query Service] | [!UICONTROL Manage Query Service Integration] | Access to create, update, and delete non-expiring credentials for Query Service access. |
 
   * must ensure the proper Customer Journey Analytics permissions for the user:
-     * permission to access to the relevant data views. See [!UICONTROL Data Views] in [User-level access](#user-level-access).
+     * permission to access the relevant data views. See [!UICONTROL Data Views] in [User-level access](#user-level-access).
      * permission to access the Customer Journey Analytics BI extension. See [!UICONTROL Data View Tools] in [User-level access](#user-level-access).
 
 ### Product profile administrator role
 
 A product profile is a set of permissions. Product administrators create product profiles and can assign Product profile administrators to manage one or more product profiles. A Product profile administrator can then:
 
-* Manage the assigned product profiles. Such as adding or removing users or user groups and modify the permissions for the product profiles.
+* Manage the assigned product profiles by adding or removing users or user groups and modifying the permissions for the product profiles.
 
 * In Customer Journey Analytics, edit data views that are part of an assigned product profile. Product profile administrators cannot create new data views.
 
 ### User-level access
 
-The table below outlines the main access permissions for different Customer Journey Analytics capabilities that you can configure for relevant users. You can manage different level of user access through product profiles. A product profile combines a number of permissions, which you then can assign to individual users or user groups. 
+The table below outlines the main access permissions for different Customer Journey Analytics capabilities that you can configure for relevant users. You can manage different levels of user access through product profiles. A product profile combines a number of permissions, which you then can assign to individual users or user groups. 
 
 The **[!UICONTROL Permissions]** tab is part of each product profile in the [Admin Console](https://adminconsole.adobe.com/enterprise/). 
 
@@ -212,18 +224,18 @@ Here are a few use cases that illustrate how access control can be used in real-
 
 ### Third-party access
 
-You can provide Product profile administration access to a team lead of a third party that your company works. This admin can add users on the company's team to this product profile. This Product profile administrator can give access to specific data views and add other users within the third party to this product profile. The Product profile administrator can modify data views to fit the third party team's requirements.
+You can provide Product profile administration access to a team lead of a third party that your company works with. This admin can add users on the company's team to this product profile. This Product profile administrator can give access to specific data views and add other users within the third party to this product profile. The Product profile administrator can modify data views to fit the third party team's requirements.
 
 ### Row-level access control
 
-You want to give users access to data from one day only. Here is how you would limit access to those specific rows:
+You want to give users access to data from one day only. Here is how to limit access to those specific rows:
 
 1. Create a segment in [!UICONTROL Settings] of a specific data view, where [!UICONTROL Day] equals the date you want them to have data access to. See [Create data view](/help/data-views/create-dataview.md#settings-filters) for more information.
 1. Save the data view, which applies the segment to the data part of the datasets in the underlying connection. Any rows that don't fit the segment definition are automatically excluded from the data view and not available to Analysis Workspace when using this data view.
-1. Create a new [Product profile](#product-profile-admin-role) in the Admin Console, add users to the product profile, and include only this specific data view to the product profile.
+1. Create a new [Product profile](#product-profile-admin-role) in the Admin Console, add users to the product profile, and include only this specific data view in the product profile.
 
 ### Value-level access control
 
-Users who have access to a data view can only work with the metrics and dimensions that the administrator has included in this data view. Administrators can use the [Include/Exclude functionality](/help/data-views/component-settings/include-exclude-values.md) or [Value bucketing](../data-views/component-settings/value-bucketing.md) component settings in a data views to exclude or aggregate certain dimension values from a data view.
+Users who have access to a data view can only work with the metrics and dimensions that the administrator has included in this data view. Administrators can use the [Include/Exclude functionality](/help/data-views/component-settings/include-exclude-values.md) or [Value bucketing](../data-views/component-settings/value-bucketing.md) component settings in a data view to exclude or aggregate certain dimension values from a data view.
 
-For example: You create a metric called *Hypertension* in a data view from a component that contains individual patient data from the dataset. You use value bucketing to provide only access to bucketed values, so users of the data do not see the individual patients data.
+For example: You create a metric called *Hypertension* in a data view from a component that contains individual patient data from the dataset. You use value bucketing to provide access only to bucketed values, so users of the data do not see the individual patients' data.

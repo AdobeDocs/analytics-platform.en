@@ -200,6 +200,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Hotkeys](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
     + [Color palettes](../analysis-workspace/build-workspace-project/color-palettes.md)
     + [View density](../analysis-workspace/build-workspace-project/view-density.md)
+    + {hide-from-toc} [Use cached results](../analysis-workspace/build-workspace-project/cached-results.md)
     + [Debugger](../analysis-workspace/build-workspace-project/debugger.md)
   + Templates {#templates}
     + [Use templates](../analysis-workspace/templates/use-templates.md)
@@ -308,18 +309,11 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Guided configuration](/help/content-analytics/config/guided.md)
     + [Manual configuration](/help/content-analytics/config/manual.md)
     + [Standalone configuration](/help/content-analytics/config/standalone.md)
+    + {hide-from-toc} [Paid media configuration](/help/content-analytics/config/paid-media.md)
     + [JavaScript library](/help/content-analytics/config/tags-agnostic.md)
     + [Data collection](/help/content-analytics/config/datacollection.md)
 
-+ Analytics dashboards {#cja-dashboards}
-  + [Overview](../mobile-app/home.md)
-  + [Curator tasks](../mobile-app/curator.md)
-  + [Create mobile scorecards](../mobile-app/create-scorecard.md)
-  + [Manage mobile scorecards](../mobile-app/manage-scorecard.md)
-  + [Set up executives to use dashboards](../mobile-app/set-up-execs.md)
-  + [Executive user quick start guide](../mobile-app/executive.md)
-
-+ Guided analysis {#guided-analysis}
++ Guided Analysis {#guided-analysis}
     + [Overview](../guided-analysis/overview.md)
     + [Active growth](../guided-analysis/types/active-growth.md)
     + [Conversion trends](../guided-analysis/types/conversion-trends.md)
@@ -335,14 +329,21 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Industry use cases](../guided-analysis/industry-use-cases.md)
     + [FAQ](../guided-analysis/faq.md)
 
-+ Conversation insights {#conversation-insights}
-  + {hide-from-toc} [Overview](/help/conversation-insights/conversation-insights-overview.md)
-  + {hide-from-toc} [Configure](/help/conversation-insights/conversation-insights-configure.md)
-  + {hide-from-toc} [Manage](/help/conversation-insights/conversation-insights-manage.md)
-  + {hide-from-toc} [Implement](/help/conversation-insights/conversation-insights-implement.md)
-  + {hide-from-toc} [Analyze](/help/conversation-insights/conversation-insights-analyze.md)
++ Conversation Insights {#conversation-insights}
+  + [Overview](/help/conversation-insights/overview.md)
+  + [Configure](/help/conversation-insights/configure.md)
+  + [Manage](/help/conversation-insights/manage.md)
+  + [Implement](/help/conversation-insights/implement.md)
+  + [Analyze](/help/conversation-insights/analyze.md)
 
-
++ Analytics dashboards {#cja-dashboards}
+  + [Overview](../mobile-app/home.md)
+  + [Curator tasks](../mobile-app/curator.md)
+  + [Create mobile scorecards](../mobile-app/create-scorecard.md)
+  + [Manage mobile scorecards](../mobile-app/manage-scorecard.md)
+  + [Set up executives to use dashboards](../mobile-app/set-up-execs.md)
+  + [Executive user quick start guide](../mobile-app/executive.md)
+  
 + Components {#cja-components}
   + [Overview](../components/overview.md)
   + [Use components](../components/use-components-in-workspace.md)
@@ -524,6 +525,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + Data ingestion {#data-ingestion}
     + [Ingest and use Marketo Engage data](../use-cases/data-ingestion/marketo.md)
     + [Ingest and use Experience Platform audiences](../use-cases/data-ingestion/ingest-aep-segments.md)
+    + {hide-from-toc} [Ingest and use paid media data](/help/use-cases/data-ingestion/paid-media.md)
   + Data views {#data-views}
     + [Data views use cases](/help/use-cases/data-views/data-views-usecases.md)
     + [Use binding dimensions and metrics](/help/use-cases/data-views/binding-dimensions-metrics.md)
