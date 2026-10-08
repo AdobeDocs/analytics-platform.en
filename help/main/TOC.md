@@ -309,7 +309,7 @@ breadcrumb-title: Customer Journey Analytics Guide
     + [Guided configuration](/help/content-analytics/config/guided.md)
     + [Manual configuration](/help/content-analytics/config/manual.md)
     + [Standalone configuration](/help/content-analytics/config/standalone.md)
-    + [Paid media configuration](/help/content-analytics/config/paid-media.md)
+    + {hide-from-toc} Paid media configuration](/help/content-analytics/config/paid-media.md)
     + [JavaScript library](/help/content-analytics/config/tags-agnostic.md)
     + [Data collection](/help/content-analytics/config/datacollection.md)
 
