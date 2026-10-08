@@ -3,6 +3,7 @@ title: Content Analytics Paid Media Automatic Configuration
 description: Learn about the automatic configuration of datasets, connection, data views, and more.
 solution: Customer Journey Analytics
 feature: Content Analytics
+hold: true
 role: Admin
 ---
 
@@ -181,4 +182,3 @@ If the URL is captured in website event data and both website event dataset and 
 The table shows ad network spend alongside website orders attributed to each campaign. Two campaigns with similar ad spend might have different numbers of attributed downstream website actions. Use this comparison to identify campaigns and landing-page experiences for further investigation or testing, rather than assessing performance from advertising metrics alone. 
 
 The example uses a campaign ID, but the same approach can use ad group, ad, or asset identifiers when matching values can be captured. Content Analytics attributes, such as **[!UICONTROL Asset Foreground Colors]**, let you compare creative characteristics with paid media performance. With asset-specific tracking and matching attribute dimensions configured across both sources, you can extend that comparison to attributed website orders and use the results to guide creative testing.
- 
