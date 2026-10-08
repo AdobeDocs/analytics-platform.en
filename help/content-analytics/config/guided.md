@@ -665,7 +665,7 @@ See below for examples on how to configure the Google Ads and Meta Ads source co
 
 1. In the ➋ **[!UICONTROL Select accounts]** step of the wizard, select the accounts you want to configure.
    
-   ![Meta Ads source connector select accounts](../paid-media-meta-select-account.png)
+   ![Meta Ads source connector select accounts](../assets/paid-media-meta-select-account.png)
 
    Select **[!UICONTROL Next]**.
 
