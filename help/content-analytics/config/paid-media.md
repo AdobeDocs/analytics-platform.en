@@ -5,7 +5,6 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 ---
-
 # Paid media automatic configuration
 
 When you enable the Paid media channel in Content Analytics and save the configuration, Adobe updates the selected connection and data views with reporting configuration for the paid media datasets. You do not need to recreate the default dimensions, metrics, lookup logic, or summary-data groups yourself.
