@@ -150,7 +150,7 @@ Combine paid media performance with on-site behavioral data to understand how ca
 |---|---|
 | Meta Ads | Configure destination URL parameters using dynamic identifiers such as `campaign.id`, `adset.id`, and `ad.id` where supported. Capture the resolved values on your website. Enabling the connector does not automatically add these parameters to your ad URLs.  |
 | Google Ads | |
-| Individual assets | Asset-level reporting of downstream outcomes requires a captured identifier that maps to the specific asset associated with the click. A custom URL parameter can support this where the ad format permits asset-specific tracking. An ad identifier alone cannot distinguish multiple assets within an ad, and one static asset parameter applied to an entire multi-asset ad does not identify which asset was associated with the click. | 
+| Individual assets | Asset-level reporting of downstream outcomes requires a captured identifier that maps to the specific asset associated with the click. A custom URL parameter can support this where the ad format permits asset-specific tracking. An ad identifier alone cannot distinguish multiple assets within an ad, and one static asset parameter applied to an entire multi-asset ad does not identify which asset was associated with the click. |
 
 In Analysis Workspace, use **[!UICONTROL Ad Summary]** metrics for campaign or ad comparisons and **[!UICONTROL Asset Summary]** metrics for supported asset comparisons. Apply an attribution model and lookback window to the on-site conversion metrics that reflect your reporting question. 
 
