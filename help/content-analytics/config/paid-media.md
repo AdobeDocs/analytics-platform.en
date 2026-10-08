@@ -3,6 +3,7 @@ title: Content Analytics Paid Media Automatic Configuration
 description: Learn about the automatic configuration of datasets, connection, data views, and more.
 solution: Customer Journey Analytics
 feature: Content Analytics
+hold: true
 role: Admin
 ---
 # Paid media automatic configuration
@@ -138,3 +139,45 @@ To investigate, use additional breakdowns for geography and demographics. Use Ca
 | Cost Per Click | Ad Summary |
 
 
+### Correlate paid media data with experienc event dats
+
+Combine paid media performance with on-site behavioral data to understand how campaigns and ads are associated with website engagement, conversions, and revenue. For example, compare advertising-network clicks and spend with orders attributed to visits from the same campaign. 
+
+ To configure this reporting, include the paid media summary datasets and your on-site event dataset in the same Customer Journey Analytics connection. Capture stable campaign, ad, or supported asset identifiers from landing-page URL parameters or existing event fields. Use derived fields as needed to parse and map those values to the corresponding paid media identifiers, preserving the required network and account context. Keep identifiers as strings. Configure a Summary Data Group in the data view to associate the matching event and summary dimensions. Enabling the Paid Media channel does not automatically configure this implementation-specific URL tracking and mapping. 
+
+
+| Tracking option | Considerations |
+|---|---|
+| Meta Ads | Configure destination URL parameters using dynamic identifiers such as `campaign.id`, `adset.id`, and `ad.id` where supported. Capture the resolved values on your website. Enabling the connector does not automatically add these parameters to your ad URLs.  |
+| Google Ads | |
+| Individual assets | Asset-level reporting of downstream outcomes requires a captured identifier that maps to the specific asset associated with the click. A custom URL parameter can support this where the ad format permits asset-specific tracking. An ad identifier alone cannot distinguish multiple assets within an ad, and one static asset parameter applied to an entire multi-asset ad does not identify which asset was associated with the click. |
+
+In Analysis Workspace, use **[!UICONTROL Ad Summary]** metrics for campaign or ad comparisons and **[!UICONTROL Asset Summary]** metrics for supported asset comparisons. Apply an attribution model and lookback window to the on-site conversion metrics that reflect your reporting question. 
+
+Be aware of the following:
+
+* Paid media data is aggregated summary data without a person ID. On-site behavior is event data. 
+* Grouping matching dimensions supports reporting across these sources, but does not match individual ad network conversions to website conversions or perform person-level stitching. 
+* The comparison shows an association, not causal lift. 
+* Results can differ because of conversion definitions, attribution windows, view-through or modeled conversions, consent, and reporting dates or time zones. 
+* Validate the source of campaign-tagged visits, particularly when tracking parameters are reused across channels. 
+
+ 
+### Compare campaign performance with on-site orders example
+
+A landing-page URL can contain several tracking parameters. In this example, we use the campaign ID in `utm_id` to compare campaign spend with website orders. 
+
+https://www.example.com/offer?utm_source=facebook&utm_medium=paid_social&utm_campaign=autumn_offer&utm_id=120218706543980215 
+
+The parameter used for this comparison: `utm_id=120218706543980215`. The other parameters describe the source, medium, and campaign label but are not used as matching field used in this example. 
+
+If the URL is captured in website event data and both website event dataset and paid media datasets are part of the same Customer Journey Analytics connection:
+
+1. Identify the campaign. Use a derived field to read `utm_id` from the URL and map its value to the corresponding campaign identifier in the paid media data. 
+1. Group the matching dimensions. In the data view, add the website campaign dimension to the paid campaign dimension's `Summary Data Group`, preserving any existing members. 
+1. Compare spend and orders. In Analysis Workspace, use the grouped campaign dimension as the rows of a freeform table. Add `Ad Summary` spend and website `Orders` as columns. Set the attribution model and lookback window for `Orders`. 
+ 
+
+The table shows ad network spend alongside website orders attributed to each campaign. Two campaigns with similar ad spend might have different numbers of attributed downstream website actions. Use this comparison to identify campaigns and landing-page experiences for further investigation or testing, rather than assessing performance from advertising metrics alone. 
+
+The example uses a campaign ID, but the same approach can use ad group, ad, or asset identifiers when matching values can be captured. Content Analytics attributes, such as **[!UICONTROL Asset Foreground Colors]**, let you compare creative characteristics with paid media performance. With asset-specific tracking and matching attribute dimensions configured across both sources, you can extend that comparison to attributed website orders and use the results to guide creative testing.
