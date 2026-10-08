@@ -1,7 +1,6 @@
 ---
 title: Current Customer Journey Analytics Release Notes
 description: View the latest Customer Journey Analytics release notes, including new features, fixed issues, and postponed releases for the current period.
-hold: true
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 TQID: 'https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w'
@@ -51,46 +50,47 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
 ---
-# Current Customer Journey Analytics release notes (September 2026)
+# Current Customer Journey Analytics release notes (October 2026)
 
-**Last update**: September 9, 2026
+**Last update**: October 7, 2026
 
-These release notes cover the September 2026 release period. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
+These release notes cover the October 2026 release period. Adobe Customer Journey Analytics releases operate on a [continuous delivery model](releases.md), which allows for a more scalable, phased approach to feature deployment. Accordingly, these release notes get updated several times a month. Please check them regularly.
 
 ## New or updated features
 
 | Feature and description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | -----------|-----------|-----------|
-| **Analyze LLM customer experiences in Analysis Workspace with Conversation Insights**<br/>Customer Journey Analytics now brings unstructured chat data into Analysis Workspace, allowing you to report on LLM-powered browsing and buying experiences that occur across your properties.<p>With this capability, you can:</p><ul><li>Collect prompts, responses, and agent metadata from conversational agents (either your organization's custom agents or Adobe Brand Concierge) via Web SDK.</li><li>Analyze intent, tone, and sentiment so you can understand what customers are asking, how your agent responds, and how your customers feel about their interactions.</li><li>Analyze at scale using your existing schema, datasets, and data views, then surface insights in Analysis Workspace.</li><li>Connect conversations to outcomes by tying agent interactions to your broader customer journeys, so you can measure real impact on conversion, engagement, and more.</li></ul><p>Previously, LLM-powered experiences were difficult to measure and nearly impossible to connect to your existing customer journeys.</p><p>For more information, see [Conversation Insights](/help/conversation-insights/overview.md)</p> | | October 8, 2026<p>(Originally planned for September 22, 2026)</p> |
-| **Automatically generate component descriptions** <br/>You can now automatically generate descriptions for dimensions, metrics, calculated metrics, segments, and date ranges. This allows Workspace users understand which components to use, especially in organizations with large component libraries. <p>You can generate a description for a single component, or generate descriptions for many components at the same time.</p> <p>(Documentation link to follow.)<!--For more information, see [Automatically generate descriptions](/help/components/add-component-descriptions.md#automatically-generate-descriptions).--></p> | | October 28, 2026 |
-| **Adobe Brand Visibility integration**<br/>Connect Adobe Brand Visibility with your organization's Adobe Analytics data so you can measure how AI-driven discovery translates into real website engagement and business outcomes.<p>(Documentation link to follow.)</p> | | October 2026</p> |
+| **Read-only permission for the Customer Journey Analytics MCP server**<br/>Administrators can now give users read-only access to the Customer Journey Analytics MCP server. The new [!UICONTROL MCP Read Only] permission item gives users access to all read-only tools, without letting them create projects, segments, or calculated metrics.<p>The existing [!UICONTROL MCP Access] permission item is renamed to [!UICONTROL MCP Full Access]. Users with this permission keep access to all tools, including tools that create, change, or delete components.</p><p>For more information, see [Customer Journey Analytics MCP server](https://developer.adobe.com/analytics-mcp/docs/cja/).</p> | | October 6, 2026 |
+| **Analyze LLM customer experiences in Analysis Workspace with Conversation Insights**<br/>Customer Journey Analytics now brings unstructured chat data into Analysis Workspace, allowing you to report on LLM-powered browsing and buying experiences that occur across your properties.<p>With this capability, you can:</p><ul><li>Collect prompts, responses, and agent metadata from conversational agents (either your organization's custom agents or Adobe Brand Concierge) via Web SDK.</li><li>Analyze intent, tone, and sentiment so you can understand what customers are asking, how your agent responds, and how your customers feel about their interactions.</li><li>Analyze at scale using your existing schema, datasets, and data views, then surface insights in Analysis Workspace.</li><li>Connect conversations to outcomes by tying agent interactions to your broader customer journeys, so you can measure real impact on conversion, engagement, and more.</li></ul><p>Previously, LLM-powered experiences were difficult to measure and nearly impossible to connect to your existing customer journeys.</p><p>For more information, see [Conversation Insights](/help/conversation-insights/overview.md).</p> | | October 8, 2026<p>(Originally planned for September 22, 2026)</p> |
+| **Automatically generate component descriptions** <br/>You can now automatically generate descriptions for dimensions, metrics, calculated metrics, segments, and date ranges. This allows Workspace users to understand which components to use, especially in organizations with large component libraries. <p>You can generate a description for a single component, or generate descriptions for many components at the same time.</p> <p>(Documentation link to follow.)<!--For more information, see [Automatically generate descriptions](/help/components/add-component-descriptions.md#automatically-generate-descriptions).--></p> | | October 28, 2026 |
+| **Adobe Brand Visibility integration**<br/>Connect Adobe Brand Visibility with your organization's Customer Journey Analytics data so you can measure how AI-driven discovery translates into real website engagement and business outcomes.<p>(Documentation link to follow.)</p> | | October 2026 |
 
 
 ### Fixes in Customer Journey Analytics
 
-**Analysis Workspace**: AN-487374, AN-487119, AN-468907, AN-468810, AN-468363, AN-468096, AN-467414, AN-466986, AN-466982, AN-465073, AN-463571, AN-462373, AN-492801, AN-488821, AN-488452, AN-486517, AN-478930, AN-468325
-**Components**:
-**Connections**: AN-451458, AN-365942
-**Content Analytics**:
-**Guided analysis**: AN-485600
-**Exports**: AN-489161, AN-467131, AN-464746, AN-469034, AN-447252, AN-437803, AN-394444
-**Data views**: AN-478732, AN-468836, AN-467851, AN-487651, AN-423592
-**Data ingestion**: AN-489829, AN-489722, AN-469451, AN-467436, AN-467049, AN-466087, AN-465049, AN-463524, AN-457433, AN-490288, AN-487500, AN-390916, AN-342311
-**Implementation**:
-**Report Builder**: AN-487486, AN-478944, AN-470036, AN-468589, AN-468436, AN-456747, AN-456700, AN-442695, AN-492330, AN-490564, AN-468293, AN-460921
-**Reporting**: AN-479145, AN-469095, AN-468070, AN-467786, AN-456684, AN-465257, AN-422685, AN-406114, AN-356706, AN-322733
-**Segmentation**: AN-486561, AN-278260
-**Scheduled reports**: AN-479157
-**Shared metrics and dimensions**:
-**Audience Analysis**: AN-468237, AN-462553
-**Other**: AN-469601, AN-462817, AN-362308, AN-349757, AN-326432, AN-326345, AN-324341, AN-309317
+**Analysis Workspace**: AN-495340, AN-494789, AN-493307, AN-468900
+**Components**: AN-492523
+**Connections**: AN-492236
+**Content Analytics**: 
+**Guided analysis**: AN-495592
+**Exports**: AN-495077, AN-494337, AN-486563, AN-469919, AN-462560, AN-462372
+**Data views**: AN-492093, AN-467770, AN-455367, AN-444467
+**Data ingestion**: AN-496439, AN-495339, AN-493456, AN-491984, AN-490515, AN-490479, AN-470065
+**Implementation**: 
+**Report Builder**: AN-496602, AN-494224, AN-493737, AN-493508, AN-493505, AN-492806, AN-468981, AN-454376
+**Reporting**: AN-495661, AN-493562, AN-487058, AN-478768
+**Segmentation**: 
+**Scheduled reports**: AN-491103, AN-468049
+**Shared metrics and dimensions**: AN-493722
+**Audience Analysis**: AN-469101
+**Other**: AN-493865
 
 ## Postponed features
 
 | Feature and description | [Rollout starts](releases.md) | [General Availability](releases.md) |
 | -----------|-----------|-----------|
 | **Total population reporting**<br/>You can now analyze and report on entities defined in profile and lookup datasets that exist in a Customer Journey Analytics connection. That analysis and reporting go beyond time-based series of events from event datasets. <p>This ability enables new classes of queries, metrics, and audience definitions that reflect the full scope of a business's customer base.</p><p>(Documentation link to follow.)</p> | | TBD<p>(Originally planned for September 22, 2026)</p> |
-| **Streaming media services: Support schedule data** <br/>You can now upload schedule data of past live Streaming Media content to more easily and accurately track viewership.<p>The following are examples of live content that is supported with schedule data upload:</p><ul><li>FAST (Free Ad Supported TV) platforms</li><li>Local streams</li><li>Live sports</li></ul><p>Uploading schedule data allows you to track viewership data for individual programs that ran during the time you designate in the upload file. You can even gather viewership data for specific topics or program segments.</p><p>These capabilities are available regardless of how you implemented Streaming Media Collection.</p><p>Previously, it was difficult to accurately tie a given session to specific programs when analyzing live content, and it wasn't possible to tie a given session to individual topics or program segments.</p><p>For more information, see [Upload schedule data to track live content](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-use-cases/track-schedule-data).</p> | October 29, 2025 | TBD<p>(Originally planned for October 29, 2025)</p> |
+| **Streaming media services: Support schedule data** <br/>You can now upload schedule data of past live Streaming Media content to more easily and accurately track viewership.<p>The following are examples of live content that is supported with schedule data upload:</p><ul><li>FAST (Free Ad-Supported TV) platforms</li><li>Local streams</li><li>Live sports</li></ul><p>Uploading schedule data allows you to track viewership data for individual programs that ran during the time you designate in the upload file. You can even gather viewership data for specific topics or program segments.</p><p>These capabilities are available regardless of how you implemented Streaming Media Collection.</p><p>Previously, it was difficult to accurately tie a given session to specific programs when analyzing live content, and it wasn't possible to tie a given session to individual topics or program segments.</p><p>For more information, see [Upload schedule data to track live content](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-use-cases/track-schedule-data).</p> | October 29, 2025 | TBD<p>(Originally planned for October 29, 2025)</p> |
 
 >[!MORELIKETHIS]
 >
