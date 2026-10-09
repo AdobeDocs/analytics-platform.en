@@ -50,7 +50,7 @@ Ensure you have values for all required details listed in the table below for ea
 | Brand Visibility readiness confirmation | Confirm with Adobe account team the readiness before you enable and schedule the connector. |
 | IMS organization | Use the exact IMS organization associated with Brand Visibility, Experience Platform. |
 | Sandbox | Use the exact sandbox name that is designated for the inbound integration. |
-| Connection | Identify the Customer Journey connection that should include the dataset. |0
+| Connection | Identify the Customer Journey connection that should include the dataset. |
 | Data view | Identify a new or existing Customer Journey Analytics data view that should include the components. |
 | Administrator or owner | Provide name or team that is the configuration contact. |
 
