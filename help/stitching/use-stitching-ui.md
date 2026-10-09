@@ -253,12 +253,14 @@ For a valid initial connection setup that is saved and contains a stitching enab
 
 * Backfilled data (if initially requested) shows up in Customer Journey Analytics around the same time as live data, but can take days to fully process, depending on the volumes involved. The backfilled data starts with the oldest event timestamp values.
   
+
+  >[!CAUTION]
+  >
+  >For datasets that are [enabled for stitching](#enable-stitching) in the Connections interface, the backfill status cannot be reported due to a known limitation. 
+  >
+  
   Use alternative ways to verify whether data from the stitched dataset is backfilled. For example, use the [Experience Platform Query Service UI](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview) to extract the events count for the relevant period from the dataset. Compare that events count against the **[!UICONTROL Events]** metric value in [Customer Journey Analytics reporting](/help/analysis-workspace/home.md) for the same timeframe. If those numbers match, the backfill is completed.
 
->[!CAUTION]
->
->For datasets that are [enabled for stitching](#enable-stitching) in the Connections interface, the backfill status cannot be reported due to a known limitation. 
->
 
 ## Limitations
 
