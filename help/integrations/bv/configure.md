@@ -6,7 +6,7 @@ role: Admin
 ---
 # Setup and configure inbound integration
 
-This article details the [prerequisites](#prerequisites), [responsibilities](#responsibilities), [steps to verfiy](#verification), [troubleshoot steps](#troubleshoot), and [completion criteria](#completion-criteria) for setting up and configuring the Brand Visibility inbound integration with Customer Journey Analytics.
+This article details the [prerequisites](#prerequisites), [responsibilities](#responsibilities), [steps to verify](#verification), [troubleshoot steps](#troubleshoot), and [completion criteria](#completion-criteria) for setting up and configuring the Brand Visibility inbound integration with Customer Journey Analytics.
 
 ## Prerequisites
 
@@ -16,15 +16,15 @@ Consider the following prerequisites before enabling the inbound integration. An
 
 CDN access logs must be forwarded to and received by Adobe Brand Visibility for each Brand Visibility site before the Brand Visibility source connector can be viable.
 
-This requirement applies for each Brand Visibility site. A CDN configuration or log feed for one site, domain, or subdomain does not cover another site unless Adobe confirms that coverage.
+This requirement applies for each Brand Visibility site. A CDN configuration or log feed for one site, domain, or subdomain covers only that site unless Adobe confirms that coverage for another site.
 
-You should verify with Adobe both parts of the handoff:
+Verify with Adobe both parts of the handoff:
 
-1. You have configured the relevant CDN or log pipeline is to forward the required access logs to the Adobe-provided Amazon S3 destination.
+1. You have configured the relevant CDN or log pipeline to forward the required access logs to the Adobe-provided Amazon S3 destination.
 1. Adobe has confirmed that logs are being received and detected for the relevant site.
 
-BYOCDN Log Forwarding provides the server-side CDN request data used for agentic-traffic analysis. The data does not depend on JavaScript tags running in a browser. Without the required
-CDN log feed, the downstream summary dataset will not contain the intended Brand Visibility agentic-traffic data. See for more information the [BYOCDN log forwarding reference](https://experienceleague.adobe.com/en/docs/brand-visibility/using/log-forwarding/log-forwardingoverview).
+BYOCDN Log Forwarding provides the server-side CDN request data used for automated-agent traffic analysis. The data does not depend on JavaScript tags running in a browser. The required
+CDN log feed ensures the downstream summary dataset contains the intended Brand Visibility agentic-traffic data. See the [BYOCDN log forwarding reference](https://experienceleague.adobe.com/en/docs/brand-visibility/using/log-forwarding/log-forwarding-overview) for more information.
 
 ### Required information
 
@@ -42,7 +42,7 @@ Ensure you have values for all required details listed in the table below for ea
 | Data view | Identify a new or existing Customer Journey Analytics data view that should include the components. |  
 | Administrator or owner | Provide name or team that is the configuration contact. |
 
-Before Adobe schedules the managed connector, your Adobe account team must confirm that the site is ready for the inbound integration. Delivery communications may refer to this as Brand Visibility approval or site readiness confirmation. Scheduling the managed connector is a managed-service gate, not a customer self-service action.
+Before Adobe schedules the managed connector, your Adobe account team must confirm that the site is ready for the inbound integration. Delivery communications refer to this as Brand Visibility approval or site readiness confirmation. Scheduling the managed connector is a managed-service requirement, not a customer self-service action.
 
 ### Sandbox
 
@@ -53,7 +53,7 @@ Confirm the following:
 * IMS Organization
 * Target Experience Platform sandbox
 
-The target AEP sandbox must be the same named sandbox used by the corresponding Customer Journey Analytics connection or connections that will include the dataset. 
+The target AEP sandbox is the same named sandbox used by the corresponding Customer Journey Analytics connection or connections that include the dataset. 
 
 The customer can add the dataset to the appropriate CJA Connection only after Adobe confirms that the managed dataset has been created.
 
@@ -62,7 +62,7 @@ The customer can add the dataset to the appropriate CJA Connection only after Ad
 The inbound integration provides an aggregated summary dataset in Experience Platform that contains server-side CDN request information associated with LLM, bot, and automated-agent
 traffic.
 
-Brand Visibility uses CDN access logs to identify requests from bots and automated agents. This traffic generally does not fire browser JavaScript tags and therefore is not captured through a conventional web analytics implementation.
+Brand Visibility uses CDN access logs to identify requests from bots and automated agents. This traffic does not fire browser JavaScript tags and therefore is not captured through a conventional web analytics implementation.
 
 For the detailed description of the inbound integration, dataset structure, and available fields, see [about the dataset](#about-the-dataset).
 
@@ -72,14 +72,14 @@ The managed connector creates the summary dataset in Experience Platform using:
 * The **[!UICONTROL CDN Requests Summary]** field group
 * Fields organized under a **[!UICONTROL cdn]** object
 
-The connector creates the dataset ofor each Brand Visibility site, using the following naming pattern: <code>Adobe Brand Visibility (ABV) Dataset - _baseUrl without scheme_</code>. <br/>For example `Adobe Brand Visibility (ABV) Dataset - example.com` for the site <https://example.com>.
+The connector creates the dataset for each Brand Visibility site, using the following naming pattern: <code>Adobe Brand Visibility (ABV) Dataset - _baseUrl without scheme_</code>. <br/>For example `Adobe Brand Visibility (ABV) Dataset - example.com` for the site <https://example.com>.
 
 Datasets created before this naming convention was adopted display the earlier pattern <code>LLM Optimization (LLMO) Dataset - _baseUrl without scheme_</code>. 
-In all cases, customers should confirm the exact dataset name or dataset ID with their Adobe account team after creation.
+In all cases, customers need to confirm the exact dataset name or dataset ID with their Adobe account team after creation.
 
 The dataset is aggregated summary data. When analyzing request volume in Customer Journey Analytics, use the provided **[!UICONTROL CDN Request Count]** metric rather than counting dataset rows. 
 
-Verify the available fields in the dataset schema created for the specific Brand Visibility site. Review the fields to plan the configuration of the data view.
+Verify the available fields in the dataset schema created for the specific Brand Visibility site. To plan the configuration of the data view, review the fields.
 
 ## Responsibilities
 
@@ -101,7 +101,7 @@ Your responsibilities as a customer are:
 
 >[!IMPORTANT]
 >
->The managed connector intentionally stops after creating and populating the Experience Platform dataset. Adobe does not modify your Customer Jourhey Analytics connections or data views.
+>The managed connector intentionally stops after creating and populating the Experience Platform dataset. Adobe does not modify your Customer Journey Analytics connections or data views.
 
 The dataset is not available for Customer Journey Analytics analysis until you add the dataset to a connection. The data
 is not available to users through a data view until the relevant fields have been added to that data view.
@@ -147,7 +147,7 @@ Use the following procedure to verify the inbound integration:
    1. Add the dataset to the connection.
    1. Configure the dataset settings according to the customer's Customer Journey Analytics design.
    1. Save the connection.
-   1. Review the connection details to confirm that the dataset is included and that ingestion is progressing.
+   1. To confirm that the dataset is included and that ingestion is progressing, review the connection details.
 
 1. Configure or update the data view
 
@@ -163,7 +163,7 @@ Use the following procedure to verify the inbound integration:
       * **[!UICONTROL Host]**
       * **[!UICONTROL HTTP Status]**
       * **[!UICONTROL Request Count]**
-      * T**[!UICONTROL ime to First Byte]**
+      * **[!UICONTROL Time to First Byte]**
    1. Save the data view.
    1. Validate the fields in Analysis Workspace or the customer's selected reporting workflow.
 
@@ -183,7 +183,7 @@ Use the following procedure to verify the inbound integration:
 
 ## Troubleshoot
 
-See below what to do in case of issues:
+See below what to do if issues occur:
 
 * The dataset does not appear in AEP.
 
@@ -216,7 +216,7 @@ See below what to do in case of issues:
 * The dataset is in the connection but fields are not available for reporting.
 
   Verify that:
-  * The correct Customer Journey Analytics connection is selected by the data view.
+  * The data view selects the correct Customer Journey Analytics connection.
   * The expected schema fields were added as data view components.
   * The fields were placed in the intended **[!UICONTROL Dimensions]** or **[!UICONTROL Metrics]** section.
   * The data view was saved after the components were added.

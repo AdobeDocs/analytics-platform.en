@@ -15,7 +15,7 @@ Each record describes one combination of host, URL path, bot type, CDN provider,
 
 ## Dimensions
 
-The following dimensions are available to use as components in a data view once you have set up a connection that includes an Brand Visibility dataset. The **Field** column shows the source field in the CDN Requests Summary field group.
+The following dimensions are available to use as components in a data view once you have set up a connection that includes a Brand Visibility dataset. The **Field** column shows the source field in the CDN Requests Summary field group.
 
 | Dimension | Field | Description |
 |-----------|-------|-------------|
@@ -86,7 +86,7 @@ HTTP status codes in this dataset indicate whether the AI agent received the con
 
 ## Metrics
 
-The following metrics are available to use as components in a data view once you have set up a connection that includes an Brand Visibility dataset. The **Field** column shows the source field in the CDN Requests Summary field group.
+The following metrics are available to use as components in a data view once you have set up a connection that includes a Brand Visibility dataset. The **Field** column shows the source field in the CDN Requests Summary field group.
 
 | Metric | Field | Description |
 |--------|-------|-------------|
@@ -100,7 +100,7 @@ The following metrics are available to use as components in a data view once you
 This dataset captures only bot traffic from CDN access logs. It does not contain the following:
 
 * **User sessions, conversions, or engagement data.** A user who clicks through from an AI answer runs the JavaScript on your page, so that visit is in your existing web data, not in this dataset. You can bring both datasets into Customer Journey Analytics and compare them for the same URL and host.
-* **Any person identifier such as ECID.** You cannot make a person-level join from this dataset. The join operates at the URL and host level.
+* **Any person identifier such as ECID.** You cannot perform a person-level join from this dataset. The join operates at the URL and host level.
 * **Sub-second time granularity.** The timestamp is hourly. You cannot break down traffic within an hour into minutes or seconds.
 * **Page content or rendered HTML.** This dataset records the fact of the fetch and its outcome, not what the AI read from the page.
 * **Conversion data.** This dataset does not tell you whether an AI answer led a person to visit your site or convert. It holds aggregate CDN summary data, not person-based event data, so it does not link any request to an individual person or session.

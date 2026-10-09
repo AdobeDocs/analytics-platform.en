@@ -7,13 +7,13 @@ role: User
 
 # Adobe Brand Visibility integration
 
-[Adobe Brand Visibility](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/home){target="_blank"} is a generative AI-first application for Generative Engine Optimization, designed to help brands enhance their visibility, accuracy, and influence in AI-driven search environments. Brand Visibility provides insights into brand presence in AI-generated answers, offers prescriptive content recommendations, and automates optimization fixes.
+[Adobe Brand Visibility](https://experienceleague.adobe.com/en/docs/brand-visibility/using/home){target="_blank"} is a generative AI-first application for Generative Engine Optimization, designed to help brands enhance their visibility, accuracy, and influence in AI-driven search environments. Brand Visibility provides insights into brand presence in AI-generated answers, offers prescriptive content recommendations, and automates optimization fixes.
 
 AI has become a primary discovery channel. Large language model (LLM) agents, such as ChatGPT, Claude, Copilot, and Perplexity, crawl brand content. 
 
 >[!NOTE]
 >
->You must have an Brand Visibility paid offering provisioned and connected to your Experience Platform configuration through the managed connector.
+>You must have a Brand Visibility paid offering provisioned and connected to your Experience Platform configuration through the managed connector.
 
 
 >[!IMPORTANT]
@@ -67,7 +67,7 @@ The dataset:
 >The Brand Visibility dataset contains aggregated data. It does not contain any PII such as a user identifier, prompts, or responses.
 >
 
-Because it is a summary dataset, you can treat it as a lookup dataset and join it to an event dataset on a full-URL key.
+Because it is a summary dataset, you can use it as a lookup dataset and join it to an event dataset on a full-URL key.
 
 Brand Visibility provides this key for you in the **CDN URL** dimension. It combines the host and the requested path into a single normalized full URL, similar to how Customer Journey Analytics stores web data. Whether the join succeeds depends on your own data collection. Your event dataset needs an equivalent full URL field, or a field that you can parse and normalize to match the URL that Brand Visibility provides. When both sides resolve to the same full URL, the Brand Visibility record matches the corresponding page in your web data.
 
@@ -78,4 +78,4 @@ See for more information:
 
 ## Outbound integration
 
-For information on the outbound integration, refer to [Customer Journey Analytics Integration](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} in the Adobe Brand Visisbility dovumentation.
+For information on the outbound integration, refer to [Customer Journey Analytics Integration](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} in the Adobe Brand Visibility documentation.
