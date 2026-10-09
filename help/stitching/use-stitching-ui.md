@@ -234,7 +234,7 @@ Examples of Bad IDs use cases:
 
 
 >[!NOTE]
->The **[!UICONTROL Stitching metrics]**, including **[!UICONTROL Bad IDs]**, are calculated based on a limited set of data. To identify the Bad IDs presence for a dataset you plan to use for stitching, refer to the [Bad IDs technote](/help/technotes/badids.md).
+>The **[!UICONTROL Stitching metrics]**, including **[!UICONTROL Bad IDs]**, are calculated based on a limited set of data. To identify the presence of Bad IDs for a dataset you plan to use for stitching, refer to the [Bad IDs technote](/help/technotes/badids.md).
 >
 
 
@@ -246,20 +246,22 @@ Each part of the process adds certain delays. Processing times below are guardra
 
 For a valid initial connection setup that is saved and contains a stitching enabled dataset:
 
-* Live data initially shows up in Customer Journey Analytics after some hours (less than 17 hours). The live data starts with event timestamp values that match the actual moment when stitching enablement got completed. 
+* Live data initially shows up in Customer Journey Analytics after some hours (less than 14 hours). New live data is available within a few hours. The live data starts with event timestamp values that match the actual moment when stitching enablement got completed. 
 
   To ensure live data starts to flow in, enable the **[!UICONTROL Import all new data]** option for the dataset.
   
   New data ingested into the Experience Platform source event dataset appears in Customer Journey Analytics within four hours.
 
 * Backfilled data (if initially requested) shows up in Customer Journey Analytics around the same time as live data, but can take days to fully process, depending on the volumes involved. The backfilled data starts with the oldest event timestamp values.
+  
+  &nbsp;
 
   >[!CAUTION]
   >
   >For datasets that are enabled for stitching in the Connections interface, the backfill status cannot be reported currently due to a known limitation. 
   >
 
-  Use alternative ways to verify whether data from the stitched dataset is backfilled. For example, use the [Experience Platform Query Service UI](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview) to extract the events count for the relevant period from the dataset. Compare that events count against the events metric in [Customer Journey Analytics reporting](/help/analysis-workspace/home.md) for the same timeframe. If those numbers match, the backfill is completed.
+  Use alternative ways to verify whether data from the stitched dataset is backfilled. For example, use the [Experience Platform Query Service UI](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/overview) to extract the events count for the relevant period from the dataset. Compare that events count against the **[!UICONTROL Events]** metric value in [Customer Journey Analytics reporting](/help/analysis-workspace/home.md) for the same timeframe. If those numbers match, the backfill is completed.
 
 ## Limitations
 
