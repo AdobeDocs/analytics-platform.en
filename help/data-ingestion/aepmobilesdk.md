@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
-TQID: https://experienceleague.adobe.com/rbgqDkQLPbw-EfhMyUL-eVXZZ1cxMXiQmvU7Si2WCZ8
+TQID: 'https://experienceleague.adobe.com/rbgqDkQLPbw-EfhMyUL-eVXZZ1cxMXiQmvU7Si2WCZ8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -14,6 +14,8 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
     internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
@@ -25,6 +27,8 @@ subfeature_v2:
     internal-label: Data Dictionary
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
     internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -372,7 +376,7 @@ To define a rule:
 
      - Select **[!UICONTROL Keep Changes]**.
    
-   - Click ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to [!UICONTROL Mobile Core - Foreground].
+   - Click ![Plus](/help/assets/icons/AddCircle.svg) next to [!UICONTROL Mobile Core - Foreground].
 
      - Select **[!UICONTROL Mobile Core]** from the [!UICONTROL Extension] list.
 
@@ -380,7 +384,7 @@ To define a rule:
 
      - Select **[!UICONTROL Keep Changes]**.
 
-   - Click ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Add underneath [!UICONTROL ACTIONS]. In the [!UICONTROL Action Configuration] dialog:
+   - Click ![Plus](/help/assets/icons/AddCircle.svg) Add underneath [!UICONTROL ACTIONS]. In the [!UICONTROL Action Configuration] dialog:
 
      - Select **[!UICONTROL Adobe Experience Platform Edge Network]** from the [!UICONTROL Extension] list.
 
@@ -439,9 +443,9 @@ To get code instructions that explain how to set up your mobile app and use your
 
 1. Select **[!UICONTROL Environments]** in the left rail.
 
-2. From the list of environments, select the correct install ![Box](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) button.
+2. From the list of environments, select the correct install ![Box](/help/assets/icons/Box.svg) button.
 
-   In the [!UICONTROL Mobile Install Instructions] dialog, select the appropriate platform ([!UICONTROL iOS], [!UICONTROL Android]). Then use the copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) button next to each of the relevant code snippets that you want to use to set up and initialize your mobile app:
+   In the [!UICONTROL Mobile Install Instructions] dialog, select the appropriate platform ([!UICONTROL iOS], [!UICONTROL Android]). Then use the copy ![Copy](/help/assets/icons/Copy.svg) button next to each of the relevant code snippets that you want to use to set up and initialize your mobile app:
     
    ![Environment](./assets/environment-mobile.png)
 

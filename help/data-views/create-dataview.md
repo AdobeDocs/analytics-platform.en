@@ -5,7 +5,7 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-TQID: https://experienceleague.adobe.com/EXiKrWVfmMRgZ4GF0OR410Mr2-P5IEjPy3Hf0FmRDJ8
+TQID: 'https://experienceleague.adobe.com/EXiKrWVfmMRgZ4GF0OR410Mr2-P5IEjPy3Hf0FmRDJ8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -14,9 +14,11 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
     internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
     internal-label: Filters
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
@@ -25,6 +27,8 @@ subfeature_v2:
     internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
     internal-label: Calculated metrics
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -104,7 +108,7 @@ This section is visible only for administrators who are provisioned with Journey
 
 | Setting | Description |
 | --- | --- |
-| [!UICONTROL **Set as default data view in Adobe Journey Optimizer**] | This configuration option standardizes reporting across Journey Optimizer and Customer Journey Analytics. It also allows you to perform advanced analysis of your Adobe Journey Optimizer data in Customer Journey Analytics (by selecting ![Open](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) [!UICONTROL **Analyze in CJA**] while in Journey Optimizer).<p>To perform this type of analysis, Journey Optimizer needs access to a Customer Journey Analytics data view.<p>Enable this option to make this the default data view that is used in Journey Optimizer reporting for your sandbox.</p><p>This configuration option automatically:</p><ul><li>Configures all the required Journey Optimizer datasets in the associated connection in Customer Journey Analytics for use with Journey Optimizer.</li><li>Creates a set of Journey Optimizer metrics and dimension in the data view (including derived fields and calculated metrics). Context labels are automatically set on all of these metrics and dimensions.</li><li>Automatically enables the **[!UICONTROL Use in CJA]** option in the connection that is associated with this data view. (To learn more about this option, see [Use a Journey Optimizer connection in Customer Journey Analytics](/help/connections/manage-connections.md).)<p>If you manually disable this setting after it is enabled, the connection and any associated data views are reset to their default state. This can result in data changes in your reports.</p></li></ul><p><p>Consider the following when enabling this option: <ul><li>You can change the default data view at a later time, but doing so could alter your Journey Optimizer reporting data. If you choose to disable this option after it is enabled, you will be prompted to select a new default data view.</li><li>If you already made manual customizations to the the datasets, dimensions, or metrics in the Customer Journey Analytics data view, your manual customizations remain intact when enabling this configuration option. This option makes additional customizations that further standardize reporting across Journey Optimizer and Customer Journey Analytics. You can also make manual customizations after enabling this option.</li><li>When this option is selected, the connection associated with the data view cannot be deleted.</li></ul>See [Integrate Adobe Journey Optimizer with Adobe Customer Journey Analytics](/help/integrations/ajo.md) for more information. |
+| [!UICONTROL **Set as default data view in Adobe Journey Optimizer**] | This configuration option standardizes reporting across Journey Optimizer and Customer Journey Analytics. It also allows you to perform advanced analysis of your Adobe Journey Optimizer data in Customer Journey Analytics (by selecting ![Open](/help/assets/icons/OpenInLight.svg) [!UICONTROL **Analyze in CJA**] while in Journey Optimizer).<p>To perform this type of analysis, Journey Optimizer needs access to a Customer Journey Analytics data view.<p>Enable this option to make this the default data view that is used in Journey Optimizer reporting for your sandbox.</p><p>This configuration option automatically:</p><ul><li>Configures all the required Journey Optimizer datasets in the associated connection in Customer Journey Analytics for use with Journey Optimizer.</li><li>Creates a set of Journey Optimizer metrics and dimension in the data view (including derived fields and calculated metrics). Context labels are automatically set on all of these metrics and dimensions.</li><li>Automatically enables the **[!UICONTROL Use in CJA]** option in the connection that is associated with this data view. (To learn more about this option, see [Use a Journey Optimizer connection in Customer Journey Analytics](/help/connections/manage-connections.md).)<p>If you manually disable this setting after it is enabled, the connection and any associated data views are reset to their default state. This can result in data changes in your reports.</p></li></ul><p><p>Consider the following when enabling this option: <ul><li>You can change the default data view at a later time, but doing so could alter your Journey Optimizer reporting data. If you choose to disable this option after it is enabled, you will be prompted to select a new default data view.</li><li>If you already made manual customizations to the the datasets, dimensions, or metrics in the Customer Journey Analytics data view, your manual customizations remain intact when enabling this configuration option. This option makes additional customizations that further standardize reporting across Journey Optimizer and Customer Journey Analytics. You can also make manual customizations after enabling this option.</li><li>When this option is selected, the connection associated with the data view cannot be deleted.</li></ul>See [Integrate Adobe Journey Optimizer with Adobe Customer Journey Analytics](/help/integrations/ajo.md) for more information. |
 
 {style="table-layout:auto"}
 
@@ -225,9 +229,9 @@ Next, you can set a data view's components, which means you can create metrics a
 
    You can see the [!UICONTROL Connection] at the top left, which contains the datasets, and its [!UICONTROL Schema fields] below.  All data views include standard components like Events, People, Session metrics, and time dimensions.<ul><li>When you define [custom containers](#containers-1), metrics are automatically added as ![ShowAllLayer](/help/assets/icons/ShowAllLayer.svg) **[!UICONTROL _custom container name_ Occurrences]**.</li><li>The system applies the **[!UICONTROL is not deprecated]** filter by default, so that only non-deprecated Schema fields appear.</li></ul>
 
-1. Search for a schema field using ![Search icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Search schema fields]** or find a field by moving into any of the dataset collections, like ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL Event datasets]** or ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL Lookup datasets]**. For event datasets, separate collections for ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL XDM fields]** and ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL Adhoc and relational fields]** are available.<br/>Alternatively, you can create a derived field using ![Data icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Create derived field**. See [Derived fields](./derived-fields/derived-fields.md) for more information.
+1. Search for a schema field using ![Search icon](/help/assets/icons/Search.svg) **[!UICONTROL Search schema fields]** or find a field by moving into any of the dataset collections, like ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL Event datasets]** or ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL Lookup datasets]**. For event datasets, separate collections for ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL XDM fields]** and ![Folder](/help/assets/icons/Folder.svg) **[!UICONTROL Adhoc and relational fields]** are available.<br/>Alternatively, you can create a derived field using ![Data icon](/help/assets/icons/Data.svg) **Create derived field**. See [Derived fields](./derived-fields/derived-fields.md) for more information.
 
-1. When you have found your specific schema field or defined your derived field, drag that field, such as ![Handle icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Page Name]**, from the left rail into the **[!UICONTROL Metrics]** or **[!UICONTROL Dimensions]** section underneath **[!UICONTROL Included components]**.
+1. When you have found your specific schema field or defined your derived field, drag that field, such as ![Handle icon](/help/assets/icons/DragHandle.svg) **[!UICONTROL Page Name]**, from the left rail into the **[!UICONTROL Metrics]** or **[!UICONTROL Dimensions]** section underneath **[!UICONTROL Included components]**.
    You can drag the same schema field into the dimensions or metrics sections multiple times and configure the same dimension or metric in different ways. For example, from the pageName field, create `Product Pages` and `Error pages` dimensions using different [Component settings](component-settings/overview.md) on the right.
    If you drag a schema field folder from the left rail, the fields in the folder are automatically sorted into the appropriate section. String fields end up in the [!UICONTROL Dimensions] section and numeric schema types end up in the [!UICONTROL Metrics] section. You can also click **[!UICONTROL Add all]** and all schema fields are added to their respective section.
 
@@ -254,7 +258,7 @@ Duplicating metrics or dimensions and then modifying specific settings is an eff
 
 ### Filter schema fields or datasets
 
-You can filter ![Filter icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) schema fields in the left rail by [!UICONTROL data type], [!UICONTROL datasets], [!UICONTROL data governance], and [!UICONTROL other] criteria ([!UICONTROL contains data], [!UICONTROL is identity], and [!UICONTROL is not deprecated]):
+You can filter ![Filter icon](/help/assets/icons/Filter.svg) schema fields in the left rail by [!UICONTROL data type], [!UICONTROL datasets], [!UICONTROL data governance], and [!UICONTROL other] criteria ([!UICONTROL contains data], [!UICONTROL is identity], and [!UICONTROL is not deprecated]):
 
 ![Filter fields](assets/dataview-components-filter.png)
 

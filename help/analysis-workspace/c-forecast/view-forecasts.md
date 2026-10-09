@@ -4,7 +4,7 @@ title: View Forecasts
 feature: Visualizations
 role: User
 exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
-TQID: https://experienceleague.adobe.com/fihJQOI-CyvGccQsB0VxvwR-iV0OkJSMENaiciYrgFc
+TQID: 'https://experienceleague.adobe.com/fihJQOI-CyvGccQsB0VxvwR-iV0OkJSMENaiciYrgFc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -14,6 +14,8 @@ feature_v2:
 subfeature_v2:
   - id: d13dba12-733d-4914-8d92-d643658bbe5d
     internal-label: Forecasting
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -26,7 +28,7 @@ You can view forecasts in a freeform table or in a line chart.
 
 You can view forecasts in a time-series freeform table. When [!UICONTROL Show forecast] is enabled for Freeform table in [user preferences](../user-preferences.md), forecasting is automatically shown for the first metric column added to the table. For any additional column:
 
-1. Select the column settings icon ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in the column header, then ensure that **[!UICONTROL Show forecast]** is selected in the list of options. For more information, see [Column settings](../visualizations/freeform-table/column-row-settings/column-settings.md).
+1. Select the column settings icon ![Column settings](/help/assets/icons2/Settings.svg) in the column header, then ensure that **[!UICONTROL Show forecast]** is selected in the list of options. For more information, see [Column settings](../visualizations/freeform-table/column-row-settings/column-settings.md).
 
 1. Click outside the **[!UICONTROL Column settings]** menu to save the setting and view the updated table.
    
@@ -42,7 +44,7 @@ Forecasts are shown in the table as follows:
 
 A line chart is the only visualization that allows you to view forecasts.
 
-1. Select the settings icon ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in the visualization header, then ensure that **[!UICONTROL Show forecast]** is selected in the list of options.
+1. Select the settings icon ![Column settings](/help/assets/icons2/Settings.svg) in the visualization header, then ensure that **[!UICONTROL Show forecast]** is selected in the list of options.
 
 1. (optional) To allow the forecasts to scale the chart properly, select **[!UICONTROL Allow forecast to scale Y-axis]**. This option is not selected by default because it can sometimes render a less legible chart.
 

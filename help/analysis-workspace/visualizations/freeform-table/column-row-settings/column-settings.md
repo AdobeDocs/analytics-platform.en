@@ -15,6 +15,8 @@ feature_v2:
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
     internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -40,7 +42,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Row and column s
 >[!ENDSHADEBOX]
 
 
-To access [!UICONTROL Column settings], select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in the column heading.
+To access [!UICONTROL Column settings], select ![Column settings](/help/assets/icons2/Settings.svg) in the column heading.
 
 ![Column settings](assets/column-settings.png)
 

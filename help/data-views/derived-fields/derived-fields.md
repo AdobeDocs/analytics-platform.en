@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-TQID: https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE
+TQID: 'https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -14,15 +14,19 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
     internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-    internal-label: Templates, Templates (CJA)
+    internal-label: Templates
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
     internal-label: Filters
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
     internal-label: Dimensions
+  - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
+    internal-label: Derived fields
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -869,10 +873,10 @@ You define a `Page Name (updated)` derived field. You use the [!UICONTROL CLASSI
 
 The following additional functionality is available in the Classify rule interface:
 
-- To quickly clear all table values, select ![Erase](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Erase_18_N.svg) **[!UICONTROL Clear all table values]**.
-- To upload a CSV file containing original values for When values equal and new values for Replace values with, select ![CSV](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileCSV_18_N.svg) **[!UICONTROL Upload CSV]**.
-- To download a template for creating a CSV file with original and new values to upload, select ![Download](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL Download CSV template]**.
-- To download a CSV file with all original and new values populated in the rule interface, select ![Download](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL Download CSV values]**.
+- To quickly clear all table values, select ![Erase](/help/assets/icons/Erase.svg) **[!UICONTROL Clear all table values]**.
+- To upload a CSV file containing original values for When values equal and new values for Replace values with, select ![CSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Upload CSV]**.
+- To download a template for creating a CSV file with original and new values to upload, select ![Download](/help/assets/icons/Download.svg) **[!UICONTROL Download CSV template]**.
+- To download a CSV file with all original and new values populated in the rule interface, select ![Download](/help/assets/icons/Download.svg) **[!UICONTROL Download CSV values]**.
  
 
 +++

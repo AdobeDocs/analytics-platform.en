@@ -2,14 +2,39 @@
 title: Create Or Edit A Conversation Insights Configuration
 description: Learn how to configure Conversation Insights configurations.
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
-hold: true
+TQID: https://experienceleague.adobe.com/yw5FGvOYbxxpcm3CfDyKed1-T7sGFTIRkvRz3Q4xj4I
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+  - id: d7a261eb-f9ac-4dd6-bd60-1637efcd3d36
+    internal-label: Conversation Insights
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
+autotag-review: '2026-10-02T07:00:50.074Z'
 ---
-# Create or edit a configurations
+# Create or edit configurations
 
-
-Conversation Insights enables you to analyze conversations (from large language models (LLM) or humans) at scale and give those conversations context within the full customer journey. Through Conversation Insights you are able to understand the impact of representatives on actual user outcomes.
+Conversation Insights enables you to analyze conversations from the agent experiences you offer to your customers. Those agent experiences can be based on large language models (LLM) or based on human conversations. For example, a chatbot interacting with a customer or call center transcripts. 
+Through Conversation Insights you are able to understand the impact of agents on actual user outcomes.
 
 Through the Conversation Insights configuration interface you can quickly create or edit a configuration and the associated artifacts (connection, data views, and more).
 
@@ -17,7 +42,7 @@ When you create or edit a Conversation Insights configuration, you specify the s
 
 Only system administrators can create or edit Conversation Insights configurations.
 
-You create or edit configurations from the [Conversation Insights Configurations interface](./conversation-insights-manage.md).
+You create or edit configurations from the [Conversation Insights Configurations interface](./manage.md).
 
 ## Restore missing blended dataset
 
@@ -63,7 +88,7 @@ For each configuration:
    1. Select **[!UICONTROL Use connection]**.
 
    * To search in the list of connections to select from, use the ![Search](/help/assets/icons/Search.svg) field.
-   * To configure which columns to display in the table, select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). In the **[!UICONTROL Customize table]** dialog, select the columns to show. Then select **[!UICONTROL Apply]**.
+   * To configure which columns to display in the table, select ![ColumnSetting](/help/assets/icons/ColumnSetting.svg). In the **[!UICONTROL Customize table]** dialog, select the columns to show. Then select **[!UICONTROL Apply]**.
 
 1. In the **[!UICONTROL Data views]** section, if no data views are already configured, select **[!UICONTROL Select data views]** to select data views.
 
@@ -78,13 +103,13 @@ For each configuration:
    1. Select **[!UICONTROL Use data views]** to use the data views. Select Cancel to cancel.
 
    * To search in the list of data views to select from, use the ![Search](/help/assets/icons/Search.svg) field.
-   * To configure which columns to display in the table, select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). In the **[!UICONTROL Customize table]** dialog, select the columns to show. Then select **[!UICONTROL Apply]**.
+   * To configure which columns to display in the table, select ![ColumnSetting](/help/assets/icons/ColumnSetting.svg). In the **[!UICONTROL Customize table]** dialog, select the columns to show. Then select **[!UICONTROL Apply]**.
 
 1. To finish the configuration:
 
    * Select **[!UICONTROL Discard]** for a new configuration that is not created.
 
-   * Select **[!UICONTROL Save for later]** for a new configuration you want to save but you do not want to create the artifact for (updates to data views for example). So you can revisit the configuration later and finish the actual creation of the configuration.
+   * Select **[!UICONTROL Save for later]** for a new configuration you want to save but you do not want to create the artifact for (updates to data views for example). You can revisit the configuration later and finish the actual creation of the configuration.
    
    * Select **[!UICONTROL Create]** to create the new configuration. 
    
@@ -97,7 +122,47 @@ For each configuration:
 
 ## Data view verification
 
-(Explain the metrics and dimensions you see from the relevant datasets)
+The data views you have configured in [Configuration steps](#configuration-steps), have **[!UICONTROL Conversation Insights]** as value for **[!UICONTROL Integrations]** in [Data views](/help/data-views/manage-dataviews.md).
+
+For each of the configured data views:
+
+* **Containers**: The [Containers tab](/help/data-views/create-dataview.md#containers) contains a new **[!UICONTROL Container name]**: **[!UICONTROL conversation]** with **[!UICONTROL Display name]**: **[!UICONTROL Container]** as an additional **[!UICONTROL System]** **[!UICONTROL Container type]**.
+* **Components**: You see additional schema field folders. For example: agentExperience and conversation. Additionally the following components are automatically added:
+
+   | Metrics | Schema data type | Schema path |
+   |---|---|---|
+   | Customer Feedbacks | String | eventType |
+   | Positive Sentiments | String | Derived Fields |
+   | Recommendations | String | eventType |
+   | Turns | String | eventType |
+
+   | Dimensions | Schema data type | Schema path |
+   |---|---|---|
+   | Agent ID | String | `agenticExperience.agents.agentID` |
+   | Agent Name | String | `agenticExperience.agents.name` |
+   | Concierge Name | String | `agenticExperience.name` |
+   | Concierge Version | String | `agenticExperience.version` |
+   | Conversation ID | String | `conversation.conversationID` |
+   | Conversation Name | String | `conversation.conversationName` |
+   | Conversation Signal Name | String | `conversation.signals.name` |
+   | Conversation Summary Boolean Value | Boolean | `conversation.signals.values.booleanValue` |
+   | Conversation Summary Confidence | Double | `conversation.signals.values.confidence` |
+   | Conversation Summary Metadata Key | String | `conversation.signals.values.metadata.key` |
+   | Conversation Summary Number Value | Double | `conversation.signals.values.numberValue` |
+   | Conversation Summary Qualifiers | String | `conversation.signals.values.qualifiers` |
+   | Conversation Tone Signals | String | `conversation.signals.attributes.tones.values` |
+   | Environment | String | `agenticExperience.environment` |
+   | Feedback Classification | String | Derived Fields |
+   | Feedback Rating Classification | String | `conversation.feedback.rating.classification` |
+   | Feedback Section Purpose | String | `conversation.feedback.raw.purpose` |
+   | Feedback Source | String | `conversation.feedback.source` |
+   | Phrase | String | `conversation.signals.attributes.subjects.values.phrase` |
+   | Response Raw Text | String | `conversation.response.raw.text` |
+   | Response Source | String | `conversation.response.source` |
+   | Sentiment Classification | String | Derived Fields |
+   | Skill Name | String | `agenticExperience.agents.skills.name` |
+   | Skill Version | String | `agenticExperience.agents.skills.version` |
+   | Value | String | `agenticExperience.agents.skills.parameters.value` |
 
 
 <!--
@@ -116,7 +181,6 @@ For each configuration:
 1. After 24 hours, [view audience dimensions in the data view](#view-audience-dimensions-in-the-data-view) to verify that the audience dimensions are available in the data views that you selected. 
 
 
- 
 ## View audience dimensions in the data view
 
 After you [create an audience analysis configuration](#create-an-audience-analysis-configuration), you can verify that audience dimensions were added to the data views that you selected during the configuration.

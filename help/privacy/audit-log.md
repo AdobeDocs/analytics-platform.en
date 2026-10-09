@@ -15,6 +15,8 @@ feature_v2:
 subfeature_v2:
   - id: c1cf8502-455a-452a-9f49-d22dfdff8033
     internal-label: Audit logs
+  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

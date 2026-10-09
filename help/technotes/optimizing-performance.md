@@ -4,7 +4,7 @@ title: Optimize Customer Journey Analytics and Analysis Workspace performance
 feature: FAQ
 exl-id: ad00e476-6f19-462b-ba53-d72ddd949802
 role: Admin
-TQID: https://experienceleague.adobe.com/gZCKXCJv3ySJvqH5fHUBNdFbgXgxS0lvuADyn6NXwxE
+TQID: 'https://experienceleague.adobe.com/gZCKXCJv3ySJvqH5fHUBNdFbgXgxS0lvuADyn6NXwxE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -13,13 +13,15 @@ feature_v2:
     internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
     internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: aff2ef09-fc60-4018-9197-e2befd623064
-    internal-label: Anomaly detection, Anomaly detection (CJA)
+    internal-label: Anomaly detection
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
     internal-label: Filters
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
@@ -34,6 +36,8 @@ subfeature_v2:
     internal-label: Calculated metrics
   - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
     internal-label: Alerts
+  - id: f21d8c43-b886-433b-93ea-5982cbfc16b7
+    internal-label: FAQ
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

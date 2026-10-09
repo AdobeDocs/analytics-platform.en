@@ -102,5 +102,11 @@ Settings include:
 | [View Density](/help/analysis-workspace/build-workspace-project/view-density.md) | Lets you see more data on the screen by reducing the vertical padding of the left panel, freeform tables and cohort tables. |
 | Allow commenting | When this option is enabled, a comments area is available in the right rail of the project in Analysis Workspace. For more information, see [Add and manage comments in projects](/help/analysis-workspace/build-workspace-project/comment-projects.md).  |
 
+<!--
 
+Add this to the table above (second-to-last-row) when cached results releases: 
+
+- [Use cached results for faster loading](/help/analysis-workspace/build-workspace-project/cached-results.md) - When enabled, results load faster for 12 hours after someone first opens the project. Data continues to flow in the background. To load the latest results, refresh individual panels or the entire project. -
+
+-->
 

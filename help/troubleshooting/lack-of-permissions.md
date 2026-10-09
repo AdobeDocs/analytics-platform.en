@@ -18,6 +18,8 @@ feature_v2:
 subfeature_v2:
   - id: a67cb189-a535-41f6-afa2-448f39c4759f
     internal-label: Access control
+  - id: cbc7b6aa-4963-4ebf-9bb9-963336957623
+    internal-label: Troubleshooting
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -58,7 +60,7 @@ As an example, after creating a [Connection](../connections/overview.md) and [Da
 
 1. Navigate into the relevant role.
 
-1. Select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** to edit the role.
+1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** to edit the role.
 
 1. Ensure **[!UICONTROL Manage Data Usage Policies]** and **[!UICONTROL View Data Usage Policies]** are added to the **[!UICONTROL Data Governance]** container.
 

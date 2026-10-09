@@ -18,6 +18,8 @@ feature_v2:
 subfeature_v2:
   - id: cbde176d-5423-4c67-8a87-bc8faefd3a44
     internal-label: Customer AI integration
+  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
