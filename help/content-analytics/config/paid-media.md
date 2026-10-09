@@ -55,12 +55,28 @@ The specific ad network determines which summary datasets are created. Not every
 | `paidmedia_asset_summary` <br/>`ad.asset.summary`<br/>`\| Asset Summary` | Asset<br/>none | ![Checkmark](/help/assets/icons2/Checkmark.svg) | ![Checkmark](/help/assets/icons2/Checkmark.svg) | | | ![Checkmark](/help/assets/icons2/Checkmark.svg) | Daily asset-level performance<br/>in its ad/campaign context<br/>without demographic or geographic breakdown. |
 | `paidmedia_assets_demographics` <br/> `ad.asset.demographics`<br/>`\| Asset Demo` | Asset<br/>age, gender | ![Checkmark](/help/assets/icons2/Checkmark.svg) | | | | | Daily asset-level performance<br/>in its ad/campaign context<br/>broken down by age and gender. |
 
-
 This table describes dataset coverage, not a guarantee that a particular network populates every metric or metadata field. Check the fields needed for your analysis. An unavailable field or unsupported breakdown is not the same as a measured zero value for a field.
+
+Summary data grouping brings equivalent dimensions together; the grouping does not total the six performance metric totals. 
+
+## Lookup datasets
 
 Separate lookup datasets describe Account, Campaign, Ad Group, Ad, Experience, and Asset. They provide names and metadata using entity GUIDs. No one-to-one pairing exists between the summary datasets and the six lookup datasets. 
 
-Summary data grouping brings equivalent dimensions together; the grouping does not total the six performance metric totals. 
+The lookup datasets share two common building blocks:
+
+* **Entity IDs object**: Stores account, ad, ad group, asset, campaign, and experience objects. Each object contains an Adobe-generated global key and a platform-native ID.
+* **Paid media core metadata**: Stores common descriptive fields such as name, status, objective, optimization goal, bidding strategy, budget type, budget values, currency, time zone, serving status, dates, ad network, channel, hierarchy path, network, and portfolio identifiers.
+
+| Lookup dataset | Key contents |
+|---|---|
+| Account Lookup | Account-level metadata such as name, currency, time zone, status, spending limit, and creation dates |
+| Campaign Lookup | Campaign settings for budget, scheduling, targeting, conversion tracking, attribution, placements, promoted objects, objective, and catalog or store IDs |
+| Ad Group Lookup | Ad group metadata such as campaign linkage, status, budget, optimization goals, and targeting |
+| Ad Lookup | Ad creative details such as assets, variants, dimensions, tracking URLs, call to action, body text, titles, destination URL, delivery status, and review status |
+| Asset Lookup | Asset properties such as dimensions, file details, image properties, media URLs, usage metadata, video metadata, description, subtype, title, and type |
+| Experience Lookup | Experience-level creative groupings such as experience ID, assets, title, description, and call to action |
+
 
 ## Components
 
