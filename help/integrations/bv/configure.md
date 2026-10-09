@@ -3,6 +3,18 @@ title: Brand Visibility Inbound Integration Configuration
 description: Learn how to configure the integration of Brand Visibility with Customer Journey Analytics
 feature: Experience Platform Integration
 role: Admin
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+subfeature_v2:
+  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Setup and configure inbound integration
 
