@@ -22,11 +22,11 @@ Enabling paid media does not automatically connect the paid media data to your s
 
 ## Summary datasets
 
-The illustration below shows how ummary datasets are generated when you enable the paid media channel in Content Analytics for one or more of your ad networks. The relevant APIs from the available ad networks are used to download and transform experience, asset and ad data into potentially six summary datasets.
+The illustration below shows how summary datasets are generated when you enable the paid media channel in Content Analytics for one or more of your ad networks. The relevant APIs from the available ad networks are used to download and transform experience, asset and ad data into potentially six summary datasets.
 
-![Paid media generation of summary datasets](/help/content-analytics/assets/paid-media-generation-of-datasets.svg)
+![Paid media generation of summary datasets](/help/content-analytics/assets/paid-media-generation-of-datasets.png)
 
-Which summary datasets are created is determined by the specific ad network. Not every ad network, for which you have configured a source connector, generates all six possible summary datasets. See the table below for an overview of the summary datasets with the following information:
+The specific ad network determines which summary datasets are created. Not every ad network, for which you have configured a source connector, generates all six possible summary datasets. See the table below for an overview of the summary datasets with the following information:
 
 * Summary dataset name, event type, and component suffix
 * Entity
@@ -56,7 +56,7 @@ Which summary datasets are created is determined by the specific ad network. Not
 | `paidmedia_assets_demographics` <br/> `ad.asset.demographics`<br/>`\| Asset Demo` | Asset<br/>age, gender | ![Checkmark](/help/assets/icons2/Checkmark.svg) | | | | | Daily asset-level performance<br/>in its ad/campaign context<br/>broken down by age and gender. |
 
 
-This table describes dataset coverage, not a guarantee that every metric or metadata field is populated by a particular network. Check the fields needed for your analysis. An unavailable field or unsupported breakdown is not the same as a measured zero value for a field.
+This table describes dataset coverage, not a guarantee that a particular network populates every metric or metadata field. Check the fields needed for your analysis. An unavailable field or unsupported breakdown is not the same as a measured zero value for a field.
 
 Separate lookup datasets describe Account, Campaign, Ad Group, Ad, Experience, and Asset. They provide names and metadata using entity GUIDs. No one-to-one pairing exists between the summary datasets and the six lookup datasets. 
 
@@ -64,7 +64,7 @@ Summary data grouping brings equivalent dimensions together; the grouping does n
 
 ## Components
 
-The Content Analytics Paid media channel, once enabled, also generates a number of data view components. These components are provided with a component suffix to distinct similar named components from each other.
+The Content Analytics Paid media channel, once enabled, also generates a number of data view components. These components are provided with a component suffix to distinguish similar named components from each other.
 
 ### Metrics
 
@@ -79,17 +79,17 @@ For example:
 | Clicks \| Ad Geo | Clicks from the ad-geography report | Performance by country or region |
 | Clicks \| Experience Placement | Clicks from the experience-placement report | Creative performance by placement |
 
-Each clicks metric component serves a different reporting context. You cannot simply total these metric comnponents into a grand total. The same underlying advertising activity can be represented in more than one summary dataset.
+Each clicks metric component serves a different reporting context. You cannot total these metric components into a grand total. The same underlying advertising activity can be represented in more than one summary dataset.
 
 ### Dimensions
 
-Each summary dataset contains IDs and GUIDs. The ID is the identity (for account, campaign, ad group, ad,  experience, and asset) provided by the ad network and is unique **within** the ad network data. The GUID is an Adobe provided identity (for account, campaign, ad group, ad,  experienc, and asset) and is unique **across** ad networks. IDs and GUIDs are used to lookup the corresponding names and metadata. 
+Each summary dataset contains IDs and GUIDs. The ID is the identity (for account, campaign, ad group, ad,  experience, and asset) provided by the ad network and is unique **within** the ad network data. The GUID is an Adobe provided identity (for account, campaign, ad group, ad,  experience, and asset) and is unique **across** ad networks. IDs and GUIDs are used to lookup the corresponding names and metadata. 
 
 ### Derived fields
 
 Derived fields are part of the automatic reporting configuration. Derived fields translate identifiers into names and metadata, expose creative attributes, and support the equivalent dimensions used across reporting sources. They do not create additional advertising activity or automatically attribute a website conversion.
 
-Use the same breakdown for the metrics within an analysis, and dimensions supported by that breakdown. Be aware that demographic and geographic totals do not necessarily equal the no-breakdown totals for an ad network and does not imply an ingestion failure.
+Use the same breakdown for the metrics within an analysis, and dimensions supported by that breakdown. Be aware that demographic and geographic totals do not necessarily equal the no-breakdown totals for an ad network and do not imply an ingestion failure.
 
 ## Reporting and analysis
 
@@ -108,9 +108,13 @@ These reports can reveal associations between creative attributes and performanc
 
 Avoid incompatible combinations: Asset Name (Paid Media) with Ad Summary metrics is not a substitute for an asset report. Use Asset Summary metrics for asset analysis and Ad Geography metrics for region analysis. Empty or zero cells from an incompatible pairing should not be interpreted as proof of no activity.
 
-### Ad campaign performance example
+### Examples
 
-You want to report on campaign performance on ad level. In Analysis Workspace, use Campaign Name as the dimension (rows) and use the metrics as outlined in the table below. Each metric has the same component suffix.
+Below are examples of how to report on and analyze paid media performance and how to combine Content Analytics experience and assets data with paid media data.
+
+#### Ad campaign performance
+
+You want to report on campaign performance at the ad level. In Analysis Workspace, use Campaign Name as the dimension (rows) and use the metrics as outlined in the table below. Each metric has the same component suffix.
 
 | Metrics | Reporting level |
 | --- | --- |
@@ -124,7 +128,7 @@ Optionally break down Campaign Name by Ad Name but keep all five columns at Ad S
 
 To investigate individual assets, use a separate table with Asset Name (Paid Media) and the matching Asset Summary columns. Do not add the two tables' totals together. 
 
-### Networking best performing ads example
+#### Identifying best performing ads
 
 You want to understand where your Meta ads are performing best? 
 
@@ -139,11 +143,11 @@ To investigate, use additional breakdowns for geography and demographics. Use Ca
 | Cost Per Click | Ad Summary |
 
 
-### Correlate paid media data with experienc event dats
+#### Join paid media data with experience event data
 
-Combine paid media performance with on-site behavioral data to understand how campaigns and ads are associated with website engagement, conversions, and revenue. For example, compare advertising-network clicks and spend with orders attributed to visits from the same campaign. 
+Join paid media performance with on-site behavioral data to understand how campaigns and ads are associated with website engagement, conversions, and revenue. For example, compare advertising-network clicks and spend with orders attributed to visits from the same campaign. 
 
- To configure this reporting, include the paid media summary datasets and your on-site event dataset in the same Customer Journey Analytics connection. Capture stable campaign, ad, or supported asset identifiers from landing-page URL parameters or existing event fields. Use derived fields as needed to parse and map those values to the corresponding paid media identifiers, preserving the required network and account context. Keep identifiers as strings. Configure a Summary Data Group in the data view to associate the matching event and summary dimensions. Enabling the Paid Media channel does not automatically configure this implementation-specific URL tracking and mapping. 
+ To configure this reporting, include the paid media summary datasets and your on-site event dataset in the same Customer Journey Analytics connection. Capture stable campaign, ad, or supported asset identifiers from landing-page URL parameters or existing event fields. Use derived fields as needed to parse and map those values to the corresponding paid media identifiers, preserving the required network and account context. Keep identifiers as strings. To associate the matching event and summary dimensions, configure a Summary Data Group in the data view. Enabling the Paid Media channel does not automatically configure this implementation-specific URL tracking and mapping. 
 
 
 | Tracking option | Considerations |
@@ -160,16 +164,16 @@ Be aware of the following:
 * Grouping matching dimensions supports reporting across these sources, but does not match individual ad network conversions to website conversions or perform person-level stitching. 
 * The comparison shows an association, not causal lift. 
 * Results can differ because of conversion definitions, attribution windows, view-through or modeled conversions, consent, and reporting dates or time zones. 
-* Validate the source of campaign-tagged visits, particularly when tracking parameters are reused across channels. 
+* Validate the source of campaign-tagged visits when tracking parameters are reused across channels. 
 
  
-### Compare campaign performance with on-site orders example
+#### Compare campaign performance with on-site orders
 
-A landing-page URL can contain several tracking parameters. In this example, we use the campaign ID in `utm_id` to compare campaign spend with website orders. 
+A landing-page URL can contain several tracking parameters. In this example, the campaign ID in `utm_id` is used to compare campaign spend with website orders. 
 
 https://www.example.com/offer?utm_source=facebook&utm_medium=paid_social&utm_campaign=autumn_offer&utm_id=120218706543980215 
 
-The parameter used for this comparison: `utm_id=120218706543980215`. The other parameters describe the source, medium, and campaign label but are not used as matching field used in this example. 
+The parameter used for this comparison: `utm_id=120218706543980215`. The other parameters describe the source, medium, and campaign label but are not used as a matching field used in this example. 
 
 If the URL is captured in website event data and both website event dataset and paid media datasets are part of the same Customer Journey Analytics connection:
 
@@ -178,6 +182,14 @@ If the URL is captured in website event data and both website event dataset and 
 1. Compare spend and orders. In Analysis Workspace, use the grouped campaign dimension as the rows of a freeform table. Add `Ad Summary` spend and website `Orders` as columns. Set the attribution model and lookback window for `Orders`. 
  
 
-The table shows ad network spend alongside website orders attributed to each campaign. Two campaigns with similar ad spend might have different numbers of attributed downstream website actions. Use this comparison to identify campaigns and landing-page experiences for further investigation or testing, rather than assessing performance from advertising metrics alone. 
+The freeform table shows ad network spend alongside website orders attributed to each campaign. Two campaigns with similar ad spend have different numbers of attributed downstream website actions. Use this comparison to identify campaigns and landing-page experiences for further investigation or testing, rather than assessing performance from advertising metrics alone. 
 
 The example uses a campaign ID, but the same approach can use ad group, ad, or asset identifiers when matching values can be captured. Content Analytics attributes, such as **[!UICONTROL Asset Foreground Colors]**, let you compare creative characteristics with paid media performance. With asset-specific tracking and matching attribute dimensions configured across both sources, you can extend that comparison to attributed website orders and use the results to guide creative testing.
+
+#### Combine asset performance with web data
+
+If you want to report and analyze on asset performance related to your paid media investments, consider adding a specific asset UTM parameter in your ad network paid media configuration. For example, besides standard dynamic parameters like s`ite_source_name`, `campaign.id`, `adset.id`, or `placement`, add static custom parameters, like `aca_asset_id=999999`.
+
+This custom parameter is added to your landing page URL. For example: https://www.example.com/home.html?utm_content=120241705099850539%2Caca_asset_id%3D9999999%2Caca_placement%3DFacebook_Desktop_Feed&aca_id_2=8888888&utm_medium=paid&utm_source=fb&utm_id=120241705099830539&utm_term=120241705099840539&utm_campaign=120241705099830539
+
+You now have a relation between an asset on a page and your paid media data. Use that relation in Analysis Workspace to see how Content Analytics asset metadata (for example **[!UICONTROL Asset Foreground Colors]**) contribute to paid media campaign success.
