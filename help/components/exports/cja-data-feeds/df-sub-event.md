@@ -1,6 +1,6 @@
 ---
-title: Understand Sub-Events and Object Arrays in Data Feeds
-description: Learn how Customer Journey Analytics data feeds export sub-events from schema arrays, preserving hierarchy instead of flattening them as Workspace does.
+title: Sub-Container Components from Arrays and Maps in Data Feeds
+description: Learn how Customer Journey Analytics data feeds export sub-container components from array and map fields, and how to query them in your data warehouse.
 hide: true
 feature: Components
 product_v2:
@@ -15,27 +15,47 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
 ---
-# Sub-events in data feeds
+# Sub-container components in data feeds
 
 {{release-limited-testing}}
 
-[Sub-events](/help/components/segments/sub-event.md) in Customer Journey Analytics allow you to analyze event data at a level more granular than the event level.
+Sub-container components are dimensions and metrics based on fields inside an array or map in your XDM schema. They allow you to analyze data at a level more granular than the event level, such as the individual products in a purchase. For information about using this data in segments, see [Sub-events](/help/components/segments/sub-event.md).
 
-Use the following information to understand how to work with sub-events in your Customer Journey Analytics data feeds.
+Use the following information to understand how sub-container components from array and map fields appear in your Customer Journey Analytics data feeds.
 
-## Understand sub-events
+## Understand sub-container components
 
-### Sub-events in the XDM schema
+### Sub-container components in the XDM schema
 
-In the XDM schema, each element of an array (a string array or an object array) is a sub-event.
+In the XDM schema, each element of an array (a string array or an object array) is a sub-container. Each entry in a map field is also a sub-container, as described in [Map fields in data feeds](#map-fields-in-data-feeds). Dimensions and metrics based on the fields within a sub-container are sub-container components.
 
-To view an event with sub-events within the XDM schema in Adobe Exprience Platform, select [!UICONTROL **Schemas**], then expand an event that contains sub-events.
+To view sub-containers within the XDM schema in Adobe Experience Platform, select [!UICONTROL **Schemas**], then expand an event that contains sub-containers.
 
-In the following example, `Product list items` is an object array containing various sub-events.
+In the following example, `Product list items` is an object array containing various sub-container components.
 
-![XDM schema containing an object array and sub-events](assets/df-sub-event-schema.png)
+![XDM schema containing an object array and sub-container components](assets/df-sub-event-schema.png)
 
-### Sub-event example: Products in a purchase event
+### Sub-container differences between Analysis Workspace and data feeds
+
+Sub-container components are represented differently between Analysis Workspace and data feeds in Customer Journey Analytics.
+
+| Location | How sub-container components are represented |
+| --- | --- |
+| **Analysis Workspace (in Customer Journey Analytics)** | Selectable as individual components, separate from any visible hierarchy. |
+| **Data feeds (in Customer Journey Analytics)** | Represented as a group, with their hierarchy intact. |
+
+### Sub-container differences between Adobe Analytics and Customer Journey Analytics
+
+Sub-container data (such as multiple product details in a single purchase event) appears differently in Customer Journey Analytics data feeds than in Adobe Analytics data feeds. The following table compares how each product represents sub-container data.
+
+| Product | How sub-container data appears in data feeds | Example: Product list |
+| --- | --- | --- |
+| **Adobe Analytics** | Flattened into a delimited string in a single column. | A product list contains multiple products grouped in a single string:<p>`Power Tools;Cordless Drill;1;129.99,Power Tools;Drill Battery Pack;2;39.98` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+| **Customer Journey Analytics** | Sub-container components retain the hierarchy defined in your XDM schema. While grouped in the same column, they show their relational hierarchy to their parent event and sibling sub-containers. | A product list maintains its hierarchy that is defined in the XDM schema as an array:<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+
+{style="table-layout:auto"}
+
+### Sub-container example: Products in a purchase event
 
 A customer purchases two products in a single order: one cordless drill and two drill battery packs. Your implementation sends a single purchase event that includes both products in the `productListItems` object array:
 
@@ -53,82 +73,38 @@ A customer purchases two products in a single order: one cordless drill and two 
 }
 ```
 
-This event contains two sub-events, one for each object in the `productListItems` array. The following table shows which fields belong to the event and which belong to its sub-events.
+This event contains two sub-containers, one for each object in the `productListItems` array. The following table shows which fields belong to the event and which belong to its sub-containers.
 
 | Level | Fields | What the fields describe |
 | --- | --- | --- |
 | **Event** | `eventType`, `timestamp`, `commerce.purchases.value` | The purchase as a whole. Each field has one value for the event. The **Orders** metric counts `1` for this event, regardless of how many products it contains. |
-| **Sub-event** | `SKU`, `name`, `quantity`, `priceTotal` in each `productListItems` object | An individual product in the purchase. Each field has one value per product. For example, `quantity` is `1` for the cordless drill and `2` for the drill battery pack. |
+| **Sub-container** | `SKU`, `name`, `quantity`, `priceTotal` in each `productListItems` object | An individual product in the purchase. Each field has one value per product. For example, `quantity` is `1` for the cordless drill and `2` for the drill battery pack. |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->Sub-events include only the data that is sent with the event. Customer Journey Analytics does not reconstruct cart contents from earlier events, such as cart adds or checkouts. For products to appear as sub-events of a purchase event, your implementation must include them in `productListItems` on that purchase event.
+>Sub-containers include only the data that is sent with the event. Customer Journey Analytics does not reconstruct cart contents from earlier events, such as cart adds or checkouts. For products to appear as sub-containers of a purchase event, your implementation must include them in `productListItems` on that purchase event.
 
-## Add sub-event data to a data feed
+## Add sub-container components to a data feed
 
-When you attempt to add a column that is a sub-event while building a data feed, a dialog displays, prompting you to add any of the peer sub-events. In the data feed output, all of these events appear in a single column. 
+When you add a sub-container component to a data feed, a dialog prompts you to add the other components from the same sub-container. 
 
-## View sub-event data in data feed output
+![Dialog prompting you to add related sub-container components](assets/data-feeds-add-subevent.png)
 
-### Sub-event differences between Analysis Workspace and data feeds
+Fields from the same sub-container appear on the canvas as a collapsible nested group rather than a flat item. 
 
-Sub-events are represented differently between Analysis Workspace and data feeds in Customer Journey Analytics.
+![Sub-container group](assets/data-feeds-subevent-added.png)
 
-| Location | How sub-events are represented |
-| --- | --- |
-| **Analysis Workspace (in Customer Journey Analytics)** | Selectable as individual components, separate from any visible hierarchy. |
-| **Data feeds (in Customer Journey Analytics)** | Represented as a group, with their hierarchy intact. |
+This group reflects the underlying data structure.
 
-### Sub-event differences between Adobe Analytics and Customer Journey Analytics
+In the data feed output, all of these components appear as a nested array in a single column.
 
-Sub-event data (such as multiple product details in a single purchase event) appears differently in Customer Journey Analytics data feeds than in Adobe Analytics data feeds. The following table compares how each product represents sub-event data.
+For information about how to add components, including sub-container components, to a data feed, see [Create a data feed](/help/components/exports/cja-data-feeds/create-feed.md).
 
-| Product | How sub-event data appears in data feeds | Example: Product list |
-| --- | --- | --- |
-| **Adobe Analytics** | Flattened into a delimited string in a single column. | A product list contains multiple products grouped in a single string:<p>`Power Tools;Cordless Drill;1;129.99,Power Tools;Drill Battery Pack;2;39.98` <!--screenshot of what this looks like: product lists, list vars. --></p> |
-| **Customer Journey Analytics** | Sub-events retain the hierarchy defined in your XDM schema. While grouped in the same column, they show their relational hierarchy to their parent event and sibling sub-events. | A product list maintains its hierarchy that is defined in the XDM schema as an array:<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
+## Query sub-container data in data feed output
 
-{style="table-layout:auto"}
-
-### Differences from Adobe Analytics
-
-### How output differs between Adobe Analytics and Customer Journey Analytics data feeds
-
-Sub-event data (such as multiple product details in a single purchase event) appears differently in Customer Journey Analytics data feeds than in Adobe Analytics data feeds. The following table compares how each product represents sub-event data.
-
-| Product | How sub-event data appears in data feeds | Example: Product list |
-| --- | --- | --- |
-| **Adobe Analytics** | Flattened into a delimited string in a single column. | A product list contains multiple products grouped in a single string:<p>`Power Tools;Cordless Drill;1;129.99,Power Tools;Drill Battery Pack;2;39.98` <!--screenshot of what this looks like: product lists, list vars. --></p> |
-| **Customer Journey Analytics** | Sub-events retain the hierarchy defined in your XDM schema. While grouped in the same column, they show their relational hierarchy to their parent event and sibling sub-events. | A product list maintains its hierarchy that is defined in the XDM schema as an array:<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
-
-{style="table-layout:auto"}
-
-## How sub-events differ between Analysis Workspace and data feeds output
-
-Sub-events are represented differently between Analysis Workspace and data feeds in Customer Journey Analytics.
-
-| Location | How sub-events are represented |
-| --- | --- |
-| **Analysis Workspace** | Selectable as individual components, separate from any visible hierarchy. |
-| **Data feeds** | Represented as a group, with their hierarchy intact. |
-
-
-## View sub-event data in data feed output
-
-Sub-event data (such as multiple product details in a single purchase event) appears differently in Customer Journey Analytics data feeds than in Adobe Analytics data feeds. The following table compares how each product represents sub-event data.
-
-| Product | How sub-event data appears in data feeds | Example: Product list |
-| --- | --- | --- |
-| **Adobe Analytics** | Flattened into a delimited string in a single column. | A product list contains multiple products grouped in a single string:<p>`Power Tools;Cordless Drill;1;129.99,Power Tools;Drill Battery Pack;2;39.98` <!--screenshot of what this looks like: product lists, list vars. --></p> |
-| **Customer Journey Analytics** | Sub-events retain the hierarchy defined in your XDM schema. While grouped in the same column, they show their relational hierarchy to their parent event and sibling sub-events. | A product list maintains its hierarchy that is defined in the XDM schema as an array:<p>`[{"category":"Power Tools","product":"Cordless Drill","quantity":1,"revenue":129.99},{"category":"Power Tools","product":"Drill Battery Pack","quantity":2,"revenue":39.98}]` <!--screenshot of what this looks like: product lists, list vars. --></p> |
-
-{style="table-layout:auto"}
-
-## Query sub-event data in data feed output
-
-Because sub-event data [appears differently in Customer Journey Analytics data feeds](#view-sub-event-data-in-data-feed-output), the queries you use for it differ from those you use for Adobe Analytics data feeds.
+Because sub-container data [appears differently in Customer Journey Analytics data feeds](#sub-container-differences-between-adobe-analytics-and-customer-journey-analytics), the queries you use for it differ from those you use for Adobe Analytics data feeds.
 
 The following examples show how to find events that include a specific product. The examples use Google BigQuery syntax. Other data warehouses, such as Snowflake and Databricks, support the same approach with minor syntax differences.
 
@@ -201,6 +177,74 @@ WHERE REGEXP_CONTAINS(product_list, r'(^|,)[^;]*;Cordless Drill;')
 ```
 
 +++
+
+## Use map fields in data feeds
+
+Map fields in your XDM schema store key-value pairs. Data feeds export each map as an array of objects, the same way as other [sub-container data](#query-sub-container-data-in-data-feed-output). Each object contains the map key and its value as separate fields.
+
+Field names in the output come from the component IDs that you configure for the data feed, not fixed names such as `key` or `value`. The examples in this section use sample component IDs.
+
+<!-- Confirm with Nate before publishing: how the outer array column is named in the output (for example, `survey_responses`). -->
+
+### Simple maps
+
+Simple maps are the map type that you can create in your own schema. Each key is a string, and each value is a string or an integer.
+
+For example, a survey map stores each question as a key and the response as a value:
+
+```json
+{
+  "_yourtenant": {
+    "surveyResponses": {
+      "How did you hear about us?": "Search engine",
+      "How likely are you to recommend us?": 9
+    }
+  }
+}
+```
+
+In the data feed output, `survey_question` and `survey_answer` are the component IDs for the key and the value:
+
+```json
+{
+  "survey_responses": [
+    { "survey_question": "How did you hear about us?", "survey_answer": "Search engine" },
+    { "survey_question": "How likely are you to recommend us?", "survey_answer": 9 }
+  ]
+}
+```
+
+### Identity map
+
+Each identity in the [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) field is exported as one object. The object contains the identity namespace (the key), along with the identifier, authenticated state, and primary flag. The namespace repeats for each identity in that namespace.
+
+Only the identity map attributes that exist as dimensions in your data view and that you add to the data feed are exported.
+
+```json
+{
+  "identity_map": [
+    { "identity_namespace": "ECID", "identity_id": "83290187457380573620940587193016478103", "authenticated_state": "ambiguous", "is_primary": true },
+    { "identity_namespace": "CRMID", "identity_id": "C-1048576", "authenticated_state": "authenticated", "is_primary": false }
+  ]
+}
+```
+
+### Nested maps
+
+Some Adobe-defined fields, such as `segmentMembership`, are maps of maps. Data feeds flatten these into a single array, with the first-level key and second-level key as separate fields in each object. The first-level key repeats in each object it applies to, so no data or relationships are lost.
+
+For example, `segment_namespace` and `segment_id` are the component IDs for the first-level key and the second-level key:
+
+```json
+{
+  "segment_membership": [
+    { "segment_namespace": "ups", "segment_id": "04a81716-43d6-4e7a-a49c-f1d8b3129ba9", "status": "realized" },
+    { "segment_namespace": "ups", "segment_id": "53cba6b2-a23b-454a-8069-fc41308f1c0f", "status": "exited" }
+  ]
+}
+```
+
+
 
 
 
