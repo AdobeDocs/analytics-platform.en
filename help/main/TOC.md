@@ -431,6 +431,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + {hide-from-toc} [Prepare to map columns](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc} [Map columns](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc} [Create data feeds](/help/components/exports/cja-data-feeds/create-feed.md)
+      + {hide-from-toc} [Component availability](/help/components/exports/cja-data-feeds/df-components.md)
       + {hide-from-toc} [Segmentation in data feeds](/help/components/exports/cja-data-feeds/df-segmentation.md)
       + {hide-from-toc} [Apply data transformations](/help/components/exports/cja-data-feeds/df-data-transformations.md)
       + {hide-from-toc} [Sub-events in data feeds](/help/components/exports/cja-data-feeds/df-sub-event.md)
@@ -486,7 +487,10 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Integrate Journey Optimizer data](/help/integrations/ajo.md)
   + [Integrate Decision Management data](/help/integrations/ajo-od.md)
   + [Integrate Customer AI](/help/integrations/customer-ai.md)
-  + [Integrate Brand Visibility](/help/integrations/bv.md)
+  + Integrate Brand Visibility {#bv}
+    + [Overview](/help/integrations/bv/bv.md)
+    + [Configure](/help/integrations/bv/configure.md)
+    + [Reference](/help/integrations/bv/reference.md)
   + [Integrate Adobe Advertising](/help/integrations/advertising.md)
 
 + Data Governance {#cja-privacy}
