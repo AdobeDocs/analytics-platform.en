@@ -1,6 +1,6 @@
 ---
-title: Create a schema for Customer Journey Analytics
-description: Learn about the recommended path when upgrading from Adobe Analytics to Customer Journey Analytics
+title: Create and configure a connection to use with Customer Journey Analytics
+description: Learn how to create a Customer Journey Analytics connection and add your Experience Platform datasets when upgrading from Adobe Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics

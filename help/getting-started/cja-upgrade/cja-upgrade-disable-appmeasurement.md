@@ -1,6 +1,6 @@
 ---
-title: Add the Analytics source connector dataset to the connection
-description: Learn how to add the Analytics source connector dataset to the connection
+title: Disable Adobe Analytics
+description: Learn how to disable Adobe Analytics data collection after upgrading to Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -50,7 +50,7 @@ Before disabling Adobe Analytics, review the information in [Evaluate when to di
 
 * **Tags:** Disable the Adobe Analytics extension
 
-* **AppMeasurment:** Replace the AppMeasurement.js library s=newobject
+* **AppMeasurement:** Replace the AppMeasurement.js library s=newobject
 
 >[!NOTE]
 >

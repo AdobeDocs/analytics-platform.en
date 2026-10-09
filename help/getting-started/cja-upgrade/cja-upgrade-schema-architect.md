@@ -70,7 +70,7 @@ The data pipeline for Customer Journey Analytics contains separate areas for dat
 
 ## Compare schemas to Adobe Analytics data collection
 
-The Experience Data Model that Customer Journey Analytics uses enables significantly more flexibility than most other Analytics solutions (including Adobe Analytics). Establishing a solid schema is your organization's opportunity to avoid carrying forward constraints that exist in other Analytics products.
+Unlike Adobe Analytics, Customer Journey Analytics doesn't automatically map incoming data to predefined variables. Your schema defines the fields, and data views determine how they're reported. The Experience Data Model that Customer Journey Analytics uses enables significantly more flexibility than most other Analytics solutions (including Adobe Analytics). Establishing a solid schema is your organization's opportunity to avoid carrying forward constraints that exist in other Analytics products.
 
 | Common Adobe Analytics habit | Better approach in XDM + Customer Journey Analytics |
 |---|---|

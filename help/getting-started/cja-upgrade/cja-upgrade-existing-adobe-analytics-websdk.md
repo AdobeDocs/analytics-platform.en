@@ -71,7 +71,7 @@ Consider the following advantages and disadvantages of configuring your existing
 
 1. Begin sending data from Edge Network to Platform. Send all your variables in AppMeasurement format through the data object.
 
-   For more information, see [Data object variable mapping to Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping).
+   The Edge Network automatically maps these data object fields to Adobe Analytics variables, which keeps your Adobe Analytics reporting intact during the upgrade. For the list of supported fields, see [Data object field mapping to Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping). Customer Journey Analytics doesn't use these mappings. You map the data object fields to your XDM schema for Customer Journey Analytics in a later step.
   
 1. Choose your schema.
 
@@ -97,6 +97,6 @@ Consider the following advantages and disadvantages of configuring your existing
 
 1. Use datastream mapping to map all of the fields in the data object to your XDM schema.
 
-   For more information, see [Mapping](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) in [Data Prep for Data Collection](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) in the Experience Platform documentation.
+   Customer Journey Analytics can use only the data object fields that you map to your schema. For more information, see [Mapping](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) in [Data Prep for Data Collection](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) in the Experience Platform documentation.
 
 {{upgrade-final-step}}
