@@ -1,6 +1,6 @@
 ---
-title: Create a tag property and add the Web SDK extension
-description: Learn how to create a tag property and add the Web SDK extension
+title: Install the Platform Web SDK with the NPM package
+description: Learn how to install the Web SDK using the NPM package when upgrading from Adobe Analytics to Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -29,7 +29,7 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
 ---
-# Install the Platform Web SDK wtih the Edge Network API {#upgrade-manual}
+# Install the Platform Web SDK with the NPM package {#upgrade-manual}
 
 <!-- markdownlint-disable MD034 -->
 

@@ -1,6 +1,6 @@
 ---
-title: Create a schema for Customer Journey Analytics
-description: Learn about the recommended path when upgrading from Adobe Analytics to Customer Journey Analytics
+title: Validate that data is flowing to Customer Journey Analytics
+description: Learn how to validate that data is flowing to Customer Journey Analytics after upgrading from Adobe Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics

@@ -1,6 +1,6 @@
 ---
-title: Create a schema for Customer Journey Analytics
-description: Learn about the recommended path when upgrading from Adobe Analytics to Customer Journey Analytics
+title: Add Platform as a service to your datastream
+description: Learn how to add Experience Platform as a service to your datastream when upgrading from Adobe Analytics to Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics

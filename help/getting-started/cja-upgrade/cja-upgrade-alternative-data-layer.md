@@ -1,6 +1,6 @@
 ---
-title: Alternate methods when upgrading to Customer Journey Analytics
-description: Learn about the alternate methods when upgrading to Customer Journey Analytics
+title: "Upgrade alternative: Send your data layer to Customer Journey Analytics"
+description: Learn how to send your entire data layer to Customer Journey Analytics instead of collecting data with the XDM object.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics

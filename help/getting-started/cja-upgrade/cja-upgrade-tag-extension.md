@@ -1,6 +1,6 @@
 ---
-title: Create a tag property and add the Web SDK extension
-description: Learn how to create a tag property and add the Web SDK extension
+title: Add the Web SDK extension to your tag
+description: Learn how to add the Web SDK extension to your tag property when upgrading from Adobe Analytics to Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics

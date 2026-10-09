@@ -1,6 +1,6 @@
 ---
-title: Use the Analytics source connector exclusively to upgrade to Customer Journey Analytics
-description: Learn how to create the Analytics source connector and map fields
+title: "Upgrade alternative: Use the Analytics source connector exclusively to upgrade to Customer Journey Analytics"
+description: Understand the advantages and disadvantages of using the Analytics source connector as the sole implementation path for Customer Journey Analytics, an approach that Adobe doesn't recommend.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics

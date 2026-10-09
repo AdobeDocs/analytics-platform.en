@@ -1,6 +1,6 @@
 ---
-title: Alternate methods when upgrading to Customer Journey Analytics
-description: Learn about the alternate methods when upgrading to Customer Journey Analytics
+title: "Upgrade alternative: Use AppMeasurement data collection with the Experience Platform Web SDK and Customer Journey Analytics"
+description: Learn how to use your existing AppMeasurement or Analytics extension data collection logic with the Web SDK to send data to Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -55,7 +55,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-logic-step"
 >title="Change your AppMeasurement logic to point to the Web SDK"
->abstract="his step appears because you elected to take an implementation shortcut. Copy or change your AppMeasurement logic to populate the data object instead of the s object. For example, change the assignment of s.eVar1 to data.__adobe.analytics.eVar1 and repeat for all Analytics variables."
+>abstract="This step appears because you elected to take an implementation shortcut. Copy or change your AppMeasurement logic to populate the data object instead of the s object. For example, change the assignment of s.eVar1 to data.__adobe.analytics.eVar1 and repeat for all Analytics variables."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -67,7 +67,7 @@ You can use your AppMeasurement or Analytics extension data collection logic wit
 
 ## Advantages and disadvantages
 
-This method is mutually exclusive with [sending your entire data layer to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md), because both methods accomplish the same task. (This method is preferable to sending your entire data layer to Adobe. It is more refined because props and evars all go through data.__adobe.analytics._variable-name_.)
+This method is mutually exclusive with [sending your entire data layer to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md), because both methods accomplish the same task. (This method is preferable to sending your entire data layer to Adobe. It is more refined because props and evars all go through data.__adobe.analytics._variable-name_.)
 
 Consider the following advantages and disadvantages of using this upgrade alternative:
 
@@ -97,7 +97,7 @@ The basic steps for migrating an Adobe Analytics implementation (either AppMeasu
 
    1. Send all your variables in AppMeasurement format through the data object.
 
-      For more information, see [Data object variable mapping to Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping).
+      If you also send this data to Adobe Analytics, the Edge Network automatically maps these data object fields to Adobe Analytics variables. For the list of supported fields, see [Data object field mapping to Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping). Customer Journey Analytics doesn't use these mappings. You map the data object fields to your XDM schema for Customer Journey Analytics in a later step.
   
    1. Choose your schema.
 
@@ -123,7 +123,7 @@ The basic steps for migrating an Adobe Analytics implementation (either AppMeasu
 
    1. Use datastream mapping to map all of the fields in the data object to your XDM schema.
 
-      For more information, see [Mapping](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) in [Data Prep for Data Collection](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) in the Experience Platform documentation.
+      Customer Journey Analytics can use only the data object fields that you map to your schema. For more information, see [Mapping](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) in [Data Prep for Data Collection](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) in the Experience Platform documentation.
 
  {{upgrade-final-step}}.
 
