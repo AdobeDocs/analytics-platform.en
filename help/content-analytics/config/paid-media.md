@@ -195,7 +195,9 @@ This custom parameter is added to your landing page URL. For example: https://ww
 You now have a relation between an asset on a page and your paid media data. Use that relation in Analysis Workspace to see how Content Analytics asset metadata (for example **[!UICONTROL Asset Foreground Colors]**) contribute to paid media campaign success.
 
 
-<!-- Do we need to include the tables from the Wiki?
+<!--
+
+Do we need to include the tables from the Wiki?
 
 ## Reference
 
