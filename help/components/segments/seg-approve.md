@@ -4,7 +4,7 @@ title: Approve Segments
 feature: Filters, Segments
 exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
 role: User
-TQID: https://experienceleague.adobe.com/XmyaR8HUQDHjdzFCq-C20wL51GQn3n6Nd5gWP-vTsi4
+TQID: 'https://experienceleague.adobe.com/XmyaR8HUQDHjdzFCq-C20wL51GQn3n6Nd5gWP-vTsi4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -15,7 +15,7 @@ feature_v2:
     internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
     internal-label: Filters
 role_v2:

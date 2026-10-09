@@ -4,7 +4,7 @@ title: View Anomalies
 feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
 role: User
-TQID: https://experienceleague.adobe.com/LnQBV8OMK6D1tg1JgnBKARqYvKgAGqDME3vGpsmgJ0E
+TQID: 'https://experienceleague.adobe.com/LnQBV8OMK6D1tg1JgnBKARqYvKgAGqDME3vGpsmgJ0E'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -13,7 +13,7 @@ feature_v2:
     internal-label: Analysis Workspace
 subfeature_v2:
   - id: aff2ef09-fc60-4018-9197-e2befd623064
-    internal-label: Anomaly detection, Anomaly detection (CJA)
+    internal-label: Anomaly detection
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
 role_v2:

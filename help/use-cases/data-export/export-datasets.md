@@ -19,7 +19,7 @@ feature_v2:
     internal-label: Components
 subfeature_v2:
   - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
-    internal-label: Use cases, Use cases (CJA)
+    internal-label: Use cases
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
     internal-label: Exports
 role_v2:

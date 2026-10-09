@@ -4,7 +4,7 @@ title: Quick Segments
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-TQID: https://experienceleague.adobe.com/DvRdeldUVvvaUfzWVV-vTflR1iZvMUH68pZQTL1d8D8
+TQID: 'https://experienceleague.adobe.com/DvRdeldUVvvaUfzWVV-vTflR1iZvMUH68pZQTL1d8D8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -19,7 +19,7 @@ subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
     internal-label: Filters
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f

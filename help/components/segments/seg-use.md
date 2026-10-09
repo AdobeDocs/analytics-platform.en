@@ -4,7 +4,7 @@ title: Use Segments
 feature: Filters, Segments
 role: User
 exl-id: 3d54dd03-96bf-4551-a523-fb6729eb09cb
-TQID: https://experienceleague.adobe.com/M2ayxu-SLFdf1Dh58IhJms6wRRft8IZOlF-rk3zDj-Y
+TQID: 'https://experienceleague.adobe.com/M2ayxu-SLFdf1Dh58IhJms6wRRft8IZOlF-rk3zDj-Y'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -17,7 +17,7 @@ subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
     internal-label: Filters
 role_v2:

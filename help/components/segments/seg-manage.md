@@ -4,7 +4,7 @@ title: Manage Segments
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters, Segments
 role: User
-TQID: https://experienceleague.adobe.com/Qzg97F1FVB6RSdjM8YISl47HYWtkQihxrOzLVO-4kOo
+TQID: 'https://experienceleague.adobe.com/Qzg97F1FVB6RSdjM8YISl47HYWtkQihxrOzLVO-4kOo'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -15,7 +15,7 @@ feature_v2:
     internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
     internal-label: Filters
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af

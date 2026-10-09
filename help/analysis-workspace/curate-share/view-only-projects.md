@@ -17,7 +17,7 @@ feature_v2:
     internal-label: Administration
 subfeature_v2:
   - id: a3b826fd-7a63-4a83-8736-83eee6668f44
-    internal-label: Curate and share, Curate and share (CJA)
+    internal-label: Curate and share
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

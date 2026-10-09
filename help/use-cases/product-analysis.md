@@ -2,7 +2,7 @@
 title: Product analysis in Customer Journey Analytics
 description: Learn what features that you can use inside Customer Journey Analytics to perform product analysis effectively.
 exl-id: b185a2ed-18c8-4fb3-8c69-693d5fee0e67
-TQID: https://experienceleague.adobe.com/24OrFfxJY7XuqMYoTrmijM5xRfsdGhfA-aKe5tY-7xw
+TQID: 'https://experienceleague.adobe.com/24OrFfxJY7XuqMYoTrmijM5xRfsdGhfA-aKe5tY-7xw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -15,7 +15,7 @@ feature_v2:
     internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
     internal-label: Guided analysis
   - id: bfef374d-acfd-4c57-bf74-a2b36053c545

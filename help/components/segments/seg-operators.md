@@ -4,7 +4,7 @@ title: Operators
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
 feature: Filters, Segments
 role: User
-TQID: https://experienceleague.adobe.com/16SJDNJiR49Ztw0jGO8Jj3iIuoDZJKFWmGDtK26P1Ps
+TQID: 'https://experienceleague.adobe.com/16SJDNJiR49Ztw0jGO8Jj3iIuoDZJKFWmGDtK26P1Ps'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -15,7 +15,7 @@ feature_v2:
     internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
     internal-label: Filters
 role_v2:

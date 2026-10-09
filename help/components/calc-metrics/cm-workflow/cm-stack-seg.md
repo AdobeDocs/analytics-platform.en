@@ -3,7 +3,7 @@ description: Learn how to stack and replace segments within the Calculated metri
 title: Stack And Replace Segments
 feature: Calculated Metrics
 exl-id: a396599c-2033-40a7-90b5-f9c84106c328
-TQID: https://experienceleague.adobe.com/qhwOpnLt0bibuQxZFZ5hiBtri-cdCn-O7FJVCwqbFy8
+TQID: 'https://experienceleague.adobe.com/qhwOpnLt0bibuQxZFZ5hiBtri-cdCn-O7FJVCwqbFy8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -16,7 +16,7 @@ subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
     internal-label: Calculated metrics
 role_v2:
