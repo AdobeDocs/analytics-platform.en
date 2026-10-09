@@ -5,7 +5,7 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-TQID: https://experienceleague.adobe.com/5rXDQ-Ygp3TrEMbpK1UaUcRwSrc81VkUKauxth4-AUs
+TQID: 'https://experienceleague.adobe.com/5rXDQ-Ygp3TrEMbpK1UaUcRwSrc81VkUKauxth4-AUs'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -20,13 +20,13 @@ subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
     internal-label: Workspace basics
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-    internal-label: Templates, Templates (CJA)
+    internal-label: Templates
   - id: aff2ef09-fc60-4018-9197-e2befd623064
-    internal-label: Anomaly detection, Anomaly detection (CJA)
+    internal-label: Anomaly detection
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
     internal-label: Calendar
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1

@@ -17,7 +17,7 @@ feature_v2:
     internal-label: Data management
 subfeature_v2:
   - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
-    internal-label: Use cases, Use cases (CJA)
+    internal-label: Use cases
   - id: b7fb3355-1f54-4380-bce3-d444b226c0e9
     internal-label: Cross channel analysis
 role_v2:

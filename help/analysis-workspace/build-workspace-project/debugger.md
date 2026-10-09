@@ -5,7 +5,7 @@ feature: Workspace Basics
 title: Project debugger
 role: User
 exl-id: 1335ec1f-5597-4e23-8228-3d477534de43
-TQID: https://experienceleague.adobe.com/IJCJ64hNUdZu4PHlSu6-tBcjSFVF2QajpfnLp0wbrYQ
+TQID: 'https://experienceleague.adobe.com/IJCJ64hNUdZu4PHlSu6-tBcjSFVF2QajpfnLp0wbrYQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -18,7 +18,7 @@ subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
     internal-label: Workspace basics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

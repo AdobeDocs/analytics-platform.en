@@ -4,7 +4,7 @@ title: Quickly Start Projects
 feature: Workspace Basics
 role: User, Admin
 exl-id: 464032a1-6dae-4df5-b4db-b277788e88c2
-TQID: https://experienceleague.adobe.com/Ro9-L1T5dBdvOaIpQ-QgVz6yOxmcn9bXxvSdSyM0ajc
+TQID: 'https://experienceleague.adobe.com/Ro9-L1T5dBdvOaIpQ-QgVz6yOxmcn9bXxvSdSyM0ajc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -15,7 +15,7 @@ subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
     internal-label: Workspace basics
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-    internal-label: Templates, Templates (CJA)
+    internal-label: Templates
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

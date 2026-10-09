@@ -3,7 +3,7 @@ description: Learn how to share metrics with your whole organization, groups, or
 title: Share Calculated Metrics
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
-TQID: https://experienceleague.adobe.com/UkWYd20lqGIhLaBNUGQyy2sstXDBjcBttIwfMP41wNI
+TQID: 'https://experienceleague.adobe.com/UkWYd20lqGIhLaBNUGQyy2sstXDBjcBttIwfMP41wNI'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -16,7 +16,7 @@ subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
     internal-label: Calculated metrics
 role_v2:

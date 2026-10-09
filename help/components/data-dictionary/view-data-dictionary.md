@@ -4,7 +4,7 @@ title: View component information
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
-TQID: https://experienceleague.adobe.com/b-y-D9Ba6SlV0tW8D1btQLWYU32HpKrgG3DIftie1W8
+TQID: 'https://experienceleague.adobe.com/b-y-D9Ba6SlV0tW8D1btQLWYU32HpKrgG3DIftie1W8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -17,7 +17,7 @@ subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
     internal-label: Calendar
   - id: df28738e-9c71-4aa8-929e-edde22340cc6

@@ -21,7 +21,7 @@ subfeature_v2:
   - id: bfef374d-acfd-4c57-bf74-a2b36053c545
     internal-label: Data ingestion
   - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
-    internal-label: Use cases, Use cases (CJA)
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
