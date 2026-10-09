@@ -121,11 +121,11 @@ Before you create a data feed, it's important to have a basic understanding of d
    * **Plus button**: Select the Plus ![Add](/help/assets/icons/Add.svg) icon next to any component in the left rail to add it to the canvas.
    * **[!UICONTROL Show all]**: Select **[!UICONTROL Show all]** at the bottom of the component list to open a dialog showing all available components. Select the checkbox next to each component you want to add, then select **[!UICONTROL Add selected]**. When a search term or filter tag is active in the left rail, an **[!UICONTROL Add all]** button also appears, letting you add all filtered results at once.
 
-   When you add a component that belongs to an XDM array field (for example, an Adobe Journey Optimizer proposition field), it appears on the canvas as a collapsible nested group rather than a flat item. The group reflects the underlying data structure and outputs as a nested array in the exported file.
-
-   <!--add screenshot-->
-
-   Some components are required, unsupported, or have restrictions in data feeds. For details, see [Component availability in data feeds](/help/components/exports/cja-data-feeds/df-components.md).
+   Consider the following when adding fields:
+   
+   * Some components are required, unsupported, or have restrictions in data feeds. For details, see [Component availability in data feeds](/help/components/exports/cja-data-feeds/df-components.md).
+   
+   * When you add a component that belongs to an XDM array field (for example, an Adobe Journey Optimizer proposition field) or a map field, a dialog prompts you to add any other components from the same sub-container. In the data feed output, all of these components appear in a single column. For more information, see [Sub-container components in data feeds](/help/components/exports/cja-data-feeds/df-sub-event.md)
 
 1. (Optional) Reorder components on the canvas by dragging them. The order you define is preserved as the column order in the exported data feed file.
 
@@ -338,9 +338,11 @@ Arrival times vary based on the type of data you are collecting. Choose a delay 
 
 #### Phase 2: Data is ingested from the data lake into Customer Journey Analytics
 
-This can take up to 90 minutes (see [Latencies](/help/technotes/guardrails.md#latencies)).
+Data ingestion times vary depending on whether the dataset has stitching enabled.
 
-* **Stitched datasets**: Stitching can add up to 4 hours (see [Latencies](/help/technotes/guardrails.md#latencies)). If stitching is enabled for the connection, set the delay to at least 6 hours, and potentially 8 hours. Data that is updated by a stitching replay is generally not included in data feed files that were already processed.
+* **Non-stitched datasets**: This can take up to 90 minutes (see [Latencies](/help/technotes/guardrails.md#latencies)).
+
+* **Stitched datasets**: Stitching can add up to 4 hours on top of the 90 minutes it takes for non-stitched datasets (see [Latencies](/help/technotes/guardrails.md#latencies)). If stitching is enabled for the connection, set the delay to at least 6 hours, and potentially 8 hours. Data that is updated by a stitching replay is generally not included in data feed files that were already processed.
 
   When stitching is enabled, the minimum processing delay increases from 2 hours to 6 hours to account for the stitched data.
 
