@@ -5,7 +5,7 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-TQID: https://experienceleague.adobe.com/91yF4rq5CqbAtgfY9X31FmgiCynSJFHaNF1KKsKDycg
+TQID: 'https://experienceleague.adobe.com/91yF4rq5CqbAtgfY9X31FmgiCynSJFHaNF1KKsKDycg'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -18,7 +18,7 @@ subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
     internal-label: Filters
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962

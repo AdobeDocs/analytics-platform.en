@@ -4,7 +4,7 @@ description: Learn how to create annotations in Analysis Workspace.
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-TQID: https://experienceleague.adobe.com/khuUFSkYrbrDsCBMZkzNwvZFsJ8MrN-FA9O7C-Q-Vg4
+TQID: 'https://experienceleague.adobe.com/khuUFSkYrbrDsCBMZkzNwvZFsJ8MrN-FA9O7C-Q-Vg4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -15,7 +15,7 @@ feature_v2:
     internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
     internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af

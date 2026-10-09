@@ -1,6 +1,6 @@
 ---
-title: Upgrade from Adobe Analytics to Customer Journey Analytics
-description: Learn about the recommended steps when upgrading from Adobe Analytics to Customer Journey Analytics
+title: Prepare your organization to upgrade to Customer Journey Analytics
+description: Learn how to prepare your organization for an upgrade from Adobe Analytics to Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics

@@ -4,7 +4,7 @@ description: Learn about the concept of audience publishing in Customer Journey 
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-TQID: https://experienceleague.adobe.com/x64-Q7kfdcy4pAPrOb-TfliMFMNSTafJILEaxR3qbrs
+TQID: 'https://experienceleague.adobe.com/x64-Q7kfdcy4pAPrOb-TfliMFMNSTafJILEaxR3qbrs'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -17,7 +17,7 @@ feature_v2:
     internal-label: Data governance
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
     internal-label: Audiences
 role_v2:

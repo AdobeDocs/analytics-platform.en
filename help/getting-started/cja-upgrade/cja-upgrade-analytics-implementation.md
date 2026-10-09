@@ -1,6 +1,6 @@
 ---
 title: Understand your Adobe Analytics implementation and how it affects your upgrade to Customer Journey Analytics
-description: Learn about the recommended path when upgrading from Adobe Analytics to Customer Journey Analytics
+description: Learn how your Adobe Analytics implementation method affects which upgrade paths are available for Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics

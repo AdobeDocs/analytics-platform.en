@@ -4,7 +4,7 @@ title: Optimize Analysis Workspace Performance
 feature: Workspace Basics
 role: User, Admin
 exl-id: 226afef7-00da-4ac2-be4e-e19995621c61
-TQID: https://experienceleague.adobe.com/gJaQPkkWeGrjTxlsBV5UoaY8H9quRqc-XrJAxRMSeEU
+TQID: 'https://experienceleague.adobe.com/gJaQPkkWeGrjTxlsBV5UoaY8H9quRqc-XrJAxRMSeEU'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -17,11 +17,11 @@ subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
     internal-label: Workspace basics
   - id: aff2ef09-fc60-4018-9197-e2befd623064
-    internal-label: Anomaly detection, Anomaly detection (CJA)
+    internal-label: Anomaly detection
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
     internal-label: Filters
   - id: c38ed341-fab2-46df-9d72-88d8166edebb

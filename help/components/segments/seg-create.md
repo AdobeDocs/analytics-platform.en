@@ -4,7 +4,7 @@ description: Understand the segment creation user interface.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 feature: Filters, Segments
 role: User
-TQID: https://experienceleague.adobe.com/mzu9V8ETlAV0gREJQQhRIDFUwZNlKUR-8P1dtwJTCIA
+TQID: 'https://experienceleague.adobe.com/mzu9V8ETlAV0gREJQQhRIDFUwZNlKUR-8P1dtwJTCIA'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -15,7 +15,7 @@ feature_v2:
     internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
     internal-label: Filters
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af

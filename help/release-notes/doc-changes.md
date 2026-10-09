@@ -67,6 +67,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 |---|---|
 | **October 2026** | |
 | Conversation Insights | [Documentation](/help/conversation-insights/overview.md) for Conversation Insights. |
+| October 2026 | |
+| Brand Visibility | Updated documentation for the [Brand Visibility inbound integration](/help/integrations/bv/bv.md#inbound-integration) with more details. |
 | **September 2026** | |
 | Journey canvas comparison on arrows and fallout | Updated the '[!UICONTROL Compare to]' setting in [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings) to show that the percent change between date ranges now displays on each node, arrow, and fallout in the journey. |
 | Incorporated blog posts | Incorporated the following blog posts:<ul><li>[The Complete Playbook for Handling 'No Value' in Adobe CJA](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769#M598)</li><li>[Adobe Experience Platform & Customer Journey Analytics Data Egress Use Cases Deep Dive](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725)</li></ul>in our [Data export](/help/use-cases/data-export/overview.md) use cases and a new [No value](/help/use-cases/data-views/no-value.md) use case article. |
@@ -74,7 +76,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | **August 2026** | |
 | Clarified information about refreshing audiences | When [publishing audiences](/help/components/audiences/publish.md#audience-builder), clarified that the number of audiences that can be scheduled to refresh depends on your Customer Journey Analytics entitlement, and is between 75 and 150. |
 | **July 2026** | |
-| Brand Visibility inbound integration | Documentation for the [Brand Visibility inbound integration](/help/integrations/bv.md#inbound-integration). |
+| Brand Visibility | Documentation for the [Brand Visibility inbound integration](/help/integrations/bv/bv.md#inbound-integration). |
 | Usage interface | Updates to the [Usage interface](/help/connections/manage-connections.md#usage) documentation for Connections. |
 | Sub-event analysis | Documentation for [sub-event analysis](/help/components/segments/sub-event.md) and [custom containers](/help/data-views/create-dataview.md#custom-containers). |
 | Inline classifications | Documentation for [inline classifications](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications). |

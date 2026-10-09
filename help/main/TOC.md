@@ -61,7 +61,7 @@ breadcrumb-title: Customer Journey Analytics Guide
       + [Implement the loader tag for the Web SDK extension](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
       + [Add XDM data collection logic to your tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
     + [Implement the Web SDK manually](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
-    + [Implement the Web SDK with the API](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
+    + [Implement the Web SDK with the NPM package](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
     + [Create a connection](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
     + [Create a data view](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
     + [Create a marketing channel derived field](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
@@ -487,7 +487,10 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Integrate Journey Optimizer data](/help/integrations/ajo.md)
   + [Integrate Decision Management data](/help/integrations/ajo-od.md)
   + [Integrate Customer AI](/help/integrations/customer-ai.md)
-  + [Integrate Brand Visibility](/help/integrations/bv.md)
+  + Integrate Brand Visibility {#bv}
+    + [Overview](/help/integrations/bv/bv.md)
+    + [Configure](/help/integrations/bv/configure.md)
+    + [Reference](/help/integrations/bv/reference.md)
   + [Integrate Adobe Advertising](/help/integrations/advertising.md)
 
 + Data Governance {#cja-privacy}

@@ -4,7 +4,7 @@ title: Copy Segments
 feature: Filters, Segments
 exl-id: a64737bd-5d5b-4e85-95ff-eb1d90b95e18
 role: User
-TQID: https://experienceleague.adobe.com/ormIIi57KLXNcrS7GUMshb6dGvQVeMbi-Sgp7og0apo
+TQID: 'https://experienceleague.adobe.com/ormIIi57KLXNcrS7GUMshb6dGvQVeMbi-Sgp7og0apo'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -15,7 +15,7 @@ feature_v2:
     internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
     internal-label: Filters
 role_v2:

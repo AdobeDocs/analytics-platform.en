@@ -5,7 +5,7 @@ title: Share Projects
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-TQID: https://experienceleague.adobe.com/qAYUiD5wa5PhvEjTi397PC4n0xX0rWKJSYaAjCR6jtg
+TQID: 'https://experienceleague.adobe.com/qAYUiD5wa5PhvEjTi397PC4n0xX0rWKJSYaAjCR6jtg'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -18,11 +18,11 @@ feature_v2:
     internal-label: Administration
 subfeature_v2:
   - id: a3b826fd-7a63-4a83-8736-83eee6668f44
-    internal-label: Curate and share, Curate and share (CJA)
+    internal-label: Curate and share
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
     internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-    internal-label: Segments, Segments (CJA)
+    internal-label: Segments
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
     internal-label: Workspace projects
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af

@@ -13,6 +13,8 @@ feature_v2:
     internal-label: Components
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
     internal-label: Administration
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
     internal-label: Dimensions
