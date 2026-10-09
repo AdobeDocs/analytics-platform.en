@@ -50,8 +50,8 @@ Ensure you have values for all required details listed in the table below for ea
 | Brand Visibility readiness confirmation | Confirm with Adobe account team the readiness before you enable and schedule the connector. |
 | IMS organization | Use the exact IMS organization associated with Brand Visibility, Experience Platform. |
 | Sandbox | Use the exact sandbox name that is designated for the inbound integration. |
-| Connection | Identify the Customer Journey connection that should include the dataset. |
-| Data view | Identify a new or existing Customer Journey Analytics data view that should include the components. |  
+| Connection | Identify the Customer Journey connection that should include the dataset. |0
+| Data view | Identify a new or existing Customer Journey Analytics data view that should include the components. |
 | Administrator or owner | Provide name or team that is the configuration contact. |
 
 Before Adobe schedules the managed connector, your Adobe account team must confirm that the site is ready for the inbound integration. Delivery communications refer to this as Brand Visibility approval or site readiness confirmation. Scheduling the managed connector is a managed-service requirement, not a customer self-service action.
