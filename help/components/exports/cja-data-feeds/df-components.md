@@ -94,10 +94,12 @@ The following Customer Journey Analytics standard metrics cannot be included in 
 
 <!-- markdownlint-disable MD034 -->
 
+<!-- pretty sure this isn't being used -->
+
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_user_agent"
 >title=""
->abstract="User agent data and device lookup data cannot exist in the same data feed configuration."
+>abstract="User agent data and device lookup data cannot exist in the same data feed configuration." 
 
 <!-- markdownlint-enable MD034 -->
 
@@ -105,14 +107,20 @@ The following Customer Journey Analytics standard metrics cannot be included in 
 >
 >Certain dimensions cannot be used together in Experience Platform datasets, and therefore cannot be included in the same data feed. 
 >
->If you choose to include either the **User Agent** or **Mobile ID** dimensions in your data feed, the dimensions listed below cannot be added to the data feed.
+>If you choose to include either the **User agent** or **Mobile ID** dimensions in your data feed, the dimensions listed below cannot be added to the data feed.
 >
 >If you use the Web SDK, this restriction is enforced in datastreams before data arrives in an Experience Platform dataset. For more information, see [Configure device lookup](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup) in [Create and configure datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) in the Data Collection guide.
 
 The following dimensions cannot be used together with the **User Agent** or **Mobile ID** dimensions:
 
+>[!NOTE]
+>
+>The following list uses default dimension names. Dimensions that are renamed in your data view appear in data feeds with their custom names.
+
+
 * Browser Type
 * Browser
+* Browser ID
 * Mobile Manufacturer
 * Mobile Device Type
 * Mobile Audio Support
@@ -137,6 +145,7 @@ The following dimensions cannot be used together with the **User Agent** or **Mo
 * Mobile Device Name
 * Operating System Types
 * Operating Systems 
+* Operating System ID
 
 ## Metrics that require a substitute {#substitute-metrics}
 
