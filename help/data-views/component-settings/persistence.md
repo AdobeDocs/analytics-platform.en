@@ -58,7 +58,7 @@ topic_v2:
 | --- | --- |
 | [!UICONTROL Set persistence] | Enable persistence for the dimension. If persistence is not enabled, the dimension only relates to metrics that exist in the same event. This setting is disabled by default. |
 | [!UICONTROL Allocation] | Specify the allocation model used on a dimension for persistence. Options are:<ul><li>**[!UICONTROL Most recent]**: Values in the dimension persist until overwritten by subsequent values</li><li> **[!UICONTROL Original]**: The first value for this dimension persists and is not overwritten by subsequent values</li><li>**[!UICONTROL All]**: All values for this dimension persist simultaneously</li><li>**[!UICONTROL First known]**: The first value for this dimension is used and will be applied to all events before and after.</li><li>**[!UICONTROL Last known]**: The last value for this dimension is used and will be applied to all events before and after.</li></ul> |
-| [!UICONTROL Expiration] | Specify the persistence window for a dimension. Options are: <ul><li>**[!UICONTROL Session]** (default)</li><li>**[!UICONTROL Person]**</li><li>**[!UICONTROL Custom Time]**</li><li>**[!UICONTROL Metric]**</li></ul>. You might need to be able to expire the dimension on a purchase (such as internal search terms or other merchandising use cases). The maximum expiration time that you can set is 90 days. If you select an allocation of [!UICONTROL All], only [!UICONTROL Session] or [!UICONTROL Person] expiration is available. |
+| [!UICONTROL Expiration] | Specify the persistence window for a dimension. Options are: <ul><li>**[!UICONTROL Session]** (default)</li><li>**[!UICONTROL Person]**</li><li>**[!UICONTROL Custom Time]**</li><li>**[!UICONTROL Metric]**</li></ul>You might need to be able to expire the dimension on a purchase (such as internal search terms or other merchandising use cases). The maximum expiration time that you can set is 90 days. If you select an allocation of [!UICONTROL All], only [!UICONTROL Session] or [!UICONTROL Person] expiration is available. |
 
 {style="table-layout:auto"}
 
@@ -80,7 +80,7 @@ The available allocation settings are:
   | Dataset values |  | C | B |  | A |
   | Original allocation |  | C | C | C | C |
 
-* **[!UICONTROL All]**: Acts similarly to the [!UICONTROL Participation] attribution model for metrics. Persists all values equally so each get full credit for the metric in reporting. For example, consider the following table with [!UICONTROL All] allocation and [!UICONTROL Session] expiration:
+* **[!UICONTROL All]**: Acts similarly to the [!UICONTROL Participation] attribution model for metrics. Persists all values equally so each gets full credit for the metric in reporting. For example, consider the following table with [!UICONTROL All] allocation and [!UICONTROL Session] expiration:
 
   | Dimension | Hit 1 | Hit 2 | Hit 3 | Hit 4 | Hit 5 |
   | --- | --- | --- | --- | --- | --- |
