@@ -88,7 +88,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Add visualizatio
 
    * From the context menu in a Freeform table, select **[!UICONTROL Visualize]**. Then select the visualization from the submenu. Based on the current selection in the table, Workspace determines which visualization to offer and interprets the data to build the requested visualization.
 
-When you add a simple visualization, for example a [Line](line.md) of [Bar](bar.md) visualization, the visualization uses the closest freeform table as the data source. You can always modify the [data source](#data-source) of a your visualizations.
+When you add a simple visualization, for example a [Line](line.md) of [Bar](bar.md) visualization, the visualization uses the closest freeform table as the data source. You can always modify the [data source](#data-source) of your visualizations.
 
 
 ## Manage visualizations
