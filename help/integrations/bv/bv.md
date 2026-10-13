@@ -25,12 +25,14 @@ AI has become a primary discovery channel. Large language model (LLM) agents, su
 
 >[!NOTE]
 >
->You must have a Brand Visibility paid offering provisioned and connected to your Experience Platform configuration through the managed connector.
+>You must have a Brand Visibility paid offering. You then [configure and enable](./configure.md) the Adobe Brand Visibility source in Experience Platform, in the sandbox where you want the data.
+>
 
 
 >[!IMPORTANT]
 >
 >As part of this integration, some temporary processing of Brand Visibility data occurs in the United States. Data is ultimately stored in your designated region as configured in your Customer Journey Analytics contract.
+>
 
 
 ## Use cases
@@ -64,7 +66,7 @@ The second way is a bot or agent that requests your pages directly. This include
 
 ### Onboard the dataset
 
-The Brand Visibility managed connector delivers the data to Experience Platform as a summary dataset. To measure it in Customer Journey Analytics, you complete two setup steps yourself:
+You enable the Adobe Brand Visibility source in Experience Platform. The source delivers the data to your sandbox as a summary dataset. To measure the data in Customer Journey Analytics, you then complete two more setup steps yourself::
 
 1. Create a connection that includes the Brand Visibility dataset. 
 2. Create a data view on that connection. The data view makes the dimensions and metrics below available in Analysis Workspace. 
