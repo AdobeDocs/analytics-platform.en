@@ -31,11 +31,19 @@ Coworker is available in a chat panel on the right side of Analysis Workspace. C
 
 You can ask Coworker for help understanding the project or for help building it out:
 
-* **Understand a project**: Ask Coworker to do things like summarize the project, find insights, or explain a metric. 
+* **Understand a project**: Ask Coworker to do things like summarize the project, find insights, or explain a component. 
 
 * **Build out a project**: Ask Coworker to do things like add panels and tables, break down data, or create segments.
 
 ## Understand Coworker in Workspace
+
+### Prerequisites
+
+* **[PLACEHOLDER: Permissions and product profile requirements. Include the Admin Console steps to grant access, if applicable.]**
+
+* **[PLACEHOLDER: Any additional requirements, such as whether the organization must have Coworker enabled.]**
+
+Coworker uses your existing Analysis Workspace and data view permissions. It can't access data or components that you don't already have access to.
 
 ### Choose between Coworker in Workspace and the Coworker application
 
@@ -45,25 +53,26 @@ Coworker in Analysis Workspace has many of the same capabilities as the [CX Ente
 | --- | --- | --- |
 | **When to use** | You want to build a project that you plan to keep, share with other users, or update over time. | You want a quick answer. You might choose to turn the analysis into a Workspace project later, if needed. |
 | **Context** | Project-focused<p>Uses the open Workspace project as its starting point. You can refer to and build off panels, tables, and components that are already in the project.</p> | Data view-focused<p>Uses the data views you have access to or those you set as a preference in Coworker memory. You describe what you want to analyze in your prompt.</p> |
-| **Typical user** | Analysts who build and validate analysis in Workspace. | Business users who want answers, without needing to access or learn Analysis Workspace. |
+| **Typical user** | Analysts who build and validate analysis in Workspace. | Business users who want answers, without needing to access or learn Workspace. |
 | **Output** | Panels, tables, and components are added directly to the Workspace project. <p>As appropriate, answers can also be given in the chat.</p> | Answers and analyses are provided in the conversation, with the option to open in Analysis Workspace. |
-
-
 
 ## What you can do with Coworker
 
 ### Understand the open project
 
-Coworker can see every panel and table in the open project. You can ask Coworker to:
+ You can ask Coworker questions like:
 
 * Summarize the project.
 * Find insights and flag anomalies in the data.
 * Run a root cause analysis on a panel.
 * Explain how to do something in Analysis Workspace, such as how to add a line chart or how to color table cells based on their values.
+* Explain a component, such as a metric or dimension.
+
+For more information, see [Understand a project](#understand-a-project).
 
 ### Build and edit the project
 
-You can ask Coworker to:
+You can ask Coworker to do things like:
 
 * Create a Freeform panel with the dimensions, metrics, and date range that you specify.
 * Add panels to the project. Coworker adds new panels without overwriting your existing panels.
@@ -76,23 +85,9 @@ You can ask Coworker to:
 * Create a project with multiple panels, or copy a project and adapt it for a different audience or region.
 * Save the project.
 
-Coworker also shows its work. The segments, metrics, and filters that Coworker uses to answer a question are added to the project so that you can verify them.
+For more information, see [Update a project](#update-a-project).
 
-### Example prompts {#example-prompts}
-
-| Prompt | What Coworker does |
-| --- | --- |
-| *Summarize this project* | Provides a summary in the chat panel and offers to add it to the project as a Text visualization. |
-| *Find insights in this project* | Provides insights in the chat panel and offers to add the findings to the project. |
-| *Do a root cause analysis on the drop in mobile visits* | Provides the analysis in the chat panel and offers to add the findings to the project. |
-| *How do I color cells based on their values?* | Explains the steps in the chat panel. |
-| *Show me sessions by page* | Adds a new panel or table to the project. |
-| *Break this table down by device* | Adds the breakdown to the table that you referenced. |
-| *Change the date range of this panel to last month* | Updates the date range of the panel. |
-| *Create a segment for visitors from Canada* | Creates the segment and adds it to the project. |
-| *Delete the old panels* | Lists the panels that it plans to delete and waits for your confirmation before it deletes them. |
-
-## Where Coworker places results
+### Where Coworker places results
 
 Coworker decides whether to answer in the chat panel or to change the project based on what you ask:
 
@@ -103,6 +98,64 @@ Coworker decides whether to answer in the chat panel or to change the project ba
 * **You ask Coworker to build or edit**: Coworker changes the project. This includes requests to add, create, edit, break down, or compare data, change a visualization type or date range, or create a segment.
 
 When the placement isn't clear, Coworker explains what it's doing.
+
+## Understand and update projects with Coworker
+
+Coworker can see every panel and table in the open project. You can ask Coworker for help understanding the project or for help updating it.
+
+### Understand a project
+
+You can ask Coworker to do things like summarize the project, find insights, or explain a component. 
+
+1. In Customer Journey Analytics, open an existing Workspace project or create a new project.
+
+1. **[PLACEHOLDER: How to open the Coworker panel, such as the icon name and location. Add a screenshot.]**
+
+1. In the chat panel, describe what you want Coworker to do. 
+
+   The following table is a list of example prompts.
+
+   | Prompt | What Coworker does |
+   | --- | --- |
+   | *Summarize this project* | Provides a summary in the chat panel and offers to add it to the project as a Text visualization. |
+   | *Find insights in this project* | Provides insights in the chat panel and offers to add the findings to the project. |
+   | *Flag any anomalies in this panel* | Describes the anomalies in the chat panel. If you ask Coworker to show anomalies on a visualization, the anomalies might not appear. See [Current limitations](#current-limitations). |
+   | *Do a root cause analysis on the drop in mobile visits* | Provides the analysis in the chat panel and offers to add the findings to the project. |
+   | *How do I color cells based on their values?* | Explains the steps in the chat panel. |
+   | *Explain the Bounce rate metric* | Explains the component in the chat panel. The explanation doesn't come from the [Data Dictionary](/help/components/data-dictionary/data-dictionary-overview.md). Support for Data Dictionary definitions is planned for a future release. |
+
+### Update a project
+
+You can ask Coworker to do things like add panels and tables, break down data, or create segments.
+
+1. In Customer Journey Analytics, open an existing Workspace project or create a new project.
+
+1. **[PLACEHOLDER: How to open the Coworker panel, such as the icon name and location. Add a screenshot.]**
+
+1. In the chat panel, describe what you want Coworker to do. As Coworker makes updates to your project, it shows its work. The segments, metrics, and filters that Coworker uses to answer a question are added to the project so that you can verify them.
+
+   The following table is a list of example prompts.
+
+   | Prompt | What Coworker does |
+   | --- | --- |
+   | *Show me sessions by page for last month* | Adds a new Freeform panel with the dimension, metric, and date range that you specify. Existing panels aren't overwritten. |
+   | *Break this table down by device* | Adds the breakdown to the table that you referenced. |
+   | *Add a comparison to last month in this table* | Adds a comparison column to the table that you referenced. |
+   | *Change the date range of this panel to last month* | Updates the date range of the panel. |
+   | *Change this table to a line chart* | Changes the visualization type of the panel. |
+   | *Rename this panel to Mobile performance* | Renames the panel. |
+   | *Apply the Mobile users segment to this panel* | Applies the existing segment to the panel. Coworker doesn't know the segment definition, so verify that the segment contains what you expect. |
+   | *Create a segment for visitors from Canada* | Creates the segment and adds it to the project. The segment appears in the components list after you refresh the page. |
+   | *Copy the Canada visitors segment and change it to visitors from Mexico* | Creates a copy of the segment with the updated logic and adds it to the project. |
+   | *Create a date range for the last 6 weeks* | Creates the date range. The date range appears in the components list without a refresh. |
+   | *Create a calculated metric for revenue per session* | Creates the calculated metric. Coworker can create simple calculated metrics. |
+   | *Add a description to this panel that explains the drop in visits* | Adds the description to the panel. |
+   | *Add a Text visualization with the key insights* | Adds a Text visualization that contains the insights to the project. |
+   | *Create a project with panels for traffic, conversion, and revenue* | Creates a project with a panel for each area that you describe. |
+   | *Copy this project and adapt it for the EMEA region* | Creates a copy of the project and adapts it for the region that you specify. |
+   | *Save the project* | Saves the project. |
+   | *Undo the breakdown you added* | Undoes the change that you specify. |
+   | *Delete the old panels* | Lists the panels that it plans to delete and waits for your confirmation before it deletes them. |
 
 ## Stay in control of Coworker
 
@@ -118,21 +171,7 @@ When the placement isn't clear, Coworker explains what it's doing.
 
 * **Data quality notes**: Coworker includes data quality notes in its answers. For example, if you compare a month that has only just started to a full month, Coworker tells you that the comparison is based on partial data.
 
-## Open Coworker in Analysis Workspace
 
-1. In Customer Journey Analytics, open an existing Workspace project or create a new project.
-
-1. **[PLACEHOLDER: How to open the Coworker panel, such as the icon name and location. Add a screenshot.]**
-
-1. In the chat panel, describe what you want Coworker to do. See [Example prompts](#example-prompts) for ideas.
-
-## Prerequisites
-
-* **[PLACEHOLDER: Permissions and product profile requirements. Include the Admin Console steps to grant access, if applicable.]**
-
-* **[PLACEHOLDER: Any additional requirements, such as whether the organization must have Coworker enabled.]**
-
-Coworker uses your existing Analysis Workspace and data view permissions. It can't access data or components that you don't already have access to.
 
 ## Current limitations
 
