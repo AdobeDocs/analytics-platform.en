@@ -25,7 +25,7 @@ AI has become a primary discovery channel. Large language model (LLM) agents, su
 
 >[!PREREQUISITES]
 >
->You must have a Brand Visibility paid offering. You then [configure and enable](./configure.md) the Adobe Brand Visibility source in Experience Platform, in the sandbox where you want the data.
+>You must have a Brand Visibility paid offering. You then [configure and enable](./configure.md) the Adobe Brand Visibility source in your Experience Platform sandbox.
 >
 
 

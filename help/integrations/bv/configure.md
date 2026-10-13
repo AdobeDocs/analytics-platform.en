@@ -18,7 +18,7 @@ role_v2:
 ---
 # Setup and configure inbound integration
 
-This article details the [prerequisites](#prerequisites), [responsibilities](#responsibilities), [steps to verify](#verification), [troubleshoot steps](#troubleshoot), and [completion criteria](#completion-criteria) for setting up and configuring the Brand Visibility inbound integration with Customer Journey Analytics.
+This article details the [prerequisites](#prerequisites), [responsibilities](#responsibilities), [steps to verify](#verification), [troubleshooting steps](#troubleshoot), and [completion criteria](#completion-criteria) for setting up and configuring the Brand Visibility inbound integration with Customer Journey Analytics.
 
 ## Prerequisites
 
@@ -88,7 +88,7 @@ The connector creates the dataset for each Brand Visibility site, using the foll
 
 Datasets created before this naming convention was adopted display the earlier pattern <code>LLM Optimization (LLMO) Dataset - _baseUrl without scheme_</code>. 
 
-Find the dataset in **[!UICONTROL Datasets]** in the sandbox where you created the dataflow..
+Find the dataset in **[!UICONTROL Datasets]** within the sandbox where you created the dataflow..
 
 The dataset is aggregated summary data. When analyzing request volume in Customer Journey Analytics, use the provided **[!UICONTROL CDN Request Count]** metric rather than counting dataset rows. 
 
@@ -119,7 +119,7 @@ is not available to users through a data view until the relevant fields have bee
 
 To enable the source:
 
-1. In Experience Platform, select the sandbox in which you want the dataset. A site can be allocated only once, so make sure this is the sandbox you want.  
+1. In Experience Platform, select the sandbox in which you want the dataset. A site can be allocated only once, so make sure this sandbox is the one you want.  
 1. Go to **[!UICONTROL Sources]**, then **[!UICONTROL Catalog]**, then Adobe applications. On the **[!UICONTROL Adobe Brand Visibility]** card, select **[!UICONTROL Set up]** the first time. After that, the card shows **[!UICONTROL Add data]**.
 
    ![Select Brand Visibility from Sources](assets/aep-sources-select-bv.png)
@@ -130,7 +130,7 @@ To enable the source:
 
 1. On the ➊ **[!UICONTROL Select data]** step:
    
-   1. Select the site from the **[!UICONTROL Site name]** table. Once a site is allocated to a dataflow, you cannot select the site again in that sandbox or in any other sandbox. 
+   1. Select the site from the **[!UICONTROL Site name]** table. Once a site is allocated to a dataflow, you cannot select the site again in that or any other sandbox. 
 
       ![Step 1 of the Brand Visibility source configuration](assets/bv-source-step-1.png)
 
@@ -169,8 +169,8 @@ Use the following procedure to verify the inbound integration:
    For each ABV site:
 
    * Confirm the exact site or domain covered by CDN log forwarding.
-   * Confirm that the site is available to select in the Brand Visibility source in Experience Platform. A site is available based on the availability of parsed CDN logs in Brand Visibility.
-   * Do not proceed on a general statement that "CDN logs are enabled". Proceed when the specific ABV site is available to select.
+   * Confirm that the site is available to select in the Brand Visibility source within Experience Platform. A site is available based on the availability of parsed CDN logs in Brand Visibility.
+   * Do not proceed on a general statement that "CDN logs are enabled." Proceed when the specific ABV site is available to select.
    * Confirm that Brand Visibility is receiving or detecting logs for that site.
    * Obtain from Adobe the site's Brand Visibility readiness confirmation.
 
@@ -235,7 +235,7 @@ Use the following procedure to verify the inbound integration:
 
 ## Troubleshoot
 
-See below what to do if issues occur:
+Review the following steps if issues occur:
 
 * The dataset does not appear in AEP.
 
@@ -283,7 +283,7 @@ See below what to do if issues occur:
  
 * The site cannot be selected. 
   
-  Be aware that once a site is allocated to a dataflow, it cannot be selected again, in that sandbox or in any other sandbox. To use the site in a different sandbox, delete the dataflow that the site is allocated to. The site can then be selected again. Deleting the dataflow impacts any Customer Journey Analytics connection or data view that relies on the data from this source. 
+  Be aware that once a site is allocated to a dataflow, it cannot be selected again in that or any other sandbox. To use the site in a different sandbox, delete the dataflow that the site is allocated to. The site can then be selected again. Deleting the dataflow impacts any Customer Journey Analytics connection or data view that relies on the data from this source. 
 
 * The dataflow shows a failed status. 
  
