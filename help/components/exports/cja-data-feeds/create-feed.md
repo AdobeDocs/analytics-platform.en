@@ -125,7 +125,7 @@ Before you create a data feed, it's important to have a basic understanding of d
    
    * Some components are required, unsupported, or have restrictions in data feeds. For details, see [Component availability in data feeds](/help/components/exports/cja-data-feeds/df-components.md).
    
-   * When you add a component that belongs to an XDM array field (for example, an Adobe Journey Optimizer proposition field) or a map field, a dialog prompts you to add any other components from the same sub-container. In the data feed output, all of these components appear in a single column. For more information, see [Sub-container components in data feeds](/help/components/exports/cja-data-feeds/df-sub-event.md)
+   * When you add a component that belongs to an XDM array field (for example, an Adobe Journey Optimizer proposition field) or a map field, a dialog prompts you to add any other components from the same sub-event. In the data feed output, all of these components appear in a single column. For more information, see [Sub-event components in data feeds](/help/components/exports/cja-data-feeds/df-sub-event.md)
 
 1. (Optional) Reorder components on the canvas by dragging them. The order you define is preserved as the column order in the exported data feed file.
 
