@@ -27,34 +27,28 @@ topic_v2:
 
 {{release-limited-testing}}
 
-Coworker is available in a chat panel on the right side of Analysis Workspace. Coworker uses the project that you have open as context, so you can ask questions about your analysis without explaining what the project contains. You can ask Coworker to summarize the project, find insights, or explain a metric. You can also ask Coworker to build and edit the project for you, such as adding panels and tables, breaking down data, or creating segments.
+Coworker is available in a chat panel on the right side of Analysis Workspace. Coworker uses your current open project as context, so you can ask questions about your analysis without explaining what the project contains. 
 
-## Choose between Coworker in Workspace and the Coworker application
+You can ask Coworker for help understanding the project or for help building it out:
 
-Coworker in Analysis Workspace has the same capabilities as the [CX Enterprise Coworker application](https://experienceleague.adobe.com/en/docs/cx-enterprise-coworker/content/chat/analytics-chat), including the skills that you have access to. However, there are important differences that determine when you might use one over the other:
+* **Understand a project**: Ask Coworker to do things like summarize the project, find insights, or explain a metric. 
+
+* **Build out a project**: Ask Coworker to do things like add panels and tables, break down data, or create segments.
+
+## Understand Coworker in Workspace
+
+### Choose between Coworker in Workspace and the Coworker application
+
+Coworker in Analysis Workspace has many of the same capabilities as the [CX Enterprise Coworker application](https://experienceleague.adobe.com/en/docs/cx-enterprise-coworker/content/chat/analytics-chat), including the skills that you have access to. However, there are important differences that determine when you might use one over the other:
 
 | | Coworker in Analysis Workspace | CX Enterprise Coworker application |
 | --- | --- | --- |
-| **When to use** | You want to build a project that you plan to keep, share with other users, and update over time. | You want a quick answer. You can turn the analysis into a Workspace project later, if needed. |
-| **Context** | Project-focused<p>Uses the open Workspace project as its starting point. You can refer to panels, tables, and components that are already in the project.</p> | Data view-focused<p>Uses the data views you have access to or those you set as a preference in Coworker memory. You describe what you want to analyze in your prompt.</p> |
+| **When to use** | You want to build a project that you plan to keep, share with other users, or update over time. | You want a quick answer. You might choose to turn the analysis into a Workspace project later, if needed. |
+| **Context** | Project-focused<p>Uses the open Workspace project as its starting point. You can refer to and build off panels, tables, and components that are already in the project.</p> | Data view-focused<p>Uses the data views you have access to or those you set as a preference in Coworker memory. You describe what you want to analyze in your prompt.</p> |
 | **Typical user** | Analysts who build and validate analysis in Workspace. | Business users who want answers, without needing to access or learn Analysis Workspace. |
 | **Output** | Panels, tables, and components are added directly to the Workspace project. <p>As appropriate, answers can also be given in the chat.</p> | Answers and analyses are provided in the conversation, with the option to open in Analysis Workspace. |
 
-## Prerequisites
 
-* **[PLACEHOLDER: Permissions and product profile requirements. Include the Admin Console steps to grant access, if applicable.]**
-
-* **[PLACEHOLDER: Any additional requirements, such as whether the organization must have Coworker enabled.]**
-
-Coworker uses your existing Analysis Workspace and data view permissions. It can't access data or components that you don't already have access to.
-
-## Open Coworker in Analysis Workspace
-
-1. In Customer Journey Analytics, open an existing Workspace project or create a new project.
-
-1. **[PLACEHOLDER: How to open the Coworker panel, such as the icon name and location. Add a screenshot.]**
-
-1. In the chat panel, describe what you want Coworker to do. See [Example prompts](#example-prompts) for ideas.
 
 ## What you can do with Coworker
 
@@ -124,7 +118,23 @@ When the placement isn't clear, Coworker explains what it's doing.
 
 * **Data quality notes**: Coworker includes data quality notes in its answers. For example, if you compare a month that has only just started to a full month, Coworker tells you that the comparison is based on partial data.
 
-## Limitations
+## Open Coworker in Analysis Workspace
+
+1. In Customer Journey Analytics, open an existing Workspace project or create a new project.
+
+1. **[PLACEHOLDER: How to open the Coworker panel, such as the icon name and location. Add a screenshot.]**
+
+1. In the chat panel, describe what you want Coworker to do. See [Example prompts](#example-prompts) for ideas.
+
+## Prerequisites
+
+* **[PLACEHOLDER: Permissions and product profile requirements. Include the Admin Console steps to grant access, if applicable.]**
+
+* **[PLACEHOLDER: Any additional requirements, such as whether the organization must have Coworker enabled.]**
+
+Coworker uses your existing Analysis Workspace and data view permissions. It can't access data or components that you don't already have access to.
+
+## Current limitations
 
 Coworker in Analysis Workspace has the following limitations:
 
