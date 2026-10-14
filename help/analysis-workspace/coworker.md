@@ -4,6 +4,7 @@ description: Use Coworker in Analysis Workspace to summarize the open project, f
 role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
+hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
