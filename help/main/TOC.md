@@ -184,6 +184,7 @@ breadcrumb-title: Customer Journey Analytics Guide
   + [Analysis Workspace overview](../analysis-workspace/home.md)
   + [Perform basic analysis](../analysis-workspace/perform-basic-analysis.md)
   + [Perform advanced analysis](../analysis-workspace/perform-adv-analysis.md)
+  + [Coworker in Workspace](../analysis-workspace/coworker.md)
   + Projects {#build-workspace-project}
     + [Overview](../analysis-workspace/build-workspace-project/freeform-overview.md)
     + [Quickly start projects](/help/analysis-workspace/build-workspace-project/starter-projects.md)
