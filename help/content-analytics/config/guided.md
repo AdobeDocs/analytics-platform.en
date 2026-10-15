@@ -702,6 +702,11 @@ When you select **[!UICONTROL Save]**, Content Analytics automatically:
 * Enables paid media dimensions and metrics in all selected data views.
 * Surfaces paid media channels as a filterable dimension in Workspace reports.
 
+See [Paid media automatic configuration](./paid-media.md) for details on: 
+
+* The automatic configuration of paid media datasets resulting from the first use of a paid media source connector.
+* The data view components created upon the configuration and enablement of the Paid media channel in Content Analytics.
+
 ### Save {#paidmedia-save}
 
 Select **[!UICONTROL Save]** to save the **[!UICONTROL Paid media]** configuration.
