@@ -3,7 +3,6 @@ title: Content Analytics Paid Media Automatic Configuration
 description: Learn about the automatic configuration of datasets, connection, data views, and more.
 solution: Customer Journey Analytics
 feature: Content Analytics
-hold: true
 role: Admin
 ---
 # Paid media automatic configuration

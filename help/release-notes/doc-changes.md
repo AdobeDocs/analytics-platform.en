@@ -66,8 +66,8 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 |---|---|
 | **October 2026** | |
+| Content Analytics Paid media channel | Comprehensive [documentation](/help/content-analytics/config/paid-media.md) on the automatic configuration of datasets and data view components resulting from using a paid media source connector (like Google Ads or Meta Ads) and configuring and enabling the Content Analytics Paid media channel. |
 | Conversation Insights | [Documentation](/help/conversation-insights/overview.md) for Conversation Insights. |
-| October 2026 | |
 | Brand Visibility | Updated documentation for the [Brand Visibility inbound integration](/help/integrations/bv/bv.md#inbound-integration) with more details. |
 | **September 2026** | |
 | Journey canvas comparison on arrows and fallout | Updated the '[!UICONTROL Compare to]' setting in [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings) to show that the percent change between date ranges now displays on each node, arrow, and fallout in the journey. |
