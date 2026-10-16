@@ -26,7 +26,7 @@ You can search for specific topics and compare the number and percentage for eac
 
 To create and configure a Trending topics visualization:
 
-1. Add a ![Feed](/help/assets/icons/Feed.svg) **[!UICONTROL Trending topics]** visualization. See [Add a visualization to a panel](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Add a ![Feed](/help/assets/icons/Feed.svg) **[!UICONTROL Trending topics]** visualization. See [Add a visualization to a panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
 1. In the **[!UICONTROL Trending topics]** visualization configuration:
    
