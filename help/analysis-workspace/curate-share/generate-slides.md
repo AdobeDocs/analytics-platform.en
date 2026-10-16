@@ -44,11 +44,6 @@ topic_v2:
 ---
 # Data storytelling: Generate slide presentations from Workspace reports {#generate-powerpoint}
 
->[!NOTE]
->
->Data Storytelling is a skill under Data Insights Agent and is available to eligible customers for a limited time. Access to Data Insights Agent will end on March 31, 2026. To continue using Data Insights Agent or other Adobe Experience Platform Agents without interruption, please contact your Adobe account representative to learn more about licensing Adobe Experience Platform Agent Orchestrator.
-
-
 Users with [the necessary permissions](#permission-requirements-to-generate-slides) can automatically generate .pptx presentations based on Analysis Workspace projects. When generating these slide presentations, Customer Journey Analytics automatically creates a story from your data by identifying key insights and converting them into stakeholder-ready slides. 
 
 This generated data story reduces the time, effort, and expertise required to surface findings from a Workspace project. Analysts can focus more on data exploration, while allowing Customer Journey Analytics to build and format the executive narrative and communicate the business impact to stakeholders.

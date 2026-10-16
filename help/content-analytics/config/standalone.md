@@ -238,7 +238,7 @@ For Content Analytics, you need to verify whether the following Customer Journey
   * Audit Logs Access
   * Share Project Links With Anyone
   * Forecasting
-  * AI Assistant: Product Knowledge
+  * AI Assistant: Product Knowledge <!-- FOLLOW-UP (waiting on PM): These two permissions haven't been updated in the product yet. Update when the PM confirms the Coworker permission name. -->
   * Data Insights Agent
   * Intelligent Captions
 

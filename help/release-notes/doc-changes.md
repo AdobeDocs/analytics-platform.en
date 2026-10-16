@@ -66,6 +66,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Feature | Description |
 |---|---|
 | **October 2026** | |
+| AI Assistant and Data Insights Agent replaced by Coworker | Removed the AI Assistant and Data Insights Agent articles. Adobe CX Enterprise Coworker replaces both capabilities. For more information, see [Analyze data with Coworker Chat](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/analytics-overview). Also updated [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md#cja-not-aa) to reflect the change. |
 | Content Analytics Paid media channel | Comprehensive [documentation](/help/content-analytics/config/paid-media.md) on the automatic configuration of datasets and data view components resulting from using a paid media source connector (like Google Ads or Meta Ads) and configuring and enabling the Content Analytics Paid media channel. |
 | Conversation Insights | [Documentation](/help/conversation-insights/overview.md) for Conversation Insights. |
 | Brand Visibility | Updated documentation for the [Brand Visibility inbound integration](/help/integrations/bv/bv.md#inbound-integration) with more details. |
@@ -112,7 +113,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | **November 2025** | |
 | Guardrail for rows per day in a connection | Added [guardrail information for data transfer limits](/help/technotes/guardrails.md) about the maximum average number of rows per day in a connection. |
 | **October 2025** | |
-| Manage access to the Data Insights Agent | The [permission requirements and process for enabling data views](/help/data-analysis-ai.md#manage-access-to-data-insights-agent) has been updated. |
+| Manage access to the Data Insights Agent | The [permission requirements and process for enabling data views](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai) has been updated. |
 | Attribution configuration | Additional updates to reflect the new attribution configuration options for model, container and lookback window. |
 | Ingest and use Experience Platform audiences | Updated use case article on how to [ingest and use Experience Platform audiences](/help/use-cases/data-ingestion/ingest-aep-segments.md). |
 | Prepare your organization to upgrade to Customer Journey Analytics | Added information about how to [prepare an organization to upgrade to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md). |
@@ -197,7 +198,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | **June 2024** | |
 | Updated product name that refers to streaming media features | Replaced instances of "Media Analytics" and "Streaming Media" with the name "Streaming Media Collection Add-on" and "Streaming Media Collection" when referring to the set of streaming media features that collect streaming media data and surface it in Analysis Workspace. <p>These updates are available throughout the Customer Journey Analytics documentation as well as the [Streaming Media Collection documentation](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview).</p> |
 | Graph-based stitching | Updated and restructured [stitching documentation](/help/stitching/overview.md) with the introduction of graph-based stitching. |
-| AI Assistant | Added [documentation](../ai-assistant.md) on the AI Assistant for Customer Journey Analytics. |
+| AI Assistant | Added [documentation](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/ai-assistant) on the AI Assistant for Customer Journey Analytics. |
 | Transform datasets for B2B lookups | Added documentation on how to support [person-based lookups on B2B data](/help/connections//transform-datasets-b2b-lookups.md) (including accounts, opportunities, marketing lists and campaigns) using transformation of B2B lookup datasets.  |
 | Derived field functions and function templates | Added documentation on the additional derived field functions ([Math](/help/data-views/derived-fields/derived-fields.md#math), [Next or Previous](/help/data-views/derived-fields/derived-fields.md#next-or-previous), and [Summarize](/help/data-views/derived-fields/derived-fields.md#summarize)) and [function templates](/help/data-views/derived-fields/derived-fields.md#function-templates). |
 | **May 2024** | |
