@@ -5,7 +5,6 @@ feature: Visualizations
 role: User
 hide: true
 ---
-
 # Trending topics
 
 >[!CONTEXTUALHELP]
