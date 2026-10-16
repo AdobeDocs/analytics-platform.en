@@ -3,6 +3,7 @@ description: Use the trending topics visualization to explore trending topics in
 title: Trending Topics
 feature: Visualizations
 role: User
+hide: true
 ---
 
 # Trending topics
@@ -10,18 +11,16 @@ role: User
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_button"
 >title="Trending topics"
->abstract="..."
+>abstract="Create a visualization that shows a hierarchical drill-down enabled breakdown of trending topics with occurrences and percentages to help you identify important themes in conversations."
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_panel"
 >title="Trending topics"
->abstract="..."
+>abstract="Analyze trending topics based on the selected ranking metric. Select topics to drill-down to up to five levels deep. Search for specific topics and compare topics to other date ranges."
 
 The ![Feed](/help/assets/icons/Feed.svg) **[!UICONTROL Trending topics]** visualization allows you to explore and analyze the trending topics as part of Conversation insights.
 
-You can search for specific topics and compare the number and percentage for each topics at each level with other data ranges.
-
-
+You can search for specific topics and compare the number and percentage for each topic at each level with other data ranges.
 
 ## Create and configure
 
@@ -57,7 +56,7 @@ To use the visualization:
 
 ## Settings 
 
-The following specific [visualization settings](freeform-analysis-visualizations.md#settings), are available.
+The following specific [visualization settings](freeform-analysis-visualizations.md#settings) are available.
 
 | Setting | Description |
 |---|---|

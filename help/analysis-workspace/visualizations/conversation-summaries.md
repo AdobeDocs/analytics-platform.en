@@ -3,7 +3,7 @@ description: Use the conversation summaries visualization to summarize conversat
 title: Conversation Summaries
 feature: Visualizations
 role: User
-hold: true
+hide: true
 ---
 
 # Conversation summaries
@@ -11,12 +11,12 @@ hold: true
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_button"
 >title="Conversation summaries"
->abstract="..."
+>abstract="Create a visualization that summarizes a filtered group of conversations."
 
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_panel"
 >title="Conversation summaries"
->abstract="..."
+>abstract="Summarize a filtered group of conversations. Control the length of the summary. See representative quotes from customers to validate the accuracy of extracted signals. Select a quote to jump to the full conversation replay."
 
 ![Feed](/help/assets/icons/Summarize.svg)
 
