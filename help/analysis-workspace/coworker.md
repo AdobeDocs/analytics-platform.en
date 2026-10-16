@@ -38,13 +38,15 @@ The in-product experience for Coworker is available in a chat panel on the right
 
   If you can't access Coworker in Workspace, contact your administrator. For more information, see [IMS Organization preferences](/help/analysis-workspace/user-preferences.md#ims-organization-preferences). <!-- need to update this section with the new toggle -->
 
-<!-- **[PLACEHOLDER: Permissions and product profile requirements. Include the Admin Console steps to grant access, if applicable.]** -->
+<!-- FOLLOW-UP: Coworker permissions are still being finalized. The Coworker permission name below is a placeholder. Confirm the name, category, and Admin Console steps with the SME. -->
+
+* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Coworker]** permission determines access to Coworker. A [product profile administrator](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) must add this permission to your product profile. For more information, see [Access control](/help/technotes/access-control.md#access-control).
 
 * **Data view access**: Coworker uses your existing Analysis Workspace and data view permissions. It can't access data or components that you don't already have access to.
 
 ### Choose between Coworker in Workspace and the Coworker application
 
-The in-product experience for Coworker has many of the same capabilities as the [CX Enterprise Coworker application](https://experienceleague.adobe.com/en/docs/cx-enterprise-coworker/content/chat/analytics-chat), including the skills that you have access to. However, there are important differences that determine when you might use one over the other:
+The in-product experience for Coworker has many of the same capabilities as the [CX Enterprise Coworker application](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/analytics-chat), including the skills that you have access to. However, there are important differences that determine when you might use one over the other:
 
 | | In-product experience for Coworker | Coworker application |
 | --- | --- | --- |
@@ -108,7 +110,7 @@ When you ask Coworker to build or edit something in the project, Coworker update
 
 1. In Customer Journey Analytics, open an existing Workspace project or create a new project.
 
-1. **[PLACEHOLDER: How to open the Coworker panel, such as the icon name and location. Add a screenshot.]**
+1. Select the **Coworker** icon ![Ask Coworker](/help/assets/icons/coworker.svg) in the upper-right corner of the header to open the Coworker chat panel.
 
 1. In the chat panel, describe what you want Coworker to do.
 
@@ -143,7 +145,7 @@ When you ask questions about a project, Coworker answers in the chat panel. This
 
 1. In Customer Journey Analytics, open an existing Workspace project or create a new project.
 
-1. **[PLACEHOLDER: How to open the Coworker panel, such as the icon name and location. Add a screenshot.]**
+1. Select the **Coworker** icon ![Ask Coworker](/help/assets/icons/coworker.svg) in the upper-right corner of the header to open the Coworker chat panel.
 
 1. In the chat panel, describe what you want Coworker to do.
 

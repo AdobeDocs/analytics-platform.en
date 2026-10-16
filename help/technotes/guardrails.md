@@ -279,6 +279,8 @@ See also Experience Platform [Dataset Export guardrails](https://experienceleagu
 
 ## Data Insights Agent
 
+<!-- FOLLOW-UP: Data Insights Agent has been replaced by Coworker, but the data view setting is still in the UI. Confirm with the SME whether this guardrail still applies. -->
+
 | Name |  Value | Limit Type | Description |
 |---|--:|---|---|
 | Data views | 50 | System-enforced guardrail | Maximum number of data views that can be enabled for the Data Insights Agent. When more data views are enabled, only the most-used data views are available to the Data Insights Agent. This guardrail does not impact the [guardrails defining the maximum number of data views you can define for a connection or within your organization](#connections-data-views-projects). |

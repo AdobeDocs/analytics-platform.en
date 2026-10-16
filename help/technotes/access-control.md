@@ -187,6 +187,8 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in the [Adm
 
 ![admin console permissions](assets/permissions.png)
 
+<!-- FOLLOW-UP (waiting on PM): The AI Assistant: Product Knowledge and Data Insights Agent permissions haven't been updated in the product yet. When the PM confirms the Coworker permission name and category, update both rows below. Links to the retired AI Assistant and Data Insights Agent pages were removed. -->
+
 | Category | Permission | Description |
 | --- | --- | ---|
 | [!UICONTROL Data Views] | *data view name* | If you toggle **[!UICONTROL Auto-Include]** to **[!UICONTROL On]**, users that are part of this product profile can view all existing and newly created data views. If this setting is set to **[!UICONTROL Off]**, you can select specific data views that users have access to.  |
@@ -201,8 +203,8 @@ The **[!UICONTROL Permissions]** tab is part of each product profile in the [Adm
 | [!UICONTROL Reporting Tools] | [!UICONTROL Audit Logs Access] |  Enforce the permission check on the [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) and the audit logs UI. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Share Project Links With Anyone] | Let users [share projects with anyone.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects)  |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Forecasting] | Let users access the [Forecasting](../analysis-workspace/c-forecast/forecasting.md) feature in Analysis Workspace  |
-| [!UICONTROL Reporting Tools] | [!UICONTROL AI Assistant: Product Knowledge]  | Let users access the [AI Assistant](../ai-assistant.md) for product knowledge. |
-| [!UICONTROL Reporting Tools] | [!UICONTROL Data Insights Agent]  | Let users access the [Data Insights Agent](../data-analysis-ai.md) for AI driven data insights. |
+| [!UICONTROL Reporting Tools] | [!UICONTROL AI Assistant: Product Knowledge]  | Let users access the AI Assistant for product knowledge. |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Data Insights Agent]  | Let users access the Data Insights Agent for AI driven data insights. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Intelligent Captions] | Let users access [Intelligent captions](/help/analysis-workspace/visualizations/intelligent-captions.md). |
 | [!UICONTROL Reporting Tools] | [!UICONTROL MCP Access] | Let users access the [Customer Journey Analytics MCP server](https://developer.adobe.com/analytics-mcp/docs/cja/). |
 | [!UICONTROL Data View Tools] | [!UICONTROL Full Table Export] | Let users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md).  |

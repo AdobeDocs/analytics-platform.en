@@ -42,6 +42,8 @@ The **[!UICONTROL Data views]** interface shows a table of all data views availa
 
 The following columns and icons are available in the table:
 
+<!-- FOLLOW-UP (engineering): The Data views table UI still shows a Data Insights Agent column, a Data Insights Agent Status pop-up, and Enable/Disable for Data Insights Agent context menu options. These presumably should change to Coworker. Log with engineering, then update the labels, descriptions, and the data-views-dia-status.png screenshot. -->
+
 | Column or Icon | Description |
 | --- | --- |
 | **[!UICONTROL Name]** | The name of the data view. |
@@ -50,7 +52,7 @@ The following columns and icons are available in the table:
 | **[!UICONTROL Connection]** | The name of the connection that is associated with the data view. |
 | **[!UICONTROL Sandbox]** | The name of the sandbox that is associated with the data view. |
 | **[!UICONTROL Owner]** | The owner of the data view. |
-| **[!UICONTROL Data Insights Agent]** ![InfoOutline](/help/assets/icons/InfoOutline.svg) | Indicates whether the [Data Insights Agent](/help/data-analysis-ai.md) is **[!UICONTROL Enabled]** or **[!UICONTROL Disabled]** for the data view. <br/>Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to show a pop-up with **[!UICONTROL Data Insights Agent Status]** across your data views. <br/>![Data Insights Agent usage](/help/data-views/assets/data-views-dia-status.png) |
+| **[!UICONTROL Data Insights Agent]** ![InfoOutline](/help/assets/icons/InfoOutline.svg) | Indicates whether the [Data Insights Agent](/help/data-views/create-dataview.md#ai-settings) is **[!UICONTROL Enabled]** or **[!UICONTROL Disabled]** for the data view. <br/>Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to show a pop-up with **[!UICONTROL Data Insights Agent Status]** across your data views. <br/>![Data Insights Agent usage](/help/data-views/assets/data-views-dia-status.png) |
 | **[!UICONTROL Integrations]** | List integrations with other solutions. For example: Adobe Audience Analysis, Content Analytics, Brand Concierge, Journey Optimizer, GenStudio, and Usage Analytics. |
 | **[!UICONTROL Use in CJA]** | Indicates whether the data view is used in Customer Journey Analytics. This value is only **[!UICONTROL Off]** for data views that are automatically generated as part of the Adobe Journey Optimizer integration. |
 | **[!UICONTROL Date created]** | The timestamp when the data view was created. |
@@ -162,7 +164,9 @@ Alternatively, you can:
 
 ## Enable or disable data views for Data Insights Agent
 
-You can enable or disable a data view for the [Data Insights Agent](/help/data-analysis-ai.md).
+<!-- FOLLOW-UP: This setting is still in the UI, but Data Insights Agent has been replaced by Coworker. Confirm with the SME what the setting does now and whether it will be renamed or removed. This also applies to the Data Insights Agent column above. -->
+
+You can enable or disable a data view for the [Data Insights Agent](/help/data-views/create-dataview.md#ai-settings).
 
 1. Select ![More](/help/assets/icons/More.svg) next to the data view name.
 1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Enable for Data Insights Agent]** or ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Disable for Data Insights Agent]** from the context menu.
