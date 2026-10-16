@@ -56,7 +56,7 @@ To use the visualization:
 
 ## Settings 
 
-The following specific [visualization settings](freeform-analysis-visualizations.md#settings) are available.
+The following specific [visualization settings](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings) are available.
 
 | Setting | Description |
 |---|---|
