@@ -24,11 +24,11 @@ role_v2:
 ---
 # Tag segments
 
-In the [Segment manager](seg-manage.md), you can use tags to organize segments. Administrators can tag all segments. Non administroators can tags only the segments they create or have been shared with them.
+In the [Segment manager](seg-manage.md), you can use tags to organize segments. Administrators can tag all segments. Non administrators can tag only the segments they create or have been shared with them.
 
 To tag one or more segments:
 
-1. In the [Segment manager](seg-manage.md), select one or more of the segments you want to tag.
+1. In the [Segment manager](seg-manage.md), select one or more segments you want to tag.
 1. From the action bar, select ![Labels](/help/assets/icons/Labels.svg) **[!UICONTROL Tag]**.
 1. In the **[!UICONTROL Tag Segments]** dialog:
    
@@ -54,9 +54,9 @@ Below are some suggestions to organize tags based on:
     
 * **Project**: For example, Entry-page analysis.
     
-* **Category**:. For example, Men, Women, Kids.
+* **Category**: For example, Men, Women, Kids.
 
 * **Geography**: For example: United States, California.
     
-* **Workflow**: For example: To be approved,  Curated
+* **Workflow**: For example: To be approved,  Curated.
 
