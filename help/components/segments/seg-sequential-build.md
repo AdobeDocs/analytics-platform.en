@@ -140,7 +140,7 @@ Identify persons that visited one page and then another page within five minutes
 
 ![Sequence within](assets/sequence-within.png)
 
-If a page view for the Home happens on June 1, 2024, at 12:01, then a page view to page Women | Shoes will match as long as that page view occurs before June 15, 2024 12:16.
+If a page view for the Home happens on June 1, 2024, at 12:01, then a page view to page Women | Shoes will match as long as that page view occurs before June 15, 2024 12:06.
 
 ##### [!UICONTROL After] but [!UICONTROL Within] operator
 
@@ -218,7 +218,7 @@ Consider a definition specifying a sequence of a component with criteria identif
 
 #### Example
 
-You have defined three version of a sequential segment for site sections. One with the option ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Include Everyone]**, one with the option ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]**, and one with the option ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]**. You named the three segments accordingly.
+You have defined three versions of a sequential segment for site sections. One with the option ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Include Everyone]**, one with the option ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]**, and one with the option ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]**. You named the three segments accordingly.
 
 ![Sequence segment](assets/site-section-filters.png)
 
@@ -255,7 +255,7 @@ Identify persons who visited one page, did not visited another page, then visite
 
 #### [!UICONTROL Exclude] at start
 
-Identify persons who visited one page without ever going to another page. For example, people that checked out a purchase without ever visited the home page.
+Identify persons who visited one page without ever going to another page. For example, people that checked out a purchase without ever visiting the home page.
 
 ![Sequence exclude start](assets/sequence-exclude-start.png)
 
