@@ -6,8 +6,39 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B Edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
+TQID: 'https://experienceleague.adobe.com/pXiDvk--5tAJYGj8lfq7KQfVLQqVOePbBZqCXT10rZ0'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
-
 # B2B Edition concepts and features
 
 This article explains concepts like connections, identifiers, containers, and datasets, commonly used in Customer Journey Analytics. And how the Customer Journey Analytics B2B Edition adds additional features to these concepts.
@@ -33,7 +64,7 @@ Customer Journey Analytics is built around the concept of three containers: Pers
 
 You can redefine how these containers are named when you configure a data view but the hierarchy and relationships between the containers is predetermined. The Session container is generated based on how you define a session in the [Session settings](/help/data-views/session-settings.md) in your data view.
 
-![B2C](assets/b2c-containers.svg){zoomable="yes"}
+![B2C](assets/b2c-containers.png){zoomable="yes"}
 
 
 ### B2B containers
@@ -42,7 +73,7 @@ In Customer Journey Analytics B2B Edition, an Account container is added to the 
 
 The hierarchy and relationships between the containers is predetermined. Opportunity, Buying Group and Person are all sibling containers of the Account container. In that hierarchy the Session container between the Person container and Event container is generated based on how you define a session in the [Session settings](/help/data-views/session-settings.md) in your data view. Additional session containers, for example between the Account container and Event container, are currently not generated and supported. See the table below for a description and basic usage of the B2B containers.
 
-![B2B](assets/b2b-containers.svg){zoomable="yes"}
+![B2B](assets/b2b-containers.png){zoomable="yes"}
 
 | B2B container | Description<br/>Basic use case |
 |---|---|
@@ -73,6 +104,9 @@ You can also set the default container for these visualizations in the [user pre
 
 Segments, attribution, and visualizations together with the B2B containers support you in deep B2B analysis and insights. 
 
+## Schemas
+
+The Customer Journey Analytics B2B Editior uses the [Adobe Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) to standardize B2B data and define schemas for your B2B data. You can base your schemas on the [standard classes that are provided in Real-time CDP B2B Edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) or you can use your own custom classes and schemas. The [use cases](/help/use-cases/b2b/b2b-edition/use-cases-overview.md) articles use Real-time CDP B2B Edition classes and schemas, however, a Real-time CDP B2B Edition license is not required to utilize the standard classes and schemas.
 
 ## Datasets
 
@@ -87,7 +121,7 @@ The Customer Journey Analytics B2B distinguishes between the following data type
 
 An example account-based connection in the Customer Journey Analytics B2B Edition:
 
-![Example account-based connection](assets/b2b-datasets.svg)
+![Example account-based connection](assets/b2b-datasets.png)
 
 Customer Journey Analytics B2B Edition offers the [Connection map](/help/connections/create-connection.md#connection-map) interface to provide you with an overview of the relationships between datasets in your connection.
 

@@ -5,6 +5,44 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
+TQID: 'https://experienceleague.adobe.com/HdeLAq13nYEHMV5ns75gTgux9KKRE0on5TiMRw6ZHoo'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: f21d8c43-b886-433b-93ea-5982cbfc16b7
+    internal-label: FAQ
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Frequently asked questions
 
@@ -147,7 +185,8 @@ The main benefit is that you store or report only on data that is applicable and
 
 See [Deletion and reset implications](/help/technotes/deletion.md) for an overview of the implications when you delete or reset Customer Journey Analytics or Experience Platform objects or components.
 
-<!-- Refer to deletion guide 
+<!-- 
+Refer to deletion guide 
 
 For data deletion, you should be concerned about six types of components: sandbox, schema, dataset, connection, data view, and Workspace project. Here are some possible scenarios around deleting any of these components:
 
@@ -179,7 +218,7 @@ If you plan to ingest Adobe Analytics data through the [Adobe Analytics source c
 
 ## 8. [!UICONTROL Adobe Analytics] components
 
-+++**Can I share/publish [!UICONTROL audiences] from [!DNL Customer Journey Analytics] to Experience Platform Real-Time CDP, or other Experience Cloud applications?**
++++**Can I share/publish [!UICONTROL audiences] from [!DNL Customer Journey Analytics] to Experience Platform Real-Time CDP, or other CX Enterprise applications?**
 
 You can [create and publish audiences](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish) identified in Customer Journey Analytics to Real-time Customer Profile in Adobe Experience Platform for customer targeting and personalization.
 
@@ -240,7 +279,7 @@ Read more about the [implications of dataset and connection deletion](https://ex
 
 ## 12. Regional data collection
 
-The Adobe Experience Cloud uses Regional Data Collection (RDC) so that interactions between your visitors and Adobe and non-Adbobe solutions occur as close to your visitors as possible. Once data is collected regionally at a Data Collection Center (DCC, also known as Edge site, part of the Platform Edge Network), it is forwarded over a secure connection to the relevant solutions based on the configuration of your datastream and/or event forwarding.
+Adobe CX Enterprise uses Regional Data Collection (RDC) so that interactions between your visitors and Adobe and non-Adbobe solutions occur as close to your visitors as possible. Once data is collected regionally at a Data Collection Center (DCC, also known as Edge site, part of the Platform Edge Network), it is forwarded over a secure connection to the relevant solutions based on the configuration of your datastream and/or event forwarding.
 
 ![Data flow using Edge Networks](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
 

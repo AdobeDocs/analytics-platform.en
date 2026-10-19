@@ -5,6 +5,26 @@ title: Folders Overview
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
+TQID: https://experienceleague.adobe.com/g8h5ym4QWd-8r8Sm7Ow6LFwtKCGf-V2wmyLUoYVwUPY
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: a67cb189-a535-41f6-afa2-448f39c4759f
+    internal-label: Access control
+  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Folders overview
 

@@ -5,6 +5,25 @@ title: Manage Data Sources
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
 role: User
+autotag-review: '2026-05-19T08:30:43.942Z'
+TQID: 'https://experienceleague.adobe.com/UU1RlISeu-NOFAttolNcjV-p2EgtxBPFy3w7ZrLz-vY'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
 ---
 # Manage data sources {#manage-data-sources}
 
@@ -22,7 +41,6 @@ role: User
 >id="workspace_freeformtable_showtable"
 >title="Show table"
 >abstract="Select **[!UICONTROL Show table]** to generate a new data source for your current visualization, separate from the original data source."
-
 
 Synchronizing visualizations lets you control which freeform table or data source corresponds to a visualization.
 

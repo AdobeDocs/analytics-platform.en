@@ -1,9 +1,34 @@
 ---
-description: Learn how to troubleshoot when configuring a journey canvas visualization.
+description: Learn how to use the Journey canvas visualization in Analysis Workspace to analyze user journeys, fallout, and multi-path conversions.
 title: Journey Canvas Troubleshooting
 feature: Visualizations
 role: User
 exl-id: f0ac3752-9244-4d9e-807b-e6471e6aa55b
+autotag-review: '2026-05-19T08:43:53.628Z'
+TQID: 'https://experienceleague.adobe.com/E0LdSu06SM3c1ZBnOcIz352mqIkTN7dXfH9qC1BM-4g'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Journey canvas troubleshooting
 
@@ -25,7 +50,7 @@ This can occur in the following scenarios:
 
 * When multiple paths converge into a single node
 
-### The journey uses a primary metric other than People or Session
+### The journey uses a primary metric other than People or Sessions
 
 Because Journey canvas allows you to use any metric as the primary metric, this can result in nodes that come later in the journey to show a higher percentage or number count than nodes that come earlier in the journey.
 
@@ -45,7 +70,7 @@ Now, suppose that User A visits the site again in a later session. Because User 
 
 In this example, the journey's container setting of "Person" plays a critical role in determining that the event on the third node ("Check out") is counted in the subsequent session. 
 
-Alternatively, if the container setting had been set to "Session," then the event that took place only on the third node in the subsequent visit would not have counted in the journey, because the statistics shown in the journey would be constrained to a single defined session for a given person. To learn more about the container setting, see [Begin building a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization) in the article [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
+Alternatively, if the container setting had been set to "Session," then the event that took place only on the third node in the subsequent visit would not have counted in the journey, because the statistics shown in the journey would be constrained to a single defined session for a given person. To learn more about the container setting, see [Begin building a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization) in the article [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 <!-- The time allotted for users to move along the path is determined by the container setting. Because "Person" is selected as the container setting in this example, people who followed the journey's path in one session (moving from Node 1 to Node 2 and to Node 3) met the criteria of the journey. On any subsequent visits to the site, any event they have that matches any node on the journey is counted on that node. -->
 
@@ -53,7 +78,7 @@ Alternatively, if the container setting had been set to "Session," then the even
 
 Suppose that User B visits the site and does not complete the journey (visits the site, views Product B, and then checks out). In this case, an event is counted for the journey's start node, "Visit site," but an event is not counted for the remaining nodes, and User B falls out of the journey. Even though User B checked out, an event is not counted on the third node ("Check out") because User B did not complete the journey by viewing Product A prior to checking out. 
 
-This is because events are counted for each node only when people follow the journey's "eventual path." This means that events are counted only if the person eventually moved from one node to the other, regardless of any events occurring between the 2 nodes. 
+This is because events are counted for each node only when people follow the journey's "eventual path." This means that events are counted only if the person eventually moved from one node to the other, regardless of any events occurring between the two nodes. 
 
 ### The journey has multiple paths converging into a single node
 

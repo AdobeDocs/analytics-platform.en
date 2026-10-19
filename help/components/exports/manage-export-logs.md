@@ -5,6 +5,26 @@ title: Manage export logs
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
 role: User
+TQID: https://experienceleague.adobe.com/xWw1Oy9NNv6lSnyicsUpQvlkR8a5rntN0YrHVfLR8GE
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Manage export logs
 
@@ -66,17 +86,21 @@ To find the information that you need, you can either filter the list of logs or
 
 1. In the search field, begin typing any information associated with the log you're searching for. You can search for data from any column available in the table. 
 
-<!-- removed for MVP: Retry an export You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. 
+<!-- 
+removed for MVP: Retry an export You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. 
 
 Retrying an export that has a status of Pending will delay the export process.
 
-This option is not available when selecting multiple logs. -->
+This option is not available when selecting multiple logs. 
+-->
 
-<!-- 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+<!-- 
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
 1. Select the [!UICONTROL **Logs**] tab, then select a log.
 
-1. Select [!UICONTROL **Retry**]. -->
+1. Select [!UICONTROL **Retry**]. 
+-->
    
 ## Edit an export
 

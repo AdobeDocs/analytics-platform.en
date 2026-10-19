@@ -5,19 +5,51 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
 role: Admin
+TQID: 'https://experienceleague.adobe.com/XK781eI953KTIHbIX8M9l09QnOcILsNas1-DNmi57Gc'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
-# Ingest and use data from  Adobe Analytics
+# Ingest and use data from Adobe Analytics
 
 This quick start guide explains how you can use the data collected by Adobe Analytics in Customer Journey Analytics.
 
 >[!PREREQUISITES]
 >
->You do have Adobe Analytics licensed and deployed on one or more of your websites, using any of the documented implementation methods:
+>You have Adobe Analytics licensed and deployed on one or more of your websites, using any of the documented implementation methods:
 >
 >- [Implement Analytics using Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html)
->
 >- [Implement Analytics using Adobe Analytics extension](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html)
->
 >- [Implement Analytics using JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)
 
 To accomplish this, you need to:
@@ -78,7 +110,6 @@ Once the connection is created, the dataflow is automatically created to populat
 When the initial ingestion completes, your Adobe Analytics report suite data is ready to be used by Customer Journey Analytics.
 
 See [Create an Adobe Analytics source connection in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) for a much more comprehensive tutorial.
-
 
 ## Set up a connection
 

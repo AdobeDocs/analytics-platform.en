@@ -1,10 +1,33 @@
 ---
-title: Create a tag property and add the Web SDK extension
-description: Learn how to create a tag property and add the Web SDK extension
+title: Create a tag for your property
+description: Learn how to create a tag property when upgrading from Adobe Analytics to Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 156df830-541d-4c92-9c49-98f346e040a7
+autotag-review: '2026-05-19T08:19:46.548Z'
+TQID: 'https://experienceleague.adobe.com/qNMm2rjpRS-uONat66tYwiTMqems4JevHxLWmHqy8og'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 ---
 # Create a tag for your property {#upgrade-tag-property}
 
@@ -21,7 +44,7 @@ exl-id: 156df830-541d-4c92-9c49-98f346e040a7
 
 You can use the Tags feature within Adobe Experience Platform to implement code on your site to collect data. This tag management solution lets you deploy code alongside other tagging requirements. Tags offer seamless integration with Adobe Experience Platform using the Adobe Experience Platform Web SDK extension.
 
-The following information describes how to create a tag for your property. For supplemental information, see the [Configure the Web SDK tag extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) in the Experience Platform documentation. The Web SDK includes the [!UICONTROL Adobe Experience Cloud ID Service] natively, so you do not need to add the ID service extension to your tag.
+The following information describes how to create a tag for your property. For supplemental information, see the [Configure the Web SDK tag extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) in the Experience Platform documentation. The Web SDK includes the Experience Platform Identity Service, so you do not need to add the [!UICONTROL Experience Cloud ID Service] extension to your tag.
 
 A property is basically a container that you fill with extensions, rules, data elements, and libraries as you deploy tags to your site. Many people create a property for each website (or group of closely related sites) where they want to deploy the same set of tags. For more about properties, see [Properties](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/companies-and-properties) in the Experience Platform data collection documentation.
 

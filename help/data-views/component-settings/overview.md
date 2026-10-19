@@ -5,6 +5,40 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
+TQID: 'https://experienceleague.adobe.com/Ozf-XAsirDMkZLIQCX4SLGD7SvKinu3O4fwJ4ifgSvQ'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+subfeature_v2:
+  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+    internal-label: Templates
+  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+    internal-label: Content Analytics
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
 ---
 # Component settings {#component-settings}
 
@@ -149,19 +183,19 @@ The following groups of context labels are available, each with a list of specif
 
 | Name | Description |
 |------|-------------|
-| Content ID | Content ID. |
-| Content Time Spent | Content Time Spent. |
-| Episode | Episode. |
-| Event Type | Event Type. |
-| Media Time Spent | Media Time Spent. |
-| Season | Season. |
-| Seconds Since Last Call | Seconds Since Last Call. |
-| Show | Show. |
-| Time to Start | Time to Start. |
-| Total Buffer Duration | Total Buffer Duration. |
-| Total Pause Duration | Total Pause Duration. |
-| Video Length | Video Length. |
-| Video Name | Video Name. |
+| [Content ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content) | The unique identifier for the content being played. Enables the **[!UICONTROL Content ID]** radio button in the [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. |
+| [Content Time Spent](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/content-time-spent) | Time spent viewing content, excluding ads. Powers the **[!UICONTROL Content Time Spent]** advanced setting in the [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. |
+| [Episode](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/episode) | Episode number within a series. Enables filtering by episode in the [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. |
+| Event Type | The media event type, such as `media.play` or `media.ping`. Required for Customer Journey Analytics to compute the [Media concurrent viewers](/help/analysis-workspace/c-panels/media-concurrent-viewers.md) derived metric. |
+| [Media Time Spent](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/media-time-spent) | Total time including content, ads, buffering, and pausing. Powers the [Media playback time spent](/help/analysis-workspace/c-panels/media-playback-time-spent.md) panel and the **[!UICONTROL Media Time Spent]** advanced setting in the [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. |
+| [Season](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/season) | Season number within a series. Enables filtering by season in the [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. |
+| Seconds Since Last Call | Time in seconds since the previous heartbeat ping. Required for Customer Journey Analytics to compute the [Media concurrent viewers](/help/analysis-workspace/c-panels/media-concurrent-viewers.md) derived metric, which identifies when a session is still active. |
+| [Show](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/show) | The program or series name. Enables filtering by show in the [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. |
+| [Time to Start](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/time-to-start) | Time from content selection to when playback begins. Included in the [Media playback time spent](/help/analysis-workspace/c-panels/media-playback-time-spent.md) calculation. |
+| [Total Buffer Duration](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/total-buffer-duration) | Total time spent buffering during a session. Included in the [Media playback time spent](/help/analysis-workspace/c-panels/media-playback-time-spent.md) calculation. |
+| [Total Pause Duration](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/metrics/total-pause-duration) | Total time spent paused during a session. Included in the [Media playback time spent](/help/analysis-workspace/c-panels/media-playback-time-spent.md) calculation. |
+| [Video Length](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content-length) | Duration of the content in seconds. Required for the **[!UICONTROL Specific content]** mode in the [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. |
+| [Video Name](https://experienceleague.adobe.com/en/docs/media-analytics/using/reporting/dimensions/content-name) | The display name of the content. Enables the **[!UICONTROL Video Name]** radio button in the [Media average minute audience](/help/analysis-workspace/c-panels/average-minute-audience-panel.md) panel. |
 
 +++
 

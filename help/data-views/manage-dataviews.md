@@ -5,6 +5,29 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: c5cf15ab-3eb1-4e6b-93a3-3d89694ca0ea
+autotag-review: '2026-05-19T10:45:24.919Z'
+TQID: 'https://experienceleague.adobe.com/fPYOLKGTjiZDeSWLRhvkywKht8Yoq4k54EOcazJw74M'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+subfeature_v2:
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
 # Manage data views
 
@@ -19,15 +42,17 @@ The **[!UICONTROL Data views]** interface shows a table of all data views availa
 
 The following columns and icons are available in the table:
 
+<!-- FOLLOW-UP (engineering): The Data views table UI still shows a Data Insights Agent column, a Data Insights Agent Status pop-up, and Enable/Disable for Data Insights Agent context menu options. These presumably should change to Coworker. Log with engineering, then update the labels, descriptions, and the data-views-dia-status.png screenshot. -->
+
 | Column or Icon | Description |
 | --- | --- |
 | **[!UICONTROL Name]** | The name of the data view. |
-| ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | To view information about the data view, select ![InfoOutline](/help/assets/icons/InfoOutline.svg) next to the data view name.<br/>A pop-up window displays details about the data view. |
-| ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Select ![More](/help/assets/icons/More.svg) to open a context menu. You can select:<br/>![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** to [edit](#edit-data-views) a data view.<br/>![Copy](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]** to [copy a data view](#copy-data-views).<br/>![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** to [delete](#delete-data-views) a data view.<br/>![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** to [export the details of the data view to a CSV file](#export-data-views-to-csv).<br/>![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Create project]** to [create a new Workspace project](#create-project-from-data-views) for the data view.<br/>![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Enable for Data Insights Agent]** to enable a data view for the Data Insights Agent.<br/>![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Disable for Data Insights Agent]** to disable a data view for the Data Insights Agent. |
+| ![Information](/help/assets/icons/InfoOutline.svg) | To view information about the data view, select ![InfoOutline](/help/assets/icons/InfoOutline.svg) next to the data view name.<br/>A pop-up window displays details about the data view. |
+| ![More](/help/assets/icons/More.svg) | Select ![More](/help/assets/icons/More.svg) to open a context menu. You can select:<br/>![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** to [edit](#edit-data-views) a data view.<br/>![Copy](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]** to [copy a data view](#copy-data-views).<br/>![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** to [delete](#delete-data-views) a data view.<br/>![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** to [export the details of the data view to a CSV file](#export-data-views-to-csv).<br/>![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Create project]** to [create a new Workspace project](#create-project-from-data-views) for the data view.<br/>![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Enable for Data Insights Agent]** to enable a data view for the Data Insights Agent.<br/>![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Disable for Data Insights Agent]** to disable a data view for the Data Insights Agent. |
 | **[!UICONTROL Connection]** | The name of the connection that is associated with the data view. |
 | **[!UICONTROL Sandbox]** | The name of the sandbox that is associated with the data view. |
 | **[!UICONTROL Owner]** | The owner of the data view. |
-| **[!UICONTROL Data Insights Agent]** ![InfoOutline](/help/assets/icons/InfoOutline.svg) | Indicates whether the [Data Insights Agent](/help/data-analysis-ai.md) is **[!UICONTROL Enabled]** or **[!UICONTROL Disabled]** for the data view. <br/>Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to show a pop-up with **[!UICONTROL Data Insights Agent Status]** across your data views. <br/>![Data Insights Agent usage](/help/data-views/assets/data-views-dia-status.png) |
+| **[!UICONTROL Data Insights Agent]** ![InfoOutline](/help/assets/icons/InfoOutline.svg) | Indicates whether the [Data Insights Agent](/help/data-views/create-dataview.md#ai-settings) is **[!UICONTROL Enabled]** or **[!UICONTROL Disabled]** for the data view. <br/>Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to show a pop-up with **[!UICONTROL Data Insights Agent Status]** across your data views. <br/>![Data Insights Agent usage](/help/data-views/assets/data-views-dia-status.png) |
 | **[!UICONTROL Integrations]** | List integrations with other solutions. For example: Adobe Audience Analysis, Content Analytics, Brand Concierge, Journey Optimizer, GenStudio, and Usage Analytics. |
 | **[!UICONTROL Use in CJA]** | Indicates whether the data view is used in Customer Journey Analytics. This value is only **[!UICONTROL Off]** for data views that are automatically generated as part of the Adobe Journey Optimizer integration. |
 | **[!UICONTROL Date created]** | The timestamp when the data view was created. |
@@ -38,7 +63,7 @@ To configure which columns to display in the table, select ![ColumnSetting](/hel
 
 ## Search data views
 
-You can quickly search for a data view using the ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) box.
+You can quickly search for a data view using the ![Search](/help/assets/icons/Search.svg) box.
 
 ## Filter data views
 
@@ -139,7 +164,9 @@ Alternatively, you can:
 
 ## Enable or disable data views for Data Insights Agent
 
-You can enable or disable a data view for the [Data Insights Agent](/help/data-analysis-ai.md).
+<!-- FOLLOW-UP: This setting is still in the UI, but Data Insights Agent has been replaced by Coworker. Confirm with the SME what the setting does now and whether it will be renamed or removed. This also applies to the Data Insights Agent column above. -->
+
+You can enable or disable a data view for the [Data Insights Agent](/help/data-views/create-dataview.md#ai-settings).
 
 1. Select ![More](/help/assets/icons/More.svg) next to the data view name.
 1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Enable for Data Insights Agent]** or ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Disable for Data Insights Agent]** from the context menu.

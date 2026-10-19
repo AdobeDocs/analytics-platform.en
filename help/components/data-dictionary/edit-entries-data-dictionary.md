@@ -4,6 +4,34 @@ title: Edit component entries
 feature: Components
 role: Admin
 exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
+TQID: 'https://experienceleague.adobe.com/MPtF2ZOWbjayiJtMoTS705nWS-W9OdTmNOp3Wagi6io'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: df28738e-9c71-4aa8-929e-edde22340cc6
+    internal-label: Data Dictionary
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
 ---
 # Edit component entries
 
@@ -23,9 +51,21 @@ To edit a component in the Data Dictionary:
 
 1. (Optional) In the search field, begin typing the name of the component you want to edit.
 
-   The type of component can be identified by both color and icon. **Dimensions** ![Dimension icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) are orange, **Segments** ![Segment icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) are blue, **Date ranges** ![Date range icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) are purple, and **Metrics** ![Metric icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) are green. The Adobe icon indicates either a calculated metric template or a segment template, and the calculator icon ![Calculator icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indicated a calculated metric that was created by an Analytics administrator in your organization. 
+   The type of component can be identified by both color and icon.
+   
+   * **Dimensions** ![Dimension icon](/help/assets/icons/Data.svg) are orange
+   
+   * **Segments** ![Segment icon](/help/assets/icons/Segmentation.svg) are blue
+   
+   * **Date ranges** ![Date range icon](/help/assets/icons/Calendar.svg) are purple
+   
+   * **Metrics** ![Metric icon](/help/assets/icons/Event.svg) are green
+   
+   * **Adobe icon** ![Adobe icon](assets/default-calc-metric-icon.png) indicates either a calculated metric template or a segment template
+   
+   * **Calculator icon** ![Calculator icon](/help/assets/icons/Calculator.svg) indicates a calculated metric that was created by an Analytics administrator in your organization
 
-1. (Optional) Select the **Filter** icon ![Data Dictionary Filter icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), then select any of the following filter options to filter the list of components:
+1. (Optional) Select the **Filter** icon ![Data Dictionary Filter icon](/help/assets/icons/Filter.svg), then select any of the following filter options to filter the list of components:
 
    |Option | Function |
    |---------|----------|
@@ -44,7 +84,7 @@ To edit a component in the Data Dictionary:
 
    {style="table-layout:auto"}
 
-1. (Optional) Select the **Sort** icon ![Sort components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg), then select any of the following segment options to sort the list of components:
+1. (Optional) Select the **Sort** icon ![Sort components icon](/help/assets/icons/SortOrderDown.svg), then select any of the following segment options to sort the list of components:
 
    |Option | Function |
    |---------|----------|
@@ -56,7 +96,7 @@ To edit a component in the Data Dictionary:
 
 1. From the list of components, select the component you want to edit.
 
-1. Select the **Edit** icon ![Data Dictionary Edit icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) next to the component name. 
+1. Select the **Edit** icon ![Data Dictionary Edit icon](/help/assets/icons/Edit.svg) next to the component name. 
 
 1. Edit any of the following information about the component:
 
@@ -76,4 +116,4 @@ To edit a component in the Data Dictionary:
 
    {style="table-layout:auto"}
 
-1. Click the **Save** icon ![Data Dictionary Save icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SaveFloppy_18_N.svg) to save your changes.
+1. Click the **Save** icon ![Data Dictionary Save icon](/help/assets/icons/SaveFloppy.svg) to save your changes.

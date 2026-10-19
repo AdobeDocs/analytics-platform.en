@@ -4,6 +4,34 @@ description: Learn how to publish audiences from Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
+TQID: 'https://experienceleague.adobe.com/BPbSzyh6eg3QC6NcAVgo06GAISzVH2CX35Z-Q32xMbE'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Create and publish audiences {#create-and-publish-audiences}
 
@@ -12,7 +40,7 @@ role: User
 >[!CONTEXTUALHELP]
 >id="components_audiences_refreshfrequency"
 >title="Refresh frequency"
->abstract="See how often an audience's membership is reevaluated.<br/>One time audiences are evaluated only once."
+>abstract="The frequency at which an audience's membership is re-evaluated.<br/>One-time requests are evaluated only once, and do not count toward your refresh limit."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -20,8 +48,8 @@ role: User
 
 >[!CONTEXTUALHELP]
 >id="components_audiences_audiencelimit"
->title="Audience limit"
->abstract="Refreshing audiences are limited based on how often they refresh."
+>title="Refresh audience limit"
+>abstract="The number of audiences in your environment that are configured to automatically refresh at a scheduled frequency. Limits are between 75 and 150, depending on your Customer Journey Analytics entitlement. One-time requests do not count toward this limit."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -94,7 +122,7 @@ Configure these settings to define or update your audience.
 | **[!UICONTROL Name]** | The name of the audience. For example, `Really Interested in Potential Car Buyers` |
 | **[!UICONTROL Tags]** | Any tags that you want to assign to the audience for organizational purposes. You can select one or more pre-existing tags or enter a new one.|
 | **[!UICONTROL Description]** | A description of the audience, to differentiate it from others. For example, `Build an audience of really interested potential car buyers` |
-| **[!UICONTROL Refresh frequency]** | The frequency at which you want to refresh the audience.<p/>You can choose between <ul><li>**[!UICONTROL One time]** audience: an audience (default) that needs no refreshing. For example, this option could be helpful for specific, one-time campaigns.<br/>You have to specify a **[!UICONTROL One time date range]**. You can use ![Calendar](/help/assets/icons/Calendar.svg) to enter a date range.</li><li>A refreshing audience. You can select from the following options:<ul><li>**[!UICONTROL Every 4 hour]**s: an audience that refreshes every 4 hours.</li><li>**[!UICONTROL Daily]**: an audience that refreshes daily</li><li>**[!UICONTROL Weekly]**: an audience that refreshes weekly.</li><li>**[!UICONTROL Monthly]**: an audience that refreshes monthly</li></ul></li>For refreshing audiences, you have to specify:<ul><li>**[!UICONTROL Refresh lookback window]**. Define the number of lookback days from today that an audience is evaluated. You can select from options or define a Custom time. The maximum is 90 days.</li><li>**[!UICONTROL Expiration date]**: Define when the audience stops refreshing. You can use ![Calendar](/help/assets/icons/Calendar.svg) to select a date. The default is 1 year from the creation date. Expiring audiences are treated similarly to expiring scheduled reports. The admin gets an email a month before the audience expires.</li></ul> Note that there is a limit of 75 to 150 audience refreshes, depending on your Customer Journey Analytics entitlement.</li></ul> |
+| **[!UICONTROL Refresh frequency]** | The frequency at which you want to refresh the audience.<p/><p>You can configure a scheduled refresh on a limited number of audiences (between 75 to 150), depending on your Customer Journey Analytics entitlement. </p><p>You can choose from the following options:</p><ul><li>**[!UICONTROL One time]**: A one-time request that needs no refreshing. For example, this option could be helpful for specific, one-time campaigns.<br/>You have to specify a **[!UICONTROL One time date range]**. You can use ![Calendar](/help/assets/icons/Calendar.svg) to enter a date range.</li><li>A refreshing audience. You can select from the following scheduled refresh options:<ul><li>**[!UICONTROL Every 4 hour]**s: an audience that refreshes every 4 hours.</li><li>**[!UICONTROL Daily]**: an audience that refreshes daily</li><li>**[!UICONTROL Weekly]**: an audience that refreshes weekly.</li><li>**[!UICONTROL Monthly]**: an audience that refreshes monthly</li></ul></li>For refreshing audiences, you have to specify:<ul><li>**[!UICONTROL Refresh lookback window]**. Define the number of lookback days from today that an audience is evaluated. You can select from options or define a Custom time. The maximum is 90 days.</li><li>**[!UICONTROL Expiration date]**: Define when the audience stops refreshing. You can use ![Calendar](/help/assets/icons/Calendar.svg) to select a date. The default is 1 year from the creation date. Expiring audiences are treated similarly to expiring scheduled reports. The admin gets an email a month before the audience expires.</li></ul></ul> |
 | **[!UICONTROL Filter]** | Filters are the main input to the audience. Drag and drop one or more segments from the left ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** panel on to the Segment area. You can use the ![Search](/help/assets/icons/Search.svg) [!UICONTROL *Search segments*] to search for segments. You can add up to 20 segments. Segments can be joined with **[!UICONTROL And]** or **[!UICONTROL Or]** operators.<p>When creating an audience from a visualization in Analysis Workspace (such as a freeform table or Journey canvas), any segments applied to the panel or to the column are preserved. You can remove any segments that are automatically applied.</p> |
 | **[!UICONTROL Data preview]** | Select ![Info](/help/assets/icons/Info.svg) to show or hide the [Data preview](#data-preview) for the selected date range. |
 
@@ -130,7 +158,7 @@ Consider the following when working with audiences that are published from Custo
 
 At several points prior to, during, and after audience publishing, latencies can occur. Here is an overview of possible latencies.
 
-![Latencies in audience publishing as described in this section.](assets/latency-diagram.svg)
+![Latencies in audience publishing as described in this section.](assets/latency-diagram.png)
 
 |  | Latency point | Latency duration |
 | --- | --- | --- |

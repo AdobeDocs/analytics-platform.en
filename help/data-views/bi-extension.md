@@ -5,6 +5,38 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
+TQID: 'https://experienceleague.adobe.com/RrX-gp2IY-Ny1D1yzR2whV2GuU98mysma8tQmUEubF8'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
+  - id: f24857a4-4b64-4b25-b237-d43026362144
+    internal-label: BI extension
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Customer Journey Analytics BI extension
 
@@ -289,7 +321,7 @@ See [Use cases](/help/use-cases/data-views/bi-extension-usecases.md) on how to a
 
 ## Functionality
 
-By default, your data views have a table-safe name generated from their friendly name. For example, the data view named [!UICONTROL My Web Data View] has the view name `my_web_data_view`. You can define a preferred name to use in your BI tool for your data view. See [Data view settings](create-dataview.md#settings) for more information.
+By default, your data views have a table name generated from the data view  default external id. For example, the data view named **[!UICONTROL My Web Data View]** has the external id `My_web_data_view`. You can define a preferred name to use in your BI tool for your data view. See [Data view settings](create-dataview.md#settings) for more information.
 
 If you want to use the data view IDs as the table names, you can add the optional `CJA_USE_IDS` setting to your database name when connecting. For example, `prod:cja?CJA_USE_IDS` shows your data views with names like `dv_ABC123`.
 
@@ -304,12 +336,12 @@ Privacy labels and policies that were created on datasets consumed by Experience
 In the standard PostgreSQL CLI, you can list your views using `\dv`
 
 ```sql
-prod:all=> \dv
+prod:cja=> \dv
                        List of relations
  Schema |                    Name                    | Type |  Owner             
 --------+--------------------------------------------+------+----------
- public | my_web_data_view                           | view | postgres
- public | my_mobile_data_view                        | view | postgres
+ public | My_web_data_view                           | view | postgres
+ public | My_mobile_data_view                        | view | postgres
 
 ```
 

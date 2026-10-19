@@ -4,8 +4,52 @@ title: Monitor Data Dictionary health
 feature: Components
 role: Admin
 exl-id: 8bc89ac7-078d-469d-8627-3905823d4100
+TQID: https://experienceleague.adobe.com/RKh01bcmVkoZ2wkHDvBM-oX9rRagVaOqK4fn2A-IpaI
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: df28738e-9c71-4aa8-929e-edde22340cc6
+    internal-label: Data Dictionary
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
-# Monitor Data Dictionary health
+# Monitor Data Dictionary health {#monitor-data-dictionary}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="component_datadictionary"
+>title="Data dictionary"
+>abstract="When this option is selected, the primary component is shared with everyone who has access to the duplicate components (both the owners and anyone the components are shared with). Those users can then select the primary component from the component list for future projects. However, they are not able to edit the component, even if they were the owner of a duplicate component that was consolidated. <br/>This option is available only when the primary component is a segment, calculated metric, or a date range. Metrics and dimensions are always available to all users. 
+>
+>When this option is deselected, the primary component still replaces duplicates in existing projects and segments, but users who didn't previously have access to it can't access it from the component list for future projects. "
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="datadictionary_share_primary"
+>title="Share primary component"
+>abstract="When this option is selected, the primary component is shared with everyone who has access to the duplicate components (both the owners and anyone the components are shared with). Those users can then select the primary component from the component list for future projects. However, they are not able to edit the component, even if they were the owner of a duplicate component that was consolidated."
+
+<!-- markdownlint-disable MD034 -->
+
+<!-- markdownlint-enable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="datadictionary_delete_duplicates"
+>title="Delete replaced duplicates"
+>abstract="When this option is selected, consolidated duplicates are no longer available for use. Deselect this option if you want duplicates to continue to be available."
+
+<!-- markdownlint-enable MD034 -->
 
 Customer Journey Analytics administrators are responsible for maintaining a healthy Data Dictionary. 
 

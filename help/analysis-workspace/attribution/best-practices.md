@@ -3,6 +3,25 @@ title: Attribution Best Practices
 description: Understand the best practices to decide on which attribution model to use.
 feature: Attribution
 exl-id: 92c6039c-f950-4746-8b34-ba18be258c08
+TQID: 'https://experienceleague.adobe.com/noNo2rP-srAtUJbG-kYgipLHknMsWWZR4iJwDv-2ioc'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: c91f8bd2-df97-4c6a-afcd-f1cde8221302
+    internal-label: Attribution
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 ---
 # Attribution best practices
 
@@ -58,3 +77,4 @@ If you don't yet have an attribution model that provides satisfactory answers to
 * You might need to use the services of a data scientist instead of relying on Analysis Workspace alone.
 * You can rely on raw data, as in Adobe data feeds.
 * Consider using [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview), for example, if you want to consider your impressions data.
+

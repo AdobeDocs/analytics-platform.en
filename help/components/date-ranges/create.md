@@ -4,6 +4,21 @@ description: Understand how to create a date range that you can use in Analysis 
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
+TQID: https://experienceleague.adobe.com/hXe1cEXGvuuBSd0bpavJGEJpEXng2zctXUxPinGu4es
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Create date ranges
 
@@ -21,7 +36,8 @@ Anyone can create a custom date range. You create a date range in the following 
 
 To define the annotation, you use the [[!UICONTROL Date range builder]](#annotation-builder).
 
-<!-- Should we really mention API here. If so, we can do it all over the place in the docs...
+<!--
+Should we really mention API here. If so, we can do it all over the place in the docs...
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |
 -->
 

@@ -5,6 +5,31 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5c52986c-7ff3-45b5-9039-2bfb6529238c
 role: Admin
+autotag-review: '2026-05-19T09:27:51.516Z'
+TQID: 'https://experienceleague.adobe.com/4DM6LjcCM4xWw8j-1xcEvJ8XOVdvF5zNiOXir538Z0A'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 ---
 # IP addresses used by Customer Journey Analytics
 
@@ -138,4 +163,4 @@ This page includes ip addresses you need to add to your allowlist in order for o
 >
 >[Domains used by Customer Journey Analytics](domains.md)
 >
->[IP addresses used by the Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)
+>[IP addresses used by CX Enterprise](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)

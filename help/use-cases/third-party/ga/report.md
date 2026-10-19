@@ -5,10 +5,37 @@ exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
+autotag-review: '2026-05-19T09:49:08.813Z'
+TQID: 'https://experienceleague.adobe.com/dRY1wvTEzrhnNsqE-fJq9DyzOAEKTygzSkVb8r6huoM'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+subfeature_v2:
+  - id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
+    internal-label: Analytics integration
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e9001ce2-5245-4a8e-8601-dd958009072f
+    internal-label: Web experience
 ---
 # Report on Google Analytics data
 
-Once you have data available in Customer Journey Analytics, the following examples provide useful scenarios for reporting on that data.
+Once you have data available in Customer Journey Analytics, the following examples provide useful scenarios for reporting on that data. For a comprehensive lookup of GA4 report equivalents in Customer Journey Analytics, see [GA4 reports in Customer Journey Analytics](/help/getting-started/ga-to-cja/reports.md).
 
 ## Visualize web data and app data as combined datasets
 

@@ -4,7 +4,59 @@ description: Lists content updates for the Customer Journey Analytics documentat
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
+autotag-review: '2026-05-19T11:00:09.733Z'
+TQID: 'https://experienceleague.adobe.com/hHcvSYqGtYuKbPLvtu2qALBNLA0cogWxEUYxu-ktUvM'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+    internal-label: Analytics dashboards
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
+subfeature_v2:
+  - id: a8e39571-4463-4aa3-8b3f-4e2341ecf3b3
+    internal-label: Release notes
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
+
 # Customer Journey Analytics - documentation updates
 
 The following updates were made to the Customer Journey Analytics documentation since its inception.
@@ -13,14 +65,41 @@ The following updates were made to the Customer Journey Analytics documentation 
 
 | Feature | Description |
 |---|---|
+| **October 2026** | |
+| AI Assistant and Data Insights Agent replaced by Coworker | Removed the AI Assistant and Data Insights Agent articles. Adobe CX Enterprise Coworker replaces both capabilities. For more information, see [Analyze data with Coworker Chat](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/analytics-overview). Also updated [Customer Journey Analytics feature support](/help/getting-started/aa-vs-cja/cja-aa.md#cja-not-aa) to reflect the change. |
+| Content Analytics Paid media channel | Comprehensive [documentation](/help/content-analytics/config/paid-media.md) on the automatic configuration of datasets and data view components resulting from using a paid media source connector (like Google Ads or Meta Ads) and configuring and enabling the Content Analytics Paid media channel. |
+| Conversation Insights | [Documentation](/help/conversation-insights/overview.md) for Conversation Insights. |
+| Brand Visibility | Updated documentation for the [Brand Visibility inbound integration](/help/integrations/bv/bv.md#inbound-integration) with more details. |
+| **September 2026** | |
+| Journey canvas comparison on arrows and fallout | Updated the '[!UICONTROL Compare to]' setting in [Configure a Journey canvas visualization](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings) to show that the percent change between date ranges now displays on each node, arrow, and fallout in the journey. |
+| Incorporated blog posts | Incorporated the following blog posts:<ul><li>[The Complete Playbook for Handling 'No Value' in Adobe CJA](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769#M598)</li><li>[Adobe Experience Platform & Customer Journey Analytics Data Egress Use Cases Deep Dive](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725)</li></ul>in our [Data export](/help/use-cases/data-export/overview.md) use cases and a new [No value](/help/use-cases/data-views/no-value.md) use case article. |
+| New resize shortcut actions | New keyboard shortcuts in Analysis Workspace now allow you to [resize a panel or visualization](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#resize-panel-or-visualization) wider, narrower, taller, or shorter. |
+| **August 2026** | |
+| Clarified information about refreshing audiences | When [publishing audiences](/help/components/audiences/publish.md#audience-builder), clarified that the number of audiences that can be scheduled to refresh depends on your Customer Journey Analytics entitlement, and is between 75 and 150. |
+| **July 2026** | |
+| Brand Visibility | Documentation for the [Brand Visibility inbound integration](/help/integrations/bv/bv.md#inbound-integration). |
+| Usage interface | Updates to the [Usage interface](/help/connections/manage-connections.md#usage) documentation for Connections. |
+| Sub-event analysis | Documentation for [sub-event analysis](/help/components/segments/sub-event.md) and [custom containers](/help/data-views/create-dataview.md#custom-containers). |
+| Inline classifications | Documentation for [inline classifications](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications). |
+| **June 2026** | |
+| New GA4 guide | Added [Transitioning from Google Analytics 4 to Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home). |
+| **May 2026** | |
+| Javascript library for Content Analytics | Documentation on how to implement Content Analytics for the web channel using the [Content Analytics Javascript library](/help/content-analytics/config/tags-agnostic.md) without requiring Experience Platform Data Collection Tags. |
+| Data Mirror consideratons | [Documentation](/help/data-mirror/considerations.md) that describes factors you should consider when you set up [Data Mirror datasets](/help/data-mirror/data-mirror.md). |
+| Content Analytics mobile channel | Updates to [Content Analytics documentation](/help/content-analytics/content-analytics.md) to describe the capabilities and configuration of the Content Analytics mobile channel. |
+| **April 2026** | |
+| Derived fields guidelines | Added article with [guidelines](/help/use-cases/data-views/derived-fields/guidelines.md) (best practices, guardrails, and common pitfalls) for working with derived fields. |
+| Added missing documentation for two datasets that can be included when integrating Journey Optimizer | [Two additional non-profile, system-generated datasets](/help/integrations/ajo.md#high-throughput-add-on-datasets) are included in the connection when the High Throughput transactional messaging add-on is enabled for your IMS Org. |
+| Updated cohort analysis use cases | Based on feedback added Analyis Workspace examples to the cohort analysis use cases. |
 | **March 2026** | |
+| Break down a panel | Restructured the documentation around the [drop zone for a panel](/help/analysis-workspace/c-panels/panels.md#drop-zone) to support the new [break down](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) functionality. |
 | Technote on Bad IDs (BAVIDs) | New [technote on Bad IDs](/help/technotes/badids.md). The technote  explains the definition of a Bad ID, where in the Customer Journey Analytics interface Bad IDs are used, and how to investigate data in your connection for Bad IDs. |
-| Datasets preview redesign in Connections | Updated documentation for an improved data preview experience when you [add](/help/connections/create-connection.md#add-datasets) or [edit](/help/connections/create-connection.md#edit-a-dataset) datasets in a person-based connections, including documentation on additional [stitching preview information](/help/stitching/use-stitching-ui.md#datasets-preview) for stitching-enabled datasets. | 
+| Datasets preview redesign in Connections | Updated documentation for an improved data preview experience when you [add](/help/connections/create-connection.md#add-datasets) or [edit](/help/connections/create-connection.md#edit-a-dataset) datasets in a person-based connections, including documentation on additional [stitching preview information](/help/stitching/use-stitching-ui.md#datasets-preview) for stitching-enabled datasets. |
 | Content Analytics thumbnails and previews | Documentation on [thumbnails](/help/content-analytics/report/report.md#thumbnails) and [previews](/help/content-analytics/report/report.md#previews) for additional visualizations in Content Analytics. |
 | **February 2026** | |
-| Header overrides | Documentation on the additional [header overrides configuration](/help/content-analytics/config/guided.md#header-overrides) for Content Analytics. | 
+| Header overrides | Documentation on the additional [header overrides configuration](/help/content-analytics/config/guided.md#header-overrides) for Content Analytics. |
 | Calculated metrics guardrail | Updated the [guardral for the maximum number of calculated metrics for an organization](/help/technotes/guardrails.md#segments-and-calculated-metrics). The maximum is now 50,000. |
-| Standalone Content Analytics | Added documentation for a [standalone configuration of Content Analytics](/help/content-analytics/config/standalone.md). | 
+| Standalone Content Analytics | Added documentation for a [standalone configuration of Content Analytics](/help/content-analytics/config/standalone.md). |
 | **January 2026** | |
 | Architect a schema | Added substantial information and context to [Architect your schema for use with Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md). |
 
@@ -34,11 +113,11 @@ The following updates were made to the Customer Journey Analytics documentation 
 | **November 2025** | |
 | Guardrail for rows per day in a connection | Added [guardrail information for data transfer limits](/help/technotes/guardrails.md) about the maximum average number of rows per day in a connection. |
 | **October 2025** | |
-| Manage access to the Data Insights Agent | The [permission requirements and process for enabling data views](/help/data-analysis-ai.md#manage-access-to-data-insights-agent) has been updated. |
+| Manage access to the Data Insights Agent | The [permission requirements and process for enabling data views](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai) has been updated. |
 | Attribution configuration | Additional updates to reflect the new attribution configuration options for model, container and lookback window. |
 | Ingest and use Experience Platform audiences | Updated use case article on how to [ingest and use Experience Platform audiences](/help/use-cases/data-ingestion/ingest-aep-segments.md). |
 | Prepare your organization to upgrade to Customer Journey Analytics | Added information about how to [prepare an organization to upgrade to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md). |
-| Report on LLM and AI-generated traffic | Added [use case article](/help/use-cases/ai-traffic.md) on how to report on LLM and AI-generated traffic using derived fields as the foundation. The article is based on the blog article [Tracking and Analyzing LLM and AI-Generated Traffic in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967). |
+| Report on LLM and AI-generated traffic | Added [use case article](/help/use-cases/data-views/derived-fields/ai-traffic.md) on how to report on LLM and AI-generated traffic using derived fields as the foundation. The article is based on the blog article [Tracking and Analyzing LLM and AI-Generated Traffic in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967). |
 | **September 2025** | |
 | Dates before 1900 | Added a [note](/help/connections/create-connection.md#datasets) on how dates before 1900 are handled by Customer Journey Analytics. |
 | Real-time reporting | Added documentation about [real-time reporting](/help/components/real-time/real-time.md) in Customer Journey Analytics. |
@@ -119,7 +198,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | **June 2024** | |
 | Updated product name that refers to streaming media features | Replaced instances of "Media Analytics" and "Streaming Media" with the name "Streaming Media Collection Add-on" and "Streaming Media Collection" when referring to the set of streaming media features that collect streaming media data and surface it in Analysis Workspace. <p>These updates are available throughout the Customer Journey Analytics documentation as well as the [Streaming Media Collection documentation](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview).</p> |
 | Graph-based stitching | Updated and restructured [stitching documentation](/help/stitching/overview.md) with the introduction of graph-based stitching. |
-| AI Assistant | Added [documentation](../ai-assistant.md) on the AI Assistant for Customer Journey Analytics. |
+| AI Assistant | Added [documentation](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/ai-assistant) on the AI Assistant for Customer Journey Analytics. |
 | Transform datasets for B2B lookups | Added documentation on how to support [person-based lookups on B2B data](/help/connections//transform-datasets-b2b-lookups.md) (including accounts, opportunities, marketing lists and campaigns) using transformation of B2B lookup datasets.  |
 | Derived field functions and function templates | Added documentation on the additional derived field functions ([Math](/help/data-views/derived-fields/derived-fields.md#math), [Next or Previous](/help/data-views/derived-fields/derived-fields.md#next-or-previous), and [Summarize](/help/data-views/derived-fields/derived-fields.md#summarize)) and [function templates](/help/data-views/derived-fields/derived-fields.md#function-templates). |
 | **May 2024** | |
@@ -168,7 +247,7 @@ The following updates were made to the Customer Journey Analytics documentation 
 | Currency conversion updates | Clarified documentation about how to [configure currency conversion](/help/data-views/component-settings/format.md). |
 | Updates to Anomaly Detection documentation | The documentation for Anomaly Detection was previously located in a section about Virtual Analyst. The following changes were made: <ul><li>The term Virtual Analyst was removed from the documentation.</li><li>The section about [Anomaly Detection](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) was moved directly beneath the Analysis Workspace section.</li></ul> |
 | **October 2023** | |
-| Using derived field for setting goals / targets | Added [use case](../use-cases/goals-using-derived-fields.md) article illustrating how to use derived fields for setting goals / targets and reporting on these. |
+| Using derived field for setting goals / targets | Added [use case](/help/use-cases/data-views/derived-fields/goals-using-derived-fields.md) article illustrating how to use derived fields for setting goals / targets and reporting on these. |
 | Export full tables to the cloud | Added documentation about exporting full tables with millions of Workspace rows to cloud destinations. <p>Exporting full tables offers one-time or scheduled delivery of data tables designed within Workspace with support for up to five breakdowns, five metrics, segments, and calculated metrics, all in a concatenated table. It is the evolution of Data Warehouse reports in Adobe Analytics, with many new, often-requested features that are not available in Data Warehouse today.</p><p>For more information, see [Export Customer Journey Analytics reports to the cloud](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html). |
 | Reporting Activity Manager | Added documentation for the Reporting Activity Manager. <p>The Reporting Activity Manager lets you see the reporting capacity for each connection in your organization. It provides administrators with detailed visibility into reporting consumption in order to easily diagnose and fix capacity issues during peak reporting times.</p> <p>The following new articles were added:<ul><li>[Reporting Activity Manager overview](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[View reporting activity in the Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity.md)</li><li>[Cancel requests in the Reporting Activity Manager](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul>|
 | New columns on management pages | Documented new columns that are now available in the [Calculated metrics manager](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html) and the [Segment manager](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html). |

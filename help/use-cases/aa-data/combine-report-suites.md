@@ -4,6 +4,23 @@ description: Learn how to use Data Prep to combine report suites with different 
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 feature: Use Cases
 role: User
+autotag-review: '2026-05-19T09:35:22.411Z'
+TQID: 'https://experienceleague.adobe.com/La2B-Yvc3-OHQsgmr5EPILZQBcm6zKCAAcKPLZ3PbIQ'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
 ---
 # Combine Report Suites with different schemas
 
@@ -95,9 +112,9 @@ The Experience Platform Data Prep functionality is integrated with the Analytics
 
 You have now mapped eVar1 and eVar2 from the source report suites to three new fields. Note that another advantage of using Data Prep mappings is that the destination fields are now based on semantically meaningful names (Search term, Business Unit, Customer category) instead of the less meaningful eVar names (eVar1, eVar2.)
 
-   >[!NOTE]
-   >
-   >The Unified Fields custom field group, and associated field mappings can be added to existing Analytics source connector dataflows and datasets at any time. However, this impacts going-forward data only.
+>[!NOTE]
+>
+>The Unified Fields custom field group, and associated field mappings can be added to existing Analytics source connector dataflows and datasets at any time. However, this impacts going-forward data only.
 
 ## More than just report suites
 

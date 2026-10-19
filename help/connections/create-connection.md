@@ -5,6 +5,34 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
+TQID: 'https://experienceleague.adobe.com/90JULA8fFxPQSbVLHr3hJ8o5algJAfNz9SjjLFecyJc'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
 # Create or edit a connection {#create-or-edit-a-connection}
 
@@ -317,7 +345,7 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
 >title="Account ID"
->abstract="Select an account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform."
+>abstract="Select an account ID from the available non-identity or non-person identity fields defined in the dataset schema in Experience Platform. The contained values are used as unique account identifiers at row level, whenever the related account ID info is not available in the Person to Account dataset."
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountfield"
@@ -388,6 +416,16 @@ You [add one or more datasets](#add-datasets) or [edit existing datasets](#edit-
 >id="connection_accountid"
 >title="Account ID"
 >abstract="Select an account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform."
+
+>[!CONTEXTUALHELP]
+>id="connection_b2bstitching_personid"
+>title="Persistent Person ID"
+>abstract="Select an identity or identityMap type field that is available on all events, such as the field containing ECIDs. These identifiers will be elevated to the Person IDs from the previously configured person identifier namespace."
+
+>[!CONTEXTUALHELP]
+>id="connection_b2bstitching_accountid"
+>title="Account ID"
+>abstract="Optionally, select an account ID from the available non-identity or non-people identity fields defined in the XDM schema. The contained values will be used as unique account identifier at row level, whenever the related account ID info is not available in the person-to-account dataset."
 
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"
@@ -489,7 +527,7 @@ There are different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile]
 |Dataset type|Description|Timestamp|Schema|Person ID <br/> Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}  |
 |---|---|---|---|---|
 | **[!UICONTROL Event]** | Data that represents events in time. For example, web visits, interactions, transactions, POS data, survey data, ad impression data, and so on. This data could be typical clickstream data, with a customer ID or a Cookie ID, and a timestamp. With event data, you have flexibility which ID is used as the Person ID. |  Set to the default timestamp field from event-based schemas in [!UICONTROL Experience Platform]. | Any built-in or custom schema that is based on an XDM class with the *Time Series* behavior. Examples include *XDM Experience Event* or *XDM Decision Event*. | You can pick which Person ID or Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} you want to include. Each dataset schema defined in the Experience Platform can have its own set of one or more identities defined and associated with an identity namespace. Any of these identities can be used as the Person ID or Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. Examples include Cookie ID, Stitched ID, User ID, Tracking Code, Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, and so on. |
-| **[!UICONTROL Lookup]** | You can add datasets as lookups of fields within all dataset types: Profile, Lookup, and Event datasets (the latter was always supported). This additional capability expands the capability of Customer Journey Analytics to support complex data models, including B2B. This data is used to look up values or keys found in your Event, Profile, or Lookup data. You can add up to three levels of lookups. (Note that [Derived Fields](/help/data-views/derived-fields/derived-fields.md) cannot be used as matching keys for lookups within Connections.) For example, you might upload lookup data that maps numeric IDs in your event data to product names. See the [B2B example](/help/use-cases/b2b/example.md) for an example. | N/A | Any built-in or custom schema that is based on an XDM class with the *Record* behavior, except for the *XDM Individual Profile* class. | N/A |
+| **[!UICONTROL Lookup]** | You can add datasets as lookups of fields within all dataset types: Profile, Lookup, and Event datasets (the latter was always supported). This additional capability expands the capability of Customer Journey Analytics to support complex data models, including B2B. This data is used to look up values or keys found in your Event, Profile, or Lookup data. You can add up to three levels of lookups. For example, you might upload lookup data that maps numeric IDs in your event data to product names. See the [B2B example](/help/use-cases/b2b/example.md) for an example. <br/><br/>**Note**: <ul><li>[Derived Fields](/help/data-views/derived-fields/derived-fields.md) cannot be used as matching keys for lookups within Connections.</li><li>Large lookups are not supported for [Customer Managed Keys](/help/privacy/cmk.md) and [Ad hoc datasets](#ad-hoc-dataset).</li></ul> | N/A | Any built-in or custom schema that is based on an XDM class with the *Record* behavior, except for the *XDM Individual Profile* class. | N/A |
 | **[!UICONTROL Profile]** | Data that is applied to your account, persons, users, or customers in the [!UICONTROL Event] data. For example, allows you to upload CRM data about your customers. | N/A | Any built-in or custom schema that is based on the *XDM Individual Profile* class. | You can pick which Person ID / Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} you want to include. Each dataset (except summary datasets), defined in [!DNL Experience Platform], has its own set of one or more Person IDs or Account IDs [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} defined. For example, Cookie ID, Stitched ID, User ID, Tracking Code, Account ID, and so on.<br>![Person ID](assets/person-id.png)**Note**: If you create a connection that includes datasets with different IDs, the reporting reflects that. To merge datasets, you need to use the same Person ID or Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. |
 | **Summary** | Time-series data that is not associated with an individual Person ID. Summary data represents aggregated data at a different level of aggregation, for example campaigns. You can use this data in Customer Journey Analytics to support various use cases. See [Summary data](/help/data-views/summary-data.md) for more information. | Automatically set to the default timestamp field from event-based Summary Metrics schemas in Experience Platform. Only hourly or daily granularity is supported. | Any built-in or custom schema that is based on the *XDM Summary Metrics* class. | N/A |
 
@@ -498,19 +536,15 @@ Alternatively, the dataset types listed above, can be based on an ad hoc or rela
 | Dataset type | Description | Timestamp | Schema | Person ID |
 |---|---|---|---|---|
 | **[!UICONTROL Adhoc]** | Ad hoc data based on an [ad hoc schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/api/ad-hoc) with fields that are namespaced for usage only by a single dataset. | Dependent on the dataset type you select for the ad hoc dataset.  |  Any ad hoc schema that is based on a class based on the *ad hoc* behavior | Dependent on the dataset type you select for the ad hoc dataset. |
-| **[!UICONTROL Model]** | Relational data based on a relational schema. | Dependent on the dataset type you select for the relational dataset. | Any relational schema. | Dependent on the dataset type you select for the relational dataset. |
+| **[!UICONTROL Relational]** | Relational data based on a relational schema. | Dependent on the dataset type you select for the relational dataset. | Any relational schema. | Dependent on the dataset type you select for the relational dataset. |
 
+{{relational-dataset-important}}
 
 ### Add datasets
 
 You can add one or more Experience Platform datasets when you create or edit a connection. 
 
 #### For person-based connections
-
->[!AVAILABILITY]
->
->The enhanced **[!UICONTROL Dataset preview]** interface described in this section is in the Limited Testing phase of release and might not be available yet in your environment. If not available, you see the dataset preview as part of the **[!UICONTROL Dataset settings]** interface. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
->
 
 1. In **[!UICONTROL Connection]** > **[!UICONTROL _Name of the connection_]** interface, select ![DataAdd](/help/assets/icons/DataAdd.svg) **[!UICONTROL Add datasets]**.
 
@@ -522,7 +556,7 @@ You can add one or more Experience Platform datasets when you create or edit a c
    
    | Column | Description |
    |---|---|
-   | **[!UICONTROL Dataset]** | Name of the dataset. Select the name to direct you to the dataset in Experience Platform. Select ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to display a popup with more details for the dataset. You can select **[!UICONTROL Edit in Platform]** to edit the dataset directly in Experience Platform. |
+   | **[!UICONTROL Dataset]** | Name of the dataset. Select the name to direct you to the dataset in Experience Platform. Select ![InfoOutline](/help/assets/icons/InfoOutline.svg) to display a popup with more details for the dataset. You can select **[!UICONTROL Edit in Platform]** to edit the dataset directly in Experience Platform. |
    | **[!UICONTROL Dataset type]** | The type of dataset: [Event](#event-dataset), [Profile](#profile-dataset), [Lookup](#lookup-dataset), [Summary](#summary-dataset), [Adhoc](#ad-hoc-dataset), or [Relational](#relational-dataset). |
    | **[!UICONTROL Number of records]** | The total records in the previous month for the dataset in Experience Platform. |
    | **[!UICONTROL Schema]** | The schema for the dataset. Select the name to direct you to the schema in Experience Platform. |
@@ -530,10 +564,10 @@ You can add one or more Experience Platform datasets when you create or edit a c
    | **[!UICONTROL Dataset ID]** | The id of the dataset. |
    | **[!UICONTROL Last updated]** | The last updated timestamp of the dataset. |
 
-   * To change the columns displayed for the list of datasets, select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) and select the columns to be displayed in the [!UICONTROL Customize table] dialog.
-   * To search for a specific dataset, use the ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) search field.
-   * To toggle between showing or hiding the selected datasets, select ![Select](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL Hide selected]** or **[!UICONTROL Show selected]**.
-   * To remove a dataset from the list of selected datasets, use ![Close](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). To remove all selected datasets, select **[!UICONTROL Clear all]**.
+   * To change the columns displayed for the list of datasets, select ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) and select the columns to be displayed in the [!UICONTROL Customize table] dialog.
+   * To search for a specific dataset, use the ![Search](/help/assets/icons/Search.svg) search field.
+   * To toggle between showing or hiding the selected datasets, select ![SelectBoxAll](/help/assets/icons/SelectBoxAll.svg) **[!UICONTROL Hide selected]** or **[!UICONTROL Show selected]**.
+   * To remove a dataset from the list of selected datasets, use ![Close](/help/assets/icons2/Close.svg). To remove all selected datasets, select **[!UICONTROL Clear all]**.
    * To display details of a dataset, select ![InfoOutline](/help/assets/icons/InfoOutline.svg).
 
    
@@ -585,7 +619,7 @@ You can add one or more Experience Platform datasets when you create or edit a c
    
    | Column | Description |
    |---|---|
-   | **[!UICONTROL Dataset]** | Name of the dataset. Select the name to direct you to the dataset in Experience Platform. Select ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to display a popup with more details for the dataset. You can select **[!UICONTROL Edit in Platform]** to edit the dataset directly in Experience Platform. |
+   | **[!UICONTROL Dataset]** | Name of the dataset. Select the name to direct you to the dataset in Experience Platform. Select ![Info](/help/assets/icons/InfoOutline.svg) to display a popup with more details for the dataset. You can select **[!UICONTROL Edit in Platform]** to edit the dataset directly in Experience Platform. |
    | **[!UICONTROL Dataset type]** | The type of dataset: [Event](#event-dataset), [Profile](#profile-dataset), [Lookup](#lookup-dataset), [Summary](#summary-dataset), [Adhoc](#ad-hoc-dataset), or [Relational](#relational-dataset). |
    | **[!UICONTROL Number of records]** | The total records in the previous month for the dataset in Experience Platform. |
    | **[!UICONTROL Schema]** | The schema for the dataset. Select the name to direct you to the schema in Experience Platform. |
@@ -593,10 +627,10 @@ You can add one or more Experience Platform datasets when you create or edit a c
    | **[!UICONTROL Dataset ID]** | The id of the dataset. |
    | **[!UICONTROL Last updated]** | The last updated timestamp of the dataset. |
 
-   * To change the columns displayed for the list of datasets, select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) and select the columns to be displayed in the [!UICONTROL Customize table] dialog.
-   * To search for a specific dataset, use the ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) search field.
-   * To toggle between showing or hiding the selected datasets, select ![Select](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL Hide selected]** or **[!UICONTROL Show selected]**.
-   * To remove a dataset from the list of selected datasets, use ![Close](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). To remove all selected datasets, select **[!UICONTROL Clear all]**.
+   * To change the columns displayed for the list of datasets, select ![Column settings](/help/assets/icons/ColumnSetting.svg) and select the columns to be displayed in the [!UICONTROL Customize table] dialog.
+   * To search for a specific dataset, use the ![Search](/help/assets/icons/Search.svg) search field.
+   * To toggle between showing or hiding the selected datasets, select ![Select](/help/assets/icons/SelectBoxAll.svg) **[!UICONTROL Hide selected]** or **[!UICONTROL Show selected]**.
+   * To remove a dataset from the list of selected datasets, use ![Close](/help/assets/icons/Close.svg). To remove all selected datasets, select **[!UICONTROL Clear all]**.
    * To display details of a dataset, select ![InfoOutline](/help/assets/icons/InfoOutline.svg).
 
    
@@ -617,11 +651,6 @@ To edit a dataset that is already configured for a connection, in the **[!UICONT
 
 
 #### For person-based connections
-
->[!AVAILABILITY]
->
->The enhanced **[!UICONTROL Dataset preview]** interface described in this section is in the Limited Testing phase of release and might not be available yet in your environment. If not available, you see the dataset preview as part of the **[!UICONTROL Dataset settings]** interface. This note will be removed when the functionality is generally available. For information about the Customer Journey Analytics release process, see [Customer Journey Analytics feature releases](/help/release-notes/releases.md).
->
 
 1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit connection]**.
 1. Select ![More](/help/assets/icons/More.svg) for the dataset listed in the dataset table that you want to edit. 
@@ -691,7 +720,31 @@ When you add datasets or edit an existing dataset, you configure the dataset set
 
 All datasets and dataset types have [general settings and details](#general-dataset-settings-and-details), such as whether or not to import new data and request backfills.
 
-#### Event dataset
+
+
+#### Event dataset {#event-dataset-settings}
+
+<!-- RIdM: Lengthy contextual help due to not yey allowed public facing docs. Modify when public facing docs are allowed. -->
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter"
+>title="Enable row filtering"
+>abstract="Row filters determine which events are ingested into Customer Journey Analytics. Only events that match your inclusion rules are ingested. All other events will be permanently excluded and unavailable for reporting, segmentation, or analysis in Customer Journey Analytics.<ul><li>You can create up to 10 filters.</li><li> Changes to filters apply only to new data ingested after the change and do not retroactively affect previously ingested data or trigger a historical backfill.</li></ul>"
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter_field"
+>title="Field"
+>abstract="Select a field from the event dataset to use for the condition. You can use any field of any type."
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter_operator"
+>title="Condition"
+>abstract="Select an operator. The operator is used to validate the selected field against the values."
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter_values"
+>title="Values"
+>abstract="Enter one or more values. The exact string value is used. Use a comma to separate values. Each comma separated value is considered distinct and is included in the condition."
 
 The specific settings for an event dataset are dependent on the type of connection.
 
@@ -720,7 +773,7 @@ For an event dataset in an account-based connection, you can specify:
 
 | Setting | Description |
 | --- | --- |
-| **[!UICONTROL Global Account ID]** | Select a Global Account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform. Applicable when you have added Global Account as a container to your connection. <p>If a record doesn't contain a value for the identity you have selected as the Account ID for the event dataset, the record is skipped. |
+| **[!UICONTROL Global Account ID]** | Applicable when you have added Global Account as a container to your connection.<br/>Select a Global Account ID (the unique identifier for an account) from the available non-identity or non-person identity fields defined in the dataset schema in Experience Platform. The contained values are used as unique account identifiers at row level, whenever the related account ID info is not available in the Person to Account dataset.  <p>If a record doesn't contain a value for the identity you have selected as the Account ID for the event dataset, the record is skipped. |
 | **[!UICONTROL Account ID]** | Select an Account ID (the unique identifier for an account) from the available identities defined in the dataset schema in the Experience Platform. Applicable when you have not added Global Account as a container to your connection.|
 | **[!UICONTROL Opportunity ID]** | Select an Opportunity ID (the unique identifier for an opportunity) from the available identities defined in the dataset schema in the Experience Platform. |
 | **[!UICONTROL Buying Group ID]** | Select a Buying Group ID (the unique identifier for a buying group) from the available identities defined in the dataset schema in the Experience Platform. |
@@ -811,13 +864,13 @@ The specific settings for a summary dataset are:
 
 >[!NOTE]
 >
->Although possible to configure and select, for performance reasons you should avoid to using an ad hoc dataset for time-series (event, summary) data. Relational or generic XDM based datasets are much better suited for time-series data than ad hoc datasets.
+>Although possible to configure and select, for performance reasons you should avoid to use an ad hoc dataset for time-series (event, summary) data. Relational or generic XDM based datasets are much better suited for time-series data than ad hoc datasets.
 
 The specific settings for an ad hoc dataset are:
 
 | Setting | Selected dataset type | Description |
 |---|---|---|
-| **[!UICONTROL Dataset type]** | N/A | The type of data in the ad hoc dataset. Possible values are: **[!UICONTROL Event]**, **[!UICONTROL Profile]**, **[!UICONTROL Lookup]**, and **[!UICONTROL Summary]**. |
+| **[!UICONTROL Dataset type]** | N/A | The type of data in the ad hoc dataset. Possible values are: **[!UICONTROL Event]**, **[!UICONTROL Profile]** (not available for [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}), **[!UICONTROL Lookup]**, and **[!UICONTROL Summary]**. If you want to use ad hoc profile data for an account based connection, select **[!UICONTROL Lookup]** as the **[!UICONTROL Dataset type]** and use **[!UICONTROL Key]** and **[!UICONTROL Matching Key]** to bring in account data. |
 | **[!UICONTROL Person ID]** | Event, Profile | Select a field from the ad hoc or relational schema that represent the Person ID. This field can be any field in the dataset. Select from **[!UICONTROL Identity namespace fields]** or from **[!UICONTROL Non-identity fields]**. <br/>You can only select an identifier from **[!UICONTROL Identity namespace]** if one or more of the fields in the ad hoc schema are labeled as an identity and have an identity namespace.|
 | **[!UICONTROL Identity namespace]** | Event | Select an identity namespace in case you have selected a Person ID from **[!UICONTROL Non-identity]** fields.  |
 | **[!UICONTROL Timestamp]** | Event, Summary | Select a field from the ad hoc schema that represents the timestamp field. This field can be any of the available fields of type `DateTime`. |
@@ -832,11 +885,13 @@ The specific settings for an ad hoc dataset are:
 >Relational datasets are predominantly used to support the upcoming Experience Platform Data Mirror for Customer Journey Analytics capability.
 >
 
+{{relational-dataset-important}}
+
 The specific settings for a relational dataset are:
 
 | Setting | Selected dataset type | Description |
 |---|---|---|
-| **[!UICONTROL Dataset type]** | N/A | The type of data in the relational dataset.<br/>If the dataset contains time-series data, the possible values are: **[!UICONTROL Event]** and **[!UICONTROL Summary]**. <br/>If the dataset contains record data, the possible values are: **[!UICONTROL Profile]** and **[!UICONTROL Lookup]**. |
+| **[!UICONTROL Dataset type]** | N/A | The type of data in the relational dataset.<br/>If the dataset contains time-series data, the possible values are: **[!UICONTROL Event]** and **[!UICONTROL Summary]**. <br/>If the dataset contains record data, the possible values are: **[!UICONTROL Profile]** (not available for [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}) and **[!UICONTROL Lookup]**. If you want to use relational profile data for an account based connection, select **[!UICONTROL Lookup]** as the **[!UICONTROL Dataset type]** and use **[!UICONTROL Key]** and **[!UICONTROL Matching Key]** to bring in account data. |
 | **[!UICONTROL Person ID]** | Event, Profile | Select a field from the relational schema that represents the Person ID. The selection is limited to the list of fields in the relational schema that are marked as Identity and do have an identity namespace. |
 | **[!UICONTROL Timestamp]** | Event, Summary | The field that is defined as the timestamp descriptor in the schema. This field is populated automatically. |
 | **[!UICONTROL Key]** | Lookup | The key to use for a Lookup dataset.<br/>If a record doesn't contain a value for the key you have selected for the lookup dataset, the record is skipped. |

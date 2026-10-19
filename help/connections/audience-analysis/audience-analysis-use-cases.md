@@ -4,9 +4,33 @@ description: Learn use cases for Audience Analysis.
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
-hide: yes
-hidefromtoc: yes
-exl-id: 4f465e71-f1b5-4f38-a1db-645550856849
+hide: true
+exl-id: f465e71-f1b5-4f38-a1db-645550856849
+autotag-review: '2026-05-19T06:52:01.796Z'
+TQID: 'https://experienceleague.adobe.com/6kLQ-wzYZDWnzi-FcZsUxr7derTgtmu053nKTBQLhvw'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Audience Analysis use cases {#analyze-audiences-use-cases}
 
@@ -62,7 +86,7 @@ Understand how a specific audience behaves in a given channel (e.g., web or app)
 
 | Use case  | Core business question  | Identity resolution consideration | High‑auth / single‑namespace orgs (events already under 1 person ID, e.g. login /CRM) | Fragmented / multi‑namespace orgs (events under ECID + CRM + others) |
 |---------|----------|---------|---------|---------|
-| Current‑state audience behavior deep dive | _"What is audience X doing in channel Y right now?" (pages, funnels, content, offers)_ | Events and profiles must share one consistent identity namespace in the CJA connection and Audience Analysis configuration for optimal coverage. | Most activity is already tied to one login/CRM ID, so audiences from AEP join cleanly to behavioral data in CJA. <p>You get a clear view of what each audience is doing in a given channel with minimal expected reporting gaps.</p>  | Even when joined with a stitched dataset, reporting will still be constrained to the single identity namespace chosen in the configuration. <p>If some customers exist under other IDs, their behavior won't be included, which may result in a partial view during reporting.</p> | 
+| Current‑state audience behavior deep dive | _"What is audience X doing in channel Y right now?" (pages, funnels, content, offers)_ | Events and profiles must share one consistent identity namespace in the CJA connection and Audience Analysis configuration for optimal coverage. | Most activity is already tied to one login/CRM ID, so audiences from AEP join cleanly to behavioral data in CJA. <p>You get a clear view of what each audience is doing in a given channel with minimal expected reporting gaps.</p>  | Even when joined with a stitched dataset, reporting will still be constrained to the single identity namespace chosen in the configuration. <p>If some customers exist under other IDs, their behavior won't be included, which may result in a partial view during reporting.</p> |
 
 ### Use case 2
 
@@ -96,7 +120,7 @@ Help marketers or journey designers understand which audiences overlap, so they 
 
 | Use case  | Core business question  | Identity resolution consideration | High‑auth / single‑namespace orgs (events already under 1 person ID, e.g. login /CRM) | Fragmented / multi‑namespace orgs (events under ECID + CRM + others) |
 |---------|----------|---------|---------|---------|
-| Audience overlap & collision detection  | _"Which audiences overlap today so we can avoid offer collisions?"_  | Overlap is calculated only for audiences using the same person ID and with activity in the CJA connection. | Because most activity is already tied to a single login/CRM ID, this is expected to provide a reliable overlap map across audiences. <p>Overlap charts give a reliable picture of which audiences collide and where to apply suppressions or priority rules.</p>  | If parts of the journey live under other IDs (e.g., anonymous ECID‑only browsing, call‑center IDs), those events won't show up in overlap analysis. <p>People may still exist across multiple namespaces.</p><p>Overlap will be based on the identity namespace included in the configuration. If some profiles still split across IDs, overlap may under‑report true collisions.</p> | 
+| Audience overlap & collision detection  | _"Which audiences overlap today so we can avoid offer collisions?"_  | Overlap is calculated only for audiences using the same person ID and with activity in the CJA connection. | Because most activity is already tied to a single login/CRM ID, this is expected to provide a reliable overlap map across audiences. <p>Overlap charts give a reliable picture of which audiences collide and where to apply suppressions or priority rules.</p>  | If parts of the journey live under other IDs (e.g., anonymous ECID‑only browsing, call‑center IDs), those events won't show up in overlap analysis. <p>People may still exist across multiple namespaces.</p><p>Overlap will be based on the identity namespace included in the configuration. If some profiles still split across IDs, overlap may under‑report true collisions.</p> |
 
 ### Use case 3
 

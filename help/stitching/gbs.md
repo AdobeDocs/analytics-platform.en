@@ -5,15 +5,47 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
+autotag-review: '2026-05-19T09:24:07.100Z'
+TQID: 'https://experienceleague.adobe.com/f-HOhKLpbM4u4MAzzoUCc0cMvVIu1k3FXg4FShValVE'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+subfeature_v2:
+  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+    internal-label: Stitching
+  - id: b7fb3355-1f54-4380-bce3-d444b226c0e9
+    internal-label: Cross channel analysis
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Graph-based stitching
 
-In graph-based stitching, you specify an event dataset, the persistent ID (cookie) for that dataset and the desired person ID namespace from the identity graph. Graph-based stitching attempts to make the person ID info available for Customer Journey Analytics data analysis on any event. The persistent ID is used to query the identity graph from the Experience Platform Identity Service to obtain the person ID from the specified namespace.
+In graph-based stitching, you specify an event dataset, the persistent ID (cookie) for that dataset and the desired person ID namespace from the identity graph. Graph-based stitching attempts to make the person ID info available for Customer Journey Analytics data analysis on any event. The persistent ID is used to query the identity graph from the Experience Platform Identity Service to obtain the person ID from the specified namespace. This is the same Identity Service that is used by other Experience Platform applications such as Real-Time Customer Data Platform (as shown in the illustration below).
+
+![Identity Service](assets/uis-gbs.png){zoomable="yes"}
+
+>[!NOTE]
+>
+>The [Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) is a core Experience Platform service that does not require additional licensing. See [Understanding the role of Identity Service within the Experience Platform infrastructure](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure) for more information.
+>
 
 If the person ID info cannot be retrieved for an event, the persistent ID is used instead for that *unstitched* event. As a result, in a [data view](/help/data-views/data-views.md) that is associated with a [connection](/help/connections/overview.md) that contains the dataset enabled for stitching, the person ID data view component contains either the person ID value or persistent ID value at the event level.
 
 
-![Graph-based-stitching](/help/stitching/assets/gbs.svg)
+![Graph-based-stitching](/help/stitching/assets/gbs.png)
 
 ## IdentityMap
 
@@ -106,7 +138,7 @@ Data beyond the lookback window is not replayed. A profile must be authenticated
 
 Consider the following two identity graph updates over time for visitor A (with persistent ID `246`) and visitor B (with persistent ID `3579`), and how these updates impact the steps in graph-based stitching.
 
-![Identity Graph 3579](assets/identity-graphs.svg)
+![Identity Graph 3579](assets/identity-graphs.png)
 
 You can view an identity graph over time for a specific profile using the [Identity Graph Viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer). See also [Identity Service linking logic](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) to get a better understanding of the logic used when linking identities.
 
@@ -145,9 +177,9 @@ With a replay stitching happening at 2023-05-13 16:30, with a 24-hour lookback w
 |---|---|---|---|---|---|
 | 2 | 2023-05-12 14:00  | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` |  `bob.a@gmail.com` | `bob.a@gmail.com` |
 | 3 | 2023-05-12 15:00  | `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` |  `bob.a@gmail.com` | `bob.a@gmail.com` |
-| ![Replay](/help/assets/icons/Replay.svg) 4 | 2023-05-12 17:00  | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com`|
-| ![Replay](/help/assets/icons/Replay.svg) 5 | 2023-05-12 19:00  | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` |  `ted.w@gmail.com` | `ted.w@gmail.com` |
-| ![Replay](/help/assets/icons/Replay.svg) 6 | 2023-05-13 15:00 |  `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` |  `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![Replay](/help/assets/icons/Replay.svg) 4 | 2023-05-12 17:00  | `3579` | `3579` ![Link](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com`|
+| ![Replay](/help/assets/icons/Replay.svg) 5 | 2023-05-12 19:00  | `3579` | `3579` ![Link](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` |  `ted.w@gmail.com` | `ted.w@gmail.com` |
+| ![Replay](/help/assets/icons/Replay.svg) 6 | 2023-05-13 15:00 |  `246` | `246` ![Link](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` |  `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
 | ![Replay](/help/assets/icons/Replay.svg) 7 |2023-05-13 16:30 |  `246` | `246` ![Branch1](/help/assets/icons/Branch1.svg)`a.b@yahoo.co.uk`<br/>`246` ![Branch1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com`|  `a.b@yahoo.co.uk`  | `a.b@yahoo.co.uk` |
 
 {style="table-layout:auto"}

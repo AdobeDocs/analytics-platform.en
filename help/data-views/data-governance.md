@@ -4,16 +4,51 @@ description: Learn how data labels and policies defined in Adobe Experience Plat
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
+hold: true
+autotag-review: '2026-05-19T08:59:31.818Z'
+TQID: 'https://experienceleague.adobe.com/SoIHLRSx90B4j8EkHWBVt3rVtt-968TN8ocWU2zuYN4'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+subfeature_v2:
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
 ---
-# Labels and policies
+# Labels, policies, and marketing actions
 
 When you create a dataset in Experience Platform, you can create [data usage labels](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/reference) for some or all elements in the dataset. You can view these labels and policies in Customer Journey Analytics. 
 
-The following labels are of special interest to Customer Journey Analytics:
+The following labels and marketing actions are of special interest to Customer Journey Analytics:
 
-* The `C8` label - **[!UICONTROL No measurement]**. This label signifies that data cannot be used for analytics on your organization's websites or apps.
 
-* The `C12` label - **[!UICONTROL No general data export]**. Schema fields labeled this way cannot be exported or downloaded from Customer Journey Analytics (via reporting, export, API, etc.)
+| Label | Marketing action | Definition |
+|---------|----------|---------|
+| `C2` | [!UICONTROL Export to third parties] | The label and associated marketing action signify that data cannot be exported to a third party, if the corresponding DULE policy is enabled. |
+| `C3` | [!UICONTROL Combine with directly identifiable data] | The label and associated marketing action signify that data cannot be combined or otherwise used with directly identifiable information, if the corresponding DULE policy is enabled. |
+| `C8` | [!UICONTROL Analytics] | The label and associated marketing action signify that data cannot be used for analytics on your organization's websites or apps, if the corresponding DULE policy is enabled. |
+| `C9` | [!UICONTROL Data Science] | The label and associated marketing action signify that data cannot be used in data science workflows, if the corresponding DULE policy is enabled. |
+| `C12` | [!UICONTROL Data Export] | The label and associated marketing action signify that schema fields labeled this way cannot be exported or downloaded from Customer Journey Analytics (via reporting, export, API, and so forth), if the corresponding DULE policy is enabled. |
 
 >[!NOTE]
 >
@@ -21,10 +56,17 @@ The following labels are of special interest to Customer Journey Analytics:
 
 Labeling in itself does not mean that these data usage labels are enforced. That's what policies are used for. You can create your policies using the [Experience Platform UI](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/policies/user-guide) or via the [Policy Service API](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/api/overview) in Experience Platform.
 
-Two Adobe-defined policies are available in Experience Platform that can surface in Customer Journey Analytics and affect reporting and data export:
+Five Adobe-defined policies are available in Experience Platform that can surface in Customer Journey Analytics and affect reporting and data export:
 
-* **[!UICONTROL Restrict usage analytics and user based measurement]** policy, using the `C8` label, and
-* **[!UICONTROL Restrict data export]** policy, using the `C12` label.
+
+| Policy | Label |
+|---------|----------|
+| [!UICONTROL Restrict third-party data export] | `C2` |
+| [!UICONTROL Restrict directly identifiable data combination] | `C3` |
+| [!UICONTROL Restrict usage analytics and user based measurement] | `C8` |
+| [!UICONTROL Restrict data science] | `C9` |
+| [!UICONTROL Restrict data export] | `C12` |
+
 
 ## View data labels in Customer Journey Analytics data views
 
@@ -58,7 +100,9 @@ Click **[!UICONTROL Apply]** to see which policies are enabled.
 
 ## How enabled policies affect data views
 
-If one or more policies are turned on with C8 or C12 labels, those schema components that have certain data labels applied cannot be added to data views. 
+If one or more policies are turned on with C3 or C8, those schema components that have certain data labels applied cannot be added to data views. 
+
+If one or more policies are turned on with C9, any schema components labelled with C9 will be unavailable for use with [Analytics MCP servers](https://developer.adobe.com/analytics-mcp/docs/).
 
 These components are grayed out in the left rail [!UICONTROL Schema fields] list:
 

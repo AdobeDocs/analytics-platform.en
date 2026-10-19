@@ -3,6 +3,30 @@ description: Learn about sequential segments that use the THEN operator to defin
 title: Sequential segments
 feature: Filters, Segments
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
+TQID: 'https://experienceleague.adobe.com/TqLnqudV-SrIk7SdMT7dUeNBAwaa5FkoZocUkwrod6g'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 ---
 # Sequential segments
 
@@ -116,7 +140,7 @@ Identify persons that visited one page and then another page within five minutes
 
 ![Sequence within](assets/sequence-within.png)
 
-If a page view for the Home happens on June 1, 2024, at 12:01, then a page view to page Women | Shoes will match as long as that page view occurs before June 15, 2024 12:16.
+If a page view for the Home happens on June 1, 2024, at 12:01, then a page view to page Women | Shoes will match as long as that page view occurs before June 15, 2024 12:06.
 
 ##### [!UICONTROL After] but [!UICONTROL Within] operator
 
@@ -194,7 +218,7 @@ Consider a definition specifying a sequence of a component with criteria identif
 
 #### Example
 
-You have defined three version of a sequential segment for site sections. One with the option ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Include Everyone]**, one with the option ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]**, and one with the option ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]**. You named the three segments accordingly.
+You have defined three versions of a sequential segment for site sections. One with the option ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Include Everyone]**, one with the option ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]**, and one with the option ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]**. You named the three segments accordingly.
 
 ![Sequence segment](assets/site-section-filters.png)
 
@@ -231,7 +255,7 @@ Identify persons who visited one page, did not visited another page, then visite
 
 #### [!UICONTROL Exclude] at start
 
-Identify persons who visited one page without ever going to another page. For example, people that checked out a purchase without ever visited the home page.
+Identify persons who visited one page without ever going to another page. For example, people that checked out a purchase without ever visiting the home page.
 
 ![Sequence exclude start](assets/sequence-exclude-start.png)
 

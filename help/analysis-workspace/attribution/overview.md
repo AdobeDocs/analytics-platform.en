@@ -4,6 +4,38 @@ description: Learn about the concept of attributing credit of a success event to
 feature: Attribution
 role: User, Admin
 exl-id: 47a3523b-d9eb-4272-84b8-090b921cba13
+TQID: 'https://experienceleague.adobe.com/ncY8TuwUb3duwfK3n8u69eyXWUDzI5OMF-AACOoDmIY'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
+  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: c91f8bd2-df97-4c6a-afcd-f1cde8221302
+    internal-label: Attribution
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 # Attribution overview
 
@@ -45,7 +77,8 @@ Attribution comprises the following features:
 ## Videos
 
 
-<!--  Attribution IQ
+<!--  
+Attribution IQ
 
 >[!BEGINSHADEBOX]
 
@@ -55,7 +88,8 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution in F
 
 -->
 
-<!-- Attribution IQ 
+<!-- 
+Attribution IQ 
 >[!BEGINSHADEBOX]
 
 See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution in calculated metrics](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/attribution-iq-in-calculated-metrics){target="_blank"} for a demo video.
@@ -72,7 +106,8 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Using the Attrib
 >[!ENDSHADEBOX]
 
 
-<!-- Attribution IQ
+<!-- 
+Attribution IQ
 
 >[!BEGINSHADEBOX]
 

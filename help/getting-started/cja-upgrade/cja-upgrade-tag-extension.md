@@ -1,10 +1,35 @@
 ---
-title: Create a tag property and add the Web SDK extension
-description: Learn how to create a tag property and add the Web SDK extension
+title: Add the Web SDK extension to your tag
+description: Learn how to add the Web SDK extension to your tag property when upgrading from Adobe Analytics to Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 382d2b00-939a-4fff-be02-7a98d457a455
+autotag-review: '2026-05-19T08:18:58.656Z'
+TQID: 'https://experienceleague.adobe.com/8Wld534ijt7cmJnlbq4cB7tURTb8hch99Z6FIrhzAcQ'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 ---
 # Add the Web SDK extension to your tag {#upgrade-tag-extension}
 
@@ -21,7 +46,7 @@ exl-id: 382d2b00-939a-4fff-be02-7a98d457a455
 
 You can use the Tags feature within Adobe Experience Platform to implement code on your site to collect data. This tag management solution lets you deploy code alongside other tagging requirements. Tags offer seamless integration with Adobe Experience Platform using the Adobe Experience Platform Web SDK extension.
 
-The following information describes how to add the Web SDK extension to your tag. For supplemental information, see the [Configure the Web SDK tag extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) in the Experience Platform documentation. The Web SDK includes the [!UICONTROL Adobe Experience Cloud ID Service] natively, so you do not need to add the ID service extension to your tag.
+The following information describes how to add the Web SDK extension to your tag. For supplemental information, see the [Configure the Web SDK tag extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) in the Experience Platform documentation. The Web SDK includes the Experience Platform Identity Service, so you do not need to add the [!UICONTROL Experience Cloud ID Service] extension to your tag.
 
 After you [create a tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md), you must configure it with the Adobe Experience Platform Web SDK extension. This ensures that you can send data to Adobe Experience Platform (through your datastream).
 

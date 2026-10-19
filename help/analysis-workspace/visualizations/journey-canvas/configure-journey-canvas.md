@@ -4,6 +4,38 @@ title: Configure A Journey Canvas Visualization
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
+TQID: 'https://experienceleague.adobe.com/pC3wjv6Q7RHRfDfHq75CP2Lqd-HzN-s7iLZ9t4N4ZR0'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: aff2ef09-fc60-4018-9197-e2befd623064
+    internal-label: Anomaly detection
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Configure a Journey canvas visualization
 
@@ -47,7 +79,7 @@ See [Journey canvas overview](/help/analysis-workspace/visualizations/journey-ca
 
    | Field | Function |
    |---------|----------|
-   | [!UICONTROL **Journey canvas container**] | Choose the container that you want to focus on throughout the journey. The container that you choose determines the scope of the data captured in the journey. This affects the statistics that are displayed in the visualization. (If your container names differ from the default names shown below, they were customized in your data view.)<ul><li>**Session:** Constrains the statistics of the visualization to fall within a single defined session for a given person. This means that the numbers and percentages that appear on each node (that are based on the primary and secondary metrics) must occur within a single session for each person. In other words, one person can be represented multiple times in a single journey.<p>This container uses the Sessions metric.</p></li><li>**Person:** (Default) Allows the statistics of the visualization to span multiple sessions for a given person. This means that the numbers and percentages that appear on each node (that are based on the primary and secondary metrics) can occur across any number of sessions, as long as the sessions belong to the same person. In other words, one person can be represented only one time in a single journey.<p>This container uses the People metric.</p></li></ul> |
+   | [!UICONTROL **Journey canvas container**] | Select the container that you want to focus on throughout the journey. The container that you choose determines the scope of the data captured in the journey. This affects the statistics that are displayed in the visualization. (If your container names differ from the default names shown below, they were customized in your data view.)<ul><li>**Session:** Constrains the statistics of the visualization to fall within a single defined session for a given person. This means that the numbers and percentages that appear on each node (that are based on the primary and secondary metrics) must occur within a single session for each person. In other words, one person can be represented multiple times in a single journey.<p>This container uses the Sessions metric.</p></li><li>**Person:** (Default) Allows the statistics of the visualization to span multiple sessions for a given person. This means that the numbers and percentages that appear on each node (that are based on the primary and secondary metrics) can occur across any number of sessions, as long as the sessions belong to the same person. In other words, one person can be represented only one time in a single journey.<p>This container uses the People metric.</p></li></ul> |
 
 1. Select [!UICONTROL **Build**].
 
@@ -63,6 +95,60 @@ See [Journey canvas overview](/help/analysis-workspace/visualizations/journey-ca
 
 
 ## Configure visualization settings
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_percentage_value"
+>title="Percentage value"
+>abstract="The percentages shown on each node are based on the primary and secondary metrics you configure. You can choose whether the percentages relate to the start node, the previous node, or all data in the report suite."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_arrow_settings"
+>title="Arrow settings"
+>abstract="Choose whether to show or hide labels on the canvas. Labels are custom names created within Journey canvas."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_arrow_settings_ajo"
+>title="Arrow settings"
+>abstract="Choose whether to show or hide labels and values on the canvas. Labels can be custom names created within Journey canvas, or they can be labels or conditions that were created in Journey Optimizer. Values are numbers and percentages that indicate the people or sessions that moved from one node to the next on the journey. "
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_show_fallout"
+>title="Show fallout"
+>abstract="Fallout data shows the percentage and number of people or sessions on each node of the journey who never arrived at the next node of the journey. They might have performed other actions on the site, but they never met the criteria defined by the next node in the journey.<br/>Fallout data shows either people or sessions (regardless of the primary metric you chose), and it is based on the Journey canvas container setting."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_compare"
+>title="Compare to"
+>abstract="The date range used to compare current journey data against a prior period. When you select a comparison date range, each node, arrow, and fallout in the journey shows the percent change between the current date range and the selected comparison date range, based on the primary metric."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_compare_percentages"
+>title="Compare percentages"
+>abstract="Compares the percent change on each node, arrow, and fallout in the journey between the current date range and the selected comparison date range, based on the primary metric. When this option is disabled, the raw value percentage is displayed rather than the percent change."
+
+<!-- markdownlint-enable MD034 -->
 
 Various configuration options are available in the Journey canvas header. 
 
@@ -80,8 +166,9 @@ To configure settings for the Journey canvas visualization:
    |---------|----------|
    | [!UICONTROL **Percentage value**] | The percentage value shown on each node in the journey.<p>![percentage value](assets/journey-canvas-percentage.png)</p> <p>Consider the following when configuring the percentage values shown on nodes in the journey:</p><ul><li>A percentage is shown on each node for the primary metric. A percentage is also shown for the secondary metric if one is configured. (For more information about the primary and secondary metric settings, see [Begin building a Journey canvas visualization](#begin-building-a-journey-canvas-visualization).)</li><li>Percentages include all people or sessions that are included in the data view within the panel's date range. Whether _people_ or _sessions_ is used depends on the container setting. (For more information about the container setting, see [Begin building a Journey canvas visualization](#begin-building-a-journey-canvas-visualization).)</li></ul> <p>Choose from the following options:</p> <ul><li>[!UICONTROL **Percent of start node**]: Calculates the percentages shown on each node in relation to the start node. Percentages are based on the primary and secondary metric that you selected. <p>A _start node_ is a node that has no connected nodes preceding it.</p><p>A journey can contain multiple start nodes. However, [!UICONTROL **Percent of total**] is used if the journey contains 2 or more start nodes that lead to a common node. If you want to use [!UICONTROL **Percent of start node**], update the journey so that each node in the journey can be traced back to a single start node.</p></li><li>[!UICONTROL **Percent of previous node**]: Calculates the percentages shown on each node in relation to the previous node. Percentages are based on the primary and secondary metric that you selected.</li><li>[!UICONTROL **Percent of total**]: Calculates the percentages shown on each node in relation to all data in the data view. Percentages are based on the primary and secondary metric that you selected.</li></ul> |
    | [!UICONTROL **Arrow settings**] | The arrows that appear between nodes in Journey canvas can be configured to show custom labels and values. <p>![arrow settings](assets/journey-canvas-arrow-settings.png)</p><p>_Labels_ are custom names that appear on arrows. Only a single label is shown on a given arrow. Labels can be any of the following, and are shown in this order of preference:</p><ol><li>A custom name added from Journey canvas (as described in [Add or update a label on an arrow](#add-or-update-a-label-on-an-arrow))</li><li>A Journey Optimizer label</li><li>A Journey Optimizer condition</li></ol><p>_Values_ are the numbers and percentages that appear on arrows, and they indicate the people or sessions who moved from one node to the next node in the journey. (In other words, those who did not fall out of the journey at a given step.) </p><p>The following options are available for journeys that did not originate from Journey Optimizer and for Journey Optimizer journeys that have not been significantly modified in Journey canvas: (Significant modifications include adding or removing nodes, adding or removing arrows, or changing the components of a node.)</p><ul><li>[!UICONTROL **No labels**]: No labels are shown on arrows in the journey. </br> This option is available only if the journey has been modified in </li><li>[!UICONTROL **Labels only**]: Labels are shown on arrows in the journey.</li></ul><p>The following options are available for Journey Optimizer journeys that have been significantly modified in Journey canvas: (Significant modifications include adding or removing nodes, adding or removing arrows, or changing the components of a node.)(**Note**: These options display only when Journey Optimizer data is detected in the same data view that is selected in the Analysis Workspace panel where you are adding the visualization. For information about changing the data view on a panel in Analysis Workspace, see [Analysis Workspace overview](/help/analysis-workspace/home.md).)</p><ul><li>[!UICONTROL **No labels or values**]: No labels or values are shown on arrows in the journey.</li><li>[!UICONTROL **Labels only**]: Only labels are shown on arrows in the journey. Values are not shown.</li><li>[!UICONTROL **Values only**]: Only values are shown on arrows in the journey. Labels are not shown.</li><li>[!UICONTROL **Values and labels**]: Both labels and values are shown on arrows in the journey.</li></ul>  |
+   | [!UICONTROL **Compare to**] | The date range used to compare current journey data against a prior period. You can choose any of the following date ranges for comparison:<ul><li>**[!UICONTROL Previous month]**</li><li>**[!UICONTROL Same month last year]**</li><li>**[!UICONTROL 4 weeks prior]**</li><li>**[!UICONTROL 52 weeks prior]**</li><li>**[!UICONTROL Custom date range]**</li></ul><p>When you select a comparison date range, each node, arrow, and fallout in the journey shows the percent change between the current date range and the selected comparison date range, based on the primary metric. This lets you identify whether your journey is performing better or worse compared to a previous time period.</p> |
    | [!UICONTROL **Show fallout**] | Fallout data shows a percentage and number falling out of each node of the journey. Fallout data is based on the metric associated with the journey's container settings; it is not based on the primary or secondary metric. <p>![fallout](assets/journey-canvas-fallout.png)</p><p>By default, the container is _Person_, so the metric used for fallout data is _People_. If the container is changed to _Session_, the metric used for fallout data is _Sessions_, and so on.</p><p>For example, with _Person_ as the container setting, fallout shows the percentage and number of people on each node of the journey who never arrived at any of the immediate next nodes. They might have performed other actions on the site, but they did not meet the criteria defined by any of the nodes that immediately follow.</p> <p>For more information about the Journey canvas container setting, see [Begin building a Journey canvas visualization](#begin-building-a-journey-canvas-visualization). |
-   | **Zoom controls** | The following zoom controls are available in the upper-right corner of the canvas:<ul><li>**Zoom in** ![zoom in icon](assets/zoom-in-icon.png): Enlarges specific areas of the visualization.<p>You can also use mouse controls, such as pinching on a trackpad.</p></li><li>**Zoom out** ![zoom out icon](assets/zoom-out-icon.png): Shrinks the visualization to allow more room on the canvas.<p>You can also use mouse controls, such as pinching on a trackpad.</p></li><li>**Fit screen** ![fit screen icon](assets/fill-screen-icon.png): Adjusts current zoom and pan settings to fill the screen with the full visualization.</li></ul><p>To pan across the canvas after zooming in or out, click your mouse and drag to the desired location.</p> |
+   | **Controls** | The following controls are available in the upper-right corner of the canvas:<ul><li>**Fit screen** ![fit screen icon](assets/fill-screen-icon.png): Adjusts current zoom and pan settings to fill the screen with the full visualization.</li><li>**Organize** ![organize icon](assets/organize.svg): Rearranges nodes to minimize crossing arrows and to optimize spacing, based on node connections. </li><li>**Zoom in** ![zoom in icon](assets/zoom-in-icon.png): Enlarges specific areas of the visualization.<p>You can also use mouse controls, such as pinching on a trackpad.</li><li>**Zoom out** ![zoom out icon](assets/zoom-out-icon.png): Shrinks the visualization to allow more room on the canvas.<p>You can also use mouse controls, such as pinching on a trackpad.</p></li></ul><p>To pan across the canvas after zooming in or out, click your mouse and drag to the desired location.</p> |
 
 1. Continue with [Add nodes](#add-nodes). 
 
@@ -104,23 +191,23 @@ You create nodes in the following ways: by dragging Workspace components from th
    |  Component type | Placement of component | Visualization updates after node is added |
    |---------|----------|----------|
    | Metric | Blank area of the canvas | The node displays where the component was dropped, unconnected with any existing nodes. |
-   | Metric | An existing node | The component is automatically combined with the existing node. (See [Combine nodes](#combine-nodes) for more information.)</p> |
-   | Metric | An arrow between 2 existing nodes | The node displays between the two existing nodes where the component was dropped and is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p> |
-   | Dimension | Blank area of the canvas | 3 nodes are created for the top 3 dimension items where the component was dropped, unconnected with any existing nodes. (**Note:** If only 1 or 2 nodes display, it means that data is available for only 1 or 2 of the dimension items. If no nodes display, it means that data is not available for any of the dimension items. In this case, try adding it to a different point of the journey, adjust the visualization's date range, or choose a different dimension.)<p>Hold the Shift key when you drop the dimension onto the canvas to add it as a single node with 3 dimension items.</p><p></p> |
+   | Metric | An existing node | The component is automatically combined with the existing node. (See [Combine nodes](#combine-nodes) for more information.) |
+   | Metric | An arrow between 2 existing nodes | The node displays between the two existing nodes where the component was dropped and is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.) |
+   | Dimension | Blank area of the canvas | 3 nodes are created for the top 3 dimension items where the component was dropped, unconnected with any existing nodes. (**Note:** If only 1 or 2 nodes display, it means that data is available for only 1 or 2 of the dimension items. If no nodes display, it means that data is not available for any of the dimension items. In this case, try adding it to a different point of the journey, adjust the visualization's date range, or choose a different dimension.)<p>Hold the Shift key when you drop the dimension onto the canvas to add it as a single node with 3 dimension items.</p>|
    | Dimension | An existing node | A breakdown is automatically applied to the node with the top 5 dimension items displayed.<!--what happens if you hold Shift?--><p>To view the breakdown in a new freeform table visualization, select the [!UICONTROL **Open in a freeform table**] link on the node.</p> |
    | Dimension | An arrow that connects 2 existing nodes | 3 nodes are created for the top 3 dimension items that follow the first event after the first node (of people/sessions who eventually reach the second node). The nodes display between the two existing nodes where the component was dropped and each node is connected to both existing nodes. (**Note:** If only 1 or 2 nodes display, it means that data is available for only 1 or 2 of the dimension items. If no nodes display, it means that data is not available for any of the dimension items. In this case, try adding it to a different point of the journey, adjust the visualization's date range, or choose a different dimension.)<p>Hold the Shift key when you drop the dimension onto the canvas to add it as a single node with 3 dimension items. (See [Connect nodes](#connect-nodes) for more information.)</p> |
    | Dimension item | Blank area of the canvas | The node displays where the component was dropped, unconnected with any existing nodes. |
    | Dimension item | An existing node | The component is automatically combined with the existing node. |
-   | Dimension item | An arrow that connects 2 existing nodes | The node displays between the two existing nodes where the component was dropped and is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p> |
+   | Dimension item | An arrow that connects 2 existing nodes | The node displays between the two existing nodes where the component was dropped and is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.) |
    | Segment | Blank area of the canvas  | The node displays where the component was dropped unconnected with any other nodes.<p>The number and percentage that appear on the node include the total of the primary metric, segmented by the segment you selected.</p> <p>For example, if People is selected as the primary metric for the journey, then adding a segment of Today to a blank area of the canvas shows all the people who had an event today.</p> |
    | Segment | An existing node | Applies the segment to the existing node. |
-   | Segment | An arrow that connects 2 nodes | The node displays between the two existing nodes where the component was dropped and is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p><p>Applies the segment to the point on the path where the component was dropped.</p> |
+   | Segment | An arrow that connects 2 nodes | The node displays between the two existing nodes where the component was dropped and is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)<p>Applies the segment to the point on the path where the component was dropped.</p> |
    | Date range | Blank area of the canvas | The node displays where the component was dropped, unconnected with any other nodes.<p>The number and percentage that appear on the node include the total of the primary metric, segmented by the date range you selected.</p> <p>For example, if People is selected as the primary metric for the journey, then adding a date range of This month to a blank area of the canvas shows all the people who had an event during the current month.</p> |
    | Date range | An existing node | Applies the date range to the existing node. |
-   | Date range | An arrow that connects 2 nodes | The node displays between the two existing nodes where the component was dropped and is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p><p>Applies the date range to the point on the path where the component was dropped.</p> |
+   | Date range | An arrow that connects 2 nodes | The node displays between the two existing nodes where the component was dropped and is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)<p>Applies the date range to the point on the path where the component was dropped.</p> |
    | Multiple components | A blank area of the canvas | **If none of the components are dimensions:**<p>Each component displays as a separate node where the components were dropped, unconnected with any existing nodes.</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node. </p><p>**If any of the components you are adding are dimensions:**</p><p>Each component displays as a separate node where the components were dropped, unconnected with any existing nodes.</p><p>Only one dimension can be added at a time. When the dimension is added, 3 nodes are created for the top 3 dimension items where the component was dropped.</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node. The top 3 dimension items are combined with each node. (See [Combine nodes](#combine-nodes) for more information.)</p> |
    | Multiple components | An existing node | All components are combined with the existing node.<p>If any of the components you are adding are dimensions, then the top 3 dimension items are combined with the node.</p> <p>Only one dimension can be added at a time.</p> |
-   | Multiple components | An arrow that connects 2 existing nodes | **If none of the components are dimensions:**<p>Each component displays as a separate node where the components were dropped and each node is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node. (Components must be of the same type to be combined into a single node.) (See [Combine nodes](#combine-nodes) for more information.)</p><p>**If any of the components you are adding are dimensions:**</p><p>Each component displays as a separate node where the components were dropped and each node is connected to both existing nodes.</p><p>Only one dimension can be added at a time. When the dimension is added, 3 nodes are created for the dimension's top 3 items that follow the first event after the first node (of people or sessions who eventually reach the second node). Each node is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node. The top 3 dimension items are combined with each node, and each node is connected to both existing nodes. (See [Combine nodes](#combine-nodes) for more information.)</p>|
+   | Multiple components | An arrow that connects 2 existing nodes | **If none of the components are dimensions:**<p>Each component displays as a separate node where the components were dropped and each node is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)<p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node. (Components must be of the same type to be combined into a single node.) (See [Combine nodes](#combine-nodes) for more information.)</p><p>**If any of the components you are adding are dimensions:**</p><p>Each component displays as a separate node where the components were dropped and each node is connected to both existing nodes.</p><p>Only one dimension can be added at a time. When the dimension is added, 3 nodes are created for the dimension's top 3 items that follow the first event after the first node (of people or sessions who eventually reach the second node). Each node is connected to both existing nodes. (See [Connect nodes](#connect-nodes) for more information.)</p><p>Hold the Shift key when you drop the components onto the canvas to add them as one combined node. The top 3 dimension items are combined with each node, and each node is connected to both existing nodes. (See [Combine nodes](#combine-nodes) for more information.)</p>|
 
    Nodes display as a rectangular box with the following information:
 
@@ -140,7 +227,7 @@ You create nodes in the following ways: by dragging Workspace components from th
 
 ### Show the top nodes based on existing nodes
 
-You can automatically show the top immediate nodes based on the nodes that are already on the canvas. You can add the top nodes to Journey canvas or view them in a freeform table.
+You can automatically show the top immediate or eventual nodes based on the nodes that are already on the canvas. You can add the top nodes to Journey canvas or view them in a freeform table.
 
 Journey canvas uses the primary metric when determining which nodes to show.
 
@@ -152,13 +239,19 @@ This option is available for the following objects on the canvas:
 
 #### Show top nodes after an existing node
 
-You can select a node and show the top dimension items that come immediately after it in the journey. You can add the top 3 dimension items to Journey canvas as separate nodes, or you can view all top dimension items in a freeform table.
+You can select a node and show the top immediate or eventual dimension items that come after it in the journey. You can add the top 3 dimension items to Journey canvas as separate nodes, or you can view all top dimension items in a freeform table.
 
 1. Right-click the node where you want to show the top dimension items that come after it in the journey.
 
    The node cannot have any existing nodes going out of it in the journey.
 
 1. Select [!UICONTROL **Show top nodes after this node**].
+
+1. Select whether to show the dimension items that come immediately or eventually after the selected node:
+
+   * [!UICONTROL **Immediately after**]: Shows the top dimension items that come directly after the selected node. Use this when you want to know what occurred immediately after a given step in the journey. For example, you can see which page people visit immediately after visiting a given product page.
+
+   * [!UICONTROL **Eventually after**]: Shows the top dimension items that come after the selected node at any point in the journey, not necessarily the very next step. Use this when the selected node is the key event in your analysis and you want to see what people do at any point afterward. For example, after a purchase, you can see the top pages people eventually tend to visit at any later point in the journey.
 
 1. Select where you want to show the dimension items: 
 
@@ -172,13 +265,19 @@ You can select a node and show the top dimension items that come immediately aft
 
 #### Show top nodes before an existing node
 
-You can select a node and show the top dimension items that come immediately before it in the journey. You can add the top 3 dimension items to Journey canvas as separate nodes, or you can view all top dimension items in a freeform table.
+You can select a node and show the top immediate or eventual dimension items that come before it in the journey. You can add the top 3 dimension items to Journey canvas as separate nodes, or you can view all top dimension items in a freeform table.
 
 1. Right-click the node where you want to show the top dimension items that come before it in the journey.
 
    This node cannot have any existing nodes coming into it in the journey.
 
 1. Select [!UICONTROL **Show top nodes before this node**].
+
+1. Select whether to show dimension items that come immediately or eventually before the selected node:
+
+   * [!UICONTROL **Immediately before**]: Shows the top dimension items that come directly before the selected node. Use this when you want to know what occurred immediately before a given step in the journey. For example, you can see which page people visit immediately before visiting a given product page.
+
+   * [!UICONTROL **Eventually before**]: Shows the top dimension items that come before the selected node at any point in the journey, not necessarily the very previous step. Use this when the selected node is the key event in your analysis and you want to see what people did at any point leading up to it. For example, before a purchase, you can see the top pages people had visited at any earlier point in the journey.
 
 1. Select where you want to show the dimension items: 
 
@@ -252,7 +351,9 @@ You can do any of the following to combine nodes in Journey canvas:
 
 * From the left rail, drag multiple components simultaneously onto a blank area of the canvas while holding the Shift key.
 
-<!-- * On the canvas, select the nodes that you want to combine, right-click one of the selected nodes, then select **Combine**. Is there a limit on how many you can combine? -->
+* On the canvas, select the nodes that you want to combine, right-click one of the selected nodes, then select [!UICONTROL **Combine nodes**].
+
+  To select multiple nodes, hold Command (on Mac) or Ctrl (on Windows).
 
 #### Logic when combining nodes
 
@@ -260,7 +361,7 @@ The logic that is applied to nodes when they are combined differs depending on w
 
 >[!TIP]
 >
->You can view the logic of a combined node by right-clicking the node, then selecting [!UICONTROL **Create segment from node**]. The logic is shown in the [!UICONTROL **Definition**] section.
+>You can view the logic of a combined node by selecting the information icon or the drop-down arrow on the node.
 
 
 | Component types to combine | Logic (operator) used |
@@ -272,6 +373,12 @@ The logic that is applied to nodes when they are combined differs depending on w
 | Dimension + Metric, Date range, or Segment | Joined with AND |
 | Date range + Metric, Segment, or Dimension | Joined with AND |
 | Segment + Metric, Date range, or Dimension | Joined with AND |
+
+#### Separate components from combined nodes
+
+You can split the components that are included in a combined node into their own separate nodes:
+
+1. Right-click the node that you want to split, then select [!UICONTROL **Separate components into nodes**].
 
 ### Connect nodes
 
@@ -288,6 +395,8 @@ Nodes are connected by an arrow. Both the arrow direction and width have signifi
 * **Width**: Indicates percentage volume from one node to another
 
   ![Arrow direction and width](assets/journey-canvas-arrow-width.png)
+
+When a Journey Optimizer journey contains multiple paths between the same two nodes (for example, different conditions that lead to the same next step), each path appears as a separate arrow.
 
 #### Logic when connecting nodes
 
@@ -430,6 +539,8 @@ The option to apply a breakdown to your data is available for the following obje
 
 * Multiple arrows between nodes
 
+* Fallout data (when fallout is shown on a node)
+
 Consider the following when applying a breakdown:
 
 * Breakdowns are applied to the primary metric. The secondary metric is not affected.
@@ -440,19 +551,21 @@ Consider the following when applying a breakdown:
 
 * Breakdown data is updated if changes are made at an earlier point in the journey.
 
-#### Apply a breakdown to one or more nodes or arrows
+#### Apply a breakdown to nodes, arrows, or fallout data
 
-1. In a Journey canvas visualization, select one or more nodes where you want to apply a breakdown, then right-click one of the selected nodes.
+1. In a Journey canvas visualization, do any of the following:
 
-   Or
+   * Right-click the fallout that is coming off a node (when fallout is shown) for which you want to apply a breakdown.
+   
+   * Select one or more nodes for which you want to apply a breakdown, then right-click one of the selected nodes.
 
-   In a Journey canvas visualization, select one or more arrows between 2 nodes where you want to apply the breakdown, then right-click one of the selected arrows.
+   * Select one or more arrows between 2 nodes for which you want to apply a breakdown, then right-click one of the selected arrows.
 
-   To select multiple nodes or arrows, hold Command (on Mac) or Ctrl (on Windows).
+     To select multiple nodes or arrows, hold Command (on Mac) or Ctrl (on Windows).
 
 1. Select [!UICONTROL **Breakdown**].
 
-1. Choose where you want to view the breakdown:
+1. Select where you want to view the breakdown:
 
    * [!UICONTROL **In Journey canvas**]
 
@@ -490,17 +603,21 @@ The option to create an audience is available for the following objects on the c
 
 * Multiple arrows between nodes 
 
+* Fallout data (when fallout is shown on a node)
+
 When you create an audience from multiple nodes or arrows, they are joined with the OR operator.
 
 To create an audience:
 
-1. In a Journey canvas visualization, select one or more nodes where you want to create an audience, then right-click one of the selected nodes.
+1. In a Journey canvas visualization, do any of the following:
 
-   Or
+   * Right-click the fallout that is coming off a node (when fallout is shown) for which you want to create an audience.
+   
+   * Select one or more nodes for which you want to create an audience, then right-click one of the selected nodes.
 
-   In a Journey canvas visualization, select one or more arrows between 2 nodes where you want to create an audience, then right-click one of the selected arrows.
+   * Select one or more arrows between 2 nodes for which you want to create an audience, then right-click one of the selected arrows.
 
-   To select multiple nodes or arrows, hold Command (on Mac) or Ctrl (on Windows).
+     To select multiple nodes or arrows, hold Command (on Mac) or Ctrl (on Windows).
 
    >[!NOTE]
    >
@@ -524,21 +641,33 @@ The option to trend is available for the following objects on the canvas:
 
 * Multiple arrows between nodes
 
+* Fallout data (when fallout is shown on a node)
+
 To view trend data:
 
-1. In a Journey canvas visualization, select one or more nodes for which you want to view trend data, then right-click one of the selected nodes.
+1. In a Journey canvas visualization, do any of the following:
 
-   Or
+   * Right-click the fallout that is coming off a node (when fallout is shown) for which you want to view trend data.
+   
+   * Select one or more nodes for which you want to view trend data, then right-click one of the selected nodes.
 
-   In a Journey canvas visualization, select one or more arrows between 2 nodes for which you want to view trend data, then right-click one of the selected arrows.
+   * Select one or more arrows between 2 nodes for which you want to view trend data, then right-click one of the selected arrows.
 
-   To select multiple nodes or arrows, hold Command (on Mac) or Ctrl (on Windows).
+     To select multiple nodes or arrows, hold Command (on Mac) or Ctrl (on Windows).
 
 1. Select [!UICONTROL **Trend**].
 
-### Create a segment based on a node or arrow
+### Create a segment based on a node, arrow, or fallout data
 
-You can create a new segment based on a node or arrow within a journey. After the segment is created, you can use it anywhere in Analysis Workspace. 
+The option to create a segment is available for the following objects on the canvas:
+
+* Individual nodes
+
+* The arrows between nodes
+
+* Fallout data (when fallout is shown on a node)
+
+After the segment is created, you can use it anywhere in Analysis Workspace. 
 
 Segments created from Journey canvas use [sequential segmenting](/help/components/segments/seg-sequential-build.md). This means that the segment uses the THEN operator to link together the sequence of events (the journey) that people flowed through, leading up to the selected node or arrow. All events that match the selected node or arrow are included in the segment.
 
@@ -546,11 +675,11 @@ If you create a segment based on a node that has multiple paths flowing into it,
 
 To create a segment:
 
-1. In a Journey canvas visualization, right-click the node or arrow that you want to use to create the segment.
+1. In a Journey canvas visualization, right-click the node, arrow, or fallout data that you want to use to create the segment.
 
-1. Select [!UICONTROL **Create segment from node**] or [!UICONTROL **Create segment from arrow**].
+1. Select [!UICONTROL **Create segment from node**], [!UICONTROL **Create segment from arrow**], or [!UICONTROL **Create segment from fallout**].
 
-   The Segment builder displays. In the [!UICONTROL **Definition**] section, the segment definition is created based on the node or arrow you selected and its context within the journey. 
+   The Segment builder displays. In the [!UICONTROL **Definition**] section, the segment definition is created based on the node, arrow, or fallout you selected and its context within the journey. 
 
 1. Specify a title for the segment and make any other changes. For more information about creating a segment, see [Segment builder](/help/components/segments/seg-builder.md).
 
@@ -565,6 +694,54 @@ To delete nodes in Journey canvas:
 1. In a Journey canvas visualization, select one or more nodes that you want to delete, then right-click one of the selected nodes.
 
 1. Select [!UICONTROL **Delete**].
+
+### Exclude nodes
+
+When you exclude a node from a journey, the journey data is updated to exclude journeys that went through that node. The segment definition for the journey is also updated to exclude journeys that went through that node.
+
+To exclude a node from a journey:
+
+1. In a Journey canvas visualization, right-click the node that you want to exclude.
+
+1. Select [!UICONTROL **Exclude from journey**].
+
+To re-include an excluded node in the journey:
+
+1. In a Journey canvas visualization, right-click the excluded node.
+
+1. Select [!UICONTROL **Remove journey exclusion**].
+
+### Change the shape and style of arrows between nodes
+
+You can change the curvature and style of arrows between nodes in a journey.
+
+#### Change the curvature of an arrow
+
+To change the curvature of an arrow in Journey canvas:
+
+1. In a Journey canvas visualization, drag an arrow between two nodes.
+
+To reset an arrow back to its default position:
+
+1. Right-click the arrow you want to reset.
+
+1. Select [!UICONTROL **Reset arrow position**].
+
+   If multiple arrows exist between the same two nodes, all arrows between those nodes reset to their default positions.
+
+#### Change the style of an arrow
+
+To change the style of an arrow in Journey canvas:
+
+1. In a Journey canvas visualization, right-click the arrow between the two nodes whose style you want to change.
+
+1. Select [!UICONTROL **Change arrow style**], then select one of the following styles:
+
+   * [!UICONTROL **Solid**]
+   * [!UICONTROL **Dashed**]
+   * [!UICONTROL **Dotted**]
+   * [!UICONTROL **Dash-dot**]
+   * [!UICONTROL **Animated**]
 
 ### Delete arrows between nodes
 

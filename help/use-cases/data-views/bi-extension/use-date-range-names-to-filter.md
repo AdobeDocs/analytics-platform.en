@@ -5,6 +5,27 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: a10818ec-a25c-4e4e-a551-14ff501750fa
+autotag-review: '2026-05-19T09:40:38.657Z'
+TQID: 'https://experienceleague.adobe.com/98raijZwviVsIrYb7S5y8BYfOZf4-yKKSANeSRfpmM0'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+subfeature_v2:
+  - id: f24857a4-4b64-4b25-b237-d43026362144
+    internal-label: BI extension
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
 ---
 # Use date range names to filter
 
@@ -133,7 +154,7 @@ You should see a visualization and table similar as shown below.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk. Ensure you use the appropriate date range name. For example, `Last Year 2023`.
+1. Enter the following code block in a new chunk. Ensure you use the appropriate date range name. For example, `Last Year 2023`.
 
    ```R
    ## Monthly Events for Last Year
@@ -156,3 +177,4 @@ You should see a visualization and table similar as shown below.
 >[!ENDTABS]
 
 +++
+

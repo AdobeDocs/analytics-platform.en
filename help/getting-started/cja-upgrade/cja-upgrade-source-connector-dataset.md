@@ -5,6 +5,33 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
+autotag-review: '2026-05-19T08:17:07.805Z'
+TQID: 'https://experienceleague.adobe.com/ZApVB2SBLls5HAfUSb32CZ6-jers0cVaQjCXX9ThODo'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
 # Add the Analytics source connector dataset to the connection {#upgrade-source-connector-dataset}
 
@@ -84,7 +111,7 @@ To add the automatically created dataset to the same connection that you created
 
 1. In the **[!UICONTROL Dataset backfill]** section, select **[!UICONTROL Request backfill]**. 
 
-1. Define the period that you want the connection backfill into Customer Journey Analytics to include by entering the start and end dates or by selecting the the calendar icon ![Calendar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).
+1. Define the period that you want the connection backfill into Customer Journey Analytics to include by entering the start and end dates or by selecting the calendar icon ![Calendar](/help/assets/icons/Calendar.svg).
 
    Be explicit when specifying the dates you request for backfill. Depending on several factors, you might want to do any of the following:
    

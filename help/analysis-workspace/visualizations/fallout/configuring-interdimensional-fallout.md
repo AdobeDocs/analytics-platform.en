@@ -4,6 +4,21 @@ title: Inter-Dimensional Fallout
 feature: Visualizations
 exl-id: 7975324c-4efc-4c36-bc83-dcde85d2febc
 role: User
+TQID: 'https://experienceleague.adobe.com/bfanNzUIgz1FKpupAkdgjvkCNMIz0hyaN-CQm6Jj528'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Inter-dimensional fallout
 

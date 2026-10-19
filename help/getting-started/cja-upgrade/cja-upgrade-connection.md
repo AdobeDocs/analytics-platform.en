@@ -1,10 +1,43 @@
 ---
-title: Create a schema for Customer Journey Analytics
-description: Learn about the recommended path when upgrading from Adobe Analytics to Customer Journey Analytics
+title: Create and configure a connection to use with Customer Journey Analytics
+description: Learn how to create a Customer Journey Analytics connection and add your Experience Platform datasets when upgrading from Adobe Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 22d3e7b8-4a4d-48a8-a98d-5172a9876286
+autotag-review: '2026-05-19T08:11:11.280Z'
+TQID: 'https://experienceleague.adobe.com/TdqRBcrblZcqymz0q0ed1-GtG5co4y02S08ea1A52sU'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Create and configure a connection to use with Customer Journey Analytics {#upgrade-create-connection}
 
@@ -69,7 +102,7 @@ You can add an Experience Platform dataset when you create a connection.
    
    | Column | Description |
    |---|---|
-   | Dataset | Name of the dataset. Select the name to direct you to the dataset in Experience Platform. Select ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) to display a popup with more details for the dataset. You can select **[!UICONTROL Edit in Platform]** to edit the dataset directly in Experience Platform. |
+   | Dataset | Name of the dataset. Select the name to direct you to the dataset in Experience Platform. Select ![Info](/help/assets/icons/InfoOutline.svg) to display a popup with more details for the dataset. You can select **[!UICONTROL Edit in Platform]** to edit the dataset directly in Experience Platform. |
    | Dataset type | The type of dataset: Event, Profile, Lookup, or Summary. |
    | Number of records | The total records in the previous month for the dataset in Experience Platform. |
    | Schema | The schema for the dataset. Select the name to direct you to the schema in Experience Platform. |
@@ -79,10 +112,10 @@ You can add an Experience Platform dataset when you create a connection.
 
    
 1. Select one or more datasets and select **[!UICONTROL Next]**. At least one event dataset must be part of the connection.
-   * To change the columns displayed for the list of datasets, select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) and select the columns to be displayed in the [!UICONTROL Customize table] dialog.
-   * To search for a specific dataset, use the ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) search field.
-   * To toggle between showing or hiding the selected datasets, select ![Select](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL Hide selected]** or **[!UICONTROL Show selected]**.
-   * To remove a dataset from the list of selected datasets, use ![Close](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). To remove all selected datasets, select **[!UICONTROL Clear all]**.
+   * To change the columns displayed for the list of datasets, select ![Column settings](/help/assets/icons/ColumnSetting.svg) and select the columns to be displayed in the [!UICONTROL Customize table] dialog.
+   * To search for a specific dataset, use the ![Search](/help/assets/icons/Search.svg) search field.
+   * To toggle between showing or hiding the selected datasets, select ![Select](/help/assets/icons/SelectBoxAll.svg) **[!UICONTROL Hide selected]** or **[!UICONTROL Show selected]**.
+   * To remove a dataset from the list of selected datasets, use ![Close](/help/assets/icons/Close.svg). To remove all selected datasets, select **[!UICONTROL Clear all]**.
 
     
 
@@ -100,7 +133,7 @@ You can add an Experience Platform dataset when you create a connection.
     | **[!UICONTROL Timezone]** | Only available for summary data. Select the appropriate timezone for the time-series summary data. |
     | **[!UICONTROL Data source type]** | Select a type of data source. <br/>Types of data sources include: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>This field is used to survey the types of data sources in use. |
     | **[!UICONTROL Import new data]** | Enable this option if you want to establish an ongoing connection. With an ongoing connection new data batches that are added to the datasets are available automatically in Workspace. |
-    | **[!UICONTROL Dataset backfill]** | Enable **[!UICONTROL Backfill all existing data]** to ensure that all existing data is backfilled.<br/><br/>Select **[!UICONTROL Request backfill]** to backfill historical data for a specific period. You can define up to 10 dataset backfill periods.<ol><li>Define the period by entering start and end data or selecting dates using ![Calendar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).</li><li>Select **[!UICONTROL Queue backfill]** to add the backfill to the list, or **[!UICONTROL Cancel]** to cancel.</li></ol>For each entry, select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) to edit the period, or select ![Delete](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) to delete the entry.<br/><br/>On backfills:<ul><li>You can backfill each dataset individually.</li><li>You prioritize new data added to a dataset in the connection, so this new data has the lowest latency.</li><li>Any backfill (historical) data is imported at a slower rate. The amount of historical data influences the latency.</li><li>The Analytics source connector imports up to 13 months of data (irrespective of size) for production sandboxes. The backfill in non-production sandboxes is limited to 3 months.</li></ul> |
+    | **[!UICONTROL Dataset backfill]** | Enable **[!UICONTROL Backfill all existing data]** to ensure that all existing data is backfilled.<br/><br/>Select **[!UICONTROL Request backfill]** to backfill historical data for a specific period. You can define up to 10 dataset backfill periods.<ol><li>Define the period by entering start and end data or selecting dates using ![Calendar](/help/assets/icons/Calendar.svg).</li><li>Select **[!UICONTROL Queue backfill]** to add the backfill to the list, or **[!UICONTROL Cancel]** to cancel.</li></ol>For each entry, select ![Edit](/help/assets/icons/Edit.svg) to edit the period, or select ![Delete](/help/assets/icons/Close.svg) to delete the entry.<br/><br/>On backfills:<ul><li>You can backfill each dataset individually.</li><li>You prioritize new data added to a dataset in the connection, so this new data has the lowest latency.</li><li>Any backfill (historical) data is imported at a slower rate. The amount of historical data influences the latency.</li><li>The Analytics source connector imports up to 13 months of data (irrespective of size) for production sandboxes. The backfill in non-production sandboxes is limited to 3 months.</li></ul> |
     | **[!UICONTROL Transform dataset]** | For specific B2B lookup datasets, you can enable the transformation of a dataset for proper B2B person-based reporting scenarios. |
     | **[!UICONTROL Backfill status]** | Possible status indicators are:<ul><li>Success</li><li>X backfill(s) processing</li><li>Off</li></ul> |
     | **[!UICONTROL Dataset ID]** | This ID is automatically generated. |

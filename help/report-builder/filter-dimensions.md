@@ -6,8 +6,17 @@ feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
+TQID: https://experienceleague.adobe.com/SAoyiEbKE1Niv3uwBMNB-M3F7WcdBQ-Guzs2mkRKHLE
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
-
 # Filter dimensions
 
 By default, each dimension item in the table returns the top 10 items for that dimension.

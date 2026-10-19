@@ -6,6 +6,21 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
+TQID: https://experienceleague.adobe.com/hvK60b1ST9yjl9fz0kFnSncTRXtZQCYvDmLCUCP1Yik
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Schedule workbooks by sharing through email
 
@@ -13,8 +28,11 @@ After you saved your workbook and completed your analysis, you can share your wo
 
 You can create multiple schedules for a single workbook. For example, you create two schedules to send a workbook to your team daily and to your manager once a week.
 
-The schedule feature also allows you to set up password protection for a workbook and edit previously scheduled workbooks.
+The schedule feature also allows you to set up password protection for a workbook and edit the schedule for previously scheduled workbooks.
 
+>[!NOTE]
+>
+>A schedule sends the version of the workbook that existed when you created the schedule. If you later change and save the workbook, the existing schedule does not pick up those changes and continues to send the original version. To distribute an updated workbook, create a new schedule after you save your changes.
 
 >[!BEGINSHADEBOX]
 
@@ -64,7 +82,8 @@ In the **[!UICONTROL File]** section, you provide details of the file type, name
     * **[!UICONTROL ISO Date format]**, which results in `YYYY-MM-DD` being appended to the filename.
     * **[!UICONTROL ISO Date format + time stamp]**, which results in `YYYY-MM-DD_HH-MM-SS` being appended to the filename.
 
-<!-- Does no longer seem to be an option? 
+<!-- 
+Does no longer seem to be an option? 
 1. (Optional) Select **.zip compression** to compress the file and set up password protection on the file.
 
     When you make this selection, you're prompted to enter a password to open the file. This is helpful if you have concerns about data security and you want to password protect the workbook. Protecting the file with a password requires you to select **.zip compression**. The password must be at least 8 characters and contain a number and a special character.

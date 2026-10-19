@@ -4,6 +4,32 @@ title: Manage Alerts
 feature: Workspace Basics
 role: User, Admin
 exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6
+TQID: 'https://experienceleague.adobe.com/oKewVodxYwDlnsuqGclK6ZYEmN-pXNqbc5ud6OkIUK4'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
+  - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+    internal-label: Alerts
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 ---
 # Manage alerts
 
@@ -23,7 +49,9 @@ The Alerts manager has the following interface elements:
 
 ### Alerts list
 
-The alerts list ➊ displays all the alerts that you own, the alerts that have been scoped to all your projects, and the alerts that have been shared with you. The list has the following columns:
+The alerts list ➊ displays the alerts that you have created. If you are an administrator, you see all alerts. 
+
+The list has the following columns:
 
 | Column | Description |
 |---|---|
@@ -32,7 +60,7 @@ The alerts list ➊ displays all the alerts that you own, the alerts that have b
 | **[!UICONTROL Type]** | Shows whether the  alert is a Customer Journey Analytics data alert or a Server call usage alert. |
 | **[!UICONTROL Enabled]** | Indicates whether the alert is enabled or disabled. |
 | **[!UICONTROL Data view]** | The data views that this alert applies to.  |
-| **[!UICONTROL Owner]** | The owner of the alert. As a non-administrator, you only see alerts you own or those that are shared with you. |
+| **[!UICONTROL Owner]** | The owner of the alert. As a non-administrator, you only see alerts that you own. An administrator can see all alerts. |
 | **[!UICONTROL Tags]** | The tags for this alert. |
 | **[!UICONTROL Expiration Date]** | The date and time when the alert is set to expire. |
 | **[!UICONTROL Date modified]** | The date and time that the alert was last modified. |

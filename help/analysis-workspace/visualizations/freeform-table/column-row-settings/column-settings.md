@@ -4,6 +4,29 @@ title: Column Settings
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
+autotag-review: '2026-05-19T08:43:31.310Z'
+TQID: 'https://experienceleague.adobe.com/WrOP1B4Dclj004zTWZMACNAVusD47Ugi0IrlXVUrZ88'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
 ---
 # Column settings
 
@@ -19,7 +42,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Row and column s
 >[!ENDSHADEBOX]
 
 
-To access [!UICONTROL Column settings], select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) in the column heading.
+To access [!UICONTROL Column settings], select ![Column settings](/help/assets/icons2/Settings.svg) in the column heading.
 
 ![Column settings](assets/column-settings.png)
 

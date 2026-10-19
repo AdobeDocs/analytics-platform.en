@@ -5,6 +5,29 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: bc79ba1a-1153-4fe8-b265-9703a323c977
+autotag-review: '2026-05-19T08:20:34.368Z'
+TQID: 'https://experienceleague.adobe.com/fwYoa9oeIs2tujyDEWUj-GaAgpZQNBwup-YsHIe-TdU'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 ---
 # Upgrade from a third-party analytics solution to Customer Journey Analytics {#upgrade-from-third-party}
 
@@ -37,4 +60,6 @@ Use the following process when moving to Customer Journey Analytics from a third
 
 
 Contact your Adobe representative if you need more specific advice, guidance, or support.
+
+If you are coming from Google Analytics 4 specifically, see [Transitioning from Google Analytics 4 to Customer Journey Analytics](../ga-to-cja/home.md) for analyst-focused guidance on report equivalents, data model differences, and metric comparisons.
 

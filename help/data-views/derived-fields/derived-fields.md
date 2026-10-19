@@ -5,6 +5,38 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
+TQID: 'https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+subfeature_v2:
+  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+    internal-label: Templates
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
+    internal-label: Derived fields
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+    internal-label: Email marketing
 ---
 # Derived fields {#derived-fields}
 
@@ -12,7 +44,6 @@ role: Admin
 >id="dataview_derivedfields"
 >title="Derived fields"
 >abstract="A derived field allows you to define data manipulations on the fly, through a customizable rule builder. You can then use that derived field as a component (metric or dimension) in Workspace or even further define as a component in Data view."
-
 
 Derived fields are an important aspect of the real-time reporting functionality in Adobe Customer Journey Analytics. A derived field allows you to define (often complex) data manipulations on the fly, through a customizable rule builder. You can then use that derived field as a component (metric or dimension) in [Workspace](../../analysis-workspace/home.md) or even further define the derived field as a component in [Data view](../data-views.md). 
 
@@ -33,6 +64,11 @@ Example use cases are:
 - Define a derived Marketing Channel field that determines the proper marketing channel based on one or more conditions (for example URL parameter, page URL, page name).
 
 Standard components are only supported on event datasets in derived fields. 
+
+>[!TIP]
+>
+>See [guidelines](/help/use-cases/data-views/derived-fields/guidelines.md) for best practices, guardrails, and common pitfalls when working with derived fields.
+>
 
 ## Derived field interface {#interface}
 
@@ -275,6 +311,8 @@ To use the template, you have to specify the correct parameters for each functio
 
 ![Screenshot of the Get All Values in Delimited list rule builder](assets/function-template-get-all-values-in-delimited-list.png)
 
+The derived field becomes available as a [custom container](/help/data-views/create-dataview.md#containers-1) you can select in your data view and use for [sub-event analysis](/help/components/segments/sub-event.md) in a workspace project.
+
 +++
 
 ### Get First Value in Delimited List {#firstvalue}
@@ -321,7 +359,7 @@ To use the template, you have to specify the correct parameters for each functio
 
 ### Get Query String Parameter {#querystring}
 
-This function template extracts query string values.
+This function template extracts query string values for the specified query parameter. The query parameter is case sensitive. Insert a [Lowercase](#lowercase) function to ensure all upper and lower case variations of the query parameter are considered.
 
 +++ Details
 
@@ -416,6 +454,21 @@ This function template gets the longitude for a US state with a precision of 5 d
 To use the template, you have to specify the correct parameters for each function listed as part of the rules in the template. See [Function reference](#function-reference) for more information.
 
 ![Screenshot of the State Longitude rule builder](assets/function-template-state-longitude.png)
+
++++
+
+
+### UTM Parameters Parse
+
+This function template extracts the value of specified UTM query parameters (e.g., `utm_source`, `utm_campaign`) from the selected URL field. Use this function to label and group events by campaign attribution for marketing reporting.
+
++++ Details
+
+{{select-package}}
+
+To use the template, you have to specify the parameters for each function listed as part of the rules in the template. Remove functions (for example [Parse URL](#url-parse)) or parameters in functions (for example for [Concatenate](#concatenate) and [Case When](#case-when)) for the UTM query parameters you do not use. See [Function reference](#function-reference) for more information.
+
+![Screenshot of the UTM Parameters Parse rule builder](assets/function-template-utm-parameters-parse.png)
 
 +++
 
@@ -820,10 +873,10 @@ You define a `Page Name (updated)` derived field. You use the [!UICONTROL CLASSI
 
 The following additional functionality is available in the Classify rule interface:
 
-- To quickly clear all table values, select ![Erase](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Erase_18_N.svg) **[!UICONTROL Clear all table values]**.
-- To upload a CSV file containing original values for When values equal and new values for Replace values with, select ![CSV](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileCSV_18_N.svg) **[!UICONTROL Upload CSV]**.
-- To download a template for creating a CSV file with original and new values to upload, select ![Download](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL Download CSV template]**.
-- To download a CSV file with all original and new values populated in the rule interface, select ![Download](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL Download CSV values]**.
+- To quickly clear all table values, select ![Erase](/help/assets/icons/Erase.svg) **[!UICONTROL Clear all table values]**.
+- To upload a CSV file containing original values for When values equal and new values for Replace values with, select ![CSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Upload CSV]**.
+- To download a template for creating a CSV file with original and new values to upload, select ![Download](/help/assets/icons/Download.svg) **[!UICONTROL Download CSV template]**.
+- To download a CSV file with all original and new values populated in the rule interface, select ![Download](/help/assets/icons/Download.svg) **[!UICONTROL Download CSV values]**.
  
 
 +++
@@ -1742,6 +1795,10 @@ You create a `Second Response` derived field to take the last value  from the [!
 | will not recommend to others | 1 |
 
 {style="table-layout:auto"}
+
+## Custom container
+
+The derived field becomes available as a [custom container](/help/data-views/create-dataview.md#containers-1) you can select in your data view and use for [sub-event analysis](/help/components/segments/sub-event.md) in a workspace project.
 
 +++
 

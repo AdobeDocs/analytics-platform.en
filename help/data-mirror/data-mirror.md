@@ -4,12 +4,46 @@ description: Understand how to synchronize data between data warehouse native so
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-badgePremium: label="Beta"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
+autotag-review: '2026-05-19T08:55:53.979Z'
+TQID: 'https://experienceleague.adobe.com/10YCh2cnMTVriKKVOyYfzFfngvGQ2VVHOxzedE5NpWA'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: bfef374d-acfd-4c57-bf74-a2b36053c545
+    internal-label: Data ingestion
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
 # Experience Platform Data Mirror overview
-
-{{release-limited-testing}}
 
 Data Mirror is an Experience Platform capability that enables row-level change ingestion from external databases into the data lake using relational schemas. It preserves data relationships, enforces uniqueness, and supports versioning without requiring upstream extract, transform, and load (ETL) processes.
 
@@ -33,8 +67,15 @@ See also the [Experience Platform documentation on Data Mirror](https://experien
 
 >[!NOTE]
 >
->The Experience Platform Data Mirror capability for Customer Journey Analytics is available in a **public beta** until March 25, 2026. Customers may ingest up to 2 million change rows per day into Adobe Experience Platform Data Lake via source connectors. Adobe reserves the right to terminate beta access to Experience Platform Data Mirror functionality should your organization exceed these limits. <br/>To request access to this capability, please contact your Adobe account team.
+>Data Mirror is a feature that supports the synchronization of data from select data warehouses using change data capture (CDC) for analysis in Customer Journey Analytics.<br/>Refer to the applicable Product Description to understand how the feature can impact annual ingestion limit consumption.
 >
+
+>[!IMPORTANT]
+>
+>The change data capture datasets that you create in Experience Platform for the purpose of Data Mirror for Customer Journey Analytics should not be reused in other Experience Platform solutions like Real-Time Customer Data Platform or Journey Optimizer. If you want to use the same data for these solutions, consider to create alternative datasets with that same data.
+>
+
+
 
 Experience Platform Data Mirror for Customer Journey Analytics is available for selected data warehouse native solutions ([!DNL Azure Databricks], [!DNL Google BigQuery], and [!DNL Snowflake]). The Customer Journey Analytics version of Experience Platform Data Mirror requires proper configuration of the following applications or components:
 

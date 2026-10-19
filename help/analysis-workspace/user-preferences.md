@@ -5,6 +5,44 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
+TQID: 'https://experienceleague.adobe.com/5rXDQ-Ygp3TrEMbpK1UaUcRwSrc81VkUKauxth4-AUs'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
+subfeature_v2:
+  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
+  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+    internal-label: Templates
+  - id: aff2ef09-fc60-4018-9197-e2befd623064
+    internal-label: Anomaly detection
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: fa6ac035-8403-478b-9ce1-3fe29d211fca
+    internal-label: Annotations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # User preferences
 
@@ -41,8 +79,8 @@ General preferences apply to your Customer Journey Analytics experience in the b
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_requireexperiencecloudauth"
->title="Require Experience Cloud authentication"
->abstract="When enabled, people who are given access to a project from the **[!UICONTROL Share with anyone]** option in Analysis Workspace must authenticate using their Experience Cloud credentials."
+>title="Require CX Enterprise authentication"
+>abstract="When enabled, people who are given access to a project from the **[!UICONTROL Share with anyone]** option in Analysis Workspace must authenticate using their CX Enterprise credentials."
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_projectcommenting"
@@ -58,7 +96,7 @@ You can update company preferences that apply to all users and projects within y
 |  | Hide Templates Tab | Hides the Templates Tab for all users in your organization. |
 | **Project sharing** | | |
 | | Allow sharing only with Workspace users | When this option is enabled, users in your organization cannot see the **[!UICONTROL Share with anyone]** option in the **[!UICONTROL Share]** menu. This means that users cannot share projects with people who don't have an Analysis Workspace account in your organization as described in [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md).<br/>This option is disabled by default for all organizations (meaning that users can share projects with people outside the organization) except for customers who have licensed Healthcare Shield. <p>Consider the following when enabling or disabling this option:<ul><li>When you enable this option, people who previously received access to a project through the [!UICONTROL Share with anyone] share option can no longer access the project.</li><li>If this option is enabled (to allow sharing only with Workspace users) and then later disabled (to allow sharing with anyone), people who previously received access to a project through the [!UICONTROL Share with anyone] share option do not automatically regain their access to the project. In this case, the user who shared the project must enable the [!UICONTROL **Link is active**] option that is available when sharing a project with anyone **([!UICONTROL Share]** > **[!UICONTROL Share with anyone]**), as described in [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md).</li><li>**For customers who license Healthcare Shield:** This option is enabled by default and cannot be disabled. Before you can disable this option so that users can use the [!UICONTROL Share with anyone] share option, you first need to add the [!UICONTROL Share project links with anyone] permission (located under [!UICONTROL Reporting Tools]) in the Adobe Admin Console. After the permission is added, you can disable this option, then accept the resulting legal notice. For information about how to add a permission in the Admin Console, see [Manage product permissions in the Admin Console](https://helpx.adobe.com/enterprise/using/manage-permissions-and-roles.html).</li></ul> |
-| | Require Experience Cloud authentication | When this option is enabled, people who are given access to a project from the **[!UICONTROL Share with anyone]** option in Analysis Workspace must authenticate using their Experience Cloud credentials.<p>After this option is enabled, any time a user shares a project using the [!UICONTROL Share with anyone] share option, the [!UICONTROL Require Experience Cloud authentication] option is enabled in the share dialog and it cannot be disabled by the user who is sharing the project. For information about how users can share projects with anyone, see [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md). <p> <p>Consider the following when enabling this option: <ul><li>When you enable this option, all projects that were previously shared with the [!UICONTROL Share with anyone] share option, and do not have the [!UICONTROL Require Experience Cloud authentication] option enabled, are deactivated.<p>If this option is enabled (to require Experience Cloud authentication) and then later disabled (to allow anyone with the link to access the project), people who previously received access to a project through the [!UICONTROL Share with anyone] share option do not automatically regain their access to the project. In this case, the user who shared the project must enable the [!UICONTROL Link is active] option that is available when sharing a project with anyone **([!UICONTROL Share]** > **[!UICONTROL Share with anyone]** > **[!UICONTROL Link is active]**), as described in [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md).</li><li>This option is available only if SSO is implemented in your organization. For information about how system administrators can enable SSO for your organization, see [Set up identity and Single Sign-On](https://helpx.adobe.com/enterprise/using/set-up-identity.html).</p><p>If SSO is configured for your organization, check to see if any kind of auto-account creation is implemented in the console. Typically, a system administrator would set this up, as described in [Enable automatic account creation](https://helpx.adobe.com/enterprise/using/automatic-account-creation.html).</li><li>If your organization licenses Healthcare Shield, this option is enabled by default and cannot be disabled.</li></ul>|
+| | Require Experience Cloud authentication | When this option is enabled, people who are given access to a project from the **[!UICONTROL Share with anyone]** option in Analysis Workspace must authenticate using their CX Enterprise (Experience Cloud) credentials.<p>After this option is enabled, any time a user shares a project using the [!UICONTROL Share with anyone] share option, the [!UICONTROL Require CX Enterprise authentication] option is enabled in the share dialog and it cannot be disabled by the user who is sharing the project. For information about how users can share projects with anyone, see [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md). <p> <p>Consider the following when enabling this option: <ul><li>When you enable this option, all projects that were previously shared with the [!UICONTROL Share with anyone] share option, and do not have the [!UICONTROL Require CX Enterprise authentication] option enabled, are deactivated.<p>If this option is enabled (to require CX Enterprise authentication) and then later disabled (to allow anyone with the link to access the project), people who previously received access to a project through the [!UICONTROL Share with anyone] share option do not automatically regain their access to the project. In this case, the user who shared the project must enable the [!UICONTROL Link is active] option that is available when sharing a project with anyone **([!UICONTROL Share]** > **[!UICONTROL Share with anyone]** > **[!UICONTROL Link is active]**), as described in [Share a project with anyone (no login required)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Share projects](/help/analysis-workspace/curate-share/share-projects.md).</li><li>This option is available only if SSO is implemented in your organization. For information about how system administrators can enable SSO for your organization, see [Set up identity and Single Sign-On](https://helpx.adobe.com/enterprise/using/set-up-identity.html).</p><p>If SSO is configured for your organization, check to see if any kind of auto-account creation is implemented in the console. Typically, a system administrator would set this up, as described in [Enable automatic account creation](https://helpx.adobe.com/enterprise/using/automatic-account-creation.html).</li><li>If your organization licenses Healthcare Shield, this option is enabled by default and cannot be disabled.</li></ul>|
 | Project commenting | Allow commenting on projects | When this option is enabled, a comments area is available in the right rail of each project in Analysis Workspace. <p>Project owners can disable the comments area for a given project, as described in [Create projects](/help/analysis-workspace/build-workspace-project/create-projects.md).</p> <p>For more information about commenting in Analysis Workspace projects, see [Add and manage comments in projects](/help/analysis-workspace/build-workspace-project/comment-projects.md).</p> |
 
 {style="table-layout:auto"}
@@ -277,7 +315,7 @@ This action cannot be undone.
 
 If you prefer to have a dark background for your Customer Journey Analytics user interface, you can toggle to [!UICONTROL Dark theme].
 
-1. Select the Experience Cloud user icon at the top right.
+1. Select the user icon at the top right.
 
    ![dark-theme](assets/dark-theme.png)
 

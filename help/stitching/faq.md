@@ -5,6 +5,36 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
+TQID: 'https://experienceleague.adobe.com/0y2eqwQxkHefcODFhxXCuioMnL-YCXm21335Z2upPB0'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+subfeature_v2:
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+    internal-label: Stitching
+  - id: b7fb3355-1f54-4380-bce3-d444b226c0e9
+    internal-label: Cross channel analysis
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
 ---
 # Frequently asked questions
 
@@ -12,7 +42,9 @@ Here are some frequently asked questions around stitching:
 
 ## Move across channels
 
-+++ How can I use stitching to see how people move from one channel to another?
+**Question**: How can I use stitching to see how people move from one channel to another?
+
++++Answer
 
 You can use a Flow visualization with the Dataset ID dimension.
 
@@ -27,15 +59,33 @@ If you would like to rename dataset ID dimension items, you can use a lookup dat
 
 ## Replay
 
-+++ How far back does stitching replay profiles?
+**Question**: How far back does stitching replay profiles?
+
++++Answer
 
 The lookback window for rekeying depends on your desired frequency of data replay. For example, if you set up stitching to replay data once every week, the lookback window for rekeying is seven days. If you set up stitching to replay data every day, the lookback window for rekeying is one day.
 
 +++
 
+**Question**: When does the replay process run exactly?
+
++++Answer
+
+* The **weekly** replay starts on each **Saturday** night (customer time zone) and data gets updated in Customer Journey Analytics reporting by Monday morning. 
+* The **daily** replay runs around **3 A.M.** (customer time zone) and data gets updated in Customer Journey Analytics reporting by morning. 
+
+>[!IMPORTANT]
+>
+>The day of the weekly replay and the hour of daily replay cannot be changed through a custom request.
+>
+
++++
+
 ## Shared devices
 
-+++ How are shared devices handled?
+**Question**: How are shared devices handled?
+
++++Answer
 
 In some situations, it is possible that multiple people log in from the same device. Examples include a shared device at home, shared PCs in a library, or a kiosk in a retail outlet.
 
@@ -47,7 +97,9 @@ See the [Shared devices](/help/use-cases/stitching/shared-devices.md) use case f
 
 ## Many persistent IDs
 
-+++ How does stitching handle situations where a single person has many persistent IDs?
+**Question**: How does stitching handle situations where a single person has many persistent IDs?
+
++++Answer
 
 In some situations, an individual user can associate with many persistent IDs. An example is an individual frequently clearing the browser's cookies or using the browser's private/incognito mode.
 
@@ -59,7 +111,9 @@ For graph-based stitching, a single person can have many persistent IDs in the i
 
 ## Stitching process
 
-+++ Once I contact my Adobe Account Team with the desired information, how long does it take for the rekeyed dataset to become available?
+**Question**: Once I contact my Adobe Account Team with the desired information, how long does it take for the rekeyed dataset to become available?
+
++++Answer
 
 Live stitching is available approximately one week after Adobe enables stitching. Backfill availability depends on the amount of existing data. Small datasets (less than 1 million events per day) typically take a couple days, while large data sets (1 billion events per day) can take a week or more.
 
@@ -67,7 +121,9 @@ Live stitching is available approximately one week after Adobe enables stitching
 
 ## Cross-device analytics versus cross-channel analysis
 
-+++ What is the difference between cross-device analytics (a feature in traditional Analytics) and cross-channel analysis?
+**Question**: What is the difference between cross-device analytics (a feature in traditional Analytics) and cross-channel analysis?
+
++++Answer
 
 [Cross-device analytics](https://experienceleague.adobe.com/en/docs/analytics/components/cda/overview) is a feature specific to traditional Adobe Analytics that allows you to understand how people operate across devices. It offers two workflows to link device data together: field-based stitching and the device graph.
 
@@ -77,7 +133,9 @@ Cross-channel analysis is a use case specific to Customer Journey Analytics that
 
 ## Privacy
 
-+++ How does Stitching handle privacy requests?
+**Question**: How does Stitching handle privacy requests?
+
++++Answer
 
 Adobe handles privacy requests in accordance with local and international laws. Adobe offers the [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/home) to submit data access and deletion requests. The requests apply to both the original and rekeyed datasets.
 
@@ -159,7 +217,9 @@ When a privacy request is received for customer with CustID Bob, the rows with s
 
 ## Blank persistent ID values
 
-+++ What happens if the persistent ID field in one or more events is blank?
+**Question**: What happens if the persistent ID field in one or more events is blank?
+
++++Answer
 
 If the persistent ID field is blank on an event in a dataset being stitched , the resulting ID for that event is determined in one of two ways:
 
@@ -171,7 +231,9 @@ If the persistent ID field is blank on an event in a dataset being stitched , th
 
 ## Undefined person ID values
 
-+++ What happens if the person ID field in one or more events has placeholder values, like `Undefined`?
+**Question**: What happens if the person ID field in one or more events has placeholder values, like `Undefined`?
+
++++Answer
 
 Be cautious of 'person collapse', which occurs when stitching is applied to data that uses placeholder values for transient IDs. In the example table below, undefined person IDs originating from a dataset sourced from a CRM system are populated with the value 'Undefined' resulting in incorrect representation of persons.
 
@@ -193,7 +255,9 @@ Be cautious of 'person collapse', which occurs when stitching is applied to data
 
 ## Metrics comparison
 
-+++ How do metrics in Customer Journey Analytics stitched datasets compare with similar metrics in Customer Journey Analytics unstitched datasets and with Adobe Analytics?
+**Question**: How do metrics in Customer Journey Analytics stitched datasets compare with similar metrics in Customer Journey Analytics unstitched datasets and with Adobe Analytics?
+
++++Answer
 
 Certain metrics in Customer Journey Analytics are similar to metrics in traditional Analytics, but others are different, depending on what you are comparing. The table below compares several common metrics:
 
@@ -209,7 +273,9 @@ Other metrics can be similar in Customer Journey Analytics and Adobe Analytics. 
 
 ## Identity Map
 
-+++ Can Customer Journey Analytics use Identity Map fields?
+**Question**: Can Customer Journey Analytics use Identity Map fields?
+
++++Answer
 
 Yes, Customer Journey Analytics can  use Identity Map fields for both [field-based](/help/stitching/fbs.md#identitymap) and [graph-based](/help/stitching/gbs.md#identitymap) stitching.
 
@@ -217,7 +283,9 @@ Yes, Customer Journey Analytics can  use Identity Map fields for both [field-bas
 
 ## Switch to graph-based stitching
 
-+++ Will data need to be reingested to switch from field-based stitching to graph-based stitching?
+**Question**: Will data need to be reingested to switch from field-based stitching to graph-based stitching?
+
++++Answer
 
 Data does not have to be reingested into Experience Platform. However, data needs to be reconfigured in Customer Journey Analytics. Please follow these steps:
 
@@ -232,7 +300,9 @@ Data does not have to be reingested into Experience Platform. However, data need
 
 ## Disruption in reporting
 
-+++ Would there be any disruption to existing reports?
+**Question**: Would there be any disruption to existing reports?
+
++++Answer
 
 Not if you follow the steps outlined above. Otherwise, please ask Adobe Consulting for additional support.
 
@@ -240,7 +310,9 @@ Not if you follow the steps outlined above. Otherwise, please ask Adobe Consulti
 
 ## Enable a dataset for the Identity Service
 
-+++ How to enable a dataset for the Identity Service only? 
+**Question**: How to enable a dataset for the Identity Service only? 
+
++++Answer
 
 Ensure that a dataset is enabled for Identity Service to use the dataset in graph-based stitching. 
 
@@ -265,12 +337,14 @@ Any use of the `unifiedProfile` tag in the request, while you are not licensed f
 
 See [Create a dataset enabled for Profile and Identity](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset) for more information.
 
-+++ 
++++
 
 
 ## Stitched namespace values
 
-+++ Why do stitched namespace values not always match the identity namespace value you might use within another dataset within the CJA connection?
+**Question**: Why do stitched namespace values not always match the identity namespace value you might use within another dataset within the CJA connection?
+
++++Answer
 
 By default stitched namespace values are lowercase. So, `custEmail` becomes `custemail`. If you do have another dataset with an identity namespace value of `custEmail`, the two values do not match. To work around this behavior in reporting, you could use the [lowercase()](/help/data-views/derived-fields/derived-fields.md#lowercase) derived field function to match the identity namespace values.
 

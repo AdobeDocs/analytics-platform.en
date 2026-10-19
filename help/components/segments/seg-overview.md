@@ -4,8 +4,31 @@ description: Understand what segments are used for and how to create a simple se
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters, Segments
 role: User
+TQID: 'https://experienceleague.adobe.com/omsyiimc8b3EsGvJYb0V-jHqOxUp-8S7fFQ8dXUGUxs'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
-
 # Segmentation overview
 
 Customer Journey Analytics lets you build, manage, share, and apply powerful, focused audience segments to your reports. Segments let you identify subsets of persons, sessions or events based on characteristics or interactions. Segments are designed as codified audience insights that you can build for your specific needs, and then verify, edit, and share with other team members.
@@ -77,18 +100,18 @@ Segments are based on a Person-, Session-, and Event-level hierarchy using a nes
 <table style="table-layout: fixed; border: none;" width="100%">
 
 <tr>
-<td style="background-color: #E5E4E2;" colspan="3" width="200" height="100"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg"/> Person</td>
+<td style="background-color: #E5E4E2;" colspan="3" width="200" height="100"><img src="/help/assets/icons/User.svg"/> Person</td>
 </tr>
 
 <tr>
 <td style="background-color: #E5E4E2;" width="200"></td>
-<td style="background-color: #D3D3D3;" colspan="2" width="200" height="100"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Visit_18_N.svg"/> Session</td>
+<td style="background-color: #D3D3D3;" colspan="2" width="200" height="100"><img src="/help/assets/icons/Visit.svg"/> Session</td>
 </tr>
 
 <tr>
 <td style="background-color: #E5E4E2;" width="200" height="100"></td>
 <td style="background-color: #D3D3D3;" width="200" height="100"></td>
-<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg"/> Event</td>
+<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="/help/assets/icons/Events.svg"/> Event</td>
 </tr>
 </table>
 

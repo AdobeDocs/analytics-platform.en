@@ -5,6 +5,35 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
+autotag-review: '2026-05-19T08:48:44.273Z'
+TQID: 'https://experienceleague.adobe.com/hE-nAiD8K4lHdZkC2YJpqpqfh2d3CY6tq4KiTJjEXs0'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: bfef374d-acfd-4c57-bf74-a2b36053c545
+    internal-label: Data ingestion
+  - id: cf731116-8803-4027-85aa-9c0a126e8321
+    internal-label: Dataset configuration
+  - id: e0cfe18a-f68c-495b-bafc-f6bcc0392d6c
+    internal-label: Identity
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
 ---
 # Transform datasets for B2B lookups
 
@@ -65,4 +94,4 @@ Non-transformed datasets, for schemas based on the four schema classes mentioned
 
 The transformation modifies the dataset of each of the four schema classes (orange in the illustration below) so that for each person identifier an (object) array is created for the relevant data (accounts, opportunities, marketing lists or campaigns) in the lookup datasets (pink in the illustration below). This transformation allows for a correct working of person id based lookups.
 
-![B2B schemas](./assets/b2b-schemas.svg)
+![B2B schemas](./assets/b2b-schemas.png)

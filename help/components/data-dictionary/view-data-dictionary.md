@@ -1,19 +1,49 @@
 ---
-description: The Data Dictionary in Analysis Workspace allows users to catalogue and keep track of the various components in Analysis Workspace, including their intended use, which are approved, which are duplicates, and so forth.
+description: The Data Dictionary in Analysis Workspace allows users to catalog and keep track of the various components in Analysis Workspace, including their intended use, which are approved, which are duplicates, and so forth.
 title: View component information
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
+TQID: 'https://experienceleague.adobe.com/b-y-D9Ba6SlV0tW8D1btQLWYU32HpKrgG3DIftie1W8'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: df28738e-9c71-4aa8-929e-edde22340cc6
+    internal-label: Data Dictionary
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
 ---
 # View component information
 
-The Data Dictionary allows you to view information about a component, including the component description, similar components, other components a component is frequently used with, and more.
+The Data Dictionary allows you to view information about a component, including its description, similar components, other components a component is frequently used with, and more.
 
 To view information about a component in the Data Dictionary:
 
 1. Go to the Analysis Workspace project that contains the component that you want to view.
 
-1. Select the [!UICONTROL **Data Dictionary**] icon in the left panel of Analysis Workspace. (Alternate ways of accessing the Data Dictionary are described in "Access the Data Dictionary" in [Data Dictionary overview](/help/components/data-dictionary/data-dictionary-overview.md).)
+1. Select the [!UICONTROL **Data Dictionary**] icon in the left panel of Analysis Workspace. (Alternate ways of accessing the Data Dictionary are described in [Access the Data Dictionary](/help/components/data-dictionary/data-dictionary-overview.md#access-the-data-dictionary) in [Data Dictionary overview](/help/components/data-dictionary/data-dictionary-overview.md).)
 
    The Data Dictionary window displays.
 
@@ -25,9 +55,21 @@ To view information about a component in the Data Dictionary:
 
 1. (Optional) In the search field, begin typing the name of the component you want to view.
 
-   The type of component can be identified by both color and icon. **Dimensions** ![Dimension icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) are orange, **Segments** ![Segment icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) are blue, **Date ranges** ![Date range icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) are purple, and **Metrics** ![Metric icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) are green. The Adobe icon ![Adobe icon](assets/default-calc-metric-icon.png) indicates either a calculated metric template or a segment template, and the calculator icon ![Calculator icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indicated a calculated metric that was created by an Analytics administrator in your organization. 
+   The type of component can be identified by both color and icon. 
+   
+   * **Dimensions** ![Dimension icon](/help/assets/icons/Data.svg) are orange
+   
+   * **Segments** ![Segment icon](/help/assets/icons/Segmentation.svg) are blue
+   
+   * **Date ranges** ![Date range icon](/help/assets/icons/Calendar.svg) are purple
+   
+   * **Metrics** ![Metric icon](/help/assets/icons/Event.svg) are green
+   
+   * **Adobe icon** ![Adobe icon](assets/default-calc-metric-icon.png) indicates either a calculated metric template or a segment template
+   
+   * **Calculator icon** ![Calculator icon](/help/assets/icons/Calculator.svg) indicates a calculated metric that was created by an Analytics administrator in your organization
 
-1. (Optional) Select the **Filter** icon ![Data Dictionary Filter icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), then select any of the following segment options to filter the list of components:
+1. (Optional) Select the **Filter** icon ![Data Dictionary Filter icon](/help/assets/icons/Filter.svg), then select any of the following filter options to filter the list of components:
 
    |Option | Function |
    |---------|----------|
@@ -36,7 +78,7 @@ To view information about a component in the Data Dictionary:
    | [!UICONTROL **Dimensions**] | Show only components that are Dimensions. (This option is also available in the [!UICONTROL **Quick segments**] tab when you first access the Data Dictionary.) |
    | [!UICONTROL **Metrics**] | Show only components that are Metrics. (This option is also available in the [!UICONTROL **Quick segments**] tab when you first access the Data Dictionary.) |
    | [!UICONTROL **Segments**] | Show only components that are Segments. (This option is also available in the [!UICONTROL **Quick segments**] tab when you first access the Data Dictionary.) |
-   | [!UICONTROL **Date ranges**] | Show only components that are Date Ranges. (This option is also available in the [!UICONTROL **Quick segments**] tab when you first access the Data Dictionary.) |
+   | [!UICONTROL **Date Ranges**] | Show only components that are Date Ranges. (This option is also available in the [!UICONTROL **Quick segments**] tab when you first access the Data Dictionary.) |
    | [!UICONTROL **Show all**] | Show all components. This option is available only for administrators. |
    | [!UICONTROL **Unapproved**] | Show only components that are not yet marked as Approved by an administrator. As an administrator, this is helpful when identifying components that require your review and approval. This option is available only for administrators. |
    | [!UICONTROL **Missing Description**] | Show only components that do not yet have a description in the Description field. This option is available only for administrators. |
@@ -46,15 +88,22 @@ To view information about a component in the Data Dictionary:
 
    {style="table-layout:auto"}
 
-1. (Optional) Select the **Sort** icon ![Sort components icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg), then select any of the following segment options to sort the list of components:
+1. (Optional) Select the **Sort** icon ![Sort components icon](/help/assets/icons/SortOrderDown.svg), then select any of the following filter options to sort the list of components:
    
-   {{components-sort-options}}
+   | Option | Function |
+   |---------|----------|
+   | **[!UICONTROL Recommended]** | Sort components for each type (dimension, metric, segment and date range) based on their recommendation. Components that are used most frequently and most recently by you or by others in your organization are shown higher in each list. |
+   | **[!UICONTROL Last modified]** | Sort components for each type (dimension, metric, segment and date range) based on their last modified date. Components that are modified most recently are shown higher in each list. |
+   | **[!UICONTROL Alphabetical]** | Sort components for each type (dimension, metric, segment and date range) in ascending alphabetic order. |
+   | **[!UICONTROL Categorical]** | Sort components for each type (dimension, metric, segment and date range) based on their category. For example, Curated versus Non-curated data view components. |
+
+   {style="table-layout:auto"}
 
 1. From the list of components, select the component you want to view.
 
    The following information about the component is displayed:
 
-   |Option | Function |
+   | Option | Function |
    |---------|----------|
    | [!UICONTROL **Approved**] | <p>Indicates that the component has been reviewed and approved by the administrator.</p><p>Administrators see an option to [!UICONTROL **Unapprove**]. Selecting this option marks the component as "Not approved" to users.</p> |
    | [!UICONTROL **Not approved**] | <p>Indicates that the component has not yet been reviewed and approved by the administrator.</p><p>Administrators see an option to [!UICONTROL **Approve**]. Selecting this option marks the component as "Approved" to users.</p> |

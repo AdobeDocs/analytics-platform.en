@@ -12,7 +12,8 @@ role: User
 See [Actions in Manage projects](../freeform-overview.md#actions) on how to remove projects from Analysis Workspace.
 
 
-<!-- Is this article still needed; not in the TOC anymore
+<!--
+Is this article still needed; not in the TOC anymore
 
 
 ## Move a project {#move-project-in-folder}

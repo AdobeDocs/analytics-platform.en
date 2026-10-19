@@ -5,6 +5,36 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
+TQID: 'https://experienceleague.adobe.com/ST-1vL8gbeSqaYYHakxjYWcDOryNucEVHiONAQk7gU4'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
 # Use summary data
 
@@ -462,10 +492,10 @@ To ensure you can report on the correct data in Workspace, you want to create a 
          | Component name | Dataset | Schema data type | Schema path |
          |---|---|---|---|
          | Ad Group (Lookup) | Example Lookup Data Dataset | String | *_tenant*.ad_group |
-         | Ad Group (Summary) | Example Summary Data Dataset | String | *_tenant*.ad_group |
+         | Ad Group | Example Summary Data Dataset | String | *_tenant*.ad_group |
          | Campaign Id | Example Summary Data Dataset | String | *_tenant*.campaign_id |
          | Campaign Name (Lookup) | Example Lookup Data Dataset | String | *_tenant*.campaign_name |
-         | Campaign Name (Summary) | Example Summary Data Dataset | String | *_tenant*.campaign_name |
+         | Campaign Name | Example Summary Data Dataset | String | *_tenant*.campaign_name |
          | Network | Example Summary Data Dataset | String | *_tenant*.network |
          | Page Name | Example Event Data Dataset | String | *_tenant*.page_name |
          | Person Id | Example Event Data Dataset | String | *_tenant*.person_id |
@@ -548,8 +578,8 @@ You see an empty canvas with a [!UICONTROL Freeform] panel, consisting of an emp
 1. Drag **[!UICONTROL Tracking Code (Event)]** from **[!UICONTROL Dimensions]** and drop the dimension onto the empty Freeform table.
 1. Drag **[!UICONTROL Orders]** from **[!UICONTROL Metrics]**, and drop the metric onto the **[!UICONTROL Events]** column to replace that column in the Freeform table.
 1. Drag **[!UICONTROL Revenue]** from **[!UICONTROL Metrics]**, and drop the metric to add as an additional column to the Freeform table.
-1. Drag **[!UICONTROL Impressions (Summary)]** from **[!UICONTROL Metrics]**, and drop the metric to add as an additional column to the Freeform table.
-1. Drag **[!UICONTROL Cost (Summary)]** from **[!UICONTROL Metrics]**, and drop the metric to add as an additional column to the Freeform table.
+1. Drag **[!UICONTROL Impressions]** from **[!UICONTROL Metrics]**, and drop the metric to add as an additional column to the Freeform table.
+1. Drag **[!UICONTROL Cost]** from **[!UICONTROL Metrics]**, and drop the metric to add as an additional column to the Freeform table.
 1. To save your project, select **[!UICONTROL Project]** > **[!UICONTROL Save]**, and provide a name for your project. For example, `Example Project Using Summary Data`.
 
 You want to use the power of reporting on summary data and report on cost per impression and return on ad spend (ROAS). To report on these metrics, you have to create two calculated metrics.
@@ -559,13 +589,13 @@ You want to use the power of reporting on summary data and report on cost per im
    1. Specify `Cost per Impression` for the **[!UICONTROL Name]**.
    1. Select **[!UICONTROL Currency]** for **[!UICONTROL Format]**.
    1. Specify `4` for **[!UICONTROL Decimal places]**.
-   1. Use ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Cost (Summary)]** **[!UICONTROL ÷]** **[!UICONTROL Impressions (Summary)]** as **[!UICONTROL Definition]**.
+   1. Use ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Cost]** **[!UICONTROL ÷]** **[!UICONTROL Impressions]** as **[!UICONTROL Definition]**.
    1. Select **[!UICONTROL Save]**.
 1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** to add another new calculated metric.
    1. Specify `Return on Ad Spend` for the **[!UICONTROL Name]**.
    1. Select **[!UICONTROL Currency]** for **[!UICONTROL Format]**.
    1. Select `2` for **[!UICONTROL Decimal places]**.
-   1. Use ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Revenue (Last Touch | 30 Days)]** **[!UICONTROL −]** ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Cost (Summary)]** as **[!UICONTROL Definition]**.
+   1. Use ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Revenue (Last Touch | 30 Days)]** **[!UICONTROL −]** ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Cost]** as **[!UICONTROL Definition]**.
    1. Select **[!UICONTROL Save]**.
 
 Add your calculated metrics to your report.

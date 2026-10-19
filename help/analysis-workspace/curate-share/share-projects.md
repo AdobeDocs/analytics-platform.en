@@ -5,6 +5,42 @@ title: Share Projects
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
+TQID: 'https://experienceleague.adobe.com/qAYUiD5wa5PhvEjTi397PC4n0xX0rWKJSYaAjCR6jtg'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: a3b826fd-7a63-4a83-8736-83eee6668f44
+    internal-label: Curate and share
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: f21d8c43-b886-433b-93ea-5982cbfc16b7
+    internal-label: FAQ
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Share projects {#share-projects}
 
@@ -53,9 +89,9 @@ You can share a specific role with users or groups, or you can share a link.
 
 When sharing a specific project role with users and groups in your organization, consider the following:
 
-* Project roles (**[!UICONTROL Edit original]**, **[!UICONTROL Edit copy]**, and **[!UICONTROL Read only]**) are tied to the user and specific project ID. Project roles are independent of user permissions managed in the [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started).
+* Project roles (**[!UICONTROL Edit original]**, **[!UICONTROL Edit copy]**, and **[!UICONTROL Read only]**) are tied to the user and specific project ID. Project roles are independent of user permissions managed in the [CX Enterprise Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started).
    
-* In Customer Journey Analytics, groups are defined by product profiles in the [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started). Admins can share to any group, including *All*. Non-admins can share to any group they are a member of, except for *All*.
+* In Customer Journey Analytics, groups are defined by product profiles in the [CX Enterprise Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started). Admins can share to any group, including *All*. Non-admins can share to any group they are a member of, except for *All*.
 
 * A user who is placed in multiple roles always get the highest experience. This scenario might occur if a user is added both as an individual and as part of a group. For example, if a user is given the **[!UICONTROL Edit original]** role as an individual and the **[!UICONTROL Read only]** role as a member of a group, the user receives a **[!UICONTROL Edit original]** project experience.
 
@@ -125,8 +161,8 @@ To share the project link with users in your organization:
 
 >[!CONTEXTUALHELP]
 >id="workspace_share_with_anyone_require_aec_authentication"
->title="Require Experience Cloud authentication"
->abstract="Your organization requires that users log in to the Experience Cloud in order to use this link."
+>title="Require CX Enterprise authentication"
+>abstract="Your organization requires that users log in to CX Enterprise in order to use this link."
 
 
 You can grant [read-only access](/help/analysis-workspace/curate-share/view-only-projects.md) to Analysis Workspace projects to people who don't have access to Customer Journey Analytics. This granted access can include:
@@ -149,7 +185,7 @@ You can grant [read-only access](/help/analysis-workspace/curate-share/view-only
 >
 >* A project might become inaccessible if many users attempt to access a given link at the same time. By default, more than 190 people can access a single link every 5 minutes. If your organization reaches this limit, wait 5 minutes and then try accessing the link again.
 >
->* For both [!DNL Healthcare Shield] and [!DNL Privacy & Security Shield] licenses, the [!UICONTROL Share with anyone] feature requires Experience Cloud authentication. For [!DNL Healthcare Shield] customers, a "HIPAA compliance" warning appears, but you can still use this feature after authenticating to Experience Cloud. 
+>* For both [!DNL Healthcare Shield] and [!DNL Privacy & Security Shield] licenses, the [!UICONTROL Share with anyone] feature requires CX Enterprise authentication. For [!DNL Healthcare Shield] customers, a "HIPAA compliance" warning appears, but you can still use this feature after authenticating to CX Enterprise. 
 
 >[!BEGINSHADEBOX]
 
@@ -178,13 +214,13 @@ To share an Analysis Workspace project with anyone:
 
    * **[!UICONTROL Require Experience Cloud authentication]:** 
    
-     When this option is enabled, the only users who can access the project are those who can log in to the Adobe Experience Cloud organization where the project that you are sharing was created. However, users you share with do not need to have access to Customer Journey Analytics.
+     When this option is enabled, the only users who can access the project are those who can log in to the CX Enterprise (Experience Cloud) organization where the project that you are sharing was created. However, users you share with do not need to have access to Customer Journey Analytics.
 
      Customer Journey Analytics administrators can configure this preference for the company, as described in [Preferences](/help/analysis-workspace/user-preferences.md). You might encounter the following scenarios, depending on how the administrator configured this option:
      
      * If this option is not visible, your Customer Journey Analytics administrator did not enable this feature. 
 
-     * If this option is enabled and you can't disable it, the locked option means that your Customer Journey Analytics administrator requires Experience Cloud authentication for anyone accessing Analysis Workspace projects. This is always the case for organizations who license Healthcare Shield. 
+     * If this option is enabled and you can't disable it, the locked option means that your Customer Journey Analytics administrator requires CX Enterprise authentication for anyone accessing Analysis Workspace projects. This is always the case for organizations who license Healthcare Shield. 
 
 1. Next to the **[!UICONTROL Share with anyone (no login required)]** field, select ![Link](/help/assets/icons/Link.svg) to copy the link to your system clipboard. 
 
@@ -192,7 +228,7 @@ To share an Analysis Workspace project with anyone:
    
    Any person you share the link with can view the Analysis Workspace project.
 
-1. (Optional) You can select ![Generate new link icon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) to remove access from users who previously received a link to the project. A new link is generated that you can share with users who you want to access the project.
+1. (Optional) You can select ![Generate new link icon](/help/assets/icons/Refresh.svg) to remove access from users who previously received a link to the project. A new link is generated that you can share with users who you want to access the project.
 
 1. Select **[!UICONTROL Close]** to close the share dialog box. Your changes are automatically saved. 
 

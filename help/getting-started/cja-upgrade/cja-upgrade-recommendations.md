@@ -5,6 +5,46 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
+TQID: 'https://experienceleague.adobe.com/PAKNNU-oabmCvYh-YBzTyzMjlsYoPRXJaGIq06TmZ40'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
+  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Upgrade from Adobe Analytics to Customer Journey Analytics
 
@@ -37,7 +77,7 @@ After you have enough historical data using the Experience Platform Web SDK and 
 
    * Highly performant reporting and data availability because Adobe Experience Platform is built to power real-time personalization use cases
 
-   * Consolidate implementation for Adobe Experience Cloud data collection between other Experience Cloud products (AJO, RTCDP, and so forth)
+   * Consolidate implementation for Adobe CX Enterprise data collection between other CX Enterprise products (AJO, RTCDP, and so forth)
 
    * Not reliant on Adobe Analytics nomenclature (prop, eVar, event, and so forth)
 
@@ -143,7 +183,7 @@ Each step provides a high-level explanation of a more detailed process. Follow t
    
    Use [the marketing channels function template](/help/data-views/derived-fields/derived-fields.md#marketing-channels){target="_blank"} in derived fields to quickly create a derived field for marketing channels.
 
-1. Compare data in Adobe Analytics from your old implementation to data in Customer Journey Analytics from your new implementation and make sure you understand any differences and why they exist. <!-- Expound on this. Link to somewhere? There will be a lot of differences. -->
+1. [Compare data in Adobe Analytics from your old implementation to data in Customer Journey Analytics from your new implementation](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/data-validation-aa-cja) and make sure you understand any differences and why they exist. 
 
 1. Bring historical data from Adobe Analytics using the Analytics source connector: 
 
@@ -240,7 +280,7 @@ Generic upgrade steps are also available.
 
    * Highly performant reporting and data availability because Adobe Experience Platform is built to power real-time personalization use cases
 
-   * Consolidate implementation for Adobe Experience Cloud data collection between other Experience Cloud products (AJO, RTCDP, and so forth)
+   * Consolidate implementation for Adobe CX Enterprise data collection between other CX Enterprise products (AJO, RTCDP, and so forth)
 
    * Not reliant on Adobe Analytics nomenclature (prop, eVar, event, and so forth)
 
@@ -256,7 +296,8 @@ Generic upgrade steps are also available.
    
    * View the data collected with your original Adobe Analytics implementation (either AppMeasurement, the Analytics Extension, or the Web SDK Extension) within Customer Journey Analytics. You can compare this data side-by-side with that of your new Web SDK implementation. 
    
-     You can keep the Analytics source connector running until you are familiar and comfortable with the differences. <!--elaborate on what those differences are? -->
+     You can keep the Analytics source connector running until you are familiar and comfortable with the differences. <!--elaborate on what those differences are? 
+-->
 
 <!--
 

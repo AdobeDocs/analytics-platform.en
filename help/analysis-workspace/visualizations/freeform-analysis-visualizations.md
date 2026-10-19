@@ -5,6 +5,26 @@ title: Visualizations Overview
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
+TQID: 'https://experienceleague.adobe.com/CQjTrdabJOkSDNLB5pCApq2-5NSZe1BNvWvyXr-CLmc'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: aff2ef09-fc60-4018-9197-e2befd623064
+    internal-label: Anomaly detection
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Visualizations overview
 
@@ -68,7 +88,7 @@ See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Add visualizatio
 
    * From the context menu in a Freeform table, select **[!UICONTROL Visualize]**. Then select the visualization from the submenu. Based on the current selection in the table, Workspace determines which visualization to offer and interprets the data to build the requested visualization.
 
-When you add a simple visualization, for example a [Line](line.md) of [Bar](bar.md) visualization, the visualization uses the closest freeform table as the data source. You can always modify the [data source](#data-source) of a your visualizations.
+When you add a simple visualization, for example a [Line](line.md) of [Bar](bar.md) visualization, the visualization uses the closest freeform table as the data source. You can always modify the [data source](#data-source) of your visualizations.
 
 
 ## Manage visualizations

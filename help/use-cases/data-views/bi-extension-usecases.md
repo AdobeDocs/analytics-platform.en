@@ -5,6 +5,29 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
+autotag-review: '2026-05-19T08:00:09.968Z'
+TQID: 'https://experienceleague.adobe.com/b3A-2MvNktn6xjViMWgYGc-ToLauQjx65BI6mb-UlxM'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+subfeature_v2:
+  - id: f24857a4-4b64-4b25-b237-d43026362144
+    internal-label: BI extension
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
 ---
 # BI extension use cases
 
@@ -50,7 +73,8 @@ The **understand** use cases provide more details on:
 * Visualization similarities and differences between Customer Journey Analytics and BI tools.
 * Caveats of each of the BI tools you should be aware of.
 
-<!-- Now documented in separate articles
+<!-- 
+Now documented in separate articles
 
 ## Connect and validate
 
@@ -599,7 +623,7 @@ You should see a visualization and table similar as shown below.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    ## Daily Events
@@ -737,7 +761,7 @@ You should see a visualization and table similar as shown below.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    ## Hourly Events
@@ -904,7 +928,7 @@ You should see a visualization and table similar as shown below.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    ## Hourly Events
@@ -1131,7 +1155,7 @@ You should see a visualization and table similar as shown below.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    library(tidyr)
@@ -1391,7 +1415,7 @@ You should see a visualization and table similar as shown below.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    ## Multiple dimensions ranked
@@ -1560,7 +1584,7 @@ You should see a visualization and table similar as shown below.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    ## Count Distinct
@@ -1707,7 +1731,7 @@ You should see a visualization and table similar as shown below.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk. Ensure you use the appropriate date range name. For example, `Last Year 2023`.
+1. Enter the following code block in a new chunk. Ensure you use the appropriate date range name. For example, `Last Year 2023`.
 
    ```R
    ## Monthly Events for Last Year
@@ -1875,7 +1899,7 @@ You should see a visualization and table similar as shown below.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk. Ensure you use the appropriate filter name. For example, `Fishing Products`.
+1. Enter the following code block in a new chunk. Ensure you use the appropriate filter name. For example, `Fishing Products`.
 
    ```R
    ## Dimension filtered by name
@@ -2040,7 +2064,7 @@ You then can use that segment in an example **[!UICONTROL Using Dimension Values
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk. Ensure you use an appropriate category. For examplee, `Hunting`.
+1. Enter the following code block in a new chunk. Ensure you use an appropriate category. For examplee, `Hunting`.
 
    ```R
    ## Dimension 1 Filtered by Dimension 2 value
@@ -2296,7 +2320,7 @@ The query is excuted by the BI extension as defined in Jupyter Notebook.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    ## Dimension 1 Sorted
@@ -2581,7 +2605,7 @@ The query is excuted by the BI extension as defined in Jupyter Notebook.
 
 >[!TAB RStudio]
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    ## Dimension 1 Limited
@@ -2841,7 +2865,7 @@ The Customer Journey Analytics components (dimensions, metrics, filters, calcula
 
 **Custom transformations**
 
-1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
+1. Enter the following code block in a new chunk.
 
    ```R
    df <- dv %>%

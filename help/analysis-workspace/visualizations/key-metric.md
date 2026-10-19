@@ -4,6 +4,25 @@ title: Key Metric Summary
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
+autotag-review: '2026-05-19T08:31:00.048Z'
+TQID: 'https://experienceleague.adobe.com/y3VfcvJp8lCmBLHy4-zPEb6Y7dzjfcDPjSMlKGPNR-A'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
 ---
 # Key metric summary {#key-metric-summary}
 
@@ -64,7 +83,8 @@ This visualization addresses various common use cases, including:
 
 1. Select **[!UICONTROL Build]**.
 
-<!--## How the Key Metric Summary visualization handles the comparison date range
+<!--
+## How the Key Metric Summary visualization handles the comparison date range
 
 (This will probably release in January. Per Jaden Howell)
 
@@ -89,7 +109,8 @@ Comparison date range is set to a non-relative date range, such as 'Feb 2nd, 202
 >
 >Last week is relative to the day the project is opened on, but it is not based on the panel's date range of 'Yesterday'. In other cases, such as if the panel's date range was 'This week', it may be relative.
 
-When you change the panel's date range to '4 days ago', the comparison date range remains at the previous selection. -->
+When you change the panel's date range to '4 days ago', the comparison date range remains at the previous selection. 
+-->
 
 The output of the key metric summary looks like:
 

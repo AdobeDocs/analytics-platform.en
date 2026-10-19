@@ -4,6 +4,22 @@ title: Add And Manage Comments In Projects
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
+TQID: https://experienceleague.adobe.com/DWntPKJ6AU2MKBWWVc3MxWYFYXUPlmoMbk8pAdrKYg4
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Add and manage comments in projects {#comment-on-projects}
 
@@ -107,7 +123,7 @@ The comment feature in Analysis Workspace makes it easier to collaborate with ot
 
 Consider the following when using the @ symbol to include people in a comment: 
    
-* People you include receive notifications based on their Adobe Experience Cloud notification settings.
+* People you include receive notifications based on their CX Enterprise notification settings.
 
   For more information, see [Receive notifications about comments](#receive-notifications-about-comments).
 
@@ -143,9 +159,9 @@ To include another person in your comment:
 
 ## Receive notifications about comments
 
-Project owners and [specific people you mention](#include-others-in-a-comment) receive notifications based on their Adobe Experience Cloud notification settings. By default, they receive an in-app notification, visible from the [Experience Cloud notification](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) icon ![Experience Cloud notification icon](assets/experience-cloud-notification.svg) in Customer Journey Analytics. 
+Project owners and [specific people you mention](#include-others-in-a-comment) receive notifications based on their CX Enterprise notification settings. By default, they receive an in-app notification, visible from the [CX Enterprise notification](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) icon ![CX Enterprise notification icon](assets/experience-cloud-notification.svg) in Customer Journey Analytics. 
 
-Additionally, people can configure their Experience Cloud notification settings to receive email notifications and Slack notifications by [subscribing to email notifications](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) and [subscribing to Slack notifications](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
+Additionally, people can configure their CX Enterprise notification settings to receive email notifications and Slack notifications by [subscribing to email notifications](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) and [subscribing to Slack notifications](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
 
 ## Place a badge for an existing comment
 

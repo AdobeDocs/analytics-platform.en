@@ -5,6 +5,82 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
+TQID: 'https://experienceleague.adobe.com/3TqNaNKkAo2Ug92F5244fVbnv-Po6x5l2sAf3ZHZuCw'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
+subfeature_v2:
+  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+    internal-label: Templates
+  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+    internal-label: Content Analytics
+  - id: aff2ef09-fc60-4018-9197-e2befd623064
+    internal-label: Anomaly detection
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
+  - id: d13dba12-733d-4914-8d92-d643658bbe5d
+    internal-label: Forecasting
+  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
+  - id: d47d27f9-fcd6-414d-a127-a8a739dac811
+    internal-label: Experimentation panel
+  - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: e0be3531-517c-451a-b2ff-6fcafd56ca0d
+    internal-label: Media concurrent viewers panel
+  - id: e2ff1689-912e-40ed-a029-ed8d02d9f34a
+    internal-label: Media playback time spent panel
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+    internal-label: Alerts
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Customer Journey Analytics feature support
 
@@ -14,6 +90,8 @@ The following tables list which features are unique to Customer Journey Analytic
 
 The following table lists features that are available in Customer Journey Analytics, but are not supported in Adobe Analytics.
 
+<!-- FOLLOW-UP (Thursday): When the in-app Coworker experience launches, point the Coworker row link to /help/analysis-workspace/coworker.md. FOLLOW-UP (later): When Coworker becomes available in Adobe Analytics, remove the "coming soon" sentence and move the Coworker row to the Fully supported table. -->
+
 | Feature | More Details |
 | --- | --- |
 | **Ability to combine datasets (such as Adobe Analytics report suites)** | Customer Journey Analytics allows you to [combine data](/help/connections/combined-dataset.md) from multiple report suites as if they were a single report suite in Adobe Analytics. |
@@ -22,8 +100,8 @@ The following table lists features that are available in Customer Journey Analyt
 | **BI Extension** | The [BI Extension](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) lets you connect Customer Journey Analytics directly to popular BI visualization tools, such as Power BI or Tableau. By using this extension, you can have your BI reports precisely match what you see in Analysis Workspace and other Customer Journey Analytics reporting interfaces. This extension offers a much easier way to get BI reporting for Customer Journey Analytics without the need to recreate reports/metrics from raw data. |
 | **Comments in Workspace projects** | Comments allow you to share insights and ask questions within the context of an [Analysis Workspace project](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects?lang=en). This can streamline discussions about the data, keeping conversations within the context of the data that is being discussed. |
 | **Content Analytics** | [Content Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics) helps marketers to understand how content impacts the key performance indicators that a business has defined. On top of the behavioral data, Content Analytics collects data on how content is consumed and how content drives impact. |
+| **Coworker** | [Adobe CX Enterprise Coworker](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/analytics-overview) is an AI teammate that answers natural-language questions about your data. It uses components from your data views and your actual data to build visualizations, find insights, and explain why metrics changed. Coworker is coming soon to Adobe Analytics. |
 | **Cross-Device Analytics** | Customer Journey Analytics supports the seamless combination of device-specific datasets from unauthenticated and authenticated sessions. Customer Journey Analytics offers to backfill historical data to known devices. In Adobe Analytics, this capability is limited to a single report suite and the use of a device graph. |
-| **Data Insights Agent** | The [Data Insights Agent](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai?lang=en), part of the AI Assistant in Customer Journey Analytics, is a generative AI conversation agent. It uses components from your data view and your actual data to quickly and efficiently answer data-centric questions by building relevant visualizations in Analysis Workspace. |
 | **Dimension enhancements** | Customer Journey Analytics provides greater flexibility when using dimensions: <ul><li>**Custom numeric-based dimensions**: [Create your own numeric-based dimensions within a data view](/help/data-views/create-dataview.md#components).</li><li>**Sort string-based dimensions**: [Sort string-based dimensions alphabetically in a freeform table.](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>In Adobe Analytics, only a handful of built-in numeric dimensions were available, and sorting by string-based dimensions was not possible.</p> |
 | **Derived Fields** | [Derived fields](/help/data-views/derived-fields/derived-fields.md) allow for report-time transformations to your data. Data can be combined, corrected, or created on the fly and these transformations apply retroactively to all reporting. |
 | **Enhanced security and privacy options** - HIPAA readiness | Customer Journey Analytics is HIPAA ready and offers [additional security options](/help/privacy/cmk.md) for regulation compliance. Adobe Analytics is not HIPAA ready. |
@@ -31,7 +109,7 @@ The following table lists features that are available in Customer Journey Analyt
 | **Forecasting** | [Forecasting](/help/analysis-workspace/c-forecast/forecasting.md) is an AI/ML capability that includes a statistical prediction for time-series-related data based on the historical data that already exists in Customer Journey Analytics. Forecasts can appear in freeform tables and line graph visualizations. |
 | **Guided analysis** | [Guided analysis](/help/guided-analysis/overview.md) enables users to self-serve high quality data and insights about the customer journey through guided workflows, built on the cross-channel data of Customer Journey Analytics. |
 | **Intelligent Captions** | [Intelligent captions](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions) use advanced Machine Learning and Generative AI to provide valuable natural-language insights for Workspace visualizations. Intelligent captions are supported for the following visualizations: Line, Multi-line, Bar, Horizontal bar, Donut, Area, Flow, and Fallout. |
-| **Journey Canvas** | [Journey canvas](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en) is a visualization in Analysis Workspace that allows you to analyze how people proceed through or fall out of a defined journey. |
+| **Journey canvas** | [Journey canvas](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en) is a visualization in Analysis Workspace that allows you to analyze how people proceed through or fall out of a defined journey. |
 | **Product Usage** | [Product usage](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview) shows you how your organization uses Customer Journey Analytics. |
 | **Report-time transformations** | [Data views](/help/data-views/data-views.md) in Customer Journey Analytics allow you to interpret data from a connection. You can alter or remove data without changing your implementation. Use substrings to manipulate dimensions. Create metrics from any value, or filter subevents. All of these transformations are done non-destructively. Adobe Analytics provides limited capabilities through virtual report suites and custom session length. |
 | **Shared metrics and dimensions across data views** | Shared metrics and dimensions allow you to [apply dimension and metric settings across multiple data views](/help/data-views/shared-metrics-dimensions/smd-overview.md). Changes made to a shared dimension or metric apply to all instances of that dimension or metric across all applicable data views. |
@@ -82,7 +160,7 @@ The following table lists features that are available in Customer Journey Analyt
 
 | Feature | Notes |
 | --- | --- |
-| **Advertising Cloud** | You can [collect historical data for AMO IDs and EF IDs for use in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/advertising/integrations/analytics/planning/rvars-to-evars). |
+| **Advertising** | You can [collect historical data for AMO IDs and EF IDs for use in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/advertising/integrations/analytics/planning/rvars-to-evars). |
 | **Alerts** | The process of [using alerts in Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md) is nearly identical to using alerts in Adobe Analytics. <p>However, due to the timing of data collection in Customer Journey Analytics, hourly alerts are not available. In Customer Journey Analytics, alerts can be configured for daily, weekly, or monthly.</p> |
 | **Analytics for Target (A4T)** | The [integration between Adobe Customer Journey Analytics and Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja) provides powerful analysis and timesaving tools for your optimization program. |
 | **Audience publishing** | Supported if licensed with Adobe's Customer Data Platform or Journey Optimizer products. [Audience Publishing](/help/components/audiences/audiences-overview.md) sends audiences to Real-time Customer Profile in Experience Platform. |

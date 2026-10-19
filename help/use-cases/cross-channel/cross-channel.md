@@ -5,6 +5,33 @@ exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
 role: User
+autotag-review: '2026-05-19T09:37:23.903Z'
+TQID: 'https://experienceleague.adobe.com/zguhaVwn2XtF0vSGqYAgjiL2IwUq-DMH-WUd0uQRnPc'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+subfeature_v2:
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
+  - id: b7fb3355-1f54-4380-bce3-d444b226c0e9
+    internal-label: Cross channel analysis
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Cross-channel analysis {#cross-channel}
 
@@ -26,11 +53,11 @@ Cross-channel analysis enables a single consolidated view of customer behavior a
 1. [Create schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) for data to be ingested.
 1. [Create datasets](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) for data to be ingested.
 1. [Ingest data into Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html):
-   1. Event-based data ![event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) from website or mobile app through the Edge Network or Analytics source connector.
-   2. Profile data ![profile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) (for example from a CRM system, call center application, loyalty application).
-   3. Lookup data ![lookup](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) (for example product name, category from a product information system).
+   1. Event-based data ![event](/help/assets/icons/Events.svg) from website or mobile app through the Edge Network or Analytics source connector.
+   2. Profile data ![profile](/help/assets/icons/User.svg) (for example from a CRM system, call center application, loyalty application).
+   3. Lookup data ![lookup](/help/assets/icons/Search.svg) (for example product name, category from a product information system).
 
-1. Use a common namespace ID across datasets. Use [Stitching](../../stitching/overview.md) to elevate any event-based dataset ![data refresh](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataRefresh_18_N.svg) in respect to providing the common ID on each row. Note that Customer Journey Analytics does not currently use the Experience Platform Profile or Identity services for stitching.
+1. Use a common namespace ID across datasets. Use [Stitching](../../stitching/overview.md) to elevate any event-based dataset ![data refresh](/help/assets/icons/DataRefresh.svg) in respect to providing the common ID on each row. Note that Customer Journey Analytics does not currently use the Experience Platform Profile or Identity services for stitching.
 1. Perform any custom data preparation to ensure a common key across time series datasets to be ingested into Customer Journey Analytics.
 1. Give lookup data a primary ID that can join to a field in the event data. Counts as rows in licensing.
 1. Set the same primary ID for profile data as the primary ID of the event data.

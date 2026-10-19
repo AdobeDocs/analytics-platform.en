@@ -5,6 +5,46 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
+TQID: 'https://experienceleague.adobe.com/BuizkumbeMPhg7dWvJrFta3CYfQnqivOlXd2RtX9gm4'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
+  - id: df28738e-9c71-4aa8-929e-edde22340cc6
+    internal-label: Data Dictionary
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
 ---
 # Ingest data via the Web SDK
 
@@ -28,8 +68,7 @@ To accomplish this, you need to:
 
 >[!NOTE]
 >
-> This quick start guide is a simplified guide on how to ingest data collected from your site into Adobe Experience Platform and use in Customer Journey Analytics. It is highly recommended to study the additional information when referred to. 
-
+> This quick start guide is a simplified guide on how to ingest data collected from your site into Adobe Experience Platform and use in Customer Journey Analytics. It is highly recommended to study the additional information when referred to.
 
 ## Set up a schema and dataset
 
@@ -49,7 +88,7 @@ To set up your schema:
 1. In the Adobe Experience Platform UI, in the left rail, select **[!UICONTROL Schemas]** within [!UICONTROL DATA MANAGEMENT].
 
 1. Select **[!UICONTROL Create schema]**. 
-. 
+
 1. In the Select a class step of the Create schema wizard: 
 
    1. Select **[!UICONTROL Experience Event]**.
@@ -274,7 +313,7 @@ To create and configure the Adobe Experience Platform Web SDK extension:
 
 See [Configure the Adobe Experience Platform Web SDK extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html) for more information.
 
-The Web SDK includes the [!UICONTROL Adobe Experience Cloud ID Service] natively, so you do not need to add the ID service extension to your tag.
+The Web SDK includes the Experience Platform Identity Service, so you do not need to add the [!UICONTROL Experience Cloud ID Service] tag extension to your property.
 
 #### **Data Elements**
 
@@ -306,27 +345,7 @@ To define a page name data element:
 
    - Select **[!UICONTROL Save]**.
 
-You now want to set up a data element referencing the Experience Cloud ID that is automatically provided by the Adobe Experience Platform Web SDK and available through the Experience Cloud ID Service extension.
-
-To define an ECID data element:
-
-1. Select **[!UICONTROL Data Elements]** in the left rail.
-
-2. Select **[!UICONTROL Add Data Element]**.
-
-3. In the [!UICONTROL Create Data Element] dialog:
-
-   - Name your data element, for example `ECID`.
-
-   - Select **[!UICONTROL Experience Cloud ID Service]** from the [!UICONTROL Extension] list.
-
-   - Select **[!UICONTROL ECID]** from the [!UICONTROL Data Element Type] list.
-
-     ![ECID Data Element](./assets/ecid-dataelement.png)
-
-   - Select **[!UICONTROL Save]**.
-
-Finally, you now want to map any of your specific data elements to the schema you defined earlier. You define another data element which provides a representation of your XDM schema.
+Next, you now want to map any of your specific data elements to the schema you defined earlier. You define another data element which provides a representation of your XDM schema.
 
 To define an XDM object data element:
 
@@ -345,13 +364,6 @@ To define an XDM object data element:
    - Select your sandbox from the [!UICONTROL Sandbox] list.
 
    - Select your schema from the [!UICONTROL Schema] list.
-
-   - Map the `identification > core > ecid` attribute, defined in your schema, to the ECID data element. Select the cylinder icon to easily pick the ECID data element from your list of data elements.
-
-     ![Pick ECID Data Element](./assets/pick-ecid-dataelement.png)
-
-        ![Map ECID Data Element](./assets/map-ecid.png)
-
 
    - Map the `web > webPageDetails > name` attribute, defined in your schema, to the Page Name data element.
 
@@ -595,4 +607,4 @@ See [Analysis Workspace overview](../analysis-workspace/home.md) for more inform
 
 >[!SUCCESS]
 >
->You have completed all the steps. Starting by defining what data you want to collect (schema) and where to store it (dataset) in Adobe Experience Platform. You then configured a datastream on the Edge Network to ensure that data can be forwarded to that dataset. Then you defined and deployed your tag containing the extensions (Adobe Experience Platform Web SDK, Experience Cloud ID Service), data elements, and rules to capture data from your website and send that data to your datastream. You defined a connection in Customer Journey Analytics to use your website tracking data and other data. Your data view definition allowed you to specify which dimension and metrics to use and finally you created your first project visualizing and analyzing your data.
+>You have completed all the steps. Starting by defining what data you want to collect (schema) and where to store it (dataset) in Adobe Experience Platform. You then configured a datastream on the Edge Network to ensure that data can be forwarded to that dataset. Then you defined and deployed your tag containing the Adobe Experience Platform Web SDK extension, data elements, and rules to capture data from your website and send that data to your datastream. You defined a connection in Customer Journey Analytics to use your website tracking data and other data. Your data view definition allowed you to specify which dimension and metrics to use and finally you created your first project visualizing and analyzing your data.

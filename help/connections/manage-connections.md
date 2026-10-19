@@ -6,6 +6,35 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
+autotag-review: '2026-05-19T08:50:02.853Z'
+TQID: 'https://experienceleague.adobe.com/iJ5jp3wtWSrJzCnJqIceIHwwLideF-U2puXvit5GFac'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+subfeature_v2:
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
 # Manage connections {#manage-connections}
 
@@ -20,9 +49,9 @@ role: Admin
 >abstract="Cancels the advanced Customer Journey Analytics reporting capabilities with Journey Optimizer."
 
 
-Once you have [created or edited one or more connections](/help/connections/create-connection.md), you can manage them in **[!UICONTROL Connections]**. The [!UICONTROL Connections] interface let you:
+Once you have [created or edited one or more connections](/help/connections/create-connection.md), you can manage them in **[!UICONTROL Connections]**. The [!UICONTROL Connections] interface lets you:
 
-* View all your connections at a glance, including the owner, the sandbox, and when the connections were created and modified.
+* View all your connections, including the owner, the sandbox, and when the connections were created and modified.
 * Edit a connection.
 * Delete a connection.
 * Create a data view from a connection.
@@ -39,7 +68,7 @@ Once you have [created or edited one or more connections](/help/connections/crea
 The **[!UICONTROL List]** interface is the default interface for Connections. If not selected, select the **[!UICONTROL List]** tab to access the interface.
 
 The **[!UICONTROL List]** interface shows a table of all connections available. 
-
+△
 ![list view](assets/list-view.png)
 
 The following columns or icons are available in the table.
@@ -47,9 +76,9 @@ The following columns or icons are available in the table.
 | Column or Icon | Description |
 | --- | --- |
 | **[!UICONTROL _Name_]** | The connection's friendly name. Select the hyperlinked name to see the [details of the connection](#connection-details). |
-| ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | To view information about [!UICONTROL Datasets included], [!UICONTROL Sandbox], [!UICONTROL Owner], and more, select ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) next to the connection name.<p>A popup window displays details about the dataset. <p>![Connection info popup](assets/connection-info-popup.png) |
-| ![Data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) | To [create a data view](#create-a-data-view) for the connection, select ![Data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg). This icon only shows when no data view is already associated with the connection. |
-| ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) to open a context menu. You can select: <p>![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** to [edit](#edit-a-connection) a connection.<p>![Delete](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Delete]** to [delete](#delete-a-connection) a connection.<p>![Data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Create new data view]** to [create a new data view](#create-a-data-view) for the connection.<p>![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Connection map]** to view a [connection map](#map-a-connection) for the connection. |
+| ![Information](/help/assets/icons/InfoOutline.svg) | To view information about [!UICONTROL Datasets included], [!UICONTROL Sandbox], [!UICONTROL Owner], and more, select ![Information](/help/assets/icons/InfoOutline.svg) next to the connection name.<p>A popup window displays details about the dataset. <p>![Connection info popup](assets/connection-info-popup.png) |
+| ![Data view](/help/assets/icons/DataAdd.svg) | To [create a data view](#create-a-data-view) for the connection, select ![Data view](/help/assets/icons/DataAdd.svg). This icon only shows when no data view is already associated with the connection. |
+| ![More](/help/assets/icons/More.svg) | Select ![More](/help/assets/icons/More.svg) to open a context menu. You can select: <p>![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** to [edit](#edit-a-connection) a connection.<p>![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** to [delete](#delete-a-connection) a connection.<p>![Data view](/help/assets/icons/DataAdd.svg) **[!UICONTROL Create new data view]** to [create a new data view](#create-a-data-view) for the connection.<p>![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Connection map]** to view a [connection map](#map-a-connection) for the connection. |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Connection type]** | The type of connection: **[!UICONTROL Person]**-based or **[!UICONTROL Account]**-based connection. |
 | **[!UICONTROL Datasets]** | One or more links to the datasets that are part of the connection. You can select the dataset hyperlink to view the dataset in the connection. If more datasets are part of the selected connection, select **[!UICONTROL +*x* more]** to show a **[!UICONTROL Datasets included]** panel. This panel shows links to all datasets and an option to ![Search](/help/assets/icons/Search.svg) search for specific datasets that is part of the connection.<p>![Datasets included](assets/datasets-included.png)<p>Select a dataset name to open the dataset in the Experience Platform interface in a new tab. |
 | **[!UICONTROL Sandbox]** | The [Experience Platform sandbox](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) from which this connection draws its datasets. You select this sandbox when you created the connection. You cannot change the sandbox once a connection is saved.|
@@ -61,11 +90,11 @@ The following columns or icons are available in the table.
 | **[!UICONTROL Integrations]** | Shows any Experience Platform applications that are enabled with the connection.  |
 | **[!UICONTROL Use in CJA]** | Shows whether the connection has been enabled for use with Customer Journey Analytics. |
 
-To configure which columns to display in the table, select ![Column settings](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). In the **[!UICONTROL Customize table]** dialog, select the columns to show. Then select **[!UICONTROL Apply]**.
+To configure which columns to display in the table, select ![Column settings](/help/assets/icons/ColumnSetting.svg). In the **[!UICONTROL Customize table]** dialog, select the columns to show. Then select **[!UICONTROL Apply]**.
 
 ### Search connections
 
-You can quickly search connections using the ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) box.
+You can quickly search connections using the ![Search](/help/assets/icons/Search.svg) box.
 
 ### Filter connections
 
@@ -86,14 +115,14 @@ Select ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Hide filters]** to
 
 To edit a connection: 
 
-1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the connection name
-1. Select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** from the context menu.
+1. Select ![More](/help/assets/icons/More.svg) next to the connection name
+1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** from the context menu.
 
 Alternatively, you can:
 
 1. Select the connection row.
 
-1. Select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** from the blue action bar.
+1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** from the blue action bar.
 
 See [Create or edit a connection](create-connection.md) for more information.
 
@@ -102,14 +131,14 @@ See [Create or edit a connection](create-connection.md) for more information.
 
 To delete a connection:
 
-1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the connection name.
-1. Select ![Delete](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Delete]**.
+1. Select ![More](/help/assets/icons/More.svg) next to the connection name.
+1. Select ![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]**.
 
 Alternatively, you can:
 
 1. Select the connection row.
 
-1. Select ![Delete](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Delete]** from the blue action bar.
+1. Select ![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** from the blue action bar.
 
 When you delete a connection, a **[!UICONTROL Delete connection]** panel indicates which data views are deleted and which workspace projects are affected.
 
@@ -128,24 +157,24 @@ See [Deletion implications](/help/technotes/deletion.md) for more information ab
 
 To create a data view for a connection:
 
-1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the connection name.
-1. Select ![Add data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Create new data view]**.
+1. Select ![More](/help/assets/icons/More.svg) next to the connection name.
+1. Select ![Add data view](/help/assets/icons/DataAdd.svg) **[!UICONTROL Create new data view]**.
 
 Alternatively, you can:
 
 1. Select the connection row.
 
-1. Select ![Add data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Create data view]** from the blue action bar.
+1. Select ![Add data view](/help/assets/icons/DataAdd.svg) **[!UICONTROL Create data view]** from the blue action bar.
 
 See [Create or edit a data view](/help/data-views/create-dataview.md) for more information.
 
 ### Journey Optimizer connections
 
-You can use a Journey Optimizer connection in Customer Journey Analytics to bring the following additional value to your connection:
+You can use a Journey Optimizer connection in Customer Journey Analytics to provide the following additional value to your connection:
 
 * Perform in-depth analysis of Journey Optimizer data within Customer Journey Analytics (by using the **[!UICONTROL Analyze in CJA]** button within Journey Optimizer).
 
-  For more information, see [Analyze in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template) in the Journey Optimizer documentation. 
+  For more information, see [Analyze in Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template). 
 
 * Edit the Journey Optimizer connection and associated data views.
 
@@ -154,7 +183,7 @@ You can use a Journey Optimizer connection in Customer Journey Analytics to brin
 
 >[!IMPORTANT]
 >
->When you enable a Journey Optimizer connection for use with Customer Journey Analytics as described in this section, each Row of Data within the connection counts toward your licensed Rows of Data each month for Customer Journey Analytics and appears within the Connections Usage UI. Select the **[!UICONTROL Use in CJA]** option on the connection only if you are comfortable with the additional usage of Rows of Data in Customer Journey Analytics. 
+>When you enable a Journey Optimizer connection for Customer Journey Analytics, each row counts toward your monthly licensed rows and appears in the Connections Usage UI. Select the **[!UICONTROL Use in CJA]** option on the connection only if you are comfortable with the additional usage of Rows of Data in Customer Journey Analytics. 
 >
 >**If you were entitled to both Customer Journey Analytics and Journey Optimizer between October 2024 and October 2025, see the following document about [AJO-Enabled Connections](https://view.adobe.com/viewer/1ed94fc35c7860b260766c620889e7a0#1)**. 
 
@@ -231,7 +260,7 @@ To remove the connection from Customer Journey Analytics:
 
 To view a [connection map](/help/connections/create-connection.md#connection-map) that details the relationships between the datasets that are part of a connection:
 
-1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) next to the connection name.
+1. Select ![More](/help/assets/icons/More.svg) next to the connection name.
 1. Select ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Connection map]**. 
 
 ### Connection details {#connection-detail}
@@ -248,15 +277,15 @@ The Connections details interface provides a detailed view of the status of a co
 
 | User Interface | Description |
 | --- | --- |
-| ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit Connection]** | To edit the details of a connection, select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit Connection]**. See [Create or edit a connection](create-connection.md) for more information. |
+| ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit Connection]** | To edit the details of a connection, select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit Connection]**. See [Create or edit a connection](create-connection.md) for more information. |
 | **[!UICONTROL *Dataset selector*]** | Select one or all datasets to show details for in the connection. You cannot multi-select datasets. Defaults to **[!UICONTROL All datasets]**. |
-| **[!UICONTROL *Date range selector*]** | Select a data range to show details for in the connection. Edit start date, end date, or select ![Calendar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) to open the date range selector. In the date range selector, select a date range by using one of the predefined periods (for example **[!UICONTROL Last 6 months]**) or use the calendar to select start and end date. Select **[!UICONTROL Apply]** to apply the new date range to the connection details.|
+| **[!UICONTROL *Date range selector*]** | Select a data range to show details for in the connection. Edit start date, end date, or select ![Calendar](/help/assets/icons/Calendar.svg) to open the date range selector. In the date range selector, select a date range by using one of the predefined periods (for example **[!UICONTROL Last 6 months]**) or use the calendar to select start and end date. Select **[!UICONTROL Apply]** to apply the new date range to the connection details.|
 | **[!UICONTROL Records of event data available]** | The total number of event dataset rows available for reporting, **for the entire connection**. This count is independent of any date range or dataset selection. |
-| [!UICONTROL **[!UICONTROL Metrics]**] | Summarize the event, lookup, profile and summary dataset records that are added, skipped, and deleted, and the number of batches added. These metrics are based on **the dataset and date range that you have selected**.<p>Select **[!UICONTROL Check detail]** to show the **[!UICONTROL Check skipped detail]** popup. The popup lists the number of skipped records and the reason for all event datasets or selected dataset.<p>![Skipped records](assets/skipped-records.png)<p>Select ![Info](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) popup with more information. For some skipped reasons, like [!UICONTROL Empty visitor ID], the popup displays **[!UICONTROL Sample PSQL for EQS]** (Experience Platform for Query Service) you can use in [Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) to query for the skipped records in the dataset. Select ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copy sample PSQL for EQS]** to copy the SQL. |
+| [!UICONTROL **[!UICONTROL Metrics]**] | Summarize the event, lookup, profile and summary dataset records that are added, skipped, and deleted, and the number of batches added. These metrics are based on **the dataset and date range that you have selected**.<p>Select **[!UICONTROL Check detail]** to show the **[!UICONTROL Check skipped detail]** popup. The popup lists the number of skipped records and the reason for all event datasets or selected dataset.<p>![Skipped records](assets/skipped-records.png)<p>Select ![Info](/help/assets/icons/InfoOutline.svg) popup with more information. For some skipped reasons, like [!UICONTROL Empty visitor ID], the popup displays **[!UICONTROL Sample PSQL for EQS]** (Experience Platform for Query Service) you can use in [Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) to query for the skipped records in the dataset. Select ![Copy](/help/assets/icons/Copy.svg) **[!UICONTROL Copy sample PSQL for EQS]** to copy the SQL. |
 | **[!UICONTROL Records added]** | A visualization to indicate how many rows were added in the selected time period, **for the dataset and date range you have selected**. Updates every 10 minutes. |
 | **[!UICONTROL Records skipped]** | A visualization to indicate how many rows were skipped in the selected time period, **for the dataset and date range you have selected**. Reasons for skipping records include: missing timestamps, missing or invalid Person ID or Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, and so forth. Updates every 10 minutes. <p>Invalid IDs (such as `undefined`, or `00000000`, or any combination of numbers and letters in a [!UICONTROL Person ID] that appear in an event more than 1 million times in a given month) are IDs that cannot be attributed to any specific user or person. These rows cannot be ingested into the system and result in error-prone ingestion and reporting. To fix invalid Person IDs or Account IDs [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, you have 3 options:<ul><li>Use [Stitching](/help/stitching/overview.md) to populate the undefined or all-zero user IDs with valid user IDs.</li><li>Blank out user IDs, which are then skipped during ingestion (preferable to invalid or all-zero user IDs).</li><li>Fix any invalid user IDs in your system before ingesting the data.</li></ul> |
 | **[!UICONTROL Records deleted]** | A visualization to indicate how many rows were deleted in the selected time period, **for the dataset and date range you have selected**. Someone might have deleted a dataset in [!DNL Experience Platform], for example. Updates every 10 minutes.<p>In some scenarios, this value can also include records replaced, as with stitching or some lookup dataset updates. Consider this example:</p><ul><li>You upload one record to an XDM Individual Profile dataset, which Customer Journey Analytics is configured to ingest as profile lookup data. In the connection details, this dataset would display 1 record added.</li><li>You upload a duplicate of the original record into the same AEP dataset, which now contains two records. Customer Journey Analytics ingests the additional record from the profile or account [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} lookup dataset. Seeing that a profile or account record is already ingested in the connection for that Person ID or Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, Customer Journey Analytics deletes its earlier version and adds the new profile data. In the connection details, this action would represent 1 record added and 1 record deleted, because Customer Journey Analytics only retains the most recent profile lookup data for any ingested Person ID or Account ID [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}.</li><li>In total, the AEP dataset contains two records that happen to be identical. Separately, the Customer Journey Analytics connection details display the status of its ingested data: 2 records added and 1 record deleted for this profile dataset. </li></ul> |
-| ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) | Dataset search field. You can search the datasets table by dataset name or dataset ID. |
+| ![Search](/help/assets/icons/Search.svg) | Dataset search field. You can search the datasets table by dataset name or dataset ID. |
 | [!UICONTROL Datasets table ] | The datasets that are part of the connection. See the table below for further explanation. Select ![SelectBox](/help/assets/icons/SelectBox.svg) a single dataset to show only connection details for the selected dataset. This is equivalent to the selection of a dataset from the **[!UICONTROL _Dataset selector_]**. |
 
 The datasets table displays the following columns for each dataset:
@@ -289,14 +318,14 @@ When no individual dataset is selected in the datasets table, the right panel sh
 
 | Options | Description |
 | --- | --- |
-| ![Refresh](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL Refresh]** | To refresh the connection and allow recently added records to be reflected, select ![Refresh](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) **[!UICONTROL Refresh]**.  |
-| ![Delete](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Delete]** | [Delete](#delete-a-connection) this connection.  |
-| ![Add data view](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Create data view]** | [Create a data view](#create-a-data-view) based on this connection. See [Data views](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views) for more information.|
+| ![Refresh](/help/assets/icons/Refresh.svg) **[!UICONTROL Refresh]** | To refresh the connection and allow recently added records to be reflected, select ![Refresh](/help/assets/icons/Refresh.svg) **[!UICONTROL Refresh]**.  |
+| ![Delete](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | [Delete](#delete-a-connection) this connection.  |
+| ![Add data view](/help/assets/icons/DataAdd.svg) **[!UICONTROL Create data view]** | [Create a data view](#create-a-data-view) based on this connection. See [Data views](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views) for more information.|
 | **[!UICONTROL Use in CJA]** | Use a Journey Optimizer connection in Customer Journey Analytics to bring additional value to your Journey Optimizer connection. For more information, see [Use a Journey Optimizer connection in Customer Journey Analytics](#use-a-journey-optimizer-connection-in-customer-journey-analytics).|
 | **[!UICONTROL Connection name]** | The friendly name of the connection. |
 | **[!UICONTROL Connection description]** | A more detailed description that describes the purpose of this connection. |
 | **[!UICONTROL Sandbox]** | The [Experience Platform sandbox](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) from which this connection draws its datasets. You select this sandbox when you created the connection. You cannot change the sandbox once a connection is saved. |
-| **[!UICONTROL Connection ID]** | A generated identifier for the connection. You can use ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) to copy the value.  |
+| **[!UICONTROL Connection ID]** | A generated identifier for the connection. You can use ![Copy](/help/assets/icons/Copy.svg) to copy the value.  |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Primary ID type]** | The primary ID type for the connection: **[!UICONTROL Person]** for a person-based connection, **[!UICONTROL Account]** for an account-based connection. |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Containers]**  | The configured containers for the connection. |
 | **[!UICONTROL Data views using connection]** | The data views that use this connection. |
@@ -396,24 +425,92 @@ When a dataset row is selected in the datasets table, a panel on the right side 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_corereportablerows"
 >title="Core reportable rows"
->abstract="Core reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. If a customer selects January - March, the values reflect the snapshot from March."
+>abstract="Core reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_historicalreportablerows"
 >title="Historical reportable rows"
->abstract="Historical reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. If a customer selects January - March, the values reflect the snapshot from March."
+>abstract="Historical reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_cumulativereportablerows"
 >title="Cumulative reportable rows"
->abstract="Cumulative reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. If a customer selects January - March, the values reflect the snapshot from March."
+>abstract="Cumulative reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
+
+
+>[!CONTEXTUALHELP]
+>id="connections_extendeddatacapacityrows"
+>title="Extended data capacity rows"
+>abstract="The total number of rows available over a period older than 13 months for the current month, with a percentage change compared to the previous month. For example, on February 1, 2024, the number shows the total rows available with an event timestamp older than January 2023."
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_extendeddatacapacityrows"
+>title="Extended data capacity rows"
+>abstract="Extended data capacity rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
+
+>[!CONTEXTUALHELP]
+>id="connections_aca_corereportablerows"
+>title="Content Analytics core reportable rows"
+>abstract="The total number of Content Analytics specific rows available over the past 13 months for the current month, with a percentage change compared to the previous month.  For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024."
+
+>[!CONTEXTUALHELP]
+>id="connections_usage_aca_monthlyreportablerows"
+>title="Monthly Content Analytics rows"
+>abstract="Tracks the number of Content Analytics rows available for reporting. Reportable rows are the ingested rows minus the rows that are skipped and deleted during ingestion. Reportable rows serve as a key metric for billing and data usage."
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_aca_corereportablerows"
+>title="Content Analytics core reportable rows"
+>abstract="Content Analytics core reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
+
+
+>[!CONTEXTUALHELP]
+>id="connections_b2b_coreportablebpp"
+>title="Core businessperson profile reportable rows"
+>abstract="The total number of business profile reportable rows available over the past 13 months for the current month, with a percentage change compared to the previous month.  For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024."
+
+>[!CONTEXTUALHELP]
+>id="connections_b2b_historicalreportablebpp"
+>title="Historical business profile reportable rows"
+>abstract="The total number of business profile reportable rows available over a period older than 13 months for the current month, with a percentage change compared to the previous month. For example, on February 1, 2024, the number shows the total rows available with an event timestamp older than January 2023."
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_b2b_corereportablebpp"
+>title="Core business profile reportable rows"
+>abstract="Core business profile reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_b2b_historicalreportablebpp"
+>title="Historical  business profile reportable rows"
+>abstract="Historical business profile reportable rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
+
+>[!CONTEXTUALHELP]
+>id="connections_monthlymediastarts"
+>title="Monthly media starts"
+>abstract="The total number of monthly media starts available over the past 13 months for the current month, with a percentage change compared to the previous month.  For example, on February 1, 2024, the number shows the total media starts available with an event timestamp from January 2023 to January 2024."
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_monthlymediastarts"
+>title="Monthly media starts"
+>abstract="Monhtly media starts are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
+
+
+>[!CONTEXTUALHELP]
+>id="connections_breakdown_aca_monthlyreportablerows"
+>title="Monthly Content Analytics rows"
+>abstract="Monthly Content Analytics rows are snapshot values, not aggregated totals. These values update dynamically based on the last month in the selected date range. The values reflect the snapshot for the selected month."
+
 
 
 The [!UICONTROL Usage] interface shows the usage of ingested and reportable rows across all connections. If not selected, select the **[!UICONTROL Usage]** tab to access the interface.
 
-This interface supports you to determine whether your Customer Journey Analytics usage complies with what is contractually agreed upon. In addition to monitoring purposes, you can use the Usage interface to plan your Customer Journey Analytics license renewal.
+This interface supports you in determining whether your Customer Journey Analytics usage complies with what is contractually agreed upon. In addition to monitoring purposes, you can use the Usage interface to plan your Customer Journey Analytics license renewal.
 
-The Usage interface uses the following metrics:
+For each module you are entitled to, a collapsible section is available with usage details.
+
+### CJA Usage
+
+The **[!UICONTROL CJA Usage]** interface uses the following metrics:
 
 | Metric name | Description |
 |---|---|
@@ -430,23 +527,21 @@ The Usage interface uses the following metrics:
 >Data is collected, starting from July 2024 for the core, historical, and total records. Reach out to your account manager for earlier historical data.
 >
 
-The Usage interface consists of two panels:
+The **[!UICONTROL CJA Usage]** interface consists of two panels:
 
 * The **[!UICONTROL Key usage metrics]** panel that displays:
   
   * Four summary visualizations that display total and percentual changes from the previous month for:
 
     * **[!UICONTROL Core data reportable rows]**. The total number of rows available over the past 13 months for the current month, with a percentage change compared to the previous month. For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024.
-    * **[!UICONTROL Historical data reportable rows]**. The total number of rows available over a period older than 13 months for the current month, with a percentage change compared to the previous month. For example, on February 1, 2024, the number shows the total rows available with an event timestamp older than January 2023.
+    * **[!UICONTROL Extended Data Capacity rows]**. The total number of rows available over a period older than 13 months for the current month, with a percentage change compared to the previous month. For example, on February 1, 2024, the number shows the total rows available with an event timestamp older than January 2023.
+    * **[!UICONTROL Monthly ingested rows]**. The rows ingested during the billing month, with a percentage change compared to the previous month
     * **[!UICONTROL Core data volume]**. The total amount of data stored on disk that is timestamped for the current month (in TB), with a percentage change compared to the previous month.
-    * **[!UICONTROL Average row size]**. The average amount of storage consumed by each row of data ingested and stored for the current month (in kB), with a percentage change compared to the previous month.
+    * **[!UICONTROL Average row size]**. The average storage consumed by each ingested row for the current month (in kB), with the percentage change from the previous month.
   
-  * A stacked vertical bar visualization that displays the **[!UICONTROL Core and Historical data reportable rows]** for the last 13 months. 
+  * Two vertical bar visualization that display the **[!UICONTROL Core data reportable rows]** and **[!UICONTROL Extended Data Capacity rows]** for the last 13 months. 
   
-    When you hover over any stacked bar in the visualization, a popup shows the number of rows for that specific part of the bar. In the example below, the core data reportable rows are shown for the current month (August 2025: 936M (936,347,325)).
-
-
-    ![Key Usage Metrics](assets/usage-key-usage-metrics.png)
+    When you hover over any stacked bar in the visualization, a popup shows the number of rows for that specific part of the bar.
 
 * A combined panel, showing three subpanels for:
 
@@ -454,9 +549,7 @@ The Usage interface consists of two panels:
 
   The **[!UICONTROL Ingested rows]** subpanel measures the total number of records added to the system each month, providing insight into data growth and ingestion rates. The subpanel provides a summary of this month's total ingested rows and the change from the previous month.
 
-  ![Ingested rows](assets/usage-ingested-rows.png)
-
-  You can hover over data points in the visualization to display a popup with more details.
+  You can hover over data points in the visualizations to display a popup with more details. You can select a **[!UICONTROL Time range]** that applies to both **[!UICONTROL Ingested rows]** and **[!UICONTROL Reportable rows]**. Use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range. 
 
   +++
 
@@ -464,12 +557,175 @@ The Usage interface consists of two panels:
 
   The **[!UICONTROL Reportable rows]** visualization tracks the number of rows available for reporting by subtracting skipped and deleted rows from ingested rows, serving as a key metric for billing and data usage. The subpanel provides two summaries:
   
-  * **[!UICONTROL Last month total]**: A summary of total reportable rows up until this month.
-  * **[!UICONTROL This month]**: A summary of this month's total reportable rows and the change from the previous month.
+  * **[!UICONTROL Total reportable rows]**: A summary of total reportable rows up until this month.
+  * **[!UICONTROL Monthly reportable month]**: A summary of this month's total reportable rows and the change from the previous month.
 
-  ![Reportable rows](assets/usage-reportable-rows.png)
+  You can hover over data points in the visualizations to display a popup with more details. You can select a **[!UICONTROL Time range]** that applies to both **[!UICONTROL Ingested rows]** and **[!UICONTROL Reportable rows]**. Use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range. 
 
-  You can hover over data points in the visualizations to display a popup with more details.
+  +++
+
+  +++ Detail breakdown
+
+  You can use the **[!UICONTROL Detail breakdown]** table to view detailed metrics by connection, dataset, sandbox, and tags. Datasets are reported using ids instead of names, as dataset names can be modified during a reporting period. Unknown datasets or connections are reported using ids.
+
+  For the months before September 2024, data was collected at the dataset level and is displayed as [!UICONTROL Other datasets] for clarity. Starting from September 2024, data is gathered at a granular dataset level, and [!UICONTROL Other datasets] no longer appear.
+
+  * To change the breakdown, select a combination for **[!UICONTROL View by]** and **[!UICONTROL Breakdown by]**.
+
+    | **[!UICONTROL View by]** options | **[!UICONTROL Breakdown by]** options |
+    |---|---|
+    | **[!UICONTROL Connection]** | **[!UICONTROL -]** and **[!UICONTROL Dataset]** |
+    | **[!UICONTROL Dataset]** | **[!UICONTROL -]** |
+    | **[!UICONTROL Sandbox]** | **[!UICONTROL Connection]** |
+    | **[!UICONTROL Tag]** | **[!UICONTROL Connection]** |
+
+  You can select a month for which you want the breakdown. Select a month from **[!UICONTROL Breakdown month]**.
+
+
+  +++
+
+### Content Analytics Usage
+
+The **[!UICONTROL Content Analytics Usage]** interface uses the following metrics:
+
+| Metric name | Description |
+|---|---|
+| **Content Analytics Core Reportable Rows** | The total number of Content Analytics specific rows available over the past 13 months for the current month, with a percentage change compared to the previous month.  For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024.|
+| **Monthly Content Analytics rows** | Tracks the number of Content Analytics rows available for reporting. Reportable rows are the ingested rows minus the rows that are skipped and deleted during ingestion. Reportable rows serve as a key metric for billing and data usage. |
+
+>[!NOTE]
+>
+>Data is collected, starting from July 2024 for the core, historical, and total records. Reach out to your account manager for earlier historical data.
+>
+
+The **[!UICONTROL Content Analytics Usage]** interface consists of two panels:
+
+* The **[!UICONTROL Key usage metrics]** panel that displays:
+  
+  * Two summary visualizations that display total and percentual changes from the previous month for:
+
+    * **[!UICONTROL Core Analytics Core Reportable Rows]**. The total number of Content Analytics specific rows available over the past 13 months for the current month, with a percentage change compared to the previous month.  For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024.
+    * **Monthly Content Analytics rows**. Tracks the number of Content Analytics rows available for reporting. Reportable rows are the ingested rows minus the rows that are skipped and deleted during ingestion. Reportable rows serve as a key metric for billing and data usage.
+  
+  * A stacked vertical bar visualization that displays the **[!UICONTROL Content Analytics Core Reportable Rows]** for the last 13 months. 
+  
+    When you hover over any stacked bar in the visualization, a popup shows the number of rows for that specific part of the bar.
+
+* A combined panel, showing two subpanels for:
+
+  +++ Monthly Content Analytics rows
+
+  The **[!UICONTROL Monthly Content Analytics rows]** subpanel measures the total number of monthly Content Analytics records added to the system each month, providing insight into data growth and ingestion rates. The subpanel provides a summary of this month's total ingested rows and the change from the previous month.
+
+  You can hover over data points in the visualization to display a popup with more details. You can select a **[!UICONTROL Time range]** or use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range. 
+
+  +++
+
+  +++ Detail breakdown
+
+  You can use the **[!UICONTROL Detail breakdown]** table to view detailed metrics by connection, dataset, sandbox, and tags. Datasets are reported using ids instead of names, as dataset names can be modified during a reporting period. Unknown datasets or connections are reported using ids.
+
+  For the months before September 2024, data was collected at the dataset level and is displayed as [!UICONTROL Other datasets] for clarity. Starting from September 2024, data is gathered at a granular dataset level, and [!UICONTROL Other datasets] no longer appear.
+
+  * To change the breakdown, select a combination for **[!UICONTROL View by]** and **[!UICONTROL Breakdown by]**.
+
+    | **[!UICONTROL View by]** options | **[!UICONTROL Breakdown by]** options |
+    |---|---|
+    | **[!UICONTROL Connection]** | **[!UICONTROL -]** and **[!UICONTROL Dataset]** |
+    | **[!UICONTROL Dataset]** | **[!UICONTROL -]** |
+    | **[!UICONTROL Sandbox]** | **[!UICONTROL Connection]** |
+    | **[!UICONTROL Tag]** | **[!UICONTROL Connection]** |
+
+  You can select a month for which you want the breakdown. Select a month from **[!UICONTROL Breakdown month]**.
+
+  +++
+
+
+### CJA B2B Edition Usage
+
+The **[!UICONTROL CJA B2B Edition Usage]** interface uses the following metrics:
+
+| Metric name | Description |
+|---|---|
+| **Core Reportable BPP** | The total number of businessperson profile reportable rows available over the past 13 months for the current month, with a percentage change compared to the previous month.  For example, on February 1, 2024, the number shows the total rows available with an event timestamp from January 2023 to January 2024.|
+| **Historical Reportable BPP** | The total number of businessperson profile reportable rows available over a period older than 13 months for the current month, with a percentage change compared to the previous month. For example, on February 1, 2024, the number shows the total rows available with an event timestamp older than January 2023. |
+
+>[!NOTE]
+>
+>Data is collected, starting from July 2024 for the core, historical, and total records. Reach out to your account manager for earlier historical data.
+>
+
+The **[!UICONTROL CJA B2B Edition Usage]** interface consists of one panel that shows subpanels for:
+
++++ Core Reportable BPP.
+
+The **[!UICONTROL Core Reportable BPP]** subpanel measures the total number of monthly core reportable businessperson profile records added to the system each month, providing insight into data growth and ingestion rates. The subpanel provides a summary of this month's total ingested rows and the change from the previous month.
+
+You can hover over data points in the visualization to display a popup with more details that applies to both **[!UICONTROL Core Reportable BPP]** and **[!UICONTROL Historical Reportable BPP]**. Use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range. 
+
++++
+
++++ Historical Reportable BPP.
+
+The **[!UICONTROL Historical Reportable BPP]** subpanel measures the total number of monthly historical reportable businessperson profile records added to the system each month, providing insight into data growth and ingestion rates. The subpanel provides a summary of this month's total ingested rows and the change from the previous month.
+
+You can hover over data points in the visualization to display a popup with more details that applies to both **[!UICONTROL Core Reportable BPP]** and **[!UICONTROL Historical Reportable BPP]**. Use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range.
+
++++
+
++++ Detail breakdown
+
+You can use the **[!UICONTROL Detail breakdown]** table to view detailed metrics by connection, dataset, sandbox, and tags. Datasets are reported using ids instead of names, as dataset names can be modified during a reporting period. Unknown datasets or connections are reported using ids.
+
+For the months before September 2024, data was collected at the dataset level and is displayed as [!UICONTROL Other datasets] for clarity. Starting from September 2024, data is gathered at a granular dataset level, and [!UICONTROL Other datasets] do no longer appear.
+
+* To change the breakdown, select a combination for **[!UICONTROL View by]** and **[!UICONTROL Breakdown by]**.
+
+  | **[!UICONTROL View by]** options | **[!UICONTROL Breakdown by]** options |
+  |---|---|
+  | **[!UICONTROL Connection]** | **[!UICONTROL -]** and **[!UICONTROL Dataset]** |
+  | **[!UICONTROL Dataset]** | **[!UICONTROL -]** |
+  | **[!UICONTROL Sandbox]** | **[!UICONTROL Connection]** |
+  | **[!UICONTROL Tag]** | **[!UICONTROL Connection]** |
+
+You can select a month for which you want the breakdown. Select a month from **[!UICONTROL Breakdown month]**.
+
++++
+
+
+### Streaming Media Usage
+
+The **[!UICONTROL Streaming Media Usage]** interface uses the following metrics:
+
+| Metric name | Description |
+|---|---|
+| **Monthly Media Starts** | The total number of monthly media starts available over the past 13 months for the current month, with a percentage change compared to the previous month.  For example, on February 1, 2024, the number shows the total media starts available with an event timestamp from January 2023 to January 2024.|
+
+>[!NOTE]
+>
+>Data is collected, starting from July 2024 for the core, historical, and total records. Reach out to your account manager for earlier historical data.
+>
+
+
+The **[!UICONTROL Streaming Media Usage]** interface consists of two panels:
+
+* The **[!UICONTROL Key usage metrics]** panel that displays:
+  
+  * A summary visualization that displays total and percentual changes from the previous month for **[!UICONTROL Monthly Media Starts]**. 
+   
+    The total number of monthly media starts available over the past 13 months for the current month, with a percentage change compared to the previous month.  For example, on February 1, 2024, the number shows the total media starts available with an event timestamp from January 2023 to January 2024.
+  
+  * A stacked vertical bar visualization that displays the **[!UICONTROL Monthly Media Starts]** for the last 13 months. 
+  
+    When you hover over any stacked bar in the visualization, a popup shows the number of rows for that specific part of the bar.
+
+* A combined panel, showing two subpanels for:
+
+  +++ Monthly Media Starts
+
+  The **[!UICONTROL Monthly Media Starts]** subpanel measures the total number of monthly media starts records added to the system each month, providing insight into data growth and ingestion rates. The subpanel provides a summary of this month's total ingested rows and the change from the previous month.
+
+  You can hover over data points in the visualization to display a popup with more details. You can select a **[!UICONTROL Time range]** or use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range. 
 
   +++
 
@@ -488,11 +744,10 @@ The Usage interface consists of two panels:
     | **[!UICONTROL Sandbox]** | **[!UICONTROL Connection]** |
     | **[!UICONTROL Tag]** | **[!UICONTROL Connection]** |
 
-  ![Detail breakdown](assets/usage-detail-breakdown.png)
+  You can select a month for which you want the breakdown. Select a month from **[!UICONTROL Breakdown month]**.
 
   +++
 
-  You can define a **[!UICONTROL Time range]** in months to report on. Use ![Calendar](/help/assets/icons/Calendar.svg) to select the time range. 
 
 >[!MORELIKETHIS]
 >

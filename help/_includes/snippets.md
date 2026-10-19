@@ -230,7 +230,7 @@ Use the following information to choose the visualization that best meets your n
 | Setting | Description |
 |---|---|
 | **[!UICONTROL Import new data]** | Enable this option if you want to establish an ongoing connection. With an ongoing connection new data batches that are added to the datasets are available automatically in Workspace. |
-| **[!UICONTROL Dataset backfill]** | Enable **[!UICONTROL Backfill all existing data]** to ensure that all existing data is backfilled.<br/><br/>Select **[!UICONTROL Request backfill]** to backfill historical data for a specific period. You can define up to 10 dataset backfill periods.<ol><li>Define the period by entering start and end data or selecting dates using ![Calendar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).</li><li>Select **[!UICONTROL Queue backfill]** to add the backfill to the list, or **[!UICONTROL Cancel]** to cancel.</li></ol>For each entry, select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) to edit the period, or select ![Delete](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) to delete the entry.<br/><br/>On backfills:<ul><li>You can backfill each dataset individually.</li><li>You prioritize new data added to a dataset in the connection, so this new data has the lowest latency.</li><li>Any backfill (historical) data is imported at a slower rate. The amount of historical data influences the latency.</li><li>The Analytics source connector imports up to 13 months of data (irrespective of size) for production sandboxes. The backfill in non-production sandboxes is limited to 3 months.</li><li>For production sandboxes, if you have licensed the additional SKU that entitles you to import more than 13 months of historical backfill data, contact Adobe to request the extended backfill.</li></ul> |
+| **[!UICONTROL Dataset backfill]** | Enable **[!UICONTROL Backfill all existing data]** to ensure that all existing data is backfilled.<br/><br/>Select **[!UICONTROL Request backfill]** to backfill historical data for a specific period. You can define up to 10 dataset backfill periods.<ol><li>Define the period by entering start and end data or selecting dates using ![Calendar](/help/assets/icons/Calendar.svg).</li><li>Select **[!UICONTROL Queue backfill]** to add the backfill to the list, or **[!UICONTROL Cancel]** to cancel.</li></ol>For each entry, select ![Edit](/help/assets/icons/Edit.svg) to edit the period, or select ![Close](/help/assets/icons/Close.svg) ![Close](/help/assets/icons/Close.svg) to delete the entry.<br/><br/>On backfills:<ul><li>You can backfill each dataset individually.</li><li>You prioritize new data added to a dataset in the connection, so this new data has the lowest latency.</li><li>Any backfill (historical) data is imported at a slower rate. The amount of historical data influences the latency.</li><li>The Analytics source connector imports up to 13 months of data (irrespective of size) for production sandboxes. The backfill in non-production sandboxes is limited to 3 months.</li><li>For production sandboxes, if you have licensed the additional SKU that entitles you to import more than 13 months of historical backfill data, contact Adobe to request the extended backfill.</li></ul> |
 | **[!UICONTROL Batch status]** | Possible status indicators are:<ul><li>Success</li><li>X backfill(s) processing</li><li>Off</li></ul> |
 | **[!UICONTROL Dataset ID]** | This ID is automatically generated. |
 | **[!UICONTROL Description]** | The description given to this dataset when the dataset was created. |
@@ -286,4 +286,47 @@ Use the following information to choose the visualization that best meets your n
 >[!INFO]
 >
 >In the Customer Journey Analytics interface, **[!UICONTROL Relational]** datasets might be labeled as **[!UICONTROL Model-based]**.
+>
+
+## CJA data feed lookback window {#cja-df-lookback}
+
+Since Customer Journey Analytics uses report-time attribution for every component, it does not have a concept of persistence beyond its lookback window. This Analytics data feed column references visitor-level behavior that extends to the visitor's entire history. The longer the lookback window is for this component in Customer Journey Analytics, the closer it can match to Adobe Analytics functionality.
+
+## CJA data feed post columns {#cja-df-post}
+
+This Analytics data feed column contains both a pre-processed version and a post-processed version (a prefix of `post_`). Columns with a prefix of `post_` contain the value that is ultimately used in reporting. Most organizations solely use `post_` columns when they are available. The following table compares the properties of these columns:
+
+| Pre-processed column value | Post-processed column value |
+| --- | --- |
+| As it was collected | Used in reporting |
+| Before processing rules | After processing rules |
+| Before VISTA rules | After VISTA rules |
+| No allocation applied | Allocation applies |
+
+Since Customer Journey Analytics does not have a concept of pre-processing and post-processing, recreating both columns in CJA data feeds is difficult. If you would like approximations of these columns, you can drag the same XDM field multiple times into the dimensions column to create multiple components with different attribution settings:
+
+* **Pre-processed column**: No attribution
+* **Post-processed column**: Apply the same allocation and expiration settings as its Analytics variable in data view settings. Most components would use an allocation of "Last" and an expiration of "Visit".
+
+## CJA data feed lookup columns {#cja-df-lookup}
+
+This Analytics data feed column uses a lookup table to identify the desired value. In Customer Journey Analytics, the value is provided directly without any lookup tables. Ensure that your workflow accommodates the final value instead of an intermediate lookup value.
+
+## CJA data feed not applicable columns {#cja-df-na}
+
+This Analytics data feed column contains data that cannot be translated to a Customer Journey Analytics equivalent because of data architecture differences.
+
+## CJA data feed user agent {#cja-df-ua}
+
+You cannot collect both user agent information and device lookup information simultaneously; population of these dimensions are mutually exclusive. You must choose if you want to collect user agent directly or device lookup information (based on user agent) when [Configuring a datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup).
+
+
+## Relational dataset important message {#relational-dataset-important}
+
+A relational dataset is based on a relational schema type. The relationship descriptors defined in that relational schema **do not apply** to the definition and configuration of a Customer Journey Analytics connection in general or the dataset settings for a relational dataset specifically. 
+
+Additionally, in Customer Journey Analytics, fields from standard XDM schemas **do not automatically merge** with similar named fields from relational schemas.
+>[!IMPORTANT]
+>
+>For Customer Journey Analytics reporting and analysis, you need to explicitly configure in [dataset settings](/help/connections/create-connection.md#relational-dataset) how data from a relational dataset is joined to other datasets based on a common person ID or account ID. <br/><br/>Consider to use the Derived fields [Merge Fields](/help/data-views/derived-fields/derived-fields.md#merge-fields) function to merge similar named fields (not part of an object array) in XDM schemas and relational schemas. For fields in an object array  no solution currently exists to merge fields between XDM and relatonal schemas.
 >

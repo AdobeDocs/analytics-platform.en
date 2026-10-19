@@ -5,6 +5,31 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Adobe Analytics Integration,Administration
 exl-id: c109742b-c1c5-45b3-971f-f8dcf814ec37
+autotag-review: '2026-05-19T09:13:16.649Z'
+TQID: 'https://experienceleague.adobe.com/sMivwoUTSa8KcQcaK8kR5PlbCF8stVNGeL5YET4usMI'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+subfeature_v2:
+  - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
+    internal-label: Analytics integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Cross-IMS data mapping
 
@@ -27,7 +52,7 @@ With the *Cross-IMS data mapping* feature, you can request Adobe to map data. Th
 
 | Illustration | Explanation  |
 |---|---|
-| ![Map data across multiple IMS organizations](/help/getting-started/assets/map-data-across-ims-orgs.svg) | This mapping allows you to report on report suites that exist in IMS organization 1, IMS organization 2, and IMS organization 3 from one connection in Customer Journey Analytics that is provisioned within IMS organization 3. |
+| ![Map data across multiple IMS organizations](/help/getting-started/assets/map-data-across-ims-orgs.png) | This mapping allows you to report on report suites that exist in IMS organization 1, IMS organization 2, and IMS organization 3 from one connection in Customer Journey Analytics that is provisioned within IMS organization 3. |
 
 {style="table-layout:fixed"}
 

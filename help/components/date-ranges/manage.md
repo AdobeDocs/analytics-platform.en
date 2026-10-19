@@ -4,6 +4,23 @@ description: Understanf how to manage date ranges in Analysis Workspace.
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 role: User
+TQID: https://experienceleague.adobe.com/zGfFrHDk1cHYcR-AU7Ulmw1YPRE2axM3t0YxEgavV34
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 ---
 # Manage date ranges
 
@@ -88,15 +105,8 @@ You edit a date range in two ways:
 
 * In the [[!UICONTROL Date ranges] list](#date-ranges-list), select the title of the date range.
 
-You use the [Date range builder](/help/components/date-ranges/create.md#date-range-builder) to edit the date range.
-
-
-
-
-Use the date range manager to share, rename, or delete date ranges. To reach the date manager:
-
-1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
-1. Navigate to [!UICONTROL Components] > [!UICONTROL Date Ranges].
+Use the [Date range builder](/help/components/date-ranges/create.md#date-range-builder) to edit the date range. 
+Use the [date range manager](/help/components/date-ranges/manage.md) to share, rename, or delete date ranges.
 
 
 <!--
@@ -116,7 +126,7 @@ The date range manager includes the following options:
 Click the checkbox next to one or more date ranges for more options.
 
 * **Tag**: Apply a tag to all selected date ranges. Tags help you organize date ranges, and let you filter them using the left column.
-* **Share**: Share a date range to other Experience Cloud users. If you are a product administrator, you can also share to the entire organization or groups. Date ranges that are shared to other users in your organization include a ![shared](../assets/shared.png) icon next to the title.
+* **Share**: Share a date range to other CX Enterprise users. If you are a product administrator, you can also share to the entire organization or groups. Date ranges that are shared to other users in your organization include a ![shared](../assets/shared.png) icon next to the title.
 * **Delete**: Permanently delete the selected date range(s).
 * **Rename**: If a single date range is selected, you can change its title.
 * **Approve**: If you are a product admin, you can add a stamp of approval to a date range. Approved date ranges inform users in your organization that they are 'official', differentiating them from date ranges created by other users in your organization. Approved date ranges include a ![approved](../assets/approved.png) icon next to the title.

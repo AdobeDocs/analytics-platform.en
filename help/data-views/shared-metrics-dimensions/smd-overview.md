@@ -2,18 +2,46 @@
 title: Shared metrics & dimensions overview
 description: Use the same dimension or metric reference across multiple data views.
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
+TQID: https://experienceleague.adobe.com/5sjpTMocv3547Xqg4VD6C5Gp-cRzNmyHTI5iE6P-JGA
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
 ---
 # Shared metrics & dimensions overview
 
-Shared metrics & dimensions provide a central location to manage dimensions and metrics that can be used across any number of data views. These components are especially valuable to organizations that use multiple data views, especially if those data views share common component settings. Changes made to shared metrics and dimensions instantly apply across every data view that it is shared to. When editing an individual data view, shared dimensions and metrics can be identified by a ![Shared component icon](/help/assets/icons/CCLibrary.svg) icon next to the component name.
+Shared metrics & dimensions provide a central location to manage dimensions and metrics that can be used across any number of data views. These components are especially valuable to organizations that use multiple data views, especially if those data views share common component settings. Changes made to shared metrics and dimensions apply instantly across every data view that they are shared to. When editing an individual data view, you can identify shared dimensions and metrics by a ![Shared component icon](/help/assets/icons/CCLibrary.svg) icon next to the component name.
 
 While shared dimensions and metrics allow common components to be used across many data views, they cannot be shared across connections.
+
+## Permissions
+
+* [Product administrators](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control#product-administrator-role) also need the **Manage Data Usage Policies** and **View Data Usage Policies** permissions for all sandboxes in [Experience Platform Permissions](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#permissions).
 
 ## Workflow
 
 Most organizations use the following overarching workflow to deduplicate and maintain dimensions and metrics over time:
 
-1. Import components from each data view that might be shared across multiple data views. If the same dimension or metric exists in multiple data views, Adobe recommends importing all instances of that component. While this best practice imports duplicates, they are imported so that they can be deduplicated and retain their respective references to Workspace projects.
+1. Import components from each data view that are shared across multiple data views. If the same dimension or metric exists in multiple data views, Adobe recommends importing all instances of that component. While this best practice imports duplicates, they are imported so that they can be deduplicated and retain their respective references to Workspace projects.
 1. Review all components that use the same component ID but have different component settings. For each group of duplicate components, select the desired component settings to be applied to all other components that share that component ID.
 1. Review all components that use the same component ID and also have the same component settings. These dimensions or metrics can easily and safely be merged.
 
