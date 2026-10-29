@@ -259,7 +259,7 @@ Select the linked section titles for more information and context about the avai
 | | Display barbells on lines | Show barbells on lines in Combo charts. |
 | **[Key Metric Summary](/help/analysis-workspace/visualizations/key-metric.md)** | | |
 | | Summary display type | <ul><li>Emphasize percent change</li><li>Emphasize number value</li></ul> |
-| | Show sparklines | how or hide line charts at the bottom of the chart. When hidden, the legend changes to no longer visually reference the lines. |
+| | Show sparklines | Show or hide line charts at the bottom of the chart. When hidden, the legend changes to no longer visually reference the lines. |
 | | Show max and min on sparklines | Show minimum and maximum values on primary and comparison line charts. |
 | | Show comparison | Show comparison data. When hidden, both the comparison line chart and summary change objects are hidden from view. |
 | | Number value options | In the [!UICONTROL **Key Metric Summary**] section <ul><li>Show percent change</li><li>Show raw difference</li>Raw difference between the total value of the metric in the primary date range and the secondary date range</ul> |
