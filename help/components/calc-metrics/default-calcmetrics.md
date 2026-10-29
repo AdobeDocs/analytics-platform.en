@@ -38,7 +38,7 @@ Customer Journey Analytics provides the following calculated metrics templates t
 | **[!UICONTROL Web sessions]** | The number of sessions that occurred on the website. |
 | **[!UICONTROL Survey completion rate]** | The rate at which people completed a survey after starting it.  |
 | **[!UICONTROL Multi-channel session rate]** | The ratio of sessions that occurred that included multiple channels (such as web traffic and mobile traffic), compared to those that included only a single channel.  |
-| **[!UICONTROL Multi-channel person rate]** | The ratio of people who have particicpated in multiple channels, compared to those who have only participated in a single channel. |
+| **[!UICONTROL Multi-channel person rate]** | The ratio of people who have participated in multiple channels, compared to those who have only participated in a single channel. |
 | **[!UICONTROL Mobile app sessions]** | The number of sessions that occurred on the mobile app. |
 | **[!UICONTROL Web+app cross-channel sessions]** | The number of sessions that occured that included both web traffic and mobile traffic. |
 | **[!UICONTROL Cost of calls]** | The total cost for call center calls. <!-- <p>Summary: Call length</p> -->  |
