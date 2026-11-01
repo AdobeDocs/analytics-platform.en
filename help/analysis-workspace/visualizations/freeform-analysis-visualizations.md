@@ -176,7 +176,7 @@ Use the context menu (available through alternate select, for example, right-cli
 | --- | --- |
 | **[!UICONTROL Insert copied visualization]**| Paste (insert) a copied visualization to another place within the project, or into a completely different project. |
 | **[!UICONTROL Copy data to clipboard]** | [Copy data](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) from the visualization onto the clipboard. |
-| **[!UICONTROL Copy selection to clipboard]** | [Copy the selection](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) from the visualizaion onto the clipboard. |
+| **[!UICONTROL Copy selection to clipboard]** | [Copy the selection](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) from the visualization onto the clipboard. |
 | **[!UICONTROL Download items as CSV (*dimension name*)]** | [Download the dimension items](/help/analysis-workspace/export/download-send.md#download-items-as-csv) (to a maximum of 50,000) of the visualization to your local device. A maximum of 50,000 dimension items for the selected dimension. |
 | **[!UICONTROL Copy visualization]** | Copy the visualization, so that you can insert the visualization to another place within the project, or into a completely different project. |
 | **[!UICONTROL Download data CSV]** | [Download the displayed data](/help/analysis-workspace/export/download-send.md#download-as-csv) of the visualization to your local device. |
