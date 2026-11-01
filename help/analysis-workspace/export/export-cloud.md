@@ -61,7 +61,7 @@ Other methods of exporting Customer Journey Analytics reports are also available
 
 You can export full tables from Analysis Workspace to cloud providers like Google, Azure, Amazon, and Adobe.
 
-[Advantages of full table export](#advantages-of-full-table-export) include the ability to export millions of rows, include calculated metrics, structure data output in concatenated values, and more. 
+[Advantages of full table export](#advantages) include the ability to export millions of rows, include calculated metrics, structure data output in concatenated values, and more. 
 
 When exporting full tables, consider the following:
 
