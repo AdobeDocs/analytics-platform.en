@@ -77,7 +77,7 @@ You can use the [calculated metric builder](/help/components/calc-metrics/cm-wor
 
 ### Create calculated metrics for a single project
 
-You can quickly create a calculate metric that is available only for the project where it was created.
+You can quickly create a calculated metric that is available only for the project where it was created.
 
 To create a calculated metric for a single project:
 
