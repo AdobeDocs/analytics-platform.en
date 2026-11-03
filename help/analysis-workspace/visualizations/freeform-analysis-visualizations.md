@@ -107,7 +107,7 @@ You can manage a visualization when you hover over the visualization or select t
 
 ## Legend
 
-A visualization legend helps you to relate date in a source table to plotted series in the visualization. The legend is interactive - you can select a legend item to show/hide a series in the visualization, which is helpful if you want to simplify the data being visualized. 
+A visualization legend helps you to relate data in a source table to plotted series in the visualization. The legend is interactive - you can select a legend item to show/hide a series in the visualization, which is helpful if you want to simplify the data being visualized. 
 
 Additionally, you can rename legend labels to help you make visuals more consumable. Note: legend editing does **not** apply to: Treemap, Bullet, Summary Change/Number, Text, Freeform, Histogram, Cohort or Flow visualizations.
 
@@ -180,7 +180,7 @@ Use the context menu (available through alternate select, for example, right-cli
 | **[!UICONTROL Download items as CSV (*dimension name*)]** | [Download the dimension items](/help/analysis-workspace/export/download-send.md#download-items-as-csv) (to a maximum of 50,000) of the visualization to your local device. A maximum of 50,000 dimension items for the selected dimension. |
 | **[!UICONTROL Copy visualization]** | Copy the visualization, so that you can insert the visualization to another place within the project, or into a completely different project. |
 | **[!UICONTROL Download data CSV]** | [Download the displayed data](/help/analysis-workspace/export/download-send.md#download-as-csv) of the visualization to your local device. |
-| **[!UICONTROL Export full table]** | Export the full table to a designated cloud locations. See [Exports Customer Journey Analytics reports to the cloud](../export/export-cloud.md) |
+| **[!UICONTROL Export full table]** | Export the full table to a designated cloud location. See [Exports Customer Journey Analytics reports to the cloud](../export/export-cloud.md) |
 | **[!UICONTROL Duplicate visualization]** | Make an exact duplicate of the visualization. |
 | **[!UICONTROL Edit description]** | Add (or edit) a text description for the visualization. See [Text](text.md). |
 | **[!UICONTROL Get visualization link]** | Copy and share a link directly to the visualization. A Share link dialog displays the link. Select Copy to copy the link to your clipboard. |
